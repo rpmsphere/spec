@@ -1,0 +1,62 @@
+Name:           wfnetobjs
+Version:        0.2.4
+Release:        10.1
+License:        GPL
+BuildRequires:  gcc-c++
+Group:          Development/Libraries
+Summary:        A library handling network objects
+Source:         http://www.wallfire.org/download/%{name}-%{version}.tar.bz2
+Patch0:         wfnetobjs-autofoomess.patch
+Patch1:		wfnetobjs-0.2.4-gcc43.patch
+
+%description
+Wfnetobjs is essentially a library which handles network objects (hosts, ports, etc.).
+
+%package devel
+Group:          Development/Libraries
+Summary:        Wfnetobjs is essentially a library which handles network objects (hosts, ports, etc.).
+Requires:       wfnetobjs = %{version} libstdc++-devel
+
+%description devel
+Wfnetobjs is essentially a library which handles network objects (hosts, ports, etc.)
+
+%prep
+%setup -q
+%patch0 -p1
+%patch1
+
+%build
+export NOCONFIGURE=true
+echo | ./autogen.sh
+export CFLAGS="%optflags -fno-strict-aliasing -Wno-format-security"
+export CXXFLAGS="%optflags -fno-strict-aliasing -Wno-format-security"
+%configure --disable-static --with-pic
+%{__make} %{?jobs:-j%jobs}
+
+%install
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%find_lang %{name}
+%{__rm} -f $RPM_BUILD_ROOT%{_libdir}/*.la
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%post -p /sbin/ldconfig
+
+%postun -p /sbin/ldconfig
+
+%files -f %{name}.lang
+%defattr(-,root,root)
+%{_libdir}/libwfnetobjs.so.0*
+
+%files devel
+%dir %{_includedir}/wallfire
+%{_includedir}/wallfire/*.h
+%{_libdir}/libwfnetobjs.so
+%{_libdir}/libwfconfig.a
+
+%changelog
+* Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
+- Rebuild for Fedora
+* Tue Sep  1 2009 crrodriguez@suse.de
+- build with -fno-strict-aliasing

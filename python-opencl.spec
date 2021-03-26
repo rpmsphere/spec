@@ -1,0 +1,45 @@
+%global debug_package %{nil}
+Name:           python-opencl
+Version:        0.5.2
+Release:        7.1
+Summary:        Yet another set of Python bindings for OpenCL
+License:        BSD-3-Clause
+Group:          Development/Libraries/Python
+URL:            http://srossross.github.com/oclpb/
+Source0:        srossross-oclpb-0.5.2-0-g02d70d9.tar.bz2
+BuildRequires:  opencl-headers
+BuildRequires:  ocl-icd-devel
+BuildRequires:  python-devel
+BuildRequires:  python-setuptools
+BuildRequires:  mesa-libOpenCL-devel llvm-devel
+
+%description
+This is yet another set of Python bindings for OpenCL.
+It has the followon features: 
+ * Supports OpenCL 1.1 
+ * Discoverable properties and methods
+ * Tight integration with ctypes
+ * Call kernels like a python function with defaults and keyword arguments
+ * Memory objects support indexing and slicing
+
+%prep
+%setup -q -n srossross-oclpb-02d70d9
+
+%build
+CFLAGS="%{optflags} -fno-strict-aliasing" python2 setup.py build
+
+%install
+python2 setup.py install --root %{buildroot} --prefix=%{_prefix}
+
+%clean
+rm -rf %{buildroot}
+
+%files
+%doc license.rst README.rst
+%{python2_sitearch}/*
+
+%changelog
+* Sun Dec 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
+- Rebuild for Fedora
+* Fri Jun 15 2012 scorot@free.fr
+- first package

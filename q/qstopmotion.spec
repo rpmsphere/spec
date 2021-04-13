@@ -2,7 +2,7 @@
 %global url_ver	%(echo %{version} | tr '.' '_')
 
 Name:		qstopmotion
-Version:	2.5.0
+Version:	2.5.2
 Release:	1
 Summary:	Creates stop-motion animation movies based on Qt5
 License:	GPLv3+
@@ -40,7 +40,7 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_CXX_FLAGS=-
 
 %files
 %doc AUTHORS Changes.txt README.txt
-%doc %{_docdir}/%{name}/
+%doc %{_docdir}/%{name}
 %license COPYING
 %{_bindir}/%{name}
 %{_datadir}/%{name}/
@@ -50,7 +50,7 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_CXX_FLAGS=-
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Mon Dec 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.0
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.2
 - Rebuild for Fedora
 * Wed Aug 10 2016 daviddavid <daviddavid> 2.3.1-1.mga6
 + Revision: 1045282

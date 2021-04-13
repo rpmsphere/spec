@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           birdfont
-Version:        2.29.0
+Version:        2.29.1
 Release:        1
 Summary:        Font editor
 License:        GPLv3+
@@ -52,5 +52,5 @@ chmod +x %{?buildroot}%{_libdir}/libbird*.*
 %{_datadir}/mime/packages/birdfont.xml
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.29.0
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.29.1
 - Rebuild for Fedora

@@ -1,6 +1,6 @@
 Name: tomb
 Summary: The Crypto Undertaker
-Version: 2.7
+Version: 2.9
 Release: 1
 Group: Applications/Archiving
 License: GPLv3
@@ -35,5 +35,5 @@ output to facilitate its use inside graphical applications.
 %{_mandir}/man?/%{name}.?.*
 
 %changelog
-* Mon Oct 14 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9
 - Rebuild for Fedora

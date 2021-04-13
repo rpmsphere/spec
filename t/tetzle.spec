@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           tetzle
-Version:        2.1.5
+Version:        2.1.6
 Release:        1
 Summary:        Jigsaw puzzle with tetromino pieces
 Group:          Amusements/Games
@@ -55,7 +55,7 @@ fi
 gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.5
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.6
 - Rebuild for Fedora
 * Sat May 19 2012 graeme@gottcode.org 2.0.1-1
 - New upstream release

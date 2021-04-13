@@ -1,12 +1,12 @@
 %global debug_package %{nil}
 
 Name: x11basic
-Version: 1.27
+Version: 1.28
 Release: 1
 License: GPL
 Group: Development/Languages
 Summary: A Basic Interpreter with X11-Graphics capabilities
-Source0: http://x11-basic.sourceforge.net/X11Basic-%{version}.tar.gz
+Source0: https://github.com/kollokollo/X11Basic/archive/refs/tags/%{version}.tar.gz#/X11Basic-%{version}.tar.gz
 URL: http://x11-basic.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	libX11-devel
@@ -30,12 +30,13 @@ converter is now included.
 %prep
 %setup -q -n X11Basic-%{version}
 #sed -i 's|-Wall|-Wall -std=c99 -fPIC|' Makefile.in
-sed -i 's|-Wall|-Wall -fPIC|' Makefile.in
-sed -i -e 's|\.\./logo/|logo/|' -e 's|\.\./examples/|examples/|' Makefile.in
+sed -i 's|-Wall|-Wall -fPIC|' src/Makefile.in
+#sed -i -e 's|\.\./logo/|logo/|' -e 's|\.\./examples/|examples/|' src/Makefile.in
 #sed -i 's|key_t|__key_t|' sysVstuff.h
 #sed -i 's|inline int input_bit|int input_bit|' decode.*
 
 %build
+cd src
 %configure
 #sed -i 's|#define HAVE_ALSA 1|#undef HAVE_ALSA|' config.h
 sed -i '1,24s|/usr|%{buildroot}/usr|' Makefile
@@ -50,15 +51,15 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps
 %ifarch x86_64 aarch64
 mkdir -p $RPM_BUILD_ROOT/usr/lib64
 %endif
+cd src
 %make_install
 chmod +x $RPM_BUILD_ROOT%{_libdir}/*
-#sed -i 's|/usr/share/icons/hicolor/32x32/apps/x11basic.png|x11basic|' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%doc README COPYING RELEASE_NOTES
+%doc *.md COPYING RELEASE_NOTES
 %doc doc/ACKNOWLEGEMENTS doc/editors doc/HISTORY doc/manual doc/AUTHORS
 %doc examples
 %{_mandir}/man1/*.1.*
@@ -69,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.27
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.28
 - Rebuild for Fedora
 * Sat Apr 07 2007 Markus Hoffmann <kollo@users.sourceforge.net>
   New release (1.14)

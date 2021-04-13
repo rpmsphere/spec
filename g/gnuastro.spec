@@ -1,5 +1,5 @@
 Name:           gnuastro
-Version:        0.13
+Version:        0.14
 Release:        1
 Summary:        GNU Astronomy Utilities
 License:        GPL-3.0+
@@ -70,7 +70,7 @@ find %{buildroot} -type f -name "*.la" -delete -print
 %exclude %{_infodir}/dir
 
 %changelog
-* Tue Sep 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.14
 - Rebuild for Fedora
 * Tue Nov 26 2019 Andreas Stieger <andreas.stieger@gmx.de>
 - GNU Astronomy Utilities 0.11 (library 9.0.0):

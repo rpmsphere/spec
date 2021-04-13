@@ -32,5 +32,5 @@ install -Dm755 output/my_basic_bin %{buildroot}%{_bindir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2rc
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2rc
 - Rebuild for Fedora

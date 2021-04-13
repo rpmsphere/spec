@@ -1,6 +1,6 @@
 Summary: Real-Time Framework for Linux
 Name: xenomai
-Version: 3.0.9
+Version: 3.1
 Release: 1
 Source0: https://xenomai.org/downloads/xenomai/stable/%{name}-%{version}.tar.bz2
 License: GPL
@@ -82,7 +82,7 @@ make install DESTDIR=$RPM_BUILD_ROOT SUDO=false
 %exclude %{_libdir}/lib*.la
 
 %changelog
-* Fri Oct 25 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.9
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
 - Rebuild for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 2.4.8-alt1.qa1
 - NMU: rebuilt for debuginfo.

@@ -5,7 +5,7 @@ BuildRequires:  libX11-devel, libXt-devel
 License:        GPL-2.0+
 Group:          Productivity/Editors/Other
 Summary:        X11 Editor with C/C++/Java Browser and lots more
-Version:        3.49.8
+Version:        3.50.2
 Release:        1
 URL:            http://xcoral.free.fr/
 Source0:        %{name}-%{version}.tar.gz
@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/lib/xcoral
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.49.8
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.50.2
 - Rebuild for Fedora
 * Wed Aug 26 2009 mls@suse.de
 - make patch0 usage consistent

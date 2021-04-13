@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:		tea
-Version:	50.0.4
+Version:	60.0.3
 Release:	1
 Summary:	A text editor with the hundreds of features
 URL:		https://github.com/psemiletov/tea-qt
@@ -9,7 +9,7 @@ Group:		Productivity/Text/Editors
 License:	GPL
 Source0:	http://semiletov.org/tea/dloads/%{name}-qt-%{version}.tar.gz
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, hunspell-devel, qt5-devel
+BuildRequires:	gcc-c++, hunspell-devel, qt5-qtbase-devel
 Provides:       teaqt
 
 %description
@@ -29,13 +29,13 @@ install -Dm 644 icons/tea_icon_v2.png $RPM_BUILD_ROOT/%{_datadir}/pixmaps/%{name
 install -Dm 644 desktop/%{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/applications/%{name}.desktop
 
 %files
-%doc AUTHORS COPYING ChangeLog INSTALL NEWS NEWS-RU README TODO
+%doc AUTHORS COPYING ChangeLog INSTALL NEWS NEWS-RU README.md TODO
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 50.0.4
+* Sun Apr 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 60.0.3
 - Rebuild for Fedora
 * Sun Jul 11 2010 Detlef Reichelt <detlef@links2linux.de> - 28.1.0
 - new upstream version <28.1.0>

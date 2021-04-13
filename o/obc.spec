@@ -1,6 +1,6 @@
 Name: obc
 Summary: Oxford Oberon-2 compiler
-Version: 3.1.1
+Version: 3.1.2
 Release: 1
 Group: Development/Language
 License: Free Software
@@ -40,5 +40,5 @@ make install DESTDIR=%{buildroot}
 %{_mandir}/man1/*.1.*
 
 %changelog
-* Mon Sep 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.1
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.2
 - Rebuild for Fedora

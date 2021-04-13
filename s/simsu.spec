@@ -1,5 +1,5 @@
 Name:           simsu
-Version:        1.3.8
+Version:        1.3.9
 Release:        1
 Summary:        Basic Sudoku game
 Summary(de):    Einfaches Sudoku-Spiel
@@ -84,7 +84,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_mandir}/man6/%{name}.6.*
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.8
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.9
 - Rebuild for Fedora
 * Wed Nov 08 2017 Mario Blättermann <mario.blaettermann@gmail.com> - 1.3.4-1
 - New upstream version

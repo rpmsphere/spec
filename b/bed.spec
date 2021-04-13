@@ -1,6 +1,6 @@
 Summary: Adjustable data format binary editor
 Name: bed
-Version: 3.0.1
+Version: 3.0.3
 License: GPL
 Release: 1
 Source: https://www.dse.nl/~bed/download/bed-%{version}.src.tar.xz
@@ -43,5 +43,5 @@ make  installfiles ROOTDIR=$RPM_BUILD_ROOT
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.3
 - Rebuild for Fedora

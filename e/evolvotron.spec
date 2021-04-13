@@ -2,15 +2,15 @@
 
 Summary: Interactive "generative art" software
 Name: evolvotron
-Version: 0.6.3
-Release: 2.4
+Version: 0.7.1
+Release: 1
 Source0: http://prdownloads.sourceforge.net/evolvotron/%{name}-%{version}.tar.gz
 Source1: %{name}.png
 License: GPLv2+
 Group: Amusement/Toys
 URL: http://evolvotron.sf.net
 BuildRequires: gcc-c++
-BuildRequires: qt5-devel
+BuildRequires: qt5-qtbase-devel
 BuildRequires: boost-devel
 
 %description
@@ -20,9 +20,9 @@ driven evolution.  If you like lava lamps, and still think the Mandelbrot
 set is cool, this could be the software for you.
 
 %prep
-%setup -q -n %name
-sed -i '196s|return _task;|return bool(_task);|' libevolvotron/mutatable_image_computer.h
-sed -i 's|QT += xml|QT += xml widgets|' common.pro
+%setup -q -n %{name}
+#sed -i '196s|return _task;|return bool(_task);|' libevolvotron/mutatable_image_computer.h
+#sed -i 's|QT += xml|QT += xml widgets|' common.pro
 
 %build
 qmake-qt5 "VERSION_NUMBER=%{version}" main.pro
@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Thu Mar 05 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.3
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
 - Rebuild for Fedora
 * Sat Aug 06 2011 Götz Waschk <waschk@mandriva.org> 0.6.1-2mdv2012.0
 + Revision: 693428

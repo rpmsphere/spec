@@ -3,15 +3,15 @@
 
 Name:		wxhexeditor
 Summary:	A hex editor for view/edit huge files and devices
-Version:	0.23
-Release:	17.1
+Version:	0.24
+Release:	1
 License:	GPL
 Group:		Editors
 URL:		http://wxhexeditor.sourceforge.net/
-Source0:	http://sourceforge.net/projects/wxhexeditor/files/wxHexEditor/v%{version}%20Beta/%{_name}-v%{version}-src.tar.bz2
+Source0:	http://sourceforge.net/projects/wxhexeditor/files/wxHexEditor/v%{version}%20Beta/%{_name}-v%{version}-src.tar.xz
 BuildRequires:	gcc-c++
 BuildRequires:	pkgconfig automake
-BuildRequires:  wxGTK-devel
+BuildRequires:  wxGTK2-devel
 
 %description
 wxHexEditor is another GUI hex editor for open HUGE files and devices
@@ -46,7 +46,7 @@ PYTHON=/usr/bin/python2 CFLAGS=-fPIC make WXCONFIG=wx-config
 %{_datadir}/pixmaps/%{_name}.png
 
 %changelog
-* Wed Feb 25 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.23
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.24
 - Rebuild for Fedora
 * Sat Mar 19 2011 Erdem U. Altinyurt <spamjunkeater@gmail.com> - 0.10-0
 - fixed OpenSUSE 11.4 compilation

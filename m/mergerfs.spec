@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: mergerfs
-Version: 2.30.0
+Version: 2.32.4
 Release: 1
 Summary: A FUSE union filesystem
 Group: File tools
@@ -35,7 +35,7 @@ make man
 %doc README.md
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.30.0
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.32.4
 - Rebuild for Fedora
 * Wed Oct 21 2015 Terechkov Evgenii <evg@altlinux.org> 2.7.0-alt1
 - 2.7.0

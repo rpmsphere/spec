@@ -1,12 +1,12 @@
 Name:           razercfg
-Version:        0.41
+Version:        0.42
 Release:        1
 Summary:        A Razer device configuration tool
 # Icons are http://creativecommons.org/licenses/by/4.0/
 License:        GPLv2
 Group:          Applications/System
 URL:            http://bues.ch/cms/hacking/razercfg.html
-Source0:        http://bues.ch/razercfg/%{name}-%{version}.tar.bz2
+Source0:        http://bues.ch/razercfg/%{name}-%{version}.tar.xz
 # Upstream provides none of the following files
 Source1:        razercfg.appdata.xml
 BuildRequires:  cmake >= 2.4
@@ -31,22 +31,22 @@ sed -i 's|DESTINATION lib|DESTINATION lib${LIB_SUFFIX}|' librazer/CMakeLists.txt
 
 %build
 %cmake .
-%make_build %{?_smp_mflags}
+%make_build %{?_smp_mflags} -C %{_host}
 
 %install
-%make_install DESTDIR=%{buildroot}
+%make_install DESTDIR=%{buildroot} -C %{_host}
 rm %{buildroot}%{_libdir}/librazer.so
 # Systemd service and udev rule
-install -D -m 444 razerd.service %{buildroot}%{_unitdir}/razerd.service
-install -D -m 444 udev.rules %{buildroot}%{_udevrulesdir}/80-razer.rules
+#install -D -m 444 razerd.service %{buildroot}%{_unitdir}/razerd.service
+#install -D -m 444 udev.rules %{buildroot}%{_udevrulesdir}/80-razer.rules
 # install man pages
 mkdir -p %{buildroot}%{_mandir}/man1
 help2man -N ./ui/razercfg > %{buildroot}%{_mandir}/man1/razercfg.1
 # Note that the following line breaks if razercfg is actually installed
 help2man -N -n "Use specific profiles per game" ./ui/razer-gamewrapper > \
 %{buildroot}%{_mandir}/man1/razer-gamewrapper.1
-LD_LIBRARY_PATH=./librazer/ help2man -N ./razerd/razerd > \
-%{buildroot}%{_mandir}/man1/razerd.1
+#LD_LIBRARY_PATH=./librazer/ help2man -N ./razerd/razerd > \
+#%{buildroot}%{_mandir}/man1/razerd.1
 # install appdata file
 install -Dpm 0644 %{SOURCE1} \
 %{buildroot}%{_datadir}/appdata/razercfg.appdata.xml
@@ -100,7 +100,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 /usr/lib/tmpfiles.d/razerd.conf
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.41
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.42
 - Rebuild for Fedora
 * Sun Nov 20 2016 Johan Heikkilä <johan.heikkila@gmail.com> 0.38
 - Updated for latest version and Fedora 24

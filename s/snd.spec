@@ -1,5 +1,5 @@
 Name:		snd
-Version:	20.7
+Version:	21.2
 Release:	1
 Summary:	Sound file editor
 License:	BSD
@@ -7,7 +7,6 @@ Group:		Sound/Editors and Converters
 URL:		https://ccrma.stanford.edu/software/snd/
 Source0:	ftp://ccrma-ftp.stanford.edu/pub/Lisp/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
-Patch0:		snd-18.9-fix-portaudio-link.patch
 # Math
 BuildRequires:	gmp-devel
 BuildRequires:	pkgconfig(fftw3)
@@ -49,9 +48,7 @@ sorely-missed PDP-10 sound editor named Dpysnd.
 
 %prep
 %setup -q
-%autopatch -p1
-
-# Fix perms
+sed -i 's|^LIBS = |LIBS = -lportaudio |' makefile.in
 chmod 0644 s7.c
 
 %build
@@ -80,7 +77,7 @@ install -m 0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/
 chmod +x %{buildroot}%{_datadir}/%{name}/grani.rb
 
 %changelog
-* Mon Sep 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 20.7
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 21.2
 - Rebuild for Fedora
 * Thu Feb 20 2020 umeabot <umeabot> 20.1-2.mga8
 + Revision: 1547240

@@ -1,8 +1,8 @@
 Summary:	Simple port scanner
 Summary(pl):	Prosty skaner portów
 Name:		knocker
-Version:	0.7.1
-Release:	21.1
+Version:	0.8.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://belnet.dl.sourceforge.net/sourceforge/knocker/%{name}-%{version}.tar.gz
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/%{name}.*
 
 %changelog
-* Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0
 - Rebuild for Fedora
 * Sun May 26 2002 PLD Team <feedback@pld.org.pl>
 Revision 1.5  2002/05/26 00:50:35  kloczek

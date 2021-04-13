@@ -1,15 +1,16 @@
 Name:           spectmorph
-Version:        0.5.1
+Version:        0.5.2
 Release:        1
 Summary:        Analyze samples of musical instruments and combine them
 Group:          Multimedia
 License:        LGPLv3
 URL:            http://spectmorph.org/
 Source:         http://spectmorph.org/files/releases/%{name}-%{version}.tar.bz2
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:  cairo-devel
 BuildRequires:  fftw-devel
 BuildRequires:  libao-devel
+BuildRequires:  libsndfile-devel
 
 %description
 SpectMorph can be used to construct hybrid sounds, for instance a sound between
@@ -42,5 +43,5 @@ make install DESTDIR=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Fri Feb 14 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
 - Rebuild for Fedora

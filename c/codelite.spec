@@ -1,13 +1,13 @@
 %global debug_package %{nil}
 
 Name:           codelite
-Version:        10.0
-Release:        7.1
+Version:        15.0
+Release:        1
 License:        GPLv2+
 Group:          Development/Tools
 Summary:        CodeLite is a powerful open-source, cross platform code editor for C/C++
 URL:            http://codelite.sourceforge.net
-Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}-gtk.src.tar.gz
+Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:	wxGTK3-devel cmake libssh-devel hunspell-devel libedit-devel sqlite-devel
 Requires:       libedit-devel
 
@@ -96,7 +96,7 @@ fi
 gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
-* Tue Feb 14 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 10.0
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 15.0
 - Rebuild for Fedora
 * Tue May 13 2014 DH
 - Added new files to %%files

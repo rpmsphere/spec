@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: picolisp
-Version: 19.12
+Version: 20.12
 Release: 1
 Summary: Interpreted Lisp
 License: MIT
@@ -9,7 +9,8 @@ Group: Development/Lisp
 URL: http://picolisp.com
 Source: http://software-lab.de/picoLisp.tgz
 # 64-bit build bootstraps using 32-bit one or Java
-BuildRequires: java-devel-openjdk lua
+#BuildRequires: java-devel-openjdk
+BuildRequires: lua
 
 %description
 PicoLisp can be viewed from two different aspects:
@@ -44,7 +45,7 @@ ln -s %_libdir/%name %buildroot%_datadir/%name
 %_datadir/%name
 
 %changelog
-* Tue Oct 15 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 19.12
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 20.12
 - Rebuild for Fedora
 * Wed Jun 29 2016 Michael Shigorin <mike@altlinux.org> 16.6-alt1
 - new version (watch file uupdate)

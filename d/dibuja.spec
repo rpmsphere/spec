@@ -1,5 +1,5 @@
 Name: dibuja
-Version: 0.12.0
+Version: 0.21.12
 Release: 1
 Summary: Gtk based basic paint program
 License: GPLv3
@@ -33,7 +33,7 @@ Dibuja is a program for quick small editing and drawing.
 %_datadir/pixmaps/dibuja.*
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.0
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.21.12
 - Rebuild for Fedora
 * Sun Apr 02 2017 Yuri N. Sedunov <aris@altlinux.org> 0.4.0-alt1
 - 0.4.0

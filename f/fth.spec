@@ -1,7 +1,7 @@
 Name: fth
 Summary: Forth Scripting
-Version: 1.3.8
-Release: 5.1
+Version: 1.4.1
+Release: 1
 Group: Development/Languages
 License: BSD
 URL: http://fth.sourceforge.net/
@@ -16,7 +16,7 @@ using Fth as extension language.
 
 %prep
 %setup -q
-sed -i 's|define HAVE_BN.*|define HAVE_BN 0|' ficl/ficllocal.h
+#sed -i 's|define HAVE_BN.*|define HAVE_BN 0|' ficl/ficllocal.h
 
 %build
 %configure
@@ -26,7 +26,7 @@ make %{?_smp_mflags}
 make install DESTDIR=%{buildroot}
 
 %files
-%doc README NEWS COPYING AUTHORS ChangeLog
+%doc README NEWS COPYING AUTHORS HISTORY
 %{_bindir}/%{name}
 %{_libdir}/lib%{name}.so
 %{_includedir}/%{name}
@@ -36,5 +36,5 @@ make install DESTDIR=%{buildroot}
 %{_datadir}/aclocal/%{name}.m4
 
 %changelog
-* Tue Oct 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.8
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1
 - Rebuild for Fedora

@@ -11,6 +11,7 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 Requires:       pygtk2
 Requires:       hicolor-icon-theme
+Requires:       pmetro-maps
 
 %description
 A simple pygtk+2 application for finding paths in metro (subway)
@@ -42,12 +43,15 @@ desktop-file-install                                    \
     %{buildroot}%{_datadir}/applications/%{name}.desktop
 %find_lang %{name}
 
+rm -rf %{buildroot}%{_datadir}/%{name}/data
+ln -s ../pmetro-maps %{buildroot}%{_datadir}/%{name}/data
+
 %files -f %{name}.lang
 %doc doc/AUTHORS doc/COPYING doc/NEWS doc/READ* doc/TODO
 %{_bindir}/%{name}
-%{_datadir}/%{name}/
+%{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
-%{_datadir}/icons/hicolor/*x*/apps/
+%{_datadir}/icons/hicolor/*/apps
 
 %changelog
 * Thu Nov 19 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.4

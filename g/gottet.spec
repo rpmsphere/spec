@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           gottet
-Version:        1.1.8
+Version:        1.1.9
 Release:        1
 Summary:        Falling blocks game
 Group:          Amusements/Games
@@ -41,7 +41,7 @@ rm -rf %{buildroot}
 gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
-* Wed Sep 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.8
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.9
 - Rebuild for Fedora
 * Mon Dec 05 2011 graeme@gottcode.org 1.0.4-4
 - Update GNOME icon cache

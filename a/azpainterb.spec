@@ -1,5 +1,7 @@
+%global debug_package %{nil}
+
 Name:           azpainterb
-Version:        1.1.1
+Version:        1.1.3b1
 Release:        1
 Summary:        Painting software for dot editing
 License:        GPL3.0+
@@ -28,31 +30,31 @@ with XInput2. Layer color fixed to 8bit RGBA.
 
 %build
 export CFLAGS="%{optflags} -fno-strict-aliasing"
-autoreconf -fiv
-%configure --disable-static
+#autoreconf -fiv
+./configure --prefix=/usr
 make %{?_smp_mflags}
 
 %install
 %make_install
-mv %{buildroot}%{_datadir}/mime/packages/azpainter.xml %{buildroot}%{_datadir}/mime/packages/%{name}.xml
+#mv %{buildroot}%{_datadir}/mime/packages/azpainter.xml %{buildroot}%{_datadir}/mime/packages/%{name}.xml
 
 %post
 %{_bindir}/update-desktop-database --quiet "%{_datadir}/applications" || :
-%{_bindir}/update-mime-database -n "%{_datadir}/mime" || :
+#{_bindir}/update-mime-database -n "%{_datadir}/mime" || :
 
 %postun
 %{_bindir}/update-desktop-database --quiet "%{_datadir}/applications" || :
-%{_bindir}/update-mime-database -n "%{_datadir}/mime" || :
+#{_bindir}/update-mime-database -n "%{_datadir}/mime" || :
 
 %files
-%doc AUTHORS ChangeLog NEWS README README_ja
+%doc AUTHORS ChangeLog README README_ja
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/*
-%{_datadir}/mime/packages/%{name}.xml
-%license COPYING GPL3
+#{_datadir}/mime/packages/%{name}.xml
+%license GPL3
 
 %changelog
-* Mon Dec 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3b1
 - Rebuild for Fedora

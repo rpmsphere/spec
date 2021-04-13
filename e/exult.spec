@@ -1,5 +1,7 @@
+%global debug_package %{nil}
+
 Name:           exult
-Version:        1.4.9rc1.svn7114
+Version:        1.6
 Release:        1
 Summary:        Ultima VII Engine
 License:        GPL     
@@ -21,22 +23,22 @@ Included in the tools are: expack (archiver), ucxt (decompiler),
 ucc (compiler), splitshp (frame splitter), shp2pcx (shape converter),
 ipack (image archiver), textpack (text archiver)
 
-%package studio
-Summary: An editor for the Exult engine.
-Group: Amusements/Games
+#%package studio
+#Summary: An editor for the Exult engine.
+#Group: Amusements/Games
 
-%description studio
-Exult Studio: an editor for the Exult engin
+#Ddescription studio
+#Exult Studio: an editor for the Exult engin
 
 %prep
-%setup -q -n %{name}-1.4.9
-sed -i '1i #include <cstring>' shapes/pngio.cc
-sed -i 's|bool \*accept = false|bool *accept = NULL|' mapedit/shapeedit.cc
+%setup -q
+#sed -i '1i #include <cstring>' shapes/pngio.cc
+#sed -i 's|bool \*accept = false|bool *accept = NULL|' mapedit/shapeedit.cc
 
 %build
 ./autogen.sh
-%configure --enable-exult-studio --enable-exult-studio-support
-sed -i 's|-Wall|-Wall -Wno-narrowing|' Makefile */Makefile
+%configure --disable-exult-studio --disable-exult-studio-support
+#sed -i 's|-Wall|-Wall -Wno-narrowing|' Makefile */Makefile
 make %{?_smp_mflags}
 
 %install
@@ -49,6 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README FAQ README.1ST
 %{_bindir}/exult
+   /usr/share/exult/u7sibetaintrinsics.data
 %{_datadir}/exult/exultmsg.txt
 %{_datadir}/exult/exult_bg.flx
 %{_datadir}/exult/exult_si.flx
@@ -59,31 +62,29 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/exult.desktop
 %{_datadir}/exult/bg_mr_faces.vga
 %{_datadir}/exult/bg_paperdol.vga
-%{_datadir}/exult/estudio/new/blends.dat
-%{_datadir}/exult/estudio/new/paperdol.vga
 %{_datadir}/exult/exult_iphone.flx
-%{_mandir}/man1/exult_studio.1.gz
-%{_mandir}/man1/ucc.1.gz
 
 %files tools
 %doc tools/expack.txt
-%{_mandir}/man1/expack.1.gz
-%{_mandir}/man1/ipack.1.gz
-%{_mandir}/man1/shp2pcx.1.gz
-%{_mandir}/man1/splitshp.1.gz
-%{_mandir}/man1/textpack.1.gz
+%{_mandir}/man1/*
 %{_bindir}/expack
 %{_bindir}/ipack
 %{_bindir}/textpack
 %{_bindir}/ucxt
-%{_bindir}/ucc
+%{_bindir}/cmanip
+%{_bindir}/mklink
+%{_bindir}/rip
+%{_bindir}/wuc
+#{_bindir}/ucc
 %{_bindir}/splitshp
 %{_bindir}/shp2pcx
 %{_datadir}/exult/u7bgintrinsics.data
 %{_datadir}/exult/u7siintrinsics.data
+%{_datadir}/exult/u7sibetaintrinsics.data
 %{_datadir}/exult/u7misc.data
 %{_datadir}/exult/u7opcodes.data
 
+%if 0
 %files studio
 %{_bindir}/exult_studio
 %{_datadir}/exult/exult_studio.glade
@@ -96,9 +97,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/exult/estudio/new/text.flx
 %{_datadir}/exult/estudio/new/fonts.vga
 %{_datadir}/exult/estudio/new/pointers.shp
+%{_datadir}/exult/estudio/new/blends.dat
+%{_datadir}/exult/estudio/new/paperdol.vga
+%endif
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.9.0.rc1.svn7114
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6
 - Rebuild for Fedora
 * Sun May 20 2012 Chih-Jen Nung <cj.nung@ossii.com.tw>-1.4.9.0.rc1.svn7114
 - create newspec  

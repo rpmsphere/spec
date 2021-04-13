@@ -1,13 +1,13 @@
 %global debug_package %{nil}
 
 Name:		ultracopier
-Version:	2.0.4.8
+Version:	2.2.4.7
 Release:	1
 License:	GPLv3+
 Group:		File tools
 URL:		http://ultracopier.first-world.info/
 Source:		http://files.first-world.info/ultracopier/%{version}/ultracopier-src-%{version}.tar.xz
-BuildRequires:	qt5-devel
+BuildRequires:	qt5-qtbase-devel
 Summary:	The QT advanced copier
 Obsoletes:	supercopier
 
@@ -40,7 +40,7 @@ sed -i -e 's/^Icon=%{name}.png$/Icon=%{name}/g' %{buildroot}%{_datadir}/applicat
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
-* Fri Nov 15 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.4.8
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.4.7
 - Rebuild for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.2.0.16-5
 - (7263b13) MassBuild#1257: Increase release tag

@@ -1,6 +1,6 @@
 Name: pasang-emas
 Summary: A traditional board game of Brunei
-Version: 6.2.0
+Version: 6.3.0
 Release: 1
 Group: Amusements/Games
 License: GPLv3
@@ -9,7 +9,7 @@ Source0: http://sourceforge.net/projects/pasang-emas/files/pasang-emas/%{version
 BuildRequires: gtk3-devel
 BuildRequires: intltool
 BuildRequires: gnome-doc-utils
-BuildRequires: python
+BuildRequires: python3
 
 %description
 Pasang is a traditional two-player board game of Brunei. The game starts with
@@ -41,5 +41,5 @@ mv %{buildroot}%{_datadir}/icons %{buildroot}%{_datadir}/pixmaps
 %{_datadir}/metainfo/bn.pasang.pasang-emas.appdata.xml
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2.0
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 6.3.0
 - Rebuild for Fedora

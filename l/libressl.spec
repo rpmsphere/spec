@@ -1,5 +1,5 @@
 Name:           libressl
-Version:        3.1.4
+Version:        3.2.5
 Release:        1
 Summary:        An SSL/TLS protocol implementation
 License:        OpenSSL
@@ -160,7 +160,7 @@ fi
 %_mandir/man3/*.*
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.4
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.5
 - Rebuild for Fedora
 * Wed May 22 2019 Jan Engelhardt <jengelh@inai.de>
 - Update to new upstream release 2.9.2

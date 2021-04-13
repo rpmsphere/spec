@@ -2,8 +2,8 @@
 
 Summary:	Command-line based markdown presentation tool
 Name:		mdp
-Version:	1.0.7
-Release:	3.1
+Version:	1.0.15
+Release:	1
 License:	GPLv3
 Group:		Office
 URL:		https://github.com/visit1985/mdp
@@ -29,7 +29,7 @@ make
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Thu Aug 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.7
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.15
 - Rebuild for Fedora
 * Tue Feb 24 2015 Denis Silakov <denis.silakov@rosalab.ru> 0.93.0-1
 + Revision: fbb562e

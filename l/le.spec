@@ -1,6 +1,6 @@
 Summary: This is terminal text editor
 Name: le
-Version: 1.16.6
+Version: 1.16.8
 Release: 1
 License: GPL
 Group: Applications/Editors
@@ -36,7 +36,7 @@ make
 %{_datadir}/icons/hicolor/48x48/apps/le-icon.png
 
 %changelog
-* Thu Oct 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.16.6
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.16.8
 - Rebuild for Fedora
 * Fri Feb 27 2004 Peter Soos <sp@osb.hu>
 - Moved to  Fedora Core 1

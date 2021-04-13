@@ -1,5 +1,5 @@
 Name:           pentobi
-Version:        18.1
+Version:        18.5
 Release:        1
 Summary:        Program to play the board game Blokus
 License:        GPLv3
@@ -9,6 +9,7 @@ BuildRequires:  cmake gcc-c++ qt5-qtsvg-devel qt5-qttools-devel
 BuildRequires:  extra-cmake-modules kf5-kio-devel
 BuildRequires:  desktop-file-utils libappstream-glib
 BuildRequires:  qt5-qtquickcontrols2-devel qt5-qtwebview-devel docbook-style-xsl
+BuildRequires:  librsvg2-tools
 
 %description
 Pentobi is a computer opponent for the board game Blokus with
@@ -32,11 +33,11 @@ Pentobi game files.
 export CXXFLAGS="%{optflags} -O3"
 %cmake -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
        -DPENTOBI_BUILD_KDE_THUMBNAILER=ON \
-       -DPENTOBI_BUILD_TESTS=ON
-make %{?_smp_mflags} VERBOSE=1
+       -DPENTOBI_BUILD_TESTS=ON .
+make %{?_smp_mflags} VERBOSE=1 -C %{_host}
 
 %install
-%make_install
+%make_install -C %{_host}
 
 %post
 /usr/bin/update-desktop-database &> /dev/null || :
@@ -73,7 +74,7 @@ fi
 #{_datadir}/metainfo/io.sourceforge.pentobi.kde-thumbnailer.metainfo.xml
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 18.1
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 18.5
 - Rebuild for Fedora
 * Mon Jan 04 2016 Juhani Numminen <juhaninumminen0@gmail.com> - 11.0-1
 - Created by borrowing from existing pentobi.spec files

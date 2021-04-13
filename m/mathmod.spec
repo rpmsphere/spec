@@ -1,5 +1,5 @@
 Name:          mathmod
-Version:       10.0
+Version:       11.0
 Release:       1
 Summary:       A program which generate 3D and 4D surfaces
 Group:         Sciences/Mathematics
@@ -19,7 +19,7 @@ animate implicit and parametric surfaces. MathMod supports:
 * Large set of scripted examples
 
 %prep
-%setup -q
+%setup -q -n mathmod-branches-r508-trunk
 
 %build
 %qmake_qt5
@@ -95,7 +95,7 @@ EOF
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 10.0
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 11.0
 - Rebuild for Fedora
 * Tue Nov 10 2015 alexl <alexl> 3.1-1.mga6
 + Revision: 901433

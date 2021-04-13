@@ -87,8 +87,11 @@ EOF
 
 %find_lang %{name}
 
+sed -i 's|gprintf|printf|' %{buildroot}%{_initrddir}/partimaged
+
 %pre
-%_pre_useradd partimag /var/lib/partimage /bin/false
+groupadd -r partimag ||:
+useradd partimag -g partimag -d /var/lib/partimage -r -s /bin/false
 
 %post
 dir=/var/lib/partimage
@@ -100,15 +103,25 @@ if [ ! -d $dir ]; then
     grep partimag /etc/group > $dir/etc/group
     install -d -o partimag $dir/data
 fi
+#%_create_ssl_certificate partimage -g partimag
+mkdir -p /etc/pki/tls/certs/ /etc/pki/tls/private/
+openssl req -newkey rsa:4096 \
+            -x509 \
+            -sha256 \
+            -days 3650 \
+            -nodes \
+            -out /etc/pki/tls/certs/partimage.pem \
+            -keyout /etc/pki/tls/private/partimage.pem \
+            -subj "/C=SI/ST=Ljubljana/L=Ljubljana/O=Security/OU=IT Department/CN=www.example.com"
 # now all you have to do is run partimaged -D --chroot /var/lib/partimage
-%_post_service partimaged
-%_create_ssl_certificate partimage -g partimag
+service partimaged start
 
 %preun
-%_preun_service partimaged
+service partimaged stop
 
 %postun
-%_postun_userdel partimag
+userdel partimag
+groupdel partimag ||:
 
 %files -f %{name}.lang
 %doc BUGS AUTHORS ABOUT-NLS COPYING ChangeLog partimage.lsm

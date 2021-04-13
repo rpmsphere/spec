@@ -1,11 +1,12 @@
 Name:		flashbench
-Version:	71
-Release:	2.1
+Version:	72
+Release:	0
 Summary:	Bench-marking and analysis utility for flash devices
 License:	GPLv2
 Group:		System/Kernel and hardware
 URL:		https://github.com/bradfa/flashbench.git
-Source0:	%{name}-%{version}.tar.bz2
+#Source0:	%{name}-%{version}.tar.bz2
+Source0:        %{name}-dev.zip
 
 %description
 Unfortunately flash manufacturers do not provide random speed, number of
@@ -18,7 +19,7 @@ NOTE: This tool will cause loss of data on the device being tested and
 should be used with caution. See:- /usr/share/doc/%{name}/README
 
 %prep
-%setup -q 
+%setup -q -n %{name}-dev
 
 %build
 make
@@ -33,7 +34,7 @@ install -D -m 0755 %{name} %{buildroot}%{_bindir}
 %{_bindir}/*
 
 %changelog
-* Thu Mar 29 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 71
+* Sun Apr 4 Wei-Lun Chao <bluebat@member.fsf.org> - 72
 - Rebuild for Fedora
 * Sun Mar 18 2018 Igor Vlasenko <viy@altlinux.ru> 71-alt1_1
 - new version

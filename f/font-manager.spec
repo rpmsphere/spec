@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name:           font-manager
-Version:        0.7.7
+Version:        0.8.4
 Release:        1
 Summary:        A simple font management application for Gtk+ Desktop Environments
 Group:          Applications/Publishing
@@ -9,7 +9,7 @@ URL:            http://code.google.com/p/%{name}
 Source0:        https://github.com/FontManager/master/releases/download/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:  cairo-devel fontconfig-devel freetype-devel glib2-devel 
 BuildRequires:  intltool json-glib-devel libappstream-glib
-BuildRequires:  pango-devel sqlite-devel yelp-tools gtk3-devel
+BuildRequires:  pango-devel sqlite-devel yelp-tools gtk3-devel meson
 BuildRequires:  vala gobject-introspection-devel libgee-devel libxml2-devel
 #BuildRequires:  file-roller nemo-python-devel gucharmap-devel nautilus-python-devel
 
@@ -48,9 +48,11 @@ meson --prefix=/usr build
 %{_datadir}/glib-2.0/schemas/*.gschema.xml
 %{_datadir}/help/*/%{name}
 %{_mandir}/man1/%{name}.1.*
+%{_datadir}/gnome-shell/search-providers/org.gnome.FontManager.SearchProvider.ini
+%{_datadir}/icons/hicolor/*/apps/org.gnome.Font*.png
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.7
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.4
 - Rebuild for Fedora
 * Wed Feb 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.7.2-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild

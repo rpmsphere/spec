@@ -5,8 +5,8 @@ BuildRequires: gcc-c++ unzip
 License:      Contact author, Other License(s), see package
 Group:        Amusements/Games/Board/Chess
 Summary:      A Chess Program
-Version:      23.4
-Release:      20.1
+Version:      25.2
+Release:      1
 URL:          http://www.craftychess.com/
 Source:       ftp://ftp.cis.uab.edu/pub/hyatt/source/%{name}-%{version}.zip
 Source1:      crafty-misc.tar.bz2
@@ -24,20 +24,20 @@ Authors:
     Bob Hyatt <hyatt@cis.uab.edu>
 
 %prep
-%setup
-%setup -T -D -a 1 -a 2
+#setup -qc -D -a 1 -a 2
+%setup -q -c -a 1 -a 2
 mkdir .crafty
 touch .craftyrc .crafty/book.bin .crafty/books.bin
 chmod 755 bitmaps
 chmod 644 bitmaps/*
 rm bitmaps/gifs.tar
-%patch0 -p1
+#%patch0 -p1
 %ifarch %ix86
 sed -i 's|INLINE64|INLINE32|' Makefile
 %endif
 
 %build
-make linux-suse
+make unix-gcc
 sh make_books
 # use large opening book
 mv large_book.bin book.bin
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/share/crafty
 
 %changelog
-* Tue May 19 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 23.4
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 25.2
 - Rebuild for Fedora
 * Wed Sep 23 2009 snwint@suse.de
 - update to version 23.0

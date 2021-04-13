@@ -1,11 +1,11 @@
 Name:        medit
-Version:     1.2.0
-Release:     3.1
+Version:     1.2.92
+Release:     0
 Summary:     Multiplatform GTK+2 text editor
 Group:       Applications/Editors
 License:     GPLv2+
 URL:         http://mooedit.sourceforge.net/
-Source0:     http://sourceforge.net/projects/mooedit/files/medit/%{version}/%{name}-%{version}.tar.bz2
+Source0:     http://sourceforge.net/projects/mooedit/files/medit/%{version}/%{name}-%{version}-devel.tar.bz2
 BuildRequires:   libpng-devel
 BuildRequires:   gcc-c++ intltool
 BuildRequires:   gtk2-devel libxml2-devel pcre-devel pygtk2-devel libSM-devel
@@ -13,12 +13,12 @@ BuildRequires:   gtk2-devel libxml2-devel pcre-devel pygtk2-devel libSM-devel
 %description
 Medit is a multiplatform GTK+2 text editor.
 Features:
-o Configurable syntax highlighting
-o Configurable keyboard accelerators
-o Multiplatform - works both on unix and windows
+* Configurable syntax highlighting
+* Configurable keyboard accelerators
+* Multiplatform - works both on unix and windows
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}-devel
 
 %build
 export PYTHON=/usr/bin/python2
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/doc/%{name}-1
 
 %changelog
-* Tue Oct 07 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.92
 - Rebuild for Fedora
 * Sat Aug 30 2008 Funda Wang <fundawang@mandriva.org> 0.9.4-1mdv2009.0
 + Revision: 277537

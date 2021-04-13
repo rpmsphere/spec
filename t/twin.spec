@@ -2,12 +2,12 @@
 
 Summary:	A text mode Windows Manager
 Name:		twin
-Version:	0.6.2
-Release:	8.1
+Version:	0.8.1
+Release:	1
 License:	GPLv2
 Group:		Terminals
 URL:		http://sourceforge.net/projects/twin/
-Source0:	http://downloads.sourceforge.net/twin/%{name}-%{version}.tar.bz2
+Source0:	http://downloads.sourceforge.net/twin/%{name}-%{version}.tar.gz
 BuildRequires:	bison
 BuildRequires:	gpm-devel
 #BuildRequires:	libggi-devel
@@ -60,9 +60,9 @@ make
 %{_includedir}/Tutf
 %{_libdir}/*.so
 %{_libdir}/*.a
-
+%exclude %{_libdir}/*.la
 %changelog
-* Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.2
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
 - Rebuild for Fedora
 * Wed Aug 21 2013 wally <wally> 0.6.2-5.mga4
 + Revision: 468862

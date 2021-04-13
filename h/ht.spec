@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 
-Name:           hte
+Name:           ht
 Version:        2.1.0
 Release:        12.1
 Summary:        Disassembler, object dumper and hex editor

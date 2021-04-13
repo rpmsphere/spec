@@ -1,6 +1,6 @@
 Name:		execline
-Version:	2.3.0.4
-Release:	7.1
+Version:	2.8.0.0
+Release:	1
 Summary:	A light non-interactive scripting language
 License:	BSD
 Group:		Shells
@@ -31,6 +31,8 @@ make
 %install
 rm -rf %{buildroot}
 %make_install
+rm %{buildroot}%{_bindir}/cd %{buildroot}%{_bindir}/umask
+mv %{buildroot}%{_bindir}/wait %{buildroot}%{_bindir}/execline-wait
 
 %clean
 rm -rf %{buildroot}
@@ -44,7 +46,7 @@ rm -rf %{buildroot}
 %{_libdir}/lib%{name}.a
 
 %changelog
-* Tue Mar 06 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.3.1
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.0.0
 - Rebuild for Fedora
 * Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.08-4mdv2011.0
 + Revision: 618247

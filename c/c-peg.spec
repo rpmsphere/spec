@@ -1,10 +1,10 @@
-Name:         peg
+Name:         c-peg
 Summary:      Recursive-Descent parser generators for C
 URL:          http://piumarta.com/software/peg/
 Group:        Compiler
 License:      MIT
-Version:      0.1.13
-Release:      9.1
+Version:      0.1.18
+Release:      1
 Source0:      http://piumarta.com/software/peg/peg-%{version}.tar.gz
 
 %description
@@ -22,7 +22,7 @@ scanning (lexical analysis) and parsing (syntactic analysis) into a
 single activity.
 
 %prep
-%setup -q
+%setup -q -n peg-%{version}
 
 %build
 #   bootstrap tools
@@ -50,11 +50,12 @@ install -c -m 644 \
     src/peg.1 $RPM_BUILD_ROOT%{_mandir}/man1/leg.1
 
 %files
-%{_bindir}/%{name}
+%doc ChangeLog README.txt LICENSE.txt
+%{_bindir}/peg
 %{_bindir}/leg
-%{_mandir}/man1/%{name}.1.*
+%{_mandir}/man1/peg.1.*
 %{_mandir}/man1/leg.1.*
 
 %changelog
-* Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.13
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.18
 - Rebuild for Fedora

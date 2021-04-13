@@ -2,7 +2,7 @@
 
 Name:           connectagram
 Summary:        Anagram game
-Version:        1.2.10
+Version:        1.2.11
 Release:        1
 License:        GPL-3.0+
 URL:            http://gottcode.org/%{name}/
@@ -11,7 +11,7 @@ Group:          Amusements/Games
 BuildRequires:  desktop-file-utils
 BuildRequires:  gcc-c++
 BuildRequires:  hicolor-icon-theme
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 
 %description
 A word unscrambling game. The board consists of several scrambled words that
@@ -58,7 +58,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_datadir}/pixmaps/%{name}.xpm
 
 %changelog
-* Tue Sep 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.10
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.11
 - Rebuild for Fedora
 * Sun May  5 2013 Graeme Gott <graeme@gottcode.org>
 - version 1.1.1-1

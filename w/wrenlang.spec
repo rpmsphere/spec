@@ -1,17 +1,17 @@
-#global debug_package %{nil}
+%global debug_package %{nil}
 %define _name wren
 
 Summary: Wren programming language
 Name: wrenlang
-Version: 0.2.0
+Version: 0.4.0
 Release: 1
 License: MIT
 Group: Development/Languages
 Source: https://github.com/munificent/wren/archive/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
 URL: https://github.com/munificent/wren
-BuildRequires: libuv-static
+#BuildRequires: libuv-static
 #BuildRequires: gyp
-BuildRequires: python2
+#BuildRequires: python3
 
 %description
 Wren is a small, fast, class-based concurrent scripting language.
@@ -25,13 +25,14 @@ wrapped up in a familiar, modern syntax.
 #sed -i '/libuv.py/d' util/wren.mk
 #sed -i 's|-fPIC|-fPIC -Wno-error|' Makefile util/wren.mk
 #sed -i 's|sprintf(message,|snprintf(message, sizeof(message),|' src/vm/wren_compiler.c
+sed -i 's|wren_test|wren|' test/test.c
 
 %build
-make
+make -C projects/make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -Dm755 %{_name} %{buildroot}%{_bindir}/%{_name}
+install -Dm755 bin/%{_name}_test %{buildroot}%{_bindir}/%{_name}
 
 %files 
 %doc *.md AUTHORS LICENSE
@@ -41,5 +42,5 @@ install -Dm755 %{_name} %{buildroot}%{_bindir}/%{_name}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Wed Oct 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
 - Rebuild for Fedora

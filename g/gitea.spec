@@ -2,7 +2,7 @@
 %global _default_patch_fuzz 2
 
 Name:		gitea
-Version:	1.12.4
+Version:	1.14.0
 Release:	1
 Summary:	Git with a cup of tea, painless self-hosted git service
 License:	MIT
@@ -42,7 +42,7 @@ install -Dm 0660 %SOURCE12 %buildroot%_sysconfdir/%{name}/app.ini
 
 # install docs
 mkdir -p %buildroot%_docdir/%name
-install -Dm 0644 "custom/conf/app.ini.sample" \
+install -Dm 0644 "custom/conf/app.example.ini" \
 	%buildroot%_docdir/%name/default-app.ini
 
 %pre
@@ -63,5 +63,5 @@ userdel gitea
 %doc *.md
 
 %changelog
-* Mon Sep 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.12.4
+* Sun Apr 011 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14.0
 - Rebuild for Fedora

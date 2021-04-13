@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           di
-Version:        4.48
+Version:        4.49
 Release:        1
 Summary:        Disk Information Utility
 Source:         https://downloads.sourceforge.net/project/diskinfo-di/di-%{version}.tar.gz
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/di.1.*
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.48
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.49
 - Rebuild for Fedora
 * Mon Jul  5 2010 pascal.bleser@opensuse.org
 - update to 4.25:

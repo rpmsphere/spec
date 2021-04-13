@@ -1,6 +1,6 @@
 Summary: A ball-and-paddle game with nice graphics
 Name: lbreakouthd
-Version: 1.0.5
+Version: 1.0.6
 Release: 1
 License: GPL
 Group: Amusements/Games
@@ -44,5 +44,5 @@ sed -i 's|-Werror=format-security||' Makefile */Makefile
 %{_datadir}/icons/lbreakouthd256.gif
 
 %changelog
-* Wed Nov 27 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
 - Rebuild for Fedora

@@ -1,13 +1,12 @@
 Name:           screen-message
 Summary:        Displays a short text fullscreen
-Version:        0.19
-Release:        3.1
+Version:        0.25
+Release:        1
 License:        GPLv2+
 URL:            http://darcs.nomeata.de/screen-message/
 Group:          Applications/Text
 BuildRequires:  gtk2-devel 
 Source0:        %{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Provides:       sm
 
 %description
@@ -38,7 +37,6 @@ install -Dm644 %{name}.6 $RPM_BUILD_ROOT%{_datadir}/man/man6/%{name}.6
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc README.Win32 %{name}.html %{name}.py
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
@@ -46,5 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/man/man6/%{name}.6*
 
 %changelog
-* Sun Aug 19 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.19
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.25
 - Rebuild for Fedora

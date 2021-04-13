@@ -1,6 +1,6 @@
 Name: basic256
-Version: 1.1.4.0
-Release: 9.4
+Version: 2.0.0.11
+Release: 1
 URL: http://kidbasic.sourceforge.net
 Source: http://sourceforge.net/projects/kidbasic/files/basic256/%{name}_%{version}.orig.tar.gz
 Source1: basic256.desktop
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%name.png
 
 %changelog
-* Wed Dec 31 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.4.0
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0.11
 - Rebuild for Fedora
 * Wed Jan 26 2011 Александр Казанцев <kazancas@mandriva.org> 0.9.6-1mdv2010.1
 + Revision: 632933

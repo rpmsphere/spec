@@ -2,7 +2,7 @@
 
 Name: objeck
 Summary: Object-oriented and functional programming language
-Version: 5.6.1
+Version: 5.7.1
 Release: 1
 Group: Development/Language
 License: BSD-like
@@ -52,5 +52,5 @@ install -d %{buildroot}/etc/profile.d
 %{_datadir}/%{name}
 
 %changelog
-* Wed Jan 06 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.6.1
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.7.1
 - Rebuild for Fedora

@@ -2,13 +2,14 @@
 
 Name: beebeep
 Summary: Secure Network Chat
-Version: 5.4.2
-Release: 5.1
+Version: 5.8.4
+Release: 1
 Group: Applications/Communications
 URL: http://sourceforge.net/projects/beebeep/
 Source0: https://sourceforge.net/projects/beebeep/files/Sources/%{name}-code-%{version}.zip
 License: Qt Public License
-BuildRequires: qt5-devel
+BuildRequires: qt5-qtbase-devel
+BuildRequires: qt5-qtx11extras-devel
 
 %description
 BeeBEEP is a secure network chat. You can talk and send files with all your
@@ -16,7 +17,7 @@ friends inside a local area network such of an office, home or internet cafe
 without a server.
 
 %prep
-%setup -q -n %{name}-code-r1047
+%setup -q -n %{name}-code-r1476
 
 %build
 qmake-qt5 -recursive
@@ -34,5 +35,5 @@ cp -a test/* %{buildroot}%{_libdir}
 %{_libdir}/lib*
 
 %changelog
-* Mon Aug 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 5.4.2
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.8.4
 - Rebuild for Fedora

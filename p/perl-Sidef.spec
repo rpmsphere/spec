@@ -1,13 +1,13 @@
 %define upstream_name    Sidef
 
 Name:       perl-%{upstream_name}
-Version:    3.97.1
+Version:    3.98
 Release:    1
 Summary:    The Sidef programming language
 License:    GPL+ or Artistic
 Group:      Development/Perl
 URL:        https://metacpan.org/pod/%{upstream_name}
-Source0:    https://cpan.metacpan.org/authors/id/T/TR/TRIZEN/%{upstream_name}-v%{version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/T/TR/TRIZEN/%{upstream_name}-%{version}.tar.gz
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Algorithm::Combinatorics)
 BuildRequires: perl(Test::More)
@@ -55,7 +55,7 @@ Sidef is a modern, high-level, general-purpose programming language,
 inspired by Ruby, Perl 6 and Go.
 
 %prep
-%setup -qn %{upstream_name}-v%{version}
+%setup -qn %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -75,7 +75,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_bindir}/sidef
 
 %changelog
-* Tue Mar 09 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.97.1
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.98
 - Rebuild for Fedora
 * Thu Mar 02 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2.330.1-3
 - (afff86f) MassBuild#1273: Increase release tag

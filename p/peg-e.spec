@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           peg-e
-Version:        1.2.7
+Version:        1.2.8
 Release:        1
 Summary:        Peg solitaire game
 Group:          Amusements/Games
@@ -53,7 +53,7 @@ fi
 gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.7
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.8
 - Rebuild for Fedora
 * Sun Jun 10 2012 graeme@gottcode.org 1.1.1.1-1
 - New upstream release

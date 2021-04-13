@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:           dmagnetic
-Version:        0.29
+Version:        0.30
 Release:        1
 Summary:        A Magnetic Scrolls Interpreter
 License:        BSD-2-Clause
@@ -37,7 +37,7 @@ install -m 644 dMagnetic.ini %{buildroot}%{_datadir}/dMagnetic/dMagnetic.ini
 %license LICENSE.txt
 
 %changelog
-* Thu Dec 31 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.29
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.30
 - Rebuild for Fedora
 * Mon Jul 27 2020 Michael Vetter <mvetter@suse.com>
 - Update to 0.25:

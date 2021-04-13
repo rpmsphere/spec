@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name:		skalibs
-Version:	2.6.3.1
-Release:	3.1
+Version:	2.10.0.2
+Release:	1
 Summary:	The skarnet.org development library
 License:	BSD
 Group:		Development/Other
@@ -59,7 +59,7 @@ rm -rf %{buildroot}
 %{_libdir}/libskarnet.so
 
 %changelog
-* Tue Mar 06 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.3.1
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.10.0.2
 - Rebuild for Fedora
 * Sun Sep 20 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.47-2mdv2010.0
 + Revision: 445130

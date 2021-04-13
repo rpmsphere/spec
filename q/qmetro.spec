@@ -1,21 +1,20 @@
 Name:           qmetro
-Version:        0.6.5
-Release:        6.4
+Version:        0.7.1
+Release:        1
 License:        GPL-2.0+
 Summary:        Map of the Transport System for Many City Subways
 URL:            http://sourceforge.net/projects/qmetro/
 Group:          Productivity/Other
 Source0:        http://sourceforge.net/projects/qmetro/files/source/%{name}-%{version}.zip
-BuildRequires:  gcc-c++ qt-devel qt-mobility-devel hicolor-icon-theme
-BuildRequires:  ghostscript-core ImageMagick
+BuildRequires:  gcc-c++ qt4-devel hicolor-icon-theme
+BuildRequires:  ghostscript ImageMagick
+Requires:       pmetro-maps
 
 %description
 Vector metro (subway) map for calculating route and getting information
 about transport nodes. It's GPL project for creating analog of pMetro
 (Muradov B.) and it's using PMZ format. Maps have an open format and can
 easily be edited or created.
-
-Requires qmetro-data-* files.
 
 %prep
 %setup -q
@@ -40,6 +39,8 @@ for size in 48x48 32x32 22x22 16x16 ; do
     convert -resize ${size} rc/icons/hicolor/64x64/apps/%{name}.png \
         $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/${size}/apps/%{name}.png
 done
+mv %{buildroot}/tmp/qMetro %{buildroot}%{_datadir}/qmetro
+ln -s ../pmetro-maps %{buildroot}%{_datadir}/qmetro/map
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/icons/hicolor/*/*/%{name}.*
 
 %changelog
-* Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.5
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
 - Rebuild for Fedora
 * Fri May 18 2012 lazy.kent@opensuse.org
 - Split off maps packages.

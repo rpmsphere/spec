@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: webcamoid
-Version: 8.6.0
+Version: 8.8.0
 Release: 1
 Summary: The full webcam and multimedia suite
 Group: Applications/Multimedia
@@ -47,8 +47,8 @@ make
 %install
 rm -rf %{buildroot}
 make INSTALL_ROOT=%{buildroot} install
-mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_mandir}/webcamoid.1.gz %{buildroot}%{_mandir}/man1/webcamoid.1.gz
+#mkdir -p %{buildroot}%{_mandir}/man1
+#mv %{buildroot}%{_mandir}/webcamoid.1.gz %{buildroot}%{_mandir}/man1/webcamoid.1.gz
 
 %clean
 rm -rf %{buildroot}
@@ -68,7 +68,7 @@ rm -rf %{buildroot}
 %{_libdir}/qt5/qml/AkQml
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 8.6.0
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 8.8.0
 - Rebuild for Fedora
 * Mon Feb 23 2015 Gonzalo Exequiel Pedone <hipersayan DOT x AT gmail DOT com> 6.2.0-1
 - Final Release.

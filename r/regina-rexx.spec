@@ -1,10 +1,10 @@
 %global debug_package %{nil}
 
-Name: regina
-Version: 3.9.1
-Release: 5.1
+Name: regina-rexx
+Version: 3.9.3
+Release: 1
 Group: Development/Languages
-Source: http://dl.sourceforge.net/project/regina-rexx/regina-rexx/%{version}/Regina-REXX-%{version}.tar.gz
+Source: http://dl.sourceforge.net/project/%{name}/%{name}/%{version}/%{name}-%{version}.tar.gz
 License: LGPL
 URL: http://regina-rexx.sourceforge.net
 Summary: Rexx Interpreter binaries, language files and sample programs
@@ -25,7 +25,7 @@ the ANSI Standard for Rexx (1996).  It is also available on several other
 operating systems. For more information on Rexx, visit http://www.rexxla.org
 
 %prep
-%setup -q -n Regina-REXX-%{version}
+%setup -q
 
 %build
 ./configure --prefix=/usr --mandir=%{_mandir} --libdir=%{_libdir}
@@ -43,13 +43,14 @@ ldconfig
 
 %files
 %{_mandir}/man1/*.1.*
-/usr/etc/rxstack
-%{_datadir}/Regina-REXX
+#/usr/etc/rxstack
+%{_datadir}/%{name}
 %{_bindir}/rexx
 %{_bindir}/regina
 %{_bindir}/rxqueue
 %{_bindir}/rxstack
 %{_libdir}/libregina.so.*
+%{_libdir}/%{name}
 
 %files devel
 %{_libdir}/lib*.a
@@ -57,12 +58,13 @@ ldconfig
 %{_includedir}/rexxsaa.h
 %{_datadir}/man/man1/regina-config.1.*
 %{_bindir}/regina-config
+%{_libdir}/pkgconfig/libregina.pc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Fri Nov 13 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.1
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.3
 - Rebuild for Fedora
 * Mon Jan 02 2012 Mark Hessling
 - Vendor package

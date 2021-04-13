@@ -1,12 +1,12 @@
 Summary:	Cross-platform Python spreadsheet application
 Name:		pyspread
-Version:	1.1.2
-Release:	4.1
+Version:	1.1.3
+Release:	1
 License:	GPLv3
 Group:		Office/Spreadsheet
 URL:		http://manns.github.io/pyspread/
 Source0:	https://pypi.python.org/packages/source/p/pyspread/%{name}-%{version}.tar.gz
-Source1:    pyspread.xpm
+Source1:        pyspread.xpm
 BuildRequires:	python2-devel
 BuildRequires:	numpy atlas
 #BuildRequires:	python2-matplotlib
@@ -34,8 +34,8 @@ python2 setup.py install --skip-build --root=%{buildroot} --install-lib=/usr/sha
 
 install -p -m 644 -D %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.xpm
 rm -f %{buildroot}/%{_datadir}/README %{buildroot}/%{_datadir}/changelog
-rm -f %{buildroot}/%{_datadir}/%{name}/__init__.py*
-rm -f %{buildroot}/%{_datadir}/*.egg-info
+#rm -f %{buildroot}/%{_datadir}/%{name}/__init__.py*
+#rm -f %{buildroot}/%{_datadir}/*.egg-info
 mv %{buildroot}/%{_datadir}/%{name}/locale %{buildroot}/%{_datadir}/
 mkdir %{buildroot}/%{_bindir}
 mv %{buildroot}/%{_datadir}/%{name}/%{name} %{buildroot}/%{_bindir}/%{name}
@@ -53,18 +53,18 @@ EOF
 %find_lang %{name}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
+sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/src/%{name}.py %{buildroot}%{_datadir}/%{name}/src/gui/_cairo_export_dialog.py
 
 %files -f %{name}.lang
 %doc README pyspread/COPYING changelog pyspread/doc/help pyspread/examples
-%{_datadir}/%{name}
+%{_datadir}/%{name}*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.xpm
 %{_bindir}/%{name}
-%exclude %{_datadir}/%{name}.*
 %exclude %{_datadir}/runtests.*
 
 %changelog
-* Fri Aug 10 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
+* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3
 - Rebuild for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 0.3.3-3.mga5
 + Revision: 741786

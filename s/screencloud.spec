@@ -4,12 +4,12 @@ Name:           screencloud
 License:        GPL-2.0
 Group:          Productivity/Networking/Other
 Summary:        Easy to use screenshot sharing application
-Version:        1.5.0
+Version:        1.5.3
 Release:        1
 Source0:        %{name}-%{version}.tar.gz	
 URL:            http://screencloud.net
 BuildRequires:  gcc-c++ cmake
-BuildRequires:  libqxt-qt5-devel pythonqt-devel quazip-devel
+BuildRequires:  libqxt-qt5-devel PythonQt-devel quazip-devel
 
 %description
 Take a screenshot using one of the 3 hotkeys or simply click the
@@ -33,23 +33,23 @@ Authors:
 %build
 export CXXFLAGS="-std=c++98 -fPIC"
 %cmake
-%{__make} %{?jobs:-j%jobs}
+%{__make} %{?jobs:-j%jobs} -C %{_host}
  
 %install
-%make_install
+%make_install -C %{_host}
 mkdir -p $RPM_BUILD_ROOT/usr/bin
 ln -sf /opt/screencloud/screencloud.sh $RPM_BUILD_ROOT/usr/bin/screencloud
 
 %files
 %{_bindir}/%{name}*
-%{_datadir}/applications/screencloud.desktop
+%{_datadir}/applications/*.desktop
 %{_docdir}/screencloud
 %{_datadir}/icons/hicolor/*/apps/screencloud.*
-%{_datadir}/metainfo/screencloud.appdata.xml
+%{_datadir}/metainfo/*.xml
 %{_datadir}/screencloud/modules/ScreenCloud.py
 
 %changelog
-* Wed Jul 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.0
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.3
 - Rebuild for Fedora
 * Sat Feb 14 2015 Olav Sortland Thoresen <olav.s.th@gmail.com> - 1.2.0
 - Added screenshot editor

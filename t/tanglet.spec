@@ -1,5 +1,5 @@
 Name:           tanglet
-Version:        1.5.4
+Version:        1.5.6
 Release:        1
 Summary:        Word finding game
 License:        GPLv3+
@@ -33,7 +33,7 @@ This package contains arch-independent files for %{name}.
 
 %prep
 %setup -q
-sed -i '58,65d' tools/dice/main.cpp
+#sed -i '58,65d' tools/dice/main.cpp
 
 %build
 %{qmake_qt5} PREFIX=%{_prefix}
@@ -76,7 +76,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_datadir}/pixmaps/%{name}.xpm
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.4
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.6
 - Rebuild for Fedora
 * Tue Nov 07 2017 Mario Blättermann <mario.blaettermann@gmail.com> - 1.5.0-1
 - New upstream version

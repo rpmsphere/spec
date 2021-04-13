@@ -1,7 +1,7 @@
 Name: maude
 Summary: High-performance logical framework
-Version: 2.7.1
-Release: 3.1
+Version: 3.1
+Release: 1
 Group: science
 License: Free Software
 URL: http://maude.cs.uiuc.edu
@@ -12,6 +12,7 @@ BuildRequires: libsigsegv-devel
 BuildRequires: cvc4-devel
 BuildRequires: symfpu-devel
 BuildRequires: gmp-devel
+BuildRequires: yices-devel
 
 %description
 Maude is a high-performance reflective language and system supporting
@@ -23,7 +24,8 @@ programming, Maude also supports rewriting logic computation.
 
 %prep
 %setup -q
-sed -i 's|kind::IFF|kind::ITE|' src/Mixfix/variableGenerator.cc
+#sed -i 's|kind::IFF|kind::ITE|' src/Mixfix/variableGenerator.cc
+cp /usr/include/yices/* src/Mixfix/
 
 %build
 %configure
@@ -40,5 +42,5 @@ mv %{buildroot}%{_datadir}/*.%{name} %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
-* Fri Apr 13 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.1
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
 - Rebuild for Fedora

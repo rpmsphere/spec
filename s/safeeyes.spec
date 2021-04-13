@@ -1,6 +1,6 @@
 Name: safeeyes
 Summary: Protect your eyes from eye strain
-Version: 2.0.8
+Version: 2.0.9
 Release: 1
 Group: Utility
 License: GPLv3
@@ -51,5 +51,5 @@ gtk-update-icon-cache /usr/share/icons/hicolor
 %{_datadir}/icons/hicolor/*/*/%{name}*.png
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.8
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.9
 - Rebuild for Fedora

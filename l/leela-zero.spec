@@ -52,4 +52,4 @@ sed -i '26i #include <string>' src/TimeControl.h
 
 %changelog
 * Mon Sep 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15
-- Rebuild for Fedora
+- Rebuilt for Fedora

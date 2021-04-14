@@ -122,7 +122,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Sep 22 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Feb 05 2016 Fedora Release Engineering <releng@fedoraproject.org> - 1.10.9-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild

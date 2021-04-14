@@ -63,6 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb  1 2010 PVince81@yahoo.fr
 - Initial package

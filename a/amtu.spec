@@ -64,7 +64,7 @@ fi
 
 %changelog
 * Mon Apr 18 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 30 2014 Paul Moore <pmoore@redhat.com> - 1.0.8-11
 - Added amtu-1.0.8-net-device_name.patch
   Resolves #1098076

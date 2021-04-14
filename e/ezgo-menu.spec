@@ -47,4 +47,4 @@ EOF
 
 %changelog
 * Tue Feb 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

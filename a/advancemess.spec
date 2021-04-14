@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         advancemess
 Release:      15.1
@@ -52,6 +52,6 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.102.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 13 2008 - uli@suse.de
 - remove man directory

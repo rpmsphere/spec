@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           varka
 Version:        0.1.0
@@ -62,6 +62,6 @@ mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT/usr/lib64
 
 %changelog
 * Sun Jun 16 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 21 2012 sethu@gatech.edu
 - Initial Spec file

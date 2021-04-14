@@ -79,7 +79,7 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 
 %changelog
 * Thu Nov 30 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 10 2017 Fedora Release Engineering <releng@fedoraproject.org> - 3.0.0-13
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 3.0.0-12

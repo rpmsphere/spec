@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       stroller
 Summary:    A GPS Tracker
@@ -41,7 +41,7 @@ desktop-file-install --delete-original       \
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 19 2011 Bernd Stramm <bernd.stramm@gmail.com> - 0.0.2 
  - start making some packaging stuff
  - tell deb packing about version

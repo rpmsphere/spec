@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           monica
 Version:        3.7
@@ -51,7 +51,7 @@ install -Dm 0644 %{SOURCE2} \
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 29 2012 lazy.kent@opensuse.org
 -  Use pkgconfig(*) as build dependencies.
 * Sun Jul 24 2011 lazy.kent@opensuse.org

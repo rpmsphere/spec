@@ -68,7 +68,7 @@ fi
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 27 2006 Michel Van den Bergh <michel.vandenbergh@uhasselt.be> 2.5.4-3
 - Do not strip binaries in installer
 * Wed Dec 22 2005 Michel Van den Bergh <michel.vandenbergh@uhasselt.be> 2.5.4-2

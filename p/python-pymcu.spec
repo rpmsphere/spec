@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: python-pymcu
 Summary: Python Micro Controller Wrapper
 Version: 1.0.12
@@ -28,4 +28,4 @@ python2 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora

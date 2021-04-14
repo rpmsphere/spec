@@ -43,6 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Mar 25 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 07 2012 qmp <glang@lavabit.com> 0.94-1
 - Initial packaging for fedora

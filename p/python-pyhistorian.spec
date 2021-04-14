@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-pyhistorian
 Version:        0.6.8
 Release:        2.1
@@ -41,6 +41,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 23 2011 toms@suse.de
 - Initial version 0.6.8

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         cmph
 Summary:      C Minimal Perfect Hashing (CMPH) Library
@@ -38,4 +38,4 @@ minimal perfect hashing library with a C API.
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

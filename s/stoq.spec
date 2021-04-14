@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	A powerful retail system
 Name:		stoq
@@ -88,6 +88,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Wed Sep 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.11.3-3
 - (e65da9f) MassBuild#1257: Increase release tag

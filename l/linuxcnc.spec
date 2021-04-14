@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 %define rtai 0
 
 Name: linuxcnc
@@ -192,7 +193,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{python_sitearch}
 
 %changelog
 * Mon Jul 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 22 2016 Anton Midyukov <antohami@altlinux.org> 2.7.5-alt1
 - New version 2.7.5
 - Fix repocop warning.

@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name: python-praat-scripts
 Summary: Interface for running Praat scripts through Python
 Version: 0.1.14
@@ -28,4 +29,4 @@ python setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.14
-- Rebuild for Fedora
+- Rebuilt for Fedora

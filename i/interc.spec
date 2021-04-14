@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	A tiny "pseudo C" interpreter
 Name:		interc
@@ -33,4 +33,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Aug 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20120304
-- Rebuild for Fedora
+- Rebuilt for Fedora

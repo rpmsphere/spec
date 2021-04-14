@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 9.0.0.4g
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 10 2011 lazy.kent@opensuse.org
 - Added man pages.
 - Changed URL.

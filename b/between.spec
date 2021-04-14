@@ -87,7 +87,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Feb 03 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 28 2012 1Antoine1 <antoine.belvire@laposte.net> version 6
 - Added .desktop file
 * Sun Jun 24 2012 1Antoine1 <antoine.belvire@laposte.net> version 6

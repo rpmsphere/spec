@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: abclock
 Summary: Analogue Bitmap Clock
@@ -39,4 +39,4 @@ install -m755 %{name} abc_img %{buildroot}%{_bindir}
 
 %changelog
 * Wed Dec 18 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0d
-- Rebuild for Fedora
+- Rebuilt for Fedora

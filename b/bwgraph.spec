@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Oct 03 2009 doiggl@velocitynet.com.au
 - packaged bwgraph version 1 using the buildservice spec file wizard

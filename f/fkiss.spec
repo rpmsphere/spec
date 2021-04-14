@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 15 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.35
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Nov 30 2001 NORIKANE Seiichiro <no_ri@kf6.so-net.ne.jp> - 0.33a-0k
 - version up
 * Fri Jan 05 2001 NORIKANE Seiichiro <no_ri@kf6.so-net.ne.jp> - 0.32-0k

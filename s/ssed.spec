@@ -61,7 +61,7 @@ done
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.60
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 8 2002 Karol Pietrzak <noodlez84@earthlink.net>
 - added comments to %%install section
 - made expection in %%install section for file "info"

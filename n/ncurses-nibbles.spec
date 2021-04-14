@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: NCurses based nibbles game
 Name: ncurses-nibbles
@@ -46,7 +46,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 04 2010 Repocop Q. A. Robot <repocop@altlinux.org> 0.0.4-alt1.qa1
 - NMU (by repocop): the following fixes applied:
   * vendor-tag for nibbles

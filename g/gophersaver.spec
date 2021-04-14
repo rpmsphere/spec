@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Screensaver with flying gopher
 Name: gophersaver
@@ -28,4 +28,4 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Dec 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20191126
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           coquillo
 URL:            http://qt-apps.org/content/show.php/Coquillo?content=141896
@@ -40,7 +40,7 @@ make INSTALL_ROOT=%{buildroot} install
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 7 2011 giacomosrv@gmail.com
 - packaged Coquillo version 1.7
 * Sat Aug 13 2011 giacomosrv@gmail.com

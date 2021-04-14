@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		lfm
 Version:	2.3
 Release:	6.1
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Oct 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 22 2011 pascal.bleser@opensuse.org
 - update to 2.3:
   * lfm needs python version 2.5 or upper now

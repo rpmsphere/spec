@@ -86,7 +86,7 @@ IFS=$PREVIOUS_IFS
 
 %changelog
 * Wed Jul 18 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Feb 27 2012 Dave Wilks <dave@dnmouse.org> 1.4-5
 - Created launcher for lightscribe software

@@ -1,5 +1,5 @@
 %define __spec_install_post %{nil}
-%define debug_package %{nil}
+%undefine _debugsource_packages
 %{!?tcl_version: %define tcl_version %(echo 'puts $tcl_version' | tclsh)}
 %{!?tcl_sitearch: %define tcl_sitearch %{_libdir}/tcl%{tcl_version}}
 
@@ -111,7 +111,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue May 12 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 27 2012 Tom Trebisky<tom@mmto.org> - 1.4.4-5
 - funtools was orphaned as of Fedora 16
 - I picked up the fedora 1.4.4-4 source rpm and am building from there.

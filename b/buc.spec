@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		buc
 Version:	0.5.2
 Release:	1
@@ -82,6 +82,6 @@ update-desktop-database &> /dev/null ||:
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 01 2010 Alberto Altieri <alberto.altieri@gmail.com>
 - New version/release for MIB (Mandriva Italia Backport) users

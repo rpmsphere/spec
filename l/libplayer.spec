@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define major 2
 %define libname libplayer
 %define develname libplayer-devel
@@ -96,7 +96,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 29 2011 trem <trem> 2.0.1-2.mga2
 + Revision: 150372
 - add require gstreamer-0.10 and gstreamer-plugins-base-0.10 to package -devel

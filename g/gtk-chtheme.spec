@@ -52,7 +52,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Aug 16 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.1-15
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
 * Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.1-14
@@ -78,7 +78,7 @@ rm -rf %{buildroot}
 * Thu Jun 17 2010 German A. Racca <gracca@gmail.com> 0.3.1-4
 - Fixed permission of man file
 * Wed Jun 16 2010 German A. Racca <gracca@gmail.com> 0.3.1-3
-- Rebuild for Fedora 13
+- Rebuilt for Fedora 13
 * Tue May 04 2010 German A. Racca <gracca@gmail.com> 0.3.1-2
 - Added %%{dist} tag
 - Added patch for not stripping the binary file

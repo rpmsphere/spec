@@ -5,6 +5,8 @@
 %define	longtitle	American civil war simulation
 %define	title_editor	Civil Editor
 %define	longtitle_editor	Civil scenario editor
+%define __python /usr/bin/python2
+
 Name:		%{name}
 Version:	%{version}
 Release:	1
@@ -16,11 +18,11 @@ Source0:	http://prdownloads.sourceforge.net/civil/%{name}-%{version}.tar.bz2
 Patch0:		civil-0.83-python24.patch.bz2
 Patch1:		civil-0.83-remove-broken-pygame-check.patch
 Requires:	SDL >= 1.2
-Requires:	python >= 2.1
+Requires:	python2
 Requires:	pygame >= 1.5.3
 Requires:	%{name}-graphics = %{version}
 Requires:	%{name}-sounds = %{version}
-BuildRequires:	python-devel
+BuildRequires:	python2-devel
 BuildRequires:	ImageMagick
 
 %description
@@ -166,7 +168,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.83
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Oct 31 2008 milochen <milo_chen@mail2000.com.tw> 0.83-9.ossii
 - initial ossii package

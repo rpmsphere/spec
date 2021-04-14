@@ -46,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jul 16 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora

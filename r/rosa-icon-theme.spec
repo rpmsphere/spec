@@ -33,7 +33,7 @@ gtk-update-icon-cache --quiet %{_datadir}/icons/%{theme_name} || :
 
 %changelog
 * Fri Apr 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 26 2012 Andrew Lukoshko <andrew.lukoshko@rosalab.ru> 1.0.27-2.res6
 - add missing dist to release
 * Tue Jul 10 2012 Andrew Lukoshko <andrew.lukoshko@rosalab.ru> - 1.0.27-1

@@ -67,7 +67,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 
 %changelog
 * Sun Jun 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 25 2011 Vitaly Kuznetsov <vitty@altlinux.ru> 3.1.6-alt1.1
 - Rebuild with Python-2.7
 * Mon Sep 13 2010 Victor Forsiuk <force@altlinux.org> 3.1.6-alt1

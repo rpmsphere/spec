@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           transset-df
 Version:        6
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jul 01 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 13 2011 obgr_seneca <obgr_seneca> 6-1.mga1
 + Revision: 84418
 - removed unneccessary Source1

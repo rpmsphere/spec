@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		dcto9p
 Version:	11.0
@@ -57,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 11.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 27 2008 Jean-Christophe Cardot <plf@cardot.net> 11.0-1plf
 - release

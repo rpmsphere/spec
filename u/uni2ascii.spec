@@ -31,4 +31,4 @@ rm -rf $RPM_BUILD_ROOT%{_prefix}/bin/u2a
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.18
-- Rebuild for Fedora
+- Rebuilt for Fedora

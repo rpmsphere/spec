@@ -71,7 +71,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sat May 30 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 8.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 07 2011 Automatic Build System <autodist@mambasoft.it> 7.6.8-1mamba
 - automatic update by autodist
 * Sun Oct 03 2010 Automatic Build System <autodist@mambasoft.it> 7.6.7-1mamba

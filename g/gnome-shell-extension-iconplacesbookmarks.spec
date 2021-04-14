@@ -36,7 +36,7 @@ install -Dp -m 0644 {extension.js,metadata.json,stylesheet.css} \
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Sep 07 2011 Fabian Affolter <fabian@bernewireless.net> - 1.0-1
 - Updated to new upstream version 1.1

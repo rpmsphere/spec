@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 02 2005 PLD Team <feedback@pld.org.pl>
 - Revision 1.64  2005/01/02 15:00:08  kloczek
 - updated to 1.2.3.

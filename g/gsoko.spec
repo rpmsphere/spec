@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: gsoko
 Version: 0.4.2
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 4 2003 Andrey Semenov <mitrofan@altlinux.ru> 0.4.2-alt1
 - 0.4.2
 * Sun May 25 2003 Andrey Semenov <mitrofan@altlinux.ru> 0.4-alt1

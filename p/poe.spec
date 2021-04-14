@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Small and quick curses programmer's editor
 Name: poe
@@ -41,4 +41,4 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Wed Aug 30 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0
-- Rebuild for Fedora
+- Rebuilt for Fedora

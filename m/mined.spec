@@ -120,7 +120,7 @@ rm -fr %{buildroot}%{_datadir}/%{name}/{bin,setup_install,conf_user,package_doc,
 
 %changelog
 * Thu Dec 17 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2015.25
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 2015.25-7
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 * Fri Feb 01 2019 Fedora Release Engineering <releng@fedoraproject.org> - 2015.25-6

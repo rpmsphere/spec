@@ -63,7 +63,7 @@ install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 %changelog
 * Sun Sep 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Jul 09 2004 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org

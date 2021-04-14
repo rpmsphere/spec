@@ -29,7 +29,7 @@ install * %buildroot%_datadir/leocad
 
 %changelog
 * Wed Sep 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 11494
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 27 2010 Igor Vlasenko <viy@altlinux.ru> 0.75.20100922-alt1
 - updated to pieces-3934.zip (2010-09-22)
 * Mon May 25 2009 Fr. Br. George <george@altlinux.ru> 0.75.20090503-alt1

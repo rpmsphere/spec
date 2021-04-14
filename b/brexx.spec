@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Classic Rexx Implementation
 Name: brexx
@@ -51,4 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 15 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.9
-- Rebuild for Fedora
+- Rebuilt for Fedora

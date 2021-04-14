@@ -34,7 +34,7 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Fri Apr 07 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 19 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.18-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
 * Mon Aug 18 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.18-4

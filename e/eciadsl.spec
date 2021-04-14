@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 03 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 0.12-2mamba
 - fixed desktop menu entry to launch eciadsl-config-tk
 - added synch_bin package

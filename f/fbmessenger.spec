@@ -31,7 +31,7 @@ sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Mon Sep 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 05 2013 jacko <oconnor663@gmail.com> - 0.2.0-1
 - Directory move and path changes
 * Wed Apr 17 2013 shuff <shuff@fb.com> - 0.1.0-1

@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 18 2012 lazy.kent@opensuse.org
 - Update to 1.0.26.
   * Added nanosecond timestamp support to filedate for systems and

@@ -129,7 +129,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.127
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 06 2011 Chris LIN <chris.lin@ossii.com.tw> - 0.13.127-0.2.ossii
 - Add BuildRequires: unrar
 * Mon Dec 01 2008 Toni Graffy <toni@links2linux.de> - 0.13.127-0.pm.1

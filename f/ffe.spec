@@ -35,4 +35,4 @@ rm %{buildroot}%{_infodir}/dir
 
 %changelog
 * Fri Oct 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.9
-- Rebuild for Fedora
+- Rebuilt for Fedora

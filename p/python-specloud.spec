@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-specloud
 Version:        0.4.4
 Release:        4.1
@@ -42,6 +42,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 22 2011 toms@suse.de
 - First initial build 0.4.4 (proof of concept)

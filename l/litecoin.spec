@@ -69,7 +69,7 @@ install -Dm644 share/pixmaps/bitcoin128.png %{buildroot}%{_datadir}/pixmaps/lite
 
 %changelog
 * Fri Dec 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 07 2014 Alexander Khryukin <alexander@mezon.ru> 0.8.3.7-1
 + Revision: 05ae4a4
 - init

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: 		pathological
 Summary: 	Logical game
@@ -73,7 +73,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 03 2009 Michael Scherer <misc@mandriva.org> 1.1.3-6mdv2009.1
 + Revision: 363942
 - also fix the menu

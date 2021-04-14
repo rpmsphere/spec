@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: fractalnow
 Summary: Fast, advanced fractal generator
@@ -50,4 +50,4 @@ sed -i 's|Qt;Education;Science;Math;|Graphics;|' %{buildroot}%{_datadir}/applica
 
 %changelog
 * Mon Sep 10 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

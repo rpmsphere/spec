@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		textroom
 Version:	0.8.2
@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Dec 09 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 26 2011 fwang <fwang> 0.8.2-2.mga2
 + Revision: 114003
 - link hunspell 1.3

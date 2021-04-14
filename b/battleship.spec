@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 15 2012 Robert Wei <robert.wei@ossii.com.tw> - 0.2-3
 - L10N of Traditional Chinese (zh_TW)
 * Mon May 21 2012 Chih-Jen Nung <cj.nung@ossii.com.tw> - 0.2-2

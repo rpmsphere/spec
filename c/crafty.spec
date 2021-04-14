@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         crafty
 BuildRequires: gcc-c++ unzip
@@ -76,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 25.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 23 2009 snwint@suse.de
 - update to version 23.0
 * Fri Nov 16 2007 snwint@suse.de

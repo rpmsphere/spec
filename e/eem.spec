@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: 	Enlightenment for Embedded
 Name: 		eem
 Version: 	20100507
@@ -41,4 +41,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20100507
-- Rebuild for Fedora
+- Rebuilt for Fedora

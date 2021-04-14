@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 15 2015 Araki Ken <arakiken@users.sf.net>
 - Source version 3.6.1
 * Sun Oct 25 2015 Araki Ken <arakiken@users.sf.net>

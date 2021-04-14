@@ -50,4 +50,4 @@ cp AUTHORS LICENSE RELEASE README %{buildroot}%{_datadir}/doc/%{name}
 
 %changelog
 * Fri Nov 01 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

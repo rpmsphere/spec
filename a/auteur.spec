@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: Lightweight video editor powered by mplayer and mencoder
 Name: auteur
 Version: 0.1a7
@@ -45,6 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Feb 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1a7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 28 2011 Neil Wallace <rowinggolfer@googlemail.com>
 - Initial package

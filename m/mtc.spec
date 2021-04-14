@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: mtc
 Version: 0.20180824
@@ -51,4 +51,4 @@ install -m 644 reuse/src/*.m[di] %{buildroot}%{_libdir}/%{name}/src
 
 %changelog
 * Tue Oct 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20180824
-- Rebuild for Fedora
+- Rebuilt for Fedora

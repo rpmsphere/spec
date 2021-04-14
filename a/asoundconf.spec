@@ -34,7 +34,7 @@ sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_bindir}/asoundconf
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 01 2014 Igor Vlasenko <viy@altlinux.ru> 0.1-alt1
 - synced changes from aur.archlinux.org/packages/asoundconf (1.0.1-3)
   (see also http://wiki.marklesh.com/How-to/Asoundconf)

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           aoi
 Version:        2.9.2
 Release:        13.1
@@ -86,7 +86,7 @@ EOF
 
 %changelog
 * Sat Apr 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 2.8.1-4.mga3
 + Revision: 345626
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

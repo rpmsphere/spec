@@ -82,7 +82,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.36
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov  5 2007 lrupp@suse.de
 - fixes for the following security bugs (see #335637 for details):
   + CVE-2007-4352

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-sqlcc
 Version:        0.3.2
 Release:        3.1
@@ -29,4 +29,4 @@ python2 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

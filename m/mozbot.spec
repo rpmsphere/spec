@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Sep 30 2009 doiggl@velocitynet.com.au
 - packaged mozbot version 2.6 using the buildservice spec file wizard

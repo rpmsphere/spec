@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: Convert one or more mp3 files into single mp3/m4a/m4b/mp4 file
 Name: zak
 Version: 0.3
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jun 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 05 2008 Joshua M. Hoffman <joshua@joshua.net>
 - updated to zak 0.3
 - 0.3-0

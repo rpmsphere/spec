@@ -39,4 +39,4 @@ cp -a * $RPM_BUILD_ROOT%_datadir/themes
 
 %changelog
 * Thu Aug 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora

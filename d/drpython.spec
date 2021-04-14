@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		drpython
 Summary: 	Python editor and development environment
 Version: 	3.11.1
@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.11.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 02 2010 Michael Scherer <misc@mandriva.org> 1:3.11.1-3mdv2011.0
 + Revision: 592385
 - rebuild for python 2.7

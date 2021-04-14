@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
 
 Name:		webmcp
@@ -45,4 +45,4 @@ make
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

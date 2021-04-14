@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: yabar
 Summary: Modern and lightweight status bar for X window managers
@@ -52,4 +52,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Fri Oct 18 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora

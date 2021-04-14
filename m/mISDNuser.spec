@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.19
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 28 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 1.1.9-1mamba
 - update to 1.1.9
 * Fri Jun 19 2009 coolo@novell.com

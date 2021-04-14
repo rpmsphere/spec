@@ -56,7 +56,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun May 26 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 1.9.14-16.mga3
 + Revision: 347631
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

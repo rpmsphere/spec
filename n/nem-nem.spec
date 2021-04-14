@@ -46,7 +46,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2011.05.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 26 2011 Gilles Pascual <gpascual@mandriva.org> 2011.05.1-1mdv2010.2
 - Bug fix in sources when running Nem-Nem under OS2
 - Bug fix in save format

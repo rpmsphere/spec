@@ -105,7 +105,7 @@ tar xzvf %{SOURCE1} -C %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 18 2008 Paulo Roma <http://orion.lcg.ufrj.br/~roma> 0.4.1-3
 - Recreated gcc.patch for gcc 4.3
 - Introduced compat_flex, because the test Fedora < 7 does not work

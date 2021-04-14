@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Simple color displayer/selector for X11 rgb.txt files
 Name: xcolorsel
@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 27 2011 Agnelo de la Crotche <agnelo@unixversal.com> 
 - package for openSUSE 11.3/11.4 
 * Sun Aug 03 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.1a-4mdv2009.0

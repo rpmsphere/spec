@@ -1,3 +1,5 @@
+%define __python /usr/bin/python2
+
 Name: colout
 Summary: Color Up Arbitrary Command Ouput
 Version: 0.1
@@ -6,9 +8,8 @@ Group: Applications/Tools
 License: GPL
 URL: http://nojhan.github.io/colout/
 Source0: nojhan-colout-v0.1-61-g566a9b2.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
-BuildRequires: python
+BuildRequires: python2
 
 %description
 colout is a simple command to add colors to a text stream in your terminal.
@@ -22,16 +23,16 @@ the surrounding context, whith more powerful coloring capabilites.
 %setup -q -n nojhan-colout-566a9b2
 
 %build
-python setup.py build
+python2 setup.py build
 
 %install
-python setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
+python2 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %files
 %doc LICENSE README.md
 %{_bindir}/%{name}
-%{python_sitelib}/%{name}*
+%{python2_sitelib}/%{name}*
 
 %changelog
 * Sun Jun 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

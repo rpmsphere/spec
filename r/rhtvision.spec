@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:   An intuitive TUI interface for console applications
 Name:      rhtvision
@@ -83,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jan 20 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 24 2004 - Michel Catudal mcatudal@comcast.net
 - Update to last CVS, added support for debug
 * Sun Nov 14 2004 - Michel Catudal mcatudal@comcast.net

@@ -118,7 +118,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Jun 29 2009 Texstar <texstar@gmail.com> 7.2-3pclos2009
 - fix some verbage

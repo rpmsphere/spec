@@ -56,7 +56,7 @@ rm %buildroot/%_libdir/beaver/plugins/sample.so
 
 %changelog
 * Tue Dec 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Sep 17 2011 jengelh@medozas.de
 - Remove redundant tags/sections from specfile
 - Use %%_smp_mflags for parallel build

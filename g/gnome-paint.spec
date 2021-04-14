@@ -60,7 +60,7 @@ mv -f %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/gp.png %{buildroot}%{_dat
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 06 2015 alexl <alexl> 0.4.0-4.mga5
 + Revision: 808864
 - new desktop file with GenericName

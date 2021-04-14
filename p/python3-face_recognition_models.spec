@@ -29,4 +29,4 @@ This package contains only the models used by face_recognition.
 
 %changelog
 * Wed Aug 01 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

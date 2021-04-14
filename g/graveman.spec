@@ -66,7 +66,7 @@ desktop-file-install --vendor="" \
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 0.3.12-15
 + Revision: 4628bee
 - MassBuild#464: Increase release tag

@@ -163,7 +163,7 @@ install -D -m 644 misc/quake3.png \
 
 %changelog
 * Wed Mar 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.36-12.20170428.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 03 2018 pterjan <pterjan> 1.36-12.20170428.3.mga7
   (not released yet)
 + Revision: 1316246

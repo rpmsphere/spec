@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 05 2011 Julian Aloofi <julian@fedoraproject.org> 1.4.1-1
 - update to version 1.4.1, getting stuff ready for a review request
 * Sun Nov 15 2009 Julian Aloofi <julian at, fedoraproject.org> 1.2-1

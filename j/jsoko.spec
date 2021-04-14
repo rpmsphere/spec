@@ -38,4 +38,4 @@ cp -a JSoko_%{version}/* %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Thu Dec 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.76
-- Rebuild for Fedora
+- Rebuilt for Fedora

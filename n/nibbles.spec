@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Curses game ala snake
 Name: nibbles
@@ -36,4 +36,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

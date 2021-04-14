@@ -70,7 +70,7 @@ export CFLAGS="-I/usr/include/compat-ffmpeg -L%{_libdir}/compat-ffmpeg -ldl -lav
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 19 2008 Piotr Pacholak <obi.gts@gmail.com>
 - 0.1.8-4
 * Sun Feb 17 2008 Piotr Pacholak <obi.gts@gmail.com>

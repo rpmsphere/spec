@@ -65,6 +65,6 @@ cp -a include/* "%{buildroot}%{_includedir}/"
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul  3 2012 pascal.bleser@opensuse.org
 - initial version (0.0+20120701)

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: picolisp
 Version: 20.12
@@ -46,7 +46,7 @@ ln -s %_libdir/%name %buildroot%_datadir/%name
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 20.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 29 2016 Michael Shigorin <mike@altlinux.org> 16.6-alt1
 - new version (watch file uupdate)
 * Thu Feb 18 2016 Michael Shigorin <mike@altlinux.org> 16.2-alt1

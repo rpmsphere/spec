@@ -50,7 +50,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Jan 14 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 18 2013 umeabot <umeabot> 0.4-10.mga4
 + Revision: 521327
 - Mageia 4 Mass Rebuild

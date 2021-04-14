@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jun 20 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 07 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0-4mamba
 - specfile updated
 * Fri Mar 09 2007 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0-3qilnx

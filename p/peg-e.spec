@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           peg-e
 Version:        1.2.8
@@ -54,7 +54,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 10 2012 graeme@gottcode.org 1.1.1.1-1
 - New upstream release
 * Sat Jun 09 2012 graeme@gottcode.org 1.1.1-1

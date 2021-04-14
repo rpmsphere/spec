@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           libfakeXinerama
 Version:        0.1.0
@@ -39,6 +39,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 01 2014 Antoine Martin <antoine@devloop.org.uk - 0.1.0-1.0
 - First version

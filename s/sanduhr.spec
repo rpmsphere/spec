@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.93
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 15 2001 Nalin Dahyabhai <nalin@redhat.com>
 - add -D__STRICT_ANSI__ to the CFLAGS used
 * Mon Sep 18 2000 Tim Powers <timp@redhat.com>

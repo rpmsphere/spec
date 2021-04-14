@@ -52,7 +52,7 @@ Agnelo de la Crotche (please_try_again) <agnelo@unixversal.com>
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 27 2012 Agnelo de la Crotche <agnelo@unixversal.com> 2.9
 - fixed (ugly) bug in conkyconf
 * Tue Sep 13 2011 Agnelo de la Crotche <agnelo@unixversal.com> 2.8

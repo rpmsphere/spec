@@ -61,7 +61,7 @@ chmod 755 $RPM_BUILD_ROOT%{_bindir}/xkegs
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.91
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 24 2011 Zombie Ryushu <ryushu@mandriva.org> 0.91-2mdv2012.0
 + Revision: 706125
 - Fix kegs overwriting itself with a blank file

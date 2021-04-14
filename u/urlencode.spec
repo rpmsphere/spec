@@ -33,7 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 13 2004 David Bolt <urlencode@davjam.org> 1.0.1
 - Minor bug-fix
 * Mon Apr 12 2004 David Bolt <urlencode@davjam.org> 1.0.0

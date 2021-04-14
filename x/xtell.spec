@@ -63,7 +63,7 @@ killall -HUP inetd
 
 %changelog
 * Mon Oct 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.10.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 15 1999 Radovan Garabik <garabik@fmph.uniba.sk>
 - New release
 * Fri Mar  5 1999 Radovan Garabik <garabik@fmph.uniba.sk>

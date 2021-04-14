@@ -30,4 +30,4 @@ make install INSTALL_ROOT=%{buildroot}
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <blubat@member.fsf.org> - 3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -72,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9r1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 08 2008 Feather Mountain <john@ossii.com.tw> 2.9r1-1.ossii
 - Rebuild for M6(OSSII)
 * Tue Feb 08 2006 Andrew Ziem <andrewz@springsrescuemission.org>  2.9r1-1fc4

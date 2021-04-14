@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _unpackaged_files_terminate_build 1
 
 Name: hashlink
@@ -53,7 +53,7 @@ ln -s libhl.so.%{version}.0 %{buildroot}%{_libdir}/libhl.so
 
 %changelog
 * Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 18 2020 Denis Smirnov <mithraen@altlinux.ru> 1.11-alt2
 - add /usr/include/hlc_main.c for HL/C support
 * Mon May 18 2020 Denis Smirnov <mithraen@altlinux.ru> 1.11-alt1

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    syasokoban
 Version: 2.0.1
@@ -50,7 +50,7 @@ make install BINDIR=$RPM_BUILD_ROOT%{_bindir}
 
 %changelog
 * Mon May 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 01 2010 Andre Guerreiro <andre.guerreiro@caixamagica.pt>
 + First Caixa Magica Package, no localization
 

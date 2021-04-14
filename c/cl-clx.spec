@@ -85,7 +85,7 @@ fi
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 4 2011 Wesley Dawson - 0.9.7
 - Build requires makeinfo and install-info
 * Sun Apr 3 2011 Wesley Dawson - 0.7.4

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           libphash
 Version:        0.9.5
@@ -60,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,5 +1,5 @@
 %global	    no_install_post_strip	1
-%global     debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Flat assembler
 Summary(pl):	  "Płaski" assembler
@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue May 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.73.24
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 29 2004 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 Revision 1.3  2004/08/29 15:17:22  undefine

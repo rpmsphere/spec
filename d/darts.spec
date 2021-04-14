@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           darts
 BuildRequires:  automake
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.31
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec  1 2011 coolo@suse.com
 - add automake as buildrequire to avoid implicit dependency
 * Wed Dec 12 2007 uli@suse.de

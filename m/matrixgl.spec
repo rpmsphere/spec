@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 27 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 24 2010 PLD Team <feedback@pld-linux.org>
 - up to 2.3
 - add new patches:

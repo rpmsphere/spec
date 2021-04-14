@@ -33,4 +33,4 @@ install -m 755 numbergenerator.pl $RPM_BUILD_ROOT/%{_bindir}/
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

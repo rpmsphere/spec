@@ -72,7 +72,7 @@ install -m 755 $RPM_SOURCE_DIR/nvidia-post-uninstall \
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May  3 2011 tiwai@suse.de
 - Add ibus and scim-bridge to sysconfig/language:$INPUT_METHOD
   list

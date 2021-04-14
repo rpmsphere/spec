@@ -29,7 +29,7 @@ cp -avf *.bin %{buildroot}/lib/firmware/edid
 
 %changelog
 * Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 16 2014 Bernhard Rosenkraenzer <bero@lindev.ch> 1-1
 + Revision: b7a84de
 - Clean up spec

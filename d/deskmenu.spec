@@ -53,6 +53,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 16 2006 Led <led@altlinux.ru> 1.4.2-alt1
 - initial build

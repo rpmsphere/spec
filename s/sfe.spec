@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           sfe
 Version:        0.2a
@@ -41,6 +41,6 @@ cp -p README %{buildroot}%{_defaultdocdir}/%{name}-%{version}/
 
 %changelog
 * Mon Mar 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug  8 2012 Martin Bruchanov <bruxy@regnet.cz> - 0.2a
 - RPM package

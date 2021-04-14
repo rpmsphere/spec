@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		dockbarx
 Version:	0.93
 Release:	4
@@ -55,6 +55,6 @@ cp -r AWN/* $RPM_BUILD_ROOT%{_datadir}/avant-window-navigator/applets
 
 %changelog
 * Fri Jun 14 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.93
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 01 2010 Texstar <texstar at gmail.com> 0.39.6-1pclos2010
 - create package

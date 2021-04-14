@@ -55,7 +55,7 @@ rm -fr %buildroot
 
 %changelog
 * Tue Mar 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.34
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 26 2011 Götz Waschk <waschk@mandriva.org> 0.2.34-6mdv2012.0
 + Revision: 691697
 - rebuild

@@ -52,7 +52,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Mon Oct 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 28 2010 Matthias Weckbecker <mweckbecker@suse.de>
 - add sagan user && group
 * Mon Jun 28 2010 mweckbecker@novell.com

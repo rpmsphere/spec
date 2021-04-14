@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Virtual console hex editor
 Name: vche
@@ -45,6 +45,6 @@ sed -i 's|%{buildroot}||' %{buildroot}%{_mandir}/man?/vche*
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 09 2008 Dag Wieers <dag@wieers.com> - 1.7.2-1 - +/
 - Initial package. (using DAR)

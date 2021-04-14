@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           computertemp
 Version:        0.9.6.1
@@ -58,7 +58,7 @@ GCONF_CONFIG_SOURCE=xml:merged:/etc/gconf/gconf.xml.defaults \
 
 %changelog
 * Tue Mar 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 15 2010 vuntz@opensuse.org
 - Add computertemp-better-theming-and-fixes.patch that contains
   fixes from svn:

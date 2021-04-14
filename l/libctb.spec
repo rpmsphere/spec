@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		libctb
 Version:	0.16
@@ -69,7 +69,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/libctb/pyt
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 23 2013 Mike Heitmann <mheitmann@n0so.net> 0.16-fc18-2
 - Fixed conflict caused by including /usr/libxx
 * Sat Jan 19 2013 Mike Heitmann <mheitmann@n0so.net> 0.16-fc18-1

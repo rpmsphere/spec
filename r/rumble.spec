@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 11 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.23
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 22 2011 PLD Team <feedback@pld-linux.org>
 Revision 1.3  2011/01/22 22:39:59  sparky
 - BR: setup.rb

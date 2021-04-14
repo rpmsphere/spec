@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 04 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 14 2011 kirill.kirillov@gmail.com
 - fixed license tag
 * Thu Apr  1 2010 prusnak@suse.cz

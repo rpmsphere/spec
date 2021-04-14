@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          lyx2html
 Version:       0.2
@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 03 2008 Tiziana Ferro <tiziana.ferro@email.it> 0.2-2mamba
 - update mantainer, vendor, distribution
 - update buildrequirements list

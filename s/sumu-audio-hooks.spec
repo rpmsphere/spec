@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:   Audio hooks for SUMU
 Name:      sumu-audio-hooks
 Version:   0.2
@@ -46,7 +46,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 04 2011 Alexander Todorov <atodorov@NO-SPAM.otb.bg> 0.2-1.el6otb
 - don't execute sumu-init.sh if no /dev/usbseat is present
 - don't loop over all seats when we've found what we need

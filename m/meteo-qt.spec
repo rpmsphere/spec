@@ -50,7 +50,7 @@ convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_datadir}/icons/
 
 %changelog
 * Thu Mar 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 09 2017 dglent <dglent> 0.9.5-1.mga6
 + Revision: 1090520
 - New version 0.9.5

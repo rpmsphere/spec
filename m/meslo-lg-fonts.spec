@@ -37,7 +37,7 @@ done
 
 %changelog
 * Mon May 09 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 14 2011 lazy.kent@opensuse.org
 - Build requires xorg-x11-devel to provide font(:lang=*)
 * Mon Jun 13 2011 lazy.kent@opensuse.org

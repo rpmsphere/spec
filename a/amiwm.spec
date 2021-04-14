@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       amiwm
 Version:	0.21pl2
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.21pl2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 27 2013 wbauer@tmo.at
 - fix build on 12.3
 * Sat Dec 04 2010 wbauer@tmo.at

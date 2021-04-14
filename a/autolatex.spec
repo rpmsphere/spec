@@ -39,4 +39,4 @@ make -i install
 
 %changelog
 * Mon Jul 06 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 36.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

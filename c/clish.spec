@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 11 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 26 2010 Devil Wang <wxjeacen@gmail.com> 0.7.3-2
 - Modify SPEC for integrating deve files
 * Fri Apr 16 2010 Devil Wang <wxjeacen@gmail.com> 0.7.3-1

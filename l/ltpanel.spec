@@ -32,4 +32,4 @@ install -Dm644 doc/lpanel.1 %{buildroot}%{_mandir}/man1/%{name}.1
 
 %changelog
 * Tue Jan 03 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

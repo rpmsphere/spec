@@ -37,7 +37,7 @@ mv %{buildroot}%{_datadir}/icons/* %{buildroot}%{_datadir}/pixmaps
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 27 2009 Rick Saunders <ozzzy1@gmail.com> 2.6.1-11
 - Stephen Isard applied fixes for subtitles
 * Fri May 04 2007 Rick Saunders <ozzzy1@gmail.com> 2.6.1-10

@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Apr 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.0a4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 16 2009 mhrusecky@suse.cz
 - Fixed fedora dependencies
 * Mon Feb 16 2009 mhrusecky@suse.cz

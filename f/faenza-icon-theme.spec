@@ -77,7 +77,7 @@ done
 
 %changelog
 * Tue Nov 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 01 2013 Felix Kaechele <heffer@fedoraproject.org> - 1.3.1-3
 - fix start-here icon (BZ#1003265)
 * Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.1-2

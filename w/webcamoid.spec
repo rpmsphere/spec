@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: webcamoid
 Version: 8.8.0
@@ -69,6 +69,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 8.8.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 23 2015 Gonzalo Exequiel Pedone <hipersayan DOT x AT gmail DOT com> 6.2.0-1
 - Final Release.

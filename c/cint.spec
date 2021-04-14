@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 5.18.00
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 28 2012 dvaleev@suse.com
 - disable ppc64
   see: https://savannah.cern.ch/bugs/index.php?70542

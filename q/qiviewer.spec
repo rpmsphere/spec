@@ -38,7 +38,7 @@ mv $RPM_BUILD_ROOT%{_datadir}/icons $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 %changelog
 * Mon Jan 06 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 20 2011 TI_Eugene <ti.eugene@gmail.com> 0.5
 - next version
 * Tue Apr 26 2011 Petr Vanek <petr@scribus.info> 0.4

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __global_ldflags -Wl,-z,relro -lm -ldl
 
 Summary: Palm Doc file format conversion
@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 13 2004 Vasya Borisov <vasy@altlinux.ru> 1.4.4-alt1
 - New version 1.4.4:
   - This version adds the -D option to suppress checking of a Doc file's

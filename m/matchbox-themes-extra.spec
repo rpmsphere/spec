@@ -28,7 +28,7 @@ make
 
 %changelog
 * Fri Feb 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 21 2013 Igor Vlasenko <viy@altlinux.ru> 0.3-alt1_7
 - update by mgaimport
 * Fri Oct 18 2013 umeabot <umeabot> 0.3-7.mga4

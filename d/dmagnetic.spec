@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           dmagnetic
 Version:        0.30
@@ -38,7 +38,7 @@ install -m 644 dMagnetic.ini %{buildroot}%{_datadir}/dMagnetic/dMagnetic.ini
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.30
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 27 2020 Michael Vetter <mvetter@suse.com>
 - Update to 0.25:
   * Internal RGB channels upgraded from 3 to 10 bit

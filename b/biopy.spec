@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:          biopy
 Version:       0.1.5
 Release:       10.1
@@ -42,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 04 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -53,7 +53,7 @@ systemctl restart cups
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.29
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 10 2010 Sebastiano Vigna <vigna@dsi.unimi.it>
 - Fixes, updates, Samba jobname-based printing.
 * Wed Jan 18 2006 Sebastiano Vigna <vigna@dsi.unimi.it>

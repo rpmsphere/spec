@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Aug 31 2011 Agnelo de la Crotche <agnelo@unixversal.com> 0.3.1
 - fixed Google UTF-8 output 

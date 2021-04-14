@@ -66,7 +66,7 @@ touch %{_localstatedir}/games/%{name}.score
 
 %changelog
 * Sun Mar 3 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 3 2002 PLD Team <feedback@pld.org.pl>
 All persons listed below can be reached at <cvs_login>@pld.org.pl
 Revision 1.6  2002/10/03 09:41:50  qboosh

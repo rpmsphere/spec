@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:      slimevolley
 Version:   2.4.1
@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 27 2009 Harry Chen <harry@server1.ossii.com.tw> - 2.4.1-1.ossii
 - Initial package for ossii

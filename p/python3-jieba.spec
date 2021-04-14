@@ -1,10 +1,10 @@
 %global _name jieba
 
 Summary:	Chinese text segmentation
-Name:		python3-%{_name}
+Name:		python3-jieba
 Version:	0.39git
 Release:	1
-License: 	MIT
+License: 	GPLv2
 Group: 		Development/Tools
 Source0:	%{_name}-master.zip
 URL:		https://github.com/fxsjy/jieba
@@ -33,4 +33,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.39git
-- Rebuild for Fedora
+- Rebuilt for Fedora

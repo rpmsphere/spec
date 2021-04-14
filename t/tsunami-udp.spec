@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon May 28 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1+41+349
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 19 2010 pascal.bleser@opensuse.org
 - update to 1.1+41+349
 * Fri Mar 19 2010 pascal.bleser@opensuse.org

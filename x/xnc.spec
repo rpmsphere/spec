@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xnc
 Summary: X filemanager with many functions
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 07 2011 Funda Wang <fwang@mandriva.org> 5.0.4-10mdv2011.0
 + Revision: 629549
 - add more BR

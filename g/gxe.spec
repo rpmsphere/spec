@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           gxe
 Version:        1.28
@@ -46,6 +46,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Jan 07 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.28
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 20 2012 mrueckert@suse.de
 - initial package

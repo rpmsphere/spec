@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	An easy editor
 Name:		ee
@@ -37,4 +37,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Mar 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

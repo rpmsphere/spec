@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jun 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 30 2004 Cymon J. Cox <cymon@duke.edu>
 - New version 3.6
 * Thu Oct 02 2003 Hunter Matthews <thm@duke.edu>

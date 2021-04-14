@@ -133,7 +133,7 @@ _EOF_
 
 %changelog
 * Wed Nov 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec  6 2015 Terechkov Evgenii <evg@altlinux.org> 2.4.1-alt3
 - Subpackages for gtk2/gtk3
 * Sun Dec  6 2015 Terechkov Evgenii <evg@altlinux.org> 2.4.1-alt2

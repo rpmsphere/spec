@@ -64,7 +64,7 @@ install --mode=0644 Test2.atm %{buildroot}%{_docdir}/%{name}/examples/Test2.atm
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan  1 2018 estellnb@elstel.org
 - fixed building for Debian packages and Mageia
 * Mon Jan  1 2018 estellnb@elstel.org

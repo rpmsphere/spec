@@ -84,7 +84,7 @@ export CPP="g++ -std=gnu++11"
 
 %changelog
 * Thu Jul 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 27 2018 kekepower <kekepower> 5.2.13-3.mga7
   (not released yet)
 + Revision: 1205559

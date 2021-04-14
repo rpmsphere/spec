@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       fancybrowser
 Summary:    Qt Demo - qt fancybrowser
@@ -38,4 +38,4 @@ mv %{buildroot}/usr/icons %{buildroot}%{_datadir}/icons
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

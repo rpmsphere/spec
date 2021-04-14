@@ -53,7 +53,7 @@ bzip2 -dc %{SOURCE1} > %{buildroot}%{_mandir}/man6/sjeng.6
 
 %changelog
 * Tue May 19 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 11.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 11.2-15.mga5
 + Revision: 745034
 - Second Mageia 5 Mass Rebuild

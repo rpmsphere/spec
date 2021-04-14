@@ -38,4 +38,4 @@ install -m755 bin/ec* bin/valgreen %{buildroot}%{_bindir}
 
 %changelog
 * Fri Dec 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

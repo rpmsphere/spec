@@ -60,7 +60,7 @@ cp -vf %{SOURCE2} %{buildroot}/%{_datadir}/applications
 
 %changelog
 * Sun Apr 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.44
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 16 2011 Stéphane Téletchéa <steletch@mandriva.org> 5.2.17-1mdv2011.0
 + Revision: 645380
 - update to new version 5.2.17

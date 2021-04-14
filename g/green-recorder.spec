@@ -46,6 +46,6 @@ window. And a lot more.
 
 %changelog
 * Thu Aug 27 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 12 2019 secureworkstation - 3.2.2
 - Rebase to damianmoore's GitHub branch which builds with Python 3

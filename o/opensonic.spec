@@ -43,7 +43,7 @@ install -m644 icon.png ${RPM_BUILD_ROOT}%{_datadir}/%{name}/icon.png
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 26 2012 Robert Wei <robert.wei@ossii.com.tw> 0.1.4-1
 - install the icon file
 * Sun Mar 25 2012 Minh Ngo <nlminhtl@gmail.com> 0.1.4-1

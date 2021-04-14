@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: Document once, include anywhere
 Name: doconce
 Version: 0.7.3
@@ -52,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Jan 26 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

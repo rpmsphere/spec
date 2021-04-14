@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           somatic
 Version:        20040406
 Release:        1
@@ -78,6 +78,6 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20040406
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 4 2009 Feather Mountain <john@ossii.com.tw> 
 - Build for OSSII

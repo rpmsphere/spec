@@ -118,7 +118,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Dec 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug  7 2011 Axel Thimm <Axel.Thimm@ATrpms.net> - 3.0.0-11
 - Update to 3.0.0.
 * Thu Jan 20 2011 Axel Thimm <Axel.Thimm@ATrpms.net> - 2.1.0-9_beta3

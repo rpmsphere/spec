@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.99.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Feb 03 2009 Fabian Affolter <fabian@bernewireless.net> - 0.2.99.4-1
 - Initial package for Fedora

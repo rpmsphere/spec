@@ -95,7 +95,7 @@ echo '# message command = /usr/bin/linpopup "%f" "%m" %s'
 
 %changelog
 * Thu Nov 17 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 3 2007 Stumpy842 <stump842@gmail.com> 2.1.0-3pclos_tinyme2007
 - added update_desktop_database to post install
 - added clean_desktop_database to post uninstall

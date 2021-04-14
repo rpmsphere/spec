@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Apr 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 13 2012 lazy.kent@opensuse.org
 - Update to 0.3.
   * fbgrab: use $() rather than backticks.

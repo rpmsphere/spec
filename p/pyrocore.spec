@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: Python Torrent Tools
 Name: pyrocore
 Version: 0.4.2
@@ -46,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Jan 26 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Full featured Whatsapp client
 Name: wazapp
@@ -56,4 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Nov 11 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.21
-- Rebuild for Fedora
+- Rebuilt for Fedora

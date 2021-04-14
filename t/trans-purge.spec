@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: trans-purge
 Version: 0.1
 Release: 1
@@ -42,4 +42,4 @@ gcc `pkg-config glib-2.0 --cflags --libs` -o gconf-purge %{SOURCE2}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

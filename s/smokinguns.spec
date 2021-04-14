@@ -56,7 +56,7 @@ install -p -m 644 %{SOURCE3} \
 
 %changelog
 * Wed Mar 10 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 19 2018 umeabot <umeabot> 1.0-10.mga7
   (not released yet)
 + Revision: 1275441

@@ -40,7 +40,7 @@ make
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 01 2012 Andrey Cherepanov <cas@altlinux.org> 0.4.2-alt3
 - Add -lz to linker command line
 * Wed Apr 20 2011 Andrey Cherepanov <cas@altlinux.org> 0.4.2-alt2

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:          pyexcelerator
 Version:       0.6.4.1
 Release:       4.1
@@ -36,6 +36,6 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Mon Jun 20 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 05 2010 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 0.6.4.1-1mamba
 - package created by autospec

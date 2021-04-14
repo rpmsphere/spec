@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.42
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 15 2012 kevinchen <kevin.chen@ossii.com.tw> - 0.9.42-2
 - Compiler debug & Package. 
 * Mon Jun 4 2012 johnwu <johnwu@ossii.com.tw>

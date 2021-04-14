@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Select a window manager at X startup
 Summary(pl):	selectwm - wybór zarządcy okien przy starcie X
@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 26 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 04 2004 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 Revision 1.13  2004/08/04 06:23:24  ankry

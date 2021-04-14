@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: dmd
 Version: 2.093.1
@@ -73,7 +73,7 @@ install docs/man/man5/* %{buildroot}%{_mandir}/man5
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.093.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 16 2013 Dmitriy Kulik <lnkvisitor@altlinux.org> 2.063.2-alt1
 - new version
 * Sat Feb 02 2013 Dmitriy Kulik <lnkvisitor@altlinux.org> 2.061-alt2

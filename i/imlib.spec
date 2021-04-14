@@ -190,7 +190,7 @@ rm -f %{buildroot}%{_libdir}/*.la
 
 %changelog
 * Tue May 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1:1.9.15-39
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild

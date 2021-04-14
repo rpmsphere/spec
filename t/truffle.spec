@@ -34,7 +34,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun  1 2012 sweet_f_a@gmx.de
 - update to tarball release 0.1.3
 * Wed Sep  7 2011 sweet_f_a@gmx.de

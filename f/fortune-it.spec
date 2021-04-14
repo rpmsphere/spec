@@ -36,7 +36,7 @@ cp testi/* %{buildroot}%{_datadir}/fortune/it
 
 %changelog
 * Wed May 06 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.99
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 14 2013 Simone Sclavi <darkhado@gmail.com> - 1.99-1
 - Initial build
 

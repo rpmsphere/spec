@@ -34,7 +34,7 @@ make
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 2.0-4
 + Revision: dac09e7
 - MassBuild#464: Increase release tag

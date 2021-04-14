@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Nov 28 2009 Fabian Affolter <fabian@bernewireless.net> - 3.0.1-1.1.2
 - Initial Package for Fedora

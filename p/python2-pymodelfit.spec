@@ -32,7 +32,7 @@ python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
 %changelog
 * Mon Dec 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr  2 2011 ocefpaf@yahoo.com.br
 - updated to release 35
 * Sat Mar 19 2011 ocefpaf@yahoo.com.br

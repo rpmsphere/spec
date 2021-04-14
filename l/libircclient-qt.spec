@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           libircclient-qt
 Version:        0.5.0
@@ -66,7 +66,7 @@ LibIrcClient-Qt is a cross-platform IRC client library written with Qt 4.
 
 %changelog
 * Thu Jun 04 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 27 2012 Jan Kaluza <jkaluza@redhat.com> 0.5.0-5
 - Rebuild because of libicu
 * Fri Jan 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.0-4

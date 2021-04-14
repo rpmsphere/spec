@@ -40,7 +40,7 @@ cp -a * %buildroot%_datadir/icewm/themes
 
 %changelog
 * Thu Mar 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 06 2013 Dmitriy Khanzhin <jinn@altlinux.org> 0.1.0-alt2
 - updated some .xpm's for fix breaks themes with xorg 1.12.3.902 and later
   (bfo#54168)

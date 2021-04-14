@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          bottlerocket
 Version:       0.04c
@@ -54,7 +54,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Jan 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.04c
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 16 2006 - James Oakley <jfunk@funktronics.ca> - 0.04c-1
 - Build under buildservice
 * Thu May 12 2005 - James Oakley <jfunk@funktronics.ca> - 0.04c-ft.2

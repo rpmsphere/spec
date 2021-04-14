@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    chronicon
 Version: 0.2.6
@@ -52,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug  9 2011 Bernd Stramm <bernd.stramm@gmail.com> - 0.2.6
 - try to fix packaging issue

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		meteor
 Version:	1.4.2
@@ -66,7 +66,7 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Thu Jun 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 19 2012 Andrey Bondrov <abondrov@mandriva.org> 1.3.0-1mdv2012.0
 + Revision: 785545
 - Update BuildRequires

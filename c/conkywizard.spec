@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:               conkywizard
 Version:            1.0beta1+r37
@@ -45,4 +45,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Mar 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0beta1+r37
-- Rebuild for Fedora
+- Rebuilt for Fedora

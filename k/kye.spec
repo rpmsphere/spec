@@ -73,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Mar 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 04 2012 David Hung <david.hung@ossii.com.tw> - 1.0-2
 - for base fedora
 * Wed Dec 15 2010 Colin Phipps <cph@moria.org.uk> - 1.0-1

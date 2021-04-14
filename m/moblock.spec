@@ -60,7 +60,7 @@ ipqueue userspace library and it is very light in resource usage (cpu, ram).
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Aug  1 2010 pascal.bleser@opensuse.org
 - initial package (0.8)

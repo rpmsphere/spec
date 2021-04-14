@@ -44,7 +44,7 @@ sed -i 's|/usr/bin/python -tt|/usr/bin/python2 -tt|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Mon Aug 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.30
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul  2 2012 Marko Saukko <sage@merproject.org> - 0.25
 - Release 0.25
 - Fixes MER#192: Spectacle version check should be removed

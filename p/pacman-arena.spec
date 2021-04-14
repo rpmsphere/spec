@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           pacman-arena
 Version:        0.15
@@ -62,7 +62,7 @@ ln -s opengl-game-wrapper.sh %{buildroot}%{_bindir}/%{name}-wrapper
 
 %changelog
 * Wed Apr 22 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 21 2015 nemysis@gmx.ch
 - license update: GPL-2.0+ No indication that this is GPL-2.0 (only)
 * Thu Jan  1 2015 nemysis@gmx.ch

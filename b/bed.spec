@@ -44,4 +44,4 @@ make  installfiles ROOTDIR=$RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

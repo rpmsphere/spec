@@ -42,7 +42,7 @@ rm -rf %buildroot
 
 %changelog
 * Sun Apr 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 3.2-8
 - Autorebuild for GCC 4.3
 * Tue Aug 28 2007 José Matos <jamatos[AT]fc.up.pt> - 3.2-7

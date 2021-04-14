@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           connectagram
 Summary:        Anagram game
@@ -59,7 +59,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May  5 2013 Graeme Gott <graeme@gottcode.org>
 - version 1.1.1-1
 - Update to 1.1.1

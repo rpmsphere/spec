@@ -59,7 +59,7 @@ desktop-file-install                       \
 
 %changelog
 * Thu Jan 21 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 27 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.7.5-20
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 * Sun Feb 03 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.7.5-19

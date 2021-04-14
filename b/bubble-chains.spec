@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _rname chains	
 
 Name:		bubble-chains
@@ -44,6 +44,6 @@ install -Dm644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{_rname}.png
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 15 2013 Simone Sclavi <darkhado@gmail.com> 0.1.1-1
 - Initial build

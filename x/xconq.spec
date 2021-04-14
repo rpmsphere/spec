@@ -181,7 +181,7 @@ done;
 
 %changelog
 * Tue Feb 24 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 7.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 08 2010 Funda Wang <fwang@mandriva.org> 7.5.0-1.20050612.8mdv2011.0
 + Revision: 616052
 - fix more makefile

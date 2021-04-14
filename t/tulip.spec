@@ -96,7 +96,7 @@ make
 
 %changelog
 * Mon Aug 31 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 5.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 02 2012 Alexandre Lissy <alissy@mandriva.com> 3.7.0-3
 + Revision: 788761
 - Fixing installation path of python modules

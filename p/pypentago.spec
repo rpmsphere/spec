@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		pypentago
 Version:	0.1.0
 Release:	1
@@ -60,6 +60,6 @@ update-desktop-database %{_datadir}/applications >/dev/null 2>&1 || :
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug 17 2010 Haun-Ting Luo <kylix.lo@ossii.com.tw> 0.1.0-1
 - Build rpm and source rpm

@@ -35,6 +35,6 @@ install -m 0644 -p *.ttf %{buildroot}%{_fontdir}
 
 %changelog
 * Tue Nov 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.83
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 05 2015 Maxim Orlov <murmansksity@gmail.com> - 0.83-1.R
 - Initial package.

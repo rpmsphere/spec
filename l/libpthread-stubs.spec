@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 10 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 0.2-2mamba
 - devel package: don't obsolete main package
 * Tue Sep 29 2009 Automatic Build System <autodist@mambasoft.it> 0.2-1mamba

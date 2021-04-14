@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: gsl-shell
 Summary: A command-line interface to GSL collection of mathematical functions
@@ -56,7 +56,7 @@ mv $RPM_BUILD_ROOT%{_bindir}/examples $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %changelog
 * Thu Oct 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 04 2012 Cristobal Lopez <lopeztobal@gmail.com> 2.1.0
 - New version/release for MIB (Mandriva International Backports) users
 * Tue Jan 18 2011 Alberto Altieri <alberto.altieri@gmail.com> 1.1

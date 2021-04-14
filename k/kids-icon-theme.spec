@@ -32,7 +32,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Sep 09 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 23 2007 - aochs@gmx.de
 - changed wallpaper 
 * Fri Apr 13 2007 - l.rupp@web.de

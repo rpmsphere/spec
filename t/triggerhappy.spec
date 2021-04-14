@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           triggerhappy
 Version:        0.5.0
@@ -53,7 +53,7 @@ mkdir -p %{buildroot}/etc/triggerhappy/triggers.d/
 
 %changelog
 * Mon Aug 07 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 14 2017 msuchanek@suse.com
 - Fix build failure due to unowned udev directories.
 * Fri Mar 10 2017 msuchanek@suse.com

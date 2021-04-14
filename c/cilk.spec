@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: cilk
 Version: 5.4.6
@@ -177,7 +177,7 @@ mv %buildroot/usr/lib %buildroot%_libdir
 
 %changelog
 * Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.4.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 13 2017 Aleksei Nikiforov <darktemplar@altlinux.org> 5.4.6-alt11
 - Fixed build with gcc-6.
 * Sun Jan 27 2013 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 5.4.6-alt10

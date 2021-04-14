@@ -50,7 +50,7 @@ rm -rf %{buildroot}
 %{_libdir}/bonobo/servers/*
 %{_bindir}/*
 %{_libexecdir}/ontv-applet
-%{python_sitelib}/%name
+%{python2_sitelib}/%name
 %{_datadir}/%{name}
 %{_datadir}/gnome-2.0/ui/*.xml
 %{_datadir}/applications/ontv.desktop
@@ -59,7 +59,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Feb 13 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 21 2010 Jani Välimaa <wally@mandriva.org> 3.2.0-3mdv2011.0
 + Revision: 599593
 - don't own icon dirs

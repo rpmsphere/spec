@@ -34,7 +34,7 @@ make
 
 %changelog
 * Sun Jun 16 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 12 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 1.4-1mdv2009.1
 + Revision: 293009
 - update to new version 1.4

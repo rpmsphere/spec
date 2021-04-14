@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: 	 	xystray
 Summary: 	A simple implementation of freedesktop.org systray specification
@@ -38,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 14 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

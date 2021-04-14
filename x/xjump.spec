@@ -33,7 +33,7 @@ cp XJump.ad $RPM_BUILD_ROOT/%_sysconfdir/X11/app-defaults/XJump
 
 %changelog
 * Tue Nov 28 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 30 2011 Ilya Mashkin <oddity@altlinux.ru> 2.7.5-alt2
 - fix build
 * Thu Apr 21 2011 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 2.7.5-alt1.3

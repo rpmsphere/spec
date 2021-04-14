@@ -44,7 +44,7 @@ cp %{SOURCE1} .
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 27 2008 crrodriguez@suse.de
 - fix cmake warning
 * Mon Jan  7 2008 crrodriguez@suse.de

@@ -1,11 +1,12 @@
 Name:           libdecodeqr
-Version:        0.9.4
-Release:        8.1
+Version:        0.9.4git
+Release:        1
 Summary:        Decoding QR 2D barcodes
 Group:          Applications/Engineering
 License:        LGPL
 URL:            https://github.com/josephholsten/libdecodeqr
-Source0:        http://cloud.github.com/downloads/josephholsten/libdecodeqr/%{name}-%{version}.tar.gz
+#Source0:        http://cloud.github.com/downloads/josephholsten/libdecodeqr/%{name}-%{version}.tar.gz
+Source0:        %{name}-master.zip
 BuildRequires:  gcc-c++, opencv-devel, lapack-devel
 BuildRequires:  atlas
 
@@ -26,13 +27,14 @@ This package contains libraries and header files for developing
 applications that decode qrencode.
 
 %prep
-%setup -q
+%setup -q -n %{name}-master
 sed -i -e 's/__BEGIN__/__CV_BEGIN__/' -e 's/__END__/__CV_END__/' libdecodeqr/imagereader.cpp
 sed -i 's|cvWarpPerspectiveQMatrix|cvGetPerspectiveTransform|' libdecodeqr/imagereader.cpp
 sed -i '1i #include <opencv2/imgproc.hpp>' examples/webcam/webcam.cpp
 
 %build
 export CXXFLAGS='-O2 -g -fpermissive -fPIC'
+autoreconf -ifv
 %configure --disable-static
 make %{?_smp_mflags}
 
@@ -55,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -42,7 +42,7 @@ EOF
 
 %changelog
 * Fri Feb 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 25 2011 Vitaly Kuznetsov <vitty@altlinux.ru> 2.0-alt1.1.1
 - Rebuild with Python-2.7
 * Fri Nov 20 2009 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 2.0-alt1.1

@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Jan 02 2009 Fabian Affolter <fabian@bernewireless.net> - 1.8-1
 - Initial spec for Fedora

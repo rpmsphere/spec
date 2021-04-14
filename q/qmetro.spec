@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 18 2012 lazy.kent@opensuse.org
 - Split off maps packages.
 * Wed May  2 2012 lazy.kent@opensuse.org

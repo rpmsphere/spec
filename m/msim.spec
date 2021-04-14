@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Jun 15 2011 Bernd Stramm <bernd.stramm@gmail.com| - 0.4.0-1
 - start packaging

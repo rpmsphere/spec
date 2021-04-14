@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           dukto
 Version:        6.0
@@ -43,4 +43,4 @@ desktop-file-install --dir "%{buildroot}%{_datadir}/applications" dukto.desktop
 
 %changelog
 * Wed Nov 09 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

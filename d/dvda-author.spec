@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: dvda-author
 Summary: High-definition DVD-AUDIO disc creator
@@ -51,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 10.06
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug 24 2010 Fab Nicol
 - Initial package

@@ -44,7 +44,7 @@ For more info, check http://clonezilla.org, http://clonezilla.nchc.org.tw.
 
 %changelog
 * Mon Mar 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.35.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 06 2020 luigiwalser <luigiwalser> 3.35.2-1.mga8
 + Revision: 1654011
 - 3.35.2

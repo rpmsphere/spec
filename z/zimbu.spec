@@ -34,4 +34,4 @@ install -m755 zimbu zimbu2c pluginproto %{buildroot}%{_bindir}
 
 %changelog
 * Sun Mar 3 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2013.02.01
-- Rebuild for Fedora
+- Rebuilt for Fedora

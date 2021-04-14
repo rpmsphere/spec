@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xvi
 Summary: Small multiple-window version of the `vi' text editor
@@ -43,4 +43,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Mon Oct 15 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.50.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

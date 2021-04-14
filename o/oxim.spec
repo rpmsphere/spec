@@ -317,11 +317,11 @@ rm -rf $RPM_BUILD_ROOT
 - Modify ICON.
 
 * Fri Dec 03 2010 Chris Lin <chris.lin@ossii.com.tw> 1.4.4-3
-- Rebuild for Fedora 14 64-bit.
+- Rebuilt for Fedora 14 64-bit.
 - Modify Makefile.am instead of XTEST_LIBS to fix link error of libXext.so.6.
 
 * Wed Sep 15 2010 Kylix Luo <kylix.luo@ossii.com.tw> 1.4.4-2
-- Rebuild for Fedora 13 64-bit.
+- Rebuilt for Fedora 13 64-bit.
 - Add -lXext into XTEST_LIBS to fix link error of libXext.so.6.
 - Add gcc-c++ into BuildRequires.
 

@@ -120,4 +120,4 @@ install -m 0644 *.ttf %{buildroot}%{fontdir}
 
 %changelog
 * Thu Aug 18 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 14.04
-- Rebuild for Fedora
+- Rebuilt for Fedora

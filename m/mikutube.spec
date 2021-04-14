@@ -47,7 +47,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 01 2012 kobayashi
 - Update 1.8.0.2
 - Add system tray patch. 

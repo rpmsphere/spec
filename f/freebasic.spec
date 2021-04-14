@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		freebasic
 Version:	1.07.1
@@ -58,7 +58,7 @@ cp -a examples %buildroot%_datadir/freebasic
 
 %changelog
 * Thu Oct 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.07.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 15 2015 Andrey Cherepanov <cas@altlinux.org> 1.02.0-alt2
 - Replace old i586-freebasic
 * Wed Apr 15 2015 Andrey Cherepanov <cas@altlinux.org> 1.02.0-alt1

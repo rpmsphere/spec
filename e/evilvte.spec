@@ -56,7 +56,7 @@ DESTDIR=%{buildroot} make install
 
 %changelog
 * Sat Aug 03 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2~pre1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul  3 2013 seiler@b1-systems.de
 - changed to configuration to fit needs for a common window manager
 * Wed Jul  3 2013 seiler@b1-systems.de

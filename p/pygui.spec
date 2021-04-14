@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define module_name PyGUI
 
 Name: pygui
@@ -51,4 +51,4 @@ python2 setup.py install --root=$RPM_BUILD_ROOT --optimize=2
 
 %changelog
 * Fri Mar 30 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

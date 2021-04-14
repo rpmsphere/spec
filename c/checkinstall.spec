@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           checkinstall
 Summary:        "make install" Installation Tracker
 Version:        1.6.2
@@ -80,7 +80,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb  6 2010 jengelh@medozas.de
 - Fix linker stage errors on sparc64 due to missing LDFLAGS
 * Tue Jan  5 2010 pth@novell.com

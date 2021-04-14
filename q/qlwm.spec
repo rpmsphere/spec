@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:               qlwm
 Version:            4.3
@@ -45,4 +45,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 14 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

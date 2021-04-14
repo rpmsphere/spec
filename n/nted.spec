@@ -57,7 +57,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Nov 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10.18
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 06 2011 Adam Jackson <ajax@redhat.com> - 1.10.18-3
 - Rebuild for new libpng
 * Tue Feb 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.10.18-2
@@ -112,7 +112,7 @@ rm -rf %{buildroot}
 * Tue Jul 21 2009 Hans Ulrich Niedermann <hun@n-dimensional.de> - 1.6.1-1
 - Upstream release 1.6.0/1.6.1
 * Wed Mar 25 2009 Hans Ulrich Niedermann <hun@n-dimensional.de> - 1.5.0-6
-- Rebuild for Fedora 11 to pick up font autodeps (#491970)
+- Rebuilt for Fedora 11 to pick up font autodeps (#491970)
 * Thu Mar  5 2009 Hans Ulrich Niedermann <hun@n-dimensional.de> - 1.5.0-5
 - Remove workaround for broken po2xml which is now fixed
 - Move noarch subpackage conditional part to single place in file

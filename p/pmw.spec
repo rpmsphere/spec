@@ -46,7 +46,7 @@ ln -s ../../../pmw/psfonts/PMW-Music.pfa %{buildroot}%{_datadir}/ghostscript/Res
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.34
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 30 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 4.240-1
 + Revision: 788306
 - new version 4.24

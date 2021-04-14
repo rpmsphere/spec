@@ -1,10 +1,12 @@
+%undefine _debugsource_packages
+
 Summary: 	Multiseat Display Manager
 Name:		multiseat
 Version: 	0.0.3
 Release: 	1
 License: 	GPLv2
 Group: 		User Interface/X
-URL: 		http://wiki.c3sl.ufpr.br/multiseat/index.php/Mdm
+URL: 		https://github.com/anderco/mdm
 Source0: 	mdm-%{version}.tar.gz
 BuildRequires:  libXft-devel, libX11-devel, cairo-devel, freetype-devel
 Requires:       gdm, xorg-x11-server-Xephyr
@@ -43,4 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -80,7 +80,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Nov 06 2007 Silvan Calarco <silvan.calarco@mambasoft.it> 3.2-4mamba
 - require external slib and remove from package

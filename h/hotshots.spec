@@ -63,7 +63,7 @@ sed -i 's|/.*/||' %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Mon Oct 20 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 21 2013 lazy.kent@opensuse.org
 - Update to 1.1.1.
   * Features:

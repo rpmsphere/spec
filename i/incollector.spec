@@ -50,7 +50,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 * Mon Jan 25 2010 Thomas Janssen <thomasj@fedoraproject.org> 1.2-4

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         xscrabble
 Summary:      X version of the popular board game
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 02 2012 Neal <nealbrks0 at gmail dot com> 2.1.0-1pclos2012
 - 64bit build
 * Wed Jan 06 2010 Texstar <texstar at gmail.com> 2.1.0-3pclos2010

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:			extend-disc-image
 Version:		0.0.6
@@ -38,7 +38,7 @@ install -m755 %{name} $RPM_BUILD_ROOT%{_bindir}
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 22 2009 David Bolt <davjam@davjam.org> 0.0.6
 - Fixed another typo. Incorrectly identified static images by
 -  0x00 at header offset 0x4c. Identifier is 0x02.

@@ -49,7 +49,7 @@ rm -rf %{buildroot}%{_datadir}/{doc,menu}/ffmpegyag
 
 %changelog
 * Thu Jun 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.6.git20170908
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May  9 2017 joerg.lorenzen@ki.tng.de
 - Update to version 0.7.6.git20170503
 - Build against current ffmpeg libraries.

@@ -43,7 +43,7 @@ autoreconf -vfi
 
 %changelog
 * Thu Jun 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10.16
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 17 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 0.10.16-alt1.qa1
 - NMU: rebuilt for debuginfo.
 * Tue Sep 07 2010 Valery Inozemtsev <shrek@altlinux.ru> 0.10.16-alt1

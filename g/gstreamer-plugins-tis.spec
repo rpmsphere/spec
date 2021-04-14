@@ -36,4 +36,4 @@ cd src
 
 %changelog
 * Wed Feb 25 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -39,7 +39,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Jun 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 08 2012 Leo Jiang - 1.0.7-5
 - add moses-suite-base as dependence
 * Tue May 01 2012 Leo Jiang - 1.0.7-4

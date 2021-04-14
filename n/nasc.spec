@@ -102,7 +102,7 @@ fi
 
 %changelog
 * Thu Dec 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 16 2019 Tomasz Tomasik <scx.mail@gmail.com> - 0.5.1-12
 - Update patches
 * Fri Feb 15 2019 Tomasz Tomasik <scx.mail@gmail.com> - 0.5.1-11

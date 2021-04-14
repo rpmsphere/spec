@@ -68,7 +68,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Mar 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20170901
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 14 2013 Denis G. Samsonenko <ogion@altlinux.org> 20130514-alt1
 - new version
 * Sun Dec 02 2012 Denis G. Samsonenko <ogion@altlinux.org> 20121202-alt1

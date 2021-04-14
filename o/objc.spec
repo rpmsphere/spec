@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Portable Object Compiler
 Summary(pl):	Przenośny kompilator obiektowego C
@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jan 13 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 18 2005 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 Revision 1.32  2005/05/18 00:21:07  undefine

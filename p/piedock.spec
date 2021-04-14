@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:			piedock
 Version:		1.6.9
@@ -51,7 +51,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Thu Feb 01 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 28 2015 gseaman <galen.seaman at comcast.net> 1.6.6-1gseaman2015
 - 1.6.6
 * Sat May 18 2013 Texstar <texstar at gmail.com> 1.6.1-2pclos2013

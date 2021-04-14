@@ -38,6 +38,6 @@ install -m 0644 %{S:3} %{buildroot}%{_unitdir}/
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb  7 2012 malcolmlewis@opensuse.org
 - Initial build

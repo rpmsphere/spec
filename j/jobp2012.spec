@@ -41,4 +41,4 @@ install -m644 *.py *.cray %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Fri Nov 01 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

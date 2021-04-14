@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		polyphone
 Version:        1.9
@@ -91,6 +91,6 @@ fi
 
 %changelog
 * Thu Feb 08 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 25 2013 LTN Packager <packager-el6rpms@LinuxTECH.NET> - 0.6-1
 - initial package release

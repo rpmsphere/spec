@@ -55,7 +55,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Oct 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 16 2012 dimstar@opensuse.org
 - Update to version 2.4:
   + lp#904367: high priority crash.

@@ -50,7 +50,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 18 2009 Kami <kami@ossii.com.tw> 0.4.2-2mdk
 - Build for OSSII
 * Sun Mar 19 2006 Guillaume Bedot <littletux@zarb.org> 0.4.2-2mdk

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	An UN*X init scheme with service supervision
 Name:		runit
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 2.1.1-3mdv2011.0
 + Revision: 614798
 - the mass rebuild of 2010.1 packages

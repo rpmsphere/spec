@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Feb 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 18 2013 umeabot <umeabot> 0.9.1-7.mga4
 + Revision: 507718
 - Mageia 4 Mass Rebuild

@@ -47,7 +47,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.08-4mdv2011.0
 + Revision: 618247
 - the mass rebuild of 2010.0 packages

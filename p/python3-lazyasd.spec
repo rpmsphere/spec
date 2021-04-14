@@ -31,4 +31,4 @@ mv %{buildroot}/usr/LICENSE %{buildroot}/usr/README.rst %{buildroot}%{_docdir}/%
 
 %changelog
 * Thu Oct 05 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

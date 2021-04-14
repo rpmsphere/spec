@@ -151,7 +151,7 @@ rm -f %{buildroot}/usr/ufo2000-srv
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1086
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec  3 2008 milochen <milo_chen@mail2000.com.tw> - 0.7.1086-1.ossii
 - Initial ossii package
 * Tue Sep 25 2007 Toni Graffy <toni@links2linux.de> - 0.7.1086-0.pm.1

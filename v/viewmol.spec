@@ -91,7 +91,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_libdir}/viewmol
 
 %changelog
 * Wed Apr 29 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 2.4.1-15
 + Revision: 6820fd7
 - MassBuild#464: Increase release tag

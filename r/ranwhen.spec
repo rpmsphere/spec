@@ -31,6 +31,6 @@ install -Dm755 %{name}.py %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 28 2013 Simone Sclavi <darkhado@gmail.com> 1-1.20130428git6d8cac6
 - Initial build

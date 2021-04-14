@@ -73,7 +73,7 @@ fi
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 19 1998 Jeff Johnson <jbj@redhat.com>
 - repackage for powertools.
 * Tue Jun 02 1998 Arne Coucheron <arneco@online.no>

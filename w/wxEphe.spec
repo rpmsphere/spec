@@ -34,7 +34,7 @@ make %{?_smp_mflags}
 
 %changelog
 * Mon Nov 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Aug 12 2017 jengelh@inai.de
 - Update to new upstream release 1.4
 - An unspecified set of fixes was applied.

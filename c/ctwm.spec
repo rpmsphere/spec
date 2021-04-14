@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:       Claude's Tab Window Manager
 Name:          ctwm
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Dec 24 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr  9 2011 Agnelo de la Crotche <agnelo@unixversal.com>
 - package for openSUSE 11.3/11.4
 * Thu Feb 16 2006 Richard Levitte <richard@levitte.org>

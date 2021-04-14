@@ -1,6 +1,6 @@
 %{!?tcl_version: %define tcl_version %(echo 'puts $tcl_version' | tclsh)}
 %{!?tcl_sitearch: %define tcl_sitearch %{_libdir}/tcl%{tcl_version}}
-%define debug_package		%{nil}
+%undefine _debugsource_packages
 
 Summary:	A Tk extension to handle additional input devices in X11
 Name:		tkxinput
@@ -48,7 +48,7 @@ make install prefix=%{buildroot}%{_prefix}
 
 %changelog
 * Wed Oct 26 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 19 2015 Bernhard Rosenkraenzer <bero@bero.eu> 1.0-26
 + Revision: ac5e6e2
 - MassBuild#774: Increase release tag

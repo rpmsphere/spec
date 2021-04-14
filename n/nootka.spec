@@ -59,7 +59,7 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Mon Feb 05 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 1.0.1-4.mga5
 + Revision: 743953
 - Second Mageia 5 Mass Rebuild

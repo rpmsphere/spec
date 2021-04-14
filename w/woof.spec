@@ -31,7 +31,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Tue Mar 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20120531
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 08 2016 umeabot <umeabot> 20120531-7.mga6
 + Revision: 946479
 - Mageia 6 Mass Rebuild

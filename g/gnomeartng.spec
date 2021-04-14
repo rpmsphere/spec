@@ -73,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Mar 21 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 16 2009 Slick50 <lxgator@gmail.com> 0.7.0-1pclos2009
 - 0.7.0
 * Wed Mar 11 2009 Slick50 <lxgator@gmail.com> 0.6.0-2pclos2007

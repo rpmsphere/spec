@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           ncbi
 Summary:        NCBI Software Development Toolkit
@@ -230,7 +230,7 @@ __EOF__
 
 %changelog
 * Sat Jan 26 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep  6 2012 scorot@free.fr
 - add various patches to fix build erros when optflags are enabled
 * Wed Sep  5 2012 scorot@free.fr

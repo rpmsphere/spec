@@ -110,7 +110,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.19
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 20 2009 werner@suse.de
 - Yet an other David Binderman fix (bnc#547909)
 * Sun Aug 30 2009 coolo@novell.com

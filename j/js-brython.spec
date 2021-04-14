@@ -26,4 +26,4 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/javascript/%{name}
 
 %changelog
 * Wed Jan 04 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

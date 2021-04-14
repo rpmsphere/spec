@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Free software for creating, managing, and printing invoices
 Name:		qfaktury
@@ -59,7 +59,7 @@ make INSTALL_ROOT=$RPM_BUILD_ROOT install
 
 %changelog
 * Sun Mar 04 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.2_1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 16 2009 Mariusz Fik <fisiu82@gmail.com> - 0.6.2_1
 - upstream update
 * Tue Feb 10 2009 Mariusz Fik <fisiu82@gmail.com> - 0.5.0

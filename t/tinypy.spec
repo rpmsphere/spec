@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:               tinypy
 Version:            1.1
@@ -45,6 +45,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Jan 27 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 23 2011 pascal.bleser@opensuse.org
 - initial version (1.1)

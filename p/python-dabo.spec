@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define module_name dabo
 
 Name: python-dabo
@@ -42,6 +42,6 @@ rmdir $RPM_BUILD_ROOT/usr/dabo
 
 %changelog
 * Wed Jun 06 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 31 2007 Vitaly Lipatov <lav@altlinux.ru> 0.8.3-alt1
 - initial build for ALT Linux Sisyphus

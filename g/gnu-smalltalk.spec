@@ -1,12 +1,12 @@
 Summary:        GNU Smalltalk
 Name:           gnu-smalltalk
-Version:        3.2.5
-Release:        22%{?dist}
+Version:        3.2.91
+Release:        1
 License:        GPLv2+ with exceptions
 Group:          Development/Languages
-URL:            http://www.gnu.org/software/smalltalk/smalltalk.html
+URL:            http://smalltalk.gnu.org/
 
-Source:         ftp://ftp.gnu.org/gnu/smalltalk/smalltalk-%{version}.tar.gz
+Source:         ftp://alpha.gnu.org/gnu/smalltalk/smalltalk-%{version}.tar.gz
 Source1:        gnu-smalltalk.desktop
 Source2:        gnu-smalltalk.svg
 
@@ -24,20 +24,20 @@ ExclusiveArch:  %{ix86} x86_64 %{arm} aarch64 ppc64le
 Requires(post):  /sbin/install-info
 Requires(preun): /sbin/install-info
 
-Requires:       emacs-filesystem
+#Requires:       emacs-filesystem
 
-Obsoletes:      emacs-gnu-smalltalk <= 3.2.5-10
-Obsoletes:      emacs-gnu-smalltalk-el <= 3.2.5-10
+#Obsoletes:      emacs-gnu-smalltalk <= 3.2.5-10
+#Obsoletes:      emacs-gnu-smalltalk-el <= 3.2.5-10
 
-Provides:       emacs-gnu-smalltalk <= 3.2.5-10
-Provides:       emacs-gnu-smalltalk-el <= 3.2.5-10
+#Provides:       emacs-gnu-smalltalk <= 3.2.5-10
+#Provides:       emacs-gnu-smalltalk-el <= 3.2.5-10
 
 BuildRequires:  tk-devel
 BuildRequires:  gtk2-devel
 BuildRequires:  gdbm-devel
 BuildRequires:  gmp-devel
 BuildRequires:  readline-devel
-BuildRequires:  emacs-nox
+#BuildRequires:  emacs-nox
 BuildRequires:  libtool
 BuildRequires:  libtool-ltdl-devel
 BuildRequires:  texinfo
@@ -83,11 +83,11 @@ with functions written in C.
 
 %prep
 %setup -q -n smalltalk-%{version}
-%patch1 -p1 -b .auto
-%patch2 -p1 -b .ltdl
-%patch3 -p1 -b .inf
-%patch4 -p1 -b .emx
-%patch5 -p1 -b .tk86
+#%patch1 -p1 -b .auto
+#%patch2 -p1 -b .ltdl
+#%patch3 -p1 -b .inf
+#%patch4 -p1 -b .emx
+#%patch5 -p1 -b .tk86
 %patch6 -p1 -b .format
 
 %build
@@ -100,9 +100,9 @@ CFLAGS="$RPM_OPT_FLAGS -Wa,--noexecstack"
   --with-system-libsigsegv \
   --with-system-libffi=yes \
   --with-system-libltdl=yes \
-  --with-lispdir=%{_emacs_sitelispdir}/gnu-smalltalk \
-  --with-lispstartdir=%{_emacs_sitestartdir} \
   --with-imagedir=%{_libdir}/%{name}
+#  --with-lispdir=%{_emacs_sitelispdir}/gnu-smalltalk \
+#  --with-lispstartdir=%{_emacs_sitestartdir} \
 
 make %{?_smp_mflags}
 
@@ -119,12 +119,12 @@ done
 %install
 make DESTDIR=$RPM_BUILD_ROOT INSTALL="install -c -p" install
 
-mkdir -p  ${RPM_BUILD_ROOT}%{_emacs_sitestartdir}
+#mkdir -p  ${RPM_BUILD_ROOT}%{_emacs_sitestartdir}
 
-mv ${RPM_BUILD_ROOT}%{_emacs_sitelispdir}/gnu-smalltalk/site-start.d/* \
-   ${RPM_BUILD_ROOT}%{_emacs_sitestartdir}
+#mv ${RPM_BUILD_ROOT}%{_emacs_sitelispdir}/gnu-smalltalk/site-start.d/* \
+#   ${RPM_BUILD_ROOT}%{_emacs_sitestartdir}
 
-rmdir ${RPM_BUILD_ROOT}%{_emacs_sitelispdir}/gnu-smalltalk/site-start.d
+#rmdir ${RPM_BUILD_ROOT}%{_emacs_sitelispdir}/gnu-smalltalk/site-start.d
 
 rm -rf $RPM_BUILD_ROOT/%{_libdir}/libgst*a*
 rm -rf $RPM_BUILD_ROOT/%{_libdir}/gnu-smalltalk/*.la
@@ -145,8 +145,6 @@ desktop-file-install \
    --dir $RPM_BUILD_ROOT%{_datadir}/applications \
   %{SOURCE1}
 
-%check
-# make check
 
 %post
 /sbin/install-info %{_infodir}/gst.info %{_infodir}/dir || :
@@ -177,12 +175,13 @@ fi
 %{_bindir}/gst-profile
 
 %{_libdir}/libgst.so.*
+%{_libdir}/libgst-gobject.so.*
 
 %{_infodir}/gst.info*
 %{_infodir}/gst-*.info*
 
-%{_datadir}/gnu-smalltalk/
-%{_libexecdir}/gnu-smalltalk/
+%{_datadir}/smalltalk
+%{_libexecdir}/smalltalk
 
 %{_mandir}/man1/gst.1*
 %{_mandir}/man1/gst-*
@@ -190,28 +189,34 @@ fi
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*.svg
 
-%{_emacs_sitelispdir}/gnu-smalltalk/*.elc
-%{_emacs_sitestartdir}/*.elc
+#%{_emacs_sitelispdir}/gnu-smalltalk/*.elc
+#%{_emacs_sitestartdir}/*.elc
 
-%{_emacs_sitelispdir}/gnu-smalltalk/*.el
-%{_emacs_sitestartdir}/*.el
+#%{_emacs_sitelispdir}/gnu-smalltalk/*.el
+#%{_emacs_sitestartdir}/*.el
 
 %doc AUTHORS COPYING COPYING.DOC COPYING.LIB ChangeLog 
 %doc NEWS README THANKS TODO
 
-%{_libdir}/gnu-smalltalk/
+%{_libdir}/smalltalk
+%{_libdir}/gnu-smalltalk
 
 %files devel
 %{_bindir}/gst-config
 %{_libdir}/libgst.so
+%{_libdir}/libgst-gobject.so
 %{_libdir}/pkgconfig/gnu-smalltalk.pc
 
 %{_datadir}/aclocal/*.m4
 
 %{_includedir}/gst.h   
 %{_includedir}/gstpub.h 
+%{_includedir}/gst-gobject.h
 
 %changelog
+* Fri May 10 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.5
+- Rebuilt for Fedora
+
 * Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 3.2.5-22
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           slowcat
 License:        GPL
@@ -33,7 +33,7 @@ PREFIX=%{buildroot}/usr MANDIR=%{buildroot}/%{_mandir} make install
 
 %changelog
 * Wed Nov 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 18 2011 - brian@aljex.com
 - Version 1.0.1
 * Fri Feb 18 2011 - brian@aljex.com

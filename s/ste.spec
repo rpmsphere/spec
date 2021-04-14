@@ -83,7 +83,7 @@ rm -rf %{buildroot}{%{_datadir}/qt4,%{_includedir},%{_libdir}}
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 27 2012 lazy.kent@opensuse.org
 - Patch to fix compilation with GCC 4.7.
 - Use pkgconfig(*) as build dependencies.

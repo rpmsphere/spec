@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: btk
 Summary: Biomechanical ToolKit
@@ -60,4 +60,4 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Tue Jan 14 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

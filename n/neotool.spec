@@ -51,7 +51,7 @@ cp -avL %{S:6} $RPM_BUILD_ROOT/usr/share/applications/NeoTool_root-mode.desktop
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 23 2010 joop.boonen@opensuse.org
 - Buid version 1.2.3 with xterm for flash progress
 * Sun Jan 10 2010 joop.boonen@opensuse.org

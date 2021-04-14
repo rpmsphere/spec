@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           tetzle
 Version:        2.1.6
@@ -56,7 +56,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 19 2012 graeme@gottcode.org 2.0.1-1
 - New upstream release
 * Mon Dec 05 2011 graeme@gottcode.org 2.0.0-4

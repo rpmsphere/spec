@@ -20,6 +20,7 @@ tested on Linux and Windows.
 %setup -q
 
 %build
+autoreconf -ifv
 ./configure --prefix=/usr
 #sed -i '66,71d' data/Makefile.am
 sed -i '465,470d' data/Makefile
@@ -45,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 25 2009 Kami <kami@ossii.com.tw> 0.3-1.ossii
 - Build for OSSII

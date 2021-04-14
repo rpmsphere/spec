@@ -93,7 +93,7 @@ install -m 644 keylookup/keylookup.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 22 2012 cfarrell@suse.com
 - license update: GPL-2.0+
   Various Open Source Licenses is not acceptable as a spec file license.

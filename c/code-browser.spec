@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: code-browser
 Summary: A folding text editor
@@ -39,4 +39,4 @@ make with-local-libs
 
 %changelog
 * Tue Aug 25 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

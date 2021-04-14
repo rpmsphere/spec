@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:			tss
 Version:		0.8.2
@@ -46,7 +46,7 @@ done
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 29 2007 Pascal Bleser <guru@unixtech.be> 0.8.1
 - moved to openSUSE Build Service
 - new upstream version

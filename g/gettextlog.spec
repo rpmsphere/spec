@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:   Simple preloadable shared library to log untranslated messages
 Name:      gettextlog
@@ -35,4 +35,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 24 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

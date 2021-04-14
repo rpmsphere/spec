@@ -30,4 +30,4 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sun May 26 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.01
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -83,7 +83,7 @@ CFLAGS="%{optflags} -DHAVE_SYS_WAIT_H"
 
 %changelog
 * Wed Sep 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Mar 29 2011 pascal.bleser@opensuse.org
 - update to 0.7:

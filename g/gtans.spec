@@ -50,7 +50,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.99.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 24 2007 Victor Forsyuk <force@altlinux.org> 1.2-alt2
 - Fix wrong paths in gtans configuration.
 - Add URL.

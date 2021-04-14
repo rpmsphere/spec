@@ -83,7 +83,7 @@ make install DESTDIR=$RPM_BUILD_ROOT SUDO=false
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 2.4.8-alt1.qa1
 - NMU: rebuilt for debuginfo.
 * Tue Jun 02 2009 Michail Yakushin <silicium@altlinux.ru> 2.4.8-alt1

@@ -50,7 +50,7 @@ make
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 30 2010 djs_core <admin@djscore.org> - 0.5.1
 - update to new version
 * Thu Nov 04 2010 djs_core <admin@djscore.org> - 0.4.4

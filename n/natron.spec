@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define oname Natron
 
 Summary:	Nodal video compositing software
@@ -76,6 +76,6 @@ done
 
 %changelog
 * Wed Jan 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.4git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 26 2015 abfonly <abfonly@gmail.com> 1.2.1-1
 - (99d86ea) Log: Update to 1.2.1, drop all external sources and patches, use internal gits

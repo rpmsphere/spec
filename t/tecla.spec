@@ -72,7 +72,7 @@ ln -s enhance_r %{buildroot}/%{_bindir}/enhance
 
 %changelog
 * Fri Apr 13 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul  7 2017 adam.majer@suse.de
 - Add enhance->enhance_r compatibility symlink to binary
 * Thu Jul  6 2017 jengelh@inai.de

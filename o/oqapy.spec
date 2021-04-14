@@ -62,4 +62,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Jan 19 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

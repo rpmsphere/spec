@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A language with roots in Forth
 Name: retro
@@ -37,4 +37,4 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 12.2021.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

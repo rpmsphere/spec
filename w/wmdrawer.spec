@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: 		wmdrawer
 Version: 	0.10.5
 Release: 	1
@@ -58,7 +58,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 03 2008 Oliver Burger <rpm@mandrivauser.de> 0.10.5-3mud2008.0
 - rebuild for MUde
 - changed from csh to bash-script

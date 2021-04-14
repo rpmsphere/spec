@@ -39,7 +39,7 @@ rm -rf %{buildroot}/%{_datadir}/doc
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug  2 2018 mardnh@gmx.de
 - Correct license
 * Sun Jul 29 2018 jengelh@inai.de

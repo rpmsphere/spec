@@ -34,4 +34,4 @@ cp -a * %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Thu Jan 02 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

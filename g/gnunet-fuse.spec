@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		gnunet-fuse
 Version:	0.13.0
@@ -38,4 +38,4 @@ make
 
 %changelog
 * Tue Sep 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

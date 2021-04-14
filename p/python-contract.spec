@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define corename contract
 
 Summary:    Programming by Contract for Python
@@ -38,6 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 14 2010 toms@suse.de
 - Initial version 1.4

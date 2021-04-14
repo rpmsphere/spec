@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+%undefine _debugsource_packages
 %define old_name gcom
 
 Summary:	GPRS/EDGE/3G/HSDPA datacard control tool
@@ -46,7 +46,7 @@ ln -s %{_sbindir}/%{name} %{buildroot}%{_sbindir}/%{old_name}
 
 %changelog
 * Fri Jul 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.32
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 05 2016 umeabot <umeabot> 0.32-19.mga6
 + Revision: 937640
 - Mageia 6 Mass Rebuild

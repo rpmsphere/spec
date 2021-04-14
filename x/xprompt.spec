@@ -41,7 +41,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Thu Sep 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 91.9.28
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Jul 24 2006 schwab@suse.de
 - Fix building with Xorg 7.

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:               xmodconfig
 Version:            0.2.0
@@ -59,7 +59,7 @@ popd
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug  8 2010 pascal.bleser@opensuse.org
 - update to 0.2.0:
   * a new design is used

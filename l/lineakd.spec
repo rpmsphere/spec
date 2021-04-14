@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           lineakd
 Version:        0.9
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Apr 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 06 2011 Funda Wang <fwang@mandriva.org> 0.9-4mdv2011.0
 + Revision: 629146
 - add patches to fix build

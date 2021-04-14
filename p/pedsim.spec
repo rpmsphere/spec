@@ -37,4 +37,4 @@ install -Dm755 demoapp/%{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Wed Feb 12 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

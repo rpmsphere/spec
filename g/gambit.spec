@@ -54,7 +54,7 @@ convert src/gui/bitmaps/gambit.xpm %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Fri May 27 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 15.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 22 2014 Rosa <rosa@abf.rosalinux.ru> 14.1.0-1
 + Revision: 92bb73f
 - Automatic import for version 14.1.0-1

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         dyncall
 Summary:      Dynamic Foreign Function Call Library
@@ -50,4 +50,4 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Tue Aug 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

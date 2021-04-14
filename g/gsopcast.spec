@@ -74,6 +74,6 @@ rm -f /usr/bin/sp-sc
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 01 2008 - Alex Lau <avengermojo@gmail.com> 0.4.0-1
 - initial spec file

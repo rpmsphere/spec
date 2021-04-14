@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 17 2011 Agnelo de la Crotche <agnelo@unixversal.com> 1.3
 - updated vboxlive to version 2.2
 * Tue Oct 11 2011 Agnelo de la Crotche <agnelo@unixversal.com> 1.2

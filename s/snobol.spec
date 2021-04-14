@@ -1,4 +1,4 @@
-%global debug_package %nil
+%undefine _debugsource_packages
 
 Name: snobol
 Version: 4.1.5
@@ -49,7 +49,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %changelog
 * Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 22 2017 Vladimir D. Seleznev <vseleznv@altlinux.org> 4.1.5-alt2.qa1
 - NMU: rebuild against Tcl/Tk 8.6
 * Tue Apr 17 2014 Ilya Mashkin <oddity@altlinux.ru> 4.1.5-alt2

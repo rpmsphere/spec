@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           xbanner
 BuildRequires:  libX11-devel, libXpm-devel, imake
@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Sep 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.31
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 16 2006 anosek@suse.cz
 - replaced dangerous gets() function by fgets()
   [#219044] (gets.patch)

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           pyspacewar
 Version:        1.1.0
 Release:        14.1
@@ -49,7 +49,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Jul 06 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov  3 2016 nemysis@openSUSE.org
 - Update to 1.1.0, please see
   /usr/share/doc/packages/pyspacewar/NEWS.rst

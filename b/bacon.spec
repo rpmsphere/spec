@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A free BASIC to C converter for Unix-based systems
 Name: bacon
@@ -45,6 +45,6 @@ make
 
 %changelog
 * Tue Sep 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 01 2018 Peter van Eerten <peter@basic-converter.org>
 - Initial package

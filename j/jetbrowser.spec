@@ -47,4 +47,4 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/webare
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0.425
-- Rebuild for Fedora
+- Rebuilt for Fedora

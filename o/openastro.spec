@@ -39,6 +39,6 @@ install -Dm644 icons/openastro.svg %{buildroot}%{_datadir}/pixmaps/openastro.svg
 
 %changelog
 * Mon Sep 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.57
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 11 2016 Jens Petersen <petersen@redhat.com>
 - Initial package

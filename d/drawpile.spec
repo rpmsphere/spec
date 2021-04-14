@@ -61,6 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Feb 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 28 2010 Julian Aloofi <julian at, fedoraproject.org> 0.6.0-1
 - initial package

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: hcxdumptool
 Summary: Small tool to capture packets from wlan devices
@@ -33,5 +33,5 @@ install -m644 manpages/* %{buildroot}%{_mandir}/man1/
 
 %changelog
 * Thu Dec 12 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 

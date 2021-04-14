@@ -32,6 +32,6 @@ an open source project hosted on SourceForge.
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr  5 2011 mrueckert@suse.de
 - initial version (v1.1)

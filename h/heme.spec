@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Console hex editor
 Name: heme
@@ -43,7 +43,7 @@ export CFLAGS="%{optflags} -DHAVE_MMAP"
 
 %changelog
 * Tue Mar 31 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan  3 2010 J. Randall Owens <jrowens@ghiapet.net> - 0.4.2-2
 - rebuild for Fedora 12
 * Mon Jan 29 2007 Dag Wieers <dag@wieers.com> - 0.4.2-1 - +/

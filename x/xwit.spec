@@ -55,7 +55,7 @@ Authors:
 
 %changelog
 * Mon Sep 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu May  1 2008 Pascal Bleser <guru@unixtech.be> 3.4
 - new package

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: gswiss
 Version: 0.1a
@@ -33,4 +33,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed May 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1a
-- Rebuild for Fedora
+- Rebuilt for Fedora

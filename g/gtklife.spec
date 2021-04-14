@@ -53,7 +53,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Sep 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Sep 16 2006 Dag Wieers <dag@wieers.com> - 5.1-2
 - Use configure and --with-gtk2 if applicable.
 * Fri Sep 15 2006 Dag Wieers <dag@wieers.com> - 5.1-1

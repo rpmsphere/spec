@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global url_ver	%(echo %{version} | tr '.' '_')
 
 Name:		qstopmotion
@@ -51,7 +51,7 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_CXX_FLAGS=-
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 10 2016 daviddavid <daviddavid> 2.3.1-1.mga6
 + Revision: 1045282
 - initial package qstopmotion

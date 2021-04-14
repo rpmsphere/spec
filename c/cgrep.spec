@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	cgrep
 Name:		cgrep
@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 8.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 24 2005 Lucent Central Exptools Administrator <exptools@lucent.com>
 - Initial package

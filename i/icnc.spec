@@ -43,6 +43,6 @@ make
 
 %changelog
 * Thu Aug 30 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.300
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 29 2015 Vitaly Lipatov <lav@altlinux.ru> 1.0.100git-alt1
 - initial build for ALT Linux Sisyphus

@@ -41,7 +41,7 @@ install -m644 README AUTHORS ChangeLog COPYING %{buildroot}%{_datadir}/doc/%{nam
 
 %changelog
 * Mon Jan 27 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 01 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.2.3-1mdv2011.0
 + Revision: 770399
 + rebuild (emptylog)

@@ -35,7 +35,7 @@ make
 
 %changelog
 * Thu Feb 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 10 2013 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.0.5-alt3.svn20120708
 - Rebuilt with Boost 1.53.0
 * Thu Nov 29 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.0.5-alt2.svn20120708

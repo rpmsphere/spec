@@ -98,7 +98,7 @@ killall -HUP gconfd-2;
 
 %changelog
 * Fri Jun 17 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 18 2010 Automatic Build System <autodist@mambasoft.it> 0.3.0-1mamba
 - automatic update by autodist
 * Sat Nov 29 2008 gil <puntogil@libero.it> 0.2.0-1mamba

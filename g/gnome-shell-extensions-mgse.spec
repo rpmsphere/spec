@@ -216,7 +216,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jan 08 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20111218
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Nov 24 2011 Mohamed El Morabity <melmorabity@fedoraproject.org> - 0-0.1.20111118git7770cbd
 - Initial RPM release

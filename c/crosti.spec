@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		crosti
 Summary:	Tool to create cross stitch scheme from custom image
@@ -54,7 +54,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Sep 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 8 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 1.7.0-1
 - update to 1.7.0
 - mime type text/x-cst

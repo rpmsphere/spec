@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define pkg_name pyNeighborhood
 
 Name: pyneighborhood
@@ -49,4 +49,4 @@ sed -i 's|/usr/bin/python |/usr/bin/python2 |' %{buildroot}%{_bindir}/*
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

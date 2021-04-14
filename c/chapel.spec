@@ -57,7 +57,7 @@ sed -i 's|/usr/bin/env python|/usr/bin/python3|' `find %{buildroot}/usr/libexec/
 
 %changelog
 * Thu Oct 22 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.23.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 25 2013 jlinford@paratools.com
 - Add module file.
 * Wed Sep 25 2013 jlinford@paratools.com

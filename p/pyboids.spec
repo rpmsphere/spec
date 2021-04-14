@@ -37,4 +37,4 @@ EOF
 
 %changelog
 * Sun Apr 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

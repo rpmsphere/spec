@@ -49,4 +49,4 @@ EOF
 
 %changelog
 * Mon Mar 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:      rlplot
 Version:   1.5
 Release:   1
@@ -42,7 +42,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Wed Dec 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 2 2008 Reinhard Lackner
 - release 1.5
 * Fri Sep 14 2007 Reinhard Lackner

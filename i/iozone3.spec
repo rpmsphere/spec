@@ -35,7 +35,7 @@ install -m 644 docs/iozone.1 %{buildroot}%{_mandir}/man1
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 420
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 19 2013 umeabot <umeabot> 420-2.mga4
 + Revision: 530327
 - Mageia 4 Mass Rebuild

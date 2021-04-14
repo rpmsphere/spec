@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: evhz
 Version: 2014
@@ -31,7 +31,7 @@ install %name -D %buildroot%_sbindir/%name
 
 %changelog
 * Mon Mar 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2014
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 22 2012 Vitaly Lipatov <lav@altlinux.ru> 2012-alt1
 - full rewrite original code and set appropriate license
 * Fri Apr 06 2012 Vitaly Lipatov <lav@altlinux.ru> 2006-alt1

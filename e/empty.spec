@@ -55,7 +55,7 @@ Empty - это утилита, которая служит для организ
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.11b
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 18 2007 Ilya Evseev <evseev@altlinux.ru> 0.6.11b-alt1
 - update to new version 0.6.11
 * Wed Mar 22 2006 Ilya Evseev <evseev@altlinux.ru> 0.6.9b-alt1

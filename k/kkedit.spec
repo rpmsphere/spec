@@ -43,4 +43,4 @@ make %{?_smp_mflags} CXXFLAGS="-O2 -g -Wall -fPIC"
 
 %changelog
 * Wed Nov 29 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

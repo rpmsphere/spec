@@ -40,6 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jan 08 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 14 2011 Chris Smart <chris@kororaa.org> 2.1-1
 - Initial port from oxygen-gtk.spec.

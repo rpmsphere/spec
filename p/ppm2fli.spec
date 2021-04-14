@@ -34,6 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Dec 23 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 11 2014 Mathias Doreille - 2.1
 - Initial package

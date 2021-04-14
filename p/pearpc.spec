@@ -89,7 +89,7 @@ desktop-file-install --vendor "" \
 
 %changelog
 * Mon Feb 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 22 2004 Matthias Saou <http://freshrpms.net/> 0.3.1-1
 - Update to 0.3.1.
 * Wed Aug 25 2004 Dag Wieers <dag@wieers.com> - 0.3.0-1

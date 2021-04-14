@@ -82,7 +82,7 @@ cd ..
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9jo
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 08 2005 Joachim von Thadden <thadden@web.de>
 - version 0.9 III
 * Sat Nov 19 2005 Joachim von Thadden <thadden@web.de>

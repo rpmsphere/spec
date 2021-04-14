@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           xmemory
 URL:            ftp://ftp.x.org/contrib/games/multiplayer/
 BuildRequires:  gcc-c++ 
@@ -81,7 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun  5 2011 - chris.lin@ossii.com.tw
 - Fix types
 * Wed Oct 22 2008 - john@ossii.com.tw

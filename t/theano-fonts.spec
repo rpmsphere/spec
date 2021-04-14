@@ -133,7 +133,7 @@ install -m 0644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/%{_fontdir}
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 10 2011 lazy.kent@opensuse.org
 - Only otf package provides locale (we don't need both).
 - Clean up spec.

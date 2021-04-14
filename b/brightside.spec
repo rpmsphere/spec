@@ -82,7 +82,7 @@ gconftool-2 --makefile-uninstall-rule \
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 01 2012 josef radinger <cheese@nosuchhost.net> - 1.4.0-13
 - add patch4 taken from https://github.com/rswarbrick/brightside/commit/2ce4295c0dadf7e562dfa6266315bae7ed18b9f8.diff
 * Sat Sep 03 2011 josef radinger <cheese@nosuchhost.net> - 1.4.0-12
@@ -92,7 +92,7 @@ gconftool-2 --makefile-uninstall-rule \
 - Update URL
 - Use desktop-file-install
 * Mon Feb 13 2006 Thorsten Leemhuis <fedora[AT]leemhuis.info> - 1.4.0-10
-- Rebuild for Fedora Extras 5
+- Rebuilt for Fedora Extras 5
 * Wed Aug 17 2005 Thorsten Leemhuis <fedora[AT]leemhuis[dot]info> - 1.4.0-9
 - rebuild
 * Thu Jul 21 2005 Thorsten Leemhuis <fedora[AT]leemhuis[dot]info> - 1.4.0-8

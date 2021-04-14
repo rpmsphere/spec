@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-Polygon
 Version:        2.0.8
 Release:        6.1
@@ -47,6 +47,6 @@ python2 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Tue Feb 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 20 2014 Andrey Cherepanov <cas@altlinux.org> 2.0.6-alt1
 - Initial build in Sisyphus

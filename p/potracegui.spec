@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:        GUI interface for potrace
 Name:           potracegui
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu May 19 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 20 2007 Thierry Vignaud <tvignaud@mandriva.com> 1.3.4-5mdv2008.1
 + Revision: 135450
 - auto-convert XDG menu entry

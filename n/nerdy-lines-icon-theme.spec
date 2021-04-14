@@ -34,4 +34,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 17 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

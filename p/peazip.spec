@@ -1,6 +1,6 @@
 # qt4pas is deprecated maybe we will have qt5pas one day
 %bcond_with qt
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    peazip
 #Version: 6.9.2
@@ -116,7 +116,7 @@ install -Dm644 FreeDesktop_integration/%{name}.png %{buildroot}%{_datadir}/pixma
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 20 2018 Sérgio Basto <sergio@serjux.com> - 6.5.1-1
 - Updated to 6.5.1
 * Thu Nov 12 2015 Sérgio Basto <sergio@serjux.com> - 5.8.1-1

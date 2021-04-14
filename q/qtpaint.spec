@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _name QtPaint
 
 Name: qtpaint
@@ -49,4 +49,4 @@ EOF
 
 %changelog
 * Fri Sep 08 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20170726
-- Rebuild for Fedora
+- Rebuilt for Fedora

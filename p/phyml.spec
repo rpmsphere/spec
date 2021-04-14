@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A simple, fast, and accurate algorithm to estimate large phylogenies by maximum likelihood
 Name: phyml
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jun 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20120412
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 21 2005 Cymon Cox <cymon@duke.edu>
 - Rebuild for version 2.4.4
 * Tue Dec 14 2004 Cymon Cox <cymon@duke.edu>

@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 15 2009 Fabian Affolter <fabian@bernewireless.net> - 0.12.0-1
 - Updated to new upstream version 0.12.0
 * Sun Apr 19 2009 Fabian Affolter <fabian@bernewireless.net> - 0.11.0-1

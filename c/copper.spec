@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: copper
 Summary: Another experimental programming language
@@ -37,4 +37,4 @@ make COPPER=boot/copper-elf64 BACKEND=c
 
 %changelog
 * Tue Aug 25 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

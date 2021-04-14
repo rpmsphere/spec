@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: refind
 Version: 0.12.0
@@ -153,7 +153,7 @@ fi
 
 %changelog
 * Mon Aug 10 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 6 2014 R Smith <rodsmith@rodsbooks.com> - 0.8.3
 - Updated spec file for 0.8.3
 * Sun Jun 8 2014 R Smith <rodsmith@rodsbooks.com> - 0.8.2

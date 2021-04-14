@@ -157,7 +157,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue May 17 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.20
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 21 2011 Nandakumar Raghavan <nandkumar.raghavan@gmail.com>
 - Spec file to build and generate powernap rpms for RedHat based distros (Revision 3)
 * Fri Mar 4 2011 Nandakumar Raghavan <nandkumar.raghavan@gmail.com>

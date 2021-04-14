@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          untex
 Version:       1.3
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 12 2007 Aleph0 <aleph0@openmamba.org> 1.3-2mamba
 - fixed manpage name
 * Wed Dec 28 2005 Alessandro Ramazzina <alessandro.ramazzina@qilinux.it> 1.3-1qilnx

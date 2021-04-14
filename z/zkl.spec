@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A general purpose object oriented programming language
 Name: zkl
@@ -36,4 +36,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 21 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14.7
-- Rebuild for Fedora
+- Rebuilt for Fedora

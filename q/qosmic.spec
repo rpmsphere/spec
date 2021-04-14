@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Graphical interface for creating flam3 fractal images
 Name:		qosmic
@@ -42,7 +42,7 @@ make
 
 %changelog
 * Sun Oct 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 1.4.8-2mdv2011.0
 + Revision: 614676
 - the mass rebuild of 2010.1 packages

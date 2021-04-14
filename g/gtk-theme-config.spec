@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		gtk-theme-config
 Version:	1.0
@@ -46,6 +46,6 @@ fi
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 02 2012 Satyajit Sahoo <satyajit.happy@gmail.com> 0.3
 - rpm package built

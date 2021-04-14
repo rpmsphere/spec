@@ -113,7 +113,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.20
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 24 2007 Led <led@altlinux.ru> 2.0.18-alt5
 - updated %%{_sysconfdir}/X11/%%name/startup
 - cleaned up spec

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    notably
 Version: 0.3.4
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 1 2010 Bernd Stramm <bernd.stramm@gmail.com> - 0.3.4-2 
 - packaging update
 * Fri Mar 26 2010 Bernd Stramm <bernd.stramm@gmail.com>

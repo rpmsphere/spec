@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: lfhex
 Summary: Large file hex editor
@@ -35,4 +35,4 @@ cd src
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.42
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define        majver %(echo %version | cut -d. -f1-2)
 %define        minver %(echo %version | cut -d. -f3)
 
@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 22 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.50.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 27 2009 Automatic Build System <autodist@mambasoft.it> 0.42.5-1mamba
 - update to 0.42.5
 * Mon Jul 27 2009 Automatic Build System <autodist@mambasoft.it> 0.42-1mamba

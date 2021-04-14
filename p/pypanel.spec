@@ -36,6 +36,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 29 2008 Dmitry Stropaloff <helions8@gmail.com>
 - initial Fedora release

@@ -34,7 +34,7 @@ make %{?_smp_mflags} V=1
 
 %changelog
 * Wed Jul 25 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 23 2016 sor.alexei@meowr.ru
 - Divide paper-gtk-theme to metatheme-paper-common, and
   gtk{2,3}-metatheme-paper.

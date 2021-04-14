@@ -38,7 +38,7 @@ export LDFLAGS=-Wl,--allow-multiple-definition
 
 %changelog
 * Thu Feb 16 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Sep 29 2012 Denis Fateyev <denis@fateyev.com> - 2.6.0-1
 - Updated to release 2.6.0
 * Thu Feb 23 2012 Gerd v. Egidy <gerd@egidy.de> - 2.5.0-1

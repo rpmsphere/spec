@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           xmlbird
 Version:        1.2.9
@@ -48,7 +48,7 @@ Development files for the XML parser.
 
 %changelog
 * Tue Jan 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 28 2015 <johan.mattsson.m@gmail.com>
 - New upstream release
 * Wed Jun 3 2015 <johan.mattsson.m@gmail.com>

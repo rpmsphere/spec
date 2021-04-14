@@ -37,7 +37,7 @@ cp -ar themes languages $RPM_BUILD_ROOT%{_datadir}/asclock
 
 %changelog
 * Thu Sep 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Sep 17 2011 jengelh@medozas.de
 - Remove redundant tags/sections from specfile

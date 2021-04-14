@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 23 2007 Olivier Blin <oblin@mandriva.com> 1.1.9-1mdv2008.0
 + Revision: 17242
 - buildrequire dev86

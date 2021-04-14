@@ -38,7 +38,7 @@ python2 ./setup.py install --prefix=%{_prefix} --root=%{buildroot}
 
 %changelog
 * Sun Jun 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 27 2010 pascal.bleser@opensuse.org
 - update to 1.1.1
 * Wed Oct  3 2007 jfunk@funktronics.ca

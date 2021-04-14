@@ -57,6 +57,6 @@ rm -f $RPM_BUILD_ROOT/%{_libdir}/lib%{name}.*a
 
 %changelog
 * Wed Sep 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 13 2012 TI_Eugene <ti.eugene@gmail.com> - 1.1.4
 - Initial build in OBS

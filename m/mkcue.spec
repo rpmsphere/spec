@@ -29,7 +29,7 @@ install -Dm 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov  8 2011 lazy.kent@opensuse.org
 - Corrected License tag.
 - Use full URL as a source.

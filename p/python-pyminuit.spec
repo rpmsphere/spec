@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name: python-pyminuit
 Summary: Minuit interface for minimizing Python functions
 Version: 1.2.1
@@ -35,4 +36,4 @@ python setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

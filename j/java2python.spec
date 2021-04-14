@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: java2python
 Summary: Translate Java source code into Python
 Version: 0.5.1git
@@ -38,5 +38,5 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/j2py
 
 %changelog
 * Sun Mar 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 

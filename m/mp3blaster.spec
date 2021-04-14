@@ -47,7 +47,7 @@ make --silent --no-print-directory
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 3.2.5-alt1.qa1
 - NMU: rebuilt for debuginfo.
 * Sun Apr 12 2009 Slava Semushin <php-coder@altlinux.ru> 3.2.5-alt1

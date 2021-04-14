@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		ptbatterysystemtray
 Version: 0.9.9
@@ -36,7 +36,7 @@ make
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 21 2012 TI_Eugene <ti.eugene@gmail.com> 0.9.9
 - Next version (1.0.0.rc2)
 - Switched to original git

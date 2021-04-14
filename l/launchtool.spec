@@ -34,7 +34,7 @@ install -pD -m644 launchtool.1 %buildroot%_man1dir/launchtool.1
 
 %changelog
 * Wed Feb 18 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 0.7-alt1.qa1
 - NMU: rebuilt for debuginfo.
 * Mon Jan 05 2009 Victor Forsyuk <force@altlinux.org> 0.7-alt1

@@ -202,7 +202,7 @@ set -x
 
 %changelog
 * Mon Mar 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.43
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Feb 13 2021 neoclust <neoclust> 4.43-43.mga8
 + Revision: 1675263

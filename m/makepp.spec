@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue May 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 07 2009 OpenPKG Foundation e.V.
 - Initial package

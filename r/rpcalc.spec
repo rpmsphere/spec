@@ -38,6 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon May 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 12 2009 Paulo Roma <roma@lcg.ufrj.br> 0.6.0-1
 - Initial build

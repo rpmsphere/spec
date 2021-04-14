@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-avc
 Version:        0.11.0
 Release:        5.1
@@ -43,4 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

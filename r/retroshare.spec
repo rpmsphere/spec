@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           retroshare
 Version:        0.6.4
@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jan 16 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb  8 2012 asamk@gmx.de
 - Updated to version 0.5.3a
 * Thu Aug 18 2011 asamk@gmx.de

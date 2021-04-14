@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          libaal
 Version:       1.0.5
@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 20 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.5-1mamba
 - package created by autospec

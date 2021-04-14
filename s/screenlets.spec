@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 10 2008 - some-guy <muhammedu@gmail.com>
 - Work with older distros
 * Sat Nov 08 2008 - some-guy <muhammedu@gmail.com>

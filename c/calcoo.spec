@@ -48,7 +48,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Tue May 17 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.18
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Sep 16 2003 Alexei Kaminski <kaminski@tpi.umn.edu>
   - New upstream release

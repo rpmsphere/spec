@@ -1,4 +1,4 @@
-#%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       xwinwrap 
 Version:    0.9
@@ -39,6 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Dec 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 5 2010 - Malcolm Lewis <coyoteuser@gmail.com> - 090215
 - Initial build of shantz-xwinwrap version

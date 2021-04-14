@@ -77,6 +77,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.16
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul  3 2008 ecanuto@novell.com
 - initial package based on 2.16

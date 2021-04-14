@@ -36,4 +36,4 @@ output to facilitate its use inside graphical applications.
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora

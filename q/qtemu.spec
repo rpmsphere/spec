@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          qtemu
 Version:       1.0.5
@@ -67,7 +67,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Wed Jun 15 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 03 2010 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.5-2mamba
 - fixed desktop entry icon and category
 * Tue Jan 27 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.5-1mamba

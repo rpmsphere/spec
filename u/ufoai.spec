@@ -140,7 +140,7 @@ fi
 
 %changelog
 * Wed Jul 31 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 21 2008 Feather Mountain <john@ossii.com.tw> 2.2.1-1.ossii
 - Rebuild for M6(OSSII)
 * Mon Jun 09 2008 Karel Volny <kvolny@redhat.com> 2.2.1-1

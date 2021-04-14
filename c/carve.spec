@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: carve
 Summary: A Qt-based cross-platform SVG Editor
@@ -46,4 +46,4 @@ EOF
 
 %changelog
 * Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.05
-- Rebuild for Fedora
+- Rebuilt for Fedora

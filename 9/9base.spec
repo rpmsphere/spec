@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Plan 9 userland tools to Unix
 Name: 9base
@@ -44,7 +44,7 @@ rm -rf ${buildroot}
 
 %changelog
 * Sat Nov 24 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 31 2007 Antoine Ginies <aginies@mandriva.com> 20051114-4mdv2008.0
 + Revision: 33084
 - adjust buildrequires

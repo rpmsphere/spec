@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		ultracopier
 Version:	2.2.4.7
@@ -41,6 +41,6 @@ sed -i -e 's/^Icon=%{name}.png$/Icon=%{name}/g' %{buildroot}%{_datadir}/applicat
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.4.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.2.0.16-5
 - (7263b13) MassBuild#1257: Increase release tag

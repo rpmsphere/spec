@@ -1,5 +1,5 @@
 %undefine _missing_build_ids_terminate_build
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global import_path github.com/cli/cli
 
 Name:     github-cli
@@ -45,7 +45,7 @@ cp -r share/man -T %buildroot/%_mandir
 
 %changelog
 * Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 28 2020 Mikhail Gordeev <obirvalger@altlinux.org> 1.2.0-alt1
 - update to 1.2.0
 * Fri Sep 18 2020 Mikhail Gordeev <obirvalger@altlinux.org> 1.0.0-alt1

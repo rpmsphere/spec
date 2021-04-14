@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           solarus
 URL:            http://www.solarus-engine.org/
@@ -30,6 +30,6 @@ make DESTDIR=%{buildroot} install
 
 %changelog
 * Fri Jan 03 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 28 2011 giacomosrv@gmail.com
 - packaged solarus version 0.9.0

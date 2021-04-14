@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: whatsapp-purple
 Summary: WhatsApp protocol implementation for libpurple (Pidgin)
@@ -31,4 +31,4 @@ make %{?_smp_mflags}
 
 %changelog
 * Mon Jan 19 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

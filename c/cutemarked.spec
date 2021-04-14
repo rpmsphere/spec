@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:                   cutemarked
 Summary:                Qt-based Markdown editor
@@ -57,7 +57,7 @@ make INSTALL_ROOT="%buildroot" install
 
 %changelog
 * Tue Mar 29 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 07 2014 Christian Loose <christian.loose@hamburg.de> 0.9.2-1
 - New patch version 0.9.2 released
 * Fri Jan 31 2014 Christian Loose <christian.loose@hamburg.de> 0.9.1-1

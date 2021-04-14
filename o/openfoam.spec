@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		openfoam
 Version:	2.2.2
 Release:	16.1
@@ -111,7 +111,7 @@ chmod +x %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Wed Jan 22 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 28 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.1.0-2mdv2012.0
 + Revision: 769490
 - Add conditional to build paraview.

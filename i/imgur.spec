@@ -29,7 +29,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jul 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 08 2012 qmp <glang@lavabit.com> - 2-2
 - Rebuild for f17
 * Sun Dec 26 2010 build@rnd - 2-1

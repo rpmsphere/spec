@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           gottet
 Version:        1.1.9
@@ -42,7 +42,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 05 2011 graeme@gottcode.org 1.0.4-4
 - Update GNOME icon cache
 * Fri Nov 11 2011 graeme@gottcode.org 1.0.4-3

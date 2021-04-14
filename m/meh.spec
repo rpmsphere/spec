@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: meh
 Version: 0.3
@@ -47,7 +47,7 @@ make install PREFIX=%buildroot/usr
 
 %changelog
 * Mon Feb 06 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 05 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.3-alt1.1
 - Rebuilt with libpng15
 * Fri Apr 13 2012 Vitaly Lipatov <lav@altlinux.ru> 0.3-alt1

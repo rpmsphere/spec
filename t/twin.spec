@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	A text mode Windows Manager
 Name:		twin
@@ -63,7 +63,7 @@ make
 %exclude %{_libdir}/*.la
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 21 2013 wally <wally> 0.6.2-5.mga4
 + Revision: 468862
 - drop major from devel pkg name

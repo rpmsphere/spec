@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Aug 30 2011 pgajdos@suse.com
 - build with --no-copy-dt-needed-entries

@@ -163,7 +163,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.28
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.28-12
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
 * Wed Feb 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.28-11

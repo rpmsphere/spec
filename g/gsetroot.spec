@@ -34,7 +34,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 25 2011 Jani Välimaa <wally@mandriva.org> 1.1-1mdv2011.0
 + Revision: 659049
 - new version 1.1

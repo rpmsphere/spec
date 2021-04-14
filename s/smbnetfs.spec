@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 08 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 9 2008 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 $Log: smbnetfs.spec,v $

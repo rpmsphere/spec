@@ -46,7 +46,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Jun 16 2009 Pascal Bleser <pascal.bleser@opensuse.org> 1.9
 - fix rpmlint on Factory

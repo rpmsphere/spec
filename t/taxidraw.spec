@@ -51,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 20 2012 thorstenb@flightgear.org
 - Created

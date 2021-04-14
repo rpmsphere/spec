@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __os_install_post %{nil}
 
 Name: qb64
@@ -61,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

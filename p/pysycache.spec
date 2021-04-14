@@ -83,7 +83,7 @@ rm -rf %buildroot
 
 %changelog
 * Sun Mar 24 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1b
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 27 2011 lars@linux-schulserver.de
 - use games user and games group for pysycache from now on
 - use verify scripts during install and for rpm verify

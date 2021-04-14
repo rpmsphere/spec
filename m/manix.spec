@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: manix
 Version: 0.6
@@ -41,4 +41,4 @@ install -m644 %{name}-keys/README %{buildroot}%{_datadir}/%{name}/%{name}-keys.R
 
 %changelog
 * Thu Feb 06 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

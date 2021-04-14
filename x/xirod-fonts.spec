@@ -31,6 +31,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jul 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 3.001
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 01 2009 - Mathias Homann <admin@eregion.de>
 - import into build tree

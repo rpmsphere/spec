@@ -64,6 +64,6 @@ done
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 3 2011 Wesley Dawson - 2.0.3
 - Initial build.

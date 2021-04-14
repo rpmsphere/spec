@@ -71,7 +71,7 @@ make INSTALL_ROOT=$RPM_BUILD_ROOT install
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.30.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 26 2012 lazy.kent@opensuse.org
 - Patch to fix compilation with GCC 4.7.
 - Use pkgconfig(*) as build dependencies.

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: smw
 Summary: Super Mario War
@@ -37,4 +37,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -26,7 +26,7 @@ install -Dm 0755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 24 2013 filipesaraiva <filipesaraiva> 1.11-1.mga4
 + Revision: 552720
 - imported package weatherspect

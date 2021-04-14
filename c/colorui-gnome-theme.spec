@@ -40,4 +40,4 @@ cp -a %{theme_name} %{buildroot}%{_datadir}/themes
 
 %changelog
 * Wed Aug 01 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.1rc2.19
-- Rebuild for Fedora
+- Rebuilt for Fedora

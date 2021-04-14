@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Network Mahjong
 Summary(ja_JP.utf8): ネットワーク対戦麻雀
@@ -58,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jan 14 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct  8 2003 Noriyuki Suzuki <noriyuki@turbolinux.co.jp>
 - Initial build for Turbolinux

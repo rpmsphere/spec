@@ -128,7 +128,7 @@ make install DESTDIR=$RPM_BUILD_ROOT prefix=%{_prefix}
 
 %changelog
 * Tue May 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue May 01 2012 Davide Madrisan <davide.madrisan@gmail.com> 1.10.0-1mamba
 - update to 1.10.0

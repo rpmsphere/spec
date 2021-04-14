@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           webmonx
 Version:        0.3.3
@@ -51,7 +51,7 @@ make INSTALL_ROOT=%{buildroot} install
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 27 2012 lazy.kent@opensuse.org
 - Patch to fix compilation with GCC 4.7.
 - Use pkgconfig(*) as build dependencies.

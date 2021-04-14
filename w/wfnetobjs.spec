@@ -57,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep  1 2009 crrodriguez@suse.de
 - build with -fno-strict-aliasing

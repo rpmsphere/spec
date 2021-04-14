@@ -69,7 +69,7 @@ python3 setup.py install --root=%{buildroot}
 - Fix fail to detect OS
 - Fix Gtk-WARNING 'Can't set a parent on widget which has a parent'
 * Wed Feb 22 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 12 2016 daviddavid <daviddavid> 1.4.5-4.mga6
 + Revision: 1051617
 - add patch from debian to fix a configparser api changes (fixes mga#19334)

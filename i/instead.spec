@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		instead
 Version:	1.9.0
@@ -46,4 +46,4 @@ make PREFIX=/usr
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

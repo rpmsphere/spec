@@ -33,4 +33,4 @@ sed -i 's/[^ ]*-arm.\$(OBJEXT)//' Makefile.in
 
 %changelog
 * Wed Dec 11 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

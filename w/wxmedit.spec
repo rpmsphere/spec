@@ -42,4 +42,4 @@ sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/ap
 
 %changelog
 * Thu Jan 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1git
-- Rebuild for Fedora
+- Rebuilt for Fedora

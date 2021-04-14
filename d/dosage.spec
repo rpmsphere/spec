@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:    dosage
 Version: 2.15
 Release: 6.1
@@ -38,7 +38,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 10 2014 Nikolay A. Fetisov <naf@altlinux.ru> 2.15-alt1
 - New version 2.15
 * Wed Feb 26 2014 Nikolay A. Fetisov <naf@altlinux.ru> 2.12-alt1

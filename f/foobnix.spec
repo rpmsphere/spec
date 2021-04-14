@@ -64,7 +64,7 @@ fi
 
 %changelog
 * Fri Nov 29 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.2git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 31 2016 Maxim Orlov <murmansksity@gmail.com> - 3.1.2-4.20160531git6fed0a2.R
 - Update to latest git snapshot
 * Mon Apr 25 2016 Maxim Orlov <murmansksity@gmail.com> - 3.1.2-3.20160425git873d7bd.R

@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri May 08 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.30
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 3 2003 Yusuke Shinyama <yusuke@cs.nyu.edu>
 - Initial RPM release.

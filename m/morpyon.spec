@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name:          morpyon
 Version:       2.0.1
 Release:       1
@@ -50,7 +51,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 17 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 2.0.1-5mamba
 - specfile updated and rebuilt with python 2.6
 * Fri Dec 23 2005 Davide Madrisan <davide.madrisan@qilinux.it> 2.0.1-4qilnx

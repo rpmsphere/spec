@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           lenmus
 Version:        5.4.2
@@ -62,7 +62,7 @@ install -m755 %{SOURCE3} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Nov 10 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 5.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 23 2012 joop.boonen@opensuse.org
 - Don't start rctimidity automaticaly as audio playback won't work anymore
 * Wed Dec 19 2012 joop.boonen@opensuse.org

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 # TODO: add make test to %%check section
 
 #global branch  oldabi-

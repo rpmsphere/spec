@@ -90,7 +90,7 @@ rm -rf %buildroot
 
 %changelog
 * Sun Sep 30 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.07
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 07 2011 Oden Eriksson <oeriksson@mandriva.com> 1.07-27mdv2011.0
 + Revision: 671354
 - mass rebuild

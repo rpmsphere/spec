@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: ds9
 Version: 7.2
@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 04 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 7.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 24 2012 <tom@mmto.org>
 - version 6.2-3
 - add prelink blacklist file so prelink will not screw with ds9

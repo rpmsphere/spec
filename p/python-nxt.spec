@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		python-nxt
 Version:	2.2.2
 Release:	4.1
@@ -40,4 +40,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Mar 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

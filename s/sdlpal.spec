@@ -56,4 +56,4 @@ install -Dm644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desk
 
 %changelog
 * Wed Jul 31 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 190728
-- Rebuild for Fedora
+- Rebuilt for Fedora

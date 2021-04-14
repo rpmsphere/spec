@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Visualization tool for compiler graphs
 Name: vcg
@@ -44,7 +44,7 @@ chmod 644 expl/cfg.vcg
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.30
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 29 2014 SymbianFlo <symbianflo@mandrivausers.ro> 1.30-10
 + Revision: e88f21f
 - Spec clean, fix BR, bump rel.try to fix empty debug ( and failed :D )

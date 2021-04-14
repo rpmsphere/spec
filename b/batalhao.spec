@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:			batalhao
 Version:		17
 Release:		1
@@ -79,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 17
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 26 2010 Huan-Ting Luo <kylix.lo@ossii.com.tw> 17-2
 - fix %%dist within .spec file
 * Wed Aug 18 2010 Huan-Ting Luo <kylix.lo@ossii.com.tw> 17-1

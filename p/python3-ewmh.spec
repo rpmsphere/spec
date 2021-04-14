@@ -32,7 +32,7 @@ and controlled.
 
 %changelog
 * Wed Mar 13 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.6git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 05 2018 Aleksei Nikiforov <darktemplar@altlinux.org> 0.1.6-alt2
 - Updated build dependencies.
 * Mon Jan 02 2017 Anton Midyukov <antohami@altlinux.org> 0.1.6-alt1

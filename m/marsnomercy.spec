@@ -1,5 +1,5 @@
 %global _name mars
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:        Mars, Land Of No Mercy
 Name:           marsnomercy
@@ -78,7 +78,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 20 2008 - john@ossii.com.tw
 - Rebuild for M6(OSSII)
 * Fri Dec 29 2006 - dominique-rpm@leuenberger.net

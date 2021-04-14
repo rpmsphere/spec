@@ -32,4 +32,4 @@ LXNM is a fast, lightweight, stand-alone network manager.
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

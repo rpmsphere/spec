@@ -96,7 +96,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Mon Feb 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.17
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 30 2008 Matthias Saou <http://freshrpms.net/> 0.5.12-1
 - Update to 0.5.12.
 * Tue Sep 23 2008 Matthias Saou <http://freshrpms.net/> 0.5.11-1

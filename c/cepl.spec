@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	C Read-Eval-Print Loop
 Name:		cepl
@@ -38,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Feb 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 5.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

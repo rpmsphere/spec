@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           qnetwalk
 BuildRequires:  gcc-c++ qt4-devel
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 27 2008 john@ossii.com.tw
 - Rebuild for M6(OSSII)
 * Fri May 16 2008 prusnak@suse.cz

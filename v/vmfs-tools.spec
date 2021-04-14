@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:               vmfs-tools
 Version:            0.2.5

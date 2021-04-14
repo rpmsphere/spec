@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: python2-libavg
 Summary: High-level development platform for media-centric applications

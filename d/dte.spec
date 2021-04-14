@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A small and easy to use console text editor
 Name: dte
@@ -42,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 01 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

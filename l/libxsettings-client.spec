@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:        X Settings Libraries for GPE
 Name:           libxsettings-client
@@ -60,6 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Apr 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 24 2008 d.marlin <dmarlin@redhat.com> - 0.17-1
 - First cut at packaging RPM.

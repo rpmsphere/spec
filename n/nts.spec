@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: nts
 Summary: Note taking simplified
 Version: 74
@@ -59,4 +59,4 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Wed Mar 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 74
-- Rebuild for Fedora
+- Rebuilt for Fedora

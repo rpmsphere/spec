@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.41
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Jun 17 2007 Tiziana Ferro <tiziana.ferro@email.it> 0.41-1mamba
 - update to 0.41

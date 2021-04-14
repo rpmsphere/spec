@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _name anic
 
 Summary: Faster than C, Safer than Java, Simpler than *sh
@@ -39,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 24 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.74
-- Rebuild for Fedora
+- Rebuilt for Fedora

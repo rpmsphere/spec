@@ -67,6 +67,6 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 11 2008 Wind Win <yc.yan@ossii.com.tw> 1.8.1-2
 - Initial RPM build.

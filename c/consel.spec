@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: For assessing the confidence of phylogenetic tree selection
 Name: consel
@@ -96,7 +96,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 22 2005 Cymon J. Cox <cymon@duke.edu>
 - Rebuild for release h
 * Mon Apr 5 2004 Cymon J. Cox <cymon@duke.edu>

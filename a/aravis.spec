@@ -117,7 +117,7 @@ rm -fr %{buildroot}%{_prefix}/doc
 
 %changelog
 * Mon Jan 06 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 11 2015 abfonly <abfonly@gmail.com> 0.3.5-1
 + Revision: 13deda8
 - Log: Update to 0.3.5

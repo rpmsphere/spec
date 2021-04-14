@@ -48,4 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 04 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora

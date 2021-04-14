@@ -42,4 +42,4 @@ mv %{buildroot}%{_datadir}/icons %{buildroot}%{_datadir}/pixmaps
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 6.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

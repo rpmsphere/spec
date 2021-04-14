@@ -1,4 +1,5 @@
-%global debug_package %{nil}
+%define __python /usr/bin/python2
+%undefine _debugsource_packages
 Name:           python-mplsizer
 Version:        1.0.dev8477
 Release:        5.1
@@ -35,7 +36,7 @@ python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
 %changelog
 * Mon Dec 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 19 2011 ocefpaf@yahoo.com.br
 - specfile cleanup
 * Tue Jun 29 2010 Filipe Fernandes <ocefpaf@gmail.com> - 1.0

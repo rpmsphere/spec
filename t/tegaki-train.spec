@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: 	Character editor and training manager
 Name: 		tegaki-train
 Version: 	0.3.1
@@ -52,7 +52,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 03 2010 Funda Wang <fwang@mandriva.org> 0.3.1-1mdv2011.0
 + Revision: 592784
 - import tegaki-train

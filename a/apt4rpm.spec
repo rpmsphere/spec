@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.69.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 28 2003 Richard Bos <rbos@users.sourceforge.net>
 - Updated the group for suse
 - check RPM_BUILD_ROOT for "/" during clean up

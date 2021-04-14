@@ -66,7 +66,7 @@ cp icons/grany-icon-48x48.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 03 2008 Thierry Vignaud <tvignaud@mandriva.com> 2.0.0-2mdv2008.1
 + Revision: 142109
 - auto-convert XDG menu entry

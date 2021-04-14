@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		sabacc
 Version:	1.0beta1
 Release:	1
@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0beta1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 1 2009 Harry Chen <harry@server1.ossii.com.tw> - 1.0-beta1.ossii
 - Initial package for ossii

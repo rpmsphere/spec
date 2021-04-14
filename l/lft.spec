@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: lft
 Summary: Layer Four Traceroute
@@ -41,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.91
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 14 2009 admin@eregion.de
 - initial package

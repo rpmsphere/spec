@@ -30,7 +30,7 @@ install -m 0644 *.pmz $RPM_BUILD_ROOT%{_datadir}/pmetro-maps
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun  2 2012 lazy.kent@opensuse.org
 - Updated maps:
   * Kazan

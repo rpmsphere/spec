@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:               fireflies
 Version:            2.07
@@ -54,6 +54,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.07
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 24 2010 pascal.bleser@opensuse.org
 - initial package (2.07)

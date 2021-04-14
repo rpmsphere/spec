@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: BASIC compiler for POSIX systems
 Name: agora-basic
@@ -44,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

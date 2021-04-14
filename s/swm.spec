@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		swm
 Version:	1.3.4c
@@ -52,7 +52,7 @@ EOF
 
 %changelog
 * Mon Jan 20 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.4c
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 18 2013 umeabot <umeabot> 1.2.5-12.mga4
 + Revision: 521272
 - Mageia 4 Mass Rebuild

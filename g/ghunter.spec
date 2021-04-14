@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           ghunter
 BuildRequires:  libpng-devel
@@ -43,6 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 03 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 23 2008 swyear@yahoo.com.tw
 - packaged ghunter version 0.0.4 using the buildservice spec file wizard

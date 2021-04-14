@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jan 03 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 13 2011 Funda Wang <fwang@mandriva.org> 0.1-2mdv2011.0
 + Revision: 644364
 - fix typo of xml libs

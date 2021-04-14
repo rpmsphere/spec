@@ -43,7 +43,7 @@ install -pm644 ChangeLog %buildroot%_docdir
 
 %changelog
 * Thu Oct 18 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 21 2016 Andrey Bergman <vkni@altlinux.org> 2.8.3-alt1
 - Version update
 * Fri Nov 13 2015 Andrey Bergman <vkni@altlinux.org> 2.8.2-alt1

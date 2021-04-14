@@ -1,4 +1,4 @@
-%define debug_package	%{nil}
+%undefine _debugsource_packages
 
 Name:		java3d
 Version:	1.5.2
@@ -197,7 +197,7 @@ ln -s %{name}-%{version} %{buildroot}%{_javadocdir}/%{name}
 
 %changelog
 * Fri May 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 09 2018 pterjan <pterjan> 1.5.2-15.mga7
 + Revision: 1318860
 - Also do not require jogl on aarch64

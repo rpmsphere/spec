@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:               qomodoro
 Version:            0.0.99+0.1rc1
@@ -57,7 +57,7 @@ qmake-qt4 QT_CXXFLAGS="%{optflags}"
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.99+0.1rc1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 17 2010 pascal.bleser@opensuse.org
 - update to 1.0rc1:
   * introduceds basic configurable options and improved the look of the timer

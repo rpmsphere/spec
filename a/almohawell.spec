@@ -53,6 +53,6 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Fri Mar 31 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 9.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 17 2013 by Mosaab Hosni Alzoubi <moceap@hotmail.com>
 - packed by Almohazzem 0.3.1 (simple RPM packager)

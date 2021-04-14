@@ -40,7 +40,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %changelog
 * Thu Sep 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.20051202
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 10 2009 sndirsch@suse.de
 - define functions, which don't return anything, as void
   (bnc #483401)

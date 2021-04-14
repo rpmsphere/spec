@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name:           python-natgrid
 Version:        1.0.dev8853
 Release:        5.1
@@ -30,7 +31,7 @@ python setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
 %changelog
 * Mon Dec 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 29 2010 ocefpaf@yahoo.com.br
 - updated to svn revision 8853
 * Wed Oct  6 2010 ocefpaf@yahoo.com.br

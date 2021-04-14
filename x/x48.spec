@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Aug 06 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 03 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.6.4-1
 + Revision: 788981
 - version update 0.6.4

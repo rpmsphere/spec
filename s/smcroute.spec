@@ -32,7 +32,7 @@ should be maintained and/or no proper IGMP signaling exists.
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 0.94.1-alt2.qa1
 - NMU: rebuilt for debuginfo.
 * Mon Mar 01 2010 Afanasov Dmitry <ender@altlinux.org> 0.94.1-alt2

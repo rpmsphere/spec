@@ -63,7 +63,7 @@ install -m 644 %{SOURCE3} %{buildroot}%{_datadir}/applications
 
 %changelog
 * Wed Jan 11 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 14 2014 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.3.3-alt3
 - Built with clang
 * Wed Jan 29 2014 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.3.3-alt2

@@ -33,7 +33,7 @@ make %{?_smp_mflags}
 
 %changelog
 * Wed Nov 25 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.8-21
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 * Sat Feb 02 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.8-20

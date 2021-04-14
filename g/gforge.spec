@@ -407,7 +407,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}/var/www/gforge/cronjo
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5.19
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 4.5.11-1mdv2008.1
 + Revision: 140737
 - restore BuildRoot

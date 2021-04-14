@@ -82,4 +82,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Apr 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.71
-- Rebuild for Fedora
+- Rebuilt for Fedora

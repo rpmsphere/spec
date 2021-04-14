@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: fxdesktop
 Summary: Lightweight Desktop Environment
@@ -46,4 +46,4 @@ install -Dm755 src/%{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.12r14
-- Rebuild for Fedora
+- Rebuilt for Fedora

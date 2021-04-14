@@ -46,6 +46,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/moonpy/moo
 
 %changelog
 * Tue Mar 13 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.21
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 28 2012 David Hung <david@ossii.com.tw> 0.8.21
 - first

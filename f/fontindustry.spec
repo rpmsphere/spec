@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: fontindustry
 Summary: Let you convert scanned in glyph sheet into a bitmap font
 Version: 0.0.10
@@ -57,4 +57,4 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Sun Jun 16 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.10
-- Rebuild for Fedora
+- Rebuilt for Fedora

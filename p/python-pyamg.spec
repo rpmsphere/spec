@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 31 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 10 2011 scorot@gtt.fr - 2.0.0
 - fix python-Sphinx requirement
 * Fri Mar 18 2011 scorot@gtt.fr - 2.0.0

@@ -32,7 +32,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 31 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 30 2009 J. Randall Owens <jrowens@ghiapet.net> - 0.3.1-5
 - rebuild for FC11
 * Sun Sep 17 2006 Dawid Gajownik <gajownik[AT]gmail.com> - 0.3.1-4

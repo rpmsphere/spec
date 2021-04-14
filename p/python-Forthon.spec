@@ -60,6 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Sep 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.35
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 03 2014 Josko Plazonic <plazonic@princeton.edu>
 - initial build

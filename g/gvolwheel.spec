@@ -42,7 +42,7 @@ make
 
 %changelog
 * Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 28 2012 Andrey Bondrov <abondrov@mandriva.org> 1.0-1mdv2011.0
 + Revision: 800955
 - New version 1.0, update BuildRequires

@@ -123,7 +123,7 @@ fi
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.62
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 24 2012 werner@suse.de
 - Add missing font
 * Tue Jul 10 2012 werner@suse.de

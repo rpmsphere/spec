@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Mar 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 30 2010 Frank Schaefer <schaeferf.obs@googlemail.com>
 - Update to version 1.2
 * Fri Apr 02 2010 Frank Schaefer <schaeferf.obs@googlemail.com>

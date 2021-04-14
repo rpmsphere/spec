@@ -42,4 +42,4 @@ install -m0644 doc/curl-loader-config.5 %{buildroot}%{_mandir}/man5/
 
 %changelog
 * Wed Aug 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.56
-- Rebuild for Fedora
+- Rebuilt for Fedora

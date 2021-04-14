@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           qtperf
 Version:        0.2.1
@@ -36,4 +36,4 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

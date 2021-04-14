@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		shkd
 Version:	0.1
@@ -32,4 +32,4 @@ sed -i 's|-lm|-lm -Wl,--allow-multiple-definition|' Makefile
 
 %changelog
 * Thu Dec 21 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

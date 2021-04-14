@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: preco
 Summary: Exciton Model Preequilibrium Code with Direct Reactions
@@ -41,5 +41,5 @@ cp preco6.pdf preco6.dat preco6.out %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Sun Mar 17 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2006
-- Rebuild for Fedora
+- Rebuilt for Fedora
 

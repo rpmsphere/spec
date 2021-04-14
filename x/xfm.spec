@@ -34,6 +34,6 @@ make
 
 %changelog
 * Fri Jun 05 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.4
-- Rebuild for Fedora 
+- Rebuilt for Fedora 
 * Sun Oct 26 2003 Chip Cuccio <chipster@norlug.org> 1.4.3-1
 - initial build for rh-7.3

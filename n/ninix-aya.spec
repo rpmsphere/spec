@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Dec 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Dec  1 2003  Shyouzou Sugitani <shy@trifle.nips.ac.jp>
   - lib/ninix/dll/niseshiori.py: 「ポータル」, 「おすすめ」用URLの取得を修正.

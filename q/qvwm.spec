@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 30 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 30 2006 Olivier Thauvin <nanardon@zarb.org> 1.1.12-8plf
 - add plf reason
 - change prefix

@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 11.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar  1 2013 dimstar@opensuse.org
 - Spec-cleanup using format_spec_file service.
 * Tue Jan 18 2011 vuntz@opensuse.org

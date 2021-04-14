@@ -63,6 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Mar 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 11 2009 Feather Mountain <john@ossii.com.tw> 3.2-1
 - Build for OSSII

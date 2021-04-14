@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _name MToolsFM
 
 Summary: A graphical frontend to mtools
@@ -58,4 +58,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Jun 05 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.5
-- Rebuild for Fedora 
+- Rebuilt for Fedora 

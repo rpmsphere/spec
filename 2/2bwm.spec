@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           2bwm
 Version:        0.2git
@@ -38,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jun 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2git
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           namebench
 Version:        1.3.1
 Release:        17.1
@@ -41,6 +41,6 @@ rm -rf %buildroot
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 29 2010 doiggl@velocitynet.com.au
 - packaged namebench version 1.3.1 using the buildservice spec file wizard

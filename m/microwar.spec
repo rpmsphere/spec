@@ -109,7 +109,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 13 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0rc3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 26 2010 Huan-Ting Luo <kylix.lo@ossii.com.tw> 2.0rc3-3
 - add %dist
 - add %BuildArch

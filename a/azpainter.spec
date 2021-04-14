@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           azpainter
 Version:        2.1.7b2
@@ -55,4 +55,4 @@ make %{?_smp_mflags}
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.7b2
-- Rebuild for Fedora
+- Rebuilt for Fedora

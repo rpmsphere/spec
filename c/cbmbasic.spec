@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Commodore BASIC V2 as a scripting language
 Name: cbmbasic
@@ -34,4 +34,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Mar 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

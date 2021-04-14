@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name:           python2-ordereddict
 Version:        1.1
 Release:        1
@@ -38,6 +39,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan  9 2011 hpj@urpla.net
 - initial release: 1.1

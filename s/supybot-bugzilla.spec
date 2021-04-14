@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           supybot-bugzilla
 Summary:        Plugin for the supybot IRC bot that supports querying Bugzilla
 Version:        35
@@ -39,7 +39,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 35
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 11 2011 lars@linux-schulserver.de
 - update to Version 35:
   * The bugmail fields are called "Flags", not "Flag", now.

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           coolmail
 BuildRequires:  xorg-x11-utils libX11-devel libXt-devel libXext-devel
@@ -38,6 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 29 2008 kurt.ziegenbein@web.de
 - packaged coolmail version 1.3

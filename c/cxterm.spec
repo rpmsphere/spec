@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Chinese X-term
 Name: cxterm
@@ -102,6 +102,6 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jul 03 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May  5 2003 Hin-Tak Leung <htl10@users.sourceforge.net>
 - RPMS packaging since a long while

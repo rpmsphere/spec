@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           xmahjong
 BuildRequires:  freetype-devel
@@ -44,7 +44,7 @@ make install install.man DESTDIR=$RPM_BUILD_ROOT LIBDIR=%{_datadir} FONTDIR=%{_d
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2010.11.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul  5 2013 dap.darkness@gmail.com
 - Conflicts with xmahjongg package because xmahjong is really
   xmahjongg ver. 2.

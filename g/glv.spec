@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A small, cross-platform display library for OpenGL
 Name: glv
@@ -45,6 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 05 2008 Karl Robillard <wickedsmoke@users.sf.net>
 - Initial package release

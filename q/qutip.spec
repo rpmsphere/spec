@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name: qutip
 Summary: Quantum Toolbox in Python
 Version: 2.2.0
@@ -33,4 +34,4 @@ python setup.py install --root=%{buildroot}
 
 %changelog
 * Wed Dec 11 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: uxtank
 Version: 2.3
@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 23 2012 Neal <nealbrks0 at gmail dot com> 2.3-1pclos2012
 - process
 * Thu Feb 23 2012 ghostbunny <hmhaase at pclinuxosusers dot de> 2.3-1pclos2012

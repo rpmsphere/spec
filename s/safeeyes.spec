@@ -52,4 +52,4 @@ gtk-update-icon-cache /usr/share/icons/hicolor
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora

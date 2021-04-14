@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           lightscreen
 Version:        0.3
@@ -35,6 +35,6 @@ install -Dp %{name} $RPM_BUILD_ROOT/usr/bin/%{name}
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 2 2008 TI_Eugene <ti.eugene@gmail.com> 0.3-1.fc7
 - Initial release for Fedora 7

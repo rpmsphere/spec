@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          easyrpmbuilder
 Summary:       A rpm package builder helper
@@ -73,6 +73,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 07 2011 zawertun@gmail.com
 - Initial release, version 0.5.6

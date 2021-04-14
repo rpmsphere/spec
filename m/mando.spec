@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		mando
 Version:	1.8.2
@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Apr 11 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 11 2008 Oden Eriksson <oeriksson@mandriva.com> 1.6-1mdv2009.1
 + Revision: 313195
 - lowercase ImageMagick

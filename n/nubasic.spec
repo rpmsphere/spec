@@ -40,6 +40,6 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Thu Oct 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.51
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 11 2014 Fedora 20 Release <acaldmail@gmail.com> - 1.19
 - Rebuild RPM for Fedora distros

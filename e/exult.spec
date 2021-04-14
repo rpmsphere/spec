@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           exult
 Version:        1.6
@@ -103,7 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 20 2012 Chih-Jen Nung <cj.nung@ossii.com.tw>-1.4.9.0.rc1.svn7114
 - create newspec  
 * Tue Jul 22 2003  Willem Jan Palensitjn <wjpalenstijn@users.sourceforge.net>

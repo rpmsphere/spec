@@ -48,7 +48,7 @@ It's a port of the original NetBSD progress utility to Linux and Solaris.
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 22 2007 Pascal Bleser <guru@unixtech.be> 1.10
 - moved to openSUSE Build Service
 * Thu Nov 23 2006 Pascal Bleser <guru@unixtech.be> 1.10-2

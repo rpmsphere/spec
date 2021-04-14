@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 %define oname Natron
 %define openfx_snapshot e91b1f921ff49694be3062f5cf9e6e60e9f741f3
@@ -81,6 +81,6 @@ cp -r IO/Linux-*-release/IO.ofx.bundle %{buildroot}%{_libdir}/OFX/Plugins/
 
 %changelog
 * Tue May 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 06 2016 Denis Silakov <dsilakov@gmail.com> 1.0.0-3
 - (f5bd92c) Rebuild with new OpenImageIO

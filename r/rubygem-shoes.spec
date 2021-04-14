@@ -37,7 +37,7 @@ gem install --local --build-root $RPM_BUILD_ROOT --install-dir %{gem_dir} --forc
 
 %changelog
 * Fri Jan 16 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 28 2013 benny.gaechter@gmail.com
 -Added correct license
 * Wed Aug 28 2013 benny.gaechter@gmail.com

@@ -38,4 +38,4 @@ find . -type f -print0 | xargs -0 chmod 644
 
 %changelog
 * Tue Jul 17 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 4.221
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       sigram
 Summary:    Sigram Telegram Client
@@ -43,7 +43,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Jun 04 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 19 2014 Markus Dorfer
 - use of %doc variable
 - optimized build with sed

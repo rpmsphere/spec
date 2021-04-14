@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A simple scientific calculator for complex numbers
 Name: cgtkcalc
@@ -49,6 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Apr 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 % Sun Oct 19 2007 SAITOH Akira <s-akira@users.sourceforge.net>
 - Initial package

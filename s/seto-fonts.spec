@@ -37,4 +37,4 @@ install -m644 *.ttf %{buildroot}%{_datadir}/fonts/seto
 
 %changelog
 * Mon Oct 24 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 6.20
-- Rebuild for Fedora
+- Rebuilt for Fedora

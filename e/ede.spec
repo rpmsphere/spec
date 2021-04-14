@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: 		ede
 Version: 	2.0
@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon May 28 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 *  Mon Jan 31 2005 Vedran Ljubovic <vljubovic@smartnet.ba> 1.0.2-1ede
 - new build system in EDE
 - Better distro-independance

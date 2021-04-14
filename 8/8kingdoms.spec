@@ -83,7 +83,7 @@ EOF
 
 %changelog
 * Mon Jul 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 26 2007 Toni Graffy <toni@links2linux.de> - 1.1.0-0.pm.2
 - added 64bit patch from Hans de Goede <j.w.r.degoede@hhs.nl>
 * Fri Aug 10 2007 Toni Graffy <toni@links2linux.de> - 1.1.0-0.pm.1

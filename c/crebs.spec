@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri May 20 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.8.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 18 2010 Marc Stewart <marc.c.stewart@googlemail.com> 0.9.8.5-1
 - Initial packaging of Create Background Slideshow 0.9.8.5

@@ -64,7 +64,7 @@ install -D -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.01
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 24 2012 joop.boonen@opensuse.org
 - Created a gcc47 patch and a don't strip for debug patch
 - Cleaned spec file up

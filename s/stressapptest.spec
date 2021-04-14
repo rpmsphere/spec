@@ -39,7 +39,7 @@ make %{?_smp_mflags}
 
 %changelog
 * Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 30 2018 Tomáš Chvátal <tchvatal@suse.com>
 - Format with spec-cleaner
 - Use proper upstream tarball from github

@@ -32,7 +32,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat May 5 2008 George Pantazis <ggpanta@gmail.com>
 - initial build

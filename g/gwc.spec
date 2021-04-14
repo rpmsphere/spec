@@ -32,7 +32,7 @@ make CFLAGS+="`pkg-config --cflags gtk+-2.0` "
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.22.04
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 15 2012 Victor Forsiuk <force@altlinux.org> 0.21.17-alt1
 - %%ver_major.%%ver_minor
 * Sun Jun 19 2011 Victor Forsiuk <force@altlinux.org> 0.21.16-alt1

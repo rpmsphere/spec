@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 02 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 22 2010 Ludwig Nussel <lnussel@suse.de>
 - new version 1.1 includes previous patch
 * Mon Jun 21 2010 Ludwig Nussel <lnussel@suse.de>

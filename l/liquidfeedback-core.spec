@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _name liquid_feedback_core
 
 Name:		liquidfeedback-core
@@ -52,4 +52,4 @@ su - postgres -c "/opt/%{_name}/lf_update dbname=liquid_feedback"
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

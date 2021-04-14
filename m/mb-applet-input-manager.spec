@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: 	Input manager for the Matchbox Desktop
 Name: 		mb-applet-input-manager
 Version: 	0.6
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.6-6mdv2011.0
 + Revision: 620303
 - the mass rebuild of 2010.0 packages

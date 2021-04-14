@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 17 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 22 2009 Davide Madrisan <davide.madrisan@gmail.com> 0.13-6mamba
 - update specfile
 * Sat Jun 17 2006 Davide Madrisan <davide.madrisan@qilinux.it> 0.13-5qilnx

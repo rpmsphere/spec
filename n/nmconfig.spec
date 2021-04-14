@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           nmconfig
 URL:            http://cmpd2.phys.msu.ru/~arseniy/nmconfig/
@@ -34,4 +34,4 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

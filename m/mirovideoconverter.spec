@@ -1,4 +1,4 @@
-%define debug_package	%{nil}
+%undefine _debugsource_packages
 %define oname	mvc
 %define oversion 2015-05-08
 %define pversion 2015_05_08
@@ -47,6 +47,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Mon Jul 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.2-2.2015_05_08
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 15 2015 Denis Silakov <dsilakov@gmail.com> 3.0.2-2.2015_05_08
 - (e7a69d3) Updated to 2015-05-08 snapshot

@@ -154,7 +154,7 @@ EOF
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 04 2010 Cristobal Lopez <lopeztobal@gmail.com> 1.0-1mib2010.1
 - First time ported to Mandriva by MIB.
 - I have solved a lot of bugs with the index.theme files in the GTK+ and Icons.

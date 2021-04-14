@@ -44,4 +44,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Jun 12 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.00
-- Rebuild for Fedora
+- Rebuilt for Fedora

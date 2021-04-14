@@ -32,4 +32,4 @@ install -m444 kenny.pl.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora

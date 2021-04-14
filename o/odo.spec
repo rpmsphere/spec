@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A port to C++ of my personal programming language
 Name: odo
@@ -32,4 +32,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 21 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.beta
-- Rebuild for Fedora
+- Rebuilt for Fedora

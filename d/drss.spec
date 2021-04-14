@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    drss
 Version: 0.3.5
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 25 2010 Bernd Stramm <bernd.stramm@gmail.com> - 0.3.5-1
 - change layouts
 - remove clock code

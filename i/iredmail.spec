@@ -40,4 +40,4 @@ sed -i '/RedHat 7/d' /etc/redhat-release
 
 %changelog
 * Wed Jan 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -63,7 +63,7 @@ rm -fr %buildroot
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 19 2002 Laurent MONTEL <lmontel@mandrakesoft.com> 2.0.10-7mdk
 - Fix menu entry
 - Add missing file

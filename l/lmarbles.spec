@@ -66,7 +66,7 @@ update-desktop-database %{_datadir}/applications &>/dev/null || :
 
 %changelog
 * Wed Nov 27 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Feb 09 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 1.0.7-27
 - Escape macros in %%changelog
@@ -154,11 +154,11 @@ update-desktop-database %{_datadir}/applications &>/dev/null || :
 - Update to 1.0.7.
 
 * Wed May 19 2004 Matthias Saou <http://freshrpms.net/> 1.0.6-3
-- Rebuild for Fedora Core 2.
+- Rebuilt for Fedora Core 2.
 - Added menu icon.
 
 * Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 1.0.6-2
-- Rebuild for Fedora Core 1.
+- Rebuilt for Fedora Core 1.
 - Added missing SDL_mixer depencency.
 
 * Mon Mar 31 2003 Matthias Saou <http://freshrpms.net/>

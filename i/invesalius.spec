@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name:			invesalius
 Group:			Sciences/Other
 License:		GPLv2
@@ -99,7 +100,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/invesa
 
 %changelog
 * Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1925
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 17 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.0.1925-3mdv2012.0
 + Revision: 731313
 - Remove dependency on wrapitk.

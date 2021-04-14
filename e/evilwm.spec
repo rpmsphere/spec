@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		evilwm
 Version:	1.1.1
@@ -45,4 +45,4 @@ make
 
 %changelog
 * Fri Mar 10 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

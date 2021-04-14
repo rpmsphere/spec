@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 29 2012 lazy.kent@opensuse.org
 - Use pkgconfig(*) as build dependencies.
 - Use make_install macro.

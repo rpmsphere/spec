@@ -64,7 +64,7 @@ EOF
 
 %changelog
 * Fri Mar 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 27 2010 Huan-Ting Luo <kylix.lo@ossii.com.tw> -1.31-2.48.ossii
 - add %%dist
 * Tue Aug 24 2010 Huan-Ting Luo <kylix.lo@ossii.com.tw>

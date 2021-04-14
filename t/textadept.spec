@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           textadept
 Version:        6.6
@@ -66,6 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Oct 27 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 6.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 19 2011 dbuck@example.com
 - initial SuSE release with version 3.9

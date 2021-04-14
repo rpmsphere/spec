@@ -820,7 +820,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jan 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 7.8.866
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 29 2012 oleksii.prudkyi.pike@gmail.com
 - update to 7.8.686
 * Sun May 13 2012 oleksii.prudkyi.pike@gmail.com

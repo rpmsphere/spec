@@ -219,7 +219,7 @@ if [ "$1" = "0" -a -x /usr/bin/update-menus ]; then /usr/bin/update-menus || tru
 
 %changelog
 * Thu Apr 1 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Nov 06 2020 Eric Gerbier <gerbier@users.sourceforge.net> 3.7.0
 - (Afick::Backend) now store data as an object instead joined tab

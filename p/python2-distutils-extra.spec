@@ -32,7 +32,7 @@ scrollkeeper based documentation into Python's distutils.
 
 %changelog
 * Tue May 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.39
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Feb 22 2020 Orion Poplawski <orion@nwra.com> - 2.39-16
 - Add Requires on intltool (bz#1651404)

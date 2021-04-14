@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Tom's virtual Tab Window Manager
 Name: tvtwm
@@ -64,4 +64,4 @@ chmod 0755 bitmaps
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.pl11
-- Rebuild for Fedora
+- Rebuilt for Fedora

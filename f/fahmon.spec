@@ -45,7 +45,7 @@ rm -f %{buildroot}%{_libdir}/libwxcurl.{la,so}
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.99.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 27 2012 lazy.kent@opensuse.org
 - Split off language package.
 - Use defines for wxWidgets.

@@ -79,7 +79,7 @@ install -m 755 contrib/knr2ansi.pl $RPM_BUILD_ROOT%{_bindir}/knr2ansi
 
 %changelog
 * Tue Feb 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6e
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul  6 2012 pth@suse.de
 - Update to 1.6d:
   Bug fixes

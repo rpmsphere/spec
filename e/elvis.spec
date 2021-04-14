@@ -73,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 9 2011 Agnelo de la Crotche <agnelo@unixversal.com> - 
 - added color patches for openSUSE, Fedora and Mandriva
 * Fri Mar 18 2010 Agnelo de la Crotche <agnelo@unixversal.com> - 

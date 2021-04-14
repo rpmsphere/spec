@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		bloboats
 Summary:	Boat Racing Game
@@ -58,7 +58,7 @@ chmod -R 644 %{buildroot}%{_datadir}
 
 %changelog
 * Tue Dec 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 23 2020 danf <danf> 1.0.2-11.mga8
 + Revision: 1571480
 - Fix Comment= in .desktop file

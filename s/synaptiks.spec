@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Touchpad service for KDE 4
 Name:		synaptiks
@@ -58,7 +58,7 @@ gunzip %{buildroot}%{_datadir}/pixmaps/synaptiks.svg.gz
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 13 2012 fwang <fwang> 0.8.1-1.mga2
 + Revision: 208397
 - new version 0.8.1

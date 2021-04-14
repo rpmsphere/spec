@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:        A strong chess engine using the winboard protocol
 Name:           sloppy
@@ -61,6 +61,6 @@ bzip2 -d $RPM_BUILD_ROOT%{_datadir}/%{name}/book.bin.bz2
 
 %changelog
 * Tue Sep 12 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 27 2009 AxelKoellhofer@web.de
 - first build for openSUSE, version 0.2.2

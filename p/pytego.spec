@@ -60,6 +60,6 @@ sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_libdir}/%{name}/*.py
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.02
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 25 2008 Wind <yc.yan@ossii.com.tw> - 0.02-1
 -First Build for OSSII.

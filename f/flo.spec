@@ -46,6 +46,6 @@ rm -f -r $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - svn1011
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 12 2012 i@marguerite.su
 - initial package svn1011

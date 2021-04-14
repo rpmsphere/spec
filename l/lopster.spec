@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 15 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 01 2008 Tiziana Ferro <tiziana.ferro@email.it> 1.2.2-5mamba
 - rebuild with new libFLAC libraries
 - update file desktop entry

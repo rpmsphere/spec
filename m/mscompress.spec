@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 21 2008 Oden Eriksson <oeriksson@mandriva.com> 0.3-9mdv2009.1
 + Revision: 317114
 - use %%optflags and %%ldflags (P0)

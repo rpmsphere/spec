@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: obnc-libext
 Summary: Extend Library for OBNC
@@ -36,4 +36,4 @@ mv %{buildroot}%{_docdir}/obnc/obncdoc/index.html %{buildroot}%{_docdir}/obnc/ob
 
 %changelog
 * Tue Aug 25 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

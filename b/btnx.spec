@@ -64,7 +64,7 @@ touch "$RPM_BUILD_ROOT%{_sysconfdir}/btnx/btnx_config"
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Aug 10 2008 guru@unixtech.be
 - new upstream version

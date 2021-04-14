@@ -71,7 +71,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jul 01 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 20 2008 schwab@suse.de
 - Add ExclusiveArch.
 * Mon Jul  9 2007 schwab@suse.de

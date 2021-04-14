@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global cdfver 38_0
 
 Name:		libcdf
@@ -94,6 +94,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 07 2009 Jussi Lehtola <jussi.lehtola@iki.fi> - 3.2.4-1
 - First release

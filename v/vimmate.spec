@@ -38,7 +38,7 @@ functionality to Vim by embedding Vim GTK GUI (gVim) within VimMate.
 
 %changelog
 * Mon Feb 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 17 2010 - Matthias Weckbecker <mweckbecker@suse.de>
 - library patch for vimmatelib fixed                            
 * Fri Sep 04 2009 - mweckbecker@suse.de

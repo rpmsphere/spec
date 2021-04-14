@@ -73,6 +73,6 @@ fi
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 20 2013 josef radinger <cheese@nosuchhost.net> - 0.2.3-1
 - initial package

@@ -93,7 +93,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Mar 05 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 05 2005 Mirco Mueller <macslow at bangang dot de> 1.1-2
 - fixed a ugly mishap in the .spec-file
 * Mon Mar 07 2005 Mirco Mueller <macslow at bangang dot de> 1.1-1

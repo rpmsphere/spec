@@ -28,6 +28,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jul 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20120403
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 27 2011 qmp <glang@lavabit.com> - 0.20110527
 - Initial packaging

@@ -75,6 +75,6 @@ EOF
 
 %changelog
 * Thu Nov 30 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 25 2013 Gary Richardson <garich@ptd.net> - 1.6.5
-- Rebuild for Fedora modified for scons
+- Rebuilt for Fedora modified for scons

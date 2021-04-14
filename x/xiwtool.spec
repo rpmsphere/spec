@@ -43,4 +43,4 @@ make
 
 %changelog
 * Wed Dec 17 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora

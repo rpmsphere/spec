@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		xman
 Version:	1.1.3
 Release:	4.1
@@ -33,7 +33,7 @@ make
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 19 2013 umeabot <umeabot> 1.1.3-2.mga4
 + Revision: 534216
 - Mageia 4 Mass Rebuild

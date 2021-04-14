@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         srp
 Summary:      Secure Remote Password Library
@@ -44,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Dec 26 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.94
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 0.91-1.404_20070301.1mdv2008.1
 + Revision: 140731
 - restore BuildRoot

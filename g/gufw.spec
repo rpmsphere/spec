@@ -43,7 +43,7 @@ python3 setup.py install --prefix=%{_prefix} --root %{buildroot}
 
 %changelog
 * Wed Jul 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 19.10.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 16 2015 p.drouand@gmail.com
 - Update to version 15.04.0
   + Fixed #1375468 No reload entry menu

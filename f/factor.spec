@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A pratical stack language
 Name: factor
@@ -39,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.98
-- Rebuild for Fedora
+- Rebuilt for Fedora

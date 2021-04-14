@@ -61,4 +61,4 @@ echo 'Icon=xwpe-t.xpm' >> %{buildroot}%{_datadir}/applications/xwpe.desktop
 
 %changelog
 * Fri Feb 07 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.30a
-- Rebuild for Fedora
+- Rebuilt for Fedora

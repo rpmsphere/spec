@@ -35,4 +35,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jul 06 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

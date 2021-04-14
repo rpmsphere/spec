@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name:          universal-applets-extras
 Version:       0.1bzr172
 Release:       1
@@ -43,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1bzr172
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 03 2009 - Ketil Wendelbo Aanensen <ketil.w.aanensen@gmail.com>
 - upgraded to bzr
 * Mon Mar 02 2009 - some-guy <muhammedu@gmail.com>

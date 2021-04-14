@@ -43,7 +43,7 @@ cp %SOURCE5 %buildroot%_datadir/design/backgrounds
 
 %changelog
 * Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 09 2012 Yuri N. Sedunov <aris@altlinux.org> 0.2-alt1
 - 0.2
 * Tue Aug 14 2007 Alexey Rusakov <ktirf@altlinux.org> 0.1-alt3

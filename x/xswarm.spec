@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xswarm
 Summary: An X windows animated wasp and bee swarm demo
@@ -37,4 +37,4 @@ install -Dm644 %{name}.6 %{buildroot}%{_mandir}/man6/%{name}.6
 
 %changelog
 * Tue Jan 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

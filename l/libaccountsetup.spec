@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define __arch_install_post %{nil}
 
 Name:           libaccountsetup
@@ -69,6 +69,6 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Mon Nov 11 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 28 2011 Alberto Mardegan <mardy@users.sourceforge.net> - 0.5
 - First packaging for MeeGo

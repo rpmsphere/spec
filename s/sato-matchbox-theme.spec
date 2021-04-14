@@ -30,4 +30,4 @@ make
 
 %changelog
 * Fri Aug 17 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

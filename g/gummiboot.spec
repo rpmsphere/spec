@@ -53,7 +53,7 @@ cp -a /usr/include/*.h /usr/include/sys /usr/include/bits /usr/include/gnu .
 
 %changelog
 * Wed Jan 11 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 45
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 45-3.mga5
 + Revision: 743578
 - Second Mageia 5 Mass Rebuild

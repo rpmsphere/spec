@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 17 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 28 2008 Tiziana Ferro <tiziana.ferro@email.it> 0.7.5-2mamba
 - rebuild
 - update Group in devel package

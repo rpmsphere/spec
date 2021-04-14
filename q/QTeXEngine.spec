@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		QTeXEngine
 Version:	0.3
@@ -80,7 +80,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 * Tue Nov 30 2010 Chen Lei <supercyper@163.com> - 0.3-1

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _name PyLogo
 
 Summary: Logo interpreter in Python
@@ -39,6 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 18 2010 Ian Bicking <ianb@colorstudy.com>
 - Initial package

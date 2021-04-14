@@ -30,4 +30,4 @@ install -Dm644 %{name}.man %{buildroot}%{_mandir}/man1/%{name}.1
 
 %changelog
 * Fri Mar 31 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

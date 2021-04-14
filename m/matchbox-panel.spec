@@ -56,7 +56,7 @@ make
 
 %changelog
 * Mon Aug 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 18 2013 umeabot <umeabot> 0.9.3-8.mga4
 + Revision: 507722
 - Mageia 4 Mass Rebuild

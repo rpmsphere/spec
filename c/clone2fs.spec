@@ -53,7 +53,7 @@ test -e "$h" && %__ln_s -f "$h" .
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 01 2010 Pascal Bleser <pascal.bleser@opensuse.org> 1.3.0
 - update to 1.3.0:
   * fixes a bug that caused invalid images to be written when

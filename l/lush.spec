@@ -54,7 +54,7 @@ ln -s lush2 %buildroot%_bindir/lush
 
 %changelog
 * Thu Apr 19 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 20 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 2.0.1-alt3
 - Fixed build
 * Mon May 21 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 2.0.1-alt2

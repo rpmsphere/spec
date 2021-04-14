@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           limoo
 BuildRequires:  cmake qt4-devel exiv2-devel
@@ -32,7 +32,7 @@ sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/ap
 
 %changelog
 * Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul  6 2012 giacomosrv@gmail.com
 - packaged limoo version 1.3
 * Fri May 18 2012 giacomosrv@gmail.com

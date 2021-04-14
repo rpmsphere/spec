@@ -33,7 +33,7 @@ make
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 28 2014 Denis Silakov <denis.silakov@rosalab.ru> 3.0.1-1
 + Revision: b7fc005
 - Drop unneeded patches

@@ -55,7 +55,7 @@ make
 
 %changelog
 * Thu Nov 28 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 2.1-47
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild

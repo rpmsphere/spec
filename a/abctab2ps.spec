@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: abctab2ps
 Summary: A music and tablature typesetting program
@@ -39,4 +39,4 @@ cd src
 
 %changelog
 * Wed May 25 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.12
-- Rebuild for Fedora
+- Rebuilt for Fedora

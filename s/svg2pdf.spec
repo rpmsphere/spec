@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           svg2pdf
 BuildRequires:  libpng-devel
@@ -39,6 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Dec 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 20110111
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 12 2011 cwh@novell.com
 - initially created package

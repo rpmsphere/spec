@@ -42,7 +42,7 @@ popd
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 07 2011 Petr Vanek <petr@scribus.info> 0.1.2
 - suse fixes
 * Fri May 09 2009 TI_Eugene <ti.eugene@gmail.com> 0.1.2

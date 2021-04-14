@@ -69,7 +69,7 @@ EOF
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 24 2008 lumnis@email.de
 - java bytecode check disabled (spec-file)
 * Wed Oct  1 2008 lumnis@email.de

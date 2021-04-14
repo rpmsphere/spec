@@ -68,7 +68,7 @@ mv lib/*/*.a %{buildroot}%{_libdir}
 
 %changelog
 * Sun Jun 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 31 2012 mhrusecky@suse.cz
 - including machine-type into -devel package
 * Tue Jan 31 2012 mhrusecky@suse.cz

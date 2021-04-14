@@ -42,7 +42,7 @@ in a file.
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Jul  9 2010 pascal.bleser@opensuse.org
 - initial package (0.5)

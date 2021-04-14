@@ -62,7 +62,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 01 2008 Paulo Roma <roma@lcg.ufrj.br> - 1.1.7-10
 - Updated to 1.1.7
 - Removed vversion.

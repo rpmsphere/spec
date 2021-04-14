@@ -45,4 +45,4 @@ perl Build.PL --gtk-youtube-viewer
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

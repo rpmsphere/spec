@@ -42,6 +42,6 @@ DESTDIR=$RPM_BUILD_ROOT make install
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 12 2008 Feather Mountain <john@ossii.com.tw> 0.4.1-1
 - Build for OSSII

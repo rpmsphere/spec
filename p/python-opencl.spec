@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-opencl
 Version:        0.5.2
 Release:        7.1
@@ -40,6 +40,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 15 2012 scorot@free.fr
 - first package

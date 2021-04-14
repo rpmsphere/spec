@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Feb 14 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 31 2011 snwint@suse.de
 - create VERSION and changelog from git repo
 - bios: added 'get disk type' and dummy 'disk write' functions

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		qonverter
 Version: 0.9.1.1336027302
@@ -38,6 +38,6 @@ make
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.1.1336027302
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 09 2012 TI_Eugene <ti.eugene@gmail.com> 0.6.7
 - Initital build in OBS

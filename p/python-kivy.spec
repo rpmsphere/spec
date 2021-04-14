@@ -54,7 +54,7 @@ python3 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 
 %changelog
 * Thu Feb 22 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 17 2012 saschpe@suse.de
 - Update to version 1.5.1:
   + Widgets

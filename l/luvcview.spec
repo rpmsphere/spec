@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	SDL-based video grabber
 Name:		luvcview
@@ -37,7 +37,7 @@ make
 
 %changelog
 * Wed Feb 18 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 16 2014 umeabot <umeabot> 0.2.6-5.mga5
 + Revision: 682054
 - Mageia 5 Mass Rebuild

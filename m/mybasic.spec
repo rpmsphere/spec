@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _name my_basic
 
 Summary: Lightweight BASIC interpreter written with C from scratch
@@ -33,4 +33,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2rc
-- Rebuild for Fedora
+- Rebuilt for Fedora

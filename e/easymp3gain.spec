@@ -45,7 +45,7 @@ sed -i s/x86_64/aarch64/ easymp3gain.lpi
 
 %changelog
 * Tue Aug 23 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 04 2016 pterjan <pterjan> 0.5.0-10.mga6
 + Revision: 1038639
 - Support building on arm

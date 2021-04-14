@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Dec 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 02 2011 scorot@gtt.fr
 - Fix no-return-in-non-void-function
 * Fri Apr 01 2011 scorot@gtt.fr

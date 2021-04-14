@@ -37,6 +37,6 @@ install auth  ${RPM_BUILD_ROOT}/etc/xinetd.d
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 26 2008 admin@eregion.de
 - bogus changelog

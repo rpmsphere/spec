@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           ftpcopy
 Version:        0.6.7
@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov  7 2011 lazy.kent@opensuse.org
 - Corrected License tag.
 - Use full URL as a source.

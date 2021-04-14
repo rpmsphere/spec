@@ -59,4 +59,4 @@ chmod +x %{buildroot}%{_bindir}/PAGE
 
 %changelog
 * Wed Feb 17 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 4.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -83,7 +83,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun May 26 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 20 2009 Thierry Vignaud <tvignaud@mandriva.com> 1.3-6mdv2010.0
 + Revision: 445547
 - rebuild

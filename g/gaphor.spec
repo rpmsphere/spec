@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jul 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 17 2011 qmp <glang@lavabit.com> - 0.17.1-2
 - Adds missing "Requires"
 * Sat Dec 17 2011 qmp <glang@lavabit.com> - 0.17.1-1

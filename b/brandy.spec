@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A BBC BASIC interpreter for Linux
 Name: brandy
@@ -42,7 +42,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Jan 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.21.17
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.19-9
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.19-8

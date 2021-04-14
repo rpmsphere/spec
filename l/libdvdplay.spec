@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon May 26 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.1-5mamba
 - rebuilt against libdvdread 4.1.2

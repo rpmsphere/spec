@@ -41,7 +41,7 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 
 %changelog
 * Mon Mar 07 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.14.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Aug 16 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.14.3-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
 * Sun Jun 08 2014 Wolfgang Ulbrich <chat-to-me@raveit.de> - 2.14.3-4

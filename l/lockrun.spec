@@ -48,7 +48,7 @@ instance of the same command is not already running.
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0+4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Aug 29 2010 pascal.bleser@opensuse.org
 - initial package (1.0+4)

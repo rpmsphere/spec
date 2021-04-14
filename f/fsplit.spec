@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Split a multi-routine Fortran file into individual files
 Name: fsplit
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 5.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 24 2008 Thierry Vignaud <tvignaud@mandriva.com> 5.5-6mdv2009.0
 + Revision: 245429
 - rebuild

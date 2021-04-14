@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           quickterminal
 Version:        0.0.1git
@@ -35,4 +35,4 @@ install -Dm644 desktop/%{name}.desktop %{buildroot}%{_datadir}/applications/%{na
 
 %changelog
 * Fri Jan 17 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.1git
-- Rebuild for Fedora
+- Rebuilt for Fedora

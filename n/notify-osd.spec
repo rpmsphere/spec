@@ -64,6 +64,6 @@ export LDFLAGS="-lX11 -lpixman-1 -lm"
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.25
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 31 2010 pascal.bleser@opensuse.org
 - initial package (0.9.25)

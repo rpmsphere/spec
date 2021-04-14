@@ -37,7 +37,7 @@ mv %{buildroot}%{_datadir}/doc/%{name}-%{version} %{buildroot}%{_datadir}/doc/%{
 
 %changelog
 * Tue Dec 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 0:1.3-5mdv2010.0
 + Revision: 433455
 - rebuild

@@ -62,4 +62,4 @@ EOF
 
 %changelog
 * Wed Sep 09 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.87
-- Rebuild for Fedora
+- Rebuilt for Fedora

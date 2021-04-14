@@ -128,6 +128,6 @@ EOF
 
 %changelog
 * Fri Jun 22 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.11.3-5
 - (5f7758f) MassBuild#1257: Increase release tag

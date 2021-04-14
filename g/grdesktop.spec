@@ -62,7 +62,7 @@ convert -scale 16x16 pixmaps/icon.png %buildroot%_datadir/icons/hicolor/16x16/ap
 
 %changelog
 * Thu Mar 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.23
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 0.23-12.mga5
 + Revision: 740260
 - Second Mageia 5 Mass Rebuild

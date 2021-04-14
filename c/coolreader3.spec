@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define		shortname	cr3
 
 Name:		coolreader3
@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jun 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.56
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 08 2011 Sergey Zhemoitel <serg@mandriva.org> 3.0.49-1mdv2012.0
 + Revision: 698983
 - new version 3.0.49

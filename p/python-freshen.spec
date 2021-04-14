@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-freshen
 Version:        0.2
 Release:        4.1
@@ -38,7 +38,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 26 2011 toms@suse.de
 - Added missing dependencies python-yaml and python-pyparsing
 * Mon Jul 25 2011 toms@suse.de

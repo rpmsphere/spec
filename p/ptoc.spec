@@ -32,4 +32,4 @@ install -m755 libptoc.a libXbgi.a %{buildroot}%{_libdir}
 
 %changelog
 * Tue Feb 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 3.61
-- Rebuild for Fedora
+- Rebuilt for Fedora

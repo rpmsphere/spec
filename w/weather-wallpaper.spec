@@ -50,7 +50,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sun Jun 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 23 2012 dimstar@opensuse.org
 - Do not call suse_update_desktop_file with '-n' parameter: there
   is no reason why we would not want translations in the .desktop

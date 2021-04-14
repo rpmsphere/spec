@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: gigalomania
 Summary: A 2D real time strategy game clone of Mega-Lo-Mania
@@ -44,4 +44,4 @@ sed -i 's|^Categories=Game;|Categories=Game;StrategyGame;|' %{buildroot}%{_datad
 
 %changelog
 * Wed Jan 15 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.26
-- Rebuild for Fedora
+- Rebuilt for Fedora

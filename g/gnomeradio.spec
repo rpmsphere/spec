@@ -124,7 +124,7 @@ killall -HUP gconfd-2 >/dev/null || :
 
 %changelog
 * Thu Jun 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 07 2014 Igor Vlasenko <viy@altlinux.ru> 1.8-alt2_24
 - update to new release by fcimport
 * Thu Sep 19 2013 Igor Vlasenko <viy@altlinux.ru> 1.8-alt2_22

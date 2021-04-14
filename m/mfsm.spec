@@ -67,7 +67,7 @@ install -Dm 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desk
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov  8 2010 coolo@novell.com
 - remove support for pre-9.1
 * Tue Aug  4 2009 pgajdos@suse.cz

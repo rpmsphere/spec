@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-pyfann
 Version:        2.1.0beta
 Release:        9.1
@@ -31,4 +31,4 @@ python2 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Sun Jun 16 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0beta
-- Rebuild for Fedora
+- Rebuilt for Fedora

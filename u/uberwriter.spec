@@ -33,4 +33,4 @@ python3 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.5a
-- Rebuild for Fedora
+- Rebuilt for Fedora

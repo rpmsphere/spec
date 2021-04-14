@@ -82,7 +82,7 @@ done
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 9.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 09 2018 wally <wally> 9.6-1.mga7
 + Revision: 1191918
 - new version 9.6

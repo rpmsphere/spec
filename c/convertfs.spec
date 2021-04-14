@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Feb 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 13jan2005
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Feb 12 2007 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org

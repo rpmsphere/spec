@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A Chinese Terminal Simulator
 Name: chdrv
@@ -73,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Aug 06 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May  2 1999 Cheng Yuan-Cheng <platin@ms31.hinet.net>
 - move config files to /etc/chinese
 * Thu Mar  4 1999 Cheng Yuan-Cheng <platin@ms31.hinet.net>

@@ -43,7 +43,7 @@ make install PREFIX=%{buildroot}%{_prefix}
 
 %changelog
 * Wed May 13 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 09 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 5.11-20
 - Escape macros in %%changelog
 * Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 5.11-19
@@ -143,7 +143,7 @@ make install PREFIX=%{buildroot}%{_prefix}
 - Re-enabled all logos, they build fine again.
 * Fri Dec 12 2003 Matthias Saou <http://freshrpms.net/> 4.07-3
 - Disabled many of the logos as they prevent building :-(
-- Rebuild for Fedora Core 1.
+- Rebuilt for Fedora Core 1.
 * Mon Mar 31 2003 Matthias Saou <http://freshrpms.net/>
 - Rebuilt for Red Hat Linux 9.
 * Wed Jan 29 2003 Matthias Saou <http://freshrpms.net/>

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		tea
 Version:	60.0.3
@@ -36,7 +36,7 @@ install -Dm 644 desktop/%{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/applications
 
 %changelog
 * Sun Apr 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 60.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 11 2010 Detlef Reichelt <detlef@links2linux.de> - 28.1.0
 - new upstream version <28.1.0>
 * Wed Jun 16 2010 Detlef Reichelt <detlef@links2linux.de> - 28.0.0

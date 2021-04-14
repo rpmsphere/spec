@@ -98,6 +98,6 @@ install -p -m644 *.h %buildroot%_includedir
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 126
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 17 2010 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 126-alt1
 - Initial build for Sisyphus

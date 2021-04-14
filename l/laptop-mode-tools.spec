@@ -53,7 +53,7 @@ ln -s service %{buildroot}/%{_sbindir}/rclaptop-mode
 
 %changelog
 * Thu Jul 09 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.67
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 19 2015 tchvatal@suse.com
 - Clean up all various rpmlint warnings
 * Wed Dec 18 2013 p.drouand@gmail.com

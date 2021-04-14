@@ -51,7 +51,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 13 2012 lazy.kent@opensuse.org
 - Update to 0.7.8.
   * Faster startup and save performance.

@@ -56,7 +56,7 @@ rm -f %{buildroot}/%{_infodir}/dir
 
 %changelog
 * Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 11 2015 Lawrence R. Rogers <lrr@cert.org> 2.7-1
 * Release 2.7-1
   * Ddru_ntfsfindbad 1.5 released:

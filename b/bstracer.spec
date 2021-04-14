@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       	bstracer
 Version:    	0.04
@@ -57,4 +57,4 @@ install -Dm644 trview/img/TraceView.png %{buildroot}%{_datadir}/pixmaps/trview.p
 
 %changelog
 * Thu Feb 06 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.04
-- Rebuild for Fedora
+- Rebuilt for Fedora

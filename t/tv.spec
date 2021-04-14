@@ -37,6 +37,6 @@ output by PAUP, ClustalX, TREE-PUZZLE, and other programs).
 
 %changelog
 * Fri Mar 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 21 2003 R. D. M. Page <r.page@bio.gla.ac.uk>
 - First draft of the spec file

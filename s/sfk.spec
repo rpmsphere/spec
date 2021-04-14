@@ -31,7 +31,7 @@ files of a folder).
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 24 2020 daviddavid <daviddavid> 1.9.7-1.mga8
 + Revision: 1587262
 - new version: 1.9.7

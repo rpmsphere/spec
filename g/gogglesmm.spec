@@ -82,6 +82,6 @@ desktop-file-edit --set-key="Categories" --set-value="AudioVideo;Audio;Player;" 
 
 %changelog
 * Wed Sep 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 12 2015 Giovanni Mariani <mc2374@mclink.it> 0.14.2-1
 - (f194c7e) Dropped faad support: it breaks build on ABF

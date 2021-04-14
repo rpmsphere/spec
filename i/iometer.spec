@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: I/O subsystem measurement and characterization tool
 Name: iometer
@@ -34,7 +34,7 @@ sed 's|IA64|AARCH64|' src/Makefile-Linux.ia64 > src/Makefile-Linux.aarch64
 
 %changelog
 * Mon Mar 23 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 12 2014 Dag Wieers <dag@wieers.com> - 1.1.0-1
 - Updated to release 1.1.0.
 * Sat Aug 28 2004 Dag Wieers <dag@wieers.com> - 0.0.20040730-1

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           hinedo
 Version:        0.4
@@ -46,6 +46,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 19 2007 swyear <swyear@gmail.com> 0.4-11.1
 - hinedo package for opensuse.

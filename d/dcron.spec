@@ -97,6 +97,6 @@ done
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 11 2011 pascal.bleser@opensuse.org
 - initial version (4.5)

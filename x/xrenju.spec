@@ -39,6 +39,6 @@ install -D -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/xrenju.png
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 26 2000 Hironobu ABE <hiro-a@mars.dti.ne.jp>
 - 1st release for Vine Linux 2.0

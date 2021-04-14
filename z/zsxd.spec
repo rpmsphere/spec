@@ -32,6 +32,6 @@ make DESTDIR=%{buildroot} install
 
 %changelog
 * Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 29 2011 giacomosrv@gmail.com
 - packaged zsxd version 1.4

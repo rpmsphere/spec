@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri May 29 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 0.4.0-6
 + Revision: 2f0c542
 - MassBuild#464: Increase release tag

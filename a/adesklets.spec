@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:        Simple desklets for Unix
 Name:           adesklets
 Version:        0.6.1
@@ -54,7 +54,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 14 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.6.1-4mdv2008.1
 + Revision: 151759
 - rebuild

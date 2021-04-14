@@ -1,5 +1,5 @@
 %undefine _missing_build_ids_terminate_build
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: jitsi
 Summary: Open Source Video Calls and Chat
@@ -122,7 +122,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Dec 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.4978
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 11 2013 Pavel Tankov <ptankov@bluejimp.com>
 - Now depends on java >= 0:1.5.0.
 * Thu Jan 31 2013 Damian Minkov <damencho@jitsi.org>

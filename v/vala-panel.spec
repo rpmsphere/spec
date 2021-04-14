@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           vala-panel
 Version:        0.3.75
 #Version:        0.4.91
@@ -160,7 +160,7 @@ make %{?_smp_mflags}
 
 %changelog
 * Fri Jan 17 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.75
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May  7 2016 sor.alexei@meowr.ru
 - Fix build by using upstream glib-2.0.vapi.
 * Wed Jun 24 2015 cdenicolo@suse.com

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __python %{__python3}
 
 Name: ats2-lang
@@ -43,4 +43,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Mon Mar 08 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

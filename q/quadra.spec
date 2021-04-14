@@ -71,7 +71,7 @@ install -D -m644 %SOURCE7 %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{nam
 
 %changelog
 * Thu May 28 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 07 2014 Bernhard Rosenkraenzer <bero@bero.eu> 1.2.0-14
 + Revision: 3afc8d3
 - MassBuild#609: Increase release tag

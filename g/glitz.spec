@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           glitz
 Version:        0.5.6
 Release:        1
@@ -87,7 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 11 2006 Eric Work <work.eric@gmail.com> 0.5.6-5
 - bump EVR to assure devel replaces FC6
 * Fri Sep 15 2006 Eric Work <work.eric@gmail.com> 0.5.6-4

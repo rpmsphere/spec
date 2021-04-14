@@ -97,7 +97,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Sep 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 23 2009 pgajdos@suse.cz
 - refreshed audit.patch to build with fuzz=0
 * Mon Aug 31 2009 pgajdos@suse.cz

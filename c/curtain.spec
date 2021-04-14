@@ -53,7 +53,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Fri Sep 23 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 04 2016 umeabot <umeabot> 0.3-6.mga6
 + Revision: 935453
 - Mageia 6 Mass Rebuild

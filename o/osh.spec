@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: osh
 Summary: Two ports of V6 Thompson Shell
@@ -36,4 +36,4 @@ mv %{buildroot}%{_mandir}/man1/if.1 %{buildroot}%{_mandir}/man1/if6.1
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 20130331
-- Rebuild for Fedora
+- Rebuilt for Fedora

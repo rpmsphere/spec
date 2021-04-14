@@ -5,7 +5,7 @@ Summary:	q - Text as Data
 Group:		Applications/Text
 License:	GPLv3
 URL:		https://github.com/harelba/q
-Source:		https://github.com/harelba/q/archive/%{version}.tar.gz#/q-%{version}.tar.gz
+Source:		q-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	rubygem-ronn
 
@@ -36,7 +36,7 @@ install -m 0644 doc/USAGE ${RPM_BUILD_ROOT}%{_mandir}/man1/%{name}.1
 
 %changelog
 * Mon Jul 01 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 12 2014 Harel Ben-Attia <harelba@gmail.com> 1.5.0-1
 - Moved stuff from create-rpm script into the rpm spec itself
 * Sat Jun 14 2014 Harel Ben-Attia <harelba@gmail.com> 1.4.0-1

@@ -67,7 +67,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 31 2005 kde <jack@linux.net.cn> 0.3-2mgc
 - fix the menu
 * Wed Sep 07 2005 sejishikong <sejishikong@263.net> 0.3-1mgc

@@ -45,4 +45,4 @@ install -Dm644 dist/Shoes.desktop %{buildroot}%{_datadir}/applications/%{name}.d
 
 %changelog
 * Sat Jan 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.20
-- Rebuild for Fedora
+- Rebuilt for Fedora

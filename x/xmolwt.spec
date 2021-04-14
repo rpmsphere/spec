@@ -44,7 +44,7 @@ EOF
 
 %changelog
 * Sat May 30 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 26 2014 Michael Shigorin <mike@altlinux.org> 0.7-alt1
 - rebuilt for Sisyphus, thanks ogion@
 * Fri Feb 22 2010 Denis G. Samsonenko <d.g.samsonenko@gmail.com> 0.7-alt0.sdg1

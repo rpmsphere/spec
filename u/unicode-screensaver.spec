@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Feb 26 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun  6 2011 pascal.bleser@opensuse.org
 - update to 0.4:
   * this version was updated for Unicode 6.0

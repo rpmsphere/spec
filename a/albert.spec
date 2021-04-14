@@ -58,7 +58,7 @@ make
 
 %changelog
 * Mon Mar 25 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16.1git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May  9 2017 sor.alexei@meowr.ru
 - Update to version 0.11.1:
   * No changelog available.

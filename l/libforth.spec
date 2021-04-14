@@ -28,4 +28,4 @@ install -Dm755 %{name}.a %{buildroot}%{_libdir}/%{name}.a
 
 %changelog
 * Thu Oct 05 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: An X Window System analog clock
 Name: emiclock
@@ -48,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Mar 04 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 21 2000 Hironobu ABE <hiro-a@mars.dti.ne.jp>
 - 1st release

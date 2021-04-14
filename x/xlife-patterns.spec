@@ -25,4 +25,4 @@ cp -a * %{buildroot}%{_datadir}/xlife
 
 %changelog
 * Fri Sep 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.7.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -51,7 +51,7 @@ produz uma análise compreensível por humanos.
 
 %changelog
 * Mon Apr 27 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 26 2012 Fr. Br. George <george@altlinux.ru> 0.3.7-alt4
 - Drop all old patches in favour of Debian one
 * Tue Feb 16 2010 Fr. Br. George <george@altlinux.ru> 0.3.7-alt3

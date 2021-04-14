@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		gamgi
 Version:	0.17
@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Dec 24 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 27 2013 josef radinger <cheese@nosuchhost.net> - 0.16.3-1
 - bump version
 * Mon Nov 5 2012 josef radinger <cheese@nosuchhost.net> 

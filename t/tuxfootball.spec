@@ -55,7 +55,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 18 2009 Kami <kami@ossii.com.tw> 0.1.1-2pclos2007
 - Build for OSSII
 * Fri Feb 15 2008 Texstar <texstar@gmail.com> 0.1.1-2pclos2007

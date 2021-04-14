@@ -90,7 +90,7 @@ rm -f %{buildroot}%{_libdir}/libskyldr.so
 
 %changelog
 * Fri Sep 04 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.2nn
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb  2 2019 malcolmlewis@opensuse.org
 - Add skylendar-fix-qt-error.patch: Add missing QT include.
 - Add skylendar-add-missing-linker-flag.patch: Add missing dl

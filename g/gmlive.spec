@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:          Live video for linux
 Name:             gmlive
@@ -45,7 +45,7 @@ export CXXFLAGS="-std=c++11 -fPIC"
 
 %changelog
 * Fri Jul 01 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.22.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 19 2009 Huang Wenlong <huangwenlong@redflag-linux.com> 0.21.2-3
 -add patch gmlive-0.21.2-del-warndialog-for-sopcast.patch 
 -del dialog for sopast 

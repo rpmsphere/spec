@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: The xwhirl screensaver
 Name: xwhirl
@@ -36,6 +36,6 @@ install -Dm644 xwhirl.1 %{buildroot}%{_mandir}/man1/%{name}.1x
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 07 1998 Arkadi E. Shishlov <arkadi@kvin.lv>
 - Initial package

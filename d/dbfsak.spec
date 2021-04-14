@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: dbfsak
 Summary: DBF Swiss Army Knife
@@ -31,4 +31,4 @@ install -Dm644 %{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 
 %changelog
 * Wed Dec 11 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

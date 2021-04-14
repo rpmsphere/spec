@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           latexslides
 Version:        0.31
 Release:        3.1
@@ -39,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jun 18 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.31
-- Rebuild for Fedora
+- Rebuilt for Fedora

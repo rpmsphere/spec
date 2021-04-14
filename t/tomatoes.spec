@@ -62,7 +62,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.55
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 01 2012 Kevin Chen <kevin.chen@ossii.com.tw>
 - Rebuild for OSSII
 * Sat Jul  2 2011 jengelh@medozas.de

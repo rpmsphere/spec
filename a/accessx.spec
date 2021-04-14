@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           accessx
 Version:        0.951
@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.951
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun May 30 2010 Kushal Das <kushal@fedoraproject.org> 0.951-2
 - fixed changelog section

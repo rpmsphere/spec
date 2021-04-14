@@ -81,7 +81,7 @@ touch %{buildroot}%{_sysconfdir}/chbgrc
 
 %changelog
 * Sun Jul 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 03 2013 fwang <fwang> 2.0.1-19.mga4
 + Revision: 435803
 - more linkage fix

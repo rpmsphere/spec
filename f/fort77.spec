@@ -32,7 +32,7 @@ install -Dm644 %{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 
 %changelog
 * Mon May 28 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.18
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 28 1999 Tim Powers <timp@redhat.com>
 - started changelog
 - built for 6.1

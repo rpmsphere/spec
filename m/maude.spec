@@ -43,4 +43,4 @@ mv %{buildroot}%{_datadir}/*.%{name} %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -114,7 +114,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Dec 25 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 16 2010 <tom@mmto.org>
 - move the X resource: "XEphem" to /usr/share/X11/app-defaults
 - move the "stuff" from /usr/lib/xephem to /usr/share/xephem

@@ -45,7 +45,7 @@ EOF
 
 %changelog
 * Fri Dec 30 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 09 2015 Andrey Cherepanov <cas@altlinux.org> 1.0.1-alt2
 - Fix build with gcc5
 * Fri Jun 12 2015 Gleb F-Malinovskiy <glebfm@altlinux.org> 1.0.1-alt1.qa1.1

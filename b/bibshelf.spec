@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		bibshelf
 Version:	1.6.0
@@ -42,6 +42,6 @@ export CXXFLAGS="-O2 -std=c++11 -fPIC"
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 21 2009 bitshuffler #suse@irc.freenode.org
 - Initial RPM

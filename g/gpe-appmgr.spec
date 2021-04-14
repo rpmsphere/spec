@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: gpe-appmgr
 License: GPL
@@ -40,4 +40,4 @@ sed -i 's/-lXsettings-client/-Wl,--allow-multiple-definition -lX11 -lXsettings-c
 
 %changelog
 * Wed Apr 27 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8
-- Rebuild for Fedora
+- Rebuilt for Fedora

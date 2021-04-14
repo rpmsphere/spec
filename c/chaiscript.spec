@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         chaiscript
 Summary:      C++ Scripting Language
@@ -46,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu May 31 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

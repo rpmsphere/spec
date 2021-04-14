@@ -35,6 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 14 2011 Robert Herb <robertherb@arcor.de>
 - initial package created

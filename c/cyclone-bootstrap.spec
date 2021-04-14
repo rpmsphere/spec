@@ -15,7 +15,7 @@ binaries installed because the compiler is self-hosting. Instead, this
 repository uses pre-generated C code to build and install Cyclone Scheme
 on a fresh system.
 
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 %prep
 %setup -q
@@ -44,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20
-- Rebuild for Fedora
+- Rebuilt for Fedora

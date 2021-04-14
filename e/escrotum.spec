@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: Linux screen capture using pygtk, inspired by scrot
 Name: escrotum
 Version: 0.2.1git
@@ -38,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Sep 12 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1git
-- Rebuild for Fedora
+- Rebuilt for Fedora

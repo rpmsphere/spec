@@ -51,7 +51,7 @@ install -m644 README* COPYING* %{buildroot}%{_docdir}/%{name}
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.10.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 11 2018 User <user@mail.net> 3.9.0-1
 - (06ec9cf) Update deps
 

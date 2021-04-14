@@ -31,4 +31,4 @@ cp -r src %{buildroot}/usr/src/gtest
 
 %changelog
 * Wed Jun 03 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	WPS brute force attack
 Name:		bully
@@ -35,6 +35,6 @@ to run on embedded Linux systems (OpenWrt, etc) regardless of architecture.
 
 %changelog
 * Tue Dec 10 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 17 2019 abfonly <abfonly@gmail.com> 1.1-1
 - (16bf86e) Imported from SRPM

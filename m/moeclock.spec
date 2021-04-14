@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name: moeclock
 Summary: Moe Desktop Clock
 Version: 1.2.0.2
@@ -65,7 +66,7 @@ sed -i 's|^python |python2 |' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 25 2012 kobayashi
 - Rebuild for SUSE
 - Skin update

@@ -54,4 +54,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Sep 10 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 7.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

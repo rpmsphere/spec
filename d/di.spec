@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           di
 Version:        4.49
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.49
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul  5 2010 pascal.bleser@opensuse.org
 - update to 4.25:
   * support for disk quotas has been added

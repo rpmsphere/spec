@@ -41,7 +41,7 @@ rm -f %buildroot%_libdir/c_icap/*.la
 
 %changelog
 * Thu Aug 15 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 08 2017 Andrey Cherepanov <cas@altlinux.org> 1:0.4.5-alt1
 - New version
 * Sat Mar 19 2016 Sergey Y. Afonin <asy@altlinux.ru> 1:0.4.2-alt3

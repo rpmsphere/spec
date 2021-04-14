@@ -59,7 +59,7 @@ fi
 
 %changelog
 * Fri Feb 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.24
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 1.4.22-9
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 * Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.22-8

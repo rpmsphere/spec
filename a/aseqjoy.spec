@@ -41,6 +41,6 @@ represents the joystick's position along the axis (eg 'left' -> 0, 'middle' ->
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 29 2010 lenz@grimmer.com
 - Initial version for the openSUSE build service (0.0.1)

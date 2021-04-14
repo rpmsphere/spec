@@ -39,4 +39,4 @@ mv plugins/lib*.so %{buildroot}%{_libdir}/%{name}/plugins
 
 %changelog
 * Fri Mar 06 2020 Wei-Lun Chao <blubat@member.fsf.org> - 1.0.5git
-- Rebuild for Fedora
+- Rebuilt for Fedora

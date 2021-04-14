@@ -70,7 +70,7 @@ chmod a+rw /tmp/faxfile.ps
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 21 2015 barjac <barjac> 3.2.13-1.mga6
 + Revision: 882061
 - new version 3.2.13

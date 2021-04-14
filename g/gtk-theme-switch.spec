@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: gtk-theme-switch
 Version: 2.0.0rc2
@@ -37,7 +37,7 @@ install -pDm644 %SOURCE2 %buildroot%_datadir/pixmaps/%name.png
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0rc2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 08 2011 Igor Vlasenko <viy@altlinux.ru> 2.0.0-alt0.3.qa2
 - NMU: polished desktop file
 * Tue Nov 10 2009 Repocop Q. A. Robot <repocop@altlinux.org> 2.0.0-alt0.3.qa1

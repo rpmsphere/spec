@@ -38,6 +38,6 @@ sed -i 's|../../lib/cim.h|cim.h|' lib/simset.c lib/simulation.c
 
 %changelog
 * Fri Oct 19 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 04 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3.37-14
 - (4342e8b) MassBuild#1230: Increase release tag

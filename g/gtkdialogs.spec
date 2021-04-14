@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		gtkdialogs
 Version:	2.2
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 03 2011 Oden Eriksson <oeriksson@mandriva.com> 2.2-8mdv2011.0
 + Revision: 664950
 - mass rebuild

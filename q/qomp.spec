@@ -50,7 +50,7 @@ Qomp's main features:
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 25 2019 Alexander Makeenkov <amakeenk@altlinux.org> 1.4-alt2
 - Fixed requires (ALT #36347)
 * Fri Nov 16 2018 Alexander Makeenkov <amakeenk@altlinux.org> 1.4-alt1

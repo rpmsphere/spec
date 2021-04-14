@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 02 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 06 2012 tmb <tmb> 0.8.8-12.mga3
 + Revision: 256318
 - rebuild for core/release

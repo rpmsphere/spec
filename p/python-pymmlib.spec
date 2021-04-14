@@ -1,4 +1,4 @@
-#global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		python-pymmlib
 Version:	1.2.0
 Release:	8.1
@@ -45,6 +45,6 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug  3 2007 MATSUURA Takanori <t.matsuu at gmail.com> - 1.0.0-1
 - initial build

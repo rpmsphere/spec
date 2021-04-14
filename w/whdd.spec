@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Diagnostic and recovery tool for block devices
 Name:		whdd
@@ -31,6 +31,6 @@ make
 
 %changelog
 * Tue Aug 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 09 2016 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2.2-0.11_ge88b96e1.2
 - (2190c8f) Don't override system optflags

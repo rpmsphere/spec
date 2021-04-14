@@ -32,6 +32,6 @@ autoreconf -ifv
 
 %changelog
 * Tue May 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 08 2015 Konstantin Artyushkin <akv@altlinux.org> 0.1-alt2
 - initial build for ALT Linux Sisyphus

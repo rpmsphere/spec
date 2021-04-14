@@ -36,6 +36,6 @@ gcc %{optflags} -DUSE_FCNTL lock.c  subsvscan.c -o subsvscan
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 200511041029
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct  7 2006 mrueckert@suse.de
 - initial package

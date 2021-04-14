@@ -38,7 +38,7 @@ make
 
 %changelog
 * Wed Apr 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.25.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec  9 2013 lazy.kent@opensuse.org
 - Update to 0.13.1.
   * Fix test failures with Python 3.4.

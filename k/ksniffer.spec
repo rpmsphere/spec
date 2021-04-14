@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	A KDE network sniffer application
 Name:		ksniffer
@@ -52,7 +52,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 26 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 0.3.2-5mdv2009.1
 + Revision: 361415
 - rebuild

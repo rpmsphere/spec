@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name:           python-story_parser
 Version:        0.1.2
 Release:        2.1
@@ -45,6 +46,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 23 2011 toms@suse.de
 - Initial version 0.1.2

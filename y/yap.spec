@@ -103,7 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 30 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 6.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 5.1.3-2.1
 - Rebuilt for RHEL 6
 * Mon Jul 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.1.3-2
@@ -137,7 +137,7 @@ rm -rf $RPM_BUILD_ROOT
 - new version 5.1.1
 - split off devel and docs packages
 * Fri Feb 17 2006 Gerard Milmeister <gemi@bluewin.ch> - 5.0.1-2
-- Rebuild for Fedora Extras 5
+- Rebuilt for Fedora Extras 5
 * Tue Oct 25 2005 Gerard Milmeister <gemi@bluewin.ch> - 5.0.1-1
 - New Version 5.0.1
 * Wed Sep  7 2005 Gerard Milmeister <gemi@bluewin.ch> - 5.0.0-1

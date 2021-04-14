@@ -40,6 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue May 24 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 10 2000 Eddie Kohler <eddietwo@lcs.mit.edu>
 - Initial package

@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Summary: A simple, transparent and easy to extend xorg parser
 Name:    python-xkit
 Version: 0.5.0
@@ -31,7 +32,7 @@ ln -s xkit %{buildroot}%{python_sitelib}/XKit
 
 %changelog
 * Mon Feb 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 08 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.2.2-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
 * Sun Aug 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.2.2-5

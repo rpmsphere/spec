@@ -65,7 +65,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Mon Jan 30 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 14 2010 Silvan Calarco <silvan.calarco@mambasoft.it> 1.5.4-2mamba
 - don't use configure macro to avoid passing default CFLAGS, which causes jamvm to segfault
 * Sat May 08 2010 Automatic Build System <autodist@mambasoft.it> 1.5.4-1mamba

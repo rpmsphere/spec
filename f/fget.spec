@@ -47,6 +47,6 @@ Development library for fget.
 
 %changelog
 * Wed Jul 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.3.3-10
 - (9869f59) MassBuild#1257: Increase release tag

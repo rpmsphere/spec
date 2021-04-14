@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         ctalk
 Summary:      Object-Orientation Extensions for ISO-C
@@ -62,4 +62,4 @@ rm -f $RPM_BUILD_ROOT%{_infodir}/dir
 
 %changelog
 * Wed Oct 02 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.65
-- Rebuild for Fedora
+- Rebuilt for Fedora

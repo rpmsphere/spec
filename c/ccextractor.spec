@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		ccextractor
 Version:	0.88
@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.88
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 06 2019 tex - 0.88-1pclos2019
 - new version
 * Fri Nov 22 2013 MBantz <martin dot bantz at gmail dot bantz> 0.67-1pclos2013

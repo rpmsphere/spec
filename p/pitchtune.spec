@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue May 17 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Sep 20 2005 - Chris McBride
 - New version 0.0.4

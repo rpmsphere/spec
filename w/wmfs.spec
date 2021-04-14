@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Sep 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.beta20190813
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 02 2011 PLD Team <feedback@pld-linux.org>
 - Revision 1.2  2011/02/02 18:19:59  sparky
 - BR: xorg-lib-libXft-devel

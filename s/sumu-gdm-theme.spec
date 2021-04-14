@@ -40,7 +40,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 28 2011 Alexander Todorov <atodorov@NO-SPAM.otb.bg> 3.0.7-1.el6otb
 - Use fixed image width for better display on different resolutions
 * Wed Feb 09 2011 Alexander Todorov <atodorov@NO-SPAM.otb.bg> 3.0.6-1.el6otb

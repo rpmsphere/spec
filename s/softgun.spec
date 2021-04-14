@@ -33,7 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.21
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 12 2010 uli@suse.de
 - update -> 0.18
 * Fri Nov 28 2008 uli@suse.de

@@ -160,7 +160,7 @@ Development header files and libraries for Gfarm file system
 
 %changelog
 * Fri Mar 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.17
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Dec  8 2016 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.7.0-1
 - Gfarm version 2.7.0 released

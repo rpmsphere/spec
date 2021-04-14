@@ -49,7 +49,7 @@ make
 
 %changelog
 * Sun Jun 02 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 18 2006 Eugene V. Horohorin <genix@altlinux.ru> 0.2.9-alt0.1
 - new (test) version 0.2.9test
 - gcc4.1 compatible

@@ -139,7 +139,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Dec 10 2011 caleb - 0.9~rc1
 * Tue Dec 12 2011 Edward Liu - 2.5.1

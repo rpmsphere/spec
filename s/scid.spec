@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jan 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 22 2010 mantel@suse.de
 - fix language dependant bug in ECO browser
 * Tue Mar  9 2010 packman@links2linux.de - 4.2.2

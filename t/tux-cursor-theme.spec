@@ -33,7 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct  7 2008 jw@suse.de
 - added /usr/bin/tuxcursors
   shell script with some helpful logic and info.

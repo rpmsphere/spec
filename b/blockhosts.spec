@@ -84,7 +84,7 @@ fi
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Apr 17 2010 David Bolt <davjam@davjam.org> 2.4.0
 - first package for openSUSE

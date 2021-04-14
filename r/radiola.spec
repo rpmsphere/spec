@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		radiola
 Version:	0.0.1
@@ -40,6 +40,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 20 2011 TI_Eugene <ti.eugene@gmail.com> - 0.0.1
 - initial OBS revision

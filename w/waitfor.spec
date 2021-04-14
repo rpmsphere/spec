@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name:			waitfor
 Version:		0.5
 Release:		3.1
@@ -44,7 +45,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Jun 24 2009 Pascal Bleser <pascal.bleser@opensuse.org> 0.4
 - moved to openSUSE Build Service

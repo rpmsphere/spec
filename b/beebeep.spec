@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: beebeep
 Summary: Secure Network Chat
@@ -36,4 +36,4 @@ cp -a test/* %{buildroot}%{_libdir}
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.8.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

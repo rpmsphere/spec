@@ -72,6 +72,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 08 2008 Feather Mountain <john@ossii.com.tw> 0.6-1.ossii
 - Build for OSSII

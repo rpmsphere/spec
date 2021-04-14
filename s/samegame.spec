@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		samegame
 Version:	1.1.0
@@ -36,7 +36,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue May 05 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 05 2011 Jari Karppinen <jari.p.karppinen at, gmail.com> 1.1.0-1
 - Qt port.
 * Sat Mar 05 2011 Jari Karppinen <arkiwursti at, gmail.com> 1.0.1-1

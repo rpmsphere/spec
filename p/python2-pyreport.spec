@@ -50,7 +50,7 @@ find $RPM_BUILD_ROOT/%{python2_sitelib} -name "*.pyc" -exec rm -f '{}' \;
 
 %changelog
 * Mon Dec 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.4c
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 20 2011 ocefpaf@yahoo.com.br
 - specfile cleanup
 * Thu Aug  5 2010 Filipe Fernandes <ocefpaf@gmail.com> - 0.3.4c

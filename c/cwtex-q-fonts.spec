@@ -39,4 +39,4 @@ install -m 0644 *.ttf $RPM_BUILD_ROOT%{fontdir}
 
 %changelog
 * Tue Mar 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

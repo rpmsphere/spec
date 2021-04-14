@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		abcmusiex
 Summary:	ABC Music Reading Exercises Generator 
@@ -49,7 +49,7 @@ sed -i 's|-ggdb|-Wl,--allow-multiple-definition|' configure
 
 %changelog
 * Wed May 10 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 1 2010 Rodolfo Alcazar <rodolfoap@gmail.com> 1.0-8
 - Fixes: minor syscommand fixes
 * Wed Jun 23 2010 Rodolfo Alcazar <rodolfoap@gmail.com> 1.0-7

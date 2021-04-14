@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 26 2011 Александр Казанцев <kazancas@mandriva.org> 0.9.6-1mdv2010.1
 + Revision: 632933
 + rebuild (emptylog)

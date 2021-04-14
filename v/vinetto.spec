@@ -39,6 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.07
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 22 2010 Fabian Affolter <fabian@bernewireless.net> - 0.07-1.beta
 - Initial spec for Fedora

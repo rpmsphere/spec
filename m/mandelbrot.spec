@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: mandelbrot
 Summary: GTK Mandelbrot browser
@@ -46,4 +46,4 @@ EOF
 
 %changelog
 * Mon Mar 09 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

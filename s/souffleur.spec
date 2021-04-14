@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    souffleur
 Version: 0.1.8
@@ -52,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora

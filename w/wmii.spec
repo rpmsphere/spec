@@ -93,7 +93,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}/etc/X11/wmii-hg/p
 
 %changelog
 * Sat Nov 24 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 18 2011 Matthew Dawkins <mattydaw@mandriva.org> 3.10-0.b1.1mdv2012.0
 + Revision: 705294
 - new version 3.10 b1 changeset f3d88385ea7c

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: petri-foo
 Version: 0.1.87
@@ -127,7 +127,7 @@ gtk-update-icon-cache %{_datadir}/pixmaps &> /dev/null || :
 
 %changelog
 * Tue Jan 07 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.87
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 15 2011 Simon Lewis <simon.lewis@slnet-online.de> - git20111211-1.sl
 + Various changes to make openBUILD happy!
 * Mon Dec 12 2011 Simon Lewis <simon.lewis@slnet-online.de> - git20111211-0.sl

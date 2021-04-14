@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Yet another Motif file manager
 Name: xplore
@@ -49,6 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 05 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 14 2003 Albert Graef <ag@muwiinfa.geschichte.uni-mainz.de>
 - Initial package

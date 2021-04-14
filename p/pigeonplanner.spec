@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: pigeonplanner
 Summary: A simple to use pigeon database
 Version: 2.2.2
@@ -40,4 +40,4 @@ sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Tue Feb 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

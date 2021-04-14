@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:          unsermake
 Version:       0.0svn20060112
 Release:       4.1
@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0svn20060112
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 29 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 0.0svn20060112-2mamba
 - specfile updated and rebuilt
 * Thu Jan 12 2006 Silvan Calarco <silvan.calarco@qilinux.it> 0.0svn20060112-1qilnx

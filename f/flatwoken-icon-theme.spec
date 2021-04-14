@@ -30,4 +30,4 @@ cp -a %{theme_name} %{theme_name}Min %{buildroot}%{_datadir}/icons
 
 %changelog
 * Thu Sep 29 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20160321
-- Rebuild for Fedora
+- Rebuilt for Fedora

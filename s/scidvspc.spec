@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _name scid_vs_pc
 %{!?tcl_version: %global tcl_version %(echo 'puts $tcl_version' | tclsh)}
 
@@ -154,7 +154,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Tue Jan 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.21
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 25 2016 Alex Wood <awood@redhat.com> 4.16-3
 - Apply patch to address crashes with Stockfish. See BZ 1325013.
 * Thu Mar 31 2016 Alex Wood <awood@redhat.com> 4.16-2

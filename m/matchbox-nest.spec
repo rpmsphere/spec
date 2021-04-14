@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.3-6mdv2011.0
 + Revision: 620298
 - the mass rebuild of 2010.0 packages

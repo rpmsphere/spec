@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: awe
 Version: 2012
@@ -46,4 +46,4 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Thu Oct 18 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2012
-- Rebuild for Fedora
+- Rebuilt for Fedora

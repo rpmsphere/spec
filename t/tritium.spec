@@ -36,4 +36,4 @@ sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

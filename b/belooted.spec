@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	A game of Belote
 Name:		belooted
@@ -66,6 +66,6 @@ fi
 
 %changelog
 * Mon Jul 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 5 2009 Radu-Cristian Fotescu <info [AT] beranger [DOT] org>
 - Initial release for this repo. No translations (English-only)

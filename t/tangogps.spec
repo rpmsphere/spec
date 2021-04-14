@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 25 2010 Peter Robinson <pbrobinson@gmail.com> 0.99.4-2
 - Add new deps
 * Fri Jun 25 2010 Peter Robinson <pbrobinson@gmail.com> 0.99.4-1

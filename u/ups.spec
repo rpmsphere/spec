@@ -77,7 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.38
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 18 2010 Steve Webb <bigwebb@gmail.com>
 - http://badcheese.com/2010/08/03/ups-debugger.html
 - Initial package

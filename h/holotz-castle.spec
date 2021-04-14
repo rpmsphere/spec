@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		holotz-castle
 Version:	1.3.14
 Release:	1
@@ -121,7 +121,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 08 2009 Guillaume Bedot <littletux@mandriva.org> 1.3.14-1mdv2010.0
 + Revision: 433549
 - New release 1.3.14

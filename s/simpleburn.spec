@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	A basic burning tool
 Name:		simpleburn
@@ -45,7 +45,7 @@ install -m755 src/lib*.so %{buildroot}%{_libdir}/%{name}
 
 %changelog
 * Sat Apr 18 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 27 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.6.4-1
 + Revision: 800832
 - imported package simpleburn

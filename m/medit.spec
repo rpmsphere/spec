@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.92
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Aug 30 2008 Funda Wang <fundawang@mandriva.org> 0.9.4-1mdv2009.0
 + Revision: 277537
 - New version 0.9.4

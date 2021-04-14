@@ -73,6 +73,6 @@ the package reiserfs-utils.
 
 %changelog
 * Fri Feb 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 3 2004 Dries Verachtert 0.3.0.4-1
 - first packaging for Fedora Core 1

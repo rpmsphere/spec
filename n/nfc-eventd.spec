@@ -31,7 +31,7 @@ find %{buildroot} -type f -name "*.la" -delete
 
 %changelog
 * Fri Jul 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 28 2013 jengelh@inai.de
 - Update to new upstream release 0.1.7
   * Support the libnfc-1.7.0 API

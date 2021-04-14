@@ -1,5 +1,5 @@
 %global _firmwarepath   /usr/lib/firmware
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _binaries_in_noarch_packages_terminate_build 0
 
 Name:		wcn36xx-firmware

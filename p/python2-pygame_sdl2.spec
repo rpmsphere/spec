@@ -56,7 +56,7 @@ sed -i 's|2.1.0-for-renpy-7.3.5|7.3.5|' %{buildroot}%{python2_sitearch}/pygame_s
 
 %changelog
 * Thu Aug 20 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 7.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 07 2017 Aleksei Nikiforov <darktemplar@altlinux.org> 6.99.10.1227-alt2
 - Reimported sources and fixed build
 * Tue Jul 26 2016 Fr. Br. George <george@altlinux.ru> 6.99.10.1227-alt1

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          neonview
 Version:       0.8.2
@@ -39,7 +39,7 @@ install -m 0755 %{name} %{buildroot}%{_bindir}/
 
 %changelog
 * Wed Jul 08 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 0.8.2-2
 + Revision: 17e2aaa
 - MassBuild#464: Increase release tag

@@ -74,7 +74,7 @@ done
 
 %changelog
 * Thu Nov 19 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.0
-* Rebuild for Fedora
+* Rebuilt for Fedora
 * Wed Jul 24 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.11.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 * Tue Jul 09 2019 Filipe Rosset <rosset.filipe@gmail.com> - 0.11.0-1

@@ -41,4 +41,4 @@ install -m644 docs/cutechess-cli.6 %{buildroot}%{_mandir}/man6
 
 %changelog
 * Fri Jul 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora

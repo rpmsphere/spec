@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          xfractint
 Version:       20.04p14
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Apr 21 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 20.04p14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug 26 2008 Tiziana Ferro <tiziana.ferro@email.it> 20.2.04-2mamba
 - update system menu entry, vendor, distribution, mantainer
 - added buildrequirements

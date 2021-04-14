@@ -33,4 +33,4 @@ install -Dm755 starfish %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sun Jul 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

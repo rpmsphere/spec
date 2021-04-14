@@ -33,7 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Dec 27 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 16 2013 giacomosrv@gmail.com
 - updated to 2.6.3
 * Sat Mar  2 2013 giacomosrv@gmail.com

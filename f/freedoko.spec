@@ -1,5 +1,5 @@
 %global ename FreeDoko
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		freedoko
 Version:	0.7.18
@@ -108,7 +108,7 @@ make install %{?jobs:-j%{jobs}} DESTDIR=%{buildroot} OPERATING_SYSTEM=Linux
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.18
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 09 2009 Feather Mountain <john@ossii.com.tw> 0.7.5-567.ossii
 - Rebuild for M6(OSSII)
 * Fri Jun 06 2008 Toni Graffy <toni@links2linux.de> 0.7.5-567.pm.svn20080529

@@ -47,4 +47,4 @@ install -Dm644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Thu Jul 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.8
-- Rebuild for Fedora
+- Rebuilt for Fedora

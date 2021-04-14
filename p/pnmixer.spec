@@ -63,7 +63,7 @@ desktop-file-install \
 
 %changelog
 * Mon Mar 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 14 2020 daviddavid <daviddavid> 0.7.2-3.mga8
 + Revision: 1516888
 - use new cmake macros

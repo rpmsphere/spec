@@ -295,6 +295,6 @@ fi
 
 %changelog
 * Mon Jun 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.alpha48
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 26 2013 Kari Hurtta <deb@elmme-mailer.org>
 - Initial package

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: photivo
 Version: 20200406
@@ -81,7 +81,7 @@ chmod +x %buildroot%_bindir/*
 
 %changelog
 * Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 20200406
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 03 2013 Yuri N. Sedunov <aris@altlinux.org> 0-alt10.f1a2a2889c33
 - update to current snapshot
 - built against libexiv2.so.13

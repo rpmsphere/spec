@@ -38,7 +38,7 @@ find -type f -perm -u+x | xargs install -m755 -t $RPM_BUILD_ROOT%{_bindir}
 
 %changelog
 * Mon Jul 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1c1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Oct 22 2011 shlomif <shlomif> 2.1c1-1.mga2
 + Revision: 157349

@@ -45,7 +45,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 21 2008 Wei-Lun Chao <bluebat@member.fsf.org> 1.0.2-1.ossii
 - Add CNSFonts files
 * Thu Nov 15 2007 Wei-Lun Chao <bluebat@member.fsf.org> 1.0.1-2.ossii

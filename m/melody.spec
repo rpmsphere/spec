@@ -57,6 +57,6 @@ desktop-file-install --vendor="" \
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 07 2020 tex - 2.2.1-1pclos2020
 - create pkg

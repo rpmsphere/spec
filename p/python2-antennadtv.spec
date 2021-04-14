@@ -41,4 +41,4 @@ python2 setup.py install --root=%{buildroot}
 
 %changelog
 * Mon Jan 27 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.01.20
-- Rebuild for Fedora
+- Rebuilt for Fedora

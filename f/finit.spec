@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define snapshot 0
 %define __release 1
 %if %{snapshot}
@@ -62,7 +62,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 14 2009 Caio Begotti <caio1982@mandriva.org> 0.6-7mdv2010.0
 + Revision: 367163
 - no need to keep those as they have been merged upstream and a new version will be released soon

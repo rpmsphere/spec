@@ -104,6 +104,6 @@ sed -i '/^LDFLAGS /s/=.*$/=/' $RPM_BUILD_ROOT%{_libdir}/smlsharp/config.mk
 
 %changelog
 * Fri Jun 12 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 29 2020 Katsuhiro Ueno <katsu@riec.tohoku.ac.jp> - 3.6.0-1
 - Initial package.

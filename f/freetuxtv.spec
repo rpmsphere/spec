@@ -45,6 +45,6 @@ rm -fr %{buildroot}%{_includedir}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.6.8-3
 - (10a1602) MassBuild#1257: Increase release tag

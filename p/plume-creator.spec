@@ -48,7 +48,7 @@ cp -p translations/*.qm %{buildroot}%{locale}
 
 %changelog
 * Fri Sep 11 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.66.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 0.66.1-3.mga5
 + Revision: 743529
 - Second Mageia 5 Mass Rebuild

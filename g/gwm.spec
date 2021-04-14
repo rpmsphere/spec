@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: The Generic Window Manager
 Name: gwm
@@ -44,4 +44,4 @@ make
 
 %changelog
 * Thu Jun 04 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8d
-- Rebuild for Fedora
+- Rebuilt for Fedora

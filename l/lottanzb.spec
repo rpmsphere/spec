@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: Automated Usenet Client
 Name: lottanzb
 Version: 0.6
@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 12 2013 umeabot <umeabot> 0.5.3-3.mga3
 + Revision: 358948
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

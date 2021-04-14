@@ -156,7 +156,7 @@ fi
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Feb 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.3-20
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild

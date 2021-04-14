@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: violetland
 Version: 0.5
@@ -105,7 +105,7 @@ install -D %name.desktop %buildroot%_datadir/applications/%name.desktop
 
 %changelog
 * Tue Jan 05 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Nov 30 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.4.3-alt2.1
 - Rebuilt with Boost 1.52.0
 * Thu Oct 25 2012 Fr. Br. George <george@altlinux.ru> 0.4.3-alt2

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: terminol
 Summary: A simple terminal emulator
@@ -35,4 +35,4 @@ make -C build install INSTALLDIR=%{buildroot}/usr
 
 %changelog
 * Thu Dec 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

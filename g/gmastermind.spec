@@ -54,7 +54,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.01
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 08 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 0.01-2mamba
 - specfile updated and rebuilt
 * Wed Jul 20 2005 Alessandro Ramazzina <alessandro.ramazzina@qilinux.it> 0.01-1qilnx

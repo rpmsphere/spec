@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Stream webcam video to HTTP
 Name: mjpg-streamer
@@ -120,6 +120,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.r182
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 10 2012 Igor Vlasenko <viy@altlinux.ru> r137-alt1_102.2
 - converted from openSUSE Build Service (Projects > home:vodoo)

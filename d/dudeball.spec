@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define   _base Dudeball
 %define   _unstable unstable
 
@@ -44,6 +44,6 @@ cp %{SOURCE1} Makefile
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 22 2012 Chris Lin <chris@ossii.com.tw> 2.3.4-1
 - first

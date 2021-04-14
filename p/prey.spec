@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 08 2011 Leonardo Coelho <leonardoc@mandriva.com> 0.5.3-3mdv2011.0
 + Revision: 683312
 - bump new version

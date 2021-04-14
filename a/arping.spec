@@ -35,6 +35,6 @@ chmod -x extra/arping-scan-net.sh
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.21
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 23 2008 Fabian Affolter <fabian@bernewireless.net> - 2.08-1
 - Initial spec for Fedora

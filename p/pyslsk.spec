@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Feb 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.7c
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 04 2008 Tiziana Ferro <tiziana.ferro@email.it> 1.2.7b-4mamba
 - update system menu entry
 - added autobuildreq

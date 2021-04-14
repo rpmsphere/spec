@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           mrsd
 Version:        0.2
@@ -48,6 +48,6 @@ install -m 644 -D mrsd.desktop ${RPM_BUILD_ROOT}%{_datadir}/applications/mrsd.de
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 12 2012 Robert Wei <robert.wei@ossii.com.tw> 0.2-1
 - build RPM package for Fedora 17

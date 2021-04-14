@@ -36,7 +36,7 @@ Authors:
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Jan 20 2008 Pascal Bleser <guru@unixtech.be> 0.3.1
 - new package

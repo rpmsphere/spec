@@ -39,6 +39,6 @@ You can use this to spotlight objects on the desktop.
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 25 2011 pascal.bleser@opensuse.org
 - initial version (0.1)

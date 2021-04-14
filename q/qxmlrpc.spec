@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:        Full Qt4 based implementation of XML-RPC protocol
 Name:           qxmlrpc
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 28 2011 Alex Burmashev <burmashev@mandriva.org> 1-2
 + Revision: 687644
 - spec fix

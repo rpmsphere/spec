@@ -39,7 +39,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.72
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Sep 11 2007 Lenz Grimmer <lenz@grimmer.com>
 Initial package for the openSUSE build service (Version 0.72), based 

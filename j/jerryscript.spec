@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: JavaScript engine for the Internet of Things
 Name: jerryscript
@@ -46,4 +46,4 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Fri Sep 20 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora

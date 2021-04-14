@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Command-line based markdown presentation tool
 Name:		mdp
@@ -30,7 +30,7 @@ make
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 24 2015 Denis Silakov <denis.silakov@rosalab.ru> 0.93.0-1
 + Revision: fbb562e
 - Fix ncurses BR

@@ -57,7 +57,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 21 2007 Silvan Calarco <silvan.calarco@mambasoft.it> 0.9.0-2mamba
 - entry group fixed
 - desktop menu file fixed

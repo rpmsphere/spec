@@ -45,7 +45,7 @@ rm -fr $RPM_BUILD_ROOT%{_datadir}/%{oname}/docs
 
 %changelog
 * Wed Jun 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 23 2013 SymbianFlo <symbianflo@mandrivausers.ro> 0.0.13-1
 + Revision: 24b004a
 - dropped mrb distsuffix, enable debug

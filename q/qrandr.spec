@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _name QRandr
 
 Name:		qrandr
@@ -44,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jan 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2008.05.23
-- Rebuild for Fedora
+- Rebuilt for Fedora

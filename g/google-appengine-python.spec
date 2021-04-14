@@ -118,7 +118,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}/opt/google-appeng
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 25 2011 i@marguerite.su
 - fixed all errors and warnings, add setpath.sh to set path for
   outside directory execute.

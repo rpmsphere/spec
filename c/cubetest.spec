@@ -67,7 +67,7 @@ rm -fr %buildroot
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 03 2008 Feather Mountain <john@ossii.com.tw>
 - Rebuild for M6(OSSII)
 * Sun May 11 2008 Dominique Leuenberger <dominique-rpm@leuenberger.net>

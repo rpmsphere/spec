@@ -121,7 +121,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Apr 27 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 13 2008 Bernhard Rosenkraenzer <bero@arklinux.org> 0.4.5-0.370.2ark
 - Remove bogus arts dependency
 * Mon Sep 24 2007 Bernhard Rosenkraenzer <bero@arklinux.org> 0.4.5-0.370.1ark

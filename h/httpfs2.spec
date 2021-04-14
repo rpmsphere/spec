@@ -37,7 +37,7 @@ sed -i 's/\r$//' httpfs2.1.txt
 
 %changelog
 * Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 13 2020 umeabot <umeabot> 0.1.5-6.mga8
 + Revision: 1513508
 - Mageia 8 Mass Rebuild

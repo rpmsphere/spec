@@ -29,7 +29,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.41
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 11 2012 Alex Burmashev <alex.burmashev@rosalab.ru> 0.41-3
 + Revision: d67eac9
 - merging with rosa2012.1 of project wakeonlan

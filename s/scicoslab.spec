@@ -69,6 +69,6 @@ rpm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jun 02 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 09 2012 Jean-Philippe Chancelier
 - Package

@@ -41,4 +41,4 @@ sed -i 's|#! /bin|#! /usr/bin|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

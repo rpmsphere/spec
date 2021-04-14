@@ -52,7 +52,7 @@ install -D -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 21 2012 joop.boonen@opensuse.org
 - Added missing BuildRequires automake
 - Cleaned the spec file up

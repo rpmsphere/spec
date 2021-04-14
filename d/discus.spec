@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Oct 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 26 2004 wolf <feedback@pld-linux.org>
 - proper requires
 * Fri Nov 14 2003 qboosh <feedback@pld-linux.org>

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: flxlab
 Summary: A program for running psychology experiments
@@ -35,4 +35,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -50,7 +50,7 @@ significant user control over colors, styles, options and details.
 
 %changelog
 * Mon Apr 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.42
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 11 2009 Pascal Bleser <pascal.bleser@opensuse.org> 2.41-0.pm.1
 - updated in-tree ming to 0.4.2
 - update to 2.41

@@ -48,7 +48,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 16 2008 Wind Win <yc.yan@ossii.com.tw> 2.0-4
 - Append requirement(gnomekiss need lha to open *.lhz file) for application running.
 * Tue Sep 11 2008 Wind Win <yc.yan@ossii.com.tw> 2.0-3

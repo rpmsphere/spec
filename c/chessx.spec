@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           chessx
 Version:        1.5.0
@@ -61,7 +61,7 @@ EOF
 
 %changelog
 * Tue Jan 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 20 2012 dams <dams> 0.9.4-2.mga3
 + Revision: 332984
 - add back icon (broken by last update)

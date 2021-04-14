@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 23 2010 awafaa@opensuse.org
 - Fix %%install section to comply with Factory requirements
 * Mon Mar 22 2010 awafaa@opensuse.org

@@ -27,6 +27,6 @@ install -p -m644 gmsl __gmsl %buildroot%_includedir
 
 %changelog
 * Tue Sep 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 16 2014 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 1.1.6-alt1
 - Initial build for Sisyphus

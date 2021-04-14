@@ -40,6 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 27 2008 - uli@suse.de
 - fixed bugs found by rpmlint

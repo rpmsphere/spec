@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: kchildlock
 BuildRequires: kdelibs kdelibs-devel perl-Data-Dumper perl-Digest perl-Digest-MD5 qca
@@ -57,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.91.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

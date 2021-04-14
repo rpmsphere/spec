@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           gnome-vfsmm26
 Version:        2.26.0
@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Nov 13 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.26.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.26.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 * Sun Aug 16 2009 Denis Leroy <denis@poolshark.org> - 2.26.0-1

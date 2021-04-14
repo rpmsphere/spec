@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _firmwarepath   /usr/lib/firmware
 %define _binaries_in_noarch_packages_terminate_build 0
 

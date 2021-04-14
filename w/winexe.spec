@@ -46,7 +46,7 @@ install -Dm755 source4/bin/winexe %{buildroot}%_bindir/winexe
 
 %changelog
 * Mon Jul 25 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.00
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 12 2016 umeabot <umeabot> 1.00-4.mga6
 + Revision: 959178
 - Mageia 6 Mass Rebuild

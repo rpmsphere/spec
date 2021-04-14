@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.1-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.1-2

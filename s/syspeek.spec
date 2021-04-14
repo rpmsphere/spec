@@ -62,7 +62,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Mon Jul 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3bzr
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 12 2014 dap.darkness@gmail.com
 - Initial build.
 - Added syspeek-file-not-found.patch &

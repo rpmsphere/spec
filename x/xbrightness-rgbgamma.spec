@@ -1,4 +1,5 @@
-%global debug_package %{nil}
+%define __python /usr/bin/python2
+%undefine _debugsource_packages
 Name: xbrightness-rgbgamma
 Summary: Brightness and gamma adjustment tool
 Version: 2.1.0
@@ -46,7 +47,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 23 2011 Sawa <sawa@ikoinoba.net> - 2.1.0-1
 - version up
 * Fri May 27 2011 Sawa <sawa@ikoinoba.net> - 1.1.0-1

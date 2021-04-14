@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.7+git%{git_date}
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun  8 2012 lazy.kent@opensuse.org
 - Add iat-0.1.7-automake112.patch: fix build with automake-1.12.
 - Fix typos in Summary/Description.

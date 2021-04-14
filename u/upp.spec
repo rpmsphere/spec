@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __os_install_post %{nil}
 
 Name:           upp
@@ -136,7 +136,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Oct 22 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 15260
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 30 2010 fisiu@opensuse.org
 - fixed %%{libdir} in external Makefile and GCC.bm
 * Wed Nov 17 2010 fisiu@opensuse.org

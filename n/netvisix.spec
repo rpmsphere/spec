@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           netvisix
 Version:        1.3.2
@@ -52,7 +52,7 @@ install -Dm 0644 %{SOURCE3} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Mon Nov 09 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 20 2018 ecsos@opensuse.org
 - Add netvisix-include.patch to fix build error for Tumbleweed.
 * Sun Jul  3 2016 avvissu@yandex.by

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           convertall
 Version:        0.8.0
 Release:        1
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov  3 2011 asterios.dramis@gmail.com
 - Update to version 0.5.2:
   * Updates:

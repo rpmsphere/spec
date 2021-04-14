@@ -62,7 +62,7 @@ rm -rf "%{buildroot}"
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Nov 16 2012 Robert Wei <robert.wei@ossii.com.tw> 0.4.3-3
 - L10N of Traditional Chinese (zh_TW)
 * Fri May 18 2012 alantom<alan@ossii.com.tw>  0.4.3-2

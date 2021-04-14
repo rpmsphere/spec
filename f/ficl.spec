@@ -63,7 +63,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Sat Feb 19 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.0-1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 26 2003 Jeff Johnson <jbj@redhat.com> 4.0.31-1
 - upgrade to 4.0.31.
 * Fri Apr 13 2001 Jeff Johnson <jbj@redhat.com>

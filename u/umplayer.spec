@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: umplayer
 Summary: Complete Frontend for MPlayer
@@ -71,6 +71,6 @@ update-desktop-database &> /dev/null || :
 
 %changelog
 * Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.98.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 28 2011 Sawa <sawa@ikoinoba.net> - 0.95-1.svn163
 - Initial package

@@ -81,7 +81,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Wed May 18 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20160424
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Jan  8 2016 Lawrence R. Rogers <lrr@cmu.edu> 20160108-1
 * Release 20160108-1

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: osgraphx
 Summary: A 3D file viewer based on openscenegraph
@@ -61,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/*.txt
 
 %changelog
 * Sun Jun 16 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

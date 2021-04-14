@@ -38,7 +38,7 @@ make
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.2pov2.20
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Nov  2 2007 Tim Fenn <fenn@stanford.edu>
 - minor edits
 * Sun Nov  5 2006 Tim Fenn <fenn@stanford.edu>

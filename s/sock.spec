@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 30 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 25 2006 mls@suse.de
 - converted neededforbuild to BuildRequires
 * Thu Feb 26 2004 hmacht@suse.de

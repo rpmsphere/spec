@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: floatbg
 Summary: Slowly modify the color of the X root window
@@ -35,4 +35,4 @@ install -Dm644 %{name}.man %{buildroot}%{_mandir}/man1/%{name}.1
 
 %changelog
 * Thu May 17 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		ackit
 Version:	6.1pre1
@@ -55,6 +55,6 @@ make PREFIX=%{buildroot}/usr install
 
 %changelog
 * Thu Dec 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1pre1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 02 2011 Fr. Br. George <george@altlinux.ru> 6.0pre4-alt1
 - Initial build from scratch

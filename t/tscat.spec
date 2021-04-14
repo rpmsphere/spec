@@ -43,7 +43,7 @@ since the previous line (previous timestamp).
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Dec 29 2007 Pascal Bleser <guru@unixtech.be> 1.0
 - new package

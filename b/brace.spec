@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A dialect of C that looks like Python
 Name: brace
@@ -43,4 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 24 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.9
-- Rebuild for Fedora
+- Rebuilt for Fedora

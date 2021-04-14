@@ -52,7 +52,7 @@ make %{?_smp_mflags} CFLAGS="%{optflags}"
 
 %changelog
 * Mon Apr 18 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 22 2014 nemysis@gmx.ch
 - Use for patches %%{name}-version instead of %%{name}-%%{version}
 * Sun Dec 21 2014 nemysis@gmx.ch

@@ -60,6 +60,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Jan 06 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 28 2007 Toni Graffy <toni@links2linux.de> - 0.4.0-0.pm.1
 - initial version: 0.4.0

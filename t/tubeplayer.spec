@@ -52,4 +52,4 @@ EOF
 
 %changelog
 * Sun Jun 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2012.08.19
-- Rebuild for Fedora
+- Rebuilt for Fedora

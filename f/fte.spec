@@ -1,5 +1,5 @@
 %define __spec_install_post %{nil}
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Programmer oriented text editor
 Name:		fte
@@ -62,7 +62,7 @@ cp -a config doc %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Sat Feb 08 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 20110708
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 21 2011 Funda Wang <fwang@mandriva.org> 1:0.50-0.20040412.8mdv2011.0
 + Revision: 632034
 - simplify BR

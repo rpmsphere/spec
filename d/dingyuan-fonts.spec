@@ -28,4 +28,4 @@ install -m644 *.ttf %{buildroot}%{fontdir}
 
 %changelog
 * Mon May 09 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.5.1411
-- Rebuild for Fedora
+- Rebuilt for Fedora

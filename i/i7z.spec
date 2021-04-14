@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           i7z
 Version:        0.28git
@@ -28,7 +28,7 @@ install -Dpm 755 %{name} %{buildroot}%{_sbindir}/%{name}
 
 %changelog
 * Mon May 04 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.28git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 14 2012 Matthieu Saulnier <fantom@fedoraproject.org> - 0.27.2-1
 - Update to 0.27.2 (fix RHBZ #850585)
 * Mon Sep 10 2012 Dan Horák <dan[at]danny.cz> - 0.27.1-2

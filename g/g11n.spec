@@ -39,6 +39,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 15 1999 Brian Lin <foxman@xlinux.com>
 - create an automatic build script

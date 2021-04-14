@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           gelemental
 Summary:        Periodic Table Viewer
@@ -82,7 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 04 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 29 2008 kirill.kirillov@gmail.com
 - gelemental-1.2.0-gcc43.patch (added "#include <limits>" to value.hh)
 * Tue Mar 18 2008 lars@linux-schulserver.de

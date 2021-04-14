@@ -70,7 +70,7 @@ chmod 644 $RPM_BUILD_ROOT/%{_mandir}/man1/*
 
 %changelog
 * Fri Sep 08 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan  5 2012 pgajdos@suse.com
 - build also with libpng15
   * libpng15.patch

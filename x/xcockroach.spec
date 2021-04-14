@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xcockroach
 Version: 0.4
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 01 2011 Funda Wang <fwang@mandriva.org> 0.4-10mdv2011.0
 + Revision: 634890
 - drop libpath patch (I don't know why this patch exist)

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           libgnomeuimm26
 Version:        2.28.0
@@ -77,7 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Nov 13 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.28.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.28.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 * Fri Sep 25 2009 Denis Leroy <denis@poolshark.org> - 2.28.0-1

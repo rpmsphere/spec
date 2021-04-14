@@ -100,7 +100,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.02r2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Jun 06 2011 Chris Lin <chris.lin@ossii.com.tw>
 - Fix types in cmn/utils.h

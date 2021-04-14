@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define tarballdir build
 
 Name:           wally
@@ -76,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 23 2010 - Sandrine Soudant <sandrine.soudant at gmail.com> - 2.4.1-1
  - Build RPM package for Wally 2.4.1	
 * Sat Aug 28 2010 - Sandrine Soudant <sandrine.soudant at gmail.com> - 2.4.0-1

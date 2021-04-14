@@ -46,7 +46,7 @@ fi
 
 %changelog
 * Fri Sep 18 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 9.53.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct  4 2019 Lawrence R. Rogers <lrr@cert.org> 9.27-1
 * Release 9.27-1
 	Version 9.27

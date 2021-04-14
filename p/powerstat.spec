@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           powerstat
 Version:        0.02.15
@@ -32,7 +32,7 @@ make %{?_smp_mflags}
 
 %changelog
 * Thu Feb 22 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.02.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 31 2018 mardnh@gmx.de
 - update to version 0.02.15
   * Makefile: bump version

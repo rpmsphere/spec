@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	AfterStep Window Manager (NeXTalike)
 Name:		AfterStep
@@ -150,7 +150,7 @@ if [ -x /usr/sbin/fndSession ]; then /usr/sbin/fndSession || true ; fi
 
 %changelog
 * Fri Oct 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Dec 11 2008 Feather Mountain <john@ossii.com.tw> - 2.2.8-1.ossii
 - new version.

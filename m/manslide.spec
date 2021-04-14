@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		manslide
 Summary:	Graphical slideshow creation program
 Version:	2.0.3
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Aug 05 2008 Funda Wang <fundawang@mandriva.org> 2.0.3-4mdv2009.0
 + Revision: 263933

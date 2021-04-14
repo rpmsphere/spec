@@ -28,6 +28,6 @@ install -Dm755 jex2 %{buildroot}%{_bindir}/jex
 
 %changelog
 * Wed Jun 03 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 20 1999 Joris Struyve 1.3.7
 - Initial package

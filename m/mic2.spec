@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:       mic2
 Summary:    Tools for building images for MeeGo
 Version:    0.24.15git
@@ -69,4 +69,4 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Thu Feb 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.24.15git
-- Rebuild for Fedora
+- Rebuilt for Fedora

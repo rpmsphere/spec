@@ -88,7 +88,7 @@ done
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 29 2012 lazy.kent@opensuse.org
 - Use pkgconfig(*) as build dependencies.
 - Removed check for unsupported openSUSE versions.

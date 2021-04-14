@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: flashpascal
 Summary: Pascal for Flash compiler
@@ -30,4 +30,4 @@ cp -a dcu doc ppu samples units readme.txt %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Thu Jan 02 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora

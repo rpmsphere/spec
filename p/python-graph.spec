@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Summary:   A library for working with graphs in Python
 Name:      python-graph
 Version:   1.8.2
@@ -61,7 +62,7 @@ cd ../dot
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 29 2009 toms@suse.de
   Updated to version 1.5.0 (May 03, 2009):
   Enhancements:

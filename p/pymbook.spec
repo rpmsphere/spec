@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           pymbook
 Version:        0.4
 Release:        7.1
@@ -49,7 +49,7 @@ gtk-update-icon-cache -qf %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Mon Jul 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 5 2010 Yan-ren Tsai <elleryq@gmail.com> 0.4-0
 - Initial release for Fedora.
     Note that this specfile is tested.

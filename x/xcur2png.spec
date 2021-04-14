@@ -33,7 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Oct 17 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 01 2009 tks - 0.7.1-1%{?dist}
 - Version 0.7.1
 * Thu Oct 09 2008 tks - 0.7.0-1%{?dist}

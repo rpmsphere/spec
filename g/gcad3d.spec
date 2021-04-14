@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+%undefine _debugsource_packages
 %define	oname gCAD3D
 %ifarch x86_64 aarch64
 %define ARCH 64
@@ -79,7 +79,7 @@ ln -s %{_libdir}/%{name}/%{oname} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Mon Aug 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.40
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 06 2015 alexl <alexl> 2.01-4.mga5
 + Revision: 808843
 - added GenericName in desktop file

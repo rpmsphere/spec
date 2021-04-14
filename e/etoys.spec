@@ -101,7 +101,7 @@ update-mime-database %{?fedora:-n} %{_datadir}/mime &> /dev/null || :
 
 %changelog
 * Thu Mar 21 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.2408
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Feb 09 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 5.0.2408-14
 - Escape macros in %%changelog

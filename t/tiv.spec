@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           tiv
 Version:        1.0.0git
@@ -38,4 +38,4 @@ install -Dm755 src/main/cpp/%{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Nov 21 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora

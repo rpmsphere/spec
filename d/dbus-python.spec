@@ -62,7 +62,7 @@ rm -rfv $RPM_BUILD_ROOT%{_datadir}/doc/dbus-python/
 
 %changelog
 * Wed Nov 18 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.16
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Jul 27 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.2.16-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild

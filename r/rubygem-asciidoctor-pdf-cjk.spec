@@ -49,4 +49,4 @@ find %{buildroot}%{gem_instdir}/bin -type f | xargs chmod a+x
 
 %changelog
 * Wed Feb 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

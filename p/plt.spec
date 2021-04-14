@@ -45,7 +45,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Mar 31 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 27 2005 George B Moody <george@mit.edu>
 - updated spec to work with updated Makefiles
 * Thu May 01 2003 George B Moody <george@mit.edu>

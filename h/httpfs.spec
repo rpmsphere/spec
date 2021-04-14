@@ -34,7 +34,7 @@ install -D -m 755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.06.07.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 14 2020 umeabot <umeabot> 2.06.07.10-4.mga8
 + Revision: 1522601
 - Mageia 8 Mass Rebuild

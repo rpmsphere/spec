@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           python3-jcc
 Version:        3.6
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Apr 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 25 2008 Felix Schwarz <felix.schwarz@oss.schwarz.eu> - 1.9-5
 - use environment variables instead of patching setup.py
 - compile with -O0 to work around a SIGSEGV in generated code

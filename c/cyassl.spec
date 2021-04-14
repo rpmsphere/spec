@@ -53,7 +53,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 07 2011 Oden Eriksson <oeriksson@mandriva.com> 1.9.0-1mdv2011.0
 + Revision: 642435
 - 1.9.0

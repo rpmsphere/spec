@@ -31,6 +31,6 @@ Perl script to convert flac files to mp3.
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0RC1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2008 crrodriguez@suse.de
 - initial build as package

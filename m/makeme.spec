@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A modern replacement for the autoconf and make tools
 Name: makeme
@@ -39,4 +39,4 @@ ln -s ../%{_lib}/%{name}/me %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Jul 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

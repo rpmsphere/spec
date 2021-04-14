@@ -170,7 +170,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 25 2009 Adam Williamson <awilliam@redhat.com> - 0.1.2-0.2.20090918svn2578
 - spec clean:
 	+ add svn snapshot source creation comment

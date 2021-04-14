@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		wallch
 Version:	4.15.r213
@@ -86,7 +86,7 @@ fi
 
 %changelog
 * Wed Jan 04 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 4.15.r213
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 17 2016 Jakub Jelen <jjelen@redhat.com> - 4.15.r213-2
 - Add missing cmath include to work on Fedora 24
 * Tue May 17 2016 Jakub Jelen <jjelen@redhat.com> - 4.15.r213-1

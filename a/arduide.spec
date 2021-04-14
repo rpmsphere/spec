@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:     arduide
 Summary:  Qt-based IDE for Arduino
@@ -38,7 +38,7 @@ mv %{buildroot}%{_datadir}/icons %{buildroot}%{_datadir}/pixmaps
 
 %changelog
 * Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 1.0-0.beta1.4.mga3
 + Revision: 346023
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

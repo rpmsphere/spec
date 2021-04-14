@@ -36,7 +36,7 @@ make
 
 %changelog
 * Sun Jun 02 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 14 2007 Motsyo Gennadi <drool@altlinux.ru> 0.2.2-alt1
 - new version
 * Sun Sep 16 2007 Motsyo Gennadi <drool@altlinux.ru> 0.2.1-alt0.M40.1

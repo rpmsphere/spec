@@ -37,7 +37,7 @@ make
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.16.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 27 2004 Peter Soos <sp@osb.hu>
 - Moved to  Fedora Core 1
 * Mon Apr 28 2003 Peter Soos <sp@osb.hu>

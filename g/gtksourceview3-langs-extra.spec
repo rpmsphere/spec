@@ -70,4 +70,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Jan 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.01
-- Rebuild for Fedora
+- Rebuilt for Fedora

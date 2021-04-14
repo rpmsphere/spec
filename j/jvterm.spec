@@ -36,4 +36,4 @@ sed -i 's|/usr/bin/env python|/usr/bin/python2|' $RPM_BUILD_ROOT/usr/bin/jvterm-
 
 %changelog
 * Mon Mar 21 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

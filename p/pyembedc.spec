@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Summary:	Python Module for embedding C/C++
 Name:		pyembedc
 Version:	0.22
@@ -37,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 11 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.22
-- Rebuild for Fedora
+- Rebuilt for Fedora

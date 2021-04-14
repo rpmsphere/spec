@@ -51,7 +51,7 @@ cp -a %{buildroot}%{_datadir}/gnome-background-properties %{buildroot}%{_datadir
 
 %changelog
 * Wed Aug 01 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 11.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar  1 2013 coolo@suse.com
 - Update license to new format.
 * Wed Oct 12 2011 cdenicolo@suse.com

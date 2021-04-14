@@ -77,7 +77,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 07 2017 Mario Blättermann <mario.blaettermann@gmail.com> - 1.5.0-1
 - New upstream version
 * Thu Aug 03 2017 Fedora Release Engineering <releng@fedoraproject.org> - 1.4.0-4
@@ -100,8 +100,6 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 - New upstream release (switch to Qt5)
 - Spec file cleanup
 - Create -data subpackage
-* Wed Sep 25 2013 Huaren Zhong <huaren.zhong@gmail.com> - 1.2.1
-- Rebuild for Fedora
 * Wed Feb 01 2012 graeme@gottcode.org 1.2.1-1
 - New upstream release
 * Mon Dec 05 2011 graeme@gottcode.org 1.2.0-4

@@ -65,7 +65,7 @@ Headers and development files for %name.
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct  9 2008 lars@linux-schulserver.de
 - fix filelist
 * Thu Sep 25 2008 lars@linux-schulserver.de

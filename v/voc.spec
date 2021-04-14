@@ -41,7 +41,7 @@ echo 'PATH=${PATH}:%{_libexecdir}/%{name}/bin' > %{buildroot}/etc/profile.d/%{na
 
 %changelog
 * Fri Oct 05 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 29 2015 - N. Chilingarian <norayr [at] vishap.am>
 - 1.1 release, see changelog.
 * Thu Sep 18 2014 - N. Chilingarian <norayr [at] vishap.am>

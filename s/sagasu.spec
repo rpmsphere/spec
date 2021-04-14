@@ -47,7 +47,7 @@ sed -i '1i #include <cstring>\n#include <cstdlib>' src/util.h
 
 %changelog
 * Tue Feb 24 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 25 2006 Dries Verachtert <dries@ulyssis.org> - 2.0.8-1 - 4004/dries
 - Updated to release 2.0.8.
 * Sat Jun 12 2004 Dag Wieers <dag@wieers.com> - 2.0.6-1

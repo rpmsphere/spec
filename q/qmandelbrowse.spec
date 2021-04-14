@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: qmandelbrowse
 Summary: Qt Mandelbrot Browser
@@ -58,4 +58,4 @@ EOF
 
 %changelog
 * Fri Mar 06 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.91
-- Rebuild for Fedora
+- Rebuilt for Fedora

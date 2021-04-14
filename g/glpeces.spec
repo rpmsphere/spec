@@ -67,6 +67,6 @@ appstream-util validate-relax --nonet %{buildroot}%{_appdatadir}/*.xml
 
 %changelog
 * Thu Jun 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 07 2016 abfonly <abfonly@gmail.com> 5.2-1
 - (bf3b177) Fixed BR

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: 	Gyro-Kinetics at Warwick
 Name:		gkw
@@ -35,4 +35,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Dec 09 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1b4
-- Rebuild for Fedora
+- Rebuilt for Fedora

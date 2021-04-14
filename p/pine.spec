@@ -219,7 +219,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue May 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 4.64
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Apr 24 2007 Olivier Thauvin <nanardon@zarb.org> 4.64-4plf
 - update Edouardo's patch

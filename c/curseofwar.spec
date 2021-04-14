@@ -88,7 +88,7 @@ EOF
 
 %changelog
 * Tue Nov 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 19 2016 pterjan <pterjan> 1.2.0-1.47f7989.3.mga6
 + Revision: 992966
 - Make it compatible with mass rebuild

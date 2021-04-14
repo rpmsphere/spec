@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: yforth
 Summary: Small freeware Forth environment in ANSI C
@@ -32,4 +32,4 @@ install -Dm644 %{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 
 %changelog
 * Fri Sep 08 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -29,6 +29,6 @@ required by the acx Linux kernel module.
 
 %changelog
 * Mon Feb 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1.34
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 31 2006 Matthias Saou <http://freshrpms.net> 1.2.1.34-1
 - Initial RPM release, based on the ipw2200-firmware spec file.

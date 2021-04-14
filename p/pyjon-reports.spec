@@ -41,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 13 2010 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 0.6-1mamba
 - package created by autospec

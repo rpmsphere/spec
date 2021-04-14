@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       ipadcharge
 Version:	1.1
@@ -36,6 +36,6 @@ rm -f -r $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 25 2012 i@marguerite.su
 - initial package 1.1

@@ -62,7 +62,7 @@ install -D -m 755 %{SOURCE1} %{buildroot}%{_initrddir}/%{name}
 
 %changelog
 * Fri Jun 19 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 10.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 18 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 8.5-1
 + Revision: 817067
 - update to 8.5

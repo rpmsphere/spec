@@ -51,7 +51,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.20
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Jun 12 2010 pascal.bleser@opensuse.org
 - initial package (1.20)

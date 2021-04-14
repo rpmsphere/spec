@@ -33,6 +33,6 @@ echo BackgroundImage=/usr/share/backgrounds/Win2-7/Win2-7Reflect.png >> $RPM_BUI
 
 %changelog
 * Tue Feb 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 6.8.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 31 2011 Lawrence Rogers <lrr@cert.org>
 - based on Win2-7Pack_v6.2_Multilang_Aero_MD5_40d356e31af6a09e67800c7775fb7eff.tar.lzma

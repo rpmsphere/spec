@@ -75,7 +75,7 @@ fi
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 18.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 04 2016 Juhani Numminen <juhaninumminen0@gmail.com> - 11.0-1
 - Created by borrowing from existing pentobi.spec files
 - Add subpackage kde-thumbnailer

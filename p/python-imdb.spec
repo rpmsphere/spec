@@ -76,7 +76,7 @@ done
 
 %changelog
 * Wed Jul 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 25 2018 Gwyn Ciesla <limburgher@gmail.com> - 5.1-9
 - Fix FTBFS.
 * Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 5.1-8

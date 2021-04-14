@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           euler
 Summary:        An interactive mathematical programming environment 
@@ -63,7 +63,7 @@ rm -rf %buildroot
 
 %changelog
 * Thu Apr 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.61.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 15 2012 lars@linux-schulserver.de
 - fix build: include -lm in GTK_LIBS ( euler-missing_lib.patch )
 - make rpmlint happy and remove unneeded documentation files

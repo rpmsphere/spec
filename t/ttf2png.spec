@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          ttf2png
 Version:       0.3
@@ -39,6 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 03 2010 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 0.3-1mamba
 - package created by autospec

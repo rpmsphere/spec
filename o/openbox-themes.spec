@@ -33,4 +33,4 @@ rm -r %{buildroot}%{_datadir}/themes/debian
 
 %changelog
 * Mon Feb 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

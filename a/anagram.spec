@@ -36,6 +36,6 @@ install -m 755 %{name} $RPM_BUILD_ROOT/%{_bindir}
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.16
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 28 2010 David Bolt <davjam@davjam.org> 1.16
 - First packaged for openSUSE

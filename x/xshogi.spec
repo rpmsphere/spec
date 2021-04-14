@@ -30,6 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 31 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 17 2014 Chen Chen <aflyhorse@hotmail.com> 1.4.2-1
 - Initial version of the package

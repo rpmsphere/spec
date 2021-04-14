@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: tetrix
 Version: 2.4
@@ -33,7 +33,7 @@ install -Dm644 %name.6 %buildroot%_mandir/man6/%name.6
 
 %changelog
 * Thu May 28 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 19 2015 Fr. Br. George <george@altlinux.ru> 2.4-alt1
 - Autobuild version bump to 2.4
 * Tue Aug 23 2011 Fr. Br. George <george@altlinux.ru> 2.3-alt1

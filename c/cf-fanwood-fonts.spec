@@ -30,4 +30,4 @@ install -m 0644 -p *.otf %{buildroot}%{_fontdir}
 
 %changelog
 * Thu Jul 19 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -52,4 +52,4 @@ cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 
 %changelog
 * Mon Jan 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

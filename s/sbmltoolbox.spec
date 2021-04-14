@@ -35,4 +35,4 @@ cp -a toolbox/* %{buildroot}%{_datadir}/SBMLToolbox
 
 %changelog
 * Thu Feb 06 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:	Han character library for CJKV languages
 Name:		cjklib
 Version:	0.3.2
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jan 04 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 01 2010 Funda Wang <fwang@mandriva.org> 0.3-4mdv2011.0
 + Revision: 591552
 - add requires

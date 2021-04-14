@@ -75,7 +75,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Dec 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Aug 24 2013 dlucio <dlucio> 1.0-13.mga4
 + Revision: 470566
 - bump release

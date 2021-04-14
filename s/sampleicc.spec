@@ -66,7 +66,7 @@ rm %{buildroot}/%{_libdir}/lib*.la
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov  1 2012 p.drouand@gmail.com
 - Remove unused files
 * Wed May  9 2012 ku.b@gmx.de

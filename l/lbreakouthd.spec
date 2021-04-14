@@ -45,4 +45,4 @@ sed -i 's|-Werror=format-security||' Makefile */Makefile
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

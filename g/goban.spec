@@ -36,6 +36,6 @@ mkdir -p %{buildroot}%{_datadir}/xscreensaver/config
 
 %changelog
 * Wed Mar 11 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 26 2005 Scott Draves <rpm@draves.org>
 - Initial package

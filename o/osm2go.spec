@@ -72,7 +72,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 30 2010 Fabian Affolter <fabian@bernewireless.net> - 0.8.3-4.2
 - Changed source URL
 - Typos fixed in description

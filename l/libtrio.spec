@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          libtrio
 Version:       1.14
@@ -64,7 +64,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Tue Jun 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 11 2010 Automatic Build System <autodist@mambasoft.it> 1.14-1mamba
 - automatic update by autodist
 * Thu Jan 29 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 1.13-1mamba

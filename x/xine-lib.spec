@@ -384,7 +384,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jan 27 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.21
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Feb 12 2013 Kevin Kofler <Kevin@tigcc.ticalc.org> 1.1.21-5
 - find the Samba 4 libsmbclient.h using pkg-config, fixes FTBFS (#909825)

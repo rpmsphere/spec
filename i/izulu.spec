@@ -36,4 +36,4 @@ rm %{buildroot}%{_datadir}/doc/credits.txt
 
 %changelog
 * Fri Mar 06 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:         python-closure_linter
 Summary:      Google Closure Linter
 URL:          http://code.google.com/p/closure-linter/
@@ -32,4 +32,4 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.11
-- Rebuild for Fedora
+- Rebuilt for Fedora

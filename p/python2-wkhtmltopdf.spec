@@ -35,6 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jan 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1315461079
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 10 2012 - TI_Eugene <ti.eugene@gmail.com> - 0.2
 - Initial RPM release

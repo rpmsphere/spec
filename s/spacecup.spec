@@ -65,6 +65,6 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Tue May 15 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 30 2000 Guillaume Cottenceau <gc@mandrakesoft.com> 0.3-1mdk
 - first mdk version. thanks to fredl.

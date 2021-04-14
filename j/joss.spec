@@ -1,5 +1,5 @@
 %undefine _missing_build_ids_terminate_build
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          joss
 Version:       0.5
@@ -37,6 +37,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Sep 27 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 0.5-1mamba
 - package created by autospec

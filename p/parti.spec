@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A window manager library and "screen for X11"
 Name: parti
@@ -22,7 +22,7 @@ mainstream desktop environments.
 
 %changelog
 * Thu Feb 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.7.36
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 08 2012 Antoine Martin <antoine@nagafix.co.uk> 0.0.7.36-1
 - fix clipboard bug which was causing Java applications to crash
 - ensure we always properly disconnect previous client when new connection is accepted

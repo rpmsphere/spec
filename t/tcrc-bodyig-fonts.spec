@@ -28,4 +28,4 @@ install -m644 *.ttf %{buildroot}%{fontdir}
 
 %changelog
 * Tue Oct 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2010
-- Rebuild for Fedora
+- Rebuilt for Fedora

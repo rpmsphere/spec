@@ -76,6 +76,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.98
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 02 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2.330.1-3
 - (afff86f) MassBuild#1273: Increase release tag

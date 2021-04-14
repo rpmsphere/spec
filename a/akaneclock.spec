@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: akaneclock
 Summary: An X Window System analog clock
@@ -31,4 +31,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Wed Dec 18 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.31
-- Rebuild for Fedora
+- Rebuilt for Fedora

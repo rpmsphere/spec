@@ -48,7 +48,7 @@ make
 
 %changelog
 * Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 12 2013 fwang <fwang> 0.8.1-4.mga4
 + Revision: 453382
 - fix build with recent ffmpeg

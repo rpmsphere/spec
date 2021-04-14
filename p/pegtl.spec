@@ -33,4 +33,4 @@ cp -rp include/* $RPM_BUILD_ROOT%{_includedir}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.32
-- Rebuild for Fedora
+- Rebuilt for Fedora

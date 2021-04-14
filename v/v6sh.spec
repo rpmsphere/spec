@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: v6sh
 Summary: A re-implementation of UNIX v6 sh
@@ -28,4 +28,4 @@ install -Dm755 goto %{buildroot}%{_bindir}/v6goto
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2006.07.13
-- Rebuild for Fedora
+- Rebuilt for Fedora

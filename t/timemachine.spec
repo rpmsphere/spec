@@ -79,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Sep 23 2009 Automatic Build System <autodist@mambasoft.it> 0.3.3-1mamba
 - automatic update by autodist

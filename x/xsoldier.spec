@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 18 2011 kobayashi
 - rebuild for openSUSE, update 1.5
 * Sat Sep 06 2008 Shu KONNO <owa@bg.wakwak.com> 1.4-1vl5

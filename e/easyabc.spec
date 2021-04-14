@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Dec 01 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.7.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 22 2013 Guido Gonzato <guido.gonzato at gmail.com>
 - This is a generic rpm, buildable on Ubuntu

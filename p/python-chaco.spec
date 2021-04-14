@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define module	chaco
 
 Summary:	Enthought Tool Suite - interactive 2D plotting
@@ -49,7 +49,7 @@ python2 setup.py install --root=%{buildroot}
 
 %changelog
 * Mon Feb 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 13 2012 Lev Givon <lev@mandriva.org> 4.2.0-1
 + Revision: 814714
 - Update to 4.2.0.

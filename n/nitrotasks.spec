@@ -53,7 +53,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 9 2012 Ondrej Hrstka <cybule@gmail.com> - 1.5-1
 - Fedora RPM for 1.5 created
 * Sun Sep 2 2012 Ondrej Hrstka <cybule@gmail.com> - 1.4.7.2-1

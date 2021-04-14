@@ -52,4 +52,4 @@ sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.p
 
 %changelog
 * Wed May 25 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

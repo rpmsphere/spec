@@ -84,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 29 2012 sandro@isoftware.com.br
 - Added backward compat for older fftw.
 * Mon Oct 29 2012 sandro@isoftware.com.br

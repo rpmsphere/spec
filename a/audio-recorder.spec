@@ -52,7 +52,7 @@ make
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 21 2015 daviddavid <daviddavid> 1.6-1.mga6
 + Revision: 838275
 - new version: 1.6-2

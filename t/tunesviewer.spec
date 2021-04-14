@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           tunesviewer
 Version: 1.5git.1330009572
 Release: 11.1
@@ -75,6 +75,6 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5git.1330009572
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 27 2012 i@marguerite.su
 - initial package 1.5

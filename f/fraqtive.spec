@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          fraqtive
 Version:       0.4.8
@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Mar 04 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 07 2010 Automatic Build System <autodist@mambasoft.it> 0.4.5-1mamba
 - automatic update by autodist
 * Sat Nov 07 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 0.4.4-1mamba

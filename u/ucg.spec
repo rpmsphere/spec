@@ -46,7 +46,7 @@ autoreconf -ifv
 
 %changelog
 * Wed Apr 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 23 2018 umeabot <umeabot> 0.2.1-2.mga7
   (not released yet)
 + Revision: 1301527

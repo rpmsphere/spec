@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:			wiimms-iso-tools
 Summary:		A set of command line tools to manipulate WBFS containers
@@ -37,4 +37,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.12git.4272
-- Rebuild for Fedora
+- Rebuilt for Fedora

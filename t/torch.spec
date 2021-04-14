@@ -93,7 +93,7 @@ find . -name "*.h" -exec install -p -m 644 {} $RPM_BUILD_ROOT%{_includedir}/torc
 
 %changelog
 * Thu Jul 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 19 2015 Igor Vlasenko <viy@altlinux.ru> 3.1-alt1_12
 - update to new release by fcimport
 * Tue Sep 16 2014 Igor Vlasenko <viy@altlinux.ru> 3.1-alt1_10

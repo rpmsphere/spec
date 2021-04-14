@@ -30,7 +30,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 6.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 29 2010 awafaa@opensuse.org
 - Remove unwanted backup files (~)
 * Tue Jul 13 2010 awafaa@opensuse.org

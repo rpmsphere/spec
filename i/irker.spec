@@ -46,7 +46,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}/usr/lib/irker/irk
 
 %changelog
 * Tue May 17 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 2.11-3.mga5
 + Revision: 745364
 - Second Mageia 5 Mass Rebuild

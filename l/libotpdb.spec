@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 88d5c3b7a826
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 21 2009 joop.boonen@opensuse.org
 - Build version 3.1.0 for OBS

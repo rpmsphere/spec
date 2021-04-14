@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.0.050
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 06 2009 Chelban Vasile <vchelban@fedoramd.org> 0.9.0.050-10
 - BR exclude: epsilon
 * Thu Jul 16 2009 Vasile Chelban <vchelban@fedoramd.org> 0.9.0.050-9

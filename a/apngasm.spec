@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Create an APNG from multiple PNG files
 Name:		apngasm
@@ -33,7 +33,7 @@ install -m 0644 readme.txt %{buildroot}%{_docdir}/%{name}/readme.txt
 
 %changelog
 * Tue Jul 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.91
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 2.6-3
 + Revision: cad53b1
 - MassBuild#464: Increase release tag

@@ -91,7 +91,7 @@ desktop-file-install \
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 31 2008 Wind <yc.yan@ossii.com.tw> - 2.7.7-0.1
 - Rebuild for OSSII.
 * Fri May 09 2008 Toni Graffy <toni@links2linux.de> - 2.7.7-0.pm.1

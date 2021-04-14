@@ -44,4 +44,4 @@ perl Build.PL --prefix %{buildroot}/usr
 
 %changelog
 * Sun May 26 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

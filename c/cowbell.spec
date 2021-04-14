@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 18 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 01 2010 JÃ©rÃŽme Brenier <incubusss@mandriva.org> 0.2.7.1-8mdv2010.1
 + Revision: 499152
 - fix path in cowbell.in too

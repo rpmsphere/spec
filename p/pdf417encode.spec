@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:       Converts ascii text to the pdf417 barcode standard
 Name:          pdf417encode
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jan 30 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 02 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 4.4-1mamba
 - update to 4.4
 * Thu Jun 09 2005 Alessandro Ramazzina <alessandro.ramazzina@qilinux.it> 4.1-2qilnx

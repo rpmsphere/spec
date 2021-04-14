@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: mediasniffer
 Summary: Sniff download links of online media
@@ -61,6 +61,6 @@ mv %{buildroot}%{_datadir}/pixmaps/%{name}/icon.png %{buildroot}%{_datadir}/pixm
 
 %changelog
 * Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 17 2011 CTQY <qiyi.caitian@gmail.com>
 - Initial package

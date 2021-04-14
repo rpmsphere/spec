@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Python wrappers for libxf86config
 Name: pyxf86config
@@ -56,7 +56,7 @@ make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 
 %changelog
 * Sun Mar 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.37
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 29 2011 Dave Airlie <airlied@redhat.com> 0.3.37-12
 - drop config buffers code since upstream X dropped it
 * Wed Feb 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.37-11

@@ -99,7 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.28
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct  5 2011 Geoffroy Van Cutsem <geoffroy.vancutsem@intel.com> - 1.28
 - Changes the default rp_filter value from '1' to '2' to avoid loosing
   network connectivity when multiple network interfaces are connected to

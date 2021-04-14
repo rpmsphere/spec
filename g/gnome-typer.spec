@@ -48,7 +48,7 @@ sed -i 's|typer|gnome-typer|' %{buildroot}%{_datadir}/applications/%{name}.deskt
 
 %changelog
 * Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 17 2013 Juan Manuel Borges Caño <juanmabcmail@gmail.com> - 0.4.2-1
 - Update
 * Wed May 08 2013 Juan Manuel Borges Caño <juanmabcmail@gmail.com> - 0.4.0-1

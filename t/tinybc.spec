@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Tiny BASIC for Curses
 Name: tinybc
@@ -34,4 +34,4 @@ install -Dm644 %{name}.1.gz $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1.gz
 
 %changelog
 * Wed Jan 31 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

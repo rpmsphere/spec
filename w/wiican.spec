@@ -84,7 +84,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 13 2011 Jani Välimaa <wally@mandriva.org> 0.3.2-1mdv2011.0
 + Revision: 637547
 - new version 0.3.2

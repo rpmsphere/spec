@@ -45,7 +45,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 20 2006 Ilya G. Evseev <evseev@altlinux.ru> 1.1.5-alt1
 - updated to new version 1.1.5
 * Mon Oct 10 2005 Ilya G. Evseev <evseev@altlinux.ru> 1.1.4-alt2

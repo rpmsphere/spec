@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: c501checkers
 Summary: A checkers game
@@ -51,4 +51,4 @@ sed -i 's|Game;|Game;BoardGame;|' %{buildroot}%{_datadir}/applications/%{name}.d
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

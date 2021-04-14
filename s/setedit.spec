@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:   An user friendly editor for programmers
 Name:      setedit
@@ -91,7 +91,7 @@ install -m 0644 librhuti/rhutils.h $RPM_BUILD_ROOT/usr/include/setedit
 
 %changelog
 * Fri Jan 20 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 4 2008 - mcatudal@comcast.net
 - First Fedora 8 release
 * Fri May 2 2008 - mcatudal@comcast.net

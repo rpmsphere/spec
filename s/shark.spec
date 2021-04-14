@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: shark
 Summary: A modular C++ library for the design and optimization of adaptive systems
@@ -52,4 +52,4 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Sun Mar 3 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

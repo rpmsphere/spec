@@ -51,7 +51,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Aug 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 23 2011 Vlad V. Teterya <vlad@server-labs.com.ua> - 0.0.5-3
 - Add ukrainian locale
 - Fix typos in russian locale

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         rdup
 Summary:      Filesystem Tree Change Discovery Tool
@@ -42,4 +42,4 @@ autoreconf -ifv
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.15
-- Rebuild for Fedora
+- Rebuilt for Fedora

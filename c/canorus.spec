@@ -73,7 +73,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Aug 06 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.3rc3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 15 2016 freitag@owncloud.com
 - Spec cleanup
 * Tue Mar 15 2016 freitag@owncloud.com

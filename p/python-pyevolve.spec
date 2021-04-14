@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define modname Pyevolve
 
 Name:           python-pyevolve
@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Dec 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6rc1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 19 2011 scorot@gtt.fr - 0.6rc1
 - Initial release

@@ -42,7 +42,7 @@ retrieved.
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun May 22 2011 pascal.bleser@opensuse.org
 - initial version (1.3)

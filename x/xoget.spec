@@ -73,4 +73,4 @@ sed -i -e 's|/usr/bin/python$|/usr/bin/python2|' -e 's|/usr/bin/env python$|/usr
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

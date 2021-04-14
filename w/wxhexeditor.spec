@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _name wxHexEditor
 
 Name:		wxhexeditor
@@ -47,7 +47,7 @@ PYTHON=/usr/bin/python2 CFLAGS=-fPIC make WXCONFIG=wx-config
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.24
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 19 2011 Erdem U. Altinyurt <spamjunkeater@gmail.com> - 0.10-0
 - fixed OpenSUSE 11.4 compilation
 * Fri Apr 23 2010 Erdem U. Altinyurt <spamjunkeater@gmail.com> - 0.09-0

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define	oname Qtcam
 
 Summary:	Open Source Linux Webcamera Software
@@ -73,6 +73,6 @@ done
 
 %changelog
 * Fri Jan 03 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 22.0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 16 2017 Giovanni Mariani <mc2374@mclink.it> 16.0.1-1
 - (86d3ea1) Updated to release 16.0.1, added P0 to fix installation path, updated S1 and Breqs, cleaned specfile

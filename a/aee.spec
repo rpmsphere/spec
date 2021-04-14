@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Mar 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.15b
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 02 2011 Funda Wang <fwang@mandriva.org> 2.2.15b-7mdv2011.0
 + Revision: 634993
 - rebuild

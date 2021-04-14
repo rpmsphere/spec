@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           rovclock
 Version:        0.6e
@@ -48,7 +48,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6e
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 0:0.6e-5mdv2010.0
 + Revision: 433354
 - rebuild

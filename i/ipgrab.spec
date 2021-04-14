@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           ipgrab
 Version:        0.9.10
@@ -47,6 +47,6 @@ fi
 
 %changelog
 * Mon Jan 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 26 2011 Fabian Affolter <mail@fabian-affolter.ch> - 0.9.8-1
 - Initial package for Fedora

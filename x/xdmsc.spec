@@ -45,7 +45,7 @@ Authors:
 
 %changelog
 * Thu Sep 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Nov 25 2009 werner@suse.de
 - Handle next new version strings of the X server of Xorg (bnc#537141)

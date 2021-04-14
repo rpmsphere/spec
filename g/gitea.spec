@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _default_patch_fuzz 2
 
 Name:		gitea
@@ -64,4 +64,4 @@ userdel gitea
 
 %changelog
 * Sun Apr 011 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

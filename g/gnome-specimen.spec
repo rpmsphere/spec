@@ -83,7 +83,7 @@ fi
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 23 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 0.3-2
 - fix license tag
 * Wed Jul 18 2007 Damien Durand <splinux@fedoraproject.org> - 0.3-1

@@ -50,7 +50,7 @@ test -e "$h" && %__ln_s -f "$h" .
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Feb 13 2010 pascal.bleser@opensuse.org
 - initial build (0.3)

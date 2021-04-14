@@ -79,4 +79,4 @@ sed -i 's|glib/gtypes.h|glib.h|' src/hn-app-sound.c
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.43
-- Rebuild for Fedora
+- Rebuilt for Fedora

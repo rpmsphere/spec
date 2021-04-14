@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Programming language Karel
 Name: xkarel
@@ -50,6 +50,6 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0b1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 16 2003 Petr Abrahamczik <pabro@users.sourceforge.net> & Radim Dostal <radimdostal@users.sourceforge.net>
 - Initial package

@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon May 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun  5 2011 tejas.guruswamy@opensuse.org
 - Update to 1.1.0 release
   + Upgraded the DC++ core to 0.7091

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Snow flakes falling all over your desktop
 Name: snowflakes
@@ -30,4 +30,4 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Fri Feb 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2012.1.29
-- Rebuild for Fedora
+- Rebuilt for Fedora

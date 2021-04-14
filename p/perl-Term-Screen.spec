@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 15 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.06
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 03 2011 Michael Scherer <misc@mandriva.org> 1.30.0-2mdv2011.0
 + Revision: 664910
 - mass rebuild

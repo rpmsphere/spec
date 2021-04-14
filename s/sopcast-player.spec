@@ -48,7 +48,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Mon Oct 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 12 2009 Orcan Ogetbil <oget [DOT] fedora [AT] gmail [DOT] com> - 0.3.0-1
 - New upstream release
 * Sun Feb 22 2009 Orcan Ogetbil <oget [DOT] fedora [AT] gmail [DOT] com> - 0.2.1-2

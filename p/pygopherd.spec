@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Summary:	Gopher server
 Summary(pl):	Serwer gophera
 Name:		pygopherd
@@ -71,7 +72,7 @@ fi
 
 %changelog
 * Fri Jun 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.16
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 08 2006 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 $Log: pygopherd.spec,v $

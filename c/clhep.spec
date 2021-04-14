@@ -68,7 +68,7 @@ done
 
 %changelog
 * Fri Jan 08 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 05 2010 Steve Huff <shuff@vecna.org> - 2.0.4.5-1 - 8792/dag
 - Updated to release 2.0.4.5.
 - Fixed typo in doc cleanup script.

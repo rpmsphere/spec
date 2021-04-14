@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           discwrapper
 Summary:        Make CD Covers
@@ -46,7 +46,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 03 2009 wwalery@gmail.com
 - update .spec file to version 1.2.2
 * Wed Mar 25 2009 wwalery@gmail.com

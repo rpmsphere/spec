@@ -35,6 +35,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Mon Jun 05 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 27 2013 Bertho Stultiens <gcmc@vagrearg.org> 1.4.1-1
 - Initial specfile release

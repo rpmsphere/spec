@@ -78,7 +78,7 @@ chmod +x %{buildroot}%{_datadir}/%{name}/grani.rb
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 21.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 20 2020 umeabot <umeabot> 20.1-2.mga8
 + Revision: 1547240
 - Mageia 8 Mass Rebuild

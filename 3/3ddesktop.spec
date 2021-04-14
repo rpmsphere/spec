@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Feb 03 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug 13 2002 wiget@pld-linux.org
 - move 3ddesktop.spec to 3ddesktop.spec.in and make VERSION substitute automagicaly
 - small changes for easy future development

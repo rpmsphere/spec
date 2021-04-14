@@ -253,7 +253,7 @@ fi
 
 %changelog
 * Wed Jul 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec  5 2012 conrad@quisquis.de
 - Fixed -H option
 * Wed Dec  5 2012 conrad@quisquis.de

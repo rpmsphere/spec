@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jul 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 22 2009 Liang Suilong <liangsuilong@gmail.com> 0.2.20090919-2
 - Add gettext-devel as BuildRequires
 * Sat Sep 19 2009 Liang Suilong <liangsuilong@gmail.com> 0.2.20090919-1

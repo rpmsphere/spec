@@ -36,7 +36,7 @@ mkdir -p %buildroot/var/run/bftpd
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 5.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 17 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 2.1-alt0.1.qa1
 - NMU: rebuilt for debuginfo.
 * Mon Feb 18 2008 Nick S. Grechukh <gns@altlinux.org> 2.1-alt0.1

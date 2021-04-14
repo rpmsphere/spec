@@ -36,4 +36,4 @@ python2 setup.py install \
 
 %changelog
 * Wed Dec 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -46,7 +46,7 @@ make
 
 %changelog
 * Tue Jan 14 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 27 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.6.3-1
 + Revision: 800857
 - imported package libsysactivity

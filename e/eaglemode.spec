@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           eaglemode
 URL:            http://eaglemode.sourceforge.net/
@@ -105,7 +105,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Aug 24 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.95.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan  7 2012 joop.boonen@opensuse.org
 - Reformated the spec file to meet the openSUSE standard
 * Sun Nov 13 2011 joop.boonen@opensuse.org

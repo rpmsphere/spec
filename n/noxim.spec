@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: noxim
 Summary: The NoC Simulator
@@ -31,4 +31,4 @@ install -Dm755 bin/%{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Wed Dec 11 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 20131016
-- Rebuild for Fedora
+- Rebuilt for Fedora

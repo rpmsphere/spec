@@ -101,7 +101,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 05 2010 slick50 <lxgator@gmail.com> 1.4.1-1pclos2010
 - 1.4.1
 * Mon May 31 2010 slick50 <lxgator@gmail.com> 1.4-1pclos2010

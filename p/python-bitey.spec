@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name: python-bitey
 Summary: Bitcode Import Tool
 Version: 0.0.20120813
@@ -29,4 +30,4 @@ python setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.20120813
-- Rebuild for Fedora
+- Rebuilt for Fedora

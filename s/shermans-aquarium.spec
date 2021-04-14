@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Applet with aquarium
 Summary(pl):	Aplet z akwarium
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed May 18 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 22 2004 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 Revision 1.11  2004/10/22 02:11:47  havner

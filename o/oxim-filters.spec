@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: 	OXIM filter packs
 Name: 		oxim-filters

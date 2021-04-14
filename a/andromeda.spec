@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		andromeda
 Version: 0.2.1.1336157239
@@ -50,6 +50,6 @@ ldconfig
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1.1336157239
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 16 2011 TI_Eugene <ti.eugene@gmail.com> 0.1
 - Initial build on OBS

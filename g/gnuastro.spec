@@ -71,7 +71,7 @@ find %{buildroot} -type f -name "*.la" -delete -print
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 26 2019 Andreas Stieger <andreas.stieger@gmx.de>
 - GNU Astronomy Utilities 0.11 (library 9.0.0):
   * documentation updates

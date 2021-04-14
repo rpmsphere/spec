@@ -41,6 +41,6 @@ rm -Rf %{buildroot}
 
 %changelog
 * Wed Oct 24 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 21 2014  D. E. Evans <sinuhe@gnu.org>
 - Here's an initial spec file for x86 Fedora.

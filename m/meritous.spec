@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: meritous
 Version: 1.2
@@ -43,7 +43,7 @@ cp -a dat %buildroot%_datadir/%name/
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 28 2012 Fr. Br. George <george@altlinux.ru> 1.2-alt2
 - DSO list completion
 * Thu Dec 04 2008 Fr. Br. George <george@altlinux.ru> 1.2-alt1

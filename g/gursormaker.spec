@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: gursormaker
 Summary: A cursor editor for X11 using GTK+
 Version: 0.6.0
@@ -34,4 +34,4 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Wed Mar 30 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

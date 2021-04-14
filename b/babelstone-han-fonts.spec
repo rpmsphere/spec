@@ -31,7 +31,7 @@ install -m 0644 *.ttf %{buildroot}%{_ttfontsdir}
 
 %changelog
 * Tue Nov 26 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 13.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 12 2015 p.drouand@gmail.com
 - Update to version 8.0.2
   * More glyph corrections

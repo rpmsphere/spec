@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	"Ha" Background - setting of window manager background image
 Name:		habak
@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 26 2008 Feather Mountain <john@ossii.com.tw> 0.2.5-1.ossii
 - Rebuild for M6(OSSII)
 * Tue Mar 11 2008 P. K. Frederic <pkfric@yahoo.com> 0.2.5-1pclos2007

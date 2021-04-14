@@ -43,7 +43,7 @@ gtk-query-immodules-2.0 > /etc/gtk-2.0/gtk.immodules
 
 %changelog
 * Mon Aug 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 8 2004 Supphachoke Suntiwichaya <mrchoke@opentle.org> 0.1.1-2_02tle
 - Patch KeyPad from CVS
 * Wed Dec 24 2003 Supphachoke Suntiwichaya <mrchoke@opentle.org> 0.1.1-2_01tle

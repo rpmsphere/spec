@@ -76,7 +76,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 13 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 20 2011 anaselli <anaselli> 0.6.5-1.mga1
 + Revision: 89254
 - imported package multiplicationstation

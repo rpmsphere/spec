@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:			nzb
 Version:		0.3
@@ -60,7 +60,7 @@ desktop-file-install                                    \
 
 %changelog
 * Mon Dec 01 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 15 2009 David Bolt <davjam@davjam.org> 0.1.9
 - Upgraded to latest version
 * Fri May  8 2009 David Bolt <davjam@davjam.org> 0.1.8

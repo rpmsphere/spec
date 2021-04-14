@@ -68,7 +68,7 @@ ln -s %{name}-%{version} %{_javadocdir}/%{name}
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 15 2007 Igor Vlasenko <viy@altlinux.ru> 0:1.3.1-alt2_1jpp1.7
 - converted from JPackage by jppimport script
 * Mon Jun 04 2007 Igor Vlasenko <viy@altlinux.ru> 0:1.3.1-alt1_1jpp1.7

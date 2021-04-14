@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		stopmotion
 Summary:	An application for creating stopmotion animations
 Version:	0.6.1
@@ -75,7 +75,7 @@ rm -rf $%{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri May 04 2007 Adam Williamson <awilliamson@mandriva.com> 0.6.0-4mdv2008.0
 + Revision: 22562

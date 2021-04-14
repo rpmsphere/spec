@@ -43,7 +43,7 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Mon Jun 20 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 21 2012 Satyajit Sahoo <satyajit.happy@gmail.com> 2.3.0
 - various updates
 * Thu Jun 28 2012 Satyajit Sahoo <satyajit.happy@gmail.com> 2.1.1

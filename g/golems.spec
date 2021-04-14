@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+%undefine _debugsource_packages
 %define rev git20160603
 
 Summary: 3D recreational physics simulator
@@ -64,7 +64,7 @@ cp -f ./dataFolder/com/golemgame/data/app/icons/golemIcon64.png %{buildroot}%{_d
 
 %changelog
 * Fri Jun 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.57.1-0.git20160603
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 26 2016 umeabot <umeabot> 0.57.1-0.git20140625.5.mga6
 + Revision: 979631
 - Mageia 6 Mass Rebuild

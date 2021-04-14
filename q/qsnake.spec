@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		qsnake
 Version:	1.0.2
@@ -39,6 +39,6 @@ make
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 20 2012 TI_Eugene <ti.eugene@gmail.com> 0.0.1
 - Initital build in OBS

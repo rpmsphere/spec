@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Command line program for save JPEG image of VNC server's screen
 Name:		vncsnapshot
@@ -38,6 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 07 2008 cyberorg@opensuse.org
 - Initial openSUSE spec

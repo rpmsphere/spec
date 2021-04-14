@@ -39,4 +39,4 @@ Features:
 
 %changelog
 * Mon Oct 29 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

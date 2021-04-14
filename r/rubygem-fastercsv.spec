@@ -47,7 +47,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Feb 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 4 2013 Sergey Mihailov <sergey.mihailov@gmail.com> - 1.5.5-3
 - Initial package
 - AutoReqProv no ( missing for Requires: /usr/local/bin/ruby )

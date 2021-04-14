@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	2D vector-based animation environment
 Name:		tupi
@@ -55,7 +55,7 @@ mv %{buildroot}/usr/man1 %{buildroot}/usr/share/man/man1
 
 %changelog
 * Tue Jul 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 19 2013 umeabot <umeabot> 0.2-0.09122012.4.mga4
 + Revision: 534845
 - Mageia 4 Mass Rebuild

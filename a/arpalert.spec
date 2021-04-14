@@ -55,7 +55,7 @@ rm -f %{buildroot}%{_includedir}/arpalert.h
 
 %changelog
 * Mon Jun 01 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 22 2014 Denis Silakov <denis.silakov@rosalab.ru> 2.0.12-5
 + Revision: db37138
 - Spec cleanup

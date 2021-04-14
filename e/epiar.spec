@@ -27,7 +27,7 @@ sed -i 's|-Wall|-Wall -fPIC|' Source/Lua/src/Makefile
 %build
 autoreconf -ifv
 %configure
-make %{?_smp_mflags}
+make
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 21 2012 Tony Lo <tony.lo@ossii.com.tw> 0.5.0
 - ox2 version 0.5.0.
 * Mon May 16 2011 Christopher Thielen <chris@epiar.net> 0.5.0

@@ -96,7 +96,7 @@ EOF
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 11.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 10 2015 alexl <alexl> 3.1-1.mga6
 + Revision: 901433
 - version 3.1

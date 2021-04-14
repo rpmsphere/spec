@@ -48,4 +48,4 @@ EOF
 
 %changelog
 * Tue Jan 14 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.5.1458
-- Rebuild for Fedora
+- Rebuilt for Fedora

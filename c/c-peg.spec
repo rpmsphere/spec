@@ -58,4 +58,4 @@ install -c -m 644 \
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.18
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jan 3 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 26 2010 Funda Wang <fwang@mandriva.org> 2.1.0-1mdv2011.0
 + Revision: 625215
 - import libofetion

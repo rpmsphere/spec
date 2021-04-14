@@ -31,7 +31,7 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Wed May 06 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.43
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 01 2013 Simone Sclavi <darkhado@gmail.com> 0.43-1
 - Update to 0.43 release
 * Sat Sep 28 2013 Simone Sclavi <darkhado@gmail.com> 0.42-1

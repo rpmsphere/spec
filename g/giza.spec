@@ -46,4 +46,4 @@ make install FFLAGS=-fPIC PREFIX=/usr DESTDIR=%{buildroot}
 
 %changelog
 * Mon Nov 21 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

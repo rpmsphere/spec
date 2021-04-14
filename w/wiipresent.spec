@@ -90,7 +90,7 @@ make DESTDIR=$RPM_BUILD_ROOT install \
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Sep 14 2009 Pascal Bleser <pascal.bleser@opensuse.org> 0.7.5.2
 - new package

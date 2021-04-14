@@ -63,7 +63,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Oct 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.19
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 15 2019 Dr. Werner Fink <werner@suse.de>
 - Add upstream patch  edit_cddb.patch
   * Fixes some issues when editing CD-Text/CDDB entries in the Write

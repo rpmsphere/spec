@@ -75,7 +75,7 @@ fi
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Oct 15 2014 umeabot <umeabot> 1.5-16.mga5
 + Revision: 740375

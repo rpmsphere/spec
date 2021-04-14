@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 16 2011 malcolmlewis@opensuse.org
 - Update on 2nd November 2011:
   + Fixed rubberband selection looking solid white in the

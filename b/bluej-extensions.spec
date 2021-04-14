@@ -348,7 +348,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jul 24 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20110529
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Jul 30 2009 lars@linux-schulserver.de
 - initial package

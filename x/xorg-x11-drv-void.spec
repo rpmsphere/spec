@@ -40,7 +40,7 @@ autoreconf -ifv
 
 %changelog
 * Thu Jul 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 01 2016 Valery Inozemtsev <shrek@altlinux.ru> 1:1.4.1-alt2
 - requires XORG_ABI_XINPUT = 24.1
 * Fri Nov 27 2015 Valery Inozemtsev <shrek@altlinux.ru> 1:1.4.1-alt1

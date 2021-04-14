@@ -62,6 +62,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/rip
 
 %changelog
 * Thu Oct 19 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.2.3-3
 - (0932f4c) MassBuild#1257: Increase release tag

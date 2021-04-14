@@ -16,7 +16,7 @@ BuildRequires:  libXft-devel
 BuildRequires:  libXrender-devel
 BuildRequires:  expat-devel
 BuildRequires:  desktop-file-utils
-#BuildRequires:  matchbox-panel-devel
+BuildRequires:  matchbox-panel-devel
 
 %description
 Matchbox-keyboard is an on screen 'virtual' or 'software'
@@ -51,7 +51,7 @@ find %{buildroot} -name '*.la' | xargs rm
 
 %changelog
 * Mon Aug 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 06 2016 umeabot <umeabot> 0.1-10.mga6
 + Revision: 941592
 - Mageia 6 Mass Rebuild

@@ -28,7 +28,7 @@ cp -av spectemplates/* %buildroot%_datadir/spectemplates/
 
 %changelog
 * Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 09 2020 Mikhail Gordeev <obirvalger@altlinux.org> 1.3.11-alt1
 - Add empty branch options
 - Add ocaml support

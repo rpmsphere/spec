@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 %define modname enable
 
 Name:           python-%{modname}
@@ -85,7 +86,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{python3_sitearch
 
 %changelog
 * Thu Feb 16 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 4.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 20 2013 toddrme2178@gmail.com
 - Added a note about being part of the Enthought Tool Suite (ETS).
 * Thu Apr 18 2013 toddrme2178@gmail.com

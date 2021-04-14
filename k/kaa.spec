@@ -28,4 +28,4 @@ rm -rf %{name}.egg.info
 
 %changelog
 * Tue Nov 06 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.53.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

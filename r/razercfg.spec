@@ -101,13 +101,13 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.42
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 20 2016 Johan Heikkilä <johan.heikkila@gmail.com> 0.38
 - Updated for latest version and Fedora 24
 * Sun Oct 16 2016 Johan Heikkilä <johan.heikkila@gmail.com> 0.37
 - Updated for latest version and Fedora 24
 * Tue May 17 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.32
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 0.22-3.mga5
 + Revision: 747083
 - Second Mageia 5 Mass Rebuild

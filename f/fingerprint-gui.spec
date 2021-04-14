@@ -65,10 +65,8 @@ mkdir -p %{buildroot}%{_udevrulesdir}
 mv %{buildroot}%{_sysconfdir}/udev/rules.d/92-fingerprint-gui-uinput.rules %{buildroot}%{_udevrulesdir}/92-fingerprint-gui-uinput.rules
 
 %post
-/sbin/ldconfig
 
 %postun
-/sbin/ldconfig
 
 %files
 %doc README CHANGELOG COPYING

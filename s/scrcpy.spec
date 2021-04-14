@@ -37,7 +37,7 @@ on USB. It does not require any root access
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.17
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 13 2018 pousaduarte@gmail.com
 - Update to version 1.5fixversion~git20181113:
   * Move drag&drop features in README

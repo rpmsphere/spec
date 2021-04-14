@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: Binary Analysis Tool
 Name: binaryanalysis
 Version: 37.0

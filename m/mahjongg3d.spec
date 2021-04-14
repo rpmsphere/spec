@@ -89,7 +89,7 @@ EOF
 
 %changelog
 * Thu May 07 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.96
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 0.96-10
 + Revision: 84a7485
 - MassBuild#464: Increase release tag

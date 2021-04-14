@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %bcond_without ncurses
 # build with support for allegro - disabled by default
 %bcond_with allegro
@@ -85,7 +85,7 @@ rm -fR %{buildroot}%{_datadir}/doc/vitetris/
 
 %changelog
 * Tue Jun 18 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.58.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 10 2019 Martin Hauke <mardnh@gmx.de>
 - Update to version 0.58
   * bugfix release - no functional changes

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: SELinux policy analizing
 Name: segatex 
@@ -216,4 +216,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 8.640  
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -38,4 +38,4 @@ mv %{buildroot}%{_datadir}/%{name} %{buildroot}%{_datadir}/pixmaps
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.14.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

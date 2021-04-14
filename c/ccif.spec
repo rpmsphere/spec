@@ -59,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.20111209
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 9 2011 Marcin Wojdyr <wojdyr@gmail.com> - 0.3.20111209-1
 - updated tarball

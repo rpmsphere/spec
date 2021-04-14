@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: waffles
 Summary: A collection of command-line tools for researchers in machine learning, data mining
@@ -51,4 +51,4 @@ make install
 
 %changelog
 * Thu Jan 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

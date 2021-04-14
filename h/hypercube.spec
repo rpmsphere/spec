@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           hypercube
 Version:        1.7.0
@@ -44,7 +44,7 @@ ln -s hypercube.1 hypercube-cli.1
 
 %changelog
 * Fri Jun 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 22 2014 tumic@cbox.cz
 - Update to version 1.6.3
   * Fixed double layout computation on graph file reload.

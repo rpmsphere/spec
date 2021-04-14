@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _name qTouchWeb
 
 Name:          qtouchweb
@@ -33,4 +33,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20110307
-- Rebuild for Fedora
+- Rebuilt for Fedora

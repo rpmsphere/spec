@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _with_modxorg 1
 %define _without_glide3 1
 %define _without_arts 1
@@ -265,7 +265,7 @@ popd
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.106
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon May 29 2006 Matthias Saou <http://freshrpms.net/> 0.106-1
 - Update to 0.106.
@@ -435,7 +435,7 @@ popd
 - Updated all related files too, catver is up-to-date at last.
 
 * Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 0.76.1-2
-- Rebuild for Fedora Core 1.
+- Rebuilt for Fedora Core 1.
 
 * Sun Oct 26 2003 Matthias Saou <http://freshrpms.net/>
 - Update to 0.76.1, updated related files too (catver is still 0.74u1 though).

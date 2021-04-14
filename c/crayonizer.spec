@@ -32,4 +32,4 @@ cp examples/* %{buildroot}%{_sysconfdir}/%{name}.d
 
 %changelog
 * Thu Nov 01 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

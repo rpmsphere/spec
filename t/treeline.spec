@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:	Versatile Tree-Style Outliner for Defining Custom Data Schemas
 Name:		treeline
 Version:	3.1.2
@@ -95,7 +95,7 @@ EOF
 
 %changelog
 * Tue May 12 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 24 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.4.1-1
 + Revision: 800424
 - imported package treeline

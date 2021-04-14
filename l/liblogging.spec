@@ -86,7 +86,7 @@ dos2unix AUTHORS ChangeLog COPYING
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May  6 2008 mrueckert@suse.de
 - package the docs
 * Tue May  6 2008 mrueckert@suse.de

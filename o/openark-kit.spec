@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 BuildRequires:  python2-devel
 Name:           openark-kit
 Version:        170
@@ -36,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 170
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 15 2010 lenz@grimmer.com
 - Update to version 170 (new tools, new functionality), see
   http://code.openark.org/blog/mysql/openark-kit-rev-170-new-tools-new-functionality

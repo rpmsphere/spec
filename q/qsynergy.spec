@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           qsynergy
 Version:        0.9.1
@@ -44,7 +44,7 @@ qmake-qt4
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 28 2010 pascal.bleser@opensuse.org
 - update to 0.9.1
 - spec file enhancements

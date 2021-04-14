@@ -35,4 +35,4 @@ sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 16.06.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

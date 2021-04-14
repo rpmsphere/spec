@@ -56,7 +56,7 @@ call for ipconfig command.
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 12 2010 adam@mizerski.pl
 - added "#include <sys/file.h>" and "-fno-strict-aliasing"
 * Sun Apr 11 2010 adam@mizerski.pl

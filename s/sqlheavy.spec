@@ -101,6 +101,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jul 17 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 18 2012 whats_up@tut.by
 - initial release 0.1.1

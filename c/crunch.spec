@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: crunch
 Version: 3.6
@@ -35,6 +35,6 @@ sed -i 's|sudo ||' Makefile
 
 %changelog
 * Fri Jun 24 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 20 2014 Afanasov Dmitry <ender@altlinux.org> 3.6-alt1
 - first build

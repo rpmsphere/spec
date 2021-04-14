@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define majver %(echo %version | cut -d. -f 1-2)
 %define minver %(echo %version | cut -d. -f 3)
 
@@ -73,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 29 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 1.10.11-2mamba
 - added flag-for-more-data patch
 * Fri Nov 28 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 1.10.11-1mamba

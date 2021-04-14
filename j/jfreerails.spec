@@ -110,7 +110,7 @@ EOF
 
 %changelog
 * Fri Mar 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 13 2009 Feather Mountain <john@ossii.com.tw> - 0.2.7-0.cvs20061028.ossii
 - Rebuild for M6(OSSII)
 * Sat Oct 28 2006 Toni Graffy <toni@links2linux.de> - 0.2.7-0.pm.cvs20061028

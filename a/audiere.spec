@@ -71,7 +71,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 1.9.4-10mdv2011.0
 + Revision: 610005
 - rebuild

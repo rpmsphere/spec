@@ -55,7 +55,7 @@ rm -rf %{buildroot}%{_docdir}/%{name}-%{version}
 
 %changelog
 * Thu Dec 17 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 24 2019 Fedora Release Engineering <releng@fedoraproject.org> - 2.0.9-21
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 * Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 2.0.9-20

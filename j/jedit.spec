@@ -95,7 +95,7 @@ EOF
 
 %changelog
 * Thu Jun 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 4.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 10 2008 Dag Wieers <dag@wieers.com> - 4.2-2 - 6256+/dag
 - Fix typo in wrapper script.
 * Wed Apr 09 2008 Dag Wieers <dag@wieers.com> - 4.2-1

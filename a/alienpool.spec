@@ -79,7 +79,7 @@ desktop-file-install                                    \
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 13 2007 David Bolt <davjam@davjam.org>
 - Updated the spec file.
 -  Now follows package naming conventions for Mandriva,

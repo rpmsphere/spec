@@ -62,7 +62,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Feb 10 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.82
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 14 2012 - joerg.lorenzen@ki.tng.de
 - update to version 0.8.55
 * Tue Jul 03 2012 - joerg.lorenzen@ki.tng.de

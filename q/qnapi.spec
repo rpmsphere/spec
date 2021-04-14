@@ -1,4 +1,4 @@
-%global    debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           qnapi
 Version:        0.2.3
@@ -63,7 +63,7 @@ sed -i 's/\r//' doc/ChangeLog
 
 %changelog
 * Thu Jan 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 06 2017 Sérgio Basto <sergio@serjux.com> - 0.2.3-1
 - Update to 0.2.3
 * Tue Jul 19 2016 Sérgio Basto <sergio@serjux.com> - 0.2.1-1

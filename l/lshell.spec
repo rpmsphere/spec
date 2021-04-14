@@ -50,7 +50,7 @@ fi
 
 %changelog
 * Fri Dec 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.18
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.9.18-8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 * Tue Jun 19 2018 Miro Hrončok <mhroncok@redhat.com> - 0.9.18-7

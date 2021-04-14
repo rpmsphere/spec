@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: 	  clac
 Version:  0.3.3
@@ -31,7 +31,7 @@ make install PREFIX=%buildroot%_prefix
 
 %changelog
 * Thu Dec 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 27 2018 Mikhail Gordeev <obirvalger@altlinux.org> 0.3.1-alt1
 - new version 0.3.1
 * Thu Jun 15 2017 Gordeev Mikhail <obirvalger@altlinux.org> 0.3.0-alt1

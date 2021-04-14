@@ -80,7 +80,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 21 2008 Guillaume Bedot <littletux@zarb.org> 0.3.1-2plf2009.1
 - removed sdlmame related files (catver, nplayers) :
  up-to date version will now be in sdlmame package

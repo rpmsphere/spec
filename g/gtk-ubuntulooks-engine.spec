@@ -37,7 +37,7 @@ make
 
 %changelog
 * Mon Jul 18 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 0.9.11-alt1.qa1
 - NMU: rebuilt for debuginfo.
 * Wed Dec 06 2006 Vyacheslav Dikonov <slava@altlinux.ru> 0.9.11-alt1

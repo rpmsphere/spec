@@ -86,6 +86,6 @@ EOF
 
 %changelog
 * Mon Sep 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.63
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 27 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:0.60-5
 - (e9dde4e) MassBuild#1264: Increase release tag

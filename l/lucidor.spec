@@ -55,7 +55,7 @@ update-mime-database %{_datadir}/mime &> /dev/null || :
 
 %changelog
 * Mon Mar 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 2 2009 Ordbrand <ordbrand@lucidor.org> 0.8.1-1
 - Bugfix.
 * Thu Sep 24 2009 Ordbrand <ordbrand@lucidor.org> 0.8-1

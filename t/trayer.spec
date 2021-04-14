@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: trayer
 Version: 1.1.6
@@ -34,7 +34,7 @@ install -D -m644 man/trayer.1 %buildroot%_mandir/man1/%name.1
 
 %changelog
 * Tue Mar 14 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 20 2013 Denis Smirnov <mithraen@altlinux.ru> 1.1.5-alt1
 - 1.1.5
 - use trayer-srg fork

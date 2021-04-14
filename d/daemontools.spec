@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: daemontools
 Version: 0.76
@@ -94,7 +94,7 @@ done
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.76
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct  7 2006 mrueckert@suse.de
 - install into /sbin. makes more sense for something like an init
   system.

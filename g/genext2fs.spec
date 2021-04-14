@@ -34,6 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 02 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 25 2012 Ludwig Nussel <lnussel@suse.de>
 - initial version 1.4.1

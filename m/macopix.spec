@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 10 2007 Satoshi IWAMOTO <satoshi.iwamoto@nifty.ne.jp>
 - new upstream release 1.6.4
 - support build with gnutls

@@ -52,4 +52,4 @@ make %{?_smp_mflags} CFLAGS="%{optflags} -Wno-error -fPIC"
 
 %changelog
 * Mon Oct 23 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.51
-- Rebuild for Fedora
+- Rebuilt for Fedora

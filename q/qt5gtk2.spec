@@ -36,6 +36,6 @@ install -Dm 0644 %name.csh %buildroot%_sysconfdir/profile.d/%name.csh
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 14 2016 Hihin Ruslan <ruslandh@altlinux.ru> 0.1-alt1
 - initial build for ALT Linux Sisyphus

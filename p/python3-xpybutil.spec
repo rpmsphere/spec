@@ -35,7 +35,7 @@ because xpyb is a very low level library that communicates with X.
 
 %changelog
 * Thu Aug 20 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 22 2019 mvetter@suse.com
 - Update to 0.0.6:
   * Fixed bug affecting windows with opacity==0

@@ -46,6 +46,6 @@ gzip doc/%{name}.1
 
 %changelog
 * Tue Dec 13 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2002.12.08
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 27 2009 Dirk Stöcker <opensuse@dstoecker.de> 2002.12.08
 - created

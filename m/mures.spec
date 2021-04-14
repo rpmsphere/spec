@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 20 2008 - john@ossii.com.tw
 - Rebuild for M6(OSSII)
 * Sun Jul 15 2007 - coolo@suse.de

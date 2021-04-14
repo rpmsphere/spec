@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           gplanarity
 %define svnrev  15153
 Version:        0.0.%{svnrev}
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.15153
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 22 2008 Wind <yc.yan@ossii.com.tw>
 - Rebuild for OSSII.
 * Tue Aug  5 2008 prusnak@suse.cz

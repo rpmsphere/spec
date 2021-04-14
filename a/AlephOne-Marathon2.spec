@@ -92,7 +92,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2008 Feather Mountain <john@ossii.com.tw> - 1.0-0.1.ossii
 - Rebuild for M6(OSSII)
 * Wed Jun 06 2007 Toni Graffy <toni@links2linux.de> - 1.0-0.pm.1

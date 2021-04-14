@@ -43,7 +43,7 @@ configurable and all its features are explained in the on-line help.
 
 %changelog
 * Mon Oct 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.6.patch6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr  7 2009 Dries Verachtert <dries@ulyssis.org> - 4.4-1 - 7981/dag
 - Updated to release 4.4.
 * Tue Mar 17 2009 Dries Verachtert <dries@ulyssis.org> - 4.2-1
@@ -59,7 +59,7 @@ configurable and all its features are explained in the on-line help.
 * Tue Aug 15 2006 Dries Verachtert <dries@ulyssis.org> - 3.15-1
 - Updated to release 3.15.
 * Sat Apr 08 2006 Dries Verachtert <dries@ulyssis.org> - 3.14-1.2
-- Rebuild for Fedora Core 5.
+- Rebuilt for Fedora Core 5.
 * Fri Nov 04 2005 Dries Verachtert <dries@ulyssis.org> - 3.14-1
 - Updated to release 3.14.
 * Thu Sep 22 2005 Dries Verachtert <dries@ulyssis.org> - 3.13-1

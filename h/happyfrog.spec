@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _name HappyFrog
 
 Name:           happyfrog
@@ -44,4 +44,4 @@ make install INSTALL_ROOT=%{buildroot}
 
 %changelog
 * Wed Aug 17 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

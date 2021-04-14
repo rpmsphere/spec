@@ -45,4 +45,4 @@ sed -i '$a BackgroundImage=/usr/share/themes/Vertex/alone.jpg' %{buildroot}%{_da
 
 %changelog
 * Wed Sep 25 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 20170128
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 BuildArch:	noarch
 Name:           coppermine
 Group:          Applications/Publishing
@@ -45,7 +45,7 @@ chmod 755 $RPM_BUILD_ROOT%{coppermine_dir}/albums/edit
 
 %changelog
 * Tue Nov 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.24
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 28 2010 joop.boonen@opensuse.org
 - build version 1.5.6
 * Sun Feb 14 2010 joop.boonen@opensuse.org

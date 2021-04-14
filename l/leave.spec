@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A time reminder taken from NetBSD
 Name: leave
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Mar 25 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 14 2000 Ismael Olea <olea@hispafuentes.com>
 Corregidas algunas erratas de Juanjo }:-)
 * Thu Dec 14 2000 Juan J. Amor <jjamor@hispalinux.es>

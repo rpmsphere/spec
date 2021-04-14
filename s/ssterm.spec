@@ -44,6 +44,6 @@ scrolling/dumping, and data piping.
 
 %changelog
 * Sun May 26 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb  8 2011 pascal.bleser@opensuse.org
 - initial version (1.2)

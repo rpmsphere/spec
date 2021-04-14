@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.38
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 22 2011 jquelin <jquelin> 1.380.0-1.mga1
 + Revision: 31491
 - mageia rebuild

@@ -1,8 +1,8 @@
 %global _name pam-python
 
 Name:		pam_python
-Version:	1.0.6
-Release:	2.1
+Version:	1.0.8
+Release:	1
 Group:		System/Libraries
 URL:		http://pam-python.sourceforge.net
 License:	AGPLv3+
@@ -19,7 +19,6 @@ modules to be written in Python.
 %prep
 %setup -q -n %{_name}-%{version}
 sed -i 's|-Werror||' src/Makefile
-sed -i 's|/usr/bin/python|/usr/bin/python2|' src/setup.py
 
 %build
 make -C src
@@ -32,8 +31,8 @@ make -C src install LIBDIR=%{buildroot}/%{_lib}/security
 /%{_lib}/security/pam_python.so
 
 %changelog
-* Fri Mar 16 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
-- Rebuild for Fedora
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
+- Rebuilt for Fedora
 * Wed Sep 14 2016 mitya <mitya> 1.0.6-1.mga6
 + Revision: 1052577
 - pam-python 1.0.6

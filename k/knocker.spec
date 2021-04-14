@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 26 2002 PLD Team <feedback@pld.org.pl>
 Revision 1.5  2002/05/26 00:50:35  kloczek
 - added png Icon to desktop file,

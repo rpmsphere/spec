@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           plexydesk
 URL:            http://www.plexyplanet.org/
@@ -82,6 +82,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.21
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 10 2011 giacomosrv@gmail.com
 - packaged plexydesk version 0.5.21

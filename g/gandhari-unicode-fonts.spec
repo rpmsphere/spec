@@ -30,4 +30,4 @@ install *.ttf %{buildroot}%{fontdir}
 
 %changelog
 * Sun Dec 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 5.110
-- Rebuild for Fedora
+- Rebuilt for Fedora

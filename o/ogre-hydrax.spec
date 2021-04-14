@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           ogre-hydrax
 Version:        0.5.4
@@ -69,7 +69,7 @@ ln -sf libhydrax.so.0.5.? %{buildroot}%{_libdir}/libhydrax.so
 
 %changelog
 * Tue Apr 28 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar  3 2012 joop.boonen@opensuse.org
 - Corrected the license
 - Adapted the spec file to the openSUSE standard

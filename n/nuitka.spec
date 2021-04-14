@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: nuitka
 Version: 0.6.0.2
 Release: 2.1
@@ -41,7 +41,7 @@ messages are given.
 
 %changelog
 * Thu Oct 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 02 2018 Stanislav Levin <slev@altlinux.org> 0.5.11-alt1.git20150318.1.1
 - (NMU) Fix Requires and BuildRequires to python-setuptools
 * Sun Mar 13 2016 Ivan Zakharyaschev <imz@altlinux.org> 0.5.11-alt1.git20150318.1

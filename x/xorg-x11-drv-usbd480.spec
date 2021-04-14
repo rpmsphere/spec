@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Nov 13 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.906
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 29 2011 max@suse.com
 - Version 0.9.904:
   * Disbling other input devices doesn't seem to be needed anymore.

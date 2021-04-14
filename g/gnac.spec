@@ -61,7 +61,7 @@ make
 
 %changelog
 * Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 12 2013 umeabot <umeabot> 0.2.4.1-5.mga3
 + Revision: 351925
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

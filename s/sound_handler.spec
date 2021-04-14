@@ -24,7 +24,7 @@ ln -s play_wrapper %buildroot/%_bindir/play_wrapper.sh
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 23 2012 Sergey V Turchin <zerg@altlinux.org> 0.6.0-alt1
 - remove arts support
 

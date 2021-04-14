@@ -43,7 +43,7 @@ export CXX=%{_bindir}/g++
 
 %changelog
 * Mon Jan 15 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 23 2018 umeabot <umeabot> 0.10.2-9.mga7
   (not released yet)
 + Revision: 1297647

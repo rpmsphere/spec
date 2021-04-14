@@ -72,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed May 18 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.10-19
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
 * Tue Feb 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.10-18
@@ -87,7 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.5.10-14
 - Autorebuild for GCC 4.3
 * Fri Jan 18 2008 Michel Salim <michel.sylvan@gmail.com> - 0.5.10-13
-- Rebuild for Fedora 9 (development tree)
+- Rebuilt for Fedora 9 (development tree)
 * Mon Oct 15 2007 Michael Schwendt <mschwendt[AT]users.sf.net> - 0.5.10-12
 - Patch gai/Makefile.in CFLAGS to find PangoFT2.
 * Mon Sep 17 2007 Michel Salim <michel.sylvan@gmail.com> - 0.5.10-11
@@ -101,7 +101,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue Sep 19 2006 Michael Schwendt <mschwendt[AT]users.sf.net>
 - rebuilt
 * Thu Mar  2 2006 Michel Salim <michel.salim@gmail.com> - 0.5.10-6
-- Rebuild for Fedora Extras 5
+- Rebuilt for Fedora Extras 5
 * Mon Jan 30 2006 Michel Salim <michel.salim[AT]gmail.com> - 0.5.10-5
 - regenerate configure to account for modular xorg's location change
 - BuildReq changes: removed implicit dependencies, added xorg-x11-proto-devel and mesa-libGLU-devel that are now no longer pulled in

@@ -238,7 +238,7 @@ fi
 
 %changelog
 * Mon Jul 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 10 2008 Dag Wieers <dag@wieers.com> - 1.3.9-3 - 6211+/dag
 - Improved sysv script to include VNCSERVERARGS. (Arturo Díaz Rosemberg)
 * Thu Mar 13 2008 Dag Wieers <dag@wieers.com> - 1.3.9-2

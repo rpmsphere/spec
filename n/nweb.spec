@@ -38,7 +38,7 @@ install -D -p -m 0755 %{name} %{buildroot}%{_sbindir}
 
 %changelog
 * Mon Jul 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 23
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 18 2018 kekepower <kekepower> 23-2.mga7
   (not released yet)
 + Revision: 1230398

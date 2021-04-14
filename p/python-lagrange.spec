@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-lagrange
 Version:        20090327
 Release:        5.1
@@ -30,4 +30,4 @@ cp -a lagrange %{buildroot}%{python2_sitelib}
 
 %changelog
 * Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 20090327
-- Rebuild for Fedora
+- Rebuilt for Fedora

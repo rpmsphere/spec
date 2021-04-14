@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: pyds9
 Summary: A Python Connection to DS9 via XPA
 Version: 1.7
@@ -36,4 +36,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 04 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora

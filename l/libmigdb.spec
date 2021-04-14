@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 11 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 27 2010 - mcatudal@comcast.net
 - First Fedora 14 release
 * Tue Mar 23 2010 - mcatudal@comcast.net

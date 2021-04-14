@@ -54,4 +54,4 @@ sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/Scr
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.16
-- Rebuild for Fedora
+- Rebuilt for Fedora

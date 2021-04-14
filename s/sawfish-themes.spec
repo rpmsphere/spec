@@ -119,7 +119,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 12 2005 Götz Waschk <waschk@mandriva.org> 0.2-13mdk
 - new URL
 * Fri Sep 10 2004 Frederic Crozat <fcrozat@mandrakesoft.com> 0.2-12mdk

@@ -62,7 +62,7 @@ install -p -m644 doc/*.ps %buildroot%_docdir/%name
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 13 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 1.3.2-alt1
 - Version 1.3.2
 * Mon Nov 07 2011 Michael Shigorin <mike@altlinux.org> 1.3.1-alt1

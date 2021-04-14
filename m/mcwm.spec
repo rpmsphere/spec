@@ -40,6 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Apr 29 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 20130209-2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 28 2012 Damien Durand <splinux25@gmail.com> - 20111124-1
 - Initial release

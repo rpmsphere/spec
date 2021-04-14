@@ -146,7 +146,7 @@ fi
 
 %changelog
 * Sat Jun 24 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 24 2016 cyberorg@opensuse.org
 - update to 0.5.9_bzr0.509
 - add support for tightvncviewer as tigervnc lack needed feature

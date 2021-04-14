@@ -57,4 +57,4 @@ tar xvf %{SOURCE2}
 
 %changelog
 * Wed Feb 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

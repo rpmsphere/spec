@@ -62,7 +62,7 @@ rm -f .packlist
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 20 2009 Davide Madrisan <davide.madrisan@gmail.com> 1.1.1-2mamba
 - updated specfile
 * Thu May 18 2006 Stefano Cotta Ramusino <stefano.cotta@qilinux.it> 1.1.1-1qilnx

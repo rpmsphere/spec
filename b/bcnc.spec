@@ -54,4 +54,4 @@ sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/bCN
 
 %changelog
 * Thu Aug 30 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.11git
-- Rebuild for Fedora
+- Rebuilt for Fedora

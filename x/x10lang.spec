@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _name x10
 
 Name: x10lang
@@ -45,4 +45,4 @@ done
 
 %changelog
 * Thu Sep 12 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

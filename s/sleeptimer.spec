@@ -58,7 +58,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.64
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 08 2015 daniel <meisssw01 at gmail.com> 0.64-1free2015
 - 0.64
 - bugfix

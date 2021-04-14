@@ -1,6 +1,6 @@
 %global _name SmallerC
 %global __os_install_post %{nil}
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Simple C Compiler
 Name:		smallerc
@@ -40,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jul 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0100
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -41,7 +41,7 @@ sed -i 's|-lssl|-lcrypto|' configure
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr  8 2007 mrueckert@suse.de
 - update to version 1.1.3
 * Sun Mar  4 2007 mrueckert@suse.de

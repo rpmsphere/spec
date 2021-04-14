@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		pdftk-qgui
 Summary:	A Qt4-based GUI for pdftk
@@ -45,6 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.9.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 13 2010 - joerg.lorenzen@ki.tng.de
 - Initial package, version 0.1.9-2

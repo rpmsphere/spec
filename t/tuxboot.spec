@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           tuxboot
 Version:        23
 Release:        1
@@ -59,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 23
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -57,4 +57,4 @@ autoreconf -ifv
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.7
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: linapple
 Summary: Apple2 emulator for Linux
@@ -48,4 +48,4 @@ chmod +x $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2a
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: morse
 Summary: Classic morse trainer program
@@ -45,7 +45,7 @@ install -m 644 %name.1 %buildroot%_mandir/man1
 
 %changelog
 * Mon Oct 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 16 2012 Fr. Br. George <george@altlinux.ru> 2.5-alt1
 - Autobuild version bump to 2.5
 * Tue Jun 28 2011 Fr. Br. George <george@altlinux.ru> 2.4-alt1

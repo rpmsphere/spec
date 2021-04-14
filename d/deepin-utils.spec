@@ -41,7 +41,7 @@ python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
 %changelog
 * Wed Nov 29 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 14 2013 hillwood@linuxfans.org
 - update to git20130724
   upsteam did not provide changlog.

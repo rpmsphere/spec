@@ -37,6 +37,6 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 23 2009 Sergey Alembekov <rt@altlinux.ru> 1.2.1-alt1
 - initial build

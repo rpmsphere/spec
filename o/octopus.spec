@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: 		octopus
 Summary:	A TDDFT code
@@ -99,7 +99,7 @@ install-info --remove octopus &> /dev/null
 
 %changelog
 * Wed Jan 02 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 8.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 29 2008 Jussi Lehtola - 3.0.1-4
 - Devel provides -static.
 - Change defattrs to (-,root,root,-).

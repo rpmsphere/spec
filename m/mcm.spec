@@ -1,4 +1,5 @@
-%global debug_package %{nil}
+%define __python /usr/bin/python2
+%undefine _debugsource_packages
 %define _libdir %{_prefix}/lib
 
 Name:				 mcm
@@ -98,7 +99,7 @@ done
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue May 11 2010 pascal.bleser@opensuse.org
 - initial package (0.9.3)

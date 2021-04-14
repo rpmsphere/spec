@@ -68,7 +68,7 @@ mv %{buildroot}%{_sysconfdir}/%{name}.d/%{name}.desktop %{buildroot}%{_datadir}/
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 09 2008 Mario Blättermann <rpm@mandrivauser.de> 1.3.3-1mud2008.0
 - fork for mandrivauser.de, adjustments to mandriva rpm policy
 - added german description

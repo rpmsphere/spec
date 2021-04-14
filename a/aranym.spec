@@ -117,7 +117,7 @@ install -m 644 contrib/%{name}-mmu.desktop $RPM_BUILD_ROOT%{_datadir}/applicatio
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 23 2012 Petr Stehlik <pstehlik@sophics.cz> 0.9.13
 New ARAnyM release.
 Make use of two new desktop files.

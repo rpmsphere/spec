@@ -50,7 +50,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Tue Oct 08 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 16 2011 pascal.bleser@opensuse.org
 - moved to OBS
 - update to 2.3:

@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov  5 2008 lrupp@example.com
 - recommend normalize
 * Mon Nov  3 2008 lars@linux-schulserver.de

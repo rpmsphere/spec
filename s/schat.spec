@@ -93,7 +93,7 @@ service %{name}d condstop
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.6.3549
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Mar 03 2013 Motsyo Gennadi <drool@altlinux.ru> 0.8.6-alt1.svn3549
 - 0.8.6.3549

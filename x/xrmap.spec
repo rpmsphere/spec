@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A tool to manipulate and create images of Earth
 Name: xrmap
@@ -104,7 +104,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.33
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 08 2010 Oden Eriksson <oeriksson@mandriva.com> 2.33-8mdv2011.0
 + Revision: 615735
 - the mass rebuild of 2010.1 packages

@@ -31,4 +31,4 @@ install -D -m755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

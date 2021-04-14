@@ -131,7 +131,7 @@ fi
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 05 2010 Silvan Calarco <silvan.calarco@mambasoft.it> 0.8.1a-2mamba
 - rebuilt to remove executable requirements
 * Tue May 13 2008 Tiziana Ferro <tiziana.ferro@email.it> 0.8.1a-1mamba

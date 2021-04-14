@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 %global _name human-theme
 
 Name: human-gnome-theme
@@ -49,4 +50,4 @@ mv %{buildroot}%{_datadir}/icons/HumanLoginIcons/apps/64/computer.png %{buildroo
 
 %changelog
 * Tue Sep 06 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.39.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -33,6 +33,6 @@ make install
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 21 2019 tex - 0.3.4-1pclos2019
 - new

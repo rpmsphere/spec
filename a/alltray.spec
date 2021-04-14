@@ -46,7 +46,7 @@ desktop-file-install --dir $RPM_BUILD_ROOT%{_datadir}/applications \
 
 %changelog
 * Tue Dec 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.71b
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 24 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.71b-18
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 * Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.71b-17
@@ -109,7 +109,7 @@ desktop-file-install --dir $RPM_BUILD_ROOT%{_datadir}/applications \
 * Wed Apr 26 2006 Ignacio Vazquez-Abrams <ivazquez@ivazquez.net> 0.66-1
 - Upstream update
 * Mon Feb 13 2006 Ignacio Vazquez-Abrams <ivazquez@ivazquez.net> 0.65-2
-- Rebuild for Fedora Extras 5
+- Rebuilt for Fedora Extras 5
 * Thu Jan 27 2006 Ignacio Vazquez-Abrams <ivazquez@ivazquez.net> 0.65-1
 - Added -fPIC to CFLAGS
 - Added preload patch

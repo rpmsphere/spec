@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: 		edelib
 Version:    2.0
@@ -59,7 +59,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Mon May 28 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 29 2005 Vedran Ljubovic <vljubovic@smartnet.ba> 2.0.2-1ede
 - fix reversed logic w. efltk & efltk-devel
 - create separate packages for efluid, ecalc and etranslate

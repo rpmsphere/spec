@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		qwallchange
 Summary:	A simple wallpaper changing program
@@ -39,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jun 21 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

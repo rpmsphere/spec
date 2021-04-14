@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:			defendguin
 Version:		0.0.12
@@ -44,4 +44,4 @@ cp -a data/* $RPM_BUILD_ROOT/%{_datadir}/%{name}/
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora

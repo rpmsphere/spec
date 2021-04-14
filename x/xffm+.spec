@@ -41,4 +41,4 @@ mv %{buildroot}%{_bindir}/xffm %{buildroot}%{_bindir}/xffm+
    
 %changelog
 * Fri Jan 10 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.94
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -88,7 +88,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Jul 05 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug  4 2008 prusnak@suse.cz
 - fixed games datadir and binary dir in spec
 - fix missing arg to printf (printf-arg.patch)

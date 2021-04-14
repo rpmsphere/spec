@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xlife
 Summary: A cellular-automaton laboratory
@@ -62,4 +62,4 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Fri Sep 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.7.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

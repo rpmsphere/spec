@@ -140,7 +140,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99.81
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Aug 02 2008 Paulo Roma <roma@lcg.ufrj.br> 0.99.80-3
 - Added bcond_without mikmod. libmikmod-3.2.0 beta2 crashes on F9.
 - Requires libmikmod_2 for pushing the appropriate mikmod-devel package.
@@ -167,10 +167,10 @@ EOF
 * Mon Aug 30 2004 Matthias Saou <http://freshrpms.net/> 0.99.76-2
 - Added ldconfig calls since there are libs included.
 * Wed May 19 2004 Matthias Saou <http://freshrpms.net/> 0.99.76-2
-- Rebuild for Fedora Core 2.
+- Rebuilt for Fedora Core 2.
 * Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 0.99.76-1
 - Update to 0.99.76.
-- Rebuild for Fedora Core 1.
+- Rebuilt for Fedora Core 1.
 - Added missing gcc-c++ build dependency.
 * Fri May  2 2003 Matthias Saou <http://freshrpms.net/>
 - Update to 0.99.75.

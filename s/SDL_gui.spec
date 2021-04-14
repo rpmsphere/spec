@@ -58,7 +58,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Jul 05 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 05 2007 Paulo Roma <roma@lcg.ufrj.br> 0.10.3-1
 - Rebuilt for Fedora 6 x86_64.
 - Adapted spec file.

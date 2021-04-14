@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 20 2012 Agnelo de la Crotche <agnelo@unixversal.com> 1.7.2
 - added support for Fedora's grub-efi
 - added mbr_chainload and efi_chainload

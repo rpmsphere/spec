@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		basqet
 Version: 0.2.0.rev135
@@ -36,6 +36,6 @@ qmake-qt4 PREFIX=/usr
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0.rev135
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 10 2009 - TI_Eugene <ti.eugene@gmail.com> 0.2.0
 - Initial build for OBS

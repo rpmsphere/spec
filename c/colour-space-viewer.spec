@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: colour-space-viewer
 Summary: Visualises different colour space cubes in 3 projections
@@ -48,4 +48,4 @@ install -Dm644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desk
 
 %changelog
 * Tue Jan 07 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.rev7
-- Rebuild for Fedora
+- Rebuilt for Fedora

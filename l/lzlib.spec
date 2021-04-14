@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         lzlib
 Summary:      LZMA Compression Library
@@ -54,4 +54,4 @@ rm -f $RPM_BUILD_ROOT%{_infodir}/dir
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11
-- Rebuild for Fedora
+- Rebuilt for Fedora

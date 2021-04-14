@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Thune Scripting Language
 Name: thune
@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 21 2008 Karl Robillard <wickedsmoke@users.sf.net>
 - Initial package release.

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		qtagconvert
 Version: 2.0.0
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}-2.0.0
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 06 2011 Petr Vanek <petr@scribus.info> 0.5
 - suse fixes
 * Tue May 19 2009 TI_Eugene <ti.eugene@gmail.com> 0.5

@@ -35,4 +35,4 @@ install -c -m 755 \
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -31,7 +31,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jul 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 09 2012 qmp <glang@lavabit.com> - 0.4-3
 - Use SOURCE0 instead of _sourcedir
 * Fri Jun 08 2012 qmp <glang@lavabit.com> - 0.4-2

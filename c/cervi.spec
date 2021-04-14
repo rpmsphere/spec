@@ -73,7 +73,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 21 2008 Wind Win <yc.yan@ossii.com.tw>
 - Rebuild for OSSII.
 * Fri Jul  4 2008 lmichnovic@suse.cz

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Animates X11 root window with a simulated ant hill
 Name: xantfarm
@@ -37,6 +37,6 @@ make DESTDIR=%{buildroot} install install.man
 
 %changelog
 * Tue Dec 26 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2014.08.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 02 1998 chorn@warwick.net
 - Initial package

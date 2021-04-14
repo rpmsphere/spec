@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Simulation of molecular sequence evolution
 Name: seq-gen
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 22 2005 Cymon J. Cox <cymon@duke.edu>
 - Rebuild for version 1.3.2
 * Mon Feb 9 2004 Cymon J. Cox <cymon@duke.edu>

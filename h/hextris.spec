@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           hextris
 Provides:       cxhextris
@@ -45,7 +45,7 @@ make -f Makefile.Linux install DESTDIR=%{buildroot} FONTDIR=%{_datadir}/fonts MA
 
 %changelog
 * Wed Jun 03 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct  1 2012 werner@suse.de
 - Use new font rpm scriptlets API
 * Sat Mar 24 2012 jengelh@medozas.de

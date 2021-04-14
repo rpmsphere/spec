@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Apr 08 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul  1 2011 vuntz@opensuse.org
 - Build glade3 catalog: add pkgconfig(gladeui-1.0) BuildRequires
   and create a glade3-catalog-cairo-compmgr subpackage.

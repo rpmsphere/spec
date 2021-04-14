@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: Play Checkers with two people on the same computer
 Name: checkers
 Version: 0.2
@@ -30,4 +30,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

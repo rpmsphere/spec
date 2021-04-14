@@ -43,7 +43,7 @@ written.
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 26 2011 Dag Wieers <dag@wieers.com> - 2.2.1-1
 - Updated to release 2.2.1.
 * Fri May 14 2010 Dag Wieers <dag@wieers.com> - 2.2.0-1

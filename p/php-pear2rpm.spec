@@ -41,7 +41,7 @@ names.
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 01 2007 peter.pramberger@member.fsf.org 1.4-4
 - added support for package requirements addition/exclusion
 - make full package build default

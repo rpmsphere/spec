@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _name FreeSMS
 
 Name:           freesms
@@ -55,7 +55,7 @@ cat files.FreeSMS
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr  6 2012 joop.boonen@opensuse.org
 - Reformated the spec file with spec-cleaner
 * Mon Oct 17 2011 joop.boonen@opensuse.org

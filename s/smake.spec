@@ -61,6 +61,6 @@ make install DESTDIR=$RPM_BUILD_ROOT INS_BASE=/usr MANDIR=man
 
 %changelog
 * Fri Aug 07 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 25 2008 Pascal Bleser <guru@unixtech.be> 1.2a41
 - new package

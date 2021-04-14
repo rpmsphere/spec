@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Openfire XMPP Server
 Name:		openfire
@@ -156,7 +156,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Feb 20 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 26 2010 nix@opensuse.org
 - Dont enable fdupes (on resources/security/) as it breaks the crypto store
   See: http://www.igniterealtime.org/issues/browse/OF-30

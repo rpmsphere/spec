@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Program to snoop on a TTY through another
 Name: ttysnoop
@@ -41,8 +41,8 @@ redirecting both input and output from/to it.
 
 %changelog
 * Wed Jul 08 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12c
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 08 2006 Dries Verachtert <dries@ulyssis.org> - 0.12c-1.2 - 7981+/dag
-- Rebuild for Fedora Core 5.
+- Rebuilt for Fedora Core 5.
 * Mon Aug 22 2005 Dag Wieers <dag@wieers.com> - 0.12c-1
 - Initial package. (using DAR)

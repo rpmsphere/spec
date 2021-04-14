@@ -45,7 +45,7 @@ autoreconf -ifv
 
 %changelog
 * Wed Mar 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.02
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 20 2008 - cmorve69@yahoo.es
 - removed bogus libGLU dependency
 * Tue Jan 29 2008 - cmorve69@yahoo.es

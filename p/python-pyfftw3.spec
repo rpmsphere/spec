@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define modname PyFFTW3
 
 Name:           python-pyfftw3
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Dec 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Jan 24 2011 scorot@gtt.fr - 0.2.1
 - Initial release

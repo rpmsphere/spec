@@ -50,7 +50,7 @@ go build cmd/peco/peco.go
 
 %changelog
 * Mon Aug 12 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.3git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 09 2018 Toshiaki Ara <ara_t@384.jp> 0.5.3-1
 - update to 0.5.3
 * Wed Jun 07 2017 IWAI, Masaharu <iwaim.sub@gmail.com> 0.5.1-1

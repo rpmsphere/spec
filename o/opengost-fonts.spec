@@ -63,6 +63,6 @@ install -m 0644 opengostfont-ttf-%{version}/*.ttf \
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr  8 2012 lazy.kent@opensuse.org
 - Initial package created - 0.2

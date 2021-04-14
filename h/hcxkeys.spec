@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: hcxkeys
 Summary: Small set of tools to generate plainmasterkeys
@@ -30,5 +30,5 @@ make install INSTALLDIR=%{buildroot}/usr/bin
 
 %changelog
 * Thu Dec 12 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 

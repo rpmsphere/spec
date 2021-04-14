@@ -48,4 +48,4 @@ EOF
 
 %changelog
 * Thu Jan 02 2020 Wei-Lun Chao <blubat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

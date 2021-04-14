@@ -52,6 +52,6 @@ install -Dm755 %{SOURCE2} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Jan 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.40
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 26 2016 Miguel Freitas
 - Build 0.9.28

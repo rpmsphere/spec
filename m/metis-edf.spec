@@ -104,6 +104,6 @@ ln -sf %{_libdir}/libmetis-edf.so.4 $RPM_BUILD_ROOT%{_libdir}/libmetis-edf.so
 
 %changelog
 * Tue Dec 13 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 27 2011 scorot@gtt.fr - 4.1
 - first release

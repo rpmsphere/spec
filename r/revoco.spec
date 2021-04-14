@@ -50,7 +50,7 @@ help2man \
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Dec 30 2007 Pascal Bleser <guru@unixtech.be> 0.4
 - new package

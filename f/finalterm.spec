@@ -63,6 +63,6 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Mon Oct 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 8 2013 Jóhann B. Guðmundsson <johannbg@fedoraproject.org> - 1.0-1
 - initial packaging

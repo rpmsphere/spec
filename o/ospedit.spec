@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: ospedit
 Version: 2.1.1
@@ -32,4 +32,4 @@ install -m755 bin/linux/* %{buildroot}%{_bindir}
 
 %changelog
 * Fri Feb 07 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -32,6 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 28 2011 Damianator <damianatorrpm@gmail.com> - 3.0.0
 - Initial release

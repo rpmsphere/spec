@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Feb 04 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 3.0-1mamba
 - automatic update by autodist

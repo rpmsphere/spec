@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 name:          ssvnc
 Summary:       Enhanced TightVNC Viewer
@@ -62,4 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.30
-- Rebuild for Fedora
+- Rebuilt for Fedora

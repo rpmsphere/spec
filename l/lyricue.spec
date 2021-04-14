@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Dec 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 03 2009 slick50 <lxgator@gmail.com> 2.0.0-1pclos2009
 - initial pkg

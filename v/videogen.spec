@@ -32,7 +32,7 @@ install -pD %name.1x %buildroot%_mandir/man1/%name.1x
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.33
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 2:0.33-alt1.qa1
 - NMU: rebuilt for debuginfo.
 * Fri Sep 10 2010 Michael Shigorin <mike@altlinux.org> 2:0.33-alt1

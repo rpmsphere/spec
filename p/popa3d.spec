@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _default_patch_fuzz 2
 
 Name:           popa3d
@@ -60,6 +60,6 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 13 2008 TI_Eugene <ti.eugene@gmail.com> 1.0.2
 - Initial build for OBS

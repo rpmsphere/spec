@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		apwal
 Version:	0.4.5
@@ -45,7 +45,7 @@ interface and XML format to save the settings.
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 15 2006 Piotr Pacholak <obi.gts@gmail.com>
 - SUSE 10.1
 * Sun May 28 2006 Piotr Pacholak <obi.gts@gmail.com>

@@ -100,6 +100,6 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Thu Aug 17 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 27 2008 Pascal Bleser <guru@unixtech.be> 1.0.0
 - new package

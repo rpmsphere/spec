@@ -49,7 +49,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 
 %changelog
 * Fri Dec 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 0.2.4-2
 + Revision: 27950e0
 - MassBuild#464: Increase release tag

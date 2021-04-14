@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define pkg_name HotPotatoOnline
 
 Name:		hponline
@@ -74,6 +74,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 08 2008 Feather Mountain <john@ossii.com.tw> 1.2.0-1.ossii
 - Build for OSSII

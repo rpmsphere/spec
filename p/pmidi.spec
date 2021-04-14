@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Nov 07 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 13 2013 sr@parabola.me.uk
 - Completely simplify the spec file
 - Remove irrelevant info from description

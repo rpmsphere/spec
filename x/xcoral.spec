@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           xcoral
 BuildRequires:  libX11-devel, libXt-devel
@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.50.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 26 2009 mls@suse.de
 - make patch0 usage consistent
 * Wed Nov  5 2008 meissner@suse.de

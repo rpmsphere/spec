@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Oct 18 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 26 2010 Sayamindu Dasgupta <sayamindu@laptop.org>
 - Initial packaging.

@@ -343,7 +343,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 17 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2p1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug  4 2010 Vincent S. Cojot <openlook@NOSPAM.cojot.name> 3.2p1.4-25.7.el5
 - Revamped openwin-menu-programs again, added openwin-menu-OWacomp-stub as a stub.
 * Mon Jun 21 2010 Vincent S. Cojot <openlook@NOSPAM.cojot.name> 3.2p1.4-25.6.el5

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           gnome-quod
 Summary:        Board game to make a square from pieces
@@ -55,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 04 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec  8 2008 kirill.kirillov@gmail.com
 - Initial build of 0.1.5

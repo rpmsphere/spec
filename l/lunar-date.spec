@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name: lunar-date
 Version: 2.4.0
 Release: 7.1
@@ -56,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 30 2010 Gcell <ph.linfan@gmail.com> - 2.2.4-2
 - Fix some spec file details
 - This rpm cotained holiday.dat

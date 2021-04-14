@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         mfm
 License:      GPL
@@ -42,7 +42,7 @@ install bitmaps/* %{buildroot}%{_includedir}/X11/bitmaps/mfm
 
 %changelog
 * Fri Jun 05 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 17 2002 - ro@suse.de
 - removed bogus self-provides
 * Tue Jun 12 2001 - fehr@suse.de

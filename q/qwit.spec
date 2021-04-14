@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           qwit
 Version:        1.1pre2
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1pre2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 11 2010 IBBoard
 - Updated to r323 (changes at http://code.google.com/p/qwit/source/list)
 * Mon Dec 21 2009 IBBoard

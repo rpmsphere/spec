@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xzoom
 Version: 0.3
@@ -42,7 +42,7 @@ install -Dm 644 xzoom.man $RPM_BUILD_ROOT%_mandir/man1/xzoom.1
 
 %changelog
 * Wed Nov 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 12 2011 Fr. Br. George <george@altlinux.ru> 0.3-alt3
 - BuildRequires recalculated
 * Tue Dec 09 2008 Fr. Br. George <george@altlinux.ru> 0.3-alt2

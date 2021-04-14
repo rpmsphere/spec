@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           klayout
 Version:        0.25.7
@@ -77,7 +77,7 @@ install -Dm644 etc/logo.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Mon Jan 14 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.25.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 23 2013 burnus@net-b.de
 - Update to 0.22.9
   * Bug fixes

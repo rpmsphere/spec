@@ -41,7 +41,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 20 2010 awafaa@opensuse.org
 - Fix MySpace key - use new key
 * Fri Sep 17 2010 awafaa@opensuse.org

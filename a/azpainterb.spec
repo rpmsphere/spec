@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           azpainterb
 Version:        1.1.3b1
@@ -57,4 +57,4 @@ make %{?_smp_mflags}
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3b1
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:         codeville
 License:      BSD
 Group:        Development/Libraries/Python
@@ -38,4 +38,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

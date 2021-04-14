@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:				 stegfs
 Version:			 201001
@@ -53,6 +53,6 @@ export SUSE_ASNEEDED=0
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 201001
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 21 2010 pascal.bleser@opensuse.org
 - initial package (201001)

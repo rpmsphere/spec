@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: gandi
 Version: 0.18
 Release: 4.1
@@ -39,6 +39,6 @@ rm -r %{buildroot}
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 18 2014 Gandi <feedback@gandi.net> 0.1
 - first rpm structure

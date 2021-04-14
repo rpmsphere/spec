@@ -31,4 +31,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Oct 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20110425
-- Rebuild for Fedora
+- Rebuilt for Fedora

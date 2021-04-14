@@ -105,7 +105,7 @@ touch --no-create %{_datadir}/icons/hicolor || :
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.4.0-9
 - Autorebuild for GCC 4.3
 * Wed Aug 22 2007 Hans de Goede <j.w.r.degoede@hhs.nl> 0.4.0-8

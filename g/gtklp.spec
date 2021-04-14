@@ -69,7 +69,7 @@ install -Dm0644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 1.3.0-4.mga5
 + Revision: 744904
 - Second Mageia 5 Mass Rebuild

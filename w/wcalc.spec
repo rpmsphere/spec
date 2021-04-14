@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jan 08 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 15 2009 Werner Hoch <werner.ho@gmx.de> - 1.1
 - build fix for openSUSE 11.2
 * Sun Mar 01 2009 Werner Hoch <werner.ho@gmx.de> - 1.1

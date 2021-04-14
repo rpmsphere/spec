@@ -41,6 +41,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul  5 2012 devel.openSUSE.org@gmail.com
 - Initial package creation - version 0.6.1

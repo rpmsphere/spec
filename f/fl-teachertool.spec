@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:   FLTK version of TeacherTool
 Name:      fl-teachertool
 Version:   0.71
@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.71
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 10 2009 cyberorg@opensuse.org
 - Update to 0.71
 - Now works with LTSP5

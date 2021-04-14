@@ -52,7 +52,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Fri Jun 17 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Jul 09 2010 Davide Madrisan <davide.madrisan@gmail.com> 0.3-1mamba
 - package created by autospec

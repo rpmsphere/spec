@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           afio
 Version:        2.5.2
@@ -34,7 +34,7 @@ install -m 755 afio.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %changelog
 * Fri Oct 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 11 2012 Alexander Khrukin <akhrukin@mandriva.org> 2.5.1-1
 + Revision: 784257
 - version update 2.5.1

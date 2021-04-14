@@ -50,7 +50,7 @@ test -e "$h" && %__ln_s -f "$h" .
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.37
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 18 2010 pascal.bleser@opensuse.org
 - update to 0.37:
   * an option was added for using high intensity colors

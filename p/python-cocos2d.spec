@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 %define module cocos2d
 
 Summary:	A framework for building 2D applications
@@ -34,4 +35,4 @@ python setup.py install --root $RPM_BUILD_ROOT --prefix /usr
 
 %changelog
 * Fri Aug 21 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

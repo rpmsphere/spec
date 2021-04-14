@@ -38,4 +38,4 @@ mv %{buildroot}/usr/lib64-linux*64 %{buildroot}%{_libdir}
 
 %changelog
 * Tue Nov 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

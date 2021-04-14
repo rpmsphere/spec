@@ -49,7 +49,7 @@ cp -fr Aurora %{buildroot}%{_datadir}/themes
 
 %changelog
 * Mon Mar 07 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 19 2015 Bernhard Rosenkraenzer <bero@bero.eu> 1.5.1-11
 + Revision: 9fc0332
 - MassBuild#774: Increase release tag

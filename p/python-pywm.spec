@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: python-pywm
 Version: 1.21
 Release: 7.1
@@ -46,6 +46,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Tue Aug 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.21
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 19 2013 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 1.0-alt1
 - Initial build for Sisyphus

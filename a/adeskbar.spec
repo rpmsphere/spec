@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 08 2011 Texstar <texstar at gmail.com> 0.4.2-3pclos2011
 - add dep pyxdg
 * Sun Oct 31 2010 Texstar <texstar at gmail.com> 0.4.2-2pclos2010

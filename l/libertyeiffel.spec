@@ -14,7 +14,7 @@ It is a free eiffel compiler started from SmartEiffel code base. Its goal is
 to retain its predecessor's rigour, but not its rigidity.
 Think of Liberty Eiffel as SE liberated from its academic constraints.
 
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 %prep
 %setup -q -n bell
@@ -42,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Sep 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2016.05
-- Rebuild for Fedora
+- Rebuilt for Fedora

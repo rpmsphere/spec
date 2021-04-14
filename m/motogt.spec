@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define		oname MotoGT
 
 Name:		motogt
@@ -70,7 +70,7 @@ EOF
 
 %changelog
 * Thu Jun 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20110505
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 20110505-5
 + Revision: 70fde03
 - MassBuild#464: Increase release tag

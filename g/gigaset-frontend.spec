@@ -99,6 +99,6 @@ done
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 21 2011 pascal.bleser@opensuse.org
 - initial version (0.6.0)

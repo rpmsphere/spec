@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: regina-rexx
 Version: 3.9.3
@@ -65,6 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 02 2012 Mark Hessling
 - Vendor package

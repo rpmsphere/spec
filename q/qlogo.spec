@@ -1,5 +1,5 @@
 %global _name QLogo
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		qlogo
 Version:	0.92
@@ -56,4 +56,4 @@ convert icon.ico $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Wed Sep 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.92
-- Rebuild for Fedora
+- Rebuilt for Fedora

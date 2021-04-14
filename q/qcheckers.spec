@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		qcheckers
 Version: 0.1.rev4
@@ -45,6 +45,6 @@ make
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.rev4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 01 2011 TI_Eugene <ti.eugene@gmail.com> 0.1
 - Initital build in OBS

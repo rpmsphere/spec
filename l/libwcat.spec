@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Library for the watchcat software watchdog
 Name:		libwcat
@@ -66,7 +66,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 21 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 1.1-4
 + Revision: 14f23a7
 - MassBuild#464: Increase release tag

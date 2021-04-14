@@ -40,6 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 31 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.94
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 11 2008 prusnak@suse.cz
 - created package (v 0.94)

@@ -37,4 +37,4 @@ on the Labeled Faces in the Wild benchmark.
 
 %changelog
 * Wed Aug 01 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

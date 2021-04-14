@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		eviltermit
 Version:	1.1.3.1
@@ -41,7 +41,7 @@ Features:
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb  8 2008 Pascal Bleser <guru@unixtech.be> 1.1.3
 - monospace patch merged by upstream
 - new upstream version

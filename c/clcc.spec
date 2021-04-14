@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: clcc
 Version: 0.3.0
@@ -43,4 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Dec 02 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

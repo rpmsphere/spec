@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: The nice editor
 Name: ne
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 18 2009 Sebastiano Vigna <vigna@dsi.unimi.it> 2.0.2
 - Upgraded to 2.0.2.
 * Tue Feb 17 2009 Sebastiano Vigna <vigna@dsi.unimi.it> 2.0.1

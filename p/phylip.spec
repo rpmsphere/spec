@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:			Phylogeny Inference Package
 Name:				phylip
@@ -43,6 +43,6 @@ cp -a exe/* %{buildroot}/%{_libexecdir}/%{name}
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.697
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 15 2012 Scott Santos <santos@auburn.edu> - 20120412
 - initial release

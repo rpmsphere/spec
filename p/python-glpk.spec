@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:	A simple Python interface to GLPK
 Name:		python-glpk
 Version:	0.4.43
@@ -35,7 +35,7 @@ python2 setup.py install --root=%{buildroot}
 
 %changelog
 * Thu Feb 06 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.43
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 21 2010 Funda Wang <fwang@mandriva.org> 1:0.4.43-2mdv2011.0
 + Revision: 599397
 - rebuild for py 2.7

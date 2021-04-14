@@ -87,7 +87,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %changelog
 * Tue Dec 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 1.4.7-21
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild

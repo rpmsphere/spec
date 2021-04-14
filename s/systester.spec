@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: systester		
 Version: 1.5.1
@@ -58,7 +58,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 23 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 28 2012 systester.project@gmail.com 1.5.1-1
 - PI and log files now lay on user's home directory (GUI only)
 * Wed May 02 2012 systester.project@gmail.com 1.5.0-1

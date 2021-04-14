@@ -33,4 +33,4 @@ python3 setup.py install --root=%{buildroot} --prefix=/usr
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

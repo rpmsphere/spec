@@ -85,7 +85,7 @@ rm -fv %{buildroot}%{_bindir}/accountstest
 
 %changelog
 * Thu Aug 17 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 12 2016 Rex Dieter <rdieter@fedoraproject.org> - 1.13-13
 - more robust libdir handling (#1366692)
 

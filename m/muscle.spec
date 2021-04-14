@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           muscle
 Version:        3.8.31
@@ -41,6 +41,6 @@ cd src
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.31
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 24 2010 dom@vbi.vt.edu
 - Initial RPM & custom Makefile

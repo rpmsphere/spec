@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           pdcurses
 Version:        3.4
@@ -68,4 +68,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

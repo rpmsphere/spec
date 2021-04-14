@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __os_install_post %{nil}
 
 %define		_prefix		/opt/Geant4
@@ -335,7 +335,7 @@ fi
 
 %changelog
 * Thu Jan 08 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 10.02
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec  6 2009 Go Iwai <go.iwai@kek.jp> - 9.2.p02
 - Update to 9.2.p02
 * Sun May 17 2009 Go Iwai <go.iwai@kek.jp> - 9.2.p01

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		qtpuzzle
 Version: 0.0.1.rev278
@@ -38,6 +38,6 @@ sed -i 's|#Icon|Icon|' %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.1.rev278
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 01 2011 TI_Eugene <ti.eugene@gmail.com> 0.0.1
 - Initital build in OBS

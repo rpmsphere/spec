@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Apr 10 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.11a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 9 2001 Christian Ruppert <arc@gmx.li>
 - Added package description
 - Updated URL

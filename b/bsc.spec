@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       	bsc
 Version:    	4.1.0
@@ -60,7 +60,7 @@ install BeesoftCommander.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{
 
 %changelog
 * Thu Feb 06 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 4.1.0-2mdv2011.0
 + Revision: 616864
 - the mass rebuild of 2010.0 packages

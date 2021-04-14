@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		volti
 Version:	0.2.3
 Release:	6.1
@@ -60,7 +60,7 @@ sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Sat Aug 03 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 25 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.2.3-3
 + Revision: 768154
 - imported package volti

@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 10 2008 buschmann23@opensuse.org
 - fixing some rpmlint warnings/errors
 * Thu Jan 10 2008 buschmann@huessenbergnetz.de

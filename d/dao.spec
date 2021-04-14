@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Dao Programming Language
 Name: dao
@@ -38,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Sep 27 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0beta
-- Rebuild for Fedora
+- Rebuilt for Fedora

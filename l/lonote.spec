@@ -53,6 +53,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 22 2012 Robin Lee <cheeselee@fedoraproject.org>
 - Initial package

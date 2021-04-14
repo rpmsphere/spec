@@ -268,7 +268,7 @@ install -D -m644 %{SOURCE102} %{buildroot}%{_sysconfdir}/httpd/conf/vhosts.d/%{n
 
 %changelog
 * Fri May 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 30 2013 pterjan <pterjan> 2.4.2-1.mga4
 + Revision: 563254
 - Update rails patch to accept 4.0.2

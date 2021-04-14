@@ -46,6 +46,6 @@ make
 
 %changelog
 * Wed May 16 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 03 2013 Bogdan Drozdowski <bogdandr@op.pl>
 - Initial package

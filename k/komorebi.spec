@@ -49,4 +49,4 @@ make %{?_smp_mflags}
 
 %changelog
 * Mon Dec 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

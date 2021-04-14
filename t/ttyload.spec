@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 17 2011 04:55:21 UTC - jamesp@vicidial.com
 - Code cleanup to try and make a better package I hope
 * Wed Dec 15 2010 01:21:18 UTC - jamesp@vicidial.com

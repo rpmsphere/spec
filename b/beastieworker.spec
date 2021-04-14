@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _name BeastieWorker
 
 Summary:   A 3D realization of SOCOBAN
@@ -67,6 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Nov 11 2009 Gene <gene@ossii.com.tw> 0.4-1
 - Build for OSSII

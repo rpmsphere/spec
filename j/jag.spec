@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		jag
 Version:	0.3.1
@@ -74,7 +74,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 22 2012 johnwu<johnwu@server1.ossii.com.tw>
 - rebuild for OX
 * Mon Dec 06 2010 Oden Eriksson <oeriksson@mandriva.com> 0.3.1-2mdv2011.0

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           eko
 Version:        6.0.0
@@ -69,7 +69,7 @@ EOF
 
 %changelog
 * Tue Sep 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 21 2015 avvissu@yandex.ru
 - Update o 2.1.0:
   * misc fixes

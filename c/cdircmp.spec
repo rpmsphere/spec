@@ -36,6 +36,6 @@ install -D -m755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 27 2006 David Bolt <davjam@davjam.org>
 - First spec and build for SUSE.

@@ -32,7 +32,7 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 27 2012 asterios.dramis@gmail.com
 - Use desktop-file-utils instead of deprecated %%suse_update_desktop_file macro
   for installing the desktop file. Replaced update-desktop-files build

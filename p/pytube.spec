@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.11.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 03 2010 Texstar <texstar at gmail.com> 0.0.11.5-3pclos2010
 - rebuild
 * Sun May 24 2009 Texstar <texstar@gmail.com> 0.0.11.5-2pclos2009

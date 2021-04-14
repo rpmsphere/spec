@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: gav
 Version: 0.9.0
 Release: 1
@@ -58,7 +58,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 19 2007 kde <athena_star {at} 163 {dot} com> - 0.9.0-3mgc
 - fix a typo in the spec file
 * Thu Apr 19 2007 kde <athena_star {at} 163 {dot} com> - 0.9.0-2mgc

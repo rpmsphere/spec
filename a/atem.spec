@@ -35,7 +35,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct  8 2011 sweet_f_a@gmx.de
 - build from tar ball instead of git repo
 * Mon Sep  5 2011 sweet_f_a@gmx.de

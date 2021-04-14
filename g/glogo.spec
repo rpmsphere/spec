@@ -57,4 +57,4 @@ install -Dm 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Fri Jul 06 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

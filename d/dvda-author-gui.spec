@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: dvda-author-gui
 Summary: Qt GUI for dvda-author
 Version: 10.05
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 10.05
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 09.02-2mdv2011.0
 + Revision: 610309
 - rebuild

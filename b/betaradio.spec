@@ -37,6 +37,6 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 25 2009 swyear@yahoo.com.tw
 - packaged betaradio version 0.1.2

@@ -49,7 +49,7 @@ make
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 26 2012 asterios.dramis@gmail.com
 - Removed %%clean section (not needed anymore).
 * Sun Oct 30 2011 asterios.dramis@gmail.com

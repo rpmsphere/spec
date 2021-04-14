@@ -70,6 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.30c
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Nov 06 2009 Gene <gene@ossii.com.tw>- 0.30-1
 - build the program

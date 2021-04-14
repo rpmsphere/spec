@@ -37,4 +37,4 @@ meson --prefix=/usr build
 
 %changelog
 * Fri Nov 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

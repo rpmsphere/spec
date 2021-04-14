@@ -62,7 +62,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Aug 15 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.8.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 29 2010 Chen Lei <supercyper@163.com> - 0.9.6.8-1
 - Update to 0.9.6.3
 - Add qt runtime dependency

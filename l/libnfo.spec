@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           libnfo
 Version:        1.0.1
 Release:        1
@@ -55,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 04 2010 Emmanuel Seyman <emmanuel.seyman@club-internet.fr> - 2.0.0-1
 - Update to 2.0.0

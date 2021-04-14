@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Minimal X display lock program
 Name:		xtrlock
@@ -56,7 +56,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Jul 23 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 21 2009 Thierry Vignaud <tvignaud@mandriva.com> 2.0-2mdv2010.0
 + Revision: 446272
 - rebuild

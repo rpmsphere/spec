@@ -82,6 +82,6 @@ desktop-file-install --vendor ""\
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 20 2008 Stumpy842 <stump842@gmail.com> 0.3.5-1pclos2007
 - Import for PCLOS

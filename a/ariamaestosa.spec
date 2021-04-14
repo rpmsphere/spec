@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define srcname AriaSrc
 
 Name: ariamaestosa
@@ -34,7 +34,7 @@ python2 scons/scons.py install prefix=%buildroot/usr
 
 %changelog
 * Tue Jul 16 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 28 2012 Alex Karpov <karpov@altlinux.ru> 1.4.6-alt1
 - new version
 * Tue Jul 03 2012 Alex Karpov <karpov@altlinux.ru> 1.4.2-alt1

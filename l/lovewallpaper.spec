@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           lovewallpaper
 Version:        1.5.4
 Release:        4.1
@@ -45,7 +45,7 @@ echo /usr/bin/python2 %{python2_sitelib}/%{name}/love-wallpaper >> %{buildroot}%
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 13 2012 avastms@ghostunix.org
 - version 1.5.4
   * Added support for Mate.

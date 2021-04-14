@@ -27,6 +27,6 @@ Python extension to AstroDienst Swiss Ephemeris library.
 
 %changelog
 * Mon Sep 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.08.00
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 11 2016 Jens Petersen <petersen@redhat.com>
 - Initial package

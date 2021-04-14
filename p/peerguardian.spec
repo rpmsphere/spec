@@ -52,7 +52,7 @@ find %{buildroot} -name "*.la" -delete
 
 %changelog
 * Fri Jun 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 2.2.4-3.mga5
 + Revision: 748882
 - Second Mageia 5 Mass Rebuild

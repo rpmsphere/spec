@@ -50,4 +50,4 @@ sed -i 's|node->type != node->type|node->type != node2->type|' src/axl_dtd.c
 
 %changelog
 * Mon Aug 29 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

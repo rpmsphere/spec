@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Mar 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 21 2012 dimstar@opensuse.org
 - Add libX11-devel, libXaw-devel and libXt-devel BuildRequires on
   openSUSE > 12.1 to cater for the reorganization of xorg-x11

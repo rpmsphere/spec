@@ -60,6 +60,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 13 2005 Crispin Boylan <viewtronix@uklinux.net> 3.2-1mdk
 - initial cooker package

@@ -48,7 +48,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Thu Oct 09 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 02 2012 fwang <fwang> 0.5.3-2.mga3
 + Revision: 266620
 - do not build xine backend

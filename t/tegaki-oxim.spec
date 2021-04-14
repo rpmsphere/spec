@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Summary: 	Chinese and Japanese Handwriting Recognition
 Name: 		tegaki-oxim
 Version: 	0.2
@@ -39,6 +40,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 17 2009 Wind <yc.yan@ossii.com.tw> 0.1.ossii
 - Build for OSSII.

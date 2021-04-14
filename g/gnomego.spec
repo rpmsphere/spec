@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: gnomego
 Summary: A Go client for the gnome desktop
 Version: 0.5.1
@@ -49,4 +49,4 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Thu Jan 02 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

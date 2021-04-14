@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Qt GMail Notifier
 Name:		qgmailnotifier
@@ -38,7 +38,7 @@ install -Dp -m 0644 img/gmail.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2008.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 06 2011 Petr Vanek <petr@scribus.info> 2008.2
 - suse fixes
 * Wed Jul 08 2009 TI_Eugene <ti.eugene@gmail.com>

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Tool to synchronize directories
 Name: dirsync
@@ -37,6 +37,6 @@ rm %{name} %{name}.exe
 
 %changelog
 * Sun Jun 16 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 04 2008 Dag Wieers <dag@wieers.com> -  - 7981/dag
 - Initial package. (using DAR)

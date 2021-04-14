@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define tar_release a9
 
 Name:    lmbench
@@ -53,7 +53,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Mar 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 3.0-0.a9.3mdv2011.0
 + Revision: 620248
 - the mass rebuild of 2010.0 packages

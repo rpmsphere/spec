@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: x11basic
 Version: 1.28
@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.28
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 07 2007 Markus Hoffmann <kollo@users.sourceforge.net>
   New release (1.14)
 * Sat Mar 17 2007 Markus Hoffmann <kollo@users.sourceforge.net>

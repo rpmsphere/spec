@@ -72,4 +72,4 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Mon Oct 17 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

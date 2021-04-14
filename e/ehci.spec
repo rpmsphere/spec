@@ -52,4 +52,4 @@ install -Dm644 include/ehci.h %{buildroot}%{_includedir}/ehci.h
 
 %changelog
 * Sun Mar 3 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora

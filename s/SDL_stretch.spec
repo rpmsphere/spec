@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    SDL_stretch
 Version: 0.3.1
@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Nov 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 22 2009 Guido Draheim <guidod-2003-@gmx.de> 1.02
 + fixing stuff for opensuse policies - e.g. introducing secondary library
   to defeat the "shlib-policy-name-error (Badness: 10000)" failure; and

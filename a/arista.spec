@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: 		arista
 Version: 	0.9.6
 Release: 	1
@@ -56,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 29 2010 Egner Quero <legnerquero [AT] gmail.com> - 0.9.3
 - Packaged to Mandriva (Blogdrake Repository)

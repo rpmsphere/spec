@@ -151,7 +151,7 @@ fi
 
 %changelog
 * Wed Jan 11 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.24.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.24.0-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 * Wed Oct 28 2015 David Tardon <dtardon@redhat.com> - 0.24.0-4

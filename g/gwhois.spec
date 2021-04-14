@@ -51,7 +51,7 @@ Authors:
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20100728
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 19 2011 mrueckert@suse.de
 - update to 20100728
   * add "last update of whois database" line to output from verisign-grs

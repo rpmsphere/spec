@@ -1,4 +1,5 @@
-%global debug_package %{nil}
+%define __python /usr/bin/python2
+%undefine _debugsource_packages
 Name:          urandr
 Version:       0.1
 Release:       7.1
@@ -49,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 26 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 0.1-2mamba
 - fixed License field
 * Sun Jan 18 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 0.1-1mamba

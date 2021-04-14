@@ -41,4 +41,4 @@ install -Dm644 data/%{name}.appdata.xml %{buildroot}%{_datadir}/appdata/%{name}.
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

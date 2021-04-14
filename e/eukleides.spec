@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	A computer language devoted to elementary plane geometry
 Name:		eukleides
@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Oct 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 02 2011 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 Revision 1.3  2011/02/02 15:11:04  sparky

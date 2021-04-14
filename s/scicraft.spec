@@ -60,7 +60,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 15 2009 Thierry Vignaud <tvignaud@mandriva.com> 1.0.2-6mdv2010.0
 + Revision: 442818
 - rebuild

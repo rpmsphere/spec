@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           deepin-gsettings
 Version:        0.21
 Release:        3.1
@@ -26,6 +26,6 @@ python2 setup.py install --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Wed Aug 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 28 2015 Derek Dai
 - Initial package

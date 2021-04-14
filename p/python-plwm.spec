@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: python-plwm
 Summary: Pointless Window Manager
 Version: 2.7rc1
@@ -30,4 +30,4 @@ python2 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7rc1
-- Rebuild for Fedora
+- Rebuilt for Fedora

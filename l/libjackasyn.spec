@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          libjackasyn
 Version:       0.13
@@ -57,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 14 2008 gil <puntogil@libero.it> 0.13-1mamba
 - package created by autospec

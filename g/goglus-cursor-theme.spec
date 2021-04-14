@@ -30,6 +30,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb  6 2012 nekolayer@yandex.ru
 - initial package

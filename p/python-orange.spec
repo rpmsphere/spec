@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: python-orange
 Summary: A component-based data mining framework
 Version: 2.7.8
@@ -43,4 +43,4 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Mon Feb 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.8
-- Rebuild for Fedora
+- Rebuilt for Fedora

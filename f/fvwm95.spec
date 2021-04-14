@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: fvwm95
 Version: 2.0.43f
@@ -119,7 +119,7 @@ rm -Rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Oct 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.43f
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 16 1998 Manu Rouat <rouat@dsys.ceng.cea.fr>
   - at last version 2.043b!! See Readme.
 * Thu Aug 07 1997 Corey Minyard <minyard@acm.org>

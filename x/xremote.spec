@@ -43,6 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Oct 18 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 18 2008 kwizart < kwizart at gmail.com > - 2.0-1
 - Initial spec file

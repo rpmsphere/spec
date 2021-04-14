@@ -39,7 +39,7 @@ make install INSTALL_ROOT=%{buildroot}
 
 %changelog
 * Tue May 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 16 2016 umeabot <umeabot> 2.4.1-2.mga6
 + Revision: 962514
 - Mageia 6 Mass Rebuild

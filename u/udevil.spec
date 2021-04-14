@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		udevil		
 Version:	0.4.4
@@ -50,6 +50,6 @@ mv %{buildroot}%{_unitdir}/devmon@.service %{buildroot}%{_unitdir}/devmon.servic
 
 %changelog
 * Wed May 06 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 08 2014 Simone Sclavi <darkhado@gmail.com> 0.4.3-1
 - Initial build

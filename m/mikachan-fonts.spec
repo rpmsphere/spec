@@ -42,7 +42,7 @@ install -c -m 644 *.ttf %{buildroot}%{fontdir}
 
 %changelog
 * Wed Jan 08 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 9.1.2006.08.09
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul  4 2012 pgajdos@suse.cz
 - amend spec file to reflect new font packaging scheme
   (see openFATE#313536);

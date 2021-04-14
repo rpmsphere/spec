@@ -92,7 +92,7 @@ update-mime-database %{_datadir}/mime &> /dev/null ||:
 
 %changelog
 * Fri Mar 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 4 2009 Wind <yc.yan@ossii.com.tw>
 - Rebuild for ossii
 * Mon Aug 20 2007 Christopher Brown <snecklifter@gmail.com> - 0.9-5

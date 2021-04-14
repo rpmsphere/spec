@@ -106,7 +106,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10_20090803
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun  8 2010 awafaa@opensuse.org
 - Update to version 0.10_20090803
 * Thu Aug  6 2009 glin@novell.com

@@ -181,7 +181,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jan 06 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr  2 2012 schoett@gmx.de
 - Added mime type text/x-bluej for BlueJ package files
 - Added subpackage oxygen-icons

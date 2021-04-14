@@ -38,4 +38,4 @@ mv %{buildroot}%{_bindir}/WizNote %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Wed Aug 14 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

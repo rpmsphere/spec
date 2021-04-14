@@ -51,7 +51,7 @@ CFLAGS="%{optflags} -g -lX11" CXXFLAGS="%{optflags} -g -lX11" \
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar  8 2010 Adam Mizerski <adam@mizerski.pl> 0.9.6
 - fixed mistake in hamachi-gui.spec about applying abuild patch
 * Sun Mar  7 2010 Adam Mizerski <adam@mizerski.pl> 0.9.6

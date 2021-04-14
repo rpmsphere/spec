@@ -40,4 +40,4 @@ mv -f %{buildroot}%{_datadir}/%{name}/%{name}.tmp %{buildroot}%{_datadir}/%{name
 
 %changelog
 * Wed May 25 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           Vc
 Version:        1.4.1
@@ -90,7 +90,7 @@ cp -a ../README.md ../doc/html %{buildroot}%{_docdir}/%{name}
 
 %changelog
 * Wed Nov 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 20 2018 stefan.bruens@rwth-aachen.de
 - Drop ExclusiveArch, Vc 1.3.3 is no longer x86 only
   Add default_to_scalar_implementation_for_unknown_arch.patch

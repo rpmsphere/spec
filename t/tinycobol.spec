@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		tinycobol
 Version:	0.66
@@ -49,6 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Dec 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.66
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 31 2010 - Sebastian Ritter - 1.1-0.2010-08-29
 - OpenSuSE 11.3 with debian compatible package format and standard groups

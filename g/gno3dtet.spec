@@ -68,7 +68,7 @@ chown games.root %{_localstatedir}/games/gno3dtet.hof
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.96.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun  8 2011 Chris Lin <chris.lin@ossii.com.tw>
 - Fix cgame.cc
 * Tue Nov 25 2008 Wind <yc.yan@ossii.com.tw>

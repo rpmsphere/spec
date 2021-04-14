@@ -65,7 +65,7 @@ fi
 
 %changelog
 * Wed Apr 29 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 16 2011 Alistair Reay <alreay1@gmail.com> 1.13-1
 - Ustream bump - bugfixes only
 * Fri May 13 2011 Alistair Reay <alreay1@gmail.com> 1.12-1

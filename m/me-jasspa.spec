@@ -41,6 +41,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Sep 15 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 20161004
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 12 2009 - Jon Green <support@jasspa.com>
 - RPM package build for release 20091011

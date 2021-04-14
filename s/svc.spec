@@ -43,6 +43,6 @@ done
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 200601111324
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct  7 2006 mrueckert@suse.de
 - initial package

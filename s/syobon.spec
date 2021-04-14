@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: syobon
 Summary: An SDL-based port of Syobon Action
@@ -51,4 +51,4 @@ cp -a data/* %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Wed Jan 15 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

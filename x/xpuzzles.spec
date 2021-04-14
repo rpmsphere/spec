@@ -58,7 +58,7 @@ done
 
 %changelog
 * Wed Dec 17 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 7.7.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 12 2012 opensuse@dstoecker.de
 - update to version 7.6.3
 * Fri Aug 22 2008 lmichnovic@suse.cz

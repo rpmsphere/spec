@@ -34,7 +34,7 @@ make
 
 %changelog
 * Sun Sep 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 01 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.1-4mdv2010.0
 + Revision: 424029
 - rebuild

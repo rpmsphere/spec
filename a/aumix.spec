@@ -72,7 +72,7 @@ modprobe snd-pcm-oss
 
 %changelog
 * Sat Aug 03 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 2.9.1-3.mga3
 + Revision: 346603
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

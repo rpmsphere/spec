@@ -100,7 +100,7 @@ install -D -m 644 garglk/%{name}-house.png %{buildroot}/%{_datadir}/pixmaps/%{na
 
 %changelog
 * Mon Jan 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2015
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec  4 2012 fa0sck@gmail.com
 - Improve spec - fix icon name in desktop file
 * Sun Nov 25 2012 fa0sck@gmail.com

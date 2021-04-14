@@ -41,7 +41,7 @@ cp src/translations/*.qm %{buildroot}%{_datadir}/qgo/languages/
 
 %changelog
 * Wed Jul 18 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 21 2016 i@marguerite.su
 - add patch: qgo-2.0.0-gcc6.patch
   * fix boo#985098

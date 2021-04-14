@@ -66,7 +66,7 @@ qmake-qt4 "QMAKE_CFLAGS+=%optflags -Wno-format-security" "QMAKE_CXXFLAGS+=%optfl
 
 %changelog
 * Tue Aug 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.96 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 03 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.1.96-alt1.2
 - Fixed build with glibc 2.16
 * Tue Jul 17 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.1.96-alt1.1

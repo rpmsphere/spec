@@ -31,7 +31,7 @@ make %{?_smp_mflags}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 6.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 26 2012 asterios.dramis@gmail.com
 - Updated source url and source package (use the versioned one that is provided
   in the package homepage).

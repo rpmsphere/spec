@@ -67,7 +67,7 @@ cd ../preproc/
 
 %changelog
 * Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 302b
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 04 2019 Bernhard M. Wiedemann <bernhard+packman lsmod de>
 - build from source
 - do not use dropped recode in 'say' script

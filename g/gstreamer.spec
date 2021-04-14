@@ -238,7 +238,7 @@ install -m0644 -D %{SOURCE2} $RPM_BUILD_ROOT%{_rpmconfigdir}/fileattrs/gstreamer
 
 %changelog
 * Thu May 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10.36
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Sep  6 2019 Tom Callaway <spot@fedoraproject.org> - 0.10.36-24
 - disable gtk-docs

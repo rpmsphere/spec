@@ -54,7 +54,7 @@ rm -fr %{buildroot}%{_docdir}/%{name}
 
 %changelog
 * Fri Feb 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.70b
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 1.4.70b-5.mga5
 + Revision: 748010
 - Second Mageia 5 Mass Rebuild

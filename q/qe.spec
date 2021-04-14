@@ -45,7 +45,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Mon Apr 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Apr 23 2001 Jiann-Ching Liu <center5@cc.ncu.edu.tw>
 - Fix problem under Redhat Linux 7.x

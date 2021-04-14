@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 30 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 13 2006 Nicolas Lécureuil <neoclust@zarb.org> 1.2.3-5plf2007.0
 - Rebuild
 * Sun Apr 23 2006 Michael Scherer <misc@zarb.org> 1.2.3-4plf

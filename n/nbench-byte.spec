@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          nbench-byte
 Version:       2.2.3
@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Nov 09 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 20 2007 Silvan Calarco <silvan.calarco@mambasoft.it> 2.2.2-1mamba
 - update to 2.2.2
 * Mon Jul 07 2003 Silvan Calarco <silvan.calarco@qinet.it> 2.2.1-1qilnx

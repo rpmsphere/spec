@@ -31,4 +31,4 @@ install -Dm755 src/cmod %{buildroot}%{_bindir}/cmod
 
 %changelog
 * Tue Oct 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.01
-- Rebuild for Fedora
+- Rebuilt for Fedora

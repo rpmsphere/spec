@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.403
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 15 2012 lars@linux-schulserver.de
 - fix copyright header in specfile
 * Thu Jan 12 2012 coolo@suse.com

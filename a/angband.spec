@@ -55,6 +55,6 @@ done
 
 %changelog
 * Fri Jun 19 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 11 2018 abfonly <abfonly@gmail.com> 4.1.3-1
 - (5c55223) Log: Update to 4.1.3

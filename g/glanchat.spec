@@ -46,7 +46,7 @@ mv %{buildroot}/usr/doc %{buildroot}%{_datadir}/doc
 
 %changelog
 * Sun Jun 02 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 12 2007 qla<qla0@vp.pl> 0.0.8.2-2qla
 - porawione dodawanie do menu
 * Wed Feb 07 2007 qla<qla0@vp.pl> 0.0.8.6qla

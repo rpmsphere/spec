@@ -48,7 +48,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 01 2008 Mario Blättermann <rpm@mandrivauser.de> 0.7.2-1mud2008.1
 - update to 0.7.2
 - package group changed

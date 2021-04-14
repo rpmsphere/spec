@@ -39,7 +39,7 @@ perl -i -lpe 's{^(#\!/usr/bin/perl).*}{$1} if $. == 1' %{buildroot}/%{_bindir}/*
 
 %changelog
 * Thu Mar 30 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 0.2.0-2.mga3
 + Revision: 348190
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

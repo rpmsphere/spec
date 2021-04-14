@@ -69,6 +69,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec  4 2008 milochen <milo_chen@mail2000.com.tw> - 0.3-1.ossii
 - initial ossii package

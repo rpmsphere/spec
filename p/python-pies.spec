@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name: python-pies
 Summary: The simplest (and tastiest) way to write one program that runs on both Python 2 and Python 3
 Version: 2.6.0
@@ -33,4 +34,4 @@ python setup.py install --root=%{buildroot}
 
 %changelog
 * Mon Feb 10 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

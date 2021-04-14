@@ -47,4 +47,4 @@ ln -sf ../conf.avail/68-%{fontname}.conf %{buildroot}%{_sysconfdir}/fonts/conf.d
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20100309
-- Rebuild for Fedora
+- Rebuilt for Fedora

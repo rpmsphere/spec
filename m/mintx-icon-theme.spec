@@ -27,4 +27,4 @@ cp -a * %{buildroot}%{_datadir}/icons
 
 %changelog
 * Wed Aug 10 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.7
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -60,4 +60,4 @@ done
 
 %changelog
 * Mon Dec 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 20181203git
-- Rebuild for Fedora
+- Rebuilt for Fedora

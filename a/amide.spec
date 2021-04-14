@@ -68,7 +68,7 @@ rm -rf %{buildroot}/var/scrollkeeper
 
 %changelog
 * Tue Sep 24 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 17 2015 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.0.5-3
 + Revision: 09d3434
 - Bump release

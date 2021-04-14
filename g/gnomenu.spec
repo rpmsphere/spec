@@ -84,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Apr 21 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 08 2010 Texstar <texstar at gmail.com> 2.9-2pclos2010
 - add obsoletes gnomenu-awn-applet as the previous srpm created
 - a separate pacakge 

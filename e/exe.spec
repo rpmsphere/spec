@@ -1,5 +1,5 @@
 %undefine _missing_build_ids_terminate_build
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: eXe eLearning XHTML editor
 Name: exe
@@ -85,7 +85,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.04.0.3600
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 09 2007 Jim Tittsler <jim@exelearning.org>
 - update spec file to work with Fedora 7
 - use files list instead of recording INSTALLED_FILES in setup.py to catch .pyo files

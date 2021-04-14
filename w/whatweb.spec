@@ -32,6 +32,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %changelog
 * Mon May 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 11 2010 André Guerreiro <andre.guerreiro@caixamagica.pt> 0.4.5-1xcm15
 - First CM15 package

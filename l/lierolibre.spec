@@ -57,7 +57,7 @@ sed -i -e 's/Name=lierolibre/Name=Lierolibre/g' data/lierolibre.desktop
 
 %changelog
 * Tue Mar 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 16 2018 wally <wally> 0.5-16.mga7
 + Revision: 1321061
 - rebuild for new boost 1.68.0

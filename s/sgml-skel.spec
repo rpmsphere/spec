@@ -79,7 +79,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 14 2008 ke@suse.de
 - sgml-skel-edit-cat.diff: Edit catalog file in place; try to keep file
   permissions.  Reported by Jörg Mayer [bnc#386791].

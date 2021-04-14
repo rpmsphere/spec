@@ -35,6 +35,6 @@ install -D -m 0755 %{name} %{buildroot}%{_bindir}
 
 %changelog
 * Sun Apr 4 Wei-Lun Chao <bluebat@member.fsf.org> - 72
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 18 2018 Igor Vlasenko <viy@altlinux.ru> 71-alt1_1
 - new version

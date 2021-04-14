@@ -34,6 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2.4-10
 - (aad859b) MassBuild#1257: Increase release tag

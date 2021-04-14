@@ -69,7 +69,7 @@ sed -i 's|Icon=gnunet-setup|Icon=/usr/share/gnunet-gtk/gnunet_logo.png|' %{build
 
 %changelog
 * Tue Sep 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 16 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.9.1-1
 + Revision: 761829
 - new tarball

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define gtkim /usr/lib/gtk-2.0/2.10.0/immodules
 %define gtkim3 /etc/gtk-2.0/i386-redhat-linux-gnu/gtk.immodules
 %define gtkim6 /etc/gtk-2.0/i686-redhat-linux-gnu/gtk.immodules
@@ -81,7 +81,7 @@ fi
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun  9 2007 Nguyen-Dai Quy <vnpenguin@vnoss.org>
 - 1st builf for F7
 * Sat Jan 20 2007 Nguyen-Dai Quy <vnpenguin@vnoss.org>

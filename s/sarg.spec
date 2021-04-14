@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Squid usage report generator per user/ip/name
 Name: sarg
@@ -216,7 +216,7 @@ EOF
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 22 2010 Christoph Maser <cmaser@gmx.de> - 2.3-2 - 8913/cmr
 - Build with ldap support.
 * Tue Jun 22 2010 Christoph Maser <cmaser@gmx.de> - 2.3-1

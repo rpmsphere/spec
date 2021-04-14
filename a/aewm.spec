@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: aewm
 Summary: Minimalist window manager for X11
@@ -38,4 +38,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Tue Mar 14 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.12
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         wm2
 License:      X11/MIT
@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 25 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 30 2004 - nadvornik@suse.cz
 - fixed dangerous compiler warnings
 * Sun Jan 11 2004 - adrian@suse.de

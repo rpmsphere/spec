@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		lhogho
 Version:	0.0.027
@@ -53,4 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Apr 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.027
-- Rebuild for Fedora
+- Rebuilt for Fedora

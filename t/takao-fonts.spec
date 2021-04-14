@@ -31,7 +31,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon May 09 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 00303.01
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 16 2010 - Satoru Matsumoto <HeliosReds@opensuse.org>
 - Update for Takao Fonts version 003.02.01 and
 - Takao Ex Fonts version 001.01.01

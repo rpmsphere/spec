@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           zmqpp
 Version:	4.2.0
@@ -54,6 +54,6 @@ make install DESTDIR=%{buildroot} PREFIX=%{_prefix} LIBDIR=%{buildroot}%{_libdir
 
 %changelog
 * Fri Sep 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 19 2015 i@marguerite.su
 - initial version 4.1.1

@@ -91,7 +91,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/deepin
 
 %changelog
 * Fri Jun 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 10 2012 hillwood@linuxfan.org
 - Fix permission for all theme.txt files
 * Tue Oct  9 2012 hillwood@linuxfan.org

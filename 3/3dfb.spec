@@ -36,7 +36,7 @@ make
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 03 2011 Michael Scherer <misc@mandriva.org> 0.6.1-2mdv2011.0
 + Revision: 664787
 - rebuild

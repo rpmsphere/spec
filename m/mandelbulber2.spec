@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           mandelbulber2
 Version:        2.22
@@ -48,7 +48,7 @@ cp -a usr/share/%{name}/* %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Wed Aug 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.22
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun  6 2015 malcolmlewis@opensuse.org
 - Updated to version 2.04:
   + Added ray-traced transparency and Fresnel's refraction.

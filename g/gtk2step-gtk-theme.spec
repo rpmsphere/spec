@@ -32,7 +32,7 @@ cp -r index.theme gtk-2.0 %{SOURCE1} %buildroot%_datadir/themes/%theme_name
 
 %changelog
 * Thu Sep 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 09 2004 Sir Raorn <raorn@altlinux.ru> 1.2-alt1
 - [1.2]
 * Thu Mar 25 2004 Sir Raorn <raorn@altlinux.ru> 1.1-alt1

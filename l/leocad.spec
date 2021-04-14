@@ -49,7 +49,7 @@ make install INSTALL_ROOT=%{buildroot}
 
 %changelog
 * Wed Sep 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 19.07.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 28 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.75-alt5.2
 - Rebuilt with libpng15
 * Wed Jun 13 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.75-alt5.1

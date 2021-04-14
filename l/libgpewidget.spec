@@ -58,4 +58,4 @@ sed -i 's|glib/gkeyfile\.h|glib.h|' gpehelp.c
 
 %changelog
 * Wed Apr 27 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.115
-- Rebuild for Fedora
+- Rebuilt for Fedora

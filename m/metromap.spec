@@ -55,7 +55,7 @@ ln -s ../pmetro-maps %{buildroot}%{_datadir}/%{name}/data
 
 %changelog
 * Thu Nov 19 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 08 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.1.4-9
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 * Thu Jan 18 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.1.4-8

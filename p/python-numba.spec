@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: python-numba
 Version: 0.26.0
 Release: 6.1
@@ -36,7 +36,7 @@ sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Sun Jul 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.26.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 06 2013 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.8-alt1.git20130304
 - Initial build for Sisyphus
 

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           qshutdown
 Version:        1.7.3.git
@@ -68,6 +68,6 @@ install -Dm 0644 debian/qprogram-starter.1 %{buildroot}/%{_mandir}/man1/qprogram
 
 %changelog
 * Thu Apr 27 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.3.git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb  4 2017 and.november@opensuse.org
 - initial package (version 1.7.3) for openSUSE

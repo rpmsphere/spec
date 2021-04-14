@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 %define _name PyUPC-EAN
 
 Summary: A barcode library/module for python
@@ -34,6 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 05 2015 Kazuki Przyborowski <kazuki.przyborowski@gmail.com>
 - Initial package

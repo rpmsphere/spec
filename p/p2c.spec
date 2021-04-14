@@ -71,7 +71,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Nov 18 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.22
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 1.22-19mdv2011.0
 + Revision: 666972
 - mass rebuild

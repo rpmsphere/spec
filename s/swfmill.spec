@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:          swfmill
 Version:       0.3.2
 Release:       20.1
@@ -40,7 +40,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Fri Jun 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 15 2010 Automatic Build System <autodist@mambasoft.it> 0.3.0-1mamba
 - automatic update by autodist
 * Thu Jun 14 2007 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 0.2.12-1mamba

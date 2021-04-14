@@ -70,7 +70,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 
 %changelog
 * Fri Jun 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 17 2012 hillwood@linuxfans.org
 - update to 2.0git20121115, see more at http://goo.gl/mIk8b
 - fix mplayer2 command

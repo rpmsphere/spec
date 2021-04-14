@@ -1,6 +1,5 @@
 %define oname	FileRunner
-%global _enable_debug_package 0
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __os_install_post /usr/lib/rpm/brp-compress %{nil}
 # We ship with inotify binaries for x86 and x86_64 however the code
 # detects which, if either, is useful and uses that one or none.
@@ -77,4 +76,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue May 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 20.05.02.17
-- Rebuild for Fedora
+- Rebuilt for Fedora

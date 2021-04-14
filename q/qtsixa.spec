@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: qtsixa
 Summary: Sixaxis Joystick Manager
@@ -58,4 +58,4 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/* %{bui
 
 %changelog
 * Fri Jan 03 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

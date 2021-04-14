@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: pachi-go
 Summary: Engine for the game of go/weiqi/baduk
@@ -61,4 +61,4 @@ mv %{buildroot}%{_bindir}/pachi %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Mon Sep 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 12.40
-- Rebuild for Fedora
+- Rebuilt for Fedora

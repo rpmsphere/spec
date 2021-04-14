@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          input-utils
 Version:       1.2
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Dec 06 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 17 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 20081014.101501-1mamba
 - update to 20081014.101501
 * Sat Sep 09 2006 Silvan Calarco <silvan.calarco@mambasoft.it> 143821-1qilnx

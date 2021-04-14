@@ -52,7 +52,7 @@ rm %{buildroot}%{_infodir}/dir
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.698
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 0.1.698-alt4.qa1
 - NMU: rebuilt for debuginfo.
 * Thu Oct 15 2009 Victor Forsyuk <force@altlinux.org> 0.1.698-alt4

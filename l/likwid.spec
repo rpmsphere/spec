@@ -97,7 +97,7 @@ Likwid is lightweight and adds no overhead during measurements.
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Jan 15 2011 pascal.bleser@opensuse.org
 - moved preload library liblikwidpin.so to %%{_libdir}/likwid/

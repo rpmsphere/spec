@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: obnc
 Summary: Oberon-07 Compiler
@@ -37,4 +37,4 @@ and keeps track of which files need to be compiled or recompiled.
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

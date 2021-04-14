@@ -100,7 +100,7 @@ fi
 
 %changelog
 * Wed Jul 16 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 15 2012 Andrew Wyatt <andrew@fuduntu.org> - 0.1.11-1
 - Bug fixes
 * Thu Dec 13 2012 Andrew Wyatt<andrew@fuduntu.org> - 0.1.10-1

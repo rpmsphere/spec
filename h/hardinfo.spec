@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jul 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Jan 12 2015 Nux <rpm@li.nux.ro> - 0.5.1-5
 - build for EL7

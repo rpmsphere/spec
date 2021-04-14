@@ -79,7 +79,7 @@ fi
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 08 2013 josef radinger <cheese@nosuchhost.net> - 0.3.3-3
 - fix dependency on core-package
 * Sun Apr 07 2013 josef radinger <cheese@nosuchhost.net> - 0.3.3-2

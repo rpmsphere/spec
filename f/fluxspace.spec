@@ -63,7 +63,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 28 2004 Sebastien Corot <scorot@libertysurf.fr>
 - Compilded for SuSE Linux 9.2
 * Sun May 23 2004 Sebastien Corot <scorot AT libertysurf.fr>

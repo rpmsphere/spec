@@ -64,7 +64,7 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 29 2012 asterios.dramis@gmail.com
 - Initial release (version 0.9.0cvs.20090725).
 - Added a desktop file for the application.

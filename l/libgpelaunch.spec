@@ -54,4 +54,4 @@ developing applications that use %{name}.
 
 %changelog
 * Wed Apr 27 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.14
-- Rebuild for Fedora
+- Rebuilt for Fedora

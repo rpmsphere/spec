@@ -33,7 +33,7 @@ make DESTDIR=%buildroot install
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 24 2012 Fr. Br. George <george@altlinux.ru> 1.0.2-alt3
 - DSO list completion
 * Tue Apr 10 2012 Fr. Br. George <george@altlinux.ru> 1.0.2-alt2

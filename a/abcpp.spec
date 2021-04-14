@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:      abcpp
 Version:   1.4.5
@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Mar 30 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 06 2005 Guido Gonzato
 - updated to 1.3.2
 * Mon Dec 31 2001 José Romildo Malaquias <romildo@iceb.ufop.br> 1.1.1-2

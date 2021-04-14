@@ -44,4 +44,4 @@ install -Dm 644 %{name}.man $RPM_BUILD_ROOT/%{_mandir}/man1/%{name}.1
 
 %changelog
 * Wed May 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

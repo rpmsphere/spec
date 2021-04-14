@@ -217,7 +217,7 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &>/dev/null || :
 
 %changelog
 * Tue Dec 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Feb 11 2017 Fedora Release Engineering <releng@fedoraproject.org> - 2.4.11-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild

@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 16 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 18 2013 umeabot <umeabot> 2.0-8.mga4
 + Revision: 507720
 - Mageia 4 Mass Rebuild

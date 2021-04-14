@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	A sequencial, functional logic programming language
 Name:		elizalang
@@ -40,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11
-- Rebuild for Fedora
+- Rebuilt for Fedora

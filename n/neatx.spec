@@ -80,7 +80,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 09 2009 Boris Savelev <boris@altlinux.org> 0.3.1-alt2
 - fix work
 - add README.ALT

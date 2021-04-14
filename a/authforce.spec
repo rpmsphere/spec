@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           authforce
 Version:        0.9.9
@@ -53,6 +53,6 @@ mkdir -p $RPM_BUILD_ROOT/usr/share/authforce
 
 %changelog
 * Mon Feb 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 18 2009 - Matthias Weckbecker <mweckbecker@suse.de>
 - initial package with version 0.9.9

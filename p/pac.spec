@@ -95,6 +95,6 @@ cp -a lib res utils %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5.5.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 14 2012 David Torrejon Vaquerizas
 - Initial package

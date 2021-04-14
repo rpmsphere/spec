@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           lomse
 Version:        0.20.0
@@ -68,7 +68,7 @@ install -m755 bin/lib%{name}.a %{buildroot}%{_libdir}
 
 %changelog
 * Wed Nov 09 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 13 2013 joop.boonen@opensuse.org
 - Update to version 0.14.0
 * Sun Dec 16 2012 joop.boonen@opensuse.org

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A simple 3d-plot utility
 Name: pixmax
@@ -40,4 +40,4 @@ install -m 644 man/%{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 
 %changelog
 * Tue Dec 23 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

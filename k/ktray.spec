@@ -40,7 +40,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May  7 2008 crrodriguez@suse.de
 - use RPM_OPT_FLAGS
 * Tue Feb  5 2008 hmacht@suse.de

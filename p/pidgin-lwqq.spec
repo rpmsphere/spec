@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       pidgin-lwqq
 Version:	2.0a.fix
@@ -47,7 +47,7 @@ cd build
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0a.fix
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug  1 2013 i@marguerite.su
 - update 2.0a.fix
   * use libcurl internal cookie engine

@@ -50,7 +50,7 @@ ln -s %{_libdir}/%{name} %{buildroot}/usr/lib/%{name}-%{version}
 
 %changelog
 * Mon Aug 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct  6 2014 Led <ledest@gmail.com> 1.9.2-3
 - add some debian patches
 * Mon Oct  6 2014 Led <ledest@gmail.com> 1.9.2-2

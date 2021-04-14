@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:    BGI-compatible 2D graphics C library
 Name:       SDL_bgi
@@ -57,6 +57,6 @@ fi
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 6 2014 Guido Gonzato <guido.gonzato at gmail.com>
 - This is a generic rpm, buildable on Ubuntu

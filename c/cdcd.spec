@@ -44,7 +44,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sat Nov 24 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.6.6-10mdv2011.0
 + Revision: 616976
 - the mass rebuild of 2010.0 packages

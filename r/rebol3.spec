@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         rebol3
 Summary:      REBOL language
@@ -39,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Dec 30 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.101.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

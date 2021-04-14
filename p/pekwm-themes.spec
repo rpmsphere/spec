@@ -31,7 +31,7 @@ chmod -x %{buildroot}/usr/share/pekwm/themes/tango/*
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Sep 26 2009 mhrusecky@suse.cz
 - update - version 1.0.5
   - new blue and brown themes

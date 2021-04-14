@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Interactive "generative art" software
 Name: evolvotron
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Aug 06 2011 Götz Waschk <waschk@mandriva.org> 0.6.1-2mdv2012.0
 + Revision: 693428
 - rebuild

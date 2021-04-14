@@ -55,7 +55,7 @@ make
 
 %changelog
 * Tue Feb 10 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Nov 10 2008 Oden Eriksson <oeriksson@mandriva.com> 1.2.3-14mdv2009.1
 + Revision: 301800

@@ -53,7 +53,7 @@ sed -i 's|/usr/share/pixmaps/%{name}.xpm|%{name}|' $RPM_BUILD_ROOT%{_datadir}/ap
 
 %Changelog
 * Wed Aug 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 02 2005 Eugene Ostapets <eostapets@altlinux.ru> 0.2.8-alt1
 - 0.2.8
 * Tue Nov 15 2005 Eugene Ostapets <eostapets@altlinux.ru> 0.2.6-alt1

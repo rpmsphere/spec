@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 06 2010 Funda Wang <fwang@mandriva.org> 0.1-5mdv2011.0
 + Revision: 593900
 - rebuild for py2.7

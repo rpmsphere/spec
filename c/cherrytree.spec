@@ -1,5 +1,6 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 # get python version
+%define __python /usr/bin/python2
 %global py_ver %(if [ -f "%{__python}" ]; then %{__python} -c "import sys; sys.stdout.write(sys.version[:3])"; else echo 0; fi;)
 %global __os_install_post %(echo '%{__os_install_post}' | sed -e 's!/usr/lib[^[:space:]]*/brp-python-bytecompile[[:space:]].*$!!g')
 
@@ -60,7 +61,7 @@ rm -rf %{buildroot}%{_datadir}/mime-info/
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.39.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.38.5-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild

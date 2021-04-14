@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define pyname ccc-gistemp
 
 Name:           python-%{pyname}
@@ -52,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Dec 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun  1 2011 ocefpaf@yahoo.com.br
 - First release; version 0.6.1

@@ -54,7 +54,7 @@ done
 
 %changelog
 * Mon Jan 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 11 2014 Fr. Br. George <george@altlinux.ru> 0.4.1-alt2
 - Rebuild with new SDL
 * Wed Apr 09 2014 Fr. Br. George <george@altlinux.ru> 0.4.1-alt1

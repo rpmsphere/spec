@@ -180,7 +180,7 @@ fi
 
 %changelog
 * Fri Jan 31 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 09 2011 Chris Smart <chris@kororaa.org> - 0.9.6-2
 - Added pygobject3 to list of runtime dependencies, fixes breakage on KDE
 * Thu Dec 08 2011 Hedayat Vatankhah <hedayat.fwd+rpmchlog@gmail.com> - 0.9.6-1

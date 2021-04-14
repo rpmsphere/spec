@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           viu
 Version:        0.2.2
@@ -34,4 +34,4 @@ install -Dm755 target/release/%{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Wed Oct 16 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

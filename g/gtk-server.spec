@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __spec_install_post %{nil}
 
 Summary: Interpreted GUI Programming
@@ -50,6 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Aug 21 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 26 2009 Peter van Eerten <peter AT gtk-server DOT org>
 - Initial package

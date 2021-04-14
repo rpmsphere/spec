@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 15 2012 - joerg.lorenzen@ki.tng.de
 - update to version 0.2.8
 * Fri May 18 2012 - joerg.lorenzen@ki.tng.de

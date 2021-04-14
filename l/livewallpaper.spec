@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           livewallpaper
 Version:        0.4.1
@@ -82,6 +82,6 @@ ln -fs liblivewallpaper-core.so.%{version} %{buildroot}%{_libdir}/liblivewallpap
 
 %changelog
 * Thu Jan 02 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 20 2014 Aurélien Rivière <aurelien.riv@gmail.com> 0.5.0-1
 - Maybe Livewallpaper will join COPR soon ? :)

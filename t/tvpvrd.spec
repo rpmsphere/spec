@@ -55,6 +55,6 @@ test -e /var/run/tvpvrd.pid  || rm -rf /var/run/tvpvrd.pid && :
 
 %changelog
 * Tue Feb 11 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 4 2011 Johan Persson <johan162@gmail.com> - 3.1.1-16.1
 - Cleanup of RPM spec file 

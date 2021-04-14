@@ -52,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Dec 18 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 29 2010 - Sebastian Ritter - 1.1-0.2010-08-29
 - OpenSuSE 11.3 with debian compatible package format and standard groups

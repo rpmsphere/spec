@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:     sultan
 Version:  18.04.01
@@ -32,4 +32,4 @@ install -Dm755 bin/Sultan %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Jan 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 18.04.01
-- Rebuild for Fedora
+- Rebuilt for Fedora

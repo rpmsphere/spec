@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A library for rendering mikumiku files
 Name: libmmd
@@ -52,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon May 23 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

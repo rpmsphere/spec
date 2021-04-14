@@ -54,7 +54,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Jan 02 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 08 2007 Erich Focht -> 2.2.11-1
 - allowing now UUID and LABEL devices
 - fixed check for grub

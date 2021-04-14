@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           gpaint
 Version:        0.3.3
@@ -48,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 6 2007 James Lawrence <jimlawrnc@gmail.com> 0.3.0-pre5-1fc6
 - new Spec file Initial RPM release for fedora core 6 

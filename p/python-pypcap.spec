@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:	Simplified object-oriented Python extension module for libpcap
 Name:		python-pypcap
 Version:	1.1
@@ -40,7 +40,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 29 2010 Michael Scherer <misc@mandriva.org> 1.1-9mdv2011.0
 + Revision: 590001
 - rebuild for python 2.7

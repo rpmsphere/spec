@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: crossroads
 Version: 2.81
@@ -40,7 +40,7 @@ install -d %buildroot%_sbindir
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.81
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 26 2012 Victor Forsiuk <force@altlinux.org> 2.77-alt1
 - 2.77
 - Remove 'strip' of xr before install, thus allowing debuginfo package.

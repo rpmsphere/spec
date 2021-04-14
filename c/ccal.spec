@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       ccal
 License:    GPL, portions LGPL
@@ -44,7 +44,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Sat Aug 03 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 04 2012 - Zhuo Meng <zxm8@case.edu>
 - Updated for version 2.5.3
 * Mon Oct 05 2009 - Zhuo Meng <zxm8@case.edu>

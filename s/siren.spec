@@ -68,7 +68,7 @@ make %{?_smp_mflags} DESTDIR=%{buildroot} install
 
 %changelog
 * Thu Aug 08 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct  8 2016 aloisio@gmx.com
 - Update to version 0.7
   * Add the ffmpeg input plug-in.

@@ -36,6 +36,6 @@ export LDFLAGS="-Wl,--as-needed"
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug  8 2007 crrodriguez@suse.de
 - fix build in factory

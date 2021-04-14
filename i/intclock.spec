@@ -48,4 +48,4 @@ sed -i 's|%{buildroot}||' %{buildroot}%{_datadir}/perl5/5.30/Intclock.pl
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.13
-- Rebuild for Fedora
+- Rebuilt for Fedora

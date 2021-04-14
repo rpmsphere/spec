@@ -44,7 +44,7 @@ rm doc/drafts/Makefile*
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 05 2012 Andrey Bondrov <abondrov@mandriva.org> 0:0.7.1-9
 + Revision: 802546
 - Drop some legacy junk

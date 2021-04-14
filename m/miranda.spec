@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: miranda
 Summary: A non-strict polymorphic functional language
@@ -41,4 +41,4 @@ cp -a miralib %{buildroot}/usr/lib
 
 %changelog
 * Thu Feb 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.066
-- Rebuild for Fedora
+- Rebuilt for Fedora

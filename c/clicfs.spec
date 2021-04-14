@@ -40,7 +40,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 17 2011 coolo@suse.com
 - update to 1.4.4
   - provide clicfs_fsck to check if the cow file was

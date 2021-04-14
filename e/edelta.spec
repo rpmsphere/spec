@@ -42,7 +42,7 @@ gcc %{optflags} -Wall -finline-functions -lz edelta.c sha1.c -o %{name}
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9e
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr  3 2007 mrueckert@suse.de
 - added zlib-devel to the buildrequires
 * Fri Jan  5 2007 mrueckert@suse.de

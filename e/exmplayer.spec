@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define oname	ExMplayer
 
 Name:		exmplayer
@@ -73,7 +73,7 @@ done
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 28 2015 daviddavid <daviddavid> 5.0.1-2.mga6
 + Revision: 858766
 - add youtube-dl as a Recommends

@@ -55,7 +55,7 @@ install -D -m 644 %SOURCE1 %buildroot%_datadir/pixmaps/uvcview.png
 
 %changelog
 * Mon Jul 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20071108
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 29 2008 Hihin Ruslan <ruslandh@altlinux.ru> 20071108-alt1.1
 - correct %%*_menus
 * Mon Feb 25 2008 Hihin Ruslan <ruslandh@altlinux.ru> 20071108-alt1.0

@@ -57,7 +57,7 @@ make
 
 %changelog
 * Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 12 2012 Andrey Bondrov <abondrov@mandriva.org> 0.1.5-3mdv2012.0
 + Revision: 784453
 - Rebuild to deal with .la issue, spec cleanup

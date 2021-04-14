@@ -94,7 +94,7 @@ mv readme readme.linux
 
 %changelog
 * Tue Nov 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 01 2018 akien <akien> 1.7.5-1.mga7
   (not released yet)
 + Revision: 1314060

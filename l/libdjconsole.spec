@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Oct 03 2008 gil <puntogil@libero.it> 0.1.3-1mamba
 - update to 0.1.3

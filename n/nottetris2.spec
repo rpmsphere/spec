@@ -38,7 +38,7 @@ install -D -m 0755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu May 28 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 22 2013 joop.boonen@opensuse.org
 - Corrected the License
 * Sun Feb 17 2013 jengelh@inai.de

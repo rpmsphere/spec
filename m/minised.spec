@@ -31,7 +31,7 @@ lovely, historic sed implementation.
 
 %changelog
 * Tue Oct 17 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.15-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
 * Tue Jan 20 2015 Christopher Meng <rpm@cicku.me> - 1.15-1

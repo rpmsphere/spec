@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name:           pykaraoke
 License:        LGPL
 Group:          Applications/Multimedia
@@ -47,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jul 08 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 28 2008 Dmitry Stropaloff <helions8@gmail.com>
 - initial version 0.6

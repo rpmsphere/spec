@@ -36,7 +36,7 @@ make
 
 %changelog
 * Mon Aug 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 25 2017 Igor Vlasenko <viy@altlinux.ru> 1.1-alt1
 - regenerated from template by package builder
 * Wed Nov 22 2017 Igor Vlasenko <viy@altlinux.ru> 1-alt1

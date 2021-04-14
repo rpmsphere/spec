@@ -23,7 +23,7 @@
 %define xsd_postfix %{so_ver}
 
 # "Extracting debug info… ERROR: No build ID note found."
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           leechcraft
 Version:        0.6.70+git.13729.g7046a9d2a7
@@ -2936,7 +2936,7 @@ cd build
 
 %changelog
 * Wed Jul 22 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.70+git.13729.g7046a9d2a7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 02 2020 Dmitriy A. Perlow <dap.darkness@gmail.com> - 0.6.70+git.13729.g7046a9d2a7
 - Fedora 32 & Rawhide fixes.
 * Thu Jul 05 2018 Dmitriy A. Perlow <dap.darkness@gmail.com> - 0.6.70+git.11707.g69b59323a1

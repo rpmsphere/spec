@@ -90,6 +90,6 @@ autoreconf -fi
 
 %changelog
 * Tue Jun 19 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.6.3-8
 - (d9c3add) MassBuild#1257: Increase release tag

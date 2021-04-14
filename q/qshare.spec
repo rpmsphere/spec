@@ -48,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 23 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 27 2011 iattilagy@gmail.com
 - packaged qshare-2.1.0 version 2.1.0 using the buildservice spec file wizard

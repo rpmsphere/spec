@@ -38,7 +38,7 @@ install -D -m 755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 19 2012 adam@mizerski.pl
 - added license-clarification.txt (bnc#761551) and updated
   license tag

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
 
 Summary: Run 2d-GL programs with standard X11 routines
@@ -78,6 +78,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Feb 06 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 4.2g
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 21 1999 Prabhu Ramachandran <prabhu@aero.iitm.ernet.in> 4.0g
 - I am the current maintainer

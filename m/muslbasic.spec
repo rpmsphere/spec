@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global _name musl
 
 Summary: A small, embeddable BASIC interpreter in C
@@ -33,4 +33,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Sep 11 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1234
-- Rebuild for Fedora
+- Rebuilt for Fedora

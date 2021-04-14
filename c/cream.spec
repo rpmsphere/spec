@@ -49,7 +49,7 @@ mkdir -p %buildroot/%_datadir/applications
 cp cream.desktop %buildroot/%_datadir/applications/
 
 #mkdir -p %buildroot/
-#cp cream.svg %buildroot/%{_datadir}/icons/hicolor/32x32/apps/
+#cp cream.svg %buildroot/%_iconsdir/
 
 #menu
 
@@ -72,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jul 14 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.43
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.42-2mdv2011.0
 + Revision: 610171

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		gnu-efi-applets
 Version:	3.0.8
@@ -41,4 +41,4 @@ make DESTDIR=%{buildroot} install
 
 %changelog
 * Thu Jan 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora

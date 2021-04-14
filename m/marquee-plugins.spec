@@ -36,4 +36,4 @@ sed -i 's/-Werror / /' configure.ac
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.22
-- Rebuild for Fedora
+- Rebuilt for Fedora

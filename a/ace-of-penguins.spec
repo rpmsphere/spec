@@ -53,4 +53,4 @@ done
 
 %changelog
 * Tue Mar 06 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

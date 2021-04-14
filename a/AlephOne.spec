@@ -53,7 +53,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20080913
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2008 Feather Mountain <john@ossii.com.tw> 
 - Rebuild for M6(OSSII)
 * Sat Jun 21 2008 Gregory Smith <wolfy@treellama.org>

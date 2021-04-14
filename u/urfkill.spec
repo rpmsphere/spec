@@ -94,7 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun  8 2012 glin@suse.com
 - Version bump to 0.4.0
   + Migrate from dbus-glib to gdbus

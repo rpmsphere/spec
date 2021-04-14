@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           xtexit
 BuildRequires:  libX11-devel, libXt-devel, libXaw-devel, imake
@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Sep 27 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.42
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug  2 2006 werner@suse.de
 - Make it build with X11R7
 * Wed Jan 25 2006 mls@suse.de

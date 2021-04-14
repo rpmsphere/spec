@@ -74,7 +74,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Feb 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.50
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 09 2013 Germán A. Racca <skytux@fedoraproject.org> 1.50-8
 - Added dependency on gnome-icon-theme again because faenza was retired (see BZ#1005176)
 * Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.50-7
@@ -114,7 +114,7 @@ rm -rf %{buildroot}
 * Tue Jun 29 2010 German A. Racca <gracca@gmail.com> 1.20-1
 - New version
 * Tue Jun 01 2010 German A. Racca <gracca@gmail.com> 1.1-3
-- Rebuild for Fedora 13
+- Rebuilt for Fedora 13
 - Added %%{dist} tag
 * Thu May 13 2010 German A. Racca <gracca@gmail.com> 1.1-2
 - Rearrangement of spec file

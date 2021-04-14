@@ -45,6 +45,6 @@ may be resolved in a single pass of the loader.
 
 %changelog
 * Sun Oct 28 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun  2 2009 Pascal Bleser <pascal.bleser@opensuse.org> 6.1.10
 - new package

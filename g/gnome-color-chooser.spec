@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		gnome-color-chooser
 Summary:	Customize the appearance of the GNOME desktop
@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 10 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 05 2009 Gtz Waschk <waschk@mandriva.org> 0.2.5-1mdv2010.0
 + Revision: 453951
 - import gnome-color-chooser

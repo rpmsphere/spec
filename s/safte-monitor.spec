@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Feb 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 26 2009 mls@suse.de
 - make patch0 usage consistent
 * Tue Jun 16 2009 coolo@novell.com

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: mgt
 Summary: Game record display/editor for the oriental game of go
@@ -40,4 +40,4 @@ install -m644 *.6 %{buildroot}%{_mandir}/man6
 
 %changelog
 * Thu Jul 19 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.31
-- Rebuild for Fedora
+- Rebuilt for Fedora

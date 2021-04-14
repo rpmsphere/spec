@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:        An easy Rich Text Processor
 Name:           ted
@@ -51,7 +51,7 @@ done
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.23
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 30 2013 Fr. Br. George <george@altlinux.ru> 2.23-alt1
 - Initial build for ALT from upstream spec
 * Mon Feb 04 2013 Mark de Does <mark@mdedoes.com> 2.23-1

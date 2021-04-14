@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Window Manager based on twm with virtual screen
 Name: vtwm
@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT/usr/lib/X11/doc/html/vtwm.1.html
 
 %changelog
 * Mon Mar 21 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 5.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 15 2005 Olivier Thauvin <nanardon@zarb.org> 5.4.7-1plf
 - 5.4.7
 * Sat Oct 08 2005 Stefan van der Eijk <stefan@zarb.org> 5.4.6b-2plf

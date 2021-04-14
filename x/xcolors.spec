@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Sep 27 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 91.10.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 24 2010 ro@suse.de
 - xft-config is gone
 * Mon Nov  8 2010 coolo@novell.com

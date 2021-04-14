@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: jeex
 Summary: Visual editor to view and edit files in hexadecimal
@@ -40,4 +40,4 @@ mv %{buildroot}%{_datadir}/icons %{buildroot}%{_datadir}/pixmaps
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 12.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

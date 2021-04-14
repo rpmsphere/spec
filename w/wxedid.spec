@@ -37,7 +37,7 @@ make %{?_smp_mflags}
 
 %changelog
 * Mon Apr 16 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 28 2017 9@cirno.systems
 - update to v0.0.15
   * Fixed: (BUG) RCD_RETURN_FALSE() returns RCD_TRUE

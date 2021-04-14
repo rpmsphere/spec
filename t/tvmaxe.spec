@@ -87,7 +87,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/tvmaxe
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.09
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 28 2012 i@marguerite.su
 - Fix bnc#754459, license problem, thanks to babelworx.
 * Sun Mar 25 2012 i@marguerite.su

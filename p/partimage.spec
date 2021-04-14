@@ -136,7 +136,7 @@ groupdel partimag ||:
 
 %changelog
 * Mon Mar 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Jan 19 2021 luigiwalser <luigiwalser> 0.6.9-15.mga8
 + Revision: 1672508

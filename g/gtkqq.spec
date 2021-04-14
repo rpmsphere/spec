@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		gtkqq
 Version:	0.1
 Release:	11.1
@@ -57,7 +57,7 @@ rm -f -r $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 13 2012 hillwood@linuxfans.org
 - patch license to follow spdx.org standard
 - remove %%clean in specfile

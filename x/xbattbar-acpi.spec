@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           xbattbar-acpi
 Version:        0.4.0
@@ -36,6 +36,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 19 2013 Shintaro Shinozaki <taro@yadokari-linux.org> - 0.4.0-1
 - initial rpm release

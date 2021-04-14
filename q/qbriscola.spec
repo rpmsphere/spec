@@ -39,6 +39,6 @@ The game of the Briscola (Italian card-game) with Qt4 graphics.
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1svn.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 21 2013 fa0sck@gmail.com
 - Build latest stable version for openSUSE (from svn)

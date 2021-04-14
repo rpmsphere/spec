@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       proxychains-gui
 Version:	1.4.1
@@ -51,7 +51,7 @@ rm -f -r $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 23 2011 i@marguerite.su
 - fixed .desktop Categories error, now it is in Utility WebUtility
 * Wed Nov 23 2011 i@marguerite.su

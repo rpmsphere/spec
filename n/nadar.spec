@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: nadar
 Summary: A network tank battle game
@@ -34,4 +34,4 @@ make install BINDIR=%{buildroot}%{_bindir} MANDIR=%{buildroot}%{_mandir}/man1
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

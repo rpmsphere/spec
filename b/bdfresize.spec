@@ -41,7 +41,7 @@ CFLAGS="%{optflags}" %{configure}
 
 %changelog
 * Thu Apr 14 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Oct 20 2005 Michael Shigorin <mike@altlinux.org> 1.5-alt2
 - applied gcc34 patch from Momonga Linux

@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jun 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 28 2005 Cymon Cox <cymon@duke.edu>
 - Updated to version 1.4
 * Wed Mar 16 2005 Cymon Cox <cymon@duke.edu>

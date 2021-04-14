@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Multiplayer, deathmatch oriented first person shooter
 Name: nexuiz
@@ -113,7 +113,7 @@ gtk-update-icon-cache -qf %{_datadir}/icons/hicolor 2>/dev/null || :
 
 %changelog
 * Fri Jul 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 02 2008 Jon Ciesla <limb@jcomserv.net> - 2.4.2-3
 - Fix .desktop category, BZ 460785.
 * Mon Jul 07 2008 Jon Ciesla <limb@jcomserv.net> - 2.4.2-2

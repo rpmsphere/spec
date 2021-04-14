@@ -50,7 +50,7 @@ cp -af %{SOURCE1} .
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 27 2012 asterios.dramis@gmail.com
 - Spec file cleanup.
 - Updated License to GPL-2.0 (SPDX style).

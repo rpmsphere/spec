@@ -42,6 +42,6 @@ EOF
 
 %changelog
 * Tue Oct 03 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.0.0-6
 - (3d9f5bd) MassBuild#1257: Increase release tag

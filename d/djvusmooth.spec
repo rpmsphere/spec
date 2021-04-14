@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           djvusmooth
 Version:        0.2.19
 Release:        3.1
@@ -61,7 +61,7 @@ install -Dm 0644 %{SOURCE1} \
 
 %changelog
 * Wed Apr 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.19
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 16 2012 lazy.kent@opensuse.org
 - Update to 0.2.12.
   * Rename menu item “Edit → Outline → Remove” to “… → Remove all”.

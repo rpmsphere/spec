@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Qt File Manager
 Name:		qtfm
@@ -41,7 +41,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 29 2012 TI_Eugene <ti.eugene@gmail.com> - 5.5
 - Next version
 * Sat Nov 05 2011 TI_Eugene <ti.eugene@gmail.com> - 5.1

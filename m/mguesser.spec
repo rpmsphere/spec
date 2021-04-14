@@ -50,7 +50,7 @@ directory of this package to check currently supported languages and charsets.
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Mar  6 2008 Pascal Bleser <guru@unixtech.be> 0.4
 - pass optflags

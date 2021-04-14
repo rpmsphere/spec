@@ -42,7 +42,7 @@ CXXFLAGS="%{optflags} -std=gnu++11" \
 
 %changelog
 * Mon Jul 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 08 2018 akien <akien> 0.5-1.mga7
 + Revision: 1199724
 - Version 0.5

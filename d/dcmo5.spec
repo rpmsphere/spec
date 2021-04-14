@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		dcmo5
 Version:	11.2
@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 11.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 22 2008 Guillaume Rousse <guillomovitch@zarb.org> 11.2-2plf2009.1
 - bug fixes from upstream, to be integrated in next official version
 - contributed by Jean-Christophe Cardot (<plf@cardot.net>)

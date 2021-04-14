@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: IMC's interpreter for the Rexx
 Name: rexx-imc
@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Oct 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.76
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 26 2002 Ian Collier <imc@comlab.ox.ac.uk>
 - Initial package

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		lunzip
 Summary:	Decompressor for lzip files
@@ -32,7 +32,7 @@ make
 
 %changelog
 * Wed Feb 18 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 04 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 1.1-1
 + Revision: 789134
 - update to 1.1

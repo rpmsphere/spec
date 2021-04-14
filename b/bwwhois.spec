@@ -77,4 +77,4 @@ install -m755 bwInclude.pm $RPM_BUILD_ROOT/%{perl_archlib}/bwInclude.pm
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

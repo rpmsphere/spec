@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define svn	d2e11751c651
 
 Name:		nwc2xml
@@ -41,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed May 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.01
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 02 2014 gseaman <galen.seaman at comcast.net> 2.01-1gseaman2014
 - first build for PCLinuxOS

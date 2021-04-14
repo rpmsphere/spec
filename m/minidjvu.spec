@@ -78,7 +78,7 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/libminidjvu.la
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb  6 2012 lazy.kent@opensuse.org
 - Corrected source URL.
 * Tue Nov  8 2011 lazy.kent@opensuse.org

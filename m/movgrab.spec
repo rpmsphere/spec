@@ -47,7 +47,7 @@ install -Dm 0755 %{name} %buildroot%_bindir/%{name}
 
 %changelog
 * Fri Jul 21 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 23 2013 billybot <billybot> 1.2.1-2pclos2013
 - tweak specfile
 * Sat Dec 21 2013 daniel <meisssw01 at gmail.com> 1.2.1-1free2013

@@ -43,7 +43,7 @@ make
 
 %changelog
 * Mon May 08 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 28 2015 alexl <alexl> 0.9.2.1-1.mga6
 + Revision: 896053
 - version 0.9.2.1

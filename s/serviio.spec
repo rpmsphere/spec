@@ -66,4 +66,4 @@ install -D -m 644 %{S:1} $RPM_BUILD_ROOT/%{_unitdir}/serviio.service
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -41,6 +41,6 @@ ln -s ../share/rubygems/bin/fpm %{buildroot}%{_bindir}/fpm
 
 %changelog
 * Wed Feb 22 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun  9 2013 coolo@suse.com
 - initial package (version 0.4.37)

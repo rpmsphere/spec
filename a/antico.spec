@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: antico
 Version: 0.2
@@ -34,7 +34,7 @@ qmake-qt4
 
 %changelog
 * Tue Aug 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 17 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.2-alt6.gcbed547.1
 - Fixed build
 * Sat Jun 06 2009 Boris Savelev <boris@altlinux.org> 0.2-alt6.gcbed547

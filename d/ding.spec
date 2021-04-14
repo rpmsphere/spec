@@ -47,7 +47,7 @@ install -Dm644 ding.png $RPM_BUILD_ROOT%_datadir/pixmaps/%name.png
 
 %changelog
 * Fri Oct 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 18 2011 jengelh@medozas.de
 - Remove redundant tags/sections from specfile
   (cf. packaging guidelines)

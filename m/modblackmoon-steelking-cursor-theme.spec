@@ -32,6 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 01 2012 Motsyo Gennadi <drool@altlinux.ru> 0.1-alt1
 - initial build for ALT Linux

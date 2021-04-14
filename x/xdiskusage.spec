@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           xdiskusage
 Version:        1.52
@@ -52,7 +52,7 @@ EOF
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.52
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 30 2015 akien <akien> 1.51-1.mga6
 + Revision: 907390
 - Prevent debuginfo stripping

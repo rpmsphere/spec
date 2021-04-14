@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:	A listening comprehension tutor
 Name:		perroquet
 Version:	1.1.1
@@ -70,7 +70,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Tue May 17 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 16 2010 Jérôme Brenier <incubusss@mandriva.org> 1.0.1-2mdv2010.1
 + Revision: 492482
 - use Education for the Group tag

@@ -61,7 +61,7 @@ fi
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 31 2008 Wind <yc.yan@ossii.com.tw> 2.7.7-1
 - Rebuild for OSSII.
 * Mon Dec 24 2007 Hans de Goede <j.w.r.degoede@hhs.nl> 2.7.5-1

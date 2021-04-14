@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __os_install_post %{nil}
 #global __spec_install_post %{nil}
 
@@ -59,7 +59,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/execltp
 
 %changelog
 * Tue Jul 28 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 20200515
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.20120903-4
 + Revision: ef5e311
 - Spec cleanup, build with tirpc

@@ -54,7 +54,7 @@ rm -rf  $RPM_BUILD_ROOT
 
 %changelog
 * Mon Sep 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Aug 30 2006 anosek@suse.cz
 - changed prefix /usr/X11R6 -> /usr

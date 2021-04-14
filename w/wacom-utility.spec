@@ -38,4 +38,4 @@ EOF
 
 %changelog
 * Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.21
-- Rebuild for Fedora
+- Rebuilt for Fedora

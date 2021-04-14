@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xvnews
 License: Distributable
@@ -91,7 +91,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Thu Dec 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 30 2003 Lenny Cartier <lenny@mandrakesoft.com> 2.3.2-6mdk
 - rebuild
 * Sat Nov 23 2002 Olivier Thauvin <thauvin@aerov.jussieu.fr> 2.3.2-5mdk

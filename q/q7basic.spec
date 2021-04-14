@@ -1,4 +1,4 @@
-%global		debug_package %{nil}
+%undefine _debugsource_packages
 %define         _name Q7Basic
 %define         dest_dir %{_libdir}/Q7Basic
 
@@ -99,6 +99,6 @@ install -D -m644 %{SOURCE2} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Sep 14 2013 fa0sck@gmail.com
 - Build version 1.0 for openSUSE

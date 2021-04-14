@@ -47,6 +47,6 @@ make INSTALL_ROOT=%{buildroot} install
 
 %changelog
 * Thu Oct 31 2019 Wei-Lun Chao <bluebat@member.fsf.org> - x36.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 18 2011 - saschpe@suse.de
 - Initial version

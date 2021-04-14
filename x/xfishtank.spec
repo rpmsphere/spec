@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           xfishtank
 BuildRequires:  libX11-devel, libXext-devel, imake, imlib2-devel
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 28 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov  8 2010 coolo@novell.com
 - remove support for pre-9.1
 * Tue Aug  8 2006 lmichnovic@suse.cz

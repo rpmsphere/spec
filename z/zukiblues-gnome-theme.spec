@@ -34,4 +34,4 @@ cp -pr "Zuki Blues" %{buildroot}%{_datadir}/themes/%{theme_name}
 
 %changelog
 * Mon Feb 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

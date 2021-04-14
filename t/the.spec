@@ -42,7 +42,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %changelog
 * Fri Nov 21 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3RC4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov  3 2009 coolo@novell.com
 - updated patches to apply with fuzz=0
 * Sat Jan 12 2008 coolo@suse.de

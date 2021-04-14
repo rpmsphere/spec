@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           gnome-pie
 Version:        0.7.2
@@ -65,7 +65,7 @@ fi
 
 %changelog
 * Thu Oct 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 10 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0.5.5-9.20130330git0a5aa2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
 * Wed Feb 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.5.5-8.20130330git0a5aa2

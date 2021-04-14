@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20030809
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 11 2003 - mfabian@suse.de
 - add correct substkit-20030809.tar.bz2, last one was broken.
 * Mon Aug 11 2003 - mfabian@suse.de

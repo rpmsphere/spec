@@ -56,7 +56,7 @@ rm -rf %{buildroot}%{_prefix}/doc/
 
 %changelog
 * Fri Dec 27 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 1.2.4-28
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 
@@ -146,10 +146,10 @@ rm -rf %{buildroot}%{_prefix}/doc/
 - Update to 1.2.4.
 
 * Tue May 18 2004 Matthias Saou <http://freshrpms.net/> 1.2.3-4
-- Rebuild for Fedora Core 2.
+- Rebuilt for Fedora Core 2.
 
 * Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 1.2.3-3
-- Rebuild for Fedora Core 1.
+- Rebuilt for Fedora Core 1.
 
 * Mon Mar 31 2003 Matthias Saou <http://freshrpms.net/>
 - Rebuilt for Red Hat Linux 9.

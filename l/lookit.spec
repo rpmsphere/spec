@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		lookit
 Version:	0.4.0
 Release:	1
@@ -40,4 +40,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 01 2011 Funda Wang <fwang@mandriva.org> 1.4.4-10mdv2011.0
 + Revision: 634914
 - simplify BR

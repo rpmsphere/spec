@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jan 30 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.20
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 27 2009 lars@linux-schulserver.de
 - update to 2.50:
   + main change was support for CMS

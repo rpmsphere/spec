@@ -49,6 +49,6 @@ make gtk3
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 12 2012 Paul Wolneykien <manowar@altlinux.ru> 1.3.3-alt1
 - Initial release for ALT Linux.

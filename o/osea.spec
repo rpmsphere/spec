@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Open Source ECG Analysis
 Name: osea
@@ -42,4 +42,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Apr 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

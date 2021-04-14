@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           socklog
 Version:        2.1.0
@@ -216,7 +216,7 @@ fi
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep  3 2006 mrueckert@suse.de
 - move binaries to /sbin
 * Sun Sep  3 2006 mrueckert@suse.de

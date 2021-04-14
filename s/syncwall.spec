@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: syncwall
 Summary: Wallpaper management with synchronization features
@@ -51,6 +51,6 @@ sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/ap
 
 %changelog
 * Wed Apr 15 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 27 2012 Sawa <sssawwwa@wolfenstein.jp> - 3.0.712-1
 - Initial package.

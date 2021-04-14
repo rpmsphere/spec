@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: pxdmcp
 Summary: An XDMCP standalone client
@@ -32,4 +32,4 @@ install -Dm755 xdmcp %{buildroot}%{_bindir}/xdmcp
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 21 2012 josef radinger <cheese@nosuchhost.net> - 3.0-6
 - fix removing of $RPM_BUILD_ROOT/%{_libdir}/X11/app-defaults on 64bit-systems
 * Fri Sep 21 2012 josef radinger <cheese@nosuchhost.net> - 3.0-5

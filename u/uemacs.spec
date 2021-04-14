@@ -35,4 +35,4 @@ mv %{buildroot}%{_bindir}/em %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Fri Dec 13 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.15
-- Rebuild for Fedora
+- Rebuilt for Fedora

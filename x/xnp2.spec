@@ -40,6 +40,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20120302
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 07 2012 kobayashi 0.83
 - Create package in openSUSE Build

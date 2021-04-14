@@ -55,7 +55,7 @@ install -D -m 755 %{SOURCE2} %{buildroot}%{_sysconfdir}/X11/xinit.d/update-menus
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 13 2014 Bernhard Rosenkraenzer <bero@bero.eu> 0.1-9
 + Revision: 7fa4cea
 - MassBuild#436: Increase release tag

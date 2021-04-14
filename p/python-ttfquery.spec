@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define oname TTFQuery
 %define sname ttfquery
 
@@ -54,7 +54,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Thu Feb 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug 26 2014 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 1.0.5-alt1.bzr20120206
 - Snapshot from bzr
 - Added module for Python 3

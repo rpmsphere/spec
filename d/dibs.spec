@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:         dibs
 License:      BSD
 Group:        Development/Libraries/Python
@@ -46,4 +46,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.93
-- Rebuild for Fedora
+- Rebuilt for Fedora

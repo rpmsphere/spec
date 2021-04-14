@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: light-monitor
 Summary: A transparent panel with calendar
@@ -41,4 +41,4 @@ install -Dm644 light-monitor.conf %{buildroot}%{_sysconfdir}/light-monitor.conf
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora

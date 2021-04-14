@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Scripting language and C library useful for building DSLs
 Name: boron
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 16 2012 Karl Robillard <wickedsmoke@users.sf.net>
 - No longer using cmake.
 * Fri Dec  4 2009 Karl Robillard <wickedsmoke@users.sf.net>

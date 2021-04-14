@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __os_install_post %{nil}
 
 Name:           ggr
@@ -65,6 +65,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.47
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 12 2008 Feather Mountain <john@ossii.com.tw> 1.5-1
 - Build for OSSII

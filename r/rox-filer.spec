@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: rox-filer
 Version: 2.11
@@ -102,7 +102,7 @@ cd ../src/po
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 05 2006 Eugene Ostapets <eostapets@altlinux.ru> 2.5-alt1
 - new version
 * Fri Aug 12 2005 Eugene Ostapets <eostapets@altlinux.ru> 2.3-alt1

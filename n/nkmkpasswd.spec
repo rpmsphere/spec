@@ -37,7 +37,7 @@ Authors:
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Jul  8 2008 guru@unixtech.be
 - new package

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: Nomographs with Python
 Name: python-pynomo
 Version: 0.2.2
@@ -31,4 +31,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jun 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

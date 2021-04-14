@@ -43,4 +43,4 @@ install -m644 %{SOURCE3} %{buildroot}%{_sysconfdir}/fonts/conf.d
 
 %changelog
 * Mon May 09 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.04
-- Rebuild for Fedora
+- Rebuilt for Fedora

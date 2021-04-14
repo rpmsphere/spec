@@ -39,4 +39,4 @@ python2 setup.py install --root $RPM_BUILD_ROOT --optimize=1
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

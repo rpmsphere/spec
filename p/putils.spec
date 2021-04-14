@@ -27,6 +27,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %changelog
 * Sun Jun 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 31 2012 Ulrich Drepper <drepper@gmail.com> - 1.0
 - Initial build

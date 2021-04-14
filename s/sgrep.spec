@@ -36,7 +36,7 @@ rm %{buildroot}%{_datadir}/sample.sgreprc
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.94a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 16 2020 Martin Pluskal <mpluskal@suse.com>
 - Update to version 1.94a:
   * Killed nasty hash_function() bug

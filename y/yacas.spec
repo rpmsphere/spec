@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           yacas
 Version:        1.9.1
 Release:        1
@@ -102,7 +102,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 27 2014 lars@linux-schulserver.de
 - update to 1.3.6:
   + Quite a few improvements and assorted bugfixes

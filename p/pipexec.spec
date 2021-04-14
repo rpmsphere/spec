@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: pipexec
 Summary: Create a directed graph of processes and pipes
@@ -39,4 +39,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Fri Oct 13 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

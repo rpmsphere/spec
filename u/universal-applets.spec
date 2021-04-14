@@ -87,7 +87,7 @@ bash -c "(kill `ps ax | grep screenlets-daemon | sed 's,.*grep.*,,' | cut -d" " 
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2bzr624
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 02 2009 - some-guy <muhammedu@gmail.com>
 - upgraded to bzr
 * Mon Mar 02 2009 - some-guy <muhammedu@gmail.com>

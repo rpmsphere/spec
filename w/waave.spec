@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: waave
 Summary: Why Another Audio Video Engine
@@ -51,4 +51,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.01
-- Rebuild for Fedora
+- Rebuilt for Fedora

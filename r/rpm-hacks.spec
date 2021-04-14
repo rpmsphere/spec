@@ -1,5 +1,5 @@
 Name:		rpm-hacks
-Version:	2020.5
+Version:	2020.8
 Release:	1
 Summary:	RPM hacks utilities
 Group:		Applications/Engineering
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_rpmconfigdir}/macros.d/macros.hacks-srpm
 
 %changelog
-* Mon May 11 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2020.5
+* Wed Aug 12 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2020.8
 - Rebuild
 * Thu Dec 20 2012 Robert Wei <robert.wei@ossii.com.tw> - 2012.12
 - First build

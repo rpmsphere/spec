@@ -124,7 +124,7 @@ done
 
 %changelog
 * Thu Dec 10 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.32.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Jan 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 2.32.0-21
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild

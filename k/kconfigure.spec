@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: kconfigure
 Summary: KDE tool for Building and installing software from source
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 04 2005 X-Stranger <xstranger@altlinux.ru> 2.1-alt2
 - rpath disabled
 * Fri Jul 29 2005 X-Stranger <xstranger@altlinux.ru> 2.1-alt1

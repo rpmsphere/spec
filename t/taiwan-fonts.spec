@@ -38,4 +38,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Mar 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.10
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -138,7 +138,7 @@ EOF
 
 %changelog
 * Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 9-8.mga3
 + Revision: 348411
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

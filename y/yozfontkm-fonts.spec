@@ -40,4 +40,4 @@ install -m 0644 *.ttc *.ttf %{buildroot}%{fontdir}
 
 %changelog
 * Wed Jan 08 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 7.01
-- Rebuild for Fedora
+- Rebuilt for Fedora

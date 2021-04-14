@@ -65,6 +65,6 @@ modprobe snd_seq
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.5.0-10
 - (1cc4199) MassBuild#1257: Increase release tag

@@ -1,8 +1,8 @@
 %global upstream utsushi
 
 Name:           imagescan
-Version:        3.32.0
-Release:        8.1
+Version:        3.38.0
+Release:        1
 Summary:        Next Generation Image Acquisition Utilities
 Vendor:         SEIKO EPSON CORPORATION
 License:        GPLv3+
@@ -118,8 +118,8 @@ fi
 %endif
 
 %changelog
-* Fri Nov 10 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.32.0
-- Rebuild for Fedora
+* Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.38.0
+- Rebuilt for Fedora
 * Tue Apr 12 2016 Yuji Saito <yuji.saito@avasys.jp> - 3.16.0-1
 - new upstream
 * Fri Jan 22 2016 Olaf Meeuwissen <olaf.meeuwissen@avasys.jp> - 3.15.0-1

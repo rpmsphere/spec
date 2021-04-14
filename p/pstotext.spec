@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 10 2008 pth@suse.de
 - Initial package
 - Create configure.ac and Makefile.am

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-pushy
 Version:        0.5.1
 Release:        6.1
@@ -50,6 +50,6 @@ python2 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov  3 2012 dkukawka@suse.com
 - initial package

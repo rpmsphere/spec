@@ -81,7 +81,7 @@ install -pD -m644  media/fim.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Mon May 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6-trunk
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 01 2014 symbianflo <symbianflo@symbianflo> 0.4-rc1
 + Revision: 1b90f44
 - Imported from SRPM

@@ -63,7 +63,7 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17rc
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 20 2009 Wind <yc.yan@ossii.com.tw>
 - Rebuild for OSSII.
 - Add desktop and icon file.

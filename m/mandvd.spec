@@ -58,7 +58,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Tue Jun 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 13 2010 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 2.6-1mamba
 - update to 2.6
 - fixed spec file

@@ -55,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 01 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 24 2012 Jean-Philippe Chancelier
 - Package

@@ -32,4 +32,4 @@ sed -i 's|/usr/share/icons/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/appl
 
 %changelog
 * Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

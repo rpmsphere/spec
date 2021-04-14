@@ -34,7 +34,7 @@ rm %{buildroot}/%{_datadir}/menu/%{name}
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 18 2013 joop.boonen@opensuse.org
 - Corrected the license
 * Sat Jul  2 2011 jengelh@medozas.de

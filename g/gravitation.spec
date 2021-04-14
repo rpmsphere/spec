@@ -62,7 +62,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 28 2012 1Antoine1 <antoine.belvire@laposte.net> version 3
 - Added .desktop file
 * Mon Jun 25 2012 1Antoine1 <antoine.belvire@laposte.net> version 3

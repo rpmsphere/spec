@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jul 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Jun 19 2012 qmp <glang@lavabit.com> - 0.0.1-2
 - Rebuild

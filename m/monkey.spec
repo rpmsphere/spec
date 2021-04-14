@@ -50,7 +50,7 @@ make
 
 %changelog
 * Thu Aug 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 16 2011 Alexander Khrukin <akhrukin@mandriva.org> 0.21.0-1
 + Revision: 730913
 - imported package monkey

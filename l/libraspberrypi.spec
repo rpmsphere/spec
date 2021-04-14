@@ -50,4 +50,4 @@ cp -a build/native/release/*.pc %{buildroot}%{_libdir}/pkgconfig
 
 %changelog
 * Wed Dec 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.20181212
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -52,7 +52,7 @@ install -D %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 20 2012 Br. George <george@altlinux.ru> 1.4.3-alt1
 - Autobuild version bump to 1.4.3
 - Patching makefile

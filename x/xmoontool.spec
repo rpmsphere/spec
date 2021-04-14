@@ -48,7 +48,7 @@ install -Dm644 %{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Tue Jan 16 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar  2 2015 sfalken@opensuse.org
 - Added Categories and GenericName to .desktop to clear
   brp-check-suse errors

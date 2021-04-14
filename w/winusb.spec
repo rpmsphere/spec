@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		winusb
 License:	GPL v2
@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 18 2013 Muhammad Shaban <Mr.Muhammad@linuxac.org> - 1.0.11
 - update
 * Sun Dec 23 2012 Muhammad Shaban <Mr.Muhammad@linuxac.org> - 1.0.10

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global oname wxFormBuilder
 
 Summary:	An open-source, cross-platform RAD tool for wxWidgets
@@ -75,7 +75,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Oct 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.1git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 14 2015 Oleg Kozlov <xxblx.oleg@yandex.com> 3.5.0beta-1.mga5
 - built for mageia 5
 * Sun May 10 2015 Oleg Kozlov <xxblx.oleg@yandex.com> 3.5.0beta-3.mga4

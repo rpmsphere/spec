@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 BuildRequires:	pkgconfig
 BuildRequires:	SDL-devel	>= 1.2.4
@@ -59,4 +59,4 @@ install -m 644 data/music/* $RPM_BUILD_ROOT/%{_datadir}/%{name}/music/
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

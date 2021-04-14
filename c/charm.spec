@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       charm
 Version:	1.0
@@ -56,6 +56,6 @@ rm -f -r $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 20 2012 i@marguerite.su
 - initial package 1.0 from git

@@ -63,7 +63,7 @@ sed -i 's|/usr/bin/env python|/usr/bin/python3|' %{buildroot}%{_datadir}/babiloo
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 28 2012 fa0sck@gmail.com
 - Created package for babiloo (last) version 2.0.11
 * See http://bazaar.launchpad.net/~babiloo-developers/babiloo/trunk/changes

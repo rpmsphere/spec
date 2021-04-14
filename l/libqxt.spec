@@ -91,7 +91,7 @@ rm -fr $RPM_BUILD_ROOT%{_prefix}/doc/
 
 %changelog
 * Fri Oct 18 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.6.2-16
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 * Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.6.2-15

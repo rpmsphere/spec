@@ -47,7 +47,7 @@ mv %{buildroot}%{_bindir}/qScreenshot %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Fri Jan 03 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 23 2018 umeabot <umeabot> 1.0-6.mga7
   (not released yet)
 + Revision: 1300677

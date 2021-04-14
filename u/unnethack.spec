@@ -38,7 +38,7 @@ mv %buildroot%_datadir/unnethack/unnethack %buildroot%_bindir/unnethack.bin && l
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 5.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 27 2014 Fr. Br. George <george@altlinux.ru> 5.1.0-alt1
 - Autobuild version bump to 5.1.0
 - Fix build

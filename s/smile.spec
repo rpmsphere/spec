@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		smile
 Summary:	Slideshow Maker In Linux Environnement
@@ -64,4 +64,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed May 04 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

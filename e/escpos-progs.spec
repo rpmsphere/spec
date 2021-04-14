@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		escpos-progs
 Version:	2018
@@ -37,4 +37,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Apr 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2018
-- Rebuild for Fedora
+- Rebuilt for Fedora

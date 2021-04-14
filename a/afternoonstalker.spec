@@ -62,4 +62,4 @@ install -D -m644 src/%{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/applications/%{
 
 %changelog
 * Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

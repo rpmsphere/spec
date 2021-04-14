@@ -68,7 +68,7 @@ make CFLAGS+=-Wno-format-security
 
 %changelog
 * Sat Aug 03 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 07 2010 Tomasz Pawel Gajc <tpg@mandriva.org> 0.2.3-9mdv2010.1
 + Revision: 543280
 - rebuild for mdv 2010.1

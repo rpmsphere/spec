@@ -32,4 +32,4 @@ cp -a bin/* %{buildroot}%{_bindir}
 
 %changelog
 * Thu Nov 09 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

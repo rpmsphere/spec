@@ -23,6 +23,8 @@ sed -i 's|snafu|$XDG_CURRENT_DESKTOP|' usr/bin/%{name}
 mkdir -p %{buildroot}
 cp -a usr %{buildroot}
 
+sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/%{name}_* %{buildroot}%{_datadir}/%{name}/stars/catalog.py
+
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}
@@ -32,4 +34,4 @@ cp -a usr %{buildroot}
 
 %changelog
 * Wed May 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.7
-- Rebuild for Fedora
+- Rebuilt for Fedora

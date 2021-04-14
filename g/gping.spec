@@ -1,4 +1,4 @@
-#global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: gping
 Version: 1.2.0
@@ -30,7 +30,7 @@ rm -f %{buildroot}%{_prefix}/.crates.toml \
 
 %changelog
 * Mon Jan 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec  6 2020 Artem Polishchuk <ego.cordatus@gmail.com> - 1.2.0-1
 - build(update): 1.2.0
 * Wed Dec  2 2020 Artem Polishchuk <ego.cordatus@gmail.com> - 1.1.0-1

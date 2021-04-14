@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           serpentine
 Version:        0.7
@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug 26 2008 Milo Chen <milo_chen@mail2000.com.tw> - 0.7-6.ossii
 - package ossii
 - Add zh_TW translation into fedora-serpentine.desktop

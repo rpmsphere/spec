@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		litebook
 Version:	3.0
@@ -60,4 +60,4 @@ EOF
 
 %changelog
 * Sun Jan 6 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

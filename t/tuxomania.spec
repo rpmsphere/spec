@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           tuxomania
 BuildRequires:  gcc-c++ SDL-devel SDL_image-devel SDL_ttf-devel mesa-libGL-devel xerces-c-devel cmake dos2unix fdupes bitstream-vera-sans-fonts
@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 24 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 28 2011 PVince81@opensuse.org
 - Fixed compile error
 * Sat Mar 13 2010 PVince81@yahoo.fr

@@ -50,7 +50,7 @@ LibrePCB is a free EDA software to develop printed circuit boards.
 
 %changelog
 * Tue Oct 06 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 15 2020 daviddavid <daviddavid> 0.1.4-1.mga8
 + Revision: 1606242
 - new version: 0.1.4

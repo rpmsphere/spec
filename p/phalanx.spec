@@ -41,7 +41,7 @@ install -m 0644 eco.phalanx pbook.phalanx sbook.phalanx $RPM_BUILD_ROOT/usr/shar
 
 %changelog
 * Fri Dec 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 25
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 11 2015 pgajdos@suse.com
 - updated to XXIV
   * Xboard protocol - 'memory' command support.

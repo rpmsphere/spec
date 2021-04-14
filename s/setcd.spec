@@ -52,4 +52,4 @@ install -m 644 %{name}.1 $RPM_BUILD_ROOT/%{_mandir}/man1/
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

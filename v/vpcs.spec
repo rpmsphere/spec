@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       vpcs
 Version:	0.4b2
@@ -44,7 +44,7 @@ install -Dm644 man/vpcs.1 %buildroot/%_mandir/man1/%{name}.1
 
 %changelog
 * Sat Apr 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4b2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan  7 2013 andrea@opensuse.org
 - new upstream version 0.4b2
   * support DNS

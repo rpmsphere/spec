@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:			agendaroids
 Version:		2002.03.07
@@ -39,4 +39,4 @@ install -m 755 %{name}.host $RPM_BUILD_ROOT/%{_bindir}/%{name}
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2002.03.07
-- Rebuild for Fedora
+- Rebuilt for Fedora

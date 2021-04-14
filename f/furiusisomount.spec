@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		furiusisomount
 Version:	0.11.3.1
@@ -52,7 +52,7 @@ chmod 755 %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Mon Oct 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 0.11.3.1-3.mga3
 + Revision: 350979
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

@@ -36,4 +36,4 @@ export CFLAGS="-Wno-error -fPIC"
 
 %changelog
 * Thu Oct 18 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

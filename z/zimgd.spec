@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:     zimgd
 Version:  3.1.0
@@ -51,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun May 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 08 2014 <zp@buaa.us> 3.1.0
 - Initial package

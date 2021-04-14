@@ -56,6 +56,6 @@ make
 
 %changelog
 * Mon Aug 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.130.0-6
 - (530ea56) MassBuild#1257: Increase release tag

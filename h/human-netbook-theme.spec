@@ -38,4 +38,4 @@ cp -a Human-Murrine-Netbook %{buildroot}%{_datadir}/themes
 
 %changelog
 * Tue Sep 06 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -39,7 +39,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Wed Jun 15 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.22
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 08 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 1.22-2mamba
 - fixed license
 - fixed specfile formatting

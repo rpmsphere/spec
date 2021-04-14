@@ -27,6 +27,7 @@ selected windows, web pages and videos.
 %setup -q
 
 %build
+export python_path=/usr/bin/python2
 ./configure --prefix=/usr
 
 %install
@@ -47,4 +48,4 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}/usr/lib/Nanoshot/
 
 %changelog
 * Mon Dec 05 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.15
-- Rebuild for Fedora
+- Rebuilt for Fedora

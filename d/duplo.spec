@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:			duplo
 Version:		0.2.0
@@ -33,4 +33,4 @@ install -D -m755 %{name} $RPM_BUILD_ROOT/%{_bindir}/%{name}
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

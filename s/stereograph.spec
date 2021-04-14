@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: stereograph
 Version: 0.33b
@@ -40,7 +40,7 @@ install -pD -m 644 %name\.1 %buildroot%_mandir/man1/%name\.1
 
 %changelog
 * Wed Jul 08 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.33b
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 11 2013 Dmitry Derjavin <dd@altlinux.org> 0.30a-alt2
 - Fix to build against libpng-1.5.x.
 * Sat Feb 09 2013 Dmitry Derjavin <dd@altlinux.org> 0.30a-alt1

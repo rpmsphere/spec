@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 %define	_cachedir	/var/cache
 %define	py_ver		%(python -c 'import sys; print sys.version[:3]')
 
@@ -32,13 +33,13 @@ BuildRequires:	docbook-utils
 BuildRequires:	wget
 BuildRequires:	pkgconfig(python) >= 2.4
 BuildRequires:	pygame >= 1.5
-BuildRequires:	python-beautifulsoup >= 3.0.3
-BuildRequires:	python-imaging >= 1.1.4
-BuildRequires:	python-imdb
-BuildRequires:	python-kaa-base
-BuildRequires:	python-kaa-imlib2
-BuildRequires:	python-kaa-metadata
-BuildRequires:	python-numpy
+BuildRequires:	python2-beautifulsoup >= 3.0.3
+BuildRequires:	python2-imaging >= 1.1.4
+BuildRequires:	python2-imdb
+BuildRequires:	python2-kaa-base
+BuildRequires:	python2-kaa-imlib2
+BuildRequires:	python2-kaa-metadata
+BuildRequires:	python2-numpy
 BuildRequires:	python2-twisted
 BuildRequires:	python2-setuptools
 
@@ -50,16 +51,16 @@ Requires:	libjpeg-progs
 Requires:	mencoder
 Requires:	mplayer
 Requires:	pygame >= 1.5
-Requires:	python-beautifulsoup >= 3.0.3
-Requires:	python-imaging >= 1.1.4
-Requires:	python-imdb
-Requires:	python-kaa-base
-Requires:	python-kaa-metadata
-Requires:	python-kaa-imlib2
-Requires:	python-lirc >= 0.0.4
-Requires:	python-numeric >= 2.31
-Requires:	python-osd
-Requires:	python-twisted >= 1.3.0
+Requires:	python2-beautifulsoup >= 3.0.3
+Requires:	python2-imaging >= 1.1.4
+Requires:	python2-imdb
+Requires:	python2-kaa-base
+Requires:	python2-kaa-metadata
+Requires:	python2-kaa-imlib2
+Requires:	python2-lirc >= 0.0.4
+Requires:	python2-numeric >= 2.31
+Requires:	python2-osd
+Requires:	python2-twisted >= 1.3.0
 Requires:	tvtime
 Requires:	util-linux
 Requires:	vorbis-tools
@@ -305,9 +306,8 @@ fi;
 %postun
 %_postun_userdel %{name}
 
-
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.2b2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 15 2017 Giovanni Mariani <mc2374@mclink.it> 1.9.2b2-1
 - (c243505) Updated to release 1.9.2 (beta2), rediffed P0 and P4, added P5 to fix build, added S100 to silence wrong rpmlint errors, fixed our .desktop file and remove many other rpmlint warnings

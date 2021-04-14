@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:		samuel
 Version:	0.1.9git
 Release:	1
@@ -42,6 +42,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.9git
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.1.8-5
 - (e17f99d) MassBuild#1257: Increase release tag

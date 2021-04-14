@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _name Tribler
 
 Name: tribler
@@ -73,7 +73,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 - with python2-wxpython3 support
 
 * Thu Jun 30 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 6.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Jan 08 2016 Sérgio Basto <sergio@serjux.com> - 6.5.0-0.2.rc6
 - Update localsnapshot
@@ -97,7 +97,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 - update SOURCE0 url
 
 * Mon Dec 22 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 6.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Sep 06 2008 - Andrea Florio <andrea@links2linux.de>
 - new package

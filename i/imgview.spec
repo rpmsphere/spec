@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           imgview
 Version:        2.6.1
@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 29 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 28 2009 Guillaume Rousse <guillomovitch@mandriva.org> 2.5.2-1mdv2010.0
 + Revision: 390411
 - update to new version 2.5.2

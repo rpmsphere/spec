@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 31 2009 AxelKoellhofer@web.de
 - added a polyglot startup script (i.e. for use with xboard)
   simply typing "xboard -fcp glaurung22-polyglot" (engine = white) 

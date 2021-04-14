@@ -58,7 +58,7 @@ popd
 
 %changelog
 * Thu Feb 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 19 2017 badshah400@gmail.com
 - Correct License: Includes software licensed as BSD-3-Clause,
   MIT, and Apache-2.0, and data licensed under CC-by-SA-3.0 and/or

@@ -37,4 +37,4 @@ install -m644 initialize.txt logoinitialize.txt ucblogolib.txt %{buildroot}%{_da
 
 %changelog
 * Wed Sep 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.005git
-- Rebuild for Fedora
+- Rebuilt for Fedora

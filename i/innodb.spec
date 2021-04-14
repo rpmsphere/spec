@@ -99,7 +99,7 @@ rm -f $RPM_BUILD_ROOT%{_datadir}/%{name}-1.0/examples/COPYING
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6.6750
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 11 2010 lenz@grimmer.com
 - Update to version 1.0.6.6750
 - Bumped up shared library number

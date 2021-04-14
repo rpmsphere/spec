@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:            subtle
 Version:         0.11.3224
@@ -50,7 +50,7 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/xsessions/%{name}.desktop
 
 %changelog
 * Mon Feb 10 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.3224
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan  8 2012 seiler@b1-systems.de
 - added dependency for rxvt-unicode (main terminal emulator used in subtle)
 * Mon Dec 26 2011 seiler@b1-systems.de

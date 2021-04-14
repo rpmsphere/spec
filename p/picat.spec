@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A simple logic-based multi-paradigm programming language
 Name: picat
@@ -35,4 +35,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 21 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 30.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

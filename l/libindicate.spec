@@ -177,7 +177,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr  4 2011 nmo.marques@gmail.com
 - Update to version 0.5.0:
   + Fix dbus error codes (lp#736249).

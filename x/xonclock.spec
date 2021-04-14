@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: On-screen analog clock
 Name: xonclock
@@ -56,7 +56,7 @@ desktop-file-install --vendor ""               \
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.9.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 16 2007 Dries Verachtert <dries@ulyssis.org> - 0.0.9.2-1 - 7982/dag
 - Updated to release 0.0.9.2.
 * Sun Aug 12 2007 Dries Verachtert <dries@ulyssis.org> - 0.0.9.1-1

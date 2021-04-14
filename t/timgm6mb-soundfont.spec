@@ -25,4 +25,4 @@ install -Dm644 TimGM6mb.sf2 %{buildroot}%{_datadir}/soundfonts/TimGM6mb.sf2
 
 %changelog
 * Tue Aug 22 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    carpo
 Version: 0.3.4
@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 12 2011 Bernd Stramm <bernd.stramm@gmail.com> - 0.3.4 
 - fix size initialization on non-phones
   - copy-paste menu, used for new feed address

@@ -48,4 +48,4 @@ cat %{_datadir}/kde4/apps/%{name}/iotpos_mysql.sql | mysql -u root -p ||:
 
 %changelog
 * Wed Sep 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4git
-- Rebuild for Fedora
+- Rebuilt for Fedora

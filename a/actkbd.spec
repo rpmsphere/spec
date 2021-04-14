@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:        A keyboard shortcut daemon
 Name:           actkbd
@@ -37,7 +37,7 @@ install -pD -m 644 %name.service %buildroot%_unitdir/%name.service
 
 %changelog
 * Thu Dec 21 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 06 2014 Valentin Rosavitskiy <valintinr@altlinux.org> 0.2.8-alt2
 - Fix lsb header in init script
 * Fri Jul 04 2014 Valentin Rosavitskiy <valintinr@altlinux.org> 0.2.8-alt1

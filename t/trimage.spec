@@ -45,7 +45,7 @@ python3 setup.py install \
 
 %changelog
 * Wed Mar 25 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May  1 2012 lazy.kent@opensuse.org
 - Removed check for unsupported openSUSE versions.
 * Thu Nov 10 2011 lazy.kent@opensuse.org

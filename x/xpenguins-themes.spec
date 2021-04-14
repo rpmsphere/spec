@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 26 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 15 2002  <R.J.Hogan@reading.ac.uk> 1.0-1
 - Added Worms theme
 * Mon Sep 24 2001  <R.J.Hogan@reading.ac.uk> 0.9-1

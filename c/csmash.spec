@@ -75,7 +75,7 @@ install -m644 %{SOURCE13} -D %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{
 
 %changelog
 * Tue May 15 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 12 2017 cjw <cjw> 0.6.6-25.mga7
 + Revision: 1153112
 - fix debug packages

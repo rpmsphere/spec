@@ -71,6 +71,6 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 83
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 11 2008 crrodriguez@suse.de
 - initial version for openSUSE buildservice

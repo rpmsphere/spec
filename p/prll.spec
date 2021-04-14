@@ -85,7 +85,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 22 2010 lars@linux-schulserver.de
 - use group System/Shells
 * Sat May  1 2010 lars@linux-schulserver.de

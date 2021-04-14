@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: haircapture
 BuildRequires: SDL-devel
@@ -126,7 +126,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Aug 06 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 24 2009 13:45:38 Brasil 2009 - alessandrofaria@netitec.com.br - 2.0.0-RC2
 - Implementation video accelerator in camera ip and MJPEG format 
 * Mon Nov 23 2009 Brasil/East 2009 - alessandrofaria@netitec.com.br - 2.0.0-RC2

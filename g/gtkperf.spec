@@ -55,7 +55,7 @@ desktop-file-install --vendor=""	\
 
 %changelog
 * Thu Jan 12 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.40
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 19 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 0.40-alt1.qa3
 - NMU: rebuilt for updated dependencies.
 * Sat May 21 2011 Repocop Q. A. Robot <repocop@altlinux.org> 0.40-alt1.qa2

@@ -33,4 +33,4 @@ install -Dm644 xshut.1 $RPM_BUILD_ROOT%{_mandir}/man1/xshut.1
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

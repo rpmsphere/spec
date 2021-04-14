@@ -40,4 +40,4 @@ cp -a tsteno/* %{buildroot}%{python3_sitelib}/tsteno
 
 %changelog
 * Thu Feb 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

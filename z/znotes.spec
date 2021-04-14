@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		znotes
 Version:	0.4.5
@@ -39,7 +39,7 @@ make
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Aug 27 2011 Peter Savichev (proton) <psavichev@gmail.com>
 - 0.4.5
 * Sun Jan 09 2011 Peter Savichev (proton) <psavichev@gmail.com>

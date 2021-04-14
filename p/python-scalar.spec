@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define modname scalar
 
 Name:           python-%{modname}
@@ -47,6 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Dec 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 19 2011 scorot@gtt.fr - 2.2
 - Initial release

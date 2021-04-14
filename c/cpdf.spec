@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           cpdf
 License:        GPLv3+
@@ -37,7 +37,7 @@ sed -i 's|/usr/share/icons/hicolor/64x64/apps/cpdf.png|cpdf|' $RPM_BUILD_ROOT%{_
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb  8 2011 d.pashov@gmail.com
 -The caching broke the auto-reloading. fixed now.
 * Mon Feb  7 2011 d.pashov@gmail.com

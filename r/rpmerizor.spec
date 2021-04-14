@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 10 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 2 2011 Eric Gerbier <gerbier@users.sourceforge.net> 2.6
 - split dist and sign target (Makefile)
 - clean target also clean signed files

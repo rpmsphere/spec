@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:  A Lesstif-based graphical FTP client
 Name:  xmftp
@@ -31,6 +31,6 @@ install -Dm755 source/%{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Tue Jun 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 25 1998 David Jao <djao@dominia.mit.edu>
 - Initial package

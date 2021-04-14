@@ -105,7 +105,7 @@ EOF
 
 %changelog
 * Tue Apr 25 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.21
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.21-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
 * Sat May 02 2015 Kalev Lember <kalevlember@gmail.com> - 1.21-5

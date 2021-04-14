@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       flashqard  
 Summary:    An educational software to improve your learning process
@@ -57,6 +57,6 @@ install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %changelog 
 * Sun May 01 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 27 2009 Shahab <shahab@flashqard-project.org>
 - Initial RPM  

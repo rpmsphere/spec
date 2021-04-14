@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Oct 28 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.33mr33
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 21 2004 Karsten Hopp <karsten@redhat.de> 1.33mr33-11
 - update syntax patch for gcc-3.4
 * Tue Jun 15 2004 Elliot Lee <sopwith@redhat.com>

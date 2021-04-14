@@ -29,7 +29,7 @@ install -D -m 0755 devmem2 %{buildroot}%{_sbindir}/devmem2
 
 %changelog
 * Mon Apr 06 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May  5 2017 guillaume@opensuse.org
 - Add fix_usage_on_64_bits.patch to fix boo#1032032
   It updates the current devmem2.c file by the one provided by

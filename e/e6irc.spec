@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    e6irc
 Version: 0.6.7
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep  5 2011 Bernd Stramm <bernd.stramm@gmail.com> - 0.6.4 
 - fix bug in window size change detection
 * Thu Sep  1 2011 Bernd Stramm <bernd.stramm@gmail.com> - 0.6.3 

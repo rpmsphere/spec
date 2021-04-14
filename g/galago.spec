@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 02 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 15 2011 ahmad <ahmad> 0.5.2-11.mga1
 + Revision: 52032
 - drop old/unneeded scriptlets

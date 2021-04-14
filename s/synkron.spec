@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 15 2011 asterios.dramis@gmail.com
 - Update to version 1.6.2:
   * added Romanian translation

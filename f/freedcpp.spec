@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 29 2012 lazy.kent@opensuse.org
 - Initial package created - 0.0.5.
 - Patch to install icons to the right place.

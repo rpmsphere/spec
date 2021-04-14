@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Dec 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 29 2011 - realnc@gmail.com
 New upstream release: 2.1.2
 * Sun Feb 19 2011 - realnc@gmail.com

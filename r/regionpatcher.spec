@@ -31,7 +31,7 @@ install -Dpm 0755 regionpatcher %{buildroot}%{_bindir}/regionpatcher
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 27 2012 asterios.dramis@gmail.com
 - Spec file cleanup.
 * Sun Sep  4 2011 asterios.dramis@gmail.com

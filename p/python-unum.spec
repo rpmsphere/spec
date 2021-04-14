@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-unum
 Version:        4.1.1
 Release:        7.1
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jan 06 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 02 2011 scorot@gtt.fr
 - Correct package group
 * Fri Apr 01 2011 scorot@gtt.fr

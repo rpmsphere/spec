@@ -37,7 +37,7 @@ are available, which have to be filled with them.
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 06 2021 kekepower <kekepower> 1.2.2-1.mga9
 + Revision: 1700264
 - Update to version 1.2.2

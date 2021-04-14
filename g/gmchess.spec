@@ -72,7 +72,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.29.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 11 2009 Kami <kami@ossii.com.tw> 0.20-1.ossii
 - Rebuild practice
 * Wed Apr 29 2009 Feather Mountain <john@ossii.com.tw> 0.20-1.ossii

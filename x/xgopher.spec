@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: X based gopher client
 Name: xgopher
@@ -67,7 +67,7 @@ EOF
 
 %changelog
 * Tue Jan 28 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 12 1998 Jeff Johnson <jbj@redhat.com>
 - build root
 * Fri May 08 1998 Prospector System <bugs@redhat.com>

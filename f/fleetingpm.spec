@@ -51,7 +51,7 @@ done
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar  6 2012 lazy.kent@opensuse.org
 - Update to 2.7.1.
   * Fixed installation (sf#3452640).

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           polo
 Version:        18.8.3beta
@@ -45,6 +45,6 @@ make %{?_smp_mflags}
 
 %changelog
 * Fri Dec 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 18.8.3beta
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 30 2018 <grturner@5x5code.com> 18-1beta
 - Initial packaging

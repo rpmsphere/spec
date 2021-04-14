@@ -147,7 +147,7 @@ fi
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20050815
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 20050815-7
 - Autorebuild for GCC 4.3
@@ -283,7 +283,7 @@ fi
 - Added COPYING file to %%doc in files list (#115945)
 
 * Thu Jan 29 2004 Mike A. Harris <mharris@redhat.com> 20010520-28
-- Rebuild for Fedora Core 2
+- Rebuilt for Fedora Core 2
 
 * Mon Sep  1 2003 Mike A. Harris <mharris@redhat.com> 20010520-27
 - Rebuild 20010520-26 for Cambridge, for self hosting chocolatey goodness

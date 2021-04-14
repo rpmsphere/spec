@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: The fanciest program launcher whatsoever!
 Name: fancylauncher
@@ -36,6 +36,6 @@ cp -r FancyLauncher.gif help.html data plugins snapshots %{buildroot}%{_datadir}
 
 %changelog
 * Fri Apr 10 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 17 2000 Alexandre David <adavid@docs.uu.se>
 - Initial package

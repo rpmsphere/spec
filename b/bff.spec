@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           bff
 Version:        1.0.6
@@ -27,7 +27,7 @@ install -D -m 755 bff %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Mon Jun 01 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 18 2011 adam@mizerski.pl
 - update to 1.0.4
 - use gcc directly instead of make

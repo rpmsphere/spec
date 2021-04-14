@@ -61,6 +61,6 @@ convert src/TreClientVs6/tre.ico\[0\] %{buildroot}%{_datadir}/pixmaps/%{name}tux
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.4svn.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 21 2013 fa0sck@gmail.com
 - Build latest stable version for openSUSE (from svn)

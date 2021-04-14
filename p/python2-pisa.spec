@@ -51,7 +51,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Mon Jun 13 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.33
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 15 2010 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 3.0.33-2mamba
 - removed useless build requirements
 * Tue Oct 12 2010 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 3.0.33-1mamba

@@ -42,6 +42,6 @@ problems.
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 23 2010 pascal.bleser@opensuse.org
 - initial package (0.12)

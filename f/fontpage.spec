@@ -36,7 +36,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Thu Feb 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 21 2006 Pascal Bleser <guru@unixtech.be> 2.0-1
 - removed Packager and Distribution, injected by rpmmacros
 - new upstream version

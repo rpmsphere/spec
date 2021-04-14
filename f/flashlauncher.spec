@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           flashlauncher
 Version:        0.3
@@ -40,4 +40,4 @@ echo 'Categories=Game;Emulator;' >> %{buildroot}%{_datadir}/applications/%{name}
 
 %changelog
 * Sun Jan 06 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

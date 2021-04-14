@@ -33,7 +33,7 @@ install -m644 %{name}.1 %{buildroot}%{_mandir}/man1/%{name}-cat.1
 
 %changelog
 * Mon Feb 16 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 11 2014 Bernhard Rosenkraenzer <bero@bero.eu> 1.7-17
 + Revision: 9f26ea1
 - MassBuild#451: Increase release tag

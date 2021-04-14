@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: An X Window System version of the Sokoban puzzle game
 Name: xsok
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.02
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 24 2000 Prospector <prospector@redhat.com>
 - rebuilt
 * Mon Jul 24 2000 Than Ngo <than@redhat.de>

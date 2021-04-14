@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           everpad
 Version:        2.5.6
 Release:        6.1
@@ -48,6 +48,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 10 2013 Stefan Lohmaier <stefan.lohmaier@stefanlohmaier.de> - 2.5.6-1
 - Initial package

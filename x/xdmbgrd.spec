@@ -51,7 +51,7 @@ fi
 
 %changelog
 * Thu Sep 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Jan 12 2009 werner@suse.de
 - Detect SLES or openSuSE at run time (bnc#462280)

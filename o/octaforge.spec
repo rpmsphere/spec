@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           octaforge
 Version:        0.1.9alpha10
 Release:        1
@@ -75,6 +75,6 @@ chmod 644 ${RPM_BUILD_ROOT}%{_datadir}/applications/octaforge.desktop
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.9alpha10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 15 2012 Robert Wei <robert.wei@ossii.com.tw> 0.1.9alpha10-1
 - build RPM package for Fedora 17

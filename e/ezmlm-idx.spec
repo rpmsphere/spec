@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global ezcgi /var/www/cgi-bin
 %global rcdir /etc/ezmlm
 
@@ -192,4 +192,4 @@ echo file, section 7.
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 7.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

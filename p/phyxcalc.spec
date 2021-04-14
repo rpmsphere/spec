@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		phyxcalc
 BuildRequires:  qt4-devel gcc-c++ boost-devel qwt-devel
@@ -39,7 +39,7 @@ qmake-qt4
 
 %changelog
 * Tue Aug 26 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 3rev204
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 15 2012 Strahlex <mail.aroessler@gmail.com>
 - improved saving and modified status detection
 - added autosave

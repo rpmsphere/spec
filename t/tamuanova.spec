@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           tamuanova
 Version:        0.2
@@ -61,7 +61,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar  8 2012 aeszter@gwdg.de
 - set BuildRoot (required for CentOS)
 * Mon Mar  5 2012 aeszter@gwdg.de

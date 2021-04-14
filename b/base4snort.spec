@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define real_name base
 
 BuildArch:	noarch
@@ -52,6 +52,6 @@ sed "s@$RPM_BUILD_ROOT@@;/\/templates\/\|\.conf$/s@^@%config (noreplace) @" >> f
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 27 2010 joop.boonen@opensuse.org
 - Build version 1.4.5

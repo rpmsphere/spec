@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global pkgname	secure_delete
 
 Name:		secure-delete
@@ -36,7 +36,7 @@ make install \
 
 %changelog
 * Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 26 2014 david.david (MLO Team) <david.david> 3.1-3.mga4
 + Rebuild package for Mageia 4 (Core\MLO)
 - version: 3.1

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A space arcade game
 Name: starfighter
@@ -71,7 +71,7 @@ desktop-file-install \
 
 %changelog
 * Mon Jul 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 14 2007 Matthias Saou <http://freshrpms.net/> 1.1-9
 - Move binary and data to "proper" locations by updating patch (#229197).
 * Mon Aug 28 2006 Matthias Saou <http://freshrpms.net/> 1.1-8

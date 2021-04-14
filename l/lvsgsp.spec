@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          lvsgsp
 Version:       0.0.4
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 27 2007 Silvan Calarco <silvan.calarco@mambasoft.it> 0.0.4-2mamba
 - specfile fixes for openmamba
 * Thu Jun 17 2004 Silvan Calarco <silvan.calarco@qilinux.it> 0.0.4-1qilnx

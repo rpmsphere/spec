@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:	Interface description language used by DirectFB
 Summary(pl.UTF-8):	język opisu interfejsów używany przez DirectFB
 Name:		directfb-flux
@@ -39,7 +39,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %changelog
 * Thu Jan 02 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 19 2012 PLD Team <feedback@pld-linux.org>
 - Revision 1.5 2012/06/19 19:02:23 qboosh - updated to 1.4.1
 - Revision 1.4 2012/05/25 15:22:52 qboosh - updated to 1.3.0 (for DirectFB 1.4.17/1.6)

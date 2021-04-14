@@ -63,6 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jan 20 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.12.23
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 19 2011 badshah400@gmail.com
 - Initial package (version 2.12.23)

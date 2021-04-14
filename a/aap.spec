@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jun 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.094
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 1.091-2mdv2011.0
 + Revision: 609899
 - rebuild

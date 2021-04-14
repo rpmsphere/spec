@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define module epubmaker
 
 Name:           python-%{module}
@@ -40,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.19
-- Rebuild for Fedora
+- Rebuilt for Fedora

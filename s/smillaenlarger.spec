@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: smillaenlarger
 Summary: Graphical tool to resize bitmaps in high quality
@@ -50,6 +50,6 @@ sed -i -e 's|/usr/share/doc/smillaenlarger|%{_docdir}/%{name}-%{version}|g' \
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 11 2012 Sawa <sawa@ikoinoba.net> - 0.9.0
 - Initial package

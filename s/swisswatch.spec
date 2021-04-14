@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: swisswatch
 Summary: Swiss Railway Clock for the X Window System
@@ -37,4 +37,4 @@ make %{?_smp_mflags}
 
 %changelog
 * Wed Dec 11 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

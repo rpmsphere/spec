@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         advancemame
 Release:      8.1
@@ -46,7 +46,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep  8 2009 uli@suse.de
 - update -> 0.106.1
 - parallel build

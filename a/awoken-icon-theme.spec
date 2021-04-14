@@ -31,4 +31,4 @@ sed -i 's|Example=python|Example=folder|' %{buildroot}%{_datadir}/icons/%{theme_
 
 %changelog
 * Tue Mar 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -82,7 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 25 2014 pgajdos@suse.com
 - buildrequire liblcms-devel
 * Fri Mar  1 2013 cfarrell@suse.com

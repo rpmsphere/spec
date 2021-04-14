@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: An opensource particles simulation tool box
 Name: pyparticles
 Version: 0.3.5
@@ -41,4 +41,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

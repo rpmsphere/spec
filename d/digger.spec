@@ -83,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20020314
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 26 2010 Huan-Ting Luo <kylix.lo@ossii.com.tw> 20020314-4
 - add %%description of zh_TW
 - fix Exec within .desktop file

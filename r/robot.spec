@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
 
 Summary: A general purpose open-source plotting and data analysis program
@@ -48,4 +48,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Apr 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.92
-- Rebuild for Fedora
+- Rebuilt for Fedora

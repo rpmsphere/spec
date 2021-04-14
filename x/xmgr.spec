@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xmgr
 Version: 4.1.2
@@ -84,7 +84,7 @@ ln -sf %{_datadir}/xmgr/lib/libacegr_np.a \
 
 %changelog
 * Tue Jan 14 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 02 2011 Josko Plazonic <plazonic@math.princeton.edu>
 - rebuild for puias6
 * Fri Jan 05 2007 Josko Plazonic <plazonic@math.princeton.edu>

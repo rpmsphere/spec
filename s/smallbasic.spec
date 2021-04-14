@@ -38,6 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 19 2003 Kitt Tientanopajai <kitty@kitty.in.th>
 - Initial RPM release

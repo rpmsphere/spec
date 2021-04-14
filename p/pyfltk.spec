@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define tarname pyFltk
 
 Summary:	Python wrapper for the FLTK library
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 26 2012 fwang <fwang> 1.3.0-1.mga2
 + Revision: 202024
 - update doc list

@@ -211,6 +211,6 @@ OSMesa port of LDView for servers without X11
 
 %changelog
 * Tue May 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 4.2beta1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 14 2012 Peter Bartfai <pbartfai@stardust.hu>
 - Initial package

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           tecoc
 URL:            http://almy.us/teco.html
@@ -35,4 +35,4 @@ for f in inspect Make mung teco ; do ln -s %{name} $RPM_BUILD_ROOT%{_bindir}/$f 
 
 %changelog
 * Sun Nov 18 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0398
-- Rebuild for Fedora
+- Rebuilt for Fedora

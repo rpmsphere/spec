@@ -1,6 +1,6 @@
 %define sover   3
 %define mypyver 3
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           PythonQt
 Version:        3.2
@@ -89,7 +89,7 @@ qmake-qt5 \
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr  9 2020 Christophe Giboudeaux <christophe@krop.fr>
 - Spec cleanup. Use dos2unix
 - Update patches:

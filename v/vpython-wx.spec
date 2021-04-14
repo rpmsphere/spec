@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Name: vpython-wx
 Summary: Experimental version of VPython based on wxPython
 Version: 6.11
@@ -50,4 +51,4 @@ python2 setup.py install --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Thu Dec 31 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 6.11
-- Rebuild for Fedora
+- Rebuilt for Fedora

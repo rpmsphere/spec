@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		qtparted
 Version:	0.6.0
@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 17 2011 Bernhard Rosenkraenzer <bero@arklinux.org> 0.5.0-1ark
 - 0.5.0 final
 * Thu Feb  3 2011 Bernhard Rosenkraenzer <bero@arklinux.org> 0.5.0-0.263.1ark

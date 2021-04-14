@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       showifcfg
 Summary:    Show Ifconfig Utility
@@ -46,7 +46,7 @@ desktop-file-install --delete-original       \
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 10 2011 Bernd Stramm <bernd.stramm@gmail.com> - 0.2.0
 - use geuzen-qml-utils plugin instead of static .cpp
 * Tue Aug  9 2011 Bernd Stramm <bernd.stramm@gmail.com> - 0.1.2

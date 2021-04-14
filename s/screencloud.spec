@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           screencloud
 License:        GPL-2.0
@@ -50,7 +50,7 @@ ln -sf /opt/screencloud/screencloud.sh $RPM_BUILD_ROOT/usr/bin/screencloud
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 14 2015 Olav Sortland Thoresen <olav.s.th@gmail.com> - 1.2.0
 - Added screenshot editor
 - Fixed audio output sometimes crashing the application

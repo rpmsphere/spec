@@ -6,7 +6,6 @@ License: Source freely available, redistribution restricted
 Source: http://www.bmsc.washington.edu/raster3d/Raster3D_%{version}-2.tar.gz
 URL: http://www.bmsc.washington.edu/raster3d
 Group: Graphics
-BuildRoot:%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: gcc-gfortran gd-devel libtiff-devel
 
 %description
@@ -55,7 +54,6 @@ install -m755 Raster3D.{csh,sh} $RPM_BUILD_ROOT/%{_sysconfdir}/profile.d/
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr (-,root,root)
 %doc README CHANGELOG BUGS doc/R3D_manual.pdf VERSION
 %{_bindir}/*
 %{_mandir}/manl/*.l.*
@@ -107,7 +105,7 @@ fi
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 03 2011 Ethan Merritt <merritt@u.washington.edu>
 - release Raster3D-3.0-2 (dynamic array allocation; libgd support)
 * Tue Dec 19 2010 Ethan Merritt <merritt@u.washington.edu>

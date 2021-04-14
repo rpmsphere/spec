@@ -31,7 +31,7 @@ find %{buildroot}%{_datadir} -type d -exec chmod 755 {} \;
 
 %changelog
 * Thu Mar 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 0.1-8.mga5
 + Revision: 743441
 - Second Mageia 5 Mass Rebuild

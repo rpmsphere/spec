@@ -45,7 +45,7 @@ python3 setup.py install --prefix=/usr --root=%{buildroot}
 
 %changelog
 * Mon Oct 21 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug  2 2019 Todd R <toddrme2178@gmail.com>
 - Update to 0.16.1
   * Fix discrete colormap ordering (#1668)

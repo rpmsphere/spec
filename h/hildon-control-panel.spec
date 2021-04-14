@@ -44,4 +44,4 @@ sed -i 's|copa_ap_cp_name.*|Hildon control panel|' %{buildroot}%{_datadir}/appli
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

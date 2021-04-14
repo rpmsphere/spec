@@ -86,6 +86,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 07 2008 TI_Eugene <ti.eugene@gmail.com> 0.8.1
 - Initial build for openSUSE Build Service

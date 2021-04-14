@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: hcxtools
 Summary: Small set of tools convert packets from captures
@@ -41,5 +41,5 @@ install -m644 manpages/* %{buildroot}%{_mandir}/man1/
 
 %changelog
 * Thu Dec 12 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 

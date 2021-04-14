@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: scratch-plugins
 %define real_name  ScratchPluginSrc
 %define real_version 1.4.0Linux
@@ -60,7 +60,7 @@ install -Dm644 CameraPlugin/CameraPlugin-linux/CameraPlugin %buildroot%_libdir/s
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 28 2010 Anton A. Vinogradov <arc@altlinux.org> 1.4-alt0.3
 - spec cleanup
 * Wed Jan 27 2010 Anton A. Vinogradov <arc@altlinux.org> 1.4-alt0.2

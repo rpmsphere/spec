@@ -56,7 +56,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 26 2012 mseben@gmail.com
 - modify spec file to fix SLE_10 build
 * Sun Jan 16 2011 mseben@gmail.com

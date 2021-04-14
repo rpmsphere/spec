@@ -257,7 +257,7 @@ Programmer's Guide, the WFDB Applications Guide, and the WAVE User's Guide.
 
 %changelog
 * Mon Feb 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 10.5.24
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 12 2011 George B Moody <george@mit.edu>
 - install to /usr/local, added expat-devel dependency
 * Wed Oct 6 2010 George B Moody <george@mit.edu>

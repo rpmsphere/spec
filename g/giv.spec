@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %global __arch_install_post %{nil}
 
 Name:          giv
@@ -81,6 +81,6 @@ EOF
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.31
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 03 2009 gil <puntogil@libero.it> 0.9.14-1mamba
 - package created by autospec

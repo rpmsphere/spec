@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Unicode Text Editor
 Name:		yudit
@@ -109,7 +109,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 31 2009 J. Krebs <rpm_speedy@yahoo.com> - 2.9.0-2
   Added require for c++ (gcc-c++), patches.
 * Mon Dec 24 2007 J. Krebs <rpm_speedy@yahoo.com> - 2.9.0-1

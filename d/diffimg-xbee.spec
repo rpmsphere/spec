@@ -57,4 +57,4 @@ mv %{buildroot}%{_mandir}/man1/diffimg.1.gz %{buildroot}%{_mandir}/man1/diffimg-
 
 %changelog
 * Mon May 06 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

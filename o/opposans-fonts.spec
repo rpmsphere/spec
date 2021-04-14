@@ -39,4 +39,4 @@ install -Dm644 %{SOURCE2} $RPM_BUILD_ROOT%{_sysconfdir}/ghostscript/cidfmap.d/86
 
 %changelog
 * Mon Dec 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

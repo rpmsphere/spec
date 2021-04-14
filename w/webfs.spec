@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Simple http server for mostly static content
 Name: webfs
@@ -42,4 +42,4 @@ make prefix=$RPM_BUILD_ROOT%{_prefix} install
 
 %changelog
 * Mon Feb 10 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.21
-- Rebuild for Fedora
+- Rebuilt for Fedora

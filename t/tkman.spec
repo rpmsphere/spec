@@ -36,7 +36,7 @@ make DESTDIR=%buildroot install
 
 %changelog
 * Sun Apr 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 29 2009 max@suse.de
 - Fix a symlink vulnerability by adopting the respective Debian
   patch (bnc#538006, CVE-2008-5137).

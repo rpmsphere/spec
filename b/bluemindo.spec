@@ -48,7 +48,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sat Aug 03 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 25 2010 Yuri Myasoedov <omerta13@mandriva.org> 0.3-2mdv2011.0
 + Revision: 625104
 - Fixed typo error in "Requires" section

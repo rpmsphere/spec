@@ -35,4 +35,4 @@ install -m644 *.ttf %{buildroot}%{_datadir}/fonts/naikai
 
 %changelog
 * Tue Apr 28 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.31
-- Rebuild for Fedora
+- Rebuilt for Fedora

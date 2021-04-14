@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 BuildRequires:  gcc-c++ SDL-devel SDL_image-devel SDL_ttf-devel SDL_mixer-devel
 Name:           2h4u
@@ -57,7 +57,7 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 20 2009 Wind <yc.yan@ossii.com.tw>
 - Rebuild for OSSII.
 - Add desktop and icon file.

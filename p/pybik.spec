@@ -66,6 +66,6 @@ sed -i 's|%{buildroot}||' %{buildroot}%{python3_sitearch}/pybiklib/config.py
 
 %changelog
 * Mon Nov 27 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 02 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2.1-3
 - (8ea10d4) MassBuild#1273: Increase release tag

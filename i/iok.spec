@@ -54,7 +54,7 @@ desktop-file-install \
 
 %changelog
 * Mon Jul 20 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Feb 01 2019 Fedora Release Engineering <releng@fedoraproject.org> - 2.1.3-18
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild

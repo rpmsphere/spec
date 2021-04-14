@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon May 18 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 18 2014 Bryan Seitz <seitz@ghettoforge.org> - 1.1.1-12
 - Import into GhettoForge
 * Thu Jan 17 2013 Manuel Wolfshant <wolfy@fedoraproject.org> - 1.1.1-12

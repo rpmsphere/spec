@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: A simplified version of David Posada's Modeltest
 Name: mrmodeltest
@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 22 2005 Cymon Cox <cymon@duke.edu>
 - Updated to version 2.2
 * Fri Dec 10 2004 Cymon Cox <cymon@duke.edu>

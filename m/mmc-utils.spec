@@ -30,6 +30,6 @@ install -Dm644 man/mmc.1 %{buildroot}%{_mandir}/man1/mmc.1
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 20191004
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 25 2014 mpluskal@suse.com
 - Initial packaging of current git snapshot (20140812)

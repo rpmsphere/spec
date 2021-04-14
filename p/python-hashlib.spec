@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-hashlib
 Summary:        Python secure hash and message digest module
 %define tarname hashlib
@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20060408a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 10 2008 milochen <milo_chen@mail2000.com.tw>
 - initial ossii package
 * Tue Mar  4 2008 bwalle@suse.de

@@ -49,4 +49,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2005
-- Rebuild for Fedora
+- Rebuilt for Fedora

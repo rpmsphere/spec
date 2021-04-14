@@ -36,7 +36,7 @@ export CFLAGS="%{optflags} -pthread"
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 13 2018 semiletov <semiletov> 2.0.2-1.mga7
   (not released yet)
 + Revision: 1243451

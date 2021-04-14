@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20160804
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 02 2007 Satoshi IWAMOTO <satoshi.iwamoto@nifty.ne.jp>
 - new upstream release 0.30
 * Thu Sep 15 2005 Satoshi IWAMOTO <satoshi.iwamoto@nifty.ne.jp>

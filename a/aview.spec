@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Mar 16 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.0rc1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 24 2000 Prospector <prospector@redhat.com>
 - rebuilt
 * Sat Jul 22 2000 Tim Powers <timp@redhat.com>

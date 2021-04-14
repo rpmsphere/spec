@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       vertex
 Version:    0.1.16
@@ -73,7 +73,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Feb 10 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.16
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 0.1.16-4
 + Revision: 42205eb
 - MassBuild#464: Increase release tag

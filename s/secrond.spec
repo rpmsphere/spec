@@ -57,6 +57,6 @@ mv -f /etc/secrond/schedule /etc/secrond/schedule.rpmoves
 
 %Changelog
 * Tue May 22 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.41
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 27 2011 Baron. Wan <baron.wan@ossii.com.tw> - 0.41-2.ox2
 - create .spec file, and debug it.

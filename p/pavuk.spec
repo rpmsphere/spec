@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 13 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.35
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 27 2014 crrodriguez@opensuse.org
 - pavuk-nossl2.patch: fix build without SSLv2
 - pavuk-bugs.patch previous patch was not enough to make it

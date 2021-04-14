@@ -57,6 +57,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Fri Jan 03 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10.49
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 09 2012 cyberbeat
-- Rebuild for Fedora
+- Rebuilt for Fedora

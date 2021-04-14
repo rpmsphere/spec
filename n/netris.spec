@@ -41,7 +41,7 @@ install -pD -m 644 %SOURCE2 %buildroot%_mandir/man6/%name.6
 
 %changelog
 * Wed Jun 03 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.52
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 19 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 0.52-alt5.2.qa1
 - NMU: rebuilt for updated dependencies.
 * Sat Apr 23 2011 Igor Vlasenko <viy@altlinux.ru> 0.52-alt5.2

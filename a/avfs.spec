@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 06 2008 J. Krebs <rpm_speedy@yahoo.com> - 0.9.8-2
 - Added libdir to configure for build under x86_64.
 * Sat Nov 10 2007 J. Krebs <rpm_speedy@yahoo.com> - 0.9.8-1

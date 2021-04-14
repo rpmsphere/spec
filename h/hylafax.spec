@@ -293,7 +293,7 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 28 2011 pth@suse.de
 - Remove the -o option from call of hylafax in init script (bnc#632586).
 - Remove the useless version dependency of the patches.

@@ -38,7 +38,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Aug 01 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb  9 2011 vuntz@opensuse.org
 - New package, containing a dynamic wallpaper based on the Tennebon
   set of wallpapers (see bnc#358461).

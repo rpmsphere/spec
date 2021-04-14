@@ -48,7 +48,7 @@ desktop-file-install --vendor="" \
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 29 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.9.0-1
 + Revision: 801027
 - imported package sentinella

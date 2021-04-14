@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          ftjam
 Version:       2.5.2
@@ -43,6 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 06 2007 Silvan Calarco <silvan.calarco@mambasoft.it> 2.5.2-1mamba
 - package created by autospec

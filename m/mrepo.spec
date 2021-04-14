@@ -98,7 +98,7 @@ fi
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 08 2016 umeabot <umeabot> 0.8.7-4.mga6
 + Revision: 944063
 - Mageia 6 Mass Rebuild

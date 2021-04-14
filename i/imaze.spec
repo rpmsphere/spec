@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:         imaze
 Release:      15.1
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/packages
 
 %changelog
 * Sun Mar 24 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 07 2013 - rfno@fietze-home.de
 - update to openSUSE 11.3
 - using g++ and C++0x

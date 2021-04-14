@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		dooble
 Version:	2.1.9.4
@@ -55,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Dec 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.9.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec  5 2011 Bernd Stramm <bernd.stramm@gmail.com> - 1.26
 - rpm packaging

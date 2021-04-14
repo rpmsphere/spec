@@ -77,7 +77,7 @@ chmod -x %{buildroot}%{_datadir}/%{name}/images/paper/*.xml
 
 %changelog
 * Sat Aug 16 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 15 2014 alexl <alexl> 0.0.4-5.mga5
 + Revision: 662713
 - updated Russian translation

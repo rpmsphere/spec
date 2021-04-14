@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 25 2003 Abel Cheung <deaddog@deaddog.org> 0.7.5-1mdk
 - First Mandrake package

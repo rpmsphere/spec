@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Cuberok audio player
 Name:		cuberok
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0.rev434
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 05 2011 Petr Vanek <petr@scribus.info> - 0.1.0
 - suse fixes
 * Fri Jan 07 2011 TI_Eugene <ti.eugene@gmail.com>

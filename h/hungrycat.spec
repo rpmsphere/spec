@@ -40,7 +40,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Wed Apr 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 13 2010 pascal.bleser@opensuse.org
 - update to 0.2:
   * error handling was improved

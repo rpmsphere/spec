@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Qt XG Editor
 Name:		qxgedit
@@ -47,7 +47,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 21 2015 Rui Nuno Capela <rncbc@rncbc.org> 0.3.0
 - Summer'15 release frenzy.
 * Wed Mar  4 2015 Rui Nuno Capela <rncbc@rncbc.org> 0.2.0

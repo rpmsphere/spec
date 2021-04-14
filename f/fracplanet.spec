@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: fracplanet
 Version: 0.4.0
@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Mar 06 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 22 2007 Peter Hanecak <hany@hany.sk> 0.3.3-1
 - update to 0.3.3
 - added %%{?dist} into spec

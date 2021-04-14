@@ -41,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 02 2008 Fabian Affolter <fabian@bernewireless.net> - 2.2-1
 - Initial package for Fedora

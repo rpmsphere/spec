@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Emulate keyboard or mouse actions with a joystick
 Name:		qjoypad
@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 16 2011 anssi <anssi> 4.1.0-4.mga1
 + Revision: 20176
 - remove old scripts

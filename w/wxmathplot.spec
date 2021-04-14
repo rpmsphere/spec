@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: wxmathplot
 Version: 0.1.2
@@ -52,4 +52,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

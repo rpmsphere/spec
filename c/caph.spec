@@ -66,7 +66,7 @@ install -m755 -D %name.sh %buildroot%_bindir/%name
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 04 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 1.1-alt1.1
 - Rebuilt with libpng15
 * Fri Dec 24 2010 Fr. Br. George <george@altlinux.ru> 1.1-alt1

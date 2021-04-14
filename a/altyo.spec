@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:	altyo
 Version: 0.4rc24
@@ -41,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Aug 24 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4rc24
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 19 2013 slick50 <lxgator at gmail.com> 0.3-1pclos2013
 - Create pkg

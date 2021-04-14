@@ -51,7 +51,7 @@ qmake-qt4 %{name}.pro
 
 %changelog
 * Mon Feb 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 17 2010 - mweckbecker@suse.de
 - suse_update_desktop_file added
 * Thu Jun 19 2009 - mweckbecker@suse.de

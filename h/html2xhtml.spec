@@ -17,6 +17,7 @@ output. The output document type can be selected among several XHTML DTDs (1.0, 
 %setup -q
 
 %build
+autoreconf -ifv
 ./configure --prefix=/usr
 make
 
@@ -34,6 +35,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 31 2010 Gene <gene.hsu@ossii.com.tw>
 - build the program

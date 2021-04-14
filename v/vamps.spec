@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:          vamps
 Version:       0.99.2
@@ -33,7 +33,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 27 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 0.99.2-1mamba
 - update to 0.99.2
 * Wed May 07 2008 Tiziana Ferro <tiziana.ferro@email.it> 0.99-1mamba

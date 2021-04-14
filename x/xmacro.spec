@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		xmacro
 Group: 		Development/Languages
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Nov 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3pre
-- Rebuild for Fedora                                  
+- Rebuilt for Fedora                                  
 * Sat Dec 27 2008 Dmitry Stropaloff <helions8@gmail.com>
 - Initial release
 - Various changes in source code

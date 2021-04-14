@@ -97,6 +97,6 @@ echo "applications only.  Run \"xvnkb\" to control status."
 
 %changelog
 * Wed Dec 17 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 14 2006 LandShark BuildSys <BuildSys[AT]LandShark.Net>
 - Initial CentOS 4 build.

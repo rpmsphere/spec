@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           ipsvd
 Version:        0.13.0
@@ -68,7 +68,7 @@ done
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep  6 2007 mrueckert@suse.de
 - update to 0.13.0
 * Sun Sep  3 2006 mrueckert@suse.de

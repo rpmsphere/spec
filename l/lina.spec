@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
 
 Name: lina
@@ -55,4 +55,4 @@ rm -f /usr/bin/%{name} /usr/lib/%{name}
 
 %changelog
 * Fri Aug 16 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

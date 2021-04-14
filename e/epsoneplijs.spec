@@ -84,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jul 26 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Feb 23 2011 ennael <ennael> 0.4.1-5.mga1
 + Revision: 57983

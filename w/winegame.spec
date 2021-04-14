@@ -35,7 +35,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 23 2012 jengelh@medozas.de
 - Strip redundant sections/tags
 - SPDX license field

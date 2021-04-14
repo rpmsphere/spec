@@ -305,7 +305,7 @@ exit 0
 
 %changelog
 * Thu Jul 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Feb 10 2017 Fedora Release Engineering <releng@fedoraproject.org> - 3.4.2-10
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild

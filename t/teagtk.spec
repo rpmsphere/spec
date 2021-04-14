@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	A simple-in-use GTK-based text editor
 Name:		teagtk
@@ -49,7 +49,7 @@ EOF
 
 %changelog
 * Mon Apr 25 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 18.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 20 2009 Thierry Vignaud <tvignaud@mandriva.com> 0:17.6.6-2mdv2010.0
 + Revision: 445388
 - rebuild

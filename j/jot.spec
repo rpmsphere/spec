@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: jot
 Version: 11.1
@@ -39,7 +39,7 @@ install %name.1 %buildroot%_mandir/man1
 
 %changelog
 * Fri Apr 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 11.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 18 2015 Fr. Br. George <george@altlinux.ru> 10.2-alt1
 - Autobuild version bump to 10.2
 * Wed Oct 22 2014 Fr. Br. George <george@altlinux.ru> 10.1-alt1

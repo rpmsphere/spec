@@ -58,7 +58,7 @@ X.Org X11 mouse input driver development files.
 
 %changelog
 * Fri Jan 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Fri Jan 27 2017 Peter Hutterer <peter.hutterer@redhat.com> 1.9.2-1
 - xf86-input-mouse 1.9.2 (#1401648)

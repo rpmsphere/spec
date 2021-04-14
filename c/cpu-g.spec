@@ -57,7 +57,7 @@ install -m644 data/icons/cpu-g_192.png %buildroot%_datadir/pixmaps/%name.png
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 11 2020 Motsyo Gennadi <drool@altlinux.ru> 0.16.2-alt1
 - 0.16.2
 * Thu Mar 31 2016 Motsyo Gennadi <drool@altlinux.ru> 0.9.0-alt1

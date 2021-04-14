@@ -64,7 +64,7 @@ useradd -g ntp -s /sbin/nologin -d /var/lib/ntp -c 'OpenNTP daemon' ntp 2> /dev/
 
 %changelog
 * Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2p3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug  7 2007 crrodriguez@suse.de
 - add missing fillup and innserv call
 * Tue Sep 19 2006 dmueller@suse.de

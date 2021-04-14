@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           pam_dbus_launch
 BuildRequires:  gcc-c++ pam-devel libselinux-devel cmake glib2-devel
@@ -33,6 +33,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 14 2011 admin@eregion.de
 -  0.1: initial package

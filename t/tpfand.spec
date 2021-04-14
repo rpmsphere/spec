@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:			tpfand
 Version:		0.94
 Release:		11.1
@@ -64,6 +64,6 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_sbindir}/* %{bu
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.94
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 22 2009 Pascal Bleser <pascal.bleser@opensuse.org> 0.94
 - new package

@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 26 2007 anicka@suse.cz
 - fix for gcc 4.3
 * Tue May 29 2007 anosek@suse.cz

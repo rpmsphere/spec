@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           python-yowsup
 Version:        2.3.124
 Release:        4.1
@@ -39,4 +39,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Jul 14 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.124
-- Rebuild for Fedora
+- Rebuilt for Fedora

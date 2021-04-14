@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define __os_install_post %{nil}
 %define _name sdlBasic
 
@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Dec 31 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2012.12.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 10 2006 Emmanuel Andry <eandry@mandriva.org> 20040425-2mdv2007.0
 + Revision: 94397
 - Rebuild to fix missing requires

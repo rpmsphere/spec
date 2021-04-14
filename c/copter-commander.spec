@@ -76,7 +76,7 @@ EOF
 
 %changelog
 * Tue Feb 10 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 1.8-12
 + Revision: e6c6107
 - MassBuild#464: Increase release tag

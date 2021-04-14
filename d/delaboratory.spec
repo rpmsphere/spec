@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:               delaboratory
 Version:            0.8
@@ -53,6 +53,6 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Mon Jan 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep  4 2011 pascal.bleser@opensuse.org
 - initial version (0.4)

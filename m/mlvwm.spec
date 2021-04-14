@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Macintosh-like Virtual Window Manager
 Name: mlvwm
@@ -9,6 +9,7 @@ Group: User Interface/X
 Source0: http://www2u.biglobe.ne.jp/~y-miyata/mlvwm/mlvwm091.tar.gz
 Source1: http://www2u.biglobe.ne.jp/~y-miyata/mlvwm/mini-icons.tar.gz
 URL: http://www2u.biglobe.ne.jp/~y-miyata/mlvwm.html
+#URL: https://sourceforge.net/projects/mazewm/
 BuildRequires: imake
 BuildRequires: libXext-devel
 BuildRequires: libXpm-devel
@@ -54,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Dec 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

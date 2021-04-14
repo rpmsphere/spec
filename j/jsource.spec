@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: J engine source mirror
 Name: jsource
@@ -45,4 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 21 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 9.03.beta
-- Rebuild for Fedora
+- Rebuilt for Fedora

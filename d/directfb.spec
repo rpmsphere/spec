@@ -236,7 +236,7 @@ install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 
 %changelog
 * Thu Jan 02 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 18 2013 Adam Tkac <atkac redhat com> - 1.6.2-3
 - rebuild due to "jpeg8-ABI" feature drop
 * Fri Dec 21 2012 Adam Tkac <atkac redhat com> - 1.6.2-2

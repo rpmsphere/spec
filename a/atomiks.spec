@@ -1,6 +1,6 @@
 # This should be pushed to nonfree because atomiks reuses the level design and graphics
 # of the original Atomix game (with permission of the authors but not under a FLOSS license).
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           atomiks
 Version:        1.0.4.1

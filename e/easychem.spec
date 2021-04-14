@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: 	 	easychem
 Summary: 	2D molecular drawing program
@@ -53,7 +53,7 @@ install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Sun Dec 30 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 08 2012 fwang <fwang> 0.6-7.mga3
 + Revision: 328046
 - apply patch

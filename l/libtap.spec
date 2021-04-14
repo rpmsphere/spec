@@ -54,6 +54,6 @@ rm -rf %buildroot
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.01
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 15 2008 lrupp@suse.de
 - initial version 1.01

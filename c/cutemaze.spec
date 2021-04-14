@@ -42,7 +42,7 @@ have been picked up.
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 20 2016 akien <akien> 1.2.0-1.mga6
 + Revision: 1062586
 - Version 1.2.0

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           biniax2
 Version:        1.2
@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec  4 2008 milochen <milo_chen@mail2000.com.tw> - 1.2-1.ossii
 - initial ossii package

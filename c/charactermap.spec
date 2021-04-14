@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: charactermap
 Version: 4.3.2
 Release: 1
@@ -50,4 +50,4 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 4.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -85,7 +85,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 08 2017 Mario Blättermann <mario.blaettermann@gmail.com> - 1.3.4-1
 - New upstream version
 * Thu Aug 03 2017 Fedora Release Engineering <releng@fedoraproject.org> - 1.3.3-4

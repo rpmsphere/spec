@@ -51,6 +51,6 @@ done
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 13 2010 pascal.bleser@opensuse.org
 - initial package (1.0.8)

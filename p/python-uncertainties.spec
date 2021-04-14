@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 %define pyname uncertainties
 
 Name:           python-uncertainties
@@ -47,7 +48,7 @@ python setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
 %changelog
 * Wed Jan 17 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec  4 2011 ocefpaf@gmail.com
 - updated to revision 418
 * Sat Oct 29 2011 ocefpaf@gmail.com

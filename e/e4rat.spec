@@ -63,7 +63,7 @@ mkdir -p %buildroot/var/lib/e4rat
 
 %changelog
 * Wed Feb 12 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 16 2018 wally <wally> 0.2.3-26.mga7
 + Revision: 1321024
 - rebuild for new boost 1.68.0

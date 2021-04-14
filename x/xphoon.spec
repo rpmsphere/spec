@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Phase of moon for X11
 Name: xphoon
@@ -33,4 +33,4 @@ make DESTDIR=%{buildroot} install install.man
 
 %changelog
 * Tue Dec 26 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2014.08.14
-- Rebuild for Fedora
+- Rebuilt for Fedora

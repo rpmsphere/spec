@@ -137,7 +137,7 @@ popd
 
 %changelog
 * Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.16
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 28 2014 eatdirt <eatdirt> 2.16-10.mga5
 + Revision: 597730
 - Rebuild for new cfitsio

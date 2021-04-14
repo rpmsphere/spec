@@ -34,7 +34,7 @@ cp /usr/share/automake-*/config.guess .
 
 %changelog
 * Wed Mar 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.02
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 25 2008 - cmorve69@yahoo.es
 - updated data file (mantains 1.02 version)
 * Tue Jan 29 2008 - cmorve69@yahoo.es

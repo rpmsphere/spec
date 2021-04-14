@@ -94,7 +94,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/domterm.desktop %{bui
 
 %changelog
 * Wed Jul 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 26 2018 Per Bothner <per@bothner.com> - 1.0-1
 - Update for DomTerm 1.0
 * Thu Mar 15 2018 Per Bothner <per@bothner.com> - 0.99-1

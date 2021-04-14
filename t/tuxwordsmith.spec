@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define pkg_name TuxWordSmith
 
 Name:		tuxwordsmith
@@ -77,7 +77,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 08 2008 Feather Mountain <john@ossii.com.tw>
 - Rebuild for M6(OSSII)
 * Wed Nov  5 2008 lars@linux-schulserver.de

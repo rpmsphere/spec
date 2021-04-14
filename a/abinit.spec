@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Dec 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 8.10.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 17 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 6.0.4-alt1.qa1
 - NMU: rebuilt for debuginfo.
 * Tue Jun 01 2010 Ilya Mashkin <oddity@altlinux.ru> 6.0.4-alt1

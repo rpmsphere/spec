@@ -90,7 +90,7 @@ make %{?_smp_mflags} all
 
 %changelog
 * Wed Dec 20 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 15 2017 pousaduarte@gmail.com
 - specfile cleanup
 * Sun Feb 12 2017 pousaduarte@gmail.com

@@ -87,6 +87,6 @@ install -m 0644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/%{_fontdir}
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 26 2011 lazy.kent@opensuse.org
 - Initial package created - 0.2.1

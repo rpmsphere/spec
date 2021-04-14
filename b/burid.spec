@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:    burid
 Version: 0.0.8
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul  6 2011 Bernd Stramm <bernd.stramm@gmail.com> - 0.0.8-2
 - remove Behaviour to fix rendering artifacts
 * Thu Jun  2 2011 Bernd Stramm <bernd.stramm@gmail.com> - 0.0.7-1

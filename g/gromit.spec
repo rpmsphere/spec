@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define name gromit
 %define cvs 20041213
 %define version 0.20041213
@@ -49,7 +49,7 @@ sed -i 's|-Wall|-Wall -lX11 -lm|' Makefile
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0-20041213.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 25 2007 Götz Waschk <waschk@mandriva.org> 0-20041213.2mdv2008.0
 + Revision: 55231
 - Import gromit

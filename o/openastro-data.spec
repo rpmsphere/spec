@@ -30,6 +30,6 @@ Data for the open source astrology program.
 
 %changelog
 * Mon Sep 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 11 2016 Jens Petersen <petersen@redhat.com>
 - Initial package

@@ -46,7 +46,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 6.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Mar 14 2015 nemysis@gmx.ch
 - Remove obsolete patch ski-6.8-Makefile.patch, Upstream have
   accepted changes

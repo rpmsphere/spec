@@ -34,4 +34,4 @@ cp -a theme/* %{SOURCE2} %buildroot%_datadir/themes/%theme_name
 
 %changelog
 * Thu Sep 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20150203
-- Rebuild for Fedora
+- Rebuilt for Fedora

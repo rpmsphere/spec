@@ -71,7 +71,7 @@ cp -p %{SOURCE1} $RPM_BUILD_ROOT/%{emacs_startdir}
 
 %changelog
 * Thu Oct 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 26 2018 My Karlsson <mk@acc.umu.se> - 0:0.9.9-18
 - Build with python as /usr/bin/python2 (rhbz#1603306)
 * Thu Jul 12 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0:0.9.9-17

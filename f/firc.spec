@@ -30,4 +30,4 @@ make install DESTDIR=%{buildroot}/usr
 
 %changelog
 * Sat Feb 08 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.34
-- Rebuild for Fedora
+- Rebuilt for Fedora

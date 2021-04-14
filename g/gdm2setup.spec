@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Apr 21 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 29 2010 nmo.marques@gmail.com
 - gdm2setup (0.5.3)
   + Initial packaging

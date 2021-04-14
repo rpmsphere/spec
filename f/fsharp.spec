@@ -61,7 +61,7 @@ rm -rf ${RPM_BUILD_ROOT}%{_prefix}/lib/mono/xbuild
 
 %changelog
 * Tue Jan 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 10 2015 idonmez@suse.com
 - Update to version 4.0.1.1
   * No changelog upstream

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: FlightGear Launcher
 Name: fgx
@@ -45,7 +45,7 @@ install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/FGx.desktop
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 28 2011 thorstenb@flightgear.org
 - Updated setup
 * Fri Jul 29 2011 Daniel Zucchetto

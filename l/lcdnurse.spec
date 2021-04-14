@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: lcdnurse
 Summary: LCD Nurse
@@ -35,4 +35,4 @@ make %{?_smp_mflags} CXXFLAGS+="-fPIC"
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

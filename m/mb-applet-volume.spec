@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: 	Volume control for the Matchbox Desktop
 Name: 		mb-applet-volume
 Version: 	0.2
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.2-5mdv2011.0
 + Revision: 620304
 - the mass rebuild of 2010.0 packages

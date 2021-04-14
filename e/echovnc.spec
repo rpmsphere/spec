@@ -53,6 +53,6 @@ CXXFLAGS="$RPM_OPT_FLAGS -std=c++11 -Wno-narrowing" \
 
 %changelog
 * Thu Mar 10 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 03 2009 -  <chris@computersalat.de> - 1.1.2
 - initial build

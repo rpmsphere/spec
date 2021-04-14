@@ -43,7 +43,7 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 22 2012 asterios.dramis@gmail.com
 - Fix desktop file Exec= entry (change QtGain to qtgain).
 * Sat Jul 28 2012 asterios.dramis@gmail.com

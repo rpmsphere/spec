@@ -35,7 +35,7 @@ install -pD -m755 netwmpager %buildroot%_bindir
 
 %changelog
 * Mon Mar 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.04
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 19 2012 Igor Zubkov <icesik@altlinux.org> 2.04-alt1
 - 1.11 -> 2.04
 - Update Url

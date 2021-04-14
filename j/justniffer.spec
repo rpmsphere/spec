@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Oct 18 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 12 2013 josef radinger <cheese@nosuchhost.net> - 0.5.11-2
 - fix boost on 64bit-archs
 * Tue Feb 12 2013 josef radinger <cheese@nosuchhost.net> - 0.5.11-1

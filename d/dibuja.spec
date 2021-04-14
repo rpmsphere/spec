@@ -34,7 +34,7 @@ Dibuja is a program for quick small editing and drawing.
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.21.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 02 2017 Yuri N. Sedunov <aris@altlinux.org> 0.4.0-alt1
 - 0.4.0
 * Thu Jun 16 2016 Yuri N. Sedunov <aris@altlinux.org> 0.2.1-alt2

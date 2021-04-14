@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:		A simple yet powerful multi-track studio
 Name:			jokosher
 Version:		0.11.5
@@ -119,7 +119,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name} %{b
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 02 2010 Toni Graffy <toni@links2linux.de> - 0.11.5-0.pm.1
 - update to 0.11.5
 * Wed Dec 08 2009 Toni Graffy <toni@links2linux.de> - 0.11.3-0.pm.1

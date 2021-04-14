@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:       	cobras
 Version:    	0.18
@@ -51,4 +51,4 @@ install -Dm644 img/%{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Thu Feb 06 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18
-- Rebuild for Fedora
+- Rebuilt for Fedora

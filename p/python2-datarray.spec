@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Dec 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 15 2011 ocefpaf@yahoo.com.br
 - updated to release 151
 * Thu Jun  2 2011 ocefpaf@yahoo.com.br

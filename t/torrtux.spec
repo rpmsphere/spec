@@ -44,4 +44,4 @@ cp .torrtuxrc %{buildroot}%{_datadir}/doc/%{name}-%{version}/torrtuxrc
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

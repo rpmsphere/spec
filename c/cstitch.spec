@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		cstitch
 Summary:	A free and open source program for creating cross stitch patterns from images
@@ -45,4 +45,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Aug 22 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.8
-- Rebuild for Fedora
+- Rebuilt for Fedora

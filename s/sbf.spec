@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: sbf
 Summary: A program for brainfuck
@@ -16,7 +16,7 @@ the brainfuck programming language.
 
 %prep
 %setup -q -n %{name}
-sed -i -e 's|dylib|so|' -e 's|"i386"|*86*|' -e 's|$binary|%{buildroot}%{_bindir}|' -e 's|$manpage|%{buildroot}%{_datadir}/man|' -e 's|-02|-O2|' configure
+sed -i -e 's|dylib|so|' -e 's|"i386"|*6*|' -e 's|$binary|%{buildroot}%{_bindir}|' -e 's|$manpage|%{buildroot}%{_datadir}/man|' -e 's|-02|-O2|' configure
 
 %build
 %configure
@@ -34,4 +34,4 @@ make install
 
 %changelog
 * Sun Mar 3 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -39,6 +39,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 05 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep  6 2011 Percy Lau <percy.lau@gmail.com> 0.1.0
 - package for openSUSE

@@ -34,7 +34,7 @@ cp -a ? %{buildroot}%{_datadir}/stardict/WyabdcRealPeopleTTS
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 11 2010 kirill.kirillov@gmail.com
 - Initial build of Wyabdc RealPeople TTS 2.1.0 sounds using spec
   by Lars Vogdt

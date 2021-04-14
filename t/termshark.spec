@@ -36,4 +36,4 @@ install -Dm0755 cmd/%{name}/%{name} %{buildroot}%{_bindir}
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

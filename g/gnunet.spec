@@ -107,7 +107,7 @@ userdel gnunetd ||:
 
 %changelog
 * Mon Sep 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 16 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.9.1-2mdv2012.0
 + Revision: 761718
 - spec cleanup

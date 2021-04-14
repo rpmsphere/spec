@@ -94,7 +94,7 @@ EOF
 
 %changelog
 * Sun Jan 06 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.36
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 01 2008 Toni Graffy <toni@links2linux.de> - 0.36-0.pm.1
 - update to 0.36
 * Fri Sep 28 2007 Toni Graffy <toni@links2linux.de> - 0.35-0.pm.1

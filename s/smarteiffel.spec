@@ -18,7 +18,7 @@ genericity, polymorphism, and encapsulation.  Eiffels unique feature
 is Design By Contract, which increases the reusability and reliability
 of program modules.
 
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 %prep
 %setup -q -n SmartEiffel
@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Sep 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan  6 2008 Gerard Milmeister <gemi@bluewin.ch> - 2.3-2
 - added buildreq libX11-devel
 * Sat Jan  5 2008 Gerard Milmeister <gemi@bluewin.ch> - 2.3-1

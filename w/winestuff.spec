@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 19 2012 toddrme2178@gmail.com
 - Added 32bit compatibility package (needed to use winegame on 64bit systems)
 - Cleaned up spec file formatting

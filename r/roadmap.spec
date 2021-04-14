@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		roadmap
 Version:	1.2.1
@@ -67,7 +67,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 15 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.2.1-3mdv2010.0
 + Revision: 442804
 - drop tautologic references to README in package description

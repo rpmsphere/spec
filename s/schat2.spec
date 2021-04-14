@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		schat2
 Version:	2.3.3
@@ -52,4 +52,4 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

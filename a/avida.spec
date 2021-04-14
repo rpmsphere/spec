@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: avida
 Summary: Digital Life Platform
@@ -49,4 +49,4 @@ install -m755 libs/apto/lib/* libs/tcmalloc-1.4/lib/* %{buildroot}%{_libdir}
 
 %changelog
 * Sun Jan 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.12.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

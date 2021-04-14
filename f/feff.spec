@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 24 2012 - joerg.lorenzen@ki.tng.de
 - update to version 1.9.1
 * Sat Jun 23 2012 - joerg.lorenzen@ki.tng.de

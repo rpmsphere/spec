@@ -71,6 +71,6 @@ desktop-file-install --vendor="" \
 
 %changelog
 * Fri Jan 17 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jul 02 2019 tex - 5.12-1pclos2019
 - new version

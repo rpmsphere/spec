@@ -3,7 +3,7 @@
 Summary:	Compatible package using giflib
 Name:		libungif-compat
 Version:	%{giflib_ver}
-Release:	1.1
+Release:	1
 License:	MIT
 Group:		System Environment/Libraries
 URL:		http://www.sourceforge.net/projects/giflib/
@@ -48,5 +48,5 @@ ln -sf libungif.so.4 $RPM_BUILD_ROOT%{_libdir}/libungif.so
 %{_libdir}/lib*.so
 
 %changelog
-* Mon Jul 23 2018 Huaren Zhong <huaren.zhong@gmail.com> 5.1.4
-- Rebuild for Fedora
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2.1
+- Rebuilt for Fedora

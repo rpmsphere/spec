@@ -77,7 +77,7 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20040315
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 22 2008 Wind <yc.yan@ossii.com.tw>
 - Rebuild for OSSII.
 * Thu Mar 29 2007 sndirsch@suse.de

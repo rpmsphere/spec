@@ -35,7 +35,7 @@ make
 
 %changelog
 * Mon Feb 22 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 20 2016 umeabot <umeabot> 3.0.1-2.mga6
 + Revision: 972472
 - Mageia 6 Mass Rebuild

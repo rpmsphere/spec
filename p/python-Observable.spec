@@ -1,3 +1,4 @@
+%define __python /usr/bin/python2
 Summary: A reusable implementation of the Observer/Observable pattern in Python
 Name: python-Observable
 Version: 0.1.0
@@ -32,4 +33,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

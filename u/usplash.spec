@@ -88,7 +88,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.19
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 23 2007 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 $Log: usplash.spec,v $

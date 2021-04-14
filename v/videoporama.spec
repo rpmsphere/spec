@@ -1,4 +1,5 @@
-%global debug_package %{nil}
+%define __python /usr/bin/python2
+%undefine _debugsource_packages
 %define oname Videoporama
 
 Name:		videoporama
@@ -98,7 +99,7 @@ sed -i 's|^import Image|from PIL import Image|' %{buildroot}%{_datadir}/%{name}/
 
 %changelog
 * Wed Nov 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 30 2012 Giovanni Mariani <mc2374@mclink.it> 0.8.2-69.1
 - Rebuilt for Rosa 2012.1 by the MIB
 - Adjusted file list

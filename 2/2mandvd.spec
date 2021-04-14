@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define srcname	2ManDVD
 
 Name:		2mandvd
@@ -63,7 +63,7 @@ make
 
 %changelog
 * Mon May 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Nov 24 2015 daviddavid <daviddavid> 1.8.5-1.mga6
 + Revision: 905727

@@ -85,7 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Mon Jun  6 2011 aj@suse.de
 - Fix build with newer glibc.

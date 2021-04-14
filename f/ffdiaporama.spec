@@ -95,7 +95,7 @@ find %{buildroot}%{_datadir}/%{oname}/locale -name "*.ts" | xargs rm -f
 
 %changelog
 * Wed Jul 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.9.devel.2014.0701
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 16 2018 daviddavid <daviddavid> 2.1.9.devel.2014.0701-11.mga7
 + Revision: 1201765
 - add QMAKE_CFLAGS_ISYSTEM= qmake option to fix build with gcc6+

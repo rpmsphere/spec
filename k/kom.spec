@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           kom
 Version:        0.9a.git04
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9a.git04
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun  3 2007 nemecp4@gmail.com
 - call make install again (hack with calling configure twice)
 - copy qconf manualy

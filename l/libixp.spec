@@ -58,7 +58,7 @@ or from shell scripts.
 
 %changelog
 * Sat Nov 24 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 19 2011 Bogdano Arendartchuk <bogdano@mandriva.com> 0.6-0.20110223.2mdv2012.0
 + Revision: 705337
 - removed bogus Requires left after spec cleanup

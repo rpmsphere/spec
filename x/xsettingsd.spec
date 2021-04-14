@@ -39,7 +39,7 @@ install -Dm0644 dump_xsettings.1	%{buildroot}%{_mandir}/man1/dump_xsettings.1
 
 %changelog
 * Tue Dec 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 03 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0-0.17.20091208git7804894
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
 * Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0-0.16.20091208git7804894

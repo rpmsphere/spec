@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Sep 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov  8 2010 coolo@novell.com
 - remove support for pre-9.1
 * Fri Jul 28 2006 lmichnovic@suse.cz

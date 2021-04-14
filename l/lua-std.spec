@@ -29,4 +29,4 @@ cp -a \
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 22
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -57,7 +57,7 @@ sed -i 's|^python |python2 |' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun  1 2012 lazy.kent@opensuse.org
 - Initial package created - 1.6.0.
 - Add outwiker-1.6.0-fonts.patch: don't use MS fonts.

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xfireworks
 Summary: Fireworks in your root window
@@ -35,4 +35,4 @@ make install BINDIR=%{buildroot}%{_bindir} LIBDIR=%{buildroot}%{_sysconfdir} MAN
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

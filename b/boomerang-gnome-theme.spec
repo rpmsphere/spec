@@ -38,4 +38,4 @@ sed -i '$a BackgroundImage=/usr/share/themes/Boomerang/boomerang-nebula-hubble-w
 
 %changelog
 * Mon Mar 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

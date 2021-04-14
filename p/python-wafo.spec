@@ -1,4 +1,5 @@
-%global debug_package %{nil}
+%define __python /usr/bin/python2
+%undefine _debugsource_packages
 %define __spec_install_post %{nil}
 
 Name:           python-wafo
@@ -55,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Dec 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 26 2011 scorot@gtt.fr - 0.1.2
 - initial package

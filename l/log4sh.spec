@@ -34,6 +34,6 @@ install src/shell/log4sh $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 19 2012 toms@opensuse.org
 - First release 1.4.2

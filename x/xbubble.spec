@@ -40,6 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jan 16 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.11.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 15 2003 chl <chl@tuxfamily.org> 20030515-1mdk
 - first release from cvs

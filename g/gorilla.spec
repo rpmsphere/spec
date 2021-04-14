@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Feb 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.3.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 19 2008 Thomas Uphill <uphill@ias.edu>
 - initial build

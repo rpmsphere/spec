@@ -57,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1svn
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 05 2009 Caolán McNamara <caolanm@redhat.com> - 1.2.0-5
 - include cstdio for sprintf

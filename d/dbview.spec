@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	DBase III file viewer
 Name:		dbview
@@ -41,6 +41,6 @@ At the end of every record a newline is appended.
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 13 2009 TI_Eugene <ti.eugene@gmail.com>
 - Initial build for Fedora 11

@@ -43,7 +43,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 
 %changelog
 * Tue Jan 28 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Sep 28 2013 Bob Mottram (4096 bits) <bob@robotics.uk.to> - 0.4.0-1
 - Raised default demanded difficulty from 1 to 2 for new addresses
 - Added v4 addresses:

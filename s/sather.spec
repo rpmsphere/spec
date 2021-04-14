@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: sather
 Summary: GNU Sather programming language
@@ -43,4 +43,4 @@ cp -a Emacs Library pLibrary System %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Thu Dec 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

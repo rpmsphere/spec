@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           ktoon
 Version:        0.9a.git04
@@ -95,7 +95,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9a.git04
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Nov 09 2007 - pnemec@suse.cz
 - fixed type in wraper script
 * Tue Jun 05 2007 - pnemec@suse.cz

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           httpripper
 Version:        1.1.1
 Release:        5.1
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 09 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1-2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Sep 11 2010 Texstar <texstar at gmail.com> 1.1.1-1pclos2009
 - Update
 * Sun Jun 07 2009 slick50 <lxgator@gmail.com> 1.0.0-1pclos2009

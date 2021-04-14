@@ -59,4 +59,4 @@ install -D -m644 src/%{name}.desktop %{buildroot}/%{_datadir}/applications/%{nam
 
 %changelog
 * Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

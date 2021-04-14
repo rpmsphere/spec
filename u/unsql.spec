@@ -30,6 +30,6 @@ Utility to decode 1Cv7.DBA file and to set new values in it from CLI.
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 5 2010 TI_Eugene <ti.eugene@gmail.com>
 - Initial build for openSUSE Build Service

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Real-time audio synthesis and graphics/multimedia language
 Name: chuck
@@ -53,7 +53,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Sep 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 12 2016 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 1.3.6.0-1.220a
 - update to experimental 1.3.6.0 (released for the 220a class)
 * Tue Jan 14 2014 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 1.3.3.0-1

@@ -57,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 10 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 13 2005 Bastiaan Bakker <bastiaan.bakker@lifeline.nl>
 - Initial package

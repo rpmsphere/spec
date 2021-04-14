@@ -59,7 +59,7 @@ install -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.deskto
 
 %changelog
 * Mon Feb 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 8.20030801
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 20 2009 Wind <yc.yan@ossii.com.tw> - 0-8.20030801
 - Rebuild for OSSII.
 * Thu Mar 09 2006 Richard June <rjune@bravegnuworld.com> 0-7.20030801

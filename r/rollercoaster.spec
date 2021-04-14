@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: An OpenGL rollercoaster ride animation
 Name: rollercoaster
@@ -76,7 +76,7 @@ mkdir -p %{buildroot}%{_datadir}/rollercoaster/
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul  7 2012 josef radinger <cheese@nosuchhost.net>
 - 1.1.0-3
 - fiddle with build-order

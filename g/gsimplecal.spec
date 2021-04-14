@@ -32,6 +32,6 @@ rm -fr %{buildroot}
 
 %changelog
 * Thu Dec 18 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 22 2013 build for openSUSE
 - Initial package created - 1.6

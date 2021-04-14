@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: pynguin
 Summary: Python Turtle Graphics Application
 Version: 0.16
@@ -39,4 +39,4 @@ sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Mon Jun 09 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16
-- Rebuild for Fedora
+- Rebuilt for Fedora

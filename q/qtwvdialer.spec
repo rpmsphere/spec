@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 01 2008 Ercole 'ercolinux' Carpanetto <ercole69@gmail.com> 0.4.4-1mamba
 - package created by autospec

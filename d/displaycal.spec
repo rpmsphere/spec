@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define up_name	DisplayCAL
 
 Name:		displaycal
@@ -59,7 +59,7 @@ color management system.
 
 %changelog
 * Tue Jun 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 30 2018 daviddavid <daviddavid> 3.5.3.0-1.mga7
   (not released yet)
 + Revision: 1223902

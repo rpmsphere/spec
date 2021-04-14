@@ -33,6 +33,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.72
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 07 2001 Enrico Nemack <rico.ffo@gmx.de> 0.71
 - Initial package

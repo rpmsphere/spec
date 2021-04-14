@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary: 	Chinese and Japanese Handwriting Recognition
 Name: 		tegaki
 Version: 	0.3.1
@@ -54,7 +54,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 09 2010 Feather Mountain <john@ossii.com.tw> 0.2-3.git20090918.ossii
 - Fix tegaki requires tegaki-models
 * Tue Nov 17 2009 Feather Mountain <john@ossii.com.tw> 0.2-2.git20090918.ossii

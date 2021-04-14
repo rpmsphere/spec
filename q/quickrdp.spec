@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: quickrdp
 Summary: Manages RDP, SSH, Telnet and VNC connections
 Version: 2.4.3
@@ -40,4 +40,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Tue Mar 07 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

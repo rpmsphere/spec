@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           falconseye
 Requires:       timidity++
@@ -78,7 +78,7 @@ convert $RPM_BUILD_ROOT%{_datadir}/falconseye/nethack.ico $RPM_BUILD_ROOT%{_data
 
 %changelog
 * Wed Feb 25 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 30 2013 seife+obs@b1-systems.com
 - fix license field, it's NGPL (Nethack General Public License)
 * Wed Nov 23 2011 jengelh@medozas.de

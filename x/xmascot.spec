@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xmascot
 Summary: Moving mascot on your X-Window screen
@@ -50,4 +50,4 @@ make install install.man DESTDIR=%{buildroot}
 
 %changelog
 * Tue Dec 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6a
-- Rebuild for Fedora
+- Rebuilt for Fedora

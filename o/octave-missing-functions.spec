@@ -54,7 +54,7 @@ mv %{pkgname}-%{version}/DESCRIPTION .
 
 %changelog
 * Thu Jul 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 25 2014 Denis Silakov <denis.silakov@rosalab.ru> 1.0.2-5
 + Revision: 123f26e
 - MassBuild#464: Increase release tag

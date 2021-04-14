@@ -40,4 +40,4 @@ chmod a+x %{buildroot}%{_libdir}/oo2c/install-sh
 
 %changelog
 * Thu Oct 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.11
-- Rebuild for Fedora
+- Rebuilt for Fedora

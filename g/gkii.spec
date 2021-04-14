@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define	oname	gkII
 
 Summary:	Mandelbrot and Julia set image generator
@@ -7,7 +7,7 @@ Version:	0.4.7
 Release:	4
 License:	GPL
 Group:		Graphics
-URL:		http://www.jwm-art.net/gkII/
+Url:		http://www.jwm-art.net/gkII/
 Source0:	http://www.jwm-art.net/gkII/%{oname}-%{version}.tar.bz2
 Patch0:		gkII-0.4.7-Makefile.patch
 Patch1:		gkII-0.4.7-libpng15.patch
@@ -25,19 +25,18 @@ randomization, striping, scaling, and interpolation.
 %patch1 -p1
 
 %build
+#setup_compile_flags
 make -C src
 
 %install
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_datadir}/%{name}/gallery
 
-install -m755 src/gkII %{buildroot}%{_bindir}/%{name}
+install src/gkII %{buildroot}%{_bindir}/%{name}
 install gallery/* %{buildroot}%{_datadir}/%{name}/gallery
 
 %files
 %doc BUGS CHANGES KEYS LICENSE README TODO
-%{_bindir}/%{name}
-%{_datadir}/%{name}
+%attr(755,root,root) %{_bindir}/%{name}
+%{_datadir}/%{name}/gallery
 
-* Thu Sep 24 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.7
-- Rebuild for Fedora

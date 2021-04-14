@@ -65,7 +65,7 @@ install -pD -m644 images/webpres.png %buildroot%{_datadir}/pixmaps/%{name}.png
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 09 2006 Michael Shigorin <mike@altlinux.org> 1.0.5-alt1
 - 1.0.5
 * Tue Mar 07 2006 Michael Shigorin <mike@altlinux.org> 1.0.4-alt2

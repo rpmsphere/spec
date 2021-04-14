@@ -50,4 +50,4 @@ sed -i 's|/usr/share/icons/hicolor/48x48/apps/||' $RPM_BUILD_ROOT%{_datadir}/app
 
 %changelog
 * Wed Dec 11 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2013.08.30
-- Rebuild for Fedora
+- Rebuilt for Fedora

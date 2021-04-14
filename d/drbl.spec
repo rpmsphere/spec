@@ -41,7 +41,7 @@ For more details, check
 
 %changelog
 * Mon Mar 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.32.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 06 2020 luigiwalser <luigiwalser> 2.32.10-1.mga8
 + Revision: 1654010
 - 2.32.10

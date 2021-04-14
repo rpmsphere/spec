@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:           xye
 Version:        0.12.1
 Release:        1
@@ -72,7 +72,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 04 2012 chris@ossii.com.tw
 - Rebuild make to OX2 version
 * Mon Mar 26 2012 PVince81@opensuse.org

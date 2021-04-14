@@ -58,6 +58,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Sat Apr 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 18 2012 Mandriva
 - Initial package

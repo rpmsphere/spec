@@ -78,7 +78,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 26 2010 Huan-Ting Luo <kylix.lo@ossii.com.tw> 1.8.5-3
 - add %%dist
 - delete Packager

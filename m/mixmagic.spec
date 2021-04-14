@@ -43,6 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Apr 30 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 29 2000 Jonas Borgström <jonas_b@bitsmart.com>
 - first try at an official RPM

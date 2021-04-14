@@ -39,4 +39,4 @@ make install PREFIX=/usr DESTDIR=%{buildroot}
 
 %changelog
 * Fri Nov 03 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.20170117
-- Rebuild for Fedora
+- Rebuilt for Fedora

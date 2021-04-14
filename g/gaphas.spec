@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Summary:	A diagramming widget for GTK+ written in Python
 Name:		gaphas
 Version:	0.4.0
@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 01 2009 slick50 <lxgator@gmail.com> 0.4.0-1pclos2009
 - initial build

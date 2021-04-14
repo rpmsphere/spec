@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Sep 27 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov  8 2010 coolo@novell.com
 - remove support for pre-9.1
 * Mon Jul 24 2006 mmarek@suse.de

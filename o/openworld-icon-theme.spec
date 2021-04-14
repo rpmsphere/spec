@@ -29,4 +29,4 @@ cp -a %{theme_name} %{buildroot}%{_datadir}/icons
 
 %changelog
 * Thu Jul 07 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20060508
-- Rebuild for Fedora
+- Rebuilt for Fedora

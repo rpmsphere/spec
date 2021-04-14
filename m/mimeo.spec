@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name: mimeo
 Version: 2015.1
 Release: 2.1
@@ -32,4 +32,4 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sat Feb 21 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2015.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

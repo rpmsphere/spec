@@ -32,6 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 17 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 12.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 22 2013 maoyaotang
 - Initial package

@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.18
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Sep 03 2008 Tiziana Ferro <tiziana.ferro@email.it> 0.3.18-1mamba
 - update to 0.3.18

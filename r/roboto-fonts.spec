@@ -34,6 +34,6 @@ Roboto is a Helvetica alike sans serif font that was introduced with Android
 
 %changelog
 * Tue Nov 26 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.138
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 22 2011 pascal.bleser@opensuse.org
 - initial version (1.0)

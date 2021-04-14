@@ -37,6 +37,6 @@ rm -fr ${buildroot}
 
 %changelog
 * Mon May 25 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 23 2005 Yao Zhang <yaoz@users.sourceforge.org>
 - Initial package

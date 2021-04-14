@@ -78,7 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 17 2009 Fabian Affolter <fabian@bernewireless.net> - 6.0.2-1
 - Added new -devel package
 - Added libssh2-devel as a BR

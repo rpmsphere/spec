@@ -45,7 +45,7 @@ rm -r %{buildroot}%{_infodir}/dir \
 
 %changelog
 * Tue Nov 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 12 2017 sor.alexei@meowr.ru
 - Explicitly package %%{_docdir}/%%{name}/.
 * Sat Sep  6 2014 sor.alexei@meowr.ru

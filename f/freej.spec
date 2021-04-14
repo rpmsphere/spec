@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           freej
 Version:        0.10
@@ -93,7 +93,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Aug 08 2008 Paulo Roma <roma@lcg.ufrj.br> - 0.10-4
 - Updated to 0.10
 - Added BR fftw-devel.

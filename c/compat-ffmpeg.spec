@@ -233,7 +233,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Dec 05 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun May 03 2015 Nicolas Chauvet <kwizart@gmail.com> - 0.6.7-9
 - Disable doc - rfbz#3616

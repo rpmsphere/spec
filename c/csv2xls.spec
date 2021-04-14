@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 05 2010 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 0.4.2-2mamba
 - added missing requirement
 * Tue Jan 05 2010 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 0.4.2-1mamba

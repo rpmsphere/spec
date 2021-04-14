@@ -47,7 +47,7 @@ sed -i -e 's|-Werror=format-security|-Wno-format-security|' -e 's|-DHAVE_CONFIG_
 
 %changelog 
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 17 2006 - Bernhard Walle <bernhard@links2linux.de>
 - new upstream version
 * Sat May 13 2006 - Bernhard Walle <bernhard@links2linux.de>

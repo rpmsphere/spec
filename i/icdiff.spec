@@ -31,7 +31,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Fri Jun 23 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 01 2016 Valentin Rosavitskiy <valintinr@altlinux.org> 1.7.3-alt2
 - Moved from binaries from %%_sbindir to %%_bindir (ALT #31848)
 * Tue Apr 28 2015 Valentin Rosavitskiy <valintinr@altlinux.org> 1.7.3-alt1

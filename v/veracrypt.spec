@@ -1,4 +1,4 @@
-%define debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	Disk encryption software 
 Name:		veracrypt
@@ -52,7 +52,7 @@ install -Dm 0644 Resources/Icons/VeraCrypt-48x48.png %{buildroot}%{_datadir}/ico
 
 %changelog
 * Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.24.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 18 2016 Denis Silakov <denis.silakov@rosalab.ru> 1.19-1
 - (9623fad) Merge pull request #4 from tremod/veracrypt:rosa2016.1
 - (9623fad) Update to 1.19

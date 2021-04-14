@@ -75,7 +75,7 @@ cd svgcleaner-gui-%{version}
 
 %changelog
 * Wed Jan 15 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb  6 2019 sogal@opensuse.org
 - Removed svgcleaner-gui dependency to p7zip-full as nothing provides it in
   openSUSE and the needed 7za component is already provided by p7zip

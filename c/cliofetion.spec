@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Command line libofetion client implemention
 Name: cliofetion
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 14 2011 Funda Wang <fwang@mandriva.org> 2.2.0-1mdv2011.0
 + Revision: 674491
 - update file list

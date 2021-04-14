@@ -52,6 +52,6 @@ desktop-file-install                                    \
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 23 2009 David Bolt <davjam@davjam.org> 0.1
 - Updated URL

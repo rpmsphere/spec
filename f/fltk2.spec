@@ -69,6 +69,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.x.%%{svn}
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 21 2011 Agnelo de la Crotche <agnelo@unixversal.com>
 - version  2.0.x r8518 packaged for openSUSE 11.3, 11.4

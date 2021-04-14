@@ -34,7 +34,7 @@ install -Dm 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov  8 2011 lazy.kent@opensuse.org
 - Corrected Recommends/Suggests.
 - spec clean up.

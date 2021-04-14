@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.3.615
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 07 2011 kobayashi
 - update to 0.0.3.456 unstable
 * Mon Jun 20 2011 kobayashi

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		easypaint
 Version: 	0.1.1
@@ -39,7 +39,7 @@ popd
 
 %changelog
 * Tue Jan 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 10 2012 Gr1N <grin.minsk@gmail.com>
 - 0.1.0, first release
 * Fri Apr 15 2011 TI_Eugene <ti.eugene@gmail.com>

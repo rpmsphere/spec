@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 23 2009 Kami <kami@ossii.com.tw> 0.9-1.ossii
 - Build for OSSII
 * Fri Sep 26 2008 awafaa@opensuse.org

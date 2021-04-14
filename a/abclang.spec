@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define _name abc
 
 Summary: ABC programming language
@@ -43,4 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.05.03
-- Rebuild for Fedora
+- Rebuilt for Fedora

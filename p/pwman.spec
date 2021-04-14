@@ -37,6 +37,6 @@ autoreconf -fi
 
 %changelog
 * Tue Aug 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 20 2007 - judas_iscariote@shorewall.net
 - update to 0.3.5 

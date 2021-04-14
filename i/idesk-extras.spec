@@ -38,4 +38,4 @@ up and and running quickly and easily.
 
 %changelog
 * Mon Mar 05 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.37
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -45,7 +45,7 @@ make install BINDIR=$RPM_BUILD_ROOT%{_bindir}
 
 %changelog
 * Tue Jan 06 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 13 2005 PLD Team <feedback@pld-linux.org>
 - All persons listed below can be reached at <cvs_login>@pld-linux.org
 Revision 1.17  2005/12/13 18:01:46  glen

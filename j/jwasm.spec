@@ -48,7 +48,7 @@ install -D GccUnixD/jwasm %buildroot%_bindir/jwasm
 
 %changelog
 * Wed Oct 31 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 30 2016 Fr. Br. George <george@altlinux.ru> 2.12-alt1
 - Update to GH current version
 - Copy Regression sources

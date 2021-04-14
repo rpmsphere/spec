@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: fractgen
 Version: 2.1.0
@@ -35,6 +35,6 @@ install -Dm755 -p src/%{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Fri Apr 21 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 26 2013 Thomas Dreibholz <dreibh@iem.uni-due.de> - 2.0.16
 - Created RPM package.

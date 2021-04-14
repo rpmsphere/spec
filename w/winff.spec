@@ -60,7 +60,7 @@ rm -rf %buildroot
 
 %changelog
 * Mon May 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Feb 14 2013 - joerg.lorenzen@ki.tng.de
 - update to version 1.5.0
 * Thu Oct 11 2012 - joerg.lorenzen@ki.tng.de

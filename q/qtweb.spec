@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           qtweb
 Version:        3.8.5.108
@@ -56,4 +56,4 @@ echo %{_libdir}/qt4/plugins/imageformats >> %{buildroot}%{_sysconfdir}/ld.so.con
 
 %changelog
 * Mon Jan 13 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.5.108
-- Rebuild for Fedora
+- Rebuilt for Fedora

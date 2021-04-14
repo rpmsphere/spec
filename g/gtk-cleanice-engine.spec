@@ -31,7 +31,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Mar 24 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 19 2011 ro@suse.de
 - update baselibs.conf
 * Sun Jun 14 2009 vuntz@novell.com

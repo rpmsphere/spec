@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: xgammon
 Version: 0.98a
@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.98a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 09 2004 Stanislav Ievlev <inger@altlinux.org> 0.98a-alt3
 - rebuild with gcc3.3
 * Thu Oct 31 2002 Stanislav Ievlev <inger@altlinux.ru> 0.98a-alt2

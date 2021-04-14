@@ -1,5 +1,5 @@
 %undefine _missing_build_ids_terminate_build
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Pete's Self Hosted Hybrid Interpreter/Compiler
 Name: phix
@@ -39,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 21 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
-- Rebuild for Fedora
+- Rebuilt for Fedora

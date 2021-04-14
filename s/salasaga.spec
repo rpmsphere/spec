@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary:	An Integrated Development Environment for producing eLearning
 Name: 		salasaga
@@ -69,6 +69,6 @@ update-desktop-database &> /dev/null || :
 
 %changelog
 * Tue Jul 05 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0.alpha5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 02 2008 Juan Luis Baptiste <jbaptiste@merlinux.org> 0.8.0-1pclos_mypclinuxos2007
 - Initial import to PCLinuxOS 2008

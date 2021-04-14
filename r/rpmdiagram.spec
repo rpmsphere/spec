@@ -36,6 +36,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 06 2009 Ian Chapman <packages[AT]amiga-hardware.com> 1.0-1%{?dist}
 - Initial release

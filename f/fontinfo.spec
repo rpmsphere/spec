@@ -38,7 +38,7 @@ make DESTDIR=%{buildroot} install %{?_smp_mflags}
 
 %changelog
 * Fri May 29 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 20150410
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 10 2015 pgajdos@suse.com
 - updated to version 20150410
   * prevent buffer overflow for Supplementary Private Use Area-B

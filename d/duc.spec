@@ -39,7 +39,7 @@ make %{?_smp_mflags}
 
 %changelog
 * Thu Apr 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 26 2018 mvetter@suse.com
 - Change license to LGPL-3
 * Mon Feb 26 2018 mvetter@suse.com

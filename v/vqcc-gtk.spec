@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 31 2004 Vilius Roskus <soling@navigator.lv> v0.4.1
 - a really ugly bug where text could not get entered into the text box at the bottom fixed (thanks mustafaogun);
 * Fri Aug 27 2004 Vilius Roskus <soling@navigator.lv> v0.4

@@ -43,6 +43,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Aug 29 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3rc2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 10 2013 David Vásquez <davidjeremias82 AT gmail DOT com> 0.2.1
 - Initial rpm

@@ -47,7 +47,7 @@ NOCONFIGURE=1 ./autogen.sh
 
 %changelog
 * Wed Jan 17 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 11 2013 dimstar@opensuse.org
 - Fix alarm-clock-applet-gstreamer1.patch: gconfaudiosink and
   gconfvideosink also no longer exist in GStreamer 1.0. Replace

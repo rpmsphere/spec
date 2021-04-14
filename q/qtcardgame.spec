@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		qtcardgame
 Version: 0.9.3.11
@@ -44,6 +44,6 @@ popd
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.3.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 01 2011 TI_Eugene <ti.eugene@gmail.com> 09.3
 - Initital build in OBS

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:           lwm
 Version:        1.2.4
@@ -45,6 +45,6 @@ install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/xsessions/lwm.desktop
 
 %changelog
 * Tue Mar 29 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 05 2012 Damien Durand <splinux25@gmail.com> - 1.2.2-1
 - Initial release.

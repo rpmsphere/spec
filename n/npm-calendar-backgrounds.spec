@@ -31,4 +31,4 @@ install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/mate-background-properties/
 
 %changelog
 * Thu Nov 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2020
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -80,7 +80,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Dec 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 15 2011 - Armin Wehrfritz
 - fix install directories for /lib or /lib64
 - put 'man' and 'doc' to 'share'

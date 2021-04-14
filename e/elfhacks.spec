@@ -69,6 +69,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 25 2008 Mathias Homann <admin@eregion.de>
 - initial import

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:			5ball
 Version:		0.43
@@ -80,7 +80,7 @@ fi
 
 %changelog
 * Mon Jul 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.43
-- Rebuild for Fedora
+- Rebuilt for Fedora
 - modify the spec file in 0.43-0.pm.1.src.rpm
 * Wed May 06 2009 Toni Graffy <toni@links2linux.de> - 0.43-0.pm.1
 - update to 0.43

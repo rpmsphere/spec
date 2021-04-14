@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 %define realname vodafone-mobile-connect-card-driver-for-linux
 
 Name: vmc
@@ -45,4 +45,4 @@ echo -e "Name[zh_TW]=VMC 驅動器\nComment[zh_TW]=Vodafone 行動連線卡驅�
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.beta3
-- Rebuild for Fedora
+- Rebuilt for Fedora

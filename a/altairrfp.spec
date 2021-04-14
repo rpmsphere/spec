@@ -32,6 +32,6 @@ cp -a images/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 21 2011 Al Williams <al.williams@awce.com>
 - Initial package

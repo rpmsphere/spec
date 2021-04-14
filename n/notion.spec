@@ -97,7 +97,7 @@ popd
 
 %changelog
 * Thu Oct 31 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2019050101
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Oct 26 2012 toganm@opensuse.org
 - Update to version 3+2012042300
 - Use lua51 explicitly for opensuse >= 12.1

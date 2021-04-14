@@ -137,7 +137,7 @@ mv %{buildroot}%{_sbindir}/htpasswd %{buildroot}%{_sbindir}/th_htpasswd
 
 %changelog
 * Wed Jul 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.27.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 22 2016 daviddavid <daviddavid> 2.27.0-2.mga6
 + Revision: 926450
 - switch to %%configure2_5x to fix build

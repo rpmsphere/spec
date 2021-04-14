@@ -45,7 +45,7 @@ identical performance.
 
 %changelog
 * Fri Jan 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.6-24
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.3.6-24
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
 * Thu Nov 07 2019 Miro Hrončok <mhroncok@redhat.com> - 1.3.6-23

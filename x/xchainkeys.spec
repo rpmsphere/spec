@@ -30,6 +30,6 @@ terminal multiplexer.
 
 %changelog
 * Thu Dec 08 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 16 2012 Terechkov Evgenii <evg@altlinux.org> 0.10-alt1
 - Initial build for ALT Linux Sisyphus

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name: pebl
 Summary: Psychology Experiment Building Language
@@ -48,4 +48,4 @@ make install PREFIX=%{buildroot}/usr/
 
 %changelog
 * Mon Sep 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1git
-- Rebuild for Fedora
+- Rebuilt for Fedora

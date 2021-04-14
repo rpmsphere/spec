@@ -109,7 +109,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 15 2013 pgajdos@suse.com
 - builds also with libpng16
   * libpng16.patch

@@ -161,7 +161,7 @@ fi
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 22 2019 Jan Engelhardt <jengelh@inai.de>
 - Update to new upstream release 2.9.2
   * Fixed SRTP profile advertisement for DTLS servers.

@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 Name:       python-yapps
 Version:    2.1.1
 Release:    9.1
@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 04 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 29 2010 puzel@novell.com
 - use proper RPM group
 - build as noarch for opensuse >= 11.2

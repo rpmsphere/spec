@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:		beye
 Version:	6.1.0
@@ -45,7 +45,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 6.1.0-3.mga3
 + Revision: 346901
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

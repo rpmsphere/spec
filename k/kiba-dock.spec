@@ -109,7 +109,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0-0.20070201
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 0-0.20070201.6mdv2008.1
 + Revision: 136523
 - restore BuildRoot

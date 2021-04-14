@@ -79,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 28 2007 anosek@suse.cz
 - split off devel package
 * Tue Sep 12 2006 anosek@suse.cz

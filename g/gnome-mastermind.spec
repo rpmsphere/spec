@@ -45,6 +45,6 @@ rm -fR $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 16 2009 Radu-Cristian Fotescu <info [AT] beranger [DOT] org>
 - Initial release.

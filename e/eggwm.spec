@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:               eggwm
 Version:            0.2
@@ -27,7 +27,7 @@ find . -type f -exec %__chmod 0644 {} \;
 %build
 #qmake-qt4
 qmake-qt5
-make %{?_smp_flags}
+%__make %{?_smp_flags}
 
 %install
 make INSTALL_ROOT=%{buildroot} install
@@ -43,6 +43,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 21 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun  4 2011 pascal.bleser@opensuse.org
 - initial version (0.2)

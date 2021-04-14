@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Name:				 pokerclock
 Version:			 1.0.6
@@ -59,6 +59,6 @@ sed -i 's|Game;|Game;Emulator;|' %{buildroot}%{_datadir}/applications/pokerclock
 
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 11 2010 pascal.bleser@opensuse.org
 - initial package (1.0.6)

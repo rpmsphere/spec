@@ -1,4 +1,4 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: Complete GTK frontend for xmame
 Name: gxmame
@@ -54,7 +54,7 @@ sed -i 's|-Wall|-Wall -fPIC -Wl,--allow-multiple-definition|' src/Makefile
 
 %changelog
 * Tue Jul 05 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.35beta2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 17 2006 Matthias Saou <http://freshrpms.net/> 0.35-0.4.beta2
 - Release bump to drop the disttag number in FC5 build.
 * Thu Jan 12 2006 Matthias Saou <http://freshrpms.net/> 0.35-0.3.beta2
@@ -93,7 +93,7 @@ sed -i 's|-Wall|-Wall -fPIC -Wl,--allow-multiple-definition|' src/Makefile
 * Wed Nov 19 2003 Matthias Saou <http://freshrpms.net/> 0.34-0.20031119.1
 - Update to today's CVS checkout.
 * Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 0.33-3
-- Rebuild for Fedora Core 1.
+- Rebuilt for Fedora Core 1.
 * Tue Oct 21 2003 Matthias Saou <http://freshrpms.net/>
 - Added the patch to handle xmame >= 0.74 cleanly at last.
 * Thu Jun 12 2003 Matthias Saou <http://freshrpms.net/>

@@ -65,7 +65,7 @@ depmod -a > /dev/null 2> /dev/null
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 05 2009 Wei-Lun Chao <bluebat@member.fsf.org> 1.4.3-1.ossii
 - Rebuild for OSSII
 

@@ -79,7 +79,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Mon Oct 29 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 22 2014 daviddavid (MLO Team) <daviddavid> 0.1.22.3-1.mga4
 + new version: 0.1.22.3
 * Mon Mar 17 2014 david.david (MLO Team) <david.david> 0.1.22.2-1.mga4

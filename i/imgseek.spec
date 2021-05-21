@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Nov 23 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 12 2008 matejcik@suse.cz
 - renamed "self.with" member, because "with" is now a keyword
 * Thu Oct 11 2007 matejcik@suse.cz

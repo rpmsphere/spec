@@ -224,7 +224,7 @@ ln -s %{_datadir}/myspell $RPM_BUILD_ROOT%{mozappdir}/dictionaries
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 24 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
 - Rebuild for OSSII
 

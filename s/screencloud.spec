@@ -32,11 +32,11 @@ Authors:
 
 %build
 export CXXFLAGS="-std=c++98 -fPIC"
-%cmake
-%{__make} %{?jobs:-j%jobs} -C %{_host}
+%cmake .
+%cmake_build
  
 %install
-%make_install -C %{_host}
+%cmake_install
 mkdir -p $RPM_BUILD_ROOT/usr/bin
 ln -sf /opt/screencloud/screencloud.sh $RPM_BUILD_ROOT/usr/bin/screencloud
 

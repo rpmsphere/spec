@@ -1,4 +1,5 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
+
 Name: python-pies
 Summary: The simplest (and tastiest) way to write one program that runs on both Python 2 and Python 3
 Version: 2.6.0
@@ -7,7 +8,7 @@ Group: Development/Libraries
 License: MIT
 URL: http://timothycrosley.github.io/pies/
 Source0: pies-%{version}.tar.gz
-BuildRequires: python-devel
+BuildRequires: python3-devel
 BuildArch: noarch
 
 %description
@@ -23,14 +24,14 @@ absolutely necessary.
 %setup -q -n pies-%{version}
 
 %build
-python setup.py build
+python3 setup.py build
 
 %install
-python setup.py install --root=%{buildroot}
+python3 setup.py install --root=%{buildroot}
 
 %files
 %doc LICENSE README.md
-%{python_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Mon Feb 10 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.0

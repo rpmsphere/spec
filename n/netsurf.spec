@@ -55,7 +55,7 @@ install -D -m0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.des
 
 %changelog
 * Tue Jul 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 13 2012 andreas.stieger@gmx.de
 - update to upstream 2.9
   For a full list of changes, see:

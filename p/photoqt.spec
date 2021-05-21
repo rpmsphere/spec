@@ -41,7 +41,7 @@ written in Qt, published as open-source, and completely free.
 
 %changelog
 * Sun Nov 29 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 16 2013 dglent <dglent> 1.0-1.mga4
 + Revision: 551499
 - imported package photoqt

@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Mar 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 9.5.20i
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 24 2004 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 Revision 1.5  2004/01/24 18:33:24  undefine

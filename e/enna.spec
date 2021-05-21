@@ -84,7 +84,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> 0.4.1-0.3777.ossii
 - Update to r3777
 

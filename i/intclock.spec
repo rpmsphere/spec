@@ -36,7 +36,7 @@ make %{?_smp_mflags}
 %install
 mkdir -p %{buildroot}%{_datadir}/applications
 %make_install
-sed -i 's|%{buildroot}||' %{buildroot}%{_datadir}/perl5/5.30/Intclock.pl
+sed -i 's|%{buildroot}||' %{buildroot}%{_datadir}/perl5/5.*/Intclock.pl
 
 %files
 %doc README NEWS COPYING ChangeLog AUTHORS TRANSLATING

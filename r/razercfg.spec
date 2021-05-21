@@ -31,10 +31,10 @@ sed -i 's|DESTINATION lib|DESTINATION lib${LIB_SUFFIX}|' librazer/CMakeLists.txt
 
 %build
 %cmake .
-%make_build %{?_smp_mflags} -C %{_host}
+%cmake_build
 
 %install
-%make_install DESTDIR=%{buildroot} -C %{_host}
+%cmake_install
 rm %{buildroot}%{_libdir}/librazer.so
 # Systemd service and udev rule
 #install -D -m 444 razerd.service %{buildroot}%{_unitdir}/razerd.service

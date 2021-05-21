@@ -57,7 +57,7 @@ find %{buildroot} -name .packlist -exec %{__rm} {} \;
 
 %changelog
 * Fri Jul 24 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 15 2013 Jan Gehring <jan.gehring at, gmail.com> 0.42.0-2
 - updated release
 * Sat Jun 15 2013 Jan Gehring <jan.gehring at, gmail.com> 0.42.0-1

@@ -57,7 +57,7 @@ BuildRequires:  pkgconfig(libmenu-cache)
 
 %changelog
 * Fri Nov 29 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 12 2018 kekepower <kekepower> 1.0-1.mga7
 + Revision: 1236628
 - Update to version 1.0

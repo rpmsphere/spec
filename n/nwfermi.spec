@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Oct 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 07 2011 Antoine Ginies <aginies@mandriva.com> 0.4.2-1mdv2011.0
 + Revision: 629590
 - import dkms-nwfermi

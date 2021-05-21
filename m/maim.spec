@@ -40,7 +40,7 @@ better in several ways.
 
 %changelog
 * Thu Jan 18 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 5.4.68
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 24 2016 Vitaly Lipatov <lav@altlinux.ru> 3.3.41-alt1
 - initial build for ALT Linux Sisyphus
 * Fri Jun 26 2015 nemysis@gmx.ch

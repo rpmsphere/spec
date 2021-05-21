@@ -43,10 +43,10 @@ need a purchased copy of Theme Hospital in order to enjoy CorsixTH.
 %cmake \
 	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
 	-DWITH_LUAJIT=ON
-%make_build
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 install -d %{buildroot}%{_bindir}
 cat > %{buildroot}%{_bindir}/%{oname} << EOF

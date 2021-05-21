@@ -1,6 +1,6 @@
 Name: xoscope
-Version: 2.2
-Release: 4.1
+Version: 2.3
+Release: 1
 Summary: Digital Oscilloscope for PC
 Source: %{name}-%{version}.tar.gz
 URL: http://xoscope.sourceforge.net/
@@ -33,7 +33,7 @@ sed -i 's|Network;||' %{buildroot}%{_datadir}/applications/net.sourceforge.xosco
 %doc README AUTHORS NEWS TODO
 
 %changelog
-* Mon Jul 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
+* Sun Apr 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
 - Rebuid for Fedora
 * Fri Dec 29 2017 Vitaly Lipatov <lav@altlinux.ru> 2.2-alt1
 - initial build for ALT Sisyphus

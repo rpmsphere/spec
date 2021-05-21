@@ -7,7 +7,7 @@ Group: Amusements/Games
 URL: http://arcus.sourceforge.net/
 Source0: http://sourceforge.net/projects/arcus/files/arcus/%{name}-%{version}/%{name}-%{version}-source.tar.gz
 BuildArch: noarch
-BuildRequires: java-devel-openjdk lua
+BuildRequires: java-openjdk-devel lua
 
 %description
 Arcus is a Rubik's Cube Simulator written in Java featuring 3D display and
@@ -17,6 +17,7 @@ through the cube's history.
 
 %prep
 %setup -q -n %{name}-%{version}-source
+sed -i 's|1.5|1.6|g' Makefile
 
 %build
 make jar
@@ -46,7 +47,6 @@ EOF
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root, 0755)
 %doc CHANGES LICENSE README
 %attr(755,root,root) %{_bindir}/%{name}
 %{_datadir}/%{name}

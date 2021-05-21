@@ -178,7 +178,7 @@ ln -fs ../../bin/icecc-create-env %{buildroot}%{_libexecdir}/icecc/icecc-create-
 
 %changelog
 * Tue May 10 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1rc2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 18 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:1.0.0-1
 + Revision: 444f449
 - New version 1.0.0, enable shared library, update files

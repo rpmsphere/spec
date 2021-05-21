@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name: cmod
 Version: 0.01
 Release: 6.1
@@ -19,8 +21,8 @@ the java implmentation in Queens University Belfast.
 sed -i 's|cmakedefine|define|' src/config.h.in.cmake
 
 %build
-%cmake
-make
+cmake .
+%make_build
 
 %install
 install -Dm755 src/cmod %{buildroot}%{_bindir}/cmod

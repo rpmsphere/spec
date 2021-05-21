@@ -31,6 +31,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jul 08 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 14.10.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 30 2014 Agent Smith <ruidobranco@yahoo.com.br> 14.10.2-1pclos2014
 - Created package numix-icon-theme

@@ -35,7 +35,7 @@ install TTF/*.ttf %{buildroot}%{fontdir}
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.038
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 27 2012 toms@opensuse.org
 - Update to version 1.038 (2012/09/12):
   * Updates the metrics of Majuscule letters in lighter weights.

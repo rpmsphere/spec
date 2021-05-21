@@ -77,7 +77,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0-0.818.ossii
 - Fix icon size and text justify
 - Add BuildRequires: startup-notification-devel, Source3: oxstore-launcher.menu

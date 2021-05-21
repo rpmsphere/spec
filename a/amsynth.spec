@@ -104,7 +104,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor/48x48/apps &> /dev/null || :
 
 %changelog
 * Mon Feb 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3svn444
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Nov 01 2011 Simon Lewis <simon.lewis@slnet-online.de> - 1.3-svn444.0.sl
 + Beta 2 too buggy - use svn instead

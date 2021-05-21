@@ -82,6 +82,6 @@ unzip %{SOURCE1} -d %{buildroot}%{_libdir}/%{name}/lang
 
 %changelog
 * Sun Mar 3 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.35
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 21 2012 fa0sck@gmail.com
 - Initial package for openSUSE - ver 1.2.35

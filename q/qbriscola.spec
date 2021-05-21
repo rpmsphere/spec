@@ -29,10 +29,10 @@ The game of the Briscola (Italian card-game) with Qt4 graphics.
  -DLIB_SUFFIX=$(echo %_lib | cut -b4-) \
  -DCMAKE_BUILD_TYPE=Release \
  -DCMAKE_SKIP_RPATH=YES
-%{__make} %{?_smp_mflags} VERBOSE=1
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files -f install_manifest.txt
 %doc README

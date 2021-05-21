@@ -67,7 +67,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 21 2009 Feather Mountain <john@ossii.com.tw> - 0.1-1.ossii
 - Build for M6(OSSII)
 

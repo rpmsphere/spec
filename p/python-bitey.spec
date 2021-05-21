@@ -1,4 +1,5 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
+
 Name: python-bitey
 Summary: Bitcode Import Tool
 Version: 0.0.20120813
@@ -7,8 +8,7 @@ Group: Applications/Tools
 License: BSD
 URL: https://github.com/dabeaz/bitey
 Source0: bitey-master.zip
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-BuildRequires: python
+BuildRequires: python3
 BuildArch: noarch
 
 %description
@@ -19,14 +19,14 @@ an high performance extension module without the need for writing wrappers.
 %setup -q -n bitey-master
 
 %build
-python setup.py build
+python3 setup.py build
 
 %install
-python setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
+python3 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %files
 %doc CHANGES LICENSE LIMITATIONS README.rst
-%{python_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.20120813

@@ -294,6 +294,6 @@ fi
 
 %changelog
 * Thu Oct 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5me.alpha42
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Oct 26 2013 Kari Hurtta <deb@elmme-mailer.org>
 - Initial package

@@ -34,4 +34,4 @@ make %{?_smp_mflags} LDFLAGS+="-ldb_cxx-5.3 -lboost_system -lboost_filesystem -l
 
 %changelog
 * Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

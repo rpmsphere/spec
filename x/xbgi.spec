@@ -37,6 +37,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jan 24 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 364
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Nov 27 2012 Guido Gonzato <guido.gonzato at gmail.com>
 This is a generic rpm, buildable on Ubuntu

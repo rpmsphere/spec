@@ -9,7 +9,7 @@ URL: 	 http://c-icap.sourceforge.net/
 Provides:  c-icap-clamav = %epoch:%version-%release
 Obsoletes: c-icap-clamav < %epoch:%version-%release
 Source0: c_icap_modules-%version.tar.gz
-BuildRequires: c-icap-devel clamav-devel clamav-data libdb4-devel zlib-devel bzip2-devel
+BuildRequires: c-icap-devel clamav-devel clamav-data libdb-devel zlib-devel bzip2-devel
 
 %description
 Modules for Internet Content Adaptation Protocol (ICAP) server.

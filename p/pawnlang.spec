@@ -20,11 +20,12 @@ abstract machine.
 
 %build
 %cmake .
-make
+%cmake_build
 
 %install
-install -d %{buildroot}%{_bindir}
-install -m755 pawn* stategraph %{buildroot}%{_bindir}
+#install -d %{buildroot}%{_bindir}
+#install -m755 pawn* stategraph %{buildroot}%{_bindir}
+%cmake_install
 
 %files 
 %doc LICENSE NOTICE history.txt readme.txt

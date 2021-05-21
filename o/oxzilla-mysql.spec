@@ -39,6 +39,6 @@ find $RPM_BUILD_ROOT -type f -name "*.la" -exec rm -f {} \;
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 1 2010 Wind Yan <yc.yan@ossii.com.tw> 0.0.1-1
 - Build for first time.

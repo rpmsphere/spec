@@ -55,7 +55,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 27 2010 羽山 <john@ossii.com.tw> 0.0.18
 - 調整了Requries﹑BuildRequires
 

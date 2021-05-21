@@ -49,7 +49,7 @@ fi
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 28 2000 Thayne Harbaugh <thayne@plug.org>
 - ripped out man install - make install now does it
 - there is now an lsh.info that is handled

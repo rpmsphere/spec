@@ -96,7 +96,7 @@ fi
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct  17 2008 Wind <yc.yan@ossii.com.tw> - 1.3.0-0.5.pre11
 - Rebuild for OSSII.
 * Mon Jan  7 2008 kwizart < kwizart at gmail.com > - 1.3.0-0.4.pre11

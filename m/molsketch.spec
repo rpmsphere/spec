@@ -44,7 +44,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jan 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul  7 2012 scorot@free.fr
 - fix build on SLE 11
 * Sat Jul  7 2012 scorot@free.fr

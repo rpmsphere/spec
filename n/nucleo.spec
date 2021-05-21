@@ -76,7 +76,7 @@ sed -i -e 's|url_fclose|avio_close|' -e 's|PKT_FLAG_KEY|AV_PKT_FLAG_KEY|' nucleo
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 12 2006 Christopher Stone <chris.stone@gmail.com> 0.5-7
 - Remove %%makeinstall macro
 * Fri Jun 09 2006 Christopher Stone <chris.stone@gmail.com> 0.5-6

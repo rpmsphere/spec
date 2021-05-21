@@ -46,7 +46,7 @@ make
 
 %changelog
 * Mon Oct 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 11 2013 fwang <fwang> 0.2.0-2.mga4
 + Revision: 452818
 - rebuild for new boost

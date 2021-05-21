@@ -19,7 +19,7 @@ You can start, suspend, resume and send supported sessions to other clients.
 
 %changelog
 * Thu Dec 18 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.20
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Jun 14 2011 Antoine Martin <antoine@nagafix.co.uk> 0.12.3-1
 - mDNS readers are now removed correctly (was causing segfaults on exit)

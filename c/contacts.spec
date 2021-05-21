@@ -94,7 +94,7 @@ update-desktop-database &> /dev/null ||:
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 03 2008 Jesse Keating <jkeating@redhat.com> - 0.9-1
 - New upstream release
 * Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.8-3

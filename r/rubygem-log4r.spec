@@ -52,7 +52,7 @@ gem install --local --install-dir $RPM_BUILD_ROOT%{gem_dir} \
 
 %changelog
 * Sun Dec 24 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Nov 03 2012 fwang <fwang> 1.1.10-1.mga3
 + Revision: 313158
 - new version 1.1.10

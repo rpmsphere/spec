@@ -44,7 +44,7 @@ cp -a icons %{buildroot}%{_datadir}
 
 %changelog
 * Thu Dec 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 23 2018 umeabot <umeabot> 1.0.9-3.mga7
   (not released yet)
 + Revision: 1301182

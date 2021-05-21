@@ -45,4 +45,4 @@ sed -i -e "s:/usr/share/misc/:%{_datadir}/%{name}/:" wtf
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20111107
-- Rebuild for Fedora
+- Rebuilt for Fedora

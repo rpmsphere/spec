@@ -33,7 +33,7 @@ ln -s ../install-files src/install-files
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 26 2015 Andrey Cherepanov <cas@altlinux.org> 0.20.0-alt1
 - New version
 - The project was renamed to WCM Commander

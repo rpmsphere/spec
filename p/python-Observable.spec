@@ -1,4 +1,5 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
+
 Summary: A reusable implementation of the Observer/Observable pattern in Python
 Name: python-Observable
 Version: 0.1.0
@@ -9,7 +10,7 @@ Group: Development/Libraries
 BuildArch: noarch
 Vendor: Manuel Amador (Rudd-O) <dragonfear@gmail.com>
 URL: http://www.usm.edu.ec/~amadorm/software/
-BuildRequires: python-devel
+BuildRequires: python3-devel
 
 %description
 This module has a complete Observer/Observable implementation for Python.
@@ -18,18 +19,18 @@ This module has a complete Observer/Observable implementation for Python.
 %setup -q
 
 %build
-python setup.py build
+python3 setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install --root=$RPM_BUILD_ROOT --prefix=/usr
+python3 setup.py install --root=$RPM_BUILD_ROOT --prefix=/usr
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README COPYING ChangeLog TODO
-%{python_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Sun Sep 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0

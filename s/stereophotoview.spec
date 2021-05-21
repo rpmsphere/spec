@@ -49,6 +49,6 @@ StereoPhotoView is a viewer/editor for stereoscopic 3d photo and video.
 
 %changelog
 * Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.13.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jul 15 2018 User <user@mail.net> 1.11.0-2
 - (954420d) Update spec, fixed issue1, release 2

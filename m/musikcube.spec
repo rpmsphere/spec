@@ -30,10 +30,10 @@ and streaming audio server that runs natively on Windows, macOS, and Linux.
 
 %build
 %cmake -DCMAKE_C_FLAGS="%{optflags} -fpermissive -fPIC" -DCMAKE_CXX_FLAGS="%{optflags} -fpermissive -fPIC" .
-make %{?_smp_mflags} -C %{_host}
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot} -C %{_host}
+%cmake_install
 
 %files
 %doc README.md CHANGELOG.txt LICENSE.txt

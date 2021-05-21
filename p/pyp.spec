@@ -36,4 +36,4 @@ mv %{buildroot}%{_bindir}/%{name} %{buildroot}%{_bindir}/%{name}-2
 
 %changelog
 * Tue Nov 26 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.12
-- Rebuild for Fedora
+- Rebuilt for Fedora

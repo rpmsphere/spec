@@ -61,9 +61,9 @@ before launching wdm.
 %patch2 -p1 -b .failsafe_tmp
 %patch3 -p1 -b .reconf
 #%patch4 -p1 -b .ck
+sed -i -e 's|get-wings-flags --|pkg-config WINGs --|' -e 's|get-wings-flags|pkg-config|' configure*
 
 %build
-
 export DEF_SERVER='%{_bindir}/X -nolisten tcp'
 #export CFLAGS="$RPM_OPT_FLAGS `pkg-config --cflags ck-connector` -DUSE_CONSOLEKIT"
 #export LDFLAGS="`pkg-config --libs ck-connector`"

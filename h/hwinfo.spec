@@ -80,7 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jul 17 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 21.29
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct  7 2013 snwint@suse.de
 - AArch64 support
 - Add support for AArch64

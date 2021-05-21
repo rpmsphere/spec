@@ -38,7 +38,7 @@ python setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Tue Feb 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 12 2014 Cronbuild Service <cronbuild@altlinux.org> 0.2.3-alt1
 - Freshed up to v0.2.3 with the help of cronbuild and update-source-functions.
 * Wed Dec 25 2013 Paul Wolneykien <manowar@altlinux.org> 0.2.2-alt1

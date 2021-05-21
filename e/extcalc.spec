@@ -18,13 +18,13 @@ functions. Extcalc also provides an integrated programming language.
 sed -i -e 's|/usr/local|/usr|' -e 's|${QT_LIBRARIES}|${QT_LIBRARIES} -lGL|' CMakeLists.txt
 
 %build
-%cmake
+%cmake .
 sed -i -e 's|-O3||' -e 's|-Werror=format-security||' CMakeCache.txt CMakeFiles/extcalc.dir/link.txt CMakeFiles/extcalc.dir/flags.make
-make
+%cmake_build
 										
 %install
 rm -rf $RPM_BUILD_ROOT
-make DESTDIR=$RPM_BUILD_ROOT install
+%cmake_install
 mv $RPM_BUILD_ROOT%{_datadir}/icons $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 %files

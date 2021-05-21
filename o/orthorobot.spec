@@ -33,7 +33,7 @@ install -D -m 0755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Thu May 28 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 15 2013 prusnak@opensuse.org
 - change dependency to love-0_8_0
 * Sun Aug 25 2013 prusnak@opensuse.org

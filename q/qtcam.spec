@@ -15,7 +15,7 @@ Source0:	%{name}-master.zip
 Source1:	%{oname}.desktop
 BuildRequires:	desktop-file-utils
 BuildRequires:	ImageMagick
-BuildRequires:	qt5-devel
+BuildRequires:	qt5-qtbase-devel
 BuildRequires:	ffmpeg-devel
 BuildRequires:	pkgconfig(libdrm)
 BuildRequires:	pkgconfig(libturbojpeg)
@@ -31,6 +31,7 @@ BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(udev)
 BuildRequires:	pkgconfig(libv4l2)
 BuildRequires:  libevdev-devel
+BuildRequires:  qt5-qtmultimedia-devel
 
 %description
 Qtcam is a free, Open Source Linux Webcamera Software with more than 10 image

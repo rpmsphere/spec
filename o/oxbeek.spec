@@ -70,6 +70,6 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 15 2010 Wind Yan <yc.yan@ossii.com.tw> 0.0.1-1
 - Build for first time.

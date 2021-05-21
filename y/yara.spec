@@ -88,7 +88,7 @@ python setup.py install --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 24 2014 Greg.Freemyer@gmail.com
 - update to v3.1.0
   * Yara now supports plugin modules

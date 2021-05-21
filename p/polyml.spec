@@ -51,7 +51,7 @@ autoreconf -ifv
 
 %changelog
 * Tue Mar 17 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 5.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 13 2019 Pavel Moseev <mars@altlinux.org> 5.4.1-alt4
 - no return statement in the non-void function fixed (according g++8)
 * Thu Aug 30 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 5.4.1-alt3.1

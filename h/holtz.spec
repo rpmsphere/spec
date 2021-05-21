@@ -160,7 +160,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 18 2012 alantom<alan@ossii.com.tw>
 - rebuild for OX
 * Fri May 27 2011 version Martin Trautmann <martintrautmann@gmx.de>

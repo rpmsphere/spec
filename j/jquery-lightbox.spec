@@ -32,6 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Sep 02 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.51
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug 11 2009 Ludwig Nussel <lnussel@suse.de>
 - initial package version 2.04 with patches

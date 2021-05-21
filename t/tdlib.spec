@@ -43,4 +43,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Feb 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

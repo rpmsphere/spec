@@ -63,7 +63,7 @@ rmdir %{buildroot}%{_prefix}/doc
 
 %changelog
 * Sun Apr 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov  1 2012 reddwarf@opensuse.org
 - Add caelum-0.6.1-ogre18.patch to fix build with Ogre 1.8
 * Sat Mar  3 2012 joop.boonen@opensuse.org

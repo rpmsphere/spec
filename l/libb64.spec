@@ -73,7 +73,7 @@ ln -s %name.so.0 %name.so
 
 %changelog
 * Thu Aug 10 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 05 2017 Vitaly Lipatov <lav@altlinux.ru> 1.2.1-alt1
 - initial build for ALT Linux Sisyphus
 * Wed Jan 27 2016 Anatholy Scryabin <ascryabin@cloudlinux.com> 1.2.1-2.1

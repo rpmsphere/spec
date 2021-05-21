@@ -137,7 +137,7 @@ tic -e alacritty,alacritty-direct %{_docdir}/%{name}/%{name}.info > /dev/null 2>
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 29 2019 kekepower <kekepower> 0.3.3-1.mga8
 + Revision: 1415902
 - Update to version 0.3.3

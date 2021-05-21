@@ -34,7 +34,7 @@ Shiki-Colors GNOME Themes for Murrine engine.
 
 %changelog
 * Sun Mar 17 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 07 2010 Michal Smrž <michal.smrz@opensuse.cz>
 - Added Obsoletes for gtk2-theme-shiki, which is in X11:xfce and in older version
 - Added requirement gtk2-engine-murrine (what a surprise, it is missing, on testdrive in susestudio :-)

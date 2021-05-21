@@ -73,7 +73,7 @@ EOF
 
 %changelog
 * Wed May 22 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 19.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Nov 30 2012 lumnis@opensuse.org
 - updated to version 14
 - New Features: Dragging points, nautical miles, deleting points inside a rectangle

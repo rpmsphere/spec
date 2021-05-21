@@ -34,7 +34,7 @@ rm -rf %{buildroot}%{_datadir}/doc
 
 %changelog
 * Wed Sep 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2019.07.01
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 27 2018 mliska@suse.cz
 - Update to version kakoune-0.0+git.20180228.
 - Bump ncurses requirement to version 6.0 and higher.

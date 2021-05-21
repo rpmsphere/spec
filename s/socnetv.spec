@@ -50,7 +50,7 @@ install -Dm644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desk
 
 %changelog
 * Tue Nov 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 08 2011 TI_Eugene <ti.eugene@gmail.com> - 0.90
 - Next version
 * Fri Feb 20 2009 TI_Eugene <ti.eugene@gmail.com> - 0.51

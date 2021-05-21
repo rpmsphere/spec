@@ -30,6 +30,6 @@ rm -rf %{buildroot}/usr/doc
 
 %changelog
 * Sun Dec 02 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Dec 17 2011 qmp <glang@lavabit.com> - 0.2-1
 - Initial packaging

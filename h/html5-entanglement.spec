@@ -56,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 24 2010 Wei-Lun Chao <bluebat@member.fsf.org> 20100815-1
 - Initial build

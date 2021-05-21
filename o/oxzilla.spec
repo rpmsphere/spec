@@ -136,7 +136,7 @@ find $RPM_BUILD_ROOT -type f -name "*.la" -exec rm -f {} \;
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul  8 2011 Wilson Tien <wilson@ossii.com.tw> - 0.1.2-22X
 - src/oxzilla/oxzilla.c: decode the AES coded OXZ file (which is a ZIP file 
   of the oxzilla application) on the fly, then use FUSE to mount the decoded

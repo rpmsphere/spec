@@ -90,7 +90,7 @@ rm -fr %buildroot
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 17 2007 Thierry Vignaud <tvignaud@mandriva.com> 1.0.0-0.20070707.1mdv2008.1
 + Revision: 127050
 - kill re-definition of %%buildroot on Pixel's request

@@ -59,7 +59,7 @@ mv %{buildroot}/usr/**Unknown**/Telegram %{buildroot}%{_libdir}
 
 %changelog
 * Wed Jun 03 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0.20150603
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 21 2015 sander85 <sander85> 1.0.0-20150221.1.mga5
 + Revision: 816248
 - New release: 20150221

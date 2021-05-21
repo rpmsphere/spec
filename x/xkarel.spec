@@ -27,6 +27,7 @@ sed -i '1i #include <cstring>' src/Katalog.h
 sed -i 's|return is;|return bool(is);|' src/AtributyKRL.cpp
 sed -i 's|fstream.h|fstream|' src/Katalog.cpp
 sed -i 's|character(|char_at(|' src/Editorc.cxx
+sed -i 's|"FL/Fl_File_Chooser.h"|<FL/Fl_File_Chooser.h>|' src/KatalogUIc.cxx
 
 %build
 make INSTALL_DIRECTORY=/usr

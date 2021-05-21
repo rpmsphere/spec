@@ -1,4 +1,4 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 %define modname enable
 
 Name:           python-%{modname}
@@ -18,10 +18,10 @@ BuildRequires:  python3-devel
 BuildRequires:  Cython
 BuildRequires:  python3-setuptools
 BuildRequires:  numpy atlas
-BuildRequires:  python-reportlab
+BuildRequires:  python3-reportlab
 BuildRequires:  swig
 BuildRequires:  libX11-devel
-Requires:       python-kiva = %{version}
+Requires:       python3-kiva = %{version}
 
 %description
 The Enable package is a multi-platform object drawing library built on top of
@@ -74,7 +74,7 @@ chmod +x %{buildroot}%{python3_sitearch}/kiva/{agg,quartz}/setup.py
 chmod +x %{buildroot}%{python3_sitearch}/%{modname}/savage/compliance/{comparator,xml_view,sike}.py
 rm examples/kiva/.gitignore
 
-sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{python3_sitearch}/*/*.py %{buildroot}%{python_sitearch}/*/*/*.py %{buildroot}%{python_sitearch}/*/*/*/*.py
+sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{python3_sitearch}/*/*.py %{buildroot}%{python3_sitearch}/*/*/*.py %{buildroot}%{python3_sitearch}/*/*/*/*.py
 
 %files -n python-kiva
 %doc LICENSE.txt  README.rst TODO.txt image_LICENSE.txt image_LICENSE_CP.txt image_LICENSE_Eclipse.txt image_LICENSE_Nuvola.txt image_LICENSE_OOo.txt

@@ -19,11 +19,11 @@ BMP, GIF, JPG, JPEG, PNG, PBM, PGM, PPM, XBM, XPM.
 
 %build
 %cmake .
-make PREFIX=%{_prefix}
+%cmake_build
 
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
-%make_install
+%cmake_install
 mv $RPM_BUILD_ROOT%{_datadir}/icons $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 %clean

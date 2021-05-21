@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Oct 18 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 26 2012 Nicolas Chauvet <kwizart@gmail.com> - 1.1-1
 - Update to 1.1
 * Thu Nov 24 2011 Nicolas Chauvet <kwizart@gmail.com> - 1.0-1

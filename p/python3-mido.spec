@@ -33,4 +33,4 @@ ports and serving and forwarding ports over a network.
 
 %changelog
 * Fri Aug 24 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.8
-- Rebuild for Fedora
+- Rebuilt for Fedora

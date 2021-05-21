@@ -45,7 +45,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Mar 17 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 13 2013 - lzh9102@gmail.com
 - Update to version 0.1.8
 * Fri Aug 31 2012 - lzh9102@gmail.com

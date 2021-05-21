@@ -48,4 +48,4 @@ sed -i -e 's/firefox/mozilla-firefox/' -e 's/my-computer/ossii/' lxpanel/panel.i
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

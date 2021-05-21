@@ -36,6 +36,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0a4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 23 2011 toms@suse.de
 - Initial version 2.0a4

@@ -32,4 +32,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Oct 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.16.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

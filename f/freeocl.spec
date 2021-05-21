@@ -61,4 +61,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

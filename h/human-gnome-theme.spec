@@ -1,4 +1,4 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 %global _name human-theme
 
 Name: human-gnome-theme
@@ -10,7 +10,7 @@ Release: 12.1
 Source0: https://launchpad.net/ubuntu/+archive/primary/+files/%{_name}_%{version}.tar.gz
 Source1: HumanLogin-index.theme
 URL: https://launchpad.net/human-theme
-BuildRequires: intltool, python, python-setuptools, python-distutils-extra
+BuildRequires: intltool, python3, python3-setuptools, python3-distutils-extra
 BuildArch: noarch
 Requires: humanity-icon-theme
 Requires: gtk-ubuntulooks-engine
@@ -27,11 +27,11 @@ the Human look.
 %setup -q -n %{_name}-%{version}
 
 %build
-python setup.py build
+python3 setup.py build
 
 %install
 %__rm -rf %{buildroot}
-python setup.py install --root=%{buildroot}
+python3 setup.py install --root=%{buildroot}
 sed -i '$a BackgroundImage=/usr/share/backgrounds/ubuntu/contest/maverick.xml' %{buildroot}%{_datadir}/themes/DarkRoom/index.theme
 sed -i '$a BackgroundImage=/usr/share/backgrounds/ubuntu/contest/oneiric.xml' %{buildroot}%{_datadir}/themes/Human/index.theme
 sed -i '$a BackgroundImage=/usr/share/backgrounds/ubuntu/contest/lucid.xml' %{buildroot}%{_datadir}/themes/Human-Clearlooks/index.theme
@@ -43,7 +43,7 @@ mv %{buildroot}%{_datadir}/icons/HumanLoginIcons/apps/64/computer.png %{buildroo
 
 %files
 %doc ChangeLog COPYING AUTHORS
-%{python_sitelib}/*
+%{python3_sitelib}/*
 %{_datadir}/locale/*/LC_MESSAGES/*
 %{_datadir}/icons/*
 %{_datadir}/themes/*

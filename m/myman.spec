@@ -43,6 +43,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Feb 24 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 30 2008 Benjamin C. Wiley Sittler <bsittler@gmail.com> 0.7.1-1
 - initial RPM spec file created

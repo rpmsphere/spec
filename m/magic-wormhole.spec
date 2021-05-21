@@ -56,4 +56,4 @@ install -Dm644 docs/wormhole-server.8 %{buildroot}%{_mandir}/man8/wormhole-serve
 
 %changelog
 * Sun Mar 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10.5
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -29,7 +29,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 30 2008 Wei-Lun Chao <bluebat@member.fsf.org> 1.0-11.ossii
 - Rebuild for M6(CentOS5)
 

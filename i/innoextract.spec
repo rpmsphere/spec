@@ -37,7 +37,7 @@ make %{?_smp_mflags}
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 24 2015 Daniel Scharrer <daniel@constexpr.org> - 1.5-1
 - Bump version to 1.5 (new upstream release):
 - Added support for Inno Setup 5.5.6 installers

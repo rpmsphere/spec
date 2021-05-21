@@ -38,7 +38,7 @@ find %buildroot%_datadir/icewm/themes -type d -print0 |
 
 %changelog
 * Thu Mar 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.17
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 07 2013 Dmitriy Khanzhin <jinn@altlinux.org> 1.2.17-alt5
 - updated some .xpm's for fix breaks themes with xorg 1.12.3.902 and later
   (bfo#54168)

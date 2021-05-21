@@ -6,7 +6,7 @@ License: GPL
 Group: Development/Languages
 Source: http://sourceforge.net/projects/jbasic/files/JBasic%20Source/JBasic%202.8/%{name}28.tar.gz
 URL: http://sourceforge.net/projects/jbasic/
-BuildRequires: java-devel-openjdk, ant, lua
+BuildRequires: java-openjdk-devel, ant, lua
 BuildArch: noarch
 Requires: jre
 

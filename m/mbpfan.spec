@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 27 2008 - uli@suse.de
 - update -> 1.9
   New open source, hardware accelerated OpenGL plugin included! dfOpenGL

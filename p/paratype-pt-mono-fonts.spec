@@ -46,7 +46,7 @@ install -m 0644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/%{_fontdir}
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.002OFL
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 29 2012 lazy.kent@opensuse.org
 - Update to 1.002OFL.
   * Added Bold style.

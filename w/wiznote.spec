@@ -7,7 +7,12 @@ License: GPLv3
 URL: https://github.com/WizTeam/WizQTClient
 #Source0: WizQTClient-%{version}.tar.gz
 Source0: WizQTClient-master.zip
-BuildRequires: cmake, qt5-devel, qt5-qtwebkit-devel
+BuildRequires: cmake
+BuildRequires: qt5-qtbase-devel
+BuildRequires: qt5-qtwebkit-devel
+BuildRequires: qt5-linguist
+BuildRequires: qt5-qtwebengine-devel
+BuildRequires: qt5-qtwebsockets-devel
 
 %description
 A cross-platform client written in Qt for the Wiz Note.
@@ -20,11 +25,11 @@ A cross-platform client written in Qt for the Wiz Note.
 #cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS=-Wno-narrowing .
 #sed -i 's|CXXFLAGS =|CXXFLAGS = -Wno-narrowing|' lib/cryptopp/GNUmakefile
 #sed -i 's|isystem |I|' `find . -name flags.make`
-%cmake -DCMAKE_BUILD_TYPE=Release
-make %{?_smp_mflags}
+%cmake -DCMAKE_BUILD_TYPE=Release .
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot}
+%cmake_install
 mv %{buildroot}%{_bindir}/WizNote %{buildroot}%{_bindir}/%{name}
 
 %files

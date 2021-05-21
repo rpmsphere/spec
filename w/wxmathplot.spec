@@ -8,7 +8,7 @@ Summary: 2D plot library for wxWidgets
 Group: Applications/Development
 URL: http://wxmathplot.sourceforge.net/
 Source: http://sourceforge.net/projects/wxmathplot/files/wxmathplot/%{version}/wxMathPlot-%{version}.tar.gz
-BuildRequires: cmake wxGTK-devel
+BuildRequires: cmake wxGTK2-devel
 
 %description
 wxMathPlot is a library to add 2D scientific plot functionality to wxWidgets.
@@ -28,12 +28,12 @@ Header files and libraries for the package %{name}.
 sed -i '/SET(wxWidgets_USE_LIBS base core)/d' CMakeLists.txt
 
 %build
-cmake -D CMAKE_CXX_COMPILER=g++ -D CMAKE_INSTALL_PREFIX:STRING=%{buildroot}/usr -D GDB_DEBUG:BOOL=FALSE -D BUILD_NATIVE:BOOL=TRUE -D MATHPLOT_SHARED:STRING=TRUE -D WXMATHPLOT_BUILD_EXAMPLES:BOOL=FALSE .
-make
+%cmake -D CMAKE_CXX_COMPILER=g++ -D CMAKE_INSTALL_PREFIX:STRING=/usr -D GDB_DEBUG:BOOL=FALSE -D BUILD_NATIVE:BOOL=TRUE -D MATHPLOT_SHARED:STRING=TRUE -D WXMATHPLOT_BUILD_EXAMPLES:BOOL=FALSE .
+%cmake_build
 
 %install
 rm -rf %{buildroot}
-%makeinstall
+%cmake_install
 %ifarch aarch64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif

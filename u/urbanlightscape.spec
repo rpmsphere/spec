@@ -73,7 +73,7 @@ done
 
 %changelog
 * Mon Oct 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr  7 2012 lazy.kent@opensuse.org
 - Update to 1.1.0.
 - Performance improvements when interacting with control points.

@@ -128,7 +128,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7r1785
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 23 2008 kirill.kirillov@gmail.com
 - disabled update-desktop-files macros not to remove existing translations
 - fixed desktop file to be displayed in main menu

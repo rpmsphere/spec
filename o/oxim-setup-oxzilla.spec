@@ -76,7 +76,7 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 01 2011 Wind Yan <yc.yan@ossii.com.tw> 0.0.1-6
 - Adjust font-size, layout.
 

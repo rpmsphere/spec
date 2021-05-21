@@ -26,7 +26,7 @@ cp -aT .%{_datadir}/ %{buildroot}%{_datadir}/
 
 %changelog
 * Thu Aug 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2016.05.03
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May  3 2016 sor.alexei@meowr.ru
 - Update to version 2016.05.03:
   * Linux Mint: Switch snap OSD tint from blue to green.

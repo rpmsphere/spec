@@ -74,7 +74,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 29 2010 toms@suse.de
 - Used --record instead of only --record
 - Disabled %%{py_sitedir} macro

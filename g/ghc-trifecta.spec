@@ -71,7 +71,7 @@ This package provides the Haskell %{pkg_name} library development files.
 
 %changelog
 * Mon Sep 11 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb  5 2017 psimons@suse.com
 - Update to version 1.6.2.1 with cabal2obs.
 * Tue Nov 29 2016 psimons@suse.com

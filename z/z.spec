@@ -29,4 +29,4 @@ install -Dm644 %{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 
 %changelog
 * Tue Oct 08 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11
-- Rebuild for Fedora
+- Rebuilt for Fedora

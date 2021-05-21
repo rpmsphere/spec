@@ -60,7 +60,7 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Fri Nov 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 21 2015 David Vasquez <davidjeremias82 AT gmail DOT com> 0.3.1
 - Updated to 0.3.1
 * Tue Jun 18 2013 David Vasquez <davidjeremias82 AT gmail DOT com>

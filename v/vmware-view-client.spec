@@ -87,7 +87,7 @@ cp -a %{SOURCE3} %{buildroot}%{_datadir}/pixmaps
 
 %changelog
 * Mon Jul 21 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0-2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Wed Mar  6 2013 Jeffrey C. Ollie <jeff@ocjtech.us> - 1.7.0.0-2
 - Bring in some more runtime requirements to make sure we have sound

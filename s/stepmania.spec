@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 22 2010 Chrin Lin <chris.lin@ossii.com.tw> 4.0-0 OX
 - OX LINUX Version

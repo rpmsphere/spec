@@ -68,6 +68,6 @@ This package includes the header files as well as the static library.
 
 %changelog
 * Wed Apr 29 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 5.11.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 26 2011 fbergman@u.washington.edu
 - initial release, version 5.2.0

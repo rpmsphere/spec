@@ -91,7 +91,7 @@ EOF
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 26 2010 Huan-Ting Luo <kylix.lo@ossii.com.tw> 1.0-3
 - add %dist
 * Tue Aug 24 2010 Huan-Ting Luo <kylix.lo@ossii.com.tw> 1.0-2

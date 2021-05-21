@@ -78,6 +78,6 @@ sed -i 's|%{buildroot}||g' manifest-rustc install.log manifest-rust-docs
 
 %changelog
 * Thu Jun 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Apr 28 2013 Radek Miček
 - Initial package

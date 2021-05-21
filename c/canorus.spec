@@ -16,7 +16,9 @@ Patch1:         canorus-0.5-desktopfile.patch
 Patch2:         canorus-0.7.2-DESTDIR.patch
 BuildRequires:  alsa-lib-devel
 BuildRequires:  cmake
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
+BuildRequires:  qt5-qtsvg-devel
+BuildRequires:  qt5-qttools-devel
 BuildRequires:  zlib-devel
 BuildRequires:  python3
 BuildRequires:  swig
@@ -47,10 +49,10 @@ cmake \
     -DCANORUS_INSTALL_LIB_DIR=%{_libdir} \
     -DCMAKE_SKIP_RPATH:BOOL=TRUE       \
     .
-%__make %{?_smp_mflags}
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 install -D -m644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
 install -D -m644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.xpm
 install -D -m644 %{SOURCE1} %{buildroot}%{_mandir}/man1/%{name}.1

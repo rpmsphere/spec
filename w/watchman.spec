@@ -198,7 +198,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
 
 %changelog
 * Wed Mar 20 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 20 2017 matthias.gerstner@suse.com
 - fallthrough.diff: fix gcc 7 build issues
 * Wed Nov 16 2016 jengelh@inai.de

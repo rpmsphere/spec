@@ -51,7 +51,7 @@ install -D std/tools/haxedoc/haxedoc.sh %buildroot%_bindir/haxedoc
 
 %changelog
 * Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 05 2013 Vitaly Lipatov <lav@altlinux.ru> 3.0.0-alt1
 - merge with tag v3-00, real 3.0.0 version
 * Fri Mar 29 2013 Vitaly Lipatov <lav@altlinux.ru> 3.0.0-alt0.1

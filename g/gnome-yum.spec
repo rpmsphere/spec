@@ -65,7 +65,7 @@ if which scrollkeeper-update>/dev/null 2>&1; then scrollkeeper-update; fi
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 12 2008 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.5-1.ossii
 - Added traditional Chinese translation
 - Rebuild for M6(CentOS5)

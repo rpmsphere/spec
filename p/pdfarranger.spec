@@ -54,7 +54,7 @@ python3 setup.py install --root %{buildroot}
 
 %changelog
 * Mon Dec 17 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 16 2018 daviddavid <daviddavid> 1.1-1.mga7
 + Revision: 1341749
 - initial package pdfarranger

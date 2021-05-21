@@ -10,6 +10,7 @@ URL: http://osplus.sourceforge.net/
 Source0: http://sourceforge.net/projects/osplus/files/Text%20Editor/%{version}/%{name}-%{version}-src.zip
 BuildRequires: dos2unix
 BuildRequires: rhtvision-devel
+BuildRequires: gpm-devel
 
 %description
 A text editor included in OSPlus.

@@ -1,4 +1,5 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
+
 Name:           python-story_parser
 Version:        0.1.2
 Release:        2.1
@@ -7,9 +8,8 @@ Summary:        A Given/When/Then BDD stories parser
 License:        MIT
 Group:          Development/Languages/Python
 Source:         http://pypi.python.org/packages/source/s/story_parser/story_parser-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
-BuildRequires:  python-devel
-BuildRequires:  python-setuptools
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
 BuildArch:      noarch
 
 %description
@@ -32,17 +32,16 @@ Scenario 1: Getting Title
 
 %build
 export CFLAGS="%{optflags}"
-python setup.py build
+python3 setup.py build
 
 %install
-python setup.py install --prefix=%{_prefix} --root=%{buildroot}
+python3 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 
 %clean
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
-%{python_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2

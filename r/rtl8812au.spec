@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 02 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.3.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 30 2017 Alexei Panov <me AT elemc DOT name> 4.3.14-2
 -  Fixed obsolete-name parameter
 * Tue May 30 2017 Alexei Panov <me AT elemc DOT name> 4.3.14-1

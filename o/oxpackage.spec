@@ -46,7 +46,7 @@ update-desktop-database &> /dev/null || :
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 7 2010 Chih-Chun Tu <vincent.tu@ossii.com.tw> 0.3-2
 - Remove the queuing window of packages
 - Add the information window of packages after clicking the downloading button

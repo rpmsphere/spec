@@ -53,6 +53,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Jun 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug 28 2012 nekolayer@yandex.ru
 - initial package

@@ -59,7 +59,7 @@ install -m 0644 lmarbles32.gif $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 %changelog -n marbles
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 20 2008 - john@ossii.com.tw
 - Rebuild for M6(OSSII)
 * Wed Jan 25 2006 - mls@suse.de

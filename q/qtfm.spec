@@ -8,7 +8,7 @@ URL:		http://qtfm.eu/
 License:	GPL
 Source:		https://github.com/rodlie/qtfm/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Requires:	p7zip
-BuildRequires:	gcc-c++, qt5-devel, file-devel
+BuildRequires:	gcc-c++, qt5-qtbase-devel, file-devel
 Group:		Applications/File
   
 %description
@@ -18,6 +18,7 @@ and works great with minimal desktop environments like Openbox.
 %prep
 %setup -q
 #sed -i '223s|return false;|return "";|' src/mymodel.cpp
+sed -i '14i #include <QPainterPath>' libfm/iconview.h
 
 %build
 #lrelease-qt5 %{name}.pro

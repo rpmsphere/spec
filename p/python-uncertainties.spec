@@ -1,16 +1,16 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 %define pyname uncertainties
 
 Name:           python-uncertainties
-Version:        3.0.2
-Release:        3.1
+Version:        3.1.5
+Release:        1
 Summary:        Transparent calculations with uncertainties
 License:        GPL-2
 URL:            http://packages.python.org/uncertainties/
 Group:          Development/Libraries/Python
 Source:         https://pypi.python.org/packages/source/u/uncertainties/%{pyname}-%{version}.tar.gz
 BuildArch:      noarch
-BuildRequires:  python-devel, python-setuptools
+BuildRequires:  python3-devel, python3-setuptools
 
 %description
 Transparent calculations with uncertainties on the quantities involved (aka
@@ -24,7 +24,7 @@ exactly zero, for instance (most implementations found on the web yield a
 non-zero uncertainty for x-x, which is incorrect).
 
 %prep
-%setup -n %{pyname}-%{version}
+%setup -qn %{pyname}-%{version}
 
 # fix some exec bits
 find . -name "*.py" -exec chmod -x '{}' \;
@@ -37,14 +37,14 @@ for file in `find . -name "*.py"`; do
 done
 
 %build
-%{__python} setup.py build
+python3 setup.py build
 
 %install
-python setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
+python3 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
 %files
 %doc README.rst LICENSE.txt
-%{python_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Wed Jan 17 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.2

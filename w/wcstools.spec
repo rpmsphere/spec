@@ -75,7 +75,7 @@ ln -s libwcs.so.0.0.0 libwcs.so
 
 %changelog
 * Sun Oct 28 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 27 2012 Tom Trebisky <tom@mmto.org> - 3.8.4-1
 - This package was orphaned by Fedora as of Fedora 16, so
 - we are building it locally at the MMT.
@@ -114,7 +114,7 @@ ln -s libwcs.so.0.0.0 libwcs.so
 * Wed Sep 05 2007 Sergio Pascual <spr at astrax.fis.ucm.es> 3.7.0-1
 - New upstream source 3.7.0
 * Mon Aug 27 2007 Sergio Pascual <spr at astrax.fis.ucm.es> 3.6.8-2.1
-- Rebuild for Fedora 8 to get the build-id
+- Rebuilt for Fedora 8 to get the build-id
 * Tue Mar 20 2007 Sergio Pascual <spr@astrax.fis.ucm.es> 3.6.8-2
 - Fix for bug #232413
 * Mon Mar 19 2007 Sergio Pascual <spr@astrax.fis.ucm.es> 3.6.8-1

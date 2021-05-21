@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 14 2008 Wind <yc.yan@ossii.com.tw> 1.2-35.ossii
 - Add %makeinstall parameter: initrdskeldir.
 

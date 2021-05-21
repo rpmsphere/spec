@@ -75,7 +75,7 @@ EOF
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 10 2011 Wind <yc.yan@ossii.com.tw> - 0.3-2
 - Much more updates.
 

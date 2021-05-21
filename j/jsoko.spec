@@ -7,7 +7,7 @@ License: GPLv3
 URL: http://www.sokoban-online.de/
 Source0: http://sourceforge.net/projects/jsokoapplet/files/JSoko/Version%20%{version}/JSoko_%{version}-src.zip
 BuildRequires: ant
-BuildRequires: java-devel-openjdk lua
+BuildRequires: java-openjdk-devel lua
 BuildRequires: xml-commons-apis
 BuildArch: noarch
 Requires: jre

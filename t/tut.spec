@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue May 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2016.04.01
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 21 2009 admin@eregion.de
 - add patch for libtut to allow snowglobe build
 * Wed Jul 01 2009 admin@eregion.de

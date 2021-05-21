@@ -48,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jan 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 30 2010 Isaac Fischer <xwaver@gmail.com> - 1.0.1-1  
 - initial spec

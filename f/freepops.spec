@@ -101,7 +101,7 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 05 2014 pterjan <pterjan> 0.2.9-11.mga4
 + Revision: 564808
 - Fix build

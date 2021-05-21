@@ -63,7 +63,7 @@ make
 
 %changelog
 * Wed Jan 27 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.20150126
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jan 14 2015 sander85 <sander85> 1.1-20150113.2.mga5
 + Revision: 810653
 - Fix major version

@@ -49,4 +49,4 @@ exit 0
 
 %changelog
 * Mon Jul 21 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -90,7 +90,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 01 2010 Wei-Lun Chao <bluebat@member.fsf.org> 0.9.4_r4133.ossii
 - Use madwifi-0.9.4-r4133-20100922.tar.gz
 

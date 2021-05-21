@@ -59,6 +59,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Jan 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Feb 15 2010 slick50 <lxgator@gmail.com> 0.13-1pclos2010
 - initial pkg

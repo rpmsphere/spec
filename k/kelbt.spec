@@ -61,6 +61,6 @@ install -m 755 kelbt/%{name} $RPM_BUILD_ROOT/%{_bindir}/%{name}
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan  3 2010 David Bolt <dbolt@davjam.org> 0.14
 - First RPM package.

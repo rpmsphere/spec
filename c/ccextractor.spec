@@ -8,6 +8,7 @@ Group:		Video
 License:	GPL 2.0
 URL:		http://ccextractor.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.xz
+BuildRequires: autoconf
 BuildRequires: utf8proc-devel
 BuildRequires: ffmpeg-devel
 BuildRequires: tesseract-devel

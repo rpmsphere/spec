@@ -88,7 +88,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 23 2010 Sean <sean@ossii.com.tw> 0.3-1
 - Add Auto detect New ezip File and write to databese
 - Modify .desktop setting.

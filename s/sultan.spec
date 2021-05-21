@@ -8,7 +8,8 @@ Group:    Office
 License:  GPLv3
 URL:      https://github.com/apinprastya/sultan
 Source0:  %{name}-%{version}.tar.gz
-BuildRequires: qt5-devel
+BuildRequires: qt5-qtbase-devel
+BuildRequires: qt5-qtwebsockets-devel
 #BuildRequires: cups-devel
 
 %description

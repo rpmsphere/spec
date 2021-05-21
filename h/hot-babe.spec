@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 11 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 24 2008 mmarek@suse.cz
 - packaged hot-babe-0.2.2

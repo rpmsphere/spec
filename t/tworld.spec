@@ -58,4 +58,4 @@ EOF
 
 %changelog
 * Thu Jun 15 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 5.35
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Feb 22 2005 Cymon J. Cox <cymon@duke.edu>
 - Rebuild for version 5.35

@@ -30,7 +30,7 @@ A set of utilities for creating, checking and labeling exFAT file system.
 
 %changelog
 * Mon Oct 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Apr 23 2020 tmb <tmb> 1:1.0.2-1.mga8
 + Revision: 1571421
 - fix build

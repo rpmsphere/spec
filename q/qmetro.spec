@@ -31,16 +31,15 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 make INSTALL_ROOT=$RPM_BUILD_ROOT install
-rm -f $RPM_BUILD_ROOT%{_datadir}/%{name}/map/Moscow.pmz
-rm -rf $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/80x80
 for size in 48x48 32x32 22x22 16x16 ; do
     install -dm 0755 \
         $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/${size}/apps
     convert -resize ${size} rc/icons/hicolor/64x64/apps/%{name}.png \
         $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/${size}/apps/%{name}.png
 done
-mv %{buildroot}/tmp/qMetro %{buildroot}%{_datadir}/qmetro
-ln -s ../pmetro-maps %{buildroot}%{_datadir}/qmetro/map
+mv %{buildroot}/tmp/qMetro %{buildroot}%{_datadir}/%{name}
+rm -rf %{buildroot}%{_datadir}/%{name}/map
+ln -s ../pmetro-maps %{buildroot}%{_datadir}/%{name}/map
 
 %clean
 rm -rf $RPM_BUILD_ROOT

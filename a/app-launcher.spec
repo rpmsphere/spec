@@ -92,7 +92,7 @@ msgfmt zh_CN.po -o $RPM_BUILD_ROOT%{_datadir}/locale/zh_CN/LC_MESSAGES/%{name}.m
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 22 2009 Feather Mountain <john@ossii.com.tw> 0.2-3.ossii
 - Add directories.deny for category list.
 

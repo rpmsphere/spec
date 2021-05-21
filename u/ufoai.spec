@@ -53,9 +53,9 @@ mkdir base
 #sed -i 's|Z_DEFAULT_COMPRESSION|PNG_Z_DEFAULT_COMPRESSION|' src/shared/images.c
 
 %build
+export LDFLAGS="-lX11"
 ./configure --prefix=/usr --disable-ufo2map --enable-release
-sed -i 's|CXXFLAGS :=|CXXFLAGS := -Wno-narrowing|' Makefile
-
+sed -i 's|CXXFLAGS :=|CXXFLAGS := -Wno-narrowing -std=gnu++11|' Makefile
 make %{?_smp_mflags}
 make %{?_smp_mflags} lang
 # wrapper scripts - generated because we need arch dependent paths

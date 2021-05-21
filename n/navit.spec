@@ -27,7 +27,8 @@ BuildRequires:	gettext-devel
 BuildRequires:	gd-devel
 BuildRequires:	speech-dispatcher-devel
 BuildRequires:	gpsd-devel
-BuildRequires:	qt4-devel
+BuildRequires:	qt5-qtbase-devel
+BuildRequires:  qt5-qtsvg-devel
 BuildRequires:	shapelib-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -92,12 +93,12 @@ export LDFLAGS=-Wl,--allow-multiple-definition
 #autoreconf -i
 %cmake .
 #configure --disable-gui-clutter --enable-graphics-gd --disable-graphics-qt-qpainter
-make 
+%cmake_build 
 
 %install
 rm -rf %{buildroot}
 #makeinstall
-make DESTDIR=%{buildroot} install
+%cmake_install
 
 # Don't need the README here
 rm -f %{buildroot}%{_datadir}/%{name}/README
@@ -173,8 +174,8 @@ rm -rf %{buildroot}
 - Rebuilt for Fedora
 * Fri Sep 25 2009 Adam Williamson <awilliam@redhat.com> - 0.1.2-0.2.20090918svn2578
 - spec clean:
-	+ add svn snapshot source creation comment
-	+ use make install DESTDIR=buildroot, not makeinstall
++ add svn snapshot source creation comment
++ use make install DESTDIR=buildroot, not makeinstall
 * Fri Sep 18 2009 Adam Williamson <awilliam@redhat.com> - 0.1.2-0.1.20090918svn2578
 - update to latest SVN, bump version to 0.1.2 as upstream released a 0.1.1
 - change evr to match policy (per review)

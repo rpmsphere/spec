@@ -159,7 +159,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.00
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec  9 2012 chri@gallochri.com
 -Initial Debian Version
 * Wed Dec  5 2012 chri@gallochri.com

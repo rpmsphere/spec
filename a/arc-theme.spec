@@ -38,4 +38,4 @@ sed -i '$a BackgroundImage=%{_datadir}/themes/Arc/glacier-869593_1920.jpg' %{bui
 
 %changelog
 * Wed Jun 29 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20160605
-- Rebuild for Fedora
+- Rebuilt for Fedora

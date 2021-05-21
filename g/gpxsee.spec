@@ -56,7 +56,7 @@ fi
 
 %changelog
 * Fri Jun 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.15
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 28 2016 tumic@cbox.cz
 - Update to version 2.14
   * Added print support.

@@ -224,7 +224,7 @@ fi
 
 %changelog
 * Fri Jun 21 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 2.8.12-31
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild

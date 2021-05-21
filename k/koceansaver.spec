@@ -35,7 +35,7 @@ make
 
 %changelog
 * Thu Feb 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 0.8-3.mga5
 + Revision: 745169
 - Second Mageia 5 Mass Rebuild

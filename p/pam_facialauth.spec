@@ -23,8 +23,8 @@ sed -i -e 's|CV_BGR2GRAY|6|' -e 's|CV_LOAD_IMAGE_GRAYSCALE|0|' src/FacialAuth.cp
 sed -i 's|CV_HAAR_SCALE_IMAGE|2|' src/FaceRecWrapper.cpp
 
 %build
-%cmake
-make
+cmake .
+%make_build
 
 %install
 #make_install

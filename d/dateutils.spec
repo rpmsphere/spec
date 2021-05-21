@@ -55,7 +55,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Sep 14 2012 sweet_f_a@gmx.de
 - bump version 0.2.3, this is a bug fix and feature release.
   * ISO 8601 week dates are now first class objectsi

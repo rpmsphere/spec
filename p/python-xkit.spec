@@ -1,4 +1,5 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
+
 Summary: A simple, transparent and easy to extend xorg parser
 Name:    python-xkit
 Version: 0.5.0
@@ -7,7 +8,7 @@ Source0: https://launchpadlibrarian.net/107156275/x-kit_%{version}.tar.gz
 License: LGPLv2
 Group:   Development/Libraries
 URL:     https://launchpad.net/x-kit
-BuildRequires: python-devel
+BuildRequires: python3-devel
 BuildArch: noarch
 
 %description
@@ -19,16 +20,16 @@ chmod -x tests/* examples/*
 
 
 %build
-python setup.py build
+python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-python setup.py install --skip-build  --root $RPM_BUILD_ROOT 
-ln -s xkit %{buildroot}%{python_sitelib}/XKit
+python3 setup.py install --skip-build  --root $RPM_BUILD_ROOT 
+ln -s xkit %{buildroot}%{python3_sitelib}/XKit
 
 %files 
 %doc AUTHORS COPYING README PKG-INFO examples tests
-%{python_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Mon Feb 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0

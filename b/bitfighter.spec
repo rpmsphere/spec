@@ -126,7 +126,7 @@ install -D -m 0644 %{SOURCE2} %{buildroot}%{_datadir}/applications/%{name}.deskt
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 019f
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 01 2012 Kevin Chen <kevin.chen@ossii.com.tw>
 - Rebuild for OSSII
 * Wed May  9 2012 dbuck@novell.com

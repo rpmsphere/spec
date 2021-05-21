@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name: me-jasspa
 Version: 161004
 Release: 4.1
@@ -20,10 +22,11 @@ browser, and much more!
 
 %prep
 %setup -q -n me%{version}
+sed -i 's|sys_errlist\[errno\]|strerror(errno)|' src/file.c src/fileio.c
 
 %build
-%cmake
-make
+cmake .
+%make_build
 
 %install
 install -d -m 0755 %{buildroot}%{_bindir}

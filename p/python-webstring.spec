@@ -46,6 +46,6 @@ cElementTree libraries.
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar  7 2010 toms@suse.de
 - First release 0.5

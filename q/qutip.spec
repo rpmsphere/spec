@@ -1,4 +1,5 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
+
 Name: qutip
 Summary: Quantum Toolbox in Python
 Version: 2.2.0
@@ -7,7 +8,7 @@ Group: Development/Libraries
 License: GPLv3
 URL: http://qutip.org/
 Source0: http://qutip.org/downloads/%{version}/QuTiP-%{version}.tar.gz
-BuildRequires: python-devel numpy Cython atlas
+BuildRequires: python3-devel numpy Cython atlas
 
 %description
 QuTiP is open-source software for simulating the dynamics of open quantum
@@ -23,14 +24,14 @@ superconducting circuits, and quantum nanomechanical resonators.
 sed -i 's|-w -ffast-math -O3|-ffast-math|' qutip/cyQ/setup.py
 
 %build
-python setup.py build
+python3 setup.py build
 
 %install
-python setup.py install --root=%{buildroot}
+python3 setup.py install --root=%{buildroot}
 
 %files
 %doc *.txt
-%{python_sitearch}/*
+%{python3_sitearch}/*
 
 %changelog
 * Wed Dec 11 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0

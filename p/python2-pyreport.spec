@@ -33,7 +33,7 @@ CFLAGS="%{optflags} " python2 setup.py bdist_egg
 rm -rf $RPM_BUILD_ROOT
 
 # Install the egg so that only code that wants this version can get it.
-#mkdir -p $RPM_BUILD_ROOT%{python2_sitelib}
+mkdir -p $RPM_BUILD_ROOT%{python2_sitelib}
 easy_install-2.7 -m --prefix $RPM_BUILD_ROOT%{_usr} dist/*.egg
 
 # remove byte-compiling until I figure out:

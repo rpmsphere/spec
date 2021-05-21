@@ -1,10 +1,10 @@
 Name:			cosmosmash
-Version:		1.4.7
+Version:		1.4.8
 Summary:		Clone of the Intellivision(TM) game Astrosmash(TM)
 License:		GPLv2
 URL:			http://sarrazip.com/dev/%{name}.html
 Group:			Amusements/Games
-Release:		11.4
+Release:		1
 Source:			%{name}-%{version}.tar.gz
 BuildRequires:		desktop-file-utils
 BuildRequires:		gcc-c++
@@ -56,5 +56,5 @@ install -D -m644 src/%{name}.desktop %{buildroot}/%{_datadir}/applications/%{nam
 %{_mandir}/man*/*
 
 %changelog
-* Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.7
+* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.8
 - Rebuilt for Fedora

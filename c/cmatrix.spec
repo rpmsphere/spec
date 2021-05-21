@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu May 19 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 11 2011 puzel@novell.com
 - use spec-cleaner
 - add cmatrix-no-TIME-DATE.patch (prevent unnecessary rebuilds)

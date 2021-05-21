@@ -115,7 +115,7 @@ install -m 644 %{SOURCE9} %{buildroot}%{_datadir}/applications/
 
 %changelog
 * Tue Nov 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 23 2017 glmarques.info@gmail.com
 - Updated to version 1.6.7
   NOTE: This is a bugfixed and spit-and-polish update. The initial release notes below are still from the 1.6.6 release.

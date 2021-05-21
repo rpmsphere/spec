@@ -11,7 +11,7 @@ BuildArch: noarch
 BuildRequires: ant
 #BuildRequires: apache-ivy
 BuildRequires: docbook-style-xsl
-BuildRequires: java-devel-openjdk lua
+BuildRequires: java-openjdk-devel lua
 BuildRequires: libxslt
 
 %description

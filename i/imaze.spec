@@ -11,13 +11,13 @@ Source:       %{name}-%{version}.tar.bz2
 BuildRequires: motif-devel alsa-lib-devel
 
 %description
-A 3D TCP/IP-network-game under X11/OpenMotif. There are clients (imaze, ninja)
+A 3D TCP/IP-network-game under X11/OpenMotif. There are clients (imaze, ininja)
 working together with one server (imazesrv).
 
 To start the game, you have to fire up the server first:
   imazesrv /usr/lib/imaze/labs/demolab.lab &
 Then you can start the clients with:
-  ninja <Server> &
+  ininja <Server> &
   imaze &
 
 Authors:
@@ -28,6 +28,7 @@ Authors:
 %prep
 %setup -q
 sed -i '1i #include <sys/types.h>' src/grafik.h
+sed -i -e 's/|| errno >= sys_nerr//' -e 's|sys_errlist\[errno\]|strerror(errno)|' src/system.c
 
 %build
 ./configure --prefix=/usr
@@ -37,12 +38,7 @@ make %{?_smp_mflags} CPPFLAGS='-DDEFAULT_SERVER=\"localhost\" -DDEFAULT_SOUND_DI
 %makeinstall
 rm -f $RPM_BUILD_ROOT%{_libdir}/lib*.la
 rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/packages
-
-%post
-/sbin/ldconfig
-
-%postun
-/sbin/ldconfig
+mv $RPM_BUILD_ROOT%{_bindir}/ninja $RPM_BUILD_ROOT%{_bindir}/ininja
 
 %files
 %doc README AUTHORS COPYING Copyright

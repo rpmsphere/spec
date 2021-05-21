@@ -99,7 +99,7 @@ desktop-file-install \
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Tue Aug 28 2006 Matthias Saou <http://freshrpms.net/> 2.6-0.8.beta
 - Update to 2.6beta-7.
@@ -150,7 +150,7 @@ desktop-file-install \
 * Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 2.5-0.beta3.1
 - Update to 2.5beta-3.
 - Added missing zlib and libpng dependencies.
-- Rebuild for Fedora Core 1.
+- Rebuilt for Fedora Core 1.
 
 * Mon Mar 31 2003 Matthias Saou <http://freshrpms.net/>
 - Rebuilt for Red Hat Linux 9.

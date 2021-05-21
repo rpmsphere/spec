@@ -21,7 +21,7 @@ Patch2:		libqxt-header-fix.patch
 Patch3:		libqxt-gcc6.patch
 BuildRequires:	avahi-compat-libdns_sd-devel
 BuildRequires:	avahi-devel
-BuildRequires:	db4-devel
+BuildRequires:	libdb-devel
 BuildRequires:	libXrandr-devel
 BuildRequires:	openssl-devel
 BuildRequires:	qt4-devel

@@ -152,7 +152,7 @@ convert -scale "64x64" %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/64x64
 
 %changelog
 * Mon Aug 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat May 05 2012 mitya <mitya> 5.2.1-1.mga2
 + Revision: 234779
 - Update to 5.2.1

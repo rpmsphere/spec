@@ -35,4 +35,4 @@ rm -r %{buildroot}%{_datadir}/doc/%{name}
 
 %changelog
 * Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

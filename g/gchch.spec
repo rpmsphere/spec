@@ -60,6 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 04 2003 Loban Rahman <loban@earthling.net> - 1.9.0
 - Initial package

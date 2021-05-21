@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Aug 17 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 5.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 5.4.0-10
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 * Tue Jun 16 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.4.0-9

@@ -70,7 +70,7 @@ chmod a+x %{buildroot}/usr/share/shotcut/qml/export-edl/rebuild.sh
 
 %changelog
 * Wed Apr 05 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 17.04
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 24 2016 David Vásquez <davidjeremias82 AT gmail DOT com> - 16.08-1
 - Updated
 * Tue Jul 12 2016 David Vásquez <davidjeremias82 AT gmail DOT com> - 16.07-1

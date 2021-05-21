@@ -25,9 +25,10 @@ A simple, high-performance, threaded, and interactive flocking demo written in C
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
 %cmake
-make
+%cmake_build
 
 %install
+cd %{_host}
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -d %{buildroot}%{_datadir}/applications

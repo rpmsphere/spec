@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Mar 30 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.18-alpha
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 27 2012 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> - 0.1.18-1.alpha
 - update to 0.1.18, add patch to build with gcc 4.7
 * Tue May 31 2011 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> - 0.1.17-1.alpha

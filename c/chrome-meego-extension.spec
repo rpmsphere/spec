@@ -80,7 +80,7 @@ python %{_libdir}/chrome-meego-extension/installer/installer.py uninstall %{_lib
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Mar 16 2011 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for OSSII
 * Tue Nov 23 2010 prusnak@opensuse.org

@@ -1,10 +1,11 @@
-%global	    no_install_post_strip	1
+%global no_install_post_strip 1
+%undefine _missing_build_ids_terminate_build
 %undefine _debugsource_packages
 
 Summary:	Flat assembler
 Summary(pl):	  "Płaski" assembler
 Name:		fasm
-Version:	1.73.24
+Version:	1.73.27
 Release:	1
 License:	distributable
 Group:		Development/Tools
@@ -58,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 
 %changelog
-* Tue May 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.73.24
+* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.73.27
 - Rebuilt for Fedora
 * Sun Aug 29 2004 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org

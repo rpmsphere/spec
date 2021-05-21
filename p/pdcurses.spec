@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:           pdcurses
-Version:        3.4
-Release:        27.1
+Version:        3.9
+Release:        1
 Summary:        Public Domain Curses for X11
 License:        Public Domain
 Group:          Development/Libraries
@@ -28,21 +28,19 @@ Header files and Libraries for the package pdcurses.
 
 %prep
 %setup -q -n PDCurses-%{version}
-sed -i 's|ln -f -s $(libdir)/|ln -f -s |' Makefile.in
-%ifarch x86_64 aarch64
-sed -i 's|include/lib|include/lib64|' configure
-%endif
 
 %build
+cd x11
 %configure
 make
-make -C doc
 
 %install
-make DESTDIR=$RPM_BUILD_ROOT install
-%ifarch x86_64 aarch64
-mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
-%endif
+cd x11
+install -d %{buildroot}%{_includedir}/xcurses
+install -Dm644 ../*.h %{buildroot}%{_includedir}/xcurses
+install -Dm644 libXCurses.a %{buildroot}%{_libdir}/libXCurses.a
+install -m755 lib*.so %{buildroot}%{_libdir}
+install -Dm755 xcurses-config %{buildroot}%{_bindir}/xcurses-config
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,20 +50,14 @@ rm -rf $RPM_BUILD_ROOT
 %postun -p /sbin/ldconfig
 
 %files
-%doc README HISTORY IMPLEMNT doc/*.txt
+%doc docs/*
 %{_libdir}/libXCurses.so
-%{_libdir}/libXpanel.so
 
 %files devel
 %{_bindir}/xcurses-config
 %{_libdir}/libXCurses.a
-%{_libdir}/libXpanel.a
-%{_includedir}/xcurses.h
-%{_includedir}/xpanel.h
-%{_includedir}/xcurses/curses.h
-%{_includedir}/xcurses/panel.h
-%{_includedir}/xcurses/term.h
+%{_includedir}/xcurses
 
 %changelog
-* Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4
+* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9
 - Rebuilt for Fedora

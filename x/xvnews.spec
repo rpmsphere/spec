@@ -31,6 +31,7 @@ sed -i 's|, daylight|; int daylight|' getdate.y
 sed -i 's|-lintl|-I/usr/include/tirpc -ltirpc|' Imakefile Makefile.dist
 sed -i -e 's|#undef POSIX_REGEX|#define POSIX_REGEX|' -e 's|#define SVR4_REGEX|#undef SVR4_REGEX|' config.h
 sed -i 's|union wait|int|' xv_init.c
+sed -i 's|sys_errlist\[errno\]|strerror(errno)|' guide/libguide/gio.c
 
 %build
 export OPENWINHOME=/usr/openwin

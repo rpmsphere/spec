@@ -73,7 +73,7 @@ EOF
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 24 2009 Feather Mountain <john@ossii.com.tw> 0.2-2.ossii
 - Add config settings.
 - Fix fullscreen in lxde failure.

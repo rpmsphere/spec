@@ -138,7 +138,7 @@ rm -fr %{buildroot}%{_includedir}/%{name}
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 04 2020 daviddavid <daviddavid> 3.4.4-2.mga8
 + Revision: 1590320
 - rebuild for new blender 2.83

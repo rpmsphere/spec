@@ -30,7 +30,7 @@ make
 
 %changelog
 * Sun Oct 22 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Mar 11 2014 Ilya Mashkin <oddity@altlinux.ru> 3.8.9-alt1
 - 3.8.9 (Closes: #25694)
 * Wed Oct 22 2008 Ilya Mashkin <oddity@altlinux.ru> 3.8.6-alt1

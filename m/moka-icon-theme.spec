@@ -27,6 +27,6 @@ cp -a Moka %{buildroot}%{_datadir}/icons
 
 %changelog
 * Wed Jul 20 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 2 2013 arnaldo.coelho@gmail.com
 - Initial release

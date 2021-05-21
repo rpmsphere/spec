@@ -43,6 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 11 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.0a1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 21 2011 scorot@gtt.fr - 1.0.0
 - Initial release

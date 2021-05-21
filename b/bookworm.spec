@@ -57,7 +57,7 @@ find %{buildroot} -name \*.txt -exec chmod 0644 {} +
 
 %changelog
 * Mon Apr 15 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 02 2019 daviddavid <daviddavid> 1.1.1-1.mga7
 + Revision: 1362383
 - initial package bookworm

@@ -48,7 +48,7 @@ mv %{buildroot}%{_datadir}/app-install/icons/electrum.png %{buildroot}%{_datadir
 
 %changelog
 * Sat Apr 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 17 2013 prusnak@opensuse.org
 - updated to 1.7.3
 * Tue Mar 26 2013 prusnak@opensuse.org

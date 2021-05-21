@@ -8,7 +8,7 @@ URL:		https://atelier.kde.org/
 Source:		https://download.kde.org/stable/atcore/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qt5-qtcharts-devel
 
 %description
@@ -30,11 +30,11 @@ developing applications that use %name.
 
 %build
 %cmake .
-make
+%cmake_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%make_install
+%cmake_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT

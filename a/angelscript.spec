@@ -61,7 +61,7 @@ popd
 
 %changelog
 * Sun Apr 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.22.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec  9 2012 joop.boonen@opensuse.org
 - Fixes in spec and patch files
 * Thu Nov 15 2012 joop.boonen@opensuse.org

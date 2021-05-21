@@ -61,4 +61,4 @@ rm %{buildroot}%{_datadir}/info/dir
 
 %changelog
 * Tue Feb 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

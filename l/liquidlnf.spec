@@ -89,7 +89,7 @@ ln -s %{name}-%{version} %{_javadocdir}/%{name}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 13 2009 Feather Mountain <john@ossii.com.tw> - 0.2.6-0.3.ossii
 - Rebuild for M6(OSSII)
 * Tue Feb 20 2007 Toni Graffy <toni@links2linux.de> - 0.2.6-0.pm.3

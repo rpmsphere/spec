@@ -1,7 +1,7 @@
 %define _default_patch_fuzz 2
 
 Name:           hypermail
-BuildRequires:  httpd-devel bison gdbm-devel apr-util-devel pcre-devel libdb4-devel
+BuildRequires:  httpd-devel bison gdbm-devel apr-util-devel pcre-devel libdb-devel
 License:        GPL v2 or later
 Group:          Productivity/Networking/Email/Utilities
 Version:        2.3.0

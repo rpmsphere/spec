@@ -118,7 +118,7 @@ make %{?_smp_mflags} VERBOSE=1
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May  7 2012 lazy.kent@opensuse.org
 - Update to 0.9.9.
   * Added --as-one (and --no-as-one) option to glyrc.

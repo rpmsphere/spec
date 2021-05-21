@@ -89,7 +89,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.5.rc1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 27 2010 Emmanuel Andry <eandry@mandriva.org> 1.3.0-0.rc1.1mdv2010.1
 + Revision: 512492
 - BR readline-devel

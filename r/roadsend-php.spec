@@ -91,7 +91,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 12 2009 Harry Chen <harry.chen@ossii.com.tw> 20090812-1.fc11
 - rebuild and update to 20090812
 * Tue Sep 09 2008 Feather Mountain <john@ossii.com.tw> 2.9.7-1.ossii

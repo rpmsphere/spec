@@ -49,7 +49,7 @@ find %{buildroot} -type f -name "*.la" -delete -print
 
 %changelog
 * Tue Jun 21 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 13 2016 astieger@suse.com
 - update to 0.99.2
   * new API: json_object_get_member_count()

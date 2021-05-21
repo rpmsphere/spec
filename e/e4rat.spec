@@ -39,11 +39,12 @@ types and/or earlier versions of extended filesystems are not supported.
 %autopatch -p1
 
 %build
-%cmake
-%make_build
+export CXXFLAGS="-std=gnu++11"
+%cmake .
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
 mkdir -p %buildroot/var/lib/e4rat
 

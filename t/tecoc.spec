@@ -17,6 +17,7 @@ implementation, and comes with a copy of the original DECUS TECO documentation.
 
 %prep
 %setup -q -n %{name}%{version}
+sed -i -e '/sys_nerr/d' -e 's|sys_errlist\[errno\]|strerror(errno)|' src/zlinux.c
 
 %build
 PATH=$PATH:.

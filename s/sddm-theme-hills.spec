@@ -32,4 +32,4 @@ cp -a hills %{buildroot}%{_datadir}/sddm/themes
 
 %changelog
 * Tue Mar 14 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 20151005
-- Rebuild for Fedora
+- Rebuilt for Fedora

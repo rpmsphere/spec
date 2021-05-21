@@ -38,4 +38,4 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Mon Oct 08 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.26.1
-- Rebuild for Fedora
+- Rebuilt for Fedora

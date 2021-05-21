@@ -84,7 +84,7 @@ rm -rf %{buildroot}%{_docdir}
 
 %changelog
 * Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 16 2020 wally <wally> 0.2.7-7.mga8
 + Revision: 1614366
 - rebuild for new wxgtk 3.1.4

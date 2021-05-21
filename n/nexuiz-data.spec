@@ -57,7 +57,7 @@ Data (textures, maps, sounds and models) required to play nexuiz.
 
 %changelog
 * Fri Jul 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 19 2008 Jon Ciesla <limb@jcomserv.net> - 2.4.2-1
 - New upstream release.
 * Tue Apr 29 2008 Jon Ciesla <limb@jcomserv.net> - 2.4-1

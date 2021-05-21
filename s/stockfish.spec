@@ -46,7 +46,7 @@ install -m0644 polyglot.ini Book.bin %{buildroot}%{_datadir}/%{name}
 
 %changelog
 * Fri Oct 31 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 02 2012 kamil <kamil> 2.3.1-1.mga3
 + Revision: 324781
 - new version 2.3.1

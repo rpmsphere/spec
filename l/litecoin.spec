@@ -7,7 +7,7 @@ Group:		Databases
 Source0:	https://github.com/litecoin-project/litecoin/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 URL:		http://www.litecoin.org
 BuildRequires:	boost-devel
-BuildRequires:	qt5-devel
+BuildRequires:	qt5-qtbase-devel
 BuildRequires:	libdb-cxx-devel
 BuildRequires:	miniupnpc-devel
 BuildRequires:	openssl-devel

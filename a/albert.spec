@@ -26,6 +26,7 @@ BuildRequires:  pkgconfig(Qt5Widgets) >= 5.2
 BuildRequires:  pkgconfig(Qt5X11Extras) >= 5.2
 BuildRequires:  pkgconfig(Qt5Xml) >= 5.2
 BuildRequires:  pkgconfig(muparser)
+BuildRequires:  qt5-qtdeclarative-devel
 
 %description
 Access everything with virtually zero effort. Run applications,
@@ -43,10 +44,10 @@ the web, calculate things and a lot more.
 %cmake \
   -DCMAKE_SHARED_LINKER_FLAGS="" \
   -DCMAKE_SKIP_RPATH=OFF
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
 %doc README.md

@@ -66,7 +66,7 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %changelog
 * Tue Jan 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2014.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Dec 06 2011 Lev Givon <lev@mandriva.org> 2011.2-1mdv2012.0
 + Revision: 738066
 - Update to 2011.2.

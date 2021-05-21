@@ -17,15 +17,15 @@ A simple Logo Language Interpreter inspired by UCB Logo.
 %setup -q -n %{name}-master
 
 %build
-%cmake -DWITH_TESTS=OFF
-make
+cmake -DWITH_TESTS=OFF
+%make_build
 
 %install
-%__rm -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %clean
-%__rm -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.md

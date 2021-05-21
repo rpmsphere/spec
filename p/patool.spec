@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jul 23 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 13 2013 umeabot <umeabot> 0.16-4.mga3
 + Revision: 362462
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

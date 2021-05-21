@@ -17,6 +17,7 @@ Source0:        https://cfhcable.dl.sourceforge.net/project/skylendar/%{name}-%{
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  fontpackages-devel
+BuildRequires:  postgresql-server-devel
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  desktop-file-utils
 BuildRequires:  mkfontdir
@@ -53,11 +54,11 @@ sed -i 's|pgsql/libpq-fe.h|libpq-fe.h|' src/astrosql.h
 sed -i 's|pgsql/libpq/libpq-fs.h|libpq/libpq-fs.h|' src/astrosql.cpp
 
 %build
-%cmake -DCMAKE_BUILD_Type=Release
-make %{?_smp_mflags}
+%cmake -DCMAKE_BUILD_Type=Release .
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 #Fix desktop file icon location
 mkdir -p %{buildroot}%{_datadir}/pixmaps
 pushd %{buildroot}%{_datadir}

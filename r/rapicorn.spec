@@ -101,7 +101,7 @@ export LIBS="-lrt -lcairo"
 
 %changelog
 * Wed Apr 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 18 2014 Crispin Boylan <crisb@mandriva.org> 13.07.0-1
 + Revision: 8742074
 - BR readline

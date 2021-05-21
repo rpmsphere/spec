@@ -141,7 +141,7 @@ popd
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 4.18.09
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 27 2008 Toni Graffy <toni@links2linux.de> - 4.18.09-0.pm.1
 - update to 4.18.09
 * Thu Oct 23 2008 Toni Graffy <toni@links2linux.de> - 4.18.08-0.pm.1

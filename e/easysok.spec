@@ -79,7 +79,7 @@ cp %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/easysok.png %{buildroot}%{_d
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun  5 2011 Chris Lin <chris.lin@ossii.com.tw> 0.3.5-3.ossii
 - Rename kdelibs to kdelibs3
 * Thu Mar 30 2006 Dries Verachtert <dries@ulyssis.org> - 0.3.5-2 - 4264/dries

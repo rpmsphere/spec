@@ -58,7 +58,7 @@ ln -sf %{_datadir}/%{name}/retext.py $RPM_BUILD_ROOT%{_bindir}/retext
 
 %changelog
 * Thu Dec 18 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 18 2012 i@marguerite.su
 - update to 3.0beta1
 * Thu Dec 29 2011 i@marguerite.su

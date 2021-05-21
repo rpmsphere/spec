@@ -76,7 +76,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 22 2012 johnwu<johnwu@server1.ossii.com.tw>
 - rebuild for OX
 

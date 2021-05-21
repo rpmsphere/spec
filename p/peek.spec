@@ -37,6 +37,6 @@ Simple animated GIF screen recorder with an easy to use interface.
 
 %changelog
 * Wed Sep 19 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 26 2017 tremod <negry.m@yandex.ru> 1.0.1-1
 - (2271b3e) Update to 1.0.1

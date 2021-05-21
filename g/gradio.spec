@@ -54,7 +54,7 @@ website for its database backend.
 
 %changelog
 * Mon Nov 05 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 7.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 22 2018 mvetter@suse.com
 - Update to version 7.1:
   * Simplified filter options

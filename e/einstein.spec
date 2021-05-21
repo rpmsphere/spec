@@ -64,7 +64,7 @@ fifth - geometric figures, sixs - mathematic symbols.
 %patch11 -p1
 install %{SOURCE3} res/
 mv %{name} doc
-cp /usr/share/fonts/dejavu/DejaVuSans.ttf res/
+cp /usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf res/
 
 %build
 #make depend

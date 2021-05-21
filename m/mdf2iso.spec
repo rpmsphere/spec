@@ -39,6 +39,6 @@ automake --add-missing
 
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jan 26 2008 TI_Eugene <ti.eugene@gmail.com> 0.3.0-%{?dist}
 - Initial release for openSUSE Build Service

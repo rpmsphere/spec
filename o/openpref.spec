@@ -45,7 +45,7 @@ install -m755 %SOURCE2 %buildroot%{_datadir}/pixmaps/
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 23 2012 Tony Lo <tonylo@ossii.com.tw> 0.1.0-6
 - ox2 Version
 * Fri Jul 11 2008 Igor Zubkov <icesik@altlinux.org> 0.1.0-alt5

@@ -10,6 +10,7 @@ License: BSD
 URL: https://github.com/ponylang/ponyc
 Source0: https://github.com/ponylang/ponyc/archive/%{version}.tar.gz#/ponyc-%{version}.tar.gz
 BuildRequires: llvm7.0-devel
+BuildRequires: llvm7.0-static
 BuildRequires: libatomic
 
 %description

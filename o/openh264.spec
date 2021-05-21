@@ -43,4 +43,4 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Tue Jul 12 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

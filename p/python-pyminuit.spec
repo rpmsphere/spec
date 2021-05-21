@@ -1,4 +1,5 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
+
 Name: python-pyminuit
 Summary: Minuit interface for minimizing Python functions
 Version: 1.2.1
@@ -7,8 +8,7 @@ Group: Development/Libraries
 License: GPL
 URL: http://code.google.com/p/pyminuit/
 Source0: http://pyminuit.googlecode.com/files/pyminuit-%{version}.tgz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
-BuildRequires: python-devel
+BuildRequires: python3-devel
 BuildRequires: minuit-devel
 
 %description
@@ -25,14 +25,14 @@ of sigmas from the minimum, and features a new N-dimensional scanning utility.
 %setup -q -n pyminuit
 
 %build
-python setup.py build
+python3 setup.py build
 
 %install
-python setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
+python3 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %files
 %doc COPYING AUTHORS
-%{python_sitearch}/*
+%{python3_sitearch}/*
 
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1

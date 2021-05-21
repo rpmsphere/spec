@@ -87,7 +87,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> 2.0.0-5
 - Add patches from Debian
 - modified patch for libav

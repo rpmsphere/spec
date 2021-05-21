@@ -37,6 +37,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue May 14 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.9.2-10
 - (7d6b94b) MassBuild#1257: Increase release tag

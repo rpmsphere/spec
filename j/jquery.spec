@@ -32,6 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Oct 17 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 5 2011 Ludwig Nussel <lnussel@suse.de>
 - new package version 1.6.1

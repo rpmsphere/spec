@@ -1,10 +1,10 @@
 Name:			batrachians
-Version:		0.1.6
+Version:		0.1.7
 Summary:		A Frog Bog(TM) clone
 License:		GPLv2
 URL:			http://sarrazip.com/dev/%{name}.html
 Group:			Amusements/Games
-Release:		6.4
+Release:		1
 Source:			%{name}-%{version}.tar.gz
 BuildRequires:		desktop-file-utils
 BuildRequires:		gcc-c++
@@ -56,5 +56,5 @@ install -D -m644 src/%{name}.desktop %{buildroot}/%{_datadir}/applications/%{nam
 %{_mandir}/man*/*
 
 %changelog
-* Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.6
+* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.7
 - Rebuilt for Fedora

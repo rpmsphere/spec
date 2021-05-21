@@ -8,7 +8,7 @@ License:	GPLv3
 URL:		http://www.maefloresta.com/
 Group:		Graphics/Editors and Converters
 Source0:	https://dl.sourceforge.net/project/tupi2d/Source%20Code/%{name}-%{version}.tar.gz
-BuildRequires:	qt5-devel
+BuildRequires:	qt5-qtbase-devel
 BuildRequires:	ffmpeg-devel
 BuildRequires:	rubypick, ruby
 BuildRequires:	aspell-devel

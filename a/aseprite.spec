@@ -106,7 +106,7 @@ EOF
 
 %changelog
 * Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.25
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 14 2020 umeabot <umeabot> 1.1.7-6.mga8
 + Revision: 1519208
 - Mageia 8 Mass Rebuild

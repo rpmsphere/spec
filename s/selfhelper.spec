@@ -46,7 +46,7 @@ or useful but not redistributable packages.
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 28 2008 Wei-Lun Chao <bluebat@member.fsf.org> 0.8.5-1.ossii
 - Update and Fix bugs and remove comment.sh
 

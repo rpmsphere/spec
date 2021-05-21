@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Apr 21 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.24
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 30 2010 Frederic Crozat <fcrozat@mandriva.com> 1.0.24-1mdv2010.1
 + Revision: 541225
 - Release 1.0.24 :

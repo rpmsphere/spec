@@ -32,6 +32,6 @@ Dynamips is a software that emulates Cisco IOS on a traditional PC.
 
 %changelog
 * Thu Jan 19 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.16
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 20 2008 crrodriguez@suse.de
 - update to version 0.2.8 RC per user requests

@@ -80,6 +80,6 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/flowblade.desktop
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 02 2015 abfonly <abfonly@gmail.com> 0.18.0-1
 - (233c2b5) Updated flowblade.spec

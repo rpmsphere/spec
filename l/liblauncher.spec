@@ -70,6 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu May 13 2010 Mathieu Bridon <bochecha@fedoraproject.org> - 0.3.6-1
 - First build

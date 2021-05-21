@@ -73,7 +73,7 @@ rm -rf %buildroot
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May 21 2012 johnwu<johnwu@ossii.com.tw>
 - rebuild for OX
 * Mon Sep 19 2011 lars@linux-schulserver.de

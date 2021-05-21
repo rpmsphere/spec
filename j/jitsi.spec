@@ -10,7 +10,7 @@ Group: Applications/Internet
 License: GNU Lesser General Public License
 URL: https://www.jitsi.org
 Source0: https://download.jitsi.org/jitsi/nightly/src/%{name}-src-%{version}.zip
-BuildRequires: java-devel-openjdk, ant
+BuildRequires: java-openjdk-devel, ant
 BuildRequires: desktop-file-utils lua
 Requires: jre
 

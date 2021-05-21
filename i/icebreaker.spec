@@ -61,7 +61,7 @@ EOF
 
 %changelog
 * Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Oct 19 2013 umeabot <umeabot> 1:1.9.8-3.mga4
 + Revision: 533389

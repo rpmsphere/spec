@@ -36,7 +36,7 @@ install -Dm 0755 elvish %{buildroot}%{_bindir}/elvish
 
 %changelog
 * Fri Sep 27 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 19 2018 Zamir SUN <zsun@fedoraproject.org> - 0.8-1
 - Update to 0.8
 * Tue Dec 27 2016 Zamir SUN <zsun@fedoraproject.org> - 0.5-2

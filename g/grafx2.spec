@@ -45,7 +45,7 @@ install -D -m644 misc/unix/%{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 
 %changelog
 * Mon Sep 26 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Feb 09 2016 umeabot <umeabot> 2.4-2.mga6
 + Revision: 952572
 - Mageia 6 Mass Rebuild

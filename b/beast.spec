@@ -151,7 +151,7 @@ rm -f %{buildroot}%{_libdir}/bse/v*/plugins/*.la
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 18 2014 Crispin Boylan <crisb@mandriva.org> 0.8.2-1
 + Revision: f39fa1a
 - BR flac

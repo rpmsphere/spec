@@ -11,6 +11,7 @@ URL:            https://launchpad.net/livewallpaper
 Source0:        https://launchpad.net/livewallpaper/0.5/%{version}/+download/livewallpaper-%{version}.tar.gz
 BuildRequires:  cmake, gettext, intltool, gtk-doc, libappstream-glib
 BuildRequires:  pkgconfig(gobject-introspection-1.0), pkgconfig(libpeas-1.0), pkgconfig(glew), pkgconfig(upower-glib)
+BuildRequires:  libappindicator-gtk3-devel
 #BuildRequires:  xcftools
 
 %description
@@ -43,11 +44,11 @@ sed -i 's|-Wall|-Wall -fPIC -lX11|' CMakeLists.txt
 
 %build
 %cmake . -DENABLE_OPTIMIZATION=ON -DENABLE_DOC=OFF
-make %{?_smp_mflags}
+%cmake_build
 
 %install
 rm -rf %{buildroot}
-%make_install
+%cmake_install
 mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
 ln -fs liblivewallpaper-core.so.%{version} %{buildroot}%{_libdir}/liblivewallpaper-core.so
 %find_lang %{name}

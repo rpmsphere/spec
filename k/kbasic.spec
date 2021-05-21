@@ -149,7 +149,7 @@ install -D -m644 %{SOURCE2} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.89
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 11 2013 fa0sck@gmail.com
 - Built  the latest available version.
   + added program icons (and examples and docs, too) from

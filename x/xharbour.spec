@@ -563,7 +563,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sat Dec 04 2004 Przemyslaw Czerpak <druzus/at/priv.onet.pl>
 - the destination directories changed to use ditribution's

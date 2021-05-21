@@ -35,6 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Sep 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 28 2015 Derek Dai
 - Initial package

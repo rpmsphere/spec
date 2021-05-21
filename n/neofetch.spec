@@ -28,6 +28,6 @@ or any ascii file of your choice.
 
 %changelog
 * Fri Jan 06 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 15 2016 Rosa <rosa@abf.rosalinux.ru> 2.0.2-1
 - (1ada75e) Automatic import for version 2.0.2-1

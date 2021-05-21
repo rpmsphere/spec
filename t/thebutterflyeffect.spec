@@ -45,7 +45,7 @@ install -D -m755 %name %buildroot%_bindir/%name
 
 %changelog
 * Mon Jan 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 8.2-alt1.qa1
 - NMU: rebuilt for debuginfo.
 * Mon Dec 06 2010 Fr. Br. George <george@altlinux.ru> 8.2-alt1

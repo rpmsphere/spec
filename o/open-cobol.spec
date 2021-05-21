@@ -83,7 +83,7 @@ fi
 
 %changelog
 * Mon Feb 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 25 2016 Psychotic Build System <builder@psychotic.ninja> - 1.1-5
 - Initial build for Psychotic Ninja
 * Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1-4

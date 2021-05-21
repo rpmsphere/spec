@@ -52,7 +52,7 @@ G11NTTY CCCII/CNS Fonts
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2008 Wei-Lun Chao <bluebat@member.fsf.org>
 - Add patch from Rex Tsai.
 - Rebuild for M6(CentOS5).

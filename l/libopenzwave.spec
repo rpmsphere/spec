@@ -90,7 +90,7 @@ rm -rf %{buildroot}%{_defaultdocdir}/openzwave-%{version}/html/
 
 %changelog
 * Mon Mar 02 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.919
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 21 2013 justin@dynam.ac
 - Add MultiInstance.patch to handle buggy devices such as Vitrum that
   send wrong commands

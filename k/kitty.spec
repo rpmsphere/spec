@@ -59,4 +59,4 @@ cp -a linux-package/* %{buildroot}/usr
 
 %changelog
 * Mon Oct 14 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.14.6
-- Rebuild for Fedora
+- Rebuilt for Fedora

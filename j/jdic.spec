@@ -71,7 +71,7 @@ cd jdic/dist/linux
 
 %changelog
 * Mon Dec 17 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 13 2008 Alexander Kurtakov <akurtakov@mandriva.org> 0.9.4-0.0.1mdv2009.0
 + Revision: 206742
 - new version

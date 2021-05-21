@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Oct 14 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.24
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 12 2012 tv <tv> 0.8.3-0.1.mga2
 + Revision: 195390
 - imported package musl

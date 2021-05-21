@@ -87,7 +87,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 06 2010 Wei-Lun Chao <bluebat@member.fsf.org> 0.10.5.6_r4126.ossii
 - Use madwifi-hal-0.10.5.6-r4126-20100324.tar.gz
 

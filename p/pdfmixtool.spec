@@ -9,7 +9,7 @@ URL:		https://gitlab.com/scarpetta/pdfmixtool
 BuildRequires:  openssl-devel 
 BuildRequires:  podofo-devel 
 BuildRequires:  qpdf-devel
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 
 %description
 An application to split, merge, rotate and mix PDF files
@@ -18,11 +18,13 @@ An application to split, merge, rotate and mix PDF files
 %setup -qn pdfmixtool-v%{version}
 
 %build
-%cmake -DCMAKE_INSTALL_PREFIX=%{buildroot}/usr
+#cmake -DCMAKE_INSTALL_PREFIX=%{buildroot}/usr
+%cmake
+%cmake_build
 
 %install
 rm -rf %buildroot
-make install
+%cmake_install
 
 %files
 %{_bindir}/pdfmixtool

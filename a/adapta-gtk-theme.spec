@@ -57,7 +57,7 @@ chmod -x %{buildroot}%{_datadir}/themes/Adapta-Nokto/gtk-2.0/Others/null.svg
 
 %changelog
 * Wed Sep 20 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.91.2.168
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Apr 11 2017 Arkady L. Shane <ashejn@russianfedora.pro> - 3.90.0.50-1
 - update to 3.90.0.50
 * Wed Apr  5 2017 Arkady L. Shane <ashejn@russianfedora.pro> - 3.89.5.91-1

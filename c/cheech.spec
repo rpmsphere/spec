@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun 09 2011 Chris Lin <chris.lin@ossii.com.tw> - 0.8-2.ossii
 - Fix sigc++ issues

@@ -78,7 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jun 05 2011 Funda Wang <fwang@mandriva.org> 0.1.0-0.72693.3mdv2011.0
 + Revision: 682815
 - rebuild for new icu

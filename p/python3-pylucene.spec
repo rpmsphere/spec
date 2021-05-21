@@ -58,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Apr 30 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 8.1.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep 01 2009 Ciaran Farrell <cfarrell1980@gmail.com> - 2.4.1-2
 - First build using idea from Felix Schwarz

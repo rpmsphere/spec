@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.11.076
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Nov 29 2009 Marian Ciobanu <ciobi@inbox.com> 1.0.00.045
 - wording changes to reflect non-beta status

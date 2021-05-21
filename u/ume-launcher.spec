@@ -43,7 +43,7 @@ sed -i 's/-lglib-2.0/-lglib-2.0 -lgio-2.0/' src/Makefile
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 11 2008 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3-6.ossii
 - Update to 0.3-6
 

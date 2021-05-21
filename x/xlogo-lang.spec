@@ -9,7 +9,7 @@ Source0:        xlogo-0.9.96pre-2012-06-27.tar.gz
 Source1:        xlogo.desktop
 Source2:        xlogo.png
 BuildRequires:  ant
-BuildRequires:  java-devel-openjdk lua
+BuildRequires:  java-openjdk-devel lua
 Requires:       java
 BuildArch:      noarch
 

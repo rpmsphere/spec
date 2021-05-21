@@ -86,7 +86,7 @@ rm -rf %{buildroot}/usr/share/doc/libddcutil
 
 %changelog
 * Thu Dec 21 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Sep  5 2017 jengelh@inai.de
 - Clear repeated summary, fix RPM groups, repair description not
   matching the filelists.

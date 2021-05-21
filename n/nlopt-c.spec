@@ -92,7 +92,7 @@ rm -rf %{buildroot}
 %{_mandir}/man3/%{_name}.*
 
 %files -n python-%{name}
-%{python_sitearch}/*
+%{python3_sitearch}/*
 
 #files -n octave-%{name}
 #dir %{_libdir}/octave/*/site

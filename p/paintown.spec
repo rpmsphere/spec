@@ -52,14 +52,14 @@ Features
 %patch0 -p1
 %patch1 -p1
 find data/ -type f -exec chmod 0644 {} \;
-sed -i 's|-Wall|-Wall -fPIC|' CMakeLists.txt
+sed -i 's|-Wall|-Wall -fPIC -std=gnu++11|' CMakeLists.txt
 sed -i '/TestForPythonEmbed/d' src/paintown-engine/script/CMakeLists.txt
 
 %build
 LIBSUFFIX=$(echo "%{_lib}" | sed 's|^lib||')
 mkdir build; cd build
-%cmake .. -DUSE_SDL=ON
-make
+cmake .. -DUSE_SDL=ON
+%make_build
 
 %install
 mkdir -p %{buildroot}%{_bindir}

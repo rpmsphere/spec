@@ -36,6 +36,6 @@ install -m644 -D netbook-modules %{buildroot}%{_sysconfdir}/event.d/netbook-modu
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 6 2008 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3-2.ossii
 - Initial package

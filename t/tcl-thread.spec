@@ -36,7 +36,7 @@ make
 
 %changelog
 * Thu Feb 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 17 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 2.6.5-alt1.qa1
 - NMU: rebuilt for debuginfo.
 * Fri Jun 13 2008 Sergey Bolshakov <sbolshakov@altlinux.ru> 2.6.5-alt1

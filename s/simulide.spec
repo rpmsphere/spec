@@ -11,7 +11,7 @@ Source2: %{name}.png
 BuildRequires: desktop-file-utils
 BuildRequires: gpsim-devel
 BuildRequires: elfutils-libelf-devel
-BuildRequires: qt5-devel
+BuildRequires: qt5-qtbase-devel
 
 %description
 Simulide is a real time electronic circuit simulator intended for hobbist and

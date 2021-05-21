@@ -72,7 +72,7 @@ mv %{buildroot}%{_datadir}/applications/com.github.wwmm.pulseeffects.desktop \
 
 %changelog
 * Fri Jun 15 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 04 2018 vladi105 <vladi105@mail.ru> 3.2.3-2
 - (3f6aeac) Merge pull request #3 from vladi105/pulseeffects:rosa2016.1
 - (3f6aeac) add requires

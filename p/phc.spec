@@ -41,11 +41,11 @@ rm -rf %{buildroot}
 
 %changelog
 * Sat Apr 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov 12 2006 Dries Verachtert <dries@ulyssis.org> - 0.1.7-1 - 4881/dries
 - Updated to release 0.1.7
 * Sat Apr 08 2006 Dries Verachtert <dries@ulyssis.org> - 0.1.5.1-1.2
-- Rebuild for Fedora Core 5
+- Rebuilt for Fedora Core 5
 * Sat Jan 28 2006 Dries Verachtert <dries@ulyssis.org> - 0.1.5.1-1
 - Updated to release 0.1.5.1
 * Fri Jan 27 2006 Dries Verachtert <dries@ulyssis.org> - 0.1.5-1

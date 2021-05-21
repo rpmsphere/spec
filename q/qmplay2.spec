@@ -95,7 +95,7 @@ mv %{buildroot}/%{_datadir}/{icons,pixmaps}
 
 %changelog
 * Thu Jun 04 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 15.03.30
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 29 2014 dap.darkness@gmail.com
 - Update to 14.12.28 (changes since 14.12.23):
   * fixed fonts loading from folders with subtitles

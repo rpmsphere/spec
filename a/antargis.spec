@@ -319,7 +319,7 @@ EOF
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1.5-1.ossii
 - Rebuild for OSSII
 * Fri Feb 27 2009 Toni Graffy <toni@links2linux.de> - 0.2.1.5-1294.pm.svn20090227

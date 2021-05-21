@@ -70,6 +70,6 @@ tic /usr/share/rhide/eterm-rhide
 
 %changelog
 * Mon Jan 23 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Feb 16 2003 Robert Hoehne <robert.hoehne@gmx.net>
 - Initial package

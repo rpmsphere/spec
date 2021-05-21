@@ -210,7 +210,7 @@ fi
 
 %changelog
 * Tue Jul 03 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 18 2012 tv <tv> 2.4.1-9.mga2
 + Revision: 210482
 - rebuild for new xulrunner

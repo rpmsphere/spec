@@ -60,7 +60,7 @@ make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 
 %changelog
 * Thu Jan 02 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.7-19
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 * Fri Feb 09 2018 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.7-18

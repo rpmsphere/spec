@@ -34,7 +34,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep 01 2011 Kylix Lo <kylix.lo@ossii.com.tw> 0.4-1.ossii
 - Rebuild tegaki-models-fineart as standalone source rpm
 * Wed Mar 31 2010 Wei-Lun Chao <bluebat@member.fsf.org> 0.3-1.ossii

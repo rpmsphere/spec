@@ -53,7 +53,7 @@ fi
 
 %changelog
 * Thu Mar 08 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Sep 03 2017 Timothée Floure <timothee.floure@fnux.ch> - 2.2-4
   - Update license field from GPLv2 to GPLv2+
   - Use the --nonet flag in gcolor3.appdata.xml's validation

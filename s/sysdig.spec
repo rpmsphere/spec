@@ -50,7 +50,7 @@ rm -rf %buildroot/usr/etc/
 
 %changelog
 * Thu Aug 10 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 05 2017 Vitaly Lipatov <lav@altlinux.ru> 0.13.0-alt1
 - new version 0.13.0 (with rpmrb script)
 * Mon Aug 01 2016 Vitaly Lipatov <lav@altlinux.ru> 0.11.0-alt1

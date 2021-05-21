@@ -29,4 +29,4 @@ sed -i 's|glib/.*\.h|glib.h|' osso/libglib.pxd
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

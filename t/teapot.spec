@@ -8,6 +8,7 @@ URL: https://www.syntax-k.de/projekte/teapot/
 Source0: https://www.syntax-k.de/projekte/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: cmake
 BuildRequires: fltk-devel
+BuildRequires: fltk-static
 BuildRequires: ncurses-devel
 BuildRequires: lyx
 BuildRequires: python
@@ -34,19 +35,22 @@ o  It is still a small and simple program!
 
 %prep
 %setup -q
+sed -i '14i decl {\\#include <unistd.h>} {private global\n}\n' fteapot.fl
 
 %build
 export CFLAGS="%{optflags} -I/usr/include/tirpc -ltirpc"
-%cmake -DENABLE_HELP=OFF
-make %{?_smp_mflags}
+%cmake -DENABLE_HELP=OFF .
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot}
+%cmake_install
+install -Dm755 libteapotlib.so %{buildroot}%{_libdir}/libteapotlib.so
 
 %files
 %{_bindir}/%{name}
 %{_datadir}/doc/%{name}
 %{_mandir}/man1/%{name}.1.*
+%{_libdir}/libteapotlib.so
 
 %changelog
 * Wed May 25 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.0

@@ -88,7 +88,7 @@ make -j1
 
 %changelog
 * Mon Oct 22 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0rc1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep  7 19:42:36 UTC 2017 - aloisio@gmx.com
 - Update to version 2.2 (see NEWS or ChangeLog)
 - Switched license to GPL-3.0+/LGPL-3.0+

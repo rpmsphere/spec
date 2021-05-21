@@ -100,7 +100,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 06 2009 Chelban Vasile <vchelban@fedoramd.org> 0.5.3.050-10
 - BR: libeina-devel
 - exclude epsilon from BR

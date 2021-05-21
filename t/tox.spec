@@ -52,7 +52,7 @@ make install DESTDIR=%{buildroot}
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.0.20131014
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Aug  3 2013 novell@tower-net.de
 - Update to ProjectTox-Core-aa78644aed020198f85c97fe63bea7fc88e4a8dc
 * Fri Aug  2 2013 novell@tower-net.de

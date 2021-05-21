@@ -141,7 +141,7 @@ GNOME 1.0 menu support for lxp-icewm (using gnome 2.x).
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Mar 19 2007 Wei-Lun Chao <bluebat@member.fsf.org> 1.2.30-1.ossii
 - Update zh_TW locale
 - Rebuild for 1.2.30

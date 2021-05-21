@@ -78,4 +78,4 @@ chmod +x %{buildroot}%{_datadir}/applications/*.desktop
 
 %changelog
 * Mon May 18 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20170626
-- Rebuild for Fedora
+- Rebuilt for Fedora

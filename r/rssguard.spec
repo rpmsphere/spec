@@ -40,7 +40,7 @@ cd build
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jan 16 2012 TI_Eugene <ti.eugene@gmail.com> 1.0.7
 - Next version
 - building with cmake

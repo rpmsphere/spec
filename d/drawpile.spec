@@ -31,14 +31,16 @@ Feature highlights:
 %prep
 %setup -q -n Drawpile-%{version}
 sed -i '24i #include <QItemSelection>' src/client/widgets/userlistwidget.h
+sed -i '23i #include <QPainterPath>' src/client/widgets/popupmessage.h
 
 %build
-%cmake
-make VERBOSE=1 %{?_smp_mflags}
+%cmake .
+#make VERBOSE=1 %{?_smp_mflags}
+%cmake_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+%cmake_install
 install -Dm644 desktop/%{name}-32x32.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 install -Dm644 desktop/%{name}.desktop $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -m644 COPYING ChangeLog AUTHORS README.md $RPM_BUILD_ROOT%{_datadir}/doc/%{name}

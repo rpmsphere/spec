@@ -32,7 +32,7 @@ cp -R * %{buildroot}%{_datadir}/icons/%{theme_name}
 
 %changelog
 * Tue Sep 19 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 04 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.4.0-2
 - (383782a) MassBuild#1230: Increase release tag
 

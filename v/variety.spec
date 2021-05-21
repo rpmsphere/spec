@@ -53,4 +53,4 @@ sed -i "s|__variety_data_directory__ =.*|__variety_data_directory__ = '%{_datadi
 - Add (Build)Requires
 - Fix config path issue
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.13
-- Rebuild for Fedora
+- Rebuilt for Fedora

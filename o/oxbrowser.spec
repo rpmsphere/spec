@@ -93,7 +93,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 16 2010 Sean Lin <sean@ossii.com.tw> 0.2-2.ossii
 - 增加自動高度調整
 - 修正翻轉iframe的css語法錯誤

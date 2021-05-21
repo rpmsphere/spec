@@ -45,7 +45,7 @@ make install DESTDIR="$b"
 
 %changelog
 * Tue Nov 06 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug  7 2017 jengelh@inai.de
 - Update to new upstream release 0.3.7
   * Resolve crashes that happened on program exit

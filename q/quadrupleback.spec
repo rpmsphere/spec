@@ -1,10 +1,10 @@
 Name:			quadrupleback
-Version:		0.1.0
+Version:		0.1.1
 Summary:		A clone of the 1982 Doubleback(TM)
 License:		GPLv2
 URL:			http://sarrazip.com/dev/%{name}.html
 Group:			Amusements/Games
-Release:		10.4
+Release:		1
 Source:			%{name}-%{version}.tar.gz
 BuildRequires:	desktop-file-utils
 BuildRequires:	gcc-c++
@@ -58,5 +58,5 @@ install -D -m644 src/%{name}.desktop %{buildroot}/%{_datadir}/applications/%{nam
 %{_datadir}/%{name}
 
 %changelog
-* Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0
+* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
 - Rebuilt for Fedora

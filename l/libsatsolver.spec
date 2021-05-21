@@ -179,7 +179,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Apr 13 2011 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for OSSII
 * Fri Oct 22 2010 ma@suse.de

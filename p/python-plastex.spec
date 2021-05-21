@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.3.20120721
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jul 21 2012 toms@opensuse.org
 - Updated to 20120721
   * Replaced parse.tokens: DEBUG -> ERROR (plasTexrc)

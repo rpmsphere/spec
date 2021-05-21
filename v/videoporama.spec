@@ -1,4 +1,4 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 %undefine _debugsource_packages
 %define oname Videoporama
 
@@ -13,7 +13,7 @@ Source0:	%{oname}_%{version}-1.tar.gz
 BuildRequires:	desktop-file-utils
 BuildRequires:	python3-qt5-devel
 BuildRequires:	python3-pillow-devel
-BuildRequires:	qt5-devel
+BuildRequires:	qt5-qtbase-devel
 BuildRequires:	qscintilla-qt5-devel
 #BuildRequires:	xvid-devel
 BuildArch:	noarch
@@ -95,7 +95,7 @@ sed -i 's|^import Image|from PIL import Image|' %{buildroot}%{_datadir}/%{name}/
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.xpm
 %{_mandir}/man1/%{name}.1.*
-%{python_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Wed Nov 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.2

@@ -44,7 +44,7 @@ fi
 
 %changelog
 * Mon Aug 24 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
 * Wed Feb 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6-2

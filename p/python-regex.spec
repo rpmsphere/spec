@@ -26,6 +26,6 @@ python setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.20130626
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jun 10 2013 Stefan Lohmaier <stefan.lohmaier@stefanlohmaier.de> - 0.1.20120613
 - Initial package

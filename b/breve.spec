@@ -84,6 +84,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Dec 31 2008 Shadow John <john@ossii.com.tw> 2.7-1
 - Build for OSSII

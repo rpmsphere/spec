@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.29
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Dec 29 2003 Jef Poskanzer <jef@mail.acme.com>
   - Updated to 2.26
 * Sat Dec 20 2003 Jef Poskanzer <jef@mail.acme.com>

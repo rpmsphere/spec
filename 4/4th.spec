@@ -53,4 +53,4 @@ cp ../COPYING ../README $RPM_BUILD_ROOT%{_datadir}/doc/4th
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 3.62.4
-- Rebuild for Fedora
+- Rebuilt for Fedora

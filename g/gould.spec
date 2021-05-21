@@ -40,4 +40,4 @@ CFLAGS='-fPIC -I/usr/include/libxml2 -lX11 -lm -lXext -lgmodule-2.0' ./configure
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.2
-- Rebuild for Fedora
+- Rebuilt for Fedora

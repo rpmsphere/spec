@@ -41,6 +41,6 @@ autoreconf -ifv
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1-1.ossii
 - initial package

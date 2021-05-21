@@ -7,7 +7,7 @@ Source0:	http://downloads.sourceforge.net/project/auber/%{name}/%{name}-%{versio
 License:	GPLv2+
 Group:		Graphics
 #BuildRequires:	qt4-devel qt-assistant-adp-devel qt4-assistant qtwebkit-devel
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:	cmake
 BuildRequires:	pkgconfig(glew) >= 2.0.0
 BuildRequires:	pkgconfig(gl)
@@ -62,11 +62,11 @@ This package contains Tulip user documentation and developer Handbook in HTML.
 %setup -q
 
 %build
-%cmake -DBUILD_DOC=on -DCMAKE_CXX_FLAGS="-fpermissive -fPIC"
-make
+%cmake -DBUILD_DOC=on -DCMAKE_CXX_FLAGS="-fpermissive -fPIC" .
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
 %{_bindir}/tulip

@@ -55,7 +55,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 30 2008 Wei-Lun Chao <bluebat@member.fsf.org> 1.24-3.ossii
 - Build for M6(CentOS5)
 

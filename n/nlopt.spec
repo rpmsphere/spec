@@ -96,7 +96,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Dec 23 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Aug 19 2012 scorot@free.fr
 - again fix build on x86_64
 * Sun Aug 19 2012 scorot@free.fr

@@ -82,7 +82,7 @@ find %{buildroot} -type f -name "*.la" -exec rm -f {} ';'
 
 %changelog
 * Fri Oct 18 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Nov  8 2009 Nicolas Chauvet <kwizart@fedoraproject.org> - 1.10-3
 - Disable sse on i686 (broken)
 * Wed Apr 29 2009 kwizart <kwizart at gmail.com> - 1.10-2

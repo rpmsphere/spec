@@ -48,7 +48,7 @@ Webunit is a framework for unit testing websites:
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.10
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 18 2010 toms@suse.de
 - Fixed problem in spec file
 * Fri Jul 11 2008 toms@suse.de

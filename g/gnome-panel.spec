@@ -297,7 +297,7 @@ fi
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed May 14 2008 Wei-Lun Chao <bluebat@member.fsf.org> - 2.16.1-7.ossii
 - Use ossii-panel-default-setup.entries as SOURCE1
 - Rebuild for M6(CentOS5)

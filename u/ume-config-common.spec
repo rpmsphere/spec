@@ -40,6 +40,6 @@ install -m644 -D kbdconfig %{buildroot}/home/ume/.matchbox/kbdconfig
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 3 2008 Wei-Lun Chao <bluebat@member.fsf.org> 0.11-1.ossii
 - Initial package

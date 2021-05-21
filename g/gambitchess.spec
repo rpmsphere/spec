@@ -9,7 +9,7 @@ Group:          Games/Boards
 URL:            https://sourceforge.net/projects/gambitchess/
 Source0:        http://downloads.sourceforge.net/%{name}/%{_name}-%{version}-src.tar.gz
 BuildRequires:  cmake
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 
 %description
 Gambit is a cross-platform chess game.
@@ -18,8 +18,8 @@ Gambit is a cross-platform chess game.
 %setup -q -n %{_name}-%{version}-src
  
 %build
-%cmake -DCONFIG_GUPTA_ENGINE_DIRECTORY=%{_bindir} -DCONFIG_RESOURCE_PATH_PREFIX=%{_datadir}/%{name}
-make
+cmake -DCONFIG_GUPTA_ENGINE_DIRECTORY=%{_bindir} -DCONFIG_RESOURCE_PATH_PREFIX=%{_datadir}/%{name} .
+%make_build
 cd engine/gupta
 make release
 

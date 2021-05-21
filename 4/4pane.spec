@@ -66,7 +66,7 @@ cp README INSTALL LICENCE $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 
 %changelog
 * Fri Dec 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Apr 13 2012 DH
 - Minor changes for 1.0 release:
 - LDFLAGS no longer required

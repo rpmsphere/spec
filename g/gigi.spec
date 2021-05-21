@@ -106,7 +106,7 @@ rm -rf $RPM_BUILD_ROOT%{_prefix}/doc/GG
 
 %changelog
 * Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Feb 16 2013 josef radinger <cheese@nosuchhost.net> - 0.8.0-6
 - extract libgigi from freeorion
   therefore we no longer have a valid svnrev  

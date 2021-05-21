@@ -21,14 +21,15 @@ History of xffm:
 %prep
 %setup -q -n %{name}-%{version}
 sed -i 's|/usr/local|/usr|' CMakeLists.txt
-sed -i 's|LOCALE_INSTALL_DIR "|LOCALE_INSTALL_DIR "%{buildroot}|' cmake/msgfmt.cmake
+#sed -i 's|LOCALE_INSTALL_DIR "|LOCALE_INSTALL_DIR "%{buildroot}|' cmake/msgfmt.cmake
 
 %build
 %cmake .
-make
+%cmake_build
 
 %install
-cmake -DCMAKE_INSTALL_PREFIX=%{buildroot}/usr -P cmake_install.cmake
+#cmake -DCMAKE_INSTALL_PREFIX=%{buildroot}/usr -P cmake_install.cmake
+%cmake_install
 mv %{buildroot}%{_bindir}/xffm %{buildroot}%{_bindir}/xffm+
 
 %files

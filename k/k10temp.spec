@@ -64,6 +64,6 @@ dkms remove -m %{dkms_name} -v %{dkms_vers} %{?quiet} --all --rpm_safe_upgrade
 
 %changelog
 * Mon Dec 10 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20181017
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue May 31 2011 LTN Packager <packager-el6rpms@LinuxTECH.NET> - 20110406-1
 - initial release

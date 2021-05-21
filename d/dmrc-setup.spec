@@ -43,6 +43,6 @@ for common properties of display-manager.
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Mar 31 2009 Wei-Lun Chao <bluebat@member.fsf.org>
 - Initial package

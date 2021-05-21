@@ -51,7 +51,7 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.92
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Sun Jun 26 2011 Fabian Affolter <fabian@bernewireless.net> - 1.92-1
 - Updated to new upstream release 1.92

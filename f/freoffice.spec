@@ -36,6 +36,6 @@ documents(Microsoft formats and ODF), carry basic editing and create new documen
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri May 06 2011 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for OSSII

@@ -43,6 +43,6 @@ ln -sf %{python_sitelib}/scour/scour.py $RPM_BUILD_ROOT%{_bindir}/scour
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.26
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 27 2012 i@marguerite.su
 - initial package 0.26

@@ -32,6 +32,6 @@ sed -i 's|DESTINATION /bin|DESTINATION /usr/bin|' CMakeLists.txt
 
 %changelog
 * Fri Dec 20 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Aug 16 2017 Rosa <rosa@abf.rosalinux.ru> 1.3.1-1
 - (010e863) Automatic import for version 1.3.1-1

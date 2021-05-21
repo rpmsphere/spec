@@ -59,7 +59,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Oct 01 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.5.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 14 2016 Dave Love <loveshack@fedoraproject.org> - 2.2.6-1
 - New version
 - Modify patch

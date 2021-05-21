@@ -72,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.51
-- Rebuild for Fedora
+- Rebuilt for Fedora
 - Workaround for reading ini bug
 * Thu Nov 15 2012 kevinchen <kevin.chen@ossii.com.tw> - 0.9.51-2
 - Compiler debug & Package.

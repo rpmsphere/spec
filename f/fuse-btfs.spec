@@ -39,7 +39,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/btplay
 
 %changelog
 * Tue Nov 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.13
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Apr  3 2017 Arkady L. Shane <ashejn@russianfedora.pro> - 2.13-1
 - update to 2.13
 * Tue Mar  1 2016 Arkady L. Shane <ashejn@russianfedora.pro> - 2.8-1.R

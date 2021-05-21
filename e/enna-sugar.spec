@@ -33,6 +33,6 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 22 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1-2
 - initial RPM for OSSII

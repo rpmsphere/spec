@@ -12,7 +12,7 @@ BuildRequires:  intltool
 BuildRequires:  python3-devel
 BuildRequires:  python3-distutils-extra
 BuildRequires:  python3-netifaces
-BuildRequires:  python3-configparser
+#BuildRequires:  python3-configparser
 Requires:       ufw
 
 %description

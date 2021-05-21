@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Feb 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Mar 20 2011 bwiedemann@novell.com
 - Update to version 5.1.2
 * Fri Dec 10 2010 spell1337@gmail.com

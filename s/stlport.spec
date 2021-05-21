@@ -65,7 +65,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Nov 18 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 28 2011 gil <gil> 5.2.1-1.mga2
 + Revision: 188331
 - imported package stlport

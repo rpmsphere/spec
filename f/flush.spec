@@ -70,7 +70,7 @@ cd ../..
 
 %changelog
 * Thu Apr 19 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.12
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 19 2018 Aleksei Nikiforov <darktemplar@altlinux.org> 0.9.12-alt1.6
 - Fixed build.
 * Tue Aug 22 2017 Aleksei Nikiforov <darktemplar@altlinux.org> 0.9.12-alt1.5

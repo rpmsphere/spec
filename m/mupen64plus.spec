@@ -58,6 +58,6 @@ MANDIR=$RPM_BUILD_ROOT%_mandir bash -x m64p_install.sh
 
 %changelog
 * Thu Aug 17 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Oct 14 2012 TingPing <tingping@tingping.se> - 1.99.5-1
 - first version for fedora based off opensuse's package

@@ -26,6 +26,7 @@ files, a man page and many icons. Author: Albert Graef
 sed -i '198d' regexp/regexp.c
 sed -i '20i #ifndef XmS_MOTIF_EXPORT_TARGETS\n#define XmS_MOTIF_EXPORT_TARGETS ((char *)&_XmStrings[17220])\n#endif' callbacks.c
 sed -i '303i return NONE;' ftype.c
+sed -i 's|sys_errlist\[errno\]|strerror(errno)|' error.c
 
 %build
 xmkmf -a

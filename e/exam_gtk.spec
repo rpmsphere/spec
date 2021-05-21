@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Dec 03 2009 Kami <kami@ossii.com.tw> 0.1-3.ossii
 - Fix the newest PHP compatibility
 

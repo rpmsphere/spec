@@ -90,7 +90,7 @@ touch --no-create %{_datadir}/icons/hicolor || :
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 05 2007 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6-1
 - rebuild 1.6 for M6(CentOS5)
 

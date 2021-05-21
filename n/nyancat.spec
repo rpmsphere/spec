@@ -36,6 +36,6 @@ install -m 0644 systemd/*.{service,socket} %{buildroot}/%{_unitdir}
 
 %changelog
 * Mon Dec 10 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.5.1-3
 - (c2a5c5e) MassBuild#1257: Increase release tag

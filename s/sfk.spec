@@ -1,5 +1,5 @@
 Name:		sfk
-Version:	1.9.7
+Version:	1.9.8
 Release:	1
 Summary:	Swiss File Knife
 License:	BSD
@@ -30,7 +30,7 @@ files of a folder).
 %{_bindir}/%{name}
 
 %changelog
-* Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.7
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.8
 - Rebuilt for Fedora
 * Sun May 24 2020 daviddavid <daviddavid> 1.9.7-1.mga8
 + Revision: 1587262

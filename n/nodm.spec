@@ -52,7 +52,7 @@ ln -sf /etc/pam.d/xdm /etc/pam.d/nodm
 
 %changelog
 * Sun Jul 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 22 2010 boris@steki.net
 - Added required pam file in /etc/pam.d/ as link to xdm
   as it is always added trough xserver installation

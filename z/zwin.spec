@@ -38,7 +38,7 @@ as a toolkit for g11n windowing under console.
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2008 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for M6(CentOS5).
 

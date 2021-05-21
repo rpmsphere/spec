@@ -206,7 +206,7 @@ fi
 - Rebuild for FE6
 
 * Fri Feb 17 2006 Gerard Milmeister <gemi@bluewin.ch> - 0.6.2-6
-- Rebuild for Fedora Extras 5
+- Rebuilt for Fedora Extras 5
 
 * Wed Sep 14 2005 Gerard Milmeister <gemi@bluewin.ch> - 0.6.2-5
 - changes to the trigger code

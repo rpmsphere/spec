@@ -44,7 +44,7 @@ update-desktop-database %{_datadir}/applications >/dev/null 2&1 || :
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 31 2010 Chih-Chun Tu <vincent.tu@ossii.com.tw> 0.1-2
 - Add new function to check DomU disk image file exist or not.
 

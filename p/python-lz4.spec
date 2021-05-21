@@ -32,7 +32,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Fri Feb 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 21 2014 Antoine Martin <antoine@devloop.org.uk - 0.6.1-0
 - New upstream release
 * Wed Jan 15 2014 Antoine Martin <antoine@devloop.org.uk - 0.6.0-1.0

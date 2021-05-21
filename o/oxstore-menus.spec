@@ -50,7 +50,7 @@ fi
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 20 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0-3
 - Add link to applications-gnome-merged
 

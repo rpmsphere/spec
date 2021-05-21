@@ -83,7 +83,7 @@ EOF
 
 %changelog
 * Mon Jul 27 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.6.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 06 2014 Denis Silakov <denis.silakov@rosalab.ru> 3.5.1.0-1
 + Revision: b8f21eb
 - Clean .abf.yml

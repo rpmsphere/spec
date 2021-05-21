@@ -40,7 +40,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.21.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 29 2011 Jon Nordby <jonn@openismus.com> - 0.21.3-1
 - Make compatible with OpenSUSE 11.4
 * Tue May 24 2011 Jan Arne Petersen <jpetersen@openismus.com> - 0.21.3-0

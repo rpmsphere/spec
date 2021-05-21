@@ -8,7 +8,6 @@ Patch1:          xml-coreutils-fix_buffer_overflow.patch
 URL:             http://xml-coreutils.sourceforge.net/
 Group:           Productivity/Text/Utilities
 License:         GNU General Public License version 3 (GPL v3)
-BuildRoot:       %{_tmppath}/build-%{name}-%{version}
 BuildRequires:   bison flex ncurses-devel slang-devel
 BuildRequires:   expat-devel
 BuildRequires:   gcc make glibc-devel

@@ -74,7 +74,7 @@ sed -i 's|%{buildroot}||' %{buildroot}%{_libdir}/pkgconfig/libseafile.pc
 
 %changelog
 * Wed Oct 30 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun 18 2013 Stefan Lohmaier <stefan.lohmaier@stefanlohmaier.de> - 1.7.0-1
 - updated to 1.7.0
 * Thu May 30 2013 Stefan Lohmaier <stefan.lohmaier@stefanlohmaier.de> - 1.1.0-1

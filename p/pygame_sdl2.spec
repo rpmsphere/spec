@@ -51,7 +51,7 @@ python3 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 
 %changelog
 * Tue Feb 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 6.99.14.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul 07 2017 Aleksei Nikiforov <darktemplar@altlinux.org> 6.99.10.1227-alt2
 - Reimported sources and fixed build
 * Tue Jul 26 2016 Fr. Br. George <george@altlinux.ru> 6.99.10.1227-alt1

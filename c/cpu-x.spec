@@ -50,7 +50,7 @@ install -m755 src/lib*.so %{buildroot}%{_libdir}
 
 %changelog
 * Fri Oct 18 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 13 2018 Anton Midyukov <antohami@altlinux.org> 3.2.2-alt1
 - new version 3.2.2
 * Wed Apr 11 2018 Anton Midyukov <antohami@altlinux.org> 3.2.1-alt1

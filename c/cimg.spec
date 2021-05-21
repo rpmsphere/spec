@@ -100,7 +100,7 @@ mv %{oname}.h %{buildroot}%{_includedir}
 
 %changelog
 * Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 1.5.2-2.mga3
 + Revision: 347754
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

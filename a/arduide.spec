@@ -21,13 +21,14 @@ electronics prototyping platform.
 %prep
 %setup -q -n %name
 sed -i -e 119d -e 125,133d gui/FirstTimeWizard.cpp
+sed -i '322s|return .*|return true;|' utils/hexview/QHexView.cpp
 
 %build
-cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_INSTALL_PREFIX=/usr -DUSE_FHS_PATHS=ON .
-make %{?_smp_mflags}
+%cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_INSTALL_PREFIX=/usr -DUSE_FHS_PATHS=ON .
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 mv %{buildroot}%{_datadir}/icons %{buildroot}%{_datadir}/pixmaps
 
 %files 

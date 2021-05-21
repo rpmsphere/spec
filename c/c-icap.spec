@@ -13,7 +13,7 @@ Source3: %name.conf.tmp
 Source4: %name.conf
 Source5: %name.magic
 Requires(pre): shadow-utils
-BuildRequires: doxygen libdb4-devel openldap-devel libmemcached-devel zlib-devel bzip2-devel
+BuildRequires: doxygen libdb-devel openldap-devel libmemcached-devel zlib-devel bzip2-devel
 
 %description
 Implementation of an Internet Content Adaptation Protocol (ICAP) server.

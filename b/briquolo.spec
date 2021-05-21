@@ -17,7 +17,6 @@ BuildRequires:  gcc-c++
 BuildRequires:  libdrm-devel
 BuildRequires:  libpng-devel
 BuildRequires:  mesa-libGL-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Briquolo features an appealing and scenic 3D view of where the action

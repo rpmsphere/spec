@@ -34,6 +34,6 @@ install -Dm755 pforth_standalone ${RPM_BUILD_ROOT}%{_bindir}/%{name}
 
 %changelog
 * Tue Oct 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 28.20180424
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon May  5 2014 Takashi Tanigawa (MihailJP) - 27.20101121
 - First packaging

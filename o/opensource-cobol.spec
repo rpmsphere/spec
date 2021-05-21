@@ -79,4 +79,4 @@ fi
 
 %changelog
 * Tue Jul 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.2J
-- Rebuild for Fedora
+- Rebuilt for Fedora

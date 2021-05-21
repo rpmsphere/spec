@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 10 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 18 1999 Robert Gasch <Robert_Gasch@peoplesoft.com>
 - first spec file

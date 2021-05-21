@@ -6,7 +6,6 @@ Group: Applications/System
 License: GPL
 URL: http://portspoof.org/
 Source0: %{name}-master.zip
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 The Portspoof program primary goal is to enhance OS security through a set of
@@ -23,6 +22,7 @@ concepts.
 
 %prep
 %setup -q -n %{name}-master
+sed -i '/sysctl.h/d' src/connection.h
 
 %build
 %configure

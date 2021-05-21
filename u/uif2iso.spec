@@ -17,11 +17,11 @@ cp %{SOURCE1} .
 cat /etc/fstab
 
 %build
-%cmake
-make
+%cmake .
+%cmake_build
 
 %install
-make DESTDIR=$RPM_BUILD_ROOT install
+%cmake_install
 
 %clean
 rm -rf "$RPM_BUILD_ROOT"

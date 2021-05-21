@@ -1,7 +1,7 @@
 Summary:	An advanced and secure webserver for Unix
 Name:		hiawatha
-Version:	10.10
-Release:	2
+Version:	10.12
+Release:	1
 Source0:	http://www.hiawatha-webserver.org/files/%{name}-%{version}.tar.gz
 Source1:	%{name}-sysvscript
 License:	GPLv2+
@@ -37,10 +37,10 @@ It has of course also thoroughly been checked and tested for buffer overflows.
 	-DCMAKE_INSTALL_SBINDIR:PATH=%{_sbindir} \
 	-DCMAKE_INSTALL_SYSCONFDIR:PATH=%{_sysconfdir} \
 	-DCMAKE_INSTALL_MANDIR:PATH=%{_mandir}
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 mkdir -p %{buildroot}/var/log/%{name}
 install -D -m 644 logrotate.d/%name %{buildroot}%{_sysconfdir}/logrotate.d/%name
 perl -pi -e 's|/usr/var/log/hiawatha/|/var/log/hiawatha/|' %{buildroot}%{_sysconfdir}/%name/hiawatha.conf
@@ -61,7 +61,7 @@ install -D -m 755 %{SOURCE1} %{buildroot}%{_initrddir}/%{name}
 %{_libdir}/%{name}
 
 %changelog
-* Fri Jun 19 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 10.10
+* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 10.12
 - Rebuilt for Fedora
 * Tue Sep 18 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 8.5-1
 + Revision: 817067

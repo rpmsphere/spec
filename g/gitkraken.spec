@@ -75,7 +75,7 @@ fi
 
 %changelog
 * Tue Nov 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Aug 23 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 4.0.2-1
 - Updated to version 4.0.2.
 * Fri Aug 03 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 3.6.6-1

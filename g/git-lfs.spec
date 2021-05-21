@@ -74,7 +74,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Aug 24 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.1
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 6 2015 Andrew Neff <andyneff@users.noreply.github.com> - 1.1.0-1
 - Added Requires and version for git back in
 * Sat Oct 31 2015 Andrew Neff <andyneff@users.noreply.github.com> - 1.0.3-1

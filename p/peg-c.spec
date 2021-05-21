@@ -1,4 +1,4 @@
-Name:         c-peg
+Name:         peg-c
 Summary:      Recursive-Descent parser generators for C
 URL:          http://piumarta.com/software/peg/
 Group:        Compiler

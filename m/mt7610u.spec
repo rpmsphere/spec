@@ -59,4 +59,4 @@ depmod -a > /dev/null 2> /dev/null
 
 %changelog
 * Mon Oct 08 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 20180326
-- Rebuild for Fedora
+- Rebuilt for Fedora

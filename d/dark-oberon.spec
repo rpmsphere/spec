@@ -87,7 +87,7 @@ rm -rf %{buildroot};
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - svn.2007.11.30
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 21 2008 Wind Win <yc.yan@ossii.com.tw>
 - Rebuild for OSSII.
 * Sat Dec  1 2007 mskibbe@suse.de

@@ -119,7 +119,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 12 2010 Feather Mountain <john@ossii.com.tw> 0.8-4.ossii
 - Update to 0.8-4
 - 調整倒數記時的數值位置

@@ -72,7 +72,7 @@ find %{buildroot} -name .cvsignore | xargs rm -v
 
 %changelog
 * Fri Jun 12 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 27 2020 Dominique Leuenberger <dimstar@opensuse.org>
 - Don't mess with Epoch: in the long run it can't but cause
   problems. Upstreams that don't understand the meaning of version

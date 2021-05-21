@@ -30,7 +30,7 @@ install -m 755 tkdiff $RPM_BUILD_ROOT/usr/bin/tkdiff
 
 %changelog
 * Tue Oct 08 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.3.5
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Nov 28 2011 pascal.bleser@opensuse.org
 - update to 4.2:
   * works with Subversion 1.7

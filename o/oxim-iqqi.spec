@@ -57,7 +57,7 @@ oxim-agent -r
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Oct 27 2011 Wind Win <yc.yan@ossii.com.tw> 0.1.0-5
 - Bug fixed for en module: the ability of keypad ENTER.
 

@@ -214,7 +214,7 @@ fi
 
 %changelog
 * Fri Jan 17 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Oct 16 2013 Michael Hampton <bitcoin@ringingliberty.com> 0.8.5-2
 - Remove bitcoind and bitcoin-qt launcher scripts no longer used upstream
 - Ship upstream example config file

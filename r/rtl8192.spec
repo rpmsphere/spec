@@ -72,6 +72,6 @@ exit 0
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jan 05 2012 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for OSSII

@@ -105,7 +105,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Fri Nov 28 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jan 12 2013 umeabot <umeabot> 0.8.3.1-2.mga3
 + Revision: 352319
 - Mass Rebuild - https://wiki.mageia.org/en/Feature:Mageia3MassRebuild

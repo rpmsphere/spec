@@ -81,4 +81,4 @@ rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Sat Sep 29 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.22
-- Rebuild for Fedora
+- Rebuilt for Fedora

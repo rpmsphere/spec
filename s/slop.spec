@@ -48,7 +48,7 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Tue Sep 12 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 7.3.49
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Sep  3 2015 nemysis@openSUSE.org
 - Update to 4.2.19, announce message is here:
     https://github.com/naelstrof/slop/releases/tag/v4.2.19

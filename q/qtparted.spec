@@ -11,6 +11,7 @@ Source11:	qtparted.pam
 License:	GPL
 Group:		Applications/System
 BuildRequires:  qt4-devel
+BuildRequires:  parted-devel
 
 %description
 QtParted is a graphical partition editor, similar to PartitionMagic(tm).
@@ -19,11 +20,11 @@ QtParted is a graphical partition editor, similar to PartitionMagic(tm).
 %setup -q
 
 %build
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DQT_QMAKE_EXECUTABLE=qmake-qt4 .
-make
+%cmake -DCMAKE_INSTALL_PREFIX=/usr -DQT_QMAKE_EXECUTABLE=qmake-qt4 .
+%cmake_build
 
 %install
-make install DESTDIR="$RPM_BUILD_ROOT"
+%cmake_install
 # pam/kapabilities support
 mkdir -p %{buildroot}%{_sbindir}
 mv %buildroot%_bindir/* %buildroot%_sbindir

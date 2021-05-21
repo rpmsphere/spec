@@ -61,7 +61,7 @@ exit 0
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 4 2008 Wei-Lun Chao <bluebat@member.fsf.org> 0.3.38-1.ossii
 - Rebuild for M6(CentOS5)
 

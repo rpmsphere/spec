@@ -11,7 +11,7 @@ Source1:		%{name}.png
 Patch0:			%{name}-gcc43.patch
 Patch1:			qtstalker-stringcompare.patch
 BuildRequires: gcc-c++
-BuildRequires:  db4-devel
+BuildRequires:  libdb-devel
 BuildRequires:	ta-lib-devel
 BuildRequires:	qt3-devel
 

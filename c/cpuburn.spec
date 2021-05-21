@@ -36,7 +36,7 @@ install -m 0755 {burnP6,burnBX,burnK6,burnK7,burnMMX,burnP5} \
 
 %changelog
 * Wed Feb 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4a
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Dec 13 2017 st <sergei.a.trusov@ya.ru> 1.4a-6
 - (563aad1) Merge pull request #1 from st/cpuburn:rosa2016.1
 - (563aad1) Added a package for x64 (with 32bit binaries)

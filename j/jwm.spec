@@ -130,7 +130,7 @@ install -p -m 644 %{SOURCE1} %{buildroot}%{_datadir}/xsessions/
 - Removed some patches because they were fixed by upstream
 
 * Thu Jun 17 2010 German A. Racca <gracca@gmail.com> 2.0.1-2.20100616svn
-- Rebuild for Fedora 13
+- Rebuilt for Fedora 13
 - Updated to snapshot 20100616
 
 * Wed May 19 2010 German A. Racca <gracca@gmail.com> 2.0.1-1.20100503svn

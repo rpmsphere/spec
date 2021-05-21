@@ -115,7 +115,7 @@ update-desktop-database &> /dev/null || :
 
 %changelog
 * Mon Nov 28 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 29 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.D8-12
 - Rebuilt for https://fedoraproject.org/wiki/Changes/F23Boost159
 * Wed Jul 22 2015 David Tardon <dtardon@redhat.com> - 1.D8-11

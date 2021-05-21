@@ -80,7 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Apr 21 2012 Julian Weissgerber <sloevenh1@googlemail.com> - 0.3.3-1
 - SysV script
 * Thu Apr 19 2012 Julian Weissgerber <sloevenh1@googlemail.com> - 0.3.3-0

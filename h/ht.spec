@@ -37,7 +37,7 @@ mv %{buildroot}%{_bindir}/ht %{buildroot}%{_bindir}/hte
 
 %changelog
 * Fri Dec 16 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sat Jun 22 2013 jengelh@inai.de
 - Provide the program under an altername name "hte" so as to
   continue to be able to install it alongside LyX in openSUSE 13.1

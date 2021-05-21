@@ -1,4 +1,4 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 %define _name PyUPC-EAN
 
 Summary: A barcode library/module for python
@@ -10,8 +10,8 @@ License: Revised BSD License
 Group: Development/Libraries
 BuildArch: noarch
 URL: https://github.com/GameMaker2k/PyUPC-EAN
-BuildRequires: python
-BuildRequires: python-setuptools
+BuildRequires: python3
+BuildRequires: python3-setuptools
 
 %description
 PyUPC-EAN is a barcode library/module for Python. It supports the barcode
@@ -22,16 +22,16 @@ code39, code93, and msi.
 %setup -q -n %{_name}-%{version}
 
 %build
-python setup.py build
+python3 setup.py build
 
 %install
-python setup.py install --single-version-externally-managed -O1 --root=$RPM_BUILD_ROOT
+python3 setup.py install --single-version-externally-managed -O1 --root=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%{python_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.10

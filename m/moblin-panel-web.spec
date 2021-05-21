@@ -121,7 +121,7 @@ fi
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 26 2010 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for OSSII
 * Thu Oct  7 2010 awafaa@opensuse.org

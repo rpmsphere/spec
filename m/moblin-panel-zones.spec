@@ -77,7 +77,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 26 2010 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for OSSII
 * Tue Oct 19 2010 awafaa@opensuse.org

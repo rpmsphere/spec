@@ -11,7 +11,7 @@ Group:          Productivity/File utilities
 Source0:        %{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
 BuildRequires:  ant >= 1.6.5
-BuildRequires:  java-devel-openjdk lua
+BuildRequires:  java-openjdk-devel lua
 BuildArch:      noarch
 
 %description

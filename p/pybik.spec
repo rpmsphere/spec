@@ -17,7 +17,7 @@ BuildRequires:  help2man
 BuildRequires:  desktop-file-utils
 BuildRequires:  ImageMagick
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:  python2-docutils
+BuildRequires:  python3-docutils
 Requires:  python3-qt5
 Requires:  python3-pyicu
 

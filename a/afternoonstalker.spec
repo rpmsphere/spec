@@ -1,10 +1,10 @@
 Name:			afternoonstalker
-Version:		1.1.5
+Version:		1.1.6
 Summary:		A Night Stalker(TM) clone
 License:		GPLv2
 URL:			http://sarrazip.com/dev/%{name}.html
 Group:			Amusements/Games
-Release:		15.4
+Release:		1
 Source0:		%{name}-%{version}.tar.gz
 BuildRequires:		desktop-file-utils
 BuildRequires:		gcc-c++
@@ -27,6 +27,7 @@ your only protection.
 %setup -q
 
 %build
+#export CFLAGS="-std=gnu++11"
 %configure
 %{__make} %{?jobs:-j%jobs}
 
@@ -61,5 +62,5 @@ install -D -m644 src/%{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/applications/%{
 %{_mandir}/man*/*
 
 %changelog
-* Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.5
+* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.6
 - Rebuilt for Fedora

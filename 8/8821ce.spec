@@ -48,4 +48,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Thu Jan 07 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0git
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -33,6 +33,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Nov 05 2009 Harry Chen <harry@server1.ossii.com.tw> - 1.0-1.ossii
 - Initial build for osssii

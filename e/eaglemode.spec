@@ -18,11 +18,12 @@ BuildRequires:  gtk2-devel
 BuildRequires:  libjpeg-devel
 BuildRequires:  libpng-devel
 BuildRequires:  libtiff-devel
-BuildRequires:  perl
+BuildRequires:  perl-interpreter
 BuildRequires:  libX11-devel
 BuildRequires:  librsvg2-devel
 BuildRequires:  xine-lib-devel
 BuildRequires:  poppler-glib-devel
+BuildRequires:  vlc-devel
 
 %description
 Eagle Mode is an advanced solution for a futuristic style of man-machine

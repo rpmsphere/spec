@@ -64,7 +64,7 @@ popd #_icons
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.0.6
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun May 20 2012 robertherb@arcor.de
 - new upstream version <3.2.0.6>
 * Mon Apr 30 2012 seife+obs@b1-systems.com

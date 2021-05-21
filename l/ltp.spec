@@ -1,6 +1,5 @@
 %undefine _debugsource_packages
 %global __os_install_post %{nil}
-#global __spec_install_post %{nil}
 
 Summary:	Linux Test Project
 Name:		ltp
@@ -12,7 +11,7 @@ URL:		https://github.com/linux-test-project/ltp
 Source0:	http://downloads.sourceforge.net/project/%{name}/LTP%20Source/%{name}-%{version}/%{name}-full-%{version}.tar.bz2
 BuildRequires:	flex
 BuildRequires:	rsync
-Requires:	cdialog
+Requires:	dialog
 Patch0:		ltp-getcpu.patch
 
 %description

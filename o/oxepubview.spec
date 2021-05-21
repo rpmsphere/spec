@@ -135,7 +135,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jul  8 2011 Wilson Tien <wilson@ossii.com.tw> - 2.0-19X
 - oxepubview.spec: deliverables change to OXZ file so details of the oxzilla
   application code is invisible.

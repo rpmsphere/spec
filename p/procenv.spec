@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Apr 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.36
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jun  5 2014 Dave Love <d.love@liverpool.ac.uk> - 0.35-2
 - Only BR perl-JSON-PP and run tests on fedora
 * Fri Jan 31 2014 James Hunt <james.hunt@ubuntu.com> - 0.32-1

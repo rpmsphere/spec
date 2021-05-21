@@ -54,6 +54,6 @@ chmod 755 %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 04 2008 Feather Mountain <john@ossii.com.tw> - 0.7.3-1.ossii
 - Build for M6(OSSII)

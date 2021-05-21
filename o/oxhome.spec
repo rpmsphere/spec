@@ -73,7 +73,7 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Mar 12 2010 Wind <yc.yan@ossii.com.tw> 0.1-7
 - Auto-launched file added.
 

@@ -13,7 +13,7 @@ BuildRequires: SDL-devel
 BuildRequires: SDL_image-devel
 BuildRequires: gstreamer1-devel
 BuildRequires: readline-devel
-#BuildRequires: libdb4-devel
+#BuildRequires: libdb-devel
 #BuildRequires: libpq-devel
 
 %description

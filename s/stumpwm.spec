@@ -44,4 +44,4 @@ make install destdir=%{buildroot}
 
 %changelog
 * Mon Dec 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 19.11
-- Rebuild for Fedora
+- Rebuilt for Fedora

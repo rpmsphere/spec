@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 11 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jul 11 2012 pterjan <pterjan> 0.3-1.mga3
 + Revision: 269354
 - Update to 0.3

@@ -29,4 +29,4 @@ python setup.py install --root=%{buildroot}
 
 %changelog
 * Fri Jul 24 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.16
-- Rebuild for Fedora
+- Rebuilt for Fedora

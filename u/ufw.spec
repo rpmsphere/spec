@@ -65,7 +65,7 @@ sed -i 's| /bin/python| python|' %{buildroot}%{_sbindir}/ufw
 
 %changelog
 * Mon Oct 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.33
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Nov  9 2012 johann.luce@wanadoo.fr
 -fix problem systemd move in /usr
   fix various warning OBS

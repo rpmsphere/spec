@@ -56,7 +56,7 @@ EOF
 
 %changelog
 * Sun Mar 31 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.96beta
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 16 2012 lars@linux-schulserver.de
 - fix license to be in SPDX format
 - specfile cleanup

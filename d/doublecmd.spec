@@ -45,6 +45,6 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %changelog
 * Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.9
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 5 2012 - Konstantin Vlasov <konstantin.vlasov@rosalab.ru>
 - New package from developer's site, version 0.5.4

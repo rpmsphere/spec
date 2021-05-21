@@ -6,7 +6,7 @@ License:	GPL-2.0+
 Group:		Applications/Engineering
 URL:		http://sourceforge.net/projects/extcalc-linux/
 Source0:	http://sourceforge.net/projects/extcalc-linux/files/extcalc-linux/%{version}/concalc-%{version}.tar.gz
-BuildRequires: gcc-c++, cmake
+BuildRequires:  gcc-c++, cmake
 
 %description
 Concalc is the console version of the Extcalc calculator.
@@ -16,13 +16,14 @@ Concalc is the console version of the Extcalc calculator.
 sed -i -e 's|/usr/local|/usr|' CMakeLists.txt
 
 %build
-%cmake
+%cmake .
 sed -i -e 's|-O3||' -e 's|-Werror=format-security||' CMakeCache.txt CMakeFiles/concalc.dir/link.txt CMakeFiles/concalc.dir/flags.make
-make
+%cmake_build
 										
 %install
 rm -rf $RPM_BUILD_ROOT
-make DESTDIR=$RPM_BUILD_ROOT install
+#make DESTDIR=$RPM_BUILD_ROOT install
+%cmake_install
 
 %files
 %doc AUTHORS ChangeLog COPYING README

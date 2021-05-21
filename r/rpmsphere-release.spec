@@ -1,6 +1,6 @@
 Summary:	RPM Sphere release file
 Name:		rpmsphere-release
-Version:	32
+Version:	34
 Release:	1
 License:	Public Domain
 Group:		System Environment/Base
@@ -30,5 +30,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
-* Thu Apr 30 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 32
+* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 34
 - Rebuilt for Fedora

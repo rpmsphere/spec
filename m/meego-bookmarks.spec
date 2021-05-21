@@ -36,7 +36,7 @@ install -p -m 644 %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/bookmarks
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Oct 26 2010 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for OSSII
 * Thu Jun 10 2010 awafaa@opensuse.org

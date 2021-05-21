@@ -65,7 +65,7 @@ cp AUTHORS COPYING DISTRIBUTING GPLV3.txt LGPLV3.txt INSTALL NEWS README ROADMAP
 
 %changelog
 * Tue Jul 11 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.7
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Oct 21 2013 umeabot <umeabot> 0.8.7-2.mga4
 + Revision: 540747
 - Mageia 4 Mass Rebuild

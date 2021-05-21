@@ -6,7 +6,7 @@ License:        GPLv2+
 Group:          Applications/Internet
 URL:            http://angryip.org
 Source:		    %{name}-%{version}.tar.gz
-BuildRequires:  java-devel-openjdk lua
+BuildRequires:  java-openjdk-devel lua
 BuildRequires:  ant
 BuildRequires:  fakeroot
 BuildRequires:  git

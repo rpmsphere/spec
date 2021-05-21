@@ -186,7 +186,7 @@ fi
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.21.17
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Sep 07 2011 Jon Nordby <jonn@openismus.com> - 0.21.17-2
 - Remove contextkit dep on Fedora
 * Sun May 29 2011 Jon Nordby <jonn@openismus.com> - 0.21.17-1

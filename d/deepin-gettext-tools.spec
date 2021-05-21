@@ -28,6 +28,6 @@ make DESTDIR=%{buildroot} install
 
 %changelog
 * Wed Aug 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 28 2015 Derek Dai
 - Initial package

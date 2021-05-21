@@ -8,7 +8,7 @@ Group:          Applications/System
 License:        GPLv2
 URL:            https://github.com/trollixx/quickterminal
 Source0:        %{name}-master.zip
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qtermwidget-devel
 
 %description

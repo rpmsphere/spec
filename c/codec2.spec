@@ -80,7 +80,7 @@ cp --archive win32 $SHAREDIR
 
 %changelog
 * Thu Feb 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Dec 30 2012 Mike Heitmann <mheitmann@n0so.net> 0.2.0-2
 - Fixed ldconfig path error
 * Sun Dec 30 2012 Mike Heitmann <mheitmann@n0so.net> 0.2.0-1

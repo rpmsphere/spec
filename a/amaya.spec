@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jun 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 11.4.4
-- Rebuild for Fedora
+- Rebuilt for Fedora
 
 * Thu Jun 12 2008 Pixel <pixel@mandriva.com> 10.0-1mdv2009.0
 + Revision: 218429

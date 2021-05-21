@@ -64,7 +64,7 @@ install -Dm0644 %{name}.pc.in %{buildroot}%{_libdir}/pkgconfig/%{name}.pc
 
 %changelog
 * Mon Oct 15 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Thu Jul 12 2018 Fedora Release Engineering <releng@fedoraproject.org> - 2.2.0-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 * Thu Apr 19 2018 Gwyn Ciesla <limburgher@gmail.com> - 2.2.0-2

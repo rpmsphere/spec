@@ -55,7 +55,7 @@ Enki is an advanced text editor for programmers. It is:
 
 %changelog
 * Wed Apr 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 14.07.2
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Aug 18 2014 Andrei Kopats <hlamer@tut.by> 14.07.2-10
 - Fix pylint and navigator related bugs
 * Tue Jul 22 2014 Andrei Kopats <hlamer@tut.by> 14.07.0-9

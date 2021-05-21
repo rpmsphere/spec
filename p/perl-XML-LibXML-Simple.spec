@@ -42,7 +42,7 @@ find $RPM_BUILD_ROOT -type f -name .packlist -exec rm -f {} ';'
 
 %changelog
 * Tue Dec 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.93
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Jun  4 2013 coolo@suse.com
 - updated to 0.93
   - move pod-test to xt/

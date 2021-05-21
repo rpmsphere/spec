@@ -47,7 +47,7 @@ make install INSTALL_ROOT=%{buildroot} STRIP=true
 
 %changelog
 * Mon Jul 17 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Sun Jan 25 2015 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.0.0-1
 + Revision: 4e836b2
 - New version 1.0.0

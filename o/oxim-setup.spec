@@ -83,7 +83,7 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Sep 17 2012 Kevin Chen <kevin.chen@ossii.com.tw> 1.5.5
 - Update java version.
 

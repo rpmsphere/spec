@@ -124,7 +124,7 @@ rm -rf %{buildroot}%{_datadir}/%{name}/non-free/lib/src/pic16/libdev/.deps
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 3.5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Aug 18 2015 normand@linux.vnet.ibm.com
 - new patch to build on ppc64le
   sdcc_add_ppc64le_suse_support.patch

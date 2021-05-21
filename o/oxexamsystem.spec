@@ -77,7 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Fri Jun 11 2010 Feather Mountain <john@ossii.com.tw> 0.2-8.ossii
 - Update to 0.2-8
 - 加入 gettime.php

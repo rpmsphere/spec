@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Jun 30 2010 chris.e.ferron@linux.intel.com
 - added patch to fix memory leak for EXA under gnome for powerVR driver sharebuffer issue.
 * Thu Apr 29 2010 Anas Nashif <anas.nashif@intel.com> - 1.1.0

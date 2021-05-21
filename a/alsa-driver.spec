@@ -96,7 +96,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Wed Feb 09 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.24-1.ossii
 - Rebuild for OSSII
 

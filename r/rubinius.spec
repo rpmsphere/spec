@@ -47,7 +47,7 @@ rake install DESTDIR=%{buildroot}
 
 %changelog
 * Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Mon Jul 25 2011 Duncan Mac-Vicar <dmacvicar@suse.de>
 - update to 1.2.4
 - see http://rubini.us/releases/1.2.4 

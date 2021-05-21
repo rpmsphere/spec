@@ -47,7 +47,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Wed Jul 13 2016 Wei-Lun Chao <bluebat@member.fsf.org> -
-- Rebuild for Fedora
+- Rebuilt for Fedora
 * Tue Nov 24 2009 Kami <kami@ossii.com.tw> 0.1-2.20090601svn72
 - Rebuild for OX 1.5
 

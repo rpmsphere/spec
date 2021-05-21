@@ -13,7 +13,7 @@ Patch2:		hotkeys-0.5.7.1-db4.patch
 Patch3:		hotkeys-0.5.7.1-gcc43.diff
 Patch4:		hotkeys-0.5.7.1-includedir.patch
 BuildRequires:  libpng-devel
-BuildRequires:  db4-devel
+BuildRequires:  libdb-devel
 BuildRequires:	libxml2-devel
 BuildRequires:	xosd-devel
 BuildRequires:	gtk2-devel

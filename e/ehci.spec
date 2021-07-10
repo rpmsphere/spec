@@ -35,8 +35,8 @@ sed -i -e 's|CvMatr32f|float*|' -e 's|CvVect32f|float*|' include/ehci.h src/ehci
 sed -i '1i #include <opencv2/imgproc.hpp>\n#include <opencv2/calib3d/calib3d_c.h>' src/ehci.cpp
 
 %build
-%cmake -DBUILD_SHARED_LIBS=ON -DOpenCV_DIR=%{_libdir}/OpenCV
-make %{?_smp_mflags}
+cmake -DBUILD_SHARED_LIBS=ON -DOpenCV_DIR=%{_libdir}/cmake/OpenCV .
+%make_build
 
 %install
 rm -rf %{buildroot}

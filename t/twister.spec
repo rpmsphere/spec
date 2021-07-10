@@ -14,7 +14,7 @@ BuildRequires:  boost-devel
 BuildRequires:  gcc-c++
 BuildRequires:  libdb-cxx-devel
 BuildRequires:  openssl-devel
-Requires:       tkinter
+Requires:       python3-tkinter
 Patch0:         twister-core-aarch64.patch
 Source2:	twister.sh
 
@@ -29,11 +29,12 @@ and BitTorrent protocols.
 %patch0 -p1
 
 %build
+export CXXFLAGS="-std=gnu++11"
 ./autotool.sh
 %ifarch aarch64
 %configure --disable-sse2
 %else
-%configure
+./configure --prefix=/usr
 %endif
 make %{?_smp_mflags}
 

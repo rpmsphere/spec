@@ -60,20 +60,20 @@ This package provides the Vc static library.
 %setup -q
 
 %build
-mkdir build
-cd build
+#mkdir build
+#cd build
 %cmake ..\
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
   -DBUILD_TESTING=OFF
-make %{?_smp_mflags}
+%cmake_build
 
 cd ../doc
 doxygen
 cd ..
 
 %install
-cd build
-%make_install
+#cd build
+%cmake_install
 mkdir -p %{buildroot}%{_docdir}/%{name}
 cp -a ../README.md ../doc/html %{buildroot}%{_docdir}/%{name}
 

@@ -1,13 +1,16 @@
+%undefine _debugsource_packages
+
 Name:           rsh-redone
 Version:        83
 Release:        8.1
 License:        GPL
-BuildRequires:  cmake pam-devel
+BuildRequires:  cmake
+BuildRequires:  pam-devel
+BuildRequires:  uif2iso
 Group:          Productivity/Networking/Other
 Summary:        Reimplementation of rsh and rlogin
 Patch:		rsh-redone_83-1.diff.bz2
-Source:		%{name}-%{version}.tar.bz2
-Source1:	CMakeLists.txt
+Source0:	%{name}-%{version}.tar.bz2
 
 %description
 Rsh-redone is a reimplementation of the remote shell clients and servers.
@@ -41,15 +44,14 @@ This package provides rshd and rlogind
 %prep
 %setup -q
 %patch -p1
-%{__cp} %{SOURCE1} .
 
 %build
-%cmake
-%{__make}
+make
 
 %install
 rm -rf "$RPM_BUILD_ROOT"
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%make_install
+mv %{buildroot}/usr/etc %{buildroot}/etc
 
 %clean
 rm -rf "$RPM_BUILD_ROOT"

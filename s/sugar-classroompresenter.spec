@@ -1,3 +1,5 @@
+%global sugaractivitydir /usr/share/sugar/activities
+
 Name:		sugar-classroompresenter
 Version:	beta1
 Release:	1

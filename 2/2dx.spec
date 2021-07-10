@@ -1,3 +1,5 @@
+%define __python /usr/bin/python2
+
 Summary: Image Processing for 2D Crystal Images
 Name: 2dx
 Version: 3.5.0
@@ -22,11 +24,11 @@ EM-Micrographs of 2D membrane crystals from Stalhberg Lab, UC Davis.
 %build
 export PATH=%{_libdir}/qt5/bin:$PATH
 cmake . -DCMAKE_INSTALL_PREFIX=$RPM_BUILD_ROOT%{_libdir}/%{name}
-make
+%make_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install
+%make_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT

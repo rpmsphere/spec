@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name: dmd
-Version: 2.093.1
+Version: 2.097.0
 Release: 1
 Summary: The D Programming Language reference compiler
 Group: Development/Language
@@ -54,25 +54,25 @@ cp -r docs/man/* %{buildroot}%{_mandir}
 
 #cd ../install
 install -Dm755 generated/linux/release/64/dmd %{buildroot}%{_bindir}/%{name}
-cp -d ../install/linux/lib64/* %{buildroot}%{_libdir}
+cp -d ../phobos/generated/linux/release/64/lib* %{buildroot}%{_libdir}
 cp -r samples %{buildroot}%{_datadir}/%{name}
 cp -r src %{buildroot}%{_includedir}/%{name}
-cp -r ../install/src/* %{buildroot}%{_includedir}/%{name}
+#cp -r ../install/src/* %{buildroot}%{_includedir}/%{name}
 install -Dm644 %{SOURCE4} %{buildroot}%{_sysconfdir}/dmd.conf
 install docs/man/man1/* %{buildroot}%{_mandir}/man1
 install docs/man/man5/* %{buildroot}%{_mandir}/man5
 
 %files
-%doc README.md ../install/*.txt
+%doc README.md LICENSE.txt
 %{_bindir}/*
 %{_datadir}/%{name}
 %{_includedir}/%{name}
 %{_sysconfdir}/*
 %{_mandir}/man?/*
-%{_libdir}/libphobos2.*
+%{_libdir}/*
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.093.1
+* Sat Jul 03 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.097.0
 - Rebuilt for Fedora
 * Fri Aug 16 2013 Dmitriy Kulik <lnkvisitor@altlinux.org> 2.063.2-alt1
 - new version

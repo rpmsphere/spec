@@ -7,6 +7,7 @@ Summary:       OsX Like Dashboard
 Group:         System/X11/Utilities
 Source:        universal-applets_0.1.2bzr624-1.tar.gz
 BuildRequires: python2-devel
+BuildRequires: ImageMagick
 BuildArch:     noarch
 Requires:      pyxdg
 Requires:      python2-imaging
@@ -50,8 +51,8 @@ mkdir -p $RPM_BUILD_ROOT/etc/universal-applets
 bash -c "echo /usr > $RPM_BUILD_ROOT/etc/universal-applets/prefix"
 
 ##rm -f $RPM_BUILD_ROOT/usr/share/applications/universal-applets-manager.desktop 
-convert desktop-menu/screenlets.svg desktop-menu/screenlets.png
-install -Dm644 desktop-menu/screenlets.png %{buildroot}%{_datadir}/pixmaps/screenlets.png
+##convert desktop-menu/screenlets.svg desktop-menu/screenlets.png
+install -Dm644 desktop-menu/screenlets.svg %{buildroot}%{_datadir}/pixmaps/screenlets.svg
 rm -f %{buildroot}%{_datadir}/icons/screenlets.svg
 sed -i 's|/usr/share/icons/screenlets.svg|screenlets|' %{buildroot}%{_datadir}/applications/universal-applets-manager.desktop
 
@@ -78,7 +79,7 @@ bash -c "(kill `ps ax | grep screenlets-daemon | sed 's,.*grep.*,,' | cut -d" " 
 %{_datadir}/universal-applets-manager/*
 %{_datadir}/melange/*
 %{_datadir}/applications/*
-%{_datadir}/pixmaps/screenlets.png
+%{_datadir}/pixmaps/screenlets.*
 %{_datadir}/locale/*/LC_MESSAGES/screenlets*.mo
 %{_datadir}/locale/*/LC_MESSAGES/universal*.mo
 %{_datadir}/ua-sidebar/themes/default/*

@@ -24,11 +24,12 @@ sed -i 's|lib/libyacas\.a|lib64/libyacas.a|' CMakeLists.txt YAGY.pro
 %endif
 
 %build
-%cmake
-make %{?_smp_mflags}
+#export CXXFLAGS="-std=gnu++11"
+%cmake .
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot}
+%cmake_install
 
 %files
 %{_bindir}/%{name}

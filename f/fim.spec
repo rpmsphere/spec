@@ -42,7 +42,7 @@ and may be configured out at build time, if necessary.
 sed -i 's|gFalse, gBgColor, bitmapTopDown|gFalse, gBgColor, bitmapTopDown, splashThinLineDefault|' src/FbiStuffPdf.cpp
 
 %build
-export LDFLAGS="$LDFLAGS -lexif"
+export LDFLAGS="$LDFLAGS -lexif" CFLAGS="-std=gnu++11"
 %configure \
     --prefix=/usr \
     --disable-debug \

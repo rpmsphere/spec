@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name: corners
 Version: 1.4.3
 Release: 1
@@ -27,6 +29,9 @@ strong and you need to have good mathematical abilities to defeat it.
 %prep
 %setup -q
 %patch -p1
+sed -i -e '36i extern "C++" {' -e '98i }' lcore_src/funcs.h
+sed -i -e '6i extern "C++" {' -e '$i }' lcore_src/pointers.h
+sed -i -e '7i extern "C++" {' -e '49i }' lcore_src/strings.h
 
 %build
 make

@@ -1,3 +1,5 @@
+%define __python /usr/bin/python2
+
 Name: python2-pylibnet
 Summary: Python module for the libnet packet injection library
 Version: 3.0

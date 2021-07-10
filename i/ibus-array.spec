@@ -1,11 +1,12 @@
 Name:       ibus-array
 Version:    0.2.2
-Release:    1
+Release:    2
 Summary:    IBus Array30 engine
 License:    GPLv3
 Group:      System Environment/Libraries
 URL:        https://github.com/lexical/ibus-array
-Source0:    https://github.com/lexical/ibus-array/archive/release-%{version}.tar.gz#/%{name}-release-%{version}.tar.gz
+#Source0:    https://github.com/lexical/ibus-array/archive/release-%{version}.tar.gz#/%{name}-release-%{version}.tar.gz
+Source0:    %{name}-master.zip
 BuildRequires:  libtool
 BuildRequires:  gettext-devel
 BuildRequires:  ibus-devel
@@ -16,7 +17,8 @@ Requires:   ibus
 The Array30 engine for IBus to input Hanzi.
 
 %prep
-%setup -q -n %{name}-release-%{version}
+#setup -q -n %{name}-release-%{version}
+%setup -q -n %{name}-master
 
 %build
 autoreconf -ifv
@@ -46,7 +48,7 @@ ibus restart || :
 %{_datadir}/ibus/component/array.xml
 
 %changelog
-* Tue Dec 22 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
-- Update to 0.2.2
+* Thu Jul 01 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
+- Update to 0.2.2 git
 * Wed Apr 22 2009 Yu-Chun Wang <mainlander1122@gmail.com> - 0.0.1
 - The first version

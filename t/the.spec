@@ -1,12 +1,12 @@
 Name:           the
 URL:            http://hessling-editor.sourceforge.net/
-Version:        3.3rc4
-Release:        3.1
-Summary:    The Hessling Editor
+Version:        3.3rc7
+Release:        1
+Summary:        The Hessling Editor
 License:        GFDL v1.1 ; GPL v2 or later
 Group:          Productivity/Editors/Other
-Source0:        http://dl.sourceforge.net/project/hessling-editor/hessling-editor/3.3%20Release%20Candidate%204/THE-3.3RC4.tar.gz
-BuildRequires:  flex ncurses-devel regina-devel
+Source0:        http://dl.sourceforge.net/project/hessling-editor/hessling-editor/3.3%20Release%20Candidate%207/THE-3.3RC7.tar.gz
+BuildRequires:  flex ncurses-devel regina-rexx-devel
 
 %description
 THE is a text editor that uses both command line commands and key
@@ -14,13 +14,13 @@ bindings to operate. It is intended to be similar to the VM/CMS System
 Product Editor, XEDIT, and to Mansfield Software's, KEDIT.
 
 %prep
-%setup -q -n THE-3.3RC4
+%setup -q -n THE-3.3RC7
 
 %build
 ./configure \
 	--prefix=/usr \
 	--mandir=%{_mandir} \
-	--with-ncurses \
+	--with-curses=ncurses \
 	--with-rexx=regina
 #make CFLAGS="$RPM_OPT_FLAGS" 
 make
@@ -35,13 +35,12 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %doc app*.htm*
 %doc appendix.*
 %doc doc/*
-%{_bindir}/the
-%{_bindir}/nthe
+%{_bindir}/*
 %{_datadir}/THE
 %{_mandir}/man1/the.1.*
 
 %changelog
-* Fri Nov 21 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3RC4
+* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3RC7
 - Rebuilt for Fedora
 * Tue Nov  3 2009 coolo@novell.com
 - updated patches to apply with fuzz=0

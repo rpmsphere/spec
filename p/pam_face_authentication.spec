@@ -39,12 +39,12 @@ sed -i '1i #include "compat.hpp"' src/utils.cpp
 %build
 install -d build
 cd build
-%cmake ..
-%{__make}
+cmake ..
+%make_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} -C build install DESTDIR=$RPM_BUILD_ROOT
+make -C build install DESTDIR=$RPM_BUILD_ROOT
 mv $RPM_BUILD_ROOT%{_datadir}/icons $RPM_BUILD_ROOT%{_datadir}/pixmaps
 sed -i 's|/usr/share/icons/pfa-logo.png|pfa-logo|' $RPM_BUILD_ROOT%{_datadir}/applications/qt-facetrainer.desktop
 %ifarch x86_64 aarch64

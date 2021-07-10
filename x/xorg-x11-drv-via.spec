@@ -7,6 +7,7 @@ License:   opensource
 Group:     User Interface/X Hardware Support
 Source0:   5.76.52.92-opensource-009-005f78-20150730.tar.gz
 BuildRequires: xorg-x11-server-devel
+BuildRequires: xorg-x11-server-source
 BuildRequires: libXvMC-devel
 BuildRequires: libdrm-devel
 BuildRequires: systemd-devel

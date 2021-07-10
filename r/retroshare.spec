@@ -1,16 +1,17 @@
 %undefine _debugsource_packages
 
 Name:           retroshare
-Version:        0.6.4
+Version:        0.6.6git
 Release:        1
 License:        LGPL
 Summary:        Secure chat and file sharing
 Group:          Productivity/Networking/Other
 URL:	        http:/retroshare.sourceforge.net/
-Source0:        http://sourceforge.net/projects/retroshare/files/RetroShare/%{version}/RetroShare-%{version}.tar.gz
+#Source0:        http://sourceforge.net/projects/retroshare/files/RetroShare/%{version}/RetroShare-%{version}.tar.gz
+Source0:	RetroShare-master.zip
 BuildRequires:  libpng-devel
 BuildRequires:	gcc-c++
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  libupnp-devel libgpg-error libgnome-keyring-devel glib2-devel
 BuildRequires:  gpgme-devel libXScrnSaver-devel
@@ -25,7 +26,7 @@ to authenticate peers and OpenSSL to encrypt all communication.
 RetroShare provides filesharing, chat, messages and channels.
 
 %prep
-%setup -q -n RetroShare-%{version}
+%setup -q -n RetroShare-master
 #sed -i 's|CONFIG \*= rs_macos10.11|CONFIG *= unix|' retroshare.pri
 #touch libretroshare/src/ThreadPool.h
 sed -i 's|TurtleVirtualPeerId,RsGRouterTransactionChunkItem\*|TurtleVirtualPeerId|' libretroshare/src/grouter/p3grouter.cc
@@ -53,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/retroshare
 
 %changelog
-* Wed Jan 16 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.4
+* Sun Jul 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.6git
 - Rebuilt for Fedora
 * Wed Feb  8 2012 asamk@gmx.de
 - Updated to version 0.5.3a

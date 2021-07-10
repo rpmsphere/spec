@@ -10,7 +10,7 @@ Source1:        jmf-2_1_1e-alljava.zip
 Patch1:         aoi-2.8.1-mga-encoding.patch
 License:        GPLv2+
 BuildArch:      noarch
-BuildRequires:  java-devel-openjdk lua
+BuildRequires:  java-openjdk-devel lua
 BuildRequires:  ant
 #BuildRequires:  ant-nodeps
 BuildRequires:  jogl2

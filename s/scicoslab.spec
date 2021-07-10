@@ -1,8 +1,8 @@
 %undefine _missing_build_ids_terminate_build
 
 Name: scicoslab
-Version: 4.4.1
-Release: 65.1
+Version: 4.4.2
+Release: 1
 License: Scilab License
 URL: http://www.scicoslab.org
 BuildRequires: gcc-gfortran, libXt-devel
@@ -12,6 +12,7 @@ Summary: A scientific software package for numerical computations
 Source: http://cermics.enpc.fr/~jpc/scilab-gtk-tiddly/files/%{name}-%{version}.tgz
 BuildRequires: webkitgtk-devel
 BuildRequires: libtirpc-devel
+BuildRequires: /usr/bin/f77
 Obsoletes: scilabgtk
 
 %description
@@ -21,15 +22,15 @@ developed at INRIA.
 
 %prep
 %setup -q -n %{name}
-sed -i '1s|sh5|sh|' bin/dold
-sed -i 's|$(CFLOPTS)|$(CFLOPTS) -I/usr/include/tirpc -ltirpc|' pvm3/*/Makefile.aimk
+#sed -i '1s|sh5|sh|' bin/dold
+#sed -i 's|$(CFLOPTS)|$(CFLOPTS) -I/usr/include/tirpc -ltirpc|' pvm3/*/Makefile.aimk
 sed -i 's|pkg-config vte|pkg-config vte libtirpc|' configure*
-sed -i 's|INCLUDES=|INCLUDES=-I/usr/include/tirpc |' Makefile.incl.mak
+#sed -i 's|INCLUDES=|INCLUDES=-I/usr/include/tirpc |' Makefile.incl.mak
 
 %build
 export LDFLAGS="-Wl,--allow-multiple-definition -lgthread-2.0 -ltirpc"
-./autogen.sh --prefix=%{buildroot}/usr
-sed -i 's|-I/usr/include|-I/usr/include -I/usr/include/tirpc|' Makefile.incl
+#./autogen.sh --prefix=%{buildroot}/usr
+#sed -i 's|-I/usr/include|-I/usr/include -I/usr/include/tirpc|' Makefile.incl
 make all
 
 %install
@@ -68,7 +69,7 @@ rpm -fr $RPM_BUILD_ROOT
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Sun Jun 02 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.4.1
+* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.4.2
 - Rebuilt for Fedora
 * Mon Apr 09 2012 Jean-Philippe Chancelier
 - Package

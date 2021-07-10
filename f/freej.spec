@@ -20,7 +20,7 @@ BuildRequires:  libsmbclient-devel
 #BuildRequires:  libfame-devel, libmad-devel, faac-devel, a52dec-devel, directfb-devel
 BuildRequires:  flac-devel, libmpcdec-devel, gsm-devel
 BuildRequires:  SDL-devel, SDL_ttf-devel, slang-devel 
-BuildRequires:  perl perl(HTML::Template)
+BuildRequires:  perl-interpreter perl(HTML::Template)
 
 %description
 FreeJ is a digital instrument for realtime video

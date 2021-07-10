@@ -3,8 +3,8 @@
 Summary:	Portable Object Compiler
 Summary(pl):	Przenośny kompilator obiektowego C
 Name:		objc
-Version:	3.3.5
-Release:	22.1
+Version:	3.3.24
+Release:	1
 License:	LGPL
 Group:		Development/Tools
 Source0:	http://users.telenet.be/stes/%{name}-%{version}.tar.gz
@@ -13,9 +13,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	byacc
 BuildRequires:	flex
-BuildRequires:	objc-bootstrap
-Provides:	objc-bootstrap = %{version}-%{release}
-Obsoletes:	objc-bootstrap
+BuildRequires:	objc 
 
 %description
 The Portable Object Compiler consists of a set of Objective-C class
@@ -38,7 +36,7 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_prefix}/lib,%{_libdir},%{_datadir}}
-sed -i 's|/usr/man|%{buildroot}/usr/share/man|' Makefile
+sed -i 's|/usr/share/man|%{buildroot}/usr/share/man|' Makefile
 sed -i 's|/usr/include|%{buildroot}/usr/include|' Makefile
 sed -i 's|BINDIR=/usr/bin|BINDIR=%{buildroot}/usr/bin|' */*/Makefile
 sed -i 's|LIBDIR=/usr/lib|LIBDIR=%{buildroot}/usr/lib|' */*/Makefile
@@ -58,11 +56,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*.o
 %{_libdir}/*.ld
 %{_libdir}/*.txt
-%{_mandir}/man1/*
-%exclude %{_mandir}/man3/*
+%{_mandir}/man?/*
 
 %changelog
-* Fri Jan 13 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.5
+* Thu Jul 1 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.24
 - Rebuilt for Fedora
 * Wed May 18 2005 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org

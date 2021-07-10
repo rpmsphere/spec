@@ -42,7 +42,7 @@ when paired with Linux kernels that provide EFI stub support.
 %prep
 %setup -q
 sed -i 's|-fno-strict-aliasing|-fno-strict-aliasing -fno-tree-loop-distribute-patterns|' Make.common
-#sed -i 's|-lefi -lgnuefi|%{_libdir}/libefi.a %{_libdir}/libgnuefi.a|' Make.common
+sed -i 's|-lefi -lgnuefi|%{_libdir}/libefi.a %{_libdir}/libgnuefi.a|' Make.common
 %ifarch aarch64
 sed -i '37s|aarch64|unknown|' Make.common
 %endif

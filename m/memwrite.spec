@@ -8,7 +8,7 @@ Group: Amusements/Games
 License: GPLv3
 URL: http://congelli.eu/prog_info_memwrite.html
 Source0: http://congelli.eu/download/memwrite/%{name}-%{version}.tar.gz
-BuildRequires: wxGTK-devel
+BuildRequires: wxGTK2-devel
 
 %description
 This small program is a free and open source equivalent of ArtMoney(on Windows)
@@ -21,7 +21,7 @@ numbers stocked in your computer memory... to cheat in game... for example.
 %build
 autoreconf -ifv
 ./configure --prefix=/usr
-make CXXFLAGS+="-fpermissive -fPIC "
+make CXXFLAGS+="-fpermissive -fPIC -std=gnu++11 "
 
 %install
 %make_install

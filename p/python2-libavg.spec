@@ -35,13 +35,13 @@ sed -i -e 's|/usr/bin/python|/usr/bin/python2|' -e 's|/usr/bin/env python|/usr/b
 
 %build
 cp /usr/share/automake-*/config.guess .
-%cmake -DPYTHON_INTERPRETER:FILEPATH=/usr/bin/python2
+%cmake -DPYTHON_INTERPRETER:FILEPATH=/usr/bin/python2 .
 sed -i -e 's|include/ffmpeg|include/compat-ffmpeg28|' -e 's|-lswscale|-L%{_libdir}/compat-ffmpeg28;-lswscale|' CMakeCache.txt
-%make_build
+%cmake_build
 
 %install
 mkdir -p %{buildroot}%{python2_sitearch} %{buildroot}%{python2_sitelib}
-make install DESTDIR=%{buildroot}
+%cmake_install
 cd python
 python2 setup.py install --root=%{buildroot} --prefix=%{_prefix}
 mv %{buildroot}%{python2_sitelib}/* %{buildroot}%{python2_sitearch}

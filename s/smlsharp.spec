@@ -1,5 +1,5 @@
 Name: smlsharp
-Version: 3.6.0
+Version: 3.7.1
 Release: 1
 Summary: Standard ML compiler with practical extensions
 License: BSD
@@ -10,12 +10,6 @@ BuildRequires: llvm-devel
 BuildRequires: massivethreads-devel
 BuildRequires: gmp-devel
 BuildRequires: yajl-devel
-Requires: llvm
-Requires: massivethreads-devel
-Requires: gmp-devel
-Requires: yajl-devel
-Requires: gcc
-Requires: gcc-c++
 
 %description
 SML# is a variant of Standard ML programming language
@@ -53,8 +47,11 @@ for i in src/smlformat/doc/OVERVIEW_en.txt src/smlformat/doc/OVERVIEW_ja.txt; do
 done
 
 %build
+#export CXXFLAGS="-std=gnu++11"
 set -ex
-%configure
+sed -i '5808,5923d' configure
+./configure --prefix=/usr --with-incompatible-llvm --without-massivethreads
+sed -i 's|-lpthread |-lpthread -lmyth -lmyth-ld -lmyth-dl -ldr |' src/config.mk
 make %{?_smp_mflags} stage
 make %{?_smp_mflags} all
 
@@ -103,7 +100,7 @@ sed -i '/^LDFLAGS /s/=.*$/=/' $RPM_BUILD_ROOT%{_libdir}/smlsharp/config.mk
 %{_mandir}/man1/smlyacc.1.gz
 
 %changelog
-* Fri Jun 12 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6.0
+* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.1
 - Rebuilt for Fedora
 * Fri May 29 2020 Katsuhiro Ueno <katsu@riec.tohoku.ac.jp> - 3.6.0-1
 - Initial package.

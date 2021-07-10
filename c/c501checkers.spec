@@ -8,7 +8,7 @@ Group: Amusements/Games
 License: GPLv3
 URL: http://congelli.eu/prog_info_c501checkers.html
 Source0: http://congelli.eu/download/c501checkers/%{name}-%{version}.tar.gz
-BuildRequires: wxGTK-devel
+BuildRequires: wxGTK2-devel
 BuildRequires: compat-SFML16-devel
 
 %description

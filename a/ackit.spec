@@ -8,9 +8,10 @@ Group:		Development/Languages
 URL:		https://github.com/davidgiven/ack
 License:	BSD
 Source:		ack-default.zip
-BuildRequires: flex-devel
-BuildRequires: ed
-BuildRequires: byacc
+BuildRequires:	flex-devel
+BuildRequires:	ed
+BuildRequires:	byacc
+BuildRequires:	ninja-build
 
 %description
 The Amsterdam Compiler Kit is a complete compiler toolchain consisting of
@@ -34,7 +35,7 @@ ANSI C, Pascal, Modula 2. K&R is supported via the ANSI C compiler.
 %build
 #sed -i 's|define file|define myfile|' first/core.mk
 #sed -i 's|call file|call myfile|' `find . -name build.mk`
-sed -i 's|CC = gcc|CC = gcc -Wl,--allow-multiple-definition|' Makefile
+#sed -i 's|CC = gcc|CC = gcc -Wl,--allow-multiple-definition|' Makefile
 make -i
 ##./pm configure
 ##./pm

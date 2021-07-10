@@ -30,6 +30,10 @@ standard.
 %prep
 %setup -q
 sed -i 's|-Werror||' configure
+sed -i 's|_1|boost::placeholders::_1|' lib/monitor.cpp drivers/esci/verify.cpp sane/handle.cpp
+sed -i 's|_2|boost::placeholders::_2|' sane/handle.cpp
+sed -i '26i #include <iostream>' lib/string.cpp
+sed -i '24i #include <iostream>' lib/toggle.cpp
 
 %build
 %configure \

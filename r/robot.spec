@@ -11,7 +11,7 @@ URL: http://www.sai.msu.su/sal/D/1/ROBOT.html
 Group: Applications/Engineering
 BuildRequires: libX11-devel
 BuildRequires: xview-devel libtirpc-devel
-BuildRequires: compat-gcc-34-g77
+BuildRequires: /usr/bin/f77
 BuildRequires: fsplit
 
 %description
@@ -33,6 +33,7 @@ sed -i 's|_IO_||g' Robot/main.c
 sed -i 's|-lX11|-lX11 -ltirpc -Wl,--allow-multiple-definition|' Robot/Makefile
 
 %build
+export OPENWINHOME=/usr/openwin
 make
 
 %install

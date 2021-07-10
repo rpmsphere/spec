@@ -25,6 +25,7 @@ Color Computer.
 
 %build
 autoreconf -ifv
+sed -i '16128,16171d' configure
 ./configure --prefix=/usr
 %{__make} %{?jobs:-j%jobs}
 

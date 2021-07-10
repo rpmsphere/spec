@@ -18,9 +18,11 @@ BuildRequires:  systemd-devel
 %prep
 %setup -q -n tiscamera-master
 sed -i 's|PLUGIN_INSTALL_DIR=.*|PLUGIN_INSTALL_DIR=$(DESTDIR)%{_libdir}/gstreamer-0.10|' src/Makefile.in
+sed -i -e '413s|);|,NULL);|' -e '416s|);|,NULL);|' src/gsttis_auto_exposure.c
+sed -i -e '207,209s|);|,NULL);|' -e '213s|);|,NULL);|' -e '243s|);|,NULL);|' -e '652,653s|);|,NULL);|' -e '657s|);|,NULL);|' -e '698s|);|,NULL);|' src/gsttis_autofocus.c
 
 %build
-export LDFLAGS=-I/usr/include/aravis-0.4
+export CFLAGS=-I/usr/include/aravis-0.8 LDFLAGS=-I/usr/include/aravis-0.8
 cd src
 ./bootstrap.sh
 %configure

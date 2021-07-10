@@ -84,6 +84,8 @@ rm -rf %{buildroot}%{_libdir}/*.la
 %{_datadir}/vala/vapi/eek*.deps
 
 %changelog
+* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
+- Rebuilt for Fedora
 * Thu Jan 31 2013 mlin@suse.com
 - makes more flexible for pkgconfig with vala
 * Tue Sep 25 2012 hillwood@linuxfans.org

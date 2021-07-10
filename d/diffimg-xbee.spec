@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 %global _name diffimg
 
 Name: diffimg-xbee
@@ -20,30 +21,34 @@ size as input. Some statitics are computed and the positions where pixel differ
 are displayed as a color mask.
 
 %prep
-%setup -q -n %{name}-%{version}-lingo
+%setup -q -n %{_name}-xbee-%{version}-lingo
 #dos2unix tounix.sh
 #sh ./tounix.sh
 #sed -i 's|lib -lperceptualdiff|lib|' build/apps.pro
 #sed -i 's|-lopencv_core|-lopencv_core -lopencv_imgcodecs -lperceptualdiff|' build/apps.pro
+sed -i 's|-Wall|-Wall -I/usr/include/opencv4|' build/CMakeLists.txt
 sed -i 's|opencv_core|opencv_core opencv_imgcodecs|' build/CMakeLists.txt
+#sed -i 's|opencv2/imgproc/imgproc.hpp|opencv4/opencv2/imgproc/imgproc.hpp|' 3rdparty/perceptualdiff/OpenCVImageLoader.cpp
+sed -i -e 's|CV_BGR2RGB|cv::COLOR_BGR2RGB|' -e 's|CV_RGB2RGBA|cv::COLOR_RGB2RGBA|' -e 's|CV_RGBA2RGB|cv::COLOR_RGBA2RGB|' -e 's|CV_BGR2HSV|cv::COLOR_BGR2HSV|' \
+  3rdparty/perceptualdiff/OpenCVImageLoader.cpp src/MiscFunctions.cpp
+sed -i -e 's|CV_RGB2GRAY|cv::COLOR_RGB2GRAY|' -e 's|CV_LOAD_IMAGE_UNCHANGED|cv::IMREAD_UNCHANGED|' src/metrics/BaseMetric.cpp src/metrics/PerLuminanceMetric.cpp
 
 %build
 cd build
-#qmake-qt4 -recursive INSTALL_PREFIX=$RPM_BUILD_ROOT/usr %{name}.pro
-%cmake
-make %{?_smp_mflags}
+#qmake-qt4 -recursive INSTALL_PREFIX=$RPM_BUILD_ROOT/usr %{_name}.pro
+%cmake . -DCMAKE_CXX_FLAGS="-I/usr/include/opencv4 -fPIE"
+%cmake_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 cd build
 #make install
-%make_install
+%cmake_install
 # remove doc
-rm -rf $RPM_BUILD_ROOT%{_datadir}/%{_name}
-sed 's|%{buildroot}||' %{buildroot}%{_datadir}/applications/%{_name}.desktop > %{buildroot}%{_datadir}/applications/%{name}.desktop
-sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-mv %{buildroot}%{_bindir}/diffimg %{buildroot}%{_bindir}/diffimg-xbee
-mv %{buildroot}%{_mandir}/man1/diffimg.1.gz %{buildroot}%{_mandir}/man1/diffimg-xbee.1.gz
+rm -rf $RPM_BUILD_ROOT%{_datadir}/%{_name}/*.txt
+sed -i -e 's|%{buildroot}||' -e 's|/usr/share/pixmaps/%{_name}-xbee.png|%{_name}|' %{buildroot}%{_datadir}/applications/%{_name}.desktop
+mv %{buildroot}%{_bindir}/%{_name} %{buildroot}%{_bindir}/%{name}
+mv %{buildroot}%{_mandir}/man1/%{_name}.1.gz %{buildroot}%{_mandir}/man1/%{name}.1.gz
 
 %clean
 %{__rm} -rf $RPM_BUILD_ROOT
@@ -51,6 +56,7 @@ mv %{buildroot}%{_mandir}/man1/diffimg.1.gz %{buildroot}%{_mandir}/man1/diffimg-
 %files
 %doc *.txt
 %{_bindir}/*
+%{_datadir}/%{_name}
 %{_datadir}/pixmaps/*
 %{_datadir}/applications/*
 %{_mandir}/man*/*

@@ -3,7 +3,7 @@ Name: raster3d
 Version: 3.0
 Release: 7.1
 License: Source freely available, redistribution restricted
-Source: http://www.bmsc.washington.edu/raster3d/Raster3D_%{version}-2.tar.gz
+Source: http://www.bmsc.washington.edu/raster3d/Raster3D_%{version}-7.tar.gz
 URL: http://www.bmsc.washington.edu/raster3d
 Group: Graphics
 BuildRequires: gcc-gfortran gd-devel libtiff-devel
@@ -25,7 +25,7 @@ Program reference and requested citation:
 	Merritt & Bacon  (1997) Meth. Enzymol. 277, 505-524.
 
 %prep
-%setup -q -n Raster3D_%{version}-2
+%setup -q -n Raster3D_%{version}-7
 
 %build
 make linux
@@ -104,7 +104,7 @@ if [ -n "$MGK" ]; then
 fi
 
 %changelog
-* Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
+* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0-7
 - Rebuilt for Fedora
 * Thu Feb 03 2011 Ethan Merritt <merritt@u.washington.edu>
 - release Raster3D-3.0-2 (dynamic array allocation; libgd support)

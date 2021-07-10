@@ -49,6 +49,7 @@ BuildRequires:	libsecret-devel
 BuildRequires:	libwebp-devel
 BuildRequires:	libxslt-devel
 BuildRequires:	libXt-devel
+BuildRequires:  libXdamage-devel
 BuildRequires:	pcre-devel
 BuildRequires:	sqlite-devel
 BuildRequires:	gobject-introspection-devel

@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Summary: A tiny and fast embedded scripting language
 Name: pawnlang
 Version: 4.0.5749
@@ -19,13 +21,14 @@ abstract machine.
 %setup -q -c
 
 %build
+export CFLAGS=-fPIE
 %cmake .
 %cmake_build
 
 %install
-#install -d %{buildroot}%{_bindir}
-#install -m755 pawn* stategraph %{buildroot}%{_bindir}
-%cmake_install
+#cmake_install
+install -d %{buildroot}%{_bindir}
+install -m755 %{_host}/pawn* %{_host}/stategraph %{buildroot}%{_bindir}
 
 %files 
 %doc LICENSE NOTICE history.txt readme.txt

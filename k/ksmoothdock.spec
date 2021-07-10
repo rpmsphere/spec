@@ -26,7 +26,7 @@ BuildRequires: kf5-kwidgetsaddons-devel
 BuildRequires: kf5-kwindowsystem-devel
 BuildRequires: kf5-kxmlgui-devel
 BuildRequires: kf5-kio-devel
-BuildRequires: qt5-devel
+BuildRequires: qt5-qtbase-devel
 BuildRequires: taglib-devel
 BuildRequires: phonon-devel
 BuildRequires: pkgconfig
@@ -50,19 +50,20 @@ KSmoothDock is written in C++ and depends on Qt 5 and KDE Frameworks 5
 
 %prep
 %setup -q
+sed -i 's|-Werror||' src/CMakeLists.txt
 
 %build
 cd src
-%cmake_kf5 .
-%make_build
+%cmake .
+%cmake_build
 
 %install
 rm -rf %buildroot
 cd src
-%make_install
+%cmake_install
 
 mkdir -p %buildroot/%{_libdir}
-install -m 0755 libksmoothdock_lib.so %buildroot/%{_libdir}/libksmoothdock_lib.so
+install -m 0755 */libksmoothdock_lib.so %buildroot/%{_libdir}/libksmoothdock_lib.so
 
 desktop-file-install --vendor="" \
  --remove-category='Utility' \

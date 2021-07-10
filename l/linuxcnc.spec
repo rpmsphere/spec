@@ -1,9 +1,9 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 %define rtai 0
 
 Name: linuxcnc
-Version: 2.7.14
-Release: 15.1
+Version: 2.8.2
+Release: 1
 Summary: LinuxCNC controls CNC machines
 Summary(ru_RU.UTF-8): Программа управления ЧПУ станков
 License: GPLv2+ and LGPLv2
@@ -14,8 +14,8 @@ Source1: aarch64-io.h
 Patch1: fix_install-alt.patch
 BuildRequires: gcc-c++ imake libGL-devel libGLU-devel libXaw-devel libXinerama-devel libXmu-devel libXt-devel ncurses-devel readline-devel
 BuildRequires: pkgconfig(glib-2.0) pkgconfig(gtk+-2.0) pkgconfig(libmodbus) pkgconfig(libudev) pkgconfig(libusb-1.0)
-BuildRequires: tcl-devel tk-devel kmod bwidget tkimg tclx tkinter ghostscript-core ImageMagick libxslt groff procps psmisc
-BuildRequires: python2-devel python2-lxml boost-python2-devel pycairo-devel pygtk2-devel intltool
+BuildRequires: tcl-devel tk-devel kmod bwidget tkimg tclx python3-tkinter ghostscript-core ImageMagick libxslt groff procps psmisc
+BuildRequires: python3-devel python3-lxml boost-python3-devel pycairo-devel pygtk2-devel intltool
 BuildRequires: libtirpc-devel bwidget
 #BuildRequires: graphviz dblatex docbook-xsl netcat texlive-lang-cyrillic texlive-lang-french texlive-lang-spanish texlive-lang-german asciidoc-a2x source-highlight
 Requires: tcl-%name = %version
@@ -82,7 +82,8 @@ cd src
 autoreconf -ifv
 %configure --disable-build-documentation \
            --enable-non-distributable=yes \
-           --with-boost-python=boost_python27 \
+           --with-boost-python=boost_python39 \
+           --disable-python \
            --without-libmodbus \
            %if %rtai == 1
            --with-realtime=/patch/to/rtai

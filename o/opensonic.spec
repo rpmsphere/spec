@@ -18,13 +18,19 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  cmake
 
 %description
-Open Sonic is an open-source game based on the "Sonic the Hedgehog" universe. It introduces a different style of gameplay called cooperative play, in which it's possible to control 3 characters simultaneously. Unlike most similar games, Open Sonic provides a greater level of interaction between the player and the levels. It's more than just a jump'n'run; the user must come up with some strategy in order to get through the levels.
+Open Sonic is an open-source game based on the "Sonic the Hedgehog"
+universe. It introduces a different style of gameplay called cooperative
+play, in which it's possible to control 3 characters simultaneously.
+Unlike most similar games, Open Sonic provides a greater level of
+interaction between the player and the levels. It's more than just
+a jump'n'run; the user must come up with some strategy in order to
+get through the levels.
 
 %prep
 %setup -qn opensnc-src-%{version}
 
 %build
-%configure
+./configure
 make %{?_smp_mflags}
 
 %install

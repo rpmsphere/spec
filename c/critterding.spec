@@ -25,11 +25,12 @@ skills.
 sed -i 's|_1|boost::placeholders::_1|' src/common/be_command_system.cpp src/scenes/critterding/evolution.cpp
 
 %build
-cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
-make %{?_smp_mflags}
+export CXXFLAGS="-std=gnu++11"
+%cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DENABLE_PRECOMPILED_HEADERS=OFF
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot}
+%cmake_install
 
 %files
 %doc README Changelog LICENSE AUTHORS

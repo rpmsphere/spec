@@ -2,7 +2,7 @@
 
 Name: 		octopus
 Summary:	A TDDFT code
-Version:	8.3
+Version:	10.5
 Release:	1
 License:	GPLv2+
 Group:		Applications/Engineering
@@ -21,7 +21,7 @@ BuildRequires:	libpng-devel
 BuildRequires:	libX11-devel
 BuildRequires:	libXpm-devel
 BuildRequires:	netcdf-devel
-BuildRequires:	perl
+BuildRequires:	perl-interpreter
 BuildRequires:	zlib-devel
 BuildRequires:  libxc-devel
 BuildRequires:  mpich-devel
@@ -52,10 +52,11 @@ This package contains the development headers for Octopus.
 
 %build
 ./configure FCCPP="/lib/cpp -std=gnu++11 -xc++" FCFLAGS_LIBXC="-I/usr/include -I%{_libdir}/gfortran/modules" \
+FCFLAGS="-ffree-line-length-none -fallow-argument-mismatch -fallow-invalid-boz" \
 %ifarch x86_64
-		CFLAGS=-msse4.1 \
+	CFLAGS=-msse4.1 \
 %endif
-		--host=%{_host} --build=%{_build} \
+	--host=%{_host} --build=%{_build} \
         --target=%{_target_platform} \
         --program-prefix=%{?_program_prefix} \
         --prefix=%{_prefix} \
@@ -98,7 +99,7 @@ install-info --remove octopus &> /dev/null
 %{_libdir}/*.a
 
 %changelog
-* Wed Jan 02 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 8.3
+* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 10.5
 - Rebuilt for Fedora
 * Mon Sep 29 2008 Jussi Lehtola - 3.0.1-4
 - Devel provides -static.

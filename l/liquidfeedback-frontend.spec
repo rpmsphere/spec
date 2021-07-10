@@ -29,7 +29,7 @@ sed -i 's|liquid_feedback_testing/app|%{_name}|' fastpath/getpic.c
 
 %build
 make -C fastpath
-LANG=en_US.UTF-8 make -C locale
+LANG=zh_TW.UTF-8 make -C locale
 
 %install
 %__rm -rf %{buildroot}

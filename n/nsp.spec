@@ -24,15 +24,19 @@ Obsoletes:      tumbi nsp2
 %prep
 %setup -q -n %{name}
 #sed -i 's|#define DOUBLE_ONLY|#undef DOUBLE_ONLY|' src/zcalelm/merge-sort.c
-sed -i 's|$(CFLOPTS)|$(CFLOPTS) -I/usr/include/tirpc -ltirpc|' pvm3/Makefile* pvm3/*/Makefile*
-sed -i 's|$(ARCHLIB)|$(ARCHLIB) -ltirpc|' pvm3/Makefile* pvm3/*/Makefile*
+sed -i 's|$(CFLOPTS)|$(CFLOPTS) -I/usr/include/tirpc -ltirpc -Wl,--allow-multiple-definition|' pvm3/Makefile* pvm3/*/Makefile*
+sed -i 's|$(ARCHLIB)|$(ARCHLIB) -ltirpc -Wl,--allow-multiple-definition|' pvm3/Makefile* pvm3/*/Makefile*
+sed -i 's|^LIBS=|LIBS=-Wl,--allow-multiple-definition |' config/Makefile.linux*
 sed -i 's|fftw3 |fftw3 libtirpc |' Makefile*
 sed -i 's|, KIND(t)||' src/lapack/zhpadm.f src/lapack/zgpadm.f
+sed -i -e '165i let ss = Bytes.of_string s in' -e '165s| s | ss |' toolboxes/compilers/modelicac/src/optimization.ml
+sed -i '38,39s|Pervasives|Stdlib|' toolboxes/compilers/paksazi/src/paksazi.ml
+sed -i 's|Pervasives|Stdlib|' toolboxes/simport/release/src/slx_file_format/parsing/ocaml-xml/src/basics/*.ml* toolboxes/simport/release/src/slx_file_format/parsing/ocaml-xml/src/xml/parsing/xml_to_ast.ml toolboxes/simport/release/src/slx_file_format/parsing/ocaml-xml/src/xml/expand/xml_env.ml
 
 %build
+export OCAMLPARAM="safe-string=1,_" CFLAGS="-Wl,--allow-multiple-definition"
 ./autogen.sh --prefix=/usr
 #make clean
-export OCAMLPARAM="safe-string=0,_"
 make all
 
 %install

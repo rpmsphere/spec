@@ -9,9 +9,9 @@ Source0: %{name}-master.zip
 BuildRequires: cmake
 BuildRequires: libffi-devel
 BuildRequires: boost-devel boost-static
-BuildRequires: llvm3.7-devel llvm3.7-static
+#BuildRequires: llvm3.7-devel llvm3.7-static
 #BuildRequires: llvm3.9-devel llvm3.9-static
-#BuildRequires: llvm35-devel llvm35-static
+BuildRequires: llvm34-devel llvm34-static
 
 %description
 llvm-qbc is a QBASIC compiler as well as an runtime library.
@@ -21,11 +21,11 @@ llvm-qbc is a QBASIC compiler as well as an runtime library.
 sed -i 's|return arg_it;|return getptr(ctx);|' compiler/codegen.cpp
 
 %build
-%cmake
-make
+%cmake .
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot}
+%cmake_install
 
 %files
 %doc NEWS README.md LICENSES

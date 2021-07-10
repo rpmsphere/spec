@@ -1,8 +1,12 @@
+%undefine _debugsource_packages
+
 Name:           wfnetobjs
 Version:        0.2.4
 Release:        10.1
 License:        GPL
 BuildRequires:  gcc-c++
+BuildRequires:  gettext-devel
+BuildRequires:  intltool
 Group:          Development/Libraries
 Summary:        A library handling network objects
 Source:         http://www.wallfire.org/download/%{name}-%{version}.tar.bz2
@@ -24,13 +28,17 @@ Wfnetobjs is essentially a library which handles network objects (hosts, ports, 
 %setup -q
 %patch0 -p1
 %patch1
+sed -i "s|@MKINSTALLDIRS@|`pwd`/mkinstalldirs|" Makefile* */Makefile*
+sed -i 's|@INTL_LIBTOOL_SUFFIX_PREFIX@||' */Makefile*
 
 %build
 export NOCONFIGURE=true
 echo | ./autogen.sh
 export CFLAGS="%optflags -fno-strict-aliasing -Wno-format-security"
 export CXXFLAGS="%optflags -fno-strict-aliasing -Wno-format-security"
+touch config.rpath
 %configure --disable-static --with-pic
+sed -i 's|-Wall|-fPIE -Wall|' tools/Makefile
 %{__make} %{?jobs:-j%jobs}
 
 %install

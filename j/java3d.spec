@@ -123,9 +123,11 @@ done
 for c in $(find . -name "*.class"); do
   rm -f $c
 done
+sed -i '96,97s|1.5|1.6|' j3d-core/src/classes/build.xml
+
 
 %build
-export ANT_OPTS=-Xmx256m
+export ANT_OPTS="-Xmx256m"
 export CLASSPATH=$PWD/j3d-core/build/default/opt/lib/ext/j3dcore.jar:junit.jar:%{_datadir}/java/vecmath.jar
 
 pushd j3d-core

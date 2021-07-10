@@ -29,19 +29,17 @@ Icon by Natsu714 from http://natsu714.deviantart.com/art/Free-Gameboy-Icon-28865
 %prep
 %setup -q
 %patch0 -p1
-sed -i 's|sfml-\(.*\)|sfml-\1-1.6|' CMakeLists.txt
-sed -i 's|-pipe|-pipe -std=gnu++11 -fPIC|' CMakeLists.txt
-cp -a /usr/include/sfml1/SFML mym/include
-
+sed -i -e '15s|sfml-graphics|sfml-system-1.6|' -e '18s|sfml-window|sfml-window-1.6|' -e '21s|sfml-system|sfml-graphics-1.6|' CMakeLists.txt
+sed -i 's|-pipe|-pipe -std=c++11 -fPIC -I/usr/include/sfml1|' CMakeLists.txt
 sed -i '21,25d' mym/source/CMakeLists.txt
 sed -i '220,222d' mym/source/window.cpp
 
 %build
-%cmake -DDISABLE_ASM:BOOL=ON
-make
+%cmake -DDISABLE_ASM:BOOL=ON .
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %__mkdir_p %{buildroot}%{_datadir}/applications
 %__cat > %{buildroot}%{_datadir}/applications/%{name}.desktop <<EOF

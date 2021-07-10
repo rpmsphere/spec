@@ -28,6 +28,7 @@ TV programs.
 %setup -q
 
 %build
+export PYTHON=/usr/bin/python2
 %configure --disable-schemas-install
 make
 										

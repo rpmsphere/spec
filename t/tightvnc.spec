@@ -9,7 +9,7 @@ Source0: http://dl.sf.net/vnc-tight/%{name}-%{version}_unixsrc.tar.bz2
 Source1: tcpd.h
 Source2: https://www.tightvnc.com/logo/tightvnc-logo-90x90.png
 BuildRequires: imake, desktop-file-utils
-BuildRequires: zlib-devel, libjpeg-devel, perl
+BuildRequires: zlib-devel, libjpeg-devel, perl-interpreter
 BuildRequires: libX11-devel, libXaw-devel
 BuildRequires: nss_nis
 BuildRequires: tcp_wrappers

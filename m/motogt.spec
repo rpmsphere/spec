@@ -17,6 +17,7 @@ Patch2:		motogt-init.patch
 Patch3:		motogt-png15.patch
 BuildRequires:	compat-SFML16-devel
 BuildRequires:	libpng-devel
+BuildRequires:	libpng10-devel
 BuildRequires:	pkgconfig(glu)
 
 %description
@@ -32,6 +33,10 @@ If you win championships, you can also unlock hidden features.
 %patch2 -p1 -b .init~
 %patch3 -p1 -b .png15~
 sed -i 's|sfml-\([a-z]*\)|sfml-\1-1.6|g' src/Makefile.lnx
+mv data data_hi ; sed -i 's|data|data_hi|g' src/* ; sed -i 's|data_hi_low|data_low|' src/global.cpp
+
+sed -i 's|png.h|libpng10/png.h|' data_hi/src/bikes/hue.cpp
+g++ data_hi/src/bikes/hue.cpp -lpng10 -o data_hi/src/bikes/hue.bin
 
 %build
 #setup_compile_flags
@@ -45,12 +50,9 @@ mkdir -p %{buildroot}%{_datadir}/pixmaps
 install -Dm 755 %{oname}.bin -D %{buildroot}%{_libdir}/%{oname}
 install -Dm 644 %{SOURCE2} -D %{buildroot}%{_datadir}/applications
 install -Dm 644 %{SOURCE3} -D %{buildroot}%{_datadir}/pixmaps
-cp -rf data %{buildroot}%{_libdir}/%{oname}
+cp -rf data_hi %{buildroot}%{_libdir}/%{oname}
 cp -rf data_low %{buildroot}%{_libdir}/%{oname}
 cp -rf doc %{buildroot}%{_libdir}/%{oname}
-
-# 32 bit binary linked against old libs
-rm -f %{buildroot}%{_libdir}/%{oname}/data/src/bikes/hue.bin
 
 mkdir -p %{buildroot}%{_bindir}
 cat > %{buildroot}%{_bindir}/%{name} << EOF
@@ -58,13 +60,11 @@ cat > %{buildroot}%{_bindir}/%{name} << EOF
 cd %{_libdir}/%{oname}
 exec ./%{oname}.bin
 EOF
+chmod +x %{buildroot}%{_bindir}/%{name}
 
 %files
-%attr(755,root,root) %{_bindir}/%{name}
-%attr(755,root,root) %{_libdir}/%{oname}/%{oname}.bin
-%{_libdir}/%{oname}/data
-%{_libdir}/%{oname}/data_low
-%{_libdir}/%{oname}/doc
+%{_bindir}/%{name}
+%{_libdir}/%{oname}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{oname}.png
 

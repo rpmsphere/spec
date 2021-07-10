@@ -1,18 +1,17 @@
-# SDL version (broken!)
 %define _sdl_build	0
 
 Summary:		An OpenGL port of the classic 3D Shooter game Descent 2
 Name:			d2x-xl
-Version:		1.13.127
+Version:		1.18.75
 Release:		1
 License:		GPL
 Group:			Amusements/Games/Action/Shoot
 URL:			http://www.descent2.de/
-Source:			%{name}-src-%{version}.rar
+Source:			%{name}-src-%{version}.7z
 Source1:		%{name}.png
 Source98:		hogfile.cpp
 Source99:		hogfile.h
-BuildRequires:	dos2unix, unrar
+BuildRequires:	dos2unix, p7zip
 BuildRequires:	gcc-c++
 BuildRequires:	mesa-libGL-devel
 BuildRequires:	nasm
@@ -29,12 +28,11 @@ D2X-XL is based on source code that was released the 14.12.1999
 by Parallax Software Corporation.
 
 %prep
-%setup -q -c -T -n %{name}
-unrar -o+ x %{SOURCE0}
-unrar -o+ x %{name}-makefiles.rar
+%setup -q -c
+7za x -y %{name}-makefiles.7z
 
-%__cp %{SOURCE98} io
-%__cp %{SOURCE99} include
+#%__cp %{SOURCE98} io
+#%__cp %{SOURCE99} include
 %__sed -i -e 's|args.cpp cfile.cpp d_io.cpp|args.cpp cfile.cpp d_io.cpp hogfile.cpp|g' \
 	io/Makefile.am
 
@@ -53,10 +51,10 @@ dos2unix    autogen.sh missing depcomp
 dos2unix     COPYING
 %__chmod 644 COPYING
 
-sed -i 's|-Wall|-Wall -Wno-narrowing -lstdc++|' configure
+sed -i 's|-Wall|-Wall -Wno-narrowing -lstdc++ -std=gnu++11|' configure
 sed -i 's|false, -1|NULL, -1|' effects/lightning.cpp
 sed -i '1i #define HAVE_STRUCT_TIMESPEC 1' libmve/mveplay.cpp
-sed -i 's|COLOR|COLOR.index|' texmap/tmapflat.cpp
+#sed -i 's|COLOR|COLOR.index|' texmap/tmapflat.cpp
 
 %build
 # SDL version (broken)
@@ -128,7 +126,7 @@ EOF
 %endif
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.127
+* Sat Jul 03 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18.75
 - Rebuilt for Fedora
 * Mon Jun 06 2011 Chris LIN <chris.lin@ossii.com.tw> - 0.13.127-0.2.ossii
 - Add BuildRequires: unrar

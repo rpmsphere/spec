@@ -36,10 +36,6 @@ BuildRequires:	OpenEXR-devel
 %description
 A set of Readers/Writers plugins written using the OpenFX standard.
 
-%files
-%dir %{_libdir}/OFX/Plugins/IO.ofx.bundle
-%{_libdir}/OFX/Plugins/IO.ofx.bundle/*
-
 %prep
 %setup -qn %{name}-%{oname}-%{version}-release
 
@@ -66,11 +62,10 @@ popd
 %patch0 -p1
 %patch1 -p1
 
-%ifarch aarch64
-sed -i 's|-m64||' Makefile* */Makefile* */*/Makefile* */*/*/Makefile*
-%endif
+sed -i 's|-m64|-std=gnu++11|' Makefile* */Makefile* */*/Makefile* */*/*/Makefile*
 sed -i 's|PIX_FMT_RGB24|AV_PIX_FMT_RGB24|' FFmpeg/FFmpegHandler.cpp FFmpeg/WriteFFmpeg.cpp
-sed -i -e 's|PixelFormat|AVPixelFormat|' -e 's|PIX_FMT_YUV420P|AV_PIX_FMT_YUV420P|' FFmpeg/WriteFFmpeg.cpp
+sed -i -e 's|PixelFormat|AVPixelFormat|' -e 's|PIX_FMT_YUV420P|AV_PIX_FMT_YUV420P|' -e 's|AVFMT_RAWPICTURE|0x0020|' -e 's|CODEC_FLAG_GLOBAL_HEADER|AV_CODEC_FLAG_GLOBAL_HEADER|' -e '481,482d' FFmpeg/WriteFFmpeg.cpp
+sed -i -e 's|CODEC_CAP_DELAY|AV_CODEC_CAP_DELAY|' -e 's|CODEC_CAP_DR1|AV_CODEC_CAP_DR1|' -e '276,277d' FFmpeg/FFmpegHandler.cpp
 
 %build
 make CONFIG=release
@@ -78,6 +73,10 @@ make CONFIG=release
 %install
 mkdir -p %{buildroot}%{_libdir}/OFX/Plugins
 cp -r IO/Linux-*-release/IO.ofx.bundle %{buildroot}%{_libdir}/OFX/Plugins/
+
+%files
+%dir %{_libdir}/OFX/Plugins/IO.ofx.bundle
+%{_libdir}/OFX/Plugins/IO.ofx.bundle/*
 
 %changelog
 * Tue May 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0

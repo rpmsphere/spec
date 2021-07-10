@@ -6,7 +6,8 @@ License:        GPL2
 Group:          User Interface/X
 URL:            https://github.com/developing4all/hdepanel
 Source0:        %{name}-master.zip
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
+BuildRequires:  qt5-qtx11extras-devel
 
 %description
 Very light Beautiful look. Multiple panels Multple screen support Xdg

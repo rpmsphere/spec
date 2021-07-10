@@ -12,7 +12,7 @@ BuildRequires:  gcc-c++
 BuildRequires:  qt4-devel
 BuildRequires:  pam-devel
 BuildRequires:  pkgconfig(libfakekey)
-BuildRequires:  pkgconfig(libfprint)
+BuildRequires:  libfprint-devel
 BuildRequires:  pkgconfig(libusb-1.0)
 BuildRequires:  pkgconfig(polkit-qt-1)
 BuildRequires:  pkgconfig(qca2)

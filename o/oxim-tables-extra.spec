@@ -1,6 +1,6 @@
 Summary: Extra cin tables of OXIM
 Name: oxim-tables-extra
-Version: 2.0.2
+Version: 2.0.3
 Release: 1
 License: Public Domain
 Group: System/Internationalization
@@ -13,8 +13,8 @@ Requires: oxim
 Including extra cin tables for Open X Input Method Server.
 
 %prep
-%setup -q -c
-rm bopomofo.cin
+%setup -q -n %{name}
+#rm bopomofo.cin
 
 %build
 for i in *.cin ; do oxim2tab $i ; done
@@ -37,5 +37,5 @@ oxim-agent -r
 %{_libdir}/oxim/tables/*.tab
 
 %changelog
-* Tue Dec 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.2
+* Sun Jul 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.3
 - Package for Fedora

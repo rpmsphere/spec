@@ -1,5 +1,5 @@
 Name: smlsharp
-Version: 3.7.1
+Version: 4.0.0
 Release: 1
 Summary: Standard ML compiler with practical extensions
 License: BSD
@@ -49,7 +49,8 @@ done
 %build
 #export CXXFLAGS="-std=gnu++11"
 set -ex
-sed -i '5808,5923d' configure
+#sed -i '5808,5923d' configure
+#./configure --prefix=/usr --with-incompatible-llvm
 ./configure --prefix=/usr --with-incompatible-llvm --without-massivethreads
 sed -i 's|-lpthread |-lpthread -lmyth -lmyth-ld -lmyth-dl -ldr |' src/config.mk
 make %{?_smp_mflags} stage
@@ -100,7 +101,7 @@ sed -i '/^LDFLAGS /s/=.*$/=/' $RPM_BUILD_ROOT%{_libdir}/smlsharp/config.mk
 %{_mandir}/man1/smlyacc.1.gz
 
 %changelog
-* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.1
+* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.0
 - Rebuilt for Fedora
 * Fri May 29 2020 Katsuhiro Ueno <katsu@riec.tohoku.ac.jp> - 3.6.0-1
 - Initial package.

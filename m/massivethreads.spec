@@ -1,11 +1,12 @@
 Name: massivethreads
 Version: 1.00
-Release: 1
+Release: 2
 Summary: Light weight thread library
 Group: Development/Libraries
 License: BSD-2
 URL: https://github.com/massivethreads/massivethreads
-Source0: https://github.com/massivethreads/massivethreads/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+#Source0: https://github.com/massivethreads/massivethreads/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0: %{name}-master.zip
 BuildRequires: sqlite-devel
 Requires: python2
 
@@ -20,7 +21,7 @@ Requires: %{name}
 Development files for MassiveThreads.
 
 %prep
-%setup -q
+%setup -q -n %{name}-master
 
 %build
 %configure

@@ -1,6 +1,6 @@
 Summary: Popular cin tables of OXIM
 Name: oxim-tables-popular
-Version: 2.0.2
+Version: 2.0.3
 Release: 1
 License: Public Domain
 Group: System/Internationalization
@@ -68,7 +68,7 @@ Including the following cin tables for Open X Input Method Server:
 Thai.
 
 %prep
-%setup -q -c
+%setup -q -n %{name}
 
 %build
 for i in *.cin ; do oxim2tab $i ; done
@@ -124,5 +124,5 @@ oxim-agent -r
 %{_libdir}/oxim/tables/thai.tab
 
 %changelog
-* Tue Dec 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.2           
+* Sun Jul 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.3
 - Package for Fedora

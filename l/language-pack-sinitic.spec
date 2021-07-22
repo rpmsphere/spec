@@ -1,6 +1,6 @@
 Name: language-pack-sinitic
 Summary: Translations for some sinitic languages
-Version: 2021.3
+Version: 2021.7
 Release: 1
 License: Open Source
 Group: Translations
@@ -132,5 +132,5 @@ make
 rm -rf %{buildroot}
 
 %changelog
-* Wed Mar 10 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.3
+* Sun Jul 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.7
 - Initial package

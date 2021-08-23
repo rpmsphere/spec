@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+
 Summary: Binary Analysis Tool
 Name: binaryanalysis
 Version: 37.0
@@ -10,8 +11,6 @@ Group: Development/Tools
 BuildArch: noarch
 BuildRequires: python2-devel
 BuildRequires: python2-setuptools
-Requires: bat-extratools >= %{version}
-Requires: bat-extratools-java >= %{version}
 Requires: python-magic
 Requires: e2tools
 Requires: squashfs-tools
@@ -30,29 +29,29 @@ Requires: fuseiso
 Requires: arj
 Requires: giflib-utils
 Requires: icoutils
-Requires: rpm-python
+Requires: python2-rpm
 Requires: upx
 Requires: poppler-utils
 Requires: netpbm-progs
 Requires: lrzip
 Requires: ncompress
-Requires: python-pillow
+Requires: python2-pillow
 Requires: vorbis-tools
 Requires: libmp4v2
 Requires: python2-wxpython
 Requires: ctags
-Requires: python-matplotlib
+Requires: python2-matplotlib
 Requires: pydot
 Requires: bsdiff
-Requires: python-reportlab
+Requires: python2-reportlab
 Requires: liberation-sans-fonts
 Requires: clamav
 Requires: john
-Requires: python-psycopg2
+Requires: python2-psycopg2
 Requires: unrar
-Obsoletes: bat
-Obsoletes: bat-extratools
-Obsoletes: bat-extratools-java
+#Obsoletes: bat
+#Obsoletes: bat-extratools
+#Obsoletes: bat-extratools-java
 
 %description
 The Binary Analysis Tool is a modular framework that assists with auditing

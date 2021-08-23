@@ -6,6 +6,7 @@ Source0:        python-osso_%{version}-0maemo5.tar.gz
 License:        Python
 Group:          Development/Libraries
 URL:            http://maemo.org/packages/view/python-osso/
+BuildRequires:  python2-devel
 
 %description
 Python2 bindings for libosso library.

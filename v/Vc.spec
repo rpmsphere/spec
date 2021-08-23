@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:           Vc
-Version:        1.4.1
-Release:        3.1
+Version:        1.4.2
+Release:        1
 Summary:        Collection of SIMD Vector Classes
 License:        BSD-3-Clause
 Group:          System/Libraries
@@ -67,15 +67,14 @@ This package provides the Vc static library.
   -DBUILD_TESTING=OFF
 %cmake_build
 
-cd ../doc
+cd doc
 doxygen
-cd ..
 
 %install
 #cd build
 %cmake_install
 mkdir -p %{buildroot}%{_docdir}/%{name}
-cp -a ../README.md ../doc/html %{buildroot}%{_docdir}/%{name}
+cp -a README.md doc/html %{buildroot}%{_docdir}/%{name}
 
 %files doc
 %{_docdir}/%{name}
@@ -89,7 +88,7 @@ cp -a ../README.md ../doc/html %{buildroot}%{_docdir}/%{name}
 %{_libdir}/libVc.a
 
 %changelog
-* Wed Nov 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1
+* Sun Aug 8 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.2
 - Rebuilt for Fedora
 * Tue Feb 20 2018 stefan.bruens@rwth-aachen.de
 - Drop ExclusiveArch, Vc 1.3.3 is no longer x86 only

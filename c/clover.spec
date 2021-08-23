@@ -36,17 +36,16 @@ OpenCL.
 sed -i '/examples/d' CMakeLists.txt
 sed -i -e 's| -fno-rtti||' -e 's|/usr/lib|%{_libdir}|' src/CMakeLists.txt
 sed -i 's|getNameStr()|getName().str()|' src/core/program.cpp src/core/kernel.cpp src/core/cpu/builtins.cpp
-%if %fedora > 17
 sed -i -e 's|getHostTriple|getDefaultTargetTriple|' -e 's|std::make_pair(clang::IK_OpenCL, "program.cl")|clang::FrontendInputFile("program.cl", clang::IK_OpenCL)|' src/core/compiler.cpp
-%endif
+sed -i 's|/usr/bin/python$|/usr/bin/python2|' src/runtime/*.py
 
 %build
-%cmake
-make
+%cmake_build
+#make
 
 %install
 rm -rf %{buildroot}
-%make_install
+%cmake_install
 
 %clean
 rm -rf %{buildroot}
@@ -61,4 +60,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 02 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0
-- Rebuilt for Fedora
+- Rebuild for Fedora

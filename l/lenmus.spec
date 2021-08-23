@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
 Name:           lenmus
-Version:        5.4.2
-Release:        7.1
+Version:        5.6.2
+Release:        1
 Summary:        A free program for learning music
 License:        GPL-3.0
 Group:          Productivity/Multimedia/Sound/Midi
 URL:            http://www.lenmus.org/en/noticias
-Source0:        http://sourceforge.net/projects/lenmus/files/Sources/%{name}_%{version}.tar.gz
+Source0:        http://sourceforge.net/projects/lenmus/files/Source%20packages/%{name}-%{version}.tar.gz
 Source1:        %{name}.png
 Source2:        %{name}.desktop
 Source3:        %{name}.sh
@@ -29,6 +29,7 @@ BuildRequires:  sqlite-devel
 BuildRequires:  unittest-cpp-devel
 BuildRequires:  wxGTK3-devel
 BuildRequires:  zlib-devel
+BuildRequires:  fluid-soundfont-gm
 Requires:       lomse
 Requires:       timidity++
 
@@ -61,7 +62,7 @@ install -m755 %{SOURCE3} %{buildroot}%{_bindir}/%{name}
 %{_datadir}/*
 
 %changelog
-* Thu Nov 10 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 5.4.2
+* Sun Aug 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.6.2
 - Rebuilt for Fedora
 * Sun Dec 23 2012 joop.boonen@opensuse.org
 - Don't start rctimidity automaticaly as audio playback won't work anymore

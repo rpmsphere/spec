@@ -1,16 +1,17 @@
 Name:		flush
 Summary:	GTK-based BitTorrent client
-Version:	0.9.12
+Version:	0.9.12git
 Release:	1
 License:	GPLv3+
 Group:		Networking/File transfer
-URL:		http://flush.sourceforge.net/
-Source0:	%name-%version.tar.bz2
-BuildRequires: boost-devel glade-devel libglademm24-devel
+#URL:		http://flush.sourceforge.net/
+URL:            https://github.com/i-rinat/flush
+Source0:	%name-master.zip
+BuildRequires: cmake boost-devel glade-devel libglademm24-devel
 BuildRequires: doxygen gcc-c++ libconfig-devel expat-devel gtkmm24-devel
 BuildRequires: libnotify-devel openssl-devel rb_libtorrent-devel dbus-devel
 Patch0:	%name-0.9.11-magnet_mime_support.patch
-Patch1: %name-%version-alt-build.patch
+Patch1: %name-0.9.12-alt-build.patch
 
 %description
 Flush is a GTK-based BitTorrent client. You can use it to download files from
@@ -30,15 +31,16 @@ Features:
  * IP filter.
 
 %prep
-%setup -q
-%patch0 -p1
-%patch1 -p2
-sed -i 's|-Wall|-Wall -fPIC|' dbus-c++/configure
+%setup -q -n %name-master
+#patch0 -p1
+#patch1 -p2
+#sed -i 's|-Wall|-Wall -fPIC|' dbus-c++/configure
 
 %build
 #export CXXFLAGS+="-fPIC -DBOOST_FILESYSTEM_VERSION=3 -DGLIBMM_INCLUDED_FROM_WRAP_INIT_CC"
 #export CFLAGS+="-fPIC -DBOOST_FILESYSTEM_VERSION=3 -DGLIBMM_INCLUDED_FROM_WRAP_INIT_CC"
-%configure --disable-bundle-package
+#configure --disable-bundle-package
+%cmake
 make
 
 %install
@@ -70,7 +72,7 @@ cd ../..
 
 %changelog
 * Thu Apr 19 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.12
-- Rebuilt for Fedora
+- Rebuild for Fedora
 * Fri Jan 19 2018 Aleksei Nikiforov <darktemplar@altlinux.org> 0.9.12-alt1.6
 - Fixed build.
 * Tue Aug 22 2017 Aleksei Nikiforov <darktemplar@altlinux.org> 0.9.12-alt1.5

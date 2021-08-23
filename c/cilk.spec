@@ -8,7 +8,7 @@ License: GPL v2 or later
 Group: Development/C
 URL: http://supertech.csail.mit.edu/cilk/
 Source: http://supertech.csail.mit.edu/cilk/cilk-5.4.6.tar.gz
-Requires: lib%name-devel = %version-%release
+Requires: %name-devel = %version-%release
 BuildRequires: flex chrpath
 
 %description

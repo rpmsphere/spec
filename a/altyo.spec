@@ -10,6 +10,7 @@ URL:	https://github.com/linvinus/AltYo
 Source0: AltYo-master.zip
 BuildRequires: gtk3-devel
 BuildRequires: vte291-devel
+BuildRequires: vala
 BuildRequires: vala-devel
 
 %description

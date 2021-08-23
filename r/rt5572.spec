@@ -40,6 +40,7 @@ sed -i 's|memcpy(extra, &addr|memcpy(extra, addr|' os/linux/sta_ioctl.c
 sed -i -e '130,132d' -e '133i timer_setup(pTimer,function,(unsigned long)data);' os/linux/rt_linux.c
 
 %build
+make clean
 make LINUX_SRC=%{_usrsrc}/kernels/%{kversion}
 
 %install
@@ -69,9 +70,7 @@ depmod -a > /dev/null 2> /dev/null
 %changelog
 * Wed Jan 27 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.1.3-1
 - Rebuild
-
 * Tue Mar 25 2014 Philip J Perry <phil@elrepo.org> - 2.6.1.3-1
 - Port to el6.
-
 * Mon Mar 24 2014 Maksim Gefke <ds_shadof@quickpay.ru> - 2.6.1.3-1
 - Initial build of the kmod package.

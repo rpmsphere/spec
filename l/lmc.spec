@@ -2,12 +2,11 @@ Name:           lmc
 URL:            https://github.com/lanmessenger/lanmessenger
 Group:          Productivity/Networking/Instant Messenger
 Summary:        LAN Messenger Instant messaging client
-Version:        1.2.35
-#Version:        1.2.39
-Release:        13.1
+Version:        1.2.39
+Release:        1
 License:        GPL-3.0
-Source0:        http://downloads.sourceforge.net/project/lanmsngr/%{version}/%{name}-%{version}-src.zip
-Source1:        %{name}-%{version}-lang.zip
+Source0:        http://downloads.sourceforge.net/project/lanmsngr/%{version}/lanmessenger-%{version}.tar.gz
+Source1:        %{name}-1.2.35-lang.zip
 Patch0:         %{name}-qtlocalpeer.patch
 Patch1:         %{name}-buildx11.patch
 Patch2:         %{name}-lan-messenger.patch
@@ -28,14 +27,15 @@ and message logging are provided.
 Authors: Qualia Digital Solutions <qualiatech@gmail.com>
 
 %prep
-%setup -q -c
-%patch0
-%patch1
-%patch2
-%patch3
+%setup -q -n lanmessenger-%{version}
+#%patch0
+#%patch1
+#%patch2
+#%patch3
 #if %{fedora}>20
 #sed -i 's|#include <QWebView>|#include <QtWebKitWidgets/QWebView>|' lmc/src/settingsdialog.cpp lmc/src/messagelog.h
 #endif
+sed -i '26i #include <QString>\n#include <QObject>\n#include <QByteArray>|' lmc/src/usertreewidget.cpp
 
 %build
 #pushd lmcapp/src
@@ -82,6 +82,6 @@ unzip %{SOURCE1} -d %{buildroot}%{_libdir}/%{name}/lang
 
 %changelog
 * Sun Mar 3 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.35
-- Rebuilt for Fedora
+- Rebuild for Fedora
 * Fri Dec 21 2012 fa0sck@gmail.com
 - Initial package for openSUSE - ver 1.2.35

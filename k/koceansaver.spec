@@ -20,11 +20,11 @@ sed -i '/KSCREENSAVER/d' CMakeLists.txt
 sed -i '/kscreensaver/d' src/kocean.h
 
 %build
-%cmake
-make
+%cmake_build
+#make
 
 %install
-%make_install
+%cmake_install
 
 %files
 %doc AUTHORS ChangeLog
@@ -35,7 +35,7 @@ make
 
 %changelog
 * Thu Feb 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
-- Rebuilt for Fedora
+- Rebuild for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 0.8-3.mga5
 + Revision: 745169
 - Second Mageia 5 Mass Rebuild

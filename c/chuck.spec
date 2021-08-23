@@ -2,8 +2,8 @@
 
 Summary: Real-time audio synthesis and graphics/multimedia language
 Name: chuck
-Version: 1.4.0.0
-Release: 8.1
+Version: 1.4.1.0
+Release: 1
 License: GPL
 Group: Applications/Multimedia
 URL: http://chuck.cs.princeton.edu/
@@ -52,7 +52,7 @@ rm -rf %{buildroot}
 %{_libdir}/xemacs/site-packages/lisp/chuck/*
 
 %changelog
-* Tue Sep 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0.0
+* Sun Aug 01 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1.0
 - Rebuilt for Fedora
 * Wed Oct 12 2016 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 1.3.6.0-1.220a
 - update to experimental 1.3.6.0 (released for the 220a class)

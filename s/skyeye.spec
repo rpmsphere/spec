@@ -54,7 +54,7 @@ sed -i 's| -liconv||' android/objs/*/Makefile.*
 %ifarch x86_64
 sed -i '176,180d' third-party/distrib/sdl-1.2.12/src/video/x11/SDL_x11sym.h
 %endif
-sed -i 's|dumpversion|dumpfullversion|' configure*
+sed -i -e 's|dumpversion|dumpfullversion|' -e 's|3\.\*)|11.*)|' configure*
 sed -i 's|subsubsection|subsection|' third-party/bfd/doc/elf.texi
 sed -i 's|#ifdef SEMOPS_DEFINE_INLINE|#ifndef SEMOPS_DEFINE_INLINE|' third-party/opcodes/cgen-ops.h
 sed -i 's|llvm/BasicBlock.h|llvm/IR/BasicBlock.h|' common/dyncom/translate_singlestep.cpp
@@ -63,8 +63,8 @@ sed -i -e 's|llvm/DerivedTypes.h|llvm/IR/DerivedTypes.h|' -e 's|llvm/LLVMContext
 %build
 #autoreconf -fiv
 %configure --enable-lcd --enable-shared
-make lib CFLAGS+="-Wno-format-security -Wno-return-type -Wno-error"
-make CFLAGS+="-Wno-format-security -Wno-return-type -Wno-error"
+make lib CFLAGS+="-Wno-format-security -Wno-return-type -Wno-error -Wl,--allow-multiple-definition"
+make CFLAGS+="-Wno-format-security -Wno-return-type -Wno-error -Wl,--allow-multiple-definition"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -89,7 +89,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.5.rc1
-- Rebuilt for Fedora
+- Rebuild for Fedora
 * Sat Feb 27 2010 Emmanuel Andry <eandry@mandriva.org> 1.3.0-0.rc1.1mdv2010.1
 + Revision: 512492
 - BR readline-devel

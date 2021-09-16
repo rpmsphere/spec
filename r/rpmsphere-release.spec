@@ -1,8 +1,8 @@
 Summary:	RPM Sphere release file
 Name:		rpmsphere-release
 Version:	34
-Release:	1
-License:	Public Domain
+Release:	2
+License:	BSD
 Group:		System Environment/Base
 URL:		https://github.com/rpmsphere
 Source0:        rpmsphere.repo

@@ -1,14 +1,13 @@
 %undefine _debugsource_packages
-%global _version 12-2021.7
 
 Summary: A language with roots in Forth
-Name: retro
-Version: 12.2021.7
+Name: retro12
+Version: 2021.7
 Release: 1
 License: Freeware
 Group: Development/Language
 URL: http://www.forthworks.com/retro
-Source0: http://www.forthworks.com/retro/r/RETRO%{_version}.tar.gz
+Source0: http://www.forthworks.com/retro/r/RETRO12-%{version}.tar.gz
 
 %description
 Retro is a concatenative, stack based language with roots in Forth. It is
@@ -17,7 +16,7 @@ needs, it has been developed and refined through continual use by a small
 community over the last decade.
 
 %prep
-%setup -q -n RETRO%{_version}
+%setup -q -n RETRO12-%{version}
 
 %build
 make
@@ -37,5 +36,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/RETRO12
 
 %changelog
-* Sun Aug 1 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 12.2021.7
+* Sun Aug 1 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.7
 - Rebuilt for Fedora

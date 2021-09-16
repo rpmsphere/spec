@@ -6,6 +6,7 @@ Group: Development/Languages
 License: GPLv3+
 Source0: http://download.savannah.nongnu.org/releases/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: gperf
+BuildRequires: perl-interpreter
 
 %description
 Aasm is an advanced assembler designed to support several target

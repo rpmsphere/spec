@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		tea
-Version:	60.0.3
+Version:	60.6.0
 Release:	1
 Summary:	A text editor with the hundreds of features
 URL:		https://github.com/psemiletov/tea-qt
@@ -9,8 +9,11 @@ Group:		Productivity/Text/Editors
 License:	GPL
 Source0:	http://semiletov.org/tea/dloads/%{name}-qt-%{version}.tar.gz
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, hunspell-devel, qt5-qtbase-devel
-Provides:       teaqt
+BuildRequires:	gcc-c++
+BuildRequires:  hunspell-devel
+BuildRequires:  qt5-qtbase-devel
+AutoProv:   false
+#Provides:       teaqt
 
 %description
 TEA is the text editor for UNIX-like systems and Windows.
@@ -35,7 +38,7 @@ install -Dm 644 desktop/%{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/applications
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sun Apr 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 60.0.3
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 60.6.0
 - Rebuilt for Fedora
 * Sun Jul 11 2010 Detlef Reichelt <detlef@links2linux.de> - 28.1.0
 - new upstream version <28.1.0>

@@ -1,5 +1,5 @@
 Name:           cutemaze
-Version:        1.2.6
+Version:        1.3.0
 Release:        1
 Summary:        Top-down maze game
 Group:          Games/Puzzles
@@ -37,11 +37,11 @@ have been picked up.
 %{_datadir}/metainfo/%{name}.appdata.xml
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
-%{_datadir}/pixmaps/%{name}.xpm
+#%{_datadir}/pixmaps/%{name}.xpm
 %{_mandir}/man6/%{name}.6*
 
 %changelog
-* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.6
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.0
 - Rebuilt for Fedora
 * Thu Oct 20 2016 akien <akien> 1.2.0-1.mga6
 + Revision: 1062586

@@ -1,7 +1,7 @@
 %define pyname Mathics
 
 Name:           mathics
-Version:        2.0.0
+Version:        4.0.0
 Release:        1
 Summary:        A general-purpose computer algebra system
 # Mathics itself is licensed as GPL-3.0 but it includes third-party software with MIT, BSD-3-Clause, and Apache-2.0 Licensing; also includes data from wikipedia licensed under CC-BY-SA-3.0 and GFDL-1.3
@@ -57,7 +57,7 @@ popd
 %{_bindir}/*
 
 %changelog
-* Thu Feb 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.0
 - Rebuilt for Fedora
 * Tue Dec 19 2017 badshah400@gmail.com
 - Correct License: Includes software licensed as BSD-3-Clause,

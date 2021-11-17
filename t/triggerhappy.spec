@@ -30,16 +30,16 @@ install -D -m 644 udev/triggerhappy-udev.rules %{buildroot}/usr/lib/udev/rules.d
 mkdir -p %{buildroot}/etc/triggerhappy/triggers.d/
 
 %pre
-%service_add_pre %{name}.service %{name}.socket
+systemctl stop %{name}.service %{name}.socket
 
 %post
-%service_add_post %{name}.service %{name}.socket
+systemctl start %{name}.service %{name}.socket
 
 %postun
-%service_del_postun %{name}.service %{name}.socket
+systemctl disable %{name}.service %{name}.socket
 
 %preun
-%service_del_preun %{name}.service %{name}.socket
+systemctl stop %{name}.service %{name}.socket
 
 %files
 %doc AUTHORS README COPYING triggerhappy.conf.examples

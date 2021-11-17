@@ -1,4 +1,5 @@
 %define __python /usr/bin/python2
+
 Summary:	Gopher server
 Summary(pl):	Serwer gophera
 Name:		pygopherd
@@ -53,13 +54,13 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %pre
-%groupadd -g 30 gopher
-%useradd -u 13 -g 30 -d /no/home -s /bin/false -c "gopherd user" gopher
+groupadd -g 30 gopher
+useradd -u 13 -g 30 -d /no/home -s /bin/false -c "gopherd user" gopher
 
 %postun
 if [ "$1" = "0" ]; then
-	%userremove gopher
-	%groupremove gopher
+	userdel gopher
+	groupdel gopher
 fi
 
 %files

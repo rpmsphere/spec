@@ -21,14 +21,13 @@ possibly recover it.
 %prep
 %setup -q
 %autopatch -p1
-
-# fix build on aarch64
-cp -af %{_rpmconfigdir}/config.{guess,sub} .
+%ifarch aarch64
+cp -f /usr/lib/rpm/redhat/config.* .
+%endif
 
 %build
 # http://code.google.com/p/ext3grep/issues/detail?id=14
 export CXX=%{_bindir}/g++
-
 %configure
 make
 

@@ -33,7 +33,7 @@ sed -i 's|Network;||' %{buildroot}%{_datadir}/applications/net.sourceforge.xosco
 %doc README AUTHORS NEWS TODO
 
 %changelog
-* Sun Apr 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
 - Rebuid for Fedora
 * Fri Dec 29 2017 Vitaly Lipatov <lav@altlinux.ru> 2.2-alt1
 - initial build for ALT Sisyphus

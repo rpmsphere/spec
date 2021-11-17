@@ -1,5 +1,5 @@
 Name:           yabasic
-Version:        2.87.2
+Version:        2.90.1
 Release:        1
 Summary:        Small basic interpreter with simple graphics and printing
 Group:          Development/Languages
@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/%{name}
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.87.2
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.90.1
 - Rebuilt for Fedora
 * Mon Jan 12 2009 Fabian Affolter <fabian@bernewireless.net> - 2.763-1
 - Initial package for Fedora

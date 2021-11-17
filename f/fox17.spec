@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           fox17
-Version:        1.7.73
+Version:        1.7.77
 Release:        1
 License:        LGPL-3.0+
 Summary:        Shared Libraries for the FOX Toolkit
@@ -191,7 +191,7 @@ test -f %{_mandir}/man1/reswrap.1.gz || ln -s reswrap17.1.gz %{_mandir}/man1/res
 %{_mandir}/man1/ControlPanel.1*
 
 %changelog
-* Fri Sep 04 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.73
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.77
 - Rebuilt for Fedora
 * Mon Dec 15 2014 lars@linux-schulserver.de
 - the -devel-static package must require the -devel-package,

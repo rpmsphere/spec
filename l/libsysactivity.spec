@@ -1,7 +1,7 @@
 Summary:	Library for retrieving statistics of the system`s activity
 Name:		libsysactivity
-Version:	0.6.3
-Release:	3.1
+Version:	0.6.5
+Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
 URL:		http://sourceforge.net/projects/libsysactivity/
@@ -30,10 +30,10 @@ developing applications that use %{name}.
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
 %cmake 
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
 %doc CHANGELOG COPYING
@@ -45,7 +45,7 @@ make
 %{_libdir}/cmake/%{name}
 
 %changelog
-* Tue Jan 14 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.3
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.5
 - Rebuilt for Fedora
 * Sun May 27 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.6.3-1
 + Revision: 800857

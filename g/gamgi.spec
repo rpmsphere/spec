@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:		gamgi
-Version:	0.17
-Release:	6.1
+Version:	0.17.4g
+Release:	1
 Summary:	Package to construct, view and analyse atomic structures
 Group:		Sciences/Chemistry
 License:	GPLv2	
@@ -31,7 +31,7 @@ GAMGI can determine any point group of symmetry, can build crystals for any spac
 %ifarch x86_64 aarch64
 sed -i 's|/usr/lib|/usr/lib64|g' src/make_local
 %endif
-sed -i 's|-I/usr/include/pango-1.0|-I/usr/include/pango-1.0 -I/usr/include/harfbuzz|' src/make_local
+sed -i 's|-I/usr/include/pango-1.0|-I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I%{_libdir}/glib-2.0/include -I%{_libdir}/gtk-2.0/include -I%{_libdir}/gtkglext-1.0/include|' src/make_local
 sed -i 's|-ldl|-ldl -Wl,--allow-multiple-definition|' src/make_rules
 
 %build
@@ -85,7 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/%{name}.1.gz
 
 %changelog
-* Tue Dec 24 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17.4g
 - Rebuilt for Fedora
 * Sun Jan 27 2013 josef radinger <cheese@nosuchhost.net> - 0.16.3-1
 - bump version

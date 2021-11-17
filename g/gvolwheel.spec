@@ -1,6 +1,6 @@
 Name:		gvolwheel
-Version:	1.0
-Release:	4.1
+Version:	1.0.3
+Release:	1
 Summary:	Lightweight application to control the audio volume
 License:	GPLv3+
 Group:		Sound
@@ -20,6 +20,7 @@ desktops (Openbox,IceWM,XFCE etc).
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
+./autogen.sh
 %configure
 make
 
@@ -41,7 +42,7 @@ make
 %{_datadir}/pixmaps/%{name}
 
 %changelog
-* Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
 - Rebuilt for Fedora
 * Mon May 28 2012 Andrey Bondrov <abondrov@mandriva.org> 1.0-1mdv2011.0
 + Revision: 800955

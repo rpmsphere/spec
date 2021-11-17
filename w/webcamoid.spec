@@ -9,14 +9,12 @@ License: GPLv3+
 URL: https://github.com/hipersayanX/webcamoid
 Source0: %{name}-%{version}.tar.gz
 BuildRequires: gcc-c++
+BuildRequires: qt5-qtquickcontrols2-devel
 BuildRequires: qt5-qtmultimedia-devel
 BuildRequires: qt5-qttools-devel
 BuildRequires: qt5-qtsvg-devel
 BuildRequires: ffmpeg-devel
 BuildRequires: libv4l-devel
-Requires: qt5-qtmultimedia
-Requires: ffmpeg-libs
-Requires: libv4l
 
 %description
 Webcamoid is a full featured webcam capture application.

@@ -254,6 +254,9 @@ mkdir -p $RPM_BUILD_ROOT
 #%patch1 -p1
 #%patch2 -p1
 #%patch3 -p1
+%ifarch aarch64
+cp -f /usr/lib/rpm/redhat/config.* .
+%endif
 
 %build
 ./configure --prefix=%{prefix} \

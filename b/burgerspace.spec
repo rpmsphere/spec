@@ -1,5 +1,5 @@
 Name:			burgerspace
-Version:		1.9.3
+Version:		1.9.4
 Summary:		A Burgertime(TM) clone
 License:		GPLv2
 URL:			http://sarrazip.com/dev/%{name}.html
@@ -54,9 +54,9 @@ install -D -m644 src/%{name}.desktop %{buildroot}/%{_datadir}/applications/%{nam
 %{_datadir}/applications/*%{name}.desktop
 %{_bindir}/*
 %{_datadir}/pixmaps/*
-%{_datadir}/sounds/%{name}
+%{_datadir}/%{name}
 %{_mandir}/man*/*
 
 %changelog
-* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.3
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.4
 - Rebuilt for Fedora

@@ -26,6 +26,9 @@ Execution is by a very efficient interpreter.
 sed -i '132,133d' src/MSIPC/MSProtocolConnection.C
 sed -i 's/|| errnum > sys_nerr//' src/dap/error.c
 sed -i 's|#if defined(HAVE_SVR4)|#if !defined(HAVE_SVR4)|' src/dap/sgnlcatch.c src/dap/sgnldefault.c src/dap/sgnlignore.c src/dap/sgnloriginal.c
+%ifarch aarch64
+cp -f /usr/lib/rpm/redhat/config.* .
+%endif
 
 %build
 CXXFLAGS="-O2 -fpermissive -Wno-narrowing -lX11" CFLAGS="-O2 -Wno-narrowing -lX11" ./configure --prefix=/usr

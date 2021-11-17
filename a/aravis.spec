@@ -8,7 +8,7 @@
 
 Summary:	Glib/gobject based library implementing a Genicam interface
 Name:		aravis
-Version:	0.7.3
+Version:	0.8.7
 Release:	1
 License:	GPLv2+
 Group:		Development/GNOME and GTK+
@@ -24,6 +24,7 @@ BuildRequires:	pkgconfig(gstreamer-app-1.0)
 BuildRequires:	gtk-doc
 BuildRequires:	w3m
 BuildRequires:  python
+BuildRequires:  meson
 
 %description
 Aravis is a glib/gobject based library implementing a Genicam interface, 
@@ -87,7 +88,7 @@ rm -fr %{buildroot}%{_prefix}/doc
 
 %files
 %{_bindir}/*
-%{_datadir}/%{name}-*
+#%{_datadir}/%{name}-*
 %{_datadir}/icons/hicolor/*/apps/*.png
 %{_datadir}/metainfo/*.appdata.xml
 %{_datadir}/applications/*.desktop
@@ -116,7 +117,7 @@ rm -fr %{buildroot}%{_prefix}/doc
 %{_datadir}/gtk-doc/html/%{name}-*
 
 %changelog
-* Mon Jan 06 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.3
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.7
 - Rebuilt for Fedora
 * Sun Jan 11 2015 abfonly <abfonly@gmail.com> 0.3.5-1
 + Revision: 13deda8

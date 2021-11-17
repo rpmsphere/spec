@@ -1,6 +1,6 @@
 Name: xtell
-Version: 2.10.7
-Release: 5.1
+Version: 2.10.8
+Release: 1
 License: GPL
 URL: http://melkor.dnp.fmph.uniba.sk/~garabik/xtell.html
 Source: xtell_%{version}.tar.gz
@@ -62,7 +62,7 @@ killall -HUP inetd
 %attr(-,root,tty) %{_sbindir}/xtelld
 
 %changelog
-* Mon Oct 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.10.7
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.10.8
 - Rebuilt for Fedora
 * Mon Mar 15 1999 Radovan Garabik <garabik@fmph.uniba.sk>
 - New release

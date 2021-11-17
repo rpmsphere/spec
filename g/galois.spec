@@ -1,6 +1,6 @@
 Name:           galois
-Version:        0.6
-Release:        4.1
+Version:        0.7
+Release:        1
 Summary:        Extended falling blocks game with many different geometries
 Group:          Games/Arcade
 License:        GPLv3+
@@ -41,7 +41,7 @@ CXXFLAGS="%{optflags} -std=gnu++11" \
 %{_mandir}/man6/%{name}.6.*
 
 %changelog
-* Mon Jul 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
 - Rebuilt for Fedora
 * Thu Feb 08 2018 akien <akien> 0.5-1.mga7
 + Revision: 1199724

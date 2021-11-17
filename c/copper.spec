@@ -2,7 +2,7 @@
 
 Name: copper
 Summary: Another experimental programming language
-Version: 4.4
+Version: 4.5
 Release: 1
 Group: Development/Languages
 License: Public Domain
@@ -36,5 +36,5 @@ make COPPER=boot/copper-elf64 BACKEND=c
 %{_bindir}/*
 
 %changelog
-* Tue Aug 25 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.4
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5
 - Rebuilt for Fedora

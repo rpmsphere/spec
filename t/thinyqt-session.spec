@@ -46,6 +46,7 @@ Recommends:     qtcam
 Recommends:     qftp-x11
 Recommends:     qutim
 Recommends:     kdocker
+Recommends:     qtparted
 Recommends:     xinput_calibrator
 Recommends:     upower
 

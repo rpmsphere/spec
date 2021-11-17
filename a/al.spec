@@ -23,7 +23,7 @@ exception handling.
 
 %build
 %ifarch aarch64
-cp -f /usr/lib/rpm/config.* .
+cp -f /usr/lib/rpm/redhat/config.* .
 %endif
 %configure
 %{__make} %{_smp_mflags -O}

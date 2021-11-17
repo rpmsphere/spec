@@ -30,7 +30,7 @@ sed -i 's|curl/types.h|curl/curl.h|' src/http.c
 
 %build
 %ifarch aarch64
-cp -f /usr/lib/rpm/config.* .
+cp -f /usr/lib/rpm/redhat/config.* .
 %endif
 ./configure --prefix=%{_prefix} --libdir=%{_libdir}
 make PREFIX=%{_prefix} \

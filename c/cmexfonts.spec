@@ -48,5 +48,5 @@ fc-cache 2> /dev/null
 /etc/X11/fontpath.d/%{name}
 
 %changelog
-* Mon Feb 10 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Initial package
+* Mon Feb 10 2014 Wei-Lun Chao <bluebat@member.fsf.org> 0.2-1
+- initial package

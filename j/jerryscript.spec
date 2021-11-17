@@ -2,12 +2,12 @@
 
 Summary: JavaScript engine for the Internet of Things
 Name: jerryscript
-Version: 2.0git
+Version: 2.4.0
 Release: 1
 License: Apache 2.0
 Group: Development/Language
 URL: http://jerryscript.net/
-Source: %{name}-master.zip
+Source: %{name}-%{version}.tar.gz
 BuildRequires: cmake
 
 %description
@@ -23,14 +23,14 @@ Requires:       %{name} = %{version}
 Libraries and header files for %{name}.
 
 %prep
-%setup -q -n %{name}-master
+%setup -q
 
 %build
 %cmake
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 %ifarch x86_64 aarch64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
@@ -45,5 +45,5 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %{_libdir}/pkgconfig/libjerry*.pc
 
 %changelog
-* Fri Sep 20 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0git
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
 - Rebuilt for Fedora

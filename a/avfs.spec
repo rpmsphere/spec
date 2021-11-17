@@ -1,6 +1,6 @@
 Summary:	Enables programs to look inside archived/compressed files, access remote files
 Name:		avfs
-Version:	1.1.2
+Version:	1.1.4
 Release:	1
 License:	GPLv2 and LGPLv2
 Group:		Applications/Archiving
@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/avfs.pc
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.4
 - Rebuilt for Fedora
 * Wed Aug 06 2008 J. Krebs <rpm_speedy@yahoo.com> - 0.9.8-2
 - Added libdir to configure for build under x86_64.

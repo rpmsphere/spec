@@ -3,15 +3,16 @@
 
 Summary:	An open-source, cross-platform RAD tool for wxWidgets
 Name:		wxformbuilder
-Version:	3.8.1git
-Release:	4.1
+Version:	3.10.1
+Release:	1
 License:	GPLv2
 Group:		Development/Tools 
 URL:		https://github.com/wxFormBuilder/wxFormBuilder
-Source0:	%{oname}-master.zip
+Source0:	https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v%{version}/%{oname}-%{version}-source-full.tar.gz
 BuildRequires:	gcc-c++
 BuildRequires:	ImageMagick
 BuildRequires:	wxGTK3-devel
+BuildRequires:  ticpp-devel
 
 %description
 wxFormBuilder is an open-source, cross-platform RAD tool for wxWidgets. 
@@ -21,12 +22,12 @@ allows the inclusion of non-graphical components, as well as providing
 facilities for extending the set of widgets easily via plugins.
 
 %prep
-%setup -q -n %{oname}-master
+%setup -q -n %{oname}-%{version}
 
 %build
 sh create_build_files4.sh
 cd build/3.0/gmake
-make config=release all
+CFLAGS=-I/usr/include/ticpp make config=release all
 
 %install
 install -d -m 0755 %buildroot%{_bindir}
@@ -66,7 +67,7 @@ EOF
 rm -rf %{buildroot}
 
 %files
-%doc COPYING README.md
+%doc LICENSE README.md
 %{_bindir}/%{name}
 %{_libdir}/%{name}
 %{_datadir}/%{name}
@@ -74,7 +75,7 @@ rm -rf %{buildroot}
 %{_datadir}/icons/hicolor/*/*/%{name}.*
 
 %changelog
-* Wed Oct 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.1git
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.10.1
 - Rebuilt for Fedora
 * Mon Dec 14 2015 Oleg Kozlov <xxblx.oleg@yandex.com> 3.5.0beta-1.mga5
 - built for mageia 5

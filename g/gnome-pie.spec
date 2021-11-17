@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           gnome-pie
-Version:        0.7.2
+Version:        0.7.3
 Release:        1
 Summary:        A visual application launcher for Gnome
 License:        MIT
@@ -19,6 +19,9 @@ BuildRequires:  libgee-devel
 BuildRequires:  libXtst-devel
 BuildRequires:  gnome-menus-devel
 BuildRequires:  desktop-file-utils      
+BuildRequires:  libindicator-devel
+BuildRequires:  libindicator-gtk3-devel
+BuildRequires:  libarchive-devel
 
 %description
 Gnome-Pie is a circular application launcher for Linux. It is made of
@@ -35,10 +38,10 @@ sed -i 's|public Action|Action|' src/actions/action.vala
 #cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_LDFLAGS=-lgthread
 #make CFLAGS='%{optflags}' %{?_smp_mflags}
 %cmake .
-%make_build
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/*.desktop
 rm -rf $RPM_BUILD_ROOT%{_defaultdocdir}
 
@@ -64,7 +67,7 @@ fi
 %{_datadir}/locale/zanata.xml
 
 %changelog
-* Thu Oct 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.2
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.3
 - Rebuilt for Fedora
 * Fri Feb 10 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0.5.5-9.20130330git0a5aa2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild

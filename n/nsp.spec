@@ -1,7 +1,7 @@
 Summary:	A GPL Scientific Software Package
 Name:		nsp
 Version:	1.4
-Release:	1
+Release:	2.1
 License:	GPL and Specific for some included contribs (Scilab license)
 Group:		Applications/Engineering
 URL:		http://cermics.enpc.fr/~jpc/nsp-tiddly/mine.html
@@ -32,6 +32,9 @@ sed -i 's|, KIND(t)||' src/lapack/zhpadm.f src/lapack/zgpadm.f
 sed -i -e '165i let ss = Bytes.of_string s in' -e '165s| s | ss |' toolboxes/compilers/modelicac/src/optimization.ml
 sed -i '38,39s|Pervasives|Stdlib|' toolboxes/compilers/paksazi/src/paksazi.ml
 sed -i 's|Pervasives|Stdlib|' toolboxes/simport/release/src/slx_file_format/parsing/ocaml-xml/src/basics/*.ml* toolboxes/simport/release/src/slx_file_format/parsing/ocaml-xml/src/xml/parsing/xml_to_ast.ml toolboxes/simport/release/src/slx_file_format/parsing/ocaml-xml/src/xml/expand/xml_env.ml
+%ifarch aarch64
+cp -f /usr/lib/rpm/redhat/config.* .
+%endif
 
 %build
 export OCAMLPARAM="safe-string=1,_" CFLAGS="-Wl,--allow-multiple-definition"

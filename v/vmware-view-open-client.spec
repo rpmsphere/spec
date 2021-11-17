@@ -15,6 +15,7 @@ BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	intltool
 BuildRequires:	libxml2-devel
 BuildRequires:	curl-devel
+BuildRequires:  squashfs-tools
 Patch0:		vmware-view-open-client-4.5.0.297975-curl-headers.patch
 Patch1:		vmware-view-open-client-4.5.0.297975-linking.patch
 Patch2:		format_not_werror.patch

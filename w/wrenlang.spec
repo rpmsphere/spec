@@ -26,6 +26,7 @@ wrapped up in a familiar, modern syntax.
 #sed -i 's|-fPIC|-fPIC -Wno-error|' Makefile util/wren.mk
 #sed -i 's|sprintf(message,|snprintf(message, sizeof(message),|' src/vm/wren_compiler.c
 sed -i 's|wren_test|wren|' test/test.c
+sed -i 's| -m64||' projects/*/*.make
 
 %build
 make -C projects/make

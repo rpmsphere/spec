@@ -16,7 +16,7 @@ BuildRequires: perl(Time::HiRes)
 #BuildRequires: perl(Math::GMPq)
 #BuildRequires: perl(Math::GMPz)
 #BuildRequires: perl(Math::MPC)
-#BuildRequires: perl(Math::MPFR)
+Requires: perl(Math::MPFR)
 #BuildRequires: perl(Math::Prime::Util::GMP)
 #BuildRequires: perl(Memoize)
 BuildArch: noarch
@@ -44,15 +44,7 @@ BuildArch: noarch
 Sidef is a modern, high-level, general-purpose programming language,
 inspired by Ruby, Perl 6 and Go.
 
-This is perl module for %{upstream_name}.
-
-%package -n %{upstream_name}
-Summary: Sidef executable script
-Requires: %{name}
-
-%description -n %{upstream_name}
-Sidef is a modern, high-level, general-purpose programming language,
-inspired by Ruby, Perl 6 and Go.
+This is perl module for %{upstream_name} with executable script.
 
 %prep
 %setup -qn %{upstream_name}-%{version}
@@ -70,8 +62,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_libdir}/perl5/vendor_perl/auto/Sidef/.packlist
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
-
-%files -n %{upstream_name}
 %{_bindir}/sidef
 
 %changelog

@@ -3,7 +3,7 @@ Summary:      Seed7 Programming Language
 URL:          http://seed7.sourceforge.net/
 Group:        Development/Language
 License:      LGPL
-Version:      05.20210322
+Version:      05.20210904
 Release:      1
 Source0:      http://downloads.sourceforge.net/project/seed7/seed7/seed7_%(echo %{version}|tr . _)/seed7_%(echo %{version}|tr . _).tgz
 BuildRequires: libX11-devel
@@ -50,5 +50,5 @@ install -m 644 bin/*.a $RPM_BUILD_ROOT%{_libdir}/seed7/bin
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 05.20210322
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 05.20210904
 - Rebuilt for Fedora

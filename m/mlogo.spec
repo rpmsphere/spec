@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name:		mlogo
 Version:	0.0git
 Release:	7.1

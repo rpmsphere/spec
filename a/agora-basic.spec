@@ -22,7 +22,7 @@ still required.
 
 %build
 %ifarch aarch64
-cp -f /usr/lib/rpm/config.* .
+cp -f /usr/lib/rpm/redhat/config.* .
 %endif
 CFLAGS="-Wall -g" ./configure --prefix=/usr --libdir=%{_libdir}
 %__make %{?_smp_mflags}

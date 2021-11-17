@@ -51,7 +51,7 @@ make
 %{perl_vendorlib}/Encode
 %{perl_vendorlib}/Normalize
 %{_mandir}/*/*
-%{_libdir}/perl5/perllocal.pod
+%exclude %{_libdir}/perl5/perllocal.pod
 %{_libdir}/perl5/vendor_perl/auto/MP3/Tag/.packlist
 
 %changelog

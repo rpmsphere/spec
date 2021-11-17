@@ -1,6 +1,6 @@
 Name:           nootka
-Version:        1.4.5
-Release:        5.4
+Version:        2.0.2
+Release:        1
 Summary:        Application to help with learning classical score notation
 License:        GPLv3
 Group:          Sound/Utilities
@@ -37,28 +37,29 @@ Czech, French, German, Polish and Russian translations
 sed -i 's|-std=|-Wno-narrowing -std=|' src/CMakeLists.txt
 
 %build
-chmod -x TODO
 %cmake
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 %ifarch x86_64 aarch64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
+cp changes LICENSE *.md %{buildroot}%{_docdir}/%{name}
 
 %files
-%doc changes TODO copyright
+%{_docdir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_bindir}/*
 %{_libdir}/%{name}
 %{_datadir}/%{name}
-%{_datadir}/pixmaps/*
+%{_datadir}/icons/hicolor/*/*/*
 %{_mandir}/man1/*
 %{_datadir}/mime/packages/*
+%{_datadir}/metainfo/*
 
 %changelog
-* Mon Feb 05 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.5
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.2
 - Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 1.0.1-4.mga5
 + Revision: 743953

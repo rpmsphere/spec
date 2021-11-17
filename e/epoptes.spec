@@ -86,10 +86,10 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 %__rm -rf %{buildroot}
 
 %pre
-%service_add_pre epoptes-server.service
+systemctl enable epoptes-server.service
 
 %pre client
-%service_add_pre epoptes-client.service
+systemctl enable epoptes-client.service
 
 %post
 if ! getent group epoptes >/dev/null; then
@@ -103,22 +103,22 @@ if ! [ -f /etc/epoptes/server.key ] || ! [ -f /etc/epoptes/server.crt ] || ! [ -
     openssl req -batch -x509 -nodes -newkey rsa:1024 -days $(($(date --utc +%s) / 86400 + 3652)) -keyout /etc/epoptes/server.key -out /etc/epoptes/server.crt
     chmod 600 /etc/epoptes/server.key
 fi
-%service_add_post epoptes-server.service
+systemctl start epoptes-server.service
 
 %post client
-%service_add_post epoptes-client.service
+systemctl start epoptes-client.service
 
 %preun
-%service_del_preun epoptes-server.service
+systemctl stop epoptes-server.service
 
 %preun client
-%service_del_preun epoptes-client.service
+systemctl stop epoptes-client.service
 
 %postun
-%service_del_postun epoptes-server.service
+systemctl disable epoptes-server.service
 
 %postun client
-%service_del_postun epoptes-client.service
+systemctl disable epoptes-client.service
 
 %files -f epoptes.lang
 %config(noreplace) %{_sysconfdir}/default/epoptes

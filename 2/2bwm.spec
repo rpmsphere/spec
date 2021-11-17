@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
 Name:           2bwm
-Version:        0.2git
-Release:        1.1
+Version:        0.3
+Release:        1
 Summary:        A fast floating WM
 Group:          User Interface/Desktops
 License:        ISC
 URL:            https://github.com/venam/2bwm
-Source0:        %{name}-master.zip
+Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  xcb-util-devel
 BuildRequires:  xcb-util-keysyms-devel
 BuildRequires:  xcb-util-wm-devel
@@ -20,7 +20,7 @@ accessible from the keyboard but a pointing device can be used for move,
 resize and raise/lower.
 
 %prep
-%setup -q -n %{name}-master
+%setup -q
 
 %build
 %make_build
@@ -37,5 +37,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 
 %changelog
-* Thu Jun 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2git
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
 - Rebuilt for Fedora

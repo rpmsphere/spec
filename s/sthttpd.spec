@@ -102,16 +102,10 @@ rm -f %{buildroot}/var/lib/thttpd/cgi-bin/printenv
 mv %{buildroot}%{_sbindir}/htpasswd %{buildroot}%{_sbindir}/th_htpasswd
 
 %pre
-%_pre_useradd thttpd /var/lib/thttpd /bin/nologin
-
-%post
-%_post_service thttpd
-
-%preun
-%_preun_service thttpd
+useradd thttpd -d /var/lib/thttpd -s /bin/nologin
 
 %postun
-%_postun_userdel thttpd
+userdel thttpd
 
 %files
 %doc README TODO

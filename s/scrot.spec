@@ -1,6 +1,6 @@
 Name:           scrot
-Version:        0.8
-Release:        21
+Version:        1.6
+Release:        1
 Summary:        Screen-shot capture using Imlib 2
 License:        MIT
 URL:            http://www.linuxbrit.co.uk/scrot/
@@ -17,7 +17,7 @@ loaders of imlib2.
 
 %prep
 %setup -q
-%patch1
+#%patch1
 
 %build
 %configure
@@ -25,14 +25,15 @@ make %{?_smp_mflags}
 
 %install
 %make_install
+cp AUTHORS ChangeLog COPYING README.md TODO %{buildroot}%{_docdir}/%{name}
 
 %files
-%doc AUTHORS ChangeLog COPYING README TODO
+%{_docdir}/%{name}
 %{_bindir}/*
 %{_mandir}/man1/*
 
 %changelog
-* Wed Nov 25 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6
 - Rebuilt for Fedora
 * Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.8-21
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild

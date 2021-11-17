@@ -2,7 +2,7 @@
 
 Summary: Gravity Programming Language
 Name: gravity
-Version: 0.8.1
+Version: 0.8.5
 Release: 1
 License: MIT
 Group: Development/Languages
@@ -32,5 +32,5 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.5
 - Rebuilt for Fedora

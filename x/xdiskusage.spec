@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           xdiskusage
-Version:        1.52
+Version:        1.54
 Release:        1
 Summary:        Lightweight interface to visualize your detailed disk usage
 Group:          File tools
@@ -51,7 +51,7 @@ EOF
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.52
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.54
 - Rebuilt for Fedora
 * Mon Nov 30 2015 akien <akien> 1.51-1.mga6
 + Revision: 907390

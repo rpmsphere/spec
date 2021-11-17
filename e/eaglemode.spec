@@ -5,7 +5,7 @@ URL:            http://eaglemode.sourceforge.net/
 Summary:        The most advanced Zoomable User Interface
 License:        GPL-3.0+
 Group:          Development/Tools/Other
-Version:        0.95.0
+Version:        0.95.1
 Release:        1
 Source:         http://dl.sourceforge.net/project/%{name}/%{name}-%{version}/%{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
@@ -105,7 +105,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/icons/hicolor/*/apps/%name.png
 
 %changelog
-* Mon Aug 24 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.95.0
+* Sun Sep 26 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.95.1
 - Rebuilt for Fedora
 * Sat Jan  7 2012 joop.boonen@opensuse.org
 - Reformated the spec file to meet the openSUSE standard

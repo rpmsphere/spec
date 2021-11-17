@@ -1,11 +1,11 @@
 Summary:	DRBL (Diskless Remote Boot in Linux) package
 Name:		drbl
-Version:	2.32.10
+Version:	4.5.5
 Release:	1
 License:	GPLv2+
 Group:		Networking/Other
 URL:		https://drbl.org
-Source0:	http://free.nchc.org.tw/drbl-core/pool/drbl/stable/drbl/drbl_%{version}.orig.tar.xz
+Source0:	http://free.nchc.org.tw/drbl-core/pool/drbl/stable/drbl/drbl-%{version}.tar.xz
 BuildArch:	noarch
 
 %description
@@ -40,7 +40,7 @@ For more details, check
 %{_datadir}/gdm/themes/drbl-gdm
 
 %changelog
-* Mon Mar 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.32.10
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5.5
 - Rebuilt for Fedora
 * Sun Dec 06 2020 luigiwalser <luigiwalser> 2.32.10-1.mga8
 + Revision: 1654010

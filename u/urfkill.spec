@@ -1,6 +1,6 @@
 Name:           urfkill
-Version:        0.4.0
-Release:        13.1
+Version:        0.5.0
+Release:        1
 URL:            http://github.com/lcp/urfkill
 Summary:        A daemon to control radio killswitches
 License:        GPL-2.0+
@@ -48,6 +48,7 @@ http://freedesktop.org/wiki/Software/urfkill
 %patch0 -p1
 
 %build
+./autogen.sh
 %configure\
   --disable-static \
   --libexecdir=%{_libexecdir}/urfkill \
@@ -62,6 +63,7 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
 rm -rf $RPM_BUILD_ROOT
 
 %pre
+mkdir -p /var/lib/urfkill
 /usr/sbin/groupadd -r urfkill 2> /dev/null || :
 /usr/sbin/useradd -r -o -g urfkill -s /bin/false \
 -c "killswitch control daemon" -d /var/lib/urfkill urfkill 2> /dev/null || :
@@ -93,7 +95,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/urfkill-glib.pc
 
 %changelog
-* Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.0
 - Rebuilt for Fedora
 * Fri Jun  8 2012 glin@suse.com
 - Version bump to 0.4.0

@@ -1,5 +1,5 @@
 Name:           tanglet
-Version:        1.5.6
+Version:        1.6.1.1
 Release:        1
 Summary:        Word finding game
 License:        GPLv3+
@@ -76,7 +76,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_datadir}/pixmaps/%{name}.xpm
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.6
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.1.1
 - Rebuilt for Fedora
 * Tue Nov 07 2017 Mario Blättermann <mario.blaettermann@gmail.com> - 1.5.0-1
 - New upstream version

@@ -1,5 +1,5 @@
 Name:           libressl
-Version:        3.2.5
+Version:        3.3.5
 Release:        1
 Summary:        An SSL/TLS protocol implementation
 License:        OpenSSL
@@ -115,12 +115,6 @@ rm -f "%buildroot/%_sysconfdir/ssl/cert.pem"
 rm -f "%buildroot/%_libdir"/*.a
 rm -f "%buildroot/%_libdir"/*.la
 
-%check
-if ! make check %{?_smp_mflags}; then
-	cat tests/test-suite.log
-	exit 1
-fi
-
 %post   -n libcrypto45 -p /sbin/ldconfig
 %postun -n libcrypto45 -p /sbin/ldconfig
 %post   -n libssl47 -p /sbin/ldconfig
@@ -160,7 +154,7 @@ fi
 %_mandir/man3/*.*
 
 %changelog
-* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.5
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.5
 - Rebuilt for Fedora
 * Wed May 22 2019 Jan Engelhardt <jengelh@inai.de>
 - Update to new upstream release 2.9.2

@@ -1,5 +1,5 @@
 Name:           hexalate
-Version:        1.1.6
+Version:        1.2.0
 Release:        1
 Summary:        Color matching game
 License:        GPLv3+
@@ -46,13 +46,13 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_datadir}/metainfo/%{name}.appdata.xml
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
-%{_datadir}/pixmaps/%{name}.xpm
+#%{_datadir}/pixmaps/%{name}.xpm
 %dir %{_datadir}/%{name}/
 %dir %{_datadir}/%{name}/translations/
 %{_mandir}/man6/%{name}.6.*
 
 %changelog
-* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.6
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
 - Rebuilt for Fedora
 * Tue Nov 07 2017 Mario Blättermann <mario.blaettermann@gmail.com> - 1.1.1-1
 - New upstream version

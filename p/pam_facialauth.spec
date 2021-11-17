@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name:           pam_facialauth
 License:        MIT
 Group:          System/Libraries

@@ -2,7 +2,7 @@
 
 Summary: A modern replacement for the autoconf and make tools
 Name: makeme
-Version: 1.0.3
+Version: 1.0.4
 Release: 1
 License: Dual GPL/commercial
 Group: Development/Other
@@ -38,5 +38,5 @@ ln -s ../%{_lib}/%{name}/me %{buildroot}%{_bindir}/%{name}
 %{_includedir}/%{name}
 
 %changelog
-* Thu Jul 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.4
 - Rebuilt for Fedora

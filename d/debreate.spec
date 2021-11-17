@@ -1,7 +1,7 @@
 Name: debreate
 Summary: A tool to help in creating Debian packages
-Version: 0.7.7
-Release: 3.1
+Version: 0.7.13
+Release: 1
 Group: Converted/Development
 License: see /usr/share/doc/debreate/copyright
 URL: http://debreate.sourceforge.net/
@@ -27,16 +27,20 @@ ar -x %{SOURCE0}
 
 %install
 mkdir -p %{buildroot}
-tar xf data.tar.gz -C %{buildroot}
+tar xf data.tar.xz -C %{buildroot}
 
-sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/launch.py
+#sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/launch.py
 
 %files
+%{_bindir}/%{name}
 %{_datadir}/%{name}
-%{_datadir}/applications/Debreate.desktop
+%{_datadir}/applications/debreate.desktop
 %{_datadir}/doc/%{name}
-%{_datadir}/mime/text/%{name}.xml
-
+%{_datadir}/mime/packages/%{name}.xml
+%{_datadir}/icons/gnome/scalable/mimetypes/application-x-dbp.svg 
+%{_datadir}/man/man1/debreate.1.gz
+%{_datadir}/pixmaps/debreate.png
+   
 %changelog
-* Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.7
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.13
 - Rebuilt for Fedora

@@ -6,7 +6,7 @@ Version: 1.2.0cvs
 Release: alt3.qa2
 
 Summary: XBASE/Clipper compatible program compiler
-Summary(ru_RU.KOI8-R): Дополнительные программы для совместимого с XBASE/Clipper компилятора программ
+Summary(ru_RU.KOI8-R): п■п╬п©п╬п╩п╫п╦я┌п╣п╩я▄п╫я▀п╣ п©я─п╬пЁя─п╟п╪п╪я▀ п╢п╩я▐ я│п╬п╡п╪п╣я│я┌п╦п╪п╬пЁп╬ я│ XBASE/Clipper п╨п╬п╪п©п╦п╩я▐я┌п╬я─п╟ п©я─п╬пЁя─п╟п╪п╪
 
 License: GPL
 Group: Development/Other
@@ -29,7 +29,7 @@ Obsoletes: clip-ocmng
 This package includes some programs for clip compiler
 
 %description -l ru_RU.KOI8-R
-Данный пакет содержит дополнительные программы для компилятора CLIP.
+п■п╟п╫п╫я▀п╧ п©п╟п╨п╣я┌ я│п╬п╢п╣я─п╤п╦я┌ п╢п╬п©п╬п╩п╫п╦я┌п╣п╩я▄п╫я▀п╣ п©я─п╬пЁя─п╟п╪п╪я▀ п╢п╩я▐ п╨п╬п╪п©п╦п╩я▐я┌п╬я─п╟ CLIP.
 
 %prep
 %setup -q

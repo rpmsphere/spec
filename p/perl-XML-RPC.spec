@@ -29,7 +29,7 @@ make
 
 %files
 %doc README Changes
-%{_libdir}/perl5/perllocal.pod
+%exclude %{_libdir}/perl5/perllocal.pod
 %{_libdir}/perl5/vendor_perl/auto/XML/RPC/.packlist
 %{_mandir}/man3/XML::RPC.3pm.gz
 %{_datadir}/perl5/vendor_perl/XML/RPC.pm

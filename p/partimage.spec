@@ -22,10 +22,11 @@ Patch17:	03-openssl11.patch
 Patch18:	partimage-0.6.9-sysmacros.patch
 BuildRequires:	bzip2-devel
 BuildRequires:	gettext-devel
-#BuildRequires:	lzmadec-devel
+BuildRequires:	lzmadec-devel
 BuildRequires:	pkgconfig(libnewt)
 BuildRequires:	pkgconfig(openssl)
 BuildRequires:	pkgconfig(zlib)
+BuildRequires:  gettext-devel
 
 %description
 Partition Image is a Linux/UNIX partition imaging utility: it saves

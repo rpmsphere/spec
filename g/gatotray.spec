@@ -1,11 +1,11 @@
 Name: gatotray
 Summary: Graphical CPU stats monitor in the system tray
-Version: 3.3
-Release: 2.1
+Version: 4.0
+Release: beta.4
 Group: Accessories
 License: Free Software
 URL: https://bitbucket.org/gatopeich/gatotray
-Source0: %{name}-v%{version}.tar.bz2
+Source0: %{name}-%{version}-%{release}.tar.gz
 BuildRequires: gtk2-devel
 
 %description
@@ -14,7 +14,7 @@ temperature, frequency) in small space, and tight on resources. Since version
 3.0, It can also run as a screensaver.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n %{name}-%{version}-%{release}
 
 %build
 make %{?_smp_mflags}
@@ -31,5 +31,5 @@ install -Dm644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desk
 %{_datadir}/pixmaps/%{name}.xpm
 
 %changelog
-* Mon Jul 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0-beta.4
 - Rebuilt for Fedora

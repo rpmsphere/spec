@@ -2,7 +2,7 @@
 
 Summary:	Qt File Manager
 Name:		qtfm
-Version:	6.2.0
+Version:	6.2.1
 Release:	1
 URL:		http://qtfm.eu/
 License:	GPL
@@ -41,7 +41,7 @@ rm -rf %{buildroot}
 %{_mandir}/man1/*
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2.0
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2.1
 - Rebuilt for Fedora
 * Fri Jun 29 2012 TI_Eugene <ti.eugene@gmail.com> - 5.5
 - Next version

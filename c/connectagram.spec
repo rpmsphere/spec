@@ -2,7 +2,7 @@
 
 Name:           connectagram
 Summary:        Anagram game
-Version:        1.2.11
+Version:        1.3.1
 Release:        1
 License:        GPL-3.0+
 URL:            http://gottcode.org/%{name}/
@@ -58,7 +58,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_datadir}/pixmaps/%{name}.xpm
 
 %changelog
-* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.11
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.1
 - Rebuilt for Fedora
 * Sun May  5 2013 Graeme Gott <graeme@gottcode.org>
 - version 1.1.1-1

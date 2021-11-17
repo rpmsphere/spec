@@ -9,6 +9,7 @@ Source:		https://sourceforge.net/projects/wipefreespace/files/wipefreespace/%{ve
 Requires:	xfsprogs
 BuildRequires:	xfsprogs
 BuildRequires:	gcc, glibc, glibc-devel, glibc-headers, make
+BuildRequires:  gettext-devel
 Obsoletes:	e2wipefreespace <= 0.5
 Provides:	e2wipefreespace >= 0.6
 

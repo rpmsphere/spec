@@ -1,7 +1,7 @@
 Summary:	Vedic and western astrology
 Name:		maitreya
-Version:	8.0
-Release:	1.1
+Version:	8.0.1
+Release:	1
 License:	GPLv2+
 Group:		Sciences/Astronomy
 URL:		http://www.saravali.de/
@@ -30,7 +30,7 @@ Mature Open Source platform for Vedic and western astrology.
 %find_lang %{name}8 %{name}.lang
 
 %changelog
-* Tue Oct 03 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 8.0
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 8.0.1
 - Rebuilt for Fedora
 * Thu Mar 02 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 7.1.1-3
 - (f5d6531) MassBuild#1273: Increase release tag

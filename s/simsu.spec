@@ -1,5 +1,5 @@
 Name:           simsu
-Version:        1.3.9
+Version:        1.4.0
 Release:        1
 Summary:        Basic Sudoku game
 Summary(de):    Einfaches Sudoku-Spiel
@@ -50,8 +50,8 @@ po4a-translate -M utf-8 -f man \
                -m doc/%{name}.6 -p %SOURCE1 \
                -l man/de/%{name}.6
 
-mkdir -p %{buildroot}/%{_mandir}/de/man6
-install -p -m 0644 man/de/%{name}.6 %{buildroot}/%{_mandir}/de/man6
+#mkdir -p %{buildroot}/%{_mandir}/de/man6
+#install -p -m 0644 man/de/%{name}.6 %{buildroot}/%{_mandir}/de/man6
 
 %find_lang %{name} --with-qt --without-mo --with-man
 
@@ -80,11 +80,11 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %dir %{_datadir}/%{name}/
 %dir %{_datadir}/%{name}/translations
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
-%{_datadir}/pixmaps/%{name}.xpm
+#%{_datadir}/pixmaps/%{name}.xpm
 %{_mandir}/man6/%{name}.6.*
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.9
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0
 - Rebuilt for Fedora
 * Wed Nov 08 2017 Mario Blättermann <mario.blaettermann@gmail.com> - 1.3.4-1
 - New upstream version

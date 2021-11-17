@@ -1,6 +1,6 @@
 Summary:	Opensource Clone System (ocs), clonezilla
 Name:		clonezilla
-Version:	3.35.2
+Version:	4.5.11
 Release:	1
 License:	GPLv2+
 Group:		Archiving/Backup
@@ -26,7 +26,7 @@ For more info, check http://clonezilla.org, http://clonezilla.nchc.org.tw.
 
 %prep
 %setup -q
-%patch0 -p1
+#patch0 -p1
 
 %build
 %make_build
@@ -43,7 +43,7 @@ For more info, check http://clonezilla.org, http://clonezilla.nchc.org.tw.
 %{_sysconfdir}/drbl/*
 
 %changelog
-* Mon Mar 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.35.2
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5.11
 - Rebuilt for Fedora
 * Sun Dec 06 2020 luigiwalser <luigiwalser> 3.35.2-1.mga8
 + Revision: 1654011

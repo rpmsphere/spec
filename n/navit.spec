@@ -1,6 +1,6 @@
 Name:		navit
 Summary:	Car navigation system with routing engine
-Version:	0.5.4
+Version:	0.5.6
 Release:	1
 Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Source1:	http://www.navit-project.org/maps/osm_bbox_11.3,47.9,11.7,48.2.osm.bz2
@@ -29,6 +29,7 @@ BuildRequires:	speech-dispatcher-devel
 BuildRequires:	gpsd-devel
 BuildRequires:	qt5-qtbase-devel
 BuildRequires:  qt5-qtsvg-devel
+BuildRequires:  qt5-qtsensors-devel
 BuildRequires:	shapelib-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -170,7 +171,7 @@ rm -rf %{buildroot}
 %{_libdir}/%{name}/graphics/libgraphics_sdl*
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.4
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.6
 - Rebuilt for Fedora
 * Fri Sep 25 2009 Adam Williamson <awilliam@redhat.com> - 0.1.2-0.2.20090918svn2578
 - spec clean:

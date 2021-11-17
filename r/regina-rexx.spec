@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name: regina-rexx
-Version: 3.9.3
+Version: 3.9.4
 Release: 1
 Group: Development/Languages
 Source: http://dl.sourceforge.net/project/%{name}/%{name}/%{version}/%{name}-%{version}.tar.gz
@@ -64,7 +64,7 @@ ldconfig
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.3
+* Sun Oct 31 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.4
 - Rebuilt for Fedora
 * Mon Jan 02 2012 Mark Hessling
 - Vendor package

@@ -1,11 +1,11 @@
 Summary:	Ghostscript RIP for PCL-5, PCL-XL and XPS
 Name:		ghostpdl
-Version:	9.53.1
+Version:	9.55.0
 Release:	1
 URL:		https://github.com/ArtifexSoftware/ghostpdl
 License:	GPL
 Group:		Applications/Forensics Tools
-Source:		https://github.com/ArtifexSoftware/ghostpdl/archive/%{name}-%{version}.tar.gz
+Source:		https://github.com/ArtifexSoftware/ghostpdl/archive/refs/tags/%{name}-%{version}.tar.gz
 BuildRequires:	libXt-devel libXext-devel
 BuildRequires:	libtool
 BuildRequires:	autoconf
@@ -15,10 +15,10 @@ GhostPDL is Artifex Software's implementation of the PCL-5™ and PCL-XL™ fami
 of page description languages.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{name}-%{version}
 
 %build
-autoconf
+./autogen.sh
 #rm -f ijs/ltmain.sh 
 #ln -s /usr/share/libtool/build-aux/ltmain.sh ijs/ltmain.sh
 %configure
@@ -45,7 +45,7 @@ fi
 %{_docdir}/%{name}/%{name}.pdf
 
 %changelog
-* Fri Sep 18 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 9.53.1
+* Sun Sep 26 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 9.55.0
 - Rebuilt for Fedora
 * Fri Oct  4 2019 Lawrence R. Rogers <lrr@cert.org> 9.27-1
 * Release 9.27-1

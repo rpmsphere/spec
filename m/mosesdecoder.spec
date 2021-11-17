@@ -1,7 +1,7 @@
 Name: mosesdecoder
 Summary: Decoder for the machine translation system
-Version: 4.0
-Release: 6.1
+Version: 4.0git
+Release: 1
 Group: Applications/Engineering
 License: LGPL
 URL: http://www.statmt.org/moses/
@@ -27,9 +27,9 @@ mkdir -p %{buildroot}%{_bindir}
 cp -a bin/* %{buildroot}%{_bindir}
 
 %files
-%doc BUILD-INSTRUCTIONS.txt
+%doc README COPYING doc/*
 %{_bindir}/*
 
 %changelog
-* Thu Nov 09 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0
+* Sun Sep 19 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0git
 - Rebuilt for Fedora

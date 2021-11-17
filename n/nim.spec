@@ -10,7 +10,7 @@
 %global bashcomproot    %(dirname %{bashcompdir} 2>/dev/null)
 
 Name:           nim
-Version:        1.4.8
+Version:        1.6.0
 Release:        1
 Summary:        Statically typed, imperative programming language
 # compiler is MIT, nimble package manager is BSD
@@ -26,9 +26,8 @@ Source4:        nimsuggest.1
 
 Patch1:         nim-0001-allow-to-override-directories-in-install-script.patch
 Patch2:         nim-0002-use-_datadir-for-platform-independent-library-path.patch
-Patch3:         nim-0003-use-versioned-source-links-in-docs.patch
+#Patch3:         nim-0003-use-versioned-source-links-in-docs.patch
 #Patch4:         nim-0004-fix-compiler-binary-lookup-in-docgen.patch
-# https://github.com/nim-lang/Nim/pull/8845
 Patch6:         nim-0005-Fix-async-SSL-tests.patch
 
 
@@ -146,7 +145,7 @@ cp tools/dochack/dochack.js %{buildroot}%{_docdir}/%{name}/
 %doc %{_docdir}/nim
 
 %changelog
-* Sun Aug 29 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.8
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.0
 - Rebuilt for Fedora
 * Tue Jul 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.4-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild

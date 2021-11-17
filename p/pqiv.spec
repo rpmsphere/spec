@@ -1,8 +1,8 @@
 %global _altdir /etc/alternatives
 
 Name: pqiv
-Version: 2.6
-Release: 7.1
+Version: 2.12
+Release: 1
 Summary: Minimalist Image Viewer
 License: GPL3+
 Group: Graphics
@@ -69,9 +69,6 @@ Backend for %name
 
 %prep
 %setup -q
-%ifarch x86_64 aarch64
-sed -i 's|lib/%name|lib64/%name|' GNUmakefile
-%endif
 
 %build
 for ver in 3 2;do
@@ -90,6 +87,7 @@ mv %{name}-gtk2 %name
 
 %install
 %make_install
+mv %buildroot/usr/lib %buildroot%_libdir
 mv %buildroot%_bindir/%name %buildroot%_bindir/%{name}-gtk2
 install -p -m 755 %{name}-gtk3 %buildroot%_bindir/%{name}-gtk3
 
@@ -107,6 +105,7 @@ _EOF_
 %_mandir/man1/%name.1.*
 %dir %_libdir/%name
 %doc README.markdown
+%_datadir/applications/pqiv.desktop
 
 %files gtk2
 %_altdir/%name-gtk2
@@ -132,7 +131,7 @@ _EOF_
 %_libdir/%name/%name-backend-wand.so
 
 %changelog
-* Wed Nov 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.12
 - Rebuilt for Fedora
 * Sun Dec  6 2015 Terechkov Evgenii <evg@altlinux.org> 2.4.1-alt3
 - Subpackages for gtk2/gtk3

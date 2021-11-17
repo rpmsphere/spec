@@ -1,6 +1,6 @@
 Name: language-pack-sinitic
 Summary: Translations for some sinitic languages
-Version: 2021.7
+Version: 2021.11
 Release: 1
 License: Open Source
 Group: Translations
@@ -82,6 +82,23 @@ make
 %{_datadir}/wazapp/i18n/cmn*.ts
 %{_datadir}/wikidpad/WikidPad_cmn*.po
 %{_datadir}/winff/languages/winff.cmn*.po
+%{_datadir}/lenmus/*/locale/cmn*/*_cmn*.mo
+%{_datadir}/*/*/*/*_cmn*.properties
+%{_libdir}/*/*/*/*_cmn*.properties
+%{_datadir}/*/*/*_cmn*.properties
+%{_datadir}/*/chrome/locale/branding/cmn*/brand.properties
+%{_datadir}/azardi/chrome/locale/cmn*/azardi2.properties
+%{_datadir}/pebl/battery/SNARC/translations/cmn*.txt
+/lib/python3.*/site-packages/*/*/cmn*/LC_MESSAGES/*.mo
+/opt/Nelson/locale/cmn*/LC_MESSAGES/nelson.mo
+%{_libdir}/python2.*/site-packages/Editra/locale/cmn*/LC_MESSAGES/Editra.mo
+%{_libdir}/*/*/*_cmn*.qm
+%{_datadir}/PrusaSlicer/localization/cmn*/PrusaSlicer.mo
+#%{_datadir}/*/*/locale/cmn*/LC_MESSAGES/*.mo
+%{_datadir}/lucidor/chrome/locale/cmn*/*.properties
+%{_datadir}/skychart/data/language/skychart.cmn*.po
+%{_datadir}/texlive/tlpkg/translations/cmn*.po
+%{_datadir}/*/*/*/cmn*/LC_MESSAGES/*.mo
 
 %files -n language-pack-yue
 %{_datadir}/locale/yue*/LC_MESSAGES/*.mo
@@ -127,10 +144,27 @@ make
 %{_datadir}/wazapp/i18n/yue*.ts
 %{_datadir}/wikidpad/WikidPad_yue*.po
 %{_datadir}/winff/languages/winff.yue*.po
+%{_datadir}/lenmus/*/locale/yue*/*_yue*.mo
+%{_datadir}/*/*/*/*_yue*.properties
+%{_libdir}/*/*/*/*_yue*.properties
+%{_datadir}/*/*/*_yue*.properties
+%{_datadir}/*/chrome/locale/branding/yue*/brand.properties
+%{_datadir}/azardi/chrome/locale/yue*/azardi2.properties
+%{_datadir}/pebl/battery/SNARC/translations/yue*.txt
+/lib/python3.*/site-packages/*/*/yue*/LC_MESSAGES/*.mo
+/opt/Nelson/locale/yue*/LC_MESSAGES/nelson.mo
+%{_libdir}/python2.*/site-packages/Editra/locale/yue*/LC_MESSAGES/Editra.mo
+%{_libdir}/*/*/*_yue*.qm
+%{_datadir}/PrusaSlicer/localization/yue*/PrusaSlicer.mo
+#%{_datadir}/*/*/locale/yue*/LC_MESSAGES/*.mo
+%{_datadir}/lucidor/chrome/locale/yue*/*.properties
+%{_datadir}/skychart/data/language/skychart.yue*.po
+%{_datadir}/texlive/tlpkg/translations/yue*.po
+%{_datadir}/*/*/*/yue*/LC_MESSAGES/*.mo
 
 %clean
 rm -rf %{buildroot}
 
 %changelog
-* Sun Jul 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.7
+* Sun Nov 14 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.11
 - Initial package

@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           dmagnetic
-Version:        0.30
+Version:        0.32
 Release:        1
 Summary:        A Magnetic Scrolls Interpreter
 License:        BSD-2-Clause
@@ -20,24 +20,24 @@ make all
 
 %install
 mkdir -p %{buildroot}%{_bindir}
-mkdir -p %{buildroot}%{_mandir}/man1
+mkdir -p %{buildroot}%{_mandir}/man6
 mkdir -p %{buildroot}%{_mandir}/man5
 mkdir -p %{buildroot}%{_datadir}/dMagnetic
 install -m 755 dMagnetic %{buildroot}%{_bindir}/dMagnetic
-install -m 644 dMagnetic.1 %{buildroot}%{_mandir}/man1/dMagnetic.1
+install -m 644 dMagnetic.6 %{buildroot}%{_mandir}/man6/dMagnetic.6
 install -m 644 dMagneticini.5 %{buildroot}%{_mandir}/man5/dMagneticini.5
 install -m 644 dMagnetic.ini %{buildroot}%{_datadir}/dMagnetic/dMagnetic.ini
 
 %files
 %{_bindir}/dMagnetic
-%{_mandir}/man1/dMagnetic.1*
+%{_mandir}/man6/dMagnetic.6*
 %{_mandir}/man5/dMagneticini.5*
 %{_datadir}/dMagnetic
 %doc README.txt
 %license LICENSE.txt
 
 %changelog
-* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.30
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.32
 - Rebuilt for Fedora
 * Mon Jul 27 2020 Michael Vetter <mvetter@suse.com>
 - Update to 0.25:

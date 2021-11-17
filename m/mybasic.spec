@@ -4,7 +4,7 @@
 Summary: Lightweight BASIC interpreter written with C from scratch
 Name: mybasic
 Version: 1.2rc
-Release: 6.2
+Release: 7
 License: MIT
 Group: Development/Languages
 Source: %{_name}-master.zip
@@ -32,5 +32,5 @@ install -Dm755 output/my_basic_bin %{buildroot}%{_bindir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2rc
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2rc
 - Rebuilt for Fedora

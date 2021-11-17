@@ -2,7 +2,7 @@
 
 Name:			piedock
 Version:		1.6.9
-Release:		2.1
+Release:		3
 Summary:		A task bar and application launcher in shape of a pie menu
 URL:			https://github.com/markusfisch/PieDock
 Group:			User Interface/Desktops
@@ -25,32 +25,20 @@ use to control or launch the corresponding application.
 %build
 %configure
 %make_build
-sh/instant
 
 %install
 %__rm -rf %buildroot
-mkdir -p $RPM_BUILD_ROOT%_datadir/%name
-cp %{name}-instant-*.bin $RPM_BUILD_ROOT%_datadir/%name
-
-%post
-/sbin/ldconfig
-cd %_datadir/%name/
-./%{name}-instant-*.bin
-mkdir -p %_datadir/icons/gnome/48x48/emblems
-cp %_datadir/icons/oxygen/48x48/emblems/emblem-new.png %_datadir/icons/gnome/48x48/emblems/ 
-
-%postun
-/sbin/ldconfig
-rm -rf %_datadir/%name/%{name}-instant
+%make_install
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
-%_datadir/%name
+%doc AUTHORS ChangeLog COPYING NEWS README
+%{_bindir}/*
 
 %changelog
-* Thu Feb 01 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.9
+* Sun Oct 03 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.9
 - Rebuilt for Fedora
 * Sat Nov 28 2015 gseaman <galen.seaman at comcast.net> 1.6.6-1gseaman2015
 - 1.6.6

@@ -20,6 +20,9 @@ they are running with root permission.
 #sed -i -e 's|"UID_F|" UID_F|g' -e 's|UID_F"|UID_F "|g' -e 's|"GID_F|" GID_F|g' -e 's|GID_F"|GID_F "|g' -e 's|sysconf(_SC_PAGESIZE)|4096|' file.cpp
 sed -i '/linux\/ptrace\.h/d' arch/linux/os.c
 sed -i '4i #include <sys/types.h>' arch/linux/i386/platform_specific.h
+%ifarch aarch64
+cp -f /usr/lib/rpm/redhat/config.* .
+%endif
 
 %build
 ./configure --prefix=/usr

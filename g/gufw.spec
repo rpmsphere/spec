@@ -1,11 +1,11 @@
 Name:           gufw 
-Version:        19.10.0
+Version:        21.04.0
 Release:        1
 Summary:        Uncomplicated Firewall
 License:        GPL-3.0
 Group:          Productivity/Networking/Security
 URL:            http://gufw.org/
-Source0:        https://launchpadlibrarian.net/350352643/gui-ufw-%{version}.tar.gz
+Source0:        https://launchpadlibrarian.net/350352643/gufw-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  autoconf
 BuildRequires:  intltool
@@ -21,7 +21,7 @@ tasks such as allowing or blocking pre-configured, common p2p, or individual
 ports port(s), and many others!
 
 %prep
-%setup -q -n gui-ufw-%{version}
+%setup -q
 
 %build
 
@@ -42,7 +42,7 @@ python3 setup.py install --prefix=%{_prefix} --root %{buildroot}
 /usr/share/locale/*/LC_MESSAGES/gufw.mo
 
 %changelog
-* Wed Jul 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 19.10.0
+* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 21.04.0
 - Rebuilt for Fedora
 * Fri Jan 16 2015 p.drouand@gmail.com
 - Update to version 15.04.0

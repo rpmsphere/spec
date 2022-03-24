@@ -1,8 +1,9 @@
 %undefine _debugsource_packages
+%global __os_install_post %{nil}
 
 Name: ngslang
 Summary: Next Generation Shell
-Version: 0.2.12
+Version: 0.2.13
 Release: 1
 Group: Development/Language
 License: GPL3
@@ -38,5 +39,5 @@ mv %{buildroot}/usr/man %{buildroot}%{_mandir}
 %{_mandir}/man1/*
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.12
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.13
 - Rebuild for Fedora

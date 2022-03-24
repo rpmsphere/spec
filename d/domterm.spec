@@ -1,10 +1,10 @@
 Name:           domterm
-Version:        1.0
-Release:        3.1
+Version:        2.9.4
+Release:        1
 Summary:        A terminal emulator based on web technologies
 License:        BSD1
 URL:            https://domterm.org/
-Source0: https://github.com/PerBothner/DomTerm/releases/download/domterm-%{version}.tar.gz
+Source0: https://github.com/PerBothner/DomTerm/releases/download/DomTerm-%{version}.tar.gz
 BuildRequires: autoconf
 BuildRequires: automake
 BuildRequires: desktop-file-utils
@@ -38,51 +38,29 @@ License:        GPLv2+
 A terminal emulator using Qt and web technologies.
 
 %prep
-%autosetup -n domterm-%{version}
-sed -i '1i #include <QWebEngineCertificateError>' qtdomterm/webview.cpp
+%autosetup -n DomTerm-%{version}
+#sed -i '1i #include <QWebEngineCertificateError>' qtdomterm/webview.cpp
+sed -i 's|printf(seq)|printf("%s",seq)|' lws-term/commands.cc
 
 %build
-autoreconf
-%configure --with-qtwebengine --with-libwebsockets
+#export QMAKE=/usr/bin/qmake-qt5
+#CFLAGS=-Wno-format-security
+autoreconf -ivf
+%configure --with-qt=no
 %make_build
 
 %install
 %make_install
 
-%check
-desktop-file-validate %{buildroot}%{_datadir}/applications/domterm.desktop %{buildroot}%{_datadir}/applications/qtdomterm.desktop
-
 %files
-%dir %{_datadir}/domterm
-%dir %{_datadir}/domterm/electron
-%dir %{_datadir}/domterm/help
 %{_bindir}/domterm
-%{_datadir}/domterm/domterm.jar
-%{_datadir}/domterm/electron/main.js
-%{_datadir}/domterm/electron/package.json
-%{_datadir}/domterm/help/domterm-attach.html
-%{_datadir}/domterm/help/domterm-attach.txt
-%{_datadir}/domterm/help/domterm-browse.html
-%{_datadir}/domterm/help/domterm-browse.txt
-%{_datadir}/domterm/help/domterm-hcat.html
-%{_datadir}/domterm/help/domterm-hcat.txt
-%{_datadir}/domterm/help/domterm.html
-%{_datadir}/domterm/help/domterm-imgcat.html
-%{_datadir}/domterm/help/domterm-imgcat.txt
-%{_datadir}/domterm/help/domterm-is-domterm.html
-%{_datadir}/domterm/help/domterm-is-domterm.txt
-%{_datadir}/domterm/help/domterm-list.html
-%{_datadir}/domterm/help/domterm-list.txt
-%{_datadir}/domterm/help/domterm-new.html
-%{_datadir}/domterm/help/domterm-new.txt
-%{_datadir}/domterm/help/domterm.txt
-%{_datadir}/domterm/help/domterm-window-specifier.html
-%{_datadir}/domterm/help/domterm-window-specifier.txt
+%{_datadir}/domterm
 %{_datadir}/applications/domterm.desktop
 %{_datadir}/appdata/domterm.appdata.xml
 %{_mandir}/man1/domterm.1*
 %license COPYING
 
+%if 0
 %files -n qtdomterm
 %{_bindir}/qtdomterm
 %{_mandir}/man1/qtdomterm.1*
@@ -91,9 +69,10 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/domterm.desktop %{bui
 %{_datadir}/domterm/help/qtdomterm.html
 %{_datadir}/domterm/help/qtdomterm.txt
 %license COPYING
+%endif
 
 %changelog
-* Wed Jul 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.4
 - Rebuilt for Fedora
 * Mon Mar 26 2018 Per Bothner <per@bothner.com> - 1.0-1
 - Update for DomTerm 1.0

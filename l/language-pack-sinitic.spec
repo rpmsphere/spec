@@ -1,6 +1,6 @@
 Name: language-pack-sinitic
 Summary: Translations for some sinitic languages
-Version: 2021.11
+Version: 2022.1
 Release: 1
 License: Open Source
 Group: Translations
@@ -10,6 +10,7 @@ BuildRequires: msghack
 BuildRequires: translate-toolkit
 BuildRequires: qt5-linguist
 BuildRequires: msgchi >= 1.4
+BuildRequires: uni2ascii
 BuildArch: noarch
 
 %description
@@ -94,7 +95,6 @@ make
 %{_libdir}/python2.*/site-packages/Editra/locale/cmn*/LC_MESSAGES/Editra.mo
 %{_libdir}/*/*/*_cmn*.qm
 %{_datadir}/PrusaSlicer/localization/cmn*/PrusaSlicer.mo
-#%{_datadir}/*/*/locale/cmn*/LC_MESSAGES/*.mo
 %{_datadir}/lucidor/chrome/locale/cmn*/*.properties
 %{_datadir}/skychart/data/language/skychart.cmn*.po
 %{_datadir}/texlive/tlpkg/translations/cmn*.po
@@ -156,7 +156,6 @@ make
 %{_libdir}/python2.*/site-packages/Editra/locale/yue*/LC_MESSAGES/Editra.mo
 %{_libdir}/*/*/*_yue*.qm
 %{_datadir}/PrusaSlicer/localization/yue*/PrusaSlicer.mo
-#%{_datadir}/*/*/locale/yue*/LC_MESSAGES/*.mo
 %{_datadir}/lucidor/chrome/locale/yue*/*.properties
 %{_datadir}/skychart/data/language/skychart.yue*.po
 %{_datadir}/texlive/tlpkg/translations/yue*.po
@@ -166,5 +165,5 @@ make
 rm -rf %{buildroot}
 
 %changelog
-* Sun Nov 14 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.11
-- Initial package
+* Sun Jan 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.1
+- Rebuilt for Fedora

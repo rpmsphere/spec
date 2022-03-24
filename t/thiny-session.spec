@@ -1,5 +1,5 @@
 Name:           thiny-session
-Version:        0.7.5
+Version:        0.7.6
 Release:        1
 Summary:        A Thin and Tiny Session for X
 Group:		User Interface/Desktops
@@ -68,7 +68,7 @@ sed -i 's|xorg|display-manager|' /usr/lib/systemd/system/sxhkd.service
 %{_datadir}/%{name}
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.5
+* Sun Dec 5 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.6
 - Update package
 * Sun Aug 10 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
 - Initial package

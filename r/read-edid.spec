@@ -1,7 +1,7 @@
 Summary:	Get monitor details
 Name:		read-edid
-Version:	3.0.1
-Release:	2.1
+Version:	3.0.2
+Release:	1
 URL:		http://www.polypux.org/projects/read-edid/
 Source0:	http://www.polypux.org/projects/read-edid/%{name}-%{version}.tar.gz
 License:	GPLv2
@@ -17,14 +17,15 @@ summary.
 
 %prep
 %setup -q
+cp LICENSE COPYING
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
 %cmake
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
 %{_docdir}/%{name}/*
@@ -32,7 +33,7 @@ make
 %{_bindir}/*-edid*
 
 %changelog
-* Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.2
 - Rebuilt for Fedora
 * Mon Apr 28 2014 Denis Silakov <denis.silakov@rosalab.ru> 3.0.1-1
 + Revision: b7fc005

@@ -1,8 +1,8 @@
 Name:		woof
-Version:	20120531
-Release:	7.1
+Version:	20220202
+Release:	1
 Summary:	Simple Web-based File Exchange
-Source0:	http://www.home.unix-ag.org/simon/woof
+Source0:	https://github.com/simon-budig/woof/archive/refs/heads/master.zip#/%{name}-master.zip
 URL:		http://www.home.unix-ag.org/simon/woof.html
 Group:		Networking/Remote access
 License:	GPLv3+
@@ -18,6 +18,7 @@ need to enter passwords on keyboards where you don't know about keyboard
 sniffers, no need to start a huge lot of infrastructure.
 
 %prep
+%setup -q -n %{name}-master
 
 %build
 
@@ -30,7 +31,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Tue Mar 01 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 20120531
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 20220202
 - Rebuilt for Fedora
 * Mon Feb 08 2016 umeabot <umeabot> 20120531-7.mga6
 + Revision: 946479

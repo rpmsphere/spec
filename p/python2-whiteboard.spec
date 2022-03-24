@@ -1,11 +1,12 @@
 Name:		python2-whiteboard
-Version:	0.9.8
+Version:	1.0.3
 Release:	1
 Summary:	Linux whiteboard in python
 License: 	open source
 URL: 		http://github.com/pnegre/python-whiteboard
 Group: 		User Interface/X Hardware Support
-Source0:	python-whiteboard-%{version}.tar.gz
+#Source0:	python-whiteboard-%{version}.tar.gz
+Source0:	python-whiteboard-master.zip
 BuildRequires:	qt4-devel
 Requires:	pybluez, PyQt4, numpy, cwiid-python2, python2-xlib
 BuildArch:	noarch
@@ -15,7 +16,7 @@ Python-whiteboard is a program that lets you build your own
 electronic whiteboard. You only need a wii remote and a IR pen.
 
 %prep
-%setup -q -n python-whiteboard-%{version}
+%setup -q -n python-whiteboard-master
 sed -i 's/lrelease/lrelease-qt4/' makefile
 
 %build
@@ -41,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/qt4/translations/*
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.8
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
 - Rebuilt for Fedora

@@ -3,13 +3,13 @@
 %global import_path github.com/cli/cli
 
 Name:     github-cli
-Version:  1.8.0
+Version:  2.6.0
 Release:  1
 Summary:  GitHub's official command line tool
 License:  MIT
 Group:    Other
 URL:      https://github.com/cli/cli
-Source:   %name-%version.tar.gz
+Source:   cli-%version.tar.gz
 BuildRequires: golang
 
 %description
@@ -44,7 +44,7 @@ cp -r share/man -T %buildroot/%_mandir
 %doc *.md
 
 %changelog
-* Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.0
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.0
 - Rebuilt for Fedora
 * Wed Oct 28 2020 Mikhail Gordeev <obirvalger@altlinux.org> 1.2.0-alt1
 - update to 1.2.0

@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
-Name:				 stegfs
-Version:			 201001
-Release:			 6.1
-Summary:			 FUSE based Steganographic Filesystem
-Source:			 http://prdownloads.sourceforge.net/stegfs/stegfs-%{version}-src.tar.bz2
+Name:		stegfs
+Version:	2022.02.25
+Release:	1
+Summary:	FUSE based Steganographic Filesystem
+Source:		stegfs.git.tar.bz2
 Patch1:         stegfs-fix_makefile.patch
-URL:				 https://albinoloverats.net/stegfs
-Group:			 System/Filesystems
-License:			 GNU General Public License version 3 (GPL v3)
-BuildRequires:	 fuse-devel
-BuildRequires:	 mhash-devel
-BuildRequires:	 libmcrypt-devel
-BuildRequires:	 ncurses-devel
-BuildRequires:	 gcc make glibc-devel pkgconfig
+URL:		https://albinoloverats.net/stegfs
+Group:		System/Filesystems
+License:	GNU General Public License version 3 (GPL v3)
+BuildRequires:	fuse-devel
+BuildRequires:	mhash-devel
+BuildRequires:	libmcrypt-devel
+BuildRequires:	ncurses-devel
+BuildRequires:	gcc make glibc-devel pkgconfig
 
 %description
 stegfs is a Fuse based file system which provides absolute security.
@@ -26,9 +26,9 @@ secure file system technology.
 
 %prep
 %setup -q -n stegfs
-%__rm Makefile
-%__cp Makefile.gnu Makefile
-%patch1
+#__rm Makefile
+#__cp Makefile.gnu Makefile
+#patch1
 
 %build
 export SUSE_ASNEEDED=0
@@ -40,19 +40,19 @@ export SUSE_ASNEEDED=0
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
 %__make install PREFIX="$RPM_BUILD_ROOT"
-%find_lang stegfs
+#find_lang stegfs
 
 %clean
 %__rm -rf "$RPM_BUILD_ROOT"
 
-%files -f stegfs.lang
-%doc doc/LICENCE doc/README
+%files
+%doc docs/LICENCE docs/README docs/COPYRIGHT docs/FORMAT docs/CHANGELOG
 %{_bindir}/stegfs
 %{_bindir}/mkstegfs
-%doc %{_mandir}/man1/stegfs.1.*
+%doc %{_mandir}/man1/*.1.*
 
 %changelog
-* Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 201001
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.02.25
 - Rebuilt for Fedora
 * Mon Jun 21 2010 pascal.bleser@opensuse.org
 - initial package (201001)

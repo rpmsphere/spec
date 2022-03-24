@@ -1,10 +1,10 @@
-%global __arch_install_post %{nil}
+%global __os_install_post %{nil}
 %global debug_package %{nil}
 
 Summary: 	PC Reliability and Load Testing
 Name: 		burnintest
 Version: 	4.1
-Release: 	1.bin
+Release: 	1002.bin
 License: 	Commercial, free 30 day evaluation
 Group:		Hardware/Tools
 Source0:	https://www.passmark.com/downloads/bitlinux.tar.gz
@@ -52,5 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1
+* Sun Feb 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1
 - Initial binary package

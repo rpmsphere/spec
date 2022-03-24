@@ -1,5 +1,5 @@
 Name:           pentobi
-Version:        19.0
+Version:        20.0
 Release:        1
 Summary:        Program to play the board game Blokus
 License:        GPLv3
@@ -34,9 +34,11 @@ export CXXFLAGS="%{optflags} -O3"
 %cmake -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
        -DPENTOBI_BUILD_KDE_THUMBNAILER=ON \
        -DPENTOBI_BUILD_TESTS=ON .
+#make %{?_smp_mflags} VERBOSE=1 -C %{_host}
 %cmake_build
 
 %install
+#make_install -C %{_host}
 %cmake_install
 
 %post
@@ -62,8 +64,8 @@ fi
 %{_datadir}/icons/hicolor/*/*/*
 %{_datadir}/mime/packages/*.xml
 %{_datadir}/thumbnailers/*
-#{_datadir}/%{name}
-%{_datadir}/help/*/%{name}/
+%{_docdir}/%{name}
+#{_datadir}/help/*/%{name}
 %{_mandir}/man6/*
 %{_datadir}/metainfo/io.sourceforge.pentobi.appdata.xml
 %{_mandir}/*/man6/*
@@ -74,7 +76,7 @@ fi
 #{_datadir}/metainfo/io.sourceforge.pentobi.kde-thumbnailer.metainfo.xml
 
 %changelog
-* Sun Apr 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 19.0
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 20.0
 - Rebuilt for Fedora
 * Mon Jan 04 2016 Juhani Numminen <juhaninumminen0@gmail.com> - 11.0-1
 - Created by borrowing from existing pentobi.spec files

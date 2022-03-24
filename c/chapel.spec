@@ -1,5 +1,8 @@
+%define __os_install_post %{nil}
+%undefine _missing_build_ids_terminate_build
+
 Name:           chapel
-Version:        1.24.1
+Version:        1.25.1
 Release:        1
 License:        BSD
 Summary:        An emerging parallel programming language
@@ -44,6 +47,7 @@ sed -i -e 's|/usr/bin/env python$|/usr/bin/python3|' -e 's|/usr/bin/python$|/usr
 sed -i 's|@BOURNE_SHELL@|/usr/bin/sh|' third-party/gasnet/gasnet-src/other/contrib/gasnet_trace.in
 
 %build
+export CHPL_LLVM=bundled
 %make_build
 
 %install
@@ -62,15 +66,14 @@ export CHPL_HOME CHPL_HOST_PLATFORM
 EOF
 chmod +x %{buildroot}%{_bindir}/chpl
 
-
 %files
 %doc README* LICENSE* *.md
 %{_libexecdir}/%{name}
-%{_mandir}/man1/chpl.1.*
+%{_mandir}/man1/*
 %{_bindir}/chpl
 
 %changelog
-* Sun Jul 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.24.1
+* Sun Feb 6 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.25.1
 - Rebuilt for Fedora
 * Wed Sep 25 2013 jlinford@paratools.com
 - Add module file.

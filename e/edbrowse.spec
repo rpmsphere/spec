@@ -2,8 +2,8 @@
 
 Name: edbrowse
 Summary: ed-alike webbrowser written in C
-Version: 3.7.4
-Release: 7.1
+Version: 3.8.1
+Release: 1
 Group: Network
 License: Free Software
 URL: http://edbrowse.org/
@@ -14,6 +14,7 @@ BuildRequires: readline-devel
 BuildRequires: pcre-devel
 BuildRequires: libtidy-devel
 BuildRequires: duktape-devel
+BuildRequires: quickjs-devel
 
 %description
 edbrowse is a reimplementation of /bin/ed, with some basic
@@ -25,10 +26,10 @@ connections and JavaScript.
 
 %prep
 %setup -q
-sed -i '1557d' src/http.c
+#sed -i '1557d' src/http.c
+sed -i 's|-L/usr/local/lib/quickjs -lquickjs|%{_libdir}/quickjs/libquickjs.a|' src/makefile
 
 %build
-%cmake
 make %{?_smp_mflags}
 
 %install
@@ -39,5 +40,5 @@ install -Dm755 src/%{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Mon Oct 15 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.4
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.1
 - Rebuilt for Fedora

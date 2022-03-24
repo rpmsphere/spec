@@ -2,7 +2,7 @@
 
 Summary:    BGI-compatible 2D graphics C library
 Name:       SDL_bgi
-Version:    2.5.0
+Version:    2.5.1
 Release:    1
 License:    ZLib
 Group:      Libraries
@@ -56,7 +56,7 @@ fi
 %attr(644,root,root) %{_includedir}/SDL2/*
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.0
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.1
 - Rebuilt for Fedora
 * Thu Nov 6 2014 Guido Gonzato <guido.gonzato at gmail.com>
 - This is a generic rpm, buildable on Ubuntu

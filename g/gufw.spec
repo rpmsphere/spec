@@ -1,6 +1,6 @@
 Name:           gufw 
 Version:        21.04.0
-Release:        1
+Release:        2
 Summary:        Uncomplicated Firewall
 License:        GPL-3.0
 Group:          Productivity/Networking/Security
@@ -22,6 +22,7 @@ ports port(s), and many others!
 
 %prep
 %setup -q
+sed -i 's|share/gufw|lib/python%python3_version/site-packages|' bin/gufw-pkexec
 
 %build
 
@@ -42,7 +43,7 @@ python3 setup.py install --prefix=%{_prefix} --root %{buildroot}
 /usr/share/locale/*/LC_MESSAGES/gufw.mo
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 21.04.0
+* Wed Dec 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 21.04.0
 - Rebuilt for Fedora
 * Fri Jan 16 2015 p.drouand@gmail.com
 - Update to version 15.04.0

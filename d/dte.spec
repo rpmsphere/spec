@@ -2,7 +2,7 @@
 
 Summary: A small and easy to use console text editor
 Name: dte
-Version: 1.9.1
+Version: 1.10
 Release: 1
 License: GPLv2
 Group: Applications/Editors
@@ -41,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/man/man?/*
 
 %changelog
-* Tue Oct 01 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.1
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10
 - Rebuilt for Fedora

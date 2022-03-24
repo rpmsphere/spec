@@ -1,6 +1,6 @@
 Summary: Static Multicast Routing Daemon
 Name: smcroute
-Version: 2.5.3
+Version: 2.5.5
 Release: 1
 License: GPL
 Group: System/Servers
@@ -31,7 +31,7 @@ should be maintained and/or no proper IGMP signaling exists.
 %_mandir/man?/*
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.3
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.5
 - Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 0.94.1-alt2.qa1
 - NMU: rebuilt for debuginfo.

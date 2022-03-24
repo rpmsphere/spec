@@ -5,7 +5,7 @@ Summary:      LZMA Compression Library
 URL:          http://www.nongnu.org/lzip/lzlib.html
 Group:        Compression
 License:      GPL
-Version:      1.11
+Version:      1.13
 Release:      1
 Source0:      http://download.savannah.gnu.org/releases/lzip/lzlib/lzlib-%{version}.tar.gz
 
@@ -53,5 +53,5 @@ rm -f $RPM_BUILD_ROOT%{_infodir}/dir
 %{_infodir}/%{name}.*
 
 %changelog
-* Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.13
 - Rebuilt for Fedora

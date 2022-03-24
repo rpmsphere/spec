@@ -1,20 +1,20 @@
 Summary:	Cross-platform Python spreadsheet application
 Name:		pyspread
-Version:	1.1.3
+Version:	2.0.2
 Release:	1
 License:	GPLv3
 Group:		Office/Spreadsheet
 URL:		http://manns.github.io/pyspread/
 Source0:	https://pypi.python.org/packages/source/p/pyspread/%{name}-%{version}.tar.gz
 Source1:        pyspread.xpm
-BuildRequires:	python2-devel
+BuildRequires:	python3-devel
 BuildRequires:	numpy atlas
-#BuildRequires:	python2-matplotlib
-#BuildRequires:	python2-wxpython
-#BuildRequires:	python2-gnupg
+#BuildRequires:	python3-matplotlib
+#BuildRequires:	python3-wxpython
+#BuildRequires:	python3-gnupg
 Requires:	numpy
-#Requires:	python2-matplotlib-wx
-#Requires:	python2-wxpython
+#Requires:	python3-matplotlib-wx
+#Requires:	python3-wxpython
 BuildArch:  noarch
 
 %description
@@ -27,44 +27,24 @@ other cells. These objects can represent anything including lists or matrices.
 %setup -q
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install --skip-build --root=%{buildroot} --install-lib=/usr/share/ --install-scripts=/usr/share/
+#python3 setup.py install --skip-build --root=%{buildroot} --install-lib=/usr/share/ --install-scripts=/usr/share/
+python3 setup.py install --skip-build --root=%{buildroot}
 
 install -p -m 644 -D %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.xpm
-rm -f %{buildroot}/%{_datadir}/README %{buildroot}/%{_datadir}/changelog
-#rm -f %{buildroot}/%{_datadir}/%{name}/__init__.py*
-#rm -f %{buildroot}/%{_datadir}/*.egg-info
-mv %{buildroot}/%{_datadir}/%{name}/locale %{buildroot}/%{_datadir}/
-mkdir %{buildroot}/%{_bindir}
-mv %{buildroot}/%{_datadir}/%{name}/%{name} %{buildroot}/%{_bindir}/%{name}
-mkdir -p %{buildroot}%{_datadir}/applications
-cat > %{buildroot}%{_datadir}/applications/%{name}.desktop << EOF
-[Desktop Entry]
-Name=Pyspread
-Comment=Python spreadsheet application
-Exec=%{name}
-Icon=%{name}
-Type=Application
-Categories=Office;Spreadsheet;Application;
-EOF
+install -Dm644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-%find_lang %{name}
-
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/src/%{name}.py %{buildroot}%{_datadir}/%{name}/src/gui/_cairo_export_dialog.py
-
-%files -f %{name}.lang
-%doc README pyspread/COPYING changelog pyspread/doc/help pyspread/examples
-%{_datadir}/%{name}*
+%files
+%doc README.md LICENSE changelog
+%{python3_sitelib}/%{name}*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.xpm
 %{_bindir}/%{name}
-%exclude %{_datadir}/runtests.*
 
 %changelog
-* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.2
 - Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 0.3.3-3.mga5
 + Revision: 741786

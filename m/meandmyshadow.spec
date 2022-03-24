@@ -1,10 +1,10 @@
 Name: meandmyshadow
-Version: 0.4.1
-Release: 8.4
+Version: 0.5a
+Release: 1
 License: GPLv3
 Summary: Puzzle/platform game with two protagonists performing shared task
 URL: http://meandmyshadow.sourceforge.net/
-Source: %name-%version-src.tar.gz
+Source: %name-%version.tar.gz
 Group: Games/Puzzles
 Requires: %name-data = %version
 BuildRequires: cmake gcc-c++ SDL_gfx-devel SDL_image-devel SDL_mixer-devel SDL_ttf-devel libarchive-devel libcurl-devel openssl-devel libX11-devel
@@ -32,10 +32,10 @@ Data files for %name, %summary
 %build
 export LDFLAGS=-lX11
 %cmake
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 for i in icons/*/%name.png; do
   d=$(basename $(dirname $i))
@@ -53,7 +53,7 @@ done
 %_datadir/%name/*
 
 %changelog
-* Mon Jan 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5a
 - Rebuilt for Fedora
 * Thu Dec 11 2014 Fr. Br. George <george@altlinux.ru> 0.4.1-alt2
 - Rebuild with new SDL

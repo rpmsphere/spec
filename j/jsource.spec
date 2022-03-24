@@ -2,7 +2,7 @@
 
 Summary: J engine source mirror
 Name: jsource
-Version: 9.03
+Version: 9.04
 Release: 0.beta
 License: GPL3
 Group: Development/Languages
@@ -44,5 +44,5 @@ install -Dm644 jlibrary/bin/profile.ijs %{buildroot}%{_sysconfdir}/j/%{version}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Mar 21 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 9.03.beta
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 9.04.beta
 - Rebuilt for Fedora

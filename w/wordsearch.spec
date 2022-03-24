@@ -1,36 +1,35 @@
 Name:			wordsearch
 Summary:		Tool to create wordsearch puzzles
-Version:		1.4.1
-Release:		6.1
+Version:		2.1
+Release:		1
 Group:			Amusements/Games/Logic
-License:		GPL
-URL:			http://decafbad.net/projects/wordsearch
+License:		BSD-2
+URL:			https://github.com/jensenpat/wordsearch
 Source:			%{name}-%{version}.tar.gz
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:		noarch
-Requires:		perl
 
 %description
-Tool to create wordsearch puzzles.
+A classic word search game that you can play in your terminal.
 
 %prep
 %setup -q
 
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/%{_bindir}
-install -m 755 wordsearch.pl $RPM_BUILD_ROOT/%{_bindir}/
-install -m 755 numbergenerator.pl $RPM_BUILD_ROOT/%{_bindir}/
+install -Dm755 %{name} $RPM_BUILD_ROOT/%{_bindir}/%{name}
+install -Dm644 man/%{name}.6 $RPM_BUILD_ROOT/%{_mandir}/man6/%{name}.6
+install -d $RPM_BUILD_ROOT/%{_datadir}/%{name}
+install -m644 puzzles/* $RPM_BUILD_ROOT/%{_datadir}/%{name}
 
 %files
-%defattr(-,root,root)
-%{_bindir}/wordsearch.pl
-%{_bindir}/numbergenerator.pl
-%doc README COPYING CHANGELOG
+%{_bindir}/%{name}
+%{_datadir}/%{name}
+%{_mandir}/man6/%{name}.6*
+%doc README.md LICENSE
 
 %clean
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
 - Rebuilt for Fedora

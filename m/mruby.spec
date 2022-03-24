@@ -1,8 +1,8 @@
 Name:               mruby
-Version:            2.1.0
+Version:            3.0.0
 Release:            1
 Summary:            Lightweight Ruby
-Source:             %{name}-%{version}.zip
+Source:             %{name}-%{version}.tar.gz
 URL:                https://github.com/mruby/mruby/
 Group:              Development/Languages/Ruby
 License:            MIT
@@ -51,7 +51,7 @@ cp -a include/* "%{buildroot}%{_includedir}/"
 %__rm -rf %{buildroot}
 
 %files
-%doc AUTHORS LEGAL NEWS *.md TODO LICENSE doc/*
+%doc AUTHORS LEGAL NEWS *.md LICENSE doc/*
 %{_bindir}/mirb
 %{_bindir}/mrbc
 %{_bindir}/mruby
@@ -64,7 +64,7 @@ cp -a include/* "%{buildroot}%{_includedir}/"
 %{_libdir}/libmruby_core.a
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.0
 - Rebuilt for Fedora
 * Tue Jul  3 2012 pascal.bleser@opensuse.org
 - initial version (0.0+20120701)

@@ -6,7 +6,7 @@ Version:       1.5.3
 Release:       1.bin
 Summary:       PCSC driver for EZUSB
 Group:         System/Libraries
-URL:           http://www.casauto.com.tw/in-download-02.aspx?cid=C_00000001&id=P_00000001
+URL:           https://www.castlestech.com/zh-hant/%E6%AA%94%E6%A1%88%E4%B8%8B%E8%BC%89/#1471668869492-81bb3b92-514e
 Source0:       EZUSB_Linux_x86_64_v%{version}.zip
 License:       Commercial, freeware
 BuildRequires: pcsc-lite-devel
@@ -26,8 +26,8 @@ make -C mifdtest
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_libdir}/pcsc/drivers/ezusb.bundle/Contents/Linux
 cd driver_ezusb_v%{version}_for_64_bit
-install -m755 drivers/Info.plist $RPM_BUILD_ROOT%{_libdir}/pcsc/drivers/ezusb.bundle/Contents
-install -m755 drivers/ezusb.so $RPM_BUILD_ROOT%{_libdir}/pcsc/drivers/ezusb.bundle/Contents/Linux
+install -m644 drivers/Info.plist $RPM_BUILD_ROOT%{_libdir}/pcsc/drivers/ezusb.bundle/Contents
+install -m644 drivers/ezusb.so $RPM_BUILD_ROOT%{_libdir}/pcsc/drivers/ezusb.bundle/Contents/Linux
 install -Dm755 ../mifdtest/mifdtest $RPM_BUILD_ROOT%{_bindir}/mifdtest
 
 %post

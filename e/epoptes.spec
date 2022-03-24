@@ -1,6 +1,6 @@
 Name:           epoptes
-Version:        0.5.10
-Release:        4.1
+Version:        21.02
+Release:        1
 License:        GPL-2.0+
 Summary:        Computer lab management tool
 URL:            http://www.epoptes.org
@@ -58,16 +58,16 @@ This is a client part of Epoptes Computer lab management tool.
 
 %prep
 %setup -q
-%patch0 -p1
+#patch0 -p1
 
 for file in $(find . -type f -name "*.py" ); do
-	sed -i "s|/usr/bin/env python|%{_bindir}/python|g" $file
+	sed -i "s|/usr/bin/env python|%{_bindir}/python3|g" $file
 done
 
 %build
 
 %install
-python2 setup.py install --root=%{buildroot} --prefix=%{_prefix}
+python3 setup.py install --root=%{buildroot} --prefix=%{_prefix}
 find %{buildroot} \( -name \*.a -o -name \*.la -o -name \*.orig \) -print0 | xargs -0 rm -f
 mkdir -p %{buildroot}%{_sysconfdir}/default
 %__install -m 644 ./debian/epoptes.default %{buildroot}%{_sysconfdir}/default/epoptes
@@ -79,8 +79,8 @@ mkdir -p %{buildroot}%{_unitdir}
 %__ln_s service %{buildroot}%{_sbindir}/rcepoptes-client
 %find_lang epoptes
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name} %{buildroot}%{_datadir}/epoptes-client/remote-assistance
-sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name} %{buildroot}%{_datadir}/epoptes-client/*
+#sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name} #%{buildroot}%{_datadir}/epoptes-client/remote-assistance
+#sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name} %{buildroot}%{_datadir}/epoptes-client/*
 
 %clean
 %__rm -rf %{buildroot}
@@ -125,13 +125,13 @@ systemctl disable epoptes-client.service
 %{_unitdir}/epoptes-server.service
 %{_sbindir}/rcepoptes-server
 %{_bindir}/epoptes
-%{python2_sitelib}/
+%{python3_sitelib}/*
 %{_datadir}/applications/*
 %{_datadir}/icons/*
 %{_datadir}/ltsp/
 %{_datadir}/epoptes/
 %dir %{_datadir}/doc/epoptes
-%{_datadir}/doc/epoptes/README
+%{_datadir}/doc/epoptes/README.md
 %{_mandir}/man1/epoptes.1.*
 
 %files client
@@ -141,11 +141,11 @@ systemctl disable epoptes-client.service
 %{_sbindir}/rcepoptes-client
 %{_sbindir}/epoptes-client
 %{_datadir}/epoptes-client/
-%{_datadir}/ldm/
+#{_datadir}/ldm/
 %{_mandir}/man8/epoptes-client.8.*
 
 %changelog
-* Sat Jun 24 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.10
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 21.02
 - Rebuilt for Fedora
 * Wed Feb 24 2016 cyberorg@opensuse.org
 - update to 0.5.9_bzr0.509

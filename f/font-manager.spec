@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           font-manager
-Version:        0.8.7
+Version:        0.8.8
 Release:        1
 Summary:        A simple font management application for Gtk+ Desktop Environments
 Group:          Applications/Publishing
@@ -53,7 +53,7 @@ meson --prefix=/usr build
 %{_datadir}/icons/hicolor/*/apps/org.gnome.Font*.png
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.7
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.8
 - Rebuilt for Fedora
 * Wed Feb 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.7.2-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild

@@ -1,5 +1,3 @@
-#undefine _missing_build_ids_terminate_build
-
 Summary: The Pure Programming Language
 Name: pure
 Version: 0.68
@@ -9,6 +7,7 @@ Group: Development/Language
 URL: https://agraef.github.io/pure-lang/
 Source0: https://github.com/agraef/pure-lang/releases/download/%{name}-%{version}/%{name}-%{version}.tar.gz
 BuildRequires: llvm34-devel
+Patch0: pure-0.68-linker.patch
 
 %description
 Pure is a modern-style functional programming language based on term rewriting.
@@ -26,14 +25,14 @@ language for a variety of purposes.
 
 %prep
 %setup -q
+%patch0 -p 1
 
 %build
-export LLVMCONF=llvm-config-3.4
-%configure
+export LLVMCONF=llvm-config-64-3.4
+%configure --with-pcre
 %make_build
 
 %install
-#install -Dm755 %{name} %{buildroot}%{_bindir}/%{_name}
 %make_install
 
 %clean
@@ -42,7 +41,12 @@ rm -rf ${RPM_BUILD_ROOT}
 %files
 %doc COPYING* TODO ChangeLog NEWS
 %{_bindir}/%{name}
+%{_includedir}/%{name}
+%{_libdir}/lib%{name}.so*
+%{_libdir}/pkgconfig/%{name}.pc
+%{_libdir}/%{name}
+%{_mandir}/man1/%{name}.*
 
 %changelog
-* Sun Sep 26 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.68
+* Sun Mar 6 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.68
 - Rebuilt for Fedora

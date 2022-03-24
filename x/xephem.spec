@@ -1,10 +1,10 @@
 Summary: An attractive astronomical ephemeris program for X Window
 Name: xephem
-Version: 3.7.7
-Release: 12.1
+Version: 4.1.0
+Release: 1
 License: Distributable, see Copyright file for details. NOT GPL!
 Group: Applications/Scientific
-Source: http://www.clearskyinstitute.com/xephem/xephem-%{version}.tar.gz
+Source: http://www.clearskyinstitute.com/xephem/XEphem-%{version}.tar.gz
 Source1: XEphem.desktop
 Source2: XEphem.kdelnk
 Source3: XEphem.png
@@ -22,7 +22,7 @@ quantitative heliocentric, geocentric and topocentric information for
 Earth satellites, solar system and deep-sky objects.
 
 %prep
-%setup -a6 -a7 -q
+%setup -a6 -a7 -q -n XEphem-%{version}
 
 %build
 cd GUI/xephem
@@ -102,9 +102,7 @@ echo "XEphem.ShareDir: /usr/share/xephem" > $RPM_BUILD_ROOT/usr/share/X11/app-de
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%doc Copyright
-%doc INSTALL
-%doc README
+%doc LICENSE README.md
 /usr/bin/xephem
 /usr/share/man/man1/xephem.1x.gz
 /usr/share/xephem
@@ -113,7 +111,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/share/pixmaps/*
 
 %changelog
-* Fri Dec 25 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.7
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.0
 - Rebuilt for Fedora
 * Fri Jul 16 2010 <tom@mmto.org>
 - move the X resource: "XEphem" to /usr/share/X11/app-defaults

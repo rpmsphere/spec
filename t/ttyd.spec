@@ -1,7 +1,7 @@
 Name: ttyd
 Summary: Share your terminal over the web
-Version: 1.4.2
-Release: 3.1
+Version: 1.6.3
+Release: 1
 License: MIT
 Group: System/Monitoring
 URL: https://tsl0922.github.io/ttyd/
@@ -20,10 +20,10 @@ ttyd is a simple command-line tool for sharing terminal over the web, inspired b
 
 %build
 %cmake
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
   
 %clean  
 rm -rf $RPM_BUILD_ROOT
@@ -34,5 +34,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/ttyd.1.*
 
 %changelog
-* Fri Sep 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.2
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.3
 - Rebuilt for Fedora

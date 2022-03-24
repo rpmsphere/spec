@@ -3,8 +3,8 @@
 %global __spec_install_post %{nil}
 
 Name:           rubygem-fpm
-Version:        1.8.1
-Release:        3.1
+Version:        1.14.1
+Release:        1
 BuildRequires:  ruby, rubygems
 BuildRequires:  rubypick
 BuildArch:	    noarch
@@ -35,12 +35,9 @@ ln -s ../share/rubygems/bin/fpm %{buildroot}%{_bindir}/fpm
 %{gem_dir}/cache/%{mod_name}-%{version}.gem
 %{gem_dir}/gems/%{mod_name}-%{version}/
 %{gem_dir}/specifications/%{mod_name}-%{version}.gemspec
-%if %{fedora}<24
-%{gem_dir}/doc/%{mod_name}*
-%endif
 
 %changelog
-* Wed Feb 22 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.1
+* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14.1
 - Rebuilt for Fedora
 * Sun Jun  9 2013 coolo@suse.com
 - initial package (version 0.4.37)

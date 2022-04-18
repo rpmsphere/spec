@@ -1,6 +1,8 @@
+%global __os_install_post %{nil}
+
 Summary:     Multi Lingual TERMinal emulator on X
 Name:	     mlterm
-Version:     3.9.0
+Version:     3.9.2
 Release:     1
 License:     Modified BSD-style license
 Group:	     User Interface/X
@@ -20,7 +22,7 @@ You can dynamically change various xims.
 
 %prep
 %setup -q
-sed -i 's|-g utmp||g' configure*
+#sed -i 's|-g utmp||g' configure*
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" \
@@ -62,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/mlterm
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.0
+* Sun Apr 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.2
 - Rebuilt for Fedora
 * Tue Dec 15 2015 Araki Ken <arakiken@users.sf.net>
 - Source version 3.6.1

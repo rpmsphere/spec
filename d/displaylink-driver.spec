@@ -1,13 +1,15 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
+%undefine __os_install_post
 
 Name:		displaylink-driver
-Version:	5.3.1.34
+Version:	5.5.0
+%global _version %{version}-59.151
 Release:	1.bin
 Summary:	DisplayLink VGA/HDMI USB Graphics Software
 Group:		User Interface/X Hardware Support
 License:	freeware
 URL:		http://www.displaylink.com/downloads/ubuntu
-Source0:	%{name}-%{version}.run
+Source0:	%{name}-%{_version}.run
 Source1:        %{name}.service
 Source2:	99-displaylink.rules
 Source3:        displaylink.sh
@@ -22,8 +24,8 @@ This is a graphics software for DisplayLink USB devices.
 %prep
 %setup -T -c
 cp %{SOURCE0} .
-chmod +x %{name}-%{version}.run
-./%{name}-%{version}.run --noexec --keep
+chmod +x %{name}-%{_version}.run
+./%{name}-%{_version}.run --noexec --keep
 
 %build
 
@@ -40,7 +42,7 @@ ln -s /usr/libexec/displaylink $RPM_BUILD_ROOT/opt/displaylink
 # Don't copy libusb-1.0.so.0.1.0 it's already shipped by libusbx
 # Don't copy libevdi.so, we compiled it from source
 
-cd %{name}-%{version}
+cd %{name}-%{_version}
 
 %ifarch x86_64
 cp -a x64-ubuntu-1604/DisplayLinkManager $RPM_BUILD_ROOT/usr/libexec/displaylink/
@@ -70,7 +72,7 @@ done
 /usr/libexec/displaylink/udev.sh START
 
 %files
-%doc %{name}-%{version}/LICENSE %{name}-%{version}/3rd_party_licences.txt
+%doc %{name}-%{_version}/LICENSE %{name}-%{_version}/3rd_party_licences.txt
 /usr/lib/systemd/system/%{name}.service
 /usr/lib/systemd/system-sleep/displaylink.sh
 /etc/udev/rules.d/99-displaylink.rules
@@ -84,7 +86,7 @@ done
 /usr/bin/systemctl daemon-reload
 
 %changelog
-* Tue Jul 28 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.1.34
+* Sun Mar 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.5.0
 - Rebuild package
 * Sun Feb 19 2017 Richard Hofer <rofer@rofer.me> 1.3.52
 - Bump downloaded version to 1.3.52

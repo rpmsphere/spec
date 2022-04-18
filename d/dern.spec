@@ -6,6 +6,7 @@ License: Apache v2
 Group: Development/Language
 URL: https://octaspire.io/dern/
 Source0: https://github.com/octaspire/dern/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Requires: rlwrap
 
 %description
 A platform independent programming language in standard C99. It is a dialect of
@@ -25,7 +26,11 @@ cd release
 install -d %{buildroot}%{_libexecdir}/%{name}
 install -d %{buildroot}%{_bindir}
 cp -a octaspire-dern-repl *.so %{buildroot}%{_libexecdir}/%{name}
-ln -s ../libexec/%{name}/octaspire-dern-repl %{buildroot}%{_bindir}/%{name}
+cat > %{buildroot}%{_bindir}/%{name} <<EOF
+#!/usr/bin/bash
+LD_LIBRARY_PATH=%{_libexecdir}/%{name} rlwrap %{_libexecdir}/%{name}/octaspire-dern-repl "\$@"
+EOF
+chmod +x %{buildroot}%{_bindir}/%{name}
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}

@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
-Name:           dmagnetic
-Version:        0.32
+Name:           dMagnetic
+Version:        0.33
 Release:        1
 Summary:        A Magnetic Scrolls Interpreter
 License:        BSD-2-Clause
 Group:          Amusements/Games/Other
 URL:            http://dettus.net/dMagnetic/
-Source0:        http://dettus.net/dMagnetic/dMagnetic_%{version}.tar.bz2
+Source0:        http://dettus.net/%{name}/%{name}_%{version}.tar.bz2
 
 %description
 Olay Textadventures from Magnetic Scrolls with glorious ANSI Art.
 
 %prep
-%setup -q -n dMagnetic_%{version}
+%setup -q -n %{name}_%{version}
 
 %build
 make all
@@ -22,22 +22,22 @@ make all
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_mandir}/man6
 mkdir -p %{buildroot}%{_mandir}/man5
-mkdir -p %{buildroot}%{_datadir}/dMagnetic
-install -m 755 dMagnetic %{buildroot}%{_bindir}/dMagnetic
-install -m 644 dMagnetic.6 %{buildroot}%{_mandir}/man6/dMagnetic.6
-install -m 644 dMagneticini.5 %{buildroot}%{_mandir}/man5/dMagneticini.5
-install -m 644 dMagnetic.ini %{buildroot}%{_datadir}/dMagnetic/dMagnetic.ini
+mkdir -p %{buildroot}%{_datadir}/%{name}
+install -m 755 %{name} %{buildroot}%{_bindir}/%{name}
+install -m 644 %{name}.6 %{buildroot}%{_mandir}/man6/%{name}.6
+install -m 644 %{name}ini.5 %{buildroot}%{_mandir}/man5/%{name}ini.5
+install -m 644 %{name}.ini %{buildroot}%{_datadir}/%{name}/%{name}.ini
 
 %files
-%{_bindir}/dMagnetic
-%{_mandir}/man6/dMagnetic.6*
-%{_mandir}/man5/dMagneticini.5*
-%{_datadir}/dMagnetic
+%{_bindir}/%{name}
+%{_mandir}/man6/%{name}.6*
+%{_mandir}/man5/%{name}ini.5*
+%{_datadir}/%{name}
 %doc README.txt
 %license LICENSE.txt
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.32
+* Sun Apr 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.33
 - Rebuilt for Fedora
 * Mon Jul 27 2020 Michael Vetter <mvetter@suse.com>
 - Update to 0.25:

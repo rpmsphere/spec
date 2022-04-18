@@ -1,6 +1,6 @@
 Summary:	A free replacement for the OpenDWG libraries
 Name:		libredwg
-Version:	0.11
+Version:	0.12.5
 Release:	1
 License:	GPL
 Group:		System/Libraries
@@ -17,14 +17,14 @@ GNU LibreDWG is a free C library to handle DWG files. DWG is the native file
 format of AutoCAD. GNU LibreDWG is based on LibDWG, originally written by
 Felipe Castro.
 
-#package python
-#Summary:	LibreDWG bindings for Python
-#Group:		Development/Python
-#Requires:	%{name} = %{version}
+%package python
+Summary:	LibreDWG bindings for Python
+Group:		Development/Python
+Requires:	%{name} = %{version}
 
-#description python
-#This package provides the files needed for python software that uses
-#LibreDWG.
+%description python
+This package provides the files needed for python software that uses
+LibreDWG.
 
 %package devel
 Summary:	LibreDWG development files
@@ -39,13 +39,15 @@ LibreDWG.
 %setup -q
 
 %build
-%configure --disable-static --disable-python
+%configure --disable-static --enable-python
 sed -i 's|CFLAGS = |CFLAGS = -fPIC |' */Makefile
 make
 
 %install
 rm -rf %{buildroot}
 %make_install
+mkdir -p %{buildroot}%{_datadir}/%{name}
+mv %{buildroot}%{_datadir}/dwgadd.example %{buildroot}%{_datadir}/load_dwg.py %{buildroot}%{_datadir}/%{name}
 
 %clean
 rm -rf %{buildroot}
@@ -54,14 +56,15 @@ rm -rf %{buildroot}
 %doc README COPYING AUTHORS ChangeLog NEWS TODO
 %{_bindir}/*
 %{_libdir}/%{name}.so.*
-%{_mandir}/man1/*
+%{_mandir}/man?/*
 %{_datadir}/info/LibreDWG.*
 %exclude %{_datadir}/info/dir
-
-#files python
-#{python_sitelib}/*
-#{python_sitearch}/*
-
+%{_datadir}/%{name}
+   
+%files python
+%{python3_sitelib}/*
+%{python3_sitearch}/*
+   
 %files devel
 %{_includedir}/*.h
 %{_libdir}/%{name}.so
@@ -69,5 +72,5 @@ rm -rf %{buildroot}
 %{_libdir}/pkgconfig/libredwg.pc
 
 %changelog
-* Tue Sep 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11
+* Sun Mar 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.5
 - Rebuilt for Fedora

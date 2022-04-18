@@ -18,7 +18,7 @@ don't need a special keyboard.
 
 %prep
 %setup -q -n %{name}-master
-sed -i -e '/if(b)boilerplate();/d' -e '98i if(b)boilerplate();' src/kc.c
+#sed -i -e '/if(b)boilerplate();/d' -e '100i if(b)boilerplate();' src/kc.c
 
 %build
 export CC="gcc -Wl,--allow-multiple-definition"
@@ -32,5 +32,5 @@ install -Dm755 k %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.0
+* Sun Mar 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.0
 - Rebuilt for Fedora

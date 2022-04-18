@@ -1,13 +1,14 @@
-#undefine _missing_build_ids_terminate_build
+%undefine _debugsource_packages
 
 Summary: The Elena Programming Language
 Name: elena
-Version: 5.0.23
+Version: 5.10.0
 Release: 1
 License: MIT
 Group: Development/Language
 URL: https://elena-lang.github.io/
-Source0: https://github.com/ELENA-LANG/elena-lang/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+#Source0: https://github.com/ELENA-LANG/elena-lang/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0: elena-lang-master.zip
 
 %description
 ELENA is a general-purpose language with late binding. It is multi-paradigm,
@@ -21,23 +22,31 @@ scripts into your applications. Both stand-alone applications and Virtual
 machine clients are supported.
 
 %prep
-%setup -q -n ELENA-LANG-elena-lang-7c6c0ff
+%setup -q -n elena-lang-master
+sed -i -e 's|-m32||' -e 's|-march=pentium2||' `find . -name *.mak`
 
 %build
-%cmake .
-%make_build
+#cmake .
+%make_build elc_lnx32
 
 %install
-#install -Dm755 %{name} %{buildroot}%{_bindir}/%{_name}
-%make_install
+#make_install
+install -Dm755 bin/%{name}-lc %{buildroot}%{_bindir}/%{name}-lc
+mkdir -p %{buildroot}%{_datadir}/%{name}
+cp -a bin/templates bin/scripts %{buildroot}%{_datadir}/%{name}
+install -m644 dat/sg/syntax.txt %{buildroot}%{_datadir}/%{name}/syntax.dat
+install -m644 dat/og/rules.txt %{buildroot}%{_datadir}/%{name}/rules.dat
+install -Dm644 bin/elc.config %{buildroot}%{_sysconfdir}/%{name}/elc.config
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc LICENSE *.md
-%{_bindir}/%{name}
+%{_bindir}/%{name}-lc
+%{_datadir}/%{name}
+%{_sysconfdir}/%{name}
 
 %changelog
-* Sun Sep 26 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.23
+* Sun Mar 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.10.0
 - Rebuilt for Fedora

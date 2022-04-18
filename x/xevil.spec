@@ -1,4 +1,3 @@
-# $Revision: 1.26 $, $Date: 2007-02-12 22:09:22 $
 Summary:	A fast-action violent game for the X Window System
 Summary(cs):	Hra podobná hře Pac-Man pro X Window System
 Summary(da):	Et Pacman-lignende spil til X-vinduessystemet
@@ -11,12 +10,13 @@ Summary(sk):	Rýchla násilná hra pre X Window Systém
 Summary(tr):	Hızlı ve şiddet yüklü bir X oyunu
 Summary(zh_TW):	快打暴力遊戲
 Name:		xevil
-Version:	2.02r2
+Version:	2.1b1
 Release:	1
 License:	GPL
 Group:		Amusements/Games
 #Source0:	http://www.xevil.com/download/stable/%{name}src%{version}.zip
-Source0:	%{name}_2.02r2.orig.tar.gz
+#Source0:	%{name}_2.02r2.orig.tar.gz
+Source0:	https://github.com/lvella/xevil/archive/refs/heads/master.zip#/%{name}-master.zip
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:         %{name}_2.02r2.patch
@@ -69,45 +69,42 @@ X Window altında oynanan bir action/macera oyunu. Sizin rolünüz, bir
 Ninja savaşçısı olarak karşınıza çıkan her şeyi öldürmek.
 
 %prep
-%setup -q -n %{name}-2.02r2.orig
-%patch0 -p1
-sed -i 's|-static||' config.mk
-sed -i -e 's|const char\* cs,int c|char* cs,int c|g' \
-       -e 's|const char\* cs,const char\* ct|char* cs,char* ct|' cmn/utils.h
+#setup -q -n %{name}-2.02r2.orig
+%setup -q -n %{name}-master
+#patch0 -p1
+#sed -i 's|-static||' config.mk
+#sed -i -e 's|const char\* cs,int c|char* cs,int c|g' -e 's|const char\* cs,const char\* ct|char* cs,char* ct|' cmn/utils.h
+sed -i 's|-m32||' config.mk
+sed -i -e '/helvetica/s|18|20|' -e 's|6x13|9x15bold|' x11/ui.cpp
 
 %build
-%{__make} \
-	HOSTTYPE=i386 \
-	DEBUG_OPT="%{optflags} -fno-exceptions" \
-	LINK_FLAGS="-s"
+#{__make} HOSTTYPE=i386 DEBUG_OPT="%{optflags} -fno-exceptions" LINK_FLAGS="-s"
+%{make_build}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/applications,%{_datadir}/pixmaps}
-install x11/REDHAT_LINUX/xevil $RPM_BUILD_ROOT%{_bindir}
-install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications
+install -m755 x11/REDHAT_LINUX/xevil $RPM_BUILD_ROOT%{_bindir}
+install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications
 echo -e 'Name[zh_TW]=極限邪惡\nComment[zh_TW]=Xevil 快打暴力遊戲' >> $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
+install -m644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc readme.txt instructions
-%attr(755,root,root) %{_bindir}/xevil
+%{_bindir}/xevil
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.02r2
+* Sun Apr 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1b1
 - Rebuilt for Fedora
-
 * Thu Jun 06 2011 Chris Lin <chris.lin@ossii.com.tw>
 - Fix types in cmn/utils.h
-
 * Mon Nov 17 2008 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for CentOS5
-
 * Mon Feb 12 2007 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
@@ -201,5 +198,4 @@ Revision 1.2  2001/07/02 21:25:36  qboosh
 
 Revision 1.1  2001/06/07 16:07:04  qboosh
 - taken from RH PowerTools
-
-Based on RedHat spec file.
+- Based on RedHat spec file.

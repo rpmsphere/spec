@@ -1,8 +1,6 @@
-%undefine _debugsource_packages
-
 Summary:	Qt XG Editor
 Name:		qxgedit
-Version:	0.9.3
+Version:	0.9.6
 Release:	1
 License:	GPL-2.0+
 Group:		Productivity/Multimedia/Sound/Midi
@@ -19,34 +17,32 @@ for XG devices (eg. Yamaha DB50XG).
 
 %prep
 %setup -q
-[ -f Makefile.git ] && %__make -f Makefile.git
-sed -i 's|set dummy qmake;|set dummy qmake-qt5;|' configure
+#[ -f Makefile.git ] && %__make -f Makefile.git
+#sed -i 's|set dummy qmake;|set dummy qmake-qt5;|' configure
 
 %build
-%configure
+cmake . -DCMAKE_INSTALL_PREFIX=/usr
 make
 
 %install
 make DESTDIR=%{buildroot} install
-install -d %{buildroot}%{_datadir}/pixmaps
-mv %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg %{buildroot}%{_datadir}/pixmaps/%{name}.svg
 
 %clean
 rm -rf %{buildroot}
 
 %files
-%doc AUTHORS COPYING ChangeLog README TODO
+%doc LICENSE ChangeLog README
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/pixmaps/%{name}.svg
-%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
+%{_datadir}/applications/*%{name}.desktop
+%{_datadir}/icons/hicolor/scalable/apps/*%{name}.svg
+%{_datadir}/icons/hicolor/32x32/apps/*%{name}.png
 %{_libdir}/qt5/plugins/styles/libskulpturestyle.so
-%{_datadir}/metainfo/%{name}.appdata.xml
+%{_datadir}/metainfo/*.xml
 %{_mandir}/man1/%{name}*.1.*
 %{_mandir}/*/man1/%{name}*.1.*
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.3
+* Sun Apr 3 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.6
 - Rebuilt for Fedora
 * Mon Sep 21 2015 Rui Nuno Capela <rncbc@rncbc.org> 0.3.0
 - Summer'15 release frenzy.

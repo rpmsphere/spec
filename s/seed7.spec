@@ -3,7 +3,7 @@ Summary:      Seed7 Programming Language
 URL:          http://seed7.sourceforge.net/
 Group:        Development/Language
 License:      LGPL
-Version:      05.20210904
+Version:      05.20220410
 Release:      1
 Source0:      http://downloads.sourceforge.net/project/seed7/seed7/seed7_%(echo %{version}|tr . _)/seed7_%(echo %{version}|tr . _).tgz
 BuildRequires: libX11-devel
@@ -23,11 +23,14 @@ portability.
 
 %prep
 %setup -q -n seed7
-sed -i '71i #undef sprintf\n#undef snprintf' src/sql_post.c
+#sed -i '71i #undef sprintf\n#undef snprintf' src/sql_post.c
 
 %build
-export ADDITIONAL_SYSTEM_LIBS="-lmysqlclient -lsqlite3 -lpq -lodbc -lX11 -lreadline -lncurses -lfbclient" INCLUDE_OPTIONS="-I/usr/include/pgsql -I/usr/include/pgsql/server"
-make -C src S7_LIB_DIR=%{_libdir}/seed7/bin SEED7_LIBRARY=%{_libdir}/seed7/lib depend s7 s7c
+#export ADDITIONAL_SYSTEM_LIBS="-lmysqlclient -lsqlite3 -lpq -lodbc -lX11 -lreadline -lncurses -lfbclient"
+export INCLUDE_OPTIONS="-I/usr/include/pgsql -I/usr/include/pgsql/server"
+make -C src S7_LIB_DIR=%{_libdir}/seed7/bin SEED7_LIBRARY=%{_libdir}/seed7/lib depend
+make -C src S7_LIB_DIR=%{_libdir}/seed7/bin SEED7_LIBRARY=%{_libdir}/seed7/lib s7
+make -C src S7_LIB_DIR=%{_libdir}/seed7/bin SEED7_LIBRARY=%{_libdir}/seed7/lib s7c
 rm prg/s7 prg/s7c
 mv prg examples
 
@@ -50,5 +53,5 @@ install -m 644 bin/*.a $RPM_BUILD_ROOT%{_libdir}/seed7/bin
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 05.20210904
+* Sun Apr 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 05.20220410
 - Rebuilt for Fedora

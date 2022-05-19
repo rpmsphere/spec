@@ -2,7 +2,7 @@
 
 Summary: An open source programming language in Ada
 Name: sparforte
-Version: 2.4.1
+Version: 2.5
 Release: 1
 License: GPL2 (GNAT Modified)
 Group: Development/Languages
@@ -43,5 +43,5 @@ mv %{buildroot}%{_datadir}/man1 %{buildroot}%{_mandir}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.1
+* Sun Apr 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
 - Rebuilt for Fedora

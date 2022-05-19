@@ -1,11 +1,11 @@
 Name: odin
-Summary: develop, simulate and run magnetic resonance sequences
-Version: 2.0.4
-Release: 3
-Group: science
+Summary: Develop, simulate and run magnetic resonance sequences
+Version: 2.0.5
+Release: 1
+Group: Science
 License: Free Software
 URL: http://od1n.sourceforge.net
-Source0: https://github.com/%{name}/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0: http://prdownloads.sourceforge.net/od1n/%{name}-%{version}.tar.gz
 BuildRequires: desktop-file-utils
 BuildRequires: qt5-qtbase-devel
 BuildRequires: blitz-devel
@@ -24,10 +24,10 @@ customizable, multi-threaded data-processing framework.
 
 %prep
 %setup -q
-sed -i 's|/moc|/moc-qt5|' configure
 
 %build
 %configure
+sed -i -e 's|%{_libdir}/qt-3.3/bin|%{_libdir}/qt5/bin|' -e 's|-I/usr/lib64/qt-3.3/include|%(pkg-config --cflags Qt5PrintSupport)|' -e 's|-lqt-mt|%(pkg-config --libs Qt5PrintSupport)|' Makefile */Makefile */*/Makefile
 make %{?_smp_mflags}
 
 %install
@@ -44,5 +44,5 @@ make install DESTDIR=%{buildroot}
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Fri Aug 06 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.4
+* Sun Apr 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.5
 - Rebuilt for Fedora

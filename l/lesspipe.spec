@@ -1,5 +1,5 @@
 Name:           lesspipe
-Version:        2.04
+Version:        2.05
 Release:        1
 Summary:        Input Filter for the Pager "less"
 License:        GPL-2.0+
@@ -37,7 +37,7 @@ install -Dpm 0644 lesspipe.1 %{buildroot}%{_mandir}/man1/lesspipe.1
 %doc %{_mandir}/man1/lesspipe.1.*
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.04
+* Sun Apr 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.05
 - Rebuilt for Fedora
 * Sun Sep  9 2012 asterios.dramis@gmail.com
 - Rearranged runtime dependencies based on the respective packages'

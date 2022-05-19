@@ -1,6 +1,6 @@
 Name: txr
 Summary: A Pattern Matching Language (Not Just) for Convenient Text Extraction
-Version: 273
+Version: 275
 Release: 1
 Group: Development/Languages
 License: BSD
@@ -34,5 +34,5 @@ make install DESTDIR=%{buildroot}
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 273
+* Sun Mar 8 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 275
 - Rebuilt for Fedora

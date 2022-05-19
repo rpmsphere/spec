@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Name: osh
-Summary: Two ports of V6 Thompson Shell
-Version: 20130331
-Release: 6.1
+Name: etsh
+Summary: V6 Thompson Shell Ports
+Version: 5.4.0
+Release: 1
 Group: System Environment/Shells
 License: various opensource
-URL: http://v6shell.org/
-Source0: http://v6shell.org/src/%{name}-%{version}.tar.gz
+URL: http://etsh.nl/
+Source0: https://etsh.nl/src/%{name}_%{version}/%{name}-%{version}.tar.gz
 
 %description
 Osh is an enhanced, backward-compatible port of the Sixth Edition Thompson
@@ -20,20 +20,21 @@ and global command, but without the obvious enhancements found in osh.
 %setup -q
 
 %build
+./configure
 make
 
 %install
 make install PREFIX=/usr DESTDIR=%{buildroot}
-mv %{buildroot}%{_bindir}/goto %{buildroot}%{_bindir}/goto6
-mv %{buildroot}%{_mandir}/man1/goto.1 %{buildroot}%{_mandir}/man1/goto6.1
-mv %{buildroot}%{_bindir}/if %{buildroot}%{_bindir}/if6
-mv %{buildroot}%{_mandir}/man1/if.1 %{buildroot}%{_mandir}/man1/if6.1
+mv %{buildroot}%{_libexecdir}/%{name}-%{version} %{buildroot}%{_libexecdir}/%{name}
+install -d %{buildroot}%{_datadir}
+mv %{buildroot}/usr/man %{buildroot}%{_mandir}
 
 %files
-%doc README NOTES LICENSE AUTHORS CHANGES CHANGES6 DEDICATIONS
+%doc README NOTES LICENSE AUTHORS CHANGES DEDICATIONS
 %{_bindir}/*
+%{_libexecdir}/%{name}
 %{_mandir}/man1/*
 
 %changelog
-* Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 20130331
+* Sun May 8 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.4.0
 - Rebuilt for Fedora

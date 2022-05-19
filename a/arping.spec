@@ -1,5 +1,5 @@
 Name:           arping
-Version:        2.22
+Version:        2.23
 Release:        1
 Summary:        Ethernet Layer 2 ping tool
 Group:          Applications/Internet
@@ -34,7 +34,7 @@ chmod -x extra/arping-scan-net.sh
 %{_bindir}/%{name}-habets
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.22
+* Sun May 8 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.23
 - Rebuilt for Fedora
 * Thu Dec 23 2008 Fabian Affolter <fabian@bernewireless.net> - 2.08-1
 - Initial spec for Fedora

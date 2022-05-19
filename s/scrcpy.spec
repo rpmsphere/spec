@@ -1,12 +1,12 @@
 Name:           scrcpy
-Version:        1.22
+Version:        1.24
 Release:        1
 Summary:        Display and control your Android device
 License:        Apache-2.0
 Group:          Hardware/Mobile
 URL:            https://github.com/Genymobile/scrcpy
 Source0:        %{name}-%{version}.tar.gz
-Source1:        https://github.com/Genymobile/scrcpy/releases/download/v1.4/scrcpy-server-v1.4.jar
+Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}
 BuildRequires:  meson
 BuildRequires:  ninja-build
 BuildRequires:  gcc
@@ -16,7 +16,7 @@ BuildRequires:  pkgconfig(libavformat)
 
 %description
 This application provides display and control of Android devices connected
-on USB. It does not require any root access
+on USB. It does not require any root access.
 
 %prep
 %setup -q
@@ -35,9 +35,11 @@ on USB. It does not require any root access
 %{_datadir}/%{name}
 %{_mandir}/man1/%{name}.*
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
+%{_datadir}/bash-completion/completions/%{name}
+%{_datadir}/zsh/site-functions/_%{name}
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.22
+* Sun Apr 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.24
 - Rebuilt for Fedora
 * Tue Nov 13 2018 pousaduarte@gmail.com
 - Update to version 1.5fixversion~git20181113:

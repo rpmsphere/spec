@@ -1,7 +1,7 @@
 Summary:	RPM Sphere release file
 Name:		rpmsphere-release
-Version:	34
-Release:	2
+Version:	36
+Release:	1
 License:	BSD
 Group:		System Environment/Base
 URL:		https://github.com/rpmsphere
@@ -30,5 +30,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 34
+* Sun May 15 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 36
 - Rebuilt for Fedora

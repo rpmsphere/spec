@@ -2,12 +2,13 @@
 
 Summary: A modern replacement for the autoconf and make tools
 Name: makeme
-Version: 1.0.4
+Version: 1.0.5
 Release: 1
 License: Dual GPL/commercial
 Group: Development/Other
 URL: http://embedthis.com/makeme
-SOURCE0: https://s3.amazonaws.com/embedthis.software/%{name}-%{version}-src.tgz
+#SOURCE0: https://s3.amazonaws.com/embedthis.software/%{name}-%{version}-src.tgz
+SOURCE0: https://github.com/embedthis/makeme/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 %description
 MakeMe is a replacement for the autoconf/make build tools. MakeMe is a
@@ -38,5 +39,5 @@ ln -s ../%{_lib}/%{name}/me %{buildroot}%{_bindir}/%{name}
 %{_includedir}/%{name}
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.4
+* Sun Apr 17 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5
 - Rebuilt for Fedora

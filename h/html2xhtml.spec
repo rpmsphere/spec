@@ -1,10 +1,10 @@
 Summary:   A free-software converter from HTML to XHTML 
 Name:      html2xhtml
-Version:   1.1.2
+Version:   1.3
 Release:   1
 License:   GPL v2
 Group:     Development/Tools
-Source0:   %{name}-1.1.2.tar.gz 
+Source0:   http://www.it.uc3m.es/jaf/html2xhtml/downloads/%{name}-%{version}.tar.gz 
 URL:       http://www.it.uc3m.es/jaf/html2xhtml/
 
 %description
@@ -34,7 +34,7 @@ rm -rf %{buildroot}
 %{_datadir}/man/man1/html2xhtml.1.gz
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
+* Sun May 8 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
 - Rebuilt for Fedora
 * Wed Mar 31 2010 Gene <gene.hsu@ossii.com.tw>
 - build the program

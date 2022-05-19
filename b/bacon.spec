@@ -2,13 +2,13 @@
 
 Summary: A free BASIC to C converter for Unix-based systems
 Name: bacon
-Version: 3.7.3
-Release: 4.1
+Version: 4.4
+Release: 1
 License: MIT
 Group: Development
-Source: http://www.basic-converter.org/stable/bacon-3.7.3.tar.gz
+Source: http://www.basic-converter.org/stable/%{name}-%{version}.tar.gz
 URL: http://www.basic-converter.org
-BuildRequires: fltk-devel
+BuildRequires: gtk3-devel
 Requires: enscript
 
 %description
@@ -32,19 +32,15 @@ make
 %{_bindir}/%{name}
 %{_bindir}/%{name}gui-gtk
 %{_bindir}/%{name}.sh
-%{_prefix}/lib/lib%{name}.a
-%{_prefix}/lib/lib%{name}++.a
 %{_datadir}/applications/%{name}gui-gtk.desktop
 %{_datadir}/enscript/hl/%{name}.st
 %{_mandir}/man1/%{name}.1.gz
-%{_datadir}/pixmaps/BaCon24.png
-%{_datadir}/pixmaps/BaConEyes.png
-%{_datadir}/pixmaps/BaCon.png
-%{_bindir}/bacongui-fltk
-%{_datadir}/applications/bacongui-fltk.desktop
+%{_datadir}/pixmaps/BaCon*
+%{_datadir}/BaCon
+%{_datadir}/icons/hicolor/scalable/apps/bacon.png
 
 %changelog
-* Tue Sep 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.3
+* Sun May 8 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.4
 - Rebuilt for Fedora
 * Fri Jun 01 2018 Peter van Eerten <peter@basic-converter.org>
 - Initial package

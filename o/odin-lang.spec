@@ -1,6 +1,6 @@
 Summary: Odin Programming Language
 Name: odin-lang
-Version: 0.2021.09
+Version: 0.2022.05
 Release: 1
 License: BSD-3
 Group: Development/Language
@@ -14,24 +14,25 @@ The Odin Programming Language, the C alternative for the joy of programming.
 
 %prep
 %setup -q -n Odin-master
-sed -i 's|11|12|' Makefile
+sed -i 's|^GIT_SHA=.*|GIT_SHA=|' build_odin.sh
+rm `find . -name *.dll` `find . -name *.lib`
 
 %build
 make
 
 %install
 mkdir -p %{buildroot}%{_bindir} %{buildroot}%{_libexecdir}/Odin
-cp -a odin core shared %{buildroot}%{_libexecdir}/Odin
-ln -s ../libexec/Odin/odin %{buildroot}%{_bindir}/Odin
+cp -a odin core vendor %{buildroot}%{_libexecdir}/Odin
+ln -s ../libexec/Odin/odin %{buildroot}%{_bindir}/odin-lang
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc LICENSE *.md
-%{_bindir}/Odin
+%{_bindir}/odin-lang
 %{_libexecdir}/Odin
 
 %changelog
-* Sun Sep 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2021.09
+* Sun May 8 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2022.05
 - Rebuilt for Fedora

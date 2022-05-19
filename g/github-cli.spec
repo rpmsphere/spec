@@ -3,7 +3,7 @@
 %global import_path github.com/cli/cli
 
 Name:     github-cli
-Version:  2.8.0
+Version:  2.9.0
 Release:  1
 Summary:  GitHub's official command line tool
 License:  MIT
@@ -44,7 +44,7 @@ cp -r share/man -T %buildroot/%_mandir
 %doc *.md
 
 %changelog
-* Sun Apr 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.0
+* Sun Apr 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.0
 - Rebuilt for Fedora
 * Wed Oct 28 2020 Mikhail Gordeev <obirvalger@altlinux.org> 1.2.0-alt1
 - update to 1.2.0

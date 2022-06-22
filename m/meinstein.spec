@@ -6,7 +6,7 @@ License: GPLv3
 Group: Amusements/Games
 Source: TheosConnect6.zip
 URL: http://www.csvn.nl/downloads/doc_download/176-meinstein-connect6
-BuildRequires: java-openjdk-devel, ant, xml-commons-apis, lua
+BuildRequires: java-1.8.0-openjdk-devel, ant, xml-commons-apis, lua
 BuildArch: noarch
 Requires: jre
 

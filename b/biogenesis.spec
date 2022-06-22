@@ -7,7 +7,7 @@ License: GPL
 URL: http://biogenesis.sourceforge.net/
 Source0: http://prdownloads.sourceforge.net/biogenesis/biogenesis_src_0_8.zip
 BuildArch: noarch
-BuildRequires: java-devel-openjdk lua
+BuildRequires: java-devel lua
 Requires: jre
 
 %description

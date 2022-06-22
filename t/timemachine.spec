@@ -11,13 +11,12 @@ BuildRequires: alsa-lib-devel
 BuildRequires: atk-devel
 BuildRequires: cairo-devel
 BuildRequires: gtk2-devel
-BuildRequires: jack-audio-connection-kit-devel
+BuildRequires: pipewire-jack-audio-connection-kit-devel
 BuildRequires: lash-devel
 BuildRequires: ncurses-devel
 BuildRequires: pango-devel
 BuildRequires: readline-devel
 BuildRequires: libsndfile-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 I used to always keep a minidisc recorder in my studio running in a mode where

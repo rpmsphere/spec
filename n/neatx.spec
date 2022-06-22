@@ -15,11 +15,11 @@ Requires: dbus-x11
 Requires: binutils
 Requires: Xdialog
 #Requires: %_bindir/xvt
-Requires: python-%name
+Requires: python2-%name
 Conflicts: freenx-server
 Conflicts: tacix-freenx
 BuildRequires: python2-devel
-BuildRequires: python2-docutils
+#BuildRequires: python2-docutils
  
 %package -n python2-%name
 Summary: Python2 module for %name

@@ -2,7 +2,7 @@
 
 Summary:	A program to make slide-show from pictures
 Name:		photofilmstrip
-Version:	3.7.0
+Version:	3.7.3
 Release:	1
 License:	GPLv2+
 Group:		Video
@@ -47,7 +47,7 @@ python3 setup.py install --root=%{buildroot}
 %{_datadir}/pixmaps/%{name}.xpm
 
 %changelog
-* Mon Oct 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.0
+* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.3
 - Rebuilt for Fedora
 * Sun Feb 03 2013 Giovanni Mariani <mc2374@mclink.it> 1.5.0-69.1
 - New release 1.5.0

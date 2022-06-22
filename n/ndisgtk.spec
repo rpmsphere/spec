@@ -1,6 +1,6 @@
 Summary: Graphical front-end for ndiswrapper
 Name: ndisgtk
-Version: 0.8.3
+Version: 0.8.5
 Release: 1
 License: GPL
 Group: System Environment/Kernel
@@ -85,7 +85,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_sbindir}/%{name
 %{_sbindir}/ndisgtk
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
+* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.5
 - Rebuilt for Fedora
 * Mon Dec 03 2007 Dag Wieers <dag@wieers.com> - 0.8-1 - +/
 - Initial package. (using DAR)

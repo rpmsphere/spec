@@ -8,7 +8,8 @@ Release:      1
 Source0:      http://downloads.sourceforge.net/project/seed7/seed7/seed7_%(echo %{version}|tr . _)/seed7_%(echo %{version}|tr . _).tgz
 BuildRequires: libX11-devel
 BuildRequires: ncurses-devel
-BuildRequires: postgresql-server-devel
+#BuildRequires: postgresql-server-devel
+BuildRequires: libpq-devel
 BuildRequires: firebird-devel
 BuildRequires: mariadb-devel
 Requires: libX11, ncurses, gcc, glibc-devel

@@ -6,7 +6,7 @@ License: GPLv2
 Group: User Interface/X Hardware Support
 URL: http://sourceforge.net/projects/xiwtool/
 Source0: http://sourceforge.net/projects/xiwtool/files/%{name}-%{version}.tar.gz
-BuildRequires: wireless-tools
+#BuildRequires: wireless-tools
 BuildRequires: pam-devel
 BuildRequires: libX11-devel
 BuildRequires: libXpm-devel

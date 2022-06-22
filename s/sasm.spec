@@ -1,7 +1,7 @@
 %define		pkgname	SASM
 
 Name:		sasm
-Version:	3.10.1
+Version:	3.12.2
 Release:	1
 Summary:	IDE for assembly languages
 URL:		http://dman95.github.io/SASM/
@@ -50,9 +50,7 @@ install -m644 README* COPYING* %{buildroot}%{_docdir}/%{name}
 %{_datadir}/%{name}/include/io64.inc
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.10.1
+* Sun Jun 5 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.12.2
 - Rebuilt for Fedora
 * Wed Jul 11 2018 User <user@mail.net> 3.9.0-1
 - (06ec9cf) Update deps
-
-

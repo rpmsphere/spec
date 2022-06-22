@@ -77,16 +77,7 @@ EOF
 %files
 %doc *.pdf
 %{_bindir}/*
-%dir %{_datadir}/AlephOne
-%dir %{_datadir}/AlephOne/%{name}-%{version}
-%{_datadir}/AlephOne/%{name}-%{version}/Images
-%{_datadir}/AlephOne/%{name}-%{version}/Map
-%{_datadir}/AlephOne/%{name}-%{version}/Map.resources
-%{_datadir}/AlephOne/%{name}-%{version}/Music
-%{_datadir}/AlephOne/%{name}-%{version}/Shapes
-%{_datadir}/AlephOne/%{name}-%{version}/Sounds
-%dir %{_datadir}/AlephOne/%{name}-%{version}/MML
-%{_datadir}/AlephOne/%{name}-%{version}/MML/*
+%{_datadir}/AlephOne/%{name}-%{version}
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*.png
 

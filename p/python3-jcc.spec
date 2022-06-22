@@ -10,7 +10,7 @@ URL:            http://pypi.python.org/pypi/JCC/
 Source0:        http://pypi.python.org/packages/source/J/JCC/JCC-%{version}.tar.gz
 Requires:       java-openjdk
 BuildRequires:  gcc-c++
-BuildRequires:  python3-devel java-openjdk-devel lua
+BuildRequires:  python3-devel java-1.8.0-openjdk-devel lua
 
 %description
 JCC is a C++ code generator for producing the glue code necessary to call

@@ -9,7 +9,8 @@ Summary:	A stable, small and fast cross-platform GUI ToolKit
 URL: 		http://ede.sourceforge.net
 License: 	LGPL
 Group: 		System/Libraries
-BuildRequires: fltk13-devel
+#BuildRequires: fltk13-devel
+BuildRequires: fltk-devel
 BuildRequires: gcc-c++, jam, gettext, dbus-devel, doxygen, libpng-devel, libjpeg-devel
 
 %description

@@ -5,7 +5,7 @@ Summary:        Chinese Chess
 License:        freeware
 URL:            http://www.codefans.net
 Source0:        Chess-%{version}.zip
-BuildRequires:  java-devel-openjdk lua
+BuildRequires:  java-devel lua
 Requires:       jre
 BuildArch:      noarch
 

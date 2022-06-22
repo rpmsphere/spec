@@ -30,7 +30,7 @@ sed -i '/_pixmap = NULL;/d' interface/src/MainWindow.cpp
 sed -i 's|AM_GNU_GETTEXT|AC_PROG_RANLIB|' configure.in
 
 %build
-%autoreconf -ifv
+autoreconf -ifv
 %configure
 sed -i 's|@USE_INCLUDED_LIBINTL@|no|' intl/Makefile
 sed -i 's|@INTLLIBS@||' */src/Makefile

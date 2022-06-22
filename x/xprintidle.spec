@@ -1,11 +1,14 @@
+%undefine _missing_build_ids_terminate_build
+%undefine _debugsource_packages
+
 Name:           xprintidle
-Version:        0.2
+Version:        0.2.4
 Release:        1
 Summary:        Utility to print user's idle time in X
 License:        GPL-2.0
 Group:          System/X11/Utilities
-Url:            http://freecode.com/projects/xprintidle
-Source:         http://httpredir.debian.org/debian/pool/main/x/%{name}/%{name}_%{version}.orig.tar.gz
+URL:            http://freecode.com/projects/xprintidle
+Source:         http://httpredir.debian.org/debian/pool/main/x/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  pkgconfig(x11)
@@ -18,26 +21,21 @@ prints it to stdout (in milliseconds).
 
 %prep
 %setup -q
-sed -i 's/dist-lzma //' configure.ac
 
 %build
-export LIBS="-lXext"
-autoreconf -fi
-%configure \
-  --x-includes=%{_includedir} \
-  --x-libraries=%{_libdir}
-make %{?_smp_mflags}
+gcc -O2 -o %{name} -c %{name}.c -lXss -lX11 -lXext
 
 %install
-%make_install
+install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
+install -Dm644 %{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 
 %files
-%doc COPYING NEWS README AUTHORS ChangeLog
+%doc COPYING README.md AUTHORS
 %{_bindir}/%{name}
+%{_mandir}/man1/%{name}.1*
 
 %changelog
-* Wed Mar 29 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
-- Rebuild
-
+* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
+- Rebuilt for Fedora
 * Thu Jul  7 2016 sor.alexei@meowr.ru
 - Initial package

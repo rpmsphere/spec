@@ -7,7 +7,8 @@ Patch1:			%{name}-libxml2_not_in_usr_local.patch
 URL:			http://pyxmpp.jajcus.net/
 Group:			Development/Libraries/Python
 License:		GNU Library General Public License (LGPL)
-BuildRequires:	python2-devel libxml2-devel python2-dns
+BuildRequires:	python2-devel libxml2-devel
+#BuildRequires:  python2-dns
 
 %description
 PyXMPP is a Python XMPP (RFC 3920,3921) and Jabber

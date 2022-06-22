@@ -7,7 +7,7 @@ Group:		System/Libraries
 Source0:	%{name}.zip
 Source1:	%{name}.png
 URL:		https://code.google.com/p/libdgg/
-BuildRequires:	java-devel-openjdk
+BuildRequires:	java-devel
 BuildRequires:	ant
 Requires:	jre
 BuildArch:	noarch

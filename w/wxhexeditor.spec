@@ -11,7 +11,7 @@ URL:		http://wxhexeditor.sourceforge.net/
 Source0:	http://sourceforge.net/projects/wxhexeditor/files/wxHexEditor/v%{version}%20Beta/%{_name}-v%{version}-src.tar.xz
 BuildRequires:	gcc-c++
 BuildRequires:	pkgconfig automake
-BuildRequires:  wxGTK2-devel
+BuildRequires:  wxGTK-devel
 
 %description
 wxHexEditor is another GUI hex editor for open HUGE files and devices
@@ -29,7 +29,7 @@ sed -i 's|abs(|fabs(|' src/HexEditorCtrl/HexEditorCtrl.h
 cp /usr/share/automake-*/config.guess mhash
 
 %build
-PYTHON=/usr/bin/python2 CFLAGS=-fPIC make WXCONFIG=wx-config
+PYTHON=/usr/bin/python3 CFLAGS=-fPIC make WXCONFIG=wx-config
 
 %install
 %__install -D -m 755 %{_name} %{buildroot}%{_bindir}/%{_name}

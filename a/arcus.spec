@@ -7,7 +7,7 @@ Group: Amusements/Games
 URL: http://arcus.sourceforge.net/
 Source0: http://sourceforge.net/projects/arcus/files/arcus/%{name}-%{version}/%{name}-%{version}-source.tar.gz
 BuildArch: noarch
-BuildRequires: java-openjdk-devel lua
+BuildRequires: java-1.8.0-openjdk-devel lua
 
 %description
 Arcus is a Rubik's Cube Simulator written in Java featuring 3D display and

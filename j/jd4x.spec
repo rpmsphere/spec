@@ -8,7 +8,7 @@ Group:          User Interface/Desktops
 License:        GPL
 URL:		http://jdx.sourceforge.net/
 Source0: 	http://jaist.dl.sourceforge.net/project/jdx/Documentation%20%28JD4X%20Core%29/jd4x-stable-v%{version}/%{name}-src.tar.gz   
-BuildRequires: java-openjdk-devel lua
+BuildRequires: java-1.8.0-openjdk-devel lua
 BuildRequires: libX11-devel
 BuildRequires: libXpm-devel
 BuildRequires: libXt-devel

@@ -49,7 +49,7 @@ BuildRequires: pkgconfig(sm)
 BuildRequires: pkgconfig(xext) pkgconfig(xinerama) pkgconfig(xft) pkgconfig(xt) pkgconfig(x11) 
 BuildRequires: pkgconfig(xcursor)
 BuildRequires: pkgconfig(xproto)
-BuildRequires: xorg-x11-utils
+#BuildRequires: xorg-x11-utils
 BuildRequires: zlib-devel
 BuildRequires: autoconf
 #Provides: fltk = %{version}

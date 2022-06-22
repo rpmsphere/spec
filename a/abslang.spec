@@ -1,4 +1,5 @@
 %undefine _missing_build_ids_terminate_build
+%undefine _debugsource_packages
 %global _name abs
 
 Summary: The ABS Programming Language

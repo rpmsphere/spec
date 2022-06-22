@@ -6,7 +6,7 @@ Version: 1.1a
 Release: 32.1
 BuildRequires: libX11-devel libXt-devel libXext-devel
 BuildRequires: libXpm-devel libXmu-devel libXp-devel
-BuildRequires: libXau-devel Xaw3d-devel xorg-x11-utils
+BuildRequires: libXau-devel Xaw3d-devel
 BuildRequires: imake
 %define docdir %{_docdir}/%{name}-%{version}
 Source0: %{name}-%{version}-src.tar.gz

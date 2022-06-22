@@ -10,7 +10,7 @@ Source0:	http://software.amiga-hardware.com/software/solarsystem-0.2.2.tar.bz2
 BuildRequires: SDL-devel SDL_image-devel
 BuildRequires: mesa-libGL-devel mesa-libGLU-devel
 BuildRequires: pkgconfig 
-BuildRequires: gnome-screensaver 
+BuildRequires: xscreensaver 
 BuildRequires: kdelibs 
 BuildRequires: qca2 udisks2
 

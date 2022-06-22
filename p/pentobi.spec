@@ -1,5 +1,5 @@
 Name:           pentobi
-Version:        20.0
+Version:        21.0
 Release:        1
 Summary:        Program to play the board game Blokus
 License:        GPLv3
@@ -59,12 +59,13 @@ fi
 /usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %files
+%doc *.md
 %{_bindir}/*
 %{_datadir}/applications/*.desktop
 %{_datadir}/icons/hicolor/*/*/*
 %{_datadir}/mime/packages/*.xml
 %{_datadir}/thumbnailers/*
-%{_docdir}/%{name}
+#{_docdir}/%{name}
 #{_datadir}/help/*/%{name}
 %{_mandir}/man6/*
 %{_datadir}/metainfo/io.sourceforge.pentobi.appdata.xml
@@ -76,7 +77,7 @@ fi
 #{_datadir}/metainfo/io.sourceforge.pentobi.kde-thumbnailer.metainfo.xml
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 20.0
+* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 21.0
 - Rebuilt for Fedora
 * Mon Jan 04 2016 Juhani Numminen <juhaninumminen0@gmail.com> - 11.0-1
 - Created by borrowing from existing pentobi.spec files

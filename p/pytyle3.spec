@@ -7,7 +7,8 @@ Group: User Interface/X
 License: WTFPL
 URL: https://github.com/BurntSushi/pytyle3
 Source0: %{name}-master.zip
-BuildRequires: xpybutil, python2-devel
+#BuildRequires: xpybutil
+BuildRequires: python2-devel
 BuildArch: noarch
 
 %description

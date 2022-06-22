@@ -23,6 +23,7 @@ processing images.
 %setup -q -n zimg-%{version}
 cp %{SOURCE1} deps/
 sed -i 's|2\.0\.3|2.1.0-beta3|g' Makefile src/CMakeLists.txt
+sed -i 's|"/usr/lib" "/usr/local/lib"|"%{_libdir}"|' src/CMakeLists.txt
 sed -i '45i #define luaL_reg luaL_Reg' src/zcommon.h
 
 %build

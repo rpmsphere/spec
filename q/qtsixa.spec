@@ -8,7 +8,7 @@ URL: http://qtsixa.sourceforge.net/
 Version: 1.5.1
 Source: QtSixA-%{version}-src.tar.gz
 Release: 18.4
-BuildRequires: libpng-devel, python3-PyQt4-devel, jack-audio-connection-kit-devel
+BuildRequires: libpng-devel, python3-PyQt4-devel, pipewire-jack-audio-connection-kit-devel
 BuildRequires: dbus-devel, qt4-devel, glib2-devel, bluez-libs-devel, libusb-devel
 Requires: sixad
 

@@ -8,7 +8,7 @@ Group:		Sugar/Activities
 License:	LGPLv3
 Source0:	ClassroomPresenter-beta1.xo
 Source1:	Classroom Presenter for the OLPC XO-1 Laptop.doc
-BuildRequires:	python2, sugar-toolkit
+BuildRequires:	python2, sugar-toolkit-gtk3
 Requires:	sugar
 BuildArch:	noarch
 

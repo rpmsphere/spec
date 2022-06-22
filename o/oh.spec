@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
 
 Summary: A new Unix shell

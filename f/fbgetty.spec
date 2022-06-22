@@ -42,7 +42,7 @@ rm %{buildroot}%{_infodir}/dir
 
 %files
 %_sbindir/*
-#_infodir/*
+%_infodir/*
 %_mandir/man8/*
 %doc README docs/fbgetty-and-color.txt
 

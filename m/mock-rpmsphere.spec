@@ -1,9 +1,9 @@
 Name:           mock-rpmsphere
-Version:        34
+Version:        36
 Release:        1
 Summary:        Mock config files for the RPM Sphere Repository
 License:        BSD
-URL:            mock-rpmfusion-nonfree.spec
+URL:            https://rpmsphere.github.io/
 Source0:        %{name}-%{version}.zip
 BuildArch:      noarch
 Requires:       mock-rpmfusion-nonfree
@@ -25,5 +25,5 @@ install -pm 0644 *.cfg %{buildroot}%{_sysconfdir}/mock
 %config(noreplace) %{_sysconfdir}/mock/*.cfg
 
 %changelog
-* Sun Apr 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 34
+* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 36
 - Initial package

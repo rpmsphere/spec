@@ -8,7 +8,7 @@ URL:            http://gna.org/projects/mhwaveedit
 Source:         https://codeload.github.com/magnush/mhwaveedit/tar.gz/v%{version}#/%{name}-%{version}.tar.gz
 Requires:       pulseaudio
 Requires:       hicolor-icon-theme
-BuildRequires:  pulseaudio-libs-devel alsa-lib-devel jack-audio-connection-kit-devel
+BuildRequires:  pulseaudio-libs-devel alsa-lib-devel pipewire-jack-audio-connection-kit-devel
 BuildRequires:  libsndfile-devel libsamplerate-devel ladspa-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  gtk2-devel

@@ -1,5 +1,5 @@
 Name: qt5gtk2
-Version: 0.7
+Version: 0.8
 Release: 1
 Summary: GTK+2.0 integration plugins for Qt5
 License: GPLv2
@@ -35,7 +35,7 @@ install -Dm 0644 %name.csh %buildroot%_sysconfdir/profile.d/%name.csh
 %_libdir/qt5/plugins/styles/lib%name-style.so
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
+* Sun Jun 5 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
 - Rebuilt for Fedora
 * Sun Aug 14 2016 Hihin Ruslan <ruslandh@altlinux.ru> 0.1-alt1
 - initial build for ALT Linux Sisyphus

@@ -1,13 +1,14 @@
 Name: safeeyes
 Summary: Protect your eyes from eye strain
 Version: 2.1.3
-Release: 1
+Release: 2
 Group: Utility
 License: GPLv3
 URL: https://github.com/slgobinath/SafeEyes
 Source0: https://github.com/slgobinath/SafeEyes/archive/v%{version}.tar.gz#/SafeEyes-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: python3-devel
+Requires: libappindicator-gtk3
 
 %description
 Safe Eyes is a simple tool to remind you to take periodic breaks for your
@@ -51,5 +52,5 @@ gtk-update-icon-cache /usr/share/icons/hicolor
 %{_datadir}/icons/hicolor/*/*/%{name}*.png
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.3
+* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.3
 - Rebuilt for Fedora

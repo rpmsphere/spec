@@ -8,7 +8,7 @@ Group:            Development/Tools/IDE
 BuildRequires:    ant
 BuildRequires:    unzip
 BuildRequires:    desktop-file-utils
-BuildRequires:    java-devel-openjdk lua
+BuildRequires:    java-1.8.0-openjdk-devel lua
 Requires(post):   shared-mime-info
 Requires(postun): shared-mime-info
 BuildArch:        noarch

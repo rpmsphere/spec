@@ -1,38 +1,39 @@
 Name:       mer-spectacle
 Summary:    RPM Spec file generator and management tool
-Version:    0.30
-Release:    5.1
+Version:    0.32
+Release:    1
 Group:      Development/Tools
 License:    GPLv2+
 BuildArch:  noarch
 URL:        https://github.com/mer-tools/spectacle
-Source0:    spectacle-%{version}.tar.gz
+#Source0:    spectacle-%{version}.tar.gz
+Source0:    spectacle-master.zip
 Source1:    autospectacle.pl
 Source100:  spectacle.yaml
 Requires:   PyYAML
-Requires:   python2-urlgrabber
+Requires:   python3-urlgrabber
 Requires:   python3-cheetah
 Requires:   perl
-BuildRequires:  python2-devel
+BuildRequires:  python3-devel
 BuildRequires:  python3-cheetah
 
 %description
 A tool for managing and creating RPM spec files.
 
 %prep
-%setup -q -n spectacle-%{version}
+%setup -q -n spectacle-master
 
 %build
 make tmpls
-CFLAGS="$RPM_OPT_FLAGS" python2 setup.py build
+CFLAGS="$RPM_OPT_FLAGS" python3 setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python2 setup.py install --root=$RPM_BUILD_ROOT --prefix=%{_prefix}
+python3 setup.py install --root=$RPM_BUILD_ROOT --prefix=%{_prefix}
 make install-data DESTDIR=${RPM_BUILD_ROOT}
 install -m 0755 %{SOURCE1} ${RPM_BUILD_ROOT}%{_bindir}
 
-sed -i 's|/usr/bin/python -tt|/usr/bin/python2 -tt|' %{buildroot}%{_bindir}/*
+sed -i 's|/usr/bin/python -tt|/usr/bin/python3 -tt|' %{buildroot}%{_bindir}/*
 
 %files
 %doc README.md AUTHORS COPYING TODO
@@ -40,10 +41,10 @@ sed -i 's|/usr/bin/python -tt|/usr/bin/python2 -tt|' %{buildroot}%{_bindir}/*
 %dir %{_datadir}/spectacle
 %{_datadir}/spectacle/*
 %{_bindir}/*
-%{python2_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
-* Mon Aug 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.30
+* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.32
 - Rebuilt for Fedora
 * Mon Jul  2 2012 Marko Saukko <sage@merproject.org> - 0.25
 - Release 0.25

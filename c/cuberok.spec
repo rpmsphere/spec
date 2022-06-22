@@ -9,7 +9,7 @@ Group:		Productivity/Multimedia/Sound/Players
 Source:		trunk-%{version}.tar.bz2
 Vendor:		Vasiliy Makarov <drmoriarty.0@gmail.com>
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, pkgconfig, pkgconfig(QtGui), pkgconfig(QtWebKit), taglib-devel, phonon-devel, pkgconfig(gstreamer-plugins-base-0.10) 
+BuildRequires:	gcc-c++, pkgconfig, pkgconfig(QtGui), pkgconfig(QtWebKit), taglib-devel, phonon-devel, gstreamer1-plugins-base-devel
 #BuildRequires:  yajl-devel <= 1.0.7
 Requires:	cuberok_engine >= %version 
 

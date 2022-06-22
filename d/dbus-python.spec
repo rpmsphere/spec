@@ -24,7 +24,7 @@ D-Bus python bindings for use with python programs.
 %package -n python2-dbus
 Summary: D-Bus bindings for python2
 BuildRequires: python2-devel
-BuildRequires: python2dist(setuptools)
+BuildRequires: python2-setuptools
 Provides: dbus-python dbus-python2
 
 %description -n python2-dbus

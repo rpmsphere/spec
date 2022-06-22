@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           coolmail
-BuildRequires:  xorg-x11-utils libX11-devel libXt-devel libXext-devel
+BuildRequires:  libX11-devel libXt-devel libXext-devel
 Version:        1.3
 Release:        5.1
 License:        GPL v2 or later

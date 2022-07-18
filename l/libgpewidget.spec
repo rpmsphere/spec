@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name: libgpewidget
 License: GPL
 Group: System Environment/Libraries

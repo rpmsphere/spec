@@ -1,6 +1,8 @@
+%undefine _debugsource_packages
+
 Name:          libpthread-stubs
-Version:       0.2
-Release:       5.1
+Version:       0.4
+Release:       1
 Summary:       Weak aliases for pthread functions not provided in libc
 Group:         System/Libraries
 URL:           http://xcb.freedesktop.org
@@ -47,23 +49,23 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall
+%make_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%{_libdir}/libpthread-stubs.so.*
+#{_libdir}/libpthread-stubs.so.*
 
 %files devel
-%{_libdir}/libpthread-stubs.a
-%{_libdir}/libpthread-stubs.la
-%{_libdir}/libpthread-stubs.so
-%exclude %{_libdir}/pkgconfig/*.pc
+#{_libdir}/libpthread-stubs.a
+#{_libdir}/libpthread-stubs.la
+#{_libdir}/libpthread-stubs.so
+%{_libdir}/pkgconfig/*.pc
 %doc COPYING README
 
 %changelog
-* Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2
+* Sun Jul 3 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
 - Rebuilt for Fedora
 * Sat Oct 10 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 0.2-2mamba
 - devel package: don't obsolete main package

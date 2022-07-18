@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %define __python /usr/bin/python2
 %global _name nlopt
 
@@ -76,10 +77,6 @@ test -d %{buildroot}%{_prefix}/lib && \
 
 %clean
 rm -rf %{buildroot}
-
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README TODO

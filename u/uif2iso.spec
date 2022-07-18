@@ -17,11 +17,11 @@ cp %{SOURCE1} .
 cat /etc/fstab
 
 %build
-%cmake .
-%cmake_build
+cmake -DCMAKE_INSTALL_PREFIX=/usr .
+%make_build
 
 %install
-%cmake_install
+%make_install
 
 %clean
 rm -rf "$RPM_BUILD_ROOT"

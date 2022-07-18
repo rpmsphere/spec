@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:           pcsc-lite-towitoko
 BuildRequires:  libusb-devel
 BuildRequires:  pcsc-lite-devel

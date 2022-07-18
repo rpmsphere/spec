@@ -1,4 +1,6 @@
+%global __os_install_post %{nil}
 %undefine _debugsource_packages
+
 Name:		openfoam
 Version:	2.2.2
 Release:	16.1

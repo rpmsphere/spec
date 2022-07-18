@@ -48,7 +48,7 @@ PNMixer is a fork of OBMixer with a number of additions. These include:
 desktop-file-install \
     --dir=%{buildroot}%{_sysconfdir}/xdg/autostart \
     --add-category="Audio" \
-    	%{_host}/data/desktop/pnmixer.desktop
+    	*-linux-build/data/desktop/pnmixer.desktop
 
 %find_lang %{name}
 

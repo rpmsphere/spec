@@ -26,10 +26,10 @@ sed -i 's|menu, out x, out y|menu, ref x, ref y|' src/TerminalView.vala
 
 %build
 %cmake .
-make %{?_smp_mflags}
+%cmake_build
 
 %install
-make DESTDIR=%{buildroot} install
+%cmake_install
 
 %clean
 rm -rf %{buildroot}

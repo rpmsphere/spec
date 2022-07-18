@@ -8,7 +8,7 @@ URL:            http://multiget.sourceforge.net
 Source0:        multiget_1.2.1~svn-1.tar.gz
 Source1:        multiget.desktop
 Source2:        MultiGet.png
-BuildRequires:  wxGTK-devel gcc-c++ libstdc++-devel make
+BuildRequires:  wxGTK2-devel gcc-c++ libstdc++-devel make
 BuildRequires:  intltool libglade2-devel
 
 %description

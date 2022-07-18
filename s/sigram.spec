@@ -45,7 +45,7 @@ rm -rf %{buildroot}
 * Thu Jun 04 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
 - Rebuilt for Fedora
 * Thu Jun 19 2014 Markus Dorfer
-- use of %doc variable
+- use of %%doc variable
 - optimized build with sed
 * Mon Jun 16 2014 Markus Dorfer
 - update to version 0.5.5.2

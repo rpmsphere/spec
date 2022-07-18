@@ -1,7 +1,7 @@
-Summary:         Native ZFS for Linux
+Summary:         OpenZFS for Linux
 Group:           Utilities/System
 Name:            zfs
-Version:         0.8.4
+Version:         2.1.5
 Release:         1
 License:         CDDL
 URL:             http://zfsonlinux.org/
@@ -20,9 +20,8 @@ developed for Solaris and is now maintained by the Illumos community.
 ZFS on Linux, which is also known as ZoL, is currently feature complete.
 It includes fully functional and stable SPA, DMU, ZVOL, and ZPL layers.
 
-
 %package devel
-Summary:         ZFS File System User Headers
+Summary:         OpenZFS File System User Headers
 Group:           Development/Libraries
 Requires:        %{name}
 Requires:        zlib e2fsprogs
@@ -33,7 +32,7 @@ The %{name}-devel package contains the header files needed for building
 additional applications against the %{name} libraries.
 
 %package test
-Summary:         ZFS File System Test Infrastructure
+Summary:         OpenZFS File System Test Infrastructure
 Group:           Utilities/System
 Requires:        %{name}
 Requires:        parted lsscsi
@@ -45,7 +44,7 @@ configurations.  The test infrastructure additionally integrates with
 various system profiling tools to facilitate an in depth analysis.
 
 %package dracut
-Summary:         ZFS Dracut Module
+Summary:         OpenZFS Dracut Module
 Group:           System Environment/Base
 Requires:        %{name}
 Requires:        dracut
@@ -56,6 +55,7 @@ which are ZFS aware.
 
 %prep
 %setup -q
+#sed -i 's|:3|:4|' configure
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
@@ -87,10 +87,12 @@ rm -rf $RPM_BUILD_ROOT
 /etc/sudoers.d/zfs
 /etc/sysconfig/zfs
 %{python3_sitelib}/*
+%{_libdir}/security/pam_zfs_key.so
+%{_datadir}/pam-configs/zfs_key
 
 %files devel
 %{_includedir}/*
-%{_datadir}/pkgconfig/*
+%{_libdir}/pkgconfig/*
 
 %files test
 %{_libexecdir}/zfs/*
@@ -104,6 +106,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/initramfs-tools/scripts/local-top/zfs
 %{_datadir}/initramfs-tools/scripts/zfs
 %{_datadir}/initramfs-tools/conf.d/zfs
+%{_datadir}/initramfs-tools/hooks/zfsunlock
+%{_datadir}/initramfs-tools/zfsunlock
 
 %post
 [ -x /sbin/chkconfig ] && /sbin/chkconfig --add zfs
@@ -114,5 +118,5 @@ exit 0
 exit 0
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.4
+* Sun Jul 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.5
 - Rebuilt for Fedora

@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %define _name liquid_feedback_frontend
 
 Name:		liquidfeedback-frontend

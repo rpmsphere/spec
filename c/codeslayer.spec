@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:           codeslayer
 Version:        4.3.1
 Release:        5.1

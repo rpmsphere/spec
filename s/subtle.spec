@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %undefine _debugsource_packages
 
 Name:            subtle
@@ -25,11 +26,11 @@ Authors:
 
 %prep
 %setup -q -n %{name}-%{version}-xi
-sed -i -e '260,263d' -e 's|-I\.|-I. -I/usr/include/freetype2 -Wno-incompatible-pointer-types|' Rakefile
+sed -i -e '260,263d' -e 's|-I\.|-I. -I/usr/include/freetype2 -Wno-incompatible-pointer-types -Wno-address -Wno-switch|' Rakefile
 sed -i '1i #include <ruby.h>' src/shared/shared.h
 
 %build
-rake destdir=$RPM_BUILD_ROOT sysconfdir=$RPM_BUILD_ROOT/etc bindir=$RPM_BUILD_ROOT/usr/bin datadir=$RPM_BUILD_ROOT/usr/share/subtle/ mandir=$RPM_BUILD_ROOT/%_mandir manprefix=$RPM_BUILD_ROOT/%_mandir help
+rake destdir=$RPM_BUILD_ROOT sysconfdir=$RPM_BUILD_ROOT/etc bindir=$RPM_BUILD_ROOT/usr/bin datadir=$RPM_BUILD_ROOT/usr/share/subtle/ mandir=$RPM_BUILD_ROOT/%_mandir manprefix=$RPM_BUILD_ROOT/%_mandir build
 
 %install
 rake install
@@ -38,15 +39,13 @@ install -d %{buildroot}%{_mandir}/man1
 mv %{buildroot}/usr/share/man/*.1 %{buildroot}%{_mandir}/man1
 install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/xsessions/%{name}.desktop
 
-
-
 %files
 %doc ChangeLog AUTHORS INSTALL COPYING NEWS
 /etc/xdg/subtle
 %{_bindir}/*
 %{_datadir}/ruby/%{name}
 %{_datadir}/xsessions/%{name}.desktop
-%{_mandir}/man1/*.1.*
+%{_mandir}/man1/*.1*
 
 %changelog
 * Mon Feb 10 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.3224

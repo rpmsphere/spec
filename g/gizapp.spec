@@ -7,7 +7,6 @@ Source: 	giza-pp-v%{version}.tar.gz
 BuildRequires: 	glibc-devel, glibc-headers
 BuildRequires:  libstdc++-devel
 Requires:	tcsh, libstdc++
-Buildroot: 	%{_tmppath}/%{name}-root
 URL:		http://code.google.com/p/giza-pp/
 
 %description
@@ -20,6 +19,7 @@ training some of the alignment models.
 %setup -q -n giza-pp
 
 %build
+export CC=clang CXX=clang++
 make
 
 %install
@@ -34,7 +34,6 @@ install -m 755 mkcls-v2/mkcls %{buildroot}%{_bindir}
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/*
 
 %changelog

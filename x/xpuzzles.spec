@@ -1,13 +1,13 @@
 Name:           xpuzzles
 BuildRequires:  libX11-devel, libXt-devel
 BuildRequires:  mesa-libGLU-devel
-Version:        7.7.5
-Release:        1.1
+Version:        8.5.1
+Release:        1
 Summary:        Some games of skill under X11
 License:        BSD-3-Clause
 Group:          Amusements/Games/Board/Puzzle
-URL:            http://www.tux.org/~bagleyd/puzzles.html
-Source:         %{name}-%{version}.tar.bz2
+URL:            https://sillycycle.com/puzzles.html
+Source:         %{name}-%{version}.tar.xz
 %define progs barrel cubes dial dino hexagons mball mlink oct panex pyraminx rubik skewb threed triangles
 
 %description
@@ -57,7 +57,7 @@ done
 %verify(not md5 size mtime) %config(noreplace) %attr(664,games,games) /var/games/xpuzzles/*.scores
 
 %changelog
-* Wed Dec 17 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 7.7.5
+* Sun Jul 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 8.5.1
 - Rebuilt for Fedora
 * Sat May 12 2012 opensuse@dstoecker.de
 - update to version 7.6.3

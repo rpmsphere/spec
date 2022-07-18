@@ -1,3 +1,6 @@
+%global __os_install_post %{nil}
+
+
 Name:           sqlheavy
 Version:        0.2.0git
 Release:        16.1

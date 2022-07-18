@@ -33,7 +33,7 @@ sed -i 's|-std=c99|-std=c99 -fPIC -lm|' `find . -name *.make`
 rm -rf %{buildroot}/usr/doc/
 %find_lang %{name}
 mkdir -p %{buildroot}%{_libdir}/%{name}
-install -m755 %{_host}/src/lib*.so %{buildroot}%{_libdir}/%{name}
+install -m755 *-linux-build/src/lib*.so %{buildroot}%{_libdir}/%{name}
 
 %files -f %{name}.lang
 %doc doc/*

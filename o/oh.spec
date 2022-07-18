@@ -3,7 +3,7 @@
 
 Summary: A new Unix shell
 Name: oh
-Version: 0.8.0
+Version: 0.8.1
 Release: 1
 License: MIT
 Group: Development/Language
@@ -39,5 +39,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/%{name}
 
 %changelog
-* Sun Sep 19 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0
+* Sun Jun 19 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
 - Rebuilt for Fedora

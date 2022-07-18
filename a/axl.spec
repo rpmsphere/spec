@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:         axl
 Summary:      XML Parsing Library
 URL:          http://xml.aspl.es/

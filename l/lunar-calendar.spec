@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name: lunar-calendar
 Version: 3.0.0
 Release: 8.1
@@ -39,10 +41,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
 
 %files
 %{_libdir}/liblunar-calendar-*.so.*

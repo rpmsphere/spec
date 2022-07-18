@@ -23,6 +23,7 @@ and at signals SIGTERM, SIGINT, SIGQUIT and SIGABRT (arpalert stops itself).
 %prep
 %setup -q
 %patch0 -p0
+sed -i 's|sys/sysctl.h|linux/sysctl.h|' configure*
 
 %build
 export CC="gcc -Wl,--allow-multiple-definition"

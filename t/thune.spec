@@ -1,5 +1,3 @@
-%undefine _debugsource_packages
-
 Summary: Thune Scripting Language
 Name: thune
 Version: 0.0.5
@@ -15,6 +13,7 @@ Thune is an experimental interpreted language mixing ideas from Forth and Rebol.
 
 %prep
 %setup -q
+sed -i '101s|printf(|printf("%s",|' console.c
 
 %build
 cmake .

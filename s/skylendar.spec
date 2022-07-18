@@ -52,6 +52,7 @@ library, with multitasking charts and data stored in a SQL database
 #%patch3 -p1
 sed -i 's|pgsql/libpq-fe.h|libpq-fe.h|' src/astrosql.h
 sed -i 's|pgsql/libpq/libpq-fs.h|libpq/libpq-fs.h|' src/astrosql.cpp
+sed -i '28i #include <QPainterPath>' src/astrorings.cpp
 
 %build
 %cmake -DCMAKE_BUILD_Type=Release .

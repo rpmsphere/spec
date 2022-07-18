@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name: discover
 Summary: Hardware Detection System
 Version: 2.1.2
@@ -36,7 +38,7 @@ cp AUTHORS LICENSE RELEASE README %{buildroot}%{_datadir}/doc/%{name}
 %files
 %{_bindir}/*
 %{_sbindir}/*
-%{_mandir}/man?/*.?.*
+%{_mandir}/man?/*
 %{_libdir}/lib*.so.*
 %{_datadir}/%{name}
 %{_sysconfdir}/%{name}*

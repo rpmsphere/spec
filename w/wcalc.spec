@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Summary: 	Analyses and synthesis of transmission lines
 Name: 		wcalc
 Version: 	1.1
@@ -43,10 +45,6 @@ export LDFLAGS=-Wl,--allow-multiple-definition
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post
-
-%postun
 
 %files
 %doc README ChangeLog AUTHORS TODO

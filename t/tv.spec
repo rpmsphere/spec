@@ -9,7 +9,7 @@ URL: http://code.google.com/p/treeviewx/
 Vendor: Roderic D. M. Page <r.page@bio.gla.ac.uk>
 BuildRequires: libpng-devel
 BuildRequires: gcc-c++
-BuildRequires: wxGTK-devel
+BuildRequires: wxGTK2-devel
 
 %description
 TreeView X is an open source program to display phylogenetic trees on Linux,

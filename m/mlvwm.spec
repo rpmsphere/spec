@@ -2,7 +2,7 @@
 
 Summary: Macintosh-like Virtual Window Manager
 Name: mlvwm
-Version: 0.9.1
+Version: 0.9.4
 Release: 1
 License: MIT
 Group: User Interface/X
@@ -54,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/mlvwm.1*
 
 %changelog
-* Mon Dec 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.1
+* Sun Jun 19 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
 - Rebuilt for Fedora

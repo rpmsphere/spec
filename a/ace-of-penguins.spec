@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name: ace-of-penguins
 Summary: Penguin-themed solitaire games
 Version: 1.4

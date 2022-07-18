@@ -1,13 +1,13 @@
-Name: brightness
+Name: brightness-controller
 Summary: Brightness Controller
-Version: 1.0.1
-Release: 3.1
+Version: 2.3.4git
+Release: 1
 Group: Converted/extras
 License: GPLv3
 URL: https://github.com/lordamit/Brightness
 Source0: Brightness-develop.zip
 BuildArch: noarch
-Requires: python-pyside
+Requires: python3-pyside2
 
 %description
 Brightness Controller is the only GUI application for Linux that allows you to
@@ -24,7 +24,7 @@ mkdir -p %{buildroot}%{_bindir}
 cat > %{buildroot}%{_bindir}/%{name} <<EOF
 #!/usr/bin/bash
 cd %{_datadir}/%{name}
-exec python2 init.py
+exec python3 init.py
 EOF
 chmod +x %{buildroot}%{_bindir}/%{name}
 mkdir -p %{buildroot}%{_datadir}/applications
@@ -40,9 +40,9 @@ Type=Application
 Categories=Utility;
 EOF
 cp -a src %{buildroot}%{_datadir}/%{name}
-install -Dm644 img/%{name}.svg %{buildroot}%{_datadir}/pixmaps/%{name}.svg 
+install -Dm644 img/brightness.svg %{buildroot}%{_datadir}/pixmaps/%{name}.svg 
 
-sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_datadir}/%{name}/*.py
 
 %files
 %{_bindir}/%{name}
@@ -51,5 +51,5 @@ sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.p
 %{_datadir}/%{name}
 
 %changelog
-* Wed May 25 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
+* Sun Jun 19 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.4git
 - Rebuilt for Fedora

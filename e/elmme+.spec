@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 %define _name elm
 %define versionbase 2.5
 %define versiontag ME+ 
@@ -118,7 +120,7 @@ install -m 644 shared_libs/resolv/README.ME+ $XX/shared_libs/resolv/README.ME+
 #
 # main-package
 $RPM_BUILD_ROOT%{fix_prefix}/lib/elmregister rpm-list -u root -g root -R $RPM_BUILD_ROOT > XXtmp1
-sort XXtmp1 | uniq | sed 's|man1/\(.*\)\.1$|man1/\1.1.gz|' > XXtmp
+sort XXtmp1 | uniq | sed 's|man1/\(.*\)\.1$|man1/\1.1|' > XXtmp
 cp XXtmp $RPM_BUILD_ROOT%{fix_prefix}/lib/elm.filelist-main.rpm
 rm XXtmp1
 # mod package

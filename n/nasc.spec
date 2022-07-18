@@ -66,8 +66,7 @@ sed -i '8i using namespace std;' libqalculatenasc/QalculateNasc.cc
 %cmake_build
 
 %install
-cd %{_host}
-%make_install INSTALL_ROOT="%{buildroot}"
+%cmake_install
 ln -s %{app_id} %{buildroot}%{_bindir}/%{name}
 
 %post

@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Summary: Programs and libs needed for manipulating reiserfs partitions
 Name: progsreiserfs
 Version: 0.3.0.4
@@ -51,11 +53,7 @@ the package reiserfs-utils.
 %{_sbindir}/resizefs.reiserfs
 %{_sbindir}/tunefs.reiserfs
 %{_datadir}/aclocal/progsreiserfs.m4
-%{_mandir}/man8/cpfs.reiserfs.8.gz
-%{_mandir}/man8/mkfs.reiserfs.8.gz
-%{_mandir}/man8/reiserfs.8.gz
-%{_mandir}/man8/resizefs.reiserfs.8.gz
-%{_mandir}/man8/tunefs.reiserfs.8.gz
+%{_mandir}/man8/*.8*
 
 %files devel
 %{_includedir}/dal

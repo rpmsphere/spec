@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:			aranym
 Version:		1.0.2
 Release:		4.1
@@ -28,10 +30,11 @@ Didier MEQUIGNON, Patrice Mandin and others (see AUTHORS for a full list).
 
 %prep
 %setup -q
+sed -i '54i #include <cstddef>' src/natfeat/nfcdrom_linux.cpp
 
 %build
+export CXXFLAGS="-std=gnu++11 -fPIE"
 # JIT only works on i586
-#
 %ifarch %ix86
 %configure --disable-nat-debug --enable-jit-compiler --enable-nfjpeg
 %{__make} depend

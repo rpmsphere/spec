@@ -1,4 +1,4 @@
-#global __python %{__python2}
+%global __os_install_post %{nil}
 
 Name:          opentts
 Version:       0.1
@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{python2_sitearch}/opentts
 %{python2_sitearch}/opentts/*
 %{python2_sitearch}/opentts_config/*
-%{_infodir}/*.info.gz
+%{_infodir}/*.info*
 %exclude %{_infodir}/dir
 %doc AUTHORS COPYING README TODO
 

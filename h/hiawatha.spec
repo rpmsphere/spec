@@ -1,3 +1,6 @@
+%global __os_install_post %{nil}
+
+
 Summary:	An advanced and secure webserver for Unix
 Name:		hiawatha
 Version:	10.12
@@ -42,7 +45,7 @@ It has of course also thoroughly been checked and tested for buffer overflows.
 %install
 %cmake_install
 mkdir -p %{buildroot}/var/log/%{name}
-install -D -m 644 logrotate.d/%name %{buildroot}%{_sysconfdir}/logrotate.d/%name
+install -D -m 644 */logrotate.d/%name %{buildroot}%{_sysconfdir}/logrotate.d/%name
 perl -pi -e 's|/usr/var/log/hiawatha/|/var/log/hiawatha/|' %{buildroot}%{_sysconfdir}/%name/hiawatha.conf
 install -D -m 755 %{SOURCE1} %{buildroot}%{_initrddir}/%{name}
 

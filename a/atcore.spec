@@ -35,6 +35,8 @@ developing applications that use %name.
 %install
 rm -rf $RPM_BUILD_ROOT
 %cmake_install
+mkdir -p %{buildroot}%{_libdir}/qt5
+mv %{buildroot}%{_libdir}/plugins %{buildroot}/usr/mkspecs %{buildroot}%{_libdir}/qt5
 
 %clean
 rm -rf $RPM_BUILD_ROOT

@@ -28,7 +28,7 @@ export LDFLAGS=-Wl,--allow-multiple-definition
 %cmake_build
 
 %install
-cd %{_host}
+cd *-linux-build
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -d %{buildroot}%{_datadir}/applications

@@ -29,6 +29,7 @@ commercial tools, such as Lotus ScreenCam or Camtasia Studio.
 sed -i 's/shmstr/shmproto/' src/capture.c
 
 %build
+export CC=clang CXX=clang++
 export LIBS="-lX11 -lXext -lz"
 %configure
 make

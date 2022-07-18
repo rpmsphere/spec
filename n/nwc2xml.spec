@@ -9,7 +9,7 @@ License:	GPL
 URL:		https://github.com/azmeuk/nwc2xml/
 Group:		Publishing
 Source:		azmeuk-%{name}-%{svn}.zip
-BuildRequires:	wxGTK-devel
+BuildRequires:	wxGTK2-devel
 
 %description
 nwc2xml is a command line utility that converts the .nwc file

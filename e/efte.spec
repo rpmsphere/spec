@@ -33,13 +33,15 @@ X11 version of the eFTE editor
 %prep
 %autosetup -p1 -n efte-master
 sed -i 's|-Wall|-Wall -fPIE|' src/CMakeLists.txt
-%cmake -G Ninja
+cmake -DCMAKE_INSTALL_PREFIX=/usr -G Ninja
 
 %build
-%ninja_build -C %{_host}
+%ninja_build 
+#-C *-linux-build
 
 %install
-%ninja_install -C %{_host}
+%ninja_install 
+#-C *-linux-build
 
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/org.openmandriva.%{name}.desktop << EOF

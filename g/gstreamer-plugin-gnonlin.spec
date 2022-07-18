@@ -2,7 +2,7 @@
 
 Name: gstreamer-plugin-gnonlin
 Version: 0.10.16
-Release: 11.1
+Release: 2.1
 Summary: GStreamer extension library for non-linear editing
 Group: Video
 License: LGPL
@@ -10,7 +10,8 @@ URL: http://gstreamer.freedesktop.org/
 Source0: %oname-%version.tar
 Source1: common.tar
 Patch: %oname-%version.patch
-BuildRequires: gnome-libs-devel gtk-doc w3m
+#BuildRequires: gnome-libs-devel
+BuildRequires: gtk-doc w3m
 BuildRequires: gstreamer-plugins-base-devel
 #BuildRequires: python-encodings
 

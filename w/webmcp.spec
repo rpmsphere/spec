@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
 

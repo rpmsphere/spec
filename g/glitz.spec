@@ -1,4 +1,6 @@
+%global __os_install_post %{nil}
 %undefine _debugsource_packages
+
 Name:           glitz
 Version:        0.5.6
 Release:        1
@@ -74,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/glitz.h
 %{_libdir}/libglitz.so
 %{_libdir}/pkgconfig/glitz.pc
-%{_mandir}/man3/glitz.3.gz
+%{_mandir}/man3/glitz.3*
 
 %files glx
 %{_libdir}/libglitz-glx.so.*
@@ -83,7 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/glitz-glx.h
 %{_libdir}/libglitz-glx.so
 %{_libdir}/pkgconfig/glitz-glx.pc
-%{_mandir}/man3/glitz-glx.3.gz
+%{_mandir}/man3/glitz-glx.3*
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.6

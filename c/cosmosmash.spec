@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:			cosmosmash
 Version:		1.4.8
 Summary:		Clone of the Intellivision(TM) game Astrosmash(TM)

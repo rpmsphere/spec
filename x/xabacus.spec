@@ -1,10 +1,10 @@
 Name:          xabacus
-Version:       8.0.3
-Release:       22.1
+Version:       8.5.1
+Release:       1
 Summary:       An implementation of the classic Chinese abacus
 Group:         Applications/Educational
-URL:           http://www.tux.org/~bagleyd/abacus.html
-Source:        http://www.tux.org/~bagleyd/abacus/%{name}-%{version}.tar.xz
+URL:           https://sillycycle.com/abacus.html
+Source:        %{name}-%{version}.tar.xz
 License:       BSD
 BuildRequires: audiofile-devel
 BuildRequires: esound-devel
@@ -70,7 +70,7 @@ rm -rf %{buildroot}
 %{_mandir}/man6/*
 
 %changelog
-* Sat May 30 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 8.0.3
+* Sun Jul 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 8.5.1
 - Rebuilt for Fedora
 * Mon Feb 07 2011 Automatic Build System <autodist@mambasoft.it> 7.6.8-1mamba
 - automatic update by autodist

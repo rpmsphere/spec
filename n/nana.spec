@@ -5,7 +5,6 @@ Group:        System
 License:      BSL-1.0
 Version:      1.7.4
 Release:      1
-#Source0:      https://github.com/cnjinhao/nana/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source0:      %{name}_%{version}.zip
 BuildRequires: cmake
 BuildRequires: libXft-devel
@@ -27,19 +26,15 @@ cross-platform GUI applications with modern C++11 style.
 %setup -q -n %{name}
 
 %build
-%cmake -DNANA_CMAKE_SHARED_LIB:BOOL=ON
-sed -i 's|$<1:-static-libgcc -static-libstdc++> $<0:-static-libgcc -static-libstdc++>|-static-libgcc -static-libstdc++ -static-libgcc -static-libstdc++|' %_host/CMakeFiles/nana.dir/link.txt
-%cmake_build
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_SHARED_LIBS:BOOL=ON .
+sed -i 's|$<1:-static-libgcc -static-libstdc++> $<0:-static-libgcc -static-libstdc++>|-static-libgcc -static-libstdc++ -static-libgcc -static-libstdc++|' CMakeFiles/nana.dir/link.txt
+%make_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d %{buildroot}%{_includedir}
 cp -a include/nana %{buildroot}%{_includedir}
-install -Dm755 %_host/libnana.so %{buildroot}%{_libdir}/libnana.so
-
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
+install -Dm755 libnana.so %{buildroot}%{_libdir}/libnana.so
 
 %files devel
 %doc LICENSE *.html ChangeLog.txt

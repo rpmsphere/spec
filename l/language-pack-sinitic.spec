@@ -1,6 +1,6 @@
 Name: language-pack-sinitic
 Summary: Translations for some sinitic languages
-Version: 2022.1
+Version: 2022.7
 Release: 1
 License: Open Source
 Group: Translations
@@ -91,7 +91,8 @@ make
 %{_datadir}/azardi/chrome/locale/cmn*/azardi2.properties
 %{_datadir}/pebl/battery/SNARC/translations/cmn*.txt
 /lib/python3.*/site-packages/*/*/cmn*/LC_MESSAGES/*.mo
-/opt/Nelson/locale/cmn*/LC_MESSAGES/nelson.mo
+/lib/python3.*/site-packages/*/*/*/cmn*/LC_MESSAGES/*.mo
+%{_libexecdir}/nelson/locale/cmn*/LC_MESSAGES/nelson.mo
 %{_libdir}/python2.*/site-packages/Editra/locale/cmn*/LC_MESSAGES/Editra.mo
 %{_libdir}/*/*/*_cmn*.qm
 %{_datadir}/PrusaSlicer/localization/cmn*/PrusaSlicer.mo
@@ -152,7 +153,8 @@ make
 %{_datadir}/azardi/chrome/locale/yue*/azardi2.properties
 %{_datadir}/pebl/battery/SNARC/translations/yue*.txt
 /lib/python3.*/site-packages/*/*/yue*/LC_MESSAGES/*.mo
-/opt/Nelson/locale/yue*/LC_MESSAGES/nelson.mo
+/lib/python3.*/site-packages/*/*/*/yue*/LC_MESSAGES/*.mo
+%{_libexecdir}/nelson/locale/yue*/LC_MESSAGES/nelson.mo
 %{_libdir}/python2.*/site-packages/Editra/locale/yue*/LC_MESSAGES/Editra.mo
 %{_libdir}/*/*/*_yue*.qm
 %{_datadir}/PrusaSlicer/localization/yue*/PrusaSlicer.mo
@@ -165,5 +167,5 @@ make
 rm -rf %{buildroot}
 
 %changelog
-* Sun Jan 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.1
+* Sun Jul 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.7
 - Rebuilt for Fedora

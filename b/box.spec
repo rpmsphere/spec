@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name: box
 Summary: Figure description language
 Version: 0.4.0
@@ -37,7 +39,7 @@ make install DESTDIR=%{buildroot}
 %{_bindir}/%{name}*
 %{_libdir}/%{name}*
 %{_libdir}/libboxcore*.so.*
-%{_mandir}/man1/%{name}.1.*
+%{_mandir}/man1/%{name}.1*
 
 %files devel
 %{_includedir}/%{name}*

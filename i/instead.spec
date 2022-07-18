@@ -1,22 +1,19 @@
-%undefine _debugsource_packages
-
 Name:		instead
-Version:	1.9.0
-Release:	10.4
+Version:	3.4.1
+Release:	1
 Summary:	Simply text adventures/visual novels engine and game
 License:	GPLv2
 Group:		Games/Adventure
-URL:		http://instead.googlecode.com
-Source0:	http://instead.googlecode.com/files/%{name}_%{version}.tar.gz
+URL:		https://github.com/instead-hub/instead
+Source0:	https://github.com/instead-hub/instead/releases/download/%{version}/%{name}_%{version}.tar.gz
 Patch0:		instead-desktop.patch
-BuildRequires:	pkgconfig(gtk+-2.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(lua)
-BuildRequires:	pkgconfig(sdl)
-BuildRequires:	pkgconfig(SDL_mixer)
-BuildRequires:	pkgconfig(SDL_image)
-BuildRequires:	pkgconfig(SDL_ttf)
+BuildRequires:	pkgconfig(SDL2_mixer)
+BuildRequires:	pkgconfig(SDL2_image)
+BuildRequires:	pkgconfig(SDL2_ttf)
 BuildRequires:	pkgconfig(zlib)
-Requires:	instead-launcher
+BuildRequires: SDL2-devel
 
 %description
 Simply text adventures/visual novels engine and game.
@@ -25,12 +22,9 @@ text quests and classical 90'ss quests.
 
 %prep
 %setup -q
-%patch0 -p1
-#sed -i 's|Mix_LoadMUS_RW(mus->rw);|Mix_LoadMUS_RW(mus->rw,0);|' src/sdl-instead/sound.c
 
 %build
-rpm -e SDL2-devel --nodeps||:
-echo 2 | ./configure.sh
+echo -e "2\n/usr" | ./configure.sh
 make PREFIX=/usr
 
 %install
@@ -45,5 +39,5 @@ make PREFIX=/usr
 %{_mandir}/*/%{name}.*
 
 %changelog
-* Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.0
+* Sun Jun 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.1
 - Rebuilt for Fedora

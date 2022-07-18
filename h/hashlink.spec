@@ -1,3 +1,6 @@
+%global __os_install_post %{nil}
+
+
 %undefine _debugsource_packages
 %define _unpackaged_files_terminate_build 1
 

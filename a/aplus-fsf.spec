@@ -1,5 +1,3 @@
-%undefine _debugsource_packages
-
 Name: aplus-fsf
 Version: 4.22
 Release: 4
@@ -29,9 +27,13 @@ sed -i 's|#if defined(HAVE_SVR4)|#if !defined(HAVE_SVR4)|' src/dap/sgnlcatch.c s
 %ifarch aarch64
 cp -f /usr/lib/rpm/redhat/config.* .
 %endif
+sed -i '1496s|>0|!=0|' src/MSGUI/MSGraphUI.C
+sed -i 's|mp>0|mp!=0|' src/MSTypes/MSBinaryMatrix.C
+sed -i '11i #include <cstddef>' src/MSTypes/MSTypeData.H
 
 %build
-CXXFLAGS="-O2 -fpermissive -Wno-narrowing -lX11" CFLAGS="-O2 -Wno-narrowing -lX11" ./configure --prefix=/usr
+export CXXFLAGS="-O2 -fpermissive -Wno-narrowing -fPIE -fPIC -lX11" CFLAGS="-O2 -Wno-narrowing -fpermissive -fPIE -fPIC -lX11"
+./configure --prefix=/usr
 %make_build
 
 %install

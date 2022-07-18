@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 Name: wakeup
 Summary: Fully customizable and extensible talking alarm clock
-Version: 1.3
-Release: 5.1
+Version: 1.4
+Release: 1
 Group: Utilities
 License: GPL
 URL: https://launchpad.net/wakeup
@@ -42,5 +42,5 @@ sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
-* Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
+* Sun Jul 3 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
 - Rebuilt for Fedora

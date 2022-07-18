@@ -40,11 +40,12 @@ sed -i 's|__x86_64__|__aarch64__|' Code/IO/btkBinaryFileStream.h
 %endif
 
 %build
+export CXXFLAGS="-std=gnu++11 -fPIE -fPIC"
 %cmake -DBTK_WRAP_PYTHON=off
-make %{?_smp_mflags}
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 %ifarch x86_64 aarch64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif

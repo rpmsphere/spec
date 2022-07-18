@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:		evilwm
-Version:	1.1.1
-Release:	7.1
+Version:	1.3.1
+Release:	1
 URL:		http://evilwm.sourceforge.net/
 Source0:	http://www.6809.org.uk/evilwm/%{name}-%{version}.tar.gz
 License:	Public Domain
@@ -30,12 +30,13 @@ FEATURES:
 %prep
 %setup -q
 perl -pi -e 's!^#DEFINES.*-DVDESK.*!DEFINES += -DVDESK!' Makefile
+sed -i 's|-Wall|-fPIE|' Makefile
 
 %build
-make
+%make_build
 
 %install
-%makeinstall
+%make_install
 
 %files
 %doc README ChangeLog TODO
@@ -44,5 +45,5 @@ make
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Fri Mar 10 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
+* Sun Jun 19 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.1
 - Rebuilt for Fedora

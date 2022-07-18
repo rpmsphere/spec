@@ -33,7 +33,7 @@ cp %{SOURCE1} CMakeLists.txt
 
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
-mv %{_host}/%{name} .
+mv *-linux-build/%{name} .
 %cmake_install
 
 %clean

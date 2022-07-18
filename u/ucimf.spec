@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:           ucimf
 Version:        2.3.8
 Release:        5.1
@@ -38,10 +40,6 @@ find $RPM_BUILD_ROOT -name '*.*a' -exec rm -f {} ';'
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
 
 %files
 %doc AUTHORS ChangeLog COPYING README TODO

@@ -1,4 +1,6 @@
+%global __os_install_post %{nil}
 %undefine _debugsource_packages
+
 Name:		gtkqq
 Version:	0.1
 Release:	11.1

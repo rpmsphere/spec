@@ -32,10 +32,11 @@ Feature highlights:
 %setup -q -n Drawpile-%{version}
 sed -i '24i #include <QItemSelection>' src/client/widgets/userlistwidget.h
 sed -i '23i #include <QPainterPath>' src/client/widgets/popupmessage.h
+sed -i '29i #include <QPainterPath>' src/client/bundled/QtColorWidgets/color_wheel.cpp
+sed -i 's|-Wall|-Wall -fpermissive|' CMakeLists.txt
 
 %build
 %cmake .
-#make VERBOSE=1 %{?_smp_mflags}
 %cmake_build
 
 %install

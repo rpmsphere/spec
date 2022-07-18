@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %undefine _debugsource_packages
 
 Summary: Classic Rexx Implementation
@@ -9,9 +10,7 @@ Group: Development/Languages
 URL: https://github.com/vlachoudis/brexx
 Source: brexx-master.zip
 BuildRequires: readline-devel
-%if %{fedora}>27
 BuildRequires: libnsl2-devel
-%endif
 
 %description
 REXX is a programming language designed by Michael Cowlishaw of

@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name: libraspberrypi
 Summary: EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV
 Version: 1.20181212

@@ -220,51 +220,39 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Tue May 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 4.64
 - Rebuilt for Fedora
-
 * Tue Apr 24 2007 Olivier Thauvin <nanardon@zarb.org> 4.64-4plf
 - update Edouardo's patch
-
 * Thu May 11 2006 Olivier Thauvin <nanardon@zarb.org> 4.64-3plf
 - rebuild
-
 * Sat Oct 15 2005 Olivier Thauvin <nanardon@zarb.org>
 - add changelog...
-
 * Sat Oct 15 2005 Olivier Thauvin <nanardon@zarb.org> 4.64-1plf
 - 4.64
-
 * Fri Sep 09 2005 Olivier Thauvin <nanardon@zarb.org> 4.62-3plf
 - From Andreas Hasenack <ahasenack@terra.com.br>
   - enabled with gssapi support
   - enabled with sasl2 support
   - rebuilt with openldap-2.3.x
-
 * Tue Apr 19 2005 Olivier Thauvin <nanardon@zarb.org> 4.62-2plf
 - From Giuseppe Ghib <ghibo@mandriva.com>
   - spec clean up
   - fix ssl dir
-
 * Tue Feb 01 2005 Olivier Thauvin <thauvin@aerov.jussieu.fr> 4.62-1plf
 - 4.62
-
 * Sat Nov 27 2004 Olivier Thauvin <thauvin@aerov.jussieu.fr> 4.61-5plf 
 - Matthias Debus <psic4t@netbands.de>
   - patch1: eduardo's patch (includes fixes and feature enhancements
   - backout patch8 (flock): included in patch1?
   - backout patch36 (maildir support): included in patch1
   - backout patch43 (wrtaccents): seems to be included in patch1
-
 * Tue Aug 31 2004 Matthias Debus <psic4t@netbands.de> 4.61-4plf
 - new menu
 - fix permissions
-
 * Sun Aug 08 2004 Olivier Thauvin <thauvin@aerov.jussieu.fr> 4.61-3plf
 - reinclude maildir patch (thx ghibo)
 - flock patch (ghibo)
-
 * Tue Aug 03 2004 Matthias Debus <psic4t@netbands.de> 4.61-2plf
 - make icons transparent
-
 * Fri Jul 23 2004 Matthias Debus <psic4t@netbands.de> 4.61-1plf
 - new version
 - use ImageMagick to convert icons
@@ -272,40 +260,31 @@ rm -rf $RPM_BUILD_ROOT
 - fix license
 - fix menu
 - cleanup (at least a bit)
-
 * Wed May 12 2004 Matthias Debus <psic4t@netbands.de> 4.60-1plf
 - new version
 - back out patch0: merged (finally)
 - back out patch8 and source4: merged
 - back out patch33: merged (finally!)
 - back out patch36: needs to get regenerated -> no maildir support ATM 
-
 * Fri Sep 12 2003 Olivier Thauvin <thauvin@aerov.jussieu.fr> 4.58-1plf
 - 4.58 (Major security fixes)
 - cleanup
-
 * Tue Aug 05 2003 Matthias Debus <psic4t@netbands.de> 4.56-1plf 
 - new version
 - put in new versions of patches 0,3 and 14 again (not merged, needed :)
-
 * Mon Apr 21 2003 Matthias Debus <psic4t@netbands.de> 4.55-1plf 
 - new version
 - backed out patches 0,3 and 14 (merged?)
-
 * Sun Jan 26 2003 Matthias Debus <psic4t@netbands.de> 4.53-1plf 
 - new version
-
 * Sun Dec 15 2002 Matthias Debus <psic4t@netbands.de> 4.51-1plf 
 - new version
-
 * Tue Dec 03 2002 Matthias Debus <psic4t@netbands.de> 4.50-1plf 
 - new version
 - back out patch35 (threading, not needed anymore)
-
 * Sun Jul 28 2002 Olivier Thauvin <thauvin@aerov.jussieu.fr> 4.44-4plf 
 - From Oden Eriksson <oden.eriksson@kvikkjokk.net> 
 	- added P36 (qmail Maildir support)
-
 * Wed Jul 24 2002 Olivier Thauvin <thauvin@aerov.jussieu.fr> 4.44-3plf 
 - From Matthias Debus <psic4t@netbands.de>
 	- first PLF release
@@ -314,35 +293,27 @@ rm -rf $RPM_BUILD_ROOT
 	- update pinepgp to 0.18
 	- sanitize spec file (patches)
 - png icons (out xpm!)
-
 * Fri Feb 15 2002 Stefan van der Eijk <stefan@eijk.nu> 4.44-2mdk
 - BuildRequires
-
 * Thu Feb 14 2002 Jesse Kuang <kjx@mandrakesoft.com> 4.44-1mdk
 - upgrade to 4.44
-
 * Sun Dec 30 2001 Jesse Kuang <kjx@mandrakesoft.com> 4.43-1mdk
 - upgrade to 4.43
 - add support for pgp, gpg
-
 * Sun Oct 07 2001 Jesse Kuang <kjx@mandrakesoft.com> 4.40-1mdk
 - upgrade pine to 4.40
-
 * Thu Jun 28 2001 Vincent Danen <vdanen@mandrakesoft.com> 4.33-2mdk
 - add BuildRequires: pam-devel
-
 * Wed Apr 25 2001 Vincent Danen <vdanen@mandrakesoft.com> 4.33-1mdk
 - 4.33
 - sync patches with rh
 - new maildir patch
 - re-enable ssl to see if works better now
-
 * Fri Apr 13 2001 Gwenole Beauchesne <gbeauchesne@mandrakesoft.com> 4.30-4mdk
 - sanitized specfile (s/Copyright/License, BuildRequires, etc.)
 - added missing includes in imap/src/osdep/os_lnx.h (patch21)
 - rebuilt for post LDMDK 8.0 with -fno-strength-reduce on ix86
 - completely got rid of -O6 optimization flag
-
 * Fri Nov 10 2000 Vincent Danen <vdanen@mandrakesoft.com> 4.30-3mdk
 - merge with Red Hat
 - use lnp (PAM auth) insteaf of slx (crypt)
@@ -351,111 +322,80 @@ rm -rf $RPM_BUILD_ROOT
 - make config files noreplace
 - added large icon
 - bzip patches and icons
-
-
 * Thu Nov 09 2000 Vincent Danen <vdanen@mandrakesoft.com> 4.30-2mdk
 - patch to correct pine crashing and check extra NULL pointers from RH
-
 * Tue Nov 07 2000 Vincent Danen <vdanen@mandrakesoft.com> 4.30-1mdk
 - 4.30
 - security fix for incoming mailbox handling
 - remove hardcoded icon directory in menus
-
 * Mon Aug 07 2000 Frederic Lepied <flepied@mandrakesoft.com> 4.21-6mdk
 - automatically added BuildRequires
-
 * Thu Aug 03 2000 Geoffrey Lee <snailtalk@mandrakesoft.com> 4.21-5mdk
 - rebuild for BM
 - rebuild with macros
-- tmppath
 * Sun Apr 09 2000 Denis HAvlik <denis@mandrakesoft.com> 4.21-4mdk
 - Group: Networking/Mail
 - pine-tree icon + menu entries (for pine + pico)
 - spec-helper
-
 * Sat Feb 19 2000 Geoffrey Lee <snailtalk@linux-mandrake.com> 4.21-3mdk
 - make patch to change os-lnx.h from /bin/passwd to /usr/bin/passwd
-
 * Tue Dec 14 1999 John Buswell <johnb@mandrakesoft.com>
 - add new maildir patches
 - add vfs patch
 - fixed non-existant directory seek problem (bug:#506)
-
 * Tue Nov 30 1999 Chmouel Boudjnah <chmouel@mandrakesoft.com>
 - 4.21.
 - Merge with recent redhat changes.
-
 * Tue Nov 02 1999 John Buswell <johnb@mandrakesoft.com>
 - Rebuild and Repackage for oxygen (release 2)
-
 * Thu Oct 14 1999 Bernhard Rosenkraenzer <bero@linux-mandrake.com>
 - 4.20
 - sync with RH
-
 * Thu Aug 12 1999 Cristian Gafton <gafton@redhat.com>
 - add maildir patch
-
 * Sun Mar 21 1999 Cristian Gafton <gafton@redhat.com> 
 - auto rebuild in the new build environment (release 2)
-
 * Fri Feb 26 1999 Cristian Gafton <gafton@redhat.com>
 - fix buildroot and add cleanup section
 - move config files to /etc/pine.conf
-
 * Tue Feb 02 1999 Preston Brown <pbrown@redhat.com>
 - turned off .pine-debugX files
-
 * Thu Dec 17 1998 Cristian Gafton <gafton@redhat.com>
 - build against glibc 2.1
-
 * Fri Nov 13 1998 Cristian Gafton <gafton@redhat.com>
 - patch to enable SIGWINCH processing (why do the pine folks keep 
   disabling this stuff?!)
-
 * Fri Oct 09 1998 Cristian Gafton <gafton@redhat.com>
 - use termios instead of termio (patch used to be in here...)
 - use terminfo instead of termcap and link against ncurses instead of termcap
 - supply -lcrypt as a standard lib
-
 * Sat Sep 19 1998 Jeff Johnson <jbj@redhat.com>
 - upgrade to 4.04 (compatibility with some client imaps).
-
 * Fri Sep 11 1998 Jeff Johnson <jbj@redhat.com>
 - use only fcntl locking.
-
 * Thu Sep 10 1998 Jeff Johnson <jbj@redhat.com>
 - update to 4.03
-
 * Fri Aug 14 1998 Jeff Johnson <jbj@redhat.com>
 - patch to 4.02A.
 - disable stupid EACCESS warnings.
-
 * Wed Jul 22 1998 Jeff Johnson <jbj@redhat.com>
 - update to 4.02.
-
 * Mon Apr 27 1998 Prospector System <bugs@redhat.com>
 - translations modified for de, fr, tr
-
 * Thu Jan 15 1998 Erik Troan <ewt@redhat.com>
 - added patch to fix pine filters
-
 * Tue Dec 30 1997 Erik Troan <ewt@redhat.com>
 - fixed resizing in pine and pico
-
 * Thu Dec 18 1997 Erik Troan <ewt@redhat.com>
 - removed patch for SIGCHLD race -- it shouldn't be necessary
 - added patch to avoid longjmp() from SIGCHLD handler -- SIGCHLD handling
   is sane now
-
 * Thu Dec 11 1997 Cristian Gafton <gafton@redhat.com>
 - added a patch for handling a SIGCHLD race condition
-
 * Tue Nov 04 1997 Erik Troan <ewt@redhat.com>
 - fix for locks w/ long st_dev field
 - use termios rather then termio
-
 * Wed Oct 29 1997 Donnie Barnes <djb@redhat.com>
 - added wmconfig entry
-
 * Fri Oct 10 1997 Erik Troan <ewt@redhat.com>
 - removed exec bit from /usr/doc/pine-3.96-1/contrib/utils/pwd2pine

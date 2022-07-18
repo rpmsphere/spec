@@ -8,14 +8,15 @@ Version:        0.5
 Release:        142.1
 Source0:        tuxcursors-0.5.tar.bz2
 BuildArch:      noarch
-BuildRequires:	xorg-x11-apps
-BuildRequires:  libpng libX11-devel
+BuildRequires:	xcursorgen
+BuildRequires:  libpng
+BuildRequires:  libX11-devel
 
 %description
 A cursor set that has nice animated penguins.
 
 %prep
-%setup -n tuxcursors
+%setup -qn tuxcursors
 
 %build
 ./build.sh

@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:           libident
 Version:        0.32
 Release:        12

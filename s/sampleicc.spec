@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Version:        1.6.6
 Release:        11.1
 Source:         SampleICC-1.6.6.tar.gz
@@ -43,10 +45,6 @@ applications.
 make %{_smp_mflags}
 make DESTDIR=%{buildroot} install
 rm %{buildroot}/%{_libdir}/lib*.la
-
-%post -n lib%{name} -p /sbin/ldconfig
-
-%postun -n lib%{name} -p /sbin/ldconfig
 
 %files
 %doc AUTHORS COPYING ChangeLog README

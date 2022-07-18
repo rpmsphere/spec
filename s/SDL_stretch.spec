@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %undefine _debugsource_packages
 
 Name:    SDL_stretch
@@ -39,6 +40,7 @@ pumped up with assembler - stretch-and-blit routines for SDL on steroids.
 cp -f /usr/share/automake-*/config.guess use/
 
 %build
+export CC=clang CXX=clang++
 export PYTHON=/usr/bin/python2
 CFLAGS="$RPM_OPT_CFLAGS" ./configure --prefix=%_prefix --libdir=%_libdir
 make
@@ -46,10 +48,15 @@ make docs
 
 %install
 rm -rf %buildroot
+export CC=clang CXX=clang++
 mkdir %buildroot
+export CC=clang CXX=clang++
 make install DESTDIR=%buildroot
+export CC=clang CXX=clang++
 make install-docs DESTDIR=%buildroot
+export CC=clang CXX=clang++
 cd %buildroot%_libdir/%name; for i in *.so*; do mv $i ..; ln -s ../$i .; done
+export CC=clang CXX=clang++
 
 %clean
 rm -rf $RPM_BUILD_ROOT

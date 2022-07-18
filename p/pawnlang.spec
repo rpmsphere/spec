@@ -28,7 +28,7 @@ export CFLAGS=-fPIE
 %install
 #cmake_install
 install -d %{buildroot}%{_bindir}
-install -m755 %{_host}/pawn* %{_host}/stategraph %{buildroot}%{_bindir}
+install -m755 *-linux-build/pawn* *-linux-build/stategraph %{buildroot}%{_bindir}
 
 %files 
 %doc LICENSE NOTICE history.txt readme.txt

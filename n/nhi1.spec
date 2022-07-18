@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:         nhi1
 Summary:      Non Human Intelligence #1
 URL:          http://developer.berlios.de/projects/nhi1/
@@ -27,6 +29,7 @@ Perl, PHP, Python, Ruby, Tcl and VB.NET.
 %endif
 
 %build
+export CFLAGS="-g -O2 -fPIE -fPIC -Wno-format-security"
 ( echo "#!/bin/sh"
   echo "true"
 ) >tclConfig.sh

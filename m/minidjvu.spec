@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:           minidjvu
 Version:        0.8
 Release:        5.1
@@ -12,7 +14,6 @@ Patch0:         minidjvu-0.8-gzip.patch
 Patch1:         minidjvu-0.8-install.patch
 BuildRequires:  gcc-c++
 BuildRequires:  libtiff-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 minidjvu is a command line utility which encodes and decodes single page
@@ -59,18 +60,15 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/libminidjvu.la
 %postun -n libminidjvu -p /sbin/ldconfig
 
 %files -f %{name}.lang
-%defattr(-,root,root,-)
 %doc COPYING NEWS README
 %{_bindir}/%{name}
 %doc %{_mandir}/man1/*
 %doc %{_mandir}/ru
 
 %files -n libminidjvu
-%defattr(-,root,root,-)
 %{_libdir}/*.so.*
 
 %files -n libminidjvu-devel
-%defattr(-,root,root,-)
 %doc doc/{decode.html,encode.html}
 %{_libdir}/*.so
 %{_includedir}/%{name}

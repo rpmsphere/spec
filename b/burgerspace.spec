@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:			burgerspace
 Version:		1.9.4
 Summary:		A Burgertime(TM) clone

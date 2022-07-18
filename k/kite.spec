@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name: kite
 Summary: Kite programming language
 Version: 1.0.4
@@ -31,7 +33,7 @@ make install DESTDIR=%{buildroot}
 %{_libdir}/lib%{name}*
 %{_includedir}/%{name}_*.h
 %{_mandir}/man1/*
-%{_datadir}/info/%{name}.info.*
+%{_datadir}/info/%{name}.info*
 %exclude %{_datadir}/info/dir
 
 %changelog

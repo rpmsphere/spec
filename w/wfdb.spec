@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Summary: Waveform Database Software Package
 Name: wfdb
 Version: 10.5.24

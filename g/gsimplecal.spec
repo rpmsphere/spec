@@ -1,6 +1,6 @@
 Name:           gsimplecal
-Version:        2.1
-Release:        3.1
+Version:        2.4
+Release:        1
 License:        BSD-3-Clause
 Summary:        Lightweight gui calendar applet
 URL:            https://github.com/dmedvinsky/gsimplecal
@@ -31,7 +31,7 @@ rm -fr %{buildroot}
 %doc ChangeLog README COPYING AUTHORS
 
 %changelog
-* Thu Dec 18 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
+* Sun Jul 3 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
 - Rebuilt for Fedora
 * Fri Mar 22 2013 build for openSUSE
 - Initial package created - 1.6

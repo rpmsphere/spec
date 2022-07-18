@@ -1,7 +1,7 @@
 Name:		praat
 Summary:	Doing phonetics, speech analysis and synthesis by computer
-Version:	5.3.44
-Release:	14.1
+Version:	6.2.14
+Release:	1
 License: 	GPLv2
 Group:		Sciences/Other
 URL:		http://www.fon.hum.uva.nl/praat/
@@ -15,7 +15,7 @@ BuildRequires:	libXmu-devel
 BuildRequires:	motif-devel
 BuildRequires:	gtk2-devel
 BuildRequires:	cairo-devel
-Source0:	http://www.fon.hum.uva.nl/praat/praat5344_sources.tar.gz
+Source0:	https://codeload.github.com/praat/praat/tar.gz/refs/tags/v%{version}#/%{name}-%{version}.tar.gz
 Source1:	praat.png
 Source2:	praat.desktop
 
@@ -28,12 +28,12 @@ segmentation, labelling using the phonetic alphabet, and computation of
 statistics.
 
 %prep
-%setup -q -n sources_5344
-sed -i 's|-lasound|-lasound -lpthread|' makefiles/makefile.defs.linux.alsa
-sed -i 's|-Wunused|-Wunused -Wno-narrowing -std=c++98|' makefiles/makefile.defs.linux.alsa
+%setup -q
+#sed -i 's|-lasound|-lasound -lpthread|' makefiles/makefile.defs.linux.alsa
+#sed -i 's|-Wunused|-Wunused -Wno-narrowing -std=c++98|' makefiles/makefile.defs.linux.alsa
 
 %build
-ln -fs makefiles/makefile.defs.linux.alsa makefile.defs
+cp makefiles/makefile.defs.linux.pulse makefile.defs
 make %{?_smp_mflags}
 
 %clean
@@ -54,12 +54,13 @@ cp -vf %{SOURCE1} %{buildroot}/%{_datadir}/pixmaps
 cp -vf %{SOURCE2} %{buildroot}/%{_datadir}/applications
 
 %files
+%doc README.md
 %{_bindir}/praat
 %{_datadir}/pixmaps/*.png
 %{_datadir}/applications/*.desktop
 
 %changelog
-* Sun Apr 14 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.44
+* Sun Jul 3 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2.14
 - Rebuilt for Fedora
 * Wed Mar 16 2011 Stéphane Téletchéa <steletch@mandriva.org> 5.2.17-1mdv2011.0
 + Revision: 645380

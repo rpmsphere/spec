@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %define svn 390
 #define svn 412
 
@@ -95,10 +96,6 @@ install -m 644 smpeg.m4 $RPM_BUILD_ROOT/usr/share/aclocal
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
 
 %files
 %doc CHANGES COPYING README

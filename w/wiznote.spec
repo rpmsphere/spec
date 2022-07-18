@@ -1,6 +1,6 @@
 Name: wiznote
 Summary: Qt client for WizNote
-Version: 2.7.1
+Version: 2.8.8
 Release: 1
 Group: Applications/Editors
 License: GPLv3
@@ -20,6 +20,7 @@ A cross-platform client written in Qt for the Wiz Note.
 %prep
 #setup -q -n WizQTClient-%{version}
 %setup -q -n WizQTClient-master
+sed -i '17i #include <QPainterPath>' src/sync/WizAvatarHost.cpp
 
 %build
 #cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS=-Wno-narrowing .
@@ -42,5 +43,5 @@ mv %{buildroot}%{_bindir}/WizNote %{buildroot}%{_bindir}/%{name}
 %{_datadir}/licenses/%{name}
 
 %changelog
-* Wed Aug 14 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.1
+* Sun Jul 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.8
 - Rebuilt for Fedora

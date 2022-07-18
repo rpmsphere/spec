@@ -19,6 +19,9 @@ under the GNU General Public License v2.
 %setup -q -n PyPanel-%{version}
 sed -i 's|/usr/lib/|%{_libdir}/|' setup.py
 
+%build
+python2 setup.py build
+
 %install
 python2 setup.py install --prefix=/usr --root=$RPM_BUILD_ROOT
 

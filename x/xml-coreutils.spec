@@ -25,6 +25,7 @@ sed -i 's|slang.h||' configure
 sed -i 's|slang.h|slang/slang.h|' src/lessui.c src/lessdisp.c src/lessrend.c
 
 %build
+export CC=clang CXX=clang++
 %configure
 %__make %{?jobs:-j%{jobs}}
 
@@ -38,7 +39,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc ChangeLog COPYING NEWS README SFX THANKS
 %doc doc/*
 %{_bindir}/xml-*                                                      
@@ -48,6 +48,5 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %changelog
 * Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8a
 - Rebuilt for Fedora
-
 * Mon May 17 2010 pascal.bleser@opensuse.org
 - initial package

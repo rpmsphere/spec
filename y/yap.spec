@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:		yap
 Version:	6.3.3
 Release:	15.1

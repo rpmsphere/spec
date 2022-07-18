@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:         libxmlpatch
 Summary:      An XML Patch library
 URL:          http://xmlpatch.sourceforge.net/

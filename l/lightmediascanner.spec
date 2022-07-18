@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Summary:	Lightweight media scanner
 Name:		lightmediascanner
 Version:	0.4.1.0

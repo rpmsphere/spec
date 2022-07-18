@@ -7,7 +7,7 @@ Version:	1.0.11
 Release:	10.1
 Summary:	Create your own usb stick windows installer
 URL:		http://en.congelli.eu/prog_info_winusb.html
-BuildRequires:	gcc-c++ libstdc++-devel wxGTK-devel gzip
+BuildRequires:	gcc-c++ libstdc++-devel wxGTK2-devel gzip
 BuildRequires:	ghostscript-core ImageMagick
 Source0:	http://en.congelli.eu/download/winusb/%{name}-%{version}.tar.gz
 

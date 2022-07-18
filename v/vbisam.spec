@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:		vbisam
 Version:	2.0
 Release:	12.1

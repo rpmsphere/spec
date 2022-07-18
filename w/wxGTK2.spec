@@ -46,7 +46,7 @@ Requires:       %{name}-media = %{version}-%{release}
 Requires:       wxBase = %{version}-%{release}
 Requires:       gtk2-devel
 Requires:       libGL-devel, libGLU-devel
-Requires:       bakefile
+#Requires:       bakefile
 Requires(post): %{_sbindir}/update-alternatives
 Requires(postun): %{_sbindir}/update-alternatives
 Provides:       %{_name}-devel = %{version}-%{release}
@@ -164,11 +164,6 @@ cat wxmsw.lang >> wxstd.lang
 pushd tests
 #make test
 popd
-
-
-
-
-
 
 %post devel
 if [ -f %{_bindir}/wx-config ] && [ ! -h %{_bindir}/wx-config ] ; then

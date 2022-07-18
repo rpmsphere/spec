@@ -31,6 +31,7 @@ church services, concerts and seminars.
 %setup -q
 
 %build
+export CC=clang CXX=clang++
 ./autogen.sh --prefix=/usr
 make
 

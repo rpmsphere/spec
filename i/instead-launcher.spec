@@ -1,11 +1,11 @@
 Name:           instead-launcher
-Version:        0.6.1
-Release:        7.1
+Version:        0.7.0
+Release:        1
 License:        GPL-2.0
 Summary:        Game update/install/launch program for Instead
-URL:            http://instead-launcher.googlecode.com
+URL:            https://github.com/instead-hub/instead-launcher
 Group:          Amusements/Games/Other
-Source0:        https://instead-launcher.googlecode.com/files/%{name}_%{version}.tar.gz
+Source0:        https://github.com/instead-hub/instead-launcher/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildRequires:  qt4-devel
 BuildRequires:  zlib-devel
 Requires:       instead
@@ -40,7 +40,7 @@ rm -rf %{buildroot}
 %{_datadir}/applications/*
 
 %changelog
-* Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
+* Sun Jun 26 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.0
 - Rebuilt for Fedora
 * Thu Jul  5 2012 devel.openSUSE.org@gmail.com
 - Initial package creation - version 0.6.1

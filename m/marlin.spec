@@ -98,10 +98,10 @@ fi
 %{_datadir}/%{name}/
 %{_datadir}/pixmaps/%{name}/
 %exclude %{_libdir}/*.so
-%exclude %{_libdir}/*.la
+#exclude %{_libdir}/*.la
 %exclude %{_libdir}/*.a
 %exclude %{_libdir}/%{name}-%{version}/*.a
-%exclude %{_libdir}/%{name}-%{version}/*.la
+#exclude %{_libdir}/%{name}-%{version}/*.la
 %exclude %{_libdir}/%{name}-%{version}/*.so
 %exclude %{_includedir}/lib%{name}/
 

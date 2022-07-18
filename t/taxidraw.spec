@@ -12,7 +12,7 @@ Source2:	TaxiDraw.png
 Patch0:		taxidraw_initvars.patch
 BuildRequires: desktop-file-utils
 BuildRequires: gcc, gcc-c++, automake
-BuildRequires: wxGTK-devel
+BuildRequires: wxGTK2-devel
 BuildRequires: curl-devel
 BuildRequires: boost-devel >= 1.37
 

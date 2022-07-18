@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:          bioapi
 Version:       1.2.3
 Release:       10.1
@@ -9,7 +11,6 @@ Patch0:        %{name}-1.2.2-gcc44.patch
 License:       BSD
 BuildRequires: libpng-devel
 BuildRequires: gcc-c++, qt3-devel, libXmu-devel, libXi-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 The BioAPI Specification is intended to provide a high-level generic biometric

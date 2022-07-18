@@ -27,11 +27,12 @@ developing applications that use %name.
 %setup -q
 
 %build
+export CC=clang CXX=clang++
 %cmake -DLIB=%_libdir
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
 %_libdir/*.so.*

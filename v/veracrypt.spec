@@ -26,6 +26,7 @@ Free disk encryption software based on TrueCrypt.
 #sed -i 's|dumpversion|dumpfullversion|' src/Makefile
 
 %build
+export CC=clang CXX=clang++
 pushd src
 make WX_CONFIG=wx-config-3.0
 popd

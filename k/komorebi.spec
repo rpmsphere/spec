@@ -1,11 +1,11 @@
 Name: komorebi
 Summary: A beautiful and customizable wallpapers manager for Linux
-Version: 2.1
+Version: 2.2.1
 Release: 1
 Group: system
 License: Free Software
 URL: https://github.com/cheesecakeufo/komorebi
-Source0: https://github.com/iabem97/komorebi/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0: https://github.com/Komorebi-Fork/komorebi/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildRequires: cmake
 BuildRequires: desktop-file-utils
 BuildRequires: gtk3-devel
@@ -25,28 +25,29 @@ fully customizeable image and video wallpapers that can be tweaked at any time!
 
 %prep
 %setup -q
-sed -i -e 's|/System/Applications|/usr/bin|' -e 's|/System/Resources|/usr/share|' `find -type f`
+#sed -i -e 's|/System/Applications|/usr/bin|' -e 's|/System/Resources|/usr/share|' `find -type f`
 
 %build
-%cmake
-make %{?_smp_mflags}
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %files
 %doc LICENSE README.md
 %{_bindir}/*
-%{_datadir}/Komorebi
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/applications/wallpapercreator.desktop
+%{_datadir}/%{name}
+%{_datadir}/applications/*.desktop
 %{_datadir}/fonts/AmaticSC-Regular.ttf
 %{_datadir}/fonts/Bangers-Regular.ttf
 %{_datadir}/fonts/BubblerOne-Regular.ttf
+%{_datadir}/pixmaps/%{name}
+%{_datadir}/metainfo/*
 %exclude %{_datadir}/fonts/Lato-Hairline.ttf
 %exclude %{_datadir}/fonts/Lato-Light.ttf
 %exclude %{_datadir}/fonts/VT323-Regular.ttf
 
 %changelog
-* Mon Dec 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
+* Sun Jun 26 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.1
 - Rebuilt for Fedora

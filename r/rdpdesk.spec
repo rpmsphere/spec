@@ -11,8 +11,8 @@ BuildRequires:  imake
 BuildRequires:  libXt-devel
 BuildRequires:  libXaw-devel
 BuildRequires:  libjpeg-devel
-BuildRequires:  wxGTK-devel
-BuildRequires: compat-openssl10-devel
+BuildRequires:  wxGTK2-devel
+BuildRequires:  compat-openssl10-devel
 
 %description
 RD Connection Manager is a Remote Desktop (RD) management solution for

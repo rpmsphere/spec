@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name:               basica
 Version:            1.0
 Release:            3.1
@@ -14,6 +16,7 @@ Thaigasoft BASICA by Ballagyr.
 %setup -q -n Basica-master
 
 %build
+export CXXFLAGS="-std=c++14 -fPIC -fPIE"
 %configure
 make
 

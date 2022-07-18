@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:           libpwmd
 Version:        6.0.2
 Release:        7.1
@@ -13,7 +15,6 @@ BuildRequires:  cracklib-devel
 BuildRequires:  libssh2-devel
 BuildRequires:  c-ares-devel
 BuildRequires:  gettext
-
 Requires:       pwmd
 
 %description

@@ -7,7 +7,7 @@ Group: Development/Languages
 URL: http://blassic.net/
 Source: http://blassic.net/bin/%{name}-%{version}.tgz
 BuildRequires: gcc-c++
-BuildRequires: svgalib-devel
+#BuildRequires: svgalib-devel
 
 %description
 Blassic is a classic Basic interpreter. The line numbers are
@@ -24,8 +24,9 @@ sed -i 's/typedef map/typedef std::map/' var.cpp
 sed -i 's/swap/std::swap/' graphics_impl.h
 
 %build
+export CC=clang CXX=clang++
 cp /usr/share/automake-*/config.guess .
-./configure --prefix=/usr --enable-installed-examples --enable-svgalib
+./configure --prefix=/usr --enable-installed-examples --disable-svgalib
 make
 
 %install

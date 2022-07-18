@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name: sawzall
 Summary: A compiler and runtime for the Sawzall language
 Version: 1.0

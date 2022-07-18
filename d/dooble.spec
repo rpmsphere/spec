@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %undefine _debugsource_packages
 
 Name:		dooble
@@ -8,7 +9,7 @@ Group:		System/Libraries
 License:	GPLv2
 URL:		https://textbrowser.github.io/dooble/
 Source0:	https://github.com/textbrowser/dooble/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildRequires:	qt5-devel
+BuildRequires:	qt5-qtbase-devel
 #BuildRequires:  libgcrypt-devel
 #BuildRequires:  libgpg-error-devel
 #BuildRequires:  desktop-file-utils

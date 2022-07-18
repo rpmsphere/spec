@@ -2,7 +2,7 @@
 
 Summary: Scripting language and C library useful for building DSLs
 Name: boron
-Version: 2.0.6
+Version: 2.0.8
 Release: 1
 License: LGPLv3+
 URL: http://urlan.sf.net/boron
@@ -34,13 +34,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.md LICENSE* ChangeLog
-#{_includedir}/%{name}
 %{_mandir}/man1/%{name}*
 %{_bindir}/%{name}
 %{_libdir}/lib%{name}.so*
 
 %changelog
-* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.6
+* Sun Jul 3 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.8
 - Rebuilt for Fedora
 * Fri Mar 16 2012 Karl Robillard <wickedsmoke@users.sf.net>
 - No longer using cmake.

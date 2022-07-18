@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:          libbraille
 Version:       0.19.0
 Release:       4.1
@@ -7,7 +9,6 @@ URL:           http://libbraille.org/
 Source:        http://prdownloads.sourceforge.net/libbraille/libbraille-%{version}.tar.gz
 License:       LGPL
 BuildRequires: libusb-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 Libbraille is a computer shared library which makes it possible to easily develop
@@ -42,7 +43,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %config(noreplace) %{_sysconfdir}/libbraille.conf
 %{_bindir}/test_libbraille
 %{_libdir}/libbraille-0.so.*
@@ -53,7 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS COPYING ChangeLog README TODO
 
 %files devel
-%defattr(-,root,root)
 %dir %{_includedir}
 %{_libdir}/libbraille.a
 %{_libdir}/libbraille.la
@@ -63,6 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.19.0
 - Rebuilt for Fedora
-
 * Wed Sep 16 2009 Silvan Calarco <silvan.calarco@mambasoft.it> 0.19.0-1mamba
 - package created by autospec

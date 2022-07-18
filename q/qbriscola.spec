@@ -34,8 +34,11 @@ The game of the Briscola (Italian card-game) with Qt4 graphics.
 %install
 %cmake_install
 
-%files -f install_manifest.txt
+%files
 %doc README
+%{_bindir}/qbriscola
+%{_datadir}/applications/qbriscola.desktop
+%{_datadir}/pixmaps/qbriscola.png
 
 %changelog
 * Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1svn.2

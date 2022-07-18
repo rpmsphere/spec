@@ -2,12 +2,12 @@
 
 Name: linapple
 Summary: Apple2 emulator for Linux
-Version: 2a
-Release: 13.1
+Version: 2.2.1
+Release: 1
 Group: Emulators
 License: GPL
-URL: http://linapple.sourceforge.net/
-Source0: http://sourceforge.net/projects/linapple/files/%{name}/%{name}-2a/%{name}-src_%{version}.tar.bz2
+URL: https://github.com/linappleii/linapple
+Source0: %{name}-master.zip
 BuildRequires: gcc-c++, SDL-devel, libcurl-devel, libzip-devel
 
 %description
@@ -16,36 +16,26 @@ for Linux or other systems with SDL support, which works out of the box.
 It derives from AppleWin, and almost as powerful as AppleWin is.
 
 %prep
-%setup -q -n %{name}-src_%{version}
-sed -i '1i #include <unistd.h>' src/Timer.cpp src/Frame.cpp src/SerialComms.cpp
+%setup -q -n %{name}-master
+sed -i 's|-Wall|-fpermissive|' Makefile
 
 %build
-cd src
-make %{?_smp_mflags}
+%make_build
 
 %install
-cd src
-mkdir -p $RPM_BUILD_ROOT%{_libdir}/%{name}/images $RPM_BUILD_ROOT%{_libdir}/%{name}/ftp/cache
-chmod -R 777 $RPM_BUILD_ROOT%{_libdir}/%{name}
-install -m755 %{name} $RPM_BUILD_ROOT%{_libdir}/%{name}
-install -m644 ../*.bmp ../Master.dsk $RPM_BUILD_ROOT%{_libdir}/%{name}
-install -m644 ../linapple.installed.conf $RPM_BUILD_ROOT%{_libdir}/%{name}/linapple.conf
-mkdir -p $RPM_BUILD_ROOT%{_bindir}
-cat > $RPM_BUILD_ROOT%{_bindir}/%{name} <<EOF
-#!/bin/sh
-cd %{_libdir}/%{name}
-./%{name}
-EOF
-chmod +x $RPM_BUILD_ROOT%{_bindir}/%{name}
+install -Dm755 build/bin/linapple %{buildroot}/usr/bin/linapple
+install -Dm644 build/share/linapple/Master.dsk %{buildroot}/usr/share/linapple/Master.dsk
+install -Dm644 build/etc/linapple/linapple.conf %{buildroot}/etc/linapple/linapple.conf
 
 %files
-%doc CHANGELOG LICENSE README
+%doc CHANGELOG COPYING.txt README.md
 %{_bindir}/%{name}
-%{_libdir}/%{name}
+%{_datadir}/%{name}
+%{_sysconfdir}/%{name}
 
 %clean
 %__rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2a
+* Sun Jun 19 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.1
 - Rebuilt for Fedora

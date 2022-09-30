@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+
 Name:           checkinstall
 Summary:        "make install" Installation Tracker
 Version:        1.6.2
@@ -19,8 +20,10 @@ Patch15:        checkinstall-install_paths.patch
 Patch19:        checkinstall-scandir.patch
 Patch10:        installwatch-glibc_minor.patch
 Patch20:	checkinstall-ldflags.diff
+Patch21:	checkinstall-ver.patch
 Provides:       installwatch
 Vendor:		Felipe Eduardo Sánchez Díaz Durán
+BuildRequires:  gcc
 
 %description
 Uses installwatch to keep track of all files created or modified during
@@ -42,6 +45,7 @@ another system.
 %patch19
 %patch10
 %patch -P 20 -p1
+%patch21 -p1
 %__cp %{SOURCE1} %{SOURCE2} .
 %__cp %{SOURCE3} locale/checkinstall-zh_TW.po
 rm -f checkinstall checkinstallrc-dist

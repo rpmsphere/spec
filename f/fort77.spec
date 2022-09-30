@@ -20,7 +20,7 @@ need to install the f2c package.
 %setup -q
 
 %build
-make
+#make
 
 %install
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}

@@ -4,7 +4,7 @@
 Summary: 3D recreational physics simulator
 Name: golems
 Version: 0.57.1
-Release: 12.1
+Release: 13
 License: GPLv3+
 Group: Sciences/Physics
 # http://sourceforge.net/projects/golems
@@ -17,6 +17,7 @@ Source0: %{name}-%{version}-%{rev}.zip
 Source1: %{name}.desktop
 Source2: %{name}
 Patch0: %{name}-%{version}-mga-build.patch
+BuildArch: noarch
 
 %description
 This is a most unusual game. There are no set objectives, and no way to “win”.
@@ -45,8 +46,12 @@ popd
 pushd ant/dist/Linux
 mkdir -p %{buildroot}%{_datadir}/%{name}
 cp -af ./*.jar %{buildroot}%{_datadir}/%{name}/
-rm -f ./lib/LICENSE ./lib/NOTICE
+rm -f ./lib/LICENSE ./lib/NOTICE ./lib/native/*
 cp -af ./lib %{buildroot}%{_datadir}/%{name}/
+#ln -s ? %{buildroot}%{_datadir}/%{name}/lib/native/libjinput-linux64.so
+#ln -s ? %{buildroot}%{_datadir}/%{name}/lib/native/liblwjgl64.so
+#ln -s ? %{buildroot}%{_datadir}/%{name}/lib/native/libodejava64.so
+#ln -s ? %{buildroot}%{_datadir}/%{name}/lib/native/libopenal64.so
 popd
 mkdir -p %{buildroot}%{_bindir}
 install -m 755 %{SOURCE2} %{buildroot}%{_bindir}
@@ -63,7 +68,7 @@ cp -f ./dataFolder/com/golemgame/data/app/icons/golemIcon64.png %{buildroot}%{_d
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Fri Jun 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.57.1-0.git20160603
+* Sun Jul 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.57.1-0.git20160603
 - Rebuilt for Fedora
 * Fri Feb 26 2016 umeabot <umeabot> 0.57.1-0.git20140625.5.mga6
 + Revision: 979631

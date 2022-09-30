@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Summary: Adjustable data format binary editor
 Name: bed
 Version: 3.1.0
@@ -20,6 +22,7 @@ Linux and FreeBSD even usable without X window.
 
 %prep
 %setup -q
+sed -i '34i #include <algorithm>' src/search.cpp
 
 %build
 #export CXXFLAGS="-Wno-c++11-narrowing"
@@ -32,7 +35,6 @@ sed -i 's|-fPIC|-fPIC -Wno-c++11-narrowing|' plugins/examples/Makefile
 make
 
 %install
-########if test -e /usr/lib/bed-0.2.27/uninstallbed.sh; then bash /usr/lib/bed-0.2.27/uninstallbed.sh --force ; fi
 make  installfiles ROOTDIR=$RPM_BUILD_ROOT
 
 %files
@@ -40,7 +42,7 @@ make  installfiles ROOTDIR=$RPM_BUILD_ROOT
 %{_libdir}/%{name}-%{version}
 %exclude %{_datadir}/applications/%{name}-binary-editor.desktop
 %{_datadir}/%{name}
-%{_mandir}/man1/%{name}.1.*
+%{_mandir}/man1/%{name}.1*
 
 %changelog
 * Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.0

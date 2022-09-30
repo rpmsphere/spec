@@ -1,3 +1,6 @@
+%global __os_install_post %{nil}
+%undefine _debugsource_packages
+
 Name:			quadrupleback
 Version:		0.1.1
 Summary:		A clone of the 1982 Doubleback(TM)
@@ -25,8 +28,10 @@ Color Computer.
 
 %build
 autoreconf -ifv
-sed -i '16128,16171d' configure
+#sed -i '16128,16171d' configure
+sed -i '17129,17160d' configure
 ./configure --prefix=/usr
+sed -i 's|-D_REENTRANT|-D_REENTRANT -fPIE|' Makefile src/Makefile
 %{__make} %{?jobs:-j%jobs}
 
 %install

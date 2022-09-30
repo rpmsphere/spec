@@ -8,7 +8,8 @@ Group: Network
 License: Free Software
 URL: http://edbrowse.org/
 Source0: https://github.com/CMB/edbrowse/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildRequires: cmake
+Source1: modified_runtime.h
+BuildRequires: gcc cmake
 BuildRequires: curl-devel
 BuildRequires: readline-devel
 BuildRequires: pcre-devel
@@ -28,6 +29,7 @@ connections and JavaScript.
 %setup -q
 #sed -i '1557d' src/http.c
 sed -i 's|-L/usr/local/lib/quickjs -lquickjs|%{_libdir}/quickjs/libquickjs.a|' src/makefile
+cp %{SOURCE1} src
 
 %build
 make %{?_smp_mflags}

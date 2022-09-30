@@ -16,6 +16,7 @@ Patch0:		missing-includes.patch
 BuildRequires:	ImageMagick
 BuildRequires:	wxGTK3-devel
 BuildRequires:	boost-devel
+BuildRequires:  gcc-c++
 
 %description
 FreeFileSync is an Open-Source folder comparison and synchronization tool.
@@ -33,7 +34,8 @@ sed -i -e '/^LINKFLAGS/s|-s|%{build_ldflags}|' -e 's|wx-config|wx-config-3.0|' F
 sed -i 's/m_listBoxHistory->GetTopItem()/0/g' FreeFileSync/Source/ui/main_dlg.cpp
 sed -i 's!static_assert!//static_assert!' zen/scope_guard.h
 sed -i 's!inline!!g' FreeFileSync/Source/ui/version_check_impl.h
-sed -i -e 's|gtk+-2.0|gtk+-3.0|' -e 's|-Wfatal-errors||' -e 's|$RPM_LD_FLAGS|$(RPM_LD_FLAGS)|' FreeFileSync/Source/Makefile FreeFileSync/Source/RealTimeSync/Makefile
+sed -i -e 's|gtk+-2.0|gtk+-3.0|' -e 's|-Wfatal-errors|-std=c++11|' -e 's|$RPM_LD_FLAGS|$(RPM_LD_FLAGS)|' FreeFileSync/Source/Makefile FreeFileSync/Source/RealTimeSync/Makefile
+sed -i '11i #include <limits>' FreeFileSync/Source/structures.cpp
 
 # Fix install
 install -Dpm644 Changelog.txt FreeFileSync/Build/

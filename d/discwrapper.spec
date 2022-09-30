@@ -8,8 +8,8 @@ Version:        1.2.2
 Release:        9.1
 Source:         discwrapper-1.2.2.tar.gz
 URL:            http://sourceforge.net/projects/discwrapper/
-BuildRequires:  gcc-c++
-BuildRequires:  wxGTK-devel 
+BuildRequires:  gcc-c++ automake
+BuildRequires:  wxGTK2-devel 
 
 %description
 DiscWrapper is a cover designer for homemade discs (CD, DVD). It was made
@@ -22,9 +22,10 @@ save project, print directly or export into an image.
 Author: Nándor Mátravölgyi <nmatra@citromail.hu>
 
 %prep  
-%setup -q -n discwrapper-1.2.2
+%setup -q
 
 %build
+alternatives --set wx-config /usr/bin/wx-config-2.0
 export CXXFLAGS=-fPIC
 ./configure --prefix=%{_prefix} --localstatedir=/var/lib
 make

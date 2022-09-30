@@ -40,7 +40,7 @@ g++ data_hi/src/bikes/hue.cpp -lpng10 -o data_hi/src/bikes/hue.bin
 
 %build
 #setup_compile_flags
-export CFLAGS=-I/usr/include/sfml1
+export CFLAGS="-I/usr/include/sfml1 -fPIE"
 make
 
 %install

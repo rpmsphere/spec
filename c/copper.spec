@@ -2,7 +2,7 @@
 
 Name: copper
 Summary: Another experimental programming language
-Version: 4.6
+Version: 5.0
 Release: 1
 Group: Development/Languages
 License: Public Domain
@@ -18,23 +18,31 @@ anymore, it has two backends: a x86 COFF generator and LLVM.
 
 %prep
 %setup -q
-sed -i 's|/usr/local|/usr|' Makefile
+sed -i 's|/usr/local|/usr|' Makefile lib/std/Makefile scripts/copper
 sed -i 's|\$(INSTALL) -s|$(INSTALL)|' Makefile
 dos2unix scripts/*
 chmod +x scripts/*
+#sed -i 's|stage2/copper-elf64|stage1/copper-elf64|' Makefile
+sed -i 's|$(OUTDIR)/stage2/copper-elf64|"scripts/copper -c --no-sys --cc --compiler $(OUTDIR)/copper-c"|' Makefile
+sed -i 's|/lib$|/lib64|' lib/std/Makefile
 
 %build
-make COPPER=boot/copper-elf64 BACKEND=c
-#make boot-c
-#make BACKEND=c
+make
 
 %install
-%make_install BACKEND=c
+%make_install
+#install -Dm755 scripts/copper %{buildroot}%{_bindir}/copper
+#install -m755 build/copper-* %{buildroot}%{_bindir}
+#install -Dm644 build/libcopper-std.a %{buildroot}%{_libdir}/libcopper-std.a
+#install -d %{buildroot}%{_datadir}/copper
+#cp -a lib/std/include %{buildroot}%{_datadir}/copper
 
 %files
 %doc *.txt
 %{_bindir}/*
+%{_libdir}/libcopper-std.a
+%{_datadir}/copper
 
 %changelog
-* Sun Mar 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.6
+* Sun Sep 11 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0
 - Rebuilt for Fedora

@@ -3,11 +3,9 @@ Summary:       A Scala Learning Environment
 URL:           http://www.kogics.net/kojo
 Group:         Applications/Education
 License:       GPL
-Version:       2.4.08
+Version:       2.9.23
 Release:       1.bin
-Source0:       https://bitbucket.org/lalit_pant/kojo/downloads/kojoInstall-%{version}.jar
-Source1:       http://kogics.wdfiles.com/local--files/kojo-silent-install/auto-install.xml
-BuildRequires: java-openjdk
+Source0:       https://github.com/litan/kojo/releases/download/2.9.23_release/Kojo_2_9_23.zip
 Requires:      jre
 BuildArch:     noarch
 
@@ -23,24 +21,21 @@ creation, and learning in the areas of:
 * Computer and Internet literacy
 
 %prep
-%setup -T -c
-cp %{SOURCE0} %{SOURCE1} .
-sed -i 's|/home/lalit/Kojo2.auto|%{buildroot}%{_datadir}/%{name}|' auto-install.xml
+%setup -q -n Kojo-z
 
 %build
-#ant
 
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_datadir}/%{name}
-java -jar kojoInstall-%{version}.jar auto-install.xml
+cp -a * %{buildroot}%{_datadir}/%{name}
 
 # script
 mkdir -p %{buildroot}%{_bindir}
+ln -s ../share/%{name}/bin/kojo %{buildroot}%{_bindir}/%{name}
 cd %{buildroot}%{_datadir}/%{name}
 sed -i 's|$0|$(realpath $0)|' bin/kojo
-ln -s ../share/%{name}/bin/kojo %{buildroot}%{_bindir}/%{name}
-rm -rf bin/kojo.exe Uninstaller ApplicationShortcuts .installationinformation
+rm -rf bin/kojo.*
 
 # freedesktop.org menu entry
 mkdir -p %{buildroot}%{_datadir}/applications
@@ -65,5 +60,5 @@ rm -rf %{buildroot}
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Wed Jan 06 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.08
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.23
 - Initial binary package

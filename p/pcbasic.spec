@@ -1,11 +1,11 @@
 Name: pcbasic
 Summary: An emulator for GW-BASIC
-Version: 1.2.14
+Version: 2.0.6
 Release: 1
 Group: Development/Languages
 License: GPLv3
 URL: http://sourceforge.net/projects/pcbasic/
-Source0: https://github.com/robhagemans/pcbasic/releases/download/v%{version}/pcbasic-v%{version}.tgz
+Source0: https://github.com/robhagemans/pcbasic/releases/download/v%{version}/pcbasic-%{version}.tar.gz
 BuildArch: noarch
 Requires: pygame
 Requires: numpy
@@ -20,7 +20,7 @@ Microsoft Binary Format (MBF) and can therefore read and write binary
 data files created by GW-BASIC.
 
 %prep
-%setup -q -n pcbasic-v%{version}
+%setup -q
 
 %build
 cat > %{name}.sh <<EOF
@@ -40,5 +40,5 @@ cp -a * %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.14
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.6
 - Rebuilt for Fedora

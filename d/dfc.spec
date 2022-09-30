@@ -1,7 +1,7 @@
 Summary:    DF in Color
 Name:       dfc
-Version:    3.0.4
-Release:    4.1
+Version:    3.1.1
+Release:    1
 License:    BSD-like
 Group:      System/Base
 URL:        http://projects.gw-computing.net/projects/dfc
@@ -17,23 +17,23 @@ Display file system space usage using graph and colors.
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
 %cmake -DSYSCONFDIR=%{_sysconfdir}
-make
+%cmake_build
 
 %install
 rm -rf %{buildroot}
-%make_install
+%cmake_install
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS HACKING LICENSE README CHANGELOG TRANSLATORS
+%doc *.md LICENSE
 %{_bindir}/dfc
 %{_mandir}/man1/dfc.1*
-%{_mandir}/fr/man1/dfc.1*
+%{_mandir}/*/man1/dfc.1*
 %config(noreplace) %{_sysconfdir}/xdg/dfc/dfcrc
-%config(noreplace) %{_sysconfdir}/xdg/dfc/fr/dfcrc
+%config(noreplace) %{_sysconfdir}/xdg/dfc/*/dfcrc
 
 %changelog
-* Mon Feb 16 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.4
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.1
 - Rebuilt for Fedora
 * Sat Oct 19 2013 umeabot <umeabot> 3.0.2-2.mga4
 + Revision: 523543

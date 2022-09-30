@@ -31,6 +31,7 @@ sed -i '1i #include <glibmm/main.h>' XGP/AnimWindow.cpp
 
 %build
 %configure
+sed -i 's|-Wall|-Wall -std=gnu++14 -fpermissive|' Makefile */Makefile */*/Makefile
 sed -i -e 's/, fs::native//g' -e 's/path.file_string/path.string /g' YGP/IVIOAppl.cpp
 make %{?_smp_mflags}
 

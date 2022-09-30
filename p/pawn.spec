@@ -1,12 +1,12 @@
 %undefine _debugsource_packages
 
 Summary: A tiny and fast embedded scripting language
-Name: pawnlang
+Name: pawn
 Version: 4.0.5749
 Release: 1
 License: Apache 2.0
 Group: Development/Languages
-Source: https://www.compuphase.com/pawn/pawn-%{version}.zip
+Source: https://www.compuphase.com/%{name}/%{name}-%{version}.zip
 URL: https://www.compuphase.com/pawn/pawn.htm
 
 %description
@@ -19,6 +19,8 @@ abstract machine.
 
 %prep
 %setup -q -c
+sed -i 's|/opt/Pawn|/usr|' compiler/sc1.c
+sed -i 's|path,"include"|path,"include/%{name}"|' compiler/sc1.c
 
 %build
 export CFLAGS=-fPIE
@@ -28,15 +30,20 @@ export CFLAGS=-fPIE
 %install
 #cmake_install
 install -d %{buildroot}%{_bindir}
-install -m755 *-linux-build/pawn* *-linux-build/stategraph %{buildroot}%{_bindir}
+install -m755 *-linux-build/%{name}* *-linux-build/stategraph %{buildroot}%{_bindir}
+install -d %{buildroot}%{_includedir}/%{name}
+install -m644 include/* %{buildroot}%{_includedir}/%{name}
+#install -d %{buildroot}%{_includedir}
+#install -m644 include/* %{buildroot}%{_includedir}
 
 %files 
 %doc LICENSE NOTICE history.txt readme.txt
 %{_bindir}/*
+%{_includedir}/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Thu Mar 05 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.5749
+* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.5749
 - Rebuilt for Fedora

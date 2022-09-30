@@ -1,3 +1,5 @@
+%undefine _debugsource_packages 
+
 Name: launchtool
 Version: 0.8
 Release: 6.1
@@ -19,8 +21,15 @@ daemon.
 %prep
 %setup -q
 %patch1 -p1
+sed -i '/set_unexpected/d' src/common/Exception.cc src/launchtool.cc src/test.cc
+sed -i '20i #include <string.h>' src/launchtool.cc
+sed -i '2i #include <string.h>' src/LaunchtoolCfg.cc
+sed -i '9i #include <string.h>' src/test.cc
+sed -i 's|sys_siglist\[signum\]|strsignal(signum)|' src/launchtool.cc src/test.cc
+sed -i 's|sys_siglist\[v\[i\]\]|strsignal(v[i])|' src/LaunchtoolCfg.cc
 
 %build
+export CXXFLAGS="-std=gnu++14 -fPIE"
 %configure --localstatedir=/var
 make
 

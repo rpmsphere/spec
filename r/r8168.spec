@@ -1,7 +1,7 @@
 %define kversion %(uname -r)
 
 Name:    r8168
-Version: 8.049.02
+Version: 8.050.03
 Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
@@ -33,6 +33,7 @@ echo "blacklist r8169" > blacklist-r8168.conf
 #sed -i 's|synchronize_sched|synchronize_rcu|' src/r8168_n.c
 
 %build
+CFLAGS="$CFLAGS -Wno-implicit-function-declaration"
 KSRC=%{_usrsrc}/kernels/%{kversion}
 %{__make} -C "${KSRC}" %{?_smp_mflags} modules M=$PWD/src
 
@@ -58,7 +59,7 @@ depmod -a > /dev/null 2> /dev/null
 /usr/lib/modprobe.d/blacklist-r8168.conf
 
 %changelog
-* Sun Jul 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 8.049.02
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 8.050.03
 - Update to new version
 * Thu Jun 12 2014 Alan Bartlett <ajb@elrepo.org> - 8.038.00-1
 - Updated to version 8.038.00

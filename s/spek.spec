@@ -1,13 +1,12 @@
 Name:		spek
-Version:	0.8.3
+Version:	0.8.4
 Release:	1
 Group:		Sound/Utilities
 License:	GPLv3
 Summary:	Tool for audio spectrum analysis and visualization
 URL:		http://spek-project.org
-#Source:	https://spek.googlecode.com/files/%{name}-%{version}.tar.gz
-Source:		spek-master.zip
-Patch0:		spek-0.8.1-ffmpeg-2.0.patch
+Source0:	https://spek.googlecode.com/files/%{name}-%{version}.tar.gz
+Patch0:		spek-0.8.4-ffmpeg-5.0.patch
 BuildRequires:	wxGTK3-devel
 BuildRequires:	ffmpeg-devel
 BuildRequires:	intltool
@@ -27,9 +26,9 @@ Features:
 * Translated into 16 languages.
 
 %prep
-%setup -q -n spek-master
-#patch0
-sed -i 's|-pthread|-pthread -I/usr/include/ffmpeg|' src/Makefile.am
+%setup -q
+%patch0 -p 1
+sed -i 's|-pthread|-pthread -fpermissive -I/usr/include/ffmpeg|' src/Makefile.am
 
 %build
 #configure
@@ -47,7 +46,7 @@ make
 %{_datadir}/man/man1/%{name}.*
 
 %changelog
-* Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.4
 - Rebuilt for Fedora
 * Fri Jul 12 2013 fwang <fwang> 0.8.1-4.mga4
 + Revision: 453382

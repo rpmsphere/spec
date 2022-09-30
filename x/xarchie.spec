@@ -22,6 +22,7 @@ Internet information system.
 sed -i 's|char \*pmatch|static char *pmatch|' regex.c
 sed -i 's|struct restrict|struct restriction|' pfs.h
 sed -i -e 's|regexp\.h|regex.h|' -e '48i #define NO_REGEXP' FWF/Dir/RegExp.c
+sed -i 's|clq|cq|' */*/Makefile*
 
 %build
 xmkmf
@@ -55,11 +56,7 @@ rm -fr %buildroot
 %_prefix/lib/X11/app-defaults
 %_datadir/applications/%{name}.desktop
 %_datadir/pixmaps/%{name}.png
-%if %{fedora}<21
-%_sysconfdir/X11/app-defaults/Xarchie
-%else
 %_datadir/X11/app-defaults/Xarchie
-%endif
 
 %changelog
 * Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.10

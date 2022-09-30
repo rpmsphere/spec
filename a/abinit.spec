@@ -1,7 +1,7 @@
 Summary: Computational Chemistry DFT program
 Name: abinit
 Version: 8.10.1
-Release: 1
+Release: 2.1
 License: GPL
 Group: Sciences/Chemistry
 URL: http://www.abinit.org/

@@ -1,11 +1,11 @@
 Name: naikai-fonts
 Summary: A free font family derived from setofont
-Version: 1.31
+Version: 1.77
 Release: 1
 Group: User Interface/X
 License: Open Font License 1.1
 URL: https://github.com/max32002/naikaifont
-Source0: naikai-fonts-1.31.zip
+Source0: naikai-fonts-%{version}.tar.xz
 BuildArch: noarch
 Obsoletes: seto-fonts
 Requires: fontconfig
@@ -34,5 +34,5 @@ install -m644 *.ttf %{buildroot}%{_datadir}/fonts/naikai
 %{_datadir}/fonts/naikai
 
 %changelog
-* Tue Apr 28 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.31
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.77
 - Rebuilt for Fedora

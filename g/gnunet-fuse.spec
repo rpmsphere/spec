@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		gnunet-fuse
-Version:	0.13.0
+Version:	0.16.0
 Release:	1
 Source0:	http://gnunet.org/download/%{name}-%{version}.tar.gz
 License:	GPLv2+
@@ -10,6 +10,7 @@ Group:		Networking/File transfer
 URL:		http://gnunet.org/
 BuildRequires:	gnunet-devel
 BuildRequires:	fuse-devel
+BuildRequires:  libsodium-devel
 BuildRequires:	libextractor-devel
 BuildRequires:	libgcrypt-devel
 BuildRequires:	atlas
@@ -22,9 +23,9 @@ trusted services.
 
 %prep
 %setup -q
+sed -i 's|pthread_mutexattr_setkind_np|pthread_mutexattr_settype|' src/fuse/mutex.c
 
 %build
-export CFLAGS=-lpthread
 ./configure --prefix=/usr
 make
 
@@ -37,5 +38,5 @@ make
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Tue Sep 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.0
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16.0
 - Rebuilt for Fedora

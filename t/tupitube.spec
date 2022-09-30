@@ -1,13 +1,14 @@
 %undefine _debugsource_packages
 
 Summary:	2D vector-based animation environment
-Name:		tupi
-Version:	0.2.9
-Release:	22.1
+Name:		tupitube
+Version:	0.2.18
+Release:	1
 License:	GPLv3
 URL:		http://www.maefloresta.com/
 Group:		Graphics/Editors and Converters
-Source0:	https://dl.sourceforge.net/project/tupi2d/Source%20Code/%{name}-%{version}.tar.gz
+Source0:	https://dl.sourceforge.net/project/tupi2d/Source%20Code/%{name}.desk-%{version}.tar.gz
+BuildRequires:  gcc-c++
 BuildRequires:	qt5-qtbase-devel
 BuildRequires:	ffmpeg-devel
 BuildRequires:	rubypick, ruby
@@ -21,9 +22,12 @@ BuildRequires:	libogg-devel
 A design and authoring tool for digital artists interested in 2D Animation.
 
 %prep
-%setup -q
-sed -i 's|/usr/include/libavformat/|/usr/include/ffmpeg/ /usr/include/libavformat/|' tupiglobal.pri
-sed -i 's|CODEC_FLAG_GLOBAL_HEADER|AV_CODEC_FLAG_GLOBAL_HEADER|' src/plugins/export/libavplugin/tlibavmoviegenerator.cpp
+%setup -q -n %{name}.desk
+#sed -i 's|/usr/include/libavformat/|/usr/include/ffmpeg/ /usr/include/libavformat/|' tupiglobal.pri
+sed -i 's|/usr/local/ffmpeg/include|/usr/include/ffmpeg|' tupiglobal.pri
+#sed -i 's|CODEC_FLAG_GLOBAL_HEADER|AV_CODEC_FLAG_GLOBAL_HEADER|' src/plugins/export/libavplugin/tlibavmoviegenerator.cpp
+#sed -i '42i #include <QPainterPath>' src/framework/gui/tslider.cpp
+#sed -i '38i #include <QPainterPath>' src/components/exposure/tupexposuretable.cpp
 
 %build
 qmake-qt5 PREFIX=/usr
@@ -54,7 +58,7 @@ mv %{buildroot}/usr/man1 %{buildroot}/usr/share/man/man1
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Tue Jul 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.9
+* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.18
 - Rebuilt for Fedora
 * Sat Oct 19 2013 umeabot <umeabot> 0.2-0.09122012.4.mga4
 + Revision: 534845

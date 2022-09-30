@@ -3,12 +3,13 @@
 Summary: 	Fbi IMproved
 Name: 		fim
 Version: 	0.6
-Release: 	3.1
+Release: 	0.1621
 License: 	GPLv2
 Group: 		Graphics
 URL: 		http://www.nongnu.org/fbi-improved/
 Source0: 	http://download.savannah.gnu.org/releases/fbi-improved/%{name}-%{version}-trunk.tar.gz
 Source1: 	fim.desktop
+BuildRequires: gcc-c++ automake
 BuildRequires: gd-devel 
 BuildRequires: pkgconfig(libpng)
 BuildRequires: flex bison 
@@ -39,10 +40,11 @@ and may be configured out at build time, if necessary.
 
 %prep
 %setup -qn %{name}-%{version}-trunk
-sed -i 's|gFalse, gBgColor, bitmapTopDown|gFalse, gBgColor, bitmapTopDown, splashThinLineDefault|' src/FbiStuffPdf.cpp
+#sed -i 's|gFalse, gBgColor, bitmapTopDown|gFalse, gBgColor, bitmapTopDown, splashThinLineDefault|' src/FbiStuffPdf.cpp
 
 %build
-export LDFLAGS="$LDFLAGS -lexif" CFLAGS="-std=gnu++11"
+#export LDFLAGS="$LDFLAGS -lexif"
+./autogen.sh
 %configure \
     --prefix=/usr \
     --disable-debug \
@@ -63,6 +65,7 @@ export LDFLAGS="$LDFLAGS -lexif" CFLAGS="-std=gnu++11"
     --enable-read-dirs \
     --enable-warnings 
 %endif
+
 make
 
 %install
@@ -80,7 +83,7 @@ install -pD -m644  media/fim.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 %{_mandir}/man5/*
 
 %changelog
-* Mon May 14 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6-trunk
+* Sun Aug 28 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
 - Rebuilt for Fedora
 * Thu May 01 2014 symbianflo <symbianflo@symbianflo> 0.4-rc1
 + Revision: 1b90f44

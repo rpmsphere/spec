@@ -3,7 +3,7 @@
 
 Summary: The Nelson Programming Language
 Name: nelson
-Version: 0.6.2
+Version: 0.6.7
 Release: 1
 License: GPLv2
 Group: Development/Language
@@ -13,6 +13,7 @@ BuildRequires: eigen3-devel
 BuildRequires: matio-devel
 BuildRequires: openmpi-devel
 BuildRequires: libsndfile-devel
+BuildRequires: libgit2-devel
 AutoReq: off
 Requires: openmpi
 Requires: qt5-qtbase-gui qt5-qtdeclarative alsa-lib boost libcurl libevent libffi flexiblas-netlib libgcc libgit2 libgomp
@@ -31,6 +32,7 @@ these own data types and operations on these data types by using overload.
 
 %prep
 %setup -q
+sed -i 's|fscanf(filepointer, np)|fscanf(filepointer, "%s", np)|' modules/stream_manager/src/cpp/FscanFunction.cpp
 
 %build
 #cmake -G "Unix Makefiles" .
@@ -38,27 +40,26 @@ cmake . -DCMAKE_INSTALL_PREFIX=/usr/libexec -DCMAKE_BUILD_TYPE=release -DMPI_C_C
 make
 
 %install
-#make_install
-mkdir -p %{buildroot}%{_bindir} %{buildroot}%{_libexecdir}/%{name}
-cp -a bin modules resources etc locale tools %{buildroot}%{_libexecdir}/%{name}
-cd %{buildroot}%{_libexecdir}/%{name}/bin/linux64
+%make_install
+mkdir -p %{buildroot}%{_bindir}
+cd %{buildroot}%{_libexecdir}/Nelson-%{version}/bin/linux
 sed -i 's|$0|$(realpath $0)|' %{name}-*i
 for i in %{name}-*i; do
-  ln -s %{_libexecdir}/%{name}/bin/linux64/$i %{buildroot}%{_bindir}/$i
+  ln -s %{_libexecdir}/Nelson-%{version}/bin/linux/$i %{buildroot}%{_bindir}/$i
 done
 mkdir -p %{buildroot}%{_sysconfdir}/ld.so.conf.d
-echo %{_libexecdir}/%{name}/bin/linux64 > %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}.conf
+echo %{_libexecdir}/Nelson-%{version}/bin/linux > %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}.conf
 echo %{_libdir}/openmpi/lib >> %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}.conf
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
-%doc LICENSE COPYING* *.md
-%{_libexecdir}/%{name}
+%doc LICENSE *.md
+%{_libexecdir}/*
 %{_bindir}/%{name}-*
 %{_sysconfdir}/ld.so.conf.d/%{name}.conf
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.2
+* Sun Aug 7 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.7
 - Rebuilt for Fedora

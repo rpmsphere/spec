@@ -1,8 +1,8 @@
 %undefine _missing_build_ids_terminate_build
 
 Name:			libcwd
-Version:		1.0.6
-Release:		10.1
+Version:		1.1.2
+Release:		1
 Summary:		Debugging Library for C++
 Source:			http://prdownloads.sourceforge.net/libcwd/libcwd-%{version}.tar.gz
 URL:			http://libcwd.sourceforge.net
@@ -65,12 +65,12 @@ Authors:
 
 %prep
 %setup -q
-sed -i 's|-Werror//|-Werror /-fpermissive /|' configure
+#sed -i 's|-Werror//|-Werror /-fpermissive /|' configure
 
 %build
 %configure
-sed -i 's|^typedef .*|typedef unsigned int getgroups_t;|' include/sys.h
-sed -i 's|-Wall|-Wall -fpermissive|' Makefile
+#sed -i 's|^typedef .*|typedef unsigned int getgroups_t;|' include/sys.h
+#sed -i 's|-Wall|-Wall -fpermissive|' Makefile
 make
 
 %install
@@ -92,14 +92,12 @@ rm -rf "$RPM_BUILD_ROOT"
 %files devel
 %{_includedir}/libcwd
 %{_libdir}/libcwd.so
-%{_libdir}/libcwd.la
 %{_libdir}/libcwd_r.so
-%{_libdir}/libcwd_r.la
 %{_libdir}/pkgconfig/libcwd.pc
 %{_libdir}/pkgconfig/libcwd_r.pc
 
 %changelog
-* Thu Aug 17 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
 - Rebuilt for Fedora
 * Sun Jul 27 2008 Pascal Bleser <guru@unixtech.be> 1.0.0
 - new package

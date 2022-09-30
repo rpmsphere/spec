@@ -2,7 +2,7 @@
 %global __os_install_post %{nil}
 
 Name:           upp
-Version:        15260
+Version:        16270
 Release:        1
 License:        BSD
 Summary:        C++ cross-platform rapid application development framework (known as U++)
@@ -51,13 +51,14 @@ features like code completion, navigation and transformation.
 #export CFLAGS="%{optflags}"
 #export CXXFLAGS="%{optflags}"
 #export LDFLAGS="%{optflags}"
-make
+make -j 4
 #make \
 #     -e LIBPATH=$(pkg-config --libs-only-L x11 freetype2 gtk+-2.0 glib-2.0 cairo pango atk) \
 #     -e CINC=" -I. $(pkg-config --cflags x11 freetype2 gtk+-2.0 glib-2.0 cairo pango atk)" \
 #     -e UPPOUT="$PWD/uppsrc" \
 #     -e LINKOPTIONS="$(pkg-config --libs libpng freetype2) "
 #     -e OutFile="$PWD/uppsrc/ide.out"
+make -f umkMakefile -j 4
 
 %install
 # put bin file in the right place
@@ -70,7 +71,7 @@ install -Dm 644 uppsrc/ide/theide-48.png $RPM_BUILD_ROOT/%{_datadir}/pixmaps/the
 install -Dm 644 uppsrc/ide/theide.desktop $RPM_BUILD_ROOT/%{_datadir}/applications/theide.desktop
 # install other stuff like tutorial, reference, source, etc
 install -dm 755 $RPM_BUILD_ROOT/%{_datadir}/upp
-cp -r bazaar $RPM_BUILD_ROOT/%{_datadir}/upp
+install -m755 umk $RPM_BUILD_ROOT/%{_bindir}/umk
 cp -r examples $RPM_BUILD_ROOT/%{_datadir}/upp
 cp -r reference $RPM_BUILD_ROOT/%{_datadir}/upp
 cp -r tutorial $RPM_BUILD_ROOT/%{_datadir}/upp
@@ -118,13 +119,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc uppsrc/ide/Copying
-%dir %{_datadir}/upp
-%{_datadir}/upp/GCC.bm
-%{_datadir}/upp/bazaar/
-%{_datadir}/upp/examples/
-%{_datadir}/upp/reference/
-%{_datadir}/upp/tutorial/
-%{_datadir}/upp/uppsrc/
+%{_bindir}/umk
+%{_datadir}/upp
 
 %files -n theide
 %doc uppsrc/ide/Copying
@@ -135,7 +131,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/theide.1*
 
 %changelog
-* Thu Oct 22 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 15260
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 16270
 - Rebuilt for Fedora
 * Thu Dec 30 2010 fisiu@opensuse.org
 - fixed %%{libdir} in external Makefile and GCC.bm

@@ -6,6 +6,7 @@ Summary:        Rubik's cube game
 Group:          Games/Puzzles
 URL:            https://launchpad.net/pybik/
 Source:         https://launchpad.net/pybik/trunk/%{version}/+download/pybik-%{version}.tar.gz
+BuildRequires:  gcc-c++
 BuildRequires:  pkgconfig(python3)
 BuildRequires:  python3-setuptools
 BuildRequires:  pkgconfig(glu)
@@ -36,6 +37,8 @@ sed -i 's|self, args, nargs, NULL|self, args, nargs|' csrc/*
 sed -i 's|tstate->exc_|tstate->curexc_|' csrc/_qt_qtwogl.cpp csrc/_qtexec_.cpp
 
 %build
+%py3_build ||:
+sed -i '/tp_print = 0/d' build/temp.linux-x86_64-3.10/pybiklib/ext/_qt_qtwogl.cpp
 %py3_build
 
 %install

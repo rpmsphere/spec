@@ -21,6 +21,7 @@ Korea.
 %setup -q -n %{name}-qt4-final
 %patch -p1
 sed -i 's|$(QTDIR)|%{_libdir}/qt4|' src/src.pro
+sed -i 's|msg.contains("\([^0]*\)") > 0|msg.contains("\1") != NULL|g' src/network/igsconnection.cpp
 
 %build
 qmake-qt4 -makefile %{name}.pro QMAKE_CFLAGS="%{optflags} -Wno-format-security" QMAKE_CXXFLAGS="%{optflags} -Wno-format-security"

@@ -19,7 +19,7 @@ sed -i -e 's|/usr/local|/usr|' -e 's|${QT_LIBRARIES}|${QT_LIBRARIES} -lGL|' CMak
 
 %build
 %cmake .
-sed -i -e 's|-O3||' -e 's|-Werror=format-security||' CMakeCache.txt CMakeFiles/extcalc.dir/link.txt CMakeFiles/extcalc.dir/flags.make
+sed -i -e 's|-O3||' -e 's|-Werror=format-security||' */CMakeCache.txt */CMakeFiles/extcalc.dir/link.txt */CMakeFiles/extcalc.dir/flags.make
 %cmake_build
 										
 %install

@@ -38,16 +38,17 @@ o  It is still a small and simple program!
 sed -i '14i decl {\\#include <unistd.h>} {private global\n}\n' fteapot.fl
 
 %build
-export CFLAGS="%{optflags} -I/usr/include/tirpc -ltirpc"
+export CFLAGS="%{optflags} -I/usr/include/tirpc"
+export LDFLAGS="-ltirpc -lfltk_images"
 %cmake -DENABLE_HELP=OFF .
 %cmake_build
 
 %install
 %cmake_install
-install -Dm755 libteapotlib.so %{buildroot}%{_libdir}/libteapotlib.so
+install -Dm755 */libteapotlib.so %{buildroot}%{_libdir}/libteapotlib.so
 
 %files
-%{_bindir}/%{name}
+%{_bindir}/*%{name}
 %{_datadir}/doc/%{name}
 %{_mandir}/man1/%{name}.1.*
 %{_libdir}/libteapotlib.so

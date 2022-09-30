@@ -27,6 +27,7 @@ export LDFLAGS=-Wl,--allow-multiple-definition
 autoreconf -fi
 # enumpoly is not supported on 64 bit
 %configure --disable-enumpoly
+sed -i 's|-Wall|-Wall -std=gnu++14|' Makefile
 make
 
 %install

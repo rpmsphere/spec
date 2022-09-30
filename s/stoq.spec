@@ -2,16 +2,16 @@
 
 Summary:	A powerful retail system
 Name:		stoq
-#Version:	3.0
-Version:	1.11.3
-Release:	14.1
+Version:	7.14.0
+Release:	1
 License:	GPL
 Group:		System/Libraries
-URL:		http://www.stoq.com.br/
-Source0:	https://github.com/stoq/stoq/archive/%{version}.tar.gz?/%{name}-%{version}.tar.gz
-BuildRequires:	python2-setuptools
-BuildRequires:	python2-kiwi-gtk
-BuildRequires:	python2-devel
+URL:		https://github.com/stoq/stoq
+#Source0:	https://github.com/stoq/stoq/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:	%{name}-master.zip
+BuildRequires:	python3-setuptools
+BuildRequires:	python3-kiwi
+BuildRequires:	python3-devel
 %ifarch x86_64
 BuildRequires:	grub2-efi-x64
 %endif
@@ -47,20 +47,20 @@ Accounts Payable and Accounts Receivable, Printable Reports,
 Employees and Suppliers registry.
 
 %prep
-%setup -q
+%setup -q -n %{name}-master
 
 %build
-python2 setup.py build
+python3 setup_old.py build
 
 %install
 mkdir -p %{_etcdir}/stoq
 rm -rf %{buildroot}
-python2 setup.py install -O1 --skip-build --root %{buildroot}
+python3 setup_old.py install -O1 --skip-build --root %{buildroot}
 rm -rf %{buildroot}%{_defaultdocdir}
-rm %{buildroot}%{python2_sitelib}/stoq-%{version}-py2.7.egg-info/requires.txt
+rm %{buildroot}%{python3_sitelib}/stoq-%{version}-py2.7.egg-info/requires.txt
 %find_lang %{name}
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/*
 
 %files -f %{name}.lang
 %doc AUTHORS CONTRIBUTORS COPYING README NEWS
@@ -69,7 +69,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 %{_bindir}/stoqdbadmin
 %{_datadir}/stoq/scripts/createdbuser.sh
 %{_datadir}/stoq/plugins
-%{python2_sitelib}/*.egg-info
+%{python3_sitelib}/*.egg-info
 %{_datadir}/icons/hicolor/48x48/apps/stoq.png
 %{_datadir}/polkit-1/actions/br.com.stoq.createdatabase.policy
 %{_datadir}/stoq/csv
@@ -83,11 +83,11 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 %{_datadir}/stoq/scripts/packageinstaller.py*
 %{_datadir}/applications/stoq.desktop
 %{_datadir}/gnome/help
-%{python2_sitelib}/stoq
-%{python2_sitelib}/stoqlib
+%{python3_sitelib}/stoq
+%{python3_sitelib}/stoqlib
 
 %changelog
-* Wed Sep 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11.3
+* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 7.14.0
 - Rebuilt for Fedora
 * Fri Feb 17 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1.11.3-3
 - (e65da9f) MassBuild#1257: Increase release tag

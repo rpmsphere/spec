@@ -1,13 +1,14 @@
 Summary: Real-Time Framework for Linux
 Name: xenomai
-Version: 3.1
+Version: 3.2.1
 Release: 1
-Source0: https://xenomai.org/downloads/xenomai/stable/%{name}-%{version}.tar.bz2
+Source0: https://xenomai.org/downloads/xenomai/stable/%{name}-v%{version}.tar.bz2
 License: GPL
 Group: Networking/Other
 URL: http://www.xenomai.org
 Requires: %{name}-libs
 BuildRequires: gcc-c++
+BuildRequires: automake
 
 %description
 Xenomai is a real-time development framework cooperating with the Linux kernel, 
@@ -44,12 +45,14 @@ Requires: %{name}-devel
 Static xenomai Library files
 
 %prep
-%setup -q
-sed -i 's|-Werror ||' configure*
+%setup -q -n %{name}-v%{version}
+#sed -i 's|-Werror ||' configure*
+#sed -i '246,249d' include/boilerplate/libc.h
 
 %build
 autoreconf -fisv
 ./configure --prefix=/usr/ --includedir=/usr/include/xenomai --libdir=%{_libdir}
+sed -i 's|-flto=auto -ffat-lto-objects||' `find . -name Makefile`
 make 
 
 %install
@@ -76,13 +79,14 @@ make install DESTDIR=$RPM_BUILD_ROOT SUDO=false
 %{_libdir}/dynlist.ld
 %{_libdir}/modechk.wrappers
 %{_libdir}/xenomai
+%{_datadir}/kconf-checklist
 
 %files static
 %{_libdir}/lib*.a*
-%exclude %{_libdir}/lib*.la
+#exclude %{_libdir}/lib*.la
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
+* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.1
 - Rebuilt for Fedora
 * Mon Apr 15 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 2.4.8-alt1.qa1
 - NMU: rebuilt for debuginfo.

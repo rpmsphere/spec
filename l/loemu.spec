@@ -1,6 +1,6 @@
 Name:		loemu
 Version:	0.3.1
-Release:	1
+Release:	2.1
 Summary:	A simple python front-end for various emulators
 License:	GPLv2+
 Group:		Emulators
@@ -15,8 +15,8 @@ BuildRequires:	python2-libxml2
 BuildRequires:  python2-libxslt
 BuildRequires:	unzip
 BuildRequires:	intltool
-Requires:	libxslt-python
-Requires:	pygtk2-libglade
+#Requires:	libxslt-python
+#Requires:	pygtk2-libglade
 #Suggests:	sdlmame
 #Suggests:	snes9x
 #Suggests:	zsnes

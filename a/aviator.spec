@@ -1,12 +1,12 @@
 Summary: A high performance scripting language hosted on the JVM
 Name: aviator
-Version: 5.2.7
+Version: 5.3.2
 Release: 1
 License: LGPLv3
 Group: Development/Languages
-Source: https://github.com/killme2008/aviatorscript/archive/refs/tags/aviator-%{version}.tar.gz
+Source: https://github.com/killme2008/aviatorscript/archive/refs/tags/aviator-%{version}.tar.gz#/aviatorscript-aviator-%{version}.tar.gz
 URL: https://github.com/killme2008/aviatorscript
-BuildRequires: java-openjdk-devel
+BuildRequires: java-devel-openjdk
 BuildRequires: maven
 BuildArch: noarch
 Requires: jre
@@ -46,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}
 
 %changelog
-* Sat Sep 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2.7
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.2
 - Rebuilt for Fedora

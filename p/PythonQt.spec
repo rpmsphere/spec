@@ -16,6 +16,7 @@ Patch0:         %{name}-add-install-target.patch
 Patch1:         PythonQt-create-pkg-config.patch
 # PATCH-FIX-UPSTREAM
 Patch2:         0001-Fix-build-with-python-3.8.patch
+BuildRequires:  gcc-c++
 BuildRequires:  dos2unix
 BuildRequires:  qt5-qtbase-private-devel
 BuildRequires:  qt5-qtdeclarative-devel
@@ -40,8 +41,8 @@ that should use PyQt or PySide instead.
 %package        devel
 Summary:        Header files and development libraries for the pythonqt package
 Group:          Development/Libraries/C and C++
-Requires:       lib%{name}-Qt5-Python%{mypyver}-%{sover} = %{version}
-Requires:       lib%{name}_QtAll-Qt5-Python%{mypyver}-%{sover} = %{version}
+#Requires:       lib%{name}-Qt5-Python%{mypyver}-%{sover} = %{version}
+#Requires:       lib%{name}_QtAll-Qt5-Python%{mypyver}-%{sover} = %{version}
 Requires:       pkgconfig(Qt5Concurrent)
 Requires:       pkgconfig(Qt5Multimedia)
 Requires:       pkgconfig(Qt5Svg)
@@ -64,6 +65,7 @@ that should use PyQt or PySide instead.
 find . -type f -exec dos2unix {} \;
 %autopatch -p1
 sed -r -i -e "s/(unix:PYTHON_VERSION=).*/\1%{mypyver}/g" build/python.prf
+sed -i 's|pydebug.h|cpython/pydebug.h|' src/PythonQt.cpp
 
 %build
 qmake-qt5 \

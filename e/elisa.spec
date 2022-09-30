@@ -1,7 +1,7 @@
 Summary: Media Center
 Name: elisa
 Version: 0.5.17
-Release: 1
+Release: 2.1
 # Elisa is GPLv3 and plugins are MIT.
 # See the included COPYING file for the details.
 License: GPLv3 and MIT

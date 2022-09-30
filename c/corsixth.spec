@@ -38,8 +38,10 @@ need a purchased copy of Theme Hospital in order to enjoy CorsixTH.
 %prep
 %setup -q -n %{oname}-%{version}
 #patch0 -p 1
+sed -i '114s|L, f, n|L, f, n, 0|' CorsixTH/Src/th_lua.h
 
 %build
+export CXXFLAGS="-g -O2 -fPIC -fPIE -fpermissive"
 %cmake \
 	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
 	-DWITH_LUAJIT=ON

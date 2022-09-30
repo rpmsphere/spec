@@ -10,7 +10,7 @@ Group: Applications/Internet
 License: GNU Lesser General Public License
 URL: https://www.jitsi.org
 Source0: https://download.jitsi.org/jitsi/nightly/src/%{name}-src-%{version}.zip
-BuildRequires: java-openjdk-devel, ant
+BuildRequires: java-11-openjdk-devel, ant
 BuildRequires: desktop-file-utils lua
 Requires: jre
 
@@ -27,6 +27,7 @@ MSN, Yahoo! Messenger, Bonjure, RSS und counting.
 
 %prep
 %setup -q -n %{name}
+sed -i 's|"1\.6"|"1.7"|g' build.xml
 sed -i 's|Base64\.|net.java.sip.communicator.util.Base64.|' \
   test/net/java/sip/communicator/slick/slickless/util/TestBase64.java \
   test/net/java/sip/communicator/slick/protocol/sip/TestOperationSetServerStoredInfo.java \

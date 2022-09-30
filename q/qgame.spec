@@ -25,6 +25,7 @@ what outputs the quantum program would produce, and with what probabilities
 
 %build
 %configure
+sed -i 's|-Wall|-Wall -std=gnu++14|' Makefile */Makefile
 make 
 
 %install

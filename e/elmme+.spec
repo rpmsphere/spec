@@ -3,8 +3,8 @@
 %define _name elm
 %define versionbase 2.5
 %define versiontag ME+ 
-%define version1 %{versiontag}%{versionbase}
-%define minor alpha48
+%define version1 %{versiontag}.%{versionbase}
+%define minor alpha60
 %define ver_full0 %{version1}.%{minor}
 %define ver_full %{ver_full0}
 %define fix_prefix /usr
@@ -12,9 +12,9 @@
 Summary: Text-based mailreader supporting MIME, GPG, PGP
 Name: elmme+
 Version: %{versionbase}.%{minor}
-Release: 3.1
+Release: 1
 URL: http://www.elmme-mailer.org/elm-ME+2.5.html
-Source0: http://elmme-mailer.org/elm-ME+2.5/src/%{_name}-%{ver_full0}.tar.gz
+Source0: http://elmme-mailer.org/elm-ME+2.5/src/%{_name}%{ver_full0}.tar.gz
 License: The Elm(tm) Mail System General Public License
 Group: Applications/Communications
 Docdir: %{fix_prefix}/doc
@@ -296,7 +296,7 @@ fi
 %doc %{_docdir}/%{_name}-%{ver_full}/shared_libs/tls/README.ME+
 
 %changelog
-* Mon Jun 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.alpha48
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.alpha60
 - Rebuilt for Fedora
 * Sat Oct 26 2013 Kari Hurtta <deb@elmme-mailer.org>
 - Initial package

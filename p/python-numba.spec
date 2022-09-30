@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+
 Name: python-numba
 Version: 0.26.0
 Release: 6.1
@@ -9,7 +10,7 @@ URL: http://numba.pydata.org/
 Source: numba-%version.tar.gz
 BuildRequires: atlas-devel
 BuildRequires: python2-devel
-BuildRequires: numpy
+BuildRequires: python2-numpy
 BuildRequires: Cython
 
 %description

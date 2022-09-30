@@ -10,8 +10,8 @@ Group:          Development/Libraries/Python
 Source0:        %{pyname}-35.tar.bz2
 BuildArch:      noarch
 BuildRequires:  python2-setuptools
-BuildRequires:  numpy, atlas-devel, suitesparse-devel
-Requires:       numpy
+BuildRequires:  python2-numpy, atlas-devel, suitesparse-devel
+Requires:       python2-numpy
 
 %description
 A pythonic, object-oriented framework and GUI tool for fitting data to models.

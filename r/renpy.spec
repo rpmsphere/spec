@@ -1,5 +1,5 @@
 Name:           renpy
-Version:        7.3.5
+Version:        8.0.3
 Release:        1
 Summary:        Framework for developing visual-novel type games
 Group:          Development/Libraries
@@ -8,12 +8,12 @@ URL:            http://www.renpy.org/
 Source0:        http://www.renpy.org/dl/%{version}/%{name}-%{version}-source.tar.bz2
 BuildRequires:	libpng-devel
 BuildRequires:	libpng12
-BuildRequires:  glew-devel, pygame-devel, freetype-devel, fribidi-devel, python2-Cython
+BuildRequires:  glew-devel, pygame-devel, freetype-devel, fribidi-devel, Cython
 BuildRequires:  lapack, atlas-devel
 BuildRequires:  glib2-devel, ffmpeg-devel
-BuildRequires:  SDL2-devel
-BuildRequires:  python2-pygame_sdl2-devel
-Requires:	python2-renpy
+BuildRequires:  gcc-c++, SDL2-devel
+BuildRequires:  python3-pygame_sdl2-devel
+Requires:	python3-renpy
 
 %description
 Ren'Py is a programming language and runtime, intended to ease the creation
@@ -25,10 +25,10 @@ Ren'Py tries to be like an executable script, allowing you to get a working
 game without much more effort than is required to type the game script into
 the computer.
 
-%package -n python2-%{name}
+%package -n python3-%{name}
 Summary:	The native Python module for renpy
 
-%description -n python2-%{name}
+%description -n python3-%{name}
 Ren'Py is implemented on top of Python, and that Python heritage shows
 through in many places. Many Ren'Py statements allow Python expressions
 to be used, and there are also Ren'Py statements that allow for the
@@ -55,7 +55,7 @@ This package includes a full playable example showing the features of the framew
 %build
 export CFLAGS="-I/usr/include/SDL2"
 cd module
-RENPY_DEPS_INSTALL=/usr python2 setup.py build
+RENPY_DEPS_INSTALL=/usr python3 setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -63,7 +63,7 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/%{name}
 chmod +x renpy.py
 cp -a renpy.py launcher renpy the_question tutorial $RPM_BUILD_ROOT%{_datadir}/%{name}
 cd module
-RENPY_DEPS_INSTALL=/usr python2 setup.py install --skip-build --root $RPM_BUILD_ROOT
+RENPY_DEPS_INSTALL=/usr python3 setup.py install --skip-build --root $RPM_BUILD_ROOT
 
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 %__cat > $RPM_BUILD_ROOT%{_bindir}/%{name} <<EOF
@@ -98,14 +98,14 @@ rm -rf $RPM_BUILD_ROOT
 #{_datadir}/%{name}/template
 %{_datadir}/applications/%{name}.desktop
 
-%files -n python2-%{name}
+%files -n python3-%{name}
 %doc doc/*
-%{python2_sitearch}/*
+%{python3_sitearch}/*
 
 %files demo
 %{_datadir}/%{name}/the_question
 %{_datadir}/%{name}/tutorial
 
 %changelog
-* Thu Aug 20 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 7.3.5
+* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 8.0.3
 - Rebuilt for Fedora

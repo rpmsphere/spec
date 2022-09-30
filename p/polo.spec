@@ -25,6 +25,8 @@ sed -i 's|public AsyncTask|protected AsyncTask|' src/Utility/AsyncTask.vala
 sed -i 's|public MediaStream|protected MediaStream|' src/Utility/MediaFile.vala
 sed -i 's|de nl fr tr|nl sv|' src/makefile
 sed -i 's|cmd.to_utf8()|cmd.data|' src/Gtk/TermBox.vala
+sed -i '147,176d' src/Utility/ArchiveTask.vala
+sed -i 's|ArchiveTask.7zip_version|16.02|' src/Utility/ArchiveTask.vala src/Gtk/MainMenubar.vala
 
 %build
 make %{?_smp_mflags}

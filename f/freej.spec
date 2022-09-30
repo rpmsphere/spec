@@ -2,7 +2,7 @@
 
 Name:           freej
 Version:        0.10
-Release:        30.4
+Release:        2.1
 Summary:        A vision mixer
 Group:          Applications/Multimedia
 License:        GPLv2
@@ -10,7 +10,7 @@ URL:            http://freej.org/
 Source0:        ftp://ftp.dyne.org/freej/releases/%{name}-%{version}.tar.gz
 Source1:        ipernav.png
 Patch1:         freej-0.8.1-VIDIOCGTUNER_non_fatal.diff
-BuildRequires:  gcc-c++, nasm, chrpath, flex
+BuildRequires:  gcc-c++, automake, nasm, chrpath, flex
 BuildRequires:  jack-audio-connection-kit-devel, libogg-devel
 BuildRequires:  libpng-devel, libpng10-devel, libjpeg-devel
 BuildRequires:  libshout-devel, fftw-devel, cwiid-devel

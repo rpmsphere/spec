@@ -23,7 +23,9 @@ sed -i 's|/usr/local/bin|%{buildroot}/usr/bin|' src/%{name}.pro
 %build
 cd src
 qmake-qt4
-make %{?_smp_mflags}
+make ||:
+sed -i -e 's|expr.tab.c|expr_yacc.cpp|' -e 's|expr.tab.h|expr_yacc.h|' expr_yacc.cpp
+make
 
 %install
 cd src

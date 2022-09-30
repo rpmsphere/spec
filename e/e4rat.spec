@@ -1,22 +1,26 @@
 Summary:	Toolset to accelerate the boot process as well as application startups
 Name:		e4rat
 Version:	0.2.3
-Release:	26
+Release:	36
 License:	GPLv3
 Group:		System/Boot and Init
 URL:		http://e4rat.sourceforge.net/
-Source0:	http://sourceforge.net/projects/e4rat/files/%{name}_%{version}_src.tar.gz
+Source0:	https://sourceforge.net/projects/e4rat/files/%{name}_%{version}_src.tar.gz
 Patch0:		git.diff
 Patch1:		e4rat-0.2.2-libdir.patch
 Patch2:		e4rat-0.2.3-shared-build.patch
 Patch3:		e4rat-0.2.3-gcc7.patch
 Patch4:		e4rat-0.2.3-glibc-2.28.patch
+Patch5:		e4rat-boost-placeholders.patch
+# Originally from Alt
+Patch50:	e4rat-0.2.3-boost-1.76.0-compat.patch
+# Originally from Arch e4rat-lite
+Patch60:	e4rat-addSyscall.patch
 BuildRequires:	cmake
 BuildRequires:	boost-devel
 BuildRequires:	pkgconfig(ext2fs)
 BuildRequires:	pkgconfig(blkid)
-BuildRequires:	audit-libs-devel
-#BuildRequires:	auparse-devel
+BuildRequires:	pkgconfig(audit)
 BuildRequires:	libstdc++-devel
 
 %description
@@ -37,10 +41,10 @@ types and/or earlier versions of extended filesystems are not supported.
 %prep
 %setup -q
 %autopatch -p1
+sed -i -e '/Boost_USE_MULTITHREADED/d' CMakeLists.txt
 
 %build
-export CXXFLAGS="-std=gnu++11"
-%cmake .
+%cmake
 %cmake_build
 
 %install
@@ -59,12 +63,45 @@ mkdir -p %buildroot/var/lib/e4rat
 %{_mandir}/man8/%{name}-preload.8*
 %{_mandir}/man8/%{name}-realloc.8*
 %dir /var/lib/e4rat
-%exclude %{_libdir}/lib%{name}-core.so
-%{_libdir}/lib%{name}-core.so.*
-
+%exclude %{_libdir}/lib*%{name}-core.so
+%{_libdir}/lib*%{name}-core.so.*
+   
 %changelog
-* Wed Feb 12 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
 - Rebuilt for Fedora
+* Mon Jul 04 2022 wally <wally> 0.2.3-36.mga9
++ Revision: 1867624
+- add patch to fix build with new audit
+- rebuild for boost 1.79.0
++ umeabot <umeabot>
+- Mageia 9 Mass Rebuild
+* Sun Dec 19 2021 wally <wally> 0.2.3-34.mga9
++ Revision: 1762631
+- rebuild for boost 1.78.0
+* Thu Sep 09 2021 wally <wally> 0.2.3-33.mga9
++ Revision: 1744667
+- rebuild for boost 1.77.0
+* Fri May 14 2021 wally <wally> 0.2.3-32.mga9
++ Revision: 1723054
+- add a patch from Alt to fix build with boost 1.76
+- rebuild for boost 1.76.0
+* Thu Dec 31 2020 wally <wally> 0.2.3-31.mga8
++ Revision: 1666747
+- rebuild for boost 1.75.0
+* Sun Dec 20 2020 wally <wally> 0.2.3-30.mga8
++ Revision: 1661989
+- rebuild for boost 1.74.0
+* Sun May 03 2020 wally <wally> 0.2.3-29.mga8
++ Revision: 1578343
+- rebuild for boost 1.73.0
++ danf <danf>
+- Switch URLs from http: to https:
+* Wed Feb 19 2020 umeabot <umeabot> 0.2.3-28.mga8
++ Revision: 1545013
+- Mageia 8 Mass Rebuild
+* Sun Jan 26 2020 wally <wally> 0.2.3-27.mga8
++ Revision: 1483499
+- rebuild for boost 1.72.0
 * Tue Oct 16 2018 wally <wally> 0.2.3-26.mga7
 + Revision: 1321024
 - rebuild for new boost 1.68.0
@@ -144,19 +181,3 @@ mkdir -p %buildroot/var/lib/e4rat
 - patch 3: fix build
 - fix bogus URL
 - imported package e4rat
-* Mon Jan 07 2013 Thierry Vignaud <tv@mageia.org> 0.2.3-1.mga3
-- import from mdv
-- clean spec
-* Tue May 08 2012 Tomasz Pawel Gajc <tpg@mandriva.org> 0.2.3-1
-+ Revision: 797625
-- drop patch 0
-- Patch1: fix lib dir on install
-- Patch2: check for libraries in corrent places, and use dynamic linking
-- clean spec file
-- add conflicts on preload
-- update to new version 0.2.3
-* Wed May 11 2011 Eugeni Dodonov <eugeni@mandriva.com> 0.2.1-1
-+ Revision: 673556
-- Imported to cooker.
-  P0: enable dynamic linking.
-- Created package structure for e4rat.

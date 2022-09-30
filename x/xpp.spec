@@ -1,7 +1,7 @@
 Summary:	X Printing Panel
 Name:		xpp
 Version:	1.5
-Release:	23.1
+Release:	2.1
 License:	GPL
 Group:		Publishing
 Source0:	http://cups.sourceforge.net/xpp/%{name}-%{version}cvs.tar.gz
@@ -9,6 +9,7 @@ Patch0:		01_old_debian_changes.patch
 Patch1:		02_build_system.patch
 Patch2:		xpp-new-fltk.patch
 URL:		http://cups.sourceforge.net/xpp/
+BuildRequires:  gcc-c++ automake
 BuildRequires:	cups-devel
 BuildRequires:	fltk-devel
 BuildRequires:	fltk-fluid
@@ -31,8 +32,8 @@ One simply calls the program (xpp) instead of the usual utilities
 %patch2 -p1
 
 %build
-autoreconf -fi
-%configure
+#autoreconf -fi
+./configure --prefix=/usr
 make FLUID=fluid
 
 %install

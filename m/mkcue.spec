@@ -7,13 +7,14 @@ URL:            http://diplodocus.org/projects/audio/
 Group:          Productivity/Multimedia/CD/Grabbers
 Source:         https://diplodocus.org/dist/audio/%{name}-%{version}.tar.bz2
 BuildRequires:  gcc-c++
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+BuildRequires:  automake
 
 %description
 mkcue generates cue sheets from a CD's TOC (Table Of Contents).
 
 %prep
 %setup -q
+sed -i 's|byte|mybyte|' diskid.h
 
 %build
 %configure
@@ -23,7 +24,6 @@ make %{?_smp_mflags}
 install -Dm 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %files
-%defattr(-,root,root,-)
 %doc AUTHORS COPYING README
 %{_bindir}/%{name}
 

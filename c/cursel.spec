@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/Terminal
 Source0:	http://users.pandora.be/stes/%{name}-%{version}.tar.gz
 URL:		http://users.pandora.be/stes/compiler.html
-BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	byacc
 BuildRequires:	flex
 BuildRequires:	ncurses-devel
@@ -31,9 +31,10 @@ sed -i '/unistd\.h/d' *.m
 %build
 autoconf
 %configure
-make \
-	OBJC="%{_bindir}/objc -Wc:%{optflags} -fcommon -I/usr/include/ncurses"\
-	LIBS="-lform -lmenu -lncurses %{optflags}"
+#make \
+#	OBJC="%{_bindir}/objc -Wc:%{optflags} -fcommon -I/usr/include/ncurses"\
+#	LIBS="-lform -lmenu -lncurses %{optflags}"
+make
 
 %install
 install -d $RPM_BUILD_ROOT%{_bindir}

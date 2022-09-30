@@ -37,18 +37,19 @@ find . -type d -name "zlib" | xargs rm -rf
 %patch1 -p0
 %patch2 -p1
 sed -i '1i #include <cmath>' src/layout/drawabletuplet.cpp
+sed -i 's|-Werror||' src/CMakeLists*.txt
 
 %build
-cmake \
-    -DCMAKE_C_FLAGS="-Wno-error -Wno-misleading-indentation -Wno-deprecated-declarations -Wno-parentheses" \
-    -DCMAKE_CXX_FLAGS="-Wno-error -Wno-misleading-indentation -Wno-deprecated-declarations -Wno-parentheses" \
-    -DCMAKE_INSTALL_PREFIX=%{_prefix}   \
-    -DCMAKE_EXE_LINKER_FLAGS="${CMAKE_EXE_LINKER_FLAGS} -lz" \
-    -DCANORUS_INSTALL_DATA_DIR=%{_datadir}/%{name} \
-    -DCANORUS_INSTALL_BIN_DIR=%{_bindir} \
-    -DCANORUS_INSTALL_LIB_DIR=%{_libdir} \
-    -DCMAKE_SKIP_RPATH:BOOL=TRUE       \
-    .
+%cmake \
+#    -DCMAKE_C_FLAGS="-Wno-error -Wno-misleading-indentation -Wno-deprecated-declarations -Wno-parentheses" \
+#    -DCMAKE_CXX_FLAGS="-Wno-error -Wno-misleading-indentation -Wno-deprecated-declarations -Wno-parentheses" \
+#    -DCMAKE_INSTALL_PREFIX=%{_prefix}   \
+#    -DCMAKE_EXE_LINKER_FLAGS="${CMAKE_EXE_LINKER_FLAGS} -lz" \
+#    -DCANORUS_INSTALL_DATA_DIR=%{_datadir}/%{name} \
+#    -DCANORUS_INSTALL_BIN_DIR=%{_bindir} \
+#    -DCANORUS_INSTALL_LIB_DIR=%{_libdir} \
+#    -DCMAKE_SKIP_RPATH:BOOL=TRUE       \
+#    .
 %cmake_build
 
 %install
@@ -56,7 +57,7 @@ cmake \
 install -D -m644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
 install -D -m644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.xpm
 install -D -m644 %{SOURCE1} %{buildroot}%{_mandir}/man1/%{name}.1
-rm doc/cmake_install.cmake
+#rm doc/cmake_install.cmake
 mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
 
 %clean

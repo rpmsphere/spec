@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+
 Name:		holotz-castle
 Version:	1.3.14
 Release:	1
@@ -16,7 +17,7 @@ Source22:	holotz-castle-editor-16x16.png
 Patch0:		holotz-castle-1.3.6-install.patch
 Patch1:		holotz-castle-1.3.11-compile-fixes.patch
 Patch2:		holotz-castle-1.3.14-compile-fixes.patch
-
+BuildRequires:  gcc-c++
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	SDL_image-devel
@@ -46,6 +47,7 @@ This package contains a level editor for Holotz's Castle.
 sed -i -e 's|share/games|share|' -e 's|-Werror|-Wno-error|' -e 's|-L\.|-L. -lz|' src/Makefile
 perl -pi -e s"|\r\n|\n|g" res/playlist.txt
 rm -f res/savedata/empty.txt
+sed -i -e 's|tmp > 0|tmp != NULL|' -e 's|0 >= (end|NULL == (end|' JLib/JLib/Util/JTextFile.cpp
 
 %build
 make

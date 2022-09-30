@@ -14,6 +14,8 @@ Kaa is a small and easy CUI text editor for console/terminal emulator environmen
 %prep
 %setup -q -n %{name}-master
 rm -rf %{name}.egg.info
+sed -i 's|\+\+Py_REFCNT(o);|++(o->ob_refcnt);|' _gappedbuf/_gappedbuf.c
+sed -i 's|--Py_REFCNT(o);|--(o->ob_refcnt);|' _gappedbuf/_gappedbuf.c
 
 %build
 %py3_build

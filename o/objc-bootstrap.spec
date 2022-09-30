@@ -1,8 +1,8 @@
 Summary:	Portable Object Compiler - bootstrap version
 Summary(pl.UTF-8):	Przenośny kompilator obiektowego C - wersja do inicjacji
 Name:		objc-bootstrap
-Version:	3.3.4
-Release:	5.1
+Version:	3.3.25
+Release:	1
 License:	LGPL
 Group:		Development/Tools
 Source0:	http://users.telenet.be/stes/%{name}-%{version}.tar.gz
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 
 %changelog
-* Fri Jan 13 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.4
+* Sun Aug 28 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.25
 - Rebuilt for Fedora
 * Sat Feb 02 2008 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org

@@ -163,6 +163,7 @@ BuildRequires:  texinfo
 BuildRequires:  zlib-devel
 %{?_with_zmq:BuildRequires: zeromq-devel}
 %{?_with_zvbi:BuildRequires: zvbi-devel}
+BuildRequires:  gcc-c++ automake
 
 %description
 FFmpeg is a complete and free Internet live audio and video

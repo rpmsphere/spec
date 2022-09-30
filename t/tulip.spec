@@ -22,7 +22,7 @@ BuildRequires:  environment-modules sip
 BuildRequires:	doxygen
 BuildRequires:	docbook-style-xsl
 BuildRequires:	ftgl-devel
-BuildRequires:	java-openjdk-devel lua
+BuildRequires:	java-devel-openjdk lua
 BuildRequires:	netpbm
 
 %description
@@ -60,6 +60,7 @@ This package contains Tulip user documentation and developer Handbook in HTML.
 
 %prep
 %setup -q
+sed -i -e '217d' -e '321d' library/tulip-python/src/ConsoleUtilsModule.cpp
 
 %build
 %cmake -DBUILD_DOC=on -DCMAKE_CXX_FLAGS="-fpermissive -fPIC" .

@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+
 Name:          biopy
 Version:       0.1.5
 Release:       10.1
@@ -8,7 +9,7 @@ URL:           http://code.google.com/p/biopy/
 Source:        http://biopy.googlecode.com/files/%{name}-%{version}.tar.gz
 License:       GPLv3
 BuildRequires: gcc-c++, python2-devel
-BuildRequires: numpy, lapack-devel, atlas
+BuildRequires: python2-numpy, lapack-devel, atlas
 
 %description
 This is not a high-duty, high-performance library. It is a set of functions for

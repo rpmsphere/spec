@@ -1,13 +1,14 @@
 Name: nubasic
 Summary: BASIC language interpreter written in C++11 for educational purposes
-Version: 1.51
+Version: 1.52
 Release: 1
 Group: Development/Language
 License: GPLv2+
-URL: http://www.nubasic.eu
+URL: https://github.com/eantcal/nubasic
 Source0: http://downloads.sourceforge.net/project/%{name}/%{name}-rel_%{version}.tar.gz
+BuildRequires: gcc-c++ automake
 BuildRequires: libX11-devel
-BuildRequires: xterm xorg-x11-apps
+#BuildRequires: xterm
 
 %description
 nuBASIC has been designed mainly for educational purposes both for C++ developers that
@@ -23,15 +24,17 @@ It has the components needed to create programs, including:
 
 %prep
 %setup -q -n %{name}-rel_%{version}
-sed -i 's|-Wall|-Wall -fPIC|' CMakeLists.txt
-sed -i '9i #include <string>' lib/nu_playsnd.cc
+sed -i -e 's|-std=c++14||' -e 's|-Wall|-Wall -fPIE|' `find . -name CMakeLists.txt`
+#sed -i '9i #include <string>' lib/nu_playsnd.cc
+sed -i '18i #include <cstddef> ' include/nu_flag_map.h
+sed -i 's|static volatile gsize|static gsize|' ide/scintilla/gtk/ScintillaGTKAccessible.cxx
 
 %build
 %cmake .
-make %{?_smp_mflags}
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot}
+%cmake_install
 
 %files
 %doc AUTHORS ChangeLog README NEWS THANKS
@@ -39,7 +42,7 @@ make install DESTDIR=%{buildroot}
 #{_libdir}/lib%{name}.a
 
 %changelog
-* Thu Oct 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.51
+* Sun Sep 04 202 Wei-Lun Chao <bluebat@member.fsf.org> - 1.52
 - Rebuilt for Fedora
 * Thu Sep 11 2014 Fedora 20 Release <acaldmail@gmail.com> - 1.19
 - Rebuild RPM for Fedora distros

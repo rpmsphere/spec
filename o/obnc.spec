@@ -1,3 +1,4 @@
+%global __arch_install_post %{nil}
 %undefine _debugsource_packages
 
 Name: obnc
@@ -22,9 +23,11 @@ and keeps track of which files need to be compiled or recompiled.
 %setup -q
 
 %build
+export CFLAGS="-g -O2 -fPIC -fPIE"
 ./build --libdir=%{_lib} --prefix=/usr
 
 %install
+sed -i 's|CFLAGS="|CFLAGS="-g -O2 -fPIC -fPIE |' install
 ./install --destdir=%{buildroot}
 
 %files

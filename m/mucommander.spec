@@ -11,7 +11,7 @@ Group:          Productivity/File utilities
 Source0:        %{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
 BuildRequires:  ant >= 1.6.5
-BuildRequires:  java-openjdk-devel lua
+BuildRequires:  java-11-openjdk-devel lua
 BuildArch:      noarch
 
 %description
@@ -33,6 +33,7 @@ Korean, Brazilian Portuguese, Dutch, Slovak, Japanese, Swedish, Danish and Ukrai
 
 %prep
 %setup -q
+sed -i 's|"1.5"|"1.7"|g' build/tools/main.xml build/conf/main.xml build/mucommander/structure.xml
 
 %build
 #ant obfuscate

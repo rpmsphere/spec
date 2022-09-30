@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+
 Name: python-orange
 Summary: A component-based data mining framework
 Version: 2.7.8
@@ -9,7 +10,7 @@ URL: http://orange.biolab.si/
 Source0: https://pypi.python.org/packages/source/O/Orange/Orange-%{version}.zip
 BuildRequires: python2-devel
 BuildRequires: python2-setuptools
-BuildRequires: numpy atlas
+BuildRequires: python2-numpy atlas
 Provides: liborange.so
 
 %description
@@ -20,15 +21,14 @@ as a module for Python programming language.
 
 %prep
 %setup -q -n Orange-%{version}
-%if %{fedora}>23
 sed -i -e '/inline double abs/d' -e '/{ return fabs(x); }/d' source/include/stat.hpp
 sed -i '1830s|return false;|return NULL;|' source/orange/measures.cpp
 sed -i '11s|return result;|return NULL;|' source/include/c2py.hpp
 sed -i '5086s|return false;|return NULL;|' source/orange/lib_kernel.cpp
 sed -i '5094s|return false;|return NULL;|' source/orange/lib_kernel.cpp
-%endif
 
 %build
+export CFLAGS="-g -O2 -fPIE -fPIC -std=gnu++14"
 python2 setup.py build
 
 %install

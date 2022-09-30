@@ -1,5 +1,5 @@
 Name:           btop
-Version:        1.2.0
+Version:        1.2.9
 Release:        1
 Summary:        A monitor of resources
 Group:          Monitoring
@@ -29,9 +29,11 @@ export CXX="/usr/bin/g++"
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/%{name}
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/icons/hicolor/*/apps/%{name}.*
 
 %changelog
-* Sun Jan 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.9
 - Rebuilt for Fedora
 * Sun Jan 16 2022 kekepower <kekepower> 1.2.0-1.mga9
 + Revision: 1768721

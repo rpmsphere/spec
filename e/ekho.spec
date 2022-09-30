@@ -25,6 +25,8 @@ Development files for ekho.
 %setup -q
 #sed -i '1i #include <cstring>' soundtouch/source/example/SoundStretch/WavFile.cpp *_symbol_pcm.cpp
 #sed -i 's|<soundtouch/SoundTouch.h>|"soundtouch/include/SoundTouch.h"|' ekho.h
+sed -i 's|pause") > 0|pause") != NULL|' src/libekho_impl.cpp
+sed -i -e '899s|pause") >|pause") !=|' -e '900s|0|NULL|' src/ekho_dict.cpp
 
 %build
 %configure

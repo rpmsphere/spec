@@ -29,6 +29,7 @@ this revamped version of Breakout.
 %patch0
 %patch1
 %patch2
+sed -i 's|-Wall|-Wall -std=gnu++11|' configure.ac
 
 %build
 autoreconf -fi
@@ -42,7 +43,6 @@ install -D -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 %find_lang %{name}
 
 %files -f %{name}.lang
-%defattr(-,root,root)
 %doc ABOUT-NLS AUTHORS COPYING ChangeLog README README.fr
 %{_bindir}/%{name}
 %{_datadir}/%{name}

@@ -1,3 +1,4 @@
+%undefine _package_note_file
 %undefine _debugsource_packages
 
 Name:           imgview
@@ -20,6 +21,7 @@ BuildRequires:  giflib-devel
 BuildRequires:  libjpeg-devel
 BuildRequires:  libmng-devel
 BuildRequires:  sane-backends-libs
+BuildRequires:  automake
 
 %description
 Sometimes reffered to as ImgView or IV, this is a basic image viewer

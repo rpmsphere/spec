@@ -25,6 +25,7 @@ import. Scores can be played through the ALSA sequencer.
 %setup -q
 sed -i '1i #include <cstring>' dynarray.h
 sed -i 's|HALF_COLOR 0.0|HALF_COLOR 0|' idiotseditor/idiotseditor.cpp
+sed -i '1372s|< 0|== NULL|' voice.cpp
 
 %build
 %configure --docdir='%{_docdir}/%{name}-doc-%{version}'

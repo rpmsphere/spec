@@ -1,7 +1,7 @@
 # Part 1 data definition
 %define pkg	gfarm
 %if %{undefined ver}
-%define ver	2.7.17
+%define ver	2.7.20
 %endif
 %if %{undefined rel}
 %define rel	1
@@ -82,7 +82,7 @@ Group: System Environment/Libraries
 %if "%{pkg_suffix}" != ""
 Provides: %{pkg}-libs = %{pkgver}-%{rel}
 %endif
-BuildRequires: openssl-devel, libpq-devel
+BuildRequires: openssl-devel, postgresql-private-devel
 
 %package client
 Summary: Clients for Gfarm file system
@@ -159,7 +159,7 @@ Gfarm performance monitoring plugin for Ganglia
 Development header files and libraries for Gfarm file system
 
 %changelog
-* Fri Mar 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.17
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.20
 - Rebuilt for Fedora
 
 * Thu Dec  8 2016 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.7.0-1
@@ -363,7 +363,6 @@ fi
 
 # Part 3  file list
 %files doc
-%defattr(-,root,root)
 %if %{gfarm_v2_not_yet}
 %{man_prefix}/man1/gfarm_agent.1*
 %{man_prefix}/man1/gfcd.1*
@@ -1125,7 +1124,6 @@ fi
 %{doc_prefix}/gfperf/USING-gfperf.ja
 
 %files libs
-%defattr(-,root,root)
 %{lib_prefix}/libgfarm.so.1
 %{lib_prefix}/libgfarm.so.1.0.0
 %{lib_prefix}/libgfperf.so.1
@@ -1138,7 +1136,6 @@ fi
 %{share_prefix}/config/config-gfarm.common
 
 %files client
-%defattr(-,root,root)
 %{prefix}/bin/gfarm-pcp
 %{prefix}/bin/gfarm-prun
 %{prefix}/bin/gfarm-ptool
@@ -1257,7 +1254,6 @@ fi
 %{share_prefix}/gfperf-web/view_result.php
 
 %files fsnode
-%defattr(-,root,root)
 %{prefix}/bin/config-gfsd
 %{prefix}/bin/gfarm.arch.guess
 %{prefix}/bin/gfspooldigest
@@ -1278,7 +1274,6 @@ fi
 %{share_prefix}/config/linux/systemd/gfsd.service.in
 
 %files ganglia
-%defattr(-,root,root)
 %{prefix}/bin/config-gfmd-iostat
 %{prefix}/bin/config-gfsd-iostat
 %dir %{share_prefix}
@@ -1287,7 +1282,6 @@ fi
 %{share_prefix}/ganglia
 
 %files server
-%defattr(-,root,root)
 %{prefix}/sbin/gfmd
 %{prefix}/bin/config-gfarm
 %{prefix}/bin/config-gfarm-update
@@ -1336,7 +1330,6 @@ fi
 %{share_prefix}/ruby/gfjournalfile.rb
 
 %files devel
-%defattr(-,root,root)
 %{prefix}/include/gfarm/gfarm.h
 %{prefix}/include/gfarm/gfarm_config.h
 %{prefix}/include/gfarm/error.h
@@ -1351,8 +1344,8 @@ fi
 # XXX - this should not be here
 %{prefix}/include/gfarm/gfarm_msg_enums.h
 %{lib_prefix}/libgfarm.a
-%{lib_prefix}/libgfarm.la
+#{lib_prefix}/libgfarm.la
 %{lib_prefix}/libgfarm.so
 %{lib_prefix}/libgfperf.a
-%{lib_prefix}/libgfperf.la
+#{lib_prefix}/libgfperf.la
 %{lib_prefix}/libgfperf.so

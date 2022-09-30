@@ -1,12 +1,13 @@
 Name: unnethack
-Version: 5.1.0
-Release: 2.1
+Version: 6.0.4git
+Release: 1
 Summary: An enhancement to the dungeon exploration game NetHack
-Source: %name-%version.tar.gz
+#Source: %name-%version.tar.gz
+Source: UnNetHack-master.zip
 Group: Games/Adventure
 URL: http://sourceforge.net/apps/trac/unnethack/
 License: NethackGPL
-BuildRequires: flex groff-base gsl-devel ncurses-devel
+BuildRequires: gcc flex groff-base gsl-devel ncurses-devel
 
 %description
 UnNetHack is a variant of NetHack.
@@ -15,7 +16,7 @@ It features more randomness, more levels, more challenges and more fun
 than vanilla NetHack.
 
 %prep
-%setup -q
+%setup -q -n UnNetHack-master
 sed -i 's/[$](LFLAGS) \(.*\)[$](LIBS)/\1 $(LFLAGS) $(LIBS)/' sys/autoconf/Makefile.src 
 
 %build
@@ -25,19 +26,18 @@ make
 
 %install
 make install DESTDIR=%buildroot CHOWN=echo CHGRP=echo CHMOD=echo
-mv %buildroot%_datadir/unnethack/recover %buildroot%_bindir/recover.bin && ln -s %_bindir/recover.bin %buildroot%_datadir/unnethack/recover
-mv %buildroot%_datadir/unnethack/unnethack %buildroot%_bindir/unnethack.bin && ln -s %_bindir/unnethack.bin %buildroot%_datadir/unnethack/unnethack
+#mv %buildroot%_datadir/unnethack/recover %buildroot%_bindir/recover.bin && ln -s %_bindir/recover.bin %buildroot%_datadir/unnethack/recover
+#mv %buildroot%_datadir/unnethack/unnethack %buildroot%_bindir/unnethack.bin && ln -s %_bindir/unnethack.bin %buildroot%_datadir/unnethack/unnethack
 
 %files
-%doc doc README
-%_bindir/*.bin
-%_bindir/*[^n]
+#doc doc README
+%_bindir/*
 %_datadir/%name
 %_defaultdocdir/%name
 %_localstatedir/%name
 
 %changelog
-* Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 5.1.0
+* Sun Sep 11 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0.4git
 - Rebuilt for Fedora
 * Thu Feb 27 2014 Fr. Br. George <george@altlinux.ru> 5.1.0-alt1
 - Autobuild version bump to 5.1.0

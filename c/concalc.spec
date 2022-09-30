@@ -17,7 +17,9 @@ sed -i -e 's|/usr/local|/usr|' CMakeLists.txt
 
 %build
 %cmake .
+cd *-linux-build
 sed -i -e 's|-O3||' -e 's|-Werror=format-security||' CMakeCache.txt CMakeFiles/concalc.dir/link.txt CMakeFiles/concalc.dir/flags.make
+cd ..
 %cmake_build
 										
 %install

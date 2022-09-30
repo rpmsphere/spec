@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 Name: nuitka
-Version: 0.6.0.2
-Release: 2.1
+Version: 1.0.8
+Release: 1
 Summary: Python compiler with full language support and CPython compatibility
 License: ASLv2.0
 Group: Development/Python
@@ -40,7 +40,7 @@ messages are given.
 %{python2_sitelib}/*
 
 %changelog
-* Thu Oct 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0.2
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
 - Rebuilt for Fedora
 * Fri Feb 02 2018 Stanislav Levin <slev@altlinux.org> 0.5.11-alt1.git20150318.1.1
 - (NMU) Fix Requires and BuildRequires to python-setuptools

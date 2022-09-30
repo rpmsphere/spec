@@ -1,87 +1,101 @@
-Name:           tkdiff
-BuildArch:      noarch
-License:        GPL2.0+
-Group:          Productivity/Text/Utilities
-Requires:       tk diffutils
-Version:        4.3.5
-Release:        1
-Summary:        2 and 3-way diff/merge tool
-URL:            http://tkdiff.sourceforge.net/
-#Source0:        http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-Source0:        tkdiff-4-3-5.zip
-Source1:        README.SuSE
+%define tar_ver	%(echo %{version}|sed -e 's/\\./\\-/g')
+
+Name:		tkdiff
+Version:	5.5.2
+Release:	1
+Summary:	A tcl/tk based graphical interface to the DIFF utility
+License:	GPLv2
+Group:		Development/Other
+URL:		http://tkdiff.sourceforge.net/
+Source0:	https://sourceforge.net/projects/tkdiff/files/%{name}/%{version}/%{name}-%{tar_ver}.zip
+# desktop, icon and man files are provided from ALT linux distribution.
+Source1:	tkdiff.desktop
+Source2:	tkdiff.png
+Source3:	tkdiff.1
+BuildArch:	noarch
+Requires:	diffutils
+Requires:	tk
 
 %description
-TkDiff is a graphical 2 and 3-way diff/merge tool.
+tkdiff is a graphical front end to the diff program. It provides a side-by-side
+view of the differences between two files, along with several innovative
+features such as diff bookmarks and a graphical map of differences for quick
+navigation.
 
 %prep
-%setup -q -n tkdiff-4-3-5
-cp %{SOURCE1} .
+%setup -q -n %{name}-%{tar_ver}
+chmod 0644 README.txt
 
 %build
 
 %install
-install -d -m 755 $RPM_BUILD_ROOT/usr/bin
-install -m 755 tkdiff $RPM_BUILD_ROOT/usr/bin/tkdiff
+# binary-repertory
+mkdir -p %{buildroot}%{_bindir}
+install -m 0755 tkdiff %{buildroot}%{_bindir}/%{name}
+
+# menu-entry
+mkdir -p %{buildroot}%{_datadir}/applications
+install -m 0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
+
+# icons-repertory
+mkdir -p %{buildroot}%{_datadir}/pixmaps
+install -m 0644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
+
+# man-repertory
+mkdir -p %{buildroot}%{_mandir}/man1
+install -m 0644 %{SOURCE3} %{buildroot}%{_mandir}/man1/%{name}.1
 
 %files
-%doc README.SuSE
-/usr/bin/tkdiff
+%doc *.txt
+%{_bindir}/%{name}
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/pixmaps/%{name}.png
+%{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Tue Oct 08 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.3.5
+* Sun Aug 28 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.5.2
 - Rebuilt for Fedora
-* Mon Nov 28 2011 pascal.bleser@opensuse.org
-- update to 4.2:
-  * works with Subversion 1.7
-  * make opening file dialog know where it started from, and start in the same
-    directory as the first file when looking for the second one
-  * you can now specify a preference for filetypes for the file open/save
-    dialogs
-  * detect PVCS by environment variable (patch 1839361 by nafmo)
-  * update BitKeeper support (patch 3053551 by wscott)
-  * mercurial support (patch 1867700 by damonmc)
-  * rudimentary Git support (patch 1836293 by cecilh3)
-  * add help menu items to report versions of wish and diff
-  * gave it a debug (-d) option
-* Thu Jul 21 2011 rcoe@wi.rr.com
-- patch to add git support from sf.net#1836293
-* Tue Nov 27 2007 lmichnovic@suse.cz
-- update to version 4.1.4
-  * Ignore -u option from svn for usage "svn diff --diff-cmd=tkdiff"
-  * Perforce support for P4CONFIG environment variable
-  * Remove an old font work-around for Mac, but add a new one for tk8.5
-  on Windows
-  * Fix duplicate keyboard accelerator for Preferences
-* Fri Aug 11 2006 lmichnovic@suse.cz
-- changed bindir to /usr/bin
-* Tue Jun 20 2006 lmichnovic@suse.cz
-- update to verson 4.1.3
-  * Fixed incompatibility with older versions of Tcl/Tk
-    ("-state disabled").
-  * Applied Warren Jones' subversion patch, which prevents the svn
-    error that occurs when you omit a revision number.
-  * Can now do "tkdiff OLD-URL[@OLDREV] NEW-URL[@NEWREV]" in svn.
-* Wed Jan 25 2006 mls@suse.de
-- converted neededforbuild to BuildRequires
-* Mon Jan  2 2006 lmichnovic@suse.cz
-- update to version 4.1.1 which includes security patch for temp files
-  (CVE-2005-4434) [#141076]
-- updated copyright in README.SuSE file
-* Thu Sep 29 2005 dmueller@suse.de
-- add norootforbuild
-* Mon Nov 15 2004 ltinkl@suse.cz
-- updated to 4.0.2
-* Sun Oct 10 2004 schwab@suse.de
-- Fix requires.
-* Fri Sep  6 2002 pmladek@suse.cz
-- fixed usage of -pad
-* Fri Aug 17 2001 pmladek@suse.cz
-- updated to version 3.09
-- README.SuSE moved to sources
-* Wed Mar 28 2001 nadvornik@suse.cz
-- update to 3.08
-* Thu Nov 23 2000 ro@suse.de
-- fixed requires
-* Thu Oct 12 2000 nadvornik@suse.cz
-- new package
+* Mon Mar 21 2022 umeabot <umeabot> 5.2.1-2.mga9
++ Revision: 1814269
+- Mageia 9 Mass Rebuild
+* Tue Mar 30 2021 daviddavid <daviddavid> 5.2.1-1.mga9
++ Revision: 1711845
+- new version: 5.2.1
+* Mon Mar 08 2021 daviddavid <daviddavid> 5.2-1.mga9
++ Revision: 1700708
+- new version: 5.2
+* Mon Jun 15 2020 daviddavid <daviddavid> 5.0-1.mga8
++ Revision: 1593372
+- new version: 5.0
++ danf <danf>
+- Switch URLs from http: to https:
+* Wed Feb 12 2020 umeabot <umeabot> 4.3.5-3.mga8
++ Revision: 1508193
+- Mageia 8 Mass Rebuild
+* Fri Sep 21 2018 umeabot <umeabot> 4.3.5-2.mga7
++ Revision: 1291853
+- Mageia 7 Mass Rebuild
+* Thu Aug 23 2018 daviddavid <daviddavid> 4.3.5-1.mga7
++ Revision: 1253534
+- new version: 4.3.5
+* Sun Jul 01 2018 daviddavid <daviddavid> 4.3.2-1.mga7
++ Revision: 1241073
+- new version: 4.3.2
+* Fri Jun 29 2018 daviddavid <daviddavid> 4.3.1-1.mga7
++ Revision: 1240664
+- new version: 4.3.1
+* Thu Jun 14 2018 daviddavid <daviddavid> 4.3-1.mga7
++ Revision: 1236829
+- new version: 4.3
+* Tue Feb 02 2016 umeabot <umeabot> 4.2-4.mga6
++ Revision: 931724
+- Mageia 6 Mass Rebuild
+* Wed Oct 15 2014 umeabot <umeabot> 4.2-3.mga5
++ Revision: 749245
+- Second Mageia 5 Mass Rebuild
+* Tue Sep 16 2014 umeabot <umeabot> 4.2-2.mga5
++ Revision: 689903
+- Mageia 5 Mass Rebuild
+* Sun Mar 23 2014 david-david <david-david> 4.2-1.mga5
++ Revision: 606971
+- imported package tkdiff

@@ -41,6 +41,7 @@ BuildRequires:	pkgconfig(samplerate)
 BuildRequires:	desktop-file-utils
 BuildRequires:	cmake
 BuildRequires:	libepoxy-devel
+BuildRequires:  gcc-c++
 
 %description
 Goggles Music Manager is a music collection manager and player that 
@@ -55,13 +56,14 @@ sed -i 's|decompose|FXString::decompose|' src/GMFilename.cpp
 sed -i 's|universalTime("%T GMT",time)|universalTime(time,"%T GMT")|' src/GMPodcastSource.cpp
 sed -i 's|\.value|.data|' src/GMTrackDatabase.cpp src/GMDBus.cpp
 sed -i 's|localTime("%b %d, %Y",date)|localTime(date,"%b %d, %Y")|' src/GMTrackItem.cpp
+sed -i 's|parseAccel|FXAccelTable::parseAccel|' src/GMTrackView.cpp src/GMRemote.cpp src/GMWindow.cpp
 
 %build
 %cmake -DWITH_CFOX=OFF
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 %find_lang %{name}
 desktop-file-edit --set-key="Categories" --set-value="AudioVideo;Audio;Player;" \
 		  %{buildroot}%{_datadir}/applications/%{name}.desktop

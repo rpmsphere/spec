@@ -5,10 +5,10 @@ Summary:        Generating self-contained jars starting from a given list of cla
 License:        GPL
 Source0:	http://prdownloads.sourceforge.net/autojar/%{name}-%{version}.tar.gz
 Source1:	%{name}
-URL:            http://autojar.sourceforget.net/
+URL:            http://autojar.sourceforge.net/
 Group:          Development/Java
 BuildArch:      noarch
-BuildRequires: java-devel-openjdk lua
+BuildRequires: java-11-openjdk-devel lua
 BuildRequires: ant
 BuildRequires: log4j
 BuildRequires: ant-apache-log4j

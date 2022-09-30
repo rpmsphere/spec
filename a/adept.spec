@@ -3,7 +3,7 @@
 
 Summary: The Adept Programming Language
 Name: adept
-Version: 2.6
+Version: 2.7
 Release: 1
 License: GPL-3.0
 Group: Development/Language
@@ -45,5 +45,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_libexecdir}/%{name}
 
 %changelog
-* Sun Apr 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7
 - Rebuilt for Fedora

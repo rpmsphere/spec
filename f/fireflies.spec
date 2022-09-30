@@ -32,13 +32,17 @@ Slick screensaver that uses OpenGL.
 %patch1
 %patch2
 sed -i -e 's/png/png12/' -e 's/-lGLU/-lGLU -lX11 -lpng12/' configure* */configure*
+sed -i 's|FL/fl_file_chooser.H|FL/Fl_File_Chooser.H|' libgfx/src/gui.cxx
 
 %build
 ./configure --prefix=/usr \
     --with-bindir="%{_libdir}/xscreensaver" \
     --with-confdir="/etc/xscreensaver"
 
-%__make %{?jobs:-j%{jobs}}
+cd libgfx
+./configure
+cd src
+make
 
 %install
 %__rm -rf "$RPM_BUILD_ROOT"

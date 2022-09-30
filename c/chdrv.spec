@@ -1,12 +1,12 @@
 %undefine _debugsource_packages
 
 Summary: A Chinese Terminal Simulator
-Name: chdrv
+Name:    chdrv
 Version: 1.0.13
 Release: 34.1
 License: GPL
-Group: Extensions/Chinese
-Source: chdrv_1.0.13p.orig.tar.gz
+Group:   Extensions/Chinese
+Source:  chdrv_1.0.13p.orig.tar.gz
 Source1: chdrvfont.tgz
 Source3: chconfig.jyj
 Source4: gbconfig.jyj
@@ -14,9 +14,8 @@ Source5: chdrv.sh
 Source6: gbchdrv.sh
 Source7: chinese.conf.jyj
 Source8: gbchdrv.conf.jyj
-Patch0:   chdrv_1.0.13p-3.2.diff
+Patch0:  chdrv_1.0.13p-3.2.diff
 BuildRequires: svgalib-devel
-Vendor: wycc (wycc@iis.sinica.edu.tw)
 
 %description
 Chdrv is a Chinese Terminal Simulator. It can display Chinese without
@@ -30,18 +29,13 @@ has be reinplemented by ASM codes for efficiency.
 sed -i -e 's|\(\s[a-z]*\)l\(\s\)|\1q\2|' -e 's|%e\([a-z][a-z]\)|%r\1|g' drawtext.S scroll.S
 %endif
 sed -i 's|-Wall|-Wall -Wl,--allow-multiple-definition|' Makefile
+sed -i '11i #include <stdlib.h>\n#include <ctype.h>\n#include <string.h>' chinese.h
 
 %build
-export CHSYS=/usr/share/chdrv/
-export CHSRC=$RPM_BUILD_DIR/chinese
-make -e
+make CHSYS=/usr/share/chdrv/ CHSRC=$RPM_BUILD_DIR/chinese
 
 %install
 rm -rf $RPM_BUILD_ROOT
-export CHBIN=/usr/bin
-export CHSYS=/usr/share/chdrv/
-export DESTDIR=$RPM_BUILD_ROOT
-
 #install -D -m 644 termcap $RPM_BUILD_ROOT/etc/chdrv/termcapG
 #install -m 644 multitab $RPM_BUILD_ROOT/etc/chdrv
 install -d $RPM_BUILD_ROOT/usr/share/chdrv
@@ -50,7 +44,7 @@ touch $RPM_BUILD_ROOT/usr/share/chdrv/config
 install -d $RPM_BUILD_ROOT/etc/chdrv
 install -m 644 $RPM_SOURCE_DIR/chinese.conf.jyj $RPM_BUILD_ROOT/etc/chdrv/chinese.conf
 install -m 644 $RPM_SOURCE_DIR/gbchdrv.conf.jyj $RPM_BUILD_ROOT/etc/chdrv/gbchdrv.conf
-make -e install
+make CHBIN=/usr/bin CHSYS=/usr/share/chdrv/ DESTDIR=$RPM_BUILD_ROOT install
 mv $RPM_BUILD_ROOT/usr/bin/chdrv $RPM_BUILD_ROOT/usr/bin/chdrv.bin
 install -m 755 $RPM_SOURCE_DIR/chdrv.sh $RPM_BUILD_ROOT/usr/bin/chdrv
 install -m 755 $RPM_SOURCE_DIR/gbchdrv.sh $RPM_BUILD_ROOT/usr/bin/gbchdrv

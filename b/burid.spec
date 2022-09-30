@@ -10,12 +10,12 @@ URL:     http://carpo.sourceforge.net/
 Source: %{name}-%{version}.tar.gz
 Source2: %{name}.desktop
 BuildRequires: libpng-devel
-BuildRequires: pkgconfig(QtNetwork) >= 4.7
-BuildRequires: pkgconfig(QtWebKit) >= 4.7
-BuildRequires: pkgconfig(QtDeclarative) >= 4.7
-BuildRequires: pkgconfig(poppler-qt4) 
+BuildRequires: pkgconfig(QtNetwork)
+BuildRequires: pkgconfig(QtWebKit)
+BuildRequires: pkgconfig(QtDeclarative)
+BuildRequires: pkgconfig(poppler-qt5)
 BuildRequires: desktop-file-utils
-BuildRequires: gcc-c++
+BuildRequires: gcc-c++ automake
 Requires: unzip
 
 %description
@@ -23,9 +23,11 @@ E-Book Reader.
 
 %prep
 %setup -q
+sed -i 's|poppler-qt4|poppler-qt5|' burid.pro
+sed -i 's|poppler/qt4/poppler-qt4.h|poppler/qt5/poppler-qt5.h|' src/pdf-pager.h
 
 %build
-sh configure
+./configure --prefix=/usr
 make 
 
 %install

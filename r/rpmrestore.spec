@@ -1,6 +1,6 @@
 Name:           rpmrestore
-Version:        1.7
-Release:        5.1
+Version:        1.8
+Release:        1
 Summary:        Restores install attributes from the RPM database
 Group:          System/Configuration/Packaging
 License:        GPL
@@ -36,7 +36,7 @@ mv %{buildroot}%{_datadir}/doc/%{name}-%{version} %{buildroot}%{_datadir}/doc/%{
 %{_sysconfdir}/%{name}rc
 
 %changelog
-* Tue Dec 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
 - Rebuilt for Fedora
 * Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 0:1.3-5mdv2010.0
 + Revision: 433455

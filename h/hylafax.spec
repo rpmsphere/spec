@@ -1,13 +1,13 @@
 Name:           hylafax
 Requires:       ghostscript metamail mm postfix mgetty xz
-BuildRequires:  gcc-c++ zlib-devel libjpeg-devel libpng-devel libtiff-devel
+BuildRequires:  gcc-c++ automake zlib-devel libjpeg-devel libpng-devel libtiff-devel
 License:        MIT License (or similar)
 Group:          Hardware/Fax
 Provides:       fax_daemon
 Requires:       libtiff a2ps hylafax-client mgetty
 Conflicts:      sendfax
 Version:        6.0.7
-Release:        1
+Release:        2.1
 Source0:        %{name}-%{version}.tar.gz
 Source1:        latex-cover-1.04.tar.lzma
 Source2:        %{name}-SuSE.tar.lzma
@@ -71,7 +71,7 @@ Authors:
 chmod 755 SuSE/usr/lib/fax/a2pswrap
 find ../ -name .cvsignore -exec rm {} \;  
 cp %{SOURCE3} po/de.po
-#sed -i 's/3\.\[56789\]/3.[56789]|4.0/' configure
+sed -i 's/4\.\[0\]/4.[4]/' configure
 
 %build
 ./configure --with-OPTIMIZER="%{optflags} -Wno-format-security" --with-STRIP=: \

@@ -9,7 +9,8 @@ Group: Development/Programming
 License: Eclipse Public Licence
 URL: http://x10-lang.org
 Source0: http://downloads.sourceforge.net/project/%{_name}/%{_name}/%{version}/%{_name}-%{version}-src.tar.bz2
-BuildRequires: java-devel lua
+BuildRequires: java-devel-openjdk
+BuildRequires: lua
 BuildRequires: ant
 Source1: x10-local-jar.zip
 Requires: java
@@ -26,10 +27,11 @@ X10DT, and a community of developers to help you get started.
 %setup -q -c
 unzip %{SOURCE1}
 sed -i 's|/include|/../include|g' x10.runtime/Make.rules
+cp /usr/lib/jvm/java-openjdk/include/jni.h /usr/lib/jvm/java-openjdk/include/linux/jni_md.h x10.runtime/x10rt/include/
 
 %build
 cd x10.dist
-ant -Doptimize=true dist
+ant -Doptimize=true dist-java dist-cpp
 
 %install
 mkdir -p %{buildroot}/opt/%{_name} %{buildroot}%{_bindir}

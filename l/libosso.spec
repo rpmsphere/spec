@@ -45,6 +45,7 @@ This package contains the development files.
 %prep
 %setup -q
 %patch1 -p1  
+sed -i '137i static malloc_hook_t __malloc_hook = NULL;' src/osso-mem.c
 
 %build
 %configure
@@ -71,7 +72,7 @@ rm -rf %{buildroot}
 %files devel
 %{_includedir}/*.h
 %{_libdir}/libosso.a
-%{_libdir}/libosso.la
+#{_libdir}/libosso.la
 %{_libdir}/libosso.so
 %{_libdir}/pkgconfig/libosso.pc
 

@@ -8,7 +8,6 @@ Source:        http://dfn.dl.sourceforge.net/sourceforge/djplay/libdjconsole-%{v
 License:       GPL
 BuildRequires: gcc-c++
 BuildRequires: libusb-devel >= 0.1.12
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 A driver for the DJ Console, built on top of libusb.
@@ -25,6 +24,7 @@ This package contains static libraries and header files need for development.
 
 %prep
 %setup -q
+sed -i 's|\(hdev.\) < 0|\1 == NULL|' djconsole.cpp
 
 %build
 %configure
@@ -38,16 +38,14 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_libdir}/libdjconsole.so.*
 %{_datadir}/libdjconsole/*
 %doc AUTHORS COPYING ChangeLog NEWS README
 
 %files devel
-%defattr(-,root,root)
 %{_sysconfdir}/udev/rules.d/45-hpdjconsole.rules
 %{_libdir}/libdjconsole.a
-%{_libdir}/libdjconsole.la
+#{_libdir}/libdjconsole.la
 %{_libdir}/libdjconsole.so
 %{_includedir}/libdjconsole/*.h
 %{_libdir}/pkgconfig/*.pc

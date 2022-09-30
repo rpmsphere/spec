@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Summary:   Manipulating and mirroring directories
 Name:      mirrordir
 Version:   0.10.49
@@ -21,6 +23,7 @@ tions over encrypted secure channels.
 %patch1 -p1
 sed -i 's|mirrordir $(bindir)|mirrordir $(DESTDIR)$(bindir)|' src/Makefile.*
 cp %{SOURCE1} vfs/
+sed -i 's|stderr,m|stderr, "%s", m|' vfs/secure-mcserv.c
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
@@ -42,13 +45,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 /usr/bin/pslogin
 /usr/bin/recursdir
 /usr/bin/secure-mcserv
-%dir /usr/share/man/man1/
-/usr/share/man/man1/pslogin.1.gz
-/usr/share/man/man1/forward.1.gz
-/usr/share/man/man1/mirrordir.1.gz
-/usr/share/man/man1/recursdir.1.gz
-/usr/share/man/man1/secure-mcserv.1.gz
-/usr/share/man/man1/copydir.1.gz
+/usr/share/man/man1/*
 %config /etc/secure-mcservusers
 %dir /etc/pam.d/
 %config /etc/pam.d/secure-mcserv

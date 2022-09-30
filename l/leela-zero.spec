@@ -1,13 +1,14 @@
 Name: leela-zero
 Summary: Go engine with no human-provided knowledge, modeled after the AlphaGo Zero paper
-Version: 0.15
-Release: 5.1
+Version: 0.17git
+Release: 1
 Group: games
 License: GPLv3
 URL: https://github.com/gcp/leela-zero
+#Source0: %{name}-%{version}.tar.gz
 Source0: %{name}-master.zip
 BuildRequires: boost-devel
-BuildRequires: qt5-devel
+BuildRequires: qt5-qtbase-devel
 BuildRequires: openblas-devel
 BuildRequires: ocl-icd-devel
 BuildRequires: opencl-headers
@@ -37,19 +38,19 @@ file is at http://zero.sjeng.org/best-network
 
 %prep
 %setup -q -n %{name}-master
-sed -i '26i #include <string>' src/TimeControl.h
+#sed -i '26i #include <string>' src/TimeControl.h
 
 %build
 %cmake -DOpenCL_LIBRARY=/usr/lib64/libOpenCL.so
-%make_build
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
-%doc AUTHORS COLAB.md COPYING FAQ.md README.md
+%doc AUTHORS COPYING *.md
 %{_bindir}/*
 
 %changelog
-* Mon Sep 03 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17git
 - Rebuilt for Fedora

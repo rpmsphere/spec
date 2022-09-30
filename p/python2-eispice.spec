@@ -1,14 +1,15 @@
-BuildRequires: gcc-gfortran python2-devel tk-devel tcl-devel numpy atlas-devel
 Summary:  Python SPICE simulator
 Name:     python2-eispice
-Version:  0.11.6
-Release:  7.1
+Version:  0.11.6git
+Release:  1
 License:  Other (See Source)
 Group:    Science
-Source:   eispice-0.11.6.tar.bz2
+#Source:   eispice-0.11.6.tar.bz2
+Source:   eispice-master.zip
 URL:      http://www.thedigitalmachine.net/eispice.html
 Vendor:   thedigitalmachine
 Patch:    eispice-0.11.6.patch
+BuildRequires: gcc-gfortran python2-devel tk-devel tcl-devel python2-numpy atlas-devel
 
 %description
 eispice is a clone of the Berkley SPICE 3 Simulation Engine. It was originally
@@ -18,8 +19,9 @@ the tool has been slowly expanding to include more general purpose circuit
 simulation features.
 
 %prep
-%setup -qn eispice-0.11.6
+%setup -qn eispice-master
 %patch -p1
+sed -i "s|'./include',|'./include', './libs/simulator/include',|" setup.py
 
 %build
 python2 setup.py build
@@ -35,5 +37,5 @@ python2 setup.py install \
 %{python2_sitearch}/eispice/*
 
 %changelog
-* Wed Dec 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.6
+* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.6git
 - Rebuilt for Fedora

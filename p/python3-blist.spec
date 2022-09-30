@@ -30,6 +30,7 @@ identical performance.
 
 %prep
 %autosetup -n %{srcname}-%{version} -p1
+sed -i 's|Py_REFCNT(&saved)|((PyObject*)\&saved)->ob_refcnt|' blist/_blist.c
 
 %build
 %py3_build

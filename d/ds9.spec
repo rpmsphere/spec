@@ -12,7 +12,7 @@ Source1: ds9.desktop
 Source2: ds9.png
 Source3: ds9.conf
 BuildRequires: gcc-c++, zip, gcc-gfortran, libstdc++-static, libXScrnSaver-devel
-BuildRequires: libX11-devel, libXrandr-devel, libXt-devel, fontconfig-devel
+BuildRequires: libX11-devel, libXrandr-devel, libXt-devel, fontconfig-devel, automake
 BuildRequires: tcl-devel, tk-devel, libxml2-devel, libxml2-static, libxslt-devel
 
 %description
@@ -27,6 +27,7 @@ extensible.
 sed -i -e 's|usr/X11R6|usr|' -e 's|44||' -e 's|-fPIC|-fPIC -fpermissive|' make.linux*
 sed -i -e 's|-lxml2|-lxml2 -lfontconfig -lfreetype|' ds9/Makefile
 sed -i "s|0x8b|'\x8b'|" saotk/fitsy++/outsocket.C
+sed -i 's|mapdata_>0|mapdata_ != NULL|' saotk/fitsy++/*.C
 
 %build
 for i in */config.guess */*/config.guess */*/*/config.guess */*/*/*/config.guess
@@ -34,13 +35,16 @@ do
 cp -f /usr/share/automake-*/config.guess $i
 done
 %ifarch aarch64
-sed -i 's|-m64|-mlittle-endian|' make.linux64
+sed -i 's|-m64||' make.linux64
 %endif
 %ifarch x86_64 aarch64
 ln -s make.linux64 make.include
 %else
 ln -s make.linux make.include
 %endif
+cd ast-7.1.1
+./configure --enable-shared=no --prefix=/root/rpmbuild/BUILD/saods9  CC='gcc'
+cd ..
 make
 
 %install

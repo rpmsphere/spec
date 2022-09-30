@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+
 Name:          swfmill
 Version:       0.3.2
 Release:       20.1
@@ -25,6 +26,8 @@ and complex SWF structures.
 %build
 %configure
 sed -i 's|-Wall|-Wall -Wno-narrowing|' src/Makefile
+make -k ||:
+sed -i 's|cd < 0|cd == NULL|' src/gSWFParseXML.cpp src/gSWFWriteXML.cpp
 make
 
 %install

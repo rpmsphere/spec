@@ -1,17 +1,18 @@
 Summary:        A fast and friendly network scanner
 Name:           ipscan
-Version:        3.4
-Release:	    9.1
+Version:        3.8.2
+Release:	1.bin
 License:        GPLv2+
 Group:          Applications/Internet
 URL:            http://angryip.org
-Source:		    %{name}-%{version}.tar.gz
-BuildRequires:  java-openjdk-devel lua
-BuildRequires:  ant
-BuildRequires:  fakeroot
-BuildRequires:  git
+Source0:	%{name}-%{version}.tar.gz
+Source1:	https://github.com/angryip/ipscan/releases/download/%{version}/ipscan-linux64-%{version}.jar
+#BuildRequires:  java-11-openjdk-devel lua
+#BuildRequires:  ant
+#BuildRequires:  fakeroot
+#BuildRequires:  git
 BuildArch:      noarch
-Requires:	    jre
+Requires:	jre
 
 %description
 Angry IP Scanner is a cross-platform network scanner written in Java.
@@ -22,10 +23,14 @@ The program provides an easy to use GUI interface and is very extensible.
 
 %prep
 %setup -q
-sed -i '/target="package-linux.*-deb-rpm"/d' build.xml
+#sed -i -e '/target="package-linux.*-deb-rpm"/d' -e 's|1\.6|1.7|g' build.xml
+#sed -i 's|©|(C)|' src/net/azib/ipscan/config/Version.java
+#sed -i -e 's|⌦|Del|' -e 's|⌘C|Ctrl+C|' src/net/azib/ipscan/gui/menu/CommandsMenu.java
 
 %build
-ant linux64
+#ant linux64
+mkdir dist
+cp %{SOURCE1} dist
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -41,12 +46,12 @@ chmod a+x $RPM_BUILD_ROOT/%{_bindir}/ipscan
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%doc LICENSE README.md RELEASE-NOTES TODO.md
+%doc LICENSE README.md CHANGELOG TODO.md
 %{_datadir}/ipscan/ipscan.jar
 %{_datadir}/applications/ipscan.desktop
 %{_datadir}/pixmaps/ipscan.png
 %{_bindir}/ipscan
 
 %changelog
-* Tue Nov 03 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.2
 - Rebuilt for Fedora

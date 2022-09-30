@@ -1,7 +1,7 @@
 %define kversion %(uname -r)
 
 Name:    r8125
-Version: 9.005.06
+Version: 9.009.02
 Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
@@ -55,7 +55,7 @@ depmod -a > /dev/null 2> /dev/null
 /usr/lib/modprobe.d/blacklist-r8125.conf
 
 %changelog
-* Sun Jul 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 9.005.06
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 9.009.02
 - Update to new version
 * Thu Jun 12 2014 Alan Bartlett <ajb@elrepo.org> - 8.038.00-1
 - Updated to version 8.038.00

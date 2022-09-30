@@ -27,7 +27,7 @@ sed -i '1i #include <cstring>' src/FluxspaceDisplay.cc
 cp -f /usr/share/automake-*/config.guess .
 
 %build
-PYTHON_CONFIG_PROG=/usr/bin/python2-config PYTHON=/usr/bin/python2 CFLAGS="$RPM_OPT_FLAGS" CXXFLAGS="$RPM_OPT_FLAGS -lstdc++" \
+PYTHON_CONFIG_PROG=/usr/bin/python2-config PYTHON=/usr/bin/python2 CFLAGS="$RPM_OPT_FLAGS" CXXFLAGS="$RPM_OPT_FLAGS -lstdc++ -std=gnu++14" \
 ./configure --bindir=%{_bindir}
 make
 

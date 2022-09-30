@@ -2,7 +2,7 @@
 
 Summary: A simple logic-based multi-paradigm programming language
 Name: picat
-Version: 31
+Version: 33
 Release: 1
 License: MPL 2.0
 Group: Development/Languages
@@ -34,5 +34,5 @@ cp -a exs lib %{buildroot}%{_datadir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 31
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 33
 - Rebuilt for Fedora

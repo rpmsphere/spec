@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:           fahmon
 Version:        2.3.99.4
 Release:        9.1
@@ -9,8 +11,9 @@ Source0:        http://fahmon.net/downloads/FahMon-%{version}.tar.bz2
 # PATCH-FIX-OPENSUSE fahmon-2.3.99.4-pixdir.patch lazy.kent@opensuse.org -- install icons into program dir, not into system one
 Patch0:         fahmon-2.3.99.4-pixdir.patch
 BuildRequires:  gcc-c++
+BuildRequires:  automake
 BuildRequires:  hicolor-icon-theme
-BuildRequires:  wxGTK-devel
+BuildRequires:  wxGTK2-devel
 BuildRequires:  libcurl-devel
 
 %description
@@ -26,6 +29,7 @@ worth).
 sed -i -e '52,54d' -e '80d' src/main.cpp
 
 %build
+alternatives --set wx-config /usr/bin/wx-config-2.0
 %configure --disable-static
 make %{?_smp_mflags}
 

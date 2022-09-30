@@ -22,6 +22,7 @@ goal as fast as possible, at least faster than your friend does.
 
 %prep
 %autosetup -p1
+sed -i '1570s|modes > 0|modes != 0|' src/menu.cpp
 
 %build
 %make_build DATADIR=%{_datadir}/%{name}/data

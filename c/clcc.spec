@@ -25,7 +25,7 @@ sed -i 's|__LINUX__|__linux__|' src/options.cpp
 
 %build
 export LDFLAGS="-lboost_system -lboost_program_options"
-cmake -DCMAKE_INSTALL_PREFIX=/usr --config Release .
+cmake -DCMAKE_INSTALL_PREFIX=/usr .
 make clcc clcc_doc
 
 %install

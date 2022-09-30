@@ -27,9 +27,9 @@ goal points than the adversary.
 sed -i -e 's|iostream\.h|iostream|' -e 's|cout|std::cout|' -e 's|cerr|std::cerr|' -e 's|endl|std::endl|' src/*.h src/*.cc src/sound/*.cc
 sed -i '1i #include <cstring>' src/menu.cc
 sed -i '42,44s|^extern ||' src/clavier.cc
-%if %{fedora}>27
 sed -i '/TOUCHE_SOUND,Stop/d' src/arene.cc
-%endif
+sed -i 's|(file=fopen(Nom,"rb"))<=0|(file=fopen(Nom,"rb"))==NULL|' src/jpeg.cc
+sed -i 's|Provi<=0|Provi==NULL|' src/sound/datason.cc
 
 %build
 make BINDIR=%{_bindir} DATADIR=%{_datadir} COPTS="$RPM_OPT_FLAGS -fpermissive" DEFS=-DDATADIR=\\\"/usr/share\\\"

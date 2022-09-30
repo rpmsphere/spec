@@ -1,5 +1,5 @@
 Name:		gnunet
-Version:	0.13.3
+Version:	0.17.6
 Release:	1
 License:	GPLv2+
 Summary:	Secure and anonymous peer-to-peer file sharing
@@ -30,7 +30,8 @@ BuildRequires:	pulseaudio-libs-devel
 BuildRequires:	opus-devel
 BuildRequires:	gstreamer1-devel
 BuildRequires:	atlas
-Requires:		redhat-lsb-core
+BuildRequires:	jansson-devel
+Requires:	redhat-lsb-core
 
 %description
 GNUnet is a framework for secure peer-to-peer networking that does not
@@ -95,18 +96,20 @@ userdel gnunetd ||:
 %{_libexecdir}/*
 %{_datadir}/%{name}
 %{_mandir}/man?/%{name}*
-%{_libdir}/lib%{name}*.so.*
+%{_libdir}/lib*.so.*
 %exclude %{_datadir}/info/dir
 %{_datadir}/info/%{name}.*
-%{_datadir}/info/images/*
+#{_datadir}/info/images/*
+%{_datadir}/applications/%{name}-uri.desktop
 
 %files devel
-%{_libdir}/lib%{name}*.so
+%{_libdir}/lib*.so
 %{_libdir}/pkgconfig/*.pc
 %{_includedir}/%{name}
+%{_datadir}/aclocal/%{name}.m4
 
 %changelog
-* Mon Sep 07 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.3
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17.6
 - Rebuilt for Fedora
 * Mon Jan 16 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.9.1-2mdv2012.0
 + Revision: 761718

@@ -39,6 +39,7 @@ for DIR in GemPC410 GemPC430 ; do
 	mv $FILE ${FILE%.*}${DIR#GemPC}$SUFFIX
     done
 done
+sed -i 's|PCSCLITE_MAX_READERS_CONTEXTS|16|' common/gempc_ifdhandler.h
 
 %build
 make %{?jobs:-j%jobs} CFLAGS="$RPM_OPT_FLAGS"

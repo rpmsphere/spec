@@ -1,14 +1,15 @@
 %define __python /usr/bin/python2
+
 Name:           pykaraoke
 License:        LGPL
 Group:          Applications/Multimedia
 Version:        0.7.5
-Release:        5.4
+Release:        2.1
 Summary:	Free karaoke player
 URL:		http://www.kibosh.org/pykaraoke/
 Source:         http://sourceforge.net/projects/pykaraoke/files/%name/%version/%name-%version.zip
 Requires:       pygame python2-wxpython libtimidity liberation-sans-fonts
-BuildRequires:  gcc python2-wxpython python2-devel pygame-devel SDL-devel desktop-file-utils atlas-devel
+BuildRequires:  gcc-c++ python2-wxpython python2-devel pygame-devel SDL-devel desktop-file-utils atlas-devel
 
 %description
 PyKaraoke is a free karaoke player for Linux, FreeBSD, NetBSD, Windows, OSX

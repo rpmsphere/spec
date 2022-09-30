@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
 %global gopath %{_datadir}/gocode
 
@@ -33,6 +34,7 @@ Python製のpercolをGo言語で実装したプログラムです。
 %build
 export BUILD_DIR=$(pwd)/.build
 export GOPATH=${BUILD_DIR}:%{gopath}
+go get github.com/peco/peco
 make build
 go build cmd/peco/peco.go
 

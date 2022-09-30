@@ -3,17 +3,18 @@
 Summary:	Portable Object Compiler
 Summary(pl):	Przenośny kompilator obiektowego C
 Name:		objc
-Version:	3.3.24
+Version:	3.3.25
 Release:	1
 License:	LGPL
 Group:		Development/Tools
 Source0:	http://users.telenet.be/stes/%{name}-%{version}.tar.gz
 URL:		http://users.telenet.be/stes/compiler.html
-BuildRequires:	autoconf
+BuildRequires:	gcc
 BuildRequires:	automake
 BuildRequires:	byacc
 BuildRequires:	flex
-BuildRequires:	objc 
+BuildRequires:	/usr/bin/objc
+Obsoletes:	objc-bootstrap
 
 %description
 The Portable Object Compiler consists of a set of Objective-C class
@@ -59,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man?/*
 
 %changelog
-* Thu Jul 1 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.24
+* Sun Aug 28 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.25
 - Rebuilt for Fedora
 * Wed May 18 2005 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org

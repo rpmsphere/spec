@@ -7,7 +7,7 @@ Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
 Summary: %{name} kernel module(s)
-Source0: https://github.com/Mange/rtl8192eu-linux-driver/archive/realtek-%{version}.zip
+Source0: rtl8192eu-linux-driver-realtek-4.4.x.zip
 URL: https://github.com/Mange/rtl8192eu-linux-driver
 BuildRequires:  gcc make
 BuildRequires:  kernel-headers
@@ -55,5 +55,5 @@ rm -rf %{buildroot}
 /etc/modprobe.d/blacklist-%{name}.conf
 
 %changelog
-* Mon Mar 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.4.x
-- Rebuilt for Fedora
+* Sun Sep 4 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.4.x
+- Rebuild for Fedora

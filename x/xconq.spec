@@ -82,6 +82,7 @@ single-window paradigm, and it is speedy.
 %patch1 -p0 -b .tclpath
 %patch2 -p1 -b .64bit
 %patch3 -p1 -b .format
+sed -i 's|color < 0|color == NULL|' tcltk/tkmap.c
 
 %build
 %configure	--disable-freetypetest \
@@ -94,7 +95,7 @@ single-window paradigm, and it is speedy.
         --with-tkconfig=%{_libdir} \
 		--enable-alternate-scoresdir=%{_localstatedir}/lib/games/%{name}
 
-sed -i 's|-Wall|-Wall -Wno-narrowing|' Makefile */Makefile */*/Makefile
+sed -i 's|-Wall|-Wall -Wno-narrowing -fpermissive -std=gnu++11|' Makefile */Makefile */*/Makefile
 
 LDFLAGS="%optflags" \
 make	all \

@@ -1,13 +1,11 @@
 %global __os_install_post %{nil}
-
-
 %undefine _debugsource_packages
 %define _unpackaged_files_terminate_build 1
 
 Name: hashlink
-Version: 1.11
+Version: 1.12
 Release: 1
-Summary:HashLink is a virtual machine for Haxe
+Summary: HashLink is a virtual machine for Haxe
 License: MIT
 Group: Development/Other
 URL: https://hashlink.haxe.org/
@@ -27,16 +25,16 @@ Group: %group
 
 %prep
 %setup -q
-sed -i '4i #define HL_CONSOLE' libs/fmt/fmt.c
+#sed -i '4i #define HL_CONSOLE' libs/fmt/fmt.c
 sed -i -e 's|-lturbojpeg|-ljpeg|' -e 's|/lib|/%{_lib}|' Makefile
 
 %build
 %cmake -D BUILD_TESTING=OFF .
-%make_build PREFIX=/usr INSTALL_DIR=%{buildroot}/usr
+%make_build PREFIX=/usr
 
 %install
-%make_install PREFIX=/usr INSTALL_DIR=%{buildroot}/usr
-#install -m644 src/hlc_main.c %buildroot%_includedir/hlc_main.c
+%make_install PREFIX=%{buildroot}/usr
+install -m644 src/hlc_main.c %buildroot%_includedir/hlc_main.c
 mv %{buildroot}%{_libdir}/libhl.so %{buildroot}%{_libdir}/libhl.so.%{version}.0
 ln -s libhl.so.%{version}.0 %{buildroot}%{_libdir}/libhl.so.1
 ln -s libhl.so.%{version}.0 %{buildroot}%{_libdir}/libhl.so
@@ -55,7 +53,7 @@ ln -s libhl.so.%{version}.0 %{buildroot}%{_libdir}/libhl.so
 %_includedir/hlc_main.c
 
 %changelog
-* Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.11
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.12
 - Rebuilt for Fedora
 * Mon May 18 2020 Denis Smirnov <mithraen@altlinux.ru> 1.11-alt2
 - add /usr/include/hlc_main.c for HL/C support

@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name: musikcube
 Summary: A cross-platform, terminal-based audio engine, library, player and server written in C++
 Version: 0.93.1
@@ -6,6 +8,7 @@ Group: Applications/Multimedia
 License: BSD-3-Clause
 URL: https://github.com/clangen/musikcube
 Source0: https://github.com/clangen/musikcube/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
+BuildRequires: gcc-c++ cmake
 BuildRequires: alsa-lib-devel
 BuildRequires: ffmpeg-devel
 BuildRequires: boost-devel
@@ -20,6 +23,7 @@ BuildRequires: pulseaudio-libs-devel
 BuildRequires: taglib-devel
 BuildRequires: zlib-devel
 BuildRequires: libmicrohttpd-devel
+Patch0:        musikcube-av_codec_next.patch
 
 %description
 musikcube is a fully functional terminal-based music player, library,
@@ -27,6 +31,9 @@ and streaming audio server that runs natively on Windows, macOS, and Linux.
 
 %prep
 %setup -q
+%patch0 -p 1
+sed -i '8i #include <memory>' src/plugins/mpris/mpris.h
+sed -i '/av_register_all()/d' src/plugins/stockencoders/FfmpegEncoder.cpp src/plugins/ffmpegdecoder/plugin.cpp
 
 %build
 %cmake -DCMAKE_C_FLAGS="%{optflags} -fpermissive -fPIC" -DCMAKE_CXX_FLAGS="%{optflags} -fpermissive -fPIC" .

@@ -8,6 +8,7 @@ URL: https://github.com/massivethreads/massivethreads
 #Source0: https://github.com/massivethreads/massivethreads/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source0: %{name}-master.zip
 BuildRequires: sqlite-devel
+BuildRequires: automake
 Requires: python2
 
 %description
@@ -22,6 +23,8 @@ Development files for MassiveThreads.
 
 %prep
 %setup -q -n %{name}-master
+sed -i '570i extern int pthread_yield_foo (void) __asm__ ("" "pthread_yield");' src/myth_wrap_pthread.c
+sed -i 's|__wrap(pthread_yield)|__wrap(pthread_yield_foo)|' src/myth_wrap_pthread.c
 
 %build
 %configure
@@ -44,5 +47,5 @@ rm -rf %{buildroot}
 %{_includedir}/*
 
 %changelog
-* Fri Jun 12 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.00
+* Sun Sep 4 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.00
 - Rebuilt for Fedora

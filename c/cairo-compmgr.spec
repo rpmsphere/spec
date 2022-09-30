@@ -8,9 +8,9 @@ Group:          System/GUI/Other
 Source0:        http://ftp.frugalware.org/pub/other/people/baste/sources/cairo-compmgr/%{name}-%{version}.tar.gz
 BuildRequires:  libpng-devel
 BuildRequires:  intltool
-BuildRequires:  vala-compat-devel vala-comapt vala-compat-tools
+BuildRequires:  vala-compat-devel vala-compat-tools
 BuildRequires:  pkgconfig(cairo)
-BuildRequires:  glade3-libgladeui-devel
+#BuildRequires:  glade3-libgladeui-devel
 BuildRequires:  libXdamage-devel
 BuildRequires:  libXcomposite-devel
 BuildRequires:  libSM-devel
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %make_install
 find $RPM_BUILD_ROOT -type f -name "*.la" -delete -print
 %ifarch x86_64 aarch64
-mv %{buildroot}/usr/lib/* %{buildroot}/usr/lib64
+mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
 #sed -i 's|/usr/share/pixmaps/%{name}/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
@@ -81,8 +81,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/%{name}.pc
 #{_datadir}/gtk-doc/html/*
 %{_datadir}/vala/vapi/*
-%{_libdir}/glade3/modules/libgladeccm.so
-%{_datadir}/glade3/catalogs/cairo-compmgr.xml
+#{_libdir}/glade3/modules/libgladeccm.so
+#{_datadir}/glade3/catalogs/cairo-compmgr.xml
 
 %changelog
 * Wed Apr 08 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.4

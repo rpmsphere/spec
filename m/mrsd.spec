@@ -22,6 +22,8 @@ sed -i 's|-----MRSDdirectory-----|%{_libdir}/%{name}|g' mrsd mrsd.desktop
 %ifarch aarch64
 sed -i 's|-maccumulate-outgoing-args||' cfast7/Makefile
 %endif
+sed -i 's|FL/fl_file_chooser.H|FL/Fl_File_Chooser.H|' gcch/flt2.cc
+sed -i '777s|<=0|==NULL|' gcch/flt2.cc
 
 %build
 make

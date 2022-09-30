@@ -24,6 +24,7 @@ Authors:
 %setup -q -n tuxcards
 cp %{S:1} .
 cp %{S:2} .
+sed -i '46s|0 <|NULL !=|' src/information/CInformationElementHistory.cpp
 
 %build
 qmake-qt4 %{name}.pro

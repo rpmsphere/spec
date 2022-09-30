@@ -1,6 +1,6 @@
 Name: youtube-viewer
 Summary: A free utility for playing youtube-videos with MPlayer
-Version: 3.7.4
+Version: 3.10.2
 Release: 1
 Group: Applications/Internet
 License: Artistic License 2.0
@@ -44,5 +44,5 @@ perl Build.PL --gtk-youtube-viewer
 %{_mandir}/man3/*
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.4
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.10.2
 - Rebuilt for Fedora

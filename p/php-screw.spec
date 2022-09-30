@@ -6,7 +6,8 @@ Group:          Development/Tools
 License:        BSD
 URL:            http://sourceforge.net/projects/php-screw/
 Source0:        http://sourceforge.net/projects/php-screw/files/%{name}/%{version}/php_screw-%{version}.tar.gz
-BuildRequires: php-devel
+BuildRequires:  php-devel
+BuildRequires:  automake
 Requires:  	php
 
 %description
@@ -19,7 +20,7 @@ up until just before execution, preserving your intellectual property.
 sed -i 's/CG(extended_info) = 1/CG(compiler_options) |= ZEND_COMPILE_EXTENDED_INFO/' php_screw.c
 sed -i 's/62/'$RANDOM'/' my_screw.h
 sed -i 's|PHP_EXTENSION(php_screw,|PHP_NEW_EXTENSION(php_screw, php_screw.c,|' config.m4
-sed -i '88d' php_screw.c
+sed -i -e '88d' -e 's|TSRMLS_.C||' -e 's|TSRMLS_C)|)|' php_screw.c
 
 %build
 phpize

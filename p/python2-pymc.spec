@@ -9,7 +9,7 @@ URL:            http://code.google.com/p/pymc/downloads/list
 Group:          Development/Libraries/Python
 Source0:        %{pyname}-2114.tar.bz2
 BuildRequires:  python2-devel, python2-setuptools, python2-numpy
-BuildRequires:  gcc-gfortran, numpy-f2py, atlas-devel
+BuildRequires:  gcc-gfortran, python2-numpy-f2py, atlas-devel
 Requires:       python2-numpy
 
 %description
@@ -27,6 +27,7 @@ sed -i -e '/from __future__ import with_statement/d' -e '2i from __future__ impo
 sed -i '1204s|work|dble(work)|' pymc/gibbsit.f
 
 %build
+export LDFLAGS="-shared" FFLAGS="-shared -ff2c -fPIC"
 python2 setup.py build
 
 %install

@@ -32,6 +32,9 @@ without any external codecs.
 # wrong-file-end-of-line-encoding
 sed -i 's/\r$//' Release_notes.txt README.md
 sed -i '2298d' src/playerwindow.cpp
+sed -i -e 's|(picflow>.*0|(picflow!=NULL|' -e 's|fullScreenControls<=0|fullScreenControls==NULL|' -e 's|mp>0|mp!=NULL|' src/playerwindow.cpp
+sed -i -e 's|readInfo>0|readInfo!=NULL|' -e 's|openMediaInfo>0|openMediaInfo!=NULL|' -e 's|readFile>0|readFile!=NULL|' src/mplayerfe.cpp
+sed -i 's|myProcess>0|myProcess!=0|' src/pictureflow.cpp
 
 %build
 qmake-qt4 src/%{oname}.pro

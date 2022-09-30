@@ -1,11 +1,12 @@
 Summary: A hard drive sound mixer for Gnome
 Name: mixmagic
 Version: 0.1.7
-Release: 12.1
+Release: 2.1
 License: GPL
 Group: Applications/Multimedia
 URL: http://mixmagic.sourceforge.net/
 Source: http://download.sourceforge.net/zipcracker/%{name}-%{version}.tar.gz
+BuildRequires: gcc automake
 BuildRequires: gnome-libs-devel
 BuildRequires: libxml-devel
 BuildRequires: esound-devel

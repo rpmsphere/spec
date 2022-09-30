@@ -6,7 +6,7 @@ License: GPL
 Group: Development/Languages
 Source: http://sourceforge.net/projects/jbasic/files/JBasic%20Source/JBasic%202.8/%{name}28.tar.gz
 URL: http://sourceforge.net/projects/jbasic/
-BuildRequires: java-openjdk-devel, ant, lua
+BuildRequires: java-11-openjdk-devel, ant, lua
 BuildArch: noarch
 Requires: jre
 
@@ -18,6 +18,9 @@ from a shell.
 
 %prep
 %setup -q -n %{name}
+sed -i 's|source="1\.5"|source="1.7"|' build.xml
+sed -i -e 's|sun.misc.Queue|java.util.concurrent.LinkedBlockingQueue|' -e 's|Queue queue;|LinkedBlockingQueue queue;|' -e 's|queue = new Queue()|queue = new LinkedBlockingQueue()|' src/org/fernwood/jbasic/runtime/JBasicQueue.java
+sed -i -e 's|queue.enqueue(o)|queue.add(o)|' -e 's|queue.dequeue()|queue.take()|' src/org/fernwood/jbasic/runtime/JBasicQueue.java
 
 %build
 ant

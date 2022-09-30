@@ -2,13 +2,14 @@
 %global __python __python3
 
 Name:           numcosmo
-Version:        0.15.2
+Version:        0.15.4
 Release:        1
 Summary:        Numerical Cosmology
 Group:          Productivity/Scientific/Physics
 License:        GPL-3.0
 URL:            https://github.com/NumCosmo/NumCosmo
 Source0:        NumCosmo-master.zip
+BuildRequires:  gcc automake
 BuildRequires:  gtk-doc atlas-devel
 BuildRequires:  gobject-introspection-devel glib2-devel gsl-devel gmp-devel mpfr-devel fftw3-devel sqlite-devel lapack-devel
 BuildRequires:  nlopt-c-devel cfitsio-devel
@@ -16,6 +17,7 @@ BuildRequires:  sundials-devel
 BuildRequires:  python3-devel
 BuildRequires:  w3m
 Patch0:         numcosmo-0.14.2-self.patch
+#BuildConflicts: f2c
 
 %description
 The NumCosmo is an free software C library whose main purposes 
@@ -54,7 +56,9 @@ developing applications that use %{name}.
 #patch0 -p1
 
 %build
-./autogen.sh --prefix=/usr --disable-static --enable-shared
+./autogen.sh --prefix=/usr --disable-static --enable-shared ||:
+#sed -i '24397i ;;' configure
+./configure --enable-maintainer-mode --prefix=/usr --disable-static --enable-shared
 make %{?_smp_mflags}
 
 %install
@@ -83,7 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gir-1.0/*
 
 %changelog
-* Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15.2
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15.4
 - Rebuilt for Fedora
 * Mon Oct 29 2012 sandro@isoftware.com.br
 - Added backward compat for older fftw.

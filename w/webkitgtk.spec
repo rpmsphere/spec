@@ -10,7 +10,7 @@
 
 Name:		webkitgtk
 Version:	2.4.11
-Release:	6.1
+Release:	2.1
 Summary:	GTK+ Web content engine library
 
 Group:		Development/Libraries
@@ -23,6 +23,7 @@ Source0:	http://www.webkitgtk.org/releases/webkitgtk-%{version}.tar.xz
 Patch0:         webkitgtk-2.4.8-user-agent.patch
 Patch1:         webkitgtk-2.4.9-abs.patch
 
+BuildRequires:  automake
 BuildRequires:	bison
 BuildRequires:	chrpath
 BuildRequires:	enchant-devel
@@ -36,13 +37,6 @@ BuildRequires:	gtk2-devel >= 2.24.10
 BuildRequires:	glib2-devel >= 2.36.0
 BuildRequires:	harfbuzz-devel
 BuildRequires:	libsoup-devel >= 2.42.0
-%if %{fedora}==29
-BuildRequires:	compat-libicu60
-BuildRequires:	python-unversioned-command
-%endif
-%if %{fedora}==28
-BuildRequires:	compat-libicu57
-%endif
 BuildRequires:	libicu-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libsecret-devel

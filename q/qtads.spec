@@ -23,6 +23,7 @@ Entertainment, Level 9, etc). If you liked games like "Zork", "Adventure",
 %prep
 %setup -q
 sed -i 's|Game;|Game;AdventureGame;|' share/applications/%{name}.desktop
+sed -i 's|tcur > 0|tcur != NULL|' tads3/vmtz.cpp
 
 %build
 qmake-qt4 \

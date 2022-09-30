@@ -3,11 +3,12 @@
 
 Summary: A high performance web server
 Name: gatling
-Version: 0.15
-Release: 13.1
+Version: 0.16
+Release: 1
 License: GPL-2.0
 Group: Productivity/Networking/Web/Servers
-Source: http://dl.fefe.de/%{name}-%{version}.tar.xz
+URL: https://www.fefe.de/gatling/
+Source: https://www.fefe.de/gatling/%{name}-%{version}.tar.xz
 Source1: rc.gatling
 Source2: sysconf.gatling
 Source3: gatling.socket
@@ -18,9 +19,8 @@ Patch: gatling-bof.patch
 Patch1: gatling-sslseed.patch
 # PATCH-FEATURE-UPSTREAM: conrad@quisquis.de
 Patch2: gatling-systemd.patch
-URL: http://www.fefe.de/gatling/
 BuildRequires: libowfat-devel openssl-devel
-BuildRequires: systemd-devel
+BuildRequires: gcc systemd-devel
 
 %description
 Gatling is a high performance web server featuring
@@ -252,7 +252,7 @@ fi
 %{_mandir}/man1/bench.1*
 
 %changelog
-* Wed Jul 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16
 - Rebuilt for Fedora
 * Wed Dec  5 2012 conrad@quisquis.de
 - Fixed -H option

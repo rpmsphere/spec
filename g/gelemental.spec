@@ -2,15 +2,15 @@
 
 Name:           gelemental
 Summary:        Periodic Table Viewer
-Version:        1.2.0
-Release:        17.1
+Version:        2.0.1
+Release:        1
 License:        GPL, MIT
-URL:            http://www.kdau.com/projects/gelemental
+URL:            https://github.com/ginggs/gelemental
 Group:          Productivity/Scientific/Chemistry
 Vendor:         openSUSE-Education
-Source0:        %{name}-%{version}.tar.bz2
+Source0:        %{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
-Patch1:		    gelemental-1.2.0-gcc43.patch
+Patch1:		gelemental-1.2.0-gcc43.patch
 BuildRequires:  libpng-devel
 BuildRequires:  glibmm24-devel >= 2.6
 BuildRequires:  gtkmm24-devel >= 2.6
@@ -21,6 +21,7 @@ BuildRequires:  gettext-devel
 BuildRequires:  gcc-c++
 BuildRequires:  perl-XML-Parser
 BuildRequires:  pkgconfig
+BuildRequires:  automake
 
 %description
 gElemental is a GTK+ periodic table viewer with detailed information on 
@@ -47,15 +48,17 @@ Authors:
 
 %prep
 %setup -q
-%patch1 -p1
-sed -i 's|glib/gmem\.h|glib.h|' libelemental/misc/extras.cc
-sed -i 's|glib/gmessages\.h|glib.h|' libelemental/misc/widgets.cc
-sed -i 's|glib/g.*\.h|glib.h|' src/main.cc
-sed -i '250s|false|NULL|' src/dialogs.cc
+#patch1 -p1
+#sed -i 's|glib/gmem\.h|glib.h|' libelemental/misc/extras.cc
+#sed -i 's|glib/gmessages\.h|glib.h|' libelemental/misc/widgets.cc
+#sed -i 's|glib/g.*\.h|glib.h|' src/main.cc
+#sed -i '250s|false|NULL|' src/dialogs.cc
+sed -i '29i #include <pango/pango-markup.h>' libelemental/value.cc
 
 %build
 export CXXFLAGS="-std=c++11 -fPIC"
 %configure --disable-static
+make
 
 %install
 make DESTDIR=$RPM_BUILD_ROOT install
@@ -81,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libelemental.pc
 
 %changelog
-* Sun Mar 04 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.1
 - Rebuilt for Fedora
 * Sun Jun 29 2008 kirill.kirillov@gmail.com
 - gelemental-1.2.0-gcc43.patch (added "#include <limits>" to value.hh)

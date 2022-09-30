@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		tea
-Version:	61.0.0
+Version:	61.1.0
 Release:	1
 Summary:	A text editor with the hundreds of features
 URL:		https://github.com/psemiletov/tea-qt
@@ -38,7 +38,7 @@ install -Dm 644 desktop/%{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/applications
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sun Jul 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 61.0.0
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 61.1.0
 - Rebuilt for Fedora
 * Sun Jul 11 2010 Detlef Reichelt <detlef@links2linux.de> - 28.1.0
 - new upstream version <28.1.0>

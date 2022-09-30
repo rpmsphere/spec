@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
-%global weekly 2021.38
+%global weekly 2022.39
 
 Summary: The V Programming Language
 Name: vlang
-Version: 0.2.2.%{weekly}
+Version: 0.3.%{weekly}
 Release: 1
 License: MIT
 Group: Development/Language
 URL: https://github.com/vlang/v
-Source0: https://github.com/vlang/v/archive/refs/tags/weekly.%{weekly}.tar.gz
-BuildRequires: git
+Source0: https://github.com/vlang/v/archive/refs/tags/weekly.%{weekly}.tar.gz#/v-weekly.%{weekly}.tar.gz
+BuildRequires: git make gcc
 
 %description
 Simple, fast, safe, compiled language for developing maintainable software.
@@ -18,6 +18,8 @@ Compiles itself in <1s with zero library dependencies.
 
 %prep
 %setup -q -n v-weekly.%{weekly}
+#sed -i 's|byte{}|u8{}|' vlib/builtin/builtin_nix.c.v vlib/builtin/int.v vlib/strings/builder.c.v vlib/strconv/format_mem.c.v vlib/strconv/utilities.c.v vlib/os/os.c.v vlib/os/os_nix.c.v vlib/v/util/version/version.v
+#sed -i '/type u8 = byte/d' vlib/builtin/int.v
 
 %build
 make
@@ -36,5 +38,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_libexecdir}/%{name}
 
 %changelog
-* Fri Sep 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2git
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2022.39
 - Rebuilt for Fedora

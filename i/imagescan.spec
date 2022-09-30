@@ -13,7 +13,7 @@ Source2:        %{name}.conf
 Requires:       ImageMagick
 BuildRequires:  desktop-file-utils, pkgconfig, libtool-ltdl-devel
 BuildRequires:  gtkmm24-devel, sane-backends-devel, libjpeg-devel
-BuildRequires:  libtiff-devel, ImageMagick
+BuildRequires:  libtiff-devel, ImageMagick, automake
 BuildRequires:  boost-devel
 BuildRequires:  systemd-devel
 BuildRequires:  systemd-udev
@@ -34,6 +34,7 @@ sed -i 's|_1|boost::placeholders::_1|' lib/monitor.cpp drivers/esci/verify.cpp s
 sed -i 's|_2|boost::placeholders::_2|' sane/handle.cpp
 sed -i '26i #include <iostream>' lib/string.cpp
 sed -i '24i #include <iostream>' lib/toggle.cpp
+sed -i '40,42d' sane/version.hpp
 
 %build
 %configure \

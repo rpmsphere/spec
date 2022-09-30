@@ -1,11 +1,12 @@
 Name:           fontinfo
-Version:        20150410
-Release:        3.1
+Version:        2020121
+Release:        1
 Summary:        Overview of Installed Fonts
 License:        GPL-2.0+
 Group:          Productivity/Publishing/Other
 URL:            https://github.com/pgajdos/fontinfo/
-Source:         %{name}-%{version}.tar.bz2
+#Source:         %{name}-%{version}.tar.bz2
+Source0:	%{name}-master.zip
 BuildRequires:  fontconfig-devel
 BuildRequires:  freetype-devel
 BuildRequires:  harfbuzz-devel
@@ -24,7 +25,7 @@ or switch between default and system rendering of specimen
 and see differences.
 
 %prep
-%setup -q
+%setup -q -n %{name}-master
 
 %build
 make CFLAGS+=-Wno-format-security %{?_smp_mflags}
@@ -37,7 +38,7 @@ make DESTDIR=%{buildroot} install %{?_smp_mflags}
 %{_bindir}/*
 
 %changelog
-* Fri May 29 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 20150410
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2020121
 - Rebuilt for Fedora
 * Fri Apr 10 2015 pgajdos@suse.com
 - updated to version 20150410

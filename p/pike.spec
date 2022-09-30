@@ -1,12 +1,12 @@
 Name: pike
-Version: 8.0.1116
+Version: 8.0.1738
 Release: 1
 Summary: Powerful Interpreted Programming Language
 URL: http://pike.lysator.liu.se/
 License: GPL 2, LGPL 2.1, MPL 1.1
 Group: Development/Languages/Other
 Source: http://pike.lysator.liu.se/pub/pike/latest-stable/Pike-v%{version}.tar.gz
-BuildRequires: bison, autoconf, automake, m4
+BuildRequires: gcc-c++, bison, autoconf, automake, m4
 BuildRequires: zlib-devel, bzip2, libxml2-devel, gmp-devel, gdbm-devel, pcre-devel
 BuildRequires: libjpeg-devel libpng-devel giflib-devel libtiff-devel freetype freetype-devel
 # mDNSResponder-lib needed to clarify dependency for librsvg
@@ -65,7 +65,7 @@ done
 #define machine_code --with-machine-code
 #make CONFIGUREARGS="--prefix=%{_prefix} --with-freetype --with-ttflib --with-gif --with-jpeglib --with-tifflib --with-svg --with-gmp --with-bignums --without-mysql --without-gdbm --with-odbc --with-postgres --with-zlib --with-pdflib --with-gtk2 --with-libpcre --without-GL --with-GLUT --with-sane --with-SDL --with-Fuse --with-sqlite %{machine_code}" all
 #make doc
-make CONFIGUREARGS="--prefix=%{_prefix} --with-machine-code" all
+make CONFIGUREARGS="--prefix=%{_prefix} --without-machine-code" all
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -104,7 +104,7 @@ rm -rf $RPM_BUILD_ROOT
 #%doc refdoc/traditional_manual
 
 %changelog
-* Sun Sep 05 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 8.0.1116
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 8.0.1738
 - Rebuilt for Fedora
 * Fri Jun 29 2012 oleksii.prudkyi.pike@gmail.com
 - update to 7.8.686

@@ -10,7 +10,7 @@ Source0:	http://software.amiga-hardware.com/software/bobs-0.2.3.tar.bz2
 BuildRequires: SDL-devel SDL_image-devel
 BuildRequires: mesa-libGL-devel mesa-libGLU-devel
 BuildRequires: pkgconfig
-BuildRequires: gnome-screensaver
+#BuildRequires: gnome-screensaver
 BuildRequires: kdelibs qca2 udisks2
 
 %description
@@ -33,7 +33,7 @@ bobs as xscreensaver-hack
 
 %prep
 %setup -q
-%configure
+./configure --prefix=/usr
 
 %build
 make %{?_smp_mflags}

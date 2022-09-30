@@ -1,11 +1,11 @@
 Name:           shoes
-Version:        3.2.20
-Release:        10.1
-BuildRequires:  ruby-devel, rubygems, rubygem-rake, rubypick
+Version:        3.3.7
+Release:        1
+BuildRequires:  gcc, ruby-devel, rubygems, rubygem-rake, rubypick
 BuildRequires:  cairo-devel, pango-devel, gtk2-devel, libcurl-devel, libjpeg-devel, giflib-devel, portaudio-devel, sqlite-devel
 BuildRequires:  xdg-utils, makeself
 URL:            http://shoesrb.com/
-Source0:        %{name}-master.zip
+Source0:        %{name}3-master.zip
 Summary:        The best little GUI toolkit for Ruby
 License:        MIT
 Group:          Development/Languages/Ruby
@@ -17,10 +17,10 @@ It feels like real Ruby, rather than just another C++ library wrapper.
 If Gtk or wxWidgets is Rails, Shoes is Sinatra.
 
 %prep
-%setup -q -n shoes-master
-sed -i -e 's|-ljpeg|-ljpeg -lm -lruby|' -e 's|ruby-2\.1\.pc|ruby.pc|' make/*/env.rb
-sed -i -e 's|DGifOpenFileName(filename)|DGifOpenFileName(filename,NULL)|' -e 's|DGifCloseFile(gif)|DGifCloseFile(gif,NULL)|' shoes/image.c
-sed -i -e 's|lib/pkgconfig|%{_lib}/pkgconfig|' -e 's|ruby-#{rv}.pc|ruby.pc|' make/linux/env.rb
+%setup -q -n shoes3-master
+#sed -i -e 's|-ljpeg|-ljpeg -lm -lruby|' -e 's|ruby-2\.1\.pc|ruby.pc|' make/*/env.rb
+#sed -i -e 's|DGifOpenFileName(filename)|DGifOpenFileName(filename,NULL)|' -e 's|DGifCloseFile(gif)|DGifCloseFile(gif,NULL)|' shoes/image.c
+#sed -i -e 's|lib/pkgconfig|%{_lib}/pkgconfig|' -e 's|ruby-#{rv}.pc|ruby.pc|' make/linux/env.rb
 
 %build
 rake build
@@ -44,5 +44,5 @@ install -Dm644 dist/Shoes.desktop %{buildroot}%{_datadir}/applications/%{name}.d
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sat Jan 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.20
+* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.7
 - Rebuilt for Fedora

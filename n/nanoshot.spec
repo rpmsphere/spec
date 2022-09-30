@@ -3,7 +3,7 @@
 Name: nanoshot
 Summary: Tool for taking screenshots
 Version: 0.2.15
-Release: 10.1
+Release: 2.1
 Group: Converted/graphics
 License: GPLv2
 URL: http://nanoshot.sourceforge.net/

@@ -1,10 +1,10 @@
 Name:           gnuastro
-Version:        0.16.1
+Version:        0.18
 Release:        1
 Summary:        GNU Astronomy Utilities
 License:        GPL-3.0+
 URL:            https://www.gnu.org/software/gnuastro/
-Source0:        https://ftp.gnu.org/pub/gnu/gnuastro/%{name}-%{version}-e0f1.tar.gz
+Source0:        https://ftp.gnu.org/pub/gnu/gnuastro/%{name}-%{version}.tar.gz
 BuildRequires:  libtool
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(cfitsio)
@@ -36,7 +36,7 @@ BuildArch:      noarch
 Additional documentation for the GNU Astromomy Utilities.
 
 %prep
-%setup -q -n %{name}-%{version}-e0f1
+%setup -q
 
 %build
 %configure \
@@ -58,6 +58,7 @@ find %{buildroot} -type f -name "*.la" -delete -print
 %{_mandir}/man1/*.1*
 %{_libdir}/libgnuastro.so.*
 %{_datadir}/gnuastro/completion.bash
+%{_datadir}/gnuastro/astscript-fits-view.desktop
 
 %files devel
 %license COPYING*
@@ -71,7 +72,7 @@ find %{buildroot} -type f -name "*.la" -delete -print
 %exclude %{_infodir}/dir
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16.1
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18
 - Rebuilt for Fedora
 * Tue Nov 26 2019 Andreas Stieger <andreas.stieger@gmx.de>
 - GNU Astronomy Utilities 0.11 (library 9.0.0):

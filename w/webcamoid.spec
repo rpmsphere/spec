@@ -1,7 +1,8 @@
+%global __os_install_post %{nil}
 %undefine _debugsource_packages
 
 Name: webcamoid
-Version: 8.8.0
+Version: 9.0.0
 Release: 1
 Summary: The full webcam and multimedia suite
 Group: Applications/Multimedia
@@ -32,41 +33,39 @@ Features:
 
 %prep
 %setup -q
+sed -i -e 's|lupdate|lupdate-qt5|' -e 's|lrelease|lrelease-qt5|' StandAlone/Translations/CMakeLists.txt
 
 %build
-%ifarch aarch64
-export CC=clang CXX=clang++
-%endif
-qmake-qt5 Webcamoid.pro \
-    LIBDIR=%{_libdir} \
-    LICENSEDIR=%{_defaultdocdir}/webcamoid
+#ifarch aarch64
+#export CC=clang CXX=clang++
+#endif
+#qmake-qt5 LIBDIR=%{_libdir} LICENSEDIR=%{_defaultdocdir}/webcamoid
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr .
 make
 
 %install
 rm -rf %{buildroot}
-make INSTALL_ROOT=%{buildroot} install
-#mkdir -p %{buildroot}%{_mandir}/man1
-#mv %{buildroot}%{_mandir}/webcamoid.1.gz %{buildroot}%{_mandir}/man1/webcamoid.1.gz
+#make INSTALL_ROOT=%{buildroot} install
+%make_install
+mkdir -p %{buildroot}%{_mandir}/man1
+mv %{buildroot}%{_mandir}/webcamoid.1.gz %{buildroot}%{_mandir}/man1/webcamoid.1.gz
 
 %clean
 rm -rf %{buildroot}
-
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
 
 %files
 %{_bindir}/webcamoid
 %{_datadir}/applications/webcamoid.desktop
 %{_datadir}/icons/hicolor/*/apps/webcamoid.*
-%{_defaultdocdir}/webcamoid
+#{_defaultdocdir}/webcamoid
 %{_mandir}/man1/webcamoid.1*
 %{_libdir}/avkys
 %{_libdir}/libavkys.so*
-%{_libdir}/qt5/qml/AkQml
+#{_libdir}/qt5/qml/AkQml
+%{_datadir}/licenses/webcamoid/COPYING
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 8.8.0
+* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 9.0.0
 - Rebuilt for Fedora
 * Mon Feb 23 2015 Gonzalo Exequiel Pedone <hipersayan DOT x AT gmail DOT com> 6.2.0-1
 - Final Release.

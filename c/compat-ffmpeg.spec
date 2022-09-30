@@ -51,6 +51,7 @@ BuildRequires:  zlib-devel
 %ifarch %{ix86} x86_64
 BuildRequires:  yasm
 %endif
+BuildRequires:  gcc-c++ automake
 
 %description
 FFmpeg is a complete and free Internet live audio and video
@@ -86,7 +87,7 @@ This package contains development files for %{name}
     --libdir=%{_libdir}/%{name} \\\
     --mandir=%{_mandir} \\\
     --arch=%{_target_cpu} \\\
-    --extra-cflags="$RPM_OPT_FLAGS -fPIC" \\\
+    --extra-cflags="$RPM_OPT_FLAGS -fPIC -fPIE" \\\
     %{?vendor:--extra-version="%{vendor}"} \\\
     %{?_with_amr:--enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvo-amrwbenc --enable-version3} \\\
     --enable-bzlib \\\
@@ -125,6 +126,7 @@ This package contains development files for %{name}
 %patch3 -p0
 
 %build
+export CFLAGS="-g -O2 -fPIC -fPIE"
 mkdir generic
 pushd generic
 %{ff_configure}\
@@ -135,6 +137,7 @@ pushd generic
 %endif
 %ifarch %{ix86} x86_64
     --enable-runtime-cpudetect \
+    --enable-pic \
 %endif
 %ifarch ppc
     --cpu=g3 \

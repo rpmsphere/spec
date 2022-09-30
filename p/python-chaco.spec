@@ -13,9 +13,9 @@ Obsoletes:	python-enthought-chaco
 Obsoletes:	python-enthought-chaco2
 Requires:	python-traits >= 4.2.0
 Requires:	python-enable >= 4.2.0
-Requires:	numpy >= 1.1.0
+Requires:	python2-numpy >= 1.1.0
 Requires:	python-reportlab
-BuildRequires:	numpy atlas
+BuildRequires:	python2-numpy atlas
 BuildRequires:	python-devel
 #BuildRequires:	python-traits >= 4.2.0
 BuildRequires:	python-setuptools >= 0.6c8

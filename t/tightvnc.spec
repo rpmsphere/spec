@@ -178,6 +178,7 @@ xmkmf -a
 %{__make} World CDEBUGFLAGS="-O2 -g -pipe -Wall"
 cd Xvnc
 %configure
+sed -i 's|ar clq|ar cq|' `find . -name Makefile`
 %{__make} CDEBUGFLAGS="-O2 -g -pipe -Wall" \
     EXTRA_DEFINES="-DUSE_LIBWRAP=1" \
     EXTRA_LIBRARIES="-lwrap -lnss_nis -Wl,--allow-multiple-definition"

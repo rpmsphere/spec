@@ -28,6 +28,7 @@ in some cases.
 
 %prep
 %setup -q -n ucg-master
+sed -i '27i #include <mutex>' src/libext/DoubleCheckedLock.hpp
 
 %build
 autoreconf -ifv

@@ -109,7 +109,7 @@ Requires:       %{name}-azoth-chathistory
 Requires:       %{name}-azoth-rosenthal
 Requires:       %{name}-azoth-standardstyles
 Requires:       %{name}-azoth-xoox
-Requires:       %{name}-bittorrent
+#Requires:       %{name}-bittorrent
 Requires:       %{name}-blasq-vangog
 Requires:       %{name}-blogique-metida
 Requires:       %{name}-dolozhee
@@ -185,7 +185,6 @@ It features:
 
 A web browser plugin is recommended to show the news in a fancy way.
 
-
 %package aggregator-bodyfetch
 Summary:        LeechCraft Aggregator Bodyfetch Module
 Group:          Productivity/Networking/Other
@@ -213,7 +212,6 @@ Requires:       gdb
 This package provides a crash handler plugin for LeechCraft
 which shows backtraces and aids in sending bug reports.
 
-
 %package auscrie
 Summary:        LeechCraft Screenshooter Module
 Group:          Productivity/Networking/Other
@@ -224,7 +222,6 @@ Requires:       %{name}-imgaste = %{version}
 This package provides a LeechCraft plugin to make screenshots of
 LeechCraft and then either save them locally or upload them to an
 imagebin.
-
 
 %package azoth
 Summary:        LeechCraft Instant messenger Module
@@ -243,7 +240,6 @@ Unlike other multiprotocol clients which tend to implement only those
 features that are present in all the protocols, Azoth is modelled after the
 XMPP protocol, aiming to provide extensive and full support for XMPP while
 remaining usable for other protocols.
-
 
 %package azoth-abbrev
 Summary:        LeechCraft Azoth Abbreviations Module
@@ -270,7 +266,6 @@ Features:
  * Automatic password entry.
  * Automatic login.
 
-
 %package azoth-adiumstyles
 Summary:        LeechCraft Azoth Adium Styles Module
 Group:          Productivity/Networking/Other
@@ -279,7 +274,6 @@ Provides:       %{name}-azoth-chatstyler
 
 %description azoth-adiumstyles
 This package provides an Adium styles support plugin for LeechCraft Azoth.
-
 
 %package azoth-autoidler
 Summary:        LeechCraft Azoth Module for automatic status change
@@ -2000,6 +1994,7 @@ XmlSettingsDialog LeechCraft subsystem.
 
 %prep
 %setup -q -n %{name}-%{LEECHCRAFT_VERSION}
+sed -i '48i #include <optional>' src/plugins/aggregator/aggregator.h
 
 #removing non-free icons
 rm -rf src/plugins/azoth/share/azoth/iconsets/clients/default
@@ -2139,8 +2134,8 @@ cmake ../src \
         -DENABLE_TABSESSMANAGER=True \
         -DENABLE_TABSLIST=True \
         -DENABLE_TEXTOGROOSE=True \
-        -DENABLE_TORRENT=True \
-                -DENABLE_BITTORRENT_GEOIP=True \
+        -DENABLE_TORRENT=False \
+                -DENABLE_BITTORRENT_GEOIP=False \
         -DENABLE_TOUCHSTREAMS=True \
         -DENABLE_TPI=True \
         -DENABLE_TWIFEE=False \
@@ -2364,11 +2359,11 @@ cd build
 
 %endif
 
-%files bittorrent
-%{settings_dir}/torrentsettings.xml
-%{translations_dir}/*craft_bittorrent_*.qm
-%{plugin_dir}/*craft_bittorrent.so
-%{_datadir}/applications/%{name}-bittorrent-qt5.desktop
+#files bittorrent
+#{settings_dir}/torrentsettings.xml
+#{translations_dir}/*craft_bittorrent_*.qm
+#{plugin_dir}/*craft_bittorrent.so
+#{_datadir}/applications/%{name}-bittorrent-qt5.desktop
 
 %files blasq
 %{plugin_dir}/lib%{name}_blasq.so

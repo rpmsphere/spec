@@ -28,6 +28,7 @@ Authors:
 %setup -q -n %{name}-1.0-8
 %patch0
 %patch1
+sed -i -e 's|end >= 0|end != NULL|' -e 's|start >= 0|start != NULL|' sdl_audio.cpp
 cd images
 tar xfj %{S:1}
 

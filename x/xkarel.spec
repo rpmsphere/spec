@@ -21,13 +21,16 @@ Program Karel was very popular in the time of 8-bits computers.
 
 %prep
 %setup -q
-sed -i 's|-Wall|-Wall -fpermissive|' makeinclude.x
+sed -i 's|-Wall|-Wall -fpermissive -std=gnu++14|' makeinclude.x
 sed -i 's|/usr/local|/usr|' makeinclude.x
 sed -i '1i #include <cstring>' src/Katalog.h
 sed -i 's|return is;|return bool(is);|' src/AtributyKRL.cpp
 sed -i 's|fstream.h|fstream|' src/Katalog.cpp
 sed -i 's|character(|char_at(|' src/Editorc.cxx
-sed -i 's|"FL/Fl_File_Chooser.h"|<FL/Fl_File_Chooser.h>|' src/KatalogUIc.cxx
+sed -i 's|"FL/Fl_File_Chooser.h"|<FL/Fl_File_Chooser.H>|' src/KatalogUIc.cxx
+sed -i 's|FL/Fl_Help_Dialog.h|FL/Fl_Help_Dialog.H|' src/KatalogUIc.cxx
+sed -i 's|FL/Fl_File_Icon.h|FL/Fl_File_Icon.H|' src/KatalogUIc.cxx
+sed -i 's|FL/fl_ask.h|FL/fl_ask.H|' src/KatalogUIc.cxx
 
 %build
 make INSTALL_DIRECTORY=/usr

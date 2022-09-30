@@ -6,12 +6,11 @@ License:	GPL v2
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/xmms-shell/%{name}-%{version}.tar.gz
 URL:		http://www.loganh.com/xmms-shell/
-BuildRequires:	autoconf
+BuildRequires:  gcc
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	readline-devel
 BuildRequires:	xmms-devel
-Requires:	xmms
 
 %description
 XMMS-Shell is a simple utility for controlling XMMS externally.
@@ -30,8 +29,7 @@ sed -r -i '7i #include <cstdlib>\n#include <cstring>' include/command.h
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT

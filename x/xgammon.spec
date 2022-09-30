@@ -27,6 +27,7 @@ on a remote X terminal, and will display a second board there for their use.
 %patch -p0
 %patch1 -p1
 sed -i 's|-lm|-lm -Wl,--allow-multiple-definition|' Imakefile
+sed -i 's|sys_siglist\[n\]|strsignal(n)|' save.c
 
 %build
 xmkmf

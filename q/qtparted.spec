@@ -20,11 +20,11 @@ QtParted is a graphical partition editor, similar to PartitionMagic(tm).
 %setup -q
 
 %build
-%cmake -DCMAKE_INSTALL_PREFIX=/usr -DQT_QMAKE_EXECUTABLE=qmake-qt4 .
-%cmake_build
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DQT_QMAKE_EXECUTABLE=qmake-qt4 .
+%make_build
 
 %install
-%cmake_install
+%make_install
 # pam/kapabilities support
 mkdir -p %{buildroot}%{_sbindir}
 mv %buildroot%_bindir/* %buildroot%_sbindir

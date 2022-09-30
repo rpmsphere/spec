@@ -1,6 +1,6 @@
 Name:			ontv
 Version:		3.2.0
-Release:		9.1
+Release:		2.1
 Summary:	TV listings for the GNOME panel
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -18,6 +18,7 @@ BuildRequires:	vte-devel
 BuildRequires:	intltool
 BuildRequires:	notification-daemon
 BuildRequires:	udisks2
+BuildRequires:  automake
 BuildArch:	noarch
 
 %description

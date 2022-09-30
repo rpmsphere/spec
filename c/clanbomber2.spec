@@ -8,7 +8,7 @@ Summary:        Bomberman-like multiplayer game
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
 Patch0:         %{name}-%{version}-socklen.patch
-BuildRequires:  gcc-c++ pkgconfig directfb-devel fusionsound-devel
+BuildRequires:  gcc-c++ automake pkgconfig directfb-devel fusionsound-devel
 
 %description
 ClanBomber is a free (GPL) Bomberman-like multiplayer game.
@@ -20,6 +20,8 @@ sed -i -e '706s/DFBResult/DirectResult/' -e '824d' clanbomber/Resources.cpp
 sed -i -e 's|__u8|u8|' -e 's|__u16|u16|' -e 's|__u32|u32|' clanbomber/*.h clanbomber/*.cpp
 sed -i 's|path+filename|(const char *)(path+filename)|' clanbomber/Config.cpp
 sed -i 's|map_selection_file(filename)|map_selection_file((const char *)filename)|' clanbomber/Map.cpp
+sed -i -e '/#define min/d' -e '/#define max/d' clanbomber/ClanBomber.h
+sed -i 's|pthread_mutexattr_setkind_np|pthread_mutexattr_settype|' clanbomber/Mutex.cpp
 
 %build
 %configure

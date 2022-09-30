@@ -1,6 +1,6 @@
 Name: maude
 Summary: High-performance logical framework
-Version: 3.1
+Version: 3.2.1
 Release: 1
 Group: science
 License: Free Software
@@ -23,7 +23,7 @@ logic sublanguage. Besides supporting equational specification and
 programming, Maude also supports rewriting logic computation.
 
 %prep
-%setup -q
+%setup -q -n Maude-%{version}
 #sed -i 's|kind::IFF|kind::ITE|' src/Mixfix/variableGenerator.cc
 cp /usr/include/yices/* src/Mixfix/
 
@@ -42,5 +42,5 @@ mv %{buildroot}%{_datadir}/*.%{name} %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.1
 - Rebuilt for Fedora

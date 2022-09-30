@@ -128,6 +128,7 @@ sed -i 's|cfree|free|' lib/libxview/filter/filter.c lib/libxview/ttysw/cim_size.
 mkdir -p build/include
 cp -a /usr/include/tirpc/* build/include/
 sed -i 's|-shared|-shared -Wl,--allow-multiple-definition|' config/XView.rules
+sed -i -e 's|extern int|extern ssize_t|' -e 's|char *\*buf;|void *buf;|' -e 's|int *nbytes;|size_t nbytes;|' lib/libxview/notify/ndet_read.c
 
 %build
 rm -fr $RPM_BUILD_ROOT

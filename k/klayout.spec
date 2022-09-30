@@ -35,9 +35,7 @@ TARGET="linux-64-gcc-release"
 %else
 TARGET="linux-32-gcc-release"
 %endif
-%ifarch aarch64
 sed -i 's|-m64||g' build.sh
-%endif
 sed -i 's|RUN_MAKE=1|RUN_MAKE=0|' build.sh
 #QTBIN=$(dirname $(pkg-config --variable=moc_location QtCore))
 #QTLIB=`pkg-config --variable=libdir QtCore`
@@ -55,6 +53,7 @@ QTINC=%{_includedir}/qt5
 #           -option %{?jobs:-j%jobs}
 
 cd build-release
+sed -i 's|-Wall|-Wall -std=gnu++14|' Makefile */Makefile */*/Makefile */*/*/Makefile
 sed -i 's|-isystem /usr/include ||g' rba/rba/Makefile
 make
 

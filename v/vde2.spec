@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:          vde2
 Version:       2.3.2
 Release:       8.1
@@ -7,6 +9,7 @@ URL:           http://vde.sourceforge.net/
 Source:        http://downloads.sourceforge.net/project/vde/vde2/%{version}/vde2-%{version}.tar.bz2
 License:       GPL
 BuildRequires: gcc-c++
+BuildRequires: automake
 BuildRequires: compat-openssl10-devel
 BuildRequires: libpcap-devel
 BuildRequires: python2
@@ -50,8 +53,8 @@ rm -rf "$RPM_BUILD_ROOT"
 %{_libdir}/lib*.so.*
 %{_libdir}/vde2
 %{_libexecdir}/vdetap
-%{_mandir}/man1/*.1.gz
-%{_mandir}/man8/vde_tunctl.8.gz
+%{_mandir}/man1/*.1*
+%{_mandir}/man8/vde_tunctl.8*
 %doc COPYING README
 %{python2_sitelib}/VdePlug*
 %{python2_sitelib}/vdeplug_python.*

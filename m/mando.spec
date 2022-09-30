@@ -25,17 +25,18 @@ the X11 pointer. Point-and-click functionality has also been implemented.
 %setup -q -c
 cp %{SOURCE1} src
 sed -i 's|<linux/videodev.h>|"videodev.h"|' src/image_v4linput.h
+#FIXME
+sed -i 's|retVal \* (Real)( 1.0 / retVal.num_elements() )|retVal|' src/fourier.tcc
 
 %build
-mkdir build
-cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=/usr
-make
+%cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_CXX_FLAGS="-std=gnu++14 -fPIE"
+sed -i 's|-isystem /usr/include ||' *-linux-build/src/CMakeFiles/mando.dir/flags.make
+%cmake_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-cd build
-make DESTDIR=$RPM_BUILD_ROOT install
+#cd build
+%cmake_install
 mv %{buildroot}%{_datadir}/icons/%{name}.png %{buildroot}%{_datadir}/pixmaps
 
 %clean

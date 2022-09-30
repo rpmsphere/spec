@@ -14,6 +14,7 @@ C Scripting Everywhere - The Smallest ANSI C compiler.
 %prep
 %setup -q
 sed -i 's|/usr/local|/usr|' configure examples/ex?.c README tcc-doc.html tcc-doc.texi tcc.h
+sed -i 's|#define CONFIG_TCC_MALLOC_HOOKS|#undef CONFIG_TCC_MALLOC_HOOKS|' lib/bcheck.c
 
 %build
 %configure

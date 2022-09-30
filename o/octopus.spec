@@ -2,12 +2,12 @@
 
 Name: 		octopus
 Summary:	A TDDFT code
-Version:	10.5
+Version:	12.0
 Release:	1
 License:	GPLv2+
 Group:		Applications/Engineering
-Source:		http://www.tddft.org/programs/octopus/download/%{name}-%{version}.tar.gz
-URL:		http://www.tddft.org/programs/octopus
+Source:		https://www.tddft.org/programs/octopus/download/%{name}-%{version}.tar.gz
+URL:		https://octopus-code.org/wiki/Main_Page
 BuildRequires:	blas-devel
 BuildRequires:	fftw-devel
 BuildRequires:	fontconfig-devel
@@ -49,35 +49,39 @@ This package contains the development headers for Octopus.
 
 %prep
 %setup -q
+sed -i -e '218,220d' -e '222,224d' src/basic/global.F90
 
 %build
-./configure FCCPP="/lib/cpp -std=gnu++11 -xc++" FCFLAGS_LIBXC="-I/usr/include -I%{_libdir}/gfortran/modules" \
-FCFLAGS="-ffree-line-length-none -fallow-argument-mismatch -fallow-invalid-boz" \
 %ifarch x86_64
-	CFLAGS=-msse4.1 \
+  %configure CFLAGS="-g -O2 -fPIE -fPIC -msse4.1 -Wno-line-truncation"
+%else
+  %configure CFLAGS="-g -O2 -fPIE -fPIC -Wno-line-truncation"
 %endif
-	--host=%{_host} --build=%{_build} \
-        --target=%{_target_platform} \
-        --program-prefix=%{?_program_prefix} \
-        --prefix=%{_prefix} \
-        --exec-prefix=%{_exec_prefix} \
-        --bindir=%{_bindir} \
-        --sbindir=%{_sbindir} \
-        --sysconfdir=%{_sysconfdir} \
-        --datadir=%{_datadir} \
-        --includedir=%{_includedir} \
-        --libdir=%{_libdir} \
-        --libexecdir=%{_libexecdir} \
-        --localstatedir=%{_localstatedir} \
-        --sharedstatedir=%{_sharedstatedir} \
-        --mandir=%{_mandir} \
-        --infodir=%{_infodir} --disable-static
-make %{?_smp_mflags}
+#./configure FCCPP="/lib/cpp -std=gnu++14 -xc++" FCFLAGS_LIBXC="-I/usr/include -I%{_libdir}/gfortran/modules" \
+#FCFLAGS="-ffree-line-length-none -fallow-argument-mismatch -fallow-invalid-boz" \
+#	--host=%{_host} --build=%{_build} \
+#        --target=%{_target_platform} \
+#        --program-prefix=%{?_program_prefix} \
+#        --prefix=%{_prefix} \
+#        --exec-prefix=%{_exec_prefix} \
+#        --bindir=%{_bindir} \
+#        --sbindir=%{_sbindir} \
+#        --sysconfdir=%{_sysconfdir} \
+#        --datadir=%{_datadir} \
+#        --includedir=%{_includedir} \
+#        --libdir=%{_libdir} \
+#        --libexecdir=%{_libexecdir} \
+#        --localstatedir=%{_localstatedir} \
+#        --sharedstatedir=%{_sharedstatedir} \
+#        --mandir=%{_mandir} \
+#        --infodir=%{_infodir} --disable-static
+
+%make_build -j 1
 
 %install
 rm -rf %{buildroot}
 %make_install
-install -Dm644 /root/rpmbuild/BUILDROOT/octopus-*/liboct_parser.a %{buildroot}%{_libdir}/liboct_parser.a
+#install -Dm644 /root/rpmbuild/BUILDROOT/octopus-*/liboct_parser.a %{buildroot}%{_libdir}/liboct_parser.a
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
@@ -99,7 +103,7 @@ install-info --remove octopus &> /dev/null
 %{_libdir}/*.a
 
 %changelog
-* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 10.5
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 12.0
 - Rebuilt for Fedora
 * Mon Sep 29 2008 Jussi Lehtola - 3.0.1-4
 - Devel provides -static.

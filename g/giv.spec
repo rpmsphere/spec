@@ -2,7 +2,7 @@
 %global __arch_install_post %{nil}
 
 Name:          giv
-Version:       0.9.31
+Version:       0.9.35
 Release:       1
 Summary:       The G(reat|tk|NU) Image Viewer
 Group:         Applications/Graphics
@@ -15,6 +15,7 @@ BuildRequires: pango-devel
 BuildRequires: pcre-devel
 BuildRequires: cfitsio-devel
 BuildRequires: git
+BuildRequires: glm-devel
 
 %description
 giv, The G(reat|tk|NU) Image Viewer, is an image and vector overlay viewer.
@@ -39,10 +40,11 @@ Development files for the package giv.
 
 %prep
 %setup -q
-sed -i '1368d' src/agg/agg_renderer_outline_aa.h
+#sed -i '1368d' src/agg/agg_renderer_outline_aa.h
 
 %build
 ./autogen.sh --prefix=/usr
+sed -i 's|-Werror=format-security||' `find . -name Makefile`
 make
 
 %install
@@ -77,10 +79,9 @@ EOF
 %{_includedir}/*/*
 %{_libdir}/lib*.so
 %{_libdir}/lib*.a
-%{_libdir}/lib*.la
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.31
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.35
 - Rebuilt for Fedora
 * Fri Apr 03 2009 gil <puntogil@libero.it> 0.9.14-1mamba
 - package created by autospec

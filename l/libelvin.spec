@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %define       with_xml      no
 %define       with_ssl      no
 %define       with_threads  yes
@@ -62,6 +63,8 @@ It also provides an Elvin command-line client.
     --without-xt \
     --without-gtk \
     --disable-nls
+
+sed -i 's|-Werror=format-security||' Makefile */Makefile */*/Makefile
 %{__make} %{_smp_mflags -O}
 
 %install

@@ -30,6 +30,7 @@ sed -i 's|none|linux|' makeconfig
 sed -i 's|/usr/local|/usr|' makeconfig
 sed -i 's/\r//' README
 sed -i 's|-lgsl|-lgsl -lgslcblas|' makepackages
+sed -i 's|-Wall|-Wall -fPIE|' makedefs
 rm -rf luajit2
 mv LuaJIT-2.1.0-beta3 luajit2
 
@@ -37,6 +38,7 @@ mv LuaJIT-2.1.0-beta3 luajit2
 make -C luajit2
 mkdir .libs
 cp luajit2/src/libluajit.a .libs/
+sed -i 's|-Wall|-Wall -fPIE|' Makefile */Makefile */*/Makefile
 make
 
 %install

@@ -18,6 +18,7 @@ A text editor included in OSPlus.
 %prep
 %setup -q
 dos2unix configure
+sed -i 's|sys_errlist\[errno\]|strerror(errno)|' src/convert/txtwrite.c
 
 %build
 sh configure linux

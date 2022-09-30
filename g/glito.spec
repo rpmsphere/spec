@@ -58,7 +58,7 @@ Glito's features:
 
 %prep
 %setup -q
-sed -i 's|-g -O2|-g -O2 -fpermissive -lz|' configure
+sed -i 's|Fl/Fl.H|FL/Fl.H|' configure
 sed -i '18i #include <cstdlib>' src/Formula.cpp
 sed -i '19i #include <cmath>\n#include <limits>\n#include <cstring>' src/Image.cpp
 sed -i 's|Image::Image|Image|' src/Image.hpp
@@ -66,7 +66,9 @@ sed -i 's|png\.h|libpng12/png.h|' src/ImageGray.hpp
 sed -i '1i #include <cstdlib>' src/Image.hpp src/Skeleton.cpp
 
 %build
-./configure --prefix=%{_prefix} --disable-debug --disable-static --enable-optimize --enable-shared --build=x86_64
+./configure --prefix=%{_prefix} --disable-debug --disable-static --enable-optimize --enable-shared
+#--build=x86_64
+sed -i 's|-O2|-O2 -fpermissive -lz|' */Makefile
 make
 
 %install
@@ -90,6 +92,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/locale/fr/LC_MESSAGES/glito.mo
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
+%exclude %{_datadir}/locale/locale.alias
 
 %changelog
 * Thu Mar 05 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1

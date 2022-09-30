@@ -2,8 +2,8 @@ Name:           qprint
 License:        SUSE-Public-Domain
 Group:          Productivity/Security
 Summary:        A simple command-line en/decoding filter
-Version:        1.0
-Release:        20.1
+Version:        1.1
+Release:        1
 Source:         http://ftp.debian.org/debian/pool/main/q/qprint/qprint_%{version}.dfsg.2.orig.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
@@ -14,7 +14,7 @@ details on operation of the program, please consult the manual
 page "qprint.1".
 
 %prep
-%setup -q -n qprint-%{version}.dfsg.2
+%setup -q
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" ./configure --prefix=/usr --mandir=%_mandir
@@ -29,12 +29,11 @@ make install DESTDIR=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
 %_bindir/qprint
 %_mandir/man1/qprint.1.gz
 
 %changelog
-* Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
 - Rebuilt for Fedora
 * Thu Oct 28 2010 aj@suse.de
 - Use RPM_OPT_FLAGS.

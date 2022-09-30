@@ -38,7 +38,7 @@ Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	avahi-compat-libdns_sd-devel
 Requires:	avahi-devel
-Requires:	db4-devel
+#Requires:	db4-devel
 Requires:	qt4-devel
 
 %description	devel

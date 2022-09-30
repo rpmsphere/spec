@@ -33,7 +33,8 @@ Enjoy Twitch on your GNU/Linux desktop.
 
 %build
 # NOTE: These options change in the next release
-%meson -Dwith-player-gstreamer-cairo=true -Dwith-player-gstreamer-opengl=true -Ddo-post-install=false -Db_lundef=false
+#meson -Dwith-player-gstreamer-cairo=true -Dwith-player-gstreamer-opengl=true -Ddo-post-install=false -Db_lundef=false
+%meson
 %meson_build
 
 %install

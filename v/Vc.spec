@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           Vc
-Version:        1.4.2
+Version:        1.4.3
 Release:        1
 Summary:        Collection of SIMD Vector Classes
 License:        BSD-3-Clause
@@ -88,7 +88,7 @@ cp -a README.md doc/html %{buildroot}%{_docdir}/%{name}
 %{_libdir}/libVc.a
 
 %changelog
-* Sun Aug 8 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.2
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.3
 - Rebuilt for Fedora
 * Tue Feb 20 2018 stefan.bruens@rwth-aachen.de
 - Drop ExclusiveArch, Vc 1.3.3 is no longer x86 only

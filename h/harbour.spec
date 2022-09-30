@@ -36,21 +36,17 @@ Runtime libraries needed for Harbour applications.
 %setup -q
 %if 0
 perl -pi -e's,(LIBS = hbcplr hbpp hbcommon) ,$1 m ,' utils/hbrun/Makefile utils/hbmk2/Makefile
-
 echo -e "\n{unix}libpaths=%{_libdir}/mysql" >> contrib/hbmysql/hbmysql.hbc
 echo -e "\n{unix}libpaths=%{_libdir}/mysql" >> contrib/sddmy/sddmy.hbc
-
 perl -pi -e's,-quiet,-info,' contrib/make.hbs
-
 perl -pi -e's,{!darwin},{!darwin&!win},' contrib/hbqt/hbqt_common.hbm \
   contrib/hbqt/qtwebkit/hbqtwebkit.hbm
-
 perl -pi -e's,libs=png,libs=png14,' contrib/hbwin/hbwin.hbc
 perl -pi -e's,(-depincpath=png:/usr/include),#$1,' contrib/hbwin/hbwin.hbp
 perl -pi -e's,(-depincpath=png:/usr/include),#$1,' contrib/hbhpdf/3rd/libhpdf/libhpdf.hbp
-
 #sed -i 's| abs(| fabs(|' contrib/hbqt/qtgui/hbqt_hbqgraphicsscene.cpp
 %endif
+sed -i '/define HAVE_SYS_SYSCTL_H/d' src/rtl/arc4.c
 
 %build
 %if 0

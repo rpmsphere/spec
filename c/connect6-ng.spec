@@ -6,7 +6,8 @@ License: GPLv3
 Group: Amusements/Games
 Source: %{name}-%{version}.tar.gz
 URL: https://github.com/alick9188/connect6-ng
-BuildRequires: java-devel-openjdk, ant, xml-commons-apis, ant-findbugs, lua
+BuildRequires: java-devel-openjdk, ant, xml-commons-apis, lua
+#BuildRequires: ant-findbugs
 BuildArch: noarch
 Requires: jre
 
@@ -16,6 +17,7 @@ the old project in several aspects.
 
 %prep
 %setup -q
+sed -i '14d' build.xml
 
 %build
 ant -Drepository.version=%{version}

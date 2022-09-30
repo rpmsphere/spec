@@ -2,9 +2,10 @@
 
 Summary: Interactive "generative art" software
 Name: evolvotron
-Version: 0.7.1
+Version: 0.7.1fixed
 Release: 1
-Source0: http://prdownloads.sourceforge.net/evolvotron/%{name}-%{version}.tar.gz
+#Source0: http://prdownloads.sourceforge.net/evolvotron/%{name}-%{version}.tar.gz
+Source0: %{name}-master.zip
 Source1: %{name}.png
 License: GPLv2+
 Group: Amusement/Toys
@@ -20,15 +21,17 @@ driven evolution.  If you like lava lamps, and still think the Mandelbrot
 set is cool, this could be the software for you.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n %{name}-fixed-master
 #sed -i '196s|return _task;|return bool(_task);|' libevolvotron/mutatable_image_computer.h
 #sed -i 's|QT += xml|QT += xml widgets|' common.pro
 
 %build
+cd %{name}
 qmake-qt5 "VERSION_NUMBER=%{version}" main.pro
 make
 
 %install
+cd %{name}
 mkdir -p %buildroot%_bindir
 install -m 755 evolvotron/evolvotron evolvotron_mutate/evolvotron_mutate \
   evolvotron_render/evolvotron_render %buildroot%_bindir
@@ -53,14 +56,14 @@ EOF
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%doc README LICENSE TODO USAGE %name.html
+%doc README.md %{name}/README %{name}/LICENSE %{name}/TODO %{name}/USAGE %{name}/%{name}.html
 %{_bindir}/%{name}*
 %{_mandir}/man1/%{name}*.1*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sun Apr 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1fixed
 - Rebuilt for Fedora
 * Sat Aug 06 2011 Götz Waschk <waschk@mandriva.org> 0.6.1-2mdv2012.0
 + Revision: 693428

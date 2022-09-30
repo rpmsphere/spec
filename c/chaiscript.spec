@@ -22,9 +22,10 @@ functions, class methods, and STL containers.
 
 %prep
 %setup -q -n ChaiScript-%{version}
+sed -i 's|SIGSTKSZ|8192|' unittests/catch.hpp
 
 %build
-cmake -DCMAKE_INSTALL_PREFIX=/usr .
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_CXX_FLAGS="-std=gnu++11 -fPIE" .
 make
 
 %install

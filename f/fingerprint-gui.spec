@@ -1,11 +1,14 @@
+%undefine _debugsource_packages
+
 Name:           fingerprint-gui
-Version:        1.09
-Release:        3.1
+Version:        1.09git
+Release:        1
 Summary:        Tool for fingerprint enrollment and verification
 License:        GPL-2.0+
 Group:          Hardware/Other
 URL:            http://ullrich-online.cc/Appliance/fingerprint/
-Source0:        http://ullrich-online.cc/nview/Appliance/fingerprint/download/fingerprint-gui-%{version}.tar.gz
+#Source0:        http://ullrich-online.cc/nview/Appliance/fingerprint/download/fingerprint-gui-%{version}.tar.gz
+Source0:	%{name}-master.zip
 Source1:        fingerprint-gui.svg
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
@@ -31,11 +34,12 @@ by their fingerprints. The system is based on device drivers from the
 "libfprint" project.
 
 %prep
-%setup -q
+%setup -q -n %{name}-master
 
 %build
 export QTDIR=%{_libexecdir}/
-qmake-qt4 QMAKE_CFLAGS="%{optflags}" QMAKE_CXXFLAGS="%{optflags}" PREFIX=%{_prefix} LIB=%{_lib} LIBEXEC=%{_lib}
+qmake-qt5 QMAKE_CFLAGS="%{optflags}" QMAKE_CXXFLAGS="%{optflags}" PREFIX=%{_prefix} LIB=%{_lib} LIBEXEC=%{_lib}
+#cmake -DCMAKE_PREFIX=/usr .
 make %{?_smp_mflags}
 
 %install
@@ -64,10 +68,6 @@ EOF
 mkdir -p %{buildroot}%{_udevrulesdir}
 mv %{buildroot}%{_sysconfdir}/udev/rules.d/92-fingerprint-gui-uinput.rules %{buildroot}%{_udevrulesdir}/92-fingerprint-gui-uinput.rules
 
-%post
-
-%postun
-
 %files
 %doc README CHANGELOG COPYING
 %{_sysconfdir}/xdg/autostart/fingerprint-polkit-agent.desktop
@@ -87,7 +87,8 @@ mv %{buildroot}%{_sysconfdir}/udev/rules.d/92-fingerprint-gui-uinput.rules %{bui
 %{_datadir}/polkit-1/actions/cc.ullrich-online.fingerprint-gui.policy
 
 %changelog
-* Thu Mar 15 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.09
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.09git
+- Rebuilt for Fedora
 * Sat Mar  5 2016 mailaender@opensuse.org
 - fix license according to README
 - add udev update rules

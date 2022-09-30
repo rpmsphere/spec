@@ -1,13 +1,12 @@
 Name:           twister
 Version:        0.9.40
-Release:        7.1
+Release:        2.1
 Summary:        Peer-to-peer microblogging client
 License:        MIT
 Group:          Productivity/Networking/Other
-URL:            http://twister.net.co
+URL:            https://github.com/miguelfreitas
 Source0:        twister-core-master.zip
 Source1:        twister-html-master.zip
-BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  libtool
 BuildRequires:  boost-devel
@@ -29,8 +28,9 @@ and BitTorrent protocols.
 %patch0 -p1
 
 %build
-export CXXFLAGS="-std=gnu++11"
+export CXXFLAGS="-std=gnu++11 -fPIE"
 ./autotool.sh
+sed -i '21375,21513d' configure
 %ifarch aarch64
 %configure --disable-sse2
 %else
@@ -52,7 +52,7 @@ install -Dm755 %{SOURCE2} %{buildroot}%{_bindir}/%{name}
 %{_datadir}/doc/%{name}
 
 %changelog
-* Thu Jan 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.40
+* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.40
 - Rebuilt for Fedora
 * Sat Mar 26 2016 Miguel Freitas
 - Build 0.9.28

@@ -1,11 +1,11 @@
 Name:		comedilib
-Version:	0.11.0
-Release:	2
+Version:	0.12.0
+Release:	1
 Summary:	Data Acquisition library for the Comedi driver
 License:	LGPLv2
 URL:		http://www.comedi.org/
 Source:		http://www.comedi.org/download/%{name}-%{version}.tar.gz
-BuildRequires:  gcc
+BuildRequires:  gcc automake
 BuildRequires:  python2-devel
 BuildRequires:	docbook-utils
 BuildRequires:	swig
@@ -34,8 +34,9 @@ acquisition hardware.
 # Ruby bindings don't build
 export PYTHON=/usr/bin/python2
 %configure --disable-dependency-tracking --disable-static --disable-ruby-binding
-sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' libtool
-sed -i 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' libtool
+#sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' libtool
+#sed -i 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' libtool
+sed -i -e 's|-flto=auto||' -e 's|-ffat-lto-objects||' libtool `find . -name Makefile`
 %make_build
 
 %install
@@ -73,7 +74,7 @@ done
 %{_docdir}/%{name}/html/
 
 %changelog
-* Thu Nov 19 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.0
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.0
 * Rebuilt for Fedora
 * Wed Jul 24 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.11.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild

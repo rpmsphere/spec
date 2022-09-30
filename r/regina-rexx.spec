@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name: regina-rexx
-Version: 3.9.4
+Version: 3.9.5
 Release: 1
 Group: Development/Languages
 Source: http://dl.sourceforge.net/project/%{name}/%{name}/%{version}/%{name}-%{version}.tar.gz
@@ -35,15 +35,9 @@ make
 rm -fr $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 
-%post
-ldconfig
-
-%postun
-ldconfig
-
 %files
 %{_mandir}/man1/*.1.*
-#/usr/etc/rxstack
+/usr/etc/rxstack.conf
 %{_datadir}/%{name}
 %{_bindir}/rexx
 %{_bindir}/regina
@@ -64,7 +58,7 @@ ldconfig
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Oct 31 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.4
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.5
 - Rebuilt for Fedora
 * Mon Jan 02 2012 Mark Hessling
 - Vendor package

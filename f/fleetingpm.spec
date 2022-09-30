@@ -1,14 +1,15 @@
 Name:           fleetingpm
-Version:        2.7.1
-Release:        4.1
+Version:        2.9.0
+Release:        1
 License:        GPL-3.0
 Summary:        Fleeting Password Manager
 URL:            http://fleetingpm.sourceforge.net/
 Group:          Productivity/Security
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+#Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	FleetingPasswordManager-%{version}.tar.gz
 BuildRequires:  ghostscript-core ImageMagick
 BuildRequires:  hicolor-icon-theme
-BuildRequires:  gcc-c++ qt4-devel
+BuildRequires:  gcc-c++ qt5-qtbase-devel
 
 %description
 Fleeting Password Manager is a program that generates pseudo-random
@@ -20,18 +21,24 @@ URL/ID and the given user name and generates the corresponding login
 password.
 
 %prep
-%setup -q
+%setup -q -n FleetingPasswordManager-%{version}
 
 %build
-qmake-qt4 \
-    QMAKE_CFLAGS+="%{optflags}" \
-    QMAKE_CXXFLAGS+="%{optflags}" \
-    QMAKE_STRIP=""
-make %{?_smp_mflags}
+#qmake-qt5 %{name}.pro \
+#    QMAKE_CFLAGS+="%{optflags}" \
+#    QMAKE_CXXFLAGS+="%{optflags}" \
+#    QMAKE_STRIP=""
+#export LDFLAGS="-lQtCore"
+%cmake -DUseQt5=1
+%cmake_build
 
 %install
-make INSTALL_ROOT=$RPM_BUILD_ROOT install
-rm -f $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
+#cmake_install
+cd *-linux-build
+#make INSTALL_ROOT=$RPM_BUILD_ROOT install
+#rm -f $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
+install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
+install -Dm644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
 install -Dm 0644 data/icons/%{name}.png \
     $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/64x64/apps/%{name}.png
 install -Dm 0644 data/icons/%{name}.svg \
@@ -50,7 +57,7 @@ done
 %{_datadir}/icons/hicolor/*/*/%{name}.*
 
 %changelog
-* Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.1
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.0
 - Rebuilt for Fedora
 * Tue Mar  6 2012 lazy.kent@opensuse.org
 - Update to 2.7.1.

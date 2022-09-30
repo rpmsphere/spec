@@ -9,7 +9,7 @@ Source0:        xlogo-0.9.96pre-2012-06-27.tar.gz
 Source1:        xlogo.desktop
 Source2:        xlogo.png
 BuildRequires:  ant
-BuildRequires:  java-openjdk-devel lua
+BuildRequires:  java-11-openjdk-devel lua
 Requires:       java
 BuildArch:      noarch
 
@@ -24,6 +24,7 @@ possible.
 
 %prep
 %setup -q -n xlogo-0.9.96pre-2012-06-27
+sed -i 's|1\.5|1.7|' build.xml
 
 %build
 %ant -DsignJar=false -DbuildSrc=false -Dplatform=linux deploy

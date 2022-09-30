@@ -1,8 +1,8 @@
 Summary: Build rpm package from installed files
 Summary(fr): fabrique un rpm à partie de fichiers
 Name: rpmerizor
-Version: 2.10
-Release: 3.1
+Version: 2.11
+Release: 1
 Group: Applications/System
 License: GPL
 Source: http://sourceforge.net/projects/rpmerizor/files/%{version}/%{name}-%{version}.tar.gz
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/rpmerizorc
 
 %changelog
-* Wed Aug 10 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.10
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.11
 - Rebuilt for Fedora
 * Fri Dec 2 2011 Eric Gerbier <gerbier@users.sourceforge.net> 2.6
 - split dist and sign target (Makefile)

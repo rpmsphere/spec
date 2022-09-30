@@ -12,7 +12,7 @@ BuildArch:      noarch
 Requires:       java
 BuildRequires:  unzip
 BuildRequires:  chkconfig
-BuildRequires:  java-devel
+BuildRequires:  java-devel-openjdk
 BuildRequires:  ant
 BuildRequires:	desktop-file-utils
 Source0:        %{_name}-1.3.1-source.zip
@@ -31,6 +31,7 @@ Author(s):
 
 %prep
 %setup -q -n %{_name}-%{version}
+sed -i 's|="5"|="7"|g' build.xml
 
 %build
 %ant dist-bin

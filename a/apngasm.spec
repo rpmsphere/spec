@@ -22,10 +22,7 @@ Creates highly optimized Animated PNG files from PNG/TGA image sequences.
 make
 
 %install
-mkdir -p %{buildroot}%{_bindir}/%{name}
-mkdir -p %{buildroot}%{_docdir}/%{name}
-install -m 0755 %{name} %{buildroot}%{_bindir}/%{name}
-install -m 0644 readme.txt %{buildroot}%{_docdir}/%{name}/readme.txt
+install -Dm 0755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %files 
 %doc readme.txt 

@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+
 Name:			cgmadness
 Summary:		Based on the classic game Marble Madness
 Version:		1.2.2
@@ -23,8 +24,8 @@ Author: Sven Reinck <sreinck@gmx.de>
 %prep
 %setup -q -n %{name}
 # ifneq ($(findstring linux-gnu,$(MACHINE)),) ... won't work
-sed -i -e 's|-lm|-lm -lglut -lGL -lGLEW -lGLU|g' -e 's|-Werror||' \
-	Makefile
+sed -i -e 's|-lm|-lm -lglut -lGL -lGLEW -lGLU|g' -e 's|-Werror||' Makefile
+sed -i '27i #include <cstddef>' process/MainProcess.cpp
 
 %build
 %__make %{?jobs:-j%{jobs}}
@@ -96,7 +97,7 @@ EOF
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.2
 - Rebuilt for Fedora
-* Wed Jun  5 2011 Chris lin <chris.lin@ossii.com.tw> - 1.2.2.-0.2.ossii
+* Wed Jun  8 2011 Chris lin <chris.lin@ossii.com.tw> - 1.2.2.-0.2.ossii
 - Add -lGLU
 * Fri Dec 31 2008 Feather Mountain <john@ossii.com.tw> - 1.2.2.-0.1.ossii
 - Rebuild for M6(OSSII)

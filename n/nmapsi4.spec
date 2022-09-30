@@ -25,12 +25,12 @@ of this powerful security net scanner.
 sed -i '42,43d' CMakeLists.txt
 
 %build
-%cmake --build build .
-make
+%cmake .
+%cmake_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make DESTDIR=$RPM_BUILD_ROOT install
+%cmake_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT

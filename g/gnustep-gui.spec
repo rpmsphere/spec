@@ -1,7 +1,6 @@
 Name:           gnustep-gui
-#Version:        0.24.1
-Version:        0.25.1
-Release:        4.1
+Version:        0.29.0
+Release:        1
 Summary:        The GNUstep GUI library
 License:        GPLv2+ and GPLv3+
 Group:          Development/Libraries
@@ -92,11 +91,15 @@ This package contains the documentation for %{name}
 
 %prep
 %setup -q
+#sed -i 's|TRUE|true|' Source/GSCharacterPanel.m
+#sed -i -e 's|GS_GC_HIDE (delegate)|delegate|' -e 's|GS_GC_UNHIDE *(_delegate)|_delegate|' -e 's|GS_GC_UNHIDE *(_currentDelegate)|_currentDelegate|' Source/NSAnimation.m
 
 %build
 %gnustep_configure
 %gnustep_make -n
 %gnustep_makedoc 
+#configure
+#make_build
 
 %install
 %gnustep_install -n
@@ -150,7 +153,7 @@ fi
 %doc Documentation/manual/LICENSE
 
 %changelog
-* Wed Jan 11 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.24.1
+* Sun Sep 4 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.29.0
 - Rebuilt for Fedora
 * Wed Feb 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.24.0-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild

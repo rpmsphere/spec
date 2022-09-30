@@ -9,9 +9,9 @@ Summary:	Core programs for the Equinox Desktop Environment
 URL: 		http://ede.sourceforge.net/
 License: 	GPL
 Group: 		Graphical desktop/Other
-BuildRequires: fltk13-devel
-BuildRequires: gcc-c++, jam, edelib-devel, libpng-devel, libjpeg-devel
-BuildRequires: python, libxkbfile-devel, libXext-devel, libXpm-devel
+BuildRequires:  fltk-devel, automake
+BuildRequires:  gcc-c++, jam, edelib-devel, libpng-devel, libjpeg-devel
+BuildRequires:  python, libxkbfile-devel, libXext-devel, libXpm-devel
 Requires: pekwm
 
 %description
@@ -30,7 +30,8 @@ course window manager that manages your windows with config utility.
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' doc/asciidoc/asciidoc.py
 
 %build
-sed -i -e 's|-lstdc++|"-lstdc++ -lm -ldl -lX11 -lXext -lpng16"|' -e 's|-Wall|-Wall -Wno-narrowing|' Jamconfig.in
+export SHARED=1
+sed -i -e 's|-lstdc++|"-lstdc++ -lm -ldl -lX11 -lXext -lpng16"|' -e 's|-Wall|-Wall -Wno-narrowing -std=gnu++11|' Jamconfig.in
 %configure
 make prefix=$RPM_BUILD_ROOT%{_prefix}
 

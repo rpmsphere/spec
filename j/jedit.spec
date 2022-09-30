@@ -11,7 +11,7 @@ BuildArch: noarch
 BuildRequires: ant
 #BuildRequires: apache-ivy
 BuildRequires: docbook-style-xsl
-BuildRequires: java-openjdk-devel lua
+BuildRequires: java-devel-openjdk lua
 BuildRequires: libxslt
 
 %description
@@ -34,6 +34,7 @@ Javadoc for jEdit.
 %prep
 %setup -q -n jEdit
 sed -i 's|compress="false"|compress="true"|' build.xml
+sed -i 's|value="1.5"|value="1.7"|' build.xml
 sed -i '/Cygwin detection/i \
 	<property name="config.docbook.xsl" \
 			  value="/usr/share/sgml/docbook/xsl-stylesheets" /> \
@@ -41,6 +42,7 @@ sed -i '/Cygwin detection/i \
 			  value="/etc/sgml/xml-docbook-4.4.cat" /> \
 	<property name="config.xsltproc.executable" \
 			  value="/usr/bin/xsltproc" />' build.xml
+sed -i 's|stop(new Abort());|new Abort();stop();|' org/gjt/sp/util/WorkThread.java
 
 %build
 %ant build

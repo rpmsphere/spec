@@ -4,10 +4,11 @@ Summary:	Openfire XMPP Server
 Name:		openfire
 Version:	4.1.2
 Release:	9.1
-BuildRequires: 	ant java-openjdk-devel lua
+BuildRequires: 	ant java-devel-openjdk lua
 Requires: 	java
 #Source0: 	http://www.igniterealtime.org/downloadServlet?filename=openfire/%{name}_src_4_1_2.tar.gz
 Source0:        %{name}_src_4_1_2.txz
+Source1:	https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar
 Group: 		Applications/Communications
 License: 	GPL
 URL: 		http://www.igniterealtime.org/
@@ -36,6 +37,8 @@ this package's base documentation.
 %patch0 -p1
 #patch1 -p0
 %patch2 -p0
+sed -i 's|"1\.9"|"17"|' build/build.xml
+cp %{SOURCE1} build/lib
 
 %build
 # Build Tasks

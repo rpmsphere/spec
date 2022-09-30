@@ -3,7 +3,7 @@
 Name: python2-pylibnet
 Summary: Python module for the libnet packet injection library
 Version: 3.0
-Release: 24.1
+Release: 2.1
 Group: Development/Libraries
 License: GPLv3
 URL: http://pylibnet.sourceforge.net/
@@ -23,6 +23,7 @@ all of the packet building functionality that is provided by libnet.
 sed -i -e 's|include_dir = None|include_dir = "%{_includedir}"|' -e 's|lib_dir = None|lib_dir = "%{_libdir}"|' -e 's|libnet.a|libnet.so|' setup.py
 sed -i 's|n_time|uint32_t|g' src/builders.c
 sed -i 's|3.0-beta-rc1|3.0beta-rc1|' setup.py PKG-INFO
+sed -i 's|version_nums\[2\]|3|' setup.py
 
 %build
 python2 setup.py build

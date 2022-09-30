@@ -21,15 +21,16 @@ for tracking network services performances (e.g. web server, application server,
 #sed -i 's|^inline ||' lib/libnids-1.21_patched/src/util.h lib/libnids-1.21_patched/src/checksum.c
 
 %build
-aclocal --force
-autoconf --force
-autoheader --force
-automake --add-missing
+#aclocal --force
+#autoconf --force
+#autoheader --force
+#automake --add-missing
 #libtoolize --copy --force
-#autoreconf
+#autoreconf -ifv
 #sed -i 's|boost_major_version=`.*`|boost_major_version=158|' configure
+cp -f /usr/share/automake-*/config.* .
 ./configure --with-boost-libdir=%{_libdir} --prefix=%{_prefix}
-make
+make CXXFLAGS+="-std=gnu++14"
 
 %install
 rm -rf $RPM_BUILD_ROOT

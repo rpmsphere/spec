@@ -9,7 +9,7 @@ Source0:	http://software.amiga-hardware.com/software/eleet-0.3.3.tar.bz2
 BuildRequires: libX11-devel libICE-devel libSM-devel
 BuildRequires: SDL-devel SDL_image-devel SDL_ttf-devel
 BuildRequires: mesa-libGL-devel mesa-libGLU-devel
-BuildRequires: gnome-screensaver
+#BuildRequires: gnome-screensaver
 BuildRequires: kdelibs qca2 udisks2
 
 %description
@@ -38,7 +38,7 @@ eleet as xscreensaver-hack
 
 %prep
 %setup -q
-%configure
+./configure --prefix=/usr
 
 %build
 make %{?_smp_mflags}

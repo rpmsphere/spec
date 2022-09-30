@@ -7,7 +7,7 @@ URL: http://code.google.com/p/gwrite/
 Source0: http://gwrite.googlecode.com/files/python-jswebkit-%{version}.tar.gz
 License: LGPL
 BuildRequires: python2-devel, Cython
-BuildRequires:  webkitgtk4-devel
+BuildRequires: webkitgtk4-devel
 
 %description
 python2-jswebkit is an cython wrapper for JSContextRef in pywebkitgtk,

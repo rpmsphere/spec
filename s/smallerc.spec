@@ -4,8 +4,8 @@
 
 Summary:	Simple C Compiler
 Name:		smallerc
-Version:	0100
-Release:	6.1
+Version:	1.0.1
+Release:	1
 License:	BSD-2
 Group:		Development/C
 URL:		https://github.com/alexfru/SmallerC
@@ -19,7 +19,8 @@ and C99 (minus some C89 and plus some C99 features).
 
 %prep
 %setup -q -n %{_name}-master
-sed -i -e 's|bindir = .*|bindir = %{_bindir}|' -e 's|libdir = .*|libdir = %{_libdir}/smlrc|' -e 's|incdir = .*|incdir = %{_includedir}/smlrc|' common.mk
+sed -i -e 's|bindir = .*|bindir = %{_bindir}|' -e 's|libdir = .*|libdir = %{_libdir}/smlrc|' -e 's|incdir = .*|incdir = %{_includedir}/smlrc|' -e 's|-Wall|-Wall -fPIE|' common.mk
+sed -i 's|/usr/local|/usr|' common.mk v0100/smlrcc.c
 
 %build
 ./configure
@@ -39,5 +40,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/smlrc
 
 %changelog
-* Thu Jul 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0100
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
 - Rebuilt for Fedora

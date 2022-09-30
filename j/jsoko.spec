@@ -1,13 +1,13 @@
 Name: jsoko
 Summary: The Sokoban game implemented in Java
-Version: 1.76
-Release: 4.1
+Version: 2.03
+Release: 1
 Group: Amusements/Games
 License: GPLv3
 URL: http://www.sokoban-online.de/
 Source0: http://sourceforge.net/projects/jsokoapplet/files/JSoko/Version%20%{version}/JSoko_%{version}-src.zip
 BuildRequires: ant
-BuildRequires: java-openjdk-devel lua
+BuildRequires: java-devel-openjdk lua
 BuildRequires: xml-commons-apis
 BuildArch: noarch
 Requires: jre
@@ -37,5 +37,5 @@ cp -a JSoko_%{version}/* %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
-* Thu Dec 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.76
+* Sun Sep 4 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.03
 - Rebuilt for Fedora

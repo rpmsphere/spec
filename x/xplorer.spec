@@ -1,3 +1,4 @@
+%global __os_install_post %{nil}
 %define		libname cxxx
 
 Name:		xplorer
@@ -45,11 +46,13 @@ C++X development package.
 
 %prep
 %setup -q
-sed -i 's|return mFile|return true|' cxxx/CImage.h
+sed -i 's|return mFile|return mFile.good()|' cxxx/CImage.h cxxx/CImage.cpp
+sed -i 's|return out|return out.good()|' cxxx/CImage.cpp
+sed -i 's|mStream != NULL|mStream.good()|' cxxx/CMagic.cpp
+sed -i -e 's|ok = o;|ok = o.good();|' -e 's|ok = o |o |' xplorer/CNewDialog.cpp
 sed -i '73s|static inline const|static const|' intlize/i5e.h
 
 %build
-export CXXFLAGS=-std=gnu++98
 touch NEWS ChangeLog
 autoreconf -ifv
 ./configure --prefix=/usr --libdir=%{_libdir}
@@ -61,10 +64,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %clean
 %{__rm} -rf $RPM_BUILD_ROOT
-
-%post -n %{libname} -p /sbin/ldconfig
-
-%postun -n %{libname} -p /sbin/ldconfig
 
 %files
 %doc AUTHORS COPYING INSTALL README

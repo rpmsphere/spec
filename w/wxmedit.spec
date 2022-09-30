@@ -6,8 +6,9 @@ Version: 3.1git
 Release: 1
 Source0: wxMEdit-master.zip
 URL: https://wxmedit.github.io/
+BuildRequires: gcc-c++ automake
 BuildRequires: boost-devel
-BuildRequires: wxGTK-devel
+BuildRequires: wxGTK2-devel
 BuildRequires: libicu-devel
 BuildRequires: libcurl-devel
 
@@ -19,8 +20,10 @@ wxMEdit is a fork of MadEdit with bug fixes and improvements.
 #sed -i -e 's|UnicodeString|icu::UnicodeString|g' -e 's|BreakIterator|icu::BreakIterator|g' src/xm/uutils.h src/dialog/wxm_enumeration_dialog.* src/wxm/wx_icu.h
 #sed -i 's|LocalUCharsetDetectorPointer|icu::LocalUCharsetDetectorPointer|g' src/xm/encdet.cpp
 #sed -i -e 's|boost/tr1|boost|' -e 's|std::tr1|std|' src/wxmedit/*.h src/dialog/*.cpp
+sed -i 's|FALSE|0|' src/xm/encoding/multibyte.cpp
 
 %build
+alternatives --set wx-config /usr/bin/wx-config-2.0
 %configure
 make
 

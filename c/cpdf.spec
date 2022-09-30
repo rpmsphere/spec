@@ -4,19 +4,26 @@ Name:           cpdf
 License:        GPLv3+
 Group:          Productivity/Office/Other
 Summary:        Lightweight pdf viewer
-Version:        0.8.4
-Release:        4.1
+Version:        0.8.5
+Release:        3
 Source:         %{name}-%{version}.tbz2
-BuildRequires:  qt-devel
-BuildRequires:  poppler-qt4-devel
-BuildRequires:  libstdc++-devel gcc-c++
+BuildRequires:  qt4-devel
+BuildRequires:  poppler-qt5-devel
+URL:            https://build.opensuse.org/package/show?package=cpdf&project=home%3Apashov_d
 
 %description
-Merrily see PDFs without abusing your RAM. A Qt excersise pdf viewer which
-features most basic features found in most other viewers.
+Merrily see PDFs without abusing your RAM. 
+
+A Qt excersise pdf viewer which 
+features most basic features 
+found in most other viewers. 
 	
 %prep
 %setup -q 
+sed -i 's|poppler/qt4|poppler/qt5|' %{name}.pro
+sed -i 's|poppler-qt4|poppler-qt5|' *.h %{name}.pro
+sed -i '/found = spage->search/i double pleft=place.left();double ptop=place.top();double pright=place.right();double pbottom=place.bottom();' bpage.cxx dcm.cxx
+sed -i 's|txt, place, Poppler|txt, pleft, ptop, pright, pbottom, Poppler|' bpage.cxx dcm.cxx
 
 %build
 qmake-qt4 prefix=%{_prefix} docspref=%{_defaultdocdir} cpdf.pro
@@ -24,7 +31,7 @@ qmake-qt4 prefix=%{_prefix} docspref=%{_defaultdocdir} cpdf.pro
 
 %install
 %__make INSTALL_ROOT=%{buildroot} install
-sed -i 's|/usr/share/icons/hicolor/64x64/apps/cpdf.png|cpdf|' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
+%__chmod +x %{buildroot}%{_datadir}/applications/cpdf.desktop
 
 %clean
 %__rm -rf %{buildroot}
@@ -33,10 +40,10 @@ sed -i 's|/usr/share/icons/hicolor/64x64/apps/cpdf.png|cpdf|' $RPM_BUILD_ROOT%{_
 %{_bindir}/cpdf
 %{_datadir}/applications/cpdf.desktop
 %{_defaultdocdir}/cpdf
-%{_datadir}/icons/hicolor/*/*
+%{_datadir}/icons/hicolor
 
 %changelog
-* Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.4
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.5
 - Rebuilt for Fedora
 * Tue Feb  8 2011 d.pashov@gmail.com
 -The caching broke the auto-reloading. fixed now.

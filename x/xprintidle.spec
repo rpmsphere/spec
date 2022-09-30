@@ -3,7 +3,7 @@
 
 Name:           xprintidle
 Version:        0.2.4
-Release:        1
+Release:        2
 Summary:        Utility to print user's idle time in X
 License:        GPL-2.0
 Group:          System/X11/Utilities
@@ -23,7 +23,7 @@ prints it to stdout (in milliseconds).
 %setup -q
 
 %build
-gcc -O2 -o %{name} -c %{name}.c -lXss -lX11 -lXext
+gcc -g -O2 -o %{name} %{name}.c -lXss -lX11 -lXext
 
 %install
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
@@ -35,7 +35,7 @@ install -Dm644 %{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 %{_mandir}/man1/%{name}.1*
 
 %changelog
-* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
+* Sun Aug 14 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
 - Rebuilt for Fedora
 * Thu Jul  7 2016 sor.alexei@meowr.ru
 - Initial package

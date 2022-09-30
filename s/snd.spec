@@ -1,5 +1,5 @@
 Name:		snd
-Version:	22.3
+Version:	22.7
 Release:	1
 Summary:	Sound file editor
 License:	BSD
@@ -16,14 +16,14 @@ BuildRequires:	ladspa-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(libpulse)
 BuildRequires:	pkgconfig(jack)
-BuildRequires:	pkgconfig(portaudio-2.0)
+#BuildRequires:	pkgconfig(portaudio-2.0)
 BuildRequires:	pkgconfig(samplerate)
 # GUI stuff
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(gsl) >= 1.0
-BuildRequires:	pkgconfig(gtk+-3.0)
+#BuildRequires:	pkgconfig(gtk+-3.0)
 # Encoders & Co.
 Requires:	flac
 Requires:	mpg123
@@ -48,7 +48,7 @@ sorely-missed PDP-10 sound editor named Dpysnd.
 
 %prep
 %setup -q
-sed -i 's|^LIBS = |LIBS = -lportaudio |' makefile.in
+#sed -i 's|^LIBS = |LIBS = -lportaudio |' makefile.in
 chmod 0644 s7.c
 
 %build
@@ -57,12 +57,11 @@ chmod 0644 s7.c
 	--with-gmp \
 	--with-fftw \
 	--with-alsa \
-	--with-pulseaudio \
-	--with-portaudio \
+	--without-pulseaudio \
+	--without-portaudio \
 	--with-jack \
 	--with-ladspa \
-	--with-gtk \
-	--with-gui
+	--without-gui
 
 %make_build
 
@@ -77,7 +76,7 @@ install -m 0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/
 chmod +x %{buildroot}%{_datadir}/%{name}/grani.rb
 
 %changelog
-* Sun Apr 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 22.3
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 22.7
 - Rebuilt for Fedora
 * Thu Feb 20 2020 umeabot <umeabot> 20.1-2.mga8
 + Revision: 1547240

@@ -1,12 +1,12 @@
 Name: jwasm
-Version: 2.13
-Release: 6.1
+Version: 2.15
+Release: 1
 License: Sybase Open Watcom Public License
 Summary: MASM-compatible assembler
 URL: http://jwasm.github.io/
 Group: Development/Languages
 Source: JWasm-%{version}.tar.gz
-Patch: jwasm-undef.patch
+Patch0: jwasm-undef.patch
 Patch1: jwasm-bof.patch
 BuildRequires: dos2unix unzip
 
@@ -27,27 +27,27 @@ Wasm source lines still contained in JWasm is approximately 0.2
 
 %prep
 %setup -q -n JWasm-%{version}
-%patch -p1
-%patch1 -p1
-sed -i '/instruction table/a#include "expreval.h"' H/parser.h
+#patch0 -p1
+#patch1 -p1
+#sed -i '/instruction table/a#include "expreval.h"' H/parser.h
 
 %build
-dos2unix *.txt Doc/*
+dos2unix *.txt
 %ifarch x86_64 aarch64
 IS_64=-DLONG_IS_64BITS
 %endif
-make DEBUG=1 extra_c_flags="%optflags -DDEBUG_OUT -fno-strict-aliasing $IS_64" -f GccUnix.mak GccUnixD GccUnixD/omfint.o
+#make DEBUG=1 extra_c_flags="%optflags -DDEBUG_OUT -fno-strict-aliasing $IS_64" -f GccUnix.mak GccUnixD GccUnixD/omfint.o
 %make_build DEBUG=1 extra_c_flags="%optflags -DDEBUG_OUT $IS_64" -f GccUnix.mak
 
 %install
-install -D GccUnixD/jwasm %buildroot%_bindir/jwasm
+install -D build/GccUnixD/jwasm %buildroot%_bindir/jwasm
 
 %files
-%doc *.txt Doc/*
+%doc *.txt *.md
 %_bindir/%name
 
 %changelog
-* Wed Oct 31 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.13
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.15
 - Rebuilt for Fedora
 * Wed Nov 30 2016 Fr. Br. George <george@altlinux.ru> 2.12-alt1
 - Update to GH current version

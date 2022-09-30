@@ -3,13 +3,12 @@ Summary:      Seed7 Programming Language
 URL:          http://seed7.sourceforge.net/
 Group:        Development/Language
 License:      LGPL
-Version:      05.20220410
+Version:      05.20220724
 Release:      1
 Source0:      http://downloads.sourceforge.net/project/seed7/seed7/seed7_%(echo %{version}|tr . _)/seed7_%(echo %{version}|tr . _).tgz
 BuildRequires: libX11-devel
 BuildRequires: ncurses-devel
-#BuildRequires: postgresql-server-devel
-BuildRequires: libpq-devel
+BuildRequires: postgresql-private-devel
 BuildRequires: firebird-devel
 BuildRequires: mariadb-devel
 Requires: libX11, ncurses, gcc, glibc-devel
@@ -54,5 +53,5 @@ install -m 644 bin/*.a $RPM_BUILD_ROOT%{_libdir}/seed7/bin
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 05.20220410
+* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 05.20220724
 - Rebuilt for Fedora

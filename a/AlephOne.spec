@@ -33,7 +33,7 @@ alephone "~/Marathon Infinity"
 
 %build
 %configure --disable-speex
-sed -i 's|-fexceptions|-fexceptions -fpermissive|' Makefile */Makefile */*/Makefile */*/*/Makefile
+sed -i 's|-fexceptions|-fexceptions -fpermissive -std=gnu++14|' Makefile */Makefile */*/Makefile */*/*/Makefile
 make
 
 %install

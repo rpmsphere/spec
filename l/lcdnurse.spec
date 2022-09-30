@@ -8,7 +8,7 @@ Group: Applications/Tools
 License: GPLv3
 URL: http://congelli.eu/prog_info_lcdnurse.html
 Source0: http://congelli.eu/download/lcdnurse/%{name}-%{version}.tar.gz
-BuildRequires: wxGTK-devel
+BuildRequires: wxGTK2-devel
 
 %description
 Repair dead pixels is now possible on Linux (GNU/Linux) ! LCD Nurse is a free
@@ -17,10 +17,11 @@ the blink method.
 
 %prep
 %setup -q
+sed -i '31,35d' src/findFile.cpp
 
 %build
 %configure
-make %{?_smp_mflags} CXXFLAGS+="-fPIC"
+make %{?_smp_mflags} CXXFLAGS+="-fPIC -fPIE"
 
 %install
 %make_install

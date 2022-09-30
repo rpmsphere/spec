@@ -25,6 +25,7 @@ opponent.
 
 %build
 xmkmf
+sed -i 's|clq|cq|' */Makefile
 make
 
 %install

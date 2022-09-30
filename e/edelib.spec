@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name: 		edelib
-Version:    2.0
+Version:        2.0
 #Version: 	2.1
 Release: 	52.1
 Source: 	http://sourceforge.net/projects/ede/files/%{name}/%{version}/%{name}-%{version}.tar.gz
@@ -39,21 +39,38 @@ to develop programs that use the edelib libraries.
 sed -i -e 3597d -e 3600d configure
 
 %build
-export LIBS="-lX11"
-./configure --prefix=$RPM_BUILD_ROOT/usr --libdir=$RPM_BUILD_ROOT%{_libdir}
+#./configure --prefix=$RPM_BUILD_ROOT/usr --libdir=$RPM_BUILD_ROOT%{_libdir}
+./configure --prefix=/usr --libdir=%{_libdir}
 sed -i 's|%{buildroot}||' *.pc edelib/edelib-config.h
+sed -i -e 's|-lXpm|-lX11 -lXpm|' -e 's|SHARED ?= "0"|SHARED ?= "1"|' Jamconfig
 jam
 
 %install
-jam install
+#jam install
+mkdir -p %{buildroot}%{_includedir}
+cp -a edelib %{buildroot}%{_includedir}
+mkdir -p %{buildroot}%{_libdir}/pkgconfig
+install -m644 *.pc %{buildroot}%{_libdir}/pkgconfig 
+cp -a lib/libedelib*.so* %{buildroot}%{_libdir} 
+mkdir -p %{buildroot}%{_libdir}/edelib/sslib
+install -m644 sslib/* %{buildroot}%{_libdir}/edelib/sslib
+mkdir -p %{buildroot}%{_bindir}
+install -m755 tools/edelib-catchsegv %{buildroot}%{_bindir}
+install -m755 tools/edelib-convert-icontheme %{buildroot}%{_bindir}
+install -m755 tools/edelib-mk-indextheme %{buildroot}%{_bindir}
+install -m755 tools/edelib-script/edelib-script %{buildroot}%{_bindir}
+install -m755 tools/edelib-dbus-introspect/edelib-dbus-introspect %{buildroot}%{_bindir}
+install -m755 tools/edelib-update-font-cache/edelib-update-font-cache %{buildroot}%{_bindir}
+
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
 %files
-%{_libdir}/lib*
+%doc README COPYING ChangeLog
+%{_libdir}/lib*.so.*
 %{_libdir}/edelib
 
 %files devel
-%{_datadir}/doc/edelib-*
+%{_libdir}/lib*.so
 %{_libdir}/pkgconfig/edelib*.pc
 %{_includedir}/*
 %{_bindir}/edelib-*

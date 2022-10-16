@@ -30,5 +30,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
-* Sun May 15 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 36
+* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 36
 - Rebuilt for Fedora

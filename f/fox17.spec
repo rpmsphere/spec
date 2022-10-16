@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           fox17
-Version:        1.7.77
+Version:        1.7.80
 Release:        1
 License:        LGPL-3.0+
 Summary:        Shared Libraries for the FOX Toolkit
@@ -14,7 +14,7 @@ Source3:        adie.png
 Source5:        adie.desktop
 Source6:        calculator.desktop
 Source7:        pathfinder.desktop
-BuildRequires:  autoconf >= 2.62
+BuildRequires:  autoconf
 BuildRequires:  bzip2
 BuildRequires:  cups-devel
 BuildRequires:  doxygen
@@ -162,8 +162,8 @@ test -f %{_mandir}/man1/reswrap.1.gz || ln -s reswrap17.1.gz %{_mandir}/man1/res
 %{_bindir}/fox-config
 %{_includedir}/fox-*/
 %{_libdir}/pkgconfig/fox*.pc
-%{_libdir}/libCHART-*.la
-%{_libdir}/libFOX-*.la
+#{_libdir}/libCHART-*.la
+#{_libdir}/libFOX-*.la
 %{_libdir}/libFOX-*.so
 %{_libdir}/libCHART-*.so
 
@@ -191,7 +191,7 @@ test -f %{_mandir}/man1/reswrap.1.gz || ln -s reswrap17.1.gz %{_mandir}/man1/res
 %{_mandir}/man1/ControlPanel.1*
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.77
+* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.80
 - Rebuilt for Fedora
 * Mon Dec 15 2014 lars@linux-schulserver.de
 - the -devel-static package must require the -devel-package,

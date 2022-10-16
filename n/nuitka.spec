@@ -1,6 +1,6 @@
 %undefine _debugsource_packages
 Name: nuitka
-Version: 1.0.8
+Version: 1.1.2
 Release: 1
 Summary: Python compiler with full language support and CPython compatibility
 License: ASLv2.0
@@ -8,7 +8,7 @@ Group: Development/Python
 URL: https://pypi.python.org/pypi/Nuitka/
 Source: http://nuitka.net/releases/Nuitka-%version.tar.gz
 BuildArch: noarch
-BuildRequires: python2-devel python2-setuptools
+BuildRequires: python3-devel python3-setuptools
 
 %description
 Nuitka is **the** Python compiler. It is a seamless replacement or
@@ -29,18 +29,18 @@ messages are given.
 %setup -q -n Nuitka-%version
 
 %build
-%py2_build
+%py3_build
 
 %install
-%py2_install
+%py3_install
 
 %files
 %doc *.rst
 %{_bindir}/*
-%{python2_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
+* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
 - Rebuilt for Fedora
 * Fri Feb 02 2018 Stanislav Levin <slev@altlinux.org> 0.5.11-alt1.git20150318.1.1
 - (NMU) Fix Requires and BuildRequires to python-setuptools

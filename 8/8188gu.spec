@@ -2,7 +2,7 @@
 %global kversion %(uname -r)
 
 Name:    8188gu
-Version: 2021
+Version: 2022.08.24
 Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
@@ -47,5 +47,5 @@ rm -rf %{buildroot}
 /lib/modules/%{kversion}/kernel/drivers/net/wireless/8188gu.ko
 
 %changelog
-* Sun Jul 18 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021
+* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.08.24
 - Rebuilt for Fedora

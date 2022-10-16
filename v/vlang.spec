@@ -1,6 +1,6 @@
 %undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
-%global weekly 2022.39
+%global weekly 2022.40
 
 Summary: The V Programming Language
 Name: vlang
@@ -20,23 +20,24 @@ Compiles itself in <1s with zero library dependencies.
 %setup -q -n v-weekly.%{weekly}
 #sed -i 's|byte{}|u8{}|' vlib/builtin/builtin_nix.c.v vlib/builtin/int.v vlib/strings/builder.c.v vlib/strconv/format_mem.c.v vlib/strconv/utilities.c.v vlib/os/os.c.v vlib/os/os_nix.c.v vlib/v/util/version/version.v
 #sed -i '/type u8 = byte/d' vlib/builtin/int.v
+sed -i 's|/usr/bin/env -S v|/usr/bin/v|' vlib/v/tests/script_with_no_extension
 
 %build
 make
 
 %install
 mkdir -p %{buildroot}%{_bindir} %{buildroot}%{_libexecdir}/%{name}
-cp -a v cmd vlib %{buildroot}%{_libexecdir}/%{name}
-ln -s ../libexec/vlang/v %{buildroot}%{_bindir}/%{name}
+cp -a v v.mod cmd vlib thirdparty %{buildroot}%{_libexecdir}/%{name}
+ln -s ../libexec/vlang/v %{buildroot}%{_bindir}/v
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
-%doc doc/* LICENSE *.md
-%{_bindir}/%{name}
+%doc doc/* LICENSE *.md examples
+%{_bindir}/v
 %{_libexecdir}/%{name}
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2022.39
+* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2022.40
 - Rebuilt for Fedora

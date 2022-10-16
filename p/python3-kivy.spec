@@ -1,14 +1,13 @@
-Name:           python-kivy
-Version:        1.10.0git
-Release:        1.1
+Name:           python3-kivy
+Version:        2.1.0
+Release:        1
 URL:            http://kivy.org/
 Summary:        Hardware-accelerated multitouch application library
 License:        LGPL-3.0
 Group:          Development/Languages/Python
-Source:         Kivy-%{version}.tar.gz
+Source:         https://github.com/kivy/kivy/releases/download/%{version}/Kivy-%{version}.tar.gz
 BuildRequires:  mesa-libGL-devel
 BuildRequires:  python3-Cython
-#BuildRequires:  python2-sphinx environment-modules
 BuildRequires:  python3-devel
 BuildRequires:  gstreamer1-devel SDL2_ttf-devel SDL2_image-devel SDL2_mixer-devel git
 Requires:       mtdev
@@ -53,7 +52,7 @@ python3 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 %{_datadir}/kivy-examples
 
 %changelog
-* Thu Feb 22 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10.0git
+* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
 - Rebuilt for Fedora
 * Mon Dec 17 2012 saschpe@suse.de
 - Update to version 1.5.1:

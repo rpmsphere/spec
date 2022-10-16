@@ -5,7 +5,7 @@ Summary:      Free stock market software
 URL:          http://jstock.org/
 Group:        Applications/Productivity
 License:      GPL
-Version:      1.0.7.17
+Version:      1.0.7.59
 Release:      1.bin
 Source0:      https://github.com/yccheok/jstock/releases/download/release_%(echo %version | tr . -)/%{name}-%{version}-bin.zip
 Source1:      %{name}.png
@@ -74,5 +74,5 @@ EOF
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Mon Dec 12 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.7.17
-- Initial binary package
+* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.7.59
+- Rebuilt for Fedora

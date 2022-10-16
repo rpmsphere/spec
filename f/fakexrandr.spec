@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name:           fakexrandr
-Version:        0.20160627
-Release:        5.1
+Version:        0.20211207
+Release:        1
 URL:            https://github.com/phillipberndt/fakexrandr
 Summary:        Fake XRandR configurations for multi-head setups
 License:        GPLv3
@@ -11,7 +11,7 @@ Source:         https://codeload.github.com/phillipberndt/fakexrandr/zip/master#
 BuildRequires:  python2
 BuildRequires:  libXrandr-devel
 BuildRequires:  libXinerama-devel
-BuildRequires:  xorg-x11-server-utils
+BuildRequires:  xorg-x11-server-devel
 Requires:       filesystem-local
 
 %description
@@ -41,11 +41,12 @@ make
 
 %install
 rm -rf %{buildroot}
-install -Dm755 libXrandr.so %{buildroot}/usr/local/%{_lib}/libXrandr.so.2.2.0
-ln -s libXrandr.so.2.2.0 %{buildroot}/usr/local/%{_lib}/libXrandr.so.2
+install -Dm755 libXrandr.so %{buildroot}/usr/local/%{_lib}/libXrandr.so
+#install -Dm755 libXrandr.so %{buildroot}/usr/local/%{_lib}/libXrandr.so.2.2.0
+#ln -s libXrandr.so.2.2.0 %{buildroot}/usr/local/%{_lib}/libXrandr.so.2
 install -Dm755 fakexrandr-manage.py %{buildroot}%{_bindir}/fakexrandr-manage
 
-sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
+sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}*
 
 %clean
 rm -rf %{buildroot}
@@ -53,12 +54,8 @@ rm -rf %{buildroot}
 %files
 %doc README.md
 %{_bindir}/fakexrandr-manage
-/usr/local/%{_lib}/libXrandr.so.2*
-
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
+/usr/local/%{_lib}/libXrandr.so*
 
 %changelog
-* Wed Nov 02 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20160627
-- Rebuilt for Fedora
+* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20211207
+- Rebuild for Fedora

@@ -1,7 +1,7 @@
 %define tar_ver	%(echo %{version}|sed -e 's/\\./\\-/g')
 
 Name:		tkdiff
-Version:	5.5.2
+Version:	5.5.3
 Release:	1
 Summary:	A tcl/tk based graphical interface to the DIFF utility
 License:	GPLv2
@@ -53,7 +53,7 @@ install -m 0644 %{SOURCE3} %{buildroot}%{_mandir}/man1/%{name}.1
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Sun Aug 28 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.5.2
+* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.5.3
 - Rebuilt for Fedora
 * Mon Mar 21 2022 umeabot <umeabot> 5.2.1-2.mga9
 + Revision: 1814269

@@ -5,7 +5,8 @@ Release: 1
 Group: Development/Language
 License: MPL-2.0
 URL: https://github.com/crack-lang/crack
-Source0: http://crack-lang.org/downloads/crack-%{version}.tar.gz
+#Source0: http://crack-lang.org/downloads/crack-%{version}.tar.gz
+Source0: https://github.com/crack-lang/crack/archive/refs/tags/rel-1.6.tar.gz#/crack-rel-%{version}.tar.gz
 BuildRequires: cmake
 BuildRequires: gtk2-devel pcre-devel SDL-devel cairo-devel libcurl-devel
 #BuildRequires: llvm-devel
@@ -33,18 +34,19 @@ Requires: %{name}
 Header files and Libraries for the package Crack.
 
 %prep
-%setup -q -n crack-%{version}
-sed -i 's| jit||' configure m4/llvm.m4 cmake/modules/FindLLVM.cmake
+%setup -q -n crack-rel-%{version}
+sed -i 's| jit||' m4/llvm.m4 cmake/modules/FindLLVM.cmake
 #sed -i '2452s|errors, 0|errors|' builder/llvm/LLVMBuilder.cc
 sed -i '/JITExceptionHandling/d' builder/llvm/LLVMJitBuilder.cc
 sed -i 's|PathV1.h|Path.h|' builder/llvm/Native.cc
-##sed -i '39s|src.read(\&ch, 1)|bool(src.read(\&ch, 1))|' parser/Toker.cc
+#sed -i '39s|src.read(\&ch, 1)|bool(src.read(\&ch, 1))|' parser/Toker.cc
 #sed -i '/OwningPtr.h/d' builder/llvm/LLVMBuilder.h
 #sed -i 's|<llvm/|<llvm/IR/|' builder/llvm/DebugInfo.h builder/llvm/BTypeDef.h
 
 %build
 autoheader
-%cmake -DCMAKE_CXX_FLAGS="-fpermissive -I/usr/include/llvm34"
+#cmake -DCMAKE_CXX_FLAGS="-fpermissive -I/usr/include/llvm34"
+cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_CXX_FLAGS="-fpermissive -I/usr/include/llvm34"
 make
 
 %install
@@ -64,5 +66,5 @@ make install DESTDIR=%{buildroot}
 %{_libdir}/lib*.so
 
 %changelog
-* Mon Jan 20 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6
-- Rebuilt for Fedora
+* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6
+- Rebuild for Fedora

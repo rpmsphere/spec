@@ -1,19 +1,20 @@
 %undefine _debugsource_packages
 Name:           aoi
-Version:        2.9.2
-Release:        13.1
+Version:        3.2.0
+Release:        1
 Summary:        3D modeling and rendering studio Written in Java
 URL:            http://www.artofillusion.org
 Group:          Graphics/3D
-Source0:        %{name}src292.zip
+Source0:        https://sourceforge.net/projects/aoi/files/ArtOfIllusion-source/3.2/ArtOfIllusion-3.2.0.zip
 Source1:        jmf-2_1_1e-alljava.zip
 Patch1:         aoi-2.8.1-mga-encoding.patch
 License:        GPLv2+
 BuildArch:      noarch
-BuildRequires:  java-openjdk-devel lua
+BuildRequires:  java-devel-openjdk
+BuildRequires:  lua
 BuildRequires:  ant
 #BuildRequires:  ant-nodeps
-BuildRequires:  jogl2
+#BuildRequires:  jogl2
 BuildRequires:  bsh
 #BuildRequires:  jama
 BuildRequires:  dos2unix
@@ -30,7 +31,7 @@ skeleton based animation, and a graphical language
 for designing procedural textures and materials.
 
 %files
-%doc LICENSE HISTORY README-source
+%doc *.md
 %attr(755,root,root) %{_bindir}/%{name}
 %attr(644,root,root) %{_datadir}/%{name}/ArtOfIllusion.jar
 %attr(755,root,root) %{_datadir}/%{name}/Plugins
@@ -38,10 +39,10 @@ for designing procedural textures and materials.
 %attr(644,root,root) %{_datadir}/pixmaps/%{name}.png
 
 %prep
-%setup -q -a1 -n AoIsrc292
+%setup -q -a1 -n ArtOfIllusion-%{version}
 # We only use this jar for build, not inclued in %%files.
 mv JMF-2.1.1e/lib/jmf.jar .
-%patch1 -p1 -b .aoi-2.8.1-mga-encoding.patch
+#patch1 -p1 -b .aoi-2.8.1-mga-encoding.patch
 
 %build
 export CLASSPATH="."
@@ -50,7 +51,7 @@ export CLASSPATH="."
 %install
 # Installs the jar
 %__install -dm 755 %{buildroot}%{_datadir}/%{name}/Plugins
-%__install -m 644 ArtOfIllusion.jar %{buildroot}%{_datadir}/%{name}
+%__install -m 644 Live_Application/ArtOfIllusion.jar %{buildroot}%{_datadir}/%{name}
 
 # Install the script
 cat > %{name} <<EOF
@@ -62,13 +63,12 @@ EOF
 %__install -m 755 %{name} %{buildroot}%{_bindir}
 
 # convert win32 EOL to unix EOL
-dos2unix LICENSE
-dos2unix HISTORY
-dos2unix README-source
+dos2unix License.md
+dos2unix Readme.md
 
 # icons
 %__install -d -m755 %{buildroot}%{_datadir}/pixmaps
-%__install -m 644 HelpPlugin/AOIHelp/helpset/Overview/images/%{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
+%__install -m 644 InstallerSrc/%{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 # desktopfile
 %__install -d -m755 %{buildroot}%{_datadir}/applications
@@ -85,7 +85,7 @@ Categories=Graphics;
 EOF
 
 %changelog
-* Sat Apr 20 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.2
+* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.0
 - Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 2.8.1-4.mga3
 + Revision: 345626

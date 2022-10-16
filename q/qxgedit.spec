@@ -1,6 +1,6 @@
 Summary:	Qt XG Editor
 Name:		qxgedit
-Version:	0.9.6
+Version:	0.9.7
 Release:	1
 License:	GPL-2.0+
 Group:		Productivity/Multimedia/Sound/Midi
@@ -42,7 +42,7 @@ rm -rf %{buildroot}
 %{_mandir}/*/man1/%{name}*.1.*
 
 %changelog
-* Sun Apr 3 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.6
+* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.7
 - Rebuilt for Fedora
 * Mon Sep 21 2015 Rui Nuno Capela <rncbc@rncbc.org> 0.3.0
 - Summer'15 release frenzy.

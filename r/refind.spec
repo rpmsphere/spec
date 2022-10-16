@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name: refind
-Version: 0.12.0
+Version: 0.13.3.1
 Release: 1
 Summary: EFI boot manager software
 License: GPLv3
@@ -152,7 +152,7 @@ fi
 # wiping out the just-updated files.
 
 %changelog
-* Mon Aug 10 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.0
+* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.3.1
 - Rebuilt for Fedora
 * Sun Jul 6 2014 R Smith <rodsmith@rodsbooks.com> - 0.8.3
 - Updated spec file for 0.8.3

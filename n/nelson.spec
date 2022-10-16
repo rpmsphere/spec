@@ -48,8 +48,8 @@ for i in %{name}-*i; do
   ln -s %{_libexecdir}/Nelson-%{version}/bin/linux/$i %{buildroot}%{_bindir}/$i
 done
 mkdir -p %{buildroot}%{_sysconfdir}/ld.so.conf.d
-echo %{_libexecdir}/Nelson-%{version}/bin/linux > %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}.conf
-echo %{_libdir}/openmpi/lib >> %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}.conf
+echo %{_libexecdir}/Nelson-%{version}/bin/linux > %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
+echo %{_libdir}/openmpi/lib >> %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
@@ -58,7 +58,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %doc LICENSE *.md
 %{_libexecdir}/*
 %{_bindir}/%{name}-*
-%{_sysconfdir}/ld.so.conf.d/%{name}.conf
+%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
 
 %changelog
 * Sun Aug 7 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.7

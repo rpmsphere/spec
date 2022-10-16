@@ -1,7 +1,7 @@
 Summary:	Multi-platform implementation of OpenCL 1.2 targeting CPUs
 Name:		freeocl
-Version:	0.3.6
-Release:	3.1
+Version:	0.3.6.20180107
+Release:	1
 License:	LGPL
 Group:		System/Libraries
 URL:		http://code.google.com/p/freeocl/
@@ -60,5 +60,5 @@ rm -rf %{buildroot}
 %{_includedir}/FreeOCL
 
 %changelog
-* Sun Dec 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.6
-- Rebuilt for Fedora
+* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.6.20180107
+- Rebuild for Fedora

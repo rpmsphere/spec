@@ -1,5 +1,5 @@
 Name:		execline
-Version:	2.8.0.0
+Version:	2.9.0.1
 Release:	1
 Summary:	A light non-interactive scripting language
 License:	BSD
@@ -23,6 +23,8 @@ Header files and libraries for the package %{name}.
 
 %prep
 %setup -q
+sed -i -e 's|waitn_posix(pids, n|wait_pid(*pids|' -e 's|tain |tain_t |' src/execline/wait.c
+sed -i -e 's|subgetopt localopt =|subgetopt_t localopt =|' -e 's|subgetopt l =|subgetopt_t l =|' src/*/*.c
 
 %build
 %configure --with-sysdeps=%{_libdir}/skalibs/sysdeps
@@ -31,8 +33,9 @@ make
 %install
 rm -rf %{buildroot}
 %make_install
-rm %{buildroot}%{_bindir}/cd %{buildroot}%{_bindir}/umask
-mv %{buildroot}%{_bindir}/wait %{buildroot}%{_bindir}/execline-wait
+mkdir -p %{buildroot}%{_libexecdir}/%{name}
+mv %{buildroot}%{_bindir}/* %{buildroot}%{_libexecdir}/%{name}
+mv %{buildroot}%{_libexecdir}/%{name}/%{name}b %{buildroot}%{_bindir}
 
 %clean
 rm -rf %{buildroot}
@@ -40,13 +43,14 @@ rm -rf %{buildroot}
 %files
 %doc NEWS AUTHORS README COPYING
 %{_bindir}/*
+%{_libexecdir}/%{name}
 
 %files devel
 %{_includedir}/%{name}
 %{_libdir}/lib%{name}.a
 
 %changelog
-* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.0.0
+* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.0.1
 - Rebuilt for Fedora
 * Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.08-4mdv2011.0
 + Revision: 618247

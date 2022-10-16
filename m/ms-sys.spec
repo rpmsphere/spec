@@ -1,6 +1,6 @@
 Summary: Create DOS/MS-compatible boot records
 Name: ms-sys
-Version: 2.7.0
+Version: 2.8.0
 Release: 1
 License: GPL
 Group: Applications/System
@@ -42,7 +42,7 @@ written.
 %{_bindir}/ms-sys
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.0
+* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.0
 - Rebuilt for Fedora
 * Wed Jan 26 2011 Dag Wieers <dag@wieers.com> - 2.2.1-1
 - Updated to release 2.2.1.

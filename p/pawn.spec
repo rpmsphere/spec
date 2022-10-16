@@ -2,11 +2,12 @@
 
 Summary: A tiny and fast embedded scripting language
 Name: pawn
-Version: 4.0.5749
+Version: 4.0.6131
 Release: 1
 License: Apache 2.0
 Group: Development/Languages
-Source: https://www.compuphase.com/%{name}/%{name}-%{version}.zip
+#Source: https://www.compuphase.com/%{name}/%{name}-%{version}.zip
+Source: %{name}-master.zip
 URL: https://www.compuphase.com/pawn/pawn.htm
 
 %description
@@ -18,7 +19,7 @@ footprint were essential design criteria for both the language and the
 abstract machine.
 
 %prep
-%setup -q -c
+%setup -q -n %{name}-master
 sed -i 's|/opt/Pawn|/usr|' compiler/sc1.c
 sed -i 's|path,"include"|path,"include/%{name}"|' compiler/sc1.c
 
@@ -33,8 +34,6 @@ install -d %{buildroot}%{_bindir}
 install -m755 *-linux-build/%{name}* *-linux-build/stategraph %{buildroot}%{_bindir}
 install -d %{buildroot}%{_includedir}/%{name}
 install -m644 include/* %{buildroot}%{_includedir}/%{name}
-#install -d %{buildroot}%{_includedir}
-#install -m644 include/* %{buildroot}%{_includedir}
 
 %files 
 %doc LICENSE NOTICE history.txt readme.txt
@@ -45,5 +44,5 @@ install -m644 include/* %{buildroot}%{_includedir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.5749
+* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.6131
 - Rebuilt for Fedora

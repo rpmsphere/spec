@@ -1,16 +1,19 @@
 %undefine _missing_build_ids_terminate_build
+%global tver 0.96
 
 Summary:        Speech Synthesis System
 Summary(de):    Sprachsynthese System
 Name:           mbrola
-Version:        302b
-Release:        1.16
+Version:        3.3
+Release:        1
 License:        see readme.txt
 Group:          Productivity/Text/Convertors
 URL:            https://github.com/numediart/MBROLA
-Source0:        mbrola.tar
-Source2:        txt2pho.zip
+Source0:        MBROLA-%{version}.tar.gz
+Source2:        https://github.com/GHPS/txt2pho/archive/%{tver}.tar.gz#/txt2pho-%{tver}.tar.gz
 Source3:        say
+Source4:        txt2phorc
+Patch0:         txt2pho-gcc11.patch
 BuildRequires:  glibc-devel
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
@@ -28,9 +31,14 @@ Für deutsche Sprachausgabe installieren Sie eines oder mehrere der
 mbrola-de Pakete.
 
 %prep
-%setup -qn MBROLA -a 0 -a 2
+%setup -qn MBROLA-%{version} -a 0 -a 2
+%patch0 -p1
+mkdir txt2pho-%{tver}/lib txt2pho-%{tver}/obj
+sed -i 's/SYNTH_VERSION.*/SYNTH_VERSION \"%{version}\"/' Misc/common.h
 
 %build
+make
+cd txt2pho-%{tver}
 make
 
 %install
@@ -39,19 +47,15 @@ make
 %{__mkdir_p} ${RPM_BUILD_ROOT}%{_datadir}/mbrola
 %{__install} -m 755 ./Bin/mbrola ${RPM_BUILD_ROOT}%{_bindir}/mbrola
 
-cat txt2pho/txt2phorc | sed -e "s/\/home\/tpo\/txt2pho\/data\//\/usr\/share\/mbrola\/data\//g" > ${RPM_BUILD_ROOT}/etc/txt2pho
-cd txt2pho
-%{__install} -m 755 txt2pho ${RPM_BUILD_ROOT}%{_bindir}/
-mv data ${RPM_BUILD_ROOT}%{_datadir}/mbrola/
-cd pipefilt
-g++ ${RPM_OPT_FLAGS} pipefilt.cc -o pipefilt
-%{__install} -m 755 pipefilt ${RPM_BUILD_ROOT}%{_bindir}/
-cd ../preproc/
-%{__make}
-%{__install} -m 755 preproc ${RPM_BUILD_ROOT}%{_bindir}/
-%{__install} -m 644 Rules.lst ${RPM_BUILD_ROOT}%{_datadir}/mbrola/
-%{__install} -m 644 Hadifix.abk ${RPM_BUILD_ROOT}%{_datadir}/mbrola/
-%{__install} -m 755 %{SOURCE3} ${RPM_BUILD_ROOT}%{_bindir}/
+cd txt2pho-%{tver}
+install -m 755 txt2pho %{buildroot}%{_bindir}/
+cp -r data %{buildroot}%{_datadir}/mbrola/
+install -m 755 pipefilt %{buildroot}%{_bindir}/
+install -m 644 %{SOURCE4} %{buildroot}%{_sysconfdir}/txt2pho
+install -m 755 preproc %{buildroot}%{_bindir}/
+install -m 644 data/PPRules/rules.lst %{buildroot}%{_datadir}/mbrola/
+install -m 644 data/hadifix.abk %{buildroot}%{_datadir}/mbrola/
+install -m 755 %{SOURCE3} %{buildroot}%{_bindir}/
 
 %clean
 %{__rm} -rf ${RPM_BUILD_ROOT}
@@ -61,12 +65,10 @@ cd ../preproc/
 %license LICENSE
 %config(noreplace) /etc/txt2pho
 %{_bindir}/*
-%dir %{_datadir}/mbrola
-%dir %{_datadir}/mbrola/data
-%{_datadir}/mbrola/*
+%{_datadir}/mbrola
 
 %changelog
-* Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 302b
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3
 - Rebuilt for Fedora
 * Thu Jul 04 2019 Bernhard M. Wiedemann <bernhard+packman lsmod de>
 - build from source

@@ -1,5 +1,5 @@
 Name: 	 c-icap-modules
-Version: 0.5.3
+Version: 0.5.5
 Release: 1
 Epoch:	 1
 Summary: ICAP server modules
@@ -40,7 +40,7 @@ rm -f %buildroot%_libdir/c_icap/*.la
 %_bindir/c-icap-mods-sguardDB
 
 %changelog
-* Thu Aug 15 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.3
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.5
 - Rebuilt for Fedora
 * Sun Oct 08 2017 Andrey Cherepanov <cas@altlinux.org> 1:0.4.5-alt1
 - New version

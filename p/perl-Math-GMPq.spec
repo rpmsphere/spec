@@ -1,9 +1,8 @@
 %define upstream_name    Math-GMPq
-
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    0.47
+Version:    0.51
 Release:    1
 Summary:    Perl interface to the GMP library's rational (mpq) functions
 License:    GPL+ or Artistic
@@ -40,7 +39,7 @@ A perl interface to the GMP library's rational (mpq) functions.
 %exclude %{_libdir}/perl5/perllocal.pod
 
 %changelog
-* Sun Oct 03 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.47
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.51
 - Rebuilt for Fedora
 * Mon Sep 27 2021 tv <tv> 0.470.0-1.mga9
 + Revision: 1746678

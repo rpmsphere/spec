@@ -1,6 +1,6 @@
 Summary: GNU Mailutils
 Name: mailutils
-Version: 3.13
+Version: 3.15
 Release: 1
 License: GPLv3+ and LGPLv3+
 Source: ftp://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
@@ -131,7 +131,8 @@ The GNU MH (Message Handling System).
 %setup -q
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" %configure --prefix=%{_prefix} \
+#CFLAGS="$RPM_OPT_FLAGS"
+%configure --prefix=%{_prefix} \
 			--with-guiledir=%{_datadir}/guile/site \
 			--with-pythondir=%{python2_sitelib} \
 			--with-gsasl --with-gdbm --with-mysql
@@ -232,5 +233,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/emacs/site-lisp/*
 
 %changelog
-* Sun Dec 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.13
+* Sun Oct 23 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.15
 - Rebuilt for Fedora

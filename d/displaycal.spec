@@ -2,8 +2,8 @@
 %define up_name	DisplayCAL
 
 Name:		displaycal
-Version:	3.6.0.0
-Release:	3.1
+Version:	3.8.9.3
+Release:	1
 Summary:	A graphical user interface for the Argyll CMS display calibration utilities
 Group: 		Graphics/Utilities
 License:	GPLv3
@@ -58,7 +58,7 @@ color management system.
 %py2_install -- --no-compile --prefix=%{_prefix} --skip-postinstall
 
 %changelog
-* Tue Jun 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6.0.0
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.9.3
 - Rebuilt for Fedora
 * Mon Apr 30 2018 daviddavid <daviddavid> 3.5.3.0-1.mga7
   (not released yet)

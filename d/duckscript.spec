@@ -2,7 +2,7 @@
 
 Summary: Simple, extendable and embeddable scripting language
 Name: duckscript
-Version: 0.8.15
+Version: 0.8.16
 Release: 1
 License: Apache 2.0
 Group: Development/Languages
@@ -33,5 +33,5 @@ install -m755 target/release/duck %{buildroot}%{_bindir}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.15
+* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.16
 - Rebuilt for Fedora

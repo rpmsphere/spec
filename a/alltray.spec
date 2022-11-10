@@ -1,10 +1,11 @@
 Name:           alltray
-Version:        0.71b
-Release:        18
+Version:        0.7.6dev
+Release:        0
 Summary:        Dock any application in the tray
 License:        GPLv2+
-URL:            http://alltray.trausch.us/
-Source0:        https://launchpad.net/alltray/old-maintenance/%{version}/+download/%{name}-%{version}.tar.gz
+URL:            https://github.com/bill-auger/alltray
+#Source0:        https://launchpad.net/alltray/old-maintenance/%{version}/+download/%{name}-%{version}.tar.gz
+Source0:	%{name}-master.zip
 BuildRequires:  gcc
 BuildRequires:  desktop-file-utils
 BuildRequires:  gtk2-devel
@@ -16,17 +17,18 @@ With AllTray you can dock any application without a native tray icon into the
 system tray. It works well with GNOME, KDE, XFCE 4, Fluxbox, and WindowMaker.
 
 %prep
-%setup -q
+%setup -q -n %{name}-master
 
 %build
 export CFLAGS="-Wl,--allow-multiple-definition -fPIC $RPM_OPT_FLAGS"
-%configure
+#configure
+./autogen.sh --prefix=/usr
 make %{?_smp_mflags}
 
 %install
 %make_install
 find $RPM_BUILD_ROOT -name \*.la -exec rm {} \;
-rm $RPM_BUILD_ROOT%{_libdir}/*.so
+#rm $RPM_BUILD_ROOT%{_libdir}/*.so
 desktop-file-install --dir $RPM_BUILD_ROOT%{_datadir}/applications \
   --add-category Application \
   --add-category Utility \
@@ -38,14 +40,15 @@ desktop-file-install --dir $RPM_BUILD_ROOT%{_datadir}/applications \
 
 %files
 %doc AUTHORS ChangeLog COPYING README
-%{_bindir}/%{name}
+%{_bindir}/%{name}*
 %{_datadir}/applications/*%{name}.desktop
 %{_mandir}/man1/%{name}.1*
-%{_libdir}/liballtray.so*
-%{_datadir}/pixmaps/%{name}.png
+#{_libdir}/liballtray.so*
+%{_datadir}/pixmaps/*
+%{_datadir}/locale/*/LC_MESSAGES/alltray.mo
 
 %changelog
-* Tue Dec 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.71b
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.6dev
 - Rebuilt for Fedora
 * Wed Jul 24 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.71b-18
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild

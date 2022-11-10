@@ -1,15 +1,15 @@
 %global _python_bytecompile_errors_terminate_build 0
 
 Name:           i18nspector
-Version:        0.25.5
-Release:        3.1
+Version:        0.27.1
+Release:        1
 Summary:        Tool for Checking gettext POT/PO/MO Files
 License:        MIT
 Group:          Development/Tools/Other
 URL:            http://jwilk.net/software/i18nspector
 Source0:        https://bitbucket.org/jwilk/i18nspector/downloads/%{name}-%{version}.tar.gz
 BuildRequires:  python3-devel
-BuildRequires:  python3-nose
+#BuildRequires:  python3-nose
 BuildArch:      noarch
 
 %description
@@ -37,7 +37,7 @@ make
 %doc %{_mandir}/man?/*
 
 %changelog
-* Wed Apr 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.25.5
+* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.27.1
 - Rebuilt for Fedora
 * Mon Dec  9 2013 lazy.kent@opensuse.org
 - Update to 0.13.1.

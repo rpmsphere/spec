@@ -2,7 +2,7 @@
 %global kversion %(uname -r)
 
 Name:    mos7840
-Version: 3.5.0
+Version: 3.7.0
 Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
@@ -51,5 +51,5 @@ depmod -a > /dev/null 2> /dev/null
 /lib/udev/rules.d/80-usb-serial.rules
 
 %changelog
-* Fri Dec 25 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.5.0
-- Initial package
+* Sun Oct 23 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.0
+- Rebuilt for Fedora

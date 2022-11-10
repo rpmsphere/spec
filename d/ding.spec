@@ -4,7 +4,7 @@ License:        GPLv2+
 Group:          Productivity/Office/Dictionary
 Requires:       tcl tk
 Summary:        An X Window System Dictionary Tool
-Version:        1.8.1
+Version:        1.9
 Release:        1
 URL:            http://www-user.tu-chemnitz.de/~fri/ding/
 Source0:        ftp://ftp.tu-chemnitz.de/pub/Local/urz/ding/%{name}-%{version}.tar.gz
@@ -39,14 +39,14 @@ install -Dm644 ding.png $RPM_BUILD_ROOT%_datadir/pixmaps/%name.png
 %__rm -rf $RPM_BUILD_ROOT
 
 %files
-%doc COPYING README CHANGES
+%doc COPYING README.md CHANGES
 %_bindir/ding
 %_datadir/dict/de-en.txt
 %_datadir/applications/%name.desktop
 %_datadir/pixmaps/%name.png
 
 %changelog
-* Fri Oct 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.1
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9
 - Rebuilt for Fedora
 * Sun Sep 18 2011 jengelh@medozas.de
 - Remove redundant tags/sections from specfile

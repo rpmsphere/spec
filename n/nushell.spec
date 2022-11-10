@@ -2,7 +2,7 @@
 
 Summary: A new type of shell
 Name: nushell
-Version: 0.69.1
+Version: 0.70.0
 Release: 1
 License: MIT
 Group: Development/Shell
@@ -32,5 +32,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %exclude /usr/.crates*
    
 %changelog
-* Thu Sep 29 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.69.1
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.70.0
 - Rebuilt for Fedora

@@ -5,7 +5,7 @@
 %global __os_install_post %(echo '%{__os_install_post}' | sed -e 's!/usr/lib[^[:space:]]*/brp-python-bytecompile[[:space:]].*$!!g')
 
 Name:           cherrytree
-Version:        0.99.44
+Version:        0.99.51
 Release:        1
 Summary:        Hierarchical note taking application
 License:        GPLv3+
@@ -70,7 +70,7 @@ rm -rf %{buildroot}%{_datadir}/mime-info/
 %{_libdir}/pkgconfig/*
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99.44
+* Sun Oct 30 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99.51
 - Rebuilt for Fedora
 * Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.38.5-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild

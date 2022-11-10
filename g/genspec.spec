@@ -1,12 +1,13 @@
 Name:     genspec
-Version:  1.3.11
+Version:  1.3.12
 Release:  1
 Summary:  Script for generation RPM spec file from template
 License:  GPLv3+
 Group:    System/Configuration/Packaging
-URL:      http://altlinux.org/genspec
+URL:      https://packages.altlinux.org/ru/sisyphus/srpms/genspec/
 BuildArch: noarch
-Requires: git-core gear perl-Gear-Remotes
+Requires: git-core gear
+#Requires: perl-Gear-Remotes
 Source:   %name-%version.tar.gz
 
 %description
@@ -27,8 +28,11 @@ cp -av spectemplates/* %buildroot%_datadir/spectemplates/
 %_mandir/man1/*
 
 %changelog
-* Sat Apr 3 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.11
+* Sun Oct 30 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.12
 - Rebuilt for Fedora
+* Sat Sep 11 2021 Mikhail Gordeev <obirvalger@altlinux.org> 1.3.12-alt1
+- Add rust template
+- Add option to run command after main git actions done
 * Thu Jul 09 2020 Mikhail Gordeev <obirvalger@altlinux.org> 1.3.11-alt1
 - Add empty branch options
 - Add ocaml support

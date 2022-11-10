@@ -1,5 +1,5 @@
 Name:           gnuastro
-Version:        0.18
+Version:        0.19
 Release:        1
 Summary:        GNU Astronomy Utilities
 License:        GPL-3.0+
@@ -57,6 +57,7 @@ find %{buildroot} -type f -name "*.la" -delete -print
 %{_bindir}/*
 %{_mandir}/man1/*.1*
 %{_libdir}/libgnuastro.so.*
+%{_libdir}/libgnuastro_make.so.*
 %{_datadir}/gnuastro/completion.bash
 %{_datadir}/gnuastro/astscript-fits-view.desktop
 
@@ -64,6 +65,7 @@ find %{buildroot} -type f -name "*.la" -delete -print
 %license COPYING*
 %{_includedir}/gnuastro
 %{_libdir}/libgnuastro.so
+%{_libdir}/libgnuastro_make.so
 %{_libdir}/pkgconfig/*.pc
 
 %files doc
@@ -72,7 +74,7 @@ find %{buildroot} -type f -name "*.la" -delete -print
 %exclude %{_infodir}/dir
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18
+* Sun Oct 23 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.19
 - Rebuilt for Fedora
 * Tue Nov 26 2019 Andreas Stieger <andreas.stieger@gmx.de>
 - GNU Astronomy Utilities 0.11 (library 9.0.0):

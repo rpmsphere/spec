@@ -5,7 +5,7 @@
 Summary:     Simplistic interactive filtering tool
 Summary(ja): シンプルな対話式フィルタリングツール
 Name:        peco
-Version:     0.5.3git
+Version:     0.5.10
 Release:     1
 License:     MIT License
 Group:       Applications/Text
@@ -51,7 +51,7 @@ go build cmd/peco/peco.go
 %{_bindir}/%{name}
 
 %changelog
-* Mon Aug 12 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.3git
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.10
 - Rebuilt for Fedora
 * Sat Jun 09 2018 Toshiaki Ara <ara_t@384.jp> 0.5.3-1
 - update to 0.5.3

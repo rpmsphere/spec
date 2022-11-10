@@ -1,5 +1,5 @@
 Name:		gnunet
-Version:	0.17.6
+Version:	0.18.1
 Release:	1
 License:	GPLv2+
 Summary:	Secure and anonymous peer-to-peer file sharing
@@ -109,7 +109,7 @@ userdel gnunetd ||:
 %{_datadir}/aclocal/%{name}.m4
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17.6
+* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18.1
 - Rebuilt for Fedora
 * Mon Jan 16 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.9.1-2mdv2012.0
 + Revision: 761718

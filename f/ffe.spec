@@ -3,7 +3,7 @@ Summary:      Flat-File Extractor
 URL:          http://ff-extractor.sourceforge.net/
 Group:        ShellUtils
 License:      GPL
-Version:      0.3.9
+Version:      0.3.9a
 Release:      1
 Source0:      http://sourceforge.net/projects/ff-extractor/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 
@@ -34,5 +34,5 @@ rm %{buildroot}%{_infodir}/dir
 %{_mandir}/man1/ffe.1.gz
 
 %changelog
-* Fri Oct 04 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.9
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.9a
 - Rebuilt for Fedora

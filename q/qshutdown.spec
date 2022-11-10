@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
 Name:           qshutdown
-Version:        1.7.3.git
-Release:        4.1
+Version:        1.8.0
+Release:        1
 Summary:        Timebased shutdown/reboot/suspend/hibernate
 License:        GPL-3.0
 Group:          System/X11/Utilities
-Url:            https://github.com/hakaishi/shutdown-qapps
-Source:         %{name}-%{version}.tar.xz
+URL:            https://github.com/hakaishi/shutdown-qapps
+Source:         shutdown-qapps-%{version}-win.tar.gz
 BuildRequires:  cmake
 BuildRequires:  cmake(Qt5LinguistTools)
 BuildRequires:  gcc-c++
@@ -37,7 +37,7 @@ qprogram-starter shows a "finished" message box, or if you want it can
 quit or shutdown the system.
 
 %prep
-%setup -q
+%setup -q -n shutdown-qapps-%{version}-win
 
 %build
 lrelease-qt5 %{name}/%{name}.pro
@@ -49,13 +49,15 @@ make %{?_smp_mflags}
 make install INSTALL_ROOT=%{buildroot}
 install -Dm 0644 debian/%{name}.1 %{buildroot}/%{_mandir}/man1/%{name}.1
 install -Dm 0644 debian/qprogram-starter.1 %{buildroot}/%{_mandir}/man1/qprogram-starter.1
+install -d %{buildroot}/%{_datadir}/pixmaps
+mv %{buildroot}/%{_datadir}/icons/hicolor/32x32/apps/* %{buildroot}/%{_datadir}/pixmaps
 
 %files
 %doc %{name}/{COPYING,NEWS,README}
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
-%{_datadir}/pixmaps/red_glasses*
+%{_datadir}/pixmaps/red_glasses.xpm
 %{_mandir}/man1/%{name}.1.*
 
 %files -n qprogram-starter
@@ -67,7 +69,7 @@ install -Dm 0644 debian/qprogram-starter.1 %{buildroot}/%{_mandir}/man1/qprogram
 %{_datadir}/qprogram-starter
 
 %changelog
-* Thu Apr 27 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.3.git
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.0
 - Rebuilt for Fedora
 * Sat Feb  4 2017 and.november@opensuse.org
 - initial package (version 1.7.3) for openSUSE

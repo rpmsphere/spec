@@ -1,5 +1,5 @@
 Name:           libressl
-Version:        3.4.2
+Version:        3.6.1
 Release:        1
 Summary:        An SSL/TLS protocol implementation
 License:        OpenSSL
@@ -154,7 +154,7 @@ rm -f "%buildroot/%_libdir"/*.la
 %_mandir/man3/*.*
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.2
+* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6.1
 - Rebuilt for Fedora
 * Wed May 22 2019 Jan Engelhardt <jengelh@inai.de>
 - Update to new upstream release 2.9.2

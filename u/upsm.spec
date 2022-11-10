@@ -1,5 +1,5 @@
 Name:          upsm
-Version:       2.2.0
+Version:       3.0.0
 Release:       1
 Summary:       Qt-based ups monitor (front-end for upsc from Network UPS Tools)
 Group:         Monitoring
@@ -23,10 +23,10 @@ up NUT first.
 %build
 export CFLAGS="%{optflags} -pthread"
 %cmake
-%make_build
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
 %{_bindir}/upsm
@@ -35,7 +35,7 @@ export CFLAGS="%{optflags} -pthread"
 %{_datadir}/icons/hicolor/scalable/apps/upsm.svg
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.0
 - Rebuilt for Fedora
 * Fri Jul 13 2018 semiletov <semiletov> 2.0.2-1.mga7
   (not released yet)

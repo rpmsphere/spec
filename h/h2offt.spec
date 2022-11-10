@@ -4,7 +4,7 @@
 
 Summary: 	Insyde Flash Firmware Tool
 Name: 		h2offt
-Version: 	200.00.00.04
+Version: 	200.02.00.06
 Release: 	1.bin
 License: 	Commercial, freeware
 Group:		Development/Tools
@@ -20,7 +20,8 @@ The linux tool to flash BIOS firmware.
 %prep
 %setup -q -n InsydeH2OFFT_x86_LINUX64_%{version}
 #sed -i 's|uname -m|uname -i|' driver/Makefile         
-sed -i '25i #include <linux/sched.h>' driver/phy_alloc.c
+#sed -i '25i #include <linux/sched.h>' driver/phy_alloc.c
+sed -i '/MODULE_SUPPORTED_DEVICE/d' driver/phy_alloc.c
 
 %build
 cd driver
@@ -58,5 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_libexecdir}/%{name}
 
 %changelog
-* Mon Jul 01 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 200.00.00.04
-- Initial package
+* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 200.02.00.06
+- Update package

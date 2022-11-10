@@ -1,6 +1,6 @@
 Name:           fbcat
-Version:        0.5.1
-Release:        3.1
+Version:        0.5.2
+Release:        1
 License:        GPL-2.0
 Summary:        Framebuffer Grabber
 URL:            http://jwilk.net/software/fbcat
@@ -27,8 +27,10 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 install -dm 755 $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
-install -m 755 fbcat fbgrab $RPM_BUILD_ROOT%{_bindir}
-install -m 644 doc/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
+install -m 755 fbcat $RPM_BUILD_ROOT%{_bindir}
+install -m 755 fbgrab $RPM_BUILD_ROOT%{_bindir}/fbgrab-fbcat
+install -m 644 doc/fbcat.1 $RPM_BUILD_ROOT%{_mandir}/man1
+install -m 644 doc/fbgrab.1 $RPM_BUILD_ROOT%{_mandir}/man1/fbgrab-fbcat.1
 
 %files
 %doc doc/COPYING doc/changelog doc/tested.txt
@@ -39,7 +41,7 @@ install -m 644 doc/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Wed Apr 11 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
+* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
 - Rebuilt for Fedora
 * Sun May 13 2012 lazy.kent@opensuse.org
 - Update to 0.3.

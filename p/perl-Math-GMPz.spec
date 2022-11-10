@@ -1,10 +1,9 @@
 %define upstream_name    Math-GMPz
-
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    0.51
-Release:    2
+Version:    0.54
+Release:    1
 Summary:    Perl interface to the GMP library's integer (mpz) functions
 License:    GPL+ or Artistic
 Group:      Development/Perl
@@ -41,7 +40,7 @@ A perl interface to the GMP library's integer (mpz) functions.
 %exclude %{_libdir}/perl5/perllocal.pod
 
 %changelog
-* Sun Oct 03 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.51
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.54
 - Rebuilt for Fedora
 * Mon May 24 2021 umeabot <umeabot> 0.510.0-2.mga9
 + Revision: 1726892

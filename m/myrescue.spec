@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:           myrescue
-Version:        0.9.4
-Release:        7.1
+Version:        0.9.8
+Release:        1
 Summary:        Rescue the still-readable data from a damaged harddisk
 License:        GPL-2.0+
 Group:          Productivity/File utilities
@@ -16,10 +16,10 @@ tries to quickly get out of damaged areas to first handle the not
 yet damaged part of the disk and return later.
 
 %prep
-%setup -q
+%setup -q -c
 
 %build
-export CFLAGS="%{optflags}"
+sed -i 's|-Wall|-Wall -fPIE|' src/Makefile
 make %{?_smp_mflags} -C src
 
 %install
@@ -36,7 +36,7 @@ gzip -9f %{buildroot}%{_mandir}/de/man1/myrescue.1
 %doc %{_mandir}/de/man1/myrescue.1.*
 
 %changelog
-* Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.8
 - Rebuilt for Fedora
 * Sun Aug 26 2012 asterios.dramis@gmail.com
 - Removed %%clean section (not needed anymore).

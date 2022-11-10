@@ -1,11 +1,11 @@
 %undefine _debugsource_packages
 
 Name:           xosview2
-Version:        2.3.1
+Version:        2.3.3
 Release:        1
 Summary:        System resource monitor
 License:        GPLv2, BSD
-Source: xosview2-2.3.1.tar.gz
+Source: %{name}-%{version}.tar.gz
 URL: https://sourceforge.net/projects/xosview/files/latest/download
 BuildRequires: gawk libXext-devel gcc-c++ libXft-devel libXpm-devel libSM-devel
 
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_docdir}/xosview2/*
 
 %changelog
-* Sun Dec 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.1
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.3
 - Rebuilt for Fedora
 * Sat Jul 11 2015 Mike Romberg <mike-romerg@comcast.net> 2.8-1
 - Initial version of the package

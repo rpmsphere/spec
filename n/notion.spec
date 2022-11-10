@@ -1,9 +1,9 @@
 Name:               notion
-Version:            3.2019050101
+Version:            4.0.2
 %define pkg_version %(echo %{version}|tr . -)
 Release:            1
 Summary:            Free Tiling Tabbed Window Manager
-Source:             https://github.com/raboof/notion/archive/%{pkg_version}.tar.gz#/%{name}-%{pkg_version}.tar.gz
+Source:             https://github.com/raboof/notion/archive/%{pkg_version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:            notion.desktop
 URL:                https://notionwm.net/
 Group:              System/GUI/Other
@@ -26,7 +26,7 @@ Features include:
   scripts collection
 
 %prep
-%setup -q -n %{name}-%{pkg_version}
+%setup -q
 sed -i 's|return lua_sethook(\(.*\));|lua_sethook(\1);return TRUE;|' libextl/luaextl.c
 
 %build
@@ -96,7 +96,7 @@ popd
 %{_datadir}/xsessions/%{name}.desktop
 
 %changelog
-* Thu Oct 31 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2019050101
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.2
 - Rebuilt for Fedora
 * Fri Oct 26 2012 toganm@opensuse.org
 - Update to version 3+2012042300

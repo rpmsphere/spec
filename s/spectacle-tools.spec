@@ -1,13 +1,12 @@
-Name:       mer-spectacle
+Name:       spectacle-tools
 Summary:    RPM Spec file generator and management tool
-Version:    0.32
+Version:    0.33
 Release:    1
 Group:      Development/Tools
 License:    GPLv2+
 BuildArch:  noarch
-URL:        https://github.com/mer-tools/spectacle
-#Source0:    spectacle-%{version}.tar.gz
-Source0:    spectacle-master.zip
+URL:        https://github.com/sailfishos/spectacle
+Source0:    https://github.com/sailfishos/spectacle/archive/refs/tags/%{version}.tar.gz#/spectacle-%{version}.tar.gz
 Source1:    autospectacle.pl
 Source100:  spectacle.yaml
 Requires:   PyYAML
@@ -18,10 +17,21 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-cheetah
 
 %description
-A tool for managing and creating RPM spec files.
+Spectacle is the toolset for packaging maintenance of MeeGo, including the tool
+to generate spec files from metadata file in YAML format, and tools to convert
+spec files or spec-builder's ini files to YAML format.
+
+For spectacle managed packages, all generic packaging information will be stored
+in the YAML file, and it also allows maintaining customizations in the spec file
+directly with special enclosure tags.
+
+Three separated tools will be installed:
+* specify: the tool to generate or to update spec file, based on YAML
+* ini2spectacle: the tool to convert spec-builder .ini to YAML and new spec file
+* spec2spectacle: the tool to convert original spec to YAML and new spec file
 
 %prep
-%setup -q -n spectacle-master
+%setup -q -n spectacle-%{version}
 
 %build
 make tmpls
@@ -44,7 +54,7 @@ sed -i 's|/usr/bin/python -tt|/usr/bin/python3 -tt|' %{buildroot}%{_bindir}/*
 %{python3_sitelib}/*
 
 %changelog
-* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.32
+* Sun Oct 30 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.33
 - Rebuilt for Fedora
 * Mon Jul  2 2012 Marko Saukko <sage@merproject.org> - 0.25
 - Release 0.25

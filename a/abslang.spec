@@ -4,7 +4,7 @@
 
 Summary: The ABS Programming Language
 Name: abslang
-Version: 2.5.1
+Version: 2.6.0
 Release: 1
 License: MIT
 Group: Development/Language
@@ -33,5 +33,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/%{_name}
 
 %changelog
-* Sun Sep 19 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.1
+* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.0
 - Rebuilt for Fedora

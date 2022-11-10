@@ -4,7 +4,7 @@ Name:           hypermail
 BuildRequires:  httpd-devel bison gdbm-devel apr-util-devel pcre-devel libdb-devel
 License:        GPL v2 or later
 Group:          Productivity/Networking/Email/Utilities
-Version:        2.3.0
+Version:        2.4.0
 Release:        1
 URL:            http://www.hypermail-project.org/
 Summary:        Convert Mail Archives in mailbox Format to HTML Pages
@@ -44,28 +44,29 @@ Authors:
 
 %prep
 %setup -q
-%patch
-%patch1
+#%patch
+#%patch1
 #%patch2 -p1
-%patch4
-%patch5
-%patch6
-%patch7
-find . -name CVS -type d | xargs rm -rf
-find . -type f | xargs chmod u+w
-%patch9
+#%patch4
+#%patch5
+#%patch6
+#%patch7
+#find . -name CVS -type d | xargs rm -rf
+#find . -type f | xargs chmod u+w
+#%patch9
 
 %build
-cp -f /usr/share/automake-*/config.guess .
-export CFLAGS="$RPM_OPT_FLAGS"
-rm -rf src/pcre
-libtoolize --force
-aclocal
-autoconf
-./configure --prefix=/usr \
-            --mandir=%{_mandir} --infodir=%{_infodir} \
-	    --with-htmldir=%{_defaultdocdir}/hypermail/docs \
-	    --with-httpddir=%{apache_serverroot}
+#cp -f /usr/share/automake-*/config.guess .
+#export CFLAGS="$RPM_OPT_FLAGS"
+#rm -rf src/pcre
+#libtoolize --force
+#aclocal
+#autoconf
+#./configure --prefix=/usr \
+#            --mandir=%{_mandir} --infodir=%{_infodir} \
+#	    --with-htmldir=%{_defaultdocdir}/hypermail/docs \
+#	    --with-httpddir=%{apache_serverroot}
+#./configure --prefix=/usr
 make
 
 %install
@@ -96,7 +97,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_docdir}/%{name}
 
 %changelog
-* Tue Sep 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.0
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
 - Rebuilt for Fedora
 * Mon Nov 23 2009 pgajdos@suse.cz
 - refreshed audit.patch to build with fuzz=0

@@ -1,5 +1,5 @@
 Name: 	 c-icap
-Version: 0.5.5
+Version: 0.5.10
 Release: 1
 Epoch:   1
 Summary: ICAP server
@@ -81,7 +81,7 @@ install -Dm 0644 %SOURCE5 %buildroot%_sysconfdir/%name.magic
 %_libdir/libicapapi.so
 
 %changelog
-* Thu Aug 15 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.5
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.10
 - Rebuilt for Fedora
 * Mon Oct 16 2017 Andrey Cherepanov <cas@altlinux.org> 1:0.5.2-alt2
 - Fix missing /var/run/c-icap after reboot

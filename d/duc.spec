@@ -1,5 +1,5 @@
 Name:           duc
-Version:        1.4.4
+Version:        1.4.5
 Release:        1
 Summary:        Collection of tools for inspecting and visualizing disk usage
 License:        LGPL-3.0-only
@@ -32,13 +32,13 @@ make %{?_smp_mflags}
 %make_install
 
 %files
-%license COPYING
-%doc ChangeLog
+%license LICENSE
+%doc ChangeLog README.md
 %{_bindir}/duc
 %{_mandir}/man1/duc.1*
 
 %changelog
-* Thu Apr 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.4
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.5
 - Rebuilt for Fedora
 * Mon Feb 26 2018 mvetter@suse.com
 - Change license to LGPL-3

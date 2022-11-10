@@ -1,5 +1,5 @@
 Name:           thiny-session
-Version:        0.7.6
+Version:        0.8.0
 Release:        1
 Summary:        A Thin and Tiny Session for X
 Group:		User Interface/Desktops
@@ -26,7 +26,6 @@ Requires:       /usr/sbin/ntpdate
 Requires:       desktop-backgrounds-compat
 Requires:       nitrogen
 Requires:       xorg-x11-drivers
-Requires:       alltray
 Requires:       gshutdown
 Requires:       sxhkd
 Requires:       scrot
@@ -68,7 +67,7 @@ sed -i 's|xorg|display-manager|' /usr/lib/systemd/system/sxhkd.service
 %{_datadir}/%{name}
 
 %changelog
-* Sun Dec 5 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.6
-- Update package
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0
+- Rebuilt for Fedora
 * Sun Aug 10 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
 - Initial package

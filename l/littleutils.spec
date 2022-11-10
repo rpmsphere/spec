@@ -1,5 +1,5 @@
 Name:           littleutils
-Version:        1.2.0
+Version:        1.2.5
 Release:        1
 License:        GPL-3.0
 Summary:        Collection of Small and Simple Utilities
@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc %{_mandir}/man?/*
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.5
 - Rebuilt for Fedora
 * Mon Jun 18 2012 lazy.kent@opensuse.org
 - Update to 1.0.26.

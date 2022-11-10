@@ -8,6 +8,7 @@ License: Apache 2.0
 Group: Development/Languages
 Source0: https://github.com/evhub/coconut/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 URL: https://coconut-lang.org/
+BuildArch: noarch
 
 %description
 Coconut is a variant of Python that adds on top of Python syntax new features

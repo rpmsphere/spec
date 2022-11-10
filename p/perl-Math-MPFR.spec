@@ -1,9 +1,8 @@
 %define upstream_name    Math-MPFR
-
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    4.17
+Version:    4.24
 Release:    1
 Summary:    Perl interface to the MPFR (floating point) library
 License:    GPL+ or Artistic
@@ -39,7 +38,7 @@ provided by that library. Operator overloading is also available.
 %exclude %{_libdir}/perl5/perllocal.pod
 
 %changelog
-* Sun Oct 03 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.17
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.24
 - Rebuilt for Fedora
 * Fri Sep 10 2021 tv <tv> 4.170.0-1.mga9
 + Revision: 1745024

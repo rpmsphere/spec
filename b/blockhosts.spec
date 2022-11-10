@@ -1,11 +1,13 @@
+%global _name BlockHosts
+
 Name:			blockhosts
-Version:		2.4.0
+Version:		2.7.0
 Summary:		Block IP Addresses based on system logs showing undesirable access patterns
 License:		http://creativecommons.org/licenses/publicdomain/
 URL:			http://www.aczoom.com/cms/blockhosts/
-Source0:		%{name}-%{version}.tar.bz2
+Source0:		%{_name}-%{version}.tar.gz
 Group:			Applications/System
-Release:		12.1
+Release:		1
 Patch0:			blockhosts.cfg.2.4.0.diff
 BuildArch:		noarch
 
@@ -25,7 +27,7 @@ Facilities for whitelists and blacklists, and email notification on major
 events are also available.
 
 %prep
-%setup -q
+%setup -q -n %{_name}-%{version}
 %patch0
 
 %build
@@ -41,7 +43,7 @@ install -m 644 logwatch/blockhosts.conf $RPM_BUILD_ROOT%{_sysconfdir}/logwatch/c
 install -m 644 logwatch/blockhosts $RPM_BUILD_ROOT%{_sysconfdir}/logwatch/scripts/services/blockhosts
 install -m 644 logrotate.d/blockhosts $RPM_BUILD_ROOT%{_sysconfdir}/logrotate.d/blockhosts
 install -m 755 blockhosts.py $RPM_BUILD_ROOT%{_bindir}/blockhosts.py
-install -m 755 bhrss.py $RPM_BUILD_ROOT%{_bindir}/bhrss.py
+#install -m 755 bhrss.py $RPM_BUILD_ROOT%{_bindir}/bhrss.py
 
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
@@ -76,15 +78,14 @@ fi
 %config %{_sysconfdir}/logwatch/conf/services/blockhosts.conf
 %config %{_sysconfdir}/logwatch/scripts/services/blockhosts
 %{_bindir}/blockhosts.py
-%{_bindir}/bhrss.py
-%doc CHANGES INSTALL LICENSE README bhrss.html blockhosts.html
+#{_bindir}/bhrss.py
+%doc CHANGES INSTALL LICENSE README blockhosts.html
 
 %clean
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
-* Fri Jul 27 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.0
 - Rebuilt for Fedora
-
 * Sat Apr 17 2010 David Bolt <davjam@davjam.org> 2.4.0
 - first package for openSUSE

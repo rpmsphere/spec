@@ -1,6 +1,6 @@
 Name:           gpsprune
 Summary:        Viewing, editing and converting coordinate data from GPS systems
-Version:        19.2
+Version:        22.2
 Release:        1.bin
 Group:          Productivity/Other 
 License:        GPL
@@ -72,8 +72,8 @@ EOF
 #%doc README.html LICENSE.txt ChangeLog 
 
 %changelog
-* Wed May 22 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 19.2
-- Rebuilt for Fedora
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 22.2
+- Rebuild for Fedora
 * Fri Nov 30 2012 lumnis@opensuse.org
 - updated to version 14
 - New Features: Dragging points, nautical miles, deleting points inside a rectangle

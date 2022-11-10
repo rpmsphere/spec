@@ -2,7 +2,7 @@
 %undefine _missing_build_ids_terminate_build
 
 Name:		termshark
-Version:	1.0.0
+Version:	2.4.0
 Release:	1
 Summary:	A terminal UI for tshark
 License:	MIT
@@ -36,5 +36,5 @@ install -d %{buildroot}%{_bindir}
 install -Dm0755 cmd/%{name}/%{name} %{buildroot}%{_bindir}
 
 %changelog
-* Tue Sep 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
 - Rebuilt for Fedora

@@ -12,15 +12,12 @@ Requires:	fuse
 BuildArch:	noarch
 
 %description
-These are useful shell scripts for making or modifying RPM packages.
-The 'deb2spec' produce a spec file from a .deb, Debian package file, and the
-'rpm2spec' do a similar work but from .rpm file or package installed in a
-system.  The 'rpmjail', made with FUSE, is for running RPM in a jailed
-environment.  The 'b64shar' can encode any file in to a base64-encoded shell
-self-extracting archive.
-
-macros.hacks-srpm provides macros for building compatible projects from
-various distributions.
+These are useful shell scripts for making or modifying RPM packages:
+deb2spec - produce a spec file from a .deb, Debian package file
+rpm2spec - produce a spec file from a .rpm package
+rpmjail - made with FUSE for running RPM in a jailed environment
+b64shar - make any file into a base64-encoded shell self-extracting archive
+ar2spec - produce a spec file from a software archive
 
 %prep
 %setup -q
@@ -38,10 +35,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %doc README
 %{_bindir}/*
-%{_rpmconfigdir}/macros.d/macros.hacks-srpm
 
 %changelog
-* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.10
-- Rebuild
+* Sun Oct 30 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.10
+- Rebuilt for Fedora
 * Thu Dec 20 2012 Robert Wei <robert.wei@ossii.com.tw> - 2012.12
 - First build

@@ -1,5 +1,5 @@
 Name:           galois
-Version:        0.7
+Version:        0.8
 Release:        1
 Summary:        Extended falling blocks game with many different geometries
 Group:          Games/Arcade
@@ -32,16 +32,15 @@ CXXFLAGS="%{optflags} -std=gnu++11" \
 %find_lang %{name} --with-gnome --with-man
 
 %files -f %{name}.lang
-%doc NEWS
+%{_docdir}/%{name}
 %{_datadir}/applications/%{name}.desktop
-%lang(C) %{_datadir}/omf/%{name}/%{name}-C.omf
-%lang(it) %{_datadir}/omf/%{name}/%{name}-it.omf
 %{_datadir}/pixmaps/%{name}.png
+%{_datadir}/metainfo/%{name}.appdata.xml
 %{_bindir}/%{name}
 %{_mandir}/man6/%{name}.6.*
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7
+* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
 - Rebuilt for Fedora
 * Thu Feb 08 2018 akien <akien> 0.5-1.mga7
 + Revision: 1199724

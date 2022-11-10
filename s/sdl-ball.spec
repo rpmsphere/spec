@@ -1,11 +1,13 @@
+%undefine _debugsource_packages
+
 Name:           sdl-ball
-Version:        1.01
-Release:        11.4
+Version:        1.04
+Release:        1
 Summary:        A Free/OpenSource brick-breaking game with pretty graphics
 License:        GPL-3.0
 Group:          Amusements/Games/Action/Breakout
 URL:            http://sdl-ball.sourceforge.net/
-Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source:         https://sourceforge.net/projects/sdl-ball/files/sdl-ball/1.04/SDL-Ball_%{version}_src.tar.xz
 Source1:        %{name}.desktop
 Source2:        %{name}.png
 Patch0:         %{name}-makefile.patch
@@ -38,32 +40,35 @@ It is written in C++ using SDL and OpenGL. Features:
 * Screenshot function
 
 %prep
-%setup -q -n %{name}
-%patch0
-%patch1 -p1
-%patch2 -p1
-sed -i 's|cr,cg,cb,|cr,cg,cb|' main.cpp
+%setup -q -n SDL-Ball_src
+#%patch0
+#%patch1 -p1
+#%patch2 -p1
+#sed -i 's|cr,cg,cb,|cr,cg,cb|' main.cpp
 
 %build
 make clean
-rm *.bin
+#rm *.bin
 export CFLAGS="%{optflags}"
 make %{?_smp_mflags} PREFIX=%{_prefix} BINDIR=%{_bindir} DATADIR=%{_datadir}/%{name}/
 
 %install
-make DESTDIR=$RPM_BUILD_ROOT PREFIX=%{_prefix} BINDIR=%{_bindir} DATADIR=%{_datadir}/%{name}/ install
+#make DESTDIR=$RPM_BUILD_ROOT PREFIX=%{_prefix} BINDIR=%{_bindir} DATADIR=%{_datadir}/%{name}/ install
+mkdir -p $RPM_BUILD_ROOT%{_bindir} $RPM_BUILD_ROOT%{_datadir}/%{name}
+install -m 755 %{name} $RPM_BUILD_ROOT%{_bindir}
+cp -p -R themes/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 install -D -m 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -D -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 %files
 %doc README LICENSE.txt
 %{_bindir}/%{name}
-%{_datadir}/%{name}/
+%{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.01
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.04
 - Rebuilt for Fedora
 * Thu May 24 2012 joop.boonen@opensuse.org
 - Created a gcc47 patch and a don't strip for debug patch

@@ -1,15 +1,16 @@
 Summary: Gtk interface to make annotations on the screen
 Name: ardesia
-Version: 0.8
+Version: 1.1
 Release: 1
 License: GPLv3
-Source0: http://ardesia.googlecode.com/files/%{name}-%{version}.tar.bz2
+Source0: http://ardesia.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1: %{name}-0.8.zh_TW.po
 Group: Applications/Desktop
 URL: http://code.google.com/p/ardesia/
 BuildRequires: intltool
 BuildRequires: gtk2-devel, atk-devel, cairo-devel, fontconfig-devel, pango-devel, gsl-devel, libxml2-devel
-Requires: compiz, recordmydesktop
+BuildRequires: libgsf-devel
+Requires: recordmydesktop
 
 %description
 Ardesia help you to make colored free-hand annotations with digital ink
@@ -30,8 +31,8 @@ a touch screen, a cheap professional wiimote whiteboard or a commercial whiteboa
 
 %prep
 %setup -q
-sed -i 's/2\.24\.0/2.22.0/' configure*
-sed -i '529,534d' desktop/Makefile.in
+#sed -i 's/2\.24\.0/2.22.0/' configure*
+#sed -i '529,534d' desktop/Makefile.in
 echo 'zh_TW' >> po/LINGUAS
 cp %{SOURCE1} po/zh_TW.po
 
@@ -44,7 +45,6 @@ make
 rm -rf %{buildroot}
 make DESTDIR=%{buildroot} install
 rm -rf %{buildroot}%{_datadir}/doc/%{name}
-mv %{buildroot}%{_datadir}/icons %{buildroot}%{_datadir}/pixmaps
 %find_lang %{name}
 
 %clean
@@ -56,9 +56,8 @@ rm -rf %{buildroot}
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
-%{_mandir}/man1/%{name}.1.gz
-%exclude %{_mandir}/man1/%{name}.1.*
+%{_mandir}/man1/%{name}.1*
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
+* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
 - Rebuilt for Fedora

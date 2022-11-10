@@ -5,7 +5,7 @@
 
 Name: schilytools
 Version: 2021.09.18
-Release: 1
+Release: 2
 Source0: https://nav.dl.sourceforge.net/project/schilytools/schily-%{dashedver}.tar.bz2
 Summary: Replacements for common tools that resemble their Solaris counterparts
 URL: http://schilytools.sourceforge.net/
@@ -90,8 +90,17 @@ rm -rf %{buildroot}%{_mandir}/man3
 
 # Don't conflict with standard tools
 # The tools are still available via their s* name
-rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
-	%{buildroot}%{_mandir}/man1/{make,tar,gnutar,sh}.1
+for i in make tar gnutar sh diff ctags isodebug isodump isoinfo isovfy cal od printf patch compare help translit; do
+  if [ -f %{buildroot}%{_bindir}/$i ] ; then
+    mv %{buildroot}%{_bindir}/$i %{buildroot}%{_bindir}/$i-schily
+  fi
+  if [ -f %{buildroot}%{_mandir}/man1/$i.1 ] ; then
+    mv %{buildroot}%{_mandir}/man1/$i.1 %{buildroot}%{_mandir}/man1/$i-schily.1
+  elif [ -f %{buildroot}%{_mandir}/man8/$i.8 ] ; then
+    mv %{buildroot}%{_mandir}/man8/$i.8 %{buildroot}%{_mandir}/man8/$i-schily.8
+  fi
+done
+mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 
 %post
 %{_sbindir}/setcap cap_sys_resource,cap_dac_override,cap_sys_admin,cap_sys_nice,cap_net_bind_service,cap_ipc_lock,cap_sys_rawio+ep %{_bindir}/cdrecord
@@ -101,15 +110,19 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_sbindir}/setcap cap_dac_override,cap_sys_admin,cap_net_bind_service,cap_sys_rawio+ep %{_bindir}/readcd
 
 %files
+%{_bindir}/*-schily
+%{_mandir}/man?/*-schily.*
+%{_prefix}/lib/cpp-schily
+#
 %{_sysconfdir}/sformat.dat
 %{_bindir}/cdrecord
 %{_bindir}/cdda2mp3
 %{_bindir}/cdda2ogg
 %{_bindir}/cdda2wav
-%{_bindir}/isodebug
-%{_bindir}/isodump
-%{_bindir}/isoinfo
-%{_bindir}/isovfy
+#{_bindir}/isodebug
+#{_bindir}/isodump
+#{_bindir}/isoinfo
+#{_bindir}/isovfy
 %{_bindir}/readcd
 %{_bindir}/mkisofs
 %{_bindir}/mkhybrid
@@ -127,10 +140,10 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_mandir}/man1/cdda2ogg.1*
 %{_mandir}/man1/cdda2wav.1*
 %{_mandir}/man1/cdrecord.1*
-%{_mandir}/man8/isodebug.8*
-%{_mandir}/man8/isodump.8*
-%{_mandir}/man8/isoinfo.8*
-%{_mandir}/man8/isovfy.8*
+#{_mandir}/man8/isodebug.8*
+#{_mandir}/man8/isodump.8*
+#{_mandir}/man8/isoinfo.8*
+#{_mandir}/man8/isovfy.8*
 %{_mandir}/man8/mkhybrid.8*
 %{_mandir}/man8/mkisofs.8*
 #
@@ -167,27 +180,27 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_bindir}/bdiff
 %{_bindir}/bosh
 %{_bindir}/bsh
-%{_bindir}/cal
+#{_bindir}/cal
 %{_bindir}/calc
 %{_bindir}/calltree
 %{_bindir}/cdc
 %{_bindir}/change
 %{_bindir}/comb
-%{_bindir}/compare
+#{_bindir}/compare
 %{_bindir}/copy
 %{_bindir}/count
 %{_bindir}/cstyle.js
-%{_bindir}/ctags
+#{_bindir}/ctags
 %{_bindir}/delta
 %{_bindir}/devdump
-%{_bindir}/diff
+#{_bindir}/diff
 %{_bindir}/dmake
 %{_bindir}/fdiff
 %{_bindir}/fifo
 %{_bindir}/fsdiff
 %{_bindir}/get
 %{_bindir}/hdump
-%{_bindir}/help
+#{_bindir}/help
 %{_bindir}/jsh
 %{_bindir}/krcpp
 %{_bindir}/label
@@ -197,13 +210,13 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_bindir}/mdigest
 %{_bindir}/mt
 %{_bindir}/obosh
-%{_bindir}/od
+#{_bindir}/od
 %{_bindir}/opatch
 %{_bindir}/p
 %{_bindir}/pbosh
 %{_bindir}/pfbsh
 %{_bindir}/pfsh
-%{_bindir}/printf
+#{_bindir}/printf
 %{_bindir}/prs
 %{_bindir}/prt
 %{_bindir}/pxupgrade
@@ -230,7 +243,7 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_bindir}/svr4.make
 %{_bindir}/tartest
 %{_bindir}/termcap
-%{_bindir}/translit
+#{_bindir}/translit
 %{_bindir}/udiff
 %{_bindir}/unget
 %{_bindir}/ustar
@@ -242,7 +255,7 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_bindir}/ved-w
 %{_bindir}/what
 %{_prefix}/etc/termcap
-%{_prefix}/lib/cpp
+#{_prefix}/lib/cpp
 %{_prefix}/lib/diffh
 %{_prefix}/lib/help/locale/C/ad
 %{_prefix}/lib/help/locale/C/bd
@@ -272,25 +285,25 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_mandir}/man1/bdiff.1*
 %{_mandir}/man1/bosh.1*
 %{_mandir}/man1/bsh.1*
-%{_mandir}/man1/cal.1*
+#{_mandir}/man1/cal.1*
 %{_mandir}/man1/calc.1*
 %{_mandir}/man1/calltree.1*
 %{_mandir}/man1/cdc.1*
 %{_mandir}/man1/change.1*
 %{_mandir}/man1/comb.1*
-%{_mandir}/man1/compare.1*
+#{_mandir}/man1/compare.1*
 %{_mandir}/man1/copy.1*
 %{_mandir}/man1/count.1*
 %{_mandir}/man1/cstyle.1*
 %{_mandir}/man1/delta.1*
-%{_mandir}/man1/diff.1*
+#{_mandir}/man1/diff.1*
 %{_mandir}/man1/dmake.1*
 %{_mandir}/man1/fdiff.1*
 %{_mandir}/man1/fifo.1*
 %{_mandir}/man1/fsdiff.1*
 %{_mandir}/man1/get.1*
 %{_mandir}/man1/hdump.1*
-%{_mandir}/man1/help.1*
+#{_mandir}/man1/help.1*
 %{_mandir}/man1/jsh.1*
 %{_mandir}/man1/krcpp.1*
 %{_mandir}/man1/label.1*
@@ -301,14 +314,14 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_mandir}/man1/mountcd.1*
 %{_mandir}/man1/mt.1*
 %{_mandir}/man1/obosh.1*
-%{_mandir}/man1/od.1*
+#{_mandir}/man1/od.1*
 %{_mandir}/man1/opatch.1*
 %{_mandir}/man1/p.1*
-%{_mandir}/man1/patch.1*
+#{_mandir}/man1/patch.1*
 %{_mandir}/man1/pbosh.1*
 %{_mandir}/man1/pfbsh.1*
 %{_mandir}/man1/pfsh.1*
-%{_mandir}/man1/printf.1*
+#{_mandir}/man1/printf.1*
 %{_mandir}/man1/prs.1*
 %{_mandir}/man1/prt.1*
 %{_mandir}/man1/pxupgrade.1*
@@ -376,7 +389,7 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_mandir}/man1/sysV-make.1*
 %{_mandir}/man1/tartest.1*
 %{_mandir}/man1/termcap.1*
-%{_mandir}/man1/translit.1*
+#{_mandir}/man1/translit.1*
 %{_mandir}/man1/udiff.1*
 %{_mandir}/man1/unget.1*
 %{_mandir}/man1/ustar.1*
@@ -396,5 +409,5 @@ rm -f %{buildroot}%{_bindir}/{make,tar,gnutar,sh} \
 %{_mandir}/man8/sformat.8*
 
 %changelog
-* Sun Oct 10 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.09.18
+* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.09.18
 - Rebuilt for Fedora

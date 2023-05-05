@@ -13,7 +13,7 @@ Requires:       java-1.8.0-openjdk
 ##BuildRequires:  java3d
 ##BuildRequires:  jpackage-utils
 ##Source0:        http://activityworkshop.net/software/%{name}/%{name}_%{version}_source.tar.bz2
-Source0:        https://activityworkshop.net/software/gpsprune/gpsprune_19.2.jar
+Source0:        https://activityworkshop.net/software/gpsprune/gpsprune_%{version}.jar
 Source1:	%{name}.desktop
 Source2:        %{name}.png
 BuildArch:      noarch

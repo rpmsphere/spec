@@ -19,7 +19,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Network)
 BuildRequires:  pkgconfig(Qt5Widgets) >= 5.2.0
-#BuildRequires:  pkgconfig(libtins)
+BuildRequires:  pkgconfig(libtins)
 BuildRequires:  polkit
 
 %description
@@ -51,7 +51,7 @@ install -Dm 0644 %{SOURCE3} %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Mon Nov 09 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.2
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.2
 - Rebuilt for Fedora
 * Thu Sep 20 2018 ecsos@opensuse.org
 - Add netvisix-include.patch to fix build error for Tumbleweed.

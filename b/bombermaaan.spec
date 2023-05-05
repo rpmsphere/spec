@@ -25,7 +25,8 @@ sed -i '74s/char/const char/' Bombermaaan/winreplace.cpp
 
 %build
 %ifarch aarch64
-export CC=clang CXX=clang++
+#export CC=clang CXX=clang++
+sed -i '/sys\/io.h/d' Bombermaaan/STDAFX.H
 %endif
 make
 
@@ -67,5 +68,5 @@ EOF
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0
 - Rebuilt for Fedora

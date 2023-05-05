@@ -1,3 +1,6 @@
+%global __spec_install_post %{nil}
+%undefine _debugsource_packages
+
 Name:          ladcca
 Version:       0.4.0
 Release:       11.1
@@ -18,7 +21,7 @@ BuildRequires: glib-devel
 #BuildRequires: glitz-devel
 BuildRequires: gtk+-devel
 BuildRequires: gtk2-devel
-BuildRequires: jack-audio-connection-kit-devel
+BuildRequires: pipewire-jack-audio-connection-kit-devel
 BuildRequires: ncurses-devel
 BuildRequires: pango-devel
 BuildRequires: pixman-devel
@@ -87,7 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files 
 %{_bindir}/*
-%{_infodir}/ladcca-manual.info.gz
+%{_infodir}/ladcca-manual.info*
 %exclude %{_infodir}/dir
 %{_datadir}/ladcca/dtds/ladcca-project-1.0.dtd
 
@@ -104,14 +107,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libladcca.la
 
 %changelog
-* Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
 - Rebuilt for Fedora
-
 * Sat Jun 13 2009 Automatic Build System <autodist@mambasoft.it> 0.4.0-3mamba
 - automatic rebuild by autodist
-
 * Mon Apr 07 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 0.4.0-2mamba
 - specfile updates
-
 * Sun Feb 20 2005 Silvan Calarco <silvan.calarco@mambasoft.it> 0.4.0-1qilnx
 - package created by autospec

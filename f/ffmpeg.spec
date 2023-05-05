@@ -98,7 +98,7 @@ BuildRequires:  gnutls-devel
 BuildRequires:  gsm-devel
 %{?_with_ilbc:BuildRequires: ilbc-devel}
 BuildRequires:  lame-devel >= 3.98.3
-%{!?_without_jack:BuildRequires: jack-audio-connection-kit-devel}
+%{!?_without_jack:BuildRequires: pipewire-jack-audio-connection-kit-devel}
 %{!?_without_ladspa:BuildRequires: ladspa-devel}
 BuildRequires:  libass-devel
 BuildRequires:  libbluray-devel
@@ -140,7 +140,7 @@ BuildRequires:  opencl-headers ocl-icd-devel
 %{?fedora:Recommends: opencl-icd}
 %endif
 %{!?_without_opencv:BuildRequires: opencv-devel}
-BuildRequires:  openjpeg2-devel
+BuildRequires:  openjpeg-devel
 BuildRequires:  opus-devel
 %{!?_without_pulse:BuildRequires: pulseaudio-libs-devel}
 BuildRequires:  perl(Pod::Man)
@@ -163,7 +163,6 @@ BuildRequires:  texinfo
 BuildRequires:  zlib-devel
 %{?_with_zmq:BuildRequires: zeromq-devel}
 %{?_with_zvbi:BuildRequires: zvbi-devel}
-BuildRequires:  gcc-c++ automake
 
 %description
 FFmpeg is a complete and free Internet live audio and video
@@ -358,23 +357,13 @@ rm -r %{buildroot}%{_datadir}/%{name}/examples
 install -pm755 tools/qt-faststart %{buildroot}%{_bindir}
 %endif
 
-
-
-
-
 %if 0%{!?_without_tools:1}
 %files
 %doc COPYING.* CREDITS README.md doc/ffserver.conf
-%{_bindir}/ffmpeg%{?progs_suffix}
-%{_bindir}/ffplay%{?progs_suffix}
-%{_bindir}/ffprobe%{?progs_suffix}
-%{_bindir}/ffserver%{?progs_suffix}
+%{_bindir}/ff*
 %{!?progs_suffix:%{_bindir}/qt-faststart}
 %{!?flavor:
-%{_mandir}/man1/ffmpeg*.1*
-%{_mandir}/man1/ffplay*.1*
-%{_mandir}/man1/ffprobe*.1*
-%{_mandir}/man1/ffserver*.1*
+%{_mandir}/man1/ff*.1*
 }
 %{_datadir}/%{name}
 %endif

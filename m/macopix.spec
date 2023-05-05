@@ -8,7 +8,8 @@ License: chimari@kurumi.sakura.ne.jp
 URL: http://rosegray.sakura.ne.jp/macopix
 Group: Amusements/Games
 Source0: http://rosegray.sakura.ne.jp/macopix/%{name}-%{version}.tar.gz
-Obsoletes: age actx
+Obsoletes: actx
+#Obsoletes: age
 BuildRequires:  libpng-devel
 %define	gtk_conf_opt --program-transform-name='s/macopix/macopix/' 
 BuildRequires: gtk3-devel
@@ -54,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_datadir}/macopix
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.0
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.0
 - Rebuilt for Fedora
 * Sun Jun 10 2007 Satoshi IWAMOTO <satoshi.iwamoto@nifty.ne.jp>
 - new upstream release 1.6.4

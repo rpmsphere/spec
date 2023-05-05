@@ -1,7 +1,7 @@
 Name: atftp
 Summary: Advanced Trivial File Transfer Protocol (ATFTP) - TFTP server
 Group: System Environment/Daemons
-Version: 0.7.4
+Version: 0.8.0
 Release: 1
 License: GPL
 Source: /usr/src/redhat/SOURCES/atftp-%{version}.tar.gz
@@ -25,6 +25,7 @@ files using the TFTP protocol.
 %setup -q
 
 %build
+./autogen.sh
 %configure
 make
 
@@ -43,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/atftp
 
 %changelog
-* Sun Dec 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.4
+* Sun Nov 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0
 - Rebuilt for Fedora
 * Tue Jan 07 2003 Thayne Harbaugh <thayne@plug.org>
 - put client in sub-rpm

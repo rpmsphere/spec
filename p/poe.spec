@@ -3,7 +3,7 @@
 Summary: Small and quick curses programmer's editor
 Name: poe
 Version: 0
-Release: 8.1
+Release: 9
 License: BSD-like
 Group: Applications/Editors
 Source: https://codeload.github.com/FredFoonly/poe/zip/master#/%{name}-master.zip
@@ -40,5 +40,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/%{name}
 
 %changelog
-* Wed Aug 30 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0
+* Sun Jan 15 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0
 - Rebuilt for Fedora

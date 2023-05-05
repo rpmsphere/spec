@@ -2,16 +2,16 @@
 
 Summary: A space arcade game
 Name: starfighter
-Version: 1.1
-Release: 8.4
+Version: 2.4
+Release: 1
 License: GPL
 Group: Amusements/Games
 URL: http://www.parallelrealities.co.uk/starfighter.php
 # No absolute URL since the home page tunnels it through a PHP script
-Source0: starfighter-%{version}-1.tar.bz2
+Source0: starfighter-%{version}-src.tar.gz
 Source1: starfighter.png
 Patch0: starfighter-1.1-makefile.patch
-BuildRequires: SDL-devel, SDL_mixer-devel, SDL_image-devel, desktop-file-utils
+BuildRequires: SDL2-devel SDL2_mixer-devel SDL2_image-devel SDL2_ttf-devel desktop-file-utils
 
 %description
 After decades of war one company, who had gained powerful supplying both sides
@@ -24,12 +24,14 @@ someone to light this dark hour... and someone did.
 This game features 26 missions over 4 star systems and boss battles.
 
 %prep
-%setup -q
-%patch0 -p1 -b .makefile
+%setup -q -n %{name}-%{version}-src
+#patch0 -p1 -b .makefile
 # No files need to be executable, yet quite a few are, so fix that
 find . -type f -exec %{__chmod} -x {} \;
+chmod +x configure
 
 %build
+%configure
 %{__make} %{?_smp_mflags} PREFIX="%{_prefix}"
 
 %install
@@ -63,14 +65,15 @@ desktop-file-install \
 %{__rm} -rf %{buildroot}
 
 %files
-%doc docs/*
+%doc COPYING LICENSES README.txt
 %{_bindir}/starfighter
 %{_datadir}/starfighter/
 %{_datadir}/pixmaps/starfighter.png
 %{_datadir}/applications/*%{name}.desktop
+%{_mandir}/man6/starfighter.6*
 
 %changelog
-* Mon Jul 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
 - Rebuilt for Fedora
 * Thu Jun 14 2007 Matthias Saou <http://freshrpms.net/> 1.1-9
 - Move binary and data to "proper" locations by updating patch (#229197).

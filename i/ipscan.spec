@@ -40,7 +40,7 @@ cp ext/deb-bundle/usr/share/applications/ipscan.desktop $RPM_BUILD_ROOT/%{_datad
 cp resources/images/icon128.png $RPM_BUILD_ROOT/%{_datadir}/pixmaps/ipscan.png
 echo "#/bin/sh" > $RPM_BUILD_ROOT/%{_bindir}/ipscan
 echo "java -jar %{_datadir}/ipscan/ipscan.jar" >> $RPM_BUILD_ROOT/%{_bindir}/ipscan
-chmod a+x $RPM_BUILD_ROOT/%{_bindir}/ipscan
+chmod +x $RPM_BUILD_ROOT/%{_bindir}/ipscan
 
 %clean
 rm -rf $RPM_BUILD_ROOT

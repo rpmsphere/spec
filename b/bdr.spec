@@ -15,7 +15,7 @@ system startup.
 %prep
 %setup -q
 %ifarch aarch64
-sed -i 's/elf32-i386/elf64-littleaarch64/' Makefile
+sed -i -e 's/elf32-i386/elf64-littleaarch64/' -e 's|-B i386||' Makefile
 %endif
 
 %build
@@ -33,7 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 
 %changelog
-* Mon Feb 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
+* Sun Mar 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
 - Rebuilt for Fedora
 * Wed Apr  8 2009 snwint@suse.de
 - created package

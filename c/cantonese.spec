@@ -18,13 +18,16 @@ the computer in Cantonese.
 
 %prep
 %setup -q -n %{_name}-main
+sed -i 's|tk = kw_then|tk = [kw_then, tr_kw_then]|' src/cantonese.py
 
 %build
 %py3_build
 
 %install
 %py3_install
-mv %{buildroot}%{python3_sitelib}/src/'#U6fd1#U5622.py' %{buildroot}%{python3_sitelib}/src/'濑嘢.py'
+if [ -f %{buildroot}%{python3_sitelib}/src/'#U6fd1#U5622.py' ] ; then
+  mv %{buildroot}%{python3_sitelib}/src/'#U6fd1#U5622.py' %{buildroot}%{python3_sitelib}/src/'濑嘢.py'
+fi
 
 %files 
 %doc LICENSE *.md

@@ -31,13 +31,13 @@ Documentation for %{name}.
 %build
 gem build ../%{gem_name}-%{version}.gemspec
 %gem_install
+sed -i 's|1.5.0.alpha.8|1.6|' `find . -name '*.gemspec'`
 
 %install
 mkdir -p %{buildroot}%{gem_dir}
 cp -a .%{gem_dir}/* %{buildroot}%{gem_dir}/
 
 find %{buildroot}%{gem_instdir}/bin -type f | xargs chmod a+x
-#sed -i 's|1.5.3|1.5|' %{buildroot}%{gem_spec}
 
 %files
 %{gem_spec}

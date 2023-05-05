@@ -1,3 +1,6 @@
+%global __spec_install_post %{nil}
+%undefine _debugsource_packages
+
 Name:         libsrs2
 Summary:      Mail Sender Rewriting Scheme (SRS) Library
 URL:          http://www.libsrs2.org/
@@ -52,5 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.18
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.18
 - Rebuilt for Fedora

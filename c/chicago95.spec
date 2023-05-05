@@ -1,15 +1,14 @@
 %global	_name Chicago95
 
 Name:           chicago95
-Version:        2.0.1
+Version:        3.0.1
 Release:        1
 Summary:        A rendition of everyone's favorite 1995 Microsoft operating system for Linux
 License:        MIT, GPLv3+
 URL:            https://github.com/grassmunk/Chicago95
 Source0:        https://github.com/grassmunk/Chicago95/archive/refs/tags/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
 BuildArch:	noarch
-#BuildRequires:  
-#Requires:       
+BuildRequires:  txt2man
 
 %description
 I was unhappy with the various XFCE/GTK2/GTK3 Windows 95 based themes and
@@ -48,7 +47,12 @@ install CREDITS README.md %{buildroot}%{_docdir}/chicago95
 %{_datadir}/%{name}-theme-plus
 %{_datadir}/fonts/truetype/*
 %{_datadir}/plymouth/themes/*
-
+%{_datadir}/applications/PlusGUI.desktop
+%{_datadir}/backgrounds/Chicago95
+%{_mandir}/man1/*.1*
+%{_datadir}/mime/packages/chicago95-plus-theme.xml
+%{_datadir}/xfce4-panel-profiles/layouts/Chicago95_Panel_Preferences.tar.bz2
+   
 %changelog
-* Sun Jan 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.1
+* Sun Jan 15 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
 - Rebuilt for Fedora

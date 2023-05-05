@@ -18,6 +18,9 @@ dynamically typed languages generally do.
 
 %prep
 %setup -q -n %{name}-lang-%{version}
+%ifarch aarch64
+sed -i 's|-malign-double||' Makefile
+%endif
 
 %build
 %make_build
@@ -42,5 +45,5 @@ cp -a import Umka.sublime-syntax %{buildroot}%{_datadir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
 - Rebuilt for Fedora

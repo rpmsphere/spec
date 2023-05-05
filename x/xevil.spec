@@ -74,12 +74,12 @@ Ninja savaşçısı olarak karşınıza çıkan her şeyi öldürmek.
 #patch0 -p1
 #sed -i 's|-static||' config.mk
 #sed -i -e 's|const char\* cs,int c|char* cs,int c|g' -e 's|const char\* cs,const char\* ct|char* cs,char* ct|' cmn/utils.h
-sed -i 's|-m32||' config.mk
+sed -i 's|-m32|-Wno-write-strings|' config.mk
 sed -i -e '/helvetica/s|18|20|' -e 's|6x13|9x15bold|' x11/ui.cpp
 
 %build
 #{__make} HOSTTYPE=i386 DEBUG_OPT="%{optflags} -fno-exceptions" LINK_FLAGS="-s"
-%{make_build}
+%{make_build} HOSTTYPE=x86_64
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -99,9 +99,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sun Apr 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1b1
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1b1
 - Rebuilt for Fedora
-* Thu Jun 06 2011 Chris Lin <chris.lin@ossii.com.tw>
+* Mon Jun 06 2011 Chris Lin <chris.lin@ossii.com.tw>
 - Fix types in cmn/utils.h
 * Mon Nov 17 2008 Wei-Lun Chao <bluebat@member.fsf.org>
 - Rebuild for CentOS5

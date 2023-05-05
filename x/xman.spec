@@ -1,12 +1,13 @@
 %undefine _debugsource_packages
+
 Name:		xman
-Version:	1.1.3
-Release:	4.1
+Version:	1.1.5
+Release:	1
 Summary:	Manual page display program for the X Window System
 Group:		Development/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
-Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.gz
 BuildRequires:	libXaw-devel
 #BuildRequires:	libXprintUtil-devel
 BuildRequires:	libXp-devel
@@ -32,7 +33,7 @@ make
 %{_mandir}/man1/xman.*
 
 %changelog
-* Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.3
+* Sun Nov 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.5
 - Rebuilt for Fedora
 * Sat Oct 19 2013 umeabot <umeabot> 1.1.3-2.mga4
 + Revision: 534216

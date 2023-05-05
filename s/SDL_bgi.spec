@@ -2,7 +2,7 @@
 
 Summary:    BGI-compatible 2D graphics C library
 Name:       SDL_bgi
-Version:    2.6.0
+Version:    3.0.0
 Release:    1
 License:    ZLib
 Group:      Libraries
@@ -28,11 +28,11 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 cd src
-mkdir -p $RPM_BUILD_ROOT/%{_prefix}/lib/
-mkdir -p $RPM_BUILD_ROOT/%{_includedir}
-mkdir -p $RPM_BUILD_ROOT/%{_includedir}/SDL2/
-cp libSDL_bgi.so $RPM_BUILD_ROOT/%{_prefix}/lib/
-cp SDL_bgi.h $RPM_BUILD_ROOT/%{_includedir}/SDL2/
+mkdir -p $RPM_BUILD_ROOT%{_libdir}
+mkdir -p $RPM_BUILD_ROOT%{_includedir}
+mkdir -p $RPM_BUILD_ROOT%{_includedir}/SDL2
+cp libSDL_bgi.so $RPM_BUILD_ROOT%{_libdir}
+cp SDL_bgi.h $RPM_BUILD_ROOT%{_includedir}/SDL2
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -51,12 +51,12 @@ if [ -r /usr/include/graphics.h ]; then
 fi
 
 %files
-%doc AUTHORS ChangeLog doc/* LICENSE README.md test/ TODO VERSION
-%attr(755,root,root) %{_prefix}/lib/*
+%doc AUTHORS ChangeLog doc/* LICENSE test/ TODO VERSION
+%attr(755,root,root) %{_libdir}/*
 %attr(644,root,root) %{_includedir}/SDL2/*
 
 %changelog
-* Sun Jun 5 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.0
+* Sun Dec 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.0
 - Rebuilt for Fedora
 * Thu Nov 6 2014 Guido Gonzato <guido.gonzato at gmail.com>
 - This is a generic rpm, buildable on Ubuntu

@@ -2,7 +2,7 @@
 
 Summary: Simple, elegant, Pythonic functional programming
 Name: coconut
-Version: 2.0.0
+Version: 2.1.1
 Release: 1
 License: Apache 2.0
 Group: Development/Languages
@@ -33,5 +33,5 @@ for simple, elegant, Pythonic functional programming.
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
+* Sun Jan 01 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.1
 - Rebuilt for Fedora

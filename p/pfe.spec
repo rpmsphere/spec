@@ -46,7 +46,11 @@ have a prefix to distinguish them from other symbols.
 
 %prep
 %setup -q
+%ifarch aarch64
+cp -f /usr/lib/rpm/redhat/config.* uses
+%endif
 sed -i 's|python|python2|' doc/Makefile*
+sed -i 's|-W,--warn-common||' pfe/configure*
 #sed -i 's|fprintf(f, \*p);|fprintf(f, "%s", *p);|' pfe/option-set.c
 # % configure - the configure macro has weird interactions with pfe builds
 export pfemoduleslibdir=%{_libdir}
@@ -127,5 +131,5 @@ rm -rf %{buildroot}
      %{_libdir}/pkgconfig/*.pc
 
 %changelog
-* Sun Dec 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.33.71
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.33.71
 - Rebuilt for Fedora

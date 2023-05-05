@@ -13,7 +13,7 @@ Source2:	myconfig.lua
 Requires:	liquidfeedback-core
 Requires:	lua
 Requires:	webmcp
-BuildRequires:  postgresql-devel
+#BuildRequires:  libpq-devel / postgresql-devel
 BuildRequires:	rocketwiki-lqfb
 URL:		http://liquidfeedback.org/
 
@@ -30,7 +30,7 @@ sed -i 's|liquid_feedback_testing/app|%{_name}|' fastpath/getpic.c
 
 %build
 make -C fastpath
-LANG=zh_TW.UTF-8 make -C locale
+LANG=en_US.UTF-8 make -C locale
 
 %install
 %__rm -rf %{buildroot}
@@ -56,5 +56,5 @@ sed -i '/liquidfeedback/d' /etc/lighttpd/modules.conf
 /etc/lighttpd/conf.d/liquidfeedback.conf
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.2
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.2
 - Rebuilt for Fedora

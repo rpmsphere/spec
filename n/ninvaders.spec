@@ -1,10 +1,10 @@
 Name:           ninvaders
-Version:        0.1.1
-Release:        20
+Version:        0.1.2
+Release:        2
 Summary:        Space Invaders clone written in ncurses for cli gaming
 License:        GPLv2+
-URL:            http://ninvaders.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:            https://dettus.net/ninvaders/
+Source0:        https://dettus.net/%{name}/%{name}-%{version}.tar.bz2
 Patch0:         ninvaders-0.1.1-fedora.patch
 BuildRequires:  gcc
 BuildRequires:  ncurses-devel
@@ -26,14 +26,15 @@ make %{?_smp_mflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -Dp -m0755 nInvaders %{buildroot}%{_bindir}/nInvaders
+install -Dp -m0755 nInvaders %{buildroot}%{_bindir}/%{name}
 
 %files
 %doc ChangeLog README gpl.txt
-%{_bindir}/nInvaders
+%{_bindir}/%{name}
 
 %changelog
-* Mon Nov 23 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.1
+* Sun Apr 30 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.2
+- Rebuilt for Fedora
 * Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.1.1-20
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
 * Fri Feb 01 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.1.1-19

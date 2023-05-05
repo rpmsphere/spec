@@ -1,3 +1,4 @@
+%global __spec_install_post %{nil}
 %undefine _debugsource_packages
 
 Name: kconfigure
@@ -69,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/icons/*
 
 %changelog
-* Sun Apr 07 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
+* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
 - Rebuilt for Fedora
 * Tue Oct 04 2005 X-Stranger <xstranger@altlinux.ru> 2.1-alt2
 - rpath disabled

@@ -1,5 +1,5 @@
 Name:           pyradio
-Version:        0.8.9.16
+Version:        0.8.9.28
 Release:        1
 Summary:        Curses based internet radio player
 License:        MIT
@@ -39,7 +39,7 @@ install -Dm0644 pyradio.1 %{buildroot}%{_mandir}/man1/pyradio.1
 %{python3_sitelib}/*
 
 %changelog
-* Sun Apr 3 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.9.16
+* Sun Nov 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.9.28
 - Rebuilt for Fedora
 * Mon Sep  6 2021 malcolmlewis@opensuse.org
 - Updated to version 0.8.9.9:

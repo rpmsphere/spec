@@ -2,7 +2,7 @@
 
 Name: linapple
 Summary: Apple2 emulator for Linux
-Version: 2.2.1
+Version: 2.3.0
 Release: 1
 Group: Emulators
 License: GPL
@@ -17,9 +17,11 @@ It derives from AppleWin, and almost as powerful as AppleWin is.
 
 %prep
 %setup -q -n %{name}-master
+#sed -i '1i #include <unistd.h>' src/Timer.cpp src/Frame.cpp src/SerialComms.cpp
 sed -i 's|-Wall|-fpermissive|' Makefile
 
 %build
+#cd src
 %make_build
 
 %install
@@ -37,5 +39,5 @@ install -Dm644 build/etc/linapple/linapple.conf %{buildroot}/etc/linapple/linapp
 %__rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Jun 19 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.1
+* Sun Nov 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.0
 - Rebuilt for Fedora

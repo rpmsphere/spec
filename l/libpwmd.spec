@@ -1,13 +1,13 @@
 %global __os_install_post %{nil}
 
 Name:           libpwmd
-Version:        6.0.2
-Release:        7.1
+Version:        8.4.2
+Release:        2
 Summary:        A library to patch applications to send commands to PWMD
 Group:          Applications/System
 License:        GPLv2+
 URL:            http://bjk.sourceforge.net/pwmd/
-Source0:        http://downloads.sourceforge.net/bjk/%{name}-%{version}.tar.gz
+Source0:        http://downloads.sourceforge.net/bjk/%{name}-v%{version}.tar.gz
 BuildRequires:  libassuan-devel
 BuildRequires:  libgpg-error-devel
 BuildRequires:  cracklib-devel
@@ -15,7 +15,7 @@ BuildRequires:  cracklib-devel
 BuildRequires:  libssh2-devel
 BuildRequires:  c-ares-devel
 BuildRequires:  gettext
-Requires:       pwmd
+#Requires:       pwmd
 
 %description
 This is a library making it easy to patch applications to send commands to
@@ -41,44 +41,36 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%setup -q
+%setup -q -n %{name}-v%{version}
 
 %build
 export LDFLAGS=-lgpg-error
+./autogen.sh
 %configure --disable-static \
-           --enable-quality \
-           --with-pth=no
+           --enable-quality
 make
 
 %install
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
-%find_lang %{name}
 find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
-
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
-%doc ChangeLog COPYING NEWS README TODO
+%files
+%doc COPYING NEWS README TODO
 %{_mandir}/man*/*.*
 %{_bindir}/pwmc
 %{_libdir}/%{name}.so.*
-#%{_libdir}/%{name}-pth.so.*
 
 %files devel
-%doc KnownBugs 
 %{_includedir}/*.h
 %{_libdir}/%{name}.so
-#%{_libdir}/%{name}-*.so
-%{_libdir}/pkgconfig/%{name}.pc
-#%{_libdir}/pkgconfig/%{name}-pth.pc
+%{_libdir}/pkgconfig/%{name}*.pc
 
 %changelog
-* Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0.2
+* Sun Nov 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 8.4.2
 - Rebuilt for Fedora
 * Fri Jul 17 2009 Fabian Affolter <fabian@bernewireless.net> - 6.0.2-1
 - Added new -devel package

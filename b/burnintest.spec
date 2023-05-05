@@ -3,8 +3,8 @@
 
 Summary: 	PC Reliability and Load Testing
 Name: 		burnintest
-Version: 	4.1
-Release: 	1002.bin
+Version: 	5.0
+Release: 	1003.bin
 License: 	Commercial, free 30 day evaluation
 Group:		Hardware/Tools
 Source0:	https://www.passmark.com/downloads/bitlinux.tar.gz
@@ -27,15 +27,9 @@ and stability.
 %install
 mkdir -p %{buildroot}%{_libexecdir}/%{name}
 mkdir -p %{buildroot}%{_bindir}
-%ifarch x86_64
-cp 64bit/* %{buildroot}%{_libexecdir}/%{name}
+cp -a * %{buildroot}%{_libexecdir}/%{name}
 ln -s ../libexec/%{name}/bit_gui_x64 %{buildroot}%{_bindir}/%{name}
 ln -s ../libexec/%{name}/bit_cmd_line_x64 %{buildroot}%{_bindir}/%{name}-cli
-%else
-cp 32bit/* %{buildroot}%{_libexecdir}/%{name}
-ln -s ../libexec/%{name}/bit_gui_x32 %{buildroot}%{_bindir}/%{name}
-ln -s ../libexec/%{name}/bit_cmd_line_x32 %{buildroot}%{_bindir}/%{name}-cli
-%endif
 chmod 777 %{buildroot}%{_libexecdir}/%{name}/savedkey.dat
 install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 install -Dm644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
@@ -52,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sun Feb 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1
+* Sun Jan 29 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0
 - Initial binary package

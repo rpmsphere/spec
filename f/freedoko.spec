@@ -31,6 +31,7 @@ BuildRequires:  texlive-gsftopk
 BuildRequires:	w3m
 BuildRequires:	asciidoc
 BuildRequires:	zlib-devel
+BuildRequires:  freealut-devel
 
 %description
 FreeDoko is a Doppelkopf-game, written by Borg Enders and

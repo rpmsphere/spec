@@ -2,7 +2,7 @@
 %global _default_patch_fuzz 2
 
 Name:		gitea
-Version:	1.15.6
+Version:	1.18.0
 Release:	1
 Summary:	Git with a cup of tea, painless self-hosted git service
 License:	MIT
@@ -29,7 +29,8 @@ and Gitlab. Gitea is a fork of Gogs.
 
 %build
 export GOPATH="`pwd`/.godeps"
-TAGS="bindata sqlite sqlite_unlock_notify pam" make VERSION=%version generate all
+export LDFLAGS='-X "main.MakeVersion=GNU Make 4.3" -X "main.Version=%{version}" -X "main.Tags=bindata sqlite sqlite_unlock_notify pam"'
+TAGS="bindata sqlite sqlite_unlock_notify pam" make VERSION=%{version} generate all
 
 %install
 mkdir -p %buildroot/srv/%{name}
@@ -63,5 +64,5 @@ userdel gitea
 %doc *.md
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.15.6
+* Sun Jan 01 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.18.0
 - Rebuilt for Fedora

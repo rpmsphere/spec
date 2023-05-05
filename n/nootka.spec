@@ -15,6 +15,8 @@ BuildRequires:  pulseaudio-libs-devel
 BuildRequires:  alsa-lib-devel
 BuildRequires:  pkgconfig(vorbis)
 BuildRequires:  pkgconfig(ogg)
+BuildRequires:  qt5-qtquickcontrols2-devel
+BuildRequires:  pipewire-jack-audio-connection-kit-devel
 
 %description
 Nootka is open-source application
@@ -37,7 +39,7 @@ Czech, French, German, Polish and Russian translations
 sed -i 's|-std=|-Wno-narrowing -std=|' src/CMakeLists.txt
 
 %build
-%cmake
+%cmake -DJACK_LIBRARY=/usr/lib64/pipewire-0.3/jack/libjack.so
 %cmake_build
 
 %install
@@ -59,7 +61,7 @@ cp changes LICENSE *.md %{buildroot}%{_docdir}/%{name}
 %{_datadir}/metainfo/*
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.2
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.2
 - Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 1.0.1-4.mga5
 + Revision: 743953

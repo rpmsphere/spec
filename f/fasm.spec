@@ -5,7 +5,7 @@
 Summary:	Flat assembler
 Summary(pl):	  "Płaski" assembler
 Name:		fasm
-Version:	1.73.27
+Version:	1.73.30
 Release:	1
 License:	distributable
 Group:		Development/Tools
@@ -36,20 +36,11 @@ jest włączone.
 %setup -q -n %{name}
 
 %build
-%ifarch x86_64
 cd source/Linux/x64
 ../../../%{name}.x64 %{name}.asm
-%else
-cd source/Linux
-../../%{name} %{name}.asm
-%endif
 
 %install
-%ifarch x86_64
 install -Dm755 source/Linux/x64/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-%else
-install -Dm755 source/Linux/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 
 %changelog
-* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.73.27
+* Sun Jan 01 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.73.30
 - Rebuilt for Fedora
 * Sun Aug 29 2004 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org

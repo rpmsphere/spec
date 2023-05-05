@@ -55,7 +55,7 @@ find . -type f -not \( -name \*.gif -o -name \*.jpg -o -name \*.png -o -name \*.
 find . -type f -exec chmod -x {} \;
 
 %build
-make %{?_smp_mflags} DEBUGFLAGS="$RPM_OPT_FLAGS"
+make %{?_smp_mflags} DEBUGFLAGS="$RPM_OPT_FLAGS -Wno-narrowing"
 
 %install
 make install DESTDIR=$RPM_BUILD_ROOT DESTLIBDIR=$RPM_BUILD_ROOT%{_libdir} \
@@ -80,7 +80,7 @@ popd
 %{_libdir}/*-1.6.so
 
 %changelog
-* Sun Jul 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6
 - Rebuilt for Fedora
 * Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6-8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild

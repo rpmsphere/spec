@@ -1,5 +1,5 @@
 Name:             timekpr-next
-Version:          0.4.4
+Version:          0.5.4
 Release:          1
 Summary:          Keep control of computer usage
 Group:            System Environment/Daemons
@@ -73,12 +73,7 @@ update-desktop-database &> /dev/null || :
 %{_datadir}/icons/hicolor/48x48/apps/*
 %{_datadir}/icons/hicolor/64x64/apps/*
 %{_datadir}/icons/hicolor/scalable/apps/*
-%{_datadir}/locale/cs/LC_MESSAGES/*
-%{_datadir}/locale/de/LC_MESSAGES/*
-%{_datadir}/locale/fr/LC_MESSAGES/*
-%{_datadir}/locale/hu/LC_MESSAGES/*
-%{_datadir}/locale/it/LC_MESSAGES/*
-%{_datadir}/locale/lv/LC_MESSAGES/*
+%{_datadir}/locale/*/LC_MESSAGES/*
 %{_datadir}/metainfo/*
 %{_datadir}/polkit-1/actions/*
 %{_datadir}/timekpr
@@ -87,11 +82,11 @@ update-desktop-database &> /dev/null || :
 %{_sharedstatedir}/timekpr
 %{_sysconfdir}/dbus-1/system.d/*
 %{_sysconfdir}/logrotate.d/*
-%{_sysconfdir}/timekpr
+#{_sysconfdir}/timekpr
 %{_sysconfdir}/xdg/autostart/*
 
 %changelog
-* Sun Dec 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.4
+* Sun Nov 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.4
 - Rebuilt for Fedora
 * Tue Sep 8 2020 Eduards Bezverhijs <edzis@inbox.lv> - 0.4.3-1.0
 - Updated spec file for version 0.4.3

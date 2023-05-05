@@ -15,6 +15,7 @@ BuildRequires:  %{breq}
 BuildRequires:  qscintilla-qt5-devel
 BuildRequires:  enca-devel
 BuildRequires:  gcc-c++ cmake
+BuildRequires:  qtermwidget-devel
 
 %description
 Simple tabbed text editor with syntax highlighting for C++, Python, HTML, PHP,
@@ -46,7 +47,7 @@ XML, TeX, Makefiles, ini-files and patch-files
 %{_libdir}/libjuff*
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10
+* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10
 - Rebuilt for Fedora
 * Thu Apr 24 2008 TI_Eugene <ti.eugene@gmail.com> 0.2.1-1
 - Initial build on OBS

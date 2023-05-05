@@ -25,16 +25,16 @@ make
 
 %install
 %__rm -rf %{buildroot}
-%__mkdir_p %{buildroot}/opt/%{_name}
-%__install -m755 rocketwiki-lqfb rocketwiki-lqfb-compat %{buildroot}/opt/%{_name}
+%__mkdir_p %{buildroot}%{_bindir}
+%__install -m755 rocketwiki-lqfb rocketwiki-lqfb-compat %{buildroot}%{_bindir}
 
 %clean
 %__rm -rf %{buildroot}
 
 %files
 %doc LICENSE
-/opt/%{_name}
+%{_bindir}/*
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
 - Rebuilt for Fedora

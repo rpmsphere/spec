@@ -1,5 +1,5 @@
 Name: netperfmeter
-Version: 1.7.0
+Version: 1.9.3
 Release: 1
 Summary: Network performance meter for the UDP, TCP, MPTCP, SCTP and DCCP protocols
 License: GPL-3.0
@@ -24,16 +24,18 @@ can e.g. be used to create plots of the results.
 
 %prep
 %setup -q
-sed -i 's|sys/sysctl.h|linux/sysctl.h|' src/cpustatus.cc
+#sed -i 's|sys/sysctl.h|linux/sysctl.h|' src/cpustatus.cc
 
 %build
-autoreconf -if
-
-%configure
-make
+./autogen.sh
+#autoreconf -ifv
+#configure
+#make
 
 %install
 make install DESTDIR=%{buildroot}
+install -d %{buildroot}%{_datadir}/%{name}
+install -m644 src/*.R %{buildroot}%{_datadir}/%{name}
 
 %clean
 rm -rf "$RPM_BUILD_ROOT"
@@ -41,11 +43,10 @@ rm -rf "$RPM_BUILD_ROOT"
 %files
 %{_bindir}/*
 %{_datadir}/man/man1/*.1*
-%{_datadir}/netperfmeter/plot-netperfmeter-results.R
-%{_datadir}/netperfmeter/plotter.R
+%{_datadir}/netperfmeter
 
 %changelog
-* Sun Dec 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.0
+* Sun Jan 01 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.3
 - Rebuilt for Fedora
 * Fri Nov 04 2016 Thomas Dreibholz <dreibh@simula.no> 1.4.0~rc2.0
 - Initial RPM release

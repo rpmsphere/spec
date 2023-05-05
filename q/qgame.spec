@@ -1,3 +1,6 @@
+%global __spec_install_post %{nil}
+%undefine _debugsource_packages
+
 Name:           qgame
 Version:        0.4.1
 Release:        1
@@ -39,10 +42,10 @@ DESTDIR=$RPM_BUILD_ROOT make install
 %{_bindir}/*
 %{_includedir}/*
 %{_libdir}/lib*
-%{_mandir}/man1/qgame.1.gz
+%{_mandir}/man1/qgame.1*
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
 - Rebuilt for Fedora
 * Fri Sep 12 2008 Feather Mountain <john@ossii.com.tw> 0.4.1-1
 - Build for OSSII

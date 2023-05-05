@@ -1,7 +1,7 @@
 Name:           chroma
 BuildRequires:  SDL-devel SDL_image-devel freetype-devel gettext-devel ncurses-devel
 Summary:        Abstract puzzle game with complex patterns of colourful shapes
-Version:        1.15
+Version:        1.20
 Release:        1
 License:        GPLv2
 Group:          Amusements/Games/Action/Arcade
@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}-curses.png
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.15
+* Sun Jan 15 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.20
 - Rebuilt for Fedora
 * Mon Feb  1 2010 PVince81@yahoo.fr
 - Initial package

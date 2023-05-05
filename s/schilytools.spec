@@ -5,7 +5,7 @@
 
 Name: schilytools
 Version: 2021.09.18
-Release: 2
+Release: 3
 Source0: https://nav.dl.sourceforge.net/project/schilytools/schily-%{dashedver}.tar.bz2
 Summary: Replacements for common tools that resemble their Solaris counterparts
 URL: http://schilytools.sourceforge.net/
@@ -16,7 +16,7 @@ BuildRequires: pkgconfig(alsa)
 BuildRequires: pkgconfig(libpulse)
 Obsoletes: cdrkit < 1.1.11-11
 Obsoletes: cdrkit-genisoimage < 1.1.11-11
-Provides: cdrtools star smake btcflash
+Provides: cdrtools smake btcflash
 BuildRequires: recode
 
 %description
@@ -90,9 +90,11 @@ rm -rf %{buildroot}%{_mandir}/man3
 
 # Don't conflict with standard tools
 # The tools are still available via their s* name
-for i in make tar gnutar sh diff ctags isodebug isodump isoinfo isovfy cal od printf patch compare help translit; do
+for i in make tar gnutar sh diff ctags isodebug isodump isoinfo isovfy cal od printf patch compare help translit spax lndir bsh count calc rmt mkhybrid mkisofs scpio star; do
   if [ -f %{buildroot}%{_bindir}/$i ] ; then
     mv %{buildroot}%{_bindir}/$i %{buildroot}%{_bindir}/$i-schily
+  elif [ -f %{buildroot}%{_sbindir}/$i ] ; then
+    mv %{buildroot}%{_sbindir}/$i %{buildroot}%{_sbindir}/$i-schily
   fi
   if [ -f %{buildroot}%{_mandir}/man1/$i.1 ] ; then
     mv %{buildroot}%{_mandir}/man1/$i.1 %{buildroot}%{_mandir}/man1/$i-schily.1
@@ -111,6 +113,7 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 
 %files
 %{_bindir}/*-schily
+%{_sbindir}/*-schily
 %{_mandir}/man?/*-schily.*
 %{_prefix}/lib/cpp-schily
 #
@@ -124,8 +127,8 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 #{_bindir}/isoinfo
 #{_bindir}/isovfy
 %{_bindir}/readcd
-%{_bindir}/mkisofs
-%{_bindir}/mkhybrid
+#{_bindir}/mkisofs
+#{_bindir}/mkhybrid
 %{_sbindir}/mountcd
 %{_sbindir}/rscsi
 %{_datadir}/lib/siconv
@@ -144,22 +147,22 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 #{_mandir}/man8/isodump.8*
 #{_mandir}/man8/isoinfo.8*
 #{_mandir}/man8/isovfy.8*
-%{_mandir}/man8/mkhybrid.8*
-%{_mandir}/man8/mkisofs.8*
+#{_mandir}/man8/mkhybrid.8*
+#{_mandir}/man8/mkisofs.8*
 #
 %doc %{_docdir}/rmt
 %doc %{_docdir}/star
 %config(noreplace) %{_sysconfdir}/default/rmt
 %config(noreplace) %{_sysconfdir}/default/star
-%{_sbindir}/rmt
-%{_bindir}/scpio
-%{_bindir}/star
+#{_sbindir}/rmt
+#{_bindir}/scpio
+#{_bindir}/star
 %{_bindir}/suntar
 %{_bindir}/star_sym
 %{_bindir}/strar
-%{_mandir}/man1/rmt.1*
-%{_mandir}/man1/scpio.1*
-%{_mandir}/man1/star.1*
+#{_mandir}/man1/rmt.1*
+#{_mandir}/man1/scpio.1*
+#{_mandir}/man1/star.1*
 %{_mandir}/man1/suntar.1*
 %{_mandir}/man1/star_sym.1*
 %{_mandir}/man1/strar.1*
@@ -179,16 +182,16 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 %{_bindir}/admin
 %{_bindir}/bdiff
 %{_bindir}/bosh
-%{_bindir}/bsh
+#{_bindir}/bsh
 #{_bindir}/cal
-%{_bindir}/calc
+#{_bindir}/calc
 %{_bindir}/calltree
 %{_bindir}/cdc
 %{_bindir}/change
 %{_bindir}/comb
 #{_bindir}/compare
 %{_bindir}/copy
-%{_bindir}/count
+#{_bindir}/count
 %{_bindir}/cstyle.js
 #{_bindir}/ctags
 %{_bindir}/delta
@@ -204,7 +207,7 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 %{_bindir}/jsh
 %{_bindir}/krcpp
 %{_bindir}/label
-%{_bindir}/lndir
+#{_bindir}/lndir
 %{_bindir}/man2html
 %{_bindir}/match
 %{_bindir}/mdigest
@@ -239,7 +242,7 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 %{_bindir}/smt
 %{_bindir}/spaste
 %{_bindir}/spatch
-%{_bindir}/spax
+#{_bindir}/spax
 %{_bindir}/svr4.make
 %{_bindir}/tartest
 %{_bindir}/termcap
@@ -284,16 +287,16 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 %{_mandir}/man1/admin.1*
 %{_mandir}/man1/bdiff.1*
 %{_mandir}/man1/bosh.1*
-%{_mandir}/man1/bsh.1*
+#{_mandir}/man1/bsh.1*
 #{_mandir}/man1/cal.1*
-%{_mandir}/man1/calc.1*
+#{_mandir}/man1/calc.1*
 %{_mandir}/man1/calltree.1*
 %{_mandir}/man1/cdc.1*
 %{_mandir}/man1/change.1*
 %{_mandir}/man1/comb.1*
 #{_mandir}/man1/compare.1*
 %{_mandir}/man1/copy.1*
-%{_mandir}/man1/count.1*
+#{_mandir}/man1/count.1*
 %{_mandir}/man1/cstyle.1*
 %{_mandir}/man1/delta.1*
 #{_mandir}/man1/diff.1*
@@ -307,7 +310,7 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 %{_mandir}/man1/jsh.1*
 %{_mandir}/man1/krcpp.1*
 %{_mandir}/man1/label.1*
-%{_mandir}/man1/lndir.1*
+#{_mandir}/man1/lndir.1*
 %{_mandir}/man1/man2html.1*
 %{_mandir}/man1/match.1*
 %{_mandir}/man1/mdigest.1*
@@ -385,7 +388,7 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 %{_mandir}/man1/smt.1*
 %{_mandir}/man1/spaste.1*
 %{_mandir}/man1/spatch.1*
-%{_mandir}/man1/spax.1*
+#{_mandir}/man1/spax.1*
 %{_mandir}/man1/sysV-make.1*
 %{_mandir}/man1/tartest.1*
 %{_mandir}/man1/termcap.1*
@@ -409,5 +412,5 @@ mv %{buildroot}%{_prefix}/lib/cpp %{buildroot}%{_prefix}/lib/cpp-schily
 %{_mandir}/man8/sformat.8*
 
 %changelog
-* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.09.18
+* Sun Nov 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.09.18
 - Rebuilt for Fedora

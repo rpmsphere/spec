@@ -1,3 +1,6 @@
+%global __spec_install_post %{nil}
+%undefine _debugsource_packages
+
 Name:          sablotron
 Version:       1.0.3
 Release:       6.1
@@ -50,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %{_bindir}/sabcmd
 %{_libdir}/libsablot.so.*
-%{_mandir}/man1/sabcmd.1.gz
+%{_mandir}/man1/sabcmd.1*
 
 %files devel
 %{_bindir}/sablot-config
@@ -61,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_docdir}/html/*
 
 %changelog
-* Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.3
 - Rebuilt for Fedora
 * Tue May 29 2007 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.3-1mamba
 - update to 1.0.3

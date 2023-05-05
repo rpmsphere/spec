@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:           xmlbird
-Version:        1.2.9
-Release:        6.1
+Version:        1.2.12
+Release:        1
 License:        LGPLv3+
 Summary:        XML parser
 Group:          Development/Libraries/Other
@@ -32,10 +32,6 @@ Development files for the XML parser.
 %install
 ./install.py -d%{?buildroot}
 
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
-
 %files
 %{_libdir}/libxmlbird.so.*
 
@@ -43,11 +39,10 @@ Development files for the XML parser.
 %{_libdir}/libxmlbird.so
 %{_libdir}/pkgconfig/xmlbird.pc
 %{_includedir}/xmlbird.h
-%{_datadir}/vala/vapi
 %{_datadir}/vala/vapi/xmlbird.vapi
 
 %changelog
-* Tue Jan 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.9
+* Sun Nov 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.12
 - Rebuilt for Fedora
 * Wed Oct 28 2015 <johan.mattsson.m@gmail.com>
 - New upstream release

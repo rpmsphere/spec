@@ -34,6 +34,7 @@ BuildRequires:  cmake
 BuildRequires:  google-benchmark-devel
 BuildRequires:  zmqpp-devel
 BuildRequires:  jsoncpp-devel
+BuildRequires:  qt5-qtwebengine-devel
 Source0:        %{name}-%{version}.tar.gz
 
 %description
@@ -77,12 +78,10 @@ cp README.rst README
 
 %build
 %cmake .
-make %{?_smp_mflags}
+%cmake_build
 
 %install
-%make_install
-
-
+%cmake_install
 
 %clean
 rm -rf %{buildroot}
@@ -101,7 +100,7 @@ rm -rf %{buildroot}
 %{_libdir}/libyacas_mp.so
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.1
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.1
 - Rebuilt for Fedora
 * Sat Dec 27 2014 lars@linux-schulserver.de
 - update to 1.3.6:

@@ -1,3 +1,6 @@
+%global __spec_install_post %{nil}
+%undefine _debugsource_packages
+
 Name:			littlewizard
 Summary:		Development Environment for Children
 Version:		1.2.2
@@ -64,7 +67,7 @@ Headers and development files for %name.
 %{_libdir}/liblw.so
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.2
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.2
 - Rebuilt for Fedora
 * Thu Oct  9 2008 lars@linux-schulserver.de
 - fix filelist

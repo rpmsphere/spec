@@ -8,6 +8,7 @@ License: BSD-2-Clause
 Group: Development/Languages
 Source0: https://github.com/cognate-lang/cognate/archive/refs/tags/nightly.tar.gz#/%{name}-nightly.tar.gz
 URL: https://github.com/cognate-lang/cognate
+BuildRequires: vim-common
 
 %description
 Cognate is a small dynamic quasi-concatenative language for functional programming.

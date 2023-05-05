@@ -11,6 +11,8 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  gtk2-devel
 BuildRequires:  GConf2-devel
 BuildRequires:  gdk-pixbuf2-xlib-devel
+BuildRequires:  libgtop2-devel
+BuildRequires:  libwnck-devel
 
 %description
 With AllTray you can dock any application without a native tray icon into the
@@ -48,7 +50,7 @@ desktop-file-install --dir $RPM_BUILD_ROOT%{_datadir}/applications \
 %{_datadir}/locale/*/LC_MESSAGES/alltray.mo
 
 %changelog
-* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.6dev
+* Sun Mar 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.6dev
 - Rebuilt for Fedora
 * Wed Jul 24 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.71b-18
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild

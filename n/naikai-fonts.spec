@@ -1,6 +1,6 @@
 Name: naikai-fonts
 Summary: A free font family derived from setofont
-Version: 1.77
+Version: 1.89
 Release: 1
 Group: User Interface/X
 License: Open Font License 1.1
@@ -12,7 +12,7 @@ Requires: fontconfig
 
 %description
 Naikai Fonts are open source chinese fonts based on Seto Fonts,
-including 31933 characters and symbols.
+including 47417 characters and symbols.
 
 %prep
 %setup -q
@@ -34,5 +34,5 @@ install -m644 *.ttf %{buildroot}%{_datadir}/fonts/naikai
 %{_datadir}/fonts/naikai
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.77
+* Sun Jan 15 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.89
 - Rebuilt for Fedora

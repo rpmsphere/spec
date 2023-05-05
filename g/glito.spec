@@ -66,6 +66,7 @@ sed -i 's|png\.h|libpng12/png.h|' src/ImageGray.hpp
 sed -i '1i #include <cstdlib>' src/Image.hpp src/Skeleton.cpp
 
 %build
+cp -f /usr/lib/rpm/redhat/config.* .
 ./configure --prefix=%{_prefix} --disable-debug --disable-static --enable-optimize --enable-shared
 #--build=x86_64
 sed -i 's|-O2|-O2 -fpermissive -lz|' */Makefile
@@ -84,18 +85,14 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %doc COPYING NEWS README TODO
 %{_bindir}/glito
-%{_datadir}/doc/glito/COPYING
-%{_datadir}/doc/glito/manual_en.html
-%{_datadir}/doc/glito/manual_eo.html
-%{_datadir}/doc/glito/manual_fr.html
-%{_datadir}/locale/eo/LC_MESSAGES/glito.mo
-%{_datadir}/locale/fr/LC_MESSAGES/glito.mo
+%{_datadir}/doc/glito/manual_*.html
+%{_datadir}/locale/*/LC_MESSAGES/glito.mo
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 %exclude %{_datadir}/locale/locale.alias
 
 %changelog
-* Thu Mar 05 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
+* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
 - Rebuilt for Fedora
 * Mon Sep 05 2005 Mirco Mueller <macslow at bangang dot de> 1.1-2
 - fixed a ugly mishap in the .spec-file

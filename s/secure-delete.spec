@@ -3,13 +3,13 @@
 
 Name:		secure-delete
 Version:	3.1
-Release:	4.1
+Release:	5
 Summary:	Tools to wipe files, free disk space, swap and memory
 License:	GPLv1
 Group:		System/Base
 URL:		http://www.thc.org/
 Source0:	https://www.thc.org/download.php?t=r&f=%{pkgname}-%{version}.tar.gz
-Patch0:	secure_delete-3.1.mga.diff
+Patch0:		secure_delete-3.1.mga.diff
 
 %description
 Even if you overwrite a file 10+ times, it can still be recovered. This
@@ -28,6 +28,7 @@ make
 make install \
 	INSTALL_DIR=%{buildroot}%{_bindir} \
 	MAN_DIR=%{buildroot}%{_mandir} 
+install -Dm644 srm.1 %{buildroot}%{_mandir}/man1/sdel.1
 
 %files
 %doc CHANGES FILES README *.doc
@@ -35,7 +36,7 @@ make install \
 %{_mandir}/man1/*
 
 %changelog
-* Wed May 20 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
+* Sun Jan 01 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
 - Rebuilt for Fedora
 * Sun Jan 26 2014 david.david (MLO Team) <david.david> 3.1-3.mga4
 + Rebuild package for Mageia 4 (Core\MLO)

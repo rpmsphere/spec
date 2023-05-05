@@ -13,6 +13,7 @@ BuildRequires:  pkgconfig(QtCore)
 BuildRequires:  pkgconfig(QtGui)
 BuildRequires:  pkgconfig(QtNetwork)
 BuildRequires:  pkgconfig(QtXml)
+BuildRequires:  libqxt-devel
 
 %description
 HotShots is an application for capturing screens and saving them in
@@ -62,7 +63,7 @@ sed -i 's|/.*/||' %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
 
 %changelog
-* Mon Oct 20 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
+* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
 - Rebuilt for Fedora
 * Tue May 21 2013 lazy.kent@opensuse.org
 - Update to 1.1.1.

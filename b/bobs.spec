@@ -33,7 +33,8 @@ bobs as xscreensaver-hack
 
 %prep
 %setup -q
-./configure --prefix=/usr
+#./configure --prefix=/usr
+%configure
 
 %build
 make %{?_smp_mflags}
@@ -72,7 +73,7 @@ fi
 %{_datadir}/xscreensaver/hacks.conf.d/bobs.conf
 
 %changelog
-* Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3
 - Rebuilt for Fedora
 * Sat Apr 20 2013 josef radinger <cheese@nosuchhost.net> - 0.2.3-1
 - initial package

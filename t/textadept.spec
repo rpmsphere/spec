@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           textadept
-Version:        11.3
+Version:        11.4
 Release:        1
 Summary:        A ridiculously fast and extensible text editor
 URL:            http://foicica.com/textadept/
@@ -10,7 +10,7 @@ Group:          Productivity/Editors/Other
 Source0:        https://github.com/orbitalquark/textadept/archive/refs/tags/%{name}_%{version}.tar.gz#/%{name}-%{name}_%{version}.tar.gz
 Source1:        %{name}.desktop
 BuildRequires:  gcc-c++
-BuildRequires:  gtk2-devel
+BuildRequires:  gtk3-devel
 BuildRequires:  libpng-devel
 BuildRequires:  zlib-devel
 BuildRequires:  freetype-devel
@@ -32,8 +32,7 @@ a very small footprint. In fact, most of Textadept is written in Lua.
 %build
 cd src
 make deps
-make
-#make GTK3=1
+make GTK3=1
 make curses
 
 %install
@@ -65,7 +64,7 @@ install -D -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.de
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Jun 5 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 11.3
+* Sun Jan 29 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 11.4
 - Rebuilt for Fedora
 * Tue Jul 19 2011 dbuck@example.com
 - initial SuSE release with version 3.9

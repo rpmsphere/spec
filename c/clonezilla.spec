@@ -1,6 +1,6 @@
 Summary:	Opensource Clone System (ocs), clonezilla
 Name:		clonezilla
-Version:	4.5.11
+Version:	5.2.7
 Release:	1
 License:	GPLv2+
 Group:		Archiving/Backup
@@ -8,11 +8,11 @@ URL:		http://www.clonezilla.org
 Source0:	http://free.nchc.org.tw/drbl-core/src/stable/%{name}-%{version}.tar.xz
 Patch0:		ambiguous-python-shebang.patch
 BuildArch:	noarch
-Requires:	drbl >= 2.30.5
-Requires:	partimage >= 0.6.7
+Requires:	drbl
+Requires:	partimage
 Requires:	psmisc
 Requires:	udpcast
-Requires:	partclone >= 0.2.91
+Requires:	partclone
 Requires:	ntfsprogs
 Requires:	dialog
 
@@ -43,7 +43,7 @@ For more info, check http://clonezilla.org, http://clonezilla.nchc.org.tw.
 %{_sysconfdir}/drbl/*
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.5.11
+* Sun Nov 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2.7
 - Rebuilt for Fedora
 * Sun Dec 06 2020 luigiwalser <luigiwalser> 3.35.2-1.mga8
 + Revision: 1654011

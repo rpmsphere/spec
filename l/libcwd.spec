@@ -70,7 +70,7 @@ Authors:
 %build
 %configure
 #sed -i 's|^typedef .*|typedef unsigned int getgroups_t;|' include/sys.h
-#sed -i 's|-Wall|-Wall -fpermissive|' Makefile
+sed -i 's|-Wall|-Wall -fpermissive|' Makefile
 make
 
 %install
@@ -97,7 +97,7 @@ rm -rf "$RPM_BUILD_ROOT"
 %{_libdir}/pkgconfig/libcwd_r.pc
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.2
 - Rebuilt for Fedora
 * Sun Jul 27 2008 Pascal Bleser <guru@unixtech.be> 1.0.0
 - new package

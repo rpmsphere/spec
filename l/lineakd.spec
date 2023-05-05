@@ -1,3 +1,4 @@
+%global __spec_install_post %{nil}
 %undefine _debugsource_packages
 
 Name:           lineakd
@@ -69,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*.so
 
 %changelog
-* Fri Apr 15 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
 - Rebuilt for Fedora
 * Thu Jan 06 2011 Funda Wang <fwang@mandriva.org> 0.9-4mdv2011.0
 + Revision: 629146

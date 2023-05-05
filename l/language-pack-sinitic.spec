@@ -1,6 +1,6 @@
 Name: language-pack-sinitic
 Summary: Translations for some sinitic languages
-Version: 2022.9
+Version: 2023.4
 Release: 1
 License: Open Source
 Group: Translations
@@ -100,6 +100,7 @@ make
 %{_datadir}/skychart/data/language/skychart.cmn*.po
 %{_datadir}/texlive/tlpkg/translations/cmn*.po
 %{_datadir}/*/*/*/cmn*/LC_MESSAGES/*.mo
+/opt/wemeet/bin/*_cmn*.qm
 
 %files -n language-pack-yue
 %{_datadir}/locale/yue*/LC_MESSAGES/*.mo
@@ -162,10 +163,11 @@ make
 %{_datadir}/skychart/data/language/skychart.yue*.po
 %{_datadir}/texlive/tlpkg/translations/yue*.po
 %{_datadir}/*/*/*/yue*/LC_MESSAGES/*.mo
+/opt/wemeet/bin/*_yue*.qm
 
 %clean
 rm -rf %{buildroot}
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.9
-- Rebuilt for Fedora
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2023.4
+- Initial package

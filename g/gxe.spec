@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:           gxe
-Version:        1.28
-Release:        16.4
+Version:        1.29
+Release:        1
 License:        GPLv2
 Group:          Productivity/Security
 BuildRequires:  ncurses-devel
@@ -28,7 +28,7 @@ function is provided to analyze logfile etc by Excel.
 
 %build
 %configure
-sed -i 's|-O0|-O0 -fPIC -Wl,--allow-multiple-definition|' Makefile */Makefile */*/Makefile
+sed -i -e 's|-O0|-O0 -fPIC -Wl,--allow-multiple-definition|' -e 's|-Werror=format-security||' Makefile */Makefile */*/Makefile
 make
 
 %install
@@ -41,11 +41,11 @@ rm -rf %{buildroot}
 
 %files
 %{_bindir}/*
-%{_datadir}/gnome/help/gxe
+%{_datadir}/help/gxe
 %{_datadir}/pixmaps/gxe
 
 %changelog
-* Thu Jan 07 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.28
+* Sun Jan 15 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.29
 - Rebuilt for Fedora
 * Fri Jan 20 2012 mrueckert@suse.de
 - initial package

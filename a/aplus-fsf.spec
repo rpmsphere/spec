@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name: aplus-fsf
 Version: 4.22
 Release: 4
@@ -33,7 +35,11 @@ sed -i '11i #include <cstddef>' src/MSTypes/MSTypeData.H
 
 %build
 export CXXFLAGS="-O2 -fpermissive -Wno-narrowing -fPIE -fPIC -lX11" CFLAGS="-O2 -Wno-narrowing -fpermissive -fPIE -fPIC -lX11"
+%ifarch aarch64
+autoreconf -ifv
+%endif
 ./configure --prefix=/usr
+sed -i 's|-L | |' Makefile */Makefile */*/Makefile
 %make_build
 
 %install
@@ -57,5 +63,5 @@ mv %{buildroot}/usr/lib/lib* %{buildroot}%{_libdir}/%{name}
 %{_libdir}/%{name}
 
 %changelog
-* Fri Feb 26 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 4.22
+* Sun Mar 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 4.22
 - Rebuilt for Fedora

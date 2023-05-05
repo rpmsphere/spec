@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		evilwm
-Version:	1.4.0
+Version:	1.4.2
 Release:	1
 URL:		http://evilwm.sourceforge.net/
 Source0:	http://www.6809.org.uk/evilwm/%{name}-%{version}.tar.gz
@@ -45,5 +45,5 @@ sed -i 's|-Wall|-fPIE|' Makefile
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0
+* Sun Nov 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.2
 - Rebuilt for Fedora

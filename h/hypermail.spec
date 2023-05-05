@@ -17,6 +17,7 @@ Patch5:         nonstaticpcre.patch
 Patch6:         strip.patch
 Patch7:         hypermail-2.2.0-comparison.diff
 Patch9:         hypermail-2.2.0_bad-interpreter.patch
+BuildRequires:  libtrio-devel
 %define apache_serverroot /usr/share/httpd
 
 %description
@@ -97,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_docdir}/%{name}
 
 %changelog
-* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
+* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0
 - Rebuilt for Fedora
 * Mon Nov 23 2009 pgajdos@suse.cz
 - refreshed audit.patch to build with fuzz=0

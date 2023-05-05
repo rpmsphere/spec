@@ -90,6 +90,7 @@ rm -rf %{buildroot}
 
 %files -n python-%{name}
 %{python3_sitearch}/*
+%{python3_sitelib}/*
 
 #files -n octave-%{name}
 #dir %{_libdir}/octave/*/site
@@ -99,7 +100,7 @@ rm -rf %{buildroot}
 #{_datadir}/octave/*/site/m/*
 
 %changelog
-* Tue Dec 23 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.2
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.2
 - Rebuilt for Fedora
 * Sun Aug 19 2012 scorot@free.fr
 - again fix build on x86_64

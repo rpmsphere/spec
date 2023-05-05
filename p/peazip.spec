@@ -3,17 +3,15 @@
 %undefine _debugsource_packages
 
 Name:    peazip
-#Version: 6.9.2
-Version: 6.6.1
-Release: 1
+Version: 9.0.0
+Release: 2
 Summary: File and archive manager
 License: LGPLv3
 Group:   Applications/Archiving
-Url:     http://www.peazip.org/peazip-linux.html
+URL:     http://www.peazip.org/peazip-linux.html
 Source0: http://sourceforge.net/projects/%{name}/files/%{version}/%{name}-%{version}.src.zip
 # configure to run in users home appdata
 Source1: altconf.txt
-Patch1:  peazip-desktop.patch
 
 BuildRequires: fpc
 BuildRequires: fpc-src
@@ -29,6 +27,7 @@ BuildRequires: qtwebkit-devel
 Provides:  peazip-common%{?_isa} = %{version}-%{release}
 Obsoletes: peazip-common < %{version}-%{release}
 Obsoletes: peazip-qt < %{version}-%{release}
+Recommends: p7zip-plugins
 
 %description
 PeaZip is a cross-platform portable file and archiver manager.
@@ -51,8 +50,6 @@ Default package provides the GTK2 graphical interface.
 
 %prep
 %setup -q -n %{name}-%{version}.src
-chmod +w res/lang
-%patch1 -p1
 
 %build
 %if %{with qt}
@@ -60,13 +57,13 @@ WGT=qt
 %else
 WGT=gtk2
 %endif
-
+cd dev
 lazbuild --lazarusdir=%{_libdir}/lazarus \
 %ifarch x86_64
 	--cpu=x86_64 \
 %endif
     --widgetset=${WGT} \
-    -B project_peach.lpr project_pea.lpr project_gwrap.lpr
+    -B project_pea.lpr project_peach.lpr
 #project_demo_lib.lpi
 
 %install
@@ -76,23 +73,28 @@ mkdir -p %{buildroot}%{_datadir}/peazip
 %{__cp} %{SOURCE1} %{buildroot}%{_datadir}/peazip/res
 
 #install helper apps
-mkdir -p %{buildroot}%{_datadir}/peazip/res/7z
-mkdir -p %{buildroot}%{_datadir}/peazip/res/upx
-ln -s ../../../../..%{_bindir}/7z  %{buildroot}%{_datadir}/peazip/res/7z
-ln -s ../../../../..%{_bindir}/upx  %{buildroot}%{_datadir}/peazip/res/upx
+#mkdir -p %{buildroot}%{_datadir}/peazip/res/7z
+#mkdir -p %{buildroot}%{_datadir}/peazip/res/upx
+ln -s ../../../../../..%{_bindir}/7z  %{buildroot}%{_datadir}/peazip/res/bin/7z
+ln -s ../../../../../..%{_bindir}/arc  %{buildroot}%{_datadir}/peazip/res/bin/arc
+ln -s ../../../../../..%{_bindir}/brotli  %{buildroot}%{_datadir}/peazip/res/bin/brotli
+ln -s ../../../../../..%{_bindir}/upx  %{buildroot}%{_datadir}/peazip/res/bin/upx
+ln -s ../../../../../..%{_bindir}/zpaq  %{buildroot}%{_datadir}/peazip/res/bin/zpaq
+ln -s ../../../../../..%{_bindir}/zstd  %{buildroot}%{_datadir}/peazip/res/bin/zstd
 
+cd dev
 # peazip needs to be in %{_datadir}/peazip because at start need to read res/altconf.txt
 install peazip %{buildroot}%{_datadir}/peazip
 ln -s ../..%{_datadir}/peazip/peazip %{buildroot}%{_bindir}
-install pealauncher %{buildroot}%{_datadir}/peazip/res
-ln -s ../..%{_datadir}/peazip/res/pealauncher %{buildroot}%{_bindir}
+#install pealauncher %{buildroot}%{_datadir}/peazip/res
+#ln -s ../..%{_datadir}/peazip/res/pealauncher %{buildroot}%{_bindir}
 install pea %{buildroot}%{_datadir}/peazip/res
 ln -s ../..%{_datadir}/peazip/res/pea %{buildroot}%{_bindir}
 
 mkdir -p %{buildroot}%{_datadir}/applications
 desktop-file-install --dir %{buildroot}%{_datadir}/applications \
-                     FreeDesktop_integration/peazip.desktop
-install -Dm644 FreeDesktop_integration/%{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
+                     ../res/share/batch/freedesktop_integration/peazip.desktop
+install -Dm644 ../res/share/batch/freedesktop_integration/%{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 # IHMO if this is necessary should be done outside of rpmbuild.
 ## move and convert peazip icon
@@ -105,17 +107,17 @@ install -Dm644 FreeDesktop_integration/%{name}.png %{buildroot}%{_datadir}/pixma
 
 %files
 %doc readme*
-%license copying.txt
+%license dev/copying_we.txt
 %{_bindir}/peazip
 %{_bindir}/pea
-%{_bindir}/pealauncher
+#{_bindir}/pealauncher
 #{_datadir}/icons/hicolor/*/apps/*.png
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applications/*.desktop
 %{_datadir}/peazip
 
 %changelog
-* Thu Sep 05 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 6.6.1
+* Wed Dec 21 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 9.0.0
 - Rebuilt for Fedora
 * Tue Feb 20 2018 Sérgio Basto <sergio@serjux.com> - 6.5.1-1
 - Updated to 6.5.1

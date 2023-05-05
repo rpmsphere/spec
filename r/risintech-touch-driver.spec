@@ -47,7 +47,8 @@ ln -sf $LIB_DIR/libLinear.so.1.0 %{buildroot}%{_libdir}/%{name}/libLinear.so.1
 install -Dm755 22.1/risintech_drv.so %{buildroot}%{_libdir}/xorg/modules/input/risintech_drv.so
 echo 1 > %{buildroot}%{_sysconfdir}/tpinit
 
-%post -p /sbin/ldconfig
+%post
+/usr/sbin/ldconfig
 setdev --mouse default
 setpdrv -s -y
 chgxorg -y 2 1

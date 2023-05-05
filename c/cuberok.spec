@@ -17,28 +17,11 @@ Requires:	cuberok_engine >= %version
 Cuberok is yet another audio player based on Qt4.
 It has lightweight interface, music collection support and many features, e.g. music autorating and Last.FM scrobbler.
 
-%package gstreamer
-Summary:	GStreamer Output Plugin for cuberok
-Group:		Productivity/Multimedia/Sound/Players
-Requires:	cuberok = %version
-Provides:	cuberok_engine = %version
-
-%description gstreamer
-cuberok media player can play via GStreamer using this plugin.
-
-%package phonon
-Summary:	Phonon Output Plugin for cuberok
-Group:		Productivity/Multimedia/Sound/Players
-Requires:	cuberok = %version
-Provides:	cuberok_engine = %version
-
-%description phonon
-cuberok media player can play via GStreamer using this plugin.
-
 %prep
 %setup -q -n trunk-%{version}
 # hack
 sed -i 's/X-SuSE-translate-true//' %{name}.desktop
+sed -i 's|CUBEROK_PLUGINS|"%{_libdir}/%{name}"|' src/*.cpp
 
 %build
 qmake-qt4 CONFIG+=player_phonon CONFIG+=disable_ffmpeg Cuberok.pro
@@ -47,13 +30,10 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %{makeinstall} INSTALL_ROOT=$RPM_BUILD_ROOT/usr
+mkdir -p %{buildroot}%{_libdir}/%{name}
 
 %clean
 %__rm -rf $RPM_BUILD_ROOT
-
-%post
-
-%postun
 
 %files
 %doc ChangeLog README license.txt
@@ -61,15 +41,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.xpm
 %{_datadir}/%{name}
-
-%files gstreamer
-%{_libdir}/%{name}
-
-%files phonon  
 %{_libdir}/%{name}
 
 %changelog
-* Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0.rev434
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0.rev434
 - Rebuilt for Fedora
 * Sat Feb 05 2011 Petr Vanek <petr@scribus.info> - 0.1.0
 - suse fixes

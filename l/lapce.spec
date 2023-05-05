@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           lapce
-Version:        0.1.3
+Version:        0.2.4
 Release:        1
 Summary:        Lightning-fast and Powerful Code Editor written in Rust
 License:        Apache-2.0
@@ -17,12 +17,11 @@ Science for text editing, and the Wgpu Graphics API for rendering.
 %autosetup
 
 %build
-#cargo build --profile release-lto
 cargo build --release
 
 %install
-install -Dm755 target/release-lto/%{name} %{buildroot}%{_bindir}/%{name}
-install -Dm755 target/release-lto/lapce-proxy %{buildroot}%{_bindir}/lapce-proxy
+install -Dm755 target/release/%{name} %{buildroot}%{_bindir}/%{name}
+install -Dm755 target/release/lapce-proxy %{buildroot}%{_bindir}/lapce-proxy
 install -Dm755 extra/linux/dev.lapce.lapce.desktop %{buildroot}/usr/share/applications/dev.lapce.lapce.desktop
 install -Dm766 extra/linux/dev.lapce.lapce.metainfo.xml %{buildroot}/usr/share/metainfo/dev.lapce.lapce.metainfo.xml
 install -Dm766 extra/images/logo.png %{buildroot}/usr/share/pixmaps/dev.lapce.lapce.png
@@ -37,5 +36,5 @@ install -Dm766 extra/images/logo.png %{buildroot}/usr/share/pixmaps/dev.lapce.la
 %{_datadir}/pixmaps/*.png
 
 %changelog
-* Sun Jul 17 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.3
+* Sun Dec 11 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
 - Rebuilt for Fedora

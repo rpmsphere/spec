@@ -94,7 +94,7 @@ install -m644 etc/isapnp.gone -D %{buildroot}%{_sysconfdir}/isapnp.gone
 %{_includedir}/isapnp
 
 %changelog
-* Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.27
+* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.27
 - Rebuild to Fedora
 * Sun Jun 15 2014 wally <wally> 1.27-4.mga5
 + Revision: 636634

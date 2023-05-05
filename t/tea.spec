@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		tea
-Version:	61.2.0
+Version:	62.0.2
 Release:	1
 Summary:	A text editor with the hundreds of features
 URL:		https://github.com/psemiletov/tea-qt
@@ -21,6 +21,7 @@ With an ultimate small size TEA provides you hundreds of functions.
 
 %prep
 %setup -q -n %{name}-qt-%{version}
+sed -i 's|62\.0\.1|62.0.2|' CMakeLists.txt meson.build tea-qmake.pro
 
 %build
 qmake-qt5
@@ -38,7 +39,7 @@ install -Dm 644 desktop/%{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/applications
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 61.2.0
+* Sun Nov 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 62.0.2
 - Rebuilt for Fedora
 * Sun Jul 11 2010 Detlef Reichelt <detlef@links2linux.de> - 28.1.0
 - new upstream version <28.1.0>

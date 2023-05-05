@@ -38,9 +38,10 @@ eleet as xscreensaver-hack
 
 %prep
 %setup -q
-./configure --prefix=/usr
 
 %build
+%configure
+#./configure --prefix=/usr
 make %{?_smp_mflags}
 
 %install
@@ -78,7 +79,7 @@ fi
 %{_datadir}//xscreensaver/hacks.conf.d/eleet.conf
 
 %changelog
-* Sun Apr 28 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
 - Rebuilt for Fedora
 * Mon Apr 08 2013 josef radinger <cheese@nosuchhost.net> - 0.3.3-3
 - fix dependency on core-package

@@ -27,6 +27,9 @@ is no stability check.
 %prep
 %setup -q
 sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' %{name}.desktop
+%ifarch aarch64
+sed -i 's|ASM_CODE (ret)|ret = 0|' cpufreq.cpp
+%endif
 
 %build
 qmake-qt4 systester.pro
@@ -57,7 +60,7 @@ rm -rf %{buildroot}
 %{_datadir}/pixmaps/*
 
 %changelog
-* Mon Mar 23 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.1
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.1
 - Rebuilt for Fedora
 * Thu Jun 28 2012 systester.project@gmail.com 1.5.1-1
 - PI and log files now lay on user's home directory (GUI only)

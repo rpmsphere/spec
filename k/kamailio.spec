@@ -1,5 +1,5 @@
 %define name    kamailio
-%define ver 5.5.3
+%define ver 5.6.3
 %define rel 1
 
 %if 0%{?fedora}
@@ -237,7 +237,6 @@
 %define PKGGROUP System Environment/Daemons
 %endif
 
-
 Summary:    Kamailio (former OpenSER) - the Open Source SIP Server
 Name:       %name
 Version:    %ver
@@ -276,7 +275,6 @@ Requires:  filesystem
 BuildRequires:  systemd, shadow
 %endif
 
-
 %description
 Kamailio (former OpenSER) is an Open Source SIP Server released under GPL, able
 to handle thousands of call setups per second. Among features: asynchronous TCP,
@@ -288,7 +286,6 @@ such as MySQL, Postgres, Oracle, Radius, LDAP, Redis, Cassandra; XMLRPC control
 interface, SNMP monitoring. It can be used to build large VoIP servicing
 platforms or to scale up SIP-to-PSTN gateways, PBX systems or media servers
 like Asterisk™, FreeSWITCH™ or SEMS.
-
 
 %if %{with jansson}
 %package    acc_json
@@ -314,7 +311,6 @@ BuildRequires:  jansson-devel
 Account transaction information in a JSON dictionary.
 %endif
 
-
 %package    auth-ephemeral
 Summary:    Functions for authentication using ephemeral credentials
 Group:      %{PKGGROUP}
@@ -324,7 +320,6 @@ BuildRequires:  openssl-devel
 %description    auth-ephemeral
 Functions for authentication using ephemeral credentials.
 
-
 %package    auth-xkeys
 Summary:    Functions for authentication using shared keys
 Group:      %{PKGGROUP}
@@ -332,7 +327,6 @@ Requires:   kamailio = %ver
 
 %description    auth-xkeys
 Functions for authentication using shared keys.
-
 
 %package    bdb
 Summary:    Berkeley database connectivity for Kamailio
@@ -354,7 +348,6 @@ BuildRequires:  libdb-devel
 %description    bdb
 Berkeley database connectivity for Kamailio.
 
-
 %package    carrierroute
 Summary:    The carrierroute module for Kamailio
 Group:      %{PKGGROUP}
@@ -363,7 +356,6 @@ Requires:   kamailio = %ver
 %description    carrierroute
 The carrierroute module for Kamailio.
 
-
 %package    cfgt
 Summary:    Unit test config file execution tracing module for Kamailio
 Group:      %{PKGGROUP}
@@ -371,7 +363,6 @@ Requires:   kamailio = %ver
 
 %description    cfgt
 The unit test config file execution tracing module for Kamailio. 
-
 
 %if %{with cnxcc}
 %package    cnxcc
@@ -384,7 +375,6 @@ BuildRequires:  libevent-devel, hiredis-devel
 Module which provides a mechanism to limit call duration based on credit information parameters for Kamailio.
 %endif
 
-
 %package    cpl
 Summary:    CPL (Call Processing Language) interpreter for Kamailio
 Group:      %{PKGGROUP}
@@ -393,7 +383,6 @@ BuildRequires:  libxml2-devel
 
 %description    cpl
 CPL (Call Processing Language) interpreter for Kamailio.
-
 
 %package    crypto
 Summary:    Module to support cryptographic extensions
@@ -419,7 +408,6 @@ BuildRequires:  libopenssl-devel
 %description    crypto
 This module provides various cryptography tools for use in Kamailio configuration file.  It relies on OpenSSL libraries for cryptographic operations (libssl, libcrypto). 
 
-
 %package    dialplan
 Summary:    String translations based on rules for Kamailio
 Group:      %{PKGGROUP}
@@ -429,7 +417,6 @@ BuildRequires:  pcre-devel
 %description    dialplan
 String translations based on rules for Kamailio.
 
-
 %package    dmq_userloc
 Summary:    User location records replication between multiple servers
 Group:      %{PKGGROUP}
@@ -437,7 +424,6 @@ Requires:   kamailio = %ver
 
 %description    dmq_userloc
 User location (usrloc) records replication between multiple servers via DMQ module for Kamailio.
-
 
 %if %{with dnssec}
 %package    dnssec
@@ -449,7 +435,6 @@ BuildRequires:  dnssec-tools-libs-devel
 %description    dnssec
 DNSSEC support for Kamailio.
 %endif
-
 
 %if %{with evapi}
 %package    evapi
@@ -465,7 +450,6 @@ Events can be generated for any event in Kamailio. For 3rd party transaction con
 suspended when sending the event, to be resumed at a later point, maybe triggered by an incoming message on the event socket.
 %endif
 
-
 %if %{with geoip}
 %package    geoip
 Summary:    MaxMind GeoIP support for Kamailio
@@ -477,7 +461,6 @@ BuildRequires:  GeoIP-devel
 MaxMind GeoIP support for Kamailio.
 %endif
 
-
 %package    gzcompress
 Summary:    Compressed body (SIP and HTTP) handling for kamailio
 Group:      %{PKGGROUP}
@@ -486,7 +469,6 @@ BuildRequires:  zlib-devel
 
 %description    gzcompress
 Compressed body (SIP and HTTP) handling for kamailio.
-
 
 %if %{with http_async_client}
 %package    http_async_client
@@ -527,7 +509,6 @@ BuildRequires:  libxml2-devel, libcurl-devel, zlib-devel
 %description    http_client
 This module implements protocol functions that use the libcurl to communicate with HTTP servers. 
 
-
 %if %{with ims}
 %package    ims
 Summary:    IMS modules and extensions module for Kamailio
@@ -538,7 +519,6 @@ BuildRequires:  libxml2-devel libmnl-devel
 %description    ims
 IMS modules and extensions module for Kamailio.
 %endif
-
 
 %if %{with jansson}
 %package    jansson
@@ -564,7 +544,6 @@ BuildRequires:  jansson-devel
 JSON string handling and RPC modules for Kamailio using JANSSON library.
 %endif
 
-
 %if %{with json}
 %package    json
 Summary:    JSON string handling and RPC modules for Kamailio
@@ -589,7 +568,6 @@ BuildRequires:  json-c-devel
 JSON string handling and RPC modules for Kamailio.
 %endif
 
-
 %if %{with kazoo}
 %package    kazoo
 Summary:    Kazoo middle layer connector support for Kamailio
@@ -608,7 +586,6 @@ BuildRequires:  libevent-devel
 Kazoo module for Kamailio.
 %endif
 
-
 %package    lcr
 Summary:    Least cost routing for Kamailio
 Group:      %{PKGGROUP}
@@ -617,7 +594,6 @@ BuildRequires:  pcre-devel
 
 %description    lcr
 Least cost routing for Kamailio.
-
 
 %package    ldap
 Summary:    LDAP search interface for Kamailio
@@ -654,7 +630,6 @@ BuildRequires:  lua-devel
 Lua extensions for Kamailio.
 %endif
 
-
 %if %{with memcached}
 %package    memcached
 Summary:    Memcached configuration file support for Kamailio
@@ -665,7 +640,6 @@ BuildRequires:  libmemcached-devel
 %description    memcached
 Memcached configuration file support for Kamailio.
 %endif
-
 
 %if %{with mongodb}
 %package    mongodb
@@ -678,7 +652,6 @@ BuildRequires:  mongo-c-driver-devel
 %description    mongodb
 MongoDB database connectivity for Kamailio.
 %endif
-
 
 %package    mysql
 Summary:    MySQL database connectivity for Kamailio
@@ -696,7 +669,6 @@ BuildRequires:  mysql-devel
 %description    mysql
 MySQL database connectivity for Kamailio.
 
-
 %package    outbound
 Summary:    Outbound (RFC 5626) support for Kamailio
 Group:      %{PKGGROUP}
@@ -706,7 +678,6 @@ BuildRequires:  openssl-devel
 %description    outbound
 RFC 5626, "Managing Client-Initiated Connections in the Session Initiation
 Protocol (SIP)" support for Kamailio.
-
 
 %if %{with perl}
 %package    perl
@@ -725,7 +696,6 @@ BuildRequires:  perl-ExtUtils-Embed
 Perl extensions and database driver for Kamailio.
 %endif
 
-
 %if %{with phonenum}
 %package    phonenum
 Summary:    Phonenum module the Kamailio
@@ -737,7 +707,6 @@ BuildRequires:  libphonenumber-devel libicu-devel protobuf-devel
 %description    phonenum
 Phonenum module the Kamailio.
 %endif
-
 
 %package    postgresql
 Summary:    PostgreSQL database connectivity for Kamailio
@@ -754,7 +723,6 @@ BuildRequires:  postgresql-devel
 %description    postgresql
 PostgreSQL database connectivity for Kamailio.
 
-
 %package    presence
 Summary:    SIP Presence (and RLS, XCAP, etc) support for Kamailio
 Group:      %{PKGGROUP}
@@ -770,7 +738,6 @@ BuildRequires:  libcurl-devel
 
 %description    presence
 SIP Presence (and RLS, XCAP, etc) support for Kamailio.
-
 
 %package    python
 Summary:    Python extensions for Kamailio
@@ -790,7 +757,6 @@ BuildRequires:  python3, python3-devel
 %description    python
 Python extensions for Kamailio.
 
-
 %if %{with rabbitmq}
 %package    rabbitmq
 Summary:    RabbitMQ related modules
@@ -801,7 +767,6 @@ BuildRequires:    librabbitmq-devel, libuuid-devel
 %description    rabbitmq
 RabbitMQ module for Kamailio.
 %endif
-
 
 %package    radius
 Summary:    RADIUS modules for Kamailio
@@ -818,7 +783,6 @@ BuildRequires:  radiusclient-ng-devel
 %description    radius
 RADIUS modules for Kamailio.
 
-
 %if %{with redis}
 %package    redis
 Summary:    Redis configuration file support for Kamailio
@@ -830,7 +794,6 @@ BuildRequires:  hiredis-devel
 Redis configuration file support for Kamailio.
 %endif
 
-
 %package    regex
 Summary:    PCRE mtaching operations for Kamailio
 Group:      %{PKGGROUP}
@@ -840,7 +803,6 @@ BuildRequires:  pcre-devel
 %description    regex
 PCRE mtaching operations for Kamailio.
 
-
 %package    rtjson
 Summary:    SIP routing based on JSON specifications
 Group:      %{PKGGROUP}
@@ -848,7 +810,6 @@ Requires:   kamailio = %ver
 
 %description    rtjson
 SIP routing based on JSON specifications.
-
 
 %if %{with ruby}
 %package    ruby
@@ -861,7 +822,6 @@ BuildRequires:  ruby-devel
 Ruby extensions for Kamailio.
 %endif
 
-
 %if %{with sctp}
 %package    sctp
 Summary:    SCTP transport for Kamailio
@@ -873,7 +833,6 @@ BuildRequires:  lksctp-tools-devel
 SCTP transport for Kamailio.
 %endif
 
-
 %package    secfilter
 Summary:    Additional layer of security over our communications
 Group:      %{PKGGROUP}
@@ -881,7 +840,6 @@ Requires:   kamailio = %ver
 
 %description    secfilter
 Additional layer of security over our communications.
-
 
 %package    sipcapture-daemon-config
 Summary:    Reference config for sipcapture daemon
@@ -894,7 +852,6 @@ Requires:  filesystem
 %description    sipcapture-daemon-config
 reference config for sipcapture daemon.
 
-
 %package    sipdump
 Summary:    This module writes SIP traffic and some associated details into local files
 Group:      %{PKGGROUP}
@@ -902,7 +859,6 @@ Requires:   kamailio = %ver
 
 %description    sipdump
 This module writes SIP traffic and some associated details into local files
-
 
 %package    sipjson
 Summary:    This module serializes SIP message attributes into a JSON document
@@ -912,7 +868,6 @@ Requires:   kamailio = %ver
 %description    sipjson
 This module serializes SIP message attributes into a JSON document
 
-
 %package    smsops
 Summary:    Tools for handling SMS packets in SIP messages
 Group:      %{PKGGROUP}
@@ -920,7 +875,6 @@ Requires:   kamailio = %ver
 
 %description    smsops
 This module collects the Transformations for 3GPP-SMS. 
-
 
 %package    snmpstats
 Summary:    SNMP management interface (scalar statistics) for Kamailio
@@ -937,7 +891,6 @@ BuildRequires:  net-snmp-devel
 %description    snmpstats
 SNMP management interface (scalar statistics) for Kamailio.
 
-
 %package    statsc
 Summary:    Statistics collecting module providing reports for Kamailio
 Group:      %{PKGGROUP}
@@ -946,7 +899,6 @@ Requires:   kamailio = %ver
 %description    statsc
 This module provides a statistics collector engine. 
 
-
 %package    statsd
 Summary:    Send commands to statsd server
 Group:      %{PKGGROUP}
@@ -954,7 +906,6 @@ Requires:   kamailio = %ver
 
 %description    statsd
 Send commands to statsd server.
-
 
 %package        sqlang
 Summary:        Squirrel Language (SQLang) for Kamailio
@@ -965,7 +916,6 @@ BuildRequires:  gcc-c++
 %description    sqlang
 app_sqlang module for Kamailio.
 
-
 %package    sqlite
 Summary:    SQLite database connectivity for Kamailio
 Group:      %{PKGGROUP}
@@ -974,7 +924,6 @@ BuildRequires:  sqlite-devel
 
 %description    sqlite
 SQLite database connectivity for Kamailio.
-
 
 %package    tls
 Summary:    TLS transport for Kamailio
@@ -985,7 +934,6 @@ BuildRequires:  openssl-devel
 %description    tls
 TLS transport for Kamailio.
 
-
 %package    tcpops
 Summary:    On demand and per socket control to the TCP options
 Group:      %{PKGGROUP}
@@ -993,7 +941,6 @@ Requires:   kamailio = %ver
 
 %description    tcpops
 On demand and per socket control to the TCP options.
-
 
 %package    topos
 Summary:    Topology stripping module for Kamailio
@@ -1003,7 +950,6 @@ Requires:   kamailio = %ver
 %description    topos
 This module offers topology hiding by stripping the routing headers that could show topology details.
 
-
 %package    unixodbc
 Summary:    UnixODBC database connectivity for Kamailio
 Group:      %{PKGGROUP}
@@ -1012,7 +958,6 @@ BuildRequires:  unixODBC-devel
 
 %description    unixodbc
 UnixODBC database connectivity for Kamailio.
-
 
 %package    utils
 Summary:    Non-SIP utitility functions for Kamailio
@@ -1030,7 +975,6 @@ BuildRequires:  libcurl-devel
 %description    utils
 Non-SIP utitility functions for Kamailio.
 
-
 %if %{with websocket}
 %package    websocket
 Summary:    WebSocket transport for Kamailio
@@ -1042,7 +986,6 @@ BuildRequires:  libunistring-devel, openssl-devel
 WebSocket transport for Kamailio.
 %endif
 
-
 %package    xhttp-pi
 Summary:    Web-provisioning interface for Kamailio
 Group:      %{PKGGROUP}
@@ -1052,7 +995,6 @@ BuildRequires:  libxml2-devel
 %description    xhttp-pi
 Web-provisioning interface for Kamailio.
 
-
 %package    xmlops
 Summary:    XML operation functions for Kamailio
 Group:      %{PKGGROUP}
@@ -1061,7 +1003,6 @@ BuildRequires:  libxml2-devel
 
 %description    xmlops
 XML operation functions for Kamailio.
-
 
 %if %{with xmlrpc}
 %package    xmlrpc
@@ -1089,7 +1030,6 @@ BuildRequires:  expat-devel
 %description    xmpp
 SIP/XMPP IM gateway for Kamailio.
 
-
 %package        uuid
 Summary:        UUID generator for Kamailio
 Group:          %{PKGGROUP}
@@ -1104,7 +1044,6 @@ BuildRequires:  libuuid-devel
 
 %description    uuid
 UUID module for Kamailio.
-
 
 %prep
 %setup -q
@@ -1202,7 +1141,6 @@ make every-module skip_modules="app_mono db_cassandra db_oracle iptrtpproxy \
     kxml kxmpp kuuid"
 
 make utils
-
 
 
 %install
@@ -1344,7 +1282,6 @@ fi
 %clean
 rm -rf %{buildroot}
 
-
 %post
 %if "%{?_unitdir}" == ""
 /sbin/chkconfig --add kamailio
@@ -1353,13 +1290,11 @@ rm -rf %{buildroot}
 /usr/bin/systemctl -q enable kamailio.service
 %endif
 
-
 %if "%{?_unitdir}" != ""
 %post sipcapture-daemon-config
 %tmpfiles_create sipcapture.conf
 /usr/bin/systemctl -q enable sipcapture.service
 %endif
-
 
 %preun
 if [ $1 = 0 ]; then
@@ -1377,7 +1312,6 @@ fi
 %endif
 
 %files
-%defattr(-,root,root)
 %dir %{_docdir}/kamailio
 %doc %{_docdir}/kamailio/INSTALL
 %doc %{_docdir}/kamailio/README
@@ -1422,7 +1356,7 @@ fi
 %doc %{_docdir}/kamailio/modules/README.ipops
 %doc %{_docdir}/kamailio/modules/README.kemix
 %doc %{_docdir}/kamailio/modules/README.kex
-%doc %{_docdir}/kamailio/modules/README.malloc_test
+#doc %{_docdir}/kamailio/modules/README.malloc_test
 %doc %{_docdir}/kamailio/modules/README.mangler
 %doc %{_docdir}/kamailio/modules/README.matrix
 %doc %{_docdir}/kamailio/modules/README.maxfwd
@@ -1507,6 +1441,10 @@ fi
 %doc %{_docdir}/kamailio/modules/README.pv_headers
 %doc %{_docdir}/kamailio/modules/README.sworker
 %doc %{_docdir}/kamailio/modules/README.userblocklist
+%doc %{_docdir}/kamailio/modules/README.misctest
+%doc %{_docdir}/kamailio/modules/README.posops
+%doc %{_docdir}/kamailio/modules/README.siprepo
+%doc %{_docdir}/kamailio/modules/README.slack
 
 %dir %attr(-,kamailio,kamailio) %{_sysconfdir}/kamailio
 %config(noreplace) %{_sysconfdir}/kamailio/dictionary.kamailio
@@ -1580,7 +1518,7 @@ fi
 %{_libdir}/kamailio/modules/ipops.so
 %{_libdir}/kamailio/modules/kemix.so
 %{_libdir}/kamailio/modules/kex.so
-%{_libdir}/kamailio/modules/malloc_test.so
+#{_libdir}/kamailio/modules/malloc_test.so
 %{_libdir}/kamailio/modules/mangler.so
 %{_libdir}/kamailio/modules/matrix.so
 %{_libdir}/kamailio/modules/maxfwd.so
@@ -1665,6 +1603,10 @@ fi
 %{_libdir}/kamailio/modules/pv_headers.so
 %{_libdir}/kamailio/modules/sworker.so
 %{_libdir}/kamailio/modules/userblocklist.so
+%{_libdir}/kamailio/modules/misctest.so
+%{_libdir}/kamailio/modules/posops.so
+%{_libdir}/kamailio/modules/siprepo.so
+%{_libdir}/kamailio/modules/slack.so
 
 %{_sbindir}/kamailio
 %{_sbindir}/kamctl
@@ -1694,29 +1636,21 @@ fi
 %dir %{_datadir}/kamailio/dbtext/kamailio
 %{_datadir}/kamailio/dbtext/kamailio/*
 
-
 %if %{with jansson}
 %files      acc_json
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.acc_json
 %{_libdir}/kamailio/modules/acc_json.so
 %endif
 
-
 %files      auth-ephemeral
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.auth_ephemeral
 %{_libdir}/kamailio/modules/auth_ephemeral.so
 
-
 %files      auth-xkeys
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.auth_xkeys
 %{_libdir}/kamailio/modules/auth_xkeys.so
 
-
 %files      bdb
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.db_berkeley
 %{_sbindir}/kambdb_recover
 %{_libdir}/kamailio/modules/db_berkeley.so
@@ -1725,90 +1659,66 @@ fi
 %dir %{_datadir}/kamailio/db_berkeley
 %{_datadir}/kamailio/db_berkeley/*
 
-
 %files      carrierroute
-%defattr(-,root,root)
 %{_docdir}/kamailio/modules/README.carrierroute
 %{_libdir}/kamailio/modules/carrierroute.so
 
-
 %if %{with cnxcc}
 %files      cnxcc
-%defattr(-,root,root)
 %{_docdir}/kamailio/modules/README.cnxcc
 %{_libdir}/kamailio/modules/cnxcc.so
 %endif
 
-
 %files      cpl
-%defattr(-,root,root)
 %{_docdir}/kamailio/modules/README.cplc
 %{_libdir}/kamailio/modules/cplc.so
 
-
 %files      crypto
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.crypto
 %{_libdir}/kamailio/modules/crypto.so
 
-
 %files      dialplan
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.dialplan
 %{_libdir}/kamailio/modules/dialplan.so
 
-
 %files      dmq_userloc
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.dmq_usrloc
 %{_libdir}/kamailio/modules/dmq_usrloc.so
 
-
 %if %{with dnssec}
 %files      dnssec
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.dnssec
 %{_libdir}/kamailio/modules/dnssec.so
 %endif
 
-
 %if %{with evapi}
 %files      evapi
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.evapi
 %{_libdir}/kamailio/modules/evapi.so
 %endif
 
-
 %if %{with geoip}
 %files      geoip
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.geoip
 %{_libdir}/kamailio/modules/geoip.so
 %endif
 
-
 %files      gzcompress
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.gzcompress
 %{_libdir}/kamailio/modules/gzcompress.so
 
-
 %if %{with http_async_client}
 %files      http_async_client
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.http_async_client
 %{_libdir}/kamailio/modules/http_async_client.so
 %endif
 
 %files      http_client
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.http_client
 %{_libdir}/kamailio/modules/http_client.so
 
 %if %{with ims}
 %files      ims
-%defattr(-,root,root)
 %{_libdir}/kamailio/libkamailio_ims.so.0
 %{_libdir}/kamailio/libkamailio_ims.so.0.1
 
@@ -1844,42 +1754,33 @@ fi
 %{_libdir}/kamailio/modules/ims_usrloc_scscf.so
 %endif
 
-
 %if %{with jansson}
 %files      jansson
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.jansson
 %doc %{_docdir}/kamailio/modules/README.janssonrpcc
 %{_libdir}/kamailio/modules/jansson.so
 %{_libdir}/kamailio/modules/janssonrpcc.so
 %endif
 
-
 %if %{with json}
 %files      json
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.json
 %doc %{_docdir}/kamailio/modules/README.jsonrpcc
 %{_libdir}/kamailio/modules/json.so
 %{_libdir}/kamailio/modules/jsonrpcc.so
 %endif
 
-
 %if %{with kazoo}
 %files      kazoo
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.kazoo
 %{_libdir}/kamailio/modules/kazoo.so
 %endif
 
 %files      lcr
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.lcr
 %{_libdir}/kamailio/modules/lcr.so
 
-
 %files      ldap
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.db2_ldap
 %doc %{_docdir}/kamailio/modules/README.h350
 %doc %{_docdir}/kamailio/modules/README.ldap
@@ -1888,41 +1789,32 @@ fi
 %{_libdir}/kamailio/modules/ldap.so
 
 %files      lost
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.lost
 %{_libdir}/kamailio/modules/lost.so
 
-
 %if %{with lua}
 %files      lua
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.app_lua
 %doc %{_docdir}/kamailio/modules/README.app_lua_sr
 %{_libdir}/kamailio/modules/app_lua.so
 %{_libdir}/kamailio/modules/app_lua_sr.so
 %endif
 
-
 %if %{with memcached}
 %files      memcached
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.memcached
 %{_libdir}/kamailio/modules/memcached.so
 %endif
 
-
 %if %{with mongodb}
 %files      mongodb
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.db_mongodb
 %doc %{_docdir}/kamailio/modules/README.ndb_mongodb
 %{_libdir}/kamailio/modules/db_mongodb.so
 %{_libdir}/kamailio/modules/ndb_mongodb.so
 %endif
 
-
 %files      mysql
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.db_mysql
 %{_libdir}/kamailio/modules/db_mysql.so
 %{_libdir}/kamailio/kamctl/kamctl.mysql
@@ -1930,16 +1822,12 @@ fi
 %dir %{_datadir}/kamailio/mysql
 %{_datadir}/kamailio/mysql/*
 
-
 %files      outbound
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.outbound
 %{_libdir}/kamailio/modules/outbound.so
 
-
 %if %{with perl}
 %files      perl
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.app_perl
 %doc %{_docdir}/kamailio/modules/README.db_perlvdb
 %{_libdir}/kamailio/modules/app_perl.so
@@ -1972,17 +1860,13 @@ fi
 %{_libdir}/kamailio/perl/Kamailio/VDB/Adapter/TableVersions.pm
 %endif
 
-
 %if %{with phonenum}
 %files      phonenum
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.phonenum
 %{_libdir}/kamailio/modules/phonenum.so
 %endif
 
-
 %files      postgresql
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.db_postgres
 %{_libdir}/kamailio/modules/db_postgres.so
 %{_libdir}/kamailio/kamctl/kamctl.pgsql
@@ -1990,9 +1874,7 @@ fi
 %dir %{_datadir}/kamailio/postgres
 %{_datadir}/kamailio/postgres/*
 
-
 %files      presence
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.presence
 %doc %{_docdir}/kamailio/modules/README.presence_conference
 %doc %{_docdir}/kamailio/modules/README.presence_dialoginfo
@@ -2032,9 +1914,7 @@ fi
 %{_libdir}/kamailio/modules/xcap_client.so
 %{_libdir}/kamailio/modules/xcap_server.so
 
-
 %files      python
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.app_python
 %{_libdir}/kamailio/modules/app_python.so
 %if %{with python3}
@@ -2042,17 +1922,13 @@ fi
 %{_libdir}/kamailio/modules/app_python3.so
 %endif
 
-
 %if %{with rabbitmq}
 %files      rabbitmq
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.rabbitmq
 %{_libdir}/kamailio/modules/rabbitmq.so
 %endif
 
-
 %files      radius
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.acc_radius
 %doc %{_docdir}/kamailio/modules/README.auth_radius
 %doc %{_docdir}/kamailio/modules/README.misc_radius
@@ -2062,10 +1938,8 @@ fi
 %{_libdir}/kamailio/modules/misc_radius.so
 %{_libdir}/kamailio/modules/peering.so
 
-
 %if %{with redis}
 %files      redis
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.db_redis
 %doc %{_docdir}/kamailio/modules/README.ndb_redis
 %doc %{_docdir}/kamailio/modules/README.topos_redis
@@ -2076,21 +1950,15 @@ fi
 %{_datadir}/kamailio/db_redis/*
 %endif
 
-
 %files      regex
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.regex
 %{_libdir}/kamailio/modules/regex.so
 
-
 %files      rtjson
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.rtjson
 %{_libdir}/kamailio/modules/rtjson.so
 
-
 %files      sipcapture-daemon-config
-%defattr(-,root,root)
 %config(noreplace) %{_sysconfdir}/kamailio/kamailio-sipcapture.cfg
 %if 0%{?suse_version}
 %{_fillupdir}/sysconfig.sipcapture
@@ -2102,43 +1970,31 @@ fi
 %{_tmpfilesdir}/sipcapture.conf
 %endif
 
-
 %if %{with ruby}
 %files      ruby
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.app_ruby
 %{_libdir}/kamailio/modules/app_ruby.so
 %endif
 
-
 %if %{with sctp}
 %files      sctp
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.sctp
 %{_libdir}/kamailio/modules/sctp.so
 %endif
 
-
 %files      secfilter
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.secfilter
 %{_libdir}/kamailio/modules/secfilter.so
 
-
 %files      sipdump
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.sipdump
 %{_libdir}/kamailio/modules/sipdump.so
 
-
 %files      sipjson
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.sipjson
 %{_libdir}/kamailio/modules/sipjson.so
 
-
 %files      snmpstats
-%defattr(-,root,root)
 %{_docdir}/kamailio/modules/README.snmpstats
 %{_libdir}/kamailio/modules/snmpstats.so
 %{_datadir}/snmp/mibs/KAMAILIO-MIB
@@ -2147,21 +2003,15 @@ fi
 %{_datadir}/snmp/mibs/KAMAILIO-SIP-SERVER-MIB
 %{_datadir}/snmp/mibs/KAMAILIO-TC
 
-
 %files      statsd
-%defattr(-,root,root)
 %{_docdir}/kamailio/modules/README.statsd
 %{_libdir}/kamailio/modules/statsd.so
 
-
 %files          sqlang
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.app_sqlang
 %{_libdir}/kamailio/modules/app_sqlang.so
 
-
 %files      sqlite
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.db_sqlite
 %{_libdir}/kamailio/modules/db_sqlite.so
 %{_libdir}/kamailio/kamctl/kamctl.sqlite
@@ -2169,9 +2019,7 @@ fi
 %dir %{_datadir}/kamailio/db_sqlite
 %{_datadir}/kamailio/db_sqlite/*
 
-
 %files      tls
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.auth_identity
 %doc %{_docdir}/kamailio/modules/README.tls
 %{_libdir}/kamailio/modules/auth_identity.so
@@ -2179,69 +2027,50 @@ fi
 %dir %{_libdir}/kamailio/openssl_mutex_shared
 %{_libdir}/kamailio/openssl_mutex_shared/openssl_mutex_shared.so
 
-
 %files      tcpops
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.tcpops
 %{_libdir}/kamailio/modules/tcpops.so
 
-
 %files      unixodbc
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.db_unixodbc
 %{_libdir}/kamailio/modules/db_unixodbc.so
 
-
 %files      utils
-%defattr(-,root,root)
 %{_docdir}/kamailio/modules/README.utils
 %{_libdir}/kamailio/modules/utils.so
 
-
 %if %{with websocket}
 %files      websocket
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.websocket
 %{_libdir}/kamailio/modules/websocket.so
 %endif
 
-
 %files      xhttp-pi
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.xhttp_pi
 %{_libdir}/kamailio/modules/xhttp_pi.so
 %dir %{_datadir}/kamailio/xhttp_pi
 %{_datadir}/kamailio/xhttp_pi/*
 
-
 %files      xmlops
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.xmlops
 %{_libdir}/kamailio/modules/xmlops.so
 
-
 %if %{with xmlrpc}
 %files      xmlrpc
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.xmlrpc
 %{_libdir}/kamailio/modules/xmlrpc.so
 %endif
 
-
 %files      xmpp
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.xmpp
 %{_libdir}/kamailio/modules/xmpp.so
 
-
 %files          uuid
-%defattr(-,root,root)
 %doc %{_docdir}/kamailio/modules/README.uuid
 %{_libdir}/kamailio/modules/uuid.so
 
-
 %changelog
-* Sun Dec 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.5.3
+* Sun Jan 15 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.6.3
 - Rebuilt for Fedora
 * Sat Aug 31 2019 Sergey Safarov <s.safarov@gmail.com> 5.3.0-dev7
   - Packaged kemix, lost and xhttp_prom modules

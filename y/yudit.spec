@@ -2,11 +2,12 @@
 
 Summary:	Unicode Text Editor
 Name:		yudit
-Version:	3.0.7
+Version:	3.0.9
 Release:	1
 License:	GPL
 Group:		Applications/Editors
-Source:		http://yudit.org/download/%{name}-%{version}.tar.gz
+URL:		https://www.yudit.org/
+Source:		https://yudit.org/download/%{name}-%{version}.tar.gz
 BuildRequires:	gcc-c++
 BuildRequires:	libXaw-devel
 
@@ -105,10 +106,10 @@ rm -rf $RPM_BUILD_ROOT
 %config %{_datadir}/applications/yudit.desktop
 %config %{_datadir}/pixmaps/yudit.png
 
-%doc CHANGELOG.TXT COPYING.TXT FAQ.TXT README.TXT TODO.TXT doc/*.utf8 doc/notinstalled doc/problems doc/HOWTO-*.txt doc/otfsupport.txt
+%doc *.TXT doc/*.txt
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.7
+* Sun Jan 29 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.9
 - Rebuilt for Fedora
 * Fri Jul 31 2009 J. Krebs <rpm_speedy@yahoo.com> - 2.9.0-2
   Added require for c++ (gcc-c++), patches.

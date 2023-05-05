@@ -2,14 +2,14 @@
 
 Summary:	Minimal X display lock program
 Name:		xtrlock
-Version:	2.13
+Version:	2.15
 Release:	1
 Group:		Graphical desktop/Other
 BuildRequires:	libX11-devel
 BuildRequires:	imake
 License:	GPLv2+
 URL:		https://salsa.debian.org/debian/xtrlock
-Source0:	%{name}_%{version}.tar.xz
+Source0:	https://salsa.debian.org/debian/xtrlock/-/archive/%{version}/%{name}-%{version}.tar.gz
 
 %description
 xtrlock is a very minimal X display lock program, which uses nothing
@@ -27,7 +27,7 @@ make CFLAGS="%{optflags} -DSHADOW_PWD" xtrlock
 %install
 rm -rf %{buildroot}
 
-mkdir -p %{buildroot}%{_bindir}/%{name}
+mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_mandir}/man1
 install -m 755 xtrlock %{buildroot}%{_bindir}/%{name}
 install -m 644 xtrlock.man %{buildroot}%{_mandir}/man1/%{name}.1x
@@ -55,7 +55,7 @@ rm -rf %{buildroot}
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Thu Jul 23 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2.13
+* Tue Jan 03 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.15
 - Rebuilt for Fedora
 * Mon Sep 21 2009 Thierry Vignaud <tvignaud@mandriva.com> 2.0-2mdv2010.0
 + Revision: 446272

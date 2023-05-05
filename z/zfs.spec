@@ -1,7 +1,7 @@
 Summary:         OpenZFS for Linux
 Group:           Utilities/System
 Name:            zfs
-Version:         2.1.6
+Version:         2.1.9
 Release:         1
 License:         CDDL
 URL:             http://zfsonlinux.org/
@@ -118,5 +118,5 @@ exit 0
 exit 0
 
 %changelog
-* Sun Oct 9 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.6
+* Sun Jan 29 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.9
 - Rebuilt for Fedora

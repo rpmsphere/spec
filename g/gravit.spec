@@ -18,7 +18,8 @@ endless time experimenting with various configurations of simulated universes.
 export LDFLAGS=-Wl,--allow-multiple-definition
 ./autogen.sh
 %ifarch aarch64
-sed -i -e '4763,4765d' -e '4778,4780d' configure
+sed -i -e '5025,5027d' -e '5041,5043d' configure
+#sed -i -e '4763,4765d' -e '4778,4780d' configure
 %endif
 %configure
 make %{?_smp_mflags}
@@ -37,5 +38,5 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Fri Dec 26 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
+* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
 - Rebuilt for Fedora

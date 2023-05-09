@@ -1,8 +1,9 @@
 %undefine _debugsource_packages
+%global __os_install_post %{nil}
 
 Summary:	Linux Test Project
 Name:		ltp
-Version:	20220527
+Version:	20200515
 Release:	1
 License:	GPLv2+
 Group:		Development/Kernel
@@ -10,7 +11,6 @@ URL:		https://github.com/linux-test-project/ltp
 Source0:	http://downloads.sourceforge.net/project/%{name}/LTP%20Source/%{name}-%{version}/%{name}-full-%{version}.tar.bz2
 BuildRequires:	flex
 BuildRequires:	rsync
-BuildRequires:  automake
 Requires:	dialog
 Patch0:		ltp-getcpu.patch
 
@@ -57,7 +57,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/execltp
 %{_bindir}/*
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 20220527
+* Tue Jul 28 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 20200515
 - Rebuilt for Fedora
 * Thu Aug 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.20120903-4
 + Revision: ef5e311

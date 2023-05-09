@@ -2,7 +2,7 @@
 %global __prelink_undo_cmd %{nil}
 
 Name:           codelite
-Version:        16.5.0
+Version:        15.0.1
 Release:        1
 License:        GPLv2+
 Group:          Development/Tools
@@ -10,7 +10,7 @@ Summary:        CodeLite is a powerful open-source, cross platform code editor f
 URL:            http://codelite.sourceforge.net
 Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.xz
 Requires:       libssh clang clang-tools-extra SDL
-BuildRequires:	gcc-c++ wxGTK3-devel cmake clang-devel lldb-devel libssh-devel hunspell-devel sqlite-devel libXtst-devel
+BuildRequires:	gcc gcc-c++ wxGTK-devel cmake clang-devel lldb-devel libssh-devel hunspell-devel sqlite-devel libXtst-devel
 # Filter out these false-alarms from 'requires', as the package itself supplies them!
 %{?filter_setup:
 %filter_from_requires libcodeliteu.so; libpluginu.so; libwxscintillau.so; libwxsqlite3u.so;
@@ -23,14 +23,15 @@ users to easily create, build and debug complex projects.
 
 %prep
 %setup -q
-sed -i 's|\[MYSTACKSIZE\]|[24576]|' sdk/codelite_cppcheck/cli/cppcheckexecutor.cpp
-#sed -i '/m_scanners(0)/d' /root/rpmbuild/BUILD/codelite-15.0.1/SpellChecker/IHunSpell.cpp
+%ifarch aarch64
+sed -i 's|SIGSTKSZ|8192|' sdk/codelite_cppcheck/cli/cppcheckexecutor.cpp
+%endif
 
 %build
 mkdir -p build_release
-alternatives --set wx-config /usr/libexec/wxGTK3/wx-config
+export PATH=/usr/libexec/wxGTK:$PATH
 # workaround for a pango/harfbuzz issue: see https://gitlab.kitware.com/cmake/cmake/issues/19531
-(cd build_release && CXXFLAGS="-isystem /usr/include/harfbuzz -fPIE -fPIC -std=gnu++14" cmake -G "Unix Makefiles" -DCOPY_WX_LIBS=1 -DAUTOGEN_REVISION=0 ..)
+(cd build_release && CXXFLAGS="-isystem /usr/include/harfbuzz -fPIC" cmake -G "Unix Makefiles" -DCOPY_WX_LIBS=1 -DAUTOGEN_REVISION=0 ..)
 (cd build_release && make %{?_smp_mflags})
 
 %install
@@ -134,7 +135,7 @@ fi
 gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 16.5.0
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 15.0.1
 - Rebuilt for Fedora
 * Wed Mar 03 2021 DH
 - Added clang-tools-extra to Requires: to make LanguageServer code-completion work

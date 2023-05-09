@@ -144,7 +144,7 @@ fi
 %{_libdir}/pkgconfig/*
 
 %changelog
-* Sun Jul 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.0
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.0
 - Rebuilt for Fedora
 * Wed Aug 14 2019 Hodong Kim <cogniti@gmail.com> - 2019.08.14-1
 - See https://gitlab.com/nimf-i18n/nimf/blob/master/debian/changelog

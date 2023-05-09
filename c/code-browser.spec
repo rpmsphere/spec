@@ -2,7 +2,7 @@
 
 Name: code-browser
 Summary: A folding text editor
-Version: 8.0
+Version: 7.1
 Release: 1
 Group: Applications/Editors
 License: GPLv2
@@ -23,7 +23,6 @@ especially designed to keep a good overview of the code of a large project.
 %setup -q
 cp %{SOURCE1} Makefile
 unzip %{SOURCE2} -d res
-sed -i 's|/usr/include/x86_64-linux-gnu|/usr/include|' libs/copper-ui/Makefile
 
 %build
 make with-local-libs
@@ -39,5 +38,5 @@ make with-local-libs
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 8.0
+* Tue Aug 25 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 7.1
 - Rebuilt for Fedora

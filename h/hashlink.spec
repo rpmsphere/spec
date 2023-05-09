@@ -30,6 +30,9 @@ sed -i -e 's|-lturbojpeg|-ljpeg|' -e 's|/lib|/%{_lib}|' Makefile
 
 %build
 %cmake -D BUILD_TESTING=OFF .
+%ifarch aarch64
+sed -i -e 's|-msse2||' -e 's|-mfpmath=sse||' -e 's|-m$(MARCH)||' Makefile
+%endif
 %make_build PREFIX=/usr
 
 %install
@@ -53,7 +56,7 @@ ln -s libhl.so.%{version}.0 %{buildroot}%{_libdir}/libhl.so
 %_includedir/hlc_main.c
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.12
+* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.12
 - Rebuilt for Fedora
 * Mon May 18 2020 Denis Smirnov <mithraen@altlinux.ru> 1.11-alt2
 - add /usr/include/hlc_main.c for HL/C support

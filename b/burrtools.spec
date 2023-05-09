@@ -31,7 +31,8 @@ sed -i 's|.*Could not find a version of the library.*|:|' configure
 sed -i 's|struct face f;|faceList_c::face f;|' src/halfedge/modifiers.cpp
 
 %build
-%configure
+autoreconf -ifv
+./configure --prefix=/usr
 sed -i 's|-Werror=format-security|-Wno-error -shared -fPIC|' Makefile */Makefile
 make %{?_smp_mflags}
 
@@ -64,5 +65,5 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/doc/*
 
 %changelog
-* Mon Jul 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.3
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.3
 - Rebuilt for Fedora

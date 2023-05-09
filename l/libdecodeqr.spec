@@ -8,7 +8,7 @@ URL:            https://github.com/josephholsten/libdecodeqr
 #Source0:        http://cloud.github.com/downloads/josephholsten/libdecodeqr/%{name}-%{version}.tar.gz
 Source0:        %{name}-master.zip
 BuildRequires:  gcc-c++, opencv-devel, lapack-devel
-BuildRequires:  atlas, automake
+BuildRequires:  atlas
 
 %description
 libdecodeqr is a C/C++ library for decoding QR code based on
@@ -28,7 +28,6 @@ applications that decode qrencode.
 
 %prep
 %setup -q -n %{name}-master
-#FIXME sed -i 's|cv\.h|opencv2/core/core_c.h|' libdecodeqr/imagereader.h
 sed -i -e 's/__BEGIN__/__CV_BEGIN__/' -e 's/__END__/__CV_END__/' libdecodeqr/imagereader.cpp
 sed -i 's|cvWarpPerspectiveQMatrix|cvGetPerspectiveTransform|' libdecodeqr/imagereader.cpp
 sed -i '1i #include <opencv2/imgproc.hpp>' examples/webcam/webcam.cpp
@@ -57,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libdecodeqr.so
 
 %changelog
-* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
+* Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4
 - Rebuilt for Fedora

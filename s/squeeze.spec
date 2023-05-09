@@ -8,7 +8,6 @@ URL:		http://squeeze.xfce.org
 Source0:	http://archive.xfce.org/src/apps/%{name}/0.2/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-0.2.1-TreeView-border.patch
 Patch1:		%{name}-0.2.1-recent-documents.patch
-BuildRequires:  automake
 BuildRequires:	pkgconfig(thunar-vfs-1)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	desktop-file-utils

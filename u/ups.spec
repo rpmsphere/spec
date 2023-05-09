@@ -49,6 +49,9 @@ at the appropriate place in the source window.
 %patch9 -p0 -b .dwarf
 sed -i 's|_IO_2_1_\([a-z]*\)_|\1|g' ups/cx_libvars.h
 sed -i '226,231d' ups/ao_elfcore.c
+%ifarch aarch64
+#sed -i 's|user_fpregs_struct|user_regs_struct|' ups/mreg.h
+%endif
 
 %build
 CFLAGS="$RPM_OPT_FLAGS -D_LARGEFILE64_SOURCE -Wno-format-security"
@@ -76,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/X11/app-defaults/Ups
 
 %changelog
-* Sun Jan 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.38
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.38
 - Rebuilt for Fedora
 * Thu Mar 18 2010 Steve Webb <bigwebb@gmail.com>
 - http://badcheese.com/2010/08/03/ups-debugger.html

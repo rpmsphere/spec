@@ -19,6 +19,9 @@ as a trumpet and then gradually changes to a flute.
 
 %prep
 %setup -q
+%ifarch aarch64
+sed -i 's|__m128|__int128|' lib/smnoisedecoder.cc
+%endif
 
 %build
 %configure
@@ -43,5 +46,5 @@ make install DESTDIR=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
 - Rebuilt for Fedora

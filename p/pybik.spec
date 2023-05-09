@@ -38,7 +38,7 @@ sed -i 's|tstate->exc_|tstate->curexc_|' csrc/_qt_qtwogl.cpp csrc/_qtexec_.cpp
 
 %build
 %py3_build ||:
-sed -i '/tp_print = 0/d' build/temp.linux-x86_64-3.10/pybiklib/ext/_qt_qtwogl.cpp
+sed -i '/tp_print = 0/d' build/temp.linux-*/pybiklib/ext/_qt_qtwogl.cpp
 %py3_build
 
 %install
@@ -68,7 +68,7 @@ sed -i 's|%{buildroot}||' %{buildroot}%{python3_sitearch}/pybiklib/config.py
 %{_datadir}/applications/pybik.desktop
 
 %changelog
-* Mon Nov 27 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
 - Rebuilt for Fedora
 * Thu Mar 02 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2.1-3
 - (8ea10d4) MassBuild#1273: Increase release tag

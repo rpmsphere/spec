@@ -37,6 +37,9 @@ sed -i '40i #include <sys/sysmacros.h>' src/setup/setup.c
 ./autogen.sh
 %configure --with-efi-ldsdir=%{_libdir}/gnuefi
 cp -a /usr/include/*.h /usr/include/sys /usr/include/bits /usr/include/gnu .
+%ifarch aarch64
+sed -i -e 's|-mno-sse||' -e 's|-mno-mmx||' Makefile
+%endif
 %make_build
 
 %install
@@ -52,7 +55,7 @@ cp -a /usr/include/*.h /usr/include/sys /usr/include/bits /usr/include/gnu .
 /usr/lib/gummiboot
 
 %changelog
-* Wed Jan 11 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 45
+* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 45
 - Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 45-3.mga5
 + Revision: 743578

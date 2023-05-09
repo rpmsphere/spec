@@ -1,12 +1,11 @@
 Summary:	System monitor
 Name:		sentinella
-Version:	0.9.2
-Release:	1
+Version:	0.9.0
+Release:	10.4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 URL:		http://sentinella.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/project/%{name}/0.9.x/%{name}-%version.tar.xz
-BuildRequires:  gcc-c++
 BuildRequires:	cmake
 BuildRequires:	desktop-file-utils
 BuildRequires:	gettext
@@ -48,7 +47,7 @@ desktop-file-install --vendor="" \
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
 
 %changelog
-* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.2
+* Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.0
 - Rebuilt for Fedora
 * Tue May 29 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.9.0-1
 + Revision: 801027

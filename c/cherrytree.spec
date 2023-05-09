@@ -15,7 +15,13 @@ Source0:        http://www.giuspen.com/software/%{name}_%{version}.tar.xz
 BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  python2-devel
-BuildRequires:	libxml++-devel gtksourceviewmm3-devel gtkmm30-devel
+BuildRequires:	libxml++-devel
+BuildRequires:  gtksourceviewmm3-devel
+BuildRequires:  gtkmm30-devel
+BuildRequires:  gspell-devel
+BuildRequires:  fmt-devel
+BuildRequires:  uchardet-devel
+BuildRequires:  spdlog-devel
 Requires:       python(abi) = %{py_ver}
 Requires:       pygtk2
 Requires:       pygobject2
@@ -70,7 +76,7 @@ rm -rf %{buildroot}%{_datadir}/mime-info/
 %{_libdir}/pkgconfig/*
 
 %changelog
-* Sun Oct 30 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99.51
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99.51
 - Rebuilt for Fedora
 * Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.38.5-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild

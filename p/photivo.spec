@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name: photivo
-Version: 20201120
+Version: 20200406
 Release: 1
 Summary: Photo processor
 Group: Graphics
@@ -80,7 +80,7 @@ chmod +x %buildroot%_bindir/*
 %_libdir/gimp/2.0/plug-ins/*
 
 %changelog
-* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 20201120
+* Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 20200406
 - Rebuilt for Fedora
 * Tue Dec 03 2013 Yuri N. Sedunov <aris@altlinux.org> 0-alt10.f1a2a2889c33
 - update to current snapshot

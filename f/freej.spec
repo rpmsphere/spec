@@ -10,8 +10,8 @@ URL:            http://freej.org/
 Source0:        ftp://ftp.dyne.org/freej/releases/%{name}-%{version}.tar.gz
 Source1:        ipernav.png
 Patch1:         freej-0.8.1-VIDIOCGTUNER_non_fatal.diff
-BuildRequires:  gcc-c++, automake, nasm, chrpath, flex
-BuildRequires:  jack-audio-connection-kit-devel, libogg-devel
+BuildRequires:  gcc-c++, nasm, chrpath, flex
+BuildRequires:  pipewire-jack-audio-connection-kit-devel, libogg-devel
 BuildRequires:  libpng-devel, libpng10-devel, libjpeg-devel
 BuildRequires:  libshout-devel, fftw-devel, cwiid-devel
 BuildRequires:  pulseaudio-libs-devel, esound-devel, arts-devel
@@ -48,6 +48,7 @@ sed -i -e 's|ffmpeg/avcodec.h|libavcodec/avcodec.h|' -e 's|ffmpeg/avformat.h|lib
 export CPPFLAGS="-I%{_includedir}/compat-ffmpeg -I%{_includedir}/slang -I%{_includedir}/libpng10 -fpermissive -fPIC -DHAVE_SYS_UIO_H"
 export LDFLAGS="-lz"
 %configure --enable-joystick --enable-v4l --enable-jack
+sed -i 's|-O2|-O2 -fPIC|' `find . -name config.mk`
 make 
 # generate documentation
 cd doc/scripting
@@ -92,7 +93,7 @@ rm -rf %{buildroot}
 %{_mandir}/man1/%{name}*
 
 %changelog
-* Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10
 - Rebuilt for Fedora
 * Fri Aug 08 2008 Paulo Roma <roma@lcg.ufrj.br> - 0.10-4
 - Updated to 0.10

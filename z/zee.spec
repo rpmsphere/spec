@@ -15,9 +15,11 @@ It is written in Rust and it is somewhat experimental.
 
 %prep
 %autosetup
+#sed -i 's|ropey = "1.4.1"|ropey = "1.5.0"|' zee/Cargo.toml zee-edit/Cargo.toml
+sed -i 's|tree-sitter = "0.20.6"|tree-sitter = "0.20.10"|' */Cargo.toml
 
 %build
-cargo build --release --locked --offline
+cargo build --release --offline
 
 %install
 install -Dm755 target/release/zee %{buildroot}%{_bindir}/%{name}
@@ -28,5 +30,5 @@ install -Dm755 target/release/zee %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Sun May 8 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2
 - Rebuilt for Fedora

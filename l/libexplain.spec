@@ -72,7 +72,7 @@ rm %{buildroot}%{_libdir}/%{name}.{a,la}
 %{_libdir}/pkgconfig/%{name}.pc
 
 %changelog
-* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
 - Rebuilt for Fedora
 * Mon Apr 11 2016 mpluskal@suse.com
 - Fix building with kernel-4.5 and later

@@ -13,6 +13,7 @@ BuildRequires: SDL-devel
 BuildRequires: SDL_image-devel
 BuildRequires: gstreamer1-devel
 BuildRequires: readline-devel
+BuildRequires: locate
 #BuildRequires: libdb-devel
 #BuildRequires: libpq-devel
 
@@ -23,6 +24,8 @@ same time, providing easier maintenance and bug removal.
 
 %prep
 %setup -q -n %{name}-%{version}-src
+sed -i 's|i486|aarch64|' configure
+sed -i 's|$(CPU_FLAG)=$(CPU)||' src/GNUmakefile*
 
 %build
 ./configure --prefix=/usr --without-mysql --without-bdb --without-postgres
@@ -43,5 +46,5 @@ mv %{buildroot}%{_datadir}/man1 %{buildroot}%{_mandir}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
 - Rebuilt for Fedora

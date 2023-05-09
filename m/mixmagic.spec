@@ -6,7 +6,6 @@ License: GPL
 Group: Applications/Multimedia
 URL: http://mixmagic.sourceforge.net/
 Source: http://download.sourceforge.net/zipcracker/%{name}-%{version}.tar.gz
-BuildRequires: gcc automake
 BuildRequires: gnome-libs-devel
 BuildRequires: libxml-devel
 BuildRequires: esound-devel

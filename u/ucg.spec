@@ -29,6 +29,7 @@ in some cases.
 %prep
 %setup -q -n ucg-master
 sed -i '27i #include <mutex>' src/libext/DoubleCheckedLock.hpp
+#sed -i '/cpuid.h/d' src/libext/cpuidex.cpp
 
 %build
 autoreconf -ifv
@@ -46,7 +47,7 @@ autoreconf -ifv
 %{_mandir}/man1/ucg.1.*
 
 %changelog
-* Wed Apr 17 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3git
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3git
 - Rebuilt for Fedora
 * Sun Sep 23 2018 umeabot <umeabot> 0.2.1-2.mga7
   (not released yet)

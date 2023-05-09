@@ -34,6 +34,8 @@ rm bitmaps/gifs.tar
 #%patch0 -p1
 %ifarch %ix86
 sed -i 's|INLINE64|INLINE32|' Makefile
+%else
+sed -i 's|-mpopcnt||' Makefile
 %endif
 
 %build
@@ -75,7 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/share/crafty
 
 %changelog
-* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 25.2
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 25.2
 - Rebuilt for Fedora
 * Wed Sep 23 2009 snwint@suse.de
 - update to version 23.0

@@ -23,6 +23,10 @@ while maintaining a small package footprint.
  
 %prep
 %setup -q
+%ifarch aarch64
+sed -i 's|x86_64|aarch64|' src/sysdep.h
+sed -i -e 's|-msse2 -mfpmath=sse||' -e 's|-m32||' -e 's|-march=i686|-march=native|' Makefile
+%endif
 
 %build
 make PREFIX=/usr
@@ -41,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man?/%{name}.*
 
 %changelog
-* Sun Nov 11 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.6.update3
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.6.update3
 - Rebuilt for Fedora

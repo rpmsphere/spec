@@ -33,7 +33,7 @@ export LDFLAGS=-Wl,--allow-multiple-definition
 %{_bindir}/*-edid*
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.2
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.2
 - Rebuilt for Fedora
 * Mon Apr 28 2014 Denis Silakov <denis.silakov@rosalab.ru> 3.0.1-1
 + Revision: b7fc005

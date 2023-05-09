@@ -1,13 +1,12 @@
 Summary:	A GPL Scientific Software Package
 Name:		nsp
-Version:	1.4cvs
-Release:	1
+Version:	1.4
+Release:	2.1
 License:	GPL and Specific for some included contribs (Scilab license)
 Group:		Applications/Engineering
 URL:		http://cermics.enpc.fr/~jpc/nsp-tiddly/mine.html
-#Source:		http://cermics.enpc.fr/~jpc/nsp-tiddly/files/%{name}-%{version}.tgz
-Source:		http://cermics.enpc.fr/~jpc/nsp-tiddly/files/nsp-cvs.tgz
-BuildRequires:  atlas, automake
+Source:		http://cermics.enpc.fr/~jpc/nsp-tiddly/files/%{name}-%{version}.tgz
+BuildRequires:  atlas
 BuildRequires:  blas-devel, lapack-devel, libsndfile-devel, gtkglext-devel, fftw-devel, portaudio-devel, readline-devel, suitesparse-devel
 BuildRequires:  gtksourceview3-devel, glpk-devel, libtirpc-devel, vte291-devel
 BuildRequires:  webkitgtk4-devel, graphviz-devel, ocaml-num-devel
@@ -25,7 +24,7 @@ Obsoletes:      tumbi nsp2
 %prep
 %setup -q -n %{name}
 #sed -i 's|#define DOUBLE_ONLY|#undef DOUBLE_ONLY|' src/zcalelm/merge-sort.c
-sed -i 's|$(CFLOPTS)|$(CFLOPTS) -I/usr/include/tirpc -ltirpc -Wl,--allow-multiple-definition -fPIE|' pvm3/Makefile* pvm3/*/Makefile*
+sed -i 's|$(CFLOPTS)|$(CFLOPTS) -I/usr/include/tirpc -ltirpc -Wl,--allow-multiple-definition|' pvm3/Makefile* pvm3/*/Makefile*
 sed -i 's|$(ARCHLIB)|$(ARCHLIB) -ltirpc -Wl,--allow-multiple-definition|' pvm3/Makefile* pvm3/*/Makefile*
 sed -i 's|^LIBS=|LIBS=-Wl,--allow-multiple-definition |' config/Makefile.linux*
 sed -i 's|fftw3 |fftw3 libtirpc |' Makefile*
@@ -33,16 +32,14 @@ sed -i 's|, KIND(t)||' src/lapack/zhpadm.f src/lapack/zgpadm.f
 sed -i -e '165i let ss = Bytes.of_string s in' -e '165s| s | ss |' toolboxes/compilers/modelicac/src/optimization.ml
 sed -i '38,39s|Pervasives|Stdlib|' toolboxes/compilers/paksazi/src/paksazi.ml
 sed -i 's|Pervasives|Stdlib|' toolboxes/simport/release/src/slx_file_format/parsing/ocaml-xml/src/basics/*.ml* toolboxes/simport/release/src/slx_file_format/parsing/ocaml-xml/src/xml/parsing/xml_to_ast.ml toolboxes/simport/release/src/slx_file_format/parsing/ocaml-xml/src/xml/expand/xml_env.ml
-#cp -f /usr/lib/rpm/redhat/config.* .
-#cp -f /usr/share/automake-*/config.* /usr/share/automake-*/compile /usr/share/automake-*/missing .
+%ifarch aarch64
+cp -f /usr/lib/rpm/redhat/config.* .
+%endif
 
 %build
-#export OCAMLPARAM="safe-string=1,_" CFLAGS="-g -O2 -Wl,--allow-multiple-definition"
-export OCAMLPARAM="safe-string=1,_" CFLAGS="-g -O2 -Wl,--allow-multiple-definition -fPIE"
-autoreconf -ifv ||:
-#./autogen.sh --prefix=/usr
+export OCAMLPARAM="safe-string=1,_" CFLAGS="-Wl,--allow-multiple-definition"
+./autogen.sh --prefix=/usr
 #make clean
-./configure --prefix=/usr
 make all
 
 %install
@@ -64,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4cvs
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
 - Rebuilt for Fedora
 * Wed Oct 24 2012 Jean-Philippe Chancelier
 - Package

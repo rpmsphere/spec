@@ -1,6 +1,6 @@
 Name:               gigaset-frontend
-Version:            0.7.2
-Release:            1
+Version:            0.6.0
+Release:            2.1
 Summary:            Siemens Gigaset configuration software
 Source:             http://prdownloads.sourceforge.net/gigaset307x/gigaset-frontend-%{version}.tar.gz
 Source1:            gigaset-frontend.desktop
@@ -16,7 +16,7 @@ BuildRequires:      glibc-devel
 BuildRequires:      kernel-headers
 BuildRequires:      qt4-devel
 BuildRequires:      expat-devel
-BuildRequires:      gcc-c++ automake glibc-devel pkgconfig
+BuildRequires:      gcc gcc-c++ make glibc-devel pkgconfig
 
 %description
 This package contains user space configuration programs for Siemens Gigaset
@@ -33,7 +33,7 @@ for Siemens Gigaset ISDN devices.
 %prep
 %setup -q
 %patch1
-#patch2
+%patch2
 
 %build
 # not autotools:
@@ -98,7 +98,7 @@ done
 ##%exclude %{_libdir}/libQt*
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.2
+* Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0
 - Rebuilt for Fedora
 * Sun Aug 21 2011 pascal.bleser@opensuse.org
 - initial version (0.6.0)

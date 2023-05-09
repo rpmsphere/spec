@@ -17,7 +17,7 @@ BuildRequires: libgit2-devel
 AutoReq: off
 Requires: openmpi
 Requires: qt5-qtbase-gui qt5-qtdeclarative alsa-lib boost libcurl libevent libffi flexiblas-netlib libgcc libgit2 libgomp
-Requires: hdf5 hwloc-libs libicu jack-audio-connection-kit lapack matio portaudio libsndfile libstdc++ taglib libxml2 zlib
+Requires: hdf5 hwloc-libs libicu pipewire-jack-audio-connection-kit lapack matio portaudio libsndfile libstdc++ taglib libxml2 zlib
 
 %description
 The aim of Nelson is providing a powerful open computing environment for
@@ -36,7 +36,7 @@ sed -i 's|fscanf(filepointer, np)|fscanf(filepointer, "%s", np)|' modules/stream
 
 %build
 #cmake -G "Unix Makefiles" .
-cmake . -DCMAKE_INSTALL_PREFIX=/usr/libexec -DCMAKE_BUILD_TYPE=release -DMPI_C_COMPILER=/usr/lib64/openmpi/bin/mpicc -DMPI_CXX_COMPILER=/usr/lib64/openmpi/bin/mpicxx -DMPI_C_INCLUDE_PATH=/usr/include/openmpi-x86_64/
+cmake . -DCMAKE_INSTALL_PREFIX=/usr/libexec -DCMAKE_BUILD_TYPE=release -DMPI_C_COMPILER=/usr/lib64/openmpi/bin/mpicc -DMPI_CXX_COMPILER=/usr/lib64/openmpi/bin/mpicxx -DMPI_C_INCLUDE_PATH=/usr/include/openmpi-%{_arch}/
 make
 
 %install
@@ -61,5 +61,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
 
 %changelog
-* Sun Aug 7 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.7
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.7
 - Rebuilt for Fedora

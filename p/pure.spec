@@ -1,3 +1,5 @@
+#undefine _missing_build_ids_terminate_build
+
 Summary: The Pure Programming Language
 Name: pure
 Version: 0.68

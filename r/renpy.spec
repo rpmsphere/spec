@@ -13,6 +13,7 @@ BuildRequires:  lapack, atlas-devel
 BuildRequires:  glib2-devel, ffmpeg-devel
 BuildRequires:  gcc-c++, SDL2-devel
 BuildRequires:  python3-pygame_sdl2-devel
+BuildRequires:  python3-future
 Requires:	python3-renpy
 
 %description

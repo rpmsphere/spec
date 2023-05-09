@@ -15,7 +15,7 @@ BuildRequires:  libpng-devel
 BuildRequires:  allegro-loadpng-devel
 BuildRequires:  allegro-devel
 BuildRequires:  desktop-file-utils
-BuildRequires:  gcc-c++ cmake
+BuildRequires:  cmake
 
 %description
 Open Sonic is an open-source game based on the "Sonic the Hedgehog"

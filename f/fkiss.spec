@@ -19,6 +19,7 @@ KISS is a software for playing Paper-doll on any computers.
 
 %build
 ./configure --prefix=%{_prefix}
+#sed -i 's|-DHAVE_CONFIG_H|-DHAVE_CONFIG_H -DUSE_VARARGS|' Makefile
 make
 
 %install
@@ -38,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kiss/*
 
 %changelog
-* Tue Mar 15 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.35
+* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.35
 - Rebuilt for Fedora
 * Fri Nov 30 2001 NORIKANE Seiichiro <no_ri@kf6.so-net.ne.jp> - 0.33a-0k
 - version up

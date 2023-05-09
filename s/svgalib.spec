@@ -119,7 +119,7 @@ touch $RPM_BUILD_ROOT/etc/vga/textregs
 %{_mandir}/man3/*
 
 %changelog
-* Sun Aug 28 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.25
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.25
 - Rebuilt for Feodra
 * Wed Jan 27 2021 Fedora Release Engineering <releng@fedoraproject.org> - 1.9.25-29
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild

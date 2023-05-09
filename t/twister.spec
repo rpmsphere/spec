@@ -4,9 +4,10 @@ Release:        2.1
 Summary:        Peer-to-peer microblogging client
 License:        MIT
 Group:          Productivity/Networking/Other
-URL:            https://github.com/miguelfreitas
+URL:            http://twister.net.co
 Source0:        twister-core-master.zip
 Source1:        twister-html-master.zip
+BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  libtool
 BuildRequires:  boost-devel
@@ -28,11 +29,10 @@ and BitTorrent protocols.
 %patch0 -p1
 
 %build
-export CXXFLAGS="-std=gnu++11 -fPIE"
+export CXXFLAGS="-std=gnu++11"
 ./autotool.sh
-sed -i '21375,21513d' configure
 %ifarch aarch64
-%configure --disable-sse2
+%configure --disable-sse2 --with-libdb=%{_libdir}/libdb_cxx.so
 %else
 ./configure --prefix=/usr
 %endif
@@ -52,7 +52,7 @@ install -Dm755 %{SOURCE2} %{buildroot}%{_bindir}/%{name}
 %{_datadir}/doc/%{name}
 
 %changelog
-* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.40
+* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.40
 - Rebuilt for Fedora
 * Sat Mar 26 2016 Miguel Freitas
 - Build 0.9.28

@@ -16,7 +16,7 @@ Summary:        Statically typed, imperative programming language
 # compiler is MIT, nimble package manager is BSD
 License:        MIT and BSD
 URL:            https://nim-lang.org
-ExclusiveArch:  %{nim_arches}
+#ExclusiveArch:  %{nim_arches}
 
 Source0:        https://nim-lang.org/download/%{name}-%{version}.tar.xz
 Source1:        nim.1
@@ -145,7 +145,7 @@ cp tools/dochack/dochack.js %{buildroot}%{_docdir}/%{name}/
 %doc %{_docdir}/nim
 
 %changelog
-* Sun Nov 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.10
+* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.10
 - Rebuilt for Fedora
 * Tue Jul 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.4-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild

@@ -18,8 +18,8 @@ A low level language with high level syntax and expressibility, aimed at OSDev w
 #sed -i 's|usr/local|usr|' makefile source/frontend/arguments.cpp
 
 %build
-make LLVM_CONFIG=llvm-config-7.0-64
-#make
+#make LLVM_CONFIG=llvm-config-64
+make
 
 %install
 rm -rf $RPM_BUILD_ROOT

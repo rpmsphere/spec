@@ -1,11 +1,11 @@
 Name: codonphyml
 Summary: Markovian codon models of evolution in phylogeny reconstruction
-Version: 1.00.201304.11
-Release: 10.1
+Version: 1.00.201407.24
+Release: 1
 Group: Applications/Engineering
 License: GPLv3
-URL: http://sourceforge.net/projects/codonphyml
-Source0: http://jaist.dl.sourceforge.net/project/codonphyml/codonPhyML_dev_1.00_201304.11.zip
+URL: https://sourceforge.net/projects/codonphyml
+Source0: https://jaist.dl.sourceforge.net/project/codonphyml/codonPhyML_dev_1.00_201407.24.zip
 BuildRequires: automake
 
 %description
@@ -31,5 +31,5 @@ make install DESTDIR=%{buildroot}
 %{_bindir}/%{name}
 
 %changelog
-* Sun May 05 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.00.201304.11
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.00.201407.24
 - Rebuilt for Fedora

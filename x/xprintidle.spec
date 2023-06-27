@@ -2,13 +2,13 @@
 %undefine _debugsource_packages
 
 Name:           xprintidle
-Version:        0.2.4
-Release:        2
+Version:        0.2.5
+Release:        1
 Summary:        Utility to print user's idle time in X
 License:        GPL-2.0
 Group:          System/X11/Utilities
-URL:            http://freecode.com/projects/xprintidle
-Source:         http://httpredir.debian.org/debian/pool/main/x/%{name}/%{name}-%{version}.tar.gz
+URL:            https://freecode.com/projects/xprintidle
+Source:         https://httpredir.debian.org/debian/pool/main/x/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  pkgconfig(x11)
@@ -35,7 +35,7 @@ install -Dm644 %{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 %{_mandir}/man1/%{name}.1*
 
 %changelog
-* Sun Aug 14 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.5
 - Rebuilt for Fedora
 * Thu Jul  7 2016 sor.alexei@meowr.ru
 - Initial package

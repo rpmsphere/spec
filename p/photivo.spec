@@ -50,12 +50,15 @@ sed -i '31i #include<cstdlib>' Sources/ptDefines.h
 sed -i 's|-march=i686||' CMakeLists.txt photivoProject/photivoProject.pro
 
 %build
-qmake-qt5 PREFIX=%_prefix CONFIG-=debug CONFIG+=WithGimp
-make
+#qmake-qt5 PREFIX=%_prefix CONFIG-=debug CONFIG+=WithGimp
+#make
+%{cmake}
+%{cmake_build}
 
 %install
-make INSTALL_ROOT=%buildroot install
-install -pD -m755 ptGimp %buildroot%_libdir/gimp/2.0/plug-ins/ptGimp
+#make INSTALL_ROOT=%buildroot install
+#install -pD -m755 ptGimp %buildroot%_libdir/gimp/2.0/plug-ins/ptGimp
+%{cmake_install}
 # install utilities
 #install -pD -m755 ptClear %buildroot%_bindir/PtClear
 #chmod 755 %buildroot%_bindir/ptClear
@@ -76,11 +79,11 @@ chmod +x %buildroot%_bindir/*
 %_datadir/applications/*
 %_datadir/pixmaps/photivo-appicon.png
 
-%files gimp
-%_libdir/gimp/2.0/plug-ins/*
+#files gimp
+#_libdir/gimp/2.0/plug-ins/*
 
 %changelog
-* Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 20200406
+* Sun May 14 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 20200406
 - Rebuilt for Fedora
 * Tue Dec 03 2013 Yuri N. Sedunov <aris@altlinux.org> 0-alt10.f1a2a2889c33
 - update to current snapshot

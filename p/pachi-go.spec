@@ -2,19 +2,19 @@
 
 Name: pachi-go
 Summary: Engine for the game of go/weiqi/baduk
-Version: 12.40
+Version: 12.80
 Release: 1
 Group: Games
 License: GPLv2
-URL: http://pachi.or.cz/
-Source0: https://github.com/pasky/pachi/archive/pachi-12.40.tar.gz
+URL: https://pachi.or.cz/
+Source0: https://github.com/pasky/pachi/archive/pachi-pachi-%{version}.tar.gz
 Source1: pachi-data-extra.zip
 BuildRequires: boost-devel
 Requires: pachi-go-data
 
 %description
 Pachi is a reasonably strong engine for the ancient game of go.
-(http://senseis.xmp.net/?Go)
+(https://senseis.xmp.net/?Go)
 
 The default engine plays by Chinese rules and should be about 7d KGS
 strength on 9x9. On 19x19 it can hold a solid KGS 2d rank on modest
@@ -30,7 +30,7 @@ and various tactical checks is used for the semi-random Monte Carlo
 playouts. Large-scale board patterns and dcnn are used in the tree
 search. Technical information (only slightly dated) about Pachi's
 architecture and algorithms can be found in Petr Baudis' Master's Thesis:
-http://pachi.or.cz/
+https://pachi.or.cz/
 
 %package data
 Summary: Pachi go engine data files
@@ -60,5 +60,5 @@ mv %{buildroot}%{_bindir}/pachi %{buildroot}%{_bindir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
-* Mon Sep 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 12.40
+* Sun Jun 11 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 12.80
 - Rebuilt for Fedora

@@ -1,11 +1,11 @@
 Name:           lesspipe
-Version:        2.07
+Version:        2.08
 Release:        1
 Summary:        Input Filter for the Pager "less"
 License:        GPL-2.0+
 Group:          System/Console
-URL:            http://www-zeuthen.desy.de/~friebel/unix/lesspipe.html
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:            https://www-zeuthen.desy.de/~friebel/unix/lesspipe.html
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 
 %description
@@ -37,7 +37,7 @@ install -Dpm 0644 lesspipe.1 %{buildroot}%{_mandir}/man1/lesspipe.1
 %doc %{_mandir}/man1/lesspipe.1.*
 
 %changelog
-* Sun Jan 15 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.07
+* Sun Jun 25 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.08
 - Rebuilt for Fedora
 * Sun Sep  9 2012 asterios.dramis@gmail.com
 - Rearranged runtime dependencies based on the respective packages'

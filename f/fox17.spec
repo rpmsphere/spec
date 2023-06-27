@@ -1,11 +1,11 @@
 %undefine _debugsource_packages
 
 Name:           fox17
-Version:        1.7.80
+Version:        1.7.82
 Release:        1
 License:        LGPL-3.0+
 Summary:        Shared Libraries for the FOX Toolkit
-URL:            http://www.fox-toolkit.org/
+URL:            https://www.fox-toolkit.org/
 Group:          Development/Languages/C and C++
 Source:         ftp://ftp.fox-toolkit.org/pub/fox-%version.tar.gz
 Source1:        calculator.png
@@ -191,7 +191,7 @@ test -f %{_mandir}/man1/reswrap.1.gz || ln -s reswrap17.1.gz %{_mandir}/man1/res
 %{_mandir}/man1/ControlPanel.1*
 
 %changelog
-* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.80
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.82
 - Rebuilt for Fedora
 * Mon Dec 15 2014 lars@linux-schulserver.de
 - the -devel-static package must require the -devel-package,
@@ -710,7 +710,7 @@ test -f %{_mandir}/man1/reswrap.1.gz || ln -s reswrap17.1.gz %{_mandir}/man1/res
 * Mon Aug 24 2009 lars@linux-schulserver.de
 - update to 1.7.20:
   * too many changes to list here. Please read
-    http://www.fox-toolkit.org/news.html for all details
+    https://www.fox-toolkit.org/news.html for all details
 - added fox-1.7.20-am111.patch to fix build with automake 1.11
 * Tue Jun 16 2009 lrupp@suse.de
 - update to 1.7.19:

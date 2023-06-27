@@ -1,15 +1,15 @@
 Name:           pentobi
-Version:        21.0
+Version:        23.1
 Release:        1
 Summary:        Program to play the board game Blokus
 License:        GPLv3
-URL:            http://pentobi.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/%{name}/%{version}/%{name}-%{version}.tar.xz
-BuildRequires:  cmake gcc-c++ qt5-qtsvg-devel qt5-qttools-devel
-BuildRequires:  extra-cmake-modules kf5-kio-devel
+URL:            https://pentobi.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/%{name}/%{version}/%{name}-%{version}.tar.xz
+BuildRequires:  cmake gcc-c++ extra-cmake-modules
 BuildRequires:  desktop-file-utils libappstream-glib
-BuildRequires:  qt5-qtquickcontrols2-devel qt5-qtwebview-devel docbook-style-xsl
-BuildRequires:  librsvg2-tools
+#BuildRequires:  qt5-qtquickcontrols2-devel qt5-qtwebview-devel qt5-qtsvg-devel qt5-qttools-devel kf5-kio-devel
+BuildRequires:  qt6-qtbase-devel qt6-linguist qt6-qttools-devel qt6-qtdeclarative-devel
+BuildRequires:  librsvg2-tools docbook-style-xsl
 
 %description
 Pentobi is a computer opponent for the board game Blokus with
@@ -41,23 +41,6 @@ export CXXFLAGS="%{optflags} -O3"
 #make_install -C %{_host}
 %cmake_install
 
-%post
-/usr/bin/update-desktop-database &> /dev/null || :
-/bin/touch --no-create %{_datadir}/mime/packages &>/dev/null || :
-/bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :
-
-%postun
-/usr/bin/update-desktop-database &> /dev/null || :
-if [ $1 -eq 0 ] ; then
-  /usr/bin/update-mime-database %{_datadir}/mime &> /dev/null || :
-  /bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null
-  /usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
-fi
-
-%posttrans
-/usr/bin/update-mime-database %{?fedora:-n} %{_datadir}/mime &> /dev/null || :
-/usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
-
 %files
 %doc *.md
 %{_bindir}/*
@@ -71,13 +54,13 @@ fi
 %{_datadir}/metainfo/io.sourceforge.pentobi.appdata.xml
 %{_mandir}/*/man6/*
 
-%files kde-thumbnailer
-%{_libdir}/qt5/plugins/*.so
-%{_datadir}/kservices5/*.desktop
+#files kde-thumbnailer
+#{_libdir}/qt5/plugins/*.so
+#{_datadir}/kservices5/*.desktop
 #{_datadir}/metainfo/io.sourceforge.pentobi.kde-thumbnailer.metainfo.xml
 
 %changelog
-* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 21.0
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 23.1
 - Rebuilt for Fedora
 * Mon Jan 04 2016 Juhani Numminen <juhaninumminen0@gmail.com> - 11.0-1
 - Created by borrowing from existing pentobi.spec files

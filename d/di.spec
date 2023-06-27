@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           di
-Version:        4.51
+Version:        4.52
 Release:        1
 Summary:        Disk Information Utility
 Source:         https://downloads.sourceforge.net/project/diskinfo-di/di-%{version}.tar.gz
@@ -29,6 +29,8 @@ make prefix=$RPM_BUILD_ROOT%{_prefix} install
 mv $RPM_BUILD_ROOT%{_datadir}/locale/{en,en_US}
 install -D -m 0644 di.1 $RPM_BUILD_ROOT%{_mandir}/man1/di.1
 %find_lang %{name}
+rm $RPM_BUILD_ROOT%{_bindir}/mi
+ln -s di $RPM_BUILD_ROOT%{_bindir}/mi
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -40,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/di.1.*
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.51
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 4.52
 - Rebuilt for Fedora
 * Mon Jul  5 2010 pascal.bleser@opensuse.org
 - update to 4.25:

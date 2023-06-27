@@ -1,14 +1,14 @@
 %define _default_patch_fuzz 2
 
 Name:           siren
-Version:        0.9
+Version:        0.10
 Release:        1
 Summary:        Text-Based Audio Player
 License:        ISC
 Group:          Productivity/Multimedia/Sound/Players
 Patch1:         siren-ncurses.patch
-URL:            http://www.kariliq.nl/siren/
-Source:         http://www.kariliq.nl/siren/dist/siren-%{version}.tar.gz
+URL:            https://www.kariliq.nl/siren/
+Source:         https://www.kariliq.nl/siren/dist/siren-%{version}.tar.gz
 BuildRequires:  flac-devel
 BuildRequires:  gcc
 BuildRequires:  glibc-devel
@@ -67,7 +67,7 @@ make %{?_smp_mflags} DESTDIR=%{buildroot} install
 %{_libdir}/siren
 
 %changelog
-* Thu Aug 08 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.10
 - Rebuilt for Fedora
 * Sat Oct  8 2016 aloisio@gmx.com
 - Update to version 0.7

@@ -1,5 +1,5 @@
 Name:		sc-im
-Version:	0.8.2
+Version:	0.8.3
 Release:	1
 Summary:	Spreadsheet Calculator Improvised
 Group:		Applications/Productivity
@@ -31,7 +31,7 @@ cd src
 %{_datadir}/sc-im
 
 %changelog
-* Sun Dec 26 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.2
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
 - Rebuilt for Fedora
 * Tue Aug 14 2018 Nux <rpm@li.nux.ro> - 0.7.0-1
 - initial EL7 package build

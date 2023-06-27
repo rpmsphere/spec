@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		evdi
-Version:	1.12.0
+Version:	1.13.1
 Release:	1
 Summary:	DisplayLink VGA/HDMI driver for DL-6xxx, DL-5xxx, DL-41xx and DL-3xxx adapters
 Group:		User Interface/X Hardware Support
@@ -76,7 +76,7 @@ dkms remove evdi/%{version} --all
 /usr/src/evdi-%{version}
 
 %changelog
-* Sun Sep 11 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.12.0
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.13.1
 - Rebuild package
 * Sun Feb 19 2017 Richard Hofer <rofer@rofer.me> 1.3.52
 - Bump downloaded version to 1.3.52
@@ -117,4 +117,4 @@ dkms remove evdi/%{version} --all
 * Wed Aug 19 2015 Eric Nothen <enothen@gmail.com> - 1.0.68-2
 - Changed udev rule to detect devices based on vendor rather than model
 * Thu Aug 13 2015 Eric Nothen <enothen@gmail.com> - 1.0.68-1
-- Initial package based on module version 1.0.68 available at http://www.displaylink.com/downloads/ubuntu.php
+- Initial package based on module version 1.0.68 available at https://www.displaylink.com/downloads/ubuntu.php

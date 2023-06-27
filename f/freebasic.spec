@@ -2,14 +2,14 @@
 %undefine _debugsource_packages
 
 Name:		freebasic
-Version:	1.07.1
+Version:	1.10.0
 Release:	1
 Summary:	FreeBASIC language compiler
 License:	GPL
 Group:		Education
 Source:		FreeBASIC-%version-source.tar.gz
 Source1:	FB-manual-%version-html.zip
-URL: 		http://freebasic.net
+URL: 		https://freebasic.net
 BuildRequires:  freebasic
 BuildRequires:  gcc-c++
 BuildRequires:  libffi-devel
@@ -58,7 +58,7 @@ cp -a examples %buildroot%_datadir/freebasic
 %_mandir/man1/*
 
 %changelog
-* Thu Oct 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.07.1
+* Sun May 28 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.10.0
 - Rebuilt for Fedora
 * Wed Apr 15 2015 Andrey Cherepanov <cas@altlinux.org> 1.02.0-alt2
 - Replace old i586-freebasic

@@ -5,13 +5,13 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl-devel perl-podlators
 
 Name: perl-%module_name
-Version: 1.1
-Release: 2.1
+Version: 2
+Release: 1
 Summary: Pure Perl implementation for an XML-RPC client and server
 Group: Development/Perl
 License: perl
-URL: http://search.cpan.org/dist/%module_name
-Source0: http://mirror.yandex.ru/mirrors/cpan/authors/id/C/CA/CAVAC/%{module_name}-%{version}.tar.gz
+URL: https://search.cpan.org/dist/%module_name
+Source0: https://mirror.yandex.ru/mirrors/cpan/authors/id/C/CA/CAVAC/%{module_name}-%{version}.tar.gz
 BuildArch: noarch
 
 %description
@@ -35,7 +35,7 @@ make
 %{_datadir}/perl5/vendor_perl/XML/RPC.pm
 
 %changelog
-* Mon Aug 27 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2
 - Rebuilt for Fedora
 * Sat Nov 25 2017 Igor Vlasenko <viy@altlinux.ru> 1.1-alt1
 - regenerated from template by package builder

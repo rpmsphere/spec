@@ -1,11 +1,11 @@
 Summary: Ultimate Window Manager
 Name: uwm
-Version: 0.2.11a
-Release: 3.1
+Version: 0.2.11b
+Release: 1
 License: GPL
 Group: User Interface/Desktops
-Source: http://softlayer-sng.dl.sourceforge.net/project/udeproject/UWM/%{name}-%{version}%20stable/%{name}-%{version}.tar.gz
-URL: http://udeproject.sourceforge.net
+Source: https://softlayer-sng.dl.sourceforge.net/project/udeproject/UWM/%{name}-%{version}%20stable/%{name}-%{version}.tar.gz
+URL: https://udeproject.sourceforge.net
 BuildRequires: libX11-devel, libXext-devel, libXpm-devel, libXmu-devel
 Provides: ude
 
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/doc/*
 
 %changelog
-* Fri Apr 10 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.11a
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.11b
 - Rebuilt for Fedora
 * Sat Jun 9 2001 Christian Ruppert <arc@gmx.li>
 - Added package description

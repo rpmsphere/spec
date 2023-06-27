@@ -2,7 +2,7 @@
 %define fontdir %{_datadir}/fonts/%{_name}
 
 Name:           %{_name}-fonts
-Version:        0.941
+Version:        0.943
 Release:        1
 Summary:	An open source Chinese font derived from Klee One (Fontworks)
 Source0:        https://github.com/ButTaiwan/iansui/archive/refs/tags/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
@@ -28,5 +28,5 @@ install -m644 *.ttf %{buildroot}%{fontdir}
 %{fontdir}/*
 
 %changelog
-* Sun Mar 6 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.941
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.943
 - Rebuilt for Fedora

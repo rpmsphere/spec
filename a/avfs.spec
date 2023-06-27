@@ -1,11 +1,11 @@
 Summary:	Enables programs to look inside archived/compressed files, access remote files
 Name:		avfs
-Version:	1.1.4
+Version:	1.1.5
 Release:	1
 License:	GPLv2 and LGPLv2
 Group:		Applications/Archiving
-URL:		http://sourceforge.net/projects/avf
-Source0:	http://ncu.dl.sourceforge.net/project/avf/%{name}/%{version}/%{name}-%{version}.tar.bz2
+URL:		https://sourceforge.net/projects/avf
+Source0:	https://ncu.dl.sourceforge.net/project/avf/%{name}/%{version}/%{name}-%{version}.tar.bz2
 BuildRequires:	fuse-devel
 
 %description
@@ -68,7 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/avfs.pc
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.4
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.5
 - Rebuilt for Fedora
 * Wed Aug 06 2008 J. Krebs <rpm_speedy@yahoo.com> - 0.9.8-2
 - Added libdir to configure for build under x86_64.

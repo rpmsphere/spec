@@ -1,11 +1,11 @@
 Name: txr
 Summary: A Pattern Matching Language (Not Just) for Convenient Text Extraction
-Version: 283
+Version: 288
 Release: 1
 Group: Development/Languages
 License: BSD
-URL: http://www.nongnu.org/txr/
-Source0: http://www.kylheku.com/cgit/txr/snapshot/txr-%{version}.tar.bz2
+URL: https://www.nongnu.org/txr/
+Source0: https://www.kylheku.com/cgit/txr/snapshot/txr-%{version}.tar.bz2
 BuildRequires: flex-devel
 
 %description
@@ -35,5 +35,5 @@ make install DESTDIR=%{buildroot}
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 283
+* Sun Jun 11 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 288
 - Rebuilt for Fedora

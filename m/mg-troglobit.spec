@@ -2,7 +2,7 @@
 
 Name: mg-troglobit
 Summary: Public domain Micro Emacs derivative
-Version: 3.5
+Version: 3.6
 Release: 1
 Group: Applications/Editors
 License: Unlicense
@@ -33,7 +33,8 @@ make install DESTDIR=%{buildroot}
 %{_bindir}/%{_name}
 %{_docdir}/%{_name}
 %{_mandir}/man1/%{_name}.1.*
+%{_datadir}/mg/tutorial.gz
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.5
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6
 - Rebuilt for Fedora

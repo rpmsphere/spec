@@ -1,5 +1,5 @@
 Name:		glibc-sinitic-langpacks
-Version:	2.36
+Version:	2.37
 Release:	99
 Summary:	Locale data for some sinitic languages
 License:	Public Domain
@@ -38,5 +38,5 @@ rm -rf %{buildroot}
 /usr/lib/locale/*
 
 %changelog
-* Sun Oct 30 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.36
-- Initial package
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.37
+- Rebuilt for Fedora

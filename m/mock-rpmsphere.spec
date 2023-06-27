@@ -1,5 +1,5 @@
 Name:           mock-rpmsphere
-Version:        36
+Version:        38
 Release:        1
 Summary:        Mock config files for the RPM Sphere Repository
 License:        BSD
@@ -25,5 +25,5 @@ install -pm 0644 *.cfg %{buildroot}%{_sysconfdir}/mock
 %config(noreplace) %{_sysconfdir}/mock/*.cfg
 
 %changelog
-* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 36
-- Initial package
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 38
+- Rebuilt for Fedora

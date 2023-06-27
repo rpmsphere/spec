@@ -1,11 +1,11 @@
 Name:    leocad-data
-Version: 11494
+Version: 23.01
 Release: 1
 Summary: Data files for LeoCAD: bricks, textures and font
 Summary(ru_RU): Файлы для %progname: описание блоков, текстуры и шрифт
 License: Distributable
-URL:     http://www.leocad.org
-Source:  Library-Linux-%{version}.zip
+URL:     https://www.leocad.org
+Source:  Library-%{version}.zip
 Group:   Games/Puzzles
 BuildArch: noarch
 
@@ -28,7 +28,7 @@ install * %buildroot%_datadir/leocad
 %_datadir/leocad/*
 
 %changelog
-* Wed Sep 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 11494
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 23.01
 - Rebuilt for Fedora
 * Mon Sep 27 2010 Igor Vlasenko <viy@altlinux.ru> 0.75.20100922-alt1
 - updated to pieces-3934.zip (2010-09-22)

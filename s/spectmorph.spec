@@ -1,11 +1,14 @@
+%undefine _debugsource_packages
+%global __spec_install_post %{nil}
+
 Name:           spectmorph
-Version:        0.5.2
+Version:        0.6.0
 Release:        1
 Summary:        Analyze samples of musical instruments and combine them
 Group:          Multimedia
 License:        LGPLv3
-URL:            http://spectmorph.org/
-Source:         http://spectmorph.org/files/releases/%{name}-%{version}.tar.bz2
+URL:            https://spectmorph.org/
+Source:         https://spectmorph.org/files/releases/%{name}-%{version}.tar.bz2
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  cairo-devel
 BuildRequires:  fftw-devel
@@ -37,14 +40,16 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_libdir}/libspectmorph*.so*
 %{_libdir}/pkgconfig/*.pc
 %{_libdir}/vst/*.so
+%{_libdir}/clap/SpectMorph.clap
+%{_libdir}/lv2/spectmorph.lv2
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*.png
 %{_datadir}/%{name}
-%{_mandir}/man1/*.1.*
+%{_mandir}/man1/*.1*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0
 - Rebuilt for Fedora

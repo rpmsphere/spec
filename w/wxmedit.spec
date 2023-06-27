@@ -2,9 +2,9 @@ Name: wxmedit
 License: GPL
 Group: Applications/Editors
 Summary: A cross-platform Text/Hex Editor
-Version: 3.1git
+Version: 3.1.0.90
 Release: 1
-Source0: wxMEdit-master.zip
+Source0: wxMEdit-%{version}.tar.gz
 URL: https://wxmedit.github.io/
 BuildRequires: gcc-c++ automake
 BuildRequires: boost-devel
@@ -16,14 +16,14 @@ BuildRequires: libcurl-devel
 wxMEdit is a fork of MadEdit with bug fixes and improvements.
 
 %prep
-%setup -q -n wxMEdit-master
+%setup -q -n wxMEdit-%{version}
 #sed -i -e 's|UnicodeString|icu::UnicodeString|g' -e 's|BreakIterator|icu::BreakIterator|g' src/xm/uutils.h src/dialog/wxm_enumeration_dialog.* src/wxm/wx_icu.h
 #sed -i 's|LocalUCharsetDetectorPointer|icu::LocalUCharsetDetectorPointer|g' src/xm/encdet.cpp
 #sed -i -e 's|boost/tr1|boost|' -e 's|std::tr1|std|' src/wxmedit/*.h src/dialog/*.cpp
 sed -i 's|FALSE|0|' src/xm/encoding/multibyte.cpp
 
 %build
-alternatives --set wx-config /usr/bin/wx-config-2.0
+#alternatives --set wx-config /usr/bin/wx-config-3.0
 %configure
 make
 
@@ -44,5 +44,5 @@ sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/ap
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Thu Jan 04 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1git
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.0.90
 - Rebuilt for Fedora

@@ -1,13 +1,13 @@
 Name:    leocad
-Version: 19.07.1
+Version: 23.03
 Release: 1
 Summary: Visual brick construction tool for kids
 Summary(ru_RU): Детский конструктор, использующий блоки с шипами
 License: GPLV2+
-URL:     http://www.leocad.org
+URL:     https://www.leocad.org
 Source0: https://codeload.github.com/leozide/leocad/tar.gz/v%{version}#/%{name}-%{version}.tar.gz
 Group:   Games/Puzzles
-BuildRequires: qt4-devel
+BuildRequires: qt5-qtbase-devel
 Requires: leocad-data
 
 %description 
@@ -31,7 +31,7 @@ LeoCAD -- программа для конструирования чего
 %setup -q
 
 %build
-%qmake_qt4
+%qmake_qt5
 make
 
 %install
@@ -39,16 +39,16 @@ make install INSTALL_ROOT=%{buildroot}
 
 %files
 %_bindir/*
-%_datadir/pixmaps/%name.png
+#_datadir/pixmaps/%name.png
 %_mandir/man1/%name.*
 %_datadir/applications/%name.desktop
 %_datadir/doc/%name
-%_datadir/icons/hicolor/scalable/mimetypes/application-vnd.%name.svg
 %_datadir/mime/packages/%name.xml
 %_datadir/metainfo/leocad.appdata.xml
+%_datadir/icons/hicolor/*/*/*leocad.*
 
 %changelog
-* Wed Sep 11 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 19.07.1
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 23.03
 - Rebuilt for Fedora
 * Fri Sep 28 2012 Eugeny A. Rostovtsev (REAL) <real at altlinux.org> 0.75-alt5.2
 - Rebuilt with libpng15

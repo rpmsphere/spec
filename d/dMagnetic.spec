@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
 Name:           dMagnetic
-Version:        0.36
+Version:        0.37
 Release:        1
 Summary:        A Magnetic Scrolls Interpreter
 License:        BSD-2-Clause
 Group:          Amusements/Games/Other
-URL:            http://dettus.net/dMagnetic/
-Source0:        http://dettus.net/%{name}/%{name}_%{version}.tar.bz2
+URL:            https://dettus.net/dMagnetic/
+Source0:        https://dettus.net/%{name}/%{name}_%{version}.tar.bz2
 
 %description
 Olay Textadventures from Magnetic Scrolls with glorious ANSI Art.
@@ -37,7 +37,7 @@ install -m 644 %{name}.ini %{buildroot}%{_datadir}/%{name}/%{name}.ini
 %license LICENSE.txt
 
 %changelog
-* Sun Jan 29 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.36
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.37
 - Rebuilt for Fedora
 * Mon Jul 27 2020 Michael Vetter <mvetter@suse.com>
 - Update to 0.25:

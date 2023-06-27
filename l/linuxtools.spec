@@ -28,5 +28,5 @@ cp -a bin sbin %{buildroot}/usr
 %{_sbindir}/*
 
 %changelog
-* Fri Feb 24 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0
 - Initial package for Fedora

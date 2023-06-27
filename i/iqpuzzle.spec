@@ -1,5 +1,5 @@
 Name:           iqpuzzle
-Version:        1.2.8
+Version:        1.2.9
 Release:        1
 Summary:        A diverting I.Q. challenging pentomino puzzle
 Group:          Games/Puzzles
@@ -36,7 +36,7 @@ are available, which have to be filled with them.
 %{_mandir}/man6/iqpuzzle.6.*
 
 %changelog
-* Sun Dec 11 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.8
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.9
 - Rebuilt for Fedora
 * Sat Mar 06 2021 kekepower <kekepower> 1.2.2-1.mga9
 + Revision: 1700264

@@ -2,7 +2,7 @@
 
 Summary: A statically typed embeddable scripting language
 Name: umka
-Version: 0.8
+Version: 1.0
 Release: 1
 License: BSD-2
 Group: Development/Languages
@@ -32,10 +32,10 @@ install -Dm755 build/lib%{name}.so %{buildroot}%{_libdir}/lib%{name}.so
 install -Dm644 build/lib%{name}.a %{buildroot}%{_libdir}/lib%{name}.a
 install -Dm644 src/%{name}_api.h %{buildroot}%{_includedir}/%{name}_api.h
 install -d %{buildroot}%{_datadir}/%{name}
-cp -a import Umka.sublime-syntax %{buildroot}%{_datadir}/%{name}
+cp -a Umka.sublime-syntax %{buildroot}%{_datadir}/%{name}
 
 %files 
-%doc *.md LICENSE examples
+%doc *.md LICENSE examples doc/*
 %{_bindir}/%{name}
 %{_libdir}/lib%{name}.*
 %{_includedir}/%{name}_api.h
@@ -45,5 +45,5 @@ cp -a import Umka.sublime-syntax %{buildroot}%{_datadir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
+* Sun May 28 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
 - Rebuilt for Fedora

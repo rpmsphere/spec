@@ -1,5 +1,5 @@
 Name:		cpu-g
-Version:	0.16.2
+Version:	0.16.3
 Release:	1
 License:	GPLv3
 Group:		System/Kernel and hardware
@@ -40,7 +40,7 @@ msgfmt po/uk_UA.po -o %buildroot/%_datadir/locale/uk_UA/LC_MESSAGES/%name.mo
 
 %__install -m 755 bin/%name %buildroot/%_datadir/%name
 %__install -m 644 %SOURCE2 %buildroot/%_datadir/applications
-ln -s %_datadir/%name/%name $RPM_BUILD_ROOT%_bindir/%name
+ln -s ../share/%name/%name $RPM_BUILD_ROOT%_bindir/%name
 
 # Icons
 %__mkdir -p %buildroot/%_datadir/pixmaps
@@ -48,7 +48,6 @@ install -m644 data/icons/cpu-g_192.png %buildroot%_datadir/pixmaps/%name.png
 
 %files
 %doc COPYING README.md
-%dir %_datadir/%name
 %_bindir/%name
 %_datadir/applications/%name.desktop
 %_datadir/%name
@@ -56,7 +55,7 @@ install -m644 data/icons/cpu-g_192.png %buildroot%_datadir/pixmaps/%name.png
 %_datadir/pixmaps/%name.png
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16.2
+* Sun Jun 11 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.16.3
 - Rebuilt for Fedora
 * Sat Apr 11 2020 Motsyo Gennadi <drool@altlinux.ru> 0.16.2-alt1
 - 0.16.2

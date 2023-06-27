@@ -2,7 +2,7 @@
 
 Summary: A programming language
 Name: perfume
-Version: 1.6.2
+Version: 1.8.0
 Release: 1
 License: MIT
 Group: Development/Languages
@@ -12,7 +12,7 @@ BuildRequires: libpcl-devel
 BuildRequires: onigmo-devel
 
 %description
-A programming language Perfume and a text editor Pmacs writen by Perfume.
+A programming language Perfume.
 
 %prep
 %setup -q
@@ -26,6 +26,7 @@ sed -i -e 's|PREFIX.*= |PREFIX = %{buildroot}|' -e 's|/usr/local|/usr|' -e 's|mk
 %install
 mkdir -p %{buildroot}%{_bindir}
 %make_install
+rm -f %{buildroot}%{_bindir}/pmacs*
 #install -d %{buildroot}%{_bindir}
 #install -m755 *-linux-build/%{name}* *-linux-build/stategraph %{buildroot}%{_bindir}
 #install -d %{buildroot}%{_includedir}/%{name}
@@ -33,12 +34,12 @@ mkdir -p %{buildroot}%{_bindir}
 
 %files 
 %doc README RELEASE COPYING
-%{_bindir}/*
+%{_bindir}/%{name}sh
 /usr/lib/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.2
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.0
 - Rebuilt for Fedora

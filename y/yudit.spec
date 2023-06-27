@@ -2,7 +2,7 @@
 
 Summary:	Unicode Text Editor
 Name:		yudit
-Version:	3.0.9
+Version:	3.1.0
 Release:	1
 License:	GPL
 Group:		Applications/Editors
@@ -35,7 +35,7 @@ make
 %install
 make DESTDIR=$RPM_BUILD_ROOT install
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/pixmaps
-install -m 644 gnome-yudit.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/yudit.png
+install -m 644 attic/gnome-yudit.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/yudit.png
 
 cat >$RPM_BUILD_ROOT%{_datadir}/applications/yudit.desktop <<EOF
 [Desktop Entry]
@@ -54,62 +54,16 @@ EOF
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%{_bindir}/uniconv
-%{_bindir}/uniprint
-%{_bindir}/yudit
-%{_bindir}/mytool
-%{_mandir}/man1/*
-
-%dir %{_datadir}/yudit
-%{_datadir}/yudit/data
-%{_datadir}/yudit/fonts
-%{_datadir}/yudit/src
-%{_datadir}/yudit/doc
-%{_datadir}/yudit/syntax
-
-%dir %{_datadir}/yudit/locale
-%{_datadir}/yudit/locale/am
-%{_datadir}/yudit/locale/ar
-%{_datadir}/yudit/locale/az
-%{_datadir}/yudit/locale/bg
-%{_datadir}/yudit/locale/bn
-%{_datadir}/yudit/locale/cs
-%{_datadir}/yudit/locale/de
-%{_datadir}/yudit/locale/el
-%{_datadir}/yudit/locale/en
-%{_datadir}/yudit/locale/es
-%{_datadir}/yudit/locale/fi
-%{_datadir}/yudit/locale/fr
-%{_datadir}/yudit/locale/gu
-%{_datadir}/yudit/locale/ga
-%{_datadir}/yudit/locale/hi
-%{_datadir}/yudit/locale/hu
-%{_datadir}/yudit/locale/ja
-%{_datadir}/yudit/locale/ko
-%{_datadir}/yudit/locale/mn
-%{_datadir}/yudit/locale/mr
-%{_datadir}/yudit/locale/pa
-%{_datadir}/yudit/locale/pl
-%{_datadir}/yudit/locale/sl
-%{_datadir}/yudit/locale/sr
-%{_datadir}/yudit/locale/ru
-%{_datadir}/yudit/locale/ta
-%{_datadir}/yudit/locale/uk
-%{_datadir}/yudit/locale/ur
-%{_datadir}/yudit/locale/vi
-%{_datadir}/yudit/locale/yi
-%{_datadir}/yudit/locale/zh
-%{_datadir}/yudit/locale/zh_CN
-
-%dir %{_datadir}/yudit/config
-%config %{_datadir}/yudit/config/*
-%config %{_datadir}/applications/yudit.desktop
-%config %{_datadir}/pixmaps/yudit.png
-
 %doc *.TXT doc/*.txt
+%{_bindir}/*
+%{_mandir}/man1/*
+%{_datadir}/yudit
+%{_datadir}/applications/yudit.desktop
+%{_datadir}/locale/*/LC_MESSAGES/yudit.mo
+%{_datadir}/pixmaps/yudit.png
 
 %changelog
-* Sun Jan 29 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.9
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.0
 - Rebuilt for Fedora
 * Fri Jul 31 2009 J. Krebs <rpm_speedy@yahoo.com> - 2.9.0-2
   Added require for c++ (gcc-c++), patches.

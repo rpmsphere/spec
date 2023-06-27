@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           lapce
-Version:        0.2.4
+Version:        0.2.8
 Release:        1
 Summary:        Lightning-fast and Powerful Code Editor written in Rust
 License:        Apache-2.0
@@ -36,5 +36,5 @@ install -Dm766 extra/images/logo.png %{buildroot}/usr/share/pixmaps/dev.lapce.la
 %{_datadir}/pixmaps/*.png
 
 %changelog
-* Sun Dec 11 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4
+* Sun Jun 18 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.8
 - Rebuilt for Fedora

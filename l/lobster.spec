@@ -2,7 +2,7 @@
 
 Summary: The Lobster Programming Language
 Name: lobster
-Version: 2021.3
+Version: 2023.6
 Release: 1
 License: Apache v2
 Group: Development/Language
@@ -19,7 +19,8 @@ friendly and terse syntax, by doing most of the heavy lifting for you.
 
 %build
 cd dev
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=release .
+cmake -DSDL_STATIC=FALSE -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=release .
+sed -i 's|SDL2-static|SDL2|' CMakeFiles/lobster.dir/link.txt
 make
 
 %install
@@ -35,5 +36,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_docdir}/Lobster
 
 %changelog
-* Sun Sep 26 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.3
+* Sun May 28 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2023.6
 - Rebuilt for Fedora

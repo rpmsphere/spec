@@ -2,7 +2,7 @@
 
 Summary: The Cantonese programming language
 Name: cantonese
-Version: 1.0.1
+Version: 1.0.8
 Release: 1
 License: MIT
 Group: Development/Languages
@@ -38,5 +38,5 @@ fi
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
 - Rebuilt for Fedora

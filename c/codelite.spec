@@ -2,13 +2,13 @@
 %global __prelink_undo_cmd %{nil}
 
 Name:           codelite
-Version:        15.0.1
+Version:        16.0.0
 Release:        1
 License:        GPLv2+
 Group:          Development/Tools
 Summary:        CodeLite is a powerful open-source, cross platform code editor for C/C++
 URL:            http://codelite.sourceforge.net
-Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.xz
+Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Requires:       libssh clang clang-tools-extra SDL
 BuildRequires:	gcc gcc-c++ wxGTK-devel cmake clang-devel lldb-devel libssh-devel hunspell-devel sqlite-devel libXtst-devel
 # Filter out these false-alarms from 'requires', as the package itself supplies them!
@@ -32,7 +32,7 @@ mkdir -p build_release
 export PATH=/usr/libexec/wxGTK:$PATH
 # workaround for a pango/harfbuzz issue: see https://gitlab.kitware.com/cmake/cmake/issues/19531
 (cd build_release && CXXFLAGS="-isystem /usr/include/harfbuzz -fPIC" cmake -G "Unix Makefiles" -DCOPY_WX_LIBS=1 -DAUTOGEN_REVISION=0 ..)
-(cd build_release && make %{?_smp_mflags})
+(cd build_release && make)
 
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
@@ -84,58 +84,16 @@ desktop-file-install  --delete-original       \
 
 %files -f %{name}.lang
 %doc AUTHORS LICENSE COPYING 
-%{_bindir}/codelite
-%{_bindir}/codelite_indexer
-%{_bindir}/codelite_cppcheck
-%{_bindir}/codelite_fix_files
-%{_bindir}/codelite_exec
-%{_bindir}/codelite_kill_children
-%{_bindir}/codelite_xterm
-%{_bindir}/codelite-terminal
-%{_bindir}/codelite-cc
-%{_bindir}/codelite-echo
-%if %{fedora} != 23
-%{_bindir}/codelite-lldb
-%endif
-%{_bindir}/codelite-make
-%{_bindir}/codelite-lsp-helper
-%{_bindir}/codelite_open_helper.py
+%{_bindir}/*
 %{_datadir}/codelite
 %{_datadir}/applications/codelite.desktop
 %{_datadir}/mime/packages/%{name}.xml
-%{_datadir}/icons/hicolor/32x32/mimetypes/application-x-%{name}-workspace.png
-%{_datadir}/icons/hicolor/32x32/mimetypes/application-x-%{name}-project.png
-%{_datadir}/icons/hicolor/32x32/apps/codelite.png
-%{_datadir}/icons/hicolor/32x32@2x/apps/codelite.png
-%{_datadir}/icons/hicolor/64x64/apps/codelite.png
-%{_datadir}/icons/hicolor/64x64@2x/apps/codelite.png
-%{_datadir}/icons/hicolor/128x128/apps/codelite.png
-%{_datadir}/icons/hicolor/128x128@2x/apps/codelite.png
-%{_datadir}/icons/hicolor/256x256/apps/codelite.png
-%{_datadir}/icons/hicolor/256x256@2x/apps/codelite.png
+%{_datadir}/icons/hicolor/*/*/*.png
 %{_libdir}/%{name}
-%{_mandir}/man1/codelite.1*
-%{_mandir}/man1/codelite-make.1*
-%{_mandir}/man1/codelite_fix_files.1*
-
-%post
-update-mime-database %{_datadir}/mime &> /dev/null || :
-update-desktop-database &> /dev/null || :
-touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :
-
-%postun
-update-mime-database %{_datadir}/mime &> /dev/null || :
-update-desktop-database &> /dev/null || :
-if [ $1 -eq 0 ] ; then
-    touch --no-create %{_datadir}/icons/hicolor &>/dev/null
-    gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
-fi
-
-%posttrans
-gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
+%{_mandir}/man1/*.1*
 
 %changelog
-* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 15.0.1
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 16.0.0
 - Rebuilt for Fedora
 * Wed Mar 03 2021 DH
 - Added clang-tools-extra to Requires: to make LanguageServer code-completion work

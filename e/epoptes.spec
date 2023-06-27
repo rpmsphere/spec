@@ -1,9 +1,9 @@
 Name:           epoptes
-Version:        21.02
+Version:        23.01
 Release:        1
 License:        GPL-2.0+
 Summary:        Computer lab management tool
-URL:            http://www.epoptes.org
+URL:            https://www.epoptes.org
 Group:          System/X11/Utilities
 Source:         https://codeload.github.com/Epoptes/epoptes/tar.gz/%{version}#/%{name}-%{version}.tar.gz
 Source2:        epoptes-server.service
@@ -145,7 +145,7 @@ systemctl disable epoptes-client.service
 %{_mandir}/man8/epoptes-client.8.*
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 21.02
+* Sun Jun 11 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 23.01
 - Rebuilt for Fedora
 * Wed Feb 24 2016 cyberorg@opensuse.org
 - update to 0.5.9_bzr0.509
@@ -231,7 +231,7 @@ systemctl disable epoptes-client.service
   at boot. It currently fails to wait for network to be online.
 * Mon Dec  9 2013 lbsousajr@gmail.com
 - Restore package architecture for SLE_11_SP3
-  (see also: http://comments.gmane.org/gmane.linux.suse.opensuse.buildservice/9427)
+  (see also: https://comments.gmane.org/gmane.linux.suse.opensuse.buildservice/9427)
 - Add "BuildRequires: systemd" when needed
 * Mon Dec  9 2013 lbsousajr@gmail.com
 - Package cleanup:

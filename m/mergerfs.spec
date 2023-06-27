@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name: mergerfs
-Version: 2.33.5
+Version: 2.34.1
 Release: 1
 Summary: A FUSE union filesystem
 Group: File tools
@@ -35,7 +35,7 @@ make man
 %doc README.md
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.33.5
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.34.1
 - Rebuilt for Fedora
 * Wed Oct 21 2015 Terechkov Evgenii <evg@altlinux.org> 2.7.0-alt1
 - 2.7.0

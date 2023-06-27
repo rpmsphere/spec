@@ -1,11 +1,11 @@
 Summary:	RPM Sphere release file
 Name:		rpmsphere-release
-Version:	36
+Version:	38
 Release:	1
 License:	BSD
 Group:		System Environment/Base
 URL:		https://github.com/rpmsphere
-Source0:        rpmsphere.repo
+Source0:        https://rpmsphere.github.io/rpmsphere.repo
 BuildArch:	noarch
 Recommends:	rpmfusion-free-release
 Recommends:     rpmfusion-nonfree-release
@@ -30,5 +30,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
-* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 36
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 38
 - Rebuilt for Fedora

@@ -1,17 +1,17 @@
 Name:           libressl
-Version:        3.6.1
+Version:        3.7.3
 Release:        1
 Summary:        An SSL/TLS protocol implementation
 License:        OpenSSL
 Group:          Development/Libraries/C and C++
-URL:            http://libressl.org/
-#Freshcode-URL: http://freshcode.club/projects/libressl
+URL:            https://libressl.org/
+#Freshcode-URL: https://freshcode.club/projects/libressl
 #Git-Clone:	git://github.com/libressl-portable/portable
 #See-Also:	git://github.com/libressl-portable/openbsd
-Source:         http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/%name-%version.tar.gz
-#Source2:        http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/%name-%version.tar.gz.asc
+Source:         https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/%name-%version.tar.gz
+#Source2:        https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/%name-%version.tar.gz.asc
 Source3:        %name.keyring
-Source4:        baselibs.conf
+#Source4:        baselibs.conf-%name
 Patch1:         des-fcrypt.diff
 Patch2:         extra-symver.diff
 BuildRequires:  automake
@@ -154,7 +154,7 @@ rm -f "%buildroot/%_libdir"/*.la
 %_mandir/man3/*.*
 
 %changelog
-* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6.1
+* Sun May 28 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.3
 - Rebuilt for Fedora
 * Wed May 22 2019 Jan Engelhardt <jengelh@inai.de>
 - Update to new upstream release 2.9.2

@@ -2,12 +2,12 @@
 
 Summary: The Agena Programming Language
 Name: agena
-Version: 2.33.0
+Version: 2.39.1
 Release: 1
 License: MIT
 Group: Development/Language
-URL: http://agena.sourceforge.net/
-Source0: http://downloads.sourceforge.net/agena/%{name}-%{version}-src.tar.gz
+URL: https://agena.sourceforge.net/
+Source0: https://downloads.sourceforge.net/agena/%{name}-%{version}-src.tar.gz
 
 %description
 Agena is an easy-to-learn procedural programming language designed to be used
@@ -60,5 +60,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/%{name}
 
 %changelog
-* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.33.0
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.39.1
 - Rebuilt for Fedora

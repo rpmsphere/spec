@@ -7,7 +7,7 @@ Version:	0.3.2
 Release:	8.1
 License:	GPLv2+
 Group:		Networking/Other
-URL:		http://www.ksniffer.org
+URL:		https://www.ksniffer.org
 Source0:	%{name}-%{version}.tar.bz2
 BuildRequires:	kdelibs3-devel
 BuildRequires:	libpcap-devel

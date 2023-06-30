@@ -4,8 +4,8 @@ Version: 0.7.13
 Release: 1
 Group: Converted/Development
 License: see /usr/share/doc/debreate/copyright
-URL: http://debreate.sourceforge.net/
-Source0: http://sourceforge.net/projects/debreate/files/current/%{name}_%{version}_all.deb
+URL: https://debreate.sourceforge.net/
+Source0: https://sourceforge.net/projects/debreate/files/current/%{name}_%{version}_all.deb
 BuildArch: noarch
 Requires: python2-wxpython
 

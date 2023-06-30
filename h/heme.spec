@@ -6,8 +6,8 @@ Version: 0.4.2
 Release: 5.1
 License: GPL
 Group: Applications/Editors
-URL: http://heme.sourceforge.net/
-Source: http://dl.sf.net/heme/heme-%{version}.tar.gz
+URL: https://heme.sourceforge.net/
+Source: https://dl.sf.net/heme/heme-%{version}.tar.gz
 BuildRequires: ncurses-devel
 
 %description

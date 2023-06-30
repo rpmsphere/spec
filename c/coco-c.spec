@@ -7,9 +7,8 @@ Version:	1.17
 Release:	13.1
 Group:		Development/Tools
 License:	Free
-Source0:	http://www.scifac.ru.ac.za/coco/cocorc17.tgz
+Source0:	https://www.scifac.ru.ac.za/coco/cocorc17.tgz
 Patch0:		CocoR-compile.patch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:	gcc-c++, sharutils
 
 %description
@@ -50,7 +49,6 @@ install docs/cocor.1 $RPM_BUILD_ROOT%{_mandir}/man1/cocor.1
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/cocor
 %{_mandir}/man1/cocor.1*
 %{_datadir}/coco

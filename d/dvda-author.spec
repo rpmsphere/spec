@@ -6,8 +6,8 @@ Version: 10.06
 Release: 1
 License: GPLv3
 Group: Applications/Multimedia
-Source: http://jaist.dl.sourceforge.net/project/dvd-audio/dvda-author/%{name}-%{version}/%{name}-%{version}-400.tar.gz
-URL: http://dvd-audio.sourceforge.net
+Source: https://jaist.dl.sourceforge.net/project/dvd-audio/dvda-author/%{name}-%{version}/%{name}-%{version}-400.tar.gz
+URL: https://dvd-audio.sourceforge.net
 
 %description
 dvda-author creates high-definition DVD-Audio discs with navigable DVD-Video zone

@@ -5,7 +5,7 @@ Version:        1.24.1
 Release:        1
 License:        BSD
 Summary:        An emerging parallel programming language
-URL:            http://chapel.cray.com
+URL:            https://chapel.cray.com
 Group:          Development/Languages
 Source:         https://github.com/chapel-lang/chapel/releases/download/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  bc

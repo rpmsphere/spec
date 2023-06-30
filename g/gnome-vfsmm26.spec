@@ -6,8 +6,8 @@ Release:        8.1
 Summary:        C++ wrapper for gnome-vfs
 Group:          System Environment/Libraries
 License:        LGPLv2+
-URL:            http://www.gtkmm.org/
-Source0:        http://ftp.gnome.org/pub/GNOME/sources/gnome-vfsmm/2.18/gnome-vfsmm-%{version}.tar.bz2
+URL:            https://www.gtkmm.org/
+Source0:        https://ftp.gnome.org/pub/GNOME/sources/gnome-vfsmm/2.18/gnome-vfsmm-%{version}.tar.bz2
 Requires(post):   /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 BuildRequires:  glibmm24-devel

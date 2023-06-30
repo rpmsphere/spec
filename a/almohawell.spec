@@ -5,7 +5,7 @@ Release: 3.1
 Group: Utilities/File
 License: Waqf
 URL: https://sourceforge.net/projects/almohawell/
-Source0: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0: https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildArch: noarch
 
 %description -l ar

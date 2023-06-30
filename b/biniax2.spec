@@ -6,8 +6,8 @@ Release:        1
 Summary:        Original and entertaining game
 Group:          Amusements/Games
 License:        GPLv2+
-URL:            http://mordred.dir.bg/biniax
-Source0:        http://mordred.dir.bg/biniax/biniax2-fullsrc.tar.gz
+URL:            https://mordred.dir.bg/biniax
+Source0:        https://mordred.dir.bg/biniax/biniax2-fullsrc.tar.gz
 Patch0:		exec_setting.patch
 
 %description

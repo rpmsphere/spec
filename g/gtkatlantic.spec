@@ -4,8 +4,8 @@ Version:	0.4.2
 Release:	1
 License:	GPL
 Group:		Games/Strategy
-URL:		http://gtkatlantic.gradator.net/
-Source:		http://gtkatlantic.gradator.net/downloads/v0.4/%{name}-%{version}.tar.bz2
+URL:		https://gtkatlantic.gradator.net/
+Source:		https://gtkatlantic.gradator.net/downloads/v0.4/%{name}-%{version}.tar.bz2
 BuildRequires:	gtk2-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libxml2-devel

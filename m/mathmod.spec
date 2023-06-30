@@ -3,8 +3,8 @@ Version:       11.1
 Release:       1
 Summary:       A program which generate 3D and 4D surfaces
 Group:         Sciences/Mathematics
-URL:           http://sourceforge.net/projects/mathmod
-Source0:       http://sourceforge.net/projects/mathmod/files/MathMod-%{version}/%{name}-%{version}-source.zip
+URL:           https://sourceforge.net/projects/mathmod
+Source0:       https://sourceforge.net/projects/mathmod/files/MathMod-%{version}/%{name}-%{version}-source.zip
 Source1:       %{name}.1
 License:       GPLv2
 BuildRequires: qt5-qtbase-devel

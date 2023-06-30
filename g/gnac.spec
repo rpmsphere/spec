@@ -4,8 +4,8 @@ Release:        6.1
 Summary:        Easy to use audio conversion program for the Gnome desktop
 Group:          Sound/Editors and Converters
 License:        GPLv3
-URL:            http://gnac.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/project/gnac/gnac/gnac-0.2.4.1/%{name}-%{version}.tar.bz2
+URL:            https://gnac.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/project/gnac/gnac/gnac-0.2.4.1/%{name}-%{version}.tar.bz2
 Patch1:		gnac-0.2.4.1-nofaac.patch
 Patch2:		gnac-0.2.4.1-cflags.patch
 BuildRequires:  gnome-doc-utils

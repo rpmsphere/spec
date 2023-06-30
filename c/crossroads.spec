@@ -6,8 +6,8 @@ Release: 6.1
 Summary: Load balance and fail over utility for TCP based services
 License: GPLv3+
 Group: System/Servers
-URL: http://crossroads.e-tunity.com/
-Source: http://crossroads.e-tunity.com/downloads/versions/crossroads-%version.tar.gz
+URL: https://crossroads.e-tunity.com/
+Source: https://crossroads.e-tunity.com/downloads/versions/crossroads-%version.tar.gz
 #BuildRequires: gcc-c++ perl-Term-ANSIColor
 BuildRequires: libnsl2-devel
 

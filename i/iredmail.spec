@@ -4,7 +4,7 @@ Version: 0.9.3
 Release: 4.1
 Group: Applications/Internet
 License: GPLv2
-URL: http://www.iredmail.org/
+URL: https://www.iredmail.org/
 Source0: https://bitbucket.org/zhb/iredmail/downloads/iRedMail-%{version}.tar.bz2
 BuildArch: noarch
 

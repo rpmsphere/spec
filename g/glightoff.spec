@@ -4,8 +4,8 @@ Version:	1.0.0
 Release:	1
 License:	GPLv2+
 Group:		Games/Puzzles
-URL:		http://glightoff.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+URL:		https://glightoff.sourceforge.net/
+Source0:	https://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%{name}.png
 Patch0:		glightoff-1.0.0-fix-desktop-file.patch
 BuildRequires:	gtk2-devel >= 2.6

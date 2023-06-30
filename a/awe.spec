@@ -6,8 +6,8 @@ Release: 12.1
 Summary: An Algol W compiler
 License: GPLv3
 Group: Development/Languages
-URL: http://www.algol60.org/15algolwcomp.htm
-Source: http://www.algol60.org/translW/awe.tar.gz
+URL: https://www.algol60.org/15algolwcomp.htm
+Source: https://www.algol60.org/translW/awe.tar.gz
 BuildRequires: python2
 BuildRequires: ocaml
 BuildRequires: gc-devel

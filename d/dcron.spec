@@ -2,10 +2,10 @@ Name:               dcron
 Version:            4.5
 Release:            7.1
 Summary:            Lightweight Cron Daemon
-Source:             http://www.jimpryor.net/linux/releases/dcron-%{version}.tar.gz
+Source:             https://www.jimpryor.net/linux/releases/dcron-%{version}.tar.gz
 Source1:            dcron.init
 Patch1:             dcron-fix_makefile.patch
-URL:                http://www.jimpryor.net/linux/dcron.html
+URL:                https://www.jimpryor.net/linux/dcron.html
 Group:              System/Daemons
 License:            GNU General Public License version 2 or later (GPL v2 or later)
 BuildRequires:      gcc make glibc-devel pkgconfig

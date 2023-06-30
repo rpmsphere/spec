@@ -4,8 +4,8 @@ Release:	20.1
 Summary:	A Go game client
 License:	GPLv2+
 Group:		Games/Boards
-URL:		http://cgoban1.sourceforge.net/
-Source:		http://sourceforge.net/projects/cgoban1/%{name}-%{version}.tar.bz2
+URL:		https://cgoban1.sourceforge.net/
+Source:		https://sourceforge.net/projects/cgoban1/%{name}-%{version}.tar.bz2
 BuildRequires:	libX11-devel
 
 %description
@@ -47,7 +47,6 @@ EOF
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root,755)
 %doc README TODO seigen-minoru.sgf
 %{_bindir}/*
 %{_mandir}/man6/*

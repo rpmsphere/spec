@@ -4,7 +4,7 @@ Name: fvwm95
 Version: 2.0.43f
 Release: 13.1
 Summary: Window Manager with Windows '95 look
-Source: http://sourceforge.net/projects/fvwm95/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+Source: https://sourceforge.net/projects/fvwm95/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 Patch: fvwm95-2.0.43b-redhat.patch
 License: GPL
 Group: X11/Window Managers

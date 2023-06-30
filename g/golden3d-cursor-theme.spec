@@ -8,7 +8,7 @@ License:            LGPL
 Group:              System/X11/Icons
 Source0:            golden-3d-cursor-theme-%{version}.tar.bz2
 BuildArch:          noarch
-URL:                http://www.kde-look.org/content/show.php?content=5507
+URL:                https://www.kde-look.org/content/show.php?content=5507
 
 %description
 A golden xcursors theme, modeled, animated and rendered in Blender3D.

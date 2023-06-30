@@ -4,10 +4,9 @@ Release:        4.1
 Summary:        Xlib for Common Lisp systems
 Group:          System Environment/Libraries
 License:        Various (see COPYRIGHT)
-URL:            http://common-lisp.net/~abridgewater/
-Source:         http://common-lisp.net/~abridgewater/dist/clx/clx-0.7.4.tgz
+URL:            https://common-lisp.net/~abridgewater/
+Source:         https://common-lisp.net/~abridgewater/dist/clx/clx-0.7.4.tgz
 Source1:        COPYRIGHT
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:   common-lisp-controller, texinfo
 BuildArch:		noarch
 Requires:        common-lisp-controller
@@ -78,7 +77,6 @@ fi
 %{__rm} -rf %{buildroot}
 
 %files
-%defattr(-,root,root,-)
 %doc %{_infodir}/
 %{_datadir}/common-lisp/source/clx
 %{_datadir}/common-lisp/systems/clx.asd

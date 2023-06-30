@@ -6,11 +6,11 @@ Version:       4.0.3
 Release:       1
 BuildRequires: libX11-devel libjpeg-devel libXt-devel libXext-devel libXmu-devel libXpm-devel
 BuildRequires: cmake
-Source0:       http://www.ctwm.org/dist/%{name}-%{version}.tar.gz
+Source0:       https://www.ctwm.org/dist/%{name}-%{version}.tar.gz
 Source1:       %{name}.desktop
 License:       MIT
 Group:         User Interface/X
-URL:           http://www.ctwm.org/
+URL:           https://www.ctwm.org/
 Requires:      m4
 
 %description
@@ -31,12 +31,12 @@ to use both, either or none of the above icon/pixmap formats.
 %setup -q
 
 %build
-cd build
-%cmake ..
-make
+#cd build
+%cmake
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 %{__install} -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/xsessions/%{name}.desktop
 
 %clean

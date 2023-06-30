@@ -5,7 +5,7 @@ Summary:       A clutter widget toolkit
 
 Group:         System Environment/Libraries
 License:       LGPLv2
-URL:           http://www.clutter-project.org
+URL:           https://www.clutter-project.org
 Source0:       https://github.com/downloads/clutter-project/mx/mx-%{version}.tar.xz
 Patch0:        0001-Replace-GL-data-types-with-equivalent-glib-types.patch
 

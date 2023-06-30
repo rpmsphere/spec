@@ -7,8 +7,8 @@ Version: 5.3.0
 Release: 5
 License: GPLv2
 Group: Development/Languages
-URL: http://home.hccnet.nl/a.w.m.van.der.horst/lina.html
-Source0: http://home.hccnet.nl/a.w.m.van.der.horst/%{name}64-%{version}.tar.gz
+URL: https://home.hccnet.nl/a.w.m.van.der.horst/lina.html
+Source0: https://home.hccnet.nl/a.w.m.van.der.horst/%{name}64-%{version}.tar.gz
 Source1: ciarm.lina64-snapshot-6.87.tar.gz
 
 %description

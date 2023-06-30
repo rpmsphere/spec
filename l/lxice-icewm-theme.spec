@@ -5,8 +5,8 @@ Version: 0.1.0
 Release: 2.1
 License: GPL
 Group: User Interface/Desktops
-Source: http://downloads.sourceforge.net/lxde/%{theme_name}.tar.bz2
-URL: http://lxde.sourceforge.net/
+Source: https://downloads.sourceforge.net/lxde/%{theme_name}.tar.bz2
+URL: https://lxde.sourceforge.net/
 Summary: A theme for IceWM for a lightweight X11 desktop
 BuildArch: noarch
 Requires: icewm

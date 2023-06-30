@@ -7,7 +7,7 @@ Release:	1
 Summary:	A graphical user interface for the Argyll CMS display calibration utilities
 Group: 		Graphics/Utilities
 License:	GPLv3
-URL:		http://displaycal.net/
+URL:		https://displaycal.net/
 Source0:	https://sourceforge.net/projects/dispcalgui/files/release/%{version}/%{up_name}-%{version}.tar.gz
 Patch0:		displaycal-3.5.1.0-udev-dir.patch
 BuildRequires:	python2-setuptools

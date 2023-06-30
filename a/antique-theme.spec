@@ -6,7 +6,7 @@ Version: 20100906
 Release: 7.1
 License: GPL
 Group: User Interface/Desktops
-Source0: http://www.deviantart.com/download/178319784/antique_theme_by_andrewtheshort-d2y60fc.zip
+Source0: https://www.deviantart.com/download/178319784/antique_theme_by_andrewtheshort-d2y60fc.zip
 Source1: %{theme_name}-index.theme
 URL: https://www.gnome-look.org/p/1079047/
 BuildArch: noarch

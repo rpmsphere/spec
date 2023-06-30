@@ -4,12 +4,12 @@ Summary: Interactive "generative art" software
 Name: evolvotron
 Version: 0.7.1fixed
 Release: 1
-#Source0: http://prdownloads.sourceforge.net/evolvotron/%{name}-%{version}.tar.gz
+#Source0: https://prdownloads.sourceforge.net/evolvotron/%{name}-%{version}.tar.gz
 Source0: %{name}-master.zip
 Source1: %{name}.png
 License: GPLv2+
 Group: Amusement/Toys
-URL: http://evolvotron.sf.net
+URL: https://evolvotron.sf.net
 BuildRequires: gcc-c++
 BuildRequires: qt5-qtbase-devel
 BuildRequires: boost-devel

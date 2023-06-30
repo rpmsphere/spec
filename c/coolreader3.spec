@@ -8,7 +8,7 @@ Summary:	Free e-book reader
 Group:		Books/Literature
 License:	GPL
 Source:		%{shortname}_%{version}.orig.tar.gz
-URL:		http://coolreader.org/e-index.htm
+URL:		https://coolreader.org/e-index.htm
 BuildRequires:	libpng-devel
 BuildRequires:	gcc-c++, qt4-devel, cmake, libjpeg-devel, fontconfig-devel, zlib-devel
 

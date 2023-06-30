@@ -6,8 +6,8 @@ Release:        1
 Summary:        A Python implementation of the FIDE laws of chess
 Group:          Amusements/Games
 License:        GPL
-URL:            http://arainyday.se/projects/python/%{pkg_name}/
-Source:         http://arainyday.se/projects/python/%{pkg_name}/%{pkg_name}_%{version}.tar.gz
+URL:            https://arainyday.se/projects/python/%{pkg_name}/
+Source:         https://arainyday.se/projects/python/%{pkg_name}/%{pkg_name}_%{version}.tar.gz
 Source1:	%{name}.png
 Requires:	pygame
 BuildArch:	noarch

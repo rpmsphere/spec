@@ -5,9 +5,9 @@ Version:        2.22
 Release:        1
 License:        GPL-3.0
 Summary:        3D Mandelbrot renderer
-URL:            http://www.mandelbulber.com/
+URL:            https://www.mandelbulber.com/
 Group:          Productivity/Scientific/Math
-Source0:        http://download.sourceforge.net/project/mandelbulber/%{name}-%{version}.tar.gz
+Source0:        https://download.sourceforge.net/project/mandelbulber/%{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Network)
@@ -71,7 +71,7 @@ cp -a usr/share/%{name}/* %{buildroot}%{_datadir}/%{name}
   + Fixed bug: there was noise when "stop at maximum iteration"
     mode was enabled.
   + Source code repository moved to
-    http://github.com/buddhi1980/mandelbulber2.
+    https://github.com/buddhi1980/mandelbulber2.
   + Fixed bug: corrected calculation of coordinates of 3D cursor
     when there was used 3-point perspective.
 - Changes from version 2.0.3-1:
@@ -285,7 +285,7 @@ cp -a usr/share/%{name}/* %{buildroot}%{_datadir}/%{name}
   + OpebCL: added Quaternion and Xonodreambuie formulas.
   + OpenCL: added volumetric fog effect.
   + Fixed bug: thumbanils weren't rendered properly.
-  + Fixed bug: weird colour gradients (http://www.fractalforums.
+  + Fixed bug: weird colour gradients (https://www.fractalforums.
     com/index.php?topic=10305.msg41172#msg41172).
   + Added few example files for "iteration fog" effect.
 * Fri Jan  6 2012 malcolmlewis@opensuse.org
@@ -297,11 +297,11 @@ cp -a usr/share/%{name}/* %{buildroot}%{_datadir}/%{name}
 - Updated to Version 1.09:
   + Implemented OpenCL support (now only under linux) for image
     preview. Works only for few formulas.
-  + Added formula General Fold Box (reference: http://www.
+  + Added formula General Fold Box (reference: https://www.
     fractalforums.com/new-theories-and-research/generalized-box
   - fold/msg36503/#msg36503).
   + Fixed rotation problems in aminations. Patch by mintaka
-    (http://www.fractalforums.com/mandelbulber/mandelbulber-1
+    (https://www.fractalforums.com/mandelbulber/mandelbulber-1
   - 06-patch/).
   + Added animation effect for water.
 - Update spec file License field from GPLv3 to GPL-3.0+ to
@@ -313,7 +313,7 @@ cp -a usr/share/%{name}/* %{buildroot}%{_datadir}/%{name}
   + Improved raytraced reflections algorithm - better reflections
     with ambient occlusion.
   + Added fast ambient occlusion effect. Reference:
-    http://www.iquilezles.org/www/material/nvscene2008/rwwtt.pdf
+    https://www.iquilezles.org/www/material/nvscene2008/rwwtt.pdf
     (Iñigo Quilez – iq/rgba).
   + Added possibility to turn off "penetrating light" for the main
     light source.
@@ -335,7 +335,7 @@ cp -a usr/share/%{name}/* %{buildroot}%{_datadir}/%{name}
   + Fixed bug: Removed many uninitialised variables (found using
     valgrind).
   + Fixed problem with -lowmem mode (reported on
-    http://www.fractalforums.com/mandelbulber/(1-06)-lowmem-switch
+    https://www.fractalforums.com/mandelbulber/(1-06)-lowmem-switch
   - causes-segfaults-when-increasing-resolution/
     msg34210/#msg34210).
   + Fixed bug: overflow in UpdatePreviewSettingsDialog().

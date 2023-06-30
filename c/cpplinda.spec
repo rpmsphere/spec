@@ -4,9 +4,8 @@ Version: 1.0
 Release: 15.1
 Group: Development/Libraries
 License: GPLv2
-URL: http://sourceforge.net/projects/cpplinda/
-Source0: http://sourceforge.net/projects/cpplinda/files/cpplinda/%5BUnnamed%20release%5D/%{name}_v%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+URL: https://sourceforge.net/projects/cpplinda/
+Source0: https://sourceforge.net/projects/cpplinda/files/cpplinda/%5BUnnamed%20release%5D/%{name}_v%{version}.tar.gz
 BuildRequires: boost-devel
 BuildRequires: boost-static
 

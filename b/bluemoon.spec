@@ -4,8 +4,8 @@ Release:        8.1
 Summary:        Blue Moon card solitaire
 License:        BSD-3-Clause
 Group:          Amusements/Games/Board/Card
-URL:            http://www.catb.org/~esr/bluemoon/
-Source0:        http://www.catb.org/~esr/%{name}/%{name}-%{version}.tar.gz
+URL:            https://www.catb.org/~esr/bluemoon/
+Source0:        https://www.catb.org/~esr/%{name}/%{name}-%{version}.tar.gz
 # PATCH-FIX-UPSTREAM - bluemoon-2.12-Makefile.patch -- add $(DESTDIR), png and desktop, fix conflict with bluez
 Patch0:         %{name}-2.12-Makefile.patch
 # PATCH-FIX-UPSTREAM - bluemoon-2.12-bluemoon.desktop.patch -- change executable

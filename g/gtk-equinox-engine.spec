@@ -9,9 +9,9 @@ Release:        16.1
 Summary:        Equinox theme engine for GTK+ 2.x
 Group:          System Environment/Libraries
 License:        GPLv2+
-URL:            http://gnome-look.org/content/show.php/Equinox+GTK+Engine?content=121881
-Source0:        http://gnome-look.org/CONTENT/content-files/%{tarname}-%{tarver}.tar.gz
-Source1:        http://gnome-look.org/CONTENT/content-files/%{tarthemes}-%{tarver}.tar.gz
+URL:            https://gnome-look.org/content/show.php/Equinox+GTK+Engine?content=121881
+Source0:        https://gnome-look.org/CONTENT/content-files/%{tarname}-%{tarver}.tar.gz
+Source1:        https://gnome-look.org/CONTENT/content-files/%{tarthemes}-%{tarver}.tar.gz
 Patch0:         gtk-equinox-engine-includefix.patch
 BuildRequires:  gtk2-devel
 Requires:       faience-icon-theme

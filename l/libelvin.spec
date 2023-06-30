@@ -5,12 +5,12 @@
 
 Name:         libelvin
 Summary:      Elvin Client Library
-URL:          http://www.elvin.org/
+URL:          https://www.elvin.org/
 Group:        InstantMessaging
 License:      Non-Commercial
 Version:      4.0.3
 Release:      26.1
-Source0:      http://elvin.dstc.com/download/files/libelvin-%{version}.tar.gz
+Source0:      https://elvin.dstc.com/download/files/libelvin-%{version}.tar.gz
 Patch:        libelvin.patch
 BuildRequires: libxml2-devel
 BuildRequires: openssl-devel

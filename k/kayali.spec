@@ -4,8 +4,8 @@ Version: 0.3.2
 Release: 4.1
 Group: Applications/Engineering
 License: GPL
-URL: http://kayali.sourceforge.net/
-Source0: http://jaist.dl.sourceforge.net/project/kayali/kayali/%{name}-%{version}/%{name}-%{version}.tar.gz
+URL: https://kayali.sourceforge.net/
+Source0: https://jaist.dl.sourceforge.net/project/kayali/kayali/%{name}-%{version}/%{name}-%{version}.tar.gz
 Source1: %{name}.desktop
 BuildArch: noarch
 Requires: PyQt4, maxima, gnuplot, ImageMagick, gd

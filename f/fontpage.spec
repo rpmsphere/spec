@@ -2,10 +2,10 @@ Name:			fontpage
 Version:		2.0
 Release:		5.1
 Summary:		Simple Font Viewing Utility
-Source0:		http://www.pcbypaul.com/software/dl/FONTpage_src-%{version}.tar.bz2
+Source0:		https://www.pcbypaul.com/software/dl/FONTpage_src-%{version}.tar.bz2
 Source1:		fontpage.desktop
 Source2:		fontpage.png
-URL:			http://www.pcbypaul.com/linux/FONTpage.html
+URL:			https://www.pcbypaul.com/linux/FONTpage.html
 Group:			Productivity/Publishing/Other
 License:		GPL
 Requires:		pygtk2 fontconfig

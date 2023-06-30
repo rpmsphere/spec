@@ -3,10 +3,9 @@ Version:        6.14
 Release:        20100629.1
 License:        MIT
 Summary:        List Filename Conflicts
-URL:            http://invisible-island.net/conflict/
+URL:            https://invisible-island.net/conflict/
 Group:          Productivity/File utilities
 Source0:        ftp://invisible-island.net/%{name}/%{name}-20100627.tgz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 CONFLICT examines the user-specifiable list of programs, looking for instances
@@ -24,7 +23,6 @@ make %{?_smp_mflags}
 %make_install
 
 %files
-%defattr(-,root,root)
 %doc CHANGES COPYING README
 %{_bindir}/conflict
 %{_mandir}/man1/conflict.1.*

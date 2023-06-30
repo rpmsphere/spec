@@ -5,7 +5,7 @@ Release: 13.1
 License: GPL
 Group: System/Libraries
 Source: elfhacks.tar.gz
-URL: http://nullkey.ath.cx/elfhacks/html/
+URL: https://nullkey.ath.cx/elfhacks/html/
 BuildRequires: cmake gcc-c++
 
 %description

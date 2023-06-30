@@ -40,6 +40,7 @@ sed -i 's|__x86_64__|__aarch64__|' Code/IO/btkBinaryFileStream.h
 %endif
 
 %build
+export CFLAGS="-std=c89 -fPIC -fPIE" CXXFLAGS="-std=gnu++14 -fPIE -fPIC"
 export CXXFLAGS="-std=gnu++11 -fPIE -fPIC"
 %cmake -DBTK_WRAP_PYTHON=off
 %cmake_build

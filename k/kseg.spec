@@ -3,7 +3,7 @@ Version:        0.403
 Release:        226.1
 License:        GPL-2.0+
 Summary:        A Simulator of Euclidean Geometry
-URL:            http://www.mit.edu/~ibaran
+URL:            https://www.mit.edu/~ibaran
 Group:          Productivity/Scientific/Math
 Source0:        %{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
@@ -19,7 +19,6 @@ BuildRequires:  gcc-c++
 BuildRequires:  libdrm-devel
 BuildRequires:  libjpeg-devel
 BuildRequires:  qt3-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 KSEG is a program for exploring Euclidean geometry. You can create a
@@ -58,7 +57,6 @@ install -Dm644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.xpm
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc COPYING AUTHORS README README.translators VERSION
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop

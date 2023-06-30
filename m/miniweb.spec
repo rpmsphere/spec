@@ -6,7 +6,7 @@ Release: 4.1
 Summary: A browser tool which uses different User Agents and screen sizes to test mobile versions of websites
 License: GPLv3
 Group:   Applications/Network
-URL:     http://bernd-stramm.com/
+URL:     https://bernd-stramm.com/
 Source: miniweb-0.2.0.tar.gz
 BuildRequires:  libpng-devel
 BuildRequires:  qt4-devel qt4-webkit-devel

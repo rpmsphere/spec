@@ -5,7 +5,7 @@ Summary:        Easy to use paint program
 Group:          Graphics/Editors and Converters
 License:        GPLv3+
 URL:            https://launchpad.net/gnome-paint
-Source0:        http://launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
+Source0:        https://launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 Source1:        %{name}.1
 Patch0:         %{name}-deb-crash-in-toolbar.patch
 Patch1:         %{name}-deb-ftbfs-format-security.patch

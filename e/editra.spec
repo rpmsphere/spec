@@ -4,8 +4,8 @@ Release:	5.1
 Summary:	A developer's text editor
 Group:		Editors
 License:	GPLv2+
-URL:		http://editra.org/
-Source0:	http://editra.org/uploads/src/Editra-%{version}.tar.gz
+URL:		https://editra.org/
+Source0:	https://editra.org/uploads/src/Editra-%{version}.tar.gz
 BuildRequires:	python2-devel
 BuildRequires:	python2-setuptools
 BuildRequires:	python2-wxpython

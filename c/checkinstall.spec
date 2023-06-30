@@ -6,7 +6,7 @@ Version:        1.6.2
 Release:        1
 License:        GPLv2+
 Group:          Development/Tools
-URL:            http://asic-linux.com.mx/~izto/checkinstall/
+URL:            https://asic-linux.com.mx/~izto/checkinstall/
 Source:         checkinstall-%{version}.tar.bz2
 Source1:        checkinstall.in
 Source2:        checkinstallrc-dist.in

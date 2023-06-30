@@ -4,9 +4,9 @@ Name: 		edelib
 Version:        2.0
 #Version: 	2.1
 Release: 	52.1
-Source: 	http://sourceforge.net/projects/ede/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+Source: 	https://sourceforge.net/projects/ede/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 Summary:	A stable, small and fast cross-platform GUI ToolKit
-URL: 		http://ede.sourceforge.net
+URL: 		https://ede.sourceforge.net
 License: 	LGPL
 Group: 		System/Libraries
 #BuildRequires: fltk13-devel

@@ -5,7 +5,7 @@ License:		GPLv2
 Summary:		3D medical imaging reconstruction software
 Version:		3.0.1925
 Release:		11.1
-URL:			http://svn.softwarepublico.gov.br/trac/invesalius/
+URL:			https://svn.softwarepublico.gov.br/trac/invesalius/
 Source0:		%{name}3.tar.bz2
 Source1:		%{name}.png
 Requires:		pygtk2

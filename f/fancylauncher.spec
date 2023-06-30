@@ -6,8 +6,8 @@ Version: 0.10
 Release: 5.1
 License: GPL
 Group: X11/Utilities
-Source: http://www.docs.uu.se/~adavid/utils/FancyLauncher-%{version}.tgz
-URL: http://www.docs.uu.se/~adavid/utils/FancyLauncher/
+Source: https://www.docs.uu.se/~adavid/utils/FancyLauncher-%{version}.tgz
+URL: https://www.docs.uu.se/~adavid/utils/FancyLauncher/
 BuildRequires: imlib-devel
 
 %description

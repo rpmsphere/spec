@@ -5,8 +5,8 @@ Release:        1
 Summary:        CyberLink for C UPnP library
 Group:          Development/Libraries
 License:        opensource, see COPYING
-URL:            http://clinkc.sourceforge.net/
-Source0:        http://sourceforge.net/projects/clinkc/files/clinkc/%{version}/%{name}240.tar.gz
+URL:            https://clinkc.sourceforge.net/
+Source0:        https://sourceforge.net/projects/clinkc/files/clinkc/%{version}/%{name}240.tar.gz
 BuildRequires:  doxygen
 
 %description

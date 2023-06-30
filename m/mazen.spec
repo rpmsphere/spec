@@ -4,7 +4,7 @@ Release: 5.1
 Summary: Simple Gnome-base maze creator
 License: GPLv3
 Group: Games/Puzzles
-URL: http://mazen.sourceforge.net
+URL: https://mazen.sourceforge.net
 Source: %name-%version.tar.gz
 BuildRequires: gcc-c++ intltool gtkmm24-devel librsvg2-devel cairomm-devel glibmm24-devel
 

@@ -4,8 +4,8 @@ Release:        3.1
 Summary:        Recovering tool for weak LEAP and PPTP passwords
 Group:          Applications/Internet
 License:        GPLv2
-URL:            http://www.willhackforsushi.com/?page_id=41
-Source0:        http://www.willhackforsushi.com/code/%{name}/%{version}/%{name}-%{version}.tgz
+URL:            https://www.willhackforsushi.com/?page_id=41
+Source0:        https://www.willhackforsushi.com/code/%{name}/%{version}/%{name}-%{version}.tgz
 BuildRequires:  libpcap-devel
 BuildRequires:  openssl-devel 
 Patch0:		asleap-glibc.patch

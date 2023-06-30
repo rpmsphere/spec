@@ -1,11 +1,11 @@
-URL:            http://moblin.org/
+URL:            https://moblin.org/
 Summary:        Cairo integration for Clutter
 Name:           clutter-box2d
 Version:        0.10_20090803
 Release:        1
 License:        LGPLv2.1+
 Group:          System/Libraries
-Source0:        http://www.clutter-project.org/sources/clutter-box2d/0.10/%{name}-%{version}.tar.bz2
+Source0:        https://www.clutter-project.org/sources/clutter-box2d/0.10/%{name}-%{version}.tar.bz2
 BuildRequires:  gtk2-devel pango-devel xmlto cairo-devel
 BuildRequires:  clutter-devel >= 1.0
 BuildRequires:  gtk-doc >= 1.4

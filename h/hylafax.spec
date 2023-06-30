@@ -25,7 +25,7 @@ Patch9:         hylafax-6.0.4-no-timestamp.patch
 Patch10:        hylafax-6.0.4-DESTDIR.patch
 Patch11:        hylafax-6.0.4-configure.patch
 Patch12:        hylafax-changed_options.patch
-URL:            http://www.hylafax.org
+URL:            https://www.hylafax.org
 Summary:        Very Powerful Fax Server
 %define lib_dir %{_prefix}/lib/fax
 %define spooldir /var/spool/fax

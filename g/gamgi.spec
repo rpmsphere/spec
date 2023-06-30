@@ -6,8 +6,8 @@ Release:	1
 Summary:	Package to construct, view and analyse atomic structures
 Group:		Sciences/Chemistry
 License:	GPLv2	
-URL:		http://www.gamgi.org
-Source0:	http://www.gamgi.org/src/%{name}-all-%{version}.tar.gz
+URL:		https://www.gamgi.org
+Source0:	https://www.gamgi.org/src/%{name}-all-%{version}.tar.gz
 Patch1:		gamgi_ttfpath.patch
 BuildRequires:	cairo-devel pango-devel atk-devel gtk2-devel expat-devel freetype-devel 
 BuildRequires:	mesa-libGL-devel mesa-libGLU-devel gtkglext-devel

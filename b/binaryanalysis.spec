@@ -4,8 +4,8 @@ Summary: Binary Analysis Tool
 Name: binaryanalysis
 Version: 37.0
 Release: 1
-URL: http://www.binaryanalysis.org/
-Source0: http://www.binaryanalysis.org/download/fedora/%{name}-%{version}.tar.gz
+URL: https://www.binaryanalysis.org/
+Source0: https://www.binaryanalysis.org/download/fedora/%{name}-%{version}.tar.gz
 License: ASL 2.0
 Group: Development/Tools
 BuildArch: noarch

@@ -3,8 +3,8 @@ Version:       0.5.9
 Release:       2.1
 Summary:       Knights themes
 Group:         Graphical Desktop/KDE/Games
-URL:           http://knights.sourceforge.net/
-Source:        http://downloads.sourceforge.net/knights/knights-themepack-%{version}.tar.gz
+URL:           https://knights.sourceforge.net/
+Source:        https://downloads.sourceforge.net/knights/knights-themepack-%{version}.tar.gz
 License:       GPL
 BuildArch:     noarch
 Requires:      knights

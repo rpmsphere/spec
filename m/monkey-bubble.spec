@@ -4,8 +4,8 @@ Release:          1
 Summary:          Game in the spirit of Frozen Bubble
 Group:            Amusements/Games
 License:          GPLv2+
-URL:              http://home.gna.org/monkeybubble/
-Source0:          http://home.gna.org/monkeybubble/downloads/%{name}-%{version}.tar.gz
+URL:              https://home.gna.org/monkeybubble/
+Source0:          https://home.gna.org/monkeybubble/downloads/%{name}-%{version}.tar.gz
 Source1:          splash.svg
 Patch0:           monkey-bubble-0.4.0-help.patch
 BuildRequires:    libgnomeui-devel librsvg2-devel gstreamer-devel gettext

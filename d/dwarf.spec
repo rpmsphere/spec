@@ -2,12 +2,12 @@
 
 Name:         dwarf
 Summary:      Object File Manipulation Tool
-URL:          http://code.google.com/p/dwarf-ng/
+URL:          https://code.google.com/p/dwarf-ng/
 Group:        Compiler
 License:      GPL
 Version:      0.3.1
 Release:      2.1
-Source0:      http://dwarf-ng.googlecode.com/files/dwarf-%{version}.tar.gz
+Source0:      https://dwarf-ng.googlecode.com/files/dwarf-%{version}.tar.gz
 BuildRequires: readline-devel
 
 %description

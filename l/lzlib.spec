@@ -2,12 +2,12 @@
 
 Name:         lzlib
 Summary:      LZMA Compression Library
-URL:          http://www.nongnu.org/lzip/lzlib.html
+URL:          https://www.nongnu.org/lzip/lzlib.html
 Group:        Compression
 License:      GPL
 Version:      1.13
 Release:      1
-Source0:      http://download.savannah.gnu.org/releases/lzip/lzlib/lzlib-%{version}.tar.gz
+Source0:      https://download.savannah.gnu.org/releases/lzip/lzlib/lzlib-%{version}.tar.gz
 
 %description
 Lzlib is a lossless file compression library based on the LZMA

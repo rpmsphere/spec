@@ -6,10 +6,10 @@ Version: 1.0
 Release: 5.1
 License: GPLv2
 Group: User Interface/Desktops
-Source0: http://genoid.googlecode.com/files/%{theme_name}_%{version}.tar.bz2
+Source0: https://genoid.googlecode.com/files/%{theme_name}_%{version}.tar.bz2
 Source1: %{theme_name}-index.theme
 BuildArch: noarch
-URL: http://code.google.com/p/genoid/
+URL: https://code.google.com/p/genoid/
 
 %description
 It's the theme for android lovers who use Gnome Environment,it's called "Genoid",

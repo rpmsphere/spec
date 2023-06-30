@@ -6,7 +6,7 @@ Version: 2.5
 Release: 8.4
 License: BSD
 Group: Communications
-URL: http://catb.org/~esr/morse/
+URL: https://catb.org/~esr/morse/
 Source0: %name-%version.tar.gz
 Patch: morse2.5-nosound.patch
 BuildRequires: libX11-devel alsa-lib-devel pulseaudio-libs-devel xmlto

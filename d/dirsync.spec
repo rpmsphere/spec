@@ -6,8 +6,8 @@ Version: 1.11
 Release: 5.1
 License: GPL
 Group: Applications/System
-URL: http://www.viara.cn/en/dirsync.htm
-Source: http://www.viara.cn/download/dirsync-1_11.tar.gz
+URL: https://www.viara.cn/en/dirsync.htm
+Source: https://www.viara.cn/download/dirsync-1_11.tar.gz
 
 %description
 dirsync is a directory synchronizer that takes a source and destination

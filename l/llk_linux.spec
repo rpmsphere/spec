@@ -5,7 +5,7 @@ License: GPL
 Summary: LinLink for Linux
 Summary(zh_CN): Linux下的连连看
 Summary(zh_TW): Linux下的連連看
-URL: http://llk-linux.sourceforge.net
+URL: https://llk-linux.sourceforge.net
 Group: Amusements/Games
 Source0: %{name}-%{version}beta1.tar.gz
 Source1: %{name}.desktop

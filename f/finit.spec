@@ -14,7 +14,7 @@ Release:	%{_release}
 Summary:	Fast /sbin/init replacement
 License:	MIT
 Group:		System/Base
-URL:		http://helllabs.org/git/eeepc.git
+URL:		https://helllabs.org/git/eeepc.git
 # Tarball provided by Claudio
 Source0: 	finit-%{version}%{?snapshot_date:-pre}%{?snapshot_date}.tar.bz2
 Source1: 	finit.conf

@@ -4,8 +4,8 @@ Release: 1
 Summary: gTans - a tangram puzzle game
 License: GPL
 Group: Amusements/Games
-URL: http://gtans.sourceforge.net/
-Source: http://download.sourceforge.net/gtans/gtans-%version.tar.gz
+URL: https://gtans.sourceforge.net/
+Source: https://download.sourceforge.net/gtans/gtans-%version.tar.gz
 Source1: gtans-1.99.0.zh_TW.po
 Source2: gtanshelpzh.txt
 BuildRequires: gtk2-devel

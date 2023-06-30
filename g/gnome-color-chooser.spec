@@ -8,7 +8,7 @@ License: 	GPLv3+
 Group:		Graphical desktop/GNOME
 Source0:	%{name}/%{name}-%{version}.tar.bz2
 Patch:		gnome-color-chooser-0.2.5-desktop-entry.patch
-URL: 		http://sourceforge.net/projects/gnomecc
+URL: 		https://sourceforge.net/projects/gnomecc
 BuildRequires:  libpng-devel
 #BuildRequires:  libgnomeuimm26-devel
 BuildRequires:  sane-backends-devel

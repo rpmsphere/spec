@@ -6,7 +6,7 @@ Version: 0.rev7
 Release: 6.1
 Group: Development/Tools
 License: GPLv3
-URL: http://code.google.com/p/colour-space-viewer/
+URL: https://code.google.com/p/colour-space-viewer/
 Source0: %{name}-%{version}.zip
 BuildRequires: qt-devel
 BuildRequires: boost-devel

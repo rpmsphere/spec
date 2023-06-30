@@ -8,8 +8,8 @@ Version:        1.7.0
 Release:        5.1
 License:        BSD
 Group:          Development/Tools
-URL:            http://code.google.com/p/googletest/
-Source0:        http://googletest.googlecode.com/files/gtest-%{version}.zip
+URL:            https://code.google.com/p/googletest/
+Source0:        https://googletest.googlecode.com/files/gtest-%{version}.zip
 BuildArch:	noarch
 Requires:	gtest-devel
 

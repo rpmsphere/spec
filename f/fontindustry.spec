@@ -5,8 +5,8 @@ Version: 0.0.10
 Release: 12.1
 Group: Applications/Publishing
 License: GPLv3
-URL: http://code.google.com/p/fontindustry/
-Source0: http://fontindustry.googlecode.com/files/Fontindustry-%{version}.tar.bz2
+URL: https://code.google.com/p/fontindustry/
+Source0: https://fontindustry.googlecode.com/files/Fontindustry-%{version}.tar.bz2
 BuildRequires: python2-devel
 BuildArch: noarch
 Requires: pygoocanvas

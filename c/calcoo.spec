@@ -3,10 +3,9 @@ Name:          calcoo
 Version:       1.3.18
 Release:       9.1
 License:     GPL
-URL:           http://calcoo.sourceforge.net
+URL:           https://calcoo.sourceforge.net
 Group:         Applications/Utilities
-Source:        http://prdownloads.sourceforge.net/calcoo/%{name}-%{version}.tar.gz
-BuildRoot:     %{_tmppath}/%name-buildroot
+Source:        https://prdownloads.sourceforge.net/calcoo/%{name}-%{version}.tar.gz
 BuildRequires: libpng-devel
 BuildRequires: gtk2-devel
 
@@ -41,7 +40,6 @@ rm -rf ${RPM_BUILD_ROOT}
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
-%defattr(-, root, root)
 %doc ChangeLog INSTALL COPYING README
 %{_bindir}/calcoo
 %{_mandir}/man1/calcoo.1*

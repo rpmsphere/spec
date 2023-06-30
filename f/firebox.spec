@@ -5,8 +5,8 @@ Release:	1
 Summary:	Firebox is yet another Window Manager for X11 systems.
 Group:		User Interface/Desktops
 License:	GPLv2+
-URL:		http://firebox.intuxication.org/
-Source:		http://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
+URL:		https://firebox.intuxication.org/
+Source:		https://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
 Source1:	%{name}-0.4.0.zh_TW.po
 BuildRequires:  libxml2-devel
 BuildRequires:  libpng12-devel

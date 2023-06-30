@@ -5,7 +5,7 @@ License:        GPL
 BuildRequires:  cmake
 Group:          System/Utilities
 Summary:        A FLAC-compatible cuesheet generator for Linux
-Source0:	http://www.cs.man.ac.uk/~slavinp/files/%{name}-%{version}.tar.bz2
+Source0:	https://www.cs.man.ac.uk/~slavinp/files/%{name}-%{version}.tar.bz2
 Source1:	%{name}_CMakeLists.txt
 
 %description
@@ -19,9 +19,9 @@ oded audio files.
 CUEgen creates a cuesheet for any audio CD. This cuesheet may then be embedded into a FLAC file of the CD or distributed with a FLAC
  file to permit the original CD to be recreated.
 
-CUEgen is written by Paul Slavin <slavinp@cs.man.ac.uk> and the CUEgen homepage is http://www.cs.man.ac.uk/~slavinp/cuegen.html.
+CUEgen is written by Paul Slavin <slavinp@cs.man.ac.uk> and the CUEgen homepage is https://www.cs.man.ac.uk/~slavinp/cuegen.html.
 
-CUEgen is released under the GNU General Public License, see http://www.gnu.org/copyleft/gpl.html.
+CUEgen is released under the GNU General Public License, see https://www.gnu.org/copyleft/gpl.html.
 
 %prep
 %setup -q

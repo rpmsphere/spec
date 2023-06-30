@@ -13,8 +13,8 @@ Release:	1
 Summary:	%{longtitle}
 License:	GPL
 Group:		Games/Strategy
-URL:		http://civil.sourceforge.net
-Source0:	http://prdownloads.sourceforge.net/civil/%{name}-%{version}.tar.bz2
+URL:		https://civil.sourceforge.net
+Source0:	https://prdownloads.sourceforge.net/civil/%{name}-%{version}.tar.bz2
 Patch0:		civil-0.83-python24.patch.bz2
 Patch1:		civil-0.83-remove-broken-pygame-check.patch
 Requires:	SDL >= 1.2

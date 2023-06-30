@@ -3,7 +3,7 @@ Version:        1.0
 Release:        3.1
 Summary:        Chinese Chess
 License:        freeware
-URL:            http://www.codefans.net
+URL:            https://www.codefans.net
 Source0:        Chess-%{version}.zip
 BuildRequires:  java-devel lua
 Requires:       jre

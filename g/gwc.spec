@@ -4,7 +4,7 @@ Release: 1
 Summary: GTK Wave Cleaner
 License: GPLv2+
 Group: Sound 
-URL: http://gwc.sourceforge.net/
+URL: https://gwc.sourceforge.net/
 Source0: gtk-wave-cleaner-0.22-04.tar.gz
 BuildRequires: alsa-lib-devel fftw-devel libgnomeui-devel libsndfile-devel
 

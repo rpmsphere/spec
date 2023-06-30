@@ -1,5 +1,5 @@
 Name:           libosso
-URL:            http://maemo.org/
+URL:            https://maemo.org/
 License:        LGPL v2.1 only; LGPL v2.1 or later
 Group:          System Environment/Libraries
 Summary:        A wrapper library for D-Bus services

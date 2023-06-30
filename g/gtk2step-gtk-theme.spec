@@ -8,7 +8,7 @@ License: GPL
 Group: Graphical desktop/GNOME
 BuildArch: noarch
 Source0: %theme_name-%version.tar.gz
-Source1: http://sid.ethz.ch/gnustep/root/etc/skel/Backgrounds/gnustep.png
+Source1: https://sid.ethz.ch/gnustep/root/etc/skel/Backgrounds/gnustep.png
 Requires: nouvegnome-icon-theme
 Requires: openzone-cursor-theme
 

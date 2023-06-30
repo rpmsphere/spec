@@ -6,7 +6,7 @@ Group:          Amusements/Games/Action/Arcade
 Summary:        A Clone of the Atari Game Kaboom!
 Version:        0.2.5
 Release:        1
-URL:            http://www.newbreedsoftware.com/madbomber/
+URL:            https://www.newbreedsoftware.com/madbomber/
 Source:         madbomber-%{version}.tar.bz2
 Source1:        %name.desktop
 Patch:          madbomber-%{version}-makefile.diff

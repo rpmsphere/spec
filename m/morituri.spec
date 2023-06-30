@@ -4,8 +4,8 @@ Release:	7.1
 Summary:	CD ripper aiming for accuracy over speed
 License:	GPLv3
 Group:		Sound
-URL:		http://thomas.apestaart.org/%{name}/trac
-Source0:	http://thomas.apestaart.org/download/%{name}/%{name}-%{version}.tar.bz2
+URL:		https://thomas.apestaart.org/%{name}/trac
+Source0:	https://thomas.apestaart.org/download/%{name}/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	python2-setuptools
 #BuildRequires:	python2-gstreamer

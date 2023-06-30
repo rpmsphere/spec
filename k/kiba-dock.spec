@@ -3,7 +3,7 @@ Version: 0.svn584
 Release: 1
 Summary: Funky application dock for X11
 Group: System/X11
-URL: http://www.kiba-dock.org/
+URL: https://www.kiba-dock.org/
 Source: kiba-%{version}.tar.bz2
 Source1: kiba-dock-0.svn584.zh_TW.po
 Source2: kiba-plugins-0.svn584.zh_TW.po

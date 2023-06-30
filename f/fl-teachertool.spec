@@ -3,7 +3,7 @@ Summary:   FLTK version of TeacherTool
 Name:      fl-teachertool
 Version:   0.71
 Release:   17.1
-URL:       http://www3.telus.net/public/robark/Fl_TeacherTool/
+URL:       https://www3.telus.net/public/robark/Fl_TeacherTool/
 Source0:   fl_teachertool-%{version}.tar.bz2
 Source1:   fl_teachertool.desktop
 Patch0:	   fl_teachertool-makefile.patch

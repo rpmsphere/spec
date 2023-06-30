@@ -4,7 +4,7 @@ Version: 2.71828
 Release: 1
 License: GPL
 Group: System/GUI/Other
-Source: http://launchpadlibrarian.net/64479893/%{name}-%{version}.tar.gz
+Source: https://launchpadlibrarian.net/64479893/%{name}-%{version}.tar.gz
 URL: https://launchpad.net/fbautostart
 Requires: fluxbox
 

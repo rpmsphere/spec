@@ -50,7 +50,7 @@ desktop-file-install --delete-original  \
 # NOTE: It would be *awesome* if this file was maintained by the upstream
 # project, translated and installed into the right place during `make install`.
 #
-# See http://www.freedesktop.org/software/appstream/docs/ for more details.
+# See https://www.freedesktop.org/software/appstream/docs/ for more details.
 #
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/appdata
 cat > $RPM_BUILD_ROOT%{_datadir}/appdata/%{name}.appdata.xml <<EOF
@@ -72,7 +72,7 @@ SentUpstream: 2014-09-18
       on font metadata, and easily compare glyphs of fonts.
     </p>
   </description>
-  <url type="homepage">http://fontmatrix.be/node/21</url>
+  <url type="homepage">https://fontmatrix.be/node/21</url>
   <screenshots>
     <screenshot type="default">https://raw.githubusercontent.com/hughsie/fedora-appstream/master/screenshots-extra/fontmatrix/a.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/hughsie/fedora-appstream/master/screenshots-extra/fontmatrix/b.png</screenshot>

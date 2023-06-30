@@ -4,8 +4,8 @@ Release:        6.1
 Summary:        A game about consciousness and isolation
 Group:          Amusements/Games/Other
 License:        SUSE-Public-Domain
-URL:            http://www.esquire.com/features/best-and-brightest-2008/rohrer-game
-Source0:        http://sourceforge.net/projects/hcsoftware/files/Between_v%{version}_UnixSource.tar.gz
+URL:            https://www.esquire.com/features/best-and-brightest-2008/rohrer-game
+Source0:        https://sourceforge.net/projects/hcsoftware/files/Between_v%{version}_UnixSource.tar.gz
 BuildRequires:  SDL-devel, gcc-c++, desktop-file-utils
 
 %description

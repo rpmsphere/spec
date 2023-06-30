@@ -4,8 +4,8 @@ Release:    8
 Summary:    A game about the interactions within a gardening community
 License:    Public Domain
 Group:	    Games/Strategy
-URL:	    http://cultivation.sourceforge.net/
-Source0:    http://sourceforge.net/projects/cultivation/files/cultivation/v9/Cultivation_%{version}_UnixSource.tar.gz
+URL:	    https://cultivation.sourceforge.net/
+Source0:    https://sourceforge.net/projects/cultivation/files/cultivation/v9/Cultivation_%{version}_UnixSource.tar.gz
 Patch0:     Cultivation-9-deb-portaudio.patch
 #Patch1:     Cultivation-9-deb-abs_paths.patch
 Patch2:     Cultivation-9-deb-math_h.patch

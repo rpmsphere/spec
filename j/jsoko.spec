@@ -4,10 +4,10 @@ Version: 2.03
 Release: 1
 Group: Amusements/Games
 License: GPLv3
-URL: http://www.sokoban-online.de/
-Source0: http://sourceforge.net/projects/jsokoapplet/files/JSoko/Version%20%{version}/JSoko_%{version}-src.zip
+URL: https://www.sokoban-online.de/
+Source0: https://sourceforge.net/projects/jsokoapplet/files/JSoko/Version%20%{version}/JSoko_%{version}-src.zip
 BuildRequires: ant
-BuildRequires: java-devel-openjdk lua
+BuildRequires: java-11-openjdk-devel lua
 BuildRequires: xml-commons-apis
 BuildArch: noarch
 Requires: jre

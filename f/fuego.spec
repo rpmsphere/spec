@@ -6,8 +6,8 @@ Version: 1.1
 Release: 18.1
 Group: Amusements/Games
 License: LGPLv3
-URL: http://fuego.sourceforge.net/
-Source0: http://sourceforge.net/projects/fuego/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+URL: https://fuego.sourceforge.net/
+Source0: https://sourceforge.net/projects/fuego/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 BuildRequires: boost-devel
 
 %description

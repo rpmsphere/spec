@@ -12,7 +12,7 @@ Release:	1
 License:	GPLv2+
 Group:		Development/GNOME and GTK+
 URL:		https://github.com/AravisProject/aravis
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/aravis/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/aravis/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gstreamer-%{gstapi}.0)

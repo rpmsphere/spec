@@ -3,10 +3,10 @@ Name:		lfm
 Version:	2.3
 Release:	6.1
 Summary:	File Manager for the Console
-Source:		http://www.terra.es/personal7/inigoserna/lfm/%{name}-%{version}.tar.gz
+Source:		https://www.terra.es/personal7/inigoserna/lfm/%{name}-%{version}.tar.gz
 Patch1:		lfm-docdir.patch
 Patch2:		lfm-remove_shebangs.patch
-URL:		http://www.terra.es/personal7/inigoserna/lfm/
+URL:		https://www.terra.es/personal7/inigoserna/lfm/
 Group:		Productivity/File utilities
 License:	GNU General Public License version 3 (GPL v3)
 BuildRequires:	python2-devel

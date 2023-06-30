@@ -6,7 +6,7 @@ Version: 2.4.0
 Release: 1
 License: Apache 2.0
 Group: Development/Language
-URL: http://jerryscript.net/
+URL: https://jerryscript.net/
 Source: %{name}-%{version}.tar.gz
 BuildRequires: cmake
 

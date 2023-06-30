@@ -4,8 +4,8 @@ Version: 1.6.9
 Release: 10.1
 Group: System Environment/Daemons
 License: GPLv2
-URL: http://www.monkey-project.com/
-Source0: http://monkey-project.com/releases/1.6/%{name}-%{version}.tar.gz
+URL: https://www.monkey-project.com/
+Source0: https://monkey-project.com/releases/1.6/%{name}-%{version}.tar.gz
 BuildRequires: cmake
 
 %description

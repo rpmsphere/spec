@@ -4,7 +4,7 @@ Release:	1
 Summary:	Esmart is Evas "smart objects"
 Group:		User Interface/X
 License:	BSD
-URL:		http://www.enlightenment.org/pages/efl.html
+URL:		https://www.enlightenment.org/pages/efl.html
 Source:		%{name}-%{version}.tar.gz
 BuildRequires:	libtool-ltdl-devel, evas-devel, ecore-devel
 BuildRequires:	imlib2-devel, edje-devel, embryo-devel

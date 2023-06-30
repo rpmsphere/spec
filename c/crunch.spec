@@ -6,7 +6,7 @@ Release: 7.1
 Summary: Wordlist generator
 License: GPL
 Group: Security/Networking
-URL: http://sourceforge.net/projects/crunch-wordlist/
+URL: https://sourceforge.net/projects/crunch-wordlist/
 Source: https://sourceforge.net/projects/crunch-wordlist/files/crunch-wordlist/%name-%version.tgz
 
 %description

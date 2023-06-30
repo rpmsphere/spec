@@ -3,7 +3,7 @@ Version:        0.5.2
 Release:        1
 License:        GPL-2.0
 Summary:        Framebuffer Grabber
-URL:            http://jwilk.net/software/fbcat
+URL:            https://jwilk.net/software/fbcat
 Group:          Productivity/Graphics/Other
 Source0:        https://bitbucket.org/jwilk/fbcat/downloads/%{name}-%{version}.tar.gz
 BuildRequires:  docbook-style-xsl

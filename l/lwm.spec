@@ -6,8 +6,8 @@ Release:        4.1
 Summary:        Lightweight Window Manager
 Group:          User Interface/X
 License:        GPLv2
-URL:            http://www.jfc.org.uk/software/lwm.html
-Source0:        http://www.jfc.org.uk/files/lwm/%{name}-%{version}.tar.gz
+URL:            https://www.jfc.org.uk/software/lwm.html
+Source0:        https://www.jfc.org.uk/files/lwm/%{name}-%{version}.tar.gz
 Source1:        lwm.desktop
 BuildRequires:  imake, libXext-devel, libSM-devel
 Requires:       xterm

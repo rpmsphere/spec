@@ -7,7 +7,7 @@ Summary:	A GameBoy Advance emulator
 License:	GPLv3+
 Group:		Emulators
 URL:		https://github.com/blastrock/meteor
-Source0:	http://sourceforge.net/projects/meteorgba/files/%{name}-%{version}.tar.gz
+Source0:	https://sourceforge.net/projects/meteorgba/files/%{name}-%{version}.tar.gz
 Patch0:		meteor-1.4.0-gcc4.7.patch
 BuildRequires:	cmake
 BuildRequires:	pkgconfig(ao)
@@ -24,7 +24,7 @@ Source1:	gameboy.png
 
 %description
 Meteor is a GameBoy Advance emulator with GTK2 frontend.
-Icon by Natsu714 from http://natsu714.deviantart.com/art/Free-Gameboy-Icon-288655907
+Icon by Natsu714 from https://natsu714.deviantart.com/art/Free-Gameboy-Icon-288655907
 
 %prep
 %setup -q

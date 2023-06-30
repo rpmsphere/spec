@@ -4,7 +4,7 @@ Version:	1.7
 Release:	17.1
 Group:		Text tools
 License:	GPLv2
-URL:		http://jl.photodex.com/dog/
+URL:		https://jl.photodex.com/dog/
 Source0:	%{name}-%{version}.tar.bz2
 
 %description

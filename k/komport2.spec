@@ -4,9 +4,8 @@ Version: 1.0.0
 Release: 6.1
 Group: Applications/Communications
 License: GPLv2
-URL: http://sourceforge.net/projects/komport2/
-Source0: http://sourceforge.net/projects/komport2/files/source/%{name}-%{version}-src.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+URL: https://sourceforge.net/projects/komport2/
+Source0: https://sourceforge.net/projects/komport2/files/source/%{name}-%{version}-src.tar.gz
 BuildRequires: qt-devel
 
 %description

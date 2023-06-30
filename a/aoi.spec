@@ -3,7 +3,7 @@ Name:           aoi
 Version:        3.2.0
 Release:        1
 Summary:        3D modeling and rendering studio Written in Java
-URL:            http://www.artofillusion.org
+URL:            https://www.artofillusion.org
 Group:          Graphics/3D
 Source0:        https://sourceforge.net/projects/aoi/files/ArtOfIllusion-source/3.2/ArtOfIllusion-3.2.0.zip
 Source1:        jmf-2_1_1e-alljava.zip

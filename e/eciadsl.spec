@@ -3,9 +3,9 @@ Version:       0.12
 Release:       2.1
 Summary:       User space tools for ECI HiFocus USB modem or Globespan based modem
 Group:         System/Kernel and Hardware
-URL:           http://eciadsl.flashtux.org
-Source:        http://eciadsl.flashtux.org/download/eciadsl-usermode-%{version}.tar.gz
-Source1:       http://eciadsl.flashtux.org/download/eciadsl-synch_bin.tar.bz2
+URL:           https://eciadsl.flashtux.org
+Source:        https://eciadsl.flashtux.org/download/eciadsl-usermode-%{version}.tar.gz
+Source1:       https://eciadsl.flashtux.org/download/eciadsl-synch_bin.tar.bz2
 Patch0:        %{name}-usermode-0.12-kernel_include.patch
 License:       GPL
 Obsoletes:     eciadsl-usermode

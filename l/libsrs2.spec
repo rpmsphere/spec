@@ -3,12 +3,12 @@
 
 Name:         libsrs2
 Summary:      Mail Sender Rewriting Scheme (SRS) Library
-URL:          http://www.libsrs2.org/
+URL:          https://www.libsrs2.org/
 Group:        Mail
 License:      GPL/BSD
 Version:      1.0.18
 Release:      11.1
-Source0:      http://www.libsrs2.org/srs/libsrs2-%{version}.tar.gz
+Source0:      https://www.libsrs2.org/srs/libsrs2-%{version}.tar.gz
 
 %description
 Libsrs2 implements the Sender Rewriting Scheme (SRS), a part of the

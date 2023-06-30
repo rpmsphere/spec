@@ -6,7 +6,7 @@ Version: 0.1
 Release: 4.1
 Group: Applications/Tools
 License: GPL
-URL: http://nojhan.github.io/colout/
+URL: https://nojhan.github.io/colout/
 Source0: nojhan-colout-v0.1-61-g566a9b2.tar.gz
 BuildArch: noarch
 BuildRequires: python2

@@ -4,8 +4,8 @@ Version: 0.4
 Release: 1
 License: GPL
 Group: Games/Cards
-Source: http://download.savannah.nongnu.org/releases/cardpics/%{name}-%{version}.tar.bz2
-URL: http://www.nongnu.org/cardpics
+Source: https://download.savannah.nongnu.org/releases/cardpics/%{name}-%{version}.tar.bz2
+URL: https://www.nongnu.org/cardpics
 BuildArch: noarch
 
 %description

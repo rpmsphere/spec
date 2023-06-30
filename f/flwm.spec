@@ -6,7 +6,7 @@ License: GPLv2
 Group: System/GUI/Other
 Source: https://github.com/bbidulock/flwm/releases/download/%{version}/%{name}-%{version}.tgz
 Patch0: flwm-1.16.patch
-URL: http://flwm.sourceforge.net
+URL: https://flwm.sourceforge.net
 BuildRequires: gcc-c++
 BuildRequires: libX11-devel
 BuildRequires: libXext-devel

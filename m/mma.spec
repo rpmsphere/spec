@@ -3,7 +3,7 @@ Version:	21.09.2
 Release:	1
 Summary:	MIDI Accompaniment Generator
 License:	GPL
-URL:		http://www.mellowood.ca/mma/
+URL:		https://www.mellowood.ca/mma/
 Source0:	mma-devl.%{version}.tar.gz
 Source1:	mma-bin-21.09.setup.py
 Source2:	mma-bin-20.12.mma.py

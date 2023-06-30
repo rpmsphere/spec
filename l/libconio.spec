@@ -2,7 +2,6 @@ Name:           libconio
 Version:        1.0.0
 Release:        3.1
 License:        GPL
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Group:          Development/Libraries
 Summary:        Implementation of conio.h functions
 Source:         %{name}-%{version}.tar.bz2
@@ -45,11 +44,9 @@ rm -rf $RPM_BUILD_ROOT
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root)
 %{_libdir}/libconio.so.0*
 
 %files devel
-%defattr(-,root,root)
 %{_includedir}/conio.h
 %{_libdir}/libconio.so
 %{_mandir}/man3/*

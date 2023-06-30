@@ -3,8 +3,8 @@ Version:       1.2.2
 Release:       10.1
 Summary:       A Napster Client developed in C using the GTK user interface
 Group:         Graphical Desktop/Applications/Networking
-URL:           http://lopster.sourceforge.net
-Source:        http://lopster.sourceforge.net/download/lopster-%{version}.tar.gz
+URL:           https://lopster.sourceforge.net
+Source:        https://lopster.sourceforge.net/download/lopster-%{version}.tar.gz
 Patch0:        lopster-log.patch
 License:       GPL
 BuildRequires: glibc-devel

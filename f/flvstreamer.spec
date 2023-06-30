@@ -4,9 +4,8 @@ Release:        3.1
 Summary:        Open source command line RTMP client
 License:        GPLv2+
 Group:          Networking/File transfer
-URL:            http://savannah.nongnu.org/projects/flvstreamer
-Source:         http://download.savannah.gnu.org/releases/%{name}/source/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+URL:            https://savannah.nongnu.org/projects/flvstreamer
+Source:         https://download.savannah.gnu.org/releases/%{name}/source/%{name}-%{version}.tar.gz
 
 %description
 Flvstreamer is an open source command-line RTMP client intended to stream
@@ -29,7 +28,6 @@ mkdir -p $RPM_BUILD_ROOT%{_bindir}
 find -type f -perm -u+x | xargs install -m755 -t $RPM_BUILD_ROOT%{_bindir}
 
 %files
-%defattr(-,root,root)
 %doc README ChangeLog
 %{_bindir}/flvstreamer
 %{_bindir}/streams

@@ -4,8 +4,8 @@ Version: 0.05
 Release: 2.1
 Group: Applications/System
 License: GPL
-URL: http://labs.cybozu.co.jp/blog/kazuhoatwork/my_projects/c/
-Source0: http://labs.cybozu.co.jp/blog/kazuho/archives/c/%{name}-%{version}.tar.gz
+URL: https://labs.cybozu.co.jp/blog/kazuhoatwork/my_projects/c/
+Source0: https://labs.cybozu.co.jp/blog/kazuho/archives/c/%{name}-%{version}.tar.gz
 
 %description
 In order to write one-liners in C, I created a tiny wrapper for GCC. Without

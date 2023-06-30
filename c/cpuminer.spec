@@ -5,9 +5,8 @@ License:	GPL-2.0
 Summary:	Optimized CPU-miner for Bitcoin / Litecoin and others
 URL:		https://github.com/pooler/cpuminer
 Group:		Productivity/Networking/Other
-Source:		http://download.sourceforge.net/project/cpuminer/pooler-%{name}-%{version}.tar.gz
+Source:		https://download.sourceforge.net/project/cpuminer/pooler-%{name}-%{version}.tar.gz
 BuildRequires:	libcurl-devel jansson-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 
 %description
 This is a multi-threaded CPU miner for Litecoin and Bitcoin,
@@ -27,7 +26,6 @@ sed -i 's/[^ ]*-arm.\$(OBJEXT)//' Makefile.in
 %__make DESTDIR="%{buildroot}" install
 
 %files
-%defattr(-,root,root,-)
 %doc AUTHORS ChangeLog COPYING NEWS README example-cfg.json
 %{_bindir}/minerd
 

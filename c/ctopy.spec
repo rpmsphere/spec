@@ -4,8 +4,8 @@ Version: 1.4
 Release: 1
 License: BSD
 Group: Development/Tools
-URL: http://www.catb.org/~esr/ctopy/
-Source: http://www.catb.org/~esr/ctopy/ctopy-%{version}.tar.gz
+URL: https://www.catb.org/~esr/ctopy/
+Source: https://www.catb.org/~esr/ctopy/ctopy-%{version}.tar.gz
 BuildArch: noarch
 
 %description

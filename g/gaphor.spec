@@ -3,8 +3,8 @@ Version:        0.17.1
 Release:        11.1
 Summary:        A UML modelling tool
 License:        GPLv2
-URL:            http://gaphor.sourceforge.net/index.php
-Source0:        http://pypi.python.org/packages/source/g/%{name}/%{name}-%{version}.tar.gz
+URL:            https://gaphor.sourceforge.net/index.php
+Source0:        https://pypi.python.org/packages/source/g/%{name}/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  intltool
 BuildRequires:  python2-devel

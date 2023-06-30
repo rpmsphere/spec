@@ -6,7 +6,7 @@ Release: 13.1
 License:	GPL
 Group:		Productivity/Office/Organizers
 Summary:	Notes and Data in Baskets
-URL:		http://code.google.com/p/basqet/
+URL:		https://code.google.com/p/basqet/
 Vendor:		Erik Ridderby <erik.ridderby@gmail.com>
 Source:		release_0.2.0-%{version}.tar.bz2
 BuildRequires:  libpng-devel

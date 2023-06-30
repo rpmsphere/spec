@@ -6,7 +6,7 @@ Release: 8.4
 Summary: IRC from Egalite
 License: GPLv2
 Group:   Applications/Network
-URL:     http://e6irc.sourceforge.net/
+URL:     https://e6irc.sourceforge.net/
 Source: %{name}_%{version}.tar.gz
 BuildRequires: libpng-devel
 BuildRequires: pkgconfig(QtNetwork) >= 4.7

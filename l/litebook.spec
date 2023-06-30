@@ -4,8 +4,8 @@ Name:		litebook
 Version:	3.0
 Release:	10.1
 Summary:	Light-weight and useful reader
-Source0:	http://litebook-project.googlecode.com/files/LiteBook_v%{version}.tar.gz
-URL:		http://code.google.com/p/litebook-project/
+Source0:	https://litebook-project.googlecode.com/files/LiteBook_v%{version}.tar.gz
+URL:		https://code.google.com/p/litebook-project/
 Group:		Applications/Text
 License:	Apache License 2.0
 BuildRequires:	ghostscript-core ImageMagick

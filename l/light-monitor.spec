@@ -6,8 +6,8 @@ Version: 1.7
 Release: 26.1
 Group: Amusements/Games
 License: GPL
-URL: http://freecode.com/projects/light-monitor
-Source0: http://www.dixsous.org/media/download/%{name}-v%{version}.tgz
+URL: https://freecode.com/projects/light-monitor
+Source0: https://www.dixsous.org/media/download/%{name}-v%{version}.tgz
 BuildRequires: libX11-devel
 BuildRequires: libXft-devel
 BuildRequires: libXpm-devel

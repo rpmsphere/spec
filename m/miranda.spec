@@ -6,7 +6,7 @@ Version: 2.066
 Release: 1
 Group: Development/Language
 License: BSD-like
-URL: http://miranda.org.uk/
+URL: https://miranda.org.uk/
 Source0: https://www.cs.kent.ac.uk/people/staff/dat/miranda/src/mira-2066-src.tgz
 
 %description

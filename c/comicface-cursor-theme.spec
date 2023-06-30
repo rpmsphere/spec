@@ -6,8 +6,8 @@ Version:        0.12
 Release:        2.1
 License:        LGPL
 Group:          User Interface/Desktops
-URL:            http://gnome-look.org/content/show.php/ComicFaces?content=161673
-Source0:        http://gnome-look.org/CONTENT/content-files/161673-ComicFace.tar.gz
+URL:            https://gnome-look.org/content/show.php/ComicFaces?content=161673
+Source0:        https://gnome-look.org/CONTENT/content-files/161673-ComicFace.tar.gz
 BuildArch:      noarch
 
 %description

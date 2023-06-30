@@ -7,7 +7,7 @@ Group: 		Sciences/Chemistry
 Source0: 	%{name}-%{version}.tar.bz2
 Source1: 	%{name}-%{version}-doc.tar.bz2
 Source2:	%{name}.1.bz2
-URL: 		http://garlic.mefos.hr/sources
+URL: 		https://garlic.mefos.hr/sources
 BuildRequires: 	libX11-devel
 
 %description

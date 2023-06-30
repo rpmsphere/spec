@@ -5,8 +5,8 @@ Version:       1.14
 Release:       5.1
 Summary:       Portable and extendable printf and string functions
 Group:         System/Libraries
-URL:           http://daniel.haxx.se/projects/trio/
-Source:        http://switch.dl.sourceforge.net/sourceforge/ctrio/trio-%{version}.tar.gz
+URL:           https://daniel.haxx.se/projects/trio/
+Source:        https://switch.dl.sourceforge.net/sourceforge/ctrio/trio-%{version}.tar.gz
 License:       MIT
 
 %description

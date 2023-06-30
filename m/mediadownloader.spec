@@ -3,9 +3,9 @@ Version:        1.5.2
 Release:        6.4
 License:        GPL-3.0
 Summary:        Google and YouTube Media Downloader
-URL:            http://mediadownloader.cz.cc
+URL:            https://mediadownloader.cz.cc
 Group:          Productivity/Networking/Web/Utilities
-Source0:        http://download.sourceforge.net/googleimagedown/project/%{name}_%{version}-src.tar.gz
+Source0:        https://download.sourceforge.net/googleimagedown/project/%{name}_%{version}-src.tar.gz
 BuildRequires:  ghostscript-core ImageMagick
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  libXtst-devel

@@ -5,9 +5,8 @@ Summary:        Ethernet Layer 2 checking tool
 
 Group:          Applications/Internet
 License:        GPLv2+
-URL:            http://ge.mine.nu/arpcheck.html
-Source0:        http://ge.mine.nu/code/arpcheck
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+URL:            https://ge.mine.nu/arpcheck.html
+Source0:        https://ge.mine.nu/code/arpcheck
 BuildArch:      noarch
 
 Requires:       samba-client
@@ -34,7 +33,6 @@ install -Dp -m 0755 %{SOURCE0} $RPM_BUILD_ROOT%{_bindir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/%{name}
 
 %changelog

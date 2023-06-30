@@ -6,8 +6,8 @@ Version: 1.0.2
 Release: 7.1
 Group: Applications
 License: BSD
-URL: http://www.freebsd.org/
-Source0: http://sourceforge.net/projects/debreate/files/other/%{name}_%{version}_src.tar.gz
+URL: https://www.freebsd.org/
+Source0: https://sourceforge.net/projects/debreate/files/other/%{name}_%{version}_src.tar.gz
 BuildRequires: libbsd-devel
 BuildRequires: libarchive-devel
 BuildRequires: elfutils-libelf-devel

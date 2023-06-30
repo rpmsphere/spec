@@ -9,7 +9,7 @@ License: GPL
 Group: User Interface/Desktops
 Source0: wood-theme_1.0.tar.gz
 Source1: %{theme_name}-index.theme
-Source2: http://cdn.wallpapersafari.com/3/91/sTmXdb.jpg
+Source2: https://cdn.wallpapersafari.com/3/91/sTmXdb.jpg
 URL: https://www.gnome-look.org/content/show.php?content=153114
 BuildArch: noarch
 Requires: wood-theme

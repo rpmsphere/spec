@@ -10,7 +10,7 @@ Release: 1
 Group: Applications/System
 License: GPL
 Source: %{name}-%{version}.tgz
-URL: http://afick.sourceforge.net
+URL: https://afick.sourceforge.net
 BuildArch: noarch
 
 %description

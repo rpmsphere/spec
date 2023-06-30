@@ -6,8 +6,8 @@ Release:	9.1
 Summary:	Thomson TO9+ emulator
 Group:		Emulators
 License:	GPLv3+
-URL:		http://dcto9p.free.fr/
-Source0:	http://dcto9p.free.fr/v11/download/%{name}v%{version}.tar.gz
+URL:		https://dcto9p.free.fr/
+Source0:	https://dcto9p.free.fr/v11/download/%{name}v%{version}.tar.gz
 Source1:	%name-32.png
 Source2:	%name-16.png
 Patch0:		dcto9pv11.0-user_directory.patch.bz2

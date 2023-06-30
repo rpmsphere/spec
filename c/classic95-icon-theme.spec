@@ -6,9 +6,8 @@ Version: 0.8p1
 Release: 2.1
 License: GPL
 Group: User Interface/Desktops
-URL: http://gnome-look.org/content/show.php/Classic95?content=157298
+URL: https://gnome-look.org/content/show.php/Classic95?content=157298
 Source: %{theme_name}-%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 
 %description
@@ -31,7 +30,6 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_datadir}/icons/%{theme_name}
 %{_datadir}/doc/%{name}-%{version}
 

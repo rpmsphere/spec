@@ -16,7 +16,7 @@ Requires: w2kbibo-icon-theme
 CinnXP by petrucci4prez based from Mint-XP (fmcgorenc) and Adwaita,
 make Cinnamon look and feel like the venerable Windows XP interface.
 With background by:
-Simon Goldin and Jakob Senneby, http://www.goldinsenneby.com/gs/
+Simon Goldin and Jakob Senneby, https://www.goldinsenneby.com/gs/
 
 %prep
 %setup -q -n pkg

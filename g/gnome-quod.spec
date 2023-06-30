@@ -5,7 +5,7 @@ Summary:        Board game to make a square from pieces
 Version:        0.2.0
 Release:        16.1
 License:        GPL3
-URL:            http://sourceforge.net/projects/gquod
+URL:            https://sourceforge.net/projects/gquod
 Group:          Amusements/Games/Board
 Vendor:         openSUSE-Education
 Source:        %{name}-%{version}.tar.bz2

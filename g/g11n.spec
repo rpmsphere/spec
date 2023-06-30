@@ -4,7 +4,7 @@ Version: 0.9
 Release: 1
 License: GPL
 Group: System/Libraries
-URL: http://people.debian.org.tw/~chihchun/debian/g11n/
+URL: https://people.debian.org.tw/~chihchun/debian/g11n/
 Source: %{name}-%{version}.tar.gz
 
 %description

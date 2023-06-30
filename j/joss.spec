@@ -6,8 +6,8 @@ Version:       0.5
 Release:       7.1
 Summary:       An OSS emulator for Jack Audio Connection Kit
 Group:         Applications/Multimedia
-URL:           http://konstruktiv.org/software/joss
-Source:        http://konstruktiv.org/software/joss/joss-%{version}.tar.bz2
+URL:           https://konstruktiv.org/software/joss
+Source:        https://konstruktiv.org/software/joss/joss-%{version}.tar.bz2
 License:       GPL
 BuildRequires: jack-audio-connection-kit-devel
 BuildRequires: libsamplerate-devel

@@ -3,8 +3,8 @@ Name: 		gtk-smooth-engine
 Version: 	2.14.3
 Release: 	16.1
 License:	LGPLv2+ and GPLv2+
-URL: 		http://sourceforge.net/projects/smooth-engine
-Source0: 	http://ftp.de.debian.org/debian/pool/main/g/gtk-smooth-engine/%{name}_%{version}+deb5.tar.gz
+URL: 		https://sourceforge.net/projects/smooth-engine
+Source0: 	https://ftp.de.debian.org/debian/pool/main/g/gtk-smooth-engine/%{name}_%{version}+deb5.tar.gz
 Group: 		User Interface/Desktops
 Patch0:     gtk-smooth-engine_automake.patch
 Requires:	gtk2

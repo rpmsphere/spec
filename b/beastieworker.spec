@@ -8,7 +8,7 @@ Release:   1
 License:   GPL
 Group:     Games/Entertainment
 Source0:   %{_name}-%{version}-Linux-2.2.x.tar.gz
-URL:       http://beastieworker.sourceforge.net/
+URL:       https://beastieworker.sourceforge.net/
 BuildRequires:  SDL-devel >= 1.2
 
 %description

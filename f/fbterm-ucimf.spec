@@ -4,8 +4,8 @@ Release:        2.1
 Summary:        Bridge of ucimf as input module for fbterm
 Group:          Applications/System
 License:        GPL
-URL:            http://code.google.com/p/ucimf/
-Source0:        http://ucimf.googlecode.com/files/fbterm_ucimf-%{version}.tar.gz
+URL:            https://code.google.com/p/ucimf/
+Source0:        https://ucimf.googlecode.com/files/fbterm_ucimf-%{version}.tar.gz
 BuildRequires:  gcc-c++, ucimf-devel
 Requires:       fbterm, ucimf
 

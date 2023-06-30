@@ -2,12 +2,12 @@
 
 Name:         arpoison
 Summary:      ARP Request/Reply Utility
-URL:          http://arpoison.sourceforge.net/
+URL:          https://arpoison.sourceforge.net/
 Group:        Mapping
 License:      GPL
 Version:      0.6
 Release:      20080105.1
-Source0:      http://arpoison.sourceforge.net/%{name}-%{version}.tar.gz
+Source0:      https://arpoison.sourceforge.net/%{name}-%{version}.tar.gz
 BuildRequires: libnet-devel
 
 %description

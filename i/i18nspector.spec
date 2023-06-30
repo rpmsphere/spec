@@ -6,7 +6,7 @@ Release:        1
 Summary:        Tool for Checking gettext POT/PO/MO Files
 License:        MIT
 Group:          Development/Tools/Other
-URL:            http://jwilk.net/software/i18nspector
+URL:            https://jwilk.net/software/i18nspector
 Source0:        https://bitbucket.org/jwilk/i18nspector/downloads/%{name}-%{version}.tar.gz
 BuildRequires:  python3-devel
 #BuildRequires:  python3-nose

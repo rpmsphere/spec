@@ -11,7 +11,7 @@ Source1: Matrix-index.theme
 Source2: matrix_ver_1.0.tar.gz
 Source3: matrix-wallpapers.tar.gz
 BuildArch: noarch
-URL: http://gnome-look.org/content/show.php/Pwnage+Matrix+Conversion+Pack?content=123039
+URL: https://gnome-look.org/content/show.php/Pwnage+Matrix+Conversion+Pack?content=123039
 Requires: nostromo-icon-theme
 Requires: pulseglass-cursor-theme
 Requires: industrial-gnome-theme

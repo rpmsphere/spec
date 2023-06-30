@@ -7,8 +7,8 @@ Summary:	Convert almost any video
 Name:		mirovideoconverter
 Version:	3.0.2
 Release:	4.1
-URL:		http://www.mirovideoconverter.com/
-Source0:	http://nightlies.pculture.org/data_volume/%{oname}-%{oversion}-.tar.gz
+URL:		https://www.mirovideoconverter.com/
+Source0:	https://nightlies.pculture.org/data_volume/%{oname}-%{oversion}-.tar.gz
 Patch0:		linux-build.patch
 License:	GPLv3
 Group:		Video

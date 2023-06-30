@@ -4,8 +4,8 @@ Version: 0.2.4
 Release: 5.1
 Group: Converted/utils
 License: see /usr/share/doc/giccler/copyright
-URL: http://mein-neues-blog.de/category/giccler/
-Source0: http://repository.mein-neues-blog.de:9000/archive/%{name}-%{version}_all.tar.gz
+URL: https://mein-neues-blog.de/category/giccler/
+Source0: https://repository.mein-neues-blog.de:9000/archive/%{name}-%{version}_all.tar.gz
 BuildArch: noarch
 BuildRequires: desktop-file-utils
 

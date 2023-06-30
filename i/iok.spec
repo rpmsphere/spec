@@ -3,7 +3,7 @@ Version:        2.1.3
 Release:        18
 Summary:        Indic Onscreen Virtual Keyboard
 License:        GPLv2+
-URL:            http://pagure.io/iok
+URL:            https://pagure.io/iok
 Source0:        https://releases.pagure.org/iok/%{name}-%{version}.tar.gz
 Source1:        %{name}.appdata.xml
 BuildRequires:  desktop-file-utils libXtst-devel

@@ -9,7 +9,7 @@ Patch1:  desktop-entry.patch
 Release: 33.1
 License: GNU General Public License v3 and CC-BY and Restrictive
 Group: Amusements/Toys/Clocks
-URL: http://code.google.com/p/moeclock/
+URL: https://code.google.com/p/moeclock/
 BuildArch: noarch
 BuildRequires: python2-devel
 Requires: pygtk2, gnome-python2

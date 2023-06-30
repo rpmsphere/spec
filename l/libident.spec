@@ -6,8 +6,8 @@ Release:        12
 Summary:        New LibIdent C library
 Group:          System Environment/Libraries
 License:        Public Domain
-URL:            http://www.remlab.net/libident/
-Source0:        http://www.remlab.net/files/libident/libident-%{version}.tar.bz2
+URL:            https://www.remlab.net/libident/
+Source0:        https://www.remlab.net/files/libident/libident-%{version}.tar.bz2
 Source1:        xinetd.identtest
 BuildRequires:  /usr/bin/iconv
 

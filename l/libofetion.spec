@@ -4,8 +4,8 @@ Version: 2.2.2
 Release: 5.1
 Group: Networking/Instant messaging
 License: GPLv2+
-URL: http://code.google.com/p/ofetion/
-Source0: http://ofetion.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/ofetion/
+Source0: https://ofetion.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires: openssl-devel
 BuildRequires: sqlite-devel
 BuildRequires: libxml2-devel

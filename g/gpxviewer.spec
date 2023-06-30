@@ -4,8 +4,8 @@ Version: 0.5.2
 License: GPLv3
 Release: 7.1
 Group: misc
-URL: http://andrewgee.org/blog/gpxviewer
-Source0: http://andrewgee.org/downloads/%{name}/%{name}-%{version}.tar.gz
+URL: https://andrewgee.org/blog/gpxviewer
+Source0: https://andrewgee.org/downloads/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: python2
 BuildRequires: python2-distutils-extra
 BuildRequires: intltool

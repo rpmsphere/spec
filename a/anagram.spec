@@ -2,11 +2,10 @@ Name:			anagram
 Version:		1.16
 Summary:		Anagram finder
 License:		Public Domain
-URL:			http://sourceforge.net/projects/anagram/
+URL:			https://sourceforge.net/projects/anagram/
 Source:			anagram-1.16.tar.gz
 Group:			Productivity/Text/Utilities
 Release:		3.1
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Patch0:			anagram-1.16-headers_fix.diff
 
 %description
@@ -28,7 +27,6 @@ mkdir -p $RPM_BUILD_ROOT/%{_bindir}
 install -m 755 %{name} $RPM_BUILD_ROOT/%{_bindir}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 
 %clean

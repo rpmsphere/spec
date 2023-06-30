@@ -4,7 +4,7 @@ Epoch:		1
 Version:	1.9.15
 Release:	39
 License:	LGPLv2+
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/imlib/1.9/imlib-%{version}.tar.bz2
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/imlib/1.9/imlib-%{version}.tar.bz2
 Source2:	local-hack-gmodule.tar.gz
 Patch0:		imlib-1.9.15-autotools-rebase.patch.bz2
 Patch1:		imlib-1.9.13-sec2.patch

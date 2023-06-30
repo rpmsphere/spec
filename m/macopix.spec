@@ -5,9 +5,9 @@ Name: macopix
 Version: 3.4.0
 Release: 1
 License: chimari@kurumi.sakura.ne.jp
-URL: http://rosegray.sakura.ne.jp/macopix
+URL: https://rosegray.sakura.ne.jp/macopix
 Group: Amusements/Games
-Source0: http://rosegray.sakura.ne.jp/macopix/%{name}-%{version}.tar.gz
+Source0: https://rosegray.sakura.ne.jp/macopix/%{name}-%{version}.tar.gz
 Obsoletes: actx
 #Obsoletes: age
 BuildRequires:  libpng-devel

@@ -3,8 +3,8 @@ Version:       1.1.1
 Release:       7.1
 Summary:       Tool to convert GNU info documents into manual pages
 Group:         Development/Tools
-URL:           http://www.cskk.ezoshosting.com/cs/css/info2pod.html
-Source:        http://www.cskk.ezoshosting.com/cs/css/info2man.tar.gz
+URL:           https://www.cskk.ezoshosting.com/cs/css/info2pod.html
+Source:        https://www.cskk.ezoshosting.com/cs/css/info2man.tar.gz
 Patch0:        %{name}-1.1.1-mktemp.patch
 Patch1:        %{name}-1.1.1-makefile.patch
 Patch2:        %{name}-1.1.1-manpages.patch

@@ -5,8 +5,8 @@ Version:       0.13
 Release:       8.1
 Summary:       A wrapper library for JACK system
 Group:         System/Libraries
-URL:           http://gige.xdv.org/libjackasyn/
-Source:        http://gige.xdv.org/libjackasyn/download/libjackasyn-%{version}.tar.gz
+URL:           https://gige.xdv.org/libjackasyn/
+Source:        https://gige.xdv.org/libjackasyn/download/libjackasyn-%{version}.tar.gz
 License:       GPL
 BuildRequires: jack-audio-connection-kit-devel
 BuildRequires: libsamplerate-devel

@@ -3,8 +3,8 @@
 Name:			blockhosts
 Version:		2.7.0
 Summary:		Block IP Addresses based on system logs showing undesirable access patterns
-License:		http://creativecommons.org/licenses/publicdomain/
-URL:			http://www.aczoom.com/cms/blockhosts/
+License:		https://creativecommons.org/licenses/publicdomain/
+URL:			https://www.aczoom.com/cms/blockhosts/
 Source0:		%{_name}-%{version}.tar.gz
 Group:			Applications/System
 Release:		1

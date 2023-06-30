@@ -4,7 +4,7 @@ Release:        1
 Summary:        Access Point Mode Hotspot
 License:        GPL-3.0
 Group:          Productivity/Networking/Other
-URL:            http://www.webupd8.org/2013/06/how-to-set-up-wireless-hotspot-access.html
+URL:            https://www.webupd8.org/2013/06/how-to-set-up-wireless-hotspot-access.html
 Source0:        https://launchpad.net/~nilarimogard/+archive/ubuntu/webupd8/+files/ap-hotspot_%{version}-1~webupd8~0.tar.gz
 Source9:        %{name}.1
 Requires:       dnsmasq

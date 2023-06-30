@@ -4,8 +4,8 @@ Release:   1
 Summary:   A small, fast and easy-to-configure FTP server
 License:   GPL
 Group:     System/Servers
-URL:       http://bftpd.sourceforge.net/
-Source0:   http://bftpd.sourceforge.net/downloads/rpm/%{name}-%{version}.tar.gz
+URL:       https://bftpd.sourceforge.net/
+Source0:   https://bftpd.sourceforge.net/downloads/rpm/%{name}-%{version}.tar.gz
 
 %description
 bftpd is a easy-to-configure and small FTP server that supports chroot

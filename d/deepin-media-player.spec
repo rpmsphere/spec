@@ -72,7 +72,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 * Fri Jun 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
 - Rebuilt for Fedora
 * Mon Dec 17 2012 hillwood@linuxfans.org
-- update to 2.0git20121115, see more at http://goo.gl/mIk8b
+- update to 2.0git20121115, see more at https://goo.gl/mIk8b
 - fix mplayer2 command
 * Sat Oct  6 2012 hillwood@linuxfans.org
 - Update to 1.0.2git20120911

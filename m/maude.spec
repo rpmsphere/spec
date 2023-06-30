@@ -4,8 +4,8 @@ Version: 3.2.1
 Release: 1
 Group: science
 License: Free Software
-URL: http://maude.cs.uiuc.edu
-Source0: http://maude.cs.illinois.edu/w/images/d/d8/Maude-%{version}.tar.gz
+URL: https://maude.cs.uiuc.edu
+Source0: https://maude.cs.illinois.edu/w/images/d/d8/Maude-%{version}.tar.gz
 BuildRequires: buddy-devel
 BuildRequires: tecla-devel
 BuildRequires: libsigsegv-devel

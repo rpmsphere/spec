@@ -6,7 +6,7 @@ Release: 5.1
 Summary: E-Book Reader
 License: GPLv2
 Group:   Applications/Office
-URL:     http://carpo.sourceforge.net/
+URL:     https://carpo.sourceforge.net/
 Source: %{name}-%{version}.tar.gz
 Source2: %{name}.desktop
 BuildRequires: libpng-devel

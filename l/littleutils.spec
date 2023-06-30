@@ -3,9 +3,9 @@ Version:        1.2.5
 Release:        1
 License:        GPL-3.0
 Summary:        Collection of Small and Simple Utilities
-URL:            http://sourceforge.net/projects/littleutils/
+URL:            https://sourceforge.net/projects/littleutils/
 Group:          Productivity/File utilities
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.xz
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.xz
 BuildRequires:  libjpeg
 BuildRequires:  libjpeg-devel
 BuildRequires:  libpng-devel

@@ -4,7 +4,7 @@ Version:        2.2
 Release:        4.36
 License:        GPL-2.0
 Group:          Amusements/Games/Board/Chess
-URL:            http://www.glaurungchess.com/
+URL:            https://www.glaurungchess.com/
 Source:         %{name}.tar.bz2
 Source1:	x%{name}
 Source2:	%{name}.sh

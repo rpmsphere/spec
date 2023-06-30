@@ -3,7 +3,7 @@ Version:        0.14
 Release:        3.20201110
 Summary:        An Apple IIgs Emulator
 License:        GPLv2
-URL:            http://apple2.gs/plus/
+URL:            https://apple2.gs/plus/
 Source0:        %{name}-git.zip
 BuildRequires:  chrpath
 BuildRequires:  cmake

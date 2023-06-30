@@ -4,8 +4,8 @@ Version:	0.6.5
 Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
-URL:		http://sourceforge.net/projects/libsysactivity/
-Source0:	http://downloads.sourceforge.net/project/%{name}/0.6.x/%{name}-%{version}.tar.gz
+URL:		https://sourceforge.net/projects/libsysactivity/
+Source0:	https://downloads.sourceforge.net/project/%{name}/0.6.x/%{name}-%{version}.tar.gz
 BuildRequires:	doxygen
 BuildRequires:	cmake
 

@@ -5,16 +5,16 @@ Summary:	Qt extension library
 Group:		System Environment/Libraries
 License:	CPL or LGPLv2
 URL:		https://bitbucket.org/libqxt/libqxt/wiki/Home
-Source0:	http://bitbucket.org/libqxt/libqxt/get/v%{version}.tar.bz2
+Source0:	https://bitbucket.org/libqxt/libqxt/get/v%{version}.tar.bz2
 # Fix DSO linking
 Patch0:		libqxt-linking.patch
 # To support multimedia keys when using clementine
 # Patch sent to upstream. They want to reimplement it more cleanly.
 # We will use this patch until upstream reimplements it.
-# http://dev.libqxt.org/libqxt/issue/75
+# https://dev.libqxt.org/libqxt/issue/75
 Patch1:		libqxt-media-keys.patch
 # Fix wrong header includes RHBZ#733222
-# http://dev.libqxt.org/libqxt/issue/112/wrong-include-in-qxtnetworkh
+# https://dev.libqxt.org/libqxt/issue/112/wrong-include-in-qxtnetworkh
 Patch2:		libqxt-header-fix.patch
 # Fix build with GCC 6
 # https://bugzilla.redhat.com/show_bug.cgi?id=1305223

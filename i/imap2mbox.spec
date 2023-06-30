@@ -1,11 +1,11 @@
 Name:         imap2mbox
 Summary:      IMAP Folder to MBOX Mailbox Transfer
-URL:          http://www.zerozone.it/Software/Linux/imap2mbox/
+URL:          https://www.zerozone.it/Software/Linux/imap2mbox/
 Group:        Mail
 License:      LGPL
 Version:      1.5.0
 Release:      3.1
-Source0:      http://www.zerozone.it/Software/Linux/imap2mbox/imap2mbox-%{version}.tar.gz
+Source0:      https://www.zerozone.it/Software/Linux/imap2mbox/imap2mbox-%{version}.tar.gz
 BuildArch:    noarch
 
 %description

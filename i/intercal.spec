@@ -4,8 +4,8 @@ Release: 2
 Summary: A compiler for the INTERCAL language
 License: GPL-2.0-or-later and GFDL-1.2-or-later
 Group: Development/Other
-URL: http://www.catb.org/~esr/intercal/
-Source: http://www.catb.org/~esr/intercal/%name-%version.tar.gz
+URL: https://www.catb.org/~esr/intercal/
+Source: https://www.catb.org/~esr/intercal/%name-%version.tar.gz
 BuildRequires: flex
 
 %description

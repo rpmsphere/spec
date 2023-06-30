@@ -4,9 +4,9 @@ Version: 1.0
 Release: 5.1
 License: Other
 Group: System/X11/Fonts
-Source0: http://thelinuxbox.org/downloads/fonts/funfonts.tar.gz
+Source0: https://thelinuxbox.org/downloads/fonts/funfonts.tar.gz
 BuildArch: noarch
-URL: http://thelinuxbox.org/?page_id=3#fonts
+URL: https://thelinuxbox.org/?page_id=3#fonts
 
 %description
 These fonts sport a broad range of licenses (some of which are rather

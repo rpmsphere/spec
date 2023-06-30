@@ -6,13 +6,12 @@ Version:        20100213
 Release:        2.1
 License:        freeware
 Group:          User Interface/Desktops
-URL:            http://grynays.deviantart.com/art/Harmony-154041068?q=1&qo=1
-Source0:        http://www.deviantart.com/download/154041068/Harmony_by_GrynayS.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+URL:            https://grynays.deviantart.com/art/Harmony-154041068?q=1&qo=1
+Source0:        https://www.deviantart.com/download/154041068/Harmony_by_GrynayS.gz
 BuildArch:      noarch
 
 %description
-Original theme By J. Aroche: http://fav.me/d14hpr8
+Original theme By J. Aroche: https://fav.me/d14hpr8
 For the conversion I used the program perl sd2xc-2.5.pl adds KDE4 Compatibility,
 and adjusts the individual pointer animations with GIMP and XMC plugin.
 
@@ -30,7 +29,6 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 rm -rf $RPM_BUILD_ROOT
 
 %files 
-%defattr(-,root,root,-)
 %{_datadir}/icons/%{theme_name}
 
 %changelog

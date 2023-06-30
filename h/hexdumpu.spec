@@ -2,12 +2,12 @@
 
 Name:         hexdumpu
 Summary:      Hex Dump Utility
-URL:          http://www.catb.org/~esr/hexdump/
+URL:          https://www.catb.org/~esr/hexdump/
 Group:        Filesystem
 License:      BSD
 Version:      1.8
 Release:      4.1
-Source0:      http://www.catb.org/~esr/hexdump/hexdump-%{version}.tar.gz
+Source0:      https://www.catb.org/~esr/hexdump/hexdump-%{version}.tar.gz
 
 %description
 This program provides a facility for obtaining a dump of a binary

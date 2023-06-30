@@ -4,8 +4,8 @@ Release:	1
 Summary:	Tools for the Firebox Window Manager
 Group:		User Interface/Desktops
 License:	GPLv2+
-URL:		http://firebox.intuxication.org/
-Source:		http://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
+URL:		https://firebox.intuxication.org/
+Source:		https://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
 Source1:	%{name}-0.5.0.zh_TW.po
 Requires:	gtk2, libxml2, firebox
 BuildRequires:	gtk2-devel, libxml2-devel

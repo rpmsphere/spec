@@ -4,7 +4,7 @@ Release: 1
 Summary: A collection of icons and a setup tool for idesk
 License: GPL
 Group: Graphical Desktop
-Source: http://www.jmurray.id.au/idesk-extras-1.37.tgz
+Source: https://www.jmurray.id.au/idesk-extras-1.37.tgz
 Source1: idesktool-zh_TW
 BuildArch: noarch
 Requires: idesk Xdialog

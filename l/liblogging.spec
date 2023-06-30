@@ -3,9 +3,8 @@ Version: 0.7.1
 Release: 4.1
 Group: Development/Libraries/C and C++
 License: BSD
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
 BuildRequires: dos2unix
-URL: http://www.liblogging.org/
+URL: https://www.liblogging.org/
 Source: liblogging-%{version}.tar.bz2
 Summary: An easy to use, portable, open source library for system logging
 
@@ -72,12 +71,10 @@ dos2unix AUTHORS ChangeLog COPYING
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root,-)
 %{_libdir}/liblogging.so.0
 %{_libdir}/liblogging.so.0.0.0
 
 %files devel
-%defattr(-,root,root,-)
 %doc doc/html/*.html
 %doc AUTHORS ChangeLog COPYING
 %{_libdir}/liblogging.so

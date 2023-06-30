@@ -4,7 +4,7 @@ Release:	6.1
 Summary:	The Tegaki engine for IBus platform
 Group:		System/I18n/Japanese
 License:	GPLv2+
-URL:		http://tegaki.org/
+URL:		https://tegaki.org/
 Source0:	https://github.com/tegaki/tegaki/releases/download/v%{version}/%{name}-%{version}.tar.gz
 Patch0:		install_dir.diff
 BuildArch:	noarch

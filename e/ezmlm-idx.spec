@@ -11,9 +11,9 @@ Group: Utilities/System
 BuildRequires: mysql-devel
 BuildRequires: postgresql-devel
 BuildRequires: groff
-Source0: http://ezmlm.org/archive/%{version}/%{name}-%{version}.tar.gz
+Source0: https://ezmlm.org/archive/%{version}/%{name}-%{version}.tar.gz
 Source1: %{name}-zh_TW.tar.gz
-URL: http://www.ezmlm.org
+URL: https://www.ezmlm.org
 
 %description
 ezmlm lets users set up their own mailing lists within qmail's address

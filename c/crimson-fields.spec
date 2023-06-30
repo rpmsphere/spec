@@ -3,8 +3,8 @@ Version		: 0.5.3
 Release		: 1
 License		: GPLv2+
 Group		: Amusements/Games
-URL		: http://crimson.seul.org/
-Source		: http://crimson.seul.org/files/crimson-%{version}.tar.bz2
+URL		: https://crimson.seul.org/
+Source		: https://crimson.seul.org/files/crimson-%{version}.tar.bz2
 Summary		: A hex-based tactical war game
 BuildRequires   : SDL-devel >= 1.1.5, SDL_ttf-devel
 BuildRequires   : gawk, zlib-devel

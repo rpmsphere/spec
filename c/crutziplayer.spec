@@ -4,8 +4,8 @@ Version: 0.3.0
 Release: 12.1
 License: GPL
 Group: Application/Multimedia
-URL: http://www.crutzi.info/crutziplayer
-Source0: http://www.crutzi.info/sites/default/files/%{name}_%{version}_all.deb
+URL: https://www.crutzi.info/crutziplayer
+Source0: https://www.crutzi.info/sites/default/files/%{name}_%{version}_all.deb
 BuildArch: noarch
 BuildRequires: python2
 Requires: pygtk2, flash-plugin

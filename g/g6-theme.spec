@@ -9,7 +9,7 @@ Group: User Interface/Desktops
 Source0: https://dl.opendesktop.org/api/files/download/id/1460968136/138556-G6.tar.bz2
 Source1: G6-index.theme
 BuildArch: noarch
-URL: http://gnome-look.org/content/show.php/%22G6%22+for+GNOME+%26+Xfce4?content=138556
+URL: https://gnome-look.org/content/show.php/%22G6%22+for+GNOME+%26+Xfce4?content=138556
 Requires: silver3d-cursor-theme
 Requires: inx-icon-theme
 Requires: ios4mac-backgrounds

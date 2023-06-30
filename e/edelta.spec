@@ -3,10 +3,9 @@ Version: 0.9e
 Release: 4.1
 License: GPL
 Group: Productivity/Archiving/Backup 
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
 BuildRequires: zlib-devel
-URL: http://www.diku.dk/~jacobg/edelta/
-Source: http://www.diku.dk/~jacobg/edelta/edelta-0.9e.tar.gz
+URL: https://www.diku.dk/~jacobg/edelta/
+Source: https://www.diku.dk/~jacobg/edelta/edelta-0.9e.tar.gz
 Summary: A XDelta-style binary differ
 
 %description
@@ -36,7 +35,6 @@ gcc %{optflags} -Wall -finline-functions -lz edelta.c sha1.c -o %{name}
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/%{name}
 %doc Contributors COPYING scripts
 

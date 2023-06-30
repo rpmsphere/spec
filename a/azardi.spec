@@ -7,7 +7,7 @@ License:       shareware
 Group:         Productivity/Other
 BuildArch:     noarch
 Requires:      xulrunner
-URL:           http://azardi.infogridpacific.com/
+URL:           https://azardi.infogridpacific.com/
 
 %description
 The AZARDI 6 release is a full reinvention of AZARDI and the eBook Reader.

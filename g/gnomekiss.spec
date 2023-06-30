@@ -4,7 +4,7 @@ Version: 2.0
 Release: 1
 Source0: %{name}-%{version}.tar.gz
 Source1: gnomekiss.desktop
-URL: http://devel.tlrmx.org/kiss/
+URL: https://devel.tlrmx.org/kiss/
 License: GPL
 Group: Amusements/Games
 Requires: lha

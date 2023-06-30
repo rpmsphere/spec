@@ -6,7 +6,7 @@ Version:    0.0.1
 Release:    8.1
 Group:      Development/Tools
 License:    LGPLv2.1
-URL:        http://qt.nokia.com
+URL:        https://qt.nokia.com
 Source0:    %{name}-%{version}.tar.bz2
 BuildRequires:  gcc-c++
 BuildRequires:  pkgconfig(QtCore)

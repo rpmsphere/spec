@@ -6,7 +6,7 @@ Version: 3.8.1
 Release: 1
 Group: Network
 License: Free Software
-URL: http://edbrowse.org/
+URL: https://edbrowse.org/
 Source0: https://github.com/CMB/edbrowse/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1: modified_runtime.h
 BuildRequires: gcc cmake

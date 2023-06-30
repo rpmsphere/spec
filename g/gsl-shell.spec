@@ -6,8 +6,8 @@ Version: 2.3.2
 Release: 1
 Group: Sciences/Mathematics
 License: GPLv3
-URL: http://savannah.nongnu.org/projects/gsl-shell/
-Source0: http://ftp.twaren.net/Unix/NonGNU//gsl-shell/%{name}-%{version}.tar.gz
+URL: https://savannah.nongnu.org/projects/gsl-shell/
+Source0: https://ftp.twaren.net/Unix/NonGNU//gsl-shell/%{name}-%{version}.tar.gz
 BuildRequires: gcc-c++
 BuildRequires: agg-devel
 BuildRequires: gsl-devel
@@ -18,7 +18,7 @@ BuildRequires: libstdc++-static
 BuildRequires: blas-devel
 BuildRequires: fox-devel
 Requires: lua
-Source1:	http://luajit.org/download/LuaJIT-2.1.0-beta3.tar.gz
+Source1:	https://luajit.org/download/LuaJIT-2.1.0-beta3.tar.gz
 
 %description
 GSL shell offers an interactive command-line interface that gives access

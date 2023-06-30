@@ -1,6 +1,6 @@
 Name:			8kingdoms
 Summary:		A 3D turn-based fantasy strategic game
-URL:			http://kralovstvi.sourceforge.net/
+URL:			https://kralovstvi.sourceforge.net/
 Group:			Amusements/Games/Strategy/Turn Based
 Version:		1.1.0
 Release:		17.4

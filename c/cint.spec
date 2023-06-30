@@ -3,9 +3,9 @@ Version:        5.18.00
 Release:        21.1
 License:        MIT
 Summary:        Stand-alone C/C++ Interpreter
-URL:            http://root.cern.ch/drupal/content/cint
+URL:            https://root.cern.ch/drupal/content/cint
 Group:          Development/Languages/C and C++
-Source:         http://root.cern.ch/drupal/sites/default/files/%{name}-%{version}.tgz
+Source:         https://root.cern.ch/drupal/sites/default/files/%{name}-%{version}.tgz
 BuildRequires:  gcc-c++
 BuildRequires:  readline-devel
 

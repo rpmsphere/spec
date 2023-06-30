@@ -5,7 +5,7 @@ Version:        1.6
 Release:        1
 Summary:        Ultima VII Engine
 License:        GPL     
-URL:            http://exult.sourceforge.net       
+URL:            https://exult.sourceforge.net       
 Source0:        exult-%{version}.tar.gz
 BuildRequires:  SDL_mixer-devel SDL-devel
 Requires:       SDL, SDL_mixer, SDL_image

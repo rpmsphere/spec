@@ -5,8 +5,8 @@ Version:       1.2.3
 Release:       10.1
 Summary:       A high-level generic biometric authentication model
 Group:         Applications/Security
-URL:           http://code.google.com/p/bioapi-linux/
-Source:        http://bioapi-linux.googlecode.com/files/%{name}_%{version}.tar.gz
+URL:           https://code.google.com/p/bioapi-linux/
+Source:        https://bioapi-linux.googlecode.com/files/%{name}_%{version}.tar.gz
 Patch0:        %{name}-1.2.2-gcc44.patch
 License:       BSD
 BuildRequires: libpng-devel
@@ -76,7 +76,6 @@ rm -rf "$RPM_BUILD_ROOT"
 rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %{_bindir}/BioAPITest
 %{_bindir}/MdsEdit
 %{_bindir}/QSample
@@ -85,7 +84,6 @@ rm -rf "$RPM_BUILD_ROOT"
 %{_bindir}/mod_install
 
 %files -n libbioapi
-%defattr(-,root,root)
 %{_libdir}/libbioapi100.so.*
 %{_libdir}/libbioapi_dummy100.so.*
 %{_libdir}/libbioapi_mds300.so.*
@@ -94,7 +92,6 @@ rm -rf "$RPM_BUILD_ROOT"
 %doc README
 
 %files -n libbioapi-devel
-%defattr(-,root,root)
 %{_includedir}/bioapi.h
 %{_includedir}/bioapi_api.h
 %{_includedir}/bioapi_err.h
@@ -126,11 +123,9 @@ rm -rf "$RPM_BUILD_ROOT"
 %{_libdir}/libpwbsp.so
 
 %files -n libbioapi-qt
-%defattr(-,root,root)
 %{_libdir}/libqtpwbsp.so.*
 
 %files -n libbioapi-qt-devel
-%defattr(-,root,root)
 %{_libdir}/libqtpwbsp.a
 %{_libdir}/libqtpwbsp.la
 %{_libdir}/libqtpwbsp.so

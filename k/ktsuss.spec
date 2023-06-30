@@ -4,8 +4,8 @@ Version:	2
 Release:	3.1
 License:	BSD
 Group:		System/Base
-URL:		http://code.google.com/p/%{name}
-Source0:	http://ktsuss.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:		https://code.google.com/p/%{name}
+Source0:	https://ktsuss.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		ktsuss-2.printf.patch
 BuildRequires:	pkgconfig(gtk+-2.0)
 
@@ -27,7 +27,6 @@ make
 %makeinstall
 
 %files
-%defattr(-,root,root)
 %doc README Changelog
 %attr(4755,root,root)%{_bindir}/ktsuss
 %{_datadir}/pixmaps/ktsuss.png

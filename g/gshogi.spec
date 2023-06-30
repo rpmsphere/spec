@@ -4,7 +4,7 @@ Release:	2.1
 Summary:	A program to play Shogi
 Group:		Games/Boards
 License:	GPLv3+
-URL:		http://www.johncheetham.com/projects/gshogi/
+URL:		https://www.johncheetham.com/projects/gshogi/
 Source:		%{name}-master.zip
 BuildRequires:	python3-devel
 Requires:       python3-gobject

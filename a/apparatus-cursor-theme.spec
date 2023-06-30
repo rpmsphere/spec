@@ -6,8 +6,8 @@ Version:        20080612
 Release:        3.1
 License:        freeware
 Group:          User Interface/Desktops
-URL:            http://s0ury.deviantart.com/art/J-Aroche-s-G-A-Converted-88491633?q=1&qo=1
-Source0:        http://www.deviantart.com/download/88491633/j_aroche__s_g_a__converted_by_s0ury.zip
+URL:            https://s0ury.deviantart.com/art/J-Aroche-s-G-A-Converted-88491633?q=1&qo=1
+Source0:        https://www.deviantart.com/download/88491633/j_aroche__s_g_a__converted_by_s0ury.zip
 BuildArch:      noarch
 
 %description
@@ -16,7 +16,7 @@ a X11 Cursor. Also included are 4 different versions, blue, green, red, yellow.
 The 'busy' animation has been changed on all four versions, since the original
 is too big and doesn't integrate well with compiz-fusion enabled.
 Link to J.Aroche's original cursor:
-http://aroche.deviantart.com/art/Green-Aparatus-71526723
+https://aroche.deviantart.com/art/Green-Aparatus-71526723
 
 %prep
 %setup -q -c

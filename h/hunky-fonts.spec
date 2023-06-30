@@ -7,8 +7,8 @@ Release:        6.1
 Summary:        Modified Bitstream Vera fonts with additional letters
 Group:          User Interface/X
 License:        Redistributable, with restrictions
-URL:            http://sourceforge.net/projects/hunkyfonts/
-Source0:        http://download.sourceforge.net/%{archivename}/%{archivename}-%{version}.tar.bz2
+URL:            https://sourceforge.net/projects/hunkyfonts/
+Source0:        https://download.sourceforge.net/%{archivename}/%{archivename}-%{version}.tar.bz2
 BuildArch:      noarch
 
 %description

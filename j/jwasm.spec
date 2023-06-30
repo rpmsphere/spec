@@ -3,7 +3,7 @@ Version: 2.15
 Release: 1
 License: Sybase Open Watcom Public License
 Summary: MASM-compatible assembler
-URL: http://jwasm.github.io/
+URL: https://jwasm.github.io/
 Group: Development/Languages
 Source: JWasm-%{version}.tar.gz
 Patch0: jwasm-undef.patch

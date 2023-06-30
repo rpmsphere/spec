@@ -3,7 +3,7 @@ Version: 0.2
 Release: 2.1
 License: GPL
 Group: Graphical desktop/Icewm
-URL: http://www.crash-override.net
+URL: https://www.crash-override.net
 Summary: Ghost in the Shell Theme for IceWM
 BuildArch: noarch
 Requires: icewm

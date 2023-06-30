@@ -4,7 +4,7 @@ Release:    2
 Summary:    IBus Traditional ZhuYin Input Method
 License:    GPLv3+
 Group:      System Environment/Libraries
-URL:        http://fourdollars.github.com/ibus-zhuyin/
+URL:        https://fourdollars.github.com/ibus-zhuyin/
 Source0:    https://github.com/fourdollars/ibus-zhuyin/releases/download/v%{version}/%{name}-%{version}.tar.xz
 Patch0:     %{name}-%{version}.diff
 BuildRequires:    ibus-devel

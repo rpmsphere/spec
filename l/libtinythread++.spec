@@ -6,8 +6,8 @@ Release:	2
 Summary:	A fairly compatible subset of the C++11 thread management classes
 Group:		System Environment/Libraries
 License:	zlib
-URL:		http://tinythreadpp.bitsnbites.eu/
-Source0:	http://tinythreadpp.bitsnbites.eu/files/TinyThread++-%version-src.tar.bz2
+URL:		https://tinythreadpp.bitsnbites.eu/
+Source0:	https://tinythreadpp.bitsnbites.eu/files/TinyThread++-%version-src.tar.bz2
 BuildRequires:	gcc-c++
 
 %description

@@ -3,7 +3,7 @@ Summary: CubeTest
 Version: 0.9.4
 Release: 1
 License: GPL v2
-URL:     http://www.vandenoever.info/software/cubetest/
+URL:     https://www.vandenoever.info/software/cubetest/
 Group:   Amusements/Games/Logic
 Source0: %{name}-%{version}.tar.bz2
 Source1: %{name}.desktop

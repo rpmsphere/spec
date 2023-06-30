@@ -5,7 +5,7 @@ Summary:       Intelligent packet sniffer geared for capturing TCP traffic
 Group:         Applications/Internet 
 License:       GPL2+
 URL:           https://github.com/onotelli/justniffer
-Source0:       http://sourceforge.net/projects/justniffer/files/justniffer/justniffer%20%{version}/%{name}_%{version}.tar.gz 
+Source0:       https://sourceforge.net/projects/justniffer/files/justniffer/justniffer%20%{version}/%{name}_%{version}.tar.gz 
 BuildRequires: libpcap-devel, boost-devel, glib2-devel, libnet-devel, python-devel
 Requires:      libpcap, boost, libicu
 

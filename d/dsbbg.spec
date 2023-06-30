@@ -8,7 +8,7 @@ License:        BSD-like
 Group:          User Interface/X
 URL:            https://github.com/mrclksr/DSBBg
 Source0:        %{_name}-%{version}.tar.gz
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 
 %description
 DSBBg is a simple Qt application to manage wallpapers, and to change

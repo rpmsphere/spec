@@ -7,7 +7,7 @@ Source:         authforce-0.9.9.tar.bz2
 License:        GPL2
 Group:          Networking/WWW
 Summary:        HTTP authentication brute forcer
-URL:            http://divineinvasion.net/authforce
+URL:            https://divineinvasion.net/authforce
 BuildRequires:  readline-devel
 
 %description

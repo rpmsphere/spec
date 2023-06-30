@@ -4,8 +4,8 @@ Release:     0
 Summary:     Multiplatform GTK+2 text editor
 Group:       Applications/Editors
 License:     GPLv2+
-URL:         http://mooedit.sourceforge.net/
-Source0:     http://sourceforge.net/projects/mooedit/files/medit/%{version}/%{name}-%{version}-devel.tar.bz2
+URL:         https://mooedit.sourceforge.net/
+Source0:     https://sourceforge.net/projects/mooedit/files/medit/%{version}/%{name}-%{version}-devel.tar.bz2
 BuildRequires:   libpng-devel
 BuildRequires:   gcc-c++ intltool
 BuildRequires:   gtk2-devel libxml2-devel pcre-devel pygtk2-devel libSM-devel

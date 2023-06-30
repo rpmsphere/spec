@@ -4,8 +4,8 @@ Release:        2.1
 Summary:        A launcher for OpenBox
 Group:          Graphical desktop/Openbox
 License:        GPLv3
-URL:            http://adeskbar.tuxfamily.org/
-Source0:        http://download.tuxfamily.org/adeskbar/sources/%{name}-%{version}.tar.gz
+URL:            https://adeskbar.tuxfamily.org/
+Source0:        https://download.tuxfamily.org/adeskbar/sources/%{name}-%{version}.tar.gz
 BuildRequires:  python2
 Requires:	pygtk2
 Requires:	python2-cairo

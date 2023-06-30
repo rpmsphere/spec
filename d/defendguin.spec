@@ -4,7 +4,7 @@ Name:			defendguin
 Version:		0.0.12
 Summary:		A Defender clone, with a Linux theme
 License:		GPLv2
-URL:			http://www.newbreedsoftware.com/defendguin/
+URL:			https://www.newbreedsoftware.com/defendguin/
 Group:			Amusements/Games/Action/Arcade
 Release:		6.4
 Source:			%{name}-%{version}.tar.gz

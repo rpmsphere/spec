@@ -3,7 +3,7 @@ Version:        3.1.2git
 Release:        1
 Summary:        Lightweight and Functional music player for Linux
 License:        GPLv3
-URL:            http://foobnix.com
+URL:            https://foobnix.com
 Source0:        %{name}-master.zip
 BuildArch:      noarch
 BuildRequires:  desktop-file-utils

@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           coquillo
-URL:            http://qt-apps.org/content/show.php/Coquillo?content=141896
+URL:            https://qt-apps.org/content/show.php/Coquillo?content=141896
 License:        GPL v2 or later
 Group:          Productivity/Multimedia/Sound/Utilities
 Summary:        An audio metadata editor

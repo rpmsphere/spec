@@ -5,9 +5,9 @@ Version:   1.4.5
 Release:   5.1
 Summary:   An ABC file preprocessor
 License:   GPL
-URL:       http://abcplus.sourceforge.net
+URL:       https://abcplus.sourceforge.net
 Group:     Applications/File
-Source:    http://abcplus.sourceforge.net/%{name}-%{version}.tar.gz
+Source:    https://abcplus.sourceforge.net/%{name}-%{version}.tar.gz
 
 %description
 abcpp is a simple yet powerful preprocessor designed for, but not limited

@@ -6,8 +6,8 @@ Version:	2.91
 Release:	3.1
 License:	zlib
 Group:		Graphics
-URL:		http://sourceforge.net/projects/apngasm
-Source0:	http://downloads.sourceforge.net/project/apngasm/%{version}/%{name}-%{version}-src.zip
+URL:		https://sourceforge.net/projects/apngasm
+Source0:	https://downloads.sourceforge.net/project/apngasm/%{version}/%{name}-%{version}-src.zip
 Buildrequires:	zlib-devel
 BuildRequires:	libpng-devel
 BuildRequires:	pkgconfig

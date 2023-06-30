@@ -4,8 +4,8 @@ Version: 2.3.27
 Release: 3.4
 Group: Applications/Productivity
 License: GPLv3
-URL: http://people.duke.edu/~dgraham/etmqt/
-Source0: http://people.duke.edu/~dgraham/etmqt/etm_qt-%{version}.tar.gz
+URL: https://people.duke.edu/~dgraham/etmqt/
+Source0: https://people.duke.edu/~dgraham/etmqt/etm_qt-%{version}.tar.gz
 BuildRequires: python2-devel
 BuildRequires: python2-setuptools
 Requires: python2-qt4

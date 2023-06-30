@@ -6,8 +6,8 @@ Version: 0.8
 Release: 7.1
 Group: Development/Languages
 License: GPLv2
-URL: http://flashpascal.sourceforge.net/
-Source0: http://sourceforge.net/projects/flashpascal/files/flashpascal/FlashPascal-%{version}/FlashPascal-%{version}.zip
+URL: https://flashpascal.sourceforge.net/
+Source0: https://sourceforge.net/projects/flashpascal/files/flashpascal/FlashPascal-%{version}/FlashPascal-%{version}.zip
 BuildRequires: fpc
 
 %description

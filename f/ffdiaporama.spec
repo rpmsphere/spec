@@ -6,10 +6,10 @@ Version:        2.1.9
 Release:        8.1
 Summary:        Movie creator from photos and video clips
 License:        GPLv2
-URL:            http://ffdiaporama.tuxfamily.org
+URL:            https://ffdiaporama.tuxfamily.org
 Group:          Video/Editors and Converters
-Source:         http://download.tuxfamily.org/%{name}/Packages/Stable/%{name}_bin_2.2.devel.2014.0701.tar.gz
-# http://ffdiaporama.tuxfamily.org/Forum/viewtopic.php?id=781
+Source:         https://download.tuxfamily.org/%{name}/Packages/Stable/%{name}_bin_2.2.devel.2014.0701.tar.gz
+# https://ffdiaporama.tuxfamily.org/Forum/viewtopic.php?id=781
 Patch0:         ffDiaporama-2.2-devel-2014.0701-mga-i18n-semicolon-desktop.patch
 Patch1:         ffdiaporama-ffmpeg-2.4.patch
 Patch2:         ffdiaporama-audiodecode.patch

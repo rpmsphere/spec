@@ -3,7 +3,7 @@ Summary:		Arcade-style mix of asteroids and pool
 Version:		0.2.0
 Release:		14.4
 Source:			%{name}-%{version}.tar.bz2
-URL:			http://mkorman.org/alienpool/
+URL:			https://mkorman.org/alienpool/
 Group:          	Amusements/Games/Action/Arcade
 License:		GPLv2
 BuildRequires:		desktop-file-utils

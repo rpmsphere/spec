@@ -6,7 +6,7 @@ Version: 1.0.4
 Release: 1
 Group: text
 License: Free Software
-URL: http://azsky2.html.xdomain.jp/linux/aobook/
+URL: https://azsky2.html.xdomain.jp/linux/aobook/
 Source0: %{name}-%{version}.tar.xz
 BuildRequires: desktop-file-utils
 BuildRequires: libpng-devel

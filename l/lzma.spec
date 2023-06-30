@@ -7,8 +7,8 @@ Version: 	4.43
 Release: 	43
 License: 	GPL
 Group:		Archiving/Compression
-Source0:	http://tukaani.org/lzma/lzma-%{oldlzmaver}.tar.lzma
-Source1:	http://ovh.dl.sourceforge.net/sourceforge/sevenzip/lzma443.tar.bz2
+Source0:	https://tukaani.org/lzma/lzma-%{oldlzmaver}.tar.lzma
+Source1:	https://ovh.dl.sourceforge.net/sourceforge/sevenzip/lzma443.tar.bz2
 #Source2:	lzme
 Source3:	sqlzma.h
 #Patch0:	lzma-432-makefile.patch.bz2
@@ -39,7 +39,7 @@ Patch16:	lzma-4.32.7-format_not_a_string_literal_and_no_format_arguments.diff
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	dos2unix
 BuildRequires:	diffutils
-URL:		http://tukaani.org/lzma/
+URL:		https://tukaani.org/lzma/
 
 %if !%build_dkms
 Obsoletes:	dkms-%{name} < %{version}-%{release}

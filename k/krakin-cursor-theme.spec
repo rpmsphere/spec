@@ -6,8 +6,8 @@ Version:        20100221
 Release:        3.1
 License:        freeware
 Group:          User Interface/Desktops
-URL:            http://grynays.deviantart.com/art/krakin-154925900?q=1&qo=1
-Source0:        http://www.deviantart.com/download/154925900/krakin_by_GrynayS.gz
+URL:            https://grynays.deviantart.com/art/krakin-154925900?q=1&qo=1
+Source0:        https://www.deviantart.com/download/154925900/krakin_by_GrynayS.gz
 BuildArch:      noarch
 
 %description

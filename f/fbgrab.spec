@@ -4,8 +4,8 @@ Version: 1.5
 Release: 1
 License: GPL
 Group: Graphics
-Source: http://hem.bredband.net/gmogmo/fbgrab/%{name}-%{version}.tar.xz
-URL: http://hem.bredband.net/gmogmo/fbgrab/
+Source: https://hem.bredband.net/gmogmo/fbgrab/%{name}-%{version}.tar.xz
+URL: https://hem.bredband.net/gmogmo/fbgrab/
 BuildRequires: libpng-devel
 BuildRequires: zlib-devel
 

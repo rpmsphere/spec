@@ -2,10 +2,10 @@ Name:               dehtml
 Version:            1.8
 Release:            3.1
 Summary:            Removes HTML Contructs from Documents
-Source:             http://www.moria.de/~michael/dehtml/dehtml-%{version}.tar.gz
+Source:             https://www.moria.de/~michael/dehtml/dehtml-%{version}.tar.gz
 Patch1:             dehtml-add_destdir_and_remove_strip.patch
 Patch2:             dehtml-fix_missing_return_in_nonvoid_function.patch
-URL:                http://www.moria.de/~michael/dehtml/
+URL:                https://www.moria.de/~michael/dehtml/
 Group:              Productivity/Text/Convertors
 License:            GNU General Public License version 2 or later (GPL v2 or later)
 BuildRequires:      gcc make glibc-devel pkgconfig

@@ -4,7 +4,7 @@ Release:	2.1
 Summary:	A chess GUI to play against chess engines
 Group:		Games/Boards
 License:	GPLv3+
-URL:		http://www.johncheetham.com/projects/jcchess/
+URL:		https://www.johncheetham.com/projects/jcchess/
 Source:		%{name}-master.zip
 BuildRequires:	python3-devel
 Requires:       python3-gobject

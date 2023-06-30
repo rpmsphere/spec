@@ -5,7 +5,7 @@ Summary: IceWM Control Center
 License: GPL
 Group: Graphical desktop/Icewm
 Source0: icecc-2.9.tar.bz2
-URL: http://icecc.sourceforge.net/
+URL: https://icecc.sourceforge.net/
 Requires: icewm
 BuildRequires: qt3-devel
 

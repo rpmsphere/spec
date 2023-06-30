@@ -1,13 +1,13 @@
 Name:         makepp
 Summary:      Make Plus Plus
-URL:          http://makepp.sourceforge.net/
+URL:          https://makepp.sourceforge.net/
 Vendor:       G. Holt, A. Johnson, D. Peiffer
 Group:        Building
 License:      GPL/Artistic
 Version:      2.0
 #Version:      2.0.99.2
 Release:      7.1
-Source0:      http://sourceforge.net/projects/%{name}/files/%{version}/%{name}-%{version}.tgz
+Source0:      https://sourceforge.net/projects/%{name}/files/%{version}/%{name}-%{version}.tgz
 BuildRequires:  perl
 BuildRequires:  perl-podlators
 BuildArch:    noarch

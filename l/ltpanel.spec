@@ -4,8 +4,8 @@ Version: 0.2
 Release: 6.1
 License: GPL
 Group: x11
-URL: http://ltpanel.sourceforge.net/
-Source0: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL: https://ltpanel.sourceforge.net/
+Source0: https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: libX11-devel
 BuildRequires: libXpm-devel
 

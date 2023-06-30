@@ -8,7 +8,7 @@ Group:        Amusements/Games/Action/Breakout
 Source:       circuslinux-%{version}.tar.bz2
 Source1:      %name.desktop
 Patch:        circuslinux-%{version}.dif
-URL:          http://www.newbreedsoftware.com/circus-linux/
+URL:          https://www.newbreedsoftware.com/circus-linux/
 
 %description
 The object is to move a teeter-totter back and forth across the screen

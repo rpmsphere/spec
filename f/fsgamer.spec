@@ -5,7 +5,7 @@ Version:        0.1.2
 Release:        4.1
 Summary:	Full-screen Linux gaming, improved
 URL:		https://bitbucket.org/michaelb/fsgamer
-Source:         http://cdn.bitbucket.org/michaelb/fsgamer/downloads/%{name}_%{version}.tar.gz
+Source:         https://cdn.bitbucket.org/michaelb/fsgamer/downloads/%{name}_%{version}.tar.gz
 Requires:       espeak, openbox
 BuildRequires:  intltool, python2-distutils-extra
 BuildRequires:  python2-devel

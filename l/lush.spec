@@ -7,7 +7,7 @@ Release: 1
 Summary: Object-oriented programming language for large-scale numerical and graphic applications
 License: LGPL v2.0+
 Group: Development/Lisp
-URL: http://lush.sourceforge.net/
+URL: https://lush.sourceforge.net/
 Source: %name-%version.tgz
 BuildRequires: binutils-devel gcc-c++ gcc-gfortran
 BuildRequires: lapack-devel readline-devel atlas

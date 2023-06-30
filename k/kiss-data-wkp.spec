@@ -4,7 +4,7 @@ Version: 2011
 Release: 6.1
 License: freeware
 Group: Amusements/Games
-URL: http://www.kiss-wkp.com/
+URL: https://www.kiss-wkp.com/
 Source: %{name}.zip
 Requires: lha
 BuildArch: noarch

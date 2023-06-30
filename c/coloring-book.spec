@@ -3,8 +3,8 @@ Version:       0.13
 Release:       11.4
 Summary:       A simple coloring (or colouring) book program
 Group:         Graphical Desktop/Applications/Educational
-URL:           http://kavlon.org/index.php/cb
-Source0:       http://kavlon.org/projects/releases/cb-%{version}.tar.gz
+URL:           https://kavlon.org/index.php/cb
+Source0:       https://kavlon.org/projects/releases/cb-%{version}.tar.gz
 Source1:       coloring-book.desktop
 Source2:       coloring-book-icons.tar.bz2
 # italian version of the default book by KaeZar

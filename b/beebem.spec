@@ -3,14 +3,14 @@ Version:       0.0.13
 Release:       3
 License:       "Distributable"
 Summary:       BBC Micro and Master 128 Emulator
-Source0:       http://beebem-unix.bbcmicro.com/download/%{name}-%{version}.tar.gz
+Source0:       https://beebem-unix.bbcmicro.com/download/%{name}-%{version}.tar.gz
 Source1:       %{name}.png
 Patch:         %{name}-0.0.13-cast.patch
 Patch1:        %{name}-0.0.13-keys.patch
 Patch2:        %{name}-0.0.13-menu-crash.patch
 Patch3:        %{name}-0.0.13-rpmlint.patch
 Patch4:        %{name}-0.0.13-gccfixes.patch
-URL:           http://beebem-unix.bbcmicro.com/
+URL:           https://beebem-unix.bbcmicro.com/
 BuildRequires: desktop-file-utils
 BuildRequires: SDL-devel
 BuildRequires: gtk2-devel

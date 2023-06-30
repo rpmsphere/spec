@@ -4,11 +4,11 @@ Release:        14.1
 Summary:        Ebook Reader for Gutenberg Etexts
 License:        GPL-2.0
 Group:          Productivity/Publishing/Other
-URL:            http://sourceforge.net/projects/gutenbrowser/
+URL:            https://sourceforge.net/projects/gutenbrowser/
 # cvs -z3 -d:pserver:anonymous@gutenbrowser.cvs.sourceforge.net:/cvsroot/gutenbrowser co -P gutenbrowser; cd gutenbrowser/; find . -name CVS -type d | xargs rm -rf; tar jcf gutenbrowser-0.9.0cvs.20090725.tar.bz2 gutenbrowser/
 Source0:        %{name}-%{version}.tar.bz2
 Source1:        gutenbrowser.desktop
-Source2:        http://osdab.googlecode.com/files/OSDaB-Zip-20120404.tar.bz2
+Source2:        https://osdab.googlecode.com/files/OSDaB-Zip-20120404.tar.bz2
 # PATCH-FIX-OPENSUSE no-copy-dt-needed-entries.patch asterios.dramis@gmail.com -- Fix linking with --no-copy-dt-needed-entries
 Patch0:         no-copy-dt-needed-entries.patch
 # PATCH-FIX-OPENSUSE compile_with_new_OSDaB-Zip.patch asterios.dramis@gmail.com -- Fix compilation with newer version of zip class from OSDaB Project
@@ -22,7 +22,7 @@ BuildRequires:  qt-devel
 %description
 Gutenbrowser is an application to easily search, download and read free classic
 literature, in the form of electronic etexts republished electronically by the
-Project Gutenberg (http://www.gutenberg.org/).
+Project Gutenberg (https://www.gutenberg.org/).
 
 %prep
 %setup -q -n %{name}

@@ -6,8 +6,8 @@ Version: 1.4
 Release: 2
 License: GPLv3
 Group: Utilities/System
-URL: http://vigna.dsi.unimi.it/lifekeeper
-Source: http://vigna.dsi.unimi.it/lifekeeper/lifekeeper-%{version}.tar.gz
+URL: https://vigna.dsi.unimi.it/lifekeeper
+Source: https://vigna.dsi.unimi.it/lifekeeper/lifekeeper-%{version}.tar.gz
 
 %description
 lifekeeper prints an ASCII NUL character every 30 seconds. This has

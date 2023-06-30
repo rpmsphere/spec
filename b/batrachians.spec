@@ -2,7 +2,7 @@ Name:			batrachians
 Version:		0.1.7
 Summary:		A Frog Bog(TM) clone
 License:		GPLv2
-URL:			http://sarrazip.com/dev/%{name}.html
+URL:			https://sarrazip.com/dev/%{name}.html
 Group:			Amusements/Games
 Release:		1
 Source:			%{name}-%{version}.tar.gz

@@ -3,8 +3,8 @@ Version:       0.6.2.4
 Release:       10.1
 Summary:       A program which generate 3D and 4D surfaces
 Group:         Graphical Desktop/Applications/Educational
-URL:           http://k3dsurf.sourceforge.net/
-Source:        http://mesh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
+URL:           https://k3dsurf.sourceforge.net/
+Source:        https://mesh.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 Source1:       %{name}.png
 License:       GPL
 BuildRequires: libpng-devel

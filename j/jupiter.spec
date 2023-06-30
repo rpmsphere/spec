@@ -5,7 +5,7 @@ Release:	5.1
 License:	GPL
 Group:		X11/Applications
 Source0:	%{name}_%{version}.tar.gz
-URL:		http://sourceforge.net/projects/jupiter/
+URL:		https://sourceforge.net/projects/jupiter/
 Requires:	coreutils, gnome-python2-gnome, xorg-x11-apps, rfkill
 BuildArch:	noarch
 

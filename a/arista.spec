@@ -5,8 +5,8 @@ Release: 	1
 Summary:    	Multimedia transcoder
 License:    	GPLv2
 Group:      	Applications/Multimedia
-URL:        	http://programmer-art.org/projects/arista-transcoder
-Source:         http://programmer-art.org/media/releases/arista-transcoder/%{name}-%{version}.tar.gz
+URL:        	https://programmer-art.org/projects/arista-transcoder
+Source:         https://programmer-art.org/media/releases/arista-transcoder/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:  python2-setuptools, python2-devel
 Requires: python2-gstreamer, gstreamer-plugins-base, gstreamer-plugins-good, gstreamer-plugins-bad, gstreamer-plugins-ugly, gstreamer-ffmpeg

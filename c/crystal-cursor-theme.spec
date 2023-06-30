@@ -3,11 +3,11 @@ Version:       1.0
 Release:       10.1
 Summary:       Crystal mouse icons themes for X11
 Group:         User Interface/Desktops
-URL:           http://digilander.libero.it/m4rt/html/crystalcursors.html
-Source0:       http://digilander.libero.it/m4rt/files/crystalblue.tar.gz
-Source1:       http://digilander.libero.it/m4rt/files/crystalgray.tar.gz
-Source2:       http://digilander.libero.it/m4rt/files/crystalgreen.tar.gz
-Source3:       http://digilander.libero.it/m4rt/files/crystalwhite.tar.gz
+URL:           https://digilander.libero.it/m4rt/html/crystalcursors.html
+Source0:       https://digilander.libero.it/m4rt/files/crystalblue.tar.gz
+Source1:       https://digilander.libero.it/m4rt/files/crystalgray.tar.gz
+Source2:       https://digilander.libero.it/m4rt/files/crystalgreen.tar.gz
+Source3:       https://digilander.libero.it/m4rt/files/crystalwhite.tar.gz
 License:       LGPL
 BuildArch:     noarch
 

@@ -4,12 +4,11 @@ Group:        System/X11/Fonts
 Conflicts:    ttf-kochi-gothic, ttf-kochi-mincho
 Version:      20030809
 Release:      7.1
-URL:          http://sourceforge.jp/projects/efont/files/
-Source0:      http://downloads.sourceforge.jp/efont/5411/kochi-substitute-20030809.tar.bz2
+URL:          https://sourceforge.jp/projects/efont/files/
+Source0:      https://downloads.sourceforge.jp/efont/5411/kochi-substitute-20030809.tar.bz2
 Source1:      fonts.scale.kochi-substitute
-Source100:    http://prdownloads.sourceforge.jp/efont/5411/substkit-20030809.tar.bz2
+Source100:    https://prdownloads.sourceforge.jp/efont/5411/substkit-20030809.tar.bz2
 BuildArch:    noarch
-BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Summary:      kochi-substitute fonts
 
 %description
@@ -33,7 +32,6 @@ install -c -m 644 $RPM_SOURCE_DIR/fonts.scale.kochi-substitute \
 rm -rf $RPM_BUILD_ROOT
 
 %files 
-%defattr(-, root,root)
 %doc COPYING README* docs
 %{_datadir}/fonts/kochi-substitute
 

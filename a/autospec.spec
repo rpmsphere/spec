@@ -4,7 +4,7 @@ Release:       2.1
 Summary:       Create specfiles and automatically update/check/fix rpm packages
 Summary(it):   Crea specfile ed aggiorna/controlla/corregge in modo automatico pacchetti rpm
 Group:         Development/Tools
-URL:           http://www.openmamba.org/packages.html
+URL:           https://www.openmamba.org/packages.html
 Source:        autospec-%{version}.tar.bz2
 Requires:      cpio, coreutils, curl, findutils, grep, sed
 Requires:      /bin/mktemp
@@ -16,7 +16,6 @@ Requires:      ftp
 Requires:      %{name}-plugins = %{?epoch:%epoch:}%{version}-%{release}
 License:       GPL
 BuildArch:     noarch
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 Autospec is a tool for automatically generating specfiles and updating rpm packages.
@@ -91,7 +90,6 @@ make install DESTDIR=$RPM_BUILD_ROOT prefix=%{_prefix}
 [ "$RPM_BUILD_ROOT" != / ] && rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %lang(it) %{_mandir}/it/man1/autospec.*
 %lang(it) %{?_localedir:%{_localedir}}%{!?_localedir:%_datadir/locale}/it/LC_MESSAGES/autospec_fe.mo
@@ -99,7 +97,6 @@ make install DESTDIR=$RPM_BUILD_ROOT prefix=%{_prefix}
 %doc autospec-it-HOWTO
 
 %files plugins
-%defattr(-,root,root)
 %{_bindir}/config-getvar
 %{_bindir}/pck-extract
 %{_bindir}/pck-update
@@ -112,17 +109,14 @@ make install DESTDIR=$RPM_BUILD_ROOT prefix=%{_prefix}
 %lang(it) %{?_localedir:%{_localedir}}%{!?_localedir:%_datadir/locale}/it/LC_MESSAGES/spec-create.mo
 
 %files libs
-%defattr(-,root,root)
 %{_datadir}/%{name}/lib/*
 %lang(it) %{?_localedir:%{_localedir}}%{!?_localedir:%_datadir/locale}/it/LC_MESSAGES/lib*.mo
 
 %files tests
-%defattr(-,root,root)
 %{_datadir}/%{name}/tests
 %lang(it) %{?_localedir:%{_localedir}}%{!?_localedir:%_datadir/locale}/it/LC_MESSAGES/test??_*.mo
 
 %files tools
-%defattr(-,root,root)
 %{_bindir}/extract-specs
 %{_bindir}/autoupdate-*
 
@@ -353,7 +347,7 @@ make install DESTDIR=$RPM_BUILD_ROOT prefix=%{_prefix}
 - update to version 1.0
 
 * Sat Sep 08 2007 Silvan Calarco <silvan.calarco@mambasoft.it> 0.9.99-2mamba
-- patch: remove protocol prefix (http:// ftp://) before checking server dns reachability
+- patch: remove protocol prefix (https:// ftp://) before checking server dns reachability
 
 * Thu Sep 06 2007 Davide Madrisan <davide.madrisan@gmail.com> 0.9.99-1mamba
 - update to version 0.9.99 by autospec

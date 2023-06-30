@@ -4,8 +4,8 @@ Release:        1
 Summary:        Personal Notebook based on Qt Webkit
 # The entire source code is GPLv3 except ./lonote/google_dmp/ which is ASL 2.0
 License:        GPLv3 and ASL 2.0
-URL:            http://code.google.com/p/lonote
-#Source0:        http://lonote.googlecode.com/files/%{name}-%{version}.7z
+URL:            https://code.google.com/p/lonote
+#Source0:        https://lonote.googlecode.com/files/%{name}-%{version}.7z
 Source0:	%{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3-devel

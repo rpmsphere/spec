@@ -1,6 +1,6 @@
 Name: aseqjoy
 Summary: Joystick to ALSA MIDI Sequencer Converter
-URL: http://terminatorx.org/aseqjoy.html
+URL: https://terminatorx.org/aseqjoy.html
 Version: 0.0.1
 Release: 3.1
 License: GPLv2

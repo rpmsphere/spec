@@ -3,7 +3,7 @@ Version:        2.4.1
 Release:        20.1
 Summary:        CleanIce GTK Theme Engine
 License:        GPL-2.0
-URL:            http://sourceforge.net/projects/elysium-project
+URL:            https://sourceforge.net/projects/elysium-project
 Group:          System/GUI/GNOME
 Source:         gtk-engines-cleanice-%{version}.tar.bz2
 BuildRequires:  gtk2-devel

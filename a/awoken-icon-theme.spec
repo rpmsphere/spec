@@ -6,7 +6,7 @@ Release:	4.1
 Summary:	%{theme_name} icon theme
 Group:		System/GUI/GNOME
 License:	CC by SA
-URL:		http://alecive.deviantart.com/art/AwOken-163570862
+URL:		https://alecive.deviantart.com/art/AwOken-163570862
 Source0:	%{theme_name}-%{version}.zip
 BuildArch:  noarch
 

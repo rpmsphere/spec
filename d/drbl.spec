@@ -5,7 +5,7 @@ Release:	1
 License:	GPLv2+
 Group:		Networking/Other
 URL:		https://drbl.org
-Source0:	http://free.nchc.org.tw/drbl-core/pool/drbl/stable/drbl/drbl-%{version}.tar.xz
+Source0:	https://free.nchc.org.tw/drbl-core/pool/drbl/stable/drbl/drbl-%{version}.tar.xz
 BuildArch:	noarch
 
 %description
@@ -19,8 +19,8 @@ It also includes Clonezilla, a partition and disk cloning utility similar
 to Symantec Ghost(TM) or True Image(TM).
 
 For more details, check
-1. http://drbl.org or http://drbl.sourceforge.net (English)
-2. http://drbl.nchc.org.tw (Traditional Chinese - Taiwan) 
+1. https://drbl.org or https://drbl.sourceforge.net (English)
+2. https://drbl.nchc.org.tw (Traditional Chinese - Taiwan) 
 
 %prep
 %setup -q

@@ -7,7 +7,7 @@ Release:	3.1
 Summary:	Black-White-2-Style icon theme
 Group:		User Interface/Desktops
 License:	GPL
-URL:		http://dbgthekafu.deviantart.com/art/black-white-2-Style-73276755
+URL:		https://dbgthekafu.deviantart.com/art/black-white-2-Style-73276755
 Source0:	black_white_2_Style_by_DBGtheKafu.tar
 BuildArch:	noarch
 

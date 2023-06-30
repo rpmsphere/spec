@@ -4,10 +4,9 @@ Release:        3.1
 Summary:        Interfacing C or C++ and FORTRAN
 Group:          Development/Libraries
 License:        freeware
-URL:		http://www-zeus.desy.de/~burow/cfortran/
-Source0: 	http://www-zeus.desy.de/~burow/cfortran/cfortran.h
-Source1: 	http://www-zeus.desy.de/~burow/cfortran/cfortran.html
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+URL:		https://www-zeus.desy.de/~burow/cfortran/
+Source0: 	https://www-zeus.desy.de/~burow/cfortran/cfortran.h
+Source1: 	https://www-zeus.desy.de/~burow/cfortran/cfortran.html
 BuildArch:	noarch
 
 %description
@@ -28,7 +27,6 @@ install -Dm644 %{SOURCE1} ${RPM_BUILD_ROOT}%{_datadir}/doc/%{name}-%{version}/cf
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_includedir}/cfortran.h
 %{_datadir}/doc/%{name}-%{version}/cfortran.html
 

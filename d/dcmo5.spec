@@ -6,9 +6,9 @@ Release:	12.1
 Summary:	Thomson MO5 emulator
 Group:		Emulators
 License:	GPLv3+
-URL:		http://dcmo5.free.fr/
-Source0:	http://dcmo5.free.fr/v11/download/%{name}v11.0.tar.gz
-Source1:	http://dcmo5.free.fr/v11/download/%{name}v%{version}.tar.gz
+URL:		https://dcmo5.free.fr/
+Source0:	https://dcmo5.free.fr/v11/download/%{name}v11.0.tar.gz
+Source1:	https://dcmo5.free.fr/v11/download/%{name}v%{version}.tar.gz
 Source2:	%name-32.png
 Source3:	%name-16.png
 Source4:	%name.rom

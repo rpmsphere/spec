@@ -6,7 +6,7 @@ Summary:		Pilot a tank to petect the city
 Summary(zh_TW): 指揮坦克的守城遊戲
 Group:			Amusements/Games
 License:		GPL
-URL:			http://freshmeat.net/projects/batalho/
+URL:			https://freshmeat.net/projects/batalho/
 Source0:		%{name}19.tar.gz
 Source1:		%{name}.png
 

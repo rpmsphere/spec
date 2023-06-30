@@ -4,9 +4,9 @@ Release:        2
 Summary:        An open source finite element package
 License:        GPL-2.0-only AND BSD-3-Clause AND SUSE-Public-Domain
 Group:          Productivity/Scientific/Other
-URL:            http://www.dhondt.de/
-Source0:        http://www.dhondt.de/ccx_%{version}.src.tar.bz2
-Source1:        http://www.dhondt.de/ccx_%{version}.test.tar.bz2
+URL:            https://www.dhondt.de/
+Source0:        https://www.dhondt.de/ccx_%{version}.src.tar.bz2
+Source1:        https://www.dhondt.de/ccx_%{version}.test.tar.bz2
 Source2:        ccx-rpmlintrc
 # PATCH-FIX-OPENSUSE -- pass global optflags
 Patch0:         ccx-2.16-build.patch
@@ -181,12 +181,12 @@ fi
   * add BuildRequires: tex(pst-tools.tex)
 * Thu Jul 11 2013 scorot@free.fr
 - version 2.6
-  * See http://www.dhondt.de/new_calc.htm for details
+  * See https://www.dhondt.de/new_calc.htm for details
 * Mon Mar 18 2013 scorot@free.fr
 - fix latex requirements on 12.3 and Factory
 * Tue Oct  9 2012 scorot@free.fr
 - version 2.5
-  * See http://www.dhondt.de/new_calc.htm for details
+  * See https://www.dhondt.de/new_calc.htm for details
 - spec file cleanup and reformating
 - update patches
 * Tue Jul  3 2012 scorot@free.fr

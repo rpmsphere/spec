@@ -5,7 +5,7 @@ Release: 1.1
 License: GPLv2+
 Group: Development/Languages
 URL: https://savannah.nongnu.org/projects/m2c/
-Source: http://download.savannah.nongnu.org/releases/%{name}/%{version}/%{name}-%{version}.tar.gz
+Source: https://download.savannah.nongnu.org/releases/%{name}/%{version}/%{name}-%{version}.tar.gz
 
 %description
 This is a Modula-2 compiler which translates to C. The translator is

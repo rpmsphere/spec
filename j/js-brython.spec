@@ -1,5 +1,5 @@
 Name:           js-brython
-URL:            http://www.brython.info/
+URL:            https://www.brython.info/
 Summary:        A Python 3 implementation for client-side web programming
 Version:        3.3.0
 Release:        2.1

@@ -6,8 +6,8 @@ Version: 0.4.0
 Release: 5.1
 Group: Development/Language
 License: LGPLv2
-URL: http://boxc.sourceforge.net/
-Source0: http://sourceforge.net/projects/boxc/files/Box%20-%20the%20compiler/%{name}-%{version}/%{name}-%{version}.tar.gz
+URL: https://boxc.sourceforge.net/
+Source0: https://sourceforge.net/projects/boxc/files/Box%20-%20the%20compiler/%{name}-%{version}/%{name}-%{version}.tar.gz
 BuildRequires: cairo-devel
 
 %description

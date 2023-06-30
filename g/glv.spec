@@ -7,7 +7,7 @@ Release: 7.1
 License: MIT
 Group: Development/Libraries
 Source: libglv-%{version}.tar.gz
-URL: http://outguard.sourceforge.net/download.html
+URL: https://outguard.sourceforge.net/download.html
 BuildRequires: mesa-libGL-devel libXxf86vm-devel
 
 %description

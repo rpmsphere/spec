@@ -5,7 +5,6 @@ License:        LGPL
 Source:         bwgraph.tar.bz2
 Group:          Development/Tools
 Summary:        Bandwidth graph on the kernel.org
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 C code creates a postscript file that is fed to ghostscript
@@ -33,7 +32,6 @@ install -Dm755 bw $RPM_BUILD_ROOT%{_bindir}/bw
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc README
 %{_bindir}/bw
 

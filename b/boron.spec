@@ -5,7 +5,7 @@ Name: boron
 Version: 2.0.8
 Release: 1
 License: LGPLv3+
-URL: http://urlan.sf.net/boron
+URL: https://urlan.sf.net/boron
 Group: Development/Languages
 Source: boron-%{version}.tar.gz
 BuildRequires: zlib-devel

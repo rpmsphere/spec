@@ -3,7 +3,7 @@ Name:           gplanarity
 %define svnrev  15153
 Version:        0.0.%{svnrev}
 Release:        1
-URL:            http://web.mit.edu/xiphmont/Public/gPlanarity.html
+URL:            https://web.mit.edu/xiphmont/Public/gPlanarity.html
 License:        GPL v2
 Group:          Amusements/Games/Board/Puzzle
 Summary:        Puzzle game involving untangling planar graphs

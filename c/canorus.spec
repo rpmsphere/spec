@@ -5,7 +5,7 @@ Version:        0.7.3rc3
 Release:        5.1
 License:        GPL-2.0+
 Summary:        Free cross-platform music score editor
-URL:            http://www.canorus.org/
+URL:            https://www.canorus.org/
 Group:          Productivity/Multimedia/Sound/Midi
 Source0:        https://sourceforge.net/projects/canorus/files/0.7.2/%{name}-%{version}.tar.bz2
 Source1:        canorus.1

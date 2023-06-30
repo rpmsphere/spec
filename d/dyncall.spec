@@ -2,12 +2,12 @@
 
 Name:         dyncall
 Summary:      Dynamic Foreign Function Call Library
-URL:          http://dyncall.org/
+URL:          https://dyncall.org/
 Group:        Compiler
 License:      MIT
 Version:      1.0
 Release:      8.1
-Source0:      http://dyncall.org/r%{version}/dyncall-%{version}.tar.gz
+Source0:      https://dyncall.org/r%{version}/dyncall-%{version}.tar.gz
 
 %description
 The dyncall library encapsulates architecture-, OS- and

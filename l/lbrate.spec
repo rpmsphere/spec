@@ -3,7 +3,7 @@ Version:       1.1
 Release:       2
 Summary:       Extracts files from CP/M archives in LBR format
 License:       GPLv2
-URL:           http://www.svgalib.org/rus/lbrate.html
+URL:           https://www.svgalib.org/rus/lbrate.html
 Source0:       ftp://ftp.ibiblio.org/pub/Linux/utils/compress/lbrate-1.1.tar.gz
 BuildRequires: gcc
 

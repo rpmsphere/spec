@@ -6,7 +6,6 @@ Group: Amusements/Games
 License: GPLv2
 URL: https://code.google.com/p/jobp2012/
 Source0: https://jobp2012.googlecode.com/files/Final.zip
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 Requires: python
 

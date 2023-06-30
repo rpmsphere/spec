@@ -6,7 +6,7 @@ License: GPL
 Group: HAM Radio
 Source: %{name}-%{version}.tar.bz2
 BuildRequires: gtkmm24-devel gconfmm26-devel libao-devel gcc-c++
-URL: http://gtkmmorse.nongnu.org/
+URL: https://gtkmmorse.nongnu.org/
 
 %description
 GtkMMorse is a morse code learning tool released under GPL, which provides two

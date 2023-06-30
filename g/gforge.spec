@@ -6,8 +6,8 @@ Version:	4.5.19
 Release:	1
 License:	GPL
 Group:		System/Servers
-URL:		http://www.gforge.org/
-Source0:	http://gforge.org/frs/download.php/103/%{name}-%{version}.tar.bz2
+URL:		https://www.gforge.org/
+Source0:	https://gforge.org/frs/download.php/103/%{name}-%{version}.tar.bz2
 Source1:	gforge-lib-jpgraph-1.5.2.tar.bz2
 Source2:	html_docs.tar.bz2
 Source10:	sample-apache.vhost.in.bz2

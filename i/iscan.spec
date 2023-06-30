@@ -8,9 +8,9 @@ Release:        1.170
 Summary:        EPSON Image Scan! front-end for scanners and all-in-ones
 License:        GPL-2.0 and AVASYSPL
 Group:          Hardware/Scanner
-Url:            http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
-Source0:        http://support.epson.net/linux/src/scanner/iscan/%{name}_%{version}-2.tar.gz
-Source1:        http://support.epson.net/linux/src/scanner/iscan/iscan-data_%{version_iscan_data}-2.tar.gz
+Url:            https://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+Source0:        https://support.epson.net/linux/src/scanner/iscan/%{name}_%{version}-2.tar.gz
+Source1:        https://support.epson.net/linux/src/scanner/iscan/iscan-data_%{version_iscan_data}-2.tar.gz
 Source2:        epkowa.conf
 # PATCH-FIX-UPSTREAM libpng15.patch (export from arch) -- Build iscan against libpng15 by giovanni
 Patch0:         libpng15.patch

@@ -4,13 +4,13 @@ Summary:	Construction tool
 Name:		aap
 Version:	1.094
 Release:	4.1
-Source0:	http://belnet.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.zip
+Source0:	https://belnet.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.zip
 License:	GPLv2
 Group:		Development/Other
 BuildArch:	noarch
 BuildRequires:	python2-devel
 Requires:	python2
-URL:		http://www.a-a-p.org/
+URL:		https://www.a-a-p.org/
 Provides:	a-a-p
 
 %description

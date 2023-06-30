@@ -5,13 +5,13 @@ Name:           modblackmoon-steelking-cursor-theme
 Version:        1.0
 Release:        2.1
 License:        GPLv2+
-URL:            http://xfce-look.org/content/show.php/ModBlackmoon-SteelKing?content=106338
+URL:            https://xfce-look.org/content/show.php/ModBlackmoon-SteelKing?content=106338
 Group:          User Interface/Desktops
 Source0:        106338-ModBlackmoon-SteelKing.tar.gz
 BuildArch:      noarch
 
 %description
-MB-SteelKing By ModBlackmoon http://users.wincustomize.com/2501323/
+MB-SteelKing By ModBlackmoon https://users.wincustomize.com/2501323/
 MB-SteelKing X11 Mouse theme converted with sd2xc-2.5.pl and refined with GIMP+xmc plugin.
 
 %prep

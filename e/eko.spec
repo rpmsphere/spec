@@ -6,7 +6,7 @@ Release:        1
 Summary:        Simple sound editor
 License:        GPL-3.0
 Group:          Productivity/Multimedia/Sound/Editors and Convertors
-URL:            http://semiletov.org/eko/#about
+URL:            https://semiletov.org/eko/#about
 Source0:        semiletov.org/eko/dloads/%{name}-%{version}.tar.gz
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig

@@ -6,8 +6,8 @@ Summary: Astronomical Data Visualization Application
 Release: 12.1
 License: GPLv2+
 Group: Applications/Engineering
-URL: http://hea-www.harvard.edu/RD/ds9/
-Source: http://hea-www.harvard.edu/saord/download/ds9/source/ds9.%{version}.tar.gz
+URL: https://hea-www.harvard.edu/RD/ds9/
+Source: https://hea-www.harvard.edu/saord/download/ds9/source/ds9.%{version}.tar.gz
 Source1: ds9.desktop
 Source2: ds9.png
 Source3: ds9.conf

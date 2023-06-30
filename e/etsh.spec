@@ -6,7 +6,7 @@ Version: 5.4.0
 Release: 1
 Group: System Environment/Shells
 License: various opensource
-URL: http://etsh.nl/
+URL: https://etsh.nl/
 Source0: https://etsh.nl/src/%{name}_%{version}/%{name}-%{version}.tar.gz
 
 %description

@@ -5,9 +5,9 @@ Version:	0.8.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://belnet.dl.sourceforge.net/sourceforge/knocker/%{name}-%{version}.tar.gz
+Source0:	https://belnet.dl.sourceforge.net/sourceforge/knocker/%{name}-%{version}.tar.gz
 Source1:	%{name}.png
-URL:		http://knocker.sourceforge.net/
+URL:		https://knocker.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 

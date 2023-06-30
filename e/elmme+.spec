@@ -13,8 +13,8 @@ Summary: Text-based mailreader supporting MIME, GPG, PGP
 Name: elmme+
 Version: %{versionbase}.%{minor}
 Release: 1
-URL: http://www.elmme-mailer.org/elm-ME+2.5.html
-Source0: http://elmme-mailer.org/elm-ME+2.5/src/%{_name}%{ver_full0}.tar.gz
+URL: https://www.elmme-mailer.org/elm-ME+2.5.html
+Source0: https://elmme-mailer.org/elm-ME+2.5/src/%{_name}%{ver_full0}.tar.gz
 License: The Elm(tm) Mail System General Public License
 Group: Applications/Communications
 Docdir: %{fix_prefix}/doc

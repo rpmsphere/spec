@@ -3,7 +3,7 @@ Version:	svn1011
 Release:	12.1
 License:	GPL-2.0+	
 Summary:	A mindmap tool with a focus on presentations
-URL:		http://trac.geiseri.com/wiki/FloMain
+URL:		https://trac.geiseri.com/wiki/FloMain
 Group:		Productivity/Office/Organizers
 Source:		%{name}-%{version}.tar.bz2
 Patch1:		%{name}-%{version}-hunspell-path.patch
@@ -14,7 +14,6 @@ BuildRequires:	hunspell-devel
 BuildRequires:	doxygen
 BuildRequires:	pkgconfig
 BuildRequires:	desktop-file-utils
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Flo is a multi-platform mind mapping program with a focus on presentations.
@@ -35,7 +34,6 @@ rm -f -r $RPM_BUILD_ROOT
 %makeinstall INSTALL_ROOT=$RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc TODO AUTHORS
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop

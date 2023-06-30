@@ -4,7 +4,7 @@ Group: Applications/Productivity
 Summary: Templates from Gold-Penguin for Impress 
 Version: 2008
 Release: 1
-URL: http://taiwan-linux.tca.org.tw/GP-prize/
+URL: https://taiwan-linux.tca.org.tw/GP-prize/
 Source: %{name}.zip
 BuildArch: noarch
 Requires: libreoffice-impress

@@ -4,8 +4,8 @@ Release:        1
 Summary:        Network Manager for LXDE
 Group:          Applications/System
 License:        GPL
-URL:            http://sourceforge.net/project/showfiles.php?group_id=180858
-Source:         http://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
+URL:            https://sourceforge.net/project/showfiles.php?group_id=180858
+Source:         https://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
 
 %description
 LXNM is a fast, lightweight, stand-alone network manager.

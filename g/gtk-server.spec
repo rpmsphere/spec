@@ -5,8 +5,8 @@ Summary: Interpreted GUI Programming
 Name: gtk-server
 Version: 2.4.3
 Release: 27.1
-Source0: http://www.gtk-server.org/stable/%{name}-%{version}.tar.gz
-URL: http://www.gtk-server.org/
+Source0: https://www.gtk-server.org/stable/%{name}-%{version}.tar.gz
+URL: https://www.gtk-server.org/
 License: GPL
 Group: Development/Tools
 BuildRequires: libffi-devel

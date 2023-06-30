@@ -6,8 +6,8 @@ Release:    	11.1
 Summary:    	Beesoft IDE
 License:    	GPLv2+
 Group:      	File tools
-URL:        	http://www.beesoft.org/index.php?id=bsc
-Source:     	http://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
+URL:        	https://www.beesoft.org/index.php?id=bsc
+Source:     	https://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
 BuildRequires:	qt4-devel
 BuildRequires:	ghostscript-core ImageMagick
 

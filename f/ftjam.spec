@@ -5,8 +5,8 @@ Version:       2.5.2
 Release:       4.1
 Summary:       A small build tool that can be used as a replacement for Make
 Group:         Applications/Development
-URL:           http://freetype.fis.uniroma2.it/jam/index.html
-Source:        http://switch.dl.sourceforge.net/sourceforge/freetype/ftjam-%{version}.tar.bz2
+URL:           https://freetype.fis.uniroma2.it/jam/index.html
+Source:        https://switch.dl.sourceforge.net/sourceforge/freetype/ftjam-%{version}.tar.bz2
 License:       GPL
 BuildRequires: byacc
 Provides:      jam

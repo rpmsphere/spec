@@ -7,7 +7,7 @@ Release:	15.1
 License:	GPLv3+
 Group:		Applications/Multimedia
 Source0:	%{name}-%{version}.tar.gz
-URL:		http://abcmusiex.sourceforge.net
+URL:		https://abcmusiex.sourceforge.net
 BuildRequires:	gtk2-devel help2man libconfig-devel
 Requires:	abcMIDI timidity++
 

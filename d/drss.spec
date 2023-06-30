@@ -6,7 +6,7 @@ Release: 14.1
 Summary: RSS/Atom reader
 License: GPLv3
 Group:   Applications/Productivity
-URL:     http://drss.sourceforge.net/
+URL:     https://drss.sourceforge.net/
 Source: %{name}-%{version}.tar.gz
 Source2: %{name}.desktop
 BuildRequires:  libpng-devel

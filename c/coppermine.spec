@@ -10,10 +10,10 @@ Release:        5.1
 %define	apache_libexecdir	%(%{apxs} -q LIBEXECDIR)
 %define	apache_sysconfdir	%(%{apxs} -q SYSCONFDIR)
 %define coppermine_dir /var/www/%{name}
-URL:            http://coppermine-gallery.net/
+URL:            https://coppermine-gallery.net/
 Summary:        Multi-purpose fully-featured and integrated web picture gallery
 License:        GPLv2+
-Source0:        http://sourceforge.net/projects/coppermine/files/Coppermine/1.5.x/cpg%{version}.zip
+Source0:        https://sourceforge.net/projects/coppermine/files/Coppermine/1.5.x/cpg%{version}.zip
 Source1:        %{name}.conf.default
 Source2:        %{name}.conf.vhost
 Source3:        %{name}.conf.nonsuse

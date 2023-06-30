@@ -5,13 +5,13 @@ Version: 1.8
 Release: 19.2
 License: GPLv2+
 Group: Sound
-URL: http://projects.gnome.org/gnomeradio/
-Source0: http://www.wh-hms.uni-ulm.de/~mfcn/gnomeradio/packages/%{name}-%{version}.tar.gz
+URL: https://projects.gnome.org/gnomeradio/
+Source0: https://www.wh-hms.uni-ulm.de/~mfcn/gnomeradio/packages/%{name}-%{version}.tar.gz
 Source1: gnomeradio.sh
 Patch0: %{name}-v4l2.patch
 Patch1: %{name}-ld.patch
 Patch2: hardening-format-security.diff
-# http://git.gnome.org/browse/gnomeradio/commit/?id=7694c70f99731724dad64444484d070ff760db89
+# https://git.gnome.org/browse/gnomeradio/commit/?id=7694c70f99731724dad64444484d070ff760db89
 Patch3: %{name}-crash.patch
 Patch4: %{name}-gnome-3.0.patch
 Patch5: %{name}-gtk.patch

@@ -4,8 +4,8 @@ Release: 8.1
 Summary: Framebuffer getty program
 License: GPLv2+
 Group: System/Base
-URL: http://projects.meuh.org/fbgetty
-Source0: http://projects.meuh.org/fbgetty/downloads/fbgetty-%version.tar.bz2
+URL: https://projects.meuh.org/fbgetty
+Source0: https://projects.meuh.org/fbgetty/downloads/fbgetty-%version.tar.bz2
 Patch0: fbgetty-0.1.69-login_prompt.patch
 Patch1: fbgetty-info.patch
 Patch2: fbgetty-0.1.698-stddef.patch

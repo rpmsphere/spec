@@ -2,11 +2,11 @@ Name:               likwid
 Version:            2.1
 Release:            6.1
 Summary:            High Performance Multi-Threading Support Tools
-# http://likwid.googlecode.com/files/likwid-%{version}.tar.gz
+# https://likwid.googlecode.com/files/likwid-%{version}.tar.gz
 Source:             likwid-%{version}.tar.bz2
 Patch1:             likwid-lib.patch
 Patch2:             likwid-optflags.patch
-URL:                http://code.google.com/p/likwid/
+URL:                https://code.google.com/p/likwid/
 Group:              System/Base
 License:            GNU General Public License version 2 or later (GPL v2 or later)
 BuildRequires:      gcc make glibc-devel

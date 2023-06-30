@@ -4,11 +4,11 @@ Name:               fireflies
 Version:            2.07
 Release:            24.1
 Summary:            Slick OpenGL Screensaver
-# http://somewhere.fscked.org/proj/fireflies/files/fireflies-%{version}.tar.gz
+# https://somewhere.fscked.org/proj/fireflies/files/fireflies-%{version}.tar.gz
 Source:             fireflies-%{version}.tar.bz2
 Patch1:             fireflies-gcc4.patch
 Patch2:             fireflies-makefile.patch
-URL:                http://somewhere.fscked.org/proj/fireflies/
+URL:                https://somewhere.fscked.org/proj/fireflies/
 Group:              Amusements/Toys/Screensavers
 License:            GPLv2+
 BuildRequires:	    libpng-devel

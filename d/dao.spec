@@ -8,7 +8,7 @@ Release: 1
 License: MIT
 Group: Development/Languages
 Source: https://github.com/daokoder/dao/archive/master.zip#/%{name}-master.zip
-URL: http://daoscript.org/
+URL: https://daoscript.org/
 
 %description
 Dao is a lightweight and optionally typed programming language

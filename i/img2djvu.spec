@@ -3,12 +3,11 @@ Version:        1.14
 Release:        2.1
 License:        Public Domain
 Summary:        Single-pass DjVu Encoder Based on DjVu Libre and ImageMagick
-URL:            http://github.com/ashipunov/img2djvu
+URL:            https://github.com/ashipunov/img2djvu
 Group:          Productivity/Graphics/Other
 Source0:        %{name}-%{version}.tar.bz2
 Requires:       ImageMagick
 Requires:       djvulibre
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
 
 %description
@@ -25,7 +24,6 @@ optionally also minidjvu and ocrodjvu plus Cuneiform or Tesseract.
 install -Dm 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %files
-%defattr(-,root,root,-)
 %doc NEWS README TODO
 %{_bindir}/%{name}
 

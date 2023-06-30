@@ -8,9 +8,9 @@ BuildRequires: SDL-devel gcc-c++ mesa-libGL-devel
 BuildRequires: nasm libtool
 Version:      0.102.0.1
 Summary:      A port of the MESS
-Source:	      http://prdownloads.sourceforge.net/advancemame/%name-%version.tar.gz
+Source:	      https://prdownloads.sourceforge.net/advancemame/%name-%version.tar.gz
 Patch:        fix-overflow.patch
-URL: http://advancemame.sourceforge.net/readme.html
+URL: https://advancemame.sourceforge.net/readme.html
 
 %description
 AdvanceMESS is an unofficial MESS version with an advanced video support for

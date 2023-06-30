@@ -4,8 +4,8 @@ Version:       2.6
 Release:       14.1
 Summary:       A tool to generate videoDVD 
 Group:         Graphical Desktop/Applications/Multimedia
-URL:           http://www.kde-apps.org/content/show.php/ManDVD?content=83906
-Source:        http://www.grommit.se/mandvd/mandvd-%{version}-0.fc12.tar.gz
+URL:           https://www.kde-apps.org/content/show.php/ManDVD?content=83906
+Source:        https://www.grommit.se/mandvd/mandvd-%{version}-0.fc12.tar.gz
 Patch0:        mandvd-2.5-desktop.patch
 License:       GPL
 Requires:      dvd-slideshow

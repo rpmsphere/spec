@@ -8,12 +8,12 @@ Summary: Paint annotations on top of the X screen
 Name: %{name}
 Version: 0.%{cvs}
 Release: %{release}
-Source0: http://www.home.unix-ag.org/simon/gromit/%{name}-%{cvs}.tar.bz2
+Source0: https://www.home.unix-ag.org/simon/gromit/%{name}-%{cvs}.tar.bz2
 Source1: %{name}.desktop
 Patch0: gromit_20041213-4.diff.gz
 License: GPL
 Group: System/X11
-URL: http://www.home.unix-ag.org/simon/gromit/
+URL: https://www.home.unix-ag.org/simon/gromit/
 BuildRequires: gtk2-devel
 
 %description

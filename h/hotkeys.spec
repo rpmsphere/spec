@@ -4,8 +4,8 @@ Version:	0.5.7.1
 Release:	32.1
 License:	GPL
 Group:		System/Kernel and hardware
-URL:		http://ypwong.org/hotkeys/
-Source0:	http://alioth.debian.org/projects/%{name}/%{name}_%{version}.tar.bz2
+URL:		https://ypwong.org/hotkeys/
+Source0:	https://alioth.debian.org/projects/%{name}/%{name}_%{version}.tar.bz2
 Source2:	hotkeys-defs.zip
 Source1:	%{name}.init
 Patch1:		hotkeys-0.5.7.1_mutefix.patch
@@ -20,7 +20,6 @@ BuildRequires:	gtk2-devel
 BuildRequires:	gettext-devel
 BuildRequires:	libxkbfile-devel
 BuildRequires:	libXmu-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Patch5: %{name}_%{version}.1-shadow.patch
 Patch0: %{name}_%{version}.1-gohome.patch
 
@@ -73,7 +72,7 @@ setkeycodes 0x74 122
 setkeycodes 0x75 123
 
 and use the samsungX10.def file.
-See http://www.samsungpc.com/products/x10_x10plus/x10.htm if your are not sure this is
+See https://www.samsungpc.com/products/x10_x10plus/x10.htm if your are not sure this is
 yours.
 EOF
 
@@ -95,7 +94,6 @@ chmod 644 AUTHORS BUGS COPYING INSTALL TODO def/sample.xml
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
 %doc AUTHORS BUGS COPYING INSTALL TODO def/sample.xml README.mdk
 %{_bindir}/%{name}
 %{_datadir}/%{name}

@@ -3,9 +3,9 @@ Version:   1.0.2
 Release:   3.1
 Summary:   A program to extract parts from multivoice ABC files
 License:   GPL
-URL:       http://abcplus.sourceforge.net
+URL:       https://abcplus.sourceforge.net
 Group:     Applications/File
-Source:    http://abcplus.sourceforge.net/%{name}-%{version}.tar.gz
+Source:    https://abcplus.sourceforge.net/%{name}-%{version}.tar.gz
 
 %description
 abc2prt is a simple program to extract parts from multivoice ABC music files.

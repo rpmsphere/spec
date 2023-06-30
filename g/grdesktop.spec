@@ -8,7 +8,7 @@ Source0: %{name}-%{version}.tar.bz2
 Patch0: grdesktop-0.23-desktopentry.patch
 Patch1: grdesktop-0.23-format-strings.patch
 Patch2: grdesktop-0.23-fix-desktop.patch
-URL: http://www.nongnu.org/grdesktop/
+URL: https://www.nongnu.org/grdesktop/
 Requires: rdesktop
 BuildRequires: libgnomeui-devel
 BuildRequires: ghostscript-core ImageMagick

@@ -6,7 +6,7 @@ Version:        2.99
 Release:        2.1
 License:        GPL2+
 Group:          User Interface/Desktops
-URL:            http://gnome-look.org/content/show.php/Dalisha?content=166286
+URL:            https://gnome-look.org/content/show.php/Dalisha?content=166286
 Source0:        %{theme_name}_2_99.tar.gz
 BuildArch:      noarch
 

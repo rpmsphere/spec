@@ -6,7 +6,7 @@ Release: 6.1
 Summary: A Qt4/X11 Desktop/Window Manager
 Group: Graphical desktop/Other
 License: GPL
-URL: http://www.antico.netsons.org/
+URL: https://www.antico.netsons.org/
 Source0: %name-%version.tar
 Patch0: antico-0.2-alt-DSO.patch
 BuildRequires: gcc-c++ libX11-devel qt4-devel libXext-devel

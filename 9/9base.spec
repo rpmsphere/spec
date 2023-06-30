@@ -6,8 +6,8 @@ Version: 6
 License: MIT
 Release: 11.1
 Group: System/Base
-URL: http://tools.suckless.org/9base
-Source: http://dl.suckless.org/tools/%{name}-%{version}.tar.gz
+URL: https://tools.suckless.org/9base
+Source: https://dl.suckless.org/tools/%{name}-%{version}.tar.gz
 BuildRequires: glibc-static
 
 %description

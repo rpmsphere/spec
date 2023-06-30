@@ -6,7 +6,7 @@ Version:	1.1
 Release:	2.1
 License:	MIT
 Source0:	https://bitbucket.org/sortsmill/sortsmill-fonts/downloads/fanwood-1.1.zip
-URL:		http://crudfactory.com/font/show/fanwood
+URL:		https://crudfactory.com/font/show/fanwood
 BuildArch:	noarch
 BuildRequires:	fontpackages-devel
 Requires:	fontpackages-filesystem

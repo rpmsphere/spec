@@ -4,7 +4,7 @@ Release:	10.1
 Summary:	Automatic color correction of photos
 Group:		Applications/Multimedia		
 License:	GPLv3+	
-URL:		http://log69.com/aaphoto_en.html		
+URL:		https://log69.com/aaphoto_en.html		
 Source0:	https://github.com/log69/%{name}/archive/v%{version}.tar.gz
 BuildRequires:	jasper-devel, libpng-devel
 

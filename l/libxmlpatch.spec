@@ -2,12 +2,12 @@
 
 Name:         libxmlpatch
 Summary:      An XML Patch library
-URL:          http://xmlpatch.sourceforge.net/
+URL:          https://xmlpatch.sourceforge.net/
 Group:        XML
 License:      LGPL
 Version:      0.4.0
 Release:      10.1
-Source0:      http://sourceforge.net/projects/xmlpatch/files/xmlpatch/%{version}/%{name}_%{version}.tar.gz
+Source0:      https://sourceforge.net/projects/xmlpatch/files/xmlpatch/%{version}/%{name}_%{version}.tar.gz
 BuildRequires: glib2-devel
 BuildRequires: libxml2-devel
 

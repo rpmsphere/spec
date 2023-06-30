@@ -7,7 +7,7 @@ Group:          Amusements/Teaching/Language
 Version:        1.3.1
 Release:        1
 License:        GPL
-URL:            http://jmemorize.org
+URL:            https://jmemorize.org
 BuildArch:      noarch 
 Requires:       java
 BuildRequires:  unzip

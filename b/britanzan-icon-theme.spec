@@ -6,8 +6,8 @@ Version: 3
 Release: 2.1
 License: freeware
 Group: User Interface/Desktops
-URL: http://samantha-wright.deviantart.com/art/British-Library-for-Gnome-285573042
-Source0: http://orig00.deviantart.net/2c83/f/2012/048/9/c/britanzan_by_samantha_wright-d4q0tki.zip
+URL: https://samantha-wright.deviantart.com/art/British-Library-for-Gnome-285573042
+Source0: https://orig00.deviantart.net/2c83/f/2012/048/9/c/britanzan_by_samantha_wright-d4q0tki.zip
 #Source1: 
 BuildArch: noarch
 

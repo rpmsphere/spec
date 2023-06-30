@@ -4,8 +4,8 @@ Release:	1
 Summary:	Common menu for Ezgo
 License:	GPLv2
 Group:		System
-Source:		http://of.openfoundry.org/download_path/ezgomenu/%{version}/%{name}.tgz
-URL:		http://of.openfoundry.org/projects/928
+Source:		https://of.openfoundry.org/download_path/ezgomenu/%{version}/%{name}.tgz
+URL:		https://of.openfoundry.org/projects/928
 Vendor:		ericsun, yurenju
 BuildArch:	noarch
 

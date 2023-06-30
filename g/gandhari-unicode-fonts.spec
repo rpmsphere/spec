@@ -6,8 +6,8 @@ Release:        3.1
 Summary:        A romanization font for writing Gāndhārī in transliteration as well as many other languages
 License:        GPL
 Group:          System/X11/Fonts
-URL:            http://ebmp.org/p_dwnlds.php
-Source:         http://andrewglass.org/downloads/gu5-110_ttf.zip
+URL:            https://ebmp.org/p_dwnlds.php
+Source:         https://andrewglass.org/downloads/gu5-110_ttf.zip
 BuildArch:      noarch
 
 %description

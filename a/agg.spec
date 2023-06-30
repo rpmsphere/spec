@@ -3,9 +3,9 @@ Name:    agg
 Version: 2.5
 Release: 44.1
 Group:   System Environment/Libraries
-URL:     http://www.antigrain.com
+URL:     https://www.antigrain.com
 License: GPLv2+
-#Source0:  http://www.antigrain.com/%{name}-%{version}.tar.gz
+#Source0:  https://www.antigrain.com/%{name}-%{version}.tar.gz
 Source0: %{name}-free-%{version}.tar.gz
 # agg contains gpc.c, 'free for non-commercial use', we cannot ship.
 # We use this script to remove the non-free code before shipping it.
@@ -14,7 +14,6 @@ Source0: %{name}-free-%{version}.tar.gz
 # sh agg-generate-tarball.sh 2.5
 Source1: agg-generate-tarball.sh
 
-Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: automake, libtool, libX11-devel, freetype-devel, SDL-devel
 
 Patch0: agg-2.4-depends.patch
@@ -148,7 +147,7 @@ rm -rf $RPM_BUILD_ROOT
 * Fri Jan 29 2010 Kevin Kofler <Kevin@tigcc.ticalc.org> - 2.5-9
 - also remove include/agg_conv_gpc.h as it also carries a copy of the non-Free
   GPC license (upstream also recommends removing that file under
-  http://www.antigrain.com/license/index.html#toc0005) (#559611)
+  https://www.antigrain.com/license/index.html#toc0005) (#559611)
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5-8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
 * Mon Feb 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5-7

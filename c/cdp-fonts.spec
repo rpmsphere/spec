@@ -9,7 +9,7 @@ License: GFDL1.2 or CC-BY-SA 2.5 TW
 Group: User Interface/X
 BuildArch: noarch
 Source: cdpfonts265.zip
-URL: http://cdp.sinica.edu.tw/
+URL: https://cdp.sinica.edu.tw/
 Requires(post): fontconfig
 
 %description

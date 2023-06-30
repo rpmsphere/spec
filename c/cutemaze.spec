@@ -4,8 +4,8 @@ Release:        1
 Summary:        Top-down maze game
 Group:          Games/Puzzles
 License:        GPLv3+
-URL:            http://gottcode.org/%{name}/
-Source0:        http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
+URL:            https://gottcode.org/%{name}/
+Source0:        https://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Widgets)

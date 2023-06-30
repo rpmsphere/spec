@@ -1,25 +1,20 @@
 %undefine _debugsource_packages
 
-Name:           libgnomeuimm26
-Version:        2.28.0
-Release:        13.4
+Name:           libgnomemm26
+Version:        2.30.0
+Release:        9.4
 Summary:        C++ interface for Gnome libs (a GUI library for X)
 Group:          System Environment/Libraries
 License:        LGPLv2+
-URL:            http://www.gtkmm.org/
-Source0:        http://ftp.gnome.org/pub/GNOME/sources/libgnomeuimm/2.28/libgnomeuimm-%{version}.tar.bz2
+URL:            https://www.gtkmm.org/
+Source0:        https://ftp.gnome.org/pub/GNOME/sources/libgnomemm/2.30/libgnomemm-%{version}.tar.gz
 Requires(post):   /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 BuildRequires:  libpng-devel
-BuildRequires:  libgnomeui-devel
-BuildRequires:  libgnomemm26-devel
-BuildRequires:  libgnomecanvasmm26-devel
-BuildRequires:  gconfmm26-devel
-BuildRequires:  libglademm24-devel
-BuildRequires:  gnome-vfsmm26-devel
+BuildRequires:  gtkmm24-devel
+BuildRequires:  libgnome-devel
 BuildRequires:  sane-backends-devel
-BuildRequires:  gcc-c++
-BuildRequires:  w3m udisks2
+BuildRequires:  gcc-c++ udisks2
 
 %description
 This package provides a C++ interface for GnomeUI. It is a subpackage
@@ -28,15 +23,11 @@ programmers to create Gnome GUIs with GTK+'s flexible object-oriented
 framework.
 
 %package devel
-Summary:        Headers for developing programs that will use Gnome--
+Summary:        Headers for developing programs that will use Gnome--.
 Group:          Development/Libraries
 Requires:       %{name} = %{version}-%{release}
-Requires:       libgnomeui-devel
-Requires:       libgnomemm26-devel
-Requires:       libgnomecanvasmm26-devel
-Requires:       gconfmm26-devel
-Requires:       libglademm24-devel
-Requires:       gnome-vfsmm26-devel
+Requires:       gtkmm24-devel
+Requires:       libgnome-devel
 
 %description devel
 This package contains the headers that programmers will need to develop
@@ -44,10 +35,10 @@ applications which will use Gnome--, part of Gtk-- the C++ interface to
 the GTK+ (the Gimp ToolKit) GUI library.
 
 %prep
-%setup -q -n libgnomeuimm-%{version}
+%setup -q -n libgnomemm-%{version}
 
 %build
-export CXXFLAGS="-std=gnu++11 -fPIC"
+export CXXFLAGS="-std=gnu++11"
 %configure --disable-static --enable-docs
 make %{?_smp_mflags}
 
@@ -70,13 +61,14 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*.so.*
 
 %files devel
-%{_includedir}/*
+%doc %{_datadir}/doc/*
+%{_includedir}/libgnomemm-2.6
 %{_libdir}/*.so
-%{_libdir}/libgnomeuimm-2.6
+%{_libdir}/libgnomemm-2.6
 %{_libdir}/pkgconfig/*.pc
 
 %changelog
-* Fri Nov 13 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.28.0
+* Fri Nov 13 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 2.30.0
 - Rebuilt for Fedora
 * Tue Feb 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.28.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
@@ -90,41 +82,48 @@ rm -rf $RPM_BUILD_ROOT
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
 * Wed Sep 24 2008 Denis Leroy <denis@poolshark.org> - 2.24.0-1
 - Update to upstream 2.24.0
-* Wed Mar 12 2008 Denis Leroy <denis@poolshark.org> - 2.22.0-1
-- Update to 2.22.0
-* Mon Feb 11 2008 Denis Leroy <denis@poolshark.org> - 2.20.2-1
-- Update to 2.20.2, more gcc 4.3 fixes
-* Tue Jan 29 2008 Denis Leroy <denis@poolshark.org> - 2.20.1-1
-- Update to upstream 2.20.1, gcc 4.3 fixes
-- BR versions update
-* Fri Sep 21 2007 Denis Leroy <denis@poolshark.org> - 2.20.0-1
-- Update to new upstream stable 2.20
+* Wed Mar 12 2008 Denis Leroy <denis@dedibox.albator.org> - 2.22.0-1
+- Update to upstream 2.22.0
+* Mon Feb 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.20.0-2
+- Autorebuild for GCC 4.3
+* Thu Sep 20 2007 Denis Leroy <denis@poolshark.org> - 2.20.0-1
+- Update to new stable branch 2.20
 * Thu Mar 15 2007 Denis Leroy <denis@poolshark.org> - 2.18.0-1
-- Update to Gnome 2.18, to follow libgnomeui version
-* Mon Aug 28 2006 Denis Leroy <denis@poolshark.org> - 2.16.0-2
+- Update to Gnome 2.18, to follow libgnome2 version
+* Mon Aug 28 2006 Denis Leroy <denis@poolshark.org> - 2.16.0-3
 - FE6 Rebuild
+* Mon Aug 21 2006 Denis Leroy <denis@poolshark.org> - 2.16.0-2
+- Uploaded source file
 * Mon Aug 21 2006 Denis Leroy <denis@poolshark.org> - 2.16.0-1
 - Update to 2.16.0
 * Thu Mar 23 2006 Denis Leroy <denis@poolshark.org> - 2.14.0-1
 - Update to 2.14.0
-* Tue Feb 28 2006 Denis Leroy <denis@poolshark.org> - 2.12.0-3
-- Rebuild
-* Fri Nov 25 2005 Denis Leroy <denis@poolshark.org> - 2.12.0-2
+* Tue Feb 28 2006 Denis Leroy <denis@poolshark.org> - 2.12.2-1
+- Update to 2.12.2
+* Fri Nov 25 2005 Denis Leroy <denis@poolshark.org> - 2.12.1-1
+- Update to 2.12.1
 - Disabled static libraries
-* Mon Sep 19 2005 Denis Leroy <denis@poolshark.org> - 2.10.0-1
+* Mon Sep 19 2005 Denis Leroy <denis@poolshark.org> - 2.12.0-1
 - Update to 2.12.0
-* Wed Apr 20 2005 Denis Leroy <denis@poolshark.org> - 2.10.0-1
-- Upgrade to 2.10.0. Removed x86_64 patch.
+* Thu Apr 28 2005 Denis Leroy <denis@poolshark.org> - 2.10.0-1
+- Upgrade to 2.10.0; x86_64 patch should no longer be necessary
 * Fri Apr  7 2005 Michael Schwendt <mschwendt[AT]users.sf.net>
 - rebuilt
 * Thu Jan 27 2005 Thorsten Leemhuis <fedora[AT]leemhuis[DOT]info> - 2.6.0-2
 - Add autoreconf patch; fixes build on x86_64
 * Mon Jun 27 2004 Denis Leroy <denis@poolshark.org> - 0:2.6.0-0.fdr.1
 - Upgrade to 2.6.0
-* Sat Nov 1  2003 Michael Koziarski <michael@koziarski.org> - 2.0.0-0.fdr.3
-- Fix overly simplified dependencies
-* Sat Nov 1  2003 Michael Koziarski <michael@koziarski.org> - 2.0.0-0.fdr.2
-- setup -q
-- simplify Dependencies
-* Sat Oct 18 2003 Michael Koziarski <michael@koziarski.org> - 2.0.0-0.fdr.1
-- Initial RPM creation
+* Wed Oct 22 2003 Michael A. Koziarski <michael@koziarski.org> - 2.0.1-0.fdr.5
+- Fix requirements on -devel
+- Fix -devel description
+* Tue Oct 16 2003 Michael A. Koziarski <michael@koziarski.org> - 2.0.1-0.fdr.4
+- Remove Prefix, the package isn't relocatable due to paths in gtkmmproc et.al.
+* Mon Oct 15 2003 Michael A. Koziarski <michael@koziarski.org> - 2.0.1-0.fdr.3
+- Ignore Doxygen documentation, it doesn't build correctly.
+- Fix up prefix
+* Sun Oct 14 2003 Michael A. Koziarski <michael@koziarski.org> - 2.0.1-0.fdr.2
+- Fix BuildRequires and requires.  --enable-docs
+* Sat Oct 13 2003 Michael A. Koziarski <michael@koziarski.org> - 2.0.1-0.fdr.1
+- Import of Dag's package to fedora
+* Sat Mar 29 2003 Dag Wieers <dag@wieers.com> - 1.3.10-0
+- Initial package. (using dar)

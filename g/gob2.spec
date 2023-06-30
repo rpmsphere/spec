@@ -5,7 +5,7 @@ Release:	7
 License:	GPLv2+
 Group:		Development/GNOME and GTK+
 Source0:	https://download.gnome.org/sources/%{name}/%{version}/%{name}-%{version}.tar.xz
-URL:		http://www.jirka.org/gob.html
+URL:		https://www.jirka.org/gob.html
 BuildRequires:	flex
 BuildRequires:	glib2-devel
 

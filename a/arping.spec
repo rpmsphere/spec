@@ -4,8 +4,8 @@ Release:        1
 Summary:        Ethernet Layer 2 ping tool
 Group:          Applications/Internet
 License:        GPLv2+
-URL:            http://www.habets.pp.se/synscan/programs.php?prog=arping
-Source0:        http://www.habets.pp.se/synscan/files/%{name}-%{version}.tar.gz
+URL:            https://www.habets.pp.se/synscan/programs.php?prog=arping
+Source0:        https://www.habets.pp.se/synscan/files/%{name}-%{version}.tar.gz
 BuildRequires:  libpcap-devel
 BuildRequires:  libnet-devel
 

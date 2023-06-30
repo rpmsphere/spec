@@ -2,7 +2,7 @@ Summary: Fortune from traditional chinese
 Name: fortune-zh_TW
 Version: 1.3
 Release: 1
-URL: http://www.freshports.org/chinese/fortunetw
+URL: https://www.freshports.org/chinese/fortunetw
 License: BSD
 Group: Amusements/Games
 Source0: fortune-zh_TW.tar.gz

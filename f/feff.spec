@@ -2,7 +2,7 @@ Name:		feff
 Summary:	Front-end for FFmpeg
 Version:	1.9.1
 Release:	8.1
-URL:		http://dansoft.krasnokamensk.ru/soft.html
+URL:		https://dansoft.krasnokamensk.ru/soft.html
 Source0:	feff_source.tar.gz
 Source1:	feff.desktop
 Source2:	feff.png
@@ -11,7 +11,6 @@ License:	GPL
 Group:		Productivity/Multimedia/Video/Editors and Convertors
 Requires:	ffmpeg
 BuildRequires: gcc-c++ qt4-devel desktop-file-utils
-BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 
 %description
 FeFF is a simple graphical frontend (GUI) for FFmpeg.
@@ -38,7 +37,6 @@ done
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/feff
 %{_datadir}/applications/feff.desktop
 %{_datadir}/pixmaps/feff.png

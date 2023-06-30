@@ -5,9 +5,9 @@ Summary:        A media-rich model, game, and simulation construction kit and au
 Vendor:         Viewpoints Research
 Group:          Development/Languages
 License:        ASL 2.0 and MIT
-URL:            http://squeakland.org/
+URL:            https://squeakland.org/
 BuildArch:      noarch
-Source0:        http://download.sugarlabs.org/sources/sucrose/glucose/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://download.sugarlabs.org/sources/sucrose/glucose/%{name}/%{name}-%{version}.tar.gz
 Source2:        etoys.desktop
 Source3:        etoys.png
 # Fall back on ALSA backend when pulse is not available
@@ -17,7 +17,7 @@ BuildRequires:  gettext
 Requires:       squeak-vm >= 3.10
 Requires:       shared-mime-info
 Source10:       etoys-langpack-zh_TW.zip
-Source11:       http://etoys.squeak.org/svn/trunk/Etoys/fonts/FontSimplifiedChineseEnvironment.sar
+Source11:       https://etoys.squeak.org/svn/trunk/Etoys/fonts/FontSimplifiedChineseEnvironment.sar
 
 %description
 Squeak Etoys was inspired by LOGO, PARC-Smalltalk, Hypercard, and starLOGO. It 
@@ -953,7 +953,7 @@ update-mime-database %{?fedora:-n} %{_datadir}/mime &> /dev/null || :
 - 1667nonPlayerViewer-sw: A few fixes to breathe a little life back into
   the 'Direct Viewer' -- i.e. a Viewer for a non-player object.
 - 1666simpleSwitchMorph-apb: compatibility support for examples in the 
-  book 'Squeak by Example' -- see http://www.iam.unibe.ch/~scg/SBE/
+  book 'Squeak by Example' -- see https://www.iam.unibe.ch/~scg/SBE/
 - 1665displayFix-bf: Release virtual display on shutdown
 
 * Wed Sep 19 2007 Bert Freudenberg <bert@freudenbergs.de>

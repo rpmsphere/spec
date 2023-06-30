@@ -2,11 +2,10 @@ Name: 	 	gournal
 Summary: 	GNOME hardwriting notepad
 Version: 	0.5.1
 Release: 	9.1
-Source:		http://www.adebenham.com/debian/%{name}_%{version}-1.tar.bz2
-URL:		http://www.adebenham.com/old-stuff/gournal/
+Source:		https://www.adebenham.com/debian/%{name}_%{version}-1.tar.bz2
+URL:		https://www.adebenham.com/old-stuff/gournal/
 License:	GPL
 Group:		Applications/Productivity
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 
 %description
@@ -58,7 +57,6 @@ install -Dm644 pixmaps/pencil.png $RPM_BUILD_ROOT/%{_datadir}/pixmaps/%{name}.pn
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc CHANGES README
 %{_bindir}/%{name}
 %{_datadir}/%{name}

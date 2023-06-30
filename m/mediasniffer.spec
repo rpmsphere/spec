@@ -6,7 +6,7 @@ Version: 1.0.0.11
 Release: 11.4
 Group: Applications/Internet
 License: GPL
-URL: http://sourceforge.net/projects/mediasniffer/
+URL: https://sourceforge.net/projects/mediasniffer/
 Source0: %{name}-linux-src-1.0.0.11.tar.bz2
 BuildRequires:  libICE-devel
 BuildRequires:  ORBit2-devel

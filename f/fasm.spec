@@ -9,8 +9,8 @@ Version:	1.73.30
 Release:	1
 License:	distributable
 Group:		Development/Tools
-Source0:	http://flatassembler.net/%{name}-%{version}.tgz
-URL:		http://flatassembler.net/
+Source0:	https://flatassembler.net/%{name}-%{version}.tgz
+URL:		https://flatassembler.net/
 
 %description
 The flat assembler is a fast and efficient self-assembling 80x86

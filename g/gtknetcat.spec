@@ -4,8 +4,8 @@ Version:	0.1
 Release:	12.1
 License:	GPLv2+
 Group:		Graphical desktop/Other
-Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
-URL:		http://lxde.sourceforge.net/
+Source0: 	https://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
+URL:		https://lxde.sourceforge.net/
 Requires:	netcat
 BuildRequires:	gtk2-devel
 BuildRequires:	intltool

@@ -5,8 +5,8 @@ Version:        0.9.6
 Release:        5.1
 Summary:        Celtic knot editor
 License:        GPLv3+
-URL:            http://www.knotdraw.org/
-Source0:        http://sourceforge.net/projects/knotter/files/latest/download/%{name}-%{version}.tar.gz
+URL:            https://www.knotdraw.org/
+Source0:        https://sourceforge.net/projects/knotter/files/latest/download/%{name}-%{version}.tar.gz
 BuildRequires:  qt-devel, qtwebkit-devel
 Requires:       qt, qtwebkit
 Group:          Productivity/Graphics

@@ -6,8 +6,8 @@ Version: 4.5
 Release: 5.1
 Group: Applications/Databases
 License: Artistic License
-URL: http://dbfsak.sourceforge.net/
-Source0: http://sourceforge.net/projects/dbfsak/files/%{name}-%{version}.src.tar.gz
+URL: https://dbfsak.sourceforge.net/
+Source0: https://sourceforge.net/projects/dbfsak/files/%{name}-%{version}.src.tar.gz
 
 %description
 DBFSAK is a command line program designed to extract data from DBF

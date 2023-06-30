@@ -4,8 +4,8 @@ Release:	1
 Summary:	A GTK+-2 Ataxx game
 Group:		Amusements/Games
 License:	GPL
-URL:		http://infector.mangobrain.co.uk/
-Source:		http://infector.mangobrain.co.uk/downloads/%{name}-%{version}.tar.gz
+URL:		https://infector.mangobrain.co.uk/
+Source:		https://infector.mangobrain.co.uk/downloads/%{name}-%{version}.tar.gz
 BuildRequires:	gtk+-devel
 BuildRequires:	gtkmm24-devel
 BuildRequires:	libglademm24-devel

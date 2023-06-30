@@ -8,9 +8,9 @@ Release: 1
 Summary: Baskervald font of the Arkandis Digital Foundry
 Group:     User Interface/X
 License:   GPLv2+ with exceptions
-URL:       http://arkandis.tuxfamily.org/adffonts.html
-Source0:   http://arkandis.tuxfamily.org/fonts/%{archivename}.zip
-Source1:   http://arkandis.tuxfamily.org/docs/Baskervald-Cat.pdf
+URL:       https://arkandis.tuxfamily.org/adffonts.html
+Source0:   https://arkandis.tuxfamily.org/fonts/%{archivename}.zip
+Source1:   https://arkandis.tuxfamily.org/docs/Baskervald-Cat.pdf
 Source2:   %{fontname}.metainfo.xml
 Source11:  %{name}-fontconfig.conf
 BuildArch:     noarch

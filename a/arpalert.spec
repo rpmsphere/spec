@@ -4,8 +4,8 @@ Version:	2.0.12
 Release:	10.1
 License:	GPLv2
 Group:		Monitoring
-URL:		http://www.arpalert.org/
-Source0:	http://www.arpalert.org/src/%{name}-%{version}.tar.gz
+URL:		https://www.arpalert.org/
+Source0:	https://www.arpalert.org/src/%{name}-%{version}.tar.gz
 Source1:	arpalert.service
 Patch0:		arpalert-2.0.9-fix-str-fmt.diff
 BuildRequires:	libpcap-devel

@@ -3,7 +3,7 @@ Version: 0.2.0
 Release: 9.1
 Summary: Facebook messenger client
 License: BSD
-URL: http://github.com/oconnor663/linuxmessenger
+URL: https://github.com/oconnor663/linuxmessenger
 Source0: %{name}-master.zip
 BuildRequires: python3-devel, python3-setuptools, unzip
 Requires: python3, python3-qt4, phonon, python3-sip

@@ -4,7 +4,7 @@ Release:        6.1
 Summary:        Configure and monitor Wireless Access Points
 Group:          Applications/Internet
 License:        GPLv2
-URL:            http://ap-utils.polesye.net/
+URL:            https://ap-utils.polesye.net/
 Source0:        ftp://linux.zhitomir.net/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:  gettext
 BuildRequires:  ncurses-devel

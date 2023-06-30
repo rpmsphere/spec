@@ -5,7 +5,7 @@ Release: 8.1
 License: GPL
 Group: System Environment/Libraries
 Source: ftp://linux.thai.net/pub/ThaiLinux/software/libthai/%{name}-%{version}.tar.gz
-URL: http://linux.thai.net/
+URL: https://linux.thai.net/
 BuildRequires: gtk2-devel
 BuildRequires: autoconf, libtool
 BuildRequires: libthai-devel

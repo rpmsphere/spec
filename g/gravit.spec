@@ -3,8 +3,8 @@ Version:        0.5.1
 Release:        5.1
 Summary:        A Gravity Simulator
 License:        GPL
-URL:            http://gravit.slowchop.com/
-Source0:        http://gravit.slowchop.com/media/downloads/%{name}-%{version}.tar.gz
+URL:            https://gravit.slowchop.com/
+Source0:        https://gravit.slowchop.com/media/downloads/%{name}-%{version}.tar.gz
 BuildRequires:  lua-devel, SDL-devel, SDL_ttf-devel, SDL_image-devel
 
 %description

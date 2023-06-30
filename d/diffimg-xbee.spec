@@ -7,7 +7,7 @@ Version: 2.3.0
 Release: 1
 Group: Applications/Multimedia
 License: GPLv2
-URL: http://sourceforge.net/projects/diffimg/
+URL: https://sourceforge.net/projects/diffimg/
 Source0: https://codeload.github.com/lingo/diffimg-xbee/tar.gz/%{version}-lingo#/diffimg-xbee-%{version}-lingo.tar.gz
 BuildRequires: dos2unix
 BuildRequires: qt4-devel

@@ -3,12 +3,12 @@ Version:   1.3.8.6
 Release:   1
 Summary:   An open source ABC editor for Windows, OSX and Linux
 License:   GPL
-URL:       http://www.nilsliberg.se/ksp/easyabc/
+URL:       https://easyabc.sourceforge.net/
 Group:     Applications/Multimedia
 Requires:  python3-wxpython4-media, python3-pygame, python3-pyparsing
 Requires:  abcm2ps, abcMIDI, nwc2xml
 BuildArch: noarch
-Source:    http://sourceforge.net/projects/easyabc/files/EasyABC/%{version}/EasyABC-%{version}-source.zip
+Source:    https://sourceforge.net/projects/easyabc/files/EasyABC/%{version}/EasyABC-%{version}-source.zip
 
 %description
 EasyABC is an open source ABC editor for Windows, OSX and Linux. It

@@ -6,7 +6,7 @@ Summary:		A space invaders style arcade game
 Summary(zh_TW):	一款太空入侵者類型的大型遊戲
 Group:			Amusements/Games
 License:		BSD License
-URL:			http://microwar.sourceforge.net/
+URL:			https://microwar.sourceforge.net/
 Source0:		MW20rc3-source.zip
 Patch0:			%{_name}-configobj.patch
 Requires:		python2-pygame

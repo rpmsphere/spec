@@ -3,7 +3,7 @@ Group: Games
 Version: 1.2.14
 Release: 4.1
 License: GPL2
-URL: http://www.wolfescience.com/byojeopardy/
+URL: https://www.wolfescience.com/byojeopardy/
 Summary: Creates your own jeopardy games
 Source: %{name}-%{version}.tar.gz
 BuildRequires: libpng-devel

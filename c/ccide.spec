@@ -1,11 +1,11 @@
 Name:         ccide
 Summary:      C-Language Decision Table Code Generator
-URL:          http://ccide.sourceforge.net/
+URL:          https://ccide.sourceforge.net/
 Group:        Development
 License:      GPL
 Version:      0.6.6
 Release:      20101021.1
-Source0:      http://sourceforge.net/projects/ccide/files/%{name}-%{version}.tar.gz
+Source0:      https://sourceforge.net/projects/ccide/files/%{name}-%{version}.tar.gz
 BuildRequires: perl-podlators
 
 %description

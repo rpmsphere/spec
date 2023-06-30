@@ -6,8 +6,8 @@ Version: 1.3.12
 Release: 2.1
 License: GPL
 Group: X11
-URL: http://www.red-bean.com/decklin/aewm/
-Source0: http://www.red-bean.com/decklin/%{name}/%{name}-%{version}.tar.bz2
+URL: https://www.red-bean.com/decklin/aewm/
+Source0: https://www.red-bean.com/decklin/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:  gtk2-devel libX11-devel libXext-devel libXft-devel
 
 %description

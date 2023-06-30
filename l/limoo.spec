@@ -2,7 +2,7 @@
 
 Name:           limoo
 BuildRequires:  cmake qt4-devel exiv2-devel
-URL:            http://getsilicon.org/limoo/
+URL:            https://getsilicon.org/limoo/
 License:        GPLv3
 Group:          Productivity/Graphics/Viewers 
 Summary:        An QML image viewer

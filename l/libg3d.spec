@@ -4,8 +4,8 @@ Release:        6.1
 Summary:        Library for 3D file/object viewer
 Group:          Applications/Engineering
 License:        GPLv2+
-URL:            http://automagically.de/g3dviewer/
-Source0:        http://automagically.de/files/%{name}-%{version}.tar.gz
+URL:            https://automagically.de/g3dviewer/
+Source0:        https://automagically.de/files/%{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 BuildRequires:  gtk-doc
 BuildRequires:  glib2-devel

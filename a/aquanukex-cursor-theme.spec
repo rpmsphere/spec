@@ -5,7 +5,7 @@ Version:		0.2
 Release:		18.1
 Source:			Aqua-NukeX.tar.gz
 BuildArch:		noarch
-URL:			http://www.kde-look.org/content/show.php?content=30238
+URL:			https://www.kde-look.org/content/show.php?content=30238
 Group:			System/X11/Icons
 
 %description

@@ -4,7 +4,7 @@ Version:          0.6.13
 Release:          1
 License:          LGPLv2
 Group:            System Environment/Libraries
-Source:           http://download.gnome.org/sources/libcroco/0.6/%{name}-%{version}.tar.xz
+Source:           https://download.gnome.org/sources/libcroco/0.6/%{name}-%{version}.tar.xz
 #Fedora-specific patch
 Patch0:           libcroco-0.6.1-multilib.patch
 # https://gitlab.gnome.org/GNOME/libcroco/-/merge_requests/5

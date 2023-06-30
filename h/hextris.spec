@@ -10,7 +10,7 @@ License:        MIT
 Group:          Amusements/Games/Puzzle
 Source:         hextris.tar.gz
 Patch:          hextris.dif
-URL:            http://www.hextris.com/blog/
+URL:            https://www.hextris.com/blog/
 BuildRequires:  imake
 BuildRequires:  libX11-devel
 BuildRequires:  libXext-devel

@@ -4,8 +4,8 @@ Release:        3.1
 Summary:        Create Background Slideshow
 Group:          User Interface/X
 License:        GPLv3+
-URL:            http://www.obfuscatepenguin.net/crebs/
-Source0:        http://www.obfuscatepenguin.net/source/crebs/%{name}-%{version}.tar.gz
+URL:            https://www.obfuscatepenguin.net/crebs/
+Source0:        https://www.obfuscatepenguin.net/source/crebs/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 
 %description

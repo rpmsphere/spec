@@ -4,8 +4,8 @@ Version: 0.4.2
 Release: 6.1
 License: GPL
 Group: Development/Other
-URL: http://sourceforge.net/projects/gmanedit2
-Source0: http://sourceforge.net/projects/gmanedit2/files/gmanedit/%{name}-%{version}/%{name}-%{version}.tar.gz
+URL: https://sourceforge.net/projects/gmanedit2
+Source0: https://sourceforge.net/projects/gmanedit2/files/gmanedit/%{name}-%{version}/%{name}-%{version}.tar.gz
 BuildRequires: gtk2-devel
 BuildRequires: zlib-devel
 

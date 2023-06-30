@@ -6,8 +6,8 @@ Version: 0.42
 Release: 7.1
 Group: Applications/Editors
 License: GPL
-URL: http://stoopidsimple.com/lfhex
-Source0: http://stoopidsimple.com/files/%{name}-%{version}.tar.gz
+URL: https://stoopidsimple.com/lfhex
+Source0: https://stoopidsimple.com/files/%{name}-%{version}.tar.gz
 BuildRequires: qt-devel
 
 %description

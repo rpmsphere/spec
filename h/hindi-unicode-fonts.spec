@@ -6,17 +6,17 @@ Release:        7.1
 Summary:        Fonts for Hindi language
 License:        GPL
 Group:          System/X11/Fonts
-URL:            http://fedora-art.org/usermanager/search.php?username=maarizwan&action=contents
-Source0:        http://fedora-art.org/CONTENT/content-files/158726-Sadhguru-1.8.zip
-Source1:        http://fedora-art.org/CONTENT/content-files/16645-Gurumaa-2.04.zip
-Source2:        http://fedora-art.org/CONTENT/content-files/142684-Nithyananda-2.04.zip
+URL:            https://fedora-art.org/usermanager/search.php?username=maarizwan&action=contents
+Source0:        https://fedora-art.org/CONTENT/content-files/158726-Sadhguru-1.8.zip
+Source1:        https://fedora-art.org/CONTENT/content-files/16645-Gurumaa-2.04.zip
+Source2:        https://fedora-art.org/CONTENT/content-files/142684-Nithyananda-2.04.zip
 Source3:        10-hindi-unicode.conf
 BuildArch:      noarch
 
 %description
-http://fedora-art.org/content/show.php/Sadhguru+Hindi+Unicode+Font+-+v1.8?content=158726
-http://fedora-art.org/content/show.php/Gurumaa+Hindi+Unicode+Font+%28GPL%29?content=16645
-http://fedora-art.org/content/show.php/Nithyananda+Hindi+Unicode+Font+%28GPL%29?content=142684
+https://fedora-art.org/content/show.php/Sadhguru+Hindi+Unicode+Font+-+v1.8?content=158726
+https://fedora-art.org/content/show.php/Gurumaa+Hindi+Unicode+Font+%28GPL%29?content=16645
+https://fedora-art.org/content/show.php/Nithyananda+Hindi+Unicode+Font+%28GPL%29?content=142684
 
 %prep
 %setup -q -c -a 1 -a 2

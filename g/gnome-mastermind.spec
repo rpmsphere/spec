@@ -5,7 +5,7 @@ Release: 1
 License: GPL
 Group: Applications/Games
 Source: %{name}-%{version}.tar.bz2
-URL: http://www.autistici.org/gnome-mastermind/
+URL: https://www.autistici.org/gnome-mastermind/
 BuildRequires: pkgconfig >= 02.
 BuildRequires: glib2-devel >= 2.10
 BuildRequires: gtk+-devel >= 1.2.8

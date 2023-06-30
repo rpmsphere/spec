@@ -2,14 +2,13 @@ Name:           downtimed
 Version:        0.4
 Release:        4.1
 Summary:        Downtime Monitoring Daemon
-# http://dist.epipe.com/downtimed/downtimed-%{version}.tar.gz
+# https://dist.epipe.com/downtimed/downtimed-%{version}.tar.gz
 Source:         downtimed-%{version}.tar.bz2
 Source1:        downtimed.init
 Source2:        downtimed.sysconfig
-URL:            http://dist.epipe.com/downtimed/
+URL:            https://dist.epipe.com/downtimed/
 Group:          System/Monitoring
 License:        BSD3c
-BuildRoot:      %{_tmppath}/build-%{name}-%{version}
 BuildRequires:  gcc make glibc-devel
 BuildRequires:  autoconf automake libtool
 
@@ -45,7 +44,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc LICENSE NEWS README
 %{_bindir}/downtimes
 %{_sbindir}/downtimed

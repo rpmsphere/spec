@@ -4,8 +4,8 @@ Version:	1.3.4
 Release:	1
 License:	GPLv2+
 Group:		System/Printing
-Source0:	http://prdownloads.sourceforge.net/gtklp/%{name}-%{version}.src.tar.gz
-URL:		http://gtklp.sourceforge.net/
+Source0:	https://prdownloads.sourceforge.net/gtklp/%{name}-%{version}.src.tar.gz
+URL:		https://gtklp.sourceforge.net/
 Source1:	gtklp.png
 Patch1:		gtklp-1.2.5-mdv-fix-str-fmt.patch
 BuildRequires:	gtk2-devel

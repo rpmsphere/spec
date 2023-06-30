@@ -4,8 +4,8 @@ Release:        2.1
 Summary:        The OpenGL Extension Wrangler Library
 Group:          System Environment/Libraries
 License:        BSD and MIT
-URL:            http://glew.sourceforge.net
-Source0:        http://downloads.sourceforge.net/project/glew/glew/%{version}/glew-%{version}.tgz
+URL:            https://glew.sourceforge.net
+Source0:        https://downloads.sourceforge.net/project/glew/glew/%{version}/glew-%{version}.tgz
 BuildRequires:  libGLU-devel
 
 %description

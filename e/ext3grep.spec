@@ -4,9 +4,9 @@ Release:	9
 Summary:	Investigation and recovery tool for ext3 filesystem
 Group:		Security
 License:	GPLv2+
-URL:		http://code.google.com/p/ext3grep/
-Source:		http://ext3grep.googlecode.com/files/ext3grep-%version.tar.gz
-# Patch for bug 34 http://code.google.com/p/ext3grep/issues/detail?id=34
+URL:		https://code.google.com/p/ext3grep/
+Source:		https://ext3grep.googlecode.com/files/ext3grep-%version.tar.gz
+# Patch for bug 34 https://code.google.com/p/ext3grep/issues/detail?id=34
 # Issue with new ext2fs lib (patch from Debian)
 Patch0:		ext3grep-0.10.2-new-ext2fs.diff
 # From Debian
@@ -26,7 +26,7 @@ cp -f /usr/lib/rpm/redhat/config.* .
 %endif
 
 %build
-# http://code.google.com/p/ext3grep/issues/detail?id=14
+# https://code.google.com/p/ext3grep/issues/detail?id=14
 export CXX=%{_bindir}/g++
 %configure
 make

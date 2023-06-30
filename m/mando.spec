@@ -4,9 +4,9 @@ Name:		mando
 Version:	1.8.2
 Release:	19.1
 Summary:	Interactive Camera-Projector System
-Source0:	http://vision.eng.shu.ac.uk/jan/%{name}_%{version}.orig.tar.gz
-Source1:	videodev.h
-URL:		http://mando.sourceforge.net/
+Source0:	https://vision.eng.shu.ac.uk/jan/%{name}_%{version}.orig.tar.gz
+Source1:	%name.videodev.h
+URL:		https://mando.sourceforge.net/
 Group:		User Interface/X Hardware Support
 License:	GPLv2+
 BuildRequires:  libpng-devel
@@ -23,7 +23,7 @@ the X11 pointer. Point-and-click functionality has also been implemented.
 
 %prep
 %setup -q -c
-cp %{SOURCE1} src
+cp %{SOURCE1} src/videodev.h
 sed -i 's|<linux/videodev.h>|"videodev.h"|' src/image_v4linput.h
 #FIXME
 sed -i 's|retVal \* (Real)( 1.0 / retVal.num_elements() )|retVal|' src/fourier.tcc

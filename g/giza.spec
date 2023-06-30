@@ -4,8 +4,8 @@ Version: 0.9.4
 Release: 8.1
 Group: Applications/Multimedia
 License: GPL
-URL: http://giza.sourceforge.net/
-Source0: http://sourceforge.net/projects/giza/files/%{name}-%{version}.tar.gz
+URL: https://giza.sourceforge.net/
+Source0: https://sourceforge.net/projects/giza/files/%{name}-%{version}.tar.gz
 BuildRequires: gcc-gfortran
 BuildRequires: cairo-devel
 

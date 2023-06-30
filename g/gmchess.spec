@@ -4,8 +4,8 @@ Release:        1
 Summary:	one chinese chess game
 Group:          Amusements/Games
 License:        LGPL
-URL:            http://code.google.com/p/gmchess/
-Source0:        http://gmchess.googlecode.com/files/%{name}-%{version}.tar.bz2
+URL:            https://code.google.com/p/gmchess/
+Source0:        https://gmchess.googlecode.com/files/%{name}-%{version}.tar.bz2
 Source1:	gmchess-0.29.3.zh_TW.po
 BuildRequires:	intltool, gettext
 BuildRequires:  gtkmm24-devel

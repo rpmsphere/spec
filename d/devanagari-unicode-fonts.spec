@@ -6,7 +6,7 @@ Release:        2.1
 Summary:        Twin Devanagari fonts
 License:        GPL
 Group:          System/X11/Fonts
-URL:            http://bombay.indology.info/software/fonts/devanagari/
+URL:            https://bombay.indology.info/software/fonts/devanagari/
 Source0:        %{name}.zip
 BuildArch:      noarch
 

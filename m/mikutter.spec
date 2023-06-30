@@ -4,11 +4,10 @@ Version:  0.2.1.1119
 Release:  4.1
 License:  GPLv3
 Group:    Productivity/Networking/Instant Messenger
-URL:      http://mikutter.d.hachune.net/
-Source0:  http://mikutter.hachune.net/bin/%{name}.%{version}.tar.gz
+URL:      https://mikutter.d.hachune.net/
+Source0:  https://mikutter.hachune.net/bin/%{name}.%{version}.tar.gz
 Source1:  mikutter.desktop
 BuildArch:  noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: ruby
 Requires: ruby-gnome2, rubygem-rcairo
 Requires: rubygem-ruby-hmac, rubygem-openssl-nonblock
@@ -43,7 +42,6 @@ install -D -m644 core/skin/data/icon.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{na
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %doc LICENSE README
 %attr(755,root,root) %{_bindir}/%{name}
 %{_datadir}/%{name}

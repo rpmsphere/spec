@@ -3,11 +3,10 @@ Version:       1.0.3
 Release:       13.1
 Summary:       A C++ library for reading and generating files in the ELF binary format
 Group:         System/Libraries
-URL:           http://elfio.sourceforge.net/
-Source:        http://mesh.dl.sourceforge.net/sourceforge/elfio/ELFIO-%{version}.tar.gz
+URL:           https://elfio.sourceforge.net/
+Source:        https://mesh.dl.sourceforge.net/sourceforge/elfio/ELFIO-%{version}.tar.gz
 License:       LGPL
 BuildRequires: gcc-c++
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 ELFIO is a C++ library for reading and generating files in the ELF binary format.
@@ -63,12 +62,10 @@ rm -rf $RPM_BUILD_ROOT
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root)
 %{_libdir}/libELFIO.so.1
 %doc AUTHORS COPYING ChangeLog README
 
 %files devel
-%defattr(-,root,root)
 %{_bindir}/ELFDump
 %{_libdir}/libELFIO.a
 %{_libdir}/libELFIO.so

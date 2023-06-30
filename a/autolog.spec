@@ -3,7 +3,7 @@ Name:		autolog
 Version:	0.40
 Release:	1
 License:        GPL
-URL:		http://www.cip-bau.uni-hannover.de/~juerges
+URL:		https://www.cip-bau.uni-hannover.de/~juerges
 Group:		Daemons
 Source:		autolog-0.40.tar.gz
 

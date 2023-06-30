@@ -5,8 +5,8 @@ Summary:        A tool for calculation of diffraction patterns for atomistic mod
 BuildRequires:  gcc-c++
 Group:          Applications/Egnineering
 License:        GPLv2+
-URL:            http://www.unipress.waw.pl/debyer/
-Source0:        http://www.unipress.waw.pl/debyer/files/%{name}-%{version}.tar.gz
+URL:            https://www.unipress.waw.pl/debyer/
+Source0:        https://www.unipress.waw.pl/debyer/files/%{name}-%{version}.tar.gz
 
 %description
 Debyer is software for calculation of diffraction patterns and PDFs

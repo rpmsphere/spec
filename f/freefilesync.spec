@@ -7,7 +7,7 @@ Release:	1
 Summary:	A free file sync tool
 Group:		File tools
 License:	GPLv3
-URL:		http://sourceforge.net/projects/freefilesync/
+URL:		https://sourceforge.net/projects/freefilesync/
 Source0:	https://www.freefilesync.org/download/FreeFileSync_%{version}_Source.zip
 Source2:	FreeFileSync.desktop
 Source3:	RealTimeSync.desktop

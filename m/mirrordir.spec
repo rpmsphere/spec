@@ -7,10 +7,10 @@ Release:   16.1
 License: GPL
 Group:     Applications/System          
 Source0:  %name-%{version}.tar.bz2
-URL: http://pkgs.repoforge.org/mirrordir/
+URL: https://pkgs.repoforge.org/mirrordir/
 Patch0: mirrordir-0.10.49-datadir-fix.patch
 Patch1: mirrordir-0.10.49-zlib-1.1.3-zfree.patch
-Source1: tcpd.h
+Source1: %name.tcpd.h
 
 %description
 mirrordir  is  a set of useful utilities for manipulating and mirroring directories. Included is also the
@@ -22,7 +22,7 @@ tions over encrypted secure channels.
 %patch0 -p1
 %patch1 -p1
 sed -i 's|mirrordir $(bindir)|mirrordir $(DESTDIR)$(bindir)|' src/Makefile.*
-cp %{SOURCE1} vfs/
+cp %{SOURCE1} vfs/tcpd.h
 sed -i 's|stderr,m|stderr, "%s", m|' vfs/secure-mcserv.c
 
 %build

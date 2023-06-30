@@ -4,8 +4,8 @@ Release:        6.1
 Summary:        The Laptop Mode Tools
 License:        GPL-2.0+
 Group:          System/Base
-URL:            http://www.samwel.tk/laptop_mode/
-Source:         http://samwel.tk/laptop_mode/tools/downloads/%{name}_%{version}.tar.gz
+URL:            https://www.samwel.tk/laptop_mode/
+Source:         https://samwel.tk/laptop_mode/tools/downloads/%{name}_%{version}.tar.gz
 ##Source1:        laptop-mode-tools.pm-utils-hook
 Source2:        README.%{name}
 ##Requires:  pm-utils

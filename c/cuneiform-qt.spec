@@ -4,7 +4,7 @@ Release: 	4.1
 Summary:	GUI frontend for Cuneiform OCR
 License:	GPLv3+
 Group:		Productivity/Graphics/Other
-URL:		http://www.altlinux.org/Cuneiform-Qt
+URL:		https://www.altlinux.org/Cuneiform-Qt
 Vendor:		Andrey Cherepanov <cas@altlinux.org>
 Source:		%name-%version.tar.bz2
 BuildRequires:	gcc-c++, pkgconfig, pkgconfig(QtGui)
@@ -33,7 +33,6 @@ install -D -m 644 icons/%{name}.png $RPM_BUILD_ROOT{_datadir}/pixmaps/%{name}.pn
 popd
 
 %files
-%defattr(-,root,root,-)
 %doc %{name}/AUTHORS %{name}/README %{name}/TODO
 %{_bindir}/%{name}
 %{_datadir}/apps

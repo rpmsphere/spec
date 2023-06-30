@@ -4,13 +4,12 @@ Release:        11.1
 Summary:        Fast Brainfuck interpreter
 License:        SUSE-Public-Domain
 Group:          Development/Languages/Other
-URL:            http://mazonka.com/brainf/
+URL:            https://mazonka.com/brainf/
 Source0:        %{name}.c
 # bnc#761551
 Source1:        license-clarification.txt
 # PATCH-FEATURE-OPENSUSE bff4-arg.patch adam@mizerski.pl -- add option to pass input file as command line argument
 Patch0:         %{name}-arg.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Optimizing brainfuck implementation of dialect based on Daniel's dbfi
@@ -32,7 +31,6 @@ gcc %{name}.c -o %{name} %{optflags}
 install -D -m 755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %doc license-clarification.txt
 

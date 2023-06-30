@@ -4,8 +4,8 @@ Release:        1
 Summary:        Fireball 12 is an arcade game project.
 Group:          Amusements/Games
 License:        LGPL
-URL:            http://sourceforge.net/projects/fireball12/
-Source0:        http://nchc.dl.sourceforge.net/sourceforge/fireball12/Fire12-%{version}.tar.gz
+URL:            https://sourceforge.net/projects/fireball12/
+Source0:        https://nchc.dl.sourceforge.net/sourceforge/fireball12/Fire12-%{version}.tar.gz
 Requires:	pygame, alsa-lib
 BuildArch:	noarch
 

@@ -4,7 +4,7 @@ Version: 0.9.2
 Release: 1
 Group: Development/Languages
 License: GPLv3+
-Source0: http://download.savannah.nongnu.org/releases/%{name}/%{name}-%{version}.tar.gz
+Source0: https://download.savannah.nongnu.org/releases/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: gperf
 BuildRequires: perl-interpreter
 

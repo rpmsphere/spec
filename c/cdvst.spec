@@ -2,12 +2,12 @@ Summary:	Certain Death via Space Things
 Name:		cdvst
 Version:	0.18
 Release:	20.4
-Source0:	http://kokido.sourceforge.net/%{name}-.18.tar.bz2
+Source0:	https://kokido.sourceforge.net/%{name}-.18.tar.bz2
 Source1:	%{name}-icons.tar.bz2
 Patch0:		%{name}-optflags.patch
 Patch1:		%{name}-shared.patch
 License:	GPL
-URL:		http://kokido.sourceforge.net/cdvst.html
+URL:		https://kokido.sourceforge.net/cdvst.html
 Group:		Games/Arcade
 BuildRequires:	SDL_mixer-devel SDL_image-devel
 BuildRequires:  desktop-file-utils

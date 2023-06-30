@@ -4,8 +4,8 @@ Release:        1
 Summary:        A simple tool to view and compare fonts installed on your system
 Group:          Applications/System
 License:        GPLv2+
-URL:            http://uwstopia.nl/geek/projects/gnome-specimen/
-Source0:        http://uwstopia.nl/geek/projects/gnome-specimen/releases/%{name}-%{version}.tar.gz
+URL:            https://uwstopia.nl/geek/projects/gnome-specimen/
+Source0:        https://uwstopia.nl/geek/projects/gnome-specimen/releases/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  GConf2-devel, gnome-python2, pygtk2-libglade, perl-XML-Parser, pkgconfig, gettext, desktop-file-utils
 Requires(pre): GConf2

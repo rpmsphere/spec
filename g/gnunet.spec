@@ -3,7 +3,7 @@ Version:	0.19.1
 Release:	1
 License:	GPLv2+
 Summary:	Secure and anonymous peer-to-peer file sharing
-URL:		http://gnunet.org/
+URL:		https://gnunet.org/
 Source0:	ftp://ftp.gnu.org/gnu/gnunet/%{name}-%{version}.tar.gz
 Source1:	gnunetd.conf
 Source2:	init_gnunetd

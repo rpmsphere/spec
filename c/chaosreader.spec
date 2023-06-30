@@ -3,8 +3,8 @@ Version:       0.94
 Release:       4.1
 Summary:       An open source tool to trace TCP/UDP/... sessions and fetch application data
 Group:         Network/Monitoring
-URL:           http://www.brendangregg.com/chaosreader.html
-Source:        http://downloads.sourceforge.net/chaosreader/chaosreader%{version}
+URL:           https://www.brendangregg.com/chaosreader.html
+Source:        https://downloads.sourceforge.net/chaosreader/chaosreader%{version}
 License:       GPL
 BuildArch:     noarch
 

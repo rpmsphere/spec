@@ -7,9 +7,9 @@ Version: 3.6
 Release: 3.1
 License: GPL
 Group: Applications/Bioinformatics
-URL: http://darwin.uvigo.es/software/modeltest.html
+URL: https://darwin.uvigo.es/software/modeltest.html
 #NB Broken source link; go to URL
-Source0: http://darwin.uvigo.es/software/modeltest3.6.zip
+Source0: https://darwin.uvigo.es/software/modeltest3.6.zip
 
 %description
 The use of a model of DNA substitution is routine in the analysis of DNA

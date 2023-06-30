@@ -4,7 +4,7 @@ Release:        10.1
 Summary:        Simple EFI Boot Manager
 Group:          System/Boot and Init
 License:        LGPLv2+
-URL:            http://freedesktop.org/wiki/Software/gummiboot
+URL:            https://freedesktop.org/wiki/Software/gummiboot
 # git clone git://anongit.freedesktop.org/gummiboot
 # cd gummiboot/
 # ./autogen

@@ -4,7 +4,7 @@ Release:        4.4
 Summary:        A collaborative drawing program
 Group:          Amusements/Graphics
 License:        GPLv2+
-URL:            http://drawpile.sourceforge.net/
+URL:            https://drawpile.sourceforge.net/
 Source0:        https://github.com/drawpile/Drawpile/archive/%{version}.tar.gz#/Drawpile-%{version}.tar.gz
 BuildRequires:  libpng-devel
 BuildRequires:  gcc-c++ libzip-devel cmake desktop-file-utils

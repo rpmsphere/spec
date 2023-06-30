@@ -6,8 +6,8 @@ Release: 3.1
 Summary: A small, simple, super fast image viewer using raw XLib
 Group: Graphics
 License: MIT
-URL: http://www.johnhawthorn.com/meh/
-Source: http://web.uvic.ca/~jhawthor/%name-%version.tar.gz
+URL: https://www.johnhawthorn.com/meh/
+Source: https://web.uvic.ca/~jhawthor/%name-%version.tar.gz
 BuildRequires: libXext-devel giflib-devel libjpeg-devel libpng-devel
 Requires: ImageMagick
 

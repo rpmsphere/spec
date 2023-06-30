@@ -4,9 +4,8 @@ Version: 4.6.patch6
 Release: 2.1
 License: GPL
 Group: System Environment/Shells
-URL: http://www.clex.sk/
-Source: http://www.clex.sk/download/clex-%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+URL: https://www.clex.sk/
+Source: https://www.clex.sk/download/clex-%{version}.tar.gz
 BuildRequires: ncurses-devel
 
 %description
@@ -32,7 +31,6 @@ configurable and all its features are explained in the on-line help.
 %{__rm} -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README
 %doc %{_mandir}/man1/clex.1*
 %doc %{_mandir}/man1/cfg-clex.1*

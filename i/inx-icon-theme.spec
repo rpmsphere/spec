@@ -6,7 +6,7 @@ Version: 0.6
 Release: 4.1
 License: CC BY-NC-ND 3.0
 Group: User Interface/Desktops
-URL: http://deviantn7k1.deviantart.com/art/iNX-Icon-set-344494902
+URL: https://deviantn7k1.deviantart.com/art/iNX-Icon-set-344494902
 Source: inx.zip
 BuildArch: noarch
 

@@ -4,8 +4,8 @@ Group:          User Interface/Desktops
 Summary:        The original Comix Cursors
 Version:        0.9.0
 Release:        2.1
-Source0:        http://www.limitland.de/comixcursors/ComixCursors-%{version}.tar.bz2
-URL:            http://gnome-look.org/content/show.php/ComixCursors?content=32627
+Source0:        https://www.limitland.de/comixcursors/ComixCursors-%{version}.tar.bz2
+URL:            https://gnome-look.org/content/show.php/ComixCursors?content=32627
 BuildArch:      noarch
 
 %description

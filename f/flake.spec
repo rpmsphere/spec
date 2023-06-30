@@ -3,10 +3,9 @@ Version:        0.11
 Release:        3.1
 License:        LGPL-2.1+
 Summary:        FLAC Audio Encoder
-URL:            http://flake-enc.sourceforge.net/
+URL:            https://flake-enc.sourceforge.net/
 Group:          Productivity/Multimedia/Sound/Utilities
-Source0:        http://downloads.sourceforge.net/%{name}-enc/%{name}-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+Source0:        https://downloads.sourceforge.net/%{name}-enc/%{name}-%{version}.tar.bz2
 
 %description
 The purpose of Flake is to be an alternative to the FLAC reference encoder
@@ -38,12 +37,10 @@ make
 %make_install
 
 %files
-%defattr(-,root,root)
 %doc COPYING Changelog README
 %{_bindir}/flake
 
 %files devel
-%defattr(-,root,root)
 %{_includedir}/flake.h
 %{_libdir}/libflake.a
 

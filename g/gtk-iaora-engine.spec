@@ -6,7 +6,7 @@ Version:        1.0.25
 Release:        3.1
 License:        GPL
 Group:          System/Libraries
-URL:            http://www.mandrivalinux.com/
+URL:            https://www.mandrivalinux.com/
 BuildRequires:  libpng-devel
 BuildRequires:  gtk2-devel
 Source0:        %{_name}-%{version}.tar.bz2

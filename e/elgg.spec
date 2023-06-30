@@ -3,9 +3,9 @@ Version:	1.8.19
 Release:	3
 Summary:	Social networking platform
 License:	GPLv2, MIT
-URL:		http://elgg.org/
+URL:		https://elgg.org/
 Group:		Productivity/Networking
-Source0:	http://elgg.org/download/%{name}-%{version}.zip
+Source0:	https://elgg.org/download/%{name}-%{version}.zip
 BuildArch:	noarch
 Requires:	httpd, mysql, mysql-server
 Requires:   php, php-gd, php-mbstring
@@ -35,7 +35,7 @@ mkdir -p %{buildroot}/var/www/%{name}-data
 #sed -i '/\/var\/www\/html/,/\/Directory/s/^    AllowOverride .*/    AllowOverride All/' /etc/httpd/conf/httpd.conf
 
 %files
-%defattr(-,apache,apache)
+ %defattr(-,apache,apache)
 /var/www/html/.htaccess
 /var/www/html/*
 /var/www/%{name}-data

@@ -6,8 +6,8 @@ Version:        20100719
 Release:        29.1
 License:        GPL
 Group:          User Interface/Desktops
-URL:            http://gnome-look.org/content/show.php/Country+Oak?content=127617
-Source0:        http://gnome-look.org/CONTENT/content-files/127617-Country_Oak.tar.bz2
+URL:            https://gnome-look.org/content/show.php/Country+Oak?content=127617
+Source0:        https://gnome-look.org/CONTENT/content-files/127617-Country_Oak.tar.bz2
 Source1:        %{theme_name}-index.theme
 BuildArch:	    noarch
 Requires:       tierrauim-wood-metacity-theme

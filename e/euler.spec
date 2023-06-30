@@ -6,7 +6,7 @@ License:        GPL v2 or any later version
 Group:          Productivity/Scientific/Math
 Version:        1.61.0
 Release:        20.1
-URL:            http://euler.sourceforge.net/
+URL:            https://euler.sourceforge.net/
 Requires:       xdg-utils
 BuildRequires:  gtk2-devel pcre-devel
 Source0:        %name-%version.tar.bz2

@@ -4,8 +4,8 @@ Release:	18.1
 Summary:	Chess board interface for ICS
 Group:		Amusements/Games
 License:	GPLv2+
-URL:		http://www.bergo.eng.br/eboard/
-Source0:	http://dl.sf.net/%{name}/%{name}-%{version}.tar.bz2
+URL:		https://www.bergo.eng.br/eboard/
+Source0:	https://dl.sf.net/%{name}/%{name}-%{version}.tar.bz2
 Source1:	eboard.desktop
 Source2:        eboard.png
 Patch0:		eboard-1.1.1-gcc44.patch

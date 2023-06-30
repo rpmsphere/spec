@@ -4,7 +4,7 @@ Version:        0.4.1
 Release:        20.1
 License:        GPL-2.0
 Group:          System/GUI/GNOME
-URL:            http://beaver-editor.sourceforge.net
+URL:            https://beaver-editor.sourceforge.net
 Source0:        %name-%version.tar.bz2
 Patch0:         %{name}-add-mime-types.patch
 BuildRequires:  autoconf automake gcc-c++ make
@@ -81,7 +81,7 @@ rm %buildroot/%_libdir/beaver/plugins/sample.so
 * Sun Jul  4 2010 andrea@opensuse.org
 - upgrade to 0.4.0 rc2
 - removed all the patches now into upstream code
-- fixed project URL now is http://beaver-editor.sourceforge.net/
+- fixed project URL now is https://beaver-editor.sourceforge.net/
 - plugins now built from source tarball
 * Wed Jun 30 2010 andrea@opensuse.org
 - fixed a bug into package VERSION that will not allow to upgrade

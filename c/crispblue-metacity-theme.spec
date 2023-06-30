@@ -7,7 +7,7 @@ Release: 2.1
 License: GPL
 Group: User Interface/Desktops
 Source: CrystalforGnomeCrispBlue1-0-0.tar.gz
-URL: http://gnome-look.org/content/show.php/Crisp+Blue?content=24757
+URL: https://gnome-look.org/content/show.php/Crisp+Blue?content=24757
 BuildArch: noarch
 
 %description

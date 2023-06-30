@@ -2,11 +2,10 @@ Name:               lockrun
 Version:            1.0+4
 Release:            3.1
 Summary:            Run Cron Job with Overrun Protection
-Source:             http://unixwiz.net/tools/lockrun.c
-URL:                http://unixwiz.net/tools/lockrun.html
+Source:             https://unixwiz.net/tools/lockrun.c
+URL:                https://unixwiz.net/tools/lockrun.html
 Group:              System/Base
 License:            Public Domain
-BuildRoot:          %{_tmppath}/build-%{name}-%{version}
 BuildRequires:      gcc make glibc-devel
 
 %description
@@ -43,7 +42,6 @@ instance of the same command is not already running.
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %{_bindir}/lockrun
 
 %changelog

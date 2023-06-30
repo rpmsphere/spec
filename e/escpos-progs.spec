@@ -13,7 +13,7 @@ BuildRequires:	libpng-devel
 %description
 png2escpos <https://github.com/twg/png2escpos>:
 Quickly convert PNG files to ESC/POS format, for printing on Epson thermal point-of-sale printers.
-escposf <http://kg4zqz.blogspot.tw/2016/08/escposf-thermal-printer-filter-and.html>:
+escposf <https://kg4zqz.blogspot.tw/2016/08/escposf-thermal-printer-filter-and.html>:
 A Thermal Printer Filter and Control Command for Linux.
 
 %prep

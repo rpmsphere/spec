@@ -4,8 +4,8 @@ Version: 20100625
 Release: 8.1
 Group: Amusements/Games
 License: Creative Commons
-URL: http://inventwithpython.com/blog/2010/06/25/gorilla-py-a-remake-of-gorilla-bas/
-Source0: http://inventwithpython.com/gorilla.py
+URL: https://inventwithpython.com/blog/2010/06/25/gorilla-py-a-remake-of-gorilla-bas/
+Source0: https://inventwithpython.com/gorilla.py
 Source1: %{name}.desktop
 Source2: %{name}.png
 BuildArch: noarch

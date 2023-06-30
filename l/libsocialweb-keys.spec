@@ -3,7 +3,7 @@ Summary: API keys for libsocialweb
 Group: System Environment/Desktop
 Version: 1
 License: LGPL 2.1
-URL: http://www.moblin.org
+URL: https://www.moblin.org
 Release: 1
 Source0: lastfm
 Source1: twitter

@@ -6,9 +6,9 @@ Version:	0.1.4
 Release:	9.1
 License:	GPL v2
 Group:		Amusements/Games
-Source0:	http://boby.joe.free.fr/dev/belooted/files/%{name}-%{version}.tar.gz
+Source0:	https://boby.joe.free.fr/dev/belooted/files/%{name}-%{version}.tar.gz
 Source1:	belooted-background-default.png
-URL:		http://boby.joe.free.fr/dev/belooted/
+URL:		https://boby.joe.free.fr/dev/belooted/
 BuildRequires:	gawk
 BuildRequires:	perl-XML-Parser
 BuildRequires:	gtk2-devel >= 2.8.0
@@ -19,7 +19,7 @@ Belote is a popular 32-card trick-taking game played in France.
 It derived around 1920, probably via Clobyosh, from Klaverjassen,
 a game played since at least the 1600s in the Netherlands.
 Closely related games are played throughout the world.
-Details: http://en.wikipedia.org/wiki/Belote
+Details: https://en.wikipedia.org/wiki/Belote
 
 %prep
 %setup -q

@@ -4,9 +4,9 @@ Name:		eviltermit
 Version:	1.1.3.1
 Release:	1
 Summary:	Vte-based Terminal Emulator
-Source:		http://www.calno.com/eviltermit/%{name}-%{version}.tar.gz
+Source:		https://www.calno.com/eviltermit/%{name}-%{version}.tar.gz
 Source1:	eviltermit.desktop
-URL:		http://www.calno.com/eviltermit/
+URL:		https://www.calno.com/eviltermit/
 Group:		System/Terminals
 License:	GNU General Public License v2 (GPL)
 BuildRequires:	vte-devel

@@ -6,8 +6,8 @@ Release:        3.1
 Group:          System/Base
 License:        BSD
 #define _sbindir /sbin
-URL:            http://smarden.org/ipsvd/
-Source:         http://smarden.org/ipsvd/ipsvd-%{version}.tar.gz
+URL:            https://smarden.org/ipsvd/
+Source:         https://smarden.org/ipsvd/ipsvd-%{version}.tar.gz
 Summary:        Internet protocol service daemons
 
 %description

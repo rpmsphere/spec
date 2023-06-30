@@ -5,8 +5,8 @@ Version:        4.3.1
 Release:        5.1
 Summary:        A lightweight code editor
 License:        GPL
-URL:            http://code.google.com/p/codeslayer/
-Source0:        http://codeslayer.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:            https://code.google.com/p/codeslayer/
+Source0:        https://codeslayer.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:  intltool, gtk3-devel, gtksourceview3-devel
 
 %description

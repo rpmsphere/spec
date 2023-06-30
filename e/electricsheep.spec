@@ -4,9 +4,9 @@ Version: 2.6.8
 Release: 1
 License: GPL
 Group: Graphics
-Source: http://electricsheep.org/%{name}-%{version}.tar.gz
+Source: https://electricsheep.org/%{name}-%{version}.tar.gz
 Patch: %{name}-%{version}.patch
-URL: http://electricsheep.org
+URL: https://electricsheep.org
 Requires: xscreensaver curl flam3 mpeg2dec
 BuildRequires: expat libpng12-devel libjpeg-devel libX11-devel
 

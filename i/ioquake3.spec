@@ -10,7 +10,7 @@ Release:        %{mainrel}.%{date}.%{snaprel}
 Summary:        Quake 3 Arena engine (ioquake3 version)
 Group:          Games/Shooter
 License:        GPLv2+
-URL:            http://ioquake3.org/
+URL:            https://ioquake3.org/
 # Snapshot from git repository: https://github.com/ioquake/ioq3
 # - Strip thirdparty code:
 # rm -rf code/{AL,jpeg-8c,libcurl-*,libogg-*,libspeex,libvorbis-*,opus-*,opusfile-*,SDL2,zlib}

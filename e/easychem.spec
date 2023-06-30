@@ -4,10 +4,10 @@ Name: 	 	easychem
 Summary: 	2D molecular drawing program
 Version: 	0.6
 Release: 	15.1
-Source0:	http://puzzle.dl.sourceforge.net/sourceforge/easychem/%{name}-%{version}.tar.bz2
+Source0:	https://puzzle.dl.sourceforge.net/sourceforge/easychem/%{name}-%{version}.tar.bz2
 Source1:	easychem.png
 Patch0:		easychem-0.6-link.patch
-URL:		http://easychem.sourceforge.net/
+URL:		https://easychem.sourceforge.net/
 License:	GPL
 Group:		Sciences/Chemistry
 BuildRequires:	gtk2-devel

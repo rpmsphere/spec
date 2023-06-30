@@ -4,8 +4,8 @@ Release:        1
 Summary:        A Tool For Reading Electronic Texts
 Group:          Applications/Education
 License:        GPL
-URL:            http://jbook.sourceforge.net/
-Source0:        http://nchc.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}-sources.tgz
+URL:            https://jbook.sourceforge.net/
+Source0:        https://nchc.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}-sources.tgz
 Source1:	%{name}.png
 BuildRequires:  java-devel
 Requires:	jre

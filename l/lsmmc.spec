@@ -4,8 +4,8 @@ Release:        1
 Summary:        Userspace tools for MMC/SD storage devices
 License:        BSD
 Group:          Hardware/Other
-URL:            http://comments.gmane.org/gmane.linux.kernel.mmc/15223
-#Source0:        http://cache.gmane.org//gmane/linux/kernel/mmc/15223-001.bin
+URL:            https://comments.gmane.org/gmane.linux.kernel.mmc/15223
+#Source0:        https://cache.gmane.org//gmane/linux/kernel/mmc/15223-001.bin
 Source0:        %{name}.tar.gz
 BuildRequires:  ctags
 

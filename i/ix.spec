@@ -4,8 +4,8 @@ Release:        4.1
 Summary:        Client for the ix.io pastebin
 Group:          Applications/Internet
 License:        Unknown
-URL:            http://ix.io
-Source0:        http://ix.io/client
+URL:            https://ix.io
+Source0:        https://ix.io/client
 BuildArch:      noarch
 Requires:       python2
 

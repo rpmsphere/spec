@@ -6,8 +6,8 @@ Release:        2
 Summary:        A library to patch applications to send commands to PWMD
 Group:          Applications/System
 License:        GPLv2+
-URL:            http://bjk.sourceforge.net/pwmd/
-Source0:        http://downloads.sourceforge.net/bjk/%{name}-v%{version}.tar.gz
+URL:            https://bjk.sourceforge.net/pwmd/
+Source0:        https://downloads.sourceforge.net/bjk/%{name}-v%{version}.tar.gz
 BuildRequires:  libassuan-devel
 BuildRequires:  libgpg-error-devel
 BuildRequires:  cracklib-devel

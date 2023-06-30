@@ -4,9 +4,8 @@ Version:	2.3.2
 Release:	10.1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://download.berlios.de/bras/%{name}-%{version}.tar.gz
-URL:		http://bras.berlios.de/
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Source0:	https://download.berlios.de/bras/%{name}-%{version}.tar.gz
+URL:		https://bras.berlios.de/
 BuildArch:	noarch
 BuildRequires:	tcl
 
@@ -33,7 +32,6 @@ cp README TODO CHANGES ANNOUNCE $RPM_BUILD_ROOT/usr/share/doc/%{name}-%{version}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 /usr/lib/%{name}-%{version}
 %{_docdir}/%{name}-%{version}

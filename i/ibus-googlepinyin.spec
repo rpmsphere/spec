@@ -2,9 +2,9 @@ Name:       ibus-googlepinyin
 Version:    0.1.2
 Release:    1
 Summary:    Google pinyin for ibus
-URL:        http://code.google.com/p/libgooglepinyin/
+URL:        https://code.google.com/p/libgooglepinyin/
 License:    APL2.0
-Source0:    http://libgooglepinyin.googlecode.com/files/%{name}-%{version}.tar.bz2
+Source0:    https://libgooglepinyin.googlecode.com/files/%{name}-%{version}.tar.bz2
 Group:      User Interface/Desktops
 BuildRequires:  intltool, cmake, gcc-c++
 BuildArch: noarch

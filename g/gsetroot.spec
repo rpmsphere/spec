@@ -2,10 +2,10 @@ Summary:	Gtk-based front-end for Esetroot
 Name:		gsetroot
 Version:	1.1
 Release:	18.1
-Source0:	http://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	https://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 License:	GPLv2
 Group:		Graphical desktop/GNOME
-URL:		http://gsetroot.sf.net
+URL:		https://gsetroot.sf.net
 BuildRequires:	gtk2-devel
 Requires:	eterm
 

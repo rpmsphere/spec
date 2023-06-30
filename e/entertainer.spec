@@ -3,7 +3,7 @@ Summary: Media Center application for Linux
 Name:    entertainer
 Version: 0.4.2
 Release: 1
-Source0: http://launchpad.net/entertainer/entertainer-0.4/entertainer-0.4.2/+download/%{name}-%{version}.tar.gz
+Source0: https://launchpad.net/entertainer/entertainer-0.4/entertainer-0.4.2/+download/%{name}-%{version}.tar.gz
 License: GPLv2
 Group:   Application/Multimedia
 URL:     https://launchpad.net/entertainer

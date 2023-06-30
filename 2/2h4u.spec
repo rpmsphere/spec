@@ -4,7 +4,7 @@ BuildRequires:  gcc-c++ SDL-devel SDL_image-devel SDL_ttf-devel SDL_mixer-devel
 Name:           2h4u
 Version:        1.3
 Release:        1
-URL:            http://sourceforge.net/projects/toohardforyou
+URL:            https://sourceforge.net/projects/toohardforyou
 License:        GPL v2 or later
 Group:          Amusements/Games/Action/Arcade
 Summary:        Too Hard For You - a mix between a Tetris-like game and a wall breaker

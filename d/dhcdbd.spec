@@ -3,11 +3,10 @@ Version:       3.0
 Release:       2.1
 Summary:       Provides D-BUS control of the ISC dhclient software
 Group:         Network/Libraries
-URL:           http://people.redhat.com/jvdias/dhcdbd/
-Source:        http://ftp.debian.org/debian/pool/main/d/dhcdbd/dhcdbd_%{version}.orig.tar.gz
-#http://people.redhat.com/jvdias/dhcdbd/dhcdbd-%{version}.tar.gz
+URL:           https://people.redhat.com/jvdias/dhcdbd/
+Source:        https://ftp.debian.org/debian/pool/main/d/dhcdbd/dhcdbd_%{version}.orig.tar.gz
+#https://people.redhat.com/jvdias/dhcdbd/dhcdbd-%{version}.tar.gz
 License:       GPL
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 BuildRequires: dbus-devel
 
 %description
@@ -31,7 +30,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_sysconfdir}/dbus-1/system.d/dhcdbd.conf
 /sbin/dhcdbd
 %{_datadir}/dbus-1/services/dhcdbd.service

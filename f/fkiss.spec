@@ -4,8 +4,8 @@ Version      : 0.35
 Release      : 8.1
 License      : GPL
 Group        : Amusements/Graphics
-Source0      : http://www.oersted.co.jp/~yav/soft/fkiss/%{name}-%{version}.tar.gz
-URL          : http://www.oersted.co.jp/~yav/soft/#fkiss
+Source0      : https://www.oersted.co.jp/~yav/soft/fkiss/%{name}-%{version}.tar.gz
+URL          : https://www.oersted.co.jp/~yav/soft/#fkiss
 BuildRequires: xorg-x11-proto-devel, libX11-devel
 
 %description

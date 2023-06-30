@@ -7,7 +7,7 @@ Summary:	%{theme_name} icon theme
 Group:		System/GUI/GNOME
 License:	GPLv3+
 URL:		https://www.gnome-look.org/content/show.php/Mint+X+Colors+Icon+Theme?content=165531
-Source0:	http://packages.linuxmint.com/pool/main/m/mint-x-icons/mint-x-icons_1.3.7.tar.xz
+Source0:	https://packages.linuxmint.com/pool/main/m/mint-x-icons/mint-x-icons_1.3.7.tar.xz
 BuildArch:      noarch
 
 %description

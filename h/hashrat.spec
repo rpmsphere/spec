@@ -6,7 +6,7 @@ Version: 1.15
 License: GPLv3
 Release: 1
 Group: utils
-URL: http://www.cjpaget.co.uk/Code/Hashrat
+URL: https://www.cjpaget.co.uk/Code/Hashrat
 Source0: https://codeload.github.com/ColumPaget/%{_name}/tar.gz/%{version}/%{_name}-%{version}.tar.gz
 
 %description

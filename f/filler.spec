@@ -3,9 +3,9 @@ Name: filler
 Version: 1.01
 Release: 1
 License: GPL
-URL: http://sourceforge.net/projects/filler
+URL: https://sourceforge.net/projects/filler
 Group: Amusements/Games
-Source: http://download.sourceforge.net/filler/%{name}-%{version}.tgz
+Source: https://download.sourceforge.net/filler/%{name}-%{version}.tgz
 Patch0: filler.Filler.java-patch
 Patch1:	filler.Makefile-patch
 BuildRequires:	java

@@ -6,7 +6,7 @@ Group: Amusements/Games/Board/Chess
 License: GPLv3
 URL: https://github.com/cutechess/cutechess
 Source0: %{name}-master.zip
-BuildRequires: qt5-devel
+BuildRequires: qt5-qtbase-devel
 
 %description
 Cute Chess is a graphical user interface, command-line interface and a library

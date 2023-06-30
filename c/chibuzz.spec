@@ -4,8 +4,8 @@ Version: 0.2.6
 Release: 6.1
 Group: Applications/Internet
 License: GPL
-URL: http://gtk-apps.org/content/show.php/ChiBuzz%3F?content=85621
-Source0: http://gtk-apps.org/CONTENT/content-files/85621-%{name}-%{version}.tar.gz
+URL: https://gtk-apps.org/content/show.php/ChiBuzz%3F?content=85621
+Source0: https://gtk-apps.org/CONTENT/content-files/85621-%{name}-%{version}.tar.gz
 BuildArch: noarch
 Requires: python-beautifulsoup, tkinter, pygtk2-libglade
 

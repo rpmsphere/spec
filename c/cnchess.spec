@@ -6,7 +6,7 @@ License:		GPL
 Summary:		A Chinese Chess Game.
 Summary(zh_CN):		中国象棋游戏
 Summary(zh_TW):		中國象棋遊戲
-URL:			http://netbay.blogchina.com/
+URL:			https://netbay.blogchina.com/
 Source0:		%{name}-%{version}.src.tar.bz2
 Source1:		cnchess.sh
 Source2:		%{name}.xpm

@@ -7,8 +7,8 @@ Version: 1.05.03
 Release: 6.1
 License: freeware
 Group: Development/Languages
-Source: http://homepages.cwi.nl/~steven/abc/implementations/abc-unix.tar.gz
-URL: http://homepages.cwi.nl/~steven/abc/
+Source: https://homepages.cwi.nl/~steven/abc/implementations/abc-unix.tar.gz
+URL: https://homepages.cwi.nl/~steven/abc/
 
 %description
 ABC is an interactive programming language and environment for personal

@@ -4,13 +4,13 @@ Release:        8.20030801
 Summary:	Beneath a Steel Sky (Adventure Game)
 Group:		Amusements/Games
 License:	Freeware
-URL:		http://www.scummvm.org/downloads.php
-Source0:	http://www.mixnmojo.com/bss/BASS-Floppy.zip
+URL:		https://www.scummvm.org/downloads.php
+Source0:	https://www.mixnmojo.com/bss/BASS-Floppy.zip
 Source1:	%name.sh
 Source2:	%name.desktop
-Source3:	info
+Source3:	%name.info
 Source4:	%name.png
-Source5:	http://svn.sourceforge.net/viewcvs.cgi/*checkout*/scummvm/engine-data/trunk/sky.cpt
+Source5:	https://svn.sourceforge.net/viewcvs.cgi/*checkout*/scummvm/engine-data/trunk/sky.cpt
 BuildArch:      noarch
 BuildRequires:  unzip
 Requires:	scummvm timidity++
@@ -37,7 +37,7 @@ past and the city he has found himself trapped in.
 %__mkdir_p $RPM_BUILD_ROOT%{_datadir}/doc/packages/BASS
 install -m 644 sky.dnr $RPM_BUILD_ROOT%{_datadir}/games/BASS
 install -m 644 sky.dsk $RPM_BUILD_ROOT%{_datadir}/games/BASS
-install -m 644 %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/games/BASS
+install -m 644 %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/games/BASS/info
 install -m 644 %{SOURCE5} $RPM_BUILD_ROOT%{_datadir}/games/BASS
 #install -m 644 readme.txt $RPM_BUILD_ROOT%{_datadir}/doc/BASS-%{version}
 %__mkdir_p ${RPM_BUILD_ROOT}%{_bindir}

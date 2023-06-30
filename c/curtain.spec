@@ -3,8 +3,8 @@ Version:	0.3
 Release:	6.1
 License:	GPLv3
 Group:		Education
-URL:		http://code.google.com/p/ardesia
-Source:		http://ardesia.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:		https://code.google.com/p/ardesia
+Source:		https://ardesia.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		%{name}-desktop-file.patch
 Patch1:		%{name}-0.3-gtk3tests.patch
 Summary:	Show a movable and resizable curtain on the desktop screen

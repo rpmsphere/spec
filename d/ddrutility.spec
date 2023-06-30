@@ -2,7 +2,7 @@ Summary:	Utility for use with gnuddrescue to aid with data recovery
 Name:		ddrutility
 Version:	2.7
 Release:	2.1
-URL:		http://sourceforge.net/projects/ddrutility/
+URL:		https://sourceforge.net/projects/ddrutility/
 License:	GPL
 Group:		Applications/Forensics Tools
 Source:		%{name}-%{version}.tar.gz
@@ -20,7 +20,7 @@ the following utilities:
 	ddru_ntfsbitmap
 	ddru_ntfsfindbad (NEW)
 
-Please see the Wiki (http://sourceforge.net/p/ddrutility/wiki/Home/) or
+Please see the Wiki (https://sourceforge.net/p/ddrutility/wiki/Home/) or
 the help files for full documentation (note that the Wiki page does not
 seem to navigate properly, sorry). The readme file contains the latest
 news of updates, and can be viewed as text on the Files page.

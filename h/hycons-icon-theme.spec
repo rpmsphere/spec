@@ -6,7 +6,7 @@ Version:        3.0.0
 Release:        7.1
 License:        CC-BY-NC-SA
 Group:          User Interface/Desktops
-URL:            http://kde-look.org/content/show.php/Hycons?content=101767
+URL:            https://kde-look.org/content/show.php/Hycons?content=101767
 Source0:        Hycons.tar.gz
 BuildArch:      noarch
 

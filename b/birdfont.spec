@@ -6,8 +6,8 @@ Release:        1
 Summary:        Font editor
 License:        GPLv3+
 Group:          Multimedia/Graphics/Vector Editors 
-URL:            http://birdfont.org/
-Source0:        http://birdfont.org/releases/%{name}-%{version}.tar.xz
+URL:            https://birdfont.org/
+Source0:        https://birdfont.org/releases/%{name}-%{version}.tar.xz
 BuildRequires:  glib2-devel
 BuildRequires:  gtk3-devel
 BuildRequires:  libxml2-devel

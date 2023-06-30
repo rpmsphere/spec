@@ -4,12 +4,11 @@ Version:       0.0.1
 Release:       4.1
 License:       GPL
 Group:         Applications/Graphics
-URL:           http://www.blackfiveservices.co.uk/bitcmyk2tiff.shtml
-Source:        http://www.blackfiveservices.co.uk/projects/%{name}-%{version}.tar.gz
+URL:           https://www.blackfiveservices.co.uk/bitcmyk2tiff.shtml
+Source:        https://www.blackfiveservices.co.uk/projects/%{name}-%{version}.tar.gz
 BuildRequires: gcc-c++
 BuildRequires: libstdc++-devel
 BuildRequires: libtiff-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 It converts raw data from GhostScript's bitcmyk output device into a CMYK TIFF.
@@ -31,7 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root, 0755)
 %doc COPYING README
 %{_bindir}/*
 

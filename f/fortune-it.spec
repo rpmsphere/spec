@@ -4,8 +4,8 @@ Release:	3.1
 Summary:	Collection of Italian fortune cookie files
 Group:		Amusements/Games
 License:	Public Domain
-URL:		http://www.fortune-it.net/
-Source0:	http://www.fortune-it.net/download/%{name}-%{version}.tar.gz
+URL:		https://www.fortune-it.net/
+Source0:	https://www.fortune-it.net/download/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	fortune-mod
 Requires:	fortune-mod

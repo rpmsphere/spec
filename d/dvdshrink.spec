@@ -1,6 +1,6 @@
 Summary: DVD Copier/Archiver
 Name: dvdshrink
-URL: http://ozzzy.dyndns.org
+URL: https://ozzzy.dyndns.org
 Version: 2.6.1
 Release: 2.1
 Source0: ftp://ozzzy.dyndns.org/pub/%{name}-%{version}-11mdk.tar.gz

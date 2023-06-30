@@ -5,8 +5,8 @@ Release: 7.1
 Summary: Chinese Lunar calendar library
 Group: User Interface/Desktops	
 License: GPLv2	
-URL: http://code.google.com/p/liblunar	
-Source0: http://liblunar.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/liblunar	
+Source0: https://liblunar.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires: libpng-devel
 BuildRequires: intltool, gtk2-devel, gtk-doc, python-devel
 BuildRequires: pygobject2-devel, gobject-introspection-devel

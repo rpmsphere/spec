@@ -4,7 +4,7 @@ Version: 1.2.4
 Release: 2.1
 License: LGPLv2+
 Group:   Applications/System
-URL:     http://code.google.com/p/batterymon
+URL:     https://code.google.com/p/batterymon
 Source0: %{name}-%{version}.tar.gz
 Requires: notify-python
 BuildRequires: gettext

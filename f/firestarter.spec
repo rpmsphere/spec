@@ -4,8 +4,8 @@ Release:	25.4
 Summary:	Firewall tool for GNOME
 Group:		Applications/Internet
 License:	GPLv2+
-URL:		http://firestarter.sourceforge.net
-Source0:	http://download.sourceforge.net/firestarter/firestarter-1.0.3.tar.gz
+URL:		https://firestarter.sourceforge.net
+Source0:	https://download.sourceforge.net/firestarter/firestarter-1.0.3.tar.gz
 Patch0:		firestarter-1.0.3-pam.patch
 Patch1:		firestarter-1.0.3-services.patch
 Patch2:		firestarter-1.0.3-nobrowser.patch
@@ -191,7 +191,7 @@ fi
 - Devel branch rebuild
 
 * Thu Feb 02 2006 Michael A. Peters <mpeters@mac.com> - 1.0.3-9
-- fix non routables per http://www.iana.org/assignments/ipv4-address-space
+- fix non routables per https://www.iana.org/assignments/ipv4-address-space
 - fixes bug 179685
 
 * Mon Jan 30 2006 Michael A. Peters <mpeters@mac.com> - 1.0.3-8
@@ -325,7 +325,7 @@ fi
 - Removed all requirements related to the documentation generation
 
 * Tue Jun 25 2002 Paul Drain <pd@cipherfunk.org>
-- Merged some compatible cleanups from the FreshRPMS (http://freshrpms.net)
+- Merged some compatible cleanups from the FreshRPMS (https://freshrpms.net)
   specfile.
 
 * Wed Apr 24 2002 Paul Drain <pd@cipherfunk.org>

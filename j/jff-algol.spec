@@ -5,7 +5,7 @@ Summary: A simple ALGOL 60 to C translator
 License: GPLv2
 Group: Development/Languages
 URL: https://github.com/JvanKatwijk/algol-60-compiler
-Source: http://www.algol60.org/translators/algol-60-compiler.zip
+Source: https://www.algol60.org/translators/algol-60-compiler.zip
 
 %description
 In 2002 and 2003 I wrote, as a hobby project, a simple Algol 60 to C

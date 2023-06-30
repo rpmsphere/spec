@@ -7,7 +7,7 @@ Release:	1
 Summary:	The NASA Common Data Format implementation
 Group:		Development/Libraries
 License:	CDF
-URL:		http://cdf.gsfc.nasa.gov/
+URL:		https://cdf.gsfc.nasa.gov/
 Source0:	ftp://cdaweb.gsfc.nasa.gov/pub/cdf/dist/latest-release/linux/cdf%{cdfver}-dist-all.tar.gz
 Source1:	cdf-init-bourne.sh
 Source2:	cdf-init-cshell.sh

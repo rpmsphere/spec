@@ -3,12 +3,12 @@
 
 Name:         lua-cjson
 Summary:      Lua Extension: JSON Encoding/Decoding
-URL:          http://www.kyne.com.au/~mark/software/lua-cjson.php
+URL:          https://www.kyne.com.au/~mark/software/lua-cjson.php
 Group:        Language
 License:      MIT
 Version:      2.1.0
 Release:      6.1
-Source0:      http://www.kyne.com.au/~mark/software/download/lua-cjson-%{version}.tar.gz
+Source0:      https://www.kyne.com.au/~mark/software/download/lua-cjson-%{version}.tar.gz
 BuildRequires: lua-devel
 
 %description

@@ -4,8 +4,8 @@ Release:        5.1
 Summary:        MC's Window Manager
 Group:          User Interface/Desktops
 License:        ISC
-URL:            http://hack.org/mc/hacks/mcwm
-Source0:        http://hack.org/mc/hacks/mcwm/%{name}-%{version}-2.tar.bz2
+URL:            https://hack.org/mc/hacks/mcwm
+Source0:        https://hack.org/mc/hacks/mcwm/%{name}-%{version}-2.tar.bz2
 Source1:        mcwm.desktop
 BuildRequires:  xcb-util-devel
 BuildRequires:  xcb-util-keysyms-devel

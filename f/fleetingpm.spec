@@ -3,9 +3,9 @@ Version:        2.9.0
 Release:        1
 License:        GPL-3.0
 Summary:        Fleeting Password Manager
-URL:            http://fleetingpm.sourceforge.net/
+URL:            https://fleetingpm.sourceforge.net/
 Group:          Productivity/Security
-#Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+#Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Source0:	FleetingPasswordManager-%{version}.tar.gz
 BuildRequires:  ghostscript-core ImageMagick
 BuildRequires:  hicolor-icon-theme

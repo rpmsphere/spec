@@ -4,7 +4,7 @@ Version: 2016
 Release: 2.1
 License: freeware
 Group: Amusements/Games
-URL: http://otakuworld.com/index.html?/kiss/0kiss.html
+URL: https://otakuworld.com/index.html?/kiss/0kiss.html
 Source: %{name}.zip
 Requires: lha
 BuildArch: noarch

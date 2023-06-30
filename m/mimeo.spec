@@ -5,8 +5,8 @@ Release: 2.1
 Summary: Open files by MIME-type or file name using regular expressions
 Group: Utility
 License: GPL2
-URL: http://xyne.archlinux.ca/projects/mimeo/
-Source0: http://xyne.archlinux.ca/projects/mimeo/src/mimeo-2015.1.tar.xz
+URL: https://xyne.archlinux.ca/projects/mimeo/
+Source0: https://xyne.archlinux.ca/projects/mimeo/src/mimeo-2015.1.tar.xz
 BuildRequires: python-devel
 BuildArch: noarch
 

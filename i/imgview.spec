@@ -7,7 +7,7 @@ Release:        1
 Summary:        Image Viewer
 Group:          Graphics
 License:        GPL
-Source:         http://wolfsinger.com/~wolfpack/packages/iv-%{version}.tar.bz2
+Source:         https://wolfsinger.com/~wolfpack/packages/iv-%{version}.tar.bz2
 Patch1:         iv-2.5.1-fix-lib64-build.patch
 BuildRequires:	libpng-devel
 BuildRequires:	libpng12

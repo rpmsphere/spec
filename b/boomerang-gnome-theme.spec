@@ -6,9 +6,9 @@ Release:        9.1
 Summary:        Boomerang Themes for GNOME
 Group:          User Interface/Desktops
 License:        GPLv3
-URL:            http://ghogaru.deviantart.com/art/Boomerang-GTK3-189180645
+URL:            https://ghogaru.deviantart.com/art/Boomerang-GTK3-189180645
 Source0:        boomerang___gtk3_by_ghogaru-d34mspx.zip
-Source1:        http://www.shoutot.net/stockimage/boomerang-nebula-hubble-wallpaper-heica.jpg
+Source1:        https://www.shoutot.net/stockimage/boomerang-nebula-hubble-wallpaper-heica.jpg
 BuildArch:      noarch
 Requires:       faience-icon-theme
 Requires:       dmz-cursor-themes

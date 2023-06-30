@@ -3,8 +3,8 @@ Summary: Simple GTK+ HTML5 rich text editor
 Version: 0.5.1
 Release: 17.1
 Group: editors
-URL: http://code.google.com/p/gwrite
-Source0: http://gwrite.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/gwrite
+Source0: https://gwrite.googlecode.com/files/%{name}-%{version}.tar.gz
 License: LGPL
 BuildArch: noarch
 BuildRequires: python2-distutils-extra, intltool, python2-devel

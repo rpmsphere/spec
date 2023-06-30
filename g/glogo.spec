@@ -4,9 +4,9 @@ Release:	7.1
 Summary:	Graphical LOGO Language
 License:	see copyright
 Group:		Development/Languages
-Source0:	http://sourceforge.net/projects/g-logo/files/g-logo/g-logo_0.1-5/g-logo_0.1-5.tar.gz
+Source0:	https://sourceforge.net/projects/g-logo/files/g-logo/g-logo_0.1-5/g-logo_0.1-5.tar.gz
 Source1:	%{name}.png
-URL:		http://g-logo.sourceforge.net/
+URL:		https://g-logo.sourceforge.net/
 BuildRequires:	gtk2-devel, gtkglext-devel, libsndfile-devel
 
 %description

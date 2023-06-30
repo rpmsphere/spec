@@ -4,8 +4,8 @@ Version:	0.9.4
 Release:	3.1
 License:	MIT
 Group:		Applications/Editors
-Source0:	http://diakonos.pist0s.ca/archives/%{name}-%{version}.tar.bz2
-URL:		http://diakonos.pist0s.ca
+Source0:	https://diakonos.pist0s.ca/archives/%{name}-%{version}.tar.bz2
+URL:		https://diakonos.pist0s.ca
 BuildArch:	noarch
 BuildRequires:	ruby
 BuildRequires:	rubypick

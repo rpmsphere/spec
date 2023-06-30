@@ -5,8 +5,8 @@ Name:      gettextlog
 Version:   0.6
 Release:   4.1
 License:   LGPL
-URL:       http://sourceforge.net/projects/gettextlog/
-Source:    http://downloads.sourceforge.net/project/gettextlog/gettextlog/%{name}-%{version}/%{name}-%{version}.tar.gz
+URL:       https://sourceforge.net/projects/gettextlog/
+Source:    https://downloads.sourceforge.net/project/gettextlog/gettextlog/%{name}-%{version}/%{name}-%{version}.tar.gz
 Group:     Development/Tools
 
 %prep

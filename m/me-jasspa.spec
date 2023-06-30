@@ -4,7 +4,7 @@ Name: me-jasspa
 Version: 161004
 Release: 4.1
 License: GPLv2
-URL: http://www.jasspa.com/
+URL: https://www.jasspa.com/
 Source0: jasspa-mesrc-%{version}.tar.gz
 Source1: me.1
 Summary: A much enhanced version of Daniel Lawrence's original MicroEmacs

@@ -6,7 +6,7 @@ Version:    0.15.0
 Release:    19.1
 License:    GPL v2 or later
 Group:      Amusements/Teaching/Language
-URL:        http://flashqard-project.org
+URL:        https://flashqard-project.org
 Source:     %{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel
 BuildRequires:  cmake, gcc-c++, qt4-devel, qt-webkit-devel

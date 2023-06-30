@@ -12,7 +12,7 @@ BuildArch: noarch
 Requires: comixcursors-cursor-theme
 Requires: mintx-icon-theme
 BuildRequires: ghostscript-core ImageMagick
-Source1: http://www.hartwork.org/public/zwopper/Zwopper-Green-Dew-CC-BY-SA-30-2560x1600.png
+Source1: https://www.hartwork.org/public/zwopper/Zwopper-Green-Dew-CC-BY-SA-30-2560x1600.png
 
 %description
 A tribute to Linux Mint :)

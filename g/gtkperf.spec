@@ -7,7 +7,7 @@ License:	GPLv2
 Group:		System/X11
 Source0:	%{name}-%{version}.tar.gz
 Source1:        gtkperf.desktop
-URL:		http://gtkperf.sourceforge.net/
+URL:		https://gtkperf.sourceforge.net/
 BuildRequires:  gcc-c++ desktop-file-utils gtk2-devel
 
 %description
@@ -61,7 +61,7 @@ desktop-file-install --vendor=""	\
 * Sat May 21 2011 Repocop Q. A. Robot <repocop@altlinux.org> 0.40-alt1.qa2
 - NMU: fix desktop permissions
 * Wed May 18 2011 Repocop Q. A. Robot <repocop@altlinux.org> 0.40-alt1.qa1
-- NMU (by repocop). See http://www.altlinux.org/Tools/Repocop
+- NMU (by repocop). See https://www.altlinux.org/Tools/Repocop
 - applied repocop fixes:
   * freedesktop-desktop-file-proposed-patch for gtkperf
   * postclean-03-private-rpm-macros for ([not specified])

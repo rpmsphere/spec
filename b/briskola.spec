@@ -4,11 +4,10 @@ Release:       2.1
 Summary:       A clone of the Italian card game Briscola
 Summary(it):   BrisKola è un clone del gioco di carte italiano della Briscola.
 Group:         Graphical Desktop/Applications/Games
-URL:           http://www.briskola.net
-Source:        http://www.briskola.net/files/briskola-%{version}.tar.gz
+URL:           https://www.briskola.net
+Source:        https://www.briskola.net/files/briskola-%{version}.tar.gz
 License:       GPL
 BuildRequires: cmake
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 BuildRequires: fontconfig-devel
 BuildRequires: freetype-devel
 BuildRequires: gcc-c++
@@ -37,18 +36,19 @@ E' in classico gioco di carte, sicuramente uno dei più popolarim grazie alla se
 %setup -q
 
 %build
-%cmake --build build .
-make
+#cmake --build build .
+%cmake
+%cmake_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make DESTDIR=$RPM_BUILD_ROOT install
+#make DESTDIR=$RPM_BUILD_ROOT install
+%cmake_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/briskola                         
 %{_datadir}/applications/briskola.desktop  
 %{_datadir}/briskola/background/*.png
@@ -63,6 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
 - Rebuilt for Fedora
-
 * Tue Nov 17 2009 Ercole 'ercolinux' Carpanetto <ercole69@gmail.com> 1.0.0-1mamba
 - package created by autospec

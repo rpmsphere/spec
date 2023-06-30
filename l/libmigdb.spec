@@ -6,8 +6,7 @@ License:   GPL
 Group:     Development/Libraries
 Source:    %{name}-%{version}.tar.bz2
 Patch:     %{name}.patch
-URL:       http://members.xoom.com/stropea/setedit.html
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
+URL:       https://members.xoom.com/stropea/setedit.html
 BuildRequires: gcc-c++
 
 %package devel

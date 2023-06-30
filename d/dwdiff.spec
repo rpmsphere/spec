@@ -3,8 +3,8 @@ Version: 2.1.4
 Release: 1
 Summary: Front end to diff for comparing on a per word basis
 License: GPLv3
-URL:     http://os.ghalkes.nl/dwdiff.html
-Source0: http://os.ghalkes.nl/dist/%{name}-%{version}.tar.bz2
+URL:     https://os.ghalkes.nl/dwdiff.html
+Source0: https://os.ghalkes.nl/dist/%{name}-%{version}.tar.bz2
 Requires: diffutils
 BuildRequires: gcc
 BuildRequires: gettext

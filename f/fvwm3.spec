@@ -10,7 +10,7 @@ Summary:        FVWM version 3, the successor to fvwm2
 License:        GPLv2+
 Group:          Graphical desktop/Other
 
-URL:            http://www.fvwm.org/
+URL:            https://www.fvwm.org/
 Source0:        https://github.com/fvwmorg/fvwm/releases/download/%{version}/%{srcname}-%{version}.tar.gz
 
 #block-logo

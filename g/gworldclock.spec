@@ -4,7 +4,7 @@ Release: 1
 Summary: Displays time and date in specified time zones
 License: GPL
 Group: Toys
-URL: http://pkgs.org/debian-sid/debian-main-amd64/gworldclock_1.4.4-9_amd64.deb.html
+URL: https://pkgs.org/debian-sid/debian-main-amd64/gworldclock_1.4.4-9_amd64.deb.html
 Source:	%{name}-%{version}.tar.xz
 Source1: gworldclock.desktop
 Source2: gworldclock.png

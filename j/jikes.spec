@@ -3,8 +3,8 @@ Version:       1.22
 Release:       5.1
 Summary:       A Java compiler
 Group:         Development/Libraries/Java
-URL:           http://jikes.sourceforge.net/
-Source:        http://downloads.sourceforge.net/jikes/jikes-%{version}.tar.bz2
+URL:           https://jikes.sourceforge.net/
+Source:        https://downloads.sourceforge.net/jikes/jikes-%{version}.tar.bz2
 License:       IBM Public license
 BuildRequires: gcc-c++
 

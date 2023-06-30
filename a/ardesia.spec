@@ -3,10 +3,10 @@ Name: ardesia
 Version: 1.1
 Release: 1
 License: GPLv3
-Source0: http://ardesia.googlecode.com/files/%{name}-%{version}.tar.gz
+Source0: https://ardesia.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1: %{name}-0.8.zh_TW.po
 Group: Applications/Desktop
-URL: http://code.google.com/p/ardesia/
+URL: https://code.google.com/p/ardesia/
 BuildRequires: intltool
 BuildRequires: gtk2-devel, atk-devel, cairo-devel, fontconfig-devel, pango-devel, gsl-devel, libxml2-devel
 BuildRequires: libgsf-devel

@@ -6,11 +6,11 @@ Release:	1
 License:	GPL
 Group:		User Interface/Desktops
 Summary:	application launcher
-Source0:	http://apwal.free.fr/download/%{name}-%{version}.tar.gz
+Source0:	https://apwal.free.fr/download/%{name}-%{version}.tar.gz
 Source1:	%{name}-editor.desktop
 Source2:	%{name}-editor.sh
-Source3:        http://apwal.free.fr/img/apwal-launcher-small.png
-URL:		http://apwal.free.fr/
+Source3:        https://apwal.free.fr/img/apwal-launcher-small.png
+URL:		https://apwal.free.fr/
 BuildRequires:	pkgconfig
 BuildRequires:	gtk2-devel 
 BuildRequires:	libxml2-devel

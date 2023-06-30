@@ -4,10 +4,10 @@ Name:               eggwm
 Version:            0.2
 Release:            19.1
 Summary:            Lightweight Qt Window Manager
-#Source0:            http://eggwm.googlecode.com/files/eggwm-%{version}.tar.gz
+#Source0:            https://eggwm.googlecode.com/files/eggwm-%{version}.tar.gz
 Source0:            eggwm-master.zip
 Source1:            eggwm.desktop
-#URL:                http://code.google.com/p/eggwm/
+#URL:                https://code.google.com/p/eggwm/
 URL:                https://github.com/xiangzhai/eggwm
 Group:              System/GUI/Other
 License:            GNU General Public License version 3 (GPL v3)

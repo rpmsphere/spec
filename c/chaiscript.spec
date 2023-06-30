@@ -2,7 +2,7 @@
 
 Name:         chaiscript
 Summary:      C++ Scripting Language
-URL:          http://www.chaiscript.com/
+URL:          https://www.chaiscript.com/
 Group:        Development/Language
 License:      BSD
 Version:      6.1.0

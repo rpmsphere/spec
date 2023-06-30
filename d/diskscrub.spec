@@ -4,9 +4,8 @@ Release: 3.1
 Summary: Disk scrubbing program
 License: GPL
 Group: System Environment/Base
-URL: http://sourceforge.net/projects/diskscrub/
+URL: https://sourceforge.net/projects/diskscrub/
 Source0: scrub-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
 
 %description
 This utility writes patterns on files or disk devices to make
@@ -38,7 +37,6 @@ install -m 644 scrub.1 $RPM_BUILD_ROOT/%{_mandir}/man1
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc ChangeLog NEWS DISCLAIMER COPYING
 %{_bindir}/scrub
 %{_mandir}/man*/*

@@ -4,7 +4,7 @@ Release: 1
 Summary: Small utility for creating desktop icons
 License: GPL
 Group: Graphical desktop/Icewm
-URL: http://www.oroborus.org
+URL: https://www.oroborus.org
 Source0: %url/debian/dists/sid/main/source/x11/%{name}_%version.tar.gz
 Patch0: %name-1.1.3-alt-errfmt.patch
 BuildRequires: libX11-devel libXpm-devel gcc glibc-devel

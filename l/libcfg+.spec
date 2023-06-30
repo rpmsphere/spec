@@ -3,8 +3,8 @@ Version:       0.6.2
 Release:       17.1
 Summary:       A C library that features multi- command line and configuration file parsing
 Group:         System/Libraries
-URL:           http://platon.sk/projects/libcfg+
-Source:        http://platon.sk/upload/_projects/00003/%{name}-%{version}.tar.gz
+URL:           https://platon.sk/projects/libcfg+
+Source:        https://platon.sk/upload/_projects/00003/%{name}-%{version}.tar.gz
 License:       GPL
 BuildRequires: docbook-utils
 BuildRequires: w3m

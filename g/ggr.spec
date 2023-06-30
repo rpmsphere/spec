@@ -7,8 +7,8 @@ Release:        1
 Summary:        A remake of a classic Ghouls and ghosts
 Group:          Amusements/Games
 License:        GPL
-URL:            http://www.valarsoft.com/ramuso/?dpage=pagine&page=pagine&pagID=8#GhoulsAndGhostsRemix
-Source0:        http://www.valarsoft.com/ramuso/down/%{name}_047.zip
+URL:            https://www.valarsoft.com/ramuso/?dpage=pagine&page=pagine&pagID=8#GhoulsAndGhostsRemix
+Source0:        https://www.valarsoft.com/ramuso/down/%{name}_047.zip
 BuildRequires:  gcc, allegro-devel, mesa-libGL-devel
 
 %description

@@ -6,9 +6,8 @@ Release:        191.1
 Summary:        Unicode Version of the Computer Modern Fonts
 License:        OFL-1.1
 Group:          System/X11/Fonts
-URL:            http://canopus.iacp.dvo.ru/~panov/cm-unicode/
+URL:            https://canopus.iacp.dvo.ru/~panov/cm-unicode/
 Source0:        ftp://canopus.iacp.dvo.ru/pub/Font/cm_unicode/cm-unicode-0.7.0-otf.tar.xz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
 
 %description
@@ -29,7 +28,6 @@ mkdir -p %{buildroot}%{_ttfontsdir}
 install -c -m 644 *.otf %{buildroot}%{_ttfontsdir}
 
 %files
-%defattr(-, root,root)
 %doc Changes FAQ FontLog.txt Fontmap.CMU* OFL* README TODO fonts.scale
 %{_ttfontsdir}
 

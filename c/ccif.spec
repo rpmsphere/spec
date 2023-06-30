@@ -4,9 +4,8 @@ Version: 0.3.20111209
 Release: 6.1
 License: LGPLv3
 Group: System Environment/Libraries
-URL: http://www.ccp4.ac.uk
+URL: https://www.ccp4.ac.uk
 Source0: ftp://ftp.ccp4.ac.uk/opensource/%{name}-%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Library for low level manipulation of CCIF files.
@@ -46,14 +45,12 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING* README
 %{_libdir}/libccif.so.*
 %dir %{_datadir}/ccif
 %{_datadir}/ccif/*
 
 %files devel
-%defattr(-,root,root)
 %{_includedir}/*
 %{_libdir}/libccif.so
 

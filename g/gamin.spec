@@ -17,10 +17,10 @@ Release: 32
 License: LGPLv2
 
 Group: Development/Libraries
-Source0: http://ftp.gnome.org/pub/GNOME/sources/gamin/0.1/gamin-%{version}.tar.bz2
+Source0: https://ftp.gnome.org/pub/GNOME/sources/gamin/0.1/gamin-%{version}.tar.bz2
 # sample config file
 Source1: gaminrc
-URL: http://www.gnome.org/~veillard/gamin/
+URL: https://www.gnome.org/~veillard/gamin/
 BuildRequires: glib2-devel
 BuildRequires: automake autoconf libtool
 

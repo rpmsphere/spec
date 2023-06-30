@@ -3,7 +3,7 @@ Summary: 	User-friendly face for Vim
 Version: 	0.43
 Release: 	6.1
 Source:		%{name}-%{version}.tar.gz
-URL:		http://cream.sourceforge.net/
+URL:		https://cream.sourceforge.net/
 License:	GPL
 Group:		Editors
 BuildRequires:  desktop-file-utils

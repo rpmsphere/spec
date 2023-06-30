@@ -2,7 +2,7 @@ Name:		industrial-gnome-theme
 Version: 0.2.34
 Release: 9.1
 License:	GPL
-URL:		http://www.ximian.com/
+URL:		https://www.ximian.com/
 Source0:	ximian-artwork-%version.tar.bz2
 Source1:    Industrial-index.theme
 BuildRequires:	gtk+-devel

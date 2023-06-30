@@ -5,8 +5,8 @@ Group:        Development/Libraries/Python
 Version:      0.8.0
 Release:      3.1
 Summary:      A high-level Python Web framework
-URL:          http://codeville.org/
-Source:       http://codeville.org/download/Codeville-%{version}.tar.gz
+URL:          https://codeville.org/
+Source:       https://codeville.org/download/Codeville-%{version}.tar.gz
 BuildRequires:  python2-devel python2-setuptools 
 BuildArch:    noarch
 

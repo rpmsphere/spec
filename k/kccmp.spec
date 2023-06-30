@@ -3,11 +3,10 @@ Version:       0.2
 Release:       7.1
 Summary:       A simple QT tool for comparing two linux kernel ".config" files
 Group:         Graphical Desktop/Applications/Development
-URL:           http://stoopidsimple.com/kccmp
-Source:        http://stoopidsimple.com/files/%{name}-%{version}.tar.gz
+URL:           https://stoopidsimple.com/kccmp
+Source:        https://stoopidsimple.com/files/%{name}-%{version}.tar.gz
 Patch0:        %{name}-0.2-qt4.patch
 License:       GPL
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 BuildRequires: boost-devel
 BuildRequires: fontconfig-devel
 BuildRequires: freetype-devel
@@ -47,7 +46,6 @@ install -D -m0755 kccmp $RPM_BUILD_ROOT%{_bindir}/kccmp
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/kccmp
 %doc README
 

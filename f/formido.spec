@@ -6,7 +6,7 @@ AutoReqProv:    on
 Version:        1.0.1
 Release:        1
 Summary:        Fast bug shooting game
-URL:            http://www.mhgames.cjb.net
+URL:            https://www.mhgames.cjb.net
 Source0:        %{name}-%{version}.tar.bz2
 Source3:        %{name}.png
 Patch:          %{name}-%{version}-make.patch

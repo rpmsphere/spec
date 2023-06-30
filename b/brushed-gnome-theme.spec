@@ -6,10 +6,10 @@ Version: 2011
 Release: 18.1
 License: GPL3
 Group: User Interface/Desktops
-Source0: http://orig13.deviantart.net/e16d/f/2011/345/5/4/brushed___gtk3_by_rvc_2011-d4iocrp.zip
+Source0: https://orig13.deviantart.net/e16d/f/2011/345/5/4/brushed___gtk3_by_rvc_2011-d4iocrp.zip
 Source1: %{theme_name}-index.theme
 Source2: RealSteel.jpg
-URL: http://rvc-2011.deviantart.com/art/Brushed-GTK3-273234085
+URL: https://rvc-2011.deviantart.com/art/Brushed-GTK3-273234085
 BuildArch: noarch
 Requires: nouvegnome-icon-theme
 Requires: modblackmoon-steelking-cursor-theme
@@ -19,9 +19,9 @@ Theme created with an intention to have a matching gtk / metacity for brushed
 metal gnome shell theme. This theme is a mod and re-mix of 2 different themes.
 Full credit to the original authors:
 a) Metacity is a mod from SLAVE-gtk3 by half-left
-http://half-left.deviantart.com/art/SLAVE-GTK3-256366787
+https://half-left.deviantart.com/art/SLAVE-GTK3-256366787
 b) gtk3 is a mod from Luminiare created by sauravzone1
-http://gnome-look.org/content/show.php/Luminaire?content=146615
+https://gnome-look.org/content/show.php/Luminaire?content=146615
 Wallpaper "Real Steel" by ilnanny.
 
 %prep

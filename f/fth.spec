@@ -4,7 +4,7 @@ Version: 1.4.1
 Release: 1
 Group: Development/Languages
 License: BSD
-URL: http://fth.sourceforge.net/
+URL: https://fth.sourceforge.net/
 Source0: https://netix.dl.sourceforge.net/project/fth/fth/%{version}/%{name}-%{version}.tar.bz2
 
 %description

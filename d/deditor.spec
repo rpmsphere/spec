@@ -4,7 +4,7 @@ Version: 0.4.0
 Release: 1
 Group: python
 License: Free Software
-URL: http://launchpad.net/deditor/
+URL: https://launchpad.net/deditor/
 Source0: %{name}_%{version}_all.deb
 #Source0: %{name}.tar.gz
 BuildArch: noarch

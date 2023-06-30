@@ -4,8 +4,8 @@ Version:       2.0.1
 Release:       1
 Summary:       A game where you must align 5 pieces on a board
 Group:         Graphical Desktop/Applications/Games
-URL:           http://flibuste.net/libre/morpyon/
-Source0:       http://flibuste.net/libre/morpyon/Morpyon-%{version}.tar.gz
+URL:           https://flibuste.net/libre/morpyon/
+Source0:       https://flibuste.net/libre/morpyon/Morpyon-%{version}.tar.gz
 Source1:       morpyon.desktop
 Patch:         morpyon-2.0.1-path.patch
 License:       GPL

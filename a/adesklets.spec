@@ -4,7 +4,7 @@ Name:           adesklets
 Version:        0.6.1
 Release:        1
 License:        GPL
-URL:            http://adesklets.sourceforge.net/
+URL:            https://adesklets.sourceforge.net/
 Source0:        %{name}-%{version}.tar.bz2
 Group:          Development/Tools
 Requires:	tkinter

@@ -4,7 +4,7 @@ Version: 0.5.2
 Release: 1
 Group: utils
 License: Free Software
-URL: http://www.linux-hardware-guide.com
+URL: https://www.linux-hardware-guide.com
 Source0: %{name}-master.zip
 BuildRequires: desktop-file-utils
 BuildArch: noarch
@@ -14,7 +14,7 @@ Open source tools to access the Linux-Hardware-Guide knowledge base, auto-detect
 your hardware and find matching configuration support. Support for adding new
 hardware to the data base.
 This project provides a set of tools, which allow the direct access to
-Linux-Hardware-Guide knowledge base (http://www.linux-hardware-guide.com).
+Linux-Hardware-Guide knowledge base (https://www.linux-hardware-guide.com).
 
 %prep
 %setup -q -n %{name}-master

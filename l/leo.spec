@@ -3,10 +3,10 @@ Name:           leo
 Version:        5.1
 Release:        8.1
 Summary:        Leonine Editor with Outlines
-URL:            http://webpages.charter.net/edreamleo/front.html
+URL:            https://webpages.charter.net/edreamleo/front.html
 License:        MIT
 Group:          Applications/Editor
-Source0:        http://dl.sourceforge.net/project/leo/Leo/%{version}%20final/Leo-%{version}-final.zip
+Source0:        https://dl.sourceforge.net/project/leo/Leo/%{version}%20final/Leo-%{version}-final.zip
 BuildArch:      noarch
 BuildRequires:  python2
 BuildRequires:  python2-setuptools

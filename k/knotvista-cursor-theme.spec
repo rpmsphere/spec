@@ -6,12 +6,12 @@ Version:        20100213
 Release:        5.1
 License:        freeware
 Group:          User Interface/Desktops
-URL:            http://grynays.deviantart.com/art/KnotVista-153964866?q=1&qo=1
-Source0:        http://www.deviantart.com/download/153964866/KnotVista_by_GrynayS.gz
+URL:            https://grynays.deviantart.com/art/KnotVista-153964866?q=1&qo=1
+Source0:        https://www.deviantart.com/download/153964866/KnotVista_by_GrynayS.gz
 BuildArch:      noarch
 
 %description
-Original Theme By J. Aroche: http://fav.me/dyu36c
+Original Theme By J. Aroche: https://fav.me/dyu36c
 For the conversion I used the program perl sd2xc-2.5.pl adds KDE4 Compatibility,
 and adjusts the individual pointer animations with GIMP and XMC plugin.
 

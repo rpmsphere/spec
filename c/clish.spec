@@ -4,8 +4,8 @@ Release:        4.1
 Summary:        CISCO-like Command Line Interface
 Group:          System Environment/Shells
 License:        GPLv2 
-URL:		http://clish.sourceforge.net/
-Source0: 	http://downloads.sourceforge.net/%{name}-%{version}.tar.gz   
+URL:		https://clish.sourceforge.net/
+Source0: 	https://downloads.sourceforge.net/%{name}-%{version}.tar.gz   
 BuildRequires:  gcc-c++
 BuildRequires:  autoconf
 BuildRequires:  automake

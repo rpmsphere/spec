@@ -5,8 +5,8 @@ Summary:        Preload library for sugarizing
 Version:        2007
 Release:        1
 License:        LGPLv2
-URL:		http://dev.laptop.org/git/users/albert/sugarize/
-Source:         http://dev.laptop.org/git/users/albert/sugarize/snapshot/sugarize-master.tar.gz
+URL:		https://dev.laptop.org/git/users/albert/sugarize/
+Source:         https://dev.laptop.org/git/users/albert/sugarize/snapshot/sugarize-master.tar.gz
 Group:          Sugar/Libraries
 BuildRequires:  libX11-devel
 Requires:       sugar

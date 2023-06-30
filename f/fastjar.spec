@@ -1,11 +1,11 @@
 Name:         fastjar
 Summary:      Fast Java Archive (JAR) Tool
-URL:          http://savannah.nongnu.org/projects/fastjar
+URL:          https://savannah.nongnu.org/projects/fastjar
 Group:        Archiver
 License:      GPL
 Version:      0.98
 Release:      5.1
-Source0:      http://download.savannah.gnu.org/releases/fastjar/fastjar-%{version}.tar.gz
+Source0:      https://download.savannah.gnu.org/releases/fastjar/fastjar-%{version}.tar.gz
 
 %description
 FastJar is an attempt at creating a feature-for-feature copy of

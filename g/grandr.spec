@@ -4,7 +4,7 @@ Release: 5.1
 Summary: RandR user interface using GTK+ libraries
 License: MIT/X11
 Group: System/X11
-URL: http://cgit.freedesktop.org/xorg/app/%name/
+URL: https://cgit.freedesktop.org/xorg/app/%name/
 Source: %name-%version.tar
 Patch1: grandr-debian-01-fix-segfault-when-click-monitor.patch
 Patch2: grandr-mandriva-synchronize-before-and-after-apply.patch

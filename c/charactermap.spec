@@ -5,7 +5,7 @@ Release: 1
 Summary: Character Map in Qt4
 License: GPL
 Group: Applications/Utility
-Source0: http://jserv.sayya.org/misc/%{name}.tar.bz2
+Source0: https://jserv.sayya.org/misc/%{name}.tar.bz2
 Source1: charactermap.png
 BuildRequires: qt4-devel
 

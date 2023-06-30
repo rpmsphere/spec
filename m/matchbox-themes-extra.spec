@@ -2,10 +2,10 @@ Summary: 	Themes for the Matchbox Desktop
 Name: 		matchbox-themes-extra
 Version: 	0.3
 Release: 	8.1
-URL: 		http://matchbox-project.org
+URL: 		https://matchbox-project.org
 License: 	GPLv2+
 Group: 		Graphical desktop/Other
-Source: 	http://matchbox-project.org/sources/matchbox-themes-extra/%version/%{name}-%{version}.tar.bz2
+Source: 	https://matchbox-project.org/sources/matchbox-themes-extra/%version/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 
 %description

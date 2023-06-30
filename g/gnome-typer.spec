@@ -4,8 +4,8 @@ Version: 0.4.2
 Release: 11.1
 Group: Applications/Education
 License: GPLv3+
-URL: http://code.google.com/p/gnome-typer
-Source0: http://gnome-typer.googlecode.com/files/typer-%{version}.tar.bz2
+URL: https://code.google.com/p/gnome-typer
+Source0: https://gnome-typer.googlecode.com/files/typer-%{version}.tar.bz2
 BuildRequires:  atk-devel
 BuildRequires:  cairo-devel
 BuildRequires:  cairo-gobject-devel

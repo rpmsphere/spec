@@ -6,7 +6,7 @@ Release:        9.4
 Summary:        Simple Paint Application
 Group:          Applications/Graphics
 License:        GPL
-URL:            http://www.gnu.org/software/gpaint/
+URL:            https://www.gnu.org/software/gpaint/
 Source0:        ftp://alpha.gnu.org/gnu/gpaint/%{name}-2-%{version}.tar.gz
 Source1:        gpaint-2.desktop
 Source2:        gpaint-2.png

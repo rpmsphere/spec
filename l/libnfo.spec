@@ -5,8 +5,8 @@ Release:        1
 Summary:        An NFO file parser/writer library
 Group:          System Environment/Libraries
 License:        LGPLv2+
-URL:            http://libnfo.geexbox.org/
-Source0:        http://libnfo.geexbox.org/releases/%{name}-1.0.1.tar.bz2
+URL:            https://libnfo.geexbox.org/
+Source0:        https://libnfo.geexbox.org/releases/%{name}-1.0.1.tar.bz2
 BuildRequires:  libxml2-devel,doxygen
 
 %description

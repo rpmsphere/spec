@@ -6,7 +6,7 @@ Release:    3.1
 Group:      System/Base
 License:    GPLv2
 BuildArch:  noarch
-URL:        http://meego.gitorious.org/meego-developer-tools/image-creator
+URL:        https://meego.gitorious.org/meego-developer-tools/image-creator
 Source0:    %{name}-%{version}.tar.gz
 Requires:   util-linux
 Requires:   coreutils

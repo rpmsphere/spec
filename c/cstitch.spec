@@ -6,10 +6,10 @@ Version:	0.9.8
 Release:	8.1
 License:	GPLv2+
 Group:		Applications/Graphics
-URL:		http://cstitch.sourceforge.net/
+URL:		https://cstitch.sourceforge.net/
 Source0:	%{name}_%{version}_code.zip
 Source1:        https://sourceforge.net/projects/cstitch/files/Cstitch/Icons/icons.zip
-BuildRequires:	qt5-devel
+BuildRequires:	qt5-qtbase-devel
 BuildRequires:	python2
 
 %description

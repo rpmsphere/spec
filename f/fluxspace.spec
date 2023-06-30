@@ -5,7 +5,7 @@ Release: 1
 License: GPL
 Group: System/GUI/Other
 Source: %{name}-%{version}.tar.bz2
-URL: http://fluxspace.sourceforge.net/
+URL: https://fluxspace.sourceforge.net/
 Requires: fluxbox python libxml2 rox
 BuildRequires: swig, python2-devel, imlib2-devel, libxml2-devel
 #BuildRequires: allegro-devel

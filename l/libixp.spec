@@ -4,8 +4,8 @@ Release: 5.1
 Summary: Plan9 file protocol library
 License: MIT
 Group: System/Libraries
-URL: http://www.suckless.org/wiki/libs/libixp
-Source: http://hg.suckless.org/libixp/archive/339db5c6d2c9.tar.gz
+URL: https://www.suckless.org/wiki/libs/libixp
+Source: https://hg.suckless.org/libixp/archive/339db5c6d2c9.tar.gz
 
 %description
 libixp is a stand-alone client/server 9P library.

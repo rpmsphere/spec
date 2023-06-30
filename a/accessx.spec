@@ -7,8 +7,8 @@ Summary:        Open source utility to set and display all of the XKEYBOARD
 
 Group:          User Interface/X
 License:        GPLv2+
-URL:            http://cita.disability.uiuc.edu/software/accessx/freewareaccessx.php
-Source0:        http://cita.disability.uiuc.edu/software/accessx/files/%{name}0951.tar.gz
+URL:            https://cita.disability.uiuc.edu/software/accessx/freewareaccessx.php
+Source0:        https://cita.disability.uiuc.edu/software/accessx/files/%{name}0951.tar.gz
 
 #The makefile is totally hadwriten, we had to make sure that it is sane.
 #A mail with the patches sent to the upstream
@@ -42,7 +42,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/ax
 %{_bindir}/accessx
 %doc README

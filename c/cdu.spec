@@ -2,9 +2,9 @@ Name:				 cdu
 Version:			 0.37
 Release:			 6.1
 Summary:			 Coloured Disk Usage
-Source:			 http://arsunik.free.fr/pkg/cdu-%{version}.tar.gz
+Source:			 https://arsunik.free.fr/pkg/cdu-%{version}.tar.gz
 Patch1:			 cdu-mandir.patch
-URL:				 http://arsunik.free.fr/prog/cdu.html
+URL:				 https://arsunik.free.fr/prog/cdu.html
 Group:			 Productivity/File utilities
 License:			 GNU General Public License version 2 or later (GPL v2 or later)
 BuildRequires:	 perl

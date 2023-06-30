@@ -6,7 +6,7 @@ Version: 1.9
 Release: 1
 Group: Monitoring
 License: GPL
-URL: http://gtksysinfo.sourceforge.net/
+URL: https://gtksysinfo.sourceforge.net/
 Source0: https://master.dl.sourceforge.net/project/gtksysinfo/gtksysinfo%20Stable/%{_name}_%{version}/%{_name}%{version}.tar.gz
 BuildArch: noarch
 

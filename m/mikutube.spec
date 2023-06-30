@@ -5,7 +5,7 @@ Summary: The video of Hatsune Miku is downloaded from youtube
 Source: %{name}-%{version}.tar.gz
 Source1: mikutube.desktop
 Patch:   systray.patch
-URL: http://kaoru-linux.cocolog-nifty.com/blog/
+URL: https://kaoru-linux.cocolog-nifty.com/blog/
 Group: Productivity/Multimedia/Video/Players
 License: GNU General Public License v3
 BuildArch: noarch

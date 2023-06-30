@@ -6,8 +6,8 @@ Version: 0.9.9
 Release: 18.4
 License: Public Domain
 Group: Development/Language
-Source: http://sam.nipl.net/brace/%{name}.tgz
-URL: http://sam.nipl.net/cz/
+Source: https://sam.nipl.net/brace/%{name}.tgz
+URL: https://sam.nipl.net/cz/
 BuildRequires: libpng-devel, SDL-devel, SDL_mixer-devel, mesa-libGL-devel
 
 %description

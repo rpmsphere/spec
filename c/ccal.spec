@@ -5,9 +5,9 @@ License:    GPL, portions LGPL
 Group:       Utilities/System 
 Version:      2.5.3
 Release:      4.1
-URL: 	     http://ccal.chinesebay.com/ccal/index.html
+URL: 	     https://ccal.chinesebay.com/ccal/index.html
 Summary:     Display a calendar together with Chinese calendar
-Source:       http://ccal.chinesebay.com/ccal/%{name}-%{version}.tar.gz 
+Source:       https://ccal.chinesebay.com/ccal/%{name}-%{version}.tar.gz 
 Patch0:       ccal-2.5.3-make.patch
 
 %description

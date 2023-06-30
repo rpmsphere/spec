@@ -4,7 +4,7 @@ Release:        15.1
 Summary:        Serial Graph Partitioning and Fill-reducing Matrix Ordering
 Group:          Productivity/Graphics/3D Editors
 License:        GPL
-URL:            http://www.code-aster.org/V2/spip.php?rubrique1
+URL:            https://www.code-aster.org/V2/spip.php?rubrique1
 Source0:        metis-edf-4.1-2.noarch.tar.bz2
 Patch0:         metis-edf-4.1-2-configure.patch
 Patch1:         metis-edf-4.1-2-Makefile.patch

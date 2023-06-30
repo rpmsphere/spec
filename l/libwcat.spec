@@ -6,8 +6,8 @@ Version:	1.1
 Release:	11.1
 License:	LGPL
 Group:		System/Libraries
-URL:		http://oss.digirati.com.br/watchcatd/
-Source0:	http://oss.digirati.com.br/watchcatd/%{name}-%{version}.tar.gz
+URL:		https://oss.digirati.com.br/watchcatd/
+Source0:	https://oss.digirati.com.br/watchcatd/%{name}-%{version}.tar.gz
 Patch0:		libwcat-ldflags.diff
 Patch1:		libwcat-socket_location_fix.diff
 Requires:   watchcatd

@@ -5,8 +5,8 @@ Group:        Development/Libraries/Python
 Version:      0.93
 Release:      4.1
 Summary:      Distributed Internet Backup System
-URL:          http://web.mit.edu/~emin/www.old/source_code/dibs/
-Source:       http://web.mit.edu/~emin/www.old/source_code/dibs/DIBS-%{version}.tar.gz
+URL:          https://web.mit.edu/~emin/www.old/source_code/dibs/
+Source:       https://web.mit.edu/~emin/www.old/source_code/dibs/DIBS-%{version}.tar.gz
 BuildArch:    noarch
 BuildRequires:  python2-devel 
 

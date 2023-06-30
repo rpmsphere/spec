@@ -5,11 +5,10 @@ Summary:        Fake Access Points generator
 
 Group:          Applications/Internet
 License:        GPLv2
-URL:            http://www.blackalchemy.to/project/fakeap/
+URL:            https://www.blackalchemy.to/project/fakeap/
 #Reported upstream about the url issue but till now no answer
-#Source0:        http://www.blackalchemy.to:8060/project/fakeap/download.php?name=%{name}-%{version}.tar.gz
+#Source0:        https://www.blackalchemy.to:8060/project/fakeap/download.php?name=%{name}-%{version}.tar.gz
 Source0:        %{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Buildarch:      noarch
 
 Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
@@ -36,7 +35,6 @@ sed -i -e '1d;2i#!/usr/bin/perl' $RPM_BUILD_ROOT%{_bindir}/%{name}.pl
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %doc COPYING CREDITS INSTALL README lists/
 %{_bindir}/%{name}.pl
 

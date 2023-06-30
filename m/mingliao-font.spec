@@ -6,9 +6,8 @@ License: Other
 Group: System/X11/Fonts
 #Source0: https://www.sugarsync.com/pf/D910303_67_8650538496?directDownload=true
 Source0: mingliao_dev.ttf
-BuildRoot: %{_tmppath}/build-root-%{name}
 BuildArch: noarch
-URL: http://www.byvoid.com/blog/mingliao-ofy
+URL: https://www.byvoid.com/blog/mingliao-ofy
 
 %description
 An old-shaped chinese glyph font based on the japanese font Meiryo.
@@ -27,7 +26,6 @@ cp %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/fonts
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,0755)
 %{_datadir}/fonts/*.ttf
 
 %changelog

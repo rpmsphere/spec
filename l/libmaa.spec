@@ -4,7 +4,7 @@ Release: 5.1
 Summary: Software for RFC 2229
 License: GPLv2, LGPLv2
 Group: System/Libraries
-URL: http://sourceforge.net/projects/dict/
+URL: https://sourceforge.net/projects/dict/
 Source: %name-%version.tar
 
 %description

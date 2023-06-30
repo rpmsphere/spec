@@ -5,8 +5,8 @@ Version:        0.9.10
 Release:        2.1
 Summary:        A verbose packet sniffer for hosts
 License:        GPLv2+
-URL:            http://ipgrab.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:            https://ipgrab.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  libpcap-devel
 
 %description

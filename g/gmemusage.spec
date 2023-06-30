@@ -6,8 +6,7 @@ Release:		69.1
 Group:          	System/Monitoring
 License:		GPL
 Source:			%{name}-%{version}.tar.bz2
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-URL:			http://oss.sgi.com/projects/gmemusage/
+URL:			https://oss.sgi.com/projects/gmemusage/
 BuildRequires:		desktop-file-utils
 Requires:		hicolor-icon-theme
 BuildRequires:		hicolor-icon-theme
@@ -40,7 +39,6 @@ desktop-file-install                                    \
  $RPM_BUILD_ROOT/%{_datadir}/applications/%{name}.desktop
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}*
 %doc ChangeLog COPYING NEWS README TODO CREDITS

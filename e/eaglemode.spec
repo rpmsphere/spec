@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
 Name:           eaglemode
-URL:            http://eaglemode.sourceforge.net/
+URL:            https://eaglemode.sourceforge.net/
 Summary:        The most advanced Zoomable User Interface
 License:        GPL-3.0+
 Group:          Development/Tools/Other
 Version:        0.96.0
 Release:        1
-Source:         http://dl.sourceforge.net/project/%{name}/%{name}-%{version}/%{name}-%{version}.tar.bz2
+Source:         https://dl.sourceforge.net/project/%{name}/%{name}-%{version}/%{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
 Source2:        %{name}_16x16.png
 Source3:        %{name}_24x24.png

@@ -15,10 +15,10 @@ Release:        21.1
 %define	apache_sysconfdir	%(%{apxs} -q SYSCONFDIR)
 %define base_dir /var/www/base
 %define real_name base
-URL:            http://base.secureideas.net/
+URL:            https://base.secureideas.net/
 Summary:        BASE is the Basic Analysis and Security Engine
 License:        GPLv2
-Source0:        http://sourceforge.net/projects/secureideas/files/BASE/%{real_name}-%{version}/%{real_name}-%{version}.tar.gz
+Source0:        https://sourceforge.net/projects/secureideas/files/BASE/%{real_name}-%{version}/%{real_name}-%{version}.tar.gz
 Source1:        %{name}.conf.default
 Source2:        %{name}.conf.vhost
 Source3:        %{name}.conf.nonsuse

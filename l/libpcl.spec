@@ -3,8 +3,8 @@ Version:        1.12
 Release:        1
 Summary:        Portable Coroutine Library (PCL)
 License:        GPLv2+
-URL:            http://xmailserver.org/libpcl.html
-Source0:        http://xmailserver.org/pcl-%{version}.tar.gz
+URL:            https://xmailserver.org/libpcl.html
+Source0:        https://xmailserver.org/pcl-%{version}.tar.gz
 
 %description
 The Portable Co-routine Library (PCL) implements the low level 

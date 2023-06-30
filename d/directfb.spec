@@ -7,8 +7,8 @@ Version: %{major_ver}%{minor_ver}
 Release: 6.1
 Group: System Environment/Libraries
 License: LGPLv2+
-URL: http://www.directfb.org/
-Source0: http://www.directfb.org/downloads/Core/DirectFB-%{major_ver}/DirectFB-%{version}.tar.gz
+URL: https://www.directfb.org/
+Source0: https://www.directfb.org/downloads/Core/DirectFB-%{major_ver}/DirectFB-%{version}.tar.gz
 Source1: 85-directfb.rules
 Patch2: DirectFB-1.5.3-fix_v4l1.patch
 Patch3: DirectFB-1.6.1-lm.patch
@@ -35,9 +35,7 @@ BuildRequires: libvncserver-devel
 %{?_with_fusion:Requires: linux-fusion}
 BuildRequires: mesa-libEGL-devel
 BuildRequires: mesa-libGLES-devel
-%if 0%{?fedora} >= 17
 BuildRequires: mesa-libgbm-devel
-%endif
 BuildRequires: tslib-devel
 
 %description
@@ -74,9 +72,7 @@ Development files for DirectFB.
 %patch4 -p1 -b .arm-atomics
 %patch5 -p1 -b .davinci
 %patch6 -p1 -b .vdpau
-%if 0%{?fedora} >= 18
 #patch8 -p1 -b .stride
-%endif
 %patch9 -p1 -b .fusionID
 
 #Disable ppc asm since compilation fails (and it seems better to use glibc)
@@ -124,7 +120,6 @@ install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root,-)
 %doc AUTHORS COPYING ChangeLog NEWS README TODO
 %{_bindir}/dfbfx
 %{_bindir}/dfbg
@@ -215,7 +210,6 @@ install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 %{_sysconfdir}/udev/rules.d/85-directfb.rules
 
 %files devel
-%defattr(-,root,root,-)
 %doc docs/html/*.html docs/html/*.png
 %exclude %{_bindir}/directfb-config
 %{_bindir}/directfb-csource

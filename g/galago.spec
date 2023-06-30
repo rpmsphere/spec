@@ -2,10 +2,10 @@ Summary: Base library of Galago
 Name: galago
 Version: 0.5.2
 Release: 14.1
-Source0: http://www.galago-project.org/files/releases/source/libgalago/lib%{name}-%{version}.tar.bz2
+Source0: https://www.galago-project.org/files/releases/source/libgalago/lib%{name}-%{version}.tar.bz2
 License: LGPL
 Group: System/Libraries
-URL: http://www.galago-project.org/
+URL: https://www.galago-project.org/
 BuildRequires: dbus-glib-devel
 BuildRequires: gtk-doc
 BuildRequires: w3m

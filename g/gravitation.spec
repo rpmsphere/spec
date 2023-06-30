@@ -6,8 +6,8 @@ Release:        8.1
 Summary:       	A video game about mania, melancholia, and the creative process
 Group:          Amusements/Games/Other
 License:        SUSE-Public-Domain
-URL:            http://hcsoftware.sourceforge.net/gravitation/
-Source0:        http://sourceforge.net/projects/hcsoftware/files/%{_name}_v%{version}_UnixSource.tar.gz
+URL:            https://hcsoftware.sourceforge.net/gravitation/
+Source0:        https://sourceforge.net/projects/hcsoftware/files/%{_name}_v%{version}_UnixSource.tar.gz
 Patch0:			Gravitation_v3_UnixSource-lpthread_issue.patch
 BuildRequires:  SDL-devel, desktop-file-utils
 

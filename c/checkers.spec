@@ -7,7 +7,7 @@ Source0: %{name}-%{version}.tar.gz
 License: MIT
 Group: Games
 BuildArch: noarch
-URL: http://purl.oclc.org/NET/JesseW/Python
+URL: https://purl.oclc.org/NET/JesseW/Python
 BuildRequires: python
 
 %description

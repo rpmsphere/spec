@@ -4,7 +4,7 @@ Name:			extend-disc-image
 Version:		0.0.6
 Summary:		Expand a VirtualBox disc image
 License:		GPLv2
-URL:			http://www.davjam.org/~davjam/linux/expand-disc-image/
+URL:			https://www.davjam.org/~davjam/linux/expand-disc-image/
 Group:			Productivity/File utilities
 Release:		5.1
 Source:			%{name}-%{version}.tar.gz

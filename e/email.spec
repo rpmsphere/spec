@@ -4,8 +4,8 @@ Release:        4.1
 Summary:        A command line SMTP client
 Group:          Applications/Internet
 License:        GPLv2+
-URL:            http://www.cleancode.org/projects/email
-Source0:        http://www.cleancode.org/downloads/email/%{name}-%{version}.tar.gz
+URL:            https://www.cleancode.org/projects/email
+Source0:        https://www.cleancode.org/downloads/email/%{name}-%{version}.tar.gz
 
 %description
 Email is a program for the Unix environment that sends messages from the 

@@ -3,11 +3,11 @@ Version: 0.1.0
 Release: 2.1
 License: GPL
 Group: Graphical desktop/Icewm
-URL: http://icewmdarkt.berlios.de
+URL: https://icewmdarkt.berlios.de
 Summary: A theme for IceWM inspired by the Silver Vista, IceVista and VistaBlack themes
 BuildArch: noarch
 Requires: icewm
-Source: http://download.berlios.de/icewmdarkt/darkt-0.1.0.tar.gz
+Source: https://download.berlios.de/icewmdarkt/darkt-0.1.0.tar.gz
 
 %description
 These themes were inspired by the Silver Vista, IceVista and VistaBlack themes.

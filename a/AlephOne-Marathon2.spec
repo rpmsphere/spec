@@ -4,10 +4,10 @@ Version:		1.0
 Release:		1
 License:		GPL
 Group:			Amusements/Games/3D/Shoot
-#Source:		http://alephone.cebix.net/downloads/AlephOne-Marathon2-1.0.tar.gz
+#Source:		https://alephone.cebix.net/downloads/AlephOne-Marathon2-1.0.tar.gz
 Source:			%{name}-%{version}.tar.bz2
 Source1:                AlephOne.png
-URL:			http://alephone.cebix.net
+URL:			https://alephone.cebix.net
 Requires:		AlephOne
 #BuildRequires:	update-desktop-files
 Provides:		AlephOne-data

@@ -3,8 +3,8 @@ Version:       0.7
 Release:       19.1
 Summary:       A C library for accessing calendars
 Group:         System/Libraries
-URL:           http://libmcal.sourceforge.net/
-Source:        http://easynews.dl.sourceforge.net/sourceforge/libmcal/libmcal-%{version}.tar.gz
+URL:           https://libmcal.sourceforge.net/
+Source:        https://easynews.dl.sourceforge.net/sourceforge/libmcal/libmcal-%{version}.tar.gz
 Patch0:        libmcal-%{version}-flexfix.patch
 License:       GPL
 

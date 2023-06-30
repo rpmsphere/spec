@@ -13,8 +13,8 @@ Release:	10.1
 Summary:	A 3D CAD CAM application
 Group:		Graphics/3D
 License:	GPLv3
-URL:		http://www.gcad3d.org
-Source0:	http://www.gcad3d.org/download/%{oname}_%{version}-src.zip
+URL:		https://www.gcad3d.org
+Source0:	https://www.gcad3d.org/download/%{oname}_%{version}-src.zip
 Source1:	examples.gz
 BuildRequires: gtk3-devel
 BuildRequires: ctags

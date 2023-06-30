@@ -5,9 +5,9 @@ Version:	1.2
 Release:	3.1
 License:	GPL v2
 Group:		Applications/Terminal
-Source0:	http://runslinux.net/projects/color/%{name}-%{version}.tar.gz
+Source0:	https://runslinux.net/projects/color/%{name}-%{version}.tar.gz
 # Source0-md5:	17938f68c0ad3060111446c34922fdf2
-URL:		http://runslinux.net/?page_id=10
+URL:		https://runslinux.net/?page_id=10
 
 %description
 Color is a convenience tool to ease the use of ANSI coloring in your

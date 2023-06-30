@@ -40,7 +40,6 @@ ldconfig
 ldconfig
 
 %files
-%defattr(-,root,root,-)
 %doc TODO.txt
 %{_bindir}/%{name}
 %{_libdir}/%{name}/

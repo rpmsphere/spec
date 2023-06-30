@@ -2,12 +2,12 @@
 
 Name:         cinvoke
 Summary:      Foreign Function Call Library
-URL:          http://www.nongnu.org/cinvoke/
+URL:          https://www.nongnu.org/cinvoke/
 Group:        Compiler
 License:      MIT-style
 Version:      1.0
 Release:      20080111.1
-Source0:      http://download.savannah.nongnu.org/releases/cinvoke/cinvoke-%{version}.tgz
+Source0:      https://download.savannah.nongnu.org/releases/cinvoke/cinvoke-%{version}.tgz
 Patch:        cinvoke.patch
 BuildRequires: perl
 

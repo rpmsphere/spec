@@ -5,10 +5,9 @@ Release:	2.1
 License:	GPL
 Group:		Applications/Networking
 Vendor:		John Goerzen <jgoerzen@complete.org>
-Source0:	http://gopher.quux.org:70/give-me-gopher/%{name}_%{version}.tar.gz
+Source0:	https://gopher.quux.org:70/give-me-gopher/%{name}_%{version}.tar.gz
 URL:		gopher://gopher.quux.org/1/Software/Gopher
 BuildRequires:	ncurses-devel
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The gopher client is used to talk to gopher servers.
@@ -35,7 +34,6 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir},%{_mandir}/man{1,5,8}}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644,root,root,755)
 %doc copyright README doc/{FAQ,PLATFORMS,TODO} doc/[cgo]*.changes
 %doc announcements/*.html
 %attr(755,root,root) %{_bindir}/*

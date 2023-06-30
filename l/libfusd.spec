@@ -7,8 +7,8 @@ Version:       1.10.11
 Release:       13.1
 Summary:       A Linux framework for proxying device file callbacks into user-space
 Group:         System/Libraries
-URL:           http://www.circlemud.org/~jelson/software/fusd/
-Source:        http://fort.xdas.com/~kor/oss2jack/fusd-kor-%{majver}-%{minver}.tar.gz
+URL:           https://www.circlemud.org/~jelson/software/fusd/
+Source:        https://fort.xdas.com/~kor/oss2jack/fusd-kor-%{majver}-%{minver}.tar.gz
 Patch:         libfusd-1.10-10-Makefile.patch
 Patch1:        libfusd-1.10.11-kernel2.6.26.patch
 Patch2:        libfusd-1.10.11-flag-for-more-data.patch

@@ -5,13 +5,13 @@ Version:        1.20
 Release:        1
 License:        GPLv2
 Group:          Amusements/Games/Action/Arcade
-Source:         http://www.level7.org.uk/chroma/download/%{name}-%{version}.tar.bz2
+Source:         https://www.level7.org.uk/chroma/download/%{name}-%{version}.tar.bz2
 Source1:        %{name}-curses.png
 Source2:        %{name}-curses.desktop
 Source3:        %{name}.png
 Source4:        %{name}.desktop
 Patch0:         %{name}-permissions.patch
-URL:            http://www.level7.org.uk/chroma/
+URL:            https://www.level7.org.uk/chroma/
 
 %description
 Chroma is an abstract puzzle game. A variety of colourful shapes are arranged

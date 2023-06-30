@@ -4,17 +4,17 @@ Name: antico-deluxe
 Version: 0.1.96
 Release: 7.4
 Summary: A Qt4 Window/Desktop manager
-Source: http://anticodeluxe.googlecode.com/files/%srcname-%version.tar.bz2
+Source: https://anticodeluxe.googlecode.com/files/%srcname-%version.tar.bz2
 Patch0: %srcname-0.1.96-link.patch
 Patch1: antico-deluxe-0.1.96-alt-DSO.patch
 Patch2: antico-deluxe-0.1.96-alt-glibc-2.16.patch
-URL: http://code.google.com/p/anticodeluxe/
+URL: https://code.google.com/p/anticodeluxe/
 Group: Graphical desktop/Other
 License: GPLv2 Artistic
 BuildRequires: gcc-c++ alsa-lib-devel libao-devel qt4-devel libvorbis-devel
 
 %description
-Antico Deluxe is a fork of famous Antico WM/DE (http://antico.wordpress.com/),
+Antico Deluxe is a fork of famous Antico WM/DE (https://antico.wordpress.com/),
 with some new features added and many new planned.
 
 The goal is to create very simple and fast Window/Desktop manager with very

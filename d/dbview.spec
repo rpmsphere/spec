@@ -6,7 +6,7 @@ Version:	1.0.4
 Release:	3.1
 Group:		System/Utility
 License:	GPL
-URL:		http://www.infodrom.org/projects/dbview/
+URL:		https://www.infodrom.org/projects/dbview/
 Vendor:		Martin Schulze <joey@infodrom.org>
 Source:		%{name}-%{version}.tar.gz
 BuildRequires:	gcc

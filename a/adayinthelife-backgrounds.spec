@@ -7,7 +7,7 @@ Summary:        A Day in the Life backgrounds
 Group:          User Interface/Desktops
 License:        freeware
 Source0:        a_day_in_the_life_by_barid42-d3dzbcc.7z
-URL:            http://barid42.deviantart.com/art/A-Day-in-the-Life-204881196
+URL:            https://barid42.deviantart.com/art/A-Day-in-the-Life-204881196
 Source1:        %{name}.xml
 Source2:        %{_name}-default.xml
 BuildArch:      noarch

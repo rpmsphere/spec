@@ -4,8 +4,8 @@ Release:        17.1
 Summary:        A Sound Sample Editor for GNOME
 Group:          Applications/Multimedia
 License:        GPLv2+
-URL:            http://live.gnome.org/Marlin
-Source0:        http://folks.o-hand.com/iain/%{name}-releases/%{name}-%{version}.tar.bz2
+URL:            https://live.gnome.org/Marlin
+Source0:        https://folks.o-hand.com/iain/%{name}-releases/%{name}-%{version}.tar.bz2
 Patch0:         %{name}-%{version}-link-fix.patch
 Patch1:         %{name}-%{version}-icon-path.patch
 BuildRequires:  GConf2-devel

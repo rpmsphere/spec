@@ -2,12 +2,12 @@
 
 Name:         heirloom-sh
 Summary:      Traditional Bourne-Shell
-URL:          http://heirloom.sourceforge.net/sh.html
+URL:          https://heirloom.sourceforge.net/sh.html
 Group:        Shell
 License:      BSD/CDDL
 Version:      050706
 Release:      6.1
-Source0:      http://switch.dl.sourceforge.net/sourceforge/heirloom/heirloom-sh-%{version}.tar.bz2
+Source0:      https://switch.dl.sourceforge.net/sourceforge/heirloom/heirloom-sh-%{version}.tar.bz2
 Patch:       sh.patch
 
 %description

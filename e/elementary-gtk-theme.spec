@@ -8,7 +8,7 @@ Summary:	Elementary GTK theme
 Group:		User Interface/Desktops
 License:	GPLv2+
 BuildArch:	noarch
-URL:		http://danrabbit.deviantart.com/art/%{name}-83104033	
+URL:		https://danrabbit.deviantart.com/art/%{name}-83104033	
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		%{name}.gtkrc.patch
 BuildRequires:  libpng-devel

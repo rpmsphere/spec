@@ -11,7 +11,7 @@ Source3:	uvc_compat.h
 Patch0:	 	linuxvideodev2.patch
 License: 	GPLv2+
 Group:		Video/Utilities
-URL:		http://www.quickcamteam.net/software/linux/v4l2-software/luvcview
+URL:		https://www.quickcamteam.net/software/linux/v4l2-software/luvcview
 BuildRequires:	SDL-devel
 
 %description

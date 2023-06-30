@@ -5,8 +5,8 @@ Version:	0.3.2
 Release:	7.1
 Group:		Development/Python
 License:	LGPLv3+
-URL:		http://code.google.com/p/cjklib/
-Source0:	http://cjklib.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:		https://code.google.com/p/cjklib/
+Source0:	https://cjklib.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:	python2
 BuildRequires:	python2-setuptools
 Requires:	python-sqlalchemy

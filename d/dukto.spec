@@ -6,7 +6,7 @@ Release:        17.1
 Summary:        Dukto R6 file transfer tool
 Group:          Applications/Networking
 License:        GPL
-URL:            http://msec.it/dukto
+URL:            https://msec.it/dukto
 Source:         %{name}-%{version}.tar.gz
 BuildRequires:  gcc
 BuildRequires:  gcc-c++

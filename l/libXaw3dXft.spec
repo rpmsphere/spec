@@ -4,8 +4,8 @@ Version:        1.6.2h
 Release:        1
 License:        GPLv3+
 Group:          System Environment/Libraries
-URL:            http://sourceforge.net/projects/sf-xpaint
-Source0:        http://sourceforge.net/projects/sf-xpaint/files/libxaw3dxft/%{name}-%{version}.tar.bz2
+URL:            https://sourceforge.net/projects/sf-xpaint
+Source0:        https://sourceforge.net/projects/sf-xpaint/files/libxaw3dxft/%{name}-%{version}.tar.bz2
 BuildRequires:  bison
 BuildRequires:  flex
 BuildRequires:  libX11-devel

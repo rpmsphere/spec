@@ -6,8 +6,8 @@ Version: 2.5
 Release: 6.1
 Group: Applications/Engineering
 License: GPL
-URL: http://flxlab.sourceforge.net/
-Source0: http://sourceforge.net/projects/flxlab/files/flxlab/2.5alpha/%{name}-%{version}-src.tar
+URL: https://flxlab.sourceforge.net/
+Source0: https://sourceforge.net/projects/flxlab/files/flxlab/2.5alpha/%{name}-%{version}-src.tar
 BuildRequires: allegro-devel
 BuildRequires: libX11-devel
 BuildRequires: glib2-devel

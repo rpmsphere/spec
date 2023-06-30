@@ -5,8 +5,8 @@ License: GPL
 BuildRequires:  SDL-devel gcc-c++ mesa-libGL-devel
 Version:      2.7
 Summary:      An emulator frontend
-Source: http://prdownloads.sourceforge.net/advancemame/%{name}-%{version}.tar.gz
-URL: http://advancemame.sourceforge.net/menu-readme.html
+Source: https://prdownloads.sourceforge.net/advancemame/%{name}-%{version}.tar.gz
+URL: https://advancemame.sourceforge.net/menu-readme.html
 
 %description
 AdvanceMENU is a frontend for AdvanceMAME, MAME™, MESS, RAINE and any other

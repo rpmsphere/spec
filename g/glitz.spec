@@ -7,8 +7,8 @@ Release:        1
 Summary:        OpenGL image compositing library
 Group:          System Environment/Libraries
 License:        BSD
-URL:            http://www.freedesktop.org/Software/glitz
-Source:         http://cairographics.org/snapshots/%{name}-%{version}.tar.gz
+URL:            https://www.freedesktop.org/Software/glitz
+Source:         https://cairographics.org/snapshots/%{name}-%{version}.tar.gz
 BuildRequires:  libX11-devel, libXt-devel, libICE-devel, mesa-libGL-devel
 
 %description

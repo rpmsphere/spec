@@ -5,7 +5,7 @@ Summary:        Input method for Traditional Chinese
 Group:          System Environment/Libraries
 License:        LGPLv2
 URL:            https://github.com/hime-ime/hime/
-#Source0:        http://hime.luna.com.tw/%{name}-%{version}.tar.gz
+#Source0:        https://hime.luna.com.tw/%{name}-%{version}.tar.gz
 Source0:	%{name}-master.zip
 Source1:        hime.conf
 BuildRequires:  qt3-devel

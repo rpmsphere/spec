@@ -5,8 +5,8 @@ Version:		0.11.5
 Release:		12.1
 Group:			Productivity/Multimedia/Sound/Editors and Convertors
 License:		GPL
-URL:			http://www.jokosher.org/
-Source0:		http://launchpad.net/jokosher/trunk/0.11.5/+download/jokosher-0.11.5.tar.gz
+URL:			https://www.jokosher.org/
+Source0:		https://launchpad.net/jokosher/trunk/0.11.5/+download/jokosher-0.11.5.tar.gz
 BuildRequires:	hicolor-icon-theme
 BuildRequires:	python2-devel
 BuildRequires:	shared-mime-info

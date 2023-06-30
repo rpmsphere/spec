@@ -6,7 +6,7 @@ Release:	22.1
 Summary:	Amiga Window Manager
 Group:		System/GUI/Other
 License:	Generic
-URL:		http://www.lysator.liu.se/~marcus/amiwm.html
+URL:		https://www.lysator.liu.se/~marcus/amiwm.html
 Source:		ftp://ftp.lysator.liu.se/pub/X11/wm/amiwm/amiwm0.21pl2.tar.gz
 Patch0:        amiwm-includes.diff
 BuildRequires: libX11-devel

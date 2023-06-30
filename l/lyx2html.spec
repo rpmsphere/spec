@@ -5,8 +5,8 @@ Version:       0.2
 Release:       4.1
 Summary:       A very simple Lyx to HTML converter
 Group:         Graphical Desktop/Applications/Office
-URL:           http://www.netmeister.org/apps/lyx2html/
-Source:        http://www.netmeister.org/apps/%{name}-%{version}.tar.gz
+URL:           https://www.netmeister.org/apps/lyx2html/
+Source:        https://www.netmeister.org/apps/%{name}-%{version}.tar.gz
 License:       GPL
 
 %description

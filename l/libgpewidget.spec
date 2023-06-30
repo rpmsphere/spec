@@ -6,8 +6,8 @@ Group: System Environment/Libraries
 Summary: Widgets for the GPE environment
 Version: 0.115
 Release: 6.1
-Source: http://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.bz2
-URL: http://gpe.linuxtogo.org/
+Source: https://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.bz2
+URL: https://gpe.linuxtogo.org/
 BuildRequires: libpng-devel
 BuildRequires: gtk2-devel, perl-XML-Parser
 Requires: gtk2

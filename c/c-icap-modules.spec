@@ -5,7 +5,7 @@ Epoch:	 1
 Summary: ICAP server modules
 License: GPLv2
 Group: 	 System/Servers
-URL: 	 http://c-icap.sourceforge.net/
+URL: 	 https://c-icap.sourceforge.net/
 Provides:  c-icap-clamav = %epoch:%version-%release
 Obsoletes: c-icap-clamav < %epoch:%version-%release
 Source0: c_icap_modules-%version.tar.gz

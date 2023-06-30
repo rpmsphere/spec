@@ -6,8 +6,8 @@ Version: 12.0.4
 Release: 8.1
 Group: Applications/Editors
 License: GPL
-URL: http://www.hds619.net/Jeex.php
-Source0: http://www.hds619.net/data/jeex/jeex-pkg/%{name}-%{version}.tar.bz2
+URL: https://www.hds619.net/Jeex.php
+Source0: https://www.hds619.net/data/jeex/jeex-pkg/%{name}-%{version}.tar.bz2
 BuildRequires: file-devel
 BuildRequires: gtk2-devel
 

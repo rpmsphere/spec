@@ -25,8 +25,8 @@ make
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT BINDIR=%{_bindir}
 
-%clean 
-rm -rf $RPM_BUILD_ROOT
+#clean 
+#rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/bdr

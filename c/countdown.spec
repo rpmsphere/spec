@@ -6,8 +6,8 @@ Release:    4.1
 Summary:    Like sleep, only displays the amount of time remaining
 License:    MIT
 Group:      File tools
-URL:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/%{upstream_name}-v%{version}.tar.gz
+URL:        https://search.cpan.org/dist/%{upstream_name}
+Source0:    https://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/%{upstream_name}-v%{version}.tar.gz
 BuildRequires: perl-JSON-PP
 BuildRequires: perl(Test::More)
 BuildRequires: perl-Module-Build

@@ -4,8 +4,8 @@ Name:		gtk-aurora-engine
 Version:	1.5.1
 Release:	21.1
 License:	GPLv2+
-URL:		http://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
-Source0:	http://gnome-look.org/CONTENT/content-files/56438-aurora-%{version}.tar.bz2
+URL:		https://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
+Source0:	https://gnome-look.org/CONTENT/content-files/56438-aurora-%{version}.tar.bz2
 Source1:    Aurora-index.theme
 Source2:    aurora_by_paolorotolo-1920x1200.png
 Patch0:		animation.diff

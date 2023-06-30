@@ -8,8 +8,8 @@ Summary(uk_UA): Главное меню для віконного менедже
 Summary(ru_RU): Главное меню для оконного менеджера
 License: GPL
 Group: Graphical desktop/Other
-URL: http://www.oroborus.org/
-Source0: http://ftp.debian.org/debian/pool/main/d/deskmenu/%{name}_%{version}.tar.gz
+URL: https://www.oroborus.org/
+Source0: https://ftp.debian.org/debian/pool/main/d/deskmenu/%{name}_%{version}.tar.gz
 Source1: %name.menu-method.gz
 BuildRequires: fontconfig gtk2-devel
 BuildRequires: libXext-devel libXt-devel autoconf

@@ -3,7 +3,7 @@ Version:	1.6.1
 Release:	36.1
 License:	Apache-2
 Summary:	Google App Engine SDK for Python
-URL:		http://code.google.com/intl/en/appengine
+URL:		https://code.google.com/intl/en/appengine
 Group:		Development/Tools/Other
 Source:		%{name}-%{version}.tar.bz2
 Source2:	setpath.sh

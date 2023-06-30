@@ -2,7 +2,7 @@ Summary: A 3d File Manager
 Name: 3dfb
 Version: 0.6.1
 Release: 5.1
-Source0: http://freefr.dl.sourceforge.net/sourceforge/dz3d/%{name}-%{version}.tar.gz
+Source0: https://freefr.dl.sourceforge.net/sourceforge/dz3d/%{name}-%{version}.tar.gz
 Patch0: 3dfb-0.6.1-gcc41.patch
 License: GPL
 Group: File tools
@@ -30,7 +30,6 @@ make
 %makeinstall
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog INSTALL NEWS PROGRAMMER.README README WISHLIST
 %{_bindir}/%name
 

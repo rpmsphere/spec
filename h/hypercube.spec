@@ -6,8 +6,8 @@ Release:        6.1
 Summary:        Graph visualization tool
 License:        GPL-3.0
 Group:          Productivity/Graphics/Visualization/Graph
-URL:            http://tumic.wz.cz/hypercube
-Source0:        http://ufpr.dl.sourceforge.net/project/hypercubegraphv/Source/hypercube-%{version}.tar.gz
+URL:            https://tumic.wz.cz/hypercube
+Source0:        https://ufpr.dl.sourceforge.net/project/hypercubegraphv/Source/hypercube-%{version}.tar.gz
 BuildRequires:  qt4-devel
 
 %description

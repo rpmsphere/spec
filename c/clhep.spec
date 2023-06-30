@@ -4,8 +4,8 @@ Version: 2.2.0.8
 Release: 4.1
 License: distributable
 Group: Development/Libraries
-URL: http://proj-clhep.web.cern.ch/proj-clhep/
-Source: http://proj-clhep.web.cern.ch/proj-clhep/DISTRIBUTION/tarFiles/clhep-%{version}.tgz
+URL: https://proj-clhep.web.cern.ch/proj-clhep/
+Source: https://proj-clhep.web.cern.ch/proj-clhep/DISTRIBUTION/tarFiles/clhep-%{version}.tgz
 BuildRequires: binutils, gcc-c++, autoconf, automake, make
 Provides: CLHEP
 

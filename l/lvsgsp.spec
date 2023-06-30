@@ -5,8 +5,8 @@ Version:       0.0.4
 Release:       4.1
 Summary:       Linux Virtual Server Global Stats Processor
 Group:         System/Servers
-URL:           http://www.linuxvirtualserver.org/~acassen/
-Source:        http://www.linuxvirtualserver.org/~acassen/software/lvsgsp-%{version}.tar.gz
+URL:           https://www.linuxvirtualserver.org/~acassen/
+Source:        https://www.linuxvirtualserver.org/~acassen/software/lvsgsp-%{version}.tar.gz
 License:       BSD
 
 %description

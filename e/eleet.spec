@@ -4,8 +4,8 @@ Release:	5.4
 Summary:	Screensaver based on ships from Elite
 Group:		Amusements/Graphics
 License:	GPLv2
-URL:		http://software.amiga-hardware.com/eleet.cgi
-Source0:	http://software.amiga-hardware.com/software/eleet-0.3.3.tar.bz2
+URL:		https://software.amiga-hardware.com/eleet.cgi
+Source0:	https://software.amiga-hardware.com/software/eleet-0.3.3.tar.bz2
 BuildRequires: libX11-devel libICE-devel libSM-devel
 BuildRequires: SDL-devel SDL_image-devel SDL_ttf-devel
 BuildRequires: mesa-libGL-devel mesa-libGLU-devel

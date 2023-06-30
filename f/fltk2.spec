@@ -7,7 +7,7 @@ Release: 	36.1
 License: 	LGPL
 Group: 		System/Libraries
 Source: 	ftp://ftp.fltk.org/pub/fltk/%{version}/fltk-2.0.x-%{svn}.tar.bz2
-URL: 		http://www.fltk.org
+URL: 		https://www.fltk.org
 # use BuildRoot so as not to disturb the version already installed
 BuildRequires:  gcc-c++ pkgconfig libpng-devel libjpeg-devel
 BuildRequires: 	libX11-devel xorg-x11-proto-devel libXft-devel

@@ -4,7 +4,7 @@ Version: 2.0.0
 Release: 1
 Group: utils
 License: Free Software
-URL: http://www.k5n.us/gtimer.php
+URL: https://www.k5n.us/gtimer.php
 Source0: %{name}-%{version}.tar.gz
 BuildRequires: desktop-file-utils
 BuildRequires: gtk2-devel

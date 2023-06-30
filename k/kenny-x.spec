@@ -6,7 +6,7 @@ License:		Freeware
 Release:		52.1
 Source:			%{name}-%{version}.tar.gz
 Patch0:			%{name}-%{version}-imagepath.diff
-URL:            	http://shang.de/d6/node/15
+URL:            	https://shang.de/d6/node/15
 BuildArch:		noarch
 Requires:		tk >= 8.4
 BuildRequires:		desktop-file-utils

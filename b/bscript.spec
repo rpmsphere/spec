@@ -4,8 +4,8 @@ Version: 0.3
 Release: 3.1
 License: GPL
 Group: Development/Language
-URL: http://bscript.sourceforge.net/
-Source: http://sourceforge.net/projects/bscript/files/bscript/%{name}-%{version}/%{name}-%{version}.tar.gz
+URL: https://bscript.sourceforge.net/
+Source: https://sourceforge.net/projects/bscript/files/bscript/%{name}-%{version}/%{name}-%{version}.tar.gz
 
 %description
 BScript is a (yet another) BASIC interpreter. It is free software and
@@ -26,7 +26,6 @@ make
 %make_install
 
 %files
-%defattr(-,root,root)
 %doc README COPYING AUTHORS ChangeLog
 %{_bindir}/%{name}
 

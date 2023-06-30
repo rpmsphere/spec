@@ -8,8 +8,8 @@ Summary:        A gnome-shell extension to add Poweroff and Hibernate options
 
 Group:          User Interface/Desktops
 License:        GPLv2
-URL:            http://www.fpmurphy.com/gnome-shell-extensions/
-Source0:        http://www.fpmurphy.com/gnome-shell-extensions/%{shortname}-%{version}.tar.gz
+URL:            https://www.fpmurphy.com/gnome-shell-extensions/
+Source0:        https://www.fpmurphy.com/gnome-shell-extensions/%{shortname}-%{version}.tar.gz
 BuildArch:      noarch
 
 Requires:       gnome-shell >= 3.0.1
@@ -30,7 +30,6 @@ install -Dp -m 0644 {extension.js,metadata.json} \
   $RPM_BUILD_ROOT%{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %files
-%defattr(-,root,root,-)
 %doc README
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 

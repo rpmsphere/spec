@@ -6,8 +6,8 @@ Version: 4.95.0
 Release: 1
 License: freeware
 Group: System Environment/Kernel
-URL: http://www.otit.fi/~crope/v4l-dvb/af9015/af9015_firmware_cutter/firmware_files/
-Source0: http://www.otit.fi/~crope/v4l-dvb/af9015/af9015_firmware_cutter/firmware_files/%{version}/%{_name}.fw
+URL: https://www.otit.fi/~crope/v4l-dvb/af9015/af9015_firmware_cutter/firmware_files/
+Source0: https://www.otit.fi/~crope/v4l-dvb/af9015/af9015_firmware_cutter/firmware_files/%{version}/%{_name}.fw
 BuildArch: noarch
 
 %description

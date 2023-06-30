@@ -6,9 +6,9 @@ Release: 6.4
 Summary: Action-adventure dungeon crawl game
 License: GPLv3
 Group: Games/Adventure
-Source: http://www.asceai.net/files/meritous_v12_src.tar.bz2
+Source: https://www.asceai.net/files/meritous_v12_src.tar.bz2
 Source1: %name.sh
-URL: http://www.asceai.net/meritous/
+URL: https://www.asceai.net/meritous/
 BuildRequires: SDL-devel SDL_image-devel SDL_mixer-devel zlib-devel
 
 %description

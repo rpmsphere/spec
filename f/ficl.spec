@@ -4,9 +4,8 @@ Version: 4.1.0
 Release: 4.1
 License: Freeware
 Group: Development/Libraries
-URL: http://ficl.sourceforge.net
-Source0: http://ncu.dl.sourceforge.net/project/ficl/ficl-all/ficl4.1/%{name}-%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-root
+URL: https://ficl.sourceforge.net
+Source0: https://ncu.dl.sourceforge.net/project/ficl/ficl-all/ficl4.1/%{name}-%{version}.tar.gz
 
 %description
 Ficl (Forth inspired command language) is an ANS Forth interpreter written
@@ -55,7 +54,6 @@ done
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
-%defattr(-,root,root)
 %doc doc ReadMe.txt
 %{_bindir}/*
 %{_libdir}/libficl.*

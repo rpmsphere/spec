@@ -5,8 +5,8 @@ Release:        5.1
 Summary:        HTTP Ripper is a tool to rip content out of the web.
 Group:          Networking/WWW
 License:        GPLv3
-URL:            http://29a.ch/httpripper/
-Source0:        http://29a.ch/httpripper/%{name}-%{version}.tar.gz
+URL:            https://29a.ch/httpripper/
+Source0:        https://29a.ch/httpripper/%{name}-%{version}.tar.gz
 BuildRequires:  python2-devel desktop-file-utils
 BuildArch:      noarch
 Requires: 	pygtk2
@@ -19,7 +19,7 @@ Usage
 Start HTTPRipper. It will display the hostname/port it's running on.
 Configure your browser to use it as proxy. Hit the record button ;)
 For information on how to use httpripper please visit the website.
-http://29a.ch/httpripper/
+https://29a.ch/httpripper/
 
 Examples
   * Download movies from YouTube and other Video sites

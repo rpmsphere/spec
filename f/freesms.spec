@@ -19,7 +19,7 @@ Group:          Productivity/Networking/Web/Utilities
 %define	apache_sysconfdir	%(%{apxs} -q SYSCONFDIR)
 %define FreeSMS_src_dir FreeSMS
 %define FreeSMS_dir /var/www/FreeSMS
-URL:            http://sourceforge.net/projects/freesms/
+URL:            https://sourceforge.net/projects/freesms/
 Source0:        %{_name}_2_1_2.zip
 Source1:        %{_name}.conf.default
 Source2:        %{_name}.conf.vhost

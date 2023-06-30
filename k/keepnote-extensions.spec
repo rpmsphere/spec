@@ -3,7 +3,7 @@ Version:        0
 Release:        6.2
 License:        GPL-2.0
 Summary:        KeepNote Extensions
-URL:            http://keepnote.org/extensions.shtml
+URL:            https://keepnote.org/extensions.shtml
 Group:          Productivity/Office/Organizers
 Source0:        https://raw.github.com/mdrasmus/keepnote-extensions/master/stable/import_basket.kne
 Source1:        https://raw.github.com/mdrasmus/keepnote-extensions/master/stable/import_folders.kne

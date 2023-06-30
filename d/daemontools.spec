@@ -5,9 +5,9 @@ Version: 0.76
 Release: 13.1
 Group: System/Base
 License: Public Domain
-URL: http://cr.yp.to/daemontools/
-Source: http://cr.yp.to/daemontools/daemontools-0.76.tar.gz
-Source1: http://smarden.org/pape/djb/manpages/daemontools-0.76-man.tar.gz
+URL: https://cr.yp.to/daemontools/
+Source: https://cr.yp.to/daemontools/daemontools-0.76.tar.gz
+Source1: https://smarden.org/pape/djb/manpages/daemontools-0.76-man.tar.gz
 Patch: errno.patch
 Patch1: fileutils.patch
 Summary: A collection of tools for managing UNIX services

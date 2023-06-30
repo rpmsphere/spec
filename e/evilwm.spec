@@ -3,8 +3,8 @@
 Name:		evilwm
 Version:	1.4.2
 Release:	1
-URL:		http://evilwm.sourceforge.net/
-Source0:	http://www.6809.org.uk/evilwm/%{name}-%{version}.tar.gz
+URL:		https://evilwm.sourceforge.net/
+Source0:	https://www.6809.org.uk/evilwm/%{name}-%{version}.tar.gz
 License:	Public Domain
 Group:		Graphical desktop/Other
 Summary:	A minimalist window manager for the X Window System

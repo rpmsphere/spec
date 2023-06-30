@@ -8,7 +8,7 @@ License: GPL
 Group: User Interface/Desktops
 Source0: https://dl.opendesktop.org/api/files/download/id/1471871179/%{theme_name}.zip
 BuildArch: noarch
-URL: http://gnome-look.org/content/show.php/CobiBird?content=157985
+URL: https://gnome-look.org/content/show.php/CobiBird?content=157985
 Requires: rosa-icon-theme
 Requires: dmz-cursor-themes
 Requires: shimmer-backgrounds

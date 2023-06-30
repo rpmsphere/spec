@@ -5,7 +5,7 @@ Summary:	An fast, secure and lightweight web browser
 License:	CDDL
 Group:		Internet
 Source0:	JetBrowser-6.0.425.tar.bz2
-URL:		http://jetbrowser.codeplex.com/
+URL:		https://jetbrowser.codeplex.com/
 BuildArch:	noarch
 
 %description

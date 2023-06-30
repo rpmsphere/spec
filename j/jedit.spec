@@ -5,8 +5,8 @@ Version: 4.3.3
 Release: 21.1
 License: GPL
 Group: Applications/Editors
-URL: http://www.jedit.org/
-Source0: http://dl.sf.net/jedit/%{name}%{version}source.tar.bz2
+URL: https://www.jedit.org/
+Source0: https://dl.sf.net/jedit/%{name}%{version}source.tar.bz2
 BuildArch: noarch
 BuildRequires: ant
 #BuildRequires: apache-ivy

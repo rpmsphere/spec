@@ -5,8 +5,8 @@ Version: 	0.2
 Release: 	4.1
 License: 	GPL
 Group: 		Development/Python
-Source: 	http://sourceforge.net/projects/igcc/files/%{name}-%{version}.tar.bz2
-URL:		http://www.artificialworlds.net/wiki/IGCC/IGCC
+Source: 	https://sourceforge.net/projects/igcc/files/%{name}-%{version}.tar.bz2
+URL:		https://www.artificialworlds.net/wiki/IGCC/IGCC
 BuildRequires: 	python2-devel
 BuildArch: 	noarch
 

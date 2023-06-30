@@ -2,9 +2,9 @@ Name:           m64py
 Version:        0.2.5
 Release:        2
 License:        GPLv3
-Source0:        http://sourceforge.net/projects/m64py/files/%{name}-%{version}/%{name}-%{version}.tar.gz
+Source0:        https://sourceforge.net/projects/m64py/files/%{name}-%{version}/%{name}-%{version}.tar.gz
 Summary:        A front-end for Mupen64Plus
-URL:            http://m64py.sourceforge.net/
+URL:            https://m64py.sourceforge.net/
 BuildArch:      noarch
 BuildRequires:  python3
 BuildRequires:  python3-qt5-base

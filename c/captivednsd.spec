@@ -2,12 +2,12 @@
 
 Name:         captivednsd
 Summary:      Captive DNS Server
-URL:          http://www.aelius.com/njh/captivednsd/
+URL:          https://www.aelius.com/njh/captivednsd/
 Group:        DNS
 License:      GPL
 Version:      0.2
 Release:      20081105.1
-Source0:      http://www.aelius.com/njh/%{name}/%{name}-%{version}.tar.gz
+Source0:      https://www.aelius.com/njh/%{name}/%{name}-%{version}.tar.gz
 Patch:       captivednsd.patch
 
 %description

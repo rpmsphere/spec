@@ -2,10 +2,10 @@ Name: gfloatbg
 Version: 0.2
 Release: 10.1
 Summary:  A tool to manipulate the background colors
-URL: http://sourceforge.net/projects/%name/ 
+URL: https://sourceforge.net/projects/%name/ 
 License: GPLv2
 Group: Graphical desktop/GNOME
-Source:  http://downloads.sourceforge.net/%name/%name-%version.tar.gz
+Source:  https://downloads.sourceforge.net/%name/%name-%version.tar.gz
 Source1: %name.desktop
 Source5: poltava1trnsp.png
 Patch: gfloatbg-0.2-link.patch

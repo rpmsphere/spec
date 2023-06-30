@@ -5,8 +5,8 @@ Version: 0.6.0
 Release: 5.1
 Group: Development/Libraries
 License: GPL
-URL: http://gursormaker.sourceforge.net
-Source0: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+URL: https://gursormaker.sourceforge.net
+Source0: https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:  python2
 BuildArch: noarch
 Requires: python-numeric

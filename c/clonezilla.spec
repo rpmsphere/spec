@@ -4,8 +4,8 @@ Version:	5.2.7
 Release:	1
 License:	GPLv2+
 Group:		Archiving/Backup
-URL:		http://www.clonezilla.org
-Source0:	http://free.nchc.org.tw/drbl-core/src/stable/%{name}-%{version}.tar.xz
+URL:		https://www.clonezilla.org
+Source0:	https://free.nchc.org.tw/drbl-core/src/stable/%{name}-%{version}.tar.xz
 Patch0:		ambiguous-python-shebang.patch
 BuildArch:	noarch
 Requires:	drbl
@@ -22,7 +22,7 @@ allows you to do bare metal backup and recovery. Two types of Clonezilla
 are available, Clonezilla live and Clonezilla SE (Server Edition). Clonezilla
 live is suitable for single machine backup and restore. While Clonezilla SE
 is for massive deployment, it can clone many (40 plus!) computers simultaneously.
-For more info, check http://clonezilla.org, http://clonezilla.nchc.org.tw.
+For more info, check https://clonezilla.org, https://clonezilla.nchc.org.tw.
 
 %prep
 %setup -q

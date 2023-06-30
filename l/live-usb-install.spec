@@ -8,7 +8,7 @@ Version: 2.5.2
 Release: 1
 Group: USU Packages
 License: Free Software
-URL: http://live.learnfree.eu/
+URL: https://live.learnfree.eu/
 Source0: %{name}-%{version}.tar.gz
 #BuildArch: noarch
 BuildRequires: desktop-file-utils
@@ -28,7 +28,7 @@ BuildRequires: desktop-file-utils
 
 %description
 Currently supports 125 distributions, with total 698 versions.
-More info at http://live.learnfree.eu/
+More info at https://live.learnfree.eu/
 Supported distributins:  - AVG Rescue CD
 - Agilia Linux
 - Alpine

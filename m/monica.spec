@@ -5,7 +5,7 @@ Version:        3.7
 Release:        21.1
 License:        BSD-3-Clause
 Summary:        Monitor Calibration Tool
-URL:            http://www.pcbypaul.com/software/monica.html
+URL:            https://www.pcbypaul.com/software/monica.html
 Group:          System/X11/Utilities
 Source0:        %{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop

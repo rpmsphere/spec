@@ -4,8 +4,8 @@ Release: 1
 Summary: E-book reader application
 Group: Applications/Publishing
 License: GPLv3+
-URL: http://lucidor.org/lucidor/
-Source0: http://lucidor.org/lucidor/%{name}_%{version}.tar.gz
+URL: https://lucidor.org/lucidor/
+Source0: https://lucidor.org/lucidor/%{name}_%{version}.tar.gz
 BuildArch: noarch
 Requires: xulrunner
 

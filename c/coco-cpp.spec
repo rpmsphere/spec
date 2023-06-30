@@ -6,8 +6,8 @@ Version: 20120102
 Release: 13.1
 License: GPL
 Group:  Development/Tools
-Source0: http://www.ssw.uni-linz.ac.at/Coco/CPP/CocoSourcesCPP.zip
-URL: http://www.ssw.uni-linz.ac.at/coco/
+Source0: https://www.ssw.uni-linz.ac.at/Coco/CPP/CocoSourcesCPP.zip
+URL: https://www.ssw.uni-linz.ac.at/coco/
 BuildRequires: gcc-c++, perl
 
 %description

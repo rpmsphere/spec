@@ -12,7 +12,7 @@ Source2: %{theme_name}Light-index.theme
 Source3: %{theme_name}Gray-index.theme
 Source4: %{theme_name}Dark-index.theme
 Source5: Chairs.png
-URL: http://gnome-look.org/content/show.php/FlatStudio?content=154296
+URL: https://gnome-look.org/content/show.php/FlatStudio?content=154296
 BuildArch: noarch
 Requires: gtk-murrine-engine
 Requires: flatwoken-icon-theme
@@ -23,10 +23,10 @@ There are four themes:
 FlatStudio: based on the color of my other theme MediterraneanNight
 FlatStudioLight: found a mockup that I really liked and in which I based for
 FlatStudioLight, the mockup is of Tobias Bernard\'s (minimal GTK theme mockup),
-found in http://tobiasbernard.com/floss/minimal-gtk-theme/
+found in https://tobiasbernard.com/floss/minimal-gtk-theme/
 FlatStudioGray: soft gray frame
 FlatStudioDark: flat dark theme :)
-With Wallpaper from http://www.icanbecreative.com/simple-desktop-wallpapers-for-minimalist-lovers.html
+With Wallpaper from https://www.icanbecreative.com/simple-desktop-wallpapers-for-minimalist-lovers.html
 
 %prep
 %setup -q -c

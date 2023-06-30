@@ -4,8 +4,8 @@ Release:        1
 Summary:        Open-source remake of Moonbase Commander
 Group:          Game/StrategyGame
 License:        GPLv3
-URL:		http://code.google.com/p/tether/
-Source0:        http://code.google.com/p/tether/%{name}-%{version}-package-source.tar.gz
+URL:		https://code.google.com/p/tether/
+Source0:        https://code.google.com/p/tether/%{name}-%{version}-package-source.tar.gz
 Requires:	pygame, python-twisted
 BuildArch:	noarch
 

@@ -4,7 +4,7 @@ Group: Applications/Productivity
 Summary: Templates from TCA for Impress 
 Version: 2007
 Release: 1
-URL: http://taiwan-linux.tca.org.tw/news1.php?id=13
+URL: https://taiwan-linux.tca.org.tw/news1.php?id=13
 Source: %{name}.zip
 BuildArch: noarch
 Requires: libreoffice-impress

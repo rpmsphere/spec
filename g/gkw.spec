@@ -6,8 +6,8 @@ Version: 	0.1b4
 Release: 	4.1
 License: 	GPLv3
 Group: 		Applications/Engineering
-URL: 		http://code.google.com/p/gkw/
-Source0: 	http://gkw.googlecode.com/files/gkw-0.1-b4.tar.gz
+URL: 		https://code.google.com/p/gkw/
+Source0: 	https://gkw.googlecode.com/files/gkw-0.1-b4.tar.gz
 BuildRequires:  gcc-gfortran
 
 %description

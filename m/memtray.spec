@@ -6,7 +6,7 @@ License:        GPL3
 Group:          User Interface/X
 URL:            https://sourceforge.net/projects/systray-memory-display/
 Source0:        systray-memory-display-%{version}.zip
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 
 %description
 Do you ever need to know how much memory your system is using, but you don't

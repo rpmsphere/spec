@@ -6,9 +6,9 @@ Release:        1
 Summary:        Font for Han Script
 License:        APL
 Group:          System/X11/Fonts
-URL:            http://www.babelstone.co.uk/Fonts/
-Source0:        http://babelstone.co.uk/Fonts/BabelStoneHan.zip
-Source1:        http://ftp.gnu.org/non-gnu/chinese-fonts-truetype/LICENSE
+URL:            https://www.babelstone.co.uk/Fonts/
+Source0:        https://babelstone.co.uk/Fonts/BabelStoneHan.zip
+Source1:        %name.LICENSE
 BuildArch:      noarch
 
 %description
@@ -19,7 +19,7 @@ with G-source glyphs used in the People's Republic of China.
 %setup -q -c
 
 %build
-cp -a %{SOURCE1} .
+cp -a %{SOURCE1} LICENSE
 
 %install
 mkdir -p %{buildroot}%{_ttfontsdir}

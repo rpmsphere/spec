@@ -4,8 +4,8 @@ Release:        3.1
 License:        GPLv2
 Group:          System/Security
 Requires:       perl-Digest-SHA1 perl-Crypt-Twofish perl-DateTime
-URL:            http://waxandwane.org/clipsafe.html
-Source:         http://waxandwane.org/download/clipsafe-1.1.tar.gz
+URL:            https://waxandwane.org/clipsafe.html
+Source:         https://waxandwane.org/download/clipsafe-1.1.tar.gz
 Summary:        A Command Line Interface to Password Safe
 BuildArch:      noarch
 

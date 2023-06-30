@@ -3,8 +3,8 @@ Version:       0.01
 Release:       1
 Summary:       A simple GTK clone of the classic board game, MasterMind
 Group:         Graphical Desktop/Applications/Educational
-URL:           http://www.linuxsoft.cz/en/sw_detail.php?id_item=4085
-Source:        http://rsynnott.f2g.net/gmastermind/%{name}-%{version}.tar.gz
+URL:           https://www.linuxsoft.cz/en/sw_detail.php?id_item=4085
+Source:        https://rsynnott.f2g.net/gmastermind/%{name}-%{version}.tar.gz
 Source1:       %{name}.png
 License:       GPL
 BuildRequires: glib-devel

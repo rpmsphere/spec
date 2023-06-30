@@ -2,9 +2,9 @@ Name:           betaradio
 Version:        1.2
 Release:        1
 License:        GPLv2
-URL: 		http://code.google.com/p/betaradio/
+URL: 		https://code.google.com/p/betaradio/
 BuildRequires:  gtk2-devel, libcurl-devel, gstreamer-devel, json-glib-devel, libsoup-devel, vala
-Source0:        http://betaradio.googlecode.com/files/%{name}-%{version}.tar.bz2
+Source0:        https://betaradio.googlecode.com/files/%{name}-%{version}.tar.bz2
 Group:          Multimedia/Sound/Players
 Summary:        Listen to hiChannel radio online
 

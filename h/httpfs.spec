@@ -4,7 +4,7 @@ Release:        4
 Summary:        HTTP fuse filesystem
 License:        GPLv2
 Group:          Networking/Remote access
-URL:            http://httpfs.sourceforge.net/
+URL:            https://httpfs.sourceforge.net/
 Source0:        %{name}_%{version}.tar.bz2
 Patch0:         %{name}-2.06.07.10-magos-hostnames.patch
 BuildRequires:  pkgconfig(fuse)

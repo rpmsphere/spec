@@ -4,7 +4,7 @@ Version:        1.5.4
 Release:        4.1
 License:        opensource
 Summary:        The most professional WallPaper Application
-URL:            http://lovebizhi.com
+URL:            https://lovebizhi.com
 Group:          System/GUI/GNOME
 Source0:        %{name}-%{version}.tar.bz2
 BuildRequires:  python-devel

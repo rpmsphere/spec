@@ -3,13 +3,12 @@ Summary:        Various extensions for bluej
 Version:        20110529
 Release:        7.1
 License:        Freely available to anyone as is for use and non-commercial distribution
-URL:            http://www.bluej.org/extensions/extensions.html
+URL:            https://www.bluej.org/extensions/extensions.html
 Group:          Development/Tools/IDE
 BuildArch:      noarch
 BuildRequires:  unzip
 BuildRequires:  tar
 Requires:       bluej
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 %define         extension_dir %{_datadir}/bluej/extensions/
 Source0:        bluej-extensions-20110529.tar.bz2
 Source1:        extension_list.txt
@@ -26,7 +25,7 @@ the core system.
 Summary:        Class Card - A Better UML Extension 
 Group:          Development/Tools/IDE
 Requires:       bluej
-URL:            http://klassenkarte.steinhuber.de/files/Klassenkarte.jar
+URL:            https://klassenkarte.steinhuber.de/files/Klassenkarte.jar
 
 %description class_card
 An improvement over the original UML Extension, this one allows you to show
@@ -39,7 +38,6 @@ Author:
 
 
 %files class_card
-%defattr(-,root,root)
 %{extension_dir}/Klassenkarte.jar
 
 #----------------------------------------------------------------------
@@ -49,7 +47,7 @@ Summary:        A Multi-Project Workspace Handler
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://multiproject.sourceforge.net/
+URL:            https://multiproject.sourceforge.net/
 
 %description multiproject
 This BlueJ extension allows you to easily manage (i.e. create, import/export
@@ -59,9 +57,7 @@ auto-position package windows or to handle bunches of jar files economically
 
 
 %files multiproject
-%defattr(0644,root,root,0755)
 %doc multiproject.pdf
-%defattr(-,root,root)
 %{extension_dir}/multiproject.jar
 
 #----------------------------------------------------------------------
@@ -71,7 +67,7 @@ Summary:        Identifying the roles of variables
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://www.bluej.org/extensions/files/rolesOfVariables.zip
+URL:            https://www.bluej.org/extensions/files/rolesOfVariables.zip
 
 %description rolesOfVariables
 The Roles of Variables BlueJ extension is based on Sajaniemi's Roles of
@@ -82,9 +78,7 @@ actual use of the variable is consistent with that role assignment.
 
 
 %files rolesOfVariables
-%defattr(0644,root,root,0755)
 %doc RoV_training_files.zip rolesOfVariables-README.txt BishopDissertation.pdf koliPaper.pdf
-%defattr(-,root,root)
 %{extension_dir}/roles_of_variables.jar
 %dir %{extension_dir}/RoVs
 %dir %{extension_dir}/RoVs_Javadocs
@@ -98,7 +92,7 @@ Summary:        CNU BlueJ Code Formatter
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://cnubluej.pcs.cnu.edu/CNUBlueJFormatterInstaller25x.jar
+URL:            https://cnubluej.pcs.cnu.edu/CNUBlueJFormatterInstaller25x.jar
 
 %description CNUBlueJFormatterInstaller25x
 CNU BlueJ formatter is a BlueJ extension that integrates Eclipse's code style
@@ -111,7 +105,6 @@ JAR file.
 
 
 %files CNUBlueJFormatterInstaller25x
-%defattr(-,root,root)
 %{extension_dir}/CNUBlueJFormatterInstaller25x.jar
 
 #----------------------------------------------------------------------
@@ -121,7 +114,7 @@ Summary:        Objectdrawinvoker
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://www.bluej.org/extensions/files/objectdrawinvoker.jar
+URL:            https://www.bluej.org/extensions/files/objectdrawinvoker.jar
 
 %description objectdrawinvoker
 An extension to make it easier to work with the objectdraw library. If any
@@ -132,7 +125,6 @@ it inside BlueJ rather than as an external Applet.
 
 
 %files objectdrawinvoker
-%defattr(-,root,root)
 %{extension_dir}/objectdrawinvoker.jar
 
 #----------------------------------------------------------------------
@@ -142,7 +134,7 @@ Summary:        Main Program Runner
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://www.bluej.org/extensions/files/MainRunner.jar
+URL:            https://www.bluej.org/extensions/files/MainRunner.jar
 
 %description 	MainRunner
 An extension to allow direct invocation of a main method. If a class contains a
@@ -154,7 +146,6 @@ menu item.
 
 
 %files 	MainRunner
-%defattr(-,root,root)
 %{extension_dir}/MainRunner.jar
 
 #----------------------------------------------------------------------
@@ -164,7 +155,7 @@ Summary:        Syntax Source Printer
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://www.bluej.org/extensions/files/SyntaxSourcePrinter.jar
+URL:            https://www.bluej.org/extensions/files/SyntaxSourcePrinter.jar
 
 %description SyntaxSourcePrinter
 Supports colour printing of source code from within BlueJ using the syntax
@@ -177,7 +168,6 @@ the BlueJ Class Diagram. It obeys the colour settings in the file moe.defs.
 
 
 %files SyntaxSourcePrinter
-%defattr(-,root,root)
 %{extension_dir}/SyntaxSourcePrinter.jar
 
 #----------------------------------------------------------------------
@@ -187,7 +177,7 @@ Summary:        ACM Invoker
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://www.bluej.org/extensions/ACMInvoker/ACMInvoker.jar
+URL:            https://www.bluej.org/extensions/ACMInvoker/ACMInvoker.jar
 
 %description ACMInvoker
 An extension to make it easier to work with the ACM Java Task Force library. 
@@ -199,7 +189,6 @@ inside BlueJ rather than as an external Applet.
 
 
 %files ACMInvoker
-%defattr(-,root,root)
 %{extension_dir}/ACMInvoker.jar
 
 #----------------------------------------------------------------------
@@ -209,7 +198,7 @@ Summary:        Checking of coding styles
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://bluejcheckstyle.sourceforge.net/
+URL:            https://bluejcheckstyle.sourceforge.net/
 
 %description Checkstyle
 Allows automated checking of coding styles. Coding styles can be specified
@@ -223,7 +212,6 @@ including:
 
 
 %files Checkstyle
-%defattr(-,root,root)
 %{extension_dir}/checkstyle-extension-4.3-0.jar
 
 #----------------------------------------------------------------------
@@ -233,7 +221,7 @@ Summary:        A Design Patterns Extension
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://www.patterncoder.org/
+URL:            https://www.patterncoder.org/
 
 %description patterncoder
 Provides a wizard which guides the user through the process of adding a Design
@@ -248,9 +236,7 @@ defined using XML files and added into the extension.
 
 
 %files patterncoder
-%defattr(0644,root,root,0755)
 %doc guide.pdf
-%defattr(-,root,root)
 %{extension_dir}/PatternCoder.jar
 %{extension_dir}/PatternFiles
 %{extension_dir}/javadoc
@@ -264,7 +250,7 @@ Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
 Requires:       java >= 1.5.0
-URL:            http://www.bluej.or.kr/
+URL:            https://www.bluej.or.kr/
 
 %description ClassWizard
 The "Class Wizard" enables BlueJ users to quickly and easily create or edit
@@ -274,7 +260,6 @@ classes and editing their source code in the BlueJ text editor.
 
 
 %files ClassWizard
-%defattr(-,root,root)
 %{extension_dir}/ClassWizard.jar
 
 #----------------------------------------------------------------------
@@ -284,7 +269,7 @@ Summary:     UML Extension
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
-URL:            http://www.bluej.org/extensions/UMLextension/index.html
+URL:            https://www.bluej.org/extensions/UMLextension/index.html
 
 %description UMLextension
 Displays a simple popup for a BlueJ class in the form of a UML Class icon.
@@ -293,7 +278,6 @@ configured via the preferences panel, or the BlueJ properties files.
 
 
 %files UMLextension
-%defattr(-,root,root)
 %{extension_dir}/UMLextension.jar
 
 #----------------------------------------------------------------------
@@ -341,7 +325,6 @@ rmdir $RPM_BUILD_ROOT/%{extension_dir}/papers
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %dir %{_datadir}/bluej
 %doc extension_list.txt update_extensions.sh
 %dir %{extension_dir}

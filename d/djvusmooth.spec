@@ -4,9 +4,9 @@ Version:        0.2.19
 Release:        3.1
 License:        GPL-2.0
 Summary:        Graphical Text Editor for DjVu
-URL:            http://jwilk.net/software/djvusmooth
+URL:            https://jwilk.net/software/djvusmooth
 Group:          Productivity/Publishing/Other
-Source0:        http://pypi.python.org/packages/source/d/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://pypi.python.org/packages/source/d/%{name}/%{name}-%{version}.tar.gz
 Source1:        djvusmooth.png
 BuildRequires:  python2-setuptools
 BuildRequires:  python2-devel

@@ -2,9 +2,9 @@ Name:           gsopcast
 Requires:	    alsa wget tar
 #Requires:      sopcast
 BuildRequires:	gcc gcc-c++ libgnome-devel alsa-lib-devel pkgconfig perl-XML-Parser
-URL:		    http://code.google.com/p/gsopcast/
+URL:		    https://code.google.com/p/gsopcast/
 # SVN repository:
-# svn checkout http://gsopcast.googlecode.com/svn/trunk/ gsopcast-read-only
+# svn checkout https://gsopcast.googlecode.com/svn/trunk/ gsopcast-read-only
 License:	    GNU General Public License (GPL)
 Group:		    Productivity/Multimedia/Video/P2P
 Version:	    0.4.0
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf /tmp/gsopcast
 mkdir /tmp/gsopcast
 cd /tmp/gsopcast
-wget -T 3 -t 20 http://download.sopcast.cn/download/sp-auth.tgz
+wget -T 3 -t 20 https://download.sopcast.cn/download/sp-auth.tgz
 tar -zxvf sp-auth.tgz
 killall -9 gsopcast
 cp sp-auth/sp-sc-auth /usr/bin/

@@ -3,8 +3,8 @@ Summary: Midi Sheet Music Player
 Version: 2.4
 Release: 10.1
 Group: sound
-URL: http://midisheetmusic.sourceforge.net/
-Source0: http://sourceforge.net/projects/midisheetmusic/files/midisheetmusic/%{version}/MidiSheetMusic-%{version}-linux-src.tar.gz
+URL: https://midisheetmusic.sourceforge.net/
+Source0: https://sourceforge.net/projects/midisheetmusic/files/midisheetmusic/%{version}/MidiSheetMusic-%{version}-linux-src.tar.gz
 BuildArch: noarch
 License: GPLv2
 BuildRequires: mono-devel, alsa-lib-devel

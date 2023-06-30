@@ -4,8 +4,8 @@ Release:	4.1
 Summary:	GTK theme manager
 License:	GPL
 Group:		User Interface/Desktop
-URL:		http://epidermis.tuxfamily.org/
-Source0:	http://launchpad.net/epidermis/0.x/0.6/+download/%{name}-%{version}.tar.gz
+URL:		https://epidermis.tuxfamily.org/
+Source0:	https://launchpad.net/epidermis/0.x/0.6/+download/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python2
 BuildRequires:	po4a

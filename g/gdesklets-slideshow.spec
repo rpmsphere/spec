@@ -4,9 +4,9 @@ Release:	1
 Summary:	A slideshow of collection for gdesklets
 Group:		User Interface/Desktops
 License:	GPLv2+
-URL:		http://gdesklets.de/?q=desklet/view/221
-Source0:	http://www.gdesklets.de/files/desklets/SlideShow/SlideShow-%{version}.tar.gz
-Source1:	http://www.gdesklets.de/files/controls/ImageSlideShow/ImageSlideShow-0.8.tar.gz
+URL:		https://gdesklets.de/?q=desklet/view/221
+Source0:	https://www.gdesklets.de/files/desklets/SlideShow/SlideShow-%{version}.tar.gz
+Source1:	https://www.gdesklets.de/files/controls/ImageSlideShow/ImageSlideShow-0.8.tar.gz
 BuildArch:	noarch
 
 %define		_appname	SlideShow

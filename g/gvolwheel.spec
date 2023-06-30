@@ -4,8 +4,8 @@ Release:	1
 Summary:	Lightweight application to control the audio volume
 License:	GPLv3+
 Group:		Sound
-Source:		http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-URL:		http://gvolwheel.sourceforge.net/
+Source:		https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:		https://gvolwheel.sourceforge.net/
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	intltool

@@ -4,8 +4,8 @@ Release: 1
 Summary: A program that visualizes the earth in realtime in a 3D view
 License: GPL
 Group: Amusements/Graphics
-URL: http://www.earth3d.org/
-Source0: http://prdownloads.sourceforge.net/earth3d/%{name}_client-%version-src.tar.bz2
+URL: https://www.earth3d.org/
+Source0: https://prdownloads.sourceforge.net/earth3d/%{name}_client-%version-src.tar.bz2
 Source1: %{name}.desktop
 Patch: earth3d_client-1.0.4-alt-makefile.patch
 # Automatically added by buildreq on Sun Jan 08 2006
@@ -29,7 +29,7 @@ features are:
   cloud data or GPS points
 
 You can also get some maps mirrored locally to speed up access:
-http://venus.schunter.etc.tu-bs.de/~gunia/earthdata.zip
+https://venus.schunter.etc.tu-bs.de/~gunia/earthdata.zip
 (~1.1->1.9Gb; doesn't include Landsat7 100m/pixel data)
 
 PS: packaged experiencing frustration of Google Earth ;)

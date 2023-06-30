@@ -4,7 +4,7 @@ Version:	0.2.3
 Release:	36
 License:	GPLv3
 Group:		System/Boot and Init
-URL:		http://e4rat.sourceforge.net/
+URL:		https://e4rat.sourceforge.net/
 Source0:	https://sourceforge.net/projects/e4rat/files/%{name}_%{version}_src.tar.gz
 Patch0:		git.diff
 Patch1:		e4rat-0.2.2-libdir.patch

@@ -4,8 +4,8 @@ Version: 0.0.8
 Release: 8.1
 Group: Applications/Communications
 License: GPLv2
-URL: http://glanchat.sourceforge.net/
-Source0: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+URL: https://glanchat.sourceforge.net/
+Source0: https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:  libXau-devel
 BuildRequires:  libXdmcp-devel
 BuildRequires:  libXrender-devel

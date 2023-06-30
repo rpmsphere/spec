@@ -6,7 +6,7 @@ Group:          Multimedia/Audio
 Summary:        Convert flac file to mp3
 Requires:	perl-Text-Glob perl-Audio-FLAC-Header perl-File-Which perl-File-Find-Rule 
 Requires:	perl-MP3-Tag perl-Number-Compare lame flac
-Source:		http://robinbowes.com/download/flac2mp3/%{name}-%{version}.tar.bz2
+Source:		https://robinbowes.com/download/flac2mp3/%{name}-%{version}.tar.bz2
 BuildArch:  noarch
 
 %description

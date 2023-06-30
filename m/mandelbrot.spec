@@ -6,8 +6,8 @@ Version: 0.4.1
 Release: 9.1
 Group: science
 License: GPLv3
-URL: http://mandelbrot-gtk.sourceforge.net
-Source0: http://downloads.sourceforge.net/%{name}/%{name}-gtk-0.4-1.tar.bz2
+URL: https://mandelbrot-gtk.sourceforge.net
+Source0: https://downloads.sourceforge.net/%{name}/%{name}-gtk-0.4-1.tar.bz2
 Source1: %{name}.png
 BuildRequires: gtk3-devel
 BuildRequires: libxml2-devel

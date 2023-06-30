@@ -8,9 +8,8 @@ License: distributable
 Group: Amusements/Games
 Source0: emiclock-2.0.2.tar.gz
 Patch0: emiclock-2.0.2.jg.patch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: imake, libXt-devel, libXext-devel, libXaw-devel
-URL: http://www003.upp.so-net.ne.jp/motosoft/
+URL: https://www003.upp.so-net.ne.jp/motosoft/
 
 %description
 EmiClock is an analog clock for X.  EmiClock displays a Japanese girl

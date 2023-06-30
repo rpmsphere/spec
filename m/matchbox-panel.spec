@@ -2,10 +2,10 @@ Summary: 	Panel for the Matchbox Desktop
 Name: 		matchbox-panel
 Version: 	2.11
 Release: 	20.1
-URL: 		http://matchbox-project.org/
+URL: 		https://matchbox-project.org/
 License: 	GPLv2+
 Group: 		Graphical desktop/Other
-Source0:	http://git.yoctoproject.org/cgit.cgi/matchbox-panel-2/snapshot/matchbox-panel-2-%{version}.tar.gz
+Source0:	https://git.yoctoproject.org/cgit.cgi/matchbox-panel-2/snapshot/matchbox-panel-2-%{version}.tar.gz
 Patch0:     0001-applets-systray-Allow-icons-to-be-smaller.patch
 BuildRequires:	libjpeg-devel desktop-file-utils
 BuildRequires:	startup-notification-devel

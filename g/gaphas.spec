@@ -5,9 +5,9 @@ Version:	0.4.0
 Release:	6.1
 License:	LGPL
 Group:		Development/Python
-Source0:	http://pypi.python.org/packages/source/g/%{name}/%{name}-%{version}.tar.bz2
+Source0:	https://pypi.python.org/packages/source/g/%{name}/%{name}-%{version}.tar.bz2
 Source1:         setup.py
-URL:		http://gaphor.devjavu.com/projects/gaphor/wiki/Subprojects/Gaphas
+URL:		https://gaphor.devjavu.com/projects/gaphor/wiki/Subprojects/Gaphas
 BuildRequires:	python-setuptools, python-nose
 BuildRequires:	python
 BuildArch:	noarch

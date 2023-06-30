@@ -7,7 +7,7 @@ Release:	1
 Source0:	https://github.com/lanurmi/efte/archive/master.zip#/efte-master.zip
 License:	GPL
 Group:		Editors
-URL:		http://github.com/lanurmi/efte/
+URL:		https://github.com/lanurmi/efte/
 BuildRequires:	gpm-devel
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(slang)

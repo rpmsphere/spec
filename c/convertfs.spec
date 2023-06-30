@@ -5,16 +5,15 @@ Release:	5.1
 Epoch:		1
 License:	GPL
 Group:		Applications/System
-Source0:	http://tzukanov.narod.ru/convertfs/%{name}-%{version}.tar.gz
-Source1:	http://members.optusnet.com.au/clausen/ideas/convertfs.txt
+Source0:	https://tzukanov.narod.ru/convertfs/%{name}-%{version}.tar.gz
+Source1:	https://members.optusnet.com.au/clausen/ideas/convertfs.txt
 # Source0-md5:	71e8065e321898e259a55c8cefdfd75d
 Patch0:		%{name}-safety.patch
 Patch1:		%{name}-Makefile.patch
-URL:		http://tzukanov.narod.ru/convertfs/
+URL:		https://tzukanov.narod.ru/convertfs/
 BuildRequires:	sed >= 4.0
 Requires:	util-linux
 Requires:	coreutils
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This simple toolset allows you to change type of file system in the
@@ -52,7 +51,6 @@ install -D %{SOURCE1} $RPM_BUILD_ROOT%{_docdir}/convertfs.txt
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644,root,root,755)
 %attr(755,root,root) %{_sbindir}/*
 %attr(755,root,root) %{_docdir}/*
 

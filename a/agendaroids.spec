@@ -4,7 +4,7 @@ Name:			agendaroids
 Version:		2002.03.07
 Summary:		A clone of the classic "Asteroids" arcade game
 License:		GPL
-URL:			http://www.newbreedsoftware.com/agendaroids/
+URL:			https://www.newbreedsoftware.com/agendaroids/
 Group:			Amusements/Games/Action/Arcade
 Release:		4.1
 Source:			%{name}-%{version}.tar.bz2

@@ -5,8 +5,8 @@ Summary:        Anagram game
 Version:        1.3.1
 Release:        1
 License:        GPL-3.0+
-URL:            http://gottcode.org/%{name}/
-Source:         http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
+URL:            https://gottcode.org/%{name}/
+Source:         https://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
 Group:          Amusements/Games
 BuildRequires:  desktop-file-utils
 BuildRequires:  gcc-c++

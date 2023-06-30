@@ -6,7 +6,7 @@ Version: 21
 Release: 4.1
 License: GPL
 Group: User Interface/Desktops
-Source0: http://hpmini.archive.canonical.com/mie/dists/hardy-hpmini/universe/source/glassy-bleu-theme_%{version}.tar.gz
+Source0: https://hpmini.archive.canonical.com/mie/dists/hardy-hpmini/universe/source/glassy-bleu-theme_%{version}.tar.gz
 Source1: Pattern-Paisley-l.jpg
 BuildArch: noarch
 

@@ -4,7 +4,7 @@ Name:			aliens
 Version:		2001.05.18
 Summary:		A Space Invaders/Galaxian type game
 License:		GPLv2
-URL:			http://www.newbreedsoftware.com/aliens/
+URL:			https://www.newbreedsoftware.com/aliens/
 Group:			Amusements/Games/Action/Arcade
 Release:		5.1
 Source:			%{name}-%{version}.tar.bz2

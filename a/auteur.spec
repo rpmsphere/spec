@@ -3,11 +3,11 @@ Summary: Lightweight video editor powered by mplayer and mencoder
 Name: auteur
 Version: 0.1a7
 Release: 1
-Source0: http://auteur-editor.info/releases/source_tarballs/%{name}-%{version}.tar.gz
+Source0: https://auteur-editor.info/releases/source_tarballs/%{name}-%{version}.tar.gz
 License: GPL v3
 Group: Application/Multimedia
 BuildArch: noarch
-URL: http://auteur-editor.info/
+URL: https://auteur-editor.info/
 BuildRequires: python2-devel
 Requires: PyQt4, mplayer, mencoder
 

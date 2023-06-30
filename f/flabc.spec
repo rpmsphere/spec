@@ -4,8 +4,8 @@ Version: 1.1.2
 Release: 3.1
 Group: Applications
 License: GPL
-URL: http://www.lautengesellschaft.de/cdmm/
-Source0: http://www.lautengesellschaft.de/cdmm/%{name}-%{version}.tar.gz
+URL: https://www.lautengesellschaft.de/cdmm/
+Source0: https://www.lautengesellschaft.de/cdmm/%{name}-%{version}.tar.gz
 BuildRequires: fltk-devel
 
 %description

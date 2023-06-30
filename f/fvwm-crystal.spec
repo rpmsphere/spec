@@ -6,8 +6,8 @@ Version:	3.4.1
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
-Source:		http://download.berlios.de/fvwm-crystal/%{name}-%{version}.tar.gz
-URL:		http://fvwm-crystal.berlios.de/
+Source:		https://download.berlios.de/fvwm-crystal/%{name}-%{version}.tar.gz
+URL:		https://fvwm-crystal.berlios.de/
 Requires:	ImageMagick
 Requires:	aterm
 Requires:	fvwm >= 2.5.13

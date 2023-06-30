@@ -2,9 +2,9 @@ Summary: A single-tasking high performance http server
 Name: boa
 Version: 0.94.14rc21
 Release: 1
-URL: http://www.boa.org/
+URL: https://www.boa.org/
 Group: System Environment/Daemons
-Source: http://www.boa.org/boa-%{version}.tar.gz
+Source: https://www.boa.org/boa-%{version}.tar.gz
 License: GNU general public license
 Provides: webserver
 

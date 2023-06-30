@@ -6,14 +6,14 @@ Version: 1.1
 Release: 7.1
 License: GPL
 Group: Graphics
-Source: http://draves.org/goban/goban-1.1.tar.gz
-URL: http://draves.org/goban
+Source: https://draves.org/goban/goban-1.1.tar.gz
+URL: https://draves.org/goban
 BuildRequires: libX11-devel
 Requires: xscreensaver
 
 %description
 Replays historical games of go (aka wei-chi and baduk) on the screen.
-Designed to work with xscreensaver (http://www.jwz.org/xscreensaver).
+Designed to work with xscreensaver (https://www.jwz.org/xscreensaver).
 
 %prep
 %setup -q

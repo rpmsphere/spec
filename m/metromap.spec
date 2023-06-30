@@ -3,8 +3,8 @@ Version:        0.1.4
 Release:        9
 Summary:        Simple program for finding paths in subway/metro maps
 License:        GPL+
-URL:            http://metromap.antex.ru/
-Source0:        http://metromap.antex.ru/%{name}-%{version}.tar.bz2
+URL:            https://metromap.antex.ru/
+Source0:        https://metromap.antex.ru/%{name}-%{version}.tar.bz2
 BuildArch:      noarch
 BuildRequires:  python2
 BuildRequires:  desktop-file-utils

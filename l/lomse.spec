@@ -7,7 +7,7 @@ Summary:        A library to add capabilities to any program for rendering
 License:        BSD-3-Clause
 Group:          Productivity/Networking/Other
 Source:         lib%{name}_%{version}.tar.gz
-URL:            http://www.lenmus.org/en/lomse/intro
+URL:            https://www.lenmus.org/en/lomse/intro
 BuildRequires:  boost-devel
 BuildRequires:  cmake
 BuildRequires:  dos2unix

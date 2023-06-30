@@ -9,7 +9,7 @@ Group:          User Interface/Desktops
 URL:            https://www.gnome-look.org/p/1078547/
 Source0:        https://dl.opendesktop.org/api/files/download/id/1460966595/101017-ACYL_gtk_0.4.tar.bz2
 Source1:        %{theme_name}-index.theme
-Source2:        http://www.wallpapersonly.net/wallpapers/any-colour-you-like-1920x1080.jpg
+Source2:        https://www.wallpapersonly.net/wallpapers/any-colour-you-like-1920x1080.jpg
 BuildArch:      noarch
 Requires:       acyl-metacity-theme
 Requires:       acyls-icon-theme

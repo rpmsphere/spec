@@ -4,8 +4,8 @@ Name:			libcwd
 Version:		1.1.2
 Release:		1
 Summary:		Debugging Library for C++
-Source:			http://prdownloads.sourceforge.net/libcwd/libcwd-%{version}.tar.gz
-URL:			http://libcwd.sourceforge.net
+Source:			https://prdownloads.sourceforge.net/libcwd/libcwd-%{version}.tar.gz
+URL:			https://libcwd.sourceforge.net
 Group:			System/Libraries
 License:		Q Public License (QPL)
 BuildRequires:	gcc-c++ libstdc++-devel make glibc-devel procps

@@ -5,7 +5,7 @@ Version:	1.6.0
 Release:	10.1
 License:	GNU GPL v2
 Group:		Productivity/Office/Organizers
-URL:		http://code.google.com/p/bibshelf/
+URL:		https://code.google.com/p/bibshelf/
 Source:		%{name}-%{version}.tar.bz2
 Patch1:		bibshelf-sigc_namespace-1.6.0.patch
 Patch2:		bibshelf-bibshelf.desktop.in.in-1.6.0.patch

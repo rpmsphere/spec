@@ -6,8 +6,8 @@ Version: 1.0.4
 Release: 6.1
 Group: Development/Languages
 License: GPL
-URL: http://trac.kite-language.org/
-Source0: http://www.kite-language.org/files/%{name}-%{version}.tar.gz
+URL: https://trac.kite-language.org/
+Source0: https://www.kite-language.org/files/%{name}-%{version}.tar.gz
 BuildRequires: libgc-devel
 
 %description

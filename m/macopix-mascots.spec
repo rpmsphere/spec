@@ -3,7 +3,7 @@ Name: macopix-mascots
 Version: 20160804
 Release: 3.1
 License: free
-URL: http://rosegray.sakura.ne.jp/macopix/
+URL: https://rosegray.sakura.ne.jp/macopix/
 Group: Amusements/Games
 Source0: macopix-mascot-comic_party-euc-ja-1.02.tar.gz
 Source1: macopix-mascot-cosmos-euc-ja-1.02.tar.gz

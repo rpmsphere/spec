@@ -6,8 +6,8 @@ Release: 8.1
 Summary: MacOS 8/9 alike UI
 License: GPLv2
 Group: User Interface/Desktops
-URL: http://sourceforge.net/projects/manix/
-Source0: http://sourceforge.net/projects/manix/files/%{name}/%{version}/%{name}-%{version}.tgz
+URL: https://sourceforge.net/projects/manix/
+Source0: https://sourceforge.net/projects/manix/files/%{name}/%{version}/%{name}-%{version}.tgz
 BuildRequires: libX11-devel
 BuildRequires: libXft-devel
 BuildRequires: libXext-devel

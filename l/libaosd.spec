@@ -3,8 +3,8 @@ Version:       0.2.7
 Release:       4.1
 Summary:       An advanced on screen display (OSD) library
 Group:         System/Libraries
-URL:           http://www.atheme.org/project/libaosd
-Source:        http://distfiles.atheme.org/libaosd-%{version}.tgz
+URL:           https://www.atheme.org/project/libaosd
+Source:        https://distfiles.atheme.org/libaosd-%{version}.tgz
 License:       MIT
 BuildRequires: libpng-devel
 BuildRequires: cairo-devel
@@ -13,7 +13,6 @@ BuildRequires: libX11-devel
 BuildRequires: libXcomposite-devel
 BuildRequires: libXfixes-devel
 BuildRequires: libXrender-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 libaosd is an advanced on screen display (OSD) library, which uses Cairo
@@ -54,18 +53,15 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_libdir}/*.so.*
 %doc LICENSE TODO
 
 %files devel
-%defattr(-,root,root)
 %{_includedir}/libaosd
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
 
 %files -n aosd_cat
-%defattr(-,root,root)
 %{_bindir}/aosd_cat
 %{_mandir}/man1/aosd_cat.1.*
 

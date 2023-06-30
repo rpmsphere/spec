@@ -3,7 +3,7 @@ Version:	1.1.0
 Release:	1
 Summary:	GUI to simplify the installation and configuration of Burg
 License:	GPL
-URL:		http://www.sourceslist.eu/burg-manager/
+URL:		https://www.sourceslist.eu/burg-manager/
 Group:		Applications/System
 #Source:	git clone git://github.com/ingalex/burg-manager.git
 Source0:	%{name}-%{version}.tar.gz

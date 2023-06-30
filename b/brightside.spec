@@ -4,8 +4,8 @@ Release: 	    24.4
 Summary:        Add reactivity to the corners and edges of your GNOME desktop
 Group:          Applications/Productivity
 License:        GPL
-URL:            http://catmur.co.uk/~ed/main/brightside/
-Source0:        http://home.jesus.ox.ac.uk/~ecatmur/brightside/download/brightside-1.4.0.tar.bz2
+URL:            https://catmur.co.uk/~ed/main/brightside/
+Source0:        https://home.jesus.ox.ac.uk/~ecatmur/brightside/download/brightside-1.4.0.tar.bz2
 Patch0:         %{name}-gconf-mouse-speed.patch
 Patch1:         %{name}-libwnck.patch
 Patch2:		%{name}-Makefile.patch
@@ -103,7 +103,7 @@ gconftool-2 --makefile-uninstall-rule \
 - rebuild on all arches
 * Wed Apr 13 2005 Adrian Reber <adrian@lisas.de> - 1.4.0-5
 - added patch from freebsd to compile against newer libwnck:
-  http://www.freebsd.org/cgi/cvsweb.cgi/ports/x11/brightside/files/patch-src_brightside.c
+  https://www.freebsd.org/cgi/cvsweb.cgi/ports/x11/brightside/files/patch-src_brightside.c
 * Fri Apr  7 2005 Michael Schwendt <mschwendt[AT]users.sf.net>
 - rebuilt
 * Wed Dec 08 2004 Thorsten Leemhuis <fedora[AT]leemhuis[dot]info> - 0:1.4.0-3

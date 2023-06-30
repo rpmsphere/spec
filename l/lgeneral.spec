@@ -6,7 +6,7 @@ License:       GPL
 Group:         Amusements/Games/Strategy/Turn Based
 Source0:       %{name}-%{version}.tar.gz
 Source1:       %{name}.desktop
-URL:           http://lgames.sourceforge.net/index.php?project=LGeneral
+URL:           https://lgames.sourceforge.net/index.php?project=LGeneral
 BuildRequires: SDL-devel SDL_mixer-devel
 Requires:      %{name}-data = %{version}
 
@@ -19,7 +19,7 @@ and strategic depth of the game.
 
 Authors:
 --------
-   Michael Speck <http://lgames.sf.net/contact.php>
+   Michael Speck <https://lgames.sf.net/contact.php>
    Leo Savernik <l.savernik@aon.at>
    Peter Ivanyi  <peteri@carme.sect.mce.hw.ac.uk>
 

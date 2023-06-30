@@ -5,9 +5,8 @@ Summary:        Mirror directories from ftp servers
 
 Group:          Applications/Internet
 License:        GPLv2+
-URL:            http://packages.debian.org/etch/fmirror
+URL:            https://packages.debian.org/etch/fmirror
 Source0:        ftp://ftp.sunet.se/pub/nir/ftp/utilities/%{name}/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %description
 fmirror is a C program to mirror a directory tree from a remote ftp
@@ -36,7 +35,6 @@ chmod -x $RPM_BUILD_ROOT%{_mandir}/man1/fmirror.1
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %doc ChangeLog COPYING README 
 %{_mandir}/man*/%{name}*.*
 %{_defaultdocdir}/%{name}/*.conf

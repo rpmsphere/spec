@@ -6,8 +6,8 @@ Release:        3
 Summary:        Icon theme designed for Equinox GTK theme
 Group:          User Interface/Desktops 
 License:        GPLv3
-URL:            http://tiheum.deviantart.com/art/Faenza-Icons-173323228
-Source0:        http://ppa.launchpad.net/tiheum/equinox/ubuntu/pool/main/f/faenza-icon-theme/%{name}_%{version}.tar.gz
+URL:            https://tiheum.deviantart.com/art/Faenza-Icons-173323228
+Source0:        https://ppa.launchpad.net/tiheum/equinox/ubuntu/pool/main/f/faenza-icon-theme/%{name}_%{version}.tar.gz
 BuildArch:      noarch
 
 %description

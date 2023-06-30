@@ -3,7 +3,7 @@ Version:        1
 Release:        8.1
 License:        LGPL-2.1
 Summary:        Cue Sheets Generator
-URL:            http://diplodocus.org/projects/audio/
+URL:            https://diplodocus.org/projects/audio/
 Group:          Productivity/Multimedia/CD/Grabbers
 Source:         https://diplodocus.org/dist/audio/%{name}-%{version}.tar.bz2
 BuildRequires:  gcc-c++

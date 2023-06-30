@@ -4,13 +4,13 @@ Summary: Utility for building models with LEGO(R)
 Name: brickutils
 Version: 0.1.4.0
 Release: 8.1
-Source0: http://jaist.dl.sourceforge.net/project/brickutils/brickutils-0.1.4.0/%{_name}-%{version}.tar.gz
+Source0: https://jaist.dl.sourceforge.net/project/brickutils/brickutils-0.1.4.0/%{_name}-%{version}.tar.gz
 License: GNU GPL v3
 Group: Amusements
 BuildArch: noarch
 BuildRequires: python2-devel
 Vendor: Mario Pascucci <mpascucci@gmail.com>
-URL: http://bricksnspace.wordpress.com/brickutils/
+URL: https://bricksnspace.wordpress.com/brickutils/
 
 %description
 BrickUtils is a simple utility for builders that use CAD for designing models,

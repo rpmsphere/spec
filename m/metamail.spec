@@ -13,7 +13,6 @@ Patch0:         metamail-2.7-19.dif
 Patch1:         metamail-2.7-19-security.dif
 Patch2:         metamail-2.7-19-getline.dif
 Patch3:         metamail-2.7-19-binderman.dif
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Metamail is required for reading multimedia mail messages (such as
@@ -44,7 +43,6 @@ ln -sf mimecheck $RPM_BUILD_ROOT/usr/bin/mimebzip
 ln -sf mimecheck $RPM_BUILD_ROOT/usr/bin/mimegzip
 
 %files
-%defattr(-,root,root)
 %doc README mailers.txt
 #/usr/X11R6/lib/X11/fonts/misc/heb8x13B.pcf.gz
 /usr/bin/audiocompose

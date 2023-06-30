@@ -4,8 +4,8 @@ Version: 1.29
 Release: 4.1
 License: GPL
 Group: Applications/Communications
-URL: http://freshmeat.net/fax4CUPS
-Source: http://vigna.dsi.unimi.it/fax4CUPS/fax4CUPS-%{version}.tar.gz
+URL: https://freshmeat.net/fax4CUPS
+Source: https://vigna.dsi.unimi.it/fax4CUPS/fax4CUPS-%{version}.tar.gz
 BuildArch: noarch
 
 %description

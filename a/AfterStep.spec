@@ -6,7 +6,7 @@ Version:	2.2.9
 Release:	1
 License:	GPL
 Group:		User Interface/Desktops
-URL:		http://www.afterstep.org
+URL:		https://www.afterstep.org
 Vendor:		The AfterStep Team (see TEAM in docdir)
 Source0:	ftp://ftp.afterstep.org/stable/%{name}-%{version}.tar.gz
 Source1:	Xclients.afterstep.switchdesk

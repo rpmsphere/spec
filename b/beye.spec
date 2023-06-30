@@ -6,7 +6,7 @@ Release:	7.1
 Summary:	Console hex viewer/editor and disassembler
 License:	GPLv2+
 Group:		File tools
-URL:		http://sourceforge.net/projects/beye/
+URL:		https://sourceforge.net/projects/beye/
 Source:		biew-610.tar.bz2
 Patch0:		biew610-fix-str-fmt.patch
 Provides:   biew

@@ -7,8 +7,8 @@ Release: 1
 Summary: Go implementation of djb's redo, Makefile replacement that sucks less
 Group: Development/Tools
 License: GPLv3
-URL: http://www.goredo.cypherpunks.ru/index.html
-# Source-url: http://www.goredo.cypherpunks.ru/download/goredo-%version.tar.zst
+URL: https://www.goredo.cypherpunks.ru/index.html
+# Source-url: https://www.goredo.cypherpunks.ru/download/goredo-%version.tar.zst
 Source: %name-%version.tar.gz
 BuildRequires: golang
 

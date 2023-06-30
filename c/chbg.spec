@@ -4,8 +4,8 @@ Version:	2.0.1
 Release:	29.1
 License:	GPLv2+
 Group:		Graphics/Utilities
-URL:		http://www.beebgames.com/sw/gtk-ports.html
-Source0:	http://www.beebgames.com/sw/%{name}-%{version}.tar.bz2
+URL:		https://www.beebgames.com/sw/gtk-ports.html
+Source0:	https://www.beebgames.com/sw/%{name}-%{version}.tar.bz2
 Source1:	%{name}_16x16.png
 Source2:	%{name}_32x32.png
 Source3:	%{name}_48x48.png

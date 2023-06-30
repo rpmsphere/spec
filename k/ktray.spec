@@ -5,10 +5,9 @@ Summary:        Independent System Tray Applet
 Version:        0.2
 Release:        198.1
 License:        GPL v2 or later
-URL:            http://ktray.homac.de
+URL:            https://ktray.homac.de
 Group:          System/GUI/KDE
 Source:         %{name}-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 KTray is a system tray that holds dock icons of any application. It is
@@ -34,7 +33,6 @@ make
 make DESTDIR=$RPM_BUILD_ROOT install
 
 %files
-%defattr(-,root,root)
 %{_bindir}/ktray
 %{_datadir}/icons/ktray
 

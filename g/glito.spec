@@ -4,10 +4,10 @@ Version:   1.1
 Release:   21.1
 License:   GPL
 Group:     Amusements/Graphics
-Source0:   http://emmanuel.debanne.free.fr/glito/%{name}-%{version}.tar.gz
+Source0:   https://emmanuel.debanne.free.fr/glito/%{name}-%{version}.tar.gz
 Source1:   %{name}.desktop
 Source2:   %{name}.png
-URL:       http://emmanuel.debanne.free.fr/glito/#english
+URL:       https://emmanuel.debanne.free.fr/glito/#english
 BuildRequires: fltk-devel
 BuildRequires: libpng12-devel
 

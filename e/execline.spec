@@ -4,8 +4,8 @@ Release:	1
 Summary:	A light non-interactive scripting language
 License:	BSD
 Group:		Shells
-URL:		http://www.skarnet.org/software/execline/
-Source0:	http://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
+URL:		https://www.skarnet.org/software/execline/
+Source0:	https://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  skalibs-devel
 
 %description

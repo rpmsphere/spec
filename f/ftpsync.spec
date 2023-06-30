@@ -3,8 +3,8 @@ Version:       1.3.01
 Release:       4.1
 Summary:       A PERL script to synchronize a local directory tree and a remote FTP directory tree
 Group:         Applications/Networking
-URL:           http://ftpsync.sourceforge.net
-Source:        http://ftpsync.sourceforge.net/ftpsync-%{version}.tar.bz2
+URL:           https://ftpsync.sourceforge.net
+Source:        https://ftpsync.sourceforge.net/ftpsync-%{version}.tar.bz2
 License:       GPL
 BuildRequires: perl-devel
 BuildRequires: perl-libwww-perl

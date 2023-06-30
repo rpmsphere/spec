@@ -1,7 +1,7 @@
 Name:           mfsm
 License:        PERMISSIVE-OSI-COMPLIANT
 Group:          System/Monitoring
-URL:            http://members.tripod.com/SDHEngSoft/mfsm.html
+URL:            https://members.tripod.com/SDHEngSoft/mfsm.html
 Version:        1.4
 Release:        960.1
 Summary:        X Window System Based du

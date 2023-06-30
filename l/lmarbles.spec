@@ -4,8 +4,8 @@ Version: 1.0.8
 Release: 1
 License: GPLv2+
 Group: Amusements/Games
-URL: http://lgames.sourceforge.net/
-Source: http://dl.sf.net/lgames/lmarbles-%{version}.tar.gz
+URL: https://lgames.sourceforge.net/
+Source: https://dl.sf.net/lgames/lmarbles-%{version}.tar.gz
 BuildRequires: SDL-devel, SDL_mixer-devel, desktop-file-utils, ImageMagick
 Obsoletes: marbles <= 1.0.5
 
@@ -120,28 +120,28 @@ update-desktop-database %{_datadir}/applications &>/dev/null || :
 * Wed Feb 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.7-11
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
 
-* Fri Feb 13 2009 Matthias Saou <http://freshrpms.net/> 1.0.7-10
+* Fri Feb 13 2009 Matthias Saou <https://freshrpms.net/> 1.0.7-10
 - Add LogicGame category to the desktop file (#485359).
 
 * Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org>
 - Autorebuild for GCC 4.3
 
-* Wed Aug 22 2007 Matthias Saou <http://freshrpms.net/> 1.0.7-8
+* Wed Aug 22 2007 Matthias Saou <https://freshrpms.net/> 1.0.7-8
 - Rebuild for new BuildID feature.
 
-* Sun Aug  5 2007 Matthias Saou <http://freshrpms.net/> 1.0.7-7
+* Sun Aug  5 2007 Matthias Saou <https://freshrpms.net/> 1.0.7-7
 - Update License field.
 - Remove dist tag, since the package will seldom change.
 
-* Mon Aug 28 2006 Matthias Saou <http://freshrpms.net/> 1.0.7-6
+* Mon Aug 28 2006 Matthias Saou <https://freshrpms.net/> 1.0.7-6
 - FC5 rebuild.
 - Add %%{?dist} tag.
 - Remove explicit SDL* libraries requirements.
 
-* Mon Mar  6 2006 Matthias Saou <http://freshrpms.net/> 1.0.7-5
+* Mon Mar  6 2006 Matthias Saou <https://freshrpms.net/> 1.0.7-5
 - FC5 rebuild.
 
-* Thu Feb  9 2006 Matthias Saou <http://freshrpms.net/> 1.0.7-4
+* Thu Feb  9 2006 Matthias Saou <https://freshrpms.net/> 1.0.7-4
 - Rebuild for new gcc/glibc.
 
 * Sun May 22 2005 Jeremy Katz <katzj@redhat.com> - 1.0.7-3
@@ -150,46 +150,46 @@ update-desktop-database %{_datadir}/applications &>/dev/null || :
 * Fri Apr  7 2005 Michael Schwendt <mschwendt[AT]users.sf.net>
 - rebuilt
 
-* Wed Jan 26 2005 Matthias Saou <http://freshrpms.net/> 1.0.7-1
+* Wed Jan 26 2005 Matthias Saou <https://freshrpms.net/> 1.0.7-1
 - Update to 1.0.7.
 
-* Wed May 19 2004 Matthias Saou <http://freshrpms.net/> 1.0.6-3
+* Wed May 19 2004 Matthias Saou <https://freshrpms.net/> 1.0.6-3
 - Rebuilt for Fedora Core 2.
 - Added menu icon.
 
-* Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 1.0.6-2
+* Fri Nov  7 2003 Matthias Saou <https://freshrpms.net/> 1.0.6-2
 - Rebuilt for Fedora Core 1.
 - Added missing SDL_mixer depencency.
 
-* Mon Mar 31 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Mar 31 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 1.0.6 and renamed to lmarbles.
 - Rebuilt for Red Hat Linux 9.
 
-* Fri Oct  4 2002 Matthias Saou <http://freshrpms.net/>
+* Fri Oct  4 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 1.0.5.
 - Rebuilt for Red Hat Linux 8.0.
 - New menu entry.
 
-* Tue Jul  2 2002 Matthias Saou <http://freshrpms.net/>
+* Tue Jul  2 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 1.0.4.
 
-* Tue Jun 25 2002 Matthias Saou <http://freshrpms.net/>
+* Tue Jun 25 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 1.0.3.
 
-* Thu May  2 2002 Matthias Saou <http://freshrpms.net/>
+* Thu May  2 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 1.0.2.
 - Rebuilt against Red Hat Linux 7.3.
 - Added the %%{?_smp_mflags} expansion.
 
-* Fri Feb  8 2002 Matthias Saou <http://freshrpms.net/>
+* Fri Feb  8 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 1.0.1
 
-* Thu Apr 24 2001 Matthias Saou <http://freshrpms.net/>
+* Thu Apr 24 2001 Matthias Saou <https://freshrpms.net/>
 - Rebuilt for Red Hat 7.1.
 
-* Thu Mar  8 2001 Matthias Saou <http://freshrpms.net/>
+* Thu Mar  8 2001 Matthias Saou <https://freshrpms.net/>
 - Update to 010307.
 
-* Tue Jan  2 2001 Matthias Saou <http://freshrpms.net/>
+* Tue Jan  2 2001 Matthias Saou <https://freshrpms.net/>
 - Initial RPM release for RedHat 7.0
 

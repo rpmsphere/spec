@@ -6,7 +6,7 @@ Summary: A sandbox game, based on physics
 Source: %name-%version.tar.bz2
 Patch: caph-1.1-alt-verbose.patch
 Patch1: caph-1.1-alt-debuginfo.patch
-URL: http://caphgame.sourceforge.net/
+URL: https://caphgame.sourceforge.net/
 License: GPLv3
 BuildRequires: mesa-libGL-devel SDL-devel libpng-devel
 

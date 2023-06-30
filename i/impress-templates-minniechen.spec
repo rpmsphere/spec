@@ -4,7 +4,7 @@ Group: Applications/Productivity
 Summary: Templates by minniechen for Impress 
 Version: 2007
 Release: 1
-URL: http://tw.class.urlifelinks.com/class/?csid=css000000017834&id=model4&cl=1157539248-7034-2912
+URL: https://tw.class.urlifelinks.com/class/?csid=css000000017834&id=model4&cl=1157539248-7034-2912
 Source: %{name}.zip
 BuildArch: noarch
 Requires: libreoffice-impress

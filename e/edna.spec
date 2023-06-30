@@ -2,12 +2,12 @@ Summary:	An MP3 server
 Name:		edna
 Version:	0.6
 Release:	3.1
-Source0:	http://sourceforge.net/projects/edna/files/edna/0.6/%{name}-%{version}.tar.gz
+Source0:	https://sourceforge.net/projects/edna/files/edna/0.6/%{name}-%{version}.tar.gz
 License:	GPL
 Group:		System Environment/Daemons
 BuildArch:	noarch
 Requires:	python2
-URL:		http://edna.sourceforge.net/
+URL:		https://edna.sourceforge.net/
 
 %description
 edna allows you to access your MP3 collection from any networked computer.

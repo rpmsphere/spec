@@ -6,10 +6,10 @@ Version: 0.8.2
 Release: 4.1
 Group: Science
 License: LGPLv3
-URL: http://fractalnow.sourceforge.net
-Source0: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL: https://fractalnow.sourceforge.net
+Source0: https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: desktop-file-utils
-BuildRequires: qt5-devel
+BuildRequires: qt5-qtbase-devel
 BuildRequires: libmpc-devel
 BuildRequires: mpfr-devel
 

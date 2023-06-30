@@ -4,8 +4,8 @@ Summary: 	Python editor and development environment
 Version: 	3.11.1
 #Version: 	3.11.4
 Release: 	8.1
-Source:		http://prdownloads.sourceforge.net/drpython/%{name}-%{version}.zip
-URL:		http://drpython.sourceforge.net/
+Source:		https://prdownloads.sourceforge.net/drpython/%{name}-%{version}.zip
+URL:		https://drpython.sourceforge.net/
 License:	GPLv2
 Group:		Development/Python
 Requires:	python2-wxpython

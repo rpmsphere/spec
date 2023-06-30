@@ -5,11 +5,10 @@ Version:	1.1
 Release:	5.1
 License:	GPLv2
 Summary:	An iPad USB Charging Control Utility
-URL:		http://www.rainbow-software.org/linux
+URL:		https://www.rainbow-software.org/linux
 Group:		Hardware/Mobile
-Source:		http://www.rainbow-software.org/linux_files/ipad_charge_%{version}.tar.gz
+Source:		https://www.rainbow-software.org/linux_files/ipad_charge_%{version}.tar.gz
 BuildRequires:	libusb1-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 iPad Charge is used to enable/disable charging of an iPad connected to USB port.

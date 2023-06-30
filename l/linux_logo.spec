@@ -4,8 +4,8 @@ Version: 6.0
 Release: 1
 License: GPLv2
 Group: Applications/System
-URL: http://www.deater.net/weave/vmwprod/linux_logo/
-Source: http://www.deater.net/weave/vmwprod/linux_logo/linux_logo-%{version}.tar.gz
+URL: https://www.deater.net/weave/vmwprod/linux_logo/
+Source: https://www.deater.net/weave/vmwprod/linux_logo/linux_logo-%{version}.tar.gz
 Patch0: linux_logo-5.11-add-ppc64le.patch
 Patch1: linux_logo-5.11-default-logo.patch
 Patch2: 0001-initial-aarch64-support.patch
@@ -84,85 +84,85 @@ make install PREFIX=%{buildroot}%{_prefix}
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
 * Tue Feb 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.11-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
-* Sat Dec  4 2010 Matthias Saou <http://freshrpms.net/> 5.11-1
+* Sat Dec  4 2010 Matthias Saou <https://freshrpms.net/> 5.11-1
 - Update to 5.11.
 - Use the make target to enable all logos instead of a custom way.
 - Update summary and description.
-* Mon Apr 26 2010 Matthias Saou <http://freshrpms.net/> 5.10-1
+* Mon Apr 26 2010 Matthias Saou <https://freshrpms.net/> 5.10-1
 - Update to 5.10.
-* Fri Oct 2 2009 Matthias Saou <http://freshrpms.net/> 5.06-1
+* Fri Oct 2 2009 Matthias Saou <https://freshrpms.net/> 5.06-1
 - Update to 5.06.
 * Sat Jul 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.04-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
 * Wed Feb 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.04-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
-* Fri Feb  6 2009 Matthias Saou <http://freshrpms.net/> 5.04-1
+* Fri Feb  6 2009 Matthias Saou <https://freshrpms.net/> 5.04-1
 - Update to 5.04.
-* Sun Feb  3 2008 Matthias Saou <http://freshrpms.net/> 5.03-1
+* Sun Feb  3 2008 Matthias Saou <https://freshrpms.net/> 5.03-1
 - Update to 5.03.
-* Mon Oct 22 2007 Matthias Saou <http://freshrpms.net/> 5.02-1
+* Mon Oct 22 2007 Matthias Saou <https://freshrpms.net/> 5.02-1
 - Update to 5.02.
-* Wed Aug 22 2007 Matthias Saou <http://freshrpms.net/> 5.01-3
+* Wed Aug 22 2007 Matthias Saou <https://freshrpms.net/> 5.01-3
 - Rebuild for new BuildID feature.
-* Sun Aug  5 2007 Matthias Saou <http://freshrpms.net/> 5.01-2
+* Sun Aug  5 2007 Matthias Saou <https://freshrpms.net/> 5.01-2
 - Update License field.
-* Tue Jul 24 2007 Matthias Saou <http://freshrpms.net/> 5.01-1
+* Tue Jul 24 2007 Matthias Saou <https://freshrpms.net/> 5.01-1
 - Update to 5.01.
 - Remove no longer needed strip patch.
 - Clean up build/install based on the upstream improvements.
 - Add "which" build requirement, the custom configure script uses it.
-* Thu Mar 15 2007 Matthias Saou <http://freshrpms.net/> 4.16-1
+* Thu Mar 15 2007 Matthias Saou <https://freshrpms.net/> 4.16-1
 - Update to 4.16.
-* Mon Aug 28 2006 Matthias Saou <http://freshrpms.net/> 4.14-1
+* Mon Aug 28 2006 Matthias Saou <https://freshrpms.net/> 4.14-1
 - Update to 4.14.
 - FC6 rebuild.
-* Tue May 23 2006 Matthias Saou <http://freshrpms.net/> 4.13-3
+* Tue May 23 2006 Matthias Saou <https://freshrpms.net/> 4.13-3
 - Update the debug patch to remove stripping of the binaries (Ville, #192442).
-* Mon Mar  6 2006 Matthias Saou <http://freshrpms.net/> 4.13-2
+* Mon Mar  6 2006 Matthias Saou <https://freshrpms.net/> 4.13-2
 - FC5 rebuild.
-* Thu Feb  9 2006 Matthias Saou <http://freshrpms.net/> 4.13-1
+* Thu Feb  9 2006 Matthias Saou <https://freshrpms.net/> 4.13-1
 - Update to 4.13.
 * Sun May 22 2005 Jeremy Katz <katzj@redhat.com> - 4.12-2
 - rebuild on all arches
-* Mon May  2 2005 Matthias Saou <http://freshrpms.net/> 4.12-1
+* Mon May  2 2005 Matthias Saou <https://freshrpms.net/> 4.12-1
 - Update to 4.12.
 - Add trivial patch to remove stripping upon install, to get useful debuginfo.
-* Sat Apr 30 2005 Matthias Saou <http://freshrpms.net/> 4.11-1
+* Sat Apr 30 2005 Matthias Saou <https://freshrpms.net/> 4.11-1
 - Update to 4.11.
-* Sat Apr  2 2005 Matthias Saou <http://freshrpms.net/> 4.10-1
+* Sat Apr  2 2005 Matthias Saou <https://freshrpms.net/> 4.10-1
 - Update to 4.10.
 - Remove no longer needed gcc4 patch.
 - Get optflags also used during the compilation of libsysinfo.
 * Wed Mar 30 2005 Adrian Reber <adrian@lisas.de> 4.09-3
 - Added gcc4 patch
 - Fixed a warning
-* Tue Nov 16 2004 Matthias Saou <http://freshrpms.net/> 4.09-2
+* Tue Nov 16 2004 Matthias Saou <https://freshrpms.net/> 4.09-2
 - Bump release to provide Extras upgrade path.
-* Mon May 17 2004 Matthias Saou <http://freshrpms.net/> 4.09-1
+* Mon May 17 2004 Matthias Saou <https://freshrpms.net/> 4.09-1
 - Update to 4.09.
 - Re-enabled all logos, they build fine again.
-* Fri Dec 12 2003 Matthias Saou <http://freshrpms.net/> 4.07-3
+* Fri Dec 12 2003 Matthias Saou <https://freshrpms.net/> 4.07-3
 - Disabled many of the logos as they prevent building :-(
 - Rebuilt for Fedora Core 1.
-* Mon Mar 31 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Mar 31 2003 Matthias Saou <https://freshrpms.net/>
 - Rebuilt for Red Hat Linux 9.
-* Wed Jan 29 2003 Matthias Saou <http://freshrpms.net/>
+* Wed Jan 29 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 4.07.
-* Sat Sep 28 2002 Matthias Saou <http://freshrpms.net/>
+* Sat Sep 28 2002 Matthias Saou <https://freshrpms.net/>
 - Rebuilt for Red Hat Linux 8.0.
-* Thu Sep 26 2002 Matthias Saou <http://freshrpms.net/>
+* Thu Sep 26 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 4.05.
-* Thu May  2 2002 Matthias Saou <http://freshrpms.net/>
+* Thu May  2 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 4.02.
 - Rebuilt against Red Hat Linux 7.3.
 - Added the %%{?_smp_mflags} expansion.
-* Thu Feb 21 2002 Matthias Saou <http://freshrpms.net/>
+* Thu Feb 21 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 4.0.
 - Included all the existing logos, it's more fun :-)
-* Wed Jan  9 2002 Matthias Saou <http://freshrpms.net/>
+* Wed Jan  9 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 3.9b5.
 - Added the Red Hat banner (yes, this is an rpm ;-)).
-* Thu Apr 26 2001 Matthias Saou <http://freshrpms.net/>
+* Thu Apr 26 2001 Matthias Saou <https://freshrpms.net/>
 - Update to 3.9b3 and rebuilt for Red Hat 7.1.
 * Mon Nov 20 2000 Tim Powers <timp@redhat.com>
 - rebuilt to fix bad dir perms

@@ -6,12 +6,11 @@ Version:        0.1.7git%{git_date}
 Release:        6.1
 License:        GPL-2.0+
 Summary:        ISO 9660 Analyzer Tool
-URL:            http://iat.berlios.de
+URL:            https://iat.berlios.de
 Group:          Productivity/Other
 Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 BuildRequires:  libtool
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 ISO 9660 Analyzer Tool is a tool for detecting the structure of many
@@ -55,17 +54,14 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %doc AUTHORS ChangeLog COPYING NEWS README
 %{_bindir}/%{name}
 %doc %{_mandir}/man1/*
 
 %files -n libiat
-%defattr(-,root,root,-)
 %{_libdir}/*.so.*
 
 %files -n libiat-devel
-%defattr(-,root,root,-)
 %{_includedir}/libiat
 %{_libdir}/*.so
 

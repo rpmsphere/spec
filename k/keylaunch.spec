@@ -4,7 +4,7 @@ Release: 2.1
 Summary: Small utility for binding commands to a hot key
 License: GPL
 Group: Graphical desktop/Other
-URL: http://www.oroborus.org/
+URL: https://www.oroborus.org/
 Source: %{name}_%version.tar.bz2
 BuildRequires: libSM-devel libX11-devel dos2unix
 

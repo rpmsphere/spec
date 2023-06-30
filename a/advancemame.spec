@@ -8,8 +8,8 @@ BuildRequires: SDL-devel gcc-c++ mesa-libGL-devel
 BuildRequires: nasm
 Version:      1.2
 Summary:      A port of the MAME
-Source: http://prdownloads.sourceforge.net/advancemame/%name-%version.tar.gz
-URL: http://advancemame.sourceforge.net/readme.html
+Source: https://prdownloads.sourceforge.net/advancemame/%name-%version.tar.gz
+URL: https://advancemame.sourceforge.net/readme.html
 
 %description
 AdvanceMAME is an unofficial MAME™ version with an advanced video support for

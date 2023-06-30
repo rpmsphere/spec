@@ -4,8 +4,8 @@ Release:        13.4
 Summary:        3D Action Breakout with Explosions and Other Effects
 License:        GPL-2.0+
 Group:          Amusements/Games/3D/Other
-URL:            http://briquolo.free.fr/
-Source0:        http://briquolo.free.fr/download/%{name}-%{version}.tar.bz2
+URL:            https://briquolo.free.fr/
+Source0:        https://briquolo.free.fr/download/%{name}-%{version}.tar.bz2
 Source1:        %{name}.png
 Patch0:         %{name}-gcc43.patch
 Patch1:         %{name}-libpng.patch

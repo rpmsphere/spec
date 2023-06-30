@@ -4,8 +4,8 @@ Version: 5.2
 Release: 1
 License: GPL
 Group: Amusements/Games
-URL: http://ironphoenix.org/gtklife/
-Source: http://ironphoenix.org/gtklife/gtklife-%{version}.tar.gz
+URL: https://ironphoenix.org/gtklife/
+Source: https://ironphoenix.org/gtklife/gtklife-%{version}.tar.gz
 BuildRequires: gtk2-devel
 
 %description

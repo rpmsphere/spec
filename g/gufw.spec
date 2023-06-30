@@ -4,7 +4,7 @@ Release:        2
 Summary:        Uncomplicated Firewall
 License:        GPL-3.0
 Group:          Productivity/Networking/Security
-URL:            http://gufw.org/
+URL:            https://gufw.org/
 Source0:        https://launchpadlibrarian.net/350352643/gufw-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  autoconf

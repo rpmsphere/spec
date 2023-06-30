@@ -4,7 +4,7 @@ Release:        3.1
 Summary:        Themes for BURG
 Group:          System Environment/Base
 License:        GPLv3+
-URL:            http://code.google.com/p/burg/
+URL:            https://code.google.com/p/burg/
 # bzr branch lp:burg
 Source0:        %{name}-%{version}.zip
 BuildArch:      noarch

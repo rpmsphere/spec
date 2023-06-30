@@ -4,7 +4,7 @@ Version: 0.9.6.svn24
 Release: 4.1
 Group: Amusements/Graphics
 License: GPL
-URL: http://bitlife.sourceforge.net/
+URL: https://bitlife.sourceforge.net/
 Source0: %{name}-code-24.zip
 Requires: numpy, pygame
 BuildArch: noarch

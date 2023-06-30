@@ -14,7 +14,7 @@ Source4: mjpg_streamer.1
 Source5: mjpg_streamer_udp_client.1
 Source6: mstreamer.1
 Source7: mjpg_streamer.sysconfig
-Source8: videodev.h
+Source8: %name.videodev.h
 Patch0: %{name}.Makefile.patch
 #Patch1: {name}.encoder.patch
 Patch2: %{name}.start.sh.patch
@@ -25,7 +25,7 @@ Patch6: %{name}.control.patch
 Patch7: %{name}.outputhttp.patch
 #Patch8: {name}.utils.h.patch
 #Patch9: {name}.outputviewer.patch
-URL: http://mjpg-streamer.sourceforge.net/
+URL: https://mjpg-streamer.sourceforge.net/
 BuildRequires: libv4l-devel libjpeg-devel SDL-devel unzip
 BuildRequires: qt4-devel
 BuildRequires: ghostscript-core ImageMagick
@@ -58,7 +58,7 @@ cd %{name}
 cp -a %{S:4} .
 cp -a %{S:5} .
 #cp -a %{S:6} .
-cp -a %{S:8} .
+cp -a %{S:8} videodev.h
 # Fix wrong address in www/LICENCE.txt (not needed)
 rm www/LICENSE.txt
 

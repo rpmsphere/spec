@@ -6,8 +6,8 @@ Version: 0.2
 Release: 5.1
 License: GPL
 Group: User Interface/Desktops
-URL: http://robrene.deviantart.com/art/Baku-icon-theme-145678957
-Source: http://www.deviantart.com/download/145678957/Baku_icon_theme_by_robrene.zip
+URL: https://robrene.deviantart.com/art/Baku-icon-theme-145678957
+Source: https://www.deviantart.com/download/145678957/Baku_icon_theme_by_robrene.zip
 BuildArch: noarch
 
 %description

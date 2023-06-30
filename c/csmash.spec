@@ -2,7 +2,7 @@ Name:		csmash
 Summary:	A 3D table tennis game
 Version:	0.6.6
 Release:	12.1
-Source0:	http://belnet.dl.sourceforge.net/sourceforge/cannonsmash/%{name}-%{version}.tar.bz2
+Source0:	https://belnet.dl.sourceforge.net/sourceforge/cannonsmash/%{name}-%{version}.tar.bz2
 Source11:	%{name}.16.png
 Source12:	%{name}.32.png
 Source13:	%{name}.48.png
@@ -12,7 +12,7 @@ Patch2:		csmash-0.6.6-extraqualif.patch
 Patch3:		csmash-0.6.6-cflags.patch
 Patch4:		csmash-0.6.6-format.patch
 Patch5:         csmash-0.6.6-datadir.patch
-URL:		http://CannonSmash.sourceforge.net/
+URL:		https://CannonSmash.sourceforge.net/
 License:	GPLv2
 Group:		Games/Sports
 BuildRequires:	pkgconfig(x11)

@@ -2,11 +2,11 @@ Name: bombermaaan
 Version: 1.4.0
 Release: 1
 Summary: A multi-player maze-style bomberman-like game
-URL: http://bombermaaan.sourceforge.net/
-Source: http://downloads.sourceforge.net/bombermaaan/Bombermaaan_%{version}.627_20081018_src.tar.gz
-Source1: http://downloads.sourceforge.net/bombermaaan/Bombermaaan_%{version}.627_20081018_res.tar.gz
+URL: https://bombermaaan.sourceforge.net/
+Source: https://downloads.sourceforge.net/bombermaaan/Bombermaaan_%{version}.627_20081018_src.tar.gz
+Source1: https://downloads.sourceforge.net/bombermaaan/Bombermaaan_%{version}.627_20081018_res.tar.gz
 Source2: Bombermaaan-Levels.zip
-Source3: http://bombermaaan.sourceforge.net/images/bomber_a.png
+Source3: https://bombermaaan.sourceforge.net/images/bomber_a.png
 License: GPL
 Group: Amusements/Games
 BuildRequires: SDL-devel, SDL_mixer-devel

@@ -23,9 +23,9 @@ BuildRequires:	desktop-file-utils
 GtkQQ is a QQ client. It is written using gtk and based on the webqq protocol.
 
 The webqq protocol is based on the HTTP. 
-Visit http://web.qq.com to see it.
+Visit https://web.qq.com to see it.
 
-Maybe GtkQQ is a browser, whick can only visit http://web.qq.com.
+Maybe GtkQQ is a browser, whick can only visit https://web.qq.com.
 I think there is no copyright problem, because I just write a highly custommed
 broswer.
 

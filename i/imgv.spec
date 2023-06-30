@@ -4,8 +4,8 @@ Release: 4.1
 Summary: A cross-platform feature rich image viewer
 License: GPLv2
 Group: Graphics
-URL: http://imgv.sourceforge.net/
-Source: http://download.sourceforge.net/imgv/imgv-%version-src.tar.gz
+URL: https://imgv.sourceforge.net/
+Source: https://download.sourceforge.net/imgv/imgv-%version-src.tar.gz
 BuildArch: noarch
 Requires: pygame
 

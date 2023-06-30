@@ -4,7 +4,7 @@ License:        GPL-3.0+
 Group:          System/GUI/GNOME
 Version:        2.0
 Release:        12.1
-URL:            http://www.linuxdeepin.com
+URL:            https://www.linuxdeepin.com
 Source0:        %{name}-%{version}.tar.gz
 Source1:        %{name}-demo.desktop
 Source2:        distributor-logo.png

@@ -3,7 +3,7 @@ Version: 0.9
 Release: 18.1
 Group: File tools
 License: LGPL
-URL: http://fsv.sourceforge.net/
+URL: https://fsv.sourceforge.net/
 Summary: 3D File System Visualizer
 Source: %{name}-%{version}.tar.bz2
 Buildrequires: gtk+-devel mesa-libGLU-devel glib-devel

@@ -6,13 +6,13 @@ Version:        20100612
 Release:        4.1
 License:        freeware
 Group:          User Interface/Desktops
-URL:            http://grynays.deviantart.com/art/Defender-Black-167463928?q=1&qo=1
-Source0:        http://www.deviantart.com/download/167463928/Defender_Black_by_GrynayS.zip
+URL:            https://grynays.deviantart.com/art/Defender-Black-167463928?q=1&qo=1
+Source0:        https://www.deviantart.com/download/167463928/Defender_Black_by_GrynayS.zip
 BuildArch:      noarch
 
 %description
 Original CursorXPTheme by RPGuere
-http://rpguere.deviantart.com/gallery/?offset=72#/dihfbn
+https://rpguere.deviantart.com/gallery/?offset=72#/dihfbn
 Thank RPGuere, authorized me to share.
 I Hope you like! :-£
 

@@ -2,8 +2,8 @@ Name:           hungrycat
 Version:        0.4.1
 Release:        3.1
 Summary:        Cat and rm in a single Tool
-Source:         http://jwilk.net/pool/hungrycat-%{version}.tar.gz
-URL:            http://jwilk.net/software/hungrycat.html
+Source:         https://jwilk.net/pool/hungrycat-%{version}.tar.gz
+URL:            https://jwilk.net/software/hungrycat.html
 Group:          System/Base
 License:        GNU General Public License version 2 (GPL v2)
 BuildRequires:  gcc make glibc-devel

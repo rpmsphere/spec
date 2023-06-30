@@ -12,7 +12,7 @@ Source2: lila-gdm-0.3.4.tar.bz2
 Source3: lila-gnome_0.6.4.tar.bz2
 Source4: lila-gtk-0.5.5.tar.bz2
 Source5: lila-gtk-extras-0.4.5.tar.bz2
-URL: http://www.lila-center.info/
+URL: https://www.lila-center.info/
 BuildArch: noarch
 Requires: gtk-smooth-engine
 Requires: gtk-xfce-engine

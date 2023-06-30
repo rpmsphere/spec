@@ -6,8 +6,8 @@ Version: 2.2.4
 Release: 4.1
 License: GPL
 Group: X11/Applications
-URL: http://cgtkcalc.sourceforge.net/
-Source: http://cgtkcalc.sourceforge.net/%{name}-%{version}.tar.gz
+URL: https://cgtkcalc.sourceforge.net/
+Source: https://cgtkcalc.sourceforge.net/%{name}-%{version}.tar.gz
 BuildRequires: gtk2-devel
 
 %description

@@ -3,10 +3,10 @@
 Name: clcc
 Version: 0.3.0
 Release: 44.1
-Source0: http://sourceforge.net/projects/clcc/files/v%{version}/%{name}-%{version}-25-src.zip
+Source0: https://sourceforge.net/projects/clcc/files/v%{version}/%{name}-%{version}-25-src.zip
 License: Boost Software License 1.0
 Group: Development/Tools
-URL: http://clcc.sourceforge.net/
+URL: https://clcc.sourceforge.net/
 Summary: The OpenCL kernel Compiler
 BuildRequires: gcc-c++, cmake, boost-devel, subversion, doxygen
 BuildRequires: ocl-icd-devel, mesa-libOpenCL-devel, llvm-devel

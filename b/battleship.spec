@@ -3,8 +3,8 @@ Version:        0.2
 Release:        1
 Summary:        Battleship game
 License:        GNU General Public License
-URL:            http://chefche.space4free.net/#battleship
-Source0:        http://chefche.space4free.net/battleship-%{version}.tar.gz
+URL:            https://chefche.space4free.net/#battleship
+Source0:        https://chefche.space4free.net/battleship-%{version}.tar.gz
 Source1:        %{name}-0.2.zh_TW.po
 BuildRequires:  libtool, intltool >= 0.35.0, perl >= 5.8.1, atk-devel, cairo-devel, freetype-devel, gtk2-devel, pango-devel
 

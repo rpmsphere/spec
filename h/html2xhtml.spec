@@ -4,8 +4,8 @@ Version:   1.3
 Release:   1
 License:   GPL v2
 Group:     Development/Tools
-Source0:   http://www.it.uc3m.es/jaf/html2xhtml/downloads/%{name}-%{version}.tar.gz 
-URL:       http://www.it.uc3m.es/jaf/html2xhtml/
+Source0:   https://www.it.uc3m.es/jaf/html2xhtml/downloads/%{name}-%{version}.tar.gz 
+URL:       https://www.it.uc3m.es/jaf/html2xhtml/
 
 %description
 html2xhtml converts HTML files into XHTML. It can fix many common errors in HTML files (e.g. missing end tags,

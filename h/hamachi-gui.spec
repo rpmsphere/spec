@@ -2,12 +2,12 @@ Name:           hamachi-gui
 Version:        0.9.6
 Release:        7.1
 Summary:        GUI for the Zero Configuration VPN Client Hamachi
-Source:         http://prdownloads.sourceforge.net/hamachi-gui/hamachi-gui_%{version}.tar.gz
+Source:         https://prdownloads.sourceforge.net/hamachi-gui/hamachi-gui_%{version}.tar.gz
 # PATCH-FIX-UPSTREAM hamachi-gui-fix-includes.patch -- Repairs common error: lack of "#include <string.h>"
 Patch0:         hamachi-gui-fix-includes.patch
 # PATCH-FIX-UPSTREAM hamachi-gui-0.9.6-abuild.patch adam@mizerski.pl -- Fixes linking. Here is why it failed before: https://bugzilla.novell.com/show_bug.cgi?id=533563
 Patch1:         hamachi-gui-0.9.6-abuild.patch
-URL:            http://hamachi-gui.sourceforge.net/
+URL:            https://hamachi-gui.sourceforge.net/
 Group:          Productivity/Networking/Security
 License:        GNU General Public License version 2(GPL v2)
 BuildRequires:  glib2-devel gtk2-devel libxml2-devel libglade2-devel

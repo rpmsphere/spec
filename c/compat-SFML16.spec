@@ -4,8 +4,8 @@ Release:        8
 Summary:        Simple and Fast Multimedia Library
 # src/SFML/Audio/stb_vorbis/stb_vorbis.{c,h} are Public Domain
 License:        zlib and Public Domain
-URL:            http://www.sfml-dev.org/
-Source0:        http://downloads.sourceforge.net/sfml/SFML-%{version}-sdk-linux-64.tar.gz
+URL:            https://www.sfml-dev.org/
+Source0:        https://downloads.sourceforge.net/sfml/SFML-%{version}-sdk-linux-64.tar.gz
 Patch0:         SFML-1.6-gcc.patch
 Patch1:         SFML-1.6-shared-libs.patch
 Patch2:         SFML-1.6-cflags.patch

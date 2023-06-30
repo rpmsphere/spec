@@ -7,7 +7,7 @@ Summary: Ubuntulooks GTK2 engine
 Summary(ru_RU.UTF-8):Модуль прорисовки Ubuntulooks для GTK2
 License: GPL
 Group: Graphical desktop/GNOME
-URL: http://www.gnome-look.org
+URL: https://www.gnome-look.org
 Source0: %{_name}_%{version}.orig.tar.gz
 BuildRequires: gcc-c++ gtk2-devel
 

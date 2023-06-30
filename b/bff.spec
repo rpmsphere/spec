@@ -5,9 +5,9 @@ Version:        1.0.6
 Release:        3.1
 License:        BSD-3-Clause
 Summary:        Moderately-optimizing brainfuck interpreter
-URL:            http://swapped.cc/bff/
+URL:            https://swapped.cc/bff/
 Group:          Development/Languages
-Source:         http://swapped.cc/bff/files/%{name}-%{version}.tar.gz
+Source:         https://swapped.cc/bff/files/%{name}-%{version}.tar.gz
 
 %description
 Moderately-optimizing brainfuck interpreter.

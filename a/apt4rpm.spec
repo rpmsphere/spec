@@ -5,7 +5,7 @@ Release:	6.1
 Source:		%{name}-%{version}.tar.bz2
 License:	GPL
 BuildArch:	noarch
-URL:            http://apt4rpm.sourceforge.net
+URL:            https://apt4rpm.sourceforge.net
 Requires:	perl-XML-LibXML wget mktemp
 BuildRequires:  perl bash
 Group:		System Environment/Base

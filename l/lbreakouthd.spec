@@ -4,8 +4,8 @@ Version: 1.0.6
 Release: 1
 License: GPL
 Group: Amusements/Games
-URL: http://lgames.sourceforge.net/
-Source: http://dl.sf.net/lgames/%{name}-%{version}.tar.gz
+URL: https://lgames.sourceforge.net/
+Source: https://dl.sf.net/lgames/%{name}-%{version}.tar.gz
 BuildRequires: SDL2-devel, SDL2_image-devel, SDL2_mixer-devel, SDL2_ttf-devel
 
 %description

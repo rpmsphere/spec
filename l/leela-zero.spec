@@ -34,7 +34,7 @@ work. Working together, and especially when starting on a smaller scale, it
 will take less than 1700 years to get a good network (which you can feed into
 this program, suddenly making it strong). To help with this effort, run the
 leelaz-autogtp binary provided in this package. The best-known network weights
-file is at http://zero.sjeng.org/best-network
+file is at https://zero.sjeng.org/best-network
 
 %prep
 %setup -q -n %{name}-master

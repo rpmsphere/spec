@@ -6,8 +6,8 @@ Version:	1.5
 Release:	3.1
 License:	GPLv3+
 Group:		Archiving/Compression
-URL:		http://www.nongnu.org/lzip/lunzip.html
-Source0:	http://download.savannah.gnu.org/releases/lzip/%{name}-%{version}.tar.gz
+URL:		https://www.nongnu.org/lzip/lunzip.html
+Source0:	https://download.savannah.gnu.org/releases/lzip/%{name}-%{version}.tar.gz
 BuildRequires:	lzip
 
 %description

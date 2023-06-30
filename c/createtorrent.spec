@@ -3,10 +3,9 @@ Version:        1.1.4
 Release:        12.1
 License:        GPL
 Group:          Productivity/Networking/Other
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  openssl-devel pkgconfig
-URL:            http://www.createtorrent.com/
-Source:         http://www.createtorrent.com/createtorrent-%{version}.tar.gz
+URL:            https://www.createtorrent.com/
+Source:         https://www.createtorrent.com/createtorrent-%{version}.tar.gz
 Summary:        A small and fast command line utility to create BitTorrent files easily
 
 %description
@@ -35,7 +34,6 @@ sed -i 's|-lssl|-lcrypto|' configure
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/createtorrent
 %doc AUTHORS ChangeLog COPYING NEWS README
 

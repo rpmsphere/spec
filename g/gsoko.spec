@@ -6,7 +6,7 @@ Release: 1
 Summary: Clone of the Sokoban game
 License: GPL
 Group: Amusements/Games
-URL: http://people.via.ecp.fr/~jm/gsoko.html
+URL: https://people.via.ecp.fr/~jm/gsoko.html
 Source: %{name}-%version-src.tar.gz
 Source1: %{name}.desktop
 Source2: %{name}.xpm

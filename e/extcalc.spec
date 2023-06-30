@@ -4,8 +4,8 @@ Version:	0.9.3
 Release:	25.1
 License:	GPL-2.0+
 Group:		Applications/Engineering
-URL:		http://sourceforge.net/projects/extcalc-linux/
-Source0:	http://sourceforge.net/projects/extcalc-linux/files/extcalc-linux/%{version}/extcalc-%{version}-1.tar.gz
+URL:		https://sourceforge.net/projects/extcalc-linux/
+Source0:	https://sourceforge.net/projects/extcalc-linux/files/extcalc-linux/%{version}/extcalc-%{version}-1.tar.gz
 BuildRequires: gcc-c++, cmake, qt4-devel, mesa-libGL-devel
 
 %description

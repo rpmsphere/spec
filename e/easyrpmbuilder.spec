@@ -8,7 +8,7 @@ License:       GPL v2
 Group:         Development/Tools/Building 
 BuildRequires: gcc-c++, qt4-devel
 Source0:       easyrpmbuilder-0.5.6.tar.bz2
-URL:           http://kde-apps.org/content/show.php/Easy+RPM+Builder?content=114271
+URL:           https://kde-apps.org/content/show.php/Easy+RPM+Builder?content=114271
 Requires:      rpm-build
 
 %description

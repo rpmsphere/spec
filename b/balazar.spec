@@ -4,12 +4,12 @@ Version:	0.3.4
 Release:	1
 License:	GPL
 Group:		Amusements/Games
-Source:		http://download.gna.org/balazar/Balazar-%version.tar.bz2
+Source:		https://download.gna.org/balazar/Balazar-%version.tar.bz2
 Source10:	%{name}-16.png
 Source11:	%{name}-32.png
 Source12:	%{name}-48.png
-URL:		http://home.gna.org/oomadness/en/balazar/
-# or http://balazar.nekeme.net/
+URL:		https://home.gna.org/oomadness/en/balazar/
+# or https://balazar.nekeme.net/
 BuildRequires:	python2-devel, SDL-devel
 Requires:	soya, python-imaging, pyogg, pyvorbis, pyopenal
 Requires:	tofu, cerealizer

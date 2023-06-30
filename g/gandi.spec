@@ -5,7 +5,7 @@ Release: 4.1
 Summary: Gandi CLI as a service
 Group: System Management
 License: unknown
-URL: http://github.com/gandi/
+URL: https://github.com/gandi/
 Source0: gandi.cli-%{version}.tar.gz
 Provides: gandicli
 BuildRequires: python-docutils, python2-devel, python-setuptools

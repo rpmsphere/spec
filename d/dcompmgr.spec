@@ -3,7 +3,7 @@ Version:        0.20120403
 Release:        10.1
 Summary:        Alternative to xcompmgr
 License:        Unknown
-URL:            http://git.openbox.org/?p=dana/dcompmgr.git;a=summary
+URL:            https://git.openbox.org/?p=dana/dcompmgr.git;a=summary
 Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  glib2-devel, libxcb-devel, libX11-devel, mesa-libGL-devel
 

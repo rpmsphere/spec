@@ -4,8 +4,8 @@ Release: 4.1
 Summary: SVG based GUI framework library
 Group: Development/Libraries
 License: GPL v3
-URL: http://code.google.com/p/altcanvas/
-Source0: http://altcanvas.googlecode.com/files/%{name}_%{version}_1.tar.gz
+URL: https://code.google.com/p/altcanvas/
+Source0: https://altcanvas.googlecode.com/files/%{name}_%{version}_1.tar.gz
 Source1: inkface-setup.py
 BuildArch: noarch
 BuildRequires: python2

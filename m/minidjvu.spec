@@ -5,9 +5,9 @@ Version:        0.8
 Release:        5.1
 License:        GPL-2.0
 Summary:        Bitonal DjVu Encoder/Decoder
-URL:            http://minidjvu.sourceforge.net/
+URL:            https://minidjvu.sourceforge.net/
 Group:          Productivity/Graphics/Other
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # PATCH-FIX-OPENSUSE minidjvu-0.8-gzip.patch lazy.kent@opensuse.org -- gzip manpages in buildroot
 Patch0:         minidjvu-0.8-gzip.patch
 # PATCH-FIX-OPENSUSE minidjvu-0.8-install.patch lazy.kent@opensuse.org -- fix install options

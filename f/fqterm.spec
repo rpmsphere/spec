@@ -4,7 +4,7 @@ Release:	7.1
 Summary:	BBS client designed for BBS browsing	
 Group:		Applications/Internet
 License:	GPLv2+
-URL:		http://code.google.com/p/fqterm/
+URL:		https://code.google.com/p/fqterm/
 Source0:	https://codeload.github.com/mytbk/fqterm/tar.gz/0.9.8.4#/%{name}-%{version}.tar.gz
 BuildRequires:	qt4-devel
 BuildRequires:	openssl-devel
@@ -34,11 +34,11 @@ export PATH=%{_qt4_bindir}:$PATH
 # enable BUILD_SHARED_LIBS will generate some shlibs that cannot be installed
 # by simply type 'make install'
 %cmake -DBUILD_SHARED_LIBS:BOOL=OFF 
-make %{?_smp_mflags}
+%cmake_build
 
 %install
 rm -rf %{buildroot}
-make install DESTDIR=%{buildroot}
+%cmake_install
 
 rm -rf %{buildroot}%{_datadir}/FQTerm/dict/*.ts
 rm -rf %{buildroot}%{_datadir}/FQTerm/fqterm.sh

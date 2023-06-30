@@ -5,8 +5,8 @@ Version: 0.3
 Release: 11.1
 Group: Amusements/Games
 License: GPLv2
-URL: http://sourceforge.net/projects/gosiege/
-Source0: http://sourceforge.net/projects/gosiege/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+URL: https://sourceforge.net/projects/gosiege/
+Source0: https://sourceforge.net/projects/gosiege/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 BuildRequires: python2-devel
 BuildArch: noarch
 

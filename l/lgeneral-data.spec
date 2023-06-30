@@ -5,7 +5,7 @@ Release:   1
 License:   GPL
 Group:     Amusements/Games/Strategy/Turn Based
 Source:    %{name}-%{version}.tar.gz
-URL:       http://lgames.sourceforge.net/index.php?project=LGeneral
+URL:       https://lgames.sourceforge.net/index.php?project=LGeneral
 Requires:  lgeneral
 BuildArch: noarch
 

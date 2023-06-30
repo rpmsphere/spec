@@ -4,9 +4,8 @@ Release:        3.1
 Summary:        A few GRUB bootsplashes
 Group:          User Interface/Desktops
 License:        GPL
-URL:            http://gnome-look.org/content/show.php/GRUB+Splashes?content=59322
-Source0:        http://gnome-look.org/CONTENT/content-files/59322-Bootsplashes.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+URL:            https://gnome-look.org/content/show.php/GRUB+Splashes?content=59322
+Source0:        https://gnome-look.org/CONTENT/content-files/59322-Bootsplashes.tar.gz
 BuildArch:      noarch
 Requires:       grub
 
@@ -36,7 +35,6 @@ cp * $RPM_BUILD_ROOT/boot/grub/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 /boot/grub/%{name}
 
 %changelog

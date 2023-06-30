@@ -12,8 +12,8 @@ Version:	10.02
 Release:	9.1
 License:	Geant4 Software License
 Group:		Development/Libraries/C and C++
-URL:		http://geant4.cern.ch/
-Source0:	http://geant4.cern.ch/support/source/geant4.%{version}.tar.gz
+URL:		https://geant4.cern.ch/
+Source0:	https://geant4.cern.ch/support/source/geant4.%{version}.tar.gz
 #Source1:	geant4-env-funcs.sh
 BuildRequires:	gcc, gcc-c++
 BuildRequires:	mesa-libGL-devel, mesa-libGLU-devel, xorg-x11-proto-devel, motif-devel, xerces-c-devel

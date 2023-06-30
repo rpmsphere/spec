@@ -4,14 +4,14 @@ Release:        10.1
 Summary:        Hands-free nzb downloader and post processor
 Group:          Networking/News
 License:        BSD
-URL:            http://www.hellanzb.com/trac/
-Source0:        http://www.hellanzb.com/distfiles/hellanzb-%{version}.tar.gz
+URL:            https://www.hellanzb.com/trac/
+Source0:        https://www.hellanzb.com/distfiles/hellanzb-%{version}.tar.gz
 Patch0:         hellanzb-configuration-location3.patch
 Patch1:         hellanzb-unrar-is-optional.patch
 Patch2:         hellanzb-remove-bogus-shebang.patch
 Patch3:         hellanzb-0.13-dont-attempt-multiple-groups.diff
 # (ahmad) add patch from debian to fix compatibility with Twisted 10.0.0
-# http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=573221
+# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=573221
 Patch4:         007-Twisted_10.0.0_compat.patch
 BuildRequires:  python2-devel
 BuildRequires:  python2-setuptools

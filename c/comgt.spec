@@ -5,12 +5,12 @@ Summary:	GPRS/EDGE/3G/HSDPA datacard control tool
 Name:		comgt
 Version:	0.32
 Release:	6.1
-Source0:	http://www.pharscape.org/3G/%{name}/%{name}.%{version}.tgz
+Source0:	https://www.pharscape.org/3G/%{name}/%{name}.%{version}.tgz
 Patch0:		comgt-0.32-string-format.patch
 Patch1:		comgt-0.32-fix-man-page-typo.patch
 License:	GPLv2+
 Group:		Communications/Mobile
-URL:		http://pharscape.org/comgt.html
+URL:		https://pharscape.org/comgt.html
 Provides:	%{old_name} = %{version}-%{release}
 Obsoletes:	%{old_name} < %{version}-%{release}
 Requires:	usb_modeswitch

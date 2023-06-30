@@ -6,8 +6,8 @@ Version:   0.30c
 Release:   1
 License:   GPL
 Group:     Games/Entertainment
-Source0:   http://emhsoft.com/%{_name}/%{_name}-%{version}-src.tar.gz
-URL:       http://emhsoft.com/%{_name}/
+Source0:   https://emhsoft.com/%{_name}/%{_name}-%{version}-src.tar.gz
+URL:       https://emhsoft.com/%{_name}/
 BuildArch: noarch
 Requires:  python2
 Requires:  pygame

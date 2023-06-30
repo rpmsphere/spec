@@ -1,11 +1,11 @@
 Name:		clipbucket
 Version:	2.6.r738.p3
 Release:	1
-URL:		http://clip-bucket.com/
+URL:		https://clip-bucket.com/
 Summary:	A way to broadcast yourself
 License:	Open Source
 Group:		Productivity/Networking
-Source0:	http://sourceforge.net/projects/clipbucket/files/ClipBucket%20v2/clipbucket-2.6-r738-security-fixed-p3.zip
+Source0:	https://sourceforge.net/projects/clipbucket/files/ClipBucket%20v2/clipbucket-2.6-r738-security-fixed-p3.zip
 Source1:	zh_TW.lang
 BuildArch:	noarch
 Requires:	httpd php mysql-server gd ffmpeg gpac gpac-libs flvtool2
@@ -37,7 +37,7 @@ cp %{SOURCE1} upload/includes/langs
 %__rm -rf %{buildroot}
 
 %files
-%defattr(-,apache,apache)
+ %defattr(-,apache,apache)
 %doc CHANGELOG README.txt "do not upload/admin_change_pass.php"
 /var/www/html/%{name}
 

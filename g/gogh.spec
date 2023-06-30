@@ -6,8 +6,8 @@ Release: 1
 Summary: A GNU/Linux bitmap graphics editor
 Group: Applications/Multimedia
 License: GPLv2+ with exceptions
-URL: http://www.goghproject.com
-Source0: http://www.goghproject.com/%{pkg_name}-%{version}.tar.gz
+URL: https://www.goghproject.com
+Source0: https://www.goghproject.com/%{pkg_name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: desktop-file-utils
 BuildRequires: pygtk2-devel

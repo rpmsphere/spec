@@ -4,10 +4,10 @@ Summary:          Live video for linux
 Name:             gmlive
 Version:          0.22.3
 Release:          11.1
-URL:              http://code.google.com/p/gmlive/
+URL:              https://code.google.com/p/gmlive/
 License:          GPLv2
 Group:	Applications/Multimedia
-Source:           http://gmlive.googlecode.com/files/%{name}-%{version}.tar.bz2
+Source:           https://gmlive.googlecode.com/files/%{name}-%{version}.tar.bz2
 Source1:	  gmlive.desktop
 BuildRequires:    libpng-devel
 BuildRequires:    gcc-c++

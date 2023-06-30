@@ -4,7 +4,7 @@ Version:	0.7.2
 Release:	6.1
 License:	GPL
 Group:		System/Configuration/Boot and Init
-URL:		http://livecd.berlios.de/
+URL:		https://livecd.berlios.de/
 Source0:	%{name}-%{version}.tar.bz2
 Requires:	busybox >= 1.7.0
 Requires:	mediacheck, genisoimage, squashfs-tools >= 3.3-3

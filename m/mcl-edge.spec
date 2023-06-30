@@ -5,8 +5,8 @@ Version:        14.137
 Release:        1
 Summary:        Analysis of networks with millions of nodes
 License:        GPL
-URL:            http://micans.org/mcl/index.html?sec_mcledge
-Source0:        http://micans.org/mcl/src/mcl-%{_version}.tar.gz
+URL:            https://micans.org/mcl/index.html?sec_mcledge
+Source0:        https://micans.org/mcl/src/mcl-%{_version}.tar.gz
 
 %description
 MCL-edge is a collection of ready-made network analysis tools that includes

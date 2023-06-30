@@ -4,7 +4,7 @@ Release:        4.1
 Summary:        Goglus X11 Mouse Cursor theme
 Group:          System/X11/Icons
 License:        BSD
-URL:            http://gnome-look.org/content/show.php/goglus_cursor?content=127487
+URL:            https://gnome-look.org/content/show.php/goglus_cursor?content=127487
 Source0:        127487-goglus_cursor.tar.gz
 BuildArch:      noarch
 

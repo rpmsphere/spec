@@ -8,7 +8,7 @@ Patch: hanzim-makefilepaths.patch
 License: GPL
 Group: Applications/Education
 Summary: A Chinese character learning-aid program
-URL: http://hanzim.com/
+URL: https://hanzim.com/
 BuildRequires: tk-devel
 Requires: xorg-x11-fonts-misc, tk
 

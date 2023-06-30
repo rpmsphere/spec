@@ -2,8 +2,8 @@ Name:		marst
 Summary:	Algol-to-C translator
 Version:	2.7
 Release:	1
-Source0:	http://www.algol60.org/translators/%{name}-%{version}.tar.gz
-URL:		http://www.gnu.org/software/marst/marst.html
+Source0:	https://www.algol60.org/translators/%{name}-%{version}.tar.gz
+URL:		https://www.gnu.org/software/marst/marst.html
 Group:		Development/Languages
 License:	GPLv3
 

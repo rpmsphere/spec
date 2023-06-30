@@ -7,7 +7,6 @@ Source:			daemonizer-%{version}.tar.bz2
 URL:				https://trac.id.ethz.ch/projects/daemonizer/
 Group:			System/Daemons
 License:			The Apache License 2.0
-BuildRoot:		%{_tmppath}/build-%{name}-%{version}
 BuildRequires:	gcc make glibc-devel
 BuildRequires:	autoconf automake libtool
 
@@ -37,7 +36,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc COPYRIGHT LICENSE NEWS TODO
 %{_bindir}/daemonizer
 %doc %{_mandir}/man1/daemonizer.1*

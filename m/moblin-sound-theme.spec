@@ -6,7 +6,7 @@ Group:          System/GUI/Other
 Source0:        moblin-sound-theme-%{version}.tar.bz2
 # For details on the licenses used, see README
 License:        GPLv2+
-URL:            http://www.moblin.org
+URL:            https://www.moblin.org
 BuildArch:      noarch
 BuildRequires:  gettext
 BuildRequires:  intltool

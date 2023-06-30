@@ -11,7 +11,7 @@ Source:         %{name}-%{version}.tar.bz2
 Source1:        macfanctl.conf
 Source2:        macfanctld.1
 Source3:        macfanctld
-Patch:          Makefile.patch
+Patch:          %name.Makefile.patch
 
 %description -n macfanctld
 macfanctld is a daemon that reads temperature sensors and adjust the fan(s)

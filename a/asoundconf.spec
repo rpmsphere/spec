@@ -5,7 +5,7 @@ Release: 4.1
 License: GPL
 Group: Sound
 URL: https://code.launchpad.net/~motu/asoundconf-ui
-# rev 8 of http://bazaar.launchpad.net/~crimsun/asoundconf-ui/asoundconf-trunk
+# rev 8 of https://bazaar.launchpad.net/~crimsun/asoundconf-ui/asoundconf-trunk
 Requires: alsa-utils
 Source0: %name-%version.tar
 BuildArch: noarch
@@ -37,7 +37,7 @@ sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_bindir}/asoundconf
 - Rebuilt for Fedora
 * Tue Apr 01 2014 Igor Vlasenko <viy@altlinux.ru> 0.1-alt1
 - synced changes from aur.archlinux.org/packages/asoundconf (1.0.1-3)
-  (see also http://wiki.marklesh.com/How-to/Asoundconf)
+  (see also https://wiki.marklesh.com/How-to/Asoundconf)
 - (closes: #29795)
 * Tue Oct 25 2011 Vitaly Kuznetsov <vitty@altlinux.ru> 0.0.bzr8-alt1.1.1
 - Rebuild with Python-2.7

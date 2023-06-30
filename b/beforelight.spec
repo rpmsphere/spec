@@ -3,10 +3,9 @@ Version:       1.0.4
 Release:       2.1
 Summary:       A screen saver for X servers supporting the MIT-SCREEN-SAVER extension
 Group:         System/X11
-URL:           http://x.org
-Source:        http://ftp.x.org/pub/individual/app/beforelight-%{version}.tar.bz2
+URL:           https://x.org
+Source:        https://ftp.x.org/pub/individual/app/beforelight-%{version}.tar.bz2
 License:       MIT
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 BuildRequires: libICE-devel
 BuildRequires: libSM-devel
 BuildRequires: libX11-devel
@@ -34,7 +33,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/beforelight
 %{_datadir}/X11/app-defaults/Beforelight
 %{_mandir}/man1/beforelight.1.gz

@@ -6,7 +6,7 @@ Version: 5.0
 Release: 4.1
 License: GPL
 Group: User Interface/Desktops
-URL: http://gnome-look.org/content/show.php/Hi-Lights?content=153771
+URL: https://gnome-look.org/content/show.php/Hi-Lights?content=153771
 Source: %{theme_name}_%{version}.tar.gz
 BuildArch: noarch
 

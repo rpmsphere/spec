@@ -11,7 +11,7 @@ BuildRequires:  gstreamer-devel
 Requires:       ruby qt4 aspell gstreamer mesa-libGL
 Group:          Productivity/Graphics/Other
 Summary:        KTooN Open Media Library
-URL:		http://www.ktoon.net/
+URL:		https://www.ktoon.net/
 BuildRequires:  compat-ffmpeg-devel
 
 %description

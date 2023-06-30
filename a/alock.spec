@@ -18,7 +18,7 @@ alock locks the X server until the user enters a password via the keyboard.
 If the authentification was successful the X server is unlocked and the user
 can continue to work.
 
-Fork from https://github.com/mgumz/alock (http://code.google.com/p/alock/)
+Fork from https://github.com/mgumz/alock (https://code.google.com/p/alock/)
 
 %prep
 %setup -q -n %{name}-master

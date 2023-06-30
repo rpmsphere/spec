@@ -4,8 +4,8 @@ Release:	2.1
 Summary:	IRC Message Relay
 License:	BSD
 Group:		Networking/IRC
-URL: 		http://www.catb.org/esr/irker/
-Source0:	http://www.catb.org/~esr/irker/%{name}-%{version}.tar.gz
+URL: 		https://www.catb.org/esr/irker/
+Source0:	https://www.catb.org/~esr/irker/%{name}-%{version}.tar.gz
 Patch0: irker-1.9-systemd-unit-user.patch
 BuildArch: noarch
 Requires: python-irc

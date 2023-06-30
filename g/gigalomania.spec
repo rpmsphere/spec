@@ -6,8 +6,8 @@ Version: 0.26
 Release: 11.4
 Group: Amusements/Games
 License: GPLv2+
-URL: http://homepage.ntlworld.com/mark.harman/comp_gigalomania.html
-Source0: http://launchpad.net/gigalomania/trunk/%{version}/+download/%{name}src.zip
+URL: https://homepage.ntlworld.com/mark.harman/comp_gigalomania.html
+Source0: https://launchpad.net/gigalomania/trunk/%{version}/+download/%{name}src.zip
 BuildRequires: SDL-devel
 BuildRequires: SDL_mixer-devel
 BuildRequires: SDL_image-devel

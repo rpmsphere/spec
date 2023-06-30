@@ -2,9 +2,9 @@ Name:           bluemindo
 Summary:        Simple audio player in Python/PyGTK, using GStreamer
 Version:        0.3
 Release:        6.1
-Source0:        http://codingteam.net/project/bluemindo/download/file/%{name}-%{version}.tar.gz
+Source0:        https://codingteam.net/project/bluemindo/download/file/%{name}-%{version}.tar.gz
 Patch0:		bluemindo-0.3-makefile.patch
-URL:            http://codingteam.net/project/bluemindo
+URL:            https://codingteam.net/project/bluemindo
 License:	GPLv3
 Group:          Sound
 Requires:	pygtk2 

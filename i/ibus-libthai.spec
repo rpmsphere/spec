@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue Mar 14 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.4
 - Rebuilt for Fedora
 * Sat Jan 21 2017 PLD Linux Team <feedback@pld-linux.org>
-- For complete changelog see: http://git.pld-linux.org/?p=packages/ibus-libthai.git;a=log;h=master
+- For complete changelog see: https://git.pld-linux.org/?p=packages/ibus-libthai.git;a=log;h=master
 * Sat Jan 21 2017 Jakub Bogusz <qboosh@pld-linux.org> 4b70dc1
 - updated to 0.1.4
 * Sat Apr 02 2016 Jakub Bogusz <qboosh@pld-linux.org> 77bc246

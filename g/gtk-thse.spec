@@ -4,8 +4,8 @@ Name: gtk-thse
 Summary: A GTK theme switcher
 Version: 0.72
 Release: 2.1
-Source:  http://www.rico-net.de/gtk-thse/tar/%{_name}-%{version}.tar.gz
-URL: http://www.rico-net.de/gtk-thse/
+Source:  https://www.rico-net.de/gtk-thse/tar/%{_name}-%{version}.tar.gz
+URL: https://www.rico-net.de/gtk-thse/
 License: GPL
 Group: GNOME
 BuildRequires: gtk+-devel glib-devel

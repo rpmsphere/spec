@@ -9,7 +9,7 @@ Source1:        %name.desktop
 Patch:          %{name}-%{version}.diff
 Patch1:         %{name}-libs.patch
 Patch2:         %{name}-tinfo.patch
-URL:            http://www.hut.fi/~jtpelto2/nethack.html
+URL:            https://www.hut.fi/~jtpelto2/nethack.html
 Summary:        A Mouse-Driven interface for NetHack
 License:        NGPL
 Group:          Amusements/Games/RPG

@@ -6,7 +6,7 @@ Release: 2.1
 Summary: GStreamer extension library for non-linear editing
 Group: Video
 License: LGPL
-URL: http://gstreamer.freedesktop.org/
+URL: https://gstreamer.freedesktop.org/
 Source0: %oname-%version.tar
 Source1: common.tar
 Patch: %oname-%version.patch
@@ -16,7 +16,7 @@ BuildRequires: gstreamer-plugins-base-devel
 #BuildRequires: python-encodings
 
 %description
-Gnonlin is a library built on top of GStreamer (http://gstreamer.net)
+Gnonlin is a library built on top of GStreamer (https://gstreamer.net)
 which provides support for writing non-linear audio and video editing
 applications. It introduces the concept of a timeline.
 

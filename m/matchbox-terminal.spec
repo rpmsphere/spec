@@ -2,10 +2,10 @@ Summary: 	Terminal for the Matchbox Desktop
 Name: 		matchbox-terminal
 Version: 	0.2
 Release: 	4.1
-URL: 		http://git.yoctoproject.org/cgit/cgit.cgi/matchbox-terminal/
+URL: 		https://git.yoctoproject.org/cgit/cgit.cgi/matchbox-terminal/
 License: 	GPLv2+
 Group: 		Graphical desktop/Other
-Source0: 	http://git.yoctoproject.org/cgit/cgit.cgi/matchbox-terminal/snapshot/%name-%version.tar.gz
+Source0: 	https://git.yoctoproject.org/cgit/cgit.cgi/matchbox-terminal/snapshot/%name-%version.tar.gz
 BuildRequires:	gtk3-devel
 BuildRequires:	vte291-devel
 

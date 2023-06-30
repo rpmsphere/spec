@@ -4,9 +4,9 @@ Release: 3.1
 Summary: A Tool for Resizing BDF Format Fonts
 License: GPL
 Group: System/X11
-URL: http://openlab.ring.gr.jp/efont/dist/tools/bdfresize/
-Source0: http://openlab.ring.gr.jp/efont/dist/tools/bdfresize/%name-%version.tar.gz
-Patch: http://developer.momonga-linux.org/viewcvs/*checkout*/trunk/pkgs/bdfresize/bdfresize-1.5-gcc34.patch
+URL: https://openlab.ring.gr.jp/efont/dist/tools/bdfresize/
+Source0: https://openlab.ring.gr.jp/efont/dist/tools/bdfresize/%name-%version.tar.gz
+Patch: https://developer.momonga-linux.org/viewcvs/*checkout*/trunk/pkgs/bdfresize/bdfresize-1.5-gcc34.patch
 
 %description
 Bdfresize is a command for magnifying or shrinking fonts which are

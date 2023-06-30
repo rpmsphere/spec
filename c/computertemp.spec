@@ -5,12 +5,12 @@ Version:        0.9.6.1
 Release:        6.1
 License:        GPL-2.0
 Summary:        Displaying the temperature of your CPU and disks
-Url:            http://computertemp.berlios.de
+Url:            https://computertemp.berlios.de
 Group:          System/GUI/GNOME
 Source0:        %{name}-%{version}.tar.bz2
 # PATCH-FIX-OPENSUSE computertemp-use-libexecdir.patch vuntz@novell.com -- Make it install the applet in the right directory
 Patch0:         computertemp-use-libexecdir.patch
-# PATCH-FIX-UPSTREAM computertemp-better-theming-and-fixes.patch vuntz@opensuse.org -- Better handling of dark themes, and various other fixes that were in the same commits. Taken from svn: based on svn diff -r 9:10 and svn diff -r 13:17 http://svn.infinicode.org/computertemp/trunk/computertemp
+# PATCH-FIX-UPSTREAM computertemp-better-theming-and-fixes.patch vuntz@opensuse.org -- Better handling of dark themes, and various other fixes that were in the same commits. Taken from svn: based on svn diff -r 9:10 and svn diff -r 13:17 https://svn.infinicode.org/computertemp/trunk/computertemp
 Patch1:         computertemp-better-theming-and-fixes.patch
 BuildRequires:  GConf2-devel
 BuildRequires:  intltool

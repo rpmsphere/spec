@@ -4,8 +4,8 @@ Release:	1
 Summary:	A menu generation utility
 Group:		User Interface/Desktops
 License:	GPLv2+
-URL:		http://menumaker.sourceforge.net/
-Source:		http://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:		https://menumaker.sourceforge.net/
+Source:		https://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python2-devel
 

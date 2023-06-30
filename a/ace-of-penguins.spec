@@ -6,8 +6,8 @@ Version: 1.4
 Release: 12.1
 Group: games
 License: Free Software
-URL: http://www.delorie.com/store/ace/
-Source0: http://www.delorie.com/store/ace/ace-%{version}.tar.gz
+URL: https://www.delorie.com/store/ace/
+Source0: https://www.delorie.com/store/ace/ace-%{version}.tar.gz
 Source1: ace-share.zip
 BuildRequires: libX11-devel
 BuildRequires: libXpm-devel

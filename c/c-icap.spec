@@ -5,7 +5,7 @@ Epoch:   1
 Summary: ICAP server
 License: LGPLv2
 Group: 	 System/Servers
-URL: 	 http://c-icap.sourceforge.net/
+URL: 	 https://c-icap.sourceforge.net/
 Source0: c_icap-%version.tar.gz
 Source1: %name.service
 Source2: %name.watch

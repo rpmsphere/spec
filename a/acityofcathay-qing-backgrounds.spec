@@ -4,7 +4,7 @@ Release:        4.1
 Summary:        Backgrounds from a chinese panoramic painting
 Group:          User Interface/Desktops
 License:        Unknown
-URL:            http://en.wikipedia.org/wiki/Along_the_River_During_the_Qingming_Festival
+URL:            https://en.wikipedia.org/wiki/Along_the_River_During_the_Qingming_Festival
 Source0:        acityofcathay-qing.zip
 BuildArch:      noarch
 

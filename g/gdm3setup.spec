@@ -4,7 +4,7 @@ Version: 20140316
 Release: 2.1
 Group: GNOME desktop
 License: GPL
-URL: http://github.com/Nano77/gdm3setup
+URL: https://github.com/Nano77/gdm3setup
 Source0: %{name}-master.zip
 BuildArch: noarch
 BuildRequires: desktop-file-utils

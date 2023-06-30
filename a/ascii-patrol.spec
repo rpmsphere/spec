@@ -6,7 +6,7 @@ Release:        1
 Summary:        Text based Moon Patrol clone
 License:        GPL-3.0-only
 Group:          Amusements/Games/Action/Arcade
-URL:            http://ascii-patrol.com/
+URL:            https://ascii-patrol.com/
 Source:         https://github.com/msokalski/ascii-patrol/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 BuildRequires:  pkgconfig(x11)

@@ -1,7 +1,7 @@
 Name:           moon-lander
 BuildRequires:  SDL_image-devel SDL_mixer-devel gcc-c++ 
 BuildRequires:	mesa-libGL-devel
-URL:            http://magigames.org/moonlander.html
+URL:            https://magigames.org/moonlander.html
 License:        BSD 3-Clause
 Group:          Amusements/Games/Action/Arcade
 Version:        1.0

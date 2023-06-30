@@ -6,8 +6,8 @@ Version: 0.35beta2
 Release: 2.1
 License: GPL
 Group: Applications/Emulators
-URL: http://gxmame.sourceforge.net/
-Source: http://dl.sf.net/gxmame/gxmame-%{version}.tar.gz
+URL: https://gxmame.sourceforge.net/
+Source: https://dl.sf.net/gxmame/gxmame-%{version}.tar.gz
 Requires: xmame
 BuildRequires: gtk2-devel, zlib-devel, expat-devel, intltool, gettext
 BuildRequires: gettext-devel
@@ -55,72 +55,72 @@ sed -i 's|-Wall|-Wall -fPIC -Wl,--allow-multiple-definition|' src/Makefile
 %changelog
 * Tue Jul 05 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.35beta2
 - Rebuilt for Fedora
-* Fri Mar 17 2006 Matthias Saou <http://freshrpms.net/> 0.35-0.4.beta2
+* Fri Mar 17 2006 Matthias Saou <https://freshrpms.net/> 0.35-0.4.beta2
 - Release bump to drop the disttag number in FC5 build.
-* Thu Jan 12 2006 Matthias Saou <http://freshrpms.net/> 0.35-0.3.beta2
+* Thu Jan 12 2006 Matthias Saou <https://freshrpms.net/> 0.35-0.3.beta2
 - Add FC5 to the build conditionals.
-* Sat Jul 30 2005 Matthias Saou <http://freshrpms.net/> 0.35-0.2.beta2
+* Sat Jul 30 2005 Matthias Saou <https://freshrpms.net/> 0.35-0.2.beta2
 - Remove the xpm icon, only the png one is used.
-* Thu May  5 2005 Matthias Saou <http://freshrpms.net/> 0.35-0.1.beta2
+* Thu May  5 2005 Matthias Saou <https://freshrpms.net/> 0.35-0.1.beta2
 - Update to 0.35beta2.
 - Remove optfree patch.
-* Wed Mar 16 2005 Matthias Saou <http://freshrpms.net/> 0.35-0.beta1.2
+* Wed Mar 16 2005 Matthias Saou <https://freshrpms.net/> 0.35-0.beta1.2
 - Add gxmame-0.35beta1-optfree.patch to fix crash, as reported by Motor.
 - Add _with_gettextdevel build option.
-* Mon Feb 14 2005 Matthias Saou <http://freshrpms.net/> 0.35-0.beta1.1
+* Mon Feb 14 2005 Matthias Saou <https://freshrpms.net/> 0.35-0.beta1.1
 - Update to 0.35beta1.
-* Mon Dec 13 2004 Matthias Saou <http://freshrpms.net/> 0.35-0.20041213.1
+* Mon Dec 13 2004 Matthias Saou <https://freshrpms.net/> 0.35-0.20041213.1
 - Update to today's CVS.
-* Mon Nov 29 2004 Matthias Saou <http://freshrpms.net/> 0.35-0.20041129.1
+* Mon Nov 29 2004 Matthias Saou <https://freshrpms.net/> 0.35-0.20041129.1
 - Update to today's CVS version from the Next-Version-0-40 branch.
 - Added --with-xmame-dir configure option.
 - Enable joystick.
-* Tue Oct  5 2004 Matthias Saou <http://freshrpms.net/> 0.35-0.20041005.1
+* Tue Oct  5 2004 Matthias Saou <https://freshrpms.net/> 0.35-0.20041005.1
 - Update to today's CVS version, change the spec to build already "make dist"
   passed tarballs.
-* Sat Aug 28 2004 Matthias Saou <http://freshrpms.net/> 0.35-0.20040828.1
+* Sat Aug 28 2004 Matthias Saou <https://freshrpms.net/> 0.35-0.20040828.1
 - Update to today's CVS version to work with xmame 0.86 (xil option).
-* Sun Jul 18 2004 Matthias Saou <http://freshrpms.net/> 0.34b-3
+* Sun Jul 18 2004 Matthias Saou <https://freshrpms.net/> 0.34b-3
 - Added patch for the -li option removed, so added %{_bindir}/xml2info req.
-* Wed May 19 2004 Matthias Saou <http://freshrpms.net/> 0.34b-2
+* Wed May 19 2004 Matthias Saou <https://freshrpms.net/> 0.34b-2
 - Rebuilt for Fedora Core 2.
-* Sun Jan  4 2004 Matthias Saou <http://freshrpms.net/> 0.34b-1
+* Sun Jan  4 2004 Matthias Saou <https://freshrpms.net/> 0.34b-1
 - Update to 0.34b.
-* Tue Dec 16 2003 Matthias Saou <http://freshrpms.net/> 0.34-1
+* Tue Dec 16 2003 Matthias Saou <https://freshrpms.net/> 0.34-1
 - Update to 0.34 final.
-* Wed Nov 19 2003 Matthias Saou <http://freshrpms.net/> 0.34-0.20031202.1
+* Wed Nov 19 2003 Matthias Saou <https://freshrpms.net/> 0.34-0.20031202.1
 - Update to today's CVS checkout.
-* Wed Nov 19 2003 Matthias Saou <http://freshrpms.net/> 0.34-0.20031119.1
+* Wed Nov 19 2003 Matthias Saou <https://freshrpms.net/> 0.34-0.20031119.1
 - Update to today's CVS checkout.
-* Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 0.33-3
+* Fri Nov  7 2003 Matthias Saou <https://freshrpms.net/> 0.33-3
 - Rebuilt for Fedora Core 1.
-* Tue Oct 21 2003 Matthias Saou <http://freshrpms.net/>
+* Tue Oct 21 2003 Matthias Saou <https://freshrpms.net/>
 - Added the patch to handle xmame >= 0.74 cleanly at last.
-* Thu Jun 12 2003 Matthias Saou <http://freshrpms.net/>
+* Thu Jun 12 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.33.
-* Tue May 27 2003 Matthias Saou <http://freshrpms.net/>
+* Tue May 27 2003 Matthias Saou <https://freshrpms.net/>
 - Removed patch since xmame 0.69.1 is back to the old behavior.
-* Fri May 23 2003 Matthias Saou <http://freshrpms.net/>
+* Fri May 23 2003 Matthias Saou <https://freshrpms.net/>
 - Added patch to work with xmame 0.68.1.
-* Mon Mar 31 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Mar 31 2003 Matthias Saou <https://freshrpms.net/>
 - Rebuilt for Red Hat Linux 9.
-* Mon Mar 24 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Mar 24 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.32.
-* Wed Mar 19 2003 Matthias Saou <http://freshrpms.net/>
+* Wed Mar 19 2003 Matthias Saou <https://freshrpms.net/>
 - Added --without freedesktop build option.
-* Mon Jan 13 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Jan 13 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.31.
-* Mon Nov 25 2002 Matthias Saou <http://freshrpms.net/>
+* Mon Nov 25 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.30 final.
-* Tue Nov 12 2002 Matthias Saou <http://freshrpms.net/>
+* Tue Nov 12 2002 Matthias Saou <https://freshrpms.net/>
 - Fixed menu entry by adding "ArcadeGame".
 - Added XFX fix patch.
-* Sun Oct 27 2002 Matthias Saou <http://freshrpms.net/>
+* Sun Oct 27 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.28.
 - Rebuilt for Red Hat Linux 8.0.
 - New menu entry.
-* Wed Aug  7 2002 Matthias Saou <http://freshrpms.net/>
+* Wed Aug  7 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.27.
-* Thu Aug  1 2002 Matthias Saou <http://freshrpms.net/>
+* Thu Aug  1 2002 Matthias Saou <https://freshrpms.net/>
 - Spec file cleanup.
 - Added missing pixmaps/gxmame to %%files.

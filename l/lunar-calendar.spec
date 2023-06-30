@@ -6,8 +6,8 @@ Release: 8.1
 Summary: Chinese Lunar calendar Gtk widget
 Group: User Interface/Desktops	
 License: GPLv2	
-URL: http://code.google.com/p/liblunar	
-Source0: http://liblunar.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/liblunar	
+Source0: https://liblunar.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0: relative_libs.diff
 BuildRequires: libpng-devel, intltool, gtk3-devel
 BuildRequires: gtk-doc, pygtk2-devel

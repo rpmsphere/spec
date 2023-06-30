@@ -4,7 +4,7 @@ Release:        1
 Summary:        Tools for MMC/SD devices
 License:        GPL-2.0
 Group:          Hardware/Other
-URL:            http://git.kernel.org/cgit/linux/kernel/git/cjb/mmc-utils.git/
+URL:            https://git.kernel.org/cgit/linux/kernel/git/cjb/mmc-utils.git/
 Source0:        %{name}-master.tar.gz
 Source1:        https://www.gnu.org/licenses/gpl-2.0.txt
 

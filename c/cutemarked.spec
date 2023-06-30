@@ -6,7 +6,7 @@ Group:                  Productivity/Text/Editors
 Version:                0.11.3
 Release:                6.1
 License:                GPL-2.0+
-URL:                    http://github.com/cloose/CuteMarkEd
+URL:                    https://github.com/cloose/CuteMarkEd
 Source0:                CuteMarkEd-%{version}.tar.gz
 Requires:               cutemarked-plugin-fontawesome
 BuildRequires:          libstdc++-devel 

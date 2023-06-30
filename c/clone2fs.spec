@@ -2,9 +2,9 @@ Name:			clone2fs
 Version:		1.3.0
 Release:		7.1
 Summary:		Clone ext2/ext3 File Systems
-Source:			http://www.mr511.de/software/clone2fs-%{version}.tar.gz
+Source:			https://www.mr511.de/software/clone2fs-%{version}.tar.gz
 Patch1:			clone2fs-makefile.patch
-URL:			http://www.mr511.de/software/
+URL:			https://www.mr511.de/software/
 Group:			Productivity/File utilities
 License:		GNU General Public License version 2 (GPL v2)
 BuildRequires:	e2fsprogs-devel

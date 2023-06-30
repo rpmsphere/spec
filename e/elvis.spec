@@ -7,7 +7,7 @@ Version:	2.2.0
 License:	Artistic (see LICENSE)
 Group:		Applications/Editors
 Vendor:     Steve Kirkendall <kirkenda@cs.pdx.edu>
-URL:        http://elvis.vi-editor.org/
+URL:        https://elvis.vi-editor.org/
 Source0:	ftp://ftp.cs.pdx.edu/pub/elvis/unreleased/%{name}-2.2_0.tar.gz
 Patch0:     %{name}-2.2_0.patch
 BuildRequires:  ncurses-devel libX11-devel libXt-devel

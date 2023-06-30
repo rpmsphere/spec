@@ -3,10 +3,9 @@ Version:       0.41
 Release:       3.1
 Summary:       Allow owners of Asus laptops to use all the functionalities
 Group:         System/Kernel and Hardware
-URL:           http://sourceforge.net/projects/acpi4asus/
-Source:        http://downloads.sourceforge.net/acpi4asus/acpi4asus-%{version}.tar.bz2
+URL:           https://sourceforge.net/projects/acpi4asus/
+Source:        https://downloads.sourceforge.net/acpi4asus/acpi4asus-%{version}.tar.bz2
 License:       GPL
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 This project is a linux driver that allow owners of Asus laptops to use all the 
@@ -39,7 +38,6 @@ cp -R samples \
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/asus_acpid
 %dir %{_defaultdocdir}/%{name}-%{version}
 %{_defaultdocdir}/%{name}-%{version}/*

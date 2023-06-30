@@ -4,7 +4,7 @@ Version:	1.27
 Release:	6.1
 License:	GPLv2+
 Group:		System/Kernel and hardware
-URL:		http://www.roestock.demon.co.uk/isapnptools/
+URL:		https://www.roestock.demon.co.uk/isapnptools/
 Source0:	ftp://metalab.unc.edu/pub/Linux/system/hardware/%{name}-%{version}.tgz
 Patch1:		%{name}-demo2.patch
 Patch2:		isapnptools-1.26-gcc4-fix.patch

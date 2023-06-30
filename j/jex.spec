@@ -3,9 +3,9 @@ Name: jex
 Version: 2.0
 Release: 4.1
 License: GPL
-Source : http://users.telenet.be/jbosman/jex2.tgz
+Source : https://users.telenet.be/jbosman/jex2.tgz
 Group: X11/Utilities
-URL: http://users.telenet.be/jbosman/applications.html
+URL: https://users.telenet.be/jbosman/applications.html
 BuildRequires: motif-devel
 
 %description

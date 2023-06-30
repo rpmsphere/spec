@@ -6,8 +6,8 @@ Release:        1
 Summary:        Data files for the Egoboo RPG
 Group:          Amusements/Games
 License:        GPL+
-URL:            http://home.no.net/egoboo/
-# This is http://downloads.sourceforge.net/egoboo/egob275.exe
+URL:            https://home.no.net/egoboo/
+# This is https://downloads.sourceforge.net/egoboo/egob275.exe
 # installed under wine, with the exe's and dll's removed from
 # ~/.wine/drive_c/Program\ Files/Egoboo\ Development\ Team/Egoboo
 # and then put in a tarbal. I'll try to educate upstream to make this

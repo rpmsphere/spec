@@ -3,8 +3,8 @@ Summary:	Fuse-based file system for unifying several mount points into one
 Version:	0.1.39
 Release:	6
 License:	GPLv3+
-URL:		http://mhddfs.uvw.ru/
-Source:		http://mhddfs.uvw.ru/downloads/%{name}_%{version}.tar.gz
+URL:		https://mhddfs.uvw.ru/
+Source:		https://mhddfs.uvw.ru/downloads/%{name}_%{version}.tar.gz
 
 #Make sure it builds with system CFLAGS
 Patch0:		mhddfs-cflags.patch

@@ -2,13 +2,12 @@ Name:		bin2iso
 Summary:	Converts bin/cue images to ISO images
 Version:	1.9b
 Release:	4.1
-URL:		http://users.andara.com/~doiron/bin2iso/
+URL:		https://users.andara.com/~doiron/bin2iso/
 Source0:	bin2iso19b.zip
 Patch0:		bin2iso-build.patch
 License:	Freeware
 Group:		Productivity/Multimedia/CD/Record
 BuildRequires:	unzip dos2unix glibc-devel
-Buildroot:	%{_tmppath}/%{name}-%{version}-build
 
 %description
 bin2iso converts RAW format (.bin) files to ISO/WAV format.
@@ -33,7 +32,6 @@ install -D -m0755 bin2iso $RPM_BUILD_ROOT%{_bindir}/bin2iso
 rm -rf  $RPM_BUILD_ROOT
 
 %files
-%defattr (-,root,root)
 %{_bindir}/bin2iso
 %doc readme.txt
 

@@ -7,7 +7,7 @@ Source0: https://doconce.googlecode.com/files/%{name}-%{version}.tar.gz
 License: New BSD
 Group: Document
 BuildArch: noarch
-URL: http://doconce.googlecode.com/
+URL: https://doconce.googlecode.com/
 Requires: ImageMagick, python-docutils, python-sphinx, pandoc, ptex2tex, texlive-base, tex-latex
 BuildRequires: python2-devel
 

@@ -6,8 +6,8 @@ Version:	1.4.4
 Release:	3.1
 License:	MIT
 Group:		Development/Tools
-Source0:	http://www.directfb.org/downloads/Core/flux/flux-%{version}.tar.gz
-URL:		http://www.directfb.org/
+Source0:	https://www.directfb.org/downloads/Core/flux/flux-%{version}.tar.gz
+URL:		https://www.directfb.org/
 #BuildRequires:	directfb-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	pkgconfig

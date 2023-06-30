@@ -4,8 +4,8 @@ Release:	1
 Summary:	Irobot Game	
 Group:		Amusements/Games
 License:	GPL	
-URL: 		http://irobotgame.googlecode.com/		
-Source0:	http://irobotgame.googlecode.com/files/irobotgame-0.7.5.tar.gz
+URL: 		https://irobotgame.googlecode.com/		
+Source0:	https://irobotgame.googlecode.com/files/irobotgame-0.7.5.tar.gz
 Requires:	pyglet
 BuildArch:	noarch
 

@@ -3,7 +3,7 @@ Summary: Automated Usenet Client
 Name: lottanzb
 Version: 0.6
 Release: 8.1
-Source0: http://launchpad.net/lottanzb/0.6/%{version}/+download/%{name}-%{version}.tar.gz
+Source0: https://launchpad.net/lottanzb/0.6/%{version}/+download/%{name}-%{version}.tar.gz
 License: GPL
 Group: Networking/News
 BuildArch: noarch
@@ -14,7 +14,7 @@ Requires: python2
 Requires: hellanzb
 Requires: pygtk2
 Requires: pygtk2-libglade
-URL: http://www.lottanzb.org/
+URL: https://www.lottanzb.org/
 
 %description
 LottaNZB is a Usenet client that automates the download of Usenet files with

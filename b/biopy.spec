@@ -5,8 +5,8 @@ Version:       0.1.5
 Release:       10.1
 Summary:       A small collection of bioinformatic scripts
 Group:         System/Libraries/Python
-URL:           http://code.google.com/p/biopy/
-Source:        http://biopy.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:           https://code.google.com/p/biopy/
+Source:        https://biopy.googlecode.com/files/%{name}-%{version}.tar.gz
 License:       GPLv3
 BuildRequires: gcc-c++, python2-devel
 BuildRequires: python2-numpy, lapack-devel, atlas

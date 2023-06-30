@@ -4,9 +4,8 @@ Release:        3.1
 Summary:        Colorizer for SVN, based on colorgcc
 Group:          Development/Tools/Version Control
 License:        GPL
-URL:            http://www.console-colors.de/
+URL:            https://www.console-colors.de/
 Source0:        %{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  subversion
 Requires:       subversion 
 BuildArch:      noarch
@@ -25,7 +24,6 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %config(noreplace) %{_sysconfdir}/colorsvnrc
 %doc CREDITS
 %{_mandir}/man1/colorsvn.1.*

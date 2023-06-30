@@ -3,11 +3,11 @@ Version:        0.3.1
 Release:        19.1
 Summary:        Sato GTK Theme Engine
 License:        LGPL-2.0
-URL:            http://openhand.com
+URL:            https://openhand.com
 Group:          System/GUI/GNOME
-Source0:        http://downloads.yoctoproject.org/releases/sato/sato-engine-%{version}.tar.gz
+Source0:        https://downloads.yoctoproject.org/releases/sato/sato-engine-%{version}.tar.gz
 Source1:        Sato-index.theme
-Source2:        http://p1.pichost.me/i/16/1388662.jpg
+Source2:        https://p1.pichost.me/i/16/1388662.jpg
 BuildRequires:  gtk2-devel
 Requires:       sato-icon-theme
 Requires:       openzone-cursor-theme

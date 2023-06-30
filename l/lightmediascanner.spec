@@ -7,7 +7,7 @@ Release:	8.1
 License: 	LGPLv2
 Group: 		Applications/Multimedia
 Source:		https://garage.maemo.org/frs/download.php/8852/%{name}-%{version}.tar.bz2
-URL:		http://lms.garage.maemo.org/
+URL:		https://lms.garage.maemo.org/
 BuildRequires:	sqlite-devel, libogg-devel, libvorbis-devel, flac-devel, libmp4v2-devel
 
 %description

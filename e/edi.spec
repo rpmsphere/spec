@@ -6,8 +6,8 @@ Release: 4.1
 Summary: An Interactive Editor for Linux
 License: GPLv2
 Group: Applications/Editors
-URL: http://edi.sourceforge.net/
-Source0: http://sourceforge.net/projects/edi/files/edi-src/version%{version}/edi%{version}.tar.gz
+URL: https://edi.sourceforge.net/
+Source0: https://sourceforge.net/projects/edi/files/edi-src/version%{version}/edi%{version}.tar.gz
 
 %description
 Edi is an interactive text based GUI Editor for Linux. It has C/C++ syntax

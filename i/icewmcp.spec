@@ -4,7 +4,7 @@ Version: 3.2
 Release: 1
 License: GPL
 Group: Graphical desktop/Icewm
-URL: http://www.phrozensmoke.com/projects/icewmcp/
+URL: https://www.phrozensmoke.com/projects/icewmcp/
 Source: IceWMControlPanel-%{version}.tar.bz2
 Source1: icewmcp.desktop
 Source2: icepref-16.png

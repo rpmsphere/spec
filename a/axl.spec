@@ -2,12 +2,12 @@
 
 Name:         axl
 Summary:      XML Parsing Library
-URL:          http://xml.aspl.es/
+URL:          https://xml.aspl.es/
 Group:        XML
 License:      LGPL
 Version:      0.7.2
 Release:      7.1
-Source0:      http://www.aspl.es/xml/downloads/%{name}-%{version}.b3508.tar.gz
+Source0:      https://www.aspl.es/xml/downloads/%{name}-%{version}.b3508.tar.gz
 
 %description
 AXL is a parser library for the XML 1.0 standard specification with

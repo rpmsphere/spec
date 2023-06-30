@@ -7,8 +7,8 @@ Release:	25.4
 Summary:	Combine color bubbles into chains
 Group:		Amusements/Games		
 License:	GPLv3
-URL:		http://bubble-chains.sintegrial.com/
-Source0:	http://bubble-chains.sintegrial.com/files/%{_rname}-%{version}-src.7z
+URL:		https://bubble-chains.sintegrial.com/
+Source0:	https://bubble-chains.sintegrial.com/files/%{_rname}-%{version}-src.7z
 Source1:	%{_rname}.desktop
 Source2:	%{_rname}.png
 Patch0:		%{name}-%{version}-dirs.patch	

@@ -12,22 +12,22 @@ Requires: buuf-backgrounds
 Requires: buuf-cursor-theme
 Requires: gtk-aurora-engine
 BuildArch: noarch
-URL: http://gnome-look.org/content/show.php/FREAK+1.1?content=116383
+URL: https://gnome-look.org/content/show.php/FREAK+1.1?content=116383
 
 %description
 Improved theme for BUUF.
-wall : http://hotiron.deviantart.com/art/macabre-series-110073622 by Hotiron
-skydome : http://alexander-gg.deviantart.com/art/Firewall-143988510 by AlexanderGG
+wall : https://hotiron.deviantart.com/art/macabre-series-110073622 by Hotiron
+skydome : https://alexander-gg.deviantart.com/art/Firewall-143988510 by AlexanderGG
 
 gtkrc :
-http://gnome-look.org/content/show.php/Santay+theme+pack?content=88825 by Jecovier
-http://gnome-look.org/content/show.php/Freak?content=105620
+https://gnome-look.org/content/show.php/Santay+theme+pack?content=88825 by Jecovier
+https://gnome-look.org/content/show.php/Freak?content=105620
 Aurora, Murrine and Pixmaps engine required
 
 Emerald Title and Desktop Panel:
-http://gnome-look.org/content/show.php/Gnome+Panel+Collection?content=112337 by PaperOnFire
-http://gnome-look.org/content/show.php/Santay+theme+pack?content=88825 by Jecovier
-Buttons: http://gnome-look.org/content/show.php/Buuf?content=81153 by OxayotlTheGreat
+https://gnome-look.org/content/show.php/Gnome+Panel+Collection?content=112337 by PaperOnFire
+https://gnome-look.org/content/show.php/Santay+theme+pack?content=88825 by Jecovier
+Buttons: https://gnome-look.org/content/show.php/Buuf?content=81153 by OxayotlTheGreat
 
 %prep
 %setup -q -c

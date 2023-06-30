@@ -1,11 +1,11 @@
 Name:         interceptty
 Summary:      TTY Interceptor and Network Serial Port Client/Server Daemon
-URL:          http://www.suspectclass.com/sgifford/interceptty
+URL:          https://www.suspectclass.com/sgifford/interceptty
 Group:        Network
 License:      GPL
 Version:      0.6
 Release:      4.1
-Source0:      http://www.suspectclass.com/interceptty/files/interceptty-%{version}.tar.gz
+Source0:      https://www.suspectclass.com/interceptty/files/interceptty-%{version}.tar.gz
 Patch:       interceptty.patch
 
 %description

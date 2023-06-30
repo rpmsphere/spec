@@ -2,7 +2,7 @@ Name:			afternoonstalker
 Version:		1.1.6
 Summary:		A Night Stalker(TM) clone
 License:		GPLv2
-URL:			http://sarrazip.com/dev/%{name}.html
+URL:			https://sarrazip.com/dev/%{name}.html
 Group:			Amusements/Games
 Release:		1
 Source0:		%{name}-%{version}.tar.gz

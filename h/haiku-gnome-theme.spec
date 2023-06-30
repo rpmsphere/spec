@@ -9,7 +9,7 @@ Group: User Interface/Desktops
 Source0: https://dl.opendesktop.org/api/files/download/id/1460967677/106952-Haiku-5-1-11.tar.bz2
 Source1: https://dl.opendesktop.org/api/files/download/id/1460735079/116169-HaikuHand-0.5.tar.bz2
 Source2: https://dl.opendesktop.org/api/files/download/id/1460759082/114723-Haiku-0.7.tar.bz2
-Source3: http://www.deviantart.com/download/137622183/haiku_os_wallpaper_by_cagwait.jpg
+Source3: https://www.deviantart.com/download/137622183/haiku_os_wallpaper_by_cagwait.jpg
 Source4: %{theme_name}-index.theme
 BuildArch: noarch
 URL: https://www.gnome-look.org/content/show.php/Haiku?content=106952
@@ -17,13 +17,13 @@ URL: https://www.gnome-look.org/content/show.php/Haiku?content=106952
 %description
 Theme based on Haiku os gui:
 -- GTK THEME --
-http://www.gnome-look.org/content/show.php/Haiku?content=106952
+https://www.gnome-look.org/content/show.php/Haiku?content=106952
 -- CURSOR --
-http://www.gnome-look.org/content/show.php/HaikuHand?content=116169 
+https://www.gnome-look.org/content/show.php/HaikuHand?content=116169 
 -- ICON THEME --
 https://www.gnome-look.org/content/show.php?content=114723
 -- BACKGROUND --
-http://cagwait.deviantart.com/art/Haiku-Os-wallpaper-137622183
+https://cagwait.deviantart.com/art/Haiku-Os-wallpaper-137622183
 
 %prep
 %setup -q -c

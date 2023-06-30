@@ -4,8 +4,8 @@ Version: 1.2.1.34
 Release: 1
 License: freeware
 Group: System Environment/Kernel
-URL: http://acx100.sourceforge.net/wiki/Firmware
-Source0: http://acx100.erley.org/acx_fw/acx111_netgear_wg311v2/fw1/FwRad16.bin_%{version}
+URL: https://acx100.sourceforge.net/wiki/Firmware
+Source0: https://acx100.erley.org/acx_fw/acx111_netgear_wg311v2/fw1/FwRad16.bin_%{version}
 BuildArch: noarch
 
 %description
@@ -30,5 +30,5 @@ required by the acx Linux kernel module.
 %changelog
 * Mon Feb 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1.34
 - Rebuilt for Fedora
-* Fri Mar 31 2006 Matthias Saou <http://freshrpms.net> 1.2.1.34-1
+* Fri Mar 31 2006 Matthias Saou <https://freshrpms.net> 1.2.1.34-1
 - Initial RPM release, based on the ipw2200-firmware spec file.

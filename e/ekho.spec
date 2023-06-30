@@ -4,8 +4,8 @@ Group: Application/Multimedia
 Summary: A text-to-speech (TTS) software
 Version: 7.7.1
 Release: 1
-Source: http://downloads.sourceforge.net/e-guidedog/%{name}-%{version}.tar.xz
-URL: http://e-guidedog.sourceforge.net/ekho.php
+Source: https://downloads.sourceforge.net/e-guidedog/%{name}-%{version}.tar.xz
+URL: https://e-guidedog.sourceforge.net/ekho.php
 BuildRequires: libsndfile-devel, portaudio-devel, libvorbis-devel, lame-devel
 BuildRequires: soundtouch-devel, espeak-devel
 

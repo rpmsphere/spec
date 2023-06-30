@@ -7,7 +7,7 @@ Release:        1
 Summary:        Fast-paced action strategy game with ncurses and SDL frontends
 Group:          Games/Strategy
 License:        GPLv3+
-URL:            http://a-nikolaev.github.io/curseofwar/
+URL:            https://a-nikolaev.github.io/curseofwar/
 Source0:        %{name}-%{version}-git%{commit}.tar.xz
 Patch0:         curseofwar-1.2.0-mga-games-data-dir.patch
 BuildRequires:  cmake

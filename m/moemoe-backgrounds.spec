@@ -4,7 +4,7 @@ Release:        9.1
 Summary:        Moe-Moe wallpapers for moebuntu
 Group:          User Interface/Desktops
 License:        freeware
-URL:            http://photozou.jp/photo/top/1101860
+URL:            https://photozou.jp/photo/top/1101860
 Source0:        moemoe-wallpapers.zip
 Source1:        %{name}.xml
 BuildArch:      noarch

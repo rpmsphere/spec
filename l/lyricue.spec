@@ -4,8 +4,8 @@ Version:	4.0.13
 Release:	1
 License:	GPL
 Group:		Applications/Multimedia
-URL:		http://www.lyricue.org/
-Source0:	http://www.lyricue.org/archive/%{name}-%{version}.tar.gz
+URL:		https://www.lyricue.org/
+Source0:	https://www.lyricue.org/archive/%{name}-%{version}.tar.gz
 BuildRequires:  libpng-devel
 BuildRequires:	intltool
 BuildRequires:	gtk2-devel

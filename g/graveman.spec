@@ -6,8 +6,8 @@ Version:	0.3.12
 Release:	17.1
 License:	GPLv2+
 Group:		Archiving/Cd burning
-URL:		http://graveman.tuxfamily.org/index-e.php
-Source0:	http://graveman.tuxfamily.org/sources/%{name}-%{realver}.tar.bz2
+URL:		https://graveman.tuxfamily.org/index-e.php
+Source0:	https://graveman.tuxfamily.org/sources/%{name}-%{realver}.tar.bz2
 Patch0:		graveman-0.3.12-5-cdrkit.patch
 BuildRequires:	desktop-file-utils
 BuildRequires:	ghostscript-core ImageMagick

@@ -4,14 +4,14 @@ Summary:	C++ user interface toolkit
 Name:		fltk13
 Version:	1.3.0
 Release:	15.1
-# see COPYING (or http://www.fltk.org/COPYING.php ) for exceptions details
+# see COPYING (or https://www.fltk.org/COPYING.php ) for exceptions details
 License:	LGPLv2+ with exceptions	
 Group:		System Environment/Libraries
-URL:		http://www.fltk.org/
+URL:		https://www.fltk.org/
 %if "%{?snap:1}" == "1"
-Source0:        http://ftp.easysw.com/pub/fltk/snapshots/fltk-1.3.x-%{snap}.tar.bz2
+Source0:        https://ftp.easysw.com/pub/fltk/snapshots/fltk-1.3.x-%{snap}.tar.bz2
 %else
-Source0:	http://ftp.easysw.com/pub/fltk/%{version}%{?pre}/fltk-%{version}%{?pre}-source.tar.gz
+Source0:	https://ftp.easysw.com/pub/fltk/%{version}%{?pre}/fltk-%{version}%{?pre}-source.tar.gz
 %endif
 Source1: fltk-config.sh
 ## FIXME/TODO: upstream these asap -- Rex
@@ -20,24 +20,24 @@ Patch1:        	fltk-1.1.9-fltk_config.patch
 Patch3: 	fltk-1.1.x-r5750-undefined.patch
 Patch5: 	fltk-1.1.8-fluid_desktop.patch
 Patch8:         fltk-1.3.0-rh708185.patch
-# http://www.fltk.org/str.php?L2599
+# https://www.fltk.org/str.php?L2599
 Patch9:         fltk-1_v4.3.x-keyboard-x11.patch
-# http://www.fltk.org/str.php?L2636
+# https://www.fltk.org/str.php?L2636
 Patch10:        fltk-1_v2.3.x-clipboard.patch
 Patch11:        fltk-1_v2.3.x-clipboard-x11.patch
 Patch12:        fltk-1_v3.3.x-clipboard-xfixes.patch
-# http://www.fltk.org/str.php?L2660
+# https://www.fltk.org/str.php?L2660
 Patch13:        fltk-1_v4.3.x-cursor.patch
 Patch20:        fltk-1_v4.3.x-cursor-abi.patch
-# http://www.fltk.org/str.php?L2859
+# https://www.fltk.org/str.php?L2859
 Patch14:        fltk-1.3.x-resize-expose.patch
-# http://www.fltk.org/str.php?L2659
+# https://www.fltk.org/str.php?L2659
 Patch15:        pixmap.patch
-# http://www.fltk.org/str.php?L2802
+# https://www.fltk.org/str.php?L2802
 Patch16:        fltk-1_v2.3.0-modal.patch
-# http://www.fltk.org/str.php?L2816
+# https://www.fltk.org/str.php?L2816
 Patch17:        fltk-1_v2.3.0-icons.patch
-# http://www.fltk.org/str.php?L2860
+# https://www.fltk.org/str.php?L2860
 Patch18:        fltk-1.3.x-screen_num.patch
 Patch19:        fltk-1_v2.3.x-multihead.patch
 BuildRequires: desktop-file-utils

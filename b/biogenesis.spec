@@ -4,8 +4,8 @@ Version: 0.8
 Release: 9.1
 Group: Science/Engineering
 License: GPL
-URL: http://biogenesis.sourceforge.net/
-Source0: http://prdownloads.sourceforge.net/biogenesis/biogenesis_src_0_8.zip
+URL: https://biogenesis.sourceforge.net/
+Source0: https://prdownloads.sourceforge.net/biogenesis/biogenesis_src_0_8.zip
 BuildArch: noarch
 BuildRequires: java-devel lua
 Requires: jre

@@ -6,7 +6,7 @@ Release:        25.1
 Summary:        Flash Game and Application Database/Launcher
 Group:          Amusements/Games
 License:        LGPL
-URL:            http://maemo.org/packages/view/flashlauncher/
+URL:            https://maemo.org/packages/view/flashlauncher/
 Source0:        flashlauncher-0.3.tar.gz
 BuildRequires:  gcc-c++
 BuildRequires:  qt-devel

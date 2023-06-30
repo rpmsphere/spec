@@ -6,7 +6,7 @@ Version: 3.0.1
 Release: 4.1
 License: GPL
 Group: User Interface/Desktops
-URL: http://www.noobslab.com/2013/06/apple-art-icons-for-ubuntu.html
+URL: https://www.noobslab.com/2013/06/apple-art-icons-for-ubuntu.html
 Source: %{theme_name}_%{version}.tar.gz
 BuildArch: noarch
 

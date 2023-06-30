@@ -10,7 +10,7 @@ Source1:        gnome-wallpaper-11.1.tar.bz2
 Source2:        gnome-wallpaper-11.2.tar.bz2
 Source3:        gnome-wallpaper-11.3.tar.bz2
 Source4:        gnome-wallpaper-11.4.tar.bz2
-Source10:       COPYING
+Source10:       COPYING-%name
 Source11:       COPYING.CCBYSA
 Source12:       COPYING.GPLv3
 BuildArch:      noarch
@@ -24,7 +24,8 @@ generally bright during the day, and dark during the night.
 
 %prep
 %setup -q -T -a0 -a1 -a2 -a3 -a4 -c %{name}-%{version}
-cp %{SOURCE10} %{SOURCE11} %{SOURCE12} .
+cp %{SOURCE10} COPYING
+cp %{SOURCE11} %{SOURCE12} .
 
 %build
 

@@ -13,8 +13,8 @@ Name:		filerunner
 Version:        20.05.02.17
 Release:	1
 License:	GPLv2+
-URL:		http://sourceforge.net/projects/%{name}/
-Source0:	http://downloads.sourceforge.net/project/%{name}/fr-%{version}.tar.gz
+URL:		https://sourceforge.net/projects/%{name}/
+Source0:	https://downloads.sourceforge.net/project/%{name}/fr-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	tcl
 Requires:	tcl

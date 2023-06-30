@@ -3,8 +3,8 @@ Version:        1.15
 Release:        2.1
 Summary:        A smaller, cheaper, faster SED implementation
 License:        BSD
-URL:            http://exactcode.com/opensource/minised/
-Source0:        http://dl.exactcode.de/oss/%{name}/%{name}-%{version}.tar.gz
+URL:            https://exactcode.com/opensource/minised/
+Source0:        https://dl.exactcode.de/oss/%{name}/%{name}-%{version}.tar.gz
 
 %description
 This is a smaller, cheaper, faster SED implementation. GNU used to use it, 

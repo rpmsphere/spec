@@ -4,20 +4,20 @@ Release:        6.1
 Summary:        Buuf backgrounds
 Group:          User Interface/Desktops
 License:        CC-BY-NC-SA
-URL:            http://mattahan.deviantart.com/
+URL:            https://mattahan.deviantart.com/
 Source0:        buuf-backgrounds.zip
 Source1:        %{name}.xml
 BuildArch:      noarch
 
 %description
 Must...replenish...my strength...Birdman!
-(http://mattahan.deviantart.com/art/Some-clouds-sun-39780964)
+(https://mattahan.deviantart.com/art/Some-clouds-sun-39780964)
 
 I guess it depends on what icon you put on the other side.
-(http://mattahan.deviantart.com/art/Why-42200754)
+(https://mattahan.deviantart.com/art/Why-42200754)
 
 Let's go inside my astroplane.
-(http://mattahan.deviantart.com/art/Bring-the-Pain-39781904)
+(https://mattahan.deviantart.com/art/Bring-the-Pain-39781904)
 
 %prep
 %setup -q -c

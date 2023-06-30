@@ -2,23 +2,22 @@ Name:				mguesser
 Version:			0.4
 Release:			4.1
 Summary:			Text Charset and Language Guesser
-# http://www.mnogosearch.org/guesser/mguesser-%{version}.tar.gz
+# https://www.mnogosearch.org/guesser/mguesser-%{version}.tar.gz
 Source:			mguesser-%{version}.tar.bz2
 Patch1:			mguesser-makefile.patch
 Patch2:			mguesser-fix_printf_format.patch
-URL:				http://www.mnogosearch.org/guesser/
+URL:				https://www.mnogosearch.org/guesser/
 Group:			Productivity/File utilities
 License:			GNU General Public License (GPL)
-BuildRoot:		%{_tmppath}/build-%{name}-%{version}
 BuildRequires:	make gcc glibc-devel
 
 %description
 mguesser is a standalong part of libudmsearch (a core of mnogo search engine
-http://mnogosearch.org) which allows to guess text's charset and language.
+https://mnogosearch.org) which allows to guess text's charset and language.
 
 Guessing is implemented using "N-Gram-Based Text Categorization" technique
 which is implemented in TextCat language guesser written in Perl
-(http://www.let.rug.nl/~vannoord/TextCat/). mguesser is significantly faster
+(https://www.let.rug.nl/~vannoord/TextCat/). mguesser is significantly faster
 than TextCat especially on large texts.
 
 This package consist of C written N-gram based algorythms as well as a number
@@ -43,7 +42,6 @@ directory of this package to check currently supported languages and charsets.
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc CHANGES COPYING README
 %{_bindir}/mguesser
 %{_datadir}/%{name}

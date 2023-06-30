@@ -7,7 +7,7 @@ Release: 4.1
 License: free
 Group: User Interface/Desktops
 URL: https://www.gnome-look.org/content/show.php/Feel+of+Japan?content=83828
-Source0: http://www.mediafire.com/download/0k9x85g2d80fk0k/Feel-of-Japan.tar.gz
+Source0: https://www.mediafire.com/download/0k9x85g2d80fk0k/Feel-of-Japan.tar.gz
 Source1: https://dl.opendesktop.org/api/files/download/id/1460808367/158335-Japanese_Room.jpg
 BuildArch: noarch
 

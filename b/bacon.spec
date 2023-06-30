@@ -6,8 +6,8 @@ Version: 4.4
 Release: 1
 License: MIT
 Group: Development
-Source: http://www.basic-converter.org/stable/%{name}-%{version}.tar.gz
-URL: http://www.basic-converter.org
+Source: https://www.basic-converter.org/stable/%{name}-%{version}.tar.gz
+URL: https://www.basic-converter.org
 BuildRequires: gtk3-devel
 Requires: enscript
 

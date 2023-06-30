@@ -4,8 +4,8 @@ Release:	1
 Summary:	Logic Game
 Group:		Amusements/Games
 License:	GPL
-URL:		http://www.risujin.org/connectk/
-Source:		http://risujin.org/pub/connectk/%{name}-%{version}.tar.gz
+URL:		https://www.risujin.org/connectk/
+Source:		https://risujin.org/pub/connectk/%{name}-%{version}.tar.gz
 BuildRequires:	gtk+-devel
 
 %description

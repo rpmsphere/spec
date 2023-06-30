@@ -13,9 +13,9 @@ Version:	0.2.0
 Release:	%release
 License:	LGPLv2+
 Group:		Graphical desktop/Enlightenment
-URL:		http://www.enlightenment.org/
+URL:		https://www.enlightenment.org/
 # creating archive is quite simple:
-# svn export http://svn.enlightenment.org/svn/e/trunk/%%name %%name
+# svn export https://svn.enlightenment.org/svn/e/trunk/%%name %%name
 # tar cJf %%name-%%svn.tar.xz %%name
 %if 0%{?svn:1}
 Source:		%name-%svn.tar.xz

@@ -4,8 +4,8 @@ Release:	2.1
 Summary:	Themes for the Firebox Window Manager
 Group:		User Interface/Desktops
 License:	GPLv2+
-URL:		http://firebox.intuxication.org/
-Source:		http://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
+URL:		https://firebox.intuxication.org/
+Source:		https://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
 Requires:	firebox
 BuildArch:	noarch
 

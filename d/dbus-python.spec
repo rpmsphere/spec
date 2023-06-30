@@ -1,11 +1,11 @@
 Summary: D-Bus Python Bindings
-Name:    dbus-python2
+Name:    dbus-python
 Version: 1.2.16
 Release: 3
 License: MIT
-URL:     http://www.freedesktop.org/wiki/Software/DBusBindings/
-Source0: http://dbus.freedesktop.org/releases/dbus-python/dbus-python-%{version}.tar.gz
-Source1: http://dbus.freedesktop.org/releases/dbus-python/dbus-python-%{version}.tar.gz.asc
+URL:     https://www.freedesktop.org/wiki/Software/DBusBindings/
+Source0: https://dbus.freedesktop.org/releases/dbus-python/dbus-python-%{version}.tar.gz
+Source1: https://dbus.freedesktop.org/releases/dbus-python/dbus-python-%{version}.tar.gz.asc
 
 # borrow centos7 patch to use sitearch properly
 Patch0: 0001-Move-python-modules-to-architecture-specific-directo.patch
@@ -274,7 +274,7 @@ rm -rfv $RPM_BUILD_ROOT%{_datadir}/doc/dbus-python/
 - upgrade to 0.80.1
 - remove dependency on Pyrex and libxml2
 - some API breakage,
-  please see http://dbus.freedesktop.org/doc/dbus-python/NEWS.html
+  please see https://dbus.freedesktop.org/doc/dbus-python/NEWS.html
   for notes on changes
 
 * Wed Jan  3 2007 David Zeuthen <davidz@redhat.com> - 0.70-9%%{?dist}

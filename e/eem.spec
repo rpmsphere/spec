@@ -5,8 +5,8 @@ Version: 	20100507
 Release: 	1
 License: 	unknown
 Group: 		Graphical desktop/Enlightenment
-URL: 		http://www.rasterman.com/files/eem.avi
-Source0: 	http://people.profusion.mobi/~gustavo/%{name}.tgz
+URL: 		https://www.rasterman.com/files/eem.avi
+Source0: 	https://people.profusion.mobi/~gustavo/%{name}.tgz
 Source1:	%{name}.desktop
 Source2:	%{name}.sh
 Patch0:		evas_smart_class_new.patch

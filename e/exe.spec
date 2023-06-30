@@ -5,11 +5,11 @@ Summary: eXe eLearning XHTML editor
 Name: exe
 Version: 1.04.0.3600
 Release: 1
-Source0: http://eduforge.org/frs/download.php/839/%{name}-%{version}-source.tgz
+Source0: https://eduforge.org/frs/download.php/839/%{name}-%{version}-source.tgz
 Source1: %{name}-1.03.zh_TW.po
 License: GPL
 Group: Applications/Editors
-URL: http://exelearning.org/
+URL: https://exelearning.org/
 BuildRequires: python2-devel, python2-setuptools, gettext
 Requires: python-imaging, python-zope-interface
 Requires: firefox
@@ -61,7 +61,7 @@ echo -e 'Name[zh_TW]=eXe\nComment[zh_TW]=數位學習網頁編輯程式' >> %{bu
 #!/bin/sh
 python2/usr/bin/exe "\$@" &
 sleep 10
-LOGNAME=eXe7913 firefox -profile \$HOME/.exe/linux-profile:/ http://127.0.0.1:51235/
+LOGNAME=eXe7913 firefox -profile \$HOME/.exe/linux-profile:/ https://127.0.0.1:51235/
 EOF
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}

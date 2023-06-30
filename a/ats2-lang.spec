@@ -7,7 +7,7 @@ Version: 0.4.1
 Release: 1
 Group: Development
 License: Free Software
-URL: http://www.ats-lang.org/
+URL: https://www.ats-lang.org/
 Source0: https://dl.sourceforge.net/project/ats2-lang/ats2-lang/ats2-postiats-%{version}/ATS2-Postiats-%{version}.tgz
 BuildRequires: gmp-devel
 BuildRequires: gc-devel

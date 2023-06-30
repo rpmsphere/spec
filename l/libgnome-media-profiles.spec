@@ -4,8 +4,8 @@ Release:        14.1
 Summary:        GNOME Media Profiles library
 Group:          System Environment/Libraries
 License:        LGPLv2+
-URL:            http://git.gnome.org/browse/libgnome-media-profiles
-Source0:        http://download.gnome.org/sources/%{name}/3.0/%{name}-%{version}.tar.bz2
+URL:            https://git.gnome.org/browse/libgnome-media-profiles
+Source0:        https://download.gnome.org/sources/%{name}/3.0/%{name}-%{version}.tar.bz2
 # Upstream commit 1451acdacb11fdc2eb23fce10a9affa844f9527c
 Patch1: 0001-Fix-format-string-vulnerabilities.patch
 BuildRequires: gtk3-devel >= 2.99.0

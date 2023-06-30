@@ -4,7 +4,7 @@ Name:			duplo
 Version:		0.2.0
 Summary:		Finds duplicate code
 License:		GPL
-URL:			http://sourceforge.net/projects/duplo/
+URL:			https://sourceforge.net/projects/duplo/
 Group:          	Development/Tools/Other
 Release:        	11.1
 Source:			%{name}-%{version}.tar.gz

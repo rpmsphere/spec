@@ -4,8 +4,8 @@ Release:        4.1
 Summary:        Bash script to upload to imgur.com
 Group:          Applications/Internet
 License:        Public Domain
-URL:            http://imgur.com/tools
-Source0:        http://imgur.com/tools/imgurbash.sh
+URL:            https://imgur.com/tools
+Source0:        https://imgur.com/tools/imgurbash.sh
 BuildArch:      noarch
 Requires:       curl
 

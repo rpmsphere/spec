@@ -3,10 +3,9 @@ Version:        2.0.3
 Release:        3.1
 Summary:        Portable Perl-compatible regular expressions for Common Lisp
 Group:          System Environment/Libraries
-License:        http://www.opensource.org/licenses/bsd-license.php
-URL:            http://weitz.de/cl-ppcre/
-Source:         http://weitz.de/files/cl-ppcre.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+License:        https://www.opensource.org/licenses/bsd-license.php
+URL:            https://weitz.de/cl-ppcre/
+Source:         https://weitz.de/files/cl-ppcre.tar.gz
 BuildRequires:   common-lisp-controller
 BuildArch:		noarch
 Requires:        common-lisp-controller
@@ -56,7 +55,6 @@ done
 %{__rm} -rf %{buildroot}
 
 %files
-%defattr(-,root,root,-)
 %doc doc/index.html
 %{_datadir}/common-lisp/source/cl-ppcre
 %{_datadir}/common-lisp/systems/cl-ppcre.asd

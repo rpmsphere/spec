@@ -7,7 +7,7 @@ Version: 1.8d
 Release: 15.1
 License: public domain
 Group: X11/Window Managers
-URL: http://old.koalateam.com/gwm/
+URL: https://old.koalateam.com/gwm/
 Source: ftp://ftp.x.org/contrib/window_managers/gwm/gwm-%{version}.tgz
 BuildRequires: imake
 BuildRequires: byacc

@@ -6,7 +6,7 @@ Release:        1
 Summary:        A simple font management application for Gtk+ Desktop Environments
 Group:          Applications/Publishing
 License:        GPLv3+
-URL:            http://code.google.com/p/%{name}
+URL:            https://code.google.com/p/%{name}
 Source0:        https://github.com/FontManager/master/releases/download/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:  cairo-devel fontconfig-devel freetype-devel glib2-devel 
 BuildRequires:  intltool json-glib-devel libappstream-glib

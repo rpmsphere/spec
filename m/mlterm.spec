@@ -6,8 +6,8 @@ Version:     3.9.2
 Release:     1
 License:     Modified BSD-style license
 Group:	     User Interface/X
-URL:         http://mlterm.sourceforge.net/
-Source0:     http://prdownloads.sourceforge.net/mlterm/mlterm-%{version}.tar.gz
+URL:         https://mlterm.sourceforge.net/
+Source0:     https://prdownloads.sourceforge.net/mlterm/mlterm-%{version}.tar.gz
 BuildRequires: gtk2-devel
 BuildRequires: libX11-devel
 

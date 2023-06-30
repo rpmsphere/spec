@@ -3,12 +3,12 @@
 Name: greed
 Version: 4.2
 Release: 1
-Source: http://www.catb.org/~esr/greed/%name-%version.tar.gz
+Source: https://www.catb.org/~esr/greed/%name-%version.tar.gz
 License: BSD-like
 Group: Games/Puzzles
 Summary: The board puzzle game of Greed
 BuildRequires: ncurses-devel
-URL: http://www.catb.org/~esr/greed/
+URL: https://www.catb.org/~esr/greed/
 
 %description
 The strategy game of Greed. Try to eat as much as possible of the board

@@ -10,7 +10,7 @@ Group(pl):	X11/Aplikacje/Gry
 Source0:	ftp://webdat.com/pub/seb/gno3dtet/%{name}-%{version}.tgz
 #Patch0:		%{name}-DESTDIR.patch
 #Patch1:		%{name}-desktop.patch
-URL:		http://gno3dtet.eseb.net/3dtetris.php
+URL:		https://gno3dtet.eseb.net/3dtetris.php
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libgnome-devel

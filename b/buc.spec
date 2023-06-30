@@ -4,7 +4,7 @@ Version:	0.5.2
 Release:	1
 Summary:	Parser xml in C accompanied by a dynamic generation of interfaces in C++ with QT
 License:	GPLv2
-URL:		http://buc.billeragroup.net/
+URL:		https://buc.billeragroup.net/
 Group:		Development/Tools
 Source0:	%{name}-%{version}_src_full.tar.gz
 Patch0:		%{name}-%{version}-gcc44.patch

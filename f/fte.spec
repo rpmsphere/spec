@@ -6,11 +6,11 @@ Name:		fte
 Epoch:		1
 Version:	20110708
 Release:	11.1
-Source0:	http://fte.sourceforge.net/fte/%{name}-%{version}-src.zip
-Source1:	http://fte.sourceforge.net/fte/%{name}-%{version}-common.zip
+Source0:	https://fte.sourceforge.net/fte/%{name}-%{version}-src.zip
+Source1:	https://fte.sourceforge.net/fte/%{name}-%{version}-common.zip
 License:	GPL
 Group:		Applications/Editors
-URL:		http://fte.sourceforge.net/
+URL:		https://fte.sourceforge.net/
 BuildRequires:	gpm-devel
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(slang)

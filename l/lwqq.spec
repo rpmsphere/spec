@@ -3,7 +3,7 @@ Version:	0.2
 Release:	10.1
 License:	GPLv3
 Summary:	A Linux WebQQ Client
-URL:	http://github.com/mathslinux/lwqq
+URL:	https://github.com/mathslinux/lwqq
 Group:	Internet/Instant Messenger
 Source:	%{name}-master.zip
 BuildRequires:	cmake
@@ -11,7 +11,6 @@ BuildRequires:	gtk3-devel
 BuildRequires:	libev-devel
 BuildRequires:	sqlite-devel
 BuildRequires:	libcurl-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 This Project is based on kernelhcy's gtkqq project, i rewrite the qq
@@ -30,10 +29,10 @@ sed -i 's| lib| %{_lib}|' lib/CMakeLists.txt
 
 %build
 %cmake
-make %{?_smp_mflags}
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %post -p /sbin/ldconfig
 

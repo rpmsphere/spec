@@ -2,10 +2,10 @@ Summary:	Clone of the classic Kye puzzle game
 Name:		kye
 Version:	1.0
 Release:	1
-Source:		http://games.moria.org.uk/kye/download/%{name}-%{version}.tar.gz
+Source:		https://games.moria.org.uk/kye/download/%{name}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Amusements/Games
-URL:		http://games.moria.org.uk/kye/pygtk
+URL:		https://games.moria.org.uk/kye/pygtk
 BuildArch:	noarch
 BuildRequires:  python2-devel
 BuildRequires:  desktop-file-utils

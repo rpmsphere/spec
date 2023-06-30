@@ -6,8 +6,8 @@ Release: 3
 Summary: Tools to determine and set CPUfreq settings
 License: GPLv2
 Group: System/Base
-URL: http://www.kernel.org/pub/linux/utils/kernel/cpufreq/cpufrequtils.html
-Source: http://www.kernel.org/pub/linux/utils/kernel/cpufreq/cpufrequtils-%version.tar.bz2
+URL: https://www.kernel.org/pub/linux/utils/kernel/cpufreq/cpufrequtils.html
+Source: https://www.kernel.org/pub/linux/utils/kernel/cpufreq/cpufrequtils-%version.tar.bz2
 Patch0: 0001-Only-x86-has-cpuid-instruction.patch
 Patch1: 0001-Only-x86-has-cpuid-h.patch
 Requires: %libname = %version-%release

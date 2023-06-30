@@ -6,10 +6,9 @@ Group:          Productivity/Networking/Other
 Requires:       curl perl-libwww-perl
 Requires:       xinetd
 Requires:       lynx
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
-URL:            http://gwhois.de/
-Source0:        http://gwhois.de/gwhois/gwhois_%{version}.tar.gz
+URL:            https://gwhois.de/
+Source0:        https://gwhois.de/gwhois/gwhois_%{version}.tar.gz
 Source1:        %{name}.xinetd
 Summary:        Universal Whois Client/Server suitable for all TLDs and IPs
 
@@ -42,7 +41,6 @@ Authors:
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %config(noreplace) %{_sysconfdir}/%{name}
 %config(noreplace) %{_sysconfdir}/xinetd.d/%{name}
 %{_bindir}/%{name}

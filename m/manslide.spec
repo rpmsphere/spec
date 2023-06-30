@@ -3,9 +3,9 @@ Name:		manslide
 Summary:	Graphical slideshow creation program
 Version:	2.0.3
 Release:	1
-Source0:	http://www.mandrivalinux-online.eu/%{name}-%{version}.tar.gz
+Source0:	https://www.mandrivalinux-online.eu/%{name}-%{version}.tar.gz
 Source1:	%{name}.png
-URL:		http://www.kde-apps.org/content/show.php?content=72739
+URL:		https://www.kde-apps.org/content/show.php?content=72739
 Group:		Graphics
 License:	GPLv2+
 BuildRequires:	qt-devel, mesa-libGL-devel

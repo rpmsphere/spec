@@ -7,10 +7,9 @@ Release: 3.1
 License: free, non-profit
 Group: User Interface/X
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
-Source0: http://sourceforge.net/projects/vietunicode/files/hannom/hannom%20v2005/hannom.zip
-Source1: COPYING
-URL: http://vietunicode.sourceforge.net/fonts/fonts_hannom.html
+Source0: https://sourceforge.net/projects/vietunicode/files/hannom/hannom%20v2005/hannom.zip
+Source1: COPYING-%name
+URL: https://vietunicode.sourceforge.net/fonts/fonts_hannom.html
 Requires(post): fontconfig
 
 %description
@@ -24,7 +23,7 @@ resolution.
 
 %prep
 %setup -q -c
-cp %{SOURCE1} .
+cp %{SOURCE1} COPYING
 
 %build
 
@@ -43,7 +42,6 @@ rm -rf %{buildroot}
 /usr/bin/fc-cache 2> /dev/null
 
 %files
-%defattr(-, root, root)
 %doc COPYING
 %{fontdir}/*
 

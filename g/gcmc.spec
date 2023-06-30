@@ -4,8 +4,8 @@ Release: 3.1
 Summary: G-Code Meta Compiler
 Group: Development/Tools
 License: GPL
-URL: http://www.vagrearg.org/content/gcmc
-Source0: http://www.vagrearg.org/gcmc/%{name}-%{version}.tar.gz
+URL: https://www.vagrearg.org/content/gcmc
+Source0: https://www.vagrearg.org/gcmc/%{name}-%{version}.tar.gz
 BuildRequires: bison
 BuildRequires: flex
 

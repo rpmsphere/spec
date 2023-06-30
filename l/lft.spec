@@ -6,7 +6,7 @@ License: VOSTROM Public License for Open Source
 Version: 3.91
 Release: 1
 Source0: %{name}-%{version}.tar.gz
-URL: http://pwhois.org/lft/
+URL: https://pwhois.org/lft/
 Group: Productivity/Networking/Other 
 BuildRequires: libpcap-devel
 

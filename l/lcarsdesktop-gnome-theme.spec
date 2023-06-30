@@ -8,7 +8,7 @@ License: GPL
 Group: User Interface/Desktops
 Source: %{theme_name}-%{version}.zip
 BuildArch: noarch
-URL: http://gnome-look.org/content/show.php/LCARS-Desktop?content=91988
+URL: https://gnome-look.org/content/show.php/LCARS-Desktop?content=91988
 Requires: starwars-cursor-theme
 
 %description

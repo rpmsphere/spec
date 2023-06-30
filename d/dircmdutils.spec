@@ -5,9 +5,9 @@ Name: dircmdutils
 Version: 5.0
 Release: 1
 License: GPLv2
-URL: http://www.tzclock.org
+URL: https://www.tzclock.org
 Group: Applications/Productivity
-Source: http://www.tzclock.org/releases/%{name}-%{version}.tar.bz2
+Source: https://www.tzclock.org/releases/%{name}-%{version}.tar.bz2
 BuildRequires: ncurses-devel readline-devel libselinux-devel json-glib-devel libxml2-devel libacl-devel gcc
 BuildRequires: libdircmd libdircmd-devel
 

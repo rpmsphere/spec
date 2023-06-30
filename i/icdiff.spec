@@ -2,7 +2,7 @@ Summary:        Improved Colored Difference Tool
 Name:           icdiff
 Version:        1.9.0
 Release:        2.1
-URL:            http://www.jefftk.com/icdiff
+URL:            https://www.jefftk.com/icdiff
 License:        PSF
 Group: 		File tools
 BuildRequires:  python2-devel

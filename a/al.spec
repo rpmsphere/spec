@@ -2,7 +2,7 @@
 
 Name:         al
 Summary:      Assembly Line Library
-URL:          http://www.ossp.org/pkg/lib/al/
+URL:          https://www.ossp.org/pkg/lib/al/
 Group:        Libraries
 License:      MIT/X11-style
 Version:      0.9.3

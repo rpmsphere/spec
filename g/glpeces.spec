@@ -6,7 +6,7 @@ License:	GPLv2
 Version:	5.2
 Release:	16.1
 Group:		Games/Puzzles
-URL:		http://pecesjocdetangr.sourceforge.net/iniciang.htm
+URL:		https://pecesjocdetangr.sourceforge.net/iniciang.htm
 Source0:	https://sourceforge.net/projects/pecesjocdetangr/files/version%205.2%20%28February%2C%202016%29/glpeces-5.2.tar.gz
 Source1:	%{name}.desktop
 BuildRequires:  cmake
@@ -41,10 +41,10 @@ sed -i -e 's|/\$(CURDIR)||' -e 's|share/games|share|' -e 's|/games|/bin|' CMakeL
 
 %build
 %cmake
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 # fixed menu entry
 desktop-file-install %{SOURCE1} \
   --dir=%{buildroot}%{_datadir}/applications 

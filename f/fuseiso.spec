@@ -4,11 +4,10 @@ Version:	20070708
 Release:	16
 License:	GPLv2+
 Group:		System Environment/Base
-Source0:	http://ubiz.ru/dm/%{name}-%{version}.tar.bz2
+Source0:	https://ubiz.ru/dm/%{name}-%{version}.tar.bz2
 # Upstream: https://sourceforge.net/tracker/index.php?func=detail&aid=1933445&group_id=215002&atid=1031924
 Patch0:		fuseiso-largeiso.patch
-URL:		http://sourceforge.net/projects/fuseiso/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+URL:		https://sourceforge.net/projects/fuseiso/
 BuildRequires:	fuse-devel, glib2-devel, zlib-devel
 Requires:	fuse
 

@@ -5,9 +5,8 @@ Summary:        Show the network device throughput
 
 Group:          Applications/Internet
 License:        Public Domain
-URL:            http://freshmeat.net/projects/ethstats/
-Source0:        hhttp://freshmeat.net/redir/ethstats/17872/url_tgz/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+URL:            https://freshmeat.net/projects/ethstats/
+Source0:        hhttps://freshmeat.net/redir/ethstats/17872/url_tgz/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 
 Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
@@ -32,7 +31,6 @@ install -Dp -m 0755 %{name}.pl $RPM_BUILD_ROOT%{_bindir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/%{name}
 
 %changelog

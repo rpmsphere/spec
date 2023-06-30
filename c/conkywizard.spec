@@ -7,7 +7,7 @@ Summary:            Conky Configuration Wizard
 Source:             conkywizard-r37.tar.bz2
 Source1:            %{name}.desktop
 Patch1:             %{name}-destdir.patch
-URL:                http://code.google.com/p/conkywizard/
+URL:                https://code.google.com/p/conkywizard/
 Group:              System/Monitoring
 License:            GNU General Public License version 3 (GPL v3)
 BuildRequires:      qt4-devel

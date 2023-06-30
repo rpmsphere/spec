@@ -6,8 +6,8 @@ Release:		19.1
 Summary:		A simple logic game
 Group:			Amusements/Games/Board/Other
 License:		GPL
-URL:			http://www.pcbypaul.com/software/5ball.html
-Source0:		http://www.pcbypaul.com/software/dl/%{name}-%{version}.tar.gz
+URL:			https://www.pcbypaul.com/software/5ball.html
+Source0:		https://www.pcbypaul.com/software/dl/%{name}-%{version}.tar.gz
 Source1: %{name}.desktop
 Source2: %{name}.png
 BuildRequires:	atk-devel

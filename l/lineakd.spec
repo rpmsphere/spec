@@ -7,8 +7,8 @@ Release:        19.1
 Summary:	Control multimedia keys on modern keyboards
 License:	GPL
 Group:		System/Configuration/Hardware          
-Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-URL:		http://lineak.sourceforge.net/
+Source0:	https://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+URL:		https://lineak.sourceforge.net/
 BuildRequires:	libX11-devel
 BuildRequires:	libXtst-devel
 Patch0:		lineakd-0.9.0-gcc43.patch

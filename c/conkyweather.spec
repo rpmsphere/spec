@@ -3,7 +3,7 @@ Version:    0.3.1
 Release:    7.1
 Summary:    Display weather information and forecast in conky
 License:    GPLv3
-URL:        http://hardikmehta.wordpress.com/2009/08/04/a-script-to-display-weather-forecast-for-conkyconky-screen-shot
+URL:        https://hardikmehta.wordpress.com/2009/08/04/a-script-to-display-weather-forecast-for-conkyconky-screen-shot
 Source0:    %{name}-%{version}.tar.bz2
 Patch1:     weather.sh.patch
 Patch2:     fcConditions.xslt.patch

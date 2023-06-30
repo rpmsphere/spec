@@ -3,9 +3,9 @@ Version:        1.21
 Release:        8.1
 Summary:        Advanced 3D fractal generator
 License:        GPLv3
-URL:            http://www.mandelbulber.com/
-Source0:        http://download.sourceforge.net/project/mandelbulber/%{name}%{version}-1.orig.tar.gz
-Source1:        http://www.boost.org/LICENSE_1_0.txt
+URL:            https://www.mandelbulber.com/
+Source0:        https://download.sourceforge.net/project/mandelbulber/%{name}%{version}-1.orig.tar.gz
+Source1:        https://www.boost.org/LICENSE_1_0.txt
 BuildRequires:  desktop-file-utils
 BuildRequires:  gtk2-devel
 BuildRequires:  libjpeg-devel
@@ -61,7 +61,7 @@ desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{name}.desktop
 # NOTE: It would be *awesome* if this file was maintained by the upstream
 # project, translated and installed into the right place during `make install`.
 #
-# See http://www.freedesktop.org/software/appstream/docs/ for more details.
+# See https://www.freedesktop.org/software/appstream/docs/ for more details.
 #
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/appdata
 cat > $RPM_BUILD_ROOT%{_datadir}/appdata/%{name}.appdata.xml <<EOF
@@ -89,9 +89,9 @@ SentUpstream: 2014-09-18
       keyframes to render a fly-through style video of your fractal creation.
     </p>
   </description>
-  <url type="homepage">http://www.mandelbulber.com/</url>
+  <url type="homepage">https://www.mandelbulber.com/</url>
   <screenshots>
-    <screenshot type="default">http://www.mandelbulber.com/main_theme/random/screenshot_HR.jpg</screenshot>
+    <screenshot type="default">https://www.mandelbulber.com/main_theme/random/screenshot_HR.jpg</screenshot>
   </screenshots>
 </application>
 EOF

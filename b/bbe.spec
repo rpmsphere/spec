@@ -1,11 +1,11 @@
 Name:         bbe
 Summary:      Binary Block Editor
-URL:          http://sourceforge.net/projects/bbe-/
+URL:          https://sourceforge.net/projects/bbe-/
 Group:        ShellUtils
 License:      GPL
 Version:      0.2.2
 Release:      20080102.1
-Source0:      http://switch.dl.sourceforge.net/bbe-/bbe-%{version}.tar.gz
+Source0:      https://switch.dl.sourceforge.net/bbe-/bbe-%{version}.tar.gz
 
 %description
 bbe is an sed(1) like editor for binary files. bbe performs basic

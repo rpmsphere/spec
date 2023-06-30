@@ -6,8 +6,8 @@ Version: 5.24
 Release: 3.1
 License: freeware
 Group: User Interface/Desktops
-Source0: http://www.geocities.jp/higuchuu4/pict/%{_name}E_v524.zip
-URL: http://www.geocities.jp/higuchuu4/index_e.htm
+Source0: https://www.geocities.jp/higuchuu4/pict/%{_name}E_v524.zip
+URL: https://www.geocities.jp/higuchuu4/index_e.htm
 BuildArch: noarch
 
 %description

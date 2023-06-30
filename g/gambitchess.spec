@@ -7,7 +7,7 @@ Summary:        A cross-platform chess game
 License:        Public Domain
 Group:          Games/Boards
 URL:            https://sourceforge.net/projects/gambitchess/
-Source0:        http://downloads.sourceforge.net/%{name}/%{_name}-%{version}-src.tar.gz
+Source0:        https://downloads.sourceforge.net/%{name}/%{_name}-%{version}-src.tar.gz
 BuildRequires:  cmake
 BuildRequires:  qt5-qtbase-devel
 

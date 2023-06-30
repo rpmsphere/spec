@@ -3,7 +3,7 @@ Version:        0.5.3
 Release:        9.1
 License:        GPLv3 LGPLv2+
 Summary:        A GDM2 setup tool
-URL:            http://launchpad.net/gdm2setup
+URL:            https://launchpad.net/gdm2setup
 Group:          System/GUI/GNOME
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %{name}.png

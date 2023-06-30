@@ -4,8 +4,8 @@ Release:        6.657
 Summary:        Embeddable Database Engine Written in Java
 License:        Apache-2.0
 Group:          Productivity/Databases/Servers
-URL:            http://db.apache.org/derby/
-Source0:        http://www.apache.org/dist/db/derby/db-derby-%{version}/db-derby-%{version}-src.tar.gz
+URL:            https://db.apache.org/derby/
+Source0:        https://www.apache.org/dist/db/derby/db-derby-%{version}/db-derby-%{version}-src.tar.gz
 Source1:        %{name}.service
 Source2:        %{name}-script
 # https://issues.apache.org/jira/browse/DERBY-5125

@@ -5,8 +5,8 @@ Release:        3.1
 Summary:        Generating presentations in LaTeX using Python code
 Group:          Development/Languages/Python
 License:        New BSD
-URL:            http://code.google.com/p/latexslides/
-Source0:        http://latexslides.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:            https://code.google.com/p/latexslides/
+Source0:        https://latexslides.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python2
 

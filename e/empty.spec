@@ -6,8 +6,8 @@ Summary(ru_RU): Запуск интерактивных консольных п�
 Summary(zh_TW): 在批次模式中執行互動式終端機應用軟體
 License: Common Public License
 Group:   System/Configuration
-URL:     http://%name.sourceforge.net
-Source:  http://heanet.dl.sourceforge.net/sourceforge/%name/%name-%version.tgz
+URL:     https://%name.sourceforge.net
+Source:  https://heanet.dl.sourceforge.net/sourceforge/%name/%name-%version.tgz
 
 %description
 empty is an utility that provides an interface to execute and/or interact

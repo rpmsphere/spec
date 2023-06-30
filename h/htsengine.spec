@@ -6,7 +6,7 @@ Version: 1.05
 License: BSD
 Release: 1
 Group: Productivity/Other
-URL:http://hts-engine.sourceforge.net/
+URL:https://hts-engine.sourceforge.net/
 Source0: hts_engine_API-%{version}.tar.gz
 Source1: hts_engine_API_reference-1.05.pdf
 

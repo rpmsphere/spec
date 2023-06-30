@@ -6,7 +6,7 @@ Requires:       tcl tk
 Summary:        An X Window System Dictionary Tool
 Version:        1.9
 Release:        1
-URL:            http://www-user.tu-chemnitz.de/~fri/ding/
+URL:            https://www-user.tu-chemnitz.de/~fri/ding/
 Source0:        ftp://ftp.tu-chemnitz.de/pub/Local/urz/ding/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 Patch0:         ding-install.diff

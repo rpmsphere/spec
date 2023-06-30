@@ -6,7 +6,7 @@ Release: 1
 License: GPLv3
 Group: Applications/Multimedia
 Source: %{name}-%{version}.tar.gz
-URL: http://dvd-audio.sourceforge.net/GUI.shtml
+URL: https://dvd-audio.sourceforge.net/GUI.shtml
 BuildRequires: qt4-devel
 Requires: dvda-author
 

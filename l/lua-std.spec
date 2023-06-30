@@ -2,12 +2,12 @@
 
 Name:         lua-std
 Summary:      Lua Extension: Standard Libraries
-URL:          http://luaforge.net/projects/stdlib/
+URL:          https://luaforge.net/projects/stdlib/
 Group:        Language
 License:      MIT
 Version:      22
 Release:      4.1
-Source0:      http://files.luaforge.net/releases/stdlib/stdlib/release22/stdlib-22.zip
+Source0:      https://files.luaforge.net/releases/stdlib/stdlib/release22/stdlib-22.zip
 BuildArch:    noarch
 
 %description

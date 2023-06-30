@@ -5,7 +5,7 @@ Vendor:		Grzegorz Moskal <eldevarth@nemerle.org>
 Release:	1
 License:	GPL
 Group:		Applications/Games
-Source0:	http://asciijump.prv.pl/%{name}-%{version}.tar.gz
+Source0:	https://asciijump.prv.pl/%{name}-%{version}.tar.gz
 BuildRequires:	slang-devel
 
 %description

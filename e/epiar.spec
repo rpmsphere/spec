@@ -4,8 +4,8 @@ Release:        1
 Summary:        A space trading/exploring arcade game
 Group:          Amusements/Games
 License:        GPLv2+
-URL:            http://epiar.net/
-Source0:        http://epiar.net/files/epiar/releases/0.5.0/%{name}-%{version}.tar.bz2
+URL:            https://epiar.net/
+Source0:        https://epiar.net/files/epiar/releases/0.5.0/%{name}-%{version}.tar.bz2
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_mixer-devel

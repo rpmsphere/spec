@@ -9,7 +9,7 @@ License:            LGPL
 Group:              System/X11/Icons
 Source0:            blue-glass-3d-cursor-theme-%{version}.tar.bz2
 BuildArch:          noarch
-URL:                http://www.kde-look.org/content/show.php?content=5532
+URL:                https://www.kde-look.org/content/show.php?content=5532
 
 %description
 A blue glass xcursors theme, modeled, animated and rendered in Blender3D.

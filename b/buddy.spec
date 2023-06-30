@@ -4,7 +4,7 @@ Version: 2.4
 Release: 2.1
 Group: Development/Libraries
 License: Public Domain
-URL: http://buddy.sourceforge.net
+URL: https://buddy.sourceforge.net
 Source0: https://sourceforge.net/projects/buddy/files/buddy/BuDDy%20%{version}/%{name}-%{version}.tar.gz
 
 %description

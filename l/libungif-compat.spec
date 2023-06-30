@@ -6,7 +6,7 @@ Version:	%{giflib_ver}
 Release:	1
 License:	MIT
 Group:		System Environment/Libraries
-URL:		http://www.sourceforge.net/projects/giflib/
+URL:		https://www.sourceforge.net/projects/giflib/
 BuildRequires:	giflib-devel
 Provides:       libungif = %{version}-%{release}
 Obsoletes:      libungif <= %{version}-%{release}

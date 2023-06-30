@@ -5,7 +5,7 @@ Release: 1
 License: GPLv2+
 Group: Development/Languages
 URL: https://github.com/hernad/harbour
-#URL: http://www.harbour-project.org/
+#URL: https://www.harbour-project.org/
 Source0: harbour-%{version}.tar.gz
 BuildRequires: zlib-devel, pcre-devel, gpm-devel
 BuildRequires: slang-devel, ncurses-devel, libX11-devel

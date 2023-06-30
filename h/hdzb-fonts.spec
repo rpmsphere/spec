@@ -8,7 +8,7 @@ License: Unknown
 Group: User Interface/X
 BuildArch: noarch
 Source0: HDZB-fonts.zip
-URL: http://www.freegroup.org/2009/09/free-chinese-fonts-hdzb/
+URL: https://www.freegroup.org/2009/09/free-chinese-fonts-hdzb/
 Requires(post): fontconfig
 
 %description

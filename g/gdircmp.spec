@@ -5,8 +5,7 @@ Release:		14.1
 Group:			Productivity/File utilities
 License:		GPL
 Source:			%{name}-%{version}.tar.gz
-URL:			http://home.hccnet.nl/paul.schuurmans/linux/index.html#xdircmp
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+URL:			https://home.hccnet.nl/paul.schuurmans/linux/index.html#xdircmp
 BuildRequires:		gtk2-devel
 BuildRequires:		libX11-devel
 
@@ -28,7 +27,6 @@ make CFLAGS="$RPM_OPT_FLAGS"
 install -D -m755 src/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %doc AUTHORS COPYING ChangeLog INSTALL NEWS README TODO
 

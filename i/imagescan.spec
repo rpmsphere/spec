@@ -6,7 +6,7 @@ Release:        1
 Summary:        Next Generation Image Acquisition Utilities
 Vendor:         SEIKO EPSON CORPORATION
 License:        GPLv3+
-URL:            http://utsushi.github.io/imagescan/
+URL:            https://utsushi.github.io/imagescan/
 Source0:        %{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 Source2:        %{name}.conf

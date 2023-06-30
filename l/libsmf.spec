@@ -8,7 +8,7 @@ Summary:	Library for handling SMF ("*.mid") files.
 Group:		System/Libraries
 License:	BSD
 Source:		libsmf-1.3.tar.xz
-URL:		http://sourceforge.net/projects/libsmf/files/libsmf/
+URL:		https://sourceforge.net/projects/libsmf/files/libsmf/
 BuildRequires:  readline-devel
 
 %description

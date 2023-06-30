@@ -4,8 +4,8 @@ Version:	0.56
 Release:	1
 License:	GPLv2
 Group:		System/Servers
-URL:		http://curl-loader.sourceforge.net/
-Source0:	http://sunet.dl.sourceforge.net/project/curl-loader/curl-loader/%{name}-%{version}/%{name}-%{version}.tar.bz2
+URL:		https://curl-loader.sourceforge.net/
+Source0:	https://sunet.dl.sourceforge.net/project/curl-loader/curl-loader/%{name}-%{version}/%{name}-%{version}.tar.bz2
 Patch0:		curl-loader-0.50-hack.diff
 BuildRequires:  pkgconfig(libcares)
 BuildRequires:	pkgconfig(libcurl)

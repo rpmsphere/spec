@@ -4,7 +4,7 @@ Release: 2.1
 Summary: Themes for the Gtk2 metacity window manager
 License: GPL
 Group: Graphical desktop/MATE
-Source0: http://http.debian.net/debian/pool/main/m/metacity-themes/metacity-themes_%{version}.tar.gz
+Source0: https://http.debian.net/debian/pool/main/m/metacity-themes/metacity-themes_%{version}.tar.gz
 Buildarch: noarch
 
 %description

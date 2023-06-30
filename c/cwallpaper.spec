@@ -5,8 +5,8 @@ Version: 0.3.2
 Release: 2.1
 Group: User Interface
 License: GPLv2+
-URL: http://cwallpaper.sourceforge.net/
-Source0: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL: https://cwallpaper.sourceforge.net/
+Source0: https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  gtk2-devel
 BuildRequires:  pango-devel
 

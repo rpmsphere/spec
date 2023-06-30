@@ -5,9 +5,9 @@ Version:        0.6.7
 Release:        8.1
 License:        GPL-2.0
 Summary:        FTP Mirroring Tool
-URL:            http://www.ohse.de/uwe/ftpcopy.html
+URL:            https://www.ohse.de/uwe/ftpcopy.html
 Group:          Productivity/Networking/Web/Utilities
-Source:         http://www.ohse.de/uwe/ftpcopy/%{name}-%{version}.tar.gz
+Source:         https://www.ohse.de/uwe/ftpcopy/%{name}-%{version}.tar.gz
 
 %description
 ftpcopy is a small mirror-like utility to copy files or directory trees

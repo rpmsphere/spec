@@ -6,8 +6,8 @@ Version:        20131031
 Release:        11.1
 License:        GPL
 Group:          User Interface/Desktops
-URL:            http://gnome-look.org/content/show.php/Chi+?content=143387
-Source0:        http://gnome-look.org/CONTENT/content-files/143387-Chi.tar.bz2
+URL:            https://gnome-look.org/content/show.php/Chi+?content=143387
+Source0:        https://gnome-look.org/CONTENT/content-files/143387-Chi.tar.bz2
 BuildArch:	    noarch
 Requires:       feelofjapan-icon-theme
 Requires:       woodshed-metacity-theme

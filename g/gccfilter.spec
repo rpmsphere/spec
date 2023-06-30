@@ -4,9 +4,9 @@ Version:    2010
 Release:    4.1
 License:    free software
 Group:      Development/Tools
-URL:        http://www.mixtion.org/gccfilter/
-Source0:    http://www.mixtion.org/gccfilter/gccfilter
-Source1:    http://www.mixtion.org/gccfilter/gccfilter.html
+URL:        https://www.mixtion.org/gccfilter/
+Source0:    https://www.mixtion.org/gccfilter/gccfilter
+Source1:    https://www.mixtion.org/gccfilter/gccfilter.html
 BuildArch:  noarch
 Requires:   perl(Term::ANSIColor)
 Requires:   perl(Getopt::ArgvFile)
@@ -28,7 +28,6 @@ mkdir -p $RPM_BUILD_ROOT/%{_bindir}
 install -p -m 755 %{name} $RPM_BUILD_ROOT/%{_bindir}/%{name}
 
 %files
-%defattr(-,root,root,-)
 %doc %{name}.html
 %{_bindir}/%{name}
 

@@ -4,8 +4,8 @@ Version:	0.94
 Release:	6.1
 License:	GPLv2
 Group:		Development/Other
-URL:		http://www.g95.org
-Source0:	http://ftp.g95.org/g95_source.tgz
+URL:		https://www.g95.org
+Source0:	https://ftp.g95.org/g95_source.tgz
 
 %description
 This package adds support for compiling Fortran 95 programs with g95,

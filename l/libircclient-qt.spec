@@ -6,7 +6,7 @@ Release:        12.1
 Summary:        Cross-platform IRC client library written with Qt 4
 Group:          System Environment/Libraries
 License:        LGPLv2+
-URL:            http://www.bitbucket.org/jpnurmi/libircclient-qt
+URL:            https://www.bitbucket.org/jpnurmi/libircclient-qt
 Source0:        https://bitbucket.org/jpnurmi/libircclient-qt/downloads/%{name}-src-%{version}.tar.gz
 BuildRequires:  libpng-devel
 BuildRequires:  gcc-c++, qt4-devel

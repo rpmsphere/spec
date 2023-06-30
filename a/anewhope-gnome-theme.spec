@@ -8,8 +8,8 @@ License: GPL for codes, CC-NC-SA for pixmaps
 Group: User Interface/Desktops
 Source0: %{theme_name}.zip
 Source1: %{theme_name}-index.theme
-Source2: http://awesomewallpaper.files.wordpress.com/2011/02/see-the-world.jpg
-URL: http://jurialmunkey.deviantart.com/art/Divergence-IV-quot-A-New-Hope-quot-183377193
+Source2: https://awesomewallpaper.files.wordpress.com/2011/02/see-the-world.jpg
+URL: https://jurialmunkey.deviantart.com/art/Divergence-IV-quot-A-New-Hope-quot-183377193
 BuildArch: noarch
 Requires: gtk-murrine-engine
 Requires: nitrux-icon-theme

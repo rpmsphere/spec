@@ -3,7 +3,7 @@ Name:		libpng10
 Version:	1.0.69
 Release:	7
 License:	zlib
-URL:		http://www.libpng.org/pub/png/libpng.html
+URL:		https://www.libpng.org/pub/png/libpng.html
 Source0:	https://ftp-osl.osuosl.org/pub/libpng/src/libpng10/libpng-%{version}.tar.gz
 Patch0:		libpng-1.0.63-soname.patch
 Patch1:		libpng10-1.0.69-cve-2018-13785.patch
@@ -510,7 +510,7 @@ ln -s libpng.so.2 %{buildroot}%{_libdir}/libpng10.so
 - move doc files libpng.txt and example.c to devel package
 - add doc Y2KINFO
 - changed license tag from "OSI Certified" to "zlib License"
-  (see http://www.opensource.org/licenses/zlib-license.php)
+  (see https://www.opensource.org/licenses/zlib-license.php)
 - minor cosmetic spec file changes
 
 * Fri Feb 10 2006 Jesse Keating <jkeating@redhat.com> - 1.0.18-3.2.1

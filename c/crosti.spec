@@ -7,7 +7,7 @@ Release:	1
 License:	GPLv3+
 Group:		Applications/Editors
 URL:		https://sites.google.com/site/crostiapp/
-Source0:	http://downloads.sourceforge.net/project/crosti/%{name}-%{version}-source.zip
+Source0:	https://downloads.sourceforge.net/project/crosti/%{name}-%{version}-source.zip
 BuildRequires:	pkgconfig(QtCore)
 BuildRequires:	pkgconfig(QtGui)
 BuildRequires:	dos2unix

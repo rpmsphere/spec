@@ -3,7 +3,7 @@ Version:       2.0.19
 Release:       2.1
 Summary:       User space tools for the mISDN driver
 Group:         System/Kernel and Hardware
-URL:           http://www.misdn.org
+URL:           https://www.misdn.org
 Source0:       %{name}-%{version}.tar.gz
 License:       GPL v2 only ; LGPL v2.1 only
 

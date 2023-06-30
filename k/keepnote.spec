@@ -3,9 +3,9 @@ Version:        0.7.8
 Release:        10.1
 License:        GPL-2.0
 Summary:        Note Taking and Organization
-URL:            http://keepnote.org/
+URL:            https://keepnote.org/
 Group:          Productivity/Office/Organizers
-Source0:        http://keepnote.org/download/%{name}-%{version}.tar.gz
+Source0:        https://keepnote.org/download/%{name}-%{version}.tar.gz
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  python2-setuptools
 #BuildRequires:  python2-libxml2

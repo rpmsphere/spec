@@ -4,7 +4,7 @@ Release:        13.1
 Summary:        AngryBirds related backgrounds
 Group:          User Interface/Desktops
 License:        freeware
-URL:            http://www.rovio.com/
+URL:            https://www.rovio.com/
 Source0:        angrybirds-backgrounds.zip
 Source1:        %{name}.xml
 BuildArch:      noarch

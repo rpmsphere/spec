@@ -7,7 +7,7 @@ Release:	11.1
 Summary:	MPlayer GUI with thumbnail seeking and 3D Video support
 License:	GPLv2+
 Group:		Video/Players
-URL:		http://exmplayer.sourceforge.net/
+URL:		https://exmplayer.sourceforge.net/
 Source0:	https://github.com/rupeshs/ExMplayer/archive/v%{version}/%{name}-%{version}.tar.gz
 Patch0:		exmplayer-3.8.0-segfault.patch
 BuildRequires:	cmake

@@ -1,11 +1,11 @@
 Name:         libjio
 Summary:      Journaled Transactional I/O Library
-URL:          http://blitiri.com.ar/p/libjio/
+URL:          https://blitiri.com.ar/p/libjio/
 Group:        Libraries
 License:      OSL
 Version:      1.02
 Release:      12.1
-Source0:      http://blitiri.com.ar/p/libjio/files/%{version}/libjio-%{version}.tar.gz
+Source0:      https://blitiri.com.ar/p/libjio/files/%{version}/libjio-%{version}.tar.gz
 
 %package devel
 Summary: Development files for %{name}

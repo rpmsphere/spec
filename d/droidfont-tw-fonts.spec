@@ -8,7 +8,7 @@ License: Apache License 2.0
 Group: User Interface/X
 BuildArch: noarch
 Source0: https://github.com/pesder/Droidfont-tw/raw/master/DroidSansFallback.ttf
-Source1: https://github.com/pesder/Droidfont-tw/raw/master/LICENSE.txt
+Source1: Droidfont-tw-LICENSE.txt
 URL: https://github.com/pesder/Droidfont-tw
 Requires(post): fontconfig
 

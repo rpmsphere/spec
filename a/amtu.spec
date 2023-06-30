@@ -4,7 +4,7 @@ Version: 1.0.8
 Release: 19.1
 License: CPL
 Group: System Environment/Base
-URL: http://sourceforge.net/projects/amtueal/
+URL: https://sourceforge.net/projects/amtueal/
 Source0: %{name}-%{version}.tar.gz
 Patch1: amtu-1.0.8-doc.patch
 Patch2: amtu-1.0.8-init.patch
@@ -20,7 +20,7 @@ Abstract Machine Test Utility (AMTU) is an administrative utility to check
 whether the underlying protection mechanism of the hardware are still being
 enforced. This is a requirement of the Controlled Access Protection Profile
 FPT_AMT.1, see 
-http://www.radium.ncsc.mil/tpep/library/protection_profiles/CAPP-1.d.pdf
+https://www.radium.ncsc.mil/tpep/library/protection_profiles/CAPP-1.d.pdf
 
 %prep
 %setup -q

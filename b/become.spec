@@ -1,12 +1,11 @@
 Name:		become
 Version:	0.1
 Release:	4.1
-URL:		http://www.bindshell.net/tools/become
-Source:		http://www.bindshell.net/tools/become/become.tgz
+URL:		https://www.bindshell.net/tools/become
+Source:		https://www.bindshell.net/tools/become/become.tgz
 Summary:	Utility to changes the effective, or real, user and group id
 License:	BSD
 Group:		System/Base
-BuildRoot:       %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The become utility changes the current effective, or real, user and

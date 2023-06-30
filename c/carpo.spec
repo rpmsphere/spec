@@ -6,7 +6,7 @@ Release: 27.4
 Summary: Carp RSS/Atom Reader
 License: GPLv2
 Group:   Applications/Network
-URL:     http://carpo.sourceforge.net/
+URL:     https://carpo.sourceforge.net/
 Source: %{name}_%{version}.tar.gz
 BuildRequires: libpng-devel
 BuildRequires: pkgconfig(QtNetwork) >= 4.7

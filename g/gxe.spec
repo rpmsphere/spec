@@ -11,8 +11,8 @@ BuildRequires:  pkgconfig
 BuildRequires:  libgnomeui-devel
 BuildRequires:  gvfs-devel
 BuildRequires:  w3m udisks2
-URL:            http://www.geocities.jp/sakachin2/
-Source:         http://www.geocities.jp/sakachin2/%{name}-%{version}.tar.gz
+URL:            https://www.geocities.jp/sakachin2/
+Source:         https://www.geocities.jp/sakachin2/%{name}-%{version}.tar.gz
 Summary:        Hybrid Editor XE
 
 %description

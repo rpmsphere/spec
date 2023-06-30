@@ -4,7 +4,7 @@ Release:	5.1
 Summary:	Software, codec installs and system tweaks
 Group:		System/Management
 License:	GPL-3.0+
-URL:		http://github.com/satya164/%{name}
+URL:		https://github.com/satya164/%{name}
 Source0:	%{name}-%{version}.tar.gz
 BuildArch:	noarch
 Requires:	coreutils

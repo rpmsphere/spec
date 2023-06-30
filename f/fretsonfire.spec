@@ -3,7 +3,7 @@ Requires:       python python-pygame python-opengl python-numeric python-imaging
 Name:           fretsonfire
 Version:        1.2.512
 Release:        1
-URL:            http://fretsonfire.sourceforge.net/
+URL:            https://fretsonfire.sourceforge.net/
 License:        GPL v2 or later
 Group:          Amusements/Games/Action/Arcade
 Summary:        A game of musical skill and fast fingers

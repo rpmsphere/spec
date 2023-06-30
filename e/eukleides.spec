@@ -6,10 +6,10 @@ Version:	1.5.4
 Release:	22.1
 License:	GPL v3
 Group:		Applications/Science
-Source0:	http://www.eukleides.org/files/%{name}-%{version}.tar.bz2
+Source0:	https://www.eukleides.org/files/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-config.patch
 Patch1:		%{name}-makefile-destdir.patch
-URL:		http://www.eukleides.org/
+URL:		https://www.eukleides.org/
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	gettext-devel

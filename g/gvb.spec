@@ -4,7 +4,7 @@ Version: 1.3
 Release: 1
 Group: science
 License: Free Software
-URL: http://www.pietrobattiston.it/gvb
+URL: https://www.pietrobattiston.it/gvb
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: desktop-file-utils

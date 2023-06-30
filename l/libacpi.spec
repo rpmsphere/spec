@@ -4,12 +4,12 @@ Version:        0.2
 Release:        1
 Summary:        General purpose library for ACPI
 License:        MIT
-URL:            http://www.ngolde.de/libacpi.html
-Source0:        http://www.ngolde.de/download/%{name}-%{version}.tar.gz
+URL:            https://www.ngolde.de/libacpi.html
+Source0:        https://www.ngolde.de/download/%{name}-%{version}.tar.gz
 Patch0:         %{name}-%{version}.patch
 Patch1:         %{name}-%{version}-sysfs.patch
 BuildRequires:  gcc
-Source44: import.info
+#Source44: import.info
 
 %description    
 libacpi is a general purpose shared library for programs gathering 

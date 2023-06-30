@@ -4,8 +4,8 @@ Release:        1
 Summary:        Extended falling blocks game with many different geometries
 Group:          Games/Arcade
 License:        GPLv3+
-URL:            http://www.nongnu.org/galois/
-Source0:        http://download.savannah.gnu.org/releases/galois/source/%{name}-%{version}.tar.gz
+URL:            https://www.nongnu.org/galois/
+Source0:        https://download.savannah.gnu.org/releases/galois/source/%{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig(gtkmm-3.0)
 BuildRequires:  pkgconfig(libxml++-2.6)
 

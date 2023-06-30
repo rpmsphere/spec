@@ -5,8 +5,8 @@ Version:       0.4.8
 Release:       7.1
 Summary:       Drawing Mandelbrot and Julia fractals
 Group:         Graphical Desktop/Applications/Graphics
-URL:           http://fraqtive.mimec.org
-Source:        http://downloads.sourceforge.net/fraqtive/%{name}-%{version}.tar.bz2
+URL:           https://fraqtive.mimec.org
+Source:        https://downloads.sourceforge.net/fraqtive/%{name}-%{version}.tar.bz2
 License:       GPL
 BuildRequires: fontconfig-devel
 BuildRequires: freetype-devel

@@ -2,10 +2,10 @@ Name:           btnx-config
 Version:        0.4.9
 Release:        15.1
 Summary:        GUI Configuration Tool for btnx
-Source:         http://www.ollisalonen.com/btnx/btnx-config-%{version}.tar.gz
+Source:         https://www.ollisalonen.com/btnx/btnx-config-%{version}.tar.gz
 Patch1:         btnx-config-desktop.patch
 Patch2:         btnx-config-dep_downgrade.patch
-URL:            http://www.ollisalonen.com/btnx/
+URL:            https://www.ollisalonen.com/btnx/
 Group:          Hardware/Other
 License:        GNU General Public License version 2 (GPL v2)
 BuildRequires:  libpng-devel

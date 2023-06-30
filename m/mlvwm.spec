@@ -6,9 +6,9 @@ Version: 0.9.4
 Release: 1
 License: MIT
 Group: User Interface/X
-Source0: http://www2u.biglobe.ne.jp/~y-miyata/mlvwm/mlvwm091.tar.gz
-Source1: http://www2u.biglobe.ne.jp/~y-miyata/mlvwm/mini-icons.tar.gz
-URL: http://www2u.biglobe.ne.jp/~y-miyata/mlvwm.html
+Source0: https://www2u.biglobe.ne.jp/~y-miyata/mlvwm/mlvwm091.tar.gz
+Source1: https://www2u.biglobe.ne.jp/~y-miyata/mlvwm/mini-icons.tar.gz
+URL: https://www2u.biglobe.ne.jp/~y-miyata/mlvwm.html
 #URL: https://sourceforge.net/projects/mazewm/
 BuildRequires: imake
 BuildRequires: libXext-devel

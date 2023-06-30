@@ -6,8 +6,8 @@ Release:	1
 License:	GPLv2+
 Group:		Games/Puzzles
 Summary:	An arcade-puzzle 2D game to break all of the target blocks
-URL:		http://jag.xlabsoft.com
-Source:		http://jag.xlabsoft.com/files/%name-%version-src.zip
+URL:		https://jag.xlabsoft.com
+Source:		https://jag.xlabsoft.com/files/%name-%version-src.zip
 Patch0:		%{name}-path.patch
 BuildRequires:  gcc-c++
 BuildRequires:  mesa-libGL-devel
@@ -89,10 +89,10 @@ rm -rf %buildroot
 - New version 0.3.1
 - Clean up and fix spec
 - Add patch0 to fix path from usr/local to usr
-- MIB (Mandriva Italia Backport) - http://mib.pianetalinux.org
+- MIB (Mandriva Italia Backport) - https://mib.pianetalinux.org
 * Thu Oct 15 2009 Beppe Florin <symbianflo@fastwebnet.it>  0.2.6-69.1mib2009.1
 - New release
-- MIB (Mandriva Italia Backport) - http://mib.pianetalinux.org
+- MIB (Mandriva Italia Backport) - https://mib.pianetalinux.org
 * Sun Aug 09 2009 Alberto Altieri <alberto.altieri@gmail.com> 0.2.5-69.1mib2009.1
 - First version/release for MIB users
 - MIB (Mandriva Italia Backport) new optimized

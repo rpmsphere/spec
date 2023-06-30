@@ -10,9 +10,8 @@ Release: 7.1
 Summary: Dangermouse's installer script
 Group: Applications/Productivity
 License: GPLv2+
-URL: http://dnmouse.org/scripts/%{name}
+URL: https://dnmouse.org/scripts/%{name}
 Source0: %{name}-%{version}.tar.gz
-BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildArch: noarch
 Requires: fedora-release >= 15
 Requires: zenity
@@ -76,7 +75,6 @@ done < /etc/passwd
 IFS=$PREVIOUS_IFS
 
 %files
-%defattr(-,root,root,-)
 %config(noreplace) %{_sysconfdir}/pam.d/%{name}
 %config(noreplace) %{_sysconfdir}/security/console.apps/%{name}
 %{_datadir}/applications/%{name}.desktop

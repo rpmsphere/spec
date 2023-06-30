@@ -1,11 +1,11 @@
 Name:         cttl
 Summary:      Common Text Transformation Library
-URL:          http://cttl.sourceforge.net/
+URL:          https://cttl.sourceforge.net/
 Group:        Development
 License:      LGPL
 Version:      3.02
 Release:      3.1
-Source0:      http://sourceforge.net/projects/cttl/files/cttl302.zip
+Source0:      https://sourceforge.net/projects/cttl/files/cttl302.zip
 BuildArch:    noarch
 
 %description

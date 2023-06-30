@@ -7,12 +7,12 @@ Release: 2.1
 License: CC by-nc-sa
 Group: User Interface/Desktops
 Source: Fitts-Natural.tar.gz
-URL: http://gnome-look.org/content/show.php/Fitts?content=139285
+URL: https://gnome-look.org/content/show.php/Fitts?content=139285
 BuildArch: noarch
 
 %description
 A theme inspired by:
-http://gnome-look.org/content/show.php/Natural+metacity+-+Mockup.?content=120245
+https://gnome-look.org/content/show.php/Natural+metacity+-+Mockup.?content=120245
 This Metacity theme tries to use "big" buttons to make it easy to click on them.
 
 %prep

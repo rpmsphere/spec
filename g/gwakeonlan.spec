@@ -6,7 +6,7 @@ Release:        7.1
 Summary:        A GTK+ utility to awake machines using the Wake on LAN
 Group:          Networking/Other
 License:        GPLv2
-URL:            http://www.muflone.com/gwakeonlan/
+URL:            https://www.muflone.com/gwakeonlan/
 Source0:        https://codeload.github.com/muflone/gwakeonlan/tar.gz/%{version}#/%{name}-%{version}.tar.gz
 BuildRequires:	python2-devel
 BuildRequires:	python2-pyxdg

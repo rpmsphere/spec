@@ -5,7 +5,7 @@ Group:          Productivity/Multimedia/Sound/Players
 Version:        2.0
 Release:        6.1
 BuildArch:      noarch
-URL:            http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-music-player/
+URL:            https://packages.linuxdeepin.com/deepin/pool/main/d/deepin-music-player/
 Source0:        %{name}-%{version}.tar.gz
 Source1:        deepin-music-player.desktop
 Source2:        deepin-music-player.png
@@ -76,7 +76,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 * Wed Sep 26 2012 hillwood@linuxfans.org
 - update to 1.0.1git20120911
 - fix bnc#778659
-- more changlog please see http://goo.gl/WCVGo
+- more changlog please see https://goo.gl/WCVGo
 * Tue Sep  4 2012 hillwood@linuxfans.org
 - license update: GPL-3.0+
 * Tue Sep  4 2012 hillwood@linuxfans.org

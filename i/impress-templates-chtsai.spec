@@ -4,7 +4,7 @@ Group: Applications/Productivity
 Summary: Templates by chtsai for Impress 
 Version: 2005
 Release: 1
-URL: http://technology.chtsai.org/impress/
+URL: https://technology.chtsai.org/impress/
 Source: %{name}.zip
 BuildArch: noarch
 Requires: libreoffice-impress

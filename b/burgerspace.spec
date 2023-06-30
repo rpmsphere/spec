@@ -4,7 +4,7 @@ Name:			burgerspace
 Version:		1.9.5
 Summary:		A Burgertime(TM) clone
 License:		GPLv2
-URL:			http://sarrazip.com/dev/%{name}.html
+URL:			https://sarrazip.com/dev/%{name}.html
 Group:			Amusements/Games
 Release:		1
 Source:			%{name}-%{version}.tar.gz

@@ -4,7 +4,7 @@ Name:			cosmosmash
 Version:		1.4.8
 Summary:		Clone of the Intellivision(TM) game Astrosmash(TM)
 License:		GPLv2
-URL:			http://sarrazip.com/dev/%{name}.html
+URL:			https://sarrazip.com/dev/%{name}.html
 Group:			Amusements/Games
 Release:		1
 Source:			%{name}-%{version}.tar.gz

@@ -10,15 +10,15 @@ BuildArch: noarch
 URL: https://github.com/Arakis/Atolm-gtk3
 Source0: Atolm-gtk3-master.zip
 Source1: %{theme_name}-index.theme
-Source2: http://www.deviantart.com/download/152712508/surface_i_wallpaper_by_sword1ne.png
+Source2: https://www.deviantart.com/download/152712508/surface_i_wallpaper_by_sword1ne.png
 Requires: blackwhite2-icon-theme
 Requires: dmz-cursor-themes
 
 %description
 Updated Atolm theme by Arakis, based on Atolm-gtk3 by TheDeviantMars:
-http://thedeviantmars.deviantart.com/art/Atolm-gtk3-206663190
+https://thedeviantmars.deviantart.com/art/Atolm-gtk3-206663190
 and again based on Atolm-gtk2 by SkiesOfAzel:
-http://skiesofazel.deviantart.com/art/Atolm-191381339
+https://skiesofazel.deviantart.com/art/Atolm-191381339
 
 %prep
 %setup -q -n Atolm-gtk3-master

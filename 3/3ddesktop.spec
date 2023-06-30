@@ -4,8 +4,8 @@ Version:   0.2.9
 Release:   8.1
 License:   GPL
 Group:     User Interface/Desktops
-Source:    http://prdownloads.sourceforge.net/desk3d/3ddesktop-%{version}.tar.gz
-URL:       http://desk3d.sourceforge.net/
+Source:    https://prdownloads.sourceforge.net/desk3d/3ddesktop-%{version}.tar.gz
+URL:       https://desk3d.sourceforge.net/
 BuildRequires:  mesa-libGL-devel
 BuildRequires:  mesa-libGLU-devel
 BuildRequires:  imlib2-devel

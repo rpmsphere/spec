@@ -2,8 +2,8 @@ Name:               bas
 Version:            2.6
 Release:            1
 Summary:            Classic BASIC interpreter
-Source:             http://www.moria.de/~michael/bas/bas-%{version}.tar.gz
-URL:                http://www.moria.de/~michael/bas/
+Source:             https://www.moria.de/~michael/bas/bas-%{version}.tar.gz
+URL:                https://www.moria.de/~michael/bas/
 Group:              Development/Language
 License:            BSD
 

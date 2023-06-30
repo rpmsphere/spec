@@ -6,7 +6,7 @@ BuildArch:      noarch
 BuildRequires:  help2man python3-dateutil 
 Requires:       python3-dateutil 
 #Requires:       python3-gdata
-Source:         http://gcalcli.googlecode.com/files/%{name}-%{version}.tar.gz
+Source:         https://gcalcli.googlecode.com/files/%{name}-%{version}.tar.gz
 Group:          Productivity/Office/Organizers
 Summary:        Google Calendar Command Line Interface
 

@@ -5,8 +5,8 @@ BuildArch: noarch
 Release: 6.1
 License: freeware
 Group: User Interface/X
-URL: http://www.teejeetech.in/2014/06/conky-manager-v2-themes.html
-Source0: http://www.mediafire.com/download/icvmpzhlk7vgejt/default-themes-extra-1.cmtp.7z
+URL: https://www.teejeetech.in/2014/06/conky-manager-v2-themes.html
+Source0: https://www.mediafire.com/download/icvmpzhlk7vgejt/default-themes-extra-1.cmtp.7z
 Source1: All_In_one_circle.cmtp.7z
 Requires: conky-manager
 

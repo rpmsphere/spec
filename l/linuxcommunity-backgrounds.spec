@@ -4,8 +4,8 @@ Release:        8.1
 Summary:        Linux Community backgrounds
 Group:          User Interface/Desktops
 License:        CC-BY-SA
-URL:            http://www.linux-community.de/Internal/Artikel/Online-Artikel/LC-Adventsaktion-Freie-Hintergrundbilder-zum-Download
-Source0:        http://www.linux-community.de/content/download/111923/888824/file/lc-wallpaper-bundle.tar.gz
+URL:            https://www.linux-community.de/Internal/Artikel/Online-Artikel/LC-Adventsaktion-Freie-Hintergrundbilder-zum-Download
+Source0:        https://www.linux-community.de/content/download/111923/888824/file/lc-wallpaper-bundle.tar.gz
 Source1:        linuxcommunity-backgrounds.xml
 BuildArch:      noarch
 

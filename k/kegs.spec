@@ -7,7 +7,6 @@ Summary:      Apple IIgs emulator
 Source:       %name.%version.tar.gz
 Patch0:       %name.%version.dif
 BuildRequires: libX11-devel, libXext-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 %description
 Requires ROM and disk images to work.
@@ -52,7 +51,6 @@ install -D -m 644 config.kegs $RPM_BUILD_ROOT/%{_datadir}/%{name}/config.kegs
 chmod 755 $RPM_BUILD_ROOT%{_bindir}/xkegs
 
 %files
-%defattr(-,root,root)
 # %{_docdir}/%{name}/*.txt
 # %{_bindir}/kegs
 %{_bindir}/xkegs

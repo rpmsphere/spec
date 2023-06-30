@@ -6,7 +6,7 @@ Name:				 mcm
 Version:			 0.9.3
 Release:			 9.1
 Summary:			 Monocaffe Connections Manager
-# http://launchpad.net/mcm/trunk/%{version}/+download/mcm-%{version}.tar.gz
+# https://launchpad.net/mcm/trunk/%{version}/+download/mcm-%{version}.tar.gz
 Source:			 mcm-%{version}.tar.bz2
 Patch1:			 mcm-fix_desktop_file.patch
 Patch2:			 mcm-placeholders.patch

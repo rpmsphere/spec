@@ -5,7 +5,7 @@ Release: 1
 License: GPL
 Group: Applications/Editors
 Source: ftp://ftp.yar.ru/pub/source/le/%{name}-%{version}.tar.gz
-URL: http://lav.yar.ru/programs.html
+URL: https://lav.yar.ru/programs.html
 BuildRequires: gcc-c++
 
 %description

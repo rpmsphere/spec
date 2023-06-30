@@ -4,10 +4,10 @@ Name:				 gprog
 Version:			 1.20
 Release:			 4.1
 Summary:			 GUI Pipe Meter
-Source:			 http://stromberg.dnsalias.org/~dstromberg/gprog/releases/gprog-%{version}.tar.gz
+Source:			 https://stromberg.dnsalias.org/~dstromberg/gprog/releases/gprog-%{version}.tar.gz
 Source99:		 %{name}-rpmlintrc
 Patch1:			 gprog-fix_paths.patch
-URL:				 http://stromberg.dnsalias.org/~dstromberg/gprog/
+URL:				 https://stromberg.dnsalias.org/~dstromberg/gprog/
 Group:			 System/X11/Utilities
 License:			 GNU General Public License version 3 (GPL v3)
 BuildRequires:	 make

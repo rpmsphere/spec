@@ -3,7 +3,7 @@ Version:        0.0.1
 Release:        4.1
 Summary:        Setup awesome as window manager of GNOME 3
 License:        CCPL
-URL:            http://awesome.naquadah.org/wiki/Quickly_Setting_up_Awesome_with_Gnome
+URL:            https://awesome.naquadah.org/wiki/Quickly_Setting_up_Awesome_with_Gnome
 Source0:        https://aur.archlinux.org/packages/aw/awesome-gnome/%{name}.tar.gz
 Requires:       awesome
 Requires:       gdm

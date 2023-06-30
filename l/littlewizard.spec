@@ -7,8 +7,8 @@ Version:		1.2.2
 Release:		1
 License:		GPL
 Group:			Development/Tools/IDE
-Source0:		http://ncu.dl.sourceforge.net/project/littlewizard/littlewizard/1.2.2/%{name}-%{version}.tar.gz
-URL:    		http://littlewizard.sourceforge.net/
+Source0:		https://ncu.dl.sourceforge.net/project/littlewizard/littlewizard/1.2.2/%{name}-%{version}.tar.gz
+URL:    		https://littlewizard.sourceforge.net/
 BuildRequires:		gettext-devel
 BuildRequires:		gcc-c++
 BuildRequires:		libxml2-devel

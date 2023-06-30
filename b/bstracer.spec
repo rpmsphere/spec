@@ -6,8 +6,8 @@ Release:    	24.1
 Summary:    	Beesoft Tracer
 License:    	GPLv2+
 Group:      	File tools
-URL:        	http://www.beesoft.org/index.php?id=tracer
-Source:     	http://www.beesoft.org/download/%{name}_%{version}.tar.gz
+URL:        	https://www.beesoft.org/index.php?id=tracer
+Source:     	https://www.beesoft.org/download/%{name}_%{version}.tar.gz
 BuildRequires:	qt4-devel
 BuildRequires:	ghostscript-core ImageMagick
 

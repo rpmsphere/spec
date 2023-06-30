@@ -5,7 +5,7 @@ Version:        2.5.2
 Release:        1
 Summary:        Archiver program which writes cpio-format archives
 Group:		Archiving/Backup
-Source0:	http://members.chello.nl/~k.holtman/%{name}-%{version}.tgz
+Source0:	https://members.chello.nl/~k.holtman/%{name}-%{version}.tgz
 License:	LGPL
 
 %description

@@ -6,8 +6,8 @@ Version: 7.5.3
 Release: 8.1
 License: GPL
 Group: User Interface/Desktops
-Source: http://sourceforge.net/projects/larswm/files/%{name}-%{version}.tar.gz
-URL: http://sourceforge.net/projects/larswm/
+Source: https://sourceforge.net/projects/larswm/files/%{name}-%{version}.tar.gz
+URL: https://sourceforge.net/projects/larswm/
 BuildRequires: imake libX11-devel libXext-devel libXmu-devel
 
 %description

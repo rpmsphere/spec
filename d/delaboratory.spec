@@ -4,10 +4,10 @@ Name:               delaboratory
 Version:            0.8
 Release:            10.1
 Summary:            Color Correction Utility
-Source0:            http://delaboratory.googlecode.com/files/delaboratory-%{version}.tar.gz
+Source0:            https://delaboratory.googlecode.com/files/delaboratory-%{version}.tar.gz
 Source1:            delaboratory.desktop
 Source2:            delaboratory.png
-URL:                http://code.google.com/p/delaboratory/
+URL:                https://code.google.com/p/delaboratory/
 Group:              Productivity/Graphics/Other
 License:            GPL-3.0
 BuildRequires:      libpng-devel

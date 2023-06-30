@@ -1,11 +1,11 @@
 Name:         ffe
 Summary:      Flat-File Extractor
-URL:          http://ff-extractor.sourceforge.net/
+URL:          https://ff-extractor.sourceforge.net/
 Group:        ShellUtils
 License:      GPL
 Version:      0.3.9a
 Release:      1
-Source0:      http://sourceforge.net/projects/ff-extractor/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+Source0:      https://sourceforge.net/projects/ff-extractor/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 
 %description
 Flat-File Extractor (FFE) can be used for parsing different flat

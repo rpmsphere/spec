@@ -4,7 +4,7 @@ Version:        1.2.0
 Release:        17.1
 Group:          Productivity 
 License:        GPL
-URL:            http://lwtt.aiken.net
+URL:            https://lwtt.aiken.net
 Requires:       jre
 BuildRequires:  unzip
 BuildRequires:  java-devel lua

@@ -6,12 +6,12 @@ Version:        20061223
 Release:        3.1
 License:        freeware
 Group:          User Interface/Desktops
-URL:            http://gnome-look.org/content/show.php/Buuf+Cursor?content=74495
+URL:            https://gnome-look.org/content/show.php/Buuf+Cursor?content=74495
 Source0:        Buuf.tar.gz
 BuildArch:      noarch
 
 %description
-This is only a port. Original work done by aroche: http://www.skinbase.org/profile.php?uname=aroche
+This is only a port. Original work done by aroche: https://www.skinbase.org/profile.php?uname=aroche
 This is the only thing I needed to match the Buuf stuff. Permission is inside the file. Hope you like it!!!
 
 %prep

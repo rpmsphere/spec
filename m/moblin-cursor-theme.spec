@@ -11,7 +11,7 @@ URL: https://www.gnome-look.org/p/999723/
 BuildArch: noarch
 
 %description
-Taken from http://git.moblin.org/cgit.cgi/moblin-cursor-theme/
+Taken from https://git.moblin.org/cgit.cgi/moblin-cursor-theme/
 
 %prep
 %setup -q

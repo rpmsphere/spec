@@ -6,8 +6,8 @@ Release: 6.1
 Summary: Application to generate and view random fractal planets and terrain
 License: GPL
 Group: Applications/Multimedia
-URL: http://www.bottlenose.demon.co.uk/share/fracplanet/index.htm
-Source: http://nchc.dl.sourceforge.net/project/%{name}/%{name}/%{version}/%{name}-%{version}.tar.gz
+URL: https://www.bottlenose.demon.co.uk/share/fracplanet/index.htm
+Source: https://nchc.dl.sourceforge.net/project/%{name}/%{name}/%{version}/%{name}-%{version}.tar.gz
 BuildRequires: boost-devel libXmu-devel mesa-libGLU-devel qt-devel
 
 %description

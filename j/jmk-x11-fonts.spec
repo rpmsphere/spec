@@ -8,12 +8,10 @@ BuildRequires:  freetype
 %define	fontdir     /usr/share/fonts/%{fontname}
 Version:        3.0
 Release: 50.1
-Packager: Agnelo de la Crotche <agnelo@unixversal.com>
 License: GPL
-URL: http://www.pobox.com/~jmknoble
-Source0: http://www.pobox.com/~jmknoble/fonts/%{name}-%{version}.tar.gz
+URL: https://www.pobox.com/~jmknoble
+Source0: https://www.pobox.com/~jmknoble/fonts/%{name}-%{version}.tar.gz
 Patch0:         %name-%version.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
 
 %description
@@ -63,10 +61,12 @@ make INSTALL_DIR=%{fontdir} DESTDIR=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%attr(-   ,root,root) %doc ChangeLog NEWS README %{name}-%{version}.lsm
-%attr(0755,root,root) %dir %{fontdir}
-%attr(0444,root,root) %{fontdir}/*
+%doc ChangeLog NEWS README %{name}-%{version}.lsm
+%dir %{fontdir}
+%{fontdir}/*
 
 %changelog
 * Wed Feb 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
 - Rebuilt for Fedora
+* Thu Mar 17 2011 Agnelo de la Crotche <agnelo@unixversal.com>
+- Initial package

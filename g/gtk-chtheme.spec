@@ -4,8 +4,8 @@ Release:	19.1
 Summary:	Gtk+ 2.0 theme preview and selection made slick
 Group:		User Interface/Desktops
 License:	GPLv2+
-URL:		http://plasmasturm.org/programs/gtk-chtheme/
-Source0:	http://plasmasturm.org/code/%{name}/%{name}-%{version}.tar.bz2
+URL:		https://plasmasturm.org/programs/gtk-chtheme/
+Source0:	https://plasmasturm.org/code/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-nostrip.patch

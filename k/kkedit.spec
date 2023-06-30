@@ -5,7 +5,7 @@ Release: 1
 Group: Applications/Editors
 License: GPL
 URL: https://github.com/KeithDHedger/KKEdit
-Source0: http://keithhedger.hostingsiteforfree.com/zips/kkedit/KKEdit-%{version}.tar.gz
+Source0: https://keithhedger.hostingsiteforfree.com/zips/kkedit/KKEdit-%{version}.tar.gz
 BuildRequires: gtk2-devel
 BuildRequires: gtksourceview2-devel
 BuildRequires: unique-devel

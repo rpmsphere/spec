@@ -5,11 +5,11 @@ Summary:	An advanced and secure webserver for Unix
 Name:		hiawatha
 Version:	10.12
 Release:	1
-Source0:	http://www.hiawatha-webserver.org/files/%{name}-%{version}.tar.gz
+Source0:	https://www.hiawatha-webserver.org/files/%{name}-%{version}.tar.gz
 Source1:	%{name}-sysvscript
 License:	GPLv2+
 Group:		System Environment/Daemons
-URL:		http://www.hiawatha-webserver.org/
+URL:		https://www.hiawatha-webserver.org/
 BuildRequires:	libxml2-devel
 BuildRequires:  libxslt-devel
 BuildRequires:  mbedtls-devel

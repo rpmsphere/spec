@@ -5,7 +5,7 @@ Summary:		The Unix version of the old classic game Digger
 Summary(zh_TW):	經典遊戲 Digger 的 Unix 版本
 Group:			Amusements/Games
 License:		GPL
-URL:			http://www.digger.org/
+URL:			https://www.digger.org/
 Source0:		%{name}-%{version}.tar.gz
 Source11:		%{name}-16x16.png
 Source12:		%{name}-32x32.png

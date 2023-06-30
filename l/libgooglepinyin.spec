@@ -4,9 +4,9 @@ Name:       libgooglepinyin
 Version:    0.1.2
 Release:    1
 Summary:    A fork from google pinyin on android
-URL:        http://code.google.com/p/libgooglepinyin/
+URL:        https://code.google.com/p/libgooglepinyin/
 License:    APL2.0
-Source0:    http://libgooglepinyin.googlecode.com/files/%{name}-%{version}.tar.bz2
+Source0:    https://libgooglepinyin.googlecode.com/files/%{name}-%{version}.tar.bz2
 Group:      User Interface/Desktops
 BuildRequires:  cairo-devel, pango-devel, intltool, cmake, gtk2-devel, gcc-c++
  

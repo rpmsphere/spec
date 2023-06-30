@@ -1,8 +1,8 @@
 Name: basic256
 Version: 2.0.0.11
 Release: 1
-URL: http://kidbasic.sourceforge.net
-Source: http://sourceforge.net/projects/kidbasic/files/basic256/%{name}_%{version}.orig.tar.gz
+URL: https://kidbasic.sourceforge.net
+Source: https://sourceforge.net/projects/kidbasic/files/basic256/%{name}_%{version}.orig.tar.gz
 Source1: basic256.desktop
 Source2: basic256_32.png
 License: GPL

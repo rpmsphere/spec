@@ -93,7 +93,7 @@ mv readme readme.linux
 %{_libexecdir}/%{name}/%{name}
 
 %changelog
-* Tue Nov 19 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.5
+* Sun Oct 23 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.5
 - Rebuilt for Fedora
 * Mon Oct 01 2018 akien <akien> 1.7.5-1.mga7
   (not released yet)

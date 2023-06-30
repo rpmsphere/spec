@@ -5,8 +5,8 @@ Version:	0.2.9
 Release:	2.1
 License:	GPL
 Group:		Applications/Console
-Source0:	http://www.raincrazy.com/software/discus/%{name}-%{version}.tar.gz
-URL:		http://www.raincrazy.com/software/discus/
+Source0:	https://www.raincrazy.com/software/discus/%{name}-%{version}.tar.gz
+URL:		https://www.raincrazy.com/software/discus/
 Requires:	python2
 BuildArch:	noarch
 

@@ -4,7 +4,7 @@ Release:        17.43
 Summary:        Simple program to read/write from/to any location in memory
 License:        GPL-2.0+
 Group:          Hardware/Other
-URL:            http://free-electrons.com/pub/mirror/devmem2.c
+URL:            https://free-electrons.com/pub/mirror/devmem2.c
 Source:         devmem2-1.0.tar.gz
 Patch1:         fix_usage_on_64_bits.patch
 

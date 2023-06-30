@@ -18,7 +18,7 @@ Source0: 	%{oname}-%{version}.tar.bz2
 Source1:	mcosx-wallpaper.xml
 License: 	LGPL
 Group: 		User Interface/Desktops
-URL:   	   	http://sourceforge.net/projects/mac4lin/
+URL:   	   	https://sourceforge.net/projects/mac4lin/
 BuildArch: 	noarch
 
 %description

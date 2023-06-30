@@ -4,11 +4,11 @@ Release:	20.1
 Summary:	MahJongg 3D Solitaire
 License:	GPLv2+
 Group:		Games/Boards
-URL:		http://www.reto-schoelly.de/mahjongg3d/
-Source:		http://www.reto-schoelly.de/mahjongg3d/%{name}-%{version}.tar.bz2
-Source1:	http://www.reto-schoelly.de/mahjongg3d/%{name}-0.96-patch2.tar.bz2
-Source10:	http://www.reto-schoelly.de/mahjongg3d/hieroglyph_tileset.tar.bz2
-Source11:	http://www.reto-schoelly.de/mahjongg3d/lab_layout.tar.bz2
+URL:		https://www.reto-schoelly.de/mahjongg3d/
+Source:		https://www.reto-schoelly.de/mahjongg3d/%{name}-%{version}.tar.bz2
+Source1:	https://www.reto-schoelly.de/mahjongg3d/%{name}-0.96-patch2.tar.bz2
+Source10:	https://www.reto-schoelly.de/mahjongg3d/hieroglyph_tileset.tar.bz2
+Source11:	https://www.reto-schoelly.de/mahjongg3d/lab_layout.tar.bz2
 Source20:	%{name}-16.png
 Source21:	%{name}-32.png
 Source22:	%{name}-48.png

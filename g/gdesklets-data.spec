@@ -4,7 +4,7 @@ Release:        1
 Summary:        Applets for gDesklets
 Group:          User Interface/Desktops
 License:        GPLv2
-URL:            http://gdesklets.de/
+URL:            https://gdesklets.de/
 Source:		%{name}-%{version}.tar.gz
 Patch:		%{name}_0.35.6-2ubuntu1.diff.gz
 BuildArch:      noarch

@@ -6,11 +6,11 @@ Version:	0.9.1a
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	http://downloads.sourceforge.net/project/gview/gview/gview-0.9a/%{name}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/project/gview/gview/gview-0.9a/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 BuildRequires:	gtk2-devel
-URL:		http://gview.sourceforge.net/
+URL:		https://gview.sourceforge.net/
 
 %description
 GView is a very small, very simple, command-line operated

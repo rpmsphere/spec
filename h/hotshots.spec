@@ -5,7 +5,7 @@ License:        GPLv2+
 Summary:        Screenshot and Annotation Tool
 URL:            https://sourceforge.net/projects/hotshots/
 Group:          Productivity/Graphics/Other
-Source0:        http://sourceforge.net/projects/hotshots/files/%{version}/HotShots-%{version}-src.zip
+Source0:        https://sourceforge.net/projects/hotshots/files/%{version}/HotShots-%{version}-src.zip
 BuildRequires:  ghostscript-core ImageMagick
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  libqxt-devel

@@ -4,7 +4,7 @@ Name:           hinedo
 Version:        0.4
 Release:        1
 License:        GPL
-URL: 		http://rt.openfoundry.org/Foundry/Project/?Queue=814
+URL: 		https://rt.openfoundry.org/Foundry/Project/?Queue=814
 BuildRequires:  gtk2-devel
 Group:          Applications/Internet
 Summary:        GTK Hinet Radio

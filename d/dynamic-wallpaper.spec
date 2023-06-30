@@ -5,7 +5,7 @@ Summary:        Generates svg wallpaper based on current weather, season and oth
 Group:          Amusements/Graphics
 License:        GPLv2
 URL:            https://sourceforge.net/projects/dynwallpaper
-Source0:        http://downloads.sf.net/sourceforge/dynwallpaper/%{name}031.tar.bz2
+Source0:        https://downloads.sf.net/sourceforge/dynwallpaper/%{name}031.tar.bz2
 # COPYING file said that licence is LGPLv2+ but some files are GPLv2.
 # According to author, the more conservative licence is GPLv2
 Patch0:         %{name}-copying.patch

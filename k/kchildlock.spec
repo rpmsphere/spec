@@ -8,7 +8,7 @@ Release: 1
 License: GPL
 Group: System/Management
 Source0: kchildlock-0.91.1.tar.gz
-URL: http://sourceforge.net/projects/kchildlock
+URL: https://sourceforge.net/projects/kchildlock
 
 %description
 This tool monitors and restricts the usage time of the computer. It is intended

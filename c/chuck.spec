@@ -6,9 +6,9 @@ Version: 1.4.1.0
 Release: 1
 License: GPL
 Group: Applications/Multimedia
-URL: http://chuck.cs.princeton.edu/
-Source0: http://chuck.cs.princeton.edu/release/files/chuck-%{version}.tgz
-# emacs mode from: http://wiki.cs.princeton.edu/index.php/Recent_chuck-mode.el
+URL: https://chuck.cs.princeton.edu/
+Source0: https://chuck.cs.princeton.edu/release/files/chuck-%{version}.tgz
+# emacs mode from: https://wiki.cs.princeton.edu/index.php/Recent_chuck-mode.el
 Source1: chuck-mode.el
 BuildRequires: bison
 BuildRequires: flex

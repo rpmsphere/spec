@@ -5,7 +5,7 @@ Summary: GTK+ Net Dictionary
 Summary(zh_TW): GTK+ 網路辭典
 License: GPL
 Group: Applications/Internet
-Source: http://rt.openfoundry.org/Foundry/Project/Download/Attachment/92913/63831/gnetdict-0.2.5.1.tar.bz2
+Source: https://rt.openfoundry.org/Foundry/Project/Download/Attachment/92913/63831/gnetdict-0.2.5.1.tar.bz2
 Vendor: Hong Jen Yee (PCMan)   <pcman.tw( at )gmail.com>
 Requires: python, pygtk2, gnome-python2-gtkhtml2
 BuildArch: noarch

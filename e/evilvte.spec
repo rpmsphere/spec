@@ -2,10 +2,9 @@ Name:           evilvte
 Version:        0.5.2~pre1
 Release:        5.1
 License:        GPL-2.0
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  vte-devel
 BuildRequires:  pkgconfig
-URL:            http://www.calno.com/evilvte/
+URL:            https://www.calno.com/evilvte/
 Requires:       vte
 Source0:        %{name}-%{version}.tar.gz
 Source1:        evilvte.desktop
@@ -36,7 +35,6 @@ DESTDIR=%{buildroot} make install
 %{__install} -m 644 %{S:1} %{buildroot}%{_datadir}/applications/evilvte.desktop
 
 %files
-%defattr(-,root,root)
 %doc ChangeLog COPYING
 %{_bindir}/evilvte
 %{_bindir}/showvte

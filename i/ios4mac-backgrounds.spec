@@ -4,7 +4,7 @@ Release:        9.1
 Summary:        iOS for Mac backgrounds
 Group:          User Interface/Desktop
 License:        freeware
-Source0:        http://www.jeanmarcdenis.me/goodies/iOS4Mac.zip
+Source0:        https://www.jeanmarcdenis.me/goodies/iOS4Mac.zip
 Source1:        %{name}.xml
 BuildArch:      noarch
 

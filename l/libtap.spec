@@ -2,11 +2,10 @@ Name:           libtap
 Summary:        Write tests that implement the Test Anything Protocol
 Version:        1.01
 Release:        5.1
-URL:            http://jc.ngo.org.uk/trac-bin/trac.cgi/wiki/LibTap
+URL:            https://jc.ngo.org.uk/trac-bin/trac.cgi/wiki/LibTap
 License:        GPL v2 or later
 Group:          Development/Libraries
 Source0:        tap-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 The tap library provides functions for writing test scripts that produce
@@ -41,14 +40,12 @@ rm -rf %buildroot
 %postun -p /sbin/ldconfig
 
 %files 
-%defattr(-,root,root)
 %doc README
 %_mandir/man3/tap.3.gz
 %_libdir/libtap.so.0
 %_libdir/libtap.so.0.0.0
 
 %files devel
-%defattr(-,root,root)
 %_includedir/tap.h
 %_libdir/libtap.so
 

@@ -6,9 +6,9 @@ Release:       6.1
 Summary:       A commandline interface to the X-10 Firecracker device
 License:       GPL
 Group:         Hardware/Other
-URL:           http://www.linuxha.com/bottlerocket/
+URL:           https://www.linuxha.com/bottlerocket/
 Source:        %{name}-current.tar.bz2
-Source1:       README.SUSE
+Source1:       README.SUSE-%name
 Patch:         %{name}-destdir.patch
 
 %description
@@ -28,7 +28,7 @@ Authors:
 %patch -p1
 
 %build
-cp %{SOURCE1} .
+cp %{SOURCE1} README.SUSE
 export CFLAGS="$RPM_OPT_FLAGS"
 ./configure \
         --prefix=/usr \

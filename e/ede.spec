@@ -6,7 +6,7 @@ Version: 	2.0
 Release: 	14.9
 Source: 	%{name}-%{version}.tar.gz
 Summary:	Core programs for the Equinox Desktop Environment
-URL: 		http://ede.sourceforge.net/
+URL: 		https://ede.sourceforge.net/
 License: 	GPL
 Group: 		Graphical desktop/Other
 BuildRequires:  fltk-devel, automake

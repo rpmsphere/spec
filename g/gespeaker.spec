@@ -4,7 +4,7 @@ Version: 0.8.6
 Release: 1
 Group: sound
 License: Free Software
-URL: http://www.muflone.com/gespeaker/
+URL: https://www.muflone.com/gespeaker/
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: desktop-file-utils

@@ -5,8 +5,8 @@ Name:          libphat
 Version:       0.4.1
 Release:       22
 License:       GPLv2+
-URL:           http://phat.berlios.de/
-Source0:       http://download.berlios.de/%{_name}/%{_name}-%{version}.tar.gz
+URL:           https://phat.berlios.de/
+Source0:       https://download.berlios.de/%{_name}/%{_name}-%{version}.tar.gz
 Patch0:        phat-unused-but-set-variable.patch
 Patch1:        phat-fix-fsf-address.patch
 Patch2:        phat-gdk-unref.patch
@@ -16,7 +16,7 @@ BuildRequires: libgnomecanvas-devel
 BuildRequires: chrpath
 BuildRequires: /usr/bin/gtkdocize gcc-c++
 Group: System/Libraries
-Source44: import.info
+#Source44: import.info
 
 %description
 PHAT is a collection of GTK+ widgets geared toward pro-audio apps. The

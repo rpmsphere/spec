@@ -6,10 +6,10 @@ Release: 12.1
 Summary: Switch GTK themes on the fly
 License: GPL
 Group: Graphical desktop/GNOME
-URL: http://www.muhri.net/nav.php3?node=gts
+URL: https://www.muhri.net/nav.php3?node=gts
 Source0: %name-%version.tar.gz
 Source1: %name.desktop
-Source2: http://www.muhri.net/muhri-icon.png
+Source2: https://www.muhri.net/muhri-icon.png
 Patch: gtk-theme-switch-2.0.0_rc2-gtk-2.4_fix.patch
 BuildRequires: gtk2-devel
 

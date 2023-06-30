@@ -5,7 +5,7 @@ Version:        0.7.3
 Release:        1
 Summary:        A visual application launcher for Gnome
 License:        MIT
-URL:            http://%{name}.simonschneegans.de/
+URL:            https://%{name}.simonschneegans.de/
 Source0:        https://codeload.github.com/Schneegans/Gnome-Pie/tar.gz/v%{version}#/Gnome-Pie-%{version}.tar.gz
 BuildRequires:  vala-devel
 BuildRequires:  bamf-devel

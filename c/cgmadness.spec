@@ -6,7 +6,7 @@ Version:		1.2.2
 Release:		1
 License:		GPL
 Group:			Amusements/Games/3D/Other
-URL:			http://cgmadness.sourceforge.net/
+URL:			https://cgmadness.sourceforge.net/
 Source:			%{name}-%{version}-src.tar.bz2
 Source1:		%{name}.png
 BuildRequires:	gcc-c++

@@ -5,7 +5,7 @@ Group:          Amusements/Toys/Clocks
 Version:        2.0.12
 Release:        596.1
 Summary:        AfterStep digital clock
-URL:            http://www.tigr.net/afterstep/
+URL:            https://www.tigr.net/afterstep/
 Source:         asclock-%{version}.tar.bz2
 Patch:          asclock-gcc4.diff
 

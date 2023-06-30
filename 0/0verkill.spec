@@ -4,7 +4,7 @@ Release:        1
 License:        GPLv2
 BuildRequires:  libXpm-devel
 Group:          Amusements/Games/Action/Shoot
-URL:		http://artax.karlin.mff.cuni.cz/~brain/0verkill
+URL:		https://artax.karlin.mff.cuni.cz/~brain/0verkill
 Summary:        Bloody hell in ASCII art
 Source:         %{name}-0.16.tar.bz2
 Source1:        %{name}.desktop

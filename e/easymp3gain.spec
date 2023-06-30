@@ -4,8 +4,8 @@ Release:	16.1
 License:	GPLv2
 Summary:	Graphical user interface for MP3Gain, AACGain and VorbisGain (GTK2)
 Group:		Sound/Utilities
-URL:		http://easymp3gain.sourceforge.net
-Source0:	http://download.sourceforge.net/%{name}/%{name}-%{version}.src.tar.gz
+URL:		https://easymp3gain.sourceforge.net
+Source0:	https://download.sourceforge.net/%{name}/%{name}-%{version}.src.tar.gz
 Patch1:		easymp3gain-0.5.0-desktop.patch
 Patch3:		fix_missing_LazarusDir.diff
 Patch4:		fix_missing_overload_on_AddTask.diff

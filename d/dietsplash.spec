@@ -4,9 +4,8 @@ Version:	0.3
 Release:	7.1
 License: 	GPLv3
 Group: 		Applications/System
-Source:		http://git.profusion.mobi/cgit.cgi/lucas/dietsplash/snapshot/%{name}-%{version}.tar.bz2
-URL:		http://git.profusion.mobi/cgit.cgi/lucas/dietsplash/
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+Source:		https://git.profusion.mobi/cgit.cgi/lucas/dietsplash/snapshot/%{name}-%{version}.tar.bz2
+URL:		https://git.profusion.mobi/cgit.cgi/lucas/dietsplash/
 
 %description
 Simple bootsplash that aims to adhere to the KISS philosophy. It's possible to
@@ -36,7 +35,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc COPYING README
 /bin/%{name}
 %{_bindir}/%{name}ctl

@@ -6,10 +6,10 @@ Version: 0.3.3
 Release: 24.1
 License: CC-BY-NC-SA
 Group: User Interface/Desktops
-Source0: http://sites.google.com/site/conceptgirls/fa-bu-yu-xia-zai/gnome-theme/概念少女GnomeTheme_Mark%{version}.tar.gz
+Source0: https://sites.google.com/site/conceptgirls/fa-bu-yu-xia-zai/gnome-theme/概念少女GnomeTheme_Mark%{version}.tar.gz
 Source1: https://sites.google.com/site/conceptgirls/_/rsrc/1287296769457/xi-tong-zhuang/Apartment_1.jpg
 Source2: %{theme_name}-index.theme
-URL: http://sites.google.com/site/conceptgirls/
+URL: https://sites.google.com/site/conceptgirls/
 BuildArch: noarch
 Requires: tux-cursor-theme
 Requires: industrial-gnome-theme

@@ -4,7 +4,7 @@ Version: 1.1
 Release: 3.1
 License: GPL
 Group: Emulator
-URL: http://code.google.com/p/altair-rfp
+URL: https://code.google.com/p/altair-rfp
 Source: %{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 
@@ -25,7 +25,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -a images/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 %files
-%defattr(-,root,root)
 %doc COPYING
 %{_bindir}/%{name}
 %{_datadir}/%{name}

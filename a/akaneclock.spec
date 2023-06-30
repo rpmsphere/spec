@@ -6,8 +6,8 @@ Version: 0.31
 Release: 1
 Group: Amusements/Games
 License: free
-URL: http://rosegray.sakura.ne.jp/software.html#AkaneTokei
-Source0: http://rosegray.sakura.ne.jp/%{name}-%{version}.tar.gz
+URL: https://rosegray.sakura.ne.jp/software.html#AkaneTokei
+Source0: https://rosegray.sakura.ne.jp/%{name}-%{version}.tar.gz
 BuildRequires: libXaw-devel libXmu-devel libXt-devel libXext-devel
 
 %description

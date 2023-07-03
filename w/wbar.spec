@@ -2,10 +2,10 @@ Name: 		wbar
 Version: 	2.3.4
 Release: 	1
 Summary:	Quick Launch Bar
-Source0:	http://wbar.googlecode.com/files/%{name}-%{version}.tgz
+Source0:	https://wbar.googlecode.com/files/%{name}-%{version}.tgz
 Source1:        %{name}-2.3.4.zh_TW.po
 Source2:        %{name}.cfg
-URL:		http://code.google.com/p/wbar/
+URL:		https://code.google.com/p/wbar/
 Group:		User Interface/Desktops
 License:	GPL
 BuildRequires: 	libX11-devel

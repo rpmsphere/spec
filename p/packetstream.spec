@@ -5,7 +5,7 @@ Release: 14.1
 License: GPL
 Group: System/Libraries
 Source: packetstream.tar.gz
-URL: http://nullkey.ath.cx/packetstream/html/
+URL: https://nullkey.ath.cx/packetstream/html/
 BuildRequires: cmake gcc-c++
 
 %description

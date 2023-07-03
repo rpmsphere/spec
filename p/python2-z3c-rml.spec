@@ -3,8 +3,8 @@ Version:       0.9.1
 Release:       6.1
 Summary:       An alternative implementation of RML
 Group:         System/Libraries/Python
-URL:           http://pypi.python.org/pypi/z3c.rml
-Source:        http://pypi.python.org/packages/source/z/z3c.rml/z3c.rml-%{version}.tar.gz
+URL:           https://pypi.python.org/pypi/z3c.rml
+Source:        https://pypi.python.org/packages/source/z/z3c.rml/z3c.rml-%{version}.tar.gz
 License:       Zope Public License
 BuildRequires: python2-setuptools
 BuildRequires:  python2

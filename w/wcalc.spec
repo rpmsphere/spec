@@ -6,7 +6,7 @@ Version: 	1.1
 Release: 	3.1
 License: 	GPL
 Group:          Productivity/Scientific/Electronics
-URL: 		http://sourceforge.net/projects/wcalc/
+URL: 		https://sourceforge.net/projects/wcalc/
 Source0: 	%{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel
 BuildRequires:  gtk2-devel >= 2.4
@@ -26,8 +26,6 @@ Requires:     	gtk2-devel
 Summary:      	Analyses and synthesis of transmission lines
 License:      	GPL
 Group:		Development/Libraries/C and C++
-Packager:	Werner Hoch <werner.ho@gmx.de>
-Autoreqprov:	on
 
 %description devel
 Development files for wcalc.

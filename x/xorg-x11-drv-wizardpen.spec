@@ -5,10 +5,9 @@ URL:            https://launchpad.net/wizardpen
 Version:        0.8.1
 Release:        6.1
 License:        GPLv2+
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Group:          System/X11/Servers
 Summary:        Linux/HAL/udev/X11 driver for most non-Wacom graphics pads
-Source:         http://launchpad.net/wizardpen/trunk/0.8/+download/xorg-input-wizardpen-%{version}.tar.bz2
+Source:         https://launchpad.net/wizardpen/trunk/0.8/+download/xorg-input-wizardpen-%{version}.tar.bz2
 # pbleser: conditionally use xf86usleep or usleep, depending on XOrg version:
 Patch1:         x11-input-wizardpen-xf86usleep.patch
 # pbleser: fix missing include for close() and read()
@@ -53,7 +52,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %__rm -rf $RPM_BUILD_ROOT
 
 %files 
-%defattr(-,root,root)
 %doc COPYING README
 %config(noreplace) %{_sysconfdir}/udev/rules.d/*-%{name}.rules
 %config(noreplace) %{_sysconfdir}/X11/xorg.conf.d/*-wizardpen.conf

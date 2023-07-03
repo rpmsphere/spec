@@ -6,8 +6,8 @@ Release:        4.1
 Summary:        A compiler for finite element variational forms
 Group:          Applications/Engineering
 License:        GPLv3+
-URL:            http://www.fenicsproject.org
-Source0:        http://launchpad.net/%{srcname}/trunk/%{version}/+download/%{srcname}-%{version}.tar.gz
+URL:            https://www.fenicsproject.org
+Source0:        https://launchpad.net/%{srcname}/trunk/%{version}/+download/%{srcname}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  python2-setuptools

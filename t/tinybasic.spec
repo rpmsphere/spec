@@ -4,9 +4,9 @@ Version: 2006.1
 Release: 3.1
 License: CC0
 Group: Development/Language
-URL: http://www.ittybittycomputers.com/IttyBitty/TinyBasic/
-Source0: http://www.ittybittycomputers.com/IttyBitty/TinyBasic/TinyBasic.c
-Source1: http://www.ittybittycomputers.com/IttyBitty/TinyBasic/TBuserMan.txt
+URL: https://www.ittybittycomputers.com/IttyBitty/TinyBasic/
+Source0: https://www.ittybittycomputers.com/IttyBitty/TinyBasic/TinyBasic.c
+Source1: https://www.ittybittycomputers.com/IttyBitty/TinyBasic/TBuserMan.txt
 
 %description
 In 1976 at the HomeBrew Computer Club (HBCC), there was a lot of whining about
@@ -30,7 +30,6 @@ gcc %{optflags} TinyBasic.c -o %{name}
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %files
-%defattr(-,root,root)
 %doc TBuserMan.txt
 %{_bindir}/%{name}
 

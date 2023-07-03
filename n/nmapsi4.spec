@@ -3,8 +3,8 @@ Version:       0.4.1
 Release:       4.1
 Summary:       Qt4 nmap interface
 Group:         Graphical Desktop/Applications/Networking
-URL:           http://www.nmapsi4.org/
-Source:        http://nmapsi4.googlecode.com/files/nmapsi4-%{version}.tar.bz2
+URL:           https://www.nmapsi4.org/
+Source:        https://nmapsi4.googlecode.com/files/nmapsi4-%{version}.tar.bz2
 License:       GPL
 BuildRequires: libpng-devel
 BuildRequires: gcc-c++

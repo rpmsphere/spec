@@ -3,9 +3,9 @@ Version:			2.42
 %define pkg_version 242
 Release:			13.1
 Summary:			Ploticus Data Display Engine
-Source:			http://prdownloads.sourceforge.net/ploticus/%{name}%{pkg_version}_src.tar.gz
+Source:			https://prdownloads.sourceforge.net/ploticus/%{name}%{pkg_version}_src.tar.gz
 Patch0:			ploticus242.patch
-URL:				http://ploticus.sourceforge.net
+URL:				https://ploticus.sourceforge.net
 Group:			Productivity/Graphics/Visualization/Graph
 License:			GNU General Public License (GPL)
 BuildRequires:	libpng-devel

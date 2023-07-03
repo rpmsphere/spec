@@ -5,8 +5,8 @@ Version:	0.6.1
 Release:	1
 License:	GPL v2
 Group:		Applications/System
-Source0:	http://dl.sourceforge.net/smbnetfs/%{name}-%{version}.tar.bz2
-URL:		http://sourceforge.net/projects/smbnetfs/
+Source0:	https://dl.sourceforge.net/smbnetfs/%{name}-%{version}.tar.bz2
+URL:		https://sourceforge.net/projects/smbnetfs/
 BuildRequires:	fuse-devel >= 2.5, samba-common, pkgconfig, libsmbclient-devel
 Requires:	fuse, samba-client
 

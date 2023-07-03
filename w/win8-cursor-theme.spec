@@ -6,8 +6,8 @@ Version:        1.01
 Release:        4.1
 License:        GPL
 Group:          User Interface/Desktops
-URL:            http://gnome-look.org/content/show.php/Windows+8+cursors?content=155025
-Source0:        http://gnome-look.org/CONTENT/content-files/155025-win8.tar.gz
+URL:            https://gnome-look.org/content/show.php/Windows+8+cursors?content=155025
+Source0:        https://gnome-look.org/CONTENT/content-files/155025-win8.tar.gz
 BuildArch:      noarch
 
 %description

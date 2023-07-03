@@ -2,7 +2,7 @@ Summary: An enhanced calculator for X11
 Name: ycalc
 Version: 1.09.1
 Release: 4.1
-Source:  http://www.sourcefiles.org/Productivity_Tools/Calculators/%{name}-%{version}.tar.gz
+Source:  https://www.sourcefiles.org/Productivity_Tools/Calculators/%{name}-%{version}.tar.gz
 License: GPL
 Group: X11/Utilities
 BuildRequires: libX11-devel

@@ -5,8 +5,8 @@ Release:	6.1
 Summary:	Applet for controlling audio volume
 License:	GPLv3
 Group:		Sound
-URL:		http://code.google.com/p/volti/
-Source0:	http://code.google.com/p/volti/%{name}-%{version}.tar.xz
+URL:		https://code.google.com/p/volti/
+Source0:	https://code.google.com/p/volti/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	python2-devel
 BuildRequires:  desktop-file-utils

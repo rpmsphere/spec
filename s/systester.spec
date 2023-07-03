@@ -6,8 +6,8 @@ Release: 5.1
 Summary: An open source clone of SuperPI	
 Group: Applications/System
 License: GPLv2	
-URL: http://systester.sourceforge.net		
-Source0:  http://voxel.dl.sourceforge.net/project/systester/systester/1.5.0/systester-1.5.1.tar.gz
+URL: https://systester.sourceforge.net		
+Source0:  https://voxel.dl.sourceforge.net/project/systester/systester/1.5.0/systester-1.5.1.tar.gz
 BuildRequires: qt >= 4.5.3
 BuildRequires: qt-devel
 BuildRequires: gmp >= 4.2.1

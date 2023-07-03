@@ -6,9 +6,9 @@ Version: 0.9.4
 Release: 7.1
 Summary: true 3-tier desktop application framework
 License: BSD like
-Url: http://dabodev.com/
+Url: https://dabodev.com/
 Group: Development/Python
-Source: http://dabodev.com/grabit/dabo/dabo-%{version}-mac-nix.tar.gz
+Source: https://dabodev.com/grabit/dabo/dabo-%{version}-mac-nix.tar.gz
 BuildArch: noarch
 BuildRequires: python
 BuildRequires: python-setuptools

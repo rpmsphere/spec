@@ -4,7 +4,7 @@ Version:        0.9.906
 Release:        5.1
 License:        MIT
 Group:          System/X11/Servers
-URL:            http://www.lcdinfo.com
+URL:            https://www.lcdinfo.com
 Source0:        xf86-video-usbd480-%{version}.tar.bz2
 BuildRequires:  libusb1-devel xorg-x11-server-devel
 #BuildRequires:  clang
@@ -12,7 +12,7 @@ BuildRequires:  xorg-x11-server-source
 
 %description
 This package contains a libusb based X driver for
-Henri Skippari's USBD480 display (http://www.lcdinfo.com).
+Henri Skippari's USBD480 display (https://www.lcdinfo.com).
 
 %prep
 %setup -q -n xf86-video-usbd480-%version

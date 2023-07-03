@@ -6,10 +6,9 @@ Source1: %{name}.png
 Source2: %{name}.desktop
 License: GNU General Public License
 Group: Amusements/Games/Action/Arcade
-URL: http://www.interq.or.jp/libra/oohara/tenmado/
+URL: https://www.interq.or.jp/libra/oohara/tenmado/
 Summary: Hard-core shoot 'em up game in blue-or-red world
 BuildRequires:  SDL_image-devel, libXpm-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
 tenmado is a vertically scrolling, late 1990s style (that is, a massive number
@@ -40,7 +39,6 @@ mkdir -p ${RPM_BUILD_ROOT}%{_datadir}/applications
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/games/%{name}

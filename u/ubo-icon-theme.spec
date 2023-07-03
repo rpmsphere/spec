@@ -6,8 +6,8 @@ Version: 0.1alpha
 Release: 11.1
 License: Artistic 2.0
 Group: User Interface/Desktops
-URL: http://pen-art.ru/icons.html
-Source0: http://pen-art.ru/downloads/icons/ubo-icons-0.1alpha.tar.gz
+URL: https://pen-art.ru/icons.html
+Source0: https://pen-art.ru/downloads/icons/ubo-icons-0.1alpha.tar.gz
 Source1: ubo-home-1920x1200.png
 BuildArch: noarch
 

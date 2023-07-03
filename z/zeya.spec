@@ -4,7 +4,7 @@ Release:        1
 Summary:	A web music server
 Group:          Applications/Multimedia
 License:	GPLv3
-URL:            http://web.psung.name/zeya/
+URL:            https://web.psung.name/zeya/
 Source0:        %{name}-%{version}.tar.gz
 BuildArch:	noarch
 Requires:	python-tag, mpg321, flac, vorbis-tools

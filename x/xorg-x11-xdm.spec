@@ -7,7 +7,7 @@ Release: 1
 # NOTE: Remove Epoch line if/when the package ever gets renamed.
 Epoch: 1
 License: MIT
-URL: http://www.x.org
+URL: https://www.x.org
 Source0: ftp://ftp.x.org/pub/individual/app/xdm-%{version}.tar.bz2
 Source1: Xsetup_0
 Source10: xdm.init

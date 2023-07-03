@@ -6,7 +6,7 @@ Version: 2.7.8
 Release: 26.1
 Group: Development/Libraries
 License: GPLv3+
-URL: http://orange.biolab.si/
+URL: https://orange.biolab.si/
 Source0: https://pypi.python.org/packages/source/O/Orange/Orange-%{version}.zip
 BuildRequires: python2-devel
 BuildRequires: python2-setuptools

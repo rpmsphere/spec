@@ -4,7 +4,7 @@ Version: 0.4.1
 Release: 10.1
 Group: Amusements/Games
 License: opensource
-URL: http://www.njsoft.iz.rs/payslots/en/
+URL: https://www.njsoft.iz.rs/payslots/en/
 Source0: %{name}.tar.gz
 BuildArch: noarch
 

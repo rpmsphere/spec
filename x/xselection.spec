@@ -1,5 +1,5 @@
 Name:           xselection
-URL:            http://sunsite.mff.cuni.cz/MIRRORS/ftp.xfree86.org/pub/mirror/X.Org/R5contrib/
+URL:            https://sunsite.mff.cuni.cz/MIRRORS/ftp.xfree86.org/pub/mirror/X.Org/R5contrib/
 BuildRequires:  libX11-devel, libXext-devel, imake
 License:        MIT
 Group:          System/X11/Utilities

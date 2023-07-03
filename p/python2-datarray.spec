@@ -6,7 +6,7 @@ Release:        5.1
 Summary:        Numpy arrays with named axes
 License:        BSD
 Group:          Development/Libraries/Python
-URL:            http://github.com/fperez/datarray
+URL:            https://github.com/fperez/datarray
 Source0:        %{pyname}-151.tar.bz2
 BuildArch:      noarch
 BuildRequires:  python2

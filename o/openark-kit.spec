@@ -9,7 +9,7 @@ License:        BSD
 BuildArch:      noarch
 Group:          Productivity/Databases/Tools
 Summary:        Common utilities for MySQL
-URL:            http://code.openark.org/forge/%{name}
+URL:            https://code.openark.org/forge/%{name}
 Requires:       MySQL-python
 
 %description
@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 - Rebuilt for Fedora
 * Wed Dec 15 2010 lenz@grimmer.com
 - Update to version 170 (new tools, new functionality), see
-  http://code.openark.org/blog/mysql/openark-kit-rev-170-new-tools-new-functionality
+  https://code.openark.org/blog/mysql/openark-kit-rev-170-new-tools-new-functionality
 - Updated socket path patch file
 * Mon Apr 12 2010 lenz@grimmer.com
 - Update to version 111

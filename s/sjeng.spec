@@ -6,8 +6,8 @@ Release:        19.1
 Summary:        Chess program that plays many variants
 License:        GPLv2
 Group:          Games/Boards
-URL:		http://sjeng.org/indexold.html
-Source0:	http://prdownloads.sourceforge.net/sjeng/%{pkgname}-%{version}.tar.bz2
+URL:		https://sjeng.org/indexold.html
+Source0:	https://prdownloads.sourceforge.net/sjeng/%{pkgname}-%{version}.tar.bz2
 Source1:	sjeng.6.bz2
 Source2:	sjeng-README.bz2
 Patch0:		sjeng-11.2-cleanup.patch

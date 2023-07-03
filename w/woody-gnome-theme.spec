@@ -6,10 +6,10 @@ Version: 20091104
 Release: 26.1
 License: GPL
 Group: User Interface/Desktops
-Source0: http://www.deviantart.com/download/140869176/woody_by_nale12.zip
+Source0: https://www.deviantart.com/download/140869176/woody_by_nale12.zip
 Source1: %{theme_name}-index.theme
 Source2: motionwood3_by_neodesktop.jpg
-URL: http://nale12.deviantart.com/art/Woody-140869176
+URL: https://nale12.deviantart.com/art/Woody-140869176
 BuildArch: noarch
 Requires: britanzan-icon-theme
 

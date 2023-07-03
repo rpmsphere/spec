@@ -4,7 +4,7 @@ Version: 2.1.5a
 Release: 1
 Group: Applications/Editors
 License: GPLv3
-URL: http://uberwriter.wolfvollprecht.de/
+URL: https://uberwriter.wolfvollprecht.de/
 Source0: https://launchpad.net/uberwriter/trunk/12.11/+download/%{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: python3-devel, python3-distutils-extra, intltool

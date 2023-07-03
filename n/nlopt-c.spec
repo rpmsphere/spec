@@ -8,8 +8,8 @@ Release:        12.1
 Summary:        A library for nonlinear optimization
 License:        LGPL-2.0
 Group:          Development/Libraries/C and C++
-URL:            http://ab-initio.mit.edu/wiki/index.php/NLopt
-Source0:        http://ab-initio.mit.edu/%{_name}/%{_name}-%{version}.tar.gz
+URL:            https://ab-initio.mit.edu/wiki/index.php/NLopt
+Source0:        https://ab-initio.mit.edu/%{_name}/%{_name}-%{version}.tar.gz
 #BuildRequires:  gcc-c++
 BuildRequires:  hdf5-devel
 BuildRequires:  fltk, octave-devel, java-1.8.0-openjdk-headless, lua

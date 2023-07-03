@@ -6,8 +6,8 @@ Release:	1
 Summary:	The skarnet.org development library
 License:	BSD
 Group:		Development/Other
-URL:		http://www.skarnet.org/software/skalibs/
-Source0:	http://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
+URL:		https://www.skarnet.org/software/skalibs/
+Source0:	https://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
 
 %description
 skalibs is a package centralizing the public-domain C

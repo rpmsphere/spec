@@ -15,9 +15,9 @@ Requires:       blueglass3d-cursor-theme
 Requires:       shimmer-backgrounds
 
 %description
-Zuki Blues GTK by lassekongo83 from http://lassekongo83.deviantart.com/art/Zuki-Blues-175190463
-Zuki Blues openbox by nale dany from http://box-look.org/content/show.php/Zuki+Blues?content=128931
-Zuki Blues Metacity by na12 from http://gnome-look.org/content/show.php/Zuki%20Blues?content=129575
+Zuki Blues GTK by lassekongo83 from https://lassekongo83.deviantart.com/art/Zuki-Blues-175190463
+Zuki Blues openbox by nale dany from https://box-look.org/content/show.php/Zuki+Blues?content=128931
+Zuki Blues Metacity by na12 from https://gnome-look.org/content/show.php/Zuki%20Blues?content=129575
 
 %prep
 %setup -q -c

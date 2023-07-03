@@ -2,12 +2,11 @@ Name:           ripit
 Summary:        Perl Script to Create .ogg or .mp3 Files from an Audio CD
 Version:        3.9.0
 Release:        6.1
-URL:            http://www.suwald.com/ripit/ripit.html
+URL:            https://www.suwald.com/ripit/ripit.html
 License:        GPL v2 or later
 Group:          Productivity/Multimedia/CD/Grabbers
 Requires:       cdparanoia vorbis-tools perl perl-CDDB_get perl-libwww-perl
-Source:         http://www.suwald.com/ripit/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+Source:         https://www.suwald.com/ripit/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 
 %description
@@ -37,7 +36,6 @@ install -m 644 ripit.1 $RPM_BUILD_ROOT/%{_mandir}/man1/
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc README HISTORY LICENSE
 %doc %{_mandir}/man1/*
 %{_bindir}/ripit

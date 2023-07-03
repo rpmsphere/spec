@@ -4,7 +4,7 @@ Name:		sasm
 Version:	3.12.2
 Release:	1
 Summary:	IDE for assembly languages
-URL:		http://dman95.github.io/SASM/
+URL:		https://dman95.github.io/SASM/
 License:	GPLv3
 Source0:	%{pkgname}-%{version}.tar.gz
 Group:		Development/Other

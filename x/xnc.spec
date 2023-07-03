@@ -8,7 +8,7 @@ Source0: %{name}-%{version}.src.tar.bz2
 Patch0: xnc-gcc44.patch
 Patch1: xnc-5.0.4-str-fmt.patch
 Patch2: xnc-5.0.4-link.patch
-URL: http://www.xnc.dubna.su  
+URL: https://www.xnc.dubna.su  
 Group:  File tools
 BuildRequires: libX11-devel
 BuildRequires: libXext-devel

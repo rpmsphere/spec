@@ -4,8 +4,8 @@ Release:        5.1
 Summary:        A PHP script encryption tool
 Group:          Development/Tools
 License:        BSD
-URL:            http://sourceforge.net/projects/php-screw/
-Source0:        http://sourceforge.net/projects/php-screw/files/%{name}/%{version}/php_screw-%{version}.tar.gz
+URL:            https://sourceforge.net/projects/php-screw/
+Source0:        https://sourceforge.net/projects/php-screw/files/%{name}/%{version}/php_screw-%{version}.tar.gz
 BuildRequires:  php-devel
 BuildRequires:  automake
 Requires:  	php

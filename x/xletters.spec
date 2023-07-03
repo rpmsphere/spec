@@ -4,8 +4,8 @@ Release:	1
 Summary:	A multi-lingual xletters version
 Group:		X11/Games
 License:	GPL
-URL:		http://www.pmmh.espci.fr/~daerr/progs/%{name}
-Source0:	http://www.msc.univ-paris7.fr/~daerr/progs/xletters/%{name}-%{version}.tgz
+URL:		https://www.pmmh.espci.fr/~daerr/progs/%{name}
+Source0:	https://www.msc.univ-paris7.fr/~daerr/progs/xletters/%{name}-%{version}.tgz
 Source1:	%{name}.png
 BuildRequires:	libXaw-devel
 

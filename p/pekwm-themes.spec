@@ -4,7 +4,7 @@ Release:        13.1
 License:        GPL
 Group:          System/GUI/Other
 Requires:       pekwm
-URL:            http://adrinux.wordpress.com/pekwm-themes
+URL:            https://adrinux.wordpress.com/pekwm-themes
 Source:         %{name}-%{version}.tar.bz2
 Summary:        PekWM themes by Adriano
 BuildArch:	    noarch

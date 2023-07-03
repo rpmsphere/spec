@@ -7,7 +7,7 @@ License:	GPL
 Vendor:		Brieuc Roblin <brieuc.roblin@gmail.com>
 Source:		%{name}-%{version}.tar.bz2
 Group:		System/X11/Utilities
-URL:		http://www.pyrotools.org/
+URL:		https://www.pyrotools.org/
 Summary:	A simple battery monitor in the system tray, in Qt
 BuildRequires:	gcc-c++, pkgconfig(QtGui)
 

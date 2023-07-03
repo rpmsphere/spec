@@ -6,7 +6,7 @@ Version:        0.2.2
 Release:        12.1
 License:        GPL v3
 Group:          Amusements/Games/Board/Chess
-URL:            http://ilaripih.mbnet.fi/sloppy/
+URL:            https://ilaripih.mbnet.fi/sloppy/
 Source0:        sloppy-%{version}.tar.bz2
 Source1:	xsloppy
 # startup script derived from script by Oliver Korff

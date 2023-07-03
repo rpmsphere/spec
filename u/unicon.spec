@@ -7,7 +7,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages
 Source0:	https://sourceforge.net/projects/unicon/files/%{name}_%{version}.tar.gz
-URL:		http://unicon.sourceforge.net/
+URL:		https://unicon.sourceforge.net/
 BuildRequires:	libX11-devel libXft-devel
 BuildRequires:  mesa-libGL-devel libjpeg-turbo-devel libvorbis-devel
 

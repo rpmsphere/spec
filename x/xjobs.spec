@@ -1,11 +1,11 @@
 Name:         xjobs
 Summary:      Parallel Execution of Jobs
-URL:          http://www.maier-komor.de/xjobs.html
+URL:          https://www.maier-komor.de/xjobs.html
 Group:        ShellUtils
 License:      GPL
 Version:      20120412
 Release:      7.1
-Source0:      http://www.maier-komor.de/xjobs/xjobs-%{version}.tgz
+Source0:      https://www.maier-komor.de/xjobs/xjobs-%{version}.tgz
 Patch:        xjobs.patch
 
 %description

@@ -5,7 +5,7 @@ Version:        0.1.0
 Release:        25.1
 License:        GPL-3.0
 Summary:        A library on top of gtk to build applications
-URL:            http://launchpad.net/varka
+URL:            https://launchpad.net/varka
 Group:          Development/Libraries/GNOME
 Source:         %{name}_%{version}-0~16.tar.gz
 BuildRequires:  vala

@@ -1,11 +1,11 @@
 Name:         peg-c
 Summary:      Recursive-Descent parser generators for C
-URL:          http://piumarta.com/software/peg/
+URL:          https://piumarta.com/software/peg/
 Group:        Compiler
 License:      MIT
 Version:      0.1.18
 Release:      1
-Source0:      http://piumarta.com/software/peg/peg-%{version}.tar.gz
+Source0:      https://piumarta.com/software/peg/peg-%{version}.tar.gz
 
 %description
 peg(1) and leg(1) are tools for generating recursive-descent

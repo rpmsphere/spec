@@ -3,7 +3,7 @@ Version:	0.64
 Release:	2.1
 License:	GPL
 Group:		System/Configuration/Other
-URL:		http://www.pclinuxos.com/
+URL:		https://www.pclinuxos.com/
 Source:		sleeptimer-%{version}.tar.xz
 Summary:	To shutdown the computer automatically
 Summary(de):	Zum automatischen Herunterfahren des Computers

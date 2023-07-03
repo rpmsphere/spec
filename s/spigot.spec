@@ -4,7 +4,7 @@ Version: 20180306
 Release: 4.1
 Group: math
 License: Free Software
-URL: http://www.chiark.greenend.org.uk/~sgtatham/spigot/
+URL: https://www.chiark.greenend.org.uk/~sgtatham/spigot/
 Source0: https://www.chiark.greenend.org.uk/~sgtatham/spigot/%{name}-%{version}.fe8a7a4.tar.gz
 BuildRequires: gmp-devel
 BuildRequires: ncurses-devel

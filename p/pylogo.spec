@@ -9,7 +9,7 @@ Source0: %{_name}-%{version}.tar.gz
 License: MIT
 Group: Development/Libraries
 BuildArch: noarch
-URL: http://pylogo.org
+URL: https://pylogo.org
 BuildRequires:  python2
 
 %description

@@ -5,7 +5,7 @@ Group: 		Development/Languages
 Version: 	0.3pre
 Release: 	20.1
 License: 	GPL
-URL:		http://xmacro.sourceforge.net/
+URL:		https://xmacro.sourceforge.net/
 Summary: 	Recording and replaying keyboard and mouse events
 Source:		%{name}-pre0.3.tar.bz2
 BuildRequires:	gcc-c++ libX11-devel libXtst-devel

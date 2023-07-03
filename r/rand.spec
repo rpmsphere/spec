@@ -2,12 +2,11 @@ Name:				rand
 Version:			1.9
 Release:			2.1
 Summary:			Pipe to randomize a Stream by Line or Word
-# http://math.missouristate.edu/~erik/files/rand-%{version}.tar.gz
+# https://math.missouristate.edu/~erik/files/rand-%{version}.tar.gz
 Source:			rand-%{version}.tar.bz2
-URL:				http://math.missouristate.edu/~erik/software.php?id=7
+URL:				https://math.missouristate.edu/~erik/software.php?id=7
 Group:			Productivity/File utilities
 License:			GNU General Public License version 2 or later (GPLv2 or later)
-BuildRoot:		%{_tmppath}/build-%{name}-%{version}
 BuildRequires:	gcc make glibc-devel
 BuildRequires:	gettext gettext-devel intltool
 BuildRequires:	autoconf automake libtool
@@ -36,7 +35,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files -f rand.lang
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog COPYING NEWS README TODO
 %{_bindir}/rand
 %doc %{_mandir}/man1/rand.1*

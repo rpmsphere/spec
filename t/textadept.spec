@@ -4,7 +4,7 @@ Name:           textadept
 Version:        11.4
 Release:        1
 Summary:        A ridiculously fast and extensible text editor
-URL:            http://foicica.com/textadept/
+URL:            https://foicica.com/textadept/
 License:        MIT
 Group:          Productivity/Editors/Other
 Source0:        https://github.com/orbitalquark/textadept/archive/refs/tags/%{name}_%{version}.tar.gz#/%{name}-%{name}_%{version}.tar.gz

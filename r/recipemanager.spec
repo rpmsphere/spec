@@ -6,8 +6,8 @@ Release:        4.1
 Summary:        Easily manage your recipes
 Group:          Applications/Productivity
 License:        GPLv3+
-URL:            http://www.recipemanager.org/
-Source0:        http://www.recipemanager.org/files/%{name}-%{_date}.tar.bz2
+URL:            https://www.recipemanager.org/
+Source0:        https://www.recipemanager.org/files/%{name}-%{_date}.tar.bz2
 Requires:	pygtk2, gnome-python2-gconf, gnome-python2-gnomevfs, dbus-python
 Requires:       avahi-ui-tools
 BuildArch:	noarch

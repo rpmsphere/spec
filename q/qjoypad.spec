@@ -4,10 +4,10 @@ Summary:	Emulate keyboard or mouse actions with a joystick
 Name:		qjoypad
 Version:	4.1.0
 Release:	16.1
-Source0:	http://downloads.sourceforge.net/project/qjoypad/qjoypad/%{name}-4.1/%{name}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/project/qjoypad/qjoypad/%{name}-4.1/%{name}-%{version}.tar.gz
 Group:		System/Kernel and hardware
 License:	GPLv2+
-URL:		http://qjoypad.sourceforge.net/
+URL:		https://qjoypad.sourceforge.net/
 BuildRequires:	gcc-c++
 BuildRequires:	qt4-devel
 BuildRequires:	libX11-devel

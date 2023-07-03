@@ -5,8 +5,8 @@ Version:	3.43
 Release:	3.1
 License:	freely distributable
 Group:		Development/Languages
-Source0:	http://www.sourcefiles.org/Programming/Compilers/Procedural/%{name}-%{version}.tgz
-URL:		http://www.sourcefiles.org/Programming/Compilers/Procedural/qb2c-3.43.tgz.shtml
+Source0:	https://www.sourcefiles.org/Programming/Compilers/Procedural/%{name}-%{version}.tgz
+URL:		https://www.sourcefiles.org/Programming/Compilers/Procedural/qb2c-3.43.tgz.shtml
 BuildRequires:	libX11-devel
 
 %description

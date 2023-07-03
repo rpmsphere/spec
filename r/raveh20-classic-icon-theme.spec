@@ -6,7 +6,7 @@ Version: 4
 Release: 3.1
 License: GPL/LGPL
 Group: User Interface/Desktops
-URL: http://gnome-look.org/content/show.php?content=119776
+URL: https://gnome-look.org/content/show.php?content=119776
 Source: RaveH20-4-Classic-GTK-IconTheme.tar.gz
 BuildArch: noarch
 

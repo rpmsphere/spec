@@ -5,7 +5,7 @@ Version: 1.0.12
 Release: 4.1
 Group: Development/Libraries
 License: freeware
-URL: http://www.pymcu.com/moduleOverview.html
+URL: https://www.pymcu.com/moduleOverview.html
 Source0: https://pypi.python.org/packages/source/p/pymcu/pymcu-1.0.12.zip
 BuildRequires: python
 BuildArch: noarch

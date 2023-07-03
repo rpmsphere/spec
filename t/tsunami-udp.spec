@@ -5,7 +5,7 @@ Summary:			 Fast File Transfer Protocol
 Source:			 tsunami-udp-%{version}.tar.bz2
 # remove that test binary from the build, it's the only thing breaking strict aliasing:
 Patch1:			 tsunami-udp-do_not_build_fusereadtest.patch
-URL:				 http://tsunami-udp.sourceforge.net/
+URL:				 https://tsunami-udp.sourceforge.net/
 Group:			 Productivity/Networking/Other
 License:			 GNU General Public License version 2 or later (GPL v2 or later)
 BuildRequires:	 gcc make glibc-devel

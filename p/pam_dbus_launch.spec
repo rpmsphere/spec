@@ -8,7 +8,7 @@ Summary:        PAM module to launch dbus on login
 Version:        0.1
 Release:        1264178.1
 Source:         %{name}.tar.bz2
-URL:            http://code.confuego.org/index.php/p/pamdbuslaunch/
+URL:            https://code.confuego.org/index.php/p/pamdbuslaunch/
 
 %description
 This PAM module launches D-Bus on session start.

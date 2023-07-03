@@ -3,7 +3,7 @@ Version:        1.0.6
 Release:        2
 License:        MIT
 Summary:        Tool for Losslessly Optimizing PNG and JPEG Files
-URL:            http://trimage.org/
+URL:            https://trimage.org/
 Group:          Productivity/Graphics/Other
 Source0:        https://github.com/Kilian/Trimage/archive/%{version}.tar.gz#/Trimage-%{version}.tar.gz
 BuildRequires:  hicolor-icon-theme

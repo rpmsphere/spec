@@ -3,7 +3,7 @@ Name: 		smooth-gtk-themes
 Version: 	0.5.8
 Release: 	3.1
 License:	LGPL
-URL: 		http://sourceforge.net/projects/smooth-engine/
+URL: 		https://sourceforge.net/projects/smooth-engine/
 Source0: 	smooth-themes-%{version}.tar.gz
 Group: 		User Interface/Desktops
 BuildArch: 	noarch

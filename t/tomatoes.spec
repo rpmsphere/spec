@@ -4,9 +4,9 @@ Release:        1
 Summary:        I Have No Tomatoes
 License:        zlib/libpng
 Group:          Amusements/Games
-URL:            http://%{name}.sourceforge.net
-Source0:        http://dl.sourceforge.net/sourceforge/%{name}/%{name}-linux-src-%{version}.tar.bz2
-Source1:        http://dl.sourceforge.net/sourceforge/%{name}/%{name}-linux-1.5.tar.bz2
+URL:            https://%{name}.sourceforge.net
+Source0:        https://dl.sourceforge.net/sourceforge/%{name}/%{name}-linux-src-%{version}.tar.bz2
+Source1:        https://dl.sourceforge.net/sourceforge/%{name}/%{name}-linux-1.5.tar.bz2
 Patch0:         tomatoes-makefile.patch
 Patch1:         tomatoes-configdir.patch
 Patch2:         tomatoes-hiscoredir.patch

@@ -4,8 +4,8 @@ Release:	10.1
 Summary:	Converts man pages to various other formats
 Group:		System Environment/Base
 License:	Artistic
-URL:		http://sourceforge.net/projects/polyglotman
-Source0:	http://easynews.dl.sourceforge.net/sourceforge/polyglotman/%{name}-%{version}.tar.gz
+URL:		https://sourceforge.net/projects/polyglotman
+Source0:	https://easynews.dl.sourceforge.net/sourceforge/polyglotman/%{name}-%{version}.tar.gz
 
 %description
 Parse formatted man pages and man page source from most flavors of UNIX.

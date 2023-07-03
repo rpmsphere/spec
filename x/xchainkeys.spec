@@ -4,8 +4,8 @@ Release: 3.1
 Summary: Create chained key bindings for X11
 License: GPLv3
 Group: System/Configuration/Other
-URL: http://henning-bekel.de/xchainkeys/
-Source0: http://henning-bekel.de/download/xchainkeys/%name-%version.tar.gz
+URL: https://henning-bekel.de/xchainkeys/
+Source0: https://henning-bekel.de/download/xchainkeys/%name-%version.tar.gz
 BuildRequires: libX11-devel
 
 %description

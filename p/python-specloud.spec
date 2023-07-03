@@ -2,7 +2,7 @@
 Name:           python-specloud
 Version:        0.4.4
 Release:        4.1
-URL:            http://github.com/hugobr/specloud
+URL:            https://github.com/hugobr/specloud
 Summary:        Install nosetests and Plugins to Ease BDD Unit Specs
 License:        MIT
 Group:          Development/Languages/Python

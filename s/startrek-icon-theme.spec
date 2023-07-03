@@ -11,8 +11,8 @@ BuildArch: noarch
 
 %description
 Star Trek icon theme.
-http://iconfactory.com/startrek/
-http://www.iconeasy.com/iconset/trek-insignia-icons/
+https://iconfactory.com/startrek/
+https://www.iconeasy.com/iconset/trek-insignia-icons/
 
 %prep
 %setup -q -n %{theme_name}

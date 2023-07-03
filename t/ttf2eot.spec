@@ -1,11 +1,11 @@
 Name:         ttf2eot
 Summary:      TTF to EOT Font Format Conversion Tool
-URL:          http://ttf2eot.googlecode.com/
+URL:          https://ttf2eot.googlecode.com/
 Group:        Typesetting
 License:      GPL
 Version:      0.0.2.2
 Release:      4.1
-Source0:      http://ttf2eot.googlecode.com/files/ttf2eot-0.0.2-2.tar.gz
+Source0:      https://ttf2eot.googlecode.com/files/ttf2eot-0.0.2-2.tar.gz
 Patch:        ttf2eot.patch
 
 %description

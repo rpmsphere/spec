@@ -6,8 +6,8 @@ Release:        3.1
 Summary:        Sets translucency properties
 License:        MIT
 Group:          System/X11
-URL:            http://forchheimer.se/transset-df/
-Source0:        http://forchheimer.se/transset-df/%{name}-%{version}.tar.gz
+URL:            https://forchheimer.se/transset-df/
+Source0:        https://forchheimer.se/transset-df/%{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig
 BuildRequires:  libXrender-devel
 BuildRequires:  libXcomposite-devel

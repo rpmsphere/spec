@@ -2,10 +2,10 @@ Summary:	A GTK+ graphical user interface for managing tasks
 Name:		ptask
 Version:	1.0.0
 Release:	3.1
-URL:		http://wpitchoune.net/blog/ptask/
+URL:		https://wpitchoune.net/blog/ptask/
 License:	GNU General Public License version 2
 Group:		Applications/Productivity
-Source0:	http://wpitchoune.net/ptask/files/%{name}-%{version}.tar.gz
+Source0:	https://wpitchoune.net/ptask/files/%{name}-%{version}.tar.gz
 Requires:	task
 BuildRequires: libX11-devel
 BuildRequires: libXext-devel

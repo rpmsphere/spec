@@ -5,7 +5,7 @@ Summary:        National Palace Meseum calendar backgrounds
 Group:          User Interface/Desktops
 License:        freeware
 Source0:        %{name}-%{version}.zip
-URL:            http://www.npm.gov.tw/zh-TW/Article.aspx?sNo=03001536
+URL:            https://www.npm.gov.tw/zh-TW/Article.aspx?sNo=03001536
 Source1:        %{name}.xml
 Source2:        npm-calendar-default.xml
 BuildArch:      noarch

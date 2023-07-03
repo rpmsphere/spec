@@ -2,12 +2,12 @@
 
 Name:         xplain2sql
 Summary:      XPlain to SQL Converter
-URL:          http://www.berenddeboer.net/xplain2sql/
+URL:          https://www.berenddeboer.net/xplain2sql/
 Group:        Database
 License:      Open Source
 Version:      4.0.1
 Release:      4.1
-Source0:      http://www.berenddeboer.net/xplain2sql/xplain2sql-%{version}-csrc.tar.gz
+Source0:      https://www.berenddeboer.net/xplain2sql/xplain2sql-%{version}-csrc.tar.gz
 
 %description
 Xplain is a beautifully orthogonal database manipulation and query

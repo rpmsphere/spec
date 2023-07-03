@@ -5,7 +5,7 @@ Version:        1.0.dev8477
 Release:        5.1
 Summary:        Engine for matplotlib based on wxPython model
 License:        MIT
-URL:            http://sourceforge.net/projects/matplotlib
+URL:            https://sourceforge.net/projects/matplotlib
 Group:          Development/Libraries/Python
 Source0:        mplsizer-8477.tar.bz2
 BuildArch:      noarch

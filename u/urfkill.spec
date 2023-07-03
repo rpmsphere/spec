@@ -1,7 +1,7 @@
 Name:           urfkill
 Version:        0.5.0
 Release:        1
-URL:            http://github.com/lcp/urfkill
+URL:            https://github.com/lcp/urfkill
 Summary:        A daemon to control radio killswitches
 License:        GPL-2.0+
 Group:          System/Daemons
@@ -41,7 +41,7 @@ Requires:       urfkill-glib = %{version}-%{release}
 %description glib-devel
 Urfkill add-on library to integrate the standard urfkill library with
 the GLib thread abstraction and main loop.
-http://freedesktop.org/wiki/Software/urfkill
+https://freedesktop.org/wiki/Software/urfkill
 
 %prep
 %setup -n %{name}-%{version} -q

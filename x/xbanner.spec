@@ -7,7 +7,7 @@ Group:          Amusements/Toys/Background
 Version:        1.31
 Release:        2089.1
 Summary:        X Window System background writings and images
-URL:            http://www.hijinks.com/~spade/linux/XBanner/
+URL:            https://www.hijinks.com/~spade/linux/XBanner/
 Source:         XBanner%{version}.tar.bz2
 Patch0:         XBanner%{version}.dif
 Patch1:         xbanner-%{version}-gets.patch

@@ -6,8 +6,8 @@ Version: 2.3
 Release: 4.1
 Group: Amusements/Graphics
 License: GPL
-URL: http://hpux.connect.org.uk/hppd/hpux/X11/Demos/%{name}-%{version}/
-Source0: http://hpux.connect.org.uk/ftp/hpux/X11/Demos/%{name}-%{version}/%{name}-%{version}-src-11.00.tar.gz
+URL: https://hpux.connect.org.uk/hppd/hpux/X11/Demos/%{name}-%{version}/
+Source0: https://hpux.connect.org.uk/ftp/hpux/X11/Demos/%{name}-%{version}/%{name}-%{version}-src-11.00.tar.gz
 BuildRequires: imake
 BuildRequires: libX11-devel
 BuildRequires: libXext-devel

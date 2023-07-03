@@ -6,13 +6,13 @@ Release:        3.1
 Summary:        No-Title Slim metacity theme
 Group:          User Interface/Desktops
 License:        GPL
-URL:            http://gnome-look.org/content/show.php/No-Title+Slim?content=123715
+URL:            https://gnome-look.org/content/show.php/No-Title+Slim?content=123715
 Source0:        NoTitleSlim.tar.gz
 BuildArch:      noarch
 
 %description
 Based on No-Title theme by jeansch
-http://gnome-look.org/content/show.php/No-Title?content=93438
+https://gnome-look.org/content/show.php/No-Title?content=93438
 Titlebars are not really useful! Especially on 1280x800 or less screens :)
 
 This theme fits any GTK theme using its colors.

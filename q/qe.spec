@@ -4,10 +4,9 @@ Version: 0.2.0
 Release: 6.1
 License: GPL
 Group: Applications/Editors
-Source: http://ftp.de.debian.org/debian/pool/main/q/qe/%{name}_%{version}.orig.tar.gz
-Patch: http://ftp.de.debian.org/debian/pool/main/q/qe/%{name}_%{version}-4.diff.gz
-URL: http://www.cc.ncu.edu.tw/~center5/product/qe/
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
+Source: https://ftp.de.debian.org/debian/pool/main/q/qe/%{name}_%{version}.orig.tar.gz
+Patch: https://ftp.de.debian.org/debian/pool/main/q/qe/%{name}_%{version}-4.diff.gz
+URL: https://www.cc.ncu.edu.tw/~center5/product/qe/
 BuildRequires: gcc-c++, ncurses
 
 %description
@@ -37,7 +36,6 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
-%defattr(-,root,root)
 %doc COPYING README
 %{_bindir}/*
 %{_datadir}/qe

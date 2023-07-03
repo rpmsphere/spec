@@ -4,7 +4,7 @@ Version: 1.0
 Release: 1
 License: GPLv2+
 Group: Amusements/Games
-URL: http://www.parallelrealities.co.uk/virusKiller.php
+URL: https://www.parallelrealities.co.uk/virusKiller.php
 # No absolute URL since the home page tunnels it through a PHP script
 Source: viruskiller-%{version}-1.tar.gz
 Patch0: viruskiller-1.0-makefile.patch
@@ -76,26 +76,26 @@ desktop-file-install \
 - Rebuild for OSSII.
 * Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.0-7
 - Autorebuild for GCC 4.3
-* Thu Aug 23 2007 Matthias Saou <http://freshrpms.net/> 1.0-6
+* Thu Aug 23 2007 Matthias Saou <https://freshrpms.net/> 1.0-6
 - Rebuild for new BuildID feature.
-* Sun Aug  5 2007 Matthias Saou <http://freshrpms.net/> 1.0-5
+* Sun Aug  5 2007 Matthias Saou <https://freshrpms.net/> 1.0-5
 - Update License field.
 - Remove dist tag, since the package will seldom change.
 - Remove desktop file prefix.
-* Thu Jun 14 2007 Matthias Saou <http://freshrpms.net/> 1.0-4
+* Thu Jun 14 2007 Matthias Saou <https://freshrpms.net/> 1.0-4
 - Move binary and data to "proper" locations by updating patch (#243031).
 - Remove executable bit from all files from the archive, it shouldn't be set.
-* Fri Feb  2 2007 Matthias Saou <http://freshrpms.net/> 1.0-3
+* Fri Feb  2 2007 Matthias Saou <https://freshrpms.net/> 1.0-3
 - Make in-game help display the proper location for the manual.html (#220404).
-* Mon Aug 28 2006 Matthias Saou <http://freshrpms.net/> 1.0-2
+* Mon Aug 28 2006 Matthias Saou <https://freshrpms.net/> 1.0-2
 - FC6 rebuild.
 - Add -lz to LIBS in the makefile patch (no longer in SDL libs?).
-* Mon Mar  6 2006 Matthias Saou <http://freshrpms.net/> 1.0-1
+* Mon Mar  6 2006 Matthias Saou <https://freshrpms.net/> 1.0-1
 - Update to 1.0-1.
 - Update makefile patch.
 - Remove no longer needed zziplib patch.
 - No longer build require zziplib-devel, but zlib-devel instead.
-* Thu Feb  9 2006 Matthias Saou <http://freshrpms.net/> 0.9-6
+* Thu Feb  9 2006 Matthias Saou <https://freshrpms.net/> 0.9-6
 - Rebuild for new gcc/glibc.
 - Remove old desktop file conditionals.
 * Tue May 31 2005 Michael Schwendt <mschwendt[AT]users.sf.net> - 0.9-5
@@ -104,7 +104,7 @@ desktop-file-install \
 - rebuild on all arches
 * Fri Apr  7 2005 Michael Schwendt <mschwendt[AT]users.sf.net>
 - rebuilt
-* Sun Feb 27 2005 Matthias Saou <http://freshrpms.net/> 0.9-2
+* Sun Feb 27 2005 Matthias Saou <https://freshrpms.net/> 0.9-2
 - Fix release tag.
-* Tue Jun  8 2004 Matthias Saou <http://freshrpms.net/> 0.9-1
+* Tue Jun  8 2004 Matthias Saou <https://freshrpms.net/> 0.9-1
 - Initial RPM release.

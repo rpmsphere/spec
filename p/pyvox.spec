@@ -4,8 +4,8 @@ Release:	25.1
 Summary:	A set of software tools for medical image processing
 Group:		Applications/Multimedia
 License:	open source
-URL:		http://www.med.upenn.edu/bbl/pyvox.html
-Source0:	http://www.med.upenn.edu/bbl/assets/user-content/documents/%{name}-%{version}.src.tgz
+URL:		https://www.med.upenn.edu/bbl/pyvox.html
+Source0:	https://www.med.upenn.edu/bbl/assets/user-content/documents/%{name}-%{version}.src.tgz
 BuildRequires:  python2-devel
 BuildRequires:  tk-devel
 

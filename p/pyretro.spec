@@ -5,7 +5,7 @@ License:        GPLv3
 Summary:        A MAME frontend written in pygame
 URL:            https://code.google.com/p/pyretro/
 Group:          Games
-Source0:        http://pyretro.googlecode.com/files/pyRetro_r%{version}.tar.gz
+Source0:        https://pyretro.googlecode.com/files/pyRetro_r%{version}.tar.gz
 Requires:       pygame, mame
 BuildArch:      noarch
 

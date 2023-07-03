@@ -4,7 +4,7 @@ Release:        11.1
 Summary:        The GNU Eiffel Compiler and Libraries
 Group:          Development/Languages
 License:        GPLv2+
-URL:            http://smarteiffel.loria.fr
+URL:            https://smarteiffel.loria.fr
 Source0:        %{name}.tgz
 Source1:        SmartEiffel.serc
 BuildRequires:  libX11-devel

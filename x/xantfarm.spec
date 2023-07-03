@@ -4,7 +4,7 @@ Summary: Animates X11 root window with a simulated ant hill
 Name: xantfarm
 Version: 2014.08.14
 Release: 5.1
-Source: http://www.acme.com/software/xantfarm/xantfarm_14Aug2014.tar.gz
+Source: https://www.acme.com/software/xantfarm/xantfarm_14Aug2014.tar.gz
 URL: https://acme.com/software/xantfarm/
 License: distributable
 Group: X11/Amusements

@@ -4,10 +4,9 @@ Release:        3.1
 Summary:        A utility for grabbing a remote mouse and keyboard
 Group:          User Interface/X Hardware Support
 License:        GPLv2+
-URL:            http://chakie.infa.fi/xremote/index.php3
-Source0:        http://chakie.infa.fi/xremote/xremote-%{version}.tar.gz
+URL:            https://chakie.infa.fi/xremote/index.php3
+Source0:        https://chakie.infa.fi/xremote/xremote-%{version}.tar.gz
 Patch0:         xremote-2.0-gcc43.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  libX11-devel
 BuildRequires:  libXtst-devel
 
@@ -36,7 +35,6 @@ install -pm 0644 xremote.1 $RPM_BUILD_ROOT%{_mandir}/man1
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %doc ChangeLog README
 %{_bindir}/xremote
 %{_mandir}/man1/xremote.*

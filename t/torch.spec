@@ -4,10 +4,10 @@ Release:		5.1
 Summary:		A simple machine-learning library	
 Group:			Engineering
 License:		BSD
-URL:			http://www.torch.ch/
-Source0:		http://www.torch.ch/archives/Torch3src.tgz
-Source1:		http://www.torch.ch/archives/Torch3doc.tgz
-Source44:		import.info
+URL:			https://www.torch.ch/
+Source0:		https://www.torch.ch/archives/Torch3src.tgz
+Source1:		https://www.torch.ch/archives/Torch3doc.tgz
+#Source44:		import.info
 BuildRequires:		gcc-c++
 
 %description

@@ -134,7 +134,7 @@ install -m644 %{SOURCE13} -D $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/48x48/apps
 * Wed Aug 16 2006 Olivier Thauvin <nanardon@mandriva.org>
 + 2006-08-16 03:18:00 (56264)
 Import xcpustate
-* Sun Jan 01 2006 Mandriva Linux Team <http://www.mandrivaexpert.com/> 2.5-21mdk
+* Sun Jan 01 2006 Mandriva Linux Team <https://www.mandrivaexpert.com/> 2.5-21mdk
 - Rebuild
 * Thu Dec 23 2004 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 2.5-20mdk
 - fix buildrequires

@@ -4,8 +4,8 @@ Summary: A simple to use pigeon database
 Version: 2.2.2
 Release: 4.1
 Group: Applications/Databases
-URL: http://www.pigeonplanner.com/
-Source0: http://sourceforge.net/projects/pigeonplanner/files/pigeonplanner/Pigeon%20Planner%20%{version}/%{name}-%{version}.tar.gz
+URL: https://www.pigeonplanner.com/
+Source0: https://sourceforge.net/projects/pigeonplanner/files/pigeonplanner/Pigeon%20Planner%20%{version}/%{name}-%{version}.tar.gz
 License: GPLv3
 BuildArch: noarch
 BuildRequires:  python2

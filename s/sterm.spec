@@ -4,10 +4,9 @@ Version: 0.6
 Release: 9.1
 Group: Applications/Communications
 License: MIT
-URL: http://sterm.sourceforge.net/
-Source0: http://sourceforge.net/projects/sterm/files/%{name}-%{version}.tar.gz
+URL: https://sterm.sourceforge.net/
+Source0: https://sourceforge.net/projects/sterm/files/%{name}-%{version}.tar.gz
 Source1: scroll.h
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: readline-devel, lua-devel
 
 %description

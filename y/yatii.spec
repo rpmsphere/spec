@@ -3,7 +3,7 @@ Version:        2.0.0
 Release:        4.1
 License:        GPLv2+
 Summary:        A GUI for creating TikZ/LaTeX formatted figures
-URL:            http://code.google.com/p/yatii/
+URL:            https://code.google.com/p/yatii/
 Group:          Productivity/Publishing/TeX/Frontends
 Source:         %{name}-%{version}.tar.bz2
 # PATCH-FIX-UPSTREAM yatii-remove-shebang.patch badshah400@gmail.com --Remove unnecessary shebang lines from non-executable files

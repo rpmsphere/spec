@@ -3,7 +3,7 @@ Name: xview
 Version: 3.2p1.4
 Release: 102.1
 Source0: metalab.unc.edu:/pub/Linux/distributions/debian/main/source/x11/xview_3.2p1.4.orig.tar.gz
-Source1: http://home.nyc.rr.com/twopks/olvwm/olvwm4p5.src.tar.gz
+Source1: https://home.nyc.rr.com/twopks/olvwm/olvwm4p5.src.tar.gz
 Source2: xtoolplaces-1.7.1-1.tar.gz
 Source3: Xinitrc.ol
 Source4: openwin
@@ -36,7 +36,7 @@ Source51: mozicon16.xpm
 Source52: xv.xpm
 Source53: host.def
 Source54: openwin.conf
-Patch0: http://ftp.debian.org/debian/pool/main/x/xview/xview_3.2p1.4-24.diff
+Patch0: https://ftp.debian.org/debian/pool/main/x/xview/xview_3.2p1.4-24.diff
 Patch1: olvwm-4.4.patch
 Patch2: xview_xv_error.patch
 Patch3: xview_WM_TRANSIENT.SCC.diff
@@ -47,7 +47,7 @@ Patch7: virtual_c-regexp-fix.patch
 Patch8: xview-sysv-wait-and-signals.patch
 License: Distributable
 Group: X11/Libraries
-URL: http://freshmeat.net/projects/XView
+URL: https://freshmeat.net/projects/XView
 BuildRequires: imake
 BuildRequires: libX11-devel, libXext-devel, libXt-devel
 BuildRequires: libXpm-devel
@@ -76,7 +76,7 @@ a good candidate for old hardware.
 Requires: xview
 Summary: OpenWindows clients.
 Group: X11/Window
-URL: http://freshmeat.net/projects/XView
+URL: https://freshmeat.net/projects/XView
 
 %description clients
 A number of clients and utilties for OpenWindows, including olwm, textedit,
@@ -87,7 +87,7 @@ with support for 24-bit color modes. Now includes olvwm-4.4.
 Requires: xview
 Summary: Header files and static libraries for XView development
 Group: Development/Libraries
-URL: http://freshmeat.net/projects/XView
+URL: https://freshmeat.net/projects/XView
 
 %description devel
 All the files needed to develop applications that, using the XView libraries,
@@ -97,7 +97,7 @@ meet the Open Look interface specifications.
 Requires: xview-devel
 Summary: A number of example programs and tutorials for the XView libraries.
 Group: Development/Libraries
-URL: http://freshmeat.net/projects/XView
+URL: https://freshmeat.net/projects/XView
 
 %description devel-examples
 Sample programs - with source code - that cover the basics of XView

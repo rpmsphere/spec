@@ -4,8 +4,8 @@ Group:        System/Emulators/Other
 Version:      0.21
 Release:      3.1
 Summary:      ARM, ATMega, M32C, and R8C Board Emulator
-Source:       http://sourceforge.net/projects/softgun/files/softgun/%{name}-%{version}/%{name}-%{version}.tgz
-URL:          http://softgun.sourceforge.net/
+Source:       https://sourceforge.net/projects/softgun/files/softgun/%{name}-%{version}/%{name}-%{version}.tgz
+URL:          https://softgun.sourceforge.net/
 BuildRequires: zlib-devel alsa-lib-devel
 
 %description

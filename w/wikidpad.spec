@@ -4,8 +4,8 @@ Version: 2.1
 Release: 7.1
 Group: Applications/Editors
 License: BSD
-URL: http://wikidpad.sourceforge.net/
-Source0: http://nchc.dl.sourceforge.net/project/wikidpad/wikidpad/2.1/2.1_01/WikidPad-2.1_01-src.zip
+URL: https://wikidpad.sourceforge.net/
+Source0: https://nchc.dl.sourceforge.net/project/wikidpad/wikidpad/2.1/2.1_01/WikidPad-2.1_01-src.zip
 Source1: %{name}.png
 BuildArch: noarch
 BuildRequires: python

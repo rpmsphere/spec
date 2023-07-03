@@ -6,7 +6,7 @@ Release: 15
 License: LGPLv2+
 Group: Development/Languages
 Summary: Python bindings for ORBit2
-Source0: http://ftp.gnome.org/pub/GNOME/sources/pyorbit/2.24/%{name}-%{version}.tar.bz2
+Source0: https://ftp.gnome.org/pub/GNOME/sources/pyorbit/2.24/%{name}-%{version}.tar.bz2
 Requires: ORBit2
 Requires: glib2
 Requires: libIDL

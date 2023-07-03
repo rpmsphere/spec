@@ -5,7 +5,7 @@ Release: 	8.1
 License:        GPL
 Group: 		Applications/Multimedia
 Source: 	pitchtune-0.0.4.tar.gz
-URL:		http://ip.bourget.cc:8080/pitchtune
+URL:		https://ip.bourget.cc:8080/pitchtune
 Patch0: 	pitchtune-0.0.4-fc4.patch
 BuildRequires:  libpng-devel
 BuildRequires:  gtk2-devel, alsa-lib-devel

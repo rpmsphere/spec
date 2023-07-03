@@ -4,8 +4,8 @@ Version: 0.6.1
 Release: 2.1
 Group: Applications/Security
 License: GPL
-URL: http://www.secpanel.net
-Source0: http://downloads.sourceforge.net/project/%{name}/%{name}-%{version}.tgz
+URL: https://www.secpanel.net
+Source0: https://downloads.sourceforge.net/project/%{name}/%{name}-%{version}.tgz
 BuildArch: noarch
 
 %description

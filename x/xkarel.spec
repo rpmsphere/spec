@@ -7,7 +7,7 @@ Release: 30.1
 Source: %{name}-%{version}.tar.gz
 License: GPL
 Group: Games/Other
-URL: http://xkarel.sourceforge.net
+URL: https://xkarel.sourceforge.net
 BuildRequires: gcc-c++ fltk-fluid
 BuildRequires: libXinerama-devel libpng-devel libjpeg-devel mesa-libGL-devel mesa-libGLU-devel
 

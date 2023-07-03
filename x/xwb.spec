@@ -4,9 +4,9 @@ Summary: Schlampisoft X-Window Workbench
 Name: xwb
 Version: 3.1
 Release: 6.2
-Source0: http://www.schlampisoft.de/software/download/%{name}-%{version}.tgz
+Source0: https://www.schlampisoft.de/software/download/%{name}-%{version}.tgz
 License: GPL
-URL: http://www.schlampisoft.de/software/index.en.html
+URL: https://www.schlampisoft.de/software/index.en.html
 Group: Development/Tools
 BuildRequires: libX11-devel
 BuildRequires: xview-devel

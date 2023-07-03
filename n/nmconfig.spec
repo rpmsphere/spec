@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           nmconfig
-URL:            http://cmpd2.phys.msu.ru/~arseniy/nmconfig/
+URL:            https://cmpd2.phys.msu.ru/~arseniy/nmconfig/
 Version:        0.2.4
 Release:        3.1
 License:        GPL v2 or later

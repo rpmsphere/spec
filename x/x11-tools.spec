@@ -18,7 +18,6 @@ Source34:       sysconfig.language-%{name}
 Source35:       nvidia-pre-install
 Source36:       nvidia-post-uninstall
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Some useful tools for the X Window System.
@@ -55,7 +54,6 @@ install -m 755 $RPM_SOURCE_DIR/nvidia-post-uninstall \
   $RPM_BUILD_ROOT/usr/lib/nvidia/post-uninstall
 
 %files
-%defattr(-, root, root)
 %dir /etc/X11/xim.d
 %dir /usr/lib/nvidia
 %{_bindir}/xf86debug
@@ -282,7 +280,7 @@ install -m 755 $RPM_SOURCE_DIR/nvidia-post-uninstall \
   * NVIDIA_kernel-1.0-6629-1175225.diff
   * NVIDIA_kernel-1.0-6629-1182399.diff
   * NVIDIA_kernel-1.0-6629-1189413.diff
-  (german description on http://www.holarse.de/?news=308)
+  (german description on https://www.holarse.de/?news=308)
 * Sat Nov 20 2004 sndirsch@suse.de
 - NVIDIA_kernel-1.0-6629-1161283.diff.txt (Christian Zander@nVIDIA)
   * fixes a memory allocation issue

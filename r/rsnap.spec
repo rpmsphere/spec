@@ -5,8 +5,7 @@ Release: 3.1
 Group: Productivity/Archiving/Backup
 License: GPL
 Source: %{name}-%{version}.tar.gz
-URL: http://web.chad.org/projects/rsnap/
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
+URL: https://web.chad.org/projects/rsnap/
 BuildArch: noarch
 
 %description
@@ -18,8 +17,7 @@ a thin wrapper around rsync which adds snapshot rotating and creation, the
 changes you need to make to your existing backup script are minimal.
 
 %prep
-
-%setup
+%setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -30,7 +28,6 @@ install -m 755 %{name} $RPM_BUILD_ROOT/%{_bindir}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
 %doc LICENSE
 %{_bindir}/%{name}
 

@@ -1,6 +1,6 @@
 Name:         mp3info
 Summary:      MP3 Tag Utility
-URL:          http://www.ibiblio.org/mp3info/
+URL:          https://www.ibiblio.org/mp3info/
 Group:        Audio
 License:      GPL
 Version:      0.8.5a

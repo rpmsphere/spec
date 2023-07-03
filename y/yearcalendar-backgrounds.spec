@@ -9,9 +9,9 @@ Source1:        %{name}.xml
 BuildArch:      noarch
 
 %description
-http://www.publicdomainpictures.net/download-picture.php?adresar=190000&soubor=2017-calendar-with-dandelion.jpg
+https://www.publicdomainpictures.net/download-picture.php?adresar=190000&soubor=2017-calendar-with-dandelion.jpg
 https://www.shinetalks.com/wp-content/uploads/2016/12/happy-new-year-2017-calendar-1.jpg
-http://www.2017newyearseve.com/wp-content/uploads/2016/08/2017-happy-new-year-calendar-b.jpg
+https://www.2017newyearseve.com/wp-content/uploads/2016/08/2017-happy-new-year-calendar-b.jpg
 
 %prep
 %setup -q -c

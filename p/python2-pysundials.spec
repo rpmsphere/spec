@@ -5,7 +5,7 @@ Name:           python2-%{modname}
 Version:        2.5.0a1
 Release:        9.1
 Summary:        A python module providing bindings for the SUNDIALS suite of solvers
-URL:            http://pysundials.sourceforge.net/
+URL:            https://pysundials.sourceforge.net/
 License:        BSD
 Group:          Development/Libraries/Python
 Source:         %{modname}-2.5.0-a1.tar.gz

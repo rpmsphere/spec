@@ -6,8 +6,8 @@ Release:        2.1
 Summary:        Laptop power measuring tool
 License:        GPL-2.0
 Group:          System/Monitoring
-URL:            http://kernel.ubuntu.com/~cking/powerstat/
-Source:         http://kernel.ubuntu.com/~cking/tarballs/%{name}/%{name}-%{version}.tar.gz
+URL:            https://kernel.ubuntu.com/~cking/powerstat/
+Source:         https://kernel.ubuntu.com/~cking/tarballs/%{name}/%{name}-%{version}.tar.gz
 
 %description
 Powerstat measures the power consumption of a mobile PC that has a battery

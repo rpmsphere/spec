@@ -4,8 +4,8 @@ Release:        15.1
 Summary:        Skiing simulation with curses interface in python
 License:        BSD-3-Clause
 Group:          Amusements/Games/Action/Race
-URL:            http://catb.org/~esr/ski/
-Source0:        http://www.catb.org/~esr/ski/ski-%{version}.tar.gz
+URL:            https://catb.org/~esr/ski/
+Source0:        https://www.catb.org/~esr/ski/ski-%{version}.tar.gz
 # PATCH-FIX-UPSTREAM - ski-6.8-ski.desktop.patch -- Adjust to Desktop Menu Specification
 Patch0:         ski-6.9-ski.desktop.patch
 Requires:       pygame

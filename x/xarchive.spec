@@ -3,9 +3,9 @@ Version: 0.2.8
 Summary: XArchive Manager
 Group: File tools
 License: BSD
-URL: http://xarchive.sourceforge.net/
+URL: https://xarchive.sourceforge.net/
 Release: 13.1
-Source0: http://prdownloads.sourceforge.net/xarchive/%{name}-%{version}-6.tar.gz
+Source0: https://prdownloads.sourceforge.net/xarchive/%{name}-%{version}-6.tar.gz
 BuildRequires: freetype-devel gtk2-devel pango-devel
 
 %description

@@ -3,7 +3,7 @@ Name:		qbriscola
 Summary:	Qt4 Italian card game Briscola
 Version:        1.1svn.2
 Release:	8.1
-URL:		http://%{name}.sourceforge.net/
+URL:		https://%{name}.sourceforge.net/
 Source:         %{name}-%{version}.tar.xz
 Patch0:		qbriscola_desktop.diff
 License:	GPL-3.0

@@ -4,7 +4,7 @@ Release:       1
 Summary:       A video-based animated GIF creator
 Group:         Applications/Multimedia
 License:       GPLv3
-#URL:           http://sourceforge.net/projects/qgifer/
+#URL:           https://sourceforge.net/projects/qgifer/
 URL:           https://github.com/Apkawa/QGifer
 Source0:       %{name}-%{version}-source.tar.gz
 BuildRequires: cmake, giflib-devel, qt-devel, kdelibs4-devel, opencv-devel, qca2
@@ -23,10 +23,10 @@ sed -i -e '26i #include <opencv2/core/cvdef.h>\n#include <opencv2/videoio/legacy
 
 %build
 %cmake
-make
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot}
+%cmake_install
 mv %{buildroot}%{_datadir}/icons %{buildroot}%{_datadir}/pixmaps
 sed -i 's|/usr/share/icons/||' %{buildroot}%{_datadir}/applications/qgifer.desktop
 

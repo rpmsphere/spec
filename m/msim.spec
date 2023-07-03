@@ -4,9 +4,8 @@ Release:        18.1
 Summary:  Library for discrete event simulation
 Group:    System Environment/Libraries
 License:        GPLv2
-URL:       http://msim.sourceforge.net
+URL:       https://msim.sourceforge.net
 Source0:        %{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  gcc-c++ >= 4.5
 BuildRequires:  libtool
 
@@ -35,12 +34,10 @@ rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT LIBDIR=%{_libdir} install
 
 %files
-%defattr(-,root,root,-)
 %doc README LICENSE
 %{_libdir}/lib%{name}.so*
 
 %files devel
-%defattr(-,root,root,-)
 %dir %{_includedir}/%{name}
 %{_includedir}/%{name}/*
 %{_libdir}/pkgconfig/%{name}.pc

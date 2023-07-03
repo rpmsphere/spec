@@ -5,8 +5,8 @@ Version: 	0.3.1
 Release: 	1
 License: 	GPLv2+
 Group: 		System/Internationalization
-Source: 	http://www.tegaki.org/releases/%version/%name-%version.tar.gz
-URL: 		http://www.tegaki.org
+Source: 	https://www.tegaki.org/releases/%version/%name-%version.tar.gz
+URL: 		https://www.tegaki.org
 BuildRequires:	python2-setuptools
 Requires:	tegaki-pygtk
 BuildArch:	noarch

@@ -6,8 +6,8 @@ Release:        1
 Summary:        Audio CD Burner
 Group:          Applications/Multimedia
 License:        GPL
-URL:            http://s1x.homelinux.net/projects/serpentine
-Source0:        http://download.berlios.de/serpentine/serpentine-%{version}.tar.bz2
+URL:            https://s1x.homelinux.net/projects/serpentine
+Source0:        https://download.berlios.de/serpentine/serpentine-%{version}.tar.bz2
 Source1:        https://www.iconattitude.com/icons/open_icon_library/apps/png/64/%{name}.png
 BuildArch:	noarch
 BuildRequires:	pygtk2-devel, GConf2-devel      

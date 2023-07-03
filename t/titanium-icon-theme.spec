@@ -5,9 +5,9 @@ Name: titanium-icon-theme
 Version: 0.pre1
 Release: 7.1
 License: CC-BY-NC-ND 3.0
-URL: http://code933k.deviantart.com/art/Titanium-Icon-Theme-PRE1-83203913
+URL: https://code933k.deviantart.com/art/Titanium-Icon-Theme-PRE1-83203913
 Group: User Interface/Desktops
-Source0: http://www.deviantart.com/download/83203913/titanium_icon_theme_pre1_by_code933k.7z
+Source0: https://www.deviantart.com/download/83203913/titanium_icon_theme_pre1_by_code933k.7z
 SOurce1: %{theme_name}-index.theme
 BuildArch: noarch
 BuildRequires: p7zip

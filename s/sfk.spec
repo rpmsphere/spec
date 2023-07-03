@@ -4,8 +4,8 @@ Release:	2
 Summary:	Swiss File Knife
 License:	BSD
 Group:		File tools
-URL:		http://stahlworks.com/dev/swiss-file-knife.html
-Source0:	http://downloads.sourceforge.net/swissfileknife/%{name}-%{version}.tar.gz
+URL:		https://stahlworks.com/dev/swiss-file-knife.html
+Source0:	https://downloads.sourceforge.net/swissfileknife/%{name}-%{version}.tar.gz
 
 %description
 sfk ("Swiss File Knife") combines many command line tools in a single

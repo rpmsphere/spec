@@ -4,8 +4,8 @@ Version: 5.0.9
 Release: 1
 License: GPL2
 Group: Amusements/Games
-Source: http://downloads.sourceforge.jp/ninix-aya/36866/ninix-aya-%{version}.tgz
-URL: http://ninix-aya.sourceforge.jp/
+Source: https://downloads.sourceforge.jp/ninix-aya/36866/ninix-aya-%{version}.tgz
+URL: https://ninix-aya.sourceforge.jp/
 Vendor: NISHIJIMA Akira <nisshi@mb.infoweb.ne.jp>
 Requires: rubypick ruby rubygem-gtk3
 Obsoletes: ninix-dv ninix

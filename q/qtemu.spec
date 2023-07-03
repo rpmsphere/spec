@@ -5,8 +5,8 @@ Version:       2.1
 Release:       1
 Summary:       A graphical user interface for QEMU written in Qt4
 Group:         Graphical Desktop/Applications/Utilities
-URL:           http://qtemu.org/
-#Source:        http://switch.dl.sourceforge.net/sourceforge/qtemu/qtemu-%{version}.tar.bz2
+URL:           https://qtemu.org/
+#Source:        https://switch.dl.sourceforge.net/sourceforge/qtemu/qtemu-%{version}.tar.bz2
 Source:	       gui-%{version}.tar.gz
 License:       GPL
 BuildRequires: libpng-devel

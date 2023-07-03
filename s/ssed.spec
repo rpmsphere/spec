@@ -2,11 +2,10 @@ Name:         ssed
 Summary:      Super sed
 Version:      3.60
 Release:      6.1
-URL:          http://sed.sourceforge.net/grabbag/ssed/ 
+URL:          https://sed.sourceforge.net/grabbag/ssed/ 
 License:      GPL
 Group:        System/Base
 Source:       %{name}-%{version}.tar.bz2
-BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 
 %description
 ssed is a version of sed that supports a few new features, including Perl
@@ -51,7 +50,6 @@ do
 done
 
 %files
-%defattr(-,root,root)
 %doc ABOUT-NLS AUTHORS BUGS COPYING ChangeLog NEWS README README.boot THANKS TODO
 %{_bindir}/*
 %{_infodir}/ssed*

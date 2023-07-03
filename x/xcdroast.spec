@@ -3,7 +3,7 @@ Version:        1.19
 Release:        1
 License:        GPL-2.0
 Summary:        CD-burning software
-URL:            http://www.xcdroast.org/
+URL:            https://www.xcdroast.org/
 Group:          Productivity/Multimedia/CD/Record
 Source0:        https://sourceforge.net/projects/xcdroast/files/%{name}-%{version}.tar.gz/download#/%{name}-%{version}.tar.gz
 Patch0:         GUI-sudo.patch
@@ -185,6 +185,6 @@ rm -rf %{buildroot}
 * Sun Apr 26 2015 werner@suse.de
 - Add some missing patches
 * Wed Oct 16 2013 salsergey@gmail.com
-- added patches from http://www.xcdroast.org/xcdr098/patches/
+- added patches from https://www.xcdroast.org/xcdr098/patches/
 * Wed Nov 30 2011 salsergey@gmail.com
 - initial version 0.98alpha16

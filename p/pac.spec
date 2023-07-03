@@ -5,7 +5,7 @@ Release: 1
 Group: Converted/networking
 License: GPLv3
 URL: https://sites.google.com/site/davidtv/
-Source0: http://sourceforge.net/projects/pacmanager/files/pac-4.0/%{name}-%{version}-all.tar.gz
+Source0: https://sourceforge.net/projects/pacmanager/files/pac-4.0/%{name}-%{version}-all.tar.gz
 BuildRequires:  desktop-file-utils
 BuildArch: noarch
 Requires: ftp

@@ -6,8 +6,8 @@ Version: 1.7.2
 Release: 5.1
 License: GPL
 Group: Applications/Editors
-URL: http://www.grigna.com/diego/linux/vche/
-Source: http://www.grigna.com/diego/linux/vche/vche-%{version}.tar.gz
+URL: https://www.grigna.com/diego/linux/vche/
+Source: https://www.grigna.com/diego/linux/vche/vche-%{version}.tar.gz
 
 %description
 vche is an ncurses hex editor that lets you edit hard drives, cdroms, RAM,

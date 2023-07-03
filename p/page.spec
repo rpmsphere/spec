@@ -4,8 +4,8 @@ Version: 4.6
 Release: 8.1
 Group: Development/Tools
 License: GPLv2
-URL: http://page.sourceforge.net/
-Source0: http://sourceforge.net/projects/page/files/%{name}/%{version}/%{name}-%{version}.tgz
+URL: https://page.sourceforge.net/
+Source0: https://sourceforge.net/projects/page/files/%{name}/%{version}/%{name}-%{version}.tgz
 Requires: tkinter
 BuildRequires: ghostscript-core ImageMagick
 BuildArch: noarch

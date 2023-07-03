@@ -4,8 +4,8 @@ Release:        12.1
 Summary:        Utility to create a wallpaper based on the current weather
 License:        GPL-2.0
 Group:          Amusements/Toys/Background
-URL:            http://mundogeek.net/weather-wallpaper/
-Source0:        http://launchpadlibrarian.net/17362202/weather-wallpaper_0.2.0-1.tar.gz
+URL:            https://mundogeek.net/weather-wallpaper/
+Source0:        https://launchpadlibrarian.net/17362202/weather-wallpaper_0.2.0-1.tar.gz
 # PATCH-FIX-UPSTREAM weather-wallpaper-update-for-gnome3.patch lp#921375 malcolmlewis@opensuse.org -- Update python code to use gsettings as well as gconf.
 Patch0:         weather-wallpaper-update-for-gnome3.patch
 # PATCH-FIX-UPSTREAM weather-wallpaper-fix-desktop-file.patch lp#929642 malcolmlewis@opensuse.org -- Add trailing ; to desktop categories.

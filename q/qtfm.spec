@@ -4,7 +4,7 @@ Summary:	Qt File Manager
 Name:		qtfm
 Version:	6.2.1
 Release:	1
-URL:		http://qtfm.eu/
+URL:		https://qtfm.eu/
 License:	GPL
 Source:		https://github.com/rodlie/qtfm/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Requires:	p7zip

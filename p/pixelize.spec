@@ -6,8 +6,7 @@ License: GPL
 Group: Productivity/Graphics/Other
 Source: %{name}-%{version}.tar.bz2
 BuildRequires: gtk2-devel gcc
-BuildRoot: %{_tmppath}/build-root-%{name}
-URL: http://lashwhip.com/pixelize.html
+URL: https://lashwhip.com/pixelize.html
 
 %description
 Pixelize works by splitting up the image you want rendered (or duplicated) into
@@ -35,7 +34,6 @@ install -m 755 make_db $RPM_BUILD_ROOT%{_bindir}
 rm -rf $RPM_BUILD_ROOT
 
 %files 
-%defattr(-,root,root,0755)
 %doc README LICENSE TODO
 %{_bindir}/pixelize
 %{_bindir}/make_db

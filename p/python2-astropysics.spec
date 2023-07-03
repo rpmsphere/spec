@@ -5,7 +5,7 @@ Version:        1.0
 Release:        8.1
 Summary:        A python library for astronomy/astrophysics
 License:        Apache v2.0
-URL:            http://packages.python.org/Astropysics/
+URL:            https://packages.python.org/Astropysics/
 Group:          Development/Libraries/Python
 Source0:        Astropysics-%{version}.tar.gz
 BuildArch:      noarch

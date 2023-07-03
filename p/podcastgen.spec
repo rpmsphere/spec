@@ -6,7 +6,7 @@ Release:        1
 Summary:        Open Source Podcast Publishing Solution
 Group:          Applications/Publishing
 License:        GPL
-URL:            http://podcastgen.sourceforge.net/
+URL:            https://podcastgen.sourceforge.net/
 Source0:        ftp://ite.ceag.kh.edu.tw/podcastgen/%{name}_%{version}.tar.bz2
 Requires:       httpd, php
 BuildArch:	noarch

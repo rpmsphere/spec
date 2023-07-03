@@ -4,8 +4,8 @@ Version:	0.0.23
 Release:	16.1
 License:	Ruby's License
 Group:		Applications
-Source0:	http://dinhe.net/~aredridel/projects/ruby/%{name}-%{version}.tar.gz
-URL:		http://dinhe.net/~aredridel/projects/ruby/rumble
+Source0:	https://dinhe.net/~aredridel/projects/ruby/%{name}-%{version}.tar.gz
+URL:		https://dinhe.net/~aredridel/projects/ruby/rumble
 BuildRequires: ruby
 BuildRequires: rubypick
 BuildRequires: rubygems

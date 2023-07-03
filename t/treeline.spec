@@ -5,7 +5,7 @@ Version:	3.1.2
 Release:	1
 Group:		Productivity/Office/Other
 License:	GPLv2+
-URL:		http://treeline.bellz.org/
+URL:		https://treeline.bellz.org/
 Source0:	%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python3-qt5, python-lxml
@@ -50,7 +50,7 @@ python3 install.py -x \
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/mime/packages
 cat > $RPM_BUILD_ROOT%{_datadir}/mime/packages/%{name}.xml << EOF
 <?xml version="1.0"?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+<mime-info xmlns="https://www.freedesktop.org/standards/shared-mime-info">
   <mime-type type="application/x-treeline">
     <comment>TreeLine File</comment>
     <glob pattern="*.trl"/>

@@ -4,11 +4,11 @@ Name:		python-glpk
 Version:	0.4.43
 Release:	6.1
 Epoch:		1
-Source0:    http://www.dcc.fc.up.pt/~jpp/code/python-glpk/%{name}-%{version}.tar.gz
-Patch0:		Makefile.patch
+Source0:    https://www.dcc.fc.up.pt/~jpp/code/python-glpk/%{name}-%{version}.tar.gz
+Patch0:		%name.Makefile.patch
 License:	GPLv2
 Group:		Development/Python
-URL:		http://www.dcc.fc.up.pt/~jpp/code/python-glpk/
+URL:		https://www.dcc.fc.up.pt/~jpp/code/python-glpk/
 BuildRequires:	python-devel
 BuildRequires:	glpk-devel, swig
 BuildRequires:  atlas

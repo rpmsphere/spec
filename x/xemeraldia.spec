@@ -3,8 +3,8 @@ Version:       0.4.3
 Release:       1
 Summary:       Another tetris-like simple game
 Group:         Amusements/Games
-URL:           http://www.reloco.com.ar/xemeraldia/
-Source:        http://www.reloco.com.ar/xemeraldia/xemeraldia-%{version}.tar.gz
+URL:           https://www.reloco.com.ar/xemeraldia/
+Source:        https://www.reloco.com.ar/xemeraldia/xemeraldia-%{version}.tar.gz
 Source1:       xemeraldia-0.4.3.zh_TW.po
 License:       BSD
 BuildRequires: glibc-devel

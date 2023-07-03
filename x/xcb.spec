@@ -1,7 +1,7 @@
 Name:           xcb
 %define _appdefdif %_prefix/share/X11/app-defaults
 BuildRequires:  libX11-devel, libXt-devel, libXaw-devel, imake
-URL:            http://www.goof.com/pcg/marc/xcb.html
+URL:            https://www.goof.com/pcg/marc/xcb.html
 License:        MIT
 Group:          System/X11/Utilities
 Version:        2.5

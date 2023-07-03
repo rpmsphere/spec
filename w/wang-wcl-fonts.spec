@@ -8,7 +8,7 @@ License: GPLv2
 Group: User Interface/X
 BuildArch: noarch
 Source0: font_wong.zip
-URL: http://code.google.com/p/wangfonts/
+URL: https://code.google.com/p/wangfonts/
 Requires(post): fontconfig
 
 %description

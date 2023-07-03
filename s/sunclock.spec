@@ -6,7 +6,7 @@ License: GPL
 Group: Sciences/Astronomy
 Source: ftp://ftp.ac-grenoble.fr/ge/geosciences/%{name}-%{version}.tar.bz2
 Patch0: sunclock-3.56-fix-str-fmt.patch
-URL: http://freshmeat.net/projects/sunclock/
+URL: https://freshmeat.net/projects/sunclock/
 BuildRequires: imake libX11-devel libjpeg-devel libpng-devel libXpm-devel libXext-devel
 
 %description

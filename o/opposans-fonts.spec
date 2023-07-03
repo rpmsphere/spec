@@ -7,7 +7,7 @@ Release: 2
 Group: User Interface/X
 License: freeware
 URL: https://bbs.coloros.com/thread-2272309-1-1.html
-Source0: http://static01.coloros.com/www/public/img/topic7/font-opposans.zip
+Source0: https://static01.coloros.com/www/public/img/topic7/font-opposans.zip
 Source1: opposans-fonts-copyright
 Source2: 86gs-opposans.conf
 BuildArch: noarch

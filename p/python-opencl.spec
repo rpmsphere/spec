@@ -5,7 +5,7 @@ Release:        7.1
 Summary:        Yet another set of Python bindings for OpenCL
 License:        BSD-3-Clause
 Group:          Development/Libraries/Python
-URL:            http://srossross.github.com/oclpb/
+URL:            https://srossross.github.com/oclpb/
 Source0:        srossross-oclpb-0.5.2-0-g02d70d9.tar.bz2
 BuildRequires:  opencl-headers
 BuildRequires:  ocl-icd-devel

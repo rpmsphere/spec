@@ -2,10 +2,10 @@ Name:            xml-coreutils
 Version:         0.8a
 Release:         3.1
 Summary:         Command Line Tools for Reading and Writing XML Files
-# http://prdownloads.sourceforge.net/xml-coreutils/xml-coreutils-%{version}.tar.gz
+# https://prdownloads.sourceforge.net/xml-coreutils/xml-coreutils-%{version}.tar.gz
 Source:          xml-coreutils-%{version}.tar.bz2
 Patch1:          xml-coreutils-fix_buffer_overflow.patch
-URL:             http://xml-coreutils.sourceforge.net/
+URL:             https://xml-coreutils.sourceforge.net/
 Group:           Productivity/Text/Utilities
 License:         GNU General Public License version 3 (GPL v3)
 BuildRequires:   bison flex ncurses-devel slang-devel

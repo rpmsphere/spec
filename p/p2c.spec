@@ -5,7 +5,7 @@ Release:	26.1
 License:	GPL
 Group:		Development/Other
 Source0:	ftp://csvax.cs.caltech.edu/pub/p2c-1.22.tar.bz2
-URL:		http://www.ccrnp.ncifcrf.gov/~toms/p2c/
+URL:		https://www.ccrnp.ncifcrf.gov/~toms/p2c/
 Patch2:		p2c-newpatch.patch
 # Fixes conflicting types for 'my_memcpy' build error: thanks Anssi
 Patch3:		p2c-1.22-memcpy.patch

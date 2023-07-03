@@ -6,14 +6,14 @@ BuildRequires:  cmake zlib-devel openssl-devel
 Group:          System/Utilities
 Summary:        Tool for converting the UIF files to ISO
 Source0:	uif2iso.c
-Source1:	CMakeLists.txt
+Source1:	%name.CMakeLists.txt
 
 %description
 Tool for converting the UIF files (Universal Image Format, used by MagicISO) to ISO.
 
 %prep
 cp %{SOURCE0} .
-cp %{SOURCE1} .
+cp %{SOURCE1} CMakeLists.txt
 cat /etc/fstab
 
 %build

@@ -6,7 +6,7 @@ Release: 1
 Summary: Photo processor
 Group: Graphics
 License: GPLv3+
-URL: http://photivo.org
+URL: https://photivo.org
 Source: %{name}-master.zip
 BuildRequires: gcc-c++ libgomp qt4-devel libtool-ltdl-devel
 BuildRequires: exiv2-devel lensfun-devel fftw3-devel liblqr-1-devel

@@ -4,8 +4,8 @@ Release:        1
 Summary:        Restores install attributes from the RPM database
 Group:          System/Configuration/Packaging
 License:        GPL
-URL:            http://rpmrestore.sourceforge.net/
-Source0:        http://ovh.dl.sourceforge.net/rpmrestore/%{name}-%{version}.tar.gz
+URL:            https://rpmrestore.sourceforge.net/
+Source0:        https://ovh.dl.sourceforge.net/rpmrestore/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  perl(Pod::Usage)
 

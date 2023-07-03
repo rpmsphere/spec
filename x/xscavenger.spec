@@ -2,12 +2,12 @@ Name: xscavenger
 Summary: Cool arcade/thinking game very much like Lode Runner
 Version: 1.4.4
 Release: 17.1
-Source: http://www.xdr.com/dash/%{name}-%{version}.tar.bz2
+Source: https://www.xdr.com/dash/%{name}-%{version}.tar.bz2
 Source10: %{name}.16.png.bz2
 Source11: %{name}.32.png.bz2
 Source12: %{name}.48.png.bz2
 Patch0: xscavenger-1.4.4-link.patch
-URL: http://www.xdr.com/dash/scavenger.html
+URL: https://www.xdr.com/dash/scavenger.html
 License: GPL
 Group: Games/Arcade
 BuildRequires: libX11-devel

@@ -7,7 +7,7 @@ Release:    14.1
 Source0:	%{pkgname}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Sciences/Mathematics
-URL:		http://octave.sourceforge.net/missing-functions/
+URL:		https://octave.sourceforge.net/missing-functions/
 Conflicts:	octave-forge <= 20090607
 Requires:	octave >= 3.0.0
 BuildRequires:  fltk, gnuplot, java-1.8.0-openjdk-headless, lua

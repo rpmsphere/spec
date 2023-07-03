@@ -4,10 +4,10 @@ Name: tetrix
 Version: 2.4
 Release: 5.1
 License: GPL
-URL: http://www.catb.org/~esr/tetrix/
+URL: https://www.catb.org/~esr/tetrix/
 Group: Games/Arcade
 Summary: An UNIX-hosted, curses-based clone of Tetris
-Source: http://www.catb.org/~esr/tetrix/%name-%version.tar.gz
+Source: https://www.catb.org/~esr/tetrix/%name-%version.tar.gz
 BuildRequires: ncurses-devel xmlto
 
 %description

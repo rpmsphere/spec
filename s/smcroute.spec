@@ -5,7 +5,7 @@ Release: 1
 License: GPL
 Group: System/Servers
 Source: https://github.com/troglobit/smcroute/releases/download/%version/%name-%version.tar.gz
-URL: http://troglobit.com/project/smcroute/
+URL: https://troglobit.com/project/smcroute/
 
 %description
 SMCRoute is a daemon and command line tool to manipulate the multicast routes

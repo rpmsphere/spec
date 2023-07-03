@@ -6,8 +6,8 @@ Release:        1
 Summary:        Rescue the still-readable data from a damaged harddisk
 License:        GPL-2.0+
 Group:          Productivity/File utilities
-URL:            http://myrescue.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:            https://myrescue.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 
 %description
 myrescue is a program to rescue the still-readable data from a

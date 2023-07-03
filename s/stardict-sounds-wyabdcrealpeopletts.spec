@@ -4,20 +4,20 @@ Version:        2.1.0
 Release:        1
 License:        GPLv2+
 Group:          Productivity/Office/Dictionary
-URL:            http://code.google.com/p/stardict-3/
+URL:            https://code.google.com/p/stardict-3/
 BuildArch:      noarch
 Requires:       stardict, sox
-Source0:        http://stardict-3.googlecode.com/files/WyabdcRealPeopleTTS.tar.bz2
-Source1:        license.txt
+Source0:        https://stardict-3.googlecode.com/files/WyabdcRealPeopleTTS.tar.bz2
+Source1:        %name.license.txt
 
 %description
 This package contains many wav files which can be used by StarDict to pronounce
-english words. Files originally come from wyabdc, http://www.zhimajie.net,
+english words. Files originally come from wyabdc, https://www.zhimajie.net,
 thanks xiaozima.
 
 %prep
 %setup -q -n WyabdcRealPeopleTTS
-cp %{SOURCE1} .
+cp %{SOURCE1} license.txt
 
 %build
 

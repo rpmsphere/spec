@@ -6,13 +6,13 @@ Version:        20100410
 Release:        3.1
 License:        freeware
 Group:          User Interface/Desktops
-URL:            http://grynays.deviantart.com/art/UISTA-160216742?q=1&qo=1
-Source0:        http://www.deviantart.com/download/160216742/UISTA_by_GrynayS.gz
+URL:            https://grynays.deviantart.com/art/UISTA-160216742?q=1&qo=1
+Source0:        https://www.deviantart.com/download/160216742/UISTA_by_GrynayS.gz
 BuildArch:      noarch
 
 %description
 Original theme By VovanR:
-http://www.deviantart.com/users/outgoing?http://users.wincustomize.com/2168068/
+https://www.deviantart.com/users/outgoing?https://users.wincustomize.com/2168068/
 As requested, I convert this pointer of VovanR.
 For the conversion I used the program perl sd2xc-2.5.pl adds KDE4 Compatibility,
 and adjusts the individual pointer animations with GIMP and XMC plugin.

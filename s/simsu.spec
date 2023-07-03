@@ -4,8 +4,8 @@ Release:        1
 Summary:        Basic Sudoku game
 Summary(de):    Einfaches Sudoku-Spiel
 License:        GPLv3+
-URL:            http://gottcode.org/%{name}/
-Source0:        http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
+URL:            https://gottcode.org/%{name}/
+Source0:        https://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
 Source1:        %{name}.6.po
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib

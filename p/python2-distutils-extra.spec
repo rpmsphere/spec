@@ -6,7 +6,7 @@ Release:        17
 Summary:        Integrate more support into Python's distutils
 License:        GPLv2+
 URL:            https://launchpad.net/python-distutils-extra
-Source0:        http://launchpad.net/%{name}/trunk/%{version}/+download/python-%{srcname}-%{version}.tar.gz
+Source0:        https://launchpad.net/%{name}/trunk/%{version}/+download/python-%{srcname}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  python2-setuptools

@@ -6,8 +6,8 @@ Version: 1.4
 Release: 6.1
 License: Public Domain
 Group: Games/Arcade
-Source0: http://www.alge.no/projects/apps/%{name}-%{version}.tar.gz
-URL: http://www.alge.no/index.php/C_Programming
+Source0: https://www.alge.no/projects/apps/%{name}-%{version}.tar.gz
+URL: https://www.alge.no/index.php/C_Programming
 BuildRequires: ncurses-devel
 
 %description

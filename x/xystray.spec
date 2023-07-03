@@ -5,7 +5,7 @@ Summary: 	A simple implementation of freedesktop.org systray specification
 Version: 	1.0
 Release: 	6.1
 Source:		https://github.com/steelman/xystray/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-URL:		http://steelman.github.io/xystray/
+URL:		https://steelman.github.io/xystray/
 License:	GPL
 Group:		Graphical desktop/Other
 BuildRequires: libX11-devel

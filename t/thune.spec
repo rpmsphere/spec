@@ -1,9 +1,12 @@
+#%global __os_install_post %{nil}
+#%undefine _debugsource_packages
+
 Summary: Thune Scripting Language
 Name: thune
 Version: 0.0.5
 Release: 12.1
 License: LGPL-2.1
-URL: http://urlan.sf.net/
+URL: https://urlan.sf.net/
 Group: Development/Languages
 Source: thune-%{version}.tgz
 BuildRequires: cmake

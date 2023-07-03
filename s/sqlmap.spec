@@ -11,7 +11,7 @@ Release:        6.1
 Summary:        Automatic SQL injection and database takeover tool
 Group:          Security
 License:        GPL
-URL:            http://sqlmap.org/
+URL:            https://sqlmap.org/
 Source0:        https://github.com/sqlmapproject/sqlmap/tarball/master/sqlmapproject-sqlmap-0.9-3451-g17742df.tar.gz
 Patch0:         sqlmap-1.0-disable-svn-lookup.patch
 BuildArch:      noarch

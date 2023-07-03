@@ -8,7 +8,7 @@ Source0:    %{modname}-%{version}.tar.bz2
 License:    MIT
 Group:      Development/Libraries/Python
 BuildArch:  noarch
-URL:        http://pythoscope.org
+URL:        https://pythoscope.org
 BuildRequires:  python2-devel python2-setuptools
 
 %description

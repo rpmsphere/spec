@@ -6,7 +6,7 @@ Version: 8.640
 Release:3.1
 License: GPL
 Group: Applications/Security
-URL: http://sourceforge.net/projects/segatex/
+URL: https://sourceforge.net/projects/segatex/
 Source: segatex-%{version}.tgz
 BuildRequires: gcc-c++, qt-devel, libselinux-devel
 

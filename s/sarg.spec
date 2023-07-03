@@ -6,8 +6,8 @@ Version: 2.4.0
 Release: 1
 License: GPL
 Group: Applications/Internet
-URL: http://sarg.sourceforge.net/sarg.php
-Source: http://downloads.sourceforge.net/project/sarg/sarg/sarg-%{version}/sarg-%{version}.tar.gz
+URL: https://sarg.sourceforge.net/sarg.php
+Source: https://downloads.sourceforge.net/project/sarg/sarg/sarg-%{version}/sarg-%{version}.tar.gz
 BuildRequires: libpng-devel
 BuildRequires: perl
 BuildRequires: gd-devel >= 1.8
@@ -105,8 +105,8 @@ EOF
 
 %{__cat} <<EOF >sarg-index.html
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE html PUBLIC "XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html PUBLIC "XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>Squid User's Access Report</title>
     <style type="text/css">

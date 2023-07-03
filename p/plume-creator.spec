@@ -4,8 +4,8 @@ Version:	0.66.2
 Release:	1
 License:	GPLv3+
 Group:		Publishing
-URL:		http://www.plume-creator.eu/
-Source0:	http://sourceforge.net/projects/plume-creator/files/0.6/%{name}-%{version}.tar.gz
+URL:		https://www.plume-creator.eu/
+Source0:	https://sourceforge.net/projects/plume-creator/files/0.6/%{name}-%{version}.tar.gz
 BuildRequires:	qt4-devel
 #BuildRequires:	hunspell-devel
 

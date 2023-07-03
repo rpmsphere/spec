@@ -4,8 +4,8 @@ Release: 6.1
 Summary: A simple USB Video Camera viewer
 Group: Applications/Multimedia
 License: GPL2
-URL: http://freshmeat.net/projects/uvcview/
-Source0: http://freshmeat.net/projects/uvcview/%name-%version.tar.gz
+URL: https://freshmeat.net/projects/uvcview/
+Source0: https://freshmeat.net/projects/uvcview/%name-%version.tar.gz
 Source1: uvcview.png
 Patch0: uvcview-20070907-stop.patch
 BuildRequires: gtk2-devel

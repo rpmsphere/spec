@@ -4,7 +4,7 @@ Release:        1
 Summary:        Converts the output of "remind -s" into RFC2445 iCalendar format
 Group:          Applications/Productivity
 License:        GPLv2+
-URL:            http://mark.atwood.name/code/rem2ics/
+URL:            https://mark.atwood.name/code/rem2ics/
 Source0:        rem2ics
 Source1:        rem2ics-Makefile
 BuildArch:      noarch

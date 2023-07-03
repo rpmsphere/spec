@@ -4,9 +4,9 @@ Group: Application/Multimedia
 Summary: A text-to-speech (TTS) software
 Version: 2.1.0
 Release: 1
-#Source: http://nchc.dl.sourceforge.net/sourceforge/e-guidedog/%{name}-%{version}_generic.7z
+#Source: https://nchc.dl.sourceforge.net/sourceforge/e-guidedog/%{name}-%{version}_generic.7z
 Source: %{name}-%{version}_generic.tgz
-URL: http://e-guidedog.sourceforge.net/zhspeak.php
+URL: https://e-guidedog.sourceforge.net/zhspeak.php
 BuildArch: noarch
 Requires: python3 vorbis-tools
 

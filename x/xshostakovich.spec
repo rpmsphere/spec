@@ -2,8 +2,8 @@ Summary: Shostakovich is a happy smiley man
 Name: xshostakovich
 Version: 1.7
 Release: 13.1
-Source: http://www.lcdf.org/~eddietwo/xshostakovich/xshostakovich-1.7.tar.gz
-URL: http://www.lcdf.org/~eddietwo/xshostakovich/
+Source: https://www.lcdf.org/~eddietwo/xshostakovich/xshostakovich-1.7.tar.gz
+URL: https://www.lcdf.org/~eddietwo/xshostakovich/
 Group: X11/Amusements
 BuildRequires: libX11-devel
 License: GPL

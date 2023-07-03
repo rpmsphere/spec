@@ -8,7 +8,7 @@ License: free
 Group: User Interface/Desktops
 Source0: https://www.dropbox.com/s/h55hjv1a1cgnvva/Silver.tar.gz
 Source1: %{theme_name}-index.theme
-URL: http://gentoo-art.org/content/show.php/Silver?content=168800
+URL: https://gentoo-art.org/content/show.php/Silver?content=168800
 BuildArch: noarch
 Requires: gtk-ubuntulooks-engine
 Requires: nouvegnome-icon-theme

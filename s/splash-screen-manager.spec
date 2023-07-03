@@ -4,10 +4,10 @@ Summary: Splash Screen Manager
 Name: splash-screen-manager
 Version: 1.2
 Release: 6.1
-Source0: http://s5.histats.com/stats/r.php?715549&100&14419&urlr=&zorin-os.webs.com/%{_name}_%{version}_i386.deb
+Source0: https://s5.histats.com/stats/r.php?715549&100&14419&urlr=&zorin-os.webs.com/%{_name}_%{version}_i386.deb
 License: GPLv3
 Group: Applications/System
-URL: http://zorin-os.webs.com/splashscreenmanager.htm
+URL: https://zorin-os.webs.com/splashscreenmanager.htm
 BuildArch: noarch
 Requires: gnome-python2-gnome
 

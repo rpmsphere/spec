@@ -5,7 +5,7 @@ Name:      rhtvision
 Version:   2.2.1
 Release:   11.1
 License:   GPL
-URL:       http://tvision.sf.net/
+URL:       https://tvision.sf.net/
 Group:     System Environment/Libraries
 Source:    https://jaist.dl.sourceforge.net/project/tvision/UNIX/2.2.1%20CVS20161117/rhtvision_2.2.1-4.tar.gz
 Patch:     tvision.patch

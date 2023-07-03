@@ -3,8 +3,8 @@ Version:       1.7.0
 Release:       4.1
 Summary:       A command line program to play midi files through the ALSA sequencer
 Group:         Applications/Multimedia
-URL:           http://www.parabola.me.uk/alsa/pmidi.html
-Source:        http://download.sourceforge.net/sourceforge/pmidi/pmidi-%{version}.tar.gz
+URL:           https://www.parabola.me.uk/alsa/pmidi.html
+Source:        https://download.sourceforge.net/sourceforge/pmidi/pmidi-%{version}.tar.gz
 License:       GPLv2
 BuildRequires: alsa-lib-devel
 

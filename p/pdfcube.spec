@@ -4,8 +4,8 @@ Release: 	3.1
 Summary:        PDF presentation viewer with a spinning cube
 Group:          Office
 License:        GPL
-URL:            http://code.100allora.it/pdfcube
-# http://code.100allora.it/svn/pdfcube/trunk/
+URL:            https://code.100allora.it/pdfcube
+# https://code.100allora.it/svn/pdfcube/trunk/
 Source0:        %name-%version.tar.gz
 BuildRequires: boost-devel gcc-c++ glut-devel
 BuildRequires: gtkglext-devel poppler-glib-devel

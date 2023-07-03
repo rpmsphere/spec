@@ -9,7 +9,7 @@ Source0:   %{modname}-%{version}.tar.bz2
 Patch0:    python-%{modname}-setup.py.diff
 License:   BSD
 Group:     Development/Libraries/Python
-URL:       http://psilib.sourceforge.net/webstring.html
+URL:       https://psilib.sourceforge.net/webstring.html
 BuildRequires:  python2-devel python2-setuptools
 BuildRequires:  dos2unix
 BuildArch: noarch

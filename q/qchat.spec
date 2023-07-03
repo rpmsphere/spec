@@ -4,8 +4,8 @@ Release: 12.1
 Summary: Simple crossplatform LAN chat
 License: GPLv2+
 Group: Networking/Chat
-URL: http://sourceforge.net/projects/q-chat/
-Source0: http://sourceforge.net/projects/q-chat/files/QChat/%name-%version/%name-%version.tar.bz2
+URL: https://sourceforge.net/projects/q-chat/
+Source0: https://sourceforge.net/projects/q-chat/files/QChat/%name-%version/%name-%version.tar.bz2
 Source1: %name.desktop
 BuildRequires: qt4-devel
 

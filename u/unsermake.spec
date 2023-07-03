@@ -4,7 +4,7 @@ Version:       0.0svn20060112
 Release:       4.1
 Summary:       A replacement for automake
 Group:         Development/Tools
-URL:           http://www.kde.me.uk/index.php?page=unsermake
+URL:           https://www.kde.me.uk/index.php?page=unsermake
 Source:        %{name}-%{version}.tar.bz2
 License:       GPL
 BuildRequires: python-devel

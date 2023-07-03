@@ -6,7 +6,7 @@ Release: 6.1
 Summary: NumPy aware dynamic compiler for Python
 License: BSD-like
 Group: Development/Python
-URL: http://numba.pydata.org/
+URL: https://numba.pydata.org/
 Source: numba-%version.tar.gz
 BuildRequires: atlas-devel
 BuildRequires: python2-devel

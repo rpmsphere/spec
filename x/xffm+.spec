@@ -3,7 +3,7 @@ Summary: Next generation from Rodent Apps
 Version: 0.94
 Release: 1
 License: GPLv3+
-URL: http://xffm.org/
+URL: https://xffm.org/
 Source0: https://sourceforge.net/projects/xffm/files/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires: gtk3-devel
 BuildRequires: file-devel

@@ -7,7 +7,7 @@ Version:	2.0.16
 Release:	11.1
 License:	GPL
 Group:		Networking/Daemons
-Source0:	http://gopher.quux.org:70/give-me-gopher/pygopherd/%{name}_%{version}.tar.gz
+Source0:	https://gopher.quux.org:70/give-me-gopher/pygopherd/%{name}_%{version}.tar.gz
 Source1:	%{name}.init
 Patch0:		%{name}-conf.patch
 URL:		gopher://gopher.quux.org/1/Software/Gopher

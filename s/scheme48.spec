@@ -3,7 +3,7 @@ Version: 1.9.2
 Release: 6.1
 License: BSD-3-Clause
 Summary: An implementation of Scheme
-URL: http://www.s48.org
+URL: https://www.s48.org
 Group: Development/Languages/Scheme
 Source: %url/%version/%name-%version.tgz
 Patch1: no-env-trampoline.diff

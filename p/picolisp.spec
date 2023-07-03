@@ -6,8 +6,8 @@ Release: 1
 Summary: Interpreted Lisp
 License: MIT
 Group: Development/Lisp
-URL: http://picolisp.com
-Source: http://software-lab.de/picoLisp.tgz
+URL: https://picolisp.com
+Source: https://software-lab.de/picoLisp.tgz
 # 64-bit build bootstraps using 32-bit one or Java
 #BuildRequires: java-devel-openjdk
 BuildRequires: lua

@@ -6,7 +6,7 @@ Version:        1.2.1
 Release:        1
 Group:          Amusements/Teaching/Mathematics
 License:        GPL, Creative Commons, Creative Commons Attribution-Noncommercial-Share Alike
-URL:            http://omnitux.sourceforge.net/
+URL:            https://omnitux.sourceforge.net/
 BuildArch:      noarch
 Source0:        %{name}-%{version}.tar.bz2
 Source1:        %{_name}.desktop

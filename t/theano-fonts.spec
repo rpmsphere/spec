@@ -5,12 +5,11 @@ Version:        2.0
 Release:        5.1
 License:        OFL-1.1
 Summary:        Theano Classical Fonts
-URL:            http://www.thessalonica.org.ru/en/theano.html
+URL:            https://www.thessalonica.org.ru/en/theano.html
 Group:          System/X11/Fonts
-Source0:        http://thessalonica.org.ru/downloads/theano-%{version}.otf.zip
-Source1:        http://thessalonica.org.ru/downloads/theano-%{version}.ttf.zip
-Source2:        http://www.thessalonica.org.ru/downloads/theano-specimen.pdf
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+Source0:        https://thessalonica.org.ru/downloads/theano-%{version}.otf.zip
+Source1:        https://thessalonica.org.ru/downloads/theano-%{version}.ttf.zip
+Source2:        https://www.thessalonica.org.ru/downloads/theano-specimen.pdf
 BuildArch:      noarch
 
 %description
@@ -119,12 +118,10 @@ install -m 0644 *.otf $RPM_BUILD_ROOT%{_datadir}/fonts/%{_fontdir}
 install -m 0644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/%{_fontdir}
 
 %files otf
-%defattr(-,root,root,-)
 %doc FONTLOG.txt OFL.txt OFL-FAQ.txt theano-specimen.pdf
 %{_datadir}/fonts/%{_fontdir}/*.otf
 
 %files ttf
-%defattr(-,root,root,-)
 %doc FONTLOG.txt OFL.txt OFL-FAQ.txt theano-specimen.pdf
 %{_datadir}/fonts/%{_fontdir}/*.ttf
 

@@ -3,9 +3,9 @@ Version:        0.7.1
 Release:        1
 License:        GPL-2.0+
 Summary:        Map of the Transport System for Many City Subways
-URL:            http://sourceforge.net/projects/qmetro/
+URL:            https://sourceforge.net/projects/qmetro/
 Group:          Productivity/Other
-Source0:        http://sourceforge.net/projects/qmetro/files/source/%{name}-%{version}.zip
+Source0:        https://sourceforge.net/projects/qmetro/files/source/%{name}-%{version}.zip
 BuildRequires:  gcc-c++ qt4-devel hicolor-icon-theme
 BuildRequires:  ghostscript ImageMagick
 Requires:       pmetro-maps

@@ -2,10 +2,10 @@ Name:           qsopcast
 Version:        0.3.5
 Release:        1
 Summary:        QT GUI front-end of sopcast
-URL:		http://code.google.com/p/qsopcast/
+URL:		https://code.google.com/p/qsopcast/
 License:        GPL
 Group:          Networking/Other
-Source0:        http://qsopcast.googlecode.com/files/%name-%version.tar.bz2
+Source0:        https://qsopcast.googlecode.com/files/%name-%version.tar.bz2
 Source1:	%name-icons.tar.bz2
 Patch0:		qmake_lsb.patch
 Patch1:		translation.patch

@@ -8,8 +8,8 @@ License: LGPL
 Group: User Interface/Desktops
 Source0: 116964-murrinacrystall2.tar.gz
 Source1: %{theme_name}-index.theme
-Source2: http://imgs.mi9.com/uploads/other/2683/aquamarine-blue-crystal_1280x1024_36540.jpg
-URL: http://gnome-look.org/content/show.php/MurrinaCrystal%20II?content=116964
+Source2: https://imgs.mi9.com/uploads/other/2683/aquamarine-blue-crystal_1280x1024_36540.jpg
+URL: https://gnome-look.org/content/show.php/MurrinaCrystal%20II?content=116964
 BuildArch: noarch
 Requires: crystal-icon-theme
 Requires: crispblue-metacity-theme

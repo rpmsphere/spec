@@ -11,7 +11,7 @@ Patch0:		tkxinput-1.0.tk8.patch
 Patch1:		tkxinput-1.0.wacom.patch
 License:	LGPLv2+
 Group:		System/X11
-URL:		http://freshmeat.net/redir/tkxinput/22191/url_homepage/tkxinput/
+URL:		https://freshmeat.net/redir/tkxinput/22191/url_homepage/tkxinput/
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	tk-devel

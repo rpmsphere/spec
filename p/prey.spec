@@ -4,9 +4,9 @@ Version: 0.5.3
 Release: 9
 License: GPLv3
 Group: Monitoring
-Source: http://preyproject.com/releases/%{version}/%{name}-%{version}-linux.zip
+Source: https://preyproject.com/releases/%{version}/%{name}-%{version}-linux.zip
 Source1: prey-config.desktop
-URL: http://preyproject.com/
+URL: https://preyproject.com/
 Requires: curl, scrot, groff, gstreamer, perl-Net-SSLeay, perl-IO-Socket-SSL, mpg123, ImageMagick, traceroute
 BuildArch: noarch
 

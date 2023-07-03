@@ -5,7 +5,7 @@ Release:	1
 License:	BSD-like
 Group:		X11/Window Managers
 Source0:	xorg62-wmfs-gb7b8ff8.tar.gz
-URL:		http://wmfs.info/
+URL:		https://wmfs.info/
 BuildRequires:	freetype-devel
 BuildRequires:	imlib2-devel
 BuildRequires:	libXft-devel

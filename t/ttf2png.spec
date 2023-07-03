@@ -5,8 +5,8 @@ Version:       0.3
 Release:       16.1
 Summary:       Create a PNG image containing a set of glyphs from a true type font
 Group:         Applications/Graphics
-URL:           http://www.tdb.fi/ttf2png.shtml
-Source:        http://www.tdb.fi/files/ttf2png-%{version}.tar.gz
+URL:           https://www.tdb.fi/ttf2png.shtml
+Source:        https://www.tdb.fi/files/ttf2png-%{version}.tar.gz
 License:       GPL
 BuildRequires: freetype-devel
 BuildRequires: libpng-devel

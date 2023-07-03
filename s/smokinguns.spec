@@ -4,7 +4,7 @@ Version:        1.1
 Release:        1
 Group:          Games/Shooter
 License:        GPLv2+
-URL:            http://www.smokin-guns.org
+URL:            https://www.smokin-guns.org
 Source0:        %{name}.sh
 Source1:        %{name}.autodlrc
 Source2:        %{name}.desktop

@@ -4,12 +4,11 @@ Group:          System/X11/Terminals
 Summary:        A program to change the settings of an xterm
 Version:        0.5.2
 Release:        526.1
-URL:            http://sourceforge.net/projects/clts/
+URL:            https://sourceforge.net/projects/clts/
 Source:         %{name}-%{version}.tar.bz2
 Patch0:         %{name}-%{version}.dif
 Patch1:         %{name}-%{version}-strcat.patch
 Patch2:         %{name}-%{version}-dash.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Xtermset allows you to change the characteristics of an xterm window
@@ -43,7 +42,6 @@ rm -rf  $RPM_BUILD_ROOT
 make "DESTDIR=$RPM_BUILD_ROOT" install
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog NEWS README THANKS
 /usr/bin/xtermset
 %{_mandir}/man?/*

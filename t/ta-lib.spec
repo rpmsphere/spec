@@ -4,8 +4,8 @@ Version:	0.4.0
 Release:	7.1
 License:	BSD
 Group:		System/Libraries
-Source:		http://sourceforge.net/projects/ta-lib/files/%{name}/%{version}/%{name}-%{version}-src.tar.gz
-URL:		http://ta-lib.org/
+Source:		https://sourceforge.net/projects/ta-lib/files/%{name}/%{version}/%{name}-%{version}-src.tar.gz
+URL:		https://ta-lib.org/
 BuildRequires:	automake libtool
 
 %description

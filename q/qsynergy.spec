@@ -5,7 +5,7 @@ Version:        0.9.1
 Release:        5.1
 License:        GPL v2
 Group:          Productivity/Networking/Other
-URL:            http://www.volker-lanz.de/en/software/qsynergy/
+URL:            https://www.volker-lanz.de/en/software/qsynergy/
 Source:         %{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel
 BuildRequires:	qt4-devel gcc-c++

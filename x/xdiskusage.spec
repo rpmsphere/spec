@@ -6,8 +6,8 @@ Release:        1
 Summary:        Lightweight interface to visualize your detailed disk usage
 Group:          File tools
 License:        GPLv2+
-URL:            http://xdiskusage.sourceforge.net
-Source0:        http://xdiskusage.sourceforge.net/%{name}-%{version}.tgz
+URL:            https://xdiskusage.sourceforge.net
+Source0:        https://xdiskusage.sourceforge.net/%{name}-%{version}.tgz
 Source1:        %{name}.png
 Patch0:         xdiskusage-1.51-mga-optflags.patch
 Patch1:         xdiskusage-1.51-mga-nostrip.patch

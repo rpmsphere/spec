@@ -6,10 +6,10 @@ Version: 1.2
 Release: 17.1
 License: freeware
 Group: User Interface/Desktops
-Source0: http://www.deviantart.com/download/56137684/muku_gtk_by_thrynk.zip
+Source0: https://www.deviantart.com/download/56137684/muku_gtk_by_thrynk.zip
 Source1: %{theme_name}-index.theme
-Source2: http://alxboss.free.fr/wallpapers/background-japan1.jpg
-URL: http://thrynk.deviantart.com/art/Muku-GTK-56137684
+Source2: https://alxboss.free.fr/wallpapers/background-japan1.jpg
+URL: https://thrynk.deviantart.com/art/Muku-GTK-56137684
 BuildArch: noarch
 Requires: mintx-icon-theme
 Requires: lemnosui-metacity-theme

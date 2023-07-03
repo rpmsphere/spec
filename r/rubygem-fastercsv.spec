@@ -8,8 +8,8 @@ Version: 	1.5.5
 Release: 	15.1
 Group: 		Development/Languages
 License: 	GPLv2+ or Ruby
-URL:        http://%{gemname}.rubyforge.org/
-Source0:    http://rubygems.org/downloads/%{gemname}-%{version}.gem
+URL:        https://%{gemname}.rubyforge.org/
+Source0:    https://rubygems.org/downloads/%{gemname}-%{version}.gem
 Requires: 	rubygems
 BuildRequires: 	rubypick ruby-devel rubygems
 BuildArch: 	noarch

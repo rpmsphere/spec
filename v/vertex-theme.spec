@@ -22,7 +22,7 @@ The theme comes with three variants to choose from. The default variant with
 dark header-bars, a light variant, and a dark variant.
 
 With background by memovaslg:
-http://memovaslg.deviantart.com/art/Alone-353235628
+https://memovaslg.deviantart.com/art/Alone-353235628
 
 %prep
 %setup -q

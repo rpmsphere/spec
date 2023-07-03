@@ -9,7 +9,7 @@ Group:          Amusements/Games/Strategy/Other
 Summary:        A Strategy Game
 Version:        0.60.3
 Release:        1
-URL:            http://www.squaroid.org/
+URL:            https://www.squaroid.org/
 Source:         squaroid-%{version}.tar.bz2
 Source1:        squaroid-gfx-%{gfx_version}.tar.bz2
 Source2:        squaroid-sfx-%{sfx_version}.tar.bz2

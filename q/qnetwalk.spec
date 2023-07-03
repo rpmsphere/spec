@@ -7,7 +7,7 @@ Group:          Amusements/Games/Logic
 Summary:        Game for System Administrators
 Version:        1.4
 Release:        1
-URL:            http://qt.osdn.org.ua/qnetwalk.html
+URL:            https://qt.osdn.org.ua/qnetwalk.html
 Source0:        %{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png

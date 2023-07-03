@@ -7,11 +7,11 @@ Version: 2.0.7
 Release: 11.1
 Group: Amusements/Games
 License: GPL
-Source0: http://www.sfc.wide.ad.jp/~kusune/netmaj/files/%{name}-%{version}.tar.gz
-Source1: http://www.sfc.wide.ad.jp/~kusune/netmaj/files/%{name}-xui-%{version}.tar.gz
+Source0: https://www.sfc.wide.ad.jp/~kusune/netmaj/files/%{name}-%{version}.tar.gz
+Source1: https://www.sfc.wide.ad.jp/~kusune/netmaj/files/%{name}-xui-%{version}.tar.gz
 Patch0: netmaj-2.0.7-turbolinux.patch
 Patch1: netmaj-2.0.7-build.patch
-URL: http://www.sfc.wide.ad.jp/~kusune/netmaj/
+URL: https://www.sfc.wide.ad.jp/~kusune/netmaj/
 BuildRequires: libX11-devel
 BuildRequires: libXpm-devel
 BuildRequires: ncurses-devel

@@ -5,7 +5,7 @@ Version:        0.1.1
 Release:        8.1
 Summary:        Wraps Fortran code in C, Cython and Python
 License:        BSD
-URL:            http://sourceforge.net/projects/fwrap/files/
+URL:            https://sourceforge.net/projects/fwrap/files/
 Group:          Development/Libraries/Python
 Source0:        %{pyname}-%{version}.tar.bz2
 BuildArch:      noarch

@@ -2,9 +2,9 @@ Name:           unicode-screensaver
 Version:        0.5
 Release:        4.1
 Summary:        Screensaver with a random Unicode Character
-Source0:        http://www.joachim-breitner.de/archive/unicode-screensaver/%{name}-%{version}.tar.gz
+Source0:        https://www.joachim-breitner.de/archive/unicode-screensaver/%{name}-%{version}.tar.gz
 Source1:        %{name}.png
-URL:            http://www.joachim-breitner.de/projects
+URL:            https://www.joachim-breitner.de/projects
 Group:          Amusements/Toys/Screensavers
 License:        MIT/X
 BuildRequires:  libX11-devel libXmu-devel libXft-devel

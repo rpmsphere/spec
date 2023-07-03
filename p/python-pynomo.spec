@@ -3,11 +3,11 @@ Summary: Nomographs with Python
 Name: python-pynomo
 Version: 0.2.2
 Release: 5.1
-Source0: http://sourceforge.net/projects/pynomo/files/pynomo/0.2.2/PyNomo-%{version}.tar.gz
+Source0: https://sourceforge.net/projects/pynomo/files/pynomo/0.2.2/PyNomo-%{version}.tar.gz
 License: GPLv2
 Group: Development/Libraries
 BuildArch: noarch
-URL: http://pynomo.org/
+URL: https://pynomo.org/
 BuildRequires: python
 
 %description

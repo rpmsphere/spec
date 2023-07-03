@@ -2,7 +2,7 @@ Summary:	Program for secure cleaning of free space on file systems
 Name:		wipefreespace
 Version:	2.2.2
 Release:	3.1
-URL:		http://wipefreespace.sf.net
+URL:		https://wipefreespace.sf.net
 License:	GPLv2
 Group:		Applications/System
 Source:		https://sourceforge.net/projects/wipefreespace/files/wipefreespace/%{version}/%{name}-%{version}.tar.gz

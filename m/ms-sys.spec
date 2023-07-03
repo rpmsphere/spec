@@ -4,8 +4,8 @@ Version: 2.8.0
 Release: 1
 License: GPL
 Group: Applications/System
-URL: http://ms-sys.sourceforge.net/
-Source: http://dl.sf.net/ms-sys/ms-sys-%{version}.tar.gz
+URL: https://ms-sys.sourceforge.net/
+Source: https://dl.sf.net/ms-sys/ms-sys-%{version}.tar.gz
 BuildRequires: bash
 BuildRequires: gettext
 

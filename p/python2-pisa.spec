@@ -3,8 +3,8 @@ Version:       3.0.33
 Release:       10.1
 Summary:       PDF generator using HTML and CSS
 Group:         System/Libraries/Python
-URL:           http://www.xhtml2pdf.com
-Source:        http://pypi.python.org/packages/source/p/pisa/pisa-%{version}.tar.gz
+URL:           https://www.xhtml2pdf.com
+Source:        https://pypi.python.org/packages/source/p/pisa/pisa-%{version}.tar.gz
 Patch:         python-pisa-3.0.33-set.patch
 License:       Apache License 2.0
 BuildRequires: python2

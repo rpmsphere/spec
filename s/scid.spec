@@ -6,8 +6,8 @@ Group:          Amusements/Games
 Requires:       tcl python2
 Version:        4.7.0
 Release:        1
-URL:            http://scid.sourceforge.net/
-Source:         http://sourceforge.net/projects/scid/files/Scid/Scid%204.7/%{name}-code-%{version}.zip
+URL:            https://scid.sourceforge.net/
+Source:         https://sourceforge.net/projects/scid/files/Scid/Scid%204.7/%{name}-code-%{version}.zip
 Source1:	%{name}.png
 Source2:	%{name}.desktop 
 Source3:	%{name}.6

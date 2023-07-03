@@ -5,7 +5,7 @@ Summary: 	Tkinter dialog box for editing any Python object
 Version: 	0.4
 Release: 	7.1
 Source:		%{oname}-%{version}.tar.gz
-URL:		http://home.gna.org/oomadness/en/editobj/
+URL:		https://home.gna.org/oomadness/en/editobj/
 License:	GPLv2
 Group:		Development/Python
 BuildRequires:  python2-devel

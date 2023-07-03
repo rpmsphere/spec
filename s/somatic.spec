@@ -5,9 +5,9 @@ Release:        1
 Summary:        Somatic is a software for solving arbitrary polyomino and polycube puzzles, like the soma puzzle.
 Group:          Amusements/Games
 License:        LGPL
-URL:            http://www.moerig.com/somatic/
-Source0:        http://www.moerig.com/somatic/somatic-source-20040406.tar.bz2
-Source1:	http://www.moerig.com/somatic/somaforms.gif
+URL:            https://www.moerig.com/somatic/
+Source0:        https://www.moerig.com/somatic/somatic-source-20040406.tar.bz2
+Source1:	https://www.moerig.com/somatic/somaforms.gif
 Patch0:		somatic-Make.Config.patch
 Patch1:		somatic-txtsoma.cpp.patch
 Patch2:		somatic-sGFX_cube.hpp.patch

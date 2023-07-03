@@ -7,7 +7,7 @@ Summary:	A text editor with the hundreds of features
 URL:		https://github.com/psemiletov/tea-qt
 Group:		Productivity/Text/Editors
 License:	GPL
-Source0:	http://semiletov.org/tea/dloads/%{name}-qt-%{version}.tar.gz
+Source0:	https://semiletov.org/tea/dloads/%{name}-qt-%{version}.tar.gz
 BuildRequires:  libpng-devel
 BuildRequires:	gcc-c++
 BuildRequires:  hunspell-devel

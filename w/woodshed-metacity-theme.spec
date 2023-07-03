@@ -7,7 +7,7 @@ Release: 6.1
 License: CC by
 Group: User Interface/Desktops
 Source: Wood Shed.tar.gz
-URL: http://gnome-look.org/content/show.php/Wood+Shed?content=175520
+URL: https://gnome-look.org/content/show.php/Wood+Shed?content=175520
 BuildArch: noarch
 
 %description

@@ -27,11 +27,11 @@ sed -i 's|log2(flag)|log2(float(flag))|' src/core/subtitleline.cpp
 
 %build
 %cmake
-make
+%cmake_build
 
 %install
 %__rm -rf $RPM_BUILD_ROOT
-make DESTDIR=$RPM_BUILD_ROOT install
+%cmake_install
 %find_lang %{name}
 
 %files -f %{name}.lang

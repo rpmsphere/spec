@@ -9,7 +9,7 @@ Group: User Interface/Desktops
 Source0: 165450-zukimac-gtk-themes.7z
 Source1: Sunrise_at_Pyramid_Lake.png
 Source2: Mount_Fuji.jpg
-URL: http://gnome-look.org/content/show.php/Zukimac?content=165450
+URL: https://gnome-look.org/content/show.php/Zukimac?content=165450
 BuildArch: noarch
 BuildRequires: p7zip
 Requires: gtk-murrine-engine
@@ -19,8 +19,8 @@ Requires: breathe-icon-theme
 %description
 This is a Mac-like theme that I made based on Zuki-themes.
 With backgrounds by:
-G. Donald Bain, http://360panos.com/Nevada/NorthAndCentralNevada/PyramidLake/
-Sean MacDonald, http://sportsroadtrips.blogspot.tw/2012/04/hnd-cts-april-5-2012.html
+G. Donald Bain, https://360panos.com/Nevada/NorthAndCentralNevada/PyramidLake/
+Sean MacDonald, https://sportsroadtrips.blogspot.tw/2012/04/hnd-cts-april-5-2012.html
 
 %prep
 %setup -q -c

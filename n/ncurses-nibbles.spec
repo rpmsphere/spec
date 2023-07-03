@@ -6,11 +6,11 @@ Version: 0.0.4
 Release: 12.1
 License: GPL
 Group: Games/Arcade
-Source0: http://www.earth.li/projectpurple/files/nibbles-v%version.tar.gz
+Source0: https://www.earth.li/projectpurple/files/nibbles-v%version.tar.gz
 Patch0: nibbles-Makefile.patch
 Patch1: nibbles-window.patch
 Patch2: nibbles-score.patch
-URL: http://www.earth.li/projectpurple/progs/nibbles.html
+URL: https://www.earth.li/projectpurple/progs/nibbles.html
 BuildRequires: ncurses-devel
 
 %description

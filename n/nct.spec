@@ -7,11 +7,10 @@ Version:	1.4
 Release:	7.1
 License:	GPL
 Group:		Applications/Games
-Source0:	http://ftp.yar.ru/pub/source/nct/%{name}-%{version}.tar.gz
-URL: http://lav.yar.ru/programs.html
+Source0:	https://ftp.yar.ru/pub/source/nct/%{name}-%{version}.tar.gz
+URL: https://lav.yar.ru/programs.html
 BuildRequires:	ncurses-devel
 #Requires(post):	fileutils
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Tetris-like game, extended by colors. Light colors can be replaced by
@@ -59,7 +58,6 @@ touch %{_localstatedir}/games/%{name}.score
 %{__chmod} 0664 %{_localstatedir}/games/%{name}.score
 
 %files
-%defattr(644,root,root,755)
 %doc README NEWS
 %attr(2755,root,games) %{_bindir}/%{name}
 %attr(0664,root,games) %ghost %{_localstatedir}/games/%{name}.score

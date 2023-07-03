@@ -5,7 +5,7 @@ Release:        7.1
 Summary:        Unum allows defining and manipulating true quantities
 Group:          Development/Libraries/Python
 License:        LGPL
-URL:            http://home.scarlet.be/be052320/Unum.html
+URL:            https://home.scarlet.be/be052320/Unum.html
 Source0:        kiv-unum-409befe069ac.zip
 BuildArch:      noarch
 BuildRequires:  python2-devel unzip python2-setuptools python-nose

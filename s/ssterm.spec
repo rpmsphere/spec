@@ -4,10 +4,9 @@ Release:            3.1
 Summary:            Simple Serial-Port Terminal
 Source:             https://github.com/downloads/vsergeev/ssterm/ssterm-%{version}.tar.gz
 Patch1:             ssterm-optflags.patch
-URL:                http://dev.frozeneskimo.com/software_projects:ssterm
+URL:                https://dev.frozeneskimo.com/software_projects:ssterm
 Group:              Applications/Communications
 License:            GNU General Public License version 2 or later (GPL v2 or later)
-BuildRoot:          %{_tmppath}/build-%{name}-%{version}
 BuildRequires:      ncurses-devel
 BuildRequires:      gcc make glibc-devel
 
@@ -38,7 +37,6 @@ scrolling/dumping, and data piping.
 %__rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog README
 %{_bindir}/ssterm
 

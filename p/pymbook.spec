@@ -2,11 +2,11 @@
 Name:           pymbook
 Version:        0.4
 Release:        7.1
-Summary:        A reader application for http://www.haodoo.net
+Summary:        A reader application for https://www.haodoo.net
 Group:          Applications/Publishing
 License:        GPLv3
-URL:            http://code.google.com/p/pymbook
-Source0:        http://pymbook.googlecode.com/files/%{name}_%{version}.0-0.tar.gz
+URL:            https://code.google.com/p/pymbook
+Source0:        https://pymbook.googlecode.com/files/%{name}_%{version}.0-0.tar.gz
 BuildArch:      noarch
 BuildRequires:  python2-devel gettext desktop-file-utils
 Requires:       gtk2 desktop-file-utils

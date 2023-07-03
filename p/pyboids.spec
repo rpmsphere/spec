@@ -4,8 +4,8 @@ Version: 0.3.0
 Release: 5.1
 Group: X11/Amusements
 License: GPL
-URL: http://www.pobox.com/~taw/pyboids
-Source0: http://downloads.sourceforge.net/%{name}/%{name}-%{version}-1.tar.gz
+URL: https://www.pobox.com/~taw/pyboids
+Source0: https://downloads.sourceforge.net/%{name}/%{name}-%{version}-1.tar.gz
 BuildArch: noarch
 Requires: tkinter
 

@@ -4,8 +4,8 @@ Version: 0.4
 Release: 5.1
 Group: Applications/Internet
 License: GPLv3
-URL: http://naufrago.sourceforge.net/
-Source0: http://sourceforge.net/projects/naufrago/files/%{name}-%{version}.tar.bz2
+URL: https://naufrago.sourceforge.net/
+Source0: https://sourceforge.net/projects/naufrago/files/%{name}-%{version}.tar.bz2
 BuildArch: noarch
 Requires: pywebkitgtk
 Requires: python-feedparser

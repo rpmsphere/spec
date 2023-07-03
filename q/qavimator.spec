@@ -5,7 +5,7 @@ Release: 7.1
 License: GPL
 Group: Applications/Multimedia/Animations
 Source: %{name}-%{version}.tar.bz2
-URL: http://qavimator.sf.net
+URL: https://qavimator.sf.net
 BuildRequires: qt4-devel freeglut-devel cmake
 BuildRequires: gcc-c++ libstdc++-devel libXmu-devel
 

@@ -4,8 +4,8 @@ Version: 0.5.3
 Release: 8.1
 License: GPL
 Group: System/Monitoring
-URL: http://www.daveltd.com/src/util/ttyload/
-Source0: http://www.daveltd.com/src/util/ttyload/%{name}-%{version}.tar.bz2
+URL: https://www.daveltd.com/src/util/ttyload/
+Source0: https://www.daveltd.com/src/util/ttyload/%{name}-%{version}.tar.bz2
 BuildRequires: libpcap-devel
 
 %description

@@ -8,7 +8,7 @@ Version: 1.4
 Release: 1
 Group: Education
 License: Artistic License
-URL: http://scratch.mit.edu/
+URL: https://scratch.mit.edu/
 Patch: 0001-Fix-build-UnicodePlugin.patch
 Requires: squeak-vm, libv4l
 Source: %real_name%version.zip

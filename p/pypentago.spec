@@ -6,7 +6,7 @@ Summary:	A board game pentago using Python
 Summary(zh_TW):	使用 Python 的 pentago 棋盤遊戲
 Group:		Amusements/Games
 License:	GPL
-URL:		http://sourceforge.net/projects/pypentago/
+URL:		https://sourceforge.net/projects/pypentago/
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	python2-devel, python2-setuptools
 Requires:	python-twisted PyQt4

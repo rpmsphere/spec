@@ -4,7 +4,7 @@ Version: 1.0
 Release: 5.1
 Group: Applications/System
 License: GPL
-URL: http://portspoof.org/
+URL: https://portspoof.org/
 Source0: %{name}-master.zip
 
 %description

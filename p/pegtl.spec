@@ -1,11 +1,11 @@
 Name:         pegtl
 Summary:      Parsing Expression Grammar (PEG) Template Library
-URL:          http://code.google.com/p/pegtl/
+URL:          https://code.google.com/p/pegtl/
 Group:        Compiler
 License:      MIT
 Version:      0.32
 Release:      2.1
-Source0:      http://pegtl.googlecode.com/files/pegtl-%{version}.tgz
+Source0:      https://pegtl.googlecode.com/files/pegtl-%{version}.tgz
 BuildArch:    noarch
 
 %description

@@ -4,7 +4,7 @@ Version: 4.1
 Release: 4.1
 Group: Applications/Engineering
 License: shareware
-URL: http://www.inria.fr/centre/sophia/
+URL: https://www.inria.fr/centre/sophia/
 Source0: %{name}-%{version}.tar.gz
 
 %description

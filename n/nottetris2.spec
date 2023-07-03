@@ -4,8 +4,8 @@ Release:        9.1
 Summary:        Classic Tetris mixed with physics
 License:        Zlib
 Group:          Amusements/Games/Action/Arcade
-URL:            http://stabyourself.net/nottetris2/
-Source:         http://stabyourself.net/dl.php?file=nottetris2/%{name}-source.zip
+URL:            https://stabyourself.net/nottetris2/
+Source:         https://stabyourself.net/dl.php?file=nottetris2/%{name}-source.zip
 Requires:       love
 BuildArch:      noarch
 

@@ -70,10 +70,10 @@ sed -i 's|monitor_unref|monitor_free|' applets/drawing/monitors/monitors.vala
 %cmake -DCMAKE_C_FLAGS="-fPIC -I/usr/include/harfbuzz" \
   -DCMAKE_INSTALL_SYSCONFDIR=%{_sysconfdir} \
   -DGSETTINGS_COMPILE=OFF
-make %{?_smp_mflags}
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 %find_lang %{name}
 
 %post

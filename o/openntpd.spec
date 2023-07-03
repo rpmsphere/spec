@@ -7,7 +7,7 @@ Group:          Productivity/Networking/Other
 BuildRequires:  openssl-devel
 Conflicts:      xntp
 Provides:       ntp
-URL:            http://www.openntpd.org/
+URL:            https://www.openntpd.org/
 Source0:        %{name}-%{version}.tar.gz
 Source1:        ntpd.init
 Summary:        Free and Small Network Time Protocol daemon

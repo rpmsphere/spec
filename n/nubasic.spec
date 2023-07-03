@@ -5,7 +5,7 @@ Release: 1
 Group: Development/Language
 License: GPLv2+
 URL: https://github.com/eantcal/nubasic
-Source0: http://downloads.sourceforge.net/project/%{name}/%{name}-rel_%{version}.tar.gz
+Source0: https://downloads.sourceforge.net/project/%{name}/%{name}-rel_%{version}.tar.gz
 BuildRequires: gcc-c++ automake
 BuildRequires: libX11-devel
 #BuildRequires: xterm

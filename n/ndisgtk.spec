@@ -5,7 +5,7 @@ Release: 1
 License: GPL
 Group: System Environment/Kernel
 URL: https://launchpad.net/ndisgtk/
-Source: http://jak-linux.org/projects/ndisgtk/ndisgtk-%{version}.tar.gz
+Source: https://jak-linux.org/projects/ndisgtk/ndisgtk-%{version}.tar.gz
 Patch: ndisgtk-0.8-centos.patch
 BuildRequires: intltool, python2-devel, pygtk2-devel
 Requires: python, pygtk2, ndiswrapper

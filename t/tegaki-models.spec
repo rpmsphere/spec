@@ -4,10 +4,10 @@ Version: 	0.3
 Release: 	1
 License: 	GPLv2+
 Group: 		System/Internationalization
-Source0: 	http://www.tegaki.org/releases/0.3/models/tegaki-zinnia-japanese-0.3.zip
-Source1:	http://www.tegaki.org/releases/0.3/models/tegaki-zinnia-simplified-chinese-0.3.zip
-Source2:	http://www.tegaki.org/releases/0.3/models/tegaki-zinnia-traditional-chinese-0.3.zip
-URL: 		http://www.tegaki.org/
+Source0: 	https://www.tegaki.org/releases/0.3/models/tegaki-zinnia-japanese-0.3.zip
+Source1:	https://www.tegaki.org/releases/0.3/models/tegaki-zinnia-simplified-chinese-0.3.zip
+Source2:	https://www.tegaki.org/releases/0.3/models/tegaki-zinnia-traditional-chinese-0.3.zip
+URL: 		https://www.tegaki.org/
 BuildArch:	noarch
 Requires:	tegaki
 

@@ -4,8 +4,8 @@ Release: 7.1
 Summary: SBML toolbox for octave and matlab
 License: LGPLv2
 Group: Development/Tools
-URL: http://sbml.org/Software/SBMLToolbox
-Source0: http://sourceforge.net/projects/sbml/files/SBMLToolbox/%{version}/SBMLToolbox-%{version}.zip
+URL: https://sbml.org/Software/SBMLToolbox
+Source0: https://sourceforge.net/projects/sbml/files/SBMLToolbox/%{version}/SBMLToolbox-%{version}.zip
 BuildArch: noarch
 
 %description

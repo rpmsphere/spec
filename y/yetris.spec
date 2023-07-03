@@ -3,8 +3,8 @@ Summary: Tetris(tm) on console
 Version: 2.3.0
 Release: 4.1
 Group: Amusements/Games
-URL: hhttp://sourceforge.net/projects/yetris-yetris/
-Source0: http://sourceforge.net/projects/yetris-yetris/files/linux/%{name}-%{version}.tar.gz
+URL: hhttps://sourceforge.net/projects/yetris-yetris/
+Source0: https://sourceforge.net/projects/yetris-yetris/files/linux/%{name}-%{version}.tar.gz
 License: GPLv3
 BuildRequires: ncurses-devel
 

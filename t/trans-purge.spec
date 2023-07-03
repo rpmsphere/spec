@@ -6,9 +6,9 @@ Summary: Linux Desktop Purge Tools
 Summary(zh_TW): Linux 桌面瘦身工具
 License: GPL
 Group: Applications/System
-Source0: http://pcman.sayya.org/desktop-purge.c
-Source1: http://pcman.sayya.org/mime-purge.c
-Source2: http://pcman.sayya.org/gconf-purge.c
+Source0: https://pcman.sayya.org/desktop-purge.c
+Source1: https://pcman.sayya.org/mime-purge.c
+Source2: https://pcman.sayya.org/gconf-purge.c
 Vendor: Hong Jen Yee (PCMan)   <pcman.tw( at )gmail.com>
 BuildRequires: glib2-devel, pkgconfig
 

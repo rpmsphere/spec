@@ -6,8 +6,8 @@ Release:	15.1
 Summary:	High-performance Prolog Compiler
 Group:		Development/Languages
 License:	Artistic 2.0 or LGPLv2+
-Source:		http://www.dcc.fc.up.pt/~vsc/Yap/yap-%{version}.tar.gz
-URL: 		http://www.dcc.fc.up.pt/~vsc/Yap
+Source:		https://www.dcc.fc.up.pt/~vsc/Yap/yap-%{version}.tar.gz
+URL: 		https://www.dcc.fc.up.pt/~vsc/Yap
 BuildRequires:	readline-devel, gmp-devel, texinfo
 
 %description

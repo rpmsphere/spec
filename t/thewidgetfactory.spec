@@ -4,8 +4,8 @@ Release:        27.1
 Summary:        A tool for previewing GTK widgets
 Group:          Development/Tools
 License:        GPL+
-URL:            http://www.stellingwerff.com/?page_id=10 
-Source0:        http://www.stellingwerff.com/TheWidgetFactory/%{name}-%{version}.tar.gz
+URL:            https://www.stellingwerff.com/?page_id=10 
+Source0:        https://www.stellingwerff.com/TheWidgetFactory/%{name}-%{version}.tar.gz
 Source1:        thewidgetfactory.desktop
 Source2:        thewidgetfactory.png
 Patch0:		    thewidgetfactory-aarch64.patch

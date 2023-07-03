@@ -9,7 +9,7 @@ Group:		System
 Summary:	QT-based simple desktop calculator & unit converter
 BuildRequires:  libpng-devel
 BuildRequires:	gcc-c++, make, pkgconfig, pkgconfig(QtGui)
-URL:		http://code.google.com/p/qonverter/
+URL:		https://code.google.com/p/qonverter/
 
 %description
 Qonverter is simple and easy-to-use unit & currency converter and calculator.

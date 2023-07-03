@@ -8,7 +8,6 @@ Group:         Development/Libraries
 License:       opensource
 URL:           https://github.com/moriyoshi/php-Xlib
 Source0:       moriyoshi-php-Xlib-058ed10.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:     noarch
 Requires:      php 
 
@@ -29,7 +28,6 @@ install -m 644 * $RPM_BUILD_ROOT%{_datadir}/php/%{realname}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_datadir}/php/%{realname}
 
 %changelog

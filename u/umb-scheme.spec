@@ -3,9 +3,9 @@ Version:       3.2
 Release:       18.1
 Summary:       An implementation of the Scheme programming language
 Group:         Development/Applications
-URL:           http://www.cs.umb.edu/~wrc/scheme/
-Source:        http://www.cs.umb.edu/~wrc/scheme/umb-scheme-%{version}.tar.gz
-#Source1:       http://swissnet.ai.mit.edu/ftpdir/scm/slib2d5.zip
+URL:           https://www.cs.umb.edu/~wrc/scheme/
+Source:        https://www.cs.umb.edu/~wrc/scheme/umb-scheme-%{version}.tar.gz
+#Source1:       https://swissnet.ai.mit.edu/ftpdir/scm/slib2d5.zip
 Source2:       slibcat
 Patch0:        %{name}-3.2-misc.patch
 Patch1:        %{name}-3.2-texinfo.patch
@@ -16,7 +16,6 @@ Patch5:        %{name}-3.2-slib2c7.patch
 Patch6:        %{name}-3.2-share.patch
 Patch7:        %{name}-3.2-vi.patch
 License:       GPL
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 Requires:      slib
 
 %description
@@ -66,7 +65,6 @@ ln -s ../slib $RPM_BUILD_ROOT%{_datadir}/umb-scheme/slib
 rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %attr(0755,root,root) %{_bindir}/%{name}
 %attr(0755,root,root) %dir %{_datadir}/%{name}
 %attr(0644,root,root) %{_datadir}/%{name}/prelude.scheme

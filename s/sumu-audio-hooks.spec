@@ -3,7 +3,7 @@ Summary:   Audio hooks for SUMU
 Name:      sumu-audio-hooks
 Version:   0.2
 Release:   1
-URL:       http://code.google.com/p/otb-sources/wiki/SUMU
+URL:       https://code.google.com/p/otb-sources/wiki/SUMU
 License:   LGPLv2+
 Group:     System Environment/Base
 Source0:   pactl_list.c

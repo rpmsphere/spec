@@ -4,8 +4,8 @@ Version: 2.6.7
 Release: 3.1
 Group: Converted/utils
 License: see /usr/share/doc/xplanetfx/copyright
-URL: http://mein-neues-blog.de/xplanetFX
-Source0: http://repository.mein-neues-blog.de:9000/latest/%{name}.tar.gz
+URL: https://mein-neues-blog.de/xplanetFX
+Source0: https://repository.mein-neues-blog.de:9000/latest/%{name}.tar.gz
 BuildArch: noarch
 
 %description

@@ -6,8 +6,8 @@ Release:        1
 Summary:        Public Domain Curses for X11
 License:        Public Domain
 Group:          Development/Libraries
-URL:            http://pdcurses.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/pdcurses/PDCurses-%{version}.tar.gz
+URL:            https://pdcurses.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/pdcurses/PDCurses-%{version}.tar.gz
 BuildRequires:  libX11-devel
 BuildRequires:  libXt-devel
 BuildRequires:  libXaw-devel

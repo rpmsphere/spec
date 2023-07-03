@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 Name:           tipp10
 Summary:        Educational typing tutor
-URL:            http://www.tipp10.de/
+URL:            https://www.tipp10.de/
 License:        GPLv2+
 Group:          Amusements/Games
 Version:        2.0.3

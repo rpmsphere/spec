@@ -7,8 +7,8 @@ Summary(uk_UA): Маленький віконний менеджер для X Wi
 Summary(ru_RU): Маленький оконный менеджер для X Window System
 License: GPL
 Group: Graphical desktop/Other
-URL: http://www.oroborus.org/
-Source0: http://ftp.debian.org/debian/pool/main/o/oroborus/%{name}_%{version}.tar.gz
+URL: https://www.oroborus.org/
+Source0: https://ftp.debian.org/debian/pool/main/o/oroborus/%{name}_%{version}.tar.gz
 Source1: %name-icons.tar.bz2
 Source2: start%name
 Source3: %{name}rc

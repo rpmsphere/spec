@@ -6,7 +6,7 @@ Version: 0.1.14
 Release: 4.1
 Group: Development/Libraries
 License: GPLv3
-URL: http://pypi.python.org/pypi/python-praat-scripts/
+URL: https://pypi.python.org/pypi/python-praat-scripts/
 Source0: https://pypi.python.org/packages/source/p/python-praat-scripts/python-praat-scripts-0.1.14.tar.gz
 BuildRequires: python3
 BuildArch: noarch

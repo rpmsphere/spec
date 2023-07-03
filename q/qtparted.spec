@@ -3,9 +3,9 @@
 Name:		qtparted
 Version:	0.6.0
 Summary:	Graphical Partitioning Tool
-URL:		http://qtparted.sf.net/
+URL:		https://qtparted.sf.net/
 Release:	1
-Source:		http://freefr.dl.sourceforge.net/project/qtparted/qtparted-%version/qtparted-%version.tar.xz
+Source:		https://freefr.dl.sourceforge.net/project/qtparted/qtparted-%version/qtparted-%version.tar.xz
 Source10:	qtparted.pamd
 Source11:	qtparted.pam
 License:	GPL

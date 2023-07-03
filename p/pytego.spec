@@ -4,8 +4,8 @@ Release:	1
 Summary:	A classic boardgame "Stratego" from Milton Bradley
 Group:		Amusements/Games
 License:	GPL
-URL:		http://members.cox.net/churchillrm/projects.html#pytego
-Source0:	http://members.cox.net/churchillrm/%{name}-%{version}.tar.gz
+URL:		https://members.cox.net/churchillrm/projects.html#pytego
+Source0:	https://members.cox.net/churchillrm/%{name}-%{version}.tar.gz
 Source1:	%{name}.png
 Requires:	python, pygame, SDL
 BuildArch:	noarch

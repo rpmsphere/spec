@@ -3,7 +3,7 @@ Version: 2.04
 Release: 5.1
 Summary: A NetWM/EWMH compatible pager
 License: GPLv2+
-URL: http://freecode.com/projects/netwmpager
+URL: https://freecode.com/projects/netwmpager
 Group: Graphical desktop/Other
 Source0: %name-%version.tar.bz2
 Patch0: netwmpager-1.11-alt-DSO.patch

@@ -4,7 +4,7 @@ Release:        1
 Summary:        Graphic twin panel file manager
 Group:          System/X11/Utilities
 License:        GPL-3.0
-URL:            http://sunflower-fm.org/
+URL:            https://sunflower-fm.org/
 Source0:        https://codeload.github.com/MeanEYE/Sunflower/tar.gz/0.5-63#/Sunflower-0.5-63.tar.gz
 Source1:        sunflower.sh
 BuildArch:      noarch

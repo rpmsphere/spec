@@ -1,11 +1,11 @@
 Name:         pngrewrite
 Summary:      PNG Palette Reduction
-URL:          http://entropymine.com/jason/pngrewrite/
+URL:          https://entropymine.com/jason/pngrewrite/
 Group:        Graphics
 License:      Unrestricted Use
 Version:      1.4.0
 Release:      4.1
-Source0:      http://entropymine.com/jason/pngrewrite/pngrewrite-%{version}.zip
+Source0:      https://entropymine.com/jason/pngrewrite/pngrewrite-%{version}.zip
 BuildRequires: libpng-devel
 
 %description

@@ -5,8 +5,8 @@ Summary:        WINGs Display Manager
 Group:          User Interface/X
 # many MIT source files from xdm, and GPLv2+ from Wings
 License:        GPLv2+
-URL:            http://voins.program.ru/wdm/
-Source0:        http://voins.program.ru/wdm/wdm-%{version}.tar.bz2
+URL:            https://voins.program.ru/wdm/
+Source0:        https://voins.program.ru/wdm/wdm-%{version}.tar.bz2
 # stolen from xdm
 Source1:        %{name}.pam
 # adapted from debian to use freedesktop
@@ -14,7 +14,7 @@ Source2:        wdm-update_wdm_wmlist
 # record and reuse previous session before launching generic Xsession
 Source3:        wdm-Xsession
 # debian patch modified to remove the configure patching
-#Patch0:         http://ftp.debian.org/debian/pool/main/w/wdm/wdm_1.28-2.1.diff.gz
+#Patch0:         https://ftp.debian.org/debian/pool/main/w/wdm/wdm_1.28-2.1.diff.gz
 Patch0:         wdm_1.28-2.1.diff
 # use fedora background/icon and match gdm default config
 Patch1:         wdm-1.28-fedora.patch

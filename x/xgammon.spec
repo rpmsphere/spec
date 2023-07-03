@@ -6,8 +6,8 @@ Release: 16.1
 Summary: An X Window System based backgammon game
 License: GPL
 Group: Games/Boards
-URL: http://fawn.unibw-hamburg.de/steuer/xgammon/downloads.html
-Source0: http://fawn.unibw-hamburg.de/steuer/xgammon/Downloads/%name-%version.tar.bz2
+URL: https://fawn.unibw-hamburg.de/steuer/xgammon/downloads.html
+Source0: https://fawn.unibw-hamburg.de/steuer/xgammon/Downloads/%name-%version.tar.bz2
 Source1: %name
 Source2: %{name}16.png
 Source3: %{name}32.png

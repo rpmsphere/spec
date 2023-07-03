@@ -6,8 +6,8 @@ Release:        1
 Summary:        Forward-port of Colossal Cave Adventure 2.5 from 1995
 Group:          Games/Adventure
 License:        BSD-2-Clause
-URL:            http://www.catb.org/~esr/open-adventure/
-Source0:        http://www.catb.org/~esr/open-adventure/%{oname}-%{version}.tar.gz
+URL:            https://www.catb.org/~esr/open-adventure/
+Source0:        https://www.catb.org/~esr/open-adventure/%{oname}-%{version}.tar.gz
 BuildRequires:  pkgconfig(libedit)
 BuildRequires:  python3
 BuildRequires:  python3dist(pyyaml)

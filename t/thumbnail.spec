@@ -4,9 +4,8 @@ Version:		0.4
 Release:		5.1
 License:		GPL
 Group:			Productivity/Graphics/Convertors
-URL:			http://www.chaosreigns.com/code/thumbnail/
+URL:			https://www.chaosreigns.com/code/thumbnail/
 Source:			%{name}-%{version}.tar.gz
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:		noarch
 Requires:		perl
 Requires:		ImageMagick
@@ -22,7 +21,6 @@ Creates a thumbnail image upto a maximum size of 10000 (100x100) pixels.
 install -D -m755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %doc COPYING INSTALL
 

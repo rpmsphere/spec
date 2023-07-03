@@ -6,8 +6,8 @@ Version: 0.8.6
 Release: 3.1
 License: LGPL
 Group: Development/Language
-URL: http://tinybc.sourceforge.net/
-Source: http://sourceforge.net/projects/tinybc/files/%{name}-%{version}.zip
+URL: https://tinybc.sourceforge.net/
+Source: https://sourceforge.net/projects/tinybc/files/%{name}-%{version}.zip
 
 %description
 tinybc is a BASIC interpreter for the curses character screen handling library,

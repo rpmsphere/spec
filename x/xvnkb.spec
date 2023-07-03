@@ -4,9 +4,9 @@ Release: 1.1
 License: GPL
 Summary: Vietnamese keyboard input for X-Window
 Group: System/Internationalization
-URL: http://xvnkb.sourceforge.net/
+URL: https://xvnkb.sourceforge.net/
 Vendor: LandShark Networks
-Source: http://xvnkb.sourceforge.net/%{name}-%{version}.tar.gz
+Source: https://xvnkb.sourceforge.net/%{name}-%{version}.tar.gz
 BuildRequires: libX11-devel libXft-devel
 
 %description

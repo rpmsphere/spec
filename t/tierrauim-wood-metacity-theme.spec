@@ -7,7 +7,7 @@ Release: 4.1
 License: GPL
 Group: User Interface/Desktops
 Source: https://dl.opendesktop.org/api/files/download/id/1460749479/93542-Tierra-UI-M-wood.tar.gz
-URL: http://gnome-look.org/content/show.php/Tierra-UI+Metacity-wood?content=93542
+URL: https://gnome-look.org/content/show.php/Tierra-UI+Metacity-wood?content=93542
 BuildArch: noarch
 
 %description

@@ -7,8 +7,8 @@ Release: 5.1
 License: opensource
 Group: User Interface/X
 BuildArch: noarch
-Source0: http://xiaoxue.iis.sinica.edu.tw/download/files/WSL_TPS_Font.zip
-URL: http://xiaoxue.iis.sinica.edu.tw/download/WSL_TPS_Font.htm
+Source0: https://xiaoxue.iis.sinica.edu.tw/download/files/WSL_TPS_Font.zip
+URL: https://xiaoxue.iis.sinica.edu.tw/download/WSL_TPS_Font.htm
 Requires(post): fontconfig
 
 %description

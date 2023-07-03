@@ -7,8 +7,8 @@ Summary:        A Gamma256 video game by Jason Rohrer
 Summary(fr):	Un jeu vidéo Gamma256 par Jason Rohrer
 Group:          Amusements/Games/Other
 License:        SUSE-Public-Domain
-URL:            http://hcsoftware.sourceforge.net/passage/
-Source0:        http://sourceforge.net/projects/hcsoftware/files/%{_name}_v%{version}_UnixSource.tar.gz
+URL:            https://hcsoftware.sourceforge.net/passage/
+Source0:        https://sourceforge.net/projects/hcsoftware/files/%{_name}_v%{version}_UnixSource.tar.gz
 BuildRequires:  SDL-devel, gcc-c++, desktop-file-utils
 
 %description

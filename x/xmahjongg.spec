@@ -6,12 +6,11 @@ Release:	7.1
 License:	GPL
 Vendor:		Little Cambridgeport Design Factory
 Group:		X11/Applications/Games
-Source0:	http://www.lcdf.org/xmahjongg/%{name}-%{version}.tar.gz
+Source0:	https://www.lcdf.org/xmahjongg/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
-URL:		http://www.lcdf.org/xmahjongg/
+URL:		https://www.lcdf.org/xmahjongg/
 BuildRequires:	gcc-c++, libX11-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Real Mah Jongg is a social game that originated in China thousands of
@@ -49,7 +48,6 @@ install -Dm644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc NEWS README
 %attr(755,root,root) %{_bindir}/%{name}
 %{_datadir}/pixmaps/%{name}.*

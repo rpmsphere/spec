@@ -4,8 +4,8 @@ Version:	1.0.2
 Release:	9.1
 License:	GPLv2
 Group:		Sciences/Other
-URL:		http://www.scicraft.org/
-Source0:	http://www.scicraft.org/files/%{name}-ng_%{version}.tar.bz2
+URL:		https://www.scicraft.org/
+Source0:	https://www.scicraft.org/files/%{name}-ng_%{version}.tar.bz2
 BuildRequires:	python2-devel
 BuildRequires:  texlive-dvipdfmx
 BuildRequires:  latex2html

@@ -2,9 +2,9 @@ Name:		uncia
 Version:	1.3
 Release:	1
 Summary:	Text File Manipulation Command Line Tool
-Source:		http://uncia.sourceforge.net/uncia-%{version}.tar.gz
+Source:		https://uncia.sourceforge.net/uncia-%{version}.tar.gz
 Patch1:		uncia-fix_headers.patch
-URL:		http://uncia.sourceforge.net/
+URL:		https://uncia.sourceforge.net/
 Group:		Productivity/Text/Utilities
 License:	GNU General Public License version 2 or later (GPL v2 or later)
 BuildRequires:	bison flex boost-devel zlib-devel curl-devel

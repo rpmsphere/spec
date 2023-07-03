@@ -6,14 +6,14 @@ Version: 2.1
 Release: 4.1
 License: GPL
 Group: Applications/Bioinformatics
-URL: http://www.ebc.uu.se/systzoo/staff/nylander.html
-Source0: http://www.ebc.uu.se/systzoo/staff/nylander/MrMod21.tgz
+URL: https://www.ebc.uu.se/systzoo/staff/nylander.html
+Source0: https://www.ebc.uu.se/systzoo/staff/nylander/MrMod21.tgz
 
 %description
 Author: Johan A. A. Nylander
 
 MrModeltest is a simplified version of David Posada's "Modeltest 3.06" (see
-Modeltest homepage http://bioag.byu.edu/zoology/crandall_lab/modeltest.htm).
+Modeltest homepage https://bioag.byu.edu/zoology/crandall_lab/modeltest.htm).
 
 "Simplified version" means that it was rewritten to perform the HLRT on 24
 instead of 56 model of nucleotide substitutions (basically a Modeltest

@@ -8,12 +8,12 @@ Summary:        A modern programming language for GNOME
 
 # Most files are LGPLv2.1+, curses.vapi is 2-clause BSD
 License:        LGPLv2+ and BSD
-URL:            http://live.gnome.org/Vala
+URL:            https://live.gnome.org/Vala
 #VCS:           git:git://git.gnome.org/vala
 # note: do not use a macro for directory name
 # as it breaks Colin Walters' automatic build script
 # see https://bugzilla.redhat.com/show_bug.cgi?id=609292
-Source0:        http://download.gnome.org/sources/vala/0.18/vala-%{version}.tar.xz
+Source0:        https://download.gnome.org/sources/vala/0.18/vala-%{version}.tar.xz
 
 BuildRequires:  gcc
 BuildRequires:  flex

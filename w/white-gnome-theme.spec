@@ -7,7 +7,7 @@ Release: 6.1
 License: GPL
 Group: User Interface/Desktops
 Source0: 173840-White-Feb2016.tar.gz
-URL: http://gnome-look.org/content/show.php/White?content=173840
+URL: https://gnome-look.org/content/show.php/White?content=173840
 BuildArch: noarch
 Requires: numix-icon-theme-circle
 Requires: win9-backgrounds

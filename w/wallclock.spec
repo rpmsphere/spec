@@ -5,8 +5,8 @@ Release: 3.1
 BuildArch: noarch
 License: GPLv3
 Group: User Interface/Desktops
-Source0: http://wallclock.googlecode.com/files/%{name}-%{version}.zip
-URL: http://code.google.com/p/wallclock/
+Source0: https://wallclock.googlecode.com/files/%{name}-%{version}.zip
+URL: https://code.google.com/p/wallclock/
 Requires: gnome-session, ImageMagick
 
 %description

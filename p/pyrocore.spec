@@ -3,10 +3,10 @@ Summary: Python Torrent Tools
 Name: pyrocore
 Version: 0.4.2
 Release: 7.1
-Source0: http://pypi.python.org/packages/source/p/pyrocore/%{name}-%{version}.zip
+Source0: https://pypi.python.org/packages/source/p/pyrocore/%{name}-%{version}.zip
 License: GNU GPL v2
 Group: Internet
-URL: http://code.google.com/p/pyroscope/
+URL: https://code.google.com/p/pyroscope/
 BuildArch: noarch
 BuildRequires:  python2
 BuildRequires: python2-setuptools

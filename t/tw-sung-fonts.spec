@@ -6,17 +6,17 @@ Version: 98.1
 Release: 4
 License: BSD-like
 Group: User Interface/X
-URL: http://data.gov.tw/node/5961
+URL: https://data.gov.tw/node/5961
 BuildArch: noarch
 Source0: %{name}-%{version}.zip
 Requires: fontconfig
 
 %description
 Chinese TTF Fonts applied by www.cns11643.gov.tw
-License see: http://www.cns11643.gov.tw/AIDB/copyright.do
+License see: https://www.cns11643.gov.tw/AIDB/copyright.do
 
 TW-Sung-98_1.ttf, TW-Sung-Ext-B-98_1.ttf, TW-Sung-Plus-98_1.ttf
-are from http://www.cns11643.gov.tw/AIDB/Open_Data.zip with
+are from https://www.cns11643.gov.tw/AIDB/Open_Data.zip with
 
 %prep
 %setup -q -c

@@ -5,7 +5,7 @@ Version:        2.2alpha.dev2114
 Release:        7.1
 Summary:        Markov chain Monte Carlo for Python
 License:        MIT
-URL:            http://code.google.com/p/pymc/downloads/list
+URL:            https://code.google.com/p/pymc/downloads/list
 Group:          Development/Libraries/Python
 Source0:        %{pyname}-2114.tar.bz2
 BuildRequires:  python2-devel, python2-setuptools, python2-numpy

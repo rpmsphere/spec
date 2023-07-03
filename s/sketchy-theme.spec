@@ -6,12 +6,12 @@ Version: 0.80
 Release: 11.1
 License: GPL
 Group: User Interface/Desktops
-Source0: http://www.deviantart.com/download/175492975/sketchy_by_therealpadster.zip
+Source0: https://www.deviantart.com/download/175492975/sketchy_by_therealpadster.zip
 Source1: https://raw.githubusercontent.com/revdancatt/FutureLearn-Creative-Coding/master/week_05/c03_sketchy_hex_pattern/c03_sketchy_hex_pattern.jpg
 Requires: nerdy-lines-icon-theme
 Requires: sketch-cursor-theme
 BuildArch: noarch
-URL: http://therealpadster.deviantart.com/art/Sketchy-175492975
+URL: https://therealpadster.deviantart.com/art/Sketchy-175492975
 
 %description
 The base was The_Rob's slickness, because it is very complete

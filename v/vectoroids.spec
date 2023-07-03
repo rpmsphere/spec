@@ -9,7 +9,7 @@ Name:			vectoroids
 Version:		1.1.0
 Summary:		A clone of the classic "Asteroids" arcade game
 License:		GPLv2
-URL:			http://www.newbreedsoftware.com/vectoroids/
+URL:			https://www.newbreedsoftware.com/vectoroids/
 Group:			Amusements/Games/Action/Arcade
 Release:		8.4
 Source:			%{name}-%{version}.tar.bz2

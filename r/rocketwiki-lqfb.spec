@@ -7,9 +7,9 @@ Release:	1
 Summary:	RocketWiki for Liquid Feekback
 License:	MIT/X11
 Group:		Productivity/Networking
-Source0:	http://www.public-software-group.org/pub/projects/rocketwiki/liquid_feedback_edition/v%{version}/%{name}-v%{version}.tar.gz
+Source0:	https://www.public-software-group.org/pub/projects/rocketwiki/liquid_feedback_edition/v%{version}/%{name}-v%{version}.tar.gz
 BuildRequires:	ghc-parsec-devel
-URL:		http://www.public-software-group.org/webmcp
+URL:		https://www.public-software-group.org/webmcp
 Provides:	%{_name}
 
 %description

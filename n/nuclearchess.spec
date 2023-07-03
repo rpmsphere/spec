@@ -3,9 +3,9 @@ Name:		nuclearchess
 Version:	1.0.0
 Release:	7.1
 License:	GPLv2
-Source:		http://user.cs.tu-berlin.de/~karlb//%{name}/%{name}-%{version}.tar.gz
+Source:		https://user.cs.tu-berlin.de/~karlb//%{name}/%{name}-%{version}.tar.gz
 Group:		Games/Boards
-URL:		http://www.linux-games.com/nuclearchess/
+URL:		https://www.linux-games.com/nuclearchess/
 BuildRequires:	SDL_image-devel
 
 %description

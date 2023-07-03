@@ -7,8 +7,8 @@ Release:        1
 Summary:        wallpaper changer using files, folders, FTP and web sites
 Group:          Amusements/Graphics
 License:        GPLv2 
-URL:            http://www.becrux.com/index.php?page=projects&name=wally
-Source0:        http://www.becrux.com/pages/projects/wally/wally-2.4.1.tar.gz
+URL:            https://www.becrux.com/index.php?page=projects&name=wally
+Source0:        https://www.becrux.com/pages/projects/wally/wally-2.4.1.tar.gz
 Source1:	wally.desktop
 BuildRequires:  qt4-devel libexif-devel cmake gcc gcc-c++ desktop-file-utils
 

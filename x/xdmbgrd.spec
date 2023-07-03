@@ -8,7 +8,6 @@ Summary:        SuSE Linux background
 Source:         xdmbgrd-0.6.tar.bz2
 Patch:          xdmbgrd-0.6.dif
 Patch1:         xdmbgrd-piggyback.dif
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 %{expand: %%global _exec_prefix %(type -p pkg-config &>/dev/null && pkg-config --variable prefix x11 || echo /usr/X11R6)}
 
 %description
@@ -47,7 +46,6 @@ else
 fi
 
 %files -f file-list
-%defattr(-,root,root)
 
 %changelog
 * Thu Sep 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6

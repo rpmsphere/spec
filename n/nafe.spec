@@ -2,13 +2,12 @@ Name:           nafe
 License:        GPL v2 or later
 Group:          Development/Tools/Other
 Summary:        Not Another Font Editor
-URL:            http://nafe.sourceforge.net/
+URL:            https://nafe.sourceforge.net/
 Version:        0.1
 Release:        4.1
 Source:         nafe-0.1.tar.gz
 Patch1:         nafe-0.1-warnings.patch
 Patch2:         nafe-0.1-rename.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 NAFE is no consolefont editor, but a toolset to translate psf format
@@ -34,7 +33,6 @@ install -m755 psf2txt $RPM_BUILD_ROOT%{_bindir}/nafe-psf2txt
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
 %doc COPYING demo* readme.txt
 %{_bindir}/*
 

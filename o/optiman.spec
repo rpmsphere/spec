@@ -3,8 +3,8 @@ Summary: A small utility to transform man pages
 Version: 1.1.1
 Release: 3.1
 Group: Development/Tools
-URL: http://lav.yar.ru/programs.html
-Source0: http://ftp.yar.ru/pub/source/misc/%{name}-%{version}.tgz
+URL: https://lav.yar.ru/programs.html
+Source0: https://ftp.yar.ru/pub/source/misc/%{name}-%{version}.tgz
 License: Public Domain
 BuildRequires: ncurses-devel
 

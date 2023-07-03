@@ -6,8 +6,8 @@ Version: 2006
 Release: 5.1
 Group: Applications/Engineering
 License: opensource
-URL: http://www.nndc.bnl.gov/nndcscr/model-codes/preco-2000/
-Source0: http://www.nndc.bnl.gov/nndcscr/model-codes/%{name}-%{version}/%{name}6.zip
+URL: https://www.nndc.bnl.gov/nndcscr/model-codes/preco-2000/
+Source0: https://www.nndc.bnl.gov/nndcscr/model-codes/%{name}-%{version}/%{name}6.zip
 BuildRequires: gcc-gfortran
 
 %description

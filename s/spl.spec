@@ -4,8 +4,8 @@ Name:            spl
 Version:         0.7.10
 Release:         3.1
 License:         GPL
-URL:             http://zfsonlinux.org/
-Source:          http://archive.zfsonlinux.org/downloads/zfsonlinux/spl/%{name}-%{version}.tar.gz
+URL:             https://zfsonlinux.org/
+Source:          https://archive.zfsonlinux.org/downloads/zfsonlinux/spl/%{name}-%{version}.tar.gz
 
 %description
 The Solaris Porting Layer (SPL) is a Linux kernel module which provides

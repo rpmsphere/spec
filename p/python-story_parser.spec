@@ -3,11 +3,11 @@
 Name:           python-story_parser
 Version:        0.1.2
 Release:        2.1
-URL:            http://github.com/hugobr/story_parser
+URL:            https://github.com/hugobr/story_parser
 Summary:        A Given/When/Then BDD stories parser
 License:        MIT
 Group:          Development/Languages/Python
-Source:         http://pypi.python.org/packages/source/s/story_parser/story_parser-%{version}.tar.gz
+Source:         https://pypi.python.org/packages/source/s/story_parser/story_parser-%{version}.tar.gz
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildArch:      noarch

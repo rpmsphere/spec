@@ -4,8 +4,8 @@ Release:        3.1
 Summary:        A forensics tool to examine Thumbs.db files
 Group:          Applications/System
 License:        GPLv2+
-URL:            http://vinetto.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-beta-%{version}.tar.gz
+URL:            https://vinetto.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-beta-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  python2-setuptools

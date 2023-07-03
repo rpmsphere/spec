@@ -5,7 +5,7 @@ License:        SRILM Research Community License
 Group:          Productivity/Scientific/Other 
 BuildRequires:  gcc-c++ tcsh tcl-devel
 BuildArch:      noarch
-URL:            http://www.speech.sri.com/projects/srilm/
+URL:            https://www.speech.sri.com/projects/srilm/
 Source:         %{name}-%{version}.tar.bz2
 Patch0:         %{name}-1.6.0-sanity.patch
 Summary:        SRI Language Modeling Toolkit

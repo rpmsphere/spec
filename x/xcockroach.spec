@@ -6,7 +6,7 @@ Release: 14.1
 Summary: Displays cockroaches on your desktop
 License: GPL
 Group: Toys
-URL: http://xcockroach.free.fr/
+URL: https://xcockroach.free.fr/
 Source0: %{name}-%{version}.tar.bz2
 Patch0: xcockroach-0.4-flags.patch
 BuildRequires: libX11-devel

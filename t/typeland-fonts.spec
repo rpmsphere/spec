@@ -6,10 +6,10 @@ Version:        2010trial
 Release:        1.1
 License:        Trialware
 Group:          User Interface/X
-URL:            http://typeland.com/
-Source0:	http://file.typeland.com/typeface/TpldKhangXiDict/TpldKhangXiDictTrial_1.023.zip
-Source1:	http://file.typeland.com/typeface/TpldYiFengScripture/TpldYiFengScripture_1.003.zip
-Source2:	http://file.typeland.com/typeface/TpldLehBienLehsho/TpldLehBienLehshoTrial_1.010.zip
+URL:            https://typeland.com/
+Source0:	https://file.typeland.com/typeface/TpldKhangXiDict/TpldKhangXiDictTrial_1.023.zip
+Source1:	https://file.typeland.com/typeface/TpldYiFengScripture/TpldYiFengScripture_1.003.zip
+Source2:	https://file.typeland.com/typeface/TpldLehBienLehsho/TpldLehBienLehshoTrial_1.010.zip
 BuildArch:      noarch
 
 %description
@@ -32,7 +32,6 @@ install -m 644 *.otf $RPM_BUILD_ROOT%{font_dir}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc *.pdf
 %{font_dir}
 

@@ -6,8 +6,8 @@ Version:        0.2.2
 Release:        1.%{srcdate}
 Summary:        A collection of microcomputer emulators
 License:        GPLv2
-URL:            http://www.hampa.ch/%{name}/about.html
-Source0:        http://www.hampa.ch/pub/%{name}/pre/%{name}-%{srcdate}-%{srcserial}/%{name}-%{srcdate}-%{srcserial}.tar.gz
+URL:            https://www.hampa.ch/%{name}/about.html
+Source0:        https://www.hampa.ch/pub/%{name}/pre/%{name}-%{srcdate}-%{srcserial}/%{name}-%{srcdate}-%{srcserial}.tar.gz
 Obsoletes:      %{name}-sim6502 <= 0.2.2
 BuildRequires:  gcc
 BuildRequires:  nasm

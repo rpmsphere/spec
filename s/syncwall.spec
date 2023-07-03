@@ -6,8 +6,8 @@ Version: 2.0.0
 Release: 9.1
 License: GPLv2+
 Group: User Interface/Desktops
-URL: http://sourceforge.net/projects/syncwall/
-Source0: http://sourceforge.net/projects/syncwall/files/%{version}/SyncWall-%{version}-src.zip
+URL: https://sourceforge.net/projects/syncwall/
+Source0: https://sourceforge.net/projects/syncwall/files/%{version}/SyncWall-%{version}-src.zip
 BuildRequires: dos2unix
 BuildRequires: qt4-devel
 

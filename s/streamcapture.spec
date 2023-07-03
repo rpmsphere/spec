@@ -2,7 +2,7 @@ Name:		streamcapture
 Summary:	A program to save streaming video to your computer
 Version:	0.2.8
 Release:	8.1
-URL:		http://ceicer.org/streamcapture/index_eng.php
+URL:		https://ceicer.org/streamcapture/index_eng.php
 Source0:	streamcapture-%{version}-source.tar.gz
 Source1:	streamcapture.desktop
 Source2:	streamcapture.png
@@ -11,7 +11,6 @@ License:	GPL
 Group:		Productivity/Networking/Other
 Requires:	rtmpdump
 BuildRequires: gcc-c++ qt4-devel desktop-file-utils
-BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 
 %description
 Want to save video on your computer to view whenever you want?
@@ -23,7 +22,7 @@ There is a setup program for Windows, Slackware and an experimental version for 
 Tested on Windows XP and Windows 7 and Slackware 13.37
 and an experimental version runs on Ubuntu 11.04.
 
-streamCapture is designed to work primarily on http://svtplay.se/ and http://urplay.se/
+streamCapture is designed to work primarily on https://svtplay.se/ and https://urplay.se/
 
 streamCapture using RTMPDump to download.
 rtmpdump is a toolkit for RTMP streams.
@@ -58,7 +57,6 @@ done
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/streamcapture
 %{_datadir}/applications/streamcapture.desktop
 %{_datadir}/pixmaps/streamcapture.png

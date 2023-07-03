@@ -5,7 +5,7 @@ Name:           python-pyfftw3
 Version:        0.2.1
 Release:        3.1
 Summary:        A python binding to the FFTW3 library
-URL:            http://pypi.python.org/pypi/PyFFTW3
+URL:            https://pypi.python.org/pypi/PyFFTW3
 License:        GPLv3
 Group:          Development/Libraries/Python
 Source:         %{modname}-%{version}.tar.gz

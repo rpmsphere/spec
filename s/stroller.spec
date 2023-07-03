@@ -34,7 +34,6 @@ desktop-file-install --delete-original       \
    $RPM_BUILD_ROOT%{_datadir}/applications/*.desktop
 
 %files
-%defattr(-,root,root,-)
 /opt/stroller/bin/stroller
 /usr/share/icons/hicolor/64x64/apps/stroller.png
 /usr/share/applications/stroller.desktop

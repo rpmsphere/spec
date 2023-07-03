@@ -6,7 +6,7 @@ Version: 2.3.4
 Release: 12.1
 License: GPLv2
 Group: devel
-URL: http://shark-project.sourceforge.net/
+URL: https://shark-project.sourceforge.net/
 Source0: %{name}-%{version}.zip
 BuildRequires: cmake
 
@@ -33,10 +33,10 @@ This package contains the development files required to compile programs that us
 %build
 export CXXFLAGS="-fpermissive -fPIC"
 %cmake
-make %{?_smp_mflags}
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot}
+%cmake_install
 %ifarch x86_64 aarch64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif

@@ -4,8 +4,8 @@ Version: 0.2
 Release: 3.1
 Group: System Environment/Base
 License: GPLv2+
-URL: http://kde-look.org/content/show.php/Seven+Plymouth+Theme?content=128652
-Source0: http://www.infinality.net/files/7-%{version}.tar.gz
+URL: https://kde-look.org/content/show.php/Seven+Plymouth+Theme?content=128652
+Source0: https://www.infinality.net/files/7-%{version}.tar.gz
 Requires: plymouth-scripts
 BuildArch: noarch
 

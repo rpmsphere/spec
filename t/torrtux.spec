@@ -4,9 +4,8 @@ Version: 1.1.3
 Release: 5.1
 Group: Internet
 License: GPLv3
-URL: http://sourceforge.net/projects/torrtux/
-Source0: http://sourceforge.net/projects/torrtux/files/Torrtux/%{name}-%{version}/%{name}-%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+URL: https://sourceforge.net/projects/torrtux/
+Source0: https://sourceforge.net/projects/torrtux/files/Torrtux/%{name}-%{version}/%{name}-%{version}.tar.gz
 BuildArch: noarch
 Requires: perl-Switch
 Requires: perl-libwww-perl

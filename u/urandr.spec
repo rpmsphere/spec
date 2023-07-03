@@ -5,8 +5,8 @@ Version:       0.1
 Release:       7.1
 Summary:       A GUI to RandR 1.2
 Group:         Graphical Desktop/Applications/Configuration
-URL:           http://albertomilone.com/urandr.html
-Source:        http://albertomilone.com/ubuntu/urandr/urandr-%{version}.tar.gz
+URL:           https://albertomilone.com/urandr.html
+Source:        https://albertomilone.com/ubuntu/urandr/urandr-%{version}.tar.gz
 License:       GPL
 BuildRequires:  python2
 BuildArch: noarch

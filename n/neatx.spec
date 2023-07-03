@@ -4,8 +4,8 @@ Release: 1
 Summary: Open Source NX server
 Group: Networking/Remote access
 License: GPLv2
-URL: http://code.google.com/p/neatx/
-Source: http://neatx.googlecode.com/files/%name-%version.tar.gz
+URL: https://code.google.com/p/neatx/
+Source: https://neatx.googlecode.com/files/%name-%version.tar.gz
 Source1: README.ALT
 Source2: %name.conf
 Requires: nx

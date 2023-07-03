@@ -4,8 +4,8 @@ Version:       0.6.4.1
 Release:       4.1
 Summary:       A module to work with Excel 97+ files
 Group:         System/Libraries/Python
-URL:           http://sourceforge.net/projects/pyexcelerator/
-Source:        http://downloads.sourceforge.net/project/pyexcelerator/pyExcelerator/%{version}/%{name}-%{version}.zip
+URL:           https://sourceforge.net/projects/pyexcelerator/
+Source:        https://downloads.sourceforge.net/project/pyexcelerator/pyExcelerator/%{version}/%{name}-%{version}.zip
 License:       BSD
 BuildRequires: python-devel
 Requires:      python

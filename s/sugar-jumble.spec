@@ -8,7 +8,7 @@ Source:		jumble-22.xo
 BuildRequires:	python3, sugar-toolkit-gtk3
 Requires:	sugar
 BuildArch:	noarch
-URL:		http://activities.sugarlabs.org/addon/4413
+URL:		https://activities.sugarlabs.org/addon/4413
 
 %description
 In a jumble of 83 objects, the player has to locate 20.

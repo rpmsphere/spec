@@ -2,7 +2,7 @@ Name:		xdg-compliance
 Version:	0.1
 Release:	10.1
 License:	MIT
-URL:		http://gitorious.org/xdg-autostart/
+URL:		https://gitorious.org/xdg-autostart/
 Source0:	xdg-autostart-%{version}.tar.bz2
 Source1:	xdg-autostart.xinit
 Source2:	update-menus.xinit

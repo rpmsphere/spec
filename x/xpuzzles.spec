@@ -99,11 +99,11 @@ done
   Html no longer corrupted.
   reverseVideo update.
   New bump.au sound, db lowered, and bumpdat.au removed, thanks
-    to  http://audacity.sourceforge.net to help clean the sound up.
+    to  https://audacity.sourceforge.net to help clean the sound up.
   Changed default so that practice is true for puzzles that have
     it:  xrubik, xskewb, xdino, xpyraminx, xoct, xmball, xmlink,
     xbarrel.
-  Now use http://netpbm.sf.net to generate images from xpm.
+  Now use https://netpbm.sf.net to generate images from xpm.
   xdino: Fix some orient line OpenGL problems.
   xdino: Fix Period 2 OpenGL problems.
   wrubik, wskewb, wdino: Windows OpenGL stuff now ported.

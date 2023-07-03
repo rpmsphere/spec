@@ -2,12 +2,11 @@ Name:				revoco
 Version:			0.4
 Release:			3.1
 Summary:			Wheel Behaviour Configuration Tool for the Logitech MX-Revolution Mouse
-Source:			http://goron.de/~froese/revoco/revoco-%{version}.tar.gz
+Source:			https://goron.de/~froese/revoco/revoco-%{version}.tar.gz
 Patch1:			revoco-fix_makefile_flags.patch
-URL:				http://goron.de/~froese/revoco/
+URL:				https://goron.de/~froese/revoco/
 Group:			Hardware/Other
 License:			Public Domain
-BuildRoot:		%{_tmppath}/build-%{name}-%{version}
 BuildRequires:	gcc make glibc-devel
 BuildRequires:	help2man
 
@@ -44,7 +43,6 @@ help2man \
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %{_bindir}/revoco
 %doc %{_mandir}/man8/revoco.8*
 

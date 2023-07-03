@@ -12,7 +12,7 @@ BuildRequires:	gcc-c++, cmake, hicolor-icon-theme, pkgconfig(QtGui)
 Requires:	mplayer
 
 %description
-Please download any *.pls (e.g. http://somafm.com/play/groovesalad130),
+Please download any *.pls (e.g. https://somafm.com/play/groovesalad130),
 put it to ~/.config/radiola/playlist.pls, run radiola and select any channel.
 
 %prep

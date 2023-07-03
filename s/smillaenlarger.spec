@@ -6,7 +6,7 @@ Version: 0.9.0
 Release: 5.1
 License: GPLv3+
 Group: Amusements/Graphics
-URL: http://sourceforge.net/projects/imageenlarger/
+URL: https://sourceforge.net/projects/imageenlarger/
 Source0: smillaenlarger_%{version}.orig.tar.bz2
 Source1: smillaenlarger_%{version}-0.2~ppa3.debian.tar.bz2
 BuildRequires: qt-devel gcc-c++ desktop-file-utils

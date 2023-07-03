@@ -2,7 +2,7 @@ Summary:   SUMU theme for GDM
 Name:      sumu-gdm-theme
 Version:   3.0.7
 Release:   2.1
-URL:       http://code.google.com/p/otb-sources/wiki/SUMU
+URL:       https://code.google.com/p/otb-sources/wiki/SUMU
 License:   MIT
 Group:     System Environment/Base
 Source0:   login-theme-sumu.tar.gz
@@ -10,7 +10,7 @@ BuildArch: noarch
 
 %description
 A default GDM theme for gdm-2.16.0 for SUMU by
-Open Technologies Bulgaria, Ltd. <http://otb.bg>.
+Open Technologies Bulgaria, Ltd. <https://otb.bg>.
 
 %prep
 %setup -q -n login-theme-sumu

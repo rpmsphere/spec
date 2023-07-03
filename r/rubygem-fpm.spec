@@ -9,7 +9,7 @@ BuildRequires:  ruby, rubygems
 BuildRequires:  rubypick
 BuildArch:	    noarch
 URL:            https://github.com/jordansissel/fpm
-Source:         http://rubygems.org/downloads/%{mod_name}-%{version}.gem
+Source:         https://rubygems.org/downloads/%{mod_name}-%{version}.gem
 Summary:        Package building and mangling
 License:        MIT
 Group:          Development/Languages/Ruby

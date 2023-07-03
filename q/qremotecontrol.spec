@@ -4,8 +4,8 @@ Release:        3.1
 Summary:        Remote control your desktop from your mobile
 License:        GPLv3
 Group:          Networking/Other
-URL:            http://qremote.org
-Source0:        http://downloads.sourceforge.net/project/qrc/%{version}/%{name}-%{version}.tar.bz2
+URL:            https://qremote.org
+Source0:        https://downloads.sourceforge.net/project/qrc/%{version}/%{name}-%{version}.tar.bz2
 BuildRequires:  pkgconfig(Qt3Support)
 BuildRequires:  pkgconfig(xtst)
 

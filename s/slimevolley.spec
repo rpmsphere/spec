@@ -6,7 +6,7 @@ Release:   1
 Summary:   A volley ball game
 Group:     Amusements/Games
 License:   GPL
-URL:       http://slime.tuxfamily.org/
+URL:       https://slime.tuxfamily.org/
 Source0:   slimevolley_2.4.1.tar.gz
 Source1:   slimevolley.desktop
 Source2:   slimevolley.png

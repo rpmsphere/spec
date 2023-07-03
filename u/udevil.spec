@@ -6,7 +6,7 @@ Release:	5.1
 Summary:	Mount and unmount without password
 Group:		System Environment/Daemons
 License:	GPLv3+
-URL:		http://ignorantguru.github.com/udevil/
+URL:		https://ignorantguru.github.com/udevil/
 Source0:	https://github.com/IgnorantGuru/%{name}/archive/%{name}-%{version}.tar.gz
 BuildRequires:	intltool, gettext
 BuildRequires:	systemd-devel, glib2-devel

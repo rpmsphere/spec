@@ -2,11 +2,11 @@ Name:		xoget
 Summary:	XO-Get with PyGTK User Interface
 Version:	1.2.5
 Release:	1
-URL:		http://wiki.laptop.org/go/Xo-get
+URL:		https://wiki.laptop.org/go/Xo-get
 License:	GPL
 BuildArch:	noarch
-Source0:	http://xo-get.olpc.at/xoget.xo
-Source1:	http://xo-get.olpc.at/xo-get.py
+Source0:	https://xo-get.olpc.at/xoget.xo
+Source1:	https://xo-get.olpc.at/xo-get.py
 Group:		System Environment/Base
 Requires:	pygtk2, sugar-toolkit
 

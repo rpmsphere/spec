@@ -5,8 +5,8 @@ Version:        5.1
 Release:        9
 Summary:        Retrieve and manage the data of the IMDb movie database
 License:        GPLv2+   
-URL:            http://imdbpy.sourceforge.net/
-Source0:        http://prdownloads.sourceforge.net/imdbpy/%{realname}-%{version}.tar.gz
+URL:            https://imdbpy.sourceforge.net/
+Source0:        https://prdownloads.sourceforge.net/imdbpy/%{realname}-%{version}.tar.gz
 #use system beautifulsoup
 Patch0:         %{name}-4.2-beautifulsoup.patch
 Patch1:		%{name}-4.8.2-setup.patch

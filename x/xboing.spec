@@ -5,14 +5,14 @@ Version:	2.4
 Release:	24.1
 License:	MIT
 Group:		X11/Applications/Games
-Source0:	http://www.techrescue.org/xboing/%{name}%{version}.tar.gz
+Source0:	https://www.techrescue.org/xboing/%{name}%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}.patch
 Patch1:		%{name}-Imakefile.patch
 Patch2:		%{name}-sparc.patch
 Patch3:		%{name}-visualfix.patch
-URL:		http://www.techrescue.org/xboing/
+URL:		https://www.techrescue.org/xboing/
 BuildRequires:	imake, libX11-devel, libXpm-devel, libXext-devel
 
 %description

@@ -4,7 +4,7 @@ Version: 	0.2
 Release:	54.1
 License:	GPL
 Group:		Graphical desktop/Sawfish
-URL:		http://themes.freshmeat.net/browse/927/
+URL:		https://themes.freshmeat.net/browse/927/
 BuildArch:	noarch
 Source:		%{name}-%{version}.tar.bz2
 Source1:	BrushedMetalII.tar.bz2

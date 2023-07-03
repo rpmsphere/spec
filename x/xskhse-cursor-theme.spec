@@ -6,12 +6,12 @@ Version:        20100213
 Release:        4.1
 License:        freeware
 Group:          User Interface/Desktops
-URL:            http://grynays.deviantart.com/art/XSKH-SE-153963206?q=1&qo=1
-Source0:        http://www.deviantart.com/download/153963206/XSKH_SE_by_GrynayS.gz
+URL:            https://grynays.deviantart.com/art/XSKH-SE-153963206?q=1&qo=1
+Source0:        https://www.deviantart.com/download/153963206/XSKH_SE_by_GrynayS.gz
 BuildArch:      noarch
 
 %description
-X-SKH SE by JJ Ying: http://jjying.wincustomize.com/
+X-SKH SE by JJ Ying: https://jjying.wincustomize.com/
 For the conversion I used the program perl sd2xc-2.5.pl adds KDE4 Compatibility,
 and adjusts the individual pointer animations with GIMP and XMC plugin.
 

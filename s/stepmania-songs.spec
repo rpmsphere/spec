@@ -3,7 +3,7 @@ Name:		stepmania-songs
 Version:	4.0
 Release:	1
 License:	MIT
-URL:		http://www.stepmania.com/browse.php
+URL:		https://www.stepmania.com/browse.php
 Group:		Amusements/Games/Arcade
 Source0:	%{name}-%{version}.tar.bz2
 Requires:	stepmania

@@ -6,8 +6,8 @@ Version:        1.4
 Release:        6.1
 License:        GPL
 Group:          User Interface/Desktops
-URL:            http://gnome-look.org/content/show.php/Polar+Cursor+Theme?content=27913
-Source0:        http://gnome-look.org/CONTENT/content-files/27913-PolarCursorThemes.tar.bz2
+URL:            https://gnome-look.org/content/show.php/Polar+Cursor+Theme?content=27913
+Source0:        https://gnome-look.org/CONTENT/content-files/27913-PolarCursorThemes.tar.bz2
 BuildArch:      noarch
 
 %description

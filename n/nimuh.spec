@@ -1,11 +1,11 @@
 Name:           nimuh
-Url:            http://www.nimuh.com/
+Url:            https://www.nimuh.com/
 License:        CC-by-nc-sa 2.5 Spain
 Group:          Amusements/Games/Logic
 Version:        1.02
 Release:        1
 Summary:        Puzzle game destined to improve the knowledge of Andalusia
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Source1:        %{name}.png
 Source2:        %{name}.desktop
 Patch0:         %{name}-%{version}-glu.patch

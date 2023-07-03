@@ -4,9 +4,9 @@ Version: 14.1.0
 Release: 1
 License: LLNL Notice, non-commercial
 Group: Development/Language
-URL: http://sisal.sourceforge.net/
+URL: https://sisal.sourceforge.net/
 Source0: https://sourceforge.net/projects/sisal/files/sisal-unix/sisal-%{version}/%{name}-%{version}.tgz
-#http://pascal.eng.uci.edu/projects/sisal/sisaltutorial/
+#https://pascal.eng.uci.edu/projects/sisal/sisaltutorial/
 Source1: sisal-tutorial.zip
 
 %description

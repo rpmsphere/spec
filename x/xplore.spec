@@ -6,8 +6,8 @@ Version: 1.2a
 Release: 11.1
 License: GPL
 Group: Applications/File
-Source: http://www.musikwissenschaft.uni-mainz.de/~ag/xplore/xplore-%{version}.tar.gz
-URL: http://www.musikwissenschaft.uni-mainz.de/~ag/xplore/
+Source: https://www.musikwissenschaft.uni-mainz.de/~ag/xplore/xplore-%{version}.tar.gz
+URL: https://www.musikwissenschaft.uni-mainz.de/~ag/xplore/
 BuildRequires: imake
 BuildRequires: libXpm-devel
 BuildRequires: libXmu-devel

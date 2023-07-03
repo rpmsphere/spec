@@ -6,9 +6,8 @@ Group:          Development/Tools/Other
 Requires:       bash, zenity, util-linux, gawk, dfu-util, xterm
 Version:        1.2.3
 Release:        8.1
-URL:            http://wiki.openmoko.org/wiki/NeoTool
+URL:            https://wiki.openmoko.org/wiki/NeoTool
 Summary:        A bash script to provide a GUI frontend for flashing Openmoko for instance
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 License:        GPLv3
 Source0:        %{_name}
 Source1:        %{_name}.desktop
@@ -44,7 +43,6 @@ cp -avL %{S:1} $RPM_BUILD_ROOT/usr/share/applications/NeoTool.desktop
 cp -avL %{S:6} $RPM_BUILD_ROOT/usr/share/applications/NeoTool_root-mode.desktop
 
 %files
-%defattr(-,root,root)
 %{_bindir}/neotool
 %{_datadir}/applications/*.desktop
 %{_datadir}/icons/hicolor/*/apps/*.png

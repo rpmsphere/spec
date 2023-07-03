@@ -7,7 +7,7 @@ Release: 1
 Group: Development/Languages
 License: GPLv2
 URL: https://www.cs.uni.edu/~okane/
-Source0: http://www.cs.uni.edu/~okane/source/MUMPS-MDH/mumps-%{version}.src.tgz
+Source0: https://www.cs.uni.edu/~okane/source/MUMPS-MDH/mumps-%{version}.src.tgz
 BuildRequires: pcre-devel
 Recommends: astyle
 

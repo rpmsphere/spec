@@ -7,7 +7,7 @@ Version: 6.6.0
 Release: 3.1
 License: MIT
 Group: Productivity/Networking/Other
-URL: http://www.tribler.org/
+URL: https://www.tribler.org/
 Source0: https://github.com/Tribler/tribler/releases/download/v%{version}-exp1/%{_name}-v%{version}-exp1.tar.xz
 Patch1: setup.py.patch
 BuildRequires: python2-devel

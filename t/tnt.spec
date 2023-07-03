@@ -4,9 +4,9 @@ Release: 2.1
 Summary: Template Numerical Toolkit
 License: Public domain
 Group: Sciences/Mathematics
-URL: http://math.nist.gov/tnt/
-Source: http://math.nist.gov/tnt/tnt126.zip
-#Source1: http://math.nist.gov/tnt/tnt120doc.zip
+URL: https://math.nist.gov/tnt/
+Source: https://math.nist.gov/tnt/tnt126.zip
+#Source1: https://math.nist.gov/tnt/tnt120doc.zip
 
 %description
 The Template Numerical Toolkit (TNT) is a collection of interfaces and

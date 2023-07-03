@@ -3,10 +3,9 @@ Version:        2002.12.08
 Release:        5.1
 Summary:        PNG to icon converter
 Source:         %{name}-src-2002-12-08.tar.bz2
-URL:            http://www.winterdrache.de/freeware/png2ico/
+URL:            https://www.winterdrache.de/freeware/png2ico/
 Group:          Productivity/Graphics/Other
 License:        OSI Approved
-BuildRoot:      %{_tmppath}/build-%{name}-%{version}
 BuildRequires:  make libpng-devel gcc-c++
 
 %description
@@ -39,7 +38,6 @@ gzip doc/%{name}.1
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc LICENSE README VERSION README.unix
 %{_bindir}/*
 %{_mandir}/man1/%{name}.1.gz

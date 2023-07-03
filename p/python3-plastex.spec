@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 - Updated to 20120721
   * Replaced parse.tokens: DEBUG -> ERROR (plasTexrc)
   * Fixed typo nextok -> nexttok (Base/TeX/Primitives.py)
-  * Added XML namespace http://plastex.sf.net for XML debugging
+  * Added XML namespace https://plastex.sf.net for XML debugging
 output (DOM/__init__.py)
   * Added option --exact, --no-font to dvisvgm (Imagers/dvisvgm.py)
   * Added pdfbookmark, currentpdfbookmark, subpdfbookmark, belowpdfbook

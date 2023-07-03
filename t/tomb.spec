@@ -4,7 +4,7 @@ Version: 2.9
 Release: 1
 Group: Applications/Archiving
 License: GPLv3
-URL: http://www.dyne.org/software/tomb/
+URL: https://www.dyne.org/software/tomb/
 Source0: https://files.dyne.org/.xsend.php?file=tomb/Tomb-%{version}.tar.gz
 BuildArch: noarch
 Requires: zsh

@@ -6,8 +6,8 @@ Release:        5.1
 Summary:        Unicode Console Input Method Framework
 Group:          System Environment/Libraries
 License:        GPL
-URL:            http://code.google.com/p/ucimf/
-Source0:        http://ucimf.googlecode.com/files/lib%{name}-%{version}.tar.gz
+URL:            https://code.google.com/p/ucimf/
+Source0:        https://ucimf.googlecode.com/files/lib%{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++, libtool-ltdl-devel, freetype-devel, fontconfig-devel
 Requires:       freetype, dialog
 

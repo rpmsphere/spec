@@ -2,12 +2,12 @@ Name: spacecup
 Summary: 3D ice-hockey or football in the space
 Version: 0.3.1
 Release: 13.1
-Source0: http://download.sourceforge.net/spacecup/SpaceCup-%{version}.tar.gz
+Source0: https://download.sourceforge.net/spacecup/SpaceCup-%{version}.tar.gz
 Source1: %{name}.32.xpm.bz2
 Patch0: spacecup-fix-static-installdir.patch.bz2
 Patch1: spacecup-add-datadir.patch.bz2
 Patch2: spacecup-fix-datafiles-installpath.patch.bz2
-URL: http://spacecup.sourceforge.net/
+URL: https://spacecup.sourceforge.net/
 License: GPL
 Group: Games/Arcade
 BuildRequires: freeglut-devel

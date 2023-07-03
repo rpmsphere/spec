@@ -6,7 +6,7 @@ Name:           q7basic
 Summary:        Basic for Qt IDE, runtime, compiler and designer
 Version:        1.0
 Release:        16
-URL:            http://www.q7basic.org/
+URL:            https://www.q7basic.org/
 License:        GPL-3.0
 Group:          Development/Tools/IDE
 BuildRequires:  libtool pkgconfig
@@ -19,7 +19,7 @@ BuildRequires:  pkgconfig(QtNetwork) >= 4.8.0
 BuildRequires:  pkgconfig(QtSvg) >= 4.8.0
 BuildRequires:  pkgconfig(QtDeclarative) >= 4.8.0
 BuildRequires:  pkgconfig(QtXml) >= 4.8.0
-Source0:        http://www.q7basic.org/Q7Basic_Source_Code.zip
+Source0:        https://www.q7basic.org/Q7Basic_Source_Code.zip
 Source1:        %{name}.png
 Source2:        %{_name}.desktop
 Patch:          %{_name}-abuild.patch

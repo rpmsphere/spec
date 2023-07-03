@@ -9,7 +9,7 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 Group:		Amusements/Games
 Summary:	Checkers Game
-URL:		http://code.google.com/p/qcheckers
+URL:		https://code.google.com/p/qcheckers
 BuildRequires:  libpng-devel
 BuildRequires:	gcc-c++, make, pkgconfig, pkgconfig(QtCore), pkgconfig(QtGui)
 

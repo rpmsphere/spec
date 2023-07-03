@@ -6,7 +6,7 @@ Version: 0.2
 Release: 15.4
 Group: Amusements/Games
 License: GPLv2
-URL: http://syobon.codeplex.com/
+URL: https://syobon.codeplex.com/
 Source0: syobon-87914.zip
 Source1: syobon.png
 BuildRequires: SDL-devel

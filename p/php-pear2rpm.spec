@@ -10,7 +10,6 @@ Source0:     %{pkg}-%{version}.tar.gz
 Patch0:      %{pkg}-1.4-updates.patch
 Patch1:      %{pkg}-1.4-rpmfix.patch
 URL:         https://cvs.mandriva.com/cgi-bin/viewcvs.cgi/soft/%{pkg}/
-Buildroot:   /var/tmp/%{name}-root
 Requires:    php php-pear
 BuildArch:   noarch
 
@@ -36,7 +35,6 @@ names.
 %{__rm} -rf ${RPM_BUILD_ROOT}
 
 %files
-%defattr(-,root,root) 
 %{_bindir}/*
 
 %changelog

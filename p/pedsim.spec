@@ -4,8 +4,8 @@ Release: 3.1
 Summary: A Microscopic Pedestrian Crowd Simulation System 
 License: GPLv3
 Group: Development/Libraries
-URL: http://pedsim.silmaril.org/
-Source0: http://pedsim.silmaril.org/dist/libpedsim/20140211-libpedsim-2-3-src.tar.gz
+URL: https://pedsim.silmaril.org/
+Source0: https://pedsim.silmaril.org/dist/libpedsim/20140211-libpedsim-2-3-src.tar.gz
 BuildRequires: qt-devel
 
 %description

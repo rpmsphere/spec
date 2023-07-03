@@ -5,7 +5,6 @@ Summary:            Find packages on the openSUSE Build Service
 Source0:            obs-find.pl
 Group:              Development/Tools/Other
 License:            GNU General Public License version 2 or later (GPL v2 or later)
-BuildRoot:          %{_tmppath}/build-%{name}-%{version}
 Requires:           osc
 Requires:           perl
 BuildArch:          noarch
@@ -26,7 +25,6 @@ A frontend to "osc" to search for packages in openSUSE Build Service instances.
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %{_bindir}/obs-find
 
 %changelog

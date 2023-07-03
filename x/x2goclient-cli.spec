@@ -5,9 +5,8 @@ Summary:        A command-line client for the x2go system
 
 Group:          Applications/Communications
 License:        GPLv2
-URL:            http://www.x2go.org
-Source0:        http://x2go.obviously-nice.de/deb/pool-lenny/%{name}/%{name}_%{version}-1.2.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+URL:            https://www.x2go.org
+Source0:        https://x2go.obviously-nice.de/deb/pool-lenny/%{name}/%{name}_%{version}-1.2.tar.gz
 BuildArch:      noarch
 
 Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
@@ -37,7 +36,6 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %files
-%defattr(-,root,root,-)
 %doc AUTHORS COPYING LICENSE 
 %{_bindir}/%{name}
 

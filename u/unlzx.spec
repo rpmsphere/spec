@@ -4,9 +4,9 @@ Version:	1.1
 Release:	4.1
 License:	distributable
 Group:		Applications/Archiving
-Source0:	http://aminet.net/misc/unix/unlzx.c.gz
-Source1:	http://aminet.net/misc/unix/unlzx.c.gz.readme
-URL:		http://xavprods.free.fr/lzx/
+Source0:	https://aminet.net/misc/unix/unlzx.c.gz
+Source1:	https://aminet.net/misc/unix/unlzx.c.gz.readme
+URL:		https://xavprods.free.fr/lzx/
 
 %description
 LZX uses a compact way of encoding large match offsets. The Amiga

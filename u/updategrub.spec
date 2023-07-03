@@ -7,7 +7,6 @@ Source0: %{name}-%{version}.tar.gz
 Source1: findgrub-3.6.2.tar.gz
 BuildArch: noarch
 Requires: os-prober >= 1.49
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires: dialog
 Group: System Environment/Base
 %define docdir %{_docdir}/%{name}-%{version}
@@ -44,7 +43,6 @@ ln -s updateLegacyGrub $RPM_BUILD_ROOT%{_bindir}/updategrub
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc README COPYING defaults
 %dir %{_sysconfdir}/%{name}
 %config (noreplace) %{_sysconfdir}/%{name}/defaults

@@ -4,8 +4,8 @@ Release:	3.1
 Summary:	Write python language in chinese
 Group:		Development/Language
 License:	MIT
-URL:		http://code.google.com/p/zhpy/
-Source0:	http://pypi.python.org/packages/source/z/zhpy/%{name}-%{version}.zip
+URL:		https://code.google.com/p/zhpy/
+Source0:	https://pypi.python.org/packages/source/z/zhpy/%{name}-%{version}.zip
 BuildRequires:	python2-devel, python2-setuptools
 BuildArch:	noarch
 

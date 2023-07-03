@@ -4,9 +4,8 @@ Release:		2.1
 License:		GPLv2
 Group:			Productivity/Networking/Web/Utilities
 Source:			%{name}-%{version}.tar.bz2
-URL:			http://www.davjam.org/~davjam/linux/urlencode/
+URL:			https://www.davjam.org/~davjam/linux/urlencode/
 Summary:		Converts a text string to HTML encoding
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Converts a text string to a HTML entity encoded string.
@@ -24,7 +23,6 @@ rm -rf $RPM_BUILD_ROOT
 install -D -m755 %{name} $RPM_BUILD_ROOT/%{_bindir}/%{name}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README VERSION
 

@@ -3,8 +3,8 @@ Version:       20090609
 Release:       2.1
 Summary:       Python bindings for wpa_supplicant/hostapd ctrl socket
 Group:         System/Libraries/Python
-URL:           http://projects.otaku42.de/wiki/PythonWpaCtrl
-Source:        http://mirror.leaseweb.com/software/archlinux/other/python-wpactrl/python-wpactrl-%{version}.tar.gz
+URL:           https://projects.otaku42.de/wiki/PythonWpaCtrl
+Source:        https://mirror.leaseweb.com/software/archlinux/other/python-wpactrl/python-wpactrl-%{version}.tar.gz
 License:       GPL
 BuildRequires: python2-devel
 

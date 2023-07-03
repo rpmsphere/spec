@@ -2,7 +2,7 @@
 
 Name:         rebol3
 Summary:      REBOL language
-URL:          http://www.rebol.com/
+URL:          https://www.rebol.com/
 Group:        Development/Language
 License:      Apache License 2.0
 Version:      2.101.0

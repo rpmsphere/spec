@@ -8,7 +8,7 @@ Summary:        The Project Gutenberg Epub Maker
 Group:          Applications/Publishing
 License:        GPLv3
 URL:            https://pypi.python.org/pypi/epubmaker/
-Source0:        http://e.pypi.python.org/packages/source/e/%{module}/%{module}-%{version}.zip
+Source0:        https://e.pypi.python.org/packages/source/e/%{module}/%{module}-%{version}.zip
 BuildArch:      noarch
 BuildRequires:  python
 

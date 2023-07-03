@@ -9,7 +9,7 @@ License:	GPLv2
 Group:		Development/Languages
 Source0:	https://codeload.github.com/jasonsikes/QLogo/tar.gz/v%{version}#/%{_name}-%{version}.tar.gz
 URL:		https://github.com/jasonsikes/QLogo
-BuildRequires:	qt5-devel
+BuildRequires:	qt5-qtbase-devel
 BuildRequires:  ImageMagick
 
 %description

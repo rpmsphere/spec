@@ -4,8 +4,8 @@ Version: 0.3.5
 Release: 8.1
 Group: User Interface/X
 License: GPLv2
-URL: http://sourceforge.net/projects/tritium/
-Source0: http://sourceforge.net/projects/tritium/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+URL: https://sourceforge.net/projects/tritium/
+Source0: https://sourceforge.net/projects/tritium/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 Requires: python2-xlib, python-plwm
 BuildRequires: python2-devel, python2-xlib, python-plwm
 BuildArch: noarch

@@ -7,8 +7,8 @@ Release: 1
 License: GPL
 Group: Networking/File transfer
 Summary: Samba share browser
-Source: http://downloads.sourceforge.net/pyneighborhood/%{name}-%{version}-rc2.tar.bz2
-URL: http://pyneighborhood.sourceforge.net/
+Source: https://downloads.sourceforge.net/pyneighborhood/%{name}-%{version}-rc2.tar.bz2
+URL: https://pyneighborhood.sourceforge.net/
 Requires: pygtk2, samba-client
 BuildArch: noarch
 Vendor: Mykola Lynnyk (definer)

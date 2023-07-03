@@ -4,8 +4,8 @@ Version: 1.0
 Release: 3.1
 License: GPLv2
 Group: Amusements/Graphics
-URL: http://www.seehuhn.de/pages/xising
-Source: http://m.seehuhn.de/programs/%{name}-%{version}.tar.gz
+URL: https://www.seehuhn.de/pages/xising
+Source: https://m.seehuhn.de/programs/%{name}-%{version}.tar.gz
 BuildRequires: libX11-devel
 
 %description

@@ -4,10 +4,10 @@ Summary:	Touchpad service for KDE 4
 Name:		synaptiks
 Version:	0.8.1
 Release:	12.4
-Source0:	http://pypi.python.org/packages/source/s/synaptiks/synaptiks-%{version}.tar.bz2
+Source0:	https://pypi.python.org/packages/source/s/synaptiks/synaptiks-%{version}.tar.bz2
 License:	BSD
 Group:		System/Configuration/Hardware
-URL:		http://synaptiks.lunaryorn.de/
+URL:		https://synaptiks.lunaryorn.de/
 BuildRequires:	python2
 BuildRequires:	python2-setuptools
 BuildRequires:	kdelibs-devel

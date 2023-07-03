@@ -46,8 +46,8 @@ Summary:        A sparse matrix library
 # SPOOLES: Utilities/src/iohb.c: BSD 2-Clause style
 License:        BSD-2-Clause AND SUSE-Public-Domain
 Group:          System/Libraries
-URL:            http://www.netlib.org/linalg/spooles/spooles.2.2.html
-Source0:        http://netlib.bell-labs.com/netlib/linalg/spooles/spooles.2.2.tar.bz2
+URL:            https://www.netlib.org/linalg/spooles/spooles.2.2.html
+Source0:        https://netlib.bell-labs.com/netlib/linalg/spooles/spooles.2.2.tar.bz2
 Patch0:         patch-spooles-shared
 Patch1:         patch-spooles-shared-mpi
 Patch2:         patch-spooles-I2Ohash-from-debian
@@ -110,12 +110,10 @@ done
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root)
 %{my_libdir}/libspooles.so.2.2
 %doc spooles.2.2.html
 
 %files devel
-%defattr(-,root,root)
 %{my_incdir}/spooles/
 %{my_libdir}/libspooles.so
 

@@ -2,10 +2,10 @@ Name:           qarecord
 Summary:        QT based ALSA recording interface
 Version:        0.5.0
 Release:        10
-Source0:        http://dl.sf.net/alsamodular/%{name}-%{version}.tar.bz2
+Source0:        https://dl.sf.net/alsamodular/%{name}-%{version}.tar.bz2
 Patch0:         qarecord-0.5.0-upstream1.patch
 Patch1:         qarecord-0.5.0-rus.patch
-URL:            http://alsamodular.sourceforge.net/
+URL:            https://alsamodular.sourceforge.net/
 License:        GPLv2
 Group:          Sound
 BuildRequires:  qt4-devel alsa-lib-devel

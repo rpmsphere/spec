@@ -4,7 +4,7 @@ Version: 1.5git.1330009572
 Release: 11.1
 License:	ASL-2.1+
 Summary:	Easy podcast access in Linux
-URL:		http://sourceforge.net/projects/tunesviewer
+URL:		https://sourceforge.net/projects/tunesviewer
 Group:		Productivity/Networking/Web/Frontends
 Source:		%{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel

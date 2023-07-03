@@ -6,8 +6,8 @@ Release:        18.1
 Group:          System/Base
 License:        BSD
 Requires:       runit
-URL:            http://smarden.org/socklog/
-Source:         http://smarden.org/socklog/socklog-%{version}.tar.gz
+URL:            https://smarden.org/socklog/
+Source:         https://smarden.org/socklog/socklog-%{version}.tar.gz
 Patch:          socklog-2.1.0_compile_warnings.patch
 Patch1:         socklog_2.1.0-4.diff.gz
 Summary:        System and kernel logging services
@@ -49,7 +49,7 @@ network logging concept, and also does log event notification. svlogd has built
 in log file rotation based on file size, so there is no need for any cron jobs
 to rotate the logs. socklog is small, secure, and reliable. 
 
-See http://smarden.org/socklog/ for more information. 
+See https://smarden.org/socklog/ for more information. 
 
 This package sets up the socklog-unix and socklog-klog services to provide a
 system log service and kernel log service respectively.

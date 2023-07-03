@@ -6,7 +6,7 @@ Version: 1.21
 Release: 4.1
 License: GPL-2.0
 Source0:  %{name}-%{version}.tar.gz
-URL: http://linux.bytesex.org/misc/webfs.html
+URL: https://linux.bytesex.org/misc/webfs.html
 Group: System Environment/Daemons
 
 %description

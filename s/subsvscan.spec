@@ -3,9 +3,8 @@ Version:   200511041029
 Release:   3.1
 Group:     System/Base
 License:   GPL
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
-URL:       http://gpl.internetconnection.net/
-Source:    http://gpl.internetconnection.net/files/subsvscan.tar.gz
+URL:       https://gpl.internetconnection.net/
+Source:    https://gpl.internetconnection.net/files/subsvscan.tar.gz
 Patch:     subsvscan_implicit_declarations.patch
 Summary:   Sub supervise support
 
@@ -29,7 +28,6 @@ gcc %{optflags} -DUSE_FCNTL lock.c  subsvscan.c -o subsvscan
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/subsvscan
 %{_mandir}/man8/subsvscan.8*
 %doc CHANGELOG

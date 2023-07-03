@@ -8,8 +8,8 @@ Release: 2
 Summary: File and archive manager
 License: LGPLv3
 Group:   Applications/Archiving
-URL:     http://www.peazip.org/peazip-linux.html
-Source0: http://sourceforge.net/projects/%{name}/files/%{version}/%{name}-%{version}.src.zip
+URL:     https://www.peazip.org/peazip-linux.html
+Source0: https://sourceforge.net/projects/%{name}/files/%{version}/%{name}-%{version}.src.zip
 # configure to run in users home appdata
 Source1: altconf.txt
 
@@ -136,7 +136,7 @@ install -Dm644 ../res/share/batch/freedesktop_integration/%{name}.png %{buildroo
 * Fri Jun 28 2013 Sérgio Basto <sergio@serjux.com> - 5.0-1
 - New upstream release.
 * Sun Apr 28 2013 Sérgio Basto <sergio@serjux.com> - 4.9.2-1
-- First release based on specs of Mageia on http://svnweb.mageia.org/packages/cauldron/peazip/current/SPECS/peazip.spec?view=markup
-and http://pkgs.org/download/peazip with src.rpm on http://download.opensuse.org/repositories/home:/zhonghuaren/Fedora_18/src/
+- First release based on specs of Mageia on https://svnweb.mageia.org/packages/cauldron/peazip/current/SPECS/peazip.spec?view=markup
+and https://pkgs.org/download/peazip with src.rpm on https://download.opensuse.org/repositories/home:/zhonghuaren/Fedora_18/src/
 * Fri Mar 08 2013 Giorgio Tani
 - Initial spec

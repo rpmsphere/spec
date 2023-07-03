@@ -6,9 +6,9 @@ Version:        16270
 Release:        1
 License:        BSD
 Summary:        C++ cross-platform rapid application development framework (known as U++)
-URL:            http://www.ultimatepp.org
+URL:            https://www.ultimatepp.org
 Group:          Development/Languages/C and C++
-Source0:        http://downloads.sourceforge.net/project/upp/upp/%{version}/upp-posix-%{version}.tar.xz
+Source0:        https://downloads.sourceforge.net/project/upp/upp/%{version}/upp-posix-%{version}.tar.xz
 BuildRequires:  libpng-devel
 BuildRequires:  gcc-c++
 BuildRequires:  pkgconfig(gtk+-2.0)

@@ -6,7 +6,7 @@ Release:        1
 Summary:        A Free/OpenSource brick-breaking game with pretty graphics
 License:        GPL-3.0
 Group:          Amusements/Games/Action/Breakout
-URL:            http://sdl-ball.sourceforge.net/
+URL:            https://sdl-ball.sourceforge.net/
 Source:         https://sourceforge.net/projects/sdl-ball/files/sdl-ball/1.04/SDL-Ball_%{version}_src.tar.xz
 Source1:        %{name}.desktop
 Source2:        %{name}.png

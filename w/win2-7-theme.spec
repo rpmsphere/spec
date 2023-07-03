@@ -2,7 +2,7 @@ Summary:	Windows 7 Transformation Pack
 Name:		win2-7-theme
 Version:	6.8.3
 Release:	4.1
-URL:		http://gnome-look.org/content/show.php/Win2-7+Pack?content=113264
+URL:		https://gnome-look.org/content/show.php/Win2-7+Pack?content=113264
 License:	GPL
 Group:		User Interface/Desktops
 Source:		%{name}-%{version}.tar.gz

@@ -4,7 +4,7 @@ Release:        3.1
 Summary:        Subst utility from AltLinux
 Group:          Console
 License:        GPL
-URL:            http://sisyphus.ru
+URL:            https://sisyphus.ru
 Source0:        %{name}-%{version}.tar.bz2
 Requires:       sed
 

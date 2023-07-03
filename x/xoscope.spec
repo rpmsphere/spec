@@ -3,7 +3,7 @@ Version: 2.3
 Release: 1
 Summary: Digital Oscilloscope for PC
 Source: %{name}-%{version}.tar.gz
-URL: http://xoscope.sourceforge.net/
+URL: https://xoscope.sourceforge.net/
 Group: Engineering
 License: GPL
 BuildRequires: libICE-devel alsa-lib-devel fftw-devel gtkdatabox-devel comedilib-devel

@@ -5,8 +5,8 @@ Version:       20.04p14
 Release:       3.1
 Summary:       A freeware fractal generator
 Group:         Graphical Desktop/Applications/Educational
-URL:           http://www.fractint.org/
-Source:        http://www.fractint.org/ftp/current/linux/xfractint-%{version}.tar.gz
+URL:           https://www.fractint.org/
+Source:        https://www.fractint.org/ftp/current/linux/xfractint-%{version}.tar.gz
 License:       Freeware
 BuildRequires: glibc-devel
 BuildRequires: ncurses-devel

@@ -4,8 +4,8 @@ Release:        10.1
 Summary:        A library for WineGame
 License:        LGPL-2.1+
 Group:          System/Emulators/PC
-URL:            http://code.google.com/p/winegame/
-Source0:        http://winegame.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:            https://code.google.com/p/winegame/
+Source0:        https://winegame.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1:        baselibs.conf
 BuildRequires:  cmake
 BuildRequires:  gcc-c++

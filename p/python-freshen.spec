@@ -2,7 +2,7 @@
 Name:           python-freshen
 Version:        0.2
 Release:        4.1
-URL:            http://github.com/rlisagor/freshen
+URL:            https://github.com/rlisagor/freshen
 Summary:        Clone of the Cucumber BDD framework for Python
 License:        GPL
 Group:          Development/Languages/Python

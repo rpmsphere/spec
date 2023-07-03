@@ -6,7 +6,7 @@ Version:            0.2.0
 Release:            6.1
 Summary:            XModMap Configuration Frontend
 Source:             xmodconfig-%{pkg_version}.tar.bz2
-URL:                http://sourceforge.net/projects/xmodconfig/
+URL:                https://sourceforge.net/projects/xmodconfig/
 Group:              System/X11/Utilities
 License:            GNU General Public License version 2 or later (GPL v2 or later)
 BuildRequires:      libpng-devel

@@ -6,8 +6,8 @@ Release:        7.1
 Summary:        A small c++ helper library
 Group:          Development/Libraries/C and C++
 License:        GPLv2
-URL:            http://code.google.com/p/gnchess/
-Source0:        http://gnchess.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:            https://code.google.com/p/gnchess/
+Source0:        https://gnchess.googlecode.com/files/%{name}-%{version}.tar.gz
 
 %description
 Thor Library is a small c++ helper library.

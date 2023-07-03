@@ -6,7 +6,7 @@ Release: 31.1
 Summary: Note taking application
 License: GPLv3
 Group:   Applications/Productivity
-URL:     http://notably.sourceforge.net/
+URL:     https://notably.sourceforge.net/
 Source: %{name}-%{version}.tar.gz
 Source2: %{name}.desktop
 BuildRequires: libpng-devel

@@ -3,10 +3,9 @@ Version:        1.6.2
 Release:        6.1
 Summary:        An Open Source Folder Synchroniser
 License:        GPLv2+
-URL:            http://synkron.sourceforge.net/
+URL:            https://synkron.sourceforge.net/
 Group:          Productivity/Archiving/Backup
 Source0:        Synkron-%{version}-src.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  libpng-devel
 BuildRequires:  gcc-c++ qt4-devel
 
@@ -39,7 +38,6 @@ install -Dm 0644 images/Synkron128.png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %doc gpl.txt readme.txt
 %{_bindir}/synkron
 %{_datadir}/icons/hicolor/*x*/apps/synkron.png

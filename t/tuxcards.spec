@@ -7,7 +7,7 @@ Source2:        %{name}.png
 License:        GPL2
 Group:          Productivity/Office/Organizers
 Summary:        Manage Notes within a Hierarchical Tree
-URL:            http://www.tuxcards.de/
+URL:            https://www.tuxcards.de/
 BuildRequires:  libpng-devel
 BuildRequires:  gcc-c++ expat-devel qt4-devel
 

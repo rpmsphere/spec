@@ -6,7 +6,7 @@ Summary: Module python for WindowMaker docklets
 Summary(ru_RU.UTF-8): Модуль python для написания докапплетов WindowMaker
 License: GPL
 Group: Development/Python
-URL: http://pywmdockapps.sourceforge.net/
+URL: https://pywmdockapps.sourceforge.net/
 Source0: pywmdockapps-%{version}.tar.gz
 BuildRequires: libXext-devel libXpm-devel python2-devel
 Provides: pywmdockapps

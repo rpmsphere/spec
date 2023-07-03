@@ -8,7 +8,7 @@ License: freeware
 Group: User Interface/X
 BuildArch: noarch
 Source0: taiwan-fonts.zip
-URL: http://wesingkasu.blogspot.tw/2012/01/blog-post_1223.html
+URL: https://wesingkasu.blogspot.tw/2012/01/blog-post_1223.html
 Requires(post): fontconfig
 
 %description

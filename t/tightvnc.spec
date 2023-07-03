@@ -4,9 +4,9 @@ Version: 1.3.10
 Release: 18.2
 License: GPL
 Group: User Interface/Desktops
-URL: http://www.tightvnc.com/
-Source0: http://dl.sf.net/vnc-tight/%{name}-%{version}_unixsrc.tar.bz2
-Source1: tcpd.h
+URL: https://www.tightvnc.com/
+Source0: https://dl.sf.net/vnc-tight/%{name}-%{version}_unixsrc.tar.bz2
+Source1: %name.tcpd.h
 Source2: https://www.tightvnc.com/logo/tightvnc-logo-90x90.png
 BuildRequires: imake, desktop-file-utils
 BuildRequires: zlib-devel, libjpeg-devel, perl-interpreter
@@ -41,7 +41,7 @@ server, allowing others to access the desktop on your machine.
 
 %prep
 %setup -q -n vnc_unixsrc
-cp %{SOURCE1} include/
+cp %{SOURCE1} include/tcpd.h
 
 %{__perl} -pi -e 's|/usr/local/vnc/classes|%{_datadir}/vnc/classes|;' vncserver
 %{__perl} -pi -e 's|unix/:7100|unix/:-1|;' vncserver
@@ -57,7 +57,7 @@ cp %{SOURCE1} include/
 #
 # DO NOT RUN THIS SERVICE if your local area network is
 # untrusted!  For a secure way of using VNC, see
-# <URL:http://www.uk.research.att.com/vnc/sshvnc.html>.
+# <URL:https://www.uk.research.att.com/vnc/sshvnc.html>.
 
 # VNCSERVERS="1:myusername"
 EOF

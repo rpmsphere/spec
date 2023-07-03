@@ -3,10 +3,10 @@ Name:           python-avc
 Version:        0.11.0
 Release:        5.1
 Summary:        Application View Controller 
-URL:            http://avc.inrim.it/html/
+URL:            https://avc.inrim.it/html/
 License:        GPL
 Group:          Development
-Source:         http://avc.inrim.it/dist/avc-%{version}.tar.gz
+Source:         https://avc.inrim.it/dist/avc-%{version}.tar.gz
 BuildRequires:  python-devel
 BuildArch:      noarch
 

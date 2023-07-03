@@ -4,8 +4,8 @@ Release:        11.1
 Summary:        Display actual system parameters
 License:        GPL-2.0+
 Group:          System/Monitoring
-URL:            http://www.gedanken.org.uk/software/procmeter3/
-Source:         http://www.gedanken.org.uk/software/procmeter3/download/%{name}-%{version}.tgz
+URL:            https://www.gedanken.org.uk/software/procmeter3/
+Source:         https://www.gedanken.org.uk/software/procmeter3/download/%{name}-%{version}.tgz
 Source1:        procmeter3.desktop
 Source2:        procmeter3.png
 BuildRequires:  gtk2-devel

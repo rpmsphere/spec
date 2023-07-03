@@ -5,7 +5,7 @@ Version:        0.1.3
 Release:        2.1
 Summary:        Lazy & self-destructive tools for speeding up module imports
 License:        BSD 3-clause
-URL:            http://pypi.python.org/pypi/lazyasd
+URL:            https://pypi.python.org/pypi/lazyasd
 Source0:        https://pypi.python.org/packages/source/l/lazyasd/%{srcname}-%{version}.tar.gz
 BuildRequires:  python3-devel
 BuildArch:      noarch

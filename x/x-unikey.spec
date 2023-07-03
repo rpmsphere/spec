@@ -15,7 +15,7 @@ Release: 1
 Epoch : 1
 License: GPL
 Group: System/Internationalization
-URL: http://unikey.sourceforge.net
+URL: https://unikey.sourceforge.net
 Source0: %{name}-%{version}.tar.bz2
 Source1: x-unikey-install.sh
 Requires: gtk2 > 2.0

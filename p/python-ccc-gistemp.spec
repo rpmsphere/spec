@@ -6,7 +6,7 @@ Version:        0.6.1
 Release:        21.1
 Summary:        Clear Climate Code GISTEMP project
 License:        BSD
-URL:            http://code.google.com/p/ccc-gistemp/
+URL:            https://code.google.com/p/ccc-gistemp/
 Group:          Productivity/Scientific/Other
 Source0:        %{pyname}-%{version}.tar.bz2
 Source1:        ccc-gistemp.desktop

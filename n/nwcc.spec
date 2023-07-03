@@ -1,11 +1,11 @@
 Name:         nwcc
 Summary:      Small C Compiler
-URL:          http://nwcc.sourceforge.net/
+URL:          https://nwcc.sourceforge.net/
 Group:        Development/Compiler
 License:      BSD
 Version:      0.8.3
 Release:      7.1
-Source0:      http://sourceforge.net/projects/nwcc/files/nwcc/nwcc%20%{version}/%{name}_%{version}.tar.gz
+Source0:      https://sourceforge.net/projects/nwcc/files/nwcc/nwcc%20%{version}/%{name}_%{version}.tar.gz
 BuildRequires:  nasm
 
 %description

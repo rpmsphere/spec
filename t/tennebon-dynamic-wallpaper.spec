@@ -6,7 +6,7 @@ Version:        1
 Release:        5.1
 Source0:        tennebon-wallpaper.tar.bz2
 # Note: the license was discussed by mail with jimmac
-Source1:        COPYING
+Source1:        %name.COPYING
 BuildArch:      noarch
 
 %description
@@ -17,7 +17,7 @@ generally bright during the day, and dark during the night.
 
 %prep
 %setup -q -c
-cp %{SOURCE1} .
+cp %{SOURCE1} COPYING
 
 %build
 

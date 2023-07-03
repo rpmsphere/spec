@@ -4,7 +4,7 @@ License:		GPL
 Group:			Amusements/Games/Action/Race
 Version:		0.3.7
 Release:		1
-URL:			http://sourceforge.net/projects/toycars/
+URL:			https://sourceforge.net/projects/toycars/
 Source:			%{name}-%{version}.tar.gz
 Patch0:			%{name}-64bit.patch
 Patch1:			%{name}-gcc43.patch

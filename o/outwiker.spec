@@ -3,9 +3,9 @@ Version:        1.6.0
 Release:        3.1
 License:        GPL-3.0
 Summary:        Tree Notes Organizer
-URL:            http://jenyay.net/Outwiker/English
+URL:            https://jenyay.net/Outwiker/English
 Group:          Productivity/Office/Organizers
-Source0:        http://jenyay.net/uploads/Soft/Outwiker/%{name}-%{version}-src.tar.gz
+Source0:        https://jenyay.net/uploads/Soft/Outwiker/%{name}-%{version}-src.tar.gz
 # PATCH-FIX-OPENSUSE outwiker-1.6.0-fonts.patch lazy.kent@opensuse.org -- don't use MS fonts
 Patch0:         outwiker-1.6.0-fonts.patch
 BuildArch:      noarch

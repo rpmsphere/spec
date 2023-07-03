@@ -3,7 +3,7 @@ Name:			tpfand
 Version:		0.94
 Release:		11.1
 Summary:		ThinkPad Fan Control Daemon
-Source:			http://launchpad.net/tp-fan/tpfand/%{version}/+download/tpfand-%{version}.tar.gz
+Source:			https://launchpad.net/tp-fan/tpfand/%{version}/+download/tpfand-%{version}.tar.gz
 Patch1:			tpfand-makefile.patch
 URL:			https://launchpad.net/tp-fan
 Group:			Hardware/Mobile

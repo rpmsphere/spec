@@ -5,8 +5,8 @@ Version: 2.7rc1
 Release: 3.1
 Group: Development/Libraries
 License: GPL
-URL: http://plwm.sourceforge.net
-Source0: http://sourceforge.net/projects/plwm/files/plwm/2.7rc1/PLWM-2.7rc1.tar.gz
+URL: https://plwm.sourceforge.net
+Source0: https://sourceforge.net/projects/plwm/files/plwm/2.7rc1/PLWM-2.7rc1.tar.gz
 BuildArch: noarch
 BuildRequires: python
 BuildRequires: python-xlib

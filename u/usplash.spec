@@ -6,7 +6,7 @@ Version:	0.5.19
 Release:	9.1
 License:	GPL
 Group:		Applications
-Source0:	http://ftp.debian.org/debian/pool/main/u/usplash/%{name}_%{version}.orig.tar.gz
+Source0:	https://ftp.debian.org/debian/pool/main/u/usplash/%{name}_%{version}.orig.tar.gz
 Patch0:		%{name}-includes.patch
 URL:		https://wiki.ubuntu.com/USplash
 BuildRequires:	gd-devel

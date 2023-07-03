@@ -5,8 +5,8 @@ Version: 0.6.1
 Release: 7.1
 Group: Development/Libraries
 License: MIT
-URL: http://www.pyamf.org/
-Source0: http://pypi.python.org/packages/source/P/PyAMF/PyAMF-%{version}.tar.gz
+URL: https://www.pyamf.org/
+Source0: https://pypi.python.org/packages/source/P/PyAMF/PyAMF-%{version}.tar.gz
 BuildRequires: python-devel
 BuildRequires: python-setuptools
 

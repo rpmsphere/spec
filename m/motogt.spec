@@ -7,8 +7,8 @@ Release:	15.1
 Summary:	A free motorcycle racing game
 License:	GPLv2+
 Group:		Games/Arcade
-URL:		http://motogt.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/motogt/%{oname}-%{version}.zip
+URL:		https://motogt.sourceforge.net/
+Source0:	https://prdownloads.sourceforge.net/motogt/%{oname}-%{version}.zip
 Source2:	motogt.desktop
 Source3:	MotoGT.png
 Patch0:		motogt-makefile.patch

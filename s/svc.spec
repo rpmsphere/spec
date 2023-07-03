@@ -3,9 +3,8 @@ Version:   200601111324
 Release:   3.1
 Group:     System/Base
 License:   GPL
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
-URL:       http://gpl.internetconnection.net/
-Source:    http://gpl.internetconnection.net/files/svc.tar.gz
+URL:       https://gpl.internetconnection.net/
+Source:    https://gpl.internetconnection.net/files/svc.tar.gz
 Patch:     svc_build.patch
 Summary:   Service toolbox
 
@@ -33,7 +32,6 @@ done
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_sbindir}/lockf
 %{_sbindir}/pull-trigger
 %{_sbindir}/sleep-svc

@@ -4,8 +4,8 @@ Release: 6.1
 Summary: Wireless Network Scanning and Configuration for Linux Desktops
 License: GPLv2
 Group: User Interface/X Hardware Support
-URL: http://sourceforge.net/projects/xiwtool/
-Source0: http://sourceforge.net/projects/xiwtool/files/%{name}-%{version}.tar.gz
+URL: https://sourceforge.net/projects/xiwtool/
+Source0: https://sourceforge.net/projects/xiwtool/files/%{name}-%{version}.tar.gz
 #BuildRequires: wireless-tools
 BuildRequires: pam-devel
 BuildRequires: libX11-devel

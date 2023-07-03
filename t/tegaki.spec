@@ -5,10 +5,10 @@ Version: 	0.3.1
 Release: 	1
 License: 	GPLv2+
 Group: 		System/Internationalization
-Source0: 	http://www.tegaki.org/releases/0.3.1/tegaki-python-0.3.1.tar.gz
-Source1: 	http://www.tegaki.org/releases/0.3.1/tegaki-pygtk-0.3.1.tar.gz
-##Source2: 	http://www.tegaki.org/releases/0.3.1/tegaki-recognize-0.3.1.tar.gz
-URL: 		http://www.tegaki.org/
+Source0: 	https://www.tegaki.org/releases/0.3.1/tegaki-python-0.3.1.tar.gz
+Source1: 	https://www.tegaki.org/releases/0.3.1/tegaki-pygtk-0.3.1.tar.gz
+##Source2: 	https://www.tegaki.org/releases/0.3.1/tegaki-recognize-0.3.1.tar.gz
+URL: 		https://www.tegaki.org/
 BuildArch:	noarch
 Requires:	%{name}-models
 Requires:	zinnia-python

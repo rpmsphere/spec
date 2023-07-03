@@ -4,8 +4,8 @@ Version: 6.3.0
 Release: 1
 Group: Amusements/Games
 License: GPLv3
-URL: http://pasang-emas.sourceforge.net/
-Source0: http://sourceforge.net/projects/pasang-emas/files/pasang-emas/%{version}/%{name}-%{version}.tar.xz
+URL: https://pasang-emas.sourceforge.net/
+Source0: https://sourceforge.net/projects/pasang-emas/files/pasang-emas/%{version}/%{name}-%{version}.tar.xz
 BuildRequires: gtk3-devel
 BuildRequires: intltool
 BuildRequires: gnome-doc-utils

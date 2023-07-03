@@ -8,9 +8,8 @@ License: GPL
 Group: User Interface/X
 Vendor: Grand Zebu
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
-Source: http://grandzebu.net/informatique/codbar/openbarcodes.zip
-URL: http://grandzebu.net/informatique/codbar-en/codbar.htm
+Source: https://grandzebu.net/informatique/codbar/openbarcodes.zip
+URL: https://grandzebu.net/informatique/codbar-en/codbar.htm
 Requires(post): fontconfig
 
 %description
@@ -37,7 +36,6 @@ rm -rf $RPM_BUILD_ROOT
 [ -x /usr/bin/fc-cache ] && /usr/bin/fc-cache 2> /dev/null
 
 %files
-%defattr(-, root, root)
 %doc *.txt
 %{fontdir}
 

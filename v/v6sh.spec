@@ -6,8 +6,8 @@ Version: 2006.07.13
 Release: 5.1
 Group: System Environment/Shells
 License: PD
-URL: http://blog.chinaunix.net/uid-20106293-id-142129.html
-Source0: http://www.cublog.cn/u/13392/upfile/060714113802.tar
+URL: https://blog.chinaunix.net/uid-20106293-id-142129.html
+Source0: https://www.cublog.cn/u/13392/upfile/060714113802.tar
 
 %description
 A re-implementation of UNIX v6 sh.

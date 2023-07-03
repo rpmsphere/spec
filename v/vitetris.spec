@@ -9,7 +9,7 @@ Release:        lp150.6.5
 Summary:        Terminal-based Tetris clone
 License:        BSD-2-Clause
 Group:          Amusements/Games/Action/Arcade
-URL:            http://victornils.net/tetris/
+URL:            https://victornils.net/tetris/
 #Git-Clone:     https://github.com/vicgeralds/vitetris.git
 Source:         https://github.com/vicgeralds/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        vitetris.6

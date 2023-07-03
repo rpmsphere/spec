@@ -7,8 +7,8 @@ Release:        8.1
 Summary:        Sgf2dg (Replaces Sgf2tex) Converts Smart Go Format (Sgf) Files to Go Dia[cut]
 License:        CHECK(GPL-1.0+ or Artistic-1.0)
 Group:          Development/Libraries/Perl
-URL:            http://search.cpan.org/dist/Games-Go-Sgf2Dg/
-Source0:        http://www.cpan.org/authors/id/R/RE/REID/%{cpan_name}-%{version}.tar.gz
+URL:            https://search.cpan.org/dist/Games-Go-Sgf2Dg/
+Source0:        https://www.cpan.org/authors/id/R/RE/REID/%{cpan_name}-%{version}.tar.gz
 BuildRequires:  perl
 BuildRequires:  perl-macros
 BuildRequires:  perl-File-Slurp

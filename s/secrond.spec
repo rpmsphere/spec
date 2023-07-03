@@ -4,7 +4,7 @@ Version:   0.41
 Release:   1
 License:   GPLv3
 Group:     Applications/System
-Source0:   http://launchpad.net/secrond/trunk/0.41/+download/%{name}-%{version}.tar.gz
+Source0:   https://launchpad.net/secrond/trunk/0.41/+download/%{name}-%{version}.tar.gz
 URL:       https://launchpad.net/secrond
 
 %description

@@ -2,9 +2,9 @@ Name:               spotlighter
 Version:            0.1
 Release:            1
 Summary:            Movable and resizable spotlight on the desktop
-Source0:            http://ardesia.googlecode.com/files/%{name}-%{version}.tar.gz
+Source0:            https://ardesia.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch1:             spotlighter-fix_desktop_file.patch
-URL:                http://code.google.com/p/ardesia/
+URL:                https://code.google.com/p/ardesia/
 Group:              Applications/Desktop
 License:            GNU General Public License version 3 (GPL v3)
 BuildRequires:      gtk2-devel

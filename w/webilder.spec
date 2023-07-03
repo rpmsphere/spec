@@ -8,7 +8,7 @@ License: GPLv2+
 Group: Desktop/User Interface
 BuildArch: noarch
 Requires: python-imaging, pygtk2, pygtk2-libglade
-URL: http://www.webilder.org/
+URL: https://www.webilder.org/
 BuildRequires: python2-setuptools
 BuildRequires: gnome-python2-gnome
 #BuildRequires: python2-appindicator

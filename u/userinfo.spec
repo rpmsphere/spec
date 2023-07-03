@@ -2,8 +2,8 @@ Name:           userinfo
 Version:        2.5
 Release:        1
 Summary:        Console Utility to Display Local User Information
-Source:         http://prdownloads.sourceforge.net/userinfo/userinfo-%{version}.tar.gz
-URL:            http://benkibbey.wordpress.com/userinfo/
+Source:         https://prdownloads.sourceforge.net/userinfo/userinfo-%{version}.tar.gz
+URL:            https://benkibbey.wordpress.com/userinfo/
 Group:          System/Base
 License:        GNU General Public License version 2 or later (GPLv2 or later)
 BuildRequires:  make gcc glibc-devel

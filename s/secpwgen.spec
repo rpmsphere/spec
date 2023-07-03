@@ -3,10 +3,9 @@ Version: 1.3
 Release: 3.1
 License: 1
 Group: Productivity/Security
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
 BuildRequires: openssl-devel
-URL: http://www.core-dump.com.hr/?q=node/28
-Source: http://www.core-dump.com.hr/software/secpwgen-1.3.tar.gz
+URL: https://www.core-dump.com.hr/?q=node/28
+Source: https://www.core-dump.com.hr/software/secpwgen-1.3.tar.gz
 Patch: secpwgen-1.3_build_config.patch
 Summary: Secure Password Generator
 
@@ -35,7 +34,6 @@ Authors:
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/secpwgen
 %{_mandir}/man1/secpwgen.1*
 %doc ChangeLog README

@@ -9,7 +9,7 @@ Source3:	tv-maxe.svg
 Source4:	channel-editor.tar.gz
 BuildRequires:  desktop-file-utils
 BuildRequires:	python2-devel
-URL:            http://code.google.com/p/tv-maxe
+URL:            https://code.google.com/p/tv-maxe
 Group:          Applications/Multimedia
 # Main project is GPL-3.0, vlc.py is GPL-2.0+, workerpool is MIT(compabile with GPL-3.0), so license is
 License:        GPL-3.0

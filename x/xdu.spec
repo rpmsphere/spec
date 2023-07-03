@@ -2,10 +2,10 @@ Summary: Graphically display output of du command
 Name: xdu
 Version: 3.0
 Release: 20.1
-Source: http://sd.wareonearth.com/~phil/xdu/%{name}-%{version}.tar.Z
-Patch1: http://www.nn.iij4u.or.jp/~tutimura/xdu/xdu-3.0.dirname.patch
-Patch2: http://www.nn.iij4u.or.jp/~tutimura/xdu/xdu-3.0.i18n.patch
-Patch3: http://www.nosuchhost.net/~cheese/xdu-title.patch
+Source: https://sd.wareonearth.com/~phil/xdu/%{name}-%{version}.tar.Z
+Patch1: https://www.nn.iij4u.or.jp/~tutimura/xdu/xdu-3.0.dirname.patch
+Patch2: https://www.nn.iij4u.or.jp/~tutimura/xdu/xdu-3.0.i18n.patch
+Patch3: https://www.nosuchhost.net/~cheese/xdu-title.patch
 License: MIT
 Group: X11/Utilities
 BuildRequires: imake

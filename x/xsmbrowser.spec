@@ -4,7 +4,7 @@ Version: 3.4.0
 Release: 14.1
 Source0: %{name}-%{version}.tar.bz2
 Source1: %{name}-commands.bz2
-URL: http://www.public.iastate.edu/~chadspen/
+URL: https://www.public.iastate.edu/~chadspen/
 License: GPL
 Group: Networking/File transfer
 BuildArch: noarch

@@ -5,8 +5,8 @@ Version:       0.3.2
 Release:       20.1
 Summary:       An xml2swf and swf2xml processor with import functionalities
 Group:         Applications/Multimedia
-URL:           http://swfmill.org
-Source:        http://swfmill.org/releases/swfmill-%{version}.tar.gz
+URL:           https://swfmill.org
+Source:        https://swfmill.org/releases/swfmill-%{version}.tar.gz
 License:       GPL
 BuildRequires: gcc-c++, libxml2-devel, libxslt-devel, freetype-devel
 BuildRequires:	libpng-devel

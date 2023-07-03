@@ -3,7 +3,7 @@ Version:	1.0.3
 Release:	1
 Summary:	Linux whiteboard in python
 License: 	open source
-URL: 		http://github.com/pnegre/python-whiteboard
+URL: 		https://github.com/pnegre/python-whiteboard
 Group: 		User Interface/X Hardware Support
 #Source0:	python-whiteboard-%{version}.tar.gz
 Source0:	python-whiteboard-master.zip

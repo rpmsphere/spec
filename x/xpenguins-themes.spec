@@ -2,11 +2,11 @@ Summary: Some cartoon themes for xpenguins
 Name: xpenguins-themes
 Version: 1.0
 Release: 8.1
-Source0: http://xpenguins.seul.org/xpenguins_themes-%{version}.tar.gz
+Source0: https://xpenguins.seul.org/xpenguins_themes-%{version}.tar.gz
 Group: Amusements/Graphics
 Requires: xpenguins >= 1.9
 License: various
-URL: http://xpenguins.seul.org/
+URL: https://xpenguins.seul.org/
 BuildArch: noarch
 Provides: xsimpsons
 

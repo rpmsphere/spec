@@ -5,7 +5,7 @@ Summary:	Window manager switcher
 Group:		User Interface/Desktops
 License:	GPLv2
 URL:		https://launchpad.net/wm-switcher
-Source0:	http://launchpad.net/wm-switcher/trunk/%{version}/+download/%{name}.tar.gz
+Source0:	https://launchpad.net/wm-switcher/trunk/%{version}/+download/%{name}.tar.gz
 Requires:	pygtk2
 BuildArch:	noarch
 

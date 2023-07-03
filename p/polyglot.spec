@@ -4,8 +4,8 @@ Release:        7.1
 Summary:        Xboard protocol to UCI protocol adapter
 License:        GPLv2+
 Group:          Games/Boards
-URL:            http://hardy.uhasselt.be/Toga/polyglot-release/
-Source0:        http://hardy.uhasselt.be/Toga/polyglot-release/%{name}-%{version}.tar.gz
+URL:            https://hardy.uhasselt.be/Toga/polyglot-release/
+Source0:        https://hardy.uhasselt.be/Toga/polyglot-release/%{name}-%{version}.tar.gz
 
 %description
 PolyGlot is a "UCI adapter".  It connects a GUI interface (such as

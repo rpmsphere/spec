@@ -6,8 +6,8 @@ Version: 1.2.3
 Release: 8.1
 Group: Development/Languages
 License: GPL
-URL: http://www.gnu.org/software/sather/
-Source0: http://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
+URL: https://www.gnu.org/software/sather/
+Source0: https://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: gc-devel
 
 %description

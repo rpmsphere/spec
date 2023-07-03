@@ -9,7 +9,7 @@ Group: Development/Libraries
 BuildArch: noarch
 Vendor: Manuel Amador (Rudd-O) <dragonfear@gmail.com>
 Requires: python-commandsplus python-Observable
-URL: http://www.usm.edu.ec/~amadorm/software/
+URL: https://www.usm.edu.ec/~amadorm/software/
 BuildRequires: python-devel
 
 %description

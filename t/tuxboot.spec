@@ -2,7 +2,7 @@
 Name:           tuxboot
 Version:        23
 Release:        1
-URL:            http://tuxboot.org/
+URL:            https://tuxboot.org/
 License:        GPL v2 or later
 Group:          System/GUI/Other
 Summary:        To create a bootable Live USB drive

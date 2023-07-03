@@ -6,7 +6,7 @@ Version: 1.0.1
 Release: 8.1
 Group: Applications/Internet
 License: BSD
-URL: http://freecode.com/projects/pxdmcp
+URL: https://freecode.com/projects/pxdmcp
 Source0: ftp://ftp.lysator.liu.se/pub/unix/pxdmcp/%{name}-%{version}.tar.gz
 BuildRequires: libnsl2-devel
 

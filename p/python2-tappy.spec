@@ -5,7 +5,7 @@ Version:        0.9.0
 Release:        5.1
 Summary:        TAPPY is a tidal analysis package
 License:        GPL-2
-URL:            http://sourceforge.net/projects/tappy/
+URL:            https://sourceforge.net/projects/tappy/
 Group:          Development/Libraries/Python
 Source0:        %{pyname}-%{version}.tar.bz2
 BuildArch:      noarch

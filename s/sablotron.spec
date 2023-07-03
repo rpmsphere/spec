@@ -6,8 +6,8 @@ Version:       1.0.3
 Release:       6.1
 Summary:       A fast, compact and portable XML toolkit
 Group:         System/Libraries
-URL:           http://www.gingerall.org/sablotron.html
-Source:        http://download-1.gingerall.cz/download/sablot/Sablot-%{version}.tar.gz
+URL:           https://www.gingerall.org/sablotron.html
+Source:        https://download-1.gingerall.cz/download/sablot/Sablot-%{version}.tar.gz
 License:       GPL
 BuildRequires: gcc-c++
 BuildRequires: expat-devel >= 1.95.6

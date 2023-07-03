@@ -4,8 +4,8 @@ Version: 0.10.1
 Release: 3.1
 Group: Amusements/Games
 License: GPLv2
-URL: http://pygo.sourceforge.net/
-Source0: http://prdownloads.sourceforge.net/pygo/%{name}-%{version}.tgz
+URL: https://pygo.sourceforge.net/
+Source0: https://prdownloads.sourceforge.net/pygo/%{name}-%{version}.tgz
 BuildArch: noarch
 
 %description

@@ -7,7 +7,6 @@ Release:        281.1
 Summary:        Xterminal -- Use SuSE Linux as an X terminal
 Source:         Xterminal-0.4.tar.gz
 Patch:          Xterminal-0.4.dif
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
 
 %description
@@ -38,7 +37,6 @@ Authors:
     rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc README
 %config /etc/init.d/rx
 /var/adm/fillup-templates/sysconfig.xdmsc

@@ -3,11 +3,11 @@
 Name: umplayer
 Summary: Complete Frontend for MPlayer
 Version: 0.98.2
-Source0: http://mirror.ufs.ac.za/smplayer/UMPlayer/%{version}/%{name}-%{version}-by-the-smplayer-team.tar.bz2
+Source0: https://mirror.ufs.ac.za/smplayer/UMPlayer/%{version}/%{name}-%{version}-by-the-smplayer-team.tar.bz2
 Release: 5.1
 License: GPLv2+
 Group: Applications/Multimedia
-URL: http://www.umplayer.com/
+URL: https://www.umplayer.com/
 BuildRequires:  desktop-file-utils
 BuildRequires:  qt-devel
 BuildRequires:  gcc-c++

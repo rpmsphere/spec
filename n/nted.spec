@@ -4,8 +4,8 @@ Release:        24.4
 Summary:        Musical score editor
 Group:          Applications/Publishing
 License:        GPLv2+ and GFDL
-URL:            http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted.xhtml
-Source0:        http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/sources/nted-%{version}.tar.gz
+URL:            https://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted.xhtml
+Source0:        https://vsr.informatik.tu-chemnitz.de/staff/jan/nted/sources/nted-%{version}.tar.gz
 Source1:        nted.desktop
 BuildRequires:  gtk2-devel alsa-lib-devel
 BuildRequires:  gettext yelp xmlto desktop-file-utils

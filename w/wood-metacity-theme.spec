@@ -6,9 +6,9 @@ Version: 0.1
 Release: 4.1
 License: GPL
 Group: User Interface/Desktops
-Source0: http://www.deviantart.com/download/212672302/wooden_desktop_by_ekylypse-d3imazy.zip
-Source2: http://content.wallpapers-room.com/resolutions/1024x768/T/Wallpapers-room_com___The_Wood_Experiment_by_Delta909_1024x768.jpg
-URL: http://ekylypse.deviantart.com/art/Wooden-Desktop-212672302
+Source0: https://www.deviantart.com/download/212672302/wooden_desktop_by_ekylypse-d3imazy.zip
+Source2: https://content.wallpapers-room.com/resolutions/1024x768/T/Wallpapers-room_com___The_Wood_Experiment_by_Delta909_1024x768.jpg
+URL: https://ekylypse.deviantart.com/art/Wooden-Desktop-212672302
 BuildArch: noarch
 
 %description

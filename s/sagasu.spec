@@ -4,8 +4,8 @@ Version: 2.0.12
 Release: 4.4
 License: GPL
 Group: Applications/Text
-URL: http://sarrazip.com/dev/sagasu.html
-Source: http://www3.sympatico.ca/sarrazip/dev/sagasu-%{version}.tar.gz
+URL: https://sarrazip.com/dev/sagasu.html
+Source: https://www3.sympatico.ca/sarrazip/dev/sagasu-%{version}.tar.gz
 BuildRequires: libgnomeui-devel
 BuildRequires: gcc-c++
 BuildRequires: w3m udisks2

@@ -2,9 +2,9 @@ Name: 		wbarconf
 Version: 	0.7.2.1
 Release: 	1
 Summary: 	Configuration tool for wbar
-Source0: 	http://www.ihku.biz/wbarconf/%{name}-%{version}.tar.gz
+Source0: 	https://www.ihku.biz/wbarconf/%{name}-%{version}.tar.gz
 Source1:	%{name}-0.7.2.zh_TW.po
-URL: 		http://kapsi.fi/~ighea/wbarconf/
+URL: 		https://kapsi.fi/~ighea/wbarconf/
 Group: 		Graphical desktop/Other
 License: 	GPL
 BuildArch:	noarch

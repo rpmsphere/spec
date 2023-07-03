@@ -5,7 +5,7 @@ Release: 1
 Summary: Sokoban clone for GNOME
 License: GPL
 Group: Amusements/Games
-URL: http://sokoban.ws/usokoban/usokoban.php
+URL: https://sokoban.ws/usokoban/usokoban.php
 Source: %{name}-%{version}.tar.gz
 BuildRequires: glib2-devel, gtk2-devel
 

@@ -4,8 +4,8 @@ Release:        3.1
 Summary:        Generate FLI animation files form a series of images
 Group:          Applications/Engineering
 License:        GPL
-URL:            http://vento.pi.tu-berlin.de/ppm2fli/main.html
-Source0:        http://vento.pi.tu-berlin.de/%{name}/%{name}-%{version}.tar.gz
+URL:            https://vento.pi.tu-berlin.de/ppm2fli/main.html
+Source0:        https://vento.pi.tu-berlin.de/%{name}/%{name}-%{version}.tar.gz
 
 %description
 ppm2fli generates FLI animation files form a series of images. 

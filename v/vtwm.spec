@@ -17,7 +17,7 @@ BuildRequires:	libXt-devel
 BuildRequires:	libXmu-devel
 BuildRequires:	flex-static
 #BuildRequires:  rplay-devel
-URL: http://www.vtwm.org/
+URL: https://www.vtwm.org/
 BuildRequires:	libXft-devel
 BuildRequires:	libXrandr-devel
 BuildRequires:	libXinerama-devel

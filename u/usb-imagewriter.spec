@@ -7,7 +7,7 @@ Release:	1
 License:	GPLv2
 Group:		Applications/System
 URL:		https://launchpad.net/%{name}
-Source0:	http://ppa.launchpad.net/ogra/ppa/ubuntu/pool/main/u/usb-imagewriter/%{name}_%{version}.orig.tar.gz
+Source0:	https://ppa.launchpad.net/ogra/ppa/ubuntu/pool/main/u/usb-imagewriter/%{name}_%{version}.orig.tar.gz
 BuildArch:	noarch
 Requires:	pygtk2-libglade
 

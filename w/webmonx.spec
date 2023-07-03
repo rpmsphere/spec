@@ -5,9 +5,9 @@ Version:        0.3.3
 Release:        6.1
 License:        GPL-2.0+
 Summary:        Websites Update Monitoring Tool
-URL:            http://debfx.fobos.de/webmonx/
+URL:            https://debfx.fobos.de/webmonx/
 Group:          Productivity/Networking/Web/Utilities
-Source0:        http://downloads.sourceforge.net/webmonx/%{name}-%{version}.tar.gz
+Source0:        https://downloads.sourceforge.net/webmonx/%{name}-%{version}.tar.gz
 # PATCH-FIX-UPSTREAM webmonx-0.3.3-fix_dir.patch lazy.kent@opensuse.org -- fix program data directory
 Patch0:         webmonx-0.3.3-fix_dir.patch
 # PATCH-FIX-OPENSUSE webmonx-0.3.3-optflags.patch lazy.kent@opensuse.org -- use optimization flags and don't strip binaries

@@ -3,9 +3,9 @@ Version:        0.0.4
 Release:        28.1
 License:        GPL-3.0
 Summary:        Digital painting
-URL:            http://qaquarelle.sourceforge.net
+URL:            https://qaquarelle.sourceforge.net
 Group:          Graphics/Editors and Converters
-Source0:        http://sourceforge.net/projects/%{name}/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+Source0:        https://sourceforge.net/projects/%{name}/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 Source1:        ru.ts
 Source2:        %{name}.desktop
 Source3:        %{name}.png

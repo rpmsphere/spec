@@ -4,7 +4,7 @@ Release:        16.1
 Summary:        A fast sparse matrix library for Python
 Group:          Development/Libraries/Python
 License:        BSD
-URL:            http://pysparse.sourceforge.net/index.html
+URL:            https://pysparse.sourceforge.net/index.html
 Source0:        pysparse-%{version}-dev213.tar.bz2
 Patch0:         pysparse-1.2-fix-implicit-definitions.patch
 Patch1:         pysparse-1.2-fix-no-return-in-nonvoid-function.patch

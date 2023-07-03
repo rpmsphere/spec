@@ -2,12 +2,11 @@ Name:				timestamp
 Version:			1.1
 Release:			3.1
 Summary:			Pipe that timestamps Lines
-Source:			http://math.missouristate.edu/~erik/files/timestamp-%{version}.tar.gz
+Source:			https://math.missouristate.edu/~erik/files/timestamp-%{version}.tar.gz
 Patch1:			timestamp-rename.patch
-URL:				http://math.missouristate.edu/~erik/software.php?id=95
+URL:				https://math.missouristate.edu/~erik/software.php?id=95
 Group:			Productivity/File utilities
 License:			GNU General Public License version 2 or later (GPLv2 or later)
-BuildRoot:		%{_tmppath}/build-%{name}-%{version}
 BuildRequires:	gcc make glibc-devel
 BuildRequires:	autoconf automake libtool
 
@@ -39,7 +38,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog COPYING NEWS README
 %{_bindir}/timestamp
 %doc %{_mandir}/man1/timestamp.1*

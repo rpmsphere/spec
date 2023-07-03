@@ -6,7 +6,7 @@ Summary:   Xorg X11 mouse input driver
 Name:      xorg-x11-drv-mouse
 Version:   1.9.3
 Release:   1
-URL:       http://www.x.org
+URL:       https://www.x.org
 License:   MIT
 Group:     User Interface/X Hardware Support
 Source0:   ftp://ftp.x.org/pub/individual/driver/%{tarball}-%{version}.tar.bz2

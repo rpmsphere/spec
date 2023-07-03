@@ -3,10 +3,10 @@ Name:           namebench
 Version:        1.3.1
 Release:        17.1
 License:        GPL v2 or later
-Source:         http://namebench.googlecode.com/files/%{name}-%{version}-source.tgz
+Source:         https://namebench.googlecode.com/files/%{name}-%{version}-source.tgz
 Group:          Development/Libraries/Python
 Summary:        Hunt down the fastest DNS servers
-URL:            http://code.google.com/p/namebench/
+URL:            https://code.google.com/p/namebench/
 BuildRequires:  python2-devel
 BuildArch:      noarch
 

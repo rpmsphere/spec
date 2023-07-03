@@ -8,7 +8,7 @@ Requires:       libxml2
 #Provides: 
 License:        GPL v2 or later
 # URL: 
-Source0:        http://www.suse.de/~ke/%{name}/%{name}-%{version}.tar.bz2
+Source0:        https://www.suse.de/~ke/%{name}/%{name}-%{version}.tar.bz2
 # :pserver:anoncvs@sources.redhat.com:/cvs/docbook-tools
 Source1:        docbook-tools/sgml-common/bin/install-catalog.in
 Source2:        edit-xml-catalog.sh

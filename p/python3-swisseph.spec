@@ -5,7 +5,7 @@ Version:        2.08.00
 Release:        1
 Summary:        Swiss Ephemeris astrology data
 License:        GPLv2+
-URL:            http://pypi.python.org/pypi/pyswisseph
+URL:            https://pypi.python.org/pypi/pyswisseph
 Source0:        https://pypi.python.org/packages/source/p/pyswisseph/%{srcname}-%{version}-1.tar.gz
 BuildRequires:  python3-devel
 

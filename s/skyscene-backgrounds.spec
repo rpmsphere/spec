@@ -16,7 +16,7 @@ This is an animated wallpaper that changes as the day goes by.
 The foreground is a photo I took of the hill overlooking Buckeye hot springs,
 just outside of Bridgeport, CA. The various skies are from pictures I took in
 the desert and the stars are from the Hubble Space Telescope (sorry, I can't
-recall the specific image). http://hubblesite.org/gallery/album/entire/
+recall the specific image). https://hubblesite.org/gallery/album/entire/
 
 %prep
 %setup -q -n %{_name}

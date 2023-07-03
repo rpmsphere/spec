@@ -7,7 +7,7 @@ Release:	1
 Summary:	Creates stop-motion animation movies based on Qt5
 License:	GPLv3+
 Group:		Video/Utilities
-URL:		http://www.qstopmotion.org/
+URL:		https://www.qstopmotion.org/
 Source0:	https://sourceforge.net/projects/qstopmotion/files/Version_%{url_ver}/%{name}-%{version}-Source.tar.gz
 BuildRequires:	cmake
 BuildRequires:	qt5-qttools-devel

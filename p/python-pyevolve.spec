@@ -5,7 +5,7 @@ Name:           python-pyevolve
 Version:        0.6rc1
 Release:        14.1
 Summary:        Genetic Algorithms in Python
-URL:            http://pyevolve.sourceforge.net/
+URL:            https://pyevolve.sourceforge.net/
 License:        BSD
 Group:          Development/Libraries/Python
 Source:         %{modname}-%{version}.tar.bz2

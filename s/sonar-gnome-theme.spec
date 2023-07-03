@@ -8,7 +8,7 @@ License: GPL3
 Group: User Interface/Desktops
 Source0: %{theme_name}-%{version}.tar.bz2
 Source1: %{theme_name}-index.theme
-URL: http://half-left.deviantart.com/art/Sonar-GTK3-254801661
+URL: https://half-left.deviantart.com/art/Sonar-GTK3-254801661
 BuildArch: noarch
 Requires: sonar-icon-theme
 Requires: harmony-cursor-theme

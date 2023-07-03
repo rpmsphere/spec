@@ -3,9 +3,9 @@ Version:        0.0
 Release:        9
 License:        GPL-2.0+
 Summary:        Maps for Metromap
-URL:            http://pmetro.su/Maps.html
+URL:            https://pmetro.su/Maps.html
 Group:          Productivity/Other
-#Source:        http://pmetro.su/*.zip
+#Source:        https://pmetro.su/*.zip
 Source:         MetroPack.zip
 #Requires:       metromap | qmetro
 BuildRequires:  unzip

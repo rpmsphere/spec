@@ -5,7 +5,7 @@ Summary:	English words memory for Linux
 License:	GPL
 Group:		Education
 Source0:	%{name}_%{version}.tar.bz2
-URL:		http://code.google.com/p/wordjoy/
+URL:		https://code.google.com/p/wordjoy/
 BuildArch:	noarch
 Requires:	pygtk2
 

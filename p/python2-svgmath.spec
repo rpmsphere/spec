@@ -8,7 +8,7 @@ Source1:    svgmath.xml.in
 Patch0:     math2svg.py.patch
 Group:      Productivity/Graphics/Convertors
 BuildRequires: python2-devel dos2unix
-URL:        http://sourceforge.net/projects/svgmath/
+URL:        https://sourceforge.net/projects/svgmath/
 BuildArch: noarch
 %define fontdir     /usr/share/fonts/
 

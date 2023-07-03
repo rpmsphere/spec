@@ -8,7 +8,7 @@ Source0:   %{_name}-%{version}.tar.bz2
 License:   MIT
 Group:     Development/Libraries/Python
 BuildArch:  noarch
-URL:       http://mathdom.sourceforge.net/
+URL:       https://mathdom.sourceforge.net/
 BuildRequires:  bzip2 python2-devel
 Requires:  python2-lxml pyparsing
 

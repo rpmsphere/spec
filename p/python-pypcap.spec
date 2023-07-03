@@ -5,8 +5,8 @@ Version:	1.1
 Release:	15.1
 License:	BSD
 Group:		Development/Python
-URL:		http://monkey.org/~dugsong/pypcap/
-Source0:	http://monkey.org/~dugsong/pypcap/pypcap-%{version}.tar.bz2
+URL:		https://monkey.org/~dugsong/pypcap/
+Source0:	https://monkey.org/~dugsong/pypcap/pypcap-%{version}.tar.bz2
 Patch0:		pypcap-1.1-lib64.diff
 Patch1:     pypcap-1.1-fix_build.diff
 BuildRequires:	python-devel

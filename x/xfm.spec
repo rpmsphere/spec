@@ -4,7 +4,7 @@ Version: 1.5.4
 Release: 2.1
 License: freeware
 Group: X11/Applications
-URL: http://www.musikwissenschaft.uni-mainz.de/~ag/xfm/
+URL: https://www.musikwissenschaft.uni-mainz.de/~ag/xfm/
 Source: %{name}-%{version}.tar.gz
 BuildRequires: Xaw3d-devel
 

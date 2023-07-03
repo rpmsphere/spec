@@ -1,11 +1,11 @@
 Name:           the
-URL:            http://hessling-editor.sourceforge.net/
+URL:            https://hessling-editor.sourceforge.net/
 Version:        3.3rc7
 Release:        1
 Summary:        The Hessling Editor
 License:        GFDL v1.1 ; GPL v2 or later
 Group:          Productivity/Editors/Other
-Source0:        http://dl.sourceforge.net/project/hessling-editor/hessling-editor/3.3%20Release%20Candidate%207/THE-3.3RC7.tar.gz
+Source0:        https://dl.sourceforge.net/project/hessling-editor/hessling-editor/3.3%20Release%20Candidate%207/THE-3.3RC7.tar.gz
 BuildRequires:  flex ncurses-devel regina-rexx-devel
 
 %description

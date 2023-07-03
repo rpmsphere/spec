@@ -4,7 +4,7 @@ Version: 2.0.6
 Release: 1
 Group: Development/Languages
 License: GPLv3
-URL: http://sourceforge.net/projects/pcbasic/
+URL: https://sourceforge.net/projects/pcbasic/
 Source0: https://github.com/robhagemans/pcbasic/releases/download/v%{version}/pcbasic-%{version}.tar.gz
 BuildArch: noarch
 Requires: pygame

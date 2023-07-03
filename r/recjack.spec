@@ -4,8 +4,8 @@ Version: 0.2.1
 Release: 3.1
 Group: Converted/sound
 License: see /usr/share/doc/recjack/copyright
-URL: http://mein-neues-blog.de/category/recjack/
-Source0: http://repository.mein-neues-blog.de:9000/archive/%{name}-%{version}_all.tar.gz
+URL: https://mein-neues-blog.de/category/recjack/
+Source0: https://repository.mein-neues-blog.de:9000/archive/%{name}-%{version}_all.tar.gz
 BuildArch: noarch
 BuildRequires: desktop-file-utils
 

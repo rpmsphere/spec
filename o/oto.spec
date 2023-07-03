@@ -4,8 +4,8 @@ Version: 0.5
 Release: 2.1
 License: GPL
 Group: Development/Tools
-URL: http://sourceforge.net/projects/oto
-Source: http://sourceforge.net/projects/oto/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+URL: https://sourceforge.net/projects/oto
+Source: https://sourceforge.net/projects/oto/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 
 %description
 Open Type Organizer provides programs to list, modify OpenType

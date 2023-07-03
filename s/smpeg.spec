@@ -14,7 +14,7 @@ Patch1: smpeg-0.4.4-automake15.patch
 Patch2: smpeg-autoconf253.patch
 Patch3: smpeg-gtv.patch
 Patch4: smpeg-0.4.4-plaympeg.patch
-URL: http://icculus.org/smpeg
+URL: https://icculus.org/smpeg
 BuildRequires: gcc-c++, SDL-devel
 
 %description

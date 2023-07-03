@@ -5,7 +5,7 @@ Release:	1
 Summary:	A Draughts Program
 Group:		Games/Boards
 License:	GPLv3+
-URL:		http://www.johncheetham.com/projects/samuel/
+URL:		https://www.johncheetham.com/projects/samuel/
 Source:		%{name}-master.zip
 BuildRequires:	python3-devel
 Requires:       python3-gobject

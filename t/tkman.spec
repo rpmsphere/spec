@@ -5,7 +5,7 @@ Requires:       tcl tk rman
 Version:        2.2
 Release:        158.1
 Summary:        Manual-browser for X
-URL:            http://tkman.sourceforge.net
+URL:            https://tkman.sourceforge.net
 Source:         %{name}-%{version}.tar.bz2
 Patch0:         %{name}.patch
 Patch1:         tkman-CVE-2008-5137.patch

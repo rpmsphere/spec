@@ -4,7 +4,7 @@ Version:   1.5
 Release:   1
 Summary:   A plotting program to create high quality graphs from data
 License:   GPL
-URL:       http://rlplot.sourceforge.net
+URL:       https://rlplot.sourceforge.net
 Group:     Applications/Engineering
 Source:    %{name}_%{version}.tar.gz
 

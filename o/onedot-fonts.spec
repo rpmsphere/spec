@@ -9,11 +9,11 @@ Group: User Interface/X
 BuildArch: noarch
 Source0: https://github.com/ichitenfont/I.Ming/raw/master/8.00/I.Ming-8.00.ttf
 Source1: https://github.com/ichitenfont/I.Ming/raw/master/8.00/I.MingCP-8.00.ttf
-Source2: http://input.foruto.com/ccc/1.font/font/I.Ngaan.zip
-Source3: http://input.foruto.com/ccc/1.font/font/I.PenCrane.zip
+Source2: https://input.foruto.com/ccc/1.font/font/I.Ngaan.zip
+Source3: https://input.foruto.com/ccc/1.font/font/I.PenCrane.zip
 Source4: https://github.com/ichitenfont/I.Ming/raw/master/8.00/IPA_Font_License_Agreement_v1.0.md
 Source5: https://github.com/ichitenfont/I.Ming/raw/master/8.00/readme.md
-URL: http://founder.acgvlyric.org/iu/doku.php
+URL: https://founder.acgvlyric.org/iu/doku.php
 Requires(post): fontconfig
 
 %description

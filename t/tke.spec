@@ -3,7 +3,7 @@ Version:	3.6
 Release:	1
 Summary:	Advanced Programmer's Editor
 License:	GPLv2+
-URL:		http://tke.sourceforge.net/
+URL:		https://tke.sourceforge.net/
 Group:		Editor
 Source0:	https://jaist.dl.sourceforge.net/project/%{name}/%{version}/%{name}-%{version}.tgz
 Source1:        %{name}.desktop

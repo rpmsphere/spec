@@ -4,7 +4,7 @@ Version:        0.8.5
 Release:        13.1
 License:        GPLv3, LGPLv3, APSL 2.0, ICU, BSD and CC-BY
 Summary:        File manager with Norton Commander interface written in Java
-URL:            http://www.mucommander.com
+URL:            https://www.mucommander.com
 Group:          Productivity/File utilities
 # svn export https://svn.mucommander.com/mucommander/tags/release_0_8_5/ mucommander-0.8.5
 # tar cvjf mucommander-0.8.5.tar.bz2 mucommander-0.8.5

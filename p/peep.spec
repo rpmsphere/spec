@@ -2,12 +2,12 @@
 
 Name:         peep
 Summary:      Network/File/StdIO Connectivity Utility
-URL:          http://www.cslab.ece.ntua.gr/~gtsouk/peep/
+URL:          https://www.cslab.ece.ntua.gr/~gtsouk/peep/
 Group:        Network
 License:      GPL
 Version:      0.5.7
 Release:      6.1
-Source0:      http://www.cslab.ece.ntua.gr/~gtsouk/peep/peep-%{version}.tar.gz
+Source0:      https://www.cslab.ece.ntua.gr/~gtsouk/peep/peep-%{version}.tar.gz
 Patch:        peep.patch
 
 %description

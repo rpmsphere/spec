@@ -3,8 +3,8 @@ Version:        3.3.6
 Release:        1
 Summary:        A server for storing application data at a central location
 License:        GPLv2+
-URL:            http://bjk.sourceforge.net/pwmd/
-Source0:        http://downloads.sourceforge.net/project/%{name}/%{version}/%{name}-v%{version}.tar.gz
+URL:            https://bjk.sourceforge.net/pwmd/
+Source0:        https://downloads.sourceforge.net/project/%{name}/%{version}/%{name}-v%{version}.tar.gz
 BuildRequires:  gcc
 BuildRequires:  cracklib-devel
 Buildrequires:  glib2-devel
@@ -19,7 +19,7 @@ BuildRequires:  zlib-devel
 BuildRequires:  texinfo
 BuildRequires:  gpgme-devel
 Requires:       pinentry
-Source44:       import.info
+#Source44:       import.info
 
 %description
 Password Manager Daemon is a server that provides a way for applications

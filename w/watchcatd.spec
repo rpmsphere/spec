@@ -6,7 +6,7 @@ Version: 1.3.1
 Release: 1
 Group: admin
 License: Free Software
-URL: http://oss.digirati.com.br/watchcatd/
+URL: https://oss.digirati.com.br/watchcatd/
 Source0: %{name}-%{version}.tar.gz
 BuildRequires: libevent-devel
 

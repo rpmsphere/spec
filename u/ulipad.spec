@@ -2,8 +2,8 @@ Name:		ulipad
 Version:	4.1
 Release:	5.1
 Summary:	An editor written with wxPython
-Source:		http://ulipad.googlecode.com/files/%{name}.%{version}.zip
-URL:		http://code.google.com/p/ulipad/
+Source:		https://ulipad.googlecode.com/files/%{name}.%{version}.zip
+URL:		https://code.google.com/p/ulipad/
 Group:		Applications/Editors
 License:	GNU General Public License v2 (GPL)
 BuildArch:      noarch

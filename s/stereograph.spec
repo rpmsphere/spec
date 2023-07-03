@@ -6,7 +6,7 @@ Release: 5.1
 Summary: Stereogram generator
 License: GPL
 Group: Graphics
-URL: http://stereograph.sourceforge.net/
+URL: https://stereograph.sourceforge.net/
 Source: %name-%version.tar.bz2
 BuildRequires: zlib-devel
 BuildRequires: libX11-devel

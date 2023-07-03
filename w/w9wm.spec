@@ -4,8 +4,8 @@ Version: 0.4.2
 Release: 3.1
 Group: Converted/x11
 License: see /usr/share/doc/w9wm/copyright
-URL: http://www.drieu.org/code/w9wm.en.html
-Source0: http://www.drieu.org/code/w9wm/src/w9wm-%{version}.tar.gz
+URL: https://www.drieu.org/code/w9wm.en.html
+Source0: https://www.drieu.org/code/w9wm/src/w9wm-%{version}.tar.gz
 BuildRequires: libXext-devel
 BuildRequires: libX11-devel
 

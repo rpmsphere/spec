@@ -8,7 +8,7 @@ License:    GPL
 Group:      Graphics
 Source0:    ftp://wolfpack.twu.net/users/wolfpack/%{name}-%{version}.tar.bz2
 Patch0:     %{name}-0.1.16-lib64.patch
-URL:        http://wolfpack.twu.net/Vertex
+URL:        https://wolfpack.twu.net/Vertex
 BuildRequires:  mesa-libGL-devel
 BuildRequires:  mesa-libGLU-devel
 BuildRequires:  gtk+-devel

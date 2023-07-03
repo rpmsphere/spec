@@ -6,8 +6,8 @@ Release:	1
 Summary:	An American football game.
 Group:	Action/Games
 License:	BSD
-URL:	http://rush2005.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/rush2005/%{pkg_name}-0.4.12.tar.bz2
+URL:	https://rush2005.sourceforge.net/
+Source0:	https://downloads.sourceforge.net/rush2005/%{pkg_name}-0.4.12.tar.bz2
 Source1:	%{pkg_name}.png
 BuildRequires:	SDL-devel >= 1.2.8, SDL_mixer-devel >= 1.2.6, SDL_image-devel >= 1.2.4
 BuildRequires:	desktop-file-utils

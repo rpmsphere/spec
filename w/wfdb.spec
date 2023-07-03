@@ -7,7 +7,7 @@ Release: 12.3
 License: GPLv2
 Group: Libraries
 Source: wfdb.tar.gz
-URL: http://www.physionet.org/physiotools/wfdb.shtml
+URL: https://www.physionet.org/physiotools/wfdb.shtml
 Requires: curl
 BuildRequires: ghostscript-devel
 BuildRequires: ImageMagick
@@ -84,7 +84,7 @@ need not be aware of the source or format of their input, since input files are
 located by searching a path that may include local and remote components, and
 all data are transparently converted on-the-fly into a common format.  Although
 created for use with physiologic signals such as those in PhysioBank
-(http://www.physionet.org/physiobank/), the WFDB library supports a broad
+(https://www.physionet.org/physiobank/), the WFDB library supports a broad
 range of general-purpose signal processing applications.
 
 %files
@@ -95,7 +95,7 @@ range of general-purpose signal processing applications.
 %package devel
 Summary: WFDB developer's toolkit
 Group: Development/Libraries
-URL: http://www.physionet.org/physiotools/wpg/
+URL: https://www.physionet.org/physiotools/wpg/
 Requires: wfdb = %{version}
 
 %description devel
@@ -112,7 +112,7 @@ and Fortran, examples in C and in Fortran, and miscellaneous documentation.
 %package app
 Summary: WFDB applications
 Group: Applications/Scientific
-URL: http://www.physionet.org/physiotools/wag/
+URL: https://www.physionet.org/physiotools/wag/
 Requires: wfdb >= %{version}
 
 %description app
@@ -217,7 +217,7 @@ power spectrum estimation, and many others.
 %package wave
 Summary: Waveform Analyzer, Viewer, and Editor.
 Group: X11/Applications/Science
-URL: http://www.physionet.org/physiotools/wug/
+URL: https://www.physionet.org/physiotools/wug/
 Requires: wfdb >= %{version}
 Requires: wfdb-app
 Requires: xview >= 3.2
@@ -229,7 +229,7 @@ web or FTP servers, flexible control of standard and user-provided analysis
 modules, efficient interactive annotation editing, and support for multiple
 views on the same or different displays to support collaborative analysis and
 annotation projects.  WAVE has been used to develop annotations for most of
-the PhysioBank databases (http://www.physionet.org/physiobank/).
+the PhysioBank databases (https://www.physionet.org/physiobank/).
 
 WAVE uses the XView graphical user interface.
 
@@ -247,7 +247,7 @@ WAVE uses the XView graphical user interface.
 %package doc
 Summary: WFDB documentation.
 Group: Documentation
-URL: http://www.physionet.org/physiotools/manuals.shtml
+URL: https://www.physionet.org/physiotools/manuals.shtml
 BuildArch: noarch
 
 %description doc

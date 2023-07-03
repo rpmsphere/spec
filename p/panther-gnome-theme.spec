@@ -7,7 +7,7 @@ Release: 6.1
 License: GPL
 Group: User Interface/Desktops
 Source0: https://dl.opendesktop.org/api/files/download/id/1460762503/100808-Panther.tar.gz
-Source1: http://www.crossfitpanthercity.com/wp-content/uploads/2013/12/black-panther-animal-hd-wallpaper-1920x1200-5511.jpg
+Source1: https://www.crossfitpanthercity.com/wp-content/uploads/2013/12/black-panther-animal-hd-wallpaper-1920x1200-5511.jpg
 BuildArch: noarch
 URL: https://www.gnome-look.org/p/1014213/
 Requires: appleart-icon-theme

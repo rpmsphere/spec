@@ -5,8 +5,8 @@ Summary: The Zimbu compiler written in Zimbu
 Version: 2013.02.01
 Release: 7.1
 Group: Development/Languages
-URL: http://www.zimbu.org/
-Source0: http://zimbu.googlecode.com/files/%{name}_2013_02_01.tgz
+URL: https://www.zimbu.org/
+Source0: https://zimbu.googlecode.com/files/%{name}_2013_02_01.tgz
 License: Apache License
 BuildRequires: clang
 BuildRequires: llvm-devel

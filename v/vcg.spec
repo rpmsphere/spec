@@ -6,7 +6,7 @@ Version: 1.30
 Release: 5.1
 License: GPL
 Group: Graphics
-URL: http://www.cs.uni-sb.de/RW/users/sander/html/gsvcg1.html
+URL: https://www.cs.uni-sb.de/RW/users/sander/html/gsvcg1.html
 Source: ftp://ftp.cs.uni-sb.de/pub/graphics/vcg/vcg.tar.bz2
 Patch0: vcg.1.30-fix-build.patch
 Patch1: vcg.1.30-fix-link.patch

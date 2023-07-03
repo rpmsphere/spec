@@ -5,7 +5,7 @@ Release: 1
 License: GPL
 Group: Applications
 Source0: https://freeheimdall.spdns.org/files/%{name}-%{version}.tar.gz
-URL: http://henning.makholm.net/software
+URL: https://henning.makholm.net/software
 BuildRequires: cmake
 BuildRequires: libpng-devel
 

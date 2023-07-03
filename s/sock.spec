@@ -1,12 +1,11 @@
 Name:         sock
-URL:          http://atrey.karlin.mff.cuni.cz/~mj/linux.shtml
+URL:          https://atrey.karlin.mff.cuni.cz/~mj/linux.shtml
 License:      GPL, Other License(s), see package
 Group:        Productivity/Networking/Other
 Version:      1.1
 Release:      94.1
 Summary:      A Simple Shell Interface to Network Sockets
 Source:       %{name}-%{version}.tar.bz2
-BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 
 %description
 This program serves as an interface for network sockets for use in both
@@ -42,7 +41,6 @@ make install
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc README
 %{_mandir}/man1/%{name}.1.*
 %{_bindir}/%{name}

@@ -10,9 +10,9 @@ Version:	1.5.1
 Release:	1
 License:	GPLv2
 Group:		X11/Window Managers/Tools
-Source0:	http://www.arrishq.net/files/%{name}-%{version}.tar.gz
+Source0:	https://www.arrishq.net/files/%{name}-%{version}.tar.gz
 Source1:	%{name}-README.PLD
-URL:		http://www.arrishq.net/
+URL:		https://www.arrishq.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 

@@ -4,10 +4,10 @@ Name:			nzb
 Version:		0.3
 Summary:		A binary news grabber
 License:		GPL
-URL:			http://www.nzb.fi/
+URL:			https://www.nzb.fi/
 Group:			Productivity/Network/News/Utilities
 Release:		23.1
-Source:			http://sourceforge.net/projects/nzb/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+Source:			https://sourceforge.net/projects/nzb/files/%{name}/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	desktop-file-utils
 BuildRequires:	gcc-c++
 BuildRequires:	qt4-devel

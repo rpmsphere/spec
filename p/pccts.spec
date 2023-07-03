@@ -3,7 +3,7 @@ Version: 1.33mr33
 Release: 16.1
 Source: pccts133mr33.tar.gz
 Patch0: pccts-syntax.patch
-URL: http://www.polhode.com/pccts.html
+URL: https://www.polhode.com/pccts.html
 License: Public domain
 Group: Development/Tools
 Summary: The Purdue Compiler-Compiler Tool Set

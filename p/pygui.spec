@@ -6,9 +6,9 @@ Version: 2.5.3
 Release: 4.1
 Summary: A project to develop a cross-platform pythonic GUI API
 License: GPL
-URL: http://www.cosc.canterbury.ac.nz/greg.ewing/python2_gui/
+URL: https://www.cosc.canterbury.ac.nz/greg.ewing/python2_gui/
 Group: Development/Language
-Source0: http://www.cosc.canterbury.ac.nz/greg.ewing/python2_gui/%{module_name}-%{version}.tar.gz
+Source0: https://www.cosc.canterbury.ac.nz/greg.ewing/python2_gui/%{module_name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: pygtk2, python-setuptools
 BuildRequires: python

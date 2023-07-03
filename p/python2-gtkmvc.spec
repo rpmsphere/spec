@@ -4,8 +4,8 @@ Version:        1.2.2
 Release:        1
 License:        BSD
 Group:          Development/Libraries/Python
-Source:         http://ovh.dl.sourceforge.net/sourceforge/pygtkmvc/python-gtkmvc-%{version}.tar.gz
-URL:		http://sourceforge.net/projects/pygtkmvc/
+Source:         https://ovh.dl.sourceforge.net/sourceforge/pygtkmvc/python-gtkmvc-%{version}.tar.gz
+URL:		https://sourceforge.net/projects/pygtkmvc/
 BuildArch:      noarch
 Requires:       pygtk2, libglade2
 BuildRequires:  libglade2-devel, pygtk2-devel

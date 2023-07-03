@@ -7,7 +7,7 @@ License: GPL
 Group: Development/Languages
 Summary: A Basic Interpreter with X11-Graphics capabilities
 Source0: https://github.com/kollokollo/X11Basic/archive/refs/tags/%{version}.tar.gz#/X11Basic-%{version}.tar.gz
-URL: http://x11-basic.sourceforge.net/
+URL: https://x11-basic.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	libX11-devel
 BuildRequires:	libpng-devel

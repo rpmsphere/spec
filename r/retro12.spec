@@ -6,8 +6,8 @@ Version: 2021.7
 Release: 1
 License: Freeware
 Group: Development/Language
-URL: http://www.forthworks.com/retro
-Source0: http://www.forthworks.com/retro/r/RETRO12-%{version}.tar.gz
+URL: https://www.forthworks.com/retro
+Source0: https://www.forthworks.com/retro/r/RETRO12-%{version}.tar.gz
 
 %description
 Retro is a concatenative, stack based language with roots in Forth. It is

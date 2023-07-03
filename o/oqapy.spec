@@ -2,8 +2,8 @@ Name: 	 	oqapy
 Summary: 	An application intended to sort files of the image type in graphic mode
 Version: 	1.9.1
 Release: 	3.1
-Source:		http://www.oqapy.eu/releases/%{name}-%{version}.tar.gz
-URL:		http://www.oqapy.eu/
+Source:		https://www.oqapy.eu/releases/%{name}-%{version}.tar.gz
+URL:		https://www.oqapy.eu/
 License:	GPLv3
 Group:		Applications/Multimedia
 Requires:	PyQt4

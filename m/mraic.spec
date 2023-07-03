@@ -6,8 +6,8 @@ Version: 1.4
 Release: 3
 License: unknown
 Group: Applications/Bioinformatics
-URL: http://www.ebc.uu.se/systzoo/staff/nylander.html
-Source0: http://www.ebc.uu.se/systzoo/staff/nylander/%{_name}.tgz
+URL: https://www.ebc.uu.se/systzoo/staff/nylander.html
+Source0: https://www.ebc.uu.se/systzoo/staff/nylander/%{_name}.tgz
 BuildArch: noarch
 
 %description

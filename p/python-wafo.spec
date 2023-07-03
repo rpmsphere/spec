@@ -8,8 +8,8 @@ Release:        15.1
 Summary:        Toolbox for statistical analysis and simulation of random waves and loads
 Group:          Development/Languages/Python
 License:        GPLv3
-URL:            http://pypi.python.org/pypi/wafo/0.1.2
-Source0:        http://pypi.python.org/packages/source/w/wafo/wafo-0.1.2.zip
+URL:            https://pypi.python.org/pypi/wafo/0.1.2
+Source0:        https://pypi.python.org/packages/source/w/wafo/wafo-0.1.2.zip
 BuildArch:      noarch
 BuildRequires:  python3-devel unzip
 BuildRequires:  atlas-devel suitesparse-devel

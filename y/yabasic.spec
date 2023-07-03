@@ -4,8 +4,8 @@ Release:        1
 Summary:        Small basic interpreter with simple graphics and printing
 Group:          Development/Languages
 License:        GPLv2 or Artistic clarified
-URL:            http://www.yabasic.de
-Source0:        http://www.yabasic.de/download/%{name}-%{version}.tar.gz
+URL:            https://www.yabasic.de
+Source0:        https://www.yabasic.de/download/%{name}-%{version}.tar.gz
 BuildRequires:  kernel-headers
 BuildRequires:  ncurses-devel
 BuildRequires:  libX11-devel

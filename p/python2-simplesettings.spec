@@ -4,8 +4,8 @@ Release:        2.1
 Summary:        Simple settings initialization for Python libraries
 Group:          Development/Languages
 License:        ASL 2.0
-URL:            http://code.google.com/p/simplesettings/
-Source0:        http://pypi.python.org/packages/source/s/simplesettings/simplesettings-%{version}.tar.gz
+URL:            https://code.google.com/p/simplesettings/
+Source0:        https://pypi.python.org/packages/source/s/simplesettings/simplesettings-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  python2-setuptools

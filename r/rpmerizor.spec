@@ -5,8 +5,8 @@ Version: 2.11
 Release: 1
 Group: Applications/System
 License: GPL
-Source: http://sourceforge.net/projects/rpmerizor/files/%{version}/%{name}-%{version}.tar.gz
-URL: http://rpmerizor.sourceforge.net
+Source: https://sourceforge.net/projects/rpmerizor/files/%{version}/%{name}-%{version}.tar.gz
+URL: https://rpmerizor.sourceforge.net
 BuildRequires: perl-podlators
 BuildArch: noarch
 Requires: perl

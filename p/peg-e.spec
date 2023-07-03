@@ -6,8 +6,8 @@ Release:        1
 Summary:        Peg solitaire game
 Group:          Amusements/Games
 License:        GPLv3+
-URL:            http://gottcode.org/%{name}/
-Source:         http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
+URL:            https://gottcode.org/%{name}/
+Source:         https://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
 BuildRequires:  gcc-c++ hicolor-icon-theme
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qt5-linguist

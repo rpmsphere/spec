@@ -5,8 +5,8 @@ Release:    9.1
 Summary:    Yet Another Python Parser System
 Group:      Development/Languages/Python
 License:    Public Domain
-URL:        http://theory.stanford.edu/~amitp/yapps/
-Source:     http://theory.stanford.edu/~amitp/yapps/yapps%{version}.tar.gz
+URL:        https://theory.stanford.edu/~amitp/yapps/
+Source:     https://theory.stanford.edu/~amitp/yapps/yapps%{version}.tar.gz
 BuildRequires: python2-devel
 BuildArch:      noarch
 

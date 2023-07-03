@@ -4,8 +4,8 @@ Name:		swm
 Version:	1.3.4c
 Release:	15.1
 License:	GPL
-URL:		http://www.small-window-manager.de/
-Source0:	http://www.small-window-manager.de/%{name}-%{version}-src.tgz
+URL:		https://www.small-window-manager.de/
+Source0:	https://www.small-window-manager.de/%{name}-%{version}-src.tgz
 BuildRequires:	libX11-devel
 BuildRequires:	libXpm-devel
 Group:		Graphical desktop/Other

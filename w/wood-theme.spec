@@ -19,7 +19,7 @@ Requires: oldbrownwood-icon-theme
 %description
 This theme has two flavours - Rustic and Smooth, also included is a set of
 gnome desktop icons. Updated to now include Xfce4 window manager decorations.
-By Keith Hedger at http://khapplications.darktech.org/pages/themes/wood.html
+By Keith Hedger at https://khapplications.darktech.org/pages/themes/wood.html
 
 %prep
 %setup -q -c -a 1 -a 2

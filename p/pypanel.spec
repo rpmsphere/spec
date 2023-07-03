@@ -4,7 +4,7 @@ Group:          System/GUI/Other
 Version:        2.4
 Release:        1
 Summary:        PyPanel is a lightweight panel/taskbar written in Python and C for X11 window managers
-URL:            http://pypanel.sourceforge.net/
+URL:            https://pypanel.sourceforge.net/
 Source:         PyPanel-%{version}.tar.gz
 Requires:       python2-xlib imlib2 libXft
 BuildRequires:  python2-devel imlib2-devel python2-xlib libXft-devel

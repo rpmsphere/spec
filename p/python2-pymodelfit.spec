@@ -5,7 +5,7 @@ Version:        0.2.dev35
 Release:        10.1
 Summary:        Framework and GUI tool for fitting data
 License:        Apache v2.0
-URL:            http://code.google.com/p/pymc/downloads/list
+URL:            https://code.google.com/p/pymc/downloads/list
 Group:          Development/Libraries/Python
 Source0:        %{pyname}-35.tar.bz2
 BuildArch:      noarch

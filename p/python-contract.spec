@@ -9,7 +9,7 @@ Source0:    %{corename}-%{version}.tar.bz2
 License:     Artistic; LPGL; Python Software Foundation License
 Group:      Development/Libraries/Python
 BuildArch:     noarch
-URL:        http://www.wayforward.net/pycontract/
+URL:        https://www.wayforward.net/pycontract/
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools >= 0.6
 

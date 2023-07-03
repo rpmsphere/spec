@@ -8,7 +8,7 @@ License: 	LGPL
 Group: 		Development/Python
 Source: 	%{module}-%{version}.tar.bz2
 Patch:		python-%{module}-0.2.lib64.patch
-URL:		http://www.csse.monash.edu.au/hons/projects/1999/Andrew.Snare
+URL:		https://www.csse.monash.edu.au/hons/projects/1999/Andrew.Snare
 BuildRequires:	python-devel
 BuildRequires:	autoconf
 

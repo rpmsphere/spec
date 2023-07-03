@@ -7,15 +7,14 @@ Source2: %{name}.desktop
 Patch0:	%{name}-1.5-fix-str-fmt.patch
 License: GNU General Public License
 Group: Amusements/Games/Action/Arcade
-URL: http://www.interq.or.jp/libra/oohara/xsoldier/
+URL: https://www.interq.or.jp/libra/oohara/xsoldier/
 Summary: A X11 shoot-em up game for Linux
 BuildRequires:  SDL_image-devel, libXpm-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
 xsoldier is a X11 shoot-em up game for Linux.
 It was created by Yuusuke HASHIMOTO <hachi@surfline.ne.jp>.
-The webpage of the original author is [http://www.surfline.ne.jp/hachi/xsoldier.html].
+The webpage of the original author is [https://www.surfline.ne.jp/hachi/xsoldier.html].
 Oohara Yuuma <oohara@libra.interq.or.jp> took over the development of xsoldier. 
 
 %prep
@@ -35,7 +34,6 @@ install -Dm 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.deskt
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %dir %{_datadir}/games/%{name}
 %{_datadir}/games/%{name}/*

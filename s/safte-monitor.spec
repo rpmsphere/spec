@@ -3,7 +3,7 @@ Obsoletes:      saftemon
 Summary:        Linux SAF-TE SCSI enclosure monitor
 Version:        0.0.5
 Release:        383.1
-URL:            http://oss.metaparadigm.com/safte-monitor/
+URL:            https://oss.metaparadigm.com/safte-monitor/
 Source0:        %{name}-%{version}.tar.gz
 Patch0:         %{name}-%{version}.diff
 Patch1:         safte-monitor-fix.patch
@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/bin/safte-monitor
 /usr/sbin/rcsafte-monitor
 /usr/lib/safte-monitor
-%defattr(-,daemon,root)
+ %defattr(-,daemon,root)
 /var/run/safte-monitor
 /var/log/safte-monitor
 

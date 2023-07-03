@@ -1,7 +1,7 @@
 Name:           pydance
 Version:        1.0.3
 Release:        1
-URL:            http://icculus.org/pyddr/
+URL:            https://icculus.org/pyddr/
 License:        GNU General Public License (GPL)
 Group:          Amusements/Games/Arcade
 Summary:        Fun dancing game for experience asian dance beat!

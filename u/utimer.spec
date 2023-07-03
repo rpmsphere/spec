@@ -3,8 +3,8 @@ Version:        0.4
 Release:        2.1
 Summary:        Command-line multifunction timer tool
 License:        GPLv3+
-URL:            http://utimer.codealpha.net/utimer/
-Source0:        http://utimer.codealpha.net/files/%{name}-%{version}.tar.gz
+URL:            https://utimer.codealpha.net/utimer/
+Source0:        https://utimer.codealpha.net/files/%{name}-%{version}.tar.gz
 BuildRequires: intltool, glib2-devel
 
 %description 

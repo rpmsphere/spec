@@ -7,18 +7,7 @@ Group:          Development/Tools/Other
 URL:            https://www.elstel.org/coan/index.html.en
 Source0:        https://www.elstel.org/coan/coan-v%{version}.tar.bz2
 BuildRequires:  gcc-c++
-%if %{defined suse_version}
-BuildRequires:  libqt5-qtbase-common-devel
-%endif
-%if %{defined fedora}
-BuildRequires:  qt5-devel
-%endif
-%if %{defined centos_version}
-BuildRequires: qt5-qtbase-devel
-%endif
-%if %{defined mageia}
-BuildRequires: libqt5core-devel
-%endif
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Widgets)

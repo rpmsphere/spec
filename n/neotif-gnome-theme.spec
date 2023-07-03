@@ -11,7 +11,7 @@ Source1: https://dl.opendesktop.org/api/files/download/id/1460749283/137265-Neot
 Source2: %{theme_name}-index.theme
 Source3: 121759.png
 Source4: LighthouseBlue-index.theme
-URL: http://gnome-look.org/content/show.php?content=137267
+URL: https://gnome-look.org/content/show.php?content=137267
 BuildArch: noarch
 Requires: gtk-lighthouseblue-engine
 Requires: gnome-themes-extras

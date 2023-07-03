@@ -4,7 +4,7 @@ Version: 0.3.0
 Release: 12.1
 Group: Applications/Internet
 License: AGPL
-URL: http://sat.goffi.org/
+URL: https://sat.goffi.org/
 Source0: ftp://ftp.goffi.org/sat/sat-%{version}.tar.bz2
 BuildRequires: python2-devel
 BuildRequires: python2-setuptools

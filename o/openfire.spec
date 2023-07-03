@@ -6,12 +6,12 @@ Version:	4.1.2
 Release:	9.1
 BuildRequires: 	ant java-devel-openjdk lua
 Requires: 	java
-#Source0: 	http://www.igniterealtime.org/downloadServlet?filename=openfire/%{name}_src_4_1_2.tar.gz
+#Source0: 	https://www.igniterealtime.org/downloadServlet?filename=openfire/%{name}_src_4_1_2.tar.gz
 Source0:        %{name}_src_4_1_2.txz
 Source1:	https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar
 Group: 		Applications/Communications
 License: 	GPL
-URL: 		http://www.igniterealtime.org/
+URL: 		https://www.igniterealtime.org/
 Patch0:         openfire-sysvinit.patch
 Patch1:		openfire-3.7.0-SSLConfig.patch
 Patch2:		openfire-3.7.0-IPv6-workaround.patch
@@ -107,7 +107,7 @@ rm -f $RPM_BUILD_ROOT%{homedir}/lib/*.dll
 rm -rf $RPM_BUILD_ROOT%{homedir}/resources/spank
 
 # Dont enable fdupes (on resources/security/) as it breaks the crypto store
-# See: http://www.igniterealtime.org/issues/browse/OF-30
+# See: https://www.igniterealtime.org/issues/browse/OF-30
 # For now disabled completely..
 #%fdupes -s $RPM_BUILD_ROOT
 
@@ -115,7 +115,7 @@ rm -rf $RPM_BUILD_ROOT%{homedir}/resources/spank
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,daemon,daemon)
+ %defattr(-,daemon,daemon)
 %attr(750, daemon, daemon) %dir %{homedir}
 %dir %{homedir}/bin
 %{homedir}/bin/openfire.sh
@@ -162,11 +162,11 @@ rm -rf $RPM_BUILD_ROOT
 - Rebuilt for Fedora
 * Tue Jan 26 2010 nix@opensuse.org
 - Dont enable fdupes (on resources/security/) as it breaks the crypto store
-  See: http://www.igniterealtime.org/issues/browse/OF-30
+  See: https://www.igniterealtime.org/issues/browse/OF-30
   For now disabled completely..
 * Tue Jan 19 2010 nix@opensuse.org
 - Add openfire-3.6.4-self_signed_certificate.patch from to fix SSL
-  cert problem: http://www.igniterealtime.org/issues/browse/OF-30
+  cert problem: https://www.igniterealtime.org/issues/browse/OF-30
 * Fri Oct 23 2009 nix@opensuse.org
 - Change java dependency to "java-sun >=1.6.0" so that SLES 11 works properly
 * Fri Jun 19 2009 claes.backstrom@fsfe.org
@@ -214,7 +214,7 @@ rm -rf $RPM_BUILD_ROOT
   * Debian postinstall is now checking to make sure openfire group exists.
 * Sun Jan 20 2008 claes.backstrom@fsfe.org
 - New Upstream Release 3.4.4
-  * Jetty upgraded to fix announced security issue (http://www.kb.cert.org/vuls/id/553235)
+  * Jetty upgraded to fix announced security issue (https://www.kb.cert.org/vuls/id/553235)
   * LDAP vCard database storage fixed to work properly with Active Directory and others. !!NOTE!! API Changes for providers were required. See important notes below. (1 vote)
   * Can now delete an avatar when using LDAP.
   * Current LDAP settings now being kept when editing config from admin interface.

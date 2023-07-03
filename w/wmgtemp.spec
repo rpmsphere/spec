@@ -1,11 +1,11 @@
 Name:         wmgtemp
 Release:      3.1
 License:      Artistic License
-URL:          http://www.fluxcode.net/
+URL:          https://www.fluxcode.net/
 Group:        System/GUI/Other
 Version:      1.1
 Summary:      Display the CPU and SYS temperatures
-Source:       http://www.fluxcode.net/wmgtemp-%{version}.tar.gz
+Source:       https://www.fluxcode.net/wmgtemp-%{version}.tar.gz
 BuildRequires: libX11-devel, libXpm-devel, libXext-devel
 BuildRequires: lm_sensors-devel
 
@@ -17,7 +17,7 @@ temperature history, high-temperature warning lights and
 temperatures in degrees Celsius, Fahrenheit or Kelvin.
 
 %prep
-%setup
+%setup -q
 sed -i -e 's/sensors\.conf/sensors3.conf/' src/wmgtemp.c
 sed -i 's|INLINE ||' src/wmgeneral/list.?
 #sed -i 's|inline void cycle_temptype|void cycle_temptype|' src/wmgtemp.c

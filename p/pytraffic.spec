@@ -4,8 +4,8 @@ Release: 5.4
 Summary: Rush Hour game
 Group: Amusements/Games
 License: GPL
-URL: http://alpha.uhasselt.be/Research/Algebra/Members/pytraffic/
-Source0: http://alpha.uhasselt.be/Research/Algebra/Members/pytraffic/pytraffic-%{version}.tar.gz
+URL: https://alpha.uhasselt.be/Research/Algebra/Members/pytraffic/
+Source0: https://alpha.uhasselt.be/Research/Algebra/Members/pytraffic/pytraffic-%{version}.tar.gz
 BuildRequires: python-devel,  SDL_mixer-devel, desktop-file-utils
 
 %description

@@ -4,8 +4,8 @@ Version:	0.15
 Release:	1
 License:	GPL
 Group:		System/Configuration/Hardware
-URL:		http://www.geekounet.org/powerbook/files
-Source0:	http://www.geekounet.org/powerbook/files/%{name}-%{version}.tar.bz2
+URL:		https://www.geekounet.org/powerbook/files
+Source0:	https://www.geekounet.org/powerbook/files/%{name}-%{version}.tar.bz2
 Source1:	%{name}.init
 Source2:	%{name}.sysconfig
 Source3:	%{name}.rules

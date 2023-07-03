@@ -4,8 +4,8 @@ Release:        1
 Summary:        An educational, math version of scrabble
 Group:          Educations/Games
 License:        GPL
-URL:            http://www.asymptopia.org/index.php?topic=tuxmathscrabble
-Source0:        http://easynews.dl.sourceforge.net/sourceforge/tuxmathscrabble/TuxMathScrabble-2.9-r1.tgz
+URL:            https://www.asymptopia.org/index.php?topic=tuxmathscrabble
+Source0:        https://easynews.dl.sourceforge.net/sourceforge/tuxmathscrabble/TuxMathScrabble-2.9-r1.tgz
 Source1:	%{name}.png
 BuildRequires:  python2-devel, SDL-devel, SDL_image-devel, SDL_mixer-devel, SDL_ttf-devel
 Requires:	python2-pygame

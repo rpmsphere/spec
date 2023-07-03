@@ -5,7 +5,7 @@ Version:	1.4.1
 Release:	10.1
 License:	GPL-2.0+
 Summary:	A Simple GUI Program for the Proxychains Proxifier
-URL:		http://sourceforge.net/projects/proxychainsgui
+URL:		https://sourceforge.net/projects/proxychainsgui
 Group:		Productivity/Networking/Web/Proxy
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop

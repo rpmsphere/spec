@@ -6,8 +6,8 @@ Version: 2.2
 Release: 7.1
 License: GPL
 Group: Applications/Multimedia
-URL: http://vento.pi.tu-berlin.de/pixmax/main.html
-Source: http://vento.pi.tu-berlin.de/%{name}/%{name}-%{version}.src.tar.gz
+URL: https://vento.pi.tu-berlin.de/pixmax/main.html
+Source: https://vento.pi.tu-berlin.de/%{name}/%{name}-%{version}.src.tar.gz
 
 %description
 The pixmax utility allows the plotting of 3d-data sets.

@@ -3,7 +3,7 @@ Version:        0.2.0
 Release:        1408.1
 License:        GPL-2.0
 Summary:        Packet sniffer and a LAN analyzer based on Libnet and Libpcap
-URL:            http://nast.berlios.de/
+URL:            https://nast.berlios.de/
 Group:          Productivity/Networking/Diagnostic
 Source:         %{name}-%{version}.tar.bz2
 Patch0:         nast-%{version}-config.patch

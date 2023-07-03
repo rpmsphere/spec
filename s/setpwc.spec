@@ -2,12 +2,11 @@ Name:               setpwc
 Version:            1.3
 Release:            3.1
 Summary:            Control all settings on Philips WebCams
-Source:             http://www.vanheusden.com/setpwc/setpwc-%{version}.tgz
+Source:             https://www.vanheusden.com/setpwc/setpwc-%{version}.tgz
 Patch1:             setpwc-optflags.patch
-URL:                http://www.vanheusden.com/setpwc/
+URL:                https://www.vanheusden.com/setpwc/
 Group:              Hardware/Other
 License:            GNU General Public License version 2 or later (GPL v2 or later)
-BuildRoot:          %{_tmppath}/build-%{name}-%{version}
 BuildRequires:      gcc make glibc-devel
 BuildRequires:      kernel-headers >= 2.6.32
 
@@ -35,7 +34,6 @@ retrieved.
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc license.txt readme.txt
 %{_bindir}/setpwc
 %doc %{_mandir}/man1/setpwc.1.*

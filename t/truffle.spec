@@ -7,7 +7,6 @@ Group:          Productivity/Text/Convertors
 URL:            https://github.com/hroptatyr/truffle/
 Source:         %{name}-%{version}.tar.xz
 Patch1:         test-portable-readlink.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Truffle is a command line tool to roll over futures contracts
@@ -29,7 +28,6 @@ make V=1
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/*
 
 %changelog

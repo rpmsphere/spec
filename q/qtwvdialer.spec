@@ -3,8 +3,8 @@ Version:       0.4.4
 Release:       8.1
 Summary:       A simple graphical front-end for wvdialer
 Group:         Application/Graphical/Networking
-URL:           http://www.mtoussaint.de/qtwvdialer.html
-Source:        http://www.mtoussaint.de/qtwvdialer-%{version}.tgz
+URL:           https://www.mtoussaint.de/qtwvdialer.html
+Source:        https://www.mtoussaint.de/qtwvdialer-%{version}.tgz
 License:       GPL
 BuildRequires: libpng-devel
 BuildRequires: gcc-c++

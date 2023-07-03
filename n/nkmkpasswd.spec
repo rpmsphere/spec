@@ -2,11 +2,10 @@ Name:           nkmkpasswd
 Version:        0.0.2
 Release:        3.1
 Summary:        Create Passwords with various Levels of Strength
-Source:         http://prdownloads.sourceforge.net/nkmkpasswd/nkmkpasswd-%{version}.tar.bz2
-URL:            http://sourceforge.net/projects/nkmkpasswd/
+Source:         https://prdownloads.sourceforge.net/nkmkpasswd/nkmkpasswd-%{version}.tar.bz2
+URL:            https://sourceforge.net/projects/nkmkpasswd/
 Group:          Productivity/Security
 License:        GNU General Public License version 2 (GPL v2)
-BuildRoot:      %{_tmppath}/build-%{name}-%{version}
 BuildArch:      noarch
 
 %description
@@ -31,7 +30,6 @@ Authors:
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc LICENSE README
 %{_bindir}/nkmkpasswd
 

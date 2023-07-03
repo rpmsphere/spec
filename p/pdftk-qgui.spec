@@ -4,7 +4,7 @@ Name:		pdftk-qgui
 Summary:	A Qt4-based GUI for pdftk
 Version:	0.1.9.2
 Release:	11.1
-URL:		http://suslic-2012.narod.ru/PDFTkGUI.html
+URL:		https://suslic-2012.narod.ru/PDFTkGUI.html
 Source0:	pdftk-qgui_0.1.9-2_src.tar.gz
 Source1:	pdftk-qgui.desktop
 Patch0:		pdftk-qgui-qt44.patch

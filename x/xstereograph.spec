@@ -11,7 +11,7 @@ Requires:       emacs-x11
 Requires:       xless
 Version:        2.1
 Release:        823.1
-URL:            http://freshmeat.net/projects/xstereograph/
+URL:            https://freshmeat.net/projects/xstereograph/
 Source0:        %{name}-%{version}.tar.bz2
 Source1:        libsx-%{version_libsx}.tar.bz2
 Patch0:         %{name}-%{version}.patch

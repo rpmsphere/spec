@@ -6,9 +6,9 @@ Release:        13.1
 Summary:        Both single and two factor ANOVA
 Group:          Productivity/Scientific/Math
 License:        GPL-2.0
-URL:            http://www.stat.tamu.edu/~aredd/tamuanova/     
+URL:            https://www.stat.tamu.edu/~aredd/tamuanova/     
 Source0:        %{name}-%{version}.tar.bz2
-Source1:        CMakeLists.txt
+Source1:        %name.CMakeLists.txt
 BuildRequires:  gcc-c++ gsl-devel cmake
 
 %description 
@@ -38,7 +38,7 @@ developing applications that use %{name}.
 %setup -n tamuanova-%version
 
 %build 
-cp %{SOURCE1} .
+cp %{SOURCE1} CMakeLists.txt
 cmake -DCMAKE_INSTALL_PREFIX=%_prefix -Dlib=%_libdir
 make
 

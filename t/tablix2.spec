@@ -4,7 +4,7 @@ Version:        0.3.5
 Release:        11.1
 License:        GPL-2.0+
 Group:          Productivity/Office/Management
-URL:            http://www.tablix.org/
+URL:            https://www.tablix.org/
 BuildRequires:  libxml2-devel
 #BuildRequires:  pvm
 Requires:       gnuplot

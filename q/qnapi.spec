@@ -7,7 +7,7 @@ Summary:        A NapiProjekt client
 Summary(pl):    Klient NapiProjekt
 License:        GPL-2.0+
 Group:          Productivity/Multimedia/Other
-URL:            http://qnapi.github.io/
+URL:            https://qnapi.github.io/
 Source0:        https://github.com/QNapi/qnapi/releases/download/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 BuildRequires:  desktop-file-utils
@@ -20,12 +20,12 @@ BuildRequires:  libmediainfo-devel
 Requires:       p7zip
 
 %description
-QNapi is unofficial clone of NapiProjekt program (http://napiprojekt.pl)
+QNapi is unofficial clone of NapiProjekt program (https://napiprojekt.pl)
 written using Qt5. It's focused to be functional on GNU/Linux and other
 Unix-like systems, for which NapiProjekt is not available.
 
 %description -l pl
-QNapi jest nieoficjalnym klonem programu NapiProjekt (http://napiprojekt.pl)
+QNapi jest nieoficjalnym klonem programu NapiProjekt (https://napiprojekt.pl)
 napisanym w bibliotece Qt5 z myślą o użytkownikach Linuksa oraz innych
 systemów, pod które oryginalny NapiProjekt nie jest dostępny.
 

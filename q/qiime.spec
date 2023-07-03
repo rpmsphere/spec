@@ -6,7 +6,7 @@ Version: 1.9.0
 Release: 0.rc1
 Group: science
 License: Free Software
-URL: http://www.qiime.org/
+URL: https://www.qiime.org/
 Source0: %{name}-%{version}-rc1.tar.gz
 BuildRequires: python2-devel
 BuildRequires: python2-setuptools

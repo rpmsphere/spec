@@ -5,7 +5,7 @@ Summary:        Current files applet for GNOME
 Group:          User Interface/Desktops
 License:        GPLv2
 URL:            https://launchpad.net/topshelf
-Source0:        http://launchpadlibrarian.net/11639150/%{name}-%{version}.tar.gz
+Source0:        https://launchpadlibrarian.net/11639150/%{name}-%{version}.tar.gz
 Requires:       libgnome, pygtk2
 BuildArch:	noarch
 

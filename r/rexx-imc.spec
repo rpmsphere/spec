@@ -6,7 +6,7 @@ Version: 1.76
 Release: 5.1
 License: distributable
 Group: Development/Languages
-URL: http://www.cs.ox.ac.uk/people/ian.collier/Rexx/rexximc.html
+URL: https://www.cs.ox.ac.uk/people/ian.collier/Rexx/rexximc.html
 Source: %{name}-1.7.tar.gz
 Patch0: rexx-imc-1.7-1.75.patch
 Patch1: rexx-imc-1.75-1.76.patch

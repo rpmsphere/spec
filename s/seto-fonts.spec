@@ -5,7 +5,7 @@ Release: 7.1
 Group: User Interface/X
 License: Open Font License 1.1
 URL: https://osdn.net/projects/setofont/
-Source0: http://nchc.dl.osdn.jp/setofont/61995/setofont_v_6_20.zip
+Source0: https://nchc.dl.osdn.jp/setofont/61995/setofont_v_6_20.zip
 BuildArch: noarch
 Requires: fontconfig
 

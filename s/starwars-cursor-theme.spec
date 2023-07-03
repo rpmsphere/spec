@@ -5,13 +5,13 @@ Name:           starwars-cursor-theme
 Version:        20090602
 Release:        2.1
 License:        Artistic 2.0
-URL:            http://gnome-look.org/content/show.php/StarWars?content=106118
+URL:            https://gnome-look.org/content/show.php/StarWars?content=106118
 Group:          User Interface/Desktops
 Source0:        106118-StarWars.tar.gz
 BuildArch:      noarch
 
 %description
-Star Wars Cursors By JJ Ying http://users.wincustomize.com/691873/
+Star Wars Cursors By JJ Ying https://users.wincustomize.com/691873/
 StarWars X11 Mouse theme converted from StarWars.CurXPTheme with sd2xc-2.4.pl
 and refined with GIMP.
 

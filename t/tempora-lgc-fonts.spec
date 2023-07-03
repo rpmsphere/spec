@@ -5,11 +5,10 @@ Version:        0.2.1
 Release:        4.1
 License:        GPL-2.0+
 Summary:        Tempora LGC Unicode Fonts
-URL:            http://thessalonica.org.ru/en/fonts.html
+URL:            https://thessalonica.org.ru/en/fonts.html
 Group:          System/X11/Fonts
-Source0:        http://www.thessalonica.org.ru/downloads/tempora-lgc.otf.zip
-Source1:        http://www.thessalonica.org.ru/downloads/tempora-lgc.ttf.zip
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+Source0:        https://www.thessalonica.org.ru/downloads/tempora-lgc.otf.zip
+Source1:        https://www.thessalonica.org.ru/downloads/tempora-lgc.ttf.zip
 BuildArch:      noarch
 
 %description
@@ -73,12 +72,10 @@ install -m 0644 *.otf $RPM_BUILD_ROOT%{_datadir}/fonts/%{_fontdir}
 install -m 0644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/%{_fontdir}
 
 %files otf
-%defattr(-,root,root,-)
 %doc COPYING HISTORY README
 %{_datadir}/fonts/%{_fontdir}/*.otf
 
 %files ttf
-%defattr(-,root,root,-)
 %doc COPYING HISTORY README
 %{_datadir}/fonts/%{_fontdir}/*.ttf
 

@@ -2,8 +2,8 @@ Name:		navit
 Summary:	Car navigation system with routing engine
 Version:	0.5.6
 Release:	1
-Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-Source1:	http://www.navit-project.org/maps/osm_bbox_11.3,47.9,11.7,48.2.osm.bz2
+Source0:	https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source1:	https://www.navit-project.org/maps/osm_bbox_11.3,47.9,11.7,48.2.osm.bz2
 Source2:	%{name}-0.2.0.zh_TW.po
 Source3:        taiwan.navit.zip
 Source4:	navit-fix-icons.zip
@@ -38,7 +38,7 @@ BuildRequires:	desktop-file-utils
 # autopoint requires cvs to work
 BuildRequires:	cvs
 #Requires:	dejavu-sans-fonts
-URL:		http://www.navit-project.org/
+URL:		https://www.navit-project.org/
 
 %description
 Navit is a car navigation system with routing engine. Its modular
@@ -119,11 +119,11 @@ on a daily basis, so the packages would have to be refreshed very
 often. For instructions on downloading or generating, and installing,
 different types of map sets, see these Navit Wiki pages:
 
-http://wiki.navit-project.org/index.php/OpenStreetMaps
+https://wiki.navit-project.org/index.php/OpenStreetMaps
 
-http://wiki.navit-project.org/index.php/European_maps
+https://wiki.navit-project.org/index.php/European_maps
 
-http://wiki.navit-project.org/index.php/Garmin_maps
+https://wiki.navit-project.org/index.php/Garmin_maps
 
 You should either add the appropriate configuration elements to
 /etc/navit/navit.xml, or copy /etc/navit/navit.xml to

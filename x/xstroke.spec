@@ -1,7 +1,7 @@
 Name:           xstroke
 BuildRequires:  libpng-devel
 BuildRequires:  libXpm-devel, libXtst-devel, gtk2-devel
-URL:            http://xstroke.org/
+URL:            https://xstroke.org/
 Version:        0.6
 Release:        474.1
 Summary:        Fullscreen gesture recognition for X
@@ -13,7 +13,6 @@ Source1:        xstroke.png
 Source2:        xstroke.desktop
 # please upstream it
 Patch0:         xstroke-no-copy-dt-needed-entries.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 xstroke is a full-screen gesture recognition program for the X Window
@@ -50,7 +49,6 @@ cp -pr AUTHORS COPYING INSTALL ChangeLog NEWS README TODO $RPM_BUILD_ROOT%{_defa
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
 %{_bindir}/xstroke
 %dir %{_sysconfdir}/xstroke
 %config %{_sysconfdir}/xstroke/alphabet

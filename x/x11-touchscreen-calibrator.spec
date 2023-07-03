@@ -4,7 +4,7 @@ Release:        1
 Summary:        X Window System's Touchscreen Calibrator
 Group:          Applications/System
 License:        GPLv3+
-URL:            http://fourdollars.github.io/x11-touchscreen-calibrator/
+URL:            https://fourdollars.github.io/x11-touchscreen-calibrator/
 Source0:        https://github.com/fourdollars/%{name}/releases/download/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:  automake
 BuildRequires:  libtool

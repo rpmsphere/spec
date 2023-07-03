@@ -4,9 +4,8 @@ Release:        2.1
 Summary:        Draws diagrams of RPM dependencies
 Group:          Applications/System
 License:        GPLv2
-URL:            http://software.amiga-hardware.com
-Source0:        http://software.amiga-hardware.com/software/%{name}-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+URL:            https://software.amiga-hardware.com
+Source0:        https://software.amiga-hardware.com/software/%{name}-%{version}.tar.bz2
 Requires:       perl(GraphViz)
 BuildArch:      noarch
 
@@ -29,7 +28,6 @@ install -pm0644 %{name}.cfg %{buildroot}%{_sysconfdir}
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/%{name}
 %config(noreplace) %{_sysconfdir}/%{name}.cfg
 %doc examples README COPYING

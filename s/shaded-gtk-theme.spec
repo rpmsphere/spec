@@ -6,7 +6,7 @@ Version:        20080601
 Release:        34.1
 License:        freeware
 Group:          User Interface/Desktops
-URL:            http://msart2k.deviantart.com/art/shaded-87330082
+URL:            https://msart2k.deviantart.com/art/shaded-87330082
 Source0:        shaded-gtk2.tar.gz
 Source1:        %{theme_name}-index.theme
 Source2:        color-777777.jpg

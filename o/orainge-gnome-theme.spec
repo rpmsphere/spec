@@ -9,7 +9,7 @@ Group: User Interface/Desktops
 Source0: %{theme_name}.tar.gz
 Source1: %{theme_name}-index.theme
 Source2: %{theme_name}-background.png
-URL: http://mein-neues-blog.de/2008/01/03/orainge-gnome-theme-alpha-version/
+URL: https://mein-neues-blog.de/2008/01/03/orainge-gnome-theme-alpha-version/
 BuildArch: noarch
 Requires: polar-cursor-theme
 

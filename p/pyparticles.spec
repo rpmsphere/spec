@@ -3,11 +3,11 @@ Summary: An opensource particles simulation tool box
 Name: pyparticles
 Version: 0.3.5
 Release: 7.1
-Source0: http://jaist.dl.sourceforge.net/project/pyparticles/PyParticles-0.3.5/%{name}-%{version}.tar.gz
+Source0: https://jaist.dl.sourceforge.net/project/pyparticles/PyParticles-0.3.5/%{name}-%{version}.tar.gz
 License: GNU GPL v3
 Group: Science
 BuildArch: noarch
-URL: http://pyparticles.wordpress.com/
+URL: https://pyparticles.wordpress.com/
 Requires: numpy, scipy, python-matplotlib, python2-pyopencl, python2-pyopengl
 BuildRequires: python2-devel
 

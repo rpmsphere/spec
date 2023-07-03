@@ -2,8 +2,8 @@ Name:		tragtor
 Summary:	A GUI for FFmpeg for audio and video-conversion
 Version:	0.8.82
 Release:	11.1
-URL:		http://mein-neues-blog.de/tragtor-gui-for-ffmpeg/
-Source0:	http://repository.mein-neues-blog.de:9000/archive/%{name}-%{version}_all.tar.gz
+URL:		https://mein-neues-blog.de/tragtor-gui-for-ffmpeg/
+Source0:	https://repository.mein-neues-blog.de:9000/archive/%{name}-%{version}_all.tar.gz
 License:	LGPL v2.1
 Group:		Productivity/Multimedia/Video/Editors and Convertors
 Requires:	pygtk2 ffmpeg id3v2

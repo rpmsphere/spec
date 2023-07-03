@@ -6,8 +6,8 @@ Release:        1
 Summary:        Chinese chess game
 License:        GPLv2
 Group:          Amusements/Games
-URL:            http://ki11egg.sourceforge.net/
-Source0:        http://ignum.dl.sourceforge.net/project/ki11egg/mrsd/0.2/mrsd-v0.2.tgz
+URL:            https://ki11egg.sourceforge.net/
+Source0:        https://ignum.dl.sourceforge.net/project/ki11egg/mrsd/0.2/mrsd-v0.2.tgz
 Source1:        mrsd-0.2-fedora.tar.gz
 Patch:          mrsd-0.2-fedora.patch
 BuildRequires:  fltk-devel gcc-c++

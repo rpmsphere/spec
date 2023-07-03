@@ -8,7 +8,7 @@ License: UNKNOWN
 Group: Development/Libraries
 BuildArch: noarch
 Vendor: Manuel Amador (Rudd-O) <dragonfear@gmail.com>
-URL: http://www.usm.edu.ec/~amadorm/software/
+URL: https://www.usm.edu.ec/~amadorm/software/
 BuildRequires: python python-devel
 
 %description

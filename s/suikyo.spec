@@ -5,8 +5,8 @@ Version:       2.1.0
 Release:       6.1
 Summary:       A Romaji-Kana conversion Library
 Group:         System/Internationalization
-URL:           http://taiyaki.org/suikyo/
-Source:        http://prime.sourceforge.jp/src/suikyo-%{version}.tar.gz
+URL:           https://taiyaki.org/suikyo/
+Source:        https://prime.sourceforge.jp/src/suikyo-%{version}.tar.gz
 License:       GPL
 Requires:      ruby
 BuildRequires: ruby-devel

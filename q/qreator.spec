@@ -4,7 +4,7 @@ Version: 16.06.2
 Release: 1
 Group: Applications/Multimedia
 License: GPLv3
-URL: http://davidplanella.org/project-showcase/qreator/
+URL: https://davidplanella.org/project-showcase/qreator/
 Source0: https://launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: python2-devel, intltool

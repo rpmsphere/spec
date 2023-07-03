@@ -7,7 +7,7 @@ Release: 4.1
 License: GPL
 Group: User Interface/Desktops
 Source0: 162581-%{theme_name}.zip
-URL: http://gnome-look.org/content/show.php/Windows7-Aero+%28Cinnamon%2B+GTK3%2B2%29?content=162581
+URL: https://gnome-look.org/content/show.php/Windows7-Aero+%28Cinnamon%2B+GTK3%2B2%29?content=162581
 BuildArch: noarch
 Requires: win2-7-theme
 

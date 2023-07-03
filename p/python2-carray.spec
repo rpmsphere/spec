@@ -6,7 +6,7 @@ Release:        10.1
 Summary:        Chunked container for numerical data
 License:        BSD
 Group:          Development/Libraries/Python
-URL:            http://carray.pytables.org/
+URL:            https://carray.pytables.org/
 Source0:        %{pyname}-%{version}.tar.bz2
 BuildRequires:  python2-devel, python2-numpy, Cython, atlas-devel
 Requires:       python2-numpy

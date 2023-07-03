@@ -5,8 +5,8 @@ Version:        1.1.57
 Release:        5
 Summary:        Astrology charts
 License:        GPLv3+
-URL:            http://www.openastro.org/
-Source0:        http://www.openastro.org/download.php?file=source&type=openastro#/%{srcname}_%{version}.orig.tar.gz
+URL:            https://www.openastro.org/
+Source0:        https://www.openastro.org/download.php?file=source&type=openastro#/%{srcname}_%{version}.orig.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3-devel
 #Requires:       gnome-python2-rsvg

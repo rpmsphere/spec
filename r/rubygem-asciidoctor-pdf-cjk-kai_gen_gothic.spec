@@ -6,7 +6,7 @@ Release: 1
 Summary: KaiGenGothic theme for asciidoctor-pdf-cjk
 License: MIT
 URL: https://github.com/chloerei/asciidoctor-pdf-cjk-kai_gen_gothic
-Source0: http://rubygems.org/downloads/%{gem_name}-%{version}.gem
+Source0: https://rubygems.org/downloads/%{gem_name}-%{version}.gem
 Source1: %{gem_name}-%{version}.tar.gz
 Source2: kai_gen_gothic-fonts-0.1.0.txz
 BuildRequires: ruby(release)

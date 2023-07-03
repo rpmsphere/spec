@@ -2,10 +2,10 @@ Summary: RADial Menu
 Name: radmenu
 Version: 2009.3.28
 Release: 7.1
-Source0: http://fraggod.net/oss/projects/rad_menu.py
-Source1: http://fraggod.net/oss/projects/rad_menu.cfg
+Source0: https://fraggod.net/oss/projects/rad_menu.py
+Source1: https://fraggod.net/oss/projects/rad_menu.cfg
 License: unknown
-URL: http://fraggod.net/code/rad_menu
+URL: https://fraggod.net/code/rad_menu
 Group: Desktop/User interface
 BuildArch: noarch
 Requires: pygtk2

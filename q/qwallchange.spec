@@ -4,7 +4,7 @@ Name:		qwallchange
 Summary:	A simple wallpaper changing program
 Version:	0.1.3
 Release:	5.1
-URL:		http://suslic-2012.narod.ru/QWallChange.html
+URL:		https://suslic-2012.narod.ru/QWallChange.html
 Source0:	qwallchange_0.1.3_src.tar.gz
 Source1:	qwallchange.desktop
 License:	BSD

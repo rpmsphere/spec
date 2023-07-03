@@ -7,7 +7,7 @@ Release: 3.1
 License: 1996-2004, Andrew Rambaut & Nick Grassly
 Group: Applications/Bioinformatics
 Source: Seq-Gen.v%{version}.tgz
-URL: http://tree.bio.ed.ac.uk/software/seqgen/
+URL: https://tree.bio.ed.ac.uk/software/seqgen/
 
 %description
 Seq-Gen is a program that will simulate the evolution of nucleotide

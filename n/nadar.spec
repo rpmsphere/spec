@@ -6,8 +6,8 @@ Version: 2.0
 Release: 9.1
 Group: Amusements/Games
 License: GPL
-URL: http://kozos.jp/myfreesoft/#9
-Source0: http://kozos.jp/myfreesoft/%{name}-%{version}.tar.gz
+URL: https://kozos.jp/myfreesoft/#9
+Source0: https://kozos.jp/myfreesoft/%{name}-%{version}.tar.gz
 BuildRequires: libX11-devel
 BuildRequires: libXt-devel
 BuildRequires: libXpm-devel

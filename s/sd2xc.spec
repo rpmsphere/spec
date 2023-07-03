@@ -3,7 +3,7 @@ Name:    sd2xc
 Version: 2.5
 Release: 4.1
 Source0: %{name}-%{version}.pl.bz2
-URL: http://gtk-apps.org/content/show.php/CursorXP+to+X11+Mouse+Theme+Converter?content=104659
+URL: https://gtk-apps.org/content/show.php/CursorXP+to+X11+Mouse+Theme+Converter?content=104659
 License: MIT
 Group: Graphics
 Requires: perl-Image-Magick
@@ -11,7 +11,7 @@ Requires: perl-Config-IniFiles
 BuildArch: noarch
 
 %description
-Converts StarDock CursorXP themes (http://www.wincustomize.com/) to
+Converts StarDock CursorXP themes (https://www.wincustomize.com/) to
 XCursor themes compatible with XFree86 4.2.99 and higher.
 
 %prep

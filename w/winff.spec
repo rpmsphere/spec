@@ -2,7 +2,7 @@ Name:		winff
 Summary:	A cross platform batch GUI for FFmpeg
 Version:	1.5.5
 Release:	9.1
-URL:		http://code.google.com/p/winff/
+URL:		https://code.google.com/p/winff/
 Source0:	winff-%{version}-source.tar.gz
 Source1:	winff.desktop
 License:	GPL-3.0

@@ -3,8 +3,8 @@ Version:       1.0.1
 Release:       4.1
 Summary:       Hyphenation algorithms for python programs and ReportLab paragraphs
 Group:         System/Libraries/Python
-URL:           http://deco-cow.sourceforge.net
-Source:        http://downloads.sourceforge.net/project/deco-cow/%{name}-%{version}.zip
+URL:           https://deco-cow.sourceforge.net
+Source:        https://downloads.sourceforge.net/project/deco-cow/%{name}-%{version}.zip
 License:       Apache License 2.0, BSD
 BuildRequires: python2
 BuildRequires: python2-setuptools

@@ -3,8 +3,8 @@ Version: 0.9.29
 Release: 9.1
 License: Public Domain
 Group: Productivity/Security
-URL: http://prngd.sourceforge.net/
-Source: http://downloads.sourceforge.net/prngd/prngd-%{version}.tar.gz
+URL: https://prngd.sourceforge.net/
+Source: https://downloads.sourceforge.net/prngd/prngd-%{version}.tar.gz
 Patch: prngd-0.9.29_build_config.patch
 Summary: Pseudo Random Number Generator Daemon
 

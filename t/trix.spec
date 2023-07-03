@@ -1,7 +1,7 @@
 Name:           trix
 Version:        0.94
 Release:        16.1
-URL:            http://trix.sourceforge.net/
+URL:            https://trix.sourceforge.net/
 License:        GPLv2+
 Group:          Applications/Internet
 Summary:        VypressChat(TM) compatible chat

@@ -4,8 +4,8 @@ Release:        23.1
 Summary:        GPG Tools
 License:        GPL-2.0+
 Group:          Productivity/Security
-URL:            http://packages.debian.org/sid/signing-party
-Source:         http://ftp.debian.org/debian/pool/main/s/signing-party/signing-party_%{version}.orig.tar.gz
+URL:            https://packages.debian.org/sid/signing-party
+Source:         https://ftp.debian.org/debian/pool/main/s/signing-party/signing-party_%{version}.orig.tar.gz
 # PATCH-FIX-OPENSUSE caff-manpage.patch [bnc#722626]
 Patch1:         caff-manpage.patch
 Requires:       /usr/sbin/sendmail

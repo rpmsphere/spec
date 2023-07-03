@@ -4,9 +4,9 @@ Name:		smile
 Summary:	Slideshow Maker In Linux Environnement
 Version:	1.0
 Release:	6.1
-Source0:	http://download.tuxfamily.org/smiletool/%{name}-%{version}.tar.gz
+Source0:	https://download.tuxfamily.org/smiletool/%{name}-%{version}.tar.gz
 Source1:	%{name}.png
-URL:		http://smile.tuxfamily.org/
+URL:		https://smile.tuxfamily.org/
 Group:		Applications/Graphics
 License:	GPLv2+
 BuildRequires:  libpng-devel

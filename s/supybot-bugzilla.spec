@@ -5,7 +5,7 @@ Version:        35
 Release:        6.1
 Group:          Productivity/Networking/IRC
 License:        New BSD Clause
-URL:            http://code.google.com/p/supybot-bugzilla/
+URL:            https://code.google.com/p/supybot-bugzilla/
 Requires:       supybot
 Source:         Bugzilla-%{version}.tar.bz2
 BuildRequires:  python-devel

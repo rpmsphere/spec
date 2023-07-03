@@ -3,8 +3,8 @@ Name:			waitfor
 Version:		0.5
 Release:		3.1
 Summary:		Waits until specified Network Resource is available or Event has occured
-Source:			http://www.hennessynet.com/waitfor/waitfor-%{version}.tar.gz
-URL:			http://www.hennessynet.com/waitfor/
+Source:			https://www.hennessynet.com/waitfor/waitfor-%{version}.tar.gz
+URL:			https://www.hennessynet.com/waitfor/
 Group:			System/Monitoring
 License:		GNU General Public License version 2 (GPL v2)
 BuildRequires:	make xmlto lynx

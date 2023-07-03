@@ -4,7 +4,7 @@ Release:        1
 Summary:        TCP/IP Packet Injection Suite
 License:        BSD-4-Clause
 Group:          Productivity/Networking/Diagnostic
-URL:            http://troglobit.com/projects/nemesis/
+URL:            https://troglobit.com/projects/nemesis/
 Source:         https://github.com/troglobit/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildRequires:  libnet-devel
 

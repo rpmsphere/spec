@@ -4,8 +4,8 @@ Version: 1.0.16
 Release: 3.1
 Group: Applications/Editors
 License: GPLv2
-URL: http://kib2.free.fr/PyK/
-Source0: http://kib2.free.fr/PyK/PYK.zip
+URL: https://kib2.free.fr/PyK/
+Source0: https://kib2.free.fr/PyK/PYK.zip
 BuildArch: noarch
 Requires: python-docutils
 Requires: PyQt4

@@ -4,8 +4,8 @@ Name:               tinypy
 Version:            1.1
 Release:            6.1
 Summary:            Minimalist Implementation of Python
-Source:             http://tinypy.googlecode.com/files/tinypy-%{version}.tar.gz
-URL:                http://www.tinypy.org/
+Source:             https://tinypy.googlecode.com/files/tinypy-%{version}.tar.gz
+URL:                https://www.tinypy.org/
 Group:              Development/Languages/Python
 License:            MIT
 BuildRequires:      python-devel

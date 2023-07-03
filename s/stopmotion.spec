@@ -3,9 +3,9 @@ Name:		stopmotion
 Summary:	An application for creating stopmotion animations
 Version:	0.6.1
 Release:	1
-Source0:	http://developer.skolelinux.no/info/studentgrupper/2005-hig-stopmotion/project_management/webpage/releases/%{name}-%{version}.tar.gz
+Source0:	https://developer.skolelinux.no/info/studentgrupper/2005-hig-stopmotion/project_management/webpage/releases/%{name}-%{version}.tar.gz
 Source1:	%{name}_zh_TW.ts
-URL:		http://stopmotion.bjoernen.com/
+URL:		https://stopmotion.bjoernen.com/
 Group:		Applications/Multimedia
 License:	GPL
 Requires:	SDL_image, libvorbis, libxml2, libtar, gamin

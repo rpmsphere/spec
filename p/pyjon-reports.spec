@@ -3,8 +3,8 @@ Version:       0.6
 Release:       7.1
 Summary:       A simple mean of creating templated PDF documents in Python
 Group:         System/Libraries/Python
-URL:           http://bitbucket.org/jon1012/pyjonreports
-Source:        http://pypi.python.org/packages/source/p/pyjon.reports/pyjon.reports-%{version}.tar.gz
+URL:           https://bitbucket.org/jon1012/pyjonreports
+Source:        https://pypi.python.org/packages/source/p/pyjon.reports/pyjon.reports-%{version}.tar.gz
 License:       MIT
 BuildRequires: python2-setuptools
 BuildRequires: python2

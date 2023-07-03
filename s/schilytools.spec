@@ -8,7 +8,7 @@ Version: 2021.09.18
 Release: 3
 Source0: https://nav.dl.sourceforge.net/project/schilytools/schily-%{dashedver}.tar.bz2
 Summary: Replacements for common tools that resemble their Solaris counterparts
-URL: http://schilytools.sourceforge.net/
+URL: https://schilytools.sourceforge.net/
 License: Various Open Source Licenses (CDDL.Schily, GPL-2.0, LGPL-2.1, BSD)
 Group: Archiving/Cd burning
 BuildRequires: libcap-devel

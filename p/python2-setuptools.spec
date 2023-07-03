@@ -422,7 +422,7 @@ LANG=C.utf-8 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=$(pwd) pytest-%{python2_versio
 - Update to 6.0.1. Fixes bug #1044444
 * Mon Jun 30 2014 Toshio Kuratomi <toshio@fedoraproject.org> - 2.0-8
 - Remove the python-setuptools-devel Virtual Provides as per this Fedora 21
-  Change: http://fedoraproject.org/wiki/Changes/Remove_Python-setuptools-devel
+  Change: https://fedoraproject.org/wiki/Changes/Remove_Python-setuptools-devel
 * Mon Jun 30 2014 Toshio Kuratomi <toshio@fedoraproject.org> - 2.0-7
 - And another bug in sdist
 * Mon Jun 30 2014 Toshio Kuratomi <toshio@fedoraproject.org> - 2.0-6
@@ -446,7 +446,7 @@ LANG=C.utf-8 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=$(pwd) pytest-%{python2_versio
 - Upstream update that pulls in our security patches
 * Mon Oct 28 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 1.1.7-1
 - Update to newer upstream release that has our patch to the unittests
-- Fix for http://bugs.python.org/issue17997#msg194950 which affects us since
+- Fix for https://bugs.python.org/issue17997#msg194950 which affects us since
   setuptools copies that code. Changed to use
   python-backports-ssl_match_hostname so that future issues can be fixed in
   that package.
@@ -506,7 +506,7 @@ LANG=C.utf-8 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=$(pwd) pytest-%{python2_versio
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 * Sun Aug 22 2010 Thomas Spura <tomspur@fedoraproject.org> - 0.6.14-4
 - rebuild with python3.2
-  http://lists.fedoraproject.org/pipermail/devel/2010-August/141368.html
+  https://lists.fedoraproject.org/pipermail/devel/2010-August/141368.html
 * Tue Aug 10 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.14-3
 - Update description to mention this is distribute
 * Thu Jul 22 2010 Thomas Spura <tomspur@fedoraproject.org> - 0.6.14-2

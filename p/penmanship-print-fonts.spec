@@ -7,8 +7,8 @@ Release: 2.1
 License: freeware, no commercial
 Group: User Interface/X
 BuildArch: noarch
-Source0: http://desktoppub.about.com/library/fonts/hs/penman.zip
-URL: http://desktoppub.about.com/od/lessonplans/ig/Free-Print---Cursive-Fonts/Penmanship-Print.htm
+Source0: https://desktoppub.about.com/library/fonts/hs/penman.zip
+URL: https://desktoppub.about.com/od/lessonplans/ig/Free-Print---Cursive-Fonts/Penmanship-Print.htm
 Requires(post): fontconfig
 
 %description

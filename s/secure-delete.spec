@@ -7,7 +7,7 @@ Release:	5
 Summary:	Tools to wipe files, free disk space, swap and memory
 License:	GPLv1
 Group:		System/Base
-URL:		http://www.thc.org/
+URL:		https://www.thc.org/
 Source0:	https://www.thc.org/download.php?t=r&f=%{pkgname}-%{version}.tar.gz
 Patch0:		secure_delete-3.1.mga.diff
 

@@ -6,10 +6,10 @@ Version:        20100924
 Release:        8.1
 License:        CC by-nc-sa
 Group:          User Interface/Desktops
-URL:            http://rent0n86.deviantart.com/art/termGTK-169819259
-Source0:        http://www.deviantart.com/download/169819259/termgtk_by_rent0n86-d2t3tdn.zip
+URL:            https://rent0n86.deviantart.com/art/termGTK-169819259
+Source0:        https://www.deviantart.com/download/169819259/termgtk_by_rent0n86-d2t3tdn.zip
 Source1:        %{theme_name}-index.theme
-Source2:        http://www.deviantart.com/download/76699998/leaf_skin_by_epheus.jpg
+Source2:        https://www.deviantart.com/download/76699998/leaf_skin_by_epheus.jpg
 BuildArch:      noarch
 Requires:       notitleslim-metacity-theme
 Requires:       retropixel-icon-theme

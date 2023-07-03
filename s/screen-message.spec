@@ -3,7 +3,7 @@ Summary:        Displays a short text fullscreen
 Version:        0.25
 Release:        1
 License:        GPLv2+
-URL:            http://darcs.nomeata.de/screen-message/
+URL:            https://darcs.nomeata.de/screen-message/
 Group:          Applications/Text
 BuildRequires:  gtk2-devel 
 Source0:        %{name}-%{version}.tar.gz

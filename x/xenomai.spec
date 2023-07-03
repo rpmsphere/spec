@@ -5,7 +5,7 @@ Release: 1
 Source0: https://xenomai.org/downloads/xenomai/stable/%{name}-v%{version}.tar.bz2
 License: GPL
 Group: Networking/Other
-URL: http://www.xenomai.org
+URL: https://www.xenomai.org
 Requires: %{name}-libs
 BuildRequires: gcc-c++
 BuildRequires: automake

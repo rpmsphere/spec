@@ -5,9 +5,9 @@ Version:	1.2
 Release:	3.1
 License:	GPLv2
 Summary:	USB HID Monitor control utility
-URL:		http://www.rainbow-software.org/linux
+URL:		https://www.rainbow-software.org/linux
 Group:		Hardware/Mobile
-Source:		http://www.rainbow-software.org/linux_files/%{name}_%{version}.tar.gz
+Source:		https://www.rainbow-software.org/linux_files/%{name}_%{version}.tar.gz
 BuildRequires:	libusb1-devel
 
 %description

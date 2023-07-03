@@ -2,12 +2,11 @@ Name:				 u3-tool
 Version:			 0.3
 Release:			 2.1
 Summary:			 U3 Smart Drive USB Flash Disk Control Tool
-# http://prdownloads.sourceforge.net/u3_tool/u3-tool-%{version}.tar.gz
+# https://prdownloads.sourceforge.net/u3_tool/u3-tool-%{version}.tar.gz
 Source:			 u3-tool-%{version}.tar.bz2
-URL:				 http://u3-tool.sourceforge.net/
+URL:				 https://u3-tool.sourceforge.net/
 Group:			 Hardware/Other
 License:			 GNU General Public License version 2 or later (GPL v2 or later)
-BuildRoot:		 %{_tmppath}/build-%{name}-%{version}
 BuildRequires:	 gcc make glibc-devel
 BuildRequires:	 autoconf automake libtool
 
@@ -43,7 +42,6 @@ test -e "$h" && %__ln_s -f "$h" .
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog COPYING NEWS README TODO
 %{_sbindir}/u3-tool
 %doc %{_mandir}/man1/u3-tool.1.*

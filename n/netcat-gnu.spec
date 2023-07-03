@@ -4,8 +4,8 @@ Release:	15.1
 Summary:	Networking utility that manages TCP and UDP connections
 License:	GPLv2+
 Group:		Networking/Other
-URL:		http://netcat.sourceforge.net/
-Source0:	http://osdn.dl.sourceforge.net/sourceforge/netcat/netcat-%{version}.tar.bz2
+URL:		https://netcat.sourceforge.net/
+Source0:	https://osdn.dl.sourceforge.net/sourceforge/netcat/netcat-%{version}.tar.bz2
 Provides:	netcat = 1.0
 Conflicts:	netcat-traditional
 Conflicts:	netcat-openbsd

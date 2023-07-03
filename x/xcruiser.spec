@@ -4,8 +4,8 @@ Version: 0.30
 Release: 11.1
 Group: X11/Applications
 License: GNU General Public License
-URL: http://xcruiser.sourceforge.net/
-Source: http://prdownloads.sourceforge.net/xcruiser/xcruiser-0.30.tar.gz
+URL: https://xcruiser.sourceforge.net/
+Source: https://prdownloads.sourceforge.net/xcruiser/xcruiser-0.30.tar.gz
 BuildRequires: imake
 BuildRequires: libXt-devel
 BuildRequires: libXaw-devel

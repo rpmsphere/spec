@@ -3,8 +3,8 @@ Version:       0.1
 Release:       7.1
 Summary:       A plugin to run a terminal inside a webbrowser tab
 Group:         Applications/Web
-URL:           http://github.com/arenevier/vteplugin
-Source:        http://blog.renevier.net/public/vteplugin-%{version}.tar.bz2
+URL:           https://github.com/arenevier/vteplugin
+Source:        https://blog.renevier.net/public/vteplugin-%{version}.tar.bz2
 Patch:         vteplugin-0.1-html.patch
 License:       WTFPL
 BuildRequires: libpng-devel

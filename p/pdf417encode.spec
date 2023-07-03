@@ -6,8 +6,8 @@ Version:       4.5
 Release:       4.1
 License:       GPL
 Group:         Applications/Graphics
-URL:           http://sourceforge.net/projects/pdf417encode/
-Source0:       http://switch.dl.sourceforge.net/sourceforge/pdf417encode/pdf417_enc.%{version}.tar.gz
+URL:           https://sourceforge.net/projects/pdf417encode/
+Source0:       https://switch.dl.sourceforge.net/sourceforge/pdf417encode/pdf417_enc.%{version}.tar.gz
 BuildRequires: glibc-devel
 BuildRequires: giflib-devel
 BuildRequires: libX11-devel

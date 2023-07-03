@@ -8,7 +8,7 @@ License: GPL
 Group: Applications/Multimedia
 Summary: User-friendly desktop scanning application
 Source: %{name}-%{version}.tar.gz
-URL: http://www.etlafins.com/nostaples
+URL: https://www.etlafins.com/nostaples
 Requires: pygtk2, pygtk2-libglade, python-saneme, python-reportlab, python-gtkmvc
 BuildArch: noarch
 

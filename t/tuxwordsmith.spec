@@ -7,7 +7,7 @@ Version:        0.7.12
 Release:        1
 Group:          Educations/Games
 License:        GPL
-URL:            http://www.asymptopia.org/index.php?topic=TWS
+URL:            https://www.asymptopia.org/index.php?topic=TWS
 Source0:        %{name}-%{version}.zip
 Source1:        %{pkg_name}.desktop
 Source2:        %{pkg_name}.png

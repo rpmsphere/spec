@@ -6,8 +6,8 @@ Version:	1.7.3
 Release:	16.1
 Group:		Archiving/Cd burning
 License:	CeCILL-2
-URL:		http://simpleburn.tuxfamily.org/
-Source0:	http://simpleburn.tuxfamily.org/IMG/gz/%{name}-%{version}.tar.gz
+URL:		https://simpleburn.tuxfamily.org/
+Source0:	https://simpleburn.tuxfamily.org/IMG/gz/%{name}-%{version}.tar.gz
 BuildRequires:	cmake
 BuildRequires:	pkgconfig(gtk+-2.0)
 Requires:	wodim genisoimage

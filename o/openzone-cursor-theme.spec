@@ -4,8 +4,8 @@ Group:          User Interface/Desktops
 Summary:        OpenZone Cursors
 Version:        1.2.6
 Release:        5.1
-URL:            http://gnome-look.org/content/show.php/OpenZone?content=111343
-Source0:        http://gnome-look.org/CONTENT/content-files/OpenZone-%{version}.tar.xz
+URL:            https://gnome-look.org/content/show.php/OpenZone?content=111343
+Source0:        https://gnome-look.org/CONTENT/content-files/OpenZone-%{version}.tar.xz
 BuildArch:      noarch
 
 %description

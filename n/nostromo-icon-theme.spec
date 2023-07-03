@@ -6,8 +6,8 @@ Version: 1.03
 Release: 5.1
 License: GPL
 Group: User Interface/Desktops
-URL: http://gnome-look.org/content/show.php/?content=101422
-Source: http://voyager.legtux.org/icones/%{theme_name}-%{version}.tar.gz
+URL: https://gnome-look.org/content/show.php/?content=101422
+Source: https://voyager.legtux.org/icones/%{theme_name}-%{version}.tar.gz
 BuildArch: noarch
 
 %description

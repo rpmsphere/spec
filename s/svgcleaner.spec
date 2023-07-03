@@ -7,13 +7,13 @@ Group:          Productivity/Graphics/Other
 URL:            https://github.com/RazrFalcon/svgcleaner
 Source0:        v%{version}.tar.gz
 Source1:        gui-v%{version}.tar.gz
-Source2:        vendor.tar.xz
+Source2:        %name.vendor.tar.xz
 Patch0:         svgcleaner-gui-suse.patch
 BuildRequires:  cargo
 BuildRequires:  desktop-file-utils
 BuildRequires:  git
 BuildRequires:  hicolor-icon-theme
-BuildRequires:  qt5-devel
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:  pkgconfig
 BuildRequires:  rust
 Requires:       p7zip

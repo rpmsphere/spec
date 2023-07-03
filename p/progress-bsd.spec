@@ -2,11 +2,11 @@ Summary:			File I/O Progress Monitor Utility
 Name:				progress-bsd
 Version:			1.10
 Release:			6.1
-Source:			http://ftp.unixdev.net/pub/debian-udev/pool/main/p/progress/progress_%{version}.orig.tar.gz
-Patch1:			http://ftp.unixdev.net/pub/debian-udev/pool/main/p/progress/progress_%{version}-2.diff.gz
+Source:			https://ftp.unixdev.net/pub/debian-udev/pool/main/p/progress/progress_%{version}.orig.tar.gz
+Patch1:			https://ftp.unixdev.net/pub/debian-udev/pool/main/p/progress/progress_%{version}-2.diff.gz
 Patch2:			progress-makefile.diff
 Patch3:			progress-remove-asm_system-include.patch
-URL:				http://progress.unixdev.net/
+URL:				https://progress.unixdev.net/
 Group:			System/Benchmark
 License:			BSD
 BuildRequires:	make gcc glibc-devel

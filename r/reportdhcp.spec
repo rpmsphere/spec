@@ -3,7 +3,7 @@ Summary:		Displays statistics and lease entries for DHCPD
 Version:		2.1
 Release:		9.1
 Source:			%{name}-%{version}.tar.gz
-URL:			http://www.omar.org/opensource/reportdhcp/
+URL:			https://www.omar.org/opensource/reportdhcp/
 License:		GPL
 Group:			Productivity/Networking/Diagnostic
 BuildArch:		noarch

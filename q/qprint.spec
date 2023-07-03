@@ -4,8 +4,7 @@ Group:          Productivity/Security
 Summary:        A simple command-line en/decoding filter
 Version:        1.1
 Release:        1
-Source:         http://ftp.debian.org/debian/pool/main/q/qprint/qprint_%{version}.dfsg.2.orig.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+Source:         https://ftp.debian.org/debian/pool/main/q/qprint/qprint_%{version}.dfsg.2.orig.tar.gz
 
 %description
 QPRINT is a simple command-line filter which encodes and decodes

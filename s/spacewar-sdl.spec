@@ -3,12 +3,12 @@
 Name: spacewar-sdl
 Version: 0.3
 Release: 7.1
-Source0: http://sourceforge.net/projects/%{name}/files/%{name}/spacewar-%{version}/spacewar-%{version}.tar.gz
+Source0: https://sourceforge.net/projects/%{name}/files/%{name}/spacewar-%{version}/spacewar-%{version}.tar.gz
 Source1: %{name}.png
 Source2: %{name}.desktop
 License: GNU General Public License
 Group: Amusements/Arcade
-URL: http://sourceforge.net/projects/spacewar-sdl/
+URL: https://sourceforge.net/projects/spacewar-sdl/
 Summary: A SpaceWar-like game in SDL
 BuildRequires:  gcc-c++, SDL-devel
 

@@ -4,8 +4,8 @@ Release:        5.1
 Summary:        A third-party lyrics display program
 Group:          Applications/Multimedia
 License:        GPLv3	
-URL:            http://code.google.com/p/osd-lyrics/
-Source0:        http://osd-lyrics.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:            https://code.google.com/p/osd-lyrics/
+Source0:        https://osd-lyrics.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:  libpng-devel
 BuildRequires:  gcc-c++, autoconf, automake, sqlite-devel, intltool
 BuildRequires:  gtk2-devel, dbus-glib-devel, libcurl-devel, libglade2-devel, sane-backends-devel

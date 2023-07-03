@@ -7,9 +7,9 @@ Release:	16.1
 Group:		Sciences/Physics
 License:	GPL
 Summary:	The open source CFD toolbox
-URL:		http://www.opencfd.co.uk/openfoam/
-Source0:	http://downloads.sourceforge.net/foam/OpenFOAM-%{version}.tgz
-Source1:	http://downloads.sourceforge.net/foam/ThirdParty-%{version}.tgz
+URL:		https://www.opencfd.co.uk/openfoam/
+Source0:	https://downloads.sourceforge.net/foam/OpenFOAM-%{version}.tgz
+Source1:	https://downloads.sourceforge.net/foam/ThirdParty-%{version}.tgz
 BuildRequires:	cmake
 BuildRequires:	libGL-devel
 BuildRequires:	gmp-devel

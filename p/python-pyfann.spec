@@ -4,7 +4,7 @@ Version:        2.1.0beta
 Release:        9.1
 License:        MIT
 Summary:        Python bindings for FANN
-URL:            http://code.google.com/p/fann-python25/
+URL:            https://code.google.com/p/fann-python25/
 Group:          Development/Languages/Python
 Source:         pyfann-2.1.0.zip
 BuildRequires:  python2-devel, swig, fann-devel

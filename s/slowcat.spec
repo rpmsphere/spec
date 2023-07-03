@@ -6,7 +6,7 @@ Group:          Productivity/Text/Convertors
 Version:        1.0.1
 Release:        7.1
 Summary:        Slow Cat
-URL:            http://grox.net/software/mine/slowcat/slowcat.c
+URL:            https://grox.net/software/mine/slowcat/slowcat.c
 Source:         %{name}-%{version}.tar.bz2
 
 %description

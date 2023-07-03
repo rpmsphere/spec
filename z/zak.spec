@@ -7,7 +7,7 @@ Source0: %{name}-%{version}.tar.gz
 License: GPLv2
 Group: Applications/Multimedia
 BuildArch: noarch
-URL: http://code.google.com/p/zak/
+URL: https://code.google.com/p/zak/
 BuildRequires:  python2
 Requires:	gstreamer
 Requires:	python2-gstreamer

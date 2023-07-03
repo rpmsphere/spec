@@ -5,7 +5,7 @@ Release:        14.1
 Summary:        Game loosely based on the original Spacewar!
 License:        GPL-2.0 and CC-BY-SA-3.0 and SUSE-Public-Domain
 Group:          Amusements/Games/Action/Arcade
-URL:            http://mg.pov.lt/pyspacewar/
+URL:            https://mg.pov.lt/pyspacewar/
 Source0:        https://github.com/mgedmin/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 BuildRequires:  python2

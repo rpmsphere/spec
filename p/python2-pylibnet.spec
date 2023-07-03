@@ -6,8 +6,8 @@ Version: 3.0
 Release: 2.1
 Group: Development/Libraries
 License: GPLv3
-URL: http://pylibnet.sourceforge.net/
-Source0: http://sourceforge.net/projects/pylibnet/files/pylibnet-%{version}/pylibnet-%{version}-beta-rc1.tar.gz
+URL: https://pylibnet.sourceforge.net/
+Source0: https://sourceforge.net/projects/pylibnet/files/pylibnet-%{version}/pylibnet-%{version}-beta-rc1.tar.gz
 BuildRequires: python2-devel
 BuildRequires: libnet-devel
 

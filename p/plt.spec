@@ -2,11 +2,10 @@ Summary: A command-line utility for creating X11 and PostScript plots of data
 Name: plt
 Version: 2.5a
 Release: 11.1
-Source0: http://www.physionet.org/physiotools/plt/%{name}-%{version}.tar.gz
+Source0: https://www.physionet.org/physiotools/plt/%{name}-%{version}.tar.gz
 License: GPL
-URL: http://www.physionet.org/physiotools/plt/
+URL: https://www.physionet.org/physiotools/plt/
 Group: Applications/Engineering
-BuildRoot: %{_tmppath}/%{name}-root
 BuildRequires: xorg-x11-proto-devel
 BuildRequires: libX11-devel
 
@@ -38,7 +37,6 @@ sed -i 's|%{buildroot}||g' %{buildroot}%{_bindir}/lwcat %{buildroot}%{_bindir}/p
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %{_bindir}/*
 /usr/lib/ps/*
 %{_mandir}/manl/*.1.*

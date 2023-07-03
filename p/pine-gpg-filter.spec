@@ -5,10 +5,9 @@ BuildArch: noarch
 Summary:   Wrapper scripts for using multiple roles with GnuPG and Pine
 License:   GPL
 Group:     System/Base
-URL:       http://linux-ip.net/sw/pine-gpg-filter/
+URL:       https://linux-ip.net/sw/pine-gpg-filter/
 Source0:   %{name}-%{version}.tar.gz
 Requires:  gpg pine
-BuildRoot: %{_tmppath}/%{name}-%{version}-root/
 
 %description
 The distinguishing characteristic of this package (when compared
@@ -33,7 +32,6 @@ $RPM_BUILD_ROOT/%{_bindir}/%{name} --build-symlinks
 rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc README ChangeLog
 %{_bindir}/*
 

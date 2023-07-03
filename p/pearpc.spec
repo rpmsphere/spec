@@ -4,11 +4,11 @@ Version: 0.5
 Release: 31.1
 Group: Applications/Emulators
 License: GPL
-URL: http://pearpc.sourceforge.net/
-Source0: http://download.sf.net/pearpc/pearpc-%{version}.tar.gz
-Source1: http://pearpc.sourceforge.net/pearpc3.png
-Source2: http://download.sf.net/pearpc/pearpc-3gib.img.bz2
-Source3: http://download.sf.net/pearpc/pearpc-6gib.img.bz2
+URL: https://pearpc.sourceforge.net/
+Source0: https://download.sf.net/pearpc/pearpc-%{version}.tar.gz
+Source1: https://pearpc.sourceforge.net/pearpc3.png
+Source2: https://download.sf.net/pearpc/pearpc-3gib.img.bz2
+Source3: https://download.sf.net/pearpc/pearpc-6gib.img.bz2
 BuildRequires: xorg-x11-proto-devel, SDL-devel
 BuildRequires: desktop-file-utils, gcc-c++
 BuildRequires: nasm
@@ -90,13 +90,13 @@ desktop-file-install --vendor "" \
 %changelog
 * Mon Feb 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
 - Rebuilt for Fedora
-* Wed Sep 22 2004 Matthias Saou <http://freshrpms.net/> 0.3.1-1
+* Wed Sep 22 2004 Matthias Saou <https://freshrpms.net/> 0.3.1-1
 - Update to 0.3.1.
 * Wed Aug 25 2004 Dag Wieers <dag@wieers.com> - 0.3.0-1
 - Added fixes for x86_64.
-* Wed Aug 25 2004 Matthias Saou <http://freshrpms.net/> 0.3.0-1
+* Wed Aug 25 2004 Matthias Saou <https://freshrpms.net/> 0.3.0-1
 - Update to 0.3.0.
-* Thu Jul 15 2004 Matthias Saou <http://freshrpms.net/> 0.2.0-1
+* Thu Jul 15 2004 Matthias Saou <https://freshrpms.net/> 0.2.0-1
 - Update to 0.2.0 and cleanups.
 * Tue May 11 2004 Che
 - initial rpm release

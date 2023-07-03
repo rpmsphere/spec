@@ -2,10 +2,10 @@ Name:               ttyrec
 Version:            1.0.8
 Release:            10.1
 Summary:            Terminal Recorder
-Source:             http://0xcc.net/ttyrec/ttyrec-%{version}.tar.gz
+Source:             https://0xcc.net/ttyrec/ttyrec-%{version}.tar.gz
 Patch1:             ttyrec-terminate_exec_argument_list_with_NULL_instead_of_0.patch
 Patch2:             ttyrec-fix_missing_return_in_nonvoid_function.patch
-URL:                http://0xcc.net/ttyrec/index.html
+URL:                https://0xcc.net/ttyrec/index.html
 Group:              System/Utilities
 License:            BSD4c
 BuildRequires:      gcc make glibc-devel

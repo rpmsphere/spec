@@ -5,8 +5,8 @@ Version:	3.3.25
 Release:	1
 License:	LGPL
 Group:		Development/Tools
-Source0:	http://users.telenet.be/stes/%{name}-%{version}.tar.gz
-URL:		http://users.telenet.be/stes/compiler.html
+Source0:	https://users.telenet.be/stes/%{name}-%{version}.tar.gz
+URL:		https://users.telenet.be/stes/compiler.html
 BuildRequires:	automake
 BuildRequires:	byacc
 BuildRequires:	flex
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 
 %changelog
-* Sun Aug 28 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.25
+* Fri Jan 13 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.4
 - Rebuilt for Fedora
 * Sat Feb 02 2008 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org

@@ -6,8 +6,8 @@ Version: 0.12c
 Release: 4.1
 License: distributable
 Group: System Environment/Base
-URL: http://sunsite.unc.edu/pub/Linux/utils/terminal/
-Source: http://sunsite.unc.edu/pub/Linux/utils/terminal/ttysnoop-%{version}.tar.gz
+URL: https://sunsite.unc.edu/pub/Linux/utils/terminal/
+Source: https://sunsite.unc.edu/pub/Linux/utils/terminal/ttysnoop-%{version}.tar.gz
 Patch0: ttysnoop-0.12c-glibc.patch
 
 %description
@@ -16,7 +16,7 @@ or pseudo-tty. The snoop-tty becomes a 'clone' of the original tty,
 redirecting both input and output from/to it.
 
 %prep
-%setup
+%setup -q
 %patch0 -p1
 
 %build

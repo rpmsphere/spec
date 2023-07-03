@@ -4,7 +4,7 @@ Release: 3.1
 Summary: Compare source RPM packages
 License: GPL or Artistic
 Group: Development/Other
-URL: http://altlinux.org
+URL: https://altlinux.org
 BuildArch: noarch
 Source: %name
 BuildRequires: perl-Pod-Parser

@@ -3,7 +3,7 @@
 Name:         wm2
 License:      X11/MIT
 Group:        User Interface/X
-URL:          http://www.all-day-breakfast.com/wm2/
+URL:          https://www.all-day-breakfast.com/wm2/
 Version:      4
 Release:      978.1
 Summary:      A minimalist window manager
@@ -26,7 +26,7 @@ wm2 provides:
 -- No virtual desktop, toolbars or integrated applications.
 
 %prep
-%setup
+%setup -q
 %patch
 sed -i 's|(int)x|atoi(x)|' Client.C
 

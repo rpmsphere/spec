@@ -4,14 +4,14 @@ Version:	1.8.2
 Release:	1
 License:	LGPLv2+
 Group:		Amusements/Games
-URL:		http://tkgames.sourceforge.net
-Source0:	http://dl.sourceforge.net/sourceforge/tkgames/%{name}-%{version}.tgz
+URL:		https://tkgames.sourceforge.net
+Source0:	https://dl.sourceforge.net/sourceforge/tkgames/%{name}-%{version}.tgz
 BuildArch:	noarch
 Requires:	tk
 
 %description
 Based on a tesselation puzzle named Beat the Computer.
-Just visit http://tkgames.sourceforge.net to get more info.
+Just visit https://tkgames.sourceforge.net to get more info.
 
 %prep
 %setup -q -n %{name}

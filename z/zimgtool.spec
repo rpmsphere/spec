@@ -1,11 +1,11 @@
 Name:          zimgtool
 Summary:       Visualize Two-Dimensional Data
-URL:           http://zimg.sourceforge.net/
+URL:           https://zimg.sourceforge.net/
 Group:         Graphics
 License:       GPL
 Version:       5.0.0
 Release:       9.1
-Source0:       http://switch.dl.sourceforge.net/sourceforge/zimg/zimg-%{version}.tar.gz
+Source0:       https://switch.dl.sourceforge.net/sourceforge/zimg/zimg-%{version}.tar.gz
 BuildRequires: gd-devel
 
 %description

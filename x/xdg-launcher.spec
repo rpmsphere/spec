@@ -5,7 +5,7 @@ Version: 0.0.4
 Release: 4.1
 License: GPLv2
 Group: Desktop/User Interface
-Source: http://launchpad.net/%{name}/trunk/%{version}/+download/%{name}_%{version}.tar.gz
+Source: https://launchpad.net/%{name}/trunk/%{version}/+download/%{name}_%{version}.tar.gz
 URL: https://launchpad.net/xdg-launcher
 BuildArch: noarch
 BuildRequires: python2-devel

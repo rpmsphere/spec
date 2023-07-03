@@ -6,8 +6,8 @@ Version: 33
 Release: 1
 License: MPL 2.0
 Group: Development/Languages
-Source: http://picat-lang.org/download/%{name}%{version}_src.tar.gz
-URL: http://picat-lang.org/
+Source: https://picat-lang.org/download/%{name}%{version}_src.tar.gz
+URL: https://picat-lang.org/
 
 %description
 Picat is a simple, and yet powerful, logic-based multi-paradigm programming

@@ -5,7 +5,7 @@ Release: 2.1
 License: free commercial
 Group: System/X11/Fonts
 Source0: xirod.zip
-URL: http://typodermicfonts.com/xirod/
+URL: https://typodermicfonts.com/xirod/
 BuildArch: noarch
 
 %description

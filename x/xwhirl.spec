@@ -8,7 +8,7 @@ License: GPL
 Group: X11/Utilities
 Source: xwhirl-%{version}.src.tar.gz
 Patch: xwhirl-1.1-bindir-install.patch
-URL: http://www.eleves.ens.fr/home/horvai/xwhirl
+URL: https://www.eleves.ens.fr/home/horvai/xwhirl
 BuildRequires: imake
 BuildRequires: libX11-devel
 BuildRequires: libXext-devel

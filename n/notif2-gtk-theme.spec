@@ -7,8 +7,8 @@ Release: 10.1
 License: GPL
 Group: User Interface/Desktops
 Source0: %{theme_name}.tar.gz
-Source1: http://www.custompc.plus.com/twm/walls/solaris.gif
-URL: http://gnome-look.org/content/show.php?content=18886
+Source1: https://www.custompc.plus.com/twm/walls/solaris.gif
+URL: https://gnome-look.org/content/show.php?content=18886
 BuildArch: noarch
 Requires: solarcity-metacity-theme
 Requires: oldgnome2-icon-theme

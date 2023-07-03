@@ -6,8 +6,8 @@ Release:        11.1
 Summary:        Perl implementation of the XML::Mini XML create/parse interface
 License:        GPL+ or Artistic
 Group:          Development/Perl
-URL:            http://search.cpan.org/dist/%{upstream_name}/
-Source0:        http://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{version}.tar.bz2
+URL:            https://search.cpan.org/dist/%{upstream_name}/
+Source0:        https://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{version}.tar.bz2
 BuildArch:      noarch
 BuildRequires: perl-ExtUtils-MakeMaker
 
@@ -33,7 +33,6 @@ find $RPM_BUILD_ROOT -type f -name .packlist -exec rm -f {} ';'
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{perl_vendorlib}/*
 %{_mandir}/man3*/*

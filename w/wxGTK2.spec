@@ -6,8 +6,8 @@ Release:        32
 Summary:        GTK2 port of the wxWidgets GUI library
 License:        wxWidgets
 Group:          System Environment/Libraries
-URL:            http://www.wxwidgets.org/
-Source0:        http://downloads.sf.net/wxwindows/%{_name}-%{version}.tar.bz2
+URL:            https://www.wxwidgets.org/
+Source0:        https://downloads.sf.net/wxwindows/%{_name}-%{version}.tar.bz2
 Source1:        wx-config
 Patch0:         %{_name}-%{version}-test.patch
 # https://bugzilla.redhat.com/show_bug.cgi?id=1200611
@@ -513,7 +513,7 @@ fi
 - Patch to avoid aclocal >= 1.8 warnings from wxwin.m4.
 - Move unversioned *.so links for -gl, -stc and -xrc to -devel, make -devel
   require them.
-* Wed Nov 10 2004 Matthias Saou <http://freshrpms.net/> 2.4.2-6
+* Wed Nov 10 2004 Matthias Saou <https://freshrpms.net/> 2.4.2-6
 - Bump release to provide Extras upgrade path.
 - Fix spaces/tabs in spec.
 - Remove unneeded zero epochs.

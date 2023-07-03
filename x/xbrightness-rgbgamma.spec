@@ -8,7 +8,7 @@ Source1: xbrightness-rgbgamma_2.1.0-0.1~ppa4.debian.tar.bz2
 Release: 5.1
 License: MIT
 Group: User Interface/X
-URL: http://kakurasan.ehoh.net/software/xbrightness-rgbgamma/
+URL: https://kakurasan.ehoh.net/software/xbrightness-rgbgamma/
 BuildArch: noarch
 BuildRequires: python2-devel, gettext, desktop-file-utils
 

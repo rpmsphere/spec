@@ -35,5 +35,5 @@ You could also load, save, shift and print the models designed.
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Thu Dec 30 2008 Wei-Lun Chao <bluebat@member.fsf.org> 3.4-1
+* Tue Dec 30 2008 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4
 - Initial package

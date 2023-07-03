@@ -4,7 +4,7 @@ Release:        1
 Summary:        3D Tetris
 Group:          Amusements/Games/Logic
 License:        GPL v2 or later
-URL:            http://www710.univ-lyon1.fr/ftp/xbl/xbl.html
+URL:            https://www710.univ-lyon1.fr/ftp/xbl/xbl.html
 Source:         %{name}-%{version}.tar.bz2
 Patch:          %{name}-%{version}-config.patch
 

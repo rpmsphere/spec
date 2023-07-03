@@ -2,13 +2,13 @@ Summary:	A pure console visual file manager
 Name:		xyzcmd
 Version:	0.0.5
 Release:	8.1
-Source0:	http://xyzcmd.googlecode.com/files/%{name}-%{version}.tar.bz2
+Source0:	https://xyzcmd.googlecode.com/files/%{name}-%{version}.tar.bz2
 Source1:	xyzcmd_ru.mo
 Source2:	xyzcmd_uk.mo
 Patch0:     	xyzcmd-0.0.5-locale.patch     
 License:	LGPL
 Group:		System Environment/Shells
-URL:		http://xyzcmd.syhpoon.name
+URL:		https://xyzcmd.syhpoon.name
 Requires:	python2-urwid
 BuildArch:  	noarch
 BuildRequires:  python2

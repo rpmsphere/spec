@@ -2,12 +2,11 @@ Name:				 unsort
 Version:			 0.5
 Release:			 3.1
 Summary:			 Text File Line Order Randomizer
-Source:			 http://www.vanheusden.com/unsort/unsort-%{version}.tgz
+Source:			 https://www.vanheusden.com/unsort/unsort-%{version}.tgz
 Patch1:         unsort-makefile.patch
-URL:				 http://www.vanheusden.com/unsort/
+URL:				 https://www.vanheusden.com/unsort/
 Group:			 Productivity/Text/Utilities
 License:			 GNU General Public License version 2 or later (GPL v2 or later)
-BuildRoot:		 %{_tmppath}/build-%{name}-%{version}
 BuildRequires:	 gcc make glibc-devel
 
 %description
@@ -35,7 +34,6 @@ in a file.
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc license.txt
 %{_bindir}/unsort
 %doc %{_mandir}/man1/unsort.1.*

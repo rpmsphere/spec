@@ -3,10 +3,10 @@ Summary:	Python API of 3D and animated widgets based on pyclutter
 Name:		pyclut
 Version:	0.2
 Release:	5.1
-Source0:	http://pyclutter-widgets.googlecode.com/files/%{name}-%{version}.tar.gz
+Source0:	https://pyclutter-widgets.googlecode.com/files/%{name}-%{version}.tar.gz
 License:	LGPL
 Group:		Development/Python
-URL:		http://code.google.com/p/pyclutter-widgets/
+URL:		https://code.google.com/p/pyclutter-widgets/
 BuildArch: noarch
 BuildRequires: python
 

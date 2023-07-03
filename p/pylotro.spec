@@ -7,7 +7,7 @@ Release:    8.1
 Summary:    Lord of the Rings Online Launcher
 Group:      Game/Role Playing
 License:    GPLv3
-URL:        http://www.lotrolinux.com
+URL:        https://www.lotrolinux.com
 Source0:    %{_name}-%{version}.tar.bz2
 BuildArch:  noarch
 BuildRequires: python2-devel

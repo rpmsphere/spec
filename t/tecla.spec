@@ -6,8 +6,8 @@ Release:        7.1
 Summary:        Interactive command line editing library
 License:        X11
 Group:          Development/Libraries/C and C++
-URL:            http://www.astro.caltech.edu/~mcs/tecla/
-Source:         http://www.astro.caltech.edu/~mcs/tecla/libtecla-%{version}.tar.gz
+URL:            https://www.astro.caltech.edu/~mcs/tecla/
+Source:         https://www.astro.caltech.edu/~mcs/tecla/libtecla-%{version}.tar.gz
 Patch0:         libtecla_add-destdir.patch
 Patch1:         libtecla-makefiles-rules-no-rpath.diff
 Patch2:         tecla-cppflags.diff

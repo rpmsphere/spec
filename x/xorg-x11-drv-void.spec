@@ -5,7 +5,7 @@ Epoch: 1
 Summary: Null input driver
 License: MIT/X11
 Group: System/X11
-URL: http://xorg.freedesktop.org
+URL: https://xorg.freedesktop.org
 BuildRequires: xorg-x11-server-devel
 Source: xorg-drv-void-%version.tar
 Patch: xorg-drv-void-%version-alt2.patch

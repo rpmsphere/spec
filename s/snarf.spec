@@ -1,12 +1,11 @@
 Name:           snarf
-URL:            http://www.xach.com/snarf/
+URL:            https://www.xach.com/snarf/
 License:        GNU GENERAL PUBLIC LICENSE
 Group:          Productivity/Networking/Web/Utilities
 Version:        7.0
 Release:        6.1
 Summary:        A command line resource grabber
-Source:         http://www.xach.com/snarf/download/source/snarf-7.0.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+Source:         https://www.xach.com/snarf/download/source/snarf-7.0.tar.gz
 BuildRequires:  make
 
 %description
@@ -28,7 +27,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc COPYING ChangeLog README TODO
 %{_bindir}/snarf
 %{_mandir}/man1/*

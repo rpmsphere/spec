@@ -2,10 +2,10 @@ Summary:   USB hubs and docking stations handling rules and scripts
 Name:      sumu
 Version:   3.0.38
 Release:   1
-URL:       http://code.google.com/p/otb-sources/wiki/SUMU
+URL:       https://code.google.com/p/otb-sources/wiki/SUMU
 License:   MIT
 Group:     System Environment/Base
-Vendor:    Open Technologies Bulgaria, Ltd. <http://otb.bg>
+Vendor:    Open Technologies Bulgaria, Ltd. <https://otb.bg>
 
 # built by the `make tar' command
 Source0:   sumu.tar.gz
@@ -28,7 +28,7 @@ Requires(preun): chkconfig
 USB hubs and docking stations handling rules and scripts
 which provide the ability to run multiple seats on a single computer.
 This is based on upstream work from
-http://libdlo.freedesktop.org/wiki/MultiSeatTerminal
+https://libdlo.freedesktop.org/wiki/MultiSeatTerminal
 
 %prep
 %setup -q -c
@@ -141,7 +141,7 @@ fi
 
 * Fri Nov 12 2010 Alexander Todorov <atodorov@NO-SPAM.otb.bg> - 3.0.31-1.el6otb
 - after `service sumu start' wait for 5 seconds and unblank all black screens.
-  fixes http://code.google.com/p/otb-sources/issues/detail?id=20
+  fixes https://code.google.com/p/otb-sources/issues/detail?id=20
 - `service sumu status' is now more verbose
 
 * Mon Nov 08 2010 Alexander Todorov <atodorov@NO-SPAM.otb.bg> - 3.0.30-1.el6otb
@@ -149,7 +149,7 @@ fi
   the issue where input is duplicated on tty1. 
 - Add DontVTSwitch to xorg.conf to complement the tty1 fix.
 - Add StandbyTime to xorg.conf to turn off monitors after 1 minite @ GDM login screen.
-  This is a workaround for http://code.google.com/p/otb-sources/issues/detail?id=20
+  This is a workaround for https://code.google.com/p/otb-sources/issues/detail?id=20
 - Disable redundant options in xorg.conf - CoreKeyboard, CorePointer, Buttons, ZAxisMapping
   these options don't seem to have anny effect.
 
@@ -175,7 +175,7 @@ fi
 
 * Mon Oct 25 2010 Alexander Todorov <atodorov@NO-SPAM.otb.bg> - 3.0.26-1
 - revert back to CorePointer/CoreKeyboard in xorg.conf. Fixes:
-  http://code.google.com/p/otb-sources/issues/detail?id=19
+  https://code.google.com/p/otb-sources/issues/detail?id=19
 
 * Fri Oct 22 2010 Alexander Todorov <atodorov@NO-SPAM.otb.bg> - 3.0.25-2
 - bump release field to compile a package for public distribution
@@ -281,7 +281,7 @@ fi
 - remove sysconfig file
 
 * Sat Apr 10 2010 Alexander Todorov <atodorov@NO-SPAM.otb.bg> - 2.1.0.9-1
-- fix http://code.google.com/p/otb-sources/issues/detail?id=2
+- fix https://code.google.com/p/otb-sources/issues/detail?id=2
   use the BUS key instead of SUBSYSTEMS key which doesn't work on RHEL5.5
 - bump version to make new release of the package
 

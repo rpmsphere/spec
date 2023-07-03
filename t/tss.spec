@@ -4,10 +4,10 @@ Name:			tss
 Version:		0.8.2
 Release:		5.1
 Summary:		VT Screen Saver
-Source:			http://www.pulia.nu/tss/src/tss-%{version}.tar.gz
+Source:			https://www.pulia.nu/tss/src/tss-%{version}.tar.gz
 Patch1:			%{name}-makefile-flags.diff
 Patch2:			%{name}-ascii-dir.diff
-URL:			http://www.pulia.nu/tss/
+URL:			https://www.pulia.nu/tss/
 Group:			System/Console
 License:		GNU General Public License (GPL)
 BuildRequires:	ncurses-devel glibc-devel make gcc

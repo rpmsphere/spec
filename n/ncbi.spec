@@ -51,12 +51,12 @@ Also contains documentation and man pages.
 Summary:        Web-interface to the NCBI BLAST set of programs
 Group:          Productivity/Scientific/Other
 Requires:       httpd
-URL:            http://www.ncbi.nlm.nih.gov/BLAST/
+URL:            https://www.ncbi.nlm.nih.gov/BLAST/
 
 %description wwwblast
 The wwwblast package contains a suite of standalone programs that perform 
 various similarity searches using the BLAST heuristic algorithm. Similar to 
-the NCBI BLAST server http://www.ncbi.nlm.nih.gov/blast/. wwwblast provides
+the NCBI BLAST server https://www.ncbi.nlm.nih.gov/blast/. wwwblast provides
 a graphic user interface (GUI) through the use of web forms. Individual 
 program takes the user inputs from the web form and returns the search result 
 to a browser window. There are different web forms for different BLAST 
@@ -213,7 +213,7 @@ __EOF__
 %doc ncbi/doc/*
 
 %files wwwblast
-%defattr(-,wwwrun,www)
+ %defattr(-,wwwrun,www)
 %dir /etc/apache2
 %dir /etc/apache2/conf.d
 %config(noreplace) %{_sysconfdir}/apache2/conf.d/wwwblast.conf

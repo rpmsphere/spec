@@ -6,8 +6,8 @@ Release:	1
 Summary:	Manual page display program for the X Window System
 Group:		Development/X11
 License:	MIT
-URL:		http://xorg.freedesktop.org
-Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.gz
+URL:		https://xorg.freedesktop.org
+Source:		https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.gz
 BuildRequires:	libXaw-devel
 #BuildRequires:	libXprintUtil-devel
 BuildRequires:	libXp-devel

@@ -7,7 +7,7 @@ License:  LGPLv3
 URL:      https://github.com/sboli/twmn
 Source0:  %{name}-master.zip
 BuildRequires: boost-devel
-BuildRequires: qt5-devel
+BuildRequires: qt5-qtbase-devel
 Provides: desktop-notification-daemon
 
 %description

@@ -9,7 +9,7 @@ BuildRequires:  gcc, coreutils, pam-devel, glibc-devel
 Requires:       xinetd, shadow-utils
 Group:          Networking/Mail
 Summary:        Tiny POP3 daemon
-URL:            http://www.openwall.com/popa3d/
+URL:            https://www.openwall.com/popa3d/
 Source0:        %name-%version.tar.gz
 Source1:	popa3d-xinet
 Source2:	popa3d-pam

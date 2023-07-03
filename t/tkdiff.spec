@@ -6,7 +6,7 @@ Release:	1
 Summary:	A tcl/tk based graphical interface to the DIFF utility
 License:	GPLv2
 Group:		Development/Other
-URL:		http://tkdiff.sourceforge.net/
+URL:		https://tkdiff.sourceforge.net/
 Source0:	https://sourceforge.net/projects/tkdiff/files/%{name}/%{version}/%{name}-%{tar_ver}.zip
 # desktop, icon and man files are provided from ALT linux distribution.
 Source1:	tkdiff.desktop

@@ -4,8 +4,8 @@ Version: 1.14
 Release: 2.4
 License: GPLv2+
 Group: System Environment/Daemons
-URL: http://octopuslb.sourceforge.net/
-Source: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL: https://octopuslb.sourceforge.net/
+Source: https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: net-snmp-devel >= 5.0, systemd-units
 
 %description

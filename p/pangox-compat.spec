@@ -3,8 +3,8 @@ Version:        0.0.2
 Release:        2
 Summary:        Compatibility library for pangox
 License:        LGPLv2+
-URL:            http://ftp.gnome.org/pub/GNOME/sources/pangox-compat/0.0/
-Source0:        http://ftp.gnome.org/pub/GNOME/sources/pangox-compat/0.0/%{name}-%{version}.tar.xz 
+URL:            https://ftp.gnome.org/pub/GNOME/sources/pangox-compat/0.0/
+Source0:        https://ftp.gnome.org/pub/GNOME/sources/pangox-compat/0.0/%{name}-%{version}.tar.xz 
 BuildRequires:  pango-devel
 
 %description

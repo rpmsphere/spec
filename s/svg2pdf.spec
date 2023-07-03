@@ -9,7 +9,7 @@ Group:          Productivity/Graphics/Convertors
 Summary:        Commandline SVG to PDF converter
 Version:        20110111
 Release:        6.1
-URL:            http://wiki.inkscape.org/wiki/index.php/Tools#svg2pdf
+URL:            https://wiki.inkscape.org/wiki/index.php/Tools#svg2pdf
 Source:         svg2pdf-20110111.tar.bz2
 
 %description

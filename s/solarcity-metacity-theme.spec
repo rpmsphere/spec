@@ -6,8 +6,8 @@ Version: 0.3
 Release: 4.1
 License: GPL
 Group: User Interface/Desktops
-Source: http://themes.freshmeat.net/redir/solarcity/51649/url_tgz/solarcity-default-%{version}.tar.gz
-URL: http://themes.freshmeat.net/projects/solarcity/
+Source: https://themes.freshmeat.net/redir/solarcity/51649/url_tgz/solarcity-default-%{version}.tar.gz
+URL: https://themes.freshmeat.net/projects/solarcity/
 BuildArch: noarch
 
 %description

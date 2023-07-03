@@ -8,7 +8,7 @@ Release: 3.1
 Summary: FontTools-based package for querying system fonts
 Group: Development/Python
 License: BSD-like
-URL: http://ttfquery.sourceforge.net/
+URL: https://ttfquery.sourceforge.net/
 Source: %name-%version.tar.gz
 BuildArch: noarch
 BuildRequires: python2-devel python2-setuptools

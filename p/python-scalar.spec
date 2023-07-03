@@ -5,7 +5,7 @@ Name:           python-%{modname}
 Version:        2.2
 Release:        6.1
 Summary:        A python module for manipulating scalar with physical units
-URL:            http://russp.us/scalar.htm
+URL:            https://russp.us/scalar.htm
 License:        BSD
 Group:          Development/Libraries/Python
 Source:         %{modname}-%{version}.tar.gz

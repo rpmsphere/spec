@@ -5,8 +5,8 @@ Group:          Amusements/Games/Logic
 Summary:        Puzzle Game
 Version:        1.0.8
 Release:        1
-URL:            http://changeling.ixionstudios.com/xlogical/
-Source:         http://changeling.ixionstudios.com/xlogical/downloads/xlogical-1.0-8.tar.bz2
+URL:            https://changeling.ixionstudios.com/xlogical/
+Source:         https://changeling.ixionstudios.com/xlogical/downloads/xlogical-1.0-8.tar.bz2
 Source1:        %{name}_gfx.tar.bz2
 Source2:        %{name}.desktop
 Source3:        %{name}.png

@@ -3,8 +3,8 @@ Name: pwman
 Version: 0.4.5
 Release: 7.1
 Group: Development/Libraries
-Source: http://heanet.dl.sourceforge.net/sourceforge/pwman/%{name}-%{version}.tar.gz
-URL: http://pwman.sourceforge.net/
+Source: https://heanet.dl.sourceforge.net/sourceforge/pwman/%{name}-%{version}.tar.gz
+URL: https://pwman.sourceforge.net/
 License: GPL
 BuildRequires: ncurses-devel libxml2-devel
 

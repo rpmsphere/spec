@@ -3,10 +3,10 @@ Version:        1.30.1
 Release:        7.1
 License:        GPL-3.0
 Summary:        Smart Manager for Information Collecting
-URL:            http://webhamster.ru/site/page/index/articles/projectcode/138
+URL:            https://webhamster.ru/site/page/index/articles/projectcode/138
 Group:          Productivity/Office/Organizers
-Source0:        http://webhamster.ru/db/data/articles/105/mytetra_1_30_1_src.zip
-Source1:        http://webhamster.ru/db/data/articles/105/user_guide_ru.pdf
+Source0:        https://webhamster.ru/db/data/articles/105/mytetra_1_30_1_src.zip
+Source1:        https://webhamster.ru/db/data/articles/105/user_guide_ru.pdf
 # PATCH-FIX-OPENSUSE mytetra-1.30-install.patch lazy.kent@opensuse.org -- fix install path
 Patch0:         mytetra-1.30-install.patch
 # PATCH-FIX-UPSTREAM mytetra-1.30.1-gcc47.patch lazy.kent@opensuse.org -- fix compilation with GCC 4.7
@@ -19,7 +19,6 @@ BuildRequires:  pkgconfig(QtCore)
 BuildRequires:  pkgconfig(QtGui)
 BuildRequires:  pkgconfig(QtNetwork)
 BuildRequires:  pkgconfig(QtXml)
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 MyTetra is an information collecting manager. It is a powerful program
@@ -59,14 +58,12 @@ make %{?_smp_mflags}
 make INSTALL_ROOT=$RPM_BUILD_ROOT install
 
 %files
-%defattr(-,root,root,-)
 %doc readme.txt src/license.txt
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/*/%{name}.*
 
 %files doc
-%defattr(-,root,root,-)
 %doc user_guide_ru.pdf
 
 %changelog

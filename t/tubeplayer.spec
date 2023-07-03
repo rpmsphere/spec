@@ -4,8 +4,8 @@ Version: 2012.08.19
 Release: 7.1
 Group: Applications/Internet
 License: GPL
-URL: http://mspadaru.wordpress.com/2012/08/19/tubeplayer/
-Source0: http://sourceforge.net/code-snapshots/svn/t/tu/tubeplayer/code/tubeplayer-code-2-trunk.zip
+URL: https://mspadaru.wordpress.com/2012/08/19/tubeplayer/
+Source0: https://sourceforge.net/code-snapshots/svn/t/tu/tubeplayer/code/tubeplayer-code-2-trunk.zip
 Source1: %{name}.png
 BuildArch: noarch
 Requires: python-pyside

@@ -3,7 +3,7 @@ Version:        0.9.96pre
 Release:        3.1
 License:        GPL-2.0+
 Summary:        Logo interpreter, written in Java
-URL:            http://xlogo.tuxfamily.org/
+URL:            https://xlogo.tuxfamily.org/
 Group:          Development/Tools/IDE
 Source0:        xlogo-0.9.96pre-2012-06-27.tar.gz
 Source1:        xlogo.desktop

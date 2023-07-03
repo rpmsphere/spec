@@ -3,13 +3,12 @@ Summary:   A library for working with graphs in Python
 Name:      python-graph
 Version:   1.8.2
 Release:   6.1
-Source0:   http://python-graph.googlecode.com/files/%{name}-%{version}.zip
+Source0:   https://python-graph.googlecode.com/files/%{name}-%{version}.zip
 License:   MIT
 Group:     Development/Libraries/Python
-BuildRoot: %{_tmppath}/%{name}-%{_version}-%{release}-buildroot
 BuildArch: noarch
 BuildRequires: python-devel python-setuptools
-URL:       http://code.google.com/p/python-graph/
+URL:       https://code.google.com/p/python-graph/
 
 %description
 python-graph is a library for working with graphs in Python. 
@@ -57,7 +56,6 @@ cd ../dot
 %{__rm} -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{python_sitelib}/*
 
 %changelog

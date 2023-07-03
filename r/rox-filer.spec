@@ -6,8 +6,8 @@ Release: 1
 Summary: ROX desktop enviroment
 License: GNU GPL
 Group: Graphical desktop/Other
-Url: http://rox.sourceforge.net/
-Source: http://prdownloads.sourceforge.net/%{name}/%{name}-%version.tar.bz2
+Url: https://rox.sourceforge.net/
+Source: https://prdownloads.sourceforge.net/%{name}/%{name}-%version.tar.bz2
 Source1: rox-startup.sh
 Source2: rox-filer.desktop
 Patch0: rox-i18n-standard-path.patch

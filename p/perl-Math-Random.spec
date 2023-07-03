@@ -4,8 +4,8 @@ Release:        2.1
 Summary:        Random Number Generators
 License:        CHECK(GPL+ or Artistic)
 Group:          Development/Libraries
-URL:            http://search.cpan.org/dist/Math-Random/
-Source0:        http://www.cpan.org/modules/by-module/Math/Math-Random-%{version}.tar.gz
+URL:            https://search.cpan.org/dist/Math-Random/
+Source0:        https://www.cpan.org/modules/by-module/Math/Math-Random-%{version}.tar.gz
 BuildRequires:  perl(ExtUtils::MakeMaker)
 Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 

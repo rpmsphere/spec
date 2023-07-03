@@ -4,7 +4,7 @@ Version:	2.27.0
 Release:	18.1
 License:	BSD
 Group:		System/Servers
-URL:		http://opensource.dyc.edu/sthttpd
+URL:		https://opensource.dyc.edu/sthttpd
 Source0:	ftp://opensource.dyc.edu/pub/sthttpd/sthttpd-%{version}.tar.gz
 Source1:	ftp://opensource.dyc.edu/pub/sthttpd/sthttpd-%{version}.tar.gz.asc
 Source2:	thttpd.service
@@ -12,11 +12,11 @@ Source3:	thttpd.conf
 Source4:	thttpd.logrotate
 Source5:	thttpd.sysconfig
 Source6:	thttpd-index.html
-# http://jonas.fearmuffs.net/software/thttpd/thttpd-2.25b+impan-pl5.diff.gz
+# https://jonas.fearmuffs.net/software/thttpd/thttpd-2.25b+impan-pl5.diff.gz
 Patch0:		sthttpd-2.26.4+impan-pl5.diff
-# http://www.ogris.de/thttpd/thttpd-2.25b.access.patch.diff
+# https://www.ogris.de/thttpd/thttpd-2.25b.access.patch.diff
 Patch1:		sthttpd-2.26.4-htaccess.diff
-# http://rekl.yi.org/thttpd/pub/patch-thttpd-2.25b-re1
+# https://rekl.yi.org/thttpd/pub/patch-thttpd-2.25b-re1
 Patch2:		sthttpd-2.26.4-re1.diff
 Patch3:		sthttpd-2.27.0-no_funky_crap.diff
 Provides:	webserver
@@ -92,7 +92,7 @@ install -m0644 .description %{buildroot}/var/lib/thttpd/links/
 
 # el-cheapo softlinks
 pushd %{buildroot}/var/lib/thttpd/links
-    ln -snf "http://opensource.dyc.edu/pub/sthttpd/sthttpd-%{version}.tar.gz" sthttpd-%{version}.tar.gz
+    ln -snf "https://opensource.dyc.edu/pub/sthttpd/sthttpd-%{version}.tar.gz" sthttpd-%{version}.tar.gz
 popd
 
 # don't ship this one

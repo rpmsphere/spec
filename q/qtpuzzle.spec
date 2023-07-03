@@ -8,7 +8,7 @@ Source0:	%{name}-%{version}.tar.bz2
 Source1:    %{name}.png
 Group:		Amusements/Games
 Summary:	Puzzle Game
-URL:		http://code.google.com/p/qtdesktop
+URL:		https://code.google.com/p/qtdesktop
 BuildRequires:  libpng-devel
 BuildRequires:	gcc-c++, make, pkgconfig, pkgconfig(QtCore), pkgconfig(QtGui)
 

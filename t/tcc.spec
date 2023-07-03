@@ -4,8 +4,8 @@ Version:	0.9.27
 Release:	3.1
 License:	GPL
 Group:		Development/C
-URL:		http://bellard.org/tcc/
-Source0:	http://download.savannah.nongnu.org/releases/tinycc/%{name}-%{version}.tar.bz2
+URL:		https://bellard.org/tcc/
+Source0:	https://download.savannah.nongnu.org/releases/tinycc/%{name}-%{version}.tar.bz2
 BuildRequires:	texi2html
 
 %description

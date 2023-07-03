@@ -1,6 +1,6 @@
 Name:         solarium
 Summary:      PHP Solr Client Library
-URL:          http://www.solarium-project.org/
+URL:          https://www.solarium-project.org/
 Group:        Web
 License:      BSD
 Version:      3.2.0rc1

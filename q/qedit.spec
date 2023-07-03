@@ -5,8 +5,8 @@ License:            GPL
 BuildRequires:      cmake qt4-devel aspell
 Group:              Development/Tools/Other 
 Summary:            Qt based advanced text editor
-URL:                http://hugo.pereira.free.fr/software/index.php?page=package&package_list=software_list_qt&package=qedit
-Source:             http://hugo.pereira.free.fr/software/tgz/%{name}-%{version}.tar.gz
+URL:                https://hugo.pereira.free.fr/software/index.php?page=package&package_list=software_list_qt&package=qedit
+Source:             https://hugo.pereira.free.fr/software/tgz/%{name}-%{version}.tar.gz
 
 %description
 Qt based advanced text editor. Supports syntax highlighting, matching-

@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           solarus
-URL:            http://www.solarus-engine.org/
+URL:            https://www.solarus-engine.org/
 BuildRequires:  gcc-c++ cmake SDL2_image-devel SDL2_ttf-devel openal-soft-devel libvorbis-devel libmodplug-devel luajit-devel physfs-devel
 BuildRequires:	compat-lua-devel
 License:        GPLv3 or later

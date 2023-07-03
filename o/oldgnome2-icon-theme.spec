@@ -6,7 +6,7 @@ Version:        0.1.1
 Release:        1.1
 License:        GPL2+
 Group:          User Interface/Desktops
-URL:            http://eqlovelace.deviantart.com/art/Old-GNOME2-Icon-Theme-192943815
+URL:            https://eqlovelace.deviantart.com/art/Old-GNOME2-Icon-Theme-192943815
 Source0:        %{theme_name}.tar.gz
 BuildArch:      noarch
 

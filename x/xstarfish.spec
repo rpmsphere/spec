@@ -4,8 +4,8 @@ Version: 1.1
 Release: 10.1
 Group: Amusements/Games
 License: GPL
-URL: http://www.redplanetsw.com/starfish/
-Source0: http://ftp.de.debian.org/debian/pool/main/x/xstarfish/%{name}_%{version}.orig.tar.gz
+URL: https://www.redplanetsw.com/starfish/
+Source0: https://ftp.de.debian.org/debian/pool/main/x/xstarfish/%{name}_%{version}.orig.tar.gz
 BuildRequires: libpng12-devel
 BuildRequires: libX11-devel
 BuildRequires: xorg-x11-xbitmaps

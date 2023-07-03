@@ -6,7 +6,7 @@ Version:        0.4
 Release:        12.1
 License:        GPL
 Group:          User Interface/Desktops
-URL:            http://fedora-art.org/content/show.php/Paranoid?content=136003
+URL:            https://fedora-art.org/content/show.php/Paranoid?content=136003
 Source0:        Paranoid 0.4.zip
 Source1:        paranoid_naturalmystic.png
 Requires:       gtk-murrine-engine, gtk-equinox-engine

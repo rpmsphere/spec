@@ -4,8 +4,8 @@ Version:	0.99.3
 Release:	1
 License:	GPL v2
 Group:		Applications/Sound
-Source0:	http://dl.sourceforge.net/xmms-shell/%{name}-%{version}.tar.gz
-URL:		http://www.loganh.com/xmms-shell/
+Source0:	https://dl.sourceforge.net/xmms-shell/%{name}-%{version}.tar.gz
+URL:		https://www.loganh.com/xmms-shell/
 BuildRequires:  gcc
 BuildRequires:	automake
 BuildRequires:	libtool

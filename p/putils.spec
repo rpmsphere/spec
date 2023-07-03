@@ -4,8 +4,8 @@ Release:	2.1
 Summary:	Various Linux utilities using the /proc filesystem
 Group:		Application/System
 License:	GPLv2
-URL:		http://udrepper.livejournal.com/22255.html
-Source0:	http://www.akkadia.org/drepper/%{name}-%{version}.tar.bz2
+URL:		https://udrepper.livejournal.com/22255.html
+Source0:	https://www.akkadia.org/drepper/%{name}-%{version}.tar.bz2
 
 %description
 The plimit utility allows to query and set the limits of a process.
@@ -21,7 +21,6 @@ make %{?_smp_mflags}
 make install DESTDIR=$RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/pfiles
 %{_bindir}/plimit
 

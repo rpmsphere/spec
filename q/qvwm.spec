@@ -7,7 +7,7 @@ Group:		Graphical desktop/Other
 Source0:	ftp://ftp.qvwm.org/pub/qvwm/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-am15.patch.bz2
 Patch1:		%{name}-man_MANS.patch.bz2
-URL:		http://www.qvwm.org/
+URL:		https://www.qvwm.org/
 BuildRequires:	gcc-c++, automake
 BuildRequires:	esound-devel >= 0.2.6
 BuildRequires:	flex

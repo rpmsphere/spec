@@ -6,7 +6,7 @@ Version: 2.6.0
 Release: 3.1
 Group: Development/Libraries
 License: MIT
-URL: http://timothycrosley.github.io/pies/
+URL: https://timothycrosley.github.io/pies/
 Source0: pies-%{version}.tar.gz
 BuildRequires: python3-devel
 BuildArch: noarch

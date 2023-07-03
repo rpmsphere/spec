@@ -2,10 +2,10 @@
 %define srcver  XXV
 
 Name:           phalanx
-URL:            http://sourceforge.net/projects/phalanx
+URL:            https://sourceforge.net/projects/phalanx
 Version:        25
 Release:        1
-Source:         http://downloads.sourceforge.net/project/phalanx/Version%20%{srcver}/%{name}-%{srcver}-source.tgz
+Source:         https://downloads.sourceforge.net/project/phalanx/Version%20%{srcver}/%{name}-%{srcver}-source.tgz
 Patch0:         Phalanx-XXII.diff
 # PATCH-FIX-UPSTREAM phalanx-castling-broken.patch bnc#819525 mike.catanzaro@gmail.com -- fix castling always treated as illegal move
 Patch1:         phalanx-castling-broken.patch

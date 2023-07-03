@@ -4,8 +4,8 @@ Version: 1.3
 Release: 2.1
 Group: Applications/Multimedia
 License: GPLv2
-URL: http://ocmnet.com/saxguru/TimGM6mb.htm
-Source0: http://http.debian.net/debian/pool/main/t/timgm6mb-soundfont/timgm6mb-soundfont_1.3.orig.tar.gz
+URL: https://ocmnet.com/saxguru/TimGM6mb.htm
+Source0: https://http.debian.net/debian/pool/main/t/timgm6mb-soundfont/timgm6mb-soundfont_1.3.orig.tar.gz
 BuildArch: noarch
 
 %description

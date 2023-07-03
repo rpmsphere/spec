@@ -4,8 +4,8 @@ Release:       10.1
 Group:         Applications/Internet
 Summary:       A GUI front-end to SopCast
 License:       GPLv2+
-URL:           http://code.google.com/p/sopcast-player/
-Source0:       http://sopcast-player.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:           https://code.google.com/p/sopcast-player/
+Source0:       https://sopcast-player.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildArch:     noarch
 BuildRequires: gettext
 BuildRequires: python2

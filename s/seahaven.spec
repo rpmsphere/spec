@@ -5,8 +5,8 @@ Release:         1
 Summary:         Solitaire card game
 Group:           Amusements/Games
 License:         GPL
-URL:             http://seahaven.sourceforge.net/
-Source0:         http://seahaven.sourceforge.net/%{name}-%{version}.tgz
+URL:             https://seahaven.sourceforge.net/
+Source0:         https://seahaven.sourceforge.net/%{name}-%{version}.tgz
 Source1:         %{name}.desktop
 Source2:         %{name}.png
 BuildRequires:   gcc-c++ libXft-devel libXext-devel

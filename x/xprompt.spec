@@ -11,7 +11,6 @@ Release:        2406.1
 Summary:        Small tool for prompting users
 Source:         xprompt-28sep91.tar.gz
 Patch:          xprompt-warn.diff
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Small tool to ask the user for one or more responses (e.g., from batch
@@ -35,7 +34,6 @@ make CDEBUGFLAGS="$RPM_OPT_FLAGS"
 make DESTDIR=$RPM_BUILD_ROOT install
 
 %files
-%defattr(-,root,root)
 %_bindir/*
 ##%_mandir/man1/*
 

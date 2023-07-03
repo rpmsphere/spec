@@ -7,7 +7,7 @@ Release:		4.1
 License:		GPLv2
 Group:			Applications/File
 Source0:		wii-%{name}.tar.gz
-URL:			http://wit.wiimm.de/
+URL:			https://wit.wiimm.de/
 BuildRequires:	fuse-devel
 
 %description

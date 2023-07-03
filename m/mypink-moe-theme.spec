@@ -14,7 +14,7 @@ Source2: %{gdm_name}.tar.gz
 Source3: mypink-moe-index.theme
 BuildArch: noarch
 Requires: comixcursors-cursor-theme
-URL: http://gnome-look.org/content/show.php/mypink-moebuntu?content=106584
+URL: https://gnome-look.org/content/show.php/mypink-moebuntu?content=106584
 
 %description
 Mypink special edition, edited by moebuntu.

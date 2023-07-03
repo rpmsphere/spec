@@ -3,8 +3,8 @@ Version:       0.9.1
 Release:       10.4
 Summary:       3D Geometry Designer
 Group:         System/Libraries/Python
-URL:           http://www.nongnu.org/pyformex/
-Source:        http://download.savannah.gnu.org/releases/pyformex/%{name}-%{version}.tar.gz
+URL:           https://www.nongnu.org/pyformex/
+Source:        https://download.savannah.gnu.org/releases/pyformex/%{name}-%{version}.tar.gz
 License:       GPL
 BuildRequires: python2-devel, python2-numpy, mesa-libGLU-devel, atlas-devel
 #Requires: PyQt4

@@ -4,8 +4,8 @@ Release: 9.1
 Summary: A stopwatch written in python
 Group: Utility
 License: GPL2
-URL: http://xyne.archlinux.ca/projects/pystopwatch/
-Source0: http://xyne.archlinux.ca/projects/pystopwatch/src/pystopwatch-2012.12.24.1.tar.xz
+URL: https://xyne.archlinux.ca/projects/pystopwatch/
+Source0: https://xyne.archlinux.ca/projects/pystopwatch/src/pystopwatch-2012.12.24.1.tar.xz
 Source1: xyne.png
 BuildArch: noarch
 

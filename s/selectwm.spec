@@ -7,8 +7,8 @@ Version:	0.4.1
 Release:	7.1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ordiluc.net/selectwm/%{name}-%{version}.tar.bz2
-URL:		http://ordiluc.net/selectwm/
+Source0:	https://ordiluc.net/selectwm/%{name}-%{version}.tar.bz2
+URL:		https://ordiluc.net/selectwm/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel

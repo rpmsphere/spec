@@ -5,7 +5,7 @@ Version:        0.5.4
 Release:        22.1
 License:        LGPL-2.0+
 Summary:        An add-on for Ogre for render pretty water scenes
-URL:            http://modclub.rigsofrods.com/xavi/
+URL:            https://modclub.rigsofrods.com/xavi/
 Group:          Development/Libraries/C and C++
 Source:         libhydrax-%{version}-6.tar.gz
 BuildRequires:  gcc-c++

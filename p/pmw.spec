@@ -4,8 +4,8 @@ Version:	4.34
 Release:	1
 License:	GPLv2+
 Group:		Publishing
-URL:		http://www.quercite.com/pmw.html
-Source0:	http://www.quercite.com/%{name}-%{version}.tar.gz
+URL:		https://www.quercite.com/pmw.html
+Source0:	https://www.quercite.com/%{name}-%{version}.tar.gz
 
 %description
 Philip's Music Writer is a program for typesetting music. It reads text files

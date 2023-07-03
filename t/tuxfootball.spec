@@ -2,11 +2,11 @@ Summary: A 2D football game
 Name: tuxfootball
 Version: 0.1.1
 Release: 1
-Source0: http://downloads.sourceforge.net/tuxfootball/%{name}-%{version}.tar.gz
+Source0: https://downloads.sourceforge.net/tuxfootball/%{name}-%{version}.tar.gz
 Source1: %{name}.png
 License: GPL
 Group: Games/Sports
-Url: http://tuxfootball.sourceforge.net
+Url: https://tuxfootball.sourceforge.net
 BuildRequires: SDL-devel
 BuildRequires: SDL_image-devel
 BuildRequires: SDL_mixer-devel

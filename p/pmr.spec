@@ -2,11 +2,10 @@ Name:				pmr
 Version:			1.01
 Release:			2.1
 Summary:			Filter Which Measures Bandwidth and Number of Bytes Passing Through a Pipe
-Source:			http://zakalwe.fi/~shd/foss/pmr/pmr-%{version}.tar.gz
-URL:				http://zakalwe.fi/~shd/foss/pmr/
+Source:			https://zakalwe.fi/~shd/foss/pmr/pmr-%{version}.tar.gz
+URL:				https://zakalwe.fi/~shd/foss/pmr/
 Group:			System/Tools
 License:			Public Domain
-BuildRoot:		%{_tmppath}/build-%{name}-%{version}
 BuildRequires:	gcc glibc-devel make
 
 %description
@@ -39,7 +38,6 @@ Authors:
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING todo.txt
 %doc ChangeLog md5.copyright
 %{_bindir}/pmr

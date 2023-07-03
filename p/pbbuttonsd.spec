@@ -9,8 +9,8 @@ Version:       0.8.1a
 Release:       9.1
 Summary:       Support for Laptops special functions
 Group:         System/Servers
-URL:           http://pbbuttons.berlios.de/projects/pbbuttonsd/
-Source:        http://switch.dl.sourceforge.net/sourceforge/pbbuttons/pbbuttonsd-%{version}.tar.gz
+URL:           https://pbbuttons.berlios.de/projects/pbbuttonsd/
+Source:        https://switch.dl.sourceforge.net/sourceforge/pbbuttons/pbbuttonsd-%{version}.tar.gz
 Source1:       %{name}.init
 License:       GPL
 BuildRequires: glib2-devel

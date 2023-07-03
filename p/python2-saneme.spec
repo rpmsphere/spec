@@ -5,7 +5,7 @@ Release:        1
 License:        GPL
 Group:          Development/Libraries/Python
 Source:         python-saneme-%{version}.tar.gz
-URL:		http://www.etlafins.com/saneme
+URL:		https://www.etlafins.com/saneme
 BuildArch:      noarch
 Requires:       sane-backends-libs, python2-imaging
 

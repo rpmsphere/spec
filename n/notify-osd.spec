@@ -2,7 +2,7 @@ Name:				 notify-osd
 Version:			 0.9.25
 Release:			 15.1
 Summary:			 Ephemeral Overlay On-Screen-Display Notification Agent
-# http://launchpad.net/notify-osd/trunk/ubuntu-9.10-sru/+download/notify-osd-%{version}.tar.gz
+# https://launchpad.net/notify-osd/trunk/ubuntu-9.10-sru/+download/notify-osd-%{version}.tar.gz
 Source:			 notify-osd-%{version}.tar.bz2
 URL:				 https://launchpad.net/notify-osd
 Group:			 System/Libraries

@@ -2,25 +2,25 @@ Summary: User contributed themes for xpenguins
 Name: xpenguins-themes-contrib
 Version: 1.0
 Release: 19.1
-Source0: http://xpenguins.seul.org/contrib/Megaman.tar.gz
-Source1: http://xpenguins.seul.org/contrib/Turkeys.tar.gz
-Source2: http://xpenguins.seul.org/contrib/Walking_Man.tar.bz2
-Source3: http://xpenguins.seul.org/contrib/Ninja-0_9b.tar.gz
-Source4: http://xpenguins.seul.org/contrib/xpenguins_theme_mule-1.1.tar.gz
-Source5: http://www.linuxforblondes.com/applications/esheep/_files/xsheep.tar.gz
-#http://www.murga-linux.com/puppy/viewtopic.php?t=35002
+Source0: https://xpenguins.seul.org/contrib/Megaman.tar.gz
+Source1: https://xpenguins.seul.org/contrib/Turkeys.tar.gz
+Source2: https://xpenguins.seul.org/contrib/Walking_Man.tar.bz2
+Source3: https://xpenguins.seul.org/contrib/Ninja-0_9b.tar.gz
+Source4: https://xpenguins.seul.org/contrib/xpenguins_theme_mule-1.1.tar.gz
+Source5: https://www.linuxforblondes.com/applications/esheep/_files/xsheep.tar.gz
+#https://www.murga-linux.com/puppy/viewtopic.php?t=35002
 Source6: XPark.tar.gz
-#Source7: http://xpenguins.seul.org/contrib/xpenguins_theme_lemmings-1.1.tar.gz
-#http://nepeta.mozai.com/shimeji/xpenguins-theme-Alterniabound.tgz
+#Source7: https://xpenguins.seul.org/contrib/xpenguins_theme_lemmings-1.1.tar.gz
+#https://nepeta.mozai.com/shimeji/xpenguins-theme-Alterniabound.tgz
 Source8: Alterniabound.tar.gz
-#http://nepeta.mozai.com/shimeji/xpenguins-theme-Nepeta-by-ZethRina.tgz
+#https://nepeta.mozai.com/shimeji/xpenguins-theme-Nepeta-by-ZethRina.tgz
 Source9: shimeji_Nepeta.tar.gz
-#http://regrunner.de/
+#https://regrunner.de/
 Source10: TheRegRunner.tar.gz
 Group: Amusements/Graphics
 Requires: xpenguins >= 1.9
 License: unknown
-URL: http://xpenguins.seul.org/contrib/
+URL: https://xpenguins.seul.org/contrib/
 BuildArch: noarch
 Provides: xsheep
 

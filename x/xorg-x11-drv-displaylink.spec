@@ -5,10 +5,10 @@ Summary:   Xorg X11 displaylink video driver
 Name:      xorg-x11-drv-displaylink
 Version:   0.0.1
 Release:   1
-URL:       http://git.plugable.com/gitphp/index.php?p=xf-video-udlfb
+URL:       https://git.plugable.com/gitphp/index.php?p=xf-video-udlfb
 License:   GPLv2
 Group:     User Interface/X Hardware Support
-# http://git.plugable.com/gitphp/index.php?p=xf-video-udlfb&a=snapshot
+# https://git.plugable.com/gitphp/index.php?p=xf-video-udlfb&a=snapshot
 Source0:   %{tarball}.tar.bz2
 BuildRequires: autoconf automake libtool
 BuildRequires: xorg-x11-server-devel

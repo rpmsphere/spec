@@ -7,7 +7,7 @@ Version:        3.0.1
 Release:        7.1
 BuildRequires:  ruby, rubygems, rubypick
 BuildArch:      noarch
-URL:            http://shoesrb.com/
+URL:            https://shoesrb.com/
 Source0:        https://rubygems.global.ssl.fastly.net/gems/%{mod_name}-%{version}.gem
 Summary:        The best little GUI toolkit for Ruby
 License:        MIT

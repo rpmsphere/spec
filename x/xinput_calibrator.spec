@@ -4,8 +4,8 @@ Release:        20
 Summary:        A generic touchscreen calibration program for X.Org
 Summary(fr):    Programme de calibrage d'écran tactile générique pour X.Org
 License:        MIT
-URL:            http://www.freedesktop.org/wiki/Software/xinput_calibrator
-Source0:        http://github.com/downloads/tias/xinput_calibrator/xinput_calibrator-%{version}.tar.gz
+URL:            https://www.freedesktop.org/wiki/Software/xinput_calibrator
+Source0:        https://github.com/downloads/tias/xinput_calibrator/xinput_calibrator-%{version}.tar.gz
 BuildRequires:  gcc-c++
 BuildRequires:  gcc
 BuildRequires:  desktop-file-utils

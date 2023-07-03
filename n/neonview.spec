@@ -6,8 +6,8 @@ Release:       5.1
 Summary:       A simple, minimalist and lightweight image viewer for the Linux platform
 Group:         Graphics
 License:       GPLv2+
-URL:           http://www.tuxarena.com/intro/neonview.php
-Source0:       http://www.tuxarena.com/intro/files/%{name}-%{version}-src.tar.gz
+URL:           https://www.tuxarena.com/intro/neonview.php
+Source0:       https://www.tuxarena.com/intro/files/%{name}-%{version}-src.tar.gz
 Patch0:        strip-remove.patch
 BuildRequires: pkgconfig(gtk+-x11-3.0)
 

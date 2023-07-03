@@ -4,14 +4,13 @@ Release:        10.1
 Summary:        Recover files/disks with damaged sectors
 License:        GPL-2.0
 Group:          Productivity/File utilities
-URL:            http://www.vanheusden.com/recoverdm/
-Source0:        http://www.vanheusden.com/recoverdm/%{name}-%{version}.tgz
-Source1:        http://www.vanheusden.com/license.txt
+URL:            https://www.vanheusden.com/recoverdm/
+Source0:        https://www.vanheusden.com/recoverdm/%{name}-%{version}.tgz
+Source1:        %name.license.txt
 # PATCH-FIX-OPENSUSE fix_cflags.patch asterios.dramis@gmail.com -- Make the package use CFLAGS from spec file
 Patch0:         fix_cflags.patch
 # PATCH-FIX-OPENSUSE fix_gcc_warnings.patch asterios.dramis@gmail.com -- Fix some gcc compilation warnings that make rpm post-build-checks fail
 Patch1:         fix_gcc_warnings.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 This program will help you recover disks with bad sectors. You can recover
@@ -40,10 +39,9 @@ make %{?_smp_mflags}
 %install
 install -Dpm 0755 mergebad %{buildroot}%{_bindir}/mergebad
 install -Dpm 0755 recoverdm %{buildroot}%{_bindir}/recoverdm
-cp -af %{SOURCE1} .
+cp -af %{SOURCE1} license.txt
 
 %files
-%defattr(-,root,root)
 %doc license.txt readme.txt
 %{_bindir}/mergebad
 %{_bindir}/recoverdm

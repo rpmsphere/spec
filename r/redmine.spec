@@ -4,8 +4,8 @@ Release:        1
 Summary:        A flexible project management web application
 Group:          Networking/WWW
 License:        GPLv2+
-URL:            http://www.redmine.org
-Source0:        http://www.redmine.org/releases//%{name}-%{version}.tar.gz
+URL:            https://www.redmine.org
+Source0:        https://www.redmine.org/releases//%{name}-%{version}.tar.gz
 Source101:      %{name}.logrotate
 Source102:      %{name}.apache24
 Source103:      %{name}-pg-database.yml

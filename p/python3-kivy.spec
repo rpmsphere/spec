@@ -1,7 +1,7 @@
 Name:           python3-kivy
 Version:        2.1.0
 Release:        1
-URL:            http://kivy.org/
+URL:            https://kivy.org/
 Summary:        Hardware-accelerated multitouch application library
 License:        LGPL-3.0
 Group:          Development/Languages/Python
@@ -328,7 +328,7 @@ python3 setup.py install --prefix=%{_prefix} --root=%{buildroot}
   - New Bubble widget, for displaying contextual menu
   - New Copy/Cut/Paste menu in Textinput using Bubble
   - New RstDocument widget, for rendering RST text
-  - See http://kivy.org/#changelog for more detail...
+  - See https://kivy.org/#changelog for more detail...
 - Build HTML documentation and split out doc package
 - Fixed several rpmlint issues
 * Fri Sep 23 2011 saschpe@suse.de

@@ -5,21 +5,20 @@ Release: 12.1
 License: GPL
 Source: %{name}-%{version}.tar.bz2
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Group: Applications/Emulators
 %define docdir %{_docdir}/%{name}-%{version}
 
 %description
 vboxlive: runs Linux live system in VirtualBox disk-less virtual machines
-http://forums.opensuse.org/english/get-technical-help-here/how-faq-forums/unreviewed-how-faq/465445-running-linux-live-cds-disk-less-virtual-machines-under-virtualbox.html
+https://forums.opensuse.org/english/get-technical-help-here/how-faq-forums/unreviewed-how-faq/465445-running-linux-live-cds-disk-less-virtual-machines-under-virtualbox.html
 VBoxExtensionPack: updates VirtualBox Extension pack: 
-http://forums.opensuse.org/english/other-forums/development/programming-scripting/459800-update-virtualbox-4-0-extension-pack.html 
+https://forums.opensuse.org/english/other-forums/development/programming-scripting/459800-update-virtualbox-4-0-extension-pack.html 
 vm-bridge: converts virtual machines from NAT to bridge or bridge to NAT
-http://forums.opensuse.org/english/other-forums/development/programming-scripting/453961-vm-bridge-convert-virtual-machines-nat-bridge-bridge-nat.html
+https://forums.opensuse.org/english/other-forums/development/programming-scripting/453961-vm-bridge-convert-virtual-machines-nat-bridge-bridge-nat.html
 vm-create: creates kvm virtual machines from anywhere to anywhere.
-http://forums.opensuse.org/english/other-forums/development/programming-scripting/453962-vm-create-create-kvm-virtual-machines.html
+https://forums.opensuse.org/english/other-forums/development/programming-scripting/453962-vm-create-create-kvm-virtual-machines.html
 popup library: displays dialogs in QT/GTK style (used by the other scripts)
-http://forums.opensuse.org/english/other-forums/development/programming-scripting/452886-dialog-boxes-bash-scripts.html
+https://forums.opensuse.org/english/other-forums/development/programming-scripting/452886-dialog-boxes-bash-scripts.html
 
 Authors:  
 --------
@@ -46,7 +45,6 @@ ln $RPM_BUILD_ROOT%{_bindir}/vm-bridge $RPM_BUILD_ROOT%{_bindir}/bridge2nat
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc COPYING
 %config (noreplace) %{_sysconfdir}/vm-create.cfg
 %config (noreplace) %{_sysconfdir}/vboxlive.cfg

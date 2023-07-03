@@ -4,7 +4,7 @@ Name:           python3-ordereddict
 Version:        1.1
 Release:        1
 Summary:        OrderedDict that works in Python
-URL:            http://pypi.python.org/pypi/ordereddict
+URL:            https://pypi.python.org/pypi/ordereddict
 License:        MIT
 Group:          Development/Libraries/Python
 Source:         ordereddict-%{version}.tar.bz2
@@ -16,7 +16,7 @@ Drop-in substitute for Python's new collections.OrderedDict. The recipe has
 big-oh performance that matches regular dictionaries (amortized O(1)
 insertion/deletion/lookup and O(n) iteration/repr/copy/equality_testing).
 
-Originally based on http://code.activestate.com/recipes/576693/
+Originally based on https://code.activestate.com/recipes/576693/
 
 Authors:
 --------

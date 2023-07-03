@@ -6,9 +6,9 @@ Version: 2.5.2
 Release: 1
 License: GPLv2+
 Group: Amusements/Games
-URL: http://www.nexuiz.com/
+URL: https://www.nexuiz.com/
 # Source is custom, obtained with :
-# wget http://downloads.sourceforge.net/nexuiz/nexuiz-252.zip
+# wget https://downloads.sourceforge.net/nexuiz/nexuiz-252.zip
 # unzip -j nexuiz-252.zip Nexuiz/sources/enginesource20091001.zip
 Source: enginesource20091001.zip
 # For the .ico extraction
@@ -178,7 +178,7 @@ gtk-update-icon-cache -qf %{_datadir}/icons/hicolor 2>/dev/null || :
 * Sat Jul 09 2005 Adrian Reber <adrian@lisas.de> - 1.1-1
 - added gtk-update-icon-cache to %%post and %%postun
 - added desktop-file-utils as Requires({post,postun})
-* Fri Jul  8 2005 Matthias Saou <http://freshrpms.net/> 1.1-0
+* Fri Jul  8 2005 Matthias Saou <https://freshrpms.net/> 1.1-0
 - Update to 1.1.
 - Split off the huge data, unfortunately requires using custom sources.
 - Major spec file changes.

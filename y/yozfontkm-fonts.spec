@@ -7,8 +7,8 @@ Release: 4.1
 License: SIL Open Font License
 Group: User Interface/X
 BuildArch: noarch
-Source0: http://yozvox.web.fc2.com/YOzFontKM-7.01.7z
-URL: http://yozvox.web.fc2.com/
+Source0: https://yozvox.web.fc2.com/YOzFontKM-7.01.7z
+URL: https://yozvox.web.fc2.com/
 Requires(post): fontconfig
 BuildRequires: util-linux, p7zip
 

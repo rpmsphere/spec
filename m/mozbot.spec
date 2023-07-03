@@ -2,11 +2,10 @@ Name:           mozbot
 Version:        2.6
 Release:        2.1
 License:        MPL
-Source:         http://ftp.mozilla.org/pub/mozilla.org/webtools/%{name}-%{version}.tar.gz
+Source:         https://ftp.mozilla.org/pub/mozilla.org/webtools/%{name}-%{version}.tar.gz
 Group:          Applications/Internet
 Summary:        Mozilla IRC bot
-URL:            http://ftp.mozilla.org/pub/mozilla.org/webtools/
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+URL:            https://ftp.mozilla.org/pub/mozilla.org/webtools/
 Requires:       perl, wget
 BuildArch:      noarch
 
@@ -33,7 +32,6 @@ chmod +x $RPM_BUILD_ROOT%{_bindir}/%{name} $RPM_BUILD_ROOT%{_datadir}/%{name}/%{
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc README INSTALL* run-mozbot-*
 %{_bindir}/%{name}
 %{_datadir}/%{name}

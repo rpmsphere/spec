@@ -4,7 +4,7 @@ Version: 	2.4.1
 Release: 	20.1
 License: 	GPLv2
 Group: 		Sciences/Chemistry
-URL: 		http://viewmol.sourceforge.net
+URL: 		https://viewmol.sourceforge.net
 Source0: 	%name-%version.src.tar.bz2
 Patch0:		viewmol-2.4.1-prevent-app-defaults-file-install.patch
 Patch1:		viewmol-2.4.1-mdv-fix-str-fmt.patch

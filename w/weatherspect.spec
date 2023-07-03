@@ -4,8 +4,8 @@ Release:        3.1
 Summary:        A weather animation in ASCII art
 License:        GPL
 Group:          Toys
-URL:            http://robobunny.com/projects/weatherspect/html/
-Source0:        http://robobunny.com/projects/weatherspect/%{name}_v%{version}.tar.gz
+URL:            https://robobunny.com/projects/weatherspect/html/
+Source0:        https://robobunny.com/projects/weatherspect/%{name}_v%{version}.tar.gz
 Requires:	perl-Term-Animation
 BuildArch:      noarch
 

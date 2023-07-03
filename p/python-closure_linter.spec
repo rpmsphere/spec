@@ -1,12 +1,12 @@
 %undefine _debugsource_packages
 Name:         python-closure_linter
 Summary:      Google Closure Linter
-URL:          http://code.google.com/p/closure-linter/
+URL:          https://code.google.com/p/closure-linter/
 Group:        Language
 License:      Apache 2.0
 Version:      2.3.11
 Release:      5.1
-Source0:      http://closure-linter.googlecode.com/files/closure_linter-%{version}.tar.gz
+Source0:      https://closure-linter.googlecode.com/files/closure_linter-%{version}.tar.gz
 BuildRequires:  python2
 BuildArch: noarch
 

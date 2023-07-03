@@ -4,11 +4,10 @@ Release:        3.1
 Summary:        A simple utility to patch the region codes of dvd movies
 License:        GPL-2.0
 Group:          Development/Tools/Other
-URL:            http://regionpatcher.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:            https://regionpatcher.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # PATCH-FIX-OPENSUSE Makefile_fix.patch asterios.dramis@gmail.com -- Make the package use CFLAGS from spec file, don't strip binaries
 Patch0:         Makefile_fix.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 RegionPatcher is a simple utility to patch the region codes of dvd movies.
@@ -25,7 +24,6 @@ make %{?_smp_mflags}
 install -Dpm 0755 regionpatcher %{buildroot}%{_bindir}/regionpatcher
 
 %files
-%defattr(-,root,root)
 %doc COPYING README
 %{_bindir}/regionpatcher
 

@@ -4,8 +4,8 @@ Version: 2.0.5
 Release: 1
 Group: Science
 License: Free Software
-URL: http://od1n.sourceforge.net
-Source0: http://prdownloads.sourceforge.net/od1n/%{name}-%{version}.tar.gz
+URL: https://od1n.sourceforge.net
+Source0: https://prdownloads.sourceforge.net/od1n/%{name}-%{version}.tar.gz
 BuildRequires: desktop-file-utils
 BuildRequires: qt5-qtbase-devel
 BuildRequires: blitz-devel

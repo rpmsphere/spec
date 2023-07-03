@@ -4,11 +4,11 @@ Version: 12.1
 Release: 10.1
 License: GPL
 Group: Sciences/Mathematics
-Source: http://www.isi.edu/nsnam/dist/xgraph-%version.tar.bz2
+Source: https://www.isi.edu/nsnam/dist/xgraph-%version.tar.bz2
 Patch0: xgraph-12.1-glibc-2.10.patch
 Patch1: xgraph-makefile-gentoo.patch
 Patch2: xgraph-12.1-fix-str-fmt.patch
-URL: http://www.isi.edu/nsnam/xgraph
+URL: https://www.isi.edu/nsnam/xgraph
 BuildRequires: libX11-devel
 
 %description

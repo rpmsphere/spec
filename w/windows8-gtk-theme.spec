@@ -6,8 +6,8 @@ Version:        1.3
 Release:        5.1
 License:        GPL
 Group:          User Interface/Desktops
-URL:            http://gnome-look.org/content/show.php?content=158721
-Source0:        http://gnome-look.org/CONTENT/content-files/158721-Windows8-gtk-%{version}.tar.gz
+URL:            https://gnome-look.org/content/show.php?content=158721
+Source0:        https://gnome-look.org/CONTENT/content-files/158721-Windows8-gtk-%{version}.tar.gz
 BuildArch:	    noarch
 Requires:       win2-7-theme
 Requires:       win8-cursor-theme

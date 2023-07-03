@@ -4,8 +4,8 @@ Version:	1.1.4
 Release:	1
 License:	GPLv2.1
 Group:		Development/Languages
-URL:		http://inglorion.net/software/voodoo/
-Source0:	http://inglorion.net/download/%{name}-%{version}.tar.bz2
+URL:		https://inglorion.net/software/voodoo/
+Source0:	https://inglorion.net/download/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	ruby nasm
 BuildRequires:  rubygem-rdoc

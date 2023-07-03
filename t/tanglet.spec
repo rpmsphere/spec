@@ -3,8 +3,8 @@ Version:        1.6.1.1
 Release:        1
 Summary:        Word finding game
 License:        GPLv3+
-URL:            http://gottcode.org/%{name}/
-Source:         http://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
+URL:            https://gottcode.org/%{name}/
+Source:         https://gottcode.org/%{name}/%{name}-%{version}-src.tar.bz2
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
 BuildRequires:  qt5-qttools-devel

@@ -3,8 +3,8 @@ Version:	1.9.25
 Release:	29
 Summary:	Low-level fullscreen SVGA graphics library
 License:	Public Domain
-URL:		http://www.svgalib.org/
-Source0:	http://www.arava.co.il/matan/svgalib/svgalib-%{version}.tar.gz
+URL:		https://www.svgalib.org/
+Source0:	https://www.arava.co.il/matan/svgalib/svgalib-%{version}.tar.gz
 Source1:	svgalib-todo
 Patch0:		svgalib-1.9.21-makefiles.patch
 Patch1:		svgalib-1.4.3-fhs.patch

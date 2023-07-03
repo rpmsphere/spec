@@ -5,7 +5,7 @@ Release: 	9.1
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		peksystray-0.4.0-fix-str-fmt.patch
 Patch1:		peksystray-0.4.0-fix-link.patch
-URL:		http://peksystray.sourceforge.net/
+URL:		https://peksystray.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/Other
 BuildRequires:	pkgconfig(x11)

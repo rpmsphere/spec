@@ -4,7 +4,7 @@ Version:	2.1.1
 Release:	1
 License:	GPLv3
 Group:		Office/Spreadsheet
-URL:		http://manns.github.io/pyspread/
+URL:		https://manns.github.io/pyspread/
 Source0:	https://pypi.python.org/packages/source/p/pyspread/%{name}-%{version}.tar.gz
 Source1:        pyspread.xpm
 BuildRequires:	python3-devel

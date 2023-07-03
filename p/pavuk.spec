@@ -6,7 +6,7 @@ BuildRequires:  openssl-devel
 BuildRequires:  desktop-file-utils
 Version:        0.9.35
 Release:        7.1
-URL:            http://pavuk.sourceforge.net/
+URL:            https://pavuk.sourceforge.net/
 Summary:        Powerful WWW or FTP Site Mirror Tool
 License:        GPL-2.0+
 Group:          Productivity/Networking/Web/Utilities

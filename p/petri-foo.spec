@@ -6,8 +6,8 @@ Release: 9.1
 Summary: Specimen Sampler project
 License: GPLv2
 Group: Applications/Multimedia
-URL: http://petri-foo.sourceforge.net/
-Source0: http://sourceforge.net/projects/petri-foo/files/Source/%{name}-%{version}.tar.bz2
+URL: https://petri-foo.sourceforge.net/
+Source0: https://sourceforge.net/projects/petri-foo/files/Source/%{name}-%{version}.tar.bz2
 BuildRequires: libpng-devel
 BuildRequires: alsa-lib-devel
 BuildRequires: cmake

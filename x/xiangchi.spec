@@ -3,9 +3,8 @@ Version:        0.1
 Release:        15.1
 Summary:        Console Chinese Chess Board
 License:        GPL
-URL:            http://sourceforge.net/projects/xiangchi/
-Source0:        http://sourceforge.net/projects/xiangchi/files/xiangchi/xiangchi-0.1/xiangchi-0.1.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
+URL:            https://sourceforge.net/projects/xiangchi/
+Source0:        https://sourceforge.net/projects/xiangchi/files/xiangchi/xiangchi-0.1/xiangchi-0.1.tar.bz2
 BuildRequires:  gcc-c++
 
 %description

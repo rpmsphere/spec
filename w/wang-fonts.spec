@@ -7,9 +7,9 @@ Release: 5.1
 License: GPLv2
 Group: User Interface/X
 BuildArch: noarch
-#Source0: http://wangfonts.googlecode.com/files/wangfonts-%{version}.tar.gz
+#Source0: https://wangfonts.googlecode.com/files/wangfonts-%{version}.tar.gz
 Source0: %{name}-%{version}.txz
-URL: http://code.google.com/p/wangfonts/
+URL: https://code.google.com/p/wangfonts/
 Requires(post): fontconfig
 
 %description

@@ -7,8 +7,8 @@ Version: 2.6.2
 Release: 1
 Group: Development/Programming
 License: Eclipse Public Licence
-URL: http://x10-lang.org
-Source0: http://downloads.sourceforge.net/project/%{_name}/%{_name}/%{version}/%{_name}-%{version}-src.tar.bz2
+URL: https://x10-lang.org
+Source0: https://downloads.sourceforge.net/project/%{_name}/%{_name}/%{version}/%{_name}-%{version}-src.tar.bz2
 BuildRequires: java-devel-openjdk
 BuildRequires: lua
 BuildRequires: ant

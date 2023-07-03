@@ -6,10 +6,10 @@ Version:	0.6.2.1
 Release:	8.1
 License:	GPL v3
 Group:		Productivity/Office/Finance
-Source0:	http://dl.sourceforge.net/qfaktury/%{name}-0.6.2_1.tar.gz
+Source0:	https://dl.sourceforge.net/qfaktury/%{name}-0.6.2_1.tar.gz
 Source1:	qfaktury.desktop
 Patch0:		remove_local_prefix.patch
-URL:		http://qfaktury.sourceforge.net/
+URL:		https://qfaktury.sourceforge.net/
 BuildRequires:  libpng-devel
 BuildRequires:	gcc-c++ qt4-devel desktop-file-utils
 

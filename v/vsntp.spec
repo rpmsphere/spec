@@ -3,8 +3,8 @@ Version:        2.0.0
 Release:        2.1
 Summary:        SNTP Client for Virtual PC
 License:        GPL
-URL:            http://sourceforge.net/projects/vsntp/
-Source0:        http://sourceforge.net/projects/vsntp/files/vsntp/2.0.0/vsntp-2.0.0.tar.gz 
+URL:            https://sourceforge.net/projects/vsntp/
+Source0:        https://sourceforge.net/projects/vsntp/files/vsntp/2.0.0/vsntp-2.0.0.tar.gz 
 
 %description
 An SNTP client for Virtual PC. It is for machines that do not have a sane time

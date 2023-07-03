@@ -4,8 +4,8 @@ Release:	12.1
 Summary:    	Guitar tabulature editor with playing and printing
 License:	GPLv2
 Group:		Sound/Midi
-URL:        	http://home.gna.org/oomadness/en/songwrite
-Source0:     	http://download.gna.org/songwrite/Songwrite2-%{version}.tar.gz
+URL:        	https://home.gna.org/oomadness/en/songwrite
+Source0:     	https://download.gna.org/songwrite/Songwrite2-%{version}.tar.gz
 BuildRequires:  python2-devel
 Requires:	python-editobj2
 Requires:       hicolor-icon-theme

@@ -3,7 +3,7 @@ Name:			myrpm
 Version: 		5.38
 Release:	   	2	
 License: 		GPL
-URL: 			http://www.jmrenouard.fr/
+URL: 			https://www.jmrenouard.fr/
 Source0: 		%{name}-%{version}.tar.gz
 Group: 			System/Administration
 BuildArch:		noarch

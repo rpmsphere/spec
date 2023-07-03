@@ -2,12 +2,12 @@
 
 Name:         mp3nema
 Summary:      MP3 Steganography Tool
-URL:          http://www.757labs.com/projects/mp3nema/
+URL:          https://www.757labs.com/projects/mp3nema/
 Group:        Steganography
 License:      GPL
 Version:      0.4
 Release:      6.1
-Source0:      http://www.757labs.com/projects/mp3nema/releases/mp3nema-v0_4.tar.gz
+Source0:      https://www.757labs.com/projects/mp3nema/releases/mp3nema-v0_4.tar.gz
 
 %description
 MP3nema is a tool aimed at analyzing and capturing data that is

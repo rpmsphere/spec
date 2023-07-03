@@ -8,7 +8,7 @@ License: GPLv2+
 Group: Sciences/Geosciences
 Source: ftp://ftp.ac-grenoble.fr/ge/geosciences/xrmap/%{name}-%{version}.tar.bz2
 Patch0: xrmap-2.33-fix-str-fmt.patch
-URL: http://frmas.free.fr/li_1.htm
+URL: https://frmas.free.fr/li_1.htm
 BuildRequires:	imake
 BuildRequires:	libX11-devel
 BuildRequires:	bzip2-devel

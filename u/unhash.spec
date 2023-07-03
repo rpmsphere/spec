@@ -1,11 +1,11 @@
 Name:         unhash
 Summary:      MD5/SHA1 Brute-Force Cracking Utility
-URL:          http://www.dxp2532.info/index.php?fid=tools
+URL:          https://www.dxp2532.info/index.php?fid=tools
 Group:        Cryptography
 License:      GPL
 Version:      2.0
 Release:      9.1
-Source0:      http://www.dxp2532.info/tools/unhash-%{version}.tbz
+Source0:      https://www.dxp2532.info/tools/unhash-%{version}.tbz
 BuildRequires: openssl-devel
 
 %description

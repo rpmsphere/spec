@@ -7,8 +7,8 @@ Summary: A game of tank
 Summary(de): uxTank ist ein Spiel bei dem man auf Panzer schießt, für Xwindow
 Group: Games/Arcade
 License: GPL
-URL: http://ux.tank.googlepages.com/home
-Source: http://ux.tank.googlepages.com/uxtank%{version}.tar.xz
+URL: https://ux.tank.googlepages.com/home
+Source: https://ux.tank.googlepages.com/uxtank%{version}.tar.xz
 BuildRequires:	gcc-c++
 BuildRequires:	ghostscript-core ImageMagick
 BuildRequires:	SDL-devel

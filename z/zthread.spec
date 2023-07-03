@@ -6,7 +6,7 @@ Release: 15.1
 Summary: Cross-platform c++ multi-threading framework
 License: MIT
 Group: Development/Libraries
-URL: http://zthread.sourceforge.net/
+URL: https://zthread.sourceforge.net/
 Source: ftp://download.sourceforge.net/pub/sourceforge/zthread/%_name-%version.tar.gz
 
 %description

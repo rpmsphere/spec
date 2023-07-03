@@ -4,10 +4,10 @@ Name:           python-%{modname}
 Version:        4.0.0
 Release:        1
 Summary:        A python module and library of AMG solvers
-URL:            http://code.google.com/p/pyamg/
+URL:            https://code.google.com/p/pyamg/
 License:        See LICENSE.txt
 Group:          Development/Libraries/Python
-Source:         http://pyamg.googlecode.com/files/%{modname}-%{version}.tar.gz
+Source:         https://pyamg.googlecode.com/files/%{modname}-%{version}.tar.gz
 Requires:       python3-scipy numpy
 BuildRequires:  python3-devel
 BuildRequires:	gcc-c++ numpy python3-scipy atlas-devel suitesparse-devel

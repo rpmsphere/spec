@@ -4,8 +4,8 @@ Release:        7.1
 Summary:        A Python library for SVG
 Group:          Development/Libraries
 License:        GPLv3+
-URL:            http://programmer-art.org/projects/svg-utils
-Source0:        http://programmer-art.org/media/releases/svg-utils/%{name}-%{version}.tar.bz2
+URL:            https://programmer-art.org/projects/svg-utils
+Source0:        https://programmer-art.org/media/releases/svg-utils/%{name}-%{version}.tar.bz2
 BuildRequires:  python2
 BuildArch:	noarch
 

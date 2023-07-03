@@ -6,7 +6,7 @@ Version: 3.0.5
 Release: 3.1
 License: CC BY-NC-ND 3.0
 Group: User Interface/Desktops
-URL: http://deviantn7k1.deviantart.com/art/Nitrux-OS-Icons-293634207
+URL: https://deviantn7k1.deviantart.com/art/Nitrux-OS-Icons-293634207
 Source: nitrux.zip
 BuildArch: noarch
 

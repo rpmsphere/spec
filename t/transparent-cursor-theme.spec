@@ -7,7 +7,7 @@ License:        GPL
 Group:          System/X11/Icons
 Source:         xcursor-transparent-theme-0.1.1.tar.gz
 Patch:          xcursor-transparent-theme-install-0.1.1.diff
-URL:            http://matchbox-project.org/sources/utils/
+URL:            https://matchbox-project.org/sources/utils/
 
 %description
 This package contains a totally transparent X11 Cursor theme. Using

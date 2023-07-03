@@ -8,7 +8,7 @@ Release:	5.1
 Summary:	Minimum-Profit Text Editor
 Group:		Editors
 License:	GPLv2
-URL:		http://triptico.com/software/mp.html
+URL:		https://triptico.com/software/mp.html
 Source0:	https://github.com/angelortega/mp-5.x/archive/%{version}/mp-%{version}.tar.gz
 Source1:	https://github.com/angelortega/mpdm/archive/%{mpdm_ver}/mpdm-%{mpdm_ver}.tar.gz
 Source2:	https://github.com/angelortega/mpsl/archive/%{mpsl_ver}/mpsl-%{mpsl_ver}.tar.gz
@@ -18,7 +18,7 @@ BuildRequires:	flex
 BuildRequires:	byacc
 #BuildRequires:	mp_doccer
 BuildRequires:	pcre-devel
-BuildRequires:	qt5-devel
+BuildRequires:	qt5-qtbase-devel
 BuildRequires:	ncurses-devel
 #BuildRequires:	grutatxt
 BuildRequires:	glibc-devel

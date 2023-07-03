@@ -3,7 +3,7 @@ Version:	0.6.2
 Release:	22.1
 License:	Free to use
 Summary:	A free media server
-URL:		http://www.serviio.org/
+URL:		https://www.serviio.org/
 Group:		Productivity/Multimedia/Other
 Source:		%{name}-%{version}-linux.tar.gz
 Source1:	serviio.service
@@ -12,7 +12,6 @@ BuildRequires:	tar gzip
 BuildRequires: systemd
 BuildRequires: dos2unix
 Requires:   java >= 1.6.0
-BuildRoot:  %{_tmppath}/%{name}-%{version}-build
 BuildArch:	noarch
 
 %description
@@ -49,7 +48,6 @@ install -D -m 644 %{S:1} $RPM_BUILD_ROOT/%{_unitdir}/serviio.service
 #service_add_post serviio.service
 
 %files
-%defattr(-,root,root)
 %doc legal/Derby-licence.txt legal/FFmpeg-licence.txt legal/FreeMarker-licence.txt legal/Gson-licence.txt legal/HttpCore-licence.txt legal/Jcs-licence.txt legal/JDOM-licence.txt legal/LameMP3Encoder-licence.txt legal/librtmp-licence.txt legal/LICENSE.xerox legal/Log4J-licence.txt legal/Restlet-licence.txt legal/Rome-licence.txt legal/Sanselan-licence.txt legal/slf4j-licence.txt legal/winp-licence.txt legal/XStream-licence.txt LICENCE.txt NOTICE.txt README.txt RELEASE_NOTES.txt
 %{_bindir}/serviio.sh
 %{_bindir}/serviio-console.sh

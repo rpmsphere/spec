@@ -6,7 +6,7 @@ Version: 2.4
 Release: 1
 License: GPL
 Group: Amusements/Games
-URL: http://www.parallelrealities.co.uk/starfighter.php
+URL: https://www.parallelrealities.co.uk/starfighter.php
 # No absolute URL since the home page tunnels it through a PHP script
 Source0: starfighter-%{version}-src.tar.gz
 Source1: starfighter.png
@@ -75,22 +75,22 @@ desktop-file-install \
 %changelog
 * Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
 - Rebuilt for Fedora
-* Thu Jun 14 2007 Matthias Saou <http://freshrpms.net/> 1.1-9
+* Thu Jun 14 2007 Matthias Saou <https://freshrpms.net/> 1.1-9
 - Move binary and data to "proper" locations by updating patch (#229197).
-* Mon Aug 28 2006 Matthias Saou <http://freshrpms.net/> 1.1-8
+* Mon Aug 28 2006 Matthias Saou <https://freshrpms.net/> 1.1-8
 - FC6 rebuild.
-* Mon Mar  6 2006 Matthias Saou <http://freshrpms.net/> 1.1-7
+* Mon Mar  6 2006 Matthias Saou <https://freshrpms.net/> 1.1-7
 - FC5 rebuild.
-* Thu Feb  9 2006 Matthias Saou <http://freshrpms.net/> 1.1-6
+* Thu Feb  9 2006 Matthias Saou <https://freshrpms.net/> 1.1-6
 - Rebuild for new gcc/glibc.
 - Clean up spec file a little (desktop file conditional).
 * Sun May 22 2005 Jeremy Katz <katzj@redhat.com> - 1.1-5
 - rebuild on all arches
 * Thu Apr  7 2005 Michael Schwendt <mschwendt[AT]users.sf.net>
 - rebuilt
-* Wed Jan  5 2005 Matthias Saou <http://freshrpms.net/> 1.1-3
+* Wed Jan  5 2005 Matthias Saou <https://freshrpms.net/> 1.1-3
 - Fix desktop_vendor in the desktop file name (#143285).
-* Tue Nov 16 2004 Matthias Saou <http://freshrpms.net/> 1.1-2
+* Tue Nov 16 2004 Matthias Saou <https://freshrpms.net/> 1.1-2
 - Bump release to provide Extras upgrade path.
-* Tue Jun  8 2004 Matthias Saou <http://freshrpms.net/> 1.1-1
+* Tue Jun  8 2004 Matthias Saou <https://freshrpms.net/> 1.1-1
 - Initial RPM release.

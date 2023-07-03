@@ -4,7 +4,7 @@ Release:        7.1
 Summary:        The Moon in focus
 License:        SUSE-Public-Domain
 Group:          Productivity/Scientific/Astronomy
-URL:            http://www.fourmilab.ch/earthview/vplanet.html
+URL:            https://www.fourmilab.ch/earthview/vplanet.html
 Source0:        xmoontool-22sep94.tar.gz
 Source1:        xmoontool.desktop
 Patch0:         xmoontool-22sep94.patch

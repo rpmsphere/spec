@@ -7,7 +7,7 @@ Release: 11.1
 License: GPLv2+
 Group: User Interface/Desktops
 Source0: https://rsm.website/software/gnu-linux/repository/pool/main/g/gtk-theme-vaew/gtk-theme-vaew_2.2~0_all.deb
-Source1: http://tubeguy.org/puppybg/Honeycomb_wallpaper-1600x1200.jpg
+Source1: https://tubeguy.org/puppybg/Honeycomb_wallpaper-1600x1200.jpg
 Source2: VAEW-index.theme
 URL: https://rsm.website/software/gnu-linux/software/gtk-theme-vaew/
 BuildArch: noarch

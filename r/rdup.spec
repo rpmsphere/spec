@@ -2,12 +2,12 @@
 
 Name:         rdup
 Summary:      Filesystem Tree Change Discovery Tool
-URL:          http://www.miek.nl/projects/rdup/
+URL:          https://www.miek.nl/projects/rdup/
 Group:        Filesystem
 License:      GPL
 Version:      1.1.15
 Release:      1
-Source0:      http://www.miek.nl/projects/rdup/rdup-%{version}.tar.gz
+Source0:      https://www.miek.nl/projects/rdup/rdup-%{version}.tar.gz
 BuildRequires: glib2-devel
 BuildRequires: pcre-devel
 

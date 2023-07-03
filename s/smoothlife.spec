@@ -2,10 +2,10 @@ Summary:          A generalization of Conway's Game of Life
 Name:             smoothlife
 Version:          004
 Release:          6.1
-URL:              http://sourceforge.net/projects/smoothlife/
+URL:              https://sourceforge.net/projects/smoothlife/
 License:          GPLv2
 Group:		  Amusements/Games
-Source:           http://sourceforge.net/projects/smoothlife/files/SmoothLifeAll%{version}.zip
+Source:           https://sourceforge.net/projects/smoothlife/files/SmoothLifeAll%{version}.zip
 Source1:	  %{name}.desktop
 Source2:	  %{name}.png
 Source3:	  Courier.ttf

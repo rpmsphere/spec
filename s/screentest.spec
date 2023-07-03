@@ -4,8 +4,8 @@ Version: 2.0
 Release: 5.1
 License: GPLv2
 Group: System/X11
-Source: http://downloads.sourceforge.net/project/%{name}/%{name}/%{version}/%{name}-%{version}.tar.gz
-URL: http://sourceforge.net/projects/%{name}/
+Source: https://downloads.sourceforge.net/project/%{name}/%{name}/%{version}/%{name}-%{version}.tar.gz
+URL: https://sourceforge.net/projects/%{name}/
 BuildRequires: pkgconfig(gtk+-2.0)
 BuildRequires: pkgconfig(libglade-2.0)
 

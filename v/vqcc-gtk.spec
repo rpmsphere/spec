@@ -4,9 +4,8 @@ Version: 0.5
 Release: 5.1
 License: GPL
 Group: Applications/Communications
-Source: http://sourceforge.net/projects/vqcc-gtk/files/%{name}/%{version}/%{name}-%{version}.tar.gz
-URL: http://vqcc-gtk.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-root
+Source: https://sourceforge.net/projects/vqcc-gtk/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+URL: https://vqcc-gtk.sourceforge.net/
 BuildRequires: gtk2-devel
 
 %description
@@ -31,7 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
 %doc AUTHORS COPYING ChangeLog NEWS README TODO
 %{_bindir}/vqcc-gtk
 %{_datadir}/locale/*/LC_MESSAGES/vqcc-gtk.mo

@@ -2,11 +2,10 @@ Name:				tscat
 Version:			1.0
 Release:			2.1
 Summary:			Simple Filter that adds Timestamps to Stdin
-Source:			http://www.gerg.ca/software/tscat/tscat-%{version}.tar.gz
-URL:				http://www.gerg.ca/software/tscat/
+Source:			https://www.gerg.ca/software/tscat/tscat-%{version}.tar.gz
+URL:				https://www.gerg.ca/software/tscat/
 Group:			Productivity/Text/Utilities
 License:			MIT/X Consortium License
-BuildRoot:		%{_tmppath}/build-%{name}-%{version}
 BuildRequires:	gcc make glibc-devel
 BuildRequires:	autoconf automake libtool
 
@@ -36,7 +35,6 @@ since the previous line (previous timestamp).
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc README
 %{_bindir}/tscat
 %doc %{_mandir}/man1/tscat.1*

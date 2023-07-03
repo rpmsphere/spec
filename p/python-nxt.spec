@@ -5,8 +5,8 @@ Release:	4.1
 Summary:	A pure-python driver/interface/wrapper for the Lego Mindstorms NXT robot
 Group:		Applications/Engineering
 License:	GPLv2+
-URL:		http://code.google.com/p/nxt-python/
-Source0:	http://nxt-python.googlecode.com/files/nxt-python-%{version}.tar.gz
+URL:		https://code.google.com/p/nxt-python/
+Source0:	https://nxt-python.googlecode.com/files/nxt-python-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python2-devel
 Requires:	pybluez, pyusb, pygtk2

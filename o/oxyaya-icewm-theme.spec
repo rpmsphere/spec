@@ -4,8 +4,8 @@ Version:	0.1
 Release:	9.1
 License:	GPL
 Group:		Graphical desktop/Icewm
-URL:		http://box-look.org/content/show.php/OxyAya?content=136242
-Source0:	http://box-look.org/CONTENT/content-files/136242-oxygen-aya-azul.tar.gz
+URL:		https://box-look.org/content/show.php/OxyAya?content=136242
+Source0:	https://box-look.org/CONTENT/content-files/136242-oxygen-aya-azul.tar.gz
 BuildArch: noarch
 BuildRequires:  ghostscript-core ImageMagick
 

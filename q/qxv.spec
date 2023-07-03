@@ -4,8 +4,8 @@ Release:        7.1
 Summary:        Modern Rewrite of the Classic "xv"
 License:        GPL-2.0
 Group:          Productivity/Graphics/Viewers
-URL:            http://labs.freehackers.org/projects/qxv/
-Source0:        http://labs.freehackers.org/attachments/download/422/%{name}-%{version}.tar.bz2
+URL:            https://labs.freehackers.org/projects/qxv/
+Source0:        https://labs.freehackers.org/attachments/download/422/%{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
 BuildRequires:  desktop-file-utils
 BuildRequires:  qt-devel

@@ -4,7 +4,7 @@ Name:		textroom
 Version:	0.8.2
 Release:	14.4
 License:	GPLv3
-URL:		http://code.google.com/p/textroom/
+URL:		https://code.google.com/p/textroom/
 BuildRequires:  libpng-devel
 BuildRequires:	qt4-devel 
 BuildRequires:	SDL-devel 
@@ -15,7 +15,7 @@ BuildRequires:  curl-devel
 BuildRequires:  libxml++-devel
 BuildRequires:  xdg-utils
 BuildRequires:	gcc-c++
-Source:		http://textroom.googlecode.com/files/%name-%version.tar.gz
+Source:		https://textroom.googlecode.com/files/%name-%version.tar.gz
 Patch1:		textroom-0.8.2-fix-libdir.patch
 Patch2:		textroom-0.8.2-fix-desktop.patch
 Group:		Applications/Editors

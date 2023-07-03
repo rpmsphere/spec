@@ -4,8 +4,8 @@ Version: 2.0
 Release: 3.1
 Group: System Environment/Daemons
 License: GPL
-URL: http://www.vx68k.org/xllmnrd
-Source0: http://sourceforge.net/projects/xllmnrd/files/%{name}-%{version}.tar.gz
+URL: https://www.vx68k.org/xllmnrd
+Source0: https://sourceforge.net/projects/xllmnrd/files/%{name}-%{version}.tar.gz
 
 %description
 xllmnrd allows Microsoft Windows clients to get the IPv6 address of a GNU/Linux

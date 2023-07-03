@@ -3,7 +3,7 @@ Version:	2.5.5
 Release:	1
 Summary:	Easy to use dynamic web content management system written in PHP
 License:	GPL
-URL:		http://www.xoops.org/
+URL:		https://www.xoops.org/
 Group:		Productivity/Networking
 Source0:	%{name}-%{version}.tar.gz
 BuildArch:	noarch
@@ -28,7 +28,7 @@ community websites, intra company and corporate portals, weblogs and much more.
 %__rm -rf %{buildroot}
 
 %files
-%defattr(-,apache,apache)
+ %defattr(-,apache,apache)
 /var/www/html/%{name}
 
 %changelog

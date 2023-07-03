@@ -2,8 +2,8 @@ Name: 	 	python2-antennadtv
 Summary: 	A dvb-t tuner for linux desktops
 Version: 	0.11.01.20
 Release: 	3.1
-Source:		http://sourceforge.net/projects/antenna-dtv/files/antenna-dtv_%{version}-0_all/antenna-dtv-%{version}.tar
-URL:		http://antenna-dtv.sourceforge.net/
+Source:		https://sourceforge.net/projects/antenna-dtv/files/antenna-dtv_%{version}-0_all/antenna-dtv-%{version}.tar
+URL:		https://antenna-dtv.sourceforge.net/
 License:	GPLv2
 Group:		Applications/Multimedia
 BuildRequires: python-devel

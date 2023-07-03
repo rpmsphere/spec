@@ -4,7 +4,7 @@ Release:        10.1
 Summary:        Super awesome task management
 License:        BSD
 Group:          Applications/Productivity
-URL:            http://nitrotasks.com/
+URL:            https://nitrotasks.com/
 Source:         https://github.com/downloads/stayradiated/Nitro/nitrotasks-%{version}.tar.gz
 Source1:        %{name}.desktop
 Patch1:         nitrotasks-1.5.fc17.1.patch
@@ -18,7 +18,7 @@ BuildArch:  noarch
 Nitro is a super awesome, simple and fast task management application. Nitro packs
 a bunch of awesome features such as smart lists, notes, due dates, search and more.
 Authors:
-Copyright (C) 2012 Caffeinated Code <http://caffeinatedco.de>
+Copyright (C) 2012 Caffeinated Code <https://caffeinatedco.de>
 Copyright (C) 2012 Jono Cooper
 Copyright (C) 2012 George Czabania
 

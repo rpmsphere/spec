@@ -6,13 +6,13 @@ Version:        2008.10.11
 Release:        2.1
 License:        Creative Commons by
 Group:          User Interface/Desktops
-URL:            http://kde-look.org/content/show.php/sketch?content=91087
-Source0:        http://kde-look.org/CONTENT/content-files/91087-sketch.tar.gz
+URL:            https://kde-look.org/content/show.php/sketch?content=91087
+Source0:        https://kde-look.org/CONTENT/content-files/91087-sketch.tar.gz
 BuildArch:      noarch
 
 %description
 original work of cibiboi
-http://cibiboi.deviantart.com/art/Sketch-CursorXP-76819267
+https://cibiboi.deviantart.com/art/Sketch-CursorXP-76819267
 
 %prep
 %setup -q -n sketch

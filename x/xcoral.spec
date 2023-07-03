@@ -7,7 +7,7 @@ Group:          Productivity/Editors/Other
 Summary:        X11 Editor with C/C++/Java Browser and lots more
 Version:        3.50.2
 Release:        1
-URL:            http://xcoral.free.fr/
+URL:            https://xcoral.free.fr/
 Source0:        %{name}-%{version}.tar.gz
 Patch0:         xcoral-3.47.configure.diff
 Patch1:         xcoral-arraysubscript.patch

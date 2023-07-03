@@ -6,8 +6,8 @@ Version: 2.2b
 Release: 5.1
 License: GPL
 Group: Amusements/Games
-URL: http://www.gedanken.org.uk/software/xbomb/
-Source: http://www.gedanken.org.uk/software/xbomb/download/%{name}-%{version}.tgz
+URL: https://www.gedanken.org.uk/software/xbomb/
+Source: https://www.gedanken.org.uk/software/xbomb/download/%{name}-%{version}.tgz
 BuildRequires: libX11-devel, libXaw-devel
 
 %description

@@ -4,8 +4,8 @@ Version: 0.8.7
 Release: 4
 License: GPLv2
 Group: System/Packaging
-URL: http://dag.wieers.com/home-made/mrepo/
-Source: http://dag.wieers.com/home-made/mrepo/mrepo-%{version}.tar.bz2
+URL: https://dag.wieers.com/home-made/mrepo/
+Source: https://dag.wieers.com/home-made/mrepo/mrepo-%{version}.tar.bz2
 Patch0: mrepo-0.8.6-lsb-init.patch
 BuildArch: noarch
 Requires: python2, createrepo

@@ -3,16 +3,15 @@ Summary:        Educational point-and-click software for young children
 Version:        3.1c
 Release:        7.1
 Group:          Applications/Education
-URL:            http://www.pysycache.org/
+URL:            https://www.pysycache.org/
 License:        GPL, GPLv2
-Source0:        http://download.tuxfamily.org/py4childs/pysycache/v3.1/%{name}-src-%{version}.zip
+Source0:        https://download.tuxfamily.org/py4childs/pysycache/v3.1/%{name}-src-%{version}.zip
 Patch0:         pysycache-desktop.patch
 Patch1:         pysycache-lang-de.patch
 Patch2:         pysycache-lang-es.patch
 Patch3:         pysycache-console_encoding.patch
 Patch4:         pysycache-fast_quitting.patch
 Patch5:         pysycache-no-return-in-nonvoid-function.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildArch:      noarch
 %description
 PySyCache is an educational software for the young children (4-7 years old)
@@ -69,7 +68,6 @@ mkdir -p %{buildroot}/var/games/%{name}/{users,themes-move,themes-click,themes-d
 rm -rf %buildroot
 
 %files
-%defattr(-,root,root)
 %doc %{_defaultdocdir}/%{name}
 %{_bindir}/%{name}
 %dir %{_sysconfdir}/pysycache

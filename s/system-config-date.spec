@@ -27,11 +27,11 @@ Summary: A graphical interface for modifying system date and time
 Name: system-config-date
 Version: 1.10.9
 Release: 2.1
-URL: http://fedorahosted.org/%{name}
+URL: https://fedorahosted.org/%{name}
 License: GPLv2+
 Group: System Environment/Base
 BuildArch: noarch
-Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
+Source0: https://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
 # Until version 1.9.34, system-config-date contained online documentation.
 # From version 1.9.35 on, online documentation is split off into its own
 # package system-config-date-docs. The following ensures that updating from

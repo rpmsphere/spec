@@ -5,9 +5,9 @@ Version:        0.2.1
 Release:        20.1
 License:        GPLv3
 Summary:        A tool to benchmark Qt graphics performance
-URL:            http://code.google.com/p/qtperf/
+URL:            https://code.google.com/p/qtperf/
 Group:          System/Benchmark
-Source0:        http://qtperf.googlecode.com/files/%{name}-%{version}.tar.gz
+Source0:        https://qtperf.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 BuildRequires:  qt-devel
 

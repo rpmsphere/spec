@@ -3,10 +3,10 @@ Summary:	A listening comprehension tutor
 Name:		perroquet
 Version:	1.1.1
 Release:	9.1
-Source0:	http://launchpad.net/perroquet/1.1/1.1.1/+download/%{name}-%{version}.tar.gz
+Source0:	https://launchpad.net/perroquet/1.1/1.1.1/+download/%{name}-%{version}.tar.gz
 License:	GPLv3
 Group:		Education
-URL:		http://perroquet.b219.org
+URL:		https://perroquet.b219.org
 BuildRequires:	python2-devel
 BuildRequires:	intltool
 BuildRequires:	python2-setuptools

@@ -4,7 +4,7 @@ Version: 0.4
 Release: 1
 Group: text
 License: Free Software
-URL: http://ptex2tex.googlecode.com
+URL: https://ptex2tex.googlecode.com
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: python2-devel

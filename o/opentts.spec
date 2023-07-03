@@ -5,8 +5,8 @@ Version:       0.1
 Release:       7.4
 Summary:       A text-to-speech framework for POSIX operating systems
 Group:         Applications/Accessibility
-URL:           http://www.opentts.org
-Source:        http://files.opentts.org/opentts/opentts-%{version}.tar.gz
+URL:           https://www.opentts.org
+Source:        https://files.opentts.org/opentts/opentts-%{version}.tar.gz
 License:       LGPL
 BuildRequires: glib2-devel
 BuildRequires: alsa-lib-devel

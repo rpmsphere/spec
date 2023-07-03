@@ -5,8 +5,8 @@ Version: 0.16
 Release: 3.1
 Group: Applications/Education
 License: GPLv3
-URL: http://code.google.com/p/pynguin/
-Source0: http://pynguin.googlecode.com/files/%{name}-%{version}.tgz
+URL: https://code.google.com/p/pynguin/
+Source0: https://pynguin.googlecode.com/files/%{name}-%{version}.tgz
 BuildRequires: python2-devel
 BuildArch: noarch
 Requires: PyQt4

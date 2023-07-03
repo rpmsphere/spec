@@ -6,8 +6,8 @@ Version: 1.3
 Release: 9.1
 Group: Amusements/Graphics
 License: GPL
-URL: http://kozos.jp/myfreesoft/#11
-Source0: http://kozos.jp/myfreesoft/%{name}-%{version}.tar.gz
+URL: https://kozos.jp/myfreesoft/#11
+Source0: https://kozos.jp/myfreesoft/%{name}-%{version}.tar.gz
 BuildRequires: libX11-devel
 
 %description

@@ -6,7 +6,7 @@ Release: 9.4
 Summary: Schedule events and remind the user of stuff to be done
 License: GPLv2
 Group:   Applications/Productivity
-URL:     http://souffleur.sourceforge.net/
+URL:     https://souffleur.sourceforge.net/
 Source: %{name}_%{version}.tar.gz
 BuildRequires: libpng-devel
 BuildRequires: pkgconfig(QtGui) >= 4.7.2

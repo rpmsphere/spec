@@ -7,7 +7,7 @@ Release: 14.1
 License: open source
 Group: Development/Languages
 URL: https://github.com/google/szl
-Source0: szl-master.zip
+Source0: sawzall-master.zip
 BuildRequires: protobuf-devel
 BuildRequires: pcre-devel
 BuildRequires: openssl-devel

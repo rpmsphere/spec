@@ -5,7 +5,7 @@ Version: 0.3
 Release: 3.1
 License: Apache License 2.0
 Group: misc
-URL: http://termsaver.brunobraga.net
+URL: https://termsaver.brunobraga.net
 Source0: https://github.com/brunobraga/termsaver/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires:  python2

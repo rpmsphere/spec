@@ -6,7 +6,7 @@ Version: 0.3.0.4
 Release: 4.1
 License: GPL
 Group: Applications/System
-URL: http://www.namesys.com
+URL: https://www.namesys.com
 Source: ftp://ftp.namesys.com/pub/libreiserfs/progsreiserfs-0.3.0.4.tar.gz
 
 %description

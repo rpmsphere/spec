@@ -5,9 +5,8 @@ Summary:        Serial line sniffer
 
 Group:          Applications/Communications
 License:        GPLv2+
-URL:            http://slsnif.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+URL:            https://slsnif.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 
 %description
 Serial line sniffer (slsnif). slsnif is a serial port logging utility. It
@@ -29,7 +28,6 @@ make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 rm -rf $RPM_BUILD_ROOT
 
 %files 
-%defattr(-,root,root,-)
 %doc AUTHORS ChangeLog COPYING NEWS README TODO slsnifrc-example
 %{_mandir}/man*/%{name}.1*
 %{_bindir}/%{name}

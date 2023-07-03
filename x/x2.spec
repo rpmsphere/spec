@@ -5,7 +5,7 @@ Release: 7.1
 License: BSD
 Group: Applications/Editors
 URL: https://launchpad.net/debian/+source/x2/
-Source: http://gtk-apps.org/CONTENT/content-files/145463-x2-1.1.0.tar.gz
+Source: https://gtk-apps.org/CONTENT/content-files/145463-x2-1.1.0.tar.gz
 BuildRequires: gtk2-devel, gtksourceview2-devel, vte-devel
 
 %description

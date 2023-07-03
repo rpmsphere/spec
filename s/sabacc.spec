@@ -5,8 +5,8 @@ Release:	1
 Summary:	Card game for two or more players that is similar to Blackjack
 Group:		Amusements/Games
 License:	GPL
-URL:		http://sabacc.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/sabacc/sabacc-1.0-beta1.tar.gz
+URL:		https://sabacc.sourceforge.net/
+Source0:	https://downloads.sourceforge.net/sabacc/sabacc-1.0-beta1.tar.gz
 BuildArch:	noarch
 
 %description

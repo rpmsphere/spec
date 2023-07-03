@@ -3,7 +3,7 @@ Name:          universal-applets-extras
 Version:       0.1bzr172
 Release:       1
 License:       GPL
-URL:           http://www.screenlets.org/index.php/Home
+URL:           https://www.screenlets.org/index.php/Home
 Summary:       OsX Like Dashboard
 Group:         System/X11/Utilities
 # to get the newest source use

@@ -5,8 +5,8 @@ Epoch:          26
 Summary:        A native X Window based debugger for C, C++ and Fortran
 Group:          Development/Debuggers
 License:        GPLv2+ and LGPLv2+
-URL:            http://ups.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/ups/ups-3.38-beta2.tar.gz
+URL:            https://ups.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/ups/ups-3.38-beta2.tar.gz
 Patch0:         ups-cvs.patch
 Patch1:         ups-struct-patch
 Patch2:         ups-pisameas-patch
@@ -82,5 +82,5 @@ rm -rf $RPM_BUILD_ROOT
 * Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.38
 - Rebuilt for Fedora
 * Thu Mar 18 2010 Steve Webb <bigwebb@gmail.com>
-- http://badcheese.com/2010/08/03/ups-debugger.html
+- https://badcheese.com/2010/08/03/ups-debugger.html
 - Initial package

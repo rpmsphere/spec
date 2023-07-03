@@ -6,8 +6,8 @@ Release:        1
 License:        LGPLv3+
 Summary:        XML parser
 Group:          Development/Libraries/Other
-URL:            http://birdfont.org/xmlbird.php
-Source0:        http://birdfont.org/xmlbird-releases/lib%{name}-%{version}.tar.xz
+URL:            https://birdfont.org/xmlbird.php
+Source0:        https://birdfont.org/xmlbird-releases/lib%{name}-%{version}.tar.xz
 BuildRequires:  python3 python
 BuildRequires:  vala
 BuildRequires:  glib2-devel

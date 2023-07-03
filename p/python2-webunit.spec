@@ -7,7 +7,7 @@ Release:   2.1
 Source0:   %{_name}-%{version}.tar.gz
 License:   BSD
 Group:     Development/Libraries/Python
-URL:       http://mechanicalcat.net/tech/webunit/
+URL:       https://mechanicalcat.net/tech/webunit/
 BuildRequires: python2 python2-devel
 BuildArch: noarch
 

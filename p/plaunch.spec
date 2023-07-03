@@ -6,8 +6,8 @@ Release:        1
 Summary:        A shortcuts management and quickly running tool
 Group:          System/Internationalization
 License:        GPLv2
-URL:            http://code.google.com/p/plaunch/
-Source0:        http://plaunch.googlecode.com/files/%{_name}_V%{version}.tgz
+URL:            https://code.google.com/p/plaunch/
+Source0:        https://plaunch.googlecode.com/files/%{_name}_V%{version}.tgz
 BuildRequires:	ImageMagick
 Requires:	pygtk2 python2-xlib python2
 BuildArch:      noarch

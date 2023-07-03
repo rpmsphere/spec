@@ -6,8 +6,8 @@ Release: 4.1
 Summary:    A SQLite database manager
 License:    GPLv2
 Group:      System/Configuration/Other
-URL:        http://sqlitestudio.one.pl/
-Source0:    http://sqlitestudio.pl/files/sqlitestudio3/complete/tar/%{name}-%{version}.tar.gz
+URL:        https://sqlitestudio.one.pl/
+Source0:    https://sqlitestudio.pl/files/sqlitestudio3/complete/tar/%{name}-%{version}.tar.gz
 BuildRequires: sqlite-devel
 BuildRequires: readline-devel
 BuildRequires: qt5-qtscript-devel

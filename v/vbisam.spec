@@ -6,8 +6,8 @@ Release:	12.1
 Summary:	ISAM file handler
 Group:		Development/Languages/Other
 License:	GPLv2+ and LGPLv2+
-URL:		http://sourceforge.net/projects/vbisam
-Source:		http://dl.sourceforge.net/project/vbisam/vbisam2/%{name}-%{version}.tar.gz
+URL:		https://sourceforge.net/projects/vbisam
+Source:		https://dl.sourceforge.net/project/vbisam/vbisam2/%{name}-%{version}.tar.gz
 BuildRequires:	libtool
 
 %description

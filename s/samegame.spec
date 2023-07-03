@@ -6,7 +6,7 @@ Release:	4.1
 Summary:	Qt implementation of SameGame
 Group:		Amusements/Games
 License:	GPLv3
-URL:		http://samegame.sourceforge.net/
+URL:		https://samegame.sourceforge.net/
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	qt-devel
 

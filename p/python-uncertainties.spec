@@ -6,7 +6,7 @@ Version:        3.1.5
 Release:        1
 Summary:        Transparent calculations with uncertainties
 License:        GPL-2
-URL:            http://packages.python.org/uncertainties/
+URL:            https://packages.python.org/uncertainties/
 Group:          Development/Libraries/Python
 Source:         https://pypi.python.org/packages/source/u/uncertainties/%{pyname}-%{version}.tar.gz
 BuildArch:      noarch

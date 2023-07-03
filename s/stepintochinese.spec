@@ -7,7 +7,7 @@ Summary:        Step Into Chinese is a flexible language-mining tool to assist E
 Group:          Educations/Games
 License:        LGPL
 URL:            https://wiki.mozilla.org/Special:Search?search=i18n&go=Go
-Source0:        http://www.asymptopia.org/filemgmt_data/files/%{pkg_name}-%{version}.tgz
+Source0:        https://www.asymptopia.org/filemgmt_data/files/%{pkg_name}-%{version}.tgz
 Requires:       python2, pygame
 BuildArch:	noarch
 

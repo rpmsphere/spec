@@ -6,12 +6,12 @@ Version: 	1.1.3
 Release: 	1
 License: 	GPLv2+
 Group: 		Games/Puzzles
-Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:	https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 # Don't install something to /usr/X11R6 - AdamW 2008/09
 Patch0:		pathological-1.1.3-location.patch
 # fix #35077
 Patch1:     pathological-1.1.3-fix_encoding.patch
-URL: 		http://pathological.sourceforge.net/
+URL: 		https://pathological.sourceforge.net/
 BuildRequires:	netpbm
 BuildRequires:	ImageMagick
 Requires:	pygame

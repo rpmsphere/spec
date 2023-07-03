@@ -9,7 +9,7 @@ Group:          Productivity/Publishing/PDF
 Obsoletes:      pdf2html
 Provides:       pdf2html
 License:        LGPL v2.1 or later
-URL:            http://pdftohtml.sourceforge.net/
+URL:            https://pdftohtml.sourceforge.net/
 Source0:        %name-%{version}.tar.bz2
 Patch0:         pdftohtml-tmpfile.diff
 Patch1:         xpdf-CESA-2004-007.diff

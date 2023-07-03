@@ -4,8 +4,8 @@ Version: 1.93
 Release: 16.4
 License: GPL
 Group: Amusements/Graphics
-URL: http://www.seehuhn.de/pages/sanduhr
-Source: http://m.seehuhn.de/programs/%{name}-%{version}.tar.gz
+URL: https://www.seehuhn.de/pages/sanduhr
+Source: https://m.seehuhn.de/programs/%{name}-%{version}.tar.gz
 BuildRequires: gtk2-devel
 BuildRequires: libgnomeui-devel
 BuildRequires: libbonobo-devel

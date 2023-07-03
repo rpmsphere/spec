@@ -5,8 +5,8 @@ Version:        0.2
 Release:        4.1
 Summary:        Simple PyGTK Docking Widgets
 License:        GPLv2
-URL:            http://pypi.python.org/pypi/etk.docking
-Source0:        http://pypi.python.org/packages/source/e/%{package_name}/%{package_name}-%{version}.tar.gz
+URL:            https://pypi.python.org/pypi/etk.docking
+Source0:        https://pypi.python.org/packages/source/e/%{package_name}/%{package_name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python2
 BuildRequires:  python2-setuptools

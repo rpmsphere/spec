@@ -4,7 +4,7 @@ Release: 3.1
 Summary: Jump-jump game for X
 License: GPL
 Group: Games/Arcade
-URL: http://packages.debian.org/xjump
+URL: https://packages.debian.org/xjump
 Source: %name-%version.tar.bz2
 BuildRequires: libX11-devel libXaw-devel libICE-devel libXext-devel libXpm-devel
 

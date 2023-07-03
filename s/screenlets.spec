@@ -2,7 +2,7 @@ Name:           screenlets
 Version:        0.1.2
 Release:        1
 License:        GPL
-URL:            http://www.screenlets.org/index.php/Home
+URL:            https://www.screenlets.org/index.php/Home
 Summary:        OsX Like Dashboard
 Group:          System/X11/Utilities
 Source:         screenlets_0.1.2.tar.gz

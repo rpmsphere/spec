@@ -7,7 +7,7 @@ Summary:        An application for mouse and keyboard statistics
 Group:          Applications/System
 License:        GPLv2+
 URL:            https://launchpad.net/pyinputstats
-Source0:        http://launchpad.net/%{name}/trunk/1.0/+download/%{srcname}-%{version}.tar.gz
+Source0:        https://launchpad.net/%{name}/trunk/1.0/+download/%{srcname}-%{version}.tar.gz
 Source1:        %{name}.desktop
 BuildArch:      noarch
 BuildRequires:  python2-devel

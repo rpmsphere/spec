@@ -7,7 +7,7 @@ Summary:			 Poker Tournament Clock
 Source:			 pokerclock-%{version}.tar.bz2
 Patch1:         pokerclock-fix_cmake.patch
 Patch2:         pokerclock-fix_paths.patch
-URL:				 http://sourceforge.net/projects/pokerclock/
+URL:				 https://sourceforge.net/projects/pokerclock/
 Group:			 Amusements/Games
 License:			 GNU General Public License version 2 or later (GPL v2 or later)
 BuildRequires:   libpng-devel

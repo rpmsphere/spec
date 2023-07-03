@@ -6,7 +6,7 @@ Name:		schat
 Version:	0.8.6.3549
 Release:	7.1
 Summary:	IMPOMEZIA Simple Chat
-URL:		http://impomezia.com/project/schat
+URL:		https://impomezia.com/project/schat
 License:	GPLv3+
 Group:		Networking/Chat
 Source0:	%name-%version.tar.bz2
@@ -126,7 +126,7 @@ service %{name}d condstop
 - 0.8.2.1629 released
 
 * Tue May 24 2011 Repocop Q. A. Robot <repocop@altlinux.org> 0.8.1-alt1.svn1452.qa1
-- NMU (by repocop). See http://www.altlinux.org/Tools/Repocop
+- NMU (by repocop). See https://www.altlinux.org/Tools/Repocop
 - applied repocop fixes:
   * specfile-macros-get_dep-is-deprecated for schat
   * postclean-03-private-rpm-macros for the spec file

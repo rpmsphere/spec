@@ -4,9 +4,9 @@ Release:	12.1
 Summary:	Software dedicated to viewing and analyzing antennas
 Group:		Sciences/Physics 
 License:	GPLv2
-URL:		http://qantenna.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/project/qantenna/qantenna/%{version}/%{name}-%{version}.tar.bz2
-#Source0:	http://sourceforge.net/projects/qantenna/files/qantenna/0.3.0/qantenna-0.3.0.orig.tar.xz
+URL:		https://qantenna.sourceforge.net/
+Source0:	https://downloads.sourceforge.net/project/qantenna/qantenna/%{version}/%{name}-%{version}.tar.bz2
+#Source0:	https://sourceforge.net/projects/qantenna/files/qantenna/0.3.0/qantenna-0.3.0.orig.tar.xz
 Patch0:		qantenna-0.2.3-mdv-link.patch
 BuildRequires:	pkgconfig(bdw-gc)
 BuildRequires:	qt4-devel
@@ -20,11 +20,9 @@ antennas and their radiation patterns. It provides the user with a
 %prep
 %setup -q
 %patch0 -p1
-%if %{fedora}>23
 sed -i 's|static const float runDelta= 0.04;|static constexpr float runDelta= 0.04;|' src/camera.h
 sed -i 's|static const float zoomStep= 0.1;|static constexpr float zoomStep= 0.1;|' src/glwidget.h
 sed -i 's|static const float sensibility= 0.1;|static constexpr float sensibility= 0.1;|' src/glwidget.h
-%endif
 
 %build
 qmake-qt4 PREFIX=/usr qantenna.pro

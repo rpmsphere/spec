@@ -4,8 +4,8 @@ Version:	0.6.4
 Release:	13.1
 License:	GPL
 Group:		Sciences/Mathematics
-URL:		http://x48.berlios.de/
-Source0:	http://downloads.sourceforge.net/project/x48.berlios/%{name}-%{version}.tar.bz2
+URL:		https://x48.berlios.de/
+Source0:	https://downloads.sourceforge.net/project/x48.berlios/%{name}-%{version}.tar.bz2
 Source1:    x48.png
 Patch0:		x48-0.6.1-mdv-fix-string-format.patch
 BuildRequires:	readline-devel
@@ -17,7 +17,7 @@ Requires:  	readline
 
 %description
 This is an emulator of the HP 48 SX and GX calculator.
-Romdumps are available from http://x48.berlios.de/
+Romdumps are available from https://x48.berlios.de/
 
 %prep
 %setup -q -c

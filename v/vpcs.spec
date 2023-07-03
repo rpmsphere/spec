@@ -5,7 +5,7 @@ Version:	0.4b2
 Release:	4.1
 License:	BSD
 Summary:	Virtual PC Simulator
-URL:		http://www.freecode.com.cn/doku.php?id=wiki:vpcs
+URL:		https://www.freecode.com.cn/doku.php?id=wiki:vpcs
 Group:      System/Emulators/Other
 Source0:	%{name}-%{version}.tar.bz2
 Requires:	dynamips
@@ -51,7 +51,7 @@ install -Dm644 man/vpcs.1 %buildroot/%_mandir/man1/%{name}.1
   * support 'dump' packets
   * add 'rlogin' command to connect the remote host
   * support daemon mode
-  * more at http://blog.chinaunix.net/space.php?uid=20020608&do=blog&id=3274792
+  * more at https://blog.chinaunix.net/space.php?uid=20020608&do=blog&id=3274792
 - removed man page now in upstream code
 * Thu Jan 12 2012 andrea@opensuse.org
 - New upstream version 0.3

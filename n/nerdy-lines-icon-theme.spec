@@ -5,7 +5,7 @@ Name: nerdy-lines-icon-theme
 Version: 0.2.0
 Release: 3.1
 License: CC BY-NC-ND
-URL: http://www.christophbrill.de/en_US/nerdy-lines-icons/
+URL: https://www.christophbrill.de/en_US/nerdy-lines-icons/
 Group: User Interface/Desktops
 Source: Nerdy-Lines-%{version}.tar.bz2
 BuildArch: noarch

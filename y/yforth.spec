@@ -6,7 +6,7 @@ Version: 0.2.1
 Release: 3.1
 License: GPLv3+
 Group: interpreters
-URL: http://git.gag.com/?p=debian/yforth
+URL: https://git.gag.com/?p=debian/yforth
 Source0: %{name}-%{version}.tar.gz
 
 %description

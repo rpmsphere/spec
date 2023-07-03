@@ -6,7 +6,7 @@ Release: 2
 Summary:  Moscow ML
 License: GPL
 Group: Development/ML
-URL: http://mosml.org/
+URL: https://mosml.org/
 Source: %name-%version.tar
 Patch: %name-alt-header.patch
 BuildRequires: gmp-devel
@@ -45,7 +45,7 @@ compilation and modest storage consumption.
 %set_verify_elf_method rpath=relaxed unresolved=relaxed
 
 %prep
-%setup
+%setup -q
 %patch0 -p1
 
 %build

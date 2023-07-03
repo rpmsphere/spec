@@ -6,7 +6,7 @@ Release:        1
 Summary:        A tool for querying local and remote XML/HTML/JSON data
 License:        GPLv3+
 Group:          Productivity/Networking/Web/Utilities
-URL:            http://www.videlibri.de/xidel.html
+URL:            https://www.videlibri.de/xidel.html
 Source0:        %{name}-%{version}.src.tar.gz 
 BuildRequires:  fpc
 

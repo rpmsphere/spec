@@ -5,8 +5,8 @@ Summary: Display unicode character properties
 License: GPLv3
 Group: Text tools
 BuildArch: noarch
-URL: http://kassiopeia.juls.savba.sk/~garabik/software/unicode/
-Source0: http://kassiopeia.juls.savba.sk/~garabik/software/unicode/%{name}_%{version}.tar.gz
+URL: https://kassiopeia.juls.savba.sk/~garabik/software/unicode/
+Source0: https://kassiopeia.juls.savba.sk/~garabik/software/unicode/%{name}_%{version}.tar.gz
 
 %description
 unicode is a simple command line utility that displays

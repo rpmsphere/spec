@@ -9,7 +9,7 @@ Group: User Interface/Desktops
 Source0: %{name}-%{version}.zip
 Source1: raindrops.jpg
 Source2: %{theme_name}-index.theme
-URL: http://skiesofazel.deviantart.com/art/Orta-184118297
+URL: https://skiesofazel.deviantart.com/art/Orta-184118297
 Requires: dalisha-icon-theme
 Requires: oxygen-cursor-themes
 BuildArch: noarch

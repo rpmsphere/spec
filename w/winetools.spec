@@ -1,7 +1,7 @@
 %global __os_install_post %{nil}
 
 Name:           winetools
-URL:            http://www.von-thadden.de/Joachim/%{name}/
+URL:            https://www.von-thadden.de/Joachim/%{name}/
 License:        GNU General Public License (GPL)
 Group:          Applications/Emulator
 Summary:        Easy WINE Setup and Program Installation

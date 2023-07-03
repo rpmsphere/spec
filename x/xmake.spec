@@ -5,7 +5,7 @@ Summary:	Powerful project making make program
 License:	GPL
 Group:		Development/Other
 Source0:	%{name}-%{version}.tar.bz2
-URL:		http://apollo.backplane.com/xmake/
+URL:		https://apollo.backplane.com/xmake/
 
 %description
 XMAKE is similar to other make's out there, but is specifically designed to

@@ -5,10 +5,10 @@ Version:            0.0.99+0.1rc1
 %define pkg_version 0.1-rc1
 Release:            7.4
 Summary:            Cross-Platform Pomodoro Timer
-Source:             http://prdownloads.sourceforge.net/qomodoro/qomodoro-%{pkg_version}-src.tar.bz2
+Source:             https://prdownloads.sourceforge.net/qomodoro/qomodoro-%{pkg_version}-src.tar.bz2
 Source1:            qomodoro.desktop
 Source2:            qomodoro.png
-URL:                http://sourceforge.net/p/qomodoro/home/
+URL:                https://sourceforge.net/p/qomodoro/home/
 Group:              Productivity/Office/Organizers
 License:            BSD3c
 BuildRequires:      libpng-devel
@@ -20,7 +20,7 @@ BuildRequires:      autoconf automake libtool
 
 %description
 qomodoro is cross-platform pomodoro timer written in C++ using Qt4. To learn
-more about the Pomodoro technique: http://www.pomodorotechnique.com/
+more about the Pomodoro technique: https://www.pomodorotechnique.com/
 
 Easy to use:
 * Left click to show/hide the timer.

@@ -1,11 +1,11 @@
 Name:         zsync
 Summary:      RSYNC over HTTP
-URL:          http://zsync.moria.org.uk/
+URL:          https://zsync.moria.org.uk/
 Group:        Networking
 License:      Artistic
 Version:      0.6.2
 Release:      4.1
-Source0:      http://zsync.moria.org.uk/download/zsync-%{version}.tar.bz2
+Source0:      https://zsync.moria.org.uk/download/zsync-%{version}.tar.bz2
 
 %description
 zsync is a file transfer program. It allows you to download a

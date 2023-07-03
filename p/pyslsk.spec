@@ -3,8 +3,8 @@ Version:       1.2.7c
 Release:       10.1
 Summary:       A client for SoulSeek filesharing system
 Group:         Graphical Desktop/Applications/Internet
-URL:           http://www.sensi.org/~ak/pyslsk/
-Source0:       http://www.sensi.org/%7Eak/pyslsk/pyslsk-%{version}.tar.gz
+URL:           https://www.sensi.org/~ak/pyslsk/
+Source0:       https://www.sensi.org/%7Eak/pyslsk/pyslsk-%{version}.tar.gz
 Source1:       slsk.png
 License:       GPL
 BuildArch:     noarch

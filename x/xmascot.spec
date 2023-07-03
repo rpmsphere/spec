@@ -6,8 +6,8 @@ Version: 2.6a
 Release: 1
 Group: Amusements/Games
 License: free
-URL: http://cclub-flying.dsl.gr.jp/products/xmascot/
-Source0: http://cclub-flying.dsl.gr.jp/products/%{name}/%{name}%{version}.tar.gz
+URL: https://cclub-flying.dsl.gr.jp/products/xmascot/
+Source0: https://cclub-flying.dsl.gr.jp/products/%{name}/%{name}%{version}.tar.gz
 BuildRequires: libXaw-devel libXmu-devel libXt-devel libXext-devel
 
 %description

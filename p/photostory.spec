@@ -5,7 +5,7 @@ Release:        1
 Summary:        Daily photograph manager
 Group:          Applications/Graphics
 License:        GPL v3
-URL:            http://launchpad.net/photostory
+URL:            https://launchpad.net/photostory
 Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
 Requires:	pygtk2, python2-gstreamer

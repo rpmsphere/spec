@@ -7,7 +7,7 @@ Release: 3.1
 Group: editors
 License: Free Software
 URL: https://github.com/martinwguy/xvi
-Source0: http://martinwguy.github.io/xvi/download/%{name}-%{version}.tar.gz
+Source0: https://martinwguy.github.io/xvi/download/%{name}-%{version}.tar.gz
 
 %description
 xvi is the smallest clone of the famous "vi" editor, with almost all of the
@@ -24,7 +24,7 @@ and runs on any regular text terminal.
 
 xvi was written by Chris and John Downey in the late 80s and early 90s,
 is derived from the STEVIE by Tim Thompson and Tony Andrews
-and currently lives at http://xvi.sourceforge.net
+and currently lives at https://xvi.sourceforge.net
 
 %prep
 %setup -q

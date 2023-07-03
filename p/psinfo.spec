@@ -2,12 +2,11 @@ Name:               psinfo
 Version:            0.12
 Release:            3.1
 Summary:            Process Information and Statistics
-Source:             http://www.ward.nu/computer/psinfo/psinfo-%{version}.tar.gz
+Source:             https://www.ward.nu/computer/psinfo/psinfo-%{version}.tar.gz
 Patch1:             psinfo-makefile.patch
-URL:                http://www.ward.nu/computer/psinfo/
+URL:                https://www.ward.nu/computer/psinfo/
 Group:              System/Monitoring
 License:            GPLv2+
-BuildRoot:          %{_tmppath}/build-%{name}-%{version}
 BuildRequires:      gcc make glibc-devel
 
 %description
@@ -36,7 +35,6 @@ problems.
     install
 
 %files
-%defattr(-,root,root)
 %doc README
 %{_bindir}/psinfo
 

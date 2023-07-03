@@ -6,8 +6,8 @@ Version:	0.8.1
 Release:	1
 License:	GPLv2
 Group:		Terminals
-URL:		http://sourceforge.net/projects/twin/
-Source0:	http://downloads.sourceforge.net/twin/%{name}-%{version}.tar.gz
+URL:		https://sourceforge.net/projects/twin/
+Source0:	https://downloads.sourceforge.net/twin/%{name}-%{version}.tar.gz
 BuildRequires:	bison
 BuildRequires:	gpm-devel
 #BuildRequires:	libggi-devel

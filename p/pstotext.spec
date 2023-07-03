@@ -3,14 +3,13 @@ Summary:        Extract plain text from PostScript
 Version:        1.9
 Release:        8.1
 License:        DEC
-URL:            http://pages.cs.wisc.edu/~ghost/doc/pstotext.htm
+URL:            https://pages.cs.wisc.edu/~ghost/doc/pstotext.htm
 Group:          Productivity/Other
 Source:         %{name}-%{version}.tar.bz2
 Source1:        configure.ac
 Source2:        Makefile.am
 Patch:          pstotext-config_h.patch
 Patch1:         pstotext-signed_unsigned_compare.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Pstotext extracts plain text from PostScript documents. It deals
@@ -41,7 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
 %doc pstotext.txt
 %{_bindir}/%{name}
 %{_mandir}/man1/*

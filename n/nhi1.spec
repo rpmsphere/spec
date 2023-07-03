@@ -2,12 +2,12 @@
 
 Name:         nhi1
 Summary:      Non Human Intelligence #1
-URL:          http://developer.berlios.de/projects/nhi1/
+URL:          https://developer.berlios.de/projects/nhi1/
 Group:        Libraries
 License:      GPL
 Version:      0.17
 Release:      11.1
-Source0:      http://download.berlios.de/nhi1/NHI1-%{version}.tar.bz2
+Source0:      https://download.berlios.de/nhi1/NHI1-%{version}.tar.bz2
 Patch0:       NHI1-va_list.patch
 
 %package devel

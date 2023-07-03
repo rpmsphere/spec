@@ -4,7 +4,7 @@ Version: 0.1.20170117
 License: 2-clause BSD
 Release: 1.1
 Group: utils
-URL: http://subdivi.de/~helmut/tcvt/
+URL: https://subdivi.de/~helmut/tcvt/
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 

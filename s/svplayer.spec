@@ -4,7 +4,7 @@ Version: 0.6.0
 Release: 4.1
 Group: Applications/Multimedia
 License: GPLv2+
-URL: http://www.salstar.sk/svplayer/
+URL: https://www.salstar.sk/svplayer/
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 Requires: pygtk2

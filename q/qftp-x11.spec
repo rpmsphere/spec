@@ -6,9 +6,9 @@ Release: 1
 License: GPLV2
 Summary: A user interface for Ftp file transfer
 Group: User Interface/X
-URL: http://hugo.pereira.free.fr/software/index.php?page=package&package_list=software_list_qt&package=qftp
-Source: http://hugo.pereira.free.fr/software/tgz/%{_name}-%{version}.tar.gz
-BuildRequires: qt5-devel
+URL: https://hugo.pereira.free.fr/software/index.php?page=package&package_list=software_list_qt&package=qftp
+Source: https://hugo.pereira.free.fr/software/tgz/%{_name}-%{version}.tar.gz
+BuildRequires: qt5-qtbase-devel
 
 %description
 It provides the functionalities of a basic file manager, both on the local and
@@ -20,12 +20,12 @@ also offer the unsecure possibility to store connection password.
 %setup -q -n %{_name}-%{version}
 
 %build
-cmake -DCMAKE_INSTALL_PREFIX=%{_prefix} -DUSE_QT5=1 .
-make -j4
+%cmake -DCMAKE_INSTALL_PREFIX=%{_prefix} -DUSE_QT5=1 .
+%cmake_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+%cmake_install
 mv %{buildroot}%{_bindir}/%{_name} %{buildroot}%{_bindir}/%{name}
 
 %clean

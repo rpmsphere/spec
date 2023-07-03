@@ -1,11 +1,11 @@
 Name:         shsql
 Summary:      Shell SQL RDBMS
-URL:          http://quisp.sourceforge.net/sqlman/html/shsql_home.html
+URL:          https://quisp.sourceforge.net/sqlman/html/shsql_home.html
 Group:        Database
 License:      GPL
 Version:      1.28
 Release:      4.1
-Source0:      http://quisp.sourceforge.net/download/quisp128.tar.gz
+Source0:      https://quisp.sourceforge.net/download/quisp128.tar.gz
 
 %description
 SHSQL is a standalone SQL database that stores data in ASCII

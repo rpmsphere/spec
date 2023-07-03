@@ -4,8 +4,8 @@ Release:        3.1
 Summary:        Take PNG images from Xcursor and generate xcursorgen config-file
 Group:          User Interface/X
 License:        GPLv3
-URL:            http://www.sutv.zaq.ne.jp/linuz/tks/
-Source0:        http://www.sutv.zaq.ne.jp/linuz/tks/item/%{name}-%{version}.tar.xz
+URL:            https://www.sutv.zaq.ne.jp/linuz/tks/
+Source0:        https://www.sutv.zaq.ne.jp/linuz/tks/item/%{name}-%{version}.tar.xz
 BuildRequires:  pkgconfig libpng-devel libXcursor-devel
 
 %description

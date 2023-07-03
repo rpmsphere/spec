@@ -4,8 +4,8 @@ Version:	0.4
 Release:	10.1
 Group:		Archiving/Backup
 License:	GPL
-URL:		http://parchive.sourceforge.net/
-Source:		http://sourceforge.net/projects/parchive/files/par2cmdline/0.4/par2cmdline-0.4.tar.gz
+URL:		https://parchive.sourceforge.net/
+Source:		https://sourceforge.net/projects/parchive/files/par2cmdline/0.4/par2cmdline-0.4.tar.gz
 Patch0:		par2cmdline-gcc4.patch.bz2
 
 %description
@@ -24,7 +24,7 @@ little easier. That's a pretty cool goal!
 
 par2 is complete rewrite of parchive with much additional advantages.
 Read all about them on this page:
-  http://www.pbclements.co.uk/QuickPar/AboutPAR2.htm
+  https://www.pbclements.co.uk/QuickPar/AboutPAR2.htm
 
 Tip of the day: alias par='par2 r *.((p|P)??|par2)'
 
@@ -44,7 +44,6 @@ make
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root,755)
 %doc AUTHORS COPYING README ROADMAP
 %{_bindir}/*
 

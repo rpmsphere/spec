@@ -4,7 +4,7 @@ Release:        7.1
 Summary:        GUI to Adjust Vaio Specific Hardware Controls
 License:        GPL-2.0+
 Group:          Hardware/Other
-URL:            http://code.google.com/p/vaio-f11-linux/wiki/VaioControlCenter
+URL:            https://code.google.com/p/vaio-f11-linux/wiki/VaioControlCenter
 Source0:        %{name}-git.%{version}.tar.bz2
 Source1:        %{name}.desktop
 BuildRequires:  desktop-file-utils

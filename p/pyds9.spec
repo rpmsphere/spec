@@ -5,8 +5,8 @@ Version: 1.7
 Release: 3.1
 Group: Development/Languages/Python
 License: GPL
-URL: http://hea-www.harvard.edu/saord/ds9/pyds9/
-Source0: http://hea-www.harvard.edu/saord/download/ds9/python/%{name}-%{version}.tar.gz
+URL: https://hea-www.harvard.edu/saord/ds9/pyds9/
+Source0: https://hea-www.harvard.edu/saord/download/ds9/python/%{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: python-devel
 Requires: ds9, xpa

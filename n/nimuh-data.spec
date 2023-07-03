@@ -1,11 +1,11 @@
 Name:           nimuh-data
-Url:            http://www.nimuh.com/
+Url:            https://www.nimuh.com/
 License:        CC-by-nc-sa 2.5 Spain
 Group:          Amusements/Games/Logic
 Version:        1.02
 Release:        1
 Summary:        Data needed by nimuh
-Source:         http://downloads.sourceforge.net/nimuh/%{name}-%{version}.tar.gz
+Source:         https://downloads.sourceforge.net/nimuh/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 
 %description

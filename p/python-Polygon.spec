@@ -5,7 +5,7 @@ Release:        6.1
 Summary:        Python package that handles polygonal shapes in 2D
 License:        LGPL with exception
 Group:          Development/Python
-URL:            http://www.j-raedler.de/projects/polygon/
+URL:            https://www.j-raedler.de/projects/polygon/
 Source0:        https://pypi.python.org/packages/source/P/Polygon2/Polygon2-%{version}.tar.gz
 BuildRequires:  python-devel
 BuildRequires:  python2-setuptools
@@ -23,7 +23,7 @@ included. This package was already used to process shapes with more than
 one million points!
 
 gpc is included in Polygon and is distributed under other license.
-gpc homepage: http://www.cs.man.ac.uk/~toby/alan/software/
+gpc homepage: https://www.cs.man.ac.uk/~toby/alan/software/
 
 GPC is free for non-commercial use only. We invite non-commercial users
 to make a voluntary donation towards the upkeep of GPC. If you wish to

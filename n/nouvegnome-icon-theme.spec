@@ -6,11 +6,11 @@ Release:	5.1
 Summary:	%{theme_name} icon theme
 Group:		System/GUI/GNOME
 License:	free
-URL:		http://tsujan.deviantart.com/art/nouveGnome-301614547
+URL:		https://tsujan.deviantart.com/art/nouveGnome-301614547
 #URL:            https://www.gnome-look.org/p/1015824/
-#Source0:        http://www.deviantart.com/download/301614547/nouvegnome_by_tsujan-d4zkn9v.7z
+#Source0:        https://www.deviantart.com/download/301614547/nouvegnome_by_tsujan-d4zkn9v.7z
 Source0:	%{theme_name}.tgz
-#Source1:        http://www.deviantart.com/download/300365158/nouvegnomegray_by_tsujan-d4ytv8m.7z
+#Source1:        https://www.deviantart.com/download/300365158/nouvegnomegray_by_tsujan-d4ytv8m.7z
 Source1:        %{theme_name}Gray.tgz
 Source2:        https://dl.dropboxusercontent.com/s/1u3uxya8z1m6kng/%{theme_name}Steel.tgz
 BuildArch:      noarch

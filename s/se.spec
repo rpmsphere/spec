@@ -4,8 +4,8 @@ Version: 3.0.1
 Release: 4.1
 License: GPL
 Group: Applications/Editors
-Source: http://se-editor.org/dist/%{name}-%{version}.tar.gz
-URL: http://se-editor.org/
+Source: https://se-editor.org/dist/%{name}-%{version}.tar.gz
+URL: https://se-editor.org/
 BuildRequires: gcc-c++, ncurses
 
 %description

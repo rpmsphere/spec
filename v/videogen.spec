@@ -4,7 +4,7 @@ Release: 2.1
 Summary: Modelines Generator
 License: GPL
 Group: System/Configuration/Other
-URL: http://www.dynaweb.hu/opensource/videogen
+URL: https://www.dynaweb.hu/opensource/videogen
 Source: %name-%version.tar.gz
 
 %description

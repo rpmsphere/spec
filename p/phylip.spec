@@ -6,8 +6,8 @@ Version:			3.697
 Release:			1
 License:			Freeware
 Group:				Sciences/Biology
-URL:				http://evolution.genetics.washington.edu/phylip.html
-Source0:			http://evolution.gs.washington.edu/phylip/download/%{name}-%{version}.tar.gz
+URL:				https://evolution.genetics.washington.edu/phylip.html
+Source0:			https://evolution.gs.washington.edu/phylip/download/%{name}-%{version}.tar.gz
 BuildRequires:			libXaw-devel libXt-devel libX11-devel
 Patch0:				phylip_documentation_path_fix.patch
 Patch1:				%{name}.build.patch

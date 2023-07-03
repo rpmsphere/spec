@@ -4,7 +4,7 @@ Version:        0.6.5
 Release:        1
 Source0:        %{name}-%{version}.tar.bz2
 Patch0:         %{name}-0.6.5-fix-path.patch
-URL:            http://new.asymptopia.org/staticpages/index.php/MultiplicationStation
+URL:            https://new.asymptopia.org/staticpages/index.php/MultiplicationStation
 License:        GPLv2+ 
 Group:          Games/Boards
 BuildRequires:  ImageMagick

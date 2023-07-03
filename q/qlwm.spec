@@ -4,8 +4,8 @@ Name:               qlwm
 Version:            4.3
 Release:            4.1
 Summary:            A Qt based window manager 
-Source0:            http://www.alinden.mynetcologne.de/qlwm/qlwm-4.3.tar.gz
-URL:                http://www.alinden.mynetcologne.de/qlwm/
+Source0:            https://www.alinden.mynetcologne.de/qlwm/qlwm-4.3.tar.gz
+URL:                https://www.alinden.mynetcologne.de/qlwm/
 Group:              System/GUI/Other
 License:            GNU General Public License version 3 (GPL v3)
 BuildRequires:      qt4-devel

@@ -6,8 +6,8 @@ Version: 6.7.6
 Release: 1
 Group: Amusements/Games
 License: GPL
-URL: http://freecode.com/projects/xlife
-Source0: http://litwr2.atspace.eu/xlife/%{name}-%{version}.tar.bz2
+URL: https://freecode.com/projects/xlife
+Source0: https://litwr2.atspace.eu/xlife/%{name}-%{version}.tar.bz2
 Source1: xlife.png
 BuildRequires: imake
 BuildRequires: libX11-devel

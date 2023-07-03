@@ -1,11 +1,11 @@
 Name:         uniutils
 Summary:      Unicode Utilities
-URL:          http://billposer.org/Software/unidesc.html
+URL:          https://billposer.org/Software/unidesc.html
 Group:        Charset
 License:      GPL
 Version:      2.27
 Release:      4.1
-Source0:      http://billposer.org/Software/Downloads/uniutils-%{version}.tar.gz
+Source0:      https://billposer.org/Software/Downloads/uniutils-%{version}.tar.gz
 
 %description
 This package consists of a set of programs for manipulating and

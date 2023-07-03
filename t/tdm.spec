@@ -6,7 +6,6 @@ Group: System/Utilities
 License: GPLv3
 URL: https://code.google.com/p/t-display-manager/
 Source0: https://t-display-manager.googlecode.com/files/%{name}-%{version}.tar.xz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch: noarch
 
 %description

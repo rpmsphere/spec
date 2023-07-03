@@ -4,8 +4,8 @@ Release: 6.1
 Summary: Molecular Weight & Elemental Analysis Calculator
 License: distributable
 Group: Sciences/Chemistry
-URL: http://www.st.hirosaki-u.ac.jp/~rmiya/xmolwt/xmolwt-e.html
-Source: http://www.st.hirosaki-u.ac.jp/~rmiya/xmolwt/%name-%version.tar.gz
+URL: https://www.st.hirosaki-u.ac.jp/~rmiya/xmolwt/xmolwt-e.html
+Source: https://www.st.hirosaki-u.ac.jp/~rmiya/xmolwt/%name-%version.tar.gz
 BuildRequires: gtk+-devel
 
 %description 

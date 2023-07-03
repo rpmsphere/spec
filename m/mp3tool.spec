@@ -2,10 +2,10 @@ Summary:	A command line tool for moving a MP3 file
 Name:		mp3tool
 Version:	0.3.1
 Release:	4.1
-URL:		http://wpitchoune.net/blog/mp3tool/
+URL:		https://wpitchoune.net/blog/mp3tool/
 License:	GNU General Public License version 2
 Group:		Applications/Multimedia
-Source0:	http://wpitchoune.net/mp3tool/files/%{name}-%{version}.tar.gz
+Source0:	https://wpitchoune.net/mp3tool/files/%{name}-%{version}.tar.gz
 
 %description
 The MP3 files contain information about the name of the artist, the name

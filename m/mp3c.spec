@@ -1,6 +1,6 @@
 Name:         mp3c
 Summary:      MP3 Ripping User Interface
-URL:          http://mp3c.wspse.de/
+URL:          https://mp3c.wspse.de/
 Group:        Audio
 License:      GPL
 Version:      0.31

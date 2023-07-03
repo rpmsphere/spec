@@ -6,7 +6,7 @@ Release: 1
 Summary: Yet Another Python Parser System
 Group: Development/Python
 License: MIT
-URL: http://theory.stanford.edu/~amitp/yapps/
+URL: https://theory.stanford.edu/~amitp/yapps/
 Source: python-module-yapps2-%version.tar
 BuildArch: noarch
 Patch0: 0001-fix-indexdation-t.patch

@@ -6,7 +6,7 @@ Version:        1.0
 Release:        2.1
 License:        GPL
 Group:          User Interface/Desktops
-URL:            http://gnome-look.org/content/show.php/Square-Beam?content=165094
+URL:            https://gnome-look.org/content/show.php/Square-Beam?content=165094
 Source0:        %{theme_name}_1_0.tar.gz
 BuildArch:      noarch
 

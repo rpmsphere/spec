@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		beye
+Name:		bview
 Version:	6.1.0
-Release:	7.1
+Release:	8
 Summary:	Console hex viewer/editor and disassembler
 License:	GPLv2+
 Group:		File tools
 URL:		https://sourceforge.net/projects/beye/
 Source:		biew-610.tar.bz2
 Patch0:		biew610-fix-str-fmt.patch
-Provides:   biew
+Provides:	beye
 
 %description
 BEYE (Binary EYE) is a free, portable, advanced file viewer with built-in editor
@@ -44,7 +44,7 @@ rm -rf %buildroot
 %{_mandir}/man?/%{name}.1*
 
 %changelog
-* Tue Oct 15 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1.0
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1.0
 - Rebuilt for Fedora
 * Fri Jan 11 2013 umeabot <umeabot> 6.1.0-3.mga3
 + Revision: 346901

@@ -7,8 +7,8 @@ Release:        1
 Summary:        Quantum Gate And Measurement Emulator
 Group:          Amusements/Games
 License:        LGPL
-URL:            http://hampshire.edu/lspector/qgame.html
-Source0:        http://hampshire.edu/lspector/qgame++/%{name}-%{version}.tar.gz
+URL:            https://hampshire.edu/lspector/qgame.html
+Source0:        https://hampshire.edu/lspector/qgame++/%{name}-%{version}.tar.gz
 Patch0:		qgame-qgtypes.cpp-patch
 Patch1:		qgame-client.cpp-patch
 

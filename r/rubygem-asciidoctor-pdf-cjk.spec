@@ -6,7 +6,7 @@ Release: 1
 Summary: Converts CJK AsciiDoc documents to PDF using asciidoctor-pdf
 License: MIT
 URL: https://github.com/chloerei/asciidoctor-pdf-cjk
-Source0: http://rubygems.org/downloads/%{gem_name}-%{version}.gem
+Source0: https://rubygems.org/downloads/%{gem_name}-%{version}.gem
 Source1: %{gem_name}-%{version}.tar.gz
 BuildRequires: ruby(release)
 BuildRequires: rubygems-devel > 1.3.1

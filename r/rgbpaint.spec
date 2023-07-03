@@ -6,8 +6,8 @@ Version: 0.8.7
 Release: 1
 License: GPL
 Group: Applications/Multimedia
-URL: http://mtpaint.sourceforge.net/rgbpaint.html
-Source: http://downloads.sourceforge.net/mtpaint/%{name}-%{version}.tar.bz2
+URL: https://mtpaint.sourceforge.net/rgbpaint.html
+Source: https://downloads.sourceforge.net/mtpaint/%{name}-%{version}.tar.bz2
 Source1: %{name}.png
 BuildRequires: gtk2-devel
 

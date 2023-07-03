@@ -3,9 +3,9 @@ Name: xvidcap
 Version: 1.1.7
 Release: 1
 License: GPLv2
-Source0: http://sourceforge.net/projects/xvidcap/%{name}-%{version}.tar.gz
+Source0: https://sourceforge.net/projects/xvidcap/%{name}-%{version}.tar.gz
 Group: Applications/Multimedia
-URL: http://xvidcap.sourceforge.net
+URL: https://xvidcap.sourceforge.net
 BuildRequires: gettext
 BuildRequires: libXmu-devel
 BuildRequires: scrollkeeper

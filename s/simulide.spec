@@ -4,7 +4,7 @@ Version: 0.2.8
 Release: 6.1
 Group: electronics
 License: GPLv3
-URL: http://simulide.blogspot.com/
+URL: https://simulide.blogspot.com/
 Source0: https://dl.sourceforge.net/project/simulide/SimulIDE_%{version}/%{name}_%{version}-sources.tar.gz
 Source1: %{name}.desktop
 Source2: %{name}.png

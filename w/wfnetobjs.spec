@@ -9,7 +9,7 @@ BuildRequires:  gettext-devel
 BuildRequires:  intltool
 Group:          Development/Libraries
 Summary:        A library handling network objects
-Source:         http://www.wallfire.org/download/%{name}-%{version}.tar.bz2
+Source:         https://www.wallfire.org/download/%{name}-%{version}.tar.bz2
 Patch0:         wfnetobjs-autofoomess.patch
 Patch1:		wfnetobjs-0.2.4-gcc43.patch
 
@@ -54,7 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %postun -p /sbin/ldconfig
 
 %files -f %{name}.lang
-%defattr(-,root,root)
 %{_libdir}/libwfnetobjs.so.0*
 
 %files devel

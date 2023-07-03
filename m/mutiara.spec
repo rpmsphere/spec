@@ -4,8 +4,8 @@ Version: 0.14.0
 Release: 1
 Group: Amusements/Graphics
 License: GPLv3
-URL: http://mutiara.sourceforge.net/
-Source0: http://sourceforge.net/projects/pasang-emas/files/pasang-emas/%{version}/%{name}-%{version}.tar.xz
+URL: https://mutiara.sourceforge.net/
+Source0: https://sourceforge.net/projects/pasang-emas/files/pasang-emas/%{version}/%{name}-%{version}.tar.xz
 BuildRequires: intltool
 BuildRequires: gtk3-devel
 BuildRequires: libgee06-devel

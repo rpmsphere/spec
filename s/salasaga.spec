@@ -6,8 +6,8 @@ Version: 	0.8.0.alpha5
 Release: 	9.4
 License:	LGPLv2+
 Group:      Games/Other
-URL:		http://www.salasaga.org/
-Source:     http://prdownloads.sourceforge.net/salasaga/%{name}-%{version}.tar.bz2
+URL:		https://www.salasaga.org/
+Source:     https://prdownloads.sourceforge.net/salasaga/%{name}-%{version}.tar.bz2
 Requires:	ming
 Requires:	libgnome
 Requires:	giflib

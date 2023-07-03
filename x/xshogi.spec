@@ -4,8 +4,8 @@ Release:        2.1
 Group:          Amusements/Games
 Summary:        X Front-end of GNU Shogi
 License:        GPLv3+
-URL:            http://www.gnu.org/software/gnushogi
-Source0:        http://ftp.gnu.org/gnu/gnushogi/%{name}-%{version}.tar.gz
+URL:            https://www.gnu.org/software/gnushogi
+Source0:        https://ftp.gnu.org/gnu/gnushogi/%{name}-%{version}.tar.gz
 BuildRequires:  libXt-devel, libXaw-devel
 Requires:       gnushogi
 

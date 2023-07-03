@@ -5,8 +5,8 @@ Summary: Python wrappers for libxf86config
 Name: pyxf86config
 Version: 0.3.37
 Release: 13.1
-URL: http://fedoraproject.org/wiki/pyxf86config
-Source0: http://ajax.fedorapeople.org/%{name}/%{name}-%{version}.tar.bz2
+URL: https://fedoraproject.org/wiki/pyxf86config
+Source0: https://ajax.fedorapeople.org/%{name}/%{name}-%{version}.tar.bz2
 Patch0: 0001-libxf86config.a-gained-dependency-on-xstrtokenize-pu.patch
 Patch1: 0002-Provide-xf86CheckBoolOption.patch
 Patch2: 0003-Initialize-configuration-file-parser-before-use.patch

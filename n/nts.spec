@@ -6,7 +6,7 @@ Release: 1
 License: GPL
 Group: Applications/Editors
 Source0: %{name}-%{version}.tar.gz
-URL: http://www.duke.edu/~dgraham/NTS/
+URL: https://www.duke.edu/~dgraham/NTS/
 BuildArch: noarch
 Requires: python2-wxpython
 

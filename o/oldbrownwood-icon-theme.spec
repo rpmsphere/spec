@@ -12,7 +12,7 @@ BuildArch: noarch
 
 %description
 An Old wood icon set based off of nouveGnomeGray available here:
-http://tsujan.deviantart.com/art/nouveGnomeGray-300365158
+https://tsujan.deviantart.com/art/nouveGnomeGray-300365158
 This is the brown version.
 
 %prep

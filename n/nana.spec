@@ -1,6 +1,6 @@
 Name:         nana
 Summary:      A modern C++ GUI library 
-URL:          http://nanapro.org/
+URL:          https://nanapro.org/
 Group:        System
 License:      BSL-1.0
 Version:      1.7.4

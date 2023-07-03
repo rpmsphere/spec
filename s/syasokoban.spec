@@ -10,7 +10,7 @@ Patch1:     %{name}-gcc43.patch
 Patch2:     %{name}-iconsdir.patch
 Summary:    Still Yet Another Sokoban
 License:    GPLv2+
-URL:        http://grayskygames.com/sokoban.html
+URL:        https://grayskygames.com/sokoban.html
 Group:      Games/Puzzles 
 BuildRequires: SDL-devel
 

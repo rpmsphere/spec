@@ -11,7 +11,7 @@ Release:        1
 Summary:        Image viewer and browser utility
 License:        GPLv2+
 Group:          Graphics/Viewers
-Url:            https://github.com/linuxmint/pix
+URL:            https://github.com/linuxmint/pix
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  bison
 BuildRequires:  flex

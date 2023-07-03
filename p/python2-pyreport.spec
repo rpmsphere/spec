@@ -6,7 +6,7 @@ Release:        22.1
 Summary:        Pyreport makes notes out of a python2 script
 License:        BSD
 Group:          Development/Libraries/Python
-URL:            http://gael-varoquaux.info/computers/pyreport/
+URL:            https://gael-varoquaux.info/computers/pyreport/
 Source0:        %{pyname}-%{version}.tar.bz2
 Patch0:         pyplot_silent.diff
 BuildArch:      noarch

@@ -6,8 +6,8 @@ Release:        7.1
 Summary:        R6RS Scheme implementation with concurrent garbage collector
 Group:          Development/Languages
 License:        GPLv2 
-URL:		    http://code.google.com/p/ypsilon
-Source0: 	    http://ypsilon.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:		    https://code.google.com/p/ypsilon
+Source0: 	    https://ypsilon.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 
 %description

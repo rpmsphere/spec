@@ -1,10 +1,10 @@
 Name: openclcc
 Version: 11.8
 Release: 9.1
-Source0: http://openclcc.googlecode.com/files/%{name}-%{version}.tar.gz
+Source0: https://openclcc.googlecode.com/files/%{name}-%{version}.tar.gz
 License: GPLv3
 Group: Development/Tools
-URL: http://code.google.com/p/openclcc/
+URL: https://code.google.com/p/openclcc/
 Summary: OpenCL Compiler Wrapper
 BuildRequires: opencl-headers
 BuildRequires: ocl-icd-devel

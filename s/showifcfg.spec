@@ -6,7 +6,7 @@ Version:    0.2.0
 Release:    6.1
 Group:      System/GUI/Other
 License:    GPLv2
-URL:        http://moui.sourceforge.net
+URL:        https://moui.sourceforge.net
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  showifcfg.yaml
 #Requires:   geuzen-qml-utils

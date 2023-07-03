@@ -5,8 +5,8 @@ Version:        0.83
 Release:        1
 Summary:        This is the Ubuntu Font Family
 License:        Ubuntu Font License 1.0
-URL:            http://font.ubuntu.com/
-Source0:        http://font.ubuntu.com/download/ubuntu-font-family-%{version}.zip
+URL:            https://font.ubuntu.com/
+Source0:        https://font.ubuntu.com/download/ubuntu-font-family-%{version}.zip
 BuildArch:      noarch
 BuildRequires:  fontpackages-devel
 Requires:       fontpackages-filesystem

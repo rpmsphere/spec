@@ -4,8 +4,8 @@ Release:        6.1
 Summary:        Frontend for MP3Gain, VorbisGain, AACGain and Metaflac
 License:        GPL-2.0+
 Group:          Productivity/Multimedia/Sound/Utilities
-URL:            http://qt-apps.org/content/show.php/QtGain?content=56842
-Source0:        http://qt-apps.org/CONTENT/content-files/56842-QtGain.tar.lzma
+URL:            https://qt-apps.org/content/show.php/QtGain?content=56842
+Source0:        https://qt-apps.org/CONTENT/content-files/56842-QtGain.tar.lzma
 Source1:        QtGain.desktop
 BuildRequires:  desktop-file-utils
 BuildRequires:  qt-devel
@@ -14,7 +14,6 @@ BuildRequires:  qt-devel
 #Recommends:     id3v2
 #Recommends:     mp3gain
 #Recommends:     vorbisgain
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 QtGain is a simply frontend for MP3Gain, VorbisGain, AACGain and Metaflac which
@@ -35,7 +34,6 @@ install -Dpm 0644 qtgain.png %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/Qt
 desktop-file-install --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 
 %files
-%defattr(-,root,root)
 %doc ChangeLog.txt LICENSE
 %{_bindir}/qtgain
 %{_datadir}/applications/QtGain.desktop

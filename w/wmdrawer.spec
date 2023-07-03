@@ -3,11 +3,11 @@ Name: 		wmdrawer
 Version: 	0.10.5
 Release: 	1
 Summary:	Retractable button bar launcher dockapp
-Source:		http://people.easter-eggs.org/~valos/%{name}/%{name}-%{version}.tar.gz
+Source:		https://people.easter-eggs.org/~valos/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-lib64.patch
 License:	GPL
 Group:		User Interface/Desktops
-URL:		http://people.easter-eggs.org/~valos/%{name}/
+URL:		https://people.easter-eggs.org/~valos/%{name}/
 Requires:	gtk2
 BuildRequires: 	gtk2-devel
 

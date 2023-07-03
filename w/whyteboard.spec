@@ -4,10 +4,10 @@ Version: 0.41.1
 Release: 1
 License: see /usr/share/doc/whyteboard/copyright
 Group: Applications/Multimedia
-Source0: http://launchpadlibrarian.net/55842796/%{name}-%{version}.tar.gz
+Source0: https://launchpadlibrarian.net/55842796/%{name}-%{version}.tar.gz
 Source1: %{name}.png
 Source2: %{name}-0.40.1.zh_TW.mo
-URL: http://code.google.com/p/whyteboard/
+URL: https://code.google.com/p/whyteboard/
 BuildArch: noarch
 Requires: python2-wxpython, ImageMagick
 

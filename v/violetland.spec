@@ -6,7 +6,7 @@ Release: 10.4
 Summary: An open source cross-platform game similar to Crimsonland
 Group: Games/Arcade
 License: GPLv3
-URL: http://violetland.github.io/
+URL: https://violetland.github.io/
 Source0: %name-%version.tar.gz
 Source1: %name-cmake.tgz
 Requires: %name-data

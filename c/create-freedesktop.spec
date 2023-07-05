@@ -3,8 +3,8 @@ Version:       0.1.3
 Release:       6.2
 Summary:       Shared resources for use by creative applications
 Group:         Graphical Desktop/Applications/Graphics
-URL:           http://create.freedesktop.org
-Source:        http://create.freedesktop.org/releases/create/create-%{version}.tar.bz2
+URL:           https://create.freedesktop.org
+Source:        https://create.freedesktop.org/releases/create/create-%{version}.tar.bz2
 License:       GPL
 BuildRequires: python2-scons <= 3.0.1
 BuildArch:     noarch

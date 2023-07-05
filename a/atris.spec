@@ -4,7 +4,7 @@ Version: 1.0.7
 Release: 1
 Group: games
 License: Free Software
-URL: http://www.wkiri.com/projects/atris
+URL: https://www.wkiri.com/projects/atris
 Source0: %{name}-%{version}.tar.gz
 BuildRequires: desktop-file-utils
 BuildRequires: SDL_ttf-devel

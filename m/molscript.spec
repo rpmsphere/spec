@@ -2,7 +2,7 @@ Name: molscript
 Summary: MolScript (POVScript+ Mod)
 Version: 2.1.2pov2.20
 Release: 3.1
-License: MolScript (http://www.avatar.se/molscript/obtain_info.html)
+License: MolScript (https://www.avatar.se/molscript/obtain_info.html)
 Source: molscript-%{version}.tar.gz
 Group: Applications/Graphics
 BuildRequires: gts-devel

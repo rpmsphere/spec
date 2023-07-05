@@ -6,8 +6,8 @@ Release:    	18.1
 Summary:    	Beesoft Image Commander
 License:    	GPLv2+
 Group:      	File tools
-URL:        	http://www.beesoft.org/index.php?id=imagicom
-Source:     	http://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
+URL:        	https://www.beesoft.org/index.php?id=imagicom
+Source:     	https://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
 BuildRequires:	qt4-devel
 BuildRequires:	ImageMagick-c++-devel
 

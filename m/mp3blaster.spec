@@ -4,8 +4,8 @@ Release: 1
 Group: Sound
 Summary: An interactive text-console based mp3 player
 License: GPLv2
-URL: http://mp3blaster.sourceforge.net
-Source: http://easynews.dl.sourceforge.net/sourceforge/mp3blaster/mp3blaster-%version.tar.gz
+URL: https://mp3blaster.sourceforge.net
+Source: https://easynews.dl.sourceforge.net/sourceforge/mp3blaster/mp3blaster-%version.tar.gz
 Patch1: mp3blaster-3.2.0-alt-id3cyr.patch
 Patch2: mp3blaster-3.2.0-alt-id3show.patch
 Patch3: mp3blaster-alt-makefile-system_getopt.patch
@@ -19,7 +19,7 @@ nested groups (albums). Supported audio media: mp3, ogg vorbis, wav, sid and
 streaming mp3 over HTTP.
 
 %prep
-%setup
+%setup -q
 %patch1 -p1
 #patch2 -p1
 %patch3 -p2

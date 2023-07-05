@@ -7,7 +7,7 @@ Group:          Productivity/Multimedia/CD
 Version:        1.2.2
 Release:        9.1
 Source:         discwrapper-1.2.2.tar.gz
-URL:            http://sourceforge.net/projects/discwrapper/
+URL:            https://sourceforge.net/projects/discwrapper/
 BuildRequires:  gcc-c++ automake
 BuildRequires:  wxGTK2-devel 
 

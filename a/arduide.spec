@@ -6,7 +6,7 @@ Version:  1.0
 Release:  10.1
 Group:    Development/Tools
 License:  GPLv2+
-URL:      http://www.mupuf.org/project/arduide.html
+URL:      https://www.mupuf.org/project/arduide.html
 Source0:  arduide-%version.beta1.tar.bz2
 BuildRequires: qt4-devel
 BuildRequires: cmake

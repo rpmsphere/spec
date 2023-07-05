@@ -6,7 +6,7 @@ Release:       6.1
 Summary:       A port to Linux of BYTE Magazine's BYTEmark benchmark program
 Group:         System/Hardware
 URL:           https://www.math.utah.edu/~mayer/linux/bmark.html
-Source0:       http://www.math.utah.edu/~mayer/linux/%{name}-%{version}.tar.gz
+Source0:       https://www.math.utah.edu/~mayer/linux/%{name}-%{version}.tar.gz
 License:       GPL
 
 %description
@@ -14,7 +14,7 @@ A Linux/Unix port of release 2 of BYTE Magazine's BYTEmark benchmark program
 (previously known as BYTE's Native Mode Benchmarks). These are Native Mode
 (a.k.a. Algorithm Level) tests; benchmarks designed to expose the capabilities
 of a system's CPU, FPU, and memory system. Read all about it at BYTE's
-benchmark page (http://www.byte.com/bmark/bmark.htm).
+benchmark page (https://www.byte.com/bmark/bmark.htm).
 
 The benchmark program takes less than 10 minutes to run (on most machines) and
 compares the system it is run on to two benchmark systems (a Dell Pentium 90

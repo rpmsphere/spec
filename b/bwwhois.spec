@@ -2,7 +2,7 @@ Name:			bwwhois
 Version:		5.0
 Release:		10.1
 License:		Artistic License
-URL:			http://whois.bw.org/
+URL:			https://whois.bw.org/
 Summary:		Bill Weinman replacement Whois client
 Group:			Productivity/Networking/Diagnostic
 Source:			%{name}-%{version}.tar.gz

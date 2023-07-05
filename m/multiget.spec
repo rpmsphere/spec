@@ -4,7 +4,7 @@ Release:        6.1
 Summary:        An easy-to-use GUI file downloader
 Group:          Applications/Internet
 License:        GPLv2
-URL:            http://multiget.sourceforge.net
+URL:            https://multiget.sourceforge.net
 Source0:        multiget_1.2.1~svn-1.tar.gz
 Source1:        multiget.desktop
 Source2:        MultiGet.png

@@ -6,8 +6,8 @@ Version:	0.4.9
 Release:	0.git20181112.7
 License:	LGPLv2
 Group:		System/Libraries
-URL:		http://www.libming.org/
-#Source0:	http://prdownloads.sourceforge.net/ming/%%{name}-%%{version}.tar.bz2
+URL:		https://www.libming.org/
+#Source0:	https://prdownloads.sourceforge.net/ming/%%{name}-%%{version}.tar.bz2
 Source0:	https://github.com/libming/libming/archive/master.zip
 # make ming-config multilib-compatible
 Patch0:		ming-multilib.patch

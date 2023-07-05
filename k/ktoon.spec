@@ -4,7 +4,7 @@ Name:           ktoon
 Version:        0.9a.git04
 BuildRequires:  libpng-devel
 BuildRequires:  gcc-c++ qt4-devel kom-devel ruby mesa-libGL-devel aspell-devel compat-ffmpeg-devel
-URL:            http://www.ktoon.net/
+URL:            https://www.ktoon.net/
 Release:        56.1
 License:        GPL
 Source0:        %name-0.9a-git04.tar.gz

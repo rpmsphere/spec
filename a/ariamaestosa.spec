@@ -8,8 +8,8 @@ Release: 15.1
 Summary: An opensource midi tracker/editor
 License: GPLv2 with exceptions (look at license.txt)
 Group: Sound
-URL: http://ariamaestosa.sourceforge.net
-Source: http://sourceforge.net/projects/ariamaestosa/files/%{name}/%{version}/%{srcname}-%{version}.tar.bz2
+URL: https://ariamaestosa.sourceforge.net
+Source: https://sourceforge.net/projects/ariamaestosa/files/%{name}/%{version}/%{srcname}-%{version}.tar.bz2
 BuildRequires: cvs flex gcc-c++ ghostscript-devel glib2-devel libGLU-devel alsa-lib-devel wxGTK3-devel rcs scons swig texlive-latex
 
 %description

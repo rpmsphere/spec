@@ -5,8 +5,8 @@ Version:       0.19.0
 Release:       4.1
 Summary:       A library which makes it possible to easily develop for Braille displays
 Group:         System/Libraries
-URL:           http://libbraille.org/
-Source:        http://prdownloads.sourceforge.net/libbraille/libbraille-%{version}.tar.gz
+URL:           https://libbraille.org/
+Source:        https://prdownloads.sourceforge.net/libbraille/libbraille-%{version}.tar.gz
 License:       LGPL
 BuildRequires: libusb-devel
 

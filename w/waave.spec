@@ -6,8 +6,8 @@ Version: 3.01
 Release: 12.1
 Group: Development/Libraries
 License: GPLv3
-URL: http://waave.sourceforge.net/
-Source0: http://sourceforge.net/projects/waave/files/%{name}/%{name}-%{version}.tar.gz
+URL: https://waave.sourceforge.net/
+Source0: https://sourceforge.net/projects/waave/files/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: SDL-devel
 BuildRequires: compat-ffmpeg-devel
 

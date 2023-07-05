@@ -7,8 +7,8 @@ Version:	1.6.3
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
-URL:		http://www.directfb.org
-Source0:	http://www.directfb.org/downloads/Core/%{oname}-%{version}.tar.gz
+URL:		https://www.directfb.org
+Source0:	https://www.directfb.org/downloads/Core/%{oname}-%{version}.tar.gz
 Patch0:		FusionSound-1.6.2-ffmpeg1.0.patch
 Patch1:		FusionSound-1.6.3-ffmpeg2.0.patch
 Patch2:		FusionSound-1.6.3-ffmpeg2.4.patch

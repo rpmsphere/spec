@@ -3,7 +3,7 @@
 
 Name:				jfreerails
 Summary:			Freerails is a real time multi player strategy game
-URL:				http://freerails.sourceforge.net/
+URL:				https://freerails.sourceforge.net/
 Group:				Amusements/Games/Strategy/Turn Based
 Version:			0.2.7
 Release:			1

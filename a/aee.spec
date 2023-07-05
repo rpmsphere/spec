@@ -4,7 +4,7 @@ Version:	2.2.15b
 Release:	8.1
 License:	Artistic
 Group:		Editors
-URL:		http://mahon.cwx.net/
+URL:		https://mahon.cwx.net/
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		%{name}-2.2.15b-mdkconf.patch
 Patch1:		%{name}-2.2.15b-fix-str-fmt.patch

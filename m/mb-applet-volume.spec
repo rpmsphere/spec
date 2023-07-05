@@ -3,10 +3,10 @@ Summary: 	Volume control for the Matchbox Desktop
 Name: 		mb-applet-volume
 Version: 	0.2
 Release: 	1
-URL: 		http://matchbox-project.org
+URL: 		https://matchbox-project.org
 License: 	GPLv2+
 Group: 		Graphical desktop/Other
-Source: 	http://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.bz2
+Source: 	https://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.bz2
 BuildRequires:	gtk2-devel libmatchbox-devel libxsettings-client-devel
 
 %description

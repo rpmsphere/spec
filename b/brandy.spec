@@ -7,8 +7,8 @@ Release: 1
 License: GPLv2+
 Group: Development/Tools
 #URL: https://sourceforge.net/projects/brandy/
-Source: http://brandy.matrixnetwork.co.uk/releases/MatrixBrandy-%{version}.tar.gz
-URL: http://brandy.matrixnetwork.co.uk/
+Source: https://brandy.matrixnetwork.co.uk/releases/MatrixBrandy-%{version}.tar.gz
+URL: https://brandy.matrixnetwork.co.uk/
 BuildRequires: SDL-devel
 
 %description

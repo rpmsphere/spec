@@ -4,7 +4,7 @@ Release:        4.1
 License:        GPL
 BuildRequires:  make gcc
 Group:          System/Base
-Source:         http://noc.panteion.gr/source/aoetools/cec-8.tgz
+Source:         https://noc.panteion.gr/source/aoetools/cec-8.tgz
 Summary:        Coraid Ethernet Console
 
 %description

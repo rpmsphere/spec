@@ -6,7 +6,7 @@ Release:        10
 Summary:        Pacman clone in full 3D with a few surprises
 License:        GPL-2.0+
 Group:          Amusements/Games/Action/Arcade
-URL:            http://pacmanarena.sourceforge.net/
+URL:            https://pacmanarena.sourceforge.net/
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
 Source2:        %{name}-icons.tar

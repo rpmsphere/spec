@@ -5,7 +5,7 @@ Release: 1
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: System/Kernel and hardware
-URL: http://packages.debian.org/unstable/admin/mbr
+URL: https://packages.debian.org/unstable/admin/mbr
 BuildRequires: dev86
 
 %description

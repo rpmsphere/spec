@@ -4,8 +4,8 @@ Release:	5.4
 Summary:	Solarsystem Screensaver
 Group:		Amusements/Graphics
 License:	GPLv2
-URL:		http://software.amiga-hardware.com/solarsystem.cgi
-Source0:	http://software.amiga-hardware.com/software/solarsystem-0.2.2.tar.bz2
+URL:		https://software.amiga-hardware.com/solarsystem.cgi
+Source0:	https://software.amiga-hardware.com/software/solarsystem-0.2.2.tar.bz2
 #BuildRequires: libX11-devel libICE-devel libSM-devel
 BuildRequires: SDL-devel SDL_image-devel
 BuildRequires: mesa-libGL-devel mesa-libGLU-devel

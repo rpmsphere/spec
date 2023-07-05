@@ -4,8 +4,8 @@ Version: 1.8.4
 Release: 10.1
 Group: Development/Tools
 License: see copyright
-URL: http://griffon.lasotel.fr/en/
-Source0: http://griffon.lasotel.fr/download/%{name}-%{version}.tar.gz
+URL: https://griffon.lasotel.fr/en/
+Source0: https://griffon.lasotel.fr/download/%{name}-%{version}.tar.gz
 BuildRequires:  libXcursor-devel
 BuildRequires:  libXext-devel
 BuildRequires:  libXft-devel

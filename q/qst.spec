@@ -4,9 +4,8 @@ Version: 1.01
 Release: 10.1
 Group: Applications/Communications
 License: GPL
-URL: http://sourceforge.net/projects/qst/
-Source0: http://sourceforge.net/projects/qst/files/QST-source/%{name}-source-%{version}.tgz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+URL: https://sourceforge.net/projects/qst/
+Source0: https://sourceforge.net/projects/qst/files/QST-source/%{name}-source-%{version}.tgz
 BuildRequires: qt-devel, qextserialport-devel
 
 %description

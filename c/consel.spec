@@ -6,8 +6,8 @@ Version: 0.1
 Release: 3.1
 Group: Applications/Bioinformatics
 License: Unknown
-Source:  http://www.is.titech.ac.jp/~shimo/pub/consel/cnsls01h.tgz
-URL: http://www.is.titech.ac.jp/~shimo/prog/consel/index.html
+Source:  https://www.is.titech.ac.jp/~shimo/pub/consel/cnsls01h.tgz
+URL: https://www.is.titech.ac.jp/~shimo/prog/consel/index.html
 
 %description
 Author: Hidetoshi Shimodaira <shimo@is.titech.ac.jp>

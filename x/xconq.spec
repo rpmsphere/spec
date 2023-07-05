@@ -4,10 +4,10 @@ Name:		xconq
 Version:	7.5.0
 Release:	21.1
 Summary:	General turn-based 2D strategy game system
-URL:		http://xconq.org
+URL:		https://xconq.org
 License:	GPL
 Group:		Games/Strategy
-Source0:	http://prdownloads.sourceforge.net/xconq/%{name}-%{version}-0pre.0.%{pre}.tar.bz2
+Source0:	https://prdownloads.sourceforge.net/xconq/%{name}-%{version}-0pre.0.%{pre}.tar.bz2
 Patch0:		xconq-7.5.0-0pre.0.20050612-makefile.patch
 Patch1:		%{name}-7.5.0.tclpath.patch
 Patch2:		xconq-7.5.0-64bit-fix.patch

@@ -16,20 +16,20 @@ Summary: The X Multi Arcade Machine Emulator
 Name: xmame
 Version: 0.106
 Release: 1
-Source0: http://x.mame.net/download/xmame-%{version}.tar.bz2
-# http://cheat.retrogames.com/ 0.106 - 14/05/2006
-Source20: http://cheat.retrogames.com/cheat.zip
-# http://www.mameworld.net/highscore/ 0.105 - 10/04/2006
-Source21: http://www.mameworld.net/highscore/uhsdat0105.zip
-# http://www.arcade-history.com/ 1.06q - 26/05/2006
-Source22: http://www.arcade-history.com/download/history1_06q.zip
-# http://www.mameworld.net/mameinfo/ 0.106 - 14/05/2006
-Source23: http://www.mameworld.net/mameinfo/update/Mameinfo0106.zip
-# http://www.mameworld.net/catlist/ 0.99u2 - 12/09/2005
-Source30: http://www.mameworld.net/catlist/files/catver.zip
+Source0: https://x.mame.net/download/xmame-%{version}.tar.bz2
+# https://cheat.retrogames.com/ 0.106 - 14/05/2006
+Source20: https://cheat.retrogames.com/cheat.zip
+# https://www.mameworld.net/highscore/ 0.105 - 10/04/2006
+Source21: https://www.mameworld.net/highscore/uhsdat0105.zip
+# https://www.arcade-history.com/ 1.06q - 26/05/2006
+Source22: https://www.arcade-history.com/download/history1_06q.zip
+# https://www.mameworld.net/mameinfo/ 0.106 - 14/05/2006
+Source23: https://www.mameworld.net/mameinfo/update/Mameinfo0106.zip
+# https://www.mameworld.net/catlist/ 0.99u2 - 12/09/2005
+Source30: https://www.mameworld.net/catlist/files/catver.zip
 Patch0: xmame-0.100-libgl.patch
 License: MAME
-URL: http://x.mame.net/
+URL: https://x.mame.net/
 Group: Applications/Emulators
 Obsoletes: %{name}-x11 <= 0.87
 Obsoletes: %{name}-xgl <= 0.87
@@ -71,7 +71,7 @@ Obsoletes: xmess-xgl <= 0.87
 This is the *nix port of MESS. MESS is a free emulator which emulates a
 large variety of different systems, including old Atari, Apple, BBC,
 Commodore, MSX, ZX Spectrum computers. For full list of supported systems
-see http://www.mess.org/.
+see https://www.mess.org/.
 
 
 %prep
@@ -267,12 +267,12 @@ popd
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.106
 - Rebuilt for Fedora
 
-* Mon May 29 2006 Matthias Saou <http://freshrpms.net/> 0.106-1
+* Mon May 29 2006 Matthias Saou <https://freshrpms.net/> 0.106-1
 - Update to 0.106.
 - Update all related files.
 - Fix mameinfo.dat inclusion again, which is now an exe/7zip file in a zip.
 
-* Tue Apr 18 2006 Matthias Saou <http://freshrpms.net/> 0.105-1
+* Tue Apr 18 2006 Matthias Saou <https://freshrpms.net/> 0.105-1
 - Update to 0.105.
 - Update all related files.
 - Fix mameinfo.dat inclusion, which is now an exe/7zip file.
@@ -280,103 +280,103 @@ popd
 * Fri Mar 24 2006 Mike Crawford <mike@tuxnami.org> 0.104-2
 - Added DGA build conditional.
 
-* Fri Mar 17 2006 Matthias Saou <http://freshrpms.net/> 0.104-2
+* Fri Mar 17 2006 Matthias Saou <https://freshrpms.net/> 0.104-2
 - Release bump to drop the disttag number in FC5 build.
 
-* Fri Feb 17 2006 Matthias Saou <http://freshrpms.net/> 0.104-1
+* Fri Feb 17 2006 Matthias Saou <https://freshrpms.net/> 0.104-1
 - Update to 1.104.
 
-* Tue Jan 17 2006 Matthias Saou <http://freshrpms.net/> 0.103-1
+* Tue Jan 17 2006 Matthias Saou <https://freshrpms.net/> 0.103-1
 - Update to 0.103.
 
-* Fri Jan 13 2006 Matthias Saou <http://freshrpms.net/> 0.102-2
+* Fri Jan 13 2006 Matthias Saou <https://freshrpms.net/> 0.102-2
 - Add modular xorg build conditional.
 
-* Sun Nov 27 2005 Matthias Saou <http://freshrpms.net/> 0.102-1
+* Sun Nov 27 2005 Matthias Saou <https://freshrpms.net/> 0.102-1
 - Update to 0.102.
 
-* Tue Oct 25 2005 Matthias Saou <http://freshrpms.net/> 0.101-1
+* Tue Oct 25 2005 Matthias Saou <https://freshrpms.net/> 0.101-1
 - Update to 0.101.
 - Include fix for MESS keyboard input.
 
-* Fri Oct 14 2005 Matthias Saou <http://freshrpms.net/> 0.100-2
+* Fri Oct 14 2005 Matthias Saou <https://freshrpms.net/> 0.100-2
 - Update Mameinfo0100u3.zip and history1_04a.zip.
 - Disable Glide3 on non x86/x86_64 archs to fix ppc build.
 
-* Mon Sep 26 2005 Matthias Saou <http://freshrpms.net/> 0.100-1
+* Mon Sep 26 2005 Matthias Saou <https://freshrpms.net/> 0.100-1
 - Update to 0.100.
 - Remove explicit stripping disabling, since the default is to not strip now.
 - Enable LIGHTGUN_ABS_EVENT.
 - Override default LD (remove ,-s) to try and get real debuginfo at last...
 - Include patch to change dlopen of libGL.so to libGL.so.1 (and libGLU too).
 
-* Tue Aug 16 2005 Matthias Saou <http://freshrpms.net/> 0.99-1
+* Tue Aug 16 2005 Matthias Saou <https://freshrpms.net/> 0.99-1
 - Update to 0.99 (final).
 - Enable Glide3 for non-x86 archs again, since Hans has fixed it in Extras.
 
-* Tue Jul 19 2005 Matthias Saou <http://freshrpms.net/> 0.98-0.1.cvs
+* Tue Jul 19 2005 Matthias Saou <https://freshrpms.net/> 0.98-0.1.cvs
 - Update to 0.98 CVS snapshot.
 
-* Tue Jun 14 2005 Matthias Saou <http://freshrpms.net/> 0.97-2
+* Tue Jun 14 2005 Matthias Saou <https://freshrpms.net/> 0.97-2
 - Update to 0.97 (final).
 
-* Mon Jun  6 2005 Matthias Saou <http://freshrpms.net/> 0.97-1
+* Mon Jun  6 2005 Matthias Saou <https://freshrpms.net/> 0.97-1
 - Update to 0.97 (CVS).
 - Enable X86_PPC_DRC by default for i386.
 - Replace -mcpu with -mtune for i386.
 
-* Wed May 11 2005 Matthias Saou <http://freshrpms.net/> 0.96-1
+* Wed May 11 2005 Matthias Saou <https://freshrpms.net/> 0.96-1
 - Update to 0.96.
 
-* Wed Mar 30 2005 Matthias Saou <http://freshrpms.net/> 0.95-1
+* Wed Mar 30 2005 Matthias Saou <https://freshrpms.net/> 0.95-1
 - Update to 0.95.
 
-* Wed Mar 16 2005 Matthias Saou <http://freshrpms.net/> 0.94-1
+* Wed Mar 16 2005 Matthias Saou <https://freshrpms.net/> 0.94-1
 - Update to 0.94.
 - Completely remove asm68000, it's now totally unmaintained and broken.
 - Include 64bit fixes for seibuspi and wecleman by F.J. McCloud.
 - Add Mads Villadsen's proposed lirc support.
 
-* Mon Feb 28 2005 Matthias Saou <http://freshrpms.net/> 0.92-1
+* Mon Feb 28 2005 Matthias Saou <https://freshrpms.net/> 0.92-1
 - Remove wrong -march for powerpc.
 - Add LDFLAGS override for ppc to fix YDL4 build, thanks to Stig Sørensen.
 
-* Thu Feb 24 2005 Matthias Saou <http://freshrpms.net/> 0.92-1
+* Thu Feb 24 2005 Matthias Saou <https://freshrpms.net/> 0.92-1
 - Update to 0.92.
 - Remove EXPAT Makefile change, the default is to use external lib now.
 - Change ASM_STRIP to true, further attempt to get a real debuginfo package.
 
-* Wed Jan 19 2005 Matthias Saou <http://freshrpms.net/> 0.90-1
+* Wed Jan 19 2005 Matthias Saou <https://freshrpms.net/> 0.90-1
 - Update to 0.90.
 
-* Thu Dec  9 2004 Matthias Saou <http://freshrpms.net/> 0.89-1
+* Thu Dec  9 2004 Matthias Saou <https://freshrpms.net/> 0.89-1
 - Update to 0.89 final.
 - Remove no longer needed libGL patch.
 
-* Fri Nov 12 2004 Matthias Saou <http://freshrpms.net/> 0.88-1
+* Fri Nov 12 2004 Matthias Saou <https://freshrpms.net/> 0.88-1
 - Update to 0.88 final.
 - Disable stripping to get proper debuginfo packages... nope :-/
 
-* Mon Nov  8 2004 Matthias Saou <http://freshrpms.net/> 0.88-0.cvs.1
+* Mon Nov  8 2004 Matthias Saou <https://freshrpms.net/> 0.88-0.cvs.1
 - Remove CVS dirs from the source.
 - Add libgl patch to change .so names so that devel packages aren't required
   at runtime.
 
-* Wed Nov  3 2004 Matthias Saou <http://freshrpms.net/> 0.88-0.cvs.1
+* Wed Nov  3 2004 Matthias Saou <https://freshrpms.net/> 0.88-0.cvs.1
 - Update to current CVS, all my bugs are fixed!
 - Release as 0.88 cvs.
 
-* Fri Oct 29 2004 Matthias Saou <http://freshrpms.net/> 0.87cvs-3
+* Fri Oct 29 2004 Matthias Saou <https://freshrpms.net/> 0.87cvs-3
 - Update all related files for 0.88.
 - This is still versionned 0.87cvs, but it has 0.88 core.
 - Disable EFFECT_MMX_ASM for x86_64, it fails too.
 
-* Mon Oct 25 2004 Matthias Saou <http://freshrpms.net/> 0.87cvs-2
+* Mon Oct 25 2004 Matthias Saou <https://freshrpms.net/> 0.87cvs-2
 - Disable X86_ASM_68000 on x86_64, it bombs out otherwise.
 - Disable X86_MIPS3_DRC on x86_64, it segfaults otherwise.
 - Replace invalid "3dfx" macro name with "glide3".
 
-* Sun Oct 24 2004 Matthias Saou <http://freshrpms.net/> 0.87cvs-1
+* Sun Oct 24 2004 Matthias Saou <https://freshrpms.net/> 0.87cvs-1
 - Removed specific sparc opts, please report if broken.
 - Removed xgl target, as the OpenGL support is now built in the x11 one.
 - Moved the main mame/mess binary into the main pakage, remove wrapper.
@@ -387,205 +387,205 @@ popd
 - Added Glide3 support to the x11 target.
 - Added -fno-merge-constants cflag to workaround unsorted coinage errors.
 
-* Sun Oct  3 2004 Matthias Saou <http://freshrpms.net/> 0.87-1
+* Sun Oct  3 2004 Matthias Saou <https://freshrpms.net/> 0.87-1
 - Update to 0.87, with the usual related files too.
 - Now enable both aRts drivers are they can co-exist.
 - Remove explicit binary requires.
 - Enable X86_ASM_68000, seems to compile properly now.
 
-* Thu Aug 26 2004 Matthias Saou <http://freshrpms.net/> 0.86-1
+* Thu Aug 26 2004 Matthias Saou <https://freshrpms.net/> 0.86-1
 - Update to 0.86, with the usual related files too.
 - Split off the roms to a separate source package.
 
-* Mon Aug 16 2004 Matthias Saou <http://freshrpms.net/> 0.85-1
+* Mon Aug 16 2004 Matthias Saou <https://freshrpms.net/> 0.85-1
 - Update to 0.85, with the usual related files too.
 - Added romcmp to be included, simplified the chdman and xml2info build.
 
-* Thu Jul 22 2004 Matthias Saou <http://freshrpms.net/> 0.84.1-2
+* Thu Jul 22 2004 Matthias Saou <https://freshrpms.net/> 0.84.1-2
 - Add 0.84.2 preview patch to fix xmess xgl build and other improvements.
 
-* Sat Jul 17 2004 Matthias Saou <http://freshrpms.net/> 0.84.1-1
+* Sat Jul 17 2004 Matthias Saou <https://freshrpms.net/> 0.84.1-1
 - Update to 0.84.1, with the usual related files too.
 - Added the xml2info utility to be built and included.
 - Added temporary fix for \" -> " to fix make problems with xgl target.
 
-* Sun Jun 13 2004 Matthias Saou <http://freshrpms.net/> 0.83.1-1
+* Sun Jun 13 2004 Matthias Saou <https://freshrpms.net/> 0.83.1-1
 - Update to 0.83.1, with the usual related files too.
 
-* Sun May 16 2004 Matthias Saou <http://freshrpms.net/> 0.82.1-1
+* Sun May 16 2004 Matthias Saou <https://freshrpms.net/> 0.82.1-1
 - Update to 0.82.1, with the usual related files too.
 
-* Mon May  3 2004 Matthias Saou <http://freshrpms.net/> 0.81.1-1
+* Mon May  3 2004 Matthias Saou <https://freshrpms.net/> 0.81.1-1
 - Update to 0.81.1, with the usual related files too.
 - Added arts support by default.
 
-* Fri Feb 20 2004 Matthias Saou <http://freshrpms.net/> 0.79.1-1
+* Fri Feb 20 2004 Matthias Saou <https://freshrpms.net/> 0.79.1-1
 - Update to 0.79.1, with the usual related files too.
 
-* Thu Feb 12 2004 Matthias Saou <http://freshrpms.net/> 0.78.1-3
+* Thu Feb 12 2004 Matthias Saou <https://freshrpms.net/> 0.78.1-3
 - Added xmame-0.78.1-fix.patch to fix PPC build.
 
-* Fri Jan 16 2004 Matthias Saou <http://freshrpms.net/> 0.78.1-1
+* Fri Jan 16 2004 Matthias Saou <https://freshrpms.net/> 0.78.1-1
 - Update to 0.78.1.
 - Updated all related files too.
 - Added chdman to the mame build.
 
-* Wed Nov 19 2003 Matthias Saou <http://freshrpms.net/> 0.77.1-1
+* Wed Nov 19 2003 Matthias Saou <https://freshrpms.net/> 0.77.1-1
 - Update to 0.77.1.
 - Updated all related files too, catver is up-to-date at last.
 
-* Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 0.76.1-2
+* Fri Nov  7 2003 Matthias Saou <https://freshrpms.net/> 0.76.1-2
 - Rebuilt for Fedora Core 1.
 
-* Sun Oct 26 2003 Matthias Saou <http://freshrpms.net/>
+* Sun Oct 26 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.76.1, updated related files too (catver is still 0.74u1 though).
 
-* Tue Sep 16 2003 Matthias Saou <http://freshrpms.net/>
+* Tue Sep 16 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.74.1.
 - Updated all related files too.
 
-* Sat Aug 16 2003 Matthias Saou <http://freshrpms.net/>
+* Sat Aug 16 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.72.1.
 - Updated all related files too.
 
-* Sat Jul 19 2003 Matthias Saou <http://freshrpms.net/>
+* Sat Jul 19 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.71.1.
 - Updated all related files too.
 - Added patch to fix build with the MIPS3_DRC.
 
-* Thu Jun 19 2003 Matthias Saou <http://freshrpms.net/>
+* Thu Jun 19 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.70.1.
 - Updated all related files too.
 
-* Fri Jun 13 2003 Matthias Saou <http://freshrpms.net/>
+* Fri Jun 13 2003 Matthias Saou <https://freshrpms.net/>
 - Added mips3 build option.
 
-* Tue May 27 2003 Matthias Saou <http://freshrpms.net/>
+* Tue May 27 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.69.1.
 - Updated all extra files.
 - Changes to reflect the new doc organisation.
 - Replace the default prefix, defaults should work and be coherent now.
 - Removed "optional" directories from %{_datadir}/xmame.
 
-* Fri May 22 2003 Matthias Saou <http://freshrpms.net/>
+* Fri May 22 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.68.1.
 - Updated all the extra files to their 0.68 versions.
 - Merged Panu's mess additions and new wrapper script.
 
-* Mon Apr 14 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Apr 14 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.67.2.
 - Update catver and history to 0.67.
 - Removed nno longer needed install patch.
 
-* Thu Apr 10 2003 Matthias Saou <http://freshrpms.net/>
+* Thu Apr 10 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.67.1.
 - Split the free (beer ;-)) roms in a sub-package at last.
 - Many spec tweaks.
 
-* Mon Mar 31 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Mar 31 2003 Matthias Saou <https://freshrpms.net/>
 - Rebuilt for Red Hat Linux 9.
 
-* Thu Mar 20 2003 Matthias Saou <http://freshrpms.net/>
+* Thu Mar 20 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.66.2.
 
-* Tue Mar 18 2003 Matthias Saou <http://freshrpms.net/>
+* Tue Mar 18 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.66.1, and update all related files.
 - Removed now unneeded patches.
 - Fix CFLAGS and CPU_TYPE for ppc!
 
-* Sat Feb 22 2003 Matthias Saou <http://freshrpms.net/>
+* Sat Feb 22 2003 Matthias Saou <https://freshrpms.net/>
 - Build with new blit and xgl patches.
 - Re-enable asm68000 on x86.
 - Added the OpenGL cabinets to the xgl package.
 
-* Wed Feb 12 2003 Matthias Saou <http://freshrpms.net/>
+* Wed Feb 12 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.65.1.
 - Disable xgl by default (been broken for some time now).
 
-* Fri Feb  7 2003 Matthias Saou <http://freshrpms.net/>
+* Fri Feb  7 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.64.1-rc2.
 - Cleanup of the optflags to reflect upstream changes.
 - Remove obsolete cpu patch.
 
-* Fri Jan 31 2003 Matthias Saou <http://freshrpms.net/>
+* Fri Jan 31 2003 Matthias Saou <https://freshrpms.net/>
 - Major changes : Files are now in %%{_datadir}/xmame.
 - All directories are now 2775 to allow more to be done by "game" members.
 - Removed "snap" link, "cab" directory and added "icons" one.
 - Disable asm68000 by default as it's broken.
 
-* Wed Jan 29 2003 Matthias Saou <http://freshrpms.net/>
+* Wed Jan 29 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.64.1rc1.
 - Updated all associated files and added catver to the docs!
 - Added romalizer to the docs + a few cleanups.
 
-* Mon Jan 13 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Jan 13 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.62.2.
 - Update history to 62b and mameinfo to 4.26.
 
-* Tue Dec 11 2002 Matthias Saou <http://freshrpms.net/>
+* Tue Dec 11 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.62.1-rc3.
 - Included the latest testing netmame code.
 
-* Mon Dec  2 2002 Matthias Saou <http://freshrpms.net/>
+* Mon Dec  2 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.62.1-rc1.
 
-* Mon Nov 25 2002 Matthias Saou <http://freshrpms.net/>
+* Mon Nov 25 2002 Matthias Saou <https://freshrpms.net/>
 - Cleanup and Sparc fixes thanks to Ralf Ertzinger.
 
-* Fri Nov 15 2002 Matthias Saou <http://freshrpms.net/>
+* Fri Nov 15 2002 Matthias Saou <https://freshrpms.net/>
 - Updated history data to 62.
 - Updated Mameinfo to 4.20.
 - Added default ALSA support.
 - Fixed missing "samples" directory.
 
-* Thu Nov 14 2002 Matthias Saou <http://freshrpms.net/>
+* Thu Nov 14 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.61.1 final.
 - Updated highscore data to 7.95.
 - Updated history data to 61f.
 - Updated Mameinfo to 4.1b.
 
-* Sun Oct 27 2002 Matthias Saou <http://freshrpms.net/>
+* Sun Oct 27 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.61.1-pr9.
 - Removed XV specific stuff, just add it to the x11 target.
 - Moved binaries to %%{_bindir} in order to have them in the search path.
 - New %%{_prefix}/lib/games/xmame link to work with gxmame's default config.
 
-* Fri Oct  4 2002 Matthias Saou <http://freshrpms.net/>
+* Fri Oct  4 2002 Matthias Saou <https://freshrpms.net/>
 - Rebuilt for Red Hat Linux 8.0.
 - Updated all obsolete -malign to -falign.
 - Simplified --without stuff.
 - Added XV build.
 
-* Wed Sep 25 2002 Matthias Saou <http://freshrpms.net/>
+* Wed Sep 25 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.61.1-pr7.
 
-* Tue Aug 20 2002 Matthias Saou <http://freshrpms.net/>
+* Tue Aug 20 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.61.1-pr3.
 
-* Tue Aug 13 2002 Matthias Saou <http://freshrpms.net/>
+* Tue Aug 13 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.61.1-pr2.
 
-* Thu Jul 18 2002 Matthias Saou <http://freshrpms.net/>
+* Thu Jul 18 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.61.1-pr1.
 
-* Mon May 27 2002 Matthias Saou <http://freshrpms.net/>
+* Mon May 27 2002 Matthias Saou <https://freshrpms.net/>
 - Mostly fixes for building on PPC, thanks to Ralf Ertzinger.
 
-* Mon May  6 2002 Matthias Saou <http://freshrpms.net/>
+* Mon May  6 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.60.1.
 
-* Thu May  2 2002 Matthias Saou <http://freshrpms.net/>
+* Thu May  2 2002 Matthias Saou <https://freshrpms.net/>
 - Rebuilt against Red Hat Linux 7.3.
 - Added the %{?_smp_mflags} expansion.
 
-* Fri Apr 19 2002 Matthias Saou <http://freshrpms.net/>
+* Fri Apr 19 2002 Matthias Saou <https://freshrpms.net/>
 - Looking quite good now.
 - Update to 0.59.2.
 - Added %post and %postun scriptlets for the /usr/bin/xmame link.
 
-* Thu Apr 11 2002 Matthias Saou <http://freshrpms.net/>
+* Thu Apr 11 2002 Matthias Saou <https://freshrpms.net/>
 - Spec file maturing a bit, still in constant development.
 
-* Sun Jan 13 2002 Matthias Saou <http://freshrpms.net/>
+* Sun Jan 13 2002 Matthias Saou <https://freshrpms.net/>
 - Spec file rewrite from scratch.
 

@@ -4,8 +4,8 @@ Group: User Interface/Desktops
 Summary: Plugins for the Hildon marquee
 Version: 0.22
 Release: 1
-Source: http://moblin.org/build-results/projects/marquee-plugins/lpia/marquee-plugins_%{version}.tar.gz
-URL: http://www.moblin.org/projects/projects_ui.php
+Source: https://moblin.org/build-results/projects/marquee-plugins/lpia/marquee-plugins_%{version}.tar.gz
+URL: https://www.moblin.org/projects/projects_ui.php
 BuildRequires: gtk2-devel, hildon-desktop-devel
 Requires: gtk2, hildon-desktop
 

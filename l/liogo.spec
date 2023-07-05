@@ -4,9 +4,9 @@ Release:	46.1
 Summary:	A Logo compiler for .NET
 License:	GPL
 Group:		Development/Languages
-Source0:	http://sourceforge.net/projects/liogo/files/%{name}/%{version}/%{name}-%{version}-src-win32.zip
+Source0:	https://sourceforge.net/projects/liogo/files/%{name}/%{version}/%{name}-%{version}-src-win32.zip
 Source1:	%{name}.png
-URL:		http://liogo.sourceforge.net/
+URL:		https://liogo.sourceforge.net/
 BuildRequires:	mono-devel, nant, mono-winforms, mono-nunit
 BuildRequires:	libgdiplus-devel
 BuildArch:	noarch

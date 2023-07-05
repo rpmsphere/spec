@@ -4,8 +4,8 @@ Version: 20170901
 Release: 9.1
 Group: Sciences/Chemistry
 License: LGPL
-URL: http://www.ogion76.name/home/mmcalc
-Source: http://www.ogion76.name/home/mmcalc/%name-%version.tar.gz
+URL: https://www.ogion76.name/home/mmcalc
+Source: https://www.ogion76.name/home/mmcalc/%name-%version.tar.gz
 BuildArch: noarch
 BuildRequires: perl-Module-Build
 BuildRequires: perl-File-BaseDir

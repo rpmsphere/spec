@@ -24,7 +24,7 @@ Vendor: Alessandro de Oliveira Faria (A.K.A. CABELO) <alessandrofaria@netitec.co
 Group: Development/Libraries
 Group(pt_BR): Desenvolvimento/Bibliotecas
 Source0: libhaircapture-%{version}.tar.gz 
-URL: http://lhaircapture.sourceforge.net
+URL: https://lhaircapture.sourceforge.net
 
 %description 
 hairCapture is a C++ object class library for live video handling, using the camera ip and V4L1/2 (Video for Linux version 1) API's calls, for Linux operating system. It's run both in X and console, and live video is displayed by SDL library.

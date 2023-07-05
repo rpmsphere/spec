@@ -1,11 +1,11 @@
 Name:         crush-tools
 Summary:      Custom Reporting Utilities for Shell
-URL:          http://code.google.com/p/crush-tools/
+URL:          https://code.google.com/p/crush-tools/
 Group:        Text
 License:      Apache
 Version:      2013.04
 Release:      13.1
-Source0:      http://crush-tools.googlecode.com/files/crush-tools-2013-04.tar.gz
+Source0:      https://crush-tools.googlecode.com/files/crush-tools-2013-04.tar.gz
 
 %description
 CRUSH (Custom Reporting Utilities for SHell) is a collection of

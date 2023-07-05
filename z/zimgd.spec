@@ -6,7 +6,7 @@ Release:  14.1
 Summary:  A lightweight and high performance image storage and processing system
 Group:    System Environment/Deamons
 License:  BSDv3
-URL:      http://zimg.buaa.us
+URL:      https://zimg.buaa.us
 Source:   zimg-%{version}.tar.gz
 BuildRequires: cmake
 BuildRequires: libevent-devel

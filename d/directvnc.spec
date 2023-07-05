@@ -4,8 +4,8 @@ Version:	0.7.8
 Release:	11.1
 License:	GPL
 Group:		Networking/Remote access
-URL:		http://www.adam-lilienthal.de/directvnc/
-Source:		http://cloud.github.com/downloads/drinkmilk/directvnc/%{name}-%{version}.tar.gz
+URL:		https://www.adam-lilienthal.de/directvnc/
+Source:		https://cloud.github.com/downloads/drinkmilk/directvnc/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	gcc-c++
 BuildRequires:	directfb-devel

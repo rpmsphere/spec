@@ -4,7 +4,7 @@ Version: 1.3
 Release: 5.1
 Group: Applications/Graphics
 License: GPLv3
-URL: http://ascii.dyne.org/
+URL: https://ascii.dyne.org/
 Source0: %{name}_%{version}.tar.gz
 Patch0: hasciicam_1.3_returns.patch
 BuildRequires: aalib-devel

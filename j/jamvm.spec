@@ -3,8 +3,8 @@ Version:       2.0.0
 Release:       5.1
 Summary:       A Java Virtual Machine which conforms to the JVM specification version 2
 Group:         System/Tools
-URL:           http://jamvm.sourceforge.net/
-Source:        http://kent.dl.sourceforge.net/sourceforge/jamvm/jamvm-%{version}.tar.gz
+URL:           https://jamvm.sourceforge.net/
+Source:        https://kent.dl.sourceforge.net/sourceforge/jamvm/jamvm-%{version}.tar.gz
 License:       GPL
 BuildRequires: glibc-devel
 BuildRequires: zlib-devel
@@ -30,7 +30,7 @@ This package contains static libraries and header files need for development.
 
 %build
 # Don't pass -fomit-frame-pointer, see:
-# http://www.nabble.com/Javavm-segmentation-fault-td4490648.html
+# https://www.nabble.com/Javavm-segmentation-fault-td4490648.html
 
 CC="%{__cc}" \
 ./configure \

@@ -4,7 +4,7 @@ Version:        1.9.1
 Release:        1
 License:        LGPL-2.0+
 Summary:        An easy to use, general purpose Computer Algebra System
-URL:            http://yacas.sourceforge.net/
+URL:            https://yacas.sourceforge.net/
 Group:          Productivity/Scientific/Math
 BuildRequires:  dejagnu
 BuildRequires:  fltk-devel

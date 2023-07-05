@@ -1,11 +1,11 @@
 Name:         hlfl
 Summary:      High-Level Firewall Language
-URL:          http://www.hlfl.org/
+URL:          https://www.hlfl.org/
 Group:        Language
 License:      GPL
 Version:      0.60.1
 Release:      3.1
-Source0:      http://www.hlfl.org/hlfl/hlfl-%{version}.tar.gz
+Source0:      https://www.hlfl.org/hlfl/hlfl-%{version}.tar.gz
 
 %description
 HLFL stands for "High Level Firewall Language". It translates

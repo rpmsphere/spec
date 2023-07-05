@@ -7,7 +7,7 @@ Source1:	%{name}-%{version}-language.c
 Source2:	%{name}.desktop
 Source3:        %{name}.png
 Vendor:         Mauro DePalma
-URL:            http://www.softcraft.org/gsnapshot/
+URL:            https://www.softcraft.org/gsnapshot/
 Group:          Applications/Multimedia
 Summary:        A GTK2 application for capturing a screen snapshot
 BuildRequires:  gtk2-devel, libxml2-devel, libwnck-devel, libX11-devel, libXmu-devel

@@ -5,7 +5,7 @@ Version:        4.5.0
 Release:        12.1
 License:        GPL-3.0
 Group:          Productivity/Multimedia/Other
-URL:            http://sourceforge.net/projects/tvpvrd
+URL:            https://sourceforge.net/projects/tvpvrd
 Source0: https://downloads.sourceforge.net/project/tvpvrd/%{name}-%{version}.tar.xz
 
 %description

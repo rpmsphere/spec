@@ -6,7 +6,7 @@ Release:        7.4
 Summary:        Jockey driver manager
 License:        GPLv2+
 URL:            https://launchpad.net/jockey
-Source0:        http://launchpad.net/jockey/trunk/%{version}/+download/%{name}-%{version}.tar.gz
+Source0:        https://launchpad.net/jockey/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 Source1:        fedora-%{name}-0.9.6.tar.bz2
 Patch0:         jockey-0.9.3-gtkwidthfix.patch
 BuildArch:      noarch 

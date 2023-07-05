@@ -7,7 +7,7 @@ Version:        0.2.1
 Release:        1
 License:        GPL
 Group:          Amusements/Games/Strategy/Turn Based
-URL:            http://www.marsnomercy.org/
+URL:            https://www.marsnomercy.org/
 BuildRequires:  gcc-c++ SDL-devel SDL_image-devel SDL_ttf-devel
 BuildRequires:  python2-scons <= 3.0.1
 BuildRequires:	mesa-libGL-devel

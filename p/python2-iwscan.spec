@@ -3,8 +3,8 @@ Version:       20090609
 Release:       4.1
 Summary:       Python bindings for wireless scanning via iwlib
 Group:         System/Libraries/Python
-URL:           http://projects.otaku42.de/browser/python-iwscan
-Source:        http://mirror.leaseweb.com/software/archlinux/other/python-iwscan/python-iwscan-%{version}.tar.gz
+URL:           https://projects.otaku42.de/browser/python-iwscan
+Source:        https://mirror.leaseweb.com/software/archlinux/other/python-iwscan/python-iwscan-%{version}.tar.gz
 License:       GPL
 BuildRequires: wireless-tools-devel
 BuildRequires: python2-devel

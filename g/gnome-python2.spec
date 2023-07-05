@@ -24,9 +24,9 @@ Release: 14
 License: LGPLv2+
 Group: Development/Languages
 Summary: PyGNOME Python extension module
-URL: http://download.gnome.org/sources/gnome-python/
+URL: https://download.gnome.org/sources/gnome-python/
 #VCS: git:git://git.gnome.org/gnome-python
-Source: http://download.gnome.org/sources/gnome-python/2.28/gnome-python-%{version}.tar.bz2
+Source: https://download.gnome.org/sources/gnome-python/2.28/gnome-python-%{version}.tar.bz2
 
 ### Dependencies ###
 
@@ -160,7 +160,6 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm {} \;
 %{python2_sitearch}/gtk-2.0/gnome/canvas.*
 %{python2_sitearch}/gtk-2.0/gnomecanvas.so
 %{_datadir}/pygtk/2.0/defs/canvas.defs
-%defattr(644,root,root,755)
 %doc examples/canvas/*
 
 %files bonobo
@@ -169,14 +168,12 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm {} \;
 %{python2_sitearch}/gtk-2.0/bonobo/*.so
 %{_datadir}/pygtk/2.0/defs/bonobo*.defs
 %{_datadir}/pygtk/2.0/argtypes/bonobo*
-%defattr(644,root,root,755)
 %doc examples/bonobo/*
 
 %files gconf
 %{python2_sitearch}/gtk-2.0/gconf.so
 %{_datadir}/pygtk/2.0/defs/gconf.defs
 %{_datadir}/pygtk/2.0/argtypes/gconf*
-%defattr(644,root,root,755)
 %doc examples/gconf/*
 
 %files gnomevfs
@@ -184,7 +181,6 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm {} \;
 %{python2_sitearch}/gtk-2.0/gnome/vfs*
 %{_libdir}/gnome-vfs-2.0/modules/libpythonmethod.so
 %doc %{_datadir}/gtk-doc/html/pygnomevfs
-%defattr(644,root,root,755)
 %doc examples/vfs/*
 
 %files devel

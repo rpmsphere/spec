@@ -5,14 +5,14 @@ Version:        1.0.dev8853
 Release:        5.1
 Summary:        Python interface to NCAR natgrid library
 License:        NCL Source Code License
-URL:            http://sourceforge.net/projects/matplotlib
+URL:            https://sourceforge.net/projects/matplotlib
 Group:          Development/Libraries/Python
 Source0:        natgrid-8853.tar.bz2
 BuildRequires:  python3-devel
 
 %description
 Python interface to NCAR natgrid library
-(http://www.ncarg.ucar.edu//ngmath/natgrid/nnhome.html).
+(https://www.ncarg.ucar.edu//ngmath/natgrid/nnhome.html).
 When installed, will be used by the matplotlib.mlab griddata function.
 
 %prep

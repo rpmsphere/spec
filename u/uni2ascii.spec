@@ -1,11 +1,11 @@
 Name:         uni2ascii
 Summary:      Convert between Unicode and ASCII
-URL:          http://billposer.org/Software/uni2ascii.html
+URL:          https://billposer.org/Software/uni2ascii.html
 Group:        Charset
 License:      GPL
 Version:      4.18
 Release:      3.1
-Source0:      http://billposer.org/Software/Downloads/uni2ascii-%{version}.tar.gz
+Source0:      https://billposer.org/Software/Downloads/uni2ascii-%{version}.tar.gz
 
 %description
 This package provides conversion in both directions between UTF-8

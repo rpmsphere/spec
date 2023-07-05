@@ -4,8 +4,8 @@ Version:	2.8.0
 Release:	12.1
 License:	GPL
 Group:		System/Libraries
-URL:		http://www.yassl.com/
-Source0:	http://www.yassl.com/%{name}-%{version}.zip
+URL:		https://www.yassl.com/
+Source0:	https://www.yassl.com/%{name}-%{version}.zip
 
 %description
 CyaSSL is a C language based SSL library developed for embedded environments

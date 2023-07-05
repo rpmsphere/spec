@@ -4,8 +4,8 @@ Summary:	Simple GUI for MEncoder
 Name:		acidrip
 Version:	0.14
 Release:	28.1
-Source:		http://prdownloads.sourceforge.net/acidrip/%{name}-%{version}.tar.bz2
-URL:		http://untrepid.com/acidrip
+Source:		https://prdownloads.sourceforge.net/acidrip/%{name}-%{version}.tar.bz2
+URL:		https://untrepid.com/acidrip
 License:	GPLv2
 Group:		Video/Editors and Converters
 Patch0:		%{name}-0.14-xvid_options.patch

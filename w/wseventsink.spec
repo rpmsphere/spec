@@ -3,7 +3,7 @@ BuildRequires:  gcc-c++ libwsman-devel pkgconfig
 BuildRequires:  curl-devel
 Version:        0.0.2
 Release:        14.1
-URL:            http://www.openwsman.org/
+URL:            https://www.openwsman.org/
 License:        BSD3c
 Group:          System/Management
 Summary:        Opensource Implementation of WS-Management - Event Sink Handler

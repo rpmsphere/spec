@@ -4,8 +4,8 @@ Release:       1
 Summary:       GTK+ mapping and GPS application
 Group:         Applications/Productivity
 License:       GPLv2
-URL:           http://www.tangogps.org/
-Source0:       http://www.tangogps.org/downloads/%{name}-%{version}.tar.gz
+URL:           https://www.tangogps.org/
+Source0:       https://www.tangogps.org/downloads/%{name}-%{version}.tar.gz
 Source1:       tangogps.desktop
 Source2:       %{name}-0.99.4.zh_TW.po
 Patch0:        tangogps-fixdso.patch

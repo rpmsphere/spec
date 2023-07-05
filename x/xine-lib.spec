@@ -1,5 +1,5 @@
 # TODO, sometime, maybe:
-# - libstk:  http://www.libstk.net/ - probably not, see 1.1.5 ChangeLog
+# - libstk:  https://www.libstk.net/ - probably not, see 1.1.5 ChangeLog
 # - drop the opengl video out plugin?
 
 %define         plugin_abi  1.30
@@ -33,18 +33,18 @@ Version:        1.1.21
 Release:        25.4
 License:        GPLv2+
 Group:          System Environment/Libraries
-URL:            http://www.xine-project.org/
+URL:            https://www.xine-project.org/
 # The tarball is generated from the upstream tarball using
 # the script in SOURCE1. It prunes potentially patented code
-#Source0:        http://downloads.sourceforge.net/xine/xine-lib-%{version}.tar.xz
+#Source0:        https://downloads.sourceforge.net/xine/xine-lib-%{version}.tar.xz
 Source0:        xine-lib-%{version}-pruned.tar.xz
 Source1:        xine-lib-cleanup-sources.sh
 
 Patch0:         xine-lib-1.1.19-no_autopoint.patch
 Patch1:         xine-lib-1.1.4-optflags.patch
-# http://bugzilla.redhat.com/470568
+# https://bugzilla.redhat.com/470568
 Patch2:         xine-lib-1.1.17-avsync_hack.patch
-# http://bugzilla.redhat.com/477226
+# https://bugzilla.redhat.com/477226
 Patch3:         xine-lib-1.1.16.2-multilib.patch
 # find the Samba 4 libsmbclient.h using pkg-config (#909825)
 Patch4:         xine-lib-1.1.21-samba4.patch
@@ -689,7 +689,7 @@ rm -rf $RPM_BUILD_ROOT
 
 * Sat Nov 11 2006 Aurelien Bompard <abompard@fedoraproject.org> 1.1.2-18
 - Make shn files available to amarok. References:
-  http://xine.cvs.sourceforge.net/xine/xine-lib/src/demuxers/demux_shn.c?r1=1.1.2.2&r2=1.2
+  https://xine.cvs.sourceforge.net/xine/xine-lib/src/demuxers/demux_shn.c?r1=1.1.2.2&r2=1.2
   https://launchpad.net/distros/ubuntu/+source/xine-lib/+bug/63130
 
 * Wed Oct 18 2006 Aurelien Bompard <abompard@fedoraproject.org> 1.1.2-17

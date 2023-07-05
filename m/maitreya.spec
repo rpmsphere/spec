@@ -4,7 +4,7 @@ Version:	8.0.1
 Release:	1
 License:	GPLv2+
 Group:		Sciences/Astronomy
-URL:		http://www.saravali.de/
+URL:		https://www.saravali.de/
 Source0:	https://github.com/martin-pe/maitreya8/releases/download/v%{version}/maitreya8-%{version}.tar.bz2
 BuildRequires:	wxGTK3-devel
 

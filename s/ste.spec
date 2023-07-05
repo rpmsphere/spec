@@ -3,9 +3,9 @@ Version:        0.4.0
 Release:        7.1
 License:        GPL-2.0+
 Summary:        Powerful Plain Text Editor
-URL:            http://ste.sintegrial.com
+URL:            https://ste.sintegrial.com
 Group:          Productivity/Text/Editors
-Source0:        http://ste-editor.googlecode.com/files/%{name}-%{version}-src.7z
+Source0:        https://ste-editor.googlecode.com/files/%{name}-%{version}-src.7z
 # PATCH-FIX-UPSTREAM ste-0.4.0-ste-uncrustify_includes.patch lazy.kent@opensuse.org -- add missing includes
 Patch0:         ste-0.4.0-ste-uncrustify_includes.patch
 # PATCH-FIX-UPSTREAM ste-0.4.0-gcc47.patch lazy.kent@opensuse.org -- fix compilation with GCC 4.7

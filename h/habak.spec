@@ -6,8 +6,8 @@ Version:	0.2.5
 Release:	1
 License:	GPL
 Group:		Graphical desktop/Other
-Source0:	http://fvwm-crystal.berlios.de/files/files/habak/%{name}-%{version}.tar.gz
-URL:		http://fvwm-crystal.berlios.de/
+Source0:	https://fvwm-crystal.berlios.de/files/files/habak/%{name}-%{version}.tar.gz
+URL:		https://fvwm-crystal.berlios.de/
 BuildRequires:	imlib2-devel
 
 %description

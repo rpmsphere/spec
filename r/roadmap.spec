@@ -6,9 +6,9 @@ Release:	1
 Group:		Sciences/Geosciences
 License:	GPL
 Summary:	GPS Tracker
-URL:		http://roadmap.sourceforge.net/download.html
-Source0:	http://downloads.sourceforge.net/roadmap/%{name}-%{version}-src.tar.gz
-Source1:	http://downloads.sourceforge.net/roadmap/roadmap-1.2.0-wince-arm.cab
+URL:		https://roadmap.sourceforge.net/download.html
+Source0:	https://downloads.sourceforge.net/roadmap/%{name}-%{version}-src.tar.gz
+Source1:	https://downloads.sourceforge.net/roadmap/roadmap-1.2.0-wince-arm.cab
 Source2:	demo_maps.tar.gz
 Patch2:		roadmap-1.2.1-fix-paths.patch
 Requires:	gpsd

@@ -4,8 +4,8 @@ Group: Applications/System
 Summary: Widgets for the Maemo environment
 Version: 0.0.43
 Release: 1
-Source: http://moblin.org/build-results/projects/hildon-desktop/lpia/%{name}_%{version}-15.tar.gz
-URL: http://www.moblin.org/projects/projects_ui.php
+Source: https://moblin.org/build-results/projects/hildon-desktop/lpia/%{name}_%{version}-15.tar.gz
+URL: https://www.moblin.org/projects/projects_ui.php
 BuildRequires: gtk2-devel, libhildon-devel, libXtst-devel
 Requires: gtk2, libhildon, libXtst, hildon-desktop-libs
 

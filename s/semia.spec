@@ -4,9 +4,9 @@ Summary: Semi-automated algorithm for measurement of ST levels
 Name: semia
 Version: 3.0.1
 Release: 3.2
-Source0: http://www.physionet.org/physiobank/database/ltstdb/%{name}-%{version}.tar.gz
+Source0: https://www.physionet.org/physiobank/database/ltstdb/%{name}-%{version}.tar.gz
 License: GPL
-URL: http://physionet.org/physiobank/database/ltstdb/semia/
+URL: https://physionet.org/physiobank/database/ltstdb/semia/
 Group: Applications/Engineering
 BuildRequires: libX11-devel
 BuildRequires: xview-devel

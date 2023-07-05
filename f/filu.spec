@@ -4,8 +4,8 @@ Version: 2013.08.30
 Release: 11.1
 Group: Applications/Productivity
 License: GPLv2
-URL: http://filu.sourceforge.net/
-Source0: http://sourceforge.net/projects/filu/files/filu-snapshot-2013-08-30.tar.gz
+URL: https://filu.sourceforge.net/
+Source0: https://sourceforge.net/projects/filu/files/filu-snapshot-2013-08-30.tar.gz
 BuildRequires: cmake
 BuildRequires: qt-devel
 BuildRequires: qt-postgresql
@@ -24,10 +24,10 @@ sed -i '/ReqPostgreSqlVersion/d' libs/qt-psqldriver/CMakeLists.txt
 
 %build
 %cmake
-make %{?_smp_mflags}
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 %ifarch x86_64 aarch64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif

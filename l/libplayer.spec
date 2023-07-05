@@ -6,8 +6,8 @@
 Name: libplayer
 Version: 2.0.1
 Release: 1
-URL: http://libplayer.geexbox.org/
-Source:	http://libplayer.geexbox.org/releases/%{name}-%{version}.tar.bz2
+URL: https://libplayer.geexbox.org/
+Source:	https://libplayer.geexbox.org/releases/%{name}-%{version}.tar.bz2
 License: LGPLv2+
 Summary: A multimedia A/V abstraction layer API
 Group: System/Libraries

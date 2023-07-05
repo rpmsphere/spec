@@ -2,13 +2,12 @@ Name:           btnx
 Version:        0.4.11
 Release:        9.1
 Summary:        Mouse Button Extension
-# http://www.ollisalonen.com/btnx/btnx-%{version}.tar.gz
+# https://www.ollisalonen.com/btnx/btnx-%{version}.tar.gz
 Source:         btnx-%{version}.tar.bz2
 Patch1:         btnx-remove_Werror.patch
-URL:            http://www.ollisalonen.com/btnx/
+URL:            https://www.ollisalonen.com/btnx/
 Group:          Hardware/Other
 License:        GNU General Public License version 2 (GPL v2)
-BuildRoot:      %{_tmppath}/build-%{name}-%{version}
 BuildRequires:  libdaemon-devel
 BuildRequires:  gcc make glibc-devel pkgconfig
 BuildRequires:  autoconf automake libtool
@@ -53,7 +52,6 @@ touch "$RPM_BUILD_ROOT%{_sysconfdir}/btnx/btnx_config"
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog COPYING NEWS README
 /etc/init.d/btnx
 /usr/sbin/rcbtnx

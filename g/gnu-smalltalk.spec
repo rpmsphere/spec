@@ -4,7 +4,7 @@ Version:        3.2.91
 Release:        1
 License:        GPLv2+ with exceptions
 Group:          Development/Languages
-URL:            http://smalltalk.gnu.org/
+URL:            https://smalltalk.gnu.org/
 
 Source:         ftp://alpha.gnu.org/gnu/smalltalk/smalltalk-%{version}.tar.gz
 Source1:        gnu-smalltalk.desktop
@@ -145,6 +145,8 @@ desktop-file-install \
    --dir $RPM_BUILD_ROOT%{_datadir}/applications \
   %{SOURCE1}
 
+mv $RPM_BUILD_ROOT/%{_mandir}/man1/gst.1 $RPM_BUILD_ROOT/%{_mandir}/man1/%{name}.1
+mv $RPM_BUILD_ROOT/%{_bindir}/gst $RPM_BUILD_ROOT/%{_bindir}/%{name}
 
 %post
 /sbin/install-info %{_infodir}/gst.info %{_infodir}/dir || :
@@ -162,7 +164,7 @@ fi
 %postun -p /sbin/ldconfig
 
 %files
-%{_bindir}/gst
+%{_bindir}/%{name}
 %{_bindir}/gst-blox
 %{_bindir}/gst-convert
 %{_bindir}/gst-doc
@@ -183,7 +185,7 @@ fi
 %{_datadir}/smalltalk
 %{_libexecdir}/smalltalk
 
-%{_mandir}/man1/gst.1*
+%{_mandir}/man1/%{name}.1*
 %{_mandir}/man1/gst-*
 
 %{_datadir}/applications/*.desktop

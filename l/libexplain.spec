@@ -4,8 +4,8 @@ Release:        1
 Summary:        Library functions to explain system call errors
 License:        LGPL-3.0+
 Group:          Development/Libraries/C and C++
-URL:            http://libexplain.sourceforge.net
-Source:         http://downloads.sf.net/libexplain/%{name}-%{version}.tar.gz
+URL:            https://libexplain.sourceforge.net
+Source:         https://downloads.sf.net/libexplain/%{name}-%{version}.tar.gz
 Patch0:         libexplain-1.4-largefile.patch
 Patch1:         libexplain-1.4-syscall.patch
 # PATCH-FIX-UPSTREAM libexplain-1.4-missing-defines.patch mpluskal@suse.com

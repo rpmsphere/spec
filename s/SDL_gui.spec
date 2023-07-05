@@ -1,9 +1,9 @@
 Name: SDL_gui
 Version: 0.10.3
 Release: 4.1
-Source0: http://67.37.196.70/~rhk/SDL_gui/%{name}-%{version}.tar.gz
+Source0: https://67.37.196.70/~rhk/SDL_gui/%{name}-%{version}.tar.gz
 Patch0: config.sub.patch
-URL: http://67.37.196.70/~rhk/SDL_gui/
+URL: https://67.37.196.70/~rhk/SDL_gui/
 License: LGPL
 Summary: A Graphical User Interface library for SDL
 Group: System Environment/Libraries

@@ -4,8 +4,8 @@ Version: 	0.0.1r35
 Release: 	1
 License: 	LGPL
 Group: 		Application/Multimedia
-URL:		http://hg.geexbox.org/libsvdrp
-Source0: 	http://sources.openbricks.org/devel/libsvdrp-r35.tar.bz2
+URL:		https://hg.geexbox.org/libsvdrp
+Source0: 	https://sources.openbricks.org/devel/libsvdrp-r35.tar.bz2
 
 %description
 libsvdrp is an interface library to allow C programs to interact

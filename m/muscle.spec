@@ -5,8 +5,8 @@ Version:        3.8.31
 Release:        6.1
 License:        Public Domain
 Group:          Productivity/Scientific/Other
-URL:            http://www.drive5.com/muscle
-Source:         http://www.drive5.com/%{name}/downloads%{version}/%{name}%{version}_src.tar.gz
+URL:            https://www.drive5.com/muscle
+Source:         https://www.drive5.com/%{name}/downloads%{version}/%{name}%{version}_src.tar.gz
 BuildRequires:  gcc-c++
 Source1:        %{name}-Makefile
 Summary:        Multiple sequence alignment

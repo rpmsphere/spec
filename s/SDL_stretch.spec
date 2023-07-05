@@ -7,7 +7,7 @@ Release: 1
 Summary: SDL_stretch - Stretch Functions For The Simple DirectMedia Layer
 License: LGPL
 Group:   Development/Libraries/C and C++
-URL:           http://sdl-stretch.sf.net
+URL:           https://sdl-stretch.sf.net
 Source0:       %{name}-%{version}.tar.bz2
 BuildRequires: SDL-devel
 BuildRequires: xmlto

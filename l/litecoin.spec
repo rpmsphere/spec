@@ -5,7 +5,7 @@ Release:	1
 License:	MIT/X11
 Group:		Databases
 Source0:	https://github.com/litecoin-project/litecoin/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-URL:		http://www.litecoin.org
+URL:		https://www.litecoin.org
 BuildRequires:	boost-devel
 BuildRequires:	qt5-qtbase-devel
 BuildRequires:	libdb-cxx-devel

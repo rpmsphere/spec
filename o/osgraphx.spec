@@ -6,8 +6,8 @@ Version: 1.0.0
 Release: 28.1
 Group: Applications/Multimedia
 License: GPLv2
-URL: http://sourceforge.net/projects/osgraphx/
-Source0: http://sourceforge.net/projects/%{name}/files/%{version}/osGraphX-%{version}.zip
+URL: https://sourceforge.net/projects/osgraphx/
+Source0: https://sourceforge.net/projects/%{name}/files/%{version}/osGraphX-%{version}.zip
 BuildRequires: dos2unix
 BuildRequires: qt4-devel
 BuildRequires: OpenSceneGraph-qt-devel

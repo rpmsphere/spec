@@ -4,7 +4,7 @@ License:        GPL-3.0+
 Group:          Hardware/Other
 Version:        0.1.7
 Release:        2.1
-URL:            http://nfc-tools.org/
+URL:            https://nfc-tools.org/
 Source:         %name-%version.tar.xz
 BuildRequires:  libnfc-devel
 

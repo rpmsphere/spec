@@ -6,9 +6,9 @@ Version:        0.2.0git
 Release:        16.1
 License:        LGPL-2.1 and LGPL-3.0
 Summary:        GObject SQLite wrapper
-URL:            http://gitorious.org/sqlheavy
+URL:            https://gitorious.org/sqlheavy
 Group:          System/Libraries
-Source0:        http://sqlheavy.googlecode.com/files/%{name}-master.tar.gz
+Source0:        https://sqlheavy.googlecode.com/files/%{name}-master.tar.gz
 BuildRequires:  libtool
 BuildRequires:  vala-compat-devel vala-compat vala-compat-tools
 BuildRequires:  glib2-devel

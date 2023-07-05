@@ -2,11 +2,11 @@ Name:           razercfg
 Version:        0.42
 Release:        1
 Summary:        A Razer device configuration tool
-# Icons are http://creativecommons.org/licenses/by/4.0/
+# Icons are https://creativecommons.org/licenses/by/4.0/
 License:        GPLv2
 Group:          Applications/System
-URL:            http://bues.ch/cms/hacking/razercfg.html
-Source0:        http://bues.ch/razercfg/%{name}-%{version}.tar.xz
+URL:            https://bues.ch/cms/hacking/razercfg.html
+Source0:        https://bues.ch/razercfg/%{name}-%{version}.tar.xz
 # Upstream provides none of the following files
 Source1:        razercfg.appdata.xml
 BuildRequires:  cmake >= 2.4

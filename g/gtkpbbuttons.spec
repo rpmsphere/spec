@@ -1,5 +1,5 @@
 Name:           gtkpbbuttons
-URL:            http://pbbuttons.berlios.de/projects/gtkpbbuttons/
+URL:            https://pbbuttons.berlios.de/projects/gtkpbbuttons/
 Summary:        Graphical PBButtons Client
 Version:        0.6.10
 Release:        156.1

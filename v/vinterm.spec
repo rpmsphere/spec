@@ -11,7 +11,6 @@ Patch4:             vinterm-fix_icon_destdir.patch
 URL:                https://code.google.com/p/vinterm/
 Group:              System/X11/Utilities
 License:            GPL-3.0+
-BuildRoot:          %{_tmppath}/build-%{name}-%{version}
 BuildRequires:      libconfig-devel
 BuildRequires:      SDL-devel
 BuildRequires:      libao-devel
@@ -57,7 +56,6 @@ Vintage Terminal has the following features:
     CC="%__cxx"
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS HACKING LICENSE NEWS README
 %{_bindir}/vinterm
 %{_datadir}/vinterm

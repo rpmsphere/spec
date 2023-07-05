@@ -4,8 +4,8 @@ Version: 0.1
 Release: 20.1
 Group: Applications/Engineering
 License: GPL
-URL: http://scan3d.sourceforge.net/
-Source0: http://sourceforge.net/projects/scan3d/files/scan3d/%{name}-%{version}/%{name}-%{version}.tar.gz
+URL: https://scan3d.sourceforge.net/
+Source0: https://sourceforge.net/projects/scan3d/files/scan3d/%{name}-%{version}/%{name}-%{version}.tar.gz
 BuildRequires: ImageMagick-c++-devel
 
 %description

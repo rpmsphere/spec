@@ -6,7 +6,7 @@ Version: 0.4.1
 Release: 6.1
 License: CC-BY-SA3
 Group: User Interface/Desktops
-Source: http://downloads.yoctoproject.org/releases/sato/%{name}-%{version}.tar.gz
+Source: https://downloads.yoctoproject.org/releases/sato/%{name}-%{version}.tar.gz
 URL: https://www.yoctoproject.org/
 BuildRequires: icon-naming-utils
 BuildArch: noarch

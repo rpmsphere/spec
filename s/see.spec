@@ -1,11 +1,11 @@
 Name:         see
 Summary:      Simple ECMAScript Engine
-URL:          http://www.adaptive-enterprises.com.au/~d/software/see/
+URL:          https://www.adaptive-enterprises.com.au/~d/software/see/
 Group:        Language
 License:      BSD
 Version:      3.1.1424
 Release:      18.1
-Source0:      http://www.adaptive-enterprises.com.au/~d/software/see/see-%{version}.tar.gz
+Source0:      https://www.adaptive-enterprises.com.au/~d/software/see/see-%{version}.tar.gz
 Patch:        see.patch
 BuildRequires: libtool-ltdl-devel
 

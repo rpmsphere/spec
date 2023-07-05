@@ -4,8 +4,8 @@ Version:	1.0
 Release:	15.1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://ccontrol.ozlabs.org/releases/%{name}-%{version}.tar.bz2
-URL:		http://ccontrol.ozlabs.org/
+Source0:	https://ccontrol.ozlabs.org/releases/%{name}-%{version}.tar.bz2
+URL:		https://ccontrol.ozlabs.org/
 BuildRequires: xmlto, asciidoc, valgrind
 BuildRequires: ghostscript-core, netpbm
 

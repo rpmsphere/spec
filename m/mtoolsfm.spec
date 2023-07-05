@@ -7,10 +7,10 @@ Version: 1.9.5
 Release: 7.1
 License: GPL
 Group: X11/Utilities
-URL: http://mtoolsfm.sourceforge.net/
+URL: https://mtoolsfm.sourceforge.net/
 Requires:	mtools
 BuildRequires:	gtk+-devel
-Source: http://downloads.sourceforge.net/mtoolsfm/%{_name}-%{version}.tar.gz
+Source: https://downloads.sourceforge.net/mtoolsfm/%{_name}-%{version}.tar.gz
 
 %description
 This program is a little file-manager and allows easy access 

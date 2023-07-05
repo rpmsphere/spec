@@ -4,8 +4,8 @@ Version:	1.0.5git
 Release:	1
 License:	GPLv2+
 Group:		Graphics
-URL:		http://amide.sourceforge.net
-Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tgz
+URL:		https://amide.sourceforge.net
+Source0:	https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tgz
 BuildRequires:	intltool
 BuildRequires:	perl-XML-Parser
 BuildRequires:	dcmtk-devel

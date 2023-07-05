@@ -3,11 +3,11 @@
 Name:		gnunet-fuse
 Version:	0.16.0
 Release:	1
-Source0:	http://gnunet.org/download/%{name}-%{version}.tar.gz
+Source0:	https://gnunet.org/download/%{name}-%{version}.tar.gz
 License:	GPLv2+
 Summary:	GNUnet FUSE interface
 Group:		Networking/File transfer
-URL:		http://gnunet.org/
+URL:		https://gnunet.org/
 BuildRequires:	gnunet-devel
 BuildRequires:	fuse-devel
 BuildRequires:  libsodium-devel

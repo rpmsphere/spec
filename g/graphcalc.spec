@@ -4,8 +4,8 @@ Version:	0.0.1
 Release:	8.1
 License:	GPL-2.0+
 Group:		Applications/Engineering
-URL:		http://www.graphcalc.com/
-Source0:	http://prdownloads.sourceforge.net/gcalc/graphcalc-0.0.1.tar.bz2
+URL:		https://www.graphcalc.com/
+Source0:	https://prdownloads.sourceforge.net/gcalc/graphcalc-0.0.1.tar.bz2
 BuildRequires:  gcc-c++, qt3-devel, ginac-devel, mesa-libGL-devel
 
 %description

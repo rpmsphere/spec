@@ -6,11 +6,11 @@ Release:        174.1
 Summary:        Handwriting Japanese Fonts
 License:        SUSE-Permissive
 Group:          System/X11/Fonts
-URL:            http://mikachan.sourceforge.jp/
-#Source0:        http://mikachan.sourceforge.jp/mikachanALL.lzh
+URL:            https://mikachan.sourceforge.jp/
+#Source0:        https://mikachan.sourceforge.jp/mikachanALL.lzh
 Source0:        mikachan-fonts.tar.bz2
-Source1:        http://mikachan.sourceforge.jp/dl.html
-Source2:        COPYING
+Source1:        https://mikachan.sourceforge.jp/dl.html
+Source2:        %name.COPYING
 BuildRequires:  convmv
 BuildArch:      noarch
 Requires(post): fontconfig
@@ -20,7 +20,8 @@ This package contains free Japanese fonts in "handwriting" style by Mika-Chan.
 
 %prep
 %setup -n %{name}
-cp %{SOURCE1} %{SOURCE2} .
+cp %{SOURCE1} .
+cp %{SOURCE2} COPYING
 convmv -f shift_jis -t utf-8 --notest *.ttf
 
 %build
@@ -36,7 +37,6 @@ install -c -m 644 *.ttf %{buildroot}%{fontdir}
 /usr/bin/fc-cache 2> /dev/null
 
 %files
-%defattr(-, root,root)
 %doc COPYING *.html
 %{fontdir}
 
@@ -54,7 +54,7 @@ install -c -m 644 *.ttf %{buildroot}%{fontdir}
 - remove unnecessary buildrequires for too old distros
 * Tue Dec  2 2008 mfabian@suse.de
 - Add inofficial translation of the license in
-  http://mikachan.sourceforge.jp/dl.html
+  https://mikachan.sourceforge.jp/dl.html
 * Wed Aug  9 2006 mfabian@suse.de
 - move fonts to /usr/share/fonts/truetype
   (openSUSE 10.2 will use X11R7).

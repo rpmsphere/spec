@@ -16,7 +16,7 @@ Release: 46
 License: GPLv2+ and LGPLv2+
 Group: Development/Languages
 Summary: Additional PyGNOME Python extension modules
-URL: http://www.pygtk.org/
+URL: https://www.pygtk.org/
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/gnome-python-extras/2.25/gnome-python-extras-%{version}.tar.bz2
 Obsoletes: gnome-python2-gda < 2.25.3-40
 Obsoletes: gnome-python2-gda-devel < 2.25.3-40

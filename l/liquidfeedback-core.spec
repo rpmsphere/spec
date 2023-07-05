@@ -7,12 +7,12 @@ Release:	1
 Summary:	Interactive Democracy Core
 License:	MIT/X11
 Group:		Productivity/Networking
-Source0:	http://www.public-software-group.org/pub/projects/liquid_feedback/backend/v%{version}/%{_name}-v%{version}.tar.gz
+Source0:	https://www.public-software-group.org/pub/projects/liquid_feedback/backend/v%{version}/%{_name}-v%{version}.tar.gz
 BuildRequires:	lighttpd
 BuildRequires:	postgresql-devel
 Requires:	lighttpd
 Requires:	postgresql-server
-URL:		http://liquidfeedback.org/
+URL:		https://liquidfeedback.org/
 
 %description
 LiquidFeedback is an open-source software, powering internet platforms for

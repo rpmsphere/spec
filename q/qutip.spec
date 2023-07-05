@@ -6,8 +6,8 @@ Version: 2.2.0
 Release: 7.1
 Group: Development/Libraries
 License: GPLv3
-URL: http://qutip.org/
-Source0: http://qutip.org/downloads/%{version}/QuTiP-%{version}.tar.gz
+URL: https://qutip.org/
+Source0: https://qutip.org/downloads/%{version}/QuTiP-%{version}.tar.gz
 BuildRequires: python3-devel numpy Cython atlas
 
 %description

@@ -5,8 +5,8 @@ Version:        1.9
 Release:        4
 Summary:        Astrology data
 License:        GPLv3+
-URL:            http://www.openastro.org
-Source0:        http://www.openastro.org/download.php?file=source&type=data#/%{srcname}_%{version}.orig.tar.gz
+URL:            https://www.openastro.org
+Source0:        https://www.openastro.org/download.php?file=source&type=data#/%{srcname}_%{version}.orig.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3-devel
 

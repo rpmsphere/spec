@@ -6,7 +6,7 @@ Version: 1.0.5
 Release: 1
 License: Dual GPL/commercial
 Group: Development/Other
-URL: http://embedthis.com/makeme
+URL: https://embedthis.com/makeme
 #SOURCE0: https://s3.amazonaws.com/embedthis.software/%{name}-%{version}-src.tgz
 SOURCE0: https://github.com/embedthis/makeme/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 

@@ -4,8 +4,8 @@ Group: User Interface/Desktops
 Summary: A terminal emulator based on SDL
 Version: 0.2.6
 Release: 5.1
-Source0: http://seehuhn.de/media/programs/jvterm-0.2.6.tar.gz
-URL: http://seehuhn.de/pages/jvterm
+Source0: https://seehuhn.de/media/programs/jvterm-0.2.6.tar.gz
+URL: https://seehuhn.de/pages/jvterm
 BuildRequires: freetype-devel, SDL-devel, SDL_gfx-devel, SDL_image-devel
 
 %description

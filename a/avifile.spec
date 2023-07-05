@@ -4,8 +4,8 @@ Version: 0.7.48
 Release: 1
 License: GPL
 Group: Applications/Multimedia
-URL: http://avifile.sourceforge.net/
-Source: http://dl.sf.net/avifile/avifile-0.7-%{version}.tar.bz2
+URL: https://avifile.sourceforge.net/
+Source: https://dl.sf.net/avifile/avifile-0.7-%{version}.tar.bz2
 Patch1: avifile-config.patch
 Patch2: ftbfs-freebsd.patch
 Patch3: ffmpeg.patch
@@ -180,8 +180,8 @@ desktop-file-install --vendor "" \
 
 * Thu May 31 2012 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - add patch from debian for building with gcc-4.7 (patch7)
-  http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=667107
-  http://packages.ubuntu.com/quantal/libavifile-0.7c2
+  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=667107
+  https://packages.ubuntu.com/quantal/libavifile-0.7c2
 
 * Tue May 31 2011 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - in >= fc15 the kernel no longer has the videodev.h include file, 
@@ -213,7 +213,7 @@ desktop-file-install --vendor "" \
 
 * Tue Dec 26 2006 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 0.7.45-2
 - added template gcc41 patch from here (patch2):
-  http://bugs.donarmstrong.com/cgi-bin/bugreport.cgi?bug=395386
+  https://bugs.donarmstrong.com/cgi-bin/bugreport.cgi?bug=395386
 - readded patch1 for extra qualification in mp3encode.cpp
 - a sed expression in configure gets confused when trying to deal
   with /usr/lib64 (the build system runs in a 64 bit machine) and 
@@ -238,7 +238,7 @@ desktop-file-install --vendor "" \
 - add missing buildrequires, do not build a package with lame or xvid
 - disable mmx to be able to build
 - do a maintainer-clean to fix ffmpeg subdir makefile:
-  http://prak.org/pipermail/avifile/2003-July/006991.html
+  https://prak.org/pipermail/avifile/2003-July/006991.html
 - enable exclusion of .la files
 - needs ffmpeg-devel package in buildrequires
 - no .la files generated in /usr/lib/*.la

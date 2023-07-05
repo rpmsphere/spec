@@ -6,8 +6,8 @@ Version: 20131016
 Release: 13.1
 Group: Development/Tools
 License: GPL
-URL: http://www.noxim.org/
-Source0: http://sourceforge.net/projects/noxim/files/noxim/%{name}-%{version}.tar.gz
+URL: https://www.noxim.org/
+Source0: https://sourceforge.net/projects/noxim/files/noxim/%{name}-%{version}.tar.gz
 BuildRequires: systemc
 
 %description

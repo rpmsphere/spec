@@ -4,9 +4,8 @@ Version: 0.1.1
 Release: 7.1
 Group: Development/Languages
 License: GPLv2
-URL: http://sourceforge.net/projects/linda/
-Source0: http://sourceforge.net/projects/linda/files/%{version}/%{name}/%{name}-%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+URL: https://sourceforge.net/projects/linda/
+Source0: https://sourceforge.net/projects/linda/files/%{version}/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: glib2-devel
 
 %description

@@ -4,8 +4,8 @@ Summary: Chinese X-term
 Name: cxterm
 Version: 5.2.4
 Release: 6.1
-URL: http://cxterm.sourceforge.net
-Source: http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tgz
+URL: https://cxterm.sourceforge.net
+Source: https://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tgz
 License: distributable
 Group: X11/Utilities/terms
 BuildRequires: libXt-devel, libXmu-devel, libXaw-devel

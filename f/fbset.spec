@@ -4,8 +4,8 @@ Version: 2.1
 Release: 47
 License: GPL+
 Group: Applications/System
-URL: http://users.telenet.be/geertu/Linux/fbdev/
-Source: http://users.telenet.be/geertu/Linux/fbdev/fbset-2.1.tar.gz
+URL: https://users.telenet.be/geertu/Linux/fbdev/
+Source: https://users.telenet.be/geertu/Linux/fbdev/fbset-2.1.tar.gz
 BuildRequires: gcc bison flex
 BuildRequires: perl-interpreter perl-generators
 Suggests: modeline2fb

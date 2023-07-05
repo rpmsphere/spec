@@ -6,8 +6,8 @@ Release:        16.4
 Summary:        A simple openstreetmap editor
 Group:          Applications/Internet
 License:        GPLv3+
-URL:            http://www.harbaum.org/till/maemo/index.shtml#osm2go
-Source0:        http://repository.maemo.org/extras/pool/fremantle/free/source/o/osm2go/osm2go_%{version}-maemo%{subrelease}.tar.gz
+URL:            https://www.harbaum.org/till/maemo/index.shtml#osm2go
+Source0:        https://repository.maemo.org/extras/pool/fremantle/free/source/o/osm2go/osm2go_%{version}-maemo%{subrelease}.tar.gz
 Patch0:         %{name}-linking.patch
 BuildRequires:  libpng-devel
 BuildRequires:  goocanvas-devel

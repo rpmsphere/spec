@@ -4,8 +4,8 @@ Group: System Environment/Libraries
 Summary: Widgets for the Maemo environment
 Version: 1.0.5
 Release: 1
-Source: http://moblin.org/build-results/projects/hildon-1/lpia/libhildon_%{version}-7.tar.gz
-URL: http://www.moblin.org/projects/projects_ui.php
+Source: https://moblin.org/build-results/projects/hildon-1/lpia/libhildon_%{version}-7.tar.gz
+URL: https://www.moblin.org/projects/projects_ui.php
 BuildRequires: gtk2-devel
 
 %description

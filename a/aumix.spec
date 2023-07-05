@@ -8,8 +8,8 @@ BuildRequires:	ncurses-devel
 BuildRequires:	gtk2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-Source0:	http://www.jpj.net/~trevor/aumix/%{name}-%{version}.tar.bz2
-URL: 		http://www.jpj.net/~trevor/aumix.html
+Source0:	https://www.jpj.net/~trevor/aumix/%{name}-%{version}.tar.bz2
+URL: 		https://www.jpj.net/~trevor/aumix.html
 
 %description
 This is a program for adjusting audio mixers from the command line or scripts,

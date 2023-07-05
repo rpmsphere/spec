@@ -3,16 +3,15 @@ Version:			0.7.5.2
 %define libwiimote_version 0.4
 Release:			8.1
 Summary:			Give Presentations with a Nintendo Wiimote
-Source:        http://dag.wieers.com/home-made/wiipresent/wiipresent-%{version}.tar.bz2
-# http://prdownloads.sourceforge.net/projects/libwiimote/libwiimote-%{libwiimote_version}.tgz
+Source:        https://dag.wieers.com/home-made/wiipresent/wiipresent-%{version}.tar.bz2
+# https://prdownloads.sourceforge.net/projects/libwiimote/libwiimote-%{libwiimote_version}.tgz
 Source1:       libwiimote-%{libwiimote_version}.tar.bz2
 Patch1:        libwiimote-optflags.patch
 Patch2:        wiipresent-libwiimote_prefix.patch
 Patch3:        libwiimote-newer_bluez.patch
-URL:			   http://dag.wieers.com/home-made/wiipresent/
+URL:			   https://dag.wieers.com/home-made/wiipresent/
 Group:			Hardware/Joystick
 License:			GNU General Public License version 2 (GPL v2)
-BuildRoot:		%{_tmppath}/build-%{name}-%{version}
 BuildRequires:	libX11-devel libXtst-devel
 BuildRequires: bluez-libs-devel
 BuildRequires:	gcc make glibc-devel
@@ -79,7 +78,6 @@ make DESTDIR=$RPM_BUILD_ROOT install \
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING README TODO ChangeLog
 %doc docs/*.html docs/*.txt
 %doc wiipresent-xinit.sh

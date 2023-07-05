@@ -4,8 +4,8 @@ Release:	1
 Summary:	YGP library
 Group:		library/System
 License:	GPL
-URL: 		http://libymp.sourceforge.net			
-Source0:	http://sourceforge.net/projects/libymp/files/%{name}-%{version}.tar.gz	
+URL: 		https://libymp.sourceforge.net			
+Source0:	https://sourceforge.net/projects/libymp/files/%{name}-%{version}.tar.gz	
 BuildRequires:	gmp-devel, gtkmm24-devel, gtkhtml3-devel
 
 %description

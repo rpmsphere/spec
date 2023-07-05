@@ -5,8 +5,7 @@ Release:		4.1
 Group:			Productivity/File utilities
 License:		GPL
 Source:			%{name}-%{version}.tar.gz
-URL:			http://home.hccnet.nl/paul.schuurmans/linux/index.html#xdircmp
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+URL:			https://home.hccnet.nl/paul.schuurmans/linux/index.html#xdircmp
 Patch0:			%{name}-%{version}-ncurses.patch
 BuildRequires:		ncurses-devel
 
@@ -27,7 +26,6 @@ for the purpose of keeping backup directories up-to-date.
 install -D -m755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %files
-%defattr(-,root,root,0755)
 %{_bindir}/%{name}
 %doc AUTHORS ChangeLog COPYING README
 

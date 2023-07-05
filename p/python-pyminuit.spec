@@ -6,8 +6,8 @@ Version: 1.2.1
 Release: 6.1
 Group: Development/Libraries
 License: GPL
-URL: http://code.google.com/p/pyminuit/
-Source0: http://pyminuit.googlecode.com/files/pyminuit-%{version}.tgz
+URL: https://code.google.com/p/pyminuit/
+Source0: https://pyminuit.googlecode.com/files/pyminuit-%{version}.tgz
 BuildRequires: python3-devel
 BuildRequires: minuit-devel
 

@@ -6,8 +6,8 @@ Version:	0.11
 Release:	3.1
 License:	GPLv3
 Group:		Development/Languages
-Source0:	http://www.eliza.ch/dist/Source/Eliza.zip
-URL:		http://www.eliza.ch
+Source0:	https://www.eliza.ch/dist/Source/Eliza.zip
+URL:		https://www.eliza.ch
 BuildRequires:	gcc-c++, coco-c
 
 %description

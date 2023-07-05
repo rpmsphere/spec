@@ -4,7 +4,7 @@ Release: 31.4
 Summary: A real-time, text-based, serverless chat program dedicated to LANs
 License: GPL
 Group: Networking/Chat
-URL: http://freecode.com/projects/vyqchat
+URL: https://freecode.com/projects/vyqchat
 Source: %name-%version.tar.gz
 Source1: %name.desktop
 Source2: %name.xpm

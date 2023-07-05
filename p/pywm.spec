@@ -4,8 +4,8 @@ Version: 0.1
 Release: 3.1
 Group: User Interface/X
 License: GPL
-URL: http://pywm.sourceforge.net/
-Source0: http://sourceforge.net/projects/pywm/files/pywm/0.1-1-a4-1/%{name}-0.1-1-a4-1.tar.bz2
+URL: https://pywm.sourceforge.net/
+Source0: https://sourceforge.net/projects/pywm/files/pywm/0.1-1-a4-1/%{name}-0.1-1-a4-1.tar.bz2
 BuildRequires: fltk-devel
 BuildRequires: Pyrex
 

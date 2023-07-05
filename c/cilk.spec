@@ -6,8 +6,8 @@ Release: 1
 Summary: Language for multithreaded parallel programming based on ANSI C
 License: GPL v2 or later
 Group: Development/C
-URL: http://supertech.csail.mit.edu/cilk/
-Source: http://supertech.csail.mit.edu/cilk/cilk-5.4.6.tar.gz
+URL: https://supertech.csail.mit.edu/cilk/
+Source: https://supertech.csail.mit.edu/cilk/cilk-5.4.6.tar.gz
 Requires: %name-devel = %version-%release
 BuildRequires: flex chrpath
 

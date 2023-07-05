@@ -7,8 +7,8 @@ Version:	3.6.0
 Release:	1
 License:	GPLv2+
 Group:		Games/Arcade
-URL:		http://paintown.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/project/paintown/paintown/%{version}/%{name}-%{version}.tar.bz2
+URL:		https://paintown.sourceforge.net/
+Source0:	https://downloads.sourceforge.net/project/paintown/paintown/%{version}/%{name}-%{version}.tar.bz2
 Patch0:		paintown-3.6.0-static.patch
 Patch1:		paintown-3.6.0-cmake-freetype.patch
 BuildRequires:	cmake

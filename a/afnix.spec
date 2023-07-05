@@ -4,8 +4,8 @@ Version: 3.7.0
 Release: 1
 Group: interpreters
 License: Free Software
-URL: http://www.afnix.org/
-Source0: http://www.afnix.org/ftp/%{name}-src-%{version}.tgz
+URL: https://www.afnix.org/
+Source0: https://www.afnix.org/ftp/%{name}-src-%{version}.tgz
 BuildRequires: ncurses-devel
 
 %description

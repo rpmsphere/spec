@@ -4,7 +4,7 @@ Version: 3.15
 Release: 1
 License: GPLv3+ and LGPLv3+
 Source: ftp://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
-URL: http://www.gnu.org/software/%{name}/
+URL: https://www.gnu.org/software/%{name}/
 Group: System Environment/Libraries
 Requires: mailutils-libs = %{version}-%{release}
 Requires: gnutls >= 1.0.18

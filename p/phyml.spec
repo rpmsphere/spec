@@ -6,8 +6,8 @@ Version: 20120412
 Release: 5.1
 License: GPL
 Group: Applications/Bioinformatics
-URL: http://atgc.lirmm.fr/phyml/
-Source0: http://www.lirmm.fr/~guindon/%{name}-%{version}.tar.gz
+URL: https://atgc.lirmm.fr/phyml/
+Source0: https://www.lirmm.fr/~guindon/%{name}-%{version}.tar.gz
 
 %description
 Authors: Stéphane Guindon (Auckland University, New Zealand) and Olivier Gascuel (LIRMM, Montpellier, France)

@@ -75,8 +75,8 @@ Name:           ffmpeg%{?flavor}
 Version:        3.3.6
 Release:        3.4
 License:        %{ffmpeg_license}
-URL:            http://ffmpeg.org/
-Source0:        http://ffmpeg.org/releases/ffmpeg-%{version}.tar.xz
+URL:            https://ffmpeg.org/
+Source0:        https://ffmpeg.org/releases/ffmpeg-%{version}.tar.xz
 # Patch based on https://git.ffmpeg.org/gitweb/ffmpeg.git/patch/078322f33ced4b2db6ac3e5002f98233d6fbf643
 Patch0:         LibOpenJPEG-2.2.patch
 # Patch based on https://git.ffmpeg.org/gitweb/ffmpeg.git/patch/41d6d627024393c142cf7cd93eff1d5a049105f5

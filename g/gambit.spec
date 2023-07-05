@@ -5,8 +5,8 @@ Version:	15.0.0
 Release:	8.1
 License:	GPLv2+
 Group:		Sciences/Mathematics
-URL:		http://www.gambit-project.org/
-Source0:	http://sourceforge.net/projects/gambit/files/gambit15/%{version}/%{name}-%{version}.tar.gz
+URL:		https://www.gambit-project.org/
+Source0:	https://sourceforge.net/projects/gambit/files/gambit15/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	ghostscript-core ImageMagick
 BuildRequires:	wxGTK3-devel
 

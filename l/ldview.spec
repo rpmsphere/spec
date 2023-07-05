@@ -4,7 +4,7 @@ Group: Amesements
 Version: 4.2
 Release: 78.1
 License: GPL
-URL: http://ldview.sourceforge.net
+URL: https://ldview.sourceforge.net
 Source0: LDView-4.2beta1.zip
 Source1: FD_ZERO64.h
 Source2: lib3ds-20080909.zip

@@ -3,9 +3,9 @@ Version: 1.9
 Release: 1
 Summary: A full-featured version of the classic dice game Yahtzee
 Group: Games/Boards
-URL: http://openyahtzee.sourceforge.net
+URL: https://openyahtzee.sourceforge.net
 License: GPL
-Source: http://downloads.sourceforge.net/openyahtzee/%{name}-%{version}.tar.bz2
+Source: https://downloads.sourceforge.net/openyahtzee/%{name}-%{version}.tar.bz2
 BuildRequires: wxGTK3-devel
 
 %description

@@ -3,11 +3,10 @@ Version:       0.3
 Release:       2.1
 Summary:       Resource constrained project scheduling library
 Group:         System/Libraries
-URL:           http://www.librcps.org
-Source:        http://www.librcps.org/librcps-%{version}.tar.gz
+URL:           https://www.librcps.org
+Source:        https://www.librcps.org/librcps-%{version}.tar.gz
 License:       GPL
 BuildRequires: glibc-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 LibRCPS aims to be a versatile, powerful and fast open source library for resource constrained project scheduling.
@@ -39,12 +38,10 @@ rm -rf "$RPM_BUILD_ROOT"
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-,root,root)
 %{_libdir}/librcps.so.*
 %doc AUTHORS COPYING ChangeLog NEWS README TODO
 
 %files devel
-%defattr(-,root,root)
 %{_includedir}/librcps.h
 %{_libdir}/librcps.a
 %{_libdir}/librcps.la

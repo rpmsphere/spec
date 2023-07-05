@@ -6,8 +6,8 @@ Version:	1.5.2
 Release:	4.1
 License:	Artistic
 Group:		Editors
-URL:		http://mahon.cwx.net/
-Source0:	http://mahon.cwx.net/sources/%{name}-%{version}.src.tgz
+URL:		https://mahon.cwx.net/
+Source0:	https://mahon.cwx.net/sources/%{name}-%{version}.src.tgz
 
 %description
 An easy to use text editor. Intended to be usable with little or no instruction.

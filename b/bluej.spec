@@ -3,7 +3,7 @@ Summary:          An integrated Java environment specifically designed for intro
 Version:          3.1.6
 Release:          4.1
 License:          Freely available to anyone as is for use and non-commercial distribution
-URL:              http://www.bluej.org/
+URL:              https://www.bluej.org/
 Group:            Development/Tools/IDE
 BuildRequires:    ant
 BuildRequires:    unzip
@@ -12,7 +12,7 @@ BuildRequires:    java-1.8.0-openjdk-devel lua
 Requires(post):   shared-mime-info
 Requires(postun): shared-mime-info
 BuildArch:        noarch
-Source0:          http://bluej.org/download/files/source/BlueJ-source-%(echo %{version}|tr -d .).zip
+Source0:          https://bluej.org/download/files/source/BlueJ-source-%(echo %{version}|tr -d .).zip
 Source1:          %{name}.desktop
 Source2:          bluej-hicolor-icons.tar.gz
 Source3:          build.properties
@@ -47,7 +47,7 @@ Requires:         %{name} = %{version}
 
 %description oxygen-icons
 This package provides MIME type icons that integrate well into the KDE
-Oxygen icon theme (http://www.oxygen-icons.org).
+Oxygen icon theme (https://www.oxygen-icons.org).
 
 %package kde
 License:          LGPLv3
@@ -195,7 +195,7 @@ rm -rf $RPM_BUILD_ROOT
 - Changed installation path
 * Thu Apr 28 2011 schoett@gmx.de
 - update to 304:
-  + Changelog: http://www.bluej.org/help/changes.html
+  + Changelog: https://www.bluej.org/help/changes.html
 * Thu Jul 30 2009 lars@linux-schulserver.de
 - Recommend new package bluej-extensions
 * Mon Jul 27 2009 lars@linux-schulserver.de

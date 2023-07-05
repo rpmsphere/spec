@@ -4,9 +4,8 @@ Version: 1.7.9p1
 Release: 3.1
 Group: Applications/Engineering
 License: BSD
-URL: http://seal.web.cern.ch/seal/snapshot/work-packages/mathlibs/minuit/
+URL: https://seal.web.cern.ch/seal/snapshot/work-packages/mathlibs/minuit/
 Source0: Minuit-1_7_9-patch1.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 MINUIT is a physics analysis tool for function minimization. The functions

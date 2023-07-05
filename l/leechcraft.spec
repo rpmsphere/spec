@@ -31,7 +31,7 @@ Release:        1.1
 Summary:        Modular Internet Client
 License:        BSL-1.0
 Group:          Productivity/Networking/Other
-URL:            http://leechcraft.org
+URL:            https://leechcraft.org
 
 Source0:        leechcraft-%{LEECHCRAFT_VERSION}.tar.xz
 
@@ -1396,7 +1396,7 @@ This package provides a Leechcraft quark handling text and images
 dropped on it.
 
 The dropped data is then sent to a data filter chosen by the user.
-See more at http://leechcraft.org/concepts-data-filters .
+See more at https://leechcraft.org/concepts-data-filters .
 
 
 %package otlozhu
@@ -1656,7 +1656,7 @@ Provides:       %{name}-scrobbler
 This package contains a Scroblibre plugin for LeechCraft.
 
 It is an implementation of the submissions protocol 1.2 with
-support ( http://www.audioscrobbler.net/development/protocol )
+support ( https://www.audioscrobbler.net/development/protocol )
 for sites other than last.fm (libre.fm for now). It can
 potentially handle arbitrary scrobbling URLs implementing the
 submissions protocol, but it is not exposed in the GUI (yet).

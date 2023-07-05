@@ -7,7 +7,7 @@ Release:   1
 License:   GPL
 Group:     Applications/Editors
 Source:    %{name}_%{version}-1.tar.gz
-URL:       http://setedit.sourceforge.net/
+URL:       https://setedit.sourceforge.net/
 BuildRequires: rhtvision-devel
 BuildRequires: aalib-devel
 BuildRequires: libmigdb-devel

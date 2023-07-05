@@ -8,11 +8,11 @@ Release:	1
 Summary:	Web application framework in Lua
 License:	MIT/X11
 Group:		Productivity/Networking
-Source0:	http://www.public-software-group.org/pub/projects/%{name}/v%{version}/%{name}-v%{version}.tar.gz
+Source0:	https://www.public-software-group.org/pub/projects/%{name}/v%{version}/%{name}-v%{version}.tar.gz
 BuildRequires:	libpq-devel
 BuildRequires:  postgresql-server-devel
 BuildRequires:	lua-devel
-URL:		http://www.public-software-group.org/webmcp
+URL:		https://www.public-software-group.org/webmcp
 
 %description
 WebMCP is web application framework written in Lua and C. Instead of using

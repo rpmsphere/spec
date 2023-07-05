@@ -1,6 +1,6 @@
 Name:         libghttp
 Summary:      GNOME HTTP Client Library
-URL:          http://www.gnome.org/
+URL:          https://www.gnome.org/
 Group:        Web
 License:      GPL/LGPL
 Version:      1.0.9

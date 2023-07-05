@@ -6,7 +6,7 @@ Version: 0.1.12r14
 Release: 13.1
 Group: User Interface/Desktops
 License: GPLv3
-URL: http://code.google.com/p/fxdesktop/
+URL: https://code.google.com/p/fxdesktop/
 Source0: %{name}-master.zip
 BuildRequires: libX11-devel
 BuildRequires: libXext-devel

@@ -4,8 +4,8 @@ Release:        1
 Summary:        An old-style, vertical scrolling space-shooter
 Group:          Amusements/Games
 License:        GPLv2+
-URL:            http://pink.odahoda.de/attic/gammapatrol/
-Source0:        http://pink.odahoda.de/attic/gammapatrol/gammapatrol-preview-0.3.tar.bz2
+URL:            https://pink.odahoda.de/attic/gammapatrol/
+Source0:        https://pink.odahoda.de/attic/gammapatrol/gammapatrol-preview-0.3.tar.bz2
 #Patch0:		exec_setting.patch
 Patch0:		gammapatrol_fixed_compile_bug.patch
 

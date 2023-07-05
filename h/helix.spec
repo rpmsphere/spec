@@ -11,7 +11,7 @@ Source1:        vendor.tar.xz
 Source2:        cargo_config
 Source3:        helix.sh
 Source4:        helix-rpmlintrc
-Source5:        README.SUSE
+Source5:        README.SUSE-%name
 BuildRequires:  cargo
 
 %description
@@ -28,7 +28,8 @@ cp %{SOURCE5} docs/README.SUSE
 #export RUSTFLAGS="-Clink-arg=-Wl,-z,relro,-z,now -C debuginfo=2"
 # We must disable fetching and building the treesitter grammars because this is a limitation with OBS cargo-packaging for now
 export HELIX_DISABLE_AUTO_GRAMMAR_BUILD=true
-cargo build --release --locked --offline
+cargo build --release
+# --locked --offline
 
 %install
 mkdir -p %{buildroot}%{_libexecdir}/%{name}/runtime

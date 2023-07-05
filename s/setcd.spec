@@ -3,11 +3,10 @@ Name:			setcd
 Version:		1.5
 Summary:		Control the behaviour of your cdrom device
 License:		GPLv2
-URL:			http://www.elseware.nl/linux/setcd/
+URL:			https://www.elseware.nl/linux/setcd/
 Group:			Hardware/Other
 Release:		8.1
 Source:			%{name}-%{version}.tar.gz
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Patch0:			%{name}-%{version}.diff.gz
 Patch1:			%{name}-%{version}.limits.diff
 Patch2:			%{name}-%{version}.Makefile.diff
@@ -40,7 +39,6 @@ install -m 755 %{name} $RPM_BUILD_ROOT/%{_bindir}
 install -m 644 %{name}.1 $RPM_BUILD_ROOT/%{_mandir}/man1/
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
 %doc README

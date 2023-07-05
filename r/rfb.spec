@@ -5,9 +5,9 @@ Group:          System/X11/Utilities
 Requires:       xclass
 Version:        0.6.1
 Release:        1379.1
-URL:            http://www.hexonet.de/software/rfb/
-#Original source: http://www.hexonet.de/download/rfb-0.6.1.tar.gz
-Source0:        http://www.hexonet.de/download/rfb-0.6.1.tar.bz2
+URL:            https://www.hexonet.de/software/rfb/
+#Original source: https://www.hexonet.de/download/rfb-0.6.1.tar.gz
+Source0:        https://www.hexonet.de/download/rfb-0.6.1.tar.bz2
 Patch0:         rfb-0.6.1-rpmoptflags.patch
 Patch1:         rfb-0.6.1-gcc3.dif
 Patch2:         rfb-0.6.1-socklen_t.dif

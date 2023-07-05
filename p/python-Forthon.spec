@@ -6,8 +6,8 @@ Release:        1
 Summary:        Python interface generator for Fortran based codes
 Group:          Development/Languages
 License:        BSD
-URL:            http://hifweb.lbl.gov/Forthon/
-Source0:        http://hifweb.lbl.gov/Forthon/Forthon-%{version}.tar.gz
+URL:            https://hifweb.lbl.gov/Forthon/
+Source0:        https://hifweb.lbl.gov/Forthon/Forthon-%{version}.tar.gz
 Patch1:		buildfixes.patch
 BuildRequires:  python3-devel
 BuildRequires:  environment-modules

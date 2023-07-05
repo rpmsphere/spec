@@ -6,8 +6,8 @@ Version: 1.14.7
 Release: 1
 License:  zlib/libpng License
 Group: Development/Languages
-Source: http://www.zenkinetic.com/Documents/zkl_vm_src.zip
-URL: http://www.zenkinetic.com/zkl.html
+Source: https://www.zenkinetic.com/Documents/zkl_vm_src.zip
+URL: https://www.zenkinetic.com/zkl.html
 
 %description
 It is imperative but borrows concepts from many programming paradigms,

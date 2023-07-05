@@ -5,7 +5,7 @@ Release: 1
 Group: Applications/System Applications/Network
 License: GPL
 URL: https://www.whycanticonnect.com/
-Source0: http://downloads.sourceforge.net/project/%{name}/%{name}-%{version}.tar.gz
+Source0: https://downloads.sourceforge.net/project/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: desktop-file-utils
 BuildRequires: wxGTK3-devel
 BuildRequires: openssl-devel

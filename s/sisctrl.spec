@@ -1,7 +1,7 @@
 Name:           sisctrl
 BuildRequires:  libpng-devel
 BuildRequires:  libXxf86vm-devel, libXv-devel, gtk2-devel pkgconfig
-URL:            http://www.winischhofer.net/
+URL:            https://www.winischhofer.net/
 License:        GPL v2 or later
 Group:          System/X11/Utilities
 Version:        0.0.20051202

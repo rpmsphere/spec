@@ -1,11 +1,11 @@
 Name:         microregex
 Summary:      Micro Regular Expression Library
-URL:          http://trac.kite-language.org/wiki/Microregex
+URL:          https://trac.kite-language.org/wiki/Microregex
 Group:        RegExp
 License:      MIT-style
 Version:      1.0b7
 Release:      6.1
-Source0:      http://www.kite-language.org/files/microregex-%{version}.tar.gz
+Source0:      https://www.kite-language.org/files/microregex-%{version}.tar.gz
 
 %description
 microregex is a lightweight regular expression library written in C.

@@ -7,7 +7,7 @@ Release: 11.1
 License: GPL
 Requires: pygtk2, xorg-x11-server-utils, xorg-x11-server-Xvfb, python-pillow, dbus-python, python-uuid
 Group: User Interface/Desktops
-URL: http://code.google.com/p/partiwm
+URL: https://code.google.com/p/partiwm
 Source: %{name}-all-%{version}.tar.gz
 BuildRequires: python, setuptool, Cython
 

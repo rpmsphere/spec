@@ -6,9 +6,9 @@ Release:	25.1
 Summary:	The Real Logo Compiler
 Group:		Development/Languages
 License:	GPL
-Source0:	http://sourceforge.net/projects/lhogho/files/%{name}/%{version}/%{name}.%{version}.src.tar.gz
+Source0:	https://sourceforge.net/projects/lhogho/files/%{name}/%{version}/%{name}.%{version}.src.tar.gz
 Source1:	_runtime.h
-URL:		http://lhogho.sourceforge.net/
+URL:		https://lhogho.sourceforge.net/
 Patch:		lhogho-0.0.026-64bit.patch
 
 %description

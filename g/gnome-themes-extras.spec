@@ -6,7 +6,7 @@ License: GPLv2+ and CC-BY-SA
 Group: Graphical desktop/GNOME
 Source0: https://download.gnome.org/sources/gnome-themes-extras/%{name}-%{version}.tar.bz2
 Patch: gnome-themes-extras-2.22.0-darklooks.patch
-URL: http://librsvg.sourceforge.net/theme.php
+URL: https://librsvg.sourceforge.net/theme.php
 BuildArch: noarch
 BuildRequires: perl-XML-Parser
 BuildRequires: gtk2-engines-devel

@@ -7,10 +7,10 @@ Release:         25.1
 Summary:         A grid-based manual tiling window manager
 Group:           User Interface/Desktops
 License:         GPL
-URL:             http://subforge.org/projects/subtle
+URL:             https://subforge.org/projects/subtle
 Requires:        rubypick ruby rxvt-unicode
 BuildRequires:   rubypick ruby-devel rubygem-rake rubygem-rdoc libX11-devel libXpm-devel xorg-x11-proto-devel freetype-devel
-Source0:         http://subforge.org/attachments/download/81/%{name}-%{version}-xi.tbz2
+Source0:         https://subforge.org/attachments/download/81/%{name}-%{version}-xi.tbz2
 Source1:         %{name}.desktop
 
 %description

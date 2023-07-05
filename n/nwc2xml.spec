@@ -13,10 +13,10 @@ BuildRequires:	wxGTK2-devel
 
 %description
 nwc2xml is a command line utility that converts the .nwc file
-format(http://www.noteworthysoftware.com/) into MusicXML
-(http://www.makemusic.com/musicxml).
+format(https://www.noteworthysoftware.com/) into MusicXML
+(https://www.makemusic.com/musicxml).
 This is a fork of nwc2xml with linux build options
-(http://code.google.com/p/nwc2xml/).
+(https://code.google.com/p/nwc2xml/).
 
 %prep
 %setup -q -n azmeuk-%{name}-%{svn}

@@ -7,7 +7,7 @@ Release:	6.1
 Summary:	Soundfont (SF2) Editor
 Group:		Applications/Multimedia
 License:	GPLv3+
-URL:		http://polyphone-soundfonts.com/
+URL:		https://polyphone-soundfonts.com/
 Source0:	polyphone-%{version}-src.zip
 BuildRequires:	qt5-qtbase-devel
 BuildRequires:	qt5-qtsvg-devel

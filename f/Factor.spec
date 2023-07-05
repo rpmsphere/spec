@@ -7,7 +7,7 @@ Version: 0.99
 Release: 0.1
 License: BSD
 Group: Development/Languages
-#Source0: http://downloads.factorcode.org/releases/%{version}/%{_name}-src-%{version}.zip
+#Source0: https://downloads.factorcode.org/releases/%{version}/%{_name}-src-%{version}.zip
 Source0: %{_name}-master.zip
 Source1: https://downloads.factorcode.org/images/master/boot.unix-arm.64.image
 Source2: https://downloads.factorcode.org/images/master/boot.unix-x86.64.image

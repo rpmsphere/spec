@@ -6,8 +6,8 @@ Version:       0.4.0
 Release:       11.1
 Summary:       A session management system for JACK and ALSA audio applications
 Group:         System/Multimedia
-URL:           http://lash-audio-session-handler.org/
-Source:        http://lash-audio-session-handler.org/download/%{name}-%{version}.tar.gz
+URL:           https://lash-audio-session-handler.org/
+Source:        https://lash-audio-session-handler.org/download/%{name}-%{version}.tar.gz
 Patch0:        %{name}-0.4.0-deprecated_jackAPI.patch
 License:       GPL
 BuildRequires: alsa-lib-devel

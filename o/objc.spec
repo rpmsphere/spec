@@ -7,8 +7,8 @@ Version:	3.3.25
 Release:	1
 License:	LGPL
 Group:		Development/Tools
-Source0:	http://users.telenet.be/stes/%{name}-%{version}.tar.gz
-URL:		http://users.telenet.be/stes/compiler.html
+Source0:	https://users.telenet.be/stes/%{name}-%{version}.tar.gz
+URL:		https://users.telenet.be/stes/compiler.html
 BuildRequires:	gcc
 BuildRequires:	automake
 BuildRequires:	byacc

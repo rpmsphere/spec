@@ -6,8 +6,8 @@ Release:        25.1
 Summary:        Open source perceptual hashing library
 Group:          System Environment/Libraries
 License:        GPLv3
-URL:            http://www.phash.org/
-Source0:        http://www.phash.org/releases/pHash-%{version}.tar.gz
+URL:            https://www.phash.org/
+Source0:        https://www.phash.org/releases/pHash-%{version}.tar.gz
 BuildRequires:  libjpeg-devel
 BuildRequires:  libpng-devel
 #BuildRequires:  ffmpeg-devel

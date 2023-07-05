@@ -5,8 +5,8 @@ Version:	0.2.4
 Release:	2.3
 License:	GPL
 Group:		Applications/Terminal
-Source0:	http://users.pandora.be/stes/%{name}-%{version}.tar.gz
-URL:		http://users.pandora.be/stes/compiler.html
+Source0:	https://users.pandora.be/stes/%{name}-%{version}.tar.gz
+URL:		https://users.pandora.be/stes/compiler.html
 BuildRequires:	automake
 BuildRequires:	byacc
 BuildRequires:	flex

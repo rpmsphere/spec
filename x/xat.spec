@@ -4,7 +4,7 @@ Version: 	0.1.0
 Release: 	1
 License: 	GPLv2
 Group: 		User Interface/X
-URL: 		http://wiki.c3sl.ufpr.br/multiseat/index.php/Xat
+URL: 		https://wiki.c3sl.ufpr.br/multiseat/index.php/Xat
 Source0: 	%{name}-%{version}.tar.gz
 BuildRequires:  libXi-devel, libX11-devel
 

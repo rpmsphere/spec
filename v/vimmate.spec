@@ -8,7 +8,7 @@ BuildArch:      noarch
 BuildRequires:  vim gvim ruby rubygems
 Requires:       vim gvim ruby rubygem-gtk2
 Summary:        VimMate
-URL:            http://vimmate.rubyforge.org/ 
+URL:            https://vimmate.rubyforge.org/ 
 
 %description
 VimMate is a graphical add-on to Vim with IDE-like features: it does more than 

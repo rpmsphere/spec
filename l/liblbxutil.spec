@@ -3,7 +3,7 @@ Version:       1.1.0
 Release:       4.1
 Summary:       X.Org lbxutil library
 Group:         System/Libraries
-URL:           http://x.org
+URL:           https://x.org
 Source:        ftp://x.org/pub/individual/lib/liblbxutil-%{version}.tar.bz2
 License:       MIT
 BuildRequires: xorg-x11-proto-devel

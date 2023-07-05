@@ -4,8 +4,8 @@ Release: 5.3
 Summary: An educational application to solve physics problems
 License: GPLv3
 Group: Graphical desktop/GNUstep
-URL: http://www.gnu.org/software/fisicalab/
-Source0:       http://ftp.gnu.org/gnu/fisicalab/%{name}-%{version}-1.tar.gz
+URL: https://www.gnu.org/software/fisicalab/
+Source0:       https://ftp.gnu.org/gnu/fisicalab/%{name}-%{version}-1.tar.gz
 Source2:       %{name}.png
 Source3:       %{name}.desktop
 BuildRequires: gcc-objc

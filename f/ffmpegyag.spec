@@ -4,7 +4,7 @@ Release:           7.1
 Summary:           Advanced GUI for ffmpeg
 License:           MIT
 Group:             Productivity/Multimedia/Video/Editors and Convertors
-URL:               http://sourceforge.net/projects/ffmpegyag
+URL:               https://sourceforge.net/projects/ffmpegyag
 Source:            ffmpegyag-code-%{version}.zip
 Patch0:            ffmpegyag.patch
 BuildRequires:     pkgconfig(alsa)
@@ -17,7 +17,7 @@ BuildRequires:     wxGTK3-devel
 %description
 FFmpegYAG is an advanced GUI for the popular FFmpeg audio/video encoding tool.
 To use all features (split/concat, x264 10 bit, HE-AAC) it is recommend to use
-the FFmpeg Hi (http://sourceforge.net/projects/ffmpeg-hi/) build.
+the FFmpeg Hi (https://sourceforge.net/projects/ffmpeg-hi/) build.
 
 Main features:
 * batch encoding for multiple tasks

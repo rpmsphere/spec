@@ -4,7 +4,7 @@ Summary:        A keyboard shortcut daemon
 Name:           actkbd
 Version:        0.2.8
 Release:        4.1
-URL:            http://users.softlab.ece.ntua.gr/~thkala/projects/actkbd/
+URL:            https://users.softlab.ece.ntua.gr/~thkala/projects/actkbd/
 License:	GPL v2+
 Group:		System/Configuration/Other
 Source:		%name-%version.tar

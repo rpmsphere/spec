@@ -8,7 +8,7 @@ Version:        2.5
 Release:        11.1
 Summary:        An aquarium in the root window
 Source:         %{name}-%{version}.tar.gz
-URL:            http://jim.rees.org/computers/xfishtank.html
+URL:            https://jim.rees.org/computers/xfishtank.html
 
 %description
 A nice little aquarium with funny fish -- yet another background

@@ -1,6 +1,6 @@
 Name:         gnuit
 Summary:      GNU Interactive Tools
-URL:          http://www.gnu.org/software/gnuit/
+URL:          https://www.gnu.org/software/gnuit/
 Group:        Terminal
 License:      GPL
 Version:      4.9.5

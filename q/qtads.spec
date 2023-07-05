@@ -2,8 +2,8 @@ Name:           qtads
 Summary:        GUI multimedia interpreter for TADS games
 Version:        2.1.7
 Release:        8.4
-Source0:        http://downloads.sourceforge.net/project/qtads/qtads-2.x/%{version}/%{name}-%{version}.tar.bz2
-URL:            http://qtads.sourceforge.net
+Source0:        https://downloads.sourceforge.net/project/qtads/qtads-2.x/%{version}/%{name}-%{version}.tar.bz2
+URL:            https://qtads.sourceforge.net
 License:        GPLv2+
 Group:          Amusements/Games/Other
 BuildRequires:  libpng-devel

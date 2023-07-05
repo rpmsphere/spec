@@ -4,8 +4,8 @@ Version: 2.13
 Release: 25.1
 Group: Applications/System
 License: GPLv2
-URL: http://users.skynet.be/Peter.Verthez/projects/intclock/
-Source0: http://www.peterverthez.net/projects/intclock/%{name}-%{version}.tar.gz
+URL: https://users.skynet.be/Peter.Verthez/projects/intclock/
+Source0: https://www.peterverthez.net/projects/intclock/%{name}-%{version}.tar.gz
 BuildRequires: perl-ExtUtils-MakeMaker
 BuildRequires: perl-Gtk2
 BuildRequires: perl-Data-Dumper

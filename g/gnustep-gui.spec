@@ -4,7 +4,7 @@ Release:        1
 Summary:        The GNUstep GUI library
 License:        GPLv2+ and GPLv3+
 Group:          Development/Libraries
-URL:            http://www.gnustep.org
+URL:            https://www.gnustep.org
 Source:         ftp://ftp.gnustep.org/pub/gnustep/core/%{name}-%{version}.tar.gz
 BuildRequires:  gcc-objc
 BuildRequires:  gmp-devel

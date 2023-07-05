@@ -2,11 +2,10 @@ Name: 	 	cowbell
 Summary: 	Music collection organizer and editor
 Version: 	0.2.7.1
 Release: 	12.1
-Source:		http://more-cowbell.org/releases/%{name}-%{version}.tar.bz2
-URL:		http://more-cowbell.org/
+Source:		https://more-cowbell.org/releases/%{name}-%{version}.tar.bz2
+URL:		https://more-cowbell.org/
 License:	GPLv2+
 Group:		Productivity/Multimedia
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	gcc-c++
 BuildRequires:	pkgconfig
 BuildRequires:	mono-devel gtk-sharp2-devel
@@ -48,7 +47,6 @@ desktop-file-install --vendor="" \
 rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog NEWS README
 %{_bindir}/%name
 %{_libdir}/%name

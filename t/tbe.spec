@@ -29,10 +29,10 @@ sed -i -e 's|share/games|share|' -e 's|games)|bin)|' CMakeLists.txt
 %cmake -DWITH_DOCS=OFF \
        -DBUILD_SHARED_LIBS=OFF \
        -DCMAKE_BUILD_TYPE=Release
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
 %doc AUTHORS DESCRIPTION README.md installer/License imagery/README.*

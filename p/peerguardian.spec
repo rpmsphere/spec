@@ -6,8 +6,8 @@ Release:	4.1
 Summary:	A privacy oriented firewall application
 Group:		Networking/Other
 License:	GPLv3
-URL:		http://sourceforge.net/projects/peerguardian/
-Source0:	http://downloads.sourceforge.net/project/peerguardian/PeerGuardian%20Linux/%{version}/%{sname}-%{version}.tar.gz
+URL:		https://sourceforge.net/projects/peerguardian/
+Source0:	https://downloads.sourceforge.net/project/peerguardian/PeerGuardian%20Linux/%{version}/%{sname}-%{version}.tar.gz
 BuildRequires:	libnetfilter_queue-devel
 BuildRequires:	polkit-qt-devel
 BuildRequires:	systemd-devel

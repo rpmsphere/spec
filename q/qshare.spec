@@ -2,7 +2,7 @@ Name:           qshare
 Version:        2.1.5
 Release:        9.1
 License:        GNU General Public License version 3.0 (GPLv3)
-Source0:        http://www.zuzuf.net/qshare/files/%{name}-%{version}-src.tar.bz2
+Source0:        https://www.zuzuf.net/qshare/files/%{name}-%{version}-src.tar.bz2
 Group:          Productivity/File utilities
 Summary:        Qt file share
 BuildRequires:  cmake
@@ -29,11 +29,11 @@ computers of the network with very little network/CPU overload.
 
 %build
 %cmake
-make
+%cmake_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%make_install
+%cmake_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT

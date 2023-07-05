@@ -3,8 +3,8 @@ Summary: A Chinese Chess Game
 Version: 1.0
 Release: 12.3
 Group: Amusements/Games
-URL: http://code.google.com/p/gnchess/
-Source0: http://gnchess.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/gnchess/
+Source0: https://gnchess.googlecode.com/files/%{name}-%{version}.tar.gz
 License: GPLv2
 BuildRequires: thorlib-devel, gtkmm24-devel, librsvg2-devel
 

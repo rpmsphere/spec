@@ -5,11 +5,11 @@ Summary:	Python wrapper for the FLTK library
 Name:		pyfltk
 Version:	1.3.5
 Release:	1
-Source0:	http://downloads.sourceforge.net/pyfltk/%{tarname}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/pyfltk/%{tarname}-%{version}.tar.gz
 Patch0:		pyFltk-1.3.0rc1-build.patch
 License:	GPLv2
 Group:		Development/Python
-URL:		http://pyfltk.sourceforge.net/
+URL:		https://pyfltk.sourceforge.net/
 BuildRequires:	fltk-devel, mesa-libGL-devel
 BuildRequires:	python3-devel
 BuildRequires:	gcc-c++, swig

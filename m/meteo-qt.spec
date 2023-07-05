@@ -21,7 +21,7 @@ Requires:       python3-lxml
 
 %description
 A Qt system tray application for the weather status
-Weather data from: http://openweathermap.org/
+Weather data from: https://openweathermap.org/
 
 %prep
 %setup -q

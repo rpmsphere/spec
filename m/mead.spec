@@ -2,11 +2,11 @@ Name:           mead
 License:        GPL
 Group:          Productivity/Scientific/Chemistry
 Summary:        Macroscopic Electrostatics with Atomic Detail
-URL:            http://www.stjuderesearch.org/site/lab/bashford
+URL:            https://www.stjuderesearch.org/site/lab/bashford
 Version:        2.2.9
 Release:        12.1
 BuildRequires:  gcc-c++
-Source0:        http://ftp.stjude.org/pub/software/%{name}-%{version}.tar.bz2
+Source0:        https://ftp.stjude.org/pub/software/%{name}-%{version}.tar.bz2
 Patch1:         1-destdir.patch
 Patch2:         2-c-warn.patch
 Patch3:         3-prototype.patch

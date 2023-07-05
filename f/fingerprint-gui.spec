@@ -6,8 +6,8 @@ Release:        1
 Summary:        Tool for fingerprint enrollment and verification
 License:        GPL-2.0+
 Group:          Hardware/Other
-URL:            http://ullrich-online.cc/Appliance/fingerprint/
-#Source0:        http://ullrich-online.cc/nview/Appliance/fingerprint/download/fingerprint-gui-%{version}.tar.gz
+URL:            https://ullrich-online.cc/Appliance/fingerprint/
+#Source0:        https://ullrich-online.cc/nview/Appliance/fingerprint/download/fingerprint-gui-%{version}.tar.gz
 Source0:	%{name}-master.zip
 Source1:        fingerprint-gui.svg
 BuildRequires:  cmake

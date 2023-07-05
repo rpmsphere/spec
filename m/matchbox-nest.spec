@@ -2,10 +2,10 @@ Summary: 	X nesting for the Matchbox Desktop
 Name: 		matchbox-nest
 Version: 	0.3
 Release: 	1
-URL: 		http://matchbox-project.org
+URL: 		https://matchbox-project.org
 License: 	GPLv2+
 Group: 		Graphical desktop/Other
-Source: 	http://matchbox-project.org/sources/matchbox-nest/0.3/%{name}-%{version}.tar.bz2
+Source: 	https://matchbox-project.org/sources/matchbox-nest/0.3/%{name}-%{version}.tar.bz2
 BuildRequires:	libmatchbox-devel libXtst-devel expat-devel
 
 %description

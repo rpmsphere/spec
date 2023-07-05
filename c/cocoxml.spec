@@ -4,8 +4,8 @@ Version: 0.9.2
 Release: 10.2
 License: GPL
 Group:  Development/Tools
-Source0: http://cocoxml.googlecode.com/files/%{name}-%{version}.tar.gz
-URL: http://code.google.com/p/cocoxml/
+Source0: https://cocoxml.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/cocoxml/
 BuildRequires: python2-scons
 
 %description

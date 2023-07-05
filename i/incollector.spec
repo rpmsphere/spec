@@ -4,8 +4,8 @@ Release:        18.1
 Summary:        Information collector
 Group:          Applications/Productivity
 License:        GPLv2
-URL:            http://www.incollector.devnull.pl/
-Source0:        http://www.incollector.devnull.pl/download/sources/%{name}-%{version}.tar.gz
+URL:            https://www.incollector.devnull.pl/
+Source0:        https://www.incollector.devnull.pl/download/sources/%{name}-%{version}.tar.gz
 Patch0:         %{name}-mono.patch
 Patch1:		%{name}-fixlib.patch
 Patch2:		%{name}-%{version}-pixmaps-install.patch

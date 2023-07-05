@@ -3,7 +3,7 @@ Version:        0.0.5
 Release:        18.4
 License:        GPL-2.0+
 Summary:        DC++ client
-URL:            http://code.google.com/p/freedcpp
+URL:            https://code.google.com/p/freedcpp
 Group:          Productivity/Networking/Other
 Source0:        https://launchpad.net/~tehnick/+archive/tehnick/+files/%{name}_%{version}.orig.tar.gz
 Source1:        freedcpp.1

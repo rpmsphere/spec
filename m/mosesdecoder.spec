@@ -4,7 +4,7 @@ Version: 4.0git
 Release: 1
 Group: Applications/Engineering
 License: LGPL
-URL: http://www.statmt.org/moses/
+URL: https://www.statmt.org/moses/
 Source0: %{name}-master.zip
 BuildRequires: jam
 BuildRequires: boost-devel
@@ -20,7 +20,7 @@ the exponential number of choices.
 %setup -q -n %{name}-master
 
 %build
-./bjam --no-xmlrpc-c
+./bjam -j1 --no-xmlrpc-c
 
 %install
 mkdir -p %{buildroot}%{_bindir}

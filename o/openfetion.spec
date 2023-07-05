@@ -4,8 +4,8 @@ Version: 2.2.1
 Release: 4.1
 Group: Networking/Instant messaging
 License: GPLv2+
-URL: http://code.google.com/p/ofetion/
-Source0: http://ofetion.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/ofetion/
+Source0: https://ofetion.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires: libpng-devel
 Buildrequires: gtk2-devel
 BuildRequires: sqlite-devel

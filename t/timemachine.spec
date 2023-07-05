@@ -3,8 +3,8 @@ Version:       0.3.3
 Release:       9.1
 Summary:       Records audio up to ten seconds ago
 Group:         Graphical Desktop/Applications/Multimedia
-URL:           http://plugin.org.uk/timemachine/
-Source:        http://plugin.org.uk/timemachine/timemachine-%{version}.tar.gz
+URL:           https://plugin.org.uk/timemachine/
+Source:        https://plugin.org.uk/timemachine/timemachine-%{version}.tar.gz
 License:       GPL
 BuildRequires: libpng-devel
 BuildRequires: alsa-lib-devel
@@ -69,7 +69,6 @@ EOF
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png

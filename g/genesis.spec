@@ -4,7 +4,7 @@ Release:        1
 Summary:        Moblin Application Lifecycle Manager 
 Group:          Development/Languages
 License:        LGPLv2+
-URL:            http://test.moblin.org/projects/application-launcher
+URL:            https://test.moblin.org/projects/application-launcher
 Source0:        genesis-0.1.tar.bz2
 BuildRequires:  cairo-devel clutter-devel libwnck libwnck-devel
 

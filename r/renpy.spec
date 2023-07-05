@@ -4,8 +4,8 @@ Release:        1
 Summary:        Framework for developing visual-novel type games
 Group:          Development/Libraries
 License:        LGPLv2+
-URL:            http://www.renpy.org/
-Source0:        http://www.renpy.org/dl/%{version}/%{name}-%{version}-source.tar.bz2
+URL:            https://www.renpy.org/
+Source0:        https://www.renpy.org/dl/%{version}/%{name}-%{version}-source.tar.bz2
 BuildRequires:	libpng-devel
 BuildRequires:	libpng12
 BuildRequires:  glew-devel, pygame-devel, freetype-devel, fribidi-devel, Cython

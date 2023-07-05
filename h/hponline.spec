@@ -8,7 +8,7 @@ Summary:        A fast paced arena sport game
 Group:          Amusements/Games
 License:        LGPL
 URL:            https://wiki.mozilla.org/Special:Search?search=i18n&go=Go
-Source0:        http://jaist.dl.sourceforge.net/sourceforge/hponline/%{pkg_name}Sources-v%{version}.tar.gz
+Source0:        https://jaist.dl.sourceforge.net/sourceforge/hponline/%{pkg_name}Sources-v%{version}.tar.gz
 Patch0:		%{pkg_name}Sources-v%{version}-glfont2.h.patch
 BuildRequires:	libglpng-devel
 BuildRequires:	freeglut-devel

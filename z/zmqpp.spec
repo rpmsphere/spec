@@ -5,7 +5,7 @@ Version:	4.2.0
 Release:	1
 License:	MIT
 Summary:	0mq/Zeromq Highlevel C++ bindings
-URL:		http://zeromq.github.io/zmqpp/
+URL:		https://zeromq.github.io/zmqpp/
 Group:		System/Libraries
 Source:		%{name}-%{version}.tar.gz
 BuildRequires:	boost-devel

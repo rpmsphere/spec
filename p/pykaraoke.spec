@@ -6,8 +6,8 @@ Group:          Applications/Multimedia
 Version:        0.7.5
 Release:        2.1
 Summary:	Free karaoke player
-URL:		http://www.kibosh.org/pykaraoke/
-Source:         http://sourceforge.net/projects/pykaraoke/files/%name/%version/%name-%version.zip
+URL:		https://www.kibosh.org/pykaraoke/
+Source:         https://sourceforge.net/projects/pykaraoke/files/%name/%version/%name-%version.zip
 Requires:       pygame python2-wxpython libtimidity liberation-sans-fonts
 BuildRequires:  gcc-c++ python2-wxpython python2-devel pygame-devel SDL-devel desktop-file-utils atlas-devel
 

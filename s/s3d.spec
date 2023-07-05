@@ -6,7 +6,7 @@ Version: 0.2.2.1
 Release: 1
 Group: net
 License: Free Software
-URL: http://s3d.sourceforge.net/
+URL: https://s3d.sourceforge.net/
 Source0: %{name}-%{version}.tar.gz
 BuildRequires: libg3d-devel
 #Requires: libgl1-mesa-glx

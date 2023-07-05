@@ -4,7 +4,7 @@ Version:		0.7.1086
 Release:		1
 License:		GPL
 Group:			Amusements/Games
-URL:			http://ufo2000.sourceforge.net/
+URL:			https://ufo2000.sourceforge.net/
 Source:			%{name}-%{version}-src.tar.bz2
 Source1:		%{name}.png
 Source2:		dumb-0.9.2.tar.gz

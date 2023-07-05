@@ -6,8 +6,8 @@ Release:	1
 Summary:	Burr Tools	
 Group:		Applications/System
 License:	GPL	
-URL: 		http://burrtools.sourceforge.net		
-Source0:	http://sourceforge.net/projects/burrtools/files/%{name}/%{version}/%{name}-%{version}.tar.gz	
+URL: 		https://burrtools.sourceforge.net		
+Source0:	https://sourceforge.net/projects/burrtools/files/%{name}/%{version}/%{name}-%{version}.tar.gz	
 Source1:        %{name}.png
 BuildRequires:  fltk-devel
 BuildRequires:  boost-devel

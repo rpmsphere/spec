@@ -5,7 +5,7 @@ Version: 11.1
 Release: 5.1
 Source: %{name}-%{version}.tar
 Patch: %name-urandom.patch
-URL: http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/jot
+URL: https://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/jot
 Summary: A simple tool that prints random or sequential data
 Summary(ru_RU.UTF-8): Выводит данные по возрастанию, убыванию по одному элементу на строку
 License: BSD

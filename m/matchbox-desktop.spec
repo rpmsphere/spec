@@ -2,10 +2,10 @@ Summary: 	Desktop for the Matchbox
 Name: 		matchbox-desktop
 Version: 	2.2
 Release: 	10.1
-URL: 		http://matchbox-project.org/
+URL: 		https://matchbox-project.org/
 License: 	GPLv2+
 Group: 		Graphical desktop/Other
-Source0: 	http://git.yoctoproject.org/cgit/cgit.cgi/matchbox-desktop-2/snapshot/matchbox-desktop-2-%{version}.tar.gz
+Source0: 	https://git.yoctoproject.org/cgit/cgit.cgi/matchbox-desktop-2/snapshot/matchbox-desktop-2-%{version}.tar.gz
 BuildRequires:	pkgconfig
 BuildRequires:	libmatchbox-devel
 BuildRequires:	startup-notification-devel

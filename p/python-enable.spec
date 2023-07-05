@@ -9,8 +9,8 @@ Group:          Development/Libraries/Python
 # Source code is under BSD but images are under different licenses
 # and details are inside image_LICENSE.txt
 License:        BSD-3-Clause and EPL-1.0 and GPL-1.0 and LGPL-2.1 and LGPL-3.0 and Public Domain
-URL:            http://code.enthought.com/projects/enable
-Source:         http://www.enthought.com/repo/ets/%{modname}-%{version}.tar.gz
+URL:            https://code.enthought.com/projects/enable
+Source:         https://www.enthought.com/repo/ets/%{modname}-%{version}.tar.gz
 BuildRequires:  mesa-libGL-devel
 BuildRequires:  mesa-libGLU-devel
 BuildRequires:  gcc-c++

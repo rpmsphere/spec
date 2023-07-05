@@ -8,7 +8,7 @@ Release:	20.1
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPLv2
 Group:		Graphics
-URL:		http://code.google.com/p/qosmic/
+URL:		https://code.google.com/p/qosmic/
 BuildRequires:	flam3-devel, libxml2-devel
 BuildRequires:	gcc-c++, libjpeg-devel, qt4-devel
 BuildRequires:	lua-devel

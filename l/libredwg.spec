@@ -4,7 +4,7 @@ Version:	0.12.5
 Release:	1
 License:	GPL
 Group:		System/Libraries
-URL:		http://www.gnu.org/software/libredwg/
+URL:		https://www.gnu.org/software/libredwg/
 Source:		https://ftp.gnu.org/pub/gnu/%{name}/%{name}-%{version}.tar.gz
 #BuildRequires:	swig
 BuildRequires:	texinfo

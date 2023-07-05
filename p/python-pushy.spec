@@ -5,7 +5,7 @@ Release:        6.1
 Summary:        Virtualenv-based automation of test activities
 License:        MIT
 Group:          Development/Languages/Python
-URL:            http://awilkins.id.au/pushy
+URL:            https://awilkins.id.au/pushy
 Source:         https://launchpad.net/pushy/0.5/0.5.1/+download/pushy-%{version}.zip
 BuildRequires:  python-devel
 BuildRequires:  python-paramiko

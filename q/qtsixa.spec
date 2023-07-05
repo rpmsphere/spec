@@ -4,7 +4,7 @@ Name: qtsixa
 Summary: Sixaxis Joystick Manager
 License: GPLv2
 Group: Hardware/Joystick
-URL: http://qtsixa.sourceforge.net/
+URL: https://qtsixa.sourceforge.net/
 Version: 1.5.1
 Source: QtSixA-%{version}-src.tar.gz
 Release: 18.4

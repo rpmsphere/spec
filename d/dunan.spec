@@ -6,8 +6,8 @@ Version: 0.6
 Release: 10.6
 License: GPL
 Group: User Interface/Desktops
-Source0: http://www.frostworx.de/dunan/%{name}-%{version}.tar.bz2
-URL: http://www.frostworx.de/?p=64
+Source0: https://www.frostworx.de/dunan/%{name}-%{version}.tar.bz2
+URL: https://www.frostworx.de/?p=64
 BuildRequires: gcc-c++, SDL-devel, SDL_mixer-devel
 BuildRequires: libXrender-devel, ftgl-devel, libmmd-devel, bullet-devel
 Requires: mmd-data

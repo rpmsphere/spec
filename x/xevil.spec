@@ -14,13 +14,13 @@ Version:	2.1b1
 Release:	1
 License:	GPL
 Group:		Amusements/Games
-#Source0:	http://www.xevil.com/download/stable/%{name}src%{version}.zip
+#Source0:	https://www.xevil.com/download/stable/%{name}src%{version}.zip
 #Source0:	%{name}_2.02r2.orig.tar.gz
 Source0:	https://github.com/lvella/xevil/archive/refs/heads/master.zip#/%{name}-master.zip
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:         %{name}_2.02r2.patch
-URL:		http://www.xevil.com/
+URL:		https://www.xevil.com/
 BuildRequires:	libstdc++-devel
 BuildRequires:	unzip
 BuildRequires:	libX11-devel

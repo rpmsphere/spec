@@ -2,10 +2,10 @@ Name: pike
 Version: 8.0.1738
 Release: 1
 Summary: Powerful Interpreted Programming Language
-URL: http://pike.lysator.liu.se/
+URL: https://pike.lysator.liu.se/
 License: GPL 2, LGPL 2.1, MPL 1.1
 Group: Development/Languages/Other
-Source: http://pike.lysator.liu.se/pub/pike/latest-stable/Pike-v%{version}.tar.gz
+Source: https://pike.lysator.liu.se/pub/pike/latest-stable/Pike-v%{version}.tar.gz
 BuildRequires: gcc-c++, bison, autoconf, automake, m4
 BuildRequires: zlib-devel, bzip2, libxml2-devel, gmp-devel, gdbm-devel, pcre-devel
 BuildRequires: libjpeg-devel libpng-devel giflib-devel libtiff-devel freetype freetype-devel

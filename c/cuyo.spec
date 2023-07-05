@@ -1,7 +1,7 @@
 Summary:		A tetris like game
 Summary(zh_TW):	類似俄羅斯方塊的遊戲
 Name:			cuyo
-URL:			http://www.karimmi.de/cuyo/
+URL:			https://www.karimmi.de/cuyo/
 Version:		1.8.5
 Release:		1
 Source0:		%{name}-%{version}.tar.bz2

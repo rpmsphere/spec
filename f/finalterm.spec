@@ -4,7 +4,7 @@ Version:	0.1
 Release:	8.1
 License:	GPLv3
 Group:		User Interface/Desktops
-URL:		http://finalterm.org/		
+URL:		https://finalterm.org/		
 Source0:	%{name}-master.zip
 BuildRequires:	cmake gcc-c++ libstdc++-devel libgee-devel gnome-common gtk-doc gtk3-devel libmx-devel
 BuildRequires:	clutter-gtk-devel keybinder-devel intltool

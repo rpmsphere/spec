@@ -4,8 +4,8 @@ Group:        Amusements/Games/Other
 Version:      2015
 Release:      5.4
 Summary:      Multi-format interactive fiction player with excellent readability
-URL:          http://ccxvii.net/gargoyle/
-# Source:       http://garglk.googlecode.com/files/%%{name}-%%{version}-sources.zip
+URL:          https://ccxvii.net/gargoyle/
+# Source:       https://garglk.googlecode.com/files/%%{name}-%%{version}-sources.zip
 Source:       garglk-master.zip
 Source1:      README.games
 BuildRequires: SDL_mixer-devel gtk2-devel jam libpng-devel gcc-c++ SDL_sound-devel
@@ -105,5 +105,5 @@ install -D -m 644 garglk/%{name}-house.png %{buildroot}/%{_datadir}/pixmaps/%{na
 - Improve spec - fix icon name in desktop file
 * Sun Nov 25 2012 fa0sck@gmail.com
 - Created package for gargoyle svn 2012-11-25
-  (With svn checkout http://garglk.googlecode.com/svn/trunk/ garglk-read-only)
-  * See also http://garglk.googlecode.com
+  (With svn checkout https://garglk.googlecode.com/svn/trunk/ garglk-read-only)
+  * See also https://garglk.googlecode.com

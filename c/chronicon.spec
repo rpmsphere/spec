@@ -6,7 +6,7 @@ Release: 14.1
 Summary: Microblogging client for Twitter and StatusNet
 License: GPLv2
 Group:   Applications/Network
-URL:     http://chronicon.sourceforge.net/
+URL:     https://chronicon.sourceforge.net/
 Source: %{name}-%{version}.tar.gz
 Source2: %{name}.desktop
 BuildRequires: libpng-devel

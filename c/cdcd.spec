@@ -4,10 +4,10 @@ Version:	0.6.6
 Release:	25.1
 License:	GPL
 Group:		Sound
-Source0:	http://sourceforge.net/projects/libcdaudio/files/cdcd/0.6.6/%{name}-%{version}.tar.bz2
+Source0:	https://sourceforge.net/projects/libcdaudio/files/cdcd/0.6.6/%{name}-%{version}.tar.bz2
 Patch0:		cdcd-0.6.6-drop-glib1.patch
 BuildRequires:	libcdaudio-devel readline-devel
-URL:		http://libcdaudio.sourceforge.net/
+URL:		https://libcdaudio.sourceforge.net/
 
 %description
 cdcd takes a different approach from conventional console(or X) based CD
@@ -36,7 +36,6 @@ rm %{buildroot}%{_infodir}/dir
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc README AUTHORS ChangeLog NEWS
 %{_bindir}/*
 %{_mandir}/man1/*

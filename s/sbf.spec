@@ -5,8 +5,8 @@ Summary: A program for brainfuck
 Version: 0.9.4
 Release: 16.1
 Group: Development/Languages
-URL: http://sourceforge.net/projects/sbfutil/
-Source0: http://sourceforge.net/projects/sbfutil/files/%{name}-%{version}/%{name}-%{version}.tar.gz
+URL: https://sourceforge.net/projects/sbfutil/
+Source0: https://sourceforge.net/projects/sbfutil/files/%{name}-%{version}/%{name}-%{version}.tar.gz
 License: GPL, BSD
 BuildRequires: readline-devel
 

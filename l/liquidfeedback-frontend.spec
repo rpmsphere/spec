@@ -7,7 +7,7 @@ Release:	1
 Summary:	Interactive Democracy Frontend
 License:	MIT/X11
 Group:		Productivity/Networking
-Source0:	http://www.public-software-group.org/pub/projects/liquid_feedback/frontend/v%{version}/%{_name}-v%{version}.tar.gz
+Source0:	https://www.public-software-group.org/pub/projects/liquid_feedback/frontend/v%{version}/%{_name}-v%{version}.tar.gz
 Source1:	liquidfeedback.conf
 Source2:	myconfig.lua
 Requires:	liquidfeedback-core
@@ -15,7 +15,7 @@ Requires:	lua
 Requires:	webmcp
 #BuildRequires:  libpq-devel / postgresql-devel
 BuildRequires:	rocketwiki-lqfb
-URL:		http://liquidfeedback.org/
+URL:		https://liquidfeedback.org/
 
 %description
 LiquidFeedback is an open-source software, powering internet platforms for

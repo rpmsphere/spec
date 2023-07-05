@@ -4,7 +4,7 @@ Name:		rapicorn
 Summary:	Rapid development toolkit
 Version:	17.0.0
 Release:	1
-Source0:	http://rapicorn.org/dist/%{name}/%{name}-%{version}.tar.xz
+Source0:	https://rapicorn.org/dist/%{name}/%{name}-%{version}.tar.xz
 URL:		https://github.com/tim-janik/rapicorn
 License:	GPLv2+
 Group:		Sound

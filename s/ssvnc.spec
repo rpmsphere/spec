@@ -9,7 +9,7 @@ Group:         Productivity/Networking/Remote Desktop/Security
 Source0:       %name-%version.src.tar.gz
 Source1:       icons.tar.bz2
 Patch:         makefile.patch
-URL:           http://www.karlrunge.com/x11vnc/ssvnc.html
+URL:           https://www.karlrunge.com/x11vnc/ssvnc.html
 BuildRequires: libX11-devel java-11-openjdk-devel libjpeg-devel lua
 BuildRequires: gcc imake libXt-devel libXmu-devel libXaw-devel
 Provides:      ssvncviewer tsvnc

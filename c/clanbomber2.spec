@@ -1,7 +1,7 @@
 Name:           clanbomber2
 Version:        0.9.1
 Release:        1
-URL:            http://clanbomber.sourceforge.net/
+URL:            https://clanbomber.sourceforge.net/
 License:        GPL v2 or later
 Group:          Amusements/Games/Action/Arcade
 Summary:        Bomberman-like multiplayer game

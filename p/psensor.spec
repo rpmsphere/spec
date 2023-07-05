@@ -2,10 +2,10 @@ Summary:	A Graphical Temperature Monitor
 Name:		psensor
 Version:	1.2.1
 Release:	1
-URL:		http://wpitchoune.net/blog/psensor/
+URL:		https://wpitchoune.net/blog/psensor/
 License:	GNU General Public License version 2
 Group:		System/Monitoring
-Source0:	http://wpitchoune.net/psensor/files/%{name}-%{version}.tar.gz
+Source0:	https://wpitchoune.net/psensor/files/%{name}-%{version}.tar.gz
 Requires:	lm_sensors hddtemp
 BuildRequires:	make gcc lm_sensors-devel cairo-devel
 BuildRequires:	GConf2-devel desktop-file-utils gtk3-devel

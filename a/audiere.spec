@@ -4,8 +4,8 @@ Version:	1.9.4
 Release:	1
 License:	LGPLv2+
 Group:		Sound
-URL:		http://audiere.sourceforge.net
-Source:		http://prdownloads.sourceforge.net/audiere/%{name}-%{version}-src.tar.bz2
+URL:		https://audiere.sourceforge.net
+Source:		https://prdownloads.sourceforge.net/audiere/%{name}-%{version}-src.tar.bz2
 Patch0:		%{name}-1.9.4-speex.patch
 Patch1:		%{name}-1.9.4-gcc43.patch
 Patch2:		%{name}-1.9.4-flac.patch

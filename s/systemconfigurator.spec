@@ -3,7 +3,7 @@ Name: systemconfigurator
 Version: 2.2.11
 Release: 4.1
 License: GPL
-URL: http://systemconfig.sourceforge.net
+URL: https://systemconfig.sourceforge.net
 Group: Applications/System
 Source: %{name}-%{version}.tar.gz
 Requires: perl-AppConfig
@@ -38,7 +38,6 @@ find %{buildroot}/ -name perllocal.pod | xargs rm -f
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc TODO 
 %doc CREDITS 
 %doc CHANGELOG 

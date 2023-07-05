@@ -1,11 +1,11 @@
 Name:         libtpl
 Summary:      Data Serialization C Library
-URL:          http://tpl.sourceforge.net/
+URL:          https://tpl.sourceforge.net/
 Group:        Libraries
 License:      MIT
 Version:      1.5
 Release:      7.1
-Source0:      http://switch.dl.sourceforge.net/tpl/libtpl-%{version}.tar.bz2
+Source0:      https://switch.dl.sourceforge.net/tpl/libtpl-%{version}.tar.bz2
 
 %description
 Tpl is a library for serializing C data. The data is stored in its

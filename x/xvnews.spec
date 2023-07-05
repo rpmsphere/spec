@@ -10,7 +10,7 @@ Source: %{name}-%{version}.tar.Z
 Patch: xvnews-2.3.2.dif
 BuildRequires: imake, xview-devel, libX11-devel, libtirpc-devel, inn-devel, byacc
 Requires: xorg-x11-fonts-75dpi
-URL: http://alumnus.caltech.edu/~mjackson/xvnews.html
+URL: https://alumnus.caltech.edu/~mjackson/xvnews.html
 
 %description
 If you find trn too obscure, this news reader might save you a lot

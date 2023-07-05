@@ -5,12 +5,11 @@ Summary:        Notifications for multiple workspaces
 Version:        0.6
 Release:        179.1
 License:        GPL v2 or later
-URL:            http://qnotify.homac.de
+URL:            https://qnotify.homac.de
 Group:          System/GUI/Other
 Source:         %{name}-%{version}.tar.bz2
 Patch1:         qnotify-warn.dif
 Patch2:         qnotify-header.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 QNotify is a small and windowmanager independent utility to inform you
@@ -72,13 +71,11 @@ mv $RPM_BUILD_ROOT%{_libdir}/libqnotify.la.1 $RPM_BUILD_ROOT%{_libdir}/libqnotif
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 /usr/bin/qnotify
 %_libdir/qnotify/
 %_mandir/man1/qnotify.1.gz
 
 %files libs
-%defattr(-,root,root)
 %_libdir/lib*.so*
 %_libdir/lib*.la
 %_includedir/*

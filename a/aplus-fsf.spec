@@ -5,9 +5,9 @@ Version: 4.22
 Release: 4
 License: GPL
 Summary: advanced APL interpreter with s interface
-URL: http://www.aplusdev.org/
+URL: https://www.aplusdev.org/
 Group: Development/Languages
-Source: http://www.aplusdev.org/Download/%name-%version-%release.tar.gz
+Source: https://www.aplusdev.org/Download/%name-%version-%release.tar.gz
 BuildRequires: libX11-devel
 BuildRequires: libnsl2-devel
 

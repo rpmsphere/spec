@@ -4,7 +4,7 @@ Version: 2.8.1b29
 Release: 2
 Group: System Environment/Daemons
 License: BSD/MIT/X
-URL: http://fsp.sourceforge.net
+URL: https://fsp.sourceforge.net
 Source0: fsp-%{version}.tar.bz2
 Source1: fspd.init
 BuildRequires: glibc-devel python2-scons flex

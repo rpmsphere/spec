@@ -7,11 +7,11 @@ Version:	3.0.1
 Release:	33.4
 License:	GPL v2 (except for images - see COPYING)
 Group:		X11/Window Managers/Tools
-Source0:	http://dl.sourceforge.net/aquariumapplet/shermans_aquarium-%{version}.tar.bz2
+Source0:	https://dl.sourceforge.net/aquariumapplet/shermans_aquarium-%{version}.tar.bz2
 Source1:	shermans_aquarium.desktop
 Patch0:		shermans_aquarium-3.0.0-opt.patch
 Patch1:		shermans_aquarium-libdir.patch
-URL:		http://aquariumapplet.sourceforge.net/
+URL:		https://aquariumapplet.sourceforge.net/
 BuildRequires:  libpng-devel
 BuildRequires:	SDL-devel
 BuildRequires:	autoconf

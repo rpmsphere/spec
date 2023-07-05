@@ -4,7 +4,7 @@ Release:		1
 Summary:		A top down graphical (3D) RPG in the spirit of Nethack
 Group:			Amusements/Games/RPG
 License:		GPL
-URL:			http://home.no.net/egoboo/
+URL:			https://home.no.net/egoboo/
 Source0:		%{name}-source-%{version}.tar.gz
 Source1:		%{name}.png
 Patch0:		%{name}-shell.diff

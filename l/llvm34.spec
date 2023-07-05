@@ -20,10 +20,10 @@ Summary:        The Low Level Virtual Machine
 
 Group:          Development/Languages
 License:        NCSA
-URL:            http://llvm.org/
+URL:            https://llvm.org/
 
 # source archives
-Source0:        http://llvm.org/releases/%{version}/llvm-%{version}.src.tar.gz
+Source0:        https://llvm.org/releases/%{version}/llvm-%{version}.src.tar.gz
 
 # multilib fixes
 Source10:       llvm-Config-config.h
@@ -542,7 +542,7 @@ exit 0
 
 * Sat Mar 17 2012 Karsten Hopp <karsten@redhat.com> 3.0-9
 - undefine PPC on ppc as a temporary workaround for 
-  http://llvm.org/bugs/show_bug.cgi?id=10969 and 
+  https://llvm.org/bugs/show_bug.cgi?id=10969 and 
   RHBZ#769803
 
 * Sat Feb 25 2012 Michel Salim <salimma@fedoraproject.org> - 3.0-8
@@ -617,7 +617,7 @@ exit 0
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 
 * Mon Jan 10 2011 Richard W.M. Jones <rjones@redhat.com> - 2.8-6
-- Rebuild for OCaml 3.12 (http://fedoraproject.org/wiki/Features/OCaml3.12).
+- Rebuild for OCaml 3.12 (https://fedoraproject.org/wiki/Features/OCaml3.12).
 
 * Sat Nov 27 2010 Michel Salim <salimma@fedoraproject.org> - 2.8-5
 - clang now requires gcc-c++ for linking and headers (bug #654560)

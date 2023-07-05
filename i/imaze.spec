@@ -6,7 +6,7 @@ License:      GPL-2.0
 Group:        Amusements/Games/Action/Arcade
 Version:      2.0
 Summary:      Multi-Player 3D Game
-URL:          http://home.tu-clausthal.de/student/iMaze/
+URL:          https://home.tu-clausthal.de/student/iMaze/
 Source:       %{name}-%{version}.tar.bz2
 BuildRequires: motif-devel alsa-lib-devel
 

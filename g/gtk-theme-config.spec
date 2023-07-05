@@ -6,7 +6,7 @@ Release:	5.1
 Summary:	Configure GTK theme colors
 Group:		System/GUI/GNOME
 License:	GPL-3.0+
-URL:		http://github.com/satya164/gtk-theme-config
+URL:		https://github.com/satya164/gtk-theme-config
 Source0:        gtk-theme-config-%{version}.tar.gz
 BuildRequires:	glib2-devel
 BuildRequires:	gtk3-devel

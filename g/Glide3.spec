@@ -6,7 +6,7 @@ Summary:          Glide3 runtime for the 3Dfx Voodoo family of cards
 ExclusiveArch:    %{ix86} ia64 x86_64
 Group:            User Interface/X Hardware Support
 License:          Glide
-URL:              http://glide.sourceforge.net
+URL:              https://glide.sourceforge.net
 # Create the Glide3 tarball by using:
 #   cvs -d :pserver:anonymous@cvs.glide.sourceforge.net:/cvsroot/glide \
 #     co -r glide-devel-branch Glide3

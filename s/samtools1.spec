@@ -6,8 +6,8 @@ Release:	3.1
 Summary:	Tools for nucleotide sequence alignments in the SAM format
 Group:		Applications/Engineering
 License:	MIT
-URL:		http://samtools.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/%{_name}/%{_name}-%{version}.tar.bz2
+URL:		https://samtools.sourceforge.net/
+Source0:	https://downloads.sourceforge.net/%{_name}/%{_name}-%{version}.tar.bz2
 BuildRequires:	zlib-devel
 BuildRequires:	ncurses-devel
 Conflicts: %{_name}

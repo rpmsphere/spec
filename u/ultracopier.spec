@@ -5,8 +5,8 @@ Version:	2.2.4.7
 Release:	1
 License:	GPLv3+
 Group:		File tools
-URL:		http://ultracopier.first-world.info/
-Source:		http://files.first-world.info/ultracopier/%{version}/ultracopier-src-%{version}.tar.xz
+URL:		https://ultracopier.first-world.info/
+Source:		https://files.first-world.info/ultracopier/%{version}/ultracopier-src-%{version}.tar.xz
 BuildRequires:	qt5-qtbase-devel
 Summary:	The QT advanced copier
 Obsoletes:	supercopier

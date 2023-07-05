@@ -4,8 +4,8 @@ Release:	33.4
 Summary:	Generic Applet Interface
 Group:		User Interface/Desktops
 License:	LGPLv2+
-URL:		http://gai.sourceforge.net
-Source0:	http://download.sf.net/gai/gai-%{version}.tar.bz2
+URL:		https://gai.sourceforge.net
+Source0:	https://download.sf.net/gai/gai-%{version}.tar.bz2
 Patch0:		gai-0.5.9-pkgconfig.patch
 Patch1:		gai-0.5.10-nls.patch
 Patch2:		gai-0.5.10-xorg.patch

@@ -3,10 +3,9 @@ Version:       1.3.0
 Release:       3.4
 Summary:       Pidgin plugin to prevent Instant Message (IM) spam
 Group:         Graphical Desktop/Applications/Networking
-URL:           http://sourceforge.net/projects/pidgin-bs/
-Source:        http://garr.dl.sourceforge.net/sourceforge/pidgin-bs/%{name}-%{version}.tar.bz2
+URL:           https://sourceforge.net/projects/pidgin-bs/
+Source:        https://garr.dl.sourceforge.net/sourceforge/pidgin-bs/%{name}-%{version}.tar.bz2
 License:       GPL
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 Obsoletes:     pidgin-bs, gaim-bs
 BuildRequires: libpng-devel
 BuildRequires: intltool >= 0.40.0
@@ -34,7 +33,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
-%defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog NEWS README README.mingw
 %{_libdir}/purple-2/*.la
 %{_libdir}/purple-2/*.so

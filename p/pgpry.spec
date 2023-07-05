@@ -3,9 +3,9 @@ Version:        0.1.1
 Release:        6.1
 License:        GPL-3.0+
 Summary:        PGP Private Key Recovery
-URL:            http://pgpry.sourceforge.net/
+URL:            https://pgpry.sourceforge.net/
 Group:          Productivity/Security
-Source0:        http://downloads.sourceforge.net/pgpry/%{name}-%{version}.tar.bz2
+Source0:        https://downloads.sourceforge.net/pgpry/%{name}-%{version}.tar.bz2
 Source1:        %{name}.1
 BuildRequires:  gcc-c++
 BuildRequires:  compat-openssl10-devel

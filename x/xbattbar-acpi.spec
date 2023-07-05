@@ -6,7 +6,7 @@ Release:        3.1
 Summary:        Battery status indicator
 Group:          Applications/System
 License:        GPLv2+
-URL:            http://mirrors.kernel.org/ubuntu/pool/universe/x/xbattbar-acpi/
+URL:            https://mirrors.kernel.org/ubuntu/pool/universe/x/xbattbar-acpi/
 Source0:        %{name}-%{version}.tar.bz2
 BuildRequires:  libacpi-devel
 BuildRequires:  xosd-devel

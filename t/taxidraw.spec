@@ -3,7 +3,7 @@ Name:		taxidraw
 Version:	0.3.2
 Release:	6.1
 License:	GPL
-URL:		http://taxidraw.sourceforge.net/
+URL:		https://taxidraw.sourceforge.net/
 Group:		Amusements/Games/3D/Simulation
 Source0:	taxidraw-1317104301.tar.bz2
 #Source0:        TaxiDraw-%{version}-src.tar.gz

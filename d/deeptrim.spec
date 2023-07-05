@@ -6,7 +6,7 @@ Release: 19.1
 Summary: Text editor
 License: GPLv2
 Group:   Applications/Productivity
-URL:     http://%{name}.sourceforge.net/
+URL:     https://%{name}.sourceforge.net/
 Source0: %{name}_%{version}.tar.gz
 Source2: %{name}.desktop
 BuildRequires: libpng-devel

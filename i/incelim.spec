@@ -11,7 +11,7 @@ Group:     Productivity/Publishing/XML
 BuildRequires: docbook-style-xsl libxslt libxml2
 BuildArch: noarch
 Requires:  libxslt
-URL:       http://ftp.davidashen.net/incelim/
+URL:       https://ftp.davidashen.net/incelim/
 
 %description
 incelim takes a Relax NG grammar in XML syntax, expands all includes
@@ -38,7 +38,7 @@ cp %{S:1} .
 
 %build
 # Build the HTML page
-DB=http://docbook.sourceforge.net/release/xsl/current/
+DB=https://docbook.sourceforge.net/release/xsl/current/
 # Build HTML from DocBook source
 xmllint --noout --valid readme.xml && \
 xsltproc --nonet --output readme.html  $DB/html/docbook.xsl readme.xml

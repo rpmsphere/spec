@@ -6,8 +6,8 @@ Version:	3.7.3
 Release:	1
 License:	GPLv2+
 Group:		Video
-URL:		http://www.photofilmstrip.org/1-1-Home.html
-Source0:	http://sourceforge.net/projects/photostoryx/files/photofilmstrip/%{version}/photofilmstrip-%{version}.tar.gz
+URL:		https://www.photofilmstrip.org/1-1-Home.html
+Source0:	https://sourceforge.net/projects/photostoryx/files/photofilmstrip/%{version}/photofilmstrip-%{version}.tar.gz
 BuildRequires:  python3-devel
 BuildRequires:  python3-wxpython4
 BuildRequires:  gettext
@@ -68,7 +68,7 @@ python3 setup.py install --root=%{buildroot}
 - Killed a bunch of rpmlint warnings
 * Mon Jun 21 2010 Beppe Florin <symbianflo@fastwebnet.it>
 + imported from pclos for mib
-- MIB (Mandriva Italia Backport) - http://mib.pianetalinux.org
+- MIB (Mandriva Italia Backport) - https://mib.pianetalinux.org
 * Tue May 25 2010 slick50 <lxgator@gmail.com> 1.3.5-2pclos2010
 - rebuild
 * Sat May 15 2010 leiche <meisssw01 at aol.com> 1.3.5-1pclos2010

@@ -4,8 +4,8 @@ Release:	1
 Summary:	Allows people with movement impairments to access their computer
 Group:		Amusements/Games
 License:	GPL
-URL:		http://www.steve.org.uk/Software/mousetrap/
-Source:		http://www.steve.org.uk/Software/mousetrap/%{name}-%{version}.tar.gz
+URL:		https://www.steve.org.uk/Software/mousetrap/
+Source:		https://www.steve.org.uk/Software/mousetrap/%{name}-%{version}.tar.gz
 Requires:	doxygen
 Requires:	gtk2
 Requires:	perl-XML-Parser

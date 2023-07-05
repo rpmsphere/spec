@@ -4,8 +4,8 @@ Version:    3.61
 Release:    4.1
 License:    Free software
 Group:      Development/Languages
-Source:     http://www.garret.ru/%{name}-%{version}.tar.gz
-URL:        http://www.garret.ru/lang.html
+Source:     https://www.garret.ru/%{name}-%{version}.tar.gz
+URL:        https://www.garret.ru/lang.html
 BuildRequires: libX11-devel
 
 %description

@@ -6,8 +6,8 @@ Version: 5.0
 Release: 1
 Group: Development/Languages
 License: Public Domain
-URL: http://tibleiz.net/copper/
-Source0: http://tibleiz.net/download/%{name}-%{version}-src.tar.gz
+URL: https://tibleiz.net/copper/
+Source0: https://tibleiz.net/download/%{name}-%{version}-src.tar.gz
 BuildRequires: libffi-devel
 BuildRequires: dos2unix
 

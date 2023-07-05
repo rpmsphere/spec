@@ -6,8 +6,8 @@ Version:        1.3.4
 Release:        18.1
 License:        GPL
 Group:          Applications/Graphics
-URL:            http://potracegui.sourceforge.net/
-Source0:        http://prdownloads.sourceforge.net/potracegui/%name-%version.tar.bz2
+URL:            https://potracegui.sourceforge.net/
+Source0:        https://prdownloads.sourceforge.net/potracegui/%name-%version.tar.bz2
 Source1:        %name-icons.tar.bz2
 Patch0:         %{name}-1.3.4-gcc43.patch
 Patch1:         %{name}-1.3.4-pixelview.patch

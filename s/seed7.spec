@@ -1,11 +1,11 @@
 Name:         seed7
 Summary:      Seed7 Programming Language
-URL:          http://seed7.sourceforge.net/
+URL:          https://seed7.sourceforge.net/
 Group:        Development/Language
 License:      LGPL
 Version:      05.20220724
 Release:      1
-Source0:      http://downloads.sourceforge.net/project/seed7/seed7/seed7_%(echo %{version}|tr . _)/seed7_%(echo %{version}|tr . _).tgz
+Source0:      https://downloads.sourceforge.net/project/seed7/seed7/seed7_%(echo %{version}|tr . _)/seed7_%(echo %{version}|tr . _).tgz
 BuildRequires: libX11-devel
 BuildRequires: ncurses-devel
 BuildRequires: postgresql-private-devel

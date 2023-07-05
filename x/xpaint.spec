@@ -4,8 +4,8 @@ Version:        3.1.4
 Release:        1
 License:        GPLv3+
 Group:          Applications/Multimedia
-URL:            http://sourceforge.net/projects/sf-xpaint
-Source0:        http://downloads.sourceforge.net/sf-xpaint/%{name}-%{version}.tar.bz2
+URL:            https://sourceforge.net/projects/sf-xpaint
+Source0:        https://downloads.sourceforge.net/sf-xpaint/%{name}-%{version}.tar.bz2
 BuildRequires: bison flex imake chrpath
 BuildRequires: desktop-file-utils
 BuildRequires: openjpeg-devel

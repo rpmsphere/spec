@@ -10,7 +10,7 @@ Source0: %{name}-%{version}.tar.gz
 Source1: haodoo2html.sh
 Group: Text tools
 License: GPL
-URL: http://homepage.mac.com/pauljlucas/software/txt2pdbdoc
+URL: https://homepage.mac.com/pauljlucas/software/txt2pdbdoc
 Patch0: %{name}-%{version}-haodoo.patch
 
 %description

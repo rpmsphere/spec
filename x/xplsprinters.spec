@@ -3,7 +3,7 @@ Version: 1.0.1
 Release: 12.1
 Summary: Shows a list of Xprint printers and it's attributes
 Group: Development/X11
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source: https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
 BuildRequires: libX11-devel >= 1.0.0
 BuildRequires: libXp-devel >= 1.0.0

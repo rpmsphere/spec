@@ -6,7 +6,7 @@ Release:        21.1
 Summary:        F# compiler, core library and core tools
 License:        Apache-2.0
 Group:          Development/Languages/Other
-URL:            http://fsharp.github.io
+URL:            https://fsharp.github.io
 Source:         https://github.com/%{name}/%{name}/archive/%{version}.tar.gz
 Patch1:         use-internal-nunit.patch
 BuildRequires:  automake

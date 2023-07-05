@@ -2,8 +2,8 @@ Summary:	A program that allows visualization of huge graphs
 Name:		tulip
 Version:	5.4.0
 Release:	1
-URL:		http://sourceforge.net/projects/auber/
-Source0:	http://downloads.sourceforge.net/project/auber/%{name}/%{name}-%{version}/%{name}-%{version}_src.tar.xz
+URL:		https://sourceforge.net/projects/auber/
+Source0:	https://downloads.sourceforge.net/project/auber/%{name}/%{name}-%{version}/%{name}-%{version}_src.tar.xz
 License:	GPLv2+
 Group:		Graphics
 #BuildRequires:	qt4-devel qt-assistant-adp-devel qt4-assistant qtwebkit-devel

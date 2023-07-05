@@ -1,11 +1,11 @@
 Name:         talkfilters
 Summary:      GNU Talk Filters
-URL:          http://www.hyperrealm.com/main.php?s=talkfilters
+URL:          https://www.hyperrealm.com/main.php?s=talkfilters
 Group:        Writing
 License:      GPL
 Version:      2.3.8
 Release:      7.1
-Source0:      http://www.hyperrealm.com/talkfilters/talkfilters-%{version}.tar.gz
+Source0:      https://www.hyperrealm.com/talkfilters/talkfilters-%{version}.tar.gz
 
 %description
 The GNU Talk Filters are filter programs that convert ordinary

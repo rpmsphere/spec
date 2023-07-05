@@ -4,8 +4,8 @@ Release:        11.1
 Summary:        An advanced JACK-based metronome
 Group:          Applications/Engineering
 License:        GPLv2+
-URL:            http://das.nasophon.de/klick/
-Source0:        http://das.nasophon.de/download/%{name}-%{version}.tar.gz
+URL:            https://das.nasophon.de/klick/
+Source0:        https://das.nasophon.de/download/%{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 BuildRequires:  boost-devel
 BuildRequires:  jack-audio-connection-kit-devel

@@ -6,7 +6,7 @@ License:        GPL v2 or later
 Group:          Productivity/Networking/Email/Utilities
 Version:        2.4.0
 Release:        1
-URL:            http://www.hypermail-project.org/
+URL:            https://www.hypermail-project.org/
 Summary:        Convert Mail Archives in mailbox Format to HTML Pages
 Source:         https://sourceforge.net/projects/hypermail/files/hypermail/%{version}/hypermail-%{version}.tar.gz
 Patch:          hypermail-2.1.8-docs.patch
@@ -17,7 +17,7 @@ Patch5:         nonstaticpcre.patch
 Patch6:         strip.patch
 Patch7:         hypermail-2.2.0-comparison.diff
 Patch9:         hypermail-2.2.0_bad-interpreter.patch
-BuildRequires:  libtrio-devel
+BuildRequires:  trio-devel
 %define apache_serverroot /usr/share/httpd
 
 %description

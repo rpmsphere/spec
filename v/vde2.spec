@@ -5,8 +5,8 @@ Version:       2.3.2
 Release:       8.1
 Summary:       An ethernet compliant virtual network
 Group:         Network/Routing
-URL:           http://vde.sourceforge.net/
-Source:        http://downloads.sourceforge.net/project/vde/vde2/%{version}/vde2-%{version}.tar.bz2
+URL:           https://vde.sourceforge.net/
+Source:        https://downloads.sourceforge.net/project/vde/vde2/%{version}/vde2-%{version}.tar.bz2
 License:       GPL
 BuildRequires: gcc-c++
 BuildRequires: automake

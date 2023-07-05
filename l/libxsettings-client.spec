@@ -6,8 +6,8 @@ Version:        0.17
 Release:        11.1
 License:        LGPL
 Group:          System Environment/Libraries
-URL:            http://gpe.linuxtogo.org/
-Source:         http://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.bz2
+URL:            https://gpe.linuxtogo.org/
+Source:         https://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel
 BuildRequires:  glib2-devel, gtk2-devel, pkgconfig, gtk-doc
 BuildRequires:  w3m

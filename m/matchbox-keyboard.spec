@@ -4,8 +4,8 @@ Release:        9.3
 Summary:        On screen virtual keyboard
 Group:          Accessibility
 License:        GPLv2+
-URL:            http://matchbox-project.org/
-Source0:        http://git.yoctoproject.org/cgit.cgi/matchbox-keyboard/snapshot/%{name}-%{version}.tar.gz
+URL:            https://matchbox-project.org/
+Source0:        https://git.yoctoproject.org/cgit.cgi/matchbox-keyboard/snapshot/%{name}-%{version}.tar.gz
 Patch0:         matchbox-keyboard-0.1-fix-desktop.patch
 Patch3:		    matchbox-keyboard-0.1-automake-1.13.patch
 BuildRequires:  pkgconfig(cairo)

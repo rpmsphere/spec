@@ -4,7 +4,7 @@ Summary:        A dice game like Yam's or Yahtzee
 Release:        5.4
 License:        GPLv3
 Group:          Games/Boards
-URL:            http://code.google.com/p/nem-nem/
+URL:            https://code.google.com/p/nem-nem/
 Source0:        https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/nem-nem/%{name}-%{version}.tar.gz
 BuildRequires:  qt4-devel
 BuildRequires:  sox

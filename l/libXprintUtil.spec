@@ -3,7 +3,7 @@ Version:       1.0.1
 Release:       4.1
 Summary:       X.Org XprintUtil library
 Group:         System/Libraries
-URL:           http://x.org
+URL:           https://x.org
 Source:        ftp://ftp.freedesktop.org/pub/individual/lib/libXprintUtil-%{version}.tar.bz2
 License:       MIT
 BuildRequires: gcc-c++
@@ -13,7 +13,6 @@ BuildRequires: libX11-devel
 BuildRequires: libXau-devel
 BuildRequires: libXp-devel
 BuildRequires: libXt-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 X.Org XprintUtil library.
@@ -43,12 +42,10 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_libdir}/libXprintUtil.so.*
 %doc COPYING ChangeLog
 
 %files devel
-%defattr(-,root,root)
 %{_libdir}/libXprintUtil.a
 %{_libdir}/libXprintUtil.la
 %{_libdir}/libXprintUtil.so

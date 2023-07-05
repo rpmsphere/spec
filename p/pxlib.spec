@@ -4,8 +4,8 @@ Version: 0.6.5
 Release: 8.1
 License: GPL
 Group: System/Libraries
-URL: http://pxlib.sourceforge.net/
-Source: http://prdownloads.sourceforge.net/pxlib/%{name}-%{version}.tar.gz
+URL: https://pxlib.sourceforge.net/
+Source: https://prdownloads.sourceforge.net/pxlib/%{name}-%{version}.tar.gz
 BuildRequires: autoconf
 BuildRequires: sqlite-devel
 BuildRequires: libgsf-devel

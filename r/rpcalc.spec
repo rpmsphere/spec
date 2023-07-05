@@ -4,8 +4,8 @@ Release:        1
 Summary:        A simple RPN (Reverse Polish Notation) calculator
 Group:          Applications/System
 License:        GPLv2
-URL:            http://rpcalc.bellz.org/
-Source0:        http://prdownload.berlios.de/rpcalc/%{name}-%{version}.tar.gz
+URL:            https://rpcalc.bellz.org/
+Source0:        https://prdownload.berlios.de/rpcalc/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3-qt5-devel
 Requires:       python3-qt5

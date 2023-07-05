@@ -4,7 +4,7 @@ Version:		0.36
 Release:		48.1
 License:		GPL
 Group:			Productivity/Office/Finance
-URL:			http://qtstalker.sourceforge.net/
+URL:			https://qtstalker.sourceforge.net/
 Source:			%{name}-%{version}.tar.gz
 Source1:		%{name}.png
 #Source2:		%{name}.sh

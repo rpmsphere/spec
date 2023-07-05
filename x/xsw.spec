@@ -4,8 +4,8 @@ Group: Application/Office
 Summary: A slideshow viewer
 Version: 0.2.3
 Release: 1
-Source: http://xsw.googlecode.com/files/%{name}-%{version}.tar.gz
-URL: http://code.google.com/p/xsw/
+Source: https://xsw.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/xsw/
 BuildRequires: SDL-devel, SDL_gfx-devel, SDL_ttf-devel , SDL_image-devel
 
 %description

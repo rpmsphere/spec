@@ -28,7 +28,6 @@ make
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %{_datadir}/doc/%{name}
 %{_mandir}/man1/%{name}.1.*
 %{_bindir}/%{name}

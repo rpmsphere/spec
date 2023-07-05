@@ -7,8 +7,8 @@ Version:	0.24
 Release:	1
 License:	GPL
 Group:		Editors
-URL:		http://wxhexeditor.sourceforge.net/
-Source0:	http://sourceforge.net/projects/wxhexeditor/files/wxHexEditor/v%{version}%20Beta/%{_name}-v%{version}-src.tar.xz
+URL:		https://wxhexeditor.sourceforge.net/
+Source0:	https://sourceforge.net/projects/wxhexeditor/files/wxHexEditor/v%{version}%20Beta/%{_name}-v%{version}-src.tar.xz
 BuildRequires:	gcc-c++
 BuildRequires:	pkgconfig automake
 BuildRequires:  wxGTK-devel

@@ -4,7 +4,7 @@ License:        GPL v3 or later
 Group:          System/Shells
 Version:        0.6.2
 Release:        3.1
-URL:            http://prll.sourceforge.net/
+URL:            https://prll.sourceforge.net/
 Requires:       grep
 BuildRequires:  make
 BuildRequires:  gcc
@@ -12,8 +12,7 @@ BuildRequires:  bash
 BuildRequires:  zsh
 BuildRequires:  coreutils
 BuildRequires:  grep
-Source0:        http://sourceforge.net/projects/prll/files/%{name}-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+Source0:        https://sourceforge.net/projects/prll/files/%{name}-%{version}.tar.bz2
 
 %description
 While every full-featured shell provides job control, it is only meant for
@@ -76,7 +75,6 @@ done
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS COPYING NEWS README 
 %_bindir/*
 %_datadir/%name

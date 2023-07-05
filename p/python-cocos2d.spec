@@ -7,7 +7,7 @@ Version:	0.6.3
 Release:	6.1
 License:	BSD
 Group:		Development/Libraries
-URL:		http://cocos2d.org/
+URL:		https://cocos2d.org/
 Source0:	cocos-release-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:  python3

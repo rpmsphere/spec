@@ -6,8 +6,8 @@ Group: User Interface/Desktops
 Summary: An application launcher and desktop
 Version: 2.8
 Release: 7.3
-Source: http://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.gz
-URL: http://gpe.linuxtogo.org/projects/GPE-appmgr.shtml
+Source: https://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.gz
+URL: https://gpe.linuxtogo.org/projects/GPE-appmgr.shtml
 BuildRequires: libpng-devel
 BuildRequires: libgpewidget-devel, libgpelaunch-devel, libxsettings-client-devel
 Patch0: gpe-appmgr-2.8-cairo.patch

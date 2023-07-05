@@ -3,9 +3,9 @@ Summary:        GTK2 front-end for efax
 Version:        3.2.15
 Release:        1
 Group:          Communications/Fax
-URL:            http://efax-gtk.sourceforge.net
+URL:            https://efax-gtk.sourceforge.net
 License:        GPLv2
-Source0:        http://downloads.sourceforge.net/efax-gtk/%{name}-%{version}.src.tgz
+Source0:        https://downloads.sourceforge.net/efax-gtk/%{name}-%{version}.src.tgz
 BuildRequires:  pkgconfig
 BuildRequires:  gtk2-devel
 BuildRequires:  desktop-file-utils

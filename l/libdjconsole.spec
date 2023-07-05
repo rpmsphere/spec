@@ -3,8 +3,8 @@ Version:       0.1.3
 Release:       3.1
 Summary:       A driver for the DJ Console, built on top of libusb
 Group:         System/Libraries
-URL:           http://djplay.sourceforge.net/
-Source:        http://dfn.dl.sourceforge.net/sourceforge/djplay/libdjconsole-%{version}.tar.gz
+URL:           https://djplay.sourceforge.net/
+Source:        https://dfn.dl.sourceforge.net/sourceforge/djplay/libdjconsole-%{version}.tar.gz
 License:       GPL
 BuildRequires: gcc-c++
 BuildRequires: libusb-devel >= 0.1.12

@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
 Name:           tecoc
-URL:            http://almy.us/teco.html
+URL:            https://almy.us/teco.html
 Version:        0398
 Release:        8.1
 Summary:        Text Editor and COrrector
 License:        opensource
 Group:          Productivity/Editors
-Source:         http://almy.us/files/%{name}linux%{version}.tar.gz
+Source:         https://almy.us/files/%{name}linux%{version}.tar.gz
 
 %description
 TECO, that grand old text editor your father used when he was young, is still

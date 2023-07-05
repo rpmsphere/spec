@@ -6,8 +6,8 @@ Release:	6.1
 Summary:	Library enabling Qt based applications to easily export graphics to TeX
 License:	GPLv3
 Group:		System Environment/Libraries
-URL:		http://soft.proindependent.com/qtexengine/
-Source0:	http://download.berlios.de/qtiplot/%{name}-%{version}-opensource.zip
+URL:		https://soft.proindependent.com/qtexengine/
+Source0:	https://download.berlios.de/qtiplot/%{name}-%{version}-opensource.zip
 # Fixes the build and install of QTeXEngine
 Patch0:		QTeXEngine-svn1552-path.patch
 BuildRequires:	qt4-devel doxygen dos2unix
@@ -68,12 +68,10 @@ make install INSTALL="install -p" INSTALL_ROOT=%{buildroot} -C src
 rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root,-)
 %doc *.txt
 %{_libdir}/libQTeXEngine.so.*
 
 %files devel
-%defattr(-,root,root,-)
 %doc doc/html example
 %{_includedir}/QTeXEngine.h
 %{_libdir}/libQTeXEngine.so

@@ -4,8 +4,8 @@ Version: 0.5
 Release: 4.1
 License: GPL
 Group: Sciences/Biology
-Source: http://treeviewx.googlecode.com/files/%{name}-%{version}.tar.gz
-URL: http://code.google.com/p/treeviewx/
+Source: https://treeviewx.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/treeviewx/
 Vendor: Roderic D. M. Page <r.page@bio.gla.ac.uk>
 BuildRequires: libpng-devel
 BuildRequires: gcc-c++

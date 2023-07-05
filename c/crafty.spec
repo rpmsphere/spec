@@ -7,7 +7,7 @@ Group:        Amusements/Games/Board/Chess
 Summary:      A Chess Program
 Version:      25.2
 Release:      1
-URL:          http://www.craftychess.com/
+URL:          https://www.craftychess.com/
 Source:       ftp://ftp.cis.uab.edu/pub/hyatt/source/%{name}-%{version}.zip
 Source1:      crafty-misc.tar.bz2
 Source2:      bitmaps.tar.gz

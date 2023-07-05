@@ -4,7 +4,7 @@ Version: 3.10
 License: MIT
 Release: 21.2
 Group: Graphical desktop/Other
-URL: http://wmii.suckless.org/
+URL: https://wmii.suckless.org/
 Source0: hg.suckless.org/wmii/archive/f3d88385ea7c.tar.gz
 BuildRequires: freetype-devel
 BuildRequires: cairo-devel

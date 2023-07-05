@@ -1,6 +1,6 @@
 Name:           FOTAQ
 BuildRequires:  unzip desktop-file-utils
-URL:            http://www.scummvm.org/downloads.php
+URL:            https://www.scummvm.org/downloads.php
 License:        Other uncritical OpenSource License
 Group:          Amusements/Games/Other
 Requires:       scummvm timidity++
@@ -10,7 +10,7 @@ Summary:        Flight of the Amazon Queen (Adventure Game)
 Source:         FOTAQ_Floppy.zip
 Source1:        FOTAQ
 Source2:        %name.desktop
-Source3:        info
+Source3:        %name.info
 Source4:        %name.png
 Source5:        queen.tbl
 BuildArch:      noarch
@@ -46,7 +46,7 @@ unzip -u $RPM_SOURCE_DIR/FOTAQ_Floppy.zip
 %__mkdir_p $RPM_BUILD_ROOT/%{_datadir}/doc/packages/FOTAQ
 install -m 644 FOTAQ_Floppy/queen.1 $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ
 install -m 644 $RPM_SOURCE_DIR/queen.tbl $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ
-install -m 644 $RPM_SOURCE_DIR/info $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ
+install -m 644 $RPM_SOURCE_DIR/%name.info $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ/info
 install -m 644 FOTAQ_Floppy/readme.txt $RPM_BUILD_ROOT/%{_datadir}/doc/packages/FOTAQ
 install -m 755 $RPM_SOURCE_DIR/FOTAQ $RPM_BUILD_ROOT/%{_bindir}
 %__mkdir_p $RPM_BUILD_ROOT/%{_datadir}/pixmaps/

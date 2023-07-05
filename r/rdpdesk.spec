@@ -3,9 +3,9 @@ Version:        3.2
 Release:        19.1
 License:        GPLv2
 Summary:        Remote Desktop (RD) management solution
-URL:            http://sourceforge.net/projects/rdpdesk/
+URL:            https://sourceforge.net/projects/rdpdesk/
 Group:          Productivity/Networking/Diagnostic
-Source:         http://sourceforge.net/projects/rdpdesk/files/Releases/%{version}/%{name}-%{version}.tar.gz
+Source:         https://sourceforge.net/projects/rdpdesk/files/Releases/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 BuildRequires:  imake
 BuildRequires:  libXt-devel

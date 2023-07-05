@@ -8,8 +8,8 @@ Summary:	Video DVD creation tool, successor to ManDVD
 # GPLv2 and LGPL for some icons
 License:	GPLv2 and LGPL
 Group:		Video/Editors and Converters
-URL:		http://2mandvd.tuxfamily.org/website/
-Source0:	http://download.tuxfamily.org/2mandvd/%{srcname}-%{version}.tar.gz
+URL:		https://2mandvd.tuxfamily.org/website/
+Source0:	https://download.tuxfamily.org/2mandvd/%{srcname}-%{version}.tar.gz
 Patch1:		2ManDVD-1.8.4-fix_install.patch
 Patch2:		2ManDVD-1.8.5-libavformat54.patch
 BuildRequires:	qt4-devel >= 4.6

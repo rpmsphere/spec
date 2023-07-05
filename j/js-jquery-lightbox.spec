@@ -1,11 +1,11 @@
 Name:           js-jquery-lightbox
-URL:            http://lokeshdhakar.com/projects/lightbox2/
+URL:            https://lokeshdhakar.com/projects/lightbox2/
 Summary:        Javascript used to overlay images on a web page
 Version:        2.51
 Release:        2.1
 License:        Creative Commons Attribution 2.5
 Group:          Productivity/Networking/Web/Utilities
-Source:         http://lokeshdhakar.com/projects/lightbox2/releases/lightbox%{version}.zip
+Source:         https://lokeshdhakar.com/projects/lightbox2/releases/lightbox%{version}.zip
 BuildArch:      noarch
 BuildRequires:  web-assets-devel
 Requires:       js-jquery1

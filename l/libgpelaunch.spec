@@ -4,9 +4,8 @@ Group: System Environment/Libraries
 Summary: Launch for the GPE environment
 Version: 0.14
 Release: 4.1
-Source: http://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.bz2
-URL: http://gpe.linuxtogo.org/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+Source: https://gpe.linuxtogo.org/download/source/%{name}-%{version}.tar.bz2
+URL: https://gpe.linuxtogo.org/
 BuildRequires: libpng-devel
 BuildRequires: gtk2-devel, startup-notification-devel
 
@@ -40,12 +39,10 @@ developing applications that use %{name}.
 %__rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_libdir}/%{name}.so.*
 /usr/libexec/%{name}
 
 %files devel
-%defattr(-,root,root)
 %{_includedir}/gpe/*.h
 %{_libdir}/%{name}.a
 %{_libdir}/%{name}.la

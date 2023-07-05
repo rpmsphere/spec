@@ -5,7 +5,7 @@ Summary:        The GNU Eiffel Compiler and Libraries
 Group:          Development/Languages
 License:        GPLv2+
 URL:            https://www.liberty-eiffel.org/
-Source0:        http://download.savannah.gnu.org/releases/liberty-eiffel/bell.tar.gz
+Source0:        https://download.savannah.gnu.org/releases/liberty-eiffel/bell.tar.gz
 BuildRequires:  libX11-devel
 Obsoletes:      smarteiffel
 

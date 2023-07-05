@@ -6,7 +6,7 @@ Version:	1.0.1
 Release:	1
 License:	LGPL
 Group:		System/Libraries
-URL:		http://www.lysator.liu.se/liboop/
+URL:		https://www.lysator.liu.se/liboop/
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		liboop-linkage_fix.diff
 # Add 8.5 and 8.6 to tcl versions configure script detects - AdamW 2008/12

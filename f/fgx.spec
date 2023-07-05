@@ -6,12 +6,11 @@ Version: 2.6.0
 Release: 13.1
 License: GPL
 Group: Amusements/Games/3D/Simulation
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Source0: fgx-1328651169.tar.bz2
 Source1: FGx.desktop
 Source2: fgx.png
 Source3: x_default.ini
-URL: http://code.google.com/p/fgx
+URL: https://code.google.com/p/fgx
 BuildRequires: desktop-file-utils, gcc-c++, zlib-devel, zlib
 BuildRequires: qt4-devel, qt-creator, qt4-webkit-devel, llvm-devel
 Requires: FlightGear

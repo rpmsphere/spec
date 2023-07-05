@@ -3,11 +3,10 @@ Version:       1.0.1
 Release:       5.1
 Summary:       Library designed for DVD navigation
 Group:         System/Libraries
-URL:           http://developers.videolan.org/libdvdplay/
-Source:        http://download.videolan.org/pub/libdvdplay/%{version}/libdvdplay-%{version}.tar.bz2
+URL:           https://developers.videolan.org/libdvdplay/
+Source:        https://download.videolan.org/pub/libdvdplay/%{version}/libdvdplay-%{version}.tar.bz2
 License:       GPL
 BuildRequires: libdvdread-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 A simple library designed for DVD navigation. It is based on libdvdread
@@ -40,12 +39,10 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
 %{_libdir}/%{name}.so.*
 %doc AUTHORS COPYING ChangeLog README
 
 %files devel
-%defattr(-, root, root)
 %dir %{_includedir}/dvdplay
 %{_includedir}/dvdplay/*.h
 %{_libdir}/%{name}.a

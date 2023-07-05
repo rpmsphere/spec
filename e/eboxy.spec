@@ -4,9 +4,9 @@ Version: 0.4.1
 Release: 1
 License: GPLv2
 Group: Applications/Multimedia
-URL: http://eboxy.sourceforge.net/
-Source0: http://eboxy.sourceforge.net/eboxy-%{version}%{?prever:-%{prever}}.tar.bz2
-Source1: http://www.bluelightning.org/ebox/files/eboxy/eboxskin-20040526.tar.gz
+URL: https://eboxy.sourceforge.net/
+Source0: https://eboxy.sourceforge.net/eboxy-%{version}%{?prever:-%{prever}}.tar.bz2
+Source1: https://www.bluelightning.org/ebox/files/eboxy/eboxskin-20040526.tar.gz
 Patch0: cpp.patch
 BuildRequires: gcc-c++, zip, zlib-devel, desktop-file-utils
 BuildRequires: autoconf SDL-devel > 1.2.0 libxml2-devel > 2.4.19
@@ -32,7 +32,7 @@ of the couch using a remote. The eBox project is as much about helping others
 build similar systems as it is getting a decent entertainment system for
 myself, so for detailed information on the eBox and how you can set up such
 a system using Linux, check out the eBox website:
-http://www.bluelightning.org/ebox
+https://www.bluelightning.org/ebox
 
 %prep
 %setup -q -n %{name}-%{version}%{?prever:-%{prever}}
@@ -106,14 +106,14 @@ tar xzvf %{SOURCE1} -C %{buildroot}%{_datadir}/%{name}
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
 - Rebuilt for Fedora
-* Sat Dec 18 2008 Paulo Roma <http://orion.lcg.ufrj.br/~roma> 0.4.1-3
+* Sat Dec 18 2008 Paulo Roma <https://orion.lcg.ufrj.br/~roma> 0.4.1-3
 - Recreated gcc.patch for gcc 4.3
 - Introduced compat_flex, because the test Fedora < 7 does not work
   for fc10.
-* Sun Nov 18 2007 Paulo Roma <http://orion.lcg.ufrj.br/~roma> 0.4.1-2
+* Sun Nov 18 2007 Paulo Roma <https://orion.lcg.ufrj.br/~roma> 0.4.1-2
 - Rebuilt for Fedora 8.
 - Fixed BRs and using compat-flex.
-* Wed Apr  18 2007 Paulo Roma <http://orion.lcg.ufrj.br/~roma> 0.4.1-1
+* Wed Apr  18 2007 Paulo Roma <https://orion.lcg.ufrj.br/~roma> 0.4.1-1
 - Patched for compiling in gcc 4.1
-* Thu Aug  18 2004 Paulo Roma <http://orion.lcg.ufrj.br/~roma> 0.4.1-1
+* Thu Aug  18 2004 Paulo Roma <https://orion.lcg.ufrj.br/~roma> 0.4.1-1
 - Initial RPM release.

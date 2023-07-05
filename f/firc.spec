@@ -4,8 +4,8 @@ Version: 1.34
 Release: 4.1
 Group: Applications/Communications
 License: GPLv2
-URL: http://www.vanheusden.com/f-irc/
-Source0: http://www.vanheusden.com/f-irc/fi-%{version}.tgz
+URL: https://www.vanheusden.com/f-irc/
+Source0: https://www.vanheusden.com/f-irc/fi-%{version}.tgz
 BuildRequires: ncurses-devel
 
 %description

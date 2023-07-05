@@ -7,8 +7,8 @@ Version: 2.1git
 Release: 1
 Group: Development/Language
 License: GPLv2
-URL: http://pebl.sourceforge.net/
-#Source0: http://sourceforge.net/projects/pebl/files/%{name}/%{version}/%{name}_%{version}_src.tar.gz
+URL: https://pebl.sourceforge.net/
+#Source0: https://sourceforge.net/projects/pebl/files/%{name}/%{version}/%{name}_%{version}_src.tar.gz
 Source0: pebl-code-0-r1469-trunk.zip
 BuildRequires: SDL-devel
 BuildRequires: SDL_image-devel

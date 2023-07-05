@@ -3,8 +3,8 @@ Name: raster3d
 Version: 3.0
 Release: 7.1
 License: Source freely available, redistribution restricted
-Source: http://www.bmsc.washington.edu/raster3d/Raster3D_%{version}-7.tar.gz
-URL: http://www.bmsc.washington.edu/raster3d
+Source: https://www.bmsc.washington.edu/raster3d/Raster3D_%{version}-7.tar.gz
+URL: https://www.bmsc.washington.edu/raster3d
 Group: Graphics
 BuildRequires: gcc-gfortran gd-devel libtiff-devel
 

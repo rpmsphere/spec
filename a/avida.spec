@@ -6,8 +6,8 @@ Version: 2.12.4
 Release: 13.1
 Group: Science/Engineering
 License: GPL
-URL: http://avida.devosoft.org/
-Source0: http://sourceforge.net/projects/%{name}/files/%{name}-stable/%{version}/%{name}-%{version}-src.tar.gz
+URL: https://avida.devosoft.org/
+Source0: https://sourceforge.net/projects/%{name}/files/%{name}-stable/%{version}/%{name}-%{version}-src.tar.gz
 BuildRequires: gcc-c++
 BuildRequires: cmake
 

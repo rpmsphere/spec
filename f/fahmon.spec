@@ -5,9 +5,9 @@ Version:        2.3.99.4
 Release:        9.1
 License:        GPL-2.0
 Summary:        Monitor for Folding@home Clients
-URL:            http://fahmon.net/
+URL:            https://fahmon.net/
 Group:          System/Monitoring
-Source0:        http://fahmon.net/downloads/FahMon-%{version}.tar.bz2
+Source0:        https://fahmon.net/downloads/FahMon-%{version}.tar.bz2
 # PATCH-FIX-OPENSUSE fahmon-2.3.99.4-pixdir.patch lazy.kent@opensuse.org -- install icons into program dir, not into system one
 Patch0:         fahmon-2.3.99.4-pixdir.patch
 BuildRequires:  gcc-c++

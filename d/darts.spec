@@ -8,8 +8,8 @@ License:        LGPL-2.1+
 Group:          System/Libraries
 Version:        0.31
 Release:        70.1
-URL:            http://cl.aist-nara.ac.jp/~taku-ku/software/darts/
-Source0:        http://chasen.org/~taku/software/darts/src/darts-%version.tar.bz2
+URL:            https://cl.aist-nara.ac.jp/~taku-ku/software/darts/
+Source0:        https://chasen.org/~taku/software/darts/src/darts-%version.tar.bz2
 Summary:        Double Array Trie System
 
 %description

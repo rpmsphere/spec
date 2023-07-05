@@ -16,8 +16,8 @@ BuildArch:      noarch
 Summary:        A compiler/language for writing Python extension modules
 Group:          Development/Languages
 License:        Public Domain
-URL:            http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/
-Source0:        http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/Pyrex-%{version}.tar.gz
+URL:            https://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/
+Source0:        https://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/Pyrex-%{version}.tar.gz
 Source1:        pyrex-mode-init.el
 BuildRequires:  pkgconfig
 BuildRequires:  python2-devel

@@ -5,7 +5,7 @@ Version:	4.15.r213
 Release:	10.1
 Summary:	A wallpaper changer
 License:	GPLv3
-URL:		http://melloristudio.com/wallch/
+URL:		https://melloristudio.com/wallch/
 Source0:	wallch-4.15.r213.tar.gz
 Source1:	wallch.desktop
 Source2:	wallch.appdata.xml

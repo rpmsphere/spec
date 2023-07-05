@@ -7,7 +7,6 @@ Group: System/Daemons
 Source: pimpd-%{version}.tar.gz
 Source1: auth.tar.gz
 Patch: fakeident.diff
-BuildRoot: %{_tmppath}/%{name}-build
 
 %description
 ident daemon with support for linux masquerading firewalls.
@@ -27,7 +26,6 @@ install pimpd ${RPM_BUILD_ROOT}/usr/sbin
 install auth  ${RPM_BUILD_ROOT}/etc/xinetd.d
 
 %files
-%defattr(-,root,root,0755)
 %doc README
 /usr/sbin/pimpd
 /etc/xinetd.d/auth

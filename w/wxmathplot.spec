@@ -6,8 +6,8 @@ Release: 9.1
 License: wxWindows
 Summary: 2D plot library for wxWidgets
 Group: Applications/Development
-URL: http://wxmathplot.sourceforge.net/
-Source: http://sourceforge.net/projects/wxmathplot/files/wxmathplot/%{version}/wxMathPlot-%{version}.tar.gz
+URL: https://wxmathplot.sourceforge.net/
+Source: https://sourceforge.net/projects/wxmathplot/files/wxmathplot/%{version}/wxMathPlot-%{version}.tar.gz
 BuildRequires: cmake wxGTK2-devel
 
 %description

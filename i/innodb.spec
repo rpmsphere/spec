@@ -5,9 +5,8 @@ Release: 7.1
 License: GPL
 Group: System Environment/Libraries
 BuildRequires: gcc zlib-devel
-URL: http://www.innodb.com/products/embedded_innodb/
-Source: http://www.innodb.com/download/embedded_%{name}/embedded_%{name}-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+URL: https://www.innodb.com/products/embedded_innodb/
+Source: https://www.innodb.com/download/embedded_%{name}/embedded_%{name}-%{version}.tar.bz2
 
 %description
 Made for application developers, device makers and ISVs, Embedded InnoDB
@@ -85,11 +84,9 @@ rm -f $RPM_BUILD_ROOT%{_datadir}/%{name}-1.0/examples/COPYING
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-, root, root)
 %{_libdir}/libinnodb.so.*
 
 %files devel
-%defattr(-, root, root)
 %doc ChangeLog COPYING COPYING.Google README
 %{_datadir}/embedded_%{name}-1.0
 %{_includedir}/embedded_%{name}-1.0

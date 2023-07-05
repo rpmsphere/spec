@@ -5,7 +5,7 @@ Release: 1
 License: GPL
 Group: Amusements/Games
 Source: %{name}-%{version}.tar.gz
-URL: http://alephone.cebix.net
+URL: https://alephone.cebix.net
 # not relocatable because the data file packages depend upon the location
 # of the data files in this package
 
@@ -22,7 +22,7 @@ supports, but doesn't require, OpenGL for rendering.
 
 Aleph One requires additional data -- shape, sound, and map
 information -- in order to run. The easiest way to get this is to go
-to http://source.bungie.org/get/, and download one of the scenario zip
+to https://source.bungie.org/get/, and download one of the scenario zip
 files there. Unzip it, and pass the resulting directory as an argument
 to alephone. For example:
 

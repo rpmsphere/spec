@@ -5,7 +5,7 @@ Source:         %{name}-%{name}-%{version}.tar.gz
 License:        GPLv2
 Group:          System/Daemons
 Summary:        Real time system and event log monitoring system
-URL:            http://sagan.quadrantsec.com/
+URL:            https://sagan.quadrantsec.com/
 BuildRequires:  pcre-devel
 BuildRequires:  postgresql-devel
 BuildRequires:  libesmtp-devel

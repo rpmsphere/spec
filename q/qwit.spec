@@ -3,11 +3,11 @@
 Name:           qwit
 Version:        1.1pre2
 Release:        12.1
-URL:            http://code.google.com/p/qwit/
+URL:            https://code.google.com/p/qwit/
 License:        GPLv3
 Group:          Network/Instant messaging
 Summary:        Qt4 cross-platform client for Twitter
-Source:         http://qwit.googlecode.com/files/qwit-1.1-pre2-src.tar.bz2
+Source:         https://qwit.googlecode.com/files/qwit-1.1-pre2-src.tar.bz2
 Source1:        qwit.desktop
 Source2:        qwit-tango-icons.tar.gz
 Patch:          qwit-1.0-r303-no-shortner-option.diff
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 * Sun Mar 10 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1pre2
 - Rebuilt for Fedora
 * Sun Apr 11 2010 IBBoard
-- Updated to r323 (changes at http://code.google.com/p/qwit/source/list)
+- Updated to r323 (changes at https://code.google.com/p/qwit/source/list)
 * Mon Dec 21 2009 IBBoard
 - Updated to r303 (stops pop-up when showing more messages)
 - Replaced icons with nicer and properly sized Tango icons

@@ -4,11 +4,11 @@
 Name: qb64
 Version: 1.4
 Release: 1
-URL: http://www.qb64.net/
-Source0: http://www.qb64.net/qb64_%{version}_lnx.tar.gz
+URL: https://www.qb64.net/
+Source0: https://www.qb64.net/qb64_%{version}_lnx.tar.gz
 #Source0: https://codeload.github.com/Galleondragon/qb64/tar.gz/v%{version}#/%{name}-%{version}.tar.gz
 Source1: qb64.desktop
-Source2: http://www.qb64.net/qb64_trans.png
+Source2: https://www.qb64.net/qb64_trans.png
 License: GPL
 Group: Development/Other
 BuildRequires: gcc-c++, libX11-devel, SDL-devel, SDL_mixer-devel, SDL_ttf-devel, SDL_net-devel, SDL_image-devel

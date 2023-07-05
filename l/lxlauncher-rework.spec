@@ -4,7 +4,7 @@ Release:        1
 Summary:        Lightweight desktop applications launcher
 Group:          Applications/System
 License:        GPL
-URL:            http://sourceforge.net/projects/lxde/
+URL:            https://sourceforge.net/projects/lxde/
 Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  gettext, gtk2-devel >= 2.6, gnome-menus-devel, startup-notification-devel
 BuildRequires:	menu-cache-devel

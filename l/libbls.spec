@@ -2,12 +2,12 @@
 
 Name:         libbls
 Summary:      Efficient Data Manipulation Library
-URL:          http://libbls.hellug.gr/
+URL:          https://libbls.hellug.gr/
 Group:        Libraries
 License:      LGPL
 Version:      0.3.0
 Release:      12.2
-Source0:      http://libbls.hellug.gr/libbls-%{version}.tar.gz
+Source0:      https://libbls.hellug.gr/libbls-%{version}.tar.gz
 Patch:        libbls.patch
 BuildRequires: python2-scons
 

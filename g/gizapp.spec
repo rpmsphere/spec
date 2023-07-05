@@ -7,7 +7,7 @@ Source: 	giza-pp-v%{version}.tar.gz
 BuildRequires: 	glibc-devel, glibc-headers
 BuildRequires:  libstdc++-devel
 Requires:	tcsh, libstdc++
-URL:		http://code.google.com/p/giza-pp/
+URL:		https://code.google.com/p/giza-pp/
 
 %description
 GIZA++ is a statical machine translation toolkit that is used to train IBM

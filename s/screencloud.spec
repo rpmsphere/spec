@@ -7,7 +7,7 @@ Summary:        Easy to use screenshot sharing application
 Version:        1.5.3
 Release:        1
 Source0:        %{name}-%{version}.tar.gz	
-URL:            http://screencloud.net
+URL:            https://screencloud.net
 BuildRequires:  gcc-c++ cmake
 BuildRequires:  libqxt-qt5-devel PythonQt-devel quazip-devel
 

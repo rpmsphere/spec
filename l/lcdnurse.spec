@@ -6,8 +6,8 @@ Version: 1.0.3
 Release: 6.1
 Group: Applications/Tools
 License: GPLv3
-URL: http://congelli.eu/prog_info_lcdnurse.html
-Source0: http://congelli.eu/download/lcdnurse/%{name}-%{version}.tar.gz
+URL: https://congelli.eu/prog_info_lcdnurse.html
+Source0: https://congelli.eu/download/lcdnurse/%{name}-%{version}.tar.gz
 BuildRequires: wxGTK2-devel
 
 %description

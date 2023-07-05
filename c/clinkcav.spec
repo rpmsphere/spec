@@ -4,7 +4,7 @@ Release:        1
 Summary:        CyberLink/AV for C UPnP library
 Group:          Development/Libraries
 License:        opensource, see COPYING
-URL:            http://clinkc.sourceforge.net/
+URL:            https://clinkc.sourceforge.net/
 Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  clinkc-devel
 

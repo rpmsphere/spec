@@ -6,13 +6,13 @@ Release: 1
 Summary: Quick(Qt) Online Music Player 
 License: GPLv2
 Group: Sound
-URL: http://qomp.sourceforge.net
+URL: https://qomp.sourceforge.net
 Source: %name-%version.tar
 Source1: %name-%version-ga.tar
 Source2: %name-%version-themes.tar
 Source3: %name-%version-translations.tar
 Source4: %name-%version-singleapp.tar
-BuildRequires: qt5-devel 
+BuildRequires: qt5-qtbase-devel 
 BuildRequires: libcue-devel
 BuildRequires: taglib-devel 
 BuildRequires: cmake

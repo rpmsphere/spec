@@ -1,11 +1,11 @@
 Name:         libfirm
 Summary:      Program Intermediate Representation Modeling Library
-URL:          http://sourceforge.net/projects/libfirm/
+URL:          https://sourceforge.net/projects/libfirm/
 Group:        Compiler
 License:      GPL
 Version:      1.21.0
 Release:      6.1
-Source0:      http://sourceforge.net/projects/libfirm/files/%{name}/%{version}/%{name}-%{version}.tar.bz2
+Source0:      https://sourceforge.net/projects/libfirm/files/%{name}/%{version}/%{name}-%{version}.tar.bz2
 
 %package devel
 Summary: Development files for %{name}

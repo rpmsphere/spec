@@ -6,10 +6,10 @@ Group:		Utilities/System
 Version:	1.0.11
 Release:	10.1
 Summary:	Create your own usb stick windows installer
-URL:		http://en.congelli.eu/prog_info_winusb.html
+URL:		https://en.congelli.eu/prog_info_winusb.html
 BuildRequires:	gcc-c++ libstdc++-devel wxGTK2-devel gzip
 BuildRequires:	ghostscript-core ImageMagick
-Source0:	http://en.congelli.eu/download/winusb/%{name}-%{version}.tar.gz
+Source0:	https://en.congelli.eu/download/winusb/%{name}-%{version}.tar.gz
 
 %description  
 WinUSB is a simple tool that enable you to create your own usb stick windows

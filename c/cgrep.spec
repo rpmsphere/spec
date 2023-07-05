@@ -7,7 +7,7 @@ Release:	5
 License:	Lucent Public License
 Group:		Productivity/Text/Utilities
 Source0:	%{name}-%{version}.tar.gz
-URL:		http://www.bell-labs.com/project/wwexptools/cgrep/
+URL:		https://www.bell-labs.com/project/wwexptools/cgrep/
 
 %description
 cgrep provides all the features of grep, egrep, and fgrep, with greatly

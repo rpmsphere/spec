@@ -6,10 +6,10 @@ License:	GPLv2
 Group:		System/Daemons
 #Source0:	https://github.com/freenet/fred-official/archive/build01458.tar.gz
 Source0:	%{name}-official-build01458.tar.gz
-Source1:	http://freenet.googlecode.com/files/freenet-ext.jar.29
-Source2:	http://www.bouncycastle.org/download/bcprov-jdk15on-150.jar
+Source1:	https://freenet.googlecode.com/files/freenet-ext.jar.29
+Source2:	https://www.bouncycastle.org/download/bcprov-jdk15on-150.jar
 URL:		https://freenetproject.org/
-BuildRequires:	java-devel-openjdk lua
+BuildRequires:	java-openjdk-devel lua
 BuildRequires:	xml-commons-apis
 BuildRequires:	ant
 #BuildRequires:	ant-junit

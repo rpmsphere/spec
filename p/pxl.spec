@@ -29,10 +29,10 @@ Header files and Libraries for the package PXL.
 #export CXXFLAGS="-std=c++98 -fPIC"
 #cmake -DPYTHON_EXECUTABLE=/usr/bin/python3
 %cmake
-make
+%cmake_build
 
 %install
-make install DESTDIR=%{buildroot}
+%cmake_install
 %ifarch x86_64 aarch64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif

@@ -6,8 +6,8 @@ Release:    27.1
 Summary:    Linux-Touchscreen Driver for X
 Group:      System/X11
 License:    MIT
-URL:        http://www.conan.de/touchscreen/evtouch.html
-Source:     http://www.conan.de/touchscreen/xf86-input-evtouch-%{version}.tar.bz2
+URL:        https://www.conan.de/touchscreen/evtouch.html
+Source:     https://www.conan.de/touchscreen/xf86-input-evtouch-%{version}.tar.bz2
 # Debian patches
 Patch0:     01_fix_warnings.patch
 Patch1:     02_calibration_1.6.patch
@@ -25,7 +25,6 @@ Requires:	gnu-free-fonts-common
 BuildRequires:  libX11-devel
 BuildRequires:  xorg-x11-proto-devel
 BuildRequires:  xorg-x11-server-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 Requires: xorg-x11-server-common
 
 %description
@@ -57,7 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc README README.calibration
 %{_libdir}/xorg/modules/input/evtouch_drv.la
 %{_libdir}/xorg/modules/input/evtouch_drv.so

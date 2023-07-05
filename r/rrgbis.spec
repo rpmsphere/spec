@@ -6,7 +6,7 @@ Release:  1
 Summary:  Really Rather Good Battles In Space
 Group:    Amusements/Games
 License:  GPL
-URL:      http://rrgbis.sourceforge.net/download.php
+URL:      https://rrgbis.sourceforge.net/download.php
 Source0:  rrgbis-1.15.tar.bz2
 Source1:  rrgbis-1.13-data.tar.bz2
 Source2:  rrgbis.desktop

@@ -6,8 +6,8 @@ Version:	2.1.1
 Release:	6.1
 License:	BSD
 Group:		System/Base
-URL:		http://smarden.org/runit/
-Source0:	http://smarden.org/runit/%{name}-%{version}.tar.gz
+URL:		https://smarden.org/runit/
+Source0:	https://smarden.org/runit/%{name}-%{version}.tar.gz
 BuildRequires:	dietlibc-devel >= 0.32
 
 %description

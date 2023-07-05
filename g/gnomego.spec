@@ -5,8 +5,8 @@ Version: 0.5.1
 Release: 12.1
 Group: Amusements/Games
 License: GPLv3
-URL: http://gnomego.sourceforge.net/
-Source0: http://sourceforge.net/projects/gnomego/files/gnomego/GnomeGo%20%{version}/%{name}-%{version}.tar.gz
+URL: https://gnomego.sourceforge.net/
+Source0: https://sourceforge.net/projects/gnomego/files/gnomego/GnomeGo%20%{version}/%{name}-%{version}.tar.gz
 BuildRequires: python2-devel
 BuildRequires: mate-screensaver-devel
 BuildRequires: gnugo

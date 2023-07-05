@@ -5,8 +5,8 @@ Version:        1.3.6
 Release:        24
 Summary:        Faster list implementation for Python
 License:        BSD
-URL:            http://pypi.python.org/pypi/blist/
-Source0:        http://pypi.python.org/packages/source/b/blist/blist-%{version}.tar.gz
+URL:            https://pypi.python.org/pypi/blist/
+Source0:        https://pypi.python.org/packages/source/b/blist/blist-%{version}.tar.gz
 # https://github.com/DanielStutzbach/blist/pull/78
 Patch0001:      0001-Fix-compatibility-for-Python-3.7.patch
 BuildRequires:  python3-devel

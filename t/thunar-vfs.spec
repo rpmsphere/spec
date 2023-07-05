@@ -7,8 +7,8 @@ Release:	7
 Summary:	Virtual filesystem shipped with Thunar 1.0 and earlier releases
 Group:		Graphical desktop/Xfce
 License:	LGPLv2+
-URL:		http://thunar.xfce.org
-Source0:	http://archive.xfce.org/src/xfce/%{name}/%{url_ver}/%{name}-%{version}.tar.bz2
+URL:		https://thunar.xfce.org
+Source0:	https://archive.xfce.org/src/xfce/%{name}/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(exo-2)
 BuildRequires:	pkgconfig(gamin)

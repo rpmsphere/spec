@@ -1,11 +1,11 @@
 Name:         cocom
 Summary:      Compiler Creation Toolkit
-URL:          http://cocom.sourceforge.net/
+URL:          https://cocom.sourceforge.net/
 Group:        Compiler
 License:      GPL/LGPL
 Version:      0.996
 Release:      10.1
-Source0:      http://prdownloads.sourceforge.net/cocom/%{name}-%{version}.tar.gz
+Source0:      https://prdownloads.sourceforge.net/cocom/%{name}-%{version}.tar.gz
 
 %description
 COCOM is a set of tools oriented onto the creation of compilers,

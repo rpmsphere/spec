@@ -5,7 +5,7 @@ Summary:	Library to access the Virtual Hard Disk (VHD) image format
 Group:		System Environment/Libraries
 License:	LGPL
 Source:		%{name}-alpha-%{version}.tar.gz
-URL:		http://code.google.com/p/libvhdi/
+URL:		https://code.google.com/p/libvhdi/
 
 %description
 libvhdi is a library to access the Virtual Hard Disk (VHD) image format.

@@ -4,8 +4,8 @@ Version:	4.13.0
 Release:	7.1
 License:	BSD
 Group:		Development/Libraries/C and C++
-URL:		http://sf.net/projects/osp-toolkit
-Source:		http://sourceforge.net/projects/osp-toolkit/files/OSPToolkit-%{version}.tar.gz
+URL:		https://sf.net/projects/osp-toolkit
+Source:		https://sourceforge.net/projects/osp-toolkit/files/OSPToolkit-%{version}.tar.gz
 Patch1:		osp-automake.diff
 BuildRequires:	autoconf, automake, libtool
 BuildRequires:	compat-openssl10-devel

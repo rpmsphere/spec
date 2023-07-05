@@ -6,8 +6,8 @@ Release:        1
 Summary:        A free program for learning music
 License:        GPL-3.0
 Group:          Productivity/Multimedia/Sound/Midi
-URL:            http://www.lenmus.org/en/noticias
-Source0:        http://sourceforge.net/projects/lenmus/files/Source%20packages/%{name}-%{version}.tar.gz
+URL:            https://www.lenmus.org/en/noticias
+Source0:        https://sourceforge.net/projects/lenmus/files/Source%20packages/%{name}-%{version}.tar.gz
 Source1:        %{name}.png
 Source2:        %{name}.desktop
 Source3:        %{name}.sh

@@ -3,8 +3,8 @@ Version:       0.4.2
 Release:       3.1
 Summary:       A command line utility that enables the creation of xls files across platforms 
 Group:         Applications/File 
-URL:           http://sourceforge.net/projects/py-csv2xls/ 
-Source:        http://downloads.sourceforge.net/project/py-csv2xls/py-csv2xls/%{version}/csv2xls-%{version}.tgz
+URL:           https://sourceforge.net/projects/py-csv2xls/ 
+Source:        https://downloads.sourceforge.net/project/py-csv2xls/py-csv2xls/%{version}/csv2xls-%{version}.tgz
 License:       MIT
 BuildRequires: pyexcelerator
 Requires:      pyexcelerator

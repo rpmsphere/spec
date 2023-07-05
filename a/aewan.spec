@@ -2,13 +2,12 @@ Name:               aewan
 Version:            1.0.01
 Release:            6.1
 Summary:            Multi-Layered ASCII Art and Animation Editor
-# http://prdownloads.sourceforge.net/aewan/aewan-%{version}.tar.gz
+# https://prdownloads.sourceforge.net/aewan/aewan-%{version}.tar.gz
 Source:             aewan-%{version}.tar.bz2
 Patch1:             aewan-fixes.patch
-URL:                http://aewan.sourceforge.net/
+URL:                https://aewan.sourceforge.net/
 Group:              Productivity/Graphics/Bitmap Editors
 License:            GNU General Public License version 2 or later (GPL v2 or later)
-BuildRoot:          %{_tmppath}/build-%{name}-%{version}
 BuildRequires:      zlib-devel ncurses-devel
 BuildRequires:      gcc make glibc-devel
 BuildRequires:      autoconf automake libtool
@@ -48,7 +47,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc CHANGELOG COPYING README TODO
 %{_bindir}/aecat
 %{_bindir}/aemakeflic

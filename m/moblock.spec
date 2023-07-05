@@ -9,10 +9,9 @@ Source3:            moblock.sysconfig
 Patch1:             moblock-fix_makefile.patch
 Patch2:             moblock-fix_includes.patch
 Patch3:             moblock-paths.patch
-URL:                http://moblock.berlios.de/
+URL:                https://moblock.berlios.de/
 Group:              Productivity/Networking/Security
 License:            GNU General Public License version 2 or later (GPL v2 or later)
-BuildRoot:          %{_tmppath}/build-%{name}-%{version}
 BuildRequires:      libnetfilter_queue-devel
 BuildRequires:      gcc make glibc-devel pkgconfig
 
@@ -49,7 +48,6 @@ ipqueue userspace library and it is very light in resource usage (cpu, ram).
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc COPYING README Changelog
 %dir %{_sysconfdir}/moblock
 %{_sbindir}/moblock

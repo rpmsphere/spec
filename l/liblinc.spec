@@ -3,8 +3,8 @@ Version:       1.1.1
 Release:       17.1
 Summary:       Library for writing networked clients and servers
 Group:         System/Libraries
-URL:           http://www.gnome.org
-Source:        http://ftp.gnome.org/pub/GNOME/sources/linc/%(echo %version | cut -d. -f 1-2)/linc-%{version}.tar.bz2
+URL:           https://www.gnome.org
+Source:        https://ftp.gnome.org/pub/GNOME/sources/linc/%(echo %version | cut -d. -f 1-2)/linc-%{version}.tar.bz2
 License:       GPL
 BuildRequires: glib2-devel
 BuildRequires: libxml2

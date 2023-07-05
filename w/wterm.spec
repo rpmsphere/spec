@@ -5,8 +5,8 @@ Name:		wterm
 Version:	6.2.9
 License:	GPL
 Group:		X11/Applications
-Source0:	http://sourceforge.net/projects/wterm/files/wterm/%{name}-%{version}.tar.gz
-URL:		http://sourceforge.net/projects/wterm/
+Source0:	https://sourceforge.net/projects/wterm/files/wterm/%{name}-%{version}.tar.gz
+URL:		https://sourceforge.net/projects/wterm/
 Release:       23.1
 BuildRequires:  libpng-devel
 BuildRequires:  giflib-devel

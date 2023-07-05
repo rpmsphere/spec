@@ -4,7 +4,7 @@ Release:        9.4
 Summary:        Dictionary viewer with multi-languages support
 License:        GPL-3.0+
 Group:          Productivity/Office/Dictionary
-URL:            http://www.babiloo-project.org/
+URL:            https://www.babiloo-project.org/
 Source:         https://launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 Source1:	%{name}
 BuildRequires:  hicolor-icon-theme
@@ -66,4 +66,4 @@ sed -i 's|/usr/bin/env python|/usr/bin/python3|' %{buildroot}%{_datadir}/babiloo
 - Rebuilt for Fedora
 * Sun Oct 28 2012 fa0sck@gmail.com
 - Created package for babiloo (last) version 2.0.11
-* See http://bazaar.launchpad.net/~babiloo-developers/babiloo/trunk/changes
+* See https://bazaar.launchpad.net/~babiloo-developers/babiloo/trunk/changes

@@ -5,7 +5,7 @@ Group:          System/Libraries
 Version:        0.9.2
 Release:        344.1
 Summary:        Library for Uniform Presentation of fvwm95 Programs
-URL:            http://xclass.sourceforge.net/
+URL:            https://xclass.sourceforge.net/
 Source:         %{name}-%{version}.tar.bz2
 Patch0:         %{name}-%{version}-configs.patch
 Patch1:         %{name}-%{version}-gcc-3.1.patch

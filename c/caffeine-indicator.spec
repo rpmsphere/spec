@@ -5,7 +5,7 @@ Summary:        Prevent screensaving and powersaving
 Group:          User Interface/Desktops
 License:        GPLv3
 URL:            https://launchpad.net/caffeine
-Source0:        http://launchpad.net/caffeine/%{version}/+download/caffeine_%{version}.tar.gz
+Source0:        https://launchpad.net/caffeine/%{version}/+download/caffeine_%{version}.tar.gz
 BuildRequires:  python3-devel
 BuildArch:      noarch
 Requires:       python3-ewmh

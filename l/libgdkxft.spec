@@ -3,8 +3,8 @@ Version:       1.5
 Release:       8.1
 Summary:       Transparently adds anti-aliased font support to gtk+-1.2
 Group:         System/Libraries
-URL:           http://gdkxft.sourceforge.net/
-Source:        http://heanet.dl.sourceforge.net/sourceforge/gdkxft/gdkxft-%{version}.tar.gz
+URL:           https://gdkxft.sourceforge.net/
+Source:        https://heanet.dl.sourceforge.net/sourceforge/gdkxft/gdkxft-%{version}.tar.gz
 License:       LGPL
 BuildRequires: gtk+-devel >= 1.2.10
 BuildRequires: glib-devel >= 1.2.10

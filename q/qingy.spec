@@ -7,9 +7,9 @@ Version: 1.0.0
 Release: 33.1
 License: GPL
 Group: Applications/System
-Source0: http://easynews.dl.sourceforge.net/sourceforge/qingy/%{name}-%{version}.tar.bz2
-Source1: http://easynews.dl.sourceforge.net/sourceforge/qingy/%{themepack}.tar.bz2
-URL: http://qingy.sourceforge.net/about.php
+Source0: https://easynews.dl.sourceforge.net/sourceforge/qingy/%{name}-%{version}.tar.bz2
+Source1: https://easynews.dl.sourceforge.net/sourceforge/qingy/%{themepack}.tar.bz2
+URL: https://qingy.sourceforge.net/about.php
 BuildRequires: xorg-x11-proto-devel, ncurses-devel, libXScrnSaver-devel
 BuildRequires: compat-openssl10-devel
 BuildRequires: directfb-devel

@@ -3,8 +3,8 @@ Version:       0.9.0
 Release:       1
 Summary:       A fishing game for young children
 Group:         Graphical Desktop/Applications/Educational
-URL:           http://sourceforge.net/projects/wfh/
-Source:        http://kent.dl.sourceforge.net/sourceforge/wfh/WoodysFishingHole-%{version}-src.tar.gz
+URL:           https://sourceforge.net/projects/wfh/
+Source:        https://kent.dl.sourceforge.net/sourceforge/wfh/WoodysFishingHole-%{version}-src.tar.gz
 Source1:       fish.png
 License:       GPL
 BuildRequires: java-1.8.0-openjdk-devel, ant

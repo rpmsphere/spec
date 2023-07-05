@@ -4,7 +4,7 @@ Release:        1
 Summary:        Application to help with learning classical score notation
 License:        GPLv3
 Group:          Sound/Utilities
-URL:            http://nootka.sf.net
+URL:            https://nootka.sf.net
 Source0:        https://sourceforge.net/projects/nootka/files/Nootka-%{version}/%{name}-%{version}-source.tar.bz2
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  fftw-devel

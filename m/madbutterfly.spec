@@ -6,9 +6,9 @@ Release: 1
 Summary: SVG toolkit for GUI environment
 Group: Development/Libraries
 License: GPL v3
-URL: http://madbutterfly.sourceforge.net/
+URL: https://madbutterfly.sourceforge.net/
 Source: %{_name}.tar.gz
-#Source: hg clone http://hg.assembla.com/MadButterfly MadButterfly
+#Source: hg clone https://hg.assembla.com/MadButterfly MadButterfly
 BuildRequires: cairo, pango
 
 %description

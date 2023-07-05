@@ -5,8 +5,7 @@ Release:	22.1
 License:	GPL
 Group:		System Environment/Daemons
 Vendor:		lsexperts
-URL:		http://opensource.lsexperts.de/projects/linotp/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
+URL:		https://opensource.lsexperts.de/projects/linotp/
 Source:		%{name}-%{version}.tar.gz
 BuildRequires:	openssl-devel, openldap-devel
 
@@ -41,13 +40,11 @@ rm -rf $RPM_BUILD_ROOT
 %postun -p /sbin/ldconfig
 
 %files
-%defattr(-, root, root)
 %doc README COPYING
 %{_libdir}/*.so*
 %{_libdir}/*.la
 
 %files devel
-%defattr(-, root, root)
 %{_libdir}/pkgconfig/*
 %{_includedir}/*
 

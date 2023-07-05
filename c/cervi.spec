@@ -6,7 +6,7 @@ Version:        0.4.0
 Release:        1
 License:        GPL
 Group:          Amusements/Games/Arcade
-URL:            http://www.nomi.cz
+URL:            https://www.nomi.cz
 Source:         %{name}-svn-%{version}.tar.bz2
 Source1:        %{name}.png
 Patch1:         %{name}-svn-%{version}-makefile.patch

@@ -4,7 +4,7 @@ Release:	1
 Group:		Sound/Utilities
 License:	GPLv3
 Summary:	Tool for audio spectrum analysis and visualization
-URL:		http://spek-project.org
+URL:		https://spek-project.org
 Source0:	https://spek.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		spek-0.8.4-ffmpeg-5.0.patch
 BuildRequires:	wxGTK3-devel

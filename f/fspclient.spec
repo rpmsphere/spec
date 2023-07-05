@@ -4,7 +4,7 @@ Version: 0.93.1
 Release: 2
 Group: System Environment/Daemons
 License: BSD/MIT/X
-URL: http://fspclient.sourceforge.net
+URL: https://fspclient.sourceforge.net
 Source0: %{name}-%{version}.tar.bz2
 BuildRequires: glibc-devel python2-scons sed
 

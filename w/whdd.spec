@@ -21,10 +21,10 @@ WHDD is a diagnostic and recovery tool for block devices
 
 %build
 %cmake -DCFLAGS=-fPIC -DDIALOG_INCLUDE_DIR=/usr/include/dialog
-make
+%cmake_build
 
 %install
-%make_install
+%cmake_install
 
 %files
 %{_sbindir}/*

@@ -4,9 +4,9 @@ Name:               vmfs-tools
 Version:            0.2.5
 Release:            1
 Summary:            Tools to access VMFS file-systems
-Source:             http://glandium.org/projects/%{name}/%{name}-%{version}.tar.gz
+Source:             https://glandium.org/projects/%{name}/%{name}-%{version}.tar.gz
 Patch1:             vmfs-tools-uuid
-URL:                http://glandium.org/projects/vmfs-tools/
+URL:                https://glandium.org/projects/vmfs-tools/
 Group:              System Environment/Base
 License:            GPLv2+
 BuildRequires:      libuuid-devel 

@@ -4,7 +4,7 @@ Release:        1
 Summary:        An easy to use virtual keyboard toolkit
 License:        GPL-3.0+
 Group:          System/GUI/Other
-URL:            http://github.com/ueno/eekboard
+URL:            https://github.com/ueno/eekboard
 Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gmodule-2.0)

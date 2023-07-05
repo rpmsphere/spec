@@ -3,9 +3,9 @@ Name: xwpe
 Version: 1.5.30a
 Release: 19.1
 License: GPL
-URL: http://www.identicalsoftware.com/xwpe
+URL: https://www.identicalsoftware.com/xwpe
 Group: Development/Tools
-Source0: http://www.identicalsoftware.com/xwpe/xwpe-%{version}.tar.gz
+Source0: https://www.identicalsoftware.com/xwpe/xwpe-%{version}.tar.gz
 Source1: xwpe-t.xpm
 BuildRequires: ncurses-devel
 BuildRequires: gpm-devel

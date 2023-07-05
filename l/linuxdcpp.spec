@@ -5,7 +5,7 @@ License:        GPLv2
 Summary:        A Linux port of the Direct Connect client DC++
 URL:            https://launchpad.net/linuxdcpp
 Group:          Productivity/Networking/File-Sharing
-Source:         http://launchpad.net/linuxdcpp/1.1/%{version}/+download/%{name}-%{version}.tar.bz2
+Source:         https://launchpad.net/linuxdcpp/1.1/%{version}/+download/%{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel
 BuildRequires:  boost-devel
 BuildRequires:  gcc-c++

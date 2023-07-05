@@ -4,7 +4,7 @@ Version:	0.0.4342
 Release:	11.1
 License:	WTFPL
 Group:		Terminals
-URL:		http://caca.zoy.org/wiki/neercs
+URL:		https://caca.zoy.org/wiki/neercs
 Source0:	%{name}-0.0.tar.bz2
 Source1:	neercs.pam
 BuildRequires:	pam-devel python2-devel

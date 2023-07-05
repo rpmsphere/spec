@@ -8,7 +8,7 @@ Release: 6.1
 License: GPL
 Group: X11/Libraries
 Source: ftp://ftp.thp.uni-duisburg.de/pub/source/X11/%{name}-%{version}.tar.gz
-URL: http://WWW.thp.Uni-Duisburg.DE/Ygl/ReadMe.html
+URL: https://WWW.thp.Uni-Duisburg.DE/Ygl/ReadMe.html
 BuildRequires: imake
 BuildRequires: libX11-devel
 BuildRequires: mesa-libGL-devel

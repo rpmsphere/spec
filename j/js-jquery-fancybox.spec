@@ -1,11 +1,11 @@
 Name:           js-jquery-fancybox
-URL:            http://fancybox.net/
+URL:            https://fancybox.net/
 Summary:        Javascript tool for displaying images
 Version:        1.3.4
 Release:        2.1
 License:        MIT or GPLv2+
 Group:          Productivity/Networking/Web/Utilities
-Source:         http://fancybox.googlecode.com/files/jquery.fancybox-%{version}.zip
+Source:         https://fancybox.googlecode.com/files/jquery.fancybox-%{version}.zip
 BuildArch:      noarch
 BuildRequires:  web-assets-devel
 Requires:       js-jquery1

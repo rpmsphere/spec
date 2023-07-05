@@ -8,7 +8,7 @@ Release:	76.4
 Summary:	A Python application to make video of image slide-show
 License:	GPLv2+
 Group:		Video
-URL:		http://www.videoporama.tuxfamily.org
+URL:		https://www.videoporama.tuxfamily.org
 Source0:	%{oname}_%{version}-1.tar.gz
 BuildRequires:	desktop-file-utils
 BuildRequires:	python3-qt5-devel
@@ -122,4 +122,4 @@ sed -i 's|^import Image|from PIL import Image|' %{buildroot}%{_datadir}/%{name}/
 - Added also a desktop file, an icon file and a manpage taken from sources
 * Sat Feb 26 2011 Calogero Scarnà <specialworld83@gmail.com> 0.8.1
 - New package introduction for Mandriva International Backports
-- MIB (Mandriva International Backport) - http://mib.pianetalinux.org/
+- MIB (Mandriva International Backport) - https://mib.pianetalinux.org/

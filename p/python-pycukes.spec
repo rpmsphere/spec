@@ -1,11 +1,11 @@
 Name:           python-pycukes
 Version:        0.2
 Release:        3.1
-URL:            http://github.com/hugobr/pycukes
+URL:            https://github.com/hugobr/pycukes
 Summary:        A Cucumber-like BDD framework built on top of Pyhistorian
 License:        MIT License
 Group:          Development/Languages/Python
-Source:         http://pypi.python.org/packages/source/p/pycukes/pycukes-%{version}.tar.gz
+Source:         https://pypi.python.org/packages/source/p/pycukes/pycukes-%{version}.tar.gz
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python-should_dsl

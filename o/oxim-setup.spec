@@ -6,7 +6,7 @@ Version:	1.5.5
 Release:	1
 License:	LGPLv2+
 Group:		System/Internationalization
-URL:		http://www.opendesktop.org.tw/
+URL:		https://www.opendesktop.org.tw/
 Source0:	oxim-setup-%{version}.tar.gz
 Autoreq:	no
 Requires:	oxim

@@ -4,10 +4,10 @@ Summary: Python bindings to access Gmail
 Name: python3-%oname
 Version: 0.1.11
 Release: 1
-Source0: http://downloads.sourceforge.net/libgmail/%{oname}-%{version}.tar.gz
+Source0: https://downloads.sourceforge.net/libgmail/%{oname}-%{version}.tar.gz
 License: GPL
 Group: Development/Python
-URL: http://libgmail.sourceforge.net/
+URL: https://libgmail.sourceforge.net/
 BuildArch: noarch
 BuildRequires: python3-devel
 BuildRequires: python3-mechanize

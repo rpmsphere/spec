@@ -8,7 +8,7 @@ Release:        3
 Summary:        Dynamic Python binding for the Qt framework
 License:        LGPL-2.1-or-later
 Group:          Development/Libraries/C and C++
-URL:            http://pythonqt.sourceforge.net
+URL:            https://pythonqt.sourceforge.net
 Source0:        https://downloads.sourceforge.net/pythonqt/%{name}%{version}.zip
 # PATCH-FIX-OPENSUSE PythonQt-add-install-target.patch
 Patch0:         %{name}-add-install-target.patch

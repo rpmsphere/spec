@@ -6,7 +6,7 @@ Version:        0.5.0
 Release:        1
 License:        GNU LGPLv2.1 ; GNU LGPLv3
 Summary:        Library to raise flags on dbus
-Url:            http://launchpad.net/libindicate
+Url:            https://launchpad.net/libindicate
 Group:          System/Libraries
 Source:         %{name}-%{version}.tar.bz2
 Source99:       libindicate-rpmlintrc

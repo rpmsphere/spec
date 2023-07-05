@@ -6,8 +6,8 @@ Version: 2.2.0
 Release: 7.1
 Group: Networking/Instant messaging
 License: GPLv2+
-URL: http://code.google.com/p/ofetion/
-Source0: http://ofetion.googlecode.com/files/%{name}-%{version}.tar.gz
+URL: https://code.google.com/p/ofetion/
+Source0: https://ofetion.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires: libofetion-devel >= 2.2.0
 BuildRequires: gcc-c++, cmake, sqlite-devel
 

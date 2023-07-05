@@ -4,7 +4,7 @@ Release:        5.1
 Summary:        A simple front-end to Wine
 License:        GPL-3.0+
 Group:          System/Emulators/PC
-URL:            http://code.google.com/p/winegame/
+URL:            https://code.google.com/p/winegame/
 Source:         %{name}-%{version}.tar.gz
 BuildRequires:  cmake
 BuildRequires:  gcc-c++

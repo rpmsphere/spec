@@ -2,11 +2,10 @@ Summary: Galago desktop presence daemon
 Name: galago-daemon
 Version: 0.5.1
 Release: 6.1
-Source0: http://www.galago-project.org/files/releases/source/galago-daemon/%{name}-%{version}.tar.bz2
+Source0: https://www.galago-project.org/files/releases/source/galago-daemon/%{name}-%{version}.tar.bz2
 License: GPL
 Group: System/Servers
-URL: http://www.galago-project.org/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+URL: https://www.galago-project.org/
 BuildRequires: galago-devel >= 0.5.2
 BuildRequires: dbus-glib-devel
 
@@ -28,7 +27,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %doc NEWS AUTHORS ChangeLog
 %config(noreplace) %{_sysconfdir}/dbus-1/system.d/galago-daemon.conf
 %{_libexecdir}/galago-daemon

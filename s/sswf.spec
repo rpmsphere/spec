@@ -1,11 +1,11 @@
 Name:         sswf
 Summary:      Script SWF Format
-URL:          http://www.m2osw.com/sswf
+URL:          https://www.m2osw.com/sswf
 Group:        Flash
 License:      GPL
 Version:      1.8.4
 Release:      12.1
-Source0:      http://switch.dl.sourceforge.net/sswf/sswf-%{version}-src.tar.bz2
+Source0:      https://switch.dl.sourceforge.net/sswf/sswf-%{version}-src.tar.bz2
 BuildRequires: libjpeg-devel
 
 %description

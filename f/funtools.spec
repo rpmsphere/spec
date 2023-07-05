@@ -9,9 +9,9 @@ Release: 20.1
 Summary: FITS library and utilities
 Group: Applications/Engineering
 License: LGPLv2+
-#URL: http://hea-www.harvard.edu/RD/funtools/
+#URL: https://hea-www.harvard.edu/RD/funtools/
 URL: https://github.com/ericmandel/funtools
-#Source0: http://hea-www.harvard.edu/saord/download/funtools/%{name}-%{version}.tar.gz
+#Source0: https://hea-www.harvard.edu/saord/download/funtools/%{name}-%{version}.tar.gz
 Source0: %{name}-master.zip
 BuildRequires: wcstools-devel tcl-devel zlib-devel
 BuildRequires: pkgconfig

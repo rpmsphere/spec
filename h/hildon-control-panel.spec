@@ -4,8 +4,8 @@ Group: User Interface/Desktops
 Summary: Hildon control panel
 Version: 1.9.5
 Release: 1
-Source: http://moblin.org/build-results/projects/hildon-control-panel/lpia/hildon-control-panel_%{version}-2ubuntu1.tar.gz
-URL: http://www.moblin.org/projects/projects_ui.php
+Source: https://moblin.org/build-results/projects/hildon-control-panel/lpia/hildon-control-panel_%{version}-2ubuntu1.tar.gz
+URL: https://www.moblin.org/projects/projects_ui.php
 BuildRequires: gnome-vfs2-devel, libhildon-devel, libosso-devel, libhildonhelp-devel
 Requires: gnome-vfs2, libhildon, libosso, libhildonhelp
 Requires: pkgconfig, osso-af-settings

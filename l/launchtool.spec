@@ -6,7 +6,7 @@ Release: 6.1
 Summary: Runs a command supervising its execution
 License: GPLv2+
 Group: System/Base
-URL: http://people.debian.org/~enrico/launchtool.html
+URL: https://people.debian.org/~enrico/launchtool.html
 Source: %{name}-%{version}.tar.gz
 Patch1: launchtool-0.7-pidfile.patch
 BuildRequires: popt-devel

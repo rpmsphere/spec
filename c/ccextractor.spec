@@ -6,8 +6,8 @@ Release:	1
 Summary:	A fast closed captions extractor 
 Group:		Video
 License:	GPL 2.0
-URL:		http://ccextractor.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:		https://ccextractor.sourceforge.net/
+Source0:	https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: autoconf
 BuildRequires: utf8proc-devel
 BuildRequires: ffmpeg-devel

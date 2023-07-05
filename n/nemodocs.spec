@@ -4,9 +4,9 @@ Version: 0.2.4
 Release: 11.4
 License: LGPL 2.1
 Group: Applications/File
-URL: http://www.iola.dk/nemo/
+URL: https://www.iola.dk/nemo/
 BuildArch: noarch
-Source: http://www.iola.dk/nemo/downloads/nemo-%{version}.tar.bz2
+Source: https://www.iola.dk/nemo/downloads/nemo-%{version}.tar.bz2
 BuildRequires: libpng-devel
 BuildRequires: libpng12
 BuildRequires: mono-devel cairo-devel gtk-sharp2-devel gnome-sharp-devel ndesk-dbus-glib-devel

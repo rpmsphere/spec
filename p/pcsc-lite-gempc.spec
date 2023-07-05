@@ -5,11 +5,11 @@ BuildRequires:  libusb-devel
 BuildRequires:  pcsc-lite-devel
 Version:        1.0.8
 Release:        1
-URL:            http://ludovic.rousseau.free.fr/softwares/ifd-GemPC/
+URL:            https://ludovic.rousseau.free.fr/softwares/ifd-GemPC/
 Summary:        PCSC driver for the Gemplus GemPC 410/430 smartcard readers
 License:        BSD-3-Clause AND GPL-2.0-or-later
 Group:          Productivity/Security
-Source0:        http://ludovic.rousseau.free.fr/softwares/ifd-GemPC/%{_name}-%{version}.tar.gz
+Source0:        https://ludovic.rousseau.free.fr/softwares/ifd-GemPC/%{_name}-%{version}.tar.gz
 # PATCH-FIX-OPENSUSE pcsc-gempc-1.0.0-devname.diff okir@suse.de -- Use standard device nodes.
 Patch:          %{_name}-1.0.0-devname.diff
 # PATCH-FIX-OPENSUSE pcsc-gempc-makefile.diff mjancar@suse.cz -- Fix build environment.

@@ -6,8 +6,8 @@ Version: 0.0.9.2
 Release: 6.1
 License: GPL
 Group: Applications/Multimedia
-URL: http://xonclock.sourceforge.net/
-Source: http://dl.sf.net/xonclock/xonclock-%{version}.tar.gz
+URL: https://xonclock.sourceforge.net/
+Source: https://dl.sf.net/xonclock/xonclock-%{version}.tar.gz
 BuildRequires: libtiff-devel, libjpeg-devel, libpng-devel, libpng12-devel, desktop-file-utils
 BuildRequires: freetype-devel, libX11-devel, libXext-devel, libXpm-devel, libXrender-devel, libXft-devel
 

@@ -6,8 +6,8 @@ Version:       0.9.35
 Release:       1
 Summary:       The G(reat|tk|NU) Image Viewer
 Group:         Applications/Graphics
-URL:           http://giv.sourceforge.net/giv/
-Source0:       http://downloads.sourceforge.net/giv/giv-%{version}.tar.gz
+URL:           https://giv.sourceforge.net/giv/
+Source0:       https://downloads.sourceforge.net/giv/giv-%{version}.tar.gz
 License:       GPL
 BuildRequires: cairo-devel
 BuildRequires: gtk3-devel

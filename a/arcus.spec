@@ -4,8 +4,8 @@ Version: 0.3.2
 Release: 6.1
 License: GPL
 Group: Amusements/Games
-URL: http://arcus.sourceforge.net/
-Source0: http://sourceforge.net/projects/arcus/files/arcus/%{name}-%{version}/%{name}-%{version}-source.tar.gz
+URL: https://arcus.sourceforge.net/
+Source0: https://sourceforge.net/projects/arcus/files/arcus/%{name}-%{version}/%{name}-%{version}-source.tar.gz
 BuildArch: noarch
 BuildRequires: java-1.8.0-openjdk-devel lua
 

@@ -4,11 +4,11 @@ Version:      3.20
 Release:      6.1
 License:      GPL
 Group:        Development/Languages/Other
-URL:          http://sourceforge.net/projects/bwbasic/
+URL:          https://sourceforge.net/projects/bwbasic/
 BuildRequires: unzip
 BuildRequires: autoconf
 BuildRequires: automake
-Source0:      http://dl.sourceforge.net/project/%{name}/%{name}/version%20%{version}/%{name}-%{version}.zip
+Source0:      https://dl.sourceforge.net/project/%{name}/%{name}/version%20%{version}/%{name}-%{version}.zip
 Source1:      %{name}.png
 Source2:      %{name}.desktop
 

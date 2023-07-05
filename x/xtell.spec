@@ -2,7 +2,7 @@ Name: xtell
 Version: 2.10.8
 Release: 1
 License: GPL
-URL: http://melkor.dnp.fmph.uniba.sk/~garabik/xtell.html
+URL: https://melkor.dnp.fmph.uniba.sk/~garabik/xtell.html
 Source: xtell_%{version}.tar.gz
 Group: Networking/Daemons
 Summary: Simple messaging xlient and server

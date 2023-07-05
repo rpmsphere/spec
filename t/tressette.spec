@@ -2,7 +2,7 @@ Name:		tressette
 Summary:	SDL Italian card game 4-player Tressette
 Version:        0.7.4svn.12
 Release:	16.4
-URL:		http://invido.it/progetti/tressette_progetto.html
+URL:		https://invido.it/progetti/tressette_progetto.html
 Source:         %{name}-%{version}.tar.xz
 Patch0:		tressette_build.patch
 Source1:        tressettetux.desktop

@@ -7,7 +7,7 @@ Release:        9.1
 License:        GPLv2+
 Group:          Office
 Source:         ftp://ftp.nluug.nl/pub/editors/%{name}/%{name}-%{version}.src.tar.gz
-URL:            http://www.nllgg.nl/Ted/index.html
+URL:            https://www.nllgg.nl/Ted/index.html
 BuildRequires:  libXpm-devel gtk2-devel libjpeg-devel libpaper-devel pcre-devel libtiff-devel
 BuildRequires:  ghostscript-core ImageMagick
 
@@ -56,7 +56,7 @@ done
 - Initial build for ALT from upstream spec
 * Mon Feb 04 2013 Mark de Does <mark@mdedoes.com> 2.23-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Stability fixes.
 - Many-many annoying bugs fixed.
 - Some steps to support the few missing features such as absolutely 
@@ -66,7 +66,7 @@ positioned objects and shapes.
 - Conformant deb and rpm packages
 * Wed Apr 04 2012 Mark de Does <mark@mdedoes.com> 2.22-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Thorough brush-up of the internals.
 - Undu/Redo/Recovery
 - Many-many annoying bugs fixed.
@@ -74,7 +74,7 @@ See http://ftp.nluug.nl/pub/editors/ted/announce.html
 positioned objects and shapes.
 * Tue Oct 20 2009 Mark de Does <mark@mdedoes.com> 2.21-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Many improvements in the rendering of embedded images.
 - Removed functionality that is not directly related to word processing 
 and document formatting. (Email, Fax)
@@ -84,7 +84,7 @@ and document formatting. (Email, Fax)
 better UI
 * Sun Jun 07 2009 Mark de Does <mark@mdedoes.com> 2.20-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Vertical alignment of table cells.
 - Multi column layout (of sections).
 - Text background and text borders
@@ -97,7 +97,7 @@ interface)
 - Versions 2.18 and 2.19 were skipped.
 * Fri Jan 28 2005 Mark de Does <mark@mdedoes.com> 2.17-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Numbered lists finished.
 - Yet more footnote bugs fixed.
 - Behaviour of explicit line and page breaks simulates that of MS-Word.
@@ -108,17 +108,17 @@ for command line calls.
 The Word 97 Drawing Objects are mapped to 'shapes'.
 * Thu Apr 01 2004 Mark de Does <mark@mdedoes.com> 2.16-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Fonts can be embedded in the printout to print on any printer.
 - Version 2.15 was skipped.
 * Sun Apr 06 2003 Mark de Does <mark@mdedoes.com> 2.14-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Table Headers
 - Tabs in page headers/footers compatible with MS-Word 2000
 * Sat Mar 15 2003 Mark de Does <mark@mdedoes.com> 2.13-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Options for making much more compact PostScript when a document 
 is printed.
 - Support for smallcaps.
@@ -126,23 +126,23 @@ is printed.
 acroread support.
 * Sun Dec 01 2002 Mark de Does <mark@mdedoes.com> 2.12-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Solid shading of paragraphs and table cells.
 - Colored table cell borders, Text colors.
 * Sun Mar 01 2002 Mark de Does <mark@mdedoes.com> 2.11-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Footnotes and endnotes.
 - Detailed manipulation of the tabulator settings with a 'Tabs' tool.
 * Mon Apr 30 2001 Mark de Does <mark@mdedoes.com> 2.10-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Widow/Orphan control.
 - Keep paragraph on one page, Keep paragraph on same page as next supported.
 - Better support for sending MIME and HTML mail. Include images in message.
 * Mon Jan 31 2001 Mark de Does <mark@mdedoes.com> 2.9-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Full support for page headers and footers including page numbers.
 - Command line conversion to html or to plain text.
 - The improvements in WMF drawing and support for PAGEREF fields make 
@@ -150,7 +150,7 @@ the pdf files from the printed postscript very similar to the RTF
 original.
 * Tue Apr 15 2000 Mark de Does <mark@mdedoes.com> 2.8-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Editing behavior closer to that of Word. E.G. support for Control key 
 in navigation and selection has been extended.
 - The spelling packages have been renamed since Ted 2.6 to comply 
@@ -158,32 +158,32 @@ with naming conventions. If rpm complains about conflicts, please
 remove the conflicting old package using the command rpm -e old_package.
 * Fri Dec 31 1999 Mark de Does <mark@mdedoes.com> 2.7-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - A major step toward wysiwyg vertical layout: Pagination is visible 
 on screen.
 * Thu Sep 30 1999 Mark de Does <mark@mdedoes.com> 2.6-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - The HTML produced is now simpler and syntactically correct.
 * Sat Jul 31 1999 Mark de Does <mark@mdedoes.com> 2.5-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Right aligned and centered text are supported.
 * Fri May 21 1999 Mark de Does <mark@mdedoes.com> 2.4-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Little bugs that prevented Ted from working with other than Latin1 
 fonts removed.
 - The Ted document has been improved. It is added as an online document.
 * Thu Mar 11 1999 Mark de Does <mark@mdedoes.com> 2.3-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Printing of tables.
 * Sat Feb 06 1999 Mark de Does <mark@mdedoes.com> 2.2-1
 - New upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html
 - Usability improvements.
 - Version 2.1 was skipped.
 * Mon Nov 09 1998 Mark de Does <mark@mdedoes.com> 2.0-1
 - First upstream release.
-See http://ftp.nluug.nl/pub/editors/ted/announce.html
+See https://ftp.nluug.nl/pub/editors/ted/announce.html

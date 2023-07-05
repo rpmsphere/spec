@@ -1,10 +1,10 @@
 Name: spacewar
 Version: 0.0.1
 Release: 7.1
-Source0: http://sourceforge.net/projects/pdp1spacewar/files/%{name}.tar.gz
+Source0: https://sourceforge.net/projects/pdp1spacewar/files/%{name}.tar.gz
 License: GNU General Public License
 Group: Amusements/Arcade
-URL: http://sourceforge.net/projects/pdp1spacewar
+URL: https://sourceforge.net/projects/pdp1spacewar
 Summary: SpaceWar on PDP-1 emulator
 BuildRequires: gcc-c++, wxGTK3-devel, automake
 

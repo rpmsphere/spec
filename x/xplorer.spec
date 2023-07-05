@@ -4,8 +4,8 @@
 Name:		xplorer
 Version:	0.10.0
 Release:	19.1
-Source:		http://sourceforge.net/projects/cxplorer/files/xplorer/0.10.0/%{name}-%{version}.tar.xz
-URL:		http://cxplorer.sourceforge.net
+Source:		https://sourceforge.net/projects/cxplorer/files/xplorer/0.10.0/%{name}-%{version}.tar.xz
+URL:		https://cxplorer.sourceforge.net
 Group:		File tools 
 License:	GPL
 Vendor:		Gerhard Kräuter <gkraeuter@users.sourceforge.net>
@@ -39,7 +39,7 @@ every POSIX box with a working X-Window-System.
 C++X and Xplorer are developed in parallel at present, but in the future there will be other
 applications using C++X. Until then, C++X is only available as part of the Xplorer package.
 C++X has built-in support for internationalization. English, German and Spanish language is offered
-at the moment. The tool intlize needed to create translations is located at http://intlize.sourceforge.net.
+at the moment. The tool intlize needed to create translations is located at https://intlize.sourceforge.net.
 
 %description	-n %{libname}-devel
 C++X development package.

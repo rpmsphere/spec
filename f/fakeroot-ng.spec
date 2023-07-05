@@ -4,8 +4,8 @@ Release:        24.1
 Summary:        Fooling a program into thinking it is running as root
 License:        GPL-2.0+
 Group:          Development/Other
-URL:            http://sourceforge.net/projects/fakerootng
-Source:         http://downloads.sourceforge.net/fakerootng/%{name}-%{version}.tar.gz
+URL:            https://sourceforge.net/projects/fakerootng
+Source:         https://downloads.sourceforge.net/fakerootng/%{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 
 %description

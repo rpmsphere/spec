@@ -6,8 +6,8 @@ Release:        1
 Summary:        GDS2 chip layout Viewer
 License:        GPL-2.0+
 Group:          System/Filesystems
-URL:            http://www.klayout.de
-Source0:        http://www.klayout.de/downloads/%{name}-%{version}.tar.gz
+URL:            https://www.klayout.de
+Source0:        https://www.klayout.de/downloads/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 Patch0:         build-sh.diff
 BuildRequires:  gcc-c++

@@ -17,8 +17,8 @@ License:        GPLv3+
 License:        GPLv2+
 %endif
 Group:          Applications/Multimedia
-URL:            http://ffmpeg.org/
-Source0:        http://ffmpeg.org/releases/ffmpeg-%{version}.tar.bz2
+URL:            https://ffmpeg.org/
+Source0:        https://ffmpeg.org/releases/ffmpeg-%{version}.tar.bz2
 Source1:        ffmpeg-snapshot.sh
 Patch0:         ffmpeg-0.6.6-compile-fix.patch
 Patch1:         0001-Fix-build-when-seletected-fpu-is-not-neon-on-arm.patch

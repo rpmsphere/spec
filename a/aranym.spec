@@ -5,9 +5,9 @@ Version:		1.0.2
 Release:		4.1
 License:		GPLv2
 Summary:		32-bit Atari personal computer (Falcon030/TT030) virtual machine
-URL:			http://aranym.org/
+URL:			https://aranym.org/
 Group:			Console/Emulators
-Source0:		http://prdownloads.sourceforge.net/aranym/%{name}_%{version}.orig.tar.gz
+Source0:		https://prdownloads.sourceforge.net/aranym/%{name}_%{version}.orig.tar.gz
 Requires:		hicolor-icon-theme
 BuildRequires:		hicolor-icon-theme
 BuildRequires:		desktop-file-utils

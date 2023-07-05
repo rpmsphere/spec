@@ -1,11 +1,13 @@
+#global __os_install_post %{nil}
+
 Summary: Classic Basic interpreter
 Name: blassic
 Version: 0.11.0
 Release: 6.1
 License: GPL
 Group: Development/Languages
-URL: http://blassic.net/
-Source: http://blassic.net/bin/%{name}-%{version}.tgz
+URL: https://blassic.net/
+Source: https://blassic.net/bin/%{name}-%{version}.tgz
 BuildRequires: gcc-c++
 #BuildRequires: svgalib-devel
 

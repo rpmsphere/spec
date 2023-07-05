@@ -3,11 +3,10 @@ Version:       0.3.18
 Release:       3.1
 Summary:       A nonblocking I/O and OO library used by syslog-ng
 Group:         System/Libraries
-URL:           http://www.balabit.com/network-security/syslog-ng/
-Source:        http://www.balabit.com/downloads/files/libol/0.3/%{name}-%{version}.tar.gz
+URL:           https://www.balabit.com/network-security/syslog-ng/
+Source:        https://www.balabit.com/downloads/files/libol/0.3/%{name}-%{version}.tar.gz
 License:       GPL
 BuildRequires: gcc-c++
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 A nonblocking I/O and OO library used by syslog-ng.
@@ -36,12 +35,10 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_libdir}/libol.so.*
 %doc COPYING
 
 %files devel
-%defattr(-,root,root)
 %{_bindir}/libol-config
 %{_bindir}/make_class
 %{_libdir}/libol.so

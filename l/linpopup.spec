@@ -10,7 +10,7 @@ BuildRequires:  libpng-devel
 BuildRequires:	gtk2-devel libXmu-devel
 Requires:	gtk2 libXmu
 Requires:	samba-client samba-common
-URL: 		http://linpopup2.sourceforge.net
+URL: 		https://linpopup2.sourceforge.net
 
 %description
 Xwindow graphical port of Winpopup, running over Samba.

@@ -4,7 +4,7 @@ Version: 36.0
 Release: 4.1
 Group: Applications/Publishing
 License: GPL
-URL: http://www.arakhne.org/autolatex/
+URL: https://www.arakhne.org/autolatex/
 Source0: https://github.com/gallandarakhneorg/autolatex/archive/%{name}-%{name}-%{version}.zip
 BuildRequires: perl-devel
 BuildRequires: perl-IO-Compress

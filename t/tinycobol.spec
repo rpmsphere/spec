@@ -6,8 +6,8 @@ Release:	17.1
 Summary:	TinyCobol compiler and runtime
 Group:		Development/Languages/Other
 License:	GPL and LGPL
-URL:		http://tiny-cobol.sourceforge.net/
-Source:	http://sourceforge.net/projects/tiny-cobol/files/tiny-cobol/0.66/%{name}-%{version}.tar.bz2
+URL:		https://tiny-cobol.sourceforge.net/
+Source:	https://sourceforge.net/projects/tiny-cobol/files/tiny-cobol/0.66/%{name}-%{version}.tar.bz2
 BuildRequires:	libtool
 BuildRequires:  libdb-devel
 BuildRequires:  flex

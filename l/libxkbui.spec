@@ -3,15 +3,14 @@ Version:       1.0.2
 Release:       4.1
 Summary:       X.Org xkbui library
 Group:         System/Libraries
-URL:           http://x.org
-Source:        http://ftp.x.org/pub/individual/lib/libxkbui-%{version}.tar.bz2
+URL:           https://x.org
+Source:        https://ftp.x.org/pub/individual/lib/libxkbui-%{version}.tar.bz2
 License:       MIT
 BuildRequires: libICE-devel
 BuildRequires: libSM-devel
 BuildRequires: libX11-devel
 BuildRequires: libxkbfile-devel
 BuildRequires: libXt-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 %description
 X.Org xkbui library.
@@ -41,12 +40,10 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_libdir}/libxkbui.so.*
 %doc COPYING ChangeLog
 
 %files devel
-%defattr(-,root,root)
 %{_libdir}/libxkbui.a
 %{_libdir}/libxkbui.la
 %{_libdir}/libxkbui.so

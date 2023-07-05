@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           plexydesk
-URL:            http://www.plexyplanet.org/
+URL:            https://www.plexyplanet.org/
 BuildRequires:  cmake qt-devel qtwebkit-devel 
 License:        LGPL v3
 Group:          System/GUI/Other 

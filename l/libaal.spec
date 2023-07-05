@@ -5,8 +5,8 @@ Version:       1.0.5
 Release:       8.1
 Summary:       A library that provides application abstraction mechanism
 Group:         System/Libraries
-URL:           http://www.kernel.org
-Source:        http://www.kernel.org/pub/linux/utils/fs/reiser4/libaal/libaal-%{version}.tar.bz2
+URL:           https://www.kernel.org
+Source:        https://www.kernel.org/pub/linux/utils/fs/reiser4/libaal/libaal-%{version}.tar.bz2
 License:       GPL
 BuildRequires: gcc-c++
 

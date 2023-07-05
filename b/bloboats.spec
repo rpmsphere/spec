@@ -4,11 +4,11 @@ Name:		bloboats
 Summary:	Boat Racing Game
 Version:	1.0.2
 Release:	11
-Source:		http://mirror.kapsi.fi/bloboats.dy.fi/%{name}-%{version}.tar.gz
+Source:		https://mirror.kapsi.fi/bloboats.dy.fi/%{name}-%{version}.tar.gz
 Patch1:		bloboats-1.0.2-gcc7.patch
 License:	GPL
 Group:		Games/Arcade
-URL:		http://bloboats.dy.fi/
+URL:		https://bloboats.dy.fi/
 BuildRequires:	pkgconfig(SDL_mixer)
 BuildRequires:	pkgconfig(SDL_image)
 BuildRequires:	pkgconfig(SDL_net)

@@ -4,8 +4,8 @@ Version:		0.2.2
 Release:		21.1
 License:		GPL
 Group:			Productivity/Multimedia/Other
-Source0:		http://sourceforge.net/projects/gnapi/files/0.2/%{name}_%{version}.tar.gz
-URL:			http://gnapi.sourceforge.net/
+Source0:		https://sourceforge.net/projects/gnapi/files/0.2/%{name}_%{version}.tar.gz
+URL:			https://gnapi.sourceforge.net/
 BuildRequires:  libpng-devel
 BuildRequires:  libcurl-devel
 BuildRequires:	libnotify-devel notification-daemon

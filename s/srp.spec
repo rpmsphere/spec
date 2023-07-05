@@ -2,12 +2,12 @@
 
 Name:         srp
 Summary:      Secure Remote Password Library
-URL:          http://srp.standford.edu/
+URL:          https://srp.standford.edu/
 Group:        Cryptography
 License:      MIT-style
 Version:      2.1.2
 Release:      8.1
-Source0:      http://srp.stanford.edu/source/srp-%{version}.tar.gz
+Source0:      https://srp.stanford.edu/source/srp-%{version}.tar.gz
 BuildRequires: compat-openssl10-devel
 
 %description

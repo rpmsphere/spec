@@ -10,7 +10,7 @@ Source:         ghunter_0.0.5.tar.gz
 Patch0:         ghunter.desktop.diff
 Group:          Productivity/Graphics/Viewers
 Summary:        Picture watching program for comic books
-URL:            http://ficl.sourceforge.net
+URL:            https://ficl.sourceforge.net
 
 %description
 A set of picture-watching program intended to read comic books.

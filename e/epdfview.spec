@@ -3,9 +3,9 @@ Name: 		epdfview
 Version: 	0.1.8
 Release: 	1
 License:	GPL
-URL: 		http://www.emma-soft.com/projects/epdfview/
+URL: 		https://www.emma-soft.com/projects/epdfview/
 Vendor:         OSS Integral Institute, Co., Ltd.
-Source0: 	http://trac.emma-soft.com/epdfview/chrome/site/releases/%{name}-%{version}.tar.gz
+Source0: 	https://trac.emma-soft.com/epdfview/chrome/site/releases/%{name}-%{version}.tar.gz
 Source1:	%{name}-0.1.7.zh_TW.po
 Group: 		Applications/Productivity
 Requires:	poppler >= 0.5.0, gtk2, poppler-glib

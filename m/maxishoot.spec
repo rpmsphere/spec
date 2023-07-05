@@ -6,8 +6,8 @@ Version: 1.0.3
 Release: 14.1
 Group: Amusements/Games
 License: GPLv3
-URL: http://congelli.eu/prog_info_maxishoot.html
-Source0: http://congelli.eu/download/maxishoot/%{name}-%{version}.tar.gz
+URL: https://congelli.eu/prog_info_maxishoot.html
+Source0: https://congelli.eu/download/maxishoot/%{name}-%{version}.tar.gz
 BuildRequires: mesa-libGL-devel
 BuildRequires: mesa-libGLU-devel
 BuildRequires: compat-SFML16-devel

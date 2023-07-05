@@ -1,6 +1,6 @@
 Name:           mures
 BuildRequires:  SDL_image-devel SDL_net-devel SDL_ttf-devel 
-URL:            http://mures.sourceforge.net/
+URL:            https://mures.sourceforge.net/
 License:        GPL v2 or later
 Group:          Amusements/Games/Logic
 AutoReqProv:    on

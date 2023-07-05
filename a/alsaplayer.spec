@@ -13,8 +13,8 @@ Version: 0.99.81
 Release: 1
 License: GPLv2
 Group:   Applications/Multimedia
-URL:     http://www.alsaplayer.org/
-Source0: http://www.alsaplayer.org/alsaplayer-%{version}%{?prever}.tar.bz2
+URL:     https://www.alsaplayer.org/
+Source0: https://www.alsaplayer.org/alsaplayer-%{version}%{?prever}.tar.bz2
 Source1: alsaplayer.png
 Source2: alsaplayer-small.png
 Source3: alsaplayer-large.png
@@ -164,31 +164,31 @@ EOF
 - Changed description.
 - Using bcond jack, oss, nas, opengl for RHEL.
 - Patched flac input plugin (flac >= 1.1.3) for building on x86_64 
-* Mon Aug 30 2004 Matthias Saou <http://freshrpms.net/> 0.99.76-2
+* Mon Aug 30 2004 Matthias Saou <https://freshrpms.net/> 0.99.76-2
 - Added ldconfig calls since there are libs included.
-* Wed May 19 2004 Matthias Saou <http://freshrpms.net/> 0.99.76-2
+* Wed May 19 2004 Matthias Saou <https://freshrpms.net/> 0.99.76-2
 - Rebuilt for Fedora Core 2.
-* Fri Nov  7 2003 Matthias Saou <http://freshrpms.net/> 0.99.76-1
+* Fri Nov  7 2003 Matthias Saou <https://freshrpms.net/> 0.99.76-1
 - Update to 0.99.76.
 - Rebuilt for Fedora Core 1.
 - Added missing gcc-c++ build dependency.
-* Fri May  2 2003 Matthias Saou <http://freshrpms.net/>
+* Fri May  2 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.99.75.
-* Mon Mar 31 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Mar 31 2003 Matthias Saou <https://freshrpms.net/>
 - Rebuilt for Red Hat Linux 9.
 - Fix build order.
-* Sat Feb  8 2003 Matthias Saou <http://freshrpms.net/>
+* Sat Feb  8 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.99.74.
 - Added xosd support.
-* Mon Jan 13 2003 Matthias Saou <http://freshrpms.net/>
+* Mon Jan 13 2003 Matthias Saou <https://freshrpms.net/>
 - Update to 0.99.73.
-* Fri Sep 27 2002 Matthias Saou <http://freshrpms.net/>
+* Fri Sep 27 2002 Matthias Saou <https://freshrpms.net/>
 - Rebuilt for Red Hat Linux 8.0.
 - New desktop entry.
-* Wed Sep 18 2002 Matthias Saou <http://freshrpms.net/>
+* Wed Sep 18 2002 Matthias Saou <https://freshrpms.net/>
 - Update to 0.99.72.
 - Further spec file changes and fixes.
-* Thu Sep  5 2002 Matthias Saou <http://freshrpms.net/>
+* Thu Sep  5 2002 Matthias Saou <https://freshrpms.net/>
 - Spec file cleanup to match freshrpms.net habits :-)
 * Sat Jul 6 2002 Angles <angles@aminvestments.com>
 - version 0.99.71

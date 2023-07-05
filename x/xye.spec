@@ -2,11 +2,11 @@
 Name:           xye
 Version:        0.12.1
 Release:        1
-URL:            http://xye.sourceforge.net/
+URL:            https://xye.sourceforge.net/
 Summary:        Puzzle game where the goal is to collect all the gems in the room
 License:        Zlib
 Group:          Amusements/Games/Action/Arcade
-# Downloaded from sourceforge at http://downloads.sourceforge.net/xye/xye-0.9.3.tar.gz, repacked as bzip2
+# Downloaded from sourceforge at https://downloads.sourceforge.net/xye/xye-0.9.3.tar.gz, repacked as bzip2
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
 # PATCH-FIX-UPSTREAM xye-external-tinyxml.patch -- xye bundles tinyxml because not available in all distros, this patch makes it use the libtinyxml shared library

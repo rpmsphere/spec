@@ -4,8 +4,8 @@ Version: 1.3.0rc1
 Release: 1.1
 License: GPLv2
 Group: Amusements/Graphics
-Source0: http://prdownloads.sf.net/aa-project/aview-%{version}.tar.gz
-URL: http://aa-project.sf.net/aview/
+Source0: https://prdownloads.sf.net/aa-project/aview-%{version}.tar.gz
+URL: https://aa-project.sf.net/aview/
 BuildRequires: aalib-devel
 
 %description

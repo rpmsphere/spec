@@ -4,7 +4,7 @@ Release:        1
 Summary:        Sound editing program        
 Group:          Applications/Multimedia
 License:        GPLv2+
-URL:            http://gna.org/projects/mhwaveedit
+URL:            https://gna.org/projects/mhwaveedit
 Source:         https://codeload.github.com/magnush/mhwaveedit/tar.gz/v%{version}#/%{name}-%{version}.tar.gz
 Requires:       pulseaudio
 Requires:       hicolor-icon-theme

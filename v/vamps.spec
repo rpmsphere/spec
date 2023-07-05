@@ -5,8 +5,8 @@ Version:       0.99.2
 Release:       3.1
 Summary:       DVD9 to DVD5 Backup Utility
 Group:         Graphical Desktop/Applications/Utilities
-URL:           http://vamps.sourceforge.net/
-Source:        http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/v/va/%{name}/%{name}-%{version}.tar.gz
+URL:           https://vamps.sourceforge.net/
+Source:        https://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/v/va/%{name}/%{name}-%{version}.tar.gz
 License:       GPL
 BuildRequires: libdvdread-devel
 

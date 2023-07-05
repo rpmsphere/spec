@@ -2,12 +2,12 @@
 
 Name:         cmph
 Summary:      C Minimal Perfect Hashing (CMPH) Library
-URL:          http://sourceforge.net/projects/cmph/
+URL:          https://sourceforge.net/projects/cmph/
 Group:        Algorithm
 License:      MPL
 Version:      2.0
 Release:      9.1
-Source0:      http://sourceforge.net/projects/cmph/files/%{name}/%{name}-%{version}.tar.gz
+Source0:      https://sourceforge.net/projects/cmph/files/%{name}/%{name}-%{version}.tar.gz
 
 %description
 A perfect hash function maps a static set of n keys into a set of m

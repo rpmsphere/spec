@@ -2,9 +2,9 @@ Summary: Themes for GNOME
 Name: gnome-themes
 Version: 2.32.0
 Release: 21
-URL: http://download.gnome.org/sources/gnome-themes/
+URL: https://download.gnome.org/sources/gnome-themes/
 #VCS: git:git://git.gnome.org/gnome-themes
-Source: http://download.gnome.org/sources/gnome-themes/2.32/%{name}-%{version}.tar.bz2
+Source: https://download.gnome.org/sources/gnome-themes/2.32/%{name}-%{version}.tar.bz2
 License: LGPLv2 and GPLv2
 BuildArch: noarch
 Requires: gtk2-engines
@@ -278,7 +278,7 @@ done
 
 * Mon Apr 13 2009 Matthias Clasen <mclasen@redhat.com> - 2.26.1-1
 - Update to 2.26.1
-- See http://download.gnome.org/sources/gnome-themes/2.26/gnome-themes-2.26.1.news
+- See https://download.gnome.org/sources/gnome-themes/2.26/gnome-themes-2.26.1.news
 
 * Tue Mar 17 2009 Matthias Clasen <mclasen@redhat.com> - 2.26.0-1
 - Update to 2.26.0

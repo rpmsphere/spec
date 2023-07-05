@@ -103,7 +103,7 @@ popd
 - Use lua51 explicitly for opensuse >= 12.1
 - There is no changes file in the sources file, probably the best
   changes file is located at the git
-  http://notion.git.sourceforge.net/git/gitweb.cgi?p=notion/notion;a=log;h=91414f3a55bad7929562d3c3486c39e82b6418d2
+  https://notion.git.sourceforge.net/git/gitweb.cgi?p=notion/notion;a=log;h=91414f3a55bad7929562d3c3486c39e82b6418d2
 * Tue Nov  1 2011 pascal.bleser@opensuse.org
 - add xsession desktop file for notion
 * Tue Nov  1 2011 pascal.bleser@opensuse.org

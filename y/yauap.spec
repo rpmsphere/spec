@@ -3,8 +3,8 @@ Version:       0.2.4
 Release:       2.1
 Summary:       The useless audio player
 Group:         Applications/Multimedia
-URL:           http://www.nongnu.org/yauap/
-Source:        http://download.savannah.gnu.org/releases/yauap/yauap-%{version}.tar.gz
+URL:           https://www.nongnu.org/yauap/
+Source:        https://download.savannah.gnu.org/releases/yauap/yauap-%{version}.tar.gz
 License:       LGPL
 Requires:      gstreamer-plugins-base
 BuildRequires: gstreamer-plugins-base

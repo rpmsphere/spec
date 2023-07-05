@@ -7,15 +7,15 @@ Name:		pine
 Version:	4.64
 Release:	38.1
 License:	Freeware
-URL:		http://www.washington.edu/pine
+URL:		https://www.washington.edu/pine
 Group:		Networking/Mail
 Source0:	ftp://ftp.cac.washington.edu/pine/pine%{version}.tar.bz2
 Source1:	pine.conf
 Source2:	pine-spellcheck
-Source3:	http://www.megaloman.com/~hany/_data/pinepgp/pinepgp-%{pgpver}.tar.bz2
+Source3:	https://www.megaloman.com/~hany/_data/pinepgp/pinepgp-%{pgpver}.tar.bz2
 Source4:	pine.desktop
 Source5:	pico.desktop
-# eduardo patch (http://www.math.washington.edu/~chappa/pine/info/all.html)
+# eduardo patch (https://www.math.washington.edu/~chappa/pine/info/all.html)
 # contains many bugfixes and feature enhancements such as maildir support.
 Patch1:	pine-%{version}-eduardo.patch.bz2
 Patch3: pine-4.56-passwd.patch.bz2

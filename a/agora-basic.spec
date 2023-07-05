@@ -6,8 +6,8 @@ Version: 0.1
 Release: 11.1
 License: GPL
 Group: Development/Languages
-Source: http://antti-juhani.kaijanaho.fi/agora-basic/dist/%{name}-%{version}.tar.gz
-URL: http://antti-juhani.kaijanaho.fi/agora-basic/
+Source: https://antti-juhani.kaijanaho.fi/agora-basic/dist/%{name}-%{version}.tar.gz
+URL: https://antti-juhani.kaijanaho.fi/agora-basic/
 Requires: gcc
 
 %description

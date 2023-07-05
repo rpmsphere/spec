@@ -3,10 +3,9 @@ Version:        0.5
 Release:        9.4
 Summary:        SDL Chinese Chess Board
 License:        GPL
-URL:            http://sourceforge.net/projects/xiangqi-chess/
-Source0:        http://sourceforge.net/projects/xiangqi-chess/files/xiangqi-chess/Version%200.5/xiangqi-chess_0.5.tar.bz2
+URL:            https://sourceforge.net/projects/xiangqi-chess/
+Source0:        https://sourceforge.net/projects/xiangqi-chess/files/xiangqi-chess/Version%200.5/xiangqi-chess_0.5.tar.bz2
 BuildRequires:  gcc-c++, SDL-devel, SDL_ttf-devel, SDL_image-devel, SDL_gfx-devel, SDL_mixer-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 A Chinese Chess (xiangqi) game for Linux and Windows. Aims to be fast,
@@ -38,7 +37,6 @@ Exec=%{name}
 EOF
 
 %files
-%defattr(-,root,root)
 %doc README
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop

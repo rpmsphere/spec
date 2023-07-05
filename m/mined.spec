@@ -4,8 +4,8 @@ Release:        7
 Summary:        Powerful Text Editor with Extensive Unicode and CJK Support
 Summary(fr):    Puissant éditeur de texte avec Unicode Extensible et support de CJK
 License:        GPLv3
-URL:            http://towo.net/mined/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:            https://towo.net/mined/
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:         fix-timestmp-gcc-command.patch
 Patch1:         fix-armv7hl-build-in-configure-script.patch
 BuildRequires:  gcc

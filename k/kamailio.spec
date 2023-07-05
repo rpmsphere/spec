@@ -241,11 +241,10 @@ Summary:    Kamailio (former OpenSER) - the Open Source SIP Server
 Name:       %name
 Version:    %ver
 Release:    %rel
-Packager:   Peter Dunkley <peter@dunkley.me.uk>
 License:    GPL-2.0
 Group:      %{PKGGROUP}
-Source:     http://kamailio.org/pub/kamailio/%{ver}/src/%{name}-%{ver}_src.tar.gz
-URL:        http://kamailio.org/
+Source:     https://kamailio.org/pub/kamailio/%{ver}/src/%{name}-%{ver}_src.tar.gz
+URL:        https://kamailio.org/
 Vendor:     kamailio.org
 Conflicts:  kamailio-acc_json < %ver
 Conflicts:  kamailio-auth-ephemeral < %ver, kamailio-bdb < %ver

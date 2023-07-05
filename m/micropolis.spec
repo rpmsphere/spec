@@ -3,8 +3,8 @@ Name:		micropolis
 Version:	4.0
 Release:	37.4
 Group:		Games/Strategy
-URL:		http://www.donhopkins.com/home/micropolis/
-# Also see http://dev.laptop.org/git?p=projects/micropolis-activity
+URL:		https://www.donhopkins.com/home/micropolis/
+# Also see https://dev.laptop.org/git?p=projects/micropolis-activity
 Source:		micropolis-activity-source.tar.bz2
 Source1:	micropolis.desktop
 Patch1:		micropolis-path.patch
@@ -14,8 +14,8 @@ Patch2:		micropolis-makefile.patch
 # harmless corner cases, but this code is so old I don't take any chances.
 Patch3:		micropolis-64bit-warns.patch
 # Lots of fixes from
-# http://git.zerfleddert.de/cgi-bin/gitweb.cgi/micropolis
-# curl http://rmdir.de/~michael/micropolis_git.patch > micropolis-zerfleddert.$(date +%Y%m%d).patch
+# https://git.zerfleddert.de/cgi-bin/gitweb.cgi/micropolis
+# curl https://rmdir.de/~michael/micropolis_git.patch > micropolis-zerfleddert.$(date +%Y%m%d).patch
 Patch0:		micropolis-zerfleddert.20080302.patch.bz2
 # fix "Function call is passing too few arguments to a *printf function"
 Patch4:		micropolis-printf-arg.patch

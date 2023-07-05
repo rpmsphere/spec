@@ -2,12 +2,11 @@ Name:           xtrascreenhacks
 Version:        0.7
 Release:        4.1
 Summary:        Collection of openGL Screensavers
-# http://home.comcast.net/~shegeek/xtrascreenhacks/xtrascreenhacks-%{version}.tar.gz
+# https://home.comcast.net/~shegeek/xtrascreenhacks/xtrascreenhacks-%{version}.tar.gz
 Source:         xtrascreenhacks-%{version}.tar.bz2
-URL:            http://home.comcast.net/~shegeek/xtrascreenhacks/
+URL:            https://home.comcast.net/~shegeek/xtrascreenhacks/
 Group:          Amusements/Toys/Screensavers
 License:        GNU General Public License version 2 or later (GPL v2 or later)
-BuildRoot:      %{_tmppath}/build-%{name}-%{version}
 BuildRequires:  xscreensaver
 BuildRequires:  bc
 BuildRequires:  libX11-devel
@@ -73,7 +72,6 @@ CFLAGS="%{optflags} -DHAVE_SYS_WAIT_H"
 %__rm -rf "$RPM_BUILD_ROOT"
 
 %files
-%defattr(-,root,root)
 %doc README
 %dir /etc/xscreensaver
 %config(noreplace) /etc/xscreensaver/*.xml

@@ -4,8 +4,8 @@ Version:	0.4.1
 Release:	9.1
 Group:		System/Printing
 License:	BSD
-URL:		http://sourceforge.net/projects/epsonepl/
-Source0:	http://osdn.dl.sourceforge.net/sourceforge/epsonepl/%{name}-%{version}.tgz
+URL:		https://sourceforge.net/projects/epsonepl/
+Source0:	https://osdn.dl.sourceforge.net/sourceforge/epsonepl/%{name}-%{version}.tgz
 Patch0:		epsoneplijs-use_system_libs.diff
 Patch1:		epsoneplijs-mandriva-install.diff
 Patch2:		epsoneplijs-0.4.1-LDFLAGS.diff
@@ -13,7 +13,6 @@ BuildRequires:	libtool
 BuildRequires:	libusb-devel
 BuildRequires:	libieee1284-devel
 Requires:	ghostscript >= 6.53
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Support for the Epson EPL-5700L/5800L/5900L/6100L/6200L printer family under
@@ -75,7 +74,6 @@ popd
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-, root, root)
 %doc ChangeLog FAQ LIMITATIONS README* *.pdf epl_test* apsfilter cups epl_docs/epl-protocol.pdf epl_docs/README.1st
 %{_bindir}/*
 %{_datadir}/cups/model/epson/*.ppd.gz

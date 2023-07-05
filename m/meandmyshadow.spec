@@ -3,7 +3,7 @@ Version: 0.5a
 Release: 1
 License: GPLv3
 Summary: Puzzle/platform game with two protagonists performing shared task
-URL: http://meandmyshadow.sourceforge.net/
+URL: https://meandmyshadow.sourceforge.net/
 Source: %name-%version.tar.gz
 Group: Games/Puzzles
 Requires: %name-data = %version

@@ -5,7 +5,7 @@ License:        GNU General Public License (GPL)
 Group:          Amusements/Games/3D/Shoot
 Version:        1.0.14
 Release:        1
-URL:            http://tuxaqfh.sourceforge.net/
+URL:            https://tuxaqfh.sourceforge.net/
 Summary:        Tuxedo T. Penguin
 Source0:        %{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop

@@ -6,8 +6,8 @@ Version: 1.1.0
 Release: 4.1
 License: GPL
 Group: Applications/System
-URL: http://www.iometer.org/
-Source: http://dl.sf.net/iometer/iometer-stable/%{version}/iometer-%{version}-src.tar.bz2
+URL: https://www.iometer.org/
+Source: https://dl.sf.net/iometer/iometer-stable/%{version}/iometer-%{version}-src.tar.bz2
 BuildRequires: gcc-c++ libaio-devel
 
 %description

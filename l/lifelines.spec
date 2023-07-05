@@ -16,13 +16,13 @@ BuildRequires:  texlive-jadetex
 BuildRequires:  texlive-xmltex
 BuildRequires:  tidy
 BuildRequires:  w3m
-URL:            http://lifelines.sourceforge.net/
+URL:            https://lifelines.sourceforge.net/
 Version:        3.0.62
 Release:        136.1
 Summary:        A terminal based Genealogy Program
 License:        MIT
 Group:          Productivity/Scientific/Other
-Source:         http://download.sourceforge.net/lifelines/lifelines-3.0.62.tar.bz2
+Source:         https://download.sourceforge.net/lifelines/lifelines-3.0.62.tar.bz2
 Source1:        sh.rellink
 Patch:          lifelines-3.0.62.dif
 Patch1:         lifelines-3.0.59-funcptr.dif
@@ -46,7 +46,7 @@ Authors:
     Petter Reinholdtsen <pere@hungry.com>
 
 %prep 
-%setup
+%setup -q
 %patch  -p 0
 #patch1 -p 0
 %patch2 -p 0

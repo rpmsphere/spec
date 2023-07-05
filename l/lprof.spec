@@ -8,7 +8,7 @@ BuildRequires:  vigra-devel
 BuildRequires:  atlas
 Version:        1.11.4.1
 Release:        7.1
-URL:            http://lprof.sourceforge.net/
+URL:            https://lprof.sourceforge.net/
 Summary:        ICC Profiler
 License:        GPL-2.0+
 Group:          Productivity/Graphics/Other

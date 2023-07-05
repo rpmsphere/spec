@@ -11,10 +11,10 @@ Release:        24
 Summary:        GStreamer streaming media framework runtime
 
 License:        LGPLv2+
-URL:            http://gstreamer.freedesktop.org/
-#Source:         http://gstreamer.freedesktop.org/src/gstreamer/pre/gstreamer-%%{version}.tar.xz
-Source:         http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-%{version}.tar.xz
-# http://cgit.freedesktop.org/gstreamer/gstreamer/patch/?id=60516f4
+URL:            https://gstreamer.freedesktop.org/
+#Source:         https://gstreamer.freedesktop.org/src/gstreamer/pre/gstreamer-%%{version}.tar.xz
+Source:         https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-%{version}.tar.xz
+# https://cgit.freedesktop.org/gstreamer/gstreamer/patch/?id=60516f4
 Patch0:         gstreamer-0.10.36-bison3.patch
 
 Requires:       gstreamer-tools >= %{version}
@@ -123,7 +123,7 @@ with different major/minor versions of GStreamer.
 %build
 %configure \
   --with-package-name='Fedora GStreamer package' \
-  --with-package-origin='http://download.fedoraproject.org' \
+  --with-package-origin='https://download.fedoraproject.org' \
   --enable-debug \
   --disable-tests --disable-examples
 

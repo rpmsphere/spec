@@ -4,7 +4,7 @@ Name:           alarm-clock
 Version:        1.4.3
 Release:        12.4
 License:        GPLv3
-URL:            http://gtk-apps.org/content/show.php/Alarm+Clock?content=74469
+URL:            https://gtk-apps.org/content/show.php/Alarm+Clock?content=74469
 Source:         %{name}-%{version}.tar.bz2
 Group:          Graphical desktop/GNOME
 BuildRequires: glib2-devel 

@@ -3,8 +3,8 @@ Version:       0.3.0
 Release:       9.1
 Summary:       A free frontend to online translator engines
 Group:         Graphical Desktop/Applications/Educational
-URL:           http://freespeak.berlios.de/
-Source0:       http://download.berlios.de/freespeak/freespeak-%{version}.tar.gz
+URL:           https://freespeak.berlios.de/
+Source0:       https://download.berlios.de/freespeak/freespeak-%{version}.tar.gz
 Source1:       freespeak.1
 License:       GPL
 BuildRequires: libpng-devel

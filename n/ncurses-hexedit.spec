@@ -4,9 +4,9 @@ Version: 0.9.7
 Release: 6.1
 License: GPLv2
 Group: Applications/Editors
-Source0: http://www.rogoyski.com/adam/programs/hexedit/hexedit-%{version}.tar.gz
+Source0: https://www.rogoyski.com/adam/programs/hexedit/hexedit-%{version}.tar.gz
 BuildRequires: ncurses-devel
-URL: http://www.rogoyski.com/adam/programs/hexedit/
+URL: https://www.rogoyski.com/adam/programs/hexedit/
 
 %description
 Curses Hexedit is a full screen hex editor using the curses, ncurses , or pdcurses library. Some of it's features are:

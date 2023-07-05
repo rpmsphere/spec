@@ -4,8 +4,8 @@ Version: 0.7.5
 Release: 4.1
 Group: Applications/Productivity
 License: GPLv2
-URL: http://vicerveza.homeunix.net/~viric/soft/ts/
-Source0: http://vicerveza.homeunix.net/~viric/soft/ts/ts-%{version}.tar.gz
+URL: https://vicerveza.homeunix.net/~viric/soft/ts/
+Source0: https://vicerveza.homeunix.net/~viric/soft/ts/ts-%{version}.tar.gz
 
 %description
 Task spooler is a Unix batch system where the tasks spooled run one

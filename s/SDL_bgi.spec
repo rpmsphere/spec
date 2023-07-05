@@ -7,7 +7,7 @@ Release:    1
 License:    ZLib
 Group:      Libraries
 Source:     https://sourceforge.net/projects/libxbgi/files/%{name}-%{version}.tar.gz
-URL:        http://libxbgi.sourceforge.net/
+URL:        https://libxbgi.sourceforge.net/
 BuildRequires: SDL2-devel
 
 %description 

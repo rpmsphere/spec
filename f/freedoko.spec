@@ -8,7 +8,7 @@ Summary:	FreeDoko is a Doppelkopf-game
 Summary(de):	FreeDoko ist ein Doppelkopfspiel
 Group:		Amusements/Games/Board/Card
 License:	GPL
-URL:		http://free-doko.sourceforge.net/de/index.html
+URL:		https://free-doko.sourceforge.net/de/index.html
 Source0:	https://excellmedia.dl.sourceforge.net/project/free-doko/source/%{ename}_%{version}.src.zip
 BuildRequires:	cairo-devel
 BuildRequires:	docbook-utils

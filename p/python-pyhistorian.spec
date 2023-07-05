@@ -2,11 +2,11 @@
 Name:           python-pyhistorian
 Version:        0.6.8
 Release:        2.1
-URL:            http://github.com/hugobr/pyhistorian
+URL:            https://github.com/hugobr/pyhistorian
 Summary:        BDD Tool for Writing Specifications Using Given-When-Then Templates
 License:        MIT License
 Group:          Development/Languages/Python
-Source:         http://pypi.python.org/packages/source/p/pyhistorian/pyhistorian-%{version}.tar.gz
+Source:         https://pypi.python.org/packages/source/p/pyhistorian/pyhistorian-%{version}.tar.gz
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools
 BuildRequires:  python-should_dsl

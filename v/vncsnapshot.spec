@@ -6,8 +6,8 @@ Version:	1.2a
 Release:	3.1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://dl.sourceforge.net/vncsnapshot/%{name}-%{version}-src.tar.bz2
-URL:		http://vncsnapshot.sourceforge.net/
+Source0:	https://dl.sourceforge.net/vncsnapshot/%{name}-%{version}-src.tar.bz2
+URL:		https://vncsnapshot.sourceforge.net/
 BuildRequires:	libjpeg-devel gcc-c++
 BuildRequires:	libstdc++-devel
 BuildRequires:	zlib-devel

@@ -5,8 +5,8 @@ Version:	2.3.2
 Release:	13.1
 License:	GPLv2+
 Group:		X11/Applications
-Source0:	http://downloads.sourceforge.net/matrixgl/%{name}-%{version}.tar.gz
-URL:		http://sourceforge.net/projects/matrixgl/
+Source0:	https://downloads.sourceforge.net/matrixgl/%{name}-%{version}.tar.gz
+URL:		https://sourceforge.net/projects/matrixgl/
 BuildRequires:	mesa-libGLU-devel
 BuildRequires:	mesa-libGL-devel
 BuildRequires:	xscreensaver

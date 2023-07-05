@@ -3,9 +3,9 @@ Version:        2.12.23
 Release:        66.1
 License:        GPLv3+
 Summary:        A language for scientific illustration
-URL:            http://gri.sourceforge.net
+URL:            https://gri.sourceforge.net
 Group:          Productivity/Scientific/Other
-Source:         http://sourceforge.net/projects/gri/files/gri/2.12.23/%{name}-%{version}.tar.bz2
+Source:         https://sourceforge.net/projects/gri/files/gri/2.12.23/%{name}-%{version}.tar.bz2
 BuildRequires:  ghostscript-core ImageMagick
 BuildRequires:  gcc-c++
 BuildRequires:  readline-devel

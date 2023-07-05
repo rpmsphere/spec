@@ -5,10 +5,9 @@ Summary:        A 3D file/object viewer
 
 Group:          Applications/Engineering
 License:        GPLv2+
-URL:            http://automagically.de/g3dviewer/
-Source0:        http://automagically.de/files/%{name}-%{version}.tar.gz
+URL:            https://automagically.de/g3dviewer/
+Source0:        https://automagically.de/files/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  libpng-devel
 BuildRequires:  gtk2-devel
 BuildRequires:  libglade2-devel
@@ -61,7 +60,6 @@ cp -p $RPM_BUILD_ROOT%{_datadir}/%{name}/glade/g3d48.png $RPM_BUILD_ROOT%{_datad
 rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
-%defattr(-,root,root,-)
 %doc AUTHORS ChangeLog COPY* NEWS READ* TODO
 %{_mandir}/man*/%{name}.*
 %{_bindir}/g3d*

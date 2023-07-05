@@ -4,9 +4,8 @@ Version: 4.3
 Release: 8.1
 Group: Applications/Multimedia
 License: GPLv2
-URL: http://users.skynet.be/Peter.Verthez/projects/imc/
-Source0: http://www.peterverthez.net/projects/imc/%{name}-%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+URL: https://users.skynet.be/Peter.Verthez/projects/imc/
+Source0: https://www.peterverthez.net/projects/imc/%{name}-%{version}.tar.gz
 BuildRequires: perl-GD
 BuildRequires: perl-CGI
 BuildArch: noarch

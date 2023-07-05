@@ -6,7 +6,7 @@ Release: 1
 Summary: Japanese text-to-speech synthesis system
 License: BSD
 Group: System Environment/Libraries
-URL: http://open-jtalk.sourceforge.net/
+URL: https://open-jtalk.sourceforge.net/
 Source: open_jtalk-%{version}.tar.gz
 BuildRequires: gcc-c++
 BuildRequires: htsengine

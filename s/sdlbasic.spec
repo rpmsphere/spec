@@ -4,7 +4,7 @@
 Name:		sdlbasic
 Version:	2012.12.15
 Release:	8
-URL:		http://sdlbasic.sourceforge.net/
+URL:		https://sdlbasic.sourceforge.net/
 Source0:        https://sourceforge.net/projects/sdlbasic/files/source/2012/sdlBasic-source-2012-12-15.tar.gz
 Source1:        https://sourceforge.net/projects/sdlbasic/files/source/2012/sdlBrt-source-2012-12-15.tar.gz
 License:	LGPL

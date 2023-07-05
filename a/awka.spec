@@ -3,8 +3,8 @@ Version:       0.7.5
 Release:       19.1
 Summary:       Translator of the AWK programming language to ANSI-C
 Group:         Applications/Text
-URL:           http://awka.sourceforge.net/
-Source:        http://awka.sourceforge.net/%{name}-%{version}.tar.gz
+URL:           https://awka.sourceforge.net/
+Source:        https://awka.sourceforge.net/%{name}-%{version}.tar.gz
 Patch:         awka-%{version}-DESTDIR.patch
 License:       GPL
 

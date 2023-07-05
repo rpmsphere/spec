@@ -8,7 +8,7 @@ Release: 11.1
 License: GPL
 Group: Graphical desktop/KDE
 Source: %name-%version.tar.bz2
-URL: http://kconfigure.sourceforge.net
+URL: https://kconfigure.sourceforge.net
 BuildRequires: libpng-devel qt3-devel libstdc++-devel xorg-x11-proto-devel zlib-devel subst arts-devel libjpeg-devel
 BuildRequires: freetype-devel gcc-c++ kde-settings kdebase3-devel kdelibs3-devel desktop-file-utils
 BuildRequires: libsmbclient-devel libwbclient-devel

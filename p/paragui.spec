@@ -4,8 +4,8 @@ Release:        9.1
 Summary:        Graphical User Interface based on SDL
 Group:          System Environment/Libraries
 License:        LGPLv2+
-URL:            http://www.bms-austria.com/projects/paragui/
-Source0:        http://download.savannah.gnu.org/releases/%{name}/%{name}-%{version}.tar.gz
+URL:            https://www.bms-austria.com/projects/paragui/
+Source0:        https://download.savannah.gnu.org/releases/%{name}/%{name}-%{version}.tar.gz
 Patch0:         paragui-gcc34-fix.patch
 Patch1:         newrpms-paragui-64bit.patch
 Patch2:         newrpms-paragui-makefile.patch

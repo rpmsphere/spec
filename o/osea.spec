@@ -4,9 +4,9 @@ Summary: Open Source ECG Analysis
 Name: osea
 Version: 2.1
 Release: 8.2
-Source0: http://www.eplimited.com/%{name}21-gcc.tar.gz
+Source0: https://www.eplimited.com/%{name}21-gcc.tar.gz
 License: GPL
-URL: http://www.eplimited.com/confirmation.htm
+URL: https://www.eplimited.com/confirmation.htm
 Group: Applications/Engineering
 BuildRequires: wfdb-devel
 

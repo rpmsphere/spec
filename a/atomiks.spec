@@ -8,7 +8,7 @@ Release:        3
 Summary:        A remake of the classic Atomix game for modern platforms
 Group:          Games/Puzzles
 License:        GPLv3+ and Nonfree
-URL:            http://atomiks.sourceforge.net/
+URL:            https://atomiks.sourceforge.net/
 Source0:        https://downloads.sf.net/atomiks/%{name}-%{version}.tar.gz
 BuildRequires:  dos2unix
 BuildRequires:  icoutils

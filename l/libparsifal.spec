@@ -1,11 +1,11 @@
 Name:         libparsifal
 Summary:      XML Parser C library
-URL:          http://www.saunalahti.fi/~samiuus/toni/xmlproc/
+URL:          https://www.saunalahti.fi/~samiuus/toni/xmlproc/
 Group:        XML
 License:      Public Domain
 Version:      1.1.0
 Release:      7.1
-Source0:      http://www.saunalahti.fi/~samiuus/toni/xmlproc/libparsifal-%{version}.tar.gz
+Source0:      https://www.saunalahti.fi/~samiuus/toni/xmlproc/libparsifal-%{version}.tar.gz
 
 %description
 Parsifal is a validating XML 1.0 parser written in ANSI C. Parsifal

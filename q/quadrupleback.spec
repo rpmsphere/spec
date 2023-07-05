@@ -5,7 +5,7 @@ Name:			quadrupleback
 Version:		0.1.1
 Summary:		A clone of the 1982 Doubleback(TM)
 License:		GPLv2
-URL:			http://sarrazip.com/dev/%{name}.html
+URL:			https://sarrazip.com/dev/%{name}.html
 Group:			Amusements/Games
 Release:		1
 Source:			%{name}-%{version}.tar.gz

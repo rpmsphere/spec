@@ -2,10 +2,10 @@ Summary: 	Startup feedback monitor for the Matchbox Desktop
 Name: 		mb-applet-startup-monitor
 Version: 	0.1
 Release: 	1
-URL: 		http://matchbox-project.org
+URL: 		https://matchbox-project.org
 License: 	GPLv2+
 Group: 		Graphical desktop/Other
-Source0: 	http://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.gz
+Source0: 	https://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 BuildRequires:	gtk2-devel libmatchbox-devel startup-notification-devel
 

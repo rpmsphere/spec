@@ -3,10 +3,10 @@ Version:       1.2.0
 Release:       4.1
 Summary:       A fixed-point version of the Ogg Vorbis decoder
 Group:         System/Libraries
-URL:           http://wiki.xiph.org/Tremor
+URL:           https://wiki.xiph.org/Tremor
 # Source package got with:
-# svn co http://svn.xiph.org/trunk/Tremor/
-Source:        http://svn.xiph.org/trunk/Tremor//libvorbisidec-%{version}.tar.gz
+# svn co https://svn.xiph.org/trunk/Tremor/
+Source:        https://svn.xiph.org/trunk/Tremor//libvorbisidec-%{version}.tar.gz
 License:       GPL
 BuildRequires: libogg-devel
 

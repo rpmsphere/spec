@@ -1,7 +1,7 @@
 # Part 1 data definition
 %define pkg	gfarm
 %if %{undefined ver}
-%define ver	2.7.20
+%define ver	2.7.22
 %endif
 %if %{undefined rel}
 %define rel	1
@@ -82,7 +82,7 @@ Group: System Environment/Libraries
 %if "%{pkg_suffix}" != ""
 Provides: %{pkg}-libs = %{pkgver}-%{rel}
 %endif
-BuildRequires: openssl-devel, postgresql-private-devel
+BuildRequires: openssl-devel, postgresql-private-devel, python3-docopt
 
 %package client
 Summary: Clients for Gfarm file system
@@ -159,87 +159,62 @@ Gfarm performance monitoring plugin for Ganglia
 Development header files and libraries for Gfarm file system
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.20
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.22
 - Rebuilt for Fedora
-
 * Thu Dec  8 2016 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.7.0-1
 - Gfarm version 2.7.0 released
-
 * Sat Jan 16 2016 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.6.8-1
 - Gfarm version 2.6.8 released
-
 * Sat Nov 28 2015 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.6.7-1
 - Gfarm version 2.6.7 released
-
 * Sat Aug 29 2015 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.6.6-1
 - Gfarm version 2.6.6 released
-
 * Thu Jun 25 2015 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.6.5-1
 - Gfarm version 2.6.5 released
-
 * Fri Mar 27 2015 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.6.2-1
 - Gfarm version 2.6.2 released
-
 * Mon Mar  2 2015 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.6.1-1
 - Gfarm version 2.6.1 released
-
 * Wed Dec 17 2014 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.6.0-1
 - Gfarm version 2.6.0 released
-
 * Mon Apr 22 2013 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.5.8-1
 - Gfarm version 2.5.8 released
-
 * Tue Jan  8 2013 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.5.8rc2-1
 - Gfarm version 2.5.8 released candidate 2
 - gfruntest, gfservice and systest are included in the client package
-
 * Thu Nov  1 2012 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.5.7.2-1
 - Gfarm version 2.5.7.2 released
 - Use GFARM_CONFIGURE_OPTION instead of GLOBUS_PREFIX and
   GLOBUS_FLAVOR to build gfarm-gsi package
-
 * Mon Sep  3 2012 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.5.7-1
 - Gfarm version 2.5.7 released
-
 * Sat Feb 25 2012 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.5.4.1-1
 - Gfarm version 2.5.4.1 released
-
 * Wed Feb 22 2012 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.5.4-1
 - Gfarm version 2.5.4 released
-
 * Mon Dec 19 2011 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.5.2-1
 - Gfarm version 2.5.2 released
-
 * Wed Sep 14 2011 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.5.1-1
 - Gfarm version 2.5.1 released
-
 * Fri Apr 22 2011 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.4.2-1
 - Gfarm version 2.4.2 released
-
 * Thu Jul 22 2010 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.4.0-1
 - Gfarm version 2.4.0 released
-
 * Wed Jul 21 2010 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.3.2-3
 - portability fix for old rpm that does not support nested conditionals
 - compatibility fix for Linux 2.4 and old OpenLDAP library
-
 * Tue Jul 20 2010 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.3.2-2
 - gfhost -R does not work [sf.net trac #120]
 - retry another file system node in GFARM_ERR_FILE_MIGRATED case
   [sf.net trac #117]
-
 * Thu Jul  1 2010 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.3.2-1
 - Gfarm version 2.3.2 released
-
 * Wed Nov 28 2007 Osamu Tatebe <tatebe@cs.tsukuba.ac.jp> 2.0.0-1
 - first release of Gfarm file system version 2
-
 * Tue Aug  8 2006 SODA Noriyuki <soda@sra.co.jp>
 - restart gfsd, gfmd and gfarm_agent at update, if they are already running.
-
 * Thu Apr 24 2003 Tohru Sotoyama <sotoyama@sra.co.jp>
 - first public release for version 1.0b1
-
 * Wed Nov 27 2002 Tohru Sotoyama <sotoyama@sra.co.jp>
 - first release for version 0.1
 
@@ -1122,6 +1097,10 @@ fi
 %{doc_prefix}/gfperf/SETUP-gfperf.ja
 %{doc_prefix}/gfperf/SUPPORT-gfperf.ja
 %{doc_prefix}/gfperf/USING-gfperf.ja
+%{_docdir}/gfarm-2.7.22/html/en/ref/man1/gfptar.1.html
+%{_docdir}/gfarm-2.7.22/html/ja/ref/man1/gfptar.1.html
+%{_mandir}/ja/man1/gfptar.1*
+%{_mandir}/man1/gfptar.1*
 
 %files libs
 %{lib_prefix}/libgfarm.so.1
@@ -1252,6 +1231,7 @@ fi
 %{share_prefix}/gfperf-web/index.php
 %{share_prefix}/gfperf-web/view_error.php
 %{share_prefix}/gfperf-web/view_result.php
+%{prefix}/bin/gfptar
 
 %files fsnode
 %{prefix}/bin/config-gfsd

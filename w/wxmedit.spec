@@ -2,7 +2,7 @@ Name: wxmedit
 License: GPL
 Group: Applications/Editors
 Summary: A cross-platform Text/Hex Editor
-Version: 3.1.0.90
+Version: 3.2
 Release: 1
 Source0: wxMEdit-%{version}.tar.gz
 URL: https://wxmedit.github.io/
@@ -41,8 +41,9 @@ sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/ap
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/locale/*/LC_MESSAGES/%{name}.mo
 %{_datadir}/%{name}
-%{_datadir}/pixmaps/%{name}.png
+%{_datadir}/pixmaps/%{name}*
+%{_datadir}/icons/hicolor/*/*/wxmedit.*
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.0.90
+* Sun Jul 23 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2
 - Rebuilt for Fedora

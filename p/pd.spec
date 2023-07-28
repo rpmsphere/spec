@@ -3,13 +3,12 @@
 %define        minver %(echo %version | cut -d. -f3)
 
 Name:          pd
-Version:       0.50.0
+Version:       0.53.2
 Release:       1
 Summary:       A real-time graphical programming environment for media processing
 Group:         Graphical Desktop/Applications/Multimedia
-URL:           https://puredata.info
-Source0:       https://switch.dl.sourceforge.net/project/pure-data/pure-data/%{version}/pd-%{majver}-%{minver}.src.tar.gz
-Source1:       %{name}.png
+URL:           http://puredata.info
+Source0:       http://switch.dl.sourceforge.net/project/pure-data/pure-data/%{version}/pd-%{majver}-%{minver}.src.tar.gz
 License:       GPL
 BuildRequires: glibc-devel
 BuildRequires: alsa-lib-devel
@@ -17,7 +16,7 @@ BuildRequires: portaudio-devel
 ##BuildRequires: libjack-devel >= 0.103.0
 BuildRequires: tcl-devel
 BuildRequires: tk-devel
-Provides: pd
+Provides: puredata
 
 %description
 PD (aka Pure Data) is a real-time graphical programming environment for audio, video, and graphical processing. It is the third major branch of the family of patcher programming languages known as Max (Max/FTS, ISPW Max, Max/MSP, jMax, etc.) originally developed by Miller Puckette and company at IRCAM. The core of Pd is written and maintained by Miller Puckette and includes the work of many developers, making the whole package very much a community effort.
@@ -29,7 +28,7 @@ Pd is free software and can be downloaded either as an OS-specific package, sour
 %setup -q -n pd-%{majver}-%{minver}
 
 %build
-export CFLAGS="-DUSE_INTERP_RESULT -lm"
+export CFLAGS+="-DUSE_INTERP_RESULT -lm"
 ./autogen.sh
 ./configure --prefix=/usr --enable-jack --enable-alsa
 make
@@ -40,40 +39,22 @@ rm -rf $RPM_BUILD_ROOT
 ln -sf %{_bindir}/pd $RPM_BUILD_ROOT%{_libdir}/pd/bin/pd
 #rm $RPM_BUILD_ROOT%{_includedir}/portaudio.h $RPM_BUILD_ROOT%{_libdir}/libportaudio*
 
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/pixmaps
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
-
-install -m 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps
-
-cat > $RPM_BUILD_ROOT%{_datadir}/applications/puredata.desktop << EOF
-[Desktop Entry]
-Encoding=UTF-8
-Type=Application
-Name=PureData
-GenericName=Sound Editor
-Comment=Synth
-Icon=puredata
-Exec=pd
-Terminal=false
-Categories=Application;AudioVideo;Synthesis;
-EOF
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/pd*
-%{_datadir}/pixmaps/puredata.png
-%{_datadir}/applications/puredata.desktop
+%{_datadir}/pixmaps/puredata.*
+%{_datadir}/applications/*.desktop
 %{_includedir}/*
 %{_libdir}/pd
 %{_libdir}/pkgconfig/*
-%{_mandir}/man1/pd.1.gz
-%{_mandir}/man1/pdreceive.1.gz
-%{_mandir}/man1/pdsend.1.gz
+%{_mandir}/man1/*.1*
+%{_datadir}/icons/hicolor/*/apps/puredata.*
+%{_datadir}/metainfo/org.puredata.pd-gui.metainfo.xml
 
 %changelog
-* Tue Oct 22 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.50.0
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.53.2
 - Rebuilt for Fedora
 * Mon Jul 27 2009 Automatic Build System <autodist@mambasoft.it> 0.42.5-1mamba
 - update to 0.42.5

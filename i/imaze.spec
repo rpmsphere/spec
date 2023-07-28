@@ -32,7 +32,7 @@ sed -i -e 's/|| errno >= sys_nerr//' -e 's|sys_errlist\[errno\]|strerror(errno)|
 
 %build
 ./configure --prefix=/usr
-make %{?_smp_mflags} CPPFLAGS='-DDEFAULT_SERVER=\"localhost\" -DDEFAULT_SOUND_DIR=\"%{_datadir}/imaze/sounds\"' CFLAGS=-Wno-error
+make %{?_smp_mflags} CPPFLAGS='-DDEFAULT_SERVER=\"localhost\" -DDEFAULT_SOUND_DIR=\"%{_datadir}/imaze/sounds\"' CFLAGS+='-Wno-error -fPIE'
 
 %install
 %makeinstall

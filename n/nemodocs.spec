@@ -41,7 +41,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/*
 %{_datadir}/applications/*
 %{_datadir}/locale/*/LC_MESSAGES/*
-%{_datadir}/*
+%{_datadir}/nemo
 
 %changelog
 * Thu Feb 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.4

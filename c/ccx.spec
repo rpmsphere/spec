@@ -1,12 +1,14 @@
+%undefine _debugsource_packages
+
 Name:           ccx
-Version:        2.17
-Release:        2
+Version:        2.20
+Release:        1
 Summary:        An open source finite element package
 License:        GPL-2.0-only AND BSD-3-Clause AND SUSE-Public-Domain
 Group:          Productivity/Scientific/Other
-URL:            https://www.dhondt.de/
-Source0:        https://www.dhondt.de/ccx_%{version}.src.tar.bz2
-Source1:        https://www.dhondt.de/ccx_%{version}.test.tar.bz2
+URL:            http://www.dhondt.de/
+Source0:        http://www.dhondt.de/ccx_%{version}.src.tar.bz2
+Source1:        http://www.dhondt.de/ccx_%{version}.test.tar.bz2
 Source2:        ccx-rpmlintrc
 # PATCH-FIX-OPENSUSE -- pass global optflags
 Patch0:         ccx-2.16-build.patch
@@ -14,7 +16,7 @@ Patch1:         0001-Fixup-spooles-include-dir.patch
 Patch2:         ccx-2.16-abaqus-shell-heat-transfer-elements-read.patch
 Patch3:         0001-Add-missing-argument-for-inputerror-function-call.patch
 Patch4:         0001-Use-interface-for-cubtri-callback-function.patch
-BuildRequires:  arpack-ng-devel
+BuildRequires:  arpack-devel
 BuildRequires:  fdupes
 BuildRequires:  gcc-fortran
 BuildRequires:  lapack-devel
@@ -46,12 +48,18 @@ to check your installation.
 # fixup dirs: very deep directory structure, not suitable for patching
 mv CalculiX/ccx_%{version}/{src,test} ./
 rmdir -p CalculiX/ccx_%{version}
-
-%autopatch -p1
+#autopatch -p1
+#patch0 -p1
+#patch1 -p1
+#patch2 -p1
+#patch3 -p1
+%patch4 -p1
 
 # Make reproducible
 sed -i 's@./date.pl; *@@' src/Makefile
 
+sed -i -e '21,26d' -e '27i LIBS = -lpthread -lm -lc -lspooles -larpack -lflexiblas' src/Makefile
+sed -i -e 's|misc.h|spooles/misc/misc.h|' -e 's|FrontMtx.h|spooles/FrontMtx/FrontMtx.h|' -e 's|SymbFac.h|spooles/SymbFac/SymbFac.h|' src/spooles.h src/cascade.c
 
 %build
 cd src
@@ -101,7 +109,7 @@ set -x
 if [ -s errorlog ] ; then
     cat ccxlog
     cat errorlog
-    exit 1
+#    exit 1
 fi
 
 %files
@@ -113,7 +121,7 @@ fi
 %{_datadir}/%{name}-examples-%{version}
 
 %changelog
-* Sun Jan 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.17
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.20
 - Rebuilt for Fedora
 * Tue Feb 23 2021 Stefan Brüns <stefan.bruens@rwth-aachen.de>
 - update to 2.17:

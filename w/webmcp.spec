@@ -3,16 +3,16 @@
 %undefine _missing_build_ids_terminate_build
 
 Name:		webmcp
-Version:	1.2.5
+Version:	2.2.1
 Release:	1
 Summary:	Web application framework in Lua
 License:	MIT/X11
 Group:		Productivity/Networking
-Source0:	https://www.public-software-group.org/pub/projects/%{name}/v%{version}/%{name}-v%{version}.tar.gz
-BuildRequires:	libpq-devel
+Source0:	http://www.public-software-group.org/pub/projects/%{name}/v%{version}/%{name}-v%{version}.tar.gz
+#BuildRequires:	libpq-devel
 BuildRequires:  postgresql-server-devel
 BuildRequires:	lua-devel
-URL:		https://www.public-software-group.org/webmcp
+URL:		http://www.public-software-group.org/webmcp
 
 %description
 WebMCP is web application framework written in Lua and C. Instead of using
@@ -45,5 +45,5 @@ make
 /opt/%{name}
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.5
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.1
 - Rebuilt for Fedora

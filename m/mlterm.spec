@@ -2,7 +2,7 @@
 
 Summary:     Multi Lingual TERMinal emulator on X
 Name:	     mlterm
-Version:     3.9.2
+Version:     3.9.3
 Release:     1
 License:     Modified BSD-style license
 Group:	     User Interface/X
@@ -60,11 +60,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/mlterm
 %{_mandir}/man1/ml*.1*
 %{_datadir}/pixmaps/mlterm*
-%{_datadir}/locale/*/LC_MESSAGES/mlconfig.mo
+#{_datadir}/locale/*/LC_MESSAGES/*.mo
 %{_datadir}/mlterm
 
 %changelog
-* Sun Apr 10 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.2
+* Sun Jul 23 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.3
 - Rebuilt for Fedora
 * Tue Dec 15 2015 Araki Ken <arakiken@users.sf.net>
 - Source version 3.6.1

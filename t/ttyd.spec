@@ -1,6 +1,6 @@
 Name: ttyd
 Summary: Share your terminal over the web
-Version: 1.6.3
+Version: 1.7.3
 Release: 1
 License: MIT
 Group: System/Monitoring
@@ -11,12 +11,14 @@ BuildRequires: vim-common
 BuildRequires: cmake
 BuildRequires: openssl-devel
 BuildRequires: libwebsockets-devel
+Source99: libwebsockets-cmake.zip
 
 %description
 ttyd is a simple command-line tool for sharing terminal over the web, inspired by GoTTY.
 
 %prep  
 %setup -q
+unzip -f %{SOURCE99} -d /usr/lib64/cmake/
 
 %build
 %cmake
@@ -34,5 +36,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/ttyd.1.*
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.3
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.3
 - Rebuilt for Fedora

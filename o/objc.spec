@@ -45,6 +45,7 @@ sed -i 's|LIBDIR=/usr/lib|LIBDIR=%{buildroot}/usr/lib|' */*/Makefile
 sed -i 's|/usr/lib|/usr/lib64|' */*/Makefile
 %endif
 %{__make} install
+rm %{buildroot}%{_mandir}/man3/Object.3
 
 %clean
 rm -rf $RPM_BUILD_ROOT

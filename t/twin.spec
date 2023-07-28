@@ -2,7 +2,7 @@
 
 Summary:	A text mode Windows Manager
 Name:		twin
-Version:	0.8.1
+Version:	0.9.0
 Release:	1
 License:	GPLv2
 Group:		Terminals
@@ -60,9 +60,9 @@ make
 %{_includedir}/Tutf
 %{_libdir}/*.so
 %{_libdir}/*.a
-%exclude %{_libdir}/*.la
+
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
+* Sun Jul 23 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.0
 - Rebuilt for Fedora
 * Wed Aug 21 2013 wally <wally> 0.6.2-5.mga4
 + Revision: 468862

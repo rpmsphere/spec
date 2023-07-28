@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           netvisix
-Version:        1.3.2
+Version:        1.4.0
 Release:        1
 Summary:        Visualizes the network packet flow between hosts
 License:        GPL-3.0+
@@ -31,6 +31,7 @@ ICMPv6, IGMP, TCP, UDP, DNS, DHCP, DHCPv6
 
 %prep
 %setup -q -n Netvisix-%{version}
+sed -i 's|stdint.h|cstdint|' libtins/include/tins/ip_address.h
 
 %build
 cd Netvisix
@@ -51,7 +52,7 @@ install -Dm 0644 %{SOURCE3} %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.2
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0
 - Rebuilt for Fedora
 * Thu Sep 20 2018 ecsos@opensuse.org
 - Add netvisix-include.patch to fix build error for Tumbleweed.

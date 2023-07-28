@@ -6,13 +6,14 @@
 %global __requires_exclude %{extensions}
 
 Name:           pix
-Version:        2.6.5
+Version:        3.0.1
 Release:        1
 Summary:        Image viewer and browser utility
 License:        GPLv2+
 Group:          Graphics/Viewers
 URL:            https://github.com/linuxmint/pix
-Source:         https://github.com/linuxmint/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
+#Source:         https://github.com/linuxmint/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
+Source: pix-master.zip
 BuildRequires:  bison
 BuildRequires:  flex
 BuildRequires:  gcc-c++
@@ -43,6 +44,7 @@ BuildRequires:  pkgconfig(sm) >= 1.0.0
 BuildRequires:  pkgconfig(webkit2gtk-4.0)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(xapp)
 
 %description
 pix lets you browse your hard disk, showing you thumbnails of
@@ -64,44 +66,50 @@ comments to images, organise images in catalogs, print images, view
 slide shows, set your desktop background, and more.
 
 %prep
-%setup -q
+%setup -q -n pix-master
 %autopatch -p1
 
 %build
-NOCONFIGURE=1 gnome-autogen.sh --add-missing
-%configure \
-  --disable-static       \
-  --disable-silent-rules \
-  --with-smclient=xsmp
-
-%make_build
+#NOCONFIGURE=1 gnome-autogen.sh --add-missing
+#configure \
+#  --disable-static       \
+#  --disable-silent-rules \
+#  --with-smclient=xsmp
+#make_build
+#meson build
+#ninja -C build
+%{meson}
+%{meson_build}
 
 %install
-%make_install
+#make_install
+%{meson_install}
 find %{buildroot} -name "*.la" -delete
-%find_lang %{name} --with-gnome
+#find_lang %{name} --with-gnome
 
-%files -f %{name}.lang
-%doc COPYING README debian/changelog
+%files
+%doc AUTHORS COPYING README.md debian/changelog
 %{_bindir}/%{name}
 %dir %{_libdir}/%{name}/
 %dir %{_libdir}/%{name}/extensions/
 %{_libdir}/%{name}/extensions/*.extension
 %{_libdir}/%{name}/extensions/*.so
-%{_datadir}/%{name}/
+%{_datadir}/%{name}
 %{_datadir}/applications/*.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}*.*
 %{_datadir}/glib-2.0/schemas/*%{name}*.gschema.xml
 %{_datadir}/glib-2.0/schemas/*%{name}.enums.xml
+%{_datadir}/locale/*/LC_MESSAGES/%{name}.mo
 %{_mandir}/man1/%{name}.1*
 
 %files devel
-%{_includedir}/%{name}-2.6/
+%{_includedir}/%{name}
 %{_datadir}/aclocal/%{name}.m4
-%{_libdir}/pkgconfig/%{name}-2.6.pc
+%{_libdir}/pkgconfig/%{name}*.pc
+%{_datadir}/help/*/%{name}
 
 %changelog
-* Sun Sep 05 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.5
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
 - Rebuilt for Fedora
 * Wed Mar 10 2021 daviddavid <daviddavid> 2.6.3-1.mga9
 + Revision: 1701082

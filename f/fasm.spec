@@ -3,9 +3,9 @@
 %undefine _debugsource_packages
 
 Summary:	Flat assembler
-Summary(pl):	  "Płaski" assembler
+Summary(pl):	"Płaski" assembler
 Name:		fasm
-Version:	1.73.30
+Version:	1.73.31
 Release:	1
 License:	distributable
 Group:		Development/Tools
@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 
 %changelog
-* Sun Jan 01 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.73.30
+* Sun Jul 23 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.73.31
 - Rebuilt for Fedora
 * Sun Aug 29 2004 PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org

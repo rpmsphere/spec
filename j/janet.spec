@@ -2,7 +2,7 @@
 
 Summary: A dynamic language and bytecode vm
 Name: janet
-Version: 1.27.0
+Version: 1.29.1
 Release: 1
 License: MIT
 Group: Development/Languages
@@ -41,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.27.0
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.29.1
 - Rebuilt for Fedora

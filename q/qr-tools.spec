@@ -1,6 +1,6 @@
 Name:		qr-tools
-Version:	1.2
-Release:	2.1
+Version:	2.1
+Release:	1
 Summary:	A suite of tools for handling QR codes
 Group:		Development/Tools
 License:	GPLv3
@@ -10,12 +10,12 @@ Source0:	https://launchpad.net/qr-tools/trunk/%{version}/+download/%{name}-%{ver
 %description
 QR Tools project is formed by the python-qrtools and QtQR.
 
-%package -n python-qrtools
+%package -n python3-qrtools
 Summary: A high level library for reading and generating QR codes
 Requires: qrencode, PyQt4, zbar-pygtk, python-imaging
 BuildArch: noarch
 
-%description -n python-qrtools
+%description -n python3-qrtools
 A backend ("library") for creating and decoding QR Codes in python.
 Depends on qrenconde and zbar. You can use it in your own projects.
 
@@ -60,7 +60,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{_datadir}/%{name
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -n python-qrtools
+%files -n python3-qrtools
 %doc LICENCE samples
 %{python3_sitelib}/qrtools.py*
 %{python3_sitelib}/__pycache__/*
@@ -72,5 +72,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}
 
 %changelog
-* Thu Jun 15 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
 - Rebuilt for Fedora

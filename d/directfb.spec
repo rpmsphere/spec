@@ -1,5 +1,5 @@
-%global major_ver 1.6
-%global minor_ver .3
+%global major_ver 1.7
+%global minor_ver .7
 
 Summary: Graphics abstraction library for the Linux Framebuffer Device
 Name: directfb
@@ -8,7 +8,8 @@ Release: 6.1
 Group: System Environment/Libraries
 License: LGPLv2+
 URL: https://www.directfb.org/
-Source0: https://www.directfb.org/downloads/Core/DirectFB-%{major_ver}/DirectFB-%{version}.tar.gz
+#Source0: https://www.directfb.org/downloads/Core/DirectFB-%{major_ver}/DirectFB-%{version}.tar.gz
+Source0: DirectFB-DIRECTFB_1_7_7.tar.gz
 Source1: 85-directfb.rules
 Patch2: DirectFB-1.5.3-fix_v4l1.patch
 Patch3: DirectFB-1.6.1-lm.patch
@@ -66,17 +67,17 @@ Requires: libsysfs-devel
 Development files for DirectFB.
 
 %prep
-%setup -q -n DirectFB-%{version}
+%setup -q -n DirectFB-DIRECTFB_1_7_7
 %patch2 -p1 -b .fix_v4l1
-%patch3 -p1 -b .lm
+#patch3 -p1 -b .lm
 %patch4 -p1 -b .arm-atomics
-%patch5 -p1 -b .davinci
-%patch6 -p1 -b .vdpau
+#patch5 -p1 -b .davinci
+#patch6 -p1 -b .vdpau
 #patch8 -p1 -b .stride
-%patch9 -p1 -b .fusionID
+#patch9 -p1 -b .fusionID
 
 #Disable ppc asm since compilation fails (and it seems better to use glibc)
-sed -i.noppcasm -e 's/want_ppcasm=yes/want_ppcasm=no/'g configure.in configure
+#sed -i.noppcasm -e 's/want_ppcasm=yes/want_ppcasm=no/'g configure.in configure
 
 # Fix file-not-utf8
 for i in ChangeLog README NEWS AUTHORS ; do
@@ -88,8 +89,11 @@ done
 
 #Remove old headers
 rm interfaces/IDirectFBVideoProvider/{videodev.h,videodev2.h}
+sed -i 's|wm_data->world|wm_data->world, NULL|' wm/unique/uniquewm.c
+sed -i 's|region->context|region->context_id|' wm/unique/test_foo.c
 
 %build
+./autogen.sh
 %configure \
     --with-gfxdrivers=all \
 %{?_with_sdl:--enable-sdl} \
@@ -110,7 +114,7 @@ make DESTDIR=%{buildroot} install INSTALL="install -p"
 find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 
 #Fix some relative fonts for dfbinspector.c
-ln -s ../fonts/dejavu/DejaVuSans.ttf %{buildroot}%{_datadir}/%{name}-%{version}/decker.ttf
+#ln -s ../fonts/dejavu/DejaVuSans.ttf %{buildroot}%{_datadir}/%{name}-%{version}/decker.ttf
 
 mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
@@ -196,6 +200,18 @@ install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 %{_bindir}/dfbdumpinput
 %{_bindir}/dfbtest_blit_threads
 %{_bindir}/dfbtest_surface_compositor_threads
+# New with 1.7.7
+%{_bindir}/coretest_task
+%{_bindir}/coretest_task_fillrect
+%{_bindir}/dfbplay
+%{_bindir}/dfbshow
+%{_bindir}/dfbswitch
+%{_bindir}/dfbtest_alloc
+%{_bindir}/dfbtest_font_blend
+%{_bindir}/dfbtest_layer
+%{_bindir}/dfbtest_layers
+%{_bindir}/dfbtest_stereo
+%{_bindir}/dfbtest_window_update
 %ifarch %{arm}
 %{_libdir}/libdavinci_c64x.so.*
 %endif
@@ -203,7 +219,8 @@ install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 %{_libdir}/libdirect-*.so.*
 %{_libdir}/libfusion-*.so.*
 %{_libdir}/libuniquewm*.so.*
-%{_libdir}/directfb-%{major_ver}-0/
+%{_libdir}/directfb-*/
+%{_libdir}/lib++dfb-*.so.*
 %{_datadir}/directfb-%{version}/
 %{_mandir}/man1/dfbg.1*
 %{_mandir}/man5/directfbrc.5*
@@ -215,10 +232,12 @@ install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 %{_bindir}/directfb-csource
 %{_includedir}/directfb/
 %{_includedir}/directfb-internal/
+%{_includedir}/++dfb/
 %{_libdir}/pkgconfig/direct.pc
 %{_libdir}/pkgconfig/directfb.pc
 %{_libdir}/pkgconfig/directfb-internal.pc
 %{_libdir}/pkgconfig/fusion.pc
+%{_libdir}/pkgconfig/++dfb.pc
 %ifarch %{arm}
 %{_libdir}/libdavinci_c64x.so
 %endif
@@ -226,10 +245,11 @@ install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 %{_libdir}/libdirect.so
 %{_libdir}/libfusion.so
 %{_libdir}/libuniquewm.so
+%{_libdir}/lib++dfb.so
 %{_mandir}/man1/directfb-csource.1*
 
 %changelog
-* Thu Jan 02 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.3
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7.7
 - Rebuilt for Fedora
 * Fri Jan 18 2013 Adam Tkac <atkac redhat com> - 1.6.2-3
 - rebuild due to "jpeg8-ABI" feature drop

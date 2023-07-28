@@ -1,7 +1,7 @@
 Name: crayonizer
 Summary: A console colorer app
-Version: 2.2
-Release: 3.1
+Version: 2.3
+Release: 1
 Group: Applications/Text
 License: GPLv3
 URL: https://github.com/ColumPaget/Crayonizer
@@ -31,5 +31,5 @@ cp examples/* %{buildroot}%{_sysconfdir}/%{name}.d
 %{_sysconfdir}/%{name}.d
 
 %changelog
-* Thu Nov 01 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2
+* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
 - Rebuilt for Fedora

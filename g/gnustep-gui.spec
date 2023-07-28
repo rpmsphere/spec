@@ -132,9 +132,10 @@ fi
 %{gnustep_libraries}//gnustep-gui/
 %{gnustep_srvdir}/
 %{_mandir}/man1/*
-
 %doc ANNOUNCE BUGS COPYING NEWS README
-
+%exclude %{_bindir}/GSSpeechRecognitionServer
+%exclude %{_libdir}/GNUstep/Applications/GSSpeechRecognitionServer.app
+   
 %files devel
 %{_includedir}/AppKit/
 %{_includedir}/GNUstepGUI/

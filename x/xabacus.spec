@@ -36,9 +36,10 @@ make
 %install
 rm -rf %{buildroot}
 %make_install
-sed -i 's|%{buildroot}||' %{buildroot}/usr/openwin/lib/app-defaults/Abacus
-mkdir -p %{buildroot}/usr/lib/X11/app-defaults
-mv %{buildroot}/usr/openwin/lib/app-defaults/Abacus %{buildroot}/usr/lib/X11/app-defaults/
+#sed -i 's|%{buildroot}||' %{buildroot}/usr/openwin/lib/app-defaults/Abacus
+#mkdir -p %{buildroot}/usr/lib/X11/app-defaults
+#mv %{buildroot}/usr/openwin/lib/app-defaults/Abacus %{buildroot}/usr/lib/X11/app-defaults/
+sed -i 's|%{buildroot}||' %{buildroot}/usr/lib/X11/app-defaults/Abacus
 
 #make install-png
 for i in 16x16 22x22 32x32 48x48; do

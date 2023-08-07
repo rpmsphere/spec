@@ -84,7 +84,7 @@ fi
 - using %%defattr macro in filelist
 - added use of $RPM_OPT_FLAGS
 - added striping of the binary
-* Tue May 12 1998 Kjetil Wiekhorst Jørgensen <jorgens@pvv.org>
+* Tue May 12 1998 Kjetil Wiekhorst Jorgensen <jorgens@pvv.org>
 - Added more to the %%pre, %%post, %%preun and %%postun tag to the specfile
 * Tue May 5 1998  Ian Macdonald <ianmacd@xs4all.nl>
 - Added post-install and post-uninstall scripts

@@ -33,7 +33,8 @@ mv doc/jove.man doc/jove.man.txt
 #mkdir -p $RPM_BUILD_ROOT%{_libdir}
 #mkdir -p $RPM_BUILD_ROOT%{_datadir}
 #mkdir -p $RPM_BUILD_ROOT%{_mandir}/man1
-make JOVEHOME=$RPM_BUILD_ROOT/usr LIBDIR=$RPM_BUILD_ROOT%{_libdir}/jove SHAREDIR=$RPM_BUILD_ROOT%{_datadir}/jove MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1 OPTFLAGS="%{optflags}" %{configflags} install
+#make JOVEHOME=$RPM_BUILD_ROOT/usr LIBDIR=$RPM_BUILD_ROOT%{_libdir}/jove SHAREDIR=$RPM_BUILD_ROOT%{_datadir}/jove MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1 OPTFLAGS="%{optflags}" %{configflags} install
+%make_install JOVEHOME=/usr LIBDIR=%{_libdir}/jove SHAREDIR=%{_datadir}/jove MANDIR=%{_mandir}/man1 OPTFLAGS="%{optflags}" %{configflags}
 mv doc/README doc/README.doc
 # although we build jovetool.1 and xjove.1, we don't install them
 #rm $RPM_BUILD_ROOT%{_mandir}/man1/jovetool.1

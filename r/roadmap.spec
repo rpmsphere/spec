@@ -86,9 +86,9 @@ rm -rf %{buildroot}
     - restore BuildRoot
   + Pascal Terjan <pterjan@mandriva.org>
     - Import roadmap
-* Thu Feb 16 2006 Nicolas Lécureuil <neoclust@mandriva.org> 1.0.10-5mdk
+* Thu Feb 16 2006 Nicolas LÃ©cureuil <neoclust@mandriva.org> 1.0.10-5mdk
 - Fix Group (thanks plg)
-* Sat Dec 17 2005 Nicolas Lécureuil <neoclust@mandriva.org> 1.0.10-4mdk
+* Sat Dec 17 2005 Nicolas LÃ©cureuil <neoclust@mandriva.org> 1.0.10-4mdk
 - Add BuildRequires : popt-devel
 * Thu Jun 16 2005 Per Ã˜yvind Karlsen <pkarlsen@mandriva.com> 1.0.10-3mdk
 - fix buildrequires

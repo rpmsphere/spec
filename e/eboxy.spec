@@ -99,7 +99,7 @@ tar xzvf %{SOURCE1} -C %{buildroot}%{_datadir}/%{name}
 %{_mandir}/man1/*
 
 %files devel
-%{_libdir}/%{name}/plugins/generic/*.la
+#{_libdir}/%{name}/plugins/generic/*.la
 %{_libdir}/libeboxyplugin.a
 %{_includedir}/%{name}
 

@@ -339,9 +339,9 @@ sed -i -e 's,/usr/lib/,%{_libdir}/,g' %{buildroot}%{_bindir}/irafcl
 %exclude %{_libdir}/iraf/pkg/*/*/*.a
 
 %dir %{_libdir}/iraf/bin/
-%{_libdir}/iraf/bin/cl.e
-%{_libdir}/iraf/bin/ecl.e
-%{_libdir}/iraf/bin/irafks.e
+#{_libdir}/iraf/bin/cl.e
+#{_libdir}/iraf/bin/ecl.e
+#{_libdir}/iraf/bin/irafks.e
 %{_libdir}/iraf/bin/x_*.e
 %dir %{_libdir}/iraf/unix/bin/
 %{_libdir}/iraf/unix/bin/sgi*.e

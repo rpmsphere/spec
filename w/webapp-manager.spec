@@ -1,5 +1,5 @@
 Name: webapp-manager
-Summary: Web Application Manager
+Summary: Launch websites as if they were apps
 Version: 1.1.8
 Release: 1
 Group: admin

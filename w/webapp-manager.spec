@@ -7,15 +7,9 @@ License: Free Software
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: desktop-file-utils
-#Requires: python3,
-#Requires: python3-gi,
-#Requires: python3-configobj,
-#Requires: python3-setproctitle,
-#Requires: python3-tldextract,
-#Requires: xapps-common,
-#Requires: dconf-gsettings-backend
-#Requires: |
-#Requires: gsettings-backend
+Requires: python3-setproctitle,
+Requires: python3-tldextract,
+Requires: xapps,
 
 %description
 Launch websites as if they were apps.

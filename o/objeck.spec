@@ -2,13 +2,13 @@
 
 Name: objeck
 Summary: Object-oriented and functional programming language
-Version: 6.8.6
+Version: 2023.7.5
 Release: 1
 Group: Development/Language
 License: BSD-like
 URL: https://github.com/objeck/objeck-lang
 #Source0: https://github.com/objeck/objeck-lang/archive/v%{version}.tar.gz#/objeck-lang-%{version}.tar.gz
-Source0: objeck-%{version}.tar.gz
+Source0: objeck-linux-%{version}.tar.gz
 BuildRequires: openssl-devel
 BuildRequires: libuuid-devel
 BuildRequires: unixODBC-devel
@@ -24,7 +24,7 @@ The language has ties with Java, Scheme and UML. In this language all
 data types, except for higher-order functions, are treated as objects.
 
 %prep
-%setup -q
+%setup -q -n %{name}-linux-%{version}
 sed -i 's|-m64||' `find . -name Makefile.*`
 sed -i 's|\.\./lib/|/usr/share/%{name}/|' core/shared/sys.h
 
@@ -47,10 +47,10 @@ done
 install -d %{buildroot}/etc/profile.d
 
 %files
-%doc README.md LICENSE core/release/deploy/doc/* core/release/deploy/examples
+%doc README.md LICENSE
 %{_bindir}/%{name}*
 %{_datadir}/%{name}
 
 %changelog
-* Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 6.8.6
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2023.7.5
 - Rebuilt for Fedora

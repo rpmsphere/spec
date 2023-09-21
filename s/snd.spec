@@ -1,5 +1,5 @@
 Name:		snd
-Version:	23.5
+Version:	23.7
 Release:	1
 Summary:	Sound file editor
 License:	BSD
@@ -76,7 +76,7 @@ install -m 0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/
 chmod +x %{buildroot}%{_datadir}/%{name}/grani.rb
 
 %changelog
-* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 23.5
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 23.7
 - Rebuilt for Fedora
 * Thu Feb 20 2020 umeabot <umeabot> 20.1-2.mga8
 + Revision: 1547240

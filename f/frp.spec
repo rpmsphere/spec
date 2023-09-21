@@ -2,7 +2,7 @@
 %undefine _missing_build_ids_terminate_build
 
 Name:           frp
-Version:        0.51.2
+Version:        0.51.3
 Release:        1
 Summary:        Reverse proxy to expose local server behind NAT/firewall to Internet
 License:        Apache 2.0
@@ -34,5 +34,5 @@ install -m755 bin/* %{buildroot}%{_bindir}
 %{_bindir}/%{name}*
 
 %changelog
-* Sun Jul 23 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.51.2
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.51.3
 - Rebuilt for Fedora

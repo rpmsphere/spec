@@ -2,7 +2,7 @@
 
 Summary: The Lobster Programming Language
 Name: lobster
-Version: 2023.6
+Version: 2023.11
 Release: 1
 License: Apache v2
 Group: Development/Language
@@ -36,5 +36,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_docdir}/Lobster
 
 %changelog
-* Sun May 28 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2023.6
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2023.11
 - Rebuilt for Fedora

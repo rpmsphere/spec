@@ -2,9 +2,8 @@
 %define srcname AriaSrc
 
 Name: ariamaestosa
-Version: 1.4.7
-#Version: 1.4.13
-Release: 15.1
+Version: 1.4.13
+Release: 1
 Summary: An opensource midi tracker/editor
 License: GPLv2 with exceptions (look at license.txt)
 Group: Sound
@@ -33,7 +32,7 @@ python2 scons/scons.py install prefix=%buildroot/usr
 %_datadir/Aria
 
 %changelog
-* Tue Jul 16 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.7
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.13
 - Rebuilt for Fedora
 * Fri Dec 28 2012 Alex Karpov <karpov@altlinux.ru> 1.4.6-alt1
 - new version

@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 Name:		lfm
-Version:	2.3
-Release:	6.1
+Version:	3.1
+Release:	1
 Summary:	File Manager for the Console
 Source:		https://www.terra.es/personal7/inigoserna/lfm/%{name}-%{version}.tar.gz
 Patch1:		lfm-docdir.patch
@@ -20,33 +20,33 @@ It has been developed in Python with the ol' good Midnight Commander as model.
 
 %prep
 %setup -q
-%patch1
-%__perl -ne 'print $1,"\n" if /^\+{3}\s+(.+?)\s+\d/' <"%{PATCH1}" | while read f; do
-	 %__sed -i 's|@@DOCDIR@@|%{_docdir}/%{name}|g' "$f"
-done
-%patch2
+#patch1
+#__perl -ne 'print $1,"\n" if /^\+{3}\s+(.+?)\s+\d/' <"%{PATCH1}" | while read f; do
+#	 %__sed -i 's|@@DOCDIR@@|%{_docdir}/%{name}|g' "$f"
+#done
+#patch2
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install --root=$RPM_BUILD_ROOT
+python3 setup.py install --root=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT%{_datadir}/doc
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%doc ChangeLog COPYING NEWS README* TODO
+%doc COPYING NEWS README* TODO
 %{_bindir}/*
 %{_mandir}/man1/lfm.1.*
-%{_mandir}/man1/pyview.1.*
-%{python2_sitelib}/%{name}*
+#{_mandir}/man1/pyview.1.*
+%{python3_sitelib}/%{name}*
 
 %changelog
-* Wed Oct 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
 - Rebuilt for Fedora
 * Sun May 22 2011 pascal.bleser@opensuse.org
 - update to 2.3:

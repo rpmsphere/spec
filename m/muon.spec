@@ -33,5 +33,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/%{name}
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.7git
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.7git
 - Rebuilt for Fedora

@@ -1,6 +1,6 @@
 Name:		praat
 Summary:	Doing phonetics, speech analysis and synthesis by computer
-Version:	6.2.14
+Version:	6.3.17
 Release:	1
 License: 	GPLv2
 Group:		Sciences/Other
@@ -60,7 +60,7 @@ cp -vf %{SOURCE2} %{buildroot}/%{_datadir}/applications
 %{_datadir}/applications/*.desktop
 
 %changelog
-* Sun Jul 3 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2.14
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 6.3.17
 - Rebuilt for Fedora
 * Wed Mar 16 2011 Stéphane Téletchéa <steletch@mandriva.org> 5.2.17-1mdv2011.0
 + Revision: 645380

@@ -1,13 +1,14 @@
 %global __python %{__python3}
 
 Name:           albert
-Version:        0.17.6
+Version:        0.22.4
 Release:        1
 Summary:        Desktop agnostic launcher
 License:        GPL-3.0+
 Group:          System/GUI/Other
 URL:            https://albertlauncher.github.io/
-Source:         %{name}-%{version}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
+Source1:        QHotkey.zip
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
 BuildRequires:  hicolor-icon-theme
@@ -36,7 +37,8 @@ the web, calculate things and a lot more.
 #sed -i '32i #include <functional>' src/lib/albert/src/albert/albert.cpp
 #sed -i '31i #include <QAction>' src/lib/albert/src/albert/mainwindow/mainwindow.cpp
 #sed -i '26i #include <QRegularExpression>' src/plugins/ssh/src/main.cpp
-sed -i '/plugins/d' CMakeLists.txt
+#sed -i '/plugins/d' CMakeLists.txt
+unzip %{SOURCE1} -d lib/QHotkey
 
 %build
 %cmake \
@@ -50,12 +52,12 @@ sed -i '/plugins/d' CMakeLists.txt
 %files
 %doc *.md
 %{_bindir}/%{name}
-%{_libdir}/%{name}
+%{_libdir}/lib%{name}.so
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
 
 %changelog
-* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17.6
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.22.4
 - Rebuilt for Fedora
 * Tue May  9 2017 sor.alexei@meowr.ru
 - Update to version 0.11.1:

@@ -1,20 +1,19 @@
 Name: webapp-manager
 Summary: Web Application Manager
 Version: 1.1.8
-Release: 1
+Release: 2
 Group: admin
 License: Free Software
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: desktop-file-utils
-#Requires: python3,
-#Requires: python3-gi,
-#Requires: python3-configobj,
-#Requires: python3-setproctitle,
-#Requires: python3-tldextract,
-#Requires: xapps-common,
+#Requires: python3
+#Requires: python3-gi
+#Requires: python3-configobj
+Requires: python3-setproctitle
+Requires: python3-tldextract
+Requires: xapps
 #Requires: dconf-gsettings-backend
-#Requires: |
 #Requires: gsettings-backend
 
 %description
@@ -35,7 +34,6 @@ cp -a usr %{buildroot}
 /usr/lib/%{name}
 %{_datadir}/applications/kde4/%{name}.desktop
 %{_datadir}/applications/%{name}.desktop
-#%{_datadir}/doc/%{name}
 %{_datadir}/glib-2.0/schemas/org.x.%{name}.gschema.xml
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/locale/*/LC_MESSAGES/%{name}.mo
@@ -44,5 +42,5 @@ cp -a usr %{buildroot}
 %{_datadir}/icons/hicolor/scalable/categories/applications-webapps.svg
 
 %changelog
-* Sun Dec 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.8
+* Wed Sep 20 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.8-2
 - Rebuilt for Fedora

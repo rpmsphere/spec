@@ -3,11 +3,11 @@
 
 Summary: 	A GUI utility to control and monitor AMD GPU
 Name: 		systemdeck
-Version: 	1.1.0.0
+Version: 	1.01.68.00
 Release: 	1.bin
 License: 	Refer to LICENSE.TXT
 Group:		Hardware/Tools
-Source0:	SystemDeck_1_1_0_0.tar.gz
+Source0:	AMDSystemDeck_x86_64_v%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:        %{name}.png
 
@@ -36,5 +36,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0.0
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.01.68.00
 - Initial binary package

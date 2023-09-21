@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name: sqlitestudio
-Version: 3.2.1
-Release: 4.1
+Version: 3.4.4
+Release: 1
 Summary:    A SQLite database manager
 License:    GPLv2
 Group:      System/Configuration/Other
@@ -29,17 +29,16 @@ BuildRequires: qt5-qttools-static
 * Open source and free
 
 %prep
-%setup -q -n SQLiteStudio3
+%setup -q
 
 %build
+cd SQLiteStudio3
 qmake-qt5 -recursive
 make
 
 %install
+cd SQLiteStudio3
 make INSTALL_ROOT=%{buildroot} install
-%ifarch x86_64 aarch64
-mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
-%endif
 
 install -Dm644 docs/sqlitestudio_logo.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -d -m 755 %{buildroot}%{_datadir}/applications
@@ -55,6 +54,9 @@ Categories=Development;Database;
 MimeType=application/x-sqlite3;
 EOF
 
+mv %{buildroot}/bin %{buildroot}%{_bindir}
+mv %{buildroot}/lib %{buildroot}%{_libdir}
+
 %files
 %{_bindir}/%{name}*
 %{_datadir}/applications/%{name}.desktop
@@ -62,5 +64,5 @@ EOF
 %{_libdir}/lib*
 
 %changelog
-* Tue Jul 31 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.1
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.4
 - Rebuilt for Fedora

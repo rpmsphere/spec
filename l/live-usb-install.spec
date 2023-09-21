@@ -4,7 +4,7 @@
 
 Name: live-usb-install
 Summary: Install various Linux distributions from ISO, CD/DVD, Internet or IMG file to USB flash drive.
-Version: 2.5.2
+Version: 2.5.3
 Release: 1
 Group: USU Packages
 License: Free Software
@@ -12,8 +12,8 @@ URL: https://live.learnfree.eu/
 Source0: %{name}-%{version}.tar.gz
 #BuildArch: noarch
 BuildRequires: desktop-file-utils
-#Requires: python,
-#Requires: python-glade2,
+#Requires: python2,
+#Requires: python2-glade2,
 #Requires: syslinux,
 #Requires: wget,
 #Requires: p7zip-full,
@@ -157,7 +157,7 @@ Supported distributins:  - AVG Rescue CD
 
 %prep
 %setup -q -n %{name}
-sed -i 's|/usr/bin/env python|/usr/bin/python2|' %{name}.py
+sed -i -e 's|/usr/bin/env python$|/usr/bin/python2|' -e 's|/usr/bin/python$|/usr/bin/python2|' `find . -name '*.py'`
 
 %build
 cat > %{name} <<EOF
@@ -170,13 +170,14 @@ EOF
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 mkdir -p %{buildroot}%{_datadir}/%{name}
 cp -a * %{buildroot}%{_datadir}/%{name}
-mv %{buildroot}%{_datadir}/%{name}/locale %{buildroot}%{_datadir}
+#mv %{buildroot}%{_datadir}/%{name}/locale %{buildroot}%{_datadir}
+sed -i 's|/usr/bin/env python|/usr/bin/python2|' %{buildroot}/usr/share/live-usb-install/tools/pypack/pypack
 
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}
-%{_datadir}/locale/*/LC_MESSAGES/%{name}.mo
+#{_datadir}/locale/*/LC_MESSAGES/%{name}.mo
 
 %changelog
-* Sun Dec 12 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.2
+* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.3
 - Rebuilt for Fedora

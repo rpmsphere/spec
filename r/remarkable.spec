@@ -3,7 +3,7 @@
 Name: remarkable
 Summary: A free fully featured markdown editor
 Version: 1.87
-Release: 7
+Release: 8
 Group: Applications/Productivity
 License: MIT
 URL: https://remarkableapp.github.io/
@@ -28,9 +28,11 @@ exactly how you like.
 
 %prep
 %setup -q -n %{_name}-%{version}
-%patch0 -p 1
-%patch1 -p 1
-sed -i 's|import styles|from remarkable import styles|' %{name}/RemarkableWindow.py
+%patch 0 -p 1
+%patch 1 -p 1
+sed -i 's|^import styles$|from remarkable import styles|' %{name}/RemarkableWindow.py
+sed -i 's| tree.getiterator(| tree.iter(|' remarkable_lib/Builder.py
+
 
 %build
 
@@ -61,5 +63,8 @@ EOF
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
+* Wed Sep 27 2023 Doncho Nikolaev Gunchev <dgunchev@gmail.com> - 1.87-8
+- Fix for Fedora 38 (ElementTree iterate to iter)
+
 * Wed Sep 09 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.87
 - Rebuilt for Fedora

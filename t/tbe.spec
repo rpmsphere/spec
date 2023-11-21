@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name:           tbe
 Version:        0.9.3.1
 Release:        7.1
@@ -29,6 +31,7 @@ sed -i -e 's|share/games|share|' -e 's|games)|bin)|' CMakeLists.txt
 %cmake -DWITH_DOCS=OFF \
        -DBUILD_SHARED_LIBS=OFF \
        -DCMAKE_BUILD_TYPE=Release
+sed -i 's|lupdate @|lupdate|' redhat-linux-build/i18n/CMakeFiles/translations.dir/build.make
 %cmake_build
 
 %install

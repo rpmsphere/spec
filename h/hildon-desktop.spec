@@ -70,10 +70,10 @@ sed -i 's|glib/gtypes.h|glib.h|' src/hn-app-sound.c
 %{_includedir}/libhildonwm
 %{_libdir}/hildon-desktop
 %{_libdir}/libhildondesktop.a
-%{_libdir}/libhildondesktop.la
+#{_libdir}/libhildondesktop.la
 %{_libdir}/libhildondesktop.so
 %{_libdir}/libhildonwm.a
-%{_libdir}/libhildonwm.la
+#{_libdir}/libhildonwm.la
 %{_libdir}/libhildonwm.so
 %{_libdir}/pkgconfig/libhildon*.pc
 

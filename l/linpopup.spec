@@ -24,7 +24,7 @@ to communicate between Linux computers that run Samba.
 %build
 export LDFLAGS+=" -lX11 -Wl,--allow-multiple-definition"
 %{configure} --prefix=%{_prefix}
-%{__make} %{?_smp_mflags} %{?mflags} CFLAGS+=" -Wno-format-security"
+%{__make} %{?_smp_mflags} %{?mflags} CFLAGS+=" -Wno-format-security -lX11"
 
 %install
 rm -rf $RPM_BUILD_ROOT

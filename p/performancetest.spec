@@ -1,9 +1,9 @@
-%global debug_package %{nil}
+%undefine _debugsource_packages
 
 Summary: 	PC Performance Testing
 Name: 		performancetest
-Version: 	10.2
-Release: 	1003.bin
+Version: 	11.0.1001
+Release: 	1.bin
 License: 	Commercial, free evaluation
 Group:		Hardware/Tools
 Source0:	https://www.passmark.com/downloads/pt_linux_x64.zip
@@ -32,5 +32,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/%{name}
 
 %changelog
-* Sun Dec 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 10.2
+* Sun Sep 24 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 11.0.1001
 - Initial binary package

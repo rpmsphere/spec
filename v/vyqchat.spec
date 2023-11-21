@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name: vyqchat
 Version: 0.2.9test
 Release: 31.4

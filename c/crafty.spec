@@ -37,6 +37,7 @@ sed -i 's|INLINE64|INLINE32|' Makefile
 %else
 sed -i 's|-mpopcnt||' Makefile
 %endif
+sed -i 's|-Wall|-Wall -fPIE|' Makefile
 
 %build
 make unix-gcc

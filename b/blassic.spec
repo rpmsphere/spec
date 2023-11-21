@@ -27,6 +27,7 @@ sed -i 's/swap/std::swap/' graphics_impl.h
 
 %build
 export CC=clang CXX=clang++
+export CXXFLAGS+=" -std=gnu++14"
 cp /usr/share/automake-*/config.guess .
 ./configure --prefix=/usr --enable-installed-examples --disable-svgalib
 make

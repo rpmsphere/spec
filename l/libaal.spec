@@ -29,6 +29,7 @@ This package contains static libraries and header files need for development.
 sed -i 's|long long|long|' include/aal/types.h
 
 %build
+export LDFLAGS=""
 autoreconf -ifv
 ./configure --prefix=/usr
 make
@@ -48,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_includedir}/aal
 %{_includedir}/aal/*.h
 %{_libdir}/*.a
-%{_libdir}/*.la
+#{_libdir}/*.la
 %{_libdir}/*.so
 %{_datadir}/aclocal/libaal.m4
 

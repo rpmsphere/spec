@@ -28,6 +28,7 @@ version of the 'tee' and 'eet' (reverse tee) commands.
 
 %build
 ./configure --prefix=/usr
+sed -i 's|-Wall|-Wall -fPIE|' Makefile
 make
 
 %install

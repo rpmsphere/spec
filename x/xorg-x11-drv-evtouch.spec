@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README README.calibration
-%{_libdir}/xorg/modules/input/evtouch_drv.la
+#{_libdir}/xorg/modules/input/evtouch_drv.la
 %{_libdir}/xorg/modules/input/evtouch_drv.so
 %{_libdir}/xf86-input-evtouch
 %{_datadir}/xf86-input-evtouch

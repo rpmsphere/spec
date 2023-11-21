@@ -11,6 +11,7 @@ Get X properties of a given window.
 
 %prep
 %setup -q
+sed -i '28i #include <array>' src/AtomData.cpp
 
 %build
 cmake -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT5=1 .

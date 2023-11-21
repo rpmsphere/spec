@@ -23,7 +23,7 @@ sed -i 's|use FALLBACK|using FALLBACK|' src/calcfield/calcfield.in
     --libdir=%{_libdir} \
     --build=x86_64 \
     --disable-shared
-sed -i 's|-Wall|-Wall -Wno-format-security|' Makefile
+sed -i 's|-Werror=format-security||' `find . -name Makefile`
 %{__make} %{_smp_mflags -O}
 
 %install

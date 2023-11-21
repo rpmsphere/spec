@@ -5,6 +5,7 @@ License: GPLV2
 Summary: Transparent applications suite
 Group: User Interface/X
 Source: %{name}-%{version}.tar.gz
+BuildRequires: qt5-qtx11extras-devel
 
 %description
 transparent applications suite:
@@ -21,6 +22,7 @@ transparent applications suite:
 %setup -q
 sed -i '48i #include <QPainterPath>' calendar/CalendarWidget.cpp
 sed -i '43i #include <QPainterPath>' clock/ClockWidget.cpp
+sed -i '31i #include <array>' calendar/CalendarEventModel.h
 
 %build
 %define prefix /usr

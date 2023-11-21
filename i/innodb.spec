@@ -91,7 +91,7 @@ rm -f $RPM_BUILD_ROOT%{_datadir}/%{name}-1.0/examples/COPYING
 %{_datadir}/embedded_%{name}-1.0
 %{_includedir}/embedded_%{name}-1.0
 %{_libdir}/libinnodb.a
-%{_libdir}/libinnodb.la
+#{_libdir}/libinnodb.la
 %{_libdir}/libinnodb.so
 
 %changelog

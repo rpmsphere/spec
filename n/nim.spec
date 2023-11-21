@@ -10,7 +10,7 @@
 %global bashcomproot    %(dirname %{bashcompdir} 2>/dev/null)
 
 Name:           nim
-Version:        1.6.12
+Version:        1.6.16
 Release:        1
 Summary:        Statically typed, imperative programming language
 # compiler is MIT, nimble package manager is BSD
@@ -145,7 +145,7 @@ cp tools/dochack/dochack.js %{buildroot}%{_docdir}/%{name}/
 %doc %{_docdir}/nim
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.12
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.16
 - Rebuilt for Fedora
 * Tue Jul 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.4-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild

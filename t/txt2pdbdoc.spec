@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%undefine _auto_set_build_flags
 %global __global_ldflags -Wl,-z,relro -lm -ldl
 
 Summary: Palm Doc file format conversion

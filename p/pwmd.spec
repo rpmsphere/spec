@@ -1,5 +1,5 @@
 Name:           pwmd
-Version:        3.3.6
+Version:        3.3.7
 Release:        1
 Summary:        A server for storing application data at a central location
 License:        GPLv2+
@@ -67,7 +67,7 @@ rm -f %{buildroot}%{_infodir}/dir
 %{_bindir}/%{name}*
 
 %changelog
-* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.6
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.7
 - Rebuilt for Fedora
 * Mon Sep 30 2019 Igor Vlasenko <viy@altlinux.ru> 3.0.18-alt1_11
 - new version

@@ -34,7 +34,7 @@ PlexyDesk Currently supports the following features:
 
 %build
 #cmake -DCMAKE_INSTALL_PREFIX=%{buildroot}/usr .
-export CXXFLAGS="-lX11 -lXext"
+export CXXFLAGS+=" -lX11 -lXext"
 cmake -DCMAKE_INSTALL_PREFIX=/usr .
 make
 
@@ -69,10 +69,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libwebqgv.so
 %{_libdir}/libplexyjson.so
 %{_libdir}/plexyext
-%{_libdir}/qt4/imports/
+#{_libdir}/qt4/imports/
 %{_libdir}/qt4/imports/FolderView/
-%{_libdir}/qt4/imports/FolderView/libfolderview.so
-%{_libdir}/qt4/imports/FolderView/qmldir
+#{_libdir}/qt4/imports/FolderView/libfolderview.so
+#{_libdir}/qt4/imports/FolderView/qmldir
 /usr/share/dbus-1/services/org.plexydesk.SocialAccountsManager.service
 /usr/share/dbus-1/services/org.plexydesk.social.service
 %{_datadir}/plexy

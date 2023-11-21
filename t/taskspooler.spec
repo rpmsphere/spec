@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name: taskspooler
 Summary: Personal job scheduler
 Version: 0.7.5

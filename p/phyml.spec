@@ -27,7 +27,7 @@ fastDNAml, while being much faster.
 %setup -q
 
 %build
-autoreconf -ifv
+#autoreconf -ifv
 %configure
 %ifarch aarch64
 sed -i 's|-msse||' Makefile */Makefile

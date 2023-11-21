@@ -20,7 +20,9 @@ sed -i '1i #define SIGUNUSED 31' ee.c
 sed -i 's|-s|-Wl,--allow-multiple-definition|' *.make
 
 %build
-make OPTFLAGS="$RPM_OPT_FLAGS"
+#make OPTFLAGS="$RPM_OPT_FLAGS"
+make||sed -i 's|-Werror=format-security|-Wl,--allow-multiple-definition|' make.local
+make -f make.local
 
 %install
 rm -rf $RPM_BUILD_ROOT

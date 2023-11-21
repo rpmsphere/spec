@@ -83,6 +83,7 @@ Diether Knof <dknof@gmx.de>
 %prep
 %setup -q -n %{ename}_%{version}
 sed -i '67,74s|^#||' Makefile.install.directories
+sed -i '102i #include <cstdint>' src/constants.h
 
 %build
 make compile

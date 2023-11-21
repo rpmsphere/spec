@@ -23,6 +23,8 @@ facilities for extending the set of widgets easily via plugins.
 
 %prep
 %setup -q -n %{oname}-%{version}
+##ln -sf /usr/bin/wx-config-3.0 /etc/alternatives/wx-config
+sed -i '45i #include <cstdint>' src/md5/md5.hh
 
 %build
 sh create_build_files4.sh

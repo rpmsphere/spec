@@ -33,6 +33,7 @@ sed -i '33i #include <deque>' src/httpserver.cpp
 sed -i 's| _\([1-6]\)| boost::placeholders::_\1|g' \
   src/validation.cpp src/validationinterface.cpp src/qt/clientmodel.cpp src/qt/bitcoingui.cpp src/qt/splashscreen.cpp src/qt/transactiontablemodel.cpp src/qt/walletmodel.cpp
 sed -i '10i #include <QPainterPath>' src/qt/trafficgraphwidget.h
+sed -i '30i #include <stdexcept>' src/support/lockedpool.cpp
 
 %build
 ./autogen.sh

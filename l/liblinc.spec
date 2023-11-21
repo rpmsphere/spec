@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/aclocal/linc.m4
 %{_datadir}/gtk-doc/html/linc
 %{_libdir}/*.a
-%{_libdir}/*.la
+#{_libdir}/*.la
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/linc.pc
 %dir %{_includedir}/linc-?.?/linc

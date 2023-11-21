@@ -26,10 +26,11 @@ Program reference and requested citation:
 
 %prep
 %setup -q -n Raster3D_%{version}-7
+sed -i 's|-Wall|-Wall -fPIE|' Makefile*
 
 %build
 make linux
-make all FFLAGS="-g -O3 -ffixed-line-length-132 -Wtabs -fno-range-check" CFLAGS="-Dgfortran $RPM_OPT_FLAGS"
+make all FFLAGS="-g -O3 -ffixed-line-length-132 -Wtabs -fno-range-check -fPIE" CFLAGS="-fPIE -Dgfortran $RPM_OPT_FLAGS"
 
 # Changing R3D_LIB
 grep -v R3D_LIB Raster3D.csh > Raster3D.csh.$$

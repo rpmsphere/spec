@@ -15,6 +15,7 @@ Data for the open source astrology program.
 
 %prep
 %autosetup -n %{srcname}-%{version}
+sed -i '18i py_modules=[],' setup.py
 
 %build
 %py3_build
@@ -29,7 +30,7 @@ Data for the open source astrology program.
 %{_datadir}/swisseph
 
 %changelog
-* Mon Sep 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9
+* Mon Sep 28 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9
 - Rebuilt for Fedora
 * Thu Feb 11 2016 Jens Petersen <petersen@redhat.com>
 - Initial package

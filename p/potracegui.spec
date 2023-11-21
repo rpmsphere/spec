@@ -30,7 +30,7 @@ bitmapped images.
 %build
 export CXXFLAGS="-std=c++98 -fPIC"
 %configure
-sed -i 's|-Wl,--as-needed||' config* Makefile */Makefile */*/Makefile
+sed -i -e 's|-Wl,--as-needed||' -e 's|-Wl,--build-id=sha1||' config* Makefile */Makefile */*/Makefile
 %__make
 
 %install

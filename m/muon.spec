@@ -3,7 +3,7 @@
 Summary: Modern low-level programming language
 Name: muon
 Version: 0.3.7git
-Release: 1
+Release: 2
 License: MIT
 Group: Development/Language
 URL: https://github.com/nickmqb/muon
@@ -15,9 +15,10 @@ Muon is a modern low-level programming language, inspired by C, C#, Go, Rust and
 
 %prep
 %setup -q -n %{name}-master
+sed -i '46i bool32 {\n}\n' lib/core.mu
 
 %build
-make CFLAGS=-O3 ARCH=
+make CFLAGS=-O3 ARCH=""
 
 %install
 install -Dm755 bootstrap/mu %{buildroot}%{_bindir}/%{name}
@@ -33,5 +34,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/%{name}
 
 %changelog
-* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.7git
+* Sun Sep 24 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.7git
 - Rebuilt for Fedora

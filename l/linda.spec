@@ -43,7 +43,7 @@ make %{?_smp_mflags}
 %files devel
 %{_includedir}/*
 %{_libdir}/lib*.a
-%{_libdir}/lib*.la
+#{_libdir}/lib*.la
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/*.pc
 

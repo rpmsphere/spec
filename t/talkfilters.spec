@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name:         talkfilters
 Summary:      GNU Talk Filters
 URL:          https://www.hyperrealm.com/main.php?s=talkfilters

@@ -1,5 +1,5 @@
 %define name    kamailio
-%define ver 5.6.3
+%define ver 5.7.2
 %define rel 1
 
 %if 0%{?fedora}
@@ -241,10 +241,11 @@ Summary:    Kamailio (former OpenSER) - the Open Source SIP Server
 Name:       %name
 Version:    %ver
 Release:    %rel
+Packager:   Peter Dunkley <peter@dunkley.me.uk>
 License:    GPL-2.0
 Group:      %{PKGGROUP}
-Source:     https://kamailio.org/pub/kamailio/%{ver}/src/%{name}-%{ver}_src.tar.gz
-URL:        https://kamailio.org/
+Source:     http://kamailio.org/pub/kamailio/%{ver}/src/%{name}-%{ver}_src.tar.gz
+URL:        http://kamailio.org/
 Vendor:     kamailio.org
 Conflicts:  kamailio-acc_json < %ver
 Conflicts:  kamailio-auth-ephemeral < %ver, kamailio-bdb < %ver
@@ -1444,6 +1445,7 @@ fi
 %doc %{_docdir}/kamailio/modules/README.posops
 %doc %{_docdir}/kamailio/modules/README.siprepo
 %doc %{_docdir}/kamailio/modules/README.slack
+%doc %{_docdir}/kamailio/modules/README.math
 
 %dir %attr(-,kamailio,kamailio) %{_sysconfdir}/kamailio
 %config(noreplace) %{_sysconfdir}/kamailio/dictionary.kamailio
@@ -1606,6 +1608,7 @@ fi
 %{_libdir}/kamailio/modules/posops.so
 %{_libdir}/kamailio/modules/siprepo.so
 %{_libdir}/kamailio/modules/slack.so
+%{_libdir}/kamailio/modules/math.so
 
 %{_sbindir}/kamailio
 %{_sbindir}/kamctl
@@ -1628,6 +1631,7 @@ fi
 %{_libdir}/kamailio/kamctl/dbtextdb/dbtextdb.pyo
 
 %{_mandir}/man5/*
+%{_mandir}/man7/*
 %{_mandir}/man8/*
 
 %dir %{_datadir}/kamailio
@@ -1919,6 +1923,8 @@ fi
 %if %{with python3}
 %doc %{_docdir}/kamailio/modules/README.app_python3
 %{_libdir}/kamailio/modules/app_python3.so
+%doc %{_docdir}/kamailio/modules/README.app_python3s
+%{_libdir}/kamailio/modules/app_python3s.so
 %endif
 
 %if %{with rabbitmq}
@@ -1973,6 +1979,8 @@ fi
 %files      ruby
 %doc %{_docdir}/kamailio/modules/README.app_ruby
 %{_libdir}/kamailio/modules/app_ruby.so
+%doc %{_docdir}/kamailio/modules/README.app_ruby_proc
+%{_libdir}/kamailio/modules/app_ruby_proc.so
 %endif
 
 %if %{with sctp}
@@ -2069,7 +2077,7 @@ fi
 %{_libdir}/kamailio/modules/uuid.so
 
 %changelog
-* Sun Jan 15 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.6.3
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.7.2
 - Rebuilt for Fedora
 * Sat Aug 31 2019 Sergey Safarov <s.safarov@gmail.com> 5.3.0-dev7
   - Packaged kemix, lost and xhttp_prom modules

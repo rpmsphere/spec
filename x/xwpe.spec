@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Summary: X Window Programming Environment
 Name: xwpe
 Version: 1.5.30a

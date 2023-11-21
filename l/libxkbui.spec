@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %{_libdir}/libxkbui.a
-%{_libdir}/libxkbui.la
+#{_libdir}/libxkbui.la
 %{_libdir}/libxkbui.so
 %dir %{_includedir}/X11/extensions
 %{_includedir}/X11/extensions/*.h
@@ -54,9 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
 - Rebuilt for Fedora
-
 * Sat Jun 21 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.2-2mamba
 - specfile updated
-
 * Mon Dec 18 2006 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.2-1qilnx
 - package created by autospec

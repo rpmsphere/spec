@@ -1,8 +1,8 @@
 %global __os_install_post %{nil}
 
 Name:           libpwmd
-Version:        8.4.2
-Release:        2
+Version:        8.4.3
+Release:        1
 Summary:        A library to patch applications to send commands to PWMD
 Group:          Applications/System
 License:        GPLv2+
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/%{name}*.pc
 
 %changelog
-* Sun Nov 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 8.4.2
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 8.4.3
 - Rebuilt for Fedora
 * Fri Jul 17 2009 Fabian Affolter <fabian@bernewireless.net> - 6.0.2-1
 - Added new -devel package

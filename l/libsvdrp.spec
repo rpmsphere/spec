@@ -38,7 +38,7 @@ make DESTDIR=%{buildroot} install
 %files devel
 %{_includedir}/*
 %{_libdir}/libsvdrp.a
-%{_libdir}/libsvdrp.la
+#{_libdir}/libsvdrp.la
 %{_libdir}/libsvdrp.so
 %{_libdir}/pkgconfig/*
 

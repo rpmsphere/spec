@@ -14,9 +14,9 @@ i7z is a CLI curses based monitoring tool for Intel Core i7 processors.
 
 %prep
 %setup -q -n %{name}-master
-sed -i 's|-Wall|-Wall -Wl,--allow-multiple-definition|' Makefile
 
 %build
+export CFLAGS="$CFLAGS -Wl,--allow-multiple-definition"
 make %{?_smp_mflags}
 
 %install

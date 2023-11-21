@@ -23,7 +23,7 @@ interface or a GTK-based X interface.
 %ifarch aarch64
 autoreconf -ifv
 %endif
-sed -i 's|-g -O2|-g -O2 -Wl,--allow-multiple-definition|' configure
+export LDFLAGS=" -Wl,--allow-multiple-definition "
 mkdir build-text
 pushd build-text
 ../configure --prefix=/usr --with-alsa --without-gtk1 --without-gtk

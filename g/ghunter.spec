@@ -20,6 +20,7 @@ A set of picture-watching program intended to read comic books.
 %patch0
 
 %build
+export CFLAGS=${CFLAGS/-Werror=format-security/}
 cmake -DCMAKE_INSTALL_PREFIX=/usr .
 make
 

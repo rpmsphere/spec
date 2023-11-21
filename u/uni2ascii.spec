@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name:         uni2ascii
 Summary:      Convert between Unicode and ASCII
 URL:          https://billposer.org/Software/uni2ascii.html

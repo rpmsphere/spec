@@ -70,9 +70,8 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %{_libdir}/pkgconfig/*
 %{_libdir}/libexchange.so
-%{_libdir}/libexchange.la
+#{_libdir}/libexchange.la
 %{_includedir}/exchange-0
-
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.0.002

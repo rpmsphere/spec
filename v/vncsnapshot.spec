@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%undefine _auto_set_build_flags
 
 Summary:	Command line program for save JPEG image of VNC server's screen
 Name:		vncsnapshot

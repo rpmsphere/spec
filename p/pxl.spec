@@ -26,7 +26,7 @@ Header files and Libraries for the package PXL.
 #sed -i 's|-classic||' scripting/CMakeLists.txt
 
 %build
-#export CXXFLAGS="-std=c++98 -fPIC"
+export CXXFLAGS+=" -Wno-narrowing"
 #cmake -DPYTHON_EXECUTABLE=/usr/bin/python3
 %cmake
 %cmake_build

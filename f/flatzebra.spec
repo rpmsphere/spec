@@ -52,7 +52,6 @@ make
 %dir %{_includedir}/%{name}-0.1
 %{_includedir}/%{name}-0.1/%{name}/*.h
 %{_libdir}/*.so
-%{_libdir}/*.la
 %{_libdir}/pkgconfig/*.pc
 
 %changelog

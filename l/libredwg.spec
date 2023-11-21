@@ -48,6 +48,7 @@ rm -rf %{buildroot}
 %make_install
 mkdir -p %{buildroot}%{_datadir}/%{name}
 mv %{buildroot}%{_datadir}/dwgadd.example %{buildroot}%{_datadir}/load_dwg.py %{buildroot}%{_datadir}/%{name}
+mv %{buildroot}/usr/local/%{_lib}/perl5/* %{buildroot}%{_libdir}/perl5/
 
 %clean
 rm -rf %{buildroot}
@@ -68,12 +69,12 @@ rm -rf %{buildroot}
 %files devel
 %{_includedir}/*.h
 %{_libdir}/%{name}.so
-%exclude %{_libdir}/%{name}.la
+#exclude %{_libdir}/%{name}.la
 %{_libdir}/pkgconfig/libredwg.pc
 %exclude %{_libdir}/perl5/perllocal.pod
-%exclude /usr/local/lib64/perl5/5.34/LibreDWG.pm
-%exclude /usr/local/lib64/perl5/5.34/auto/LibreDWG/.packlist
-%exclude /usr/local/lib64/perl5/5.34/auto/LibreDWG/LibreDWG.so
+%{_libdir}/perl5/5.*/LibreDWG.pm
+%{_libdir}/perl5/5.*/auto/LibreDWG/.packlist
+%{_libdir}/perl5/5.*/auto/LibreDWG/LibreDWG.so
 
 %changelog
 * Sun Mar 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.5

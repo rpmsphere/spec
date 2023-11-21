@@ -15,6 +15,7 @@ bs is a remote descendant of Basic [sic] and SNOBOL4, with a little C thrown in.
 %prep
 %setup -q
 %patch0 -p 1
+sed -i 's|-O -g|-O -g -fPIE|' bs.mk
 
 %build
 make -f bs.mk

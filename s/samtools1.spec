@@ -24,7 +24,7 @@ alignments in a per-position format.
 
 %build
 %configure
-make CFLAGS="%{optflags} -fPIC" %{?_smp_mflags}
+make CFLAGS="%{optflags} -fPIC -Wno-format-security" %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}

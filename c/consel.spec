@@ -31,6 +31,7 @@ biased results than the conventional methods.
 %build
 cd src
 sed -i 's|dprintf|mydprintf|' misc.*
+sed -i 's|-Wall|-Wall -fPIE|' Makefile
 make
 
 %install

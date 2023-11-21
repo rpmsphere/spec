@@ -51,6 +51,7 @@ sed -i 's|return out|return out.good()|' cxxx/CImage.cpp
 sed -i 's|mStream != NULL|mStream.good()|' cxxx/CMagic.cpp
 sed -i -e 's|ok = o;|ok = o.good();|' -e 's|ok = o |o |' xplorer/CNewDialog.cpp
 sed -i '73s|static inline const|static const|' intlize/i5e.h
+sed -i '/mXZ.reserved_int1/d' cxxx/CXZStreambuf.cpp
 
 %build
 touch NEWS ChangeLog

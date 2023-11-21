@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%undefine _auto_set_build_flags
 
 Name:           xfishtank
 BuildRequires:  libX11-devel, libXext-devel, imake, imlib2-devel

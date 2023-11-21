@@ -14,6 +14,7 @@ ident daemon with support for linux masquerading firewalls.
 %prep
 %setup -a 1
 %patch -p1
+sed -i 's|-Wall|-Wall -fPIE|' Makefile
 
 %build
 make -j 2
@@ -36,5 +37,5 @@ install auth  ${RPM_BUILD_ROOT}/etc/xinetd.d
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
 - Rebuilt for Fedora
-* Fri Jun 26 2008 admin@eregion.de
+* Thu Jun 26 2008 admin@eregion.de
 - bogus changelog

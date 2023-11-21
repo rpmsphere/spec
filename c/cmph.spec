@@ -17,6 +17,7 @@ minimal perfect hashing library with a C API.
 
 %prep
 %setup -q
+sed -i 's|-Wall|-Wall -fPIE|' configure
 
 %build
 ./configure \

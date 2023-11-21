@@ -1,3 +1,4 @@
+%undefine _auto_set_build_flags
 Name:         cocom
 Summary:      Compiler Creation Toolkit
 URL:          https://cocom.sourceforge.net/

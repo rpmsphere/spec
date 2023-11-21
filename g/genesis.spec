@@ -21,7 +21,7 @@ and updates the list whenever a change happens in the monitored applications.
 
 %build
 ./autogen.sh --prefix=/usr
-sed -i 's|-Werror||' Makefile */Makefile
+sed -i 's|-Werror ||' Makefile */Makefile
 make 
 
 %install
@@ -42,7 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_libdir}/libgenesis.*
 %{_libdir}/pkgconfig/genesis.pc
-%exclude %{_libdir}/debug
 %{_includedir}/genesis/*
 
 %changelog

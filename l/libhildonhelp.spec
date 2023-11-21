@@ -41,8 +41,6 @@ autoreconf -ifv
 %clean
 %__rm -rf %{buildroot}
 
-
-
 %files
 %doc README ChangeLog COPYING
 %{_bindir}/*
@@ -51,7 +49,7 @@ autoreconf -ifv
 %files devel
 %{_includedir}/hildon-help
 %{_libdir}/libhildonhelp.a
-%{_libdir}/libhildonhelp.la
+#{_libdir}/libhildonhelp.la
 %{_libdir}/libhildonhelp.so
 %{_libdir}/pkgconfig/hildon-help.pc
 

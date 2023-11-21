@@ -25,7 +25,7 @@ mv -f src/TODO TODO.lmbench
 mv -f scripts/README README.scripts
 mv -f scripts/SHIT SHIT.scripts
 mv -f scripts/TODO TODO.scripts
-sed -i 's|CFLAGS=-O|CFLAGS="-O -I/usr/include/tirpc -ltirpc"|' src/Makefile
+sed -i 's|CFLAGS=-O|CFLAGS="-O -fPIE -I/usr/include/tirpc -ltirpc"|' src/Makefile
 
 %build
 %{make_build}

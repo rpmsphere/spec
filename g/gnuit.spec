@@ -15,6 +15,7 @@ viewer/killer and some other related utilities and shell scripts.
 
 %prep
 %setup -q
+sed -i 's|printf(copyright);|printf("%s", copyright);|' src/git.c
 
 %build
 autoreconf -ifv

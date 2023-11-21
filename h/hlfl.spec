@@ -16,6 +16,7 @@ IPChains, NetFilter, IPFilter, IPFW, Cisco IOS, and many others.
 %setup -q
 
 %build
+export CFLAGS=${CFLAGS/-Werror=format-security/}
 ./configure \
     --prefix=%{_prefix} \
     --mandir=%{_mandir}

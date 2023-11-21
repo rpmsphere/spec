@@ -45,6 +45,7 @@ sed -i '1i #include <cmath>' lib/libxclass/OXFrame.cc
 sed -i 's/abs(/fabs(/g' lib/libxclass/OGifImage.cc lib/libxclass/OXFrame.cc
 
 %build
+cp -f /usr/lib/rpm/redhat/config.* .
 autoconf
 CXXFLAGS="$RPM_OPT_FLAGS -Wno-narrowing" \
 ./configure --prefix=%{_prefix} \

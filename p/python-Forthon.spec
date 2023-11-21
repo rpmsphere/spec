@@ -9,7 +9,7 @@ License:        BSD
 URL:            https://hifweb.lbl.gov/Forthon/
 Source0:        https://hifweb.lbl.gov/Forthon/Forthon-%{version}.tar.gz
 Patch1:		buildfixes.patch
-BuildRequires:  python3-devel
+BuildRequires:  python2-devel
 BuildRequires:  environment-modules
 BuildArch:      noarch
 
@@ -41,14 +41,14 @@ user's source code and the generated wrapping code into a Python module.
 
 %build
 . /etc/profile.d/modules.sh
-python3 setup.py build
+python2 setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 . /etc/profile.d/modules.sh
-python3 setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
-mkdir -p %{buildroot}%{python3_sitelib}
-mv %{buildroot}%{python3_sitearch}/* %{buildroot}%{python3_sitelib}
+python2 setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
+mkdir -p %{buildroot}%{python2_sitelib}
+mv %{buildroot}%{python2_sitearch}/* %{buildroot}%{python2_sitelib}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %doc *.txt
 %{_bindir}/*
-%{python3_sitelib}/*
+%{python2_sitelib}/*
 
 %changelog
 * Tue Sep 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.35

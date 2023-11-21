@@ -19,6 +19,7 @@ accuracy, speed, or some compromise between the two.
 %prep
 %setup -q -n %{name}%{version}
 %__cp %{SOURCE1} src/Makefile
+sed -i 's|-msse2|-fPIE -msse2|' src/Makefile
 %ifarch aarch64
 sed -i 's|-msse2 -mfpmath=sse||' src/Makefile
 %endif

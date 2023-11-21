@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%undefine _auto_set_build_flags
 
 Summary:   An user friendly editor for programmers
 Name:      setedit
@@ -11,6 +12,7 @@ URL:       https://setedit.sourceforge.net/
 BuildRequires: rhtvision-devel
 BuildRequires: aalib-devel
 BuildRequires: libmigdb-devel
+BuildRequires: allegro-devel
 #BuildRequires: pcre-devel
 
 %description 

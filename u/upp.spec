@@ -2,7 +2,7 @@
 %global __os_install_post %{nil}
 
 Name:           upp
-Version:        16270
+Version:        17024
 Release:        1
 License:        BSD
 Summary:        C++ cross-platform rapid application development framework (known as U++)
@@ -48,6 +48,7 @@ features like code completion, navigation and transformation.
 #sed -i 's|inline double abs|inline double myabs|' uppsrc/Core/Core.h
 
 %build
+./configure
 #export CFLAGS="%{optflags}"
 #export CXXFLAGS="%{optflags}"
 #export LDFLAGS="%{optflags}"
@@ -131,7 +132,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/theide.1*
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 16270
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 17024
 - Rebuilt for Fedora
 * Thu Dec 30 2010 fisiu@opensuse.org
 - fixed %%{libdir} in external Makefile and GCC.bm

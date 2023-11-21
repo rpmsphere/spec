@@ -55,10 +55,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %{_libdir}/*.so
-%{_libdir}/*.la
+#{_libdir}/*.la
 
 %changelog
-* Tue Jun 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
+* Wed Jun 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
 - Rebuilt for Fedora
 * Mon May 28 2007 Silvan Calarco <silvan.calarco@mambasoft.it> 1.5-2mamba
 - rebuilt

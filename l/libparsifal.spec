@@ -43,7 +43,7 @@ install -c -m 755 \
 %{_bindir}/*
 %{_includedir}/%{name}
 %{_libdir}/lib*.a
-%{_libdir}/lib*.la
+#{_libdir}/lib*.la
 %{_libdir}/lib*.so
 
 %clean

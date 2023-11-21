@@ -27,6 +27,7 @@ rm -fv -- src/getopt*
 sed -i 's|0-1, 0-1|128, 128|g' mpegsound/huffmantable.cc
 
 %build
+export CFLAGS=${CFLAGS/-Werror=format-security/} CXXFLAGS=${CXXFLAGS/-Werror=format-security/}
 autoreconf -ifv
 %configure
 make --silent --no-print-directory

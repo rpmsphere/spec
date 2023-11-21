@@ -33,6 +33,8 @@ these own data types and operations on these data types by using overload.
 %prep
 %setup -q
 sed -i 's|fscanf(filepointer, np)|fscanf(filepointer, "%s", np)|' modules/stream_manager/src/cpp/FscanFunction.cpp
+sed -i '13i #include <cstdint>' modules/file_archiver/src/cpp/UnzipHelpers.hpp
+sed -i '58i #include <stdint.h>' modules/file_archiver/src/c/minizip/mz_os.h
 
 %build
 #cmake -G "Unix Makefiles" .

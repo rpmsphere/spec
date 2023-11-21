@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %{_libdir}/libXprintUtil.a
-%{_libdir}/libXprintUtil.la
+#{_libdir}/libXprintUtil.la
 %{_libdir}/libXprintUtil.so
 %{_includedir}/X11/XprintUtil/xprintutil.h
 %{_libdir}/pkgconfig/*.pc
@@ -55,9 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
 - Rebuilt for Fedora
-
 * Thu Mar 13 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.1-2mamba
 - ... add a changelog entry
-
 * Thu Dec 21 2006 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.1-1qilnx
 - package created by autospec

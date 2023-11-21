@@ -1,27 +1,29 @@
 %undefine _debugsource_packages
 
 Summary: A new Unix shell
-Name: oil
-Version: 0.9.9
+Name: oils
+Version: 0.18.0
 Release: 1
 License: Apache
 Group: Development/Language
 URL: https://www.oilshell.org/
-Source0: https://www.oilshell.org/download/%{name}-%{version}.tar.gz
+Source0: https://www.oilshell.org/download/oils-for-unix-%{version}.tar.gz
 
 %description
 Oil is our upgrade path from bash to a better language and runtime.
 It's also for Python and JavaScript users who avoid shell!
 
 %prep
-%setup -q
+%setup -q -n oils-for-unix-%{version}
 
 %build
 ./configure --prefix=/usr
-make
+_build/oils.sh
 
 %install
-%make_install
+install -Dm755 _bin/cxx-opt-sh/oils-for-unix %{buildroot}%{_bindir}/osh
+ln -s osh %{buildroot}%{_bindir}/ysh
+install -Dm644 doc/osh.1 %{buildroot}%{_mandir}/man1/osh.1
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
@@ -32,5 +34,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_mandir}/man1/*
 
 %changelog
-* Sun Apr 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.9
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18.0
 - Rebuilt for Fedora

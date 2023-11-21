@@ -47,7 +47,6 @@ Videoporama supports the following options:
 
 %prep
 %setup -qn %{oname}_%{version}
-
 # Remove all the useless exec bits from help, icons, iconstr, locale and luma directories
 # and also from the main dir
 chmod -x help/images/*.png
@@ -58,6 +57,7 @@ chmod -x iconstr/*.png
 chmod -x locale/*.qm
 chmod -x luma/*.png
 chmod -x *.py
+sed -i '80i py_modules=[],' setup.py
 
 %build
 python3 setup.py build

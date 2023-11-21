@@ -46,26 +46,21 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_includedir}/dvdplay
 %{_includedir}/dvdplay/*.h
 %{_libdir}/%{name}.a
-%{_libdir}/%{name}.la
+#{_libdir}/%{name}.la
 %{_libdir}/%{name}.so
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.1
 - Rebuilt for Fedora
-
 * Mon May 26 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.1-5mamba
 - rebuilt against libdvdread 4.1.2
-
 * Fri Apr 11 2008 Silvan Calarco <silvan.calarco@mambasoft.it> 1.0.1-4mamba
 - specfile updates
-
 * Wed Jun 29 2005 Davide Madrisan <davide.madrisan@qilinux.it> 1.0.1-3qilnx
 - fixed package group
 - use rpm macros for building/installing
-- own %{_includedir}/dvdplay
-
+- own %%{_includedir}/dvdplay
 * Fri Jun 10 2005 Alessandro Ramazzina <alessandro.ramazzina@qilinux.it> 1.0.1-2qilnx
 - rebuild and moved from devel-contrib repository to devel repository
-
 * Fri Jun 10 2005 Matteo Bernasconi <voyagernm@virgilio.it> 1.0.1-1qilnx
 - first build

@@ -27,9 +27,10 @@ around a genotype, and to align and compare organisms’ genomes).
 %prep
 %setup -q -n %{name}-%{version}-src
 sed -i '1i #include <cstdlib>' avida-core/source/tools/tArray.h
+sed -i '55i #include <pthread.h>' libs/tcmalloc-1.4/src/malloc_extension.cc
 
 %build
-export CXXFLAGS="-Wno-error -std=c++98"
+export CXXFLAGS="-Wno-error -std=c++98 -fPIE"
 cmake .
 make %{?_smp_mflags}
 

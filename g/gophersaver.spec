@@ -15,6 +15,7 @@ Gophersaver is screensaver programm with flying gophers in space.
 
 %prep
 %setup -q -n %{name}-master
+sed -i 's|-Werror ||' Makefile
 
 %build
 make

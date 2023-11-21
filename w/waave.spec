@@ -46,7 +46,7 @@ make install DESTDIR=%{buildroot}
 %files devel
 %{_includedir}/WAAVE.h
 %{_libdir}/lib*.a
-%{_libdir}/lib*.la
+#{_libdir}/lib*.la
 %{_libdir}/lib*.so
 
 %changelog

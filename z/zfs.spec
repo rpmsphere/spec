@@ -1,11 +1,11 @@
 Summary:         OpenZFS for Linux
 Group:           Utilities/System
 Name:            zfs
-Version:         2.1.12
+Version:         2.2.0
 Release:         1
 License:         CDDL
 URL:             https://zfsonlinux.org/
-Source:          https://archive.zfsonlinux.org/downloads/zfsonlinux/zfs/%{name}-%{version}.tar.gz
+Source:          https://github.com/openzfs/zfs/releases/download/zfs-%{version}/%{name}-%{version}.tar.gz
 BuildRequires:   zlib-devel
 BuildRequires:   e2fsprogs-devel
 BuildRequires:   libuuid-devel
@@ -86,6 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/zfs/*
 /etc/sudoers.d/zfs
 /etc/sysconfig/zfs
+/etc/bash_completion.d/zfs
 %{python3_sitelib}/*
 %{_libdir}/security/pam_zfs_key.so
 %{_datadir}/pam-configs/zfs_key
@@ -118,5 +119,5 @@ exit 0
 exit 0
 
 %changelog
-* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.12
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
 - Rebuilt for Fedora

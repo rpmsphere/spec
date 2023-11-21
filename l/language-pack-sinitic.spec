@@ -1,6 +1,6 @@
 Name: language-pack-sinitic
 Summary: Translations for some sinitic languages
-Version: 2023.5
+Version: 2023.9
 Release: 1
 License: Open Source
 Group: Translations
@@ -169,5 +169,5 @@ make
 rm -rf %{buildroot}
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2023.5
+* Sun Sep 24 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2023.9
 - Rebuilt for Fedora

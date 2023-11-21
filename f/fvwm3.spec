@@ -4,8 +4,8 @@
 %define         docname        %{name}-doc
 
 Name:           fvwm3
-Version:        1.0.4
-Release:        2
+Version:        1.0.8
+Release:        1
 Summary:        FVWM version 3, the successor to fvwm2 
 License:        GPLv2+
 Group:          Graphical desktop/Other
@@ -215,11 +215,11 @@ fi
 
 %files -n %{docname}
 %{_mandir}/man1/Fvwm*
-%{_mandir}/man1/fvwm-*
+%{_mandir}/man1/fvwm*
 #{_mandir}/man1/xpmroot*
 
 %changelog
-* Sun Oct 23 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.4
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
 - Rebuilt for Fedora
 * Thu Aug 26 2021 eatdirt <eatdirt> 1.0.4-2.mga9
 + Revision: 1742663

@@ -1,5 +1,6 @@
 #undefine _python_bytecompile_errors_terminate_build
 %global __python __python3
+%undefine _auto_set_build_flags
 
 Name:           numcosmo
 Version:        0.15.2
@@ -8,6 +9,7 @@ Summary:        Numerical Cosmology
 Group:          Productivity/Scientific/Physics
 License:        GPL-3.0
 URL:            https://github.com/NumCosmo/NumCosmo
+#Source0:	https://github.com/NumCosmo/NumCosmo/releases/download/v%{version}/numcosmo-%{version}.tar.gz
 Source0:        NumCosmo-master.zip
 BuildRequires:  gtk-doc atlas-devel
 BuildRequires:  gobject-introspection-devel glib2-devel gsl-devel gmp-devel mpfr-devel fftw3-devel sqlite-devel lapack-devel
@@ -52,10 +54,21 @@ developing applications that use %{name}.
 %prep
 %setup -q -n NumCosmo-master
 #patch0 -p1
+sed -i "863s|info|info,1,1,1,1|" numcosmo/math/ncm_lapack.c
+for l in 635 642; do
+  sed -i "${l}s|info|info,1,1,1|" numcosmo/math/ncm_lapack.c
+done
+for l in 676 683 769 811; do
+  sed -i "${l}s|info|info,1,1|" numcosmo/math/ncm_lapack.c
+done
+for l in 229 266 308 345 382 387 427 464; do
+  sed -i "${l}s|info|info,1|" numcosmo/math/ncm_lapack.c
+done
 
 %build
 ./autogen.sh --prefix=/usr --disable-static --enable-shared
-make %{?_smp_mflags}
+#configure
+%make_build
 
 %install
 make install DESTDIR=$RPM_BUILD_ROOT
@@ -83,7 +96,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gir-1.0/*
 
 %changelog
-* Wed Aug 26 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15.2
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15.2
 - Rebuilt for Fedora
 * Mon Oct 29 2012 sandro@isoftware.com.br
 - Added backward compat for older fftw.

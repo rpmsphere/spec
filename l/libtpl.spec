@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %{_includedir}/*.h
 %{_libdir}/lib*.a
-%{_libdir}/lib*.la
+#{_libdir}/lib*.la
 %{_libdir}/lib*.so
 
 %clean

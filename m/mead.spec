@@ -54,7 +54,7 @@ Header files and libraries for the package mead.
 
 %build
 %configure
-sed -i 's|-O2|-O2 -fPIC|' Makefile */Makefile */Makefile.common
+sed -i 's|-O2|-O2 -fPIC -fPIE|' Makefile */Makefile */Makefile.common */*/Makefile
 %{__make} %{?jobs:-j %jobs}
 
 %install

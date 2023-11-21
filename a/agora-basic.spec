@@ -24,8 +24,9 @@ still required.
 %ifarch aarch64
 cp -f /usr/lib/rpm/redhat/config.* .
 %endif
-CFLAGS="-Wall -g" ./configure --prefix=/usr --libdir=%{_libdir}
-%__make %{?_smp_mflags}
+./configure --prefix=/usr --libdir=%{_libdir}
+sed -i 's|-std=c99|-std=c99 -fPIE|' GNUmakefile
+%make_build
 
 %install
 rm -rf $RPM_BUILD_ROOT

@@ -29,7 +29,7 @@ Authors:
 %build
 rm -f config.cache
 autoreconf --force --install
-CXXFLAGS="$RPM_OPT_FLAGS" \
+sed -i 's|-Wall|-Wall -fPIE|' configure
 ./configure --prefix=/usr \
             --libdir=%{_libdir} \
 	    --libexecdir=%{_libdir} \

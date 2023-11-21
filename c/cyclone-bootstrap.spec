@@ -20,8 +20,10 @@ on a fresh system.
 %prep
 %setup -q
 sed -i -e 's|-Iinclude|-Iinclude -I/usr/include/ck|' -e 's|/local||' Makefile.config
+sed -i 's|FLAGS.*?=|FLAGS =|' Makefile.config
 
 %build
+#export CFLAGS+=" -Iinclude -I/usr/include/ck -fPIC "
 %make_build
 
 %install

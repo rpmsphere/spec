@@ -4,14 +4,14 @@
 %endif
 
 Name:           fricas
-Version:        1.3.8
+Version:        1.3.9
 Release:        1
 Summary:        An advanced computer algebra system
 License:        BSD-3-Clause
 Group:          Productivity/Scientific/Math
 URL:            https://%{name}.github.io/
 #Source0:        https://github.com/%{name}/%{name}/archive/%{version}.tar.gz
-Source0:	https://versaweb.dl.sourceforge.net/project/fricas/fricas/1.3.8/fricas-1.3.8-full.tar.bz2
+Source0:	https://versaweb.dl.sourceforge.net/project/fricas/fricas/%{version}/fricas-%{version}-full.tar.bz2
 BuildRequires:  ImageMagick
 BuildRequires:  autoconf
 BuildRequires:  automake
@@ -121,7 +121,7 @@ install -dm0755 %{buildroot}%{_defaultdocdir}/%{name}
 #%{_defaultdocdir}/%{name}/*.pdf
 
 %changelog
-* Sun Jun 19 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.8
+* Sun Nov 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.9
 - Rebuilt for Fedora
 * Mon Jul  5 2021 Anton Shvetz <shvetz.anton@gmail.com>
 - The xvfb-run program is required when building PDF documentation

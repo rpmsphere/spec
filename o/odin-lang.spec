@@ -21,6 +21,7 @@ sed -i 's|^GIT_SHA=.*|GIT_SHA=|' build_odin.sh
 rm `find . -name *.dll` `find . -name *.lib`
 
 %build
+export LLVM_CONFIG=/usr/bin/llvm-config-11
 make
 
 %install

@@ -17,6 +17,7 @@ training some of the alignment models.
 
 %prep
 %setup -q -n giza-pp
+sed -i 's|hash_map unordered_map|hash_map std::tr1::unordered_map|' GIZA++-v2/mystl.h
 
 %build
 export CC=clang CXX=clang++

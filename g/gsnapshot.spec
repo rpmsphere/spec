@@ -20,11 +20,12 @@ a window or a region, with a simple user interface.
 
 %setup -q
 %__cp -f %{SOURCE1} src/common/language.c
-sed -i -e 's/-lwnck/-lwnck-1/' -e 's/LIBS = /LIBS = -lX11 -lm -lgmodule-2.0 /' -e 's/-D__USE_GNU/-D__USE_GNU -fPIC/' src/*/Makefile.am
+sed -i -e 's|-lwnck|-lwnck-1|' -e 's|LIBS = |LIBS = -lX11 -lm -lgmodule-2.0 |' -e 's|-D__USE_GNU|-D__USE_GNU -fPIC -I/usr/include/libxml2|' src/*/Makefile.am
 
 %build
+export CFLAGS=${CFLAGS/-Werror=format-security/}
 ./autogen.sh
-CFLAGS='-I/usr/include/libxml2' ./configure --prefix=/usr
+./configure --prefix=/usr
 %{__make}
 
 %install

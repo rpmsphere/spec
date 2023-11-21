@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name: uemacs
 Summary: Full screen editor based on MicroEMACS
 Version: 4.0.15

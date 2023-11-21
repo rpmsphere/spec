@@ -1,6 +1,6 @@
 Name:           gummiboot
-Version:        45
-Release:        10.1
+Version:        48
+Release:        1
 Summary:        Simple EFI Boot Manager
 Group:          System/Boot and Init
 License:        LGPLv2+
@@ -55,7 +55,7 @@ sed -i -e 's|-mno-sse||' -e 's|-mno-mmx||' Makefile
 /usr/lib/gummiboot
 
 %changelog
-* Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 45
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 48
 - Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 45-3.mga5
 + Revision: 743578

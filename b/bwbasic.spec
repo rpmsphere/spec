@@ -27,7 +27,8 @@ seeks to be as portable as possible.
 cp /usr/share/automake-1.??/install-sh .
 autoconf
 sh configure
-make %{?jobs:-j%jobs}
+sed -i 's|-g -ansi|-g -ansi -fPIE|' Makefile
+%make_build
 
 %install
 rm -rf $RPM_BUILD_ROOT

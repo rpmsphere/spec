@@ -1,3 +1,4 @@
+%undefine _auto_set_build_flags
 %define _name nit
 
 Summary: Nit programming language

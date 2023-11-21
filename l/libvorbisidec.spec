@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %{_prefix}/include/tremor/*.h
 %{_libdir}/*.a
-%{_libdir}/*.la
+#{_libdir}/*.la
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
 

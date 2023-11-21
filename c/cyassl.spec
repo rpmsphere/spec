@@ -49,7 +49,7 @@ rm -rf %{buildroot}
 %{_includedir}/cyassl
 %{_libdir}/pkgconfig/*
 %{_libdir}/lib*.so
-%{_libdir}/lib*.*a
+#{_libdir}/lib*.*a
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.0

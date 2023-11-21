@@ -33,9 +33,10 @@ export UIC=%{_libdir}/qt-3.3/bin/uic
 		--datadir=%{_datadir} \
 		--with-qt-dir=%{_libdir}/qt-3.3
 # Fix the error of installation path
-sed -i 's/$(prefix)\/games/$(prefix)\/bin/g' src/Makefile
-sed -i 's/$(prefix)\/games/$(prefix)\/bin/g' src/Makefile.in
-sed -i 's/$(prefix)\/games/$(prefix)\/bin/g' src/Makefile.am
+sed -i 's/$(prefix)\/games/$(prefix)\/bin/g' src/Makefile*
+#sed -i 's/$(prefix)\/games/$(prefix)\/bin/g' src/Makefile.in
+#sed -i 's/$(prefix)\/games/$(prefix)\/bin/g' src/Makefile.am
+sed -i 's|-Werror=format-security||' `find . -name Makefile`
 %__make %{?_smp_mflags}
 
 %install

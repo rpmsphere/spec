@@ -1,3 +1,5 @@
+%global __brp_remove_la_files %{nil}
+
 Name:           libosso
 URL:            https://maemo.org/
 License:        LGPL v2.1 only; LGPL v2.1 or later
@@ -72,7 +74,7 @@ rm -rf %{buildroot}
 %files devel
 %{_includedir}/*.h
 %{_libdir}/libosso.a
-#{_libdir}/libosso.la
+%{_libdir}/libosso.la
 %{_libdir}/libosso.so
 %{_libdir}/pkgconfig/libosso.pc
 

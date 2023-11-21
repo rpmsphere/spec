@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name:           rfb
 BuildRequires:  gcc-c++ xclass-devel libX11-devel libXpm-devel imake libXtst-devel
 License:        GPL v2 or later

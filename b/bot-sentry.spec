@@ -34,12 +34,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS COPYING ChangeLog NEWS README README.mingw
-%{_libdir}/purple-2/*.la
+#{_libdir}/purple-2/*.la
 %{_libdir}/purple-2/*.so
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.0
 - Rebuilt for Fedora
-
 * Mon Aug 25 2008 Tiziana Ferro <tiziana.ferro@email.it> 1.3.0-1mamba
 - package created by autospec

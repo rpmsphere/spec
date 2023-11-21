@@ -5,8 +5,8 @@ Name: human-gnome-theme
 License: GPL
 Group: User Interface/Desktops
 Summary: Ubuntu Human theme
-Version: 0.39.2
-Release: 12.1
+Version: 0.39.3
+Release: 1
 Source0: https://launchpad.net/ubuntu/+archive/primary/+files/%{_name}_%{version}.tar.gz
 Source1: HumanLogin-index.theme
 URL: https://launchpad.net/human-theme
@@ -25,6 +25,7 @@ the Human look.
 
 %prep
 %setup -q -n %{_name}-%{version}
+sed -i '19i py_modules=[],' setup.py
 
 %build
 python3 setup.py build
@@ -49,5 +50,5 @@ mv %{buildroot}%{_datadir}/icons/HumanLoginIcons/apps/64/computer.png %{buildroo
 %{_datadir}/themes/*
 
 %changelog
-* Tue Sep 06 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.39.2
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.39.3
 - Rebuilt for Fedora

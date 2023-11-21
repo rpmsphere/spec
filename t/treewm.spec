@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%undefine _auto_set_build_flags
 
 Name: treewm
 Summary: Window Manager that arranges the windows in a tree

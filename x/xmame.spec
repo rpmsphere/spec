@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%undefine _auto_set_build_flags
 %define _with_modxorg 1
 %define _without_glide3 1
 %define _without_arts 1

@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           textadept
-Version:        12.1
+Version:        12.2
 Release:        1
 Summary:        A ridiculously fast and extensible text editor
 URL:            https://foicica.com/textadept/
@@ -70,7 +70,7 @@ install -D -m 0644 src/%{name}-gtk.desktop $RPM_BUILD_ROOT%{_datadir}/applicatio
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 12.1
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 12.2
 - Rebuilt for Fedora
 * Tue Jul 19 2011 dbuck@example.com
 - initial SuSE release with version 3.9

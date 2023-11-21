@@ -21,6 +21,7 @@ use to control or launch the corresponding application.
 
 %prep
 %setup -q -n PieDock-%{version}
+sed -i '14i #include <ctime>' src/WindowManager.cpp
 
 %build
 %configure

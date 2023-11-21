@@ -32,6 +32,7 @@ BuildRequires: anthy-devel
 BuildRequires: anthy
 BuildRequires: libxkbcommon-devel
 BuildRequires: wayland-devel
+BuildRequires: wayland-protocols-devel
 BuildRequires: libxklavier-devel
 BuildRequires: gtk-doc
 %if 0%{?fedora} || 0%{?is_opensuse}
@@ -83,7 +84,7 @@ This package contains development files.
 %setup -q -n nimf-master
 
 %build
-CFLAGS="-g -O2 -fPIE -fPIC -Wno-array-bounds -Wno-deprecated-declarations -Wno-incompatible-pointer-types"
+CFLAGS="-g -O2 -fPIE -fPIC -Wno-array-bounds -Wno-deprecated-declarations -Wno-incompatible-pointer-types -Wno-use-after-free"
 ./autogen.sh --prefix=/usr --libdir=%{_libdir} --enable-gtk-doc \
   --with-imsettings-data --disable-nimf-m17n --disable-nimf-rime
 make %{?_smp_mflags}

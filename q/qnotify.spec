@@ -77,56 +77,42 @@ rm -rf $RPM_BUILD_ROOT
 
 %files libs
 %_libdir/lib*.so*
-%_libdir/lib*.la
+#_libdir/lib*.la
 %_includedir/*
 
 %changelog
 * Wed Sep 28 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
 - Rebuilt for Fedora
-
 * Mon Jun  6 2011 aj@suse.de
 - Fix build with newer glibc.
-
 * Wed Oct 15 2008 crrodriguez@suse.de
 - fix build
-
 * Wed Jun 18 2008 schwab@suse.de
 - Use autoreconf.
-
 * Thu May  8 2008 aj@suse.de
 - Fix missing return values.
-
 * Mon Feb  4 2008 hmacht@suse.de
 - version 0.6:
   - Remove qnotifyd and implement functionality with local file
   - remove fix-includes.patch
-
 * Thu Dec 27 2007 crrodriguez@suse.de
 - fix library-without-ldconfig-* errors
-
 * Tue Oct 23 2007 hmacht@suse.de
 - add qnotify-fix-inlcudes.patch to fix errors due to gcc4.3
-
 * Thu Aug 24 2006 cthiel@suse.de
 - fix build
-
 * Mon Jan 30 2006 hmacht@suse.de
 - split package in library and separate command line tool
-
 * Wed Jan 25 2006 mls@suse.de
 - converted neededforbuild to BuildRequires
-
 * Sun Oct  9 2005 hmacht@suse.de
 - new version
 - fix novell bug 119010
 - fix compiler errors
 - applied indent
-
 * Sat Jul 23 2005 hmacht@suse.de
 - update to new version --> removed patch
-
 * Fri Apr 22 2005 ro@suse.de
 - include errno where needed
-
 * Wed Mar  9 2005 hmacht@suse.de
 - initial checkin

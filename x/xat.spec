@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Summary: 	X Address Translation
 Name:		xat
 Version: 	0.1.0

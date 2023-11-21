@@ -1,7 +1,8 @@
 Name:           sagan
-Version:        1.0.0
-Release:        6.1
-Source:         %{name}-%{name}-%{version}.tar.gz 
+Version:        2.0.2
+Release:        1
+#Source:         %{name}-%{name}-%{version}.tar.gz 
+Source:		%{name}-v-2-0.2.tar.gz
 License:        GPLv2
 Group:          System/Daemons
 Summary:        Real time system and event log monitoring system
@@ -10,6 +11,8 @@ BuildRequires:  pcre-devel
 BuildRequires:  postgresql-devel
 BuildRequires:  libesmtp-devel
 BuildRequires:  json-c-devel
+BuildRequires:  libfastjson-devel
+BuildRequires:  liblognorm-devel
 
 %description
 Sagan is a multi-threaded, real time system and event log monitoring system,
@@ -20,14 +23,18 @@ a "bad thing" happening, that event can be stored to a Snort database
 Snort Intrusion Detection/Intrusion Prevention (IDS/IPS) system.
 
 %prep
-%setup -q -n %{name}-%{name}-%{version}
+%setup -q -n %{name}-v-2-0.2
+sed -i '59i #include <inttypes.h>' src/config-yaml.c
+sed -i '36i #include <inttypes.h>' src/tracking-syslog.c
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
+./autogen.sh
 %ifarch %ix86
 sed -i 's|\(sse.*\)=yes|\1=no|' configure
 %endif
-%configure --disable-mysql --disable-prelude --disable-lognorm --disable-libpcap --disable-libdnet
+%configure --disable-mysql --disable-prelude --disable-libpcap --disable-libdnet --enable-lognorm
+sed -i 's|-I/usr/include/libfastjson|-I/usr/include/libfastjson -I/usr/include/liblognorm|' `find . -name Makefile`
 %{__make} %{?_smp_flags}
 
 %install
@@ -46,12 +53,12 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %files
 %doc TODO COPYING 
 %{_bindir}/sagan
-%{_sbindir}/sagan
-%config %{_sysconfdir}/sagan.conf
+#{_sbindir}/sagan
+%config %{_sysconfdir}/sagan.yaml
 %{_datadir}/man/man?/sagan.*
 
 %changelog
-* Mon Oct 26 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.2
 - Rebuilt for Fedora
 * Mon Jun 28 2010 Matthias Weckbecker <mweckbecker@suse.de>
 - add sagan user && group

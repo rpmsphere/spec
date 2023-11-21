@@ -21,9 +21,10 @@ drawn over all previous habaks.
 
 %prep
 %setup -q
-sed -i 's|-lm|-lX11 -lm -Wl,--allow-multiple-definition|' src/Makefile
+sed -i 's|-lm|-lm -Wl,--allow-multiple-definition -lX11|' src/Makefile
 
 %build
+export LDFLAGS=${LDFLAGS/-Wl,--as-needed/}
 make
 
 %install

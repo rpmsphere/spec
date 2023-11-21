@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(sdl)
 BuildRequires:	pkgconfig(vorbis)
 BuildRequires:	pkgconfig(zlib)
+Requires: mpg123
 
 %description
 Paintown is a 2D engine for fighting games.
@@ -54,6 +55,7 @@ Features
 find data/ -type f -exec chmod 0644 {} \;
 sed -i 's|-Wall|-Wall -fPIC -std=gnu++11|' CMakeLists.txt
 sed -i '/TestForPythonEmbed/d' src/paintown-engine/script/CMakeLists.txt
+sed -i '/error << /d' src/util/music-player.cpp
 
 %build
 LIBSUFFIX=$(echo "%{_lib}" | sed 's|^lib||')

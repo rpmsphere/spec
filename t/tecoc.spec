@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%undefine _auto_set_build_flags
 
 Name:           tecoc
 URL:            https://almy.us/teco.html

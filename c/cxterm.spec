@@ -52,7 +52,7 @@ Fonts used by cxterm
 %setup -q
 
 %build
-CFLAGS="-Wall -O3" ./configure --prefix=/usr --mandir=/usr/share/man
+CFLAGS="-Wall -O3 -fPIE" ./configure --prefix=/usr --mandir=/usr/share/man
 make
 
 %install

@@ -1,13 +1,14 @@
 %undefine _debugsource_packages
 
 Name:           azpainter
-Version:        2.1.7b2
+Version:        3.0.7
 Release:        1
 Summary:        Painting software
 License:        GPL3.0+
 Group:          Productivity/Graphics/Other
 URL:            https://osdn.net/projects/azpainter
-Source:         https://osdn.net/projects/azpainter/downloads/71988/%{name}-%{version}.tar.xz
+#Source:         https://osdn.net/projects/azpainter/downloads/71988/%{name}-%{version}.tar.xz
+Source0:	https://gitlab.com/azelpg/azpainter/-/archive/v%{version}/azpainter-v%{version}.tar.gz
 BuildRequires:  automake
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig
@@ -25,16 +26,21 @@ Full color painting software for Linux for illustration drawing.
 This is not suitable for dot editing.
 
 %prep
-%setup -q
+%setup -q -n %{name}-v%{version}
 
 %build
 export CFLAGS="%{optflags} -fno-strict-aliasing"
 #autoreconf -fiv
 ./configure --prefix=/usr
-make %{?_smp_mflags}
+#make %{?_smp_mflags}
+cd build
+ninja
 
 %install
-%make_install
+#make_install
+cd build
+%ninja_install
+cp ../AUTHORS ../ChangeLog %{buildroot}%{_docdir}/%{name}
 
 %post
 %{_bindir}/update-desktop-database --quiet "%{_datadir}/applications" || :
@@ -45,14 +51,14 @@ make %{?_smp_mflags}
 %{_bindir}/update-mime-database -n "%{_datadir}/mime" || :
 
 %files
-%doc AUTHORS ChangeLog README README_ja
+%{_docdir}/%{name}
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
-%{_datadir}/%{name}
+%{_datadir}/%{name}3
 %{_datadir}/icons/hicolor/*/apps/*%{name}*.??g
 %{_datadir}/mime/packages/%{name}.xml
-%license GPL3
+#license GPL3
 
 %changelog
-* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.7b2
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.7
 - Rebuilt for Fedora

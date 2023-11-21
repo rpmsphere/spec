@@ -1,4 +1,4 @@
-%define __python /usr/bin/python3
+%define __python /usr/bin/python3.10
 
 Name:           python-natgrid
 Version:        1.0.dev8853
@@ -8,7 +8,7 @@ License:        NCL Source Code License
 URL:            https://sourceforge.net/projects/matplotlib
 Group:          Development/Libraries/Python
 Source0:        natgrid-8853.tar.bz2
-BuildRequires:  python3-devel
+BuildRequires:  python3.10-devel
 
 %description
 Python interface to NCAR natgrid library
@@ -19,14 +19,14 @@ When installed, will be used by the matplotlib.mlab griddata function.
 %setup -q -n natgrid
 
 %build
-python3 setup.py build
+python3.10 setup.py build
 
 %install
-python3 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
+python3.10 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
 %files
 %doc Copyright.txt README
-%{python3_sitearch}/*
+%{_libdir}/python3.*/site-packages/*
 
 %changelog
 * Mon Dec 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0

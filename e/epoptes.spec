@@ -1,5 +1,5 @@
 Name:           epoptes
-Version:        23.01
+Version:        23.08
 Release:        1
 License:        GPL-2.0+
 Summary:        Computer lab management tool
@@ -70,8 +70,8 @@ done
 python3 setup.py install --root=%{buildroot} --prefix=%{_prefix}
 find %{buildroot} \( -name \*.a -o -name \*.la -o -name \*.orig \) -print0 | xargs -0 rm -f
 mkdir -p %{buildroot}%{_sysconfdir}/default
-%__install -m 644 ./debian/epoptes.default %{buildroot}%{_sysconfdir}/default/epoptes
-%__install -m 644 ./debian/epoptes-client.default %{buildroot}%{_sysconfdir}/default/epoptes-client
+#__install -m 644 ./debian/epoptes.default %{buildroot}%{_sysconfdir}/default/epoptes
+#__install -m 644 ./debian/epoptes-client.default %{buildroot}%{_sysconfdir}/default/epoptes-client
 mkdir -p %{buildroot}%{_unitdir}
 %__install -m 644 %{SOURCE2} %{buildroot}%{_unitdir}
 %__install -m 644 %{SOURCE3} %{buildroot}%{_unitdir}
@@ -121,7 +121,7 @@ systemctl disable epoptes-server.service
 systemctl disable epoptes-client.service
 
 %files -f epoptes.lang
-%config(noreplace) %{_sysconfdir}/default/epoptes
+#config(noreplace) %{_sysconfdir}/default/epoptes
 %{_unitdir}/epoptes-server.service
 %{_sbindir}/rcepoptes-server
 %{_bindir}/epoptes
@@ -135,7 +135,7 @@ systemctl disable epoptes-client.service
 %{_mandir}/man1/epoptes.1.*
 
 %files client
-%config(noreplace) %{_sysconfdir}/default/epoptes-client
+#config(noreplace) %{_sysconfdir}/default/epoptes-client
 %{_sysconfdir}/xdg/autostart/epoptes-client.desktop
 %{_unitdir}/epoptes-client.service
 %{_sbindir}/rcepoptes-client
@@ -145,7 +145,7 @@ systemctl disable epoptes-client.service
 %{_mandir}/man8/epoptes-client.8.*
 
 %changelog
-* Sun Jun 11 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 23.01
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 23.08
 - Rebuilt for Fedora
 * Wed Feb 24 2016 cyberorg@opensuse.org
 - update to 0.5.9_bzr0.509

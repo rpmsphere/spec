@@ -4,7 +4,7 @@ Name: jot
 Version: 11.1
 Release: 5.1
 Source: %{name}-%{version}.tar
-Patch: %name-urandom.patch
+Patch0: %name-urandom.patch
 URL: https://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/jot
 Summary: A simple tool that prints random or sequential data
 Summary(ru_RU.UTF-8): Выводит данные по возрастанию, убыванию по одному элементу на строку
@@ -22,11 +22,12 @@ Athena jot (или просто jot) выводит данные, обычно �
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 sed -i -e 's|strlcpy|strncpy|' -e 's|strlcat|strncat|' jot.c
 
 %build
-cc -D'__FBSDID(x)=' -D'arc4random()=random()' -O2 %name.c -o %name
+#cc -D'__FBSDID(x)=' -D'arc4random()=random()' -O2 %name.c -o %name
+cc -D'__FBSDID(x)=' -O2 %name.c -o %name
 
 %install
 mkdir -p %buildroot%_bindir %buildroot%_mandir/man1

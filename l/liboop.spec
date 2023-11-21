@@ -70,7 +70,7 @@ rm -rf %{buildroot}
 %{_includedir}/*.h
 %{_libdir}/*.so
 #{_libdir}/*.a
-%{_libdir}/*.la
+#{_libdir}/*.la
 %{_libdir}/pkgconfig/*.pc
 
 %changelog

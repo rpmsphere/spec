@@ -1,11 +1,10 @@
 %undefine _debugsource_packages
 
 Name:               qomodoro
-Version:            0.0.99+0.1rc1
-%define pkg_version 0.1-rc1
+Version:            0.1
 Release:            7.4
 Summary:            Cross-Platform Pomodoro Timer
-Source:             https://prdownloads.sourceforge.net/qomodoro/qomodoro-%{pkg_version}-src.tar.bz2
+Source:             https://prdownloads.sourceforge.net/qomodoro/qomodoro-%{version}-src.tar.bz2
 Source1:            qomodoro.desktop
 Source2:            qomodoro.png
 URL:                https://sourceforge.net/p/qomodoro/home/
@@ -34,7 +33,7 @@ Features:
 * "Online'. (Unix only)
 
 %prep
-%setup -q -n "qomodoro-%{pkg_version}"
+%setup -q
 
 %build
 qmake-qt4 QT_CXXFLAGS="%{optflags}"
@@ -56,7 +55,7 @@ qmake-qt4 QT_CXXFLAGS="%{optflags}"
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.99+0.1rc1
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
 - Rebuilt for Fedora
 * Fri Dec 17 2010 pascal.bleser@opensuse.org
 - update to 1.0rc1:

@@ -15,11 +15,11 @@ It is written in Rust and it is somewhat experimental.
 
 %prep
 %autosetup
-#sed -i 's|ropey = "1.4.1"|ropey = "1.5.0"|' zee/Cargo.toml zee-edit/Cargo.toml
+sed -i 's|ropey = "1.4.1"|ropey = "1.5.0"|' zee/Cargo.toml zee-edit/Cargo.toml
 sed -i 's|tree-sitter = "0.20.6"|tree-sitter = "0.20.10"|' */Cargo.toml
 
 %build
-cargo build --release --offline
+cargo build --release #--offline
 
 %install
 install -Dm755 target/release/zee %{buildroot}%{_bindir}/%{name}

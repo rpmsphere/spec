@@ -1,3 +1,4 @@
+%undefine _auto_set_build_flags
 Summary:	An easy to use text editor
 Name:		aee
 Version:	2.2.15b

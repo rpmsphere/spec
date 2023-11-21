@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Summary: Semi Batched Image Editor
 Name: sebie
 Version: 0.9.2

@@ -37,6 +37,7 @@ export PYTHON_PATH=/usr/bin/python2
 ./autogen.sh
 ./configure --prefix=/usr --libdir=%{_libdir}
 sed -i 's|-lcairo|-lcairo -lX11|' src/Makefile
+sed -i 's|-pthread|-pthread -fPIE|' examples/menu/Makefile
 make || make -C src libmbfly.la
 make
 

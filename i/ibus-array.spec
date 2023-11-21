@@ -21,7 +21,8 @@ The Array30 engine for IBus to input Hanzi.
 %setup -q -n %{name}-master
 
 %build
-autoreconf -ifv
+#autoreconf -ifv
+sed -i 's|-g -O0|$CFLAGS|' autogen.sh
 ./autogen.sh --prefix=/usr
 make %{?_smp_mflags}
 

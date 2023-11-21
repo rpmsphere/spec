@@ -1,3 +1,6 @@
+%global __spec_install_post %{nil}
+%undefine _debugsource_packages
+
 Summary: 3D Viewer for LDraw models
 Name: ldview
 Group: Amesements
@@ -9,7 +12,6 @@ Source0: LDView-4.2beta1.zip
 Source1: FD_ZERO64.h
 Source2: lib3ds-20080909.zip
 BuildRequires: qt4-devel, boost-devel, mesa-libOSMesa-devel, gcc-c++, libpng-devel, tinyxml-devel, libjpeg-turbo-devel
-BuildRequires: llvm-devel
 
 %description
 LDView is a real-time 3D viewer for displaying LDraw models using hardware-
@@ -32,6 +34,7 @@ sed -i '1i #include <string.h>\n#include <stdlib.h>' TCFoundation/TCArray.h
 sed -i '1i #include <unistd.h>' TCFoundation/mystring.cpp
 sed -i 's|TIME_UTC|TIME_UTC_|' LDLib/LDLibraryUpdater.cpp TCFoundation/TCWebClient.cpp TRE/TREMainModel.cpp
 sed -i '212,213d' TRE/TREGLExtensions.cpp
+sed -i '3i #include <ctime>' TCFoundation/TCWebClient.cpp
 
 unzip %{SOURCE2}
 cd lib3ds-20080909

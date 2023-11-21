@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Summary:	Compilation controller
 Name:		ccontrol
 Version:	1.0
@@ -8,6 +10,7 @@ Source0:	https://ccontrol.ozlabs.org/releases/%{name}-%{version}.tar.bz2
 URL:		https://ccontrol.ozlabs.org/
 BuildRequires: xmlto, asciidoc, valgrind
 BuildRequires: ghostscript-core, netpbm
+Source1:	Makefile-%{name}-%{version}
 
 %description
 The ccontrol program takes over the roles of the compiler, linker and make,
@@ -20,15 +23,17 @@ and which compiler versions to use, based on the directory and make targets.
 %setup -q
 
 %build
-./configure --bindir=%{_bindir} \
-   --libdir=%{_libdir}/ccontrol \
-   --mandir=%{_mandir} \
-   --xmlto=/usr/bin/xmlto \
-   --asciidoc=/usr/bin/asciidoc \
-   --enable-debug \
-   --disable-dietlibc \
-   --disable-valgrind
-
+#./configure \
+#   --bindir=%{_bindir} \
+#   --libdir=%{_libdir}/ccontrol \
+#   --mandir=%{_mandir} \
+#   --xmlto=/usr/bin/xmlto \
+#   --asciidoc=/usr/bin/asciidoc \
+#   --enable-debug \
+#   --disable-dietlibc \
+#   --disable-valgrind
+cp %{SOURCE1} Makefile
+touch config.status Makefile.in configure Makefile
 %{__make}
 
 %install

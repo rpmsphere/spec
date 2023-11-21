@@ -7,7 +7,7 @@ License: GPL
 URL: https://github.com/tmiw/kite-llvm
 #Source0: https://www.kite-language.org/files/%{name}-%{version}.tar.gz
 Source0: https://github.com/tmiw/kite-llvm/archive/refs/heads/master.zip#/%{name}-master.zip
-BuildRequires: llvm-devel, libgc-devel, boost-devel, openssl-devel, libffi-devel
+BuildRequires: llvm8.0-devel, libgc-devel, boost-devel, openssl-devel, libffi-devel
 Obsoletes: kite <= 1.0.4
 
 %description

@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name: icnc
 Version: 1.2.300
 Release: 3.1
@@ -27,7 +29,7 @@ developing applications that use %name.
 %setup -q
 
 %build
-export CC=clang CXX=clang++
+export CC=clang CXX=clang++ CXXFLAGS=-std=gnu++14
 %cmake -DLIB=%_libdir
 %cmake_build
 

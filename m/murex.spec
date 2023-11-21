@@ -1,8 +1,9 @@
 %undefine _debugsource_packages
+%undefine _missing_build_ids_terminate_build
 
 Summary: Bash-like shell and scripting environment
 Name: murex
-Version: 2.6.0520
+Version: 5.0.9310
 Release: 1
 License: GPL-2
 Group: Development/Language
@@ -36,5 +37,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/%{name}
 
 %changelog
-* Sun Apr 24 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.0520
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.9310
 - Rebuilt for Fedora

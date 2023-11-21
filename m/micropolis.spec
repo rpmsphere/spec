@@ -58,6 +58,7 @@ perl -pi -e 's,-DNO_AIRCRASH,,' src/sim/makefile src/makefile
 perl -pi -e 's,-Werror=format-security,-Wno-error,' src/sim/makefile src/makefile
 
 %build
+export CFLAGS=${CFLAGS/-Werror=format-security/}
 make -C src
 
 %install

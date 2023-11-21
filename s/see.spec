@@ -62,10 +62,10 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %{_includedir}/*
 %{_libdir}/lib*.a
-%{_libdir}/lib*.la
+#{_libdir}/lib*.la
 %{_libdir}/lib*.so
 %{_libdir}/see/lib*.a
-%{_libdir}/see/lib*.la
+#{_libdir}/see/lib*.la
 %{_libdir}/see/lib*.so
 %{_libdir}/pkgconfig/*
 

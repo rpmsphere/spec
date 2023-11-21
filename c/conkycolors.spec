@@ -15,7 +15,7 @@ This conky script by helmuthdu supports multilanguages.
 %setup -q -n conky_colors
 
 %build
-sed -i 's|-Wall|-Wall -Wl,--allow-multiple-definition|' Makefile
+sed -i 's|-Wall|-Wall -Wl,--allow-multiple-definition -fPIE|' Makefile
 make
 
 %install

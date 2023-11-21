@@ -1,3 +1,4 @@
+%undefine _auto_set_build_flags
 %undefine _debugsource_packages
 
 Name:           libphash
@@ -34,7 +35,7 @@ developing applications that use %{name}.
 
 %build
 autoreconf -ifv
-
+#export CFLAGS="-g -O2 -pipe -Wall -fPIC -fPIE" CXXFLAGS="$CFLAGS"
 ./configure --prefix=/usr --disable-static --enable-video-hash=no --enable-audio-hash=no --libdir=%{_libdir}
 make %{?_smp_mflags}
 

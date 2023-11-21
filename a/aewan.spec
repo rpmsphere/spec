@@ -38,7 +38,8 @@ console.
 
 %build
 %configure
-%__make %{?jobs:-j%{jobs}}
+sed -i 's|-Werror=format-security||' Makefile
+%make_build
 
 %install
 make DESTDIR=$RPM_BUILD_ROOT install

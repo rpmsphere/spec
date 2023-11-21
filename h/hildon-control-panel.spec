@@ -15,12 +15,12 @@ Control panel to configure the Hildon Desktop.
 
 %prep
 %setup -q -n hildon-control-panel
-sed -i 's/1\.7/1.10/' autogen.sh
+sed -i 's/1\.7/1.16/' autogen.sh
 
 %build
 ./autogen.sh
 %configure --with-x --disable-maemo-tools
-%__make CFLAGS+=-Wno-error
+make CFLAGS+=-Wno-error
 
 %install
 %__rm -rf %{buildroot}

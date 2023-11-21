@@ -1,4 +1,6 @@
-BuildRequires:			kernel-devel
+%undefine _auto_set_build_flags
+
+BuildRequires:		kernel-devel
 Name:			setcd
 Version:		1.5
 Summary:		Control the behaviour of your cdrom device

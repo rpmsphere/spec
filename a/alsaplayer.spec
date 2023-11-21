@@ -31,7 +31,7 @@ BuildRequires: libvorbis-devel
 BuildRequires: xosd-devel
 BuildRequires: zlib-devel
 %{?with_audiofile:BuildRequires: audiofile-devel}
-%{?with_jack:BuildRequires: jack-audio-connection-kit-devel}
+%{?with_jack:BuildRequires: pipewire-jack-audio-connection-kit-devel}
 %{?with_mikmod:BuildRequires: mikmod-devel, libmikmod} 
 %{?with_nas:BuildRequires: nas-devel}
 %{?with_opengl:BuildRequires: mesa-libGL-devel}
@@ -132,7 +132,7 @@ EOF
 %doc AUTHORS ChangeLog COPYING INSTALL README TODO docs/reference/html
 %{_bindir}/%{name}
 %{_libdir}/%{name}
-%{_libdir}/libalsaplayer.la
+#{_libdir}/libalsaplayer.la
 %{_libdir}/libalsaplayer.so.*
 %{_mandir}/man1/%{name}.1*
 %{_datadir}/applications/*%{name}.desktop

@@ -2,7 +2,7 @@
 %global __spec_install_post %{nil}
 
 Name:           spectmorph
-Version:        0.6.0
+Version:        0.6.1
 Release:        1
 Summary:        Analyze samples of musical instruments and combine them
 Group:          Multimedia
@@ -51,5 +51,5 @@ make install DESTDIR=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1
 - Rebuilt for Fedora

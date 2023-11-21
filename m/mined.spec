@@ -1,5 +1,7 @@
+%undefine _auto_set_build_flags
+
 Name:           mined
-Version:        2015.25
+Version:        2022.27
 Release:        7
 Summary:        Powerful Text Editor with Extensive Unicode and CJK Support
 Summary(fr):    Puissant éditeur de texte avec Unicode Extensible et support de CJK
@@ -79,12 +81,12 @@ sed -i "s/mined.xpm/mined/" ./usrshare/setup_install/mined.desktop
 # Fix desktop-file-validate warning: semicolon missing for Categories key :
 sed -i s/Utility/Utility\;/ ./usrshare/setup_install/mined.desktop
 %patch0 -p0
-%patch1 -p0
+#patch1 -p0
 
 %build
-./configure
+#./configure
 # Optflag isn't applied by default :
-make OPT='%{optflags}' USRLIBDIR=%{_libdir} ROOTLIBDIR=/%{_lib} %{?_smp_mflags}
+make OPT='%{optflags} -fPIE' USRLIBDIR=%{_libdir} ROOTLIBDIR=/%{_lib} %{?_smp_mflags}
 
 %install
 make install DESTDIR=%{buildroot}
@@ -119,7 +121,7 @@ rm -fr %{buildroot}%{_datadir}/%{name}/{bin,setup_install,conf_user,package_doc,
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Thu Dec 17 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 2015.25
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.27
 - Rebuilt for Fedora
 * Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 2015.25-7
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild

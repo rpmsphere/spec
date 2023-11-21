@@ -3,7 +3,7 @@
 
 Summary: Telegram Desktop
 Name: telegram
-Version: 4.6.2
+Version: 4.11.7
 Release: 1.bin
 License: Freeware
 Group: Applications
@@ -34,7 +34,8 @@ Comment=%{summary}
 Exec=%{name}
 Icon=%{name}
 Type=Application
-Categories=Network;
+Categories=Network;Application;
+MimeType=x-scheme-handler/tg;
 EOF
 
 %__install -Dm 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
@@ -48,5 +49,5 @@ ln -s ../libexec/%{name}/%{_name} %{buildroot}%{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
-* Sun Feb 05 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 4.6.2
+* Tue Nov 14 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 4.11.7
 - Rebuilt for Fedora

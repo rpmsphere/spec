@@ -42,7 +42,7 @@ Header files and libraries for the package %{name}.
 %files devel
 %{_includedir}/*
 %{_libdir}/lib*.a
-%{_libdir}/lib*.la
+#{_libdir}/lib*.la
 %{_libdir}/lib*.so
 %{_libdir}/ghttpConf.sh
 

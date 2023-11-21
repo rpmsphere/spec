@@ -1,21 +1,27 @@
 Name:           kazam
-Version:        1.5.3
-Release:        1.1
+Version:        1.5.7
+Release:        1
 Summary:        A screencasting program created with design in mind
-License:        GPLv3+
+License:        GPLv3+ and LGPLv3+
 Group:          Video/Utilities
-URL:            https://launchpad.net/kazam
-Source0:        https://launchpad.net/kazam/unstable/%{version}/+download/%{name}-%{version}.tar.gz
-Patch0:         kazam-1.5.3-mga-desktop-drop-unity-and-keywords.patch
-Patch1:         kazam-1.5.3-configparser_api_changes_new.patch
-Patch2:         kazam-1.5.3-fix-some-PyGIWarning.patch
-Patch3:         kazam-1.5.3-perf_counter.patch
-Patch4:         kazam-1.5.3-fix-GtkIconSize-kazam-ui.patch
-Patch5:	kazam-1.5.3-fix-fail-to-detect-os.patch
+# https://launchpad.net/kazam
+URL:            https://github.com/henrywoo/kazam
+Source0:        https://github.com/henrywoo/kazam/archive/v%{version}/%{name}-%{version}.tar.gz
+#Patch1:         kazam-1.5.3-configparser_api_changes_new.patch
+#Patch4:         kazam-1.5.3-fix-GtkIconSize-kazam-ui.patch
 Patch6:         kazam-1.5.3-gtk-warning-parent-on-widget-with-parent.patch
+# Upstream
+#
+# Mageia
+Patch51:        0001-Desktop-file-drop-unity.patch
+Patch53:        0001-Do-not-use-hiq-python.patch
+Patch54:        0001-Build-desktop-application.patch
+
 BuildRequires:  intltool
 BuildRequires:  python3-distutils-extra
+BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
+BuildRequires:  desktop-file-utils
 Requires:       python3-cairo
 Requires:       python3-xlib
 Requires:       python3-dbus
@@ -37,21 +43,22 @@ Optionally you can record sound from any sound input device that is supported
 and visible by PulseAudio.
 
 %prep
-%setup -q
-%autopatch -p1
-sed -i s,"DISTRO='Ubuntu'","DISTRO='%{vendor}'",g kazam/version.py
-sed -i s,"RELEASE='.*'","RELEASE='%{product_version}'",g kazam/version.py
+%autosetup -p1
+sed -i s,"DISTRO = '.*'","DISTRO = '%{_vendor}'",g kazam/version.py
+sed -i s,"RELEASE = '.*'","RELEASE = '%{product_version}'",g kazam/version.py
 
 %build
-python3 setup.py build
+%py3_build
 
 %install
-python3 setup.py install --root=%{buildroot}
+%{__python3} setup.py install --root=%{buildroot}
+#%%py3_install
 
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS COPYING README
+%doc AUTHORS README.rst
+%license COPYING*
 %{_bindir}/%{name}
 %{_datadir}/%{name}/
 %{_datadir}/applications/%{name}.desktop
@@ -61,6 +68,8 @@ python3 setup.py install --root=%{buildroot}
 %{python3_sitelib}/%{name}-%{version}-py%{python3_version}.egg-info
 
 %changelog
+* Sun Oct 1 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.7
+- Rebuilt for Fedora after Sérgio Basto
 * Sat Aug 22 2020 Manuel Fombuena <fombuena@outlook.com> - 1.5.3-11.1
 - Rebuild version 1.5.3 for Python 3.8
 - Fix some more PyGIWarning

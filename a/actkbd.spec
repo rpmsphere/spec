@@ -18,6 +18,7 @@ simple setups, or assigned custom actions to rarely used keys.
 %prep
 %setup -q
 %patch0 -p1
+sed -i 's|-Wall|-fPIE|' Makefile
 
 %build
 %make_build

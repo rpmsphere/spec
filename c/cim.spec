@@ -19,7 +19,6 @@ quasi-parallel execution and a framework for doing simulations.
 %{_mandir}/man1/cim.1*
 %{_libdir}/libcim.so.*
 %{_libdir}/*.a
-%{_libdir}/*.la
 %{_libdir}/*.so
 %{_includedir}/cim.h
 %{_infodir}/cim.info.*

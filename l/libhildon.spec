@@ -53,7 +53,7 @@ autoreconf -ifv
 %files devel
 %{_includedir}/hildon-1
 %{_libdir}/libhildon-1.a
-%{_libdir}/libhildon-1.la
+#{_libdir}/libhildon-1.la
 %{_libdir}/libhildon-1.so
 %{_libdir}/pkgconfig/hildon-1.pc
 

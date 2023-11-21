@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name:           sisctrl
 BuildRequires:  libpng-devel
 BuildRequires:  libXxf86vm-devel, libXv-devel, gtk2-devel pkgconfig

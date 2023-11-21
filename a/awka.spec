@@ -5,7 +5,7 @@ Summary:       Translator of the AWK programming language to ANSI-C
 Group:         Applications/Text
 URL:           https://awka.sourceforge.net/
 Source:        https://awka.sourceforge.net/%{name}-%{version}.tar.gz
-Patch:         awka-%{version}-DESTDIR.patch
+Patch0:        awka-%{version}-DESTDIR.patch
 License:       GPL
 
 %description
@@ -19,10 +19,10 @@ must have an ANSI C compiler present on your system for Awka to work.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
-export CFLAGS="-O2 -g -pipe -Wall -Wno-format-security"
+export CFLAGS="-O2 -g -pipe -Wall -Wno-format-security -fPIE"
 ./configure --prefix=/usr
 make
 

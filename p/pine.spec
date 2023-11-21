@@ -1,3 +1,4 @@
+%undefine _auto_set_build_flags
 %define _default_patch_fuzz 2
 %define pgpver		0.18.0
 %define with_gpgpine	1

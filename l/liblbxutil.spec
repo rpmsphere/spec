@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %{_includedir}/X11/extensions/lbx*.h
 %{_libdir}/liblbxutil.a
-%{_libdir}/liblbxutil.la
+#{_libdir}/liblbxutil.la
 %{_libdir}/liblbxutil.so
 %{_libdir}/pkgconfig/*.pc
 

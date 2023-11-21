@@ -24,8 +24,8 @@ on anything that has a framebuffer without the need for a running X server.
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
-autoreconf -i
-libtoolize --force
+autoreconf -ifv
+#libtoolize --force
 %configure
 make
 

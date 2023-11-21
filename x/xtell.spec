@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name: xtell
 Version: 2.10.8
 Release: 1

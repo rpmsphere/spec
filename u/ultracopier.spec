@@ -16,6 +16,8 @@ Ultracopier is an advanced file copier with copy list management.
 
 %prep
 %setup -q -n %{name}-src
+sed -i '11i #include <cstdint>' lib/qt-tar-xz/QTarDecode.h cpp11addition.h
+sed -i '9i #include <cstring>' cpp11addition.cpp
 
 %build
 qmake-qt5

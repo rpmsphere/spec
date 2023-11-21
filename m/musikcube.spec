@@ -32,11 +32,12 @@ and streaming audio server that runs natively on Windows, macOS, and Linux.
 %prep
 %setup -q
 %patch0 -p 1
-sed -i '8i #include <memory>' src/plugins/mpris/mpris.h
+sed -i '8i #include <memory>\n#include <string>' src/plugins/mpris/mpris.h
+sed -i '41i #include <memory>' src/plugins/httpdatastream/LruDiskCache.h
 sed -i '/av_register_all()/d' src/plugins/stockencoders/FfmpegEncoder.cpp src/plugins/ffmpegdecoder/plugin.cpp
 
 %build
-%cmake -DCMAKE_C_FLAGS="%{optflags} -fpermissive -fPIC" -DCMAKE_CXX_FLAGS="%{optflags} -fpermissive -fPIC" .
+%cmake -DCMAKE_C_FLAGS="${CFLAGS/-Werror=format-security/} -fpermissive -fPIC" -DCMAKE_CXX_FLAGS="${CXXFLAGS/-Werror=format-security/} -fpermissive -fPIC" .
 %cmake_build
 
 %install

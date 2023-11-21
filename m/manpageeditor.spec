@@ -21,6 +21,7 @@ Create,edit,import,preview man-pages.
 cp -r ManPageEditor/resources/docs/gpl-3.0.txt gpl-3.0.txt
 
 %build
+export CXXFLAGS=${CXXFLAGS/-Werror=format-security/}
 ./configure --prefix=/usr --enable-aspell
 sed -i "s|update-mime-database /usr/share/mime||" Makefile
 sed -i "/gtk-update-icon-cache/d" Makefile %{oname}/app/Makefile

@@ -9,7 +9,7 @@ Source0:	%{name}-official-build01458.tar.gz
 Source1:	https://freenet.googlecode.com/files/freenet-ext.jar.29
 Source2:	https://www.bouncycastle.org/download/bcprov-jdk15on-150.jar
 URL:		https://freenetproject.org/
-BuildRequires:	java-openjdk-devel lua
+BuildRequires:	java-devel-openjdk lua
 BuildRequires:	xml-commons-apis
 BuildRequires:	ant
 #BuildRequires:	ant-junit
@@ -25,6 +25,7 @@ blocking or censorship! Then connect to your friends for even better security!
 cp %{SOURCE1} lib/freenet/freenet-ext.jar
 cp %{SOURCE2} lib/bcprov.jar
 sed -i 's|unit, ||' build-clean.xml
+sed -i 's|1\.6|1.7|g' build-clean.xml
 
 %build
 %ant

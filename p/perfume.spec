@@ -2,7 +2,7 @@
 
 Summary: A programming language
 Name: perfume
-Version: 1.8.0
+Version: 1.8.1
 Release: 1
 License: MIT
 Group: Development/Languages
@@ -41,5 +41,5 @@ rm -f %{buildroot}%{_bindir}/pmacs*
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.0
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.1
 - Rebuilt for Fedora

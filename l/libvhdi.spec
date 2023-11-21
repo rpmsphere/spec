@@ -61,7 +61,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %files devel
 %doc AUTHORS COPYING NEWS README ChangeLog
 %{_libdir}/*.a
-%{_libdir}/*.la
+#{_libdir}/*.la
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/libvhdi.pc
 %{_includedir}/*
@@ -76,7 +76,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %files python
 %doc AUTHORS COPYING NEWS README
 %{_libdir}/python*/site-packages/*.a
-%{_libdir}/python*/site-packages/*.la
+#{_libdir}/python*/site-packages/*.la
 %{_libdir}/python*/site-packages/*.so
 
 %changelog

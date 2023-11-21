@@ -106,7 +106,7 @@ perl -p -i -e "s|-Wall|-Wall -Wno-narrowing|g" plugins/libmpeg_audiodec/Makefile
 %ifarch %{arm}
 find . -name Makefile\* -exec grep -- "-g -O2" {} \; -exec perl -p -i -e "s|-g -O2|%{optflags}|g" {} \; -print
 %endif
-
+sed -i 's|-Werror=format-security||' `find . -name Makefile`
 make %{?_smp_mflags}
 
 %install
@@ -161,56 +161,44 @@ desktop-file-install --vendor "" \
 %{_libdir}/avifile*/*.a
 %{_libdir}/pkgconfig/*.pc
 %{_datadir}/aclocal/*
-%exclude %{_libdir}/avifile*/*.la
+#exclude %{_libdir}/avifile*/*.la
 
 %changelog
 * Thu Jan 29 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.48
 - Rebuild
-
 * Sat Sep 14 2013 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 0.7.48-1
 - add optflags for building on arm
-
 * Thu Jan 17 2013 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 0.7.48-1
 - use compat-ffmpeg-devel to build on > fc17
-
 * Mon Jun  4 2012 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 0.7.48-1
 - build for fc17, updated to 0.7.48, borrowed patches from the Debian 
   9.1 and 12 tarballs, added patch for AC_LANG_*
 - many fixes to the spec file, remove options for versions older than 12
-
 * Thu May 31 2012 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - add patch from debian for building with gcc-4.7 (patch7)
   https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=667107
   https://packages.ubuntu.com/quantal/libavifile-0.7c2
-
 * Tue May 31 2011 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - in >= fc15 the kernel no longer has the videodev.h include file, 
   add libv4l-devel dependency and fix include lines in all files
 - add patch to add undefined define (missing in new include file)
   this is just a mindless hack...
 - add patch for v4l2 includes
-
 * Tue Nov  9 2010 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - changed libjpeg-turbo-devel for fc14
-
 * Tue Nov 24 2009 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - added xorg-x11-proto-devel and libXi build requirements
 - fixed problems with const char * pointers and other small
   errors
-
 * Tue Nov 25 2008 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - updated for fc10 build
 - ommit vidix shared libraries under x86_64
-
 * Thu Jun 19 2008 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - updated qt3-devel build req for fc9
-
 * Wed Nov 14 2007 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - updated desktop categories
-
 * Tue Jun  5 2007 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 0.7.45-3
 - fix Makefile.am and include/Makefile.am for fc7 (patch3)
-
 * Tue Dec 26 2006 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 0.7.45-2
 - added template gcc41 patch from here (patch2):
   https://bugs.donarmstrong.com/cgi-bin/bugreport.cgi?bug=395386
@@ -219,21 +207,16 @@ desktop-file-install --vendor "" \
   with /usr/lib64 (the build system runs in a 64 bit machine) and 
   as a result sdl does not get recognized, fix by replacing it by
   hand (see perl hack above)
-
 * Tue Dec 12 2006 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 0.7.45-2
 - rebuild on fc6 (fails)
-
 * Wed Apr  5 2006 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 0.7.45-1
 - updated to 0.7.45
 - added patch for fc5/gcc4.1 (patch1)
-
 * Tue Jul  5 2005 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - added fc4/gcc4 patch
-
 * Thu Apr 14 2005 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 0.7.43-1
 - man pages are just man pages, not doc
 - add obsoletes for old avifile-utils
-
 * Sun Apr 10 2005 Fernando Lopez-Lezcano <nando@ccrma.stanford.edu> 
 - add missing buildrequires, do not build a package with lame or xvid
 - disable mmx to be able to build
@@ -242,18 +225,13 @@ desktop-file-install --vendor "" \
 - enable exclusion of .la files
 - needs ffmpeg-devel package in buildrequires
 - no .la files generated in /usr/lib/*.la
-
 * Sat Dec 20 2003 Dag Wieers <dag@wieers.com> - 0.7.38-0
 - Updated to release 0.7.38.
-
 * Sat Aug 23 2003 Dag Wieers <dag@wieers.com> - 0.7.34-1
 - Rebuild against xvidcore-0.9.2.
-
 * Sat Apr 05 2003 Dag Wieers <dag@wieers.com> - 0.7.34-0
 - Updated to release 0.7.34-20030319.
-
 * Wed Feb 19 2003 Dag Wieers <dag@wieers.com> - 0.7.26-1
 - Build against new lame-3.93.1-1 package.
-
 * Sun Jan 19 2003 Dag Wieers <dag@wieers.com> - 0.7.26-0
 - Initial package. (using DAR)

@@ -2,7 +2,7 @@
 %define up_name	DisplayCAL
 
 Name:		displaycal
-Version:	3.8.9.3
+Version:	3.9.11
 Release:	1
 Summary:	A graphical user interface for the Argyll CMS display calibration utilities
 Group: 		Graphics/Utilities
@@ -10,16 +10,16 @@ License:	GPLv3
 URL:		https://displaycal.net/
 Source0:	https://sourceforge.net/projects/dispcalgui/files/release/%{version}/%{up_name}-%{version}.tar.gz
 Patch0:		displaycal-3.5.1.0-udev-dir.patch
-BuildRequires:	python2-setuptools
+BuildRequires:	python3-setuptools
 #BuildRequires:	wxGTK
-BuildRequires:	pkgconfig(python2)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	pkgconfig(xxf86vm)
 BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	pkgconfig(xrandr)
 #Requires:	wxGTK
 Requires:	argyllcms
-Requires:	python2-setuptools
-Requires:	pygobject2
+Requires:	python3-setuptools
+Requires:	pygobject3
 Requires:	numpy
 Provides:	%{up_name} = %{version}-%{release}
 Provides:	dispcalGUI = %{version}-%{release}
@@ -36,29 +36,30 @@ color management system.
 %doc %{_docdir}/%{up_name}-%{version}/README*.html
 %doc %{_docdir}/%{up_name}-%{version}/screenshots
 %doc %{_docdir}/%{up_name}-%{version}/theme
-%{_udevrulesdir}/*-Argyll.rules
+#{_udevrulesdir}/*-Argyll.rules
 %{_bindir}/*
 %{_datadir}/%{up_name}/
 %{_datadir}/icons/hicolor/*/*
 %{_datadir}/applications/*.desktop
 %{_datadir}/metainfo/net.displaycal.%{up_name}.appdata.xml
 %{_sysconfdir}/xdg/autostart/z-displaycal-apply-profiles.desktop
-%{python2_sitearch}/%{up_name}/
-%{python2_sitearch}/%{up_name}-%{version}-py%{python2_version}.egg-info
+%{python3_sitearch}/%{up_name}/
+%{python3_sitearch}/%{up_name}-%{version}-py%{python3_version}.egg-info
 %{_mandir}/man1/*
 
 %prep
 %setup -q -n %{up_name}-%{version}
-%autopatch -p1
+#autopatch -p1
+touch misc/debian.rules
 
 %build
-%py2_build
+%py3_build
 
 %install
-%py2_install -- --no-compile --prefix=%{_prefix} --skip-postinstall
+%py3_install -- --no-compile --prefix=%{_prefix} --skip-postinstall
 
 %changelog
-* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.9.3
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.9.11
 - Rebuilt for Fedora
 * Mon Apr 30 2018 daviddavid <daviddavid> 3.5.3.0-1.mga7
   (not released yet)

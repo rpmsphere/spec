@@ -60,7 +60,7 @@ rm -rf "$RPM_BUILD_ROOT"
 
 %files devel
 %{_includedir}/*.h
-%{_libdir}/libjvm.la
+#{_libdir}/libjvm.la
 %{_libdir}/libjvm.so
 
 %changelog

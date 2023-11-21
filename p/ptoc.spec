@@ -15,6 +15,7 @@ of original code as far as possible.
 
 %prep
 %setup -q -n %{name}
+sed -i 's|-Wall|-Wall -fPIE|' makefile
 
 %build
 make

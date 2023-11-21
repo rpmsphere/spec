@@ -18,6 +18,7 @@ learning curve as possible.
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
+export CFLAGS=${CFLAGS/-Werror=format-security/}
 make %{?_smp_mflags} DESTDIR=
 
 %install

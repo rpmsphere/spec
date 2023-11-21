@@ -20,8 +20,8 @@ to (dos-)floppies under linux / UNIX. It uses mtools and has a nice GUI.
 %setup -q -n %{_name}-%{version}
 
 %build
-autoreconf -ifv
-
+export CPPFLAGS="-fPIE -I/usr/lib64/glib/include -I/usr/include/glib-1.2 -I/usr/include/gtk-1.2"
+#autoreconf -ifv
 ./configure --prefix=/usr
 make
 

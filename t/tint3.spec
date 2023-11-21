@@ -32,9 +32,7 @@ make it safer against crashes, and have it use XCB instead of Xlib.
 %setup -q -n %{name}-master
 sed -i -e 's|X11 Xcomposite|Xcomposite|' -e 's|Xrandr>=1.3|Xrandr|' CMakeLists.txt
 sed -i '112,115d' src/theme_manager.cc
-%ifarch aarch64
 sed -i 's|SIGSTKSZ|8192|' external_includes/catch.hpp
-%endif
 
 %build
 %cmake -DCMAKE_BUILD_TYPE=Release

@@ -33,6 +33,7 @@ software using the Xsettings library.
 
 %build
 ./autogen.sh
+export LDFLAGS=""
 ./configure --prefix=/usr --libdir=%{_libdir}
 make %{?_smp_mflags}
 

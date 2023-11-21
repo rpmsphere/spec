@@ -8,8 +8,8 @@
 %define rspamd_wwwdir   %{_datadir}/rspamd/www
 
 Name:           rspamd
-Version:        3.6
-Release: 1
+Version:        3.7.4
+Release:	1
 Summary:        Rapid spam filtering system
 Group:          System Environment/Daemons
 License:        ASL 2.0
@@ -17,6 +17,7 @@ URL:            https://rspamd.com
 BuildRequires:  glib2-devel,libevent-devel,openssl-devel,pcre-devel
 BuildRequires:  cmake,gmime-devel,file-devel,ragel,libunwind-devel
 BuildRequires:  libsodium-devel
+#BuildRequires:  hyperscan-devel
 %if 0%{?el6}
 BuildRequires:	perl
 %else
@@ -63,6 +64,7 @@ lua.
 %prep
 %setup -q
 sed -i 's|SIGSTKSZ|16384|' contrib/doctest/doctest/parts/doctest.cpp contrib/doctest/doctest/doctest.h src/libserver/worker_util.c
+sed -i -e '924i #ifdef WITH_HYPERSCAN' -e '949i #endif' src/libserver/rspamd_control.c
 
 %build
 %{__cmake} \
@@ -196,7 +198,7 @@ fi
 %{_libdir}/rspamd
 
 %changelog
-* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6
+* Fri Nov 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.4
 - Rebuilt for Fedora
 * Thu Sep 17 2015 Vsevolod Stakhov <vsevolod-at-highsecure.ru> 1.0.0-1
 - Update to 1.0.0

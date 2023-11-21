@@ -22,8 +22,10 @@ Development Environment for building GNU-EFI applets.
 
 %prep
 %setup -q
+sed -i 's|--fatal-warnings||' Make.defaults
 
 %build
+export LDFLAGS=""
 make
 
 %install

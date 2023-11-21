@@ -25,6 +25,7 @@ Graphics is handled using the SDL 1.2 library.
 
 %prep
 %setup -q -n MatrixBrandy-%{version}
+sed -i 's|-Wall|-Wall -fPIE|' makefile
 
 %build
 make %{?_smp_mflags}

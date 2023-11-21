@@ -51,7 +51,7 @@ make install DESTDIR=%buildroot
 
 %files devel
 %_libdir/libosptk.so
-%exclude %_libdir/libosptk.la
+#exclude %_libdir/libosptk.la
 %_includedir/osp
 
 %changelog

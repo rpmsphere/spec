@@ -21,7 +21,8 @@ easily (both GTK2 and GTK3) with a simple interface.
 %setup -q
 
 %build
-make
+#make LDFLAGS=""
+valac --pkg gtk+-3.0 -X -lm gtk-theme-config.vala -o gtk-theme-config
 
 %install
 make install DESTDIR=%{buildroot}

@@ -34,14 +34,14 @@ previous one.
 [ -e readme.dbx ] && mv readme.dbx readme.xml
 mv %{name} %{name}.in
 cat %{name}.in | sed s=@INCELIMDIR@=%{INCELIMDIR}= > %{name}
-cp %{S:1} .
+cp %{SOURCE1} .
 
 %build
 # Build the HTML page
-DB=https://docbook.sourceforge.net/release/xsl/current/
+DB=https://docbook.sourceforge.net/release/xsl/current
 # Build HTML from DocBook source
-xmllint --noout --valid readme.xml && \
-xsltproc --nonet --output readme.html  $DB/html/docbook.xsl readme.xml
+#xmllint --noout --valid readme.xml && \
+#xsltproc --nonet --output readme.html  $DB/html/docbook.xsl readme.xml
 
 %install
 mkdir -p $RPM_BUILD_ROOT%{INCELIMDIR} \
@@ -53,7 +53,8 @@ install -m 755 %{name} $RPM_BUILD_ROOT%{_bindir}
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%doc readme.txt readme.xml readme.html tests.zip
+#doc readme.xml readme.html
+%doc readme.txt tests.zip
 %dir %{INCELIMDIR}
 %{INCELIMDIR}/*.xsl
 %{_bindir}/%{name}

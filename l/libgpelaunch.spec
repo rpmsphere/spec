@@ -45,7 +45,7 @@ developing applications that use %{name}.
 %files devel
 %{_includedir}/gpe/*.h
 %{_libdir}/%{name}.a
-%{_libdir}/%{name}.la
+#{_libdir}/%{name}.la
 %{_libdir}/%{name}.so
 %{_libdir}/pkgconfig/%{name}.pc
 

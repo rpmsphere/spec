@@ -21,6 +21,7 @@ for applications. It expresses build rules in the JavaScript language.
 %build
 #configure
 #make_build
+export CFLAGS+=" -fPIC" LD_LIBRARY_PATH=`pwd`/build/linux-x64-release/bin
 make boot
 
 %install

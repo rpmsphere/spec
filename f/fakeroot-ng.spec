@@ -23,6 +23,7 @@ sed -i '4i #include <sys/types.h>' arch/linux/i386/platform_specific.h
 %ifarch aarch64
 cp -f /usr/lib/rpm/redhat/config.* .
 %endif
+sed -i '26i #include <sched.h>' process.cpp
 
 %build
 ./configure --prefix=/usr

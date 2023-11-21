@@ -20,11 +20,12 @@ opponents.
 %build
 export LDFLAGS="-Wl,--allow-multiple-definition"
 %configure
-sed -i -e 's|^prefix = /usr|prefix = %{buildroot}/usr|' -e 's|/games|/share|' Makefile
-make %{?_smp_mflags}
+sed -i 's|/games|/share|' Makefile
+%make_build
 
 %install
-make install DESTDIR=%{buildroot}
+sed -i 's|^prefix = /usr|prefix = %{buildroot}/usr|' Makefile
+%make_install
 mkdir -p %{buildroot}/var/games/%{name}
 
 %files

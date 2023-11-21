@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%undefine _auto_set_build_flags
 
 Summary:	Applet with aquarium
 Summary(pl):	Aplet z akwarium
@@ -45,7 +46,7 @@ scrollock.
 
 %build
 export LDFLAGS+=" -lX11 -lm -lSDL"
-export CFLAGS=-Wno-format-security
+export CFLAGS="-Wno-format-security -fPIE"
 %configure
 %{__make} OPT="%{rpmcflags}"
 

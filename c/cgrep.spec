@@ -18,9 +18,10 @@ matching.
 
 %prep
 %setup -q
+cp -f /usr/lib/rpm/redhat/config.* .
 
 %build
-CFLAGS=-O2 ./configure \
+./configure \
   --prefix=%{_prefix} \
   --mandir=%{_mandir} \
   --datadir=%{_datadir} \

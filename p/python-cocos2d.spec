@@ -19,6 +19,7 @@ cocos2d is a framework for building 2D games, demos, and other graphical/interac
 
 %prep
 %setup -q -n cocos-release-%{version}
+sed -i 's|rU|r|' setup.py
 
 %build
 python3 setup.py build

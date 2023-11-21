@@ -1,14 +1,15 @@
 Name: gmtp
-Version: 1.3.3
-Release: 5.1
+Version: 1.3.11
+Release: 1
 Summary: A basic media player client
 License: BSD-like
 Group: File tools
-Source: gMTP-%version.tar
+#Source: gMTP-%version.tar
+Source: %{name}-%{version}.tar.gz
 BuildRequires: libmtp-devel
 BuildRequires: flac-devel
 BuildRequires: libid3tag-devel
-BuildRequires: libusb-devel
+BuildRequires: libusb1-devel
 BuildRequires: libvorbis-devel
 BuildRequires: gtk3-devel
 #BuildRequires: gio-devel
@@ -20,22 +21,25 @@ Supports MTP devices including those with multiple storage devices
 upload/download of files.
 
 %prep
-%setup -q -n gMTP-%version
+%setup -q
 
 %build
-export LDFLAGS=-Wl,--allow-multiple-definition
-make gtk3
+%configure
+sed -i 's|-Wall|-Wall -Wl,--allow-multiple-definition|' Makefile */Makefile
+#make gtk3
+%make_build
 
 %install
-%make_install \
-		DESTDIR=%buildroot \
-                PREFIX=%_usr \
-        install-gtk3
+%make_install
+#make_install \
+#		DESTDIR=%buildroot \
+#                PREFIX=%_usr \
+#        install-gtk3
 
-%make_install \
-		DESTDIR=%buildroot \
-                PREFIX=%_usr \
-	register-gsettings-schemas
+#make_install \
+#		DESTDIR=%buildroot \
+#                PREFIX=%_usr \
+#	register-gsettings-schemas
 
 %find_lang gmtp
 
@@ -45,10 +49,10 @@ make gtk3
 %_datadir/gmtp
 %_datadir/pixmaps/*
 %_datadir/glib-2.0/schemas/*
-%_datadir/gconf/schemas/gmtp.schemas
+#_datadir/gconf/schemas/gmtp.schemas
 
 %changelog
-* Mon Jan 13 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.3
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.11
 - Rebuilt for Fedora
 * Thu Jul 12 2012 Paul Wolneykien <manowar@altlinux.ru> 1.3.3-alt1
 - Initial release for ALT Linux.

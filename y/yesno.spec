@@ -1,4 +1,5 @@
 %undefine _debugsource_packages
+%undefine _auto_set_build_flags
 
 Name: yesno
 Summary: Simple console program for asking yes/no questions

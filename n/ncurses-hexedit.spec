@@ -26,7 +26,7 @@ Curses Hexedit is a full screen hex editor using the curses, ncurses , or pdcurs
 %setup -q -n hexedit-%{version}
 
 %build
-export LDFLAGS=-Wl,--allow-multiple-definition
+export CFLAGS=${CFLAGS/-Werror=format-security/} LDFLAGS=-Wl,--allow-multiple-definition
 %configure
 make
 

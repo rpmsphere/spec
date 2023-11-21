@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Summary:        A Bust-A-Move/Puzzle Bubble clone
 Name:           xbubble
 Version:        0.5.11.2

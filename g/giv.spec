@@ -41,6 +41,7 @@ Development files for the package giv.
 %prep
 %setup -q
 #sed -i '1368d' src/agg/agg_renderer_outline_aa.h
+sed -i '53i #include <cstdint>' src/agg/agg_svg_path_renderer.h
 
 %build
 ./autogen.sh --prefix=/usr

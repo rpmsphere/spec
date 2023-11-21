@@ -19,7 +19,8 @@ for the purpose of keeping backup directories up-to-date.
 ##%patch0
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+#{__make} CFLAGS="$RPM_OPT_FLAGS"
+%make_build
 
 %install
 %{__rm} -rf $RPM_BUILD_ROOT

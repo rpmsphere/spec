@@ -15,7 +15,7 @@ endpoints using raw ethernet frames. The communication is not secure.
 %setup -q
 
 %build
-%__make %{?jobs:-j%{jobs}} CC="%__cc -Wl,--allow-multiple-definition"
+%__make %{?jobs:-j%{jobs}} CC="%__cc -Wl,--allow-multiple-definition -fPIE"
 
 %install
 rm -rf "$RPM_BUILD_ROOT"
@@ -33,6 +33,5 @@ rm -rf "$RPM_BUILD_ROOT"
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 8
 - Rebuilt for Fedora
-
-* Sat May 5 2008 George Pantazis <ggpanta@gmail.com>
+* Mon May 5 2008 George Pantazis <ggpanta@gmail.com>
 - initial build

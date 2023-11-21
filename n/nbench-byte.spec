@@ -22,7 +22,7 @@ with 256 KB cache running MSDOS and an AMD K6/233 with 512 KB cache running Linu
 
 %prep
 %setup -q
-sed -i 's/-static//' Makefile
+sed -i 's/-static/-fPIE/' Makefile
 
 %build
 make 

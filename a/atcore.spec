@@ -1,3 +1,6 @@
+%global __spec_install_post %{nil}
+%undefine _debugsource_packages
+
 Summary:	Backend to control your 3D printer
 Name:		atcore
 Version:	1.0.0
@@ -10,6 +13,7 @@ BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qt5-qtcharts-devel
+BuildRequires:  qt5-qtserialport-devel
 
 %description
 Atelier is an open source program that allows you to control your 3D printer.
@@ -35,8 +39,8 @@ developing applications that use %name.
 %install
 rm -rf $RPM_BUILD_ROOT
 %cmake_install
-mkdir -p %{buildroot}%{_libdir}/qt5
-mv %{buildroot}%{_libdir}/plugins %{buildroot}/usr/mkspecs %{buildroot}%{_libdir}/qt5
+#mkdir -p %{buildroot}%{_libdir}/qt5
+#mv %{buildroot}%{_libdir}/plugins %{buildroot}/usr/mkspecs %{buildroot}%{_libdir}/qt5
 
 %clean
 rm -rf $RPM_BUILD_ROOT

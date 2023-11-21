@@ -21,6 +21,7 @@ kinds of weapon systems.
 
 
 %build
+export CXXFLAGS=${CFLAGS/-Werror=format-security/}
 ./configure
 make
 

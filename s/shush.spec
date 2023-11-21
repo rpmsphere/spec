@@ -1,3 +1,5 @@
+%undefine _auto_set_build_flags
+
 Name:         shush
 Summary:      Shell Command Logging Wrapper
 URL:          https://web.taranis.org/shush/

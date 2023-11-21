@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %doc README COPYING
 %{_libdir}/*.so*
-%{_libdir}/*.la
+#{_libdir}/*.la
 
 %files devel
 %{_libdir}/pkgconfig/*

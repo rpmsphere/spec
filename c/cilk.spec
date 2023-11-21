@@ -154,14 +154,12 @@ mv %buildroot/usr/lib %buildroot%_libdir
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README THANKS
 %_bindir/*
-%_libdir/%name/*.a
 %_libexecdir/%name/cilk2c
 %_libdir/%name
 %_libdir/*.so.*
 
 %files devel
 %_libdir/*.so
-%_libdir/*.la
 %_includedir/*
 
 %files devel-static

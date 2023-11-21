@@ -1,11 +1,11 @@
 Name:           oorexx
-Version:        5.0.0
-Release:        12583
+Version:        5.1.0beta
+Release:        1
 Summary:        Open Object Rexx
 Group:          Development/Languages
 License:        CPL
 URL:            https://www.oorexx.org
-Source0:        https://switch.dl.sourceforge.net/sourceforge/oorexx/oorexx-%{version}-%{release}.tar.gz
+Source0:        https://switch.dl.sourceforge.net/sourceforge/oorexx/oorexx-5.1.0-12741.tar.gz
 Source1:        https://switch.dl.sourceforge.net/sourceforge/oorexx/ooRexx-%{version}-pdf.zip
 Patch0:         oorexx-4.2.0-paths.patch
 Patch1:         oorexx-4.2.0-gcc6.patch
@@ -28,7 +28,6 @@ Group:          System Environment/Libraries
 %description libs
 Libraries for ooRexx.
 
-
 %package docs
 Summary:        Documentation for ooRexx
 Group:          Development/Languages
@@ -47,8 +46,8 @@ Requires:       %{name}-libs = %{version}-%{release}
 Header files and libraries for ooRexx.
 
 %prep
-%setup -q -c
-unzip -qo %{SOURCE1}
+%setup -q -n %{name}-5.1.0-12741 -a 1
+#unzip -qo %{SOURCE1}
 #patch0 -p1 -b .paths
 #patch1 -p1 -b .gcc6
 
@@ -84,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man*/*
 
 %files docs
-%doc ooRexx-%{version}-pdf/*.pdf
+%doc *.pdf
 %doc samples ReleaseNotes
 
 %files devel
@@ -97,7 +96,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/rexx.img
 
 %changelog
-* Sun May 28 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.0
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.1.0beta
 - Rebuilt for Fedora
 * Mon Oct 10 2016 Gérard Milmeister <gemi@bluewin.ch> - 4.2.0-3
 - Patch for gcc6

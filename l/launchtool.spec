@@ -27,6 +27,7 @@ sed -i '2i #include <string.h>' src/LaunchtoolCfg.cc
 sed -i '9i #include <string.h>' src/test.cc
 sed -i 's|sys_siglist\[signum\]|strsignal(signum)|' src/launchtool.cc src/test.cc
 sed -i 's|sys_siglist\[v\[i\]\]|strsignal(v[i])|' src/LaunchtoolCfg.cc
+sed -i '11i #include <ctime>' src/common/LoggerMethods.cc src/test.cc
 
 %build
 export CXXFLAGS="-std=gnu++14 -fPIE"

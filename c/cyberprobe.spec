@@ -23,6 +23,7 @@ a number of probes can feed a single monitor.
 Please see documentation in /usr/share/doc/cyberprobe.
 %prep
 %autosetup
+sed -i '6i #include <cstdint>' include/cyberprobe/util/hardware_addr_utils.h include/cyberprobe/protocol/tls_utils.h
 
 %build
 %configure

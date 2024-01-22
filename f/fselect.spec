@@ -15,6 +15,7 @@ Find files with SQL-like queries
 %prep
 %setup -q
 #sed -i -e 's|BUILDROOT_GOES_HERE|%{_builddir}/%{name}|g' %{_builddir}/%{name}/.cargo/config
+sed -i 's|mp4parse = "0.12"|mp4parse = "0.12.1"|' Cargo.toml
 
 %build
 cargo build --release

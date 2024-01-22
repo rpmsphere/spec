@@ -1,4 +1,5 @@
 %global debug_package %{nil}
+%global __spec_install_post %{nil}
 
 Name:       eGTouch
 Summary:    EETI eGTouch touchscreen driver

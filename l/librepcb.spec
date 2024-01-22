@@ -1,5 +1,5 @@
 Name:		librepcb
-Version:	0.1.6
+Version:	1.0.0
 Release:	1
 Summary:	A powerful, innovative and intuitive EDA tool for everyone
 License:	GPLv3+
@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(Qt5Xml)
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	SFML-devel
+BuildRequires:	opencascade-devel
 Requires:	qt5-qtbase
 
 %description
@@ -46,12 +47,12 @@ LibrePCB is a free EDA software to develop printed circuit boards.
 %{_datadir}/applications/*.desktop
 %{_datadir}/icons/hicolor/*/apps/*.png
 %{_datadir}/icons/hicolor/scalable/*/*.svg
-%{_metainfodir}/org.%{name}.LibrePCB.appdata.xml
+%{_metainfodir}/org.%{name}.LibrePCB.metainfo.xml
 %{_datadir}/mime/packages/org.%{name}.LibrePCB.xml
 #{_includedir}/fontobene-qt5
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.6
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
 - Rebuilt for Fedora
 * Wed Jul 15 2020 daviddavid <daviddavid> 0.1.4-1.mga8
 + Revision: 1606242

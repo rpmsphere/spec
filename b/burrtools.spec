@@ -1,3 +1,4 @@
+%undefine _auto_set_build_flags
 %define		oname  burrGui
 
 Name:		burrtools		
@@ -23,17 +24,19 @@ prisms with an equilateral triangle as base or 2 grids that use tetrahedra.
 
 %prep
 %setup -q 
-sed -i "s/examples\/README//g" Makefile.in
+sed -i "s|examples\/README|examples/README.example|g" Makefile.*
 sed -i "s/boost_test_exec_monitor/boost_unit_test_framework/g" configure
 #sed -i '1i #define BOOST_TEST_DYN_LINK' src/lib/main_test.cpp
-sed -i 's|.*openGL is needed for burrtools.*|:|' configure
-sed -i 's|.*Could not find a version of the library.*|:|' configure
 sed -i 's|struct face f;|faceList_c::face f;|' src/halfedge/modifiers.cpp
+mv examples/README examples/README.example
 
 %build
 autoreconf -ifv
+sed -i 's|MDL_HAVE_OPENGL|true|' configure
+sed -i 's|.*openGL is needed for burrtools.*|:|' configure
+sed -i 's|.*Could not find a version of the library.*|:|' configure
 ./configure --prefix=/usr
-sed -i 's|-Werror=format-security|-Wno-error -shared -fPIC|' Makefile */Makefile
+sed -i -e 's|-Werror=format-security|-Wno-error -shared -fPIC|' -e 's|LDFLAGS =|LDFLAGS = -lGL -lGLU|' Makefile */Makefile
 make %{?_smp_mflags}
 
 cat > %{name}.desktop <<EOF

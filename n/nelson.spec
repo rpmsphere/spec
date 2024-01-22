@@ -3,7 +3,7 @@
 
 Summary: The Nelson Programming Language
 Name: nelson
-Version: 0.6.7
+Version: 0.7.10
 Release: 1
 License: GPLv2
 Group: Development/Language
@@ -38,30 +38,38 @@ sed -i '58i #include <stdint.h>' modules/file_archiver/src/c/minizip/mz_os.h
 
 %build
 #cmake -G "Unix Makefiles" .
-cmake . -DCMAKE_INSTALL_PREFIX=/usr/libexec -DCMAKE_BUILD_TYPE=release -DMPI_C_COMPILER=/usr/lib64/openmpi/bin/mpicc -DMPI_CXX_COMPILER=/usr/lib64/openmpi/bin/mpicxx -DMPI_C_INCLUDE_PATH=/usr/include/openmpi-%{_arch}/
+cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=release -DMPI_C_COMPILER=/usr/lib64/openmpi/bin/mpicc -DMPI_CXX_COMPILER=/usr/lib64/openmpi/bin/mpicxx -DMPI_C_INCLUDE_PATH=/usr/include/openmpi-%{_arch}/
 make
 
 %install
 %make_install
-mkdir -p %{buildroot}%{_bindir}
-cd %{buildroot}%{_libexecdir}/Nelson-%{version}/bin/linux
-sed -i 's|$0|$(realpath $0)|' %{name}-*i
-for i in %{name}-*i; do
-  ln -s %{_libexecdir}/Nelson-%{version}/bin/linux/$i %{buildroot}%{_bindir}/$i
-done
-mkdir -p %{buildroot}%{_sysconfdir}/ld.so.conf.d
-echo %{_libexecdir}/Nelson-%{version}/bin/linux > %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
-echo %{_libdir}/openmpi/lib >> %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
+#mkdir -p %{buildroot}%{_bindir}
+#cd %{buildroot}%{_libexecdir}/Nelson-%{version}/bin/linux
+#sed -i 's|$0|$(realpath $0)|' %{name}-*i
+#for i in %{name}-*i; do
+#  ln -s %{_libexecdir}/Nelson-%{version}/bin/linux/$i %{buildroot}%{_bindir}/$i
+#done
+#mkdir -p %{buildroot}%{_sysconfdir}/ld.so.conf.d
+#echo %{_libexecdir}/Nelson-%{version}/bin/linux > %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
+#echo %{_libdir}/openmpi/lib >> %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc LICENSE *.md
-%{_libexecdir}/*
-%{_bindir}/%{name}-*
-%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
+#{_libexecdir}/*
+%{_bindir}/*
+%{_datadir}/Nelson
+%{_includedir}/Nelson
+%{_libdir}/Nelson
+%{_libdir}/cmake/Nelson
+%{_datadir}/applications/org.nelson.Nelson.desktop
+%{_datadir}/icons/hicolor/*/apps/nelson.png
+%{_datadir}/locale/*/LC_MESSAGES/nelson.mo
+%{_datadir}/metainfo/org.nelson.Nelson.appdata.xml
+#{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
 
 %changelog
-* Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.7
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.10
 - Rebuilt for Fedora

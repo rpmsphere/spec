@@ -1,17 +1,20 @@
 Name:		compat-srpm-macros
-Version:	2022.10
+Version:	2024.03
 Release:	1
 Summary:	RPM macros for compatible building
 Group:		Applications/Engineering
 License:	MIT License
 Source0:	macros.compat-srpm
+Source1:        LICENSE.MIT
 BuildArch:	noarch
 
 %description
-macros.compat-srpm provides macros for building compatible projects from
-various distributions.
+macros.compat-srpm provides macros for building projects from
+various distributions compatibly.
 
 %prep
+%setup -cT
+cp %{SOURCE1} LICENSE
 
 %build
 
@@ -23,8 +26,9 @@ install -Dm644 %{SOURCE0} %{buildroot}%{_rpmconfigdir}/macros.d/macros.compat-sr
 rm -rf $RPM_BUILD_ROOT
 
 %files
+%doc LICENSE
 %{_rpmconfigdir}/macros.d/macros.compat-srpm
 
 %changelog
-* Sun Oct 30 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.10
+* Sun Mar 10 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2024.03
 - Rebuilt for Fedora

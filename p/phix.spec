@@ -3,13 +3,14 @@
 
 Summary: Pete's Self Hosted Hybrid Interpreter/Compiler
 Name: phix
-Version: 0.8.3
+Version: 1.0.2
 Release: 1
 License: OSL-3.0
 Group: Development/Languages
-Source: Phix-master.zip
+Source0: %{name}-%{version}.zip
+Source1: http://phix.x10.mx/p64
 URL: http://phix.x10.mx/
-BuildRequires: phix
+#BuildRequires: phix
 
 %description
 Phix is a self-hosted hybrid interpreter/compiler, developed by Pete Lomax.
@@ -20,11 +21,12 @@ It is very easy to use, and similar to Euphoria. Aims:
 * Terse may at first seem nice, but properly readable and easy to understand code is better.
     
 %prep
-%setup -q -n Phix-master
+%setup -q -n %{name}
 
 %build
-cp /usr/bin/phix .
+install -m755 %{SOURCE1} phix
 ./phix -c p
+#phix -test
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -38,5 +40,5 @@ install -Dm755 p %{buildroot}%{_bindir}/%{name}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Mar 21 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
+* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
 - Rebuilt for Fedora

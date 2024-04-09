@@ -1,7 +1,7 @@
 %define kversion %(uname -r)
 
 Name:    r8125
-Version: 9.009.02
+Version: 9.012.04
 Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
@@ -28,6 +28,7 @@ of the same variant of the Linux kernel and not on any one specific build.
 %setup -q
 %{__cp} -a %{SOURCE5} .
 echo "blacklist r8169" > blacklist-r8125.conf
+#sed -i '631s|, weight)$|)|' src/r8125.h
 
 %build
 KSRC=%{_usrsrc}/kernels/%{kversion}
@@ -55,8 +56,8 @@ depmod -a > /dev/null 2> /dev/null
 /usr/lib/modprobe.d/blacklist-r8125.conf
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 9.009.02
-- Update to new version
+* Sun Mar 24 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 9.012.04
+- Rebuilt for Fedora
 * Thu Jun 12 2014 Alan Bartlett <ajb@elrepo.org> - 8.038.00-1
 - Updated to version 8.038.00
 * Thu Jun 12 2014 Alan Bartlett <ajb@elrepo.org> - 8.037.00-3

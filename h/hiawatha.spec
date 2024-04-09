@@ -64,7 +64,7 @@ install -D -m 755 %{SOURCE1} %{buildroot}%{_initrddir}/%{name}
 %{_libdir}/%{name}
 
 %changelog
-* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 10.12
+* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 10.12
 - Rebuilt for Fedora
 * Tue Sep 18 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 8.5-1
 + Revision: 817067

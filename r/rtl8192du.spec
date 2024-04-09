@@ -2,7 +2,7 @@
 %global kversion %(uname -r)
 
 Name:    rtl8192du
-Version: 4.13
+Version: 6.8
 Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
@@ -56,5 +56,5 @@ depmod -a > /dev/null 2> /dev/null
 /lib/firmware/rtlwifi/*
 
 %changelog
-* Mon Aug 26 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2
-- Initial package
+* Sun Mar 24 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 6.8
+- Rebuilt for Fedora

@@ -33,6 +33,8 @@ sed -i 's|TurtleVirtualPeerId,RsGRouterTransactionChunkItem\*|TurtleVirtualPeerI
 sed -i '23i #include <QTabBar>' retroshare-gui/src/gui/chat/ChatTabWidget.cpp
 sed -i '27i #include <QStyle>' retroshare-gui/src/gui/feeds/GxsForumMsgItem.cpp retroshare-gui/src/gui/feeds/GxsChannelPostItem.cpp
 sed -i '26i #include <QStyle>' retroshare-gui/src/gui/Posted/PostedItem.cpp
+sed -i '47i #include <filesystem>' libretroshare/src/util/rsdir.cc
+sed -i '23i #include <cstdint>' retroshare-gui/src/gui/statistics/Histogram.h
 
 %build
 #qmake-qt5 -recursive CONFIG=release CONFIG+=no_sqlcipher CONFIG+=no_retroshare_plugins
@@ -54,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/retroshare
 
 %changelog
-* Sun Jul 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.6git
+* Sun Mar 24 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.6git
 - Rebuilt for Fedora
 * Wed Feb  8 2012 asamk@gmx.de
 - Updated to version 0.5.3a

@@ -2,7 +2,7 @@
 %global kversion %(uname -r)
 
 Name:    8188gu
-Version: 2022.08.24
+Version: 2023.01.12
 Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
@@ -24,7 +24,8 @@ This is the Realtek 802.11ac (rtl8188gu) driver.
 
 %prep
 %setup -q -n rtl8188gu-master
-sed -i 's|if (rtw_napi_gro_receive(&padapter->napi, pskb) != GRO_DROP)|rtw_napi_gro_receive(\&padapter->napi, pskb);|' os_dep/linux/recv_linux.c
+#sed -i 's|if (rtw_napi_gro_receive(&padapter->napi, pskb) != GRO_DROP)|rtw_napi_gro_receive(\&padapter->napi, pskb);|' os_dep/linux/recv_linux.c
+sed -i '398s|, 0|, 0, false|' os_dep/linux/ioctl_cfg80211.c
 
 %build
 make
@@ -47,5 +48,5 @@ rm -rf %{buildroot}
 /lib/modules/%{kversion}/kernel/drivers/net/wireless/8188gu.ko
 
 %changelog
-* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022.08.24
+* Thu Nov 30 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2023.01.12
 - Rebuilt for Fedora

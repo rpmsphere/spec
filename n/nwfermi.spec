@@ -27,6 +27,7 @@ Kernel Driver for USB touchscreen chipset, Nextwindow Fermi touchscreen driver.
 %setup -q
 sed -i -e '21i #include <linux/sched.h>' -e '246,247d' -e '/err(/d' nw-fermi.c
 sed -i 's|copy_to_user|raw_copy_to_user|' nw-fermi.c
+sed -i '8i KBUILD_CFLAGS := -Wno-error' Makefile
 
 %build
 make -C /lib/modules/%{kversion}/build M=$PWD modules
@@ -52,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Oct 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.2
-- Rebuilt for Fedora
+- Rebuild for Fedora
 * Fri Jan 07 2011 Antoine Ginies <aginies@mandriva.com> 0.4.2-1mdv2011.0
 + Revision: 629590
 - import dkms-nwfermi

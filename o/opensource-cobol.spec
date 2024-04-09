@@ -1,3 +1,5 @@
+%global __os_install_post %{nil}
+
 Name:           opensource-cobol
 Version:        1.5.2J
 Release:        1
@@ -14,13 +16,12 @@ Requires:       gcc
 Requires:       glibc-devel
 Requires:       libcob = %{version}
 Obsoletes:      libcob-devel < 1.0.90
-Obsoletes:      open-cobol opencobol
+Obsoletes:      open-cobol <= 1.1
 
 %description
 "opensource COBOL" is open-source COBOL compiler, an extension of
 the Japan-specific features. "opensource COBOL" translates COBOL
 program to C code and compiles it using GCC or CL.
-It was forked from OpenCOBOL in 2012.
 
 %package -n libcob
 Summary:        OpensourceCOBOL runtime library
@@ -79,4 +80,4 @@ fi
 
 %changelog
 * Tue Jul 23 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.2J
-- Rebuilt for Fedora
+- Rebuild for Fedora

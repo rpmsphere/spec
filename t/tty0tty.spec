@@ -8,6 +8,7 @@ License:        GPLv2
 URL:            http://sourceforge.net/projects/tty0tty
 Version:        1.2
 Source0:        http://sourceforge.net/projects/tty0tty/files/tty0tty-%{version}.tgz
+Patch0:		tty0tty-1.2.patch
 BuildRequires:  kernel, kernel-devel
 Requires:       tty0tty-kmod   
 
@@ -26,7 +27,7 @@ Kernel module of Linux null modem emulator.
 
 %prep
 %setup -q
-sed -i 's|linux/sched.h|linux/sched/signal.h|' module/tty0tty.c
+%patch 0 -p1
 
 %build
 make -C /lib/modules/*/build M=$PWD/module modules
@@ -53,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 /lib/modules/%{kversion}/kernel/drivers/tty/%{name}.ko
 
 %changelog
-* Fri Oct 18 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
+* Sun Mar 31 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
 - Rebuilt for Fedora
 * Sun Aug 26 2012 Nicolas Chauvet <kwizart@gmail.com> - 1.1-1
 - Update to 1.1

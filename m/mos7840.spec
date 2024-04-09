@@ -27,6 +27,7 @@ Supports AX78140/AX78120/MCS7840/MCS7820/MCS7810.
 %setup -q -n AX781x0_MCS78x0_Linux_Driver_v%{version}_Source
 #sed -i 's|//MODULE_DEVICE_TABLE (usb, id_table_combined);|MODULE_DEVICE_TABLE (usb, moschip_port_id_table);|' mos7840.h
 echo 'ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="9710", ATTRS{idProduct}=="7841", RUN+="/sbin/modprobe mos7840"' > 80-usb-serial.rules
+sed -i 's|EXTRA_CFLAGS += |EXTRA_CFLAGS += -Wno-incompatible-pointer-types |' Makefile
 
 %build
 make

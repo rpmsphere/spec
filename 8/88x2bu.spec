@@ -51,4 +51,4 @@ depmod -a > /dev/null 2> /dev/null
 
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 5.8.7.1
-- Rebuilt for Fedora
+- Rebuild for Fedora

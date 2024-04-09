@@ -10,7 +10,7 @@ Group: Development/Language
 URL: https://github.com/AdeptLanguage/Adept
 Source0: https://github.com/AdeptLanguage/Adept/archive/refs/tags/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
 Source1: https://github.com/AdeptLanguage/AdeptImport/archive/refs/heads/master.zip#/AdeptImport-master.zip
-BuildRequires: llvm-devel
+BuildRequires: llvm15-devel
 BuildRequires: openldap-devel
 BuildRequires: libcurl-devel
 
@@ -21,7 +21,7 @@ A blazing fast language for general purpose programming.
 %setup -q -n %{_name}-%{version} -a 1
 
 %build
-cmake . -DCMAKE_INSTALL_PREFIX=/usr
+cmake . -DCMAKE_INSTALL_PREFIX=/usr -DLLVM_DIR=%{_libdir}/llvm15/lib/cmake/llvm
 %{make_build}
 
 %install

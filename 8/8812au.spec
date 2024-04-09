@@ -1,14 +1,14 @@
-#global debug_package %{nil}
 %define kver %(uname -r)
 
-Name:		    rtl8812au
-Version:	    4.3.14
-Release:	    2
+Name:		    8812au
+Version:	    6.1
+Release:	    1
 Summary:	    Realtek 8812AU/8821AU USB WiFi driver
 Group:		    System Environment/Kernel
 License:	    GPLv2
-URL:		    https://github.com/abperiasamy/rtl8812AU_8821AU_linux
-Source0:	    https://github.com/abperiasamy/rtl8812AU_8821AU_linux/archive/rtl8812AU_8821AU_linux-master.zip
+URL:		    https://github.com/lwfinger/rtl8812au
+#Source0:	    https://github.com/abperiasamy/rtl8812AU_8821AU_linux/archive/rtl8812AU_8821AU_linux-master.zip
+Source0:            rtl8812au-master.zip
 #Source11:           rtl8812au-kmod-kmodtool-excludekernel-filterfile
 BuildRequires:      gcc, kernel-devel
 
@@ -28,8 +28,9 @@ Known Supported Devices:
 * TP-LINK AC600 Wireless Dual Band USB Adapter(Model: Archer-T2U Nano)
 
 %prep
-%setup -q -n rtl8812AU_8821AU_linux-master
-sed -i '236,240d' include/rtw_security.h
+#setup -q -n rtl8812AU_8821AU_linux-master
+%setup -q -n rtl8812au-master
+#sed -i '236,240d' include/rtw_security.h
 
 %build
 make -C /usr/src/kernels/%{kver} M=`pwd` modules
@@ -54,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 /lib/modules/%{kver}/updates/%{name}/%{name}.ko
 
 %changelog
-* Wed Sep 02 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.3.14
+* Sun Mar 24 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1
 - Rebuilt for Fedora
 * Tue May 30 2017 Alexei Panov <me AT elemc DOT name> 4.3.14-2
 -  Fixed obsolete-name parameter

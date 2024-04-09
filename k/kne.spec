@@ -10,7 +10,8 @@ URL: http://www.pm9.com/kne_ind.html
 Source0: http://www.pm9.com/KNE-30.tar.gz
 Conflicts: the
 BuildRequires: ncurses-devel
-BuildRequires: regina-devel
+BuildRequires: regina-rexx
+BuildRequires: regina-rexx-devel
 
 %description
 KNE is based on "THE"-Editor on UN*X(include LINUX). It is very easy for
@@ -23,6 +24,7 @@ ISPF XEDIT and KEDIT.
 %ifarch x86_64 aarch64
 sed -i 's|/usr/lib|/usr/lib64|' configure
 %endif
+sed -i 's|-Wall|-Wall -fPIE|' configure
 
 %build
 ./configure \
@@ -43,4 +45,4 @@ mv %{buildroot}/usr/share/bin %{buildroot}/usr/bin
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
-- Rebuilt for Fedora
+- Rebuild for Fedora

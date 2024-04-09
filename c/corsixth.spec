@@ -2,7 +2,7 @@
 
 Summary:	Open source clone of Theme Hospital
 Name:		corsixth
-Version:	0.63
+Version:	0.67
 Release:	1
 Epoch:		1
 License:	MIT
@@ -38,7 +38,7 @@ need a purchased copy of Theme Hospital in order to enjoy CorsixTH.
 %prep
 %setup -q -n %{oname}-%{version}
 #patch0 -p 1
-sed -i '114s|L, f, n|L, f, n, 0|' CorsixTH/Src/th_lua.h
+#sed -i '114s|L, f, n|L, f, n, 0|' CorsixTH/Src/th_lua.h
 
 %build
 export CXXFLAGS="-g -O2 -fPIC -fPIE -fpermissive"
@@ -87,7 +87,7 @@ Categories=Game;StrategyGame;
 EOF
 
 %changelog
-* Mon Sep 09 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.63
+* Thu Dec 07 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.67
 - Rebuilt for Fedora
 * Mon Feb 27 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:0.60-5
 - (e9dde4e) MassBuild#1264: Increase release tag

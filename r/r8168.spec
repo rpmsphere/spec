@@ -1,7 +1,7 @@
 %define kversion %(uname -r)
 
 Name:    r8168
-Version: 8.051.02
+Version: 8.052.01
 Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
@@ -31,7 +31,7 @@ of the same variant of the Linux kernel and not on any one specific build.
 %{__cp} -a %{SOURCE5} .
 echo "blacklist r8169" > blacklist-r8168.conf
 #sed -i 's|synchronize_sched|synchronize_rcu|' src/r8168_n.c
-sed -i '569s|, weight)$|)|' src/r8168.h
+#sed -i '569s|, weight)$|)|' src/r8168.h
 
 %build
 CFLAGS="$CFLAGS -Wno-implicit-function-declaration"
@@ -60,7 +60,7 @@ depmod -a > /dev/null 2> /dev/null
 /usr/lib/modprobe.d/blacklist-r8168.conf
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 8.051.02
+* Sun Mar 24 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 8.052.01
 - Rebuilt for Fedora
 * Thu Jun 12 2014 Alan Bartlett <ajb@elrepo.org> - 8.038.00-1
 - Updated to version 8.038.00

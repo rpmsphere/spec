@@ -34,6 +34,7 @@ OpenCL.
 %prep
 %setup -q -n freeocl-master
 sed -i 's|_mm_pause()|__asm__ __volatile__ ("rep; nop")|' src/utils/threadpool.cpp
+sed -i '13,15d' CMakeLists.txt
 
 %build
 cmake . -DCMAKE_INSTALL_PREFIX=/usr

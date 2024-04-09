@@ -1,5 +1,5 @@
 Name:		gnunet-gtk
-Version:	0.13.1
+Version:	0.19.0
 Release:	1
 Source0:	http://gnunet.org/download/%{name}-%{version}.tar.gz
 License:	GPLv2+
@@ -48,9 +48,7 @@ This package contains files required for development only.
 %files devel
 %doc README AUTHORS ABOUT-NLS ChangeLog COPYING
 %{_includedir}/%{name}
-%exclude %{_libdir}/gnunet/libgnunet_plugin_gtk_namestore_*.la
 %{_libdir}/gnunet/libgnunet*.so
-%exclude %{_libdir}/libgnunetgtk.la
 %{_libdir}/libgnunetgtk.so
 
 %prep
@@ -68,7 +66,7 @@ sed -i 's|Icon=gnunet-setup|Icon=/usr/share/gnunet-gtk/gnunet_logo.png|' %{build
 %find_lang %{name}
 
 %changelog
-* Tue Sep 08 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.1
+* Fri Dec 08 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.19.0
 - Rebuilt for Fedora
 * Mon Jan 16 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.9.1-1
 + Revision: 761829

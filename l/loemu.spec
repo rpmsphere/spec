@@ -38,6 +38,7 @@ This package is in PLF because of Mandriva policy regarding emulators.
 tar -xvjf %{_sourcedir}/loemu-0.3.0-fr.po.tar.bz2
 
 %build
+sed -i '7,24d' setup.py
 DISPLAY=:0 python2 setup.py build 
 
 %install

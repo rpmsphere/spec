@@ -3,11 +3,11 @@
 
 Summary: 	Intel® Ethernet Connections Boot Utility
 Name: 		bootutil
-Version: 	23.2
+Version: 	28.2
 Release: 	1.bin
 License: 	Commercial, freeware
 Group:		Development/Tools
-Source0:	https://downloadmirror.intel.com/19186/eng/Preboot.tar.gz
+Source0:	https://downloadmirror.intel.com/785842/Preboot.tar.gz
 URL:		https://downloadcenter.intel.com/download/19186/Ethernet-Intel-Preboot-EFI-
 BuildRequires:  kernel-headers
 BuildRequires:  kernel-devel
@@ -21,7 +21,7 @@ UEFI drivers, Intel® Boot Agent, and Intel® iSCSI Remote Boot images.
 %setup -q -c
 tar xf APPS/BootUtil/Linux_x64/DRIVER/iqvlinux.tar.gz
 iconv -f utf16 -t utf8 readme.txt > README.txt
-sed -i '154s|3|5|' src/linux/driver/Makefile
+sed -i '154s|3|6|' src/linux/driver/Makefile
 
 %build
 export NALDIR=$PWD
@@ -63,5 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 /lib/modules/%{kversion}/kernel/drivers/char/iqvlinux.ko
 
 %changelog
-* Fri Sep 28 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 23.2
+* Tue Dec 05 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 28.2
 - Initial package

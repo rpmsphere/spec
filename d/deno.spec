@@ -2,7 +2,7 @@
 
 Summary: A secure JavaScript and TypeScript runtime
 Name: deno
-Version: 1.36.4
+Version: 1.42.2
 Release: 1
 License: MIT
 Group: Development/Language
@@ -32,5 +32,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/%{name}
 
 %changelog
-* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.36.4
+* Sun Apr 14 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.42.2
 - Rebuilt for Fedora

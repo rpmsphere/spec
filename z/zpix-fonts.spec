@@ -2,7 +2,7 @@
 
 Name:           zpix-fonts
 Summary:        Zpix FONTS
-Version:        3.1.6
+Version:        3.1.9
 Release:        1
 License:        shareware
 Group:          User Interface/X
@@ -32,5 +32,5 @@ rm -rf $RPM_BUILD_ROOT
 %{font_dir}
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.6
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.9
 - Rebuilt for Fedora

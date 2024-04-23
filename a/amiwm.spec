@@ -1,14 +1,13 @@
 %undefine _debugsource_packages
 
 Name:       amiwm
-Version:	0.21pl2
-Release:	22.1
+Version:	0.22pl2
+Release:	1
 Summary:	Amiga Window Manager
 Group:		System/GUI/Other
 License:	Generic
 URL:		https://www.lysator.liu.se/~marcus/amiwm.html
-Source:		ftp://ftp.lysator.liu.se/pub/X11/wm/amiwm/amiwm0.21pl2.tar.gz
-Patch0:        amiwm-includes.diff
+Source:		ftp://ftp.lysator.liu.se/pub/X11/wm/amiwm/amiwm%{version}.tar.gz
 BuildRequires: libX11-devel
 BuildRequires: libXmu-devel
 BuildRequires: bison flex
@@ -29,7 +28,6 @@ Authors:
 
 %prep
 %setup -q -n %{name}%{version}
-%patch0 -p1
 
 %build
 ./configure --prefix=%{_prefix} --bindir=%{_bindir} --libdir=%{_libdir} --exec_prefix=%{_exec_prefix}
@@ -55,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/amiwm.1.*
 
 %changelog
-* Mon Oct 21 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.21pl2
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.22pl2
 - Rebuilt for Fedora
 * Wed Feb 27 2013 wbauer@tmo.at
 - fix build on 12.3

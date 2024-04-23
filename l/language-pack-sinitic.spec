@@ -1,6 +1,6 @@
 Name: language-pack-sinitic
 Summary: Translations for some sinitic languages
-Version: 2024.3
+Version: 2024.4
 Release: 1
 License: Open Source
 Group: Translations
@@ -42,6 +42,7 @@ make
 %files -n language-pack-cmn
 %{_datadir}/locale/cmn*/LC_MESSAGES/*.mo
 %{_libdir}/R/library/translations/cmn*/LC_MESSAGES/*.mo
+%{_libdir}/R/library/*/po/cmn*/LC_MESSAGES/*.mo
 %{_libdir}/textadept/core/locales/locale.cmn*.conf
 %{_datadir}/*/*/cmn*.po
 %{_datadir}/FBReader/resources/cmn*.xml
@@ -50,6 +51,7 @@ make
 %{_datadir}/*/*cmn*.qm
 %{_datadir}/*/*/*cmn*.qm
 %{_datadir}/*/*/*/*cmn*.qm
+%{_datadir}/*/*/*/*/*cmn*.qm
 %{_libexecdir}/*/Translations/*cmn*.qm
 %{_datadir}/zlibrary/resources/cmn*.xml
 %{_datadir}/childsplay_sp/*/*/words-cmn*
@@ -105,6 +107,7 @@ make
 %files -n language-pack-yue
 %{_datadir}/locale/yue*/LC_MESSAGES/*.mo
 %{_libdir}/R/library/translations/yue*/LC_MESSAGES/*.mo
+%{_libdir}/R/library/*/po/yue*/LC_MESSAGES/*.mo
 %{_libdir}/textadept/core/locales/locale.yue*.conf
 %{_datadir}/*/*/yue*.po
 %{_datadir}/FBReader/resources/yue*.xml
@@ -113,6 +116,7 @@ make
 %{_datadir}/*/*yue*.qm
 %{_datadir}/*/*/*yue*.qm
 %{_datadir}/*/*/*/*yue*.qm
+%{_datadir}/*/*/*/*/*yue*.qm
 %{_libexecdir}/*/Translations/*yue*.qm
 %{_datadir}/zlibrary/resources/yue*.xml
 %{_datadir}/childsplay_sp/*/*/words-yue*
@@ -169,5 +173,5 @@ make
 rm -rf %{buildroot}
 
 %changelog
-* Sun Mar 24 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2024.3
+* Sun Apr 21 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2024.4
 - Rebuilt for Fedora

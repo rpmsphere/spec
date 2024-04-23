@@ -2,7 +2,7 @@
 %undefine _debugsource_packages
 
 Name:		freedoko
-Version:	0.7.18
+Version:	0.8.0
 Release:	1
 Summary:	FreeDoko is a Doppelkopf-game
 Summary(de):	FreeDoko ist ein Doppelkopfspiel
@@ -109,7 +109,7 @@ make install %{?jobs:-j%{jobs}} DESTDIR=%{buildroot} OPERATING_SYSTEM=Linux
 %{_docdir}/*
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.18
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.0
 - Rebuilt for Fedora
 * Fri Jan 09 2009 Feather Mountain <john@ossii.com.tw> 0.7.5-567.ossii
 - Rebuild for M6(OSSII)

@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		evdi
-Version:	1.13.1
+Version:	1.14.2
 Release:	1
 Summary:	DisplayLink VGA/HDMI driver for DL-6xxx, DL-5xxx, DL-41xx and DL-3xxx adapters
 Group:		User Interface/X Hardware Support
@@ -76,8 +76,8 @@ dkms remove evdi/%{version} --all
 /usr/src/evdi-%{version}
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.13.1
-- Rebuild package
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14.2
+- Rebuilt for Fedora
 * Sun Feb 19 2017 Richard Hofer <rofer@rofer.me> 1.3.52
 - Bump downloaded version to 1.3.52
 - Note support for DL-6xxx devices

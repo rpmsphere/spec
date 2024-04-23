@@ -2,11 +2,11 @@
 
 Summary: An open source programming language in Ada
 Name: sparforte
-Version: 2.5
+Version: 2.6.2
 Release: 1
 License: GPL2 (GNAT Modified)
 Group: Development/Languages
-Source: https://www.sparforte.com/downloads/%{name}-%{version}-src.tar.bz2
+Source: https://www.sparforte.com/downloads/%{name}-%{version}-src.tar.gz
 URL: https://www.sparforte.com/
 BuildRequires: gcc-gnat
 BuildRequires: SDL-devel
@@ -25,10 +25,11 @@ same time, providing easier maintenance and bug removal.
 %prep
 %setup -q -n %{name}-%{version}-src
 sed -i 's|i486|aarch64|' configure
-sed -i 's|$(CPU_FLAG)=$(CPU)||' src/GNUmakefile*
+sed -i -e 's|$(CPU_FLAG)=$(CPU)||' -e 's|-gnatfaoN|-gnatfaoN -gnatd.E -gnatwv|' src/GNUmakefile*
 
 %build
 ./configure --prefix=/usr --without-mysql --without-bdb --without-postgres
+sed -i '/param_ptr :=/d' src/parser_pen.adb
 %make_build -j1
 
 %install
@@ -46,5 +47,5 @@ mv %{buildroot}%{_datadir}/man1 %{buildroot}%{_mandir}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.2
 - Rebuilt for Fedora

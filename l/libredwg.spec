@@ -1,6 +1,6 @@
 Summary:	A free replacement for the OpenDWG libraries
 Name:		libredwg
-Version:	0.12.5
+Version:	0.13.3
 Release:	1
 License:	GPL
 Group:		System/Libraries
@@ -47,7 +47,7 @@ make
 rm -rf %{buildroot}
 %make_install
 mkdir -p %{buildroot}%{_datadir}/%{name}
-mv %{buildroot}%{_datadir}/dwgadd.example %{buildroot}%{_datadir}/load_dwg.py %{buildroot}%{_datadir}/%{name}
+#mv %{buildroot}%{_datadir}/dwgadd.example %{buildroot}%{_datadir}/load_dwg.py %{buildroot}%{_datadir}/%{name}
 mv %{buildroot}/usr/local/%{_lib}/perl5/* %{buildroot}%{_libdir}/perl5/
 
 %clean
@@ -77,5 +77,5 @@ rm -rf %{buildroot}
 %{_libdir}/perl5/5.*/auto/LibreDWG/LibreDWG.so
 
 %changelog
-* Sun Mar 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.5
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.13.3
 - Rebuilt for Fedora

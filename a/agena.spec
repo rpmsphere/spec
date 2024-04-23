@@ -2,7 +2,7 @@
 
 Summary: The Agena Programming Language
 Name: agena
-Version: 2.39.1
+Version: 3.10.1
 Release: 1
 License: MIT
 Group: Development/Language
@@ -60,5 +60,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/%{name}
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.39.1
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.10.1
 - Rebuilt for Fedora

@@ -2,7 +2,7 @@
 %global _default_patch_fuzz 2
 
 Name:		gitea
-Version:	1.20.5
+Version:	1.21.11
 Release:	1
 Summary:	Git with a cup of tea, painless self-hosted git service
 License:	MIT
@@ -64,5 +64,5 @@ userdel gitea
 %doc *.md
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.20.5
+* Sun Apr 21 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.21.11
 - Rebuilt for Fedora

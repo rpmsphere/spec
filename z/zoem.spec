@@ -1,15 +1,16 @@
-%global version 11.166
+%global version 21.341
 %global version2 %(tr '.' '-' <<<%{version})
 
 Summary: Zoem is an interpretive macro/programming language
 Name:    zoem
 Version: %{version}
-Release: 10
+Release: 1
 License: GPLv2
 Group:   Publishing
 URL:     https://micans.org/%{name}/
 Source0: https://micans.org/%{name}/src/%{name}-%{version2}.tar.gz
 Patch0:  zoem-11-166-mga-multiple-def.patch
+BuildRequires: cimfomfa-devel
 
 %description
 Zoem is an interpretive macro/programming language that is evaluated by the
@@ -40,7 +41,7 @@ further to plain text, PostScript, and PDF.
 %{_mandir}/man1/*
 
 %changelog
-* Sun Jan 23 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 11.166
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 21.341
 - Rebuilt for Fedora
 * Fri May 15 2020 danf <danf> 11_166-10.mga8
 + Revision: 1583994

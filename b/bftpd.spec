@@ -1,5 +1,5 @@
 Name:      bftpd
-Version:   6.1
+Version:   6.2
 Release:   1
 Summary:   A small, fast and easy-to-configure FTP server
 License:   GPL
@@ -35,7 +35,7 @@ mkdir -p %buildroot/var/run/bftpd
 /var/log/bftpd.log
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 6.2
 - Rebuilt for Fedora
 * Wed Apr 17 2013 Dmitry V. Levin (QA) <qa_ldv@altlinux.org> 2.1-alt0.1.qa1
 - NMU: rebuilt for debuginfo.

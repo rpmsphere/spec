@@ -2,7 +2,7 @@
 
 Name: hashrat
 Summary: Hashing tool supporting several hashes and recursivity
-Version: 1.15
+Version: 1.19
 License: GPLv3
 Release: 1
 Group: utils
@@ -24,6 +24,7 @@ and network security.
 
 %prep
 %setup -q -n %{_name}-%{version}
+sed -i 's|runstatedir|runstate|g' configure
 
 %build
 %configure
@@ -38,5 +39,5 @@ make install DESTDIR=%{buildroot}
 %{_mandir}/man1/%{name}.1*
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.15
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.19
 - Rebuilt for Fedora

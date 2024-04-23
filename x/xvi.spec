@@ -2,8 +2,8 @@
 
 Name: xvi
 Summary: Small multiple-window version of the `vi' text editor
-Version: 2.50.3
-Release: 3.1
+Version: 2.51
+Release: 1
 Group: editors
 License: Free Software
 URL: https://github.com/martinwguy/xvi
@@ -42,5 +42,5 @@ make install DESTDIR=%{buildroot}
 %{_datadir}/%{name}
 
 %changelog
-* Mon Oct 15 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.50.3
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.51
 - Rebuilt for Fedora

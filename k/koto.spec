@@ -2,7 +2,7 @@
 
 Summary: A simple, expressive, embeddable programming language
 Name: koto
-Version: 0.11.0
+Version: 0.12.0
 Release: 1
 License: MIT
 Group: Development/Languages
@@ -35,5 +35,5 @@ install -m755 target/release/koto %{buildroot}%{_bindir}
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.11.0
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.0
 - Rebuilt for Fedora

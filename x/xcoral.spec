@@ -5,7 +5,7 @@ BuildRequires:  libX11-devel, libXt-devel
 License:        GPL-2.0+
 Group:          Productivity/Editors/Other
 Summary:        X11 Editor with C/C++/Java Browser and lots more
-Version:        3.50.2
+Version:        4.02.5
 Release:        1
 URL:            https://xcoral.free.fr/
 Source0:        %{name}-%{version}.tar.gz
@@ -50,7 +50,7 @@ find Doc -name '*.ps' -exec bzip2 {} \;
 find Doc -name '*.pdf' -exec bzip2 {} \;
 #install -D -m 644 %{S:1} $RPM_BUILD_ROOT/etc/skel/.xcoralrc
 install -D -m 644 SmacLib/xcoralrc.lf $RPM_BUILD_ROOT/etc/skel/.xcoralrc
-sed -i 's|%{buildroot}||' %{buildroot}/usr/bin/%{name}
+sed -i 's|%{buildroot}||' %{buildroot}/usr/bin/%{name} %{buildroot}/usr/lib/xcoral/utilities.sc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/lib/xcoral
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.50.2
+* Sun Apr 21 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 4.02.5
 - Rebuilt for Fedora
 * Wed Aug 26 2009 mls@suse.de
 - make patch0 usage consistent

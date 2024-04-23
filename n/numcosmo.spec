@@ -3,7 +3,7 @@
 %undefine _auto_set_build_flags
 
 Name:           numcosmo
-Version:        0.15.2
+Version:        0.18.2
 Release:        1
 Summary:        Numerical Cosmology
 Group:          Productivity/Scientific/Physics
@@ -68,6 +68,7 @@ done
 %build
 ./autogen.sh --prefix=/usr --disable-static --enable-shared
 #configure
+sed -i 's|0\.15\.2|%{version}|' `find . -name Makefile`
 %make_build
 
 %install
@@ -96,7 +97,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gir-1.0/*
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.15.2
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18.2
 - Rebuilt for Fedora
 * Mon Oct 29 2012 sandro@isoftware.com.br
 - Added backward compat for older fftw.

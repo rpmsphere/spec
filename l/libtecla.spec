@@ -1,8 +1,8 @@
 %undefine _missing_build_ids_terminate_build
 
-Name:           tecla
+Name:           libtecla
 Version:        1.6.3
-Release:        7.1
+Release:        8
 Summary:        Interactive command line editing library
 License:        X11
 Group:          Development/Libraries/C and C++
@@ -71,7 +71,7 @@ ln -s enhance_r %{buildroot}/%{_bindir}/enhance
 %{_libdir}/libtecla_r.so
 
 %changelog
-* Fri Apr 13 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.3
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.3
 - Rebuilt for Fedora
 * Fri Jul  7 2017 adam.majer@suse.de
 - Add enhance->enhance_r compatibility symlink to binary

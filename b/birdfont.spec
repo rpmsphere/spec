@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           birdfont
-Version:        2.32.3
+Version:        2.33.4
 Release:        1
 Summary:        Font editor
 License:        GPLv3+
@@ -52,5 +52,5 @@ chmod +x %{?buildroot}%{_libdir}/libbird*.*
 %{_datadir}/mime/packages/birdfont.xml
 
 %changelog
-* Sun Nov 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.32.3
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.33.4
 - Rebuilt for Fedora

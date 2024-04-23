@@ -1,6 +1,6 @@
 Summary:	Cross-platform Python spreadsheet application
 Name:		pyspread
-Version:	2.1.1
+Version:	2.2.3
 Release:	1
 License:	GPLv3
 Group:		Office/Spreadsheet
@@ -45,7 +45,7 @@ install -Dm644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desk
 %exclude /usr/pyspread/share/applications/io.gitlab.pyspread.pyspread.desktop
 
 %changelog
-* Sun Dec 11 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.1
+* Sun Dec 11 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.3
 - Rebuilt for Fedora
 * Wed Oct 15 2014 umeabot <umeabot> 0.3.3-3.mga5
 + Revision: 741786

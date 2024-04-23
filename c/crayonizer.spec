@@ -1,6 +1,6 @@
 Name: crayonizer
 Summary: A console colorer app
-Version: 2.3
+Version: 2.4
 Release: 1
 Group: Applications/Text
 License: GPLv3
@@ -31,5 +31,5 @@ cp examples/* %{buildroot}%{_sysconfdir}/%{name}.d
 %{_sysconfdir}/%{name}.d
 
 %changelog
-* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
 - Rebuilt for Fedora

@@ -1,7 +1,7 @@
 Name: kona
 Summary: Open-source implementation of the K programming language
 Version: 3.2.0
-Release: 1
+Release: 2
 Group: Development/Language
 License: ISC
 URL: https://github.com/kevinlawler/kona
@@ -32,5 +32,5 @@ install -Dm755 k %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Sun Mar 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.0
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.0
 - Rebuilt for Fedora

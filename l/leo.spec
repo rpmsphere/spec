@@ -1,14 +1,13 @@
 %undefine _debugsource_packages
 
 Name:           leo
-Version:        6.7.4
+Version:        6.7.7
 Release:        1
 Summary:        Leonine Editor with Outlines
 URL:            https://webpages.charter.net/edreamleo/front.html
 License:        MIT
 Group:          Applications/Editor
-#Source0:        https://dl.sourceforge.net/project/leo/Leo/%{version}%20final/Leo-%{version}-final.zip
-Source0:	leo-editor-%{version}.tar.gz
+Source0:	leo-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3
 BuildRequires:  python3-setuptools
@@ -20,8 +19,7 @@ Superficially, Leo may look like other outlining programs, code folding editors
 or class browsers, but it most certainly is not.
 
 %prep
-%setup -q -n leo-editor-%{version}
-#sed -i '82i from __future__ import print_function' leo/external/edb.py
+%setup -q
 
 %build
 python3 setup.py build
@@ -36,7 +34,7 @@ Encoding=UTF-8
 Name=Leo
 Comment=Leonine Editor with Outlines
 Exec=%{name}
-Icon=%{python2_sitelib}/%{name}/Icons/leoapp32.png
+Icon=%{python3_sitelib}/%{name}/Icons/leoapp32.png
 Terminal=false
 Type=Application
 StartupNotify=true
@@ -59,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %{python3_sitelib}/%{name}*
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 6.7.4
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 6.7.7
 - Rebuilt for Fedora

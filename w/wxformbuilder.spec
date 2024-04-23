@@ -3,7 +3,7 @@
 
 Summary:	An open-source, cross-platform RAD tool for wxWidgets
 Name:		wxformbuilder
-Version:	3.10.1
+Version:	4.1.0
 Release:	1
 License:	GPLv2
 Group:		Development/Tools 
@@ -24,14 +24,18 @@ facilities for extending the set of widgets easily via plugins.
 %prep
 %setup -q -n %{oname}-%{version}
 ##ln -sf /usr/bin/wx-config-3.0 /etc/alternatives/wx-config
-sed -i '45i #include <cstdint>' src/md5/md5.hh
+#sed -i '45i #include <cstdint>' src/md5/md5.hh
 
 %build
-sh create_build_files4.sh
-cd build/3.0/gmake
-CFLAGS=-I/usr/include/ticpp make config=release all
+#sh create_build_files4.sh
+#cd build/3.0/gmake
+#CFLAGS=-I/usr/include/ticpp make config=release all
+%{cmake}
+%{cmake_build}
 
 %install
+%{cmake_install}
+%if 0
 install -d -m 0755 %buildroot%{_bindir}
 install -d -m 0755 %buildroot%{_libdir}/%{name}
 install -d -m 0755 %buildroot%{_datadir}/%{name}
@@ -64,6 +68,7 @@ Terminal=false
 Type=Application
 Categories=Development;IDE;GUIDesigner;
 EOF
+%endif
 
 %clean
 rm -rf %{buildroot}
@@ -73,11 +78,13 @@ rm -rf %{buildroot}
 %{_bindir}/%{name}
 %{_libdir}/%{name}
 %{_datadir}/%{name}
-%{_datadir}/applications/%{name}*.desktop
-%{_datadir}/icons/hicolor/*/*/%{name}.*
+%{_datadir}/applications/*.desktop
+%{_datadir}/icons/hicolor/*/*/*
+%{_datadir}/metainfo/org.wxformbuilder.wxFormBuilder.metainfo.xml
+%{_datadir}/mime/packages/org.wxformbuilder.wxFormBuilder.xml
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 3.10.1
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.0
 - Rebuilt for Fedora
 * Mon Dec 14 2015 Oleg Kozlov <xxblx.oleg@yandex.com> 3.5.0beta-1.mga5
 - built for mageia 5

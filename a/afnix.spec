@@ -1,6 +1,6 @@
 Name: afnix
 Summary: Compiler and run-time for the AFNIX programming language
-Version: 3.7.0
+Version: 3.8.0
 Release: 1
 Group: interpreters
 License: Free Software
@@ -19,6 +19,7 @@ of modules that are designed to be platform independent.
 %setup -q -n %{name}-src-%{version}
 sed -i 's|/opt/%{name}|%{buildroot}/usr|' cnf/bin/%{name}-setup
 sed -i '120i *) ccvers=11 ;;' cnf/bin/%{name}-vcomp
+sed -i 's|-Werror||' cnf/mak/*
 
 %build
 make
@@ -37,5 +38,5 @@ echo %{_libdir}/%{name} > %{buildroot}/etc/ld.so.conf.d/%{name}-%{_arch}.conf
 /etc/ld.so.conf.d/%{name}-%{_arch}.conf
 
 %changelog
-* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.0
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.0
 - Rebuilt for Fedora

@@ -1,5 +1,5 @@
 Name:           redmine
-Version:        5.0.3
+Version:        5.1.2
 Release:        1
 Summary:        A flexible project management web application
 Group:          Networking/WWW
@@ -269,7 +269,7 @@ install -D -m644 %{SOURCE102} %{buildroot}%{_sysconfdir}/httpd/conf/vhosts.d/%{n
 %{_var}/www/%{name}/yarn.lock
 
 %changelog
-* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.3
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.1.2
 - Rebuilt for Fedora
 * Mon Dec 30 2013 pterjan <pterjan> 2.4.2-1.mga4
 + Revision: 563254

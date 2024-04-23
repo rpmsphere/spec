@@ -3,7 +3,7 @@
 
 Summary: Bash-like shell and scripting environment
 Name: murex
-Version: 5.0.9310
+Version: 6.0.1000
 Release: 1
 License: GPL-2
 Group: Development/Language
@@ -37,5 +37,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_bindir}/%{name}
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.9310
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0.1000
 - Rebuilt for Fedora

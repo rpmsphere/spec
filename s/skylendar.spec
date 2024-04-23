@@ -1,5 +1,5 @@
 Name:           skylendar
-Version:        4.1.2nn
+Version:        5.1pn
 Release:        2
 License:        GPL-2.0
 Summary:        Astrology software
@@ -30,7 +30,7 @@ BuildRequires:  pkgconfig(Qt5Sql)
 BuildRequires:  pkgconfig(Qt5Svg)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5Xml)
-BuildRequires:  pkgconfig(libpq)
+#BuildRequires:  pkgconfig(libpq)
 BuildRequires:  pkgconfig(zlib)
 Requires:       postgresql-server >= 9.3.0
 Requires:       perl >= 5.16
@@ -43,7 +43,7 @@ library, with multitasking charts and data stored in a SQL database
 (postgresql). Many charts and options.
 
 %prep
-%setup -q -n %{name}-4.1.2
+%setup -q
 #-%{release}
 #-%{version}
 #%patch0 -p1
@@ -53,6 +53,7 @@ library, with multitasking charts and data stored in a SQL database
 sed -i 's|pgsql/libpq-fe.h|libpq-fe.h|' src/astrosql.h
 sed -i 's|pgsql/libpq/libpq-fs.h|libpq/libpq-fs.h|' src/astrosql.cpp
 sed -i '28i #include <QPainterPath>' src/astrorings.cpp
+sed -i 's|exit()|set(PGC "pg_server_config")|' src/CMakeLists.txt
 
 %build
 %cmake -DCMAKE_BUILD_Type=Release .
@@ -78,20 +79,20 @@ rm -f %{buildroot}%{_libdir}/libskyldr.so
 %doc README HISTORY.txt
 %license COPYING
 %{_bindir}/skylendar
-%{_bindir}/skyservice
+#{_bindir}/skyservice
 %{_bindir}/skydmin
 %{_datadir}/applications/skylendar.desktop
 %{_datadir}/applications/skydmin.desktop
 %{_datadir}/skylendar
-%{_libdir}/lib*
+%{_libdir}/pgsql/libadate.so
 %{_datadir}/pixmaps/skylendar.png
 %{_datadir}/pixmaps/skydmin.png
 %{_datadir}/pixmaps/skif.png
 %{_datadir}/mime/packages/skif.xml
-%{_datadir}/fonts/truetype/skylendar.ttf
+%{_datadir}/fonts/Type1/skylendar.pfb
 
 %changelog
-* Fri Sep 04 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 4.1.2nn
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.1pn
 - Rebuilt for Fedora
 * Sat Feb  2 2019 malcolmlewis@opensuse.org
 - Add skylendar-fix-qt-error.patch: Add missing QT include.

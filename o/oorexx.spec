@@ -1,12 +1,12 @@
 Name:           oorexx
-Version:        5.1.0beta
+Version:        5.1.0.12831
 Release:        1
 Summary:        Open Object Rexx
 Group:          Development/Languages
 License:        CPL
 URL:            https://www.oorexx.org
-Source0:        https://switch.dl.sourceforge.net/sourceforge/oorexx/oorexx-5.1.0-12741.tar.gz
-Source1:        https://switch.dl.sourceforge.net/sourceforge/oorexx/ooRexx-%{version}-pdf.zip
+Source0:        https://switch.dl.sourceforge.net/sourceforge/oorexx/oorexx-5.1.0-12831.tar.gz
+Source1:        https://switch.dl.sourceforge.net/sourceforge/oorexx/ooRexx-5.1.0beta-pdf.zip
 Patch0:         oorexx-4.2.0-paths.patch
 Patch1:         oorexx-4.2.0-gcc6.patch
 BuildRequires:  byacc
@@ -46,7 +46,7 @@ Requires:       %{name}-libs = %{version}-%{release}
 Header files and libraries for ooRexx.
 
 %prep
-%setup -q -n %{name}-5.1.0-12741 -a 1
+%setup -q -n %{name}-5.1.0-12831 -a 1
 #unzip -qo %{SOURCE1}
 #patch0 -p1 -b .paths
 #patch1 -p1 -b .gcc6
@@ -96,7 +96,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/rexx.img
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.1.0beta
+* Sun Apr 21 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.1.0.12831
 - Rebuilt for Fedora
 * Mon Oct 10 2016 Gérard Milmeister <gemi@bluewin.ch> - 4.2.0-3
 - Patch for gcc6

@@ -4,7 +4,7 @@
 
 Summary: The V Programming Language
 Name: vlang
-Version: 0.3.4
+Version: 0.4.3
 Release: 1
 License: MIT
 Group: Development/Language
@@ -23,6 +23,7 @@ Compiles itself in <1s with zero library dependencies.
 #sed -i 's|byte{}|u8{}|' vlib/builtin/builtin_nix.c.v vlib/builtin/int.v vlib/strings/builder.c.v vlib/strconv/format_mem.c.v vlib/strconv/utilities.c.v vlib/os/os.c.v vlib/os/os_nix.c.v vlib/v/util/version/version.v
 #sed -i '/type u8 = byte/d' vlib/builtin/int.v
 sed -i 's|/usr/bin/env -S v|/usr/bin/v|' vlib/v/tests/script_with_no_extension
+sed -i '36,37d' vlib/strconv/f32_str.c.v
 
 %build
 make
@@ -41,5 +42,5 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_libexecdir}/%{name}
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.4
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.3
 - Rebuilt for Fedora

@@ -2,12 +2,12 @@
 
 Summary:	Disk encryption software 
 Name:		veracrypt
-Version:	1.24.7
+Version:	1.26.7
 Release:	1
 License:	Microsoft Public License
 Group:		File tools
 URL:		https://www.veracrypt.fr/
-Source0:	https://github.com/veracrypt/VeraCrypt/archive/VeraCrypt_1.24-Update7_Source.tar.bz2
+Source0:	https://github.com/veracrypt/VeraCrypt/archive/VeraCrypt_%{version}_Source.tar.bz2
 Patch1:		veracrypt-1.0f-2-no-makeself.patch
 Patch2:		veracrypt-1.0f-2-desktop.patch 
 BuildRequires:	wxGTK3-devel
@@ -22,7 +22,7 @@ Free disk encryption software based on TrueCrypt.
 %prep
 %setup -qc
 #%patch1 -p1
-%patch2 -p1
+#patch2 -p1
 #sed -i 's|dumpversion|dumpfullversion|' src/Makefile
 
 %build
@@ -50,9 +50,12 @@ install -Dm 0644 Resources/Icons/VeraCrypt-48x48.png %{buildroot}%{_datadir}/ico
 %{_datadir}/applications/*
 %{_datadir}/pixmaps/*
 %{_datadir}/icons/hicolor/*/apps/*
+%{_sbindir}/mount.veracrypt
+%{_datadir}/mime/packages/veracrypt.xml
+%{_datadir}/veracrypt
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.24.7
+* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.26.7
 - Rebuilt for Fedora
 * Tue Oct 18 2016 Denis Silakov <denis.silakov@rosalab.ru> 1.19-1
 - (9623fad) Merge pull request #4 from tremod/veracrypt:rosa2016.1

@@ -1,20 +1,20 @@
-Summary:	Window Manager Configurator
-Summary(de):	Window Manager Configurator
-Summary(es):	Configurador de Administradores de ventanas
-Summary(fr):	Configurateur de gestionnaires de fenętres
-Summary(pl):	Konfigurator zarządców okien
-Summary(pt_BR):	Configurador de gerenciadores de janelas
-Summary(tr):	Pencere denetleyicisi ayarlarý
-Name:		wmconfig
-Version:	1.5.1
-Release:	1
-License:	GPLv2
-Group:		X11/Window Managers/Tools
-Source0:	https://www.arrishq.net/files/%{name}-%{version}.tar.gz
-Source1:	%{name}-README.PLD
-URL:		https://www.arrishq.net/
-BuildRequires:	autoconf
-BuildRequires:	automake
+Summary:        Window Manager Configurator
+Summary(de):    Window Manager Configurator
+Summary(es):    Configurador de Administradores de ventanas
+Summary(fr):    Configurateur de gestionnaires de fenętres
+Summary(pl):    Konfigurator zarządców okien
+Summary(pt_BR): Configurador de gerenciadores de janelas
+Summary(tr):    Pencere denetleyicisi ayarlarý
+Name:           wmconfig
+Version:        1.5.1
+Release:        1
+License:        GPLv2
+Group:          X11/Window Managers/Tools
+Source0:        https://www.arrishq.net/files/%{name}-%{version}.tar.gz
+Source1:        %{name}-README.PLD
+URL:            https://www.arrishq.net/
+BuildRequires:  autoconf
+BuildRequires:  automake
 
 %description
 This is a program that will generate menu configurations for different
@@ -53,9 +53,6 @@ make
 
 %install
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS README* TODO ChangeLog

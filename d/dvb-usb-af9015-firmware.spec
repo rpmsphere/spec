@@ -25,9 +25,6 @@ BuildArch: noarch
 %{__mkdir_p} %{buildroot}/lib/firmware
 %{__install} -p -m 0644 %{SOURCE0} %{buildroot}/lib/firmware/%{_name}.fw
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 /lib/firmware/%{_name}.fw
 

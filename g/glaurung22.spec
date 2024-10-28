@@ -6,17 +6,17 @@ License:        GPL-2.0
 Group:          Amusements/Games/Board/Chess
 URL:            https://www.glaurungchess.com/
 Source:         %{name}.tar.bz2
-Source1:	x%{name}
-Source2:	%{name}.sh
-Source3:	%{name}-polyglot.sh
-Source4:	glaurung.6
-Source5:	%{name}.ini
-Source6:	Book.bin
-Patch0:		%{name}-openSUSE-Factory-fix_linking.patch
-Patch1:		%{name}-openSUSE-Factory-gcc44.patch
+Source1:        x%{name}
+Source2:        %{name}.sh
+Source3:        %{name}-polyglot.sh
+Source4:        glaurung.6
+Source5:        %{name}.ini
+Source6:        Book.bin
+Patch0:         %{name}-openSUSE-Factory-fix_linking.patch
+Patch1:         %{name}-openSUSE-Factory-gcc44.patch
 Patch2:         glaurung22-no-buildtime.patch
 BuildRequires:  gcc-c++ dos2unix
-Recommends:	polyglot xboard
+Recommends:     polyglot xboard
 
 %description
 This is a very strong chess engine, finished 4th place at internatonal ChessWar X. 
@@ -25,16 +25,16 @@ This means to play against it, you have to use an UCI capable interface, like kn
 
 Authors:
 --------
-		Tord Romstad <tord@glaurungchess.com>
-		Oliver Korff <ok@xynyx.de> (manual page, taken from Debian upstream)
-		Salvo Spitaleri (opening book "Book.bin") 
+                Tord Romstad <tord@glaurungchess.com>
+                Oliver Korff <ok@xynyx.de> (manual page, taken from Debian upstream)
+                Salvo Spitaleri (opening book "Book.bin") 
 
 
 %prep
 %setup -q -n %{name}
-%patch0 -p0
-%patch1 -p0
-%patch2 -p1
+%patch 0 -p0
+%patch 1 -p0
+%patch 2 -p1
 dos2unix Readme.txt
 dos2unix src/COPYING
 
@@ -55,9 +55,6 @@ install -m 755 %{SOURCE3} $RPM_BUILD_ROOT%{_bindir}/%{name}-polyglot
 install -m 644 %{SOURCE4} $RPM_BUILD_ROOT%{_mandir}/man6/
 install -m 644 %{SOURCE5} $RPM_BUILD_ROOT%{_datadir}/%{name}/
 install -m 644 %{SOURCE6} $RPM_BUILD_ROOT%{_datadir}/%{name}/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc src/COPYING Readme.txt

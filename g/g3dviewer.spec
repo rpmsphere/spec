@@ -56,9 +56,6 @@ desktop-file-install --dir=$RPM_BUILD_ROOT%{_datadir}/applications %{SOURCE1}
 cp -p $RPM_BUILD_ROOT%{_datadir}/%{name}/glade/g3d48.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 %find_lang %{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog COPY* NEWS READ* TODO
 %{_mandir}/man*/%{name}.*

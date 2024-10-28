@@ -26,9 +26,6 @@ use it to make your X11 desktop look like a boring text console ;-)
 
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' $RPM_BUILD_ROOT/usr/bin/jvterm-imview
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS TODO COPYING
 %{_bindir}/jvterm*

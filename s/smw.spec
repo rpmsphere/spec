@@ -8,7 +8,7 @@ Release: 17.4
 License: GPLv2
 Group: Amusements/Games/Action
 Source0: smw-1.8.tar.gz
-BuildRequires:	gcc-c++ make SDL-devel SDL_mixer-devel SDL_image-devel libogg-devel libpng12-devel libjpeg-devel libvorbis-devel
+BuildRequires:  gcc-c++ make SDL-devel SDL_mixer-devel SDL_image-devel libogg-devel libpng12-devel libjpeg-devel libvorbis-devel
 URL: https://github.com/erlehmann/Super-Mario-War 
 
 %description
@@ -28,9 +28,6 @@ make
 make install DESTDIR=%{buildroot}
 mv %{buildroot}/usr/games %{buildroot}/usr/bin
 mv %{buildroot}/usr/share/games/smw %{buildroot}/usr/share/smw
-
-%clean
-rm -rf %{buildroot}
 
 %files
 /usr/bin/*

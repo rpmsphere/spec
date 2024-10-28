@@ -35,9 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr/bin/
 mv bin/qtwvdialer $RPM_BUILD_ROOT/usr/bin/qtwvdialer
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/qtwvdialer
 %doc AUTHORS COPYING README

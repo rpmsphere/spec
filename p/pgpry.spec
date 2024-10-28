@@ -31,9 +31,6 @@ rm -rf $RPM_BUILD_ROOT
 install -Dm 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_mandir}/man1/pgpry.1
 rm -f $RPM_BUILD_ROOT%{_bindir}/utests
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog COPYING README THANKS TODO
 %{_bindir}/%{name}

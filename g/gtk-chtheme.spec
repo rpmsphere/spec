@@ -1,17 +1,17 @@
-Name:		gtk-chtheme
-Version:	0.3.1
-Release:	19.1
-Summary:	Gtk+ 2.0 theme preview and selection made slick
-Group:		User Interface/Desktops
-License:	GPLv2+
-URL:		https://plasmasturm.org/programs/gtk-chtheme/
-Source0:	https://plasmasturm.org/code/%{name}/%{name}-%{version}.tar.bz2
-Source1:	%{name}.desktop
-Source2:	%{name}.png
-Patch0:		%{name}-nostrip.patch
-Patch1:		%{name}-0.3.1-new-api.patch
-Patch2:		%{name}-0.3.1-fix.patch
-BuildRequires:	gtk2-devel desktop-file-utils
+Name:           gtk-chtheme
+Version:        0.3.1
+Release:        19.1
+Summary:        Gtk+ 2.0 theme preview and selection made slick
+Group:          User Interface/Desktops
+License:        GPLv2+
+URL:            https://plasmasturm.org/programs/gtk-chtheme/
+Source0:        https://plasmasturm.org/code/%{name}/%{name}-%{version}.tar.bz2
+Source1:        %{name}.desktop
+Source2:        %{name}.png
+Patch0:         %{name}-nostrip.patch
+Patch1:         %{name}-0.3.1-new-api.patch
+Patch2:         %{name}-0.3.1-fix.patch
+BuildRequires:  gtk2-devel desktop-file-utils
 
 %description
 As the name suggests, this little program lets you change your Gtk+ 2.0 theme.
@@ -21,9 +21,9 @@ A large variety of widgets provides a comprehensive demonstration.
 
 %prep
 %setup -q
-%patch0 -p0 -b .orig
-%patch1 -p1 -b .orig
-%patch2 -p1 -b .fix
+%patch 0 -p0 -b .orig
+%patch 1 -p1 -b .orig
+%patch 2 -p1 -b .fix
 
 %build
 make %{?_smp_mflags}
@@ -32,16 +32,13 @@ make %{?_smp_mflags}
 rm -rf %{buildroot}
 make install DESTDIR=%{buildroot} INSTALL="install -p"
 
-desktop-file-install					\
-	--dir=%{buildroot}%{_datadir}/applications	\
-	%{SOURCE1}
+desktop-file-install                                    \
+        --dir=%{buildroot}%{_datadir}/applications      \
+        %{SOURCE1}
 
 # Fix permission of man file
 find %{buildroot}%{_mandir}/man1/%{name}.* -type f | xargs chmod 0644 || true
 install -Dm644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc ChangeLog COPYING

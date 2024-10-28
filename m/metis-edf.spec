@@ -55,9 +55,9 @@ This package contains the metis-edf manual in ps fo%__rmat.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 
 %build
 export SUSE_ASNEEDED=0
@@ -79,9 +79,6 @@ strip $RPM_BUILD_ROOT%{_bindir}/onmetis.exe
 
 %__install -d $RPM_BUILD_ROOT%{_libdir}
 ln -sf %{_libdir}/libmetis-edf.so.4 $RPM_BUILD_ROOT%{_libdir}/libmetis-edf.so
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %post -n lib%{name}
 /sbin/ldconfig

@@ -73,9 +73,6 @@ echo -e '#!/bin/bash\ncd %{_datadir}/%{name}\n%{_bindir}/between-exe\nexit' > %b
 #__cp %_sourcedir/Between.6 %buildroot%{_mandir}/man6/between.6
 #__cp %_sourcedir/Between-exe.6 %buildroot%{_mandir}/man6/between-exe.6
 
-%clean
-rm -rf %buildroot
-
 %files
 %doc game7/documentation/*.txt
 #{_mandir}/man6/between.6*

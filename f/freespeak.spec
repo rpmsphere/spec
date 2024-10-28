@@ -62,9 +62,6 @@ install -pm 644 %{S:1} $RPM_BUILD_ROOT%{_mandir}/man1/
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %post
 GCONF_CONFIG_SOURCE=`/usr/bin/gconftool-2 --get-default-source` \
 /usr/bin/gconftool-2 --makefile-install-rule  \

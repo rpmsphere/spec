@@ -6,7 +6,7 @@ Summary:        WeChat for linux
 Version:        0.6
 Release:        1
 License:        GPL-3.0
-Url:            https://github.com/xiangzhai/qwx
+URL:            https://github.com/xiangzhai/qwx
 Group:          Productivity/Networking/Instant Messenger
 Source:        %{name}-%{version}.tar.gz
 %if 0%{?fedora}

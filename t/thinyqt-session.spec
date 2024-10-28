@@ -2,11 +2,11 @@ Name:           thinyqt-session
 Version:        0.4
 Release:        1
 Summary:        A Thin and Tiny Session for X with Qt
-Group:		User Interface/Desktops
+Group:          User Interface/Desktops
 License:        CC0
 URL:            https://github.com/bluebat/thinyqt-session
 Source0:        %{name}-%{version}.tar.gz
-BuildArch:	noarch
+BuildArch:      noarch
 Requires:       notification-daemon
 Requires:       pulseaudio-module-x11
 Requires:       eggwm

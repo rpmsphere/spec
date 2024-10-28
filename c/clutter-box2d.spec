@@ -87,9 +87,6 @@ make %{?jobs:-j%jobs}
 DESTDIR=$RPM_BUILD_ROOT make install
 rm -f $RPM_BUILD_ROOT/%{_libdir}/*.la
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README COPYING ChangeLog
 %{_libdir}/*.so.*

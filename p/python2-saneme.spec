@@ -5,7 +5,7 @@ Release:        1
 License:        GPL
 Group:          Development/Libraries/Python
 Source:         python-saneme-%{version}.tar.gz
-URL:		https://www.etlafins.com/saneme
+URL:            https://www.etlafins.com/saneme
 BuildArch:      noarch
 Requires:       sane-backends-libs, python2-imaging
 
@@ -27,9 +27,6 @@ python2 setup.py build
 %install
 rm -rf %{buildroot}
 python2 setup.py install --root=$RPM_BUILD_ROOT
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc COPYING README

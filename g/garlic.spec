@@ -1,14 +1,14 @@
-Name: 		garlic
-Version: 	1.6
-Release: 	12.1
-Summary: 	Free molecular viewer and editor
-License: 	GPL
-Group: 		Sciences/Chemistry
-Source0: 	%{name}-%{version}.tar.bz2
-Source1: 	%{name}-%{version}-doc.tar.bz2
-Source2:	%{name}.1.bz2
-URL: 		https://garlic.mefos.hr/sources
-BuildRequires: 	libX11-devel
+Name:           garlic
+Version:        1.6
+Release:        12.1
+Summary:        Free molecular viewer and editor
+License:        GPL
+Group:          Sciences/Chemistry
+Source0:        %{name}-%{version}.tar.bz2
+Source1:        %{name}-%{version}-doc.tar.bz2
+Source2:        %{name}.1.bz2
+URL:            https://garlic.mefos.hr/sources
+BuildRequires:  libX11-devel
 
 %description
 Garlic is a full-featured molecular viewer and editor. It is
@@ -47,9 +47,6 @@ Name=Garlic
 Icon=%{name}
 Comment=3D Molecule Viewer
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README HISTORY BUGS *.script doc
@@ -102,7 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 * Sun Nov 24 2002 Lenny Cartier <lenny@mandrakesoft.com> 1.2-2mdk
 - add menu macros
 - from Austin Acton <aacton@yorku.ca> :
-	- add menu entry and threaded build
-	- expand description
+        - add menu entry and threaded build
+        - expand description
 * Fri Sep 20 2002 Guillaume Cottenceau <gc@mandrakesoft.com> 1.2-1mdk
 - first mdk package

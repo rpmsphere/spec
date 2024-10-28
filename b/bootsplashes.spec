@@ -31,9 +31,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/boot/grub/%{name}
 cp * $RPM_BUILD_ROOT/boot/grub/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 /boot/grub/%{name}
 

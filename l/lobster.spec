@@ -27,9 +27,6 @@ make
 cd dev
 %make_install
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/Lobster

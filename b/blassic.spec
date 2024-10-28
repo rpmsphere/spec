@@ -10,6 +10,8 @@ URL: https://blassic.net/
 Source: https://blassic.net/bin/%{name}-%{version}.tgz
 BuildRequires: gcc-c++
 #BuildRequires: svgalib-devel
+BuildRequires: libX11-devel
+BuildRequires: ncurses-devel
 
 %description
 Blassic is a classic Basic interpreter. The line numbers are
@@ -35,9 +37,6 @@ make
 %install
 rm -fR $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -fR $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS NEWS README THANKS TODO

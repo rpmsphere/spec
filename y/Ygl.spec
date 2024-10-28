@@ -73,9 +73,6 @@ ln -s ../X11/Yfgl.h $RPM_BUILD_ROOT/usr/include/gl/fdevice.h
 %{_includedir}/gl/fdevice.h
 %doc examples
 
-%clean 
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Mon Feb 06 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 4.2g
 - Rebuilt for Fedora

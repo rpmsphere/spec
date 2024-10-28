@@ -1,7 +1,7 @@
 %define _name ifd-gempc
 
 Name:           pcsc-lite-gempc
-BuildRequires:  libusb-devel
+BuildRequires:  libusb-compat-0.1-devel
 BuildRequires:  pcsc-lite-devel
 Version:        1.0.8
 Release:        1
@@ -11,7 +11,7 @@ License:        BSD-3-Clause AND GPL-2.0-or-later
 Group:          Productivity/Security
 Source0:        https://ludovic.rousseau.free.fr/softwares/ifd-GemPC/%{_name}-%{version}.tar.gz
 # PATCH-FIX-OPENSUSE pcsc-gempc-1.0.0-devname.diff okir@suse.de -- Use standard device nodes.
-Patch:          %{_name}-1.0.0-devname.diff
+Patch0:         %{_name}-1.0.0-devname.diff
 # PATCH-FIX-OPENSUSE pcsc-gempc-makefile.diff mjancar@suse.cz -- Fix build environment.
 Patch1:         %{_name}-1.0.0-makefile.diff
 Requires:       pcsc-lite
@@ -26,17 +26,17 @@ pcsc-lite package.
 
 %prep
 %setup -q -n %{_name}-%{version}
-%patch
-%patch1
+%patch 0
+%patch 1
 mv README.410 README_410
 mv README.430 README_430
 for DIR in GemPC410 GemPC430 ; do
     for FILE in $DIR/COPYING* $DIR/TODO* ; do
-	SUFFIX=.${FILE##*.}
-	if test "$SUFFIX" = ".$FILE" ; then
-	    SUFFIX=
-	fi
-	mv $FILE ${FILE%.*}${DIR#GemPC}$SUFFIX
+        SUFFIX=.${FILE##*.}
+        if test "$SUFFIX" = ".$FILE" ; then
+            SUFFIX=
+        fi
+        mv $FILE ${FILE%.*}${DIR#GemPC}$SUFFIX
     done
 done
 sed -i 's|PCSCLITE_MAX_READERS_CONTEXTS|16|' common/gempc_ifdhandler.h
@@ -46,9 +46,6 @@ make %{?jobs:-j%jobs} CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 %make_install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc Changelog README* Gem*/COPYING* Gem*/TODO*

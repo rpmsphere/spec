@@ -28,9 +28,6 @@ rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 rm -fr $RPM_BUILD_ROOT%{_datadir}/doc
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %dir %{ruby_libdir}/suikyo
 %{ruby_libdir}/suikyo/suikyo*.rb

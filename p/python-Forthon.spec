@@ -8,7 +8,7 @@ Group:          Development/Languages
 License:        BSD
 URL:            https://hifweb.lbl.gov/Forthon/
 Source0:        https://hifweb.lbl.gov/Forthon/Forthon-%{version}.tar.gz
-Patch1:		buildfixes.patch
+Patch1:         buildfixes.patch
 BuildRequires:  python2-devel
 BuildRequires:  environment-modules
 BuildArch:      noarch
@@ -37,7 +37,7 @@ user's source code and the generated wrapping code into a Python module.
 
 %prep
 %setup -q -n %{rname}-%{version}
-%patch1 -p1 -b .buildfixes
+%patch 1 -p1 -b .buildfixes
 
 %build
 . /etc/profile.d/modules.sh
@@ -49,9 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 python2 setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
 mkdir -p %{buildroot}%{python2_sitelib}
 mv %{buildroot}%{python2_sitearch}/* %{buildroot}%{python2_sitelib}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt

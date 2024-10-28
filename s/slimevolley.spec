@@ -33,9 +33,6 @@ rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 echo -e "Name[zh_TW]=黏土排球\nComment[zh_TW]=平面排球模擬遊戲" >> %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/%{name}
 %{_bindir}/%{name}

@@ -4,8 +4,8 @@ Release:        4.1
 Summary:        CISCO-like Command Line Interface
 Group:          System Environment/Shells
 License:        GPLv2 
-URL:		https://clish.sourceforge.net/
-Source0: 	https://downloads.sourceforge.net/%{name}-%{version}.tar.gz   
+URL:            https://clish.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/%{name}-%{version}.tar.gz   
 BuildRequires:  gcc-c++
 BuildRequires:  autoconf
 BuildRequires:  automake
@@ -43,9 +43,6 @@ install -m 775 xml-examples/*.xml ${RPM_BUILD_ROOT}%{_sysconfdir}/clish
 mv ${RPM_BUILD_ROOT}/usr/lib ${RPM_BUILD_ROOT}/usr/lib64
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %{_libdir}/*.so.*
@@ -60,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/tinyrl/*.h
 %{_includedir}/tinyxml/*.h
 %{_sysconfdir}/clish/*.xml
-%exclude %{_libdir}/*.a	
+%exclude %{_libdir}/*.a 
 %exclude %{_libdir}/*.la 
 
 %post -p /sbin/ldconfig

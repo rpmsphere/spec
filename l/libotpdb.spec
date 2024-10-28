@@ -1,13 +1,13 @@
-Summary:	OTP token authentication daemon
-Name:		libotpdb
-Version:	88d5c3b7a826
-Release:	22.1
-License:	GPL
-Group:		System Environment/Daemons
-Vendor:		lsexperts
-URL:		https://opensource.lsexperts.de/projects/linotp/
-Source:		%{name}-%{version}.tar.gz
-BuildRequires:	openssl-devel, openldap-devel
+Summary:        OTP token authentication daemon
+Name:           libotpdb
+Version:        88d5c3b7a826
+Release:        22.1
+License:        GPL
+Group:          System Environment/Daemons
+Vendor:         lsexperts
+URL:            https://opensource.lsexperts.de/projects/linotp/
+Source:         %{name}-%{version}.tar.gz
+BuildRequires:  openssl-devel, openldap-devel
 
 %description
 Otpd is part of a suite of software for authenticating users with handheld OTP tokens.
@@ -31,9 +31,6 @@ make  %{?jobs:-j%jobs}
 
 %install
 %makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -p /sbin/ldconfig  
 

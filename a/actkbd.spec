@@ -5,9 +5,9 @@ Name:           actkbd
 Version:        0.2.8
 Release:        4.1
 URL:            https://users.softlab.ece.ntua.gr/~thkala/projects/actkbd/
-License:	GPL v2+
-Group:		System/Configuration/Other
-Source:		%name-%version.tar
+License:        GPL v2+
+Group:          System/Configuration/Other
+Source:         %name-%version.tar
 Patch0:         actkbd-0.2.7-amd64.patch
 
 %description
@@ -17,7 +17,7 @@ simple setups, or assigned custom actions to rarely used keys.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 sed -i 's|-Wall|-fPIE|' Makefile
 
 %build

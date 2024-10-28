@@ -1,13 +1,13 @@
-Name:		firebox-themes
-Version:	0.5.0
-Release:	2.1
-Summary:	Themes for the Firebox Window Manager
-Group:		User Interface/Desktops
-License:	GPLv2+
-URL:		https://firebox.intuxication.org/
-Source:		https://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
-Requires:	firebox
-BuildArch:	noarch
+Name:           firebox-themes
+Version:        0.5.0
+Release:        2.1
+Summary:        Themes for the Firebox Window Manager
+Group:          User Interface/Desktops
+License:        GPLv2+
+URL:            https://firebox.intuxication.org/
+Source:         https://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
+Requires:       firebox
+BuildArch:      noarch
 
 %description
 Themes for the Firebox Window Manager.
@@ -21,9 +21,6 @@ Themes for the Firebox Window Manager.
 %install
 rm -rf %{buildroot}
 %makeinstall
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README

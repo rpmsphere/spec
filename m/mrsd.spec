@@ -9,7 +9,7 @@ Group:          Amusements/Games
 URL:            https://ki11egg.sourceforge.net/
 Source0:        https://ignum.dl.sourceforge.net/project/ki11egg/mrsd/0.2/mrsd-v0.2.tgz
 Source1:        mrsd-0.2-fedora.tar.gz
-Patch:          mrsd-0.2-fedora.patch
+Patch0:          mrsd-0.2-fedora.patch
 BuildRequires:  fltk-devel gcc-c++
 
 %description
@@ -17,7 +17,7 @@ Chinese Chess (XiangQi) Sofware with strong AI.
 
 %prep
 %setup -q -n %{name}-v%{version} -a 1
-%patch -p1
+%patch 0 -p1
 sed -i 's|-----MRSDdirectory-----|%{_libdir}/%{name}|g' mrsd mrsd.desktop
 %ifarch aarch64
 sed -i 's|-maccumulate-outgoing-args||' cfast7/Makefile
@@ -39,9 +39,6 @@ install -m 644 gcch/img/* ${RPM_BUILD_ROOT}%{_libdir}/%{name}/img
 
 install -m 755 -D mrsd ${RPM_BUILD_ROOT}%{_bindir}/mrsd
 install -m 644 -D mrsd.desktop ${RPM_BUILD_ROOT}%{_datadir}/applications/mrsd.desktop
-
-%clean
-%__rm -rf %{buildroot}
 
 %files 
 %{_libdir}/%{name}

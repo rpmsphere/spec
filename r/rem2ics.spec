@@ -27,9 +27,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/rem2ics
 %{_mandir}/man1/rem2ics.1*

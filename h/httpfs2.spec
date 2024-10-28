@@ -1,15 +1,15 @@
-Name:		httpfs2
-Version:	0.1.5
-Release:	6
-Summary:	FUSE filesystem for mounting files from HTTP servers
-License:	GPLv2+
-Group:		Networking/Remote access
-URL:		https://httpfs.sourceforge.net/
-Source0:	https://sourceforge.net/projects/httpfs/files/%{name}/%{name}-%{version}.tar.gz
-Patch0:		httpfs2-0.1.5-mga-add_makeinstall_rule.patch
-BuildRequires:	pkgconfig(fuse)
-BuildRequires:	pkgconfig(gnutls)
-BuildRequires:	asciidoc
+Name:           httpfs2
+Version:        0.1.5
+Release:        6
+Summary:        FUSE filesystem for mounting files from HTTP servers
+License:        GPLv2+
+Group:          Networking/Remote access
+URL:            https://httpfs.sourceforge.net/
+Source0:        https://sourceforge.net/projects/httpfs/files/%{name}/%{name}-%{version}.tar.gz
+Patch0:         httpfs2-0.1.5-mga-add_makeinstall_rule.patch
+BuildRequires:  pkgconfig(fuse)
+BuildRequires:  pkgconfig(gnutls)
+BuildRequires:  asciidoc
 
 %description
 httpfs2 is a FUSE based filesystem for mounting HTTP or HTTPS URLS as files

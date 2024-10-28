@@ -33,8 +33,8 @@ the same look-and-feel everywhere.
 
 %prep
 %setup -qn %{name}-%{version}-src
-%patch0
-%patch1
+%patch 0
+%patch 1
 icotool -x -o . application/ste.ico
 sed -i 's/\r$//' LICENSE.GPL2
 dnf -y remove qscintilla-devel ||:

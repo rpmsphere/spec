@@ -1,35 +1,35 @@
-Name:		csmash
-Summary:	A 3D table tennis game
-Version:	0.6.6
-Release:	12.1
-Source0:	https://belnet.dl.sourceforge.net/sourceforge/cannonsmash/%{name}-%{version}.tar.bz2
-Source11:	%{name}.16.png
-Source12:	%{name}.32.png
-Source13:	%{name}.48.png
-Patch0:		csmash-0.6.6-64bit-fixes.patch
-Patch1:		csmash-0.6.6-gcc4.patch
-Patch2:		csmash-0.6.6-extraqualif.patch
-Patch3:		csmash-0.6.6-cflags.patch
-Patch4:		csmash-0.6.6-format.patch
+Name:           csmash
+Summary:        A 3D table tennis game
+Version:        0.6.6
+Release:        12.1
+Source0:        https://belnet.dl.sourceforge.net/sourceforge/cannonsmash/%{name}-%{version}.tar.bz2
+Source11:       %{name}.16.png
+Source12:       %{name}.32.png
+Source13:       %{name}.48.png
+Patch0:         csmash-0.6.6-64bit-fixes.patch
+Patch1:         csmash-0.6.6-gcc4.patch
+Patch2:         csmash-0.6.6-extraqualif.patch
+Patch3:         csmash-0.6.6-cflags.patch
+Patch4:         csmash-0.6.6-format.patch
 Patch5:         csmash-0.6.6-datadir.patch
-URL:		https://CannonSmash.sourceforge.net/
-License:	GPLv2
-Group:		Games/Sports
-BuildRequires:	pkgconfig(x11)
-BuildRequires:	pkgconfig(xext)
-BuildRequires:	pkgconfig(xi)
-BuildRequires:	pkgconfig(xmu)
-BuildRequires:	pkgconfig(xt)
-BuildRequires:	pkgconfig(SDL_mixer)
-BuildRequires:	pkgconfig(SDL_image)
-BuildRequires:	pkgconfig(alsa)
-BuildRequires:	gtk2-devel
-BuildRequires:	pkgconfig(glu)
-BuildRequires:	pkgconfig(libjpeg)
-#BuildRequires:	texinfo
-BuildRequires:	pkgconfig(zlib)
-BuildRequires:	gettext
-BuildRequires:	bison
+URL:            https://CannonSmash.sourceforge.net/
+License:        GPLv2
+Group:          Games/Sports
+BuildRequires:  pkgconfig(x11)
+BuildRequires:  pkgconfig(xext)
+BuildRequires:  pkgconfig(xi)
+BuildRequires:  pkgconfig(xmu)
+BuildRequires:  pkgconfig(xt)
+BuildRequires:  pkgconfig(SDL_mixer)
+BuildRequires:  pkgconfig(SDL_image)
+BuildRequires:  pkgconfig(alsa)
+BuildRequires:  gtk2-devel
+BuildRequires:  pkgconfig(glu)
+BuildRequires:  pkgconfig(libjpeg)
+#BuildRequires: texinfo
+BuildRequires:  pkgconfig(zlib)
+BuildRequires:  gettext
+BuildRequires:  bison
 
 %description
 CannonSmash is a 3D tabletennis game. The goal of this project is to represent

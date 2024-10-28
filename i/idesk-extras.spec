@@ -28,9 +28,6 @@ up and and running quickly and easily.
 %__rm -rf icons/32x32/.xvpics icons/48x48/.xvpics
 %__cp -a icons %{buildroot}%{_datadir}/idesk
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc CHANGES COPYING idesk-extras.html
 %{_datadir}/idesk/*

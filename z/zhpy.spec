@@ -1,13 +1,13 @@
-Name:		zhpy
-Version:	1.7.4
-Release:	3.1
-Summary:	Write python language in chinese
-Group:		Development/Language
-License:	MIT
-URL:		https://code.google.com/p/zhpy/
-Source0:	https://pypi.python.org/packages/source/z/zhpy/%{name}-%{version}.zip
-BuildRequires:	python2-devel, python2-setuptools
-BuildArch:	noarch
+Name:           zhpy
+Version:        1.7.4
+Release:        3.1
+Summary:        Write python language in chinese
+Group:          Development/Language
+License:        MIT
+URL:            https://code.google.com/p/zhpy/
+Source0:        https://pypi.python.org/packages/source/z/zhpy/%{name}-%{version}.zip
+BuildRequires:  python2-devel, python2-setuptools
+BuildArch:      noarch
 
 %description
 Zhpy on python is good for Taiwan and China beginners to learn python in our
@@ -26,9 +26,6 @@ rm -rf $RPM_BUILD_ROOT
 python2 setup.py install --skip-build --root $RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.txt PKG-INFO

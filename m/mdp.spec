@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Summary:	Command-line based markdown presentation tool
-Name:		mdp
-Version:	1.0.15
-Release:	1
-License:	GPLv3
-Group:		Office
-URL:		https://github.com/visit1985/mdp
-Source0:	%{name}-%{version}.tar.gz
-BuildRequires:	pkgconfig(ncurses)
-BuildRequires:	pkgconfig(ncursesw)
+Summary:        Command-line based markdown presentation tool
+Name:           mdp
+Version:        1.0.15
+Release:        1
+License:        GPLv3
+Group:          Office
+URL:            https://github.com/visit1985/mdp
+Source0:        %{name}-%{version}.tar.gz
+BuildRequires:  pkgconfig(ncurses)
+BuildRequires:  pkgconfig(ncursesw)
 
 %description
 A command-line based markdown presentation tool.

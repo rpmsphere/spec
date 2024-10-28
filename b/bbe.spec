@@ -29,9 +29,6 @@ rm -rf $RPM_BUILD_ROOT
 %exclude %{_datadir}/info/dir
 %{_mandir}/man1/bbe.1.gz
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.2
 - Rebuilt for Fedora

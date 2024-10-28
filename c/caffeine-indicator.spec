@@ -24,6 +24,7 @@ window is full-screen.
 %prep
 %setup -q -n caffeine
 sed -i 's|©|(c)|' caffein*
+sed -i '35i py_modules=[],' setup.py
 
 %build
 python3 setup.py build
@@ -31,9 +32,6 @@ python3 setup.py build
 %install
 rm -rf $RPM_BUILD_ROOT
 python3 setup.py install --root=$RPM_BUILD_ROOT --prefix=/usr
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING COPYING.LESSER README
@@ -48,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/caffeine-indicator/glade/GUI.glade
 
 %changelog
-* Tue Jan 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.3
+* Sun Jan 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.3
 - Rebuilt for Fedora
 * Sat Jan 30 2010 Isaac Fischer <xwaver@gmail.com> - 1.0.1-1  
 - initial spec

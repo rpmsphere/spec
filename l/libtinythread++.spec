@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name:		libtinythread++
-Version:	1.1
-Release:	2
-Summary:	A fairly compatible subset of the C++11 thread management classes
-Group:		System Environment/Libraries
-License:	zlib
-URL:		https://tinythreadpp.bitsnbites.eu/
-Source0:	https://tinythreadpp.bitsnbites.eu/files/TinyThread++-%version-src.tar.bz2
-BuildRequires:	gcc-c++
+Name:           libtinythread++
+Version:        1.1
+Release:        2
+Summary:        A fairly compatible subset of the C++11 thread management classes
+Group:          System Environment/Libraries
+License:        zlib
+URL:            https://tinythreadpp.bitsnbites.eu/
+Source0:        https://tinythreadpp.bitsnbites.eu/files/TinyThread++-%version-src.tar.bz2
+BuildRequires:  gcc-c++
 
 %description
 TinyThread++ implements a fairly compatible subset of the C++11
@@ -16,12 +16,12 @@ thread management classes.  It has minimal overhead -- most functions
 generate compact inline code, and library includes a very fast user
 space mutex class (fast_mutex).
 
-%package	devel
-Summary:	Development files for %{name}
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+%package        devel
+Summary:        Development files for %{name}
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
 
-%description	devel
+%description    devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
@@ -45,9 +45,6 @@ pushd test
 make
 ./hello && ./fractal && test -f fractal.tga && ./test
 popd
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -p /sbin/ldconfig
 

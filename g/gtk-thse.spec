@@ -24,9 +24,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 install %{_name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README README.de COPYING AUTHORS CHANGELOG CHANGELOG.de BUGS NEWS THANKS TODO
 %{_bindir}/%{name}

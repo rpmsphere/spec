@@ -32,9 +32,6 @@ ln -s libglv.so.0.3 $RPM_BUILD_ROOT%{_libdir}/libglv.so
 
 %postun -p /sbin/ldconfig
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc ChangeLog LICENSE README
 %{_libdir}/libglv.so

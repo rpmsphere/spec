@@ -1,16 +1,16 @@
 %define module  PQueue
 
-Summary: 	%{module} module for Python
-Name: 		python2-pqueue
-Version: 	0.2
-Release: 	1
-License: 	LGPL
-Group: 		Development/Python
-Source: 	%{module}-%{version}.tar.bz2
-Patch:		python-%{module}-0.2.lib64.patch
-URL:		https://www.csse.monash.edu.au/hons/projects/1999/Andrew.Snare
-BuildRequires:	python-devel
-BuildRequires:	autoconf
+Summary:        %{module} module for Python
+Name:           python2-pqueue
+Version:        0.2
+Release:        1
+License:        LGPL
+Group:          Development/Python
+Source:         %{module}-%{version}.tar.bz2
+Patch0:         python-%{module}-0.2.lib64.patch
+URL:            https://www.csse.monash.edu.au/hons/projects/1999/Andrew.Snare
+BuildRequires:  python-devel
+BuildRequires:  autoconf
 
 %description 
 This C extension implements a priority-queue object using a fibonacci
@@ -18,7 +18,7 @@ heap as the underlying data structure.
 
 %prep
 %setup -q -n %{module}
-%patch -p 1
+%patch 0 -p 1
 
 %build
 export PYTHON=/usr/bin/python2
@@ -30,9 +30,6 @@ sed -i 's/BLDSHARED/LDSHARED/' Makefile
 %install
 rm -rf %{buildroot}
 install -Dm 755 pqueuemodule.so %{buildroot}%{python2_sitearch}/pqueuemodule.so
-
-%clean 
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS COPYING README

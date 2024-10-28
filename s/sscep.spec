@@ -22,9 +22,6 @@ Simple SCEP (Simple Certificate Enrollment Protocol) client.
 rm -rf $RPM_BUILD_ROOT
 %cmake_install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING README.md AUTHORS ChangeLog TODO
 %{_bindir}/sscep

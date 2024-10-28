@@ -6,7 +6,7 @@ License:      GPL
 Version:      20120412
 Release:      7.1
 Source0:      https://www.maier-komor.de/xjobs/xjobs-%{version}.tgz
-Patch:        xjobs.patch
+Patch0:        xjobs.patch
 
 %description
 xjobs reads job descriptions line by line and executes them in
@@ -26,7 +26,7 @@ one line of arguments to each utility call.
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 
 %build
 ./configure \

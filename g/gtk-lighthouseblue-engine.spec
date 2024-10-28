@@ -24,9 +24,6 @@ make
 %install
 %make_install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS COPYING.GPL ChangeLog README NEWS
 %{_libdir}/gtk-2.0/*/engines/*.so

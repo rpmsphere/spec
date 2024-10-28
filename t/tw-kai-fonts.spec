@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/tw-kai
+%define fontdir %{_datadir}/fonts/tw-kai
 
 Summary: Taiwan TrueType Fonts -- Kai Face
 Name: tw-kai-fonts

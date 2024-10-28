@@ -68,9 +68,6 @@ CFLAGS="%{optflags} -DHAVE_SYS_WAIT_H"
 %install
 %__make install_prefix="$RPM_BUILD_ROOT" install
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc README
 %dir /etc/xscreensaver

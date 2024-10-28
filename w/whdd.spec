@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Summary:	Diagnostic and recovery tool for block devices
-Name:		whdd
-Version:	2.2
-Release:	7.1
-License:	GPLv1+
-Group:		System/Kernel and hardware
-URL:		https://github.com/whdd/whdd
-Source0:	%{name}-%{version}.tar.gz
-BuildRequires:	cmake
-BuildRequires:	dialog-devel
-BuildRequires:	pkgconfig(ncurses)
+Summary:        Diagnostic and recovery tool for block devices
+Name:           whdd
+Version:        2.2
+Release:        7.1
+License:        GPLv1+
+Group:          System/Kernel and hardware
+URL:            https://github.com/whdd/whdd
+Source0:        %{name}-%{version}.tar.gz
+BuildRequires:  cmake
+BuildRequires:  dialog-devel
+BuildRequires:  pkgconfig(ncurses)
 
 %description
 WHDD is a diagnostic and recovery tool for block devices

@@ -1,14 +1,14 @@
-Name:				timestamp
-Version:			1.1
-Release:			3.1
-Summary:			Pipe that timestamps Lines
-Source:			https://math.missouristate.edu/~erik/files/timestamp-%{version}.tar.gz
-Patch1:			timestamp-rename.patch
-URL:				https://math.missouristate.edu/~erik/software.php?id=95
-Group:			Productivity/File utilities
-License:			GNU General Public License version 2 or later (GPLv2 or later)
-BuildRequires:	gcc make glibc-devel
-BuildRequires:	autoconf automake libtool
+Name:                           timestamp
+Version:                        1.1
+Release:                        3.1
+Summary:                        Pipe that timestamps Lines
+Source:                 https://math.missouristate.edu/~erik/files/timestamp-%{version}.tar.gz
+Patch1:                 timestamp-rename.patch
+URL:                            https://math.missouristate.edu/~erik/software.php?id=95
+Group:                  Productivity/File utilities
+License:                        GNU General Public License version 2 or later (GPLv2 or later)
+BuildRequires:  gcc make glibc-devel
+BuildRequires:  autoconf automake libtool
 
 %description
 Timestamp is a text filtering pipe that marks each line with a timestamp. The
@@ -23,7 +23,7 @@ Authors:
 %prep
 %setup -q
 %__mv ts.1 timestamp.1
-%patch1
+%patch 1
 
 %build
 autoreconf -fiv
@@ -33,9 +33,6 @@ autoreconf -fiv
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README

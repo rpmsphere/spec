@@ -11,7 +11,7 @@ BuildRequires: alsa-lib-devel
 BuildRequires: atk-devel
 BuildRequires: cairo-devel
 BuildRequires: gtk2-devel
-BuildRequires: pipewire-jack-audio-connection-kit-devel
+BuildRequires: jack-audio-connection-kit-devel
 BuildRequires: lash-devel
 BuildRequires: ncurses-devel
 BuildRequires: pango-devel
@@ -64,9 +64,6 @@ Terminal=0
 Type=Application
 Categories=Application;AudioVideo;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

@@ -14,7 +14,7 @@ BuildRequires:  python-pygments python2-setuptools
 BuildRequires:  numpy python-matplotlib graphviz atlas-devel
 Requires:       numpy 
 BuildArch:      noarch
-BuildRequires:	netpbm
+BuildRequires:  netpbm
 
 %description
 Pyevolve is a complete genetic algorithm framework written in pure python.
@@ -43,9 +43,6 @@ python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
 # Add missing shebang
 %__sed -i -e '1i#!/usr/bin/python2' $RPM_BUILD_ROOT/%{_bindir}/pyevolve_graph.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 #doc docs/html

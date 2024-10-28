@@ -14,13 +14,13 @@ The GPE Palmtop Environment (GPE) is a collection of integrated software
 components optimized for (but not limited to) handheld and other input
 constrained and resource limited devices.
 
-%package	devel
-Summary:	Development files for %{name}
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
-Requires:	pkgconfig
+%package        devel
+Summary:        Development files for %{name}
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
+Requires:       pkgconfig
 
-%description	devel
+%description    devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
@@ -34,9 +34,6 @@ developing applications that use %{name}.
 %install
 %__rm -rf $RPM_BUILD_ROOT
 %__make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_libdir}/%{name}.so.*

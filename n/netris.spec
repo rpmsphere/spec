@@ -19,9 +19,9 @@ network against your friends.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2
+%patch 0 -p1
+%patch 1 -p1
+%patch 2
 
 %build
 #./Configure -O2 --cextra "%optflags -Werror"

@@ -1,17 +1,17 @@
 %define __arch_install_post %{nil}
 
-Summary:	Construction tool
-Name:		aap
-Version:	1.094
-Release:	4.1
-Source0:	https://belnet.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.zip
-License:	GPLv2
-Group:		Development/Other
-BuildArch:	noarch
-BuildRequires:	python2-devel
-Requires:	python2
-URL:		https://www.a-a-p.org/
-Provides:	a-a-p
+Summary:        Construction tool
+Name:           aap
+Version:        1.094
+Release:        4.1
+Source0:        https://belnet.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.zip
+License:        GPLv2
+Group:          Development/Other
+BuildArch:      noarch
+BuildRequires:  python2-devel
+Requires:       python2
+URL:            https://www.a-a-p.org/
+Provides:       a-a-p
 
 %description
 A-A-P is an Open Source software construction tool--that is, a build
@@ -48,9 +48,6 @@ mkdir -p $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}
 mv $RPM_BUILD_ROOT/usr/lib/%{name}/Exec-%{version}/doc $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}
 
 #sed -i 's|/usr/bin/env python|/usr/bin/python2|' $RPM_BUILD_ROOT/usr/lib/aap/Exec-%{version}/*.py $RPM_BUILD_ROOT/usr/lib/aap/Exec-%{version}/aap
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

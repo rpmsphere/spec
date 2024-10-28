@@ -1,20 +1,20 @@
-Name:		gnunet-gtk
-Version:	0.19.0
-Release:	1
-Source0:	http://gnunet.org/download/%{name}-%{version}.tar.gz
-License:	GPLv2+
-Summary:	GNUnet GTK user interface
-Group:		Networking/File transfer
-URL:		http://gnunet.org/
+Name:           gnunet-gtk
+Version:        0.19.0
+Release:        1
+Source0:        http://gnunet.org/download/%{name}-%{version}.tar.gz
+License:        GPLv2+
+Summary:        GNUnet GTK user interface
+Group:          Networking/File transfer
+URL:            http://gnunet.org/
 BuildRequires:  libpng-devel
-BuildRequires:	gnunet-devel
-BuildRequires:	gtk3-devel
-BuildRequires:	unique3-devel
-BuildRequires:	qrencode-devel
-BuildRequires:	libgcrypt-devel
-BuildRequires:	libextractor-devel
-BuildRequires:	glade-devel
-BuildRequires:	glade3-libgladeui-devel
+BuildRequires:  gnunet-devel
+BuildRequires:  gtk3-devel
+BuildRequires:  unique3-devel
+BuildRequires:  qrencode-devel
+BuildRequires:  libgcrypt-devel
+BuildRequires:  libextractor-devel
+BuildRequires:  glade-devel
+BuildRequires:  glade3-libgladeui-devel
 BuildRequires:  sane-backends-devel
 BuildRequires:  udisks2 atlas
 
@@ -36,7 +36,7 @@ trusted services.
 %package devel
 Summary:        GNUnet GTK development files
 Group:          System/Libraries
-Requires:	%{name} = %{version}
+Requires:       %{name} = %{version}
 
 %description devel
 This is the GNUnet GTK user interface. GNUnet is a framework for secure

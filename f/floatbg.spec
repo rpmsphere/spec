@@ -18,7 +18,7 @@ picture in the root window.
 
 %prep
 %setup -q -n %{name}-%{version}.orig
-%patch0 -p 1
+%patch 0 -p 1
 
 %build
 xmkmf -a

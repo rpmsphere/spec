@@ -1,11 +1,11 @@
 Name:          beebem
 Version:       0.0.13
 Release:       3
-License:       "Distributable"
+License:       Distributable
 Summary:       BBC Micro and Master 128 Emulator
 Source0:       https://beebem-unix.bbcmicro.com/download/%{name}-%{version}.tar.gz
 Source1:       %{name}.png
-Patch:         %{name}-0.0.13-cast.patch
+Patch0:        %{name}-0.0.13-cast.patch
 Patch1:        %{name}-0.0.13-keys.patch
 Patch2:        %{name}-0.0.13-menu-crash.patch
 Patch3:        %{name}-0.0.13-rpmlint.patch
@@ -21,11 +21,11 @@ BBC Micro and Master 128 emulator.
 
 %prep
 %setup -q
-%patch
-%patch1 -p1
-%patch2 -p1
-%patch3
-%patch4 -p1
+%patch 0
+%patch 1 -p1
+%patch 2 -p1
+%patch 3
+%patch 4 -p1
 sed -i 's/\r//' doc/{CHANGES.txt,Ibos.txt,README.txt,README_Z80.TXT}
 rm -f doc/*.zip
 

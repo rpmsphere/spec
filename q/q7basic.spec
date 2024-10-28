@@ -22,7 +22,7 @@ BuildRequires:  pkgconfig(QtXml) >= 4.8.0
 Source0:        https://www.q7basic.org/Q7Basic_Source_Code.zip
 Source1:        %{name}.png
 Source2:        %{_name}.desktop
-Patch:          %{_name}-abuild.patch
+Patch0:          %{_name}-abuild.patch
 
 %description
 Q7Basic (KBasic2) is a programming language related to VB.NET, Visual Basic, Visual Basic
@@ -43,7 +43,7 @@ Summary:        Examples to develop with Q7Basic
 License:        GPL-3.0
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description examples
 Q7Basic (KBasic2) is a programming language related to VB.NET, Visual Basic, Visual Basic
@@ -57,7 +57,7 @@ Author: Bernd Noetscher
 
 %prep
 %setup -q -n Q7Basic_Source_Code
-%patch -p1
+%patch 0 -p1
 %__sed -i -e '/#include(Q7BFormDesigner.pri)/s/^#//' \
        -e '/#include(Q7BZipUnzip.pri)/s/^#//' \
        -e '$aLIBS += -lz' ./Q7Basic.pro

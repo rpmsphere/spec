@@ -26,9 +26,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/%{_datadir}/xpenguins/themes
 cp -a themes $RPM_BUILD_ROOT/%{_datadir}/xpenguins
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/xpenguins/themes/Sonic_the_Hedgehog
 %{_datadir}/xpenguins/themes/The_Simpsons

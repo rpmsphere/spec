@@ -6,7 +6,7 @@ Version: 0.9.4
 Release: 7.1
 Summary: true 3-tier desktop application framework
 License: BSD like
-Url: https://dabodev.com/
+URL: https://dabodev.com/
 Group: Development/Python
 Source: https://dabodev.com/grabit/dabo/dabo-%{version}-mac-nix.tar.gz
 BuildArch: noarch
@@ -36,9 +36,6 @@ rmdir $RPM_BUILD_ROOT/usr/dabo
 %doc AUTHORS ANNOUNCE ChangeLog dabo/LICENSE.TXT README TODO
 %doc demo
 %{python2_sitelib}/*
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jun 06 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.4

@@ -47,9 +47,6 @@ make DESTDIR=%{buildroot} install
 rm -rf %{buildroot}%{_datadir}/doc/%{name}
 %find_lang %{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files -f %{name}.lang
 %doc README INSTALL AUTHORS ChangeLog TODO COPYING
 %{_bindir}/%{name}

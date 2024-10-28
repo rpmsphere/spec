@@ -23,9 +23,6 @@ It's based on servechilled's area.o42 icons (I found them awesome).
 install -d $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 cp -a index.theme scalable $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/icons/%{theme_name}
 

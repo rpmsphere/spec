@@ -2,7 +2,7 @@ Name:           sagan
 Version:        2.0.2
 Release:        1
 #Source:         %{name}-%{name}-%{version}.tar.gz 
-Source:		%{name}-v-2-0.2.tar.gz
+Source:         %{name}-v-2-0.2.tar.gz
 License:        GPLv2
 Group:          System/Daemons
 Summary:        Real time system and event log monitoring system
@@ -13,6 +13,7 @@ BuildRequires:  libesmtp-devel
 BuildRequires:  json-c-devel
 BuildRequires:  libfastjson-devel
 BuildRequires:  liblognorm-devel
+BuildRequires:  libyaml-devel
 
 %description
 Sagan is a multi-threaded, real time system and event log monitoring system,
@@ -40,9 +41,6 @@ sed -i 's|-I/usr/include/libfastjson|-I/usr/include/libfastjson -I/usr/include/l
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %post
 %{_sbindir}/groupadd -g 66 -o -r sagan 2> /dev/null || :

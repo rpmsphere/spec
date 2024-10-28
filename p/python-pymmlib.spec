@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
-Name:		python-pymmlib
-Version:	1.2.0
-Release:	8.1
-Summary:	Python Macromolecular Library
-Group:		Libraries/Sciences/Crystallography
-License:	Artistic License
-URL:		https://pymmlib.sourceforge.net/
-Source0:	https://downloads.sourceforge.net/pymmlib/pymmlib-%{version}.tar.gz
-BuildRequires:	python2-devel numpy pygtk2-devel atlas
+Name:           python-pymmlib
+Version:        1.2.0
+Release:        8.1
+Summary:        Python Macromolecular Library
+Group:          Libraries/Sciences/Crystallography
+License:        Artistic License
+URL:            https://pymmlib.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/pymmlib/pymmlib-%{version}.tar.gz
+BuildRequires:  python2-devel numpy pygtk2-devel atlas
 #BuildRequires:  python2-pyopengl pygtkglext-devel
 
 %description

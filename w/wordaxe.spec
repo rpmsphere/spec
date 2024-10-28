@@ -30,9 +30,6 @@ python2 setup.py install \
 
 sed -i "\,\.egg-info/,d;s,.*/man/.*,&.gz," %{name}.filelist
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files -f %{name}.filelist
 %doc docs/*en.pdf docs/*.txt
 

@@ -1,15 +1,15 @@
-Summary:	Generic monitor edid files
-Name:		edidbins
-Version:	1
-Release:	3.1
-Group:		System/Kernel and hardware
-License:	LGPLv2+
-URL:		https://github.com/torvalds/linux/tree/master/Documentation/EDID
-BuildArch:	noarch 
-Source0:	kernel-edidbins-%{version}.1.tar.xz
-BuildRequires:	binutils
-BuildRequires:	dos2unix
-BuildRequires:	util-linux
+Summary:        Generic monitor edid files
+Name:           edidbins
+Version:        1
+Release:        3.1
+Group:          System/Kernel and hardware
+License:        LGPLv2+
+URL:            https://github.com/torvalds/linux/tree/master/Documentation/EDID
+BuildArch:      noarch 
+Source0:        kernel-edidbins-%{version}.1.tar.xz
+BuildRequires:  binutils
+BuildRequires:  dos2unix
+BuildRequires:  util-linux
 
 %description
 Provides five binary edid files to give to support kernel edid loading feature.

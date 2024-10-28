@@ -20,7 +20,7 @@ it is in the way and there is a clear space on the other side.
 
 %prep
 %setup -q
-%patch0 -p1 -b .mike
+%patch 0 -p1 -b .mike
 sed -i -e 's|/X11R6||' -e 's|man/man6|share/man/man6|' src/Imakefile
 
 %build
@@ -32,9 +32,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 gzip -d $RPM_BUILD_ROOT/usr/lib/X11/xsok/*.gz
 install -Dm 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/xsok.desktop
 rm -r $RPM_BUILD_ROOT/usr/doc
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc etc/* doc/xsok.tex README doc/cyberbox.doc

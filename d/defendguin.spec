@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
 
-Name:			defendguin
-Version:		0.0.12
-Summary:		A Defender clone, with a Linux theme
-License:		GPLv2
-URL:			https://www.newbreedsoftware.com/defendguin/
-Group:			Amusements/Games/Action/Arcade
-Release:		6.4
-Source:			%{name}-%{version}.tar.gz
-BuildRequires:		SDL-devel
-BuildRequires:		SDL_image-devel
-BuildRequires:		SDL_mixer-devel
-BuildRequires:		libX11-devel
+Name:                   defendguin
+Version:                0.0.12
+Summary:                A Defender clone, with a Linux theme
+License:                GPLv2
+URL:                    https://www.newbreedsoftware.com/defendguin/
+Group:                  Amusements/Games/Action/Arcade
+Release:                6.4
+Source:                 %{name}-%{version}.tar.gz
+BuildRequires:          SDL-devel
+BuildRequires:          SDL_image-devel
+BuildRequires:          SDL_mixer-devel
+BuildRequires:          libX11-devel
 
 %description
 Defendguin is a clone of the arcade game "Defender," but with a Linux theme.
@@ -32,9 +32,6 @@ mkdir -p $RPM_BUILD_ROOT/%{_mandir}/man6
 install -m 755 %{name} $RPM_BUILD_ROOT/%{_bindir}/%{name}
 install -m 644 src/%{name}.6 $RPM_BUILD_ROOT/%{_mandir}/man6/
 cp -a data/* $RPM_BUILD_ROOT/%{_datadir}/%{name}/
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc docs/*

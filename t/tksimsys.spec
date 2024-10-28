@@ -1,13 +1,13 @@
-Name:		tksimsys
-Version:	3.4
-Release:	1
-Summary:	Simulation for Biocybernetic Systems
-License:	GPLv2+
-URL:		https://github.com/bluebat/tksimsys
-Group:		Education/Science
-Source0:	%{name}-%{version}.tar.gz
-BuildArch:	noarch
-Requires:	tk
+Name:           tksimsys
+Version:        3.4
+Release:        1
+Summary:        Simulation for Biocybernetic Systems
+License:        GPLv2+
+URL:            https://github.com/bluebat/tksimsys
+Group:          Education/Science
+Source0:        %{name}-%{version}.tar.gz
+BuildArch:      noarch
+Requires:       tk
 
 %description
 Tksimsys was written to offer a convenient way to build and simulate

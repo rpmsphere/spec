@@ -32,9 +32,6 @@ sed -i '$a BackgroundImage=/usr/share/backgrounds/shimmer/greybird-wall-1920x120
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/emerald/themes/%{theme_name}
 tar zxf %{theme_name}.emerald -C $RPM_BUILD_ROOT%{_datadir}/emerald/themes/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README LICENSE.*
 %{_datadir}/themes/%{theme_name}

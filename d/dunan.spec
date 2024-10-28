@@ -20,7 +20,7 @@ Dunan is a little program which shows (animated) Miku Miku Dance 3D models
 
 %prep
 %setup -q
-%patch0
+%patch 0
 
 %build
 make
@@ -28,9 +28,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING README Changelog TODO

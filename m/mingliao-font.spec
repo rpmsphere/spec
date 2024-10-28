@@ -22,9 +22,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/fonts
 cp %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/fonts
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/fonts/*.ttf
 

@@ -6,7 +6,7 @@ Summary:        Fleeting Password Manager
 URL:            https://fleetingpm.sourceforge.net/
 Group:          Productivity/Security
 #Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-Source0:	FleetingPasswordManager-%{version}.tar.gz
+Source0:        FleetingPasswordManager-%{version}.tar.gz
 BuildRequires:  ghostscript-core ImageMagick
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  gcc-c++ qt5-qtbase-devel

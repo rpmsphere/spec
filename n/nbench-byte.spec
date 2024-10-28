@@ -31,9 +31,6 @@ make
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 cp nbench $RPM_BUILD_ROOT%{_bindir}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/nbench
 

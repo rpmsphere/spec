@@ -8,7 +8,7 @@ URL:            https://common-lisp.net/project/alexandria/
 # git clone https://gitlab.common-lisp.net/alexandria/alexandria.git
 Source:         alexandria-master.zip
 BuildRequires:  common-lisp-controller
-BuildArch:	noarch
+BuildArch:      noarch
 Requires:       common-lisp-controller
 
 %description
@@ -49,9 +49,6 @@ done
 
 %preun
 /usr/sbin/unregister-common-lisp-source cl-alexandria
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc README LICENCE AUTHORS

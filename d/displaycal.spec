@@ -1,29 +1,29 @@
 %undefine _debugsource_packages
-%define up_name	DisplayCAL
+%define up_name DisplayCAL
 
-Name:		displaycal
-Version:	3.9.11
-Release:	1
-Summary:	A graphical user interface for the Argyll CMS display calibration utilities
-Group: 		Graphics/Utilities
-License:	GPLv3
-URL:		https://displaycal.net/
-Source0:	https://sourceforge.net/projects/dispcalgui/files/release/%{version}/%{up_name}-%{version}.tar.gz
-Patch0:		displaycal-3.5.1.0-udev-dir.patch
-BuildRequires:	python3-setuptools
-#BuildRequires:	wxGTK
-BuildRequires:	pkgconfig(python3)
-BuildRequires:	pkgconfig(xxf86vm)
-BuildRequires:	pkgconfig(xinerama)
-BuildRequires:	pkgconfig(xrandr)
-#Requires:	wxGTK
-Requires:	argyllcms
-Requires:	python3-setuptools
-Requires:	pygobject3
-Requires:	numpy
-Provides:	%{up_name} = %{version}-%{release}
-Provides:	dispcalGUI = %{version}-%{release}
-Obsoletes:	dispcalGUI < 1.2.7.0-10
+Name:           displaycal
+Version:        3.9.11
+Release:        1
+Summary:        A graphical user interface for the Argyll CMS display calibration utilities
+Group:          Graphics/Utilities
+License:        GPLv3
+URL:            https://displaycal.net/
+Source0:        https://sourceforge.net/projects/dispcalgui/files/release/%{version}/%{up_name}-%{version}.tar.gz
+Patch0:         displaycal-3.5.1.0-udev-dir.patch
+BuildRequires:  python3-setuptools
+#BuildRequires: wxGTK
+BuildRequires:  pkgconfig(python3)
+BuildRequires:  pkgconfig(xxf86vm)
+BuildRequires:  pkgconfig(xinerama)
+BuildRequires:  pkgconfig(xrandr)
+#Requires:      wxGTK
+Requires:       argyllcms
+Requires:       python3-setuptools
+Requires:       pygobject3
+Requires:       numpy
+Provides:       %{up_name} = %{version}-%{release}
+Provides:       dispcalGUI = %{version}-%{release}
+Obsoletes:      dispcalGUI < 1.2.7.0-10
 
 %description
 DisplayCAL (formerly known as dispcalGUI) is a graphical user interface for

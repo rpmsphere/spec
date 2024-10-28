@@ -1,23 +1,23 @@
-BuildRequires:			libX11-devel
-Name:			gmemusage
-Summary:		Graphically shows memory usage
-Version:		0.2
-Release:		69.1
-Group:          	System/Monitoring
-License:		GPL
-Source:			%{name}-%{version}.tar.bz2
-URL:			https://oss.sgi.com/projects/gmemusage/
-BuildRequires:		desktop-file-utils
-Requires:		hicolor-icon-theme
-BuildRequires:		hicolor-icon-theme
-Patch0:			%{name}-%{version}-headers.diff
+BuildRequires:                  libX11-devel
+Name:                   gmemusage
+Summary:                Graphically shows memory usage
+Version:                0.2
+Release:                69.1
+Group:                  System/Monitoring
+License:                GPL
+Source:                 %{name}-%{version}.tar.bz2
+URL:                    https://oss.sgi.com/projects/gmemusage/
+BuildRequires:          desktop-file-utils
+Requires:               hicolor-icon-theme
+BuildRequires:          hicolor-icon-theme
+Patch0:                 %{name}-%{version}-headers.diff
 
 %description
 Graphically shows memory usage.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 
 %build
 %{__make} CFLAGS="$RPM_OPT_FLAGS" LIBX11DIR="-L %{_prefix}/X11R6/%{_lib}"
@@ -44,9 +44,6 @@ desktop-file-install                                    \
 %doc ChangeLog COPYING NEWS README TODO CREDITS
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applications/*%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2

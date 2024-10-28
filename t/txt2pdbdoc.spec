@@ -28,7 +28,7 @@ of it, and documented it.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 cp INSTALL.README INSTALL
 touch NEWS
 
@@ -45,9 +45,6 @@ install -Dm755 %{SOURCE1} $RPM_BUILD_ROOT%{_bindir}/haodoo2html
 %doc README INSTALL.README AUTHORS COPYING ChangeLog
 %{_mandir}/man?/*
 %{_bindir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Jul 11 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.4

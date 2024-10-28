@@ -1,13 +1,13 @@
-Summary:	Command line based cd player with cddb support
-Name:		cdcd
-Version:	0.6.6
-Release:	25.1
-License:	GPL
-Group:		Sound
-Source0:	https://sourceforge.net/projects/libcdaudio/files/cdcd/0.6.6/%{name}-%{version}.tar.bz2
-Patch0:		cdcd-0.6.6-drop-glib1.patch
-BuildRequires:	libcdaudio-devel readline-devel
-URL:		https://libcdaudio.sourceforge.net/
+Summary:        Command line based cd player with cddb support
+Name:           cdcd
+Version:        0.6.6
+Release:        25.1
+License:        GPL
+Group:          Sound
+Source0:        https://sourceforge.net/projects/libcdaudio/files/cdcd/0.6.6/%{name}-%{version}.tar.bz2
+Patch0:         cdcd-0.6.6-drop-glib1.patch
+BuildRequires:  libcdaudio-devel readline-devel
+URL:            https://libcdaudio.sourceforge.net/
 
 %description
 cdcd takes a different approach from conventional console(or X) based CD
@@ -20,7 +20,7 @@ open anyway.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 sed -i -e 's/sparc64)/sparc64 | x86_64)/' -e 's/sparc64-\*/sparc64-* | x86_64-*/' config.sub
 
 %build
@@ -31,9 +31,6 @@ make
 rm -rf %{buildroot}
 %make_install
 rm %{buildroot}%{_infodir}/dir
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README AUTHORS ChangeLog NEWS

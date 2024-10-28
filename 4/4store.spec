@@ -1,16 +1,16 @@
-Name:		4store
-Version:	1.1.6
-Release:	1
-Group:		Productivity/Networking/Servers
-License:	GPL v3+
-URL:		https://github.com/4store/4store
-Summary:	4store RDF server
-Source:		%{name}-%{version}.tar.gz
-BuildRequires:	autoconf, glib2-devel, libxml2-devel, raptor2-devel, rasqal-devel, pcre-devel, avahi-glib-devel, readline-devel
+Name:           4store
+Version:        1.1.6
+Release:        1
+Group:          Productivity/Networking/Servers
+License:        GPL v3+
+URL:            https://github.com/4store/4store
+Summary:        4store RDF server
+Source:         %{name}-%{version}.tar.gz
+BuildRequires:  automake, gmp-devel, glib2-devel, libxml2-devel, raptor2-devel, rasqal-devel, pcre-devel, avahi-glib-devel, readline-devel
 
-%package	devel
-Summary:	Development package for 4store
-Group:		Development
+%package        devel
+Summary:        Development package for 4store
+Group:          Development
 
 %description
 4store was designed by Steve Harris and developed at Garlik to underpin their
@@ -18,7 +18,7 @@ Semantic Web applications. It has been providing the base platform for around
 3 years. At times holding and running queries over databases of 15GT,
 supporting a Web application used by thousands of people.
 
-%description	devel
+%description    devel
 Development package for 4store
 
 %prep
@@ -37,12 +37,10 @@ echo %{version} > .version && ./autogen.sh
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
 #make install DESTDIR=$RPM_BUILD_ROOT
-%makeinstall
+%make_install
+mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT/%{_libdir}
 # hack
 rm -f $RPM_BUILD_ROOT/%{_libdir}/lib%{name}.*a
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog INSTALL NEWS README
@@ -50,7 +48,7 @@ rm -f $RPM_BUILD_ROOT/%{_libdir}/lib%{name}.*a
 %{_libdir}/lib%{name}.so.*
 %{_mandir}/man?/*
 
-%files	devel
+%files  devel
 %{_libdir}/lib%{name}.so
 %{_libdir}/pkgconfig/%{name}-0.pc
 %{_includedir}/%{name}/*

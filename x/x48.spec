@@ -1,19 +1,19 @@
-Name:		x48
-Summary:	HP 48 GX emulator
-Version:	0.6.4
-Release:	13.1
-License:	GPL
-Group:		Sciences/Mathematics
-URL:		https://x48.berlios.de/
-Source0:	https://downloads.sourceforge.net/project/x48.berlios/%{name}-%{version}.tar.bz2
+Name:           x48
+Summary:        HP 48 GX emulator
+Version:        0.6.4
+Release:        13.1
+License:        GPL
+Group:          Sciences/Mathematics
+URL:            https://x48.berlios.de/
+Source0:        https://downloads.sourceforge.net/project/x48.berlios/%{name}-%{version}.tar.bz2
 Source1:    x48.png
-Patch0:		x48-0.6.1-mdv-fix-string-format.patch
-BuildRequires:	readline-devel
-BuildRequires:	libX11-devel libXt-devel
-#BuildRequires:	x11-util-cf-files
-BuildRequires:	ncurses-devel
-Requires:  	readline
-#Requires:  	x48-data
+Patch0:         x48-0.6.1-mdv-fix-string-format.patch
+BuildRequires:  readline-devel
+BuildRequires:  libX11-devel libXt-devel
+#BuildRequires: x11-util-cf-files
+BuildRequires:  ncurses-devel
+Requires:       readline
+#Requires:      x48-data
 
 %description
 This is an emulator of the HP 48 SX and GX calculator.
@@ -21,7 +21,7 @@ Romdumps are available from https://x48.berlios.de/
 
 %prep
 %setup -q -c
-%patch0 -p1 -b .format
+%patch 0 -p1 -b .format
 sed -i '698s|^inline int|static inline int|' src/emulate.c
 
 %build
@@ -69,9 +69,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %{_mandir}/man1/x48.*
 %{_datadir}/applications/x48.desktop
 %{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Aug 06 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.4

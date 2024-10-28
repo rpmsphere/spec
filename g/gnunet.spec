@@ -1,37 +1,38 @@
-Name:		gnunet
-Version:	0.19.1
-Release:	1
-License:	GPLv2+
-Summary:	Secure and anonymous peer-to-peer file sharing
-URL:		https://gnunet.org/
-Source0:	ftp://ftp.gnu.org/gnu/gnunet/%{name}-%{version}.tar.gz
-Source1:	gnunetd.conf
-Source2:	init_gnunetd
-Group:		Networking/File transfer
+Name:           gnunet
+Version:        0.19.1
+Release:        1
+License:        GPLv2+
+Summary:        Secure and anonymous peer-to-peer file sharing
+URL:            https://gnunet.org/
+Source0:        ftp://ftp.gnu.org/gnu/gnunet/%{name}-%{version}.tar.gz
+Source1:        gnunetd.conf
+Source2:        init_gnunetd
+Group:          Networking/File transfer
 BuildRequires:  libpng-devel
-BuildRequires:	libextractor-devel
-BuildRequires:	libxml2-devel
-BuildRequires:	curl-devel
-BuildRequires:	libgcrypt-devel
-BuildRequires:	gawk
-BuildRequires:	gmp-devel
-BuildRequires:	gettext-devel
-BuildRequires:	sqlite-devel
-BuildRequires:	mysql-devel
-BuildRequires:	zlib-devel
-BuildRequires:	openssl-devel
-BuildRequires:	libmicrohttpd-devel
-BuildRequires:	ncurses-devel
-BuildRequires:	libtool-ltdl-devel
-BuildRequires:	libunistring-devel
-BuildRequires:	libidn-devel
-BuildRequires:	glpk-devel
-BuildRequires:	pulseaudio-libs-devel
-BuildRequires:	opus-devel
-BuildRequires:	gstreamer1-devel
-BuildRequires:	atlas
-BuildRequires:	jansson-devel
-Requires:	redhat-lsb-core
+BuildRequires:  libextractor-devel
+BuildRequires:  libxml2-devel
+BuildRequires:  curl-devel
+BuildRequires:  libgcrypt-devel
+BuildRequires:  gawk
+BuildRequires:  gmp-devel
+BuildRequires:  gettext-devel
+BuildRequires:  sqlite-devel
+BuildRequires:  mysql-devel
+BuildRequires:  zlib-devel
+BuildRequires:  openssl-devel
+BuildRequires:  libmicrohttpd-devel
+BuildRequires:  ncurses-devel
+BuildRequires:  libtool-ltdl-devel
+BuildRequires:  libunistring-devel
+BuildRequires:  libidn-devel
+BuildRequires:  glpk-devel
+BuildRequires:  pulseaudio-libs-devel
+BuildRequires:  opus-devel
+BuildRequires:  gstreamer1-devel
+BuildRequires:  atlas
+BuildRequires:  jansson-devel
+BuildRequires:  libsodium-devel
+Requires:       redhat-lsb-core
 
 %description
 GNUnet is a framework for secure peer-to-peer networking that does not
@@ -43,9 +44,9 @@ with respect to resource usage; peers that contribute to the network
 are rewarded with better service.
 
 %package devel
-Summary:	Development files for lib%{name}
-Group:		Development/C
-Requires:	%{name} = %{version}-%{release}
+Summary:        Development files for lib%{name}
+Group:          Development/C
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 Development files for %{name}.

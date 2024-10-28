@@ -22,9 +22,6 @@ python2 setup.py build
 %install
 python2 setup.py install --root=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{python2_sitelib}/*
 

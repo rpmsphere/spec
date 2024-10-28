@@ -25,7 +25,7 @@ codes.
 
 %prep
 %setup -q -n xcolorsel
-%patch0 -p1
+%patch 0 -p1
 
 %build
 xmkmf -a
@@ -35,9 +35,6 @@ xmkmf -a
 %{__mkdir_p} $RPM_BUILD_ROOT%{_datadir}/X11/app-defaults
 make install DESTDIR="$RPM_BUILD_ROOT"
 rm -f $RPM_BUILD_ROOT/%{_prefix}/lib/X11/app-defaults
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc 00-ANNOUNCE 00-README 01-CHANGELOG 01-COPYING

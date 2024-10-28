@@ -1,7 +1,7 @@
 %global __os_install_post %{nil}
 
 Name:           pcsc-lite-towitoko
-BuildRequires:  libusb-devel
+BuildRequires:  libusb-compat-0.1-devel
 BuildRequires:  pcsc-lite-devel
 Version:        2.0.8
 Release:        1
@@ -25,9 +25,6 @@ This package contains a driver for the smart card readers produced by Towitoko.
 %make_install
 mv %{buildroot}%{_bindir}/tester %{buildroot}%{_bindir}/towitoko-tester
 install -Dm644 doc/reader.conf %{buildroot}/etc/reader.conf.d/libtowitoko
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog README THANKS COPYING AUTHORS NEWS

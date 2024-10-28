@@ -29,9 +29,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=%{buildroot}/usr VER=%{version}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.md LICENSE* ChangeLog
 %{_mandir}/man1/%{name}*

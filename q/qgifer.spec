@@ -30,9 +30,6 @@ sed -i -e '26i #include <opencv2/core/cvdef.h>\n#include <opencv2/videoio/legacy
 mv %{buildroot}%{_datadir}/icons %{buildroot}%{_datadir}/pixmaps
 sed -i 's|/usr/share/icons/||' %{buildroot}%{_datadir}/applications/qgifer.desktop
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/applications/qgifer.desktop

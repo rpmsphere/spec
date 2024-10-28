@@ -43,9 +43,6 @@ mv %{buildroot}%{_datadir}/man1 %{buildroot}%{_mandir}
 %{_bindir}/*
 %{_mandir}/man1/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.2
 - Rebuilt for Fedora

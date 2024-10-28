@@ -5,7 +5,7 @@ Version: 2.0.43f
 Release: 13.1
 Summary: Window Manager with Windows '95 look
 Source: https://sourceforge.net/projects/fvwm95/files/%{name}/%{version}/%{name}-%{version}.tar.gz
-Patch: fvwm95-2.0.43b-redhat.patch
+Patch0: fvwm95-2.0.43b-redhat.patch
 License: GPL
 Group: X11/Window Managers
 Requires: fvwm95-icons
@@ -28,7 +28,7 @@ This package contains pixmaps and mini-icons for fvwm95
 
 %prep
 %setup -q
-%patch -p 1
+%patch 0 -p 1
 sed -i 's/-shared/-shared -fPIC/' modules/FvwmTaskBar/Makefile*
 sed -i 's/(void \*)//' modules/FvwmTaskBar/BatStatModule.c
 rm modules/FvwmConsole/FvwmConsoleC modules/FvwmConsole/*.o
@@ -60,26 +60,26 @@ install -m 644 xpmroot/xpmroot.man \
 cd modules
 #FvwmBacker FvwmIconMan
 for module in FvwmAudio FvwmAuto FvwmBanner FvwmButtons FvwmCpp \
-	FvwmDebug FvwmForm FvwmIconBox FvwmIdent FvwmM4 \
-	FvwmPager FvwmSave FvwmSaveDesk FvwmScript FvwmScroll FvwmTalk \
+        FvwmDebug FvwmForm FvwmIconBox FvwmIdent FvwmM4 \
+        FvwmPager FvwmSave FvwmSaveDesk FvwmScript FvwmScroll FvwmTalk \
         FvwmWinList FvwmWharf FvwmTaskBar; do \
-	install -m 755 $module/$module \
-		$RPM_BUILD_ROOT%{_libdir}/X11/fvwm95; \
-	install -c -m 644 $module/$module.man \
-		$RPM_BUILD_ROOT%{_mandir}/man1/$module.1x; \
-	done
+        install -m 755 $module/$module \
+                $RPM_BUILD_ROOT%{_libdir}/X11/fvwm95; \
+        install -c -m 644 $module/$module.man \
+                $RPM_BUILD_ROOT%{_mandir}/man1/$module.1x; \
+        done
 install -m 755 FvwmConsole/FvwmConsole \
-		$RPM_BUILD_ROOT%{_libdir}/X11/fvwm95; 
+                $RPM_BUILD_ROOT%{_libdir}/X11/fvwm95; 
 
 install -m 755 FvwmConsole/FvwmConsoleC \
-		$RPM_BUILD_ROOT%{_libdir}/X11/fvwm95; 
+                $RPM_BUILD_ROOT%{_libdir}/X11/fvwm95; 
 
 
 for script in BellSetup Buttons Date DeskSetup FileBrowser KeyboardSetup \
-	PointerSetup Quit ScreenDump ScreenSetup ; do \
-	install -c -m 644 FvwmScript/Scripts/$script \
-		$RPM_BUILD_ROOT%{_libdir}/X11/fvwm95/scripts; \
-	done
+        PointerSetup Quit ScreenDump ScreenSetup ; do \
+        install -c -m 644 FvwmScript/Scripts/$script \
+                $RPM_BUILD_ROOT%{_libdir}/X11/fvwm95/scripts; \
+        done
 
 
 install -m 755 FvwmTaskBar/*.so \
@@ -100,9 +100,6 @@ install -m 755 utils/quantize_pixmaps \
                                $RPM_BUILD_ROOT/usr/bin
 ln -sf %{_libdir}/X11/fvwm95/system.fvwm95rc \
        $RPM_BUILD_ROOT%{_libdir}/X11/fvwm95/.fvwm95rc
-
-%clean
-rm -Rf $RPM_BUILD_ROOT
 
 %files
 %doc README fvwm95-2.xx.lsm GPL Changelog FvwmTaskBar-plugins.patch.README

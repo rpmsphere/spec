@@ -3,13 +3,13 @@ License:        GPLv3
 Group:          Amusements/Games
 Version:        0.1.2
 Release:        4.1
-Summary:	Full-screen Linux gaming, improved
-URL:		https://bitbucket.org/michaelb/fsgamer
+Summary:        Full-screen Linux gaming, improved
+URL:            https://bitbucket.org/michaelb/fsgamer
 Source:         https://cdn.bitbucket.org/michaelb/fsgamer/downloads/%{name}_%{version}.tar.gz
 Requires:       espeak, openbox
 BuildRequires:  intltool, python2-distutils-extra
 BuildRequires:  python2-devel
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 FSGamer runs games in their own X server, which can improve the speed,
@@ -28,9 +28,6 @@ sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 sed -i 's|Categories=Game;|Categories=Game;Emulator;|' %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.md AUTHORS COPYING

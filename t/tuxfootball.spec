@@ -6,7 +6,7 @@ Source0: https://downloads.sourceforge.net/tuxfootball/%{name}-%{version}.tar.gz
 Source1: %{name}.png
 License: GPL
 Group: Games/Sports
-Url: https://tuxfootball.sourceforge.net
+URL: https://tuxfootball.sourceforge.net
 BuildRequires: SDL-devel
 BuildRequires: SDL_image-devel
 BuildRequires: SDL_mixer-devel
@@ -41,9 +41,6 @@ Terminal=false
 Type=Application
 Categories=Game;SportsGame;X-MandrivaLinux-MoreApplications-Games-Sports;
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_docdir}/%{name}-%{version}

@@ -45,9 +45,6 @@ qmake-qt4 QT_CXXFLAGS="%{optflags}"
 %__install -D -m0644 "%{SOURCE1}" "$RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop"
 %__install -D -m0644 "%{SOURCE2}" "$RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png"
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc LICENSE
 %{_bindir}/qomodoro

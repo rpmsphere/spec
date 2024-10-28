@@ -1,73 +1,73 @@
-%define	name	civil
-%define	Name	Civil
-%define	version	0.83
-%define	title	Civil
-%define	longtitle	American civil war simulation
-%define	title_editor	Civil Editor
-%define	longtitle_editor	Civil scenario editor
+%define name    civil
+%define Name    Civil
+%define version 0.83
+%define title   Civil
+%define longtitle       American civil war simulation
+%define title_editor    Civil Editor
+%define longtitle_editor        Civil scenario editor
 %define __python /usr/bin/python2
 
-Name:		%{name}
-Version:	%{version}
-Release:	1
-Summary:	%{longtitle}
-License:	GPL
-Group:		Games/Strategy
-URL:		https://civil.sourceforge.net
-Source0:	https://prdownloads.sourceforge.net/civil/%{name}-%{version}.tar.bz2
-Patch0:		civil-0.83-python24.patch.bz2
-Patch1:		civil-0.83-remove-broken-pygame-check.patch
-Requires:	SDL >= 1.2
-Requires:	python2
-Requires:	pygame >= 1.5.3
-Requires:	%{name}-graphics = %{version}
-Requires:	%{name}-sounds = %{version}
-BuildRequires:	python2-devel
-BuildRequires:	ImageMagick
+Name:           %{name}
+Version:        %{version}
+Release:        1
+Summary:        %{longtitle}
+License:        GPL
+Group:          Games/Strategy
+URL:            https://civil.sourceforge.net
+Source0:        https://prdownloads.sourceforge.net/civil/%{name}-%{version}.tar.bz2
+Patch0:         civil-0.83-python24.patch.bz2
+Patch1:         civil-0.83-remove-broken-pygame-check.patch
+Requires:       SDL >= 1.2
+Requires:       python2
+Requires:       pygame >= 1.5.3
+Requires:       %{name}-graphics = %{version}
+Requires:       %{name}-sounds = %{version}
+BuildRequires:  python2-devel
+BuildRequires:  ImageMagick
 
 %description
 Civil is a game that simulates battles in the American Civil War. It is 
 playable by two players over a network. Civil aims to be able to recreate
 battles in great detail.
 
-%package	graphics
-Summary:	Civil graphics
-Group:		Games/Strategy
-Requires:	%{name} = %{version}
+%package        graphics
+Summary:        Civil graphics
+Group:          Games/Strategy
+Requires:       %{name} = %{version}
 
-%description	graphics
+%description    graphics
 Graphics for Civil, a simulation of the American Civil War.
 
-%package	sounds
-Summary:	Civil sounds
-Group:		Games/Strategy
-Requires:	%{name} = %{version}
+%package        sounds
+Summary:        Civil sounds
+Group:          Games/Strategy
+Requires:       %{name} = %{version}
 
-%description	sounds
+%description    sounds
 Sounds for Civil, a simulation of the American Civil War.
 
-%package	scenarios
-Summary:	Civil sample scenarios
-Group:		Games/Strategy
-Requires:	%{name} = %{version}
+%package        scenarios
+Summary:        Civil sample scenarios
+Group:          Games/Strategy
+Requires:       %{name} = %{version}
 
-%description	scenarios
+%description    scenarios
 Some example scenarios for Civil, a simulation of the American Civil
 War.
 
-%package	editor
-Summary:	Civil scenario editor
-Group:		Games/Strategy
-Requires:	%{name} = %{version}
-Requires:	python-PQueue
+%package        editor
+Summary:        Civil scenario editor
+Group:          Games/Strategy
+Requires:       %{name} = %{version}
+Requires:       python-PQueue
 
-%description	editor
+%description    editor
 Scenario editor for civil, a simulation of the American Civil War.
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p1 -b .pygame
+%patch 0 -p0
+%patch 1 -p1 -b .pygame
 # fix perms
 for file in AUTHORS BUGS ChangeLog INSTALL LICENSE README TODO; do
     chmod 644 $file; 
@@ -136,9 +136,6 @@ chmod ogu+x %{buildroot}/%{_datadir}/%{name}/src/civil-server.py
 
 # no longer works, miss some xml nodes
 rm -f %{buildroot}/%{_datadir}/%{name}/scenarios/chakie_test.civil
-
-%clean
-rm -rf %{buildroot} 
 
 %files
 %doc AUTHORS BUGS ChangeLog INSTALL LICENSE README TODO

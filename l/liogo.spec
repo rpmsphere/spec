@@ -1,15 +1,15 @@
-Name:		liogo
-Version:	0.4.1
-Release:	46.1
-Summary:	A Logo compiler for .NET
-License:	GPL
-Group:		Development/Languages
-Source0:	https://sourceforge.net/projects/liogo/files/%{name}/%{version}/%{name}-%{version}-src-win32.zip
-Source1:	%{name}.png
-URL:		https://liogo.sourceforge.net/
-BuildRequires:	mono-devel, nant, mono-winforms, mono-nunit
-BuildRequires:	libgdiplus-devel
-BuildArch:	noarch
+Name:           liogo
+Version:        0.4.1
+Release:        46.1
+Summary:        A Logo compiler for .NET
+License:        GPL
+Group:          Development/Languages
+Source0:        https://sourceforge.net/projects/liogo/files/%{name}/%{version}/%{name}-%{version}-src-win32.zip
+Source1:        %{name}.png
+URL:            https://liogo.sourceforge.net/
+BuildRequires:  mono-devel, nant, mono-winforms, mono-nunit
+BuildRequires:  libgdiplus-devel
+BuildArch:      noarch
 
 %description
 Most notable features of LIOGO are:
@@ -74,9 +74,6 @@ EOF
 
 %__mkdir_p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install -Dm 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt

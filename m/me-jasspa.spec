@@ -34,9 +34,6 @@ install -c -m 0755 src/me %{buildroot}%{_bindir}/me
 install -d -m 0755 %{buildroot}%{_mandir}/man1
 install -c -m 0644 %{SOURCE1} %{buildroot}%{_mandir}/man1
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc ChangeLog README* COPYING *.txt
 %{_bindir}/me

@@ -25,7 +25,7 @@ platforms.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 
 %build
 autoreconf -ifv

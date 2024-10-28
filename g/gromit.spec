@@ -24,7 +24,7 @@ It is useful for recording presentations with xvidcap.
 
 %prep
 %setup -q -n %{name}-%cvs
-%patch0 -p1
+%patch 0 -p1
 sed -i 's|-Wall|-Wall -lX11 -lm|' Makefile
 
 %build
@@ -36,9 +36,6 @@ sed -i 's|-Wall|-Wall -lX11 -lm|' Makefile
 %{__install} -D -m 644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{__install} -D -m 644 debian/%{name}.xpm %{buildroot}%{_datadir}/pixmaps/%{name}.xpm
 %{__install} -D -m 644 gromitrc %{buildroot}%{_sysconfdir}/%{name}/gromitrc
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog README debian/changelog debian/copyright

@@ -9,7 +9,7 @@ Release: 1
 Group: Education
 License: Artistic License
 URL: https://scratch.mit.edu/
-Patch: 0001-Fix-build-UnicodePlugin.patch
+Patch0: 0001-Fix-build-UnicodePlugin.patch
 Requires: squeak-vm, libv4l
 Source: %real_name%version.zip
 %define installdir %_datadir/Scratch
@@ -29,7 +29,7 @@ of the process of design.
 
 %prep
 %setup -n %real_name%version
-%patch -p1
+%patch 0 -p1
 
 %build
 pushd ScratchPlugin/ScratchPlugin-linux
@@ -51,9 +51,6 @@ mkdir -p %buildroot%_libdir/squeak/%squeakver
 install -Dm644 ScratchPlugin/ScratchPlugin-linux/ScratchPlugin %buildroot%_libdir/squeak/%squeakver/
 install -Dm644 UnicodePlugin/UnicodePlugin-linux/UnicodePlugin %buildroot%_libdir/squeak/%squeakver/
 install -Dm644 CameraPlugin/CameraPlugin-linux/CameraPlugin %buildroot%_libdir/squeak/%squeakver/
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %_libdir/squeak

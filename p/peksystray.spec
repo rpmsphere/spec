@@ -1,14 +1,14 @@
-Name: 	 	peksystray
-Summary: 	Small system tray requiring only X
-Version: 	0.4.0
-Release: 	9.1
-Source:		%{name}-%{version}.tar.bz2
-Patch0:		peksystray-0.4.0-fix-str-fmt.patch
-Patch1:		peksystray-0.4.0-fix-link.patch
-URL:		https://peksystray.sourceforge.net/
-License:	GPL
-Group:		Graphical desktop/Other
-BuildRequires:	pkgconfig(x11)
+Name:           peksystray
+Summary:        Small system tray requiring only X
+Version:        0.4.0
+Release:        9.1
+Source:         %{name}-%{version}.tar.bz2
+Patch0:         peksystray-0.4.0-fix-str-fmt.patch
+Patch1:         peksystray-0.4.0-fix-link.patch
+URL:            https://peksystray.sourceforge.net/
+License:        GPL
+Group:          Graphical desktop/Other
+BuildRequires:  pkgconfig(x11)
 
 %description
 Peksystray is a small system tray (also called notification tray) designed for
@@ -28,8 +28,8 @@ automatically display another window in order to display more icons.
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p0
+%patch 0 -p0
+%patch 1 -p0
 
 %build
 autoreconf -fi
@@ -39,9 +39,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog THANKS REFS README NEWS TODO

@@ -38,9 +38,6 @@ python2 setup.py build
 %install
 python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc license
 %{python2_sitelib}/*

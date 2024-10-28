@@ -35,10 +35,10 @@ Authors:
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2
-%patch3
+%patch 0 -p1
+%patch 1 -p1
+%patch 2
+%patch 3
 sed -i 's/max/std::max/g' lib/libxclass/OXGLFrame.cc
 sed -i 's|packages/xclass|xclass-%{version}|' doc/Makefile*
 sed -i '1i #include <cmath>' lib/libxclass/OXFrame.cc
@@ -49,7 +49,7 @@ cp -f /usr/lib/rpm/redhat/config.* .
 autoconf
 CXXFLAGS="$RPM_OPT_FLAGS -Wno-narrowing" \
 ./configure --prefix=%{_prefix} \
-	--libdir=%{_libdir} \
+        --libdir=%{_libdir} \
     --sysconfdir=/etc \
     --enable-debug=no
 make shared
@@ -61,9 +61,6 @@ mv lib/libxclass/icons/*.xpm icons/
 make DESTDIR=$RPM_BUILD_ROOT install 
 make DESTDIR=$RPM_BUILD_ROOT install_shared
 install -m 644 include/xclass/XCconfig.h $RPM_BUILD_ROOT%{_prefix}/include/XCconfig.h
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/doc/%{name}-%{version}

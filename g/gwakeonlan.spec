@@ -1,4 +1,4 @@
-%define	oname gWakeOnLan
+%define oname gWakeOnLan
 
 Name:           gwakeonlan
 Version:        0.6.3
@@ -8,10 +8,10 @@ Group:          Networking/Other
 License:        GPLv2
 URL:            https://www.muflone.com/gwakeonlan/
 Source0:        https://codeload.github.com/muflone/gwakeonlan/tar.gz/%{version}#/%{name}-%{version}.tar.gz
-BuildRequires:	python2-devel
-BuildRequires:	python2-pyxdg
-BuildArch:	noarch
-Requires:	pygtk2
+BuildRequires:  python2-devel
+BuildRequires:  python2-pyxdg
+BuildArch:      noarch
+Requires:       pygtk2
 
 %description
 gWakeOnLan is a GTK+ utility to awake turned off machines using

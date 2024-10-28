@@ -6,7 +6,7 @@ License: GNU General Public License
 Group: Amusements/Arcade
 URL: https://sourceforge.net/projects/pdp1spacewar
 Summary: SpaceWar on PDP-1 emulator
-BuildRequires: gcc-c++, wxGTK3-devel, automake
+BuildRequires: gcc-c++, wxGTK-devel, automake
 
 %description
 The original computer video game, SpaceWar!, implemented on a DEC PDP-1 emulator.
@@ -39,9 +39,6 @@ Icon=spacewar
 Terminal=false
 Categories=Game;ArcadeGame;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README AUTHORS COPYING

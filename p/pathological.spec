@@ -1,20 +1,20 @@
 %undefine _debugsource_packages
 
-Name: 		pathological
-Summary: 	Logical game
-Version: 	1.1.3
-Release: 	1
-License: 	GPLv2+
-Group: 		Games/Puzzles
-Source0:	https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Name:           pathological
+Summary:        Logical game
+Version:        1.1.3
+Release:        1
+License:        GPLv2+
+Group:          Games/Puzzles
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 # Don't install something to /usr/X11R6 - AdamW 2008/09
-Patch0:		pathological-1.1.3-location.patch
+Patch0:         pathological-1.1.3-location.patch
 # fix #35077
 Patch1:     pathological-1.1.3-fix_encoding.patch
-URL: 		https://pathological.sourceforge.net/
-BuildRequires:	netpbm
-BuildRequires:	ImageMagick
-Requires:	pygame
+URL:            https://pathological.sourceforge.net/
+BuildRequires:  netpbm
+BuildRequires:  ImageMagick
+Requires:       pygame
 
 %description
 To solve a level, you fill each wheel with four marbles of matching 
@@ -24,8 +24,8 @@ created using your favorite text editor.
 
 %prep
 %setup -q  
-%patch0 -p1 -b .location
-%patch1 -p0
+%patch 0 -p1 -b .location
+%patch 1 -p0
 sed -i -e 's,/usr/lib,%{_libdir},g' -e 's,usr/games,usr/bin,g' -e 's,share/games,share,g' Makefile
 
 %build
@@ -56,9 +56,6 @@ Icon=%{name}
 EOF
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/%{name}.py
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README LICENSE

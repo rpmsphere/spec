@@ -1,23 +1,23 @@
 %define _appdatadir %{_datadir}/appdata
 
-Name:		glpeces
-Summary:	Tangram game using Qt5
-License:	GPLv2
-Version:	5.2
-Release:	16.1
-Group:		Games/Puzzles
-URL:		https://pecesjocdetangr.sourceforge.net/iniciang.htm
-Source0:	https://sourceforge.net/projects/pecesjocdetangr/files/version%205.2%20%28February%2C%202016%29/glpeces-5.2.tar.gz
-Source1:	%{name}.desktop
+Name:           glpeces
+Summary:        Tangram game using Qt5
+License:        GPLv2
+Version:        5.2
+Release:        16.1
+Group:          Games/Puzzles
+URL:            https://pecesjocdetangr.sourceforge.net/iniciang.htm
+Source0:        https://sourceforge.net/projects/pecesjocdetangr/files/version%205.2%20%28February%2C%202016%29/glpeces-5.2.tar.gz
+Source1:        %{name}.desktop
 BuildRequires:  cmake
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Script)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Widgets)
-BuildRequires:	ghostscript-core ImageMagick
-BuildRequires:	libappstream-glib
-BuildRequires:	desktop-file-utils
+BuildRequires:  ghostscript-core ImageMagick
+BuildRequires:  libappstream-glib
+BuildRequires:  desktop-file-utils
 
 %description
 PIECES is a program to play the traditional Tangram, game of Chinese origin.

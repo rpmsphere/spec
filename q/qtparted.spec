@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		qtparted
-Version:	0.6.0
-Summary:	Graphical Partitioning Tool
-URL:		https://qtparted.sf.net/
-Release:	1
-Source:		https://freefr.dl.sourceforge.net/project/qtparted/qtparted-%version/qtparted-%version.tar.xz
-Source10:	qtparted.pamd
-Source11:	qtparted.pam
-License:	GPL
-Group:		Applications/System
+Name:           qtparted
+Version:        0.6.0
+Summary:        Graphical Partitioning Tool
+URL:            https://qtparted.sf.net/
+Release:        1
+Source:         https://freefr.dl.sourceforge.net/project/qtparted/qtparted-%version/qtparted-%version.tar.xz
+Source10:       qtparted.pamd
+Source11:       qtparted.pam
+License:        GPL
+Group:          Applications/System
 BuildRequires:  qt4-devel
 BuildRequires:  parted-devel
 
@@ -43,9 +43,6 @@ install -m 644 -D %{SOURCE11} %{buildroot}%{_sysconfdir}/security/console.apps/q
 %config(noreplace) %{_sysconfdir}/security/console.apps/*
 %{_datadir}/%name
 %{_datadir}/pixmaps/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.0

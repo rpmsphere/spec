@@ -1,20 +1,20 @@
-Summary:	Opensource Clone System (ocs), clonezilla
-Name:		clonezilla
-Version:	5.5.25
-Release:	1
-License:	GPLv2+
-Group:		Archiving/Backup
-URL:		https://www.clonezilla.org
-Source0:	https://free.nchc.org.tw/drbl-core/src/stable/%{name}-%{version}.tar.gz
-Patch0:		ambiguous-python-shebang.patch
-BuildArch:	noarch
-Requires:	drbl
-Requires:	partimage
-Requires:	psmisc
-Requires:	udpcast
-Requires:	partclone
-Requires:	ntfsprogs
-Requires:	dialog
+Summary:        Opensource Clone System (ocs), clonezilla
+Name:           clonezilla
+Version:        5.5.25
+Release:        1
+License:        GPLv2+
+Group:          Archiving/Backup
+URL:            https://www.clonezilla.org
+Source0:        https://free.nchc.org.tw/drbl-core/src/stable/%{name}-%{version}.tar.gz
+Patch0:         ambiguous-python-shebang.patch
+BuildArch:      noarch
+Requires:       drbl
+Requires:       partimage
+Requires:       psmisc
+Requires:       udpcast
+Requires:       partclone
+Requires:       ntfsprogs
+Requires:       dialog
 
 %description
 Clonezilla, based on DRBL, Partition Image, ntfsclone, partclone, and udpcast,

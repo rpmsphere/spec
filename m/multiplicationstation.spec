@@ -17,7 +17,7 @@ Math game, Multiplication Station will teach your child to add, subtract and mul
 
 %prep
 %setup -q -n %name
-%patch0  -p0 -b .path_fix
+%patch 0  -p0 -b .path_fix
 
 %build
 
@@ -63,9 +63,6 @@ Categories=Game;BoardGame;
 EOF
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc INSTALL LICENSE README CHANGES

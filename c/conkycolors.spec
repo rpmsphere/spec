@@ -25,9 +25,6 @@ ln -fs ../share/conkycolors/bin/conkyTask %{buildroot}%{_bindir}/ct
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/scripts/*.py
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING README ChangeLog AUTHORS
 %{_bindir}/*

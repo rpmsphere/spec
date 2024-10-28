@@ -1,14 +1,14 @@
-Name:		netcat-gnu
-Version:	0.7.1
-Release:	15.1
-Summary:	Networking utility that manages TCP and UDP connections
-License:	GPLv2+
-Group:		Networking/Other
-URL:		https://netcat.sourceforge.net/
-Source0:	https://osdn.dl.sourceforge.net/sourceforge/netcat/netcat-%{version}.tar.bz2
-Provides:	netcat = 1.0
-Conflicts:	netcat-traditional
-Conflicts:	netcat-openbsd
+Name:           netcat-gnu
+Version:        0.7.1
+Release:        15.1
+Summary:        Networking utility that manages TCP and UDP connections
+License:        GPLv2+
+Group:          Networking/Other
+URL:            https://netcat.sourceforge.net/
+Source0:        https://osdn.dl.sourceforge.net/sourceforge/netcat/netcat-%{version}.tar.bz2
+Provides:       netcat = 1.0
+Conflicts:      netcat-traditional
+Conflicts:      netcat-openbsd
 
 %description
 Netcat is a featured networking utility which reads and writes data across

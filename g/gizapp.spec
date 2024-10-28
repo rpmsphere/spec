@@ -1,13 +1,13 @@
-Name: 		gizapp
-Summary: 	GIZA++ and mkcls
-Version: 	1.0.7
-Release: 	4.1
-License: 	GNU GPL v2
-Source: 	giza-pp-v%{version}.tar.gz
-BuildRequires: 	glibc-devel, glibc-headers
+Name:           gizapp
+Summary:        GIZA++ and mkcls
+Version:        1.0.7
+Release:        4.1
+License:        GNU GPL v2
+Source:         giza-pp-v%{version}.tar.gz
+BuildRequires:  glibc-devel, glibc-headers
 BuildRequires:  libstdc++-devel
-Requires:	tcsh, libstdc++
-URL:		https://code.google.com/p/giza-pp/
+Requires:       tcsh, libstdc++
+URL:            https://code.google.com/p/giza-pp/
 
 %description
 GIZA++ is a statical machine translation toolkit that is used to train IBM
@@ -30,9 +30,6 @@ install -m 755 GIZA++-v2/GIZA++ %{buildroot}%{_bindir}/%{name}
 install -m 755 GIZA++-v2/*.out %{buildroot}%{_bindir}
 install -m 755 GIZA++-v2/*.sh %{buildroot}%{_bindir}
 install -m 755 mkcls-v2/mkcls %{buildroot}%{_bindir}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/*

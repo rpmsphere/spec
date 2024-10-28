@@ -50,9 +50,6 @@ mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 
 %postun -p /sbin/ldconfig
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING TODO
 %{_libdir}/libplexymime.so

@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
-Name:		mando
-Version:	1.8.2
-Release:	19.1
-Summary:	Interactive Camera-Projector System
-Source0:	https://vision.eng.shu.ac.uk/jan/%{name}_%{version}.orig.tar.gz
-Source1:	%name.videodev.h
-URL:		https://mando.sourceforge.net/
-Group:		User Interface/X Hardware Support
-License:	GPLv2+
+Name:           mando
+Version:        1.8.2
+Release:        19.1
+Summary:        Interactive Camera-Projector System
+Source0:        https://vision.eng.shu.ac.uk/jan/%{name}_%{version}.orig.tar.gz
+Source1:        %name.videodev.h
+URL:            https://mando.sourceforge.net/
+Group:          User Interface/X Hardware Support
+License:        GPLv2+
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++ cmake
-BuildRequires:	qt4-devel boost-devel f2c fftw3-devel
-BuildRequires:	libdc1394-devel lapack-devel freeglut-devel
-BuildRequires:	libXtst-devel blas-devel
+BuildRequires:  gcc-c++ cmake
+BuildRequires:  qt4-devel boost-devel f2c fftw3-devel
+BuildRequires:  libdc1394-devel lapack-devel freeglut-devel
+BuildRequires:  libXtst-devel blas-devel
 
 %description
 The software makes use of a low cost off-the shelf webcam that is calibrated
@@ -38,9 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 #cd build
 %cmake_install
 mv %{buildroot}%{_datadir}/icons/%{name}.png %{buildroot}%{_datadir}/pixmaps
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS README COPYING TODO

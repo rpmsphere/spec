@@ -1,12 +1,12 @@
 %undefine _debugsource_packages
 
-Name: systester		
+Name: systester         
 Version: 1.5.1
 Release: 5.1
-Summary: An open source clone of SuperPI	
+Summary: An open source clone of SuperPI        
 Group: Applications/System
-License: GPLv2	
-URL: https://systester.sourceforge.net		
+License: GPLv2  
+URL: https://systester.sourceforge.net          
 Source0:  https://voxel.dl.sourceforge.net/project/systester/systester/1.5.0/systester-1.5.1.tar.gz
 BuildRequires: qt >= 4.5.3
 BuildRequires: qt-devel
@@ -50,9 +50,6 @@ desktop-file-install \
 --dir=${RPM_BUILD_ROOT}%{_datadir}/applications \
 systester.desktop
 desktop-file-validate %{buildroot}%{_datadir}/applications/systester.desktop
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/*

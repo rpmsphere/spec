@@ -20,8 +20,8 @@ to omit headers for sentence analysis tools.
 
 %prep
 %setup -q
-%patch1
-%patch2
+%patch 1
+%patch 2
 
 %build
 %configure
@@ -32,9 +32,6 @@ to omit headers for sentence analysis tools.
 %__rm -rf "$RPM_BUILD_ROOT"
 make DESTDIR=$RPM_BUILD_ROOT install
 %find_lang "%{name}"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files -f "%{name}.lang"
 %doc COPYING NEWS README

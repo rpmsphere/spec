@@ -23,9 +23,6 @@ rm -fr $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/boot/%{name}
 cp -a * $RPM_BUILD_ROOT/boot/%{name}
 
-%clean    
-rm -rf $RPM_BUILD_ROOT
-
 %files
 /boot/%{name}/*
 

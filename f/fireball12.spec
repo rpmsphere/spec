@@ -6,8 +6,8 @@ Group:          Amusements/Games
 License:        LGPL
 URL:            https://sourceforge.net/projects/fireball12/
 Source0:        https://nchc.dl.sourceforge.net/sourceforge/fireball12/Fire12-%{version}.tar.gz
-Requires:	pygame, alsa-lib
-BuildArch:	noarch
+Requires:       pygame, alsa-lib
+BuildArch:      noarch
 
 %description
 Fireball 12 is an arcade game project. You control a ship and simply defeat
@@ -51,9 +51,6 @@ EOF
 cd %{_datadir}/%{name}
 python2 main.py
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

@@ -39,9 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 %find_lang %{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %doc ABOUT-NLS AUTHORS ChangeLog COPYING NEWS README THANKS TODO
 %doc Documentation/*.html Documentation/FAQ

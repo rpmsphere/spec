@@ -1,15 +1,15 @@
-Summary:	Mailing list manager
-Name:		rumble
-Version:	0.0.23
-Release:	16.1
-License:	Ruby's License
-Group:		Applications
-Source0:	https://dinhe.net/~aredridel/projects/ruby/%{name}-%{version}.tar.gz
-URL:		https://dinhe.net/~aredridel/projects/ruby/rumble
+Summary:        Mailing list manager
+Name:           rumble
+Version:        0.0.23
+Release:        16.1
+License:        Ruby's License
+Group:          Applications
+Source0:        https://dinhe.net/~aredridel/projects/ruby/%{name}-%{version}.tar.gz
+URL:            https://dinhe.net/~aredridel/projects/ruby/rumble
 BuildRequires: ruby
 BuildRequires: rubypick
 BuildRequires: rubygems
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 A simple mailing list manager.
@@ -25,9 +25,6 @@ ruby setup.rb setup
 %install
 rm -rf $RPM_BUILD_ROOT
 ruby setup.rb install --prefix=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS README TODO

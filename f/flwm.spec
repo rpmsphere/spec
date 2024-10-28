@@ -19,7 +19,7 @@ by Chris Cannam. This is an enhanced version by the Tiny Core team.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 ./configure --prefix=/usr --mandir=%{_datadir}/man
@@ -27,9 +27,6 @@ make
 
 %install
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README

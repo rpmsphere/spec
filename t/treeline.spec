@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
-Summary:	Versatile Tree-Style Outliner for Defining Custom Data Schemas
-Name:		treeline
-Version:	3.1.2
-Release:	1
-Group:		Productivity/Office/Other
-License:	GPLv2+
-URL:		https://treeline.bellz.org/
-Source0:	%{name}-%{version}.tar.gz
-BuildArch:	noarch
-BuildRequires:	python3-qt5, python-lxml
-Requires:	python3-qt5
+Summary:        Versatile Tree-Style Outliner for Defining Custom Data Schemas
+Name:           treeline
+Version:        3.1.2
+Release:        1
+Group:          Productivity/Office/Other
+License:        GPLv2+
+URL:            https://treeline.bellz.org/
+Source0:        %{name}-%{version}.tar.gz
+BuildArch:      noarch
+BuildRequires:  python3-qt5, python-lxml
+Requires:       python3-qt5
 
 %description
 TreeLine is a versatile tool for working with all kinds of information
@@ -36,15 +36,15 @@ functionality of TreeLine.
 %install
 rm -rf $RPM_BUILD_ROOT
 for i in source/*.py; do
-	sed -i "s|#!/usr/bin/env python|#!/usr/bin/python3|g" $i
-	chmod 755 $i
+        sed -i "s|#!/usr/bin/env python|#!/usr/bin/python3|g" $i
+        chmod 755 $i
 done
 
 python3 install.py -x \
-	-p %{_prefix} \
-	-d %{_defaultdocdir}/%{name} \
-	-i %{_datadir}/%{name}/icons \
-	-b $RPM_BUILD_ROOT
+        -p %{_prefix} \
+        -d %{_defaultdocdir}/%{name} \
+        -i %{_datadir}/%{name}/icons \
+        -b $RPM_BUILD_ROOT
 
 # Associate Files with MimeTypes (the KDE4/Gnome way)
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/mime/packages

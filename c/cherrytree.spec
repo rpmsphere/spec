@@ -15,7 +15,7 @@ Source0:        https://www.giuspen.com/software/%{name}_%{version}.tar.xz
 BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  python2-devel
-BuildRequires:	libxml++-devel
+BuildRequires:  libxml++-devel
 BuildRequires:  gtksourceviewmm3-devel
 BuildRequires:  gtkmm30-devel
 BuildRequires:  gspell-devel
@@ -23,6 +23,7 @@ BuildRequires:  fmt-devel
 BuildRequires:  uchardet-devel
 BuildRequires:  spdlog-devel
 BuildRequires:  vte291-devel
+BuildRequires:  sqlite-devel
 Requires:       python(abi) = %{py_ver}
 Requires:       pygtk2
 Requires:       pygobject2

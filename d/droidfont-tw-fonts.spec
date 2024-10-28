@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/Droidfont-tw
+%define fontdir %{_datadir}/fonts/Droidfont-tw
 
 Summary: DroidFont for Taiwan
 Name: droidfont-tw-fonts
@@ -25,9 +25,6 @@ rm -rf %{buildroot}
 install -d %{buildroot}%{fontdir}
 install -m644 %{SOURCE0} %{SOURCE1} %{buildroot}%{fontdir}
 
-%clean
-rm -rf %{buildroot}
-
 %post
 /usr/bin/fc-cache 2> /dev/null
 
@@ -38,5 +35,5 @@ rm -rf %{buildroot}
 %{fontdir}/*
 
 %changelog
-* Sun Dec 06 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.55b
+* Tue Dec 06 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2.55b
 - Rebuilt for Fedora

@@ -22,14 +22,11 @@ CFLAGS="$RPM_OPT_FLAGS" ./configure +cc=gcc
 %install
 %{__mkdir_p} %{buildroot}/usr/{bin,include,%{_lib}/m2c,share/{info,man/man1}}
 %{__make} install prefix=%{buildroot}/usr \
-	libdir=%{buildroot}%{_libdir}/m2c \
-	man1dir=%{buildroot}%{_mandir}/man1 \
-	includedir=%{buildroot}%{_includedir}
+        libdir=%{buildroot}%{_libdir}/m2c \
+        man1dir=%{buildroot}%{_mandir}/man1 \
+        includedir=%{buildroot}%{_includedir}
 makeinfo doc/modula-2.texinfo
 cp modula-2.info %{buildroot}%{_infodir}
-
-%clean
-rm -Rf %{buildroot}
 
 %files 
 %doc COPYING

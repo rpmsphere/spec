@@ -1,18 +1,18 @@
-%global gdate	20190109
+%global gdate   20190109
 
-Name:		ticpp
-Summary:	Completely new interface to TinyXML
-Version:	0
-Release:	0.git%gdate.1
-License:	MIT
-Group:		Development/Other
-URL:		https://github.com/wxFormBuilder/ticpp
-Source0:	ticpp-%{gdate}.tar.gz
-Patch1:		ticpp-soversion.patch
-Patch2:		ticpp-lib-install.patch
-Patch3:		ticpp-headers-install.patch
-Patch4:		ticpp-C++17.patch
-BuildRequires:	cmake
+Name:           ticpp
+Summary:        Completely new interface to TinyXML
+Version:        0
+Release:        0.git%gdate.1
+License:        MIT
+Group:          Development/Other
+URL:            https://github.com/wxFormBuilder/ticpp
+Source0:        ticpp-%{gdate}.tar.gz
+Patch1:         ticpp-soversion.patch
+Patch2:         ticpp-lib-install.patch
+Patch3:         ticpp-headers-install.patch
+Patch4:         ticpp-C++17.patch
+BuildRequires:  cmake
 
 %description
 TiCPP is short for the official name TinyXML++. It is a completely new
@@ -22,7 +22,7 @@ exceptions, and much better error handling.
 %package devel
 Summary:        Development libraries and header files for TiCPP
 Group:          Development/Other
-Requires:	%{name} = %{version}-%{release}
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 TiCPP is short for the official name TinyXML++. It is a completely new

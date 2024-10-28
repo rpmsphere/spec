@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
 Name:       vpcs
-Version:	0.4b2
-Release:	4.1
-License:	BSD
-Summary:	Virtual PC Simulator
-URL:		https://www.freecode.com.cn/doku.php?id=wiki:vpcs
+Version:        0.4b2
+Release:        4.1
+License:        BSD
+Summary:        Virtual PC Simulator
+URL:            https://www.freecode.com.cn/doku.php?id=wiki:vpcs
 Group:      System/Emulators/Other
-Source0:	%{name}-%{version}.tar.bz2
-Requires:	dynamips
+Source0:        %{name}-%{version}.tar.bz2
+Requires:       dynamips
 
 %description
 The VPCS can simulate up to 9 PCs. You can ping/traceroute them, or ping/traceroute
@@ -33,9 +33,6 @@ make -f Makefile.linux CPUTYPE=%_target_cpu
 %install
 install -Dm755 src/vpcs %buildroot/%_bindir/%{name}
 install -Dm644 man/vpcs.1 %buildroot/%_mandir/man1/%{name}.1
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc readme.txt COPYING

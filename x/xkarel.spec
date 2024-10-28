@@ -49,9 +49,6 @@ make INSTALL_DIRECTORY=$RPM_BUILD_ROOT/usr install
 /usr/lib/menu
 %{_datadir}/pixmaps/*
 
-%clean
-rm -fr $RPM_BUILD_ROOT
-
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0b1
 - Rebuilt for Fedora

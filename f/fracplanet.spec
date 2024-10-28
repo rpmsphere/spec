@@ -29,9 +29,6 @@ rm -rf $RPM_BUILD_ROOT
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -Dm644 man/man1/%{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc BUGS NEWS THANKS LICENSE README TODO
 %{_bindir}/%{name}

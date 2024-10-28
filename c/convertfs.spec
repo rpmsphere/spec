@@ -1,19 +1,19 @@
-Summary:	Tool that allows you to change type of file system in the lack of backup space
-Name:		convertfs
-Version:	13jan2005
-Release:	5.1
-Epoch:		1
-License:	GPL
-Group:		Applications/System
-Source0:	https://tzukanov.narod.ru/convertfs/%{name}-%{version}.tar.gz
-Source1:	https://members.optusnet.com.au/clausen/ideas/convertfs.txt
-# Source0-md5:	71e8065e321898e259a55c8cefdfd75d
-Patch0:		%{name}-safety.patch
-Patch1:		%{name}-Makefile.patch
-URL:		https://tzukanov.narod.ru/convertfs/
-BuildRequires:	sed >= 4.0
-Requires:	util-linux
-Requires:	coreutils
+Summary:        Tool that allows you to change type of file system in the lack of backup space
+Name:           convertfs
+Version:        13jan2005
+Release:        5.1
+Epoch:          1
+License:        GPL
+Group:          Applications/System
+Source0:        https://tzukanov.narod.ru/convertfs/%{name}-%{version}.tar.gz
+Source1:        https://members.optusnet.com.au/clausen/ideas/convertfs.txt
+# Source0-md5:  71e8065e321898e259a55c8cefdfd75d
+Patch0:         %{name}-safety.patch
+Patch1:         %{name}-Makefile.patch
+URL:            https://tzukanov.narod.ru/convertfs/
+BuildRequires:  sed >= 4.0
+Requires:       util-linux
+Requires:       coreutils
 
 %description
 This simple toolset allows you to change type of file system in the
@@ -32,13 +32,13 @@ read/write, and as long as primary filesystem supports sparse files.
 
 %prep
 %setup  -q -n %{name}
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %build
 %{__make} \
-	CC="%{__cc}" \
-	CFLAGS="%{optflags}"
+        CC="%{__cc}" \
+        CFLAGS="%{optflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -46,9 +46,6 @@ install -d $RPM_BUILD_ROOT%{_sbindir}
 
 install convertfs_dumb devclone devremap prepindex contrib/convertfs $RPM_BUILD_ROOT%{_sbindir}
 install -D %{SOURCE1} $RPM_BUILD_ROOT%{_docdir}/convertfs.txt
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) %{_sbindir}/*

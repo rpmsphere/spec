@@ -64,9 +64,6 @@ dos2unix AUTHORS ChangeLog COPYING
 %makeinstall
 %{__rm} -v $RPM_BUILD_ROOT%{_libdir}/liblogging.la
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 

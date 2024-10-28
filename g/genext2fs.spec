@@ -22,9 +22,6 @@ make %{?_smp_mflags}
 %install
 make DESTDIR=$RPM_BUILD_ROOT install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog COPYING device_table.txt NEWS README TODO 
 %{_bindir}/genext2fs

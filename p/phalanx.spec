@@ -22,8 +22,8 @@ Authors:
 
 %prep
 %setup -q -n %{srcname}-%{srcver}
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %build
 make CFLAGS="$RPM_OPT_FLAGS"

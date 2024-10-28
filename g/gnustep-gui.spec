@@ -23,7 +23,7 @@ BuildRequires:  aspell-devel
 BuildRequires:  giflib-devel
 BuildRequires:  audiofile-devel
 BuildRequires:  portaudio-devel >= 19
-BuildRequires:	texinfo, texi2html, texinfo-tex
+BuildRequires:  texinfo, texi2html, texinfo-tex
 BuildRequires:  gnustep-make >= 2.6.4-9
 BuildRequires:  gnustep-base-devel >= 1.24.0
 BuildRequires:  gnustep-base >= 1.24.0

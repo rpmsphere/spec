@@ -64,7 +64,7 @@ This package contains development files for %{name}.
 
 %prep
 %setup -q -n %{name}-%{version}%{?prever}
-##%patch0 -p1 -b .max_path
+##%patch 0 -p1 -b .max_path
 for i in ./AUTHORS ./ChangeLog; do
         iconv -f iso-8859-1 -t utf-8 < "$i" > "${i}_"
         mv "${i}_" "$i"
@@ -114,9 +114,6 @@ EOF
 # Clean up for the docs
 %{__rm} -f examples/Makefile*
 %{__rm} -rf %{buildroot}%{_docdir}/%{name}
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %post -p /sbin/ldconfig
 

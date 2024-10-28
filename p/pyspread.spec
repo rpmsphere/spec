@@ -1,20 +1,20 @@
-Summary:	Cross-platform Python spreadsheet application
-Name:		pyspread
-Version:	2.2.3
-Release:	1
-License:	GPLv3
-Group:		Office/Spreadsheet
-URL:		https://manns.github.io/pyspread/
-Source0:	https://pypi.python.org/packages/source/p/pyspread/%{name}-%{version}.tar.gz
+Summary:        Cross-platform Python spreadsheet application
+Name:           pyspread
+Version:        2.2.3
+Release:        1
+License:        GPLv3
+Group:          Office/Spreadsheet
+URL:            https://manns.github.io/pyspread/
+Source0:        https://pypi.python.org/packages/source/p/pyspread/%{name}-%{version}.tar.gz
 Source1:        pyspread.xpm
-BuildRequires:	python3-devel
-BuildRequires:	numpy atlas
-#BuildRequires:	python3-matplotlib
-#BuildRequires:	python3-wxpython
-#BuildRequires:	python3-gnupg
-Requires:	numpy
-#Requires:	python3-matplotlib-wx
-#Requires:	python3-wxpython
+BuildRequires:  python3-devel
+BuildRequires:  numpy atlas
+#BuildRequires: python3-matplotlib
+#BuildRequires: python3-wxpython
+#BuildRequires: python3-gnupg
+Requires:       numpy
+#Requires:      python3-matplotlib-wx
+#Requires:      python3-wxpython
 BuildArch:  noarch
 
 %description

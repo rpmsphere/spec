@@ -4,9 +4,9 @@ Name: lunar-calendar
 Version: 3.0.0
 Release: 8.1
 Summary: Chinese Lunar calendar Gtk widget
-Group: User Interface/Desktops	
-License: GPLv2	
-URL: https://code.google.com/p/liblunar	
+Group: User Interface/Desktops  
+License: GPLv2  
+URL: https://code.google.com/p/liblunar 
 Source0: https://liblunar.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0: relative_libs.diff
 BuildRequires: libpng-devel, intltool, gtk3-devel
@@ -29,7 +29,7 @@ Development files for Chinese Lunar calendar Gtk widget.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure
@@ -38,9 +38,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_libdir}/liblunar-calendar-*.so.*

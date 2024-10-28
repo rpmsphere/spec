@@ -1,15 +1,15 @@
-Summary:	Qt XG Editor
-Name:		qxgedit
-Version:	0.9.12
-Release:	1
-License:	GPL-2.0+
-Group:		Productivity/Multimedia/Sound/Midi
-Source0:	https://sourceforge.net/projects/qxgedit/files/qxgedit/%{version}/%{name}-%{version}.tar.gz
-URL:		https://qxgedit.sourceforge.net/
-BuildRequires:	qt5-qtbase-devel
-BuildRequires:	qt5-linguist
-BuildRequires:	qt5-qtx11extras-devel
-BuildRequires:	alsa-lib-devel
+Summary:        Qt XG Editor
+Name:           qxgedit
+Version:        0.9.12
+Release:        1
+License:        GPL-2.0+
+Group:          Productivity/Multimedia/Sound/Midi
+Source0:        https://sourceforge.net/projects/qxgedit/files/qxgedit/%{version}/%{name}-%{version}.tar.gz
+URL:            https://qxgedit.sourceforge.net/
+BuildRequires:  qt5-qtbase-devel
+BuildRequires:  qt5-linguist
+BuildRequires:  qt5-qtx11extras-devel
+BuildRequires:  alsa-lib-devel
 
 %description
 QXGEdit is a Qt GUI for editing MIDI System Exclusive files
@@ -26,9 +26,6 @@ make
 
 %install
 make DESTDIR=%{buildroot} install
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE ChangeLog README

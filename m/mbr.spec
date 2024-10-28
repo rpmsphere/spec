@@ -26,9 +26,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_sbindir}/install-mbr
 %{_mandir}/*/install-mbr.8*

@@ -32,9 +32,6 @@ mkdir $RPM_BUILD_ROOT/usr/lib64
 mv $RPM_BUILD_ROOT/usr/lib/* $RPM_BUILD_ROOT/usr/lib64
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 

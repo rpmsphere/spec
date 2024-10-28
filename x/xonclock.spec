@@ -42,11 +42,8 @@ sed -i 's|<png.h>|<libpng12/png.h>|' src/loaders/png.c
 
 %{__install} -d -m0755 %{buildroot}%{_datadir}/applications/
 desktop-file-install --vendor ""               \
-	--dir %{buildroot}%{_datadir}/applications \
-	%{name}.desktop
-
-%clean
-%{__rm} -rf %{buildroot}
+        --dir %{buildroot}%{_datadir}/applications \
+        %{name}.desktop
 
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README THANKS TODO

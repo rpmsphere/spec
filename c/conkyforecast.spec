@@ -1,18 +1,18 @@
 %define __python /usr/bin/python2
 
-Name:		conkyforecast
-Version:	2.24
-Release:	5.1
-Summary:	Weather forecast information to be dislayed in conky
+Name:           conkyforecast
+Version:        2.24
+Release:        5.1
+Summary:        Weather forecast information to be dislayed in conky
 Summary(ru_RU.UTF8): Скрипт Python для Conky для получения данных о погоде
-Group:		Monitoring
-License:	GPLv3
-URL:		https://code.launchpad.net/~m-buck/+junk/conkyforecast
-Source0:	%{name}-%{version}.tar.gz
-BuildArch:	noarch
-BuildRequires:	python2
-BuildRequires:	python2-setuptools
-Requires:	conky
+Group:          Monitoring
+License:        GPLv3
+URL:            https://code.launchpad.net/~m-buck/+junk/conkyforecast
+Source0:        %{name}-%{version}.tar.gz
+BuildArch:      noarch
+BuildRequires:  python2
+BuildRequires:  python2-setuptools
+Requires:       conky
 
 %description
 conkyForecast is a python script created to provide weather forecast information

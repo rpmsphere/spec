@@ -9,6 +9,7 @@ Group: Development/Languages
 Source0: %{_name}-main.zip
 URL: https://github.com/StepfenShawn/Cantonese
 BuildRequires: python3-wheel
+BuildRequires: python3-pip
 BuildArch: noarch
 
 %description
@@ -33,9 +34,6 @@ fi
 %doc LICENSE *.md
 %{_bindir}/*
 %{python3_sitelib}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8

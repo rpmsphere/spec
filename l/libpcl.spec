@@ -33,9 +33,6 @@ make install DESTDIR=%{buildroot}
 rm -f %{buildroot}/%{_libdir}/*.la
 rm -f %{buildroot}/%{_libdir}/*.a
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_libdir}/libpcl.so.*
 %doc AUTHORS COPYING

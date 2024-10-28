@@ -31,7 +31,7 @@ and streaming audio server that runs natively on Windows, macOS, and Linux.
 
 %prep
 %setup -q
-%patch0 -p 1
+%patch 0 -p 1
 sed -i '8i #include <memory>\n#include <string>' src/plugins/mpris/mpris.h
 sed -i '41i #include <memory>' src/plugins/httpdatastream/LruDiskCache.h
 sed -i '/av_register_all()/d' src/plugins/stockencoders/FfmpegEncoder.cpp src/plugins/ffmpegdecoder/plugin.cpp

@@ -26,9 +26,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_sysconfdir}/dbus-1/system.d/dhcdbd.conf
 /sbin/dhcdbd

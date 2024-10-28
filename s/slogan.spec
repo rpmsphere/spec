@@ -27,9 +27,6 @@ make
 %install
 install -Dm755 src/%{name} %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc LICENSE README.md ChangeLog
 %{_bindir}/%{name}

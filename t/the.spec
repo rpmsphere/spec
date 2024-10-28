@@ -18,10 +18,10 @@ Product Editor, XEDIT, and to Mansfield Software's, KEDIT.
 
 %build
 ./configure \
-	--prefix=/usr \
-	--mandir=%{_mandir} \
-	--with-curses=ncurses \
-	--with-rexx=regina
+        --prefix=/usr \
+        --mandir=%{_mandir} \
+        --with-curses=ncurses \
+        --with-rexx=regina
 #make CFLAGS="$RPM_OPT_FLAGS" 
 make
 

@@ -13,7 +13,7 @@ Summary:        ICC Profiler
 License:        GPL-2.0+
 Group:          Productivity/Graphics/Other
 Source:         %{name}-%{version}.tar.bz2
-Patch:          lprof-desktop.patch
+Patch0:         lprof-desktop.patch
 Patch1:         lprof-lcms.patch
 Patch2:         lprof-scons.patch
 Patch3:         argyll-typo.patch
@@ -31,10 +31,10 @@ Authors:
 
 %prep
 %setup -q
-%patch
-%patch1
-%patch2
-%patch3
+%patch 0
+%patch 1
+%patch 2
+%patch 3
 sed -i /includehint/d */*/*.ui
 (
   find -name SConstruct
@@ -69,9 +69,6 @@ install -Dm644 data/desktop/%{name}.desktop $RPM_BUILD_ROOT%{_datadir}/applicati
 install -Dm644 data/icons/%{name}.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -a data/pics data/profiles data/template $RPM_BUILD_ROOT%{_datadir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING KNOWN_BUGS README sRGB_profile_License

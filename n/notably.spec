@@ -38,9 +38,6 @@ desktop-file-install                                    \
 --dir=${RPM_BUILD_ROOT}%{_datadir}/applications         \
 %{SOURCE2}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %doc LICENSE.txt

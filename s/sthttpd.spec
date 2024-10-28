@@ -1,26 +1,26 @@
-Summary:	Supported fork of the thttpd web server
-Name:		sthttpd
-Version:	2.27.0
-Release:	18.1
-License:	BSD
-Group:		System/Servers
-URL:		https://opensource.dyc.edu/sthttpd
-Source0:	ftp://opensource.dyc.edu/pub/sthttpd/sthttpd-%{version}.tar.gz
-Source1:	ftp://opensource.dyc.edu/pub/sthttpd/sthttpd-%{version}.tar.gz.asc
-Source2:	thttpd.service
-Source3:	thttpd.conf
-Source4:	thttpd.logrotate
-Source5:	thttpd.sysconfig
-Source6:	thttpd-index.html
+Summary:        Supported fork of the thttpd web server
+Name:           sthttpd
+Version:        2.27.0
+Release:        18.1
+License:        BSD
+Group:          System/Servers
+URL:            https://opensource.dyc.edu/sthttpd
+Source0:        ftp://opensource.dyc.edu/pub/sthttpd/sthttpd-%{version}.tar.gz
+Source1:        ftp://opensource.dyc.edu/pub/sthttpd/sthttpd-%{version}.tar.gz.asc
+Source2:        thttpd.service
+Source3:        thttpd.conf
+Source4:        thttpd.logrotate
+Source5:        thttpd.sysconfig
+Source6:        thttpd-index.html
 # https://jonas.fearmuffs.net/software/thttpd/thttpd-2.25b+impan-pl5.diff.gz
-Patch0:		sthttpd-2.26.4+impan-pl5.diff
+Patch0:         sthttpd-2.26.4+impan-pl5.diff
 # https://www.ogris.de/thttpd/thttpd-2.25b.access.patch.diff
-Patch1:		sthttpd-2.26.4-htaccess.diff
+Patch1:         sthttpd-2.26.4-htaccess.diff
 # https://rekl.yi.org/thttpd/pub/patch-thttpd-2.25b-re1
-Patch2:		sthttpd-2.26.4-re1.diff
-Patch3:		sthttpd-2.27.0-no_funky_crap.diff
-Provides:	webserver
-BuildRequires:	zlib-devel
+Patch2:         sthttpd-2.26.4-re1.diff
+Patch3:         sthttpd-2.27.0-no_funky_crap.diff
+Provides:       webserver
+BuildRequires:  zlib-devel
 
 %description
 This is a fork of Jef Poskanzer's popular thttpd server, which you can read
@@ -37,10 +37,10 @@ along the way.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
 
 # tag the default index.html page
 cp %{SOURCE6} index.html

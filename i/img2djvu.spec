@@ -27,9 +27,6 @@ install -Dm 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 %doc NEWS README TODO
 %{_bindir}/%{name}
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14
 - Rebuilt for Fedora

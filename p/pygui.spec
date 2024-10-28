@@ -46,9 +46,6 @@ python2 setup.py install --root=$RPM_BUILD_ROOT --optimize=2
 %{python2_sitelib}/GUI
 %{python2_sitelib}/PyGUI*
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %changelog
 * Fri Mar 30 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.3
 - Rebuilt for Fedora

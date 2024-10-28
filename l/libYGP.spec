@@ -1,12 +1,12 @@
-Name:		libYGP		
-Version:	0.9.42
-Release:	1
-Summary:	YGP library
-Group:		library/System
-License:	GPL
-URL: 		https://libymp.sourceforge.net			
-Source0:	https://sourceforge.net/projects/libymp/files/%{name}-%{version}.tar.gz	
-BuildRequires:	gmp-devel, gtkmm24-devel, gtkhtml3-devel
+Name:           libYGP          
+Version:        0.9.42
+Release:        1
+Summary:        YGP library
+Group:          library/System
+License:        GPL
+URL:            https://libymp.sourceforge.net                  
+Source0:        https://sourceforge.net/projects/libymp/files/%{name}-%{version}.tar.gz 
+BuildRequires:  gmp-devel, gtkmm24-devel, gtkhtml3-devel
 
 %description
 A portable general purpose library, written in C++ consisting of:
@@ -15,10 +15,10 @@ A portable general purpose library, written in C++ consisting of:
 - An X-windows part, basing on gtkmm-2.
 
 %package devel
-Summary:	Development files for %{name}
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
-Requires:	pkgconfig
+Summary:        Development files for %{name}
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
+Requires:       pkgconfig
 
 %description devel
 The %{name}-devel package contains libraries and header files for
@@ -38,9 +38,6 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %doc README NEWS COPYING ChangeLog AUTHORS

@@ -1,26 +1,26 @@
-Summary:	The GNU Lyric Display System
-Name:		lyricue
-Version:	4.0.13
-Release:	1
-License:	GPL
-Group:		Applications/Multimedia
-URL:		https://www.lyricue.org/
-Source0:	https://www.lyricue.org/archive/%{name}-%{version}.tar.gz
+Summary:        The GNU Lyric Display System
+Name:           lyricue
+Version:        4.0.13
+Release:        1
+License:        GPL
+Group:          Applications/Multimedia
+URL:            https://www.lyricue.org/
+Source0:        https://www.lyricue.org/archive/%{name}-%{version}.tar.gz
 BuildRequires:  libpng-devel
-BuildRequires:	intltool
-BuildRequires:	gtk2-devel
-BuildRequires:	clutter-gtk-devel
-#BuildRequires:	clutter-gst-devel
-BuildRequires:	mysql-devel
-BuildRequires:	sane-backends-devel
+BuildRequires:  intltool
+BuildRequires:  gtk2-devel
+BuildRequires:  clutter-gtk-devel
+BuildRequires:  clutter-gst3-devel
+BuildRequires:  mysql-devel
+BuildRequires:  sane-backends-devel
 BuildRequires:  avahi-devel
 BuildRequires:  avahi-glib-devel
-Requires:	mysql
-Requires:	mysql-libs
-Requires:	perl-DBD-mysql
-Requires:	perl-Gnome2-Canvas
-Requires:	perl-Gtk2-Spell
-Requires:	perl-URI
+Requires:       mysql
+Requires:       mysql-libs
+Requires:       perl-DBD-mysql
+Requires:       perl-Gnome2-Canvas
+Requires:       perl-Gtk2-Spell
+Requires:       perl-URI
 
 %description
 This application is used to edit/display song lyrics and passages of
@@ -39,9 +39,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 %{find_lang} %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 /usr/etc/lyricue

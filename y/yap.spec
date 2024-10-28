@@ -1,14 +1,14 @@
 %global __os_install_post %{nil}
 
-Name:		yap
-Version:	6.3.3
-Release:	15.1
-Summary:	High-performance Prolog Compiler
-Group:		Development/Languages
-License:	Artistic 2.0 or LGPLv2+
-Source:		https://www.dcc.fc.up.pt/~vsc/Yap/yap-%{version}.tar.gz
-URL: 		https://www.dcc.fc.up.pt/~vsc/Yap
-BuildRequires:	readline-devel, gmp-devel, texinfo
+Name:           yap
+Version:        6.3.3
+Release:        15.1
+Summary:        High-performance Prolog Compiler
+Group:          Development/Languages
+License:        Artistic 2.0 or LGPLv2+
+Source:         https://www.dcc.fc.up.pt/~vsc/Yap/yap-%{version}.tar.gz
+URL:            https://www.dcc.fc.up.pt/~vsc/Yap
+BuildRequires:  readline-devel, gmp-devel, texinfo
 
 %description
 A high-performance Prolog compiler developed at LIACC, Universidade do
@@ -18,17 +18,17 @@ follows the Edinburgh tradition, and is largely compatible with the
 ISO-Prolog standard and with Quintus and SICStus Prolog.
 
 %package devel
-Summary:	C-Interface development files for Yap
-Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release}
+Summary:        C-Interface development files for Yap
+Group:          Development/Languages
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 C-Interface development files for Yap.
 
 %package docs
-Summary:	Documentation for Yap
-Group:		Development/Languages
-Requires:	%{name} = %{version}-%{release}
+Summary:        Documentation for Yap
+Group:          Development/Languages
+Requires:       %{name} = %{version}-%{release}
 
 %description docs
 Documentation for Yap.
@@ -52,10 +52,10 @@ sed -i -e 's|CONTEXT_PC NULL|CONTEXT_PC(scv) NULL|' -e 's|CONTEXT_BP NULL|CONTEX
 # % define optflags $(echo $RPM_OPT_FLAGS | sed 's|-fstack-protector||')
 export LDFLAGS=-Wl,--allow-multiple-definition
 %configure \
-	--enable-coroutining \
-	--enable-max-performance \
-	--enable-depth-limit \
-	--enable-dynamic-loading
+        --enable-coroutining \
+        --enable-max-performance \
+        --enable-depth-limit \
+        --enable-dynamic-loading
 
 sed -i 's|-Wall|-fpermissive|' packages/CLPBN/horus/Makefile packages/swi-minisat2/C/Makefile
 make %{?_smp_mflags}
@@ -81,9 +81,6 @@ rm -rf $RPM_BUILD_ROOT
 #mkdir -p $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
 #mv $RPM_BUILD_ROOT%{_datadir}/Yap/examples $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
 #rm -rf $RPM_BUILD_ROOT%{_datadir}/Yap/clpbn/examples
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_docdir}/Yap

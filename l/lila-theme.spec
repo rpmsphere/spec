@@ -51,9 +51,6 @@ do
 ln -s $i ${i/-ltr/}
 done
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE COPYRIGHT CREDITS
 %{_datadir}/themes/*

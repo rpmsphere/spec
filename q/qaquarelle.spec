@@ -9,19 +9,19 @@ Source0:        https://sourceforge.net/projects/%{name}/files/%{name}/%{version
 Source1:        ru.ts
 Source2:        %{name}.desktop
 Source3:        %{name}.png
-Patch0:		%{name}-%{version}-mga-fix-toolbar.patch
-Patch1:		%{name}-%{version}-mga-debug-output.patch
-BuildRequires:	pkgconfig(QtCore)
-BuildRequires:	pkgconfig(glew) >= 2.0.0
-BuildRequires:	pkgconfig(glu)
+Patch0:         %{name}-%{version}-mga-fix-toolbar.patch
+Patch1:         %{name}-%{version}-mga-debug-output.patch
+BuildRequires:  pkgconfig(QtCore)
+BuildRequires:  pkgconfig(glew) >= 2.0.0
+BuildRequires:  pkgconfig(glu)
 
 %description
 Program to paint with tablets using traditional drawing techniques.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 chmod -x README
 chmod -x PERFORMANCE
 cp -f %{SOURCE1} .

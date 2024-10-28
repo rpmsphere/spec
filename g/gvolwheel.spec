@@ -1,14 +1,14 @@
-Name:		gvolwheel
-Version:	1.0.3
-Release:	1
-Summary:	Lightweight application to control the audio volume
-License:	GPLv3+
-Group:		Sound
-Source:		https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-URL:		https://gvolwheel.sourceforge.net/
-BuildRequires:	pkgconfig(alsa)
-BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	intltool
+Name:           gvolwheel
+Version:        1.0.3
+Release:        1
+Summary:        Lightweight application to control the audio volume
+License:        GPLv3+
+Group:          Sound
+Source:         https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:            https://gvolwheel.sourceforge.net/
+BuildRequires:  pkgconfig(alsa)
+BuildRequires:  pkgconfig(gtk+-3.0)
+BuildRequires:  intltool
 
 %description
 GVolWheel is application which lets you control the volume easily
@@ -32,9 +32,6 @@ make
 %__rm -rf %{buildroot}%{_usr}/doc
 
 %find_lang %{name}
-
-%clean
-%__rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %doc COPYING ChangeLog INSTALL README

@@ -36,9 +36,6 @@ make CXXFLAGS+="-std=gnu++14"
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README NEWS COPYING ChangeLog AUTHORS
 %{_bindir}/justniffer

@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Name:			tss
-Version:		0.8.2
-Release:		5.1
-Summary:		VT Screen Saver
-Source:			https://www.pulia.nu/tss/src/tss-%{version}.tar.gz
-Patch1:			%{name}-makefile-flags.diff
-Patch2:			%{name}-ascii-dir.diff
-URL:			https://www.pulia.nu/tss/
-Group:			System/Console
-License:		GNU General Public License (GPL)
-BuildRequires:	ncurses-devel glibc-devel make gcc
+Name:                   tss
+Version:                0.8.2
+Release:                5.1
+Summary:                VT Screen Saver
+Source:                 https://www.pulia.nu/tss/src/tss-%{version}.tar.gz
+Patch1:                 %{name}-makefile-flags.diff
+Patch2:                 %{name}-ascii-dir.diff
+URL:                    https://www.pulia.nu/tss/
+Group:                  System/Console
+License:                GNU General Public License (GPL)
+BuildRequires:  ncurses-devel glibc-devel make gcc
 
 %description
 Terminal ScreenSaver (or tss for short) is an attempt to clone and enhance
@@ -21,8 +21,8 @@ own liking or make your own.
 
 %prep
 %setup -q
-%patch1
-%patch2
+%patch 1
+%patch 2
 
 %build
 %__make %{?jobs:-j%{jobs}} OPTFLAGS="%{optflags}" CC="%__cc"
@@ -32,11 +32,8 @@ own liking or make your own.
 %__install -D -m 0755 tss "$RPM_BUILD_ROOT%{_bindir}/tss"
 %__install -d "$RPM_BUILD_ROOT%{_datadir}/tss"
 for x in tss_art/*; do
-	%__install -m 0644 "$x" "$RPM_BUILD_ROOT%{_datadir}/tss/"
+        %__install -m 0644 "$x" "$RPM_BUILD_ROOT%{_datadir}/tss/"
 done
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc ART_CREDITS Changelog COPYING README

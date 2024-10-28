@@ -1,19 +1,19 @@
 %global __spec_install_post %{nil}
 %undefine _debugsource_packages
 
-Name:			littlewizard
-Summary:		Development Environment for Children
-Version:		1.2.2
-Release:		1
-License:		GPL
-Group:			Development/Tools/IDE
-Source0:		https://ncu.dl.sourceforge.net/project/littlewizard/littlewizard/1.2.2/%{name}-%{version}.tar.gz
-URL:    		https://littlewizard.sourceforge.net/
-BuildRequires:		gettext-devel
-BuildRequires:		gcc-c++
-BuildRequires:		libxml2-devel
-BuildRequires:		pkgconfig
-BuildRequires:		gtk2-devel
+Name:                   littlewizard
+Summary:                Development Environment for Children
+Version:                1.2.2
+Release:                1
+License:                GPL
+Group:                  Development/Tools/IDE
+Source0:                https://ncu.dl.sourceforge.net/project/littlewizard/littlewizard/1.2.2/%{name}-%{version}.tar.gz
+URL:                    https://littlewizard.sourceforge.net/
+BuildRequires:          gettext-devel
+BuildRequires:          gcc-c++
+BuildRequires:          libxml2-devel
+BuildRequires:          pkgconfig
+BuildRequires:          gtk2-devel
 
 %description
 Little Wizard is created especially for primary school children. It allows to 
@@ -23,8 +23,8 @@ represented by an intuitive icon. It allows program Little Wizard without
 using keyboard, only mouse.
 
 %package devel
-Summary:	Development headers and files for %name
-Group:		Development/Libraries/C and C++
+Summary:        Development headers and files for %name
+Group:          Development/Libraries/C and C++
 Requires:       %name = %{version}
 
 %description devel
@@ -34,7 +34,7 @@ Headers and development files for %name.
 %setup -q
 
 %build
-%configure 	
+%configure      
 
 %install
 %make_install
@@ -43,9 +43,6 @@ Headers and development files for %name.
 %{__rm} -rf $RPM_BUILD_ROOT%{_libdir}/*.*a
 
 %find_lang %{name}
-
-%clean
-%{__rm} -rf %$RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog NEWS README TODO

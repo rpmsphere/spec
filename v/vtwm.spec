@@ -7,20 +7,20 @@ Release: 9.1
 Source0: vtwm-snap.tar.gz
 License: MIT
 Group: Graphical desktop/Other
-BuildRequires:	libX11-devel
-BuildRequires:	bison
-BuildRequires:	flex
-BuildRequires:	imake
-BuildRequires:	libXpm-devel
-BuildRequires:	libXext-devel
-BuildRequires:	libXt-devel
-BuildRequires:	libXmu-devel
-BuildRequires:	flex-static
+BuildRequires:  libX11-devel
+BuildRequires:  bison
+BuildRequires:  flex
+BuildRequires:  imake
+BuildRequires:  libXpm-devel
+BuildRequires:  libXext-devel
+BuildRequires:  libXt-devel
+BuildRequires:  libXmu-devel
+BuildRequires:  flex-static
 #BuildRequires:  rplay-devel
 URL: https://www.vtwm.org/
-BuildRequires:	libXft-devel
-BuildRequires:	libXrandr-devel
-BuildRequires:	libXinerama-devel
+BuildRequires:  libXft-devel
+BuildRequires:  libXrandr-devel
+BuildRequires:  libXinerama-devel
 
 %description
 Twm is make by the Xconsortium and it is included with Xfree Package,

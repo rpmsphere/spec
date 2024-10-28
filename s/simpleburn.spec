@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
-Summary:	A basic burning tool
-Name:		simpleburn
-Version:	1.7.3
-Release:	16.1
-Group:		Archiving/Cd burning
-License:	CeCILL-2
-URL:		https://simpleburn.tuxfamily.org/
-Source0:	https://simpleburn.tuxfamily.org/IMG/gz/%{name}-%{version}.tar.gz
-BuildRequires:	cmake
-BuildRequires:	pkgconfig(gtk+-2.0)
-Requires:	wodim genisoimage
-Requires:	vorbis-tools
-Requires:	mpg123
-Requires:	normalize
+Summary:        A basic burning tool
+Name:           simpleburn
+Version:        1.7.3
+Release:        16.1
+Group:          Archiving/Cd burning
+License:        CeCILL-2
+URL:            https://simpleburn.tuxfamily.org/
+Source0:        https://simpleburn.tuxfamily.org/IMG/gz/%{name}-%{version}.tar.gz
+BuildRequires:  cmake
+BuildRequires:  pkgconfig(gtk+-2.0)
+Requires:       wodim genisoimage
+Requires:       vorbis-tools
+Requires:       mpg123
+Requires:       normalize
 
 %description
 SimpleBurn is a basic burning application for CDs and DVDs.
@@ -23,8 +23,8 @@ SimpleBurn is a basic burning application for CDs and DVDs.
 
 %build
 %cmake \
-	-DDETECTION=UDEV \
-	-DBURNING=CDRTOOLS .
+        -DDETECTION=UDEV \
+        -DBURNING=CDRTOOLS .
 sed -i 's|-std=c99|-std=c99 -fPIC -lm|' `find . -name *.make`
 %cmake_build
 

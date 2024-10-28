@@ -1,29 +1,29 @@
-%define _cvs_build		1
-%define _cvs_version	cvs20061028
+%define _cvs_build              1
+%define _cvs_version    cvs20061028
 
-Name:				jfreerails
-Summary:			Freerails is a real time multi player strategy game
-URL:				https://freerails.sourceforge.net/
-Group:				Amusements/Games/Strategy/Turn Based
-Version:			0.2.7
-Release:			1
-License:			GPL
-BuildRequires:	ant
-BuildRequires:	ImageMagick
-BuildRequires:	java-1.8.0-openjdk-devel
-Requires:			java >= 1.5
-Requires:			jpackage-utils >= 1.5
-Requires:			liquidlnf
-Source0:			%{name}-%{version}.tar.bz2
-BuildArch:		noarch
+Name:                           jfreerails
+Summary:                        Freerails is a real time multi player strategy game
+URL:                            https://freerails.sourceforge.net/
+Group:                          Amusements/Games/Strategy/Turn Based
+Version:                        0.2.7
+Release:                        1
+License:                        GPL
+BuildRequires:  ant
+BuildRequires:  ImageMagick
+BuildRequires:  java-1.8.0-openjdk-devel
+Requires:                       java >= 1.5
+Requires:                       jpackage-utils >= 1.5
+Requires:                       liquidlnf
+Source0:                        %{name}-%{version}.tar.bz2
+BuildArch:              noarch
 
 %description
 Freerails is a real time multi player strategy game where players compete to
 build the most powerful railroad empire. It is written in java.
 
 %package manual
-Summary:	User documentation for jfreerails
-Group:		Documentation/Other
+Summary:        User documentation for jfreerails
+Group:          Documentation/Other
 
 %description manual
 User documentation for jfreerails.
@@ -40,13 +40,13 @@ export LANG=de_DE
 # jars
 %__install -dm 755 %{buildroot}%{_javadir}
 %__install -m 644 dist/lib/%{name}*.jar \
-	%{buildroot}%{_javadir}/%{name}-%{version}.jar
+        %{buildroot}%{_javadir}/%{name}-%{version}.jar
 (cd %{buildroot}%{_javadir} && for jar in *-%{version}*; do ln -sf ${jar} `echo $jar| sed "s|-%{version}||g"`; done)
 
 # data files
 %__install -dm 755 %{buildroot}%{_datadir}/%{name}
 %__install -m 644 logging.properties \
-	%{buildroot}%{_datadir}/%{name}
+        %{buildroot}%{_datadir}/%{name}
 
 # startscript
 %__cat > %{name} << EOF
@@ -68,14 +68,14 @@ run
 EOF
 %__install -dm 755 %{buildroot}%{_bindir}
 %__install -m 755 %{name}* \
-	%{buildroot}%{_bindir}
+        %{buildroot}%{_bindir}
 
 # icon
 %__install -dm 755 %{buildroot}%{_datadir}/pixmaps
 convert www/FreeRails.png -resize 48x48! \
-	%{name}.png
+        %{name}.png
 %__install -m 644 %{name}.png \
-	%{buildroot}%{_datadir}/pixmaps
+        %{buildroot}%{_datadir}/pixmaps
 
 # menu-entry
 mkdir -p %{buildroot}%{_datadir}/applications
@@ -92,9 +92,6 @@ Icon=%{name}
 Encoding=UTF-8
 Categories=Application;Game;StrategyGame;
 EOF
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc ChangeLog README ReleaseNotes

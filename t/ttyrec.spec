@@ -19,8 +19,8 @@ emacs -nw, vi, lynx, or any programs running on tty.
 
 %prep
 %setup -q
-%patch1
-%patch2
+%patch 1
+%patch 2
 sed -i 's|union wait status;|int status;|' ttyrec.c
 
 %build
@@ -36,9 +36,6 @@ done
 for f in *.1; do
     %__install -D -m0644 "$f" "$RPM_BUILD_ROOT%{_mandir}/man1/$f"
 done
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc README

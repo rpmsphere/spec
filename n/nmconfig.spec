@@ -26,9 +26,6 @@ make
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}
 install -m 755 bin/%{name} $RPM_BUILD_ROOT/%{_bindir}
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %{_bindir}/%{name}
 

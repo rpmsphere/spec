@@ -1,15 +1,15 @@
 %undefine _missing_build_ids_terminate_build
 %undefine _debugsource_packages
 
-Name:		freebasic
-Version:	1.10.0
-Release:	1
-Summary:	FreeBASIC language compiler
-License:	GPL
-Group:		Education
-Source:		FreeBASIC-%version-source.tar.gz
-Source1:	FB-manual-%version-html.zip
-URL: 		https://freebasic.net
+Name:           freebasic
+Version:        1.10.0
+Release:        1
+Summary:        FreeBASIC language compiler
+License:        GPL
+Group:          Education
+Source:         FreeBASIC-%version-source.tar.gz
+Source1:        FB-manual-%version-html.zip
+URL:            https://freebasic.net
 BuildRequires:  freebasic
 BuildRequires:  gcc-c++
 BuildRequires:  libffi-devel
@@ -22,9 +22,9 @@ BuildRequires:  libXpm-devel
 BuildRequires:  libXrandr-devel
 BuildRequires:  zlib-devel
 BuildRequires:  unzip
-Requires: 	gcc
+Requires:       gcc
 
-%description	
+%description    
 FreeBASIC - is a completely free, open-source, BASIC compiler,
 with syntax similar to MS-QuickBASIC, that adds new features such as
 pointers, unsigned data types, inline assembly, object orientation,

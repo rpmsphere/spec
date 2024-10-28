@@ -28,9 +28,6 @@ gcc %{optflags} -o bw bw.c
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 bw $RPM_BUILD_ROOT%{_bindir}/bw
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %{_bindir}/bw

@@ -1,16 +1,16 @@
-Name: 		wbarconf
-Version: 	0.7.2.1
-Release: 	1
-Summary: 	Configuration tool for wbar
-Source0: 	https://www.ihku.biz/wbarconf/%{name}-%{version}.tar.gz
-Source1:	%{name}-0.7.2.zh_TW.po
-URL: 		https://kapsi.fi/~ighea/wbarconf/
-Group: 		Graphical desktop/Other
-License: 	GPL
-BuildArch:	noarch
-BuildRequires:	gettext
-Requires: 	wbar
-Requires: 	pygtk2
+Name:           wbarconf
+Version:        0.7.2.1
+Release:        1
+Summary:        Configuration tool for wbar
+Source0:        https://www.ihku.biz/wbarconf/%{name}-%{version}.tar.gz
+Source1:        %{name}-0.7.2.zh_TW.po
+URL:            https://kapsi.fi/~ighea/wbarconf/
+Group:          Graphical desktop/Other
+License:        GPL
+BuildArch:      noarch
+BuildRequires:  gettext
+Requires:       wbar
+Requires:       pygtk2
 
 %description
 wbar configuration gui written with Python and GTK+.
@@ -34,9 +34,6 @@ mkdir -p %{buildroot}%{_datadir}/wbar/iconpack/wbar.osx
 cp wbarbacks/* %{buildroot}%{_datadir}/wbar/iconpack/wbar.osx/
 install -Dm644 %{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README COPYING

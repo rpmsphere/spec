@@ -27,7 +27,7 @@ Xye is a derivative of a classic windows game called Kye, which is the base of t
 
 Authors:
 --------
-	Víctor Hugo Solíz Kuncar (Vexorian) <vexorian@gmail.com>
+        Víctor Hugo Solíz Kuncar (Vexorian) <vexorian@gmail.com>
 
 %prep
 %setup -q
@@ -57,9 +57,6 @@ make DESTDIR=%{buildroot} install-strip
 install -D %{S:1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 install -d -D %{buildroot}%{_datadir}/pixmaps/
 ln -s %{_docdir}/%{name}/%{name}.svg %{buildroot}%{_datadir}/pixmaps/
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}

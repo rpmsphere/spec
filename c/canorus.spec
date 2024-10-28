@@ -34,8 +34,8 @@ features are implemented yet!
 %setup -q
 # do not build with inline zlib - use the distribution package instead:
 find . -type d -name "zlib" | xargs rm -rf
-%patch1 -p0
-%patch2 -p1
+%patch 1 -p0
+%patch 2 -p1
 sed -i '1i #include <cmath>' src/layout/drawabletuplet.cpp
 sed -i 's|-Werror||' src/CMakeLists*.txt
 
@@ -59,9 +59,6 @@ install -D -m644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.xpm
 install -D -m644 %{SOURCE1} %{buildroot}%{_mandir}/man1/%{name}.1
 #rm doc/cmake_install.cmake
 mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS DEVELOPERS NEWS README TODO doc

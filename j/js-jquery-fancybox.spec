@@ -25,15 +25,12 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/javascript/jquery-fancybox
 cd fancybox
 for i in jquery.{easing,fancybox,mousewheel}-{1.3,%version,3.0.4}.{pack.js,css}; do
-	test -e "$i" || continue
-	sfx=${i##*.}
-	pfx=${i%%-*}
-	ln -s "$i" "$pfx.$sfx"
+        test -e "$i" || continue
+        sfx=${i##*.}
+        pfx=${i%%-*}
+        ln -s "$i" "$pfx.$sfx"
 done
 cp -a * $RPM_BUILD_ROOT%{_datadir}/javascript/jquery-fancybox
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/javascript/jquery-fancybox

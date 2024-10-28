@@ -1,15 +1,15 @@
 %define __python /usr/bin/python3
 
-Summary:	Python Module for embedding C/C++
-Name:		pyembedc
-Version:	0.22
-Release:	4.1
-Source0:	https://sourceforge.net/projects/pyembedc/files/embedc-%{version}.tar.gz
-License:	GPLv2
-Group:		Development/Libraries
-BuildArch:	noarch
-Requires:	python
-URL:		https://pyembedc.sourceforge.net/
+Summary:        Python Module for embedding C/C++
+Name:           pyembedc
+Version:        0.22
+Release:        4.1
+Source0:        https://sourceforge.net/projects/pyembedc/files/embedc-%{version}.tar.gz
+License:        GPLv2
+Group:          Development/Libraries
+BuildArch:      noarch
+Requires:       python
+URL:            https://pyembedc.sourceforge.net/
 BuildRequires:  python3
 
 %description
@@ -27,9 +27,6 @@ python3 setup.py build
 %install
 rm -rf $RPM_BUILD_ROOT
 python3 setup.py install --root=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.txt

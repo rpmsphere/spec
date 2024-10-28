@@ -1,13 +1,13 @@
-Name:		sugar-cartoonbuilder
-Version:	11
-Release:	2.1
-Summary:	Cartoon Builder for Sugar
-Group:		Sugar/Activities
-License:	LGPLv3
-Source:		cartoon_builder-11.xo
-BuildRequires:	python3, sugar-toolkit-gtk3
-Requires:	sugar
-BuildArch:	noarch
+Name:           sugar-cartoonbuilder
+Version:        11
+Release:        2.1
+Summary:        Cartoon Builder for Sugar
+Group:          Sugar/Activities
+License:        LGPLv3
+Source:         cartoon_builder-11.xo
+BuildRequires:  python3, sugar-toolkit-gtk3
+Requires:       sugar
+BuildArch:      noarch
 
 %description
 Make a cartoon by creating a sequence of poses inside a filmstrip.
@@ -25,9 +25,6 @@ python3 setup.py install --prefix=%{buildroot}%{_prefix}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_datadir}/sugar/activities/CartoonBuilder.activity/setup.py
 sed -i 's|%{buildroot}||' %{buildroot}%{_datadir}/applications/*.activity.desktop
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{sugaractivitydir}/CartoonBuilder.activity

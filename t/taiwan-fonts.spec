@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/taiwan
+%define fontdir %{_datadir}/fonts/taiwan
 
 Summary: Taiwan Fonts
 Name: taiwan-fonts
@@ -23,9 +23,6 @@ Based on Taiwan MOE standard Fonts with more local glyphs.
 rm -rf %{buildroot}
 install -d %{buildroot}%{fontdir}
 install -m 0644 * %{buildroot}%{fontdir}
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /usr/bin/fc-cache 2> /dev/null

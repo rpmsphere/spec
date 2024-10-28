@@ -1,11 +1,11 @@
-Name:		marst
-Summary:	Algol-to-C translator
-Version:	2.7
-Release:	1
-Source0:	https://www.algol60.org/translators/%{name}-%{version}.tar.gz
-URL:		https://www.gnu.org/software/marst/marst.html
-Group:		Development/Languages
-License:	GPLv3
+Name:           marst
+Summary:        Algol-to-C translator
+Version:        2.7
+Release:        1
+Source0:        https://www.algol60.org/translators/%{name}-%{version}.tar.gz
+URL:            https://www.gnu.org/software/marst/marst.html
+Group:          Development/Languages
+License:        GPLv3
 
 %description
 MARST is an Algol-to-C translator. It automatically translates programs written
@@ -21,9 +21,6 @@ in the algorithmic language Algol 60 to the C programming language.
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
-
-%clean
-rm -rf $RPM_BUILD_ROOT 
 
 %files
 %doc AUTHORS ChangeLog COPYING README examples

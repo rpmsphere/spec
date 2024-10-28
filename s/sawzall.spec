@@ -6,7 +6,7 @@ Version: 1.0
 Release: 14.1
 License: open source
 Group: Development/Languages
-URL: https://github.com/google/szl
+URL: https://github.com/chen3feng/szl
 Source0: sawzall-master.zip
 BuildRequires: protobuf-devel
 BuildRequires: pcre-devel
@@ -19,12 +19,12 @@ statistical aggregation of log data.
 
 %prep
 %setup -q -n szl-master
-sed -i '16i #include <unistd.h>' src/engine/code.cc src/utilities/random_base.cc
-sed -i -e 's|set<|std::set<|' -e 's|map<|std::map<|' src/protoc_plugin/szl_generator.h
-sed -i -e '805s|return false;|return NULL;|' -e '1079s|return false;|return NULL;|' src/engine/form.cc
-sed -i '/wire_format_lite_inl.h/d' src/engine/protocolbuffers.cc
-sed -i '92d' src/protoc_plugin/topologicalsorter-inl.h
-sed -i '/GOOGLE_/d' src/protoc_plugin/topologicalsorter-inl.h src/protoc_plugin/proto-sorter.cc
+#sed -i '16i #include <unistd.h>' src/engine/code.cc src/utilities/random_base.cc
+#sed -i -e 's|set<|std::set<|' -e 's|map<|std::map<|' src/protoc_plugin/szl_generator.h
+#sed -i -e '805s|return false;|return NULL;|' -e '1079s|return false;|return NULL;|' src/engine/form.cc
+sed -i 's|wire_format_lite_inl.h|wire_format_lite.h|' src/engine/protocolbuffers.cc
+#sed -i '92d' src/protoc_plugin/topologicalsorter-inl.h
+#sed -i '/GOOGLE_/d' src/protoc_plugin/topologicalsorter-inl.h src/protoc_plugin/proto-sorter.cc
 sed -i '/mutex_.*;/d' src/protoc_plugin/szl_generator.h src/protoc_plugin/szl_generator.cc
 
 %build
@@ -37,11 +37,11 @@ make
 %make_install
 
 %files
-%doc COPYING README
+%doc COPYING *.md
 %{_bindir}/*
 %{_includedir}/google/szl
 %{_libdir}/libszl*
 
 %changelog
-* Fri Nov 09 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
+* Tue Sep 24 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
 - Rebuilt for Fedora

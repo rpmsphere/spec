@@ -25,9 +25,6 @@ make %{?_smp_mflags}
 %install
 make install INSTALL_ROOT=%{buildroot}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}

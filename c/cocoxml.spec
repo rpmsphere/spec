@@ -29,9 +29,6 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/Coco
 mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT%{_libdir}
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING README
 %{_bindir}/Coco

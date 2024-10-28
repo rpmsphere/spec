@@ -35,9 +35,6 @@ if test -f /usr/share/doc/licenses/md5/$MD5SUM ; then
         cp COPYING $RPM_BUILD_ROOT%{_docdir}/%{name};
     fi
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/icons/%{dir_name}
 %{_docdir}/%{name}

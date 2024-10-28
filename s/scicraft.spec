@@ -1,24 +1,24 @@
-Summary:	A powerful open source data analysis software
-Name:		scicraft
-Version:	1.0.2
-Release:	9.1
-License:	GPLv2
-Group:		Sciences/Other
-URL:		https://www.scicraft.org/
-Source0:	https://www.scicraft.org/files/%{name}-ng_%{version}.tar.bz2
-BuildRequires:	python2-devel
+Summary:        A powerful open source data analysis software
+Name:           scicraft
+Version:        1.0.2
+Release:        9.1
+License:        GPLv2
+Group:          Sciences/Other
+URL:            https://www.scicraft.org/
+Source0:        https://www.scicraft.org/files/%{name}-ng_%{version}.tar.bz2
+BuildRequires:  python2-devel
 BuildRequires:  texlive-dvipdfmx
 BuildRequires:  latex2html
 BuildRequires:  perl
 BuildRequires:  ImageMagick
 BuildRequires:  dos2unix
-Requires:	python2
+Requires:       python2
 Requires:       python-qwt
 Requires:       octave 
 Requires:       python-vtk
 Requires:       python-rpy pygtk2.0-libglade python-gobject gnome-python python-matplotlib python-scipy
-Requires:	R-base
-BuildArch:	noarch
+Requires:       R-base
+BuildArch:      noarch
 
 %description
 SciCraft is a powerful open source data analysis software with an easy-to-use
@@ -38,7 +38,7 @@ always a need to perform data analysis.
 
 %prep
 %setup -qn %{name}-ng-%{version}
-# %patch0
+# %patch 0
 #find -type f -exec dos2unix -U {} \;
 mkdir -p .svn
 
@@ -49,9 +49,6 @@ rm -rf %buildroot
 %make_install
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf %buildroot
 
 %files
 %attr(0755, root, root) %{_bindir}/*

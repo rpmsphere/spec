@@ -7,10 +7,10 @@ Group:          Amusements/Toys/Background
 Version:        12.6.97
 Release:        2474.1
 Summary:        Some cockroaches on your root window
-Source:         %{name}.tar.bz2
+Source0:        %{name}.tar.bz2
 Source1:        xroach-toon_root.c
 Source2:        xroach-README.SuSE
-Patch:          xroach.dif
+Patch0:         xroach.dif
 Patch1:         xroach-return.dif
 %define _xorg7libs %_lib
 %define _xorg7libs32 lib
@@ -33,8 +33,8 @@ scamper for cover.
 
 %prep
 %setup -n xroach
-%patch
-%patch1
+%patch 0
+%patch 1
 cp %{SOURCE1} toon_root.c
 cp %{SOURCE2} README.SuSE
 
@@ -55,9 +55,6 @@ mv $RPM_BUILD_ROOT/usr/man/man1/* $RPM_BUILD_ROOT/usr/share/man/man1
 %doc README.SuSE
 /usr/%{_xorg7bin}/xroach
 %doc %{_xorg7_mandir}/man1/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Sep 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 12.6.97

@@ -32,9 +32,6 @@ install -pm 0644 doc/* $RPM_BUILD_ROOT%{_mandir}/man1/
 %{_bindir}/ftp*
 %doc %{_mandir}/man?/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.7
 - Rebuilt for Fedora

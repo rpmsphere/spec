@@ -36,9 +36,6 @@ install -Dm755 qtads $RPM_BUILD_ROOT%{_bindir}/qtads
 mkdir -p $RPM_BUILD_ROOT/usr
 cp -a share $RPM_BUILD_ROOT/usr
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING INSTALL NEWS README HTML_TADS_LICENSE
 %{_mandir}/man6/*

@@ -8,9 +8,9 @@ Group:          Applications/Productivity
 License:        GPLv3+
 URL:            https://www.recipemanager.org/
 Source0:        https://www.recipemanager.org/files/%{name}-%{_date}.tar.bz2
-Requires:	pygtk2, gnome-python2-gconf, gnome-python2-gnomevfs, dbus-python
+Requires:       pygtk2, gnome-python2-gconf, gnome-python2-gnomevfs, dbus-python
 Requires:       avahi-ui-tools
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 * Simple, user-friendly interface
@@ -52,9 +52,6 @@ StartupNotify=false
 EOF
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

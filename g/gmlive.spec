@@ -6,14 +6,14 @@ Version:          0.22.3
 Release:          11.1
 URL:              https://code.google.com/p/gmlive/
 License:          GPLv2
-Group:	Applications/Multimedia
+Group:  Applications/Multimedia
 Source:           https://gmlive.googlecode.com/files/%{name}-%{version}.tar.bz2
-Source1:	  gmlive.desktop
+Source1:          gmlive.desktop
 BuildRequires:    libpng-devel
 BuildRequires:    gcc-c++
 BuildRequires:    intltool
 BuildRequires:    gtkmm24-devel, cairomm-devel, glibmm24-devel, libglademm24-devel
-Requires:	mplayer, sp-auth
+Requires:       mplayer, sp-auth
 
 %description
 Live video for linux, maybe it is an UI for mplayer by playing live video.
@@ -32,9 +32,6 @@ export CXXFLAGS="-std=c++11 -fPIC"
 %{__make} install DESTDIR=$RPM_BUILD_ROOT INSTALL="%{__install} -p"
 
 %{__install} -m 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/gmlive.desktop
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/gmlive

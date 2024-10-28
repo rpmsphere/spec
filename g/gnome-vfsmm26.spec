@@ -43,9 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 find $RPM_BUILD_ROOT -type f -name "*.la" -exec rm -f {} ';'
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 /sbin/ldconfig
 

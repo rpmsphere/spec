@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
-Summary: 	Input manager for the Matchbox Desktop
-Name: 		mb-applet-input-manager
-Version: 	0.6
-Release: 	1
-URL: 		https://matchbox-project.org/
-License: 	GPLv2+
-Group: 		Graphical desktop/Other
-Source: 	https://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.bz2
-BuildRequires:	pango-devel libX11-devel libjpeg-devel libpng-devel libxsettings-client-devel libmatchbox-devel
+Summary:        Input manager for the Matchbox Desktop
+Name:           mb-applet-input-manager
+Version:        0.6
+Release:        1
+URL:            https://matchbox-project.org/
+License:        GPLv2+
+Group:          Graphical desktop/Other
+Source:         https://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.bz2
+BuildRequires:  pango-devel libX11-devel libjpeg-devel libpng-devel libxsettings-client-devel libmatchbox-devel
 
 %description
 Input manager for the Matchbox Desktop.
@@ -22,9 +22,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=%{buildroot} install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS README 

@@ -10,7 +10,7 @@ URL:            https://asic-linux.com.mx/~izto/checkinstall/
 Source:         checkinstall-%{version}.tar.bz2
 Source1:        checkinstall.in
 Source2:        checkinstallrc-dist.in
-Source3:	%{name}-1.6.1.zh_TW.po
+Source3:        %{name}-1.6.1.zh_TW.po
 Patch0:         checkinstall-glibc_bug.patch
 Patch2:         checkinstall-destdir.patch
 Patch3:         checkinstall-makefile_cleanup.patch
@@ -19,10 +19,10 @@ Patch14:        checkinstall-translations.patch.bz2
 Patch15:        checkinstall-install_paths.patch
 Patch19:        checkinstall-scandir.patch
 Patch10:        installwatch-glibc_minor.patch
-Patch20:	checkinstall-ldflags.diff
-Patch21:	checkinstall-ver.patch
+Patch20:        checkinstall-ldflags.diff
+Patch21:        checkinstall-ver.patch
 Provides:       installwatch
-Vendor:		Felipe Eduardo Sánchez Díaz Durán
+Vendor:         Felipe Eduardo Sánchez Díaz Durán
 BuildRequires:  gcc
 
 %description
@@ -35,17 +35,17 @@ another system.
 
 %prep                                                                          
 %setup -q
-%patch0
-%patch2
-%patch3
-%patch6
-%patch14
-%patch15
-#%patch16
-%patch19
-%patch10
+%patch 0
+%patch 2
+%patch 3
+%patch 6
+%patch 14
+%patch 15
+#%patch 16
+%patch 19
+%patch 10
 %patch -P 20 -p1
-%patch21 -p1
+%patch 21 -p1
 %__cp %{SOURCE1} %{SOURCE2} .
 %__cp %{SOURCE3} locale/checkinstall-zh_TW.po
 rm -f checkinstall checkinstallrc-dist
@@ -61,15 +61,12 @@ make CFLAGS="%{optflags}" LD="gcc" LDFLAGS="%optflags -nostdlib"
 #%check
 #cd installwatch
 #make CFLAGS="%{optflags}" LD="gcc" LDFLAGS="%optflags -nostdlib" \
-#	PREFIX=%{_prefix} LIBDIR=%{_libdir} DESTDIR=%{buildroot} test
+#       PREFIX=%{_prefix} LIBDIR=%{_libdir} DESTDIR=%{buildroot} test
 
 %install
 make CFLAGS="%{optflags}" LD="gcc" LDFLAGS="%optflags -nostdlib" \
-	DESTDIR=%{buildroot} PREFIX=%{_prefix} LIBDIR=%{_prefix}/%_lib install
+        DESTDIR=%{buildroot} PREFIX=%{_prefix} LIBDIR=%{_prefix}/%_lib install
 %{find_lang} %{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %config %attr(644,root,root) %{_sysconfdir}/checkinstallrc

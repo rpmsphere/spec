@@ -26,8 +26,8 @@ Development files of OpenGL compositing manager.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p0 -b .link
-%patch1
+%patch 0 -p0 -b .link
+%patch 1
 
 %build
 autoreconf -fi
@@ -38,9 +38,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/glxcompmgr

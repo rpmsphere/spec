@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		ptbatterysystemtray
+Name:           ptbatterysystemtray
 Version: 0.9.9
 Release: 5.1
-License:	GPL
-Vendor:		Brieuc Roblin <brieuc.roblin@gmail.com>
-Source:		%{name}-%{version}.tar.bz2
-Group:		System/X11/Utilities
-URL:		https://www.pyrotools.org/
-Summary:	A simple battery monitor in the system tray, in Qt
-BuildRequires:	gcc-c++, pkgconfig(QtGui)
+License:        GPL
+Vendor:         Brieuc Roblin <brieuc.roblin@gmail.com>
+Source:         %{name}-%{version}.tar.bz2
+Group:          System/X11/Utilities
+URL:            https://www.pyrotools.org/
+Summary:        A simple battery monitor in the system tray, in Qt
+BuildRequires:  gcc-c++, pkgconfig(QtGui)
 
 %description
 It allows to handle power management and CPU frequency.
@@ -24,9 +24,6 @@ make
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
 %{makeinstall} INSTALL_ROOT=$RPM_BUILD_ROOT
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS LICENCE NEWS README ChangeLog

@@ -24,14 +24,11 @@ cp -a *.jpg $RPM_BUILD_ROOT/%{_datadir}/backgrounds/linuxcommunity
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/gnome-background-properties/%{name}.xml
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/mate-background-properties/%{name}.xml
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc download-urls
 %{_datadir}/backgrounds/linuxcommunity
 %{_datadir}/*-background-properties/%{name}.xml
 
 %changelog
-* Wed Mar 06 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 20091211
+* Sun Mar 06 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 20091211
 - Rebuilt for Fedora

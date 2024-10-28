@@ -38,9 +38,6 @@ make INSTALL_ROOT=%{buildroot} install
 %{_datadir}/pixmaps/*
 %{_datadir}/applications/*.desktop
 
-%clean
-rm -rf %{buildroot}
-
 %changelog
 * Thu Jun 04 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1
 - Rebuilt for Fedora

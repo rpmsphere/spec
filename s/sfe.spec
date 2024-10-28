@@ -4,10 +4,10 @@ Name:           sfe
 Version:        0.2a
 Release:        3.1
 Summary:        Small Fractal Explorer
-Group:		Games and Entertainment
+Group:          Games and Entertainment
 License:       GPL 
-URL:	https://bruxy.regnet.cz/web/programming/EN/small-fractal-explorer	
-Source0:	%{name}-%{version}.tar.gz
+URL:    https://bruxy.regnet.cz/web/programming/EN/small-fractal-explorer       
+Source0:        %{name}-%{version}.tar.gz
 BuildRequires: SDL-devel 
 Requires:       SDL
 

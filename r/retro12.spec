@@ -26,9 +26,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_mandir}/man1
 %make_install PREFIX=/usr MANDIR=%{_mandir}/man1 EXAMPLESDIR=%{_datadir}/RETRO12
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %{_docdir}/*
 %{_bindir}/*

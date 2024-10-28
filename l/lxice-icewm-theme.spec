@@ -24,9 +24,6 @@ rm -rf %{buildroot}
 %__mkdir_p %{buildroot}%{_datadir}/icewm/themes/%{theme_name}
 %__cp -a * %{buildroot}%{_datadir}/icewm/themes/%{theme_name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/icewm/themes/%{theme_name}
 

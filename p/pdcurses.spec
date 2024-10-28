@@ -42,9 +42,6 @@ install -Dm644 libXCurses.a %{buildroot}%{_libdir}/libXCurses.a
 install -m755 lib*.so %{buildroot}%{_libdir}
 install -Dm755 xcurses-config %{buildroot}%{_bindir}/xcurses-config
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig

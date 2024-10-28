@@ -1,12 +1,12 @@
 %undefine _debugsource_packages
 
-Name: 	  clac
+Name:     clac
 Version:  0.3.3
 Release:  1
 Summary:  A command line, stack-based calculator with postfix notation
 License:  BSD-2-Clause
 Group:    Other
-URL: 	  https://github.com/soveran/clac
+URL:      https://github.com/soveran/clac
 Source:   %name-%version.tar.gz
 
 %description

@@ -34,9 +34,6 @@ cp Changelog LICENSE README \
 cp -R samples \
    $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}-%{version}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/asus_acpid
 %dir %{_defaultdocdir}/%{name}-%{version}

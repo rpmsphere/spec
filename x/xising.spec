@@ -28,9 +28,6 @@ make
 %install
 %make_install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README
 %{_bindir}/*

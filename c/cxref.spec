@@ -1,11 +1,11 @@
 Name:           cxref
-Version:    	1.6e
-Release:    	5.1
-Summary:    	C Cross Referencing & Documenting tool
-Group:      	Development/Tools/Building
-License:    	GPL-2.0
-URL:        	https://www.gedanken.org.uk/software/cxref/
-Source0:     	https://www.gedanken.org.uk/software/cxref/download/%{name}-%{version}.tgz
+Version:        1.6e
+Release:        5.1
+Summary:        C Cross Referencing & Documenting tool
+Group:          Development/Tools/Building
+License:        GPL-2.0
+URL:            https://www.gedanken.org.uk/software/cxref/
+Source0:        https://www.gedanken.org.uk/software/cxref/download/%{name}-%{version}.tgz
 BuildRequires:  bison flex xz
 BuildRequires:  automake autoconf libtool
 

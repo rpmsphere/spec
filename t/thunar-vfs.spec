@@ -1,28 +1,28 @@
-%define url_ver	%(echo %{version}|cut -d. -f1,2)
+%define url_ver %(echo %{version}|cut -d. -f1,2)
 %define api 1
 
-Name:		thunar-vfs
-Version:	1.2.0
-Release:	7
-Summary:	Virtual filesystem shipped with Thunar 1.0 and earlier releases
-Group:		Graphical desktop/Xfce
-License:	LGPLv2+
-URL:		https://thunar.xfce.org
-Source0:	https://archive.xfce.org/src/xfce/%{name}/%{url_ver}/%{name}-%{version}.tar.bz2
-BuildRequires:	pkgconfig(dbus-glib-1)
-BuildRequires:	pkgconfig(exo-2)
-BuildRequires:	pkgconfig(gamin)
-BuildRequires:	pkgconfig(gconf-2.0)
-BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
-BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(gthread-2.0)
-BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(libpng)
-BuildRequires:	pkgconfig(libstartup-notification-1.0)
-BuildRequires:	pkgconfig(libxfce4util-1.0)
-BuildRequires:	freetype-devel
-BuildRequires:	libjpeg-devel
-BuildRequires:	intltool
+Name:           thunar-vfs
+Version:        1.2.0
+Release:        7
+Summary:        Virtual filesystem shipped with Thunar 1.0 and earlier releases
+Group:          Graphical desktop/Xfce
+License:        LGPLv2+
+URL:            https://thunar.xfce.org
+Source0:        https://archive.xfce.org/src/xfce/%{name}/%{url_ver}/%{name}-%{version}.tar.bz2
+BuildRequires:  pkgconfig(dbus-glib-1)
+BuildRequires:  pkgconfig(exo-2)
+BuildRequires:  pkgconfig(gamin)
+BuildRequires:  pkgconfig(gconf-2.0)
+BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gthread-2.0)
+BuildRequires:  pkgconfig(gtk+-3.0)
+BuildRequires:  pkgconfig(libpng)
+BuildRequires:  pkgconfig(libstartup-notification-1.0)
+BuildRequires:  pkgconfig(libxfce4util-1.0)
+BuildRequires:  freetype-devel
+BuildRequires:  libjpeg-devel
+BuildRequires:  intltool
 
 %description
 Thunar-vfs contains the virtual filesystem shipped with Thunar 1.0 and
@@ -30,9 +30,9 @@ earlier releases. It provides compatibility for applications that still
 use thunar-vfs while Thunar was ported to GVFS.
 
 %package devel
-Summary:	Development files for %{name}
-Group:		Development/Other
-Requires:	%{name} = %{version}-%{release}
+Summary:        Development files for %{name}
+Group:          Development/Other
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 Thunar-vfs contains the virtual filesystem shipped with Thunar 1.0 and

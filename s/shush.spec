@@ -35,9 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{_mandir}/man1/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.3
 - Rebuilt for Fedora

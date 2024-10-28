@@ -27,7 +27,7 @@ gives instant rendering feedback.
 
 %prep
 %setup -q
-%patch0 -p 1
+%patch 0 -p 1
 # mv LICENSE at usual location
 mv -f vertex/data/LICENSE .
 
@@ -59,9 +59,6 @@ Type=Application
 StartupNotify=false
 Categories=Graphics;
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files 
 %doc AUTHORS INSTALL LICENSE README

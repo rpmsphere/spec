@@ -59,9 +59,6 @@ sed -i 's|/usr/share/icons/screenlets.svg|screenlets|' %{buildroot}%{_datadir}/a
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/universal-applets-manager/*.py
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 bash -c "(kill `ps ax | grep screenlets-daemon | sed 's,.*grep.*,,' | cut -d" " -f2` && kill `ps ax | grep melange | sed 's,.*grep.*,,' | cut -d" " -f2`) &>/dev/null || true"
 

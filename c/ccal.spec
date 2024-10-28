@@ -5,7 +5,7 @@ License:    GPL, portions LGPL
 Group:       Utilities/System 
 Version:      2.5.3
 Release:      4.1
-URL: 	     https://ccal.chinesebay.com/ccal/index.html
+URL:         https://ccal.chinesebay.com/ccal/index.html
 Summary:     Display a calendar together with Chinese calendar
 Source:       https://ccal.chinesebay.com/ccal/%{name}-%{version}.tar.gz 
 Patch0:       ccal-2.5.3-make.patch
@@ -20,7 +20,7 @@ Zhuo Meng <zxm8@case.edu>
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 
 %build
 make
@@ -38,9 +38,6 @@ make install-man
 %doc %{_mandir}/man1/ccalpdf.1.gz
 %attr(0755, root, root) %{_bindir}/ccal
 %attr(0755, root, root) %{_bindir}/ccalpdf
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %changelog
 * Sat Aug 03 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.3

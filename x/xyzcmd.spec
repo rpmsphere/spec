@@ -1,16 +1,16 @@
-Summary:	A pure console visual file manager
-Name:		xyzcmd
-Version:	0.0.5
-Release:	8.1
-Source0:	https://xyzcmd.googlecode.com/files/%{name}-%{version}.tar.bz2
-Source1:	xyzcmd_ru.mo
-Source2:	xyzcmd_uk.mo
-Patch0:     	xyzcmd-0.0.5-locale.patch     
-License:	LGPL
-Group:		System Environment/Shells
-URL:		https://xyzcmd.syhpoon.name
-Requires:	python2-urwid
-BuildArch:  	noarch
+Summary:        A pure console visual file manager
+Name:           xyzcmd
+Version:        0.0.5
+Release:        8.1
+Source0:        https://xyzcmd.googlecode.com/files/%{name}-%{version}.tar.bz2
+Source1:        xyzcmd_ru.mo
+Source2:        xyzcmd_uk.mo
+Patch0:         xyzcmd-0.0.5-locale.patch     
+License:        LGPL
+Group:          System Environment/Shells
+URL:            https://xyzcmd.syhpoon.name
+Requires:       python2-urwid
+BuildArch:      noarch
 BuildRequires:  python2
 
 %description
@@ -18,7 +18,7 @@ XYZCommander is a pure console visual file manager.
 
 %prep
 %setup -q
-%patch0 -p1 -b .locale
+%patch 0 -p1 -b .locale
 
 %build
 python2 setup.py build
@@ -37,9 +37,6 @@ python2 setup.py install --no-compile --root $RPM_BUILD_ROOT
 %{__install} -p -m 0644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/%{name}/locale/uk/LC_MESSAGES/xyzcmd.mo
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog COPYING COPYING.LESSER README doc/*

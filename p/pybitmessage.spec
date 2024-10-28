@@ -21,7 +21,7 @@ eavesdroppers like those running warrantless wiretapping programs.
 
 %prep
 %setup -q -n PyBitmessage-%{version}
-%patch0
+%patch 0
 
 %build
 %configure
@@ -119,7 +119,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 - Added bgWorker class for background tasks
 - Added use of gevent module
 - On not-Windows: Fix insecure keyfile permissions
-- Fix 100% CPU usage issue
+- Fix 100%% CPU usage issue
 * Sun Jun 30 2013 Bob Mottram (4096 bits) <bob@robotics.uk.to> - 0.3.4-1
 - Switched addr, msg, broadcast, and getpubkey message types
   to 8 byte time. Last remaining type is pubkey.
@@ -180,7 +180,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
   Messaging Menu integration
 - Changed Debian install directory and run script name based
   on Github issue #135
-* Tue May 6 2013 Bob Mottram (4096 bits) <bob@sluggish.dyndns.org> - 0.3.0-1
+* Mon May 6 2013 Bob Mottram (4096 bits) <bob@sluggish.dyndns.org> - 0.3.0-1
 - Added new API function: getStatus
 - Added error-handling around all sock.sendall() functions
   in the receiveData thread so that if there is a problem
@@ -244,7 +244,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
   from the beginning and end of addresses when adding to
   address book, subscriptions, and blacklist.
 - Improved the display of the time for foreign language users.
-* Tue Apr 1 2013 Bob Mottram (4096 bits) <bob@sluggish.dyndns.org> - 0.2.7-1
+* Mon Apr 1 2013 Bob Mottram (4096 bits) <bob@sluggish.dyndns.org> - 0.2.7-1
 - Added debian packaging
 - Script to generate debian packages
 - SVG icon for Gnome shell, etc

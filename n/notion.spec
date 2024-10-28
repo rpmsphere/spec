@@ -82,9 +82,6 @@ done
 done
 popd
 
-%clean
-%__rm -rf %{buildroot}
-
 %files -f %name.lang
 %{_datadir}/doc/%{name}-%{version}
 %dir %{_sysconfdir}/%{name}

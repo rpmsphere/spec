@@ -14,6 +14,7 @@ BuildRequires: lyx
 BuildRequires: python
 BuildRequires: latex2html
 BuildRequires: libtirpc-devel
+BuildRequires: /usr/bin/fluid
 
 %description
 A spread sheet program for UNIX. The current release has the following features:

@@ -12,7 +12,7 @@ Source0:        %{name}-%{version}.tar.gz
 Source1:        latex-cover-1.04.tar.lzma
 Source2:        %{name}-SuSE.tar.lzma
 Source3:        hylafax-6.0.4.de.po
-Patch:          hylafax-6.0.4.patch
+Patch0:         hylafax-6.0.4.patch
 Patch1:         hylafax-6.0.4-isdn.patch
 Patch2:         hylafax-6.0.4-valist.patch
 Patch3:         hylafax-6.0.4-pic.patch
@@ -54,19 +54,19 @@ Authors:
 
 %prep
 %setup -q -a 1 -a 2
-%patch
-%patch1
-%patch2
-%patch3
-%patch4
-%patch5
-%patch6
-%patch7
-##%patch8
-%patch9
-%patch10
-##%patch11
-%patch12
+%patch 0
+%patch 1
+%patch 2
+%patch 3
+%patch 4
+%patch 5
+%patch 6
+%patch 7
+##%patch 8
+%patch 9
+%patch 10
+##%patch 11
+%patch 12
 # needs to be executable 
 chmod 755 SuSE/usr/lib/fax/a2pswrap
 find ../ -name .cvsignore -exec rm {} \;  
@@ -125,9 +125,6 @@ rm -f /usr/lib/debug/usr/lib64/libhylafax-6.0.so.3.debug
 
 %post
 /bin/chown -f -R fax var/spool/fax/*
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files -f %{name}-server.lang
 %doc COPYRIGHT README SuSE/README.SuSE TODO VERSION latex-cover-1.04 doc/RELEASENOTES-6.0.txt

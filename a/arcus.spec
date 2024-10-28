@@ -43,9 +43,6 @@ Type=Application
 Categories=Game;Simulation;
 EOF
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %doc CHANGES LICENSE README
 %attr(755,root,root) %{_bindir}/%{name}

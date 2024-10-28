@@ -23,9 +23,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_libdir}/libreoffice/share/template/zh-TW/presnt
 cp *.otp $RPM_BUILD_ROOT%{_libdir}/libreoffice/share/template/zh-TW/presnt
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_libdir}/libreoffice/share/template/zh-TW/presnt/*.otp
 

@@ -1,13 +1,13 @@
-Name:		wordjoy
-Version:	0.2.2
-Release:	1
-Summary:	English words memory for Linux
-License:	GPL
-Group:		Education
-Source0:	%{name}_%{version}.tar.bz2
-URL:		https://code.google.com/p/wordjoy/
-BuildArch:	noarch
-Requires:	pygtk2
+Name:           wordjoy
+Version:        0.2.2
+Release:        1
+Summary:        English words memory for Linux
+License:        GPL
+Group:          Education
+Source0:        %{name}_%{version}.tar.bz2
+URL:            https://code.google.com/p/wordjoy/
+BuildArch:      noarch
+Requires:       pygtk2
 
 %description
 wordjoy is a Python script to help people memory english words.
@@ -44,9 +44,6 @@ Icon=/usr/share/wordjoy/glade/wordjoy.png
 EOF
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/src/*.py
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

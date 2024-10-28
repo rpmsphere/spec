@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		tea
-Version:	62.4.0
-Release:	1
-Summary:	A text editor with the hundreds of features
-URL:		https://github.com/psemiletov/tea-qt
-Group:		Productivity/Text/Editors
-License:	GPL
-Source0:	https://semiletov.org/tea/dloads/%{name}-qt-%{version}.tar.gz
+Name:           tea
+Version:        62.4.0
+Release:        1
+Summary:        A text editor with the hundreds of features
+URL:            https://github.com/psemiletov/tea-qt
+Group:          Productivity/Text/Editors
+License:        GPL
+Source0:        https://semiletov.org/tea/dloads/%{name}-qt-%{version}.tar.gz
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++
+BuildRequires:  gcc-c++
 BuildRequires:  hunspell-devel
 BuildRequires:  qt5-qtbase-devel
 AutoProv:       false

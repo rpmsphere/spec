@@ -26,9 +26,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %make_install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc ChangeLog AUTHORS NEWS README COPYING
 %{_datadir}/icons/%{theme_name}

@@ -6,11 +6,11 @@ Release:        1
 License:        LGPL
 Summary:        Secure chat and file sharing
 Group:          Productivity/Networking/Other
-URL:	        http:/retroshare.sourceforge.net/
+URL:            http:/retroshare.sourceforge.net/
 #Source0:        http://sourceforge.net/projects/retroshare/files/RetroShare/%{version}/RetroShare-%{version}.tar.gz
-Source0:	RetroShare-master.zip
+Source0:        RetroShare-master.zip
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++
+BuildRequires:  gcc-c++
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  libupnp-devel libgpg-error libgnome-keyring-devel glib2-devel
@@ -44,9 +44,6 @@ make
 %install
 mkdir -p $RPM_BUILD_ROOT
 make install INSTALL_ROOT=%{buildroot}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

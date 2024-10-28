@@ -1,11 +1,11 @@
-Name: 		grpn
-Version: 	1.5.2
-Release: 	1
-License: 	GPL
-Summary: 	RPN calculator for X built using the GIMP Toolkit
-URL: 		https://lashwhip.com/grpn.html
-Group: 		Sciences/Mathematics
-Source: 	https://fossies.org/linux/misc/legacy/%{name}-%{version}.tar.gz
+Name:           grpn
+Version:        1.5.2
+Release:        1
+License:        GPL
+Summary:        RPN calculator for X built using the GIMP Toolkit
+URL:            https://lashwhip.com/grpn.html
+Group:          Sciences/Mathematics
+Source:         https://fossies.org/linux/misc/legacy/%{name}-%{version}.tar.gz
 BuildRequires:  gtk2-devel
 
 %description 
@@ -27,9 +27,6 @@ install -Dm755 src/grpn $RPM_BUILD_ROOT%{_bindir}/grpn
 install -Dm644 src/grpn.1 $RPM_BUILD_ROOT%{_mandir}/man1/grpn.1
 install -Dm644 src/debian/grpn.desktop %buildroot%{_datadir}/applications/%{name}.desktop
 install -Dm644 src/debian/grpn.xpm %buildroot%{_datadir}/pixmaps/%{name}.xpm
-
-%clean
-rm -rf $RPM_BUILD_ROOT 
 
 %files
 %doc src/CHANGES src/LICENSE src/README

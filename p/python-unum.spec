@@ -29,9 +29,6 @@ rm -rf %{buildroot}%{python2_sitelib}/tests
 # fix wrong end of lines
 sed -i 's/\r//' docs/*.*
  
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc docs/*
 %{python2_sitelib}/*

@@ -1,19 +1,19 @@
 Name:           flo
-Version:	svn1011
-Release:	12.1
-License:	GPL-2.0+	
-Summary:	A mindmap tool with a focus on presentations
-URL:		https://trac.geiseri.com/wiki/FloMain
-Group:		Productivity/Office/Organizers
-Source:		%{name}-%{version}.tar.bz2
-Patch1:		%{name}-%{version}-hunspell-path.patch
+Version:        svn1011
+Release:        12.1
+License:        GPL-2.0+        
+Summary:        A mindmap tool with a focus on presentations
+URL:            https://trac.geiseri.com/wiki/FloMain
+Group:          Productivity/Office/Organizers
+Source:         %{name}-%{version}.tar.bz2
+Patch1:         %{name}-%{version}-hunspell-path.patch
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++ qt4-devel
-BuildRequires:	aspell-devel
-BuildRequires:	hunspell-devel
-BuildRequires:	doxygen
-BuildRequires:	pkgconfig
-BuildRequires:	desktop-file-utils
+BuildRequires:  gcc-c++ qt4-devel
+BuildRequires:  aspell-devel
+BuildRequires:  hunspell-devel
+BuildRequires:  doxygen
+BuildRequires:  pkgconfig
+BuildRequires:  desktop-file-utils
 
 %description
 Flo is a multi-platform mind mapping program with a focus on presentations.
@@ -22,7 +22,7 @@ various documents.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 sed -i '1i #include <unistd.h>' library/sxfile/getusername.cpp
 
 %build
@@ -38,9 +38,6 @@ rm -f -r $RPM_BUILD_ROOT
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/*.xpm
-
-%clean
-rm -f -r $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - svn1011

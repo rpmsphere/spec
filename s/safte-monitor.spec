@@ -30,18 +30,18 @@ Authors:
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p0
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p0
+%patch 2 -p1
 sed -i '/stropts/d' src/qlogic_api.c
 
 %build
 rm -f config.cache config.log config.status
 CC=gcc CFLAGS="$RPM_OPT_FLAGS -Wno-format-security" ./configure --prefix=/usr \
-	--exec-prefix=/usr \
-	--sysconfdir=/etc \
-	--libexecdir=/usr/%{_lib} \
-	--localstatedir=/var
+        --exec-prefix=/usr \
+        --sysconfdir=/etc \
+        --libexecdir=/usr/%{_lib} \
+        --localstatedir=/var
 make CC=gcc
 
 %install
@@ -54,9 +54,6 @@ ln -s ../../etc/init.d/safte-monitor $RPM_BUILD_ROOT/usr/sbin/rcsafte-monitor
 install -d $RPM_BUILD_ROOT/var/adm/fillup-templates
 install redhat/sysconfig/safte-monitor $RPM_BUILD_ROOT/var/adm/fillup-templates/sysconfig.safte-monitor
 install -d $RPM_BUILD_ROOT/etc/safte-monitor
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGELOG README README.html mathopd-1.3pl7-lite/COPYING

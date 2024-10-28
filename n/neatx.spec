@@ -75,9 +75,6 @@ fi
 %files -n python2-%name
 %python2_sitelib/%name
 
-%clean
-rm -rf %buildroot
-
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1
 - Rebuilt for Fedora

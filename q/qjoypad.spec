@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 
-Summary:	Emulate keyboard or mouse actions with a joystick
-Name:		qjoypad
-Version:	4.1.0
-Release:	16.1
-Source0:	https://downloads.sourceforge.net/project/qjoypad/qjoypad/%{name}-4.1/%{name}-%{version}.tar.gz
-Group:		System/Kernel and hardware
-License:	GPLv2+
-URL:		https://qjoypad.sourceforge.net/
-BuildRequires:	gcc-c++
-BuildRequires:	qt4-devel
-BuildRequires:	libX11-devel
-BuildRequires:	libXtst-devel
-BuildRequires:	ghostscript-core ImageMagick
+Summary:        Emulate keyboard or mouse actions with a joystick
+Name:           qjoypad
+Version:        4.1.0
+Release:        16.1
+Source0:        https://downloads.sourceforge.net/project/qjoypad/qjoypad/%{name}-4.1/%{name}-%{version}.tar.gz
+Group:          System/Kernel and hardware
+License:        GPLv2+
+URL:            https://qjoypad.sourceforge.net/
+BuildRequires:  gcc-c++
+BuildRequires:  qt4-devel
+BuildRequires:  libX11-devel
+BuildRequires:  libXtst-devel
+BuildRequires:  ghostscript-core ImageMagick
 
 %description
 QJoyPad converts input from a gamepad or joystick into key-presses or mouse 
@@ -50,9 +50,6 @@ Terminal=false
 Type=Application
 Categories=Qt;Settings;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.txt LICENSE.txt

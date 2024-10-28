@@ -49,9 +49,6 @@ for i in 16 32 48 128 256; do
 done
 install -D -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc license.txt readme.txt
 %dir %{_datadir}/icons/hicolor

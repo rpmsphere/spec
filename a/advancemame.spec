@@ -35,9 +35,6 @@ rm -f $RPM_BUILD_ROOT/%_mandir/man1/advv.1*
 rm -f $RPM_BUILD_ROOT/%_docdir/advance/carddos.txt
 rm -f $RPM_BUILD_ROOT/%_docdir/advance/cardlinx.txt
 
-%clean
-rm -fr $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/adv*
 %{_datadir}/advance

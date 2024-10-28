@@ -7,10 +7,10 @@ AutoReqProv:    on
 Version:        0.5
 Release:        1
 Summary:        A Multiplayer Puzzle Game
-Source:         %{name}-%{version}.tar.bz2
+Source0:        %{name}-%{version}.tar.bz2
 Source1:        mures.desktop
 Source2:        mures.png
-Patch:          %{name}-%{version}.dif
+Patch0:         %{name}-%{version}.dif
 Patch1:         %{name}-%{version}-gcc-warning.patch
 
 %description
@@ -25,8 +25,8 @@ Authors:
 
 %prep
 %setup -q
-%patch
-%patch1
+%patch 0
+%patch 1
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
@@ -50,13 +50,10 @@ cp -a src/gui/*.png $DATADIR/gui
 cp -a src/sounds/*.wav $DATADIR/sounds
 cp -p src/*.lua $DATADIR
 install -m 0755 -d $RPM_BUILD_ROOT/usr/share/pixmaps/
-install -m 0644 $RPM_SOURCE_DIR/mures.png $RPM_BUILD_ROOT/usr/share/pixmaps/mures.png
+install -m 0644 %{SOURCE2} $RPM_BUILD_ROOT/usr/share/pixmaps/mures.png
 #%suse_update_desktop_file -i %name
 mkdir %{buildroot}%{_datadir}/applications
 install -m 0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README TODO

@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		eviltermit
-Version:	1.1.3.1
-Release:	1
-Summary:	Vte-based Terminal Emulator
-Source:		https://www.calno.com/eviltermit/%{name}-%{version}.tar.gz
-Source1:	eviltermit.desktop
-URL:		https://www.calno.com/eviltermit/
-Group:		System/Terminals
-License:	GNU General Public License v2 (GPL)
-BuildRequires:	vte-devel
+Name:           eviltermit
+Version:        1.1.3.1
+Release:        1
+Summary:        Vte-based Terminal Emulator
+Source:         https://www.calno.com/eviltermit/%{name}-%{version}.tar.gz
+Source1:        eviltermit.desktop
+URL:            https://www.calno.com/eviltermit/
+Group:          System/Terminals
+License:        GNU General Public License v2 (GPL)
+BuildRequires:  vte-devel
 
 %description
 eviltermit is a VTE based, simplified termit terminal emulator.
@@ -30,9 +30,6 @@ Features:
 %makeinstall
 %__rm -rf "%{buildroot}%{_datadir}/doc"
 %__install -D -m0644 "%{SOURCE1}" "%{buildroot}%{_datadir}/applications/eviltermit.desktop"
-
-%clean
-%__rm -rf "%{buildroot}"
 
 %files
 %doc Changelog COPYING TODO AUTHORS

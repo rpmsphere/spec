@@ -22,9 +22,6 @@ A PERL script to synchronize a local directory tree and a remote FTP directory t
 rm -rf $RPM_BUILD_ROOT
 install -D -m 0755 ftpsync.pl $RPM_BUILD_ROOT%{_bindir}/ftpsync
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/ftpsync
 %doc Changes COPYING README TODO

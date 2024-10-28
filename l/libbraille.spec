@@ -8,7 +8,7 @@ Group:         System/Libraries
 URL:           https://libbraille.org/
 Source:        https://prdownloads.sourceforge.net/libbraille/libbraille-%{version}.tar.gz
 License:       LGPL
-BuildRequires: libusb-devel
+BuildRequires: libusb-compat-0.1-devel
 
 %description
 Libbraille is a computer shared library which makes it possible to easily develop
@@ -38,9 +38,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %config(noreplace) %{_sysconfdir}/libbraille.conf

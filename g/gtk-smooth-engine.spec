@@ -1,25 +1,25 @@
-Summary: 	The Smooth engine for GTK+-2.0
-Name: 		gtk-smooth-engine
-Version: 	2.14.3
-Release: 	16.1
-License:	LGPLv2+ and GPLv2+
-URL: 		https://sourceforge.net/projects/smooth-engine
-Source0: 	https://ftp.de.debian.org/debian/pool/main/g/gtk-smooth-engine/%{name}_%{version}+deb5.tar.gz
-Group: 		User Interface/Desktops
+Summary:        The Smooth engine for GTK+-2.0
+Name:           gtk-smooth-engine
+Version:        2.14.3
+Release:        16.1
+License:        LGPLv2+ and GPLv2+
+URL:            https://sourceforge.net/projects/smooth-engine
+Source0:        https://ftp.de.debian.org/debian/pool/main/g/gtk-smooth-engine/%{name}_%{version}+deb5.tar.gz
+Group:          User Interface/Desktops
 Patch0:     gtk-smooth-engine_automake.patch
-Requires:	gtk2
-BuildRequires: 	gtk2-devel >= 2.4.0
-BuildRequires:	pango-devel >= 1.6.0
-BuildRequires: 	glib2-devel >= 2.4.0
-BuildRequires: 	libtool
-BuildRequires: 	autoconf
+Requires:       gtk2
+BuildRequires:  gtk2-devel >= 2.4.0
+BuildRequires:  pango-devel >= 1.6.0
+BuildRequires:  glib2-devel >= 2.4.0
+BuildRequires:  libtool
+BuildRequires:  autoconf
 
 %description
 The Smooth engine for GTK+-2.0
 
 %prep
 %setup -q -n %{name}-%{version}+deb5
-%patch0 -p1 -b .automake
+%patch 0 -p1 -b .automake
 NOCONFIGURE=1 ./autogen.sh
 
 %build

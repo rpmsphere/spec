@@ -52,24 +52,24 @@ using agg.
 
 %prep
 %setup -q
-%patch0 -p1 -b .depends
-%patch1 -p1 -b .pkgconfig
-%patch2 -p0 -b .autotools
-%patch101 -p1
-%patch102 -p1
-%patch103 -p1
-%patch104 -p1
-%patch105 -p1
-%patch106 -p1
-%patch107 -p1
-%patch108 -p1
-%patch109 -p1
-%patch110 -p1
-%patch111 -p1
-%patch112 -p1
-%patch113 -p1
-%patch114 -p1
-%patch115 -p1
+%patch 0 -p1 -b .depends
+%patch 1 -p1 -b .pkgconfig
+%patch 2 -p0 -b .autotools
+%patch 101 -p1
+%patch 102 -p1
+%patch 103 -p1
+%patch 104 -p1
+%patch 105 -p1
+%patch 106 -p1
+%patch 107 -p1
+%patch 108 -p1
+%patch 109 -p1
+%patch 110 -p1
+%patch 111 -p1
+%patch 112 -p1
+%patch 113 -p1
+%patch 114 -p1
+%patch 115 -p1
 aclocal
 autoheader
 autoconf
@@ -107,9 +107,6 @@ mv __clean_examples __dist_examples/examples
 %{_libdir}/pkgconfig/libagg.pc
 %{_includedir}/agg2/
 %{_datadir}/aclocal/libagg.m4
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Jan 10 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5

@@ -38,9 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 cp AUTHORS ChangeLog COPYING README THANKS TODO %{buildroot}%{_datadir}/doc/%{name}-%{version}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/doc/%{name}-%{version}
 %{_mandir}/man?/%{name}.*

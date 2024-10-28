@@ -6,10 +6,10 @@ Release:   17.1
 URL:       https://www3.telus.net/public/robark/Fl_TeacherTool/
 Source0:   fl_teachertool-%{version}.tar.bz2
 Source1:   fl_teachertool.desktop
-Patch0:	   fl_teachertool-makefile.patch
-Patch1:	   fl_teachertool.cxx.patch
+Patch0:    fl_teachertool-makefile.patch
+Patch1:    fl_teachertool.cxx.patch
 Patch2:    fl_teachertool-iptables-path.patch
-Patch3:	   fl_teachertool-more-fixes.patch
+Patch3:    fl_teachertool-more-fixes.patch
 License:   GPL
 Group:     User Interface/Desktops
 BuildRequires: fltk-devel gcc-c++ libXpm-devel xorg-x11-proto-devel libX11-devel libpng-devel libjpeg-devel freetype-devel
@@ -21,9 +21,9 @@ FLTK version of TeacherTool.
 
 %prep
 %setup -q -n fl_teachertool-%{version}
-%patch0
-%patch1 -p1
-%patch2 -p1
+%patch 0
+%patch 1 -p1
+%patch 2 -p1
 
 %build
 export SUSE_ASNEEDED=0
@@ -38,9 +38,6 @@ install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT/usr/share/applications/
 %post
 %__cp /usr/bin/vncviewer /usr/bin/teachertool-vncviewer
 %__cp /usr/bin/vncpasswd /usr/bin/teachertool-vncpasswd
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING INSTALL RELEASE-NOTES

@@ -125,9 +125,6 @@ fi
 %{_bindir}/gtk-query-immodules-3.0-%{__isa_bits} --update-cache || :
 /sbin/ldconfig > /dev/null 2>&1
 
-%clean 
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc {README,COPYING,AUTHORS}
 %dir %{_sysconfdir}/oxim

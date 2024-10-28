@@ -9,13 +9,13 @@ Group: Sciences/Geosciences
 Source: ftp://ftp.ac-grenoble.fr/ge/geosciences/xrmap/%{name}-%{version}.tar.bz2
 Patch0: xrmap-2.33-fix-str-fmt.patch
 URL: https://frmas.free.fr/li_1.htm
-BuildRequires:	imake
-BuildRequires:	libX11-devel
-BuildRequires:	bzip2-devel
+BuildRequires:  imake
+BuildRequires:  libX11-devel
+BuildRequires:  bzip2-devel
 BuildRequires:  libpng-devel
 BuildRequires:  libjpeg-devel
-BuildRequires:	libXpm-devel
-BuildRequires:	libXext-devel
+BuildRequires:  libXpm-devel
+BuildRequires:  libXext-devel
 
 %description
 The Xrmap package is derived from the rmap package by Reza Naima.
@@ -29,10 +29,10 @@ projections in addition to the Spherical projection, as well as reverse
 search of coordinates.
 
 %prep
-rm -rf $RPM_BUILD_ROOT
+#rm -rf $RPM_BUILD_ROOT
 
 %setup -q
-%patch0 -p1 -b .strfmt
+%patch 0 -p1 -b .strfmt
 perl -pi -e "s,/usr/X11R6/lib ,%{_libdir} ," earthview/Makefile
 sed -i '23i #include <zlib.h>' image.c
 sed -i 's|gzFile \*gzd|gzFile gzd|' earthview/earthview.c
@@ -87,9 +87,6 @@ Comment=Manipulate and create images of Earth
 Exec=%{name}        
 Icon=%{name}
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGES INSTALL midi_cfg/* tools/README.tools LICENSE MAPEDIT README TODO VECTORMAP

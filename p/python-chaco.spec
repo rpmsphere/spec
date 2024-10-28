@@ -1,28 +1,28 @@
 %undefine _debugsource_packages
-%define module	chaco
+%define module  chaco
 
-Summary:	Enthought Tool Suite - interactive 2D plotting
-Name:		python-%{module}
-Version:	4.5.0
-Release:	5.1
-Source0:	https://www.enthought.com/repo/ets/chaco-%{version}.tar.gz
-License:	BSD
-Group:		Development/Python
-URL:		https://github.com/enthought/chaco/
-Obsoletes:	python-enthought-chaco
-Obsoletes:	python-enthought-chaco2
-Requires:	python-traits >= 4.2.0
-Requires:	python-enable >= 4.2.0
-Requires:	python2-numpy >= 1.1.0
-Requires:	python-reportlab
-BuildRequires:	python2-numpy atlas
-BuildRequires:	python-devel
-#BuildRequires:	python-traits >= 4.2.0
-BuildRequires:	python-setuptools >= 0.6c8
-#BuildRequires:	x11-server-xvfb, procps
-#BuildRequires:	python-setupdocs >= 1.0.5
-BuildRequires:	python-sphinx environment-modules
-BuildRequires:	pkgconfig
+Summary:        Enthought Tool Suite - interactive 2D plotting
+Name:           python-%{module}
+Version:        4.5.0
+Release:        5.1
+Source0:        https://www.enthought.com/repo/ets/chaco-%{version}.tar.gz
+License:        BSD
+Group:          Development/Python
+URL:            https://github.com/enthought/chaco/
+Obsoletes:      python-enthought-chaco
+Obsoletes:      python-enthought-chaco2
+Requires:       python-traits >= 4.2.0
+Requires:       python-enable >= 4.2.0
+Requires:       python2-numpy >= 1.1.0
+Requires:       python-reportlab
+BuildRequires:  python2-numpy atlas
+BuildRequires:  python-devel
+#BuildRequires: python-traits >= 4.2.0
+BuildRequires:  python-setuptools >= 0.6c8
+#BuildRequires: x11-server-xvfb, procps
+#BuildRequires: python-setupdocs >= 1.0.5
+BuildRequires:  python-sphinx environment-modules
+BuildRequires:  pkgconfig
 
 %description
 Chaco is a Python plotting application toolkit that facilitates

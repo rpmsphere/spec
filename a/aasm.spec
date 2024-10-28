@@ -5,6 +5,7 @@ Release: 1
 Group: Development/Languages
 License: GPLv3+
 Source0: https://download.savannah.nongnu.org/releases/%{name}/%{name}-%{version}.tar.gz
+BuildRequires: automake gcc
 BuildRequires: gperf
 BuildRequires: perl-interpreter
 

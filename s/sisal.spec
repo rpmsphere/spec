@@ -28,9 +28,6 @@ install LICENSE.LLNL COPYRIGHT.1993 NEWS %{buildroot}%{_docdir}/%{name}
 cp -a Tests %{buildroot}%{_docdir}/%{name}
 unzip -q %{SOURCE1} -d %{buildroot}%{_docdir}/%{name}
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %{_docdir}/%{name}
 %{_bindir}/*

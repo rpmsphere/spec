@@ -5,7 +5,7 @@ Version:        0.9.6.1
 Release:        6.1
 License:        GPL-2.0
 Summary:        Displaying the temperature of your CPU and disks
-Url:            https://computertemp.berlios.de
+URL:            https://computertemp.berlios.de
 Group:          System/GUI/GNOME
 Source0:        %{name}-%{version}.tar.bz2
 # PATCH-FIX-OPENSUSE computertemp-use-libexecdir.patch vuntz@novell.com -- Make it install the applet in the right directory
@@ -27,8 +27,8 @@ added to the panel to monitor different sensors.
 %lang_package
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p0
+%patch 0 -p1
+%patch 1 -p0
 
 %build
 export PYTHON=/usr/bin/python2
@@ -41,12 +41,9 @@ export PYTHON=/usr/bin/python2
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_libexecdir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %post
 GCONF_CONFIG_SOURCE=xml:merged:/etc/gconf/gconf.xml.defaults \
-	/usr/bin/gconftool-2 --makefile-install-rule computertemp.schemas
+        /usr/bin/gconftool-2 --makefile-install-rule computertemp.schemas
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog NEWS README TODO

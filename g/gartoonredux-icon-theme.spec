@@ -31,9 +31,6 @@ rm -rf %{buildroot}
 make install PREFIX=%{buildroot}/usr
 sed -i 's|Example=audacity|Example=folder|' %{buildroot}%{_datadir}/icons/%{theme_name}/index.theme
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS changelog README GPLv2.txt TODO
 %{_datadir}/icons/%{theme_name}

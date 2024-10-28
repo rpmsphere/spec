@@ -30,7 +30,7 @@ This package contains the mcal headers and static library.
 
 %prep
 %setup -q -n libmcal
-%patch0 -p1
+%patch 0 -p1
 sed -i '/extern int/d' icalroutines.h
 sed -i '1i extern int ical_yyleng;' icalroutines.c
 
@@ -49,9 +49,6 @@ cp cal_misc.h icalroutines.h $RPM_BUILD_ROOT%{_includedir}/mcal
 %ifarch x86_64 aarch64
 mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT/usr/lib64
 %endif
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %{_includedir}/mcal

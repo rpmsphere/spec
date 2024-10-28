@@ -50,7 +50,7 @@ toolkit, currently used primarily by Moblin.
 
 %prep
 %setup -q -n mx-%{version}
-%patch0 -p1 -b .header
+%patch 0 -p1 -b .header
 
 %build
 %configure --disable-static --enable-introspection --enable-gtk-doc

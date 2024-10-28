@@ -46,9 +46,6 @@ install -Dm644 desktop/%{name}-32x32.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{na
 install -Dm644 desktop/%{name}.desktop $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -m644 COPYING ChangeLog AUTHORS README.md $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig

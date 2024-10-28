@@ -1,16 +1,16 @@
 %global __os_install_post %{nil}
 %undefine _debugsource_packages
 
-Summary:	A KDE network sniffer application
-Name:		ksniffer
-Version:	0.3.2
-Release:	8.1
-License:	GPLv2+
-Group:		Networking/Other
-URL:		https://www.ksniffer.org
-Source0:	%{name}-%{version}.tar.bz2
-BuildRequires:	kdelibs3-devel
-BuildRequires:	libpcap-devel
+Summary:        A KDE network sniffer application
+Name:           ksniffer
+Version:        0.3.2
+Release:        8.1
+License:        GPLv2+
+Group:          Networking/Other
+URL:            https://www.ksniffer.org
+Source0:        %{name}-%{version}.tar.bz2
+BuildRequires:  kdelibs3-devel
+BuildRequires:  libpcap-devel
 
 %description
 KSniffer is a network statistics collector. It allows a user 
@@ -29,20 +29,17 @@ like http, ftp, telnet, etc.
 
 %build
 %configure \
-	--disable-rpath \
-	--enable-nmcheck \
-	--enable-pch \
-	--enable-new-ldflags \
-	--enable-final
+        --disable-rpath \
+        --enable-nmcheck \
+        --enable-pch \
+        --enable-new-ldflags \
+        --enable-final
 make
 
 %install
 rm -rf %{buildroot}
 %makeinstall
 %find_lang %{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %doc AUTHORS README COPYING TODO VERSION

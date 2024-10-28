@@ -1,17 +1,17 @@
-Name:			AlephOne-Marathon2
-Summary:		Marathon 2 scenario files for AlephOne
-Version:		1.0
-Release:		1
-License:		GPL
-Group:			Amusements/Games/3D/Shoot
-#Source:		https://alephone.cebix.net/downloads/AlephOne-Marathon2-1.0.tar.gz
-Source:			%{name}-%{version}.tar.bz2
+Name:                   AlephOne-Marathon2
+Summary:                Marathon 2 scenario files for AlephOne
+Version:                1.0
+Release:                1
+License:                GPL
+Group:                  Amusements/Games/3D/Shoot
+#Source:                https://alephone.cebix.net/downloads/AlephOne-Marathon2-1.0.tar.gz
+Source:                 %{name}-%{version}.tar.bz2
 Source1:                AlephOne.png
-URL:			https://alephone.cebix.net
-Requires:		AlephOne
-#BuildRequires:	update-desktop-files
-Provides:		AlephOne-data
-BuildArch:		noarch
+URL:                    https://alephone.cebix.net
+Requires:               AlephOne
+#BuildRequires: update-desktop-files
+Provides:               AlephOne-data
+BuildArch:              noarch
 
 %description
 Aleph One is an Open Source 3D first-person shooter game, based on
@@ -36,13 +36,13 @@ export ALEPHONE_DATA=%{_datadir}/AlephOne:%{_datadir}/AlephOne/%{name}-%{version
 %{_bindir}/alephone $*
 EOF
 %__install -m 755 alephone-marathon2 \
-	%{buildroot}%{_bindir}
+        %{buildroot}%{_bindir}
 %__rm alephone-marathon2
 
 # data-files
 %__install -dm 755 %{buildroot}%{_datadir}/AlephOne/%{name}-%{version}
 %__cp -a . \
-	%{buildroot}%{_datadir}/AlephOne/%{name}-%{version}
+        %{buildroot}%{_datadir}/AlephOne/%{name}-%{version}
 
 # done by %doc
 %__rm %{buildroot}%{_datadir}/AlephOne/%{name}-%{version}/Marathon_2_Manual.pdf
@@ -63,16 +63,13 @@ Categories=Application;Game;Amusements;Games;Action;
 EOF
 %__install -dm 755 %{buildroot}/usr/share/applications
 %__install -m 644 %{name}.desktop \
-	%{buildroot}%{_datadir}/applications
+        %{buildroot}%{_datadir}/applications
 
 # icon
 %__install -dm 755 %{buildroot}%{_datadir}/pixmaps
 %__install -m 644 %{SOURCE1}  \
-	%{buildroot}%{_datadir}/pixmaps
+        %{buildroot}%{_datadir}/pixmaps
 
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc *.pdf

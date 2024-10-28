@@ -34,9 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/doc
 mv $RPM_BUILD_ROOT/usr/doc/html $RPM_BUILD_ROOT%{_datadir}/doc/%{name}-%{version}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/doc/%{name}-%{version}

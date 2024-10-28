@@ -8,7 +8,7 @@ License:      BSD
 Version:      6.1.0
 Release:      4.1
 Source0:      https://github.com/ChaiScript/ChaiScript/archive/v%{version}.tar.gz#/ChaiScript-%{version}.tar.gz
-BuildRequires:	gcc-c++, cmake
+BuildRequires:  gcc-c++, cmake
 
 %description
 ChaiScript is one of the first (and perhaps only) embedded scripting
@@ -41,9 +41,6 @@ mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT/usr/lib64
 %{_datadir}/%{name}
 %{_libdir}/%{name}
 %{_libdir}/pkgconfig/%{name}.pc
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu May 31 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 6.1.0

@@ -45,9 +45,6 @@ rm %{buildroot}%{_datadir}/info/dir
 %{_datadir}/info/*
 %{_mandir}/man?/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.8
 - Rebuilt for Fedora

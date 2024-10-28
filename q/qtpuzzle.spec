@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Name:		qtpuzzle
+Name:           qtpuzzle
 Version: 0.0.1.rev278
 Release: 19.1
-License:	GPL
-Source0:	%{name}-%{version}.tar.bz2
+License:        GPL
+Source0:        %{name}-%{version}.tar.bz2
 Source1:    %{name}.png
-Group:		Amusements/Games
-Summary:	Puzzle Game
-URL:		https://code.google.com/p/qtdesktop
+Group:          Amusements/Games
+Summary:        Puzzle Game
+URL:            https://code.google.com/p/qtdesktop
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, make, pkgconfig, pkgconfig(QtCore), pkgconfig(QtGui)
+BuildRequires:  gcc-c++, make, pkgconfig, pkgconfig(QtCore), pkgconfig(QtGui)
 
 %description
 %{summary}
@@ -27,9 +27,6 @@ make
 %{makeinstall} INSTALL_ROOT=$RPM_BUILD_ROOT
 install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 sed -i 's|#Icon|Icon|' %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

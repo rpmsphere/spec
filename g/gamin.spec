@@ -58,11 +58,11 @@ daemon.
 
 %prep
 %setup -q
-%patch1 -p1 -b .gnueabi
-%patch2 -p1 -b .manape
-%patch4 -p1 -b .nfs4
-%patch5 -p1 -b .const
-%patch7 -p1 -b .double-lock
+%patch 1 -p1 -b .gnueabi
+%patch 2 -p1 -b .manape
+%patch 4 -p1 -b .nfs4
+%patch 5 -p1 -b .const
+%patch 7 -p1 -b .double-lock
 
 # recode docs into UTF-8
 for i in ChangeLog NEWS ; do 

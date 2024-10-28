@@ -1,15 +1,15 @@
-Summary:	Simple port scanner
-Summary(pl):	Prosty skaner portów
-Name:		knocker
-Version:	0.8.0
-Release:	1
-License:	GPL
-Group:		X11/Applications/Networking
-Source0:	https://belnet.dl.sourceforge.net/sourceforge/knocker/%{name}-%{version}.tar.gz
-Source1:	%{name}.png
-URL:		https://knocker.sourceforge.net/
-BuildRequires:	autoconf
-BuildRequires:	automake
+Summary:        Simple port scanner
+Summary(pl):    Prosty skaner portów
+Name:           knocker
+Version:        0.8.0
+Release:        1
+License:        GPL
+Group:          X11/Applications/Networking
+Source0:        https://belnet.dl.sourceforge.net/sourceforge/knocker/%{name}-%{version}.tar.gz
+Source1:        %{name}.png
+URL:            https://knocker.sourceforge.net/
+BuildRequires:  autoconf
+BuildRequires:  automake
 
 %description
 Knocker is a simple, versatile, and easy-to-use TCP security port
@@ -32,9 +32,6 @@ make
 %install
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog AUTHORS BUGS TO-DO

@@ -28,9 +28,6 @@ resize and raise/lower.
 %install
 %make_install PREFIX=/usr
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.md
 %{_bindir}/*

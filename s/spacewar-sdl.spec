@@ -35,9 +35,6 @@ install -m 644 bin/images/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 install -Dm 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 install -Dm 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}

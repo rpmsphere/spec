@@ -69,9 +69,6 @@ EOF
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{python2_sitelib}/%{name}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %post
 update-desktop-database &> /dev/null ||:
 update-mime-database %{_datadir}/mime &> /dev/null ||:

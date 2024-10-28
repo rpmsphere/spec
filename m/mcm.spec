@@ -2,25 +2,25 @@
 %undefine _debugsource_packages
 %define _libdir %{_prefix}/lib
 
-Name:				 mcm
-Version:			 0.9.3
-Release:			 9.1
-Summary:			 Monocaffe Connections Manager
+Name:                            mcm
+Version:                         0.9.3
+Release:                         9.1
+Summary:                         Monocaffe Connections Manager
 # https://launchpad.net/mcm/trunk/%{version}/+download/mcm-%{version}.tar.gz
-Source:			 mcm-%{version}.tar.bz2
-Patch1:			 mcm-fix_desktop_file.patch
-Patch2:			 mcm-placeholders.patch
-URL:				 https://launchpad.net/mcm
-Group:			 Productivity/Networking/SSH
-License:			 GNU General Public License version 3 (GPL v3)
-BuildRequires:	 python
-BuildRequires:	 fdupes
-BuildArch:		 noarch
-Requires:		 pygtk2
-Requires:		 gtk-vnc-python
-Requires:		 pyxdg
-Requires:		 vte
-Requires:		 libxml2-python
+Source:                  mcm-%{version}.tar.bz2
+Patch1:                  mcm-fix_desktop_file.patch
+Patch2:                  mcm-placeholders.patch
+URL:                             https://launchpad.net/mcm
+Group:                   Productivity/Networking/SSH
+License:                         GNU General Public License version 3 (GPL v3)
+BuildRequires:   python
+BuildRequires:   fdupes
+BuildArch:               noarch
+Requires:                pygtk2
+Requires:                gtk-vnc-python
+Requires:                pyxdg
+Requires:                vte
+Requires:                libxml2-python
 
 %description
 Monocaffe Connections Manager is a set of tools to ease the management of
@@ -31,8 +31,8 @@ GNOME-based GUI.
 
 %prep
 %setup -q
-%patch1
-%patch2
+%patch 1
+%patch 2
 sed -i 's|/usr/share/apps/|/usr/lib/|' bin/mcm
 
 %__rm -rf ./dist
@@ -40,8 +40,8 @@ sed -i 's|/usr/share/apps/|/usr/lib/|' bin/mcm
 %__mkdir_p .rpmdocs
 %__mv doc/[A-Z]* .rpmdocs/
 for f in .rpmdocs/*; do
-	 [ -e "$f" ] || continue
-	 test -s "$f" || %__rm "$f"
+         [ -e "$f" ] || continue
+         test -s "$f" || %__rm "$f"
 done
 %__mkdir_p .man
 %__mv doc/*.[1-9] .man/
@@ -54,11 +54,11 @@ find . -name '.*.swo' -exec %__rm {} \;
 
 %build
 %__awk '/^\+\+\+ / {print $2}' <"%{PATCH2}" | while read f; do
-	 %__sed -i '
-		  s|@@PYTHON@@|%__python|g
-		  ;
-		  s|@@LIBDIR@@|%{_libdir}/%{name}|g
-	 ' "$f"
+         %__sed -i '
+                  s|@@PYTHON@@|%__python|g
+                  ;
+                  s|@@LIBDIR@@|%{_libdir}/%{name}|g
+         ' "$f"
 done
 
 %install
@@ -79,14 +79,11 @@ relpath=$(python2 -c 'import os; print os.path.relpath("%{_libdir}/%{name}/gtk",
 %__ln_s "$relpath/mcm_icon.png" "$RPM_BUILD_ROOT%{_datadir}/pixmaps/mcm.png"
 
 for f in .man/*; do
-	 [ -e "$f" ] || continue
-	 m="${f##*.}"
-	 b="${f##*/}"
-	 %__install -D -m0644 "$f" "$RPM_BUILD_ROOT%{_mandir}/man${m}/$b"
+         [ -e "$f" ] || continue
+         m="${f##*.}"
+         b="${f##*/}"
+         %__install -D -m0644 "$f" "$RPM_BUILD_ROOT%{_mandir}/man${m}/$b"
 done
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc .rpmdocs/*

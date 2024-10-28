@@ -1,15 +1,15 @@
-Name: 	 	cowbell
-Summary: 	Music collection organizer and editor
-Version: 	0.2.7.1
-Release: 	12.1
-Source:		https://more-cowbell.org/releases/%{name}-%{version}.tar.bz2
-URL:		https://more-cowbell.org/
-License:	GPLv2+
-Group:		Productivity/Multimedia
-BuildRequires:	gcc-c++
-BuildRequires:	pkgconfig
-BuildRequires:	mono-devel gtk-sharp2-devel
-BuildRequires:	taglib-devel
+Name:           cowbell
+Summary:        Music collection organizer and editor
+Version:        0.2.7.1
+Release:        12.1
+Source:         https://more-cowbell.org/releases/%{name}-%{version}.tar.bz2
+URL:            https://more-cowbell.org/
+License:        GPLv2+
+Group:          Productivity/Multimedia
+BuildRequires:  gcc-c++
+BuildRequires:  pkgconfig
+BuildRequires:  mono-devel gtk-sharp2-devel
+BuildRequires:  taglib-devel
 BuildRequires:  perl(XML::Parser)
 BuildRequires:  desktop-file-utils
 
@@ -33,7 +33,7 @@ snatch album art and rename your music files like a pro.
 perl -p -i -e 's/lib\/cowbell/%{_lib}\/cowbell/g' Makefile* cowbell.in
 %configure
 make
-										
+                                                                                
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
@@ -42,9 +42,6 @@ desktop-file-install --vendor="" \
   --dir $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/applications/*
 
 %find_lang %name
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog NEWS README

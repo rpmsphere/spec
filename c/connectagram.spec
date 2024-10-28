@@ -32,9 +32,6 @@ make %{?_smp_mflags}
 make INSTALL_ROOT=%{buildroot} install
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf %{buildroot}
-
 %post
 touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :
 

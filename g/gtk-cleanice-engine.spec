@@ -22,9 +22,6 @@ make %{?jobs:-j%jobs}
 %make_install
 find %{buildroot} -type f -name "*.la" -delete -print
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS COPYING ChangeLog README
 %{_libdir}/gtk-2.0/*/engines/*.so

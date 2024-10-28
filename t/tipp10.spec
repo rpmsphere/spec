@@ -7,9 +7,9 @@ Group:          Amusements/Games
 Version:        2.0.3
 Release:        1
 BuildRequires:  qt4-devel sqlite-devel libpng-devel unzip
-Requires:	qt4-sqlite
+Requires:       qt4-sqlite
 Source:         tipp10_source_v2-0-3.zip
-Source1:	%name.png
+Source1:        %name.png
 Source2:        tipp10.desktop
 
 %description
@@ -38,9 +38,6 @@ EOF
 
 install -D -m644 %{SOURCE1} %buildroot/%_datadir/pixmaps/%name.png
 install -D -m644 %{SOURCE2} %buildroot/%_datadir/applications/%name.desktop
-
-%clean
-rm -rf %buildroot
 
 %files
 %attr(755,root,root) %_bindir/%name

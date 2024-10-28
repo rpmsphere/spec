@@ -1,13 +1,13 @@
 %global theme_name OpenWorld
 
-Name:		openworld-icon-theme
-Version:	20060508
-Release:	2.1
-Summary:	%{theme_name} icon theme
-Group:		System/GUI/GNOME
-License:	CDDL open source
-URL:		https://blogs.oracle.com/chandan/entry/openworld_icon_theme
-Source0:	ICON-OpenWorld.tar.bz2
+Name:           openworld-icon-theme
+Version:        20060508
+Release:        2.1
+Summary:        %{theme_name} icon theme
+Group:          System/GUI/GNOME
+License:        CDDL open source
+URL:            https://blogs.oracle.com/chandan/entry/openworld_icon_theme
+Source0:        ICON-OpenWorld.tar.bz2
 BuildArch:      noarch
 
 %description

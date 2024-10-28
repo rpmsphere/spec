@@ -31,9 +31,6 @@ make SCSH=/bin/sh
 rm -rf $RPM_BUILD_ROOT
 %makeinstall SCSH=/bin/sh
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_libdir}/libol.so.*
 %doc COPYING

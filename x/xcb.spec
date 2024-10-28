@@ -40,9 +40,6 @@ rm -rf $RPM_BUILD_ROOT/usr/lib
 %_appdefdif/Xcb
 %doc %_mandir/man1/xcb.1x*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Sep 27 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
 - Rebuilt for Fedora

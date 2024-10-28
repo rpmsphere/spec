@@ -36,9 +36,6 @@ echo setenv RXLIB /usr/lib/brexx > %{buildroot}%{_sysconfdir}/profile.d/brexx.cs
 
 sed -i 's|local/bin/rexx|bin/brexx|' %{buildroot}%{_datadir}/%{name}/*.r
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_docdir}/%{name}
 %{_datadir}/%{name}

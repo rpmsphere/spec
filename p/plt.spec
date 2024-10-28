@@ -33,9 +33,6 @@ rm -rf %{buildroot}
 make INSTALL_PREFIX=%{buildroot}%{_prefix} PREFIX=%{_prefix} MAN1DIR=%{buildroot}%{_mandir}/manl PSPDIR=%{buildroot}/usr/lib/ps install
 sed -i 's|%{buildroot}||g' %{buildroot}%{_bindir}/lwcat %{buildroot}%{_bindir}/plt
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/*
 /usr/lib/ps/*

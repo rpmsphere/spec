@@ -1,13 +1,13 @@
-Summary:	ANSI coloring tool
-Summary(pl):	Narzêdzie do kolorowania ANSI
-Name:		color
-Version:	1.2
-Release:	3.1
-License:	GPL v2
-Group:		Applications/Terminal
-Source0:	https://runslinux.net/projects/color/%{name}-%{version}.tar.gz
-# Source0-md5:	17938f68c0ad3060111446c34922fdf2
-URL:		https://runslinux.net/?page_id=10
+Summary:        ANSI coloring tool
+Summary(pl):    Narzêdzie do kolorowania ANSI
+Name:           color
+Version:        1.2
+Release:        3.1
+License:        GPL v2
+Group:          Applications/Terminal
+Source0:        https://runslinux.net/projects/color/%{name}-%{version}.tar.gz
+# Source0-md5:  17938f68c0ad3060111446c34922fdf2
+URL:            https://runslinux.net/?page_id=10
 
 %description
 Color is a convenience tool to ease the use of ANSI coloring in your
@@ -27,9 +27,6 @@ u¿ytkownikiem, zastêpuj±c je podstawianiem komend.
 
 %install
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGELOG README

@@ -38,9 +38,6 @@ make
 cd src
 %make_install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CREDITS README.1ST documentation/*
 %config /etc/gtk-server.cfg

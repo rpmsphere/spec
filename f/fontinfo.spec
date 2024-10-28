@@ -6,7 +6,7 @@ License:        GPL-2.0+
 Group:          Productivity/Publishing/Other
 URL:            https://github.com/pgajdos/fontinfo/
 #Source:         %{name}-%{version}.tar.bz2
-Source0:	%{name}-master.zip
+Source0:        %{name}-master.zip
 BuildRequires:  fontconfig-devel
 BuildRequires:  freetype-devel
 BuildRequires:  harfbuzz-devel

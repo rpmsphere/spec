@@ -1,21 +1,21 @@
 %undefine _missing_build_ids_terminate_build
 %undefine _debugsource_packages
-%define	oname gCAD3D
+%define oname gCAD3D
 %ifarch x86_64 aarch64
 %define ARCH 64
 %else
 %define ARCH 32
 %endif
 
-Name:		gcad3d
-Version:	2.40
-Release:	10.1
-Summary:	A 3D CAD CAM application
-Group:		Graphics/3D
-License:	GPLv3
-URL:		https://www.gcad3d.org
-Source0:	https://www.gcad3d.org/download/%{oname}_%{version}-src.zip
-Source1:	examples.gz
+Name:           gcad3d
+Version:        2.40
+Release:        10.1
+Summary:        A 3D CAD CAM application
+Group:          Graphics/3D
+License:        GPLv3
+URL:            https://www.gcad3d.org
+Source0:        https://www.gcad3d.org/download/%{oname}_%{version}-src.zip
+Source1:        examples.gz
 BuildRequires: gtk3-devel
 BuildRequires: ctags
 BuildRequires: mesa-libGL-devel

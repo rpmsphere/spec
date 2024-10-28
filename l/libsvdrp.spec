@@ -1,11 +1,11 @@
-Summary: 	An interface to VDR via SVDRP protocol
-Name: 		libsvdrp
-Version: 	0.0.1r35
-Release: 	1
-License: 	LGPL
-Group: 		Application/Multimedia
-URL:		https://hg.geexbox.org/libsvdrp
-Source0: 	https://sources.openbricks.org/devel/libsvdrp-r35.tar.bz2
+Summary:        An interface to VDR via SVDRP protocol
+Name:           libsvdrp
+Version:        0.0.1r35
+Release:        1
+License:        LGPL
+Group:          Application/Multimedia
+URL:            https://hg.geexbox.org/libsvdrp
+Source0:        https://sources.openbricks.org/devel/libsvdrp-r35.tar.bz2
 
 %description
 libsvdrp is an interface library to allow C programs to interact

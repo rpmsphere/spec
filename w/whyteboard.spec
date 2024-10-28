@@ -52,9 +52,6 @@ EOF
 
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' %{buildroot}/usr/lib/%{name}/%{name}.py %{buildroot}/usr/lib/%{name}/%{name}/*.py %{buildroot}/usr/lib/%{name}/%{name}/*/*.py
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc CHANGELOG.txt DEVELOPING.txt README.txt TODO.txt
 %attr(755,root,root) %{_bindir}/%{name}

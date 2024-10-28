@@ -36,7 +36,7 @@ https://www.bluelightning.org/ebox
 
 %prep
 %setup -q -n %{name}-%{version}%{?prever:-%{prever}}
-%patch0 -p1 -b .cpp
+%patch 0 -p1 -b .cpp
 sed -i 's|FlexLexer.h|flex-2.5.4a/FlexLexer.h|' eboxy/script_flex.cpp eboxy/script.h
 sed -i '1i #include <cstdio>' eboxy/script_flex.cpp eboxy/interfacemanager.cpp
 
@@ -85,9 +85,6 @@ desktop-file-install --vendor "" \
 
 tar xzvf %{SOURCE1} -C %{buildroot}%{_datadir}/%{name}
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 # The help is actually in %{_docdir}/%{name} in order to be accessible directly
 #doc LICENSE.txt README.txt help
@@ -106,7 +103,7 @@ tar xzvf %{SOURCE1} -C %{buildroot}%{_datadir}/%{name}
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.1
 - Rebuilt for Fedora
-* Sat Dec 18 2008 Paulo Roma <https://orion.lcg.ufrj.br/~roma> 0.4.1-3
+* Thu Dec 18 2008 Paulo Roma <https://orion.lcg.ufrj.br/~roma> 0.4.1-3
 - Recreated gcc.patch for gcc 4.3
 - Introduced compat_flex, because the test Fedora < 7 does not work
   for fc10.

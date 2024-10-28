@@ -1,20 +1,20 @@
-%define		privuser  schat
-%define		privgroup schat
-%define		privpath  /var/empty
+%define         privuser  schat
+%define         privgroup schat
+%define         privpath  /var/empty
 
-Name:		schat
-Version:	0.8.6.3549
-Release:	7.1
-Summary:	IMPOMEZIA Simple Chat
-URL:		https://impomezia.com/project/schat
-License:	GPLv3+
-Group:		Networking/Chat
-Source0:	%name-%version.tar.bz2
-Source1:	schatd-logrotate
-Source2:	%name.desktop
-Source3:	%{name}d
-Source4:	%name.conf
-Source5:	%{name}d.sh
+Name:           schat
+Version:        0.8.6.3549
+Release:        7.1
+Summary:        IMPOMEZIA Simple Chat
+URL:            https://impomezia.com/project/schat
+License:        GPLv3+
+Group:          Networking/Chat
+Source0:        %name-%version.tar.bz2
+Source1:        schatd-logrotate
+Source2:        %name.desktop
+Source3:        %{name}d
+Source4:        %name.conf
+Source5:        %{name}d.sh
 BuildRequires:  qtwebkit-devel
 
 %description

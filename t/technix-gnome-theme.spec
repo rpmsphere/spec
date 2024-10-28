@@ -29,9 +29,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_datadir}/themes/%{theme_name}
 cp -a * %{SOURCE1} %{buildroot}%{_datadir}/themes/%{theme_name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/themes/%{theme_name}
 

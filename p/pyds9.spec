@@ -31,9 +31,6 @@ install -m644 ds9.py xpa.py $RPM_BUILD_ROOT%{python2_sitelib}
 %doc COPYING PKG-INFO README changelog
 %{python2_sitelib}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Jun 04 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
 - Rebuilt for Fedora

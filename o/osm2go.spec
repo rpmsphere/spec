@@ -28,7 +28,7 @@ It is meant for simple mapping on the road.
 
 %prep
 %setup -q
-%patch0 -p1 -b .linking
+%patch 0 -p1 -b .linking
 sed -i '/curl\/types.h/d' src/osm_api.c src/net_io.c
 
 %build
@@ -45,9 +45,6 @@ desktop-file-install                                        \
     --dir=$RPM_BUILD_ROOT%{_datadir}/applications              \
     $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 rm $RPM_BUILD_ROOT%{_datadir}/%{name}/COPYING
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :

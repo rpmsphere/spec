@@ -19,7 +19,7 @@ A powerful and well designed fonts manager.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 #patch1 -p0
 #patch2 -p1
 #patch3 -p1

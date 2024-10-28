@@ -9,7 +9,7 @@ URL:            https://imdbpy.sourceforge.net/
 Source0:        https://prdownloads.sourceforge.net/imdbpy/%{realname}-%{version}.tar.gz
 #use system beautifulsoup
 Patch0:         %{name}-4.2-beautifulsoup.patch
-Patch1:		%{name}-4.8.2-setup.patch
+Patch1:         %{name}-4.8.2-setup.patch
 BuildRequires:  python2-devel, python2-setuptools, gettext, gcc
 
 %global _description\
@@ -32,8 +32,8 @@ Provides:       IMDbPY = %{version}-%{release}
 
 %prep
 %setup -qn %{realname}-%{version}
-%patch0 -p0
-%patch1 -p0
+%patch 0 -p0
+%patch 1 -p0
 
 #patch removes need for bundled beautifulsoup, so let's remove it
 rm -f imdb/parser/http/bsouplxml/_bsoup.py

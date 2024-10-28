@@ -10,7 +10,7 @@ BuildRequires:  unzip
 BuildRequires:  java-devel lua
 BuildRequires:  ant 
 Source0:        %{name}-%{version}-src-ext.tar.bz2
-Source1:	%{name}.desktop
+Source1:        %{name}.desktop
 Source2:        %{name}.svg
 Source3:        %{name}.png
 BuildArch:      noarch
@@ -54,9 +54,6 @@ EOF
 # Desktop menu entry
 %__install -d -m 755 %{buildroot}%{_datadir}/applications
 %__install -m 644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %{_datadir}/%{name}

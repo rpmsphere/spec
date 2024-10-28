@@ -21,8 +21,8 @@ xmahjong is really xmahjongg ver. 2.
 
 %prep
 %setup -q -n xmahjong
-%patch0
-%patch1 -p1
+%patch 0
+%patch 1 -p1
 sed -i 's|ahjongg|ahjong|' *
 rename ahjongg ahjong *
 

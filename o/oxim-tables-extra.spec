@@ -24,9 +24,6 @@ for i in *.cin ; do oxim2tab $i ; done
 %__mkdir_p %{buildroot}%{_libdir}/oxim/tables
 %__install -m 644 *.tab %{buildroot}%{_libdir}/oxim/tables
 
-%clean 
-%__rm -rf %{buildroot}
-
 %post
 oxim-agent -r
 

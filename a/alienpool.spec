@@ -1,18 +1,18 @@
-Name:			alienpool
-Summary:		Arcade-style mix of asteroids and pool
-Version:		0.2.0
-Release:		14.4
-Source:			%{name}-%{version}.tar.bz2
-URL:			https://mkorman.org/alienpool/
-Group:          	Amusements/Games/Action/Arcade
-License:		GPLv2
-BuildRequires:		desktop-file-utils
-BuildRequires:		gcc-c++
-BuildRequires:			pkgconfig
-BuildRequires:			SDL-devel
-BuildRequires:			SDL_image-devel
-BuildRequires:			SDL_mixer-devel
-BuildRequires:			SDL_ttf-devel
+Name:                   alienpool
+Summary:                Arcade-style mix of asteroids and pool
+Version:                0.2.0
+Release:                14.4
+Source:                 %{name}-%{version}.tar.bz2
+URL:                    https://mkorman.org/alienpool/
+Group:                  Amusements/Games/Action/Arcade
+License:                GPLv2
+BuildRequires:          desktop-file-utils
+BuildRequires:          gcc-c++
+BuildRequires:                  pkgconfig
+BuildRequires:                  SDL-devel
+BuildRequires:                  SDL_image-devel
+BuildRequires:                  SDL_mixer-devel
+BuildRequires:                  SDL_ttf-devel
 
 %description
 Alienpool is a space-shooter that is similar to both asteroids
@@ -73,9 +73,6 @@ desktop-file-install                                    \
 %doc README NEWS COPYING AUTHORS
 %{_bindir}/%{name}
 /var/games/%{name}.scores
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0

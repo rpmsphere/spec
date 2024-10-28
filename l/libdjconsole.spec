@@ -7,7 +7,7 @@ URL:           https://djplay.sourceforge.net/
 Source:        https://dfn.dl.sourceforge.net/sourceforge/djplay/libdjconsole-%{version}.tar.gz
 License:       GPL
 BuildRequires: gcc-c++
-BuildRequires: libusb-devel >= 0.1.12
+BuildRequires: libusb-compat-0.1-devel
 
 %description
 A driver for the DJ Console, built on top of libusb.
@@ -33,9 +33,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_libdir}/libdjconsole.so.*

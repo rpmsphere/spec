@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
-Summary:	Simplified object-oriented Python extension module for libpcap
-Name:		python-pypcap
-Version:	1.1
-Release:	15.1
-License:	BSD
-Group:		Development/Python
-URL:		https://monkey.org/~dugsong/pypcap/
-Source0:	https://monkey.org/~dugsong/pypcap/pypcap-%{version}.tar.bz2
-Patch0:		pypcap-1.1-lib64.diff
+Summary:        Simplified object-oriented Python extension module for libpcap
+Name:           python-pypcap
+Version:        1.1
+Release:        15.1
+License:        BSD
+Group:          Development/Python
+URL:            https://monkey.org/~dugsong/pypcap/
+Source0:        https://monkey.org/~dugsong/pypcap/pypcap-%{version}.tar.bz2
+Patch0:         pypcap-1.1-lib64.diff
 Patch1:     pypcap-1.1-fix_build.diff
-BuildRequires:	python-devel
-BuildRequires:	libpcap-devel
+BuildRequires:  python-devel
+BuildRequires:  libpcap-devel
 
 %description
 Simplified object-oriented Python extension module for libpcap - 
@@ -20,8 +20,8 @@ Windows.
 
 %prep
 %setup -q -n pypcap-%{version}
-%patch0 -p0
-%patch1 -p0
+%patch 0 -p0
+%patch 1 -p0
 sed -i -e 's|dylib|so|' -e "s|'include', 'include/pcap'|'include/pcap' , 'include'|" setup.py
 
 %build
@@ -31,9 +31,6 @@ CFLAGS="%{optflags}" python2 setup.py build
 %install
 rm -rf %{buildroot}
 python2 setup.py install --root=%{buildroot} --record=INSTALLED_FILES
-
-%clean
-rm -rf %{buildroot}
 
 %files -f INSTALLED_FILES
 %doc CHANGES LICENSE README

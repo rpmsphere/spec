@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/tw-sung
+%define fontdir %{_datadir}/fonts/tw-sung
 
 Summary: Taiwan TrueType Fonts -- Sung Face
 Name: tw-sung-fonts

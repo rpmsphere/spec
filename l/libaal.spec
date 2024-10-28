@@ -38,9 +38,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_libdir}/*.so.*
 %doc AUTHORS BUGS COPYING CREDITS ChangeLog README THANKS TODO

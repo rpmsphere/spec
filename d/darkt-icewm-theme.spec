@@ -31,9 +31,9 @@ cp -a * %buildroot%_datadir/icewm/themes
 /bin/sed -i 's|-koi8-r|-*-*|g' %buildroot%_datadir/icewm/themes/*/default.theme
 
 /bin/find %buildroot%_datadir/icewm/themes -type f -print0 | 
-	xargs -r0 chmod 0444
+        xargs -r0 chmod 0444
 /bin/find %buildroot%_datadir/icewm/themes -type d -print0 | 
-	xargs -r0 chmod 0755
+        xargs -r0 chmod 0755
 
 %files
 %_datadir/icewm/themes/*

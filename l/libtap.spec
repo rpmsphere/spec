@@ -32,9 +32,6 @@ make all %{?jobs:-j%jobs}
 %makeinstall
 rm %buildroot/%_libdir/libtap.la
 
-%clean
-rm -rf %buildroot
-
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig

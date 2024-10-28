@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name:		usbmonctl
-Version:	1.2
-Release:	3.1
-License:	GPLv2
-Summary:	USB HID Monitor control utility
-URL:		https://www.rainbow-software.org/linux
-Group:		Hardware/Mobile
-Source:		https://www.rainbow-software.org/linux_files/%{name}_%{version}.tar.gz
-BuildRequires:	libusb1-devel
+Name:           usbmonctl
+Version:        1.2
+Release:        3.1
+License:        GPLv2
+Summary:        USB HID Monitor control utility
+URL:            https://www.rainbow-software.org/linux
+Group:          Hardware/Mobile
+Source:         https://www.rainbow-software.org/linux_files/%{name}_%{version}.tar.gz
+BuildRequires:  libusb1-devel
 
 %description
 Controls higher-end monitors with USB port that comply with USB Monitor
@@ -29,9 +29,6 @@ rm -f -r $RPM_BUILD_ROOT
 %{__mkdir} -pv $RPM_BUILD_ROOT%{_bindir}
 %{__cp} -r %{name} $RPM_BUILD_ROOT%{_bindir}
 %{__cp} -r 95-%{name}-monitor.rules $RPM_BUILD_ROOT/etc/udev/rules.d/
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog COPYING README

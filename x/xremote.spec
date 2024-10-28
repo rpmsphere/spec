@@ -18,7 +18,7 @@ seen at the same time.
 
 %prep
 %setup -q
-%patch0 -p1 -b .gcc43
+%patch 0 -p1 -b .gcc43
 
 %build
 gcc $RPM_OPT_FLAGS -DVERSION="%{version}" -c xremote.cpp -o xremote.o
@@ -30,9 +30,6 @@ mkdir -p $RPM_BUILD_ROOT%{_bindir}
 install -pm 0755 xremote $RPM_BUILD_ROOT%{_bindir}
 mkdir -p $RPM_BUILD_ROOT%{_mandir}/man1
 install -pm 0644 xremote.1 $RPM_BUILD_ROOT%{_mandir}/man1
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog README

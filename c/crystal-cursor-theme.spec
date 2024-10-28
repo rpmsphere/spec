@@ -27,9 +27,6 @@ for d in crystalblue crystalgray crystalgreen crystalwhite; do
    cp -R --no-dereference $d $RPM_BUILD_ROOT%{_datadir}/icons
 done
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/icons/crystalblue
 %{_datadir}/icons/crystalgray

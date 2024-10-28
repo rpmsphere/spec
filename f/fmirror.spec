@@ -31,9 +31,6 @@ for file in README generic.conf redhat.conf sample.conf; do
 done
 chmod -x $RPM_BUILD_ROOT%{_mandir}/man1/fmirror.1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc ChangeLog COPYING README 
 %{_mandir}/man*/%{name}*.*

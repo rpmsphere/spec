@@ -34,7 +34,7 @@ libao. Siren has been tested on OpenBSD, NetBSD, FreeBSD and Linux.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 
 %build
 CFLAGS="%{optflags}" \

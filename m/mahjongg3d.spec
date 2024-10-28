@@ -1,21 +1,21 @@
-Name:		mahjongg3d
-Version:	0.96
-Release:	20.1
-Summary:	MahJongg 3D Solitaire
-License:	GPLv2+
-Group:		Games/Boards
-URL:		https://www.reto-schoelly.de/mahjongg3d/
-Source:		https://www.reto-schoelly.de/mahjongg3d/%{name}-%{version}.tar.bz2
-Source1:	https://www.reto-schoelly.de/mahjongg3d/%{name}-0.96-patch2.tar.bz2
-Source10:	https://www.reto-schoelly.de/mahjongg3d/hieroglyph_tileset.tar.bz2
-Source11:	https://www.reto-schoelly.de/mahjongg3d/lab_layout.tar.bz2
-Source20:	%{name}-16.png
-Source21:	%{name}-32.png
-Source22:	%{name}-48.png
-Patch:		mahjongg3d-0.96-mdv-64bit-fix.patch
-BuildRequires:	qt3-devel
-BuildRequires:	libXmu-devel
-BuildRequires:	pkgconfig(glu)
+Name:           mahjongg3d
+Version:        0.96
+Release:        20.1
+Summary:        MahJongg 3D Solitaire
+License:        GPLv2+
+Group:          Games/Boards
+URL:            https://www.reto-schoelly.de/mahjongg3d/
+Source:         https://www.reto-schoelly.de/mahjongg3d/%{name}-%{version}.tar.bz2
+Source1:        https://www.reto-schoelly.de/mahjongg3d/%{name}-0.96-patch2.tar.bz2
+Source10:       https://www.reto-schoelly.de/mahjongg3d/hieroglyph_tileset.tar.bz2
+Source11:       https://www.reto-schoelly.de/mahjongg3d/lab_layout.tar.bz2
+Source20:       %{name}-16.png
+Source21:       %{name}-32.png
+Source22:       %{name}-48.png
+Patch0:         mahjongg3d-0.96-mdv-64bit-fix.patch
+BuildRequires:  qt3-devel
+BuildRequires:  libXmu-devel
+BuildRequires:  pkgconfig(glu)
 
 %description
 MahJongg Solitaire 3D is an OpenGL enhanced solitaire version of the ancient
@@ -23,7 +23,7 @@ chinese board game "Mah Jongg".
 
 %prep
 %setup -q -n mahjongg3d.release -a 1
-%patch -p1 -b .build+x64-fix
+%patch 0 -p1 -b .build+x64-fix
 tar xf %{SOURCE10} -C bin
 tar xf %{SOURCE11} -C bin
 cp -fr patch2/* .

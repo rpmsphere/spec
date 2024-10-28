@@ -39,9 +39,6 @@ cp -a controls.txt setup.txt basicdat modules players \
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/64x64/apps
 install -m 644 egoboo.png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/64x64/apps
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 touch --no-create %{_datadir}/icons/hicolor || :
 if [ -x %{_bindir}/gtk-update-icon-cache ]; then

@@ -1,17 +1,17 @@
 %define sname pgl
 
-Name:		peerguardian
-Version:	2.3.1
-Release:	4.1
-Summary:	A privacy oriented firewall application
-Group:		Networking/Other
-License:	GPLv3
-URL:		https://sourceforge.net/projects/peerguardian/
-Source0:	https://downloads.sourceforge.net/project/peerguardian/PeerGuardian%20Linux/%{version}/%{sname}-%{version}.tar.gz
-BuildRequires:	libnetfilter_queue-devel
-BuildRequires:	polkit-qt-devel
-BuildRequires:	systemd-devel
-BuildRequires:	dbus-devel
+Name:           peerguardian
+Version:        2.3.1
+Release:        4.1
+Summary:        A privacy oriented firewall application
+Group:          Networking/Other
+License:        GPLv3
+URL:            https://sourceforge.net/projects/peerguardian/
+Source0:        https://downloads.sourceforge.net/project/peerguardian/PeerGuardian%20Linux/%{version}/%{sname}-%{version}.tar.gz
+BuildRequires:  libnetfilter_queue-devel
+BuildRequires:  polkit-qt-devel
+BuildRequires:  systemd-devel
+BuildRequires:  dbus-devel
 
 %description
 PeerGuardian Linux (pgl) is a privacy oriented firewall application.

@@ -1,11 +1,11 @@
-Summary:	SSL library developed for embedded environments
-Name:		cyassl
-Version:	2.8.0
-Release:	12.1
-License:	GPL
-Group:		System/Libraries
-URL:		https://www.yassl.com/
-Source0:	https://www.yassl.com/%{name}-%{version}.zip
+Summary:        SSL library developed for embedded environments
+Name:           cyassl
+Version:        2.8.0
+Release:        12.1
+License:        GPL
+Group:          System/Libraries
+URL:            https://www.yassl.com/
+Source0:        https://www.yassl.com/%{name}-%{version}.zip
 
 %description
 CyaSSL is a C language based SSL library developed for embedded environments
@@ -15,9 +15,9 @@ benchmarking and feedback also reports dramatically better performance from
 CyaSSL vs. OpenSSL in the vast majority of standard SSL operations.
 
 %package devel
-Summary:	Development package with static libs and headers
-Group:		Development/C
-Requires:	%{name} = %{version}-%{release}
+Summary:        Development package with static libs and headers
+Group:          Development/C
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 CyaSSL is a C language based SSL library developed for embedded environments
@@ -36,9 +36,6 @@ make CFLAGS+="-fPIC"
 %install
 rm -rf %{buildroot}
 %makeinstall
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_datadir}/doc/%{name}

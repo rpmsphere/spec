@@ -10,7 +10,7 @@ URL:            https://msec.it/dukto
 Source:         %{name}-%{version}.tar.gz
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
-BuildRequires:	desktop-file-utils
+BuildRequires:  desktop-file-utils
 BuildRequires:  qt4-devel
 
 %description
@@ -32,9 +32,6 @@ make
 %__install -D -m0755 dukto "%{buildroot}%{_bindir}/dukto"
 %__install -D -m0644 dukto.png "%{buildroot}%{_datadir}/pixmaps/dukto.png"
 desktop-file-install --dir "%{buildroot}%{_datadir}/applications" dukto.desktop
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %{_bindir}/dukto

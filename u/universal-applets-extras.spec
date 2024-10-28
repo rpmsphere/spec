@@ -35,9 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 
 sed -i -e 's|/usr/bin/python$|/usr/bin/python2|' -e 's|/usr/bin/env python|/usr/bin/python2|' %{buildroot}%{_datadir}/screenlets/*/*.py
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/screenlets/*
 /usr/lib*/python*/site-packages/universal_applets_extras*

@@ -11,7 +11,7 @@ Group:          Development/Libraries/Python
 Source:         %{modname}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires:  python-devel fdupes
-BuildRequires:	fftw3-devel
+BuildRequires:  fftw3-devel
 
 %description
 PyFFTW are python bindings for the FFTW3 (fastest Fourier transform in the West)
@@ -31,9 +31,6 @@ python2 setup.py build
 
 %install
 python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT --record=INSTALLED_FILES
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING README.txt

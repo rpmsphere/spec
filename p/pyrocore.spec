@@ -36,9 +36,6 @@ mv $RPM_BUILD_ROOT/usr/EGG-INFO $RPM_BUILD_ROOT%{_datadir}/doc/%{name}-%{version
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/*
 %{python2_sitelib}/*

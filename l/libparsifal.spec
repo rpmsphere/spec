@@ -46,9 +46,6 @@ install -c -m 755 \
 #{_libdir}/lib*.la
 %{_libdir}/lib*.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0
 - Rebuilt for Fedora

@@ -27,9 +27,6 @@ configurable and all its features are explained in the on-line help.
 %{__rm} -rf %{buildroot}
 %makeinstall
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README
 %doc %{_mandir}/man1/clex.1*

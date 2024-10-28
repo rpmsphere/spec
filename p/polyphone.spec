@@ -1,25 +1,25 @@
 %undefine _debugsource_packages
 
-Name:		polyphone
+Name:           polyphone
 Version:        1.9
-#Version:	2.0
-Release:	6.1
-Summary:	Soundfont (SF2) Editor
-Group:		Applications/Multimedia
-License:	GPLv3+
-URL:		https://polyphone-soundfonts.com/
-Source0:	polyphone-%{version}-src.zip
-BuildRequires:	qt5-qtbase-devel
-BuildRequires:	qt5-qtsvg-devel
-BuildRequires:	libogg-devel
-BuildRequires:	libvorbis-devel
-BuildRequires:	rtmidi-devel
+#Version:       2.0
+Release:        6.1
+Summary:        Soundfont (SF2) Editor
+Group:          Applications/Multimedia
+License:        GPLv3+
+URL:            https://polyphone-soundfonts.com/
+Source0:        polyphone-%{version}-src.zip
+BuildRequires:  qt5-qtbase-devel
+BuildRequires:  qt5-qtsvg-devel
+BuildRequires:  libogg-devel
+BuildRequires:  libvorbis-devel
+BuildRequires:  rtmidi-devel
 BuildRequires:  stk-devel
 BuildRequires:  qcustomplot-qt5-devel
-BuildRequires:	jack-audio-connection-kit-devel
-BuildRequires:	alsa-lib-devel
-BuildRequires:	portaudio-devel
-BuildRequires:	desktop-file-utils
+BuildRequires:  jack-audio-connection-kit-devel
+BuildRequires:  alsa-lib-devel
+BuildRequires:  portaudio-devel
+BuildRequires:  desktop-file-utils
 
 %description
 Polyphone is a free software for editing Soundfonts in SF2 format. These files
@@ -67,9 +67,6 @@ EOF
 desktop-file-install \
     --dir %{buildroot}%{_datadir}/applications \
     polyphone.desktop
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :

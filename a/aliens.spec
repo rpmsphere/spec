@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
 
-Name:			aliens
-Version:		2001.05.18
-Summary:		A Space Invaders/Galaxian type game
-License:		GPLv2
-URL:			https://www.newbreedsoftware.com/aliens/
-Group:			Amusements/Games/Action/Arcade
-Release:		5.1
-Source:			%{name}-%{version}.tar.bz2
-BuildRequires:		desktop-file-utils
-BuildRequires:		pkgconfig
-BuildRequires:		libX11-devel
-BuildRequires:		libXpm-devel
+Name:                   aliens
+Version:                2001.05.18
+Summary:                A Space Invaders/Galaxian type game
+License:                GPLv2
+URL:                    https://www.newbreedsoftware.com/aliens/
+Group:                  Amusements/Games/Action/Arcade
+Release:                5.1
+Source:                 %{name}-%{version}.tar.bz2
+BuildRequires:          desktop-file-utils
+BuildRequires:          pkgconfig
+BuildRequires:          libX11-devel
+BuildRequires:          libXpm-devel
 
 %description
 "Aliens" is an arcade-style shooting game.
@@ -33,9 +33,6 @@ install -m 755 %{name}.host $RPM_BUILD_ROOT/%{_bindir}/%{name}
 
 %files
 %{_bindir}/%{name}
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2001.05.18

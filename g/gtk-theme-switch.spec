@@ -10,7 +10,7 @@ URL: https://www.muhri.net/nav.php3?node=gts
 Source0: %name-%version.tar.gz
 Source1: %name.desktop
 Source2: https://www.muhri.net/muhri-icon.png
-Patch: gtk-theme-switch-2.0.0_rc2-gtk-2.4_fix.patch
+Patch0: gtk-theme-switch-2.0.0_rc2-gtk-2.4_fix.patch
 BuildRequires: gtk2-devel
 
 %description
@@ -18,7 +18,7 @@ Tiny app to let you switch GTK2 themes on the fly.
 
 %prep
 %setup -q
-%patch
+%patch 0
 
 %build
 make
@@ -65,4 +65,4 @@ install -pDm644 %SOURCE2 %buildroot%_datadir/pixmaps/%name.png
 - fix mandir location
 - fix menu entry (section & default icon)
 - from Austin Acton <aacton@yorku.ca> :
-	- initial package creation for MDK 8.2+
+        - initial package creation for MDK 8.2+

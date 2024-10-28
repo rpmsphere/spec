@@ -24,9 +24,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/php/%{realname}
 install -m 644 * $RPM_BUILD_ROOT%{_datadir}/php/%{realname}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/php/%{realname}
 

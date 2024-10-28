@@ -32,9 +32,6 @@ install -c -m 755 \
 %files
 %{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
 - Rebuilt for Fedora

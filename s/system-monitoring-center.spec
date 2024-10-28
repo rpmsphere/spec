@@ -4,9 +4,9 @@ Release:    1.beta1
 Summary:    Provides information about system performance and usage.
 License:    GPLv3
 URL:        https://github.com/hakandundar34coding/system-monitoring-center
-Source0:	system-monitoring-center.0.3.0-beta1.tar.gz
+Source0:        system-monitoring-center.0.3.0-beta1.tar.gz
 BuildRequires:  python3-setuptools
-BuildArch:	noarch
+BuildArch:      noarch
 Requires:       bash >= 5.0
 Requires:       dmidecode
 Requires:       hwdata

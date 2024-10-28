@@ -135,7 +135,7 @@ install -m644 FAQ/*.info %buildroot%_infodir
 install -d %buildroot%_docdir/%name/FAQ
 install -p -m644 doc/*.pdf %buildroot%_docdir/%name
 install -m644 FAQ/%name-faq.html/* \
-	%buildroot%_docdir/%name/FAQ
+        %buildroot%_docdir/%name/FAQ
 
 mv %buildroot/usr/lib %buildroot%_libdir
 
@@ -144,10 +144,10 @@ mv %buildroot/usr/lib %buildroot%_libdir
 
 #pushd %buildroot%_libdir/%name/examples
 #for i in $(ls); do
-#	TYPE="$(file $i|sed 's|.*\(ELF\).*|\1|')"
-#	if [ "$TYPE" = "ELF" -a "$(readelf -a $i|grep RPATH)" != "" ]; then
-#		chrpath -d $i
-#	fi
+#       TYPE="$(file $i|sed 's|.*\(ELF\).*|\1|')"
+#       if [ "$TYPE" = "ELF" -a "$(readelf -a $i|grep RPATH)" != "" ]; then
+#               chrpath -d $i
+#       fi
 #done
 #popd
 

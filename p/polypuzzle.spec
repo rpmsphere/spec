@@ -1,13 +1,13 @@
-Summary:	A game based on a tesselation puzzle named Beat the Computer
-Name:		polypuzzle
-Version:	1.8.2
-Release:	1
-License:	LGPLv2+
-Group:		Amusements/Games
-URL:		https://tkgames.sourceforge.net
-Source0:	https://dl.sourceforge.net/sourceforge/tkgames/%{name}-%{version}.tgz
-BuildArch:	noarch
-Requires:	tk
+Summary:        A game based on a tesselation puzzle named Beat the Computer
+Name:           polypuzzle
+Version:        1.8.2
+Release:        1
+License:        LGPLv2+
+Group:          Amusements/Games
+URL:            https://tkgames.sourceforge.net
+Source0:        https://dl.sourceforge.net/sourceforge/tkgames/%{name}-%{version}.tgz
+BuildArch:      noarch
+Requires:       tk
 
 %description
 Based on a tesselation puzzle named Beat the Computer.
@@ -55,9 +55,6 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 %postun
 update-mime-database %{_datadir}/mime &> /dev/null
 update-desktop-database %{_datadir}/applications &> /dev/null
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %attr(0755,root,root) %{_bindir}/polypuzzle

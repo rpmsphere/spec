@@ -25,9 +25,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/games/fortune
 cp * $RPM_BUILD_ROOT%{_datadir}/games/fortune
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/games/fortune/*
 

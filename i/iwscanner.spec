@@ -1,15 +1,15 @@
-Name:		iwscanner
-Version:	0.2.4
-Release:	4.1
-Summary:	Wireless scanner based on iwtools
-URL:		https://kuthulu.com/iwscanner/index.php
-License:	LGPLv2+
-Group:		Networking/Other
-Source0:	https://kuthulu.com/iwscanner/%{name}-%{version}.tgz
-Source1:	kuthulu-%{name}.desktop
-BuildArch:	noarch
-Requires:	pygtk2
-Requires:	wireless-tools
+Name:           iwscanner
+Version:        0.2.4
+Release:        4.1
+Summary:        Wireless scanner based on iwtools
+URL:            https://kuthulu.com/iwscanner/index.php
+License:        LGPLv2+
+Group:          Networking/Other
+Source0:        https://kuthulu.com/iwscanner/%{name}-%{version}.tgz
+Source1:        kuthulu-%{name}.desktop
+BuildArch:      noarch
+Requires:       pygtk2
+Requires:       wireless-tools
 
 %description
 A simple NetStumbler like wireless scanner based on iwtools.
@@ -37,9 +37,6 @@ EOF
 %__cp * %{buildroot}%{_datadir}/%{name}/
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/%{name}.py
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc README

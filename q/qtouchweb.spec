@@ -25,9 +25,6 @@ make
 rm -rf %{buildroot}
 install -Dm755 src/%{name} %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/%{name}
 

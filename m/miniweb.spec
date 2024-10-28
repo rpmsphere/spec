@@ -27,9 +27,6 @@ rm -rf $RPM_BUILD_ROOT
 install -p -d $RPM_BUILD_ROOT%{_bindir}
 install -p -m 755 miniweb $RPM_BUILD_ROOT%{_bindir}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %doc COPYRIGHT
@@ -40,5 +37,5 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Mon Apr 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
 - Rebuilt for Fedora
-* Wed Apr 23 2010 Bernd Stramm <bernd.stramm@gmail.com> - 0.2.0-1
+* Fri Apr 23 2010 Bernd Stramm <bernd.stramm@gmail.com> - 0.2.0-1
 - Initial RPM release

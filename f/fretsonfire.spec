@@ -28,15 +28,15 @@ is to play guitar with the keyboard as accurately as possible.
 
 %prep
 %setup -q -n FretsOnFire-src-%{version} -a 1 -a 2
-%patch0
-%patch1 -p1
-# %patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-%patch6 -p1
-%patch7 -p1
-%patch8 -p1
+%patch 0
+%patch 1 -p1
+# %patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
+%patch 5 -p1
+%patch 6 -p1
+%patch 7 -p1
+%patch 8 -p1
 chmod -x copying.txt src/*py
 chmod +x src/FretsOnFire.py
 # remove unneeded files
@@ -67,9 +67,6 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 %postun
 update-mime-database %{_datadir}/mime &> /dev/null
 update-desktop-database %{_datadir}/applications &> /dev/null
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc copying.txt readme.txt todo.txt

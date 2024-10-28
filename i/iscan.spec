@@ -8,7 +8,7 @@ Release:        1.170
 Summary:        EPSON Image Scan! front-end for scanners and all-in-ones
 License:        GPL-2.0 and AVASYSPL
 Group:          Hardware/Scanner
-Url:            https://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+URL:            https://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
 Source0:        https://support.epson.net/linux/src/scanner/iscan/%{name}_%{version}-2.tar.gz
 Source1:        https://support.epson.net/linux/src/scanner/iscan/iscan-data_%{version_iscan_data}-2.tar.gz
 Source2:        epkowa.conf
@@ -61,9 +61,9 @@ Image Scan! for Linux will not function without this package.
 %setup -q
 %setup -q -D -T -a 1
 
-%patch0
-%patch1 -p2
-%patch2 -p1
+%patch 0
+%patch 1 -p2
+%patch 2 -p1
 
 # Fix for CXX ABI different than 1002 (export from arch)
 ln -s libesmod-x86_64.c2.so non-free/libesmod-x86_64.so
@@ -115,7 +115,7 @@ install -D -m 0644 %{name}-data.hwdb %{buildroot}/%{_udevhwdbdir}/%{name}-data.h
 %postun
 /sbin/ldconfig
 if [ $1 -eq 0 ]; then
-	%udev_hwdb_update
+        %udev_hwdb_update
 fi
 
 %files -f %{name}.lang

@@ -1,20 +1,20 @@
 %undefine _debugsource_packages
 
-Name:		dcmo5
-Version:	11.2
-Release:	12.1
-Summary:	Thomson MO5 emulator
-Group:		Emulators
-License:	GPLv3+
-URL:		https://dcmo5.free.fr/
-Source0:	https://dcmo5.free.fr/v11/download/%{name}v11.0.tar.gz
-Source1:	https://dcmo5.free.fr/v11/download/%{name}v%{version}.tar.gz
-Source2:	%name-32.png
-Source3:	%name-16.png
-Source4:	%name.rom
-Patch0:		dcmo5v11.2-dcmo5options.patch.bz2
-Patch1:		dcmo5v11.2-dc6809emul.patch.bz2
-Patch2:		dcmo5v11.2-user_directory.patch.bz2
+Name:           dcmo5
+Version:        11.2
+Release:        12.1
+Summary:        Thomson MO5 emulator
+Group:          Emulators
+License:        GPLv3+
+URL:            https://dcmo5.free.fr/
+Source0:        https://dcmo5.free.fr/v11/download/%{name}v11.0.tar.gz
+Source1:        https://dcmo5.free.fr/v11/download/%{name}v%{version}.tar.gz
+Source2:        %name-32.png
+Source3:        %name-16.png
+Source4:        %name.rom
+Patch0:         dcmo5v11.2-dcmo5options.patch.bz2
+Patch1:         dcmo5v11.2-dc6809emul.patch.bz2
+Patch2:         dcmo5v11.2-user_directory.patch.bz2
 BuildRequires:  SDL-devel
 BuildRequires:  SDL_ttf-devel
 
@@ -24,9 +24,9 @@ This package is in PLF because of Mandriva policy concerning emulators.
 
 %prep
 %setup -q -a 1 -c
-%patch0 -p0
-%patch1 -p0
-%patch2 -p0
+%patch 0 -p0
+%patch 1 -p0
+%patch 2 -p0
 sed -i 's|cc |cc -Wl,--allow-multiple-definition |' makefile
 
 %build
@@ -35,8 +35,8 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm 755 dcmo5 $RPM_BUILD_ROOT%{_bindir}/%{name}
-install -Dm 644 %{_sourcedir}/%{name}-32.png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
-install -Dm 644 %{_sourcedir}/%{name}-16.png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
+install -Dm 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
+install -Dm 644 %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 
 install -d -m 755 $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop << EOF
@@ -51,7 +51,7 @@ Type=Application
 Categories=Development;Emulator;
 EOF
 
-install -Dm 644 %{_sourcedir}/%{name}.rom $RPM_BUILD_ROOT%{_datadir}/%{name}/%{name}.rom
+install -Dm 644 %{SOURCE4} $RPM_BUILD_ROOT%{_datadir}/%{name}/%{name}.rom
 
 %files
 %doc documentation/* licence/*
@@ -60,9 +60,6 @@ install -Dm 644 %{_sourcedir}/%{name}.rom $RPM_BUILD_ROOT%{_datadir}/%{name}/%{n
 %{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}/%{name}.rom
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 11.2

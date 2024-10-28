@@ -37,9 +37,6 @@ rm -f %{buildroot}%{_bindir}/pmacs*
 %{_bindir}/%{name}sh
 /usr/lib/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8.1
 - Rebuilt for Fedora

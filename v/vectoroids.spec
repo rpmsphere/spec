@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
-BuildRequires:	pkgconfig
-BuildRequires:	SDL-devel	>= 1.2.4
-BuildRequires:	SDL_image-devel	>= 1.2.2
-BuildRequires:	SDL_mixer-devel	>= 1.2.4
-BuildRequires:	libX11-devel
-Name:			vectoroids
-Version:		1.1.0
-Summary:		A clone of the classic "Asteroids" arcade game
-License:		GPLv2
-URL:			https://www.newbreedsoftware.com/vectoroids/
-Group:			Amusements/Games/Action/Arcade
-Release:		8.4
-Source:			%{name}-%{version}.tar.bz2
-BuildRequires:	desktop-file-utils
+BuildRequires:  pkgconfig
+BuildRequires:  SDL-devel       >= 1.2.4
+BuildRequires:  SDL_image-devel >= 1.2.2
+BuildRequires:  SDL_mixer-devel >= 1.2.4
+BuildRequires:  libX11-devel
+Name:                   vectoroids
+Version:                1.1.0
+Summary:                A clone of the classic "Asteroids" arcade game
+License:                GPLv2
+URL:                    https://www.newbreedsoftware.com/vectoroids/
+Group:                  Amusements/Games/Action/Arcade
+Release:                8.4
+Source:                 %{name}-%{version}.tar.bz2
+BuildRequires:  desktop-file-utils
 
 %description
 "Vectoroids" is a clone of the classic arcade game "Asteroids" by Atari.
@@ -53,9 +53,6 @@ install -m 644 data/music/* $RPM_BUILD_ROOT/%{_datadir}/%{name}/music/
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/%{name}
 %doc CHANGES.txt COPYING.txt README.txt
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 07 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0

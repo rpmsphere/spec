@@ -34,9 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall INSTALL_PREFIX=$RPM_BUILD_ROOT
 rm %{buildroot}%{_libdir}/libmisdn.a %{buildroot}%{_libdir}/libmisdn.la
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE NEWS COPYING.LIB README AUTHORS
 %{_sysconfdir}/udev/rules.d/45-misdn.rules

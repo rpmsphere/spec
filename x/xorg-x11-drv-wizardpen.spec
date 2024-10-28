@@ -26,8 +26,8 @@ AIPTEK Slim Tablet U600 Premium II.
 
 %prep
 %setup -q -n "xorg-input-wizardpen-%{version}"
-%patch1
-%patch2
+%patch 1
+%patch 2
 
 %build
 %configure \
@@ -47,9 +47,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 # rename to use the name of the package for the .rules file:
 %__mv "$RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d"/67-{xorg-wizardpen,%{name}}.rules
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files 
 %doc COPYING README

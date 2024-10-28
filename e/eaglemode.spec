@@ -90,9 +90,6 @@ cp -avL %{S:4} $RPM_BUILD_ROOT/usr/share/icons/hicolor/32x32/apps/eaglemode.png
 cp -avL %{S:5} $RPM_BUILD_ROOT/usr/share/icons/hicolor/48x48/apps/eaglemode.png
 cp -avL %{S:1} $RPM_BUILD_ROOT/usr/share/applications/eaglemode.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/*
 %{_docdir}/%{name}

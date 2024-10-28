@@ -1,13 +1,13 @@
 %global __os_install_post %{nil}
 
-Summary: 	Analyses and synthesis of transmission lines
-Name: 		wcalc
-Version: 	1.1
-Release: 	3.1
-License: 	GPL
+Summary:        Analyses and synthesis of transmission lines
+Name:           wcalc
+Version:        1.1
+Release:        3.1
+License:        GPL
 Group:          Productivity/Scientific/Electronics
-URL: 		https://sourceforge.net/projects/wcalc/
-Source0: 	%{name}-%{version}.tar.bz2
+URL:            https://sourceforge.net/projects/wcalc/
+Source0:        %{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel
 BuildRequires:  gtk2-devel >= 2.4
 
@@ -22,10 +22,10 @@ on accuracy. Several frontends provide the user with several options
 for its use.
 
 %package devel
-Requires:     	gtk2-devel
-Summary:      	Analyses and synthesis of transmission lines
-License:      	GPL
-Group:		Development/Libraries/C and C++
+Requires:       gtk2-devel
+Summary:        Analyses and synthesis of transmission lines
+License:        GPL
+Group:          Development/Libraries/C and C++
 
 %description devel
 Development files for wcalc.
@@ -40,9 +40,6 @@ export LDFLAGS=-Wl,--allow-multiple-definition
 
 %install
 %makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README ChangeLog AUTHORS TODO

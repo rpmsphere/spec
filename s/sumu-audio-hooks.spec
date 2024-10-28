@@ -36,9 +36,6 @@ install -m 0755 pactl_list %{buildroot}/%{_bindir}/
 mkdir -p %{buildroot}/%{_sysconfdir}/profile.d
 install -m 0644 %{SOURCE3} %{buildroot}/%{_sysconfdir}/profile.d
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %config(noreplace) %{_sysconfdir}/profile.d/sumu-init.sh
 %doc %{_docdir}/%{name}-%{version}/

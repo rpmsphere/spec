@@ -1,14 +1,14 @@
-Summary:	A monitor ethernet networks
-Name:		arpalert
-Version:	2.0.12
-Release:	10.1
-License:	GPLv2
-Group:		Monitoring
-URL:		https://www.arpalert.org/
-Source0:	https://www.arpalert.org/src/%{name}-%{version}.tar.gz
-Source1:	arpalert.service
-Patch0:		arpalert-2.0.9-fix-str-fmt.diff
-BuildRequires:	libpcap-devel
+Summary:        A monitor ethernet networks
+Name:           arpalert
+Version:        2.0.12
+Release:        10.1
+License:        GPLv2
+Group:          Monitoring
+URL:            https://www.arpalert.org/
+Source0:        https://www.arpalert.org/src/%{name}-%{version}.tar.gz
+Source1:        arpalert.service
+Patch0:         arpalert-2.0.9-fix-str-fmt.diff
+BuildRequires:  libpcap-devel
 
 %description
 This software is used for monitoring ethernet networks. It listens on a network
@@ -22,7 +22,7 @@ and at signals SIGTERM, SIGINT, SIGQUIT and SIGABRT (arpalert stops itself).
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 sed -i 's|sys/sysctl.h|linux/sysctl.h|' configure*
 
 %build

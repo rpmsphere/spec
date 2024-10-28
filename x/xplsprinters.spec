@@ -19,16 +19,13 @@ specific list of printers.
 %setup -q
 
 %build
-%configure	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
+%configure      --x-includes=%{_includedir}\
+                --x-libraries=%{_libdir}
 make
 
 %install
 rm -rf %{buildroot}
 %make_install
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/xplsprinters

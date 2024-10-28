@@ -24,9 +24,6 @@ make %{?_smp_mflags}
 %install
 %make_install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING
 %{_bindir}/%{name}

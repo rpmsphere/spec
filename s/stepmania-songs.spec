@@ -1,13 +1,13 @@
-Summary:	Music/rhythm game : Songs files
-Name:		stepmania-songs
-Version:	4.0
-Release:	1
-License:	MIT
-URL:		https://www.stepmania.com/browse.php
-Group:		Amusements/Games/Arcade
-Source0:	%{name}-%{version}.tar.bz2
-Requires:	stepmania
-BuildArch:  	noarch
+Summary:        Music/rhythm game : Songs files
+Name:           stepmania-songs
+Version:        4.0
+Release:        1
+License:        MIT
+URL:            https://www.stepmania.com/browse.php
+Group:          Amusements/Games/Arcade
+Source0:        %{name}-%{version}.tar.bz2
+Requires:       stepmania
+BuildArch:      noarch
 
 %description
 StepMania is a free dance and rhythm game for Linux. It features 3D 
@@ -21,9 +21,6 @@ your own steps.
 rm -rf %buildroot
 install -d -m 0755 $RPM_BUILD_ROOT%{_datadir}/stepmania/Songs/
 cp -a * $RPM_BUILD_ROOT%{_datadir}/stepmania/Songs/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/stepmania/Songs/*

@@ -1,12 +1,12 @@
-Name:		tossug-arena
-Version:	2018.1
-Release:	1
-Summary:	Gamelets Arena for AI Players
-License:	CC0
-Group:		Games
-URL:		https://github.com/tossug/tossug-arena/
-Source0:	https://github.com/tossug/tossug-arena/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildArch:	noarch
+Name:           tossug-arena
+Version:        2018.1
+Release:        1
+Summary:        Gamelets Arena for AI Players
+License:        CC0
+Group:          Games
+URL:            https://github.com/tossug/tossug-arena/
+Source0:        https://github.com/tossug/tossug-arena/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+BuildArch:      noarch
 
 %description
 TOSSUG Arena runs as a platform for building gamelets.

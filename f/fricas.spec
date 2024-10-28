@@ -11,7 +11,7 @@ License:        BSD-3-Clause
 Group:          Productivity/Scientific/Math
 URL:            https://%{name}.github.io/
 #Source0:        https://github.com/%{name}/%{name}/archive/%{version}.tar.gz
-Source0:	https://versaweb.dl.sourceforge.net/project/fricas/fricas/%{version}/fricas-%{version}-full.tar.bz2
+Source0:        https://versaweb.dl.sourceforge.net/project/fricas/fricas/%{version}/fricas-%{version}-full.tar.bz2
 BuildRequires:  ImageMagick
 BuildRequires:  autoconf
 BuildRequires:  automake
@@ -71,7 +71,7 @@ sed -i -e '/\\usepackage{hyperref}/ a \ \
 \\usepackage[svgnames]{xcolor}\
 \\definecolor{linkcolor}{named}{DodgerBlue}\
 \\hypersetup{dvips,colorlinks,linkcolor=linkcolor}' \
-	src/doc/%{name}.sty
+        src/doc/%{name}.sty
 
 sed -i -e 's/xvfb-run -a -n 0/xvfb-run -a/' configure.ac
 autoreconf

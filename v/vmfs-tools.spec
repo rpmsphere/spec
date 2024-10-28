@@ -38,7 +38,7 @@ it can be of some help for some people.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 
 %build
 %configure

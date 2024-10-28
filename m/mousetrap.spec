@@ -1,22 +1,22 @@
-Name:		mousetrap
-Version:	0.9
-Release:	1
-Summary:	Allows people with movement impairments to access their computer
-Group:		Amusements/Games
-License:	GPL
-URL:		https://www.steve.org.uk/Software/mousetrap/
-Source:		https://www.steve.org.uk/Software/mousetrap/%{name}-%{version}.tar.gz
-Requires:	doxygen
-Requires:	gtk2
-Requires:	perl-XML-Parser
-Requires:	pkgconfig
-Requires:	python
-Requires:	python-gtkextra
-Requires:	pyorbit
-Requires:	python-xlib
-Requires:	at-spi
-Requires:	gnome-python2
-Requires:	opencv-python
+Name:           mousetrap
+Version:        0.9
+Release:        1
+Summary:        Allows people with movement impairments to access their computer
+Group:          Amusements/Games
+License:        GPL
+URL:            https://www.steve.org.uk/Software/mousetrap/
+Source:         https://www.steve.org.uk/Software/mousetrap/%{name}-%{version}.tar.gz
+Requires:       doxygen
+Requires:       gtk2
+Requires:       perl-XML-Parser
+Requires:       pkgconfig
+Requires:       python
+Requires:       python-gtkextra
+Requires:       pyorbit
+Requires:       python-xlib
+Requires:       at-spi
+Requires:       gnome-python2
+Requires:       opencv-python
 
 %description
 MouseTrap is written in python, based on the OpenCV library and uses image
@@ -34,9 +34,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

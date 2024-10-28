@@ -1,16 +1,16 @@
-Summary:	OpenGL widget for GTK+ 1.2
-Name:		gtkglarea
-Version:	1.2.3
-Release: 	18.1
-License:	LGPL
-Group:		System/Libraries
-URL:		https://www.student.oulu.fi/~jlof/gtkglarea/
-Source0:	%{name}-%{version}.tar.bz2
-Patch0:		gtkglarea-1.2.3-fix-underquoted-calls.patch
-patch1:		gtkglarea-1.2.3.printf.patch
-BuildRequires:	pkgconfig(glu)
-BuildRequires:	pkgconfig(gtk+)
-BuildRequires:	libtool
+Summary:        OpenGL widget for GTK+ 1.2
+Name:           gtkglarea
+Version:        1.2.3
+Release:        18.1
+License:        LGPL
+Group:          System/Libraries
+URL:            https://www.student.oulu.fi/~jlof/gtkglarea/
+Source0:        %{name}-%{version}.tar.bz2
+Patch0:         gtkglarea-1.2.3-fix-underquoted-calls.patch
+patch1:         gtkglarea-1.2.3.printf.patch
+BuildRequires:  pkgconfig(glu)
+BuildRequires:  pkgconfig(gtk+)
+BuildRequires:  libtool
 
 %description
 Just as GTK+ is build on top of GDK, GtkGLArea is built on top of gdkgl which
@@ -21,17 +21,17 @@ Lower level gdkgl functions make it easy to render on any widget that has
 OpenGL capable visual, rendering to off-screen pixmaps is also supported.
 
 %package devel
-Summary:	Development libraries for GtkGLArea
-Group:		Development/GNOME and GTK+
-Requires:	%{name}
+Summary:        Development libraries for GtkGLArea
+Group:          Development/GNOME and GTK+
+Requires:       %{name}
 
 %description devel
 Libraries and includes files you can use for GtkGLArea development.
 
 %prep
 %setup -q
-%patch0 -p1 -b .underquoted
-%patch1 -p1 -b .printf
+%patch 0 -p1 -b .underquoted
+%patch 1 -p1 -b .printf
 
 %build
 autoreconf -fis
@@ -154,6 +154,6 @@ make
     
 * Mon Nov 01 1999 Pablo Saratxaga <pablo@mandrakesoft.com>
 - 1.2.1
-	 
+         
 * Tue Feb 09 1999 Pablo Saratxaga <srtxg@chanae.alphanet.ch>
  - First try at an RPM  

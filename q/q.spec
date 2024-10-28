@@ -1,19 +1,19 @@
-Name: 		q
-Version: 	7.11
-Release: 	46
-Summary: 	Equational programming language
-License: 	GPLv2+
-Source: 	http://ovh.dl.sourceforge.net/sourceforge/q-lang/q-%{version}.tar.gz
-URL: 		http://q-lang.sourceforge.net
+Name:           q
+Version:        7.11
+Release:        46
+Summary:        Equational programming language
+License:        GPLv2+
+Source:         http://ovh.dl.sourceforge.net/sourceforge/q-lang/q-%{version}.tar.gz
+URL:            http://q-lang.sourceforge.net
 BuildRequires:  make
-BuildRequires:	GraphicsMagick-devel, bison, curl-devel, dx-devel
-BuildRequires:	flex, freetype-devel, gdbm-devel, gmp-devel
-BuildRequires:	libxml2-devel, libxslt-devel, ncurses-devel
-BuildRequires:	readline-devel, tcl-devel, tk-devel, unixODBC-devel
-BuildRequires:	which, zlib-devel, libtool-ltdl-devel, automake
+BuildRequires:  GraphicsMagick-devel, bison, curl-devel, dx-devel
+BuildRequires:  flex, freetype-devel, gdbm-devel, gmp-devel
+BuildRequires:  libxml2-devel, libxslt-devel, ncurses-devel
+BuildRequires:  readline-devel, tcl-devel, tk-devel, unixODBC-devel
+BuildRequires:  which, zlib-devel, libtool-ltdl-devel, automake
 BuildRequires:  autoconf, libtool, gettext-devel
 # bz#1037264. Upstream support discontinued according to offsite, so nothing send - just add patch in Fedora.
-Patch0:	q-7.11-format-security.patch
+Patch0: q-7.11-format-security.patch
 # bz#1106959
 Patch1: q-7.11-tcl86.patch
 Patch2: q-7.11-configure.patch
@@ -59,16 +59,16 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 %package devel
 Summary:        Headers and static library for developing programs using Q
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:	libtool
+Requires:       libtool
 
 %description devel
 %{summary}.
 
 %prep
 %setup -q
-%patch0 -p0 -b .format-security
-%patch1 -p1 -b .tcl86
-%patch2 -p1 -b .configure
+%patch 0 -p0 -b .format-security
+%patch 1 -p1 -b .tcl86
+%patch 2 -p1 -b .configure
 sed -i 's|@libtool@|libtool|' src/Makefile.in
 
 rm -fr libltdl* libtool

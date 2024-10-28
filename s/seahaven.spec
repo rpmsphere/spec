@@ -31,9 +31,6 @@ install -m 644 %{name}.6 %{buildroot}%{_mandir}/man6/
 install -Dm 644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 install -Dm 644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
-%clean 
-rm -rf %{buildroot}
-
 %files
 %doc README
 %{_bindir}/%{name}

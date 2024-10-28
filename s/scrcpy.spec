@@ -10,7 +10,7 @@ Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{versio
 BuildRequires:  meson
 BuildRequires:  ninja-build
 BuildRequires:  gcc
-BuildRequires:	pkgconfig(sdl2)
+BuildRequires:  pkgconfig(sdl2)
 BuildRequires:  pkgconfig(libavcodec)
 BuildRequires:  pkgconfig(libavformat)
 

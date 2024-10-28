@@ -31,7 +31,7 @@ It has the following features:
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 qmake-qt4
@@ -41,9 +41,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -D -m0755 kccmp $RPM_BUILD_ROOT%{_bindir}/kccmp
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/kccmp

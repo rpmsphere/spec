@@ -40,18 +40,18 @@ install -D -m755 bin/k3dsurf $RPM_BUILD_ROOT%{_bindir}/k3dsurf
 
 cd icon
 for png in catenoid_mini_16x16.png catenoid_mini_32x32.png catenoid_mini_64x64.png ; do
-	for size in 16x16 32x32 64x64 ; do
-		install -D -m 644 $png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/$size/apps/catenoid_mini.png
-	done
+        for size in 16x16 32x32 64x64 ; do
+                install -D -m 644 $png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/$size/apps/catenoid_mini.png
+        done
 done
 cd ..
 
 cd src
 for png in pov.xpm snapshot.xpm gear.xpm gedit.xpm; do 
-	for size in 16x16 32x32 64x64 ; do
-		convert -geometry $size $png $(echo $png | cut -d. -f 1-1).png
-		install -D -m 644 $(echo $png | cut -d. -f 1-1).png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/$size/apps/$(echo $png | cut -d. -f 1-1).png
-	done
+        for size in 16x16 32x32 64x64 ; do
+                convert -geometry $size $png $(echo $png | cut -d. -f 1-1).png
+                install -D -m 644 $(echo $png | cut -d. -f 1-1).png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/$size/apps/$(echo $png | cut -d. -f 1-1).png
+        done
 done
 cd ..
 
@@ -75,9 +75,6 @@ Type=Application
 StartupNotify=true
 Categories=Application;Education;Mathematics;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/k3dsurf

@@ -32,8 +32,8 @@ GNOME2 platform.
 
 %prep
 %setup -q
-%patch0 -p1 -b .link-fix
-%patch1 -p1 -b .icon-path
+%patch 0 -p1 -b .link-fix
+%patch 1 -p1 -b .icon-path
 sed -i 's|glib/gmarkup\.h|glib.h|' src/libegg/egg-toolbars-model.c
 
 %build
@@ -50,9 +50,6 @@ desktop-file-install                                    \
         --dir %{buildroot}%{_datadir}/applications      \
         --delete-original                               \
         %{buildroot}/%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf %{buildroot}
 
 %pre
 if [ "$1" -gt 1 ]; then

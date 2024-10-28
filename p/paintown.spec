@@ -1,25 +1,25 @@
 %undefine _debugsource_packages
 %define _disable_ld_no_undefined 1
 
-Summary:	2D Fighting Game
-Name:		paintown
-Version:	3.6.0
-Release:	1
-License:	GPLv2+
-Group:		Games/Arcade
-URL:		https://paintown.sourceforge.net/
-Source0:	https://downloads.sourceforge.net/project/paintown/paintown/%{version}/%{name}-%{version}.tar.bz2
-Patch0:		paintown-3.6.0-static.patch
-Patch1:		paintown-3.6.0-cmake-freetype.patch
-BuildRequires:	cmake
-BuildRequires:	ImageMagick
-BuildRequires:	pkgconfig(freetype2)
-BuildRequires:	pkgconfig(libpng)
-BuildRequires:	pkgconfig(ogg)
-BuildRequires:	pkgconfig(python)
-BuildRequires:	pkgconfig(sdl)
-BuildRequires:	pkgconfig(vorbis)
-BuildRequires:	pkgconfig(zlib)
+Summary:        2D Fighting Game
+Name:           paintown
+Version:        3.6.0
+Release:        1
+License:        GPLv2+
+Group:          Games/Arcade
+URL:            https://paintown.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/project/paintown/paintown/%{version}/%{name}-%{version}.tar.bz2
+Patch0:         paintown-3.6.0-static.patch
+Patch1:         paintown-3.6.0-cmake-freetype.patch
+BuildRequires:  cmake
+BuildRequires:  ImageMagick
+BuildRequires:  pkgconfig(freetype2)
+BuildRequires:  pkgconfig(libpng)
+BuildRequires:  pkgconfig(ogg)
+BuildRequires:  pkgconfig(python)
+BuildRequires:  pkgconfig(sdl)
+BuildRequires:  pkgconfig(vorbis)
+BuildRequires:  pkgconfig(zlib)
 Requires: mpg123
 
 %description
@@ -50,8 +50,8 @@ Features
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 find data/ -type f -exec chmod 0644 {} \;
 sed -i 's|-Wall|-Wall -fPIC -std=gnu++11|' CMakeLists.txt
 sed -i '/TestForPythonEmbed/d' src/paintown-engine/script/CMakeLists.txt

@@ -1,16 +1,16 @@
-Summary:		A tetris like game
-Summary(zh_TW):	類似俄羅斯方塊的遊戲
-Name:			cuyo
-URL:			https://www.karimmi.de/cuyo/
-Version:		1.8.5
-Release:		1
-Source0:		%{name}-%{version}.tar.bz2
-Source1:		%{name}-16x16.png
-Source2:		%{name}-32x32.png
-Source3:		%{name}-48x48.png
-License:		GPL
-Group:			Amusements/Games
-BuildRequires:	qt3-devel bison flex
+Summary:                A tetris like game
+Summary(zh_TW): 類似俄羅斯方塊的遊戲
+Name:                   cuyo
+URL:                    https://www.karimmi.de/cuyo/
+Version:                1.8.5
+Release:                1
+Source0:                %{name}-%{version}.tar.bz2
+Source1:                %{name}-16x16.png
+Source2:                %{name}-32x32.png
+Source3:                %{name}-48x48.png
+License:                GPL
+Group:                  Amusements/Games
+BuildRequires:  qt3-devel bison flex
 
 %description
 Cuyo is a Tetris like game, There is many different level,
@@ -28,10 +28,10 @@ Cuyo 是一款類似俄羅斯方塊的遊戲。
 %build
 export MOC=%{_libdir}/qt-3.3/bin/moc
 export UIC=%{_libdir}/qt-3.3/bin/uic
-./configure	--prefix=%{_prefix} \
-		--bindir=%{_bindir} \
-		--datadir=%{_datadir} \
-		--with-qt-dir=%{_libdir}/qt-3.3
+./configure     --prefix=%{_prefix} \
+                --bindir=%{_bindir} \
+                --datadir=%{_datadir} \
+                --with-qt-dir=%{_libdir}/qt-3.3
 # Fix the error of installation path
 sed -i 's/$(prefix)\/games/$(prefix)\/bin/g' src/Makefile*
 #sed -i 's/$(prefix)\/games/$(prefix)\/bin/g' src/Makefile.in
@@ -41,8 +41,8 @@ sed -i 's|-Werror=format-security||' `find . -name Makefile`
 
 %install
 %__rm -rf $RPM_BUILD_ROOT
-%makeinstall	bindir=$RPM_BUILD_ROOT%{_bindir} \
-		datadir=$RPM_BUILD_ROOT%{_datadir}
+%makeinstall    bindir=$RPM_BUILD_ROOT%{_bindir} \
+                datadir=$RPM_BUILD_ROOT%{_datadir}
 
 # .desktop
 %__install -d $RPM_BUILD_ROOT%{_datadir}/applications
@@ -64,9 +64,6 @@ EOF
 %__install %{SOURCE1} -D $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 %__install %{SOURCE2} -D $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}-32x32.png
 %__install %{SOURCE3} -D $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}-48x48.png
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

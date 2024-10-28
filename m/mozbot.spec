@@ -28,9 +28,6 @@ EOF
 cp -a %{name}.pl uuidgen lib config BotModules $RPM_BUILD_ROOT%{_datadir}/%{name}
 chmod +x $RPM_BUILD_ROOT%{_bindir}/%{name} $RPM_BUILD_ROOT%{_datadir}/%{name}/%{name}.pl
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README INSTALL* run-mozbot-*
 %{_bindir}/%{name}

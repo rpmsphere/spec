@@ -1,24 +1,24 @@
-%global __requires_exclude	perl\\(AcidRip::.*\\)
+%global __requires_exclude      perl\\(AcidRip::.*\\)
 
-Summary:	Simple GUI for MEncoder
-Name:		acidrip
-Version:	0.14
-Release:	28.1
-Source:		https://prdownloads.sourceforge.net/acidrip/%{name}-%{version}.tar.bz2
-URL:		https://untrepid.com/acidrip
-License:	GPLv2
-Group:		Video/Editors and Converters
-Patch0:		%{name}-0.14-xvid_options.patch
-Patch1:		%{name}-0.14-mencoder.patch
-Patch2:		%{name}-0.14-gtk2.patch
-BuildRequires:	lsdvd
-#BuildRequires:	mencoder
-BuildRequires:	perl-Gtk2
-BuildRequires:	perl-devel
-Requires:	lsdvd
-Requires:	mencoder
-Requires:	perl-Gtk2
-BuildArch:	noarch
+Summary:        Simple GUI for MEncoder
+Name:           acidrip
+Version:        0.14
+Release:        28.1
+Source:         https://prdownloads.sourceforge.net/acidrip/%{name}-%{version}.tar.bz2
+URL:            https://untrepid.com/acidrip
+License:        GPLv2
+Group:          Video/Editors and Converters
+Patch0:         %{name}-0.14-xvid_options.patch
+Patch1:         %{name}-0.14-mencoder.patch
+Patch2:         %{name}-0.14-gtk2.patch
+BuildRequires:  lsdvd
+#BuildRequires: mencoder
+BuildRequires:  perl-Gtk2
+BuildRequires:  perl-devel
+Requires:       lsdvd
+Requires:       mencoder
+Requires:       perl-Gtk2
+BuildArch:      noarch
 
 %description
 AcidRip is a Gtk::Perl application for ripping and encoding DVD's. It neatly
@@ -36,15 +36,15 @@ a number of ways:
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 sed -i -e '58,75d' -e 's/mp3lame/copy/g' Makefile.PL
 
 %build
 perl Makefile.PL
 make
-										
+                                                                                
 %install
 %make_install INSTALLDIRS=vendor
 

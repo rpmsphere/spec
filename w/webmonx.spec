@@ -26,9 +26,9 @@ set intervals.
 
 %prep
 %setup -q
-%patch0
-%patch1
-%patch2
+%patch 0
+%patch 1
+%patch 2
 
 %build
 qmake-qt4 \

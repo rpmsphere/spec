@@ -1,11 +1,11 @@
-Summary:	A real-time multi-player space warfare game
-Name:		conquest
-Version:	9.1
-Release:	1
-Source:		https://github.com/jtrulson/conquest/archive/conquest-%{version}.tar.gz#/conquest-%{version}.tar.gz
-License:	MIT
-Group:		Amusements/Games
-URL:		https://github.com/jtrulson/conquest
+Summary:        A real-time multi-player space warfare game
+Name:           conquest
+Version:        9.1
+Release:        1
+Source:         https://github.com/jtrulson/conquest/archive/conquest-%{version}.tar.gz#/conquest-%{version}.tar.gz
+License:        MIT
+Group:          Amusements/Games
+URL:            https://github.com/jtrulson/conquest
 
 %description
 Conquest is a top-down, real time space warfare game. It was originally written
@@ -37,9 +37,6 @@ Terminal=false
 StartupNotify=false
 Categories=Game;Strategy;
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_docdir}/%{name}

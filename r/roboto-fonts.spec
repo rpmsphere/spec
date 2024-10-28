@@ -25,9 +25,6 @@ Roboto is a Helvetica alike sans serif font that was introduced with Android
 %__install -d $RPM_BUILD_ROOT%{ttf_fontdir}
 %__install -m0644 *.ttf $RPM_BUILD_ROOT%{ttf_fontdir}
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
 %files
 %license LICENSE
 %{ttf_fontdir}

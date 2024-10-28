@@ -34,9 +34,6 @@ rm -f $RPM_BUILD_ROOT%{_prefix}/share/hlfl/TODO
 %{_mandir}/man1/%{name}.1.*
 %{_datadir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.60.1
 - Rebuilt for Fedora

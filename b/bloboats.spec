@@ -1,20 +1,20 @@
 %undefine _debugsource_packages
 
-Name:		bloboats
-Summary:	Boat Racing Game
-Version:	1.0.2
-Release:	11
-Source:		https://mirror.kapsi.fi/bloboats.dy.fi/%{name}-%{version}.tar.gz
-Patch1:		bloboats-1.0.2-gcc7.patch
-License:	GPL
-Group:		Games/Arcade
-URL:		https://bloboats.dy.fi/
-BuildRequires:	pkgconfig(SDL_mixer)
-BuildRequires:	pkgconfig(SDL_image)
-BuildRequires:	pkgconfig(SDL_net)
-BuildRequires:	pkgconfig(vorbis)
-BuildRequires:	pkgconfig(glu)
-BuildRequires:	ImageMagick
+Name:           bloboats
+Summary:        Boat Racing Game
+Version:        1.0.2
+Release:        11
+Source:         https://mirror.kapsi.fi/bloboats.dy.fi/%{name}-%{version}.tar.gz
+Patch1:         bloboats-1.0.2-gcc7.patch
+License:        GPL
+Group:          Games/Arcade
+URL:            https://bloboats.dy.fi/
+BuildRequires:  pkgconfig(SDL_mixer)
+BuildRequires:  pkgconfig(SDL_image)
+BuildRequires:  pkgconfig(SDL_net)
+BuildRequires:  pkgconfig(vorbis)
+BuildRequires:  pkgconfig(glu)
+BuildRequires:  ImageMagick
 
 %description
 Bloboats is a boat racing game in which the objective is to reach the
@@ -47,7 +47,7 @@ EOF
 
 mkdir -p %{buildroot}%{_datadir}/pixmaps
 cp data/images/icon.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
-chmod -R 644 %{buildroot}%{_datadir}
+#chmod -R 644 %{buildroot}%{_datadir}
 
 %files
 %doc copying.txt readme.txt

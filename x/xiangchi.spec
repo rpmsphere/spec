@@ -29,9 +29,6 @@ install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 %doc README COPYING
 %{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Oct 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
 - Rebuilt for Fedora

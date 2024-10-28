@@ -1,17 +1,17 @@
-Summary:	Form and menu language interpreter
-Summary(pl):	Interpreter języka formularzy i menu
-Name:		cursel
-Version:	0.2.4
-Release:	2.3
-License:	GPL
-Group:		Applications/Terminal
-Source0:	https://users.pandora.be/stes/%{name}-%{version}.tar.gz
-URL:		https://users.pandora.be/stes/compiler.html
-BuildRequires:	automake
-BuildRequires:	byacc
-BuildRequires:	flex
-BuildRequires:	ncurses-devel
-BuildRequires:	objc
+Summary:        Form and menu language interpreter
+Summary(pl):    Interpreter języka formularzy i menu
+Name:           cursel
+Version:        0.2.4
+Release:        2.3
+License:        GPL
+Group:          Applications/Terminal
+Source0:        https://users.pandora.be/stes/%{name}-%{version}.tar.gz
+URL:            https://users.pandora.be/stes/compiler.html
+BuildRequires:  automake
+BuildRequires:  byacc
+BuildRequires:  flex
+BuildRequires:  ncurses-devel
+BuildRequires:  objc
 
 %description
 CURSEL is a FMLI implementation, a small language that allows you to
@@ -32,8 +32,8 @@ sed -i '/unistd\.h/d' *.m
 autoconf
 %configure
 #make \
-#	OBJC="%{_bindir}/objc -Wc:%{optflags} -fcommon -I/usr/include/ncurses"\
-#	LIBS="-lform -lmenu -lncurses %{optflags}"
+#       OBJC="%{_bindir}/objc -Wc:%{optflags} -fcommon -I/usr/include/ncurses"\
+#       LIBS="-lform -lmenu -lncurses %{optflags}"
 make
 
 %install
@@ -70,7 +70,7 @@ Revision 1.10  2002/08/02 22:28:30  marcus
 Revision 1.9  2002/05/21 23:12:46  kloczek
 perl -pi -e "s/^automake -a -c -f --foreing/\%\{__automake\}/; \
              s/^automake -a -c -f/\%\{__automake\}/; \
-	     s/^autoconf/\%\{__autoconf\}/"
+             s/^autoconf/\%\{__autoconf\}/"
 Revision 1.8  2002/04/25 16:08:19  arturs
 fixed a small typo
 Revision 1.7  2002/02/22 23:28:46  kloczek

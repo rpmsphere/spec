@@ -58,9 +58,6 @@ install -m 0644 opengostfont-ttf-%{version}/*.ttf \
 %doc opengostfont-ttf-%{version}/LICENSE
 %{_datadir}/fonts/%{_fontdir}
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
 - Rebuilt for Fedora

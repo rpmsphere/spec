@@ -5,7 +5,7 @@ Summary:       PDF generator using HTML and CSS
 Group:         System/Libraries/Python
 URL:           https://www.xhtml2pdf.com
 Source:        https://pypi.python.org/packages/source/p/pisa/pisa-%{version}.tar.gz
-Patch:         python-pisa-3.0.33-set.patch
+Patch0:         python-pisa-3.0.33-set.patch
 License:       Apache License 2.0
 BuildRequires: python2
 BuildRequires: python2-setuptools
@@ -23,7 +23,7 @@ Easy integration into Python frameworks like CherryPy, KID Templating, TurboGear
 
 %prep
 %setup -q -n pisa-%{version}
-%patch -p1
+%patch 0 -p1
 
 find . -type f -name '._*' -delete
 
@@ -42,9 +42,6 @@ python2 setup.py install \
 
 #sed -i "\,\.egg-info/,d;s,.*/man/.*,&.gz," %{name}.filelist
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files -f %{name}.filelist
 %doc README.txt CHANGELOG.txt LICENSE.txt doc/*.{html,css}

@@ -55,10 +55,10 @@ Libraries for linking statically to %name
 
 %prep
 %setup -q -n %name
-##%patch1 -p1 -b .am15~
-##%patch2 -p1 -b .ac253~
-%patch3 -p1 -b .gtv~
-%patch4 -p1 -b .plaympeg~
+##%patch 1 -p1 -b .am15~
+##%patch 2 -p1 -b .ac253~
+%patch 3 -p1 -b .gtv~
+%patch 4 -p1 -b .plaympeg~
 cp -f /usr/share/libtool/build-aux/config.* .
 sed -i -e 's|unsigned int xlen,ylen;|int xlen,ylen;|' -e 's|unsigned int linbits;|int linbits;|' MPEGaudio.h
 sed -i 's|answer + 4|"%s", answer + 4|' plaympeg.c
@@ -93,9 +93,6 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall
 mkdir -p $RPM_BUILD_ROOT/usr/share/aclocal
 install -m 644 smpeg.m4 $RPM_BUILD_ROOT/usr/share/aclocal
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGES COPYING README

@@ -1,13 +1,13 @@
-Summary:	GTK+ Object Builder
-Name:		gob2
-Version:	2.0.20
-Release:	7
-License:	GPLv2+
-Group:		Development/GNOME and GTK+
-Source0:	https://download.gnome.org/sources/%{name}/%{version}/%{name}-%{version}.tar.xz
-URL:		https://www.jirka.org/gob.html
-BuildRequires:	flex
-BuildRequires:	glib2-devel
+Summary:        GTK+ Object Builder
+Name:           gob2
+Version:        2.0.20
+Release:        7
+License:        GPLv2+
+Group:          Development/GNOME and GTK+
+Source0:        https://download.gnome.org/sources/%{name}/%{version}/%{name}-%{version}.tar.xz
+URL:            https://www.jirka.org/gob.html
+BuildRequires:  flex
+BuildRequires:  glib2-devel
 
 %description
 GOB2 is a simple preprocessor for making GTK+ objects.  It makes objects

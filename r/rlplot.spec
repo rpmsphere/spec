@@ -32,9 +32,6 @@ mkdir -p ${RPM_BUILD_ROOT}%{_bindir}
 install -m 755 %{name} $RPM_BUILD_ROOT%{_prefix}/bin
 install -m 755 exprlp $RPM_BUILD_ROOT%{_prefix}/bin
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc README RLPlot.bmp RLPLOT.ICO RLPlot.xpm gpl.txt
 %{_bindir}/rlplot

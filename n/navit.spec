@@ -1,44 +1,49 @@
-Name:		navit
-Summary:	Car navigation system with routing engine
-Version:	0.5.6
-Release:	1
-Source0:	https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-Source1:	https://www.navit-project.org/maps/osm_bbox_11.3,47.9,11.7,48.2.osm.bz2
-Source2:	%{name}-0.2.0.zh_TW.po
+Name:           navit
+Summary:        Car navigation system with routing engine
+Version:        0.5.6
+Release:        1
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source1:        https://www.navit-project.org/maps/osm_bbox_11.3,47.9,11.7,48.2.osm.bz2
+Source2:        %{name}-0.2.0.zh_TW.po
 Source3:        taiwan.navit.zip
-Source4:	navit-fix-icons.zip
+Source4:        navit-fix-icons.zip
 Patch0:         navit-0.2.0-freetype2.patch
 Patch1:         navit-0.2.0-gpsd3.patch
 Patch2:         navit-0.1.2-static_sample.patch
-Group:		Applications/Productivity
-License:	GPLv2
-BuildRequires:	zlib-devel
-BuildRequires:	gtk2-devel
-BuildRequires:	fontconfig-devel
-BuildRequires:	SDL_image-devel
-BuildRequires:	libpq-devel
-BuildRequires:	imlib2-devel
-BuildRequires:	libXmu-devel
-BuildRequires:	freeglut-devel
-BuildRequires:	quesoglc-devel
-BuildRequires:	python2-devel
-BuildRequires:	dbus-glib-devel
-BuildRequires:	gettext-devel
-BuildRequires:	gd-devel
-BuildRequires:	speech-dispatcher-devel
-BuildRequires:	gpsd-devel
-BuildRequires:	qt5-qtbase-devel
+Group:          Applications/Productivity
+License:        GPLv2
+BuildRequires:  zlib-devel
+BuildRequires:  gtk2-devel
+BuildRequires:  fontconfig-devel
+BuildRequires:  SDL_image-devel
+BuildRequires:  libpq-devel
+BuildRequires:  imlib2-devel
+BuildRequires:  libXmu-devel
+BuildRequires:  freeglut-devel
+BuildRequires:  quesoglc-devel
+BuildRequires:  python3-devel
+BuildRequires:  dbus-glib-devel
+BuildRequires:  gettext-devel
+BuildRequires:  gd-devel
+BuildRequires:  speech-dispatcher-devel
+BuildRequires:  gpsd-devel
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qt5-qtsvg-devel
 BuildRequires:  qt5-qtsensors-devel
-BuildRequires:	shapelib-devel
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool
-BuildRequires:	desktop-file-utils
+BuildRequires:  qt5-qtmultimedia-devel
+BuildRequires:  qt5-qtdeclarative-devel
+BuildRequires:  shapelib-devel
+BuildRequires:  freetype-devel
+BuildRequires:  harfbuzz-devel
+BuildRequires:  freeimage-devel
+BuildRequires:  autoconf
+BuildRequires:  automake
+BuildRequires:  libtool
+BuildRequires:  desktop-file-utils
 # autopoint requires cvs to work
-BuildRequires:	cvs
-#Requires:	dejavu-sans-fonts
-URL:		https://www.navit-project.org/
+BuildRequires:  cvs
+#Requires:      dejavu-sans-fonts
+URL:            https://www.navit-project.org/
 
 %description
 Navit is a car navigation system with routing engine. Its modular
@@ -57,9 +62,9 @@ The routing engine not only calculates an optimal route to your
 destination, but also generates directions and even speaks to you.
 
 %package graphics-qt
-Summary:	Qt graphics renderer for Navit navigation system
-Group:		Applications/Productivity
-Requires:	%{name} = %{version}-%{release}
+Summary:        Qt graphics renderer for Navit navigation system
+Group:          Applications/Productivity
+Requires:       %{name} = %{version}-%{release}
 
 %description graphics-qt
 Navit is a car navigation system with routing engine. This package
@@ -68,9 +73,9 @@ enable this renderer in /etc/navit/navit.xml or ~/.navit/navit.xml
 to use it.
 
 %package graphics-sdl
-Summary:	SDL graphics renderer for Navit navigation system
-Group:		Applications/Productivity
-Requires:	%{name} = %{version}-%{release}
+Summary:        SDL graphics renderer for Navit navigation system
+Group:          Applications/Productivity
+Requires:       %{name} = %{version}-%{release}
 
 %description graphics-sdl
 Navit is a car navigation system with routing engine. This package
@@ -149,9 +154,6 @@ fi
 
 %posttrans
 gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
-
-%clean
-rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %doc AUTHORS README*

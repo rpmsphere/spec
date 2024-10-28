@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Name:		furiusisomount
-Version:	0.11.3.1
-Release:	6.1
-Summary:	An ISO, IMG, BIN, MDF and NRG Image management utility
-License:	GPLv3
-Group:		Archiving/Cd burning
-URL:		https://www.marcus-furius.com/?page_id=170
-Source:		furiusisomount_%{version}.tar.gz
+Name:           furiusisomount
+Version:        0.11.3.1
+Release:        6.1
+Summary:        An ISO, IMG, BIN, MDF and NRG Image management utility
+License:        GPLv3
+Group:          Archiving/Cd burning
+URL:            https://www.marcus-furius.com/?page_id=170
+Source:         furiusisomount_%{version}.tar.gz
 BuildRequires:  desktop-file-utils python-devel
 BuildArch:      noarch
 

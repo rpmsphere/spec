@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Summary:	A tiny "pseudo C" interpreter
-Name:		interc
-Version:	20120304
-Release:	6.1
-License:	opensource
-Group:		Development/C
-URL:		https://github.com/frenchduff/inter_c
-Source0:	frenchduff-inter_c-77059b6.tar.gz
+Summary:        A tiny "pseudo C" interpreter
+Name:           interc
+Version:        20120304
+Release:        6.1
+License:        opensource
+Group:          Development/C
+URL:            https://github.com/frenchduff/inter_c
+Source0:        frenchduff-inter_c-77059b6.tar.gz
 BuildRequires: flex-static
 
 %description
@@ -23,9 +23,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 interpreter $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README doc/*

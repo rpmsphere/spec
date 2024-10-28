@@ -21,7 +21,7 @@ names.
 
 %prep
 %setup -q -n %{pkg}-%{version}
-%patch0 -p1
+%patch 0 -p1
 #patch1 -p0
 
 %build
@@ -30,9 +30,6 @@ names.
 %{__rm} -rf ${RPM_BUILD_ROOT}
 %{__mkdir_p} ${RPM_BUILD_ROOT}%{_bindir}
 %{__install} -m 0755 %{pkg}.php ${RPM_BUILD_ROOT}%{_bindir}/%{pkg}
-
-%clean
-%{__rm} -rf ${RPM_BUILD_ROOT}
 
 %files
 %{_bindir}/*

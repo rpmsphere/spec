@@ -25,9 +25,6 @@ rm -rf $RPM_BUILD_ROOT
 %make_install
 sed -i 's|Example=user-home|Example=folder|' $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}/index.theme
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc ChangeLog AUTHORS NEWS README COPYING
 %{_datadir}/icons/%{theme_name}

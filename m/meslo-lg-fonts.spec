@@ -32,9 +32,6 @@ done
 %doc About_Meslo_LG_v%{version}.pdf
 %{_datadir}/fonts/%{_fontdir}
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %changelog
 * Mon May 09 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.1
 - Rebuilt for Fedora

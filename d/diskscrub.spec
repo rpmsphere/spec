@@ -33,9 +33,6 @@ mkdir -p $RPM_BUILD_ROOT%{_mandir}/man1
 install -m 755 scrub $RPM_BUILD_ROOT/%{_bindir}
 install -m 644 scrub.1 $RPM_BUILD_ROOT/%{_mandir}/man1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc ChangeLog NEWS DISCLAIMER COPYING
 %{_bindir}/scrub

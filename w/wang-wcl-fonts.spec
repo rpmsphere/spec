@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/wang
+%define fontdir %{_datadir}/fonts/wang
 
 Summary: H.T.Wang WCL Fonts
 Name: wang-wcl-fonts
@@ -23,9 +23,6 @@ Free Chinese TrueType fonts 2000 donated by Prof. Hann-Tzong WANG.
 rm -rf %{buildroot}
 install -d %{buildroot}%{fontdir}
 install -m644 *.ttf %{buildroot}%{fontdir}
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /usr/bin/fc-cache 2> /dev/null

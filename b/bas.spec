@@ -28,9 +28,6 @@ ranlib %{buildroot}%{_libdir}/lib%{name}.a
 install -Dm644 %{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 install -Dm644 de.mo %{buildroot}%{_datadir}/locale/de/LC_MESSAGES/%{name}.mo
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE NEWS README
 %{_bindir}/%{name}

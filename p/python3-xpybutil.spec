@@ -20,7 +20,7 @@ because xpyb is a very low level library that communicates with X.
 
 %prep
 %setup -q -n xpybutil-%{version}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %py3_build

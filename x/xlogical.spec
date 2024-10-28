@@ -26,8 +26,8 @@ Authors:
 
 %prep
 %setup -q -n %{name}-1.0-8
-%patch0
-%patch1
+%patch 0
+%patch 1
 sed -i -e 's|end >= 0|end != NULL|' -e 's|start >= 0|start != NULL|' sdl_audio.cpp
 cd images
 tar xfj %{S:1}
@@ -48,9 +48,6 @@ install -D -m 0644 %{S:3} $RPM_BUILD_ROOT%{_datadir}/pixmaps/xlogical.png
 # Install Desktop
 mkdir -p  $RPM_BUILD_ROOT%{_datadir}/applications
 install -m 0644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog README TODO NEWS LICENSE

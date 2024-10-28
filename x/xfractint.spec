@@ -31,9 +31,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=%{buildroot}/usr install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc fractsrc.txt read.me
 %{_bindir}/xfractint

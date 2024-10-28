@@ -29,9 +29,6 @@ rm -f $RPM_BUILD_ROOT/%{_datadir}/icons/hicolor/icon-theme.cache
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %doc COPYING
 %{_bindir}/%{name}

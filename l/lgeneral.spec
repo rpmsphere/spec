@@ -37,9 +37,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %find_lang pg
 cat %{name}.lang pg.lang > full.lang
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f full.lang
 %doc AUTHORS COPYING ChangeLog README.* TODO
 %{_bindir}/*

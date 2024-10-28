@@ -1,20 +1,20 @@
 %undefine _debugsource_packages
 
-Summary:	Portable Object Compiler
-Summary(pl):	Przenośny kompilator obiektowego C
-Name:		objc
-Version:	3.3.25
-Release:	1
-License:	LGPL
-Group:		Development/Tools
-Source0:	https://users.telenet.be/stes/%{name}-%{version}.tar.gz
-URL:		https://users.telenet.be/stes/compiler.html
-BuildRequires:	gcc
-BuildRequires:	automake
-BuildRequires:	byacc
-BuildRequires:	flex
-BuildRequires:	/usr/bin/objc
-Obsoletes:	objc-bootstrap
+Summary:        Portable Object Compiler
+Summary(pl):    Przenośny kompilator obiektowego C
+Name:           objc
+Version:        3.3.25
+Release:        1
+License:        LGPL
+Group:          Development/Tools
+Source0:        https://users.telenet.be/stes/%{name}-%{version}.tar.gz
+URL:            https://users.telenet.be/stes/compiler.html
+BuildRequires:  gcc
+BuildRequires:  automake
+BuildRequires:  byacc
+BuildRequires:  flex
+BuildRequires:  /usr/bin/objc
+Obsoletes:      objc-bootstrap
 
 %description
 The Portable Object Compiler consists of a set of Objective-C class
@@ -46,9 +46,6 @@ sed -i 's|/usr/lib|/usr/lib64|' */*/Makefile
 %endif
 %{__make} install
 rm %{buildroot}%{_mandir}/man3/Object.3
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc Books.txt Changes.txt Readme.txt *.html

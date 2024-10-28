@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 
-Summary:	Select a window manager at X startup
-Summary(pl):	selectwm - wybór zarządcy okien przy starcie X
-Name:		selectwm
-Version:	0.4.1
-Release:	7.1
-License:	GPL
-Group:		X11/Applications
-Source0:	https://ordiluc.net/selectwm/%{name}-%{version}.tar.bz2
-URL:		https://ordiluc.net/selectwm/
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	gettext-devel
-BuildRequires:	gtk2-devel
+Summary:        Select a window manager at X startup
+Summary(pl):    selectwm - wybór zarządcy okien przy starcie X
+Name:           selectwm
+Version:        0.4.1
+Release:        7.1
+License:        GPL
+Group:          X11/Applications
+Source0:        https://ordiluc.net/selectwm/%{name}-%{version}.tar.bz2
+URL:            https://ordiluc.net/selectwm/
+BuildRequires:  autoconf
+BuildRequires:  automake
+BuildRequires:  gettext-devel
+BuildRequires:  gtk2-devel
 
 %description
 selectwm is a simple but robust program that will let you pick a
@@ -42,9 +42,6 @@ sed -i 's|define GTK_DISABLE_DEPRECATED|undef GTK_DISABLE_DEPRECATED|' src/defin
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %attr(755,root,root) %{_bindir}/selectwm

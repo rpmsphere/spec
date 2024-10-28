@@ -32,9 +32,6 @@ install -m 644 config $RPM_BUILD_ROOT/%{_sysconfdir}/%{name}
 mkdir -p $RPM_BUILD_ROOT/%{_mandir}/man1
 install -m 644 ripit.1 $RPM_BUILD_ROOT/%{_mandir}/man1/
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README HISTORY LICENSE
 %doc %{_mandir}/man1/*

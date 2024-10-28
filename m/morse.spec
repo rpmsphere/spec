@@ -8,7 +8,7 @@ License: BSD
 Group: Communications
 URL: https://catb.org/~esr/morse/
 Source0: %name-%version.tar.gz
-Patch: morse2.5-nosound.patch
+Patch0: morse2.5-nosound.patch
 BuildRequires: libX11-devel alsa-lib-devel pulseaudio-libs-devel xmlto
 #BuildRequires: xsltproc docbook-dtds docbook-style-xsl
 
@@ -23,7 +23,7 @@ Morse-code beeps.
 %prep
 %setup -q
 #sed -i '/\$(X11LIBS)/s/\(\$(X11LIBS) \)\(.*\)/\2 \1/g' morse.d/Makefile
-%patch -p1
+%patch 0 -p1
 
 %build
 rm -f morse.1

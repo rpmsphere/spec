@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Name:		xsnap
-Version:	1.5.15
-Release:	1
-Summary:	Program to interactively take a snapshot of a region of the screen
-Group:		Graphics
-License:	BSD
-URL:		ftp://ftp.ac-grenoble.fr/ge/Xutils/
-Source:		%{name}-%{version}.tar.bz2
+Name:           xsnap
+Version:        1.5.15
+Release:        1
+Summary:        Program to interactively take a snapshot of a region of the screen
+Group:          Graphics
+License:        BSD
+URL:            ftp://ftp.ac-grenoble.fr/ge/Xutils/
+Source:         %{name}-%{version}.tar.bz2
 BuildRequires:  libX11-devel
 BuildRequires:  libjpeg-devel
 BuildRequires:  libpng-devel
@@ -28,9 +28,6 @@ xmkmf -a
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 make DESTDIR=$RPM_BUILD_ROOT install.man
-
-%clean
-rm -fr $RPM_BUILD_ROOT
 
 %files
 %doc README INSTALL AUTHORS
@@ -63,6 +60,6 @@ rm -fr $RPM_BUILD_ROOT
 - fixed buildrequires
 * Fri Apr 09 2004 Lenny Cartier <lenny@mandrakesoft.com> 1.3-2mdk 
 - from Pierre-Michel Theveny <pmth@free.fr> :
-	- Correction in description
+        - Correction in description
 * Sat Mar 27 2004  Pierre-Michel Theveny <pmth@free.fr> 1.3-1mdk
 - First build on 9.2

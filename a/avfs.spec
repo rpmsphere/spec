@@ -1,12 +1,12 @@
-Summary:	Enables programs to look inside archived/compressed files, access remote files
-Name:		avfs
-Version:	1.1.5
-Release:	1
-License:	GPLv2 and LGPLv2
-Group:		Applications/Archiving
-URL:		https://sourceforge.net/projects/avf
-Source0:	https://ncu.dl.sourceforge.net/project/avf/%{name}/%{version}/%{name}-%{version}.tar.bz2
-BuildRequires:	fuse-devel
+Summary:        Enables programs to look inside archived/compressed files, access remote files
+Name:           avfs
+Version:        1.1.5
+Release:        1
+License:        GPLv2 and LGPLv2
+Group:          Applications/Archiving
+URL:            https://sourceforge.net/projects/avf
+Source0:        https://ncu.dl.sourceforge.net/project/avf/%{name}/%{version}/%{name}-%{version}.tar.bz2
+BuildRequires:  fuse-devel
 
 %description
 AVFS is a system which enables all programs to look inside archived
@@ -47,9 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 rm -rf doc/Makefil*
 sed -i 's| /bin/perl| /usr/bin/perl|' $RPM_BUILD_ROOT%{_libdir}/%{name}/extfs/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -p /sbin/ldconfig
 

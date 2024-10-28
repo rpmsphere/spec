@@ -10,7 +10,7 @@ BuildRequires:  desktop-file-utils libXtst-devel
 BuildRequires:  gtk3-devel gettext libxml2-devel
 BuildRequires:  intltool unique3-devel
 BuildRequires:  gcc
-Requires:	xkeyboard-config 
+Requires:       xkeyboard-config 
 
 %description
 iok is Indic Onscreen Keyboard. It provides virtual Keyboard functionality. 

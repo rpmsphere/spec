@@ -1,39 +1,39 @@
-Summary:	An image loading and rendering library for X11R6
-Name:		imlib
-Epoch:		1
-Version:	1.9.15
-Release:	39
-License:	LGPLv2+
-Source0:	https://ftp.gnome.org/pub/GNOME/sources/imlib/1.9/imlib-%{version}.tar.bz2
-Source2:	local-hack-gmodule.tar.gz
-Patch0:		imlib-1.9.15-autotools-rebase.patch.bz2
-Patch1:		imlib-1.9.13-sec2.patch
-Patch2:		imlib-1.9.15-bpp16-CVE-2007-3568.patch
-Patch3:		imlib-1.9.10-cppflags.patch
-Patch4:		imlib-1.9.15-gmodulehack.patch
-Patch6:		imlib-1.9.13-underquoted.patch
-Patch8:		imlib-1.9.15-lib-bloat.patch
-Patch9:		imlib-1.9.15-multilib-config.patch
-Patch10:	imlib-1.9.15-check-for-shm-pixmaps.patch
-Patch11:	imlib-1.9.15-libpng15.patch
-Patch12:	imlib-1.9.15-aarch64.patch
-Patch13:	imlib-1.9.15-giflib5.patch
-BuildRequires:	coreutils
-BuildRequires:	gcc
-BuildRequires:	giflib-devel
-BuildRequires:	glib-devel
-BuildRequires:	gtk+-devel
-BuildRequires:	libpng-devel >= 1.2.2
-BuildRequires:	libjpeg-devel
-BuildRequires:	libtiff-devel
-BuildRequires:	libX11-devel
-BuildRequires:	libXt-devel
-BuildRequires:	make
-BuildRequires:	sed
-BuildRequires:	tar
-BuildRequires:	zlib-devel
-Obsoletes:	imlib-cfgeditor < %{version}-%{release}, Imlib < %{version}-%{release}
-Provides:	imlib-cfgeditor = %{version}-%{release}, Imlib = %{version}-%{release}
+Summary:        An image loading and rendering library for X11R6
+Name:           imlib
+Epoch:          1
+Version:        1.9.15
+Release:        39
+License:        LGPLv2+
+Source0:        https://ftp.gnome.org/pub/GNOME/sources/imlib/1.9/imlib-%{version}.tar.bz2
+Source2:        local-hack-gmodule.tar.gz
+Patch0:         imlib-1.9.15-autotools-rebase.patch.bz2
+Patch1:         imlib-1.9.13-sec2.patch
+Patch2:         imlib-1.9.15-bpp16-CVE-2007-3568.patch
+Patch3:         imlib-1.9.10-cppflags.patch
+Patch4:         imlib-1.9.15-gmodulehack.patch
+Patch6:         imlib-1.9.13-underquoted.patch
+Patch8:         imlib-1.9.15-lib-bloat.patch
+Patch9:         imlib-1.9.15-multilib-config.patch
+Patch10:        imlib-1.9.15-check-for-shm-pixmaps.patch
+Patch11:        imlib-1.9.15-libpng15.patch
+Patch12:        imlib-1.9.15-aarch64.patch
+Patch13:        imlib-1.9.15-giflib5.patch
+BuildRequires:  coreutils
+BuildRequires:  gcc
+BuildRequires:  giflib-devel
+BuildRequires:  glib-devel
+BuildRequires:  gtk+-devel
+BuildRequires:  libpng-devel >= 1.2.2
+BuildRequires:  libjpeg-devel
+BuildRequires:  libtiff-devel
+BuildRequires:  libX11-devel
+BuildRequires:  libXt-devel
+BuildRequires:  make
+BuildRequires:  sed
+BuildRequires:  tar
+BuildRequires:  zlib-devel
+Obsoletes:      imlib-cfgeditor < %{version}-%{release}, Imlib < %{version}-%{release}
+Provides:       imlib-cfgeditor = %{version}-%{release}, Imlib = %{version}-%{release}
 
 %description
 Imlib is a display depth independent image loading and rendering library.
@@ -46,19 +46,19 @@ configure the Imlib image loading and rendering library. Imlib_config can be
 used to control how Imlib uses color and handles gamma corrections, etc.
 
 %package devel
-Summary:	Development tools for Imlib applications
-Requires:	imlib%{?_isa} = %{epoch}:%{version}-%{release}
-Requires:	giflib-devel%{?_isa}
-Requires:	glib-devel%{?_isa}
-Requires:	gtk+-devel%{?_isa}
-Requires:	libjpeg-devel%{?_isa}
-Requires:	libtiff-devel%{?_isa}
-Requires:	libX11-devel%{?_isa}
-Requires:	libXt-devel%{?_isa}
-Requires:	zlib-devel%{?_isa}
+Summary:        Development tools for Imlib applications
+Requires:       imlib%{?_isa} = %{epoch}:%{version}-%{release}
+Requires:       giflib-devel%{?_isa}
+Requires:       glib-devel%{?_isa}
+Requires:       gtk+-devel%{?_isa}
+Requires:       libjpeg-devel%{?_isa}
+Requires:       libtiff-devel%{?_isa}
+Requires:       libX11-devel%{?_isa}
+Requires:       libXt-devel%{?_isa}
+Requires:       zlib-devel%{?_isa}
 # From Fedora 14, %%{_datadir}/aclocal is included in the filesystem package
 %if (0%{?rhel} && 0%{?rhel} <= 6) || (0%{?fedora} && 0%{?fedora} <= 13)
-Requires:	%{_datadir}/aclocal
+Requires:       %{_datadir}/aclocal
 %endif
 
 %description devel
@@ -70,51 +70,51 @@ rendering library for X11R6.
 %setup -q
 
 ## Rebase autotools to EL-5 versions
-%patch0 -p1
+%patch 0 -p1
 
 ## CVE-2004-1025, CVE-2004-1026 (integer/buffer overflows) (#235416)
-%patch1 -p1 -b .sec2
+%patch 1 -p1 -b .sec2
 
 ## CVE-2007-3568 (DoS via a BMP image with a Bits Per Page of 0) (#426091)
-%patch2 -p0 -b .bpp16
+%patch 2 -p0 -b .bpp16
 
 ## -I/usr/include is never necessary
-%patch3 -p1 -b .cppflags
+%patch 3 -p1 -b .cppflags
 
 ## Hook our gmodule hack for libpng into the build
-%patch4 -p1 -b .gmodulehack
+%patch 4 -p1 -b .gmodulehack
 
 ## Fix underquoted m4 definitions
-%patch6 -p1 -b .underquoted
+%patch 6 -p1 -b .underquoted
 
 ## Don't link against libraries unless we use their symbols
-%patch8 -p1 -b .lib-bloat
+%patch 8 -p1 -b .lib-bloat
 
 ## Make imlib-config multilib-compatible
-%patch9 -p1 -b .multilib
+%patch 9 -p1 -b .multilib
 
 ## Check whether the MIT SHM extension supports shared pixmaps
 ## before trying to use them (#357241)
-%patch10 -p1 -b .shmpixmaps
+%patch 10 -p1 -b .shmpixmaps
 
 ## Patch from gentoo for building against libpng 1.5
-%patch11 -b .libpng15
+%patch 11 -b .libpng15
 
 ## Add aarch64 support (#925585)
-%patch12 -b .aarch64
+%patch 12 -b .aarch64
 
 ## Fix build with giflib version 5
-%patch13 -b .giflib5
+%patch 13 -b .giflib5
 
 ## Local gmodule hack to support building with libpng rather than libpng10
 (cd gdk_imlib && tar zxf %{SOURCE2})
-sed -i -e	's/gmodule.h/gmodule-local.h/g;
-		 s/g_module/local_hack_g_module/g;
-		 s/GModule/LocalHackGModule/g;
-		 s/G_MODULE/LOCAL_HACK_G_MODULE/g' \
-	gdk_imlib/modules.c
+sed -i -e       's/gmodule.h/gmodule-local.h/g;
+                 s/g_module/local_hack_g_module/g;
+                 s/GModule/LocalHackGModule/g;
+                 s/G_MODULE/LOCAL_HACK_G_MODULE/g' \
+        gdk_imlib/modules.c
 sed -i -e 's/-static//g' \
-	gdk_imlib/local-hack-gmodule/Makefile
+        gdk_imlib/local-hack-gmodule/Makefile
 
 ## Change soname to reflect new libpng
 sed -i -e 's/10:15:9/11:0:0/g' Imlib/Makefile*

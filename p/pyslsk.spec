@@ -40,9 +40,6 @@ EOF
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
    
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/*
 %{python2_sitelib}/pysoulseek*

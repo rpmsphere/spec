@@ -1,14 +1,14 @@
-Name:	gworldclock
+Name:   gworldclock
 Version: 1.4.4
 Release: 1
 Summary: Displays time and date in specified time zones
 License: GPL
 Group: Toys
 URL: https://pkgs.org/debian-sid/debian-main-amd64/gworldclock_1.4.4-9_amd64.deb.html
-Source:	%{name}-%{version}.tar.xz
+Source: %{name}-%{version}.tar.xz
 Source1: gworldclock.desktop
 Source2: gworldclock.png
-Patch0:	gworldclock_1.4.4-9.patch
+Patch0: gworldclock_1.4.4-9.patch
 BuildRequires: autoconf
 BuildRequires: gettext
 BuildRequires: atk-devel
@@ -24,7 +24,7 @@ Displays time and date in specified time zones.
 
 %prep
 %setup -q
-%patch0 -p 1
+%patch 0 -p 1
 
 %build
 #export CFLAGS='-O2 -Wno-format-security -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection  -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1'

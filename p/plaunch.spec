@@ -8,8 +8,8 @@ Group:          System/Internationalization
 License:        GPLv2
 URL:            https://code.google.com/p/plaunch/
 Source0:        https://plaunch.googlecode.com/files/%{_name}_V%{version}.tgz
-BuildRequires:	ImageMagick
-Requires:	pygtk2 python2-xlib python2
+BuildRequires:  ImageMagick
+Requires:       pygtk2 python2-xlib python2
 BuildArch:      noarch
 
 %description
@@ -54,9 +54,6 @@ EOF
 convert data/%{_name}.ico $RPM_BUILD_ROOT/%{_datadir}/pixmaps/%{name}.png
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

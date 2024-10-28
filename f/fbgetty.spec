@@ -24,8 +24,8 @@ Some additional files used with %name.
 %prep
 %setup -q
 #patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 1 -p1
+%patch 2 -p1
 sed -i '137,140s|@itemx|@item\n@itemx|' docs/fbgetty.texi
 
 %build

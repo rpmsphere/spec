@@ -1,20 +1,20 @@
 %global __os_install_post %{nil}
 
-Name:			cosmosmash
-Version:		1.4.8
-Summary:		Clone of the Intellivision(TM) game Astrosmash(TM)
-License:		GPLv2
-URL:			https://sarrazip.com/dev/%{name}.html
-Group:			Amusements/Games
-Release:		1
-Source:			%{name}-%{version}.tar.gz
-BuildRequires:		desktop-file-utils
-BuildRequires:		gcc-c++
-BuildRequires:		libtool
-BuildRequires:		SDL-devel
-BuildRequires:		SDL_image-devel
-BuildRequires:		SDL_mixer-devel
-BuildRequires:		flatzebra-devel
+Name:                   cosmosmash
+Version:                1.4.8
+Summary:                Clone of the Intellivision(TM) game Astrosmash(TM)
+License:                GPLv2
+URL:                    https://sarrazip.com/dev/%{name}.html
+Group:                  Amusements/Games
+Release:                1
+Source:                 %{name}-%{version}.tar.gz
+BuildRequires:          desktop-file-utils
+BuildRequires:          gcc-c++
+BuildRequires:          libtool
+BuildRequires:          SDL-devel
+BuildRequires:          SDL_image-devel
+BuildRequires:          SDL_mixer-devel
+BuildRequires:          flatzebra-devel
 
 %description
 In this game, you control a base that must destroy rocks before they hit the
@@ -45,9 +45,6 @@ Terminal=false
 _EOF_
 
 install -D -m644 src/%{name}.desktop %{buildroot}/%{_datadir}/applications/%{name}.desktop
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README THANKS TODO

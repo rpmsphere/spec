@@ -48,9 +48,6 @@ gzip --best --stdout -- debian/changelog > changelog.gz
 %{_mandir}/man1/*
 %exclude %_sysconfdir/menu-methods/*
 
-%clean
-rm -rf %{buildroot}
-
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.5
 - Rebuilt for Fedora

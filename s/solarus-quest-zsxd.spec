@@ -10,7 +10,7 @@ Version:        1.12.2
 Release:        1
 Summary:        The Legend of Zelda: Mystery of Solarus XD
 Source0:        https://gitlab.com/solarus-games/%{_name}/-/archive/dev/%{_name}-dev.tar.gz
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 Zelda Mystery of Solarus XD: a humorous game that works with Solarus,

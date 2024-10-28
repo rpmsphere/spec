@@ -25,16 +25,13 @@ sed -i '1i #include <cstring>\n#include <cstdlib>' src/util.h
 
 %build
 %configure \
-	--disable-dependency-tracking
+        --disable-dependency-tracking
 %{__make} %{?_smp_mflags}
 
 %install
 %{__rm} -rf %{buildroot}
 %make_install
 %find_lang %{name}
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files -f %{name}.lang
 %doc %{_mandir}/man?/*

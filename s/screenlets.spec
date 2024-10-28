@@ -7,7 +7,7 @@ Summary:        OsX Like Dashboard
 Group:          System/X11/Utilities
 Source:         screenlets_0.1.2.tar.gz
 BuildRequires:  python2-devel
-BuildArch:	noarch
+BuildArch:      noarch
 Obsoletes:      universal-applets
 Requires:       gnome-python2
 Requires:       gnome-python2-gconf
@@ -50,9 +50,6 @@ bash -c "echo X-SuSE-translate=false >> $RPM_BUILD_ROOT/usr/share/applications/s
 ##rm -f $RPM_BUILD_ROOT/usr/share/applications/*
 
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*/*.py %{buildroot}%{_datadir}/%{name}-manager/*.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGELOG README TODO

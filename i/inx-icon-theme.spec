@@ -26,9 +26,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons
 cp -a %{theme_name} $RPM_BUILD_ROOT%{_datadir}/icons
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README-Icons COPYING CREDITS
 %{_datadir}/icons/%{theme_name}

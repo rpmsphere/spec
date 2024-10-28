@@ -1,12 +1,12 @@
 %undefine _debugsource_packages
 
-Name:		shkd
-Version:	0.1
-Release:	3.1
-Summary:	Simple HotKey Daemon
-License:	BSD
-URL:		https://github.com/baskerville/%{name}
-Source0:	%{name}-master.zip
+Name:           shkd
+Version:        0.1
+Release:        3.1
+Summary:        Simple HotKey Daemon
+License:        BSD
+URL:            https://github.com/baskerville/%{name}
+Source0:        %{name}-master.zip
 
 %description
 shkd is a simple hotkey daemon for the Linux console.

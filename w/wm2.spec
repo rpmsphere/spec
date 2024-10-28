@@ -8,7 +8,7 @@ Version:      4
 Release:      978.1
 Summary:      A minimalist window manager
 Source:       wm2-4.tar.gz
-Patch:        wm2-4.dif
+Patch0:        wm2-4.dif
 BuildRequires: gcc-c++, libX11-devel, libXext-devel, libXmu-devel
 
 %description
@@ -27,7 +27,7 @@ wm2 provides:
 
 %prep
 %setup -q
-%patch
+%patch 0
 sed -i 's|(int)x|atoi(x)|' Client.C
 
 %build
@@ -36,9 +36,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 wm2 $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README

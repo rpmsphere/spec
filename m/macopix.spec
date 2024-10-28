@@ -11,17 +11,17 @@ Source0: https://rosegray.sakura.ne.jp/macopix/%{name}-%{version}.tar.gz
 Obsoletes: actx
 #Obsoletes: age
 BuildRequires:  libpng-devel
-%define	gtk_conf_opt --program-transform-name='s/macopix/macopix/' 
+%define gtk_conf_opt --program-transform-name='s/macopix/macopix/' 
 BuildRequires: gtk3-devel
 
 %if %{USE_GNUTLS}
 # GNUTLS
-%define	gnutls_conf_opt --with-gnutls
+%define gnutls_conf_opt --with-gnutls
 Requires: gnutls
 BuildRequires: gnutls-devel
 %else
 # OPENSSL
-%define	gnutls_conf_opt ""
+%define gnutls_conf_opt ""
 Requires: openssl
 BuildRequires: openssl-devel
 %endif
@@ -44,9 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/macopix
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc README* NKR.README* AUTHORS ChangeLog* COPYING*

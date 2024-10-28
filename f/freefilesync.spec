@@ -1,21 +1,21 @@
-%define	oname	FreeFileSync
-%define __unzip	%{_bindir}/unzip -o
+%define oname   FreeFileSync
+%define __unzip %{_bindir}/unzip -o
 
-Name:		freefilesync
-Version:	9.6
-Release:	1
-Summary:	A free file sync tool
-Group:		File tools
-License:	GPLv3
-URL:		https://sourceforge.net/projects/freefilesync/
-Source0:	https://www.freefilesync.org/download/FreeFileSync_%{version}_Source.zip
-Source2:	FreeFileSync.desktop
-Source3:	RealTimeSync.desktop
-Source4:	FreeFileSync.png
-Patch0:		missing-includes.patch
-BuildRequires:	ImageMagick
-BuildRequires:	wxGTK3-devel
-BuildRequires:	boost-devel
+Name:           freefilesync
+Version:        9.6
+Release:        1
+Summary:        A free file sync tool
+Group:          File tools
+License:        GPLv3
+URL:            https://sourceforge.net/projects/freefilesync/
+Source0:        https://www.freefilesync.org/download/FreeFileSync_%{version}_Source.zip
+Source2:        FreeFileSync.desktop
+Source3:        RealTimeSync.desktop
+Source4:        FreeFileSync.png
+Patch0:         missing-includes.patch
+BuildRequires:  ImageMagick
+BuildRequires:  wxGTK-devel
+BuildRequires:  boost-devel
 BuildRequires:  gcc-c++
 
 %description
@@ -29,7 +29,7 @@ or overloaded UI interfaces.
 
 sed -i 's_../wx+_wx+_' FreeFileSync/Source/ui/gui_generated.cpp
 sed -i '/^CXXFLAGS/s|-O3|%{optflags} -Wno-unused-local-typedefs -Wno-deprecated-declarations -Wno-literal-suffix|' FreeFileSync/Source/Makefile FreeFileSync/Source/RealTimeSync/Makefile
-sed -i -e '/^LINKFLAGS/s|-s|%{build_ldflags}|' -e 's|wx-config|wx-config-3.0|' FreeFileSync/Source/Makefile FreeFileSync/Source/RealTimeSync/Makefile
+sed -i -e '/^LINKFLAGS/s|-s|%{build_ldflags}|' -e 's|wx-config|wx-config-3.2|' FreeFileSync/Source/Makefile FreeFileSync/Source/RealTimeSync/Makefile
 
 sed -i 's/m_listBoxHistory->GetTopItem()/0/g' FreeFileSync/Source/ui/main_dlg.cpp
 sed -i 's!static_assert!//static_assert!' zen/scope_guard.h
@@ -43,13 +43,13 @@ install -Dpm644 Changelog.txt FreeFileSync/Build/
 %build
 # FFS
 make -C \
-	FreeFileSync/Source \
-	launchpad
+        FreeFileSync/Source \
+        launchpad
 
 # RTS
 make -C \
-	FreeFileSync/Source/RealTimeSync \
-	launchpad
+        FreeFileSync/Source/RealTimeSync \
+        launchpad
 
 %install
 #FFS
@@ -58,10 +58,10 @@ make -C \
 #RTS
 %make_install -C FreeFileSync/Source/RealTimeSync
 
-install -Dm644 %{_sourcedir}/%{oname}.desktop \
-	%{buildroot}%{_datadir}/applications/%{oname}.desktop
+install -Dm644 %{SOURCE2} \
+        %{buildroot}%{_datadir}/applications/%{oname}.desktop
 
-install -Dm644 %{_sourcedir}/RealTimeSync.desktop \
+install -Dm644 %{SOURCE3} \
         %{buildroot}%{_datadir}/applications/RealTimeSync.desktop
 
 rm -rf %{buildroot}%{_docdir}/%{oname}
@@ -70,8 +70,8 @@ rm -rf %{buildroot}%{_docdir}/%{oname}
 # icons
 for png in 256x256 128x128 64x64 32x32 22x22 16x16; do
   mkdir -p %{buildroot}%{_datadir}/icons/hicolor/${png}/apps/
-  convert -geometry $png %{_sourcedir}/%{oname}.png \
-	%{buildroot}%{_datadir}/icons/hicolor/${png}/apps/%{oname}.png
+  convert -geometry $png %{SOURCE4} \
+        %{buildroot}%{_datadir}/icons/hicolor/${png}/apps/%{oname}.png
 done
 
 %files

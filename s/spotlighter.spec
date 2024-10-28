@@ -18,7 +18,7 @@ You can use this to spotlight objects on the desktop.
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 %configure
@@ -26,9 +26,6 @@ You can use this to spotlight objects on the desktop.
 
 %install
 %makeinstall
-
-%clean
-%__rm -rf "%{buildroot}"
 
 %files
 %doc COPYING README

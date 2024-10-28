@@ -27,9 +27,6 @@ python2 setup.py install \
    --install-headers=%{_includedir}/python2.7 \
    --install-lib=%{python2_sitelib}
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %{python2_sitelib}/pyExcelerator-*.egg-info
 %{python2_sitelib}/pyExcelerator

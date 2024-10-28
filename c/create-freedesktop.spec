@@ -30,9 +30,6 @@ rm -f $RPM_BUILD_ROOT%{_datadir}/doc/create/INSTALL
 rm -f $RPM_BUILD_ROOT%{_datadir}/doc/create/spec_0.1.1.html
 rm -f $RPM_BUILD_ROOT%{_datadir}/doc/create/styles.css
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %{_datadir}/create
 %doc COPYING docs/spec_0.1.1.html docs/styles.css

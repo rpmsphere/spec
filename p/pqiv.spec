@@ -94,11 +94,11 @@ install -p -m 755 %{name}-gtk3 %buildroot%_bindir/%{name}-gtk3
 # Make alternatives:
 mkdir -p %buildroot%_altdir
 cat <<'_EOF'_ > %buildroot%_altdir/%name-gtk2
-%_bindir/%name	%_bindir/%{name}-gtk2	10
+%_bindir/%name  %_bindir/%{name}-gtk2   10
 _EOF_
 
 cat <<'_EOF'_ > %buildroot%_altdir/%name-gtk3
-%_bindir/%name	%_bindir/%{name}-gtk3	20
+%_bindir/%name  %_bindir/%{name}-gtk3   20
 _EOF_
 
 %files

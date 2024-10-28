@@ -1,14 +1,14 @@
-Name:		gmountiso
-Version:	0.4
-Release:	1
-Summary:	A tool for mounting iso9660 files.
-Summary(zh_TW):	光碟映像檔的掛載工具
-License:	GPL
-Group:		Applications/System
-Source0:	%{name}_%{version}-0ubuntu2.tar.gz
-Source1:	%{name}-%{version}.zh_TW.po
-BuildArch:	noarch
-Requires:	pygtk2, gksu
+Name:           gmountiso
+Version:        0.4
+Release:        1
+Summary:        A tool for mounting iso9660 files.
+Summary(zh_TW): 光碟映像檔的掛載工具
+License:        GPL
+Group:          Applications/System
+Source0:        %{name}_%{version}-0ubuntu2.tar.gz
+Source1:        %{name}-%{version}.zh_TW.po
+BuildArch:      noarch
+Requires:       pygtk2, gksu
 
 %description
 Using PyGTK2 to perform a menu-driven mounter
@@ -42,9 +42,6 @@ ln -s ../share/%{name}/Gmount-iso.py %{buildroot}%{_bindir}/Gmount-iso
 %__rm -f %{buildroot}%{_datadir}/locale/*/LC_MESSAGES/Gmount-iso.po
 
 sed -i 's|/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc GPL

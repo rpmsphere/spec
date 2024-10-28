@@ -77,7 +77,7 @@ see https://www.mess.org/.
 
 %prep
 %setup -q
-%patch0 -p1 -b .libgl
+%patch 0 -p1 -b .libgl
 # Cleanup CVS stuff
 find . -type d -name CVS | xargs %{__rm} -rf
 
@@ -219,9 +219,6 @@ popd
 %{__mkdir_p} %{buildroot}%{_datadir}/xmess/{artwork,bios,crc,samples,snap,software}
 %endif
 
-
-%clean
-%{__rm} -rf %{buildroot}
 
 
 %if %{?_without_mame:0}%{!?_without_mame:1}

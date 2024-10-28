@@ -26,9 +26,6 @@ install -D -m 755 %{SOURCE0} \
 
 #$RPM_BUILD_ROOT%{_bindir}/%{name} --help2 > README
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 #doc README

@@ -25,9 +25,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/metacity-1
 cp ACYL_Metacity_0.3_Borders/metacity-1/metacity-theme-1.xml $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/metacity-1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}/metacity-1/metacity-theme-1.xml
 

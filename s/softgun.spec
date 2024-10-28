@@ -28,9 +28,6 @@ make install prefix=$RPM_BUILD_ROOT/usr
 %doc README configs
 %{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Dec 16 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.21
 - Rebuilt for Fedora

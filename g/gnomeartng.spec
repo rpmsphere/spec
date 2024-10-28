@@ -1,14 +1,14 @@
-Summary:	The successor of Gnome-Art 
-Name:		gnomeartng
-Version:	0.7.0
-Release:	20.4
-URL:		https://gnomeartng.plasmasolutions.de/
-Source0:  	https://download.berlios.de/gnomeartng/%{name}-%{version}.tar.gz
-License:	GPL
-Group:		User Interface/Desktops
+Summary:        The successor of Gnome-Art 
+Name:           gnomeartng
+Version:        0.7.0
+Release:        20.4
+URL:            https://gnomeartng.plasmasolutions.de/
+Source0:        https://download.berlios.de/gnomeartng/%{name}-%{version}.tar.gz
+License:        GPL
+Group:          User Interface/Desktops
 BuildArch:      noarch
 BuildRequires:  libpng-devel
-BuildRequires:	libpng12
+BuildRequires:  libpng12
 BuildRequires:  mono-devel, gnome-sharp-devel
 BuildRequires:  udisks2
 
@@ -59,9 +59,6 @@ EOF
 
 # icon
 install -Dm 644 images/Icon.svg $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.svg
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %doc README VERSION TODO

@@ -1,6 +1,6 @@
 Name:           moon-lander
 BuildRequires:  SDL_image-devel SDL_mixer-devel gcc-c++ 
-BuildRequires:	mesa-libGL-devel
+BuildRequires:  mesa-libGL-devel
 URL:            https://magigames.org/moonlander.html
 License:        BSD 3-Clause
 Group:          Amusements/Games/Action/Arcade
@@ -9,7 +9,7 @@ Release:        1
 Summary:        A 2D Game of Gravity
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %{name}-autopilot.tar.bz2
-Source2:	%{name}.png
+Source2:        %{name}.png
 Patch0:         %{name}.dif
 Patch1:         %{name}-destdir.patch
 Patch2:         %{name}-overflow.patch
@@ -31,12 +31,12 @@ Authors:
 
 %prep
 %setup -qn %{name} -b0 -a1
-%patch0 -p0
-%patch1 -p1
-%patch2 -p1
-%patch3
-%patch4 -p1
-%patch5
+%patch 0 -p0
+%patch 1 -p1
+%patch 2 -p1
+%patch 3
+%patch 4 -p1
+%patch 5
 
 %build
 export RPM_OPT_FLAGS
@@ -48,9 +48,9 @@ export DESTDIR=$RPM_BUILD_ROOT
 make install
 pushd $RPM_BUILD_ROOT/usr/share/games/moon-lander
 for file in `ls -1d *`; do
-	if test "$file" != moon-lander.bin && test -f $file; then
-		rm $file
-	fi
+        if test "$file" != moon-lander.bin && test -f $file; then
+                rm $file
+        fi
 done
 popd
 
@@ -74,9 +74,6 @@ EOF
 #Icon
 %__mkdir_p %{buildroot}%{_datadir}/pixmaps
 install -m 0644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.txt

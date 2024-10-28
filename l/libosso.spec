@@ -46,7 +46,7 @@ This package contains the development files.
 
 %prep
 %setup -q
-%patch1 -p1  
+%patch 1 -p1  
 sed -i '137i static malloc_hook_t __malloc_hook = NULL;' src/osso-mem.c
 
 %build
@@ -60,9 +60,6 @@ make install DESTDIR=%{buildroot}
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README INSTALL ChangeLog COPYING

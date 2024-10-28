@@ -43,9 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 %__make DESTDIR=$RPM_BUILD_ROOT pure_install
 find $RPM_BUILD_ROOT -type f -name .packlist -exec rm -f {} ';'
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{perl_vendorlib}/*
 %{_mandir}/man3/*

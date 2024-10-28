@@ -16,9 +16,9 @@ rom set (pc88srl.zip).
 
 %prep
 %setup -q
-%patch0
-%patch1
-%patch2 -p1
+%patch 0
+%patch 1
+%patch 2 -p1
 sed -i 's|0,  1, -1,  0|0,  1, 255,  0|' src/fmgen/psg.cpp
 
 %build
@@ -30,9 +30,6 @@ make CFLAGS="$RPM_OPT_FLAGS -Wno-format-security"
 rm -rf $RPM_BUILD_ROOT
 install -D -m 755 quasi88.sdl $RPM_BUILD_ROOT%{_bindir}/quasi88
 install -m 755 tools/*88 $RPM_BUILD_ROOT%{_bindir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc document/* *.ini *.rc tools/*.txt

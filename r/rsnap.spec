@@ -24,9 +24,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}
 install -m 755 %{name} $RPM_BUILD_ROOT/%{_bindir}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE
 %{_bindir}/%{name}

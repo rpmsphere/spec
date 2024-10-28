@@ -36,9 +36,6 @@ install -m 644  pixmaps/* $RPM_BUILD_ROOT%{_datadir}/pixmaps/xsmbrowser/
 install -m 644  %{SOURCE1}  $RPM_BUILD_ROOT/etc/
 bunzip2 $RPM_BUILD_ROOT/etc/*.bz2
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc INSTALL
 %config(noreplace) %_sysconfdir/*

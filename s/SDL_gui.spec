@@ -30,7 +30,7 @@ Label, Picture, Panel, CardStack, TextEntry and ProgressBar.
 
 %prep
 %setup -q
-%patch0 -p1 -b .config.sub
+%patch 0 -p1 -b .config.sub
 
 %build
 export CFLAGS="$RPM_OPT_FLAGS"
@@ -42,9 +42,6 @@ make
 %install
 rm -rf %{buildroot}
 make install DESTDIR=%{buildroot}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README COPYING 

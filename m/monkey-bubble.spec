@@ -24,7 +24,7 @@ and features svg vector graphics for resolution independent display.
 
 %prep
 %setup -q
-%patch0 -p1 -z .help
+%patch 0 -p1 -z .help
 # replace the broken included splash.svg
 cp %{SOURCE1} pixmaps
 # adjust desktop, C-code for fdo icon dir and naming
@@ -61,9 +61,6 @@ mv ${RPM_BUILD_ROOT}%{_datadir}/pixmaps/%{name}-icon.png \
   ${RPM_BUILD_ROOT}/%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
 rmdir ${RPM_BUILD_ROOT}%{_datadir}/pixmaps
 
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 
 %pre

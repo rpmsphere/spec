@@ -40,13 +40,13 @@ at the appropriate place in the source window.
 %prep
 %define _default_patch_fuzz 2
 %setup -q -n ups-3.38-beta2
-%patch0 -p1 -b .cvs
-%patch1 -p1 -b .struct
-%patch2 -p1 -b .pisameas
-%patch6 -p1 -b .loclist
-%patch7 -p0 -b .solib
-%patch8 -p0 -b .threads
-%patch9 -p0 -b .dwarf
+%patch 0 -p1 -b .cvs
+%patch 1 -p1 -b .struct
+%patch 2 -p1 -b .pisameas
+%patch 6 -p1 -b .loclist
+%patch 7 -p0 -b .solib
+%patch 8 -p0 -b .threads
+%patch 9 -p0 -b .dwarf
 sed -i 's|_IO_2_1_\([a-z]*\)_|\1|g' ups/cx_libvars.h
 sed -i '226,231d' ups/ao_elfcore.c
 %ifarch aarch64
@@ -68,9 +68,6 @@ mkdir -p $RPM_BUILD_ROOT/%{_mandir}/man1
 install -m 644 ups/doc/ups.man $RPM_BUILD_ROOT/%{_mandir}/man1/ups.1
 mkdir -p $RPM_BUILD_ROOT/%{_datadir}/X11/app-defaults
 install -m 644 Ups $RPM_BUILD_ROOT/%{_datadir}/X11/app-defaults
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README* CHANGES BUGS FAQ

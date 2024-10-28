@@ -47,7 +47,7 @@ EOF
 - Rebuilt for Fedora
 * Wed Feb 26 2014 Michael Shigorin <mike@altlinux.org> 0.7-alt1
 - rebuilt for Sisyphus, thanks ogion@
-* Fri Feb 22 2010 Denis G. Samsonenko <d.g.samsonenko@gmail.com> 0.7-alt0.sdg1
+* Mon Feb 22 2010 Denis G. Samsonenko <d.g.samsonenko@gmail.com> 0.7-alt0.sdg1
 - build for ALTLinux
 * Fri Nov 30 2001 MIYAMOTO Ryo <rmiya@cc.hirosaki-u.ac.jp>
 - revised to version 0.7, changing in count.c

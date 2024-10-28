@@ -44,7 +44,7 @@ mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
 %{_datadir}/%{name}
 
 %files devel
-%{_docdir}/%{name}
+#{_docdir}/%{name}
 %{_includedir}/%{name}*.h
 %{_libdir}/lib%{name}*.so
 %{_libdir}/pkgconfig/lib%{name}*.pc

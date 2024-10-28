@@ -41,9 +41,6 @@ cp -a %{SOURCE1} %{buildroot}%{_datadir}/emacs/site-lisp/chuck.el
 mkdir -p %{buildroot}%{_libdir}/xemacs/site-packages/lisp/chuck/
 cp -a %{SOURCE1} %{buildroot}%{_libdir}/xemacs/site-packages/lisp/chuck/chuck.el
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS COPYING DEVELOPER PROGRAMMER QUICKSTART README 
 %doc THANKS TODO VERSIONS examples

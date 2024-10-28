@@ -1,10 +1,10 @@
-Summary:	A very small C interpreter
-Name:		picoc
-Version:	2.2
-Release:	2.1
-License:	New BSD
-Group:		Development/C
-URL:		https://github.com/zsaleeba/picoc
+Summary:        A very small C interpreter
+Name:           picoc
+Version:        2.2
+Release:        2.1
+License:        New BSD
+Group:          Development/C
+URL:            https://github.com/zsaleeba/picoc
 Source0:    %{name}-master.zip
 BuildRequires: readline-devel
 
@@ -23,9 +23,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README

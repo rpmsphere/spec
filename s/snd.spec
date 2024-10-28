@@ -1,38 +1,38 @@
-Name:		snd
-Version:	24.3
-Release:	1
-Summary:	Sound file editor
-License:	BSD
-Group:		Sound/Editors and Converters
-URL:		https://ccrma.stanford.edu/software/snd/
-Source0:	ftp://ccrma-ftp.stanford.edu/pub/Lisp/%{name}-%{version}.tar.gz
-Source1:	%{name}.desktop
+Name:           snd
+Version:        24.3
+Release:        1
+Summary:        Sound file editor
+License:        BSD
+Group:          Sound/Editors and Converters
+URL:            https://ccrma.stanford.edu/software/snd/
+Source0:        ftp://ccrma-ftp.stanford.edu/pub/Lisp/%{name}-%{version}.tar.gz
+Source1:        %{name}.desktop
 # Math
-BuildRequires:	gmp-devel
-BuildRequires:	pkgconfig(fftw3)
+BuildRequires:  gmp-devel
+BuildRequires:  pkgconfig(fftw3)
 BuildRequires:  libmpc-devel
 # Output audio
-BuildRequires:	ladspa-devel
-BuildRequires:	pkgconfig(alsa)
-BuildRequires:	pkgconfig(libpulse)
-BuildRequires:	pkgconfig(jack)
-#BuildRequires:	pkgconfig(portaudio-2.0)
-BuildRequires:	pkgconfig(samplerate)
+BuildRequires:  ladspa-devel
+BuildRequires:  pkgconfig(alsa)
+BuildRequires:  pkgconfig(libpulse)
+BuildRequires:  pkgconfig(jack)
+#BuildRequires: pkgconfig(portaudio-2.0)
+BuildRequires:  pkgconfig(samplerate)
 # GUI stuff
-BuildRequires:	pkgconfig(cairo)
-BuildRequires:	pkgconfig(gl)
-BuildRequires:	pkgconfig(glu)
-BuildRequires:	pkgconfig(gsl) >= 1.0
-#BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:  pkgconfig(cairo)
+BuildRequires:  pkgconfig(gl)
+BuildRequires:  pkgconfig(glu)
+BuildRequires:  pkgconfig(gsl) >= 1.0
+#BuildRequires: pkgconfig(gtk+-3.0)
 # Encoders & Co.
-Requires:	flac
-Requires:	mpg123
-#Requires:	mpg321
-Requires:	speex
-Requires:	timidity++
-#Requires:	ttaenc
-Requires:	vorbis-tools
-Requires:	wavpack
+Requires:       flac
+Requires:       mpg123
+#Requires:      mpg321
+Requires:       speex
+Requires:       timidity++
+#Requires:      ttaenc
+Requires:       vorbis-tools
+Requires:       wavpack
 
 %description
 Snd is a free sound editor modelled loosely after Emacs and an old,
@@ -53,15 +53,15 @@ chmod 0644 s7.c
 
 %build
 %configure \
-	--with-gsl \
-	--with-gmp \
-	--with-fftw \
-	--with-alsa \
-	--without-pulseaudio \
-	--without-portaudio \
-	--with-jack \
-	--with-ladspa \
-	--without-gui
+        --with-gsl \
+        --with-gmp \
+        --with-fftw \
+        --with-alsa \
+        --without-pulseaudio \
+        --without-portaudio \
+        --with-jack \
+        --with-ladspa \
+        --without-gui
 
 %make_build
 

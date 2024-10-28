@@ -51,9 +51,6 @@ sed -i 's|-Wall|-Wall -fPIC|' Makefile */Makefile
 %{__mkdir_p} $RPM_BUILD_ROOT%{_sysconfdir}/%{name}/themes
 %{__cp} -a %{themepack}/[a-z]* $RPM_BUILD_ROOT%{_datadir}/%{name}/themes/
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README INSTALL COPYING TODO AUTHORS NEWS ChangeLog doc
 %dir %{_sysconfdir}/%{name}

@@ -39,9 +39,6 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/syncwall
 sed -i 's|%{buildroot}||' %{buildroot}%{_datadir}/applications/%{name}.desktop
 sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %doc *.txt
 %{_bindir}/*

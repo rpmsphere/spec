@@ -9,7 +9,7 @@ Group:          Amusements/Graphics
 License:        GPLv2 
 URL:            https://www.becrux.com/index.php?page=projects&name=wally
 Source0:        https://www.becrux.com/pages/projects/wally/wally-2.4.1.tar.gz
-Source1:	wally.desktop
+Source1:        wally.desktop
 BuildRequires:  qt4-devel libexif-devel cmake gcc gcc-c++ desktop-file-utils
 
 %description
@@ -39,9 +39,9 @@ cd ..
 echo `pwd`
 mkdir -p %{buildroot}%{_datadir}/applications
 desktop-file-install --vendor="" \
-	--dir=%{buildroot}%{_datadir}/applications/   \
-	--add-category Utility \
-	%{SOURCE1}
+        --dir=%{buildroot}%{_datadir}/applications/   \
+        --add-category Utility \
+        %{SOURCE1}
 %{__mkdir_p} $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/32x32/apps
 %{__cp} res/images/wally.png \
         $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/32x32/apps/wally.png
@@ -60,9 +60,6 @@ if [ -x %{_bindir}/gtk-update-icon-cache ]; then
 fi
 update-desktop-database &> /dev/null || :
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog COPYING DISCLAIMER INSTALL LICENSE NEWS README README.shortcuts README.XFCE4 TODO
 %{_bindir}/%{name}
@@ -78,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.1
 - Rebuilt for Fedora
 * Sat Oct 23 2010 - Sandrine Soudant <sandrine.soudant at gmail.com> - 2.4.1-1
- - Build RPM package for Wally 2.4.1	
+ - Build RPM package for Wally 2.4.1    
 * Sat Aug 28 2010 - Sandrine Soudant <sandrine.soudant at gmail.com> - 2.4.0-1
  - Build RPM package for Wally 2.4.0
 * Fri Aug 13 2010 - Sandrine Soudant <sandrine.soudant at gmail.com> - 2.3.2-1

@@ -43,22 +43,22 @@ Authors:
 
 %prep
 %setup -q
-%patch0 -p1 -b .temp
-%patch10 -p 1 -b .goosizet
-%patch1
-%patch2
+%patch 0 -p1 -b .temp
+%patch 10 -p 1 -b .goosizet
+%patch 1
+%patch 2
 cd xpdf
-%patch12 -p 2 -b .underflow
-%patch13 -p1
-%patch14 -p 0 -b .decrypt
+%patch 12 -p 2 -b .underflow
+%patch 13 -p1
+%patch 14 -p 0 -b .decrypt
 cd ..
-%patch15 
-%patch16
-%patch17
-%patch18 -p1
-%patch19
-%patch20
-%patch21
+%patch 15 
+%patch 16
+%patch 17
+%patch 18 -p1
+%patch 19
+%patch 20
+%patch 21
 
 %build
 #CFLAGS=$RPM_OPT_FLAGS \
@@ -72,9 +72,6 @@ rm -fr $RPM_BUILD_ROOT
 %{INSTALL} -Dm755 pdftohtml $RPM_BUILD_ROOT/usr/bin/pdf2html
 # make install prefix=$RPM_BUILD_ROOT/usr
 # make install.man
-
-%clean
-rm -fr $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS BUGS COPYING CHANGES README

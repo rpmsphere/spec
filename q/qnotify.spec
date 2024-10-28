@@ -54,8 +54,8 @@ Authors:
 
 %prep
 %setup -q
-%patch1
-%patch2 -p1
+%patch 1
+%patch 2 -p1
 
 %build
 autoreconf -fiv
@@ -66,9 +66,6 @@ autoreconf -fiv
 make DESTDIR=$RPM_BUILD_ROOT install
 sed -e "s,$RPM_BUILD_DIR,/," $RPM_BUILD_ROOT%{_libdir}/libqnotify.la > $RPM_BUILD_ROOT%{_libdir}/libqnotify.la.1
 mv $RPM_BUILD_ROOT%{_libdir}/libqnotify.la.1 $RPM_BUILD_ROOT%{_libdir}/libqnotify.la
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/bin/qnotify

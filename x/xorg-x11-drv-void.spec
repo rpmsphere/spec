@@ -8,7 +8,7 @@ Group: System/X11
 URL: https://xorg.freedesktop.org
 BuildRequires: xorg-x11-server-devel
 Source: xorg-drv-void-%version.tar
-Patch: xorg-drv-void-%version-alt2.patch
+Patch0: xorg-drv-void-%version-alt2.patch
 
 %description
 void is an dummy/null Xorg input driver.  It doesn't connect
@@ -19,14 +19,14 @@ server to operate without a core pointer and/or core keyboard.
 
 %prep
 %setup -q -n xorg-drv-void-%version
-%patch -p1
+%patch 0 -p1
 cp -f /usr/bin/libtool .
 
 %build
 autoreconf -ifv
 %configure \
-	--with-xorg-module-dir=%{_libdir}/xorg/modules \
-	--disable-static
+        --with-xorg-module-dir=%{_libdir}/xorg/modules \
+        --disable-static
 
 %make_build
 

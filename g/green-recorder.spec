@@ -29,6 +29,7 @@ window. And a lot more.
 
 %prep
 %setup -q -n %{name}-master
+sed -i '22i py_modules=[],' setup.py
 
 %build
 %py3_build
@@ -47,5 +48,5 @@ window. And a lot more.
 %changelog
 * Thu Aug 27 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.3
 - Rebuilt for Fedora
-* Thu Mar 12 2019 secureworkstation - 3.2.2
+* Tue Mar 12 2019 secureworkstation - 3.2.2
 - Rebase to damianmoore's GitHub branch which builds with Python 3

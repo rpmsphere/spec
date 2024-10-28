@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Name:			extend-disc-image
-Version:		0.0.6
-Summary:		Expand a VirtualBox disc image
-License:		GPLv2
-URL:			https://www.davjam.org/~davjam/linux/expand-disc-image/
-Group:			Productivity/File utilities
-Release:		5.1
-Source:			%{name}-%{version}.tar.gz
+Name:                   extend-disc-image
+Version:                0.0.6
+Summary:                Expand a VirtualBox disc image
+License:                GPLv2
+URL:                    https://www.davjam.org/~davjam/linux/expand-disc-image/
+Group:                  Productivity/File utilities
+Release:                5.1
+Source:                 %{name}-%{version}.tar.gz
 
 %description
 Clones a VirtualBox disc image (VDI), expanding it by a specified number of
@@ -32,9 +32,6 @@ install -m755 %{name} $RPM_BUILD_ROOT%{_bindir}
 %files
 %{_bindir}/%{name}
 %doc README COPYING
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.6

@@ -24,7 +24,7 @@ has be reinplemented by ASM codes for efficiency.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 %ifarch x86_64
 sed -i -e 's|\(\s[a-z]*\)l\(\s\)|\1q\2|' -e 's|%e\([a-z][a-z]\)|%r\1|g' drawtext.S scroll.S
 %endif
@@ -39,25 +39,22 @@ rm -rf $RPM_BUILD_ROOT
 #install -D -m 644 termcap $RPM_BUILD_ROOT/etc/chdrv/termcapG
 #install -m 644 multitab $RPM_BUILD_ROOT/etc/chdrv
 install -d $RPM_BUILD_ROOT/usr/share/chdrv
-tar xf $RPM_SOURCE_DIR/chdrvfont.tgz -C $RPM_BUILD_ROOT/usr/share/chdrv
+tar xf %{SOURCE1} -C $RPM_BUILD_ROOT/usr/share/chdrv
 touch $RPM_BUILD_ROOT/usr/share/chdrv/config
 install -d $RPM_BUILD_ROOT/etc/chdrv
-install -m 644 $RPM_SOURCE_DIR/chinese.conf.jyj $RPM_BUILD_ROOT/etc/chdrv/chinese.conf
-install -m 644 $RPM_SOURCE_DIR/gbchdrv.conf.jyj $RPM_BUILD_ROOT/etc/chdrv/gbchdrv.conf
+install -m 644 %{SOURCE7} $RPM_BUILD_ROOT/etc/chdrv/chinese.conf
+install -m 644 %{SOURCE8} $RPM_BUILD_ROOT/etc/chdrv/gbchdrv.conf
 make CHBIN=/usr/bin CHSYS=/usr/share/chdrv/ DESTDIR=$RPM_BUILD_ROOT install
 mv $RPM_BUILD_ROOT/usr/bin/chdrv $RPM_BUILD_ROOT/usr/bin/chdrv.bin
-install -m 755 $RPM_SOURCE_DIR/chdrv.sh $RPM_BUILD_ROOT/usr/bin/chdrv
-install -m 755 $RPM_SOURCE_DIR/gbchdrv.sh $RPM_BUILD_ROOT/usr/bin/gbchdrv
-install -m 755 $RPM_SOURCE_DIR/chconfig.jyj $RPM_BUILD_ROOT/usr/bin/chconfig
-install -m 755 $RPM_SOURCE_DIR/gbconfig.jyj $RPM_BUILD_ROOT/usr/bin/gbconfig
+install -m 755 %{SOURCE5} $RPM_BUILD_ROOT/usr/bin/chdrv
+install -m 755 %{SOURCE6} $RPM_BUILD_ROOT/usr/bin/gbchdrv
+install -m 755 %{SOURCE3} $RPM_BUILD_ROOT/usr/bin/chconfig
+install -m 755 %{SOURCE4} $RPM_BUILD_ROOT/usr/bin/gbconfig
 
 %postun
 if [ -f /etc/chdrv/sethbffont ] then ;
-	rm -f /etc/chdrv/sethbffont
+        rm -f /etc/chdrv/sethbffont
 fi
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %doc ANNOUNCE HBF-SUPPORT INSTALL.1.0 MANUAL.DOC NEWS PORTABLE.DOC PROBLEM README TODO chdrv.FAQ 

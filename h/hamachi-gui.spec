@@ -26,8 +26,8 @@ Authors:
 
 %prep
 %setup -q
-%patch0
-%patch1 -p1
+%patch 0
+%patch 1 -p1
 
 %build
 CFLAGS="%{optflags} -g -lX11" CXXFLAGS="%{optflags} -g -lX11" \
@@ -39,9 +39,6 @@ CFLAGS="%{optflags} -g -lX11" CXXFLAGS="%{optflags} -g -lX11" \
 %makeinstall
 %__mv "$RPM_BUILD_ROOT%{_datadir}/locale"/{no,nb_NO}
 %find_lang "%{name}"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files -f "%{name}.lang"
 %doc AUTHORS ChangeLog COPYING NEWS README

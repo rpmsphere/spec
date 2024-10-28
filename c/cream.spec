@@ -1,14 +1,14 @@
-Name: 	 	cream
-Summary: 	User-friendly face for Vim
-Version: 	0.43
-Release: 	6.1
-Source:		%{name}-%{version}.tar.gz
-URL:		https://cream.sourceforge.net/
-License:	GPL
-Group:		Editors
+Name:           cream
+Summary:        User-friendly face for Vim
+Version:        0.43
+Release:        6.1
+Source:         %{name}-%{version}.tar.gz
+URL:            https://cream.sourceforge.net/
+License:        GPL
+Group:          Editors
 BuildRequires:  desktop-file-utils
-Requires:	vim-X11
-BuildArch:	noarch
+Requires:       vim-X11
+BuildArch:      noarch
 
 %description
 Cream is a modeless GUIification of Vim.  Cream includes all the features of
@@ -60,9 +60,6 @@ desktop-file-install --vendor="" \
   --dir $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/applications/*
 
 install -Dm644 %{name}.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

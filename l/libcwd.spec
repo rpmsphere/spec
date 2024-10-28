@@ -1,17 +1,17 @@
 %undefine _missing_build_ids_terminate_build
 
-Name:			libcwd
-Version:		1.1.2
-Release:		1
-Summary:		Debugging Library for C++
-Source:			https://prdownloads.sourceforge.net/libcwd/libcwd-%{version}.tar.gz
-URL:			https://libcwd.sourceforge.net
-Group:			System/Libraries
-License:		Q Public License (QPL)
-BuildRequires:	gcc-c++ libstdc++-devel make glibc-devel procps
-BuildRequires:	autoconf automake libtool
-Requires:		libcwd-config >= %{version}
-Requires:		/bin/ps
+Name:                   libcwd
+Version:                1.1.2
+Release:                1
+Summary:                Debugging Library for C++
+Source:                 https://prdownloads.sourceforge.net/libcwd/libcwd-%{version}.tar.gz
+URL:                    https://libcwd.sourceforge.net
+Group:                  System/Libraries
+License:                Q Public License (QPL)
+BuildRequires:  gcc-c++ libstdc++-devel make glibc-devel procps
+BuildRequires:  autoconf automake libtool
+Requires:               libcwd-config >= %{version}
+Requires:               /bin/ps
 
 %description
 Libcwd is a thread-safe, full-featured debugging support library for C++
@@ -25,9 +25,9 @@ Authors:
     Carlo Wood <carlo@alinoe.com>
 
 %package config
-Summary:		Configuration for the libcwd Debugging Library for C++
-Group:			System/Libraries
-Requires:		%{name} = %{version}-%{release}
+Summary:                Configuration for the libcwd Debugging Library for C++
+Group:                  System/Libraries
+Requires:               %{name} = %{version}-%{release}
 
 %description config
 Libcwd is a thread-safe, full-featured debugging support library for C++
@@ -44,10 +44,10 @@ Authors:
     Carlo Wood <carlo@alinoe.com>
 
 %package devel
-Summary:		Development Environment for the libcwd Debugging Library for C++
-Group:			Development/Libraries/C and C++
-Requires:		%{name} = %{version}-%{release}
-Requires:		libstdc++-devel
+Summary:                Development Environment for the libcwd Debugging Library for C++
+Group:                  Development/Libraries/C and C++
+Requires:               %{name} = %{version}-%{release}
+Requires:               libstdc++-devel
 
 %description devel
 Libcwd is a thread-safe, full-featured debugging support library for C++
@@ -76,9 +76,6 @@ make
 %install
 rm -rf "$RPM_BUILD_ROOT"
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc LICENSE.QPL NEWS README*

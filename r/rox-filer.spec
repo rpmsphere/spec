@@ -6,7 +6,7 @@ Release: 1
 Summary: ROX desktop enviroment
 License: GNU GPL
 Group: Graphical desktop/Other
-Url: https://rox.sourceforge.net/
+URL: https://rox.sourceforge.net/
 Source: https://prdownloads.sourceforge.net/%{name}/%{name}-%version.tar.bz2
 Source1: rox-startup.sh
 Source2: rox-filer.desktop
@@ -24,13 +24,13 @@ It is an attempt to bring some of the good features from RISC OS to Unix and Lin
 
 %prep
 %setup -q
-#%patch0 -p1
+#%patch 0 -p1
 sed -i 's|"%s/Messages", app_dir|"/usr/share/locale"|' ROX-Filer/src/i18n.c
-%patch1 -p1
-#%%patch2 -p1
-%patch3 -p1
-#%%patch50 -p1
-#%%patch51 -p1
+%patch 1 -p1
+#%%patch 2 -p1
+%patch 3 -p1
+#%%patch 50 -p1
+#%%patch 51 -p1
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
@@ -96,9 +96,6 @@ cd ../src/po
 %_datadir/locale/*/LC_MESSAGES/ROX-Filer.mo
 %_datadir/applications/%{name}.desktop
 %_mandir/man1/*
-
-%clean
-%__rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.11

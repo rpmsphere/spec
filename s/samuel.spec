@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
-Name:		samuel
-Version:	0.1.9git
-Release:	1
-Summary:	A Draughts Program
-Group:		Games/Boards
-License:	GPLv3+
-URL:		https://www.johncheetham.com/projects/samuel/
-Source:		%{name}-master.zip
-BuildRequires:	python3-devel
+Name:           samuel
+Version:        0.1.9git
+Release:        1
+Summary:        A Draughts Program
+Group:          Games/Boards
+License:        GPLv3+
+URL:            https://www.johncheetham.com/projects/samuel/
+Source:         %{name}-master.zip
+BuildRequires:  python3-devel
 Requires:       python3-gobject
-Requires:	pygtk2
+Requires:       pygtk2
 
 %description
 A Draughts program for Linux written in Python, GTK, C++.
@@ -27,9 +27,6 @@ python3 setup.py install --root %{buildroot}
 rm -rf %{buildroot}%{_datadir}/doc/%{name}-*
 
 sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE README.rst

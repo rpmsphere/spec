@@ -34,9 +34,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %__rm "$RPM_BUILD_ROOT%{_libdir}/userinfo"/*.la
 %__install -m 0755 contrib/kill.so "$RPM_BUILD_ROOT%{_libdir}/userinfo/"
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc ChangeLog KnownBugs NEWS README doc/README.modules doc/uirc
 %doc contrib/lastusers.sh

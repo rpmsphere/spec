@@ -24,9 +24,6 @@ python2 setup.py build
 %install
 python2 setup.py install --root=$RPM_BUILD_ROOT --prefix=/usr
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README COPYING ChangeLog TODO testsuite
 %{python2_sitelib}/*

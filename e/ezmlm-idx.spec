@@ -167,9 +167,6 @@ echo 'where "iso" is the ISO language designation.'
 echo For currently supported languages, see the INSTALL
 echo file, section 7.
 
-%clean
-/bin/rm -rf %buildroot
-
 %files -f man-list
 %dir %rcdir
 %config(noreplace) %rcdir/*

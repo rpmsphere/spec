@@ -9,8 +9,8 @@ License:        BSD-3-Clause
 Group:          Development/Libraries/Other
 URL:            https://sourceforge.net/projects/sampleicc/
 BuildRequires:  doxygen gcc-c++ gettext graphviz libjpeg-devel libpng-devel libtiff-devel libxml2-devel pkgconfig
-BuildRequires:	netpbm
-BuildRequires:	ghostscript-core
+BuildRequires:  netpbm
+BuildRequires:  ghostscript-core
 
 %package -n lib%{name}
 Summary:        Colour Management System Libraries

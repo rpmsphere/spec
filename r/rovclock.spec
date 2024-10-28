@@ -39,9 +39,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_bindir}
 cp -a %{name} %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files 
 %doc ChangeLog COPYING README 
 %attr(0755,root,root) %{_bindir}/%{name}

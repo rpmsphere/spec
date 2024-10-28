@@ -62,7 +62,7 @@ pushd build
             -DLIB_SUFFIX="" \
             %endif
 
-	make
+        make
 popd
 
 cat > %name.desktop << EOF
@@ -82,7 +82,7 @@ done
 
 %install
 pushd build
-	%makeinstall DESTDIR=%buildroot
+        %makeinstall DESTDIR=%buildroot
 popd
 
 # icon

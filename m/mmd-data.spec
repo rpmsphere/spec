@@ -25,9 +25,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/%{_name}
 cp -a * $RPM_BUILD_ROOT%{_datadir}/%{_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/%{_name}
 

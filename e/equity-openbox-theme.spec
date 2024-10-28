@@ -10,7 +10,7 @@ URL:            https://dysphorian.deviantart.com/art/Equity-Openbox-478991252
 Source0:        equity_openbox_by_dysphorian-d7x6g0k.7z
 BuildArch:      noarch      
 BuildRequires:  p7zip
-Requires:	    openbox
+Requires:           openbox
 
 %description
 Needed openbox to go with equinox gtk. Didn't find anything so quickly made this

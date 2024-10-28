@@ -8,7 +8,7 @@ License:   GPL
 URL:       https://tvision.sf.net/
 Group:     System Environment/Libraries
 Source:    https://jaist.dl.sourceforge.net/project/tvision/UNIX/2.2.1%20CVS20161117/rhtvision_2.2.1-4.tar.gz
-Patch:     tvision.patch
+Patch0:     tvision.patch
 BuildRequires: gcc-c++
 
 %description 
@@ -41,7 +41,7 @@ GPL license.
 
 %prep
 %setup -q -n tvision
-%patch -p1
+%patch 0 -p1
 sed -i '1i #include <cstdio>' classes/ipstream.cc include/tv/textdev.h
 sed -i '1i #include <cstdlib>' classes/tdesktop.cc
 sed -i '1i #include <cmath>' classes/tdesktop.cc classes/tdisplay.cc
@@ -63,9 +63,6 @@ make prefix=$RPM_BUILD_ROOT/usr libdir=$RPM_BUILD_ROOT%{_libdir} install
 cd $RPM_BUILD_ROOT%{_libdir}
 chmod 755 *
 ln -s librhtv.so.%{version} librhtv.so.2
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -p /sbin/ldconfig
 

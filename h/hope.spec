@@ -36,9 +36,6 @@ install -m644 lib/*.hop %{buildroot}%{_datadir}/%{name}/lib
 sed -f lib/list.sed lib/Standard.hop > %{buildroot}%{_datadir}/%{name}/lib.new/Standard.hop
 install -m644 src/%{name}.1 %{buildroot}%{_mandir}/man1
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc COPYING LICENSE README*
 %{_bindir}/%{name}

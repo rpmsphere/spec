@@ -16,8 +16,8 @@ Requires:       python-argparse
 Requires:       python-paramiko
 Requires:       python-py
 Requires:       python-virtualenv
-Requires:	python-setuptools
-BuildRequires:	python-setuptools
+Requires:       python-setuptools
+BuildRequires:  python-setuptools
 BuildArch:      noarch
 
 %description

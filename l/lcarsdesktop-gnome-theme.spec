@@ -30,9 +30,6 @@ cp -R * $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/themes/LCARS-Desktop/scripts_and_configs/setbg-gnome.py
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 %{_datadir}/gdm/themes/%{theme_name}

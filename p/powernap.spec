@@ -120,9 +120,6 @@ popd
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_sbindir}/* %{buildroot}%{python2_sitelib}/%{name}/%{name}.py
 
 # To clean up any files that are not part of the application's normal build area
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -n powernap
 /usr/sbin/powernap
 /usr/sbin/powernapd

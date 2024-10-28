@@ -16,8 +16,8 @@ Panel manager for Matchbox WM.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %build
 %configure LIBS=-lX11
@@ -26,9 +26,6 @@ make
 %install
 rm -rf %buildroot
 make DESTDIR=%buildroot install
-
-%clean
-rm -rf %buildroot
 
 %files
 %{_bindir}/matchbox-panel-manager

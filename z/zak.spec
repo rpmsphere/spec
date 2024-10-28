@@ -9,12 +9,12 @@ Group: Applications/Multimedia
 BuildArch: noarch
 URL: https://code.google.com/p/zak/
 BuildRequires:  python2
-Requires:	gstreamer
-Requires:	python2-gstreamer
-Requires:	pygtk2
-Requires:	madplay
-Requires:	ffmpeg
-Requires:	vte
+Requires:       gstreamer
+Requires:       python2-gstreamer
+Requires:       pygtk2
+Requires:       madplay
+Requires:       ffmpeg
+Requires:       vte
 
 %description
 Zak allows you to select one or more MP3 files and convert them into a
@@ -33,9 +33,6 @@ python2 setup.py build
 python2 setup.py install --root=$RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{python2_sitelib}/zak*

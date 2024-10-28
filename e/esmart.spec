@@ -1,27 +1,27 @@
-Name:		esmart
-Version:	0.9.0.050
-Release:	1
-Summary:	Esmart is Evas "smart objects"
-Group:		User Interface/X
-License:	BSD
-URL:		https://www.enlightenment.org/pages/efl.html
-Source:		%{name}-%{version}.tar.gz
-BuildRequires:	libtool-ltdl-devel, evas-devel, ecore-devel
-BuildRequires:	imlib2-devel, edje-devel, embryo-devel
-BuildRequires:	libpng-devel, SDL-devel, libXcursor-devel
-BuildRequires:	libXdamage-devel, libXcomposite-devel, libXinerama-devel
-BuildRequires:	libXp-devel, libXScrnSaver-devel, fontconfig-devel
-BuildRequires:	eet-devel, libjpeg-devel, openssl-devel, curl-devel
-BuildRequires:	libeina-devel, libXtst-devel, gnutls-devel
+Name:           esmart
+Version:        0.9.0.050
+Release:        1
+Summary:        Esmart is Evas "smart objects"
+Group:          User Interface/X
+License:        BSD
+URL:            https://www.enlightenment.org/pages/efl.html
+Source:         %{name}-%{version}.tar.gz
+BuildRequires:  libtool-ltdl-devel, evas-devel, ecore-devel
+BuildRequires:  imlib2-devel, edje-devel, embryo-devel
+BuildRequires:  libpng-devel, SDL-devel, libXcursor-devel
+BuildRequires:  libXdamage-devel, libXcomposite-devel, libXinerama-devel
+BuildRequires:  libXp-devel, libXScrnSaver-devel, fontconfig-devel
+BuildRequires:  eet-devel, libjpeg-devel, openssl-devel, curl-devel
+BuildRequires:  libeina-devel, libXtst-devel, gnutls-devel
 
 %description
 Esmart contains "smart" pre-built evas objects. It currently includes
 a thumbnail generator and a horizontal/vertical container.
 
 %package devel
-Summary: 	Evas "smart objects" headers and development libraries.
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+Summary:        Evas "smart objects" headers and development libraries.
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 Evas "smart objects" development headers and libraries.
@@ -40,9 +40,6 @@ make %{?_smp_mflags}
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT INSTALL='install -p'
 find $RPM_BUILD_ROOT -name '*.la' -delete
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -p /sbin/ldconfig
 

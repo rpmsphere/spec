@@ -4,7 +4,7 @@ Name:           openark-kit
 Version:        170
 Release:        3.1
 Source0:        %{name}-%{version}.tar.bz2
-Patch:          %{name}-%{version}-socketpath.patch
+Patch0:          %{name}-%{version}-socketpath.patch
 License:        BSD
 BuildArch:      noarch
 Group:          Productivity/Databases/Tools
@@ -17,7 +17,7 @@ The openark kit provides common utilities to administer, diagnose and audit MySQ
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 
 %build
 %{__python} setup.py build
@@ -28,9 +28,6 @@ rm -rf $RPM_BUILD_ROOT
 python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT %__record_arg %{name}.files --install-data %{_datadir}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.files
 %doc INSTALL README

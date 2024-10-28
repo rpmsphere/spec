@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/devanagari-unicode
+%define fontdir %{_datadir}/fonts/devanagari-unicode
 
 Name:           devanagari-unicode-fonts
 Version:        1

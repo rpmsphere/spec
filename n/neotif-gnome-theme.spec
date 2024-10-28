@@ -40,9 +40,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes
 cp -a %{theme_name} $RPM_BUILD_ROOT%{_datadir}/themes
 install -Dm644 %{SOURCE4} %{buildroot}%{_datadir}/themes/LighthouseBlue/index.theme
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 %{_datadir}/themes/LighthouseBlue/index.theme

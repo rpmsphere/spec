@@ -41,9 +41,6 @@ cp -a Umka.sublime-syntax %{buildroot}%{_datadir}/%{name}
 %{_includedir}/%{name}_api.h
 %{_datadir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2
 - Rebuilt for Fedora

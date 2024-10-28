@@ -25,9 +25,6 @@ rm -rf $RPM_BUILD_ROOT
 python2 setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
 find $RPM_BUILD_ROOT -name ._* -exec rm -f {} \;
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE
 %{python2_sitelib}/simplesettings/

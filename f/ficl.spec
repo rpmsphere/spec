@@ -50,9 +50,6 @@ do
    install -m 0644 $f ${RPM_BUILD_ROOT}%{_includedir}/ficl
 done
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc doc ReadMe.txt
 %{_bindir}/*

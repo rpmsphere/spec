@@ -4,7 +4,7 @@
 Name:           %{_name}-fonts
 Version:        1.002
 Release:        1
-Summary:	An open source Chinese font derived from Klee One (Fontworks)
+Summary:        An open source Chinese font derived from Klee One (Fontworks)
 Source0:        https://github.com/ButTaiwan/iansui/archive/refs/tags/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
 License:        OFL-1.1
 Group:          System/X11/Fonts

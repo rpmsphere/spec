@@ -9,8 +9,8 @@ BuildRequires:  pam-devel
 BuildRequires:  uif2iso
 Group:          Productivity/Networking/Other
 Summary:        Reimplementation of rsh and rlogin
-Patch:		rsh-redone_83-1.diff.bz2
-Source0:	%{name}-%{version}.tar.bz2
+Patch0:         rsh-redone_83-1.diff.bz2
+Source0:        %{name}-%{version}.tar.bz2
 
 %description
 Rsh-redone is a reimplementation of the remote shell clients and servers.
@@ -20,7 +20,7 @@ clients and servers. It also fully supports IPv6.
 %package client
 Group:          Productivity/Networking/Other
 Summary:        Reimplementation of rsh and rlogin
-Conflicts:		rsh
+Conflicts:              rsh
 
 %description client
 rsh-redone is a reimplementation of the remote shell clients and servers.
@@ -43,7 +43,7 @@ This package provides rshd and rlogind
 
 %prep
 %setup -q
-%patch -p1
+%patch 0 -p1
 
 %build
 make
@@ -52,9 +52,6 @@ make
 rm -rf "$RPM_BUILD_ROOT"
 %make_install
 mv %{buildroot}/usr/etc %{buildroot}/etc
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files client
 %{_bindir}/rlogin

@@ -18,7 +18,7 @@ Beaver very suitable for old computers and use in small Linux distributions.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 sed -i 's|inline void refresh_markers|void refresh_markers|' src/editor.c
 
 %build

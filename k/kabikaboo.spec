@@ -43,9 +43,6 @@ sed -i 's|^python |python2 |' $RPM_BUILD_ROOT%{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_mandir}/man1/%{name}.1.*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Nov 04 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.7
 - Rebuilt for Fedora

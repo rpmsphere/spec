@@ -1,19 +1,19 @@
-Name:			digger
-Version:		20020314
-Release:		1
-Summary:		The Unix version of the old classic game Digger
-Summary(zh_TW):	經典遊戲 Digger 的 Unix 版本
-Group:			Amusements/Games
-License:		GPL
-URL:			https://www.digger.org/
-Source0:		%{name}-%{version}.tar.gz
-Source11:		%{name}-16x16.png
-Source12:		%{name}-32x32.png
-Source13:		%{name}-48x48.png
-Patch0:			%{name}-optflags.patch
-Patch1:			%{name}-fix_gcc_3.patch
-Patch2:			%{name}-%{version}-update-%{name}.txt-with-legal-info.patch
-BuildRequires:	SDL-devel, zlib-devel
+Name:                   digger
+Version:                20020314
+Release:                1
+Summary:                The Unix version of the old classic game Digger
+Summary(zh_TW): 經典遊戲 Digger 的 Unix 版本
+Group:                  Amusements/Games
+License:                GPL
+URL:                    https://www.digger.org/
+Source0:                %{name}-%{version}.tar.gz
+Source11:               %{name}-16x16.png
+Source12:               %{name}-32x32.png
+Source13:               %{name}-48x48.png
+Patch0:                 %{name}-optflags.patch
+Patch1:                 %{name}-fix_gcc_3.patch
+Patch2:                 %{name}-%{version}-update-%{name}.txt-with-legal-info.patch
+BuildRequires:  SDL-devel, zlib-devel
 
 %description
 This is the Unix version of the old classic game Digger.
@@ -39,9 +39,9 @@ It has many new features including:
 
 %prep
 %setup -q
-%patch0 -p0 -b .optflag
-%patch1 -p0 -b .gcc3
-%patch2 -p1 -b .legal
+%patch 0 -p0 -b .optflag
+%patch 1 -p0 -b .gcc3
+%patch 2 -p1 -b .legal
 
 %build
 make -f Makefile.sdl OPTFLAGS="$RPM_OPT_FLAGS"
@@ -70,9 +70,6 @@ EOF
 install -m644 %{SOURCE11} -D $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 install -m644 %{SOURCE12} -D $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}-32x32.png
 install -m644 %{SOURCE13} -D $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}-48x48.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

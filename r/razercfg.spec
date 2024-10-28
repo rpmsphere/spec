@@ -12,7 +12,7 @@ Source1:        razercfg.appdata.xml
 BuildRequires:  cmake >= 2.4
 BuildRequires:  help2man
 BuildRequires:  hicolor-icon-theme
-BuildRequires:  libusb-devel
+BuildRequires:  libusb-compat-0.1-devel
 BuildRequires:  libappstream-glib
 BuildRequires:  python3-qt4
 BuildRequires:  pkgconfig(libusb-1.0)

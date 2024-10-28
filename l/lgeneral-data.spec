@@ -22,9 +22,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p %{buildroot}%{_datadir}/lgeneral
 cp -a * %{buildroot}%{_datadir}/lgeneral
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/lgeneral/*
 

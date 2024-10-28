@@ -9,8 +9,8 @@ URL:            https://github.com/tgalal/yowsup
 Source0:        yowsup-%{version}.tar.gz
 BuildRequires: python2-devel
 BuildRequires: python2-setuptools
-Requires:	python-dateutil
-Requires:	python-pillow
+Requires:       python-dateutil
+Requires:       python-pillow
 BuildArch: noarch
 
 %description
@@ -28,9 +28,6 @@ python2 setup.py build
 python2 setup.py install --root=%{buildroot} --prefix=/usr
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE README.md

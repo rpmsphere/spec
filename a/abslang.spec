@@ -10,6 +10,7 @@ License: MIT
 Group: Development/Language
 URL: https://www.abs-lang.org/
 Source0: https://github.com/abs-lang/abs/archive/refs/tags/%{version}.tar.gz#/%{_name}-%{version}.tar.gz
+BuildRequires: golang
 
 %description
 ABS is a programming language that works best when you're scripting on your
@@ -24,9 +25,6 @@ go build
 
 %install
 install -Dm755 %{_name} %{buildroot}%{_bindir}/%{_name}
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc LICENSE *.md

@@ -40,9 +40,6 @@ sed -i 's|-Wall|-Wall -fPIC -Wl,--allow-multiple-definition|' src/Makefile
 %{__mkdir} _docs
 %{__mv} %{buildroot}%{_docdir}/%{name}*/* _docs/
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files -f %{name}.lang
 %doc _docs/*
 %{_bindir}/gxmame

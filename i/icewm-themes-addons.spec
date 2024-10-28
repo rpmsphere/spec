@@ -23,9 +23,6 @@ phantasy of various people.
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icewm/themes
 cp -a * $RPM_BUILD_ROOT%{_datadir}/icewm/themes
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/icewm/themes/*
 

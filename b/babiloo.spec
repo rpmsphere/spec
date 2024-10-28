@@ -6,7 +6,7 @@ License:        GPL-3.0+
 Group:          Productivity/Office/Dictionary
 URL:            https://www.babiloo-project.org/
 Source:         https://launchpad.net/%{name}/trunk/%{version}/+download/%{name}-%{version}.tar.gz
-Source1:	%{name}
+Source1:        %{name}
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  python3-PyQt4-devel
 Requires:       python3-PyQt4
@@ -23,6 +23,7 @@ Features:
  * Advanced search.
  * Collaborative dictionaries.
 GUI written for python-qt4.
+See https://bazaar.launchpad.net/~babiloo-developers/babiloo/trunk/changes
 
 %prep
 %setup -q
@@ -66,4 +67,3 @@ sed -i 's|/usr/bin/env python|/usr/bin/python3|' %{buildroot}%{_datadir}/babiloo
 - Rebuilt for Fedora
 * Sun Oct 28 2012 fa0sck@gmail.com
 - Created package for babiloo (last) version 2.0.11
-* See https://bazaar.launchpad.net/~babiloo-developers/babiloo/trunk/changes

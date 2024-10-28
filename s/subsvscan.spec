@@ -5,7 +5,7 @@ Group:     System/Base
 License:   GPL
 URL:       https://gpl.internetconnection.net/
 Source:    https://gpl.internetconnection.net/files/subsvscan.tar.gz
-Patch:     subsvscan_implicit_declarations.patch
+Patch0:     subsvscan_implicit_declarations.patch
 Summary:   Sub supervise support
 
 %description
@@ -14,7 +14,7 @@ the children under the sub-supervise.
 
 %prep
 %setup -n %{name}
-%patch
+%patch 0
 
 %build
 gcc %{optflags} -DUSE_FCNTL lock.c  subsvscan.c -o subsvscan
@@ -23,9 +23,6 @@ gcc %{optflags} -DUSE_FCNTL lock.c  subsvscan.c -o subsvscan
 %{__rm} -rf $RPM_BUILD_ROOT
 %{__install} -D -m 0755 subsvscan   $RPM_BUILD_ROOT%{_bindir}/subsvscan
 %{__install} -D -m 0644 subsvscan.8 $RPM_BUILD_ROOT%{_mandir}/man8/subsvscan.8
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/subsvscan

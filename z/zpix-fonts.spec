@@ -1,4 +1,4 @@
-%define	font_dir %{_datadir}/fonts/zpix
+%define font_dir %{_datadir}/fonts/zpix
 
 Name:           zpix-fonts
 Summary:        Zpix FONTS
@@ -23,9 +23,6 @@ Zpix includes bitmap chinese fonts (embeded in ttf).
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{font_dir}
 install -m 644 dist/*.ttf $RPM_BUILD_ROOT%{font_dir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.md

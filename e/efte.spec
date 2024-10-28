@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
-Summary:	Easy to use text mode editor
-Name:		efte
-Version:	1.1git
-Release:	1
-Source0:	https://github.com/lanurmi/efte/archive/master.zip#/efte-master.zip
-License:	GPL
-Group:		Editors
-URL:		https://github.com/lanurmi/efte/
-BuildRequires:	gpm-devel
-BuildRequires:	pkgconfig(ncurses)
-BuildRequires:	pkgconfig(slang)
-BuildRequires:	pkgconfig(x11)
-BuildRequires:	pkgconfig(xpm)
-BuildRequires:	cmake ninja-build
+Summary:        Easy to use text mode editor
+Name:           efte
+Version:        1.1git
+Release:        1
+Source0:        https://github.com/lanurmi/efte/archive/master.zip#/efte-master.zip
+License:        GPL
+Group:          Editors
+URL:            https://github.com/lanurmi/efte/
+BuildRequires:  gpm-devel
+BuildRequires:  pkgconfig(ncurses)
+BuildRequires:  pkgconfig(slang)
+BuildRequires:  pkgconfig(x11)
+BuildRequires:  pkgconfig(xpm)
+BuildRequires:  cmake ninja-build
 
 %description
 eFTE is a Text Mode text editor for xterm sessions.  Color syntax highlighting
@@ -23,9 +23,9 @@ support, undo/redo, regular expression search and replace, folding, background
 compiler execution.
 
 %package x11
-Summary:	X11 version of the eFTE editor
-Group:		Editors
-Requires:	%{name}
+Summary:        X11 version of the eFTE editor
+Group:          Editors
+Requires:       %{name}
 
 %description x11
 X11 version of the eFTE editor

@@ -4,7 +4,7 @@ Release: 7.1
 Summary: The video of Hatsune Miku is downloaded from youtube
 Source: %{name}-%{version}.tar.gz
 Source1: mikutube.desktop
-Patch:   systray.patch
+Patch0:   systray.patch
 URL: https://kaoru-linux.cocolog-nifty.com/blog/
 Group: Productivity/Multimedia/Video/Players
 License: GNU General Public License v3
@@ -21,7 +21,7 @@ from YouTube according to a specified key word.
 
 %prep
 %setup -q -c -n %{name}-%{version}
-%patch
+%patch 0
 
 %build
 
@@ -37,9 +37,6 @@ from YouTube according to a specified key word.
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
@@ -54,9 +51,9 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name
 * Sat Mar 03 2012 kobayashi
 - Update 1.8.0.0
 - Symbolic link to Mikutube.py is removed. 
-* Mon May 15 2011 kobayashi
+* Sun May 15 2011 kobayashi
 - Update 1.6.3.0
 * Thu Dec 23 2010 kobayashi
 - Update 1.6.2.0 no Requires: youtube-dl
-* Wed Apr 29 2010 kobayashi
+* Thu Apr 29 2010 kobayashi
 - new package from Upstream

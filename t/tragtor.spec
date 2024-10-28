@@ -1,13 +1,13 @@
-Name:		tragtor
-Summary:	A GUI for FFmpeg for audio and video-conversion
-Version:	0.8.82
-Release:	11.1
-URL:		https://mein-neues-blog.de/tragtor-gui-for-ffmpeg/
-Source0:	https://repository.mein-neues-blog.de:9000/archive/%{name}-%{version}_all.tar.gz
-License:	LGPL v2.1
-Group:		Productivity/Multimedia/Video/Editors and Convertors
-Requires:	pygtk2 ffmpeg id3v2
-BuildArch:	noarch
+Name:           tragtor
+Summary:        A GUI for FFmpeg for audio and video-conversion
+Version:        0.8.82
+Release:        11.1
+URL:            https://mein-neues-blog.de/tragtor-gui-for-ffmpeg/
+Source0:        https://repository.mein-neues-blog.de:9000/archive/%{name}-%{version}_all.tar.gz
+License:        LGPL v2.1
+Group:          Productivity/Multimedia/Video/Editors and Convertors
+Requires:       pygtk2 ffmpeg id3v2
+BuildArch:      noarch
 
 %description
 traGtor is a graphical user interface (GUI) for the awesome conversion tool ffmpeg for the use with Linux-OS.
@@ -49,9 +49,6 @@ install -D -m644 tragtor.gladep %buildroot%{_datadir}/tragtor/tragtor.gladep
 install -D -m644 version %buildroot%{_datadir}/tragtor/version
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
-
-%clean
-rm -rf %buildroot
 
 %files 
 %{_bindir}/tragtor

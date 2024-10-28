@@ -1,12 +1,12 @@
-Name: 	 	gournal
-Summary: 	GNOME hardwriting notepad
-Version: 	0.5.1
-Release: 	9.1
-Source:		https://www.adebenham.com/debian/%{name}_%{version}-1.tar.bz2
-URL:		https://www.adebenham.com/old-stuff/gournal/
-License:	GPL
-Group:		Applications/Productivity
-BuildArch:	noarch
+Name:           gournal
+Summary:        GNOME hardwriting notepad
+Version:        0.5.1
+Release:        9.1
+Source:         https://www.adebenham.com/debian/%{name}_%{version}-1.tar.bz2
+URL:            https://www.adebenham.com/old-stuff/gournal/
+License:        GPL
+Group:          Applications/Productivity
+BuildArch:      noarch
 
 %description
 Gournal is a note-taking application written for usage on Tablet-PCs.  It's
@@ -52,9 +52,6 @@ Categories=Office;
 EOF
 
 install -Dm644 pixmaps/pencil.png $RPM_BUILD_ROOT/%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGES README

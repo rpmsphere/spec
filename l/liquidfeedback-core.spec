@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 %define _name liquid_feedback_core
 
-Name:		liquidfeedback-core
-Version:	2.2.3
-Release:	1
-Summary:	Interactive Democracy Core
-License:	MIT/X11
-Group:		Productivity/Networking
-Source0:	https://www.public-software-group.org/pub/projects/liquid_feedback/backend/v%{version}/%{_name}-v%{version}.tar.gz
-BuildRequires:	lighttpd
-BuildRequires:	postgresql-devel
-Requires:	lighttpd
-Requires:	postgresql-server
-URL:		https://liquidfeedback.org/
+Name:           liquidfeedback-core
+Version:        2.2.3
+Release:        1
+Summary:        Interactive Democracy Core
+License:        MIT/X11
+Group:          Productivity/Networking
+Source0:        https://www.public-software-group.org/pub/projects/liquid_feedback/backend/v%{version}/%{_name}-v%{version}.tar.gz
+BuildRequires:  lighttpd
+BuildRequires:  postgresql-devel
+Requires:       lighttpd
+Requires:       postgresql-server
+URL:            https://liquidfeedback.org/
 
 %description
 LiquidFeedback is an open-source software, powering internet platforms for
@@ -42,9 +42,6 @@ su - postgres -c "createlang plpgsql liquid_feedback"
 su - postgres -c "psql -v ON_ERROR_STOP=0 -f /opt/%{_name}/core.sql liquid_feedback"
 su - postgres -c "psql -v ON_ERROR_STOP=0 -f /opt/%{_name}/init.sql liquid_feedback"
 su - postgres -c "/opt/%{_name}/lf_update dbname=liquid_feedback"
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc LICENSE README

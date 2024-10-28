@@ -33,7 +33,7 @@ arabirimi yardýmýyla rahatlýkla bađlanabileceksiniz.
 
 %prep
 %setup -q -n xgopher.1.3
-%patch0 -p0
+%patch 0 -p0
 sed -i '/extern.*errno;/i #include <errno.h>' sc_*.c
 
 %build

@@ -1,13 +1,13 @@
-Name:		ezgo-menu
-Version:	0.1
-Release:	1
-Summary:	Common menu for Ezgo
-License:	GPLv2
-Group:		System
-Source:		https://of.openfoundry.org/download_path/ezgomenu/%{version}/%{name}.tgz
-URL:		https://of.openfoundry.org/projects/928
-Vendor:		ericsun, yurenju
-BuildArch:	noarch
+Name:           ezgo-menu
+Version:        0.1
+Release:        1
+Summary:        Common menu for Ezgo
+License:        GPLv2
+Group:          System
+Source:         https://of.openfoundry.org/download_path/ezgomenu/%{version}/%{name}.tgz
+URL:            https://of.openfoundry.org/projects/928
+Vendor:         ericsun, yurenju
+BuildArch:      noarch
 
 %description
 The purpose of ezgo-menu is to build a menu for EzGo system.
@@ -37,9 +37,6 @@ mkdir -p \$MENU_DIR \$APP_DIR
 cp -f files/*.menu \$MENU_DIR
 cp -f files/desktop/*.desktop \$APP_DIR
 EOF
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %attr(755,root,root) %{_bindir}/*

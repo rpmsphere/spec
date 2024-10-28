@@ -63,9 +63,6 @@ install -D -m 644 ./src/glitz.man \
 install -D -m 644 ./src/glx/glitz-glx.man \
         $RPM_BUILD_ROOT%{_mandir}/man3/glitz-glx.3
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 
 
 %files

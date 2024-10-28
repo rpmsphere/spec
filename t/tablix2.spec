@@ -81,7 +81,7 @@ Tomaž Šolc
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 
 %build
 %configure --disable-static \
@@ -97,9 +97,6 @@ mkdir -p %{buildroot}%{_includedir}/%{name}
 install -m644 src/*.h %{buildroot}%{_includedir}/%{name}/
 install -Dm644 %{S:1} %{buildroot}/%{_sysconfdir}/bash_completion.d/%name
 %find_lang %{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files -f %name.lang
 %doc AUTHORS BUGS README COPYING ChangeLog NEWS

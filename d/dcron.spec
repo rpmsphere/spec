@@ -34,7 +34,7 @@ extra processes, just `exec` them.
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 %__make %{?_smp_flags} \
@@ -78,9 +78,6 @@ extra processes, just `exec` them.
 for d in crontabs cronstamps; do
     %__install -m0700 -d "$RPM_BUILD_ROOT%{_var}/spool/%{name}/$d"
 done
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc CHANGELOG README

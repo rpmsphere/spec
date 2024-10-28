@@ -1,13 +1,13 @@
-Name:		gperiodic
-Summary:	A graphical application for browsing the periodic table
-Version:	3.0.1
-Release:	6.1
-URL:		https://www.frantz.fi/software/gperiodic.php
-Group:		Sciences/Chemistry
-License:	GPLv2+
-Source0:	https://sourceforge.net/projects/gperiodic/files/%{name}-%{version}.tar.gz
-BuildRequires:	gtk2-devel
-BuildRequires:	intltool
+Name:           gperiodic
+Summary:        A graphical application for browsing the periodic table
+Version:        3.0.1
+Release:        6.1
+URL:            https://www.frantz.fi/software/gperiodic.php
+Group:          Sciences/Chemistry
+License:        GPLv2+
+Source0:        https://sourceforge.net/projects/gperiodic/files/%{name}-%{version}.tar.gz
+BuildRequires:  gtk2-devel
+BuildRequires:  intltool
 
 %description
 Gperiodic displays a periodic table of the elements, allowing you to

@@ -31,7 +31,7 @@ allow installations via the network.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 %{__perl} -pi.orig -e 's|^(VERSION)\s*=\s*.+$|$1 = "%{version}"|' mrepo
 
 %{__cat} <<EOF >config/mrepo.cron
@@ -69,8 +69,8 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/up
 
 %preun
 if [ $1 -eq 0 ]; then
-	/etc/init.d/mrepo stop &>/dev/null || :
-	/sbin/chkconfig --del mrepo
+        /etc/init.d/mrepo stop &>/dev/null || :
+        /sbin/chkconfig --del mrepo
 fi
 
 %post

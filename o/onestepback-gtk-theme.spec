@@ -9,7 +9,7 @@ Group:          User Interface/Desktops
 URL:            https://www.gnome-look.org/p/1013663/
 Source0:        https://dl.opendesktop.org/api/files/download/id/1472928821/1472928821-OneStepBack.zip
 Source1:        next_wallpaper.jpg
-BuildArch:		noarch
+BuildArch:              noarch
 Requires:       baku-icon-theme
 Requires:       albatross-metacity-theme
 Requires:       openzone-cursor-theme
@@ -33,9 +33,6 @@ echo CursorTheme=OpenZone_White_Slim >> index.theme
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 cp -a gtk-2.0 gtk-3.0 img index.theme %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README LICENSE

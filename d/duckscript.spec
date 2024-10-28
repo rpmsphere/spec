@@ -1,3 +1,4 @@
+%global __spec_install_post %{nil}
 %undefine _debugsource_packages
 
 Summary: Simple, extendable and embeddable scripting language
@@ -28,9 +29,6 @@ install -m755 target/release/duck %{buildroot}%{_bindir}
 %files 
 %doc LICENSE *.md
 %{_bindir}/duck
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.19

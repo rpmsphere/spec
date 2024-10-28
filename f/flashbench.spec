@@ -1,11 +1,11 @@
-Name:		flashbench
-Version:	72
-Release:	0
-Summary:	Bench-marking and analysis utility for flash devices
-License:	GPLv2
-Group:		System/Kernel and hardware
-URL:		https://github.com/bradfa/flashbench.git
-#Source0:	%{name}-%{version}.tar.bz2
+Name:           flashbench
+Version:        72
+Release:        0
+Summary:        Bench-marking and analysis utility for flash devices
+License:        GPLv2
+Group:          System/Kernel and hardware
+URL:            https://github.com/bradfa/flashbench.git
+#Source0:       %{name}-%{version}.tar.bz2
 Source0:        %{name}-dev.zip
 
 %description
@@ -34,7 +34,7 @@ install -D -m 0755 %{name} %{buildroot}%{_bindir}
 %{_bindir}/*
 
 %changelog
-* Sun Apr 4 Wei-Lun Chao <bluebat@member.fsf.org> - 72
+* Sun Apr 4 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 72
 - Rebuilt for Fedora
 * Sun Mar 18 2018 Igor Vlasenko <viy@altlinux.ru> 71-alt1_1
 - new version

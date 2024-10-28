@@ -1,12 +1,12 @@
-Name: 		pitchtune
-Summary: 	An instrument tuner
-Version: 	0.0.4
-Release: 	8.1
+Name:           pitchtune
+Summary:        An instrument tuner
+Version:        0.0.4
+Release:        8.1
 License:        GPL
-Group: 		Applications/Multimedia
-Source: 	pitchtune-0.0.4.tar.gz
-URL:		https://ip.bourget.cc:8080/pitchtune
-Patch0: 	pitchtune-0.0.4-fc4.patch
+Group:          Applications/Multimedia
+Source:         pitchtune-0.0.4.tar.gz
+URL:            https://ip.bourget.cc:8080/pitchtune
+Patch0:         pitchtune-0.0.4-fc4.patch
 BuildRequires:  libpng-devel
 BuildRequires:  gtk2-devel, alsa-lib-devel
 
@@ -17,7 +17,7 @@ It can also be used to find the frequency of sounds.
 
 %prep
 %setup -q 
-%patch0 -p1 -b .fc4
+%patch 0 -p1 -b .fc4
 
 %build
 export LDFLAGS="-Wl,--allow-multiple-definition -lm"
@@ -30,9 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr
 make install
 mv $RPM_BUILD_ROOT/usr/man $RPM_BUILD_ROOT%{_datadir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

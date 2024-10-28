@@ -27,9 +27,6 @@ install -d $RPM_BUILD_ROOT/%{_mandir}/man1
 install -m 755 fsplit $RPM_BUILD_ROOT/%{_bindir}
 install -m 644 fsplit.1 $RPM_BUILD_ROOT/%{_mandir}/man1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/fsplit
 %{_mandir}/man1/fsplit.1*

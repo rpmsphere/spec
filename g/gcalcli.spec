@@ -27,9 +27,6 @@ python3 setup.py install --prefix=/usr --root=%{buildroot}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 %{python3_sitelib}/%{name}*

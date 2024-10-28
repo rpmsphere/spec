@@ -28,10 +28,10 @@ sed -i 's|-Wall|-Wall -fPIE|' configure
 
 %build
 ./configure \
-	--prefix=/usr \
-	--mandir=%{_mandir} \
-	--with-ncurses \
-	--with-rexx=regina
+        --prefix=/usr \
+        --mandir=%{_mandir} \
+        --with-ncurses \
+        --with-rexx=regina
 make
 
 %install
@@ -45,4 +45,4 @@ mv %{buildroot}/usr/share/bin %{buildroot}/usr/bin
 
 %changelog
 * Sun Jun 23 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0
-- Rebuild for Fedora
+- Rebuilt for Fedora

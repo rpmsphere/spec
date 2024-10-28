@@ -1,6 +1,6 @@
 Name:           tux_aqfh
 BuildRequires:  freeglut-devel gcc-c++ 
-BuildRequires:	plib-devel
+BuildRequires:  plib-devel
 License:        GNU General Public License (GPL)
 Group:          Amusements/Games/3D/Shoot
 Version:        1.0.14
@@ -8,9 +8,9 @@ Release:        1
 URL:            https://tuxaqfh.sourceforge.net/
 Summary:        Tuxedo T. Penguin
 Source0:        %{name}-%{version}.tar.bz2
-Source1:	%{name}.desktop
-Source2:	%{name}.png
-Patch:          %{name}-%{version}.patch
+Source1:        %{name}.desktop
+Source2:        %{name}.png
+Patch0:          %{name}-%{version}.patch
 
 %description
 A Quest for Herring: OpenSource 3D game starring your Favorite Hero
@@ -22,7 +22,7 @@ Authors:
 
 %prep
 %setup -q
-%patch
+%patch 0
 sed -i 's|/games/|/|g' configure* */Makefile*
 sed -i 's|local/share/games|share|g' src/tux.cxx
 sed -i 's|/games|/bin|' src/Makefile.am
@@ -43,9 +43,6 @@ install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.deskt
 # Icon
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install -m 0644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS CHANGES LICENSE README doc/*.html doc/*.png

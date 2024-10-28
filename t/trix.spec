@@ -19,7 +19,7 @@ with Vypress Chat(TM) for Windows.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 sed -i '1i #include <unistd.h>' src/main.cpp
 
 %build
@@ -29,9 +29,6 @@ make
 
 %install
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog README TODO INSTALL

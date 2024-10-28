@@ -1,24 +1,24 @@
-Summary:	Program for viewing and analyzing medical image data sets
-Name:		amide
-Version:	1.0.5git
-Release:	1
-License:	GPLv2+
-Group:		Graphics
-URL:		https://amide.sourceforge.net
-Source0:	https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tgz
-BuildRequires:	intltool
-BuildRequires:	perl-XML-Parser
-BuildRequires:	dcmtk-devel
-#BuildRequires:	ffmpeg-devel
-BuildRequires:	volpack-devel
-BuildRequires:	xmedcon-devel
-BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(gnome-doc-utils)
-BuildRequires:	pkgconfig(gnome-vfs-2.0)
-BuildRequires:	pkgconfig(gtk+-2.0)
-BuildRequires:	pkgconfig(gsl)
-BuildRequires:	pkgconfig(libgnomecanvas-2.0)
-BuildRequires:	pkgconfig(libxml-2.0)
+Summary:        Program for viewing and analyzing medical image data sets
+Name:           amide
+Version:        1.0.5git
+Release:        1
+License:        GPLv2+
+Group:          Graphics
+URL:            https://amide.sourceforge.net
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tgz
+BuildRequires:  intltool
+BuildRequires:  perl-XML-Parser
+BuildRequires:  dcmtk-devel
+#BuildRequires: ffmpeg-devel
+BuildRequires:  volpack-devel
+BuildRequires:  xmedcon-devel
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gnome-doc-utils)
+BuildRequires:  pkgconfig(gnome-vfs-2.0)
+BuildRequires:  pkgconfig(gtk+-2.0)
+BuildRequires:  pkgconfig(gsl)
+BuildRequires:  pkgconfig(libgnomecanvas-2.0)
+BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  w3m udisks2
 BuildRequires:  python2
 
@@ -38,10 +38,10 @@ alignments.
 LDFLAGS=-Wl,--allow-multiple-definition
 autoreconf -ifv
 %configure \
-	--enable-libgsl=yes \
+        --enable-libgsl=yes \
         --enable-libecat=no \
-	--enable-amide-debug=no \
-	--disable-scrollkeeper
+        --enable-amide-debug=no \
+        --disable-scrollkeeper
 # paralel build don't work on abf 
 make
 
@@ -49,9 +49,9 @@ make
 %makeinstall
 
 desktop-file-install --vendor "" --delete-original \
-	--dir %{buildroot}%{_datadir}/applications \
-	--add-category X-Red-Hat-Extra \
-	%{buildroot}%{_datadir}/applications/*
+        --dir %{buildroot}%{_datadir}/applications \
+        --add-category X-Red-Hat-Extra \
+        %{buildroot}%{_datadir}/applications/*
 
 rm -rf %{buildroot}/var/scrollkeeper
 

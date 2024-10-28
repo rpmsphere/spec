@@ -3,9 +3,9 @@ Name: lunar-date
 Version: 2.4.0
 Release: 7.1
 Summary: Chinese Lunar calendar library
-Group: User Interface/Desktops	
-License: GPLv2	
-URL: https://code.google.com/p/liblunar	
+Group: User Interface/Desktops  
+License: GPLv2  
+URL: https://code.google.com/p/liblunar 
 Source0: https://liblunar.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires: libpng-devel
 BuildRequires: intltool, gtk2-devel, gtk-doc, python-devel
@@ -34,9 +34,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/liblunar

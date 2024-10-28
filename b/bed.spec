@@ -28,7 +28,7 @@ sed -i '34i #include <algorithm>' src/search.cpp
 #export CXXFLAGS="-Wno-c++11-narrowing"
 #make realclean
 #make linuxconfig
-#s/^[^%]*%_\([^ 	]*\)[ 	].*$/--\1=%{_\1} /g
+#s/^[^%]*%_\([^         ]*\)[   ].*$/--\1=%{_\1} /g
 ./configure       --prefix=%{_prefix} --exec_prefix=%{_exec_prefix} --bindir=%{_bindir} --datadir=%{_datadir} --libdir=%{_libdir} --mandir=%{_mandir} 
 make dep
 sed -i 's|-fPIC|-fPIC -Wno-c++11-narrowing|' plugins/examples/Makefile

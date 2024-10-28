@@ -1,15 +1,15 @@
-Name:		cpu-g
-Version:	0.16.3
-Release:	1
-License:	GPLv3
-Group:		System/Kernel and hardware
-Summary:	CPU-G is an application that shows useful information about your hardware
-URL:		https://github.com/atareao/cpu-g
-Source0:	%name-%version.tar.gz
-Source1:	%name-uk_UA.po
-Source2:	%name.desktop
-Patch0:		%name-patch.patch
-Patch1:		%name-0.16.2-alt_matplotlib.backends.patch
+Name:           cpu-g
+Version:        0.16.3
+Release:        1
+License:        GPLv3
+Group:          System/Kernel and hardware
+Summary:        CPU-G is an application that shows useful information about your hardware
+URL:            https://github.com/atareao/cpu-g
+Source0:        %name-%version.tar.gz
+Source1:        %name-uk_UA.po
+Source2:        %name.desktop
+Patch0:         %name-patch.patch
+Patch1:         %name-0.16.2-alt_matplotlib.backends.patch
 BuildArch: noarch
 BuildRequires:  python3-devel
 #BuildRequires: python3-module-mpl_toolkits
@@ -21,8 +21,8 @@ general information about your system and more.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 cp %SOURCE1 po/uk_UA.po
 
 %install

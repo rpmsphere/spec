@@ -25,7 +25,7 @@ DeskLaunch служит для размещения запускаемых зн�
 
 %prep
 %setup -q
-%patch0 -b .errfmt
+%patch 0 -b .errfmt
 
 %build
 %__make
@@ -39,9 +39,6 @@ rm -rf %{buildroot}
 %{_bindir}/%name
 %{_mandir}/man1/%name.1*
 %doc README debian/changelog debian/example_rc
-
-%clean
-rm -rf %{buildroot}
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.5

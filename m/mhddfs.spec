@@ -1,16 +1,16 @@
-Name:		mhddfs
-Summary:	Fuse-based file system for unifying several mount points into one
-Version:	0.1.39
-Release:	6
-License:	GPLv3+
-URL:		https://mhddfs.uvw.ru/
-Source:		https://mhddfs.uvw.ru/downloads/%{name}_%{version}.tar.gz
+Name:           mhddfs
+Summary:        Fuse-based file system for unifying several mount points into one
+Version:        0.1.39
+Release:        6
+License:        GPLv3+
+URL:            https://mhddfs.uvw.ru/
+Source:         https://mhddfs.uvw.ru/downloads/%{name}_%{version}.tar.gz
 
 #Make sure it builds with system CFLAGS
-Patch0:		mhddfs-cflags.patch
+Patch0:         mhddfs-cflags.patch
 
-BuildRequires:	fuse-devel libattr-devel uthash-devel
-Requires:	fuse%{?_isa}
+BuildRequires:  fuse-devel libattr-devel uthash-devel
+Requires:       fuse%{?_isa}
 
 %description
 This FUSE-based file system allows mount points (or directories) to be combined,
@@ -20,7 +20,7 @@ space to create new files on, and can move data transparently between drives.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 CFLAGS="$RPM_OPT_FLAGS -Wno-format-security" \

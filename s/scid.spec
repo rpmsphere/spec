@@ -8,9 +8,9 @@ Version:        4.7.0
 Release:        1
 URL:            https://scid.sourceforge.net/
 Source:         https://sourceforge.net/projects/scid/files/Scid/Scid%204.7/%{name}-code-%{version}.zip
-Source1:	%{name}.png
-Source2:	%{name}.desktop 
-Source3:	%{name}.6
+Source1:        %{name}.png
+Source2:        %{name}.desktop 
+Source3:        %{name}.6
 
 %description 
 Scid can perform many different searches, such as for particular
@@ -26,19 +26,19 @@ the current position, their opening codes, success rates, etc.
 
 Authors:
 --------
-	Shane Hudson <shane@cosc.canterbury.ac.nz> original scid up to 3.6.1
-	pgeorges (at) users.sourceforge.net later versions
+        Shane Hudson <shane@cosc.canterbury.ac.nz> original scid up to 3.6.1
+        pgeorges (at) users.sourceforge.net later versions
 and
-	Peter van Rossum <petervr@debian.org> (manual page)
+        Peter van Rossum <petervr@debian.org> (manual page)
 
 %prep
 %setup -q -n %{name}
 
 %build
 ./configure --prefix=/usr\
-	BINDIR=%{_bindir} \
-	SHAREDIR=%{_datadir}/scid \
-	OPTIMIZE="$RPM_OPT_FLAGS -fno-rtti -fno-exceptions -Wno-narrowing"
+        BINDIR=%{_bindir} \
+        SHAREDIR=%{_datadir}/scid \
+        OPTIMIZE="$RPM_OPT_FLAGS -fno-rtti -fno-exceptions -Wno-narrowing"
 make
 
 %install
@@ -54,9 +54,6 @@ install -D -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/scid.deskto
 install -D -m 644 %{SOURCE3} $RPM_BUILD_ROOT%{_mandir}/man6/scid.6
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING TODO ChangeLog

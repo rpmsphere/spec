@@ -45,9 +45,6 @@ cp -a scripts $RPM_BUILD_ROOT%{_datadir}/acyls
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 cp -a scalable index.theme $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files 
 %{_datadir}/icons/%{theme_name}
 

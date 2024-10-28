@@ -29,12 +29,12 @@ Development headers for the wireless-tools package.
 
 %prep
 %setup -q -n wireless_tools.%{version}
-%patch1 -p1 -b .makefile
+%patch 1 -p1 -b .makefile
 
 %build
 make clean
 make OPT_FLAGS="$RPM_OPT_FLAGS" BUILD_SHARED=1 FORCE_WEXT_VERSION=16 \
-	LDFLAGS="%{?__global_ldflags}"
+        LDFLAGS="%{?__global_ldflags}"
 
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
@@ -42,9 +42,9 @@ make OPT_FLAGS="$RPM_OPT_FLAGS" BUILD_SHARED=1 FORCE_WEXT_VERSION=16 \
 %{__mkdir_p} $RPM_BUILD_ROOT{/sbin,/%{_lib},%{_mandir}/man8,%{_includedir},%{_libdir}}
 
 make install INSTALL_DIR=$RPM_BUILD_ROOT/sbin \
-	INSTALL_LIB=$RPM_BUILD_ROOT/%{_lib} \
-	INSTALL_INC=$RPM_BUILD_ROOT%{_includedir} \
-	INSTALL_MAN=$RPM_BUILD_ROOT%{_mandir}
+        INSTALL_LIB=$RPM_BUILD_ROOT/%{_lib} \
+        INSTALL_INC=$RPM_BUILD_ROOT%{_includedir} \
+        INSTALL_MAN=$RPM_BUILD_ROOT%{_mandir}
 %{__rm} -f $RPM_BUILD_ROOT/%{_lib}/libiw.{a,so}
 ln -sf ../../%{_lib}/libiw.so.%{version} \
        $RPM_BUILD_ROOT%{_libdir}/libiw.so

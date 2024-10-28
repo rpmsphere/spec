@@ -1,21 +1,21 @@
 %{!?tcl_version: %define tcl_version %(echo 'puts $tcl_version' | tclsh)}
 %{!?tcl_sitelib: %define tcl_sitelib %{_datadir}/tcl%{tcl_version}}
 
-Name:		tpad
-Summary:	Notepad clone written in Tcl/Tk
-Version:	1.3
-Release:	14.1
-Source0:	https://monitor.deis.unical.it/ant/tpad/%{name}-%{version}.tar.bz2
+Name:           tpad
+Summary:        Notepad clone written in Tcl/Tk
+Version:        1.3
+Release:        14.1
+Source0:        https://monitor.deis.unical.it/ant/tpad/%{name}-%{version}.tar.bz2
 Source1:    %{name}.png
-Patch0:		tpad-1.3.patch
-Patch1:		tpad-1.3-use-general-wish.patch
-URL:		https://tclpad.sourceforge.net
-Group:		Applications/Editors
-License:	GPLv2+
-Requires:	tk
-Requires:	tcl
-BuildRequires:	tcl-devel
-BuildArch:	noarch
+Patch0:         tpad-1.3.patch
+Patch1:         tpad-1.3-use-general-wish.patch
+URL:            https://tclpad.sourceforge.net
+Group:          Applications/Editors
+License:        GPLv2+
+Requires:       tk
+Requires:       tcl
+BuildRequires:  tcl-devel
+BuildArch:      noarch
 
 %description
 Apart from all the features Notepad has, tpad adds plugins
@@ -25,8 +25,8 @@ regexps. It also is fully configurable.
 
 %prep  
 %setup -q -c
-%patch0 -p1 -b .ant
-%patch1 -p0 -b .wish
+%patch 0 -p1 -b .ant
+%patch 1 -p0 -b .wish
 
 %install
 rm -rf %{buildroot}
@@ -50,24 +50,21 @@ install -d %{buildroot}%{_mandir}/man1
 install -d %{buildroot}%{_datadir}/tpad
 install bin/tpad %{buildroot}%{_bindir}/tpad
 for libfile in lib/tpad%{version}/*.tcl; do
-	install $libfile %{buildroot}%{tcl_sitelib}/tpad%{version};
+        install $libfile %{buildroot}%{tcl_sitelib}/tpad%{version};
 done
 for msgfile in lib/tpad%{version}/msgs/*.msg; do
-	install $msgfile %{buildroot}%{tcl_sitelib}/tpad%{version}/msgs;
+        install $msgfile %{buildroot}%{tcl_sitelib}/tpad%{version}/msgs;
 done
 install etc/tpad.conf %{buildroot}%{_sysconfdir}/tpad.conf
 install man/man1/tpad.1 %{buildroot}%{_mandir}/man1/tpad.1
 for datafile in share/tpad/*; do
-	install $datafile %{buildroot}%{_datadir}/tpad;
+        install $datafile %{buildroot}%{_datadir}/tpad;
 done
 
 cd %{buildroot}/%{_bindir}
 ln -sf tpad tview
 cd %{buildroot}/%{_mandir}/man1
 ln -sf tpad.1 tview.1
-
-%clean 
-rm -rf %{buildroot}
 
 %files
 %doc share/doc/tpad/bug.html share/doc/tpad/ChangeLog share/doc/tpad/conf.html share/doc/tpad/embed.html share/doc/tpad/index.html share/doc/tpad/intro.html share/doc/tpad/keys.html share/doc/tpad/log.html share/doc/tpad/mouse.html share/doc/tpad/tidy.html share/doc/tpad/tidy.png share/doc/tpad/todo share/doc/tpad/tpad.html

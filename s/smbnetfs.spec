@@ -1,14 +1,14 @@
-Summary:	SMBNetFS - using Samba/Microsoft Network as a regular filesystem
-Summary(pl.UTF-8):	SMBNetFS - używanie Samby/Microsoft Network jako zwykłego systemu plików
-Name:		smbnetfs
-Version:	0.6.1
-Release:	1
-License:	GPL v2
-Group:		Applications/System
-Source0:	https://dl.sourceforge.net/smbnetfs/%{name}-%{version}.tar.bz2
-URL:		https://sourceforge.net/projects/smbnetfs/
-BuildRequires:	fuse-devel >= 2.5, samba-common, pkgconfig, libsmbclient-devel
-Requires:	fuse, samba-client
+Summary:        SMBNetFS - using Samba/Microsoft Network as a regular filesystem
+Summary(pl.UTF-8):      SMBNetFS - używanie Samby/Microsoft Network jako zwykłego systemu plików
+Name:           smbnetfs
+Version:        0.6.1
+Release:        1
+License:        GPL v2
+Group:          Applications/System
+Source0:        https://dl.sourceforge.net/smbnetfs/%{name}-%{version}.tar.bz2
+URL:            https://sourceforge.net/projects/smbnetfs/
+BuildRequires:  fuse-devel >= 2.5, samba-common, pkgconfig, libsmbclient-devel
+Requires:       fuse, samba-client
 
 %description
 SMBNetFS is a Linux/FreeBSD filesystem that allow you to use
@@ -33,9 +33,6 @@ autoconf
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog README TODO doc/*.FAQ

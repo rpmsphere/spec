@@ -36,9 +36,6 @@ install -Dm755 run_training $RPM_BUILD_ROOT%{_bindir}/pam_facial_auth_run_traini
 install -Dm644 etc/haarcascade_frontalface_alt.xml $RPM_BUILD_ROOT/etc/pam-facial-auth/haarcascade_frontalface_alt.xml
 install -Dm644 etc/haarcascade_frontalface_default.xml $RPM_BUILD_ROOT/etc/pam-facial-auth/haarcascade_frontalface_default.xml
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.md LICENSE
 /%{_lib}/security/facialauth.so

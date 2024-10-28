@@ -7,15 +7,15 @@ Group:          Amusements/Games
 License:        LGPL
 URL:            https://www.moerig.com/somatic/
 Source0:        https://www.moerig.com/somatic/somatic-source-20040406.tar.bz2
-Source1:	https://www.moerig.com/somatic/somaforms.gif
-Patch0:		somatic-Make.Config.patch
-Patch1:		somatic-txtsoma.cpp.patch
-Patch2:		somatic-sGFX_cube.hpp.patch
-Patch3:		somatic-sFOX_mainwin.hpp.patch
-Patch4:		somatic-sFOX_piecewin.cpp.patch
-Patch5:		somatic-sFOX_mainwin.cpp.patch
+Source1:        https://www.moerig.com/somatic/somaforms.gif
+Patch0:         somatic-Make.Config.patch
+Patch1:         somatic-txtsoma.cpp.patch
+Patch2:         somatic-sGFX_cube.hpp.patch
+Patch3:         somatic-sFOX_mainwin.hpp.patch
+Patch4:         somatic-sFOX_piecewin.cpp.patch
+Patch5:         somatic-sFOX_mainwin.cpp.patch
 BuildRequires:  fox-devel
-Requires:	fox
+Requires:       fox
 
 %description
 Somatic is a software for solving arbitrary polyomino and polycube puzzles,
@@ -25,12 +25,12 @@ cube made of 3x3x3=27 of the smaller cubes and a lot of other figures.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p0
-%patch1 -p0
-%patch2 -p0
-%patch3 -p0
-%patch4 -p0
-%patch5 -p0
+%patch 0 -p0
+%patch 1 -p0
+%patch 2 -p0
+%patch 3 -p0
+%patch 4 -p0
+%patch 5 -p0
 
 %build
 make 
@@ -66,9 +66,6 @@ mkdir -p $RPM_BUILD_ROOT%{_bindir}
 cd %{_datadir}/%{name}/bin
 ./guisomatic
 EOF
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}

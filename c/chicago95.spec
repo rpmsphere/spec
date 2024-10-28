@@ -1,4 +1,4 @@
-%global	_name Chicago95
+%global _name Chicago95
 
 Name:           chicago95
 Version:        3.0.1
@@ -7,7 +7,7 @@ Summary:        A rendition of everyone's favorite 1995 Microsoft operating syst
 License:        MIT, GPLv3+
 URL:            https://github.com/grassmunk/Chicago95
 Source0:        https://github.com/grassmunk/Chicago95/archive/refs/tags/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
-BuildArch:	noarch
+BuildArch:      noarch
 BuildRequires:  txt2man
 
 %description

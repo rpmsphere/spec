@@ -18,7 +18,7 @@ The whole project is based only on Qt4 libraries, without any other external dep
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 qmake-qt4

@@ -2,14 +2,14 @@
 %global __os_install_post %{nil}
 %undefine _debugsource_packages
 
-Summary:	Simple C Compiler
-Name:		smallerc
-Version:	1.0.1
-Release:	1
-License:	BSD-2
-Group:		Development/C
-URL:		https://github.com/alexfru/SmallerC
-Source0:	%{_name}-master.zip
+Summary:        Simple C Compiler
+Name:           smallerc
+Version:        1.0.1
+Release:        1
+License:        BSD-2
+Group:          Development/C
+URL:            https://github.com/alexfru/SmallerC
+Source0:        %{_name}-master.zip
 BuildRequires: nasm
 
 %description
@@ -29,9 +29,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt

@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 %define pkg_name TuxWordSmith
 
-Name:		tuxwordsmith
+Name:           tuxwordsmith
 Summary:        Scrabble like game for young children 
 Version:        0.7.12
 Release:        1
@@ -11,10 +11,10 @@ URL:            https://www.asymptopia.org/index.php?topic=TWS
 Source0:        %{name}-%{version}.zip
 Source1:        %{pkg_name}.desktop
 Source2:        %{pkg_name}.png
-Requires:	pygame
-Requires:	wxGTK
+Requires:       pygame
+Requires:       wxGTK
 BuildRequires:  python2
-BuildArch:	noarch
+BuildArch:      noarch
 %define         mp_group  games
 %define         mp_user   games
 
@@ -36,7 +36,7 @@ characters.
 
 Author:
 -------
-	Charles B. Cosse
+        Charles B. Cosse
 
 
 %prep
@@ -63,9 +63,6 @@ install -Dm 644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{python2_sitelib}/TuxWordSmith/*.py %{buildroot}/var/games/TuxWordSmith/xdxf/*/*.py
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf %buildroot
 
 %files
 %doc README INSTALL CHANGES LICENSE VERSION

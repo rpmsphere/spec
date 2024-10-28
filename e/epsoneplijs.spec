@@ -1,18 +1,18 @@
-Summary:	Ghostscript IJS Plugin for the Epson EPL printers
-Name:		epsoneplijs
-Version:	0.4.1
-Release:	9.1
-Group:		System/Printing
-License:	BSD
-URL:		https://sourceforge.net/projects/epsonepl/
-Source0:	https://osdn.dl.sourceforge.net/sourceforge/epsonepl/%{name}-%{version}.tgz
-Patch0:		epsoneplijs-use_system_libs.diff
-Patch1:		epsoneplijs-mandriva-install.diff
-Patch2:		epsoneplijs-0.4.1-LDFLAGS.diff
-BuildRequires:	libtool
-BuildRequires:	libusb-devel
-BuildRequires:	libieee1284-devel
-Requires:	ghostscript >= 6.53
+Summary:        Ghostscript IJS Plugin for the Epson EPL printers
+Name:           epsoneplijs
+Version:        0.4.1
+Release:        9.1
+Group:          System/Printing
+License:        BSD
+URL:            https://sourceforge.net/projects/epsonepl/
+Source0:        https://osdn.dl.sourceforge.net/sourceforge/epsonepl/%{name}-%{version}.tgz
+Patch0:         epsoneplijs-use_system_libs.diff
+Patch1:         epsoneplijs-mandriva-install.diff
+Patch2:         epsoneplijs-0.4.1-LDFLAGS.diff
+BuildRequires:  libtool
+BuildRequires:  libusb-compat-0.1-devel
+BuildRequires:  libieee1284-devel
+Requires:       ghostscript >= 6.53
 
 %description
 Support for the Epson EPL-5700L/5800L/5900L/6100L/6200L printer family under
@@ -30,9 +30,9 @@ for i in `find . -type d -name CVS` `find . -type f -name .cvs\*` `find . -type 
     if [ -e "$i" ]; then rm -rf $i; fi >&/dev/null
 done
 
-%patch0 -p1 -b .use_system_libs
-%patch1 -p1 -b .mandriva-install
-%patch2 -p0 -b .LDFLAGS
+%patch 0 -p1 -b .use_system_libs
+%patch 1 -p1 -b .mandriva-install
+%patch 2 -p0 -b .LDFLAGS
 
 %build
 perl -pi -e "s|-g -O2 -Wall -Werror -ansi -pedantic -Wmissing-prototypes|$CFLAGS -fPIC|g" Makefile.in
@@ -69,9 +69,6 @@ install -m0755 epl5x00l $RPM_BUILD_ROOT%{_bindir}/
 pushd foomatic_scripts
 sh install_mandrake $RPM_BUILD_ROOT
 popd
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog FAQ LIMITATIONS README* *.pdf epl_test* apsfilter cups epl_docs/epl-protocol.pdf epl_docs/README.1st

@@ -38,9 +38,6 @@ sed -i '$a BackgroundImage=/usr/share/themes/%{theme_name}/Sunrise_at_Pyramid_La
 cp %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}-Com
 sed -i '$a BackgroundImage=/usr/share/themes/%{theme_name}-Com/Mount_Fuji.jpg' $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}-Com/index.theme
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}*
 

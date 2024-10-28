@@ -1,14 +1,14 @@
 %global docdir /usr/share/doc/elvis
 
-Summary:	A clone of vi/ex
-Name:		elvis
-Release:	31.1
-Version:	2.2.0
-License:	Artistic (see LICENSE)
-Group:		Applications/Editors
+Summary:        A clone of vi/ex
+Name:           elvis
+Release:        31.1
+Version:        2.2.0
+License:        Artistic (see LICENSE)
+Group:          Applications/Editors
 Vendor:     Steve Kirkendall <kirkenda@cs.pdx.edu>
 URL:        https://elvis.vi-editor.org/
-Source0:	ftp://ftp.cs.pdx.edu/pub/elvis/unreleased/%{name}-2.2_0.tar.gz
+Source0:        ftp://ftp.cs.pdx.edu/pub/elvis/unreleased/%{name}-2.2_0.tar.gz
 Patch0:     %{name}-2.2_0.patch
 BuildRequires:  ncurses-devel libX11-devel libXt-devel
 Patch1:     elvis.clr-Fedora.patch
@@ -22,8 +22,8 @@ Author:     Steve Kirkendall <kirkenda@cs.pdx.edu>
 
 %prep
 %setup -q -n %{name}-2.2_0
-%patch0 -p0
-%patch1 -p0
+%patch 0 -p0
+%patch 1 -p0
 
 %build
 export CFLAGS="$RPM_OPT_FLAGS" CPPFLAGS="$RPM_OPT_FLAGS" CXXFLAGS="$RPM_OPT_FLAGS";
@@ -56,9 +56,6 @@ cp doc/* $RPM_BUILD_ROOT%{docdir}
 cp data/elvis.* $RPM_BUILD_ROOT%{docdir}
 cp COPYING BUGS INSTALL README.html $RPM_BUILD_ROOT%{docdir}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{docdir}
 %dir %{_datadir}/%{name}
@@ -76,5 +73,5 @@ rm -rf $RPM_BUILD_ROOT
 - Rebuilt for Fedora
 * Sat Jul 9 2011 Agnelo de la Crotche <agnelo@unixversal.com> - 
 - added color patches for openSUSE, Fedora and Mandriva
-* Fri Mar 18 2010 Agnelo de la Crotche <agnelo@unixversal.com> - 
+* Thu Mar 18 2010 Agnelo de la Crotche <agnelo@unixversal.com> - 
 - elvis is back in openSUSE. :-)

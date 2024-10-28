@@ -9,7 +9,7 @@ License:        GPL
 Source0:        %{name}.tgz
 Source1:        %{theme_name}-index.theme
 BuildArch:      noarch      
-Requires:	    gtk-equinox-engine, gtk-murrine-engine
+Requires:           gtk-equinox-engine, gtk-murrine-engine
 Requires:       raveh20-classic-icon-theme
 Requires:       blueglass3d-cursor-theme
 Requires:       shimmer-backgrounds

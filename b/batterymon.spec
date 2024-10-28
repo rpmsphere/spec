@@ -32,9 +32,6 @@ python2 setup.py install --root=$RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %{python2_sitelib}/*
 %{_datadir}/batterymon

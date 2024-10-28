@@ -44,9 +44,6 @@ sed -i '$a BackgroundImage=/usr/share/themes/%{theme_name}Dark/matterhorn-984128
 cp %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}Light
 sed -i '$a BackgroundImage=/usr/share/themes/%{theme_name}Light/zune_by_hellishere_12-1920x1200.jpg' $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}Light/index.theme
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}*
 

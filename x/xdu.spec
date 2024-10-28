@@ -17,9 +17,9 @@ displays results in a window. One can navigate through that information.
 
 %prep
 %setup -q -c
-%patch1 -p1 -b .orig
-%patch2 -p1 -b .i18n
-%patch3 -p1 -b .title
+%patch 1 -p1 -b .orig
+%patch 2 -p1 -b .i18n
+%patch 3 -p1 -b .title
 
 %build
 xmkmf -a
@@ -35,9 +35,6 @@ mv $RPM_BUILD_ROOT/etc/X11/app-defaults/XDu $RPM_BUILD_ROOT%{_datadir}/X11/app-d
 mv $RPM_BUILD_ROOT/usr/man $RPM_BUILD_ROOT%{_datadir}/man
 %endif
 rm -rf $RPM_BUILD_ROOT/usr/lib/X11
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/xdu

@@ -27,7 +27,7 @@ language for a variety of purposes.
 
 %prep
 %setup -q
-%patch0 -p 1
+%patch 0 -p 1
 
 %build
 export LLVMCONF=llvm-config-64-3.4
@@ -36,9 +36,6 @@ export LLVMCONF=llvm-config-64-3.4
 
 %install
 %make_install
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc COPYING* TODO ChangeLog NEWS

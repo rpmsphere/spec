@@ -1,22 +1,22 @@
 %undefine _debugsource_packages
-%define oname	ExMplayer
+%define oname   ExMplayer
 
-Name:		exmplayer
-Version:	5.0.1
-Release:	11.1
-Summary:	MPlayer GUI with thumbnail seeking and 3D Video support
-License:	GPLv2+
-Group:		Video/Players
-URL:		https://exmplayer.sourceforge.net/
-Source0:	https://github.com/rupeshs/ExMplayer/archive/v%{version}/%{name}-%{version}.tar.gz
-Patch0:		exmplayer-3.8.0-segfault.patch
-BuildRequires:	cmake
-BuildRequires:	ghostscript-core ImageMagick
-BuildRequires:	qt4-devel
-#BuildRequires:	ffmpeg-devel
-Requires:	ffmpeg
-Requires:	mplayer
-Requires:	youtube-dl
+Name:           exmplayer
+Version:        5.0.1
+Release:        11.1
+Summary:        MPlayer GUI with thumbnail seeking and 3D Video support
+License:        GPLv2+
+Group:          Video/Players
+URL:            https://exmplayer.sourceforge.net/
+Source0:        https://github.com/rupeshs/ExMplayer/archive/v%{version}/%{name}-%{version}.tar.gz
+Patch0:         exmplayer-3.8.0-segfault.patch
+BuildRequires:  cmake
+BuildRequires:  ghostscript-core ImageMagick
+BuildRequires:  qt4-devel
+#BuildRequires: ffmpeg-devel
+Requires:       ffmpeg
+Requires:       mplayer
+Requires:       youtube-dl
 
 %description
 ExMplayer (Extended MPlayer) is a GUI front-end for MPlayer with flow view
@@ -27,7 +27,7 @@ without any external codecs.
 
 %prep
 %setup -q -n %{oname}-%{version}
-%patch0 -p1
+%patch 0 -p1
 
 # wrong-file-end-of-line-encoding
 sed -i 's/\r$//' Release_notes.txt README.md

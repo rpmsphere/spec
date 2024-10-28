@@ -24,7 +24,7 @@ like zooming or rotating are also available.
 
 %prep
 %setup -q -n %{name}-%{version}-src
-%patch0 -p1
+%patch 0 -p1
 
 %build
 make

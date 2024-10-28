@@ -125,9 +125,6 @@ install -m 0644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/%{_fontdir}
 %doc FONTLOG.txt OFL.txt OFL-FAQ.txt theano-specimen.pdf
 %{_datadir}/fonts/%{_fontdir}/*.ttf
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
 - Rebuilt for Fedora

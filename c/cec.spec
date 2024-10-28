@@ -22,9 +22,6 @@ rm -rf "$RPM_BUILD_ROOT"
 %__install -D -m0755 cec "$RPM_BUILD_ROOT%{_sbindir}/cec"
 %__install -D -m0644 cec.8 "$RPM_BUILD_ROOT%{_mandir}/man8/cec.8"
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc HACKING LICENSE NEWS README
 %{_sbindir}/cec

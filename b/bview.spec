@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		bview
-Version:	6.1.0
-Release:	8
-Summary:	Console hex viewer/editor and disassembler
-License:	GPLv2+
-Group:		File tools
-URL:		https://sourceforge.net/projects/beye/
-Source:		biew-610.tar.bz2
-Patch0:		biew610-fix-str-fmt.patch
-Provides:	beye
+Name:           bview
+Version:        6.1.0
+Release:        8
+Summary:        Console hex viewer/editor and disassembler
+License:        GPLv2+
+Group:          File tools
+URL:            https://sourceforge.net/projects/beye/
+Source:         biew-610.tar.bz2
+Patch0:         biew610-fix-str-fmt.patch
+Provides:       beye
 
 %description
 BEYE (Binary EYE) is a free, portable, advanced file viewer with built-in editor
@@ -19,7 +19,7 @@ MZ,NE,PE,ELF and other.
 
 %prep
 %setup -q -n biew-610
-%patch0 -p0
+%patch 0 -p0
 
 %build
 CFLAGS=$RPM_OPT_FLAGS" -mmmx -msse"
@@ -33,9 +33,6 @@ install -d %buildroot{%{_bindir},%{_datadir}/%{name},%{_mandir}/man1}
 install -m 755 biew %buildroot%{_bindir}/%{name}
 cp -a bin_rc/{xlt,skn,*.hlp} %buildroot%{_datadir}/%{name}
 install doc/biew.1 %buildroot%{_mandir}/man1/%{name}.1
-
-%clean
-rm -rf %buildroot
 
 %files
 %doc doc/*.txt

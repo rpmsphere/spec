@@ -1,20 +1,20 @@
 %undefine _debugsource_packages
 
-Name:		gamgi
-Version:	0.17.4g
-Release:	1
-Summary:	Package to construct, view and analyse atomic structures
-Group:		Sciences/Chemistry
-License:	GPLv2	
-URL:		https://www.gamgi.org
-Source0:	https://www.gamgi.org/src/%{name}-all-%{version}.tar.gz
-Patch1:		gamgi_ttfpath.patch
-BuildRequires:	cairo-devel pango-devel atk-devel gtk2-devel expat-devel freetype-devel 
-BuildRequires:	mesa-libGL-devel mesa-libGLU-devel gtkglext-devel
-BuildRequires:	ghostscript-core ImageMagick desktop-file-utils
-BuildRequires:	harfbuzz-devel
-Requires:	netpbm-progs bitstream-vera-sans-fonts bitstream-vera-sans-mono-fonts
-Requires:	dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+Name:           gamgi
+Version:        0.17.4g
+Release:        1
+Summary:        Package to construct, view and analyse atomic structures
+Group:          Sciences/Chemistry
+License:        GPLv2   
+URL:            https://www.gamgi.org
+Source0:        https://www.gamgi.org/src/%{name}-all-%{version}.tar.gz
+Patch1:         gamgi_ttfpath.patch
+BuildRequires:  cairo-devel pango-devel atk-devel gtk2-devel expat-devel freetype-devel 
+BuildRequires:  mesa-libGL-devel mesa-libGLU-devel gtkglext-devel
+BuildRequires:  ghostscript-core ImageMagick desktop-file-utils
+BuildRequires:  harfbuzz-devel
+Requires:       netpbm-progs bitstream-vera-sans-fonts bitstream-vera-sans-mono-fonts
+Requires:       dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
 
 %description
 GAMGI (General Atomistic Modelling Graphic Interface) aims to be useful for: 
@@ -27,7 +27,7 @@ GAMGI can determine any point group of symmetry, can build crystals for any spac
 
 %prep
 %setup -q -n %{name}%{version}
-%patch1 -p1 -b .ttf
+%patch 1 -p1 -b .ttf
 %ifarch x86_64 aarch64
 sed -i 's|/usr/lib|/usr/lib64|g' src/make_local
 %endif
@@ -73,9 +73,6 @@ cp doc/man/page.gz $RPM_BUILD_ROOT/%{_mandir}/man1/gamgi.1.gz
 
 desktop-file-install --dir %{buildroot}%{_datadir}/applications %{name}.desktop
     
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS CONTRIBUTORS SUPPORTERS doc/*
 %{_bindir}/%{name}

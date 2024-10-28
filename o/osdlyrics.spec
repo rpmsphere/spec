@@ -3,7 +3,7 @@ Version:        0.4.3
 Release:        5.1
 Summary:        A third-party lyrics display program
 Group:          Applications/Multimedia
-License:        GPLv3	
+License:        GPLv3   
 URL:            https://code.google.com/p/osd-lyrics/
 Source0:        https://osd-lyrics.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:  libpng-devel
@@ -29,9 +29,6 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %doc AUTHORS ChangeLog INSTALL README COPYING

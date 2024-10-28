@@ -26,7 +26,7 @@ behavior.
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 echo "libdaemon lib flags: $(pkg-config --libs libdaemon)"
@@ -47,9 +47,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 touch "$RPM_BUILD_ROOT%{_sysconfdir}/btnx/btnx_config"
 %__install -d "$RPM_BUILD_ROOT/usr/sbin"
 %__ln_s ../../etc/init.d/btnx "$RPM_BUILD_ROOT/usr/sbin/rcbtnx"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README

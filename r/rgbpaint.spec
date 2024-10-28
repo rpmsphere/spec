@@ -49,9 +49,6 @@ Terminal=false
 Categories=Graphics;2DGraphics;RasterGraphics;GTK;
 EOF
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc COPYING NEWS README
 %{_mandir}/man1/%{name}*

@@ -8,14 +8,14 @@ License:        GPL v3
 Group:          Amusements/Games/Board/Chess
 URL:            https://ilaripih.mbnet.fi/sloppy/
 Source0:        sloppy-%{version}.tar.bz2
-Source1:	xsloppy
+Source1:        xsloppy
 # startup script derived from script by Oliver Korff
-Source2:	%{name}.sh
-Source3:	book.bin.bz2
-Source4:	%{name}.sh
-Patch0:		%{name}-config.patch
+Source2:        %{name}.sh
+Source3:        book.bin.bz2
+Source4:        %{name}.sh
+Patch0:         %{name}-config.patch
 Patch1:         sloppy-no-build-date.patch
-Requires:	xboard
+Requires:       xboard
 
 %description
 Sloppy is a versatile open source chess engine written by some Finnish dude.  
@@ -27,12 +27,12 @@ Here are some facts about Sloppy:
 - Often plays in a way which could be described as sloppy
 
 Authors:
-		Ilari Pihlajisto <ilari.pihlajisto@mbnet.fi>
+                Ilari Pihlajisto <ilari.pihlajisto@mbnet.fi>
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p1
+%patch 0 -p0
+%patch 1 -p1
 %ifarch aarch64
 sed -i '479,494d' src/util.c
 %endif
@@ -50,9 +50,6 @@ install -m 755 %{SOURCE2} $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -m 644 sloppy.conf $RPM_BUILD_ROOT%{_datadir}/%{name}/
 install -m 644 %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/%{name}/
 bzip2 -d $RPM_BUILD_ROOT%{_datadir}/%{name}/book.bin.bz2
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGES  COPYING  README TODO 

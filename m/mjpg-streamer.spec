@@ -47,12 +47,12 @@ line or use the desktop menu in KDE.
 cd %{name}
 #patch0 -p0
 #patch1 -p0
-%patch2 -p0
+%patch 2 -p0
 #patch3 -p0
 #patch4 -p0
 #patch5 -p0
-%patch6 -p0
-%patch7 -p0
+%patch 6 -p0
+%patch 7 -p0
 #patch8 -p0
 #patch9 -p0
 cp -a %{S:4} .
@@ -97,9 +97,6 @@ install -m 755 uvc_stream %{buildroot}%{_bindir}/uvc_stream
 sed -i -e '/^OnlyShowIn/d' `find %{buildroot}%{_datadir}/applications -name '*.desktop'`
 
 
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc %{name}/README %{name}/CHANGELOG %{name}/LICENSE %{name}/start.sh

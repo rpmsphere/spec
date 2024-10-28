@@ -50,9 +50,6 @@ if [ -x %{_bindir}/gtk-update-icon-cache ]; then
   %{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
 fi
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files themes
 %doc CHANGELOG AUTHORS COPYING README
 %{_datadir}/pytraffic/extra_themes

@@ -18,10 +18,10 @@ testbed for experiments in implementation techniques and as an expository tool.
 
 %prep
 %setup -q
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
 iconv -f iso88591 -t utf8 README > README.utf8
 mv README.utf8 README
 

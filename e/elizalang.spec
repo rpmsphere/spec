@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Summary:	A sequencial, functional logic programming language
-Name:		elizalang
-Version:	0.11
-Release:	3.1
-License:	GPLv3
-Group:		Development/Languages
-Source0:	https://www.eliza.ch/dist/Source/Eliza.zip
-URL:		https://www.eliza.ch
-BuildRequires:	gcc-c++, coco-c
+Summary:        A sequencial, functional logic programming language
+Name:           elizalang
+Version:        0.11
+Release:        3.1
+License:        GPLv3
+Group:          Development/Languages
+Source0:        https://www.eliza.ch/dist/Source/Eliza.zip
+URL:            https://www.eliza.ch
+BuildRequires:  gcc-c++, coco-c
 
 %description
 Eliza borrows concepts from Prolog, Lisp, Icon, Haskell, Bash, Oz and C/C++.
@@ -30,9 +30,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 eliza $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc gpl-3.0.txt eliza.atg *.eliza

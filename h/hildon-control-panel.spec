@@ -28,9 +28,6 @@ make CFLAGS+=-Wno-error
 %__install -D -m0644 controlpanel.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 sed -i 's|copa_ap_cp_name.*|Hildon control panel|' %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc MAINTAINERS ChangeLog COPYING
 %{_bindir}/controlpanel

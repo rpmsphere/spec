@@ -54,9 +54,6 @@ cd %{_datadir}/%{name}
 EOF
 chmod +x %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}

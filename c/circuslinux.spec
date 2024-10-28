@@ -7,7 +7,7 @@ License:      GPL
 Group:        Amusements/Games/Action/Breakout
 Source:       circuslinux-%{version}.tar.bz2
 Source1:      %name.desktop
-Patch:        circuslinux-%{version}.dif
+Patch0:        circuslinux-%{version}.dif
 URL:          https://www.newbreedsoftware.com/circus-linux/
 
 %description
@@ -21,7 +21,7 @@ Authors:
 
 %prep
 %setup -q
-%patch
+%patch 0
 
 %build
 aclocal
@@ -40,9 +40,6 @@ find ${RPM_BUILD_ROOT}/%{_datadir}/%{name} -type f -exec chmod 644 {} \;
 %__cp data/images/icon.png $RPM_BUILD_ROOT/%{_datadir}/pixmaps/%name.png
 %__mkdir_p %{buildroot}%{_datadir}/applications/
 %__cp %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-%clean
-%__rm -rf ${RPM_BUILD_ROOT}
 
 %post
 update-mime-database %{_datadir}/mime &> /dev/null

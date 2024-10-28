@@ -10,7 +10,7 @@ Group:          Productivity/Scientific/Chemistry
 Vendor:         openSUSE-Education
 Source0:        %{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
-Patch1:		gelemental-1.2.0-gcc43.patch
+Patch1:         gelemental-1.2.0-gcc43.patch
 BuildRequires:  libpng-devel
 BuildRequires:  glibmm24-devel >= 2.6
 BuildRequires:  gtkmm24-devel >= 2.6
@@ -65,9 +65,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 install -D -m 644 %{SOURCE1} ${RPM_BUILD_ROOT}/%{_datadir}/applications/gelemental.desktop
 rm $RPM_BUILD_ROOT%{_libdir}/libelemental.la
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS COPYING COPYING.DATA NEWS README TODO TRANSLATORS

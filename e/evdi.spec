@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		evdi
-Version:	1.14.2
-Release:	1
-Summary:	DisplayLink VGA/HDMI driver for DL-6xxx, DL-5xxx, DL-41xx and DL-3xxx adapters
-Group:		User Interface/X Hardware Support
-License:	GPL v2.0, LGPL v2.1 and Proprietary
-URL:		https://github.com/DisplayLink/evdi
-Source0:	https://github.com/DisplayLink/evdi/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildRequires:	libdrm-devel
-Requires:	%{name}-dkms
+Name:           evdi
+Version:        1.14.2
+Release:        1
+Summary:        DisplayLink VGA/HDMI driver for DL-6xxx, DL-5xxx, DL-41xx and DL-3xxx adapters
+Group:          User Interface/X Hardware Support
+License:        GPL v2.0, LGPL v2.1 and Proprietary
+URL:            https://github.com/DisplayLink/evdi
+Source0:        https://github.com/DisplayLink/evdi/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+BuildRequires:  libdrm-devel
+Requires:       %{name}-dkms
 
 %description
 This adds support for HDMI/VGA adapters built upon the DisplayLink DL-6xxx,
@@ -17,17 +17,17 @@ DL-5xxx, DL-41xx and DL-3xxx series of chipsets. This includes numerous
 docking stations, USB monitors, and USB adapters.
 
 %package devel
-Summary:	Development files for package %{name}
-Requires:	%{name}
+Summary:        Development files for package %{name}
+Requires:       %{name}
 
 %description devel
 Libraries and header files for DisplayLink VGA/HDMI driver.
 
 %package dkms
-Summary:	DKMS files for package %{name}
-Requires:	kernel-devel
-Requires:	dkms
-BuildArch:	noarch
+Summary:        DKMS files for package %{name}
+Requires:       kernel-devel
+Requires:       dkms
+BuildArch:      noarch
 
 %description dkms
 DKMS and source files for DisplayLink VGA/HDMI driver.

@@ -28,9 +28,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 install -Dm644 fkiss.man $RPM_BUILD_ROOT%{_mandir}/man6/fkiss.6
 install -Dm644 frkismi4.lzh $RPM_BUILD_ROOT%{_datadir}/kiss/frkismi4.lzh
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING ChangeLog INSTALL NEWS README*
 %doc *.doc.* fkissrc.smp

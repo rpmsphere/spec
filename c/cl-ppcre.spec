@@ -7,7 +7,7 @@ License:        https://www.opensource.org/licenses/bsd-license.php
 URL:            https://weitz.de/cl-ppcre/
 Source:         https://weitz.de/files/cl-ppcre.tar.gz
 BuildRequires:   common-lisp-controller
-BuildArch:		noarch
+BuildArch:              noarch
 Requires:        common-lisp-controller
 
 %description
@@ -50,9 +50,6 @@ done
 
 %preun
 /usr/sbin/unregister-common-lisp-source cl-ppcre
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc doc/index.html

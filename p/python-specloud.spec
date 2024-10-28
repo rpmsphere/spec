@@ -33,9 +33,6 @@ python2 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 
 sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/*
 %{python2_sitelib}/*

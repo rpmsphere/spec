@@ -6,7 +6,7 @@ License: GPL
 Group: System Environment/Kernel
 URL: https://launchpad.net/ndisgtk/
 Source: https://jak-linux.org/projects/ndisgtk/ndisgtk-%{version}.tar.gz
-Patch: ndisgtk-0.8-centos.patch
+Patch0: ndisgtk-0.8-centos.patch
 BuildRequires: intltool, python2-devel, pygtk2-devel
 Requires: python, pygtk2, ndiswrapper
 BuildArch: noarch
@@ -17,7 +17,7 @@ way to install the Windows wireless drivers.
 
 %prep
 %setup -q
-#%patch0 -p0
+#%patch 0 -p0
 
 %{__cat} <<EOF >ndisgtk.desktop.in
 [Desktop Entry]
@@ -67,9 +67,6 @@ EOF
 %{__rm} -f %{buildroot}%{_datadir}/applications/ndisgtk-kde.desktop
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_sbindir}/%{name}
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files -f %{name}.lang
 %doc NEWS

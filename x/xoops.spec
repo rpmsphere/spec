@@ -1,13 +1,13 @@
-Name:		xoops
-Version:	2.5.5
-Release:	1
-Summary:	Easy to use dynamic web content management system written in PHP
-License:	GPL
-URL:		https://www.xoops.org/
-Group:		Productivity/Networking
-Source0:	%{name}-%{version}.tar.gz
-BuildArch:	noarch
-Requires:	httpd php
+Name:           xoops
+Version:        2.5.5
+Release:        1
+Summary:        Easy to use dynamic web content management system written in PHP
+License:        GPL
+URL:            https://www.xoops.org/
+Group:          Productivity/Networking
+Source0:        %{name}-%{version}.tar.gz
+BuildArch:      noarch
+Requires:       httpd php
 
 %description
 XOOPS is a web application platform written in PHP for the MySQL database.
@@ -23,9 +23,6 @@ community websites, intra company and corporate portals, weblogs and much more.
 %__rm -rf %{buildroot}
 %__mkdir_p %{buildroot}/var/www/html
 %__cp -a %{name} %{buildroot}/var/www/html
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
  %defattr(-,apache,apache)

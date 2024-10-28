@@ -28,9 +28,6 @@ and me, of course. Many icons were modified by me in some way.
 install -d $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 cp -a index.theme scalable $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/icons/%{theme_name}
 

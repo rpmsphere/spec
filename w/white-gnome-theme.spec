@@ -29,9 +29,6 @@ echo IconTheme=Numix-Circle >> $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/i
 echo BackgroundImage=/usr/share/backgrounds/win9/flower.png >> $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/index.theme
 chmod -x $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/index.theme
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 

@@ -1,13 +1,13 @@
-Summary:	Lightweight and simple frontend for su command
-Name:		ktsuss
-Version:	2
-Release:	3.1
-License:	BSD
-Group:		System/Base
-URL:		https://code.google.com/p/%{name}
-Source0:	https://ktsuss.googlecode.com/files/%{name}-%{version}.tar.gz
-Patch0:		ktsuss-2.printf.patch
-BuildRequires:	pkgconfig(gtk+-2.0)
+Summary:        Lightweight and simple frontend for su command
+Name:           ktsuss
+Version:        2
+Release:        3.1
+License:        BSD
+Group:          System/Base
+URL:            https://code.google.com/p/%{name}
+Source0:        https://ktsuss.googlecode.com/files/%{name}-%{version}.tar.gz
+Patch0:         ktsuss-2.printf.patch
+BuildRequires:  pkgconfig(gtk+-2.0)
 
 %description
 ktsuss stands for "keep the su simple, stupid", and as the
@@ -17,7 +17,7 @@ free.
 
 %prep
 %setup -q
-%patch0 -p1 -b .printf
+%patch 0 -p1 -b .printf
 
 %build
 %configure

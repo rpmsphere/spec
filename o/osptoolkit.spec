@@ -1,14 +1,14 @@
-Name:		osptoolkit
-Summary:	Toolkit for ETSI OSP standard for secure VoIP peering
-Version:	4.13.0
-Release:	7.1
-License:	BSD
-Group:		Development/Libraries/C and C++
-URL:		https://sf.net/projects/osp-toolkit
-Source:		https://sourceforge.net/projects/osp-toolkit/files/OSPToolkit-%{version}.tar.gz
-Patch1:		osp-automake.diff
-BuildRequires:	autoconf, automake, libtool
-BuildRequires:	compat-openssl10-devel
+Name:           osptoolkit
+Summary:        Toolkit for ETSI OSP standard for secure VoIP peering
+Version:        4.13.0
+Release:        7.1
+License:        BSD
+Group:          Development/Libraries/C and C++
+URL:            https://sf.net/projects/osp-toolkit
+Source:         https://sourceforge.net/projects/osp-toolkit/files/OSPToolkit-%{version}.tar.gz
+Patch1:         osp-automake.diff
+BuildRequires:  autoconf, automake, libtool
+BuildRequires:  compat-openssl10-devel
 
 %description
 The OSP Toolkit is a complete development kit for software developers
@@ -20,9 +20,9 @@ hosted OSP test server is freely available on the Internet for all
 developers to test their OSP implementation.
 
 %package devel
-Summary:	Toolkit for ETSI OSP standard for secure VoIP peering
-Group:		Development/Libraries/C and C++
-Requires:	%name = %version
+Summary:        Toolkit for ETSI OSP standard for secure VoIP peering
+Group:          Development/Libraries/C and C++
+Requires:       %name = %version
 
 %description devel
 The OSP Toolkit is a complete development kit for software developers

@@ -21,9 +21,9 @@ file by redirecting the output of showrgb to a file.
 
 %prep
 %setup -q -n xcolors-04oct91
-%patch0
+%patch 0
 %if "%(pkg-config --variable=prefix xft)" == "/usr"
-%patch1
+%patch 1
 %endif
 
 %build
@@ -40,9 +40,6 @@ mv $RPM_BUILD_ROOT/usr/lib/X11/app-defaults/* $RPM_BUILD_ROOT/usr/share/X11/app-
 mv $RPM_BUILD_ROOT/usr/man $RPM_BUILD_ROOT%_datadir/man
 %endif
 rm -rf $RPM_BUILD_ROOT/usr/lib
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/%{_xorg7bin}/xcolors

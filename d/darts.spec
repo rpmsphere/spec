@@ -29,10 +29,11 @@ Authors:
 %build
 rm -f config.cache
 autoreconf --force --install
+#CXXFLAGS="$RPM_OPT_FLAGS -fPIE" \
 sed -i 's|-Wall|-Wall -fPIE|' configure
 ./configure --prefix=/usr \
             --libdir=%{_libdir} \
-	    --libexecdir=%{_libdir} \
+            --libexecdir=%{_libdir} \
             --mandir=%{_mandir} \
             --infodir=%{_infodir}
 
@@ -42,9 +43,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPY* ChangeLog README*

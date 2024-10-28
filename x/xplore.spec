@@ -35,9 +35,6 @@ make
 %install
 make DESTDIR=$RPM_BUILD_ROOT install install.man
 
-%clean 
-rm -rf $RPM_BUILD_ROOT 
-
 %files
 %doc ChangeLog COPYING INSTALL README TODO
 %{_bindir}/xplore

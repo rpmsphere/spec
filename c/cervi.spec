@@ -33,9 +33,9 @@ Vladimír Chvátil, Brno, Czech Republic
 
 %prep
 %setup -q -n cervi-svn-0.4.0
-%patch1
-%patch2
-%patch3
+%patch 1
+%patch 2
+%patch 3
 
 %build
 #no configure in package
@@ -67,9 +67,6 @@ EOF
 %doc changelog README COPYRIGHT COPYING AUTHORS INSTALL
 %{_datadir}/pixmaps/*
 %{_datadir}/applications/%name.desktop
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0

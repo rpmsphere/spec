@@ -8,7 +8,7 @@ URL:            https://common-lisp.net/~abridgewater/
 Source:         https://common-lisp.net/~abridgewater/dist/clx/clx-0.7.4.tgz
 Source1:        COPYRIGHT
 BuildRequires:   common-lisp-controller, texinfo
-BuildArch:		noarch
+BuildArch:              noarch
 Requires:        common-lisp-controller
 Requires(post):  common-lisp-controller, /sbin/install-info
 Requires(preun): common-lisp-controller, /sbin/install-info
@@ -72,9 +72,6 @@ install -m 644 %{SOURCE1} %{buildroot}%{_datadir}/common-lisp/source/clx;
 if [ $1 = 0 ] ; then
     /sbin/install-info --delete %{_infodir}/clx.info %{_infodir}/dir || :
 fi
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc %{_infodir}/

@@ -54,9 +54,6 @@ make
 rm -rf "$RPM_BUILD_ROOT"
 %makeinstall
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files devel
 %{_includedir}/*.h
 %{_libdir}/libtrio.a

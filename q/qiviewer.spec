@@ -1,13 +1,13 @@
-Name:		qiviewer
-Version:	0.7.0git
-Release:	1
-Summary:	Qt-based lightweight image viewer
-License:	GPL
-Source0:	%{name}-master.zip
-Source1:	%{name}.desktop
-Group:		Productivity/Graphics/Viewers
+Name:           qiviewer
+Version:        0.7.0git
+Release:        1
+Summary:        Qt-based lightweight image viewer
+License:        GPL
+Source0:        %{name}-master.zip
+Source1:        %{name}.desktop
+Group:          Productivity/Graphics/Viewers
 URL:            https://github.com/samkpo/qiviewer
-BuildRequires:	gcc-c++, qt4-devel
+BuildRequires:  gcc-c++, qt4-devel
 
 %description
 This program has been written with help of Qt library, to be a lightweight
@@ -25,9 +25,6 @@ BMP, GIF, JPG, JPEG, PNG, PBM, PGM, PPM, XBM, XPM.
 %{__rm} -rf $RPM_BUILD_ROOT
 %cmake_install
 mv $RPM_BUILD_ROOT%{_datadir}/icons $RPM_BUILD_ROOT%{_datadir}/pixmaps
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog README

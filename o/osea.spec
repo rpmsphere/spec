@@ -33,9 +33,6 @@ rm -rf %{buildroot}
 install -d %{buildroot}%{_bindir}
 install -m755 easytest easytest2 bxbep %{buildroot}%{_bindir}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc 00README
 %{_bindir}/*

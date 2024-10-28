@@ -31,9 +31,6 @@ make
 (cd docs && gzip -c boa.8 > boa.8.gz)
 (cd docs && make boa.html)
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %install
 rm -rf $RPM_BUILD_ROOT
 

@@ -20,7 +20,7 @@ daemon.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 sed -i '/set_unexpected/d' src/common/Exception.cc src/launchtool.cc src/test.cc
 sed -i '20i #include <string.h>' src/launchtool.cc
 sed -i '2i #include <string.h>' src/LaunchtoolCfg.cc

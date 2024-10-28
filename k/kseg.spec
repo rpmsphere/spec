@@ -29,9 +29,9 @@ well be used in math lessons in school.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 # fix home path
 sed -i "s|@KSEG_HOME@|%{_datadir}/%{name}|g" main.cpp
 
@@ -52,9 +52,6 @@ install -m644 %{SOURCE10} $RPM_BUILD_ROOT%{_datadir}/%{name}/locale/
 # install desktop icon and entry
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -Dm644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.xpm
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING AUTHORS README README.translators VERSION

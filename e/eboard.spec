@@ -1,23 +1,23 @@
-Name:		eboard
-Version:	1.1.1
-Release:	18.1
-Summary:	Chess board interface for ICS
-Group:		Amusements/Games
-License:	GPLv2+
-URL:		https://www.bergo.eng.br/eboard/
-Source0:	https://dl.sf.net/%{name}/%{name}-%{version}.tar.bz2
-Source1:	eboard.desktop
+Name:           eboard
+Version:        1.1.1
+Release:        18.1
+Summary:        Chess board interface for ICS
+Group:          Amusements/Games
+License:        GPLv2+
+URL:            https://www.bergo.eng.br/eboard/
+Source0:        https://dl.sf.net/%{name}/%{name}-%{version}.tar.bz2
+Source1:        eboard.desktop
 Source2:        eboard.png
-Patch0:		eboard-1.1.1-gcc44.patch
+Patch0:         eboard-1.1.1-gcc44.patch
 Patch1:         eboard-1.1.1-dlopen.patch
-Patch2:		eboard-1.1.1-png.patch
-BuildRequires:	libstdc++-devel
-BuildRequires:	libpng-devel
-BuildRequires:	cairo-devel
-BuildRequires:	pango-devel
-BuildRequires:	perl
-BuildRequires:	gtk2-devel
-BuildRequires:	desktop-file-utils
+Patch2:         eboard-1.1.1-png.patch
+BuildRequires:  libstdc++-devel
+BuildRequires:  libpng-devel
+BuildRequires:  cairo-devel
+BuildRequires:  pango-devel
+BuildRequires:  perl
+BuildRequires:  gtk2-devel
+BuildRequires:  desktop-file-utils
 
 %description
 Eboard provides a chess board interface to ICS (Internet Chess Servers)
@@ -25,9 +25,9 @@ like FICS and to chess engines like GNU Chess, Sjeng and Crafty.
 
 %prep 
 %setup -q
-%patch0 -p1 -b .gcc44
-%patch1 -p1 -b .dlopen
-%patch2 -p1 -b .png
+%patch 0 -p1 -b .gcc44
+%patch 1 -p1 -b .dlopen
+%patch 2 -p1 -b .png
 
 %build
 export EXTRAFLAGS=`echo '%{optflags} -Wno-format-security' | sed 's/  / /g; s/ /:/g'`
@@ -39,9 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR="$RPM_BUILD_ROOT"
 desktop-file-install --vendor "" --dir ${RPM_BUILD_ROOT}%{_datadir}/applications %{SOURCE1}
 install -Dm644 %{SOURCE2} ${RPM_BUILD_ROOT}%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING Documentation/*.txt INSTALL README TODO

@@ -61,9 +61,6 @@ desktop-file-install \
     --dir %{buildroot}%{_datadir}/applications \
     %{name}.desktop
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %doc COPYING LICENSES README.txt
 %{_bindir}/starfighter

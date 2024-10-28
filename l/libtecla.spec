@@ -35,10 +35,10 @@ editing facilities, similar to those of the tcsh shell.
 
 %prep
 %setup -q -n libtecla
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
 
 %build
 autoconf # patch3

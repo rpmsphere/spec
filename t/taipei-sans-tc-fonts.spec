@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/taipei-sans
+%define fontdir %{_datadir}/fonts/taipei-sans
 
 Summary: Taipei Sans Fonts
 Name: taipei-sans-tc-fonts

@@ -10,8 +10,8 @@ URL:          ftp://ftp.ac-grenoble.fr/ge/educational_games
 Source0:      %{name}-%{version}.tar.bz2
 Source1:      %{name}_en.tgz
 Source2:      %{name}_fr.tgz
-Source10:	scrabble-48.png
-Patch:        %{name}-%{version}.patch
+Source10:       scrabble-48.png
+Patch0:        %{name}-%{version}.patch
 BuildRequires:    imake
 BuildRequires:    libX11-devel
 BuildRequires:    libXt-devel
@@ -23,7 +23,7 @@ X version of the popular board game, for 1 to 4 players.
 
 %prep
 %setup -q -a1 -a2
-%patch
+%patch 0
 
 %build
 export IMAKEINCLUDE=-I/usr/share/X11/config
@@ -54,9 +54,6 @@ Terminal=false
 Type=Application
 Categories=Game;BoardGame;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGES LICENSE README

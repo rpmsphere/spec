@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 %define _name rocketwiki
 
-Name:		rocketwiki-lqfb
-Version:	0.4
-Release:	1
-Summary:	RocketWiki for Liquid Feekback
-License:	MIT/X11
-Group:		Productivity/Networking
-Source0:	https://www.public-software-group.org/pub/projects/rocketwiki/liquid_feedback_edition/v%{version}/%{name}-v%{version}.tar.gz
-BuildRequires:	ghc-parsec-devel
-URL:		https://www.public-software-group.org/webmcp
-Provides:	%{_name}
+Name:           rocketwiki-lqfb
+Version:        0.4
+Release:        1
+Summary:        RocketWiki for Liquid Feekback
+License:        MIT/X11
+Group:          Productivity/Networking
+Source0:        https://www.public-software-group.org/pub/projects/rocketwiki/liquid_feedback_edition/v%{version}/%{name}-v%{version}.tar.gz
+BuildRequires:  ghc-parsec-devel
+URL:            https://www.public-software-group.org/webmcp
+Provides:       %{_name}
 
 %description
 RocketWiki is a small parser written in Haskell which translates a wiki
@@ -27,9 +27,6 @@ make
 %__rm -rf %{buildroot}
 %__mkdir_p %{buildroot}%{_bindir}
 %__install -m755 rocketwiki-lqfb rocketwiki-lqfb-compat %{buildroot}%{_bindir}
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc LICENSE

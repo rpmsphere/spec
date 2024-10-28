@@ -48,9 +48,6 @@ sed -i 's|/usr/share/pixmaps/%{name}.xpm|%{name}|' $RPM_BUILD_ROOT%{_datadir}/ap
 %{_datadir}/man/man1/%{name}.1.gz
 %{_datadir}/pixmaps/%{name}.xpm
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
 %Changelog
 * Wed Aug 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.8
 - Rebuilt for Fedora

@@ -22,7 +22,7 @@ privileges or security holes.
 
 %prep
 %setup -c
-%patch0 -p1
+%patch 0 -p1
 
 %build
 gcc %{optflags} %{name}%{version}.c -o %{name}

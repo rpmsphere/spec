@@ -11,12 +11,11 @@ Requires:       php >= 4.2.0
 Requires:       php-mysql
 Version:        2.1.2
 Release:        26.1
-%define apxs    /usr/bin/apxs
 Summary:        Web application for managing an educational facility
 License:        PHP-3.01
 Group:          Productivity/Networking/Web/Utilities
-%define	apache_libexecdir	%(%{apxs} -q LIBEXECDIR)
-%define	apache_sysconfdir	%(%{apxs} -q SYSCONFDIR)
+%define apache_libexecdir       %{_libdir}/httpd/modules
+%define apache_sysconfdir       /etc/httpd/conf
 %define FreeSMS_src_dir FreeSMS
 %define FreeSMS_dir /var/www/FreeSMS
 URL:            https://sourceforge.net/projects/freesms/

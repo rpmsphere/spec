@@ -1,25 +1,25 @@
 %define oname CorsixTH
 
-Summary:	Open source clone of Theme Hospital
-Name:		corsixth
-Version:	0.67
-Release:	1
-Epoch:		1
-License:	MIT
-Group:		Games/Strategy
-URL:		https://github.com/CorsixTH/CorsixTH
-Source0:	https://github.com/CorsixTH/CorsixTH/archive/v%{version}/%{oname}-%{version}.tar.gz
-Patch0:		CorsixTH-0.50-lua53.patch
-BuildRequires:	cmake
-BuildRequires:	ffmpeg-devel
-BuildRequires:	lua-devel
+Summary:        Open source clone of Theme Hospital
+Name:           corsixth
+Version:        0.67
+Release:        1
+Epoch:          1
+License:        MIT
+Group:          Games/Strategy
+URL:            https://github.com/CorsixTH/CorsixTH
+Source0:        https://github.com/CorsixTH/CorsixTH/archive/v%{version}/%{oname}-%{version}.tar.gz
+Patch0:         CorsixTH-0.50-lua53.patch
+BuildRequires:  cmake
+BuildRequires:  ffmpeg-devel
+BuildRequires:  lua-devel
 BuildRequires:  luajit-devel
-BuildRequires:	pkgconfig(freetype2)
-BuildRequires:	pkgconfig(sdl2)
-BuildRequires:	pkgconfig(SDL2_mixer)
-Requires:	lua-filesystem
-Requires:	lua-lpeg
-Requires:	timidity++
+BuildRequires:  pkgconfig(freetype2)
+BuildRequires:  pkgconfig(sdl2)
+BuildRequires:  pkgconfig(SDL2_mixer)
+Requires:       lua-filesystem
+Requires:       lua-lpeg
+Requires:       timidity++
 
 %description
 This project aims to reimplement the game engine of Theme Hospital, and
@@ -43,8 +43,8 @@ need a purchased copy of Theme Hospital in order to enjoy CorsixTH.
 %build
 export CXXFLAGS="-g -O2 -fPIC -fPIE -fpermissive"
 %cmake \
-	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
-	-DWITH_LUAJIT=ON
+        -DCMAKE_INSTALL_PREFIX=%{_prefix} \
+        -DWITH_LUAJIT=ON
 %cmake_build
 
 %install

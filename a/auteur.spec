@@ -26,9 +26,6 @@ mv -f $RPM_BUILD_ROOT%{_bindir}/%{name}.py $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/auteur
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 %{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
 

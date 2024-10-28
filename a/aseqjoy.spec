@@ -31,9 +31,6 @@ represents the joystick's position along the axis (eg 'left' -> 0, 'middle' ->
 %{__rm} -rf $RPM_BUILD_ROOT
 %{makeinstall}
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog README
 %doc %{_mandir}/man1/%{name}*

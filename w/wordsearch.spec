@@ -1,12 +1,12 @@
-Name:			wordsearch
-Summary:		Tool to create wordsearch puzzles
-Version:		2.1
-Release:		1
-Group:			Amusements/Games/Logic
-License:		BSD-2
-URL:			https://github.com/jensenpat/wordsearch
-Source:			%{name}-%{version}.tar.gz
-BuildArch:		noarch
+Name:                   wordsearch
+Summary:                Tool to create wordsearch puzzles
+Version:                2.1
+Release:                1
+Group:                  Amusements/Games/Logic
+License:                BSD-2
+URL:                    https://github.com/jensenpat/wordsearch
+Source:                 %{name}-%{version}.tar.gz
+BuildArch:              noarch
 
 %description
 A classic word search game that you can play in your terminal.
@@ -26,9 +26,6 @@ install -m644 puzzles/* $RPM_BUILD_ROOT/%{_datadir}/%{name}
 %{_datadir}/%{name}
 %{_mandir}/man6/%{name}.6*
 %doc README.md LICENSE
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1

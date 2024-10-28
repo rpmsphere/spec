@@ -39,9 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 ln -sf %{_bindir}/pd $RPM_BUILD_ROOT%{_libdir}/pd/bin/pd
 #rm $RPM_BUILD_ROOT%{_includedir}/portaudio.h $RPM_BUILD_ROOT%{_libdir}/libportaudio*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/pd*
 %{_datadir}/pixmaps/puredata.*

@@ -17,7 +17,7 @@ You have to select which word you want everytime.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure --disable-static
@@ -26,9 +26,6 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 ibus restart || :

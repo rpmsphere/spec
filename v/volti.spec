@@ -1,20 +1,20 @@
 %undefine _debugsource_packages
-Name:		volti
-Version:	0.2.3
-Release:	6.1
-Summary:	Applet for controlling audio volume
-License:	GPLv3
-Group:		Sound
-URL:		https://code.google.com/p/volti/
-Source0:	https://code.google.com/p/volti/%{name}-%{version}.tar.xz
-BuildArch:	noarch
-BuildRequires:	python2-devel
+Name:           volti
+Version:        0.2.3
+Release:        6.1
+Summary:        Applet for controlling audio volume
+License:        GPLv3
+Group:          Sound
+URL:            https://code.google.com/p/volti/
+Source0:        https://code.google.com/p/volti/%{name}-%{version}.tar.xz
+BuildArch:      noarch
+BuildRequires:  python2-devel
 BuildRequires:  desktop-file-utils
-Requires:	pygtk2
-Requires:	pygobject2
-Requires:	python-alsaaudio
-Requires:	python-dbus
-Requires:	python2-xlib
+Requires:       pygtk2
+Requires:       pygobject2
+Requires:       python-alsaaudio
+Requires:       python-dbus
+Requires:       python2-xlib
 
 %description
 GTK+ application for controlling audio volume from system
@@ -40,8 +40,8 @@ python2 setup.py install --root=%{buildroot}
 #sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 
 desktop-file-install --vendor="" \
-	--dir %{buildroot}%{_datadir}/applications \
-	%{buildroot}%{_datadir}/applications/*
+        --dir %{buildroot}%{_datadir}/applications \
+        %{buildroot}%{_datadir}/applications/*
 
 %find_lang %{name}
 

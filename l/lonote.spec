@@ -6,7 +6,7 @@ Summary:        Personal Notebook based on Qt Webkit
 License:        GPLv3 and ASL 2.0
 URL:            https://code.google.com/p/lonote
 #Source0:        https://lonote.googlecode.com/files/%{name}-%{version}.7z
-Source0:	%{name}-%{version}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3-devel
 BuildRequires:  dos2unix
@@ -47,9 +47,6 @@ dos2unix %{buildroot}%{_docdir}/%{name}-%{version}/*.txt
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.*
-
-%clean
-rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.1

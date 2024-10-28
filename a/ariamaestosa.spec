@@ -9,7 +9,7 @@ License: GPLv2 with exceptions (look at license.txt)
 Group: Sound
 URL: https://ariamaestosa.sourceforge.net
 Source: https://sourceforge.net/projects/ariamaestosa/files/%{name}/%{version}/%{srcname}-%{version}.tar.bz2
-BuildRequires: cvs flex gcc-c++ ghostscript-devel glib2-devel libGLU-devel alsa-lib-devel wxGTK3-devel rcs scons swig texlive-latex
+BuildRequires: cvs flex gcc-c++ ghostscript-devel glib2-devel libGLU-devel alsa-lib-devel wxGTK-devel rcs scons swig texlive-latex
 
 %description
 Aria Maestosa is an open-source (GPL) midi tracker/editor. It lets you 

@@ -9,8 +9,8 @@ URL:           https://swfmill.org
 Source:        https://swfmill.org/releases/swfmill-%{version}.tar.gz
 License:       GPL
 BuildRequires: gcc-c++, libxml2-devel, libxslt-devel, freetype-devel
-BuildRequires:	libpng-devel
-BuildRequires:	libpng12-devel
+BuildRequires:  libpng-devel
+BuildRequires:  libpng12-devel
 
 %description
 swfmill is an xml2swf and swf2xml processor with import functionalities.
@@ -33,9 +33,6 @@ make
 %install
 rm -rf "$RPM_BUILD_ROOT"
 %makeinstall
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %{_bindir}/swfmill

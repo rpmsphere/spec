@@ -77,9 +77,6 @@ install -m 755 example/result/test1.txt      $RPM_BUILD_ROOT%{_docdir}/%{name}/e
 install -m 755 example/result/test2.txt      $RPM_BUILD_ROOT%{_docdir}/%{name}/example/result/test2.txt
 install -m 755 example/result/test3.txt      $RPM_BUILD_ROOT%{_docdir}/%{name}/example/result/test3.txt
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/catass
 %{_bindir}/catci

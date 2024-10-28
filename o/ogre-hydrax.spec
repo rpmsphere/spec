@@ -26,7 +26,7 @@ of course, hydrax geometry modules and noise modules can be coded by users.
 Summary:        It is an add-on for Ogre for render pretty water scenes
 Group:          Development/Libraries/C and C++
 Requires:       libhydrax = %{version}
-Provides:		libhydrax.so
+Provides:               libhydrax.so
 
 %description devel
 It's fully configurable, all effect, such as water depth effects, smooth

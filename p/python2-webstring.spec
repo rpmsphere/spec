@@ -23,7 +23,7 @@ cElementTree libraries.
 
 %prep
 %setup -q -n %{modname}-%{version}
-%patch0 -p0
+%patch 0 -p0
 %{__chmod} -x README PKG-INFO
 
 %build
@@ -34,9 +34,6 @@ python2 setup.py install \
 --optimize 1 \
 --prefix=%{_prefix} \
 --root=$RPM_BUILD_ROOT
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc README

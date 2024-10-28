@@ -45,9 +45,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/IceWMCP/*.
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/IceWMCP/*.py %{buildroot}%{_datadir}/IceWMCP/PyInstallShield
 sed -i 's|^python |python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc doc/*
 %{_datadir}/applications/%{name}.desktop

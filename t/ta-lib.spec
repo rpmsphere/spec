@@ -1,12 +1,12 @@
-Name:		ta-lib
-Summary:	Technical Analysis Library
-Version:	0.4.0
-Release:	7.1
-License:	BSD
-Group:		System/Libraries
-Source:		https://sourceforge.net/projects/ta-lib/files/%{name}/%{version}/%{name}-%{version}-src.tar.gz
-URL:		https://ta-lib.org/
-BuildRequires:	automake libtool
+Name:           ta-lib
+Summary:        Technical Analysis Library
+Version:        0.4.0
+Release:        7.1
+License:        BSD
+Group:          System/Libraries
+Source:         https://sourceforge.net/projects/ta-lib/files/%{name}/%{version}/%{name}-%{version}-src.tar.gz
+URL:            https://ta-lib.org/
+BuildRequires:  automake libtool
 
 %description
 TA-Lib provides common functions for the technical analysis of
@@ -22,9 +22,9 @@ Widely used by trading software developers working with Excel,
   when new functions are added!
 
 %package devel
-Summary:	Include Files and Libraries mandatory for Development
-Group:		Development/Libraries/C and C++
-Requires:	%{name} = %{version}
+Summary:        Include Files and Libraries mandatory for Development
+Group:          Development/Libraries/C and C++
+Requires:       %{name} = %{version}
 
 %description devel
 This package contains all necessary include files and libraries needed
@@ -44,9 +44,6 @@ make CFLAGS+=-Wno-format-security
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc *.TXT

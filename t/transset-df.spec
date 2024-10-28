@@ -33,9 +33,6 @@ install -D -p -m 755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 %doc README ChangeLog
 %{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Fri Jul 01 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 6
 - Rebuilt for Fedora

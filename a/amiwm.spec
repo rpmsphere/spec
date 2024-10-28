@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
 Name:       amiwm
-Version:	0.22pl2
-Release:	1
-Summary:	Amiga Window Manager
-Group:		System/GUI/Other
-License:	Generic
-URL:		https://www.lysator.liu.se/~marcus/amiwm.html
-Source:		ftp://ftp.lysator.liu.se/pub/X11/wm/amiwm/amiwm%{version}.tar.gz
+Version:        0.22pl2
+Release:        1
+Summary:        Amiga Window Manager
+Group:          System/GUI/Other
+License:        Generic
+URL:            https://www.lysator.liu.se/~marcus/amiwm.html
+Source:         ftp://ftp.lysator.liu.se/pub/X11/wm/amiwm/amiwm%{version}.tar.gz
 BuildRequires: libX11-devel
 BuildRequires: libXmu-devel
 BuildRequires: bison flex
@@ -40,9 +40,6 @@ ln -s ../%{_lib}/amiwm/requestchoice %{buildroot}%{_bindir}/requestchoice
 sed -i s!%{buildroot}!! %{buildroot}%{_libdir}/amiwm/Xinitrc
 sed -i s!%{buildroot}!! %{buildroot}%{_libdir}/amiwm/Xsession
 sed -i s!%{buildroot}!! %{buildroot}%{_libdir}/amiwm/Xsession2
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README README.modules LICENSE

@@ -169,9 +169,6 @@ make
 %{_datadir}/*/*/*/yue*/LC_MESSAGES/*.mo
 /opt/wemeet/bin/*_yue*.qm
 
-%clean
-rm -rf %{buildroot}
-
 %changelog
 * Sun Apr 21 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2024.4
 - Rebuilt for Fedora

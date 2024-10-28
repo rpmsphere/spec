@@ -29,9 +29,9 @@ Authors:
 
 %prep
 %setup -q
-%patch1
-%patch2 -p1
-%patch3 -p1
+%patch 1
+%patch 2 -p1
+%patch 3 -p1
 
 %build
 CXXFLAGS="$RPM_OPT_FLAGS -DNDEBUG -Wall" \
@@ -51,9 +51,6 @@ cp $RPM_BUILD_ROOT%{_datadir}/icons/pavuk_32x32.xpm \
 rm -f $RPM_BUILD_ROOT%{_datadir}/icons/pavuk*
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 install -m 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %config %{_sysconfdir}/pavukrc

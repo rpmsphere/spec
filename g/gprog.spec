@@ -1,18 +1,18 @@
 %define _libdir %{_prefix}/lib
 
-Name:				 gprog
-Version:			 1.20
-Release:			 4.1
-Summary:			 GUI Pipe Meter
-Source:			 https://stromberg.dnsalias.org/~dstromberg/gprog/releases/gprog-%{version}.tar.gz
-Source99:		 %{name}-rpmlintrc
-Patch1:			 gprog-fix_paths.patch
-URL:				 https://stromberg.dnsalias.org/~dstromberg/gprog/
-Group:			 System/X11/Utilities
-License:			 GNU General Public License version 3 (GPL v3)
-BuildRequires:	 make
-Requires:		 python2
-BuildArch:		 noarch
+Name:                            gprog
+Version:                         1.20
+Release:                         4.1
+Summary:                         GUI Pipe Meter
+Source:                  https://stromberg.dnsalias.org/~dstromberg/gprog/releases/gprog-%{version}.tar.gz
+Source99:                %{name}-rpmlintrc
+Patch1:                  gprog-fix_paths.patch
+URL:                             https://stromberg.dnsalias.org/~dstromberg/gprog/
+Group:                   System/X11/Utilities
+License:                         GNU General Public License version 3 (GPL v3)
+BuildRequires:   make
+Requires:                python2
+BuildArch:               noarch
 
 %description
 gprog is a basic GUI pipe meter that shows the percentage complete as data
@@ -23,7 +23,7 @@ transfer.
 
 %prep
 %setup -q -c "%{name}-%{version}"
-%patch1
+%patch 1
 %__sed -i 's|@@LIBDIR@@|%{_libdir}|g' gprog
 
 %build
@@ -31,16 +31,13 @@ transfer.
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
 %__make \
-	 prefix="%{_prefix}" \
-	 libdir="%{_libdir}" \
-	 DESTDIR="$RPM_BUILD_ROOT" \
-	 install
+         prefix="%{_prefix}" \
+         libdir="%{_libdir}" \
+         DESTDIR="$RPM_BUILD_ROOT" \
+         install
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}/usr/lib/%{name}/*.py
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc COPYING README

@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Summary:	Compilation controller
-Name:		ccontrol
-Version:	1.0
-Release:	15.1
-License:	GPL
-Group:		Development/Tools
-Source0:	https://ccontrol.ozlabs.org/releases/%{name}-%{version}.tar.bz2
-URL:		https://ccontrol.ozlabs.org/
+Summary:        Compilation controller
+Name:           ccontrol
+Version:        1.0
+Release:        15.1
+License:        GPL
+Group:          Development/Tools
+Source0:        https://ccontrol.ozlabs.org/releases/%{name}-%{version}.tar.bz2
+URL:            https://ccontrol.ozlabs.org/
 BuildRequires: xmlto, asciidoc, valgrind
 BuildRequires: ghostscript-core, netpbm
-Source1:	Makefile-%{name}-%{version}
+Source1:        Makefile-%{name}-%{version}
 
 %description
 The ccontrol program takes over the roles of the compiler, linker and make,
@@ -40,9 +40,6 @@ touch config.status Makefile.in configure Makefile
 %{__make} install prefix=$RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_bindir}/g%{name}.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README TODO CHANGES COPYING

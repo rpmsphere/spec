@@ -1,13 +1,13 @@
-Name:		lookat
-Version:	2.0.1
-Release:	1
-Summary:	Lookat / bekijk is a program to view Un*x text files and man pages. 
-Group:		Applications/Text
-License:	GPLv2+	
-URL:		https://www.wagemakers.be/english/programs/lookat
-Source0:	lookat_bekijk-%{version}.tar.gz
-BuildRequires:	gcc, ncurses-devel
-Requires:	ncurses-libs	
+Name:           lookat
+Version:        2.0.1
+Release:        1
+Summary:        Lookat / bekijk is a program to view Un*x text files and man pages. 
+Group:          Applications/Text
+License:        GPLv2+  
+URL:            https://www.wagemakers.be/english/programs/lookat
+Source0:        lookat_bekijk-%{version}.tar.gz
+BuildRequires:  gcc, ncurses-devel
+Requires:       ncurses-libs    
 
 %description
 "lookat"  (or "bekijk" in the Dutch version) is a program to view Un*x text
@@ -28,9 +28,6 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

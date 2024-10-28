@@ -1,12 +1,12 @@
-Summary: 	X nesting for the Matchbox Desktop
-Name: 		matchbox-nest
-Version: 	0.3
-Release: 	1
-URL: 		https://matchbox-project.org
-License: 	GPLv2+
-Group: 		Graphical desktop/Other
-Source: 	https://matchbox-project.org/sources/matchbox-nest/0.3/%{name}-%{version}.tar.bz2
-BuildRequires:	libmatchbox-devel libXtst-devel expat-devel
+Summary:        X nesting for the Matchbox Desktop
+Name:           matchbox-nest
+Version:        0.3
+Release:        1
+URL:            https://matchbox-project.org
+License:        GPLv2+
+Group:          Graphical desktop/Other
+Source:         https://matchbox-project.org/sources/matchbox-nest/0.3/%{name}-%{version}.tar.bz2
+BuildRequires:  libmatchbox-devel libXtst-devel expat-devel
 
 %description
 X nesting for the panel from Matchbox.
@@ -21,9 +21,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=%{buildroot} install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS README ChangeLog

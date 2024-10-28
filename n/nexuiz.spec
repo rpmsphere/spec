@@ -96,9 +96,6 @@ gtk-update-icon-cache -qf %{_datadir}/icons/hicolor 2>/dev/null || :
 update-desktop-database %{_datadir}/applications 2>/dev/null || :
 gtk-update-icon-cache -qf %{_datadir}/icons/hicolor 2>/dev/null || :
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %doc COPYING darkplaces.txt
 %{_bindir}/nexuiz-glx

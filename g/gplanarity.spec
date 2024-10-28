@@ -40,9 +40,6 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 update-mime-database %{_datadir}/mime &> /dev/null
 update-desktop-database %{_datadir}/applications &> /dev/null
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING
 %{_bindir}/*

@@ -1,15 +1,15 @@
-Name:		fuseiso
-Summary:	FUSE support for ISO filesystem images
-Version:	20070708
-Release:	16
-License:	GPLv2+
-Group:		System Environment/Base
-Source0:	https://ubiz.ru/dm/%{name}-%{version}.tar.bz2
+Name:           fuseiso
+Summary:        FUSE support for ISO filesystem images
+Version:        20070708
+Release:        16
+License:        GPLv2+
+Group:          System Environment/Base
+Source0:        https://ubiz.ru/dm/%{name}-%{version}.tar.bz2
 # Upstream: https://sourceforge.net/tracker/index.php?func=detail&aid=1933445&group_id=215002&atid=1031924
-Patch0:		fuseiso-largeiso.patch
-URL:		https://sourceforge.net/projects/fuseiso/
-BuildRequires:	fuse-devel, glib2-devel, zlib-devel
-Requires:	fuse
+Patch0:         fuseiso-largeiso.patch
+URL:            https://sourceforge.net/projects/fuseiso/
+BuildRequires:  fuse-devel, glib2-devel, zlib-devel
+Requires:       fuse
 
 %description
 Mount ISO filesystem images as a non-root user. Currently supports
@@ -18,7 +18,7 @@ types: ISO, BIN (single track only), NRG, MDF, IMG (CCD).
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 
 %build
 %configure
@@ -27,9 +27,6 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README

@@ -2,7 +2,7 @@ Name:           betaradio
 Version:        1.2
 Release:        1
 License:        GPLv2
-URL: 		https://code.google.com/p/betaradio/
+URL:            https://code.google.com/p/betaradio/
 BuildRequires:  gtk2-devel, libcurl-devel, gstreamer-devel, json-glib-devel, libsoup-devel, vala
 Source0:        https://betaradio.googlecode.com/files/%{name}-%{version}.tar.bz2
 Group:          Multimedia/Sound/Players
@@ -24,9 +24,6 @@ make
 %install
 rm -rf %buildroot
 make DESTDIR="$RPM_BUILD_ROOT" install
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %{_bindir}/betaradio

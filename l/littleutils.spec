@@ -48,9 +48,6 @@ make prefix=$RPM_BUILD_ROOT%{_prefix} install-extra
 rm -f $RPM_BUILD_ROOT%{_bindir}/filesize,%{_mandir}/man1/filesize.1}
 cd $RPM_BUILD_ROOT%{_bindir}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc BUGS ChangeLog FAQ LICENSES NEWS README TODO
 %{_bindir}/*

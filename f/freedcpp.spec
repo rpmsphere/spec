@@ -26,7 +26,7 @@ FreeDC++ is DC++ client based on LinuxDC++ source code.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 sed -i '116d' SConstruct
 
 %build
@@ -50,9 +50,6 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 %{_datadir}/icons/hicolor/*/*/%{name}*.*
 %{_datadir}/pixmaps/%{name}.*
 %doc %{_mandir}/man?/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.5

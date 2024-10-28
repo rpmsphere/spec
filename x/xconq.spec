@@ -1,27 +1,27 @@
-%define pre	20050612
+%define pre     20050612
 
-Name:		xconq
-Version:	7.5.0
-Release:	21.1
-Summary:	General turn-based 2D strategy game system
-URL:		https://xconq.org
-License:	GPL
-Group:		Games/Strategy
-Source0:	https://prdownloads.sourceforge.net/xconq/%{name}-%{version}-0pre.0.%{pre}.tar.bz2
-Patch0:		xconq-7.5.0-0pre.0.20050612-makefile.patch
-Patch1:		%{name}-7.5.0.tclpath.patch
-Patch2:		xconq-7.5.0-64bit-fix.patch
-Patch3:		xconq-7.5.0-0pre.0.20050612-fix-format-errors.patch
-BuildRequires:	paragui-devel
-BuildRequires:	freetype-devel
-BuildRequires:	SDL-devel
-BuildRequires:	ncurses-devel
-BuildRequires:	ncurses-static
-BuildRequires:	tk-devel
-BuildRequires:	tcl-devel
-BuildRequires:	texinfo
-BuildRequires:	ghostscript-core ImageMagick
-BuildRequires:	libXaw-devel
+Name:           xconq
+Version:        7.5.0
+Release:        21.1
+Summary:        General turn-based 2D strategy game system
+URL:            https://xconq.org
+License:        GPL
+Group:          Games/Strategy
+Source0:        https://prdownloads.sourceforge.net/xconq/%{name}-%{version}-0pre.0.%{pre}.tar.bz2
+Patch0:         xconq-7.5.0-0pre.0.20050612-makefile.patch
+Patch1:         %{name}-7.5.0.tclpath.patch
+Patch2:         xconq-7.5.0-64bit-fix.patch
+Patch3:         xconq-7.5.0-0pre.0.20050612-fix-format-errors.patch
+BuildRequires:  paragui-devel
+BuildRequires:  freetype-devel
+BuildRequires:  SDL-devel
+BuildRequires:  ncurses-devel
+BuildRequires:  ncurses-static
+BuildRequires:  tk-devel
+BuildRequires:  tcl-devel
+BuildRequires:  texinfo
+BuildRequires:  ghostscript-core ImageMagick
+BuildRequires:  libXaw-devel
 
 %description
 Xconq is a general strategy game system.  It is a complete system that
@@ -46,76 +46,76 @@ especially interesting for games about unusual or lesser-known strategic
 situations; it is unique in providing a single system for modelling
 the conflicts and strategies of any period in history.
 
-%package	tcltk
-Summary:	The Tcl/Tk user interface for the Xconq game system
-Group:		Games/Strategy
-Requires:	%{name} = %{version}
+%package        tcltk
+Summary:        The Tcl/Tk user interface for the Xconq game system
+Group:          Games/Strategy
+Requires:       %{name} = %{version}
 
-%description	tcltk
+%description    tcltk
 The Tcl/Tk user interface for the Xconq game engine relies on a mixture of 
 Tcl scripts and C code to provide a multi-windowed user experience. This 
 is presently the one which most players use.
 
-%package	curses
-Summary:	The curses (console) user interface for the Xconq game system
-Group:		Games/Strategy
-Requires:	%{name} = %{version}
+%package        curses
+Summary:        The curses (console) user interface for the Xconq game system
+Group:          Games/Strategy
+Requires:       %{name} = %{version}
 
-%description	curses
+%description    curses
 The Curses user interface is for running games in the Xconq engine on a 
 text console. It is quick, but lacking the more complete experience and 
 conveniecne of a graphical user interface.
 
-%package	sdl
-Summary:	The SDL user interface for the Xconq game system
-Group:		Games/Strategy
-Requires:	%{name} = %{version}
+%package        sdl
+Summary:        The SDL user interface for the Xconq game system
+Group:          Games/Strategy
+Requires:       %{name} = %{version}
 
-%description	sdl
+%description    sdl
 The SDL user interface is in its infancy and much development needs to be 
 done on it. However, it is a more modern game interface following the 
 single-window paradigm, and it is speedy.
 
 %prep
 %setup -q -n %{name}-%{version}-0pre.0.%{pre}
-%patch0 -p1 -b .makefile
-%patch1 -p0 -b .tclpath
-%patch2 -p1 -b .64bit
-%patch3 -p1 -b .format
+%patch 0 -p1 -b .makefile
+%patch 1 -p0 -b .tclpath
+%patch 2 -p1 -b .64bit
+%patch 3 -p1 -b .format
 sed -i 's|color < 0|color == NULL|' tcltk/tkmap.c
 
 %build
-%configure	--disable-freetypetest \
-		--disable-paraguitest \
-		--bindir=%{_bindir} \
+%configure      --disable-freetypetest \
+                --disable-paraguitest \
+                --bindir=%{_bindir} \
         --mandir=%{_mandir} \
         --infodir=%{_infodir} \
-		--datadir=%{_datadir}/%{name} \
-		--with-tclconfig=%{_libdir} \
+                --datadir=%{_datadir}/%{name} \
+                --with-tclconfig=%{_libdir} \
         --with-tkconfig=%{_libdir} \
-		--enable-alternate-scoresdir=%{_localstatedir}/lib/games/%{name}
+                --enable-alternate-scoresdir=%{_localstatedir}/lib/games/%{name}
 
 sed -i 's|-Wall|-Wall -Wno-narrowing -fpermissive -std=gnu++11|' Makefile */Makefile */*/Makefile
 
 LDFLAGS="%optflags" \
-make	all \
-	all-cconq \
+make    all \
+        all-cconq \
     all-sdlconq \
-	info
+        info
 
 %install
 rm -rf %{buildroot}
 install -d -m 755 %{buildroot}%{_datadir}/games
 install -d -m 755 %{buildroot}%{_localstatedir}/lib/games
 %make_install \
-	install-cconq \
+        install-cconq \
     install-sdlconq \
-	install-info \
-	bindir=%{buildroot}%{_bindir} \
+        install-info \
+        bindir=%{buildroot}%{_bindir} \
     mandir=%{buildroot}%{_mandir} \
     infodir=%{buildroot}%{_infodir} \
-	datadir=%{buildroot}%{_datadir}/%{name} \
-	scoresdir=%{buildroot}%{_localstatedir}/lib/games/%{name}
+        datadir=%{buildroot}%{_datadir}/%{name} \
+        scoresdir=%{buildroot}%{_localstatedir}/lib/games/%{name}
 
 mv %{buildroot}%{_bindir}/{x,tk}conq
 mv %{buildroot}%{_mandir}/man6/{x,tk}conq.6

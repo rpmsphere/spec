@@ -29,8 +29,8 @@ previous one.
 
 %prep
 %setup -q -n rng-%{name}-%{version}
-%patch0
-%patch1
+%patch 0
+%patch 1
 [ -e readme.dbx ] && mv readme.dbx readme.xml
 mv %{name} %{name}.in
 cat %{name}.in | sed s=@INCELIMDIR@=%{INCELIMDIR}= > %{name}
@@ -48,9 +48,6 @@ mkdir -p $RPM_BUILD_ROOT%{INCELIMDIR} \
          $RPM_BUILD_ROOT%{_bindir}
 cp -vi *.xsl $RPM_BUILD_ROOT%{INCELIMDIR}/
 install -m 755 %{name} $RPM_BUILD_ROOT%{_bindir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 #doc readme.xml readme.html

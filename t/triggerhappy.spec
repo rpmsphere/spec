@@ -8,7 +8,7 @@ License:        GPL-3.0+
 Group:          System/Base
 URL:            https://github.com/wertarbyte/triggerhappy
 Source:         https://github.com/wertarbyte/triggerhappy/archive/release/0.5.0.tar.gz#/%{name}-release-%{version}.tar.gz
-Patch:          0001-Fix-systemd-service.patch
+Patch0:          0001-Fix-systemd-service.patch
 
 %description
 Triggerhappy is a hotkey daemon developed with small and embedded systems in
@@ -18,7 +18,7 @@ configuration.
 
 %prep
 %setup -q -n %{name}-release-%{version}
-%patch -p1
+%patch 0 -p1
 
 %build
 make %{?_smp_mflags}

@@ -6,14 +6,14 @@ Group:          Amusements/Games/Logic
 License:        GPL v2 or later
 URL:            https://www710.univ-lyon1.fr/ftp/xbl/xbl.html
 Source:         %{name}-%{version}.tar.bz2
-Patch:          %{name}-%{version}-config.patch
+Patch0:          %{name}-%{version}-config.patch
 
 %description
 3D Tetris for X Window System.
 
 %prep
 %setup -q
-%patch
+%patch 0
 sed -i -e 's|usr/local|usr|' -e 's|usr/man|usr/share/man|' -e 's|usr/lib/X11/app-defaults|usr/share/X11/app-defaults|' configure* Makefile*
 
 %build
@@ -27,9 +27,6 @@ mkdir -p $RPM_BUILD_ROOT/usr/bin
 mkdir -p $RPM_BUILD_ROOT/usr/share/man/man6
 mkdir -p $RPM_BUILD_ROOT/var/games/xbl
 make DESTDIR=$RPM_BUILD_ROOT SCOREDIR=/var/games/xbl install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING INSTALL README xbl.html xbl-*

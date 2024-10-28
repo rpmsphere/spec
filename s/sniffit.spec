@@ -1,7 +1,7 @@
 Summary: Program for demonstrating the unsafeness of TCP
-Summary(es):	A network protocol analyzer
-Summary(pl):	Program do nasłuchu połączeń TCP/UDP/ICMP
-Summary(pt_BR):	Um analisador de protocolos de rede
+Summary(es):    A network protocol analyzer
+Summary(pl):    Program do nasłuchu połączeń TCP/UDP/ICMP
+Summary(pt_BR): Um analisador de protocolos de rede
 Name: sniffit
 Version: 0.5
 Release: 1

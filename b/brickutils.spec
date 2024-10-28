@@ -33,9 +33,6 @@ echo 'Categories=Game;BlocksGame;' >> %{buildroot}%{_datadir}/applications/%{_na
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f INSTALLED_FILES
 
 %changelog

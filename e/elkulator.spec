@@ -25,9 +25,9 @@ An Acorn Electron emulator. This is a fork of the original Elukator emulator.
 %prep
 %setup -qn %{name}-master
 # The alut check fails so patch it out. BuildRequires takes care of that anyway
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 unzip %{SOURCE1}
 
 %build

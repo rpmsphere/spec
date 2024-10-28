@@ -1,20 +1,20 @@
-Name:		pnmixer
-Version:	0.7.2
-Release:	3
-Summary:	Lightweight mixer applet
-Group:		Sound/Utilities
-License:	GPLv3
-URL:		https://github.com/nicklan/pnmixer/wiki
-Source0:	https://github.com/nicklan/pnmixer/archive/v%{version}%{?prel:-%prel}/%{name}-%{version}.tar.gz
-Patch0:		0001-Try-to-use-pavucontrol-also-as-a-mixer-app-if-Volume.patch
-BuildRequires:	cmake
-BuildRequires:	pkgconfig(alsa)
-BuildRequires:	desktop-file-utils
-BuildRequires:	gettext
-BuildRequires:	git-core
-BuildRequires:	gtk3-devel
-BuildRequires:	pkgconfig(libnotify)
-Recommends:	pavucontrol
+Name:           pnmixer
+Version:        0.7.2
+Release:        3
+Summary:        Lightweight mixer applet
+Group:          Sound/Utilities
+License:        GPLv3
+URL:            https://github.com/nicklan/pnmixer/wiki
+Source0:        https://github.com/nicklan/pnmixer/archive/v%{version}%{?prel:-%prel}/%{name}-%{version}.tar.gz
+Patch0:         0001-Try-to-use-pavucontrol-also-as-a-mixer-app-if-Volume.patch
+BuildRequires:  cmake
+BuildRequires:  pkgconfig(alsa)
+BuildRequires:  desktop-file-utils
+BuildRequires:  gettext
+BuildRequires:  git-core
+BuildRequires:  gtk3-devel
+BuildRequires:  pkgconfig(libnotify)
+Recommends:     pavucontrol
 
 %description
 PNMixer is system tray sound mixer. Currently it supports ALSA and PulseAudio.
@@ -48,7 +48,7 @@ PNMixer is a fork of OBMixer with a number of additions. These include:
 desktop-file-install \
     --dir=%{buildroot}%{_sysconfdir}/xdg/autostart \
     --add-category="Audio" \
-    	*-linux-build/data/desktop/pnmixer.desktop
+        *-linux-build/data/desktop/pnmixer.desktop
 
 %find_lang %{name}
 

@@ -83,12 +83,12 @@ with functions written in C.
 
 %prep
 %setup -q -n smalltalk-%{version}
-#%patch1 -p1 -b .auto
-#%patch2 -p1 -b .ltdl
-#%patch3 -p1 -b .inf
-#%patch4 -p1 -b .emx
-#%patch5 -p1 -b .tk86
-%patch6 -p1 -b .format
+#%patch 1 -p1 -b .auto
+#%patch 2 -p1 -b .ltdl
+#%patch 3 -p1 -b .inf
+#%patch 4 -p1 -b .emx
+#%patch 5 -p1 -b .tk86
+%patch 6 -p1 -b .format
 
 %build
 libtoolize

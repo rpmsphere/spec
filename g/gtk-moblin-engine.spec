@@ -27,9 +27,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING.LIB README NEWS ChangeLog
 %{_datadir}/themes/Moblin-Netbook

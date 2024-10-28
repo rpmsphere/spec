@@ -9,6 +9,7 @@ Group: Development/Language
 URL: https://github.com/odin-lang/Odin
 #Source0: https://github.com/odin-lang/Odin/archive/refs/heads/master.zip#/Odin-master.zip
 Source0: Odin-dev-2022-08.tar.gz
+BuildRequires: llvm11-devel
 
 %description
 Odin is a general-purpose programming language with distinct typing, built for
@@ -28,9 +29,6 @@ make
 mkdir -p %{buildroot}%{_bindir} %{buildroot}%{_libexecdir}/Odin
 cp -a odin core vendor %{buildroot}%{_libexecdir}/Odin
 ln -s ../libexec/Odin/odin %{buildroot}%{_bindir}/odin-lang
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc LICENSE *.md

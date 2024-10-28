@@ -1,15 +1,15 @@
-Summary:	Aurora engine for Gtk 2.x
-Group:		Graphical desktop/Other
-Name:		gtk-aurora-engine
-Version:	1.5.1
-Release:	21.1
-License:	GPLv2+
-URL:		https://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
-Source0:	https://gnome-look.org/CONTENT/content-files/56438-aurora-%{version}.tar.bz2
+Summary:        Aurora engine for Gtk 2.x
+Group:          Graphical desktop/Other
+Name:           gtk-aurora-engine
+Version:        1.5.1
+Release:        21.1
+License:        GPLv2+
+URL:            https://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
+Source0:        https://gnome-look.org/CONTENT/content-files/56438-aurora-%{version}.tar.bz2
 Source1:    Aurora-index.theme
 Source2:    aurora_by_paolorotolo-1920x1200.png
-Patch0:		animation.diff
-BuildRequires:	pkgconfig(gtk+-2.0)
+Patch0:         animation.diff
+BuildRequires:  pkgconfig(gtk+-2.0)
 Requires: awoken-icon-theme
 Requires: uista-cursor-theme
 
@@ -24,7 +24,7 @@ the theming of Gnome panel widgets.
 %setup -qc
 tar xf *.tar.bz2
 tar xf *.tar.gz
-%patch0 -p1
+%patch 0 -p1
 
 # Fix bug 56215:
 sed -i 's/\(^.*odd_row_color.*\)/\#\1/' Aurora/gtk-2.0/gtkrc

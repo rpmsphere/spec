@@ -36,9 +36,6 @@ desktop-file-install                                    \
 --dir=${RPM_BUILD_ROOT}%{_datadir}/applications         \
 linux/%{name}.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %doc COPYRIGHT

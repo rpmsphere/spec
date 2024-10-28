@@ -6,7 +6,7 @@ License:      GPL
 Version:      0.0.2.2
 Release:      4.1
 Source0:      https://ttf2eot.googlecode.com/files/ttf2eot-0.0.2-2.tar.gz
-Patch:        ttf2eot.patch
+Patch0:        ttf2eot.patch
 
 %description
 ttf2eot is a small utility fort converting TrueType Fonts (TTF)
@@ -16,7 +16,7 @@ Chromium's WebKit derived code base.
 
 %prep
 %setup -q -n ttf2eot-0.0.2-2
-%patch -p0
+%patch 0 -p0
 
 %build
 %{__make} %{_smp_mflags} CXX="%{__cxx}" CXXFLAGS="%{optflags} -Wno-multichar"

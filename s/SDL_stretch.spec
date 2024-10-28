@@ -58,9 +58,6 @@ export CC=clang CXX=clang++
 cd %buildroot%_libdir/%name; for i in *.so*; do mv $i ..; ln -s ../$i .; done
 export CC=clang CXX=clang++
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %_libdir/*.so.*
 

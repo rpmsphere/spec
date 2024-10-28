@@ -8,7 +8,7 @@ URL:            https://sourceforge.net/projects/php-screw/
 Source0:        https://sourceforge.net/projects/php-screw/files/%{name}/%{version}/php_screw-%{version}.tar.gz
 BuildRequires:  php-devel
 BuildRequires:  automake
-Requires:  	php
+Requires:       php
 
 %description
 PHP Screw is a PHP script encryption tool. When you are developing a
@@ -31,9 +31,6 @@ make -C tools
 %install
 install -Dm755 modules/php_screw.so $RPM_BUILD_ROOT%{_libdir}/php/modules/php_screw.so
 install -Dm755 tools/screw $RPM_BUILD_ROOT%{_bindir}/screw
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE README.*

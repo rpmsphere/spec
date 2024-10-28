@@ -1,13 +1,13 @@
-Name:		gtkperf
-Summary:	GTK+ performance tester
+Name:           gtkperf
+Summary:        GTK+ performance tester
 Summary(ru_RU.UTF-8): Утилита для тестирования производительности модулей прорисовки GTK+
-Version:	0.40
-Release:	4.1
-License:	GPLv2
-Group:		System/X11
-Source0:	%{name}-%{version}.tar.gz
+Version:        0.40
+Release:        4.1
+License:        GPLv2
+Group:          System/X11
+Source0:        %{name}-%{version}.tar.gz
 Source1:        gtkperf.desktop
-URL:		https://gtkperf.sourceforge.net/
+URL:            https://gtkperf.sourceforge.net/
 BuildRequires:  gcc-c++ desktop-file-utils gtk2-devel
 
 %description
@@ -40,12 +40,12 @@ mv -f ChangeLog.utf8 ./ChangeLog
 %install
 %make_install
 mv %{buildroot}/usr/doc %{buildroot}%{_datadir}/doc
-desktop-file-install --vendor=""	\
-	--dir=%{buildroot}%{_datadir}/applications\
+desktop-file-install --vendor=""        \
+        --dir=%{buildroot}%{_datadir}/applications\
         --remove-category=System \
         --add-category=Development \
         --add-category=Profiling \
-	%{SOURCE1}
+        %{SOURCE1}
 
 %files
 %{_docdir}/%{name}

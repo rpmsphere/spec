@@ -1,25 +1,25 @@
 %undefine _debugsource_packages
 
-Summary:	An Integrated Development Environment for producing eLearning
-Name: 		salasaga
-Version: 	0.8.0.alpha5
-Release: 	9.4
-License:	LGPLv2+
+Summary:        An Integrated Development Environment for producing eLearning
+Name:           salasaga
+Version:        0.8.0.alpha5
+Release:        9.4
+License:        LGPLv2+
 Group:      Games/Other
-URL:		https://www.salasaga.org/
+URL:            https://www.salasaga.org/
 Source:     https://prdownloads.sourceforge.net/salasaga/%{name}-%{version}.tar.bz2
-Requires:	ming
-Requires:	libgnome
-Requires:	giflib
-Requires:	GConf2
-BuildRequires:	desktop-file-utils
-BuildRequires:	perl(XML::Parser)
-BuildRequires:	ming-devel
-BuildRequires:	giflib
-BuildRequires:	GConf2-devel
-BuildRequires:	libgnome-devel
-BuildRequires:	openal-soft-devel
-BuildRequires:	udisks2
+Requires:       ming
+Requires:       libgnome
+Requires:       giflib
+Requires:       GConf2
+BuildRequires:  desktop-file-utils
+BuildRequires:  perl(XML::Parser)
+BuildRequires:  ming-devel
+BuildRequires:  giflib
+BuildRequires:  GConf2-devel
+BuildRequires:  libgnome-devel
+BuildRequires:  openal-soft-devel
+BuildRequires:  udisks2
 
 %description
 Imagine a free, easy to use GUI authoring environment that helps you create visually impressive 
@@ -56,9 +56,6 @@ update-desktop-database &> /dev/null || :
 %postun
 update-mime-database %{_datadir}/mime &> /dev/null || :
 update-desktop-database &> /dev/null || :
-
-%clean
-%__rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %dir %{_datadir}/%{name}

@@ -1,16 +1,16 @@
 Name:       lwqq
-Version:	0.2
-Release:	10.1
-License:	GPLv3
-Summary:	A Linux WebQQ Client
-URL:	https://github.com/mathslinux/lwqq
-Group:	Internet/Instant Messenger
-Source:	%{name}-master.zip
-BuildRequires:	cmake
-BuildRequires:	gtk3-devel
-BuildRequires:	libev-devel
-BuildRequires:	sqlite-devel
-BuildRequires:	libcurl-devel
+Version:        0.2
+Release:        10.1
+License:        GPLv3
+Summary:        A Linux WebQQ Client
+URL:    https://github.com/mathslinux/lwqq
+Group:  Internet/Instant Messenger
+Source: %{name}-master.zip
+BuildRequires:  cmake
+BuildRequires:  gtk3-devel
+BuildRequires:  libev-devel
+BuildRequires:  sqlite-devel
+BuildRequires:  libcurl-devel
 
 %description
 This Project is based on kernelhcy's gtkqq project, i rewrite the qq

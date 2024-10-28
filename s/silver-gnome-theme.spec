@@ -31,9 +31,6 @@ cp "Silver Wallpapers/Cubic texture.png" $RPM_BUILD_ROOT%{_datadir}/themes/%{the
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons
 cp -a "Black Diamonds" $RPM_BUILD_ROOT%{_datadir}/icons
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %{_datadir}/themes/%{theme_name}

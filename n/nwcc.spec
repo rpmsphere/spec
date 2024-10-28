@@ -38,9 +38,6 @@ done
 %{_libdir}/*.o
 %{_libdir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Thu Nov 27 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
 - Rebuilt for Fedora

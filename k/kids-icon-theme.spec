@@ -23,9 +23,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_datadir}/icons/%{theme_name}
 cp -a index.theme *x* %{buildroot}%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS
 %{_datadir}/icons/%{theme_name}

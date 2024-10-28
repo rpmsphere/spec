@@ -6,7 +6,7 @@ Group:            System Environment/Daemons
 License:          GPLv3
 URL:              https://launchpad.net/timekpr-next
 Source0:          https://launchpad.net/%{name}/stable/%{version}/+download/%{name}-%{version}.tar.gz
-BuildArch:	  noarch
+BuildArch:        noarch
 
 %description
 Timekpr-nExT is a program that tracks and controls the computer usage

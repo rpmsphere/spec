@@ -37,9 +37,6 @@ make install DESTDIR=%{buildroot}
 install -d %{buildroot}%{_datadir}/%{name}
 install -m644 src/*.R %{buildroot}%{_datadir}/%{name}
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %{_bindir}/*
 %{_datadir}/man/man1/*.1*

@@ -1,21 +1,21 @@
-Name:			toycars
-Summary:		Toy Cars is a physics based 2-D racer
-License:		GPL
-Group:			Amusements/Games/Action/Race
-Version:		0.3.7
-Release:		1
-URL:			https://sourceforge.net/projects/toycars/
-Source:			%{name}-%{version}.tar.gz
-Patch0:			%{name}-64bit.patch
-Patch1:			%{name}-gcc43.patch
-BuildRequires:	gcc-c++
-#BuildRequires:	Mesa-devel
-BuildRequires:	mesa-libGL-devel
-#BuildRequires:	libfmodex-devel
-BuildRequires:	pkgconfig
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_image-devel
-#BuildRequires:	update-desktop-files
+Name:                   toycars
+Summary:                Toy Cars is a physics based 2-D racer
+License:                GPL
+Group:                  Amusements/Games/Action/Race
+Version:                0.3.7
+Release:                1
+URL:                    https://sourceforge.net/projects/toycars/
+Source:                 %{name}-%{version}.tar.gz
+Patch0:                 %{name}-64bit.patch
+Patch1:                 %{name}-gcc43.patch
+BuildRequires:  gcc-c++
+#BuildRequires: Mesa-devel
+BuildRequires:  mesa-libGL-devel
+#BuildRequires: libfmodex-devel
+BuildRequires:  pkgconfig
+BuildRequires:  SDL-devel
+BuildRequires:  SDL_image-devel
+#BuildRequires: update-desktop-files
 
 %description
 Toy Cars is a physics based 2-D racer.
@@ -39,12 +39,12 @@ try and prevent your car from going off the screen.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %ifarch x86_64
 %__sed -i -e 's|lfmodex|lfmodex64|g' \
-	configure
+        configure
 %endif
 
 %__rm data/tracks/._tracklist.xml
@@ -62,7 +62,7 @@ export CXXFLAGS="$RPM_OPTF_LAGS -fPIC -I%{_includedir}/fmodex"
 # install the menu icon
 %__install -dm 755 %{buildroot}%{_datadir}/pixmaps
 %__install -m 644 celica-render.png \
-	%{buildroot}%{_datadir}/pixmaps/%{name}.png
+        %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 # install menu entry
 %__install -dm 755 %{buildroot}%{_datadir}/applications
@@ -81,10 +81,7 @@ Categories=Game;SportsGame;
 EOF
 
 %__install -m 644 %{name}*.desktop \
-	%{buildroot}%{_datadir}/applications
-
-%clean
-%__rm -rf %{buildroot}
+        %{buildroot}%{_datadir}/applications
 
 %files
 %doc AUTHORS ChangeLog COPYING README TODO

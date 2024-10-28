@@ -10,6 +10,7 @@ Group:     Games/Entertainment
 Source0:   %{_name}-%{version}-Linux-2.2.x.tar.gz
 URL:       https://beastieworker.sourceforge.net/
 BuildRequires:  SDL-devel >= 1.2
+BuildRequires:  mesa-libGLU-devel
 
 %description
 Fish Fillets NG is strictly a puzzle game. The goal in every of the seventy
@@ -55,9 +56,6 @@ Type=Application
 Categories=Game;ArcadeGame;
 EOF
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %attr(755,root,root) %{_bindir}/%{name}
@@ -68,5 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4
 - Rebuilt for Fedora
-* Fri Nov 11 2009 Gene <gene@ossii.com.tw> 0.4-1
+* Wed Nov 11 2009 Gene <gene@ossii.com.tw> 0.4-1
 - Build for OSSII

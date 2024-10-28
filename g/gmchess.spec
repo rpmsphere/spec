@@ -1,15 +1,15 @@
 Name:           gmchess
 Version:        0.29.6
 Release:        1
-Summary:	one chinese chess game
+Summary:        one chinese chess game
 Group:          Amusements/Games
 License:        LGPL
 URL:            https://code.google.com/p/gmchess/
 Source0:        https://gmchess.googlecode.com/files/%{name}-%{version}.tar.bz2
-Source1:	gmchess-0.29.3.zh_TW.po
-BuildRequires:	intltool, gettext
+Source1:        gmchess-0.29.3.zh_TW.po
+BuildRequires:  intltool, gettext
 BuildRequires:  gtkmm24-devel
-BuildRequires:	libglademm24-devel
+BuildRequires:  libglademm24-devel
 
 %description
 The current release can load chess collection of records now. The supports of records can be created by  QQ象棋, 联众象棋, 中游象棋 and 象棋演播室.
@@ -57,9 +57,6 @@ Icon=%{name}
 Encoding=UTF-8
 Categories=Game;BoardGame;
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/*

@@ -36,9 +36,6 @@ cp %{SOURCE2} data/gtanshelpzh.txt
 %postun
 %{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor
 
-%clean
-rm -rf %{buildroot}
-
 %files -f gtans.lang
 %doc ChangeLog INSTALL COPYING NEWS README AUTHORS
 %{_bindir}/*

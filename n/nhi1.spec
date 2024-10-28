@@ -25,7 +25,7 @@ Perl, PHP, Python, Ruby, Tcl and VB.NET.
 %prep
 %setup -q -n NHI1-%{version}
 %ifarch aarch64
-%patch0 -p1
+%patch 0 -p1
 %endif
 
 %build

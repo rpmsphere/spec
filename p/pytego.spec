@@ -1,14 +1,14 @@
-Name:		pytego
-Version:	0.02
-Release:	1
-Summary:	A classic boardgame "Stratego" from Milton Bradley
-Group:		Amusements/Games
-License:	GPL
-URL:		https://members.cox.net/churchillrm/projects.html#pytego
-Source0:	https://members.cox.net/churchillrm/%{name}-%{version}.tar.gz
-Source1:	%{name}.png
-Requires:	python, pygame, SDL
-BuildArch:	noarch
+Name:           pytego
+Version:        0.02
+Release:        1
+Summary:        A classic boardgame "Stratego" from Milton Bradley
+Group:          Amusements/Games
+License:        GPL
+URL:            https://members.cox.net/churchillrm/projects.html#pytego
+Source0:        https://members.cox.net/churchillrm/%{name}-%{version}.tar.gz
+Source1:        %{name}.png
+Requires:       python, pygame, SDL
+BuildArch:      noarch
 
 %description
 Pytego is a two-player, cross-platform, networked clone of the
@@ -48,9 +48,6 @@ Categories=Game;StrategyGame;
 EOF
 
 sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_libdir}/%{name}/*.py
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

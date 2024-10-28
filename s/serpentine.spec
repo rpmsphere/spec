@@ -9,12 +9,12 @@ License:        GPL
 URL:            https://s1x.homelinux.net/projects/serpentine
 Source0:        https://download.berlios.de/serpentine/serpentine-%{version}.tar.bz2
 Source1:        https://www.iconattitude.com/icons/open_icon_library/apps/png/64/%{name}.png
-BuildArch:	noarch
-BuildRequires:	pygtk2-devel, GConf2-devel      
-BuildRequires:	perl-XML-Parser
-BuildRequires:	desktop-file-utils, gettext
-Requires:	python2-gstreamer, gnome-python2-nautilus-cd-burner
-Requires:	gnome-python2-totem, gnome-python2-gnomevfs, gnome-python2-gconf
+BuildArch:      noarch
+BuildRequires:  pygtk2-devel, GConf2-devel      
+BuildRequires:  perl-XML-Parser
+BuildRequires:  desktop-file-utils, gettext
+Requires:       python2-gstreamer, gnome-python2-nautilus-cd-burner
+Requires:       gnome-python2-totem, gnome-python2-gnomevfs, gnome-python2-gconf
 Requires(post): desktop-file-utils
 Requires(postun): desktop-file-utils
 
@@ -39,7 +39,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 desktop-file-install --vendor "" --delete-original         \
         --dir ${RPM_BUILD_ROOT}%{_datadir}/applications         \
-	--remove-category X-Ximian-Main                         \
+        --remove-category X-Ximian-Main                         \
         $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
 echo "Name[zh_TW]=蛇紋音樂光碟製作" >> $RPM_BUILD_ROOT%{_datadir}/applications/serpentine.desktop
@@ -55,9 +55,6 @@ update-desktop-database &> /dev/null ||:
 
 %postun
 update-desktop-database &> /dev/null ||:
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS COPYING NEWS README

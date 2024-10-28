@@ -1,21 +1,21 @@
 %global __os_install_post %{nil}
 %define _name liquid_feedback_frontend
 
-Name:		liquidfeedback-frontend
-Version:	2.2.2
-Release:	1
-Summary:	Interactive Democracy Frontend
-License:	MIT/X11
-Group:		Productivity/Networking
-Source0:	https://www.public-software-group.org/pub/projects/liquid_feedback/frontend/v%{version}/%{_name}-v%{version}.tar.gz
-Source1:	liquidfeedback.conf
-Source2:	myconfig.lua
-Requires:	liquidfeedback-core
-Requires:	lua
-Requires:	webmcp
+Name:           liquidfeedback-frontend
+Version:        2.2.2
+Release:        1
+Summary:        Interactive Democracy Frontend
+License:        MIT/X11
+Group:          Productivity/Networking
+Source0:        https://www.public-software-group.org/pub/projects/liquid_feedback/frontend/v%{version}/%{_name}-v%{version}.tar.gz
+Source1:        liquidfeedback.conf
+Source2:        myconfig.lua
+Requires:       liquidfeedback-core
+Requires:       lua
+Requires:       webmcp
 #BuildRequires:  libpq-devel / postgresql-devel
-BuildRequires:	rocketwiki-lqfb
-URL:		https://liquidfeedback.org/
+BuildRequires:  rocketwiki-lqfb
+URL:            https://liquidfeedback.org/
 
 %description
 LiquidFeedback is an open-source software, powering internet platforms for
@@ -46,9 +46,6 @@ echo 'include "conf.d/liquidfeedback.conf"' >> /etc/lighttpd/modules.conf
 
 %postun
 sed -i '/liquidfeedback/d' /etc/lighttpd/modules.conf
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc LICENSE README

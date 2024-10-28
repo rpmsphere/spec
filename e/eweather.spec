@@ -7,26 +7,26 @@
 %define release %rel
 %endif
 
-Summary:	Enlightenment weather/forecasts module
-Name:		eweather
-Version:	0.2.0
-Release:	%release
-License:	LGPLv2+
-Group:		Graphical desktop/Enlightenment
-URL:		https://www.enlightenment.org/
+Summary:        Enlightenment weather/forecasts module
+Name:           eweather
+Version:        0.2.0
+Release:        %release
+License:        LGPLv2+
+Group:          Graphical desktop/Enlightenment
+URL:            https://www.enlightenment.org/
 # creating archive is quite simple:
 # svn export https://svn.enlightenment.org/svn/e/trunk/%%name %%name
 # tar cJf %%name-%%svn.tar.xz %%name
 %if 0%{?svn:1}
-Source:		%name-%svn.tar.xz
+Source:         %name-%svn.tar.xz
 %else
-Source:		%name-%version.tar.bz2
+Source:         %name-%version.tar.bz2
 %endif
-Patch0:		eweather-automake-1.13.patch
+Patch0:         eweather-automake-1.13.patch
 
-BuildRequires:	pkgconfig(efl)
-BuildRequires:	efl
-BuildRequires:	gettext-devel
+BuildRequires:  pkgconfig(efl)
+BuildRequires:  efl
+BuildRequires:  gettext-devel
 
 %description
 Enlightenment weather/forecasts module.
@@ -45,7 +45,7 @@ Requires: %name = %{version}-%{release}
 %else
 %setup -qn %name-version
 %endif
-%patch0 -p1 -b .automake113
+%patch 0 -p1 -b .automake113
 
 %build
 %if 0%{?svn:1}

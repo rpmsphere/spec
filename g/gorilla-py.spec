@@ -36,9 +36,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Nov 04 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20100625
 - Rebuilt for Fedora

@@ -1,12 +1,12 @@
-Name:		jetbrowser
-Version:	6.0.425
-Release:	5.1
-Summary:	An fast, secure and lightweight web browser
-License:	CDDL
-Group:		Internet
-Source0:	JetBrowser-6.0.425.tar.bz2
-URL:		https://jetbrowser.codeplex.com/
-BuildArch:	noarch
+Name:           jetbrowser
+Version:        6.0.425
+Release:        5.1
+Summary:        An fast, secure and lightweight web browser
+License:        CDDL
+Group:          Internet
+Source0:        JetBrowser-6.0.425.tar.bz2
+URL:            https://jetbrowser.codeplex.com/
+BuildArch:      noarch
 
 %description
 Based on the WebKit engine. It supports tabs, source viewing and inspecting.
@@ -36,9 +36,6 @@ EOF
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/webarena/wa_embed %{buildroot}%{_datadir}/webarena/modules/popmail %{buildroot}%{_datadir}/webarena/modules/pageinfo
 sed -i 's|/usr/bin/python |/usr/bin/python2|' %{buildroot}%{_datadir}/webarena/modules/downloader
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/webarena/webarena %{buildroot}%{_datadir}/webarena/modules/yahoostocks %{buildroot}%{_datadir}/webarena/modules/passcardgen
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

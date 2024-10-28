@@ -91,30 +91,30 @@ $RPM_BUILD_ROOT%{_datadir}/ldview/SansSerif.fnt
 install -m 644 ../Help.html $RPM_BUILD_ROOT%{_datadir}/ldview/Help.html
 install -m 644 ../Readme.txt $RPM_BUILD_ROOT%{_datadir}/ldview/Readme.txt
 install -m 644 ../ChangeHistory.html \
-				$RPM_BUILD_ROOT%{_datadir}/ldview/ChangeHistory.html
+                                $RPM_BUILD_ROOT%{_datadir}/ldview/ChangeHistory.html
 install -m 644 ../license.txt \
-				$RPM_BUILD_ROOT%{_datadir}/ldview/license.txt
+                                $RPM_BUILD_ROOT%{_datadir}/ldview/license.txt
 install -m 644 ../m6459.ldr $RPM_BUILD_ROOT%{_datadir}/ldview/m6459.ldr
 install -m 644 ../8464.mpd $RPM_BUILD_ROOT%{_datadir}/ldview/8464.mpd 
 install -m 644 ../LDViewMessages.ini \
-				$RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages.ini
+                                $RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages.ini
 cat ../LDExporter/LDExportMessages.ini >> \
-				$RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages.ini
+                                $RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages.ini
 install -m 644 ../Translations/German/LDViewMessages.ini \
-				$RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages_de.ini
+                                $RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages_de.ini
 install -m 644 ../Translations/Italian/LDViewMessages.ini \
-				$RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages_it.ini
+                                $RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages_it.ini
 install -m 644 ../Translations/Czech/LDViewMessages.ini \
-			    $RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages_cz.ini
+                            $RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages_cz.ini
 install -m 644 ../Translations/Hungarian/LDViewMessages.ini \
-				$RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages_hu.ini
+                                $RPM_BUILD_ROOT%{_datadir}/ldview/LDViewMessages_hu.ini
 install -m 644 todo.txt $RPM_BUILD_ROOT%{_datadir}/ldview/todo.txt
 install -m 644 ldview_en.qm $RPM_BUILD_ROOT%{_datadir}/ldview/ldview_en.qm
 install -m 644 ldview_de.qm $RPM_BUILD_ROOT%{_datadir}/ldview/ldview_de.qm
 install -m 644 ldview_it.qm $RPM_BUILD_ROOT%{_datadir}/ldview/ldview_it.qm
 install -m 644 ldview_cz.qm $RPM_BUILD_ROOT%{_datadir}/ldview/ldview_cz.qm
 install -m 644 ../LDExporter/LGEO.xml \
-			   $RPM_BUILD_ROOT%{_datadir}/ldview/LGEO.xml
+                           $RPM_BUILD_ROOT%{_datadir}/ldview/LGEO.xml
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/mime-info/
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/mime/packages/
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/application-registry/
@@ -125,28 +125,28 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/gnome/32x32/mimetypes
 mkdir -p $RPM_BUILD_ROOT/etc/gconf/schemas
 install -m 644 desktop/ldraw.mime $RPM_BUILD_ROOT%{_datadir}/mime-info/ldraw.mime
 install -m 644 desktop/ldraw.xml  \
-				$RPM_BUILD_ROOT%{_datadir}/mime/packages/ldraw.xml
+                                $RPM_BUILD_ROOT%{_datadir}/mime/packages/ldraw.xml
 install -m 644 desktop/ldraw.keys $RPM_BUILD_ROOT%{_datadir}/mime-info/ldraw.keys
 ##install -m 644 desktop/ldview.applications \
-##			$RPM_BUILD_ROOT%{_datadir}/application-registry/ldview.applications
+##                      $RPM_BUILD_ROOT%{_datadir}/application-registry/ldview.applications
 sed -i -e 's|/usr/local/bin/||' -e 's|Application;|Game;BlocksGame;|' desktop/ldraw.desktop
 install -m 644 desktop/ldraw.desktop \
-				$RPM_BUILD_ROOT%{_datadir}/applications/ldview.desktop
+                                $RPM_BUILD_ROOT%{_datadir}/applications/ldview.desktop
 install -m 755 desktop/ldraw-thumbnailer \
-				$RPM_BUILD_ROOT%{_bindir}/ldraw-thumbnailer
+                                $RPM_BUILD_ROOT%{_bindir}/ldraw-thumbnailer
 install -m 644 images/LDViewIcon.png \
-				$RPM_BUILD_ROOT%{_datadir}/pixmaps/gnome-ldraw.png
+                                $RPM_BUILD_ROOT%{_datadir}/pixmaps/gnome-ldraw.png
 install -m 644 images/LDViewIcon.png $RPM_BUILD_ROOT%{_datadir}/icons/gnome/32x32/mimetypes/gnome-mime-application-x-ldraw.png
 install -m 644 images/LDViewIcon.png $RPM_BUILD_ROOT%{_datadir}/icons/gnome/32x32/mimetypes/gnome-mime-application-x-multipart-ldraw.png
 install -m 644 desktop/ldraw.schemas \
-			$RPM_BUILD_ROOT/etc/gconf/schemas/ldraw.schemas
+                        $RPM_BUILD_ROOT/etc/gconf/schemas/ldraw.schemas
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/kde4/services
 install -m 644 kde/ldviewthumbnailcreator.desktop \
-		$RPM_BUILD_ROOT%{_datadir}/kde4/services/ldviewthumbnailcreator.desktop
+                $RPM_BUILD_ROOT%{_datadir}/kde4/services/ldviewthumbnailcreator.desktop
 if [ -f kde/build/lib/ldviewthumbnail.so ] ; then
 mkdir -p $RPM_BUILD_ROOT%{_libdir}/kde4
 install -m 644 kde/build/lib/ldviewthumbnail.so \
-				$RPM_BUILD_ROOT%{_libdir}/kde4/ldviewthumbnail.so
+                                $RPM_BUILD_ROOT%{_libdir}/kde4/ldviewthumbnail.so
 fi
 
 %files
@@ -183,9 +183,6 @@ fi
 %{_datadir}/icons/gnome/32x32/mimetypes/gnome-mime-application-x-ldraw.png
 %{_datadir}/icons/gnome/32x32/mimetypes/gnome-mime-application-x-multipart-ldraw.png
 /etc/gconf/schemas/ldraw.schemas
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 update-mime-database  %{_datadir}/mime >/dev/null

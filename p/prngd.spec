@@ -5,7 +5,7 @@ License: Public Domain
 Group: Productivity/Security
 URL: https://prngd.sourceforge.net/
 Source: https://downloads.sourceforge.net/prngd/prngd-%{version}.tar.gz
-Patch: prngd-0.9.29_build_config.patch
+Patch0: prngd-0.9.29_build_config.patch
 Summary: Pseudo Random Number Generator Daemon
 
 %description
@@ -28,7 +28,7 @@ Authors:
 
 %prep
 %setup -q
-%patch
+%patch 0
 
 %build
 %{__make} OPTFLAGS="%{optflags} -g"
@@ -39,9 +39,6 @@ gcc -o prngd-ctl %{optflags} tools/prngd-ctl.c
 %{__install} -D -m 0755 prngd     $RPM_BUILD_ROOT%{_sbindir}/prngd
 %{__install} -D -m 0755 prngd-ctl $RPM_BUILD_ROOT%{_sbindir}/prngd-ctl
 %{__install} -D -m 0644 prngd.man $RPM_BUILD_ROOT%{_mandir}/man1/prngd.1
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_sbindir}/prngd

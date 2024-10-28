@@ -1,74 +1,74 @@
 %define _legacy_common_support 1
 
-Summary:	An SWF output library
-Name:		ming
-Version:	0.4.9
-Release:	0.git20181112.7
-License:	LGPLv2
-Group:		System/Libraries
-URL:		https://www.libming.org/
-#Source0:	https://prdownloads.sourceforge.net/ming/%%{name}-%%{version}.tar.bz2
-Source0:	https://github.com/libming/libming/archive/master.zip
+Summary:        An SWF output library
+Name:           ming
+Version:        0.4.9
+Release:        0.git20181112.7
+License:        LGPLv2
+Group:          System/Libraries
+URL:            https://www.libming.org/
+#Source0:       https://prdownloads.sourceforge.net/ming/%%{name}-%%{version}.tar.bz2
+Source0:        https://github.com/libming/libming/archive/master.zip
 # make ming-config multilib-compatible
-Patch0:		ming-multilib.patch
+Patch0:         ming-multilib.patch
 # install perl modules to vendorarch dir and link dynamically with libming.so
-Patch1:		ming-perl.patch
+Patch1:         ming-perl.patch
 # fix parallel make calls to bison causing generated code corruption
 # https://github.com/libming/libming/issues/49
-Patch2:		ming-parallel-make.patch
+Patch2:         ming-parallel-make.patch
 # drop -dev from version, perl doesn't like it
-Patch4:		ming-version.patch
+Patch4:         ming-version.patch
 # https://github.com/libming/libming/pull/145
-Patch100:	ming-pr145.patch
-BuildRequires:	bison
-BuildRequires:	chrpath
-BuildRequires:	flex
-BuildRequires:	pkgconfig(freetype2)
-BuildRequires:	pkgconfig(libjpeg)
-#BuildRequires:	multiarch-utils >= 1.0.3
-BuildRequires:	perl-devel
-BuildRequires:	pkgconfig(libpng)
-BuildRequires:	giflib-devel
-BuildRequires:	pkgconfig(zlib)
-BuildRequires:	pkgconfig(ice)
-BuildRequires:	pkgconfig(sm)
-BuildRequires:	pkgconfig(x11)
-BuildRequires:	pkgconfig(xau)
-BuildRequires:	pkgconfig(xdmcp)
-BuildRequires:	pkgconfig(xcb)
+Patch100:       ming-pr145.patch
+BuildRequires:  bison
+BuildRequires:  chrpath
+BuildRequires:  flex
+BuildRequires:  pkgconfig(freetype2)
+BuildRequires:  pkgconfig(libjpeg)
+#BuildRequires: multiarch-utils >= 1.0.3
+BuildRequires:  perl-devel
+BuildRequires:  pkgconfig(libpng)
+BuildRequires:  giflib-devel
+BuildRequires:  pkgconfig(zlib)
+BuildRequires:  pkgconfig(ice)
+BuildRequires:  pkgconfig(sm)
+BuildRequires:  pkgconfig(x11)
+BuildRequires:  pkgconfig(xau)
+BuildRequires:  pkgconfig(xdmcp)
+BuildRequires:  pkgconfig(xcb)
 
 # gotta conflict here, otherwise stuff will be linked against installed libs...
-BuildConflicts:	ming-devel
+BuildConflicts: ming-devel
 
 %description
 Ming is a c library for generating SWF ("Flash") format movies. This
 package only contains the basic c-based library.
 
-%package	devel
-Summary:	Ming development files
-Group:		Development/C
-Requires:	%{name} = %{version}-%{release}
-Provides:	lib%{name}-devel = %{version}
+%package        devel
+Summary:        Ming development files
+Group:          Development/C
+Requires:       %{name} = %{version}-%{release}
+Provides:       lib%{name}-devel = %{version}
 
 %description devel
 The %{name}-devel package contains the header files
 and static libraries necessary for developing programs using the
 %{name}-devel library (C and C++).
 
-%package -n	perl-SWF
-Summary:	Ming perl module
-Group:		Development/Perl
+%package -n     perl-SWF
+Summary:        Ming perl module
+Group:          Development/Perl
 Provides:       perl-ming
 Obsoletes:      perl-ming
-Requires:	%{name} = %{version}-%{release}
+Requires:       %{name} = %{version}-%{release}
 
-%description -n	perl-SWF
+%description -n perl-SWF
 Ming perl module - perl wrapper for the Ming library.
 
-%package	utils
-Summary:	Ming utilities
-Group:		File tools
-Requires:	%{name} = %{version}-%{release}
+%package        utils
+Summary:        Ming utilities
+Group:          File tools
+Requires:       %{name} = %{version}-%{release}
 
 %description utils
 This package contains various ming utilities.

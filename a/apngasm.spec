@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Summary:	Create an APNG from multiple PNG files
-Name:		apngasm
-Version:	2.91
-Release:	3.1
-License:	zlib
-Group:		Graphics
-URL:		https://sourceforge.net/projects/apngasm
-Source0:	https://downloads.sourceforge.net/project/apngasm/%{version}/%{name}-%{version}-src.zip
-Buildrequires:	zlib-devel
-BuildRequires:	libpng-devel
-BuildRequires:	pkgconfig
+Summary:        Create an APNG from multiple PNG files
+Name:           apngasm
+Version:        2.91
+Release:        3.1
+License:        zlib
+Group:          Graphics
+URL:            https://sourceforge.net/projects/apngasm
+Source0:        https://downloads.sourceforge.net/project/apngasm/%{version}/%{name}-%{version}-src.zip
+Buildrequires:  zlib-devel
+BuildRequires:  libpng-devel
+BuildRequires:  pkgconfig
 
 %description
 Creates highly optimized Animated PNG files from PNG/TGA image sequences.

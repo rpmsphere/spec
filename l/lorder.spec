@@ -1,11 +1,11 @@
-Name:		lorder
-Version:	6.1.10
-Release:	3.1
-Summary:	List Dependencies for Object Files
-Source:		https://ftp.de.debian.org/debian/pool/main/b/bsdmainutils/bsdmainutils_%{version}.tar.bz2
-Group:		Development/Languages/C and C++
-License:	BSD License
-BuildRequires:	make
+Name:           lorder
+Version:        6.1.10
+Release:        3.1
+Summary:        List Dependencies for Object Files
+Source:         https://ftp.de.debian.org/debian/pool/main/b/bsdmainutils/bsdmainutils_%{version}.tar.bz2
+Group:          Development/Languages/C and C++
+License:        BSD License
+BuildRequires:  make
 BuildArch:     noarch
 Requires:      binutils
 Requires:      /usr/bin/awk
@@ -32,9 +32,6 @@ may be resolved in a single pass of the loader.
 %install
 %__install -D -m0755 usr.bin/lorder/lorder "$RPM_BUILD_ROOT%{_bindir}/lorder"
 %__install -D -m0644 usr.bin/lorder/lorder.1 "$RPM_BUILD_ROOT%{_mandir}/man1/lorder.1"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc README

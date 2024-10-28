@@ -26,9 +26,6 @@ sed -i 's/-Werror / /' configure.ac
 %__rm -rf %{buildroot}
 %__make DESTDIR=%{buildroot} install
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc README AUTHORS ChangeLog COPYING
 %{_libdir}/hildon-desktop/*

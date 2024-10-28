@@ -1,16 +1,16 @@
-Summary:	A lightweight and highly configurable tiling window manager
-Name:		wmfs
-Version:	2.beta20190813
-Release:	1
-License:	BSD-like
-Group:		X11/Window Managers
-Source0:	xorg62-wmfs-gb7b8ff8.tar.gz
-URL:		https://wmfs.info/
-BuildRequires:	freetype-devel
-BuildRequires:	imlib2-devel
-BuildRequires:	libXft-devel
-BuildRequires:	libXinerama-devel
-BuildRequires:	libXrandr-devel
+Summary:        A lightweight and highly configurable tiling window manager
+Name:           wmfs
+Version:        2.beta20190813
+Release:        1
+License:        BSD-like
+Group:          X11/Window Managers
+Source0:        xorg62-wmfs-gb7b8ff8.tar.gz
+URL:            https://wmfs.info/
+BuildRequires:  freetype-devel
+BuildRequires:  imlib2-devel
+BuildRequires:  libXft-devel
+BuildRequires:  libXinerama-devel
+BuildRequires:  libXrandr-devel
 
 %description
 WMFS (Window Manager From Scratch) is a lightweight and highly
@@ -28,26 +28,23 @@ everywhere you want with a simple sequence.
 CFLAGS="%{optflags}"
 LDFLAGS="%{optflags} -Wl,--allow-multiple-definition"
 for lib in freetype2 imlib2 xrandr xinerama; do
-	CFLAGS="$CFLAGS $(pkg-config --cflags $lib)"
-	LDFLAGS="$LDFLAGS $(pkg-config --libs $lib)"
+        CFLAGS="$CFLAGS $(pkg-config --cflags $lib)"
+        LDFLAGS="$LDFLAGS $(pkg-config --libs $lib)"
 done
 export CFLAGS LDFLAGS
 
 ./configure \
-	--prefix %{_prefix} \
-	--xdg-config-dir %{_sysconfdir}/xdg \
-	--man-prefix %{_mandir}
+        --prefix %{_prefix} \
+        --xdg-config-dir %{_sysconfdir}/xdg \
+        --man-prefix %{_mandir}
 
 %{__make} \
-	CC="%{__cc}"
+        CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+        DESTDIR=$RPM_BUILD_ROOT
 
 %files
 %doc COPYING README

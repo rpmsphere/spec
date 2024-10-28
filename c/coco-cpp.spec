@@ -34,9 +34,6 @@ make DESTDIR=${RPM_BUILD_ROOT} install
 mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT/usr/lib64
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc Coco.atg
 %{_bindir}/*

@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:       	cobras
-Version:    	0.18
-Release:    	11.1
-Summary:    	Beesoft IDE
-License:    	GPLv2+
-Group:      	File tools
-URL:        	https://www.beesoft.org/index.php?id=bsc
-Source:     	https://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
-BuildRequires:	qt4-devel
-BuildRequires:	ghostscript-core ImageMagick
+Name:           cobras
+Version:        0.18
+Release:        11.1
+Summary:        Beesoft IDE
+License:        GPLv2+
+Group:          File tools
+URL:            https://www.beesoft.org/index.php?id=bsc
+Source:         https://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
+BuildRequires:  qt4-devel
+BuildRequires:  ghostscript-core ImageMagick
 
 %description
 Cobras is an IDE for linux programmers.

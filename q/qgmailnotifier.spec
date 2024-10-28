@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Summary:	Qt GMail Notifier
-Name:		qgmailnotifier
-Version: 	2008.3
-Release: 	7.1
-License:	GPL
-Group:		Productivity/Networking/Email/Utilities
-Source0:	%{name}-%{version}.tar.bz2
-Source1:	%{name}.desktop
-Vendor:		Evan Teran
-BuildRequires:	gcc-c++, pkgconfig(QtGui)
+Summary:        Qt GMail Notifier
+Name:           qgmailnotifier
+Version:        2008.3
+Release:        7.1
+License:        GPL
+Group:          Productivity/Networking/Email/Utilities
+Source0:        %{name}-%{version}.tar.bz2
+Source1:        %{name}.desktop
+Vendor:         Evan Teran
+BuildRequires:  gcc-c++, pkgconfig(QtGui)
 
 %description
 %{summary}
@@ -27,9 +27,6 @@ make
 #install -Dp -m 0755 bin/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -Dp -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -Dp -m 0644 img/gmail.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

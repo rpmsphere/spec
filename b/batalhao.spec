@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
-Name:			batalhao
-Version:		17
-Release:		1
-Summary:		Pilot a tank to petect the city
+Name:                   batalhao
+Version:                17
+Release:                1
+Summary:                Pilot a tank to petect the city
 Summary(zh_TW): 指揮坦克的守城遊戲
-Group:			Amusements/Games
-License:		GPL
-URL:			https://freshmeat.net/projects/batalho/
-Source0:		%{name}19.tar.gz
-Source1:		%{name}.png
+Group:                  Amusements/Games
+License:                GPL
+URL:                    https://freshmeat.net/projects/batalho/
+Source0:                %{name}19.tar.gz
+Source1:                %{name}.png
 
 %description
 Batalhão is a game in which you have to pilot a tank to protect the city Antenna
@@ -62,9 +62,6 @@ Type=Application
 StartupNotify=true
 Categories=Game;ArcadeGame;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %dir %{_datadir}/%{name}

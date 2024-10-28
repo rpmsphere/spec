@@ -24,9 +24,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_datadir}/knights/themes
 cp * %{buildroot}%{_datadir}/knights/themes
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/knights/themes
 %doc AUTHORS COPYING README

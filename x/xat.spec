@@ -1,13 +1,13 @@
 %undefine _auto_set_build_flags
 
-Summary: 	X Address Translation
-Name:		xat
-Version: 	0.1.0
-Release: 	1
-License: 	GPLv2
-Group: 		User Interface/X
-URL: 		https://wiki.c3sl.ufpr.br/multiseat/index.php/Xat
-Source0: 	%{name}-%{version}.tar.gz
+Summary:        X Address Translation
+Name:           xat
+Version:        0.1.0
+Release:        1
+License:        GPLv2
+Group:          User Interface/X
+URL:            https://wiki.c3sl.ufpr.br/multiseat/index.php/Xat
+Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  libXi-devel, libX11-devel
 
 %description
@@ -30,9 +30,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS README

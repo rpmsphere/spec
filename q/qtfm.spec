@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Summary:	Qt File Manager
-Name:		qtfm
-Version:	6.2.1
-Release:	1
-URL:		https://qtfm.eu/
-License:	GPL
-Source:		https://github.com/rodlie/qtfm/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
-Requires:	p7zip
-BuildRequires:	gcc-c++, qt5-qtbase-devel, file-devel
-Group:		Applications/File
+Summary:        Qt File Manager
+Name:           qtfm
+Version:        6.2.1
+Release:        1
+URL:            https://qtfm.eu/
+License:        GPL
+Source:         https://github.com/rodlie/qtfm/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Requires:       p7zip
+BuildRequires:  gcc-c++, qt5-qtbase-devel, file-devel
+Group:          Applications/File
   
 %description
 qtFM is a small, lightweight file manager for Linux desktops based on pure Qt
@@ -28,9 +28,6 @@ make
 %install
 rm -rf %{buildroot}
 %{makeinstall} INSTALL_ROOT=%{buildroot}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_datadir}/doc/%{name}*

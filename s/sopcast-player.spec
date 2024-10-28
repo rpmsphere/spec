@@ -36,9 +36,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 %find_lang %{name}
 
-%clean
-rm -fr $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %doc AUTHORS COPYING
 %{_bindir}/%{name}

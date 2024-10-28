@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
 Name:       charm
-Version:	1.0
-Release:	7.1
-License:	GPL-2.0
-Summary:	The cross-platform time tracker
-URL:	https://github.com/KDAB/Charm
-Group:	Productivity/Office/Organizers
-Source:	%{name}-%{version}.tar.bz2
+Version:        1.0
+Release:        7.1
+License:        GPL-2.0
+Summary:        The cross-platform time tracker
+URL:    https://github.com/KDAB/Charm
+Group:  Productivity/Office/Organizers
+Source: %{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel
-BuildRequires:	cmake
-BuildRequires:	gcc-c++
-BuildRequires:	qt4-devel
-BuildRequires:	git
-BuildRequires:	desktop-file-utils
+BuildRequires:  cmake
+BuildRequires:  gcc-c++
+BuildRequires:  qt4-devel
+BuildRequires:  git
+BuildRequires:  desktop-file-utils
 
 %description
 Charm is a program for OS X, Linux and Windows that helps to keep track of time.
@@ -34,7 +34,7 @@ mkdir -pv build
 pushd build
 cmake -DCMAKE_INSTALL_PREFIX=%{_prefix} \
       -DLIB_INSTALL_DIR=%{_libdir} \
-	..
+        ..
 make %{?_smp_mflags}
 
 %install
@@ -50,9 +50,6 @@ echo "Categories=Qt;KDE;Utility;TimeUtility;" >> $RPM_BUILD_ROOT%{_datadir}/appl
 %{_bindir}/*
 %{_datadir}/applications/*.desktop
 %{_datadir}/icons/hicolor/
-
-%clean
-rm -f -r $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0

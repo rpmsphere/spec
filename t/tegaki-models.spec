@@ -1,15 +1,15 @@
-Summary: 	Zinnia Handwriting Recognition Models for Tegaki
-Name: 		tegaki-models
-Version: 	0.3
-Release: 	1
-License: 	GPLv2+
-Group: 		System/Internationalization
-Source0: 	https://www.tegaki.org/releases/0.3/models/tegaki-zinnia-japanese-0.3.zip
-Source1:	https://www.tegaki.org/releases/0.3/models/tegaki-zinnia-simplified-chinese-0.3.zip
-Source2:	https://www.tegaki.org/releases/0.3/models/tegaki-zinnia-traditional-chinese-0.3.zip
-URL: 		https://www.tegaki.org/
-BuildArch:	noarch
-Requires:	tegaki
+Summary:        Zinnia Handwriting Recognition Models for Tegaki
+Name:           tegaki-models
+Version:        0.3
+Release:        1
+License:        GPLv2+
+Group:          System/Internationalization
+Source0:        https://www.tegaki.org/releases/0.3/models/tegaki-zinnia-japanese-0.3.zip
+Source1:        https://www.tegaki.org/releases/0.3/models/tegaki-zinnia-simplified-chinese-0.3.zip
+Source2:        https://www.tegaki.org/releases/0.3/models/tegaki-zinnia-traditional-chinese-0.3.zip
+URL:            https://www.tegaki.org/
+BuildArch:      noarch
+Requires:       tegaki
 
 %description
 Zinnia Handwriting Recognition Models for Tegaki.
@@ -29,9 +29,6 @@ rm -rf %{buildroot}
 make install -C tegaki-zinnia-japanese-0.3
 make install -C tegaki-zinnia-simplified-chinese-0.3
 make install -C tegaki-zinnia-traditional-chinese-0.3
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_datadir}/tegaki/models

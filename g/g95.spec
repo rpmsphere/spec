@@ -1,11 +1,11 @@
-Summary:	Another Fortran 95 Compiler
-Name:		g95
-Version:	0.94
-Release:	6.1
-License:	GPLv2
-Group:		Development/Other
-URL:		https://www.g95.org
-Source0:	https://ftp.g95.org/g95_source.tgz
+Summary:        Another Fortran 95 Compiler
+Name:           g95
+Version:        0.94
+Release:        6.1
+License:        GPLv2
+Group:          Development/Other
+URL:            https://www.g95.org
+Source0:        https://ftp.g95.org/g95_source.tgz
 
 %description
 This package adds support for compiling Fortran 95 programs with g95,
@@ -22,9 +22,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 g95 $RPM_BUILD_ROOT%{_bindir}/g95
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc G95Manual.pdf COPYING AUTHORS BUGS INSTALL README TODO

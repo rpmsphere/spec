@@ -25,9 +25,6 @@ make
 rm -rf %{buildroot}
 make DESTDIR=%{buildroot} install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS ChangeLog COPYRIGHT README.markdown THANKS
 %{_bindir}/%{name}

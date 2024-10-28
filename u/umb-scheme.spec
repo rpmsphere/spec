@@ -28,14 +28,14 @@ number of ways to form expressions.
 %setup -q -n scheme-3.2
 rm -fr slib
 #unzip -q -o %{SOURCE1}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-#%patch6 -p1
-%patch7 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
+%patch 5 -p1
+#%patch 6 -p1
+%patch 7 -p1
 sed -i 's| @thistitle||' scheme.texinfo
 
 %build
@@ -60,9 +60,6 @@ chmod -x $RPM_BUILD_ROOT%{_mandir}/*/*
 
 # add symlink to slib
 ln -s ../slib $RPM_BUILD_ROOT%{_datadir}/umb-scheme/slib
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %attr(0755,root,root) %{_bindir}/%{name}

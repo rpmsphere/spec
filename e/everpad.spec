@@ -18,7 +18,7 @@ Requires: dbus-python
 Requires: python-keyring
 Requires: python-httplib2
 Requires: python-regex
-BuildRequires:	python2-setuptools
+BuildRequires:  python2-setuptools
 BuildRequires:  python2-devel
 BuildArch: noarch
 

@@ -3,19 +3,19 @@ Summary:        Simple audio player in Python/PyGTK, using GStreamer
 Version:        0.3
 Release:        6.1
 Source0:        https://codingteam.net/project/bluemindo/download/file/%{name}-%{version}.tar.gz
-Patch0:		bluemindo-0.3-makefile.patch
+Patch0:         bluemindo-0.3-makefile.patch
 URL:            https://codingteam.net/project/bluemindo
-License:	GPLv3
+License:        GPLv3
 Group:          Sound
-Requires:	pygtk2 
-Requires:	pygtk2-libglade
-Requires:	python2-gstreamer
-Requires:	python-tag
-Requires:	dbus-python
-Requires:	gnome-python2-extras
-Requires:	notify-python
-Requires:	python-xmpp
-BuildArch:	noarch
+Requires:       pygtk2 
+Requires:       pygtk2-libglade
+Requires:       python2-gstreamer
+Requires:       python-tag
+Requires:       dbus-python
+Requires:       gnome-python2-extras
+Requires:       notify-python
+Requires:       python-xmpp
+BuildArch:      noarch
 
 %description
 Bluemindo aims to provide a very simple audio player under
@@ -23,7 +23,7 @@ GNU systems in PyGTK, without any GNOME dependencies.
 
 %prep
 %setup -q 
-%patch0 -p1 -b .orig
+%patch 0 -p1 -b .orig
 
 %build
 make
@@ -34,9 +34,6 @@ make install DESTDIR=%{buildroot}
 %find_lang %{name}
 
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/src/%{name}.py
-
-%clean 
-rm -rf %{buildroot} 
 
 %files -f %{name}.lang
 %doc AUTHORS CHANGELOG COPYING README THANKS 

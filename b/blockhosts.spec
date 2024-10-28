@@ -1,15 +1,15 @@
 %global _name BlockHosts
 
-Name:			blockhosts
-Version:		2.7.0
-Summary:		Block IP Addresses based on system logs showing undesirable access patterns
-License:		https://creativecommons.org/licenses/publicdomain/
-URL:			https://www.aczoom.com/cms/blockhosts/
-Source0:		%{_name}-%{version}.tar.gz
-Group:			Applications/System
-Release:		1
-Patch0:			blockhosts.cfg.2.4.0.diff
-BuildArch:		noarch
+Name:                   blockhosts
+Version:                2.7.0
+Summary:                Block IP Addresses based on system logs showing undesirable access patterns
+License:                https://creativecommons.org/licenses/publicdomain/
+URL:                    https://www.aczoom.com/cms/blockhosts/
+Source0:                %{_name}-%{version}.tar.gz
+Group:                  Applications/System
+Release:                1
+Patch0:                 blockhosts.cfg.2.4.0.diff
+BuildArch:              noarch
 
 %description
 Block IP Addresses based on login or access failure
@@ -28,7 +28,7 @@ events are also available.
 
 %prep
 %setup -q -n %{_name}-%{version}
-%patch0
+%patch 0
 
 %build
 
@@ -80,9 +80,6 @@ fi
 %{_bindir}/blockhosts.py
 #{_bindir}/bhrss.py
 %doc CHANGES INSTALL LICENSE README blockhosts.html
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.0

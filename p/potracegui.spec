@@ -12,11 +12,11 @@ Source1:        %name-icons.tar.bz2
 Patch0:         %{name}-1.3.4-gcc43.patch
 Patch1:         %{name}-1.3.4-pixelview.patch
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++
-BuildRequires:	kdelibs-common
+BuildRequires:  gcc-c++
+BuildRequires:  kdelibs-common
 BuildRequires:  libX11-devel
 BuildRequires:  kdelibs3-devel
-Requires: 	potrace
+Requires:       potrace
 
 %description
 Potracegui is a GUI interface for potrace, a great program for tracing 
@@ -24,8 +24,8 @@ bitmapped images.
 
 %prep
 %setup -q -a 1
-%patch0 -p0
-%patch1 -p1
+%patch 0 -p0
+%patch 1 -p1
 
 %build
 export CXXFLAGS="-std=c++98 -fPIC"
@@ -57,9 +57,6 @@ Comment=GUI interface for potrace
 EOF
 
 rm -rf %buildroot%{_datadir}/applnk %buildroot%{_datadir}/apps
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %doc COPYING README INSTALL AUTHORS

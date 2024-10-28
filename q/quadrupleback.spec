@@ -1,22 +1,22 @@
 %global __os_install_post %{nil}
 %undefine _debugsource_packages
 
-Name:			quadrupleback
-Version:		0.1.1
-Summary:		A clone of the 1982 Doubleback(TM)
-License:		GPLv2
-URL:			https://sarrazip.com/dev/%{name}.html
-Group:			Amusements/Games
-Release:		1
-Source:			%{name}-%{version}.tar.gz
-BuildRequires:	desktop-file-utils
-BuildRequires:	gcc-c++
-BuildRequires:	libtool
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_image-devel
-BuildRequires:	SDL_mixer-devel
-BuildRequires:	SDL_gfx-devel
-BuildRequires:	flatzebra-devel
+Name:                   quadrupleback
+Version:                0.1.1
+Summary:                A clone of the 1982 Doubleback(TM)
+License:                GPLv2
+URL:                    https://sarrazip.com/dev/%{name}.html
+Group:                  Amusements/Games
+Release:                1
+Source:                 %{name}-%{version}.tar.gz
+BuildRequires:  desktop-file-utils
+BuildRequires:  gcc-c++
+BuildRequires:  libtool
+BuildRequires:  SDL-devel
+BuildRequires:  SDL_image-devel
+BuildRequires:  SDL_mixer-devel
+BuildRequires:  SDL_gfx-devel
+BuildRequires:  flatzebra-devel
 
 %description
 This is the home page for Quadrupleback, a video game where intruders must be
@@ -51,9 +51,6 @@ Terminal=false
 _EOF_
 
 install -D -m644 src/%{name}.desktop %{buildroot}/%{_datadir}/applications/%{name}.desktop
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README THANKS TODO

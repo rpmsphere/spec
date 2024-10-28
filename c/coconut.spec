@@ -29,9 +29,6 @@ for simple, elegant, Pythonic functional programming.
 %{python3_sitelib}/*
 %{_datadir}/jupyter/kernels/coconut/kernel.json
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Jan 01 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.1
 - Rebuilt for Fedora

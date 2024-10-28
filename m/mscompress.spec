@@ -1,20 +1,20 @@
-Summary:	MS compress/expand-compatible (de)compressor
-Name:		mscompress
-Version:	0.3
-Release:	1
-License:	GPL
-Group:		Archiving/Compression
+Summary:        MS compress/expand-compatible (de)compressor
+Name:           mscompress
+Version:        0.3
+Release:        1
+License:        GPL
+Group:          Archiving/Compression
 URL:            ftp://ftp.penguin.cz/pub/users/mhi/mscompress
-Source0:	ftp://ftp.penguin.cz/pub/users/mhi/mscompress/%{name}-%{version}.tar.bz2
-Patch0:		mscompress-0.3-LDFLAGS.diff
-BuildRequires:	autoconf
+Source0:        ftp://ftp.penguin.cz/pub/users/mhi/mscompress/%{name}-%{version}.tar.bz2
+Patch0:         mscompress-0.3-LDFLAGS.diff
+BuildRequires:  autoconf
 
 %description
 Microsoft compress.exe/expand.exe-compatible file (de)compressor.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 
 %build
 autoconf
@@ -26,9 +26,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install mscompress msexpand $RPM_BUILD_ROOT%{_bindir}
 install mscompress.1 msexpand.1 $RPM_BUILD_ROOT%{_mandir}/man1
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog README TODO format.txt

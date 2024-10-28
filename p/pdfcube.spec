@@ -1,6 +1,6 @@
 Name:           pdfcube
 Version:        0.0.5
-Release: 	3.1
+Release:        3.1
 Summary:        PDF presentation viewer with a spinning cube
 Group:          Office
 License:        GPL

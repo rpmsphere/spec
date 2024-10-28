@@ -7,9 +7,9 @@ Summary:        SIL Fonts from cjkfonts.io
 License:        SIL OPEN FONT LICENSE
 Group:          System/X11/Fonts
 URL:            https://cjkfonts.io/
-Source0:	https://cjkfonts.io/downloadfont?font_id=cjkfonts_001&v=1.11#/cjkfonts_allseto_v1.11.zip
+Source0:        https://cjkfonts.io/downloadfont?font_id=cjkfonts_001&v=1.11#/cjkfonts_allseto_v1.11.zip
 Source1:        https://cjkfonts.io/downloadfont?font_id=cjkfonts_003&v=0.02#/ThePeakFontBeta_V0_101.zip
-Source2:	https://cjkfonts.io/downloadfont?font_id=cjkfonts_002&v=1.00#/cjkfonts_handwriting4.zip
+Source2:        https://cjkfonts.io/downloadfont?font_id=cjkfonts_002&v=1.00#/cjkfonts_handwriting4.zip
 BuildArch:      noarch
 
 %description

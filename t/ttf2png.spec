@@ -30,9 +30,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 install -D -m 0755 ttf2png $RPM_BUILD_ROOT%{_bindir}/ttf2png
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/*
 %doc Readme gpl.txt

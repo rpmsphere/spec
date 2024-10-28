@@ -22,7 +22,7 @@ Raster3D does not depend on graphics hardware.
 This version is dynamically linked.
 
 Program reference and requested citation: 
-	Merritt & Bacon  (1997) Meth. Enzymol. 277, 505-524.
+        Merritt & Bacon  (1997) Meth. Enzymol. 277, 505-524.
 
 %prep
 %setup -q -n Raster3D_%{version}-7
@@ -50,9 +50,6 @@ make install prefix=$RPM_BUILD_ROOT%{_prefix} \
              mandir=$RPM_BUILD_ROOT%{_mandir}/manl
 mkdir -p $RPM_BUILD_ROOT/%{_sysconfdir}/profile.d
 install -m755 Raster3D.{csh,sh} $RPM_BUILD_ROOT/%{_sysconfdir}/profile.d/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README CHANGELOG BUGS doc/R3D_manual.pdf VERSION

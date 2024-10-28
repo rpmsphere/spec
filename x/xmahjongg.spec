@@ -1,16 +1,16 @@
-Summary:	Colorful X solitaire Mah Jongg game
-Summary(pl):	Komputerowy Mad¿ong
-Name:		xmahjongg
-Version:	3.7
-Release:	7.1
-License:	GPL
-Vendor:		Little Cambridgeport Design Factory
-Group:		X11/Applications/Games
-Source0:	https://www.lcdf.org/xmahjongg/%{name}-%{version}.tar.gz
-Source1:	%{name}.desktop
-Source2:	%{name}.png
-URL:		https://www.lcdf.org/xmahjongg/
-BuildRequires:	gcc-c++, libX11-devel
+Summary:        Colorful X solitaire Mah Jongg game
+Summary(pl):    Komputerowy Mad¿ong
+Name:           xmahjongg
+Version:        3.7
+Release:        7.1
+License:        GPL
+Vendor:         Little Cambridgeport Design Factory
+Group:          X11/Applications/Games
+Source0:        https://www.lcdf.org/xmahjongg/%{name}-%{version}.tar.gz
+Source1:        %{name}.desktop
+Source2:        %{name}.png
+URL:            https://www.lcdf.org/xmahjongg/
+BuildRequires:  gcc-c++, libX11-devel
 
 %description
 Real Mah Jongg is a social game that originated in China thousands of
@@ -43,9 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -Dm644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc NEWS README

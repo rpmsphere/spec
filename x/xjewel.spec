@@ -1,20 +1,20 @@
-Summary:	An X Window System game of falling jewel blocks
-Summary(de):	Game von der Art von Segas COLUMNS
-Summary(fr):	Jeu du style Columns de Sega
-Summary(pl):	Gra pod X Window System - spadające bloki
-Summary(tr):	Sega'nýn columns'una benzer oyun
-Name:		xjewel
-Version:	1.6
-Release:	33.1
-License:	MIT
-Group:		X11/Applications/Games
-Source0:	ftp://ftp.x.org/R5contrib/%{name}-%{version}.tar.z
-Source1:	%{name}.desktop
-Source2:	%{name}.png
-Patch0:		%{name}-imake.patch
-Patch1:		%{name}-enhance.patch
-Patch2:		%{name}-nobr.patch
-Patch3:		%{name}-select.patch
+Summary:        An X Window System game of falling jewel blocks
+Summary(de):    Game von der Art von Segas COLUMNS
+Summary(fr):    Jeu du style Columns de Sega
+Summary(pl):    Gra pod X Window System - spadające bloki
+Summary(tr):    Sega'nýn columns'una benzer oyun
+Name:           xjewel
+Version:        1.6
+Release:        33.1
+License:        MIT
+Group:          X11/Applications/Games
+Source0:        ftp://ftp.x.org/R5contrib/%{name}-%{version}.tar.z
+Source1:        %{name}.desktop
+Source2:        %{name}.png
+Patch0:         %{name}-imake.patch
+Patch1:         %{name}-enhance.patch
+Patch2:         %{name}-nobr.patch
+Patch3:         %{name}-select.patch
 BuildRequires: libX11-devel libXext-devel
 BuildRequires: imake
 Requires:   urw-fonts
@@ -55,29 +55,26 @@ yerleţtirmektir.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p0
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p0
 
 %build
 xmkmf
 %{__make} CDEBUGFLAGS="%{optflags}" \
-	HSCORE_FILE=/var/games/xjewel.scores
+        HSCORE_FILE=/var/games/xjewel.scores
 
 %install
 install -d $RPM_BUILD_ROOT{%{_datadir}/applications,%{_datadir}/pixmaps,/var/games}
 
 %{__make} install install.man \
-	DESTDIR=$RPM_BUILD_ROOT \
+        DESTDIR=$RPM_BUILD_ROOT \
     MANDIR=/usr/share/man/man1
-	HSCORE_FILE=/var/games/xjewel.scores
+        HSCORE_FILE=/var/games/xjewel.scores
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(2755,root,games) %{_bindir}/xjewel

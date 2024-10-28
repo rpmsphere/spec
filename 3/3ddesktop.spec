@@ -4,11 +4,13 @@ Version:   0.2.9
 Release:   8.1
 License:   GPL
 Group:     User Interface/Desktops
-Source:    https://prdownloads.sourceforge.net/desk3d/3ddesktop-%{version}.tar.gz
+Source0:   https://prdownloads.sourceforge.net/desk3d/3ddesktop-%{version}.tar.gz
 URL:       https://desk3d.sourceforge.net/
 BuildRequires:  mesa-libGL-devel
 BuildRequires:  mesa-libGLU-devel
+BuildRequires:  libXxf86vm-devel
 BuildRequires:  imlib2-devel
+Source1:   imlib2-config
 
 %description 
 3d Destkop is an OpenGL program for switching virtual desktops in a
@@ -21,8 +23,10 @@ visualization modes are available.
 %setup -q
 sed -i 's/unsigned int/unsigned long/' event.hpp
 sed -i '1i #include <cstring>' config.cpp
+cp %{SOURCE1} .
 
 %build
+export PATH=$PATH:.
 %configure
 sed -i -e 's/@my_libs@//' -e 's/-Werror=format-security/-lImlib2 -lglut -lGLU -lGL -lSM -lICE -lSM -lICE -lX11 -lXext -lXmu -lXt -lXi/' Makefile
 make
@@ -30,9 +34,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README COPYING ChangeLog TODO AUTHORS

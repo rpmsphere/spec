@@ -1,19 +1,19 @@
 Name:           bass
-Version:	0
+Version:        0
 Release:        8.20030801
-Summary:	Beneath a Steel Sky (Adventure Game)
-Group:		Amusements/Games
-License:	Freeware
-URL:		https://www.scummvm.org/downloads.php
-Source0:	https://www.mixnmojo.com/bss/BASS-Floppy.zip
-Source1:	%name.sh
-Source2:	%name.desktop
-Source3:	%name.info
-Source4:	%name.png
-Source5:	https://svn.sourceforge.net/viewcvs.cgi/*checkout*/scummvm/engine-data/trunk/sky.cpt
+Summary:        Beneath a Steel Sky (Adventure Game)
+Group:          Amusements/Games
+License:        Freeware
+URL:            https://www.scummvm.org/downloads.php
+Source0:        https://www.mixnmojo.com/bss/BASS-Floppy.zip
+Source1:        %name.sh
+Source2:        %name.desktop
+Source3:        %name.info
+Source4:        %name.png
+Source5:        https://svn.sourceforge.net/viewcvs.cgi/*checkout*/scummvm/engine-data/trunk/sky.cpt
 BuildArch:      noarch
 BuildRequires:  unzip
-Requires:	scummvm timidity++
+Requires:       scummvm timidity++
 
 %description
 Beneath a Steel Sky is a 2D, point-and-click science fiction thriller
@@ -47,9 +47,6 @@ install -m 644 %{SOURCE4} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 %__mkdir_p $RPM_BUILD_ROOT%{_datadir}/applications/
 install -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT sky-floppy
-
 %files
 %doc readme.txt
 %{_bindir}/BASS
@@ -60,7 +57,7 @@ install -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.deskto
 %changelog
 * Mon Feb 26 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 8.20030801
 - Rebuilt for Fedora
-* Mon Oct 20 2009 Wind <yc.yan@ossii.com.tw> - 0-8.20030801
+* Tue Oct 20 2009 Wind <yc.yan@ossii.com.tw> - 0-8.20030801
 - Rebuild for OSSII.
 * Thu Mar 09 2006 Richard June <rjune@bravegnuworld.com> 0-7.20030801
 - Added sky.cpt file to spec

@@ -1,16 +1,16 @@
-Summary:	A GUI for netcat developed by LXDE project
-Name:     	gtknetcat
-Version:	0.1
-Release:	12.1
-License:	GPLv2+
-Group:		Graphical desktop/Other
-Source0: 	https://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
-URL:		https://lxde.sourceforge.net/
-Requires:	netcat
-BuildRequires:	gtk2-devel
-BuildRequires:	intltool
-BuildRequires:	glib2-devel
-BuildArch:	noarch
+Summary:        A GUI for netcat developed by LXDE project
+Name:           gtknetcat
+Version:        0.1
+Release:        12.1
+License:        GPLv2+
+Group:          Graphical desktop/Other
+Source0:        https://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
+URL:            https://lxde.sourceforge.net/
+Requires:       netcat
+BuildRequires:  gtk2-devel
+BuildRequires:  intltool
+BuildRequires:  glib2-devel
+BuildArch:      noarch
 Patch0:         gtknetcat.desktop.diff
 BuildRequires:  python2
 
@@ -20,7 +20,7 @@ transfer files to another computer via direct wired connection.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 
 %build
 export PYTHON=/usr/bin/python2
@@ -34,9 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name} %{buildroot}%{_libexecdir}/%{name}.py
 sed -i 's|network|network-transmit|' %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %{_bindir}/%{name}

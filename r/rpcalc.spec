@@ -25,9 +25,6 @@ rpCalc is based on the PyQt library.
 rm -rf $RPM_BUILD_ROOT
 python3 install.py -p /usr -i %{_datadir}/pixmaps -b $RPM_BUILD_ROOT
  
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc doc/INSTALL doc/LICENSE doc/README.html
 %{_bindir}/%{name}

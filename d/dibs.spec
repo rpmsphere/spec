@@ -34,9 +34,6 @@ sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/cgi-bin/*.cgi
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc CHANGELOG doc LICENSE README RELEASE_NOTES
 %{_bindir}/*

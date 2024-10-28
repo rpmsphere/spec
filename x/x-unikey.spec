@@ -52,23 +52,20 @@ strip $RPM_BUILD_ROOT%{_bindir}/{unikey,ukxim}
 strip $RPM_BUILD_ROOT%{gtkim}/*.so
 find . -name CVS | xargs rm -rf
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 if [ -e %{gtkim3} ];then
-	%{gtkquerycmd} > %{gtkim3}
+        %{gtkquerycmd} > %{gtkim3}
 fi
 if [ -e %{gtkim6} ];then
-	%{gtkquerycmd} > %{gtkim6}
+        %{gtkquerycmd} > %{gtkim6}
 fi
 
 %postun
 if [ -e %{gtkim3} ];then
-	%{gtkquerycmd} > %{gtkim3}
+        %{gtkquerycmd} > %{gtkim3}
 fi
 if [ -e %{gtkim6} ];then
-	%{gtkquerycmd} > %{gtkim6}
+        %{gtkquerycmd} > %{gtkim6}
 fi
 
 %files

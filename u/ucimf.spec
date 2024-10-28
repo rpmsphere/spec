@@ -38,9 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 find $RPM_BUILD_ROOT -name '*.*a' -exec rm -f {} ';'
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog COPYING README TODO
 %{_bindir}/*

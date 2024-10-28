@@ -5,7 +5,7 @@ Group:     System/Base
 License:   GPL
 URL:       https://gpl.internetconnection.net/
 Source:    https://gpl.internetconnection.net/files/svc.tar.gz
-Patch:     svc_build.patch
+Patch0:     svc_build.patch
 Summary:   Service toolbox
 
 %description
@@ -14,7 +14,7 @@ making lockfiles.
 
 %prep
 %setup -n %{name}
-%patch
+%patch 0
 
 %build
 # -lutil for forkpty
@@ -27,9 +27,6 @@ LDFLAGS="-lutil" \
 for i in lockf  pull-trigger  sleep-svc  ttywrap  wait-trigger ; do
     %{__install} -D -m 0755 $i $RPM_BUILD_ROOT%{_sbindir}/$i
 done
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_sbindir}/lockf

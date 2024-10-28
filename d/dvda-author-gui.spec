@@ -30,9 +30,6 @@ install -Dm755 gui $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -Dm644 %{name}.desktop $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -Dm644 images/dvda-author.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/dvda-author.png
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README COPYING ChangeLog GUI.shtml images
 %{_datadir}/applications/*

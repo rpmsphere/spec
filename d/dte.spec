@@ -32,9 +32,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=%{buildroot}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE *.md
 %{_bindir}/*

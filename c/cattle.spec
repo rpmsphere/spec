@@ -32,9 +32,6 @@ make %{?_smp_mflags}
 cd build
 make install DESTDIR=%{buildroot}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_docdir}/%{name}-*
 %{_libdir}/lib%{name}-*.so.*

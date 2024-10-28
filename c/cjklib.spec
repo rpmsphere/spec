@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
-Summary:	Han character library for CJKV languages
-Name:		cjklib
-Version:	0.3.2
-Release:	7.1
-Group:		Development/Python
-License:	LGPLv3+
-URL:		https://code.google.com/p/cjklib/
-Source0:	https://cjklib.googlecode.com/files/%{name}-%{version}.tar.gz
-BuildRequires:	python2
-BuildRequires:	python2-setuptools
-Requires:	python-sqlalchemy
-BuildArch:	noarch
+Summary:        Han character library for CJKV languages
+Name:           cjklib
+Version:        0.3.2
+Release:        7.1
+Group:          Development/Python
+License:        LGPLv3+
+URL:            https://code.google.com/p/cjklib/
+Source0:        https://cjklib.googlecode.com/files/%{name}-%{version}.tar.gz
+BuildRequires:  python2
+BuildRequires:  python2-setuptools
+Requires:       python-sqlalchemy
+BuildArch:      noarch
 
 %description
 Cjklib provides language routines related to Han characters (characters
@@ -33,9 +33,6 @@ python2 setup.py install --skip-build --root=$RPM_BUILD_ROOT --optimize=2
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
  
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING README TODO examples
 %{_bindir}/*

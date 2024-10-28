@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:       	bsc
-Version:    	4.1.0
-Release:    	8.1
-Summary:    	Beesoft Commander file manager
-License:    	GPLv2+
-Group:      	File tools
-URL:        	https://www.beesoft.org/index.php?id=bsc
-Source:     	https://www.beesoft.org/download/%{name}_%{version}_src.tar.bz2
-BuildRequires:	qt4-devel
-BuildRequires:	ghostscript-core ImageMagick
+Name:           bsc
+Version:        4.1.0
+Release:        8.1
+Summary:        Beesoft Commander file manager
+License:        GPLv2+
+Group:          File tools
+URL:            https://www.beesoft.org/index.php?id=bsc
+Source:         https://www.beesoft.org/download/%{name}_%{version}_src.tar.bz2
+BuildRequires:  qt4-devel
+BuildRequires:  ghostscript-core ImageMagick
 
 %description
 Beesoft Commander is a file manager (like Norton Commander) for Linux. It is

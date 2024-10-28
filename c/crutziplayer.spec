@@ -29,9 +29,6 @@ mv %{buildroot}%{_datadir}/pyshared %{buildroot}/usr/lib/python2.7/site-packages
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %attr(755,root,root) %{_bindir}/%{name}
 /usr/lib/python2.7/site-packages/%{name}

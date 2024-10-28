@@ -1,23 +1,23 @@
 %define oname CsoundQt
 
-Name:			csoundqt
-Version:		0.9.2.2
-Release:		5.4
-Summary:		Frontend for the csound sound processor
-License:		LGPLv2.1
-Group:			Sound
-URL:			https://csoundqt.github.io
-Source0:		https://garr.dl.sourceforge.net/project/qutecsound/CsoundQt/%{version}/%{oname}-%{version}.tar.gz
-Source1:		csoundqt.desktop
-BuildRequires:		desktop-file-utils
-BuildRequires:		qt4-devel
-BuildRequires:      	doxygen
-BuildRequires:     	ghostscript-core ImageMagick
-BuildRequires:     	csound-devel
-BuildRequires:     	python3-PyQt4
-BuildRequires:     	pkgconfig(sndfile)
-BuildRequires:     	pkgconfig(python)
-Obsoletes:		qutecsound
+Name:                   csoundqt
+Version:                0.9.2.2
+Release:                5.4
+Summary:                Frontend for the csound sound processor
+License:                LGPLv2.1
+Group:                  Sound
+URL:                    https://csoundqt.github.io
+Source0:                https://garr.dl.sourceforge.net/project/qutecsound/CsoundQt/%{version}/%{oname}-%{version}.tar.gz
+Source1:                csoundqt.desktop
+BuildRequires:          desktop-file-utils
+BuildRequires:          qt4-devel
+BuildRequires:          doxygen
+BuildRequires:          ghostscript-core ImageMagick
+BuildRequires:          csound-devel
+BuildRequires:          python3-PyQt4
+BuildRequires:          pkgconfig(sndfile)
+BuildRequires:          pkgconfig(python)
+Obsoletes:              qutecsound
 
 %description
 CsoundQt is a frontend for Csound featuring 
@@ -64,7 +64,7 @@ install -Dm644 images/qtcs.png "%{buildroot}%{_datadir}/pixmaps/%{name}.png"
 desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %files
-%doc ChangeLog README.md COPYING "doc/*"
+%doc ChangeLog README.md COPYING
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}

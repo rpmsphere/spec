@@ -16,7 +16,7 @@ devmem2 0x50000014 - read value from addr 0x50000014
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 cc %{optflags} devmem2.c -o devmem2

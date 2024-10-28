@@ -31,9 +31,6 @@ go build
 %install
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc AUTHORS LICENSE *.md doc/*
 %{_bindir}/%{name}

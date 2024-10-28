@@ -49,9 +49,6 @@ install -m 644 bin/*.a $RPM_BUILD_ROOT%{_libdir}/seed7/bin
 %{_bindir}/s7*
 %{_libdir}/seed7
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 05.20240322
 - Rebuilt for Fedora

@@ -6,7 +6,7 @@ Version:        1.9.3
 Release:        925.1
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %name.desktop
-Patch:          %{name}-%{version}.diff
+Patch0:         %{name}-%{version}.diff
 Patch1:         %{name}-libs.patch
 Patch2:         %{name}-tinfo.patch
 URL:            https://www.hut.fi/~jtpelto2/nethack.html
@@ -39,9 +39,9 @@ nethack.
 
 %prep
 %setup -q
-%patch
-%patch1
-%patch2
+%patch 0
+%patch 1
+%patch 2
 
 %build
 sh sys/unix/setup.sh links

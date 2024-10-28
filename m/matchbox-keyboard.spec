@@ -7,7 +7,7 @@ License:        GPLv2+
 URL:            https://matchbox-project.org/
 Source0:        https://git.yoctoproject.org/cgit.cgi/matchbox-keyboard/snapshot/%{name}-%{version}.tar.gz
 Patch0:         matchbox-keyboard-0.1-fix-desktop.patch
-Patch3:		    matchbox-keyboard-0.1-automake-1.13.patch
+Patch3:             matchbox-keyboard-0.1-automake-1.13.patch
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(gtk+-2.0)
 BuildRequires:  pkgconfig(libfakekey)
@@ -28,8 +28,8 @@ XML layout configuration files.
 
 %prep
 %setup -q
-%patch0 -p1 -b .fix-category
-%patch3 -p1 -b .am
+%patch 0 -p1 -b .fix-category
+%patch 3 -p1 -b .am
 
 %build
 autoreconf -fi

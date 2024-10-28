@@ -47,9 +47,6 @@ install -c -m 644 \
 %{_libdir}/lib*
 %{_mandir}/man1/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.28
 - Rebuilt for Fedora

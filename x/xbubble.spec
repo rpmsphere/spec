@@ -4,9 +4,9 @@ Summary:        A Bust-A-Move/Puzzle Bubble clone
 Name:           xbubble
 Version:        0.5.11.2
 Release:        17.1
-URL:		https://alioth.debian.org/projects/xbubble/
-Source0:	https://alioth.debian.org/frs/download.php/file/1582/%{name}-%{version}.tar.gz
-License:	GPL
+URL:            https://alioth.debian.org/projects/xbubble/
+Source0:        https://alioth.debian.org/frs/download.php/file/1582/%{name}-%{version}.tar.gz
+License:        GPL
 Group:          Games/Arcade
 BuildRequires:  libX11-devel, libpng-devel, libpng12-devel
 
@@ -31,9 +31,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README

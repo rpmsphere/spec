@@ -4,7 +4,7 @@ Version:        1.9.0
 Release:        2.1
 URL:            https://www.jefftk.com/icdiff
 License:        PSF
-Group: 		File tools
+Group:          File tools
 BuildRequires:  python2-devel
 BuildArch:      noarch
 Source0:        https://github.com/jeffkaufman/icdiff/archive/release-%{version}.tar.gz#/%{name}-release-%{version}.tar.gz

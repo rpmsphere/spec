@@ -22,7 +22,7 @@ Athena jot (или просто jot) выводит данные, обычно �
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 sed -i -e 's|strlcpy|strncpy|' -e 's|strlcat|strncat|' jot.c
 
 %build

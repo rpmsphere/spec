@@ -52,9 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 echo -e "#!/bin/sh\ncd %{_datadir}/%{name}\n./%{name}" > ${RPM_BUILD_ROOT}%{_bindir}/%{name}
 chmod +x ${RPM_BUILD_ROOT}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/%{name}/*
 %{_bindir}/%{name}

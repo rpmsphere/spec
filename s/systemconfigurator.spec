@@ -34,9 +34,6 @@ make install
 rm -rf %{buildroot}/usr/lib/systemconfig/auto*
 find %{buildroot}/ -name perllocal.pod | xargs rm -f
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc TODO 
 %doc CREDITS 

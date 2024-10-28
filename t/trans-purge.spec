@@ -34,9 +34,6 @@ gcc `pkg-config glib-2.0 --cflags --libs` -o gconf-purge %{SOURCE2}
 %__install -Ds -m 755 mime-purge %{buildroot}%{_bindir}/mime-purge
 %__install -Ds -m 755 gconf-purge %{buildroot}%{_bindir}/gconf-purge
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %{_bindir}/*
 

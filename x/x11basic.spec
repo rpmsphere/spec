@@ -8,12 +8,12 @@ Group: Development/Languages
 Summary: A Basic Interpreter with X11-Graphics capabilities
 Source0: https://github.com/kollokollo/X11Basic/archive/refs/tags/%{version}.tar.gz#/X11Basic-%{version}.tar.gz
 URL: https://x11-basic.sourceforge.net/
-BuildRequires:	autoconf
-BuildRequires:	libX11-devel
-BuildRequires:	libpng-devel
-BuildRequires:	readline-devel
-BuildRequires:	transfig
-BuildRequires:	ImageMagick
+BuildRequires:  autoconf
+BuildRequires:  libX11-devel
+BuildRequires:  libpng-devel
+BuildRequires:  readline-devel
+BuildRequires:  transfig
+BuildRequires:  ImageMagick
 BuildRequires:  potrace
 
 %description
@@ -54,9 +54,6 @@ mkdir -p $RPM_BUILD_ROOT/usr/lib64
 cd src
 %make_install
 chmod +x $RPM_BUILD_ROOT%{_libdir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.md COPYING RELEASE_NOTES

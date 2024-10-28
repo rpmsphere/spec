@@ -1,28 +1,28 @@
 %define __arch_install_post %{nil}
 
-Summary:	Desktop Environment based on fvwm2
-Name:		fvwm-crystal
-Version:	3.4.1
-Release:	1
-License:	GPL v2+
-Group:		Applications/System
-Source:		https://download.berlios.de/fvwm-crystal/%{name}-%{version}.tar.gz
-URL:		https://fvwm-crystal.berlios.de/
-Requires:	ImageMagick
-Requires:	aterm
-Requires:	fvwm >= 2.5.13
-Requires:	fvwm-perl
-Requires:	habak
-Requires:	mpc
-Requires:	mpd
-Requires:	python2
-Requires:	rox
-Requires:	scrot
-Requires:	sudo
-Requires:	trayer
-#Requires:	xmms-shell
-Requires:	xscreensaver
-BuildArch:	noarch
+Summary:        Desktop Environment based on fvwm2
+Name:           fvwm-crystal
+Version:        3.4.1
+Release:        1
+License:        GPL v2+
+Group:          Applications/System
+Source:         https://download.berlios.de/fvwm-crystal/%{name}-%{version}.tar.gz
+URL:            https://fvwm-crystal.berlios.de/
+Requires:       ImageMagick
+Requires:       aterm
+Requires:       fvwm >= 2.5.13
+Requires:       fvwm-perl
+Requires:       habak
+Requires:       mpc
+Requires:       mpd
+Requires:       python2
+Requires:       rox
+Requires:       scrot
+Requires:       sudo
+Requires:       trayer
+#Requires:      xmms-shell
+Requires:       xscreensaver
+BuildArch:      noarch
 
 %description
 FVWM-Crystal is a set of configuration files for F* Virtual Window 
@@ -37,13 +37,10 @@ functional desktop environment.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%__make prefix=$RPM_BUILD_ROOT%_prefix install
+%__make DESTDIR=$RPM_BUILD_ROOT prefix=/usr install
 mv %{buildroot}%{_docdir}/%{name}-%{version} %{buildroot}%{_docdir}/%{name}
 
 #sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/fvwm-crystal/fvwm/scripts/FvwmMPD/*.py %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_docdir}/%{name}
@@ -51,6 +48,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}
 %{_datadir}/man/man?/*
 %{_datadir}/xsessions/%{name}.desktop
+%{_sysconfdir}/X11/Sessions/*
+%{_sysconfdir}/sudoers.d/*
 
 %changelog
 * Wed Dec 25 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.1

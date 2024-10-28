@@ -1,13 +1,13 @@
-Name:		sc-im
-Version:	0.8.3
-Release:	1
-Summary:	Spreadsheet Calculator Improvised
-Group:		Applications/Productivity
-License:	https://github.com/andmarti1424/sc-im/blob/freeze/LICENSE
-URL:		https://github.com/andmarti1424/sc-im
-Source0:	%{name}-%{version}.tar.gz
-BuildRequires:	libzip-devel libxml2-devel ncurses-devel byacc git gcc gnuplot
-Requires:	gnuplot
+Name:           sc-im
+Version:        0.8.3
+Release:        1
+Summary:        Spreadsheet Calculator Improvised
+Group:          Applications/Productivity
+License:        https://github.com/andmarti1424/sc-im/blob/freeze/LICENSE
+URL:            https://github.com/andmarti1424/sc-im
+Source0:        %{name}-%{version}.tar.gz
+BuildRequires:  libzip-devel libxml2-devel ncurses-devel byacc git gcc gnuplot
+Requires:       gnuplot
 
 %description
 SC-IM is an ncurses spreadsheet program for terminal.

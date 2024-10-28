@@ -39,9 +39,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes
 cp -a HLMatrix $RPM_BUILD_ROOT%{_datadir}/themes
 install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/themes/HLMatrix/index.theme
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/HLMatrix
 %{_datadir}/gdm/Matrix

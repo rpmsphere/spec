@@ -1,16 +1,16 @@
-Name:		songwrite2
-Version:	0.4.1
-Release:	12.1
-Summary:    	Guitar tabulature editor with playing and printing
-License:	GPLv2
-Group:		Sound/Midi
-URL:        	https://home.gna.org/oomadness/en/songwrite
-Source0:     	https://download.gna.org/songwrite/Songwrite2-%{version}.tar.gz
+Name:           songwrite2
+Version:        0.4.1
+Release:        12.1
+Summary:        Guitar tabulature editor with playing and printing
+License:        GPLv2
+Group:          Sound/Midi
+URL:            https://home.gna.org/oomadness/en/songwrite
+Source0:        https://download.gna.org/songwrite/Songwrite2-%{version}.tar.gz
 BuildRequires:  python2-devel
-Requires:	python-editobj2
+Requires:       python-editobj2
 Requires:       hicolor-icon-theme
-BuildArch:	noarch
-Obsoletes:	songwrite
+BuildArch:      noarch
+Obsoletes:      songwrite
 
 %description
 Songwrite2 is a tablature (guitar partition) editor. It's the successor of songwrite.

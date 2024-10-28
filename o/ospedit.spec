@@ -11,6 +11,7 @@ Source0: https://sourceforge.net/projects/osplus/files/Text%20Editor/%{version}/
 BuildRequires: dos2unix
 BuildRequires: rhtvision-devel
 BuildRequires: gpm-devel
+BuildRequires: allegro-devel
 
 %description
 A text editor included in OSPlus.

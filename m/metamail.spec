@@ -22,8 +22,8 @@ those using the Andrew toolkit) with elm.
 %setup -n metamail-2.7-19
 %patch -P 1 -b .security
 %patch -P 0
-%patch2
-%patch3
+%patch 2
+%patch 3
 
 %build
 make
@@ -102,9 +102,6 @@ ln -sf mimecheck $RPM_BUILD_ROOT/usr/bin/mimegzip
 %doc %{_mandir}/man1/showpicture.1.gz
 %doc %{_mandir}/man1/splitmail.1.gz
 %exclude %doc %{_mandir}/man4/mailcap.4.gz
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Jun 09 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.19

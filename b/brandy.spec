@@ -34,9 +34,6 @@ make %{?_smp_mflags}
 rm -rf %{buildroot}
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc COPYING READ.ME docs/*.txt examples
 %{_bindir}/brandy

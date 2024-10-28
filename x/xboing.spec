@@ -1,19 +1,19 @@
-Summary:	A Breakout style X Window System based game
-Summary(pl):	Gra pod X podobna do Breakout
-Name:		xboing
-Version:	2.4
-Release:	24.1
-License:	MIT
-Group:		X11/Applications/Games
-Source0:	https://www.techrescue.org/xboing/%{name}%{version}.tar.gz
-Source1:	%{name}.desktop
-Source2:	%{name}.png
-Patch0:		%{name}.patch
-Patch1:		%{name}-Imakefile.patch
-Patch2:		%{name}-sparc.patch
-Patch3:		%{name}-visualfix.patch
-URL:		https://www.techrescue.org/xboing/
-BuildRequires:	imake, libX11-devel, libXpm-devel, libXext-devel
+Summary:        A Breakout style X Window System based game
+Summary(pl):    Gra pod X podobna do Breakout
+Name:           xboing
+Version:        2.4
+Release:        24.1
+License:        MIT
+Group:          X11/Applications/Games
+Source0:        https://www.techrescue.org/xboing/%{name}%{version}.tar.gz
+Source1:        %{name}.desktop
+Source2:        %{name}.png
+Patch0:         %{name}.patch
+Patch1:         %{name}-Imakefile.patch
+Patch2:         %{name}-sparc.patch
+Patch3:         %{name}-visualfix.patch
+URL:            https://www.techrescue.org/xboing/
+BuildRequires:  imake, libX11-devel, libXpm-devel, libXext-devel
 
 %description
 Xboing is an X Window System based game like the Breakout arcade game.
@@ -27,27 +27,27 @@ do przebicia się przez wszystkie.
 
 %prep
 %setup -q -n xboing
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
 sed -i 's|-lm|-lm -Wl,--allow-multiple-definition|' Imakefile
 
 %build
 xmkmf
 %{__make} \
-	CC=%{__cc} \
-	CDEBUGFLAGS="%{optflags}" \
-	XBOING_DIR=%{_datadir}/xboing \
-	HIGH_SCORE_FILE=/var/games/xboing.score
+        CC=%{__cc} \
+        CDEBUGFLAGS="%{optflags}" \
+        XBOING_DIR=%{_datadir}/xboing \
+        HIGH_SCORE_FILE=/var/games/xboing.score
 
 %install
 install -d $RPM_BUILD_ROOT{/var/games,%{_datadir}/xboing,%{_datadir}/applications,%{_datadir}/pixmaps,%{_bindir},%{_mandir}/man1}
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT \
-	XBOING_DIR=$RPM_BUILD_ROOT%{_datadir}/xboing \
-	HIGH_SCORE_FILE=$RPM_BUILD_ROOT/var/games/xboing.score \
-	install install.man
+        XBOING_DIR=$RPM_BUILD_ROOT%{_datadir}/xboing \
+        HIGH_SCORE_FILE=$RPM_BUILD_ROOT/var/games/xboing.score \
+        install install.man
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps

@@ -20,9 +20,9 @@ ncurses one to learn how.
 
 %prep
 %setup -q -n nibbles-v%version
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
@@ -34,9 +34,6 @@ install -Dm755 nibbles %{buildroot}%{_bindir}/%{name}
 mkdir -p %{buildroot}%{_datadir}/nibbles
 touch %{buildroot}%{_datadir}/nibbles/nibbles.score
 cp -a nibbles.levels %{buildroot}%{_datadir}/nibbles
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}

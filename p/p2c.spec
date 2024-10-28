@@ -1,15 +1,15 @@
-Summary:	A Pascal to C translator
-Name:		p2c
-Version:	1.22
-Release:	26.1
-License:	GPL
-Group:		Development/Other
-Source0:	ftp://csvax.cs.caltech.edu/pub/p2c-1.22.tar.bz2
-URL:		https://www.ccrnp.ncifcrf.gov/~toms/p2c/
-Patch2:		p2c-newpatch.patch
+Summary:        A Pascal to C translator
+Name:           p2c
+Version:        1.22
+Release:        26.1
+License:        GPL
+Group:          Development/Other
+Source0:        ftp://csvax.cs.caltech.edu/pub/p2c-1.22.tar.bz2
+URL:            https://www.ccrnp.ncifcrf.gov/~toms/p2c/
+Patch2:         p2c-newpatch.patch
 # Fixes conflicting types for 'my_memcpy' build error: thanks Anssi
-Patch3:		p2c-1.22-memcpy.patch
-Patch4:		p2c-1.22-getline.patch
+Patch3:         p2c-1.22-memcpy.patch
+Patch4:         p2c-1.22-getline.patch
 
 %description
 P2c is a system for translating Pascal programs into the C language.
@@ -23,11 +23,11 @@ using a standard C compiler, such as gcc.
 Install the p2c package if you need a program for translating Pascal
 code into C code.
 
-%package	devel
-Summary:	Files for p2c Pascal to C translator development
-Group:		Development/Other
+%package        devel
+Summary:        Files for p2c Pascal to C translator development
+Group:          Development/Other
 
-%description	devel
+%description    devel
 The p2c-devel package contains the files necessary for development
 of the p2c Pascal to C translation system.
 
@@ -35,9 +35,9 @@ Install the p2c-devel package if you want to do p2c development.
 
 %prep
 %setup -q
-%patch2 -p1 -b .new
-%patch3 -p1 -b .memcpy
-%patch4 -p0 -b .getline
+%patch 2 -p1 -b .new
+%patch 3 -p1 -b .memcpy
+%patch 4 -p0 -b .getline
 mkdir src/shlib
 mkdir include
 ln -s ../src include/p2c
@@ -55,9 +55,6 @@ make install RPM_INSTALL=%{buildroot} LIBDIR=$RPM_BUILD_ROOT%{_libdir} MANDIR=$R
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/p2c*

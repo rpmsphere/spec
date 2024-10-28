@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name:		jag
-Version:	0.3.1
-Release:	1
-License:	GPLv2+
-Group:		Games/Puzzles
-Summary:	An arcade-puzzle 2D game to break all of the target blocks
-URL:		https://jag.xlabsoft.com
-Source:		https://jag.xlabsoft.com/files/%name-%version-src.zip
-Patch0:		%{name}-path.patch
+Name:           jag
+Version:        0.3.1
+Release:        1
+License:        GPLv2+
+Group:          Games/Puzzles
+Summary:        An arcade-puzzle 2D game to break all of the target blocks
+URL:            https://jag.xlabsoft.com
+Source:         https://jag.xlabsoft.com/files/%name-%version-src.zip
+Patch0:         %{name}-path.patch
 BuildRequires:  gcc-c++
 BuildRequires:  mesa-libGL-devel
 BuildRequires:  SDL-devel
@@ -37,7 +37,7 @@ collect 500 and more items, you can remove all the same items from the field.
 
 %prep
 %setup -q -n %name-%version-src
-%patch0 -p1
+%patch 0 -p1
 sed -i -e 's|SDLmain|SDL|' -e 's|-lXrandr|-lX11 -lXrandr|' Game.pro
 
 %build
@@ -62,9 +62,6 @@ rm -rf %buildroot
 %makeinstall INSTALL_ROOT=%buildroot
 install -Dm644 %name.desktop %buildroot/%_datadir/applications/%name.desktop
 install -Dm644 images/item4.png %buildroot/%{_datadir}/icons/hicolor/64x64/apps/%name.png
-
-%clean
-rm -rf %buildroot
 
 %files
 %_bindir/%name

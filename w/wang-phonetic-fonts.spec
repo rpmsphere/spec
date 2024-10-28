@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/wang
+%define fontdir %{_datadir}/fonts/wang
 
 Summary: H.T.Wang Free Phonetic Fonts
 Name: wang-phonetic-fonts
@@ -25,9 +25,6 @@ Free Chinese TrueType phonetic fonts 2004 donated by Prof. Hann-Tzong WANG.
 rm -rf %{buildroot}
 install -d %{buildroot}%{fontdir}
 install -m644 wp*.ttf %{buildroot}%{fontdir}
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /usr/bin/fc-cache 2> /dev/null

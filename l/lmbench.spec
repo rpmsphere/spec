@@ -6,10 +6,11 @@ Version: 3.0
 Release: 0.%{tar_release}.3
 Summary: Tools for Kernel Performance Analysis
 License: GPL
-URL:	 https://sourceforge.net/projects/lmbench
+URL:     https://sourceforge.net/projects/lmbench
 Source: https://dl.sf.net/lmbench/lmbench-%{version}-%{tar_release}.tgz
 Source1: %{name}-%{version}-%{tar_release}-run.sh
 Group: Development/Kernel
+BuildRequires: libtirpc-devel
 Requires: perl, make
 
 %description
@@ -42,9 +43,6 @@ cp -avx bin/ scripts/ %{buildroot}%{_prefix}/lib/lmbench/
 find %{buildroot}%{_prefix}/lib/lmbench/ -name 'Makefile*' -or -name '*.[ao]' -exec %{__rm} -f {} \;
 
 chmod a-x %{buildroot}%{_prefix}/lib/lmbench/scripts/info-template
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc ACKNOWLEDGEMENTS CHANGES COPYING COPYING-2 hbench-REBUTTAL README.* TODO.* doc/

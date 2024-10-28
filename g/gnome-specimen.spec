@@ -40,9 +40,6 @@ desktop-file-install --vendor="" --delete-original \
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %pre
 if [ "$1" -gt 1 ]; then
     export GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source`

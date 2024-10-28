@@ -1,37 +1,38 @@
 %global ename FreeDoko
 %undefine _debugsource_packages
 
-Name:		freedoko
-Version:	0.8.0
-Release:	1
-Summary:	FreeDoko is a Doppelkopf-game
-Summary(de):	FreeDoko ist ein Doppelkopfspiel
-Group:		Amusements/Games/Board/Card
-License:	GPL
-URL:		https://free-doko.sourceforge.net/de/index.html
-Source0:	https://excellmedia.dl.sourceforge.net/project/free-doko/source/%{ename}_%{version}.src.zip
-BuildRequires:	cairo-devel
-BuildRequires:	docbook-utils
-BuildRequires:	dos2unix unix2dos
-BuildRequires:	gcc-c++
-BuildRequires:	glib2-devel
-BuildRequires:	gnet2-devel
-BuildRequires:	gtkmm30-devel
-BuildRequires:	libstdc++-devel
-BuildRequires:	pango-devel
-#BuildRequires:	update-desktop-files
-BuildRequires:	texlive-latex
+Name:           freedoko
+Version:        0.8.0
+Release:        1
+Summary:        FreeDoko is a Doppelkopf-game
+Summary(de):    FreeDoko ist ein Doppelkopfspiel
+Group:          Amusements/Games/Board/Card
+License:        GPL
+URL:            https://free-doko.sourceforge.net/de/index.html
+Source0:        https://excellmedia.dl.sourceforge.net/project/free-doko/source/%{ename}_%{version}.src.zip
+BuildRequires:  cairo-devel
+BuildRequires:  docbook-utils
+BuildRequires:  dos2unix unix2dos
+BuildRequires:  gcc-c++
+BuildRequires:  glib2-devel
+BuildRequires:  gnet2-devel
+BuildRequires:  gtkmm30-devel
+BuildRequires:  libstdc++-devel
+BuildRequires:  pango-devel
+#BuildRequires: update-desktop-files
+BuildRequires:  texlive-latex
 BuildRequires:  texlive-german
 BuildRequires:  texlive-babel-german
 BuildRequires:  texlive-ucs
 BuildRequires:  texlive-metafont
 BuildRequires:  texlive-mfware
 BuildRequires:  texlive-gsftopk
-#BuildRequires:	hpijs-standalone
-BuildRequires:	w3m
-BuildRequires:	asciidoc
-BuildRequires:	zlib-devel
+#BuildRequires: hpijs-standalone
+BuildRequires:  w3m
+BuildRequires:  asciidoc
+BuildRequires:  zlib-devel
 BuildRequires:  freealut-devel
+BuildRequires:  harfbuzz-devel
 
 %description
 FreeDoko is a Doppelkopf-game, written by Borg Enders and
@@ -59,10 +60,10 @@ Borg Enders <ben@BorgSoft.de>
 Diether Knof <dknof@gmx.de>
 
 %package manual
-Summary:		User documetation for FreeDoko
-Summary(de):		Benutzerhandbuch für FreeDoko
-Group:			Documentation/Other
-BuildArch:		noarch
+Summary:                User documetation for FreeDoko
+Summary(de):            Benutzerhandbuch für FreeDoko
+Group:                  Documentation/Other
+BuildArch:              noarch
 
 %description manual
 Usermanual for FreeDoko.
@@ -91,9 +92,6 @@ make compile
 %install
 %__rm -rf %{buildroot}
 make install %{?jobs:-j%{jobs}} DESTDIR=%{buildroot} OPERATING_SYSTEM=Linux
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 #doc AUTHORS ChangeLog COPYING README Release.txt

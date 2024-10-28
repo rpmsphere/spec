@@ -1,15 +1,15 @@
-Summary:	3D Matrix Screensaver
-Summary(pl.UTF-8):	Trójwymiarowy wygaszacz ekranu
-Name:		matrixgl
-Version:	2.3.2
-Release:	13.1
-License:	GPLv2+
-Group:		X11/Applications
-Source0:	https://downloads.sourceforge.net/matrixgl/%{name}-%{version}.tar.gz
-URL:		https://sourceforge.net/projects/matrixgl/
-BuildRequires:	mesa-libGLU-devel
-BuildRequires:	mesa-libGL-devel
-BuildRequires:	xscreensaver
+Summary:        3D Matrix Screensaver
+Summary(pl.UTF-8):      Trójwymiarowy wygaszacz ekranu
+Name:           matrixgl
+Version:        2.3.2
+Release:        13.1
+License:        GPLv2+
+Group:          X11/Applications
+Source0:        https://downloads.sourceforge.net/matrixgl/%{name}-%{version}.tar.gz
+URL:            https://sourceforge.net/projects/matrixgl/
+BuildRequires:  mesa-libGLU-devel
+BuildRequires:  mesa-libGL-devel
+BuildRequires:  xscreensaver
 
 %description
 Matrixgl is a 3D screensaver for (partially for KDE) based on "The
@@ -40,9 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 rm %{buildroot}%{_libexecdir}/xscreensaver/matrixgl
 ln -s ../../bin/%{name} %{buildroot}%{_libexecdir}/xscreensaver/matrixgl
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog NEWS README TODO
 %{_bindir}/%{name}
@@ -60,8 +57,8 @@ rm -rf $RPM_BUILD_ROOT
 * Thu Jun 24 2010 PLD Team <feedback@pld-linux.org>
 - up to 2.3
 - add new patches:
-	-compiler.patch (checking for c++ compiler causes error)
-	-Makefile.patch (remove bogus entry from Makefile.am)
+        -compiler.patch (checking for c++ compiler causes error)
+        -Makefile.patch (remove bogus entry from Makefile.am)
 - fix cvs entry (0.2.8 -> 2.2.8)
 - no more sedding required
 - xscreensaver.patch is now obsolete, but there is still bogus entry in configure.ac, so we need to run sed to fix that typo

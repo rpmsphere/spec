@@ -37,9 +37,6 @@ mv $RPM_BUILD_ROOT%{_datadir}/backgrounds/contest $RPM_BUILD_ROOT%{_datadir}/bac
 sed -i 's|share/backgrounds|share/backgrounds/ubuntu|' $RPM_BUILD_ROOT%{_datadir}/gnome-background-properties/*.xml
 cp -a $RPM_BUILD_ROOT%{_datadir}/gnome-background-properties $RPM_BUILD_ROOT%{_datadir}/mate-background-properties
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING ChangeLog AUTHORS
 %{_datadir}/backgrounds/ubuntu

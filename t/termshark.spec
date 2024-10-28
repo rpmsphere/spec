@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
 
-Name:		termshark
-Version:	2.4.0
-Release:	1
-Summary:	A terminal UI for tshark
-License:	MIT
-Group:		Development/Other
-URL:		https://termshark.io/
-Source0:	%{name}-%{version}.tar.gz
-#Source1:	%{name}.rpmlintrc
-BuildRequires:	go >= 1.11
-BuildRequires:	git-core
-#BuildRequires:	upx
-Requires:	tshark
+Name:           termshark
+Version:        2.4.0
+Release:        1
+Summary:        A terminal UI for tshark
+License:        MIT
+Group:          Development/Other
+URL:            https://termshark.io/
+Source0:        %{name}-%{version}.tar.gz
+#Source1:       %{name}.rpmlintrc
+BuildRequires:  go >= 1.11
+BuildRequires:  git-core
+#BuildRequires: upx
+Requires:       tshark
 
 %description
 A terminal user-interface for tshark, inspired by Wireshark

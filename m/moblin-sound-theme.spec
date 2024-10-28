@@ -23,9 +23,6 @@ The sound theme used in the Moblin UX.
 %install
 make install DESTDIR=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %{_datadir}/sounds/moblin

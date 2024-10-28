@@ -31,9 +31,6 @@ python2 setup.py build
 %install
 python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.txt RELEASE_NOTES.txt
 %doc LICENSES/BLOSC.txt LICENSES/CARRAY.txt

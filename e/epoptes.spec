@@ -13,8 +13,8 @@ BuildRequires:  intltool
 BuildRequires:  openssl
 #BuildRequires:  pwdutils
 Requires:  python2-twisted
-BuildRequires:  python2-devel
-BuildRequires:  python2-distutils-extra
+BuildRequires:  python3-devel
+BuildRequires:  python3-distutils-extra
 BuildRequires:  desktop-file-utils
 BuildRequires:  systemd
 Requires:       libfaketime
@@ -61,7 +61,7 @@ This is a client part of Epoptes Computer lab management tool.
 #patch0 -p1
 
 for file in $(find . -type f -name "*.py" ); do
-	sed -i "s|/usr/bin/env python|%{_bindir}/python3|g" $file
+        sed -i "s|/usr/bin/env python|%{_bindir}/python3|g" $file
 done
 
 %build
@@ -81,9 +81,6 @@ mkdir -p %{buildroot}%{_unitdir}
 
 #sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name} #%{buildroot}%{_datadir}/epoptes-client/remote-assistance
 #sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name} %{buildroot}%{_datadir}/epoptes-client/*
-
-%clean
-%__rm -rf %{buildroot}
 
 %pre
 systemctl enable epoptes-server.service

@@ -19,7 +19,7 @@ Source20: https://plusplus.free.fr/rollercoaster/SunnyWE.trk
 Source21: https://plusplus.free.fr/rollercoaster/Hypotron.trk
 Source22: https://plusplus.free.fr/rollercoaster/KarmicRelief.trk
 Source23: https://plusplus.free.fr/rollercoaster/millenium.trk
-Patch1:	rollercoaster-Makefile.patch
+Patch1: rollercoaster-Makefile.patch
 Requires: xscreensaver
 BuildRequires: mesa-libGL-devel, mesa-libGLU-devel, libXt-devel, libXmu-devel
 BuildRequires: freeglut-devel 
@@ -40,7 +40,7 @@ animation using OpenGL.
 %prep
 %setup -q -n rollercoaster-%{version}-src
 gunzip -c %{SOURCE1} | patch -f || true
-%patch1 -p1 -b .make
+%patch 1 -p1 -b .make
 
 %build
 %{__make} -f Makefile.linux screensaver
@@ -63,9 +63,6 @@ mkdir -p %{buildroot}%{_datadir}/rollercoaster/
 %{__install} -D -m0644 %{SOURCE21} %{buildroot}%{_datadir}/rollercoaster/
 %{__install} -D -m0644 %{SOURCE22} %{buildroot}%{_datadir}/rollercoaster/
 %{__install} -D -m0644 %{SOURCE23} %{buildroot}%{_datadir}/rollercoaster/
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 /usr/bin/roller

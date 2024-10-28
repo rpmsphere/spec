@@ -36,9 +36,6 @@ cp -a %{SOURCE1} %{buildroot}%{_datadir}/applications
 cp -a %{SOURCE2} %{buildroot}%{_datadir}/pixmaps
 %find_lang %{name}-2
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}-2.lang
 %doc ABOUT-NLS AUTHORS ChangeLog COPYING INSTALL NEWS README THANKS TODO
 %{_bindir}/gpaint-2

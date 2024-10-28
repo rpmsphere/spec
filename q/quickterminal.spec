@@ -23,7 +23,7 @@ qmake-qt5
 make %{?_smp_mflags}
 
 %install
-%make_install
+#make_install
 install -Dm755 qt %{buildroot}%{_bindir}/%{name}
 install -Dm644 src/icons/application-icon.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -Dm644 desktop/%{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop

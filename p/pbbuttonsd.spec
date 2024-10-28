@@ -83,9 +83,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 install -D -m 755 %{SOURCE1} $RPM_BUILD_ROOT%{_initrddir}/%{name}
 %find_lang %{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 # new install
 mv  %{_sysconfdir}/%{name}.conf  %{_sysconfdir}/%{name}.cnf

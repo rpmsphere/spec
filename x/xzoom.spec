@@ -24,8 +24,8 @@ Authors:
 
 %prep
 %setup -q
-%patch0 -p 1
-%patch1
+%patch 0 -p 1
+%patch 1
 
 %build
 xmkmf

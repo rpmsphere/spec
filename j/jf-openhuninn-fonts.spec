@@ -1,4 +1,4 @@
-%define	_name	jf-openhuninn
+%define _name   jf-openhuninn
 %define fontdir %{_datadir}/fonts/%{_name}
 
 Summary: Justfont OpenHuninn TrueType Fonts

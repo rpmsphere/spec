@@ -1,26 +1,26 @@
 %define __python /usr/bin/python2
-Name:			invesalius
-Group:			Sciences/Other
-License:		GPLv2
-Summary:		3D medical imaging reconstruction software
-Version:		3.0.1925
-Release:		11.1
-URL:			https://svn.softwarepublico.gov.br/trac/invesalius/
-Source0:		%{name}3.tar.bz2
-Source1:		%{name}.png
-Requires:		pygtk2
-Requires:		pycairo
-Requires:		python2-pydicom
-Requires:		python-itk
-Requires:		python-itk-numarray
-Requires:		python-nibabel
-Requires:		python-sigar
-Requires:		python-vtk
-Requires:		python-gdcm
-Requires:		python-pillow
-Requires:		python-serial
-Requires:		python2-wxpython
-BuildArch:      	noarch
+Name:                   invesalius
+Group:                  Sciences/Other
+License:                GPLv2
+Summary:                3D medical imaging reconstruction software
+Version:                3.0.1925
+Release:                11.1
+URL:                    https://svn.softwarepublico.gov.br/trac/invesalius/
+Source0:                %{name}3.tar.bz2
+Source1:                %{name}.png
+Requires:               pygtk2
+Requires:               pycairo
+Requires:               python2-pydicom
+Requires:               python-itk
+Requires:               python-itk-numarray
+Requires:               python-nibabel
+Requires:               python-sigar
+Requires:               python-vtk
+Requires:               python-gdcm
+Requires:               python-pillow
+Requires:               python-serial
+Requires:               python2-wxpython
+BuildArch:              noarch
 
 %description
 InVesalius generates 3D anatomical models based on a sequence of 2D DICOM
@@ -51,9 +51,6 @@ sed -i '127i\
 perl -pi -e 's|/usr/local/bin/python|%{__python}|;' invesalius/invesalius.py
 perl -pi -e 's|(DOC_DIR = ).*|$1"%{_docdir}/%{name}"|;' invesalius/constants.py
 perl -pi -e 's|\bSpacing= |spacing=|;' invesalius/gui/default_tasks.py
-
-%clean
-rm -rf %{buildroot}
 
 %install
 mkdir -p %{buildroot}%{_datadir}/%{name}

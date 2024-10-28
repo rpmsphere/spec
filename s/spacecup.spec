@@ -21,9 +21,9 @@ goal points than the adversary.
 
 %prep
 %setup -q -n SpaceCup
-%patch0 -p0
-%patch1 -p0
-%patch2 -p0
+%patch 0 -p0
+%patch 1 -p0
+%patch 2 -p0
 sed -i -e 's|iostream\.h|iostream|' -e 's|cout|std::cout|' -e 's|cerr|std::cerr|' -e 's|endl|std::endl|' src/*.h src/*.cc src/sound/*.cc
 sed -i '1i #include <cstring>' src/menu.cc
 sed -i '42,44s|^extern ||' src/clavier.cc
@@ -52,9 +52,6 @@ Icon=spacecup
 Terminal=false
 Categories=Game;ArcadeGame;
 EOF
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc AUTHORS COPYING README README.fr

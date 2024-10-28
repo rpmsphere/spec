@@ -6,7 +6,7 @@ License:        GPL
 Group:          Toys
 URL:            https://robobunny.com/projects/weatherspect/html/
 Source0:        https://robobunny.com/projects/weatherspect/%{name}_v%{version}.tar.gz
-Requires:	perl-Term-Animation
+Requires:       perl-Term-Animation
 BuildArch:      noarch
 
 %description

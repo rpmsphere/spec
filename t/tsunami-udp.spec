@@ -1,15 +1,15 @@
-Name:				 tsunami-udp
-Version:			 1.1+41+349
-Release:			 1.1
-Summary:			 Fast File Transfer Protocol
-Source:			 tsunami-udp-%{version}.tar.bz2
+Name:                            tsunami-udp
+Version:                         1.1+41+349
+Release:                         1.1
+Summary:                         Fast File Transfer Protocol
+Source:                  tsunami-udp-%{version}.tar.bz2
 # remove that test binary from the build, it's the only thing breaking strict aliasing:
-Patch1:			 tsunami-udp-do_not_build_fusereadtest.patch
-URL:				 https://tsunami-udp.sourceforge.net/
-Group:			 Productivity/Networking/Other
-License:			 GNU General Public License version 2 or later (GPL v2 or later)
-BuildRequires:	 gcc make glibc-devel
-BuildRequires:	 autoconf automake libtool
+Patch1:                  tsunami-udp-do_not_build_fusereadtest.patch
+URL:                             https://tsunami-udp.sourceforge.net/
+Group:                   Productivity/Networking/Other
+License:                         GNU General Public License version 2 or later (GPL v2 or later)
+BuildRequires:   gcc make glibc-devel
+BuildRequires:   autoconf automake libtool
 
 %description
 A fast user-space file transfer protocol that uses TCP control and UDP data for
@@ -27,7 +27,7 @@ eVLBI radio astronomy and geodesy (VSIB, PCEVN DAQ).
 
 %prep
 %setup -q -n tsunami-udp
-%patch1
+%patch 1
 %__rm -rf Makefile
 %__rm -rf Makefile.in
 %__rm -rf */Makefile
@@ -52,12 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
 %__rm \
-	 "$RPM_BUILD_ROOT%{_bindir}"/*test \
-	 "$RPM_BUILD_ROOT%{_includedir}"/* \
-	 "$RPM_BUILD_ROOT%{_libdir}"/*
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
+         "$RPM_BUILD_ROOT%{_bindir}"/*test \
+         "$RPM_BUILD_ROOT%{_includedir}"/* \
+         "$RPM_BUILD_ROOT%{_libdir}"/*
 
 %files
 %doc README.txt ChangeLog USAGE.txt

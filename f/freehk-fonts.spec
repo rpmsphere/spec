@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/freehk
+%define fontdir %{_datadir}/fonts/freehk
 
 Summary: Free HK Font
 Name: freehk-fonts

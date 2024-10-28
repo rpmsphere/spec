@@ -143,7 +143,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_bindir}/*
 %{_datadir}/applications/*
 %{_datadir}/icons/hicolor/128x128/apps/*
-%{_datadir}/fonts/truetype/Scid
+#{_datadir}/fonts/truetype/Scid
 
 %files sounds
 %{_datadir}/%{name}/sounds

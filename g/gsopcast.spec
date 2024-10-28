@@ -1,21 +1,21 @@
 Name:           gsopcast
-Requires:	    alsa wget tar
+Requires:           alsa wget tar
 #Requires:      sopcast
-BuildRequires:	gcc gcc-c++ libgnome-devel alsa-lib-devel pkgconfig perl-XML-Parser
-URL:		    https://code.google.com/p/gsopcast/
+BuildRequires:  gcc gcc-c++ libgnome-devel alsa-lib-devel pkgconfig perl-XML-Parser
+URL:                https://code.google.com/p/gsopcast/
 # SVN repository:
 # svn checkout https://gsopcast.googlecode.com/svn/trunk/ gsopcast-read-only
-License:	    GNU General Public License (GPL)
-Group:		    Productivity/Multimedia/Video/P2P
-Version:	    0.4.0
-Release:	    31.4
-Summary:	    A GTK GUI front-end of sopcast
+License:            GNU General Public License (GPL)
+Group:              Productivity/Multimedia/Video/P2P
+Version:            0.4.0
+Release:            31.4
+Summary:            A GTK GUI front-end of sopcast
 Source:         %name-%version.tar.bz2
-Source1:	    gsopcast.desktop
-Source2:	    gsopcast_icon.tar.bz2
+Source1:            gsopcast.desktop
+Source2:            gsopcast_icon.tar.bz2
 Patch0:         header.diff
 Patch1:         channel_filter.diff 
-BuildRequires:	udisks2
+BuildRequires:  udisks2
 
 %description
 gsopcast is a GTK GUI front-end of the Linux command line executive of P2P TV sopcast.
@@ -27,10 +27,10 @@ Authors:
 
 %prep
 %setup -q
-cp $RPM_SOURCE_DIR/gsopcast.desktop ./src/
-tar xf $RPM_SOURCE_DIR/gsopcast_icon.tar.bz2
-%patch0 -p 0
-%patch1 -p 1
+cp %{SOURCE1} ./src/
+tar xf %{SOURCE2}
+%patch 0 -p 0
+%patch 1 -p 1
 
 %build
 #CFLAGS="$RPM_OPT_FLAGS" CXXFLAGS="$RPM_OPT_FLAGS"
@@ -45,9 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 cp -r icons $RPM_BUILD_ROOT/usr/share/
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/bin/gsopcast
@@ -75,5 +72,5 @@ rm -f /usr/bin/sp-sc
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.0
 - Rebuilt for Fedora
-* Thu Jul 01 2008 - Alex Lau <avengermojo@gmail.com> 0.4.0-1
+* Tue Jul 01 2008 - Alex Lau <avengermojo@gmail.com> 0.4.0-1
 - initial spec file

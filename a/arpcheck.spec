@@ -29,15 +29,11 @@ some arpspoofing (mitm) or changes his IP.
 rm -rf $RPM_BUILD_ROOT
 install -Dp -m 0755 %{SOURCE0} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
 - Rebuilt for Fedora
-
-* Thu Jan 02 2009 Fabian Affolter <fabian@bernewireless.net> - 1.8-1
+* Fri Jan 02 2009 Fabian Affolter <fabian@bernewireless.net> - 1.8-1
 - Initial spec for Fedora

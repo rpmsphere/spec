@@ -40,9 +40,6 @@ install -Dm644 jlibrary/bin/profile.ijs %{buildroot}%{_sysconfdir}/j/%{version}
 %{_datadir}/j/%{version}
 %{_sysconfdir}/j/%{version}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 9.04.beta
 - Rebuilt for Fedora

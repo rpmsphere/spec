@@ -20,7 +20,7 @@ possible to the traditional text processing tools... cat, echo, sed, etc.
 
 %prep
 %setup -q
-%patch1
+%patch 1
 sed -i 's|slang.h||' configure
 sed -i 's|slang.h|slang/slang.h|' src/lessui.c src/lessdisp.c src/lessrend.c
 
@@ -34,9 +34,6 @@ export CC=clang CXX=clang++
 make DESTDIR=$RPM_BUILD_ROOT install
 %__rm -rf "$RPM_BUILD_ROOT%{_datadir}/xml-coreutils"
 %__rm doc/Makefile*
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc ChangeLog COPYING NEWS README SFX THANKS

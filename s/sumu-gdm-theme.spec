@@ -30,9 +30,6 @@ mkdir -p %{buildroot}/%{_sysconfdir}/%{name}
 install -m 0644 src/RHEL.xml %{buildroot}/%{_sysconfdir}/%{name}/SUMU.xml
 ln -s %{_sysconfdir}/%{name}/SUMU.xml %{buildroot}/%{_datadir}/gdm/themes/SUMU/SUMU.xml
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %config(noreplace) %{_sysconfdir}/%{name}/SUMU.xml
 %{_datadir}/gdm/themes/SUMU

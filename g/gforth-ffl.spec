@@ -4,10 +4,10 @@ Release:    4.1
 Summary:    A general purpose Forth library
 Group:      Development/Libraries
 License:    GPL
-URL:		https://github.com/irdvo/ffl
-Source0: 	ffl-%{version}.tar.gz
-BuildArch:	noarch
-Requires:	gforth
+URL:            https://github.com/irdvo/ffl
+Source0:        ffl-%{version}.tar.gz
+BuildArch:      noarch
+Requires:       gforth
 
 %description
 The Forth Foundation Library (FFL) is a library written in the Forth
@@ -23,9 +23,6 @@ source code. Its main purpose is to make it easier to develop applications.
 rm -rf $RPM_BUILD_ROOT
 install -d ${RPM_BUILD_ROOT}%{_datadir}/gforth/site-forth
 cp -a ffl ${RPM_BUILD_ROOT}%{_datadir}/gforth/site-forth
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc examples html test AUTHORS ChangeLog COPYING NEWS README

@@ -1,23 +1,23 @@
-Name:		praat
-Summary:	Doing phonetics, speech analysis and synthesis by computer
-Version:	6.4.07
-Release:	1
-License: 	GPLv2
-Group:		Sciences/Other
-URL:		https://www.fon.hum.uva.nl/praat/
-BuildRequires:	libXp-devel
-BuildRequires:	libXt-devel
-BuildRequires:	libSM-devel
-BuildRequires:	libICE-devel
-BuildRequires:	libXext-devel
-BuildRequires:	alsa-lib-devel
-BuildRequires:	libXmu-devel
-BuildRequires:	motif-devel
-BuildRequires:	gtk2-devel
-BuildRequires:	cairo-devel
-Source0:	https://codeload.github.com/praat/praat/tar.gz/refs/tags/v%{version}#/%{name}-%{version}.tar.gz
-Source1:	praat.png
-Source2:	praat.desktop
+Name:           praat
+Summary:        Doing phonetics, speech analysis and synthesis by computer
+Version:        6.4.07
+Release:        1
+License:        GPLv2
+Group:          Sciences/Other
+URL:            https://www.fon.hum.uva.nl/praat/
+BuildRequires:  libXp-devel
+BuildRequires:  libXt-devel
+BuildRequires:  libSM-devel
+BuildRequires:  libICE-devel
+BuildRequires:  libXext-devel
+BuildRequires:  alsa-lib-devel
+BuildRequires:  libXmu-devel
+BuildRequires:  motif-devel
+BuildRequires:  gtk2-devel
+BuildRequires:  cairo-devel
+Source0:        https://codeload.github.com/praat/praat/tar.gz/refs/tags/v%{version}#/%{name}-%{version}.tar.gz
+Source1:        praat.png
+Source2:        praat.desktop
 
 %description
 According to its authors, praat is "doing phonetics by computer". There are
@@ -35,9 +35,6 @@ statistics.
 %build
 cp makefiles/makefile.defs.linux.pulse makefile.defs
 make
-
-%clean
-rm -rf %{buildroot}
 
 %install
 mkdir -p %{buildroot}/%{_bindir}

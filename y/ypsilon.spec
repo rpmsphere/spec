@@ -6,8 +6,8 @@ Release:        7.1
 Summary:        R6RS Scheme implementation with concurrent garbage collector
 Group:          Development/Languages
 License:        GPLv2 
-URL:		    https://code.google.com/p/ypsilon
-Source0: 	    https://ypsilon.googlecode.com/files/%{name}-%{version}.tar.gz
+URL:                https://code.google.com/p/ypsilon
+Source0:            https://ypsilon.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:  gcc-c++
 
 %description
@@ -34,9 +34,6 @@ make PREFIX=/usr
 %install
 rm -rf $RPM_BUILD_ROOT
 make install PREFIX=/usr DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc license.txt

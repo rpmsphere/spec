@@ -8,7 +8,7 @@ Group: x11
 URL: https://github.com/arnestig/quickrdp
 Source0: https://github.com/arnestig/quickrdp/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildRequires:  libcurl-devel
-BuildRequires: wxGTK3-devel
+BuildRequires: wxGTK-devel
 
 %description
 quickrdp is a connection manager program for your remote desktop, Telnet,

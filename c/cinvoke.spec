@@ -8,7 +8,7 @@ License:      MIT-style
 Version:      1.0
 Release:      20080111.1
 Source0:      https://download.savannah.nongnu.org/releases/cinvoke/cinvoke-%{version}.tgz
-Patch:        cinvoke.patch
+Patch0:        cinvoke.patch
 BuildRequires: perl
 
 %description
@@ -23,7 +23,7 @@ marshaling C parameters and return values.
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 
 %build
 perl ./configure.pl --prefix=%{_prefix}
@@ -44,9 +44,6 @@ install -c -m 644 \
 %files
 %{_includedir}/%{name}*.h
 %{_libdir}/lib%{name}.a
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0

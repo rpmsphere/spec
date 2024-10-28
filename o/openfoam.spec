@@ -1,36 +1,36 @@
 %global __os_install_post %{nil}
 %undefine _debugsource_packages
 
-Name:		openfoam
-Version:	2.2.2
-Release:	16.1
-Group:		Sciences/Physics
-License:	GPL
-Summary:	The open source CFD toolbox
-URL:		https://www.opencfd.co.uk/openfoam/
-Source0:	https://downloads.sourceforge.net/foam/OpenFOAM-%{version}.tgz
-Source1:	https://downloads.sourceforge.net/foam/ThirdParty-%{version}.tgz
-BuildRequires:	cmake
-BuildRequires:	libGL-devel
-BuildRequires:	gmp-devel
-BuildRequires:	gnuplot
-BuildRequires:	hdf5-devel
-BuildRequires: 	libtiff-devel
-BuildRequires:	libXt-devel
-BuildRequires:	mpfr-devel
-BuildRequires:	openmpi-devel
-BuildRequires:	paraview-openmpi-devel
-BuildRequires:	netcdf
-BuildRequires:	python2-devel
-BuildRequires:	qt4-devel
-BuildRequires:	qt4-assistant
-BuildRequires:	libmetis-edf-devel
-BuildRequires:	readline-devel
-BuildRequires:	scotch-devel
-BuildRequires:	tk-devel
-BuildRequires:	zlib-devel
-BuildRequires:	environment-modules
-#Requires:	task-c-devel
+Name:           openfoam
+Version:        2.2.2
+Release:        16.1
+Group:          Sciences/Physics
+License:        GPL
+Summary:        The open source CFD toolbox
+URL:            https://www.opencfd.co.uk/openfoam/
+Source0:        https://downloads.sourceforge.net/foam/OpenFOAM-%{version}.tgz
+Source1:        https://downloads.sourceforge.net/foam/ThirdParty-%{version}.tgz
+BuildRequires:  cmake
+BuildRequires:  libGL-devel
+BuildRequires:  gmp-devel
+BuildRequires:  gnuplot
+BuildRequires:  hdf5-devel
+BuildRequires:  libtiff-devel
+BuildRequires:  libXt-devel
+BuildRequires:  mpfr-devel
+BuildRequires:  openmpi-devel
+BuildRequires:  paraview-openmpi-devel
+BuildRequires:  netcdf
+BuildRequires:  python2-devel
+BuildRequires:  qt4-devel
+BuildRequires:  qt4-assistant
+BuildRequires:  libmetis-edf-devel
+BuildRequires:  readline-devel
+BuildRequires:  scotch-devel
+BuildRequires:  tk-devel
+BuildRequires:  zlib-devel
+BuildRequires:  environment-modules
+#Requires:      task-c-devel
 BuildRequires:  atlas
 %ifarch x86_64
 BuildRequires:  infinipath-psm
@@ -77,7 +77,7 @@ done
 mkdir -p %{buildroot}%{_datadir}/%{name}
 cp -fpar OpenFOAM-%{version} %{buildroot}%{_datadir}/%{name}
 
-#perl -pi -e "s|(libdir=').*(/ThirdParty.*)|$1%{_datadir}/%{name}$2|;"	\
+#perl -pi -e "s|(libdir=').*(/ThirdParty.*)|$1%{_datadir}/%{name}$2|;"  \
 #    `find ThirdParty-%{version}/platforms -name \*.la`
 rm -f `find ThirdParty-%{version}/platforms -name \*.la`
 

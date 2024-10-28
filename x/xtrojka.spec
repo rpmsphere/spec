@@ -1,17 +1,17 @@
-Summary:	An X Window System falling blocks game
-Name:		xtrojka
-Version:	1.2.3
-Release:	12.1
-License:	Distributable
-Group:		Games/Arcade
-BuildRequires:	libX11-devel libXaw-devel Xaw3d-devel libXpm-devel
-Source0:	ftp://sunsite.unc.edu/pub/Linux/games/arcade/tetris/xtrojka123.tar.bz2
+Summary:        An X Window System falling blocks game
+Name:           xtrojka
+Version:        1.2.3
+Release:        12.1
+License:        Distributable
+Group:          Games/Arcade
+BuildRequires:  libX11-devel libXaw-devel Xaw3d-devel libXpm-devel
+Source0:        ftp://sunsite.unc.edu/pub/Linux/games/arcade/tetris/xtrojka123.tar.bz2
 URL:            ftp://ftp.funet.fi/pub/unix/games/
-Source2:	%{name}-16.png.bz2
-Source3:	%{name}-32.png.bz2
-Source4:	%{name}-48.png.bz2
-Patch0:		xtrojka-1.2.3-make.patch.bz2
-Patch1:		xtrojka-errno.patch.bz2
+Source2:        %{name}-16.png.bz2
+Source3:        %{name}-32.png.bz2
+Source4:        %{name}-48.png.bz2
+Patch0:         xtrojka-1.2.3-make.patch.bz2
+Patch1:         xtrojka-errno.patch.bz2
 
 %description
 The xtrojka game is an X Window System game of falling blocks, like Xjewel or
@@ -19,8 +19,8 @@ Tetris.
 
 %prep
 %setup -q -n xtrojka123
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %build
 cp XTrojka.uk XTrojka
@@ -33,10 +33,10 @@ mkdir -p $RPM_BUILD_ROOT/usr/bin
 mkdir -p $RPM_BUILD_ROOT/usr/share/man/man6
 mkdir -p $RPM_BUILD_ROOT/var/lib/games
 
-make	TARGET_DIR=$RPM_BUILD_ROOT/usr/bin \
-	MANDIR=$RPM_BUILD_ROOT/usr/share/man/man6 \
-	HSFILE=$RPM_BUILD_ROOT/var/lib/games/xtrojka.score \
-	install
+make    TARGET_DIR=$RPM_BUILD_ROOT/usr/bin \
+        MANDIR=$RPM_BUILD_ROOT/usr/share/man/man6 \
+        HSFILE=$RPM_BUILD_ROOT/var/lib/games/xtrojka.score \
+        install
 sed -i 's|'$RPM_BUILD_ROOT'||' $RPM_BUILD_ROOT/usr/share/man/man6/xtrojka.6
 chmod 0666 $RPM_BUILD_ROOT/var/lib/games/xtrojka.score
 
@@ -58,9 +58,6 @@ Type=Application
 Icon=%{name}
 Categories=Game;ArcadeGame;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHOR COPYRIGHT MANIFEST README YIKES

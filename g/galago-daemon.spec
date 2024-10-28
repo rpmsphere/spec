@@ -23,9 +23,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc NEWS AUTHORS ChangeLog
 %config(noreplace) %{_sysconfdir}/dbus-1/system.d/galago-daemon.conf

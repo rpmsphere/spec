@@ -19,7 +19,7 @@ and ambidexters should have some advantages. Will 2H4U be too hard for you?
 
 %prep
 %setup -q -n 2H4U
-%patch0
+%patch 0
 %{__cp} %{SOURCE1} .
 
 %build
@@ -36,9 +36,6 @@ install -D -m 0755 2H4U $RPM_BUILD_ROOT%{_bindir}/%{name}
 %__cp %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 %__cp %{buildroot}%{_datadir}/%{name}/images/icone.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %post
 update-mime-database %{_datadir}/mime &> /dev/null
@@ -58,7 +55,7 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3
 - Rebuilt for Fedora
-* Mon Oct 20 2009 Wind <yc.yan@ossii.com.tw>
+* Tue Oct 20 2009 Wind <yc.yan@ossii.com.tw>
 - Rebuild for OSSII.
 - Add desktop and icon file.
 * Fri Jun 13 2008 prusnak@suse.cz

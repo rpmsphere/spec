@@ -29,9 +29,6 @@ make pure_install DESTDIR=$RPM_BUILD_ROOT
 #rm -f $RPM_BUILD_ROOT%{_libdir}/perl5/perllocal.pod
 find $RPM_BUILD_ROOT -type f -name .packlist -exec rm -f {} ';'
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc Changes README
 %{perl_vendorlib}/*

@@ -1,23 +1,23 @@
-Name:		fedy
-Version:	4.0.6
-Release:	5.1
-Summary:	Software, codec installs and system tweaks
-Group:		System/Management
-License:	GPL-3.0+
-URL:		https://github.com/satya164/%{name}
-Source0:	%{name}-%{version}.tar.gz
-BuildArch:	noarch
-Requires:	coreutils
-Requires:	curl
-Requires:	fedora-release
-Requires:	festival
-Requires:	grep
-Requires:	sed
-Requires:	tar
-Requires:	unzip
-Requires:	util-linux
-Requires:	zenity
-Obsoletes:	fedorautils
+Name:           fedy
+Version:        4.0.6
+Release:        5.1
+Summary:        Software, codec installs and system tweaks
+Group:          System/Management
+License:        GPL-3.0+
+URL:            https://github.com/satya164/%{name}
+Source0:        %{name}-%{version}.tar.gz
+BuildArch:      noarch
+Requires:       coreutils
+Requires:       curl
+Requires:       fedora-release
+Requires:       festival
+Requires:       grep
+Requires:       sed
+Requires:       tar
+Requires:       unzip
+Requires:       util-linux
+Requires:       zenity
+Obsoletes:      fedorautils
 
 %description
 Fedy (previously called as FedoraUtils) lets you install codecs and

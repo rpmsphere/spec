@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Name:		xmille
-Version:	2.0
-Release:	7.1
-Summary:	Mille bournes game
-Group:		Games
-License:	Public Domain
-URL:		ftp://ftp.x.org/R5contrib/%{name}.tar.Z
-Source0:	ftp://ftp.x.org/R5contrib/%{name}.tar.Z
+Name:           xmille
+Version:        2.0
+Release:        7.1
+Summary:        Mille bournes game
+Group:          Games
+License:        Public Domain
+URL:            ftp://ftp.x.org/R5contrib/%{name}.tar.Z
+Source0:        ftp://ftp.x.org/R5contrib/%{name}.tar.Z
 Source1:    xmille.png
-Patch0:		xmille_2.0-13.diff.bz2
-BuildRequires:	libXext-devel libX11-devel imake
+Patch0:         xmille_2.0-13.diff.bz2
+BuildRequires:  libXext-devel libX11-devel imake
 
 %description
 The classic game of Mille Bournes (or Mille Bornes).
@@ -21,7 +21,7 @@ opponent.
 
 %prep
 %setup -q -c
-%patch0 -p0
+%patch 0 -p0
 
 %build
 xmkmf
@@ -56,9 +56,6 @@ EOF
 %{_datadir}/man/man6/%{name}.6.*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0

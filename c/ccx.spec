@@ -6,9 +6,9 @@ Release:        1
 Summary:        An open source finite element package
 License:        GPL-2.0-only AND BSD-3-Clause AND SUSE-Public-Domain
 Group:          Productivity/Scientific/Other
-URL:            http://www.dhondt.de/
-Source0:        http://www.dhondt.de/ccx_%{version}.src.tar.bz2
-Source1:        http://www.dhondt.de/ccx_%{version}.test.tar.bz2
+URL:            https://www.dhondt.de/
+Source0:        https://www.dhondt.de/ccx_%{version}.src.tar.bz2
+Source1:        https://www.dhondt.de/ccx_%{version}.test.tar.bz2
 Source2:        ccx-rpmlintrc
 # PATCH-FIX-OPENSUSE -- pass global optflags
 Patch0:         ccx-2.16-build.patch
@@ -53,7 +53,7 @@ rmdir -p CalculiX/ccx_%{version}
 #patch1 -p1
 #patch2 -p1
 #patch3 -p1
-%patch4 -p1
+%patch 4 -p1
 
 # Make reproducible
 sed -i 's@./date.pl; *@@' src/Makefile
@@ -63,7 +63,7 @@ sed -i -e 's|misc.h|spooles/misc/misc.h|' -e 's|FrontMtx.h|spooles/FrontMtx/Fron
 
 %build
 cd src
-export CFLAGS="%{optflags}"
+export CFLAGS="%{optflags} -Wno-implicit-function-declaration"
 export FFLAGS="%{optflags}"
 %make_build
 

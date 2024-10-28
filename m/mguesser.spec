@@ -1,15 +1,15 @@
-Name:				mguesser
-Version:			0.4
-Release:			4.1
-Summary:			Text Charset and Language Guesser
+Name:                           mguesser
+Version:                        0.4
+Release:                        4.1
+Summary:                        Text Charset and Language Guesser
 # https://www.mnogosearch.org/guesser/mguesser-%{version}.tar.gz
-Source:			mguesser-%{version}.tar.bz2
-Patch1:			mguesser-makefile.patch
-Patch2:			mguesser-fix_printf_format.patch
-URL:				https://www.mnogosearch.org/guesser/
-Group:			Productivity/File utilities
-License:			GNU General Public License (GPL)
-BuildRequires:	make gcc glibc-devel
+Source:                 mguesser-%{version}.tar.bz2
+Patch1:                 mguesser-makefile.patch
+Patch2:                 mguesser-fix_printf_format.patch
+URL:                            https://www.mnogosearch.org/guesser/
+Group:                  Productivity/File utilities
+License:                        GNU General Public License (GPL)
+BuildRequires:  make gcc glibc-devel
 
 %description
 mguesser is a standalong part of libudmsearch (a core of mnogo search engine
@@ -26,8 +26,8 @@ directory of this package to check currently supported languages and charsets.
 
 %prep
 %setup -q
-%patch1
-%patch2
+%patch 1
+%patch 2
 
 %build
 %__make %{?jobs:-j%{jobs}} LMDIR="%{_datadir}/%{name}/maps" OPTFLAGS="%{optflags}"
@@ -37,9 +37,6 @@ directory of this package to check currently supported languages and charsets.
 %__install -D -m 0755 mguesser "$RPM_BUILD_ROOT%{_bindir}/mguesser"
 %__install -d "$RPM_BUILD_ROOT%{_datadir}/%{name}/maps"
 %__cp maps/*.lm "$RPM_BUILD_ROOT%{_datadir}/%{name}/maps/"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc CHANGES COPYING README

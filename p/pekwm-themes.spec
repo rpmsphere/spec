@@ -7,7 +7,7 @@ Requires:       pekwm
 URL:            https://adrinux.wordpress.com/pekwm-themes
 Source:         %{name}-%{version}.tar.bz2
 Summary:        PekWM themes by Adriano
-BuildArch:	    noarch
+BuildArch:          noarch
 
 %description
 Several themes for PekWM windows manager by Adriano with ports of well known
@@ -22,9 +22,6 @@ interfaces.
 mkdir -p %{buildroot}%{_datadir}/pekwm/themes
 cp -r * %{buildroot}%{_datadir}/pekwm/themes
 chmod -x %{buildroot}/usr/share/pekwm/themes/tango/*
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %{_datadir}/pekwm/themes/*

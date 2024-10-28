@@ -1,15 +1,15 @@
-Summary:	A Graphical Temperature Monitor
-Name:		psensor
-Version:	1.2.1
-Release:	1
-URL:		https://wpitchoune.net/blog/psensor/
-License:	GNU General Public License version 2
-Group:		System/Monitoring
-Source0:	https://wpitchoune.net/psensor/files/%{name}-%{version}.tar.gz
-Requires:	lm_sensors hddtemp
-BuildRequires:	make gcc lm_sensors-devel cairo-devel
-BuildRequires:	GConf2-devel desktop-file-utils gtk3-devel
-BuildRequires:	help2man libnotify-devel libcurl-devel json-c-devel libatasmart-devel libgtop2-devel libmicrohttpd-devel
+Summary:        A Graphical Temperature Monitor
+Name:           psensor
+Version:        1.2.1
+Release:        1
+URL:            https://wpitchoune.net/blog/psensor/
+License:        GNU General Public License version 2
+Group:          System/Monitoring
+Source0:        https://wpitchoune.net/psensor/files/%{name}-%{version}.tar.gz
+Requires:       lm_sensors hddtemp
+BuildRequires:  make gcc lm_sensors-devel cairo-devel
+BuildRequires:  GConf2-devel desktop-file-utils gtk3-devel
+BuildRequires:  help2man libnotify-devel libcurl-devel json-c-devel libatasmart-devel libgtop2-devel libmicrohttpd-devel
 
 %description
 Psensor is a graphical hardware temperature monitor for Linux.
@@ -34,9 +34,6 @@ make
 %install
 %__rm -rf $RPM_BUILD_ROOT
 %__make install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/doc/%{name}

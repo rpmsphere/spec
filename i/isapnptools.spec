@@ -1,15 +1,15 @@
-Summary:	Utilities for configuring ISA Plug-and-Play (PnP) devices
-Name:		isapnptools
-Version:	1.27
-Release:	6.1
-License:	GPLv2+
-Group:		System/Kernel and hardware
-URL:		https://www.roestock.demon.co.uk/isapnptools/
-Source0:	ftp://metalab.unc.edu/pub/Linux/system/hardware/%{name}-%{version}.tgz
-Patch1:		%{name}-demo2.patch
-Patch2:		isapnptools-1.26-gcc4-fix.patch
-Patch3:		isapnptools-1.26-format_not_a_string_literal_and_no_format_arguments.diff
-BuildRequires:	flex
+Summary:        Utilities for configuring ISA Plug-and-Play (PnP) devices
+Name:           isapnptools
+Version:        1.27
+Release:        6.1
+License:        GPLv2+
+Group:          System/Kernel and hardware
+URL:            https://www.roestock.demon.co.uk/isapnptools/
+Source0:        ftp://metalab.unc.edu/pub/Linux/system/hardware/%{name}-%{version}.tgz
+Patch1:         %{name}-demo2.patch
+Patch2:         isapnptools-1.26-gcc4-fix.patch
+Patch3:         isapnptools-1.26-format_not_a_string_literal_and_no_format_arguments.diff
+BuildRequires:  flex
 
 %description
 The isapnptools package contains utilities for configuring ISA
@@ -33,11 +33,11 @@ carefully before you use isapnptools.
 Install isapnptools if you need utilities for configuring ISA PnP
 cards.
 
-%package	devel
-Summary:	Devel libraries for configuring ISA Plug-and-Play (PnP) devices
-Group:		Development/C
+%package        devel
+Summary:        Devel libraries for configuring ISA Plug-and-Play (PnP) devices
+Group:          Development/C
 
-%description	devel
+%description    devel
 The isapnptools package contains utilities for configuring ISA
 Plug-and-Play (PnP) cards which are in compliance with the PnP ISA
 Specification Version 1.0a.  ISA PnP cards use registers instead of
@@ -61,8 +61,8 @@ cards.
 
 %prep
 %setup -q
-%patch1 -p1
-%patch3 -p0 -b .format_not_a_string_literal_and_no_format_arguments
+%patch 1 -p1
+%patch 3 -p0 -b .format_not_a_string_literal_and_no_format_arguments
 find | xargs chmod u+w
 
 %build

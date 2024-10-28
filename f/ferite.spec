@@ -38,9 +38,6 @@ cp TODO ROADMAP RELEASE.NOTES README LICENSE DEVELOPERS ChangeLog AUTHORS ABOUT 
 %{_datadir}/%{name}
 %{_mandir}/man1/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.17
 - Rebuilt for Fedora

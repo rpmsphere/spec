@@ -20,9 +20,6 @@ ComixCursors is a set of mouse pointer themes for X11 in the style of comic-book
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons
 cp -a ComixCursors-* $RPM_BUILD_ROOT%{_datadir}/icons
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/icons/ComixCursors-*
 

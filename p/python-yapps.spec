@@ -34,9 +34,6 @@ mv $RPM_BUILD_ROOT%{_bindir}/yapps2 $RPM_BUILD_ROOT%{_bindir}/yapps
 
 sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc NOTES PKG-INFO README ChangeLog examples
 %{_bindir}/yapps

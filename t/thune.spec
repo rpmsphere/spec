@@ -34,9 +34,6 @@ install -m 644 bignum.h      $RPM_BUILD_ROOT%{_includedir}/thune
 install -m 755 libthune.so $RPM_BUILD_ROOT%{_libdir}/libthune.so.0
 ln -s libthune.so.0 $RPM_BUILD_ROOT%{_libdir}/libthune.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE doc/*Manual
 %{_bindir}/thune

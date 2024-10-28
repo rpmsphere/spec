@@ -1,14 +1,14 @@
 %global __spec_install_post %{nil}
 %undefine _debugsource_packages
 
-Summary:	Backend to control your 3D printer
-Name:		atcore
-Version:	1.0.0
-Release:	7.1
-License:	GPL, LGPL
-Group:		Applications/Engineering
-URL:		https://atelier.kde.org/
-Source:		https://download.kde.org/stable/atcore/%{version}/%{name}-%{version}.tar.xz
+Summary:        Backend to control your 3D printer
+Name:           atcore
+Version:        1.0.0
+Release:        7.1
+License:        GPL, LGPL
+Group:          Applications/Engineering
+URL:            https://atelier.kde.org/
+Source:         https://download.kde.org/stable/atcore/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-qtbase-devel
@@ -41,9 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 %cmake_install
 #mkdir -p %{buildroot}%{_libdir}/qt5
 #mv %{buildroot}%{_libdir}/plugins %{buildroot}/usr/mkspecs %{buildroot}%{_libdir}/qt5
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README* COPYING*

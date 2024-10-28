@@ -14,7 +14,7 @@ httpfs is useful for mounting iso images over HTTP.
 
 %prep
 %setup -q -c
-%patch0 -p0
+%patch 0 -p0
 rm -f %{name}
 chmod -x %{name}.c
 sed -i "s|-D_SVID_SOURCE -D_BSD_SOURCE|-D_DEFAULT_SOURCE|g" ./make_%{name}

@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
 
-Name:		qsnake
-Version:	1.0.2
-Release:	1.1
-License:	GPL
-Source0:	qsnake-linux.tar.gz
-Source1:	%{name}.desktop
-Source2:	%{name}.png
-Group:		Amusements/Games
-Summary:	Qt Snake game
+Name:           qsnake
+Version:        1.0.2
+Release:        1.1
+License:        GPL
+Source0:        qsnake-linux.tar.gz
+Source1:        %{name}.desktop
+Source2:        %{name}.png
+Group:          Amusements/Games
+Summary:        Qt Snake game
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, make, pkgconfig, pkgconfig(QtCore), pkgconfig(QtGui)
-URL:		https://www.linux-apps.com/p/1109362/
+BuildRequires:  gcc-c++, make, pkgconfig, pkgconfig(QtCore), pkgconfig(QtGui)
+URL:            https://www.linux-apps.com/p/1109362/
 
 %description
 QSnake is a game similar to Snake from old Nokia phones.
@@ -28,9 +28,6 @@ make
 %{__install} -Dp -m 0755 qsnake $RPM_BUILD_ROOT%{_bindir}/%{name}
 %{__install} -Dp -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 %{__install} -Dp -m 0644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

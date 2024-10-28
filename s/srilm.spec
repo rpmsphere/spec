@@ -34,7 +34,7 @@ University/CLSP summer workshops in 1995, 1996, 1997, and 2002.
 
 %prep
 %setup -q -c
-%patch0
+%patch 0
 
 %build
 sed -i "s|#\ SRILM\ =.*|SRILM\ =\ `pwd`|" Makefile
@@ -52,9 +52,6 @@ mkdir -p %{buildroot}%{_mandir}
 mv man/man[0-9] %{buildroot}%{_mandir}
 mkdir -p %{buildroot}%{_libdir}
 mv lib/*/*.a %{buildroot}%{_libdir}
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files 
 %doc doc/README.linux doc/icslp2002-srilm.pdf doc/lm-intro doc/overview doc/FAQ doc/FSM doc/time-space-tradeoff

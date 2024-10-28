@@ -22,7 +22,7 @@ can survive the onslaught!
 
 %prep
 %setup -q
-%patch0 -p1 -b .makefile
+%patch 0 -p1 -b .makefile
 # Replace the displayed location of the help (in-game) to the proper one
 %{__perl} -pi -e 's|/usr/share/doc/viruskiller/manual.html|%{_docdir}/%{name}-%{version}/manual.html|g' data/titleWidgets
 # No files need to be executable, yet quite a few are, so fix that
@@ -58,9 +58,6 @@ desktop-file-install \
     --vendor "" \
     --dir %{buildroot}%{_datadir}/applications \
     %{name}.desktop
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc doc/*

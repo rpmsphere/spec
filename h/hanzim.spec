@@ -4,7 +4,7 @@ Version: 1.3
 Release: 1
 Source: ftp://zakros.ucsd.edu/arobert/Chinese/%{name}-%{version}.tgz
 Source1: %{name}.png
-Patch: hanzim-makefilepaths.patch
+Patch0: hanzim-makefilepaths.patch
 License: GPL
 Group: Applications/Education
 Summary: A Chinese character learning-aid program
@@ -18,7 +18,7 @@ Hanzi Master ("Hanzim") is a program to aid in learning
 
 %prep
 %setup -n Hanzim
-%patch
+%patch 0
 sed -i -e 's/hanzigb16st/hanzigb24st/' -e 's/taipei16/hanzigb24st/' Data/fonts.unix    
 sed -i '62i #define USE_INTERP_RESULT' hanzim.h
 
@@ -62,9 +62,6 @@ EOF
 /usr/lib/Hanzim
 %{_datadir}/applications/*
 %{_datadir}/pixmaps/*
-
-%clean
-rm -fr $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3

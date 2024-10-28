@@ -1,10 +1,10 @@
-Name:		xfd
-Version:	1.1.3
-Release:	3
-Summary:	Display all the characters in an X font
-Group:		Development/X11
-Source:		https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-License:	MIT
+Name:           xfd
+Version:        1.1.3
+Release:        3
+Summary:        Display all the characters in an X font
+Group:          Development/X11
+Source:         https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+License:        MIT
 BuildRequires: pkgconfig(fontconfig)
 BuildRequires: freetype-devel
 BuildRequires: pkgconfig(xkbfile)

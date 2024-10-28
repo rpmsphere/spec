@@ -8,7 +8,7 @@ Group: Amusements/Games
 License: free
 URL: https://rosegray.sakura.ne.jp/software.html#AkaneTokei
 Source0: https://rosegray.sakura.ne.jp/%{name}-%{version}.tar.gz
-BuildRequires: libXaw-devel libXmu-devel libXt-devel libXext-devel
+BuildRequires: libXaw-devel libXmu-devel libXt-devel libXext-devel libSM-devel libXpm-devel
 
 %description
 AkaneClock is an excellent anime clock. Lots more fun to have sitting on your

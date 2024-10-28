@@ -1,13 +1,13 @@
-Summary: 	Startup feedback monitor for the Matchbox Desktop
-Name: 		mb-applet-startup-monitor
-Version: 	0.1
-Release: 	1
-URL: 		https://matchbox-project.org
-License: 	GPLv2+
-Group: 		Graphical desktop/Other
-Source0: 	https://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.gz
-Source1:	%{name}.desktop
-BuildRequires:	gtk2-devel libmatchbox-devel startup-notification-devel
+Summary:        Startup feedback monitor for the Matchbox Desktop
+Name:           mb-applet-startup-monitor
+Version:        0.1
+Release:        1
+URL:            https://matchbox-project.org
+License:        GPLv2+
+Group:          Graphical desktop/Other
+Source0:        https://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.gz
+Source1:        %{name}.desktop
+BuildRequires:  gtk2-devel libmatchbox-devel startup-notification-devel
 
 %description
 Startup feedback monitor for the Matchbox Desktop.
@@ -23,9 +23,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=%{buildroot} install
 ##install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc INSTALL COPYING

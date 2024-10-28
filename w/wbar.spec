@@ -1,20 +1,20 @@
-Name: 		wbar
-Version: 	2.3.4
-Release: 	1
-Summary:	Quick Launch Bar
-Source0:	https://wbar.googlecode.com/files/%{name}-%{version}.tgz
+Name:           wbar
+Version:        2.3.4
+Release:        1
+Summary:        Quick Launch Bar
+Source0:        https://wbar.googlecode.com/files/%{name}-%{version}.tgz
 Source1:        %{name}-2.3.4.zh_TW.po
 Source2:        %{name}.cfg
-URL:		https://code.google.com/p/wbar/
-Group:		User Interface/Desktops
-License:	GPL
-BuildRequires: 	libX11-devel
-BuildRequires:	libstdc++-devel
-BuildRequires:	imlib2-devel
-BuildRequires:	freetype-devel
-BuildRequires:	zlib-devel
-BuildRequires:	gtk2-devel
-BuildRequires:	libglade2-devel
+URL:            https://code.google.com/p/wbar/
+Group:          User Interface/Desktops
+License:        GPL
+BuildRequires:  libX11-devel
+BuildRequires:  libstdc++-devel
+BuildRequires:  imlib2-devel
+BuildRequires:  freetype-devel
+BuildRequires:  zlib-devel
+BuildRequires:  gtk2-devel
+BuildRequires:  libglade2-devel
 
 %description
 wbar is a quick launch bar. Its fast, light and cool eye-candy.
@@ -50,9 +50,6 @@ cp %{SOURCE2} etc/wbar.cfg
 make DESTDIR=%{buildroot} install
 mkdir -p %{buildroot}%{_datadir}/applications
 mv %{buildroot}%{_sysconfdir}/%{name}.d/%{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc THANKS ChangeLog AUTHORS COPYING NEWS README

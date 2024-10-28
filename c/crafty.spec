@@ -31,7 +31,7 @@ touch .craftyrc .crafty/book.bin .crafty/books.bin
 chmod 755 bitmaps
 chmod 644 bitmaps/*
 rm bitmaps/gifs.tar
-#%patch0 -p1
+#%patch 0 -p1
 %ifarch %ix86
 sed -i 's|INLINE64|INLINE32|' Makefile
 %else
@@ -60,9 +60,6 @@ install -d -m 755 $RPM_BUILD_ROOT/usr/share/crafty/sound
 install -m 644 book.bin books.bin crafty.hlp $RPM_BUILD_ROOT/usr/share/crafty
 install -m 644 tb/k[bnpqr]k.nb[bw].emd $RPM_BUILD_ROOT/usr/share/crafty/tb
 install -m 644 bitmaps/* $RPM_BUILD_ROOT/usr/share/crafty/bitmaps
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc doc/crafty.doc

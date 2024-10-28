@@ -6,11 +6,11 @@ Group:          Educations/Games
 License:        GPL
 URL:            https://www.asymptopia.org/index.php?topic=tuxmathscrabble
 Source0:        https://easynews.dl.sourceforge.net/sourceforge/tuxmathscrabble/TuxMathScrabble-2.9-r1.tgz
-Source1:	%{name}.png
+Source1:        %{name}.png
 BuildRequires:  python2-devel, SDL-devel, SDL_image-devel, SDL_mixer-devel, SDL_ttf-devel
-Requires:	python2-pygame
+Requires:       python2-pygame
 Requires:       python2-wxpython
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 TuxMathScrabble encourages kids to construct compound equations and
@@ -58,9 +58,6 @@ Icon=%{name}
 EOF
 
 sed -i -e 's|/usr/bin/python$|/usr/bin/python2|' -e 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name} %{buildroot}%{python2_sitelib}/%{name}/*.py %{buildroot}%{python2_sitelib}/%{name}/*/*.py %{buildroot}%{python2_sitelib}/%{name}/*/*/*/*.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc %{_defaultdocdir}/*

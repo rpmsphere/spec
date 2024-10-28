@@ -1,17 +1,17 @@
-Summary:	Old version of libpng, needed to run old binaries
-Name:		libpng10
-Version:	1.0.69
-Release:	7
-License:	zlib
-URL:		https://www.libpng.org/pub/png/libpng.html
-Source0:	https://ftp-osl.osuosl.org/pub/libpng/src/libpng10/libpng-%{version}.tar.gz
-Patch0:		libpng-1.0.63-soname.patch
-Patch1:		libpng10-1.0.69-cve-2018-13785.patch
-BuildRequires:	coreutils
-BuildRequires:	gcc
-BuildRequires:	make
-BuildRequires:	zlib-devel
-Conflicts:	libpng < 2:1.2.0
+Summary:        Old version of libpng, needed to run old binaries
+Name:           libpng10
+Version:        1.0.69
+Release:        7
+License:        zlib
+URL:            https://www.libpng.org/pub/png/libpng.html
+Source0:        https://ftp-osl.osuosl.org/pub/libpng/src/libpng10/libpng-%{version}.tar.gz
+Patch0:         libpng-1.0.63-soname.patch
+Patch1:         libpng10-1.0.69-cve-2018-13785.patch
+BuildRequires:  coreutils
+BuildRequires:  gcc
+BuildRequires:  make
+BuildRequires:  zlib-devel
+Conflicts:      libpng < 2:1.2.0
 
 # Move to unversioned documentation directories from F-20
 # https://fedoraproject.org/wiki/Changes/UnversionedDocdirs
@@ -26,10 +26,10 @@ This package is needed if you want to run binaries that were linked dynamically
 with libpng 1.0.x.
 
 %package devel
-Summary:	Development tools for version 1.0 of libpng
-Requires:	libpng10 = %{version}-%{release}
-Requires:	pkgconfig
-Requires:	zlib-devel%{?_isa}
+Summary:        Development tools for version 1.0 of libpng
+Requires:       libpng10 = %{version}-%{release}
+Requires:       pkgconfig
+Requires:       zlib-devel%{?_isa}
 
 %description devel
 The libpng10-devel package contains the header files necessary for developing
@@ -43,18 +43,18 @@ libpng10-devel.
 %setup -q -n libpng-%{version}
 
 # We want an soname of 2.%%{version}
-%patch0 -b .soname
+%patch 0 -b .soname
 
 # Fix the calculation of row_factor in png_check_chunk_length (CVE-2018-13785)
 # https://sourceforge.net/p/libpng/bugs/278/
 # https://github.com/ctruta/libpng/commit/8a05766cb74af05c04c53e6c9d60c13fc4d59bf2
-%patch1 -b .cve-2018-13785
+%patch 1 -b .cve-2018-13785
 
 %build
 %configure \
-	--disable-static \
-	--disable-dependency-tracking \
-	--without-binconfigs
+        --disable-static \
+        --disable-dependency-tracking \
+        --without-binconfigs
 make %{?_smp_mflags}
 
 %install
@@ -70,25 +70,25 @@ make DESTDIR=%{buildroot} INSTALL="install -p" install
 mkdir -p %{buildroot}%{libpng10_docdir}
 # Docs for main package
 install -p -m 644 ANNOUNCE README TODO CHANGES %{!?_licensedir:LICENSE} Y2KINFO \
-	%{buildroot}%{libpng10_docdir}/
+        %{buildroot}%{libpng10_docdir}/
 # Docs for devel package
 install -p -m 644 example.c libpng-%{version}.txt \
-	%{buildroot}%{libpng10_docdir}/
+        %{buildroot}%{libpng10_docdir}/
 
 # Unpackaged files
 rm -f \
-	%{buildroot}%{_bindir}/libpng-config \
-	%{buildroot}%{_includedir}/png.h \
-	%{buildroot}%{_includedir}/pngconf.h \
-	%{buildroot}%{_libdir}/libpng.a \
-	%{buildroot}%{_libdir}/libpng.la \
-	%{buildroot}%{_libdir}/libpng.so \
-	%{buildroot}%{_libdir}/libpng10.la \
-	%{buildroot}%{_libdir}/libpng10.so.* \
-	%{buildroot}%{_libdir}/pkgconfig/libpng.pc \
-	%{buildroot}%{_mandir}/man3/libpng.3 \
-	%{buildroot}%{_mandir}/man3/libpngpf.3 \
-	%{buildroot}%{_mandir}/man5/png.5
+        %{buildroot}%{_bindir}/libpng-config \
+        %{buildroot}%{_includedir}/png.h \
+        %{buildroot}%{_includedir}/pngconf.h \
+        %{buildroot}%{_libdir}/libpng.a \
+        %{buildroot}%{_libdir}/libpng.la \
+        %{buildroot}%{_libdir}/libpng.so \
+        %{buildroot}%{_libdir}/libpng10.la \
+        %{buildroot}%{_libdir}/libpng10.so.* \
+        %{buildroot}%{_libdir}/pkgconfig/libpng.pc \
+        %{buildroot}%{_mandir}/man3/libpng.3 \
+        %{buildroot}%{_mandir}/man3/libpngpf.3 \
+        %{buildroot}%{_mandir}/man5/png.5
 
 # Fix devel link
 rm -f %{buildroot}%{_libdir}/libpng10.so

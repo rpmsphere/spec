@@ -17,7 +17,7 @@ the last five minutes.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 make
@@ -26,9 +26,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 install -Dm 0755 leave $RPM_BUILD_ROOT/usr/bin/leave
 install -Dm 0644 leave.1 $RPM_BUILD_ROOT/usr/share/man/man1/leave.1
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

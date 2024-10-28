@@ -40,4 +40,4 @@ mv %{buildroot}/usr/man %{buildroot}%{_mandir}
 
 %changelog
 * Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.13
-- Rebuild for Fedora
+- Rebuilt for Fedora

@@ -29,9 +29,6 @@ rm -rf $RPM_BUILD_ROOT
 %make_install
 echo "./" >> %{buildroot}%{_datadir}/liberty-eiffel/src/liberty_staging/loadpath.se
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING PATTERNS.txt README.md
 %{_bindir}/se

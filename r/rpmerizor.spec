@@ -37,9 +37,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/rpmerizor
 %doc rpmerizor.lsm

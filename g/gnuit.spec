@@ -45,9 +45,6 @@ rm -f $RPM_BUILD_ROOT%{_bindir}/.gitaction
 %{_infodir}/*
 %{_datadir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.9.5
 - Rebuilt for Fedora

@@ -1,7 +1,7 @@
 Name:           squaroid
-BuildRequires:	gtk2-devel
-BuildRequires:	imlib-devel 
-BuildRequires:	ncurses-devel 
+BuildRequires:  gtk2-devel
+BuildRequires:  imlib-devel 
+BuildRequires:  ncurses-devel 
 %define         gfx_version 0.2
 %define         sfx_version 0.1
 License:        GPL v2 or later
@@ -10,12 +10,12 @@ Summary:        A Strategy Game
 Version:        0.60.3
 Release:        1
 URL:            https://www.squaroid.org/
-Source:         squaroid-%{version}.tar.bz2
+Source0:        squaroid-%{version}.tar.bz2
 Source1:        squaroid-gfx-%{gfx_version}.tar.bz2
 Source2:        squaroid-sfx-%{sfx_version}.tar.bz2
 Source3:        squaroid.desktop
-Source4:	squaroid.png
-Patch:          %{name}-%{version}-ia64.diff
+Source4:        squaroid.png
+Patch0:         %{name}-%{version}-ia64.diff
 Patch1:         %{name}-%{version}-config-sound.diff
 Patch2:         %{name}-%{version}-strings.diff
 Patch3:         %{name}-%{version}-libtool.diff
@@ -40,18 +40,18 @@ Authors:
 
 %prep
 %setup -q -a1 -a2
-%patch
-%patch1
-%patch2
-%patch3
-%patch4
-%patch5
-%patch6
-%patch7
-%patch8
-%patch9
-%patch10
-%patch11
+%patch 0
+%patch 1
+%patch 2
+%patch 3
+%patch 4
+%patch 5
+%patch 6
+%patch 7
+%patch 8
+%patch 9
+%patch 10
+%patch 11
 
 %build
 autoreconf --force --install
@@ -91,9 +91,6 @@ install -m 0644 %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.deskt
 # Icon
 mkdir $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install -m 0644 %{SOURCE4} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog README NEWS TODO HACKING* sfx gfx

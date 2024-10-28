@@ -1,13 +1,13 @@
-Summary:	Rule Based Command Execution
-Name:		bras
-Version:	2.3.2
-Release:	10.1
-License:	GPL
-Group:		Development/Tools
-Source0:	https://download.berlios.de/bras/%{name}-%{version}.tar.gz
-URL:		https://bras.berlios.de/
-BuildArch:	noarch
-BuildRequires:	tcl
+Summary:        Rule Based Command Execution
+Name:           bras
+Version:        2.3.2
+Release:        10.1
+License:        GPL
+Group:          Development/Tools
+Source0:        https://download.berlios.de/bras/%{name}-%{version}.tar.gz
+URL:            https://bras.berlios.de/
+BuildArch:      noarch
+BuildRequires:  tcl
 
 %description
 Bras helps to keep files, or targets, up-to-date with respect to a set
@@ -27,9 +27,6 @@ sed -i 's|%{buildroot}||' $RPM_BUILD_ROOT/usr/bin/%{name} $RPM_BUILD_ROOT/usr/ma
 mkdir -p $RPM_BUILD_ROOT/usr/share
 mv $RPM_BUILD_ROOT/usr/doc $RPM_BUILD_ROOT/usr/man $RPM_BUILD_ROOT/usr/share
 cp README TODO CHANGES ANNOUNCE $RPM_BUILD_ROOT/usr/share/doc/%{name}-%{version}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

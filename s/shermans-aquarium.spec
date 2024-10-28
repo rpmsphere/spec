@@ -1,29 +1,29 @@
 %undefine _debugsource_packages
 %undefine _auto_set_build_flags
 
-Summary:	Applet with aquarium
-Summary(pl):	Aplet z akwarium
-Name:		shermans-aquarium
-Version:	3.0.1
-Release:	33.4
-License:	GPL v2 (except for images - see COPYING)
-Group:		X11/Window Managers/Tools
-Source0:	https://dl.sourceforge.net/aquariumapplet/shermans_aquarium-%{version}.tar.bz2
-Source1:	shermans_aquarium.desktop
-Patch0:		shermans_aquarium-3.0.0-opt.patch
-Patch1:		shermans_aquarium-libdir.patch
-URL:		https://aquariumapplet.sourceforge.net/
+Summary:        Applet with aquarium
+Summary(pl):    Aplet z akwarium
+Name:           shermans-aquarium
+Version:        3.0.1
+Release:        33.4
+License:        GPL v2 (except for images - see COPYING)
+Group:          X11/Window Managers/Tools
+Source0:        https://dl.sourceforge.net/aquariumapplet/shermans_aquarium-%{version}.tar.bz2
+Source1:        shermans_aquarium.desktop
+Patch0:         shermans_aquarium-3.0.0-opt.patch
+Patch1:         shermans_aquarium-libdir.patch
+URL:            https://aquariumapplet.sourceforge.net/
 BuildRequires:  libpng-devel
-BuildRequires:	SDL-devel
-BuildRequires:	autoconf
-BuildRequires:	gai-devel sane-backends-devel
-BuildRequires:	pkgconfig
-BuildRequires:	zlib-devel
-BuildRequires:	libbonobo-devel
-BuildRequires:	w3m fedora-logos udisks2
-Requires:	xscreensaver
-Obsoletes:	gnome-applet-aquarium 
-%define		_xscreensavdir	/etc/X11/xscreensaver
+BuildRequires:  SDL-devel
+BuildRequires:  autoconf
+BuildRequires:  gai-devel sane-backends-devel
+BuildRequires:  pkgconfig
+BuildRequires:  zlib-devel
+BuildRequires:  libbonobo-devel
+BuildRequires:  w3m fedora-logos udisks2
+Requires:       xscreensaver
+Obsoletes:      gnome-applet-aquarium 
+%define         _xscreensavdir  /etc/X11/xscreensaver
 
 %description
 This applet gives an aquarium with some randomly selected fishes. Some
@@ -41,8 +41,8 @@ scrollock.
 
 %prep
 %setup -q -n shermans_aquarium-%{version}
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %build
 export LDFLAGS+=" -lX11 -lm -lSDL"
@@ -58,9 +58,6 @@ export LDFLAGS='-lX11 -lm -lSDL'
 install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications
 mv -f $RPM_BUILD_ROOT%{_datadir}/control-center/screensavers/* $RPM_BUILD_ROOT%{_xscreensavdir}
 rm -rf $RPM_BUILD_ROOT%{_libdir}/bonobo/servers/*.server
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog README README.gai TODO XSCREENSAVER

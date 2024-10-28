@@ -1,4 +1,4 @@
-%define	font_dir	%{_datadir}/fonts/typeland
+%define font_dir        %{_datadir}/fonts/typeland
 
 Name:           typeland-fonts
 Summary:        TypeLand Typefaces
@@ -7,9 +7,9 @@ Release:        1.1
 License:        Trialware
 Group:          User Interface/X
 URL:            https://typeland.com/
-Source0:	https://file.typeland.com/typeface/TpldKhangXiDict/TpldKhangXiDictTrial_1.023.zip
-Source1:	https://file.typeland.com/typeface/TpldYiFengScripture/TpldYiFengScripture_1.003.zip
-Source2:	https://file.typeland.com/typeface/TpldLehBienLehsho/TpldLehBienLehshoTrial_1.010.zip
+Source0:        https://file.typeland.com/typeface/TpldKhangXiDict/TpldKhangXiDictTrial_1.023.zip
+Source1:        https://file.typeland.com/typeface/TpldYiFengScripture/TpldYiFengScripture_1.003.zip
+Source2:        https://file.typeland.com/typeface/TpldLehBienLehsho/TpldLehBienLehshoTrial_1.010.zip
 BuildArch:      noarch
 
 %description
@@ -27,9 +27,6 @@ TypeLand includes chinese fonts auto-traced by Digidea Lee.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{font_dir}
 install -m 644 *.otf $RPM_BUILD_ROOT%{font_dir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.pdf

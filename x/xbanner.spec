@@ -27,8 +27,8 @@ Authors:
 
 %prep
 %setup -qn XBanner%{version}
-%patch0
-%patch1
+%patch 0
+%patch 1
 
 %build
 xmkmf -a
@@ -62,9 +62,6 @@ DOCDIR=$RPM_BUILD_ROOT/$RPM_DOC_DIR/xbanner
 install -d $DOCDIR
 install -m 644 *.xpm $DEMODIR
 install -m 644 docs/{C*,*.html,*.gif} $DOCDIR
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/xbanner/

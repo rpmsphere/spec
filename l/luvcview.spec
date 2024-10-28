@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 
-Summary:	SDL-based video grabber
-Name:		luvcview
-Version: 	0.2.6
-Release: 	11.1
-Source0: 	%{name}-%{version}.tar.lzma
-Source1: 	dynctrl-logitech.h
-Source2: 	uvcvideo.h
-Source3:	uvc_compat.h
-Patch0:	 	linuxvideodev2.patch
-License: 	GPLv2+
-Group:		Video/Utilities
-URL:		https://www.quickcamteam.net/software/linux/v4l2-software/luvcview
-BuildRequires:	SDL-devel
+Summary:        SDL-based video grabber
+Name:           luvcview
+Version:        0.2.6
+Release:        11.1
+Source0:        %{name}-%{version}.tar.lzma
+Source1:        dynctrl-logitech.h
+Source2:        uvcvideo.h
+Source3:        uvc_compat.h
+Patch0:         linuxvideodev2.patch
+License:        GPLv2+
+Group:          Video/Utilities
+URL:            https://www.quickcamteam.net/software/linux/v4l2-software/luvcview
+BuildRequires:  SDL-devel
 
 %description
 luvcview is a small video capture program ideal for webcam testing and
@@ -23,7 +23,7 @@ problem debugging.
 cp %SOURCE1 .
 cp %SOURCE2 .
 cp %SOURCE3 .
-%patch0 -p0
+%patch 0 -p0
 
 %build
 make

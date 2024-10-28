@@ -1,26 +1,26 @@
-%define udev_rules_dir	/lib/udev/rules.d
+%define udev_rules_dir  /lib/udev/rules.d
 
-Name:		wiican
-Version:	0.3.2
-Release:	1
-Summary:	Simple Wiimote usage assistant and mapping manager
-License:	GPLv3
-Group:		System/Configuration/Hardware
-URL:		https://fontanon.org/wiican/
-Source0:	https://launchpad.net/wiican/0.3/%{version}/+download/%{name}-%{version}.tar.gz
-BuildArch:	noarch
-Requires:	dbus-python
-Requires:	gnome-bluetooth
-Requires:	pygtk2
-Requires:	PyYAML
-Requires:	notify-python
-Requires:	python2-ply
-Requires:	gnome-python2-gconf
-Requires:	pygobject2
-Requires:	cwiid
-Requires:	pyxdg
-BuildRequires:	python2-devel
-BuildRequires:	desktop-file-utils
+Name:           wiican
+Version:        0.3.2
+Release:        1
+Summary:        Simple Wiimote usage assistant and mapping manager
+License:        GPLv3
+Group:          System/Configuration/Hardware
+URL:            https://fontanon.org/wiican/
+Source0:        https://launchpad.net/wiican/0.3/%{version}/+download/%{name}-%{version}.tar.gz
+BuildArch:      noarch
+Requires:       dbus-python
+Requires:       gnome-bluetooth
+Requires:       pygtk2
+Requires:       PyYAML
+Requires:       notify-python
+Requires:       python2-ply
+Requires:       gnome-python2-gconf
+Requires:       pygobject2
+Requires:       cwiid
+Requires:       pyxdg
+BuildRequires:  python2-devel
+BuildRequires:  desktop-file-utils
 
 %description
 WiiCan assists on configuration and management of your Wiimote under
@@ -41,7 +41,7 @@ python2 setup.py build
 rm -rf %{buildroot}
 python2 setup.py install \
         --prefix=%{_prefix} \
-	--root %{buildroot}
+        --root %{buildroot}
 
 #autoload uinput module
 mkdir -p %{buildroot}%{_sysconfdir}/modprobe.preload.d
@@ -54,16 +54,13 @@ mv %{buildroot}%{udev_rules_dir}/99-uinput.rules \
 #fix desktop file
 desktop-file-install \
         --dir %{buildroot}%{_datadir}/applications/ \
-	--remove-category=HardwareSettings \
-	--remove-key=GenericName \
-	%{buildroot}%{_datadir}/applications/%{name}.desktop
-	
+        --remove-category=HardwareSettings \
+        --remove-key=GenericName \
+        %{buildroot}%{_datadir}/applications/%{name}.desktop
+        
 %find_lang %{name}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
-
-%clean
-rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %doc AUTHORS TODO

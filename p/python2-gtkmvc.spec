@@ -5,7 +5,7 @@ Release:        1
 License:        BSD
 Group:          Development/Libraries/Python
 Source:         https://ovh.dl.sourceforge.net/sourceforge/pygtkmvc/python-gtkmvc-%{version}.tar.gz
-URL:		https://sourceforge.net/projects/pygtkmvc/
+URL:            https://sourceforge.net/projects/pygtkmvc/
 BuildArch:      noarch
 Requires:       pygtk2, libglade2
 BuildRequires:  libglade2-devel, pygtk2-devel
@@ -37,9 +37,6 @@ rm -rf %{buildroot}
 python2 setup.py install --root=$RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc docs examples AUTHORS COPYING INSTALL NEWS README PKG-INFO

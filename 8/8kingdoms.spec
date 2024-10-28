@@ -1,22 +1,22 @@
-Name:			8kingdoms
-Summary:		A 3D turn-based fantasy strategic game
-URL:			https://kralovstvi.sourceforge.net/
-Group:			Amusements/Games/Strategy/Turn Based
-Version:		1.1.0
-Release:		17.4
-License:		GPL
-BuildRequires:	expat-devel
-BuildRequires:	gcc-c++
-BuildRequires:	mesa-libGL-devel
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_mixer-devel
-BuildRequires:	tcl-devel
-BuildRequires:	desktop-file-utils
-Source0:		8Kingdoms-%{version}.tar.gz
-Source1:		%{name}.png
+Name:                   8kingdoms
+Summary:                A 3D turn-based fantasy strategic game
+URL:                    https://kralovstvi.sourceforge.net/
+Group:                  Amusements/Games/Strategy/Turn Based
+Version:                1.1.0
+Release:                17.4
+License:                GPL
+BuildRequires:  expat-devel
+BuildRequires:  gcc-c++
+BuildRequires:  mesa-libGL-devel
+BuildRequires:  SDL-devel
+BuildRequires:  SDL_mixer-devel
+BuildRequires:  tcl-devel
+BuildRequires:  desktop-file-utils
+Source0:                8Kingdoms-%{version}.tar.gz
+Source1:                %{name}.png
 Patch0:         8Kingdoms-1.1.0-64bit.patch
-Patch1:			8Kingdoms-1.1.0-gcc43.patch
-Patch2:			8Kingdoms-tcl85.patch
+Patch1:                 8Kingdoms-1.1.0-gcc43.patch
+Patch2:                 8Kingdoms-tcl85.patch
 Patch3:                 8Kingdoms-printf.patch
 
 %description
@@ -35,10 +35,10 @@ random map generator is included for comfortable map editing.
 
 %prep
 %setup -q -n 8Kingdoms-%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2
-%patch3 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2
+%patch 3 -p1
 autoreconf -fi
 %__chmod -x doc/gui/gui_img1.png
 
@@ -70,9 +70,6 @@ Exec=8Kingdoms
 Icon=%{name}
 Categories=Game;StrategyGame;
 EOF
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING README doc/*

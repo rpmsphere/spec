@@ -37,9 +37,6 @@ install -m 644 doc/fbgrab.1 $RPM_BUILD_ROOT%{_mandir}/man1/fbgrab-fbcat.1
 %{_bindir}/*
 %doc %{_mandir}/man?/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Nov 13 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2
 - Rebuilt for Fedora

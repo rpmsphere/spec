@@ -31,19 +31,19 @@ cp xtelld ${RPM_BUILD_ROOT}%{_sbindir}
 
 cp xtell.1 ${RPM_BUILD_ROOT}%{_mandir}/man1/xtell.1
 cp xtelld.8 ${RPM_BUILD_ROOT}%{_mandir}/man8/xtelld.8
-								
+                                                                
 %post
 chgrp tty %{_sbindir}/xtelld
 chmod g+s %{_sbindir}/xtelld
 cp -f /etc/inetd.conf /etc/inetd.conf.rpmsave
 cat /etc/inetd.conf.rpmsave | grep -v '^xtell\>' | grep -v "End of inetd.conf" > /etc/inetd.conf
 echo "# xtelld" >> /etc/inetd.conf
-echo "xtell	stream	tcp	nowait	nobody	%{_sbindir}/tcpd	%{_sbindir}/xtelld" >> /etc/inetd.conf
+echo "xtell     stream  tcp     nowait  nobody  %{_sbindir}/tcpd        %{_sbindir}/xtelld" >> /etc/inetd.conf
 echo >> /etc/inetd.conf
 echo "# End of inetd.conf" >> /etc/inetd.conf
 cp -f /etc/services /etc/services.rpmsave
 cat /etc/services.rpmsave | grep -v '^xtell\>' | grep -v "End of services" > /etc/services
-echo 'xtell	4224/tcp			# xtell server' >> /etc/services
+echo 'xtell     4224/tcp                        # xtell server' >> /etc/services
 echo >> /etc/services
 echo "# End of services" >> /etc/services
 killall -HUP inetd

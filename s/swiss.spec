@@ -24,9 +24,6 @@ sed -i '1i #!/usr/bin/python3' %{name}.py
 rm -rf %{buildroot}
 install -D -m 755 %{name}.py %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README.md
 %{_bindir}/%{name}

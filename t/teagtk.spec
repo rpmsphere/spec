@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Summary:	A simple-in-use GTK-based text editor
-Name:		teagtk
-Version:	18.0.0
-Release:	16.1
-Group:		Editors
-License:	GPLv2+
-URL:		https://semiletov.org/tea/
-Source0:	https://ovh.dl.sourceforge.net/sourceforge/tea-editor/%{name}-%{version}.tar.bz2
+Summary:        A simple-in-use GTK-based text editor
+Name:           teagtk
+Version:        18.0.0
+Release:        16.1
+Group:          Editors
+License:        GPLv2+
+URL:            https://semiletov.org/tea/
+Source0:        https://ovh.dl.sourceforge.net/sourceforge/tea-editor/%{name}-%{version}.tar.bz2
 BuildRequires:  python3-scons python3-devel gtk3-devel gtksourceview3-devel
 BuildRequires:  aspell-devel zziplib
 

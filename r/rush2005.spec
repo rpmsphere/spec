@@ -1,17 +1,17 @@
 %define pkg_name Rush2005
 
-Name:	rush2005
-Version:	0.4.12c
-Release:	1
-Summary:	An American football game.
-Group:	Action/Games
-License:	BSD
-URL:	https://rush2005.sourceforge.net/
-Source0:	https://downloads.sourceforge.net/rush2005/%{pkg_name}-0.4.12.tar.bz2
-Source1:	%{pkg_name}.png
-BuildRequires:	SDL-devel >= 1.2.8, SDL_mixer-devel >= 1.2.6, SDL_image-devel >= 1.2.4
-BuildRequires:	desktop-file-utils
-Requires:	SDL >= 1.2.8, SDL_mixer >= 1.2.6, SDL_image >= 1.2.4
+Name:   rush2005
+Version:        0.4.12c
+Release:        1
+Summary:        An American football game.
+Group:  Action/Games
+License:        BSD
+URL:    https://rush2005.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/rush2005/%{pkg_name}-0.4.12.tar.bz2
+Source1:        %{pkg_name}.png
+BuildRequires:  SDL-devel >= 1.2.8, SDL_mixer-devel >= 1.2.6, SDL_image-devel >= 1.2.4
+BuildRequires:  desktop-file-utils
+Requires:       SDL >= 1.2.8, SDL_mixer >= 1.2.6, SDL_image >= 1.2.4
 
 %description
 Rush 2005 is a BSD-licensed project to create an American football game
@@ -56,9 +56,6 @@ Exec=%{name}
 Icon=%{name}
 Categories=Game;StrategyGame;
 EOF
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

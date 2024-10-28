@@ -79,9 +79,6 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cp %{SOURCE1} %{buildroot}%{_datadir}/applications
 cp %{SOURCE2} %{buildroot}%{_datadir}/pixmaps
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING NEWS README TODO
 %{_bindir}/glito

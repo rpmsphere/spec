@@ -1,14 +1,14 @@
 %define _name Movgrab
 
-Name:		movgrab
-Version:	3.1.2
-Release:	3.1
-License:	GPL
-Group:		Video
-URL:		https://github.com/ColumPaget/Movgrab
-Source:		https://github.com/ColumPaget/Movgrab/archive/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
-Summary:	Command-line movie downloader
-Summary(de):	Konmmandozeilen Video Downloader
+Name:           movgrab
+Version:        3.1.2
+Release:        3.1
+License:        GPL
+Group:          Video
+URL:            https://github.com/ColumPaget/Movgrab
+Source:         https://github.com/ColumPaget/Movgrab/archive/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
+Summary:        Command-line movie downloader
+Summary(de):    Konmmandozeilen Video Downloader
 
 %description
 Movgrab is a downloader for all those pesky sites that insist 

@@ -48,9 +48,6 @@ install -Dm755 fakexrandr-manage.py %{buildroot}%{_bindir}/fakexrandr-manage
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}*
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README.md
 %{_bindir}/fakexrandr-manage
@@ -58,4 +55,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20211207
-- Rebuild for Fedora
+- Rebuilt for Fedora

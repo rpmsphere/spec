@@ -23,9 +23,9 @@ eliminated!
 %setup -q -a1
 %{__mv} tomatoes-1.5/* .
 %{__rm} -rf tomatoes-1.5
-%patch0
-%patch1
-%patch2
+%patch 0
+%patch 1
+%patch 2
 sed -i 's/\r$//' README
 
 %build

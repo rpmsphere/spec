@@ -1,15 +1,15 @@
-Name:		diakonos
-Summary:	A linux editor for the masses
-Version:	0.9.4
-Release:	3.1
-License:	MIT
-Group:		Applications/Editors
-Source0:	https://diakonos.pist0s.ca/archives/%{name}-%{version}.tar.bz2
-URL:		https://diakonos.pist0s.ca
-BuildArch:	noarch
-BuildRequires:	ruby
-BuildRequires:	rubypick
-BuildRequires:	rubygems
+Name:           diakonos
+Summary:        A linux editor for the masses
+Version:        0.9.4
+Release:        3.1
+License:        MIT
+Group:          Applications/Editors
+Source0:        https://diakonos.pist0s.ca/archives/%{name}-%{version}.tar.bz2
+URL:            https://diakonos.pist0s.ca
+BuildArch:      noarch
+BuildRequires:  ruby
+BuildRequires:  rubypick
+BuildRequires:  rubygems
 
 %description
 A customizable, usable console-based text editor made it with the intention
@@ -27,9 +27,6 @@ ruby install.rb --prefix /usr --dest-dir $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr/share/ruby
 mv $RPM_BUILD_ROOT/usr/local/share/ruby/site_ruby/%{name}* $RPM_BUILD_ROOT/usr/share/ruby
 rm -rf $RPM_BUILD_ROOT/usr/share/doc/ruby
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGELOG LICENCE README.rdoc

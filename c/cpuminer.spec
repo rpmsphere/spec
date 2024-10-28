@@ -1,12 +1,12 @@
-Name:		cpuminer
-Version:	2.3.2
-Release:	5.1
-License:	GPL-2.0
-Summary:	Optimized CPU-miner for Bitcoin / Litecoin and others
-URL:		https://github.com/pooler/cpuminer
-Group:		Productivity/Networking/Other
-Source:		https://download.sourceforge.net/project/cpuminer/pooler-%{name}-%{version}.tar.gz
-BuildRequires:	libcurl-devel jansson-devel
+Name:           cpuminer
+Version:        2.3.2
+Release:        5.1
+License:        GPL-2.0
+Summary:        Optimized CPU-miner for Bitcoin / Litecoin and others
+URL:            https://github.com/pooler/cpuminer
+Group:          Productivity/Networking/Other
+Source:         https://download.sourceforge.net/project/cpuminer/pooler-%{name}-%{version}.tar.gz
+BuildRequires:  libcurl-devel jansson-devel
 
 %description
 This is a multi-threaded CPU miner for Litecoin and Bitcoin,

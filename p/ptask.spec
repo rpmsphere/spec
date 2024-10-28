@@ -1,12 +1,12 @@
-Summary:	A GTK+ graphical user interface for managing tasks
-Name:		ptask
-Version:	1.0.0
-Release:	3.1
-URL:		https://wpitchoune.net/blog/ptask/
-License:	GNU General Public License version 2
-Group:		Applications/Productivity
-Source0:	https://wpitchoune.net/ptask/files/%{name}-%{version}.tar.gz
-Requires:	task
+Summary:        A GTK+ graphical user interface for managing tasks
+Name:           ptask
+Version:        1.0.0
+Release:        3.1
+URL:            https://wpitchoune.net/blog/ptask/
+License:        GNU General Public License version 2
+Group:          Applications/Productivity
+Source0:        https://wpitchoune.net/ptask/files/%{name}-%{version}.tar.gz
+Requires:       task
 BuildRequires: libX11-devel
 BuildRequires: libXext-devel
 BuildRequires: gtk3-devel
@@ -27,9 +27,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/doc/%{name}

@@ -24,9 +24,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d -m 755 $RPM_BUILD_ROOT/usr/bin
 install -m 755 rpm2dud $RPM_BUILD_ROOT/usr/bin
 
-%clean 
-rm -rf $RPM_BUILD_ROOT
-
 %files
 /usr/bin/rpm2dud
 %doc README COPYING

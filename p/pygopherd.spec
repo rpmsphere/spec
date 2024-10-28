@@ -1,26 +1,26 @@
 %define __python /usr/bin/python2
 
-Summary:	Gopher server
-Summary(pl):	Serwer gophera
-Name:		pygopherd
-Version:	2.0.16
-Release:	11.1
-License:	GPL
-Group:		Networking/Daemons
-Source0:	https://gopher.quux.org:70/give-me-gopher/pygopherd/%{name}_%{version}.tar.gz
-Source1:	%{name}.init
-Patch0:		%{name}-conf.patch
-URL:		gopher://gopher.quux.org/1/Software/Gopher
-Requires(pre):	/usr/bin/id
-Requires(pre):	/usr/sbin/groupadd
-Requires(pre):	/usr/sbin/useradd
-Provides:	gopher-server
-Provides:	group(gopher)
-Provides:	user(gopher)
-Obsoletes:	gofish
-Obsoletes:	gopher-server
-BuildArch:	noarch
-%define		_rootdir	/home/services/gopher
+Summary:        Gopher server
+Summary(pl):    Serwer gophera
+Name:           pygopherd
+Version:        2.0.16
+Release:        11.1
+License:        GPL
+Group:          Networking/Daemons
+Source0:        https://gopher.quux.org:70/give-me-gopher/pygopherd/%{name}_%{version}.tar.gz
+Source1:        %{name}.init
+Patch0:         %{name}-conf.patch
+URL:            gopher://gopher.quux.org/1/Software/Gopher
+Requires(pre):  /usr/bin/id
+Requires(pre):  /usr/sbin/groupadd
+Requires(pre):  /usr/sbin/useradd
+Provides:       gopher-server
+Provides:       group(gopher)
+Provides:       user(gopher)
+Obsoletes:      gofish
+Obsoletes:      gopher-server
+BuildArch:      noarch
+%define         _rootdir        /home/services/gopher
 BuildRequires:  python2
 
 %description
@@ -31,7 +31,7 @@ gopherd - serwer gophera.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p0
+%patch 0 -p0
 
 %build
 python2 setup.py build
@@ -41,17 +41,14 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}/{%{name},rc.d/init.d},%{python_sitelib},%{_rootdir}}
 
 python2 setup.py install \
-	--root=$RPM_BUILD_ROOT \
-	--install-lib=%{python_sitelib} \
-	--optimize=2
+        --root=$RPM_BUILD_ROOT \
+        --install-lib=%{python_sitelib} \
+        --optimize=2
 
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/rc.d/init.d/pygopherd
 find $RPM_BUILD_ROOT -type f -name "*.py" -exec rm -rf {} \;
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %pre
 groupadd -g 30 gopher
@@ -59,8 +56,8 @@ useradd -u 13 -g 30 -d /no/home -s /bin/false -c "gopherd user" gopher
 
 %postun
 if [ "$1" = "0" ]; then
-	userdel gopher
-	groupdel gopher
+        userdel gopher
+        groupdel gopher
 fi
 
 %files

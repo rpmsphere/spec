@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Summary: 	OXIM filter packs
-Name: 		oxim-filters
-Version: 	0.4
-Release: 	3
-License: 	GPLv2+
-Group: 		User Interface/Desktops
-Source0: 	%{name}-%{version}.tar.gz
-URL: 		https://github.com/chinese-opendesktop/oxim-filters
-#BuildArch:	noarch
-Requires:	oxim >= 1.4.0
+Summary:        OXIM filter packs
+Name:           oxim-filters
+Version:        0.4
+Release:        3
+License:        GPLv2+
+Group:          User Interface/Desktops
+Source0:        %{name}-%{version}.tar.gz
+URL:            https://github.com/chinese-opendesktop/oxim-filters
+#BuildArch:     noarch
+Requires:       oxim >= 1.4.0
 
 %description
 The OXIM filters are some useful tools for oxim to 
@@ -23,9 +23,6 @@ help user to input chinese words.
 %install
 rm -rf %{buildroot}
 bindir=%{_bindir} libdir=%{_libdir} DESTDIR=%{buildroot} make install
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_libdir}/oxim/filters/*

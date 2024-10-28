@@ -1,16 +1,16 @@
-Summary:	A text-based subtitles editor
-Name:		subtitlecomposer
-Version:	0.5.7
-#Version:	0.6.4
-Release:	29.4
-URL:		https://github.com/maxrd2/subtitlecomposer
-Source0:	%{name}-%{version}.tar.gz
-License:	GPLv2+
-Group:		Applications/Multimedia
-BuildRequires:	gcc-c++, kdelibs-devel
-BuildRequires:	gstreamer1-devel, gstreamer1-plugins-base-devel
-BuildRequires:	libicu-devel
-BuildRequires:	qca2 grep udisks2
+Summary:        A text-based subtitles editor
+Name:           subtitlecomposer
+Version:        0.5.7
+#Version:       0.6.4
+Release:        29.4
+URL:            https://github.com/maxrd2/subtitlecomposer
+Source0:        %{name}-%{version}.tar.gz
+License:        GPLv2+
+Group:          Applications/Multimedia
+BuildRequires:  gcc-c++, kdelibs-devel
+BuildRequires:  gstreamer1-devel, gstreamer1-plugins-base-devel
+BuildRequires:  libicu-devel
+BuildRequires:  qca2 grep udisks2
 
 %description
 A text-based subtitles editor that supports basic operations as well as more
@@ -42,9 +42,6 @@ sed -i 's|log2(flag)|log2(float(flag))|' src/core/subtitleline.cpp
 %{_datadir}/config/%{name}rc
 %{_datadir}/icons/hicolor/*/*/*
 %{_datadir}/mime/packages/%{name}.xml
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Oct 09 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.7

@@ -1,14 +1,14 @@
-Name:		fortune-it
-Version:	1.99
-Release:	3.1
-Summary:	Collection of Italian fortune cookie files
-Group:		Amusements/Games
-License:	Public Domain
-URL:		https://www.fortune-it.net/
-Source0:	https://www.fortune-it.net/download/%{name}-%{version}.tar.gz
-BuildArch:	noarch
-BuildRequires:	fortune-mod
-Requires:	fortune-mod
+Name:           fortune-it
+Version:        1.99
+Release:        3.1
+Summary:        Collection of Italian fortune cookie files
+Group:          Amusements/Games
+License:        Public Domain
+URL:            https://www.fortune-it.net/
+Source0:        https://www.fortune-it.net/download/%{name}-%{version}.tar.gz
+BuildArch:      noarch
+BuildRequires:  fortune-mod
+Requires:       fortune-mod
 
 %description
 This package contains Italian Fortunes for Linux.

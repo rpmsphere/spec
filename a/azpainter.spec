@@ -8,7 +8,7 @@ License:        GPL3.0+
 Group:          Productivity/Graphics/Other
 URL:            https://osdn.net/projects/azpainter
 #Source:         https://osdn.net/projects/azpainter/downloads/71988/%{name}-%{version}.tar.xz
-Source0:	https://gitlab.com/azelpg/azpainter/-/archive/v%{version}/azpainter-v%{version}.tar.gz
+Source0:        https://gitlab.com/azelpg/azpainter/-/archive/v%{version}/azpainter-v%{version}.tar.gz
 BuildRequires:  automake
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig

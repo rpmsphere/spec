@@ -3,20 +3,20 @@
 Name:           solarus
 URL:            https://www.solarus-engine.org/
 BuildRequires:  gcc-c++ cmake SDL2_image-devel SDL2_ttf-devel openal-soft-devel libvorbis-devel libmodplug-devel luajit-devel physfs-devel
-BuildRequires:	compat-lua-devel
+BuildRequires:  compat-lua-devel
 License:        GPLv3 or later
 Group:          Amusements/Games/RPG
 Version:        1.6.5
 Release:        1
 Summary:        An open-source Zelda-like game engine
-Source0:	https://gitlab.com/solarus-games/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
+Source0:        https://gitlab.com/solarus-games/%{name}/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 
 %description
 Solarus is an open-source Zelda-like game engine written in C++.
 
 %package devel
-Summary:	Development files for solarus
-Requires:	%{name}
+Summary:        Development files for solarus
+Requires:       %{name}
 
 %description devel
 Development files for Solarus, including header files.

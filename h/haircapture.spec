@@ -113,9 +113,6 @@ rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 chmod +x $RPM_BUILD_ROOT%{_datadir}/hairCAPTURE-%{version}/build.sh
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_libdir}/*.so.*
 

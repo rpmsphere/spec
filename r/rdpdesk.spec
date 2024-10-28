@@ -12,6 +12,7 @@ BuildRequires:  libXt-devel
 BuildRequires:  libXaw-devel
 BuildRequires:  libjpeg-devel
 BuildRequires:  wxGTK2-devel
+#BuildRequires:  wxGTK2-static
 BuildRequires:  compat-openssl10-devel
 
 %description
@@ -29,14 +30,12 @@ sed -i 's|return NULL|return 0L|' src/gui/tree_group.cpp
 
 %build
 export LDFLAGS+=" -lgobject-2.0 -lX11 -lgdk-x11-2.0 -lgtk-x11-2.0 -lcrypto"
-%configure --disable-static
+#sed -i 's|-Wall|-Wall -shared -fPIC -fPIE|' configure
+%configure --enable-shared --disable-static --with-wx-config=/usr/bin/wx-config-2.0
 make
 
 %install
 %make_install
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}*

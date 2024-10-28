@@ -34,9 +34,6 @@ install -p -m 644 icons/128x128/gauge.png $RPM_BUILD_ROOT%{_datadir}/icons/hicol
 install -p -m 644 icons/48x48/gauge.png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/48x48/apps/gauge.png
 desktop-file-install --vendor="" --dir=${RPM_BUILD_ROOT}%{_datadir}/applications gauge.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/gauge
 %{_datadir}/applications/gauge.desktop

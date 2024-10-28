@@ -26,9 +26,6 @@ icon theme, La Capitaine.
 install -d %{buildroot}%{_datadir}/icons/%{theme_name}
 cp -a dist/* %{buildroot}%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README.md COPYING
 %{_datadir}/icons/%{theme_name}

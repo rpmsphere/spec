@@ -1,11 +1,11 @@
-Name:		qr-tools
-Version:	2.1
-Release:	1
-Summary:	A suite of tools for handling QR codes
-Group:		Development/Tools
-License:	GPLv3
-URL:		https://launchpad.net/qr-tools
-Source0:	https://launchpad.net/qr-tools/trunk/%{version}/+download/%{name}-%{version}.tar.gz
+Name:           qr-tools
+Version:        2.1
+Release:        1
+Summary:        A suite of tools for handling QR codes
+Group:          Development/Tools
+License:        GPLv3
+URL:            https://launchpad.net/qr-tools
+Source0:        https://launchpad.net/qr-tools/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 
 %description
 QR Tools project is formed by the python-qrtools and QtQR.
@@ -56,9 +56,6 @@ Categories=Application;Utility;
 EOF
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{_datadir}/%{name}/*.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -n python3-qrtools
 %doc LICENCE samples

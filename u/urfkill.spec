@@ -45,7 +45,7 @@ https://freedesktop.org/wiki/Software/urfkill
 
 %prep
 %setup -n %{name}-%{version} -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 ./autogen.sh
@@ -58,9 +58,6 @@ make %{?jobs:-j%jobs}
 %install
 %makeinstall
 rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %pre
 mkdir -p /var/lib/urfkill

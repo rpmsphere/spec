@@ -26,9 +26,6 @@ python2 setup.py install \
    --install-headers=%{_includedir}/python2.7 \
    --install-lib=%{python2_sitearch}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{python2_sitearch}/wpactrl.so
 %{python2_sitearch}/wpactrl-0.0.0-py*.egg-info

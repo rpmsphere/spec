@@ -25,9 +25,6 @@ cp -a * $RPM_BUILD_ROOT%{python2_sitearch}/unsermake/
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 ln -s %{python2_sitearch}/unsermake/unsermake $RPM_BUILD_ROOT%{_bindir}/unsermake
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING README TODO
 %{_bindir}/unsermake

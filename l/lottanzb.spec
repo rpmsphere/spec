@@ -39,9 +39,6 @@ rm -fr %buildroot%_datadir/doc
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 #{_sysconfdir}/apport/crashdb.conf.d/lottanzb-crashdb.conf
 #{_datadir}/apport

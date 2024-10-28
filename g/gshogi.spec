@@ -1,14 +1,14 @@
-Name:		gshogi
-Version:	0.5.1git
-Release:	2.1
-Summary:	A program to play Shogi
-Group:		Games/Boards
-License:	GPLv3+
-URL:		https://www.johncheetham.com/projects/gshogi/
-Source:		%{name}-master.zip
-BuildRequires:	python3-devel
+Name:           gshogi
+Version:        0.5.1git
+Release:        2.1
+Summary:        A program to play Shogi
+Group:          Games/Boards
+License:        GPLv3+
+URL:            https://www.johncheetham.com/projects/gshogi/
+Source:         %{name}-master.zip
+BuildRequires:  python3-devel
 Requires:       python3-gobject
-Requires:	python3-cairo
+Requires:       python3-cairo
 
 %description
 gshogi is a program to play Shogi (Japanese Chess). It has a builtin engine and
@@ -24,9 +24,6 @@ python3 setup.py build
 %install
 rm -rf %{buildroot}
 python3 setup.py install --root %{buildroot}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE README.rst ChangeLog

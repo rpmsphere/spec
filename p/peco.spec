@@ -42,9 +42,6 @@ go build cmd/peco/peco.go
 %{__mkdir_p} ${RPM_BUILD_ROOT}%{_bindir}
 %{__install} -m 755 peco ${RPM_BUILD_ROOT}%{_bindir}
 
-%clean
-%{__rm} -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc LICENSE
 %doc README.md Changes

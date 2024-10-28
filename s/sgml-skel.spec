@@ -12,7 +12,7 @@ Source0:        https://www.suse.de/~ke/%{name}/%{name}-%{version}.tar.bz2
 # :pserver:anoncvs@sources.redhat.com:/cvs/docbook-tools
 Source1:        docbook-tools/sgml-common/bin/install-catalog.in
 Source2:        edit-xml-catalog.sh
-Patch:          sgml-skel-regcat.diff
+Patch0:         sgml-skel-regcat.diff
 Patch1:         sgml-skel-regcat2.diff
 Patch2:         sgml-skel-edit-cat.diff
 BuildArch:      noarch
@@ -34,12 +34,12 @@ Authors:
 
 %prep
 %setup -q
-%patch -p 1
-%patch1 -p 1
+%patch 0 -p 1
+%patch 1 -p 1
 # # cp -p $RPM_SOURCE_DIR/%{name}-README.SuSE .
 cp %{S:1} .
 cp %{S:2} .
-%patch2 -p 0
+%patch 2 -p 0
 
 %build
 # CFLAGS="$RPM_OPT_FLAGS"
@@ -63,9 +63,6 @@ xmlcatalog --noout --create $RPM_BUILD_ROOT%{_sysconfdir}/xml/suse-catalog.xml
 #xmlcatalog --noout --create $RPM_BUILD_ROOT%{_sysconfdir}/xml/catalog
 #xmlcatalog --noout --add  "nextCatalog" "suse-catalog.xml" "suse-catalog.xml" \
 #  $RPM_BUILD_ROOT%{_sysconfdir}/xml/catalog
-
-%clean
-rm -fr $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING NEWS README*

@@ -1,19 +1,19 @@
-Summary:	Thai input method engine for IBus
-Summary(pl.UTF-8):	Silnik metody wprowadzania znaków tajskich dla platformy IBus
-Name:		ibus-libthai
-Version:	0.1.4
-Release:	2.1
-License:	GPL v2+
-Group:		Libraries
-Source0:	https://linux.thai.net/pub/thailinux/software/libthai/%{name}-%{version}.tar.xz
-# Source0-md5:	0ac245d0f59f7cde5e1eaacb7d4faab5
-URL:		https://linux.thai.net/
-BuildRequires:	gettext-devel
-BuildRequires:	glib2-devel
-BuildRequires:	gtk3-devel
-BuildRequires:	ibus-devel
-BuildRequires:	libthai-devel
-%define		_libexecdir	%{_libdir}/ibus
+Summary:        Thai input method engine for IBus
+Summary(pl.UTF-8):      Silnik metody wprowadzania znaków tajskich dla platformy IBus
+Name:           ibus-libthai
+Version:        0.1.4
+Release:        2.1
+License:        GPL v2+
+Group:          Libraries
+Source0:        https://linux.thai.net/pub/thailinux/software/libthai/%{name}-%{version}.tar.xz
+# Source0-md5:  0ac245d0f59f7cde5e1eaacb7d4faab5
+URL:            https://linux.thai.net/
+BuildRequires:  gettext-devel
+BuildRequires:  glib2-devel
+BuildRequires:  gtk3-devel
+BuildRequires:  ibus-devel
+BuildRequires:  libthai-devel
+%define         _libexecdir     %{_libdir}/ibus
 
 %description
 IBus-LibThai is a Thai input method engine for IBus, based on the
@@ -46,12 +46,9 @@ Obecnie udostępnia wewnętrznie 3 układy klawiatury:
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+        DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog NEWS README

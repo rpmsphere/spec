@@ -10,7 +10,7 @@ Version:        0.0.20051202
 Release:        461.1
 Summary:        SiS Display Control Panel
 Source:         %name-%version.tar.gz
-Patch:          sisctrl.diff
+Patch0:          sisctrl.diff
 
 %description
 Utility to set some display properties during server runtime.
@@ -21,7 +21,7 @@ Authors:
 
 %prep
 %setup -q
-%patch
+%patch 0
 sed -i 's|gdk-pixbuf-xlib|gdk-pixbuf|g' src/sisctrl_stray.c
 
 %build

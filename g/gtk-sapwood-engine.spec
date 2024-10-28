@@ -1,7 +1,7 @@
 Summary:        Sapwood theme engine
 Name:           gtk-sapwood-engine
 Version:        3.0.0
-Release:	1
+Release:        1
 License:        GPL
 Group:          System Environment/Libraries
 Source:         sapwood-%{version}.tar.gz
@@ -27,9 +27,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 # no .la, please
 find $RPM_BUILD_ROOT%{_libdir} -name "*.la" | xargs rm 
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING README ChangeLog

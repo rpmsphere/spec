@@ -24,9 +24,6 @@ mkdir -p $RPM_BUILD_ROOT/usr/bin
 mkdir -p $RPM_BUILD_ROOT%_mandir/man1
 make install DESTDIR=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %_bindir/qprint
 %_mandir/man1/qprint.1.gz

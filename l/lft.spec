@@ -36,9 +36,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/man/man8/lft.8.*
 %{_datadir}/man/man8/whob.8.*
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.91
 - Rebuilt for Fedora

@@ -43,9 +43,6 @@ cp -a FREAK1.1 $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/emerald/themes/%{theme_name}
 tar zxf Smooth\ Grey\ BUUF.emerald -C $RPM_BUILD_ROOT%{_datadir}/emerald/themes/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc readme
 %{_datadir}/themes/%{theme_name}

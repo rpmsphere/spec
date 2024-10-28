@@ -31,9 +31,6 @@ mv %{buildroot}/usr/%{name} %{buildroot}%{_datadir}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}.py
 
-%clean
-rm -rf %buildroot
-
 %files
 %{_bindir}/*
 %{python2_sitelib}/*

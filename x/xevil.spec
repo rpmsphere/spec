@@ -1,30 +1,30 @@
-Summary:	A fast-action violent game for the X Window System
-Summary(cs):	Hra podobná hře Pac-Man pro X Window System
-Summary(da):	Et Pacman-lignende spil til X-vinduessystemet
-Summary(de):	Ein schnelles, extrem gewalttätiges Actionspiel für X
-Summary(fr):	Un jeu d'action rapide et très violent sous X
-Summary(it):	Un violento gioco di azione per X Window
-Summary(nb):	Et hurtig voldelig spill for X-vindussytemet
-Summary(pl):	Brutalna gra o szybkiej akcji pod X Window System
-Summary(sk):	Rýchla násilná hra pre X Window Systém
-Summary(tr):	Hızlı ve şiddet yüklü bir X oyunu
-Summary(zh_TW):	快打暴力遊戲
-Name:		xevil
-Version:	2.1b1
-Release:	1
-License:	GPL
-Group:		Amusements/Games
-#Source0:	https://www.xevil.com/download/stable/%{name}src%{version}.zip
-#Source0:	%{name}_2.02r2.orig.tar.gz
-Source0:	https://github.com/lvella/xevil/archive/refs/heads/master.zip#/%{name}-master.zip
-Source1:	%{name}.desktop
-Source2:	%{name}.png
+Summary:        A fast-action violent game for the X Window System
+Summary(cs):    Hra podobná hře Pac-Man pro X Window System
+Summary(da):    Et Pacman-lignende spil til X-vinduessystemet
+Summary(de):    Ein schnelles, extrem gewalttätiges Actionspiel für X
+Summary(fr):    Un jeu d'action rapide et très violent sous X
+Summary(it):    Un violento gioco di azione per X Window
+Summary(nb):    Et hurtig voldelig spill for X-vindussytemet
+Summary(pl):    Brutalna gra o szybkiej akcji pod X Window System
+Summary(sk):    Rýchla násilná hra pre X Window Systém
+Summary(tr):    Hızlı ve şiddet yüklü bir X oyunu
+Summary(zh_TW): 快打暴力遊戲
+Name:           xevil
+Version:        2.1b1
+Release:        1
+License:        GPL
+Group:          Amusements/Games
+#Source0:       https://www.xevil.com/download/stable/%{name}src%{version}.zip
+#Source0:       %{name}_2.02r2.orig.tar.gz
+Source0:        https://github.com/lvella/xevil/archive/refs/heads/master.zip#/%{name}-master.zip
+Source1:        %{name}.desktop
+Source2:        %{name}.png
 Patch0:         %{name}_2.02r2.patch
-URL:		https://www.xevil.com/
-BuildRequires:	libstdc++-devel
-BuildRequires:	unzip
-BuildRequires:	libX11-devel
-BuildRequires:	libXpm-devel
+URL:            https://www.xevil.com/
+BuildRequires:  libstdc++-devel
+BuildRequires:  unzip
+BuildRequires:  libX11-devel
+BuildRequires:  libXpm-devel
 
 %description
 XEvil is an X Window System based game with a side view display
@@ -74,6 +74,7 @@ Ninja savaşçısı olarak karşınıza çıkan her şeyi öldürmek.
 #patch0 -p1
 #sed -i 's|-static||' config.mk
 #sed -i -e 's|const char\* cs,int c|char* cs,int c|g' -e 's|const char\* cs,const char\* ct|char* cs,char* ct|' cmn/utils.h
+sed -i '64i #include <cstdint>' cmn/utils.cpp
 sed -i 's|-m32|-Wno-write-strings|' config.mk
 sed -i -e '/helvetica/s|18|20|' -e 's|6x13|9x15bold|' x11/ui.cpp
 
@@ -88,9 +89,6 @@ install -m755 x11/REDHAT_LINUX/xevil $RPM_BUILD_ROOT%{_bindir}
 install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications
 echo -e 'Name[zh_TW]=極限邪惡\nComment[zh_TW]=Xevil 快打暴力遊戲' >> $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -m644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc readme.txt instructions

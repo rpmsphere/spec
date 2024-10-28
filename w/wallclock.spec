@@ -27,9 +27,6 @@ install -Dm 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 %files
 %{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Mar 21 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8
 - Rebuilt for Fedora

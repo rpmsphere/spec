@@ -39,9 +39,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 rm -f $RPM_BUILD_ROOT%{_datadir}/csv2xls/afm/LICENSE*
 rm -f $RPM_BUILD_ROOT%{_datadir}/csv2xls/Adobe-Core35_AFMs-314/{LICENSE,*.html}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/csv2xls
 %{_datadir}/csv2xls

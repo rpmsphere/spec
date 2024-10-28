@@ -1,34 +1,34 @@
 %undefine _debugsource_packages
 
-Summary:	Disk encryption software 
-Name:		veracrypt
-Version:	1.26.7
-Release:	1
-License:	Microsoft Public License
-Group:		File tools
-URL:		https://www.veracrypt.fr/
-Source0:	https://github.com/veracrypt/VeraCrypt/archive/VeraCrypt_%{version}_Source.tar.bz2
-Patch1:		veracrypt-1.0f-2-no-makeself.patch
-Patch2:		veracrypt-1.0f-2-desktop.patch 
-BuildRequires:	wxGTK3-devel
-BuildRequires:	nasm
-BuildRequires:	yasm
-BuildRequires:	fuse-devel
-BuildRequires:	ghostscript ImageMagick
+Summary:        Disk encryption software 
+Name:           veracrypt
+Version:        1.26.7
+Release:        1
+License:        Microsoft Public License
+Group:          File tools
+URL:            https://www.veracrypt.fr/
+Source0:        https://github.com/veracrypt/VeraCrypt/archive/VeraCrypt_%{version}_Source.tar.bz2
+Patch1:         veracrypt-1.0f-2-no-makeself.patch
+Patch2:         veracrypt-1.0f-2-desktop.patch 
+BuildRequires:  wxGTK-devel
+BuildRequires:  nasm
+BuildRequires:  yasm
+BuildRequires:  fuse-devel
+BuildRequires:  ghostscript ImageMagick
 
 %description
 Free disk encryption software based on TrueCrypt.
 
 %prep
 %setup -qc
-#%patch1 -p1
+#%patch 1 -p1
 #patch2 -p1
 #sed -i 's|dumpversion|dumpfullversion|' src/Makefile
 
 %build
 export CC=clang CXX=clang++
 pushd src
-make WX_CONFIG=wx-config-3.0
+make WX_CONFIG=wx-config-3.2
 popd
 
 pushd src/Resources/Icons

@@ -1,8 +1,8 @@
-%define _name	jMemorize
+%define _name   jMemorize
 
 Name:           jmemorize
 Summary:        Vocabulary learning program based on Leitner flashcard system
-Summary(zh_TW):	利用 Leitner flashcard 製作的字彙學習程式
+Summary(zh_TW): 利用 Leitner flashcard 製作的字彙學習程式
 Group:          Amusements/Teaching/Language
 Version:        1.3.1
 Release:        1
@@ -14,7 +14,7 @@ BuildRequires:  unzip
 BuildRequires:  chkconfig
 BuildRequires:  java-devel-openjdk
 BuildRequires:  ant
-BuildRequires:	desktop-file-utils
+BuildRequires:  desktop-file-utils
 Source0:        %{_name}-1.3.1-source.zip
 Source1:        %{_name}.desktop
 Source2:        %{_name}.png
@@ -51,9 +51,6 @@ EOF
 # Desktop menu entry
 %__install -d -m 755 %{buildroot}%{_datadir}/applications
 %__install -m 644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{_name}.desktop
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc README LICENSE CHANGELOG 

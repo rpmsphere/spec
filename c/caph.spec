@@ -4,7 +4,7 @@ Release: 5.1
 Group: Games/Puzzles
 Summary: A sandbox game, based on physics
 Source: %name-%version.tar.bz2
-Patch: caph-1.1-alt-verbose.patch
+Patch0: caph-1.1-alt-verbose.patch
 Patch1: caph-1.1-alt-debuginfo.patch
 URL: https://caphgame.sourceforge.net/
 License: GPLv3
@@ -16,9 +16,9 @@ red object with green object. You can use various objects, solid, wire
 (rope), and bendable objects. Gravitation will help you.
 
 %prep
-%setup
-%patch -p2
-%patch1 -p2
+%setup -q
+%patch 0 -p2
+%patch 1 -p2
 sed -i '
 /^#define SYS_DATA_DIR/c\
 #define SYS_DATA_DIR "%_gamesdatadir/%name/"

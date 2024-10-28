@@ -1,13 +1,13 @@
-Summary:	Windows 7 Transformation Pack
-Name:		win2-7-theme
-Version:	6.8.3
-Release:	4.1
-URL:		https://gnome-look.org/content/show.php/Win2-7+Pack?content=113264
-License:	GPL
-Group:		User Interface/Desktops
-Source:		%{name}-%{version}.tar.gz
-#Source:	Win2-7Pack_v6.8.3_Multilang_Aero_MD5_85061ac4b24868e9d1a33cf0d69ad34b.tar.lzma
-BuildArch:	noarch
+Summary:        Windows 7 Transformation Pack
+Name:           win2-7-theme
+Version:        6.8.3
+Release:        4.1
+URL:            https://gnome-look.org/content/show.php/Win2-7+Pack?content=113264
+License:        GPL
+Group:          User Interface/Desktops
+Source:         %{name}-%{version}.tar.gz
+#Source:        Win2-7Pack_v6.8.3_Multilang_Aero_MD5_85061ac4b24868e9d1a33cf0d69ad34b.tar.lzma
+BuildArch:      noarch
 
 %description
 Even from its start in late 2009 as an Gnome Icon pack, the Win2-7 Packs

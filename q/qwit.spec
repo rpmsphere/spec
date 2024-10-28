@@ -10,7 +10,7 @@ Summary:        Qt4 cross-platform client for Twitter
 Source:         https://qwit.googlecode.com/files/qwit-1.1-pre2-src.tar.bz2
 Source1:        qwit.desktop
 Source2:        qwit-tango-icons.tar.gz
-Patch:          qwit-1.0-r303-no-shortner-option.diff
+Patch0:          qwit-1.0-r303-no-shortner-option.diff
 BuildRequires:  gcc-c++ qt4-devel intltool qoauth-devel
 BuildRequires:  qca-devel
 
@@ -29,7 +29,7 @@ Qt4 cross-platform client for Twitter (Development libraries).
 
 %prep
 %setup -q -n qwit-1.1-pre2-src -a 2
-%patch -p1
+%patch 0 -p1
 
 %build
 qmake-qt4 PREFIX=/usr 
@@ -39,9 +39,6 @@ make %{?jobs:-j%jobs}
 %__install -D -m755 %{name} %{buildroot}%{_bindir}/%{name}
 %__install -D -m644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 %__install -D -m644 images/%{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING README

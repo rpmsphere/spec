@@ -1,12 +1,12 @@
 %undefine _debugsource_packages
 
-Summary:	Terminal emulator for WindowMaker
-Name:		wterm
-Version:	6.2.9
-License:	GPL
-Group:		X11/Applications
-Source0:	https://sourceforge.net/projects/wterm/files/wterm/%{name}-%{version}.tar.gz
-URL:		https://sourceforge.net/projects/wterm/
+Summary:        Terminal emulator for WindowMaker
+Name:           wterm
+Version:        6.2.9
+License:        GPL
+Group:          X11/Applications
+Source0:        https://sourceforge.net/projects/wterm/files/wterm/%{name}-%{version}.tar.gz
+URL:            https://sourceforge.net/projects/wterm/
 Release:       23.1
 BuildRequires:  libpng-devel
 BuildRequires:  giflib-devel
@@ -25,23 +25,20 @@ scroll bar.
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
 %configure \
-	--enable-xgetdefault \
-	--enable-transparency \
-	--enable-next-scroll \
-	--enable-ttygid \
-	--enable-xpm-background \
-	--with-xpm-library=%{_libdir} \
-	--enable-menubar \
-	--enable-wtmp \
-	--enable-utmp
+        --enable-xgetdefault \
+        --enable-transparency \
+        --enable-next-scroll \
+        --enable-ttygid \
+        --enable-xpm-background \
+        --with-xpm-library=%{_libdir} \
+        --enable-menubar \
+        --enable-wtmp \
+        --enable-utmp
 
 %{__make}
 
 %install
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README doc/{BUGS,FAQ,README*,TODO}

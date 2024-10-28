@@ -40,9 +40,6 @@ qmake-qt4 %{name}.pro
 %{__install} -D -m 644 %{name}.desktop $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 %{__install} -D -m 644 %{name}.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT  
-
 %files
 %doc AUTHORS README COPYING INSTALL
 %{_bindir}/tuxcards
@@ -55,7 +52,7 @@ qmake-qt4 %{name}.pro
 - Rebuilt for Fedora
 * Mon May 17 2010 - mweckbecker@suse.de
 - suse_update_desktop_file added
-* Thu Jun 19 2009 - mweckbecker@suse.de
+* Fri Jun 19 2009 - mweckbecker@suse.de
 - .desktop/.png file added
 * Thu Jun 18 2009 - mweckbecker@suse.de
 - initial package with version 2.2 and a few patches

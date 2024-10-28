@@ -1,26 +1,26 @@
-Name:		morituri
-Version:	0.2.3
-Release:	7.1
-Summary:	CD ripper aiming for accuracy over speed
-License:	GPLv3
-Group:		Sound
-URL:		https://thomas.apestaart.org/%{name}/trac
-Source0:	https://thomas.apestaart.org/download/%{name}/%{name}-%{version}.tar.bz2
-BuildArch:	noarch
-BuildRequires:	python2-setuptools
-#BuildRequires:	python2-gstreamer
-#BuildRequires:	python2-gobject
-Requires:	cdparanoia
-Requires:	cdrdao >= 1.2.3
-Requires:	gstreamer-plugins-base
-Requires:	gstreamer-plugins-good >= 0.10.16
-Requires:	python2-gstreamer
-Requires:	python2-musicbrainz2
-Requires:	python2-pycdio
-Requires:	python2-pyxdg
-Requires:	python2-CDDB
-Requires:	python2-pkg-resources
-Requires:	python2-setuptools
+Name:           morituri
+Version:        0.2.3
+Release:        7.1
+Summary:        CD ripper aiming for accuracy over speed
+License:        GPLv3
+Group:          Sound
+URL:            https://thomas.apestaart.org/%{name}/trac
+Source0:        https://thomas.apestaart.org/download/%{name}/%{name}-%{version}.tar.bz2
+BuildArch:      noarch
+BuildRequires:  python2-setuptools
+#BuildRequires: python2-gstreamer
+#BuildRequires: python2-gobject
+Requires:       cdparanoia
+Requires:       cdrdao >= 1.2.3
+Requires:       gstreamer-plugins-base
+Requires:       gstreamer-plugins-good >= 0.10.16
+Requires:       python2-gstreamer
+Requires:       python2-musicbrainz2
+Requires:       python2-pycdio
+Requires:       python2-pyxdg
+Requires:       python2-CDDB
+Requires:       python2-pkg-resources
+Requires:       python2-setuptools
 
 %description
 Morituri is a CD ripper that aims for accuracy over speed. Its features are

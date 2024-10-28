@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/cmexfonts
+%define fontdir %{_datadir}/fonts/cmexfonts
 
 Summary: CMEX chinese BDF fonts
 Name: cmexfonts

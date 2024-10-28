@@ -48,9 +48,6 @@ desktop-file-install --delete-original \
 --dir %{buildroot}%{_datadir}/applications/ \
 %{buildroot}%{_datadir}/applications/%{name}_enqueue.desktop
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %post
 touch --no-create %{_datadir}/icons/hicolor
 gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :

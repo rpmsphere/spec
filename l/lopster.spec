@@ -25,7 +25,7 @@ In addition, chat forums similar to IRC are available.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 %build
 %configure
 make CFLAGS+=-Wno-format-security
@@ -49,9 +49,6 @@ Terminal=false
 Icon=/usr/share/lopster/pixmaps/logo1.xpm
 Categories=Application;Network; 
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/lopster

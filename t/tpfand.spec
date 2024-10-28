@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
-Name:			tpfand
-Version:		0.94
-Release:		11.1
-Summary:		ThinkPad Fan Control Daemon
-Source:			https://launchpad.net/tp-fan/tpfand/%{version}/+download/tpfand-%{version}.tar.gz
-Patch1:			tpfand-makefile.patch
-URL:			https://launchpad.net/tp-fan
-Group:			Hardware/Mobile
-License:		GNU General Public License version 3 (GPL v3)
-BuildArch:		noarch
-BuildRequires:	python2-devel
+Name:                   tpfand
+Version:                0.94
+Release:                11.1
+Summary:                ThinkPad Fan Control Daemon
+Source:                 https://launchpad.net/tp-fan/tpfand/%{version}/+download/tpfand-%{version}.tar.gz
+Patch1:                 tpfand-makefile.patch
+URL:                    https://launchpad.net/tp-fan
+Group:                  Hardware/Mobile
+License:                GNU General Public License version 3 (GPL v3)
+BuildArch:              noarch
+BuildRequires:  python2-devel
 BuildRequires:  perl-podlators
-Requires:		dbus-python pygobject2
+Requires:               dbus-python pygobject2
 
 %description
 tpfand controls the system fan of ThinkPad notebooks based on specified
@@ -25,7 +25,7 @@ Authors:
 
 %prep
 %setup -q
-%patch1
+%patch 1
 sed -i 's|temperature in.*C|temperature in Celsius|' man/tpfand.pod
 
 %build
@@ -39,9 +39,6 @@ make DESTDIR=$RPM_BUILD_ROOT install PY_SITEDIR="%{python2_sitelib}" MANDIR="%{_
 %__ln_s ../../etc/init.d/tpfand "$RPM_BUILD_ROOT/usr/sbin/rctpfand"
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_sbindir}/* %{buildroot}%{python2_sitelib}/tpfand/*.py
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc COPYING README

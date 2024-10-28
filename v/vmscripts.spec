@@ -41,9 +41,6 @@ install -m 0644 vboxlive.cfg $RPM_BUILD_ROOT%{_sysconfdir}
 ln $RPM_BUILD_ROOT%{_bindir}/vm-bridge $RPM_BUILD_ROOT%{_bindir}/nat2bridge
 ln $RPM_BUILD_ROOT%{_bindir}/vm-bridge $RPM_BUILD_ROOT%{_bindir}/bridge2nat
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING
 %config (noreplace) %{_sysconfdir}/vm-create.cfg
@@ -61,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 * Thu Oct 6 2011 Agnelo de la Crotche <agnelo@unixversal.com> 1.1
 - updated vboxlive to version 2.0
 - fixewd minor bugs in popup and vm-create
-* Thu Sep 20 2011 Agnelo de la Crotche <agnelo@unixversal.com> 1.0.1
+* Tue Sep 20 2011 Agnelo de la Crotche <agnelo@unixversal.com> 1.0.1
 - Fixed bug in vm listing on Mandriva and added function listvm
 * Mon Sep 19 2011 Agnelo de la Crotche <agnelo@unixversal.com> 1.0
 - initial build

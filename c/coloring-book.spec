@@ -24,10 +24,10 @@ A simple coloring (or colouring) book program written in Python w/ Pygame.
 
 %prep
 %setup -q -n cb -a3
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
 
 %build
 
@@ -47,9 +47,6 @@ install -D -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desk
 tar xjf %{SOURCE2} --strip-components=1 -C $RPM_BUILD_ROOT%{_datadir}/pixmaps
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/coloring-book

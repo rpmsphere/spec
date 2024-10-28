@@ -37,9 +37,6 @@ rm $RPM_BUILD_ROOT%{_datadir}/icons/Woodbuntu/icon-theme.cache
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/emerald/themes/%{theme_name}
 tar xf emerald/Classtech.emerald -C $RPM_BUILD_ROOT%{_datadir}/emerald/themes/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc *.png *.txt
 %{_datadir}/themes/%{theme_name}

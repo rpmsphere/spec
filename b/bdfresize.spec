@@ -6,7 +6,7 @@ License: GPL
 Group: System/X11
 URL: https://openlab.ring.gr.jp/efont/dist/tools/bdfresize/
 Source0: https://openlab.ring.gr.jp/efont/dist/tools/bdfresize/%name-%version.tar.gz
-Patch: https://developer.momonga-linux.org/viewcvs/*checkout*/trunk/pkgs/bdfresize/bdfresize-1.5-gcc34.patch
+Patch0: https://developer.momonga-linux.org/viewcvs/*checkout*/trunk/pkgs/bdfresize/bdfresize-1.5-gcc34.patch
 
 %description
 Bdfresize is a command for magnifying or shrinking fonts which are
@@ -20,7 +20,7 @@ Authors:
 
 %prep
 %setup -q
-%patch -p1 -b .gcc34
+%patch 0 -p1 -b .gcc34
 
 %build
 %__rm -f config.cache
@@ -30,9 +30,6 @@ CFLAGS="%{optflags}" %{configure}
 %install
 %__rm -rf $RPM_BUILD_ROOT
 %__make DESTDIR=%{buildroot} install
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog INSTALL NEWS README

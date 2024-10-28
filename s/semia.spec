@@ -11,6 +11,7 @@ Group: Applications/Engineering
 BuildRequires: libX11-devel
 BuildRequires: xview-devel
 BuildRequires: wfdb-devel
+BuildRequires: libnsl2-devel
 
 %description
 SEMIA is a tool for viewing time series of diagnostic and morphology parameters
@@ -31,9 +32,6 @@ rm -rf %{buildroot}
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 install -d %{buildroot}%{_datadir}/%{name}
 install -m644 %{name}.opt %{name}.hlp %{buildroot}%{_datadir}/%{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc HEADER.html

@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
-Summary:	A simple Python interface to GLPK
-Name:		python-glpk
-Version:	0.4.43
-Release:	6.1
-Epoch:		1
+Summary:        A simple Python interface to GLPK
+Name:           python-glpk
+Version:        0.4.43
+Release:        6.1
+Epoch:          1
 Source0:    https://www.dcc.fc.up.pt/~jpp/code/python-glpk/%{name}-%{version}.tar.gz
-Patch0:		%name.Makefile.patch
-License:	GPLv2
-Group:		Development/Python
-URL:		https://www.dcc.fc.up.pt/~jpp/code/python-glpk/
-BuildRequires:	python-devel
-BuildRequires:	glpk-devel, swig
+Patch0:         %name.Makefile.patch
+License:        GPLv2
+Group:          Development/Python
+URL:            https://www.dcc.fc.up.pt/~jpp/code/python-glpk/
+BuildRequires:  python-devel
+BuildRequires:  glpk-devel, swig
 BuildRequires:  atlas
 
 %description
@@ -20,7 +20,7 @@ producing the API. Notice that the glpk's C keyword 'in' is renamed
 
 %prep
 %setup -q
-%patch0 -p1 
+%patch 0 -p1 
 
 %build
 make -C src all

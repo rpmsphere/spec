@@ -18,7 +18,7 @@ ConkyWizard is a wizard to set up Conky on Linux.
 
 %prep
 %setup -q -n ConkyWizard
-%patch1
+%patch 1
 
 pushd resources
 %__rm translations
@@ -34,9 +34,6 @@ qmake-qt4
 %__install -D -m0755 ConkyWizard %{buildroot}%{_bindir}/%{name}
 %__install -D -m0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 %__install -D -m0644 resources/graphics/Logo.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}

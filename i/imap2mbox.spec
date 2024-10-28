@@ -42,9 +42,6 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_libexecdir}/%{n
 %{_bindir}/%{name}
 %{_libexecdir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5.0
 - Rebuilt for Fedora

@@ -1,13 +1,13 @@
-Summary:	Hardware Control System for Computers
-Name:		jupiter
-Version:	0.1.11
-Release:	5.1
-License:	GPL
-Group:		X11/Applications
-Source0:	%{name}_%{version}.tar.gz
-URL:		https://sourceforge.net/projects/jupiter/
-Requires:	coreutils, gnome-python2-gnome, xorg-x11-apps, rfkill
-BuildArch:	noarch
+Summary:        Hardware Control System for Computers
+Name:           jupiter
+Version:        0.1.11
+Release:        5.1
+License:        GPL
+Group:          X11/Applications
+Source0:        %{name}_%{version}.tar.gz
+URL:            https://sourceforge.net/projects/jupiter/
+Requires:       coreutils, gnome-python2-gnome, xorg-x11-apps, rfkill
+BuildArch:      noarch
 
 %description
 Simple, easy to use hardware and power management applet.
@@ -38,9 +38,6 @@ install -m 755 usr/bin/jupiter $RPM_BUILD_ROOT/usr/bin/
 sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 if [ ! "$(grep jupiter /etc/group)" ]; then

@@ -26,9 +26,9 @@ and edit images, text and binary files...
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p0
-%patch2 -p0
+%patch 0 -p0
+%patch 1 -p0
+%patch 2 -p0
 sed -i 's|abs(|fabs(|' src/bookmark.cxx src/plugins/five/fivegui.cxx src/plugins/aqua/aquagui.cxx
 sed -i 's|<png\.h>|<libpng12/png.h>|' src/lib/image2/sdl_image/IMG_png.c
 
@@ -44,9 +44,6 @@ rm -fr %{buildroot}
 make DESTDIR=%{buildroot} install 
 rm -fr %{buildroot}%{_datadir}/doc
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS INSTALL INSTALL-bin.xnc LICENSE  release.news 

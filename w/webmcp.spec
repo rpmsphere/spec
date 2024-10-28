@@ -2,17 +2,17 @@
 %undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
 
-Name:		webmcp
-Version:	2.2.1
-Release:	1
-Summary:	Web application framework in Lua
-License:	MIT/X11
-Group:		Productivity/Networking
-Source0:	http://www.public-software-group.org/pub/projects/%{name}/v%{version}/%{name}-v%{version}.tar.gz
-#BuildRequires:	libpq-devel
+Name:           webmcp
+Version:        2.2.1
+Release:        1
+Summary:        Web application framework in Lua
+License:        MIT/X11
+Group:          Productivity/Networking
+Source0:        http://www.public-software-group.org/pub/projects/%{name}/v%{version}/%{name}-v%{version}.tar.gz
+#BuildRequires: libpq-devel
 BuildRequires:  postgresql-server-devel
-BuildRequires:	lua-devel
-URL:		http://www.public-software-group.org/webmcp
+BuildRequires:  lua-devel
+URL:            http://www.public-software-group.org/webmcp
 
 %description
 WebMCP is web application framework written in Lua and C. Instead of using
@@ -36,9 +36,6 @@ make
 %__rm -rf %{buildroot}
 %__mkdir_p %{buildroot}/opt/%{name}
 %__cp -a framework/* %{buildroot}/opt/%{name}
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc LICENSE

@@ -9,6 +9,7 @@ URL: https://linuxbrit.co.uk/giblib/
 Source: https://linuxbrit.co.uk/downloads/giblib-%{version}.tar.gz
 Patch0: giblib-1.2.4-multilib.patch
 BuildRequires: imlib2-devel
+Source1:       imlib2-config
 
 %description
 giblib is a utility library used by many of the applications from
@@ -29,9 +30,11 @@ Install this package if you intend to develop using the giblib library.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
+cp %{SOURCE1} .
 
 %build
+export PATH=$PATH:.
 %configure --disable-static
 make %{?_smp_mflags}
 

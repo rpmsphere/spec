@@ -1,14 +1,14 @@
-Name:		tke
-Version:	3.6
-Release:	1
-Summary:	Advanced Programmer's Editor
-License:	GPLv2+
-URL:		https://tke.sourceforge.net/
-Group:		Editor
-Source0:	https://jaist.dl.sourceforge.net/project/%{name}/%{version}/%{name}-%{version}.tgz
+Name:           tke
+Version:        3.6
+Release:        1
+Summary:        Advanced Programmer's Editor
+License:        GPLv2+
+URL:            https://tke.sourceforge.net/
+Group:          Editor
+Source0:        https://jaist.dl.sourceforge.net/project/%{name}/%{version}/%{name}-%{version}.tgz
 Source1:        %{name}.desktop
-BuildArch:	noarch
-Requires:	tcl tclx tcllib tk tklib tkdnd expect
+BuildArch:      noarch
+Requires:       tcl tclx tcllib tk tklib tkdnd expect
 
 %description
 TKE is a full-featured source code editor written in Tcl/Tk with a minimalist UI.

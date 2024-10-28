@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/tcrc-bodyig
+%define fontdir %{_datadir}/fonts/tcrc-bodyig
 
 Name:          tcrc-bodyig-fonts
 Version:       2010

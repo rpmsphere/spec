@@ -8,7 +8,7 @@ License:        GPL v3
 URL:            https://launchpad.net/photostory
 Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
-Requires:	pygtk2, python2-gstreamer
+Requires:       pygtk2, python2-gstreamer
 
 %description
 Photostory lets you use your webcam to take a photo of yourself every day,
@@ -26,9 +26,6 @@ rm -rf $RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
  
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/photostory
 %{_bindir}/photostory_reminder

@@ -7,10 +7,10 @@ URL: https://sourceforge.net/projects/filler
 Group: Amusements/Games
 Source: https://download.sourceforge.net/filler/%{name}-%{version}.tgz
 Patch0: filler.Filler.java-patch
-Patch1:	filler.Makefile-patch
-BuildRequires:	java
-Requires:	java
-BuildArch:	noarch
+Patch1: filler.Makefile-patch
+BuildRequires:  java
+Requires:       java
+BuildArch:      noarch
 
 %description
 Filler is a graphical games where you occupy coloured hexes by changing
@@ -18,8 +18,8 @@ colours.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p0
-%patch1 -p0
+%patch 0 -p0
+%patch 1 -p0
 
 %build
 make
@@ -55,9 +55,6 @@ java -jar %{name}.jar
 EOF
 
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/*
 %{_datadir}/%{name}/*
@@ -67,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Fri Mar 02 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.01
 - Rebuilt for Fedora
-* Fri Dec 31 2008 Shadow John <john@ossii.com.tw>
+* Wed Dec 31 2008 Shadow John <john@ossii.com.tw>
 - Rebuild for M6(OSSII)
 * Wed Dec 06 2000 John Farrell
 - Passed FILLERPATH and DEST parameters to Makefile

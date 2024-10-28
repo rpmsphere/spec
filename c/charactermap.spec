@@ -40,9 +40,6 @@ Encoding=UTF-8
 Categories=Application;Utility;
 EOF
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %{_bindir}/*
 %{_datadir}/applications/*

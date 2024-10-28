@@ -1,25 +1,25 @@
-Name:		audio-recorder
-Version:	2.2.3
-Release:	1
-Summary:	Audio recorder application for the GNOME 3
-License:	GPLv3+
-Group:		Sound/Utilities
-URL:		https://launchpad.net/audio-recorder
-Source0:	%{name}_%{version}.tar.xz
-Patch0:		audio-recorder-correct-desktop-menu.patch
-BuildRequires:	intltool
-BuildRequires:	pkgconfig(appindicator3-0.1)
-BuildRequires:	pkgconfig(dbus-1)
-BuildRequires:	pkgconfig(dbus-glib-1)
-BuildRequires:	pkgconfig(dconf)
-BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(gstreamer-1.0)
-BuildRequires:	pkgconfig(gstreamer-pbutils-1.0)
-BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(libpulse)
-Requires:	gstreamer1-plugins-bad-free
-Requires:	gstreamer1-plugins-base
-Requires:	gstreamer1-plugins-good
+Name:           audio-recorder
+Version:        2.2.3
+Release:        1
+Summary:        Audio recorder application for the GNOME 3
+License:        GPLv3+
+Group:          Sound/Utilities
+URL:            https://launchpad.net/audio-recorder
+Source0:        %{name}_%{version}.tar.xz
+Patch0:         audio-recorder-correct-desktop-menu.patch
+BuildRequires:  intltool
+BuildRequires:  pkgconfig(appindicator3-0.1)
+BuildRequires:  pkgconfig(dbus-1)
+BuildRequires:  pkgconfig(dbus-glib-1)
+BuildRequires:  pkgconfig(dconf)
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gstreamer-1.0)
+BuildRequires:  pkgconfig(gstreamer-pbutils-1.0)
+BuildRequires:  pkgconfig(gtk+-3.0)
+BuildRequires:  pkgconfig(libpulse)
+Requires:       gstreamer1-plugins-bad-free
+Requires:       gstreamer1-plugins-base
+Requires:       gstreamer1-plugins-good
 
 %description
 Audio-recorder allows you to record your favourite music or audio to
@@ -29,7 +29,7 @@ your loudspeakers you can record it.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure

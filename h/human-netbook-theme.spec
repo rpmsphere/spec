@@ -28,9 +28,6 @@ install -m644 -D build/share/themes/Human-Murrine-Netbook/index.theme %{buildroo
 sed -i '$a BackgroundImage=/usr/share/backgrounds/ubuntu/contest/natty.xml' %{buildroot}%{_datadir}/themes/Human-Murrine-Netbook/index.theme
 cp -a Human-Murrine-Netbook %{buildroot}%{_datadir}/themes
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc ChangeLog COPYING AUTHORS
 %{_datadir}/locale/*/LC_MESSAGES/human-netbook-theme.mo

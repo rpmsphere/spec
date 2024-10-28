@@ -1,25 +1,25 @@
-Summary:	A program to use the special keys on internet/multimedia keyboards
-Name:		hotkeys
-Version:	0.5.7.1
-Release:	32.1
-License:	GPL
-Group:		System/Kernel and hardware
-URL:		https://ypwong.org/hotkeys/
-Source0:	https://alioth.debian.org/projects/%{name}/%{name}_%{version}.tar.bz2
-Source2:	hotkeys-defs.zip
-Source1:	%{name}.init
-Patch1:		hotkeys-0.5.7.1_mutefix.patch
-Patch2:		hotkeys-0.5.7.1-db4.patch
-Patch3:		hotkeys-0.5.7.1-gcc43.diff
-Patch4:		hotkeys-0.5.7.1-includedir.patch
+Summary:        A program to use the special keys on internet/multimedia keyboards
+Name:           hotkeys
+Version:        0.5.7.1
+Release:        32.1
+License:        GPL
+Group:          System/Kernel and hardware
+URL:            https://ypwong.org/hotkeys/
+Source0:        https://alioth.debian.org/projects/%{name}/%{name}_%{version}.tar.bz2
+Source2:        hotkeys-defs.zip
+Source1:        %{name}.init
+Patch1:         hotkeys-0.5.7.1_mutefix.patch
+Patch2:         hotkeys-0.5.7.1-db4.patch
+Patch3:         hotkeys-0.5.7.1-gcc43.diff
+Patch4:         hotkeys-0.5.7.1-includedir.patch
 BuildRequires:  libpng-devel
 BuildRequires:  libdb-devel
-BuildRequires:	libxml2-devel
-BuildRequires:	xosd-devel
-BuildRequires:	gtk2-devel
-BuildRequires:	gettext-devel
-BuildRequires:	libxkbfile-devel
-BuildRequires:	libXmu-devel
+BuildRequires:  libxml2-devel
+BuildRequires:  xosd-devel
+BuildRequires:  gtk2-devel
+BuildRequires:  gettext-devel
+BuildRequires:  libxkbfile-devel
+BuildRequires:  libXmu-devel
 Patch5: %{name}_%{version}.1-shadow.patch
 Patch0: %{name}_%{version}.1-gohome.patch
 
@@ -34,12 +34,12 @@ hotkeys to launch any programs you want.
 
 %prep
 %setup -q
-%patch0 -p1 -b .gohome
-%patch1 -p0
-%patch2 -p1
-%patch3 -p0
-%patch4 -p0
-%patch5 -p1 -b .shadow
+%patch 0 -p1 -b .gohome
+%patch 1 -p0
+%patch 2 -p1
+%patch 3 -p0
+%patch 4 -p0
+%patch 5 -p1 -b .shadow
 
 %build
 autoreconf -fi
@@ -89,9 +89,6 @@ install -m 755 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/X11/xinit/xinitrc.d/%{na
 
 unzip %{SOURCE2} -d $RPM_BUILD_ROOT/%{_datadir}/%{name}
 chmod 644 AUTHORS BUGS COPYING INSTALL TODO def/sample.xml
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS BUGS COPYING INSTALL TODO def/sample.xml README.mdk

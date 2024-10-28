@@ -52,9 +52,6 @@ cd ../dot
   --root=$RPM_BUILD_ROOT \
   --prefix=%{_prefix}
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %{python_sitelib}/*
 

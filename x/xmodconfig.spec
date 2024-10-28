@@ -44,9 +44,6 @@ popd
 
 %__rm -rf "$RPM_BUILD_ROOT%{_datadir}/doc"
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files -f "%{name}.lang"
 %doc COPYING README doc/*
 %{_bindir}/xmodconfig

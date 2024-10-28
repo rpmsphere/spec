@@ -1,25 +1,25 @@
 %undefine _debugsource_packages
 
 Name:           zmqpp
-Version:	4.2.0
-Release:	1
-License:	MIT
-Summary:	0mq/Zeromq Highlevel C++ bindings
-URL:		https://zeromq.github.io/zmqpp/
-Group:		System/Libraries
-Source:		%{name}-%{version}.tar.gz
-BuildRequires:	boost-devel
-BuildRequires:	gcc-c++
-BuildRequires:	zeromq-devel
+Version:        4.2.0
+Release:        1
+License:        MIT
+Summary:        0mq/Zeromq Highlevel C++ bindings
+URL:            https://zeromq.github.io/zmqpp/
+Group:          System/Libraries
+Source:         %{name}-%{version}.tar.gz
+BuildRequires:  boost-devel
+BuildRequires:  gcc-c++
+BuildRequires:  zeromq-devel
 
 %description
 This C++ binding for 0mq/zmq is a 'high-level' library that 
 hides most of the c-style interface core 0mq provides. 
 
 %package devel
-Summary:	Development headers for zmqpp
-Group:	Development/Libraries/C and C++
-Requires:	%{name} = %{version}
+Summary:        Development headers for zmqpp
+Group:  Development/Libraries/C and C++
+Requires:       %{name} = %{version}
 
 %description devel
 This C++ binding for 0mq/zmq is a 'high-level' library that

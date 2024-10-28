@@ -32,9 +32,6 @@ install -c -m 644 \
 %files
 %{_includedir}/cttl
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.02
 - Rebuilt for Fedora

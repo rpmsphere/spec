@@ -7,7 +7,7 @@ Release: 9.1
 License: GPL
 Group: X11/Utilities
 Source: xwhirl-%{version}.src.tar.gz
-Patch: xwhirl-1.1-bindir-install.patch
+Patch0: xwhirl-1.1-bindir-install.patch
 URL: https://www.eleves.ens.fr/home/horvai/xwhirl
 BuildRequires: imake
 BuildRequires: libX11-devel
@@ -20,7 +20,7 @@ is much faster then xscreensaver/hacks/distort.
 
 %prep
 %setup -q
-%patch -p1
+%patch 0 -p1
 
 %build
 xmkmf

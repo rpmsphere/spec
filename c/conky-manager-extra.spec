@@ -21,9 +21,6 @@ Extra themes for conky-manager.
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/conky-manager/themepacks
 cp %{SOURCE0} %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/conky-manager/themepacks
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/conky-manager/themepacks/*
 

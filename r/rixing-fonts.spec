@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/rixing
+%define fontdir %{_datadir}/fonts/rixing
 
 Summary: RiXing TrueType Fonts
 Name: rixing-fonts

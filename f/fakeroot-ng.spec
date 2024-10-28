@@ -38,9 +38,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_bindir}/*
 %{_mandir}/man1/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Fri Jan 03 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18
 - Rebuilt for Fedora

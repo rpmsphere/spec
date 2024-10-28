@@ -5,9 +5,9 @@ License:        Other uncritical OpenSource License
 Group:          Amusements/Games/Other
 Requires:       scummvm timidity++
 Version:        20040315
-Release:        1
+Release:        1.bin
 Summary:        Flight of the Amazon Queen (Adventure Game)
-Source:         FOTAQ_Floppy.zip
+Source0:        FOTAQ_Floppy.zip
 Source1:        FOTAQ
 Source2:        %name.desktop
 Source3:        %name.info
@@ -35,7 +35,8 @@ Authors:
     Steve Stamatiadis (Krome Studios, Australia)
 
 %prep
-unzip -u $RPM_SOURCE_DIR/FOTAQ_Floppy.zip
+%setup -q -n FOTAQ_Floppy
+#unzip -u $RPM_SOURCE_DIR/FOTAQ_Floppy.zip
 
 %build
 
@@ -44,29 +45,17 @@ unzip -u $RPM_SOURCE_DIR/FOTAQ_Floppy.zip
 %__mkdir_p $RPM_BUILD_ROOT/%{_bindir}
 %__mkdir_p $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ
 %__mkdir_p $RPM_BUILD_ROOT/%{_datadir}/doc/packages/FOTAQ
-install -m 644 FOTAQ_Floppy/queen.1 $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ
-install -m 644 $RPM_SOURCE_DIR/queen.tbl $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ
-install -m 644 $RPM_SOURCE_DIR/%name.info $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ/info
-install -m 644 FOTAQ_Floppy/readme.txt $RPM_BUILD_ROOT/%{_datadir}/doc/packages/FOTAQ
-install -m 755 $RPM_SOURCE_DIR/FOTAQ $RPM_BUILD_ROOT/%{_bindir}
+install -m 644 queen.1 $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ
+install -m 644 %{SOURCE5} $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ
+install -m 644 %{SOURCE3} $RPM_BUILD_ROOT/%{_datadir}/games/FOTAQ/info
+install -m 644 readme.txt $RPM_BUILD_ROOT/%{_datadir}/doc/packages/FOTAQ
+install -m 755 %{SOURCE1} $RPM_BUILD_ROOT/%{_bindir}
 %__mkdir_p $RPM_BUILD_ROOT/%{_datadir}/pixmaps/
-install -m 644 $RPM_SOURCE_DIR/%name.png $RPM_BUILD_ROOT/%{_datadir}/pixmaps
+install -m 644 %{SOURCE4} $RPM_BUILD_ROOT/%{_datadir}/pixmaps
 #%suse_update_desktop_file -i %name Game X-SuSE-AdventureGame
 %__rm -f $RPM_BUILD_ROOT/%{_datadir}/pixmaps/%name
 %__mkdir_p %{buildroot}%{_datadir}/applications/
 %__cp %{SOURCE2} %{buildroot}%{_datadir}/applications/
-
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
-%post
-update-mime-database %{_datadir}/mime &> /dev/null
-update-desktop-database %{_datadir}/applications &> /dev/null
-
-%postun
-update-mime-database %{_datadir}/mime &> /dev/null
-update-desktop-database %{_datadir}/applications &> /dev/null
 
 %files
 %doc %{_datadir}/doc/packages/FOTAQ/

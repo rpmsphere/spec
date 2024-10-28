@@ -1,23 +1,23 @@
 %global __os_install_post %{nil}
 %undefine _debugsource_packages
 
-Name:		gtkqq
-Version:	0.1
-Release:	11.1
-Summary:	A Gtk QQ client
-Group:		Productivity/Networking/Instant Messenger
-License:	GPL-3.0+
-URL:		https://github.com/kernelhcy/gtkqq
-Source0:	%{name}-%{version}.tar.bz2
-Patch1:		override_warnings_as_errors.patch
+Name:           gtkqq
+Version:        0.1
+Release:        11.1
+Summary:        A Gtk QQ client
+Group:          Productivity/Networking/Instant Messenger
+License:        GPL-3.0+
+URL:            https://github.com/kernelhcy/gtkqq
+Source0:        %{name}-%{version}.tar.bz2
+Patch1:         override_warnings_as_errors.patch
 BuildRequires:  libpng-devel
-BuildRequires:	pkgconfig
-BuildRequires:	zlib-devel
-BuildRequires:	glib2-devel
-BuildRequires:	gtk2-devel >= 2.24.0
-BuildRequires:	sqlite-devel
-BuildRequires:	gstreamer1-devel
-BuildRequires:	desktop-file-utils
+BuildRequires:  pkgconfig
+BuildRequires:  zlib-devel
+BuildRequires:  glib2-devel
+BuildRequires:  gtk2-devel >= 2.24.0
+BuildRequires:  sqlite-devel
+BuildRequires:  gstreamer1-devel
+BuildRequires:  desktop-file-utils
 
 %description
 GtkQQ is a QQ client. It is written using gtk and based on the webqq protocol.
@@ -31,7 +31,7 @@ broswer.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 
 %build
 %configure --prefix=%{_prefix} --libdir=%{_libdir}
@@ -53,9 +53,6 @@ rm -f $RPM_BUILD_ROOT/%{_libdir}/libwebqq.a
 %{_datadir}/applications/gtkqq.desktop
 %{_datadir}/pixmaps/gtkqq.png
 %{_libdir}/libwebqq.so.*
-
-%clean
-rm -f -r $RPM_BUILD_ROOT
 
 %changelog
 * Thu Mar 15 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1

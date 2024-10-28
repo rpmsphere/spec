@@ -27,9 +27,6 @@ export LDFLAGS="-Wl,--as-needed"
 %{__rm} -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/pktstat
 %doc %{_mandir}/man1/*

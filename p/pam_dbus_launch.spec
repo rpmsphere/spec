@@ -24,9 +24,6 @@ make
 %install
 install -D pam_dbus_launch.so $RPM_BUILD_ROOT/%{_lib}/security/pam_dbus_launch.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 /%{_lib}/security/pam_dbus_launch.so

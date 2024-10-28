@@ -2,18 +2,18 @@
 %define gemname fastercsv
 %define geminstdir %{gemdir}/gems/%{gemname}-%{version}
 
-Name:		rubygem-%{gemname}
-Summary: 	Faster, smaller and cleaner replacement to standard CSV library
-Version: 	1.5.5
-Release: 	15.1
-Group: 		Development/Languages
-License: 	GPLv2+ or Ruby
+Name:           rubygem-%{gemname}
+Summary:        Faster, smaller and cleaner replacement to standard CSV library
+Version:        1.5.5
+Release:        15.1
+Group:          Development/Languages
+License:        GPLv2+ or Ruby
 URL:        https://%{gemname}.rubyforge.org/
 Source0:    https://rubygems.org/downloads/%{gemname}-%{version}.gem
-Requires: 	rubygems
-BuildRequires: 	rubypick ruby-devel rubygems
-BuildArch: 	noarch
-Provides: 	rubygem(%{gemname}) = %{version}
+Requires:       rubygems
+BuildRequires:  rubypick ruby-devel rubygems
+BuildArch:      noarch
+Provides:       rubygem(%{gemname}) = %{version}
 
 %description
 FasterCSV is intended as a complete replacement to the CSV standard library.
@@ -35,9 +35,6 @@ done
 
 # Remove zero-length file
 rm -rf %{buildroot}%{geminstdir}/%{gemname}-%{version}.gem
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{gemdir}/gems/%{gemname}-%{version}

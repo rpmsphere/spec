@@ -1,5 +1,5 @@
 Name:           nimuh
-Url:            https://www.nimuh.com/
+URL:            https://www.nimuh.com/
 License:        CC-by-nc-sa 2.5 Spain
 Group:          Amusements/Games/Logic
 Version:        1.02
@@ -20,7 +20,7 @@ ansalusian locations.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 
 %build
 sed -i 's/ GL\/glu.h//' configure.ac
@@ -33,9 +33,6 @@ autoreconf -ifv
 %{__make} DESTDIR="${RPM_BUILD_ROOT}" install
 %{__install} -p -D -m 0644 "%{SOURCE1}" "${RPM_BUILD_ROOT}%{_datadir}/pixmaps/%{name}.png"
 %{__install} -p -D -m 0644 "%{SOURCE2}" "${RPM_BUILD_ROOT}%{_datadir}/applications/%{name}.desktop"
-
-%clean
-%{__rm} -rf "${RPM_BUILD_ROOT}"
 
 %files
 %doc AUTHORS COPYING NEWS README

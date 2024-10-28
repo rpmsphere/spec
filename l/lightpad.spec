@@ -1,9 +1,9 @@
-Name:        	lightpad   
+Name:           lightpad   
 Version:        0.0.8
 Release:        1
 Summary:        LightPad Launcher
 License:        GPL
-Group:		Utilities/System
+Group:          Utilities/System
 URL:            https://github.com/libredeb/lightpad
 Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  meson
@@ -19,15 +19,15 @@ BuildRequires:  gtk3-devel
 BuildRequires:  python3
 BuildRequires:  python3-wheel
 BuildRequires:  python3-setuptools
-Requires:	glibc
-Requires:	cairo
-Requires:	gdk-pixbuf2
-Requires:	libgee
-Requires:	glib2
-Requires:	gnome-menus
-Requires:	gtk3
-Requires:	libwnck3
-Requires:   	xterm 
+Requires:       glibc
+Requires:       cairo
+Requires:       gdk-pixbuf2
+Requires:       libgee
+Requires:       glib2
+Requires:       gnome-menus
+Requires:       gtk3
+Requires:       libwnck3
+Requires:       xterm 
 
 %description
 LightPad is a lightweight, simple and powerful application launcher.

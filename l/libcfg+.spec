@@ -47,9 +47,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 # fixup strange shared library permissions
 chmod 755 $RPM_BUILD_ROOT%{_libdir}/*.so*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig

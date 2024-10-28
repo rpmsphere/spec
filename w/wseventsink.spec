@@ -30,9 +30,6 @@ make %{?jobs:-j%jobs}
 make DESTDIR=$RPM_BUILD_ROOT install
 %{__rm} -rf $RPM_BUILD_ROOT/%{_libdir}/*a
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/wseventsink
 %{_libdir}/libwseventlistener.so*

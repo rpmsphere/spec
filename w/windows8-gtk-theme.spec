@@ -8,7 +8,7 @@ License:        GPL
 Group:          User Interface/Desktops
 URL:            https://gnome-look.org/content/show.php?content=158721
 Source0:        https://gnome-look.org/CONTENT/content-files/158721-Windows8-gtk-%{version}.tar.gz
-BuildArch:	    noarch
+BuildArch:          noarch
 Requires:       win2-7-theme
 Requires:       win8-cursor-theme
 Requires:       win9-backgrounds
@@ -27,9 +27,6 @@ echo BackgroundImage=/usr/share/backgrounds/win9/color.png >> index.theme
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 cp -a * $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %{_datadir}/themes/%{theme_name}

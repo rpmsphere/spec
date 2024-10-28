@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Summary:	WPS brute force attack
-Name:		bully
-Version:	1.1git
-Release:	1
-License:	GPLv3+
-Group:		Networking/Other
-URL:		https://github.com/aanarchyy/bully
-Source0:	%{name}-master.zip
-BuildRequires:	libpcap-devel
-BuildRequires:	pkgconfig(openssl)
+Summary:        WPS brute force attack
+Name:           bully
+Version:        1.1git
+Release:        1
+License:        GPLv3+
+Group:          Networking/Other
+URL:            https://github.com/aanarchyy/bully
+Source0:        %{name}-master.zip
+BuildRequires:  libpcap-devel
+BuildRequires:  pkgconfig(openssl)
 
 %description
 Bully is a new implementation of the WPS brute force attack, written in C.

@@ -79,9 +79,6 @@ install -m 0644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/%{_fontdir}
 %doc COPYING HISTORY README
 %{_datadir}/fonts/%{_fontdir}/*.ttf
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
 - Rebuilt for Fedora

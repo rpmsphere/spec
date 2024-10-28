@@ -17,7 +17,7 @@ Merrily see PDFs without abusing your RAM.
 A Qt excersise pdf viewer which 
 features most basic features 
 found in most other viewers. 
-	
+        
 %prep
 %setup -q 
 sed -i 's|poppler/qt4|poppler/qt5|' %{name}.pro
@@ -32,9 +32,6 @@ qmake-qt4 prefix=%{_prefix} docspref=%{_defaultdocdir} cpdf.pro
 %install
 %__make INSTALL_ROOT=%{buildroot} install
 %__chmod +x %{buildroot}%{_datadir}/applications/cpdf.desktop
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %{_bindir}/cpdf

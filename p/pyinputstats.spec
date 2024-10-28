@@ -50,9 +50,6 @@ install -Dp -m 0644 %{name}.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %{_bindir}/%{name}

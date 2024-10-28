@@ -1,19 +1,19 @@
-Summary: 	Desktop for the Matchbox
-Name: 		matchbox-desktop
-Version: 	2.2
-Release: 	10.1
-URL: 		https://matchbox-project.org/
-License: 	GPLv2+
-Group: 		Graphical desktop/Other
-Source0: 	https://git.yoctoproject.org/cgit/cgit.cgi/matchbox-desktop-2/snapshot/matchbox-desktop-2-%{version}.tar.gz
-BuildRequires:	pkgconfig
-BuildRequires:	libmatchbox-devel
-BuildRequires:	startup-notification-devel
-BuildRequires:	gtk3-devel
-Requires:	matchbox-panel
-Requires:	matchbox-window-manager
-Requires:	matchbox-common
-Obsoletes:	matchbox-desktop-devel < %{version}-%{release}
+Summary:        Desktop for the Matchbox
+Name:           matchbox-desktop
+Version:        2.2
+Release:        10.1
+URL:            https://matchbox-project.org/
+License:        GPLv2+
+Group:          Graphical desktop/Other
+Source0:        https://git.yoctoproject.org/cgit/cgit.cgi/matchbox-desktop-2/snapshot/matchbox-desktop-2-%{version}.tar.gz
+BuildRequires:  pkgconfig
+BuildRequires:  libmatchbox-devel
+BuildRequires:  startup-notification-devel
+BuildRequires:  gtk3-devel
+Requires:       matchbox-panel
+Requires:       matchbox-window-manager
+Requires:       matchbox-common
+Obsoletes:      matchbox-desktop-devel < %{version}-%{release}
 
 %description
 Matchbox is a base environment for the X Window System running on non-desktop
@@ -34,9 +34,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS README ChangeLog

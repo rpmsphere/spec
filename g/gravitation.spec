@@ -3,12 +3,12 @@
 Name:           gravitation
 Version:        3
 Release:        8.1
-Summary:       	A video game about mania, melancholia, and the creative process
+Summary:        A video game about mania, melancholia, and the creative process
 Group:          Amusements/Games/Other
 License:        SUSE-Public-Domain
 URL:            https://hcsoftware.sourceforge.net/gravitation/
 Source0:        https://sourceforge.net/projects/hcsoftware/files/%{_name}_v%{version}_UnixSource.tar.gz
-Patch0:			Gravitation_v3_UnixSource-lpthread_issue.patch
+Patch0:                 Gravitation_v3_UnixSource-lpthread_issue.patch
 BuildRequires:  SDL-devel, desktop-file-utils
 
 %description
@@ -17,7 +17,7 @@ and the creative process. It is the fourth game created by Jason Rohrer.
 
 %prep
 %setup -q -n %{_name}_v%{version}_UnixSource
-%patch0 -p1 -b .lpthread_issue
+%patch 0 -p1 -b .lpthread_issue
 
 %build
 cd game5/gameSource
@@ -47,9 +47,6 @@ echo -e '#!/bin/bash\ncd %{_datadir}/%{name}\n%{_bindir}/Gravitation-exe\nexit' 
 # Man pages (added by packager, not present in source)
 #__cp %_sourcedir/Gravitation.6 %buildroot%{_mandir}/man6/gravitation.6
 #__cp %_sourcedir/Gravitation-exe.6 %buildroot%{_mandir}/man6/Gravitation-exe.6
-
-%clean
-rm -rf %buildroot
 
 %files
 %doc Readme.txt

@@ -33,9 +33,9 @@ Requires: perl(:MODULE_COMPAT_%(eval "$(perl -V:version)"; echo $version))
 
 %prep
 %setup -q
-%patch0 -p1 -b .makefile
-%patch1 -p1 -b .fixmode
-%patch2 -p1 -b .man
+%patch 0 -p1 -b .makefile
+%patch 1 -p1 -b .fixmode
+%patch 2 -p1 -b .man
 
 %build
 %set_build_flags

@@ -30,8 +30,8 @@ the sRGB standard gamma.
 
 %prep
 %setup -q
-%patch0
-%patch1
+%patch 0
+%patch 1
 
 %build
 make %{?_smp_mflags}

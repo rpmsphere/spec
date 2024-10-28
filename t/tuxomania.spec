@@ -25,8 +25,8 @@ Authors:
 
 %prep
 %setup -q -n %{name}-%{version}-src
-%patch0 -p1
-%patch1
+%patch 0 -p1
+%patch 1
 dos2unix doc/README-SDL*.txt
 
 %build
@@ -37,9 +37,6 @@ make PREFIX="%{_prefix}" DESTDIR="%{buildroot}" install
 # Use shared Vera font instead of the bundled one
 ln -sf %{_datadir}/fonts/bitstream-vera/Vera.ttf %{buildroot}/%{_datadir}/%{name}/fonts/
 mv %{buildroot}/%{_datadir}/doc/packages/%{name} %{buildroot}/%{_datadir}/doc/%{name}-%{version}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

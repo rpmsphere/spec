@@ -6,10 +6,10 @@ Group:          Applications/Education
 License:        GPL
 URL:            https://jbook.sourceforge.net/
 Source0:        https://nchc.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}-sources.tgz
-Source1:	%{name}.png
+Source1:        %{name}.png
 BuildRequires:  java-devel
-Requires:	jre
-BuildArch:	noarch
+Requires:       jre
+BuildArch:      noarch
 
 %description
 Project Gutenberg supplies a large number of free electronic texts. The JBook

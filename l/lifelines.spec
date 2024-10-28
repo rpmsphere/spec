@@ -22,9 +22,9 @@ Release:        136.1
 Summary:        A terminal based Genealogy Program
 License:        MIT
 Group:          Productivity/Scientific/Other
-Source:         https://download.sourceforge.net/lifelines/lifelines-3.0.62.tar.bz2
+Source0:        https://download.sourceforge.net/lifelines/lifelines-3.0.62.tar.bz2
 Source1:        sh.rellink
-Patch:          lifelines-3.0.62.dif
+Patch0:         lifelines-3.0.62.dif
 Patch1:         lifelines-3.0.59-funcptr.dif
 Patch2:         lifelines-3.0.60-array.dif
 %global         _sysconfdir /etc
@@ -47,9 +47,9 @@ Authors:
 
 %prep 
 %setup -q
-%patch  -p 0
-#patch1 -p 0
-%patch2 -p 0
+%patch 0 -p 0
+#patch 1 -p 0
+%patch 2 -p 0
 
 %build
 CFLAGS="$RPM_OPT_FLAGS -fno-strict-aliasing -Wno-format-security -pipe $(%{ncursesw_config} --cflags)"
@@ -57,18 +57,18 @@ CPPFLAGS="-D_GNU_SOURCE -D_XOPEN_CURSES"
 CC=gcc
 export CC CFLAGS CPPFLAGS
 autoreconf -fi
-./configure --prefix=%{_prefix} -exec-prefix=%{_prefix}	\
-	    --libexecdir=%{_libdir}		\
-	    --sysconfdir=%{_sysconfdir}		\
-	    --libdir=%{_libdir}			\
-	    --mandir=%{_mandir}			\
-	    --infodir=%{_infodir}		\
-	    --disable-rpath			\
-	    --with-gnu-ld			\
-	    --with-docs				\
-	    --without-included-gettex		\
-	    --with-libintl-prefix=%{_prefix}	\
-	    --with-included-gettext=%{_prefix}
+./configure --prefix=%{_prefix} -exec-prefix=%{_prefix} \
+            --libexecdir=%{_libdir}             \
+            --sysconfdir=%{_sysconfdir}         \
+            --libdir=%{_libdir}                 \
+            --mandir=%{_mandir}                 \
+            --infodir=%{_infodir}               \
+            --disable-rpath                     \
+            --with-gnu-ld                       \
+            --with-docs                         \
+            --without-included-gettex           \
+            --with-libintl-prefix=%{_prefix}    \
+            --with-included-gettext=%{_prefix}
 make
 #chmod 644 docs/*.1
 #rm -f docs/*.pdf
@@ -76,13 +76,13 @@ make -C docs/
 
 %install
 . %{S:1}
-make DESTDIR=%{buildroot}			\
-     docdir=%{_defaultdocdir}/lifelines/doc	\
-     pkgdatadir=%{_defaultdocdir}/lifelines/doc	\
+make DESTDIR=%{buildroot}                       \
+     docdir=%{_defaultdocdir}/lifelines/doc     \
+     pkgdatadir=%{_defaultdocdir}/lifelines/doc \
      install
-make -C docs/ DESTDIR=%{buildroot}		\
-     docdir=%{_defaultdocdir}/lifelines/doc	\
-     pkgdatadir=%{_defaultdocdir}/lifelines/doc	\
+make -C docs/ DESTDIR=%{buildroot}              \
+     docdir=%{_defaultdocdir}/lifelines/doc     \
+     pkgdatadir=%{_defaultdocdir}/lifelines/doc \
      install    
 mkdir -p %{buildroot}%{_mandir}/man1
 install -m 644 docs/*.1 %{buildroot}%{_mandir}/man1/

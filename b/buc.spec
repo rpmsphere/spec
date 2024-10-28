@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
-Name:		buc
-Version:	0.5.2
-Release:	1
-Summary:	Parser xml in C accompanied by a dynamic generation of interfaces in C++ with QT
-License:	GPLv2
-URL:		https://buc.billeragroup.net/
-Group:		Development/Tools
-Source0:	%{name}-%{version}_src_full.tar.gz
-Patch0:		%{name}-%{version}-gcc44.patch
-BuildRequires:	qt4-devel
+Name:           buc
+Version:        0.5.2
+Release:        1
+Summary:        Parser xml in C accompanied by a dynamic generation of interfaces in C++ with QT
+License:        GPLv2
+URL:            https://buc.billeragroup.net/
+Group:          Development/Tools
+Source0:        %{name}-%{version}_src_full.tar.gz
+Patch0:         %{name}-%{version}-gcc44.patch
+BuildRequires:  qt4-devel
 
 %description
 BUC - Just A Click - ( an XML parser in C accompanied by a dynamic
@@ -21,7 +21,7 @@ graphical interface to programs that can be performed by the command line.
 
 %prep
 %setup -n zip -q
-%patch0
+%patch 0
 sed -i '1i #include <unistd.h>' frmMain.cpp
 
 %build
@@ -68,9 +68,6 @@ update-desktop-database &> /dev/null ||:
 
 %postun
 update-desktop-database &> /dev/null ||:
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc bucd/usr/local/buc/LICENSE README-ita

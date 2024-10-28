@@ -1,15 +1,15 @@
-Name:		spek
-Version:	0.8.4
-Release:	1
-Group:		Sound/Utilities
-License:	GPLv3
-Summary:	Tool for audio spectrum analysis and visualization
-URL:		https://spek-project.org
-Source0:	https://spek.googlecode.com/files/%{name}-%{version}.tar.gz
-Patch0:		spek-0.8.4-ffmpeg-5.0.patch
-BuildRequires:	wxGTK3-devel
-BuildRequires:	ffmpeg-devel
-BuildRequires:	intltool
+Name:           spek
+Version:        0.8.4
+Release:        1
+Group:          Sound/Utilities
+License:        GPLv3
+Summary:        Tool for audio spectrum analysis and visualization
+URL:            https://spek-project.org
+Source0:        https://spek.googlecode.com/files/%{name}-%{version}.tar.gz
+Patch0:         spek-0.8.4-ffmpeg-5.0.patch
+BuildRequires:  wxGTK-devel
+BuildRequires:  ffmpeg-devel
+BuildRequires:  intltool
 
 %description
 Spek (IPA: /spɛk/, ‘bacon’ in Dutch) helps to analyse your audio files by showing
@@ -27,7 +27,7 @@ Features:
 
 %prep
 %setup -q
-%patch0 -p 1
+%patch 0 -p 1
 sed -i 's|-pthread|-pthread -fpermissive -I/usr/include/ffmpeg|' src/Makefile.am
 
 %build

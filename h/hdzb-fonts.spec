@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/hdzb
+%define fontdir %{_datadir}/fonts/hdzb
 
 Summary: Free chinese HDZB Fonts
 Name: hdzb-fonts
@@ -24,9 +24,6 @@ A small but nice collection of fonts from the HDZB collection.
 rm -rf %{buildroot}
 install -d %{buildroot}%{fontdir}
 install -m644 *.ttf %{buildroot}%{fontdir}
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /usr/bin/fc-cache 2> /dev/null

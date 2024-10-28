@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/dingyuan
+%define fontdir %{_datadir}/fonts/dingyuan
 
 Name:           dingyuan-fonts
 Version:        1.1.5.1411

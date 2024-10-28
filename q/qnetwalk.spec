@@ -9,8 +9,8 @@ Version:        1.4
 Release:        1
 URL:            https://qt.osdn.org.ua/qnetwalk.html
 Source0:        %{name}-%{version}.tar.gz
-Source1:	%{name}.desktop
-Source2:	%{name}.png
+Source1:        %{name}.desktop
+Source2:        %{name}.png
 
 %description
 This is a Qt-version of the popular NetWalk game for system administrators.
@@ -35,9 +35,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -m 0644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING ChangeLog README

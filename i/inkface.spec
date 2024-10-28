@@ -26,9 +26,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr/
 python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc apps docs tests utils
 %{python2_sitelib}/%{name}*

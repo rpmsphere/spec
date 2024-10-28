@@ -73,9 +73,6 @@ rm -rf $RPM_BUILD_ROOT
 #rm -fr samples/windows
 %{cmake_install}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CPLv1.0.txt CHANGES CONTRIBUTORS NOTICE readme.version
 %{_bindir}/*

@@ -42,9 +42,6 @@ install -m 644 src/dialsys.h $RPM_BUILD_ROOT%{_includedir}/dialsys.h
 ln -s libdial.so.2.0.1 $RPM_BUILD_ROOT%{_libdir}/libdial.so.2
 ln -s libdial.so.2 $RPM_BUILD_ROOT%{_libdir}/libdial.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING AUTHORS
 %{_libdir}/libdial.so*

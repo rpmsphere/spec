@@ -5,7 +5,7 @@ Release:         16.1
 License:         GPL
 Group:           Productivity/Networking/Remote Desktop
 Source:          %{name}-%{version}.tar.bz2
-Patch:           echovnc-1.1.2-gcc.patch
+Patch0:           echovnc-1.1.2-gcc.patch
 BuildRequires:   libpng-devel
 BuildRequires:   gcc-c++, libsigc++20-devel
 BuildRequires:   gtkmm24-devel >= 2.8.0
@@ -26,7 +26,7 @@ called echoServer.
 
 %prep
 %setup -q
-%patch -p1
+%patch 0 -p1
 sed -i '1i #include <unistd.h>' echoware/Globals.h echoware/ProxyConnect.cpp src/ConnectionItem.cpp
 
 %build
@@ -36,16 +36,13 @@ autoconf
 CFLAGS="$RPM_OPT_FLAGS -Wno-narrowing" \
 CXXFLAGS="$RPM_OPT_FLAGS -std=c++11 -Wno-narrowing" \
 %configure \
-	--bindir=%{_bindir} \
-	--sbindir=%{_sbindir}
+        --bindir=%{_bindir} \
+        --sbindir=%{_sbindir}
 
 %{__make} %{?jobs:-j%jobs}
 
 %install
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog COPYRIGHT LICENSE NEWS README TODO VERSION.txt

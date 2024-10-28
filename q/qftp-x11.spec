@@ -28,9 +28,6 @@ rm -rf $RPM_BUILD_ROOT
 %cmake_install
 mv %{buildroot}%{_bindir}/%{_name} %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING INSTALL
 %{_bindir}/%{name}

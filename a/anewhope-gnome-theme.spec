@@ -34,9 +34,6 @@ rm -f $RPM_BUILD_ROOT%{_datadir}/themes/A-New-Hope/customise.py
 rm -rf $RPM_BUILD_ROOT%{_datadir}/themes/A-New-Hope/RES
 tar xf EMERALD/%{theme_name}.emerald -C $RPM_BUILD_ROOT%{_datadir}/emerald/themes/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %{_datadir}/themes/%{theme_name}

@@ -1,11 +1,11 @@
-Summary: 	GNOME meta themes for the Smooth GTK themes
-Name: 		smooth-meta-themes
-Version: 	0.5.8
-Release: 	6.1
-License:	Public Domain
-Group: 		User Interface/Desktops
-BuildArch: 	noarch
-Requires:	smooth-gtk-themes
+Summary:        GNOME meta themes for the Smooth GTK themes
+Name:           smooth-meta-themes
+Version:        0.5.8
+Release:        6.1
+License:        Public Domain
+Group:          User Interface/Desktops
+BuildArch:      noarch
+Requires:       smooth-gtk-themes
 Requires:   metacity-themes
 Requires:   somatic-icon-theme
 Requires:   linuxcommunity-backgrounds
@@ -48,9 +48,6 @@ sed -i -e 's|Name=|Name=Smooth Okayish|' -e 's|GTK|Smooth-Okayish GTK|' -e 's|Gt
 sed -i -e 's|Name=|Name=Smooth Sea Ice|' -e 's|GTK|Smooth-Sea-Ice GTK|' -e 's|GtkTheme=|GtkTheme=Smooth-Sea-Ice|' -e 's|MetacityTheme=|MetacityTheme=Redmond|' -e '$a BackgroundImage=/usr/share/backgrounds/linuxcommunity/108691-1824x1152_wheat_field2.jpg' Smooth-Sea-Ice/index.theme
 sed -i -e 's|Name=|Name=Smooth Tangerine Dream|' -e 's|GTK|Smooth-Tangerine-Dream GTK|' -e 's|GtkTheme=|GtkTheme=Smooth-Tangerine-Dream|' -e 's|MetacityTheme=|MetacityTheme=OutlineHot|' -e '$a BackgroundImage=/usr/share/backgrounds/linuxcommunity/111635-FeatheryOrange1920x1200.jpg' Smooth-Tangerine-Dream/index.theme
 sed -i -e 's|Name=|Name=Smooth Winter|' -e 's|GTK|Smooth-Winter GTK|' -e 's|GtkTheme=|GtkTheme=Smooth-Winter|' -e 's|MetacityTheme=|MetacityTheme=Watercolor|' -e '$a BackgroundImage=/usr/share/backgrounds/linuxcommunity/116807-Immagine 010-rem1920.jpg' Smooth-Winter/index.theme
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/themes/*/index.theme

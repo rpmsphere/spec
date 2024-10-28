@@ -35,9 +35,6 @@ computers of the network with very little network/CPU overload.
 rm -rf $RPM_BUILD_ROOT
 %cmake_install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files 
 %doc AUTHORS README COPYING
 %{_datadir}/%{name}

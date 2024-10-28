@@ -44,9 +44,6 @@ Type=Application
 Categories=GNOME;Application;Education;
 EOF
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/gmastermind
 %{_datadir}/applnk/Edutainment/Miscellaneous/gmastermind.desktop

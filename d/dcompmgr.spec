@@ -23,9 +23,6 @@ make
 %files
 %{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Jul 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20120403
 - Rebuilt for Fedora

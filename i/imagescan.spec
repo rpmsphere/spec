@@ -1,7 +1,7 @@
 %global upstream utsushi
 
 Name:           imagescan
-Version:	3.65.0
+Version:        3.65.0
 Release:        1
 Summary:        Next Generation Image Acquisition Utilities
 Vendor:         SEIKO EPSON CORPORATION
@@ -74,9 +74,6 @@ rm -rf %{buildroot}%{_libdir}/sane/lib*.la
 rm -rf %{buildroot}%{_libdir}/sane/lib*.so
 %find_lang %{upstream}
 
-%clean
-rm -rf %{buildroot}
-
 %define have_sane_dll_d %(test -d %{_sysconfdir}/sane.d/dll.d && echo true)
 
 %files -f %{upstream}.lang
@@ -104,16 +101,16 @@ rm -rf %{buildroot}
 %post
 dll=%{_sysconfdir}/sane.d/dll.conf
 if [ -n "`grep '^[ \t]*#[ \t#]*%{name}' ${dll}`" ]
-then				# uncomment existing entry
+then                            # uncomment existing entry
     sed -i 's,^[ \t]*#[ \t#]*\(%{name}\),\1,' ${dll}
 elif [ -z "`grep %{name} ${dll}`" ]
-then				# append brand new entry
+then                            # append brand new entry
     echo %{name} >> ${dll}
 fi
 
 %preun
 if [ $1 = 0 ]
-then				# comment out existing entry
+then                            # comment out existing entry
     dll=%{_sysconfdir}/sane.d/dll.conf
     if [ -n "`grep '^[ \t]*%{name}' ${dll}`" ]
     then

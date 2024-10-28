@@ -1,21 +1,21 @@
-Summary:	TV player
-Name:		freetuxtv
-Version:	0.6.8
-Release:	1
-License:	GPLv2+
-Group:		Video
-URL:		https://code.google.com/archive/p/freetuxtv/wikis/HomePage.wiki
-Source0:	https://github.com/freetuxtv/freetuxtv/releases/download/%{name}-%{version}/%{name}-%{version}.tar.gz
-BuildRequires:	intltool
-BuildRequires:	gettext-devel
-BuildRequires:	pkgconfig(dbus-glib-1)
-BuildRequires:	pkgconfig(gdk-3.0)
-BuildRequires:	pkgconfig(glib-2.0)
-BuildRequires:	pkgconfig(libcurl)
-BuildRequires:	pkgconfig(libnotify)
-BuildRequires:	pkgconfig(libvlc)
-BuildRequires:	pkgconfig(sqlite3)
-Requires:	vlc
+Summary:        TV player
+Name:           freetuxtv
+Version:        0.6.8
+Release:        1
+License:        GPLv2+
+Group:          Video
+URL:            https://code.google.com/archive/p/freetuxtv/wikis/HomePage.wiki
+Source0:        https://github.com/freetuxtv/freetuxtv/releases/download/%{name}-%{version}/%{name}-%{version}.tar.gz
+BuildRequires:  intltool
+BuildRequires:  gettext-devel
+BuildRequires:  pkgconfig(dbus-glib-1)
+BuildRequires:  pkgconfig(gdk-3.0)
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(libcurl)
+BuildRequires:  pkgconfig(libnotify)
+BuildRequires:  pkgconfig(libvlc)
+BuildRequires:  pkgconfig(sqlite3)
+Requires:       vlc
 
 %description
 freetuxtv is a player for Television on Internet with french Free

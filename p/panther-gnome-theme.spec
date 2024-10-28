@@ -29,9 +29,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 cp -a metacity-1 gtk-2.0 index.theme %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 

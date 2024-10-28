@@ -5,8 +5,8 @@ Group:          System/X11/Displaymanagers
 Version:        0.6
 Release:        403.1
 Summary:        SuSE Linux background
-Source:         xdmbgrd-0.6.tar.bz2
-Patch:          xdmbgrd-0.6.dif
+Source0:        xdmbgrd-0.6.tar.bz2
+Patch0:         xdmbgrd-0.6.dif
 Patch1:         xdmbgrd-piggyback.dif
 %{expand: %%global _exec_prefix %(type -p pkg-config &>/dev/null && pkg-config --variable prefix x11 || echo /usr/X11R6)}
 
@@ -21,8 +21,8 @@ Authors:
 
 %prep
 %setup -q
-%patch
-%patch1
+%patch 0
+%patch 1
 
 %build
 PATH=$PATH:.
@@ -30,18 +30,18 @@ make XLIBD=%{_libdir} openSUSE=SuSE_Linux_6 SLES=SuSE_Linux_7
 
 %install
 if test -x %{_bindir}/chooser ; then
-	mkdir -p %{buildroot}%{_bindir}
-	install -m 0755 BackGround %{buildroot}%{_bindir}
-	echo %{_bindir}/BackGround > file-list
+        mkdir -p %{buildroot}%{_bindir}
+        install -m 0755 BackGround %{buildroot}%{_bindir}
+        echo %{_bindir}/BackGround > file-list
 else
     if test -x /etc/X11/xdm/chooser ; then
-	mkdir -p %{buildroot}/etc/X11/xdm
-	install -m 0755 BackGround %{buildroot}/etc/X11/xdm/
-	echo /etc/X11/xdm/BackGround           > file-list
+        mkdir -p %{buildroot}/etc/X11/xdm
+        install -m 0755 BackGround %{buildroot}/etc/X11/xdm/
+        echo /etc/X11/xdm/BackGround           > file-list
     else
-	mkdir -p %{buildroot}%{_libdir}/X11/xdm
-	install -m 0755 BackGround %{buildroot}%{_libdir}/X11/xdm
-	echo %{_libdir}/X11/xdm/BackGround > file-list
+        mkdir -p %{buildroot}%{_libdir}/X11/xdm
+        install -m 0755 BackGround %{buildroot}%{_libdir}/X11/xdm
+        echo %{_libdir}/X11/xdm/BackGround > file-list
     fi
 fi
 

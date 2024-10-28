@@ -42,9 +42,9 @@ Documentation for the PHAT Audio Toolkit.
 
 %prep
 %setup -q -n %{_name}-%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 sed -i s,-Werror,, configure.ac configure
 
 %build
@@ -57,7 +57,7 @@ make DESTDIR=%{buildroot} install
 rm %{buildroot}%{_libdir}/libphat.*a
 # kill rpath
 for i in `find %buildroot{%_bindir,%_libdir,/usr/libexec,/usr/lib,/usr/sbin} -type f -perm -111 ! -name '*.la' `; do
-	chrpath -d $i ||:
+        chrpath -d $i ||:
 done
 
 %files

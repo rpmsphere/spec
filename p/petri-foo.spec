@@ -97,9 +97,6 @@ desktop-file-install \
    --dir $RPM_BUILD_ROOT%{_datadir}/applications \
    $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
-%clean
-%__rm -fr $RPM_BUILD_ROOT
-
 %post
 update-mime-database %{_datadir}/mime &> /dev/null
 touch --no-create %{_datadir}/pixmaps &> /dev/null || :

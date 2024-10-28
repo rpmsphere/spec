@@ -37,7 +37,7 @@ Tribler has three goals in helping you, the user:
 
 %prep
 %setup -q -n %{name}
-%patch1 -p1 
+%patch 1 -p1 
 
 %build
 python2 setup.py build

@@ -1,19 +1,19 @@
 %global _warning_options -fpermissive -Wl,--allow-multiple-definition
 
-Summary:	GUI setup tools Collection for Open X Input Method Server .
-Name:		oxim-setup
-Version:	1.5.5
-Release:	1
-License:	LGPLv2+
-Group:		System/Internationalization
-URL:		https://www.opendesktop.org.tw/
-Source0:	oxim-setup-%{version}.tar.gz
-Autoreq:	no
-Requires:	oxim
-BuildRequires:	zlib-devel, gtk2-devel, libglade2-devel, oxim-devel
-BuildRequires:	libX11-devel, libXpm-devel
-#BuildRequires:	gambas2-devel, gambas2-runtime
-BuildRequires:	qt3-devel, qt4-devel, libcurl-devel
+Summary:        GUI setup tools Collection for Open X Input Method Server .
+Name:           oxim-setup
+Version:        1.5.5
+Release:        1
+License:        LGPLv2+
+Group:          System/Internationalization
+URL:            https://www.opendesktop.org.tw/
+Source0:        oxim-setup-%{version}.tar.gz
+Autoreq:        no
+Requires:       oxim
+BuildRequires:  zlib-devel, gtk2-devel, libglade2-devel, oxim-devel
+BuildRequires:  libX11-devel, libXpm-devel
+#BuildRequires: gambas2-devel, gambas2-runtime
+BuildRequires:  qt3-devel, qt4-devel, libcurl-devel
 
 %description
 OXIM-SETUP is A GUI interface built on PHP-GTK enviornment.
@@ -49,9 +49,6 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 %postun
 update-mime-database %{_datadir}/mime &> /dev/null
 update-desktop-database %{_datadir}/applications &> /dev/null
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README

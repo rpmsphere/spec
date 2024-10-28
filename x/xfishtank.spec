@@ -25,9 +25,6 @@ make %{?jobs:-j%jobs}
 %install
 make DESTDIR=$RPM_BUILD_ROOT MANPATH=%{_mandir} install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE README*
 %{_bindir}/%{name}

@@ -46,9 +46,6 @@ Type=Application
 Category=Game;KidsGame;
 EOF
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README
 /usr/lib/WoodysFishingHole.jar

@@ -23,9 +23,6 @@ make
 %make_install
 mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc *.txt *.md
 %{_bindir}/%{name}

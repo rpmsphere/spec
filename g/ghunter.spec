@@ -17,7 +17,7 @@ A set of picture-watching program intended to read comic books.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 
 %build
 export CFLAGS=${CFLAGS/-Werror=format-security/}
@@ -29,9 +29,6 @@ rm -rf $RPM_BUILD_ROOT
 make DESTDIR=%buildroot install
 mkdir -p $RPM_BUILD_ROOT/usr/share/pixmaps/
 mv $RPM_BUILD_ROOT/usr/share/ghunter/ghunter-icon.png $RPM_BUILD_ROOT/usr/share/pixmaps/ghunter.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README ChangeLog

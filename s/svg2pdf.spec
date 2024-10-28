@@ -31,9 +31,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 install -D -m 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 

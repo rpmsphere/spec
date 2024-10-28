@@ -18,7 +18,7 @@ retrieved.
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 %__make %{?_smp_flags} \
@@ -29,9 +29,6 @@ retrieved.
 %__rm -rf "$RPM_BUILD_ROOT"
 %__install -D -m0755 setpwc "$RPM_BUILD_ROOT%{_bindir}/setpwc"
 %__install -D -m0644 setpwc.1 "$RPM_BUILD_ROOT%{_mandir}/man1/setpwc.1"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc license.txt readme.txt

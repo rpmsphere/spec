@@ -4,7 +4,7 @@ Name:           passage
 Version:        4
 Release:        7.1
 Summary:        A Gamma256 video game by Jason Rohrer
-Summary(fr):	Un jeu vidéo Gamma256 par Jason Rohrer
+Summary(fr):    Un jeu vidéo Gamma256 par Jason Rohrer
 Group:          Amusements/Games/Other
 License:        SUSE-Public-Domain
 URL:            https://hcsoftware.sourceforge.net/passage/
@@ -50,9 +50,6 @@ echo -e '#!/bin/bash\ncd %{_datadir}/%{name}\n%{_bindir}/Passage-exe\nexit' > %b
 # Man pages (added by packager, not present in source)
 #__cp %_sourcedir/Passage.6 %buildroot%{_mandir}/man6
 #__cp %_sourcedir/Passage-exe.6 %buildroot%{_mandir}/man6
-
-%clean
-rm -rf %buildroot
 
 %files
 %doc gamma256/documentation/*.txt

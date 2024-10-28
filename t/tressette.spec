@@ -1,15 +1,15 @@
-Name:		tressette
-Summary:	SDL Italian card game 4-player Tressette
+Name:           tressette
+Summary:        SDL Italian card game 4-player Tressette
 Version:        0.7.4svn.12
-Release:	16.4
-URL:		https://invido.it/progetti/tressette_progetto.html
+Release:        16.4
+URL:            https://invido.it/progetti/tressette_progetto.html
 Source:         %{name}-%{version}.tar.xz
-Patch0:		tressette_build.patch
+Patch0:         tressette_build.patch
 Source1:        tressettetux.desktop
 # replacing Arial-black, not redistributable AFAIK
 Source2:        LiberationSans-Bold.ttf.tar.xz
-License:	GPL-2.0+ and OFL-1.1 and SUSE-Bitstream-Vera
-Group:		Amusements/Games/Board/Card
+License:        GPL-2.0+ and OFL-1.1 and SUSE-Bitstream-Vera
+Group:          Amusements/Games/Board/Card
 BuildRequires:  gcc-c++ pkgconfig libtool autoconf automake
 BuildRequires:  expat-devel
 BuildRequires:  pkgconfig(SDL_image)
@@ -27,7 +27,7 @@ The version emulated is the game for 4 players, in team of two (computer+player 
 
 %prep
 %setup -q -a 2
-%patch0 -p1
+%patch 0 -p1
 # move resources to an appropriate dir
 pushd src/TreClientVs6
 %__sed -i 's|data/font/ariblk.ttf|data/font/LiberationSans-Bold.ttf|' EngineApp.cpp

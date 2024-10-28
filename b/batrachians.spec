@@ -1,18 +1,18 @@
-Name:			batrachians
-Version:		0.1.7
-Summary:		A Frog Bog(TM) clone
-License:		GPLv2
-URL:			https://sarrazip.com/dev/%{name}.html
-Group:			Amusements/Games
-Release:		1
-Source:			%{name}-%{version}.tar.gz
-BuildRequires:		desktop-file-utils
-BuildRequires:		gcc-c++
-BuildRequires:		libtool
-BuildRequires:		SDL-devel
-BuildRequires:		SDL_image-devel
-BuildRequires:		SDL_mixer-devel
-BuildRequires:		flatzebra-devel
+Name:                   batrachians
+Version:                0.1.7
+Summary:                A Frog Bog(TM) clone
+License:                GPLv2
+URL:                    https://sarrazip.com/dev/%{name}.html
+Group:                  Amusements/Games
+Release:                1
+Source:                 %{name}-%{version}.tar.gz
+BuildRequires:          desktop-file-utils
+BuildRequires:          gcc-c++
+BuildRequires:          libtool
+BuildRequires:          SDL-devel
+BuildRequires:          SDL_image-devel
+BuildRequires:          SDL_mixer-devel
+BuildRequires:          flatzebra-devel
 
 %description
 Batrachians is a game where you control a frog and your goal is to
@@ -43,9 +43,6 @@ Terminal=false
 _EOF_
 
 install -D -m644 src/%{name}.desktop %{buildroot}/%{_datadir}/applications/%{name}.desktop
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README THANKS TODO

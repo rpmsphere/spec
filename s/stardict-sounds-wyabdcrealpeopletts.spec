@@ -25,9 +25,6 @@ cp %{SOURCE1} license.txt
 mkdir -p %{buildroot}%{_datadir}/stardict/WyabdcRealPeopleTTS
 cp -a ? %{buildroot}%{_datadir}/stardict/WyabdcRealPeopleTTS
 
-%clean
-%__rm -rf %buildroot
-
 %files
 %doc license.txt readme.txt README
 %{_datadir}/stardict/WyabdcRealPeopleTTS

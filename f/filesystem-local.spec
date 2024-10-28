@@ -20,9 +20,6 @@ mkdir -p %{buildroot}/usr/local/{bin,%{_lib},share}
 mkdir -p %{buildroot}%{_sysconfdir}/ld.so.conf.d
 echo /usr/local/%{_lib} > %{buildroot}%{_sysconfdir}/ld.so.conf.d/local-%{arch}.conf
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %dir /usr/local
 %dir /usr/local/bin

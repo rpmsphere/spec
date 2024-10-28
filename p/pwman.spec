@@ -26,9 +26,6 @@ autoreconf -fi
 %{__rm} -rf ${RPM_BUILD_ROOT}
 %makeinstall
 
-%clean
-%{__rm} -rf ${RPM_BUILD_ROOT}
-
 %files
 %{_bindir}/convert_pwdb
 %{_bindir}/pwdb2csv

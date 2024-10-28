@@ -10,8 +10,8 @@ License:        BSD
 Group:          Development/Tools
 URL:            https://code.google.com/p/googletest/
 Source0:        https://googletest.googlecode.com/files/gtest-%{version}.zip
-BuildArch:	noarch
-Requires:	gtest-devel
+BuildArch:      noarch
+Requires:       gtest-devel
 
 %description
 Source files for the package gtest.

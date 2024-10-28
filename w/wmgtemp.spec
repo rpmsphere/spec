@@ -37,9 +37,6 @@ install -d -m 755 $RPM_BUILD_ROOT%{_mandir}/man1
 install -m 755 src/wmgtemp $RPM_BUILD_ROOT%{_bindir}
 install -m 644 wmgtemp.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc INSTALL README TODO Artistic BUGS CREDITS examples/wmgtemprc
 %{_bindir}/*

@@ -33,9 +33,6 @@ install -m644 ucl/linux/include/* %{buildroot}%{_includedir}/ucl
 %{_libdir}/ucl
 %{_includedir}/ucl
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Fri Mar 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.2
 - Rebuilt for Fedora

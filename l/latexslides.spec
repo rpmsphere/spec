@@ -28,9 +28,6 @@ python2 setup.py install -O1 --skip-build --prefix=/usr --root $RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CHANGELOG README TODO doc/*
 %{_bindir}/*

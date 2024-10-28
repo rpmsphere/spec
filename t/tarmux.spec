@@ -5,7 +5,7 @@ Summary:   Multiplex / demultiplex streams
 License:   ASL 2.0
 Group:     Applications/System
 Source:    https://github.com/minfrin/%{name}/releases/download/%{name}-%{version}/%{name}-%{version}.tar.bz2
-URL:	   https://github.com/minfrin/tarmux
+URL:       https://github.com/minfrin/tarmux
 BuildRequires: libarchive-devel >= 3, help2man, gcc
 
 %define    __libtoolize /bin/true

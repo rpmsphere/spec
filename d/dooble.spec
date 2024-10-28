@@ -1,15 +1,15 @@
 %global __os_install_post %{nil}
 %undefine _debugsource_packages
 
-Name:		dooble
-Version:	2.1.9.4
-Release:	1
-Summary:	A colorful Web browser
-Group:		System/Libraries
-License:	GPLv2
-URL:		https://textbrowser.github.io/dooble/
-Source0:	https://github.com/textbrowser/dooble/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildRequires:	qt5-qtbase-devel
+Name:           dooble
+Version:        2.1.9.4
+Release:        1
+Summary:        A colorful Web browser
+Group:          System/Libraries
+License:        GPLv2
+URL:            https://textbrowser.github.io/dooble/
+Source0:        https://github.com/textbrowser/dooble/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
+BuildRequires:  qt5-qtbase-devel
 #BuildRequires:  libgcrypt-devel
 #BuildRequires:  libgpg-error-devel
 #BuildRequires:  desktop-file-utils
@@ -44,9 +44,6 @@ ln -s %{_libdir}/qt5/plugins/platforms %{buildroot}%{_libexecdir}/%{name}/Lib
 
 #cd %{buildroot}%{_libexecdir}/%{name}
 #rm -rf %{name}.pro Makefile %{name}.doxygen DEBIAN/ Doxygen/ Source/ temp/ Windows/ Translations/*.ts Qt/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README ../LICENSE

@@ -1,23 +1,23 @@
 %undefine _debugsource_packages
-%define oname	mvc
+%define oname   mvc
 %define oversion 2015-05-08
 %define pversion 2015_05_08
 
-Summary:	Convert almost any video 
-Name:		mirovideoconverter
-Version:	3.0.2
-Release:	4.1
-URL:		https://www.mirovideoconverter.com/
-Source0:	https://nightlies.pculture.org/data_volume/%{oname}-%{oversion}-.tar.gz
-Patch0:		linux-build.patch
-License:	GPLv3
-Group:		Video
-BuildRequires:	pkgconfig(python)
+Summary:        Convert almost any video 
+Name:           mirovideoconverter
+Version:        3.0.2
+Release:        4.1
+URL:            https://www.mirovideoconverter.com/
+Source0:        https://nightlies.pculture.org/data_volume/%{oname}-%{oversion}-.tar.gz
+Patch0:         linux-build.patch
+License:        GPLv3
+Group:          Video
+BuildRequires:  pkgconfig(python)
 BuildRequires:  python2-setuptools
-BuildRequires:	desktop-file-utils
-Requires:	python(abi)
-Requires:	ffmpeg
-BuildArch:	noarch
+BuildRequires:  desktop-file-utils
+Requires:       python(abi)
+Requires:       ffmpeg
+BuildArch:      noarch
 
 %description
 Miro Video Converter is super simple way to
@@ -28,7 +28,7 @@ Ogg Theora, or for Android, iPhone, and more.
 %setup -q
 rm -fr setup-files/osx
 rm -fr setup-files/windows
-%patch0 -p0
+%patch 0 -p0
 
 %build
 python2 setup.py build

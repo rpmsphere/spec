@@ -43,8 +43,8 @@ Likwid is lightweight and adds no overhead during measurements.
 
 %prep
 %setup -q
-%patch1
-%patch2
+%patch 1
+%patch 2
 
 %build
 %__make \
@@ -75,9 +75,6 @@ Likwid is lightweight and adds no overhead during measurements.
 
 # for backwards compatibility with < 2.0:
 %__ln_s likwid-perfctr "$RPM_BUILD_ROOT%{_bindir}/likwid-perfCtr"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc COPYING README

@@ -1,16 +1,16 @@
 %global _name pam-python
 
-Name:		pam_python
-Version:	1.0.8
-Release:	1
-Group:		System/Libraries
-URL:		https://pam-python.sourceforge.net
-License:	AGPLv3+
-Summary:	Support for writing PAM modules in Python
-Source:		https://sourceforge.net/projects/%{_name}/files/%{_name}-%{version}-1/%{_name}-%{version}.tar.gz
-BuildRequires:	python2-devel
-BuildRequires:	pam-devel
-#BuildRequires:	python2-sphinx
+Name:           pam_python
+Version:        1.0.8
+Release:        1
+Group:          System/Libraries
+URL:            https://pam-python.sourceforge.net
+License:        AGPLv3+
+Summary:        Support for writing PAM modules in Python
+Source:         https://sourceforge.net/projects/%{_name}/files/%{_name}-%{version}-1/%{_name}-%{version}.tar.gz
+BuildRequires:  python2-devel
+BuildRequires:  pam-devel
+#BuildRequires: python2-sphinx
 
 %description
 pam-python is a PAM Module that runs the Python interpreter, thus allowing PAM

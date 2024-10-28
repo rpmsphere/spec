@@ -30,7 +30,7 @@ down to it's knees.
 
 %prep
 %setup -q -b 2
-%patch0 -p1
+%patch 0 -p1
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition

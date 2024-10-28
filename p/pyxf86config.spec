@@ -31,11 +31,11 @@ It is used to read and write X server configuration files.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
 
 sed -i 's|-lxf86config||' Makefile.*
 sed -i '1i #include <xorg-server.h>' xf86config_ext.c

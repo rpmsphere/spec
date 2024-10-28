@@ -33,9 +33,6 @@ cp %{SOURCE3} %{buildroot}/%{keydir}
 cp %{SOURCE4} %{buildroot}/%{keydir}
 cp %{SOURCE5} %{buildroot}/%{keydir}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{keydir}/*
 

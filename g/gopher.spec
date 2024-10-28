@@ -1,13 +1,13 @@
-Summary:	A gopher client
-Name:		gopher
-Version:	3.0.13
-Release:	2.1
-License:	GPL
-Group:		Applications/Networking
-Vendor:		John Goerzen <jgoerzen@complete.org>
-Source0:	https://gopher.quux.org:70/give-me-gopher/%{name}_%{version}.tar.gz
-URL:		gopher://gopher.quux.org/1/Software/Gopher
-BuildRequires:	ncurses-devel
+Summary:        A gopher client
+Name:           gopher
+Version:        3.0.13
+Release:        2.1
+License:        GPL
+Group:          Applications/Networking
+Vendor:         John Goerzen <jgoerzen@complete.org>
+Source0:        https://gopher.quux.org:70/give-me-gopher/%{name}_%{version}.tar.gz
+URL:            gopher://gopher.quux.org/1/Software/Gopher
+BuildRequires:  ncurses-devel
 
 %description
 The gopher client is used to talk to gopher servers.
@@ -24,14 +24,11 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir},%{_mandir}/man{1,5,8}}
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	PREFIX=$RPM_BUILD_ROOT%{_prefix} \
-	MAN1DIR=$RPM_BUILD_ROOT%{_mandir}/man1 \
-	MAN5DIR=$RPM_BUILD_ROOT%{_mandir}/man5 \
-	MAN8DIR=$RPM_BUILD_ROOT%{_mandir}/man8
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+        DESTDIR=$RPM_BUILD_ROOT \
+        PREFIX=$RPM_BUILD_ROOT%{_prefix} \
+        MAN1DIR=$RPM_BUILD_ROOT%{_mandir}/man1 \
+        MAN5DIR=$RPM_BUILD_ROOT%{_mandir}/man5 \
+        MAN8DIR=$RPM_BUILD_ROOT%{_mandir}/man8
 
 %files
 %doc copyright README doc/{FAQ,PLATFORMS,TODO} doc/[cgo]*.changes

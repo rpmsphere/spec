@@ -1,16 +1,16 @@
-Name:				 cdu
-Version:			 0.37
-Release:			 6.1
-Summary:			 Coloured Disk Usage
-Source:			 https://arsunik.free.fr/pkg/cdu-%{version}.tar.gz
-Patch1:			 cdu-mandir.patch
-URL:				 https://arsunik.free.fr/prog/cdu.html
-Group:			 Productivity/File utilities
-License:			 GNU General Public License version 2 or later (GPL v2 or later)
-BuildRequires:	 perl
+Name:                            cdu
+Version:                         0.37
+Release:                         6.1
+Summary:                         Coloured Disk Usage
+Source:                  https://arsunik.free.fr/pkg/cdu-%{version}.tar.gz
+Patch1:                  cdu-mandir.patch
+URL:                             https://arsunik.free.fr/prog/cdu.html
+Group:                   Productivity/File utilities
+License:                         GNU General Public License version 2 or later (GPL v2 or later)
+BuildRequires:   perl
 BuildRequires: perl-podlators
-BuildArch:		 noarch
-Requires:		 /usr/bin/du
+BuildArch:               noarch
+Requires:                /usr/bin/du
 
 %description
 cdu (for Color du) is a perl script which call du and display a pretty
@@ -28,7 +28,7 @@ Authors:
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 %__make
@@ -39,9 +39,6 @@ Authors:
 %__chmod 0644 "$RPM_BUILD_ROOT%{_mandir}"/man*/*.*
 h=/usr/share/doc/licenses/md5/$(md5sum COPYING|cut -f1 -d" ")
 test -e "$h" && %__ln_s -f "$h" .
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc COPYING README

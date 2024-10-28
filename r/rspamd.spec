@@ -18,9 +18,9 @@ BuildRequires:  glib2-devel,libevent-devel,openssl-devel,pcre-devel
 BuildRequires:  cmake,gmime-devel,file-devel,ragel,libunwind-devel
 BuildRequires:  libsodium-devel
 %if 0%{?el6}
-BuildRequires:	perl
+BuildRequires:  perl
 %else
-BuildRequires:	perl-Digest-MD5
+BuildRequires:  perl-Digest-MD5
 %endif
 %if 0%{?suse_version} || 0%{?el7} || 0%{?fedora}
 BuildRequires:  systemd
@@ -53,7 +53,7 @@ Requires(postun): initscripts
 %endif
 
 Source0:        https://rspamd.com/downloads/%{name}-%{version}.tar.gz
-#Source3:	80-rspamd.preset
+#Source3:       80-rspamd.preset
 
 %description
 Rspamd is a rapid, modular and lightweight spam filter. It is designed to work
@@ -67,7 +67,7 @@ sed -i '27i #include <cstdint>' src/libserver/composites/composites.cxx src/libs
 
 %build
 %{__cmake} \
-		-DCMAKE_C_OPT_FLAGS="%{optflags}" \
+                -DCMAKE_C_OPT_FLAGS="%{optflags}" \
         -DCMAKE_INSTALL_PREFIX=%{_prefix} \
         -DCONFDIR=%{_sysconfdir}/rspamd \
         -DMANDIR=%{_mandir} \
@@ -118,9 +118,6 @@ sed -i '27i #include <cstdint>' src/libserver/composites/composites.cxx src/libs
 %{__install} -d -p -m 0755 %{buildroot}%{rspamd_home}
 %{__install} -p -D -d -m 0755 %{buildroot}%{_sysconfdir}/%{name}/local.d/
 %{__install} -p -D -d -m 0755 %{buildroot}%{_sysconfdir}/%{name}/override.d/
-
-%clean
-rm -rf %{buildroot}
 
 %pre
 %{_sbindir}/groupadd -r %{rspamd_group} 2>/dev/null || :

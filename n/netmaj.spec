@@ -26,8 +26,8 @@ X 上やコンソール上で動作します。
 
 %prep
 %setup -q -n %{name} -a1
-%patch0 -p1 -b .turbolinux
-%patch1 -p1 -b .build
+%patch 0 -p1 -b .turbolinux
+%patch 1 -p1 -b .build
 
 %build
 #make libs
@@ -45,9 +45,6 @@ make install-pf PREFIX=${RPM_BUILD_ROOT}
 %ifarch x86_64 aarch64
 mv ${RPM_BUILD_ROOT}/usr/lib ${RPM_BUILD_ROOT}/usr/lib64
 %endif
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING.j DEVELOPMENT.j INPUT.j LOCALRULE.j

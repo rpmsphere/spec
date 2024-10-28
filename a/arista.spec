@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
-Name: 		arista
-Version: 	0.9.6
-Release: 	1
-Summary:    	Multimedia transcoder
-License:    	GPLv2
-Group:      	Applications/Multimedia
-URL:        	https://programmer-art.org/projects/arista-transcoder
+Name:           arista
+Version:        0.9.6
+Release:        1
+Summary:        Multimedia transcoder
+License:        GPLv2
+Group:          Applications/Multimedia
+URL:            https://programmer-art.org/projects/arista-transcoder
 Source:         https://programmer-art.org/media/releases/arista-transcoder/%{name}-%{version}.tar.gz
-BuildArch:	noarch
+BuildArch:      noarch
 BuildRequires:  python2-setuptools, python2-devel
 Requires: python2-gstreamer, gstreamer-plugins-base, gstreamer-plugins-good, gstreamer-plugins-bad, gstreamer-plugins-ugly, gstreamer-ffmpeg
 
@@ -40,9 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 python2 setup.py install --skip-build --root %{buildroot}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/arista-*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}*

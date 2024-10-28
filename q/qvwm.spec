@@ -1,18 +1,18 @@
-Summary:	X11 Window Manager - Windows 95/98 alike
-Name:		qvwm
-Version:	1.1.12
-Release:	24.1
-License:	LGPL
-Group:		Graphical desktop/Other
-Source0:	ftp://ftp.qvwm.org/pub/qvwm/%{name}-%{version}.tar.bz2
-Patch0:		%{name}-am15.patch.bz2
-Patch1:		%{name}-man_MANS.patch.bz2
-URL:		https://www.qvwm.org/
-BuildRequires:	gcc-c++, automake
-BuildRequires:	esound-devel >= 0.2.6
-BuildRequires:	flex
-BuildRequires:	imlib-devel >= 1.8.2
-BuildRequires:	libXpm-devel
+Summary:        X11 Window Manager - Windows 95/98 alike
+Name:           qvwm
+Version:        1.1.12
+Release:        24.1
+License:        LGPL
+Group:          Graphical desktop/Other
+Source0:        ftp://ftp.qvwm.org/pub/qvwm/%{name}-%{version}.tar.bz2
+Patch0:         %{name}-am15.patch.bz2
+Patch1:         %{name}-man_MANS.patch.bz2
+URL:            https://www.qvwm.org/
+BuildRequires:  gcc-c++, automake
+BuildRequires:  esound-devel >= 0.2.6
+BuildRequires:  flex
+BuildRequires:  imlib-devel >= 1.8.2
+BuildRequires:  libXpm-devel
 
 %description
 Qvwm is a Windows 95/98/NT like window manager for X Window System. It
@@ -22,8 +22,8 @@ hesitation.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %build
 rm -f missing configure
@@ -34,16 +34,16 @@ autoconf
 CXXFLAGS="$RPM_OPT_FLAGS -fno-exceptions -fno-rtti -Wno-narrowing"
 %configure \
     --prefix=%{_prefix} \
-	--sysconfdir=%{_sysconfdir}/X11 \
-	--enable-rmtcmd \
-	--enable-xsmp \
-	--enable-ss
+        --sysconfdir=%{_sysconfdir}/X11 \
+        --enable-rmtcmd \
+        --enable-xsmp \
+        --enable-ss
 
 make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT					
+make install DESTDIR=$RPM_BUILD_ROOT                                    
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/xsessions
 cat > $RPM_BUILD_ROOT%{_datadir}/xsessions/%{name}.desktop << EOF
@@ -57,9 +57,6 @@ Type=Xsession
 EOF
 
 mv -f $RPM_BUILD_ROOT/%{_mandir}/jp $RPM_BUILD_ROOT/%{_mandir}/ja
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_prefix}/bin/*

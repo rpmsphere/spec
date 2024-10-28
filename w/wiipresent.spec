@@ -1,21 +1,21 @@
-Name:				wiipresent
-Version:			0.7.5.2
+Name:                           wiipresent
+Version:                        0.7.5.2
 %define libwiimote_version 0.4
-Release:			8.1
-Summary:			Give Presentations with a Nintendo Wiimote
+Release:                        8.1
+Summary:                        Give Presentations with a Nintendo Wiimote
 Source:        https://dag.wieers.com/home-made/wiipresent/wiipresent-%{version}.tar.bz2
 # https://prdownloads.sourceforge.net/projects/libwiimote/libwiimote-%{libwiimote_version}.tgz
 Source1:       libwiimote-%{libwiimote_version}.tar.bz2
 Patch1:        libwiimote-optflags.patch
 Patch2:        wiipresent-libwiimote_prefix.patch
 Patch3:        libwiimote-newer_bluez.patch
-URL:			   https://dag.wieers.com/home-made/wiipresent/
-Group:			Hardware/Joystick
-License:			GNU General Public License version 2 (GPL v2)
-BuildRequires:	libX11-devel libXtst-devel
+URL:                       https://dag.wieers.com/home-made/wiipresent/
+Group:                  Hardware/Joystick
+License:                        GNU General Public License version 2 (GPL v2)
+BuildRequires:  libX11-devel libXtst-devel
 BuildRequires: bluez-libs-devel
-BuildRequires:	gcc make glibc-devel
-BuildRequires:	autoconf automake libtool
+BuildRequires:  gcc make glibc-devel
+BuildRequires:  autoconf automake libtool
 
 %description
 WiiPresent is a small program that enables you to use a Nintendo Wiimote for
@@ -30,10 +30,10 @@ Authors:
 %prep
 %setup -q -a 1
 pushd "libwiimote-%{libwiimote_version}"
-%patch1
-%patch3
+%patch 1
+%patch 3
 popd #"libwiimote-%{libwiimote_version}"
-%patch2
+%patch 2
 
 %build
 LIBWIIMOTE_PREFIX="$PWD/libwiimote-install"
@@ -43,39 +43,36 @@ pushd "libwiimote-%{libwiimote_version}"
 CFLAGS="%{optflags} -fPIC" \
 CC="%__cc" \
 ./configure \
-	 --prefix="$LIBWIIMOTE_PREFIX" \
-	 --disable-shared \
-	 --enable-static
+         --prefix="$LIBWIIMOTE_PREFIX" \
+         --disable-shared \
+         --enable-static
 # without -j:
 %__make \
-	 OPTFLAGS="%{optflags} -D_DISABLE_NONBLOCK_UPDATES" \
-	 libwiimote_includedir="$LIBWIIMOTE_PREFIX/include"
+         OPTFLAGS="%{optflags} -D_DISABLE_NONBLOCK_UPDATES" \
+         libwiimote_includedir="$LIBWIIMOTE_PREFIX/include"
 %__make install \
-	 libwiimote_includedir="$LIBWIIMOTE_PREFIX/include"
+         libwiimote_includedir="$LIBWIIMOTE_PREFIX/include"
 popd #"libwiimote-%{libwiimote_version}"
 %__rm "$LIBWIIMOTE_PREFIX/lib"/lib*.so.*
 
 %__make %{?jobs:-j%{jobs}} \
-	 WIIMOTE_INC="-I${LIBWIIMOTE_PREFIX}/include" \
-	 WIIMOTE_LIB="${LIBWIIMOTE_PREFIX}/lib/libcwiimote.a" \
-	 lib="%{_lib}" \
-	 CC="%__cc" \
-	 CFLAGS="%{optflags}"
+         WIIMOTE_INC="-I${LIBWIIMOTE_PREFIX}/include" \
+         WIIMOTE_LIB="${LIBWIIMOTE_PREFIX}/lib/libcwiimote.a" \
+         lib="%{_lib}" \
+         CC="%__cc" \
+         CFLAGS="%{optflags}"
 
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
 make DESTDIR=$RPM_BUILD_ROOT install \
-	 prefix="%{_prefix}" \
-	 sysconfdir="%{_sysconfdir}" \
-	 bindir="%{_bindir}" \
-	 datadir="%{_datadir}" \
-	 mandir="%{_mandir}" \
-	 lib="%{_lib}"
+         prefix="%{_prefix}" \
+         sysconfdir="%{_sysconfdir}" \
+         bindir="%{_bindir}" \
+         datadir="%{_datadir}" \
+         mandir="%{_mandir}" \
+         lib="%{_lib}"
 
 %__chmod 0644 wiipresent-xinit.sh
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc AUTHORS COPYING README TODO ChangeLog

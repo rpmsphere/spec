@@ -41,9 +41,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}*
 #{_datadir}/applications/%{name}.desktop
 %{python3_sitelib}/%{name}*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.17.0
 - Rebuilt for Fedora

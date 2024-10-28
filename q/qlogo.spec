@@ -1,15 +1,15 @@
 %global _name QLogo
 %undefine _debugsource_packages
 
-Name:		qlogo
-Version:	0.92
-Release:	5.1
-Summary:	A cross-platform rewrite of the UCBLogo language
-License:	GPLv2
-Group:		Development/Languages
-Source0:	https://codeload.github.com/jasonsikes/QLogo/tar.gz/v%{version}#/%{_name}-%{version}.tar.gz
-URL:		https://github.com/jasonsikes/QLogo
-BuildRequires:	qt5-qtbase-devel
+Name:           qlogo
+Version:        0.92
+Release:        5.1
+Summary:        A cross-platform rewrite of the UCBLogo language
+License:        GPLv2
+Group:          Development/Languages
+Source0:        https://codeload.github.com/jasonsikes/QLogo/tar.gz/v%{version}#/%{_name}-%{version}.tar.gz
+URL:            https://github.com/jasonsikes/QLogo
+BuildRequires:  qt5-qtbase-devel
 BuildRequires:  ImageMagick
 
 %description
@@ -44,9 +44,6 @@ EOF
 
 %__mkdir_p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 convert icon.ico $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README LICENSE

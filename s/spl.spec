@@ -29,9 +29,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING DISCLAIMER
 %{_sbindir}/*

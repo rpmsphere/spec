@@ -21,7 +21,7 @@ of translation problems.
 
 %prep
 %setup -q -n pccts
-%patch0 -p1 -b .dj
+%patch 0 -p1 -b .dj
 
 %build
 mkdir -p $RPM_BUILD_DIR/pccts/man/man1
@@ -31,21 +31,18 @@ make COPT="$RPM_OPT_FLAGS -DPCCTS_USE_STDARG=1 -Wno-format-security" MANDIR=man 
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr/{bin,share/man/man1,include/pccts}
 
-install -m755 bin/antlr		$RPM_BUILD_ROOT%{_bindir}
-install -m644 man/man1/antlr.1	$RPM_BUILD_ROOT%{_mandir}/man1
-install -m755 bin/dlg		$RPM_BUILD_ROOT%{_bindir}
-install -m644 man/man1/dlg.1		$RPM_BUILD_ROOT%{_mandir}/man1
-install -m755 bin/genmk		$RPM_BUILD_ROOT%{_bindir}
-install -m755 bin/sor		$RPM_BUILD_ROOT%{_bindir}
+install -m755 bin/antlr         $RPM_BUILD_ROOT%{_bindir}
+install -m644 man/man1/antlr.1  $RPM_BUILD_ROOT%{_mandir}/man1
+install -m755 bin/dlg           $RPM_BUILD_ROOT%{_bindir}
+install -m644 man/man1/dlg.1            $RPM_BUILD_ROOT%{_mandir}/man1
+install -m755 bin/genmk         $RPM_BUILD_ROOT%{_bindir}
+install -m755 bin/sor           $RPM_BUILD_ROOT%{_bindir}
 
 cp -a h/* $RPM_BUILD_ROOT%{_includedir}/pccts
 cp -a sorcerer/h/*.h $RPM_BUILD_ROOT%{_includedir}/pccts
 
 cp sorcerer/README README-sorcerer
 cp sorcerer/UPDATES UPDATES-sorcerer
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGES_FROM_131.txt CHANGES_FROM_133.txt KNOWN_PROBLEMS.txt

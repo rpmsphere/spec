@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
-Name:			cgmadness
-Summary:		Based on the classic game Marble Madness
-Version:		1.2.2
-Release:		1
-License:		GPL
-Group:			Amusements/Games/3D/Other
-URL:			https://cgmadness.sourceforge.net/
-Source:			%{name}-%{version}-src.tar.bz2
-Source1:		%{name}.png
-BuildRequires:	gcc-c++
-BuildRequires:	freeglut-devel
-BuildRequires:	glew-devel
-Requires:	glew
-Requires:	freeglut
+Name:                   cgmadness
+Summary:                Based on the classic game Marble Madness
+Version:                1.2.2
+Release:                1
+License:                GPL
+Group:                  Amusements/Games/3D/Other
+URL:                    https://cgmadness.sourceforge.net/
+Source:                 %{name}-%{version}-src.tar.bz2
+Source1:                %{name}.png
+BuildRequires:  gcc-c++
+BuildRequires:  freeglut-devel
+BuildRequires:  glew-devel
+Requires:       glew
+Requires:       freeglut
 
 %description
 CG Madness is based on the classic game Marble Madness.
@@ -34,37 +34,37 @@ sed -i '27i #include <cstddef>' process/MainProcess.cpp
 %__rm -rf %{buildroot}
 %__install -dm 755 %{buildroot}%{_bindir}
 %__install -m 755 %{name} \
-	%{buildroot}%{_bindir}
+        %{buildroot}%{_bindir}
 %__install -m 755 convert-cgm \
-	%{buildroot}%{_bindir}
+        %{buildroot}%{_bindir}
 
 # startscript
 %__cat > %{name}-wrapper << EOF
 #!/bin/sh
 if [ ! -d \$HOME/.%{name} ]; then
-	mkdir \$HOME/.%{name}
-	cd \$HOME/.%{name}
-	ln -s %{_datadir}/%{name}/* .
-	cd ..
+        mkdir \$HOME/.%{name}
+        cd \$HOME/.%{name}
+        ln -s %{_datadir}/%{name}/* .
+        cd ..
 fi
 
 cd \$HOME/.%{name}
 %{name}
 EOF
 %__install -m 755 %{name}-wrapper \
-	%{buildroot}%{_bindir}
+        %{buildroot}%{_bindir}
 
 %__install -dm 755 %{buildroot}%{_datadir}/%{name}/data
 %__install -m 644 data/* \
-	%{buildroot}%{_datadir}/%{name}/data
+        %{buildroot}%{_datadir}/%{name}/data
 %__install -dm 755 %{buildroot}%{_datadir}/%{name}/levels
 %__install -m 644 levels/* \
-	%{buildroot}%{_datadir}/%{name}/levels
+        %{buildroot}%{_datadir}/%{name}/levels
 
 # icon and menu-entry
 %__install -dm 755 %{buildroot}%{_datadir}/pixmaps
 %__install -m 644 %{SOURCE1} \
-	%{buildroot}%{_datadir}/pixmaps
+        %{buildroot}%{_datadir}/pixmaps
 
 %__mkdir_p %{buildroot}%{_datadir}/applications
 %__cat > %{buildroot}%{_datadir}/applications/%{name}.desktop << EOF
@@ -81,9 +81,6 @@ Type=Application
 Categories=Game;ActionGame;
 EOF
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc *.txt 
 %{_bindir}/%{name}
@@ -99,7 +96,7 @@ EOF
 - Rebuilt for Fedora
 * Wed Jun  8 2011 Chris lin <chris.lin@ossii.com.tw> - 1.2.2.-0.2.ossii
 - Add -lGLU
-* Fri Dec 31 2008 Feather Mountain <john@ossii.com.tw> - 1.2.2.-0.1.ossii
+* Wed Dec 31 2008 Feather Mountain <john@ossii.com.tw> - 1.2.2.-0.1.ossii
 - Rebuild for M6(OSSII)
 * Sun Nov 23 2008 Toni Graffy <toni@links2linux.de> - 1.2.2-0.pm.1
 - update to 1.2.2

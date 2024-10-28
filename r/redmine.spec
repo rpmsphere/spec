@@ -11,7 +11,7 @@ Source102:      %{name}.apache24
 Source103:      %{name}-pg-database.yml
 #BuildRequires:  ruby >= 1.8.7
 #BuildRequires:  ruby-RubyGems
-#BuildRequires:	ruby-fastercsv
+#BuildRequires: ruby-fastercsv
 Requires:       webserver
 Requires:       rubygem-rails >= 4.0.1
 Requires:       rubygems

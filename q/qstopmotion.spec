@@ -1,24 +1,24 @@
 %undefine _debugsource_packages
-%global url_ver	%(echo %{version} | tr '.' '_')
+%global url_ver %(echo %{version} | tr '.' '_')
 
-Name:		qstopmotion
-Version:	2.5.2
-Release:	1
-Summary:	Creates stop-motion animation movies based on Qt5
-License:	GPLv3+
-Group:		Video/Utilities
-URL:		https://www.qstopmotion.org/
-Source0:	https://sourceforge.net/projects/qstopmotion/files/Version_%{url_ver}/%{name}-%{version}-Source.tar.gz
-BuildRequires:	cmake
-BuildRequires:	qt5-qttools-devel
-BuildRequires:	pkgconfig(Qt5Core)
-BuildRequires:	pkgconfig(Qt5Gui)
-BuildRequires:	pkgconfig(Qt5Widgets)
-BuildRequires:	pkgconfig(Qt5Xml)
-BuildRequires:	pkgconfig(libgphoto2)
-BuildRequires:	pkgconfig(libv4l2)
-BuildRequires:	qwt-qt5-devel
-BuildRequires:	qt5-qtmultimedia-devel
+Name:           qstopmotion
+Version:        2.5.2
+Release:        1
+Summary:        Creates stop-motion animation movies based on Qt5
+License:        GPLv3+
+Group:          Video/Utilities
+URL:            https://www.qstopmotion.org/
+Source0:        https://sourceforge.net/projects/qstopmotion/files/Version_%{url_ver}/%{name}-%{version}-Source.tar.gz
+BuildRequires:  cmake
+BuildRequires:  qt5-qttools-devel
+BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Gui)
+BuildRequires:  pkgconfig(Qt5Widgets)
+BuildRequires:  pkgconfig(Qt5Xml)
+BuildRequires:  pkgconfig(libgphoto2)
+BuildRequires:  pkgconfig(libv4l2)
+BuildRequires:  qwt-qt5-devel
+BuildRequires:  qt5-qtmultimedia-devel
 
 %description
 qStopMotion is a application for creating stop-motion animation movies.

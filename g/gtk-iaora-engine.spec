@@ -28,7 +28,7 @@ Mandriva Ia Ora GNOME theme.
 
 %prep
 %setup -q -n %{_name}-%{version}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 ./autogen.sh
@@ -41,9 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 cp %{SOURCE1} "$RPM_BUILD_ROOT%{_datadir}/themes/Ia Ora Arctic"
 sed -i 's|IconTheme=gnome|IconTheme=Gion|' $RPM_BUILD_ROOT%{_datadir}/themes/*/index.theme
 sed -i '$a BackgroundImage=/usr/share/themes/Ia Ora Arctic/abstrakciya-siniy-fon-linii-hq.jpg' $RPM_BUILD_ROOT%{_datadir}/themes/*/index.theme
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -n iaora-gnome-theme
 %{_datadir}/themes/*

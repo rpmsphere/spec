@@ -291,9 +291,9 @@ This package contains development files for %{name}
 
 %prep
 %setup -q -n ffmpeg-%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 # fix -O3 -g in host_cflags
 sed -i "s|check_host_cflags -O3|check_host_cflags %{optflags}|" configure
 sed -i "s|-Wall |-Wall -fPIC |" configure

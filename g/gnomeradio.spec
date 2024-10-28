@@ -49,23 +49,23 @@ Ogg files.
 
 %prep
 %setup -q
-%patch0 -p1 -b .v4l2
-%patch1 -p1 -b .ld
-%patch2 -p1 -b .format-security
-%patch3 -p1 -b .crash
-%patch4 -p1 -b .gnome-3.0
-%patch5 -p1 -b .gtk
-%patch6 -p1 -b .nogtk2
-%patch7 -p1 -b .gui.patch
-%patch8 -p1 -b .expose-event
+%patch 0 -p1 -b .v4l2
+%patch 1 -p1 -b .ld
+%patch 2 -p1 -b .format-security
+%patch 3 -p1 -b .crash
+%patch 4 -p1 -b .gnome-3.0
+%patch 5 -p1 -b .gtk
+%patch 6 -p1 -b .nogtk2
+%patch 7 -p1 -b .gui.patch
+%patch 8 -p1 -b .expose-event
 %{__install} -m 755 %{SOURCE1} .
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
 %configure \
-	--disable-schemas-install \
-	--disable-install-schemas \
-	--disable-scrollkeeper
+        --disable-schemas-install \
+        --disable-install-schemas \
+        --disable-scrollkeeper
 
 %{__make} %{?_smp_mflags}
 
@@ -76,13 +76,13 @@ export GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL="1"
 
 echo "Encoding=UTF-8" >> %{buildroot}%{_datadir}/applications/%{name}.desktop
 desktop-file-install \
-	--dir=%{buildroot}%{_datadir}/applications \
-	--add-category=Audio \
-	--add-category=Tuner \
-	--add-category=GNOME \
-	--add-category=GTK \
-	--delete-original \
-	%{buildroot}%{_datadir}/applications/%{name}.desktop
+        --dir=%{buildroot}%{_datadir}/applications \
+        --add-category=Audio \
+        --add-category=Tuner \
+        --add-category=GNOME \
+        --add-category=GTK \
+        --delete-original \
+        %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 # Fix docs encoding
 for file in AUTHORS ChangeLog README ; do

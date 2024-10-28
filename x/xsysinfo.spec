@@ -1,23 +1,23 @@
-Summary:	An X Window System kernel parameter monitoring tool
-Name:		xsysinfo
-Version:	1.7
-Release:	23
-License:	MIT
-Group:		Monitoring
-Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/xsysinfo-%{version}.tar.xz
-Source1:	%{name}
-Source11:	%{name}-16x16.png
-Source12:	%{name}-32x32.png
-Source13:	%{name}-48x48.png
-Patch0:		xsysinfo-1.7-imake.patch
-Patch1:		xsysinfo-1.7-xf4.patch
-Patch2:		xsysinfo-1.7-includes.patch
-BuildRequires:	imake
-BuildRequires:	libX11-devel
-BuildRequires:	Xaw3d-devel
-BuildRequires:	libXt-devel
-BuildRequires:	libXaw-devel
-BuildRequires:	libXp-devel
+Summary:        An X Window System kernel parameter monitoring tool
+Name:           xsysinfo
+Version:        1.7
+Release:        23
+License:        MIT
+Group:          Monitoring
+Source0:        ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/xsysinfo-%{version}.tar.xz
+Source1:        %{name}
+Source11:       %{name}-16x16.png
+Source12:       %{name}-32x32.png
+Source13:       %{name}-48x48.png
+Patch0:         xsysinfo-1.7-imake.patch
+Patch1:         xsysinfo-1.7-xf4.patch
+Patch2:         xsysinfo-1.7-includes.patch
+BuildRequires:  imake
+BuildRequires:  libX11-devel
+BuildRequires:  Xaw3d-devel
+BuildRequires:  libXt-devel
+BuildRequires:  libXaw-devel
+BuildRequires:  libXp-devel
 
 %description
 Xsysinfo is a graphic kernel monitoring tool for the X Window System.
@@ -29,9 +29,9 @@ monitoring tool.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p0
-%patch2 -p1 -b .includes
+%patch 0 -p1
+%patch 1 -p0
+%patch 2 -p1 -b .includes
 make clean
 
 %build
@@ -60,9 +60,6 @@ install -m644 %{SOURCE12} -D $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/32x32/apps
 install -m644 %{SOURCE13} -D $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
 
 rm -f $RPM_BUILD_ROOT/%{_prefix}/lib/X11/app-defaults
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README CHANGES

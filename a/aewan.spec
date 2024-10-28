@@ -34,7 +34,7 @@ console.
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 %configure
@@ -43,9 +43,6 @@ sed -i 's|-Werror=format-security||' Makefile
 
 %install
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc CHANGELOG COPYING README TODO

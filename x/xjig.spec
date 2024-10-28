@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 Name:           xjig
 BuildRequires:  gcc-c++ 
-BuildRequires:	imake
+BuildRequires:  imake
 License:        Beerware, Cardware, Shareware (not restricted)
 Group:          Amusements/Games/Board/Puzzle
 Version:        2.4
@@ -9,9 +9,9 @@ Release:        1
 Summary:        jigsaw puzzle
 URL:            ftp://ftp.ac-grenoble.fr/ge/educational_games/
 Source:         xjig-%{version}.tar.bz2
-Source1:	xjig.png
-Source2:	xjig.desktop
-Patch:          xjig-%{version}.patch
+Source1:        xjig.png
+Source2:        xjig.desktop
+Patch0:          xjig-%{version}.patch
 
 %description
 XJig is a puzzle, that tries to replicate a jigsaw puzzle on the screen
@@ -26,7 +26,7 @@ Authors:
 
 %prep
 %setup -q
-%patch
+%patch 0
 sed -i 's|const char|char|g' gif_image.C gif_image.H gifx_image.C gifx_image.H
 
 %build
@@ -58,13 +58,10 @@ install -m 0644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.deskt
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*.png
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
 - Rebuilt for Fedora
-* Thu Jun 06 2011 Chris Lin <chris.lin@ossii.com.tw>
+* Mon Jun 06 2011 Chris Lin <chris.lin@ossii.com.tw>
 - Fix types
 * Wed Oct 22 2008 john@ossii.com.tw
 - Rebuild for M6(OSSII)

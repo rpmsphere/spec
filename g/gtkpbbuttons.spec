@@ -6,7 +6,7 @@ Release:        156.1
 Group:          System/Daemons
 License:        GPL v2 or later
 Source:         %{name}-%{version}.tar.gz
-Patch:          %{name}-%{version}.diff
+Patch0:          %{name}-%{version}.diff
 BuildRequires:  libpng-devel
 BuildRequires:  audiofile-devel gtk2-devel pbbuttonsd-devel popt-devel
 
@@ -50,7 +50,7 @@ Authors:
 
 %prep
 %setup -q
-%patch
+%patch 0
 
 %build
 %configure CFLAGS="$RPM_OPT_FLAGS -lm" --prefix=/usr --mandir=%{_mandir}
@@ -60,9 +60,6 @@ make
 rm -fr $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 %find_lang %name
-
-%clean
-rm -fr $RPM_BUILD_ROOT
 
 %files -f %name.lang
 /usr/bin/*

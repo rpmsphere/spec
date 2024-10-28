@@ -26,9 +26,6 @@ Authors:
 %__rm -rf "$RPM_BUILD_ROOT"
 %__install -D -m0755 nkmkpasswd "$RPM_BUILD_ROOT%{_bindir}/nkmkpasswd"
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc LICENSE README
 %{_bindir}/nkmkpasswd

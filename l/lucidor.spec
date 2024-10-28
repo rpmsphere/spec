@@ -24,9 +24,6 @@ rm -rf %{buildroot}
 make install install-man install-mime DESTDIR=%{buildroot}
 echo -e 'Name[zh_TW]=清澈者閱讀器\nComment[zh_TW]=Lucidor 電子書閱讀程式' >> %{buildroot}%{_datadir}/applications/lucidor.desktop
 
-%clean
-rm -rf %{buildroot}
-
 %post
 update-desktop-database %{_datadir}/applications &> /dev/null || :
 #/usr/sbin/update-icon-caches %{_datadir}/icons/hicolor &> /dev/null || :

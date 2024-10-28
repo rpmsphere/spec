@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name:		samegame
-Version:	1.1.0
-Release:	4.1
-Summary:	Qt implementation of SameGame
-Group:		Amusements/Games
-License:	GPLv3
-URL:		https://samegame.sourceforge.net/
-Source0:	%{name}-%{version}.tar.gz
-BuildRequires:	qt-devel
+Name:           samegame
+Version:        1.1.0
+Release:        4.1
+Summary:        Qt implementation of SameGame
+Group:          Amusements/Games
+License:        GPLv3
+URL:            https://samegame.sourceforge.net/
+Source0:        %{name}-%{version}.tar.gz
+BuildRequires:  qt-devel
 
 %description
 Qt implementation of SameGame.
@@ -24,9 +24,6 @@ make %{?_smp_mflags}
 rm -rf $RPM_BUILD_ROOT
 make install INSTALL_ROOT=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT/%{_datadir}/doc/%{name}-%{version}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc gpl.txt readme.txt

@@ -26,9 +26,6 @@ gcc -O2 -Wall fakeXinerama.c -fPIC -o libXinerama.so.1.0.0 -shared
 install -Dm755 libXinerama.so.1.0.0 %{buildroot}/usr/local/%{_lib}/libXinerama.so.1.0.0
 ln -sf libXinerama.so.1.0.0 %{buildroot}/usr/local/%{_lib}/libXinerama.so.1
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README.TXT
 /usr/local/%{_lib}/libXinerama.so.1*

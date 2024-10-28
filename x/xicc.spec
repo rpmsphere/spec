@@ -22,9 +22,6 @@ make
 %install
 %makeinstall
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog NEWS README TODO
 %{_bindir}/xicc

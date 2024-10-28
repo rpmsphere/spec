@@ -1,15 +1,15 @@
-Name:		industrial-gnome-theme
+Name:           industrial-gnome-theme
 Version: 0.2.34
 Release: 9.1
-License:	GPL
-URL:		https://www.ximian.com/
-Source0:	ximian-artwork-%version.tar.bz2
+License:        GPL
+URL:            https://www.ximian.com/
+Source0:        ximian-artwork-%version.tar.bz2
 Source1:    Industrial-index.theme
-BuildRequires:	gtk+-devel
-BuildRequires:	gtk2-devel
+BuildRequires:  gtk+-devel
+BuildRequires:  gtk2-devel
 BuildRequires:  intltool
 BuildArch: noarch
-Summary:	The Default Style for Ximian Desktop
+Summary:        The Default Style for Ximian Desktop
 Group: Graphical desktop/GNOME
 Requires: gnome-icon-theme
 Requires: gtk2-engines
@@ -39,9 +39,6 @@ rm %buildroot%{_libdir}/gtk-2.0/engines/*
 rm -rf %buildroot%{_datadir}/themes/Industrial/gtk-2.0
 mv %buildroot%{_datadir}/pixmaps/backgrounds %buildroot%{_datadir}/backgrounds
 cp %{SOURCE1} %buildroot%{_datadir}/themes/Industrial/index.theme
-
-%clean
-rm -fr %buildroot
 
 %files
 %doc COPYING

@@ -31,9 +31,6 @@ install -m755 target/release/koto %{buildroot}%{_bindir}
 %doc LICENSE *.md
 %{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.12.0
 - Rebuilt for Fedora

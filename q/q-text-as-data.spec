@@ -1,13 +1,13 @@
-Name:		q-text-as-data
-Version:	2.0.0
-Release:	1
-Summary:	q - Text as Data
-Group:		Applications/Text
-License:	GPLv3
-URL:		https://github.com/harelba/q
-Source:		q-%{version}.tar.gz
-BuildArch:	noarch
-BuildRequires:	rubygem-ronn
+Name:           q-text-as-data
+Version:        2.0.0
+Release:        1
+Summary:        q - Text as Data
+Group:          Applications/Text
+License:        GPLv3
+URL:            https://github.com/harelba/q
+Source:         q-%{version}.tar.gz
+BuildArch:      noarch
+BuildRequires:  rubygem-ronn
 
 %description
 q allows to perform SQL-like statements on tabular text data.

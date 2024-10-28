@@ -7,7 +7,7 @@ Version:        1.14.1
 Release:        1
 BuildRequires:  ruby, rubygems
 BuildRequires:  rubypick
-BuildArch:	    noarch
+BuildArch:          noarch
 URL:            https://github.com/jordansissel/fpm
 Source:         https://rubygems.org/downloads/%{mod_name}-%{version}.gem
 Summary:        Package building and mangling

@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
-Summary:	A text mode Windows Manager
-Name:		twin
-Version:	0.9.0
-Release:	1
-License:	GPLv2
-Group:		Terminals
-URL:		https://sourceforge.net/projects/twin/
-Source0:	https://downloads.sourceforge.net/twin/%{name}-%{version}.tar.gz
-BuildRequires:	bison
-BuildRequires:	gpm-devel
-#BuildRequires:	libggi-devel
-BuildRequires:	ncurses-devel
-BuildRequires:	libX11-devel
-BuildRequires:	libXpm-devel
+Summary:        A text mode Windows Manager
+Name:           twin
+Version:        0.9.0
+Release:        1
+License:        GPLv2
+Group:          Terminals
+URL:            https://sourceforge.net/projects/twin/
+Source0:        https://downloads.sourceforge.net/twin/%{name}-%{version}.tar.gz
+BuildRequires:  bison
+BuildRequires:  gpm-devel
+#BuildRequires: libggi-devel
+BuildRequires:  ncurses-devel
+BuildRequires:  libX11-devel
+BuildRequires:  libXpm-devel
 
 %description
 Twin is a text-mode windowing environment.
@@ -24,9 +24,9 @@ in the same style as X11. It can display on Linux console, on X11
 and inside itself.
 
 %package devel
-Summary:	Devellopment files from twin
-Group:		Development/Other
-Requires:	%{name} = %{version}-%{release}
+Summary:        Devellopment files from twin
+Group:          Development/Other
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 Twin is a text-mode windowing environment.
@@ -38,10 +38,10 @@ You need this package to build twin applications.
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
 %configure \
-	--enable--shlibs=yes \
-	--enable--modules=yes \
-	--enable--unicode=yes \
-	--enable--asm=yes
+        --enable--shlibs=yes \
+        --enable--modules=yes \
+        --enable--unicode=yes \
+        --enable--asm=yes
 make
 
 %install

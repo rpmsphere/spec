@@ -1,12 +1,12 @@
-Summary:	ASCII Jump Game
-Name:		asciijump
-Version:	1.0.2beta
-Vendor:		Grzegorz Moskal <eldevarth@nemerle.org>
-Release:	1
-License:	GPL
-Group:		Applications/Games
-Source0:	https://asciijump.prv.pl/%{name}-%{version}.tar.gz
-BuildRequires:	slang-devel
+Summary:        ASCII Jump Game
+Name:           asciijump
+Version:        1.0.2beta
+Vendor:         Grzegorz Moskal <eldevarth@nemerle.org>
+Release:        1
+License:        GPL
+Group:          Applications/Games
+Source0:        https://asciijump.prv.pl/%{name}-%{version}.tar.gz
+BuildRequires:  slang-devel
 
 %description
 Ski jumping in text mode.
@@ -25,9 +25,6 @@ sed -i '32,35s|printf(|printf("%s",|' cmdline.c
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README-pl README

@@ -1,15 +1,15 @@
-Name:		apt4rpm
-Summary:	Create an APT repository
-Version:	0.69.3
-Release:	6.1
-Source:		%{name}-%{version}.tar.bz2
-License:	GPL
-BuildArch:	noarch
+Name:           apt4rpm
+Summary:        Create an APT repository
+Version:        0.69.3
+Release:        6.1
+Source:         %{name}-%{version}.tar.bz2
+License:        GPL
+BuildArch:      noarch
 URL:            https://apt4rpm.sourceforge.net
-Requires:	perl-XML-LibXML wget mktemp
+Requires:       perl-XML-LibXML wget mktemp
 BuildRequires:  perl bash
-Group:		System Environment/Base
-%define pkgdocdir	%{_defaultdocdir}/%{name}
+Group:          System Environment/Base
+%define pkgdocdir       %{_defaultdocdir}/%{name}
 
 %description
 This application creates an Advanced Package Tool (APT) 
@@ -31,9 +31,6 @@ make
 
 %install
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %config(noreplace) %{_sysconfdir}/apt/aptate.conf

@@ -8,8 +8,8 @@ BuildRequires: SDL-devel gcc-c++ mesa-libGL-devel
 BuildRequires: nasm libtool
 Version:      0.102.0.1
 Summary:      A port of the MESS
-Source:	      https://prdownloads.sourceforge.net/advancemame/%name-%version.tar.gz
-Patch:        fix-overflow.patch
+Source:       https://prdownloads.sourceforge.net/advancemame/%name-%version.tar.gz
+Patch0:       fix-overflow.patch
 URL: https://advancemame.sourceforge.net/readme.html
 
 %description
@@ -19,7 +19,7 @@ for PC Monitors.
 
 %prep
 %setup -q
-%patch
+%patch 0
 
 %build
 CFLAGS="$RPM_OPT_FLAGS -fno-strict-aliasing -Wno-format-security" CXXFLAGS="$RPM_OPT_FLAGS -fno-strict-aliasing -Wno-format-security" \
@@ -40,9 +40,6 @@ rm -f $RPM_BUILD_ROOT/%_mandir/man1/advcfg.1*
 rm -f $RPM_BUILD_ROOT/%_mandir/man1/advv.1*
 rm -f $RPM_BUILD_ROOT/%_mandir/man1/advmame.1*
 rm -f $RPM_BUILD_ROOT/%_mandir/man1/advdev.1*
-
-%clean
-rm -fr $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/adv*

@@ -30,9 +30,6 @@ Example=left_ptr
 Inherits=default
 EOF
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files 
 %doc README
 %{_datadir}/icons/%{theme_name}

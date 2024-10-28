@@ -41,9 +41,6 @@ if [ "%{_lib}" != "lib" ]; then
   mv $RPM_BUILD_ROOT%{_prefix}/lib $RPM_BUILD_ROOT%{_libdir}
 fi
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CHANGELOG LICENSE README TODO VERSION
 %doc %lang(ru) LICENSE.Russian

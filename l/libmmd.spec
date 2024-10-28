@@ -40,9 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 %__cp -a *.so* $RPM_BUILD_ROOT%{_libdir}
 %__cp -a *.h $RPM_BUILD_ROOT%{_includedir}/mmd
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING README
 %{_libdir}/*.so*

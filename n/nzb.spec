@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Name:			nzb
-Version:		0.3
-Summary:		A binary news grabber
-License:		GPL
-URL:			https://www.nzb.fi/
-Group:			Productivity/Network/News/Utilities
-Release:		23.1
-Source:			https://sourceforge.net/projects/nzb/files/%{name}/%{version}/%{name}-%{version}.tar.gz
-BuildRequires:	desktop-file-utils
-BuildRequires:	gcc-c++
-BuildRequires:	qt4-devel
+Name:                   nzb
+Version:                0.3
+Summary:                A binary news grabber
+License:                GPL
+URL:                    https://www.nzb.fi/
+Group:                  Productivity/Network/News/Utilities
+Release:                23.1
+Source:                 https://sourceforge.net/projects/nzb/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+BuildRequires:  desktop-file-utils
+BuildRequires:  gcc-c++
+BuildRequires:  qt4-devel
 
 %description
 nzb is a binary news grabber. It natively downloads, decodes and even streams
@@ -54,9 +54,6 @@ desktop-file-install                                    \
 %{_datadir}/applications/*%{name}.desktop
 %{_datadir}/pixmaps/*
 %{_bindir}/%{name}
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Dec 01 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3

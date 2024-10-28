@@ -26,10 +26,10 @@ Hint: The option -c makes it also work with color ;-)
 
 %prep
 %setup -q -n xmoontool-22sep94
-%patch0
-%patch1
-%patch2
-%patch3
+%patch 0
+%patch 1
+%patch 2
+%patch 3
 
 %build
 make %{?_smp_mflags} CFLAGS="%{optflags} -I%{_prefix}/include" XLIBDIR=%{_libdir}

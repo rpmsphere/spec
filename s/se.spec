@@ -32,9 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 %make_install
 mv %{buildroot}%{_bindir}/se %{buildroot}%{_bindir}/se-editor
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING README ChangeLog TODO NEWS
 %{_bindir}/*

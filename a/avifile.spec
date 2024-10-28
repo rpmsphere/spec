@@ -49,16 +49,16 @@ you will need to install %{name}-devel.
 
 %prep
 %setup -q -n %{name}-0.7-%{version}
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-%patch6 -p1
-%patch7 -p1
-%patch9 -p1
-%patch10 -p1
-%patch11 -p1
-%patch12 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
+%patch 5 -p1
+%patch 6 -p1
+%patch 7 -p1
+%patch 9 -p1
+%patch 10 -p1
+%patch 11 -p1
+%patch 12 -p1
 
 %{__cat} <<EOF >%{name}.desktop
 [Desktop Entry]
@@ -86,14 +86,14 @@ find . -type f -exec grep 'linux/videodev.h' {} \; -exec perl -p -i -e "s|linux/
 find . -type f -exec grep -- -lavcodec {} \; -exec perl -p -i -e "s|-lavcodec|-L%{_libdir}/compat-ffmpeg -lavcodec|g" {} \; -print
 
 ./configure --prefix=%{_prefix} --libdir=%{_libdir} \
-	--program-prefix="%{?_program_prefix}" \
-	--enable-static \
-	--enable-quiet \
-	--enable-release \
-	--enable-win32 \
-	--enable-x86opt \
-	--disable-mmx \
-	--disable-sdltest --with-sdl --without-lame
+        --program-prefix="%{?_program_prefix}" \
+        --enable-static \
+        --enable-quiet \
+        --enable-release \
+        --enable-win32 \
+        --enable-x86opt \
+        --disable-mmx \
+        --disable-sdltest --with-sdl --without-lame
 
 find . -name Makefile -exec %{__perl} -p -i -e "s|SDL_LIBS = 4 |SDL_LIBS = |g" {} \;
 
@@ -116,8 +116,8 @@ make DESTDIR=%{buildroot} install
 %{__install} -m0644 -D bin/test.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 %{__install} -m0755 -d %{buildroot}%{_datadir}/applications/
 desktop-file-install --vendor "" \
-	--dir %{buildroot}%{_datadir}/applications \
-	avifile.desktop
+        --dir %{buildroot}%{_datadir}/applications \
+        avifile.desktop
 
 %{__rm} -f doc/Makefile*
 
@@ -129,9 +129,6 @@ desktop-file-install --vendor "" \
 
 %postun
 /sbin/ldconfig 2>/dev/null
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc ChangeLog COPYING README doc/CREDITS doc/EXCEPTIONS doc/KNOWN_BUGS doc/README-DEVEL doc/TODO doc/VIDEO-PERFORMANCE doc/WARNINGS

@@ -35,9 +35,6 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 update-mime-database %{_datadir}/mime &> /dev/null
 update-desktop-database %{_datadir}/applications &> /dev/null
 
-%clean
-rm -rf %{buildroot}
-
 %files -f %{name}.lang
 %{_bindir}/gnomekiss
 %{_datadir}/applications/gnomekiss.desktop

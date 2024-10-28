@@ -1,12 +1,12 @@
-Summary: 	It Keeps on growing
-Name: 		ikog
-Version: 	1.90
-Release: 	3.1
-License: 	GPL
-Group: 		Applications/Productivity
-Source: 	%{name}-%{version}.zip
-URL:		https://sites.google.com/site/henspace/ikog
-BuildArch:	noarch
+Summary:        It Keeps on growing
+Name:           ikog
+Version:        1.90
+Release:        3.1
+License:        GPL
+Group:          Applications/Productivity
+Source:         %{name}-%{version}.zip
+URL:            https://sites.google.com/site/henspace/ikog
+BuildArch:      noarch
 
 %description 
 This is a very simple utility designed to make the management of your
@@ -32,9 +32,6 @@ cd %{_datadir}/%{name}
 EOF
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/%{name}.py
-
-%clean 
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

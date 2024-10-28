@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/openbarcodes
+%define fontdir %{_datadir}/fonts/openbarcodes
 
 Summary: Open Barcodes Fonts
 Name: openbarcodes-fonts
@@ -25,9 +25,6 @@ Barcode fonts include Code39, EAN13, Code128, 2of5code, PDF417,...
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{fontdir}
 install -m 0644 fonts/*.ttf $RPM_BUILD_ROOT%{fontdir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 [ -x /usr/bin/fc-cache ] && /usr/bin/fc-cache 2> /dev/null

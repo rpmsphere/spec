@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Name:		QTeXEngine
-Version:	0.3
-Release:	6.1
-Summary:	Library enabling Qt based applications to easily export graphics to TeX
-License:	GPLv3
-Group:		System Environment/Libraries
-URL:		https://soft.proindependent.com/qtexengine/
-Source0:	https://download.berlios.de/qtiplot/%{name}-%{version}-opensource.zip
+Name:           QTeXEngine
+Version:        0.3
+Release:        6.1
+Summary:        Library enabling Qt based applications to easily export graphics to TeX
+License:        GPLv3
+Group:          System Environment/Libraries
+URL:            https://soft.proindependent.com/qtexengine/
+Source0:        https://download.berlios.de/qtiplot/%{name}-%{version}-opensource.zip
 # Fixes the build and install of QTeXEngine
-Patch0:		QTeXEngine-svn1552-path.patch
-BuildRequires:	qt4-devel doxygen dos2unix
+Patch0:         QTeXEngine-svn1552-path.patch
+BuildRequires:  qt4-devel doxygen dos2unix
 
 %description
 QTeXEngine is a library enabling Qt based applications to easily export
@@ -18,11 +18,11 @@ graphics created using the QPainter class to TeX. It is built on top of
 QPaintEngine and uses the TikZ/Pgf graphic systems for TeX.
 
 %package devel
-Summary:	Development files for %{name}
-Group:		Development/Libraries
-Requires:	%{name}%{?_isa} = %{version}-%{release}
-Requires:	qt4-devel%{?_isa}
-Obsoletes:	%{name}-doc < 0.2-3.20100119svn
+Summary:        Development files for %{name}
+Group:          Development/Libraries
+Requires:       %{name}%{?_isa} = %{version}-%{release}
+Requires:       qt4-devel%{?_isa}
+Obsoletes:      %{name}-doc < 0.2-3.20100119svn
 
 %description devel
 The %{name}-devel package contains library, header file and documentation
@@ -30,7 +30,7 @@ for developing applications that use %{name}.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch 0 -p1
 
 rm -rf {example,test}/.svn
 
@@ -53,7 +53,7 @@ pushd doc
 doxygen Doxyfile
 # Fix the time stamp
 for file in html/*; do
-	touch -r Doxyfile $file
+        touch -r Doxyfile $file
 done
 popd
 
@@ -63,9 +63,6 @@ make install INSTALL="install -p" INSTALL_ROOT=%{buildroot} -C src
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc *.txt

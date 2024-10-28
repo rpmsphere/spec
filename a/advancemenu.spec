@@ -22,9 +22,6 @@ make
 %install
 make install prefix=$RPM_BUILD_ROOT/usr bindir=$RPM_BUILD_ROOT/%_bindir mandir=$RPM_BUILD_ROOT/%_mandir docdir=$RPM_BUILD_ROOT%_docdir
 
-%clean
-rm -fr $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/adv*
 %{_mandir}/man1/*

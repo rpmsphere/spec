@@ -39,9 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install-strip
 install -m644 %{name}.1 $RPM_BUILD_ROOT%{_datadir}/man/man1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %exclude %{_datadir}/applications
 %{_datadir}/pixmaps/*

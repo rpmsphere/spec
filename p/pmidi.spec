@@ -24,9 +24,6 @@ make
 %install
 %makeinstall
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.*

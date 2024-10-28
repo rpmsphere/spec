@@ -1,27 +1,27 @@
-Name:		librepcb
-Version:	1.0.0
-Release:	1
-Summary:	A powerful, innovative and intuitive EDA tool for everyone
-License:	GPLv3+
-Group:		Sound/Players
-URL:		https://librepcb.org
-Source0:	https://download.librepcb.org/releases/%{version}/%{name}-%{version}-source.zip
-BuildRequires:	qt5-qttools
-BuildRequires:	pkgconfig(Qt5Concurrent)
-BuildRequires:	pkgconfig(Qt5Core)
-BuildRequires:	pkgconfig(Qt5Gui)
-BuildRequires:	pkgconfig(Qt5Network)
-BuildRequires:	pkgconfig(Qt5OpenGL)
-BuildRequires:	pkgconfig(Qt5PrintSupport)
-BuildRequires:	pkgconfig(Qt5Sql)
-BuildRequires:	pkgconfig(Qt5Svg)
-BuildRequires:	pkgconfig(Qt5Test)
-BuildRequires:	pkgconfig(Qt5Widgets)
-BuildRequires:	pkgconfig(Qt5Xml)
-BuildRequires:	pkgconfig(gl)
-BuildRequires:	SFML-devel
-BuildRequires:	opencascade-devel
-Requires:	qt5-qtbase
+Name:           librepcb
+Version:        1.0.0
+Release:        1
+Summary:        A powerful, innovative and intuitive EDA tool for everyone
+License:        GPLv3+
+Group:          Sound/Players
+URL:            https://librepcb.org
+Source0:        https://download.librepcb.org/releases/%{version}/%{name}-%{version}-source.zip
+BuildRequires:  qt5-qttools
+BuildRequires:  pkgconfig(Qt5Concurrent)
+BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Gui)
+BuildRequires:  pkgconfig(Qt5Network)
+BuildRequires:  pkgconfig(Qt5OpenGL)
+BuildRequires:  pkgconfig(Qt5PrintSupport)
+BuildRequires:  pkgconfig(Qt5Sql)
+BuildRequires:  pkgconfig(Qt5Svg)
+BuildRequires:  pkgconfig(Qt5Test)
+BuildRequires:  pkgconfig(Qt5Widgets)
+BuildRequires:  pkgconfig(Qt5Xml)
+BuildRequires:  pkgconfig(glu)
+BuildRequires:  SFML-devel
+BuildRequires:  opencascade-devel
+Requires:       qt5-qtbase
 
 %description
 LibrePCB is a free EDA software to develop printed circuit boards.

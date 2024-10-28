@@ -43,9 +43,6 @@ EOF
 # Desktop menu entry
 %{__install} -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %doc README
 %{_bindir}/%{name}

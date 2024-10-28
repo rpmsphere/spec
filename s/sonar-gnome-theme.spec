@@ -28,9 +28,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 cp -a index.theme mozilla gtk-2.0 metacity-1 gtk-3.0 $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING AUTHORS
 %{_datadir}/themes/%{theme_name}

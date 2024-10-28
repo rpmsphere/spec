@@ -79,9 +79,6 @@ cp pkgIndex.tcl $RPM_BUILD_ROOT%{tcl_sitearch}/tclfuntools
 mv $RPM_BUILD_ROOT/usr/lib/* $RPM_BUILD_ROOT/usr/lib64/
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post libs -p /sbin/ldconfig
 
 %postun libs -p /sbin/ldconfig

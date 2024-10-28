@@ -1,11 +1,11 @@
-Summary:	1C 7.7 SQL handling utility
-Name:		unsql
-Version:	0.0.3
-Release:	3.1
-Group:		Utility
-License:	GPL
-Source:		%{name}_%{version}.tar.bz2
-BuildRequires:	gcc-c++, glibc-devel
+Summary:        1C 7.7 SQL handling utility
+Name:           unsql
+Version:        0.0.3
+Release:        3.1
+Group:          Utility
+License:        GPL
+Source:         %{name}_%{version}.tar.bz2
+BuildRequires:  gcc-c++, glibc-devel
 
 %description
 Utility to decode 1Cv7.DBA file and to set new values in it from CLI.
@@ -18,9 +18,6 @@ Utility to decode 1Cv7.DBA file and to set new values in it from CLI.
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
 %{makeinstall} DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog README TODO

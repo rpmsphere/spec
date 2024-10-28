@@ -19,10 +19,10 @@ sed -i 's|-lixp|-lixp -Wl,--allow-multiple-definition|' cmd/Makefile
 sed -i \
     -e "/^PREFIX/s|=.*|= /usr|" \
 %ifarch x86_64 aarch64
-	-e "s|/usr/lib|/usr/lib64|g" \
-	-e "/ LIBDIR/s|=.*|= /usr/lib64|" \
+        -e "s|/usr/lib|/usr/lib64|g" \
+        -e "/ LIBDIR/s|=.*|= /usr/lib64|" \
 %endif
-	config.mk
+        config.mk
 make
 
 %install

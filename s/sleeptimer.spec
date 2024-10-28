@@ -1,13 +1,13 @@
-Name:		sleeptimer
-Version:	0.64
-Release:	2.1
-License:	GPL
-Group:		System/Configuration/Other
-URL:		https://www.pclinuxos.com/
-Source:		sleeptimer-%{version}.tar.xz
-Summary:	To shutdown the computer automatically
-Summary(de):	Zum automatischen Herunterfahren des Computers
-BuildArch: 	noarch
+Name:           sleeptimer
+Version:        0.64
+Release:        2.1
+License:        GPL
+Group:          System/Configuration/Other
+URL:            https://www.pclinuxos.com/
+Source:         sleeptimer-%{version}.tar.xz
+Summary:        To shutdown the computer automatically
+Summary(de):    Zum automatischen Herunterfahren des Computers
+BuildArch:      noarch
 
 %description
 Enter the minutes to wait for shutdown.
@@ -52,9 +52,6 @@ msgfmt -o %{buildroot}%{_datadir}/locale/de/LC_MESSAGES/%{name}.mo $RPM_BUILD_DI
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/locale/*/LC_MESSAGES/%{name}.mo
 %doc README COPYING CHANGELOG
-
-%clean
-rm -rf %{buildroot}
 
 %changelog
 * Thu Apr 14 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.64

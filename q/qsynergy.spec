@@ -8,7 +8,7 @@ Group:          Productivity/Networking/Other
 URL:            https://www.volker-lanz.de/en/software/qsynergy/
 Source:         %{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel
-BuildRequires:	qt4-devel gcc-c++
+BuildRequires:  qt4-devel gcc-c++
 Summary:        Qt GUI for easily configuring Synergy2
 Requires:       synergy
 
@@ -32,9 +32,6 @@ qmake-qt4
 %__install -Dm 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 %__install -Dm 0644 dist/%{name}.xpm $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.xpm
 %__install -Dm 0644 dist/debian/%{name}.desktop $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc README

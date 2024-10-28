@@ -26,9 +26,6 @@ mv COPYING README $RPM_BUILD_ROOT%{_datadir}/doc/%{name}-%{version}
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 cp -a * $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/icons/%{theme_name}
 %{_datadir}/doc/%{name}-%{version}

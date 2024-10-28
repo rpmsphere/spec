@@ -11,7 +11,7 @@ BuildRequires:  gstreamer-devel
 Requires:       ruby qt4 aspell gstreamer mesa-libGL
 Group:          Productivity/Graphics/Other
 Summary:        KTooN Open Media Library
-URL:		https://www.ktoon.net/
+URL:            https://www.ktoon.net/
 BuildRequires:  compat-ffmpeg-devel
 
 %description
@@ -61,9 +61,6 @@ ln -s libkgui.so.1.0.0 $RPM_BUILD_ROOT/%{_libdir}/libkgui.so.1
 ln -s libkgui.so.1.0.0 $RPM_BUILD_ROOT/%{_libdir}/libkgui.so.1.0
 cd ../plugins/kgstengine
 install -Dm755 libkgstengine.so $RPM_BUILD_ROOT/%{_libdir}/kom/plugins/libkgstengine.so
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_libdir}/lib*

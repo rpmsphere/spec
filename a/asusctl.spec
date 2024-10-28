@@ -23,6 +23,7 @@ BuildRequires: pkgconfig(atk)
 BuildRequires: pkgconfig(gdk-pixbuf-2.0)
 BuildRequires: pkgconfig(pango)
 BuildRequires: pkgconfig(gdk-3.0)
+BuildRequires: libusb1-devel
 
 %description
 asusd is a utility for Linux to control many aspects of various ASUS laptops
@@ -43,7 +44,7 @@ a notification service, and ability to run in the background.
 
 %prep
 %setup -q
-#%%patch1 -p1
+#%%patch 1 -p1
 
 %build
 export RUSTFLAGS="%rustflags"

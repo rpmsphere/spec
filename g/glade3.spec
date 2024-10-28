@@ -1,30 +1,30 @@
-Summary:	User Interface Designer for GTK+ 2
-Name:		glade3
-Version:	3.8.3
-Release:	6
-Epoch:		2
-License:	GPLv2+
-Group:		Development/Tools
-URL:		http://glade.gnome.org/
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/glade3/3.8/glade3-%{version}.tar.xz
+Summary:        User Interface Designer for GTK+ 2
+Name:           glade3
+Version:        3.8.3
+Release:        6
+Epoch:          2
+License:        GPLv2+
+Group:          Development/Tools
+URL:            http://glade.gnome.org/
+Source0:        http://ftp.gnome.org/pub/GNOME/sources/glade3/3.8/glade3-%{version}.tar.xz
 
-Requires:	hicolor-icon-theme
-Requires:	%{name}-libgladeui = %{?epoch:%{epoch}:}%{version}-%{release}
-BuildRequires:	desktop-file-utils
-BuildRequires:	gettext
-BuildRequires:	gnome-doc-utils
-BuildRequires:	gtk2-devel
-BuildRequires:	gtk-doc
-BuildRequires:	intltool
-BuildRequires:	libgnomeui-devel
-BuildRequires:	libtool
-BuildRequires:	libxml2-devel
-BuildRequires:	pygtk2-devel
-BuildRequires:	python2-devel
-BuildRequires:	scrollkeeper
-BuildRequires:	chrpath
-BuildRequires:	autoconf
-BuildRequires:	gnome-common
+Requires:       hicolor-icon-theme
+Requires:       %{name}-libgladeui = %{?epoch:%{epoch}:}%{version}-%{release}
+BuildRequires:  desktop-file-utils
+BuildRequires:  gettext
+BuildRequires:  gnome-doc-utils
+BuildRequires:  gtk2-devel
+BuildRequires:  gtk-doc
+BuildRequires:  intltool
+BuildRequires:  libgnomeui-devel
+BuildRequires:  libtool
+BuildRequires:  libxml2-devel
+BuildRequires:  pygtk2-devel
+BuildRequires:  python2-devel
+BuildRequires:  scrollkeeper
+BuildRequires:  chrpath
+BuildRequires:  autoconf
+BuildRequires:  gnome-common
 %description
 Glade is a RAD tool to enable quick and easy development of user interfaces for
 the GTK+ toolkit and the GNOME desktop environment.
@@ -38,24 +38,24 @@ The glade3 package contains a version of Glade for GTK+ 2.x. For GTK+ 3.x
 support, use the glade package instead.
 
 %package libgladeui
-Summary:	Widget library for Glade UI designer
+Summary:        Widget library for Glade UI designer
 # The libgladegtk.so modules is under (GPLv2+ and LGPLv2+), the icons are
 # under under LGPLv2, and the rest is GPLv2+.
 # For a breakdown of the licensing, see COPYING.
-License:	GPLv2+ and (GPLv2+ and LGPLv2+) and LGPLv2
-Group:		Development/Libraries
+License:        GPLv2+ and (GPLv2+ and LGPLv2+) and LGPLv2
+Group:          Development/Libraries
 
 %description libgladeui
 Libgladeui consists of the widgets that compose the Glade GUI as a separate
 library to ease the integration of Glade into other applications.
 
 %package libgladeui-devel
-Summary:	Development files for %{name}-libgladeui
+Summary:        Development files for %{name}-libgladeui
 # The glade-parser.h header is under LGPLv2+, and the rest is GPLv2+.
-License:	GPLv2+ and LGPLv2+
-Group:		Development/Libraries
-Requires:	%{name}-libgladeui = %{?epoch:%{epoch}:}%{version}-%{release}
-Requires:	devhelp
+License:        GPLv2+ and LGPLv2+
+Group:          Development/Libraries
+Requires:       %{name}-libgladeui = %{?epoch:%{epoch}:}%{version}-%{release}
+Requires:       devhelp
 
 %description libgladeui-devel
 This package contains development files for %{name}-libgladeui.

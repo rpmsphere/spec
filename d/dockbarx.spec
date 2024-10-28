@@ -1,23 +1,23 @@
 %undefine _debugsource_packages
-Name:		dockbarx
-Version:	0.93
-Release:	4
-Group:		Graphical desktop/GNOME
-License:	GPL
-Summary:	TaskBar with groupping and group manipulation.
-Source:		%{name}-%{version}.tar.gz
-URL:		https://launchpad.net/dockbar/dockbarx
-Requires:	gnome-python2-gconf
+Name:           dockbarx
+Version:        0.93
+Release:        4
+Group:          Graphical desktop/GNOME
+License:        GPL
+Summary:        TaskBar with groupping and group manipulation.
+Source:         %{name}-%{version}.tar.gz
+URL:            https://launchpad.net/dockbar/dockbarx
+Requires:       gnome-python2-gconf
 Requires:       python2-pyxdg
 Requires:       python2-pillow
 Requires:       python2-xlib
 Requires:       python2-keybinder
-Requires:	dbus-python
-Requires:	mate-panel
-Requires:	gnome-python2-desktop
-Requires:	gnome-python2-libwnck
-Requires:	numpy numpy-f2py
-#Requires:	deskbar-applet
+Requires:       dbus-python
+Requires:       mate-panel
+Requires:       gnome-python2-desktop
+Requires:       gnome-python2-libwnck
+Requires:       numpy numpy-f2py
+#Requires:      deskbar-applet
 #Requires:      gnome-python2-applet
 BuildRequires: python2
 BuildArch:  noarch
@@ -36,9 +36,6 @@ python2 setup.py build
 python2 setup.py install --root=$RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/avant-window-navigator/applets
 cp -r AWN/* $RPM_BUILD_ROOT%{_datadir}/avant-window-navigator/applets
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %{python2_sitelib}/dockbarx

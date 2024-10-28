@@ -1,24 +1,24 @@
 %undefine _debugsource_packages
 
-Name:			5ball
-Version:		0.43
-Release:		19.1
-Summary:		A simple logic game
-Group:			Amusements/Games/Board/Other
-License:		GPL
-URL:			https://www.pcbypaul.com/software/5ball.html
-Source0:		https://www.pcbypaul.com/software/dl/%{name}-%{version}.tar.gz
+Name:                   5ball
+Version:                0.43
+Release:                19.1
+Summary:                A simple logic game
+Group:                  Amusements/Games/Board/Other
+License:                GPL
+URL:                    https://www.pcbypaul.com/software/5ball.html
+Source0:                https://www.pcbypaul.com/software/dl/%{name}-%{version}.tar.gz
 Source1: %{name}.desktop
 Source2: %{name}.png
-BuildRequires:	atk-devel
-BuildRequires:	fontconfig-devel
-BuildRequires:	freetype-devel
-BuildRequires:	glib2-devel
-BuildRequires:	gtk2-devel
-BuildRequires:	pango-devel
-BuildRequires:	cairo-devel
-BuildRequires:	pkgconfig
-BuildRequires:	desktop-file-utils
+BuildRequires:  atk-devel
+BuildRequires:  fontconfig-devel
+BuildRequires:  freetype-devel
+BuildRequires:  glib2-devel
+BuildRequires:  gtk2-devel
+BuildRequires:  pango-devel
+BuildRequires:  cairo-devel
+BuildRequires:  pkgconfig
+BuildRequires:  desktop-file-utils
 
 %description
 5ball is a simple logic game. The goal of the game is to make the
@@ -40,15 +40,15 @@ chicks think it's sexy. Yeah.
 %prep
 %setup -q
 %__sed -i -e 's|/var/lib/games/5ball-scores|/var/games/5ball-scores|g' \
-	src/child.c
+        src/child.c
 %__sed -i -e 's|/var/lib/games/5ball-scores|/var/games/5ball-scores|g' \
-	src/scoreboard.c
+        src/scoreboard.c
 
 %build
 export CFLAGS="-Wno-error -fPIC"
 autoreconf -ivf
 %configure \
-	--localstatedir=/var/games
+        --localstatedir=/var/games
 %__make %{?jobs:-j%{jobs}}
 
 %install
@@ -61,13 +61,10 @@ autoreconf -ivf
 
 %post
 if [ ! -f /var/games/5ball-scores ]; then
-	touch /var/games/5ball-scores
+        touch /var/games/5ball-scores
 fi
 %__chgrp games /var/games/5ball-scores
 %__chmod 0664  /var/games/5ball-scores
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog NEWS README TODO

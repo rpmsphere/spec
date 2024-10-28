@@ -6,7 +6,7 @@ Version:        1.3
 Release:        5.1
 License:        GPL v2 or later
 Source:         coolmail-1.3.tar.gz
-Patch0:	        coolmail-getlogin.patch
+Patch0:         coolmail-getlogin.patch
 Group:          Productivity/Networking/Email/Utilities
 Summary:        A mail notification utility with 3D animated graphics
 
@@ -19,7 +19,7 @@ regular interval.
 
 %prep
 %setup
-%patch0 -p1
+%patch 0 -p1
 
 %build
 make
@@ -27,9 +27,6 @@ make
 %install
 mkdir -p $RPM_BUILD_ROOT/%_mandir/man1 $RPM_BUILD_ROOT/usr/bin
 make MANDIR=$RPM_BUILD_ROOT/%_mandir/man1 BINDIR=$RPM_BUILD_ROOT/usr/bin install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/coolmail

@@ -9,7 +9,7 @@ Summary:        Xhextris and CXhextris, hexagonal versions of Xtetris
 License:        MIT
 Group:          Amusements/Games/Puzzle
 Source:         hextris.tar.gz
-Patch:          hextris.dif
+Patch0:          hextris.dif
 URL:            https://www.hextris.com/blog/
 BuildRequires:  imake
 BuildRequires:  libX11-devel
@@ -29,7 +29,7 @@ Authors:
 
 %prep
 %setup -q -n hextris
-%patch
+%patch 0
 
 %build
 make %{?_smp_mfalgs} -f Makefile.Linux compile FONTDIR=%{_datadir}/fonts MANDIR=%{_mandir}

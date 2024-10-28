@@ -22,7 +22,7 @@ to solve.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 
 %build
 cd src
@@ -53,9 +53,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/16x16/apps $RPM_BUILD_ROOT%{_d
 bzcat %{SOURCE10} > $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 bzcat %{SOURCE11} > $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
 bzcat %{SOURCE12} > $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README DOC copyright

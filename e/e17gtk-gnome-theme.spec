@@ -32,9 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 cp -a index.theme e17.jpg gtk-2.0 gtk-3.0 metacity-1 $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING NEWS README.md WORKAROUNDS
 %{_datadir}/themes/%{theme_name}

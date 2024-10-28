@@ -10,7 +10,7 @@ License:        GPL
 Source0:        %name-0.9a-git04.tar.gz
 Group:          Productivity/Graphics/Other
 Summary:        2D animation toolkit
-Patch0:		ktoon-0.9a-git04-permissive.patch
+Patch0:         ktoon-0.9a-git04-permissive.patch
 
 %description
 * A design and authoring tool for 2D Animation inspired by animators for animators
@@ -21,7 +21,7 @@ Patch0:		ktoon-0.9a-git04-permissive.patch
 
 %prep
 %setup -q -n %name-0.9a-git04
-%patch0
+%patch 0
 rm src/plugins/*/*/*.so
 sed -i 's|bool \*ok = false;|bool *ok;*ok = false;|' src/components/library/ktlibrarywidget.cpp
 
@@ -81,9 +81,6 @@ install -Dm644 icons/ktoon.png $RPM_BUILD_ROOT/%{_datadir}/pixmaps/ktoon.png
 cd ../src/plugins
 install -d -m755 $RPM_BUILD_ROOT/%{_libdir}/ktoon/plugins
 install -m755 */*/*.so $RPM_BUILD_ROOT/%{_libdir}/ktoon/plugins
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}*

@@ -1,20 +1,20 @@
 %undefine _debugsource_packages
-%global _rname chains	
+%global _rname chains   
 
-Name:		bubble-chains
-Version:	0.1.1
-Release:	25.4
-Summary:	Combine color bubbles into chains
-Group:		Amusements/Games		
-License:	GPLv3
-URL:		https://bubble-chains.sintegrial.com/
-Source0:	https://bubble-chains.sintegrial.com/files/%{_rname}-%{version}-src.7z
-Source1:	%{_rname}.desktop
-Source2:	%{_rname}.png
-Patch0:		%{name}-%{version}-dirs.patch	
-BuildRequires:	qt4-devel, SDL_mixer-devel
-BuildRequires:	p7zip
-Requires:	timidity++
+Name:           bubble-chains
+Version:        0.1.1
+Release:        25.4
+Summary:        Combine color bubbles into chains
+Group:          Amusements/Games                
+License:        GPLv3
+URL:            https://bubble-chains.sintegrial.com/
+Source0:        https://bubble-chains.sintegrial.com/files/%{_rname}-%{version}-src.7z
+Source1:        %{_rname}.desktop
+Source2:        %{_rname}.png
+Patch0:         %{name}-%{version}-dirs.patch   
+BuildRequires:  qt4-devel, SDL_mixer-devel
+BuildRequires:  p7zip
+Requires:       timidity++
 
 %description
 The aim of Bubble Chains is to remove all of the targets on
@@ -24,7 +24,7 @@ until you have passed the last level and won the game.
 
 %prep
 %setup -q -n %{_rname}-%{version}-src
-%patch0
+%patch 0
 
 %build
 qmake-qt4

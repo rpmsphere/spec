@@ -49,9 +49,6 @@ ln -s %{_fontconfig_templatedir}/%{fontconf} \
 install -Dm 0644 -p %{SOURCE2} \
         %{buildroot}%{_datadir}/appdata/%{fontname}.metainfo.xml
 
-%clean
-rm -fr %{buildroot}
-
 %_font_pkg -f %{fontconf} *.otf
 %{_datadir}/appdata/%{fontname}.metainfo.xml
 %doc NOTICE.txt OTF/COPYING *.pdf

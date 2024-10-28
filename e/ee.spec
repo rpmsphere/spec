@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Summary:	An easy editor
-Name:		ee
-Version:	1.5.2
-Release:	4.1
-License:	Artistic
-Group:		Editors
-URL:		https://mahon.cwx.net/
-Source0:	https://mahon.cwx.net/sources/%{name}-%{version}.src.tgz
+Summary:        An easy editor
+Name:           ee
+Version:        1.5.2
+Release:        4.1
+License:        Artistic
+Group:          Editors
+URL:            https://mahon.cwx.net/
+Source0:        https://mahon.cwx.net/sources/%{name}-%{version}.src.tgz
 
 %description
 An easy to use text editor. Intended to be usable with little or no instruction.
@@ -28,9 +28,6 @@ make -f make.local
 rm -rf $RPM_BUILD_ROOT
 install -m755 %{name} -D $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -m644 %{name}.1 -D $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.ee ee.i18n.guide Changes

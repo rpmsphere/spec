@@ -26,9 +26,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING README
 %{_bindir}/*

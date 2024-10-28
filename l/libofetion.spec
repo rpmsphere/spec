@@ -49,9 +49,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT -C build install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Jan 3 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.2
 - Rebuilt for Fedora

@@ -34,9 +34,6 @@ rename nemo nemodocs $RPM_BUILD_ROOT%{_bindir}/* $RPM_BUILD_ROOT%{_datadir}/loca
 sed -i 's|nemo.exe|nemodocs.exe|' $RPM_BUILD_ROOT%{_bindir}/nemodocs
 sed -i 's|=nemo|=nemodocs|' $RPM_BUILD_ROOT%{_datadir}/applications/*
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %{_bindir}/*
 %{_datadir}/applications/*

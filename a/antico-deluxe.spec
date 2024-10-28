@@ -37,9 +37,9 @@ programs which make use of Antico Deluxe.
 
 %prep
 %setup -q -n %srcname
-%patch0 -p1
-%patch1 -p2
-%patch2 -p2
+%patch 0 -p1
+%patch 1 -p2
+%patch 2 -p2
 
 find -type f -name \*.pro | xargs sed -i "s|/usr/lib|%_libdir|g"
 

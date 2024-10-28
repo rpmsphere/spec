@@ -7,18 +7,19 @@ Release: 1
 Source: https://moblin.org/build-results/projects/hildon-1/lpia/libhildon_%{version}-7.tar.gz
 URL: https://www.moblin.org/projects/projects_ui.php
 BuildRequires: gtk2-devel
+BuildRequires: esound-devel
 
 %description
 The Hildon Application Framework is the same set of GTK-based classes
 that Nokia used with Maemo.
 
-%package	devel
-Summary:	Development files for %{name}
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
-Requires:	pkgconfig
+%package        devel
+Summary:        Development files for %{name}
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
+Requires:       pkgconfig
 
-%description	devel
+%description    devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
@@ -37,9 +38,6 @@ autoreconf -ifv
 %install
 %__rm -rf %{buildroot}
 %__make DESTDIR=%{buildroot} install
-
-%clean
-%__rm -rf %{buildroot}
 
 %post -p /sbin/ldconfig
 

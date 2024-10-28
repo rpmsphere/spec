@@ -1,14 +1,14 @@
 %global _name jieba
 
-Summary:	Chinese text segmentation
-Name:		python3-jieba
-Version:	0.39git
-Release:	1
-License: 	GPLv2
-Group: 		Development/Tools
-Source0:	%{_name}-master.zip
-URL:		https://github.com/fxsjy/jieba
-BuildArch:	noarch
+Summary:        Chinese text segmentation
+Name:           python3-jieba
+Version:        0.39git
+Release:        1
+License:        GPLv2
+Group:          Development/Tools
+Source0:        %{_name}-master.zip
+URL:            https://github.com/fxsjy/jieba
+BuildArch:      noarch
 
 %description
 "Jieba" (Chinese for "to stutter") Chinese text segmentation:
@@ -23,9 +23,6 @@ python3 setup.py build
 %install
 rm -fr $RPM_BUILD_ROOT
 python3 setup.py install --prefix=/usr --root=%{buildroot} --skip-build
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc Changelog LICENSE README.md

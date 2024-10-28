@@ -1,18 +1,18 @@
-Name:		instead
-Version:	3.4.1
-Release:	1
-Summary:	Simply text adventures/visual novels engine and game
-License:	GPLv2
-Group:		Games/Adventure
-URL:		https://github.com/instead-hub/instead
-Source0:	https://github.com/instead-hub/instead/releases/download/%{version}/%{name}_%{version}.tar.gz
-Patch0:		instead-desktop.patch
-BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(lua)
-BuildRequires:	pkgconfig(SDL2_mixer)
-BuildRequires:	pkgconfig(SDL2_image)
-BuildRequires:	pkgconfig(SDL2_ttf)
-BuildRequires:	pkgconfig(zlib)
+Name:           instead
+Version:        3.4.1
+Release:        1
+Summary:        Simply text adventures/visual novels engine and game
+License:        GPLv2
+Group:          Games/Adventure
+URL:            https://github.com/instead-hub/instead
+Source0:        https://github.com/instead-hub/instead/releases/download/%{version}/%{name}_%{version}.tar.gz
+Patch0:         instead-desktop.patch
+BuildRequires:  pkgconfig(gtk+-3.0)
+BuildRequires:  pkgconfig(lua)
+BuildRequires:  pkgconfig(SDL2_mixer)
+BuildRequires:  pkgconfig(SDL2_image)
+BuildRequires:  pkgconfig(SDL2_ttf)
+BuildRequires:  pkgconfig(zlib)
 BuildRequires: SDL2-devel
 
 %description
@@ -39,5 +39,5 @@ make PREFIX=/usr
 %{_mandir}/*/%{name}.*
 
 %changelog
-* Sun Jun 27 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.1
+* Sun Jun 26 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.1
 - Rebuilt for Fedora

@@ -22,9 +22,6 @@ mkdir -p $RPM_BUILD_ROOT/%{_datadir}/icons
 cp -a vibrant $RPM_BUILD_ROOT/%{_datadir}/icons/Vibrant
 ln -sf gnome-terminal.svg %{buildroot}%{_datadir}/icons/Vibrant/scalable/apps/terminal.svg
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/icons/Vibrant
 

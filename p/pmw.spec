@@ -1,11 +1,11 @@
-Summary:	A program to typeset music scores into Postscript
-Name:		pmw
-Version:	4.34
-Release:	1
-License:	GPLv2+
-Group:		Publishing
-URL:		https://www.quercite.com/pmw.html
-Source0:	https://www.quercite.com/%{name}-%{version}.tar.gz
+Summary:        A program to typeset music scores into Postscript
+Name:           pmw
+Version:        4.34
+Release:        1
+License:        GPLv2+
+Group:          Publishing
+URL:            https://www.quercite.com/pmw.html
+Source0:        https://www.quercite.com/%{name}-%{version}.tar.gz
 
 %description
 Philip's Music Writer is a program for typesetting music. It reads text files
@@ -24,9 +24,9 @@ make
 
 %install
 %makeinstall \
-	BINDIR=%{buildroot}%{_bindir} \
-	DATADIR=%{buildroot}%{_datadir}/pmw \
-	MANDIR=%{buildroot}%{_mandir}
+        BINDIR=%{buildroot}%{_bindir} \
+        DATADIR=%{buildroot}%{_datadir}/pmw \
+        MANDIR=%{buildroot}%{_mandir}
 
 rm -rf examples
 mkdir examples

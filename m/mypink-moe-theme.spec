@@ -36,9 +36,6 @@ cd %{theme_name}/pink
 cp %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/index.theme
 cp princesa-1ping.jpg $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/background.jpg
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 %{_datadir}/icons/%{icon_name}

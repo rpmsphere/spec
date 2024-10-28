@@ -1,8 +1,9 @@
+%define _python_dist_allow_version_zero 1
 %define __python /usr/bin/python3
 
 Name: python-bitey
 Summary: Bitcode Import Tool
-Version: 0.0.20120813
+Version: 0.20120813
 Release: 3.1
 Group: Applications/Tools
 License: BSD
@@ -29,5 +30,5 @@ python3 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 %{python3_sitelib}/*
 
 %changelog
-* Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.20120813
+* Sun May 19 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20120813
 - Rebuilt for Fedora

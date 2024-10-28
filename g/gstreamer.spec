@@ -116,9 +116,9 @@ with different major/minor versions of GStreamer.
 
 %prep
 %setup -q
-%patch0 -p1 -b .bison3
-%patch1 -p1 -b .rpm-provides
-%patch2 -p1 -b .fix-docs
+%patch 0 -p1 -b .bison3
+%patch 1 -p1 -b .rpm-provides
+%patch 2 -p1 -b .fix-docs
 
 %build
 %configure \

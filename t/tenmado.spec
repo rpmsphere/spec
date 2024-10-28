@@ -35,9 +35,6 @@ mkdir -p ${RPM_BUILD_ROOT}%{_datadir}/pixmaps
 mkdir -p ${RPM_BUILD_ROOT}%{_datadir}/applications
 %__install -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop

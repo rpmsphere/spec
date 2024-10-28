@@ -39,9 +39,6 @@ install -m 0644 updateGrub2.1.gz $RPM_BUILD_ROOT%{_mandir}/man1/updateGrub2.1.gz
 
 ln -s updateLegacyGrub $RPM_BUILD_ROOT%{_bindir}/updategrub
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README COPYING defaults
 %dir %{_sysconfdir}/%{name}
@@ -62,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 - Added updateGrub2
 * Mon Jan 9 2012 Agnelo de la Crotche <agnelo@unixversal.com> 1.6.1
 - Added Fedora 16 detection to updategrub and findgrub
-* Thu Dec 13 2011 Agnelo de la Crotche <agnelo@unixversal.com> 1.6
+* Tue Dec 13 2011 Agnelo de la Crotche <agnelo@unixversal.com> 1.6
 - added bootchart support to updategrub
 - required os-prober 1.49
 * Sun Nov 13 2011 Agnelo de la Crotche <agnelo@unixversal.com> 1.5.5

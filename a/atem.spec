@@ -24,9 +24,6 @@ make
 %install
 %make_install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/doc/%{name}
 %{_mandir}/man1/%{name}.1.*

@@ -36,9 +36,6 @@ install -d ${RPM_BUILD_ROOT}%{_datadir}/doc/%{name}
 mv ${RPM_BUILD_ROOT}/usr/doc/* ${RPM_BUILD_ROOT}%{_datadir}/doc/%{name}/
 sed -i 's|%{buildroot}||g' %{buildroot}%{_bindir}/ninix
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/ninix*
 /usr/lib/ninix*

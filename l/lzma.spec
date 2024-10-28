@@ -1,48 +1,48 @@
-%define	oldlzmaver	4.32.7
+%define oldlzmaver      4.32.7
 %define build_dkms 0
 
-Summary: 	LZMA utils
-Name: 		lzma
-Version: 	4.43
-Release: 	43
-License: 	GPL
-Group:		Archiving/Compression
-Source0:	https://tukaani.org/lzma/lzma-%{oldlzmaver}.tar.lzma
-Source1:	https://ovh.dl.sourceforge.net/sourceforge/sevenzip/lzma443.tar.bz2
-#Source2:	lzme
-Source3:	sqlzma.h
-#Patch0:	lzma-432-makefile.patch.bz2
-#Patch1:	lzma-432-makefile-sdknew.patch.bz2
-#Patch2:	lzma-4.43-lzmp.patch
+Summary:        LZMA utils
+Name:           lzma
+Version:        4.43
+Release:        43
+License:        GPL
+Group:          Archiving/Compression
+Source0:        https://tukaani.org/lzma/lzma-%{oldlzmaver}.tar.lzma
+Source1:        https://ovh.dl.sourceforge.net/sourceforge/sevenzip/lzma443.tar.bz2
+#Source2:       lzme
+Source3:        sqlzma.h
+#Patch0:        lzma-432-makefile.patch.bz2
+#Patch1:        lzma-432-makefile-sdknew.patch.bz2
+#Patch2:        lzma-4.43-lzmp.patch
 
 # (blino) modified for 443, from sqlzma1-449.patch:
 #   * adapted to lzma443 dist structure: s,/C/Compress/Lzma/,/C/7zip/Compress/LZMA_C/,; s,/CPP/7zip/Compress/LZMA_Alone/,/C/7zip/Compress/LZMA_Alone/,
 #   * use sqlzma.mk makefiles for 443 (from from sqlzma1-443.patch)
 #   * remove NCoderPropID::kNumThreads in comp.cc, it is invalid since we don't build LZMAEncoder.cpp with COMPRESS_MF_MT multithread support
-Patch3:		lzma-4.32.4-sqlzma.patch
+Patch3:         lzma-4.32.4-sqlzma.patch
 
-Patch4:		lzma-4.43-add-missing-header.patch
-Patch5:		lzma-4.43-quiet.patch
-Patch6:		lzma-4.43-update-version.patch
-Patch7:		lzma-4.43-fix-fast-compression.patch
-Patch8:		lzma-4.43-add-missing-gethandle.patch
-Patch9:		lzma-4.32.4-text-tune.patch
-#Patch10:	lzma-4.32.0beta3-fix-stdout.patch
-#Patch11:	lzma-4.43-fix-liblzmadec-header-includes.patch
+Patch4:         lzma-4.43-add-missing-header.patch
+Patch5:         lzma-4.43-quiet.patch
+Patch6:         lzma-4.43-update-version.patch
+Patch7:         lzma-4.43-fix-fast-compression.patch
+Patch8:         lzma-4.43-add-missing-gethandle.patch
+Patch9:         lzma-4.32.4-text-tune.patch
+#Patch10:       lzma-4.32.0beta3-fix-stdout.patch
+#Patch11:       lzma-4.43-fix-liblzmadec-header-includes.patch
 # 4.32.2 has changes to sdk that we replace with newer, we apply these to the new
-Patch12:	lzma-4.32.2-sdk-changes.patch
-#Patch13:	lzma-4.32.2-file_modes.patch
-#Patch14:	lzma-4.32.3-liblzmadec-fix.patch
-#Patch15:	lzma-4.32.5-fix-deprecated-string-conversion.patch
-Patch16:	lzma-4.32.7-format_not_a_string_literal_and_no_format_arguments.diff
+Patch12:        lzma-4.32.2-sdk-changes.patch
+#Patch13:       lzma-4.32.2-file_modes.patch
+#Patch14:       lzma-4.32.3-liblzmadec-fix.patch
+#Patch15:       lzma-4.32.5-fix-deprecated-string-conversion.patch
+Patch16:        lzma-4.32.7-format_not_a_string_literal_and_no_format_arguments.diff
 # for squashfs-lzma library
-BuildRequires:	pkgconfig(zlib)
-BuildRequires:	dos2unix
-BuildRequires:	diffutils
-URL:		https://tukaani.org/lzma/
+BuildRequires:  pkgconfig(zlib)
+BuildRequires:  dos2unix
+BuildRequires:  diffutils
+URL:            https://tukaani.org/lzma/
 
 %if !%build_dkms
-Obsoletes:	dkms-%{name} < %{version}-%{release}
+Obsoletes:      dkms-%{name} < %{version}-%{release}
 %endif
 
 %description
@@ -68,39 +68,39 @@ tools. Also provides:
 - Very similar command line interface than what gzip and bzip2 have.
 
 %package -n lzmadec-libs
-Summary:	Libraries for decoding LZMA compression
-Group:		System/Libraries
-License:	LGPL
+Summary:        Libraries for decoding LZMA compression
+Group:          System/Libraries
+License:        LGPL
 
 %description -n lzmadec-libs
 Libraries for decoding LZMA compression.
 
 %package -n lzmadec-devel
-Summary:	Devel libraries & headers for liblzmadec
-Group:		Development/C
-License:	LGPL
-Provides:	lzmadec-devel = %{version}-%{release}
-Requires:	lzmadec-libs = %{version}
+Summary:        Devel libraries & headers for liblzmadec
+Group:          Development/C
+License:        LGPL
+Provides:       lzmadec-devel = %{version}-%{release}
+Requires:       lzmadec-libs = %{version}
 
 %description -n lzmadec-devel
 Devel libraries & headers for liblzmadec.
 
-%package -n	dkms-%{name}
-Summary:	Kernel modules for decoding LZMA compression
-Group:		System/Kernel and hardware
-License:	GPL
-Requires(post):	dkms
-Requires(preun):	dkms
+%package -n     dkms-%{name}
+Summary:        Kernel modules for decoding LZMA compression
+Group:          System/Kernel and hardware
+License:        GPL
+Requires(post): dkms
+Requires(preun):        dkms
 
-%description -n	dkms-%{name}
+%description -n dkms-%{name}
 Kernel modules for decoding LZMA compression.
 
 %prep
 %setup -q -n %{name}-%{oldlzmaver} -a1
-#%patch0 -p1 -b .427
-#%patch1 -p1 -b .427_sdk
-#%patch2 -p1
-%patch3 -p1 -b .sqlzma
+#%patch 0 -p1 -b .427
+#%patch 1 -p1 -b .427_sdk
+#%patch 2 -p1
+%patch 3 -p1 -b .sqlzma
 cp %{SOURCE3} .
 dos2unix *.txt
 
@@ -108,24 +108,24 @@ dos2unix *.txt
 mv src/sdk src/sdk.old
 cp -r C src/sdk
 for i in `find src/sdk.old -name Makefile.\*`; do
-	cp $i `echo $i|sed -e 's#sdk.old#sdk#g'`;
+        cp $i `echo $i|sed -e 's#sdk.old#sdk#g'`;
 done
 
 find src/sdk -name makefile|xargs rm -f
 
-%patch4 -p1 -b .config_h
-%patch5 -p1 -b .quiet
-%patch6 -p0 -b .version
-%patch7 -p0 -b .fast
-%patch8 -p0 -b .gethandle
-%patch9 -p1 -b .text
-#%patch10 -p1 -b .stdout
-#%patch11 -p1 -b .lzmadec_systypes
-%patch12 -p1 -b .4.32.2
-#%patch13 -p1 -b .file_modes
-#%patch14 -p1 -b .liblzmadec_fix
-#%%patch15 -p0 -b .fix_string_conversion
-%patch16 -p1 -b .format_not_a_string_literal_and_no_format_arguments
+%patch 4 -p1 -b .config_h
+%patch 5 -p1 -b .quiet
+%patch 6 -p0 -b .version
+%patch 7 -p0 -b .fast
+%patch 8 -p0 -b .gethandle
+%patch 9 -p1 -b .text
+#%patch 10 -p1 -b .stdout
+#%patch 11 -p1 -b .lzmadec_systypes
+%patch 12 -p1 -b .4.32.2
+#%patch 13 -p1 -b .file_modes
+#%patch 14 -p1 -b .liblzmadec_fix
+#%%patch 15 -p0 -b .fix_string_conversion
+%patch 16 -p1 -b .format_not_a_string_literal_and_no_format_arguments
 
 %if %build_dkms
 pushd C/7zip/Compress/LZMA_C
@@ -398,8 +398,8 @@ set -x
 
   + Per Øyvind Karlsen <peroyvind@mandriva.org>
     - sync lzmp patch with debian:
-      	o include <cstdlib> to be able to build with GCC 4.3. (Martin Michlmayr)
-      	o use hc4 for -1 option, as hc3 is no more built in the SDK. (Lasse Collin)
+        o include <cstdlib> to be able to build with GCC 4.3. (Martin Michlmayr)
+        o use hc4 for -1 option, as hc3 is no more built in the SDK. (Lasse Collin)
     - don't always output copyright notice (P5 from PLD)
     - add missing config.h header to sdk (missing due to my fugly merge with latest sdk ;)
 

@@ -29,10 +29,10 @@ Authors:
 
 %prep
 %setup0
-%patch0 -p1
-%patch1
-%patch2
-%patch3
+%patch 0 -p1
+%patch 1
+%patch 2
+%patch 3
 
 %build
 export CFLAGS="$RPM_OPT_FLAGS -Wall"
@@ -46,9 +46,6 @@ install -m 755 x0rfbserver/x0rfbserver $RPM_BUILD_ROOT%{_bindir}/
 install -m 755 xrfbviewer/{xrfbviewer,xplayfbs} $RPM_BUILD_ROOT%{_bindir}/
 install -m 755 rfbcat/rfbcat $RPM_BUILD_ROOT%{_bindir}/
 install -m 755 xvncconnect/xvncconnect $RPM_BUILD_ROOT%{_bindir}/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING INSTALL README rfm_fbs.1.0.html

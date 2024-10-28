@@ -10,12 +10,12 @@ URL: https://azsky2.html.xdomain.jp/linux/aobook/
 Source0: %{name}-%{version}.tar.xz
 BuildRequires: desktop-file-utils
 BuildRequires: libpng-devel
-#Requires: libx11-6,
-#Requires: libxext6,
-#Requires: libfreetype6,
-#Requires: libfontconfig1,
-#Requires: zlib1g,
-#Requires: libjpeg8,
+BuildRequires: libX11-devel
+BuildRequires: libXext-devel
+BuildRequires: freetype-devel
+BuildRequires: fontconfig-devel
+BuildRequires: zlib-devel
+BuildRequires: libjpeg-devel
 #Requires: fonts-takao
 
 %description

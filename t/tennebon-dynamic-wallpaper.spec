@@ -27,9 +27,6 @@ cp -a tennebon %{buildroot}%{_datadir}/backgrounds/
 install -Dm644 tennebon-dynamic-wallpaper.xml %{buildroot}%{_datadir}/gnome-background-properties/tennebon-dynamic-wallpaper.xml
 install -Dm644 tennebon-dynamic-wallpaper.xml %{buildroot}%{_datadir}/mate-background-properties/tennebon-dynamic-wallpaper.xml
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc COPYING
 %{_datadir}/backgrounds/tennebon

@@ -26,9 +26,6 @@ rm -rf %{buildroot}
 %make_install
 mv %{buildroot}%{_datadir}/doc/%{name}-%{version} %{buildroot}%{_datadir}/doc/%{name}
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %{_datadir}/doc/%{name}
 %{_bindir}/%{name}*

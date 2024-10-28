@@ -2,26 +2,26 @@
 %undefine _debugsource_packages
 %define oname Videoporama
 
-Name:		videoporama
-Version:	0.8.2
-Release:	76.4
-Summary:	A Python application to make video of image slide-show
-License:	GPLv2+
-Group:		Video
-URL:		https://www.videoporama.tuxfamily.org
-Source0:	%{oname}_%{version}-1.tar.gz
-BuildRequires:	desktop-file-utils
-BuildRequires:	python3-qt5-devel
-BuildRequires:	python3-pillow-devel
-BuildRequires:	qt5-qtbase-devel
-BuildRequires:	qscintilla-qt5-devel
-#BuildRequires:	xvid-devel
-BuildArch:	noarch
-Requires:	python3-pillow
-Requires:	ffmpeg
-Requires:	mjpegtools
-Requires:	sox
-Requires:	mplayer
+Name:           videoporama
+Version:        0.8.2
+Release:        76.4
+Summary:        A Python application to make video of image slide-show
+License:        GPLv2+
+Group:          Video
+URL:            https://www.videoporama.tuxfamily.org
+Source0:        %{oname}_%{version}-1.tar.gz
+BuildRequires:  desktop-file-utils
+BuildRequires:  python3-qt5-devel
+BuildRequires:  python3-pillow-devel
+BuildRequires:  qt5-qtbase-devel
+BuildRequires:  qscintilla-qt5-devel
+#BuildRequires: xvid-devel
+BuildArch:      noarch
+Requires:       python3-pillow
+Requires:       ffmpeg
+Requires:       mjpegtools
+Requires:       sox
+Requires:       mplayer
 
 %description
 Videoporama is a Python application for the creation of videos sequences
@@ -78,9 +78,9 @@ mkdir -p %{buildroot}%{_mandir}/man1
 install -m 0644 debian/%{name}.xpm %{buildroot}%{_datadir}/pixmaps/
 
 # Use the provided desktop file
-desktop-file-install	-m 0644 --dir %{buildroot}%{_datadir}/applications/ \
-			--add-category=Qt \
-			debian/%{name}.desktop
+desktop-file-install    -m 0644 --dir %{buildroot}%{_datadir}/applications/ \
+                        --add-category=Qt \
+                        debian/%{name}.desktop
 
 # Add the manpage
 install -m 0644 debian/%{name}.1 %{buildroot}%{_mandir}/man1/

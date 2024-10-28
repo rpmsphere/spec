@@ -37,9 +37,6 @@ python2 setup.py install \
    --prefix=%{_prefix} \
    --root=$RPM_BUILD_ROOT
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %doc *.txt
 %{python2_sitelib}/*

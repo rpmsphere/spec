@@ -30,9 +30,6 @@ cat > %{buildroot}/%{_bindir}/%{name} << EOF
 %{_datadir}/%{name}/bin/%{name}.py "\$@"
 EOF
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %attr(755,root,root) %{_bindir}/%{name}
 %{_datadir}/%{name}

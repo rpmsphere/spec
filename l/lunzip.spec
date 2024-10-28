@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name:		lunzip
-Summary:	Decompressor for lzip files
-Version:	1.5
-Release:	3.1
-License:	GPLv3+
-Group:		Archiving/Compression
-URL:		https://www.nongnu.org/lzip/lunzip.html
-Source0:	https://download.savannah.gnu.org/releases/lzip/%{name}-%{version}.tar.gz
-BuildRequires:	lzip
+Name:           lunzip
+Summary:        Decompressor for lzip files
+Version:        1.5
+Release:        3.1
+License:        GPLv3+
+Group:          Archiving/Compression
+URL:            https://www.nongnu.org/lzip/lunzip.html
+Source0:        https://download.savannah.gnu.org/releases/lzip/%{name}-%{version}.tar.gz
+BuildRequires:  lzip
 
 %description
 Lunzip is a decompressor for lzip files. It is written in C and its small size

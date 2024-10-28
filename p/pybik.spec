@@ -1,4 +1,4 @@
-%global __python3 /usr/bin/python3.10
+%global __python3 /usr/bin/python3
 
 Name:           pybik
 Version:        3.0
@@ -21,8 +21,8 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  ImageMagick
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  python3-docutils
-BuildRequires:  python3.10
-Requires:  python3.10
+#BuildRequires:  python3.10
+#Requires:  python3.10
 Requires:  python3-qt5
 Requires:  python3-pyicu
 

@@ -21,9 +21,6 @@ A frontend to "osc" to search for packages in openSUSE Build Service instances.
 %__rm -rf "$RPM_BUILD_ROOT"
 %__install -D -m0755 "%{SOURCE0}" "$RPM_BUILD_ROOT%{_bindir}/obs-find"
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %{_bindir}/obs-find
 

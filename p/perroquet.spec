@@ -1,21 +1,21 @@
 %undefine _debugsource_packages
-Summary:	A listening comprehension tutor
-Name:		perroquet
-Version:	1.1.1
-Release:	9.1
-Source0:	https://launchpad.net/perroquet/1.1/1.1.1/+download/%{name}-%{version}.tar.gz
-License:	GPLv3
-Group:		Education
-URL:		https://perroquet.b219.org
-BuildRequires:	python2-devel
-BuildRequires:	intltool
-BuildRequires:	python2-setuptools
-BuildRequires:	desktop-file-utils
-Requires:	gtk2
-Requires:	gstreamer-plugins-good
-Requires:	python2-gstreamer
-Requires:	pygtk2
-BuildArch:	noarch
+Summary:        A listening comprehension tutor
+Name:           perroquet
+Version:        1.1.1
+Release:        9.1
+Source0:        https://launchpad.net/perroquet/1.1/1.1.1/+download/%{name}-%{version}.tar.gz
+License:        GPLv3
+Group:          Education
+URL:            https://perroquet.b219.org
+BuildRequires:  python2-devel
+BuildRequires:  intltool
+BuildRequires:  python2-setuptools
+BuildRequires:  desktop-file-utils
+Requires:       gtk2
+Requires:       gstreamer-plugins-good
+Requires:       python2-gstreamer
+Requires:       pygtk2
+BuildArch:      noarch
 
 %description
 Perroquet is a educational program to improve playfully your listening in a
@@ -37,25 +37,22 @@ python2 setup.py build
 %install
 %__rm -rf $RPM_BUILD_ROOT
 python2 setup.py \
-	--without-icon-cache \
-	--without-mime-database \
-	--without-desktop-database \
-	install --root=$RPM_BUILD_ROOT
+        --without-icon-cache \
+        --without-mime-database \
+        --without-desktop-database \
+        install --root=$RPM_BUILD_ROOT
 sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 
 desktop-file-install \
-	--remove-key=Encoding \
-	--remove-category=Application \
-	--add-category=Languages \
-	--dir $RPM_BUILD_ROOT%{_datadir}/applications \
-	$RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
+        --remove-key=Encoding \
+        --remove-category=Application \
+        --add-category=Languages \
+        --dir $RPM_BUILD_ROOT%{_datadir}/applications \
+        $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
 %find_lang %name
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc README AUTHORS ChangeLog NEWS MAINTAINERS

@@ -42,9 +42,6 @@ make DESTDIR=$RPM_BUILD_ROOT LIBDIR=%{_libdir} install
 %{_includedir}/%{name}/*
 %{_libdir}/pkgconfig/%{name}.pc
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 /sbin/ldconfig
 

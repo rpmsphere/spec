@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Name: 	 	easychem
-Summary: 	2D molecular drawing program
-Version: 	0.6
-Release: 	15.1
-Source0:	https://puzzle.dl.sourceforge.net/sourceforge/easychem/%{name}-%{version}.tar.bz2
-Source1:	easychem.png
-Patch0:		easychem-0.6-link.patch
-URL:		https://easychem.sourceforge.net/
-License:	GPL
-Group:		Sciences/Chemistry
-BuildRequires:	gtk2-devel
+Name:           easychem
+Summary:        2D molecular drawing program
+Version:        0.6
+Release:        15.1
+Source0:        https://puzzle.dl.sourceforge.net/sourceforge/easychem/%{name}-%{version}.tar.bz2
+Source1:        easychem.png
+Patch0:         easychem-0.6-link.patch
+URL:            https://easychem.sourceforge.net/
+License:        GPL
+Group:          Sciences/Chemistry
+BuildRequires:  gtk2-devel
 
 %description
 EasyChem is a program designed to draw chemical molecules.  The problem in all
@@ -21,11 +21,11 @@ just like a specialized vectorial drawing tool.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 
 %build
 make -f Makefile.linux CC="gcc %optflags"
-										
+                                                                                
 %install
 mkdir -p $RPM_BUILD_ROOT/%_bindir
 cp %name $RPM_BUILD_ROOT/%_bindir

@@ -1,16 +1,16 @@
-Name:		epidermis
-Version:	0.6.2
-Release:	4.1
-Summary:	GTK theme manager
-License:	GPL
-Group:		User Interface/Desktop
-URL:		https://epidermis.tuxfamily.org/
-Source0:	https://launchpad.net/epidermis/0.x/0.6/+download/%{name}-%{version}.tar.gz
-BuildArch:	noarch
-BuildRequires:	python2
-BuildRequires:	po4a
-BuildRequires:	python2-pyxdg
-Requires:	pygtk2
+Name:           epidermis
+Version:        0.6.2
+Release:        4.1
+Summary:        GTK theme manager
+License:        GPL
+Group:          User Interface/Desktop
+URL:            https://epidermis.tuxfamily.org/
+Source0:        https://launchpad.net/epidermis/0.x/0.6/+download/%{name}-%{version}.tar.gz
+BuildArch:      noarch
+BuildRequires:  python2
+BuildRequires:  po4a
+BuildRequires:  python2-pyxdg
+Requires:       pygtk2
 
 %description
 Epidermis theme manager is an open source GTK application for managing,
@@ -32,9 +32,6 @@ python2 setup.py install --prefix=%{_prefix} --root $RPM_BUILD_ROOT
 mv $RPM_BUILD_ROOT%{_bindir}/run.py $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

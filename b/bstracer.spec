@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:       	bstracer
-Version:    	0.04
-Release:    	24.1
-Summary:    	Beesoft Tracer
-License:    	GPLv2+
-Group:      	File tools
-URL:        	https://www.beesoft.org/index.php?id=tracer
-Source:     	https://www.beesoft.org/download/%{name}_%{version}.tar.gz
-BuildRequires:	qt4-devel
-BuildRequires:	ghostscript-core ImageMagick
+Name:           bstracer
+Version:        0.04
+Release:        24.1
+Summary:        Beesoft Tracer
+License:        GPLv2+
+Group:          File tools
+URL:            https://www.beesoft.org/index.php?id=tracer
+Source:         https://www.beesoft.org/download/%{name}_%{version}.tar.gz
+BuildRequires:  qt4-devel
+BuildRequires:  ghostscript-core ImageMagick
 
 %description
 Beesoft Tracer is a suite of tools for a remote real time debugging of running

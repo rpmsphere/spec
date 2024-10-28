@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 %global _name QRandr
 
-Name:		qrandr
-Version:	2008.05.23
-Release:	1
-Summary:	Graphical screens configurator for Linux
-License:	open source
-Source0:	https://is.muni.cz/th/lmtbt/%{_name}.zip
-Source1:	https://is.muni.cz/th/lmtbt/annotation_english.txt
+Name:           qrandr
+Version:        2008.05.23
+Release:        1
+Summary:        Graphical screens configurator for Linux
+License:        open source
+Source0:        https://is.muni.cz/th/lmtbt/%{_name}.zip
+Source1:        https://is.muni.cz/th/lmtbt/annotation_english.txt
 Source2:        %{name}.desktop
 Source3:        %{name}.png
-Group:		User Interface/X
+Group:          User Interface/X
 URL:            https://is.muni.cz/th/lmtbt/
-BuildRequires:	gcc-c++, qt4-devel
+BuildRequires:  gcc-c++, qt4-devel
 
 %description
 The QRandr utility for configuring screens on Linux.
@@ -32,9 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 install -Dm755 src/%{_name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -Dm644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -Dm644 %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc annotation_english.txt

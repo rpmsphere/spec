@@ -6,8 +6,8 @@ Source: %{name}-%{version}.tar.bz2
 Patch1: %{name}-1.3.0-timer.patch
 Group: Games/Other
 URL: https://aa-project.sourceforge.net/aalib/
-BuildRequires:	aalib-devel
-BuildRequires:	libmikmod-devel
+BuildRequires:  aalib-devel
+BuildRequires:  libmikmod-devel
 License: GPLv2+
 
 %description
@@ -15,7 +15,7 @@ BB is a portable demo based on AAlib.
 
 %prep
 %setup -q
-%patch1 -p0 -b .timers
+%patch 1 -p0 -b .timers
 
 %build
 %configure 
@@ -24,9 +24,6 @@ make
 %install
 rm -r $RPM_BUILD_ROOT
 %makeinstall 
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

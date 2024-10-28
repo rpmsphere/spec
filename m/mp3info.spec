@@ -36,9 +36,6 @@ install -c -m 644 \
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.5a
 - Rebuilt for Fedora

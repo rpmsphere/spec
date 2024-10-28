@@ -41,9 +41,9 @@ It is written in C++ using SDL and OpenGL. Features:
 
 %prep
 %setup -q -n SDL-Ball_src
-#%patch0
-#%patch1 -p1
-#%patch2 -p1
+#%patch 0
+#%patch 1 -p1
+#%patch 2 -p1
 #sed -i 's|cr,cg,cb,|cr,cg,cb|' main.cpp
 
 %build

@@ -41,9 +41,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README
 %{_datadir}/%{name}

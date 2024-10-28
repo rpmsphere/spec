@@ -51,9 +51,6 @@ chmod +x %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 %{_libexecdir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Mar 6 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99
 - Rebuilt for Fedora

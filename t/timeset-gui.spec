@@ -1,13 +1,13 @@
-Name:		timeset-gui
-Version:	2.2.1
-Release:	2.1
-Summary:	A GUI for managing system date and time
-License:	GPLv3
-Group:		System Environment/Base
-URL:		https://github.com/aadityabagga/timeset-gui
-Source0:	https://github.com/aadityabagga/timeset-gui/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildArch:	noarch
-Requires:	beesu
+Name:           timeset-gui
+Version:        2.2.1
+Release:        2.1
+Summary:        A GUI for managing system date and time
+License:        GPLv3
+Group:          System Environment/Base
+URL:            https://github.com/aadityabagga/timeset-gui
+Source0:        https://github.com/aadityabagga/timeset-gui/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+BuildArch:      noarch
+Requires:       beesu
 Requires:       python-gobject
 Requires:       ntpdate
 Requires:       timedatectl

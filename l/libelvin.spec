@@ -11,7 +11,7 @@ License:      Non-Commercial
 Version:      4.0.3
 Release:      26.1
 Source0:      https://elvin.dstc.com/download/files/libelvin-%{version}.tar.gz
-Patch:        libelvin.patch
+Patch0:        libelvin.patch
 BuildRequires: libxml2-devel
 BuildRequires: openssl-devel
 
@@ -30,7 +30,7 @@ It also provides an Elvin command-line client.
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 
 %build
 ./configure \
@@ -85,9 +85,6 @@ rm -rf $RPM_BUILD_ROOT%{_prefix}/lib/nls
 %{_libdir}/lib*.a
 %{_libdir}/lib*.la
 %{_libdir}/lib*.so
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.3

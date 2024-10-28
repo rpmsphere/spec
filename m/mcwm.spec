@@ -29,9 +29,6 @@ install -Dm 0755 mcwm $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -Dm 0644 mcwm.man $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 install -Dm 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/xsessions/mcwm.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE
 %{_bindir}/mcwm

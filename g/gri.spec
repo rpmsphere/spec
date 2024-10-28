@@ -13,9 +13,9 @@ BuildRequires:  texinfo
 BuildRequires:  texlive-dvips
 BuildRequires:  perl-devel
 BuildRequires:  perl-Time-modules
-Source100:	    refcard.ps
-Source101:	    cmdrefcard.ps
-Patch0:			gri-brace.patch
+Source100:          refcard.ps
+Source101:          cmdrefcard.ps
+Patch0:                 gri-brace.patch
 
 %description
 Gri is a language for scientific graphics programming.  It is a
@@ -38,7 +38,7 @@ mathematical symbols in labels.
 cp %{SOURCE100} %{SOURCE101} doc
 sed -i -e 's|require "ctime.pl"|use Time::CTime|' -e 's|require "getopts.pl"|use Getopt::Std|' -e 's|Getopts|getopts|' doc/texinfo2HTML
 sed -i '18489s|subsubsection|subsection|' doc/gri.texi
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure
@@ -46,9 +46,6 @@ make -i -k DESTDIR=$RPM_BUILD_ROOT libdir=$RPM_BUILD_ROOT%{_datadir}/%{name} CXX
 
 %install
 make -i -k DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog README COPYING NEWS

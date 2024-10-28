@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
-Summary: 	Character editor and training manager
-Name: 		tegaki-train
-Version: 	0.3.1
-Release: 	1
-License: 	GPLv2+
-Group: 		System/Internationalization
-Source: 	https://www.tegaki.org/releases/%version/%name-%version.tar.gz
-URL: 		https://www.tegaki.org
-BuildRequires:	python2-setuptools
-Requires:	tegaki-pygtk
-BuildArch:	noarch
+Summary:        Character editor and training manager
+Name:           tegaki-train
+Version:        0.3.1
+Release:        1
+License:        GPLv2+
+Group:          System/Internationalization
+Source:         https://www.tegaki.org/releases/%version/%name-%version.tar.gz
+URL:            https://www.tegaki.org
+BuildRequires:  python2-setuptools
+Requires:       tegaki-pygtk
+BuildArch:      noarch
 
 %description
 Tegaki is an ongoing project which aims to develop a free and open-source
@@ -41,9 +41,6 @@ Categories=Development;
 EOF
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/*

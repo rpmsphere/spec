@@ -23,9 +23,6 @@ with Microsoft PowerPoint and its clones.
 %__rm -rf %{buildroot}
 %__make DESTDIR=%{buildroot} install
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc AUTHORS TODO COPYING
 %{_bindir}/%{name}

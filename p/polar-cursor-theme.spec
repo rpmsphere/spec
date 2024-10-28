@@ -26,12 +26,9 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons
 cp -a * $RPM_BUILD_ROOT%{_datadir}/icons
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files 
 %{_datadir}/icons/%{theme_name}*
 
 %changelog
-* Mon May 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
+* Tue May 03 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4
 - Rebuilt for Fedora

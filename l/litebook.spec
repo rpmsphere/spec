@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		litebook
-Version:	3.0
-Release:	10.1
-Summary:	Light-weight and useful reader
-Source0:	https://litebook-project.googlecode.com/files/LiteBook_v%{version}.tar.gz
-URL:		https://code.google.com/p/litebook-project/
-Group:		Applications/Text
-License:	Apache License 2.0
-BuildRequires:	ghostscript-core ImageMagick
-Requires:	python2-wxpython, python2-chardet, python2-rarfile, python2-netifaces
+Name:           litebook
+Version:        3.0
+Release:        10.1
+Summary:        Light-weight and useful reader
+Source0:        https://litebook-project.googlecode.com/files/LiteBook_v%{version}.tar.gz
+URL:            https://code.google.com/p/litebook-project/
+Group:          Applications/Text
+License:        Apache License 2.0
+BuildRequires:  ghostscript-core ImageMagick
+Requires:       python2-wxpython, python2-chardet, python2-rarfile, python2-netifaces
 #BuildArch:  noarch
 
 %description
@@ -48,9 +48,6 @@ Type=Application
 EOF
 
 %__install -D -m 644 %{name}-0.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

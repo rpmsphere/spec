@@ -9,7 +9,7 @@ URL:            https://alsamodular.sourceforge.net/
 License:        GPLv2
 Group:          Sound
 BuildRequires:  qt4-devel alsa-lib-devel
-BuildRequires:	pkgconfig(jack)
+BuildRequires:  pkgconfig(jack)
 
 %description
 QARecord is a simple multithreaded stereo recording tool. It can record both
@@ -18,8 +18,8 @@ buffer overruns are avoided. QARecord can also be used as JACK client.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 iconv -f=latin1 -t=utf8 man/de/%{name}.1 -o man/de/%{name}.1
 iconv -f=latin1 -t=utf8 man/fr/%{name}.1 -o man/fr/%{name}.1
 

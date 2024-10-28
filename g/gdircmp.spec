@@ -1,13 +1,13 @@
-Name:			gdircmp
-Summary:		Compare directories and select files to copy
-Version:		0.8
-Release:		14.1
-Group:			Productivity/File utilities
-License:		GPL
-Source:			%{name}-%{version}.tar.gz
-URL:			https://home.hccnet.nl/paul.schuurmans/linux/index.html#xdircmp
-BuildRequires:		gtk2-devel
-BuildRequires:		libX11-devel
+Name:                   gdircmp
+Summary:                Compare directories and select files to copy
+Version:                0.8
+Release:                14.1
+Group:                  Productivity/File utilities
+License:                GPL
+Source:                 %{name}-%{version}.tar.gz
+URL:                    https://home.hccnet.nl/paul.schuurmans/linux/index.html#xdircmp
+BuildRequires:          gtk2-devel
+BuildRequires:          libX11-devel
 
 %description
 This is a simple utitlty that compares two directories, displays the
@@ -29,9 +29,6 @@ install -D -m755 src/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 %files
 %{_bindir}/%{name}
 %doc AUTHORS COPYING ChangeLog INSTALL NEWS README TODO
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8

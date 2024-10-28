@@ -1,6 +1,6 @@
 %define pkg_name StepIntoChinese
 
-Name:		stepintochinese
+Name:           stepintochinese
 Version:        0.6
 Release:        1
 Summary:        Step Into Chinese is a flexible language-mining tool to assist English speakers seeking to understand Chinese language.
@@ -9,7 +9,7 @@ License:        LGPL
 URL:            https://wiki.mozilla.org/Special:Search?search=i18n&go=Go
 Source0:        https://www.asymptopia.org/filemgmt_data/files/%{pkg_name}-%{version}.tgz
 Requires:       python2, pygame
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 Step Into Chinese is a flexible language-mining tool to assist English speakers seeking to understand Chinese language. The lack of a one-to-one correspondence between Chinese characters and the corresponding Pinyin is often regarded as the greatest difficulty facing learners of Chinese. Step Into Chinese has been designed to address exactly this difficulty.
@@ -60,9 +60,6 @@ EOF
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*/*.py
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}

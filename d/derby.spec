@@ -25,7 +25,7 @@ BuildRequires:  java-devel >= 1.8
 BuildRequires:  javacc
 BuildRequires:  javapackages-tools
 BuildRequires:  junit
-BuildRequires:  lucene
+#BuildRequires:  lucene
 BuildRequires:  systemd
 BuildRequires:  xalan-j2
 BuildRequires:  xml-commons-apis
@@ -60,12 +60,12 @@ find -name '*.class' -delete
 
 rm java/engine/org/apache/derby/impl/sql/compile/Token.java
 rm java/build/org/apache/derbyBuild/javadoc/*.java
-%patch1
-%patch2
-%patch3
-%patch4 -p1
-%patch5 -p1
-%patch6
+%patch 1
+%patch 2
+%patch 3
+%patch 4 -p1
+%patch 5 -p1
+%patch 6
 
 # Don't use Class-Path in manifests
 sed -i -e '/Class-Path/d' build.xml

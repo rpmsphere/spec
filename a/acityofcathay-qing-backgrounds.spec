@@ -25,9 +25,6 @@ cp default.jpg default.xml *.svg $RPM_BUILD_ROOT/%{_datadir}/backgrounds/acityof
 install -Dm644 %{name}.xml $RPM_BUILD_ROOT%{_datadir}/gnome-background-properties/%{name}.xml
 install -Dm644 %{name}.xml $RPM_BUILD_ROOT%{_datadir}/mate-background-properties/%{name}.xml
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/backgrounds/acityofcathay-qing
 %{_datadir}/*-background-properties/%{name}.xml

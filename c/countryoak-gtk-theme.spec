@@ -9,7 +9,7 @@ Group:          User Interface/Desktops
 URL:            https://gnome-look.org/content/show.php/Country+Oak?content=127617
 Source0:        https://gnome-look.org/CONTENT/content-files/127617-Country_Oak.tar.bz2
 Source1:        %{theme_name}-index.theme
-BuildArch:	    noarch
+BuildArch:          noarch
 Requires:       tierrauim-wood-metacity-theme
 Requires:       ubo-icon-theme
 Requires:       knotvista-cursor-theme
@@ -29,9 +29,6 @@ cp %{SOURCE1} index.theme
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 cp -a * $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %{_datadir}/themes/%{theme_name}

@@ -34,7 +34,7 @@ additionally a variety of other repositories can easily be added.
 %prep
 %setup -q
 
-%patch0 -p1 -b .fixdso
+%patch 0 -p1 -b .fixdso
 cp %{SOURCE2} po/zh_TW.po
 sed -i 's/pl ru sk/pl ru sk zh_TW/' configure*
 sed -i 's|curl/types.h|curl/curl.h|' src/*
@@ -54,9 +54,6 @@ rm -rf %{buildroot}%{_datadir}/applications/tangogps.desktop
 rm -rf %{buildroot}/usr/doc/%{name}/
 
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc COPYING 

@@ -17,7 +17,7 @@ redirecting both input and output from/to it.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %{__make} %{?_smp_mflags} RPM_OPTS="%{optflags}"
@@ -28,9 +28,6 @@ redirecting both input and output from/to it.
 %{__install} -Dp -m0755 ttysnoops %{buildroot}%{_sbindir}/ttysnoops
 %{__install} -Dp -m0644 ttysnoop.8 %{buildroot}%{_mandir}/man8/ttysnoop.8
 %{__install} -Dp -m0644 snooptab.dist %{buildroot}%{_sysconfdir}/snooptab
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc README

@@ -64,9 +64,9 @@ of equations, written in the C language using object oriented design.
 %prep
 %setup -c -q
 
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 
 %package devel
 Summary:        Header files for the SPOOLES library
@@ -101,9 +101,9 @@ chmod 755 %{buildroot}/%{my_libdir}/libspooles.so.%{version}
 
 mkdir -p %{buildroot}/%{my_incdir}/spooles
 for headerfile in `find . -name \*.h -print`; do
-	dir="%{buildroot}/%{my_incdir}/spooles/`dirname $headerfile`"
-	mkdir -p $dir
-	install -m 644 $headerfile $dir
+        dir="%{buildroot}/%{my_incdir}/spooles/`dirname $headerfile`"
+        mkdir -p $dir
+        install -m 644 $headerfile $dir
 done
 
 %post -p /sbin/ldconfig

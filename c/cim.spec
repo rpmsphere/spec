@@ -1,11 +1,11 @@
-Summary:	Simula to C translator: Mother of all OO-languages
-Name:		cim
-Version:	5.1
-Release:	6.1
-License:	GPLv2+
-Group:		Development/Languages
-URL:		https://www.gnu.org/software/cim/
-Source0:	https://ftp.gnu.org/gnu/cim/%{name}-%{version}.tar.gz
+Summary:        Simula to C translator: Mother of all OO-languages
+Name:           cim
+Version:        5.1
+Release:        6.1
+License:        GPLv2+
+Group:          Development/Languages
+URL:            https://www.gnu.org/software/cim/
+Source0:        https://ftp.gnu.org/gnu/cim/%{name}-%{version}.tar.gz
 
 %description
 Cim compiles Simula code to C and uses a C compiler like gcc to

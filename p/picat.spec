@@ -30,9 +30,6 @@ cp -a exs lib %{buildroot}%{_datadir}/%{name}
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Jul 23 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.5
 - Rebuilt for Fedora

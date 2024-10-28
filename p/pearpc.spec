@@ -23,8 +23,8 @@ running most PowerPC operating systems.
 %setup -q
 ### FIXME: Fix /usr/lib(64) for x86_64. (Please fix upstream)
 %{__perl} -pi.orig -e 's|/lib\b|/%{_lib}|g' configure
-%patch0
-%patch1
+%patch 0
+%patch 1
 sed -i 's|ht_printf(".*"msg)|ht_printf(msg)|' src/debug/tracers.h
 sed -i 's|ht_printf(".*"a)|ht_printf(a)|' src/system/ui/sdl/sysdisplay.cc
 
@@ -74,9 +74,6 @@ desktop-file-install --vendor "" \
     's|^(prom_driver_graphic =).*|$1 "%{_datadir}/pearpc/video.x"|g;
      s|^(pci_ide0_master_image =).*|$1 "%{_datadir}/pearpc/pearpc-3gib.img"|g' \
     $RPM_BUILD_ROOT%{_sysconfdir}/ppc.conf
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog README TODO ppccfg.example

@@ -19,7 +19,7 @@ scrolling/dumping, and data piping.
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 %__make %{?jobs:-j%{jobs}} \
@@ -32,9 +32,6 @@ scrolling/dumping, and data piping.
 %__make \
     BINDIR=%{buildroot}%{_bindir} \
     install
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc AUTHORS COPYING ChangeLog README

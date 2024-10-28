@@ -34,9 +34,6 @@ make CFLAGS="-g -O2 -fno-strict-aliasing"
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/jam
 %doc CHANGES README README.ORG

@@ -1,15 +1,15 @@
 %define __python /usr/bin/python2
-Name:			waitfor
-Version:		0.5
-Release:		3.1
-Summary:		Waits until specified Network Resource is available or Event has occured
-Source:			https://www.hennessynet.com/waitfor/waitfor-%{version}.tar.gz
-URL:			https://www.hennessynet.com/waitfor/
-Group:			System/Monitoring
-License:		GNU General Public License version 2 (GPL v2)
-BuildRequires:	make xmlto lynx
-BuildArch:		noarch
-Requires:		python2
+Name:                   waitfor
+Version:                0.5
+Release:                3.1
+Summary:                Waits until specified Network Resource is available or Event has occured
+Source:                 https://www.hennessynet.com/waitfor/waitfor-%{version}.tar.gz
+URL:                    https://www.hennessynet.com/waitfor/
+Group:                  System/Monitoring
+License:                GNU General Public License version 2 (GPL v2)
+BuildRequires:  make xmlto lynx
+BuildArch:              noarch
+Requires:               python2
 
 %description
 The waitfor utility will wait until a url is available, until a port is being
@@ -34,9 +34,6 @@ Authors:
 %__install -Dp -m0644 waitfor.1 "$RPM_BUILD_ROOT%{_mandir}/man1/waitfor.1"
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc COPYING README

@@ -43,9 +43,6 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/%{name}
 mkdir $RPM_BUILD_ROOT%{_bindir}
 ln -s ../share/%{name}/%{name}.tcl $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %{_bindir}/gorilla

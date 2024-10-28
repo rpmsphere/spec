@@ -11,6 +11,7 @@ Source0:       %{name}-%{version}.tar.gz
 #BuildRequires: libgnomecanvas-devel
 #BuildRequires: chrpath
 #BuildRequires: /usr/bin/gtkdocize gcc-c++
+BuildRequires: python3-pybind11
 Group: System/Libraries
 
 %description

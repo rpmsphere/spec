@@ -1,13 +1,13 @@
-Name:		irobotgame		
-Version:	0.7.5
-Release:	1
-Summary:	Irobot Game	
-Group:		Amusements/Games
-License:	GPL	
-URL: 		https://irobotgame.googlecode.com/		
-Source0:	https://irobotgame.googlecode.com/files/irobotgame-0.7.5.tar.gz
-Requires:	pyglet
-BuildArch:	noarch
+Name:           irobotgame              
+Version:        0.7.5
+Release:        1
+Summary:        Irobot Game     
+Group:          Amusements/Games
+License:        GPL     
+URL:            https://irobotgame.googlecode.com/              
+Source0:        https://irobotgame.googlecode.com/files/irobotgame-0.7.5.tar.gz
+Requires:       pyglet
+BuildArch:      noarch
 
 %description
 irobotgame is a robot dancing game develop for pyweek challenge.
@@ -26,9 +26,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -a AUTHORS COPYING data lib LICENSE LICENSE_OTHERS README VERSION $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %{_bindir}/%{name}

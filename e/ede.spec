@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name: 		ede
-Version: 	2.0
-#Version: 	2.1
-Release: 	14.9
-Source: 	%{name}-%{version}.tar.gz
-Summary:	Core programs for the Equinox Desktop Environment
-URL: 		https://ede.sourceforge.net/
-License: 	GPL
-Group: 		Graphical desktop/Other
+Name:           ede
+Version:        2.0
+#Version:       2.1
+Release:        14.9
+Source:         %{name}-%{version}.tar.gz
+Summary:        Core programs for the Equinox Desktop Environment
+URL:            https://ede.sourceforge.net/
+License:        GPL
+Group:          Graphical desktop/Other
 BuildRequires:  fltk-devel, automake
 BuildRequires:  gcc-c++, jam, edelib-devel, libpng-devel, libjpeg-devel
 BuildRequires:  python, libxkbfile-devel, libXext-devel, libXpm-devel
@@ -46,9 +46,6 @@ for i in $RPM_BUILD_ROOT%{_datadir}/applications/*
 do
 echo 'OnlyShowIn=EDE;' >> $i
 done
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

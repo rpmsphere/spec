@@ -56,11 +56,11 @@ before launching wdm.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1 -b .fedora
-%patch2 -p1 -b .failsafe_tmp
-%patch3 -p1 -b .reconf
-#%patch4 -p1 -b .ck
+%patch 0 -p1
+%patch 1 -p1 -b .fedora
+%patch 2 -p1 -b .failsafe_tmp
+%patch 3 -p1 -b .reconf
+#%patch 4 -p1 -b .ck
 sed -i -e 's|get-wings-flags --|pkg-config WINGs --|' -e 's|get-wings-flags|pkg-config|' configure*
 
 %build
@@ -127,9 +127,6 @@ ln -s ../X11/xdm/TakeConsole $RPM_BUILD_ROOT%{_sysconfdir}/wdm/TakeConsole
 ln -s ../X11/xdm/Xsession $RPM_BUILD_ROOT%{_sysconfdir}/wdm/Xsession.xorg
 
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS COPYING ChangeLog* NEWS README* TODO NASA_image_guideline.html 

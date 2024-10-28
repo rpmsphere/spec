@@ -62,9 +62,6 @@ Name=Soldier
 file00=soldier.mcpx
 EOF
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc *-README.jp
 %{_datadir}/macopix/*

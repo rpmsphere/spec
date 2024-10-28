@@ -33,9 +33,6 @@ LD_LIBRARY_PATH=%{_libexecdir}/%{name} %{_libexecdir}/%{name}/octaspire-dern-rep
 EOF
 chmod +x %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc release/LICENSE release/README
 %{_bindir}/%{name}

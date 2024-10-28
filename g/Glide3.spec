@@ -46,7 +46,7 @@ to compile native Glide3 applications.
 
 %prep
 %setup -q -n Glide3
-%patch0 -p1 -z .warn
+%patch 0 -p1 -z .warn
 
 
 %build
@@ -101,9 +101,6 @@ install -p -m 644 swlibs/fxmisc/linutil.h $RPM_BUILD_ROOT/%{_includedir}/glide3
 install -p -m 644 h5/incsrc/sst1vid.h $RPM_BUILD_ROOT/%{_includedir}/glide3
 install -p -m 644 swlibs/texus2/lib/texus.h $RPM_BUILD_ROOT/%{_includedir}/glide3
 
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 
 %ifarch %{ix86}

@@ -37,9 +37,6 @@ python3 setup.py build
 %install
 python3 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{python3_sitelib}/*
 

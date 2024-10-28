@@ -6,12 +6,12 @@ Group:          Amusements/Games
 License:        GPLv2+
 URL:            https://epiar.net/
 Source0:        https://epiar.net/files/epiar/releases/0.5.0/%{name}-%{version}.tar.bz2
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_image-devel
-BuildRequires:	SDL_mixer-devel
-BuildRequires:	libxml2-devel
-BuildRequires:	ftgl-devel
-BuildRequires:	physfs-devel
+BuildRequires:  SDL-devel
+BuildRequires:  SDL_image-devel
+BuildRequires:  SDL_mixer-devel
+BuildRequires:  libxml2-devel
+BuildRequires:  ftgl-devel
+BuildRequires:  physfs-devel
 
 %description
 Epiar (ep-ee-are) is a space trading/exploring arcade simulation game
@@ -33,12 +33,9 @@ make
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
-desktop-file-install --vendor "" --delete-original	\
-	--dir $RPM_BUILD_ROOT%{_datadir}/applications	\
-	%{_builddir}/%{name}-%{version}/%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+desktop-file-install --vendor "" --delete-original      \
+        --dir $RPM_BUILD_ROOT%{_datadir}/applications   \
+        %{_builddir}/%{name}-%{version}/%{name}.desktop
 
 %files
 %doc COPYING NEWS README

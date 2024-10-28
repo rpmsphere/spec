@@ -33,9 +33,6 @@ cd src
 %__mkdir_p $RPM_BUILD_ROOT/%{_bindir}
 %__cp src/muscle $RPM_BUILD_ROOT%{_bindir}/
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc src/README.txt
 %{_bindir}/muscle

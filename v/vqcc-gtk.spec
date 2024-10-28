@@ -26,9 +26,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %make_install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README TODO
 %{_bindir}/vqcc-gtk
@@ -39,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Sun May 12 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5
 - Rebuilt for Fedora
-* Wed Aug 31 2004 Vilius Roskus <soling@navigator.lv> v0.4.1
+* Tue Aug 31 2004 Vilius Roskus <soling@navigator.lv> v0.4.1
 - a really ugly bug where text could not get entered into the text box at the bottom fixed (thanks mustafaogun);
 * Fri Aug 27 2004 Vilius Roskus <soling@navigator.lv> v0.4
 - popups network detection/configuration dialog on first startup and in cases when network error occurs;

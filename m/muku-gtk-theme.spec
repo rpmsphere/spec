@@ -34,9 +34,6 @@ cp -a %{theme_name} $RPM_BUILD_ROOT%{_datadir}/themes
 tar xf %{theme_name}.emerald -C $RPM_BUILD_ROOT%{_datadir}/emerald/themes/%{theme_name}
 cp %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 %{_datadir}/emerald/themes/%{theme_name}

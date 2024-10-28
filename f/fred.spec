@@ -1,20 +1,20 @@
-Name:		fred
-Version:	0.7.5.1458
-Release:	13.1
-Summary:	Freenet REference Daemon
-License:	GPLv2
-Group:		System/Daemons
-#Source0:	https://github.com/freenet/fred-official/archive/build01458.tar.gz
-Source0:	%{name}-official-build01458.tar.gz
-Source1:	https://freenet.googlecode.com/files/freenet-ext.jar.29
-Source2:	https://www.bouncycastle.org/download/bcprov-jdk15on-150.jar
-URL:		https://freenetproject.org/
-BuildRequires:	java-devel-openjdk lua
-BuildRequires:	xml-commons-apis
-BuildRequires:	ant
-#BuildRequires:	ant-junit
-Requires:	jre
-BuildArch:	noarch
+Name:           fred
+Version:        0.7.5.1458
+Release:        13.1
+Summary:        Freenet REference Daemon
+License:        GPLv2
+Group:          System/Daemons
+#Source0:       https://github.com/freenet/fred-official/archive/build01458.tar.gz
+Source0:        %{name}-official-build01458.tar.gz
+Source1:        https://freenet.googlecode.com/files/freenet-ext.jar.29
+Source2:        https://www.bouncycastle.org/download/bcprov-jdk15on-150.jar
+URL:            https://freenetproject.org/
+BuildRequires:  java-devel-openjdk lua
+BuildRequires:  xml-commons-apis
+BuildRequires:  ant
+#BuildRequires: ant-junit
+Requires:       jre
+BuildArch:      noarch
 
 %description
 Share files, chat on forums, browse and publish, anonymously and without fear of

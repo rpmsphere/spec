@@ -1,15 +1,15 @@
-Summary:	Certain Death via Space Things
-Name:		cdvst
-Version:	0.18
-Release:	20.4
-Source0:	https://kokido.sourceforge.net/%{name}-.18.tar.bz2
-Source1:	%{name}-icons.tar.bz2
-Patch0:		%{name}-optflags.patch
-Patch1:		%{name}-shared.patch
-License:	GPL
-URL:		https://kokido.sourceforge.net/cdvst.html
-Group:		Games/Arcade
-BuildRequires:	SDL_mixer-devel SDL_image-devel
+Summary:        Certain Death via Space Things
+Name:           cdvst
+Version:        0.18
+Release:        20.4
+Source0:        https://kokido.sourceforge.net/%{name}-.18.tar.bz2
+Source1:        %{name}-icons.tar.bz2
+Patch0:         %{name}-optflags.patch
+Patch1:         %{name}-shared.patch
+License:        GPL
+URL:            https://kokido.sourceforge.net/cdvst.html
+Group:          Games/Arcade
+BuildRequires:  SDL_mixer-devel SDL_image-devel
 BuildRequires:  desktop-file-utils
 
 %description
@@ -20,8 +20,8 @@ Reminiscent of many old arcade games.
 %prep
 %setup -q -n %{name}-.18
 
-%patch0 -p0
-%patch1 -p0
+%patch 0 -p0
+%patch 1 -p0
 
 %build
 %__make OPTFLAGS="$RPM_OPT_FLAGS -lm" DATA_PREFIX=%{_datadir}/%{name}/
@@ -48,9 +48,6 @@ install -d ${RPM_BUILD_ROOT}%{_datadir}/icons/hicolor/{16x16,32x32,48x48}/apps
 tar -xOjf %{SOURCE1} icons/16x16.png > ${RPM_BUILD_ROOT}%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 tar -xOjf %{SOURCE1} icons/32x32.png > ${RPM_BUILD_ROOT}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
 tar -xOjf %{SOURCE1} icons/48x48.png > ${RPM_BUILD_ROOT}%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc readme.txt
@@ -110,4 +107,4 @@ rm -rf $RPM_BUILD_ROOT
 
 * Thu Nov 14 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.18-1mdk
 - from Per Øyvind Karlsen <peroyvind@delonic.no> :
-	- First release
+        - First release

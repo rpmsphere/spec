@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		andromeda
+Name:           andromeda
 Version: 0.2.1.1336157239
 Release: 11.1
-License:	GPL
-Source:		%{name}-%{version}.tar.bz2
-Group:		Utility
-Summary:	Qt file manager
-URL:		https://gitorious.org/andromeda
+License:        GPL
+Source:         %{name}-%{version}.tar.bz2
+Group:          Utility
+Summary:        Qt file manager
+URL:            https://gitorious.org/andromeda
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, cmake, pkgconfig(QtGui), pkgconfig(QtWebKit)
+BuildRequires:  gcc-c++, cmake, pkgconfig(QtGui), pkgconfig(QtWebKit)
 
 %description
 Cross-platform file manager, written on Qt.
@@ -30,9 +30,6 @@ pushd build
 make DESTDIR=$RPM_BUILD_ROOT install
 popd
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %post
 ldconfig
 
@@ -50,5 +47,5 @@ ldconfig
 %changelog
 * Wed May 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1.1336157239
 - Rebuilt for Fedora
-* Thu Aug 16 2011 TI_Eugene <ti.eugene@gmail.com> 0.1
+* Tue Aug 16 2011 TI_Eugene <ti.eugene@gmail.com> 0.1
 - Initial build on OBS

@@ -1,3 +1,4 @@
+%define _python_dist_allow_version_zero 1
 %define __python /usr/bin/python3
 
 Summary: A simple, transparent and easy to extend xorg parser

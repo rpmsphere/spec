@@ -1,11 +1,11 @@
-Name:		pyvox
-Version:	0.71
-Release:	25.1
-Summary:	A set of software tools for medical image processing
-Group:		Applications/Multimedia
-License:	open source
-URL:		https://www.med.upenn.edu/bbl/pyvox.html
-Source0:	https://www.med.upenn.edu/bbl/assets/user-content/documents/%{name}-%{version}.src.tgz
+Name:           pyvox
+Version:        0.71
+Release:        25.1
+Summary:        A set of software tools for medical image processing
+Group:          Applications/Multimedia
+License:        open source
+URL:            https://www.med.upenn.edu/bbl/pyvox.html
+Source0:        https://www.med.upenn.edu/bbl/assets/user-content/documents/%{name}-%{version}.src.tgz
 BuildRequires:  python2-devel
 BuildRequires:  tk-devel
 
@@ -64,9 +64,6 @@ mv %{buildroot}%{_bindir}/regedit %{buildroot}%{_bindir}/regedit-%{name}
 mv %{buildroot}%{_mandir}/man1/regedit.1 %{buildroot}%{_mandir}/man1/regedit-%{name}.1
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/*

@@ -37,9 +37,6 @@ make %{?_smp_mflags} -C %{_target_platform}
 rm -rf %{buildroot}
 make install/fast -C %{_target_platform} DESTDIR=%{buildroot}
  
-%clean
-rm -rf %{buildroot}
- 
 %files
 %{_libdir}/googlepinyin
 %{_libdir}/libgooglepinyin.so.*

@@ -29,9 +29,6 @@ chmod -x $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/index.theme
 sed -i 's|gnome|OldGNOME2|' $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/index.theme
 sed -i '$a BackgroundImage=/usr/share/themes/%{theme_name}/solaris.gif' $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/index.theme
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 

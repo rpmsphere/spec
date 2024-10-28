@@ -54,9 +54,6 @@ EOF
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/pytube/*/*.py %{buildroot}%{_datadir}/pytube/*/*/*.py
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/pytube/*.py %{buildroot}%{_datadir}/pytube/*/*.py %{buildroot}%{_datadir}/pytube/*/*/*.py
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE.txt
 %{_datadir}/%{name}

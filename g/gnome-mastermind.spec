@@ -11,7 +11,7 @@ BuildRequires: glib2-devel >= 2.10
 BuildRequires: gtk+-devel >= 1.2.8
 BuildRequires: intltool >= 0.23
 BuildRequires: perl
-BuildRequires:	scrollkeeper
+BuildRequires:  scrollkeeper
 Requires: glib2
 Requires: gtk+
 
@@ -28,9 +28,6 @@ make %{?_smp_mflags}
 %install
 rm -fR $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -fR $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/applications/*

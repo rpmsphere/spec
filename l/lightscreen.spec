@@ -8,7 +8,7 @@ License:        GPL
 URL:            https://github.com/ckaiser/Lightscreen
 Group:          Application/System
 Summary:        Program to take screenshots
-Source:		    %{name}-source.tar.gz
+Source:             %{name}-source.tar.gz
 BuildRequires:  libpng-devel
 BuildRequires:  gcc-c++, qt4-devel
 
@@ -26,9 +26,6 @@ make
 %{__rm} -rf $RPM_BUILD_ROOT
 %makeinstall INSTALL_ROOT=/$RPM_BUILD_ROOT/usr
 install -Dp %{name} $RPM_BUILD_ROOT/usr/bin/%{name}
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

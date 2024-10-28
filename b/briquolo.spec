@@ -26,9 +26,9 @@ this revamped version of Breakout.
 
 %prep
 %setup -q
-%patch0
-%patch1
-%patch2
+%patch 0
+%patch 1
+%patch 2
 sed -i 's|-Wall|-Wall -std=gnu++11|' configure.ac
 
 %build

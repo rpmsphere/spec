@@ -1,4 +1,4 @@
-%define oname	FileRunner
+%define oname   FileRunner
 %undefine _debugsource_packages
 %global __os_install_post /usr/lib/rpm/brp-compress %{nil}
 # We ship with inotify binaries for x86 and x86_64 however the code
@@ -8,21 +8,21 @@
 Autoreq: 0
 %define _binaries_in_noarch_packages_terminate_build   0
 
-Summary:	A simple file manager with built-in FTP, SFTP and adb support
-Name:		filerunner
+Summary:        A simple file manager with built-in FTP, SFTP and adb support
+Name:           filerunner
 Version:        20.05.02.17
-Release:	1
-License:	GPLv2+
-URL:		https://sourceforge.net/projects/%{name}/
-Source0:	https://downloads.sourceforge.net/project/%{name}/fr-%{version}.tar.gz
-BuildArch:	noarch
-BuildRequires:	tcl
-Requires:	tcl
+Release:        1
+License:        GPLv2+
+URL:            https://sourceforge.net/projects/%{name}/
+Source0:        https://downloads.sourceforge.net/project/%{name}/fr-%{version}.tar.gz
+BuildArch:      noarch
+BuildRequires:  tcl
+Requires:       tcl
 Requires:       tcllib
-Requires:	tk
+Requires:       tk
 Requires:       tklib
-Provides:	%{oname} = %{version}-%{release}
-Obsoletes:	%{oname} <= 2.5.1
+Provides:       %{oname} = %{version}-%{release}
+Obsoletes:      %{oname} <= 2.5.1
 
 %postun
 if [ -e %{_datadir}/doc/${name}} ] ; then
@@ -62,9 +62,6 @@ from a FileRunner of long ago.
 export DONT_STRIP=1
 cd %{name}/Makefiles
 ./INSTALL DESTDIR=%{buildroot} -nogui %{?_verb}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_datadir}/doc/%{name}

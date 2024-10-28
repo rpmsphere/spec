@@ -1,11 +1,11 @@
-Name:		zhotools
-Version:	0.3
-Release:	1
-Summary:	Zhongwen Tools
-License:	MPL
-Group:		Applications/Utilities
-Source0:	%{name}-%{version}.tar.gz
-BuildArch:	noarch
+Name:           zhotools
+Version:        0.3
+Release:        1
+Summary:        Zhongwen Tools
+License:        MPL
+Group:          Applications/Utilities
+Source0:        %{name}-%{version}.tar.gz
+BuildArch:      noarch
 
 %description
 Using Zhongwen tables for searching, converting
@@ -20,9 +20,6 @@ and other various purposes.
 %install
 %__rm -rf %{buildroot}
 %__make DESTDIR=%{buildroot} install
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc README COPYING

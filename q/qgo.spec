@@ -8,7 +8,7 @@ Group:          Amusements/Games/Board/Other
 URL:            https://github.com/pzorin/qgo
 Source:         https://github.com/pzorin/qgo/archive/qt4-final.tar.gz
 #PATCH-FIX-UPSTREAM fix gcc6 narrowing conversion from int to char inside {}
-Patch:          qgo-2.0.0-gcc6.patch
+Patch0:          qgo-2.0.0-gcc6.patch
 BuildRequires:  qt4-devel
 BuildRequires:  alsa-lib-devel
 
@@ -19,7 +19,7 @@ Korea.
 
 %prep
 %setup -q -n %{name}-qt4-final
-%patch -p1
+%patch 0 -p1
 sed -i 's|$(QTDIR)|%{_libdir}/qt4|' src/src.pro
 sed -i 's|msg.contains("\([^0]*\)") > 0|msg.contains("\1") != NULL|g' src/network/igsconnection.cpp
 

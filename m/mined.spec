@@ -80,7 +80,7 @@ done
 sed -i "s/mined.xpm/mined/" ./usrshare/setup_install/mined.desktop
 # Fix desktop-file-validate warning: semicolon missing for Categories key :
 sed -i s/Utility/Utility\;/ ./usrshare/setup_install/mined.desktop
-%patch0 -p0
+%patch 0 -p0
 #patch1 -p0
 
 %build

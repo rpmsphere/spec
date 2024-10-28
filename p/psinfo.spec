@@ -19,7 +19,7 @@ problems.
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 %__make %{?jobs:-j%{jobs}} \

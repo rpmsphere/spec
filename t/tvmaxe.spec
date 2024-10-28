@@ -5,10 +5,10 @@ Release:        5.1
 Source0:        tv-maxe-%{version}.tar.gz
 Source1:        tv-maxe.desktop
 Source2:        tv-maxe
-Source3:	tv-maxe.svg
-Source4:	channel-editor.tar.gz
+Source3:        tv-maxe.svg
+Source4:        channel-editor.tar.gz
 BuildRequires:  desktop-file-utils
-BuildRequires:	python2-devel
+BuildRequires:  python2-devel
 URL:            https://code.google.com/p/tv-maxe
 Group:          Applications/Multimedia
 # Main project is GPL-3.0, vlc.py is GPL-2.0+, workerpool is MIT(compabile with GPL-3.0), so license is

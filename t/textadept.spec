@@ -66,9 +66,6 @@ install -D -m 0644 src/%{name}-gtk.desktop $RPM_BUILD_ROOT%{_datadir}/applicatio
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applications/%{name}*.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 12.2
 - Rebuilt for Fedora

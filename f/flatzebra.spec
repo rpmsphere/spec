@@ -1,25 +1,25 @@
-Name:		flatzebra
-Version:	0.1.7
-Release:	1
-Summary:	A Generic Game Engine library for 2D double-buffering animation
-Group:		System/Libraries
-License:	GPLv2
-URL:		https://sarrazip.com/dev/burgerspace.html
-Source:		https://sarrazip.com/dev/%{name}-%{version}.tar.gz
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_image-devel
-BuildRequires:	SDL_mixer-devel
-BuildRequires:	zlib-devel
-BuildRequires:	gcc-c++
+Name:           flatzebra
+Version:        0.1.7
+Release:        1
+Summary:        A Generic Game Engine library for 2D double-buffering animation
+Group:          System/Libraries
+License:        GPLv2
+URL:            https://sarrazip.com/dev/burgerspace.html
+Source:         https://sarrazip.com/dev/%{name}-%{version}.tar.gz
+BuildRequires:  SDL-devel
+BuildRequires:  SDL_image-devel
+BuildRequires:  SDL_mixer-devel
+BuildRequires:  zlib-devel
+BuildRequires:  gcc-c++
 
 %description
 Generic Game Engine library suitable for BurgerSpace, Afternoon Stalker
 and Cosmosmash.
 
 %package devel
-Summary:	Headers for developing programs that will use %{name}
-Group:		Development/C
-Requires:	%{name} = %{version}-%{release}
+Summary:        Headers for developing programs that will use %{name}
+Group:          Development/C
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 This package contains the headers that programmers will need to develop
@@ -40,9 +40,6 @@ make
 %__rm -rf $RPM_BUILD_ROOT
 %makeinstall
 %__rm -rf $RPM_BUILD_ROOT%{_docdir}
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING README INSTALL NEWS

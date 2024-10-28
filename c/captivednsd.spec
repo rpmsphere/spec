@@ -8,7 +8,7 @@ License:      GPL
 Version:      0.2
 Release:      20081105.1
 Source0:      https://www.aelius.com/njh/%{name}/%{name}-%{version}.tar.gz
-Patch:       captivednsd.patch
+Patch0:       captivednsd.patch
 
 %description
 Captive Domain Name Server returns same authorative response to
@@ -20,7 +20,7 @@ IP address for a host and then redirect the query using a firewall.
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 
 %build
 make %{_smp_mflags}
@@ -31,9 +31,6 @@ install -Dm 755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %files
 %{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2

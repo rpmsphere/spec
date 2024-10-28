@@ -30,9 +30,6 @@ sed -i '12s|$|,|' test.py
 mkdir -p %buildroot%python2_sitelib/supybot/plugins/Bugzilla
 cp -r * %buildroot%python2_sitelib/supybot/plugins/Bugzilla
 
-%clean
-rm -fr $RPM_BUILD_ROOT
-
 %files
 %doc README.txt
 %{python2_sitelib}/supybot/plugins/Bugzilla

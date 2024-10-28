@@ -4,15 +4,15 @@
 Name:           lineakd
 Version:        0.9
 Release:        19.1
-Summary:	Control multimedia keys on modern keyboards
-License:	GPL
-Group:		System/Configuration/Hardware          
-Source0:	https://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-URL:		https://lineak.sourceforge.net/
-BuildRequires:	libX11-devel
-BuildRequires:	libXtst-devel
-Patch0:		lineakd-0.9.0-gcc43.patch
-Patch1:		lineakd-0.9.0-link.patch
+Summary:        Control multimedia keys on modern keyboards
+License:        GPL
+Group:          System/Configuration/Hardware          
+Source0:        https://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+URL:            https://lineak.sourceforge.net/
+BuildRequires:  libX11-devel
+BuildRequires:  libXtst-devel
+Patch0:         lineakd-0.9.0-gcc43.patch
+Patch1:         lineakd-0.9.0-link.patch
 
 %description
 Daemon to control the multimedia keys on modern keyboards.
@@ -22,9 +22,9 @@ all keys (via a GUI [found in lineakconfig] & .conf file), volume
 control, and sound controls.
 
 %package devel
-Summary:	Headers for developing programs using %{name}
-Group:		Development/C
-Requires:	%{name} = %{version}-%{release}
+Summary:        Headers for developing programs using %{name}
+Group:          Development/C
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 This package contains the headers that programmers will need to develop 
@@ -32,8 +32,8 @@ applications which will use %{name}.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p0
+%patch 0 -p1
+%patch 1 -p0
 
 %build
 %configure
@@ -43,9 +43,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 rm -fr $RPM_BUILD_ROOT/usr/doc
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -p /sbin/ldconfig
 

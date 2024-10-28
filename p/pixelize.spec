@@ -30,9 +30,6 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 install -m 755 pixelize $RPM_BUILD_ROOT%{_bindir}
 install -m 755 make_db $RPM_BUILD_ROOT%{_bindir}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files 
 %doc README LICENSE TODO
 %{_bindir}/pixelize

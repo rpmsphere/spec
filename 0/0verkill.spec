@@ -2,6 +2,8 @@ Name:           0verkill
 Version:        0.17rc
 Release:        1
 License:        GPLv2
+BuildRequires:  automake
+BuildRequires:  gcc
 BuildRequires:  libXpm-devel
 Group:          Amusements/Games/Action/Shoot
 URL:		https://artax.karlin.mff.cuni.cz/~brain/0verkill
@@ -22,8 +24,8 @@ This game will be your worst NIGHTMARE you ever had!
 
 %prep
 %setup -q -n %{name}-0.16
-%patch0 -p1
-%patch1 -p2
+%patch 0 -p1
+%patch 1 -p2
 %{__cp} %{SOURCE1} .
 %{__cp} %{SOURCE2} .
 autoreconf
@@ -62,9 +64,9 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17rc
+* Sun May 26 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.17rc
 - Rebuilt for Fedora
-* Mon Oct 20 2009 Wind <yc.yan@ossii.com.tw>
+* Tue Oct 20 2009 Wind <yc.yan@ossii.com.tw>
 - Rebuild for OSSII.
 - Add desktop and icon file.
 - combine -xwindow packge into original package.

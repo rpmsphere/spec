@@ -24,9 +24,6 @@ install -m755 ppm2fli unflick $RPM_BUILD_ROOT/%{_bindir}
 install -d $RPM_BUILD_ROOT/%{_mandir}/man1
 install -m644 ppm2fli.1 unflick.1 $RPM_BUILD_ROOT/%{_mandir}/man1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README COPYING CHANGES
 %{_bindir}/*

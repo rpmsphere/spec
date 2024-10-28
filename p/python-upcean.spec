@@ -27,9 +27,6 @@ python3 setup.py build
 %install
 python3 setup.py install --single-version-externally-managed -O1 --root=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{python3_sitelib}/*
 

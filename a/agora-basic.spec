@@ -40,9 +40,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/doc/%{name}
 %{_datadir}/man/man1/agora-basic-compiler.1.*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Aug 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
 - Rebuilt for Fedora

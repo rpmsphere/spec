@@ -31,9 +31,6 @@ python2 setup.py install --root=%{buildroot}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc COPYING README
 %{_bindir}/%{name}

@@ -39,9 +39,6 @@ EOF
 
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' %{buildroot}%{_datadir}/icons/Baku/picon.py
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING README CHANGELOG
 %attr(755,root,root) %{_bindir}/picon

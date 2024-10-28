@@ -31,4 +31,4 @@ install -Dm755 src/%{name} %{buildroot}%{_bindir}/%{name}
 
 %changelog
 * Sun Oct 02 2022 Wei-Lun Chao <blubat@member.fsf.org> - 0.20130722
-- Rebuild for Fedora
+- Rebuilt for Fedora

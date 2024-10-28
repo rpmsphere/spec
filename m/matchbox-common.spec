@@ -1,14 +1,14 @@
-Summary: 	Shared files for the Matchbox Desktop
-Name: 		matchbox-common
-Version: 	0.9.1
-Release: 	10.1
-URL: 		https://matchbox.handhelds.org/
-License: 	GPLv2+
-Group: 		Graphical desktop/Other
-Source0: 	https://matchbox-project.org/sources/%{name}/0.9/%{name}-%{version}.tar.bz2
+Summary:        Shared files for the Matchbox Desktop
+Name:           matchbox-common
+Version:        0.9.1
+Release:        10.1
+URL:            https://matchbox.handhelds.org/
+License:        GPLv2+
+Group:          Graphical desktop/Other
+Source0:        https://matchbox-project.org/sources/%{name}/0.9/%{name}-%{version}.tar.bz2
 Source1:    matchbox.desktop
-BuildRequires:	pkgconfig libmatchbox-devel
-BuildArch:	noarch
+BuildRequires:  pkgconfig libmatchbox-devel
+BuildArch:      noarch
 
 %description
 Matchbox is a base environment for the X Window System running on non-desktop
@@ -28,9 +28,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %make_install
 install -Dm 644 %{SOURCE1} %{buildroot}%{_datadir}/xsessions/matchbox.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog

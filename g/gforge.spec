@@ -1,33 +1,33 @@
 %define webappsdir %{_sysconfdir}/httpd/conf.d
 
-Summary:	GForge Collaborative Development Environment
-Name:		gforge
-Version:	4.5.19
-Release:	1
-License:	GPL
-Group:		System/Servers
-URL:		https://www.gforge.org/
-Source0:	https://gforge.org/frs/download.php/103/%{name}-%{version}.tar.bz2
-Source1:	gforge-lib-jpgraph-1.5.2.tar.bz2
-Source2:	html_docs.tar.bz2
-Source10:	sample-apache.vhost.in.bz2
-Source11:	local.pl.in.bz2
-Source20:	gforge.cron.bz2
-Source21:	gforge-plugin-cvstracker.cron.bz2
-Source22:	gforge-plugin-scmcvs.cron.bz2
-Source23:	gforge-plugin-scmsvn.cron.bz2
-Patch0:		gforge-4.5.6-mdv_conf.diff
-Patch1:		gforge-4.5.6-autofoo.diff
-Patch100:	gforge-lib-jpgraph-1.5.2-fake.patch
-Patch101:	gforge-lib-jpgraph-1.5.2-rh9.patch
-Requires:	rcs cvs mailman postgresql postgresql-server postgresql-pl
-Requires:	perl-DBD-Pg perl-DBI perl-HTML-Parser perl-IPC-Run perl-URI
-Requires:	php-cli php-gd php-ldap php-mbstring php-pgsql mod_php
-Requires:	mod_auth_gforge
-#Requires:	jpgraph viewvc
-BuildRequires:	autoconf
-BuildArch:	noarch
-#BuildRequires:	libxslt-proc docbook-style-xsl docbook-style-xsl libxml2-utils
+Summary:        GForge Collaborative Development Environment
+Name:           gforge
+Version:        4.5.19
+Release:        1
+License:        GPL
+Group:          System/Servers
+URL:            https://www.gforge.org/
+Source0:        https://gforge.org/frs/download.php/103/%{name}-%{version}.tar.bz2
+Source1:        gforge-lib-jpgraph-1.5.2.tar.bz2
+Source2:        html_docs.tar.bz2
+Source10:       sample-apache.vhost.in.bz2
+Source11:       local.pl.in.bz2
+Source20:       gforge.cron.bz2
+Source21:       gforge-plugin-cvstracker.cron.bz2
+Source22:       gforge-plugin-scmcvs.cron.bz2
+Source23:       gforge-plugin-scmsvn.cron.bz2
+Patch0:         gforge-4.5.6-mdv_conf.diff
+Patch1:         gforge-4.5.6-autofoo.diff
+Patch100:       gforge-lib-jpgraph-1.5.2-fake.patch
+Patch101:       gforge-lib-jpgraph-1.5.2-rh9.patch
+Requires:       rcs cvs mailman postgresql postgresql-server postgresql-pl
+Requires:       perl-DBD-Pg perl-DBI perl-HTML-Parser perl-IPC-Run perl-URI
+Requires:       php-cli php-gd php-ldap php-mbstring php-pgsql mod_php
+Requires:       mod_auth_gforge
+#Requires:      jpgraph viewvc
+BuildRequires:  autoconf
+BuildArch:      noarch
+#BuildRequires: libxslt-proc docbook-style-xsl docbook-style-xsl libxml2-utils
 
 %define py_ver %(python -c "import sys; v=sys.version_info[:2]; print '%%d.%%d'%%v" 2>/dev/null || echo PYTHON-NOT-FOUND)
 %define py_prefix  %(python -c "import sys; print sys.prefix" 2>/dev/null || echo PYTHON-NOT-FOUND)
@@ -40,41 +40,41 @@ offering easy access to CVS, mailing lists, bug tracking, message
 boards/forums, task management, permanent file archival, and total
 web-based administration.
 
-%package	plugin-scmcvs
-Summary:	CVS Plugin for GForge CDE
-Group:		System/Servers
-Requires:	cvs viewvc
+%package        plugin-scmcvs
+Summary:        CVS Plugin for GForge CDE
+Group:          System/Servers
+Requires:       cvs viewvc
 Requires(post): %{name} >= %{version}
 Requires(preun): %{name} >= %{version}
-Requires:	%{name} >= %{version}
+Requires:       %{name} >= %{version}
 
-%description	plugin-scmcvs
+%description    plugin-scmcvs
 This plug-in contains the CVS subsystem of Gforge. It allows each
 Gforge project to have its own CVS repository, and gives some control
 over it to the project's administrator.
 
-%package	plugin-scmsvn
-Summary:	SVN (Subversion) Plugin for GForge CDE
-Group:		System/Servers
-Requires:	subversion viewvc
+%package        plugin-scmsvn
+Summary:        SVN (Subversion) Plugin for GForge CDE
+Group:          System/Servers
+Requires:       subversion viewvc
 Requires(post): %{name} >= %{version}
 Requires(preun): %{name} >= %{version}
-Requires:	%{name} >= %{version}
+Requires:       %{name} >= %{version}
 
-%description	plugin-scmsvn
+%description    plugin-scmsvn
 This plug-in contains the Subversion subsystem of Gforge. It
 allows each Gforge project to have its own Subversion repository,
 and gives some control over it to the project's administrator.
 
-%package	plugin-cvstracker
-Summary:	CVS Tracker Plugin for GForge CDE
-Group:		System/Servers
+%package        plugin-cvstracker
+Summary:        CVS Tracker Plugin for GForge CDE
+Group:          System/Servers
 Requires(post): %{name} >= %{version}
 Requires(preun): %{name} >= %{version}
-Requires:	%{name} >= %{version}
-Requires:	gforge-plugin-scmcvs
+Requires:       %{name} >= %{version}
+Requires:       gforge-plugin-scmcvs
 
-%description	plugin-cvstracker
+%description    plugin-cvstracker
 This RPM installs CVS tracker plugin for GForge CDE which allows to link
 cvs logs to trackers and tasks in GForge.
 
@@ -85,7 +85,7 @@ cvs logs to trackers and tasks in GForge.
 cp etc/local.inc.example etc/local.inc.example.bak
 cp plugins/scmcvs/etc/plugins/scmcvs/config.php plugins/scmcvs/etc/plugins/scmcvs/config.php.bak
 cp plugins/cvstracker/etc/plugins/cvstracker/config.php plugins/cvstracker/etc/plugins/cvstracker/config.php.bak
-%patch0 -p1
+%patch 0 -p1
 
 cp etc/local.inc.example contrib/autoconf/local.inc.in
 cp plugins/scmcvs/etc/plugins/scmcvs/config.php contrib/autoconf/scmcvs-config.php.in
@@ -97,7 +97,7 @@ cp etc/local.inc.example.bak etc/local.inc.example
 cp plugins/scmcvs/etc/plugins/scmcvs/config.php.bak plugins/scmcvs/etc/plugins/scmcvs/config.php
 cp plugins/cvstracker/etc/plugins/cvstracker/config.php.bak plugins/cvstracker/etc/plugins/cvstracker/config.php
 
-%patch1 -p0
+%patch 1 -p0
 
 pushd contrib/autoconf
     rm -f configure; autoconf
@@ -135,8 +135,8 @@ find -type f -print0|xargs -0 file|grep 'CRLF'|cut -d: -f1|xargs perl -p -i -e '
 
 # fix gforge-lib-jpgraph-1.5.2
 pushd gforge-lib-jpgraph-1.5.2
-%patch100 -p1
-%patch101 -p1
+%patch 100 -p1
+%patch 101 -p1
 popd
 
 %build
@@ -330,9 +330,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}/var/www/gforge/cronjo
 
 %postun
 /usr/sbin/userdel gforge
-
-%clean
-[ -n "%{buildroot}" -a "%{buildroot}" != / ] && rm -rf %{buildroot}
 
 %files -f %{name}.filelist
 %doc AUTHORS* Change* COPYING* INSTALL README* docs/* html_docs contrib

@@ -34,9 +34,6 @@ python2 setup.py build
 rm -rf $RPM_BUILD_ROOT
 python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT \
                                             --record=INSTALLED_FILES
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CREDITS.rst LICENSE README.rst DEVELOPERS.txt
 %{python2_sitearch}/%{pyname}*

@@ -35,9 +35,6 @@ install -m 755 %{name}.so.%{version} $RPM_BUILD_ROOT%{_libdir}
 install -m 755 tools/xvnkb_ctrl $RPM_BUILD_ROOT%{_bindir}
 install -m 755 scripts/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 VERSION="%{version}"
 OL=`echo $LD_PRELOAD | grep xvnkb.so`
@@ -46,41 +43,41 @@ SO="/lib/xvnkb.so"
 XVNKB_CORE="$SO.$VERSION"
 unset LD_PRELOAD N
 while [ -f $XVNKB_CORE ]; do
-	if [ "$N" = "" ]; then
-		N=1
-	else
-		N=$((N + 1))
-	fi
-	XVNKB_CORE="$SO.$VERSION-$N"
+        if [ "$N" = "" ]; then
+                N=1
+        else
+                N=$((N + 1))
+        fi
+        XVNKB_CORE="$SO.$VERSION-$N"
 done
 cp %{_libdir}/xvnkb.so.$VERSION $XVNKB_CORE
 chattr +i $XVNKB_CORE
 if [ -f "$LD" ]; then
-	grep -v xvnkb.so $LD > $LD.xvnkb
-	/bin/mv -f $LD.xvnkb $LD
+        grep -v xvnkb.so $LD > $LD.xvnkb
+        /bin/mv -f $LD.xvnkb $LD
 fi
 echo "$XVNKB_CORE" >> $LD
 
 if [ "$LANG" = "C" ]; then
-	LANG="en_US"
+        LANG="en_US"
 fi
 
 if [ "`echo $LANG | grep UTF-8`" = "" ]; then
-	echo "If you want to input Vietnamese Unicode, please run"
-	echo
-	echo "  # $PREFIX/bin/xvnkb_localeconf.sh $LANG.UTF-8"
-	echo
-	echo "and set your LANG to $LANG.UTF-8."
-	echo "See xvnkb documents at %{_datadir}/doc/xvnkb for more information."
+        echo "If you want to input Vietnamese Unicode, please run"
+        echo
+        echo "  # $PREFIX/bin/xvnkb_localeconf.sh $LANG.UTF-8"
+        echo
+        echo "and set your LANG to $LANG.UTF-8."
+        echo "See xvnkb documents at %{_datadir}/doc/xvnkb for more information."
 fi
 
 if [ "$OL" != "" ]; then
-	echo -e "\\033[1;31m"
-	echo "* NOTICE:"
-	echo "You are using LD_PRELOAD to load xvnkb core. If you set it somewhere else"
-	echo "(e.g. /etc/profile, /etc/bashrc, ~/.bash_profile, ~/.bashrc, ~/.xinitrc)"
-	echo "by yourself, please remove it also!"
-	echo -e "\\033[0;39m"
+        echo -e "\\033[1;31m"
+        echo "* NOTICE:"
+        echo "You are using LD_PRELOAD to load xvnkb core. If you set it somewhere else"
+        echo "(e.g. /etc/profile, /etc/bashrc, ~/.bash_profile, ~/.bashrc, ~/.xinitrc)"
+        echo "by yourself, please remove it also!"
+        echo -e "\\033[0;39m"
 fi
 
 echo "You can use xvnkb now!  If you are using X, please restart your Window Manager."

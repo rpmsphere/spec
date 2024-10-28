@@ -32,9 +32,6 @@ make
 %make_install
 cp %{SOURCE2} %{buildroot}%{_datadir}/themes/Sato
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS COPYING.LIB ChangeLog README NEWS
 %{_libdir}/gtk-2.0/*/engines/*.so

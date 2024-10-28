@@ -8,7 +8,7 @@ Version:        0.5
 Release:        142.1
 Source0:        tuxcursors-0.5.tar.bz2
 BuildArch:      noarch
-BuildRequires:	xcursorgen
+BuildRequires:  xcursorgen
 BuildRequires:  libpng
 BuildRequires:  libX11-devel
 
@@ -24,9 +24,6 @@ A cursor set that has nice animated penguins.
 %install
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons
 cp -a tuxcursors $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/icons/%{theme_name}

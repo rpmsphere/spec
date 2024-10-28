@@ -33,9 +33,6 @@ for man in * ; do
 mv $man 9$man
 done
 
-%clean
-rm -rf ${buildroot}
-
 %files
 %{_bindir}/*
 /usr/etc/rcmain

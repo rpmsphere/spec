@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/onedot
+%define fontdir %{_datadir}/fonts/onedot
 
 Summary: One-dot Font Project
 Name: onedot-fonts
@@ -33,9 +33,6 @@ rm -rf %{buildroot}
 install -Dm644 %{SOURCE0} %{buildroot}%{fontdir}/I.Ming.ttf
 install -Dm644 %{SOURCE1} %{buildroot}%{fontdir}/I.MingCP.ttf
 install -m644 I.PenCrane-B.ttf I.Ngaan.ttf %{buildroot}%{fontdir}
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /usr/bin/fc-cache 2> /dev/null

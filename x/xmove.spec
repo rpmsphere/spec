@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		xmove
-Version:	2.0
-Release:	6.1
-Summary:	X11 pseudoserver to dynamically move X11 applications
-Source0:	ftp://ftp.cs.columbia.edu/pub/xmove/%{name}.%{version}beta2.tar.bz2
-License:	MIT
-Group:		System/X11
-URL:		ftp://ftp.cs.columbia.edu/pub/xmove/
-BuildRequires:	libX11-devel imake
-Patch0:		xmove-2.0-unix-domain.patch
+Name:           xmove
+Version:        2.0
+Release:        6.1
+Summary:        X11 pseudoserver to dynamically move X11 applications
+Source0:        ftp://ftp.cs.columbia.edu/pub/xmove/%{name}.%{version}beta2.tar.bz2
+License:        MIT
+Group:          System/X11
+URL:            ftp://ftp.cs.columbia.edu/pub/xmove/
+BuildRequires:  libX11-devel imake
+Patch0:         xmove-2.0-unix-domain.patch
 
 %description
 xmove is a pseudoserver (aka proxy server) which allows you
@@ -18,30 +18,27 @@ within a server.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1 -b .unix-domain
+%patch 0 -p1 -b .unix-domain
 chmod 644 doc/*
 
 %build
 for i in xmove xmovectrl; do
-	cd $i
-	ln -sf ../man/man1/$i.1 $i.man
-	xmkmf
-	make CXXOPTIONS="%optflags" EXTRA_LDOPTIONS="%optflags"
-	cd $OLDPWD
+        cd $i
+        ln -sf ../man/man1/$i.1 $i.man
+        xmkmf
+        make CXXOPTIONS="%optflags" EXTRA_LDOPTIONS="%optflags"
+        cd $OLDPWD
 done
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d -m755 $RPM_BUILD_ROOT%{_mandir}/man1/
 for i in xmove xmovectrl; do
-	cd $i
-	%make_install
-	cd $OLDPWD
-	install -m 644 man/man1/$i.1 $RPM_BUILD_ROOT%{_mandir}/man1/
+        cd $i
+        %make_install
+        cd $OLDPWD
+        install -m 644 man/man1/$i.1 $RPM_BUILD_ROOT%{_mandir}/man1/
 done
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README doc/*

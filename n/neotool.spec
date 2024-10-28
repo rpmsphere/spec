@@ -1,6 +1,6 @@
 %define _name NeoTool
 
-BuildArch:	noarch
+BuildArch:      noarch
 Name:           neotool
 Group:          Development/Tools/Other
 Requires:       bash, zenity, util-linux, gawk, dfu-util, xterm

@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Name:			piedock
-Version:		1.6.9
-Release:		3
-Summary:		A task bar and application launcher in shape of a pie menu
-URL:			https://github.com/markusfisch/PieDock
-Group:			User Interface/Desktops
-License:		GPLv3
-Source:			PieDock-%{version}.tar.gz
-BuildRequires: 		libpng-devel
-BuildRequires: 		libXext-devel
-BuildRequires: 		libXft-devel
+Name:                   piedock
+Version:                1.6.9
+Release:                3
+Summary:                A task bar and application launcher in shape of a pie menu
+URL:                    https://github.com/markusfisch/PieDock
+Group:                  User Interface/Desktops
+License:                GPLv3
+Source:                 PieDock-%{version}.tar.gz
+BuildRequires:          libpng-devel
+BuildRequires:          libXext-devel
+BuildRequires:          libXft-devel
 
 %description
 PieDock feels a little bit like the famous OS X dock
@@ -30,9 +30,6 @@ sed -i '14i #include <ctime>' src/WindowManager.cpp
 %install
 %__rm -rf %buildroot
 %make_install
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README

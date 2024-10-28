@@ -8,7 +8,7 @@ Version:       2.16.1
 Release:       %{snapdate}.%{rel}
 License:       MIT-like
 Group:         Sciences/Astronomy
-Url:           https://iraf-community.github.io/
+URL:           https://iraf-community.github.io/
 Source0:       https://github.com/iraf-community/iraf/archive/v%{version}+%{snapdate}/%{name}-%{version}-%{snapdate}.tar.gz
 # From Debian
 Source10:      irafcl
@@ -129,11 +129,11 @@ sed "s/__VERSION__/%{version}-%{snapdate}/" -i unix/hlib/zzsetenv.def
 sed "s/__DATE__/$(date -uR)/" -i unix/hlib/zzsetenv.def
 
 ./install  \
-	--term xterm \
-	--bindir ${BUILD_TMP}/bin \
-	--cache ${BUILD_TMP}/cache \
-	--imdir ${BUILD_TMP}/imdir \
-	--root ${iraf} < /dev/null || true
+        --term xterm \
+        --bindir ${BUILD_TMP}/bin \
+        --cache ${BUILD_TMP}/cache \
+        --imdir ${BUILD_TMP}/imdir \
+        --root ${iraf} < /dev/null || true
 
 cp unix/f2c/libf2c/f2c.h include/
 ./util/mkarch ${IRAFARCH}
@@ -274,14 +274,14 @@ cp -ar noao/twodspec/longslit/libpkg.a %{buildroot}%{_libdir}/iraf/noao/twodspec
 
 # .desktop file
 mkdir -p %{buildroot}%{_datadir}/applications
-install -Dpm644 %{_sourcedir}/iraf.desktop %{buildroot}%{_datadir}/applications/iraf.desktop
+install -Dpm644 %{SOURCE11} %{buildroot}%{_datadir}/applications/iraf.desktop
 
 # icon
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
-install -Dpm644 %{_sourcedir}/iraf.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/iraf.svg
+install -Dpm644 %{SOURCE12} %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/iraf.svg
 
 # irafcl
-install -Dpm755 %{_sourcedir}/irafcl %{buildroot}%{_bindir}/irafcl
+install -Dpm755 %{SOURCE10} %{buildroot}%{_bindir}/irafcl
 sed -i -e 's,/usr/lib/,%{_libdir}/,g' %{buildroot}%{_bindir}/irafcl
 
 %files

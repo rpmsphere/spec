@@ -35,9 +35,6 @@ make DESTDIR=$RPM_BUILD_ROOT -C build install
 
 %find_lang %{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog NEWS README
 %{_bindir}/%{name}

@@ -23,9 +23,6 @@ make
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 make INSTALLDIR=$RPM_BUILD_ROOT%{_bindir} install
   
-%clean  
-rm -rf $RPM_BUILD_ROOT
-
 %files 
 %attr(755,root,root) %{_bindir}/ttyload
 %doc BUGS HISTORY LICENSE README.md TODO

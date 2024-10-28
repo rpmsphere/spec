@@ -43,8 +43,8 @@ desktop-file-install --vendor="" \
     --remove-category="AudioVideo" \
     --remove-category="Player" \
     --add-category="X-MandrivaLinux-Multimedia-Sound" \
-	--dir %buildroot%{_datadir}/applications \
-	%buildroot%{_datadir}/applications/*.desktop
+        --dir %buildroot%{_datadir}/applications \
+        %buildroot%{_datadir}/applications/*.desktop
 
 %find_lang com.github.artemanufrij.playmymusic
 

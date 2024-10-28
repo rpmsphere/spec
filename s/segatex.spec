@@ -211,9 +211,6 @@ echo
 fi
 exit 0
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 8.640  
 - Rebuilt for Fedora

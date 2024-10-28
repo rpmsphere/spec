@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
-Name:		stopmotion
-Summary:	An application for creating stopmotion animations
-Version:	0.6.1
-Release:	1
-Source0:	https://developer.skolelinux.no/info/studentgrupper/2005-hig-stopmotion/project_management/webpage/releases/%{name}-%{version}.tar.gz
-Source1:	%{name}_zh_TW.ts
-URL:		https://stopmotion.bjoernen.com/
-Group:		Applications/Multimedia
-License:	GPL
-Requires:	SDL_image, libvorbis, libxml2, libtar, gamin
-BuildRequires:	SDL_image-devel, libvorbis-devel, libxml2-devel, libtar-devel, ImageMagick, gamin-devel
+Name:           stopmotion
+Summary:        An application for creating stopmotion animations
+Version:        0.6.1
+Release:        1
+Source0:        https://developer.skolelinux.no/info/studentgrupper/2005-hig-stopmotion/project_management/webpage/releases/%{name}-%{version}.tar.gz
+Source1:        %{name}_zh_TW.ts
+URL:            https://stopmotion.bjoernen.com/
+Group:          Applications/Multimedia
+License:        GPL
+Requires:       SDL_image, libvorbis, libxml2, libtar, gamin
+BuildRequires:  SDL_image-devel, libvorbis-devel, libxml2-devel, libtar-devel, ImageMagick, gamin-devel
 BuildRequires: qt4-devel
 Requires: qt4
 
@@ -28,7 +28,7 @@ sed -i '1i #include <unistd.h>' src/presentation/frontends/qtfrontend/mainwindow
 # Wrong permissions
 chmod -R a+r *
 for a in `find ./manual/`; do if [ ! -d $a ]; then chmod 644 $a;else chmod 755 $a;fi;done
-PATH=%{_libdir}/qt4/bin:$PATH %configure	--with-html-dir=%{_datadir}/doc/%{name}-%{version}/manual
+PATH=%{_libdir}/qt4/bin:$PATH %configure        --with-html-dir=%{_datadir}/doc/%{name}-%{version}/manual
 perl -pi -e "s#-pipe -O2#%{optflags}#g" Makefile
 sed -i 's|-lSDL_image|-lSDL_image -lX11 |' Makefile
 PATH=%{_libdir}/qt4/bin:$PATH %__make
@@ -47,12 +47,12 @@ install -m644 graphics/stopmotion-48.png -D %{buildroot}%{_datadir}/icons/hicolo
 install -m644 graphics/stopmotion.png -D %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
 install -m644 graphics/stopmotion-16.png -D %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 
-desktop-file-install	--vendor="" \
-			--remove-category="Application" \
-			--add-category="Qt" \
-			--add-category="Video" \
-			--add-category="AudioVideo" \
-			--dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
+desktop-file-install    --vendor="" \
+                        --remove-category="Application" \
+                        --add-category="Qt" \
+                        --add-category="Video" \
+                        --add-category="AudioVideo" \
+                        --dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
 # Localization.
 cp %{SOURCE1} translations
@@ -61,9 +61,6 @@ echo 'TRANSLATIONS += translations/stopmotion_zh_TW.ts' >> stopmotion.pro
 %{_libdir}/qt4/bin/lrelease stopmotion.pro
 mkdir -p %{buildroot}%{_datadir}/%{name}/translations/
 install -m644 ./translations/*.qm %{buildroot}%{_datadir}/%{name}/translations/
-
-%clean 
-rm -rf $%{buildroot}
 
 %files
 %doc README AUTHORS manual/

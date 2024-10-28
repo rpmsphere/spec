@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
-Name:		lfm
-Version:	3.1
-Release:	1
-Summary:	File Manager for the Console
-Source:		https://www.terra.es/personal7/inigoserna/lfm/%{name}-%{version}.tar.gz
-Patch1:		lfm-docdir.patch
-Patch2:		lfm-remove_shebangs.patch
-URL:		https://www.terra.es/personal7/inigoserna/lfm/
-Group:		Productivity/File utilities
-License:	GNU General Public License version 3 (GPL v3)
-BuildRequires:	python2-devel
-BuildRequires:	perl
-Provides:	pyview = %{version}-%{release}
-BuildArch:	noarch
+Name:           lfm
+Version:        3.1
+Release:        1
+Summary:        File Manager for the Console
+Source:         https://www.terra.es/personal7/inigoserna/lfm/%{name}-%{version}.tar.gz
+Patch1:         lfm-docdir.patch
+Patch2:         lfm-remove_shebangs.patch
+URL:            https://www.terra.es/personal7/inigoserna/lfm/
+Group:          Productivity/File utilities
+License:        GNU General Public License version 3 (GPL v3)
+BuildRequires:  python2-devel
+BuildRequires:  perl
+Provides:       pyview = %{version}-%{release}
+BuildArch:      noarch
 
 %description
 Last File Manager is a simple but powerful file manager for the UNIX console.
@@ -22,7 +22,7 @@ It has been developed in Python with the ol' good Midnight Commander as model.
 %setup -q
 #patch1
 #__perl -ne 'print $1,"\n" if /^\+{3}\s+(.+?)\s+\d/' <"%{PATCH1}" | while read f; do
-#	 %__sed -i 's|@@DOCDIR@@|%{_docdir}/%{name}|g' "$f"
+#        %__sed -i 's|@@DOCDIR@@|%{_docdir}/%{name}|g' "$f"
 #done
 #patch2
 
@@ -34,9 +34,6 @@ python3 setup.py install --root=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT%{_datadir}/doc
 
 sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING NEWS README* TODO

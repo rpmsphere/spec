@@ -1,24 +1,25 @@
 %undefine _debugsource_packages
 
-Summary:	AfterStep Window Manager (NeXTalike)
-Name:		AfterStep
-Version:	2.2.9
-Release:	1
-License:	GPL
-Group:		User Interface/Desktops
-URL:		https://www.afterstep.org
-Vendor:		The AfterStep Team (see TEAM in docdir)
-Source0:	ftp://ftp.afterstep.org/stable/%{name}-%{version}.tar.gz
-Source1:	Xclients.afterstep.switchdesk
-Source2:	afterstep.gdm
-Source3: 	AfterStep.kdm
-Source4: 	AfterStep.menu
-Source5: 	AfterStep.menumethod
-Source6: 	afterstep.desktop.xsessions
-Source7: 	afterstep.desktop.wm-properties
-Source8:	afterstep.fedora.README
-Requires:	%{name}-libs 
-Obsoletes:	libAfterImage
+Summary:        AfterStep Window Manager (NeXTalike)
+Name:           AfterStep
+Version:        2.2.9
+Release:        1
+License:        GPL
+Group:          User Interface/Desktops
+URL:            https://www.afterstep.org
+Vendor:         The AfterStep Team (see TEAM in docdir)
+Source0:        ftp://ftp.afterstep.org/stable/%{name}-%{version}.tar.gz
+Source1:        Xclients.afterstep.switchdesk
+Source2:        afterstep.gdm
+Source3:        AfterStep.kdm
+Source4:        AfterStep.menu
+Source5:        AfterStep.menumethod
+Source6:        afterstep.desktop.xsessions
+Source7:        afterstep.desktop.wm-properties
+Source8:        afterstep.fedora.README
+Requires:       %{name}-libs 
+Obsoletes:      libAfterImage
+BuildRequires:  libICE-devel libSM-devel libX11-devel
 
 %description
   AfterStep is a Window Manager for X which started by emulating the
@@ -35,23 +36,23 @@ Obsoletes:	libAfterImage
   at a premium.
 
 %package libs
-summary:	libraries required by afterstep 2.0
-version:	%{version}
-release:	%{release}
-License:	GPL
-group:		User Interface/Desktops
-Provides: 	%{name}-libs
+summary:        libraries required by afterstep 2.0
+version:        %{version}
+release:        %{release}
+License:        GPL
+group:          User Interface/Desktops
+Provides:       %{name}-libs
 
 %description libs
   Libraries neeeded by AfterStep 2.0
 
 %package devel
-summary:	AfterStep libs include files
-version:	%{version}
-release:	%{release}
-License:	GPL
-group:		User Interface/Desktops
-Requires: 	%{name}-libs 
+summary:        AfterStep libs include files
+version:        %{version}
+release:        %{release}
+License:        GPL
+group:          User Interface/Desktops
+Requires:       %{name}-libs 
 
 %description devel
   AfterStep libs include files
@@ -69,16 +70,16 @@ export CC="gcc -Wl,--allow-multiple-definition"
 export LDFLAGS=-Wl,--allow-multiple-definition
 CFLAGS=$RPM_OPT_FLAGS \
 ./configure \
-	--prefix=/usr	                          \
-	--mandir=%{_mandir}                       \
-	--enable-sharedlibs                       \
-	--disable-staticlibs			  \
-	--enable-ascp                             \
-	--enable-i18n                             \
-	--with-helpcommand="aterm -e man"         \
-	--with-desktops=1 --with-deskgeometry=2x3 \
-	--with-imageloader="qiv --root"
-	
+        --prefix=/usr                             \
+        --mandir=%{_mandir}                       \
+        --enable-sharedlibs                       \
+        --disable-staticlibs                      \
+        --enable-ascp                             \
+        --enable-i18n                             \
+        --with-helpcommand="aterm -e man"         \
+        --with-desktops=1 --with-deskgeometry=2x3 \
+        --with-imageloader="qiv --root"
+        
 make
 
 if [[ -x /usr/bin/sgml2html ]]; then sgml2html doc/afterstep.sgml; fi
@@ -96,9 +97,6 @@ done
 
 mkdir -p %{buildroot}%{_datadir}/xsessions
 install -m 0644 %{SOURCE6} %{buildroot}%{_datadir}/xsessions/%{name}.desktop
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc ChangeLog NEW README* TEAM UPGRADE doc/languages doc/licences doc/code TODO doc/*.html
@@ -130,14 +128,14 @@ rm -rf %{buildroot}
 
 %pre
 for i in /usr /usr/local /usr/X11R6 ; do
-	if [ -d $i/share/afterstep_old ]; then
-		rm -r $i/share/afterstep_old;
-	fi
-	# %config /usr/share/afterstep should take care of this.
-	#if [ -d $i/share/afterstep ]; then
-	#	cp -pr $i/share/afterstep $i/share/afterstep_old;
-	#	exit;
-	#fi
+        if [ -d $i/share/afterstep_old ]; then
+                rm -r $i/share/afterstep_old;
+        fi
+        # %config /usr/share/afterstep should take care of this.
+        #if [ -d $i/share/afterstep ]; then
+        #       cp -pr $i/share/afterstep $i/share/afterstep_old;
+        #       exit;
+        #fi
 done
 
 %post

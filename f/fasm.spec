@@ -2,15 +2,15 @@
 %undefine _missing_build_ids_terminate_build
 %undefine _debugsource_packages
 
-Summary:	Flat assembler
-Summary(pl):	"Płaski" assembler
-Name:		fasm
-Version:	1.73.31
-Release:	1
-License:	distributable
-Group:		Development/Tools
-Source0:	https://flatassembler.net/%{name}-%{version}.tgz
-URL:		https://flatassembler.net/
+Summary:        Flat assembler
+Summary(pl):    "Płaski" assembler
+Name:           fasm
+Version:        1.73.31
+Release:        1
+License:        distributable
+Group:          Development/Tools
+Source0:        https://flatassembler.net/%{name}-%{version}.tgz
+URL:            https://flatassembler.net/
 
 %description
 The flat assembler is a fast and efficient self-assembling 80x86
@@ -41,9 +41,6 @@ cd source/Linux/x64
 
 %install
 install -Dm755 source/Linux/x64/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt

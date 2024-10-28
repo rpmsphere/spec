@@ -1,17 +1,17 @@
-Name:		fqterm		
-Version:	0.9.8.4
-Release:	7.1
-Summary:	BBS client designed for BBS browsing	
-Group:		Applications/Internet
-License:	GPLv2+
-URL:		https://code.google.com/p/fqterm/
-Source0:	https://codeload.github.com/mytbk/fqterm/tar.gz/0.9.8.4#/%{name}-%{version}.tar.gz
-BuildRequires:	qt4-devel
-BuildRequires:	openssl-devel
-BuildRequires:	python2-devel
-BuildRequires:	alsa-lib-devel
-BuildRequires:	cmake
-BuildRequires:	desktop-file-utils
+Name:           fqterm          
+Version:        0.9.8.4
+Release:        7.1
+Summary:        BBS client designed for BBS browsing    
+Group:          Applications/Internet
+License:        GPLv2+
+URL:            https://code.google.com/p/fqterm/
+Source0:        https://codeload.github.com/mytbk/fqterm/tar.gz/0.9.8.4#/%{name}-%{version}.tar.gz
+BuildRequires:  qt4-devel
+BuildRequires:  openssl-devel
+BuildRequires:  python2-devel
+BuildRequires:  alsa-lib-devel
+BuildRequires:  cmake
+BuildRequires:  desktop-file-utils
 
 %description
 FQTerm is one of the most widely used BBS client in China, it supports
@@ -45,13 +45,10 @@ rm -rf %{buildroot}%{_datadir}/FQTerm/fqterm.sh
 
 sed -i -e '/^Icon.*$/c Icon=fqterm' %{buildroot}%{_datadir}/applications/fqterm.desktop
 desktop-file-install --vendor "" \
-	--dir %{buildroot}%{_datadir}/applications \
-	--remove-category Application \
-	--add-category RemoteAccess \
-	%{buildroot}%{_datadir}/applications/fqterm.desktop
-
-%clean
-rm -rf %{buildroot}
+        --dir %{buildroot}%{_datadir}/applications \
+        --remove-category Application \
+        --add-category RemoteAccess \
+        %{buildroot}%{_datadir}/applications/fqterm.desktop
 
 %files
 %doc README.txt LICENSE doc/*

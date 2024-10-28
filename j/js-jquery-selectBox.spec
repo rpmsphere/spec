@@ -22,9 +22,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/javascript/jquery-selectBox
 cp -a * $RPM_BUILD_ROOT%{_datadir}/javascript/jquery-selectBox
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/javascript/jquery-selectBox
 

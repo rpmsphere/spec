@@ -34,9 +34,6 @@ install -Dm 0644 images/Synkron16.png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/1
 install -Dm 0644 images/Synkron48.png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/48x48/apps/synkron.png
 install -Dm 0644 images/Synkron128.png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/128x128/apps/synkron.png
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc gpl.txt readme.txt
 %{_bindir}/synkron

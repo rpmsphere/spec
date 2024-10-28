@@ -1,12 +1,12 @@
 Name:           transparent-cursor-theme
-BuildArch:	noarch
+BuildArch:      noarch
 Summary:        Totally transparent X11 Cursor theme
 Version:        0.1.1
 Release:        11.1
 License:        GPL
 Group:          System/X11/Icons
 Source:         xcursor-transparent-theme-0.1.1.tar.gz
-Patch:          xcursor-transparent-theme-install-0.1.1.diff
+Patch0:          xcursor-transparent-theme-install-0.1.1.diff
 URL:            https://matchbox-project.org/sources/utils/
 
 %description
@@ -21,7 +21,7 @@ Authors:
 
 %prep
 %setup -q -n xcursor-transparent-theme-%{version}
-%patch -p1
+%patch 0 -p1
 
 %build
 ./configure --prefix=/usr --datadir=%{_datadir}
@@ -29,9 +29,6 @@ Authors:
 %install
 make DESTDIR=%{buildroot} install
 mv %{buildroot}%{_datadir}/icons/xcursor-transparent %{buildroot}%{_datadir}/icons/transparent
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/icons/transparent

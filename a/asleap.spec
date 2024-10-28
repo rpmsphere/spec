@@ -8,7 +8,7 @@ URL:            https://www.willhackforsushi.com/?page_id=41
 Source0:        https://www.willhackforsushi.com/code/%{name}/%{version}/%{name}-%{version}.tgz
 BuildRequires:  libpcap-devel
 BuildRequires:  openssl-devel 
-Patch0:		asleap-glibc.patch
+Patch0:         asleap-glibc.patch
 
 %description
 asleap is a tool to recover weak LEAP and PPTP passwords. asleap is the
@@ -19,7 +19,7 @@ perform channel hopping.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 make %{?_smp_mflags}
@@ -30,9 +30,6 @@ install -Dp -m 0755 asleap $RPM_BUILD_ROOT%{_sbindir}/asleap
 install -Dp -m 0755 genkeys $RPM_BUILD_ROOT%{_sbindir}/genkeys
 #remove exec permissions from files in scripts directory
 find scripts/*.pl -type f -name \* -exec chmod 644 {} \;
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING README THANKS scripts/

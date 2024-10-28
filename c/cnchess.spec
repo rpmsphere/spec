@@ -1,17 +1,17 @@
-Name:			cnchess
-Group:			Applications/Games
-Version:		0.3
-Release:		1
-License:		GPL
-Summary:		A Chinese Chess Game.
-Summary(zh_CN):		中国象棋游戏
-Summary(zh_TW):		中國象棋遊戲
-URL:			https://netbay.blogchina.com/
-Source0:		%{name}-%{version}.src.tar.bz2
-Source1:		cnchess.sh
-Source2:		%{name}.xpm
-Patch0:			%{name}-bookfile.patch
-BuildRequires:		qt3-devel
+Name:                   cnchess
+Group:                  Applications/Games
+Version:                0.3
+Release:                1
+License:                GPL
+Summary:                A Chinese Chess Game.
+Summary(zh_CN):         中国象棋游戏
+Summary(zh_TW):         中國象棋遊戲
+URL:                    https://netbay.blogchina.com/
+Source0:                %{name}-%{version}.src.tar.bz2
+Source1:                cnchess.sh
+Source2:                %{name}.xpm
+Patch0:                 %{name}-bookfile.patch
+BuildRequires:          qt3-devel
 
 %description
 A Chinese Chess game, Only fight to computer.
@@ -24,7 +24,7 @@ A Chinese Chess game, Only fight to computer.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch 0 -p1
 sed -i -e 's|/usr/lib/qt|%{_libdir}/qt|g' -e 's|-march=i386 -mcpu=i686||' Makefile */Makefile
 sed -i '1i #include <unistd.h>' src/cnchessview.cpp
 
@@ -55,9 +55,6 @@ Terminal=false
 Type=Application
 Categories=Application;Game;
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/*

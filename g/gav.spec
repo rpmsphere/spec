@@ -46,9 +46,6 @@ pushd ../themes
 cp -a * $RPM_BUILD_ROOT/usr/share/gav/themes
 popd
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README CHANGELOG LICENSE
 %{_bindir}/%{name}

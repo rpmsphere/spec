@@ -25,11 +25,11 @@ publications.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p0
-%patch2 -p0
-%patch3 -p0
-%patch4 -p1 -b .fixes
+%patch 0 -p1
+%patch 1 -p0
+%patch 2 -p0
+%patch 3 -p0
+%patch 4 -p1 -b .fixes
 
 %build
 alias f77=gfortran

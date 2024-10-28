@@ -36,9 +36,6 @@ make
 rm -rf ${RPM_BUILD_ROOT}
 %makeinstall
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc ChangeLog INSTALL COPYING README
 %{_bindir}/calcoo

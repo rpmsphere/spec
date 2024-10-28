@@ -27,9 +27,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %make_install
 
-%clean 
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc ANNOUNCE ChangeLog AUTHORS NEWS README README.flip TODO
 %{_bindir}/*

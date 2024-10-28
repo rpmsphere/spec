@@ -42,9 +42,6 @@ make CFLAGS+="-Wno-format-security"
 rm -rf "$RPM_BUILD_ROOT"
 %makeinstall
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %config %{_sysconfdir}/vde2/libvdemgmt/*.rc
 %{_sysconfdir}/vde2/vdecmd

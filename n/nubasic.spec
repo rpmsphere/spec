@@ -42,7 +42,7 @@ sed -i 's|static volatile gsize|static gsize|' ide/scintilla/gtk/ScintillaGTKAcc
 #{_libdir}/lib%{name}.a
 
 %changelog
-* Sun Sep 04 202 Wei-Lun Chao <bluebat@member.fsf.org> - 1.52
+* Sun Sep 04 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.52
 - Rebuilt for Fedora
 * Thu Sep 11 2014 Fedora 20 Release <acaldmail@gmail.com> - 1.19
 - Rebuild RPM for Fedora distros

@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Summary:			Phylogeny Inference Package
-Name:				phylip
-Version:			3.697
-Release:			1
-License:			Freeware
-Group:				Sciences/Biology
-URL:				https://evolution.genetics.washington.edu/phylip.html
-Source0:			https://evolution.gs.washington.edu/phylip/download/%{name}-%{version}.tar.gz
-BuildRequires:			libXaw-devel libXt-devel libX11-devel
-Patch0:				phylip_documentation_path_fix.patch
-Patch1:				%{name}.build.patch
+Summary:                        Phylogeny Inference Package
+Name:                           phylip
+Version:                        3.697
+Release:                        1
+License:                        Freeware
+Group:                          Sciences/Biology
+URL:                            https://evolution.genetics.washington.edu/phylip.html
+Source0:                        https://evolution.gs.washington.edu/phylip/download/%{name}-%{version}.tar.gz
+BuildRequires:                  libXaw-devel libXt-devel libX11-devel
+Patch0:                         phylip_documentation_path_fix.patch
+Patch1:                         %{name}.build.patch
 
 %description
 PHYLIP (the PHYLogeny Inference Package) is a package of 35 programs for inferring phylogenies (evolutionary trees).
@@ -25,7 +25,7 @@ Biology at the University of Washington, Seattle.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 #patch1
 
 %build

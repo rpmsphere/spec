@@ -7,7 +7,7 @@ License:        GPL
 URL:            https://sourceforge.net/projects/lxde/
 Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  gettext, gtk2-devel >= 2.6, gnome-menus-devel, startup-notification-devel
-BuildRequires:	menu-cache-devel
+BuildRequires:  menu-cache-devel
 Requires:       gtk2 >= 2.6, gnome-menus
 
 %description
@@ -48,9 +48,6 @@ Icon=launcher-program
 Encoding=UTF-8
 Categories=Application;System;Utility;
 EOF
-
-%clean
-%__rm -rf %{buildroot}
 
 %files 
 %doc NEWS README AUTHORS ChangeLog COPYING

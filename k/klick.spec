@@ -34,9 +34,6 @@ install -Dp -m 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 install -dp -m 0755 $RPM_BUILD_ROOT%{_datadir}/%{name}/samples
 install -m 644 samples/*.wav $RPM_BUILD_ROOT%{_datadir}/%{name}/samples
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING NEWS README doc/manual.html
 %{_bindir}/%{name}

@@ -21,9 +21,6 @@ Goglus mouse cursor theme for X11 system.
 %__install -m 644 cursors/* %{buildroot}%{_datadir}/icons/goglus/cursors
 %__install -m 644 index.theme %{buildroot}%{_datadir}/icons/goglus
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc COPYRIGHT LICENSE
 %{_datadir}/icons/goglus

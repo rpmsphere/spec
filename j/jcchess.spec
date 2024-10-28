@@ -1,15 +1,15 @@
-Name:		jcchess
-Version:	0.0.1git
-Release:	2.1
-Summary:	A chess GUI to play against chess engines
-Group:		Games/Boards
-License:	GPLv3+
-URL:		https://www.johncheetham.com/projects/jcchess/
-Source:		%{name}-master.zip
-BuildRequires:	python3-devel
+Name:           jcchess
+Version:        0.0.1git
+Release:        2.1
+Summary:        A chess GUI to play against chess engines
+Group:          Games/Boards
+License:        GPLv3+
+URL:            https://www.johncheetham.com/projects/jcchess/
+Source:         %{name}-master.zip
+BuildRequires:  python3-devel
 Requires:       python3-gobject
-Requires:	python3-cairo
-BuildArch:	noarch
+Requires:       python3-cairo
+BuildArch:      noarch
 
 %description
 JCchess is a program to play chess against UCI chess engines.
@@ -24,9 +24,6 @@ python3 setup.py build
 %install
 rm -rf %{buildroot}
 python3 setup.py install --root %{buildroot}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE README.rst ChangeLog

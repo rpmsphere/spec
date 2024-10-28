@@ -24,9 +24,6 @@ install -d %{buildroot}%{_datadir}/icons/leafSimple
 cp -a cursors %{buildroot}%{_datadir}/icons/leafSimple
 install -m644 index.theme %{buildroot}%{_datadir}/icons/leafSimple/cursor.theme
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/icons/leafSimple
 

@@ -1,12 +1,12 @@
-Name:		aaphoto		
-Version:	0.43
-Release:	10.1
-Summary:	Automatic color correction of photos
-Group:		Applications/Multimedia		
-License:	GPLv3+	
-URL:		https://log69.com/aaphoto_en.html		
-Source0:	https://github.com/log69/%{name}/archive/v%{version}.tar.gz
-BuildRequires:	jasper-devel, libpng-devel
+Name:           aaphoto         
+Version:        0.43
+Release:        10.1
+Summary:        Automatic color correction of photos
+Group:          Applications/Multimedia         
+License:        GPLv3+  
+URL:            https://log69.com/aaphoto_en.html               
+Source0:        https://github.com/log69/%{name}/archive/v%{version}.tar.gz
+BuildRequires:  jasper-devel, libpng-devel
 
 %description
 Auto Adjust Photo is a tiny command-line image manipulation 

@@ -1,13 +1,13 @@
-Name:			python-pyxmpp
-Version:		1.1.1
-Release:		6.1
-Summary:		Python Jabber/XMPP Implementation
-Source:			https://pyxmpp.jajcus.net/downloads/pyxmpp-%{version}.tar.gz
-Patch1:			%{name}-libxml2_not_in_usr_local.patch
-URL:			https://pyxmpp.jajcus.net/
-Group:			Development/Libraries/Python
-License:		GNU Library General Public License (LGPL)
-BuildRequires:	python2-devel libxml2-devel
+Name:                   python-pyxmpp
+Version:                1.1.1
+Release:                6.1
+Summary:                Python Jabber/XMPP Implementation
+Source:                 https://pyxmpp.jajcus.net/downloads/pyxmpp-%{version}.tar.gz
+Patch1:                 %{name}-libxml2_not_in_usr_local.patch
+URL:                    https://pyxmpp.jajcus.net/
+Group:                  Development/Libraries/Python
+License:                GNU Library General Public License (LGPL)
+BuildRequires:  python2-devel libxml2-devel
 #BuildRequires:  python2-dns
 
 %description
@@ -22,16 +22,13 @@ incoming events and create outgoing stanzas (XMPP "packets").
 
 %prep
 %setup -q -n pyxmpp-%{version}
-%patch1
+%patch 1
 
 %build
 python2 ./setup.py build
 
 %install
 python2 ./setup.py install --prefix=%{_prefix} --root=%{buildroot}
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc ChangeLog CHANGES COPYING README TODO examples

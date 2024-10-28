@@ -31,9 +31,6 @@ python3 setup.py build
 %install
 python3 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc PKG-INFO
 %{python3_sitelib}/*

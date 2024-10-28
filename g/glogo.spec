@@ -1,13 +1,13 @@
-Name:		glogo
-Version:	0.1.5
-Release:	7.1
-Summary:	Graphical LOGO Language
-License:	see copyright
-Group:		Development/Languages
-Source0:	https://sourceforge.net/projects/g-logo/files/g-logo/g-logo_0.1-5/g-logo_0.1-5.tar.gz
-Source1:	%{name}.png
-URL:		https://g-logo.sourceforge.net/
-BuildRequires:	gtk2-devel, gtkglext-devel, libsndfile-devel
+Name:           glogo
+Version:        0.1.5
+Release:        7.1
+Summary:        Graphical LOGO Language
+License:        see copyright
+Group:          Development/Languages
+Source0:        https://sourceforge.net/projects/g-logo/files/g-logo/g-logo_0.1-5/g-logo_0.1-5.tar.gz
+Source1:        %{name}.png
+URL:            https://g-logo.sourceforge.net/
+BuildRequires:  gtk2-devel, gtkglext-devel, libsndfile-devel
 
 %description
 G-logo is a 3D graphics software. It has interpreter language processer
@@ -43,9 +43,6 @@ EOF
 
 %__mkdir_p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install -Dm 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS README commands.txt COPYING

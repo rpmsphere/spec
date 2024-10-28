@@ -28,9 +28,6 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 %doc README.md LICENSE CONTRIBUTORS
 %{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.5
 - Rebuilt for Fedora

@@ -15,7 +15,7 @@ BuildRequires:  python2-devel
 Requires:       gdm >= 2.28
 Requires:       gdm <= 3
 Requires:       python-pillow
-Requires:	xdg-utils
+Requires:       xdg-utils
 BuildArch:      noarch
 
 %description
@@ -24,8 +24,8 @@ setting, autologin option, prompted or userlist login, etc.
 
 %prep
 %setup -q
-%patch0
-%patch1
+%patch 0
+%patch 1
 
 %build
 python2 setup.py build
@@ -38,9 +38,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 %__cp -r %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog README LICENSE MANIFEST

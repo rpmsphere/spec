@@ -1,16 +1,16 @@
 %define oname ManPageEditor
 
-Name:			manpageeditor
-Version:		0.1.1
-Release:		3.1
-Summary:		Manual pages editor
-License:		GPLv3
-Group:			Books/Howtos
-URL:			https://keithhedger.hostingsiteforfree.com/
-Source0:		https://keithhedger.hostingsiteforfree.com/zips/manpageeditor/%{oname}-%{version}.tar.gz
-BuildRequires:		desktop-file-utils
-BuildRequires:		xdg-utils
-BuildRequires:		pkgconfig(gtksourceview-2.0)
+Name:                   manpageeditor
+Version:                0.1.1
+Release:                3.1
+Summary:                Manual pages editor
+License:                GPLv3
+Group:                  Books/Howtos
+URL:                    https://keithhedger.hostingsiteforfree.com/
+Source0:                https://keithhedger.hostingsiteforfree.com/zips/manpageeditor/%{oname}-%{version}.tar.gz
+BuildRequires:          desktop-file-utils
+BuildRequires:          xdg-utils
+BuildRequires:          pkgconfig(gtksourceview-2.0)
 BuildRequires:      aspell-devel
 
 %description

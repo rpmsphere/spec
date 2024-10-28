@@ -48,9 +48,6 @@ install -m644 ../share/schemes/* %{buildroot}%{_datadir}/%{name}/schemes
 install -m644 ../share/scripting/* %{buildroot}%{_datadir}/%{name}/scripting
 install -Dm644 ../installers/rpmsuse/%{name}.pc %{buildroot}%{_libdir}/pkgconfig/%{name}.pc
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc licence change.log lib/agenaini.spl
 %{_bindir}/%{name}

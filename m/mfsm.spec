@@ -7,7 +7,7 @@ Release:        960.1
 Summary:        X Window System Based du
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
-Patch:          %{name}-%{version}.patch
+Patch0:         %{name}-%{version}.patch
 Patch1:         %{name}-%{version}-file-close.patch
 BuildRequires:  imake
 BuildRequires:  libXpm-devel
@@ -31,8 +31,8 @@ systems.
 
 %prep
 %setup -q
-%patch
-%patch1
+%patch 0
+%patch 1
 
 %build
 xmkmf -a

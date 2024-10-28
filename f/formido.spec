@@ -9,7 +9,7 @@ Summary:        Fast bug shooting game
 URL:            https://www.mhgames.cjb.net
 Source0:        %{name}-%{version}.tar.bz2
 Source3:        %{name}.png
-Patch:          %{name}-%{version}-make.patch
+Patch0:          %{name}-%{version}-make.patch
 Source2:        %{name}
 
 %description
@@ -21,7 +21,7 @@ Authors:
 
 %prep
 %setup -q
-%patch
+%patch 0
 
 %build
 make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
@@ -48,9 +48,6 @@ Categories=Game;ArcadeGame;
 EOF
 %__mkdir_p %{buildroot}%{_datadir}/pixmaps
 %__cp %{SOURCE3} %{buildroot}%{_datadir}/pixmaps
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 update-mime-database %{_datadir}/mime &> /dev/null

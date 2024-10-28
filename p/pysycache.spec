@@ -25,12 +25,12 @@ Author:
 
 %prep
 %setup -q -n %{name}-src
-%patch0 -p0
-%patch1 -p0
-%patch2 -p0
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
+%patch 0 -p0
+%patch 1 -p0
+%patch 2 -p0
+%patch 3 -p1
+%patch 4 -p1
+%patch 5 -p1
 
 %build
 cat << EOF > %{name}.sh
@@ -49,7 +49,7 @@ install -Dm755 pysycache.sh %{buildroot}/%{_bindir}/%{name}
 install -d %{buildroot}%{_defaultdocdir}/%{name}
 cp -a pysycache/doc/* %{buildroot}%{_defaultdocdir}/%{name}/
 for i in AUTHORS ChangeLog COPYING NEWS README; do
-	mv %{buildroot}%{_datadir}/%{name}/$i %{buildroot}%{_defaultdocdir}/%{name}
+        mv %{buildroot}%{_datadir}/%{name}/$i %{buildroot}%{_defaultdocdir}/%{name}
 done
 rm %{buildroot}%{_datadir}/%{name}/INSTALL
 # man files
@@ -63,9 +63,6 @@ install -m 644 linux/usr/share/applications/*.desktop %buildroot/%{_datadir}/app
 install -d %buildroot/%{_sysconfdir}/pysycache
 install -m644 linux/etc/pysycache/pysycache.dfg %buildroot/%{_sysconfdir}/pysycache/
 mkdir -p %{buildroot}/var/games/%{name}/{users,themes-move,themes-click,themes-dblclick,themes-buttons,themes-puzzle}
-
-%clean
-rm -rf %buildroot
 
 %files
 %doc %{_defaultdocdir}/%{name}

@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Name: 	 	xystray
-Summary: 	A simple implementation of freedesktop.org systray specification
-Version: 	1.0
-Release: 	6.1
-Source:		https://github.com/steelman/xystray/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-URL:		https://steelman.github.io/xystray/
-License:	GPL
-Group:		Graphical desktop/Other
+Name:           xystray
+Summary:        A simple implementation of freedesktop.org systray specification
+Version:        1.0
+Release:        6.1
+Source:         https://github.com/steelman/xystray/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+URL:            https://steelman.github.io/xystray/
+License:        GPL
+Group:          Graphical desktop/Other
 BuildRequires: libX11-devel
 BuildRequires: libXt-devel
 BuildRequires: libXaw-devel
@@ -28,9 +28,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc LICENSE README

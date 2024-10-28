@@ -1,14 +1,14 @@
 %global __os_install_post %{nil}
 
-Name:		vbisam
-Version:	2.0
-Release:	12.1
-Summary:	ISAM file handler
-Group:		Development/Languages/Other
-License:	GPLv2+ and LGPLv2+
-URL:		https://sourceforge.net/projects/vbisam
-Source:		https://dl.sourceforge.net/project/vbisam/vbisam2/%{name}-%{version}.tar.gz
-BuildRequires:	libtool
+Name:           vbisam
+Version:        2.0
+Release:        12.1
+Summary:        ISAM file handler
+Group:          Development/Languages/Other
+License:        GPLv2+ and LGPLv2+
+URL:            https://sourceforge.net/projects/vbisam
+Source:         https://dl.sourceforge.net/project/vbisam/vbisam2/%{name}-%{version}.tar.gz
+BuildRequires:  libtool
 
 %description
 * Compatible with the leading commercial ISAM
@@ -18,8 +18,8 @@ BuildRequires:	libtool
 * Easily extensible
 
 %package devel
-Summary:	Development files for vbisam
-Requires:	%{name} = %{version}-%{release}
+Summary:        Development files for vbisam
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 Development files for vbisam.
@@ -37,9 +37,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog README COPYING COPYING.LIB NEWS

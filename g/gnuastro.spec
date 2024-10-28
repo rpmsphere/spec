@@ -40,10 +40,10 @@ Additional documentation for the GNU Astromomy Utilities.
 
 %build
 %configure \
-	--docdir=%{_docdir}/%{name} \
-	--disable-static \
-	--disable-rpath \
-	CPPFLAGS="$(pkg-config cfitsio --cflags)"
+        --docdir=%{_docdir}/%{name} \
+        --disable-static \
+        --disable-rpath \
+        CPPFLAGS="$(pkg-config cfitsio --cflags)"
 make %{?_smp_mflags}
 
 %install

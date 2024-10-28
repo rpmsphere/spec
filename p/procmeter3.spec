@@ -43,9 +43,6 @@ make INSTDIR=%{_prefix} CFLAGS="%{optflags}"
 install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 install -Dm644 %{SOURCE2} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc ChangeLog COPYING NEWS README
 %{_datadir}/applications/*.desktop

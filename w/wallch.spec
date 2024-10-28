@@ -1,24 +1,24 @@
 %undefine _debugsource_packages
 
-Name:		wallch
-Version:	4.15.r213
-Release:	10.1
-Summary:	A wallpaper changer
-License:	GPLv3
-URL:		https://melloristudio.com/wallch/
-Source0:	wallch-4.15.r213.tar.gz
-Source1:	wallch.desktop
-Source2:	wallch.appdata.xml
-Source3:	generate-tarball.sh
-Patch0:		%{name}-4.15-qt4-compat.patch
-Patch1:		%{name}-4.15-remove-unity-dependency.patch
-Patch2:		%{name}-4.15-math.patch
-BuildRequires:	dbus-glib-devel libnotify-devel libappindicator-devel
-BuildRequires:	libdbusmenu-devel libexif-devel keybinder-devel
-BuildRequires:	qt5-qtbase-devel qt5-qtwebkit-devel
-BuildRequires:	desktop-file-utils libappstream-glib
-Requires:	xdg-utils unzip
-Requires(post):	desktop-file-utils
+Name:           wallch
+Version:        4.15.r213
+Release:        10.1
+Summary:        A wallpaper changer
+License:        GPLv3
+URL:            https://melloristudio.com/wallch/
+Source0:        wallch-4.15.r213.tar.gz
+Source1:        wallch.desktop
+Source2:        wallch.appdata.xml
+Source3:        generate-tarball.sh
+Patch0:         %{name}-4.15-qt4-compat.patch
+Patch1:         %{name}-4.15-remove-unity-dependency.patch
+Patch2:         %{name}-4.15-math.patch
+BuildRequires:  dbus-glib-devel libnotify-devel libappindicator-devel
+BuildRequires:  libdbusmenu-devel libexif-devel keybinder-devel
+BuildRequires:  qt5-qtbase-devel qt5-qtwebkit-devel
+BuildRequires:  desktop-file-utils libappstream-glib
+Requires:       xdg-utils unzip
+Requires(post): desktop-file-utils
 Requires(postun): desktop-file-utils
 
 %description
@@ -30,9 +30,9 @@ Picture of the day, Live Earth, Wallpaper Clocks and Live Website!
 
 %prep
 %setup -q
-%patch0 -p0 -b .compat
-%patch1 -p0 -b .unity
-%patch2 -p1 -b .math
+%patch 0 -p0 -b .compat
+%patch 1 -p0 -b .unity
+%patch 2 -p1 -b .math
 
 %build
 qmake-qt5 *.pro

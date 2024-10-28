@@ -41,9 +41,6 @@ tar xf %{SOURCE1} -C $RPM_BUILD_ROOT%{_datadir}/icons
 tar xf %{SOURCE2} -C $RPM_BUILD_ROOT%{_datadir}/icons
 rm $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}/index.theme~
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 %{_datadir}/icons/%{theme_name}*

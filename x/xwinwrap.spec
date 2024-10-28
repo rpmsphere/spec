@@ -30,9 +30,6 @@ gcc -Wall -Wstrict-prototypes \
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.md
 %{_bindir}/*

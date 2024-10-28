@@ -1,13 +1,13 @@
-Summary:	Multi-platform implementation of OpenCL 1.2 targeting CPUs
-Name:		freeocl
-Version:	0.3.6.20180107
-Release:	1
-License:	LGPL
-Group:		System/Libraries
-URL:		http://code.google.com/p/freeocl/
+Summary:        Multi-platform implementation of OpenCL 1.2 targeting CPUs
+Name:           freeocl
+Version:        0.3.6.20180107
+Release:        1
+License:        LGPL
+Group:          System/Libraries
+URL:            http://code.google.com/p/freeocl/
 Source: freeocl-master.zip
-BuildRequires:	cmake, gcc-c++, libatomic_ops-devel
-Provides:	opencl = 1.2.0
+BuildRequires:  cmake, gcc-c++, libatomic_ops-devel
+Provides:       opencl = 1.2.0
 
 %description
 FreeOCL is an implementation of OpenCL 1.2 specifications targeting CPUs.
@@ -16,11 +16,11 @@ C++ compiler. It aims to provide a debugging tool and a reliable platform
 which can run everywhere.
 
 %package devel
-Summary:	FreeOCL development files
-Group:		Development/C
-Requires:	opencl = 1.2.0
-Requires:	opencl-headers
-Provides:	opencl-devel = 1.2.0
+Summary:        FreeOCL development files
+Group:          Development/C
+Requires:       opencl = 1.2.0
+Requires:       opencl-headers
+Provides:       opencl-devel = 1.2.0
 
 %description devel
 FreeOCL is an implementation of OpenCL 1.2 specifications targeting CPUs.
@@ -47,9 +47,6 @@ rm -rf %{buildroot}
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README COPYING* TODO AUTHORS
 %{_libdir}/libOpenCL.so.*
@@ -62,4 +59,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.6.20180107
-- Rebuild for Fedora
+- Rebuilt for Fedora

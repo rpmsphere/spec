@@ -13,7 +13,7 @@ Source1: %name-icons.tar.bz2
 Source2: start%name
 Source3: %{name}rc
 Source4: %name.startup
-Patch: %name-2.0.18-man.patch
+Patch0: %name-2.0.18-man.patch
 BuildRequires: imake libSM-devel libXext-devel libXpm-devel
 
 %description
@@ -56,7 +56,7 @@ Themes for %Name Window Manager.
 
 %prep
 %setup -q -a 1
-%patch -p1
+%patch 0 -p1
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
@@ -72,9 +72,6 @@ chmod 755 %{buildroot}%{_bindir}/start%name
 install -d -m 0755 %{buildroot}%{_sysconfdir}/X11/%name
 install -m 0644 %SOURCE4 %{buildroot}%{_sysconfdir}/X11/%name/startup
 install -m 0755 %SOURCE3 %{buildroot}%{_sysconfdir}/X11/%name/%{name}rc
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog README TODO example.%{name}rc

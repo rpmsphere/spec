@@ -1,16 +1,16 @@
-Summary:	X11 browser interface to Archie
-Name:		xarchie
-Version:	2.0.10
-Release:	7
-Source:		ftp://ftp.x.org/contrib/applications/xarchie-2.0.10.tar.gz
-Source1:	%{name}.png
-Patch:		Xarchie2.0.10.patch
-License:	Free
-Group:		Networking/Other
-BuildRequires:	imake
-BuildRequires:	libXaw-devel
-BuildRequires:	Xaw3d-devel
-BuildRequires:	xorg-x11-xbitmaps
+Summary:        X11 browser interface to Archie
+Name:           xarchie
+Version:        2.0.10
+Release:        7
+Source:         ftp://ftp.x.org/contrib/applications/xarchie-2.0.10.tar.gz
+Source1:        %{name}.png
+Patch0:         Xarchie2.0.10.patch
+License:        Free
+Group:          Networking/Other
+BuildRequires:  imake
+BuildRequires:  libXaw-devel
+BuildRequires:  Xaw3d-devel
+BuildRequires:  xorg-x11-xbitmaps
 
 %description
 This is release 2.0 of xarchie, an X browser interface to the Archie
@@ -18,7 +18,7 @@ Internet information system.
 
 %prep
 %setup -q -n xarchie-2.0.10
-%patch
+%patch 0
 sed -i 's|char \*pmatch|static char *pmatch|' regex.c
 sed -i 's|struct restrict|struct restriction|' pfs.h
 sed -i -e 's|regexp\.h|regex.h|' -e '48i #define NO_REGEXP' FWF/Dir/RegExp.c
@@ -45,9 +45,6 @@ Categories=Network;
 EOF
 
 install -Dm644 %{SOURCE1} %buildroot%_datadir/pixmaps/%{name}.png
-
-%clean
-rm -fr %buildroot
 
 %files
 %doc README PROBLEMS

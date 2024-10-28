@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name:		xmacro
-Group: 		Development/Languages
-Version: 	0.3pre
-Release: 	20.1
-License: 	GPL
-URL:		https://xmacro.sourceforge.net/
-Summary: 	Recording and replaying keyboard and mouse events
-Source:		%{name}-pre0.3.tar.bz2
-BuildRequires:	gcc-c++ libX11-devel libXtst-devel
+Name:           xmacro
+Group:          Development/Languages
+Version:        0.3pre
+Release:        20.1
+License:        GPL
+URL:            https://xmacro.sourceforge.net/
+Summary:        Recording and replaying keyboard and mouse events
+Source:         %{name}-pre0.3.tar.bz2
+BuildRequires:  gcc-c++ libX11-devel libXtst-devel
 
 %description
 The XMacro package contains two simple, C++ programs (xmacrorec and xmacroplay)
@@ -34,9 +34,6 @@ cp xmacrorec2 $RPM_BUILD_ROOT/usr/bin
 %files
 %doc COPYING README README.SUSE
 %{_bindir}/xmacro*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Nov 13 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3pre

@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name:		escpos-progs
-Version:	2018
-Release:	3.1
-Summary:	Misc. ESC/POS Programs
-License:	free
-Group:		Applications/Utilities
-Source0:	png2escpos-master.zip
-Source1:	escposf.c
-BuildRequires:	libpng-devel
+Name:           escpos-progs
+Version:        2018
+Release:        3.1
+Summary:        Misc. ESC/POS Programs
+License:        free
+Group:          Applications/Utilities
+Source0:        png2escpos-master.zip
+Source1:        escposf.c
+BuildRequires:  libpng-devel
 
 %description
 png2escpos <https://github.com/twg/png2escpos>:
@@ -27,9 +27,6 @@ cc -O3 %{SOURCE1} -o escposf
 rm -rf %{buildroot}
 install -d %{buildroot}%{_bindir}
 install -m755 png2escpos escposf %{buildroot}%{_bindir}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE README.md

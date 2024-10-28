@@ -30,9 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 install -Dm755 %{_name} $RPM_BUILD_ROOT%{_bindir}/%{_name}
 install -Dm644 man/%{_name}.1 $RPM_BUILD_ROOT%{_mandir}/man1/%{_name}.1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{_name}
 %{_mandir}/man1/%{_name}.1.*

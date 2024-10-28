@@ -29,9 +29,6 @@ rm -rf $RPM_BUILD_ROOT
 %_bindir/fbgrab
 %_mandir/man1/fbgrab.1*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Oct 30 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.5
 - Rebuilt for Fedora

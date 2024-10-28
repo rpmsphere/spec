@@ -36,9 +36,6 @@ _applnk_dir_=$RPM_BUILD_ROOT/usr/share/applications \
 _applnk_sub_dir_="" _desktop_file_=cgtkcalc.desktop install.gnome
 sed -i -e 's|Name=cgtkcalc|Name=Complex Calc|' -e '10i Categories=Utility;' $RPM_BUILD_ROOT%{_datadir}/applications/cgtkcalc.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING ChangeLog ReadMe ReadMe-jp example.gtkrc
 %{_datadir}/applications/cgtkcalc.desktop

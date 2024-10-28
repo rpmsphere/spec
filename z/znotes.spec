@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		znotes
-Version:	0.4.5
-Release:	22.1
-License:	GPL
-Vendor:		Peter Savichev <psavichev@gmail.com>
-Source:		%{name}-%{version}.tar.gz
-Summary:	Lightweigh crossplatform application for notes management
-Group:		Productivity/Text/Utilities
+Name:           znotes
+Version:        0.4.5
+Release:        22.1
+License:        GPL
+Vendor:         Peter Savichev <psavichev@gmail.com>
+Source:         %{name}-%{version}.tar.gz
+Summary:        Lightweigh crossplatform application for notes management
+Group:          Productivity/Text/Utilities
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, qt4-devel
+BuildRequires:  gcc-c++, qt4-devel
 
 %description
 Lightweigh crossplatform application for notes management.
@@ -27,9 +27,6 @@ make
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
 %{makeinstall} INSTALL_ROOT=$RPM_BUILD_ROOT
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

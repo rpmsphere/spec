@@ -43,9 +43,6 @@ rm -rf %{buildroot}
 rm %{buildroot}%{_libdir}/*.la
 %find_lang %name
 
-%clean
-rm -rf %{buildroot}
-
 %files -f %name.lang
 %doc README AUTHORS ChangeLog
 %_libdir/libpx.so.*

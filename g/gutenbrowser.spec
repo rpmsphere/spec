@@ -26,15 +26,15 @@ Project Gutenberg (https://www.gutenberg.org/).
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 # Replace the zip class from OSDaB Project with a newer one (the existing one doesn't work)
 rm -rf zip/
 tar jxf %{SOURCE2}
 mv OSDaB-Zip zip
 
-%patch2 -p1
+%patch 2 -p1
 
 # Make sure the system zlib is used
 rm -rf zlib/

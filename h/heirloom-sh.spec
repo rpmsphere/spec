@@ -8,7 +8,7 @@ License:      BSD/CDDL
 Version:      050706
 Release:      6.1
 Source0:      https://switch.dl.sourceforge.net/sourceforge/heirloom/heirloom-sh-%{version}.tar.bz2
-Patch:       sh.patch
+Patch0:       sh.patch
 
 %description
 The Heirloom Bourne Shell is a portable variant of the traditional
@@ -23,7 +23,7 @@ the twenty-first century.
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 
 %build
 %{__make} %{_smp_mflags} \

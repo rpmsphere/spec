@@ -24,9 +24,6 @@ make %{?_smp_mflags} CFLAGS="%{optflags}"
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files 
 %doc AUTHORS ChangeLog COPYING NEWS README TODO slsnifrc-example
 %{_mandir}/man*/%{name}.1*

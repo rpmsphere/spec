@@ -22,9 +22,6 @@ letters can be accessed using the OpenType “Stylistic Alternates” feature.
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/fonts/xirod
 cp *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/xirod
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc *.html *.pdf
 %{_datadir}/fonts/xirod

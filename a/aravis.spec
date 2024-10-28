@@ -1,27 +1,27 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
-%define gstapi	1
-%define api	0.4
+%define gstapi  1
+%define api     0.4
 %define libname lib%{name}
 %define girname lib%{name}-gir
 %define devname lib%{name}-devel
 
-Summary:	Glib/gobject based library implementing a Genicam interface
-Name:		aravis
-Version:	0.8.7
-Release:	1
-License:	GPLv2+
-Group:		Development/GNOME and GTK+
-URL:		https://github.com/AravisProject/aravis
-Source0:	https://ftp.gnome.org/pub/GNOME/sources/aravis/%{url_ver}/%{name}-%{version}.tar.xz
-BuildRequires:	intltool
-BuildRequires:	pkgconfig(gobject-introspection-1.0)
-BuildRequires:	pkgconfig(gstreamer-%{gstapi}.0)
-BuildRequires:	pkgconfig(gstreamer-plugins-base-%{gstapi}.0)
-BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(libnotify)
-BuildRequires:	pkgconfig(gstreamer-app-1.0)
-BuildRequires:	gtk-doc
-BuildRequires:	w3m
+Summary:        Glib/gobject based library implementing a Genicam interface
+Name:           aravis
+Version:        0.8.7
+Release:        1
+License:        GPLv2+
+Group:          Development/GNOME and GTK+
+URL:            https://github.com/AravisProject/aravis
+Source0:        https://ftp.gnome.org/pub/GNOME/sources/aravis/%{url_ver}/%{name}-%{version}.tar.xz
+BuildRequires:  intltool
+BuildRequires:  pkgconfig(gobject-introspection-1.0)
+BuildRequires:  pkgconfig(gstreamer-%{gstapi}.0)
+BuildRequires:  pkgconfig(gstreamer-plugins-base-%{gstapi}.0)
+BuildRequires:  pkgconfig(gtk+-3.0)
+BuildRequires:  pkgconfig(libnotify)
+BuildRequires:  pkgconfig(gstreamer-app-1.0)
+BuildRequires:  gtk-doc
+BuildRequires:  w3m
 BuildRequires:  python
 BuildRequires:  meson
 
@@ -32,8 +32,8 @@ ethernet, firewire or USB cameras. It currently only implements an ethernet
 camera protocol used for industrial cameras.
 
 %package -n %{libname}
-Summary:	Shared library for %{name}
-Group:		System/Libraries
+Summary:        Shared library for %{name}
+Group:          System/Libraries
 
 %description -n %{libname}
 Aravis is a glib/gobject based library implementing a Genicam interface, 
@@ -44,25 +44,25 @@ camera protocol used for industrial cameras.
 This package contains the shared library for %{name}.
 
 %package -n %{girname}
-Summary:	GObject Introspection interface description for %{name}
-Group:		System/Libraries
+Summary:        GObject Introspection interface description for %{name}
+Group:          System/Libraries
 
 %description -n %{girname}
 GObject Introspection interface description for %{name}.
 
 %package -n gstreamer%{gstapi}-%{name}
-Summary:	Gstreamer support for %{name}
-Group:		Sound
-Obsoletes:	%{name}-gstreamer%{gstapi}
+Summary:        Gstreamer support for %{name}
+Group:          Sound
+Obsoletes:      %{name}-gstreamer%{gstapi}
 
 %description -n gstreamer%{gstapi}-%{name}
 This package contains the gstreamer plugin for %{name}.
 
 %package -n %{devname}
-Summary:	Development files for %{name}
-Group:		Development/C
-Requires:	%{libname} = %{version}
-Requires:	%{girname} = %{version}
+Summary:        Development files for %{name}
+Group:          Development/C
+Requires:       %{libname} = %{version}
+Requires:       %{girname} = %{version}
 
 %description -n %{devname}
 This package contains the development files for %{name}
@@ -73,9 +73,9 @@ sed -i "s|('desktop',|(|" viewer/data/meson.build
 
 %build
 #configure \
-#	--disable-static \
-#	--enable-gst-plugin \
-#	--enable-viewer
+#       --disable-static \
+#       --enable-gst-plugin \
+#       --enable-viewer
 #make LIBS='-lm -lz'
 mkdir build
 meson --prefix=/usr build

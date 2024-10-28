@@ -33,9 +33,6 @@ rm -rf $RPM_BUILD_ROOT
 %__install -pD -m644 %SOURCE1 %{buildroot}%{_datadir}/applications/%{name}.desktop
 %__install -pD -m644 %SOURCE2 %{buildroot}%{_datadir}/pixmaps/%{name}.xpm
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CHANGES README
 %{_bindir}/%{name}

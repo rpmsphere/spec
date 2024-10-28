@@ -34,9 +34,6 @@ make install prefix=$RPM_BUILD_ROOT/usr
 %{_datadir}/applications/*.desktop
 %{_datadir}/icons/hicolor/128x128/apps/sb-desktop-128x128.png
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 12.24git
 - Rebuilt for Fedora

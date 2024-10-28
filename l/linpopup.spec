@@ -1,16 +1,16 @@
-Summary: 	Linux enhanced port of Winpopup
-Name: 		linpopup
-Version: 	2.1.0
-Release:	10.1
-License:	GPL
-Group: 		Networking/Chat
-Source0:	%{name}-%{version}.tar.bz2
-Source1:	%{name}.png
+Summary:        Linux enhanced port of Winpopup
+Name:           linpopup
+Version:        2.1.0
+Release:        10.1
+License:        GPL
+Group:          Networking/Chat
+Source0:        %{name}-%{version}.tar.bz2
+Source1:        %{name}.png
 BuildRequires:  libpng-devel
-BuildRequires:	gtk2-devel libXmu-devel
-Requires:	gtk2 libXmu
-Requires:	samba-client samba-common
-URL: 		https://linpopup2.sourceforge.net
+BuildRequires:  gtk2-devel libXmu-devel
+Requires:       gtk2 libXmu
+Requires:       samba-client samba-common
+URL:            https://linpopup2.sourceforge.net
 
 %description
 Xwindow graphical port of Winpopup, running over Samba.
@@ -46,9 +46,6 @@ EOF
 # icon
 %__mkdir_p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 %__install -m 644 %SOURCE1 $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 

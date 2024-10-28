@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Summary:	"Ha" Background - setting of window manager background image
-Name:		habak
-Version:	0.2.5
-Release:	1
-License:	GPL
-Group:		Graphical desktop/Other
-Source0:	https://fvwm-crystal.berlios.de/files/files/habak/%{name}-%{version}.tar.gz
-URL:		https://fvwm-crystal.berlios.de/
-BuildRequires:	imlib2-devel
+Summary:        "Ha" Background - setting of window manager background image
+Name:           habak
+Version:        0.2.5
+Release:        1
+License:        GPL
+Group:          Graphical desktop/Other
+Source0:        https://fvwm-crystal.berlios.de/files/files/habak/%{name}-%{version}.tar.gz
+URL:            https://fvwm-crystal.berlios.de/
+BuildRequires:  imlib2-devel
 
 %description
 Habak sets window manager background image. Habak uses layered model.
@@ -30,9 +30,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 habak $RPM_BUILD_ROOT/%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog README TODO

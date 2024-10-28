@@ -27,9 +27,6 @@ rm %{name} %{name}.exe
 %{__install} -Dp -m0755 dirsync %{buildroot}%{_bindir}/dirsync
 %{__install} -Dp -m0644 dirsync.1 %{buildroot}%{_mandir}/man1/dirsync.1
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %doc readme.txt
 %doc %{_mandir}/man1/dirsync.1*

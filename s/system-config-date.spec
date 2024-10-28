@@ -1,8 +1,3 @@
-%{!?python2_sitelib: %global python2_sitelib %(python2 -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")}
-%{!?python2_version: %global python2_version %(python2 -c "from distutils.sysconfig import get_python_version; print get_python_version()")}
-
-# Command line configurables
-
 %if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 8 || 0%{?rhel} >= 6
 %bcond_without newt_python
 %else
@@ -102,9 +97,6 @@ desktop-file-install --vendor system --delete-original       \
 %find_lang %{name}-timezones
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/%{name}.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang -f %{name}-timezones.lang
 %doc COPYING

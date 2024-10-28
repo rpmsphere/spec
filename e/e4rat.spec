@@ -1,27 +1,27 @@
-Summary:	Toolset to accelerate the boot process as well as application startups
-Name:		e4rat
-Version:	0.2.3
-Release:	36
-License:	GPLv3
-Group:		System/Boot and Init
-URL:		https://e4rat.sourceforge.net/
-Source0:	https://sourceforge.net/projects/e4rat/files/%{name}_%{version}_src.tar.gz
-Patch0:		git.diff
-Patch1:		e4rat-0.2.2-libdir.patch
-Patch2:		e4rat-0.2.3-shared-build.patch
-Patch3:		e4rat-0.2.3-gcc7.patch
-Patch4:		e4rat-0.2.3-glibc-2.28.patch
-Patch5:		e4rat-boost-placeholders.patch
+Summary:        Toolset to accelerate the boot process as well as application startups
+Name:           e4rat
+Version:        0.2.3
+Release:        36
+License:        GPLv3
+Group:          System/Boot and Init
+URL:            https://e4rat.sourceforge.net/
+Source0:        https://sourceforge.net/projects/e4rat/files/%{name}_%{version}_src.tar.gz
+Patch0:         git.diff
+Patch1:         e4rat-0.2.2-libdir.patch
+Patch2:         e4rat-0.2.3-shared-build.patch
+Patch3:         e4rat-0.2.3-gcc7.patch
+Patch4:         e4rat-0.2.3-glibc-2.28.patch
+Patch5:         e4rat-boost-placeholders.patch
 # Originally from Alt
-Patch50:	e4rat-0.2.3-boost-1.76.0-compat.patch
+Patch50:        e4rat-0.2.3-boost-1.76.0-compat.patch
 # Originally from Arch e4rat-lite
-Patch60:	e4rat-addSyscall.patch
-BuildRequires:	cmake
-BuildRequires:	boost-devel
-BuildRequires:	pkgconfig(ext2fs)
-BuildRequires:	pkgconfig(blkid)
-BuildRequires:	pkgconfig(audit)
-BuildRequires:	libstdc++-devel
+Patch60:        e4rat-addSyscall.patch
+BuildRequires:  cmake
+BuildRequires:  boost-devel
+BuildRequires:  pkgconfig(ext2fs)
+BuildRequires:  pkgconfig(blkid)
+BuildRequires:  pkgconfig(audit)
+BuildRequires:  libstdc++-devel
 
 %description
 e4rat ("Ext4 - Reducing Access Times") is a toolset to accelerate the boot

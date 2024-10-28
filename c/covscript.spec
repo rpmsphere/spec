@@ -35,9 +35,6 @@ cp -a include/%{name} %{buildroot}%{_includedir}
 %{_libdir}/%{name}
 %{_includedir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.1.16
 - Rebuilt for Fedora

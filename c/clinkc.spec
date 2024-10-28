@@ -18,7 +18,7 @@ applications which use CyberLinkC for C.
 
 %package devel
 Summary:        CyberLink for C UPnP library
-Requires:       %{name}	
+Requires:       %{name} 
 
 %description devel
 Development files for CyberLink for C UPnP library.
@@ -39,9 +39,6 @@ make
 %__rm -rf %{buildroot}
 %__make install DESTDIR=%{buildroot}
 %__rm -rf %{buildroot}%{_datadir}/doc/%{name}0
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc ChangeLog COPYING

@@ -40,12 +40,9 @@ install -m644 man/mlvwm.man $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 install -m644 pixmap/*.xpm $RPM_BUILD_ROOT%{_datadir}/%{name}
 install -m644 sample_rc/Mlvwmrc* $RPM_BUILD_ROOT%{_datadir}/%{name}
 
-tar -zxf $RPM_SOURCE_DIR/mini-icons.tar.gz -C $RPM_BUILD_ROOT%{_datadir}/%{name}/
+tar -zxf %{SOURCE1} -C $RPM_BUILD_ROOT%{_datadir}/%{name}/
 cd $RPM_BUILD_ROOT%{_datadir}/%{name}/
 ln -s Mlvwmrc .mlvwmrc
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGELOG* FAQ.jp README* CONFIGURATION*

@@ -1,12 +1,12 @@
-Name:		connectk
-Version:	2.0
-Release:	1
-Summary:	Logic Game
-Group:		Amusements/Games
-License:	GPL
-URL:		https://www.risujin.org/connectk/
-Source:		https://risujin.org/pub/connectk/%{name}-%{version}.tar.gz
-BuildRequires:	gtk+-devel
+Name:           connectk
+Version:        2.0
+Release:        1
+Summary:        Logic Game
+Group:          Amusements/Games
+License:        GPL
+URL:            https://www.risujin.org/connectk/
+Source:         https://risujin.org/pub/connectk/%{name}-%{version}.tar.gz
+BuildRequires:  gtk+-devel
 
 %description
 The Connect-k family of games contains games defined by three parameters: k, p,
@@ -27,9 +27,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

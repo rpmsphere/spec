@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Summary:	A simple GTK/GDK image viewer.
-Name:		gview
-Version:	0.9.1a
-Release:	1
-License:	GPL
-Group:		X11/Applications/Graphics
-Source0:	https://downloads.sourceforge.net/project/gview/gview/gview-0.9a/%{name}-%{version}.tar.gz
-Source1:	%{name}.desktop
-Source2:	%{name}.png
-BuildRequires:	gtk2-devel
-URL:		https://gview.sourceforge.net/
+Summary:        A simple GTK/GDK image viewer.
+Name:           gview
+Version:        0.9.1a
+Release:        1
+License:        GPL
+Group:          X11/Applications/Graphics
+Source0:        https://downloads.sourceforge.net/project/gview/gview/gview-0.9a/%{name}-%{version}.tar.gz
+Source1:        %{name}.desktop
+Source2:        %{name}.png
+BuildRequires:  gtk2-devel
+URL:            https://gview.sourceforge.net/
 
 %description
 GView is a very small, very simple, command-line operated
@@ -31,9 +31,6 @@ install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}er
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}er.desktop
 install -Dm644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}er.png
 sed -i 's|%{name}|%{name}er|' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}er.desktop 
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}er

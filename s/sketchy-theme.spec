@@ -30,9 +30,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 cp -a * %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 chmod -x $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}/index.theme
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 

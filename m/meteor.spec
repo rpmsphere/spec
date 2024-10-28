@@ -1,26 +1,26 @@
 %undefine _debugsource_packages
 
-Name:		meteor
-Version:	1.4.2
-Release:	12.4
-Summary:	A GameBoy Advance emulator
-License:	GPLv3+
-Group:		Emulators
-URL:		https://github.com/blastrock/meteor
-Source0:	https://sourceforge.net/projects/meteorgba/files/%{name}-%{version}.tar.gz
-Patch0:		meteor-1.4.0-gcc4.7.patch
-BuildRequires:	cmake
-BuildRequires:	pkgconfig(ao)
-BuildRequires:	pkgconfig(freetype2)
-BuildRequires:	pkgconfig(gtk+-2.0)
-BuildRequires:	pkgconfig(gtkmm-2.4)
-BuildRequires:	compat-SFML16-devel
-BuildRequires:	pkgconfig(x11)
-BuildRequires:	pkgconfig(gl)
-BuildRequires:	pkgconfig(glu)
-BuildRequires:	pkgconfig(glew) >= 2.0.0
-BuildRequires:	nasm
-Source1:	gameboy.png
+Name:           meteor
+Version:        1.4.2
+Release:        12.4
+Summary:        A GameBoy Advance emulator
+License:        GPLv3+
+Group:          Emulators
+URL:            https://github.com/blastrock/meteor
+Source0:        https://sourceforge.net/projects/meteorgba/files/%{name}-%{version}.tar.gz
+Patch0:         meteor-1.4.0-gcc4.7.patch
+BuildRequires:  cmake
+BuildRequires:  pkgconfig(ao)
+BuildRequires:  pkgconfig(freetype2)
+BuildRequires:  pkgconfig(gtk+-2.0)
+BuildRequires:  pkgconfig(gtkmm-2.4)
+BuildRequires:  compat-SFML16-devel
+BuildRequires:  pkgconfig(x11)
+BuildRequires:  pkgconfig(gl)
+BuildRequires:  pkgconfig(glu)
+BuildRequires:  pkgconfig(glew) >= 2.0.0
+BuildRequires:  nasm
+Source1:        gameboy.png
 
 %description
 Meteor is a GameBoy Advance emulator with GTK2 frontend.
@@ -28,7 +28,7 @@ Icon by Natsu714 from https://natsu714.deviantart.com/art/Free-Gameboy-Icon-2886
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 sed -i -e '15s|sfml-graphics|sfml-system-1.6|' -e '18s|sfml-window|sfml-window-1.6|' -e '21s|sfml-system|sfml-graphics-1.6|' CMakeLists.txt
 sed -i 's|-pipe|-pipe -std=c++11 -fPIC -I/usr/include/sfml1|' CMakeLists.txt
 sed -i '21,25d' mym/source/CMakeLists.txt

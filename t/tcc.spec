@@ -1,12 +1,12 @@
-Summary:	Tiny C Compiler
-Name:		tcc
-Version:	0.9.27
-Release:	3.1
-License:	GPL
-Group:		Development/C
-URL:		https://bellard.org/tcc/
-Source0:	https://download.savannah.nongnu.org/releases/tinycc/%{name}-%{version}.tar.bz2
-BuildRequires:	texi2html
+Summary:        Tiny C Compiler
+Name:           tcc
+Version:        0.9.27
+Release:        3.1
+License:        GPL
+Group:          Development/C
+URL:            https://bellard.org/tcc/
+Source0:        https://download.savannah.nongnu.org/releases/tinycc/%{name}-%{version}.tar.bz2
+BuildRequires:  texi2html
 
 %description
 C Scripting Everywhere - The Smallest ANSI C compiler.
@@ -24,9 +24,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 rm -rf $RPM_BUILD_ROOT%{_docdir}/tcc-doc.html
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc Changelog README TODO *.html examples

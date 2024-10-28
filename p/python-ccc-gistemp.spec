@@ -39,9 +39,6 @@ install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/ccc-gistemp.de
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc readme.txt release-notes.txt
 %{_bindir}/*

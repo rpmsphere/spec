@@ -57,9 +57,6 @@ find $RPM_BUILD_ROOT%{_datadir}/SmartEiffel -name '*.SH' -exec chmod 0755 '{}' '
 #find www/papers -name '*.pdf.gz' -exec rm -f '{}' ';'
 #find www/papers -name '*.ps*' -exec rm -f '{}' ';'
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc READ_ME.txt GNU_LICENSE contrib misc
 %{_bindir}/se

@@ -24,9 +24,6 @@ an open source project hosted on SourceForge.
 %{__rm} -rf $RPM_BUILD_ROOT
 %{__install} -D -m 0755 clipsafe $RPM_BUILD_ROOT%{_bindir}/clipsafe
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/clipsafe
 

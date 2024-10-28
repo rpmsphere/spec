@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Summary:	C Read-Eval-Print Loop
-Name:		cepl
-Version:	5.6.0
-Release:	8.1
-License:	GPLv3
-Group:		Development/C
-URL:		https://github.com/alyptik/cepl
-Source0:	https://github.com/alyptik/cepl/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Summary:        C Read-Eval-Print Loop
+Name:           cepl
+Version:        5.6.0
+Release:        8.1
+License:        GPLv3
+Group:          Development/C
+URL:            https://github.com/alyptik/cepl
+Source0:        https://github.com/alyptik/cepl/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildRequires:  readline-devel
 BuildRequires:  elfutils-libelf-devel
 
@@ -26,9 +26,6 @@ make %{name}
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install PREFIX=/usr
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.md LICENSE.md

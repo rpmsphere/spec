@@ -20,7 +20,7 @@ Requires: python2-xlib
 Requires: gnome-python2-gconf
 Requires:   glibc >= 2.10.1
 Requires:   libstdc++ >= 4.4.1
-Patch0:		gnomenu-2.9-patch-001
+Patch0:         gnomenu-2.9-patch-001
 BuildArch: noarch
 BuildRequires:  python2
 
@@ -40,21 +40,21 @@ unterstützt derzeit Gnome-Panel, Avant-Window-Navigator, Cairo-Dock und XfApple
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch 0 -p1
 
 # fix settings
 # defaut gnome-search-tool
-##	perl -pi -e "s/tracker-search-tool/gnome-search-tool/g" src/lib/gnomenu/backup/Settings_default.xml
-##	perl -pi -e "s/tracker-search-tool/gnome-search-tool/g" src/lib/gnomenu/GnoMenu-Settings.py
-##	perl -pi -e "s/tracker-search-tool/gnome-search-tool/g" src/lib/gnomenu/Globals.py
+##      perl -pi -e "s/tracker-search-tool/gnome-search-tool/g" src/lib/gnomenu/backup/Settings_default.xml
+##      perl -pi -e "s/tracker-search-tool/gnome-search-tool/g" src/lib/gnomenu/GnoMenu-Settings.py
+##      perl -pi -e "s/tracker-search-tool/gnome-search-tool/g" src/lib/gnomenu/Globals.py
 # defaut drakconnect
-##	perl -pi -e "s/nm-connection-editor/drakconnect/g" src/lib/gnomenu/backup/Settings_default.xml
-##	perl -pi -e "s/nm-connection-editor/drakconnect/g" src/lib/gnomenu/GnoMenu-Settings.py
-##	perl -pi -e "s/nm-connection-editor/drakconnect/g" src/lib/gnomenu/Globals.py
+##      perl -pi -e "s/nm-connection-editor/drakconnect/g" src/lib/gnomenu/backup/Settings_default.xml
+##      perl -pi -e "s/nm-connection-editor/drakconnect/g" src/lib/gnomenu/GnoMenu-Settings.py
+##      perl -pi -e "s/nm-connection-editor/drakconnect/g" src/lib/gnomenu/Globals.py
 # defaut synaptic without gksu (Password request with consolekit)
-##	perl -pi -e "s/gksu synaptic/synaptic/g" src/lib/gnomenu/backup/Settings_default.xml
-##	perl -pi -e "s/gksu synaptic/synaptic/g" src/lib/gnomenu/GnoMenu-Settings.py
-##	perl -pi -e "s/gksu synaptic/synaptic/g" src/lib/gnomenu/Globals.py
+##      perl -pi -e "s/gksu synaptic/synaptic/g" src/lib/gnomenu/backup/Settings_default.xml
+##      perl -pi -e "s/gksu synaptic/synaptic/g" src/lib/gnomenu/GnoMenu-Settings.py
+##      perl -pi -e "s/gksu synaptic/synaptic/g" src/lib/gnomenu/Globals.py
 sed -i '1,2d' src/share/cairo-dock/third-party/GnoMenu/GnoMenu.conf
 sed -i 's|python|python2|' Makefile setup.py
 
@@ -67,9 +67,6 @@ make prefix=%{_prefix} DESTDIR=${RPM_BUILD_ROOT} install
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/avant-window-navigator/applets/GnoMenu/GnoMenu.py %{buildroot}/usr/lib/gnomenu/*.py
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/cairo-dock/plug-ins/Dbus/third-party/GnoMenu/GnoMenu %{buildroot}/usr/lib/gnomenu/*.py %{buildroot}%{_bindir}/*.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING Changelog README.txt

@@ -20,7 +20,7 @@ and high functionality.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 export SUBLIBS="-lX11 -lXext"
@@ -33,9 +33,6 @@ install -Dm644 qlwm.1 %{buildroot}%{_mandir}/man1/qlwm.1
 cp -a files %{buildroot}%{_libexecdir}/%{name}
 mkdir -p %{buildroot}%{_bindir}
 ln -s ../libexec/qlwm/qlwm %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README

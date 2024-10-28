@@ -7,7 +7,7 @@ Release:        596.1
 Summary:        AfterStep digital clock
 URL:            https://www.tigr.net/afterstep/
 Source:         asclock-%{version}.tar.bz2
-Patch:          asclock-gcc4.diff
+Patch0:          asclock-gcc4.diff
 
 %description
 A swallowable applet shows clock and calendar. Supports themes for
@@ -15,7 +15,7 @@ different looks.
 
 %prep
 %setup -q
-%patch
+%patch 0
 sed -i 's|gcc|gcc -Wl,--allow-multiple-definition|' Imakefile
 
 %build

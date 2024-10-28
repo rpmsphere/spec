@@ -37,9 +37,6 @@ EOF
 %attr(755,root,root) %{_bindir}/%{name}
 %{_datadir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Fri Nov 01 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3
 - Rebuilt for Fedora

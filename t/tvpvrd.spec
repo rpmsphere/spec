@@ -33,9 +33,6 @@ mv %{buildroot}/etc/init.d/tvpvrd %{buildroot}%{_initrddir}
 ln -sf %{_initrddir}/tvpvrd %{buildroot}%{_sbindir}/rctvpvrd
 rm -rf %{buildroot}%{_datadir}/doc/packages
 
-%clean
-%__rm -rf %{buildroot}
-
 %post  
 /usr/sbin/groupadd -r tvpvrd 2> /dev/null || : 
 /usr/sbin/useradd -r -g tvpvrd -s /bin/false -c "tvpvrd daemon" tvpvrd 2> /dev/null || : 

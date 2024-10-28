@@ -1,11 +1,11 @@
-Name:		execline
-Version:	2.9.0.1
-Release:	1
-Summary:	A light non-interactive scripting language
-License:	BSD
-Group:		Shells
-URL:		https://www.skarnet.org/software/execline/
-Source0:	https://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
+Name:           execline
+Version:        2.9.0.1
+Release:        1
+Summary:        A light non-interactive scripting language
+License:        BSD
+Group:          Shells
+URL:            https://www.skarnet.org/software/execline/
+Source0:        https://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  skalibs-devel
 
 %description
@@ -27,7 +27,7 @@ sed -i -e 's|waitn_posix(pids, n|wait_pid(*pids|' -e 's|tain |tain_t |' src/exec
 sed -i -e 's|subgetopt localopt =|subgetopt_t localopt =|' -e 's|subgetopt l =|subgetopt_t l =|' src/*/*.c
 
 %build
-%configure --with-sysdeps=%{_libdir}/skalibs/sysdeps
+%configure --with-sysdeps=%{_libdir}/skalibs/sysdeps --build=x86_64-redhat-linux-gnu --host=x86_64-redhat-linux-gnu
 make
 
 %install
@@ -36,9 +36,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_libexecdir}/%{name}
 mv %{buildroot}%{_bindir}/* %{buildroot}%{_libexecdir}/%{name}
 mv %{buildroot}%{_libexecdir}/%{name}/%{name}b %{buildroot}%{_bindir}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc NEWS AUTHORS README COPYING

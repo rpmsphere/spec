@@ -1,13 +1,13 @@
-Name:		xletters
-Version:	2.0.4
-Release:	1
-Summary:	A multi-lingual xletters version
-Group:		X11/Games
-License:	GPL
-URL:		https://www.pmmh.espci.fr/~daerr/progs/%{name}
-Source0:	https://www.msc.univ-paris7.fr/~daerr/progs/xletters/%{name}-%{version}.tgz
-Source1:	%{name}.png
-BuildRequires:	libXaw-devel
+Name:           xletters
+Version:        2.0.4
+Release:        1
+Summary:        A multi-lingual xletters version
+Group:          X11/Games
+License:        GPL
+URL:            https://www.pmmh.espci.fr/~daerr/progs/%{name}
+Source0:        https://www.msc.univ-paris7.fr/~daerr/progs/xletters/%{name}-%{version}.tgz
+Source1:        %{name}.png
+BuildRequires:  libXaw-devel
 
 %description
 Typing toy, help kids learn typing and spelling, they must type the words
@@ -46,9 +46,6 @@ Categories=Application;Education;
 Icon=xletters.png
 EOF
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 /var/local/games/lib/xletters/scores_jp-en
 %{_datadir}/%{name}
@@ -66,11 +63,11 @@ rm -rf $RPM_BUILD_ROOT
 - copied and modified Felipe's spec file
 * Mon Jan 13 2003 Lenny Cartier <lenny@mandrakesoft.com> 1.1.0-2mdk
 - from Maxim Heijndijk <cchq@wanadoo.nl> :
-	- Added Requires: words.
+        - Added Requires: words.
 * Mon Nov 18 2002 Lenny Cartier <lenny@mandrakesoft.com> 1.1.0-1mdk
 - from Maxim Heijndijk <cchq@wanadoo.nl> :
-	- Fixed menu-item section.
-	- Fixed License, Group.
+        - Fixed menu-item section.
+        - Fixed License, Group.
 * Tue Oct 23 2001 Maxim Heijndijk <cchq@wanadoo.nl> 1.1.0-1
 - Initial Wrap.
 * Thu May 10 2001 Felipe Bergo <bergo@seul.org>

@@ -1,16 +1,16 @@
-Summary:	Tetris-like game extended by colors
-Summary(es):	Juego tipo Tetris, mejorado con ayuda de colores.
-Summary(pl):	Tetriso-podobna gra rozszerzona o kolorki
-Summary(pt_BR):	Jogo tipo Tetris, incrementado por cores, multinível
-Name:		nct
-Version:	1.4
-Release:	7.1
-License:	GPL
-Group:		Applications/Games
-Source0:	https://ftp.yar.ru/pub/source/nct/%{name}-%{version}.tar.gz
+Summary:        Tetris-like game extended by colors
+Summary(es):    Juego tipo Tetris, mejorado con ayuda de colores.
+Summary(pl):    Tetriso-podobna gra rozszerzona o kolorki
+Summary(pt_BR): Jogo tipo Tetris, incrementado por cores, multinível
+Name:           nct
+Version:        1.4
+Release:        7.1
+License:        GPL
+Group:          Applications/Games
+Source0:        https://ftp.yar.ru/pub/source/nct/%{name}-%{version}.tar.gz
 URL: https://lav.yar.ru/programs.html
-BuildRequires:	ncurses-devel
-#Requires(post):	fileutils
+BuildRequires:  ncurses-devel
+#Requires(post):        fileutils
 
 %description
 Tetris-like game, extended by colors. Light colors can be replaced by
@@ -47,10 +47,7 @@ CFLAGS="%{optflags} -I%{_includedir}/ncurses"
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{_localstatedir}/games
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-touch	$RPM_BUILD_ROOT%{_localstatedir}/games/%{name}.score
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+touch   $RPM_BUILD_ROOT%{_localstatedir}/games/%{name}.score
 
 %post
 touch %{_localstatedir}/games/%{name}.score

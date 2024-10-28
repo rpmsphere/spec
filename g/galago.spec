@@ -35,9 +35,6 @@ rm -rf $RPM_BUILD_ROOT%_datadir/autopackage
 %find_lang lib%name
 find $RPM_BUILD_ROOT -name '*.la' | xargs rm -f
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f lib%name.lang
 %doc AUTHORS NEWS
 %{_libdir}/lib*.so.*

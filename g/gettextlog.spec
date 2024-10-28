@@ -30,9 +30,6 @@ translate more frequent first.
 %{_prefix}/lib/gettextlog.so
 %{_prefix}/bin/run-with-gettextlog
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Apr 24 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6
 - Rebuilt for Fedora

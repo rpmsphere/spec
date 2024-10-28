@@ -32,9 +32,6 @@ rm -rf %{buildroot}/usr/docs
 %{python3_sitelib}/ash*
 %{_datadir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.0.dev14
 - Rebuilt for Fedora

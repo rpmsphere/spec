@@ -34,9 +34,6 @@ install -Dm755 make/libr3.so $RPM_BUILD_ROOT%{_libdir}/librebol3.so
 %{_bindir}/rebol3
 %{_libdir}/librebol3.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Dec 30 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.101.0
 - Rebuilt for Fedora

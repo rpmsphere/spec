@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/kosugi
+%define fontdir %{_datadir}/fonts/kosugi
 
 Summary: Kosugi TrueType Fonts
 Name: kosugi-fonts

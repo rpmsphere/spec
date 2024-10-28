@@ -31,9 +31,6 @@ make
 rm -rf "$RPM_BUILD_ROOT"
 %makeinstall
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 

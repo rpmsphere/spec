@@ -34,7 +34,7 @@ This is the devel package.
 
 %prep
 %setup -q -n gdkxft-%{version}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure
@@ -43,9 +43,6 @@ C_INCLUDE_PATH=/usr/include/freetype2 make
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall 
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_sysconfdir}/gdkxft.conf

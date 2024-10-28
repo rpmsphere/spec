@@ -6,7 +6,7 @@ License:      BSD
 Version:      3.1.1424
 Release:      18.1
 Source0:      https://www.adaptive-enterprises.com.au/~d/software/see/see-%{version}.tar.gz
-Patch:        see.patch
+Patch0:        see.patch
 BuildRequires: libtool-ltdl-devel
 
 %description
@@ -25,7 +25,7 @@ Header files and libraries for the package %{name}.
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 cp -f /usr/share/automake-*/config.guess .
 cp -f /usr/share/automake-*/config.guess libltdl/config/
 sed -i 's|defined(__alpha__)|defined(__aarch64__)|' libsee/dtoa_config.h
@@ -68,9 +68,6 @@ rm -rf $RPM_BUILD_ROOT
 #{_libdir}/see/lib*.la
 %{_libdir}/see/lib*.so
 %{_libdir}/pkgconfig/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1.1424

@@ -27,9 +27,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/%{name}.1.*
 %{_datadir}/locale/*/LC_MESSAGES/%{name}.mo
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.31
 - Rebuilt for Fedora

@@ -37,9 +37,6 @@ Authors:
 %{__install} -D -m 0644 pattern $RPM_BUILD_ROOT%{_sysconfdir}/%{name}/pattern
 %{__install} -D -m 0644 %{S:1} $RPM_BUILD_ROOT%{_sysconfdir}/xinetd.d/%{name}
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %config(noreplace) %{_sysconfdir}/%{name}
 %config(noreplace) %{_sysconfdir}/xinetd.d/%{name}

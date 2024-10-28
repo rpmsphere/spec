@@ -29,8 +29,8 @@ developing applications that use %{name}.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 sed -i "s|CFLAGS += .*|CFLAGS += -fPIC $RPM_OPT_FLAGS|;s&usr/local&usr&" config.mk
 sed -i "s&\${PREFIX}/share/doc/%{name}&%{_docdir}/%{name}&g" Makefile
 sed -i 's|${LDFLAGS}|-Wl,--allow-multiple-definition|' Makefile

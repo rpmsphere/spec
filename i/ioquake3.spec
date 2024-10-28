@@ -23,7 +23,7 @@ Source3:        %{name}.desktop
 Source4:        %{name}.png
 Source5:        %{name}-update.sh
 Source6:        %{name}-update.autodlrc
-Patch0: 	ioquake-1.36-CVE-2017-11721-buffer-overflow.patch
+Patch0:         ioquake-1.36-CVE-2017-11721-buffer-overflow.patch
 
 BuildRequires:  pkgconfig(libcurl)
 BuildRequires:  pkgconfig(libjpeg)

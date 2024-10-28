@@ -1,14 +1,14 @@
-Name:		xoget
-Summary:	XO-Get with PyGTK User Interface
-Version:	1.2.5
-Release:	1
-URL:		https://wiki.laptop.org/go/Xo-get
-License:	GPL
-BuildArch:	noarch
-Source0:	https://xo-get.olpc.at/xoget.xo
-Source1:	https://xo-get.olpc.at/xo-get.py
-Group:		System Environment/Base
-Requires:	pygtk2, sugar-toolkit
+Name:           xoget
+Summary:        XO-Get with PyGTK User Interface
+Version:        1.2.5
+Release:        1
+URL:            https://wiki.laptop.org/go/Xo-get
+License:        GPL
+BuildArch:      noarch
+Source0:        https://xo-get.olpc.at/xoget.xo
+Source1:        https://xo-get.olpc.at/xo-get.py
+Group:          System Environment/Base
+Requires:       pygtk2, sugar-toolkit
 
 %description
 XO-Get is a very simple package-installer/manager, used for installing,
@@ -56,9 +56,6 @@ Categories=Application;System;
 EOF
 
 sed -i -e 's|/usr/bin/python$|/usr/bin/python2|' -e 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
-
-%clean
-%__rm -rf %{buildroot}
 
 %post
 #/usr/bin/update-mime-database /usr/share/mime &> /dev/null

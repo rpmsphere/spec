@@ -1,31 +1,31 @@
-%define	name	exchange
+%define name    exchange
 %define version 0.0.0.002
 %define release 1
 %define major 0
 %define libname lib%{name}
 %define libnamedev lib%{name}-devel
 
-Summary: 	exchange is a place to share themes
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
-License: 	BSD
-Group: 		Graphical desktop/Enlightenment
-URL: 		https://www.enlightenment.org/
-Source: 	%{name}-%{version}.tar.gz
+Summary:        exchange is a place to share themes
+Name:           %{name}
+Version:        %{version}
+Release:        %{release}
+License:        BSD
+Group:          Graphical desktop/Enlightenment
+URL:            https://www.enlightenment.org/
+Source:         %{name}-%{version}.tar.gz
 # Common
-BuildRequires:	ncurses-devel
+BuildRequires:  ncurses-devel
 BuildRequires: zlib-devel
 # Enlightenment BR
-BuildRequires:	libeina-devel
-BuildRequires: 	eet-devel
+BuildRequires:  libeina-devel
+BuildRequires:  eet-devel
 BuildRequires:  evas-devel
-BuildRequires:	ecore-devel
-BuildRequires:	efreet-devel
-BuildRequires:	embryo-devel
-BuildRequires:	edje-devel
-BuildRequires:	emotion-devel
-BuildRequires:	e_dbus-devel
+BuildRequires:  ecore-devel
+BuildRequires:  efreet-devel
+BuildRequires:  embryo-devel
+BuildRequires:  edje-devel
+BuildRequires:  emotion-devel
+BuildRequires:  e_dbus-devel
 
 %description
 exchange is a place to share themes, applications and modules for the enlightenment shell.
@@ -59,9 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 /sbin/ldconfig
 %postun
 /sbin/ldconfig
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_libdir}/lib*.so.%{major}*

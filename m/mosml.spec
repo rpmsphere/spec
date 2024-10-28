@@ -3,12 +3,12 @@
 Name: mosml
 Version: 2.10.1
 Release: 2
-Summary:  Moscow ML
+Summary: Moscow ML
 License: GPL
 Group: Development/ML
 URL: https://mosml.org/
-Source: %name-%version.tar
-Patch: %name-alt-header.patch
+Source0: %name-%version.tar
+Patch0:  %name-alt-header.patch
 BuildRequires: gmp-devel
 
 %description
@@ -45,8 +45,8 @@ compilation and modest storage consumption.
 %set_verify_elf_method rpath=relaxed unresolved=relaxed
 
 %prep
-%setup -q
-%patch0 -p1
+%setup
+%patch 0 -p1
 
 %build
 %define docdir %_docdir/%name

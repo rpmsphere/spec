@@ -1,14 +1,14 @@
-Name:		winff
-Summary:	A cross platform batch GUI for FFmpeg
-Version:	1.5.5
-Release:	9.1
-URL:		https://code.google.com/p/winff/
-Source0:	winff-%{version}-source.tar.gz
-Source1:	winff.desktop
-License:	GPL-3.0
-Group:		Video/Editors and Convertors
-Requires:	ffmpeg
-BuildRequires:	dos2unix fpc fpc-src lazarus xorg-x11-proto-devel desktop-file-utils
+Name:           winff
+Summary:        A cross platform batch GUI for FFmpeg
+Version:        1.5.5
+Release:        9.1
+URL:            https://code.google.com/p/winff/
+Source0:        winff-%{version}-source.tar.gz
+Source1:        winff.desktop
+License:        GPL-3.0
+Group:          Video/Editors and Convertors
+Requires:       ffmpeg
+BuildRequires:  dos2unix fpc fpc-src lazarus xorg-x11-proto-devel desktop-file-utils
 
 %description
 WinFF is a GUI for the command line video converter FFMPEG.
@@ -25,12 +25,12 @@ sed -i 's|PoTranslator, types, FileUtil, regexpr|PoTranslator, types, FileUtil, 
 
 %build
 lazbuild \
-	--lazarusdir=%{_libdir}/lazarus \
+        --lazarusdir=%{_libdir}/lazarus \
 %ifarch x86_64
-	--cpu=x86_64 \
+        --cpu=x86_64 \
 %endif
-	--widgetset=gtk2 \
-	-B winff.lpr
+        --widgetset=gtk2 \
+        -B winff.lpr
 
 %install
 install -D -m755 winff %buildroot%{_bindir}/winff
@@ -46,9 +46,6 @@ for i in 16 24 32 48; do
   install -d -m755 %buildroot%{_datadir}/icons/hicolor/"$i"x"$i"/apps
   install -m644 winff-icons/"$i"x"$i"/*.png %buildroot%{_datadir}/icons/hicolor/"$i"x"$i"/apps
 done
-
-%clean
-rm -rf %buildroot
 
 %files
 %{_bindir}/winff

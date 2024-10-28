@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 %define __os_install_post %{nil}
 
-Name:		sdlbasic
-Version:	2012.12.15
-Release:	8
-URL:		https://sdlbasic.sourceforge.net/
+Name:           sdlbasic
+Version:        2012.12.15
+Release:        8
+URL:            https://sdlbasic.sourceforge.net/
 Source0:        https://sourceforge.net/projects/sdlbasic/files/source/2012/sdlBasic-source-2012-12-15.tar.gz
 Source1:        https://sourceforge.net/projects/sdlbasic/files/source/2012/sdlBrt-source-2012-12-15.tar.gz
-License:	LGPL
-Group:		Development/Other
-Summary:	A small, efficient and multiplatform basic interpreter
+License:        LGPL
+Group:          Development/Other
+Summary:        A small, efficient and multiplatform basic interpreter
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, gtk2-devel, libtiff-devel, libjpeg-turbo-devel
-BuildRequires:	SDL-devel SDL_mixer-devel SDL_image-devel SDL_ttf-devel SDL_net-devel smpeg-devel
+BuildRequires:  gcc-c++, gtk2-devel, libtiff-devel, libjpeg-turbo-devel
+BuildRequires:  SDL-devel SDL_mixer-devel SDL_image-devel SDL_ttf-devel SDL_net-devel smpeg-devel
 Provides:       sdlbrt
 
 %description
@@ -37,9 +37,6 @@ make -C gtk
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr
 cp -r ../linux/bin ../linux/share $RPM_BUILD_ROOT/usr
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

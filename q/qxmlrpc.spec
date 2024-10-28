@@ -39,9 +39,6 @@ ln -s lib%{name}.so.1.0.0 $RPM_BUILD_ROOT%{_libdir}/lib%{name}.so.1.0
 ln -s lib%{name}.so.1.0.0 $RPM_BUILD_ROOT%{_libdir}/lib%{name}.so.1
 ln -s lib%{name}.so.1.0.0 $RPM_BUILD_ROOT%{_libdir}/lib%{name}.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_libdir}/lib%{name}.so.*
 

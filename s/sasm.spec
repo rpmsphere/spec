@@ -1,24 +1,24 @@
-%define		pkgname	SASM
+%define         pkgname SASM
 
-Name:		sasm
-Version:	3.12.2
-Release:	1
-Summary:	IDE for assembly languages
-URL:		https://dman95.github.io/SASM/
-License:	GPLv3
-Source0:	%{pkgname}-%{version}.tar.gz
-Group:		Development/Other
-BuildRequires:	pkgconfig(Qt5Core)
-BuildRequires:	pkgconfig(Qt5Gui)
-BuildRequires:	pkgconfig(Qt5Widgets)
-BuildRequires:	pkgconfig(Qt5Network)
-BuildRequires:	nasm
-BuildRequires:	pkgconfig(xcb)
-BuildRequires:	pkgconfig(xcb-render)
-BuildRequires:	pkgconfig(xcb-icccm)
-Requires:	fasm
-Requires:	nasm
-Requires:	gdb
+Name:           sasm
+Version:        3.12.2
+Release:        1
+Summary:        IDE for assembly languages
+URL:            https://dman95.github.io/SASM/
+License:        GPLv3
+Source0:        %{pkgname}-%{version}.tar.gz
+Group:          Development/Other
+BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Gui)
+BuildRequires:  pkgconfig(Qt5Widgets)
+BuildRequires:  pkgconfig(Qt5Network)
+BuildRequires:  nasm
+BuildRequires:  pkgconfig(xcb)
+BuildRequires:  pkgconfig(xcb-render)
+BuildRequires:  pkgconfig(xcb-icccm)
+Requires:       fasm
+Requires:       nasm
+Requires:       gdb
 
 %description
 SASM - simple crossplatform IDE for NASM, MASM, GAS

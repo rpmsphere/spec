@@ -31,9 +31,6 @@ AR PLBaosong2GBK Light，Encoding:Unicode, Charset:GBK, Hanzi:21003
 %__mkdir_p %{buildroot}%{_sysconfdir}/fonts/conf.d
 ln -sf ../conf.avail/68-%{fontname}.conf %{buildroot}%{_sysconfdir}/fonts/conf.d/68-%{fontname}.conf
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
 %post
 [  -x /usr/bin/fc-cache ] && /usr/bin/fc-cache 2> /dev/null
 

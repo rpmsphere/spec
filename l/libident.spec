@@ -50,7 +50,7 @@ developing applications that use %{name}.
 %prep
 %setup -q
 for f in ident.3 README ChangeLog AUTHORS NEWS COPYING; do
-	iconv -f ISO-8859-1 -t UTF-8 $f -o $f.new && mv $f.new $f
+        iconv -f ISO-8859-1 -t UTF-8 $f -o $f.new && mv $f.new $f
 done
 
 %build
@@ -64,9 +64,6 @@ rm -rf %{buildroot}
 make install DESTDIR=%{buildroot}
 find %{buildroot} -name '*.la' -exec rm -f {} ';'
 install -D -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/xinetd.d/identtestd
-
-%clean
-rm -rf %{buildroot}
 
 %post tools
 /sbin/service xinetd reload > /dev/null 2>&1 || :

@@ -1,14 +1,14 @@
-Summary:	Monopoly-like game client
-Name:		gtkatlantic
-Version:	0.4.2
-Release:	1
-License:	GPL
-Group:		Games/Strategy
-URL:		https://gtkatlantic.gradator.net/
-Source:		https://gtkatlantic.gradator.net/downloads/v0.4/%{name}-%{version}.tar.bz2
-BuildRequires:	gtk2-devel
-BuildRequires:	libpng-devel
-BuildRequires:	libxml2-devel
+Summary:        Monopoly-like game client
+Name:           gtkatlantic
+Version:        0.4.2
+Release:        1
+License:        GPL
+Group:          Games/Strategy
+URL:            https://gtkatlantic.gradator.net/
+Source:         https://gtkatlantic.gradator.net/downloads/v0.4/%{name}-%{version}.tar.bz2
+BuildRequires:  gtk2-devel
+BuildRequires:  libpng-devel
+BuildRequires:  libxml2-devel
 
 %description
 monopd is a dedicated game server daemon for playing Monopoly-like board
@@ -38,9 +38,6 @@ Type=Application
 Icon=/usr/share/gtkatlantic/icon32x32.xpm
 Categories=Game;BoardGame;
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README

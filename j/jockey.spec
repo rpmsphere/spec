@@ -64,7 +64,7 @@ can be run in enforcing mode.
 
 %prep
 %setup -q -a 1
-%patch0 -p1 -b .gtkwidthfix
+%patch 0 -p1 -b .gtkwidthfix
 sed -i.trayfix "s|if indicator:|if indicator or trayicon:|" gtk/jockey-gtk
 sed -i.nocert "s|'repository' not in|'repository' in|" jockey/ui.py
 sed -i.noblacklist "s|do_blacklist=True|do_blacklist=False|" jockey/handlers.py

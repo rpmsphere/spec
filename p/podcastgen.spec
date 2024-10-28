@@ -9,7 +9,7 @@ License:        GPL
 URL:            https://podcastgen.sourceforge.net/
 Source0:        ftp://ite.ceag.kh.edu.tw/podcastgen/%{name}_%{version}.tar.bz2
 Requires:       httpd, php
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 Podcast Generator is a free web based podcast publishing script written in PHP:
@@ -27,9 +27,6 @@ rm -rf .svn
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_var}/www/html/%{name}
 cp -a * $RPM_BUILD_ROOT%{_var}/www/html/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_var}/www/html/%{name}

@@ -1,14 +1,14 @@
-Summary: 	Simple PDF viewer using poppler without Gnome dependency
-Name: 		epdfview
-Version: 	0.1.8
-Release: 	1
-License:	GPL
-URL: 		https://www.emma-soft.com/projects/epdfview/
+Summary:        Simple PDF viewer using poppler without Gnome dependency
+Name:           epdfview
+Version:        0.1.8
+Release:        1
+License:        GPL
+URL:            https://www.emma-soft.com/projects/epdfview/
 Vendor:         OSS Integral Institute, Co., Ltd.
-Source0: 	https://trac.emma-soft.com/epdfview/chrome/site/releases/%{name}-%{version}.tar.gz
-Source1:	%{name}-0.1.7.zh_TW.po
-Group: 		Applications/Productivity
-Requires:	poppler >= 0.5.0, gtk2, poppler-glib
+Source0:        https://trac.emma-soft.com/epdfview/chrome/site/releases/%{name}-%{version}.tar.gz
+Source1:        %{name}-0.1.7.zh_TW.po
+Group:          Applications/Productivity
+Requires:       poppler >= 0.5.0, gtk2, poppler-glib
 BuildRequires:  poppler-devel >= 0.5.0, gtk2-devel, poppler-glib-devel
 
 %description
@@ -32,9 +32,6 @@ sed -i -e 's|-Werror=format-security|-Wno-format-security|' -e 's|-DHAVE_CONFIG_
 %__rm -rf $RPM_BUILD_ROOT
 %makeinstall
 %__install -Dm 644 data/icon_epdfview-48.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/icon_epdfview-48.png
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README NEWS INSTALL COPYING AUTHORS 

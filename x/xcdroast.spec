@@ -25,8 +25,8 @@ and "mkisofs" into a nice GTK based graphical user interface.
 %prep
 %setup -q
 # PATCH-ENHANCE-OPENSUSE as there is no gksudo but gnomesu around
-%patch0
-%patch1
+%patch 0
+%patch 1
 
 %build
 autoreconf --force --install -I m4
@@ -49,9 +49,6 @@ mkdir -p %{buildroot}%{_datadir}/applications
 install -m 0644 extra/xcdroast.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
 sed -i 's|/usr/lib|/usr/libexec|' %{buildroot}%{_datadir}/applications/%{name}.desktop
 mv %{buildroot}/usr/lib %{buildroot}/usr/libexec
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %config %{_sysconfdir}/permissions.d/%{name}*

@@ -20,8 +20,8 @@ installed.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %install
 install -d $RPM_BUILD_ROOT%_bindir
@@ -34,9 +34,6 @@ y
 EOF
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%_datadir/applications/%name.desktop
 install -Dm644 ding.png $RPM_BUILD_ROOT%_datadir/pixmaps/%name.png
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING README.md CHANGES

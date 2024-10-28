@@ -7,7 +7,7 @@ License:        GPL v2 or later
 Group:          System/GUI/Other
 Summary:        To create a bootable Live USB drive
 Source0:        %{name}-%{version}.src.tar.gz
-Source1:	%{name}.png
+Source1:        %{name}.png
 BuildRequires:  gcc-c++
 BuildRequires:  qt4-devel
 Requires:       mtools p7zip udev util-linux syslinux
@@ -47,9 +47,6 @@ Exec=tuxboot
 Terminal=false
 Type=Application
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.TXT

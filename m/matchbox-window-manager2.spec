@@ -1,11 +1,11 @@
-Summary: 	Matchbox Window Manager II
-Name: 		matchbox-window-manager2
-Version: 	0.1
-Release: 	8.1
-URL: 		https://git.yoctoproject.org/cgit/cgit.cgi/matchbox-window-manager-2/
-License: 	GPLv2+
-Group: 		Graphical desktop/Other
-Source0: 	https://git.yoctoproject.org/cgit/cgit.cgi/matchbox-window-manager-2/snapshot/matchbox-window-manager-2-master.zip
+Summary:        Matchbox Window Manager II
+Name:           matchbox-window-manager2
+Version:        0.1
+Release:        8.1
+URL:            https://git.yoctoproject.org/cgit/cgit.cgi/matchbox-window-manager-2/
+License:        GPLv2+
+Group:          Graphical desktop/Other
+Source0:        https://git.yoctoproject.org/cgit/cgit.cgi/matchbox-window-manager-2/snapshot/matchbox-window-manager-2-master.zip
 BuildRequires: gtk2-devel
 BuildRequires: cairo-devel
 BuildRequires: pango-devel

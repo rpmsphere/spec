@@ -38,9 +38,6 @@ EOF
 install -D -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -D -m644 core/skin/data/icon.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE README
 %attr(755,root,root) %{_bindir}/%{name}
@@ -61,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 - update to 0.0.3.6.r375 weekly unstable
 * Mon May 16 2011 kobayashi
 - update to 0.0.3.4.r322 weekly unstable
-* Wed Jan 04 2011 kobayashi
+* Tue Jan 04 2011 kobayashi
 - update to 0.0.2.0 for openSUSE
 * Sun Nov 28 2010 tomcat <webmaster2@tomcat.nyanta.jp> 0.0.1.5.r165-1nora103
 - update to 0.0.1.5-r165

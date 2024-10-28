@@ -1,20 +1,22 @@
 %undefine _auto_set_build_flags
-%define		oname  burrGui
+%define         oname  burrGui
 
-Name:		burrtools		
-Version:	0.6.3
-Release:	1
-Summary:	Burr Tools	
-Group:		Applications/System
-License:	GPL	
-URL: 		https://burrtools.sourceforge.net		
-Source0:	https://sourceforge.net/projects/burrtools/files/%{name}/%{version}/%{name}-%{version}.tar.gz	
+Name:           burrtools               
+Version:        0.6.3
+Release:        1
+Summary:        Burr Tools      
+Group:          Applications/System
+License:        GPL     
+URL:            https://burrtools.sourceforge.net               
+Source0:        https://sourceforge.net/projects/burrtools/files/%{name}/%{version}/%{name}-%{version}.tar.gz   
 Source1:        %{name}.png
 BuildRequires:  fltk-devel
 BuildRequires:  boost-devel
 BuildRequires:  mesa-libGLU-devel
 BuildRequires:  libXmu-devel
 BuildRequires:  libXi-devel
+BuildRequires:  libpng-devel
+BuildRequires:  zlib-devel
 
 %description
 This (set of) program(s) will help you solve a certain kind of puzzle.
@@ -55,9 +57,6 @@ EOF
 %makeinstall INSTALL_ROOT=$RPM_BUILD_ROOT
 install -Dm644 %{name}.desktop $RPM_BUILD_ROOT/%_datadir/applications/%{name}.desktop
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT/%_datadir/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %_bindir/%oname

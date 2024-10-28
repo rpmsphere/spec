@@ -34,9 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}
 %{_sysconfdir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Mar 26 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.1
 - Rebuilt for Fedora

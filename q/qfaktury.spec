@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
 
-Summary:	Free software for creating, managing, and printing invoices
-Name:		qfaktury
-Version:	0.6.2.1
-Release:	8.1
-License:	GPL v3
-Group:		Productivity/Office/Finance
-Source0:	https://dl.sourceforge.net/qfaktury/%{name}-0.6.2_1.tar.gz
-Source1:	qfaktury.desktop
-Patch0:		remove_local_prefix.patch
-URL:		https://qfaktury.sourceforge.net/
+Summary:        Free software for creating, managing, and printing invoices
+Name:           qfaktury
+Version:        0.6.2.1
+Release:        8.1
+License:        GPL v3
+Group:          Productivity/Office/Finance
+Source0:        https://dl.sourceforge.net/qfaktury/%{name}-0.6.2_1.tar.gz
+Source1:        qfaktury.desktop
+Patch0:         remove_local_prefix.patch
+URL:            https://qfaktury.sourceforge.net/
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++ qt4-devel desktop-file-utils
+BuildRequires:  gcc-c++ qt4-devel desktop-file-utils
 
 %description
 QFaktury is a software for creating, managing, and printing invoices.
@@ -30,7 +30,7 @@ się z programem e-Przelewy.
 
 %prep
 %setup -q -n %{name}-0.6.2_1
-%patch0
+%patch 0
 
 %build
 rm -rf build
@@ -42,9 +42,6 @@ make INSTALL_ROOT=$RPM_BUILD_ROOT install
 %{__install} -D -m 644 icons/qfaktury_128.png "$RPM_BUILD_ROOT%{_datadir}/pixmaps/qfaktury.png"
 %{__install} -D -m 644 %{SOURCE1} "$RPM_BUILD_ROOT%{_datadir}/applications/qfaktury.desktop"
 %{__rm} "$RPM_BUILD_ROOT%{_datadir}/applications/QFaktury.desktop"
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog.txt Copyright.txt plans.txt ReadMe.txt

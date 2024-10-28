@@ -28,9 +28,6 @@ rm -rf $RPM_BUILD_ROOT
 sed -i 's|/usr/man|/usr/share/man|' Makefile
 make install install.man DESTDIR=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/xcruiser
 %{_mandir}/man1/xcruiser.1*

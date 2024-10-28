@@ -1,11 +1,11 @@
-Name:		bobs
-Version:	0.2.3
-Release:	7.4
-Summary:	Screensaver with small bobs 
-Group:		Amusements/Graphics
-License:	GPLv2
-URL:		https://software.amiga-hardware.com/bobs.cgi
-Source0:	https://software.amiga-hardware.com/software/bobs-0.2.3.tar.bz2
+Name:           bobs
+Version:        0.2.3
+Release:        7.4
+Summary:        Screensaver with small bobs 
+Group:          Amusements/Graphics
+License:        GPLv2
+URL:            https://software.amiga-hardware.com/bobs.cgi
+Source0:        https://software.amiga-hardware.com/software/bobs-0.2.3.tar.bz2
 #BuildRequires: libX11-devel libICE-devel libSM-devel
 BuildRequires: SDL-devel SDL_image-devel
 BuildRequires: mesa-libGL-devel mesa-libGLU-devel
@@ -18,12 +18,12 @@ A simple screensaver for Linux and UNIX which displays animated 'Bobs'.
 
 %package kde
 Summary:    bobs-screensaver for KDE
-Requires: 	%{name} = %{version}-%{release}
+Requires:       %{name} = %{version}-%{release}
 
 %package xscreensaver
 Summary:    bobs-screensaver for xscreensaver
-Requires: 	%{name} = %{version}-%{release}
-Requires:	xscreensaver
+Requires:       %{name} = %{version}-%{release}
+Requires:       xscreensaver
 
 %description kde
 bobs for KDE
@@ -46,9 +46,6 @@ mkdir -p $RPM_BUILD_ROOT/%{_datadir}/xscreensaver/hacks.conf.d
 mkdir -p $RPM_BUILD_ROOT/%{_datadir}/xscreensaver/config
 install -m 644 xscreensaver/bobs.conf $RPM_BUILD_ROOT/%{_datadir}/xscreensaver/hacks.conf.d
 install -m 644 xscreensaver/bobs.xml $RPM_BUILD_ROOT/%{_datadir}/xscreensaver/config
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post xscreensaver
 if [ -x %{_sbindir}/update-xscreensaver-hacks ] ; then

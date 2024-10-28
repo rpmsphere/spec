@@ -1,24 +1,24 @@
-Summary:	Desktop background manager/changer/screensaver
-Name:		chbg
-Version:	2.0.1
-Release:	29.1
-License:	GPLv2+
-Group:		Graphics/Utilities
-URL:		https://www.beebgames.com/sw/gtk-ports.html
-Source0:	https://www.beebgames.com/sw/%{name}-%{version}.tar.bz2
-Source1:	%{name}_16x16.png
-Source2:	%{name}_32x32.png
-Source3:	%{name}_48x48.png
+Summary:        Desktop background manager/changer/screensaver
+Name:           chbg
+Version:        2.0.1
+Release:        29.1
+License:        GPLv2+
+Group:          Graphics/Utilities
+URL:            https://www.beebgames.com/sw/gtk-ports.html
+Source0:        https://www.beebgames.com/sw/%{name}-%{version}.tar.bz2
+Source1:        %{name}_16x16.png
+Source2:        %{name}_32x32.png
+Source3:        %{name}_48x48.png
 # (fc) 2.0.1-3mdv use correct colormap / depth 
-Patch0:		chbg-2.0.1-colormap.patch
+Patch0:         chbg-2.0.1-colormap.patch
 # (fc) 2.0.1-9mdv fix CFLAGS
-Patch1:		chbg-2.0.1-cflags.patch
-Patch2:		chbg-2.0.1-libpng1.5.patch
-Patch3:		chbg-2.0.1-link.patch
-BuildRequires:	gettext-devel
+Patch1:         chbg-2.0.1-cflags.patch
+Patch2:         chbg-2.0.1-libpng1.5.patch
+Patch3:         chbg-2.0.1-link.patch
+BuildRequires:  gettext-devel
 BuildRequires: pkgconfig(atk)
 BuildRequires: pkgconfig(gtk+-2.0)
-BuildRequires:	libpng-devel
+BuildRequires:  libpng-devel
 
 %description
 ChBg is for changing desktop backgrounds in a given period. It can
@@ -32,10 +32,10 @@ thumbnail previews.
 
 %prep
 %setup -q
-%patch0 -p1 -b .composite
-%patch1 -p1 -b .cflags
-%patch2 -p0 -b .libpng
-%patch3 -p0 -b .link
+%patch 0 -p1 -b .composite
+%patch 1 -p1 -b .cflags
+%patch 2 -p0 -b .libpng
+%patch 3 -p0 -b .link
 
 %build
 autoreconf -fi

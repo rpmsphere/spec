@@ -1,19 +1,19 @@
-Name:			aquanukex-cursor-theme
-Summary:		A cursor os x like theme for X11
-License:		GPL v2 or later
-Version:		0.2
-Release:		18.1
-Source:			Aqua-NukeX.tar.gz
-BuildArch:		noarch
-URL:			https://www.kde-look.org/content/show.php?content=30238
-Group:			System/X11/Icons
+Name:                   aquanukex-cursor-theme
+Summary:                A cursor os x like theme for X11
+License:                GPL v2 or later
+Version:                0.2
+Release:                18.1
+Source:                 Aqua-NukeX.tar.gz
+BuildArch:              noarch
+URL:                    https://www.kde-look.org/content/show.php?content=30238
+Group:                  System/X11/Icons
 
 %description
 This is an animated cursor theme, MacOSX style.
 
 Authors:
 --------
-		Gianluca Turrini
+                Gianluca Turrini
 
 %prep
 %setup -q -n Aqua-NukeX
@@ -23,9 +23,6 @@ Authors:
 %install
 %__install -d $RPM_BUILD_ROOT%{_datadir}/icons/Aqua-NukeX
 %__mv cursors index.theme $RPM_BUILD_ROOT%{_datadir}/icons/Aqua-NukeX/
-
-%clean  
-rm -rf $RPM_BUILD_ROOT 
 
 %files
 %{_datadir}/icons/Aqua-NukeX

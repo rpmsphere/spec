@@ -23,7 +23,7 @@ automaton, and a whole class of `Prisoner's Dilemma' games, and many others.
 
 %prep
 %setup -q -n %{name}-6.7
-%patch0 -p1 
+%patch 0 -p1 
 #sed -i 's|-g -O5||' Imakefile
 
 %build

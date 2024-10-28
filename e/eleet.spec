@@ -1,11 +1,11 @@
-Name:		eleet
-Version:	0.3.3
-Release:	5.4
-Summary:	Screensaver based on ships from Elite
-Group:		Amusements/Graphics
-License:	GPLv2
-URL:		https://software.amiga-hardware.com/eleet.cgi
-Source0:	https://software.amiga-hardware.com/software/eleet-0.3.3.tar.bz2
+Name:           eleet
+Version:        0.3.3
+Release:        5.4
+Summary:        Screensaver based on ships from Elite
+Group:          Amusements/Graphics
+License:        GPLv2
+URL:            https://software.amiga-hardware.com/eleet.cgi
+Source0:        https://software.amiga-hardware.com/software/eleet-0.3.3.tar.bz2
 BuildRequires: libX11-devel libICE-devel libSM-devel
 BuildRequires: SDL-devel SDL_image-devel SDL_ttf-devel
 BuildRequires: mesa-libGL-devel mesa-libGLU-devel
@@ -23,12 +23,12 @@ exhausts will also emit thrust particles.
 
 %package kde
 Summary:        eleet-screensaver for KDE
-Requires: 	%{name} = %{version}-%{release}
+Requires:       %{name} = %{version}-%{release}
 
 %package xscreensaver
 Summary:        eleet-screensaver for xscreensaver
-Requires: 	%{name} = %{version}-%{release}
-Requires:	xscreensaver
+Requires:       %{name} = %{version}-%{release}
+Requires:       xscreensaver
 
 %description kde
 eleet for KDE
@@ -51,9 +51,6 @@ mkdir -p $RPM_BUILD_ROOT/%{_datadir}/xscreensaver/hacks.conf.d/
 mkdir -p $RPM_BUILD_ROOT/%{_datadir}/xscreensaver/config/
 install -m 644 xscreensaver/eleet.conf $RPM_BUILD_ROOT/%{_datadir}/xscreensaver/hacks.conf.d/
 install -m 644 xscreensaver/eleet.xml $RPM_BUILD_ROOT/%{_datadir}/xscreensaver/config/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post xscreensaver
 if [ -x %{_sbindir}/update-xscreensaver-hacks ] ; then

@@ -15,6 +15,7 @@ Gsettings for Linux Deepin.
 %setup -qn %{name}-master
 
 %build
+export CFLAGS+=" -Wno-incompatible-pointer-types "
 python2 setup.py build
 
 %install
@@ -25,7 +26,7 @@ python2 setup.py install --root=%{buildroot} --prefix=%{_prefix}
 %{python2_sitearch}/*
 
 %changelog
-* Wed Aug 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
+* Wed Aug 31 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.21
 - Rebuilt for Fedora
 * Mon Sep 28 2015 Derek Dai
 - Initial package

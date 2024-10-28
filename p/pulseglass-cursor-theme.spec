@@ -27,9 +27,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 cp -a %{theme_name}/* $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files 
 %{_datadir}/icons/%{theme_name}
 

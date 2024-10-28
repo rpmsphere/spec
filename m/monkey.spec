@@ -25,13 +25,13 @@ Header files and development libraries of %{name}.
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
-./configure	--default-port=80		\
-		--prefix=%{_prefix}		\
-		--sysconfdir=%{_sysconfdir}/monkey/	\
-		--sbindir=%{_prefix}/sbin		\
-		--mandir=%{_mandir}/man1/	\
-		--webroot=/var/www/html/monkey/ \
-        	--libdir=%{_libdir}
+./configure     --default-port=80               \
+                --prefix=%{_prefix}             \
+                --sysconfdir=%{_sysconfdir}/monkey/     \
+                --sbindir=%{_prefix}/sbin               \
+                --mandir=%{_mandir}/man1/       \
+                --webroot=/var/www/html/monkey/ \
+                --libdir=%{_libdir}
         
 make
 

@@ -43,8 +43,8 @@ MyTetra Russian user guide in PDF format.
 %prep
 %setup -qcn %{name}-%{version}
 cp %{SOURCE1} .
-%patch0
-%patch1
+%patch 0
+%patch 1
 chmod 644 desktop/any/mytetra.desktop
 
 %build

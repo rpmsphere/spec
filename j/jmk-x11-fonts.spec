@@ -5,7 +5,7 @@ Name: %{fontname}-x11-fonts
 BuildRequires:  imake libX11-devel xorg-x11-xinit xorg-x11-font-utils xorg-x11-fonts-misc
 Group: User Interface/X
 BuildRequires:  freetype
-%define	fontdir     /usr/share/fonts/%{fontname}
+%define fontdir     /usr/share/fonts/%{fontname}
 Version:        3.0
 Release: 50.1
 License: GPL
@@ -46,7 +46,7 @@ man page.
 
 %prep
 %setup
-%patch0 -p1
+%patch 0 -p1
 
 %build
 make -C neep
@@ -56,9 +56,6 @@ make
 %install
 install -d -m 0755 $RPM_BUILD_ROOT%{fontdir}
 make INSTALL_DIR=%{fontdir} DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog NEWS README %{name}-%{version}.lsm

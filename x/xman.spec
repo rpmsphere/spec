@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
 
-Name:		xman
-Version:	1.1.5
-Release:	1
-Summary:	Manual page display program for the X Window System
-Group:		Development/X11
-License:	MIT
-URL:		https://xorg.freedesktop.org
-Source:		https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.gz
-BuildRequires:	libXaw-devel
-#BuildRequires:	libXprintUtil-devel
-BuildRequires:	libXp-devel
-BuildRequires:	xorg-x11-util-macros
+Name:           xman
+Version:        1.1.5
+Release:        1
+Summary:        Manual page display program for the X Window System
+Group:          Development/X11
+License:        MIT
+URL:            https://xorg.freedesktop.org
+Source:         https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.gz
+BuildRequires:  libXaw-devel
+#BuildRequires: libXprintUtil-devel
+BuildRequires:  libXp-devel
+BuildRequires:  xorg-x11-util-macros
 
 %description
 Xman is a manual page display program for the X Window System.

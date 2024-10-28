@@ -1,4 +1,4 @@
-%define upstream_name	 MP3-Tag
+%define upstream_name    MP3-Tag
 %define upstream_version 1.13
 
 %if %{_use_internal_dependency_generator}
@@ -7,18 +7,18 @@
 %define _requires_exceptions perl(\\(Normalize::Text::Normalize_Fields\\|Music_Normalize_Fields\\))
 %endif
 
-Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6.1
-Summary:	Module for reading tags of MP3 audio files 
-License:	GPL+ or Artistic
-Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	https://www.cpan.org/modules/by-module/MP3/%{upstream_name}-%{upstream_version}.tar.gz
-BuildRequires:	perl-devel
-BuildRequires:	perl(Compress::Zlib)
-BuildArch:	noarch
-Requires:	perl(Compress::Zlib)
+Name:           perl-%{upstream_name}
+Version:        %{upstream_version}
+Release:        6.1
+Summary:        Module for reading tags of MP3 audio files 
+License:        GPL+ or Artistic
+Group:          Development/Perl
+URL:            https://search.cpan.org/dist/%{upstream_name}
+Source0:        https://www.cpan.org/modules/by-module/MP3/%{upstream_name}-%{upstream_version}.tar.gz
+BuildRequires:  perl-devel
+BuildRequires:  perl(Compress::Zlib)
+BuildArch:      noarch
+Requires:       perl(Compress::Zlib)
 
 %description
 Tag is a wrapper module to read different tags of mp3 files. It provides an

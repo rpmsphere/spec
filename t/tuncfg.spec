@@ -11,16 +11,13 @@ License:        BSD
 
 %prep
 %setup -n %name
-%patch0 -p1
+%patch 0 -p1
 
 %build
 gcc tuncfg.c -o tuncfg -fno-strict-aliasing %optflags
 
 %install
 %__install -D -m 700 tuncfg $RPM_BUILD_ROOT/sbin/tuncfg
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(700,root,root) /sbin/tuncfg

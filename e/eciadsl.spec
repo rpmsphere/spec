@@ -17,7 +17,7 @@ using ECI HiFocus USB modem or Globespan based modem.
 
 %prep
 %setup -q -n eciadsl-usermode-%{version} -a1
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure
@@ -45,9 +45,6 @@ X-KDE-RootOnly=true
 X-KDE-SubstituteUID=true
 X-KDE-Username=root
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %dir %{_sysconfdir}/eciadsl

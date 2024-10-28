@@ -1,20 +1,20 @@
-Name:		svgalib
-Version:	1.9.25
-Release:	29
-Summary:	Low-level fullscreen SVGA graphics library
-License:	Public Domain
-URL:		https://www.svgalib.org/
-Source0:	https://www.arava.co.il/matan/svgalib/svgalib-%{version}.tar.gz
-Source1:	svgalib-todo
-Patch0:		svgalib-1.9.21-makefiles.patch
-Patch1:		svgalib-1.4.3-fhs.patch
-Patch2:		svgalib-1.9.21-demos.patch
-Patch3:		svgalib-1.9.21-cfg.patch
-Patch4:		svgalib-1.9.25-kernel-2.6.26.patch
-Patch5:		svgalib-1.9.25-round_gtf_gtfcalc_c.patch
-Patch6:		svgalib-1.9.25-vga_getmodenumber.patch
-Patch7:		svgalib-1.9.25-quickmath-h-redefinitions.patch
-#Exclusivearch:	%{ix86} x86_64
+Name:           svgalib
+Version:        1.9.25
+Release:        29
+Summary:        Low-level fullscreen SVGA graphics library
+License:        Public Domain
+URL:            https://www.svgalib.org/
+Source0:        https://www.arava.co.il/matan/svgalib/svgalib-%{version}.tar.gz
+Source1:        svgalib-todo
+Patch0:         svgalib-1.9.21-makefiles.patch
+Patch1:         svgalib-1.4.3-fhs.patch
+Patch2:         svgalib-1.9.21-demos.patch
+Patch3:         svgalib-1.9.21-cfg.patch
+Patch4:         svgalib-1.9.25-kernel-2.6.26.patch
+Patch5:         svgalib-1.9.25-round_gtf_gtfcalc_c.patch
+Patch6:         svgalib-1.9.25-vga_getmodenumber.patch
+Patch7:         svgalib-1.9.25-quickmath-h-redefinitions.patch
+#Exclusivearch: %{ix86} x86_64
 BuildRequires:  make
 BuildRequires:  gcc
 
@@ -26,9 +26,9 @@ utilities use SVGAlib for their graphics. For details on
 supported chipsets, see man 7 svgalib (when svgalib is installed).
 
 %package devel
-Summary:	Development tools for the SVGAlib graphics library
-Requires:	%{name} = %{version}-%{release}
-Provides:	libvga-devel = %{version}-%{release}
+Summary:        Development tools for the SVGAlib graphics library
+Requires:       %{name} = %{version}-%{release}
+Provides:       libvga-devel = %{version}-%{release}
 
 %description devel
 The svgalib-devel package contains the libraries and header files
@@ -37,14 +37,14 @@ library.
 
 %prep
 %setup -q
-%patch0 -p1 -b .makefiles
-%patch1 -p1 -b .fhs
-%patch2 -p1
-%patch3 -p1 -b .defaultcfg
-%patch4 -p1
-%patch5 -p1 -b .round_gtf_gtfcalc_c
-%patch6 -p1
-%patch7 -p1
+%patch 0 -p1 -b .makefiles
+%patch 1 -p1 -b .fhs
+%patch 2 -p1
+%patch 3 -p1 -b .defaultcfg
+%patch 4 -p1
+%patch 5 -p1 -b .round_gtf_gtfcalc_c
+%patch 6 -p1
+%patch 7 -p1
 
 #the testlinear demo needs svgalib's internal libvga header, so copy it to the
 #demo dir

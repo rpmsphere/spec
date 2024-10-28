@@ -11,6 +11,7 @@ Group: Applications/System
 License: GPL
 Source: %{name}-%{version}.tgz
 URL: https://afick.sourceforge.net
+BuildRequires: perl-interpreter
 BuildArch: noarch
 
 %description
@@ -42,37 +43,34 @@ make DESTDIR=$RPM_BUILD_ROOT install-gui
 # for ghost
 cd $RPM_BUILD_ROOT && touch var/lib/afick/afick.dir var/lib/afick/afick.pag var/lib/afick/afick.ctr var/lib/afick/history
 
-%clean
-[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf "$RPM_BUILD_ROOT 2> /dev/null"
-
 %pre
 #force save old config on upgrade
 if [ "$1" = 2 ]
 then
-	#update
-	if [ -f /usr/bin/afick_preinstall.pl ]
-	then
-		afick_preinstall.pl -c /etc/afick.conf
-	else
-		cp -f /etc/afick.conf /etc/afick.conf.sav
-	fi
-	#echo "save old config as /etc/afick.conf.rpmsave"
+        #update
+        if [ -f /usr/bin/afick_preinstall.pl ]
+        then
+                afick_preinstall.pl -c /etc/afick.conf
+        else
+                cp -f /etc/afick.conf /etc/afick.conf.sav
+        fi
+        #echo "save old config as /etc/afick.conf.rpmsave"
 fi
 # check perl version
 perlversion=$( perl -e 'if ( $] < 5.008 ){ print 1} else { print 0};' )
 if [ $perlversion -eq 1 ]
 then
-	#check for perl-Digest-MD5
-	# in old release, needs an external package
-	# but is included in new perl releases
-	perl -e 'eval { require Digest::MD5 }; exit 1 if $@'
-	if [ $? -eq 1 ]
-	then
-		echo "afick requires perl-Digest-MD5 package"
-		exit
-	else
-		echo "found perl-Digest-MD5 : ok"
-	fi
+        #check for perl-Digest-MD5
+        # in old release, needs an external package
+        # but is included in new perl releases
+        perl -e 'eval { require Digest::MD5 }; exit 1 if $@'
+        if [ $? -eq 1 ]
+        then
+                echo "afick requires perl-Digest-MD5 package"
+                exit
+        else
+                echo "found perl-Digest-MD5 : ok"
+        fi
 fi
 
 %post
@@ -362,9 +360,9 @@ if [ "$1" = "0" -a -x /usr/bin/update-menus ]; then /usr/bin/update-menus || tru
 
 * Mon Apr 22 2013 Eric Gerbier <gerbier@users.sourceforge.net> 3.3.3
 - fix inconsitence between command line parameters and config directives : 
-	full_newdel -> report_full_newdel
-	missing_file => warn_missing_file
-	dead_symlinks => warn_dead_symlinks
+        full_newdel -> report_full_newdel
+        missing_file => warn_missing_file
+        dead_symlinks => warn_dead_symlinks
 - suppress global Directives variables in afick.pl
 - (afick-common) get_configuration also use Afick::Macros and Afick::Directives
 

@@ -65,14 +65,11 @@ mkdir -p %buildroot/%_datadir/%name
 install -m644 prll.sh %buildroot/%_datadir/%name/prll.sh
 # install completions
 for dir in profile.d bash_completion.d ; do
-	mkdir -p %buildroot/%_sysconfdir/$dir
-	cat >> %buildroot/%_sysconfdir/$dir/%name << EOF
+        mkdir -p %buildroot/%_sysconfdir/$dir
+        cat >> %buildroot/%_sysconfdir/$dir/%name << EOF
 source %_datadir/%name/prll.sh
 EOF
 done
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc AUTHORS COPYING NEWS README 

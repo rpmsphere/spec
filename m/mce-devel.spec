@@ -15,6 +15,7 @@ provided by the Mode Control Entity, and the signals emitted by it.
 
 %prep
 %setup -q -n mce-dev-%{version}
+sed -i 's|-o root -g root||' Makefile
 
 %build
 %__make
@@ -23,9 +24,6 @@ provided by the Mode Control Entity, and the signals emitted by it.
 %__rm -rf %{buildroot}
 %__make DESTDIR=%{buildroot} install
 mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %{_includedir}/mce

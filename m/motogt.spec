@@ -1,24 +1,24 @@
 %undefine _debugsource_packages
-%define		oname MotoGT
+%define         oname MotoGT
 
-Name:		motogt
-Version:	20110505
-Release:	15.1
-Summary:	A free motorcycle racing game
-License:	GPLv2+
-Group:		Games/Arcade
-URL:		https://motogt.sourceforge.net/
-Source0:	https://prdownloads.sourceforge.net/motogt/%{oname}-%{version}.zip
-Source2:	motogt.desktop
-Source3:	MotoGT.png
-Patch0:		motogt-makefile.patch
-Patch1:		motogt-savedir.patch
-Patch2:		motogt-init.patch
-Patch3:		motogt-png15.patch
-BuildRequires:	compat-SFML16-devel
-BuildRequires:	libpng-devel
-BuildRequires:	libpng10-devel
-BuildRequires:	pkgconfig(glu)
+Name:           motogt
+Version:        20110505
+Release:        15.1
+Summary:        A free motorcycle racing game
+License:        GPLv2+
+Group:          Games/Arcade
+URL:            https://motogt.sourceforge.net/
+Source0:        https://prdownloads.sourceforge.net/motogt/%{oname}-%{version}.zip
+Source2:        motogt.desktop
+Source3:        MotoGT.png
+Patch0:         motogt-makefile.patch
+Patch1:         motogt-savedir.patch
+Patch2:         motogt-init.patch
+Patch3:         motogt-png15.patch
+BuildRequires:  compat-SFML16-devel
+BuildRequires:  libpng-devel
+BuildRequires:  libpng10-devel
+BuildRequires:  pkgconfig(glu)
 
 %description
 MotoGT is 2D top-viewed game where you drive a MotoGP bike, and you want
@@ -28,10 +28,10 @@ If you win championships, you can also unlock hidden features.
 
 %prep
 %setup -q -n %{oname}
-%patch0 -p1 -b .makefile~
-%patch1 -p1 -b .savedir~
-%patch2 -p1 -b .init~
-%patch3 -p1 -b .png15~
+%patch 0 -p1 -b .makefile~
+%patch 1 -p1 -b .savedir~
+%patch 2 -p1 -b .init~
+%patch 3 -p1 -b .png15~
 sed -i 's|sfml-\([a-z]*\)|sfml-\1-1.6|g' src/Makefile.lnx
 mv data data_hi ; sed -i 's|data|data_hi|g' src/* ; sed -i 's|data_hi_low|data_low|' src/global.cpp
 

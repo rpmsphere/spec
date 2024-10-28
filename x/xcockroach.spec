@@ -19,7 +19,7 @@ It is a GPL clone of xroach, with many enhancements.
 
 %prep
 %setup -q
-%patch0 -p0 -b .flags
+%patch 0 -p0 -b .flags
 
 %build
 autoreconf -fi
@@ -29,9 +29,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog COPYING TODO

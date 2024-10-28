@@ -1,16 +1,16 @@
-Summary:	XMMS-Shell is a simple utility for controlling XMMS externally
-Name:		xmms-shell
-Version:	0.99.3
-Release:	1
-License:	GPL v2
-Group:		Applications/Sound
-Source0:	https://dl.sourceforge.net/xmms-shell/%{name}-%{version}.tar.gz
-URL:		https://www.loganh.com/xmms-shell/
+Summary:        XMMS-Shell is a simple utility for controlling XMMS externally
+Name:           xmms-shell
+Version:        0.99.3
+Release:        1
+License:        GPL v2
+Group:          Applications/Sound
+Source0:        https://dl.sourceforge.net/xmms-shell/%{name}-%{version}.tar.gz
+URL:            https://www.loganh.com/xmms-shell/
 BuildRequires:  gcc
-BuildRequires:	automake
-BuildRequires:	libtool
-BuildRequires:	readline-devel
-BuildRequires:	xmms-devel
+BuildRequires:  automake
+BuildRequires:  libtool
+BuildRequires:  readline-devel
+BuildRequires:  xmms-devel
 
 %description
 XMMS-Shell is a simple utility for controlling XMMS externally.
@@ -30,9 +30,6 @@ sed -r -i '7i #include <cstdlib>\n#include <cstring>' include/command.h
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README AUTHORS

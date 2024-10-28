@@ -1,12 +1,12 @@
-Name:		cgoban
-Version:	1.9.14
-Release:	20.1
-Summary:	A Go game client
-License:	GPLv2+
-Group:		Games/Boards
-URL:		https://cgoban1.sourceforge.net/
-Source:		https://sourceforge.net/projects/cgoban1/%{name}-%{version}.tar.bz2
-BuildRequires:	libX11-devel
+Name:           cgoban
+Version:        1.9.14
+Release:        20.1
+Summary:        A Go game client
+License:        GPLv2+
+Group:          Games/Boards
+URL:            https://cgoban1.sourceforge.net/
+Source:         https://sourceforge.net/projects/cgoban1/%{name}-%{version}.tar.bz2
+BuildRequires:  libX11-devel
 
 %description
 Cgoban (Complete Goban) is for Unix systems with X11.  It has the ability
@@ -42,9 +42,6 @@ Terminal=false
 Type=Application
 Categories=Game;BoardGame;
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README TODO seigen-minoru.sgf

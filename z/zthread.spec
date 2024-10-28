@@ -40,9 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_libdir}/lib*.so.*
 %doc AUTHORS COPYING INSTALL NEWS README LICENSE MIT.TXT TODO ChangeLog

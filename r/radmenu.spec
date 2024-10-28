@@ -32,9 +32,6 @@ exec python rad_menu.py
 EOF
 chmod +x %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}

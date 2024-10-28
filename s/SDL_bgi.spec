@@ -34,9 +34,6 @@ mkdir -p $RPM_BUILD_ROOT%{_includedir}/SDL2
 cp libSDL_bgi.so $RPM_BUILD_ROOT%{_libdir}
 cp SDL_bgi.h $RPM_BUILD_ROOT%{_includedir}/SDL2
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 if [ -r /usr/include/graphics.h ]; then
   echo "graphics.h detected - skipping";

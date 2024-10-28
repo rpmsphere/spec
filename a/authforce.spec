@@ -9,6 +9,7 @@ Group:          Networking/WWW
 Summary:        HTTP authentication brute forcer
 URL:            https://divineinvasion.net/authforce
 BuildRequires:  readline-devel
+BuildRequires:  libcurl-devel
 
 %description
 Authforce is an HTTP authentication brute forcer. Using various methods,
@@ -42,9 +43,6 @@ mkdir -p $RPM_BUILD_ROOT/usr/bin
 mkdir -p $RPM_BUILD_ROOT/usr/share/authforce
 %{__strip} src/authforce
 %{__install} -m 755 src/authforce $RPM_BUILD_ROOT/usr/bin
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc ABOUT-NLS README NEWS COPYING AUTHORS ChangeLog TODO THANKS authforcerc.sample doc/authforce.1.gz

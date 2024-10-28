@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		udevil		
-Version:	0.4.4
-Release:	5.1
-Summary:	Mount and unmount without password
-Group:		System Environment/Daemons
-License:	GPLv3+
-URL:		https://ignorantguru.github.com/udevil/
-Source0:	https://github.com/IgnorantGuru/%{name}/archive/%{name}-%{version}.tar.gz
-BuildRequires:	intltool, gettext
-BuildRequires:	systemd-devel, glib2-devel
+Name:           udevil          
+Version:        0.4.4
+Release:        5.1
+Summary:        Mount and unmount without password
+Group:          System Environment/Daemons
+License:        GPLv3+
+URL:            https://ignorantguru.github.com/udevil/
+Source0:        https://github.com/IgnorantGuru/%{name}/archive/%{name}-%{version}.tar.gz
+BuildRequires:  intltool, gettext
+BuildRequires:  systemd-devel, glib2-devel
 
 %description
 udevil is a command line Linux program which mounts and unmounts 

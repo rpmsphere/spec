@@ -52,9 +52,6 @@ find Doc -name '*.pdf' -exec bzip2 {} \;
 install -D -m 644 SmacLib/xcoralrc.lf $RPM_BUILD_ROOT/etc/skel/.xcoralrc
 sed -i 's|%{buildroot}||' %{buildroot}/usr/bin/%{name} %{buildroot}/usr/lib/xcoral/utilities.sc
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc Doc/*
 %config(noreplace) /etc/skel/.xcoralrc

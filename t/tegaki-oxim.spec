@@ -1,13 +1,13 @@
 %define __python /usr/bin/python2
-Summary: 	Chinese and Japanese Handwriting Recognition
-Name: 		tegaki-oxim
-Version: 	0.2
-Release: 	1
-License: 	GPLv2+
-Group: 		System/Internationalization
-Source0: 	%name-%version.tar.gz
-BuildArch:	noarch
-Requires:	tegaki-pygtk
+Summary:        Chinese and Japanese Handwriting Recognition
+Name:           tegaki-oxim
+Version:        0.2
+Release:        1
+License:        GPLv2+
+Group:          System/Internationalization
+Source0:        %name-%version.tar.gz
+BuildArch:      noarch
+Requires:       tegaki-pygtk
 Requires:       oxim
 
 %description
@@ -29,9 +29,6 @@ rm -rf %{buildroot}
 DESTDIR=%{buildroot} make install
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}

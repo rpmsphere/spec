@@ -1,20 +1,20 @@
-Summary:	A set of Solitaire type games for the X Window System
-Name:		xpat2
-Version:	1.07
+Summary:        A set of Solitaire type games for the X Window System
+Name:           xpat2
+Version:        1.07
 Release:    46.1
-License:	GPLv2+
-Group:		Games/Cards
-Source0:	ftp://sunsite.unc.edu/pub/Linux/games/solitaires/%{name}-%{version}-src.tar.bz2	
-Source1:	xpat2.png
-Patch0:		xpat2-fixes.patch
-Patch1:		xpat2-1.07-lib64.patch
-Patch2:		xpat2-1.07-gcc41.patch
-Patch3:		xpat2-1.07-fix-str-fmt.patch
-BuildRequires:	gcc-c++
-BuildRequires:	imake
-BuildRequires:	qt3-devel
-BuildRequires:	perl
-BuildRequires:	libXpm-devel
+License:        GPLv2+
+Group:          Games/Cards
+Source0:        ftp://sunsite.unc.edu/pub/Linux/games/solitaires/%{name}-%{version}-src.tar.bz2 
+Source1:        xpat2.png
+Patch0:         xpat2-fixes.patch
+Patch1:         xpat2-1.07-lib64.patch
+Patch2:         xpat2-1.07-gcc41.patch
+Patch3:         xpat2-1.07-fix-str-fmt.patch
+BuildRequires:  gcc-c++
+BuildRequires:  imake
+BuildRequires:  qt3-devel
+BuildRequires:  perl
+BuildRequires:  libXpm-devel
 
 %description
 Xpat2 is a generic patience or Solitaire game for the X Window System.
@@ -23,10 +23,10 @@ Spider, Klondike, and other card games.
 
 %prep
 %setup -q
-%patch0 -p1 -b kk1
-%patch1 -p1 -b .lib64
-%patch2 -p0 -b .gcc41
-%patch3 -p0
+%patch 0 -p1 -b kk1
+%patch 1 -p1 -b .lib64
+%patch 2 -p0 -b .gcc41
+%patch 3 -p0
 
 %build
 make clean
@@ -51,9 +51,9 @@ make CDEBUGFLAGS="$RPM_OPT_FLAGS" CXXDEBUGFLAGS="$RPM_OPT_FLAGS"
 
 %install
 %makeinstall DESTDIR=$RPM_BUILD_ROOT \
-	XPATROOT=$RPM_BUILD_ROOT/usr/lib/xpat \
-	XPATMANDIR=$RPM_BUILD_ROOT/usr/share/man/man6 \
-	APPDEFSDIR=$RPM_BUILD_ROOT/usr/share/X11
+        XPATROOT=$RPM_BUILD_ROOT/usr/lib/xpat \
+        XPATMANDIR=$RPM_BUILD_ROOT/usr/share/man/man6 \
+        APPDEFSDIR=$RPM_BUILD_ROOT/usr/share/X11
 
 mkdir -p $RPM_BUILD_ROOT/var/lib/games/
 touch $RPM_BUILD_ROOT/var/lib/games/xpat.log
@@ -70,9 +70,6 @@ StartupNotify=true
 Categories=Qt;Game;CardGame;
 EOF
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf %buildroot
 
 %files
 /usr/lib/xpat/*
@@ -151,9 +148,9 @@ rm -rf %buildroot
 - PreReq on rpm-helper
 - Add Url on Source path
 - Get out the 3 obsolete patch :
-	xpat2-1.03-fsstnd.patch.bz2
-	xpat2-1.04-xpm.patch.bz2
-	xpat2-1.04-nobr.patch.bz2
+        xpat2-1.03-fsstnd.patch.bz2
+        xpat2-1.04-xpm.patch.bz2
+        xpat2-1.04-nobr.patch.bz2
 * Thu Jul 17 2003 David BAUDENS <baudens@mandrakesoft.com> 1.07-13mdk
 - Rebuild
 * Tue Aug 27 2002 David BAUDENS <baudens@mandrakesoft.com> 1.07-12mdk
@@ -164,7 +161,7 @@ rm -rf %buildroot
 - use -lqt-mt (thx Laurent)
 - png icons
 - from Quel Qun <kelk1@hotmail.com> :
-	- rebuild with qt3 and gcc3.2
+        - rebuild with qt3 and gcc3.2
 * Thu Feb 28 2002 Guillaume Cottenceau <gc@mandrakesoft.com> 1.07-9mdk
 - fix path and perms for /var files, use a ghost file
 * Tue Jan 22 2002 Stefan van der Eijk <stefan@eijk.nu> 1.07-8mdk
@@ -180,7 +177,7 @@ rm -rf %buildroot
 * Tue Jul 17 2001 Jeff Garzik <jgarzik@mandrakesoft.com> 1.07-3mdk
 - Remove %%ifarch x86 section, it applies to all ports
 * Sat Jul 07 2001 Stefan van der Eijk <stefan@eijk.nu> 1.07-2mdk
-- BuildRequires:	qt2-devel
+- BuildRequires:        qt2-devel
 * Sat Jun 30 2001 Etienne Faure  <etienne@mandrakesoft.com> 1.07-1mdk
 - version 1.07
 * Sat Jan 20 2001 Etienne Faure  <etienne@mandrakesoft.com> 1.04-23mdk

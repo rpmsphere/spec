@@ -20,8 +20,8 @@ Authors:
 
 %prep
 %setup -q
-%patch0
-%patch1 -p 1
+%patch 0
+%patch 1 -p 1
 
 %build
 make

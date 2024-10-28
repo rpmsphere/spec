@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
 
-Name:		smile
-Summary:	Slideshow Maker In Linux Environnement
-Version:	1.0
-Release:	6.1
-Source0:	https://download.tuxfamily.org/smiletool/%{name}-%{version}.tar.gz
-Source1:	%{name}.png
-URL:		https://smile.tuxfamily.org/
-Group:		Applications/Graphics
-License:	GPLv2+
+Name:           smile
+Summary:        Slideshow Maker In Linux Environnement
+Version:        1.0
+Release:        6.1
+Source0:        https://download.tuxfamily.org/smiletool/%{name}-%{version}.tar.gz
+Source1:        %{name}.png
+URL:            https://smile.tuxfamily.org/
+Group:          Applications/Graphics
+License:        GPLv2+
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, qt4-devel, qt-webkit-devel, mesa-libGL-devel
-Requires:	netpbm-progs, sox, mjpegtools, vorbis-tools, ImageMagick, mencoder, mplayer
+BuildRequires:  gcc-c++, qt4-devel, qt-webkit-devel, mesa-libGL-devel
+Requires:       netpbm-progs, sox, mjpegtools, vorbis-tools, ImageMagick, mencoder, mplayer
 
 %description
 Smile is a slideshow creation application which makes it easy to
@@ -52,9 +52,6 @@ Type=Application
 StartupNotify=true
 Categories=AudioVideo;AudioVideoEditing;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/%{name}

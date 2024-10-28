@@ -8,7 +8,7 @@ License:       GPL v2
 Group:         Productivity/Networking/Remote Desktop/Security
 Source0:       %name-%version.src.tar.gz
 Source1:       icons.tar.bz2
-Patch:         makefile.patch
+Patch0:         makefile.patch
 URL:           https://www.karlrunge.com/x11vnc/ssvnc.html
 BuildRequires: libX11-devel java-11-openjdk-devel libjpeg-devel lua
 BuildRequires: gcc imake libXt-devel libXmu-devel libXaw-devel
@@ -36,7 +36,7 @@ Autorzy:
 %prep
 %setup -q
 %setup -T -D -q -a 1
-%patch
+%patch 0
 sed -i -e 's|LIB      = lib/ssvnc|LIB      = %{_lib}/ssvnc|' Makefile
 sed -i 's|1\.4|7|g' ultraftp/Makefile
 
@@ -48,9 +48,6 @@ make all
 rm -rf $RPM_BUILD_ROOT
 mkdir $RPM_BUILD_ROOT
 make  ROOT=$RPM_BUILD_ROOT PREFIX=%{_prefix} install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING README README.src

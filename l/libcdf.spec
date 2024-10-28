@@ -1,20 +1,20 @@
 %undefine _debugsource_packages
 %global cdfver 38_0
 
-Name:		libcdf
-Version:	3.8.0
-Release:	1
-Summary:	The NASA Common Data Format implementation
-Group:		Development/Libraries
-License:	CDF
-URL:		https://cdf.gsfc.nasa.gov/
-Source0:	ftp://cdaweb.gsfc.nasa.gov/pub/cdf/dist/latest-release/linux/cdf%{cdfver}-dist-all.tar.gz
-Source1:	cdf-init-bourne.sh
-Source2:	cdf-init-cshell.sh
-Source3:	cdf-init-bash.sh
-BuildRequires:	gcc-gfortran
-BuildRequires:	ed
-BuildRequires:	ncurses-devel
+Name:           libcdf
+Version:        3.8.0
+Release:        1
+Summary:        The NASA Common Data Format implementation
+Group:          Development/Libraries
+License:        CDF
+URL:            https://cdf.gsfc.nasa.gov/
+Source0:        ftp://cdaweb.gsfc.nasa.gov/pub/cdf/dist/latest-release/linux/cdf%{cdfver}-dist-all.tar.gz
+Source1:        cdf-init-bourne.sh
+Source2:        cdf-init-cshell.sh
+Source3:        cdf-init-bash.sh
+BuildRequires:  gcc-gfortran
+BuildRequires:  ed
+BuildRequires:  ncurses-devel
 
 %description
 The Common Data Format (CDF) is a self-describing data format for the storage
@@ -36,9 +36,9 @@ Initialize enviroment variables by running cdf-init-bourne.sh,
 cdf-init-cshell.sh or cdf-init-bash.sh before running.
 
 %package devel
-Summary:	CDF development headers
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+Summary:        CDF development headers
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 This package contains development headers for cdf.
@@ -78,9 +78,6 @@ sed "s|@BASEDIR@|%{_datadir}/%{name}-%{version}|g;s|@BINDIR@|%{_bindir}|g;s|@LIB
 sed "s|@BASEDIR@|%{_datadir}/%{name}-%{version}|g;s|@BINDIR@|%{_bindir}|g;s|@LIBDIR@|%{_libdir}|g;s|@INCDIR@|%{_includedir}|g;s|@HELPDIR|%{_datadir}/%{name}-%{version}/help|g" %{SOURCE2} > %{buildroot}/%{_bindir}/cdf-init-cshell.sh
 sed "s|@BASEDIR@|%{_datadir}/%{name}-%{version}|g;s|@BINDIR@|%{_bindir}|g;s|@LIBDIR@|%{_libdir}|g;s|@INCDIR@|%{_includedir}|g;s|@HELPDIR|%{_datadir}/%{name}-%{version}/help|g" %{SOURCE3} > %{buildroot}/%{_bindir}/cdf-init-bash.sh
 chmod a+rx %{buildroot}/%{_bindir}/cdf-init*.sh
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc CDF_copyright.txt CHANGES.txt Release.notes samples

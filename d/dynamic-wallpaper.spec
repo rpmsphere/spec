@@ -19,7 +19,7 @@ based on current weather, season, time of day and others. It supports themes.
 
 %prep
 %setup -q -c
-%patch0 -p0
+%patch 0 -p0
 find . -name '*~' -exec rm -f {} ';'
 sed -i 's|install |install -p |' Makefile
 
@@ -36,9 +36,6 @@ desktop-file-install                                    \
 %{__chmod} a+x $RPM_BUILD_ROOT%{_bindir}/motor.py
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING NEWS README README-themes

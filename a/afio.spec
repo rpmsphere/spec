@@ -4,9 +4,9 @@ Name:           afio
 Version:        2.5.2
 Release:        1
 Summary:        Archiver program which writes cpio-format archives
-Group:		Archiving/Backup
-Source0:	https://members.chello.nl/~k.holtman/%{name}-%{version}.tgz
-License:	LGPL
+Group:          Archiving/Backup
+Source0:        https://members.chello.nl/~k.holtman/%{name}-%{version}.tgz
+License:        LGPL
 
 %description
 Afio makes cpio-format archives. It deals somewhat gracefully with input

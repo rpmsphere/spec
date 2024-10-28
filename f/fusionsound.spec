@@ -1,23 +1,23 @@
 %define oname FusionSound
 %define dfbmoduledir %(pkg-config --variable=moduledir direct)
 
-Summary:	An audio sub system
-Name:		fusionsound
-Version:	1.6.3
-Release:	1
-License:	GPLv2+
-Group:		System/Libraries
-URL:		https://www.directfb.org
-Source0:	https://www.directfb.org/downloads/Core/%{oname}-%{version}.tar.gz
-Patch0:		FusionSound-1.6.2-ffmpeg1.0.patch
-Patch1:		FusionSound-1.6.3-ffmpeg2.0.patch
-Patch2:		FusionSound-1.6.3-ffmpeg2.4.patch
-#BuildRequires:	ffmpeg-devel
-BuildRequires:	pkgconfig(alsa)
-BuildRequires:	pkgconfig(directfb)
-BuildRequires:	pkgconfig(libcddb)
-BuildRequires:	pkgconfig(mad)
-BuildRequires:	pkgconfig(vorbis)
+Summary:        An audio sub system
+Name:           fusionsound
+Version:        1.6.3
+Release:        1
+License:        GPLv2+
+Group:          System/Libraries
+URL:            https://www.directfb.org
+Source0:        https://www.directfb.org/downloads/Core/%{oname}-%{version}.tar.gz
+Patch0:         FusionSound-1.6.2-ffmpeg1.0.patch
+Patch1:         FusionSound-1.6.3-ffmpeg2.0.patch
+Patch2:         FusionSound-1.6.3-ffmpeg2.4.patch
+#BuildRequires: ffmpeg-devel
+BuildRequires:  pkgconfig(alsa)
+BuildRequires:  pkgconfig(directfb)
+BuildRequires:  pkgconfig(libcddb)
+BuildRequires:  pkgconfig(mad)
+BuildRequires:  pkgconfig(vorbis)
 
 %description
 FusionSound is a very powerful audio sub system in the
@@ -51,9 +51,9 @@ the playlist of the mixer thread in the master application.
 %{_libdir}/lib%{name}-*.so.*
 
 %package devel
-Group:		Development/Other
-Summary:	An audio sub system
-Requires:	%{name} = %{version}-%{release}
+Group:          Development/Other
+Summary:        An audio sub system
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 FusionSound is a very powerful audio sub system in the
@@ -75,14 +75,14 @@ the playlist of the mixer thread in the master application.
 
 %prep
 %setup -q -n %{oname}-%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 
 %build
 autoreconf -fi
 %configure \
-	--without-ffmpeg
+        --without-ffmpeg
 %make_build
 
 %install

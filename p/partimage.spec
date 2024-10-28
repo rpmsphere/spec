@@ -1,31 +1,31 @@
-Summary: 	Partition Image
-Name: 		partimage
-Version: 	0.6.9
-Release: 	15
-URL: 		https://www.partimage.org/
-License: 	GPLv2
-Group: 		Archiving/Backup
-Source: 	%{name}-%{version}.tar.bz2
-Source1:	partimage.1
-Source2:	partimaged.8
-Source3:	partimagedusers.5
-Source4:	partimaged-sysconfig
-Source5:	partimaged-init.d
-Patch3: 	partimage-0.6.7-ssl-certs-policy.patch
-Patch12:	partimage-0.6.8-lzma.patch
-Patch13:	partimage-0.6.7-splash.patch
-Patch14:	partimage-0.6.9-fedora-gzfile.patch
-Patch15:	partimage-0.6.9-automake-1.13.patch
-Patch16:	partimage-0.6.9-no-sslv2.patch
+Summary:        Partition Image
+Name:           partimage
+Version:        0.6.9
+Release:        15
+URL:            https://www.partimage.org/
+License:        GPLv2
+Group:          Archiving/Backup
+Source:         %{name}-%{version}.tar.bz2
+Source1:        partimage.1
+Source2:        partimaged.8
+Source3:        partimagedusers.5
+Source4:        partimaged-sysconfig
+Source5:        partimaged-init.d
+Patch3:         partimage-0.6.7-ssl-certs-policy.patch
+Patch12:        partimage-0.6.8-lzma.patch
+Patch13:        partimage-0.6.7-splash.patch
+Patch14:        partimage-0.6.9-fedora-gzfile.patch
+Patch15:        partimage-0.6.9-automake-1.13.patch
+Patch16:        partimage-0.6.9-no-sslv2.patch
 # from debian: fix build config with openssl 1.1
-Patch17:	03-openssl11.patch
-Patch18:	partimage-0.6.9-sysmacros.patch
-BuildRequires:	bzip2-devel
-BuildRequires:	gettext-devel
-BuildRequires:	lzmadec-devel
-BuildRequires:	pkgconfig(libnewt)
-BuildRequires:	pkgconfig(openssl)
-BuildRequires:	pkgconfig(zlib)
+Patch17:        03-openssl11.patch
+Patch18:        partimage-0.6.9-sysmacros.patch
+BuildRequires:  bzip2-devel
+BuildRequires:  gettext-devel
+BuildRequires:  lzmadec-devel
+BuildRequires:  pkgconfig(libnewt)
+BuildRequires:  pkgconfig(openssl)
+BuildRequires:  pkgconfig(zlib)
 BuildRequires:  gettext-devel
 
 %description

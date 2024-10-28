@@ -30,9 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT -C build install
 %find_lang pidgin-ofetion
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f pidgin-ofetion.lang
 %{_libdir}/purple-2/libopenfetion.so
 %{_datadir}/pixmaps/pidgin/protocols/16/openfetion.png

@@ -33,9 +33,6 @@ make -j4
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING INSTALL
 %{prefix}/bin/transparency

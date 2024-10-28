@@ -35,9 +35,6 @@ for searching words conveniently and quickly.
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_libdir}/%{name}/scripts/*.py %{buildroot}%{_bindir}/%{name}
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc COPYING README
 %{_bindir}/%{name}

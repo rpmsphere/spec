@@ -9,7 +9,7 @@ License: LGPL
 URL: https://gstreamer.freedesktop.org/
 Source0: %oname-%version.tar
 Source1: common.tar
-Patch: %oname-%version.patch
+Patch0: %oname-%version.patch
 #BuildRequires: gnome-libs-devel
 BuildRequires: gtk-doc w3m
 BuildRequires: gstreamer-plugins-base-devel
@@ -22,16 +22,16 @@ applications. It introduces the concept of a timeline.
 
 %prep
 %setup -q -n %oname-%version -a1
-%patch -p1
+%patch 0 -p1
 
 %build
 autoreconf -vfi
 %configure \
-	--with-default-audiosrc=pulsesrc \
-	--with-default-audiosink=pulsesink \
-	--with-default-videosrc=v4l2src \
-	--with-default-videosink=xvimagesink \
-	--disable-static
+        --with-default-audiosrc=pulsesrc \
+        --with-default-audiosink=pulsesink \
+        --with-default-videosrc=v4l2src \
+        --with-default-videosink=xvimagesink \
+        --disable-static
 %make_build
 
 %install

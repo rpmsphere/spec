@@ -1,14 +1,14 @@
 %global __spec_install_post %{nil}
 %undefine _debugsource_packages
 
-Name:		libsmf
-Version:	1.3
-Release:	1
-Summary:	Library for handling SMF ("*.mid") files.
-Group:		System/Libraries
-License:	BSD
-Source:		libsmf-1.3.tar.xz
-URL:		https://sourceforge.net/projects/libsmf/files/libsmf/
+Name:           libsmf
+Version:        1.3
+Release:        1
+Summary:        Library for handling SMF ("*.mid") files.
+Group:          System/Libraries
+License:        BSD
+Source:         libsmf-1.3.tar.xz
+URL:            https://sourceforge.net/projects/libsmf/files/libsmf/
 BuildRequires:  readline-devel
 
 %description
@@ -18,9 +18,9 @@ map handling etc. The only dependencies are C compiler and glib. Full
 API documentation and examples are included.
 
 %package devel
-Summary:	Development headers for %{name}
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+Summary:        Development headers for %{name}
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 LibSMF is a BSD-licensed C library for handling SMF ("*.mid") files.
@@ -49,9 +49,6 @@ rm -rf %{buildroot}/%{_libdir}/*.la
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/smf.pc
-
-%clean
-rm -rf %{buildroot}
 
 %changelog
 * Sun Dec 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3

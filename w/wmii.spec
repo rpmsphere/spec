@@ -15,8 +15,8 @@ BuildRequires: libXrandr-devel
 BuildRequires: libXext-devel
 BuildRequires: libixp-devel > 0.5
 BuildRequires: python2-devel
-Requires:	xterm
-Requires:	xmessage
+Requires:       xterm
+Requires:       xmessage
 
 %description
 WMii is a dynamic window manager for X11 hackers. It supports classic and tiled

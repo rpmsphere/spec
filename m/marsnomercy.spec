@@ -10,8 +10,8 @@ Group:          Amusements/Games/Strategy/Turn Based
 URL:            https://www.marsnomercy.org/
 BuildRequires:  gcc-c++ SDL-devel SDL_image-devel SDL_ttf-devel
 BuildRequires:  python2-scons <= 3.0.1
-BuildRequires:	mesa-libGL-devel
-BuildRequires:	SDL_mixer-devel
+BuildRequires:  mesa-libGL-devel
+BuildRequires:  SDL_mixer-devel
 Source0:        %{_name}-%{version}-src.tar.gz
 Source1:        %{_name}.png
 
@@ -65,9 +65,6 @@ Terminal=false
 Categories=Game;StrategyGame;Game
 EOF
 chmod 644 %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %{_bindir}/%{name}

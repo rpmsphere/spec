@@ -33,9 +33,6 @@ rm -rf $RPM_BUILD_ROOT
 mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT/usr/lib64
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE README.*
 %{_bindir}/*

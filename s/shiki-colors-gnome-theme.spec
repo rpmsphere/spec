@@ -9,7 +9,7 @@ Group:          User Interface/Desktops
 URL:            https://www.gnome-look.org/content/show.php/Shiki-Colors?content=86717
 Source0:        https://gnome-colors.googlecode.com/files/shiki-colors-%{version}.tar.gz
 Source1:        aurora1_by_pkarwowski.jpg
-BuildArch:	    noarch
+BuildArch:          noarch
 Requires:       gnome-colors-icon-theme
 Conflicts:      shiki-colors-gnome-theme-murrine
 
@@ -28,9 +28,6 @@ sed -i '$a BackgroundImage=/usr/share/doc/%{name}/aurora1_by_pkarwowski.jpg' */i
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes
 cp -a Shiki-* $RPM_BUILD_ROOT%{_datadir}/themes
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %doc AUTHORS ChangeLog COPYING README *.png *.css *.jpg

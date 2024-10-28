@@ -1,15 +1,15 @@
-Summary:	Portable Object Compiler - bootstrap version
-Summary(pl.UTF-8):	Przenośny kompilator obiektowego C - wersja do inicjacji
-Name:		objc-bootstrap
-Version:	3.3.25
-Release:	1
-License:	LGPL
-Group:		Development/Tools
-Source0:	https://users.telenet.be/stes/%{name}-%{version}.tar.gz
-URL:		https://users.telenet.be/stes/compiler.html
-BuildRequires:	automake
-BuildRequires:	byacc
-BuildRequires:	flex
+Summary:        Portable Object Compiler - bootstrap version
+Summary(pl.UTF-8):      Przenośny kompilator obiektowego C - wersja do inicjacji
+Name:           objc-bootstrap
+Version:        3.3.25
+Release:        1
+License:        LGPL
+Group:          Development/Tools
+Source0:        https://users.telenet.be/stes/%{name}-%{version}.tar.gz
+URL:            https://users.telenet.be/stes/compiler.html
+BuildRequires:  automake
+BuildRequires:  byacc
+BuildRequires:  flex
 
 %description
 The Portable Object Compiler consists of a set of Objective-C class
@@ -33,9 +33,6 @@ właściwego kompilatora objc.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_prefix}
 %{__make} install INSTALLDIR=$RPM_BUILD_ROOT%{_prefix}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc BOOTSTRAP

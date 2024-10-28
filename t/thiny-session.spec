@@ -2,11 +2,11 @@ Name:           thiny-session
 Version:        0.8.0
 Release:        1
 Summary:        A Thin and Tiny Session for X
-Group:		User Interface/Desktops
+Group:          User Interface/Desktops
 License:        CC0
 URL:            https://github.com/bluebat/thiny-session
 Source0:        %{name}-%{version}.tar.gz
-BuildArch:	noarch
+BuildArch:      noarch
 Requires:       notification-daemon
 #Requires:       pulseaudio-module-x11
 Requires:       metacity

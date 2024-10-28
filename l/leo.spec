@@ -7,7 +7,7 @@ Summary:        Leonine Editor with Outlines
 URL:            https://webpages.charter.net/edreamleo/front.html
 License:        MIT
 Group:          Applications/Editor
-Source0:	leo-%{version}.tar.gz
+Source0:        leo-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  python3
 BuildRequires:  python3-setuptools
@@ -46,9 +46,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python4|' %{buildroot}%{python3_sitelib}/leo
        %{buildroot}%{python3_sitelib}/leo/plugins/leo_babel/examples/slowOutNoFlush.py
 #sed -i 's|/usr/bin/python.*|/usr/bin/python2|' %{buildroot}%{_bindir}/* %{buildroot}%{python2_sitelib}/leo/external/saveleo
 #sed -i 's|/usr/bin/env python.*|/usr/bin/python2|' %{buildroot}%{_bindir}/* %{buildroot}%{python2_sitelib}/leo/scripts/leo
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.TXT

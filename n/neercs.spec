@@ -1,14 +1,14 @@
-Summary:	Caca screen manager
-Name:		neercs
-Version:	0.0.4342
-Release:	11.1
-License:	WTFPL
-Group:		Terminals
-URL:		https://caca.zoy.org/wiki/neercs
-Source0:	%{name}-0.0.tar.bz2
-Source1:	neercs.pam
-BuildRequires:	pam-devel python2-devel
-BuildRequires:	libcaca-devel
+Summary:        Caca screen manager
+Name:           neercs
+Version:        0.0.4342
+Release:        11.1
+License:        WTFPL
+Group:          Terminals
+URL:            https://caca.zoy.org/wiki/neercs
+Source0:        %{name}-0.0.tar.bz2
+Source1:        neercs.pam
+BuildRequires:  pam-devel python2-devel
+BuildRequires:  libcaca-devel
 BuildRequires:  automake
 
 %description
@@ -36,9 +36,6 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall
 mkdir -p $RPM_BUILD_ROOT/etc/pam.d
 cp -a %{SOURCE1} $RPM_BUILD_ROOT/etc/pam.d/%name
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_docdir}/%{name}

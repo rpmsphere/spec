@@ -39,9 +39,6 @@ mv $RPM_BUILD_ROOT%{_prefix}/bin/tconf \
 %{_includedir}/srp
 %{_libdir}/libsrp.a
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.2
 - Rebuilt for Fedora

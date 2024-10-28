@@ -1,16 +1,16 @@
-Name:				ploticus
-Version:			2.42
+Name:                           ploticus
+Version:                        2.42
 %define pkg_version 242
-Release:			13.1
-Summary:			Ploticus Data Display Engine
-Source:			https://prdownloads.sourceforge.net/ploticus/%{name}%{pkg_version}_src.tar.gz
-Patch0:			ploticus242.patch
-URL:				https://ploticus.sourceforge.net
-Group:			Productivity/Graphics/Visualization/Graph
-License:			GNU General Public License (GPL)
-BuildRequires:	libpng-devel
-BuildRequires:	zlib-devel libjpeg-devel gd-devel giflib-devel bison flex
-BuildRequires:	freetype-devel make gcc glibc-devel
+Release:                        13.1
+Summary:                        Ploticus Data Display Engine
+Source:                 https://prdownloads.sourceforge.net/ploticus/%{name}%{pkg_version}_src.tar.gz
+Patch0:                 ploticus242.patch
+URL:                            https://ploticus.sourceforge.net
+Group:                  Productivity/Graphics/Visualization/Graph
+License:                        GNU General Public License (GPL)
+BuildRequires:  libpng-devel
+BuildRequires:  zlib-devel libjpeg-devel gd-devel giflib-devel bison flex
+BuildRequires:  freetype-devel make gcc glibc-devel
 
 %description
 A free, GPL, non-interactive software package for producing plots, charts, and
@@ -23,15 +23,15 @@ significant user control over colors, styles, options and details.
 
 %prep
 %setup -q -n %{name}%{pkg_version}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %__make -C src \
-	%{?jobs:-j%{jobs}} \
-	LIB="%{_lib}" \
-	CC="%__cc %{optflags} -Wno-format-security" \
-   	NOSWFFLAG="" \
-	PREFABS_DIR="%{_libdir}/ploticus"
+        %{?jobs:-j%{jobs}} \
+        LIB="%{_lib}" \
+        CC="%__cc %{optflags} -Wno-format-security" \
+        NOSWFFLAG="" \
+        PREFABS_DIR="%{_libdir}/ploticus"
 
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
@@ -39,9 +39,6 @@ significant user control over colors, styles, options and details.
 %__install -d "$RPM_BUILD_ROOT%{_libdir}/%{name}"
 %__rm prefabs/README
 %__cp prefabs/* "$RPM_BUILD_ROOT%{_libdir}/%{name}/"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc src/GPL.txt src/README

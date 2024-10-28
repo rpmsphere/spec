@@ -36,8 +36,8 @@ Authors:
 
 %prep
 %setup -q -n xtexit
-%patch0
-%patch1
+%patch 0
+%patch 1
 
 %build
 xmkmf -a
@@ -51,9 +51,6 @@ mkdir -p $RPM_BUILD_ROOT/usr/share/X11/app-defaults
 mv $RPM_BUILD_ROOT/usr/lib/X11/app-defaults/* $RPM_BUILD_ROOT/usr/share/X11/app-defaults
 %endif
 rm -rf $RPM_BUILD_ROOT/usr/lib
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README README.SuSE

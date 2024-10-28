@@ -1,20 +1,20 @@
-Name:		easymp3gain
-Version:	0.5.0
-Release:	16.1
-License:	GPLv2
-Summary:	Graphical user interface for MP3Gain, AACGain and VorbisGain (GTK2)
-Group:		Sound/Utilities
-URL:		https://easymp3gain.sourceforge.net
-Source0:	https://download.sourceforge.net/%{name}/%{name}-%{version}.src.tar.gz
-Patch1:		easymp3gain-0.5.0-desktop.patch
-Patch3:		fix_missing_LazarusDir.diff
-Patch4:		fix_missing_overload_on_AddTask.diff
-BuildRequires:	fpc
-BuildRequires:	lazarus
-BuildRequires:	glib2-devel
-BuildRequires:	gtk2-devel
-Requires:	mp3gain
-Requires:	vorbisgain
+Name:           easymp3gain
+Version:        0.5.0
+Release:        16.1
+License:        GPLv2
+Summary:        Graphical user interface for MP3Gain, AACGain and VorbisGain (GTK2)
+Group:          Sound/Utilities
+URL:            https://easymp3gain.sourceforge.net
+Source0:        https://download.sourceforge.net/%{name}/%{name}-%{version}.src.tar.gz
+Patch1:         easymp3gain-0.5.0-desktop.patch
+Patch3:         fix_missing_LazarusDir.diff
+Patch4:         fix_missing_overload_on_AddTask.diff
+BuildRequires:  fpc
+BuildRequires:  lazarus
+BuildRequires:  glib2-devel
+BuildRequires:  gtk2-devel
+Requires:       mp3gain
+Requires:       vorbisgain
 
 %description
 easyMP3Gain is a graphical user interface for MP3Gain, AACGain and VorbisGain.
@@ -27,9 +27,9 @@ easyMP3Gain is a graphical user interface for MP3Gain, AACGain and VorbisGain.
 sed -i s/x86_64/aarch64/ easymp3gain.lpi
 %endif
 
-%patch1 -p0
-%patch3 -p1
-%patch4 -p1
+%patch 1 -p0
+%patch 3 -p1
+%patch 4 -p1
 
 %build
 %__make all

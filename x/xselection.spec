@@ -33,10 +33,10 @@ man xselection
 
 %prep
 %setup -q
-%patch0
-%patch1
-%patch2
-%patch3
+%patch 0
+%patch 1
+%patch 2
+%patch 3
 
 %build
 xmkmf -a
@@ -49,9 +49,6 @@ make DESTDIR=$RPM_BUILD_ROOT install.man
 mkdir -p $RPM_BUILD_ROOT/usr/share/man/man1
 mv $RPM_BUILD_ROOT/usr/man/man1/* $RPM_BUILD_ROOT/usr/share/man/man1
 %endif
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/%{_xorg7bin}/xselection

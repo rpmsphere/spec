@@ -22,9 +22,9 @@ ipqueue userspace library and it is very light in resource usage (cpu, ram).
 
 %prep
 %setup -q -n moblock
-%patch1
-%patch2
-%patch3
+%patch 1
+%patch 2
+%patch 3
 %__chmod 0644 COPYING
 
 %build
@@ -43,9 +43,6 @@ ipqueue userspace library and it is very light in resource usage (cpu, ram).
 %__install -d "$RPM_BUILD_ROOT/usr/sbin"
 %__ln_s "../../etc/init.d/%{name}" "$RPM_BUILD_ROOT/usr/sbin/rc%{name}"
 %__install -D -m0644 "%{SOURCE3}" "$RPM_BUILD_ROOT/var/adm/fillup-templates/sysconfig.%{name}"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc COPYING README Changelog

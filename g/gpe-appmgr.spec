@@ -19,7 +19,7 @@ a kind of start-menu.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 sed -i '/render.h/d' *.c
 sed -i 's/-lXsettings-client/-Wl,--allow-multiple-definition -lX11 -lXsettings-client/' Makefile
 
@@ -29,9 +29,6 @@ sed -i 's/-lXsettings-client/-Wl,--allow-multiple-definition -lX11 -lXsettings-c
 %install
 %__rm -rf $RPM_BUILD_ROOT
 %__make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING README todo

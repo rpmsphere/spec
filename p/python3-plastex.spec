@@ -32,9 +32,6 @@ python3 setup.py install \
    --root=$RPM_BUILD_ROOT \
    --prefix=%{_prefix}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc *.md PKG-INFO LICENSE CHANGES TODO
 %{_bindir}/*

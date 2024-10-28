@@ -22,9 +22,6 @@ make %{?_smp_mflags}
 %install
 %make_install
 
-%clean
-rm -fr %{buildroot}
-
 %files
 %{_bindir}/%{name}
 %{_mandir}/man*/*

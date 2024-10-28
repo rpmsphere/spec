@@ -44,8 +44,8 @@ So it contains pkgconfig-file, headers and some documentation.
 
 %prep
 %setup -q -n ogre-caelum-%{version}
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %build
 %cmake

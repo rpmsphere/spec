@@ -1,28 +1,28 @@
-Name:		ufoai
-Version:	2.5
-Release:	1
-Summary:	UFO: Alien Invasion
-Group:		Amusements/Games
-License:	GPLv2+
-URL:		https://ufoai.sourceforge.net/
-Source0:	https://downloads.sourceforge.net/%{name}/%{name}-%{version}-source.tar.bz2
-Source1:	%{name}.desktop
-Source2:	%{name}-ded.desktop
-Patch:		ufoai-2.2-libdir.patch
-BuildRequires:	desktop-file-utils curl-devel freealut-devel gettext
-BuildRequires:	libjpeg-devel libogg-devel libpng-devel libvorbis-devel
-BuildRequires:	libXxf86dga-devel libXxf86vm-devel SDL-devel SDL_mixer-devel
-BuildRequires:	SDL_ttf-devel
+Name:           ufoai
+Version:        2.5
+Release:        1
+Summary:        UFO: Alien Invasion
+Group:          Amusements/Games
+License:        GPLv2+
+URL:            https://ufoai.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/%{name}/%{name}-%{version}-source.tar.bz2
+Source1:        %{name}.desktop
+Source2:        %{name}-ded.desktop
+Patch0:         ufoai-2.2-libdir.patch
+BuildRequires:  desktop-file-utils curl-devel freealut-devel gettext
+BuildRequires:  libjpeg-devel libogg-devel libpng-devel libvorbis-devel
+BuildRequires:  libXxf86dga-devel libXxf86vm-devel SDL-devel SDL_mixer-devel
+BuildRequires:  SDL_ttf-devel
 BuildRequires:  gtkglext-devel gtksourceview2-devel texlive-pdfsync
-Requires:	opengl-games-utils
-Requires:	%{name}-data = %{version}
+Requires:       opengl-games-utils
+Requires:       %{name}-data = %{version}
 
 %package doc
-Summary:	UFO: Alien Invasion user manual
-Group:		Documentation
-License:	GFDL
-BuildRequires:	tetex-latex
-BuildArch:	noarch
+Summary:        UFO: Alien Invasion user manual
+Group:          Documentation
+License:        GFDL
+BuildRequires:  tetex-latex
+BuildArch:      noarch
 
 %description
 UFO: ALIEN INVASION is a strategy game featuring tactical combat
@@ -67,20 +67,20 @@ cat > %{name}-wrapper.sh <<-EOF
 checkDriOK UFO:AI
 
 exec ufo \\
-	+set fs_libdir %{_libdir}/%{name} \\
-	+set fs_basedir %{_datadir}/%{name} \\
-	+set fs_i18ndir %{_datadir}/locale \\
-	"\$@"
+        +set fs_libdir %{_libdir}/%{name} \\
+        +set fs_basedir %{_datadir}/%{name} \\
+        +set fs_i18ndir %{_datadir}/locale \\
+        "\$@"
 EOF
 
 cat > ufoded-wrapper.sh <<-EOF
 #!/bin/sh
 
 exec ufoded \\
-	+set fs_libdir %{_libdir}/%{name} \\
-	+set fs_basedir %{_datadir}/%{name} \\
-	+set fs_i18ndir %{_datadir}/locale \\
-	"\$@"
+        +set fs_libdir %{_libdir}/%{name} \\
+        +set fs_basedir %{_datadir}/%{name} \\
+        +set fs_i18ndir %{_datadir}/locale \\
+        "\$@"
 EOF
 
 # build documentation
@@ -100,28 +100,25 @@ mkdir -p -m 0755 %{buildroot}%{_datadir}/icons/hicolor/32x32/apps
 cp -p src/ports/linux/ufo.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
 cp -p src/ports/linux/ufoded.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}-ded.png
 desktop-file-install --vendor="fedora" \
-	--dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
+        --dir=%{buildroot}%{_datadir}/applications %{SOURCE1}
 desktop-file-install --vendor="fedora" \
-	--dir=%{buildroot}%{_datadir}/applications %{SOURCE2}
+        --dir=%{buildroot}%{_datadir}/applications %{SOURCE2}
 %find_lang %{name}
 # install documentation
 mkdir -p -m 0755 %{buildroot}%{_docdir}/%{name}
 cp -pr README LICENSES COPYING src/docs/tex/*.pdf \
-	%{buildroot}%{_docdir}/%{name}/
-
-%clean
-rm -rf %{buildroot}
+        %{buildroot}%{_docdir}/%{name}/
 
 %post
 touch --no-create %{_datadir}/icons/hicolor
 if [ -x %{_bindir}/gtk-update-icon-cache ]; then
-	%{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
+        %{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
 fi
 
 %postun
 touch --no-create %{_datadir}/icons/hicolor
 if [ -x %{_bindir}/gtk-update-icon-cache ]; then
-	%{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
+        %{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
 fi
 
 %files -f %{name}.lang

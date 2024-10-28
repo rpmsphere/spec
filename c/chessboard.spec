@@ -8,9 +8,9 @@ Group:          Amusements/Games
 License:        GPL
 URL:            https://arainyday.se/projects/python/%{pkg_name}/
 Source:         https://arainyday.se/projects/python/%{pkg_name}/%{pkg_name}_%{version}.tar.gz
-Source1:	%{name}.png
-Requires:	pygame
-BuildArch:	noarch
+Source1:        %{name}.png
+Requires:       pygame
+BuildArch:      noarch
 
 %description
 The main goal is to implement all applicable rules in a simple,
@@ -54,9 +54,6 @@ EOF
 cd %{_datadir}/%{name}
 python2 ChessClient.py
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.txt HowToUseChessBoard.txt

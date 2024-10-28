@@ -1,16 +1,16 @@
-Name:		libdgg
-Version:	20170121
-Release:	1
-Summary:	Dynamically generates Han glyphs
-License:	New BSD License
-Group:		System/Libraries
-Source0:	%{name}.zip
-Source1:	%{name}.png
-URL:		https://code.google.com/p/libdgg/
-BuildRequires:	java-devel
-BuildRequires:	ant
-Requires:	jre
-BuildArch:	noarch
+Name:           libdgg
+Version:        20170121
+Release:        1
+Summary:        Dynamically generates Han glyphs
+License:        New BSD License
+Group:          System/Libraries
+Source0:        %{name}.zip
+Source1:        %{name}.png
+URL:            https://code.google.com/p/libdgg/
+BuildRequires:  java-devel
+BuildRequires:  ant
+Requires:       jre
+BuildArch:      noarch
 
 %description
 It's a JAVA cross platform library also a font engine which dynamically

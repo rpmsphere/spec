@@ -1,19 +1,19 @@
 %global _default_patch_fuzz 2
 
-Summary:	A low-level event loop management library
-Name:		liboop
-Version:	1.0.1
-Release:	1
-License:	LGPL
-Group:		System/Libraries
-URL:		https://www.lysator.liu.se/liboop/
-Source0:	%{name}-%{version}.tar.gz
-Patch0:		liboop-linkage_fix.diff
+Summary:        A low-level event loop management library
+Name:           liboop
+Version:        1.0.1
+Release:        1
+License:        LGPL
+Group:          System/Libraries
+URL:            https://www.lysator.liu.se/liboop/
+Source0:        %{name}-%{version}.tar.gz
+Patch0:         liboop-linkage_fix.diff
 # Add 8.5 and 8.6 to tcl versions configure script detects - AdamW 2008/12
-Patch1:		liboop-1.0-tcl86.patch
-BuildRequires:	libtool
-BuildRequires:	automake
-BuildRequires:	tcl-devel
+Patch1:         liboop-1.0-tcl86.patch
+BuildRequires:  libtool
+BuildRequires:  automake
+BuildRequires:  tcl-devel
 
 %description
 Liboop is a low-level event loop management library for POSIX-based 
@@ -26,10 +26,10 @@ external communication, liboop can be used as the basis for almost
 any application.
 
 %package devel
-Summary:	Static library and header files for the %{name} library
-Group:		Development/C
-Requires:	%{name} = %{version}
-Provides:	%{name}-devel = %{version}-%{release}
+Summary:        Static library and header files for the %{name} library
+Group:          Development/C
+Requires:       %{name} = %{version}
+Provides:       %{name}-devel = %{version}-%{release}
 
 %description devel
 Liboop is a low-level event loop management library for POSIX-based 
@@ -43,8 +43,8 @@ any application.
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p1 -b .tcl86
+%patch 0 -p0
+%patch 1 -p1 -b .tcl86
 
 %build
 # this bit is done with automake for good reason. If you use newer
@@ -59,9 +59,6 @@ make
 %install
 rm -rf %{buildroot}
 %makeinstall
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_libdir}/*.so.*

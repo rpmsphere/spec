@@ -27,8 +27,8 @@ mouse. There is also optional sound support.
 
 %prep
 %setup -q -n %{name}-0.2.9
-%patch1 -p0
-%patch2 -p0
+%patch 1 -p0
+%patch 2 -p0
 sed -i '77,81d' configure.in
 sed -i -e 's|@QT_CXXFLAGS@|-I%{_libdir}/qt-3.3/include -DQT_THREAD_SUPPORT|' -e 's|@QT_DIR@|%{_libdir}/qt-3.3|' -e 's|@QT_LIBS@|-L%{_libdir}/qt-3.3/lib -lqt-mt -lSM -lICE  -lX11 -lXext -lXt|' -e 's|@QT_MOC@|%{_libdir}/qt-3.3/bin/moc|' -e 's|@QT_UIC@|%{_libdir}/qt-3.3/bin/uic|' Makefile.in */Makefile.in */*/Makefile.in
 

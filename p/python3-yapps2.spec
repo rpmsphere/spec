@@ -56,7 +56,7 @@ pushd ../python3
 popd
 pushd %buildroot%_bindir
 for i in $(ls); do
-	mv $i $i.py3
+        mv $i $i.py3
 done
 popd
 

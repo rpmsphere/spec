@@ -41,8 +41,8 @@ applications which will use %libname.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 sed -i 's/--mode=/--tag=CC --mode=/' Makefile
 
 %build

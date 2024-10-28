@@ -1,14 +1,14 @@
-Summary:	Pretty version of df(1) command
-Summary(pl):	Ładna wersja polecenia df(1)
-Name:		discus
-Version:	0.2.9
-Release:	2.1
-License:	GPL
-Group:		Applications/Console
-Source0:	https://www.raincrazy.com/software/discus/%{name}-%{version}.tar.gz
-URL:		https://www.raincrazy.com/software/discus/
-Requires:	python2
-BuildArch:	noarch
+Summary:        Pretty version of df(1) command
+Summary(pl):    Ładna wersja polecenia df(1)
+Name:           discus
+Version:        0.2.9
+Release:        2.1
+License:        GPL
+Group:          Applications/Console
+Source0:        https://www.raincrazy.com/software/discus/%{name}-%{version}.tar.gz
+URL:            https://www.raincrazy.com/software/discus/
+Requires:       python2
+BuildArch:      noarch
 
 %description
 Discus aims to make df prettier, with features such as color, graphs,
@@ -32,14 +32,11 @@ liczby miejsc dziesiętnych, które chciałbyś widzieć.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir},%{_mandir}/man1}
-install %{name}		$RPM_BUILD_ROOT%{_bindir}
-install %{name}rc	$RPM_BUILD_ROOT%{_sysconfdir}
-install %{name}.1	$RPM_BUILD_ROOT%{_mandir}/man1
+install %{name}         $RPM_BUILD_ROOT%{_bindir}
+install %{name}rc       $RPM_BUILD_ROOT%{_sysconfdir}
+install %{name}.1       $RPM_BUILD_ROOT%{_mandir}/man1
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS BUGS changelog README TODO

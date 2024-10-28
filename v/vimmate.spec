@@ -28,9 +28,6 @@ functionality to Vim by embedding Vim GTK GUI (gVim) within VimMate.
 %{__cp} ./bin/vimmate $RPM_BUILD_ROOT/%{_bindir}
 %{__cp} -r ./lib/vimmatelib* $RPM_BUILD_ROOT/%{_datadir}/ruby
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %doc README TODO
 %{_bindir}/vimmate

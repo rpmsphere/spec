@@ -1,20 +1,20 @@
 %undefine _debugsource_packages
 
 Name:       pidgin-lwqq
-Version:	2.0a.fix
-Release:	7.4
-License:	SuSE-Permissive
-Summary:	A pidgin plugin based on lwqq
-URL:	https://github.com/xiehuc/pidgin-lwqq
-Group:	Productivity/Networking/Instant Messenger
-Source:	%{name}-%{version}.tar.bz2
-BuildRequires:	cmake
-BuildRequires:	gcc-c++
-BuildRequires:	libcurl-devel
-BuildRequires:	libev-devel
-BuildRequires:	libpurple-devel
-BuildRequires:	sqlite-devel
-BuildRequires:	pidgin
+Version:        2.0a.fix
+Release:        7.4
+License:        SuSE-Permissive
+Summary:        A pidgin plugin based on lwqq
+URL:    https://github.com/xiehuc/pidgin-lwqq
+Group:  Productivity/Networking/Instant Messenger
+Source: %{name}-%{version}.tar.bz2
+BuildRequires:  cmake
+BuildRequires:  gcc-c++
+BuildRequires:  libcurl-devel
+BuildRequires:  libev-devel
+BuildRequires:  libpurple-devel
+BuildRequires:  sqlite-devel
+BuildRequires:  pidgin
 #BuildRequires:  empathy
 
 %description

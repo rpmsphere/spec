@@ -1,18 +1,18 @@
 Name:       serviio
-Version:	0.6.2
-Release:	22.1
-License:	Free to use
-Summary:	A free media server
-URL:		https://www.serviio.org/
-Group:		Productivity/Multimedia/Other
-Source:		%{name}-%{version}-linux.tar.gz
-Source1:	serviio.service
+Version:        0.6.2
+Release:        22.1
+License:        Free to use
+Summary:        A free media server
+URL:            https://www.serviio.org/
+Group:          Productivity/Multimedia/Other
+Source:         %{name}-%{version}-linux.tar.gz
+Source1:        serviio.service
 Patch1:     serviio_SERVIIO_HOME.patch
-BuildRequires:	tar gzip
+BuildRequires:  tar gzip
 BuildRequires: systemd
 BuildRequires: dos2unix
 Requires:   java >= 1.6.0
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 It allows you to stream your media files (music, video 
@@ -21,7 +21,7 @@ or mobile phone) on your connected home network.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 %__cp %{SOURCE1} .
 
 %build
@@ -33,8 +33,8 @@ dos2unix library/derby.properties
 chmod -x library/derby.properties
 
 for dir in config lib library plugins; do 
-	install -d $RPM_BUILD_ROOT/usr/share/java/serviio/$dir
-	%__cp $dir/* $RPM_BUILD_ROOT/usr/share/java/serviio/$dir
+        install -d $RPM_BUILD_ROOT/usr/share/java/serviio/$dir
+        %__cp $dir/* $RPM_BUILD_ROOT/usr/share/java/serviio/$dir
 done
 install -d $RPM_BUILD_ROOT/%{_datadir}/java/serviio/log
 install -D -m 644 %{S:1} $RPM_BUILD_ROOT/%{_unitdir}/serviio.service

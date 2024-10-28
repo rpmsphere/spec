@@ -1,13 +1,13 @@
-Name:		elgg
-Version:	1.8.19
-Release:	3
-Summary:	Social networking platform
-License:	GPLv2, MIT
-URL:		https://elgg.org/
-Group:		Productivity/Networking
-Source0:	https://elgg.org/download/%{name}-%{version}.zip
-BuildArch:	noarch
-Requires:	httpd, mysql, mysql-server
+Name:           elgg
+Version:        1.8.19
+Release:        3
+Summary:        Social networking platform
+License:        GPLv2, MIT
+URL:            https://elgg.org/
+Group:          Productivity/Networking
+Source0:        https://elgg.org/download/%{name}-%{version}.zip
+BuildArch:      noarch
+Requires:       httpd, mysql, mysql-server
 Requires:   php, php-gd, php-mbstring
 
 %description
@@ -25,9 +25,6 @@ mkdir -p %{buildroot}/var/www/html
 cp -a * %{buildroot}/var/www/html
 mv %{buildroot}/var/www/html/htaccess_dist %{buildroot}/var/www/html/.htaccess
 mkdir -p %{buildroot}/var/www/%{name}-data
-
-%clean
-%__rm -rf %{buildroot}
 
 %post
 #sed -i 's|^SELINUX=.*|SELINUX=disabled|' /etc/sysconfig/selinux

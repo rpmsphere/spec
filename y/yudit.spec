@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Summary:	Unicode Text Editor
-Name:		yudit
-Version:	3.1.0
-Release:	1
-License:	GPL
-Group:		Applications/Editors
-URL:		https://www.yudit.org/
-Source:		https://yudit.org/download/%{name}-%{version}.tar.gz
-BuildRequires:	gcc-c++
-BuildRequires:	libXaw-devel
+Summary:        Unicode Text Editor
+Name:           yudit
+Version:        3.1.0
+Release:        1
+License:        GPL
+Group:          Applications/Editors
+URL:            https://www.yudit.org/
+Source:         https://yudit.org/download/%{name}-%{version}.tar.gz
+BuildRequires:  gcc-c++
+BuildRequires:  libXaw-devel
 
 %description
 Yudit is a unicode text editor for  the X Window
@@ -49,9 +49,6 @@ Terminal=false
 Encoding=UTF-8
 Categories=Application;Utility;TextEditor;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.TXT doc/*.txt

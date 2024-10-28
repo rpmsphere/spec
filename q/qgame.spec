@@ -9,8 +9,8 @@ Group:          Amusements/Games
 License:        LGPL
 URL:            https://hampshire.edu/lspector/qgame.html
 Source0:        https://hampshire.edu/lspector/qgame++/%{name}-%{version}.tar.gz
-Patch0:		qgame-qgtypes.cpp-patch
-Patch1:		qgame-client.cpp-patch
+Patch0:         qgame-qgtypes.cpp-patch
+Patch1:         qgame-client.cpp-patch
 
 %description
 QGAME (Quantum Gate And Measurement Emulator) is a system, that allows a user
@@ -23,8 +23,8 @@ what outputs the quantum program would produce, and with what probabilities
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p0
+%patch 0 -p0
+%patch 1 -p0
 
 %build
 %configure
@@ -34,9 +34,6 @@ make
 %install
 %__rm -rf %{buildroot}
 DESTDIR=$RPM_BUILD_ROOT make install
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %{_bindir}/*

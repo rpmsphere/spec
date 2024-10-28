@@ -55,9 +55,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -m 0644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
-%clean
-rm -fr %buildroot
-
 %files
 %{_datadir}/%{name}
 %{_bindir}/%{name}

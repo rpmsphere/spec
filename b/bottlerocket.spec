@@ -9,7 +9,7 @@ Group:         Hardware/Other
 URL:           https://www.linuxha.com/bottlerocket/
 Source:        %{name}-current.tar.bz2
 Source1:       README.SUSE-%name
-Patch:         %{name}-destdir.patch
+Patch0:         %{name}-destdir.patch
 
 %description
 BottleRocket is a command-line interface for Unix systems to use the X-10
@@ -25,14 +25,14 @@ Authors:
 
 %prep
 %setup -q
-%patch -p1
+%patch 0 -p1
 
 %build
 cp %{SOURCE1} README.SUSE
 export CFLAGS="$RPM_OPT_FLAGS"
 ./configure \
         --prefix=/usr \
-	--with-x10port=/dev/firecracker
+        --with-x10port=/dev/firecracker
 
 CFLAGS=$RPM_OPT_FLAGS make
 
@@ -43,9 +43,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/dev
 cd $RPM_BUILD_ROOT/dev
 ln -sf ttyS0 firecracker
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README INSTALL README.SUSE

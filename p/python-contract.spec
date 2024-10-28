@@ -30,9 +30,6 @@ python2 setup.py install \
    --root="%{buildroot}" \
    --record=%{name}.files
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.files
 %{python2_sitelib}/*
 

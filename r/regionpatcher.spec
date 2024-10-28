@@ -14,7 +14,7 @@ RegionPatcher is a simple utility to patch the region codes of dvd movies.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 
 %build
 export CFLAGS="%{optflags}"

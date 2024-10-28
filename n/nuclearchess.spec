@@ -1,12 +1,12 @@
-Summary:	Chess variant that cause surronding pieces to disappear
-Name:		nuclearchess
-Version:	1.0.0
-Release:	7.1
-License:	GPLv2
-Source:		https://user.cs.tu-berlin.de/~karlb//%{name}/%{name}-%{version}.tar.gz
-Group:		Games/Boards
-URL:		https://www.linux-games.com/nuclearchess/
-BuildRequires:	SDL_image-devel
+Summary:        Chess variant that cause surronding pieces to disappear
+Name:           nuclearchess
+Version:        1.0.0
+Release:        7.1
+License:        GPLv2
+Source:         https://user.cs.tu-berlin.de/~karlb//%{name}/%{name}-%{version}.tar.gz
+Group:          Games/Boards
+URL:            https://www.linux-games.com/nuclearchess/
+BuildRequires:  SDL_image-devel
 
 %description
 NuclearChess is a chess variant. Whenever a piece is captured, both

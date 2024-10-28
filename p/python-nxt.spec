@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
-Name:		python-nxt
-Version:	2.2.2
-Release:	4.1
-Summary:	A pure-python driver/interface/wrapper for the Lego Mindstorms NXT robot
-Group:		Applications/Engineering
-License:	GPLv2+
-URL:		https://code.google.com/p/nxt-python/
-Source0:	https://nxt-python.googlecode.com/files/nxt-python-%{version}.tar.gz
-BuildArch:	noarch
-BuildRequires:	python2-devel
-Requires:	pybluez, pyusb, pygtk2
-Provides:	nxt_python, nxt-python
+Name:           python-nxt
+Version:        2.2.2
+Release:        4.1
+Summary:        A pure-python driver/interface/wrapper for the Lego Mindstorms NXT robot
+Group:          Applications/Engineering
+License:        GPLv2+
+URL:            https://code.google.com/p/nxt-python/
+Source0:        https://nxt-python.googlecode.com/files/nxt-python-%{version}.tar.gz
+BuildArch:      noarch
+BuildRequires:  python2-devel
+Requires:       pybluez, pyusb, pygtk2
+Provides:       nxt_python, nxt-python
 
 %description
 nxt-python is a python driver/interface for the Lego Mindstorms NXT robot.
@@ -29,9 +29,6 @@ python2 setup.py install --root=%{buildroot}
 #sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 
 sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE README 

@@ -54,9 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 install -Dm755 ELFIO/libELFIO.so.1 $RPM_BUILD_ROOT%{_libdir}/libELFIO.so.1
 ln -s libELFIO.so.1 $RPM_BUILD_ROOT%{_libdir}/libELFIO.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig

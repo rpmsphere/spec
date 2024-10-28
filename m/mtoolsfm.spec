@@ -8,8 +8,8 @@ Release: 7.1
 License: GPL
 Group: X11/Utilities
 URL: https://mtoolsfm.sourceforge.net/
-Requires:	mtools
-BuildRequires:	gtk+-devel
+Requires:       mtools
+BuildRequires:  gtk+-devel
 Source: https://downloads.sourceforge.net/mtoolsfm/%{_name}-%{version}.tar.gz
 
 %description
@@ -44,9 +44,6 @@ EOF
 # install icons
 install -d %{buildroot}%{_datadir}/pixmaps
 install -m 644 %{_name}*.png %{_name}*.xpm %{buildroot}%{_datadir}/pixmaps
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc COPYING ChangeLog AUTHORS NEWS README THANKS

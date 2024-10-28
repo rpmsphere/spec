@@ -30,9 +30,6 @@ chmod +x %{buildroot}%{_libdir}/libb.so*
 mv %{buildroot}%{_bindir}/br %{buildroot}%{_bindir}/brace_br
 mv %{buildroot}%{_bindir}/vib %{buildroot}%{_bindir}/vibrace
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc copyright !README Changelog Todo Bugs
 %{_bindir}/*

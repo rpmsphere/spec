@@ -1,22 +1,22 @@
 %define oname   Qemulator
 
-Summary:	Interface to configure and launch Qemu
-Name:		qemulator
-Version:	0.5
-Release:	1
-License:	GPL
-Group:		Emulators
-URL:		https://qemulator.createweb.de/
-Source0:	https://qemulator.createweb.de/%{oname}-%{version}.tar.gz
+Summary:        Interface to configure and launch Qemu
+Name:           qemulator
+Version:        0.5
+Release:        1
+License:        GPL
+Group:          Emulators
+URL:            https://qemulator.createweb.de/
+Source0:        https://qemulator.createweb.de/%{oname}-%{version}.tar.gz
 Source1:        %{name}.desktop
 Patch0:         fix_python_dir.patch
-BuildArch:	noarch
+BuildArch:      noarch
 Requires:       python2
 Requires:       pygtk2
 Requires:       libglade2
 Requires:       gnome-python2
 Requires:       qemu
-Requires:	pygtk2-libglade
+Requires:       pygtk2-libglade
 
 %description
 A launcher for Qemu that manages Qemu configs and creates disk images
@@ -30,7 +30,7 @@ Only supports the x86 PC emulator part of Qemu.
 %prep
 %setup -q -n %{oname}-%{version}
 
-%patch0 -p1
+%patch 0 -p1
 
 %build
 
@@ -65,9 +65,6 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 %postun
 update-mime-database %{_datadir}/mime &> /dev/null
 update-desktop-database %{_datadir}/applications &> /dev/null
-
-%clean
-%__rm -rf %buildroot
 
 %files
 %{_bindir}/*

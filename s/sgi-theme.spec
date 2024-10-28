@@ -37,9 +37,6 @@ sed -i 's|CursorTheme=default|CursorTheme=sgi|' $RPM_BUILD_ROOT%{_datadir}/theme
 sed -i '11i BackgroundImage=/usr/share/icons/sgi/sgi.png' $RPM_BUILD_ROOT%{_datadir}/themes/SGI-IMD/index.theme
 sed -i 's|MetacityTheme=SGI-IMD|MetacityTheme=Iris|' $RPM_BUILD_ROOT%{_datadir}/themes/SGI-IMD/index.theme
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/*
 %{_datadir}/icons/*

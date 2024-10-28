@@ -24,9 +24,6 @@ make mdt
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%clean 
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 %doc README* Changelog COPYING

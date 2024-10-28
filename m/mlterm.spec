@@ -1,11 +1,11 @@
 %global __os_install_post %{nil}
 
 Summary:     Multi Lingual TERMinal emulator on X
-Name:	     mlterm
+Name:        mlterm
 Version:     3.9.3
 Release:     1
 License:     Modified BSD-style license
-Group:	     User Interface/X
+Group:       User Interface/X
 URL:         https://mlterm.sourceforge.net/
 Source0:     https://prdownloads.sourceforge.net/mlterm/mlterm-%{version}.tar.gz
 BuildRequires: gtk2-devel
@@ -27,14 +27,14 @@ You can dynamically change various xims.
 %build
 CFLAGS="$RPM_OPT_FLAGS" \
 ./configure --prefix=%{_prefix} \
-	    --bindir=%{_bindir} \
-	    --libdir=%{_libdir} \
-	    --mandir=%{_mandir} \
-	    --libexecdir=%{_libexecdir} \
-	    --datadir=%{_datadir} \
-	    --sysconfdir=%{_sysconfdir} \
+            --bindir=%{_bindir} \
+            --libdir=%{_libdir} \
+            --mandir=%{_mandir} \
+            --libexecdir=%{_libexecdir} \
+            --datadir=%{_datadir} \
+            --sysconfdir=%{_sysconfdir} \
             --with-type-engines=xcore,xft,cairo \
-	    --with-imagelib=gdk-pixbuf2
+            --with-imagelib=gdk-pixbuf2
 make
 
 %install
@@ -44,9 +44,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 install -m 644 $RPM_BUILD_DIR/%{name}-%{version}/doc/icon/mlterm* \
                $RPM_BUILD_ROOT%{_datadir}/pixmaps
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog LICENCE README doc/{en,ja}

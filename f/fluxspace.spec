@@ -52,9 +52,6 @@ rm -r %{buildroot}%{_datadir}/fluxspace
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS COPYING BUGS NEWS README TODO INSTALL examples/fluxspace.xml
 %{_bindir}/*

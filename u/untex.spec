@@ -25,9 +25,6 @@ rm -rf $RPM_BUILD_ROOT
 install -D -m 755 untex $RPM_BUILD_ROOT%{_bindir}/untex
 install -D -m 644 untex.man $RPM_BUILD_ROOT%{_mandir}/man1/untex.1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/untex
 %{_mandir}/man1/untex.*

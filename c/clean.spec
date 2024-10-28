@@ -19,7 +19,7 @@ library. This is a bootstrap package for 64-bit intel architecture.
 
 %prep
 %setup -q
-%patch0 -p2
+%patch 0 -p2
 
 %build
 ./clean-base/linux-x64/build.sh clean-base linux x64

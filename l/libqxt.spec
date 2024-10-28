@@ -1,30 +1,30 @@
-Name:		libqxt
-Version:	0.6.2
-Release:	16
-Summary:	Qt extension library
-Group:		System Environment/Libraries
-License:	CPL or LGPLv2
-URL:		https://bitbucket.org/libqxt/libqxt/wiki/Home
-Source0:	https://bitbucket.org/libqxt/libqxt/get/v%{version}.tar.bz2
+Name:           libqxt
+Version:        0.6.2
+Release:        16
+Summary:        Qt extension library
+Group:          System Environment/Libraries
+License:        CPL or LGPLv2
+URL:            https://bitbucket.org/libqxt/libqxt/wiki/Home
+Source0:        https://bitbucket.org/libqxt/libqxt/get/v%{version}.tar.bz2
 # Fix DSO linking
-Patch0:		libqxt-linking.patch
+Patch0:         libqxt-linking.patch
 # To support multimedia keys when using clementine
 # Patch sent to upstream. They want to reimplement it more cleanly.
 # We will use this patch until upstream reimplements it.
 # https://dev.libqxt.org/libqxt/issue/75
-Patch1:		libqxt-media-keys.patch
+Patch1:         libqxt-media-keys.patch
 # Fix wrong header includes RHBZ#733222
 # https://dev.libqxt.org/libqxt/issue/112/wrong-include-in-qxtnetworkh
-Patch2:		libqxt-header-fix.patch
+Patch2:         libqxt-header-fix.patch
 # Fix build with GCC 6
 # https://bugzilla.redhat.com/show_bug.cgi?id=1305223
-Patch3:		libqxt-gcc6.patch
-BuildRequires:	avahi-compat-libdns_sd-devel
-BuildRequires:	avahi-devel
-BuildRequires:	libdb-devel
-BuildRequires:	libXrandr-devel
-BuildRequires:	openssl-devel
-BuildRequires:	qt4-devel
+Patch3:         libqxt-gcc6.patch
+BuildRequires:  avahi-compat-libdns_sd-devel
+BuildRequires:  avahi-devel
+BuildRequires:  libdb-devel
+BuildRequires:  libXrandr-devel
+BuildRequires:  openssl-devel
+BuildRequires:  qt4-devel
 
 %{?_qt4_version:Requires: qt4%{?_isa} >= %{_qt4_version}}
 
@@ -32,25 +32,25 @@ BuildRequires:	qt4-devel
 LibQxt, an extension library for Qt, provides a suite of cross-platform
 utility classes to add functionality not readily available in the Qt toolkit.
 
-%package	devel
-Summary:	Development files for %{name}
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
-Requires:	avahi-compat-libdns_sd-devel
-Requires:	avahi-devel
-#Requires:	db4-devel
-Requires:	qt4-devel
+%package        devel
+Summary:        Development files for %{name}
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
+Requires:       avahi-compat-libdns_sd-devel
+Requires:       avahi-devel
+#Requires:      db4-devel
+Requires:       qt4-devel
 
-%description	devel
+%description    devel
 This package contains libraries and header files for developing applications
 that use LibQxt.
 
 %prep
 %setup -q -n %{name}-%{name}-v%{version}
-%patch0 -p1 -b .linking
-%patch1 -p1 -b .mediakeys
-%patch2 -p1 -b .includes
-%patch3 -p1 -b .gcc6
+%patch 0 -p1 -b .linking
+%patch 1 -p1 -b .mediakeys
+%patch 2 -p1 -b .includes
+%patch 3 -p1 -b .gcc6
 
 # We don't want rpath
 sed -i '/RPATH/d' src/qxtlibs.pri
@@ -58,9 +58,9 @@ sed -i '/RPATH/d' src/qxtlibs.pri
 %build
 # Does not use GNU configure
 ./configure -verbose \
-	    -qmake-bin %{_qt4_qmake} \
-	    -prefix %{_prefix} \
-	    -libdir %{_libdir}
+            -qmake-bin %{_qt4_qmake} \
+            -prefix %{_prefix} \
+            -libdir %{_libdir}
 # manually running qmake here may end up being fragile, if so,
 # introducing a qmake wrapper is the next best thing -- rex
 %{qmake_qt4} -r

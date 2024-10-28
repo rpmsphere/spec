@@ -1,6 +1,6 @@
 Name:           brightside
 Version:        1.4.0
-Release: 	    24.4
+Release:            24.4
 Summary:        Add reactivity to the corners and edges of your GNOME desktop
 Group:          Applications/Productivity
 License:        GPL
@@ -8,9 +8,9 @@ URL:            https://catmur.co.uk/~ed/main/brightside/
 Source0:        https://home.jesus.ox.ac.uk/~ecatmur/brightside/download/brightside-1.4.0.tar.bz2
 Patch0:         %{name}-gconf-mouse-speed.patch
 Patch1:         %{name}-libwnck.patch
-Patch2:		%{name}-Makefile.patch
-Patch3:		%{name}-desktop.patch
-Patch4:		%{name}-2ce4295c0dadf7e562dfa6266315bae7ed18b9f8.diff
+Patch2:         %{name}-Makefile.patch
+Patch3:         %{name}-desktop.patch
+Patch4:         %{name}-2ce4295c0dadf7e562dfa6266315bae7ed18b9f8.diff
 Requires(pre):  GConf2
 Requires(post): GConf2
 BuildRequires:  intltool
@@ -18,8 +18,8 @@ BuildRequires:  gettext, libX11-devel
 BuildRequires:  libwnck-devel >= 2.6.0
 BuildRequires:  libgnomeui-devel >= 2.6.0
 BuildRequires:  libglade2-devel >= 2.2.0
-BuildRequires:	desktop-file-utils
-BuildRequires:	w3m udisks2
+BuildRequires:  desktop-file-utils
+BuildRequires:  w3m udisks2
 
 %description
 Brightside provides "edge flipping" to allow you to switch to the adjacent
@@ -30,11 +30,11 @@ occur while you rest the mouse in a corner of the screen.
 
 %prep
 %setup -q
-%patch0 -b .patch0
-%patch1 -b .libwnck
-%patch2 -b .X11
-%patch3 -b .desktop
-%patch4 -p1 -b .several
+%patch 0 -b .patch0
+%patch 1 -b .libwnck
+%patch 2 -b .X11
+%patch 3 -b .desktop
+%patch 4 -p1 -b .several
 
 %build
 %configure
@@ -56,9 +56,6 @@ desktop-file-install --vendor ""                       \
 
 rm -f $RPM_BUILD_ROOT%{_infodir}/dir
 find $RPM_BUILD_ROOT -type f -name "*.la" -exec rm -f {} ';'
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 # For GConf apps: install schemas as system default

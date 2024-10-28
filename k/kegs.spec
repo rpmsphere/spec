@@ -13,7 +13,7 @@ Requires ROM and disk images to work.
 
 %prep
 %setup -q -n %name.%version
-%patch0 -p0
+%patch 0 -p0
 
 %build
 # build section

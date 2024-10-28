@@ -19,7 +19,7 @@ times.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 xmkmf
@@ -33,9 +33,6 @@ install -Dm644 resources/Xaw/EmiClock.ad $RPM_BUILD_ROOT%{_datadir}/X11/app-defa
 install -Dm644 resources/R6/EUC/EmiClock.ad $RPM_BUILD_ROOT%{_datadir}/X11/ja_JP.ujis/app-defaults/EmiClock
 install -Dm644 sounds/myu.au $RPM_BUILD_ROOT%{_prefix}/lib/EmiClock/myu.au
 install -Dm644 emiclock._man $RPM_BUILD_ROOT%{_mandir}/man1/emiclock.1
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc 00.README COPYRIGHT COPYRIGHT.en ChangeLog INSTALL.ja MANIFEST README.ja doc/README-OS.ja doc/TECH-NOTE.ja doc/Original/README.mac.ja doc/Original/README.win.ja 

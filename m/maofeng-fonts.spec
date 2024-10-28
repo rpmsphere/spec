@@ -1,4 +1,4 @@
-%define	_name	mffont
+%define _name   mffont
 %define fontdir %{_datadir}/fonts/maofeng
 
 Summary: MaoFeng TrueType Fonts

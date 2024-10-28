@@ -1,15 +1,15 @@
 %global _name samtools
 
-Name:		samtools1
-Version:	1.3.1
-Release:	3.1
-Summary:	Tools for nucleotide sequence alignments in the SAM format
-Group:		Applications/Engineering
-License:	MIT
-URL:		https://samtools.sourceforge.net/
-Source0:	https://downloads.sourceforge.net/%{_name}/%{_name}-%{version}.tar.bz2
-BuildRequires:	zlib-devel
-BuildRequires:	ncurses-devel
+Name:           samtools1
+Version:        1.3.1
+Release:        3.1
+Summary:        Tools for nucleotide sequence alignments in the SAM format
+Group:          Applications/Engineering
+License:        MIT
+URL:            https://samtools.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/%{_name}/%{_name}-%{version}.tar.bz2
+BuildRequires:  zlib-devel
+BuildRequires:  ncurses-devel
 Conflicts: %{_name}
 
 %description
@@ -31,9 +31,6 @@ rm -rf %{buildroot}
 %make_install
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog.old LICENSE NEWS README

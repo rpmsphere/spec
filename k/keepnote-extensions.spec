@@ -34,8 +34,11 @@ The package includes:
 
 %install
 install -dm 0755 $RPM_BUILD_ROOT%{python2_sitelib}/keepnote/extensions
-unzip -q "%{_sourcedir}/*.kne" -d \
-    $RPM_BUILD_ROOT%{python2_sitelib}/keepnote/extensions
+unzip -q %{SOURCE0} -d $RPM_BUILD_ROOT%{python2_sitelib}/keepnote/extensions
+unzip -q %{SOURCE1} -d $RPM_BUILD_ROOT%{python2_sitelib}/keepnote/extensions
+unzip -q %{SOURCE2} -d $RPM_BUILD_ROOT%{python2_sitelib}/keepnote/extensions
+unzip -q %{SOURCE3} -d $RPM_BUILD_ROOT%{python2_sitelib}/keepnote/extensions
+unzip -q %{SOURCE4} -d $RPM_BUILD_ROOT%{python2_sitelib}/keepnote/extensions
 # Remove backup file.
 rm -f \
     $RPM_BUILD_ROOT%{python2_sitelib}/keepnote/extensions/import_basket/#__init__.py#

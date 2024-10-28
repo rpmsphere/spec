@@ -44,13 +44,10 @@ mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT/usr/lib64
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/X11/xorg.conf.d
 cat > $RPM_BUILD_ROOT%{_datadir}/X11/xorg.conf.d/10-via.conf <<EOF
 Section "Device"
-	Identifier "Card0"
-	Driver "via"
+        Identifier "Card0"
+        Driver "via"
 EndSection
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc Readme

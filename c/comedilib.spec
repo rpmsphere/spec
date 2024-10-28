@@ -1,17 +1,17 @@
-Name:		comedilib
-Version:	0.12.0
-Release:	1
-Summary:	Data Acquisition library for the Comedi driver
-License:	LGPLv2
-URL:		https://www.comedi.org/
-Source:		https://www.comedi.org/download/%{name}-%{version}.tar.gz
+Name:           comedilib
+Version:        0.12.0
+Release:        1
+Summary:        Data Acquisition library for the Comedi driver
+License:        LGPLv2
+URL:            https://www.comedi.org/
+Source:         https://www.comedi.org/download/%{name}-%{version}.tar.gz
 BuildRequires:  gcc automake
 BuildRequires:  python2-devel
-BuildRequires:	docbook-utils
-BuildRequires:	swig
-BuildRequires:	flex
-BuildRequires:	xmlto
-Requires:	flex
+BuildRequires:  docbook-utils
+BuildRequires:  swig
+BuildRequires:  flex
+BuildRequires:  xmlto
+Requires:       flex
 
 %description
 Comedilib is a user-space library that provides a developer-friendly
@@ -20,8 +20,8 @@ is documentation, configuration and calibration utilities,
 and demonstration programs.
 
 %package devel
-Summary:	Libraries/include files for Comedi
-Requires:	%{name}%{?_isa} = %{version}-%{release}
+Summary:        Libraries/include files for Comedi
+Requires:       %{name}%{?_isa} = %{version}-%{release}
 
 %description devel
 Comedilib is a library for using Comedi, a driver interface for data

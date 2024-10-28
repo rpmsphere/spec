@@ -1,11 +1,11 @@
-Name:		rman
-Version:	3.2 
-Release:	10.1
-Summary:	Converts man pages to various other formats
-Group:		System Environment/Base
-License:	Artistic
-URL:		https://sourceforge.net/projects/polyglotman
-Source0:	https://easynews.dl.sourceforge.net/sourceforge/polyglotman/%{name}-%{version}.tar.gz
+Name:           rman
+Version:        3.2 
+Release:        10.1
+Summary:        Converts man pages to various other formats
+Group:          System Environment/Base
+License:        Artistic
+URL:            https://sourceforge.net/projects/polyglotman
+Source0:        https://easynews.dl.sourceforge.net/sourceforge/polyglotman/%{name}-%{version}.tar.gz
 
 %description
 Parse formatted man pages and man page source from most flavors of UNIX.
@@ -31,9 +31,6 @@ install -d -m755 %{buildroot}%{_bindir}
 install -d -m755 %{buildroot}%{_mandir}/man1
 install -m755 rman %{buildroot}%{_bindir}/
 install -m644 rman.1 %{buildroot}%{_mandir}/man1/
-
-%clean
-rm -rf %buildroot
 
 %files
 %doc CHANGES README-rman.txt rman.html contrib

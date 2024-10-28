@@ -31,7 +31,7 @@ mandvd is a tool to generate VideoDVD.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 sed -i '1i #include <unistd.h>' main.cpp mandvd.cpp
 
 %build
@@ -46,9 +46,6 @@ install -D -m 644 mandvd.desktop $RPM_BUILD_ROOT%{_datadir}/applications/mandvd.
 install -D -m 644 mandvdico.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/mandvd.png
 install -D -m 644 mandvdSplash.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/mandvdSplash.png
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc COPYING TODO
 %{_bindir}/mandvd
@@ -57,7 +54,7 @@ rm -rf "$RPM_BUILD_ROOT"
 %{_datadir}/pixmaps/mandvdSplash.png
 
 %changelog
-* Tue Jun 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
+* Wed Jun 22 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
 - Rebuilt for Fedora
 * Thu May 13 2010 Stefano Cotta Ramusino <stefano.cotta@openmamba.org> 2.6-1mamba
 - update to 2.6

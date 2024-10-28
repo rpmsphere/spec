@@ -1,16 +1,16 @@
-Summary:	A GTK front-end for CUPS
-Name:		gtklp
-Version:	1.3.4
-Release:	1
-License:	GPLv2+
-Group:		System/Printing
-Source0:	https://prdownloads.sourceforge.net/gtklp/%{name}-%{version}.src.tar.gz
-URL:		https://gtklp.sourceforge.net/
-Source1:	gtklp.png
-Patch1:		gtklp-1.2.5-mdv-fix-str-fmt.patch
-BuildRequires:	gtk2-devel
-BuildRequires:	cups-devel
-Requires:	cups
+Summary:        A GTK front-end for CUPS
+Name:           gtklp
+Version:        1.3.4
+Release:        1
+License:        GPLv2+
+Group:          System/Printing
+Source0:        https://prdownloads.sourceforge.net/gtklp/%{name}-%{version}.src.tar.gz
+URL:            https://gtklp.sourceforge.net/
+Source1:        gtklp.png
+Patch1:         gtklp-1.2.5-mdv-fix-str-fmt.patch
+BuildRequires:  gtk2-devel
+BuildRequires:  cups-devel
+Requires:       cups
 
 %description
 A GTK front-end for CUPS.
@@ -19,8 +19,8 @@ A GTK front-end for CUPS.
 %setup -q
 #patch1 -p1 -b .strfmt
 sed -e '/DEF_BROWSER_CMD/{s:netscape:firefox:}' \
-	-e '/DEF_HELP_HOME/{s:631/sum.html#STANDARD_OPTIONS:631/help/:}' \
-	-i include/defaults.h
+        -e '/DEF_HELP_HOME/{s:631/sum.html#STANDARD_OPTIONS:631/help/:}' \
+        -i include/defaults.h
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition

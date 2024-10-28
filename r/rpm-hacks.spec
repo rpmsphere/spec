@@ -1,15 +1,15 @@
-Name:		rpm-hacks
-Version:	2022.10
-Release:	1
-Summary:	RPM hacks utilities
-Group:		Applications/Engineering
-License:	MIT License
-Source0:	%{name}-%{version}.tar.gz
-Requires:	dpkg
-Requires:	funionfs
-Requires:	fakechroot
-Requires:	fuse
-BuildArch:	noarch
+Name:           rpm-hacks
+Version:        2022.10
+Release:        1
+Summary:        RPM hacks utilities
+Group:          Applications/Engineering
+License:        MIT License
+Source0:        %{name}-%{version}.tar.gz
+Requires:       dpkg
+Requires:       funionfs
+Requires:       fakechroot
+Requires:       fuse
+BuildArch:      noarch
 
 %description
 These are useful shell scripts for making or modifying RPM packages:
@@ -29,9 +29,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
    
-%clean 
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %{_bindir}/*

@@ -1,24 +1,24 @@
 %undefine _debugsource_packages
 
-Summary:	Touchpad service for KDE 4
-Name:		synaptiks
-Version:	0.8.1
-Release:	12.4
-Source0:	https://pypi.python.org/packages/source/s/synaptiks/synaptiks-%{version}.tar.bz2
-License:	BSD
-Group:		System/Configuration/Hardware
-URL:		https://synaptiks.lunaryorn.de/
-BuildRequires:	python2
-BuildRequires:	python2-setuptools
-BuildRequires:	kdelibs-devel
-BuildRequires:	qca2 udisks2
-Requires:	pykde4
-Requires:	python-qt4
-Requires:	python-pyudev
-Requires:	libXi
-Requires:	libXtst
-Requires:	dbus-python
-BuildArch:	noarch
+Summary:        Touchpad service for KDE 4
+Name:           synaptiks
+Version:        0.8.1
+Release:        12.4
+Source0:        https://pypi.python.org/packages/source/s/synaptiks/synaptiks-%{version}.tar.bz2
+License:        BSD
+Group:          System/Configuration/Hardware
+URL:            https://synaptiks.lunaryorn.de/
+BuildRequires:  python2
+BuildRequires:  python2-setuptools
+BuildRequires:  kdelibs-devel
+BuildRequires:  qca2 udisks2
+Requires:       pykde4
+Requires:       python-qt4
+Requires:       python-pyudev
+Requires:       libXi
+Requires:       libXtst
+Requires:       dbus-python
+BuildArch:      noarch
 
 %description
 Synaptiks is a touchpad management service for KDE. It provides a simple
@@ -40,9 +40,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 install -d %{buildroot}%{_datadir}/pixmaps
 mv %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/synaptiks.svgz %{buildroot}%{_datadir}/pixmaps/synaptiks.svg.gz
 gunzip %{buildroot}%{_datadir}/pixmaps/synaptiks.svg.gz
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_sysconfdir}/xdg/autostart/*.desktop

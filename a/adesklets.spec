@@ -7,11 +7,12 @@ License:        GPL
 URL:            https://adesklets.sourceforge.net/
 Source0:        %{name}-%{version}.tar.bz2
 Group:          Development/Tools
-Requires:	tkinter
+Requires:       tkinter
 BuildRequires:  imlib2-devel python2-devel
 BuildRequires:  ncurses-devel
 BuildRequires:  readline-devel
-Patch1:		adesklets-fontconfig24-crashfix.patch
+Patch1:         adesklets-fontconfig24-crashfix.patch
+Source1:        imlib2-config
 
 %description
 adesklets is an interactive Imlib2 console for the X Window system. It provides
@@ -20,15 +21,17 @@ interactive desktop integrated graphic applets (aka "desklets").
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 sed -i 's|PKGDATADIR|"%{_datadir}/%{name}"|' src/main.c
+cp %{SOURCE1} .
 
 %build
+export PATH=$PATH:.
 %configure
 pushd scripting/perl/
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 popd
-%__make LIBS="-lm -lX11 -lImlib2 -lncurses -lreadline -lhistory -lfontconfig -lfreetype" CFLAGS+=-Wno-format-security
+%__make LIBS="-lm -lX11 -lImlib2 -lncurses -lreadline -lhistory -lfontconfig -lfreetype" CFLAGS+="-Wno-format-security -Wno-incompatible-pointer-types"
 
 %install
 rm -rf %{buildroot}
@@ -37,9 +40,6 @@ mkdir -p %{buildroot}%{_infodir}
 %__make DESTDIR=%buildroot install
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}_*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README ChangeLog NEWS INSTALL COPYING AUTHORS 

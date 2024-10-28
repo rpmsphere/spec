@@ -25,9 +25,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/input-events
 %{_bindir}/input-kbd

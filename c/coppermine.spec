@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
-BuildArch:	noarch
+
+BuildArch:      noarch
 Name:           coppermine
 Group:          Applications/Publishing
 BuildRequires:  httpd-devel, fedora-logos-httpd
 Requires:       php >= 4.2.0 httpd php-mysql mysql ImageMagick
 Version:        1.5.24
 Release:        5.1
-%define	apxs	/usr/bin/apxs
-%define	apache_libexecdir	%(%{apxs} -q LIBEXECDIR)
-%define	apache_sysconfdir	%(%{apxs} -q SYSCONFDIR)
+%define apache_libexecdir       %{_libdir}/httpd/modules
+%define apache_sysconfdir       /etc/httpd/conf
 %define coppermine_dir /var/www/%{name}
 URL:            https://coppermine-gallery.net/
 Summary:        Multi-purpose fully-featured and integrated web picture gallery

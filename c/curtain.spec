@@ -1,18 +1,18 @@
-Name:		curtain
-Version:	0.3
-Release:	6.1
-License:	GPLv3
-Group:		Education
-URL:		https://code.google.com/p/ardesia
-Source:		https://ardesia.googlecode.com/files/%{name}-%{version}.tar.gz
-Patch0:		%{name}-desktop-file.patch
-Patch1:		%{name}-0.3-gtk3tests.patch
-Summary:	Show a movable and resizable curtain on the desktop screen
-BuildRequires:	intltool
-BuildRequires:	libtool
-BuildRequires:	glib2-devel
-BuildRequires:	gtk3-devel
-BuildRequires:	desktop-file-utils
+Name:           curtain
+Version:        0.3
+Release:        6.1
+License:        GPLv3
+Group:          Education
+URL:            https://code.google.com/p/ardesia
+Source:         https://ardesia.googlecode.com/files/%{name}-%{version}.tar.gz
+Patch0:         %{name}-desktop-file.patch
+Patch1:         %{name}-0.3-gtk3tests.patch
+Summary:        Show a movable and resizable curtain on the desktop screen
+BuildRequires:  intltool
+BuildRequires:  libtool
+BuildRequires:  glib2-devel
+BuildRequires:  gtk3-devel
+BuildRequires:  desktop-file-utils
 
 %description
 Curtain is a tool that show a movable and resizable curtain
@@ -23,8 +23,8 @@ This program has been implemented for educational purposes.
 
 %prep
 %setup -q
-%patch0
-%patch1 -p1 -b .gtk3tests
+%patch 0
+%patch 1 -p1 -b .gtk3tests
 
 %build
 ./autogen.sh

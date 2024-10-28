@@ -30,9 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 make prefix=$RPM_BUILD_ROOT/usr install
 mv $RPM_BUILD_ROOT/usr/doc $RPM_BUILD_ROOT/usr/share/doc
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README
 %{_bindir}/*

@@ -5,7 +5,7 @@ Release: 6.1
 License: GPL
 Group: Applications/Editors
 Source: https://ftp.de.debian.org/debian/pool/main/q/qe/%{name}_%{version}.orig.tar.gz
-Patch: https://ftp.de.debian.org/debian/pool/main/q/qe/%{name}_%{version}-4.diff.gz
+Patch0: https://ftp.de.debian.org/debian/pool/main/q/qe/%{name}_%{version}-4.diff.gz
 URL: https://www.cc.ncu.edu.tw/~center5/product/qe/
 BuildRequires: gcc-c++, ncurses
 
@@ -17,7 +17,7 @@ macro capable editor.
 
 %prep
 %setup -q
-%patch -p1
+%patch 0 -p1
 sed -i 's/color_xterm/xterm-color/' src/main.cc
 sed -i '/basename/d' src/misc.h
 #msgconv -t UTF-8 -o src/po/zh_TW.UTF-8.po src/po/zh_TW.po
@@ -31,9 +31,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall rootdir=$RPM_BUILD_ROOT
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc COPYING README

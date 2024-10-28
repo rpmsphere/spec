@@ -1,19 +1,19 @@
 %undefine _debugsource_packages
 
-Name:		roadmap
-Version:	1.2.1
-Release:	1
-Group:		Sciences/Geosciences
-License:	GPL
-Summary:	GPS Tracker
-URL:		https://roadmap.sourceforge.net/download.html
-Source0:	https://downloads.sourceforge.net/roadmap/%{name}-%{version}-src.tar.gz
-Source1:	https://downloads.sourceforge.net/roadmap/roadmap-1.2.0-wince-arm.cab
-Source2:	demo_maps.tar.gz
-Patch2:		roadmap-1.2.1-fix-paths.patch
-Requires:	gpsd
-BuildRequires:	shapelib-devel 
-BuildRequires:	expat-devel
+Name:           roadmap
+Version:        1.2.1
+Release:        1
+Group:          Sciences/Geosciences
+License:        GPL
+Summary:        GPS Tracker
+URL:            https://roadmap.sourceforge.net/download.html
+Source0:        https://downloads.sourceforge.net/roadmap/%{name}-%{version}-src.tar.gz
+Source1:        https://downloads.sourceforge.net/roadmap/roadmap-1.2.0-wince-arm.cab
+Source2:        demo_maps.tar.gz
+Patch2:         roadmap-1.2.1-fix-paths.patch
+Requires:       gpsd
+BuildRequires:  shapelib-devel 
+BuildRequires:  expat-devel
 BuildRequires:  gtk2-devel
 BuildRequires:  popt-devel
 
@@ -25,7 +25,7 @@ RoadMap can run on iPAQ and Zaurus.
 
 %prep
 %setup -q
-%patch2 -p1 -b .paths
+%patch 2 -p1 -b .paths
 sed -i 's/VectorGraphics;Graphics;Viewer;/Utility;Geography;/' src/%{name}.desktop
 tar zxvf %{SOURCE2}
 
@@ -50,9 +50,6 @@ install -m644 src/icons/roadmap-32.png -D %{buildroot}%{_datadir}/icons/%{name}.
 install -m644 src/icons/roadmap-48.png -D %{buildroot}%{_datadir}/icons/large/%{name}.png
 
 cp demo_maps/* %{buildroot}%{_datadir}/%{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README

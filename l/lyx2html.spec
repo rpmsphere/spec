@@ -27,9 +27,6 @@ mkdir -p $RPM_BUILD_ROOT%{_mandir}/man1
 install -m755 lyx2html $RPM_BUILD_ROOT%{_bindir}
 install -m644 lyx2html.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CHANGES COPYING README
 %{_bindir}/lyx2html

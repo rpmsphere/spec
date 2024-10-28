@@ -30,13 +30,13 @@ par-checking, un-raring, etc. is done automatically by hellanzb.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 sed --in-place 's|\*DOCDIR\*|%{_docdir}|' Hellanzb/Core.py
 sed --in-place 's|\*PKGNAME\*|%{name}|'   Hellanzb/Core.py
-%patch1
-%patch2
-%patch3
-%patch4 -p1 -b .twisted 
+%patch 1
+%patch 2
+%patch 3
+%patch 4 -p1 -b .twisted 
 
 %build
 python2 -c 'import setuptools; execfile("setup.py")' build

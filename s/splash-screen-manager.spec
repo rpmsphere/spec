@@ -28,9 +28,6 @@ sed -i 's|gksudo ||' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/pixmaps/%{name}.png

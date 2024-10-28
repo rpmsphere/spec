@@ -20,7 +20,7 @@ feed that can be browsable without any need for plugin, java etc.
 
 %prep
 %setup -q -n %{name}_%{version}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure

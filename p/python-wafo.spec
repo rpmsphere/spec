@@ -48,9 +48,6 @@ Statistics
 rm -rf $RPM_BUILD_ROOT
 %{__python} setup.py install -O1 --skip-build --prefix=/usr --root $RPM_BUILD_ROOT
  
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{python_sitelib}/*
 

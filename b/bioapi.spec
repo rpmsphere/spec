@@ -59,7 +59,7 @@ This package contains static libraries and header files need for libbioapi-qt.
 
 %prep
 %setup -q -n %{name}-linux
-%patch0 -p1
+%patch 0 -p1
 ln -sf /usr/share/automake-1.1?/config.guess config.guess
 ln -sf /usr/share/automake-1.1?/config.sub config.sub
 sed -i '26060,26163d' configure
@@ -71,9 +71,6 @@ make
 %install
 rm -rf "$RPM_BUILD_ROOT"
 %makeinstall
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %{_bindir}/BioAPITest

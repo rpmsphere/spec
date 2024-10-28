@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
-Name:		drpython
-Summary: 	Python editor and development environment
-Version: 	3.11.1
-#Version: 	3.11.4
-Release: 	8.1
-Source:		https://prdownloads.sourceforge.net/drpython/%{name}-%{version}.zip
-URL:		https://drpython.sourceforge.net/
-License:	GPLv2
-Group:		Development/Python
-Requires:	python2-wxpython
-BuildRequires:	python2-setuptools
-BuildRequires:	python2-devel
-BuildArch:	noarch
+Name:           drpython
+Summary:        Python editor and development environment
+Version:        3.11.1
+#Version:       3.11.4
+Release:        8.1
+Source:         https://prdownloads.sourceforge.net/drpython/%{name}-%{version}.zip
+URL:            https://drpython.sourceforge.net/
+License:        GPLv2
+Group:          Development/Python
+Requires:       python2-wxpython
+BuildRequires:  python2-setuptools
+BuildRequires:  python2-devel
+BuildArch:      noarch
 
 %description
 DrPython is a highly customizable, simple, and clean editing environment for
@@ -46,9 +46,6 @@ EOF
 
 #icons
 install -Dm644 documentation/%name.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%name.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc examples/ *.txt

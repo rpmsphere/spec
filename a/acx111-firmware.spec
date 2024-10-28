@@ -21,9 +21,6 @@ required by the acx Linux kernel module.
 %{__mkdir_p} %{buildroot}/lib/firmware
 %{__install} -p -m 0644 %{SOURCE0} %{buildroot}/lib/firmware/tiacx111c16
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 /lib/firmware/tiacx111c16
 

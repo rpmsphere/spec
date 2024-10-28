@@ -44,9 +44,6 @@ desktop-file-install --vendor="" \
   %{SOURCE1}
 %find_lang %{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files -f %{name}.lang
 %doc COPYING COPYING.GFDL
 %{_bindir}/nted

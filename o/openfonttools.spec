@@ -35,9 +35,6 @@ install -D -m755 win/makeudc.ffs %{buildroot}%{_bindir}/makeudc.ffs
 mkdir -p %{buildroot}%{_datadir}/cnsfonttools/CNSFonts
 cp win/*.TBL win/*.EUF win/*.TTF win/*.cin %{buildroot}%{_datadir}/cnsfonttools/CNSFonts
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc COPYING AUTHORS INSTALL ChangeLog
 %{_bindir}/*

@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
-Name: 		wmdrawer
-Version: 	0.10.5
-Release: 	1
-Summary:	Retractable button bar launcher dockapp
-Source:		https://people.easter-eggs.org/~valos/%{name}/%{name}-%{version}.tar.gz
-Patch0:		%{name}-lib64.patch
-License:	GPL
-Group:		User Interface/Desktops
-URL:		https://people.easter-eggs.org/~valos/%{name}/
-Requires:	gtk2
-BuildRequires: 	gtk2-devel
+Name:           wmdrawer
+Version:        0.10.5
+Release:        1
+Summary:        Retractable button bar launcher dockapp
+Source:         https://people.easter-eggs.org/~valos/%{name}/%{name}-%{version}.tar.gz
+Patch0:         %{name}-lib64.patch
+License:        GPL
+Group:          User Interface/Desktops
+URL:            https://people.easter-eggs.org/~valos/%{name}/
+Requires:       gtk2
+BuildRequires:  gtk2-devel
 
 %description
 wmDrawer is a dock application (dockapp) which provides a drawer
@@ -24,7 +24,7 @@ Knopfleiste mit Anwendungsstartern darstellt.
 
 %setup -q
 %if "%{_lib}" == "lib64"
-%patch0 -p1
+%patch 0 -p1
 %endif
 
 %build
@@ -47,9 +47,6 @@ else
   exec wmdrawer-bin
 fi
 EOF
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc wmdrawerrc.example AUTHORS ChangeLog COPYING INSTALL README TODO ./doc/wmdrawer-it.sgml ./doc/wmdrawer.sgml

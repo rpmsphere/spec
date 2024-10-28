@@ -31,7 +31,7 @@ Authors:
 
 %prep
 %setup -q -n %{name}
-%patch1 -p0
+%patch 1 -p0
 find -iname "*.pyc" -delete
 
 %build
@@ -45,7 +45,7 @@ cp -a * %buildroot%{_datadir}/%{_name}/
 rm -rf %buildroot%{_datadir}/%{_name}/log
 # docu
 for file in LICENSE.txt README.txt ; do
-	mv %buildroot%{_datadir}/%{_name}/$file %buildroot%{_defaultdocdir}/%{_name}/
+        mv %buildroot%{_datadir}/%{_name}/$file %buildroot%{_defaultdocdir}/%{_name}/
 done
 chmod +x %buildroot%{_datadir}/%{_name}/*.sh
 #
@@ -64,9 +64,6 @@ install -Dm 644 %SOURCE2 %buildroot%{_datadir}/pixmaps/%{_name}.svg
 desktop-file-install \
   --dir=%buildroot/%_datadir/applications \
   %SOURCE1
-
-%clean
-rm -rf %buildroot
 
 %files
 %doc %{_defaultdocdir}/%{_name}

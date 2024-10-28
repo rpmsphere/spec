@@ -22,7 +22,7 @@ Features:
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 
@@ -30,9 +30,6 @@ Features:
 python2 setup.py install --prefix=%{_prefix} --exec-prefix=%{_exec_prefix} --root=$RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/yatii

@@ -28,9 +28,6 @@ install -D -m 755 play_cell/play_cell $RPM_BUILD_ROOT%{_bindir}/play_cell
 %{_bindir}/vamps
 %{_bindir}/play_cell
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.99.2
 - Rebuilt for Fedora

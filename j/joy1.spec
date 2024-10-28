@@ -21,9 +21,6 @@ make
 rm -rf %{buildroot}
 install -Dm755 joy %{buildroot}%{_bindir}/joy
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc doc/* LICENSE README.md
 %{_bindir}/joy

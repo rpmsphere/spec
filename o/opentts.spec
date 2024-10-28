@@ -49,9 +49,6 @@ rm -f $RPM_BUILD_ROOT%{_infodir}/ssip.info*
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %dir %{_sysconfdir}/opentts
 %config(noreplace) %{_sysconfdir}/opentts/openttsd.conf

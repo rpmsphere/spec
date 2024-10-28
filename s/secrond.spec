@@ -33,9 +33,6 @@ chmod 755 $RPM_BUILD_ROOT/etc/init.d/secrond
 mkdir -p $RPM_BUILD_ROOT/etc/secrond
 install -m 644 misc/schedule $RPM_BUILD_ROOT/etc/secrond
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README
 %{_sbindir}/%{name}
@@ -47,8 +44,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %preun
 if [ $1 = 0 ]; then
-	/sbin/service secrond stop > /dev/null 2>&1
-	/sbin/chkconfig --del secrond
+        /sbin/service secrond stop > /dev/null 2>&1
+        /sbin/chkconfig --del secrond
 fi
 
 rm -rf /usr/doc/secrond/ /usr/sbin/secrond
@@ -58,5 +55,5 @@ mv -f /etc/secrond/schedule /etc/secrond/schedule.rpmoves
 %Changelog
 * Tue May 22 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.41
 - Rebuilt for Fedora
-* Thu Sep 27 2011 Baron. Wan <baron.wan@ossii.com.tw> - 0.41-2.ox2
+* Tue Sep 27 2011 Baron. Wan <baron.wan@ossii.com.tw> - 0.41-2.ox2
 - create .spec file, and debug it.

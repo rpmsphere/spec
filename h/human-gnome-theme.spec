@@ -39,9 +39,6 @@ sed -i '$a BackgroundImage=/usr/share/backgrounds/ubuntu/contest/lucid.xml' %{bu
 install -m644 %{SOURCE1} %{buildroot}%{_datadir}/themes/HumanLogin/index.theme
 mv %{buildroot}%{_datadir}/icons/HumanLoginIcons/apps/64/computer.png %{buildroot}%{_datadir}/icons/HumanLoginIcons/apps/64/ubuntu.png
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc ChangeLog COPYING AUTHORS
 %{python3_sitelib}/*

@@ -52,9 +52,6 @@ cd %{_datadir}/%{name}
 xulrunner application.ini
 EOF
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %attr(755,root,root) %{_bindir}/%{name}
 %{_datadir}/doc/%{name}-%{version}

@@ -48,9 +48,9 @@ Header files and libraries for the package mead.
 
 %prep
 %setup -q 
-%patch1 -p1 
-%patch2 -p1 
-%patch3 -p1 
+%patch 1 -p1 
+%patch 2 -p1 
+%patch 3 -p1 
 
 %build
 %configure
@@ -59,9 +59,6 @@ sed -i 's|-O2|-O2 -fPIC -fPIE|' Makefile */Makefile */Makefile.common */*/Makefi
 
 %install
 %makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %{_bindir}/mulsidecomp

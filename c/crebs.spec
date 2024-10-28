@@ -6,7 +6,7 @@ Group:          User Interface/X
 License:        GPLv3+
 URL:            https://www.obfuscatepenguin.net/crebs/
 Source0:        https://www.obfuscatepenguin.net/source/crebs/%{name}-%{version}.tar.gz
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 For the desktop background, GNOME is able to use a slideshow in which images 
@@ -31,9 +31,6 @@ cp -r crebs/* $RPM_BUILD_ROOT/usr
 sed -i 's|Exec=crebs|Exec=/usr/bin/crebs|' %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/lib/%{name}/*.py %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

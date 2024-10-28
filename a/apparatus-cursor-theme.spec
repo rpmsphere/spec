@@ -32,9 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons
 cp -a Blue%{theme_name} Green%{theme_name} Red%{theme_name} Yellow%{theme_name}2 $RPM_BUILD_ROOT%{_datadir}/icons
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files 
 %{_datadir}/icons/*%{theme_name}*
 

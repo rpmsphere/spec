@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Summary:	cgrep
-Name:		cgrep
-Version:	8.15
-Release:	5
-License:	Lucent Public License
-Group:		Productivity/Text/Utilities
-Source0:	%{name}-%{version}.tar.gz
-URL:		https://www.bell-labs.com/project/wwexptools/cgrep/
+Summary:        cgrep
+Name:           cgrep
+Version:        8.15
+Release:        5
+License:        Lucent Public License
+Group:          Productivity/Text/Utilities
+Source0:        %{name}-%{version}.tar.gz
+URL:            https://www.bell-labs.com/project/wwexptools/cgrep/
 
 %description
 cgrep provides all the features of grep, egrep, and fgrep, with greatly
@@ -32,9 +32,6 @@ make
 
 %install
 make DESTDIR=${RPM_BUILD_ROOT} install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_docdir}/*

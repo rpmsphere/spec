@@ -3,7 +3,7 @@ Version:        0.2.1
 Release:        5.1
 License:        GPL-2.0
 Summary:        Systemd service for zram
-Url:            https://code.launchpad.net/~elementary-os/elementaryos/zramswap-enabler
+URL:            https://code.launchpad.net/~elementary-os/elementaryos/zramswap-enabler
 Group:          System/Daemons
 Source0:        zramswap-enabler-0.2.1.tar.bz2
 #Source0:       bzr branch lp:~elementary-os/elementaryos/zramswap-enabler

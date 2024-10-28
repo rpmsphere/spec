@@ -12,9 +12,9 @@ BuildRequires:  gcc-c++
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  compat-openssl10-devel
 BuildRequires:  pkgconfig
-BuildRequires:	gtk2-devel
-BuildRequires:	libglade2-devel
-BuildRequires:	libnotify-devel
+BuildRequires:  gtk2-devel
+BuildRequires:  libglade2-devel
+BuildRequires:  libnotify-devel
 BuildRequires:  python2-scons
 
 %description
@@ -36,9 +36,6 @@ scons install
 
 rm -rf $RPM_BUILD_ROOT%{_datadir}/doc/%{name}
 rm -rf $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/20x20
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc Changelog.txt Credits.txt License.txt Readme.txt

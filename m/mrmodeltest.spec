@@ -39,9 +39,6 @@ install -m 644 doc/hLRT3.jpg $RPM_BUILD_ROOT%{_docdir}/MrModeltest%{version}
 install -m 644 doc/hLRT4.jpg $RPM_BUILD_ROOT%{_docdir}/MrModeltest%{version}
 install -m 644 README.html $RPM_BUILD_ROOT%{_docdir}/MrModeltest%{version}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/mrmodeltest2
 %{_docdir}/MrModeltest%{version}

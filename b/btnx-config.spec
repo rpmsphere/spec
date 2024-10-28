@@ -23,8 +23,8 @@ combination should work for just about any mouse.
 
 %prep
 %setup -q
-%patch1
-%patch2
+%patch 1
+%patch 2
 
 %build
 export SUSE_ASNEEDED=0
@@ -41,9 +41,6 @@ sed -i 's|-Wl -export-dynamic|-Wl,--export-dynamic|' src/Makefile
 %__rm -rf "$RPM_BUILD_ROOT"
 make DESTDIR=$RPM_BUILD_ROOT install
 %find_lang "%{name}"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files -f "%{name}.lang"
 %{_sbindir}/btnx-config

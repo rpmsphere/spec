@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/gandhari-unicode
+%define fontdir %{_datadir}/fonts/gandhari-unicode
 
 Name:           gandhari-unicode-fonts
 Version:        5.110

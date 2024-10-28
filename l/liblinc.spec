@@ -45,9 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 # remove program that already exists in ORBit package
 rm -f $RPM_BUILD_ROOT%{_bindir}/linc-cleanup-sockets
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog COPYING HACKING MAINTAINERS NEWS README TODO
 %{_libdir}/*.so.*

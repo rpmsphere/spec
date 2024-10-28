@@ -8,7 +8,7 @@ URL:            https://www.stellingwerff.com/?page_id=10
 Source0:        https://www.stellingwerff.com/TheWidgetFactory/%{name}-%{version}.tar.gz
 Source1:        thewidgetfactory.desktop
 Source2:        thewidgetfactory.png
-Patch0:		    thewidgetfactory-aarch64.patch
+Patch0:             thewidgetfactory-aarch64.patch
 BuildRequires:  gtk2-devel, desktop-file-utils, libcap-devel
 
 %description
@@ -17,7 +17,7 @@ on a single window.
 
 %prep
 %setup -q
-%patch0 -p1 -b .thewidgetfactory-aarch64
+%patch 0 -p1 -b .thewidgetfactory-aarch64
 sed -i '1i #include <string.h>' src/themes.c
 
 %build
@@ -31,9 +31,6 @@ desktop-file-install \
         --dir ${RPM_BUILD_ROOT}%{_datadir}/applications         \
         %{SOURCE1}
 install -Dm644 %{SOURCE2} ${RPM_BUILD_ROOT}%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog README COPYING

@@ -81,8 +81,8 @@ mv %{buildroot}%{_prefix}/lib/*.so* %{buildroot}%{_libdir}
 # Not much of a point in shipping static libs and headers for libs used
 # only by cdrtools
 rm -rf \
-	%{buildroot}%{_prefix}/lib/*.a \
-	%{buildroot}%{_includedir}
+        %{buildroot}%{_prefix}/lib/*.a \
+        %{buildroot}%{_includedir}
 
 # The libraries/headers aren't installed, so we don't need their man
 # pages either

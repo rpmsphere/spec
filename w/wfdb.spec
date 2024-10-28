@@ -71,9 +71,6 @@ install -d $RPM_BUILD_ROOT%{_mandir}/man1
 install -m644 *.1 $RPM_BUILD_ROOT%{_mandir}/man1
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 # ---- wfdb [shared library] package ------------------------------------------
 
 %description

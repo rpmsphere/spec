@@ -1,32 +1,32 @@
 %undefine _debugsource_packages
 
-Name: 		octopus
-Summary:	A TDDFT code
-Version:	12.0
-Release:	1
-License:	GPLv2+
-Group:		Applications/Engineering
-Source:		https://www.tddft.org/programs/octopus/download/%{name}-%{version}.tar.gz
-URL:		https://octopus-code.org/wiki/Main_Page
-BuildRequires:	blas-devel
-BuildRequires:	fftw-devel
-BuildRequires:	fontconfig-devel
-BuildRequires:	freetype-devel
-BuildRequires:	gcc-gfortran
-BuildRequires:	gd-devel
-BuildRequires:	gsl-devel
-BuildRequires:	lapack-devel
-BuildRequires:	libjpeg-devel
-BuildRequires:	libpng-devel
-BuildRequires:	libX11-devel
-BuildRequires:	libXpm-devel
-BuildRequires:	netcdf-devel
-BuildRequires:	perl-interpreter
-BuildRequires:	zlib-devel
+Name:           octopus
+Summary:        A TDDFT code
+Version:        12.0
+Release:        1
+License:        GPLv2+
+Group:          Applications/Engineering
+Source:         https://www.tddft.org/programs/octopus/download/%{name}-%{version}.tar.gz
+URL:            https://octopus-code.org/wiki/Main_Page
+BuildRequires:  blas-devel
+BuildRequires:  fftw-devel
+BuildRequires:  fontconfig-devel
+BuildRequires:  freetype-devel
+BuildRequires:  gcc-gfortran
+BuildRequires:  gd-devel
+BuildRequires:  gsl-devel
+BuildRequires:  lapack-devel
+BuildRequires:  libjpeg-devel
+BuildRequires:  libpng-devel
+BuildRequires:  libX11-devel
+BuildRequires:  libXpm-devel
+BuildRequires:  netcdf-devel
+BuildRequires:  perl-interpreter
+BuildRequires:  zlib-devel
 BuildRequires:  libxc-devel
 BuildRequires:  mpich-devel
 BuildRequires:  environment-modules
-#BuildRequires:	openmpi-devel
+#BuildRequires: openmpi-devel
 
 %description
 Octopus is a scientific program aimed at the ab initio virtual 
@@ -38,11 +38,11 @@ classically as point particles. Electron-nucleus interaction
 is described within the Pseudopotential approximation. 
 
 %package devel
-Summary:	Octopus development headers & libraries
+Summary:        Octopus development headers & libraries
 License:        GPLv2+
 Group:          Applications/Engineering
-Requires:	%{name} = %{version}-%{release}
-Provides:	%{name}-static = %{version}-%{release}
+Requires:       %{name} = %{version}-%{release}
+Provides:       %{name}-static = %{version}-%{release}
 
 %description devel
 This package contains the development headers for Octopus.
@@ -59,7 +59,7 @@ sed -i -e '218,220d' -e '222,224d' src/basic/global.F90
 %endif
 #./configure FCCPP="/lib/cpp -std=gnu++14 -xc++" FCFLAGS_LIBXC="-I/usr/include -I%{_libdir}/gfortran/modules" \
 #FCFLAGS="-ffree-line-length-none -fallow-argument-mismatch -fallow-invalid-boz" \
-#	--host=%{_host} --build=%{_build} \
+#       --host=%{_host} --build=%{_build} \
 #        --target=%{_target_platform} \
 #        --program-prefix=%{?_program_prefix} \
 #        --prefix=%{_prefix} \
@@ -82,9 +82,6 @@ sed -i -e '218,220d' -e '222,224d' src/basic/global.F90
 rm -rf %{buildroot}
 %make_install
 #install -Dm644 /root/rpmbuild/BUILDROOT/octopus-*/liboct_parser.a %{buildroot}%{_libdir}/liboct_parser.a
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %post
 install-info %{_infodir}/octopus.info &> /dev/null

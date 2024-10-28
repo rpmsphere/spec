@@ -34,9 +34,6 @@ desktop-file-install                                    \
 --dir=${RPM_BUILD_ROOT}%{_datadir}/applications         \
 %{SOURCE2}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README COPYRIGHT LICENSE.txt helpman.html
 %{_bindir}/%{name}
@@ -53,5 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 * Wed Aug 25 2010 Bernd Stramm <bernd.stramm@gmail.com> - 0.3.4-1
 - desktop file
 - PS3 build
-* Wed Mar 27 2010 Bernd Stramm <bernd.stramm@gmail.com> - 0.3.1-1
+* Sat Mar 27 2010 Bernd Stramm <bernd.stramm@gmail.com> - 0.3.1-1
 - Initial RPM release

@@ -6,14 +6,14 @@ Release:        19.1
 Summary:        Chess program that plays many variants
 License:        GPLv2
 Group:          Games/Boards
-URL:		https://sjeng.org/indexold.html
-Source0:	https://prdownloads.sourceforge.net/sjeng/%{pkgname}-%{version}.tar.bz2
-Source1:	sjeng.6.bz2
-Source2:	sjeng-README.bz2
-Patch0:		sjeng-11.2-cleanup.patch
-Patch1:		sjeng-11.2-fhs.patch
+URL:            https://sjeng.org/indexold.html
+Source0:        https://prdownloads.sourceforge.net/sjeng/%{pkgname}-%{version}.tar.bz2
+Source1:        sjeng.6.bz2
+Source2:        sjeng-README.bz2
+Patch0:         sjeng-11.2-cleanup.patch
+Patch1:         sjeng-11.2-fhs.patch
 Patch2:         sjeng-11.2-mga-fix-build-with-automake-1.13.patch
-BuildRequires:	gdbm-devel
+BuildRequires:  gdbm-devel
 
 %description
 Sjeng is a chess program that plays normal chess and many variants
@@ -25,9 +25,9 @@ is also capable of playing on internet chess servers.
 
 %prep
 %setup -q -n %{pkgname}-%{version}
-%patch0 -p1 -b .cleanup
-%patch1 -p1 -b .fhs
-%patch2 -p0
+%patch 0 -p1 -b .cleanup
+%patch 1 -p1 -b .fhs
+%patch 2 -p0
 
 autoreconf -fiv
 bzip2 -dc %{SOURCE2} > README.debian
@@ -37,8 +37,8 @@ perl -pi -e 's/\r//g' [[:upper:]][[:upper:]]* ChangeLog
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
 %configure \
-	--bindir=%{_bindir} \
-	--datadir=%{_datadir}
+        --bindir=%{_bindir} \
+        --datadir=%{_datadir}
 make
 
 %install

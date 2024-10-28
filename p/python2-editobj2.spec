@@ -1,17 +1,17 @@
-%define	oname	EditObj2
+%define oname   EditObj2
 
-Name: 	 	python2-editobj2
-Summary: 	Tkinter dialog box for editing any Python object
-Version: 	0.4
-Release: 	7.1
-Source:		%{oname}-%{version}.tar.gz
-URL:		https://home.gna.org/oomadness/en/editobj/
-License:	GPLv2
-Group:		Development/Python
+Name:           python2-editobj2
+Summary:        Tkinter dialog box for editing any Python object
+Version:        0.4
+Release:        7.1
+Source:         %{oname}-%{version}.tar.gz
+URL:            https://home.gna.org/oomadness/en/editobj/
+License:        GPLv2
+Group:          Development/Python
 BuildRequires:  python2-devel
-Requires:	tkinter
-Obsoletes:	editobj
-BuildArch:	noarch
+Requires:       tkinter
+Obsoletes:      editobj
+BuildArch:      noarch
 
 %description
 EditObj2 can create and display a Tkinter dialog box for editing any Python
@@ -32,9 +32,6 @@ python2 setup.py build
 %install
 rm -rf %{buildroot}
 python2 setup.py install --root=%{buildroot}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS LICENSE README 

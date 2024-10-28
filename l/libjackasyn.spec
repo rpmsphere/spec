@@ -42,9 +42,6 @@ chmod 755 $RPM_BUILD_ROOT/usr/lib/*
 mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT/usr/lib64
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/jacklaunch
 %{_libdir}/*.so.*

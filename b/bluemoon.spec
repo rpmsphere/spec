@@ -32,9 +32,9 @@ average, 8 or more is poor.
 
 %prep
 %setup -q
-%patch0
-%patch1
-%patch2
+%patch 0
+%patch 1
+%patch 2
 
 %build
 make %{?_smp_mflags} CFLAGS="%{optflags}"

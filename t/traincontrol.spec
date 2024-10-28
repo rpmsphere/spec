@@ -40,9 +40,6 @@ install -m 644 system/traindaemon.service $RPM_BUILD_ROOT%{_unitdir}/traindaemon
 install -m 644 system/pointdaemon.service $RPM_BUILD_ROOT%{_unitdir}/pointdaemon.service
 desktop-file-install --vendor="" --dir=${RPM_BUILD_ROOT}%{_datadir}/applications traincontrol.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/traincontrol
 %{_bindir}/traincalc

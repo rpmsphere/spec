@@ -29,18 +29,18 @@ graphics capabilities and a simple programming language.
 
 Authors:
 --------
-	Dr. Renee Grothmann <grothm@ku-eichstaett.de>
-	Eric Boucharé <bouchare.eric@wanadoo.fr>
-	Puji Prasetiyo <aripujiprasetiyo@yahoo.com>
+        Dr. Renee Grothmann <grothm@ku-eichstaett.de>
+        Eric Boucharé <bouchare.eric@wanadoo.fr>
+        Puji Prasetiyo <aripujiprasetiyo@yahoo.com>
 
 
 %prep
 %setup -q
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
 #patch4 -p1
-%patch5 -p1
+%patch 5 -p1
 
 %build
 %configure --disable-static
@@ -50,9 +50,6 @@ make %{?jobs:-j%jobs} CFLAGS="-Wall -O3 -fPIC"
 %makeinstall
 install -Dm644 pixmaps/icon.xpm %{buildroot}/%{_datadir}/pixmaps/euler.xpm
 install -Dm644 %{SOURCE1} %{buildroot}/%{_datadir}/applications/euler.desktop
-
-%clean
-rm -rf %buildroot
 
 %files
 %doc %{_defaultdocdir}/%name

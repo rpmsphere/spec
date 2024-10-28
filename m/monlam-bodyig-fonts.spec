@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/monlam-bodyig
+%define fontdir %{_datadir}/fonts/monlam-bodyig
 
 Name:           monlam-bodyig-fonts
 Version:        3

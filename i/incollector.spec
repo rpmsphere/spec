@@ -7,9 +7,9 @@ License:        GPLv2
 URL:            https://www.incollector.devnull.pl/
 Source0:        https://www.incollector.devnull.pl/download/sources/%{name}-%{version}.tar.gz
 Patch0:         %{name}-mono.patch
-Patch1:		%{name}-fixlib.patch
-Patch2:		%{name}-%{version}-pixmaps-install.patch
-BuildArch:	noarch
+Patch1:         %{name}-fixlib.patch
+Patch2:         %{name}-%{version}-pixmaps-install.patch
+BuildArch:      noarch
 BuildRequires:  gtk-sharp2-devel gettext desktop-file-utils
 
 %description
@@ -22,9 +22,9 @@ search for entries by specified criteria. You can also export
 
 %prep
 %setup -q
-%patch0
+%patch 0
 #patch1
-%patch2
+%patch 2
 chmod a-x README AUTHORS
 
 %build
@@ -37,9 +37,6 @@ rm -rf %{buildroot}
 make install DESTDIR=%{buildroot} INSTALL="install -p"
 %find_lang %{name}
 sed -i 's|/usr/share/pixmaps/%{name}.png|%{name}|' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %doc README COPYING AUTHORS

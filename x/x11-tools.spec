@@ -22,8 +22,6 @@ BuildArch:      noarch
 %description
 Some useful tools for the X Window System.
 
-
-
 Authors:
 --------
     Stefan Dirsch <sndirsch@suse.de>
@@ -35,22 +33,22 @@ Authors:
 
 %install
 mkdir -p $RPM_BUILD_ROOT%{_bindir}/
-install -m 755 $RPM_SOURCE_DIR/xf86debug      $RPM_BUILD_ROOT%{_bindir}
-install -m 755 $RPM_SOURCE_DIR/wmlist         $RPM_BUILD_ROOT%{_bindir}
-install -m 755 $RPM_SOURCE_DIR/kroot          $RPM_BUILD_ROOT%{_bindir}
+install -m 755 %{SOURCE2}      $RPM_BUILD_ROOT%{_bindir}
+install -m 755 %{SOURCE6}         $RPM_BUILD_ROOT%{_bindir}
+install -m 755 %{SOURCE8}          $RPM_BUILD_ROOT%{_bindir}
 mkdir -p $RPM_BUILD_ROOT/etc/X11/xim.d
-install -m 644 $RPM_SOURCE_DIR/xim  $RPM_BUILD_ROOT/etc/X11
-install -m 644 $RPM_SOURCE_DIR/none $RPM_BUILD_ROOT/etc/X11/xim.d
+install -m 644 %{SOURCE31}  $RPM_BUILD_ROOT/etc/X11
+install -m 644 %{SOURCE33} $RPM_BUILD_ROOT/etc/X11/xim.d
 mkdir -p $RPM_BUILD_ROOT/etc/skel
-install -m 644 $RPM_SOURCE_DIR/xim.template $RPM_BUILD_ROOT/etc/skel/.xim.template
+install -m 644 %{SOURCE32} $RPM_BUILD_ROOT/etc/skel/.xim.template
 mkdir -p  $RPM_BUILD_ROOT/var/adm/fillup-templates/
-install -c -m0644 $RPM_SOURCE_DIR/sysconfig.language-%{name} $RPM_BUILD_ROOT/var/adm/fillup-templates/
-install -m 755 $RPM_SOURCE_DIR/switch2nv $RPM_BUILD_ROOT%{_bindir} 
-install -m 755 $RPM_SOURCE_DIR/switch2nvidia $RPM_BUILD_ROOT%{_bindir}
+install -c -m0644 %{SOURCE34} $RPM_BUILD_ROOT/var/adm/fillup-templates/
+install -m 755 %{SOURCE3} $RPM_BUILD_ROOT%{_bindir} 
+install -m 755 %{SOURCE4} $RPM_BUILD_ROOT%{_bindir}
 mkdir -p $RPM_BUILD_ROOT/usr/lib/nvidia
-install -m 755 $RPM_SOURCE_DIR/nvidia-pre-install \
+install -m 755 %{SOURCE35} \
   $RPM_BUILD_ROOT/usr/lib/nvidia/pre-install
-install -m 755 $RPM_SOURCE_DIR/nvidia-post-uninstall \
+install -m 755 %{SOURCE36} \
   $RPM_BUILD_ROOT/usr/lib/nvidia/post-uninstall
 
 %files

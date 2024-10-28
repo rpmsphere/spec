@@ -33,9 +33,6 @@ chmod +x $RPM_BUILD_ROOT/%{python2_sitelib}/%{pyname}_lib/pyparsing/setup.py
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{python2_sitelib}/tappy_lib/*.py %{buildroot}%{python2_sitelib}/tappy_lib/*/*.py
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/tappy.py
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README AUTHORS COPYING VERSION CHANGES
 %{_bindir}/*

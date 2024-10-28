@@ -195,9 +195,6 @@ EOF
 ### Clean up buildroot
 %{__rm} -rf $RPM_BUILD_ROOT%{_sysconfdir}/sarg/languages/.new
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %doc ChangeLog CONTRIBUTORS COPYING DONATIONS README
 %doc %{_mandir}/man1/sarg.1*

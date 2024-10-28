@@ -1,26 +1,26 @@
 %undefine _debugsource_packages
 
-Summary:	An X Window System based CPU state monitor
-Name:		xcpustate
-Version:	2.9
-Release:	22.1
-License:	MIT-style
-Group:		Monitoring
-BuildRequires:	libX11-devel
-BuildRequires:	elfutils-libelf-devel
-BuildRequires:	imake
-BuildRequires:	libXt-devel
-BuildRequires:	libXaw-devel
-BuildRequires:	libXmu-devel
-BuildRequires:	libtirpc-devel
-URL:		ftp://ftp.cs.toronto.edu/pub/jdd/xcpustate/
-Source0:	ftp://ftp.cs.toronto.edu/pub/jdd/xcpustate/%{name}-%{version}.tar.lzma
-Source11:	%{name}16.png
-Source12:	%{name}32.png
-Source13:	%{name}48.png
-Patch1:		xcpustate-2.5-alpha.patch
-Patch2:		xcpustate-2.5-6.0.patch
-Patch3:		xcpustate-2.9-missingheaders.patch
+Summary:        An X Window System based CPU state monitor
+Name:           xcpustate
+Version:        2.9
+Release:        22.1
+License:        MIT-style
+Group:          Monitoring
+BuildRequires:  libX11-devel
+BuildRequires:  elfutils-libelf-devel
+BuildRequires:  imake
+BuildRequires:  libXt-devel
+BuildRequires:  libXaw-devel
+BuildRequires:  libXmu-devel
+BuildRequires:  libtirpc-devel
+URL:            ftp://ftp.cs.toronto.edu/pub/jdd/xcpustate/
+Source0:        ftp://ftp.cs.toronto.edu/pub/jdd/xcpustate/%{name}-%{version}.tar.lzma
+Source11:       %{name}16.png
+Source12:       %{name}32.png
+Source13:       %{name}48.png
+Patch1:         xcpustate-2.5-alpha.patch
+Patch2:         xcpustate-2.5-6.0.patch
+Patch3:         xcpustate-2.9-missingheaders.patch
 
 %description
 The xcpustate utility is an X Window System based monitor which shows
@@ -33,10 +33,10 @@ CPU state monitor.
 
 %prep
 %setup -q
-%patch2 -p1 -b .glibc
-%patch3 -p1 -b .headers
+%patch 2 -p1 -b .glibc
+%patch 3 -p1 -b .headers
 %ifarch alpha
-%patch1 -p1 -b .alpha
+%patch 1 -p1 -b .alpha
 %endif
 
 %build

@@ -38,8 +38,8 @@ resets.)
 
 %prep
 %setup -q
-%patch5 -p1
-%patch6 -p1
+%patch 5 -p1
+%patch 6 -p1
 sed -i 's|Exec=tetris|Exec=vitetris|' vitetris.desktop
 
 %build

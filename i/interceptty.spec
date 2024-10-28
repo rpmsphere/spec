@@ -6,7 +6,7 @@ License:      GPL
 Version:      0.6
 Release:      4.1
 Source0:      https://www.suspectclass.com/interceptty/files/interceptty-%{version}.tar.gz
-Patch:       interceptty.patch
+Patch0:       interceptty.patch
 
 %description
 IntercepTTY is a program that can sit between a real (or fake)
@@ -17,7 +17,7 @@ connected to a program, and for various other tasks.
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 
 %build
 ./configure \
@@ -32,9 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %{_bindir}/*
 %{_mandir}/man1/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6

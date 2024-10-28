@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
-Name:		lookit
-Version:	0.4.0
-Release:	1
-Summary:	A Quick Screenshot Uploader
-License:	GPLv2
-Group:		Applications/Multimedia
-URL:		https://launchpad.net/~lookit
-Source0:	%{name}-%{version}.tar.gz
-BuildArch:	noarch
-Requires:	pygtk2, python-appindicator, python-keyring, python-keybinder
+Name:           lookit
+Version:        0.4.0
+Release:        1
+Summary:        A Quick Screenshot Uploader
+License:        GPLv2
+Group:          Applications/Multimedia
+URL:            https://launchpad.net/~lookit
+Source0:        %{name}-%{version}.tar.gz
+BuildArch:      noarch
+Requires:       pygtk2, python-appindicator, python-keyring, python-keybinder
 
 %description
 Take and upload screenshots quickly with Lookit. Lookit allows you to quickly
@@ -27,9 +27,6 @@ rm -rf %{buildroot}
 python2 setup.py install --prefix=%{_prefix} --root %{buildroot}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}

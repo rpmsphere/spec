@@ -32,9 +32,6 @@ sed -i 's|-Werror=format-security||' Makefile */Makefile
 %{make_install}
 %find_lang %{name}
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files -f %{name}.lang
 %doc COPYING README TODO Changelog
 %{_bindir}/lbreakouthd

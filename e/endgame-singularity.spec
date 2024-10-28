@@ -58,9 +58,6 @@ EOF
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/singularity/utils/*.py %{buildroot}%{_datadir}/singularity/utils/traduko/traduko
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc TODO README.txt GPL.txt AUTHORS Changelog
 %attr(755,root,root) %{_bindir}/%{name}

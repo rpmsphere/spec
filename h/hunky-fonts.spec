@@ -23,9 +23,6 @@ rm -rf %{buildroot}
 install -d -m 0755 %{buildroot}%{fontdir}
 install -p -m 0644 TTF/*.ttf %{buildroot}%{fontdir}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc ChangeLog COPYRIGHT.TXT README
 %{fontdir}/*.ttf

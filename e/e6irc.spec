@@ -32,9 +32,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make INSTALL_ROOT=$RPM_BUILD_ROOT install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %doc COPYRIGHT

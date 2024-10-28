@@ -10,6 +10,7 @@ Group: Development/Language
 URL: https://github.com/AdeptLanguage/Adept
 Source0: https://github.com/AdeptLanguage/Adept/archive/refs/tags/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
 Source1: https://github.com/AdeptLanguage/AdeptImport/archive/refs/heads/master.zip#/AdeptImport-master.zip
+BuildRequires: cmake
 BuildRequires: llvm15-devel
 BuildRequires: openldap-devel
 BuildRequires: libcurl-devel
@@ -35,9 +36,6 @@ cat > %{buildroot}%{_bindir}/%{name} <<EOF
 exec %{_libexecdir}/%{name}/%{name} "\$@"
 EOF
 chmod +x %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc LICENSE *.md

@@ -38,9 +38,6 @@ install -D -m 0755 bin/cint $RPM_BUILD_ROOT%{_bindir}/cint
 install -D -m 0755 lib/libCint.so $RPM_BUILD_ROOT%{_libdir}/libCint.so
 install -D -m 0644 doc/man1/cint.1 $RPM_BUILD_ROOT%{_mandir}/man1/cint.1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/cint
 %{_libdir}/libCint*

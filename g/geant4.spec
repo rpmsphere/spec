@@ -1,28 +1,28 @@
 %undefine _debugsource_packages
 %global __os_install_post %{nil}
 
-%define		_prefix		/opt/Geant4
-%define		clhep_version	2.2.0.8
-%define		g4system	Linux-g++
-%define		runcheck	1
+%define         _prefix         /opt/Geant4
+%define         clhep_version   2.2.0.8
+%define         g4system        Linux-g++
+%define         runcheck        1
 
-Summary:	Geant4 is an acronym of GEometry ANd Tracking
-Name:		geant4
-Version:	10.02
-Release:	9.1
-License:	Geant4 Software License
-Group:		Development/Libraries/C and C++
-URL:		https://geant4.cern.ch/
-Source0:	https://geant4.cern.ch/support/source/geant4.%{version}.tar.gz
-#Source1:	geant4-env-funcs.sh
-BuildRequires:	gcc, gcc-c++
-BuildRequires:	mesa-libGL-devel, mesa-libGLU-devel, xorg-x11-proto-devel, motif-devel, xerces-c-devel
+Summary:        Geant4 is an acronym of GEometry ANd Tracking
+Name:           geant4
+Version:        10.02
+Release:        9.1
+License:        Geant4 Software License
+Group:          Development/Libraries/C and C++
+URL:            https://geant4.cern.ch/
+Source0:        https://geant4.cern.ch/support/source/geant4.%{version}.tar.gz
+#Source1:       geant4-env-funcs.sh
+BuildRequires:  gcc, gcc-c++
+BuildRequires:  mesa-libGL-devel, mesa-libGLU-devel, xorg-x11-proto-devel, motif-devel, xerces-c-devel
 BuildRequires:  libXmu-devel, libXpm-devel, libXi-devel
-Requires:	libX11, mesa-libGL, mesa-libGLU, motif, xerces-c
-BuildRequires:	clhep-devel
-Requires:	glibc, libgcc, libstdc++
-#Requires:	dawn, vrmlview
-Requires:	clhep = %{clhep_version}
+Requires:       libX11, mesa-libGL, mesa-libGLU, motif, xerces-c
+BuildRequires:  clhep-devel
+Requires:       glibc, libgcc, libstdc++
+#Requires:      dawn, vrmlview
+Requires:       clhep = %{clhep_version}
 
 %description
 Geant4 is a toolkit for the simulation of the passage of particles
@@ -34,20 +34,20 @@ Nuclear Instruments and Methods in Physics Research A 506 (2003)
 270-278.
 
 %package devel
-Summary:	Geant4: Static libraries, C++ header files and so on
-Group:		Development/Libraries/C and C++
-Requires:	%{name} = %{version}
-Requires:	clhep-devel = %{clhep_version}
-Requires:	xorg-x11-proto-devel, motif-devel, libXi-devel, xerces-c-devel
+Summary:        Geant4: Static libraries, C++ header files and so on
+Group:          Development/Libraries/C and C++
+Requires:       %{name} = %{version}
+Requires:       clhep-devel = %{clhep_version}
+Requires:       xorg-x11-proto-devel, motif-devel, libXi-devel, xerces-c-devel
 
 
 %description devel
 The static libraries and C++ header files are additionally included in this package and some scripts required at the compilation; i.e. stuffs placed under the config directory; are also inclusive. This is mainly focused for users classified the application developer.
 
 %package source
-Summary:	Geant4: Sources and examples
-Group:		Development/Libraries/C and C++
-Requires:	%{name} = %{version}
+Summary:        Geant4: Sources and examples
+Group:          Development/Libraries/C and C++
+Requires:       %{name} = %{version}
 
 %description source
 All of sources and various examples are included in this package. This is mainly focused for users classified the class library developer.
@@ -141,15 +141,15 @@ function __path_prepend() {
     if [ "x\$mytmp" = "x\$myvalue" ] || [ "x\$mytmp" = "x\$myfieldsep\$myvalue" ] || [ "x\$mytmp" = "x\$myvalue\$myfieldsep" ] ; then
         mytmp="\${mytmp//\$myvalue/}"
     else
-        mytmp="\${mytmp//\$myfieldsep\$myvalue\$myfieldsep/\$myfieldsep}" 	#remove if in the middle
-        mytmp="\${mytmp#\$myvalue\$myfieldsep}"					#remove if in the begining
-        mytmp="\${mytmp%\$myfieldsep\$myvalue}"					#remove if at the end
+        mytmp="\${mytmp//\$myfieldsep\$myvalue\$myfieldsep/\$myfieldsep}"       #remove if in the middle
+        mytmp="\${mytmp#\$myvalue\$myfieldsep}"                                 #remove if in the begining
+        mytmp="\${mytmp%\$myfieldsep\$myvalue}"                                 #remove if at the end
     fi
 
     if [ "x\$mytmp" = "x" ]; then
-	mytmp="\$myvalue"
+        mytmp="\$myvalue"
     else
-	mytmp="\$myvalue\$myfieldsep\$mytmp"
+        mytmp="\$myvalue\$myfieldsep\$mytmp"
     fi
 
     mytmp="\${mytmp//\$myfieldsep\$myfieldsep\$myfieldsep/\$myfieldsep\$myfieldsep}"
@@ -172,15 +172,15 @@ function __path_append() {
     if [ "x\$mytmp" = "x\$myvalue" ] || [ "x\$mytmp" = "x\$myfieldsep\$myvalue" ] || [ "x\$mytmp" = "x\$myvalue\$myfieldsep" ] ; then
         mytmp="\${mytmp//\$myvalue/}"
     else
-        mytmp="\${mytmp//\$myfieldsep\$myvalue\$myfieldsep/\$myfieldsep}" 	#remove if in the middle
-        mytmp="\${mytmp#\$myvalue\$myfieldsep}"					#remove if in the begining
-        mytmp="\${mytmp%\$myfieldsep\$myvalue}"					#remove if at the end
+        mytmp="\${mytmp//\$myfieldsep\$myvalue\$myfieldsep/\$myfieldsep}"       #remove if in the middle
+        mytmp="\${mytmp#\$myvalue\$myfieldsep}"                                 #remove if in the begining
+        mytmp="\${mytmp%\$myfieldsep\$myvalue}"                                 #remove if at the end
     fi
 
     if [ "x\$mytmp" = "x" ]; then 
         mytmp="\$myvalue"
     else
-   	mytmp="\$mytmp\$myfieldsep\$myvalue"
+        mytmp="\$mytmp\$myfieldsep\$myvalue"
     fi
 
     mytmp="\${mytmp//\$myfieldsep\$myfieldsep\$myfieldsep/\$myfieldsep\$myfieldsep}"
@@ -199,11 +199,11 @@ function __env_delete() {
     myvalue="\$2"
     myfieldsep=":"
     mytmp="\${!myvar}"
-		                
+                                
     if [ "x\$mytmp" = "x\$myvalue" ] || [ "x\$mytmp" = "x\$myfieldsep\$myvalue" ] || [ "x\$mytmp" = "x\$myvalue\$myfieldsep" ] ; then
         mytmp="\${mytmp//\$myvalue/}"
     else
-  	mytmp="\${mytmp//\$myfieldsep\$myvalue\$myfieldsep/\$myfieldsep}"            
+        mytmp="\${mytmp//\$myfieldsep\$myvalue\$myfieldsep/\$myfieldsep}"            
         mytmp="\${mytmp#\$myvalue\$myfieldsep}"                                 
         mytmp="\${mytmp%\$myfieldsep\$myvalue}"                                 
     fi
@@ -231,7 +231,7 @@ function __env_setind() {
     myvar="\$1"
     myvalue="\$2"
     if [ "x\$ISCSHELL" = "xyes" ]; then
-	echo 'if ( \${?'\$myvar'} == 0 ) setenv '\$myvar \\'"\$myvalue"\\'
+        echo 'if ( \${?'\$myvar'} == 0 ) setenv '\$myvar \\'"\$myvalue"\\'
     fi
     eval export \$myvar=\\\${\$myvar:-\\\$myvalue}
 }
@@ -240,27 +240,27 @@ EOF
 %{__cat} <<EOF > $G4INSTALL/config/scripts/%{name}-env.sh
 if test "x\${G4_ENV_SET+x}" = "x"; then
 . %{_prefix}/config/scripts/%{name}-env-funcs.sh
-__env_set	"G4SYSTEM"		"%{g4system}"
-__env_set	"G4INSTALL"		"%{_prefix}"
-__env_set	"CLHEP_BASE_DIR"	"`clhep-config --prefix`"
-__env_set	"G4LIB_BUILD_GDML"	"1" # Bug in architecture.gmk line 262!
-__env_set	"G4LIB_USE_GDML"	"1"
-__env_set	"XERCESCROOT"		"/usr"
-__env_set	"G4VIS_USE_DAWN"	"1"
-__env_set	"G4VIS_USE_VRML"	"1"
-__env_set	"G4VIS_USE_RAYTRACERX"	"1"
-__env_set	"G4VIS_USE_OPENGLX"	"1"
-__env_set	"G4VIS_USE_OPENGLXM"	"1"
-__env_set	"G4UI_USE_TCSH"		"1"
-__env_set	"G4UI_USE_GAG"		"1"
+__env_set       "G4SYSTEM"              "%{g4system}"
+__env_set       "G4INSTALL"             "%{_prefix}"
+__env_set       "CLHEP_BASE_DIR"        "`clhep-config --prefix`"
+__env_set       "G4LIB_BUILD_GDML"      "1" # Bug in architecture.gmk line 262!
+__env_set       "G4LIB_USE_GDML"        "1"
+__env_set       "XERCESCROOT"           "/usr"
+__env_set       "G4VIS_USE_DAWN"        "1"
+__env_set       "G4VIS_USE_VRML"        "1"
+__env_set       "G4VIS_USE_RAYTRACERX"  "1"
+__env_set       "G4VIS_USE_OPENGLX"     "1"
+__env_set       "G4VIS_USE_OPENGLXM"    "1"
+__env_set       "G4UI_USE_TCSH"         "1"
+__env_set       "G4UI_USE_GAG"          "1"
 #
 # to make and link shared libs, uncomment below and activate it or insert a line 'G4LIB_BUILD_SHARED := 1' in your makefile
-#__env_set	"G4LIB_BUILD_SHARED"	"1"
+#__env_set      "G4LIB_BUILD_SHARED"    "1"
 #
 # following 2 lines should be defined by a user 
-#__env_set	"G4DAWNFILE_PS_VIEWER"	"gv"
-#__env_set	"G4VRMLFILE_VIEWER"	"vrmlview"
-__env_set	"G4_ENV_SET"		"1"
+#__env_set      "G4DAWNFILE_PS_VIEWER"  "gv"
+#__env_set      "G4VRMLFILE_VIEWER"     "vrmlview"
+__env_set       "G4_ENV_SET"            "1"
 unset __path_prepend __path_append __env_delete __env_set __env_setind
 fi
 EOF
@@ -295,9 +295,6 @@ echo "%{_prefix}/lib/%{g4system}" > %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{na
 # source
 %{__cp} -pr %{_builddir}/%{name}.%{version}/source %{buildroot}%{_prefix}/
 %{__cp} -pr %{_builddir}/%{name}.%{version}/examples %{buildroot}%{_prefix}/
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %post
 

@@ -12,8 +12,8 @@ Source:         %{modname}-2.5.0-a1.tar.gz
 #Requires:       python2-scipy
 Requires:       numpy
 BuildRequires:  python2-devel
-BuildRequires:	gcc-gfortran numpy sundials-devel
-BuildRequires:	atlas-devel suitesparse-devel
+BuildRequires:  gcc-gfortran numpy sundials-devel
+BuildRequires:  atlas-devel suitesparse-devel
 
 %description
 PySUNDIALS is a python package providing python bindings for the SUNDIALS
@@ -34,9 +34,6 @@ python2 setup.py build
 
 %install
 python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc doc/*

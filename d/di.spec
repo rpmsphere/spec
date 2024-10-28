@@ -32,9 +32,6 @@ install -D -m 0644 di.1 $RPM_BUILD_ROOT%{_mandir}/man1/di.1
 rm $RPM_BUILD_ROOT%{_bindir}/mi
 ln -s di $RPM_BUILD_ROOT%{_bindir}/mi
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %doc LICENSE* MANIFEST README.txt
 %{_bindir}/di

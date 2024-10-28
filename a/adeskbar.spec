@@ -7,12 +7,12 @@ License:        GPLv3
 URL:            https://adeskbar.tuxfamily.org/
 Source0:        https://download.tuxfamily.org/adeskbar/sources/%{name}-%{version}.tar.gz
 BuildRequires:  python2
-Requires:	pygtk2
-Requires:	python2-cairo
-Requires:	pygobject2
-Requires:	libwnck
-Requires:	python2-pyxdg
-BuildArch:	noarch
+Requires:       pygtk2
+Requires:       python2-cairo
+Requires:       pygobject2
+Requires:       libwnck
+Requires:       python2-pyxdg
+BuildArch:      noarch
 
 %description
 ADesk Bar is a easy, simple, unobtrusive application launcher for Openbox, yet
@@ -39,9 +39,6 @@ cp adeskbar.desktop $RPM_BUILD_ROOT/usr/share/applications/
 cp adeskbar.sh $RPM_BUILD_ROOT/usr/bin/adeskbar
 
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' $RPM_BUILD_ROOT/usr/share/adeskbar/main.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/%{name}/*

@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		swm
-Version:	1.3.4c
-Release:	15.1
-License:	GPL
-URL:		https://www.small-window-manager.de/
-Source0:	https://www.small-window-manager.de/%{name}-%{version}-src.tgz
-BuildRequires:	libX11-devel
-BuildRequires:	libXpm-devel
-Group:		Graphical desktop/Other
-Summary:	A small window manager for X11
+Name:           swm
+Version:        1.3.4c
+Release:        15.1
+License:        GPL
+URL:            https://www.small-window-manager.de/
+Source0:        https://www.small-window-manager.de/%{name}-%{version}-src.tgz
+BuildRequires:  libX11-devel
+BuildRequires:  libXpm-devel
+Group:          Graphical desktop/Other
+Summary:        A small window manager for X11
 
 %description 
 Swm is a small window manager for X11 designed for very small laptop-screens

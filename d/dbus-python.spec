@@ -32,7 +32,7 @@ Provides: dbus-python dbus-python2
 
 %prep
 %setup -q -n dbus-python-%{version}
-%patch0 -p1
+%patch 0 -p1
 
 # For new arches (aarch64/ppc64le), and patch0
 autoreconf -vif

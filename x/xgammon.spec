@@ -12,7 +12,7 @@ Source1: %name
 Source2: %{name}16.png
 Source3: %{name}32.png
 Source4: %{name}48.png
-Patch: %name-Imakefile-patch
+Patch0: %name-Imakefile-patch
 Patch1: %name-0.98a-alt-gcc3.3.patch
 BuildRequires: imake libX11-devel flex-static libXpm-devel libXt-devel libXaw-devel
 
@@ -24,8 +24,8 @@ on a remote X terminal, and will display a second board there for their use.
 
 %prep
 %setup -q
-%patch -p0
-%patch1 -p1
+%patch 0 -p0
+%patch 1 -p1
 sed -i 's|-lm|-lm -Wl,--allow-multiple-definition|' Imakefile
 sed -i 's|sys_siglist\[n\]|strsignal(n)|' save.c
 
@@ -63,9 +63,6 @@ EOF
 %{_datadir}/applications/xgammon.desktop
 %{_datadir}/icons/hicolor/*/apps/*.png
 %doc COPYING Copyright README
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sat Sep 29 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.98a

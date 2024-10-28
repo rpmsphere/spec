@@ -26,9 +26,6 @@ make
 %{__install} -m 0644 %{name}.6 $RPM_BUILD_ROOT%{_mandir}/man6
 %{__install} -m 0644 %{name}.ad $RPM_BUILD_ROOT%{_datadir}/X11/app-defaults/XBomb
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README COPYING ChangeLog
 %{_datadir}/X11/app-defaults/XBomb

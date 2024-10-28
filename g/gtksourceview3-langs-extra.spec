@@ -62,9 +62,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_datadir}/gtksourceview-3.0/language-specs
 install -m644 *.lang %{buildroot}%{_datadir}/gtksourceview-3.0/language-specs
 
-%clean 
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/gtksourceview-3.0/language-specs/*.lang
 

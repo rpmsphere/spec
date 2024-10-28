@@ -48,14 +48,14 @@ Authors:
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 export CFLAGS="$RPM_OPT_FLAGS"
 export CXXFLAGS="$RPM_OPT_FLAGS"
 ./configure \
-	--prefix=/usr \
-	%{_target_platform}
+        --prefix=/usr \
+        %{_target_platform}
 make STRIP=:
 
 %install

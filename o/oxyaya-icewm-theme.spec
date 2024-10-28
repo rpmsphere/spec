@@ -1,11 +1,11 @@
-Name:		oxyaya-icewm-theme
-Summary:	Oxygen and Aya theme for IceWM
-Version:	0.1
-Release:	9.1
-License:	GPL
-Group:		Graphical desktop/Icewm
-URL:		https://box-look.org/content/show.php/OxyAya?content=136242
-Source0:	https://box-look.org/CONTENT/content-files/136242-oxygen-aya-azul.tar.gz
+Name:           oxyaya-icewm-theme
+Summary:        Oxygen and Aya theme for IceWM
+Version:        0.1
+Release:        9.1
+License:        GPL
+Group:          Graphical desktop/Icewm
+URL:            https://box-look.org/content/show.php/OxyAya?content=136242
+Source0:        https://box-look.org/CONTENT/content-files/136242-oxygen-aya-azul.tar.gz
 BuildArch: noarch
 BuildRequires:  ghostscript-core ImageMagick
 

@@ -1,15 +1,15 @@
 %global fontname cf-fanwood
 
-Name:		%{fontname}-fonts
-Summary:	Based an old-style serif typeface Fairfield
-Version:	1.1
-Release:	2.1
-License:	MIT
-Source0:	https://bitbucket.org/sortsmill/sortsmill-fonts/downloads/fanwood-1.1.zip
-URL:		https://crudfactory.com/font/show/fanwood
-BuildArch:	noarch
-BuildRequires:	fontpackages-devel
-Requires:	fontpackages-filesystem
+Name:           %{fontname}-fonts
+Summary:        Based an old-style serif typeface Fairfield
+Version:        1.1
+Release:        2.1
+License:        MIT
+Source0:        https://bitbucket.org/sortsmill/sortsmill-fonts/downloads/fanwood-1.1.zip
+URL:            https://crudfactory.com/font/show/fanwood
+BuildArch:      noarch
+BuildRequires:  fontpackages-devel
+Requires:       fontpackages-filesystem
 
 %description
 Based on work of a famous Czech-American type designer of yesteryear.

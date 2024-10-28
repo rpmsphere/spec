@@ -1,18 +1,18 @@
-Name:		ext3grep
-Version:	0.10.2
-Release:	9
-Summary:	Investigation and recovery tool for ext3 filesystem
-Group:		Security
-License:	GPLv2+
-URL:		https://code.google.com/p/ext3grep/
-Source:		https://ext3grep.googlecode.com/files/ext3grep-%version.tar.gz
+Name:           ext3grep
+Version:        0.10.2
+Release:        9
+Summary:        Investigation and recovery tool for ext3 filesystem
+Group:          Security
+License:        GPLv2+
+URL:            https://code.google.com/p/ext3grep/
+Source:         https://ext3grep.googlecode.com/files/ext3grep-%version.tar.gz
 # Patch for bug 34 https://code.google.com/p/ext3grep/issues/detail?id=34
 # Issue with new ext2fs lib (patch from Debian)
-Patch0:		ext3grep-0.10.2-new-ext2fs.diff
+Patch0:         ext3grep-0.10.2-new-ext2fs.diff
 # From Debian
 # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=894650
-Patch1:		002_remove_i_dir_acl.diff
-BuildRequires:	pkgconfig(ext2fs)
+Patch1:         002_remove_i_dir_acl.diff
+BuildRequires:  pkgconfig(ext2fs)
 
 %description
 A tool to investigate an ext3 file system for deleted content and

@@ -27,9 +27,6 @@ make
 rm -rf %{buildroot}
 install -Dm755 nibbles %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README CHANGES
 %{_bindir}/nibbles

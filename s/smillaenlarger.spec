@@ -37,9 +37,6 @@ sed -i -e 's|/usr/share/doc/smillaenlarger|%{_docdir}/%{name}-%{version}|g' \
        -e 's|/usr/lib/smillaenlarger|%{_libexecdir}|g' debian/etc/smillaenlarger
 %{__install} -m0755 -D debian/etc/smillaenlarger %{buildroot}%{_bindir}/smillaenlarger
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %doc ReadMe.rtf WhatsNew.rtf changelog.txt gpl-3.0.txt
 %doc debian/etc/smillaenlarger.ini

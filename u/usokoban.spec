@@ -35,9 +35,6 @@ rm -rf $RPM_BUILD_ROOT
 %__install -D -m644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
 %__install -D -m644 %{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README INSTALL
 %{_bindir}/%{name}

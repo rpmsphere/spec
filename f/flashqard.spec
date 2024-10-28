@@ -25,7 +25,7 @@ waste your time on what you have already learnt.
   
 %prep
 %setup -q
-%patch1
+%patch 1
 sed -i '1i #include <QApplication>' src/MimeData.h
 sed -i '1i #include <QDir>' src/Utilities.cpp
 
@@ -45,9 +45,6 @@ install -Dm644 %{name}.desktop $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.d
 install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -a src/kgeography_data $RPM_BUILD_ROOT%{_datadir}/%{name}
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

@@ -1,16 +1,16 @@
-Summary:	Userspace bootsplash utility
-Summary(de.UTF-8):	Eine Boosplashes Utility die auf der Benutzerebene arbeitet
-Summary(pl.UTF-8):	Narzędzie do bootsplasha w przestrzeni użytkownika
-Name:		usplash
-Version:	0.5.19
-Release:	9.1
-License:	GPL
-Group:		Applications
-Source0:	https://ftp.debian.org/debian/pool/main/u/usplash/%{name}_%{version}.orig.tar.gz
-Patch0:		%{name}-includes.patch
-URL:		https://wiki.ubuntu.com/USplash
-BuildRequires:	gd-devel
-BuildRequires:	libpng-devel
+Summary:        Userspace bootsplash utility
+Summary(de.UTF-8):      Eine Boosplashes Utility die auf der Benutzerebene arbeitet
+Summary(pl.UTF-8):      Narzędzie do bootsplasha w przestrzeni użytkownika
+Name:           usplash
+Version:        0.5.19
+Release:        9.1
+License:        GPL
+Group:          Applications
+Source0:        https://ftp.debian.org/debian/pool/main/u/usplash/%{name}_%{version}.orig.tar.gz
+Patch0:         %{name}-includes.patch
+URL:            https://wiki.ubuntu.com/USplash
+BuildRequires:  gd-devel
+BuildRequires:  libpng-devel
 
 %description
 Usplash is a userspace application that uses the Linux framebuffer
@@ -33,11 +33,11 @@ wyświetlać informacje o sekwencji startowej w bardziej atrakcyjny
 sposób.
 
 %package devel
-Summary:	Usplash header files
-Summary(de.UTF-8):	Usplash header Dateien
-Summary(pl.UTF-8):	Pliki nagłówkowe usplasha
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+Summary:        Usplash header files
+Summary(de.UTF-8):      Usplash header Dateien
+Summary(pl.UTF-8):      Pliki nagłówkowe usplasha
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 Usplash header files.
@@ -50,18 +50,18 @@ Pliki nagłówkowe usplasha.
 
 %prep
 %setup -q -n usplash
-%patch0 -p0
+%patch 0 -p0
 
 %build
 %{__make} -C bogl \
-	CC="%{__cc} -Wl,--allow-multiple-definition" \
-	CFLAGS="-O2 -g -pipe -Wall -Wno-error -fPIC" \
-	LDFLAGS+=" -s"
+        CC="%{__cc} -Wl,--allow-multiple-definition" \
+        CFLAGS="-O2 -g -pipe -Wall -Wno-error -fPIC" \
+        LDFLAGS+=" -s"
 
 %{__make} \
-	CC="%{__cc} -Wl,--allow-multiple-definition" \
-	CFLAGS="-O2 -g -pipe -Wall -Wno-error -fPIC" \
-	LDFLAGS+=" -s"
+        CC="%{__cc} -Wl,--allow-multiple-definition" \
+        CFLAGS="-O2 -g -pipe -Wall -Wno-error -fPIC" \
+        LDFLAGS+=" -s"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -70,9 +70,6 @@ install -d $RPM_BUILD_ROOT%{_sbindir}
 %ifarch x86_64 aarch64
 mv %{buildroot}/lib %{buildroot}/lib64
 %endif
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 
 %files

@@ -4,7 +4,7 @@ Release: 14.1
 Source0: %{name}-%{version}.tar.gz
 Source1: %{name}.png
 Source2: %{name}.desktop
-Patch0:	%{name}-1.5-fix-str-fmt.patch
+Patch0: %{name}-1.5-fix-str-fmt.patch
 License: GNU General Public License
 Group: Amusements/Games/Action/Arcade
 URL: https://www.interq.or.jp/libra/oohara/xsoldier/
@@ -19,7 +19,7 @@ Oohara Yuuma <oohara@libra.interq.or.jp> took over the development of xsoldier.
 
 %prep
 %setup -q
-%patch0 -p1 -b .strfmt
+%patch 0 -p1 -b .strfmt
 
 %build
 %configure --with-sdl
@@ -29,9 +29,6 @@ make
 make DESTDIR=${RPM_BUILD_ROOT} mandir=%{_mandir} install
 install -Dm 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 install -Dm 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

@@ -44,9 +44,6 @@ ln -s %{name} %{buildroot}%{_bindir}/gvidcap
 
 echo -e 'Name[zh_TW]=極限螢幕錄影\nComment[zh_TW]=X11 螢幕攝影' >> %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf %{buildroot}
-
 %files -f %{name}.lang
 %doc README INSTALL AUTHORS ChangeLog
 %{_bindir}/%{name}

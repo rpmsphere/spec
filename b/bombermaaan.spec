@@ -64,9 +64,6 @@ EOF
 %{_datadir}/applications/*
 %{_datadir}/pixmaps/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.0
 - Rebuilt for Fedora

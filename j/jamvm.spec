@@ -49,9 +49,6 @@ make
 %install
 %makeinstall
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %{_bindir}/jamvm
 %{_libdir}/rt.jar

@@ -29,9 +29,6 @@ python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/*
 %{python2_sitelib}/*

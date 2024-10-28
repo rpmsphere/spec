@@ -39,9 +39,6 @@ to use both, either or none of the above icon/pixmap formats.
 %cmake_install
 %{__install} -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/xsessions/%{name}.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.md CHANGES.md COPYRIGHT
 %{_bindir}/%{name}

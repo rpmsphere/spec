@@ -7,7 +7,7 @@ Summary:       A graphical user interface for QEMU written in Qt4
 Group:         Graphical Desktop/Applications/Utilities
 URL:           https://qtemu.org/
 #Source:        https://switch.dl.sourceforge.net/sourceforge/qtemu/qtemu-%{version}.tar.bz2
-Source:	       gui-%{version}.tar.gz
+Source:        gui-%{version}.tar.gz
 License:       GPL
 BuildRequires: libpng-devel
 BuildRequires: gcc-c++ qt5-qtbase-devel
@@ -55,9 +55,6 @@ X-KDE-StartupNotify=false
 EOF
 
 chmod 755 $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %{_bindir}/qtemu

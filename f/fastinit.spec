@@ -36,11 +36,11 @@ network interfaces.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
 
 %build
 make -C src 
@@ -63,9 +63,6 @@ chmod 664 /var/log/wtmp /var/run/utmp
 chmod 600 /var/log/btmp
 
 %preun
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %config(noreplace) %verify(not md5 mtime size) /etc/adjtime

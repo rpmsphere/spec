@@ -17,9 +17,9 @@ compliant window managers.
 
 %prep
 %setup -q
-%patch0 -p2
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p2
+%patch 1 -p1
+%patch 2 -p1
 sed -i "s#@RPM_OPT_FLAGS@#$RPM_OPT_FLAGS#" config.mk
 
 %build

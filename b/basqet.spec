@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 
-Name:		basqet
+Name:           basqet
 Version: 0.2.0.rev135
 Release: 13.1
-License:	GPL
-Group:		Productivity/Office/Organizers
-Summary:	Notes and Data in Baskets
-URL:		https://code.google.com/p/basqet/
-Vendor:		Erik Ridderby <erik.ridderby@gmail.com>
-Source:		release_0.2.0-%{version}.tar.bz2
+License:        GPL
+Group:          Productivity/Office/Organizers
+Summary:        Notes and Data in Baskets
+URL:            https://code.google.com/p/basqet/
+Vendor:         Erik Ridderby <erik.ridderby@gmail.com>
+Source:         release_0.2.0-%{version}.tar.bz2
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, pkgconfig, pkgconfig(QtGui)
+BuildRequires:  gcc-c++, pkgconfig, pkgconfig(QtGui)
 
 %description
 Keep your notes, pictures, ideas, and information in Baskets.
@@ -24,9 +24,6 @@ qmake-qt4 PREFIX=/usr
 
 %install
 %{makeinstall} INSTALL_ROOT=$RPM_BUILD_ROOT
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc gpl-3.0.txt

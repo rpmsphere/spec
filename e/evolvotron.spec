@@ -52,9 +52,6 @@ StartupNotify=true
 Categories=Qt;Graphics;
 EOF
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.md %{name}/README %{name}/LICENSE %{name}/TODO %{name}/USAGE %{name}/%{name}.html
 %{_bindir}/%{name}*

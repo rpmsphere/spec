@@ -1,13 +1,13 @@
-Summary:	A project manager and rich text editor for writers
-Name:		plume-creator
-Version:	0.66.2
-Release:	1
-License:	GPLv3+
-Group:		Publishing
-URL:		https://www.plume-creator.eu/
-Source0:	https://sourceforge.net/projects/plume-creator/files/0.6/%{name}-%{version}.tar.gz
-BuildRequires:	qt4-devel
-#BuildRequires:	hunspell-devel
+Summary:        A project manager and rich text editor for writers
+Name:           plume-creator
+Version:        0.66.2
+Release:        1
+License:        GPLv3+
+Group:          Publishing
+URL:            https://www.plume-creator.eu/
+Source0:        https://sourceforge.net/projects/plume-creator/files/0.6/%{name}-%{version}.tar.gz
+BuildRequires:  qt4-devel
+#BuildRequires: hunspell-devel
 
 %description
 With %{name}, organize your writing projects. Scenes, notes, characters,...

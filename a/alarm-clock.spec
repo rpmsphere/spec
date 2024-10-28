@@ -89,9 +89,6 @@ rm -rf $RPM_BUILD_ROOT
 mv $RPM_BUILD_ROOT%{_datadir}/icons $RPM_BUILD_ROOT%{_datadir}/pixmaps
 %find_lang %{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %{_datadir}/doc/%{name}
 %{_bindir}/%{name}

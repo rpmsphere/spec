@@ -28,9 +28,6 @@ install -Dm644 xdglauncher.py $RPM_BUILD_ROOT%{python2_sitelib}/xdglauncher.py
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc GPL-2
 %{_bindir}/*

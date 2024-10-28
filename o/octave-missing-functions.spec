@@ -1,20 +1,20 @@
-%define	pkgname missing-functions
+%define pkgname missing-functions
 
-Summary:	Functions in MATLAB but not in Octave
+Summary:        Functions in MATLAB but not in Octave
 Name:       octave-%{pkgname}
-Version:	1.0.2
+Version:        1.0.2
 Release:    14.1
-Source0:	%{pkgname}-%{version}.tar.gz
-License:	GPLv2+
-Group:		Sciences/Mathematics
-URL:		https://octave.sourceforge.net/missing-functions/
-Conflicts:	octave-forge <= 20090607
-Requires:	octave >= 3.0.0
+Source0:        %{pkgname}-%{version}.tar.gz
+License:        GPLv2+
+Group:          Sciences/Mathematics
+URL:            https://octave.sourceforge.net/missing-functions/
+Conflicts:      octave-forge <= 20090607
+Requires:       octave >= 3.0.0
 BuildRequires:  fltk, gnuplot, java-1.8.0-openjdk-headless, lua
 BuildRequires:  octave-devel >= 3.0.0
 BuildRequires:  pkgconfig(gl)
 BuildRequires:  pkgconfig(glu)
-BuildArch:	noarch
+BuildArch:      noarch
 Requires:       octave(api) = %{octave_api}
 Requires(post): octave
 Requires(postun): octave
@@ -37,9 +37,6 @@ tar zxf %{SOURCE0}
 mv %{pkgname}-%{version}/COPYING .
 mv %{pkgname}-%{version}/DESCRIPTION .
 
-%clean
-
-%post
 %octave_cmd pkg rebuild
 
 %preun

@@ -1,21 +1,21 @@
-Name:	    cultivation
+Name:       cultivation
 Version:    9
 Release:    8
 Summary:    A game about the interactions within a gardening community
 License:    Public Domain
-Group:	    Games/Strategy
-URL:	    https://cultivation.sourceforge.net/
+Group:      Games/Strategy
+URL:        https://cultivation.sourceforge.net/
 Source0:    https://sourceforge.net/projects/cultivation/files/cultivation/v9/Cultivation_%{version}_UnixSource.tar.gz
 Patch0:     Cultivation-9-deb-portaudio.patch
 #Patch1:     Cultivation-9-deb-abs_paths.patch
 Patch2:     Cultivation-9-deb-math_h.patch
 Patch3:     Cultivation-9-upstream-fix_crash.patch
 Patch4:     Cultivation-9-mageia-build64bit.patch
-BuildRequires:	mesa-libGLU-devel
-BuildRequires:	freeglut-devel
-BuildRequires:	portaudio-devel
-BuildRequires:	libpng-devel
-BuildRequires:	ghostscript-core ImageMagick
+BuildRequires:  mesa-libGLU-devel
+BuildRequires:  freeglut-devel
+BuildRequires:  portaudio-devel
+BuildRequires:  libpng-devel
+BuildRequires:  ghostscript-core ImageMagick
 
 %description
 Cultivation is a game about a community of gardeners growing food
@@ -36,11 +36,11 @@ Cultivation generates fresh visuals, music, and behaviors.
 
 %prep
 %setup -q -n Cultivation_%{version}_UnixSource
-%patch0 -p1
+%patch 0 -p1
 #patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
 sed -i 's|PortAudioStream|PaStream|' game2/gameSource/sound/SoundPlayer.h
 sed -i 's|GetDefaultOutputDeviceID|GetDefaultOutputDevice|' game2/gameSource/sound/SoundPlayer.cpp
 sed -i -e 's|uint32_t|long unsigned int|' -e 's|PaTimestamp|PaTime|' game2/gameSource/sound/SoundPlayer.cpp
@@ -49,46 +49,46 @@ sed -i -e '163,165d' -e '167,169d' -e '172d' game2/gameSource/sound/SoundPlayer.
 %build
 export CFLAGS+=" $RPM_OPT_FLAGS -fPIC -DPIC"
 pushd game2
-	chmod u+x configure
-	./configure --linux
+        chmod u+x configure
+        ./configure --linux
 popd
-	convert -type Grayscale -negate ./game2/build/macOSX/icon128_mask.png mask.png
-	composite -compose CopyOpacity mask.png ./game2/build/macOSX/icon128_color.png cultivation.png
-	mkdir -p 32x32
-	convert -scale 32x32 cultivation.png 32x32/cultivation.png
-	convert 32x32/cultivation.png 32x32/cultivation.xpm
-	sed -i -e 's/-lX11//' game2/gameSource/Makefile
-	sed -i -e 's/^DEBUG_FLAG = .*/DEBUG_FLAG = /' game2/gameSource/Makefile
-	sed -i -e 's/^OPTIMIZE_FLAG = .*/OPTIMIZE_FLAG = /' game2/gameSource/Makefile
-	sed -i -e 's/^COMPILE_FLAGS = /COMPILE_FLAGS = ${CFLAGS} -fpermissive /' game2/gameSource/Makefile
-	%__make -C game2/gameSource CFLAGS="${CFLAGS} -DDATADIR=%{_datadir}/%{name}"
+        convert -type Grayscale -negate ./game2/build/macOSX/icon128_mask.png mask.png
+        composite -compose CopyOpacity mask.png ./game2/build/macOSX/icon128_color.png cultivation.png
+        mkdir -p 32x32
+        convert -scale 32x32 cultivation.png 32x32/cultivation.png
+        convert 32x32/cultivation.png 32x32/cultivation.xpm
+        sed -i -e 's/-lX11//' game2/gameSource/Makefile
+        sed -i -e 's/^DEBUG_FLAG = .*/DEBUG_FLAG = /' game2/gameSource/Makefile
+        sed -i -e 's/^OPTIMIZE_FLAG = .*/OPTIMIZE_FLAG = /' game2/gameSource/Makefile
+        sed -i -e 's/^COMPILE_FLAGS = /COMPILE_FLAGS = ${CFLAGS} -fpermissive /' game2/gameSource/Makefile
+        %__make -C game2/gameSource CFLAGS="${CFLAGS} -DDATADIR=%{_datadir}/%{name}"
 
 %install
 install -d -m 755 %{buildroot}%{_bindir}
 install -m 755 game2/gameSource/Cultivation \
-	%{buildroot}%{_bindir}/%{name}.real
+        %{buildroot}%{_bindir}/%{name}.real
 
 install -d -m 755 %{buildroot}%{_datadir}/%{name}
 install -m 644 game2/gameSource/font.tga \
-	%{buildroot}%{_datadir}/%{name}
+        %{buildroot}%{_datadir}/%{name}
 install -m 644 game2/gameSource/features.txt \
-	%{buildroot}%{_datadir}/%{name}
+        %{buildroot}%{_datadir}/%{name}
 install -m 644 game2/gameSource/language.txt \
-	%{buildroot}%{_datadir}/%{name}
+        %{buildroot}%{_datadir}/%{name}
 install -d -m 755 %{buildroot}%{_datadir}/%{name}/languages
 install -m 644 game2/gameSource/languages/*.txt \
-	%{buildroot}%{_datadir}/%{name}/languages
+        %{buildroot}%{_datadir}/%{name}/languages
 
 # startscript
 cat > %{buildroot}%{_bindir}/%{name} <<'EOF'
 #!/bin/bash
 if [ ! -d $HOME/.%{name} ]; then
-	mkdir -p $HOME/.%{name}
-	cd $HOME/.%{name}
-	cp %{_datadir}/%{name}/*.txt .
-	ln -s %{_datadir}/%{name}/*.tga .
-	ln -s %{_datadir}/%{name}/languages .
-	ln -s %{_bindir}/%{name}.real .
+        mkdir -p $HOME/.%{name}
+        cd $HOME/.%{name}
+        cp %{_datadir}/%{name}/*.txt .
+        ln -s %{_datadir}/%{name}/*.tga .
+        ln -s %{_datadir}/%{name}/languages .
+        ln -s %{_bindir}/%{name}.real .
 fi
 
 cd $HOME/.%{name}
@@ -97,13 +97,13 @@ cd $HOME/.%{name}
 case "$LC_MESSAGES" in
     fr* )
         language="French"
-	;;
+        ;;
     pt* )
         language="Portuguese"
-	;;
+        ;;
     * )
         language="English"
-	;;
+        ;;
 esac
 echo $language > ./language.txt
 

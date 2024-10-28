@@ -5,11 +5,11 @@ Version: 1.4.3
 Release: 1
 License: GPLv.2
 Summary: A logical board game as known as Halma
-Summary (ru_RU.KOI8-R):	Игра в уголки (другое название -- хальма)
+Summary (ru_RU.KOI8-R): Игра в уголки (другое название -- хальма)
 Group: Games/Boards
 Source: %name-%version.tar.bz2
 Source1: %name.desktop
-Patch:	corners-1.4.3-alt-gcc4.7.patch
+Patch0: corners-1.4.3-alt-gcc4.7.patch
 BuildRequires: gcc-c++ gtk2-devel
 
 %description
@@ -28,7 +28,7 @@ strong and you need to have good mathematical abilities to defeat it.
 
 %prep
 %setup -q
-%patch -p1
+%patch 0 -p1
 sed -i -e '36i extern "C++" {' -e '98i }' lcore_src/funcs.h
 sed -i -e '6i extern "C++" {' -e '$i }' lcore_src/pointers.h
 sed -i -e '7i extern "C++" {' -e '49i }' lcore_src/strings.h

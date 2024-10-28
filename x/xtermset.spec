@@ -24,9 +24,9 @@ Authors:
 
 %prep
 %setup -q
-%patch0
-%patch1
-%patch2
+%patch 0
+%patch 1
+%patch 2
 
 %build
 aclocal
@@ -46,9 +46,6 @@ make "DESTDIR=$RPM_BUILD_ROOT" install
 /usr/bin/xtermset
 %{_mandir}/man?/*
 /usr/share/xtermset/
-
-%clean
-rm -rf  $RPM_BUILD_ROOT
 
 %changelog
 * Mon Sep 26 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.2

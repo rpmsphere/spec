@@ -19,7 +19,7 @@ must have an ANSI C compiler present on your system for Awka to work.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 export CFLAGS="-O2 -g -pipe -Wall -Wno-format-security -fPIE"
@@ -29,9 +29,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig

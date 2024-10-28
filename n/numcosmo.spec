@@ -9,7 +9,7 @@ Summary:        Numerical Cosmology
 Group:          Productivity/Scientific/Physics
 License:        GPL-3.0
 URL:            https://github.com/NumCosmo/NumCosmo
-#Source0:	https://github.com/NumCosmo/NumCosmo/releases/download/v%{version}/numcosmo-%{version}.tar.gz
+#Source0:       https://github.com/NumCosmo/NumCosmo/releases/download/v%{version}/numcosmo-%{version}.tar.gz
 Source0:        NumCosmo-master.zip
 BuildRequires:  gtk-doc atlas-devel
 BuildRequires:  gobject-introspection-devel glib2-devel gsl-devel gmp-devel mpfr-devel fftw3-devel sqlite-devel lapack-devel
@@ -77,9 +77,6 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %ifarch x86_64 aarch64
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/doc/%{name}-%{version}

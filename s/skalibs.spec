@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Name:		skalibs
-Version:	2.10.0.2
-Release:	1
-Summary:	The skarnet.org development library
-License:	BSD
-Group:		Development/Other
-URL:		https://www.skarnet.org/software/skalibs/
-Source0:	https://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
+Name:           skalibs
+Version:        2.10.0.2
+Release:        1
+Summary:        The skarnet.org development library
+License:        BSD
+Group:          Development/Other
+URL:            https://www.skarnet.org/software/skalibs/
+Source0:        https://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
 
 %description
 skalibs is a package centralizing the public-domain C
@@ -44,9 +44,6 @@ rm -rf %{buildroot}
 %ifarch x86_64 aarch64
 mv %{buildroot}/usr/lib/* %{buildroot}/usr/lib64/
 %endif
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc NEWS AUTHORS README COPYING

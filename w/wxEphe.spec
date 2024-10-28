@@ -8,7 +8,7 @@ URL:            https://www.jpmr.org/
 Source:         https://sourceforge.net/projects/wxephe/files/wxEphe-%version/wxEphe-%version.tar.xz
 BuildRequires:  libtool
 BuildRequires:  gcc-c++
-BuildRequires:  wxGTK3-devel
+BuildRequires:  wxGTK-devel
 
 %description
 wxEphe displays astronomical ephemeris for the Sun, the Moon and

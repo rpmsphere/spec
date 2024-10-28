@@ -56,9 +56,6 @@ desktop-file-install                                     \
         --dir $RPM_BUILD_ROOT%{_datadir}/applications    \
         kconfigure.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %_bindir/*
 %_mandir/*

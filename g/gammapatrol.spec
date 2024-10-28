@@ -6,8 +6,8 @@ Group:          Amusements/Games
 License:        GPLv2+
 URL:            https://pink.odahoda.de/attic/gammapatrol/
 Source0:        https://pink.odahoda.de/attic/gammapatrol/gammapatrol-preview-0.3.tar.bz2
-#Patch0:		exec_setting.patch
-Patch0:		gammapatrol_fixed_compile_bug.patch
+#Patch0:                exec_setting.patch
+Patch0:         gammapatrol_fixed_compile_bug.patch
 
 %description
 Gamma Patrol is an old-style, vertical scrolling space-shooter.
@@ -17,7 +17,7 @@ kinds of weapon systems.
 %prep
 #%setup -q -c %{name}-%{version}
 %setup -q -n %{name}
-%patch0 -p1
+%patch 0 -p1
 
 
 %build
@@ -56,11 +56,8 @@ install -Dm 755 %{name} %{buildroot}%{_datadir}/%{name}/%{name}
 install -Dm 755 %{name}.sh %{buildroot}%{_bindir}/%{name}
 
 for i in bob fnt gfx help libpsdl mus sfx src; do
-	cp -a $i/ %{buildroot}%{_datadir}/%{name}/
+        cp -a $i/ %{buildroot}%{_datadir}/%{name}/
 done
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/pixmaps/%{name}.png

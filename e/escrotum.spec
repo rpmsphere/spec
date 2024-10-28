@@ -28,9 +28,6 @@ python2 setup.py build
 %install
 python2 setup.py install --single-version-externally-managed -O1 --root=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.rst LICENCE.txt
 %{_bindir}/%{name}

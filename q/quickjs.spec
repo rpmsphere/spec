@@ -7,11 +7,11 @@ Release:        2
 Summary:        A small and embeddable Javascript engine
 License:        BSD
 URL:            https://bellard.org/quickjs/
-Source0:	https://bellard.org/quickjs/quickjs-%{_version}.tar.xz
+Source0:        https://bellard.org/quickjs/quickjs-%{_version}.tar.xz
 
 %package devel
-Summary:	Development files for package %{name}
-Requires:	%{name}
+Summary:        Development files for package %{name}
+Requires:       %{name}
 
 %description
 QuickJS supports the ES2020 specification 1 including modules, asynchronous

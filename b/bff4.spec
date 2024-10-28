@@ -22,7 +22,7 @@ e.g. [->+>++<<]. Linear loop is then executed in one step.
 
 %prep
 cp %{SOURCE0} %{SOURCE1} .
-%patch0
+%patch 0
 
 %build
 gcc %{name}.c -o %{name} %{optflags}

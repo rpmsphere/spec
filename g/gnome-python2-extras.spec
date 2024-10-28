@@ -114,7 +114,7 @@ icons via Python.
 
 %prep
 %setup -q -n gnome-python-extras-%{version}
-%patch1 -p1 -b .update-for-2.27.2
+%patch 1 -p1 -b .update-for-2.27.2
 
 %build
 
@@ -140,9 +140,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 find $RPM_BUILD_ROOT -name '*.la' -exec rm {} \;
 
 rm -rf $RPM_BUILD_ROOT/%{python_sitearch}/gtk-2.0/gksu
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog NEWS

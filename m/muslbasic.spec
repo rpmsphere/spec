@@ -28,9 +28,6 @@ install -Dm755 %{_name} %{buildroot}%{_bindir}/%{name}
 %doc *.md manual.html
 %{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Mon Sep 11 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1234
 - Rebuilt for Fedora

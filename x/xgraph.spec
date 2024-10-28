@@ -21,9 +21,9 @@ control the appearance of most components of the graph.
 
 %prep
 %setup -q 
-%patch0 -p1
-%patch1 -p1
-%patch2 -p0
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p0
 
 %build
 %configure
@@ -38,9 +38,6 @@ mv %buildroot%{_mandir}/man1/xgraph.man %buildroot%{_mandir}/man1/xgraph.1
 %doc README* INSTALL examples
 %{_bindir}/xgraph
 %{_mandir}/man1/xgraph.*
-
-%clean
-rm -fr %buildroot
 
 %changelog
 * Sun Feb 22 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 12.1

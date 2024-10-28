@@ -1,15 +1,15 @@
 %define theme_name    Rosa
 
-Summary:	%{theme_name} icon theme
-Name:		rosa-icon-theme
-Version:	1.1.7
-Release:	3.1
-Source0:	rosa-icons-devel-v%{version}.tar.gz
-License:	GPLv2
-URL:		www.rosalinux.com
-Group:		Graphical desktop/Other
-BuildArch:	noarch
-Requires:	gnome-icon-theme
+Summary:        %{theme_name} icon theme
+Name:           rosa-icon-theme
+Version:        1.1.7
+Release:        3.1
+Source0:        rosa-icons-devel-v%{version}.tar.gz
+License:        GPLv2
+URL:            www.rosalinux.com
+Group:          Graphical desktop/Other
+BuildArch:      noarch
+Requires:       gnome-icon-theme
 
 %description
 ROSA icon theme is high quality icon theme for KDE, GNOME and Xfce.

@@ -1,13 +1,13 @@
-Name:		woof
-Version:	20220202
-Release:	1
-Summary:	Simple Web-based File Exchange
-Source0:	https://github.com/simon-budig/woof/archive/refs/heads/master.zip#/%{name}-master.zip
-URL:		https://www.home.unix-ag.org/simon/woof.html
-Group:		Networking/Remote access
-License:	GPLv3+
-BuildArch:	noarch
-Requires:	python tar net-tools
+Name:           woof
+Version:        20220202
+Release:        1
+Summary:        Simple Web-based File Exchange
+Source0:        https://github.com/simon-budig/woof/archive/refs/heads/master.zip#/%{name}-master.zip
+URL:            https://www.home.unix-ag.org/simon/woof.html
+Group:          Networking/Remote access
+License:        GPLv3+
+BuildArch:      noarch
+Requires:       python tar net-tools
 
 %description
 Woof (Web Offer One File) tries a different approach. It assumes that

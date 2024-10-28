@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/wsl-tps
+%define fontdir %{_datadir}/fonts/wsl-tps
 
 Summary: WSL Taiwan Phonetic Fonts
 Name: wsl-tps-fonts
@@ -25,9 +25,6 @@ WSL TPS: CC0 1.0
 rm -rf %{buildroot}
 install -d %{buildroot}%{fontdir}
 install -m 0644 */*.ttf %{buildroot}%{fontdir}
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /usr/bin/fc-cache 2> /dev/null

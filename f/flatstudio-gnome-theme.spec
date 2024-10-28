@@ -44,9 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes
 cp -a %{theme_name}* $RPM_BUILD_ROOT%{_datadir}/themes
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}*
 

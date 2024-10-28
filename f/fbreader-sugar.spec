@@ -5,7 +5,7 @@ Release:        1
 License:        MIT
 Source:         %{name}.zip
 Group:          Sugar/Activities
-BuildArch:	noarch
+BuildArch:      noarch
 Requires:       sugar
 Requires:       libsugarize
 Requires:       fbreader
@@ -25,9 +25,6 @@ chmod 755 bin/fbreader-activity
 cp -a setup.py activity bin %{buildroot}%{_datadir}/sugar/activities/FBReader.activity
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/sugar/activities/FBReader.activity/setup.py
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_datadir}/sugar/activities/FBReader.activity

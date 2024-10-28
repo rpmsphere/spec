@@ -32,7 +32,7 @@ mbrola-de Pakete.
 
 %prep
 %setup -qn MBROLA-%{version} -a 0 -a 2
-%patch0 -p1
+%patch 0 -p1
 mkdir txt2pho-%{tver}/lib txt2pho-%{tver}/obj
 sed -i 's/SYNTH_VERSION.*/SYNTH_VERSION \"%{version}\"/' Misc/common.h
 
@@ -56,9 +56,6 @@ install -m 755 preproc %{buildroot}%{_bindir}/
 install -m 644 data/PPRules/rules.lst %{buildroot}%{_datadir}/mbrola/
 install -m 644 data/hadifix.abk %{buildroot}%{_datadir}/mbrola/
 install -m 755 %{SOURCE3} %{buildroot}%{_bindir}/
-
-%clean
-%{__rm} -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc README.md

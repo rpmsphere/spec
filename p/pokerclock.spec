@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 
-Name:				 pokerclock
-Version:			 1.0.6
-Release:			 7.1
-Summary:			 Poker Tournament Clock
-Source:			 pokerclock-%{version}.tar.bz2
+Name:                            pokerclock
+Version:                         1.0.6
+Release:                         7.1
+Summary:                         Poker Tournament Clock
+Source:                  pokerclock-%{version}.tar.bz2
 Patch1:         pokerclock-fix_cmake.patch
 Patch2:         pokerclock-fix_paths.patch
-URL:				 https://sourceforge.net/projects/pokerclock/
-Group:			 Amusements/Games
-License:			 GNU General Public License version 2 or later (GPL v2 or later)
+URL:                             https://sourceforge.net/projects/pokerclock/
+Group:                   Amusements/Games
+License:                         GNU General Public License version 2 or later (GPL v2 or later)
 BuildRequires:   libpng-devel
-BuildRequires:	 qt4-devel openssl-devel
-BuildRequires:	 gcc-c++ cmake gcc make glibc-devel
+BuildRequires:   qt4-devel openssl-devel
+BuildRequires:   gcc-c++ cmake gcc make glibc-devel
 
 %description
 A clock for tournaments of Poker.
@@ -30,8 +30,8 @@ Main features:
 
 %prep
 %setup -q -n pokerclock
-%patch1
-%patch2
+%patch 1
+%patch 2
 %__mv src/sounds/event.wav src/sounds/pokerclock-event.wav
 
 %build
@@ -46,9 +46,6 @@ pushd build
 make DESTDIR=$RPM_BUILD_ROOT install
 popd #build
 sed -i 's|Game;|Game;Emulator;|' %{buildroot}%{_datadir}/applications/pokerclock.desktop
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc CHANGELOG COPYING TODO

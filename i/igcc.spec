@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
-Summary: 	Interactive GCC
-Name: 		igcc
-Version: 	0.2
-Release: 	4.1
-License: 	GPL
-Group: 		Development/Python
-Source: 	https://sourceforge.net/projects/igcc/files/%{name}-%{version}.tar.bz2
-URL:		https://www.artificialworlds.net/wiki/IGCC/IGCC
-BuildRequires: 	python2-devel
-BuildArch: 	noarch
+Summary:        Interactive GCC
+Name:           igcc
+Version:        0.2
+Release:        4.1
+License:        GPL
+Group:          Development/Python
+Source:         https://sourceforge.net/projects/igcc/files/%{name}-%{version}.tar.bz2
+URL:            https://www.artificialworlds.net/wiki/IGCC/IGCC
+BuildRequires:  python2-devel
+BuildArch:      noarch
 
 %description 
 IGCC is a real-eval-print loop (REPL) simulator for C/C++ programmers.
@@ -27,9 +27,6 @@ install -d $RPM_BUILD_ROOT%{python2_sitelib}
 cp -a lib%{name} $RPM_BUILD_ROOT%{python2_sitelib}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean 
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt

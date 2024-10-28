@@ -32,9 +32,9 @@ autoreconf -fiv
 #add_optflags -include stddef.h
 export CPPFLAGS="%optflags"
 %configure \
-	--bindir=%_libdir/%name/bin \
-	--datadir=%_libdir/%name/share \
-	--with-x
+        --bindir=%_libdir/%name/bin \
+        --datadir=%_libdir/%name/share \
+        --with-x
 %ifarch aarch64
 sed -i 's|define HAVE_FPU_CONTROL_H 1|undef HAVE_FPU_CONTROL_H|' include/lushconf.h
 %endif

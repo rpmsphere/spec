@@ -7,7 +7,7 @@ Group:         Graphical Desktop/Applications/Games
 URL:           https://flibuste.net/libre/morpyon/
 Source0:       https://flibuste.net/libre/morpyon/Morpyon-%{version}.tar.gz
 Source1:       morpyon.desktop
-Patch:         morpyon-2.0.1-path.patch
+Patch0:         morpyon-2.0.1-path.patch
 License:       GPL
 BuildRequires: python2-devel
 BuildRequires: pygame-devel
@@ -20,7 +20,7 @@ on a board against a computer opponent.
 
 %prep
 %setup -q -n Morpyon-%{version}
-%patch -p1
+%patch 0 -p1
 
 %build
 python2 setup.py build
@@ -38,9 +38,6 @@ install -D -m644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/morpyon_pygame.py

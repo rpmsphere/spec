@@ -1,14 +1,14 @@
-%define	fontdir	%{_datadir}/fonts/cwtex
+%define fontdir %{_datadir}/fonts/cwtex
 
-Summary:	Improved cwTeX TrueType baseline fonts
-Name:		cwtex-q-fonts
-Version:	0.4
-Release:	5.1
-License:	GPLv2+ (OFL for *ZH)
-Group:		User Interface/X
-URL:		https://github.com/l10n-tw/cwtex-q-fonts
-BuildArch:	noarch
-Source:		%{name}-v04.tar.xz
+Summary:        Improved cwTeX TrueType baseline fonts
+Name:           cwtex-q-fonts
+Version:        0.4
+Release:        5.1
+License:        GPLv2+ (OFL for *ZH)
+Group:          User Interface/X
+URL:            https://github.com/l10n-tw/cwtex-q-fonts
+BuildArch:      noarch
+Source:         %{name}-v04.tar.xz
 
 %description
 Those five TrueType fonts (ming,kai,fs,heib,yen face) are transformed

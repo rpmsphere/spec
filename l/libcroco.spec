@@ -28,8 +28,8 @@ files to allow you to develop with libcroco.
 
 %prep
 %setup -q
-%patch0 -p1 -b .multilib
-%patch1 -p1 -b .CVE-2020-12825
+%patch 0 -p1 -b .multilib
+%patch 1 -p1 -b .CVE-2020-12825
 
 %build
 %configure --disable-static

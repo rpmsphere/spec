@@ -41,9 +41,6 @@ Icon=fsv
 Categories=System;
 EOF
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc doc.rpm/*
 %config(noreplace) %{_sysconfdir}/X11/wmconfig/fsv

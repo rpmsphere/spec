@@ -36,9 +36,6 @@ rm -f $RPM_BUILD_ROOT%{_infodir}/dir
 %{_infodir}/fastjar.info.*
 %{_mandir}/man1/*.1.*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.98
 - Rebuilt for Fedora

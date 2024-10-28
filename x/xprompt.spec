@@ -10,7 +10,7 @@ Version:        91.9.28
 Release:        2406.1
 Summary:        Small tool for prompting users
 Source:         xprompt-28sep91.tar.gz
-Patch:          xprompt-warn.diff
+Patch0:          xprompt-warn.diff
 
 %description
 Small tool to ask the user for one or more responses (e.g., from batch
@@ -24,7 +24,7 @@ Authors:
 
 %prep
 %setup -n xprompt-28sep91
-%patch
+%patch 0
 
 %build
 xmkmf -a

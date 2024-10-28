@@ -37,9 +37,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 sed -i 's|^OnlyShowIn=.*|Icon=%{name}|' $RPM_BUILD_ROOT%{_datadir}/applications/unicode.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README
 %dir %{_sysconfdir}/xscreensaver

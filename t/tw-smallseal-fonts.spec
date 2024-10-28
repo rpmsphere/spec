@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/tw-smallseal
+%define fontdir %{_datadir}/fonts/tw-smallseal
 
 Summary: Taiwan TrueType Fonts -- Small-Seal Face
 Name: tw-smallseal-fonts

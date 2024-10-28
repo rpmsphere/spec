@@ -27,9 +27,6 @@ device in both megabits per second and packets per second.
 rm -rf $RPM_BUILD_ROOT
 install -Dp -m 0755 %{name}.pl $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 

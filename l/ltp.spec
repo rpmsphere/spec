@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 %global __os_install_post %{nil}
 
-Summary:	Linux Test Project
-Name:		ltp
-Version:	20240129
-Release:	1
-License:	GPLv2+
-Group:		Development/Kernel
-URL:		https://github.com/linux-test-project/ltp
-Source0:	http://downloads.sourceforge.net/project/%{name}/LTP%20Source/%{name}-%{version}/%{name}-full-%{version}.tar.bz2
-BuildRequires:	flex
-BuildRequires:	rsync
-Requires:	dialog
-Patch0:		ltp-getcpu.patch
+Summary:        Linux Test Project
+Name:           ltp
+Version:        20240129
+Release:        1
+License:        GPLv2+
+Group:          Development/Kernel
+URL:            https://github.com/linux-test-project/ltp
+Source0:        http://downloads.sourceforge.net/project/%{name}/LTP%20Source/%{name}-%{version}/%{name}-full-%{version}.tar.bz2
+BuildRequires:  flex
+BuildRequires:  rsync
+Requires:       dialog
+Patch0:         ltp-getcpu.patch
 
 %description
 The Linux Test Project is a joint project with SGI, IBM, OSDL, and Bull with a

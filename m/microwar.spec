@@ -1,16 +1,16 @@
-%define	_name	MicroWar
-Name:			microwar
-Version:		2.0rc3
-Release:		1
-Summary:		A space invaders style arcade game
-Summary(zh_TW):	一款太空入侵者類型的大型遊戲
-Group:			Amusements/Games
-License:		BSD License
-URL:			https://microwar.sourceforge.net/
-Source0:		MW20rc3-source.zip
-Patch0:			%{_name}-configobj.patch
-Requires:		python2-pygame
-BuildArch:		noarch
+%define _name   MicroWar
+Name:                   microwar
+Version:                2.0rc3
+Release:                1
+Summary:                A space invaders style arcade game
+Summary(zh_TW): 一款太空入侵者類型的大型遊戲
+Group:                  Amusements/Games
+License:                BSD License
+URL:                    https://microwar.sourceforge.net/
+Source0:                MW20rc3-source.zip
+Patch0:                 %{_name}-configobj.patch
+Requires:               python2-pygame
+BuildArch:              noarch
 
 %description
 MicroWar is 'Space Invaders' style arcade game, in the cruel world of
@@ -25,7 +25,7 @@ or restore life...
 
 %prep
 %setup -q -n %{_name}-%{version}
-%patch0 
+%patch 0 
 
 # fix error filename to execute correctly
 %__mv data/sprites/mac-IIci.png data/sprites/mac-IICi.png
@@ -49,25 +49,25 @@ rm -rf $RPM_BUILD_ROOT
 %__install -d $RPM_BUILD_ROOT%{_datadir}/%{_name}/English.lproj/MainMenu.nib
 %__install -m 644 *.py $RPM_BUILD_ROOT%{_datadir}/%{_name}
 %__install -m 644 data/*.ini \
-	$RPM_BUILD_ROOT%{_datadir}/%{_name}/data
+        $RPM_BUILD_ROOT%{_datadir}/%{_name}/data
 %__install -m 644 data/backgrounds/*.jpg \
-	$RPM_BUILD_ROOT%{_datadir}/%{_name}/data/backgrounds
+        $RPM_BUILD_ROOT%{_datadir}/%{_name}/data/backgrounds
 %__install -m 644 data/fonts/*.ttf \
-	$RPM_BUILD_ROOT%{_datadir}/%{_name}/data/fonts
+        $RPM_BUILD_ROOT%{_datadir}/%{_name}/data/fonts
 %__install -m 644 data/sounds/*.ogg \
-	$RPM_BUILD_ROOT%{_datadir}/%{_name}/data/sounds
+        $RPM_BUILD_ROOT%{_datadir}/%{_name}/data/sounds
 %__install -m 644 data/sprites/*.png \
-	$RPM_BUILD_ROOT%{_datadir}/%{_name}/data/sprites
+        $RPM_BUILD_ROOT%{_datadir}/%{_name}/data/sprites
 %__install -m 644 doc/*.html \
-	$RPM_BUILD_ROOT%{_datadir}/%{_name}/doc
+        $RPM_BUILD_ROOT%{_datadir}/%{_name}/doc
 %__install -m 644 doc/history.txt \
-	-D $RPM_BUILD_ROOT%{_datadir}/%{_name}/doc/history.txt
+        -D $RPM_BUILD_ROOT%{_datadir}/%{_name}/doc/history.txt
 %__install -m 644 licence/*.txt \
-	$RPM_BUILD_ROOT%{_datadir}/%{_name}/licence/
+        $RPM_BUILD_ROOT%{_datadir}/%{_name}/licence/
 %__install -m 644 English.lproj/mwar.icns \
-	-D $RPM_BUILD_ROOT%{_datadir}/%{_name}/English.lproj/mwar.icns
+        -D $RPM_BUILD_ROOT%{_datadir}/%{_name}/English.lproj/mwar.icns
 %__install -m 644 English.lproj/MainMenu.nib/*.nib \
-	$RPM_BUILD_ROOT%{_datadir}/%{_name}/English.lproj/MainMenu.nib
+        $RPM_BUILD_ROOT%{_datadir}/%{_name}/English.lproj/MainMenu.nib
 
 # bin
 %__install -d $RPM_BUILD_ROOT%{_bindir}
@@ -81,7 +81,7 @@ EOF
 # icon
 %__install -d $RPM_BUILD_ROOT%{_datadir}/pixmaps
 %__install -m 644 data/sprites/saucer-left.png -D \
-	$RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
+        $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 
 # .desktop
 %__install -d $RPM_BUILD_ROOT%{_datadir}/applications
@@ -97,9 +97,6 @@ Type=Application
 StartupNotify=true
 Categories=Game;ArcadeGame;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/%{_name}

@@ -45,9 +45,6 @@ make
 rm -rf %{buildroot}
 make DESTDIR=%{buildroot} install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_libdir}/libmbfly.so*
 

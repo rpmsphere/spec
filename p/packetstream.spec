@@ -45,9 +45,6 @@ mv lib lib64
 make DESTDIR=$RPM_BUILD_ROOT LIBDIR=lib install
 %endif
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
@@ -62,5 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1
 - Rebuilt for Fedora
-* Thu Jun 25 2008 Mathias Homann <admin@eregion.de>
+* Wed Jun 25 2008 Mathias Homann <admin@eregion.de>
 - initial import

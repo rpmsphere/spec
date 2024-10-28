@@ -1,5 +1,5 @@
 Name:           subst
-Version:		1.0
+Version:                1.0
 Release:        3.1
 Summary:        Subst utility from AltLinux
 Group:          Console
@@ -21,9 +21,6 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/subst

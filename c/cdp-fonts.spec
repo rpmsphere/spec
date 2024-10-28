@@ -1,5 +1,5 @@
 %define fontname cdp
-%define	fontdir	%{_datadir}/fonts/%{fontname}
+%define fontdir %{_datadir}/fonts/%{fontname}
 
 Summary: Fonts from Chinese Documents Processing Lab
 Name: %{fontname}-fonts
@@ -24,9 +24,6 @@ Ancient chinese fonts from Chinese Documents Processing Lab.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{fontdir}
 install -m 0644 *.ttf $RPM_BUILD_ROOT%{fontdir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 /usr/bin/fc-cache 2> /dev/null

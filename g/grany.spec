@@ -6,7 +6,7 @@ License: GPL
 Group: Sciences/Physics
 Source0: https://guillaume.cottenceau.free.fr/html/grany-resource/grany-%{version}.tar.bz2
 Source1: %{name}-pngicons.tar.bz2
-Patch2:	grany-2.0.3-gettext.patch
+Patch2: grany-2.0.3-gettext.patch
 URL: https://guillaume.cottenceau.free.fr/html/grany.html
 BuildRequires: pkgconfig(gtkmm-2.4)
 BuildRequires: libX11-devel
@@ -17,7 +17,7 @@ experiments on cellular environments with a full-featured GUI.
 
 %prep
 %setup -q -a1
-%patch2 -p2 -b .datadir
+%patch 2 -p2 -b .datadir
 sed -i 's|gtkmm-2.0|gtkmm-2.4|' configure*
 sed -i 's|slot|sigc::mem_fun|' interface/src/*.cpp
 sed -i 's|Gtk::Menu::AccelKey|Gtk::AccelKey|' interface/src/*.cpp

@@ -52,9 +52,6 @@ EOF
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc README PKG-INFO
 %attr(755,root,root) %{_bindir}/%{name}

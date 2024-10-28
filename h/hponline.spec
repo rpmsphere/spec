@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 %define pkg_name HotPotatoOnline
 
-Name:		hponline
+Name:           hponline
 Version:        1.2.0
 Release:        1
 Summary:        A fast paced arena sport game
@@ -9,11 +9,11 @@ Group:          Amusements/Games
 License:        LGPL
 URL:            https://wiki.mozilla.org/Special:Search?search=i18n&go=Go
 Source0:        https://jaist.dl.sourceforge.net/sourceforge/hponline/%{pkg_name}Sources-v%{version}.tar.gz
-Patch0:		%{pkg_name}Sources-v%{version}-glfont2.h.patch
-BuildRequires:	libglpng-devel
-BuildRequires:	freeglut-devel
-BuildRequires:	SDL_mixer-devel
-BuildRequires:	mesa-libGL-devel
+Patch0:         %{pkg_name}Sources-v%{version}-glfont2.h.patch
+BuildRequires:  libglpng-devel
+BuildRequires:  freeglut-devel
+BuildRequires:  SDL_mixer-devel
+BuildRequires:  mesa-libGL-devel
 
 %description
 Hot Potato Online is a fast paced arena sport game where players try to
@@ -22,7 +22,7 @@ Think dodgeball with a grenade!
 
 %prep
 %setup -q -n %{pkg_name}Sources-v%{version}
-%patch0 -p0
+%patch 0 -p0
 sed -i '/errno/d' src/CServer.cpp
 sed -i '1i #include <cstdlib>\n#include <cstring>\n#include <cstdio>' src/CConfigFile.cpp src/CHTTP.cpp src/CMessageBox.cpp src/CMessenger.h
 sed -i -e 's|-lGLU|-lGLU -lX11 -lpthread|' -e 's|staticlibs/libglut.a staticlibs/libglpng.a|-lglut -lglpng|' src/Makefile
@@ -62,9 +62,6 @@ EOF
 cd %{_datadir}/%{name}
 ./HotPotato
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}

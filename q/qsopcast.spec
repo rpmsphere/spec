@@ -2,16 +2,16 @@ Name:           qsopcast
 Version:        0.3.5
 Release:        1
 Summary:        QT GUI front-end of sopcast
-URL:		https://code.google.com/p/qsopcast/
+URL:            https://code.google.com/p/qsopcast/
 License:        GPL
 Group:          Networking/Other
 Source0:        https://qsopcast.googlecode.com/files/%name-%version.tar.bz2
-Source1:	%name-icons.tar.bz2
-Patch0:		qmake_lsb.patch
-Patch1:		translation.patch
-Patch2:		channel.diff
-Patch3:		cpp43.patch
-BuildRequires:	qt3-devel alsa-lib-devel pkgconfig desktop-file-utils
+Source1:        %name-icons.tar.bz2
+Patch0:         qmake_lsb.patch
+Patch1:         translation.patch
+Patch2:         channel.diff
+Patch3:         cpp43.patch
+BuildRequires:  qt3-devel alsa-lib-devel pkgconfig desktop-file-utils
 
 %description
 qsopcast is a QT GUI front-end of the Linux command line executive of P2P TV sopcast.
@@ -19,10 +19,10 @@ qsopcast is a QT GUI front-end of the Linux command line executive of P2P TV sop
 %prep
 %setup -q
 tar -C src -xjf %{SOURCE1}
-%patch0 -p 0
-%patch1 -p 0
-%patch2 -p 0
-%patch3 -p 1
+%patch 0 -p 0
+%patch 1 -p 0
+%patch 2 -p 0
+%patch 3 -p 1
 sed -i '1i #include <unistd.h>' src/loadsave.cpp src/record.cpp src/sopfork.cpp src/sound.cpp
 
 %build
@@ -68,9 +68,6 @@ desktop-file-install --vendor ""\
 
 %postun
 %{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING README TODO

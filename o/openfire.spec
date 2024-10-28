@@ -1,22 +1,22 @@
 %undefine _debugsource_packages
 
-Summary:	Openfire XMPP Server
-Name:		openfire
-Version:	4.1.2
-Release:	9.1
-BuildRequires: 	ant java-devel-openjdk lua
-Requires: 	java
-#Source0: 	https://www.igniterealtime.org/downloadServlet?filename=openfire/%{name}_src_4_1_2.tar.gz
+Summary:        Openfire XMPP Server
+Name:           openfire
+Version:        4.1.2
+Release:        9.1
+BuildRequires:  ant java-devel-openjdk lua
+Requires:       java
+#Source0:       https://www.igniterealtime.org/downloadServlet?filename=openfire/%{name}_src_4_1_2.tar.gz
 Source0:        %{name}_src_4_1_2.txz
-Source1:	https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar
-Group: 		Applications/Communications
-License: 	GPL
-URL: 		https://www.igniterealtime.org/
+Source1:        https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar
+Group:          Applications/Communications
+License:        GPL
+URL:            https://www.igniterealtime.org/
 Patch0:         openfire-sysvinit.patch
-Patch1:		openfire-3.7.0-SSLConfig.patch
-Patch2:		openfire-3.7.0-IPv6-workaround.patch
+Patch1:         openfire-3.7.0-SSLConfig.patch
+Patch2:         openfire-3.7.0-IPv6-workaround.patch
 %define         prefix /usr/share
-%define 	homedir %{prefix}/openfire
+%define         homedir %{prefix}/openfire
 
 %description
 Openfire is a leading Open Source, cross-platform IM server based on the
@@ -34,9 +34,9 @@ this package's base documentation.
 
 %prep
 %setup -q -n %{name}_src
-%patch0 -p1
+%patch 0 -p1
 #patch1 -p0
-%patch2 -p0
+%patch 2 -p0
 sed -i 's|"1\.9"|"17"|' build/build.xml
 cp %{SOURCE1} build/lib
 
@@ -110,9 +110,6 @@ rm -rf $RPM_BUILD_ROOT%{homedir}/resources/spank
 # See: https://www.igniterealtime.org/issues/browse/OF-30
 # For now disabled completely..
 #%fdupes -s $RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
  %defattr(-,daemon,daemon)

@@ -33,9 +33,6 @@ qmake-qt5
 make INSTALL_ROOT=%{buildroot} install
 #install -D -m0644 %{SOURCE1} %{buildroot}%{_datadir}/xsessions/%{name}.desktop
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/eggwm
 %{_datadir}/eggwm

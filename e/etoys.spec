@@ -40,7 +40,7 @@ A Sugar activity that launches Etoys within the Sugar environment.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 mkdir zh_TW
 unzip %{SOURCE10} -d zh_TW

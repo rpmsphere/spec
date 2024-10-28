@@ -33,9 +33,6 @@ make install DESTDIR=%{buildroot}
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
 
-%clean
-rm -rf %{buildroot}
-
 %files devel
 %{_bindir}/mkres
 %{_libdir}/pkgconfig/*.pc

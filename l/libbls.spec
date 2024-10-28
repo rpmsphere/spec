@@ -8,7 +8,7 @@ License:      LGPL
 Version:      0.3.0
 Release:      12.2
 Source0:      https://libbls.hellug.gr/libbls-%{version}.tar.gz
-Patch:        libbls.patch
+Patch0:        libbls.patch
 BuildRequires: python2-scons
 
 %description
@@ -28,7 +28,7 @@ Header files and libraries for the package %{name}.
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 
 %build
 scons \
@@ -54,9 +54,6 @@ scons \
 %{_includedir}/*
 %{_libdir}/lib*.a
 %{_libdir}/pkgconfig/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.0

@@ -47,9 +47,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %makeinstall INSTALL_ROOT=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING ChangeLog README
 %{_bindir}/fraqtive

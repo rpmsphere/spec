@@ -50,9 +50,6 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %postun -n libiat -p /sbin/ldconfig
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README
 %{_bindir}/%{name}

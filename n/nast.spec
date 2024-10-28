@@ -35,7 +35,7 @@ It also provides a new ncurses interface.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 
 %build
 export CFLAGS="$RPM_OPT_FLAGS -Wno-format-security"
@@ -45,9 +45,6 @@ make
 
 %install
 %{__make} install DESTDIR=%{?buildroot}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc README NCURSES_README BUGS TODO CREDITS AUTHORS VERSION

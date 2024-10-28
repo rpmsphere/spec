@@ -43,9 +43,6 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/prey/p
 %{_sysconfdir}/cron.d/prey
 %{_datadir}/applications/prey-config.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Mon Jul 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.3
 - Rebuilt for Fedora

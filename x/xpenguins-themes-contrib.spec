@@ -41,9 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/%{_datadir}/xpenguins/themes
 cp -a * $RPM_BUILD_ROOT/%{_datadir}/xpenguins/themes
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/xpenguins/themes/Megaman
 %{_datadir}/xpenguins/themes/Turkeys

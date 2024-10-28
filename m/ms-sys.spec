@@ -32,9 +32,6 @@ written.
 %{__make} install DESTDIR="$RPM_BUILD_ROOT" PREFIX="%{_prefix}" MANDIR="%{_mandir}"
 %find_lang %{name}
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %doc CHANGELOG CONTRIBUTORS COPYING FAQ README TODO
 %{_mandir}/man1/ms-sys.1*

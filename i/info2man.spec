@@ -20,9 +20,9 @@ then converts this to a man page using pod2man.
 
 %prep
 %setup -q -c
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 
 %build
 perl Makefile.PL PREFIX=%{_prefix} INSTALLDIRS=vendor
@@ -48,9 +48,6 @@ install -m 755 info2pod  $RPM_BUILD_ROOT%{_bindir}/info2pod
 install -D -m 644 info2man.1 $RPM_BUILD_ROOT%{_mandir}/man1/info2man.1
 install -m 644 info2pod.1 $RPM_BUILD_ROOT%{_mandir}/man1/info2pod.1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-rm -f .packlist
 
 %files -f .packlist
 %{_bindir}/info2man

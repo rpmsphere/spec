@@ -9,8 +9,8 @@ Group:          Graphics
 License:        GPL
 Source:         https://wolfsinger.com/~wolfpack/packages/iv-%{version}.tar.bz2
 Patch1:         iv-2.5.1-fix-lib64-build.patch
-BuildRequires:	libpng-devel
-BuildRequires:	libpng12
+BuildRequires:  libpng-devel
+BuildRequires:  libpng12
 BuildRequires:  gcc-c++
 BuildRequires:  libX11-devel
 BuildRequires:  libXpm-devel
@@ -31,7 +31,7 @@ do window grabs.
 
 %prep
 %setup -q -n iv-%{version}
-%patch1 -p 1
+%patch 1 -p 1
 sed -i '10i #include <time.h>' iv/imgio_mng.c
 sed -i -e 's|TRUE|true|' -e 's|GifCloseFile(ctx->gif_file)|GifCloseFile(ctx->gif_file, NULL)|' iv/imgio_gif.c
 sed -i -e '1632a ,NULL' -e '2135a ,NULL' -e '4111a ,NULL' -e 's|GIF_LIB_VERSION|"5.1.9"|' iv/imgio_gif.c
@@ -74,9 +74,6 @@ Type=Application
 StartupNotify=false
 Categories=Graphics;Viewer;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc LICENSE README

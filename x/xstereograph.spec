@@ -2,7 +2,7 @@ Name:           xstereograph
 BuildRequires:  libpng-devel
 BuildRequires:  libXaw-devel
 BuildRequires:  Xaw3d-devel
-%define		version_libsx 2.03
+%define         version_libsx 2.03
 Summary:        Stereogram generator
 License:        GPL-2.0+ and LGPL-2.1+
 Group:          Amusements/Games/Other
@@ -40,14 +40,14 @@ Authors:
 
 %prep
 %setup -q -a 1
-%patch0
-%patch1
-%patch2
-%patch3
-%patch4
-%patch5
-%patch6
-%patch7
+%patch 0
+%patch 1
+%patch 2
+%patch 3
+%patch 4
+%patch 5
+%patch 6
+%patch 7
 sed -i 's|trunc|mytrunc|' libsx-%{version_libsx}/src/colorsel.c
 sed -i 's|-lm|-lm -Wl,--allow-multiple-definition|' stereograph-0.28a/Makefile
 
@@ -74,7 +74,7 @@ install -m 644 AUTHORS COPYING README $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}/
 cd stereograph-0.28a
 install -d -m 755 $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}/stereograph/
 install -m 644 AUTHORS COPYING INSTALL README TODO \
-	       $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}/stereograph/
+               $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}/stereograph/
 cd ..
 #
 # libsx
@@ -92,9 +92,6 @@ install -m 644 CHANGES HELP HINTS LICENSE README \
                $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}/libsx/
 cd ..
 %{__rm} -f %{buildroot}%{_libdir}/*.a
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 
 

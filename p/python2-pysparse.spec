@@ -20,8 +20,8 @@ different strengths.
 
 %prep
 %setup -q -n pysparse-%{version}-dev213
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %build
 export CFLAGS=-Wno-format-security
@@ -43,9 +43,6 @@ find $RPM_BUILD_ROOT%{python2_sitearch} -type f -name *.pyc -exec %__sed -i 's|$
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{python2_sitearch}/pysparse/*.py %{buildroot}%{python2_sitearch}/pysparse/*/*.py
  
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CHANGES LICENSE README TODO examples test
 %{python2_sitearch}/*

@@ -31,9 +31,6 @@ gcc %{optflags} -Wall -finline-functions -lz edelta.c sha1.c -o %{name}
 %{__rm} -rf $RPM_BUILD_ROOT
 %{__install} -D -m 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 %doc Contributors COPYING scripts

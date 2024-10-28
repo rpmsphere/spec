@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		qonverter
+Name:           qonverter
 Version: 0.9.1.1336027302
 Release: 9.1
-License:	GPL
-Source:		quonverter-%{version}.tar.bz2
-Group:		System
-Summary:	QT-based simple desktop calculator & unit converter
+License:        GPL
+Source:         quonverter-%{version}.tar.bz2
+Group:          System
+Summary:        QT-based simple desktop calculator & unit converter
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, make, pkgconfig, pkgconfig(QtGui)
-URL:		https://code.google.com/p/qonverter/
+BuildRequires:  gcc-c++, make, pkgconfig, pkgconfig(QtGui)
+URL:            https://code.google.com/p/qonverter/
 
 %description
 Qonverter is simple and easy-to-use unit & currency converter and calculator.
@@ -26,9 +26,6 @@ make
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
 %{makeinstall} INSTALL_ROOT=$RPM_BUILD_ROOT
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 #doc README

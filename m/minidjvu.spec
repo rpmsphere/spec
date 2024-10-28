@@ -37,8 +37,8 @@ Development files for the package minidjvu.
 
 %prep
 %setup -q
-%patch0
-%patch1
+%patch 0
+%patch 1
 
 %build
 %configure --disable-static

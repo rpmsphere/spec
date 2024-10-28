@@ -30,9 +30,6 @@ install -D -m 644 %{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/xsessions/%{name}.
 #{_datadir}/applications/awesome.desktop
 %{_datadir}/xsessions/%{name}.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue Jul 10 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.1
 - Rebuilt for Fedora

@@ -34,9 +34,6 @@ sed -i 's|__wrap(pthread_yield)|__wrap(pthread_yield_foo)|' src/myth_wrap_pthrea
 %make_install
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/drview
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/*
 %{_libdir}/*.so.*

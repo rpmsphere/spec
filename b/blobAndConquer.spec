@@ -27,7 +27,7 @@ They're Ready. Will You Be?
 %prep
 %setup -q -n blobandconquer-master -a 1
 #patch0 -p1
-%patch1 -p1
+%patch 1 -p1
 # some cleanup
 chmod -x gfx/rw2/*.raw data/gameDefs/defines.h `find src -type f`
 sed -i 's/\r//g' data/gameDefs/defines.h `find src -type f`
@@ -56,9 +56,6 @@ desktop-file-install --vendor fedora --delete-original \
   --remove-key Version \
   $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 
 %post

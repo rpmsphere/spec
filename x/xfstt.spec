@@ -25,9 +25,6 @@ make MISCOPT="$RPM_OPT_FLAGS"
 install -Dm755 %{SOURCE1} $RPM_BUILD_ROOT/etc/rc.d/init.d/xfstt
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/X11/fonts/ttfonts
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %pre
 # adds "inet/127.0.0.1:7100" to the list of searchable fonts
 if [ -r /etc/X11/XF86Config ]; then

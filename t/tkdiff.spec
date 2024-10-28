@@ -1,20 +1,20 @@
-%define tar_ver	%(echo %{version}|sed -e 's/\\./\\-/g')
+%define tar_ver %(echo %{version}|sed -e 's/\\./\\-/g')
 
-Name:		tkdiff
-Version:	5.6
-Release:	1
-Summary:	A tcl/tk based graphical interface to the DIFF utility
-License:	GPLv2
-Group:		Development/Other
-URL:		https://tkdiff.sourceforge.net/
-Source0:	https://sourceforge.net/projects/tkdiff/files/%{name}/%{version}/%{name}-%{tar_ver}.zip
+Name:           tkdiff
+Version:        5.6
+Release:        1
+Summary:        A tcl/tk based graphical interface to the DIFF utility
+License:        GPLv2
+Group:          Development/Other
+URL:            https://tkdiff.sourceforge.net/
+Source0:        https://sourceforge.net/projects/tkdiff/files/%{name}/%{version}/%{name}-%{tar_ver}.zip
 # desktop, icon and man files are provided from ALT linux distribution.
-Source1:	tkdiff.desktop
-Source2:	tkdiff.png
-Source3:	tkdiff.1
-BuildArch:	noarch
-Requires:	diffutils
-Requires:	tk
+Source1:        tkdiff.desktop
+Source2:        tkdiff.png
+Source3:        tkdiff.1
+BuildArch:      noarch
+Requires:       diffutils
+Requires:       tk
 
 %description
 tkdiff is a graphical front end to the diff program. It provides a side-by-side

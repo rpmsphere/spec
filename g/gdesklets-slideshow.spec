@@ -1,20 +1,20 @@
-Name:		gdesklets-slideshow
-Version:	0.9
-Release:	1
-Summary:	A slideshow of collection for gdesklets
-Group:		User Interface/Desktops
-License:	GPLv2+
-URL:		https://gdesklets.de/?q=desklet/view/221
-Source0:	https://www.gdesklets.de/files/desklets/SlideShow/SlideShow-%{version}.tar.gz
-Source1:	https://www.gdesklets.de/files/controls/ImageSlideShow/ImageSlideShow-0.8.tar.gz
-BuildArch:	noarch
+Name:           gdesklets-slideshow
+Version:        0.9
+Release:        1
+Summary:        A slideshow of collection for gdesklets
+Group:          User Interface/Desktops
+License:        GPLv2+
+URL:            https://gdesklets.de/?q=desklet/view/221
+Source0:        https://www.gdesklets.de/files/desklets/SlideShow/SlideShow-%{version}.tar.gz
+Source1:        https://www.gdesklets.de/files/controls/ImageSlideShow/ImageSlideShow-0.8.tar.gz
+BuildArch:      noarch
 
-%define		_appname	SlideShow
-%define		_ctrlname	ImageSlideShow
+%define         _appname        SlideShow
+%define         _ctrlname       ImageSlideShow
 
-BuildRequires:	python2
-Requires:	gdesklets
-Requires:	python-imaging
+BuildRequires:  python2
+Requires:       gdesklets
+Requires:       python-imaging
 
 %description
 Cycle through a collection of pictures. Will display image captions
@@ -44,9 +44,6 @@ rm $RPM_BUILD_ROOT/%{_datadir}/gdesklets/Displays/%{_appname}/LICENSE
 rm $RPM_BUILD_ROOT/%{_datadir}/gdesklets/Displays/%{_appname}/todo
 
 sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_datadir}/gdesklets/Controls/ImageSlideShow/*.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc %{_appname}/LICENSE %{_appname}/todo %{_ctrlname}/MANIFEST %{_ctrlname}/README

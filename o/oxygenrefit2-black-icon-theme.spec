@@ -22,9 +22,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_datadir}/icons/%{theme_name}
 cp -a * %{buildroot}%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/icons/%{theme_name}
 

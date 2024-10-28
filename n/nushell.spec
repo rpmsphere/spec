@@ -23,9 +23,6 @@ cargo build
 %install
 cargo install --root=%{buildroot}%{_prefix} --path=.
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc LICENSE *.md
 %{_bindir}/nu

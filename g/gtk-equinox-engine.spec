@@ -24,7 +24,7 @@ effects, subtle shadows, rounded widgets.
 
 %prep
 %setup -q -n %{engine}-%{tarver}
-%patch0 -p1
+%patch 0 -p1
 
 # Unpack gtk themes here
 tar -xzf %{SOURCE1}
@@ -63,9 +63,6 @@ chmod 0644 AUTHORS ChangeLog COPYING README
 sed -i -e 's|Faenza-Darkest|Faience-Claire|' -e 's|Faenza-Dark|Faience-Ocre|' -e 's|Faenza|Faience|' $RPM_BUILD_ROOT%{_datadir}/themes/Equinox*/index.theme
 sed -i -e 's|DMZ-White|dmz|' -e 's|DMZ-Black|dmz-aa|' $RPM_BUILD_ROOT%{_datadir}/themes/Equinox*/index.theme
 sed -i -e '$a BackgroundImage=/usr/share/backgrounds/aDayInThelife/default.xml' $RPM_BUILD_ROOT%{_datadir}/themes/Equinox*/index.theme
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING README tmpdoc/*

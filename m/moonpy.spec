@@ -4,10 +4,10 @@ Release:        1
 Summary:        Open-source remake of Moonbase Commander
 Group:          Game/StrategyGame
 License:        GPLv3
-URL:		https://code.google.com/p/tether/
+URL:            https://code.google.com/p/tether/
 Source0:        https://code.google.com/p/tether/%{name}-%{version}-package-source.tar.gz
-Requires:	pygame, python-twisted
-BuildArch:	noarch
+Requires:       pygame, python-twisted
+BuildArch:      noarch
 
 %description
 MoonPy is an open-source remake of the classic strategy game Moonbase Commander.
@@ -34,9 +34,6 @@ sed -i 's|local/games|share|' run_moonpy.sh moonpy.desktop
 %{__install} -Dm 644 moonpy.desktop $RPM_BUILD_ROOT%{_datadir}/applications/moonpy.desktop
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/moonpy/moon.py
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt

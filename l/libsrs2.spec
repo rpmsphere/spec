@@ -51,9 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/lib*.la
 %{_libdir}/lib*.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Apr 2 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.18
 - Rebuilt for Fedora

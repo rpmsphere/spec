@@ -6,8 +6,8 @@ License:        OpenSSL
 Group:          Development/Libraries/C and C++
 URL:            https://libressl.org/
 #Freshcode-URL: https://freshcode.club/projects/libressl
-#Git-Clone:	git://github.com/libressl-portable/portable
-#See-Also:	git://github.com/libressl-portable/openbsd
+#Git-Clone:     git://github.com/libressl-portable/portable
+#See-Also:      git://github.com/libressl-portable/openbsd
 Source:         https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/%name-%version.tar.gz
 #Source2:        https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/%name-%version.tar.gz.asc
 Source3:        %name.keyring
@@ -91,7 +91,7 @@ This subpackage contains the manpages to the LibreSSL API.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 #patch2 -p1
 
 %build
@@ -105,11 +105,11 @@ b="%buildroot"
 %make_install
 rm -f "$b/%_libdir"/*.la
 for i in "$b/%_mandir"/man*; do
-	pushd "$i"
-	for j in *.*; do
-		mv "$j" "${j}ssl"
-	done
-	popd
+        pushd "$i"
+        for j in *.*; do
+                mv "$j" "${j}ssl"
+        done
+        popd
 done
 rm -f "%buildroot/%_sysconfdir/ssl/cert.pem"
 rm -f "%buildroot/%_libdir"/*.a

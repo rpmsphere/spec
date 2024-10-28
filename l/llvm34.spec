@@ -108,9 +108,9 @@ for general consumption.
 %setup -q -n llvm-%{version}.src
 rm -rf tools/clang tools/lldb projects/compiler-rt
 
-%patch11 -p1
-%patch12 -p1
-%patch21 -p1
+%patch 11 -p1
+%patch 12 -p1
+%patch 21 -p1
 
 # fix library paths
 sed -i.orig 's|/lib /usr/lib $lt_ld_extra|%{_libdir} $lt_ld_extra|' configure

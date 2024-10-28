@@ -31,9 +31,6 @@ rm $RPM_BUILD_ROOT/usr/CHANGES
 mv $RPM_BUILD_ROOT/usr/epubmaker/writers/cover.jpg $RPM_BUILD_ROOT%{python2_sitelib}/%{module}/writers/cover.jpg
 mv $RPM_BUILD_ROOT/usr/setup_inc.py $RPM_BUILD_ROOT%{python2_sitelib}/%{module}/setup_inc.py
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CHANGES README
 %{python2_sitelib}/*

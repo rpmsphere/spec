@@ -1,13 +1,13 @@
-Name:		test-config
-Version:	2015.08
-Release:	1
-Summary:	Configuration files in Test System
-License:	Public Domain
-Group:		System
-Source0:	%{name}-%{version}.tar.gz
-BuildArch:	noarch
+Name:           test-config
+Version:        2015.08
+Release:        1
+Summary:        Configuration files in Test System
+License:        Public Domain
+Group:          System
+Source0:        %{name}-%{version}.tar.gz
+BuildArch:      noarch
 # for intel-linux-graphics-installer
-Requires:	libproxy-mozjs PackageKit
+Requires:       libproxy-mozjs PackageKit
 # for hwqv
 Requires:       lshw inxi hdparm lcdtest monitor-edid setserial lm_sensors
 Requires:       alsa-utils pulseaudio-utils glx-utils pcsc-tools

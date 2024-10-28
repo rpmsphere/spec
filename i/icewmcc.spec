@@ -43,9 +43,6 @@ rm -rf %{buildroot}
 make install INSTALL_ROOT=%{buildroot}
 install -D -m 644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/*
 %{_datadir}/applications/*

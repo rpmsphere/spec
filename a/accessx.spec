@@ -27,9 +27,9 @@ provided by the Sun and DEC "accessx" tool.
 
 %prep
 %setup -q -n accessx
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
 
 %build
 make %{?_smp_mflags}
@@ -37,9 +37,6 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT 
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/ax

@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
 %global oname wxFormBuilder
 
-Summary:	An open-source, cross-platform RAD tool for wxWidgets
-Name:		wxformbuilder
-Version:	4.1.0
-Release:	1
-License:	GPLv2
-Group:		Development/Tools 
-URL:		https://github.com/wxFormBuilder/wxFormBuilder
-Source0:	https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v%{version}/%{oname}-%{version}-source-full.tar.gz
-BuildRequires:	gcc-c++
-BuildRequires:	ImageMagick
-BuildRequires:	wxGTK3-devel
+Summary:        An open-source, cross-platform RAD tool for wxWidgets
+Name:           wxformbuilder
+Version:        4.1.0
+Release:        1
+License:        GPLv2
+Group:          Development/Tools 
+URL:            https://github.com/wxFormBuilder/wxFormBuilder
+Source0:        https://github.com/wxFormBuilder/wxFormBuilder/releases/download/v%{version}/%{oname}-%{version}-source-full.tar.gz
+BuildRequires:  gcc-c++
+BuildRequires:  ImageMagick
+BuildRequires:  wxGTK-devel
 BuildRequires:  ticpp-devel
 
 %description
@@ -52,10 +52,10 @@ mv plugins resources xml %{buildroot}%{_datadir}/%{name}
 
 # Icons
 for s in 128 96 48 32 22 16 ; do
-	mkdir -p %{buildroot}%{_datadir}/icons/hicolor/${s}x${s}/apps
-	convert %{buildroot}%{_datadir}/%{name}/resources/icons/logo.png -resize ${s}x${s} %{buildroot}%{_datadir}/icons/hicolor/${s}x${s}/apps/%{name}.png
+        mkdir -p %{buildroot}%{_datadir}/icons/hicolor/${s}x${s}/apps
+        convert %{buildroot}%{_datadir}/%{name}/resources/icons/logo.png -resize ${s}x${s} %{buildroot}%{_datadir}/icons/hicolor/${s}x${s}/apps/%{name}.png
 done
-	
+        
 # menu-entry
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/%{name}.desktop << EOF
@@ -69,9 +69,6 @@ Type=Application
 Categories=Development;IDE;GUIDesigner;
 EOF
 %endif
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE README.md

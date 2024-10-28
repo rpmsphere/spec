@@ -1,22 +1,22 @@
-Summary:	Multiplayer puzzle game
-Name:		quadra
-Version:	1.2.0
-Release:	10.1
-License:	LGPLv2+
-Group:		Games/Arcade
-URL:		https://code.google.com/p/quadra/
-Source0:	https://quadra.googlecode.com/files/%{name}-%{version}.tar.gz
-Source5:	%{name}-16.png
-Source6:	%{name}-32.png
-Source7:	%{name}-48.png
+Summary:        Multiplayer puzzle game
+Name:           quadra
+Version:        1.2.0
+Release:        10.1
+License:        LGPLv2+
+Group:          Games/Arcade
+URL:            https://code.google.com/p/quadra/
+Source0:        https://quadra.googlecode.com/files/%{name}-%{version}.tar.gz
+Source5:        %{name}-16.png
+Source6:        %{name}-32.png
+Source7:        %{name}-48.png
 # fix str fmt, patch sent upstream 08 Jun 2009
-Patch0:	%{name}-1.2.0-fix-str-fmt.patch
-BuildRequires:	bc
-BuildRequires:	pkgconfig(x11)
-BuildRequires:	pkgconfig(xext)
-BuildRequires:	pkgconfig(xpm)
-BuildRequires:	pkgconfig(xxf86vm)
-BuildRequires:	pkgconfig(libpng)
+Patch0: %{name}-1.2.0-fix-str-fmt.patch
+BuildRequires:  bc
+BuildRequires:  pkgconfig(x11)
+BuildRequires:  pkgconfig(xext)
+BuildRequires:  pkgconfig(xpm)
+BuildRequires:  pkgconfig(xxf86vm)
+BuildRequires:  pkgconfig(libpng)
 
 %description
 This is the official release %{version} of Quadra, a full-featured
@@ -35,7 +35,7 @@ Features include:
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 cat << EOF > %{name}.desktop
 [Desktop Entry]

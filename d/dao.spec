@@ -34,9 +34,6 @@ make install INSTALL=%{buildroot}/usr
 /usr/lib/lib%{name}*
 %{_datadir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Fri Sep 27 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0beta
 - Rebuilt for Fedora

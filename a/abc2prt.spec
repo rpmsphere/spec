@@ -22,9 +22,6 @@ mkdir -p $RPM_BUILD_ROOT%{_bindir}
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/abc2prt
 %{_bindir}/install -m 755 abc2prt $RPM_BUILD_ROOT%{_bindir}
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc COPYING INSTALL README
 %{_bindir}/*

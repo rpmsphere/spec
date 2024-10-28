@@ -1,12 +1,12 @@
-Name:				pmr
-Version:			1.01
-Release:			2.1
-Summary:			Filter Which Measures Bandwidth and Number of Bytes Passing Through a Pipe
-Source:			https://zakalwe.fi/~shd/foss/pmr/pmr-%{version}.tar.gz
-URL:				https://zakalwe.fi/~shd/foss/pmr/
-Group:			System/Tools
-License:			Public Domain
-BuildRequires:	gcc glibc-devel make
+Name:                           pmr
+Version:                        1.01
+Release:                        2.1
+Summary:                        Filter Which Measures Bandwidth and Number of Bytes Passing Through a Pipe
+Source:                 https://zakalwe.fi/~shd/foss/pmr/pmr-%{version}.tar.gz
+URL:                            https://zakalwe.fi/~shd/foss/pmr/
+Group:                  System/Tools
+License:                        Public Domain
+BuildRequires:  gcc glibc-devel make
 
 %description
 pmr is a command line filter that displays the data bandwidth and total number
@@ -25,17 +25,14 @@ Authors:
 # not autoconf
 ./configure --prefix="%{_prefix}" --package-prefix="$RPM_BUILD_ROOT"
 %__make \
-	%{?jobs:-j%{jobs}} \
-	CC="%__cc" \
-	CFLAGS="%{optflags}"
+        %{?jobs:-j%{jobs}} \
+        CC="%__cc" \
+        CFLAGS="%{optflags}"
 
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
 %__install -D -m0755 pmr "$RPM_BUILD_ROOT%{_bindir}/pmr"
 %__install -D -m0644 doc/pmr.1 "$RPM_BUILD_ROOT%{_mandir}/man1/pmr.1"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc AUTHORS COPYING todo.txt

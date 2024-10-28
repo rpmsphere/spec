@@ -1,14 +1,14 @@
-Summary:	A theme for GTK 3, GTK 2, Gnome-Shell and Cinnamon
-Name:		vertex-theme
-Version:	20170128
-Release:	1
-URL:		https://github.com/horst3180/vertex-theme
-License:	GPL3
-Group:		User Interface/Desktops
-Source0:	%{name}-%{version}.tar.gz
+Summary:        A theme for GTK 3, GTK 2, Gnome-Shell and Cinnamon
+Name:           vertex-theme
+Version:        20170128
+Release:        1
+URL:            https://github.com/horst3180/vertex-theme
+License:        GPL3
+Group:          User Interface/Desktops
+Source0:        %{name}-%{version}.tar.gz
 Source1:        alone.jpg
-BuildArch:	noarch
-Requires:	gtk-murrine-engine
+BuildArch:      noarch
+Requires:       gtk-murrine-engine
 Requires:       dmz-cursor-themes
 Requires:       vertex-icon-theme
 

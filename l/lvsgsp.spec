@@ -26,9 +26,6 @@ mkdir -p $RPM_BUILD_ROOT%{_bindir}
 make install 
 chmod 755 %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/lvsgsp
 

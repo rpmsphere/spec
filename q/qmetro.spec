@@ -41,9 +41,6 @@ mv %{buildroot}/tmp/qMetro %{buildroot}%{_datadir}/%{name}
 rm -rf %{buildroot}%{_datadir}/%{name}/map
 ln -s ../pmetro-maps %{buildroot}%{_datadir}/%{name}/map
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS LICENSE README
 %{_bindir}/%{name}

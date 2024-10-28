@@ -1,29 +1,29 @@
-Summary:	A program that allows visualization of huge graphs
-Name:		tulip
-Version:	5.4.0
-Release:	1
-URL:		https://sourceforge.net/projects/auber/
-Source0:	https://downloads.sourceforge.net/project/auber/%{name}/%{name}-%{version}/%{name}-%{version}_src.tar.xz
-License:	GPLv2+
-Group:		Graphics
-#BuildRequires:	qt4-devel qt-assistant-adp-devel qt4-assistant qtwebkit-devel
+Summary:        A program that allows visualization of huge graphs
+Name:           tulip
+Version:        5.4.0
+Release:        1
+URL:            https://sourceforge.net/projects/auber/
+Source0:        https://downloads.sourceforge.net/project/auber/%{name}/%{name}-%{version}/%{name}-%{version}_src.tar.xz
+License:        GPLv2+
+Group:          Graphics
+#BuildRequires: qt4-devel qt-assistant-adp-devel qt4-assistant qtwebkit-devel
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:	cmake
-BuildRequires:	pkgconfig(glew) >= 2.0.0
-BuildRequires:	pkgconfig(gl)
-BuildRequires:	pkgconfig(zlib)
-BuildRequires:	libpng-devel
-BuildRequires:	libjpeg-devel
-BuildRequires:	xmltex doxygen graphviz libxml2-devel
-BuildRequires:	libgomp
-#BuildRequires:	python-devel python-sphinx
+BuildRequires:  cmake
+BuildRequires:  pkgconfig(glew) >= 2.0.0
+BuildRequires:  pkgconfig(gl)
+BuildRequires:  pkgconfig(zlib)
+BuildRequires:  libpng-devel
+BuildRequires:  libjpeg-devel
+BuildRequires:  xmltex doxygen graphviz libxml2-devel
+BuildRequires:  libgomp
+#BuildRequires: python-devel python-sphinx
 BuildRequires:  python3-devel python3-sphinx
 BuildRequires:  environment-modules sip
-BuildRequires:	doxygen
-BuildRequires:	docbook-style-xsl
-BuildRequires:	ftgl-devel
-BuildRequires:	java-devel-openjdk lua
-BuildRequires:	netpbm
+BuildRequires:  doxygen
+BuildRequires:  docbook-style-xsl
+BuildRequires:  ftgl-devel
+BuildRequires:  java-devel-openjdk lua
+BuildRequires:  netpbm
 
 %description
 Tulip software is a system dedicated to the visualization of huge graphs.
@@ -51,9 +51,9 @@ You need this package if you plan to build apps using
 tulip libraries.
 
 %package doc
-Summary:	Tulip user documentation and developer Handbook
-License:	LGPLv2
-BuildArch:	noarch
+Summary:        Tulip user documentation and developer Handbook
+License:        LGPLv2
+BuildArch:      noarch
 
 %description doc
 This package contains Tulip user documentation and developer Handbook in HTML.

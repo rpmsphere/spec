@@ -23,9 +23,6 @@ do
 tar xf $i -C $RPM_BUILD_ROOT%{_datadir}/icons
 done
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/icons/OpenZone_*
 %doc ChangeLog COPYING

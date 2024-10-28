@@ -1,15 +1,15 @@
-Name:		streamcapture
-Summary:	A program to save streaming video to your computer
-Version:	0.2.8
-Release:	8.1
-URL:		https://ceicer.org/streamcapture/index_eng.php
-Source0:	streamcapture-%{version}-source.tar.gz
-Source1:	streamcapture.desktop
-Source2:	streamcapture.png
-Patch0:		streamcapture-installdirs.patch
-License:	GPL
-Group:		Productivity/Networking/Other
-Requires:	rtmpdump
+Name:           streamcapture
+Summary:        A program to save streaming video to your computer
+Version:        0.2.8
+Release:        8.1
+URL:            https://ceicer.org/streamcapture/index_eng.php
+Source0:        streamcapture-%{version}-source.tar.gz
+Source1:        streamcapture.desktop
+Source2:        streamcapture.png
+Patch0:         streamcapture-installdirs.patch
+License:        GPL
+Group:          Productivity/Networking/Other
+Requires:       rtmpdump
 BuildRequires: gcc-c++ qt4-devel desktop-file-utils
 
 %description
@@ -34,7 +34,7 @@ streamCapture does not work on youtube.
 
 %prep
 %setup -q -n streamcapture-%{version}-source
-%patch0
+%patch 0
 
 %build
 lrelease-qt4 streamcapture.pro
@@ -52,9 +52,6 @@ done
 for i in *.qm; do
   install -D -m644 "$i" $RPM_BUILD_ROOT%{_datadir}/streamcapture/languages/"$i";
 done
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/streamcapture

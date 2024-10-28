@@ -1,37 +1,37 @@
-Summary:	City simulation based on Maxis SimCity
-Name:		micropolis
-Version:	4.0
-Release:	37.4
-Group:		Games/Strategy
-URL:		https://www.donhopkins.com/home/micropolis/
+Summary:        City simulation based on Maxis SimCity
+Name:           micropolis
+Version:        4.0
+Release:        37.4
+Group:          Games/Strategy
+URL:            https://www.donhopkins.com/home/micropolis/
 # Also see https://dev.laptop.org/git?p=projects/micropolis-activity
-Source:		micropolis-activity-source.tar.bz2
-Source1:	micropolis.desktop
-Patch1:		micropolis-path.patch
+Source:         micropolis-activity-source.tar.bz2
+Source1:        micropolis.desktop
+Patch1:         micropolis-path.patch
 # From debian, optflags patch:
-Patch2:		micropolis-makefile.patch
+Patch2:         micropolis-makefile.patch
 ## (Anssi 01/2008): Fix some 64bit pointer warnings. It is likely they are
 # harmless corner cases, but this code is so old I don't take any chances.
-Patch3:		micropolis-64bit-warns.patch
+Patch3:         micropolis-64bit-warns.patch
 # Lots of fixes from
 # https://git.zerfleddert.de/cgi-bin/gitweb.cgi/micropolis
 # curl https://rmdir.de/~michael/micropolis_git.patch > micropolis-zerfleddert.$(date +%Y%m%d).patch
-Patch0:		micropolis-zerfleddert.20080302.patch.bz2
+Patch0:         micropolis-zerfleddert.20080302.patch.bz2
 # fix "Function call is passing too few arguments to a *printf function"
-Patch4:		micropolis-printf-arg.patch
+Patch4:         micropolis-printf-arg.patch
 Patch5:         micropolis-glibc-2.27.patch
 Patch6:         micropolis-remove-matherr.patch
-License:	GPLv3+ with additional terms
+License:        GPLv3+ with additional terms
 BuildRequires:  libXpm-devel
-BuildRequires:	libX11-devel
-BuildRequires:	libXext-devel
+BuildRequires:  libX11-devel
+BuildRequires:  libXext-devel
 BuildRequires:  mesa-libGL-devel
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_mixer-devel
-BuildRequires:	bison
-BuildRequires:	byacc
+BuildRequires:  SDL-devel
+BuildRequires:  SDL_mixer-devel
+BuildRequires:  bison
+BuildRequires:  byacc
 # Plays audio through aplay:
-Requires:	alsa-utils
+Requires:       alsa-utils
 
 %description
 City-building simulation game originally released as SimCity by
@@ -40,13 +40,13 @@ Micropolis.
 
 %prep
 %setup -q -n micropolis-activity
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4
-%patch5 -p1
-%patch6 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4
+%patch 5 -p1
+%patch 6 -p1
 
 #[ $(sed -n 's,activity_version = ,,p' activity/activity.info) = %version ]
 [ $(sed -r -n 's,^.*MicropolisVersion = "(.+)".*$,\1,p' src/sim/sim.c) = %version ]
@@ -75,9 +75,6 @@ install -d %{buildroot}%{_datadir}/pixmaps
 install -m 644 Micropolis.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -d $RPM_BUILD_ROOT%{_datadir}/applications
 install -m 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc manual/*

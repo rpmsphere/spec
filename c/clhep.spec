@@ -53,9 +53,6 @@ for dir in */doc; do
     %{__mv} -f $dir doc/$(dirname $dir)
 done
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %doc ChangeLog README
 %{_libdir}/libCLHEP*.so

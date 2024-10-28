@@ -25,9 +25,6 @@ make
 rm -rf %{buildroot}
 DESTDIR=$RPM_BUILD_ROOT make install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/dtdquery
 %{_bindir}/html2xhtml

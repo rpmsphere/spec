@@ -32,9 +32,6 @@ cp %{SOURCE1} %{buildroot}%{_datadir}/themes/%{theme_name}/backgrounds/
 cp %{SOURCE2} %{buildroot}%{_datadir}/themes/%{theme_name}/index.theme
 sed -i -e 's|&gt);|\&gt;)|' -e 's|& |\&amp; |' -e 's|&#194;||' %{buildroot}%{_datadir}/themes/%{theme_name}/metacity-1/metacity-theme-?.xml
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/doc/%{name}
 %{_datadir}/themes/%{theme_name}

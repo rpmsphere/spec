@@ -7,7 +7,7 @@ Group: Amusements/Graphics
 URL: https://www.earth3d.org/
 Source0: https://prdownloads.sourceforge.net/earth3d/%{name}_client-%version-src.tar.bz2
 Source1: %{name}.desktop
-Patch: earth3d_client-1.0.4-alt-makefile.patch
+Patch0: earth3d_client-1.0.4-alt-makefile.patch
 # Automatically added by buildreq on Sun Jan 08 2006
 BuildRequires: fontconfig-devel freetype-devel gcc-c++ libpng-devel libstdc++-devel libX11-devel zlib-devel libXmu-devel
 Requires: fontconfig freetype libpng zlib libXmu
@@ -36,7 +36,7 @@ PS: packaged experiencing frustration of Google Earth ;)
 
 %prep
 %setup -q -n %{name}
-%patch -p1
+%patch 0 -p1
 echo "#include <gltest.h>" >> gltestwidget.h
 sed -i '1i #include <cstdlib>' formview.ui.h listViewServiceItem.cpp network/*.cpp draw/*.cpp geometry/*.cpp
 sed -i '/alloc\.h/d' network/urlDownload.cpp
@@ -59,9 +59,6 @@ install -pD -m644 images/webpres.png %buildroot%{_datadir}/pixmaps/%{name}.png
 %{_mandir}/man1/%{name}.1.*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
-
-%clean
-%__rm -rf %buildroot
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5

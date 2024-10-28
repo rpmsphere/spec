@@ -1,21 +1,21 @@
-Name:				 notify-osd
-Version:			 0.9.25
-Release:			 15.1
-Summary:			 Ephemeral Overlay On-Screen-Display Notification Agent
+Name:                            notify-osd
+Version:                         0.9.25
+Release:                         15.1
+Summary:                         Ephemeral Overlay On-Screen-Display Notification Agent
 # https://launchpad.net/notify-osd/trunk/ubuntu-9.10-sru/+download/notify-osd-%{version}.tar.gz
-Source:			 notify-osd-%{version}.tar.bz2
-URL:				 https://launchpad.net/notify-osd
-Group:			 System/Libraries
-License:			 GNU General Public License version 3 (GPL v3)
+Source:                  notify-osd-%{version}.tar.bz2
+URL:                             https://launchpad.net/notify-osd
+Group:                   System/Libraries
+License:                         GNU General Public License version 3 (GPL v3)
 BuildRequires:   libpng-devel
-BuildRequires:	 libwnck-devel
-BuildRequires:	 glib2-devel gtk2-devel
-BuildRequires:	 GConf2-devel notification-daemon sane-backends-devel
-BuildRequires:	 libnotify-devel >= 0.4.5
-BuildRequires:	 dbus-devel dbus-glib-devel
-BuildRequires:	 gcc make glibc-devel
-BuildRequires:	 autoconf automake libtool pkgconfig
-Patch0:			%{name}-notify_notification_new.patch
+BuildRequires:   libwnck-devel
+BuildRequires:   glib2-devel gtk2-devel
+BuildRequires:   GConf2-devel notification-daemon sane-backends-devel
+BuildRequires:   libnotify-devel >= 0.4.5
+BuildRequires:   dbus-devel dbus-glib-devel
+BuildRequires:   gcc make glibc-devel
+BuildRequires:   autoconf automake libtool pkgconfig
+Patch0:                 %{name}-notify_notification_new.patch
 
 %description
 Canonical's on-screen-display notification agent, implementing the
@@ -36,25 +36,22 @@ from a particular person.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 export LDFLAGS="-lX11 -lpixman-1 -lm"
 %configure \
-	 --enable-compile-warnings=maximum
+         --enable-compile-warnings=maximum
 
 %__make %{?jobs:-j%{jobs}} V=1 \
-	 notify_osddir="%{_bindir}"
+         notify_osddir="%{_bindir}"
 
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
 %__make \
-	 DESTDIR="$RPM_BUILD_ROOT" \
-	 notify_osddir="%{_bindir}" \
-	 install
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
+         DESTDIR="$RPM_BUILD_ROOT" \
+         notify_osddir="%{_bindir}" \
+         install
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README TODO

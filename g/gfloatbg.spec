@@ -8,7 +8,7 @@ Group: Graphical desktop/GNOME
 Source:  https://downloads.sourceforge.net/%name/%name-%version.tar.gz
 Source1: %name.desktop
 Source5: poltava1trnsp.png
-Patch: gfloatbg-0.2-link.patch
+Patch0: gfloatbg-0.2-link.patch
 BuildRequires: gtk2-devel
 BuildRequires: GConf2-devel
 
@@ -19,7 +19,7 @@ a quarter of an hour, you'll notice that it did change, however.
 
 %prep
 %setup -q
-%patch
+%patch 0
 
 %build
 autoreconf

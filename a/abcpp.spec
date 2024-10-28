@@ -28,9 +28,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/abcpp
 %{_bindir}/install -m 644 fancyheader.abp $RPM_BUILD_ROOT%{_datadir}/abcpp
 %{_bindir}/install -m 644 italiano.abp $RPM_BUILD_ROOT%{_datadir}/abcpp
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING INSTALL LEGGIMI README docs
 %doc examples

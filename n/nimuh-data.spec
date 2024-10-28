@@ -1,5 +1,5 @@
 Name:           nimuh-data
-Url:            https://www.nimuh.com/
+URL:            https://www.nimuh.com/
 License:        CC-by-nc-sa 2.5 Spain
 Group:          Amusements/Games/Logic
 Version:        1.02
@@ -25,9 +25,6 @@ cp /usr/share/automake-*/config.guess .
 
 %install
 %{__make} DESTDIR="${RPM_BUILD_ROOT}" install
-
-%clean
-%{__rm} -rf "${RPM_BUILD_ROOT}"
 
 %files
 %{_datadir}/nimuh

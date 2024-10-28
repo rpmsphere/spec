@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
-Name:		firebox
-Version:	0.5.0
-Release:	1
-Summary:	Firebox is yet another Window Manager for X11 systems.
-Group:		User Interface/Desktops
-License:	GPLv2+
-URL:		https://firebox.intuxication.org/
-Source:		https://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
-Source1:	%{name}-0.4.0.zh_TW.po
+Name:           firebox
+Version:        0.5.0
+Release:        1
+Summary:        Firebox is yet another Window Manager for X11 systems.
+Group:          User Interface/Desktops
+License:        GPLv2+
+URL:            https://firebox.intuxication.org/
+Source:         https://download.gna.org/firebox/tarballs/%{name}-%{version}.tar.gz
+Source1:        %{name}-0.4.0.zh_TW.po
 BuildRequires:  libxml2-devel
 BuildRequires:  libpng12-devel
-BuildRequires:	libXcomposite-devel
+BuildRequires:  libXcomposite-devel
 
 %description
 Still in development, it is not forked from Openbox, Fluxbox, Blackbox or
@@ -39,9 +39,6 @@ rm -rf %{buildroot}
 gzip %{buildroot}%{_mandir}/man1/%{name}.1
 
 %find_lang %{name}
-
-%clean
-rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %doc ABOUT-NLS AUTHORS ChangeLog COPYING INSTALL NEWS README

@@ -1,15 +1,15 @@
 %undefine _auto_set_build_flags
-Summary:	An easy to use text editor
-Name:		aee
-Version:	2.2.15b
-Release:	8.1
-License:	Artistic
-Group:		Editors
-URL:		https://mahon.cwx.net/
-Source0:	%{name}-%{version}.tar.bz2
-Patch0:		%{name}-2.2.15b-mdkconf.patch
-Patch1:		%{name}-2.2.15b-fix-str-fmt.patch
-BuildRequires:	libX11-devel
+Summary:        An easy to use text editor
+Name:           aee
+Version:        2.2.15b
+Release:        8.1
+License:        Artistic
+Group:          Editors
+URL:            https://mahon.cwx.net/
+Source0:        %{name}-%{version}.tar.bz2
+Patch0:         %{name}-2.2.15b-mdkconf.patch
+Patch1:         %{name}-2.2.15b-fix-str-fmt.patch
+BuildRequires:  libX11-devel
 
 %description
 An easy to use text editor. Intended to be usable with little or no
@@ -21,8 +21,8 @@ and much more.
 
 %prep
 %setup -q
-%patch0 -p1 -b .peroyvind
-%patch1 -p1 -b .strfmt
+%patch 0 -p1 -b .peroyvind
+%patch 1 -p1 -b .strfmt
 sed -i 's|-s|-Wl,--allow-multiple-definition|' create.mk.*
 
 %build
@@ -37,9 +37,6 @@ install -m644 help.ae -D $RPM_BUILD_ROOT%{_datadir}/%{name}/help.ae
 cd $RPM_BUILD_ROOT/usr/bin
 ln -s aee $RPM_BUILD_ROOT%{_bindir}/rae
 ln -s xae $RPM_BUILD_ROOT%{_bindir}/rxae
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc Artistic README.aee aee.1.ps aee.i18n.guide keypad

@@ -38,9 +38,6 @@ make
 %install
 install -Dm755 source/seq-gen $RPM_BUILD_ROOT%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc examples documentation
 %{_bindir}/%{name}

@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Summary:	DBase III file viewer
-Name:		dbview
-Version:	1.0.4
-Release:	3.1
-Group:		System/Utility
-License:	GPL
-URL:		https://www.infodrom.org/projects/dbview/
-Vendor:		Martin Schulze <joey@infodrom.org>
-Source:		%{name}-%{version}.tar.gz
-BuildRequires:	gcc
+Summary:        DBase III file viewer
+Name:           dbview
+Version:        1.0.4
+Release:        3.1
+Group:          System/Utility
+License:        GPL
+URL:            https://www.infodrom.org/projects/dbview/
+Vendor:         Martin Schulze <joey@infodrom.org>
+Source:         %{name}-%{version}.tar.gz
+BuildRequires:  gcc
 
 %description
 dbview is a little tool that will display dBase III files. You can also use it
@@ -30,9 +30,6 @@ At the end of every record a newline is appended.
 %{__rm} -rf $RPM_BUILD_ROOT
 %{__install} -Dp -m0755 %{name} $RPM_BUILD_ROOT/%{_bindir}/%{name}
 %{__install} -Dp -m0644 %{name}.1 $RPM_BUILD_ROOT/%{_mandir}/man1/%{name}.1
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGES README dBASE db_dump.header

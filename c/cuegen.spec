@@ -5,8 +5,8 @@ License:        GPL
 BuildRequires:  cmake
 Group:          System/Utilities
 Summary:        A FLAC-compatible cuesheet generator for Linux
-Source0:	https://www.cs.man.ac.uk/~slavinp/files/%{name}-%{version}.tar.bz2
-Source1:	%{name}_CMakeLists.txt
+Source0:        https://www.cs.man.ac.uk/~slavinp/files/%{name}-%{version}.tar.bz2
+Source1:        %{name}_CMakeLists.txt
 
 %description
 CUEgen is a FLAC-compatible cuesheet generator for Linux. The FLAC format allows cuesheets to be embedded in .flac files by storing 
@@ -35,9 +35,6 @@ cp %{SOURCE1} CMakeLists.txt
 %{__rm} -rf $RPM_BUILD_ROOT
 mv *-linux-build/%{name} .
 %cmake_install
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc README

@@ -23,9 +23,6 @@ required to run any of the KiSS paper dolls game.
 %{__mkdir_p} %{buildroot}%{_datadir}/kiss
 %{__cp} * %{buildroot}%{_datadir}/kiss
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %{_datadir}/kiss/*
 

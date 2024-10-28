@@ -1,13 +1,13 @@
 %global theme_name AwOken
 
-Name:		awoken-icon-theme
-Version:	2.5
-Release:	4.1
-Summary:	%{theme_name} icon theme
-Group:		System/GUI/GNOME
-License:	CC by SA
-URL:		https://alecive.deviantart.com/art/AwOken-163570862
-Source0:	%{theme_name}-%{version}.zip
+Name:           awoken-icon-theme
+Version:        2.5
+Release:        4.1
+Summary:        %{theme_name} icon theme
+Group:          System/GUI/GNOME
+License:        CC by SA
+URL:            https://alecive.deviantart.com/art/AwOken-163570862
+Source0:        %{theme_name}-%{version}.zip
 BuildArch:  noarch
 
 %description

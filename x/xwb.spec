@@ -30,9 +30,6 @@ rm -rf %{buildroot}
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 install -Dm644 %{name}.config %{buildroot}/usr/openwin/lib/system.xwbrc
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc xwb.README
 %{_bindir}/%{name}

@@ -1,14 +1,14 @@
-Name:		burg-manager
-Version:	1.1.0
-Release:	1
-Summary:	GUI to simplify the installation and configuration of Burg
-License:	GPL
-URL:		https://www.sourceslist.eu/burg-manager/
-Group:		Applications/System
-#Source:	git clone git://github.com/ingalex/burg-manager.git
-Source0:	%{name}-%{version}.tar.gz
-BuildArch:	noarch
-Requires:	buc, burg
+Name:           burg-manager
+Version:        1.1.0
+Release:        1
+Summary:        GUI to simplify the installation and configuration of Burg
+License:        GPL
+URL:            https://www.sourceslist.eu/burg-manager/
+Group:          Applications/System
+#Source:        git clone git://github.com/ingalex/burg-manager.git
+Source0:        %{name}-%{version}.tar.gz
+BuildArch:      noarch
+Requires:       buc, burg
 
 %description
 Burg-manager is a gui to simply install Burg, to set most of Burg bootloader
@@ -41,9 +41,6 @@ EOF
 
 %postun
 %{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc LICENSE README

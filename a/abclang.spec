@@ -38,9 +38,6 @@ mv $RPM_BUILD_ROOT%{_mandir}/man1/%{_name}.1 $RPM_BUILD_ROOT%{_mandir}/man1/%{na
 %{_datadir}/%{name}
 %{_datadir}/man/man1/%{name}.1.*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Sep 23 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 1.05.03
 - Rebuilt for Fedora

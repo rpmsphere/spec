@@ -13,13 +13,13 @@ Requires: gtk2, libosso, libhildon, gtkhtml3, libxml2
 Shared library required for running Help UI and integrating
 with other applications.
  
-%package	devel
-Summary:	Development files for %{name}
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
-Requires:	pkgconfig
+%package        devel
+Summary:        Development files for %{name}
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
+Requires:       pkgconfig
 
-%description	devel
+%description    devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
@@ -37,9 +37,6 @@ autoreconf -ifv
 %install
 %__rm -rf %{buildroot}
 %__make DESTDIR=%{buildroot} install
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc README ChangeLog COPYING

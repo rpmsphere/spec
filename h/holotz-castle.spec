@@ -1,34 +1,34 @@
 %undefine _debugsource_packages
 
-Name:		holotz-castle
-Version:	1.3.14
-Release:	1
-Summary:	A strategy platform scroller
-License:	GPLv2+
-Group:		Games/Arcade
-URL:		https://www.mainreactor.net/holotzcastle/en/index_en.html
-Source0:	https://www.mainreactor.net/holotzcastle/download/%{name}-%{version}-src.tar.gz
-Source10:	hc-48x48.png
-Source11:	hc-32x32.png
-Source12:	hc-16x16.png
-Source20:	holotz-castle-editor-48x48.png
-Source21:	holotz-castle-editor-32x32.png
-Source22:	holotz-castle-editor-16x16.png
-Patch0:		holotz-castle-1.3.6-install.patch
-Patch1:		holotz-castle-1.3.11-compile-fixes.patch
-Patch2:		holotz-castle-1.3.14-compile-fixes.patch
+Name:           holotz-castle
+Version:        1.3.14
+Release:        1
+Summary:        A strategy platform scroller
+License:        GPLv2+
+Group:          Games/Arcade
+URL:            https://www.mainreactor.net/holotzcastle/en/index_en.html
+Source0:        https://www.mainreactor.net/holotzcastle/download/%{name}-%{version}-src.tar.gz
+Source10:       hc-48x48.png
+Source11:       hc-32x32.png
+Source12:       hc-16x16.png
+Source20:       holotz-castle-editor-48x48.png
+Source21:       holotz-castle-editor-32x32.png
+Source22:       holotz-castle-editor-16x16.png
+Patch0:         holotz-castle-1.3.6-install.patch
+Patch1:         holotz-castle-1.3.11-compile-fixes.patch
+Patch2:         holotz-castle-1.3.14-compile-fixes.patch
 BuildRequires:  gcc-c++
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_mixer-devel
-BuildRequires:	SDL_image-devel
-BuildRequires:	SDL_ttf-devel
+BuildRequires:  SDL-devel
+BuildRequires:  SDL_mixer-devel
+BuildRequires:  SDL_image-devel
+BuildRequires:  SDL_ttf-devel
 BuildRequires:  mesa-libGLU-devel
 
 %package -n %{name}-editor
-License:	GPLv2+
-Group:		Games/Arcade
-Summary:	Holotz's Castle level editor
-Requires:	%{name} == %{version}
+License:        GPLv2+
+Group:          Games/Arcade
+Summary:        Holotz's Castle level editor
+Requires:       %{name} == %{version}
 
 %description
 A great mystery is hidden beyond the walls of Holotz's Castle. Will you be
@@ -41,9 +41,9 @@ This package contains a level editor for Holotz's Castle.
 
 %prep
 %setup -q -n %{name}-%{version}-src
-%patch0 -p0
-%patch1 -p1
-%patch2 -p1
+%patch 0 -p0
+%patch 1 -p1
+%patch 2 -p1
 sed -i -e 's|share/games|share|' -e 's|-Werror|-Wno-error|' -e 's|-L\.|-L. -lz|' src/Makefile
 perl -pi -e s"|\r\n|\n|g" res/playlist.txt
 rm -f res/savedata/empty.txt
@@ -60,9 +60,9 @@ install -d -m 755 %{buildroot}%{_mandir}/man6/
 install -m 644 man/%{name}.6 %{buildroot}%{_mandir}/man6/
 install -d -m 755 %{buildroot}%{_datadir}/icons/hicolor/64x64/apps
 install -d -m 755 %{buildroot}%{_datadir}/icons/hicolor/16x16/apps
-install -m 644 %{_sourcedir}/hc-48x48.png -D %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/%{name}.png
-install -m 644 %{_sourcedir}/hc-32x32.png -D %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
-install -m 644 %{_sourcedir}/hc-16x16.png -D %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
+install -m 644 %{SOURCE10} -D %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/%{name}.png
+install -m 644 %{SOURCE11} -D %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
+install -m 644 %{SOURCE12} -D %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 #game
 
 #game, xdg
@@ -80,9 +80,9 @@ EOF
 
 #editor
 install -m 644 man/%{name}-editor.6 %{buildroot}%{_mandir}/man6/
-install -m 644 %{_sourcedir}/holotz-castle-editor-48x48.png -D %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/%{name}-editor.png
-install -m 644 %{_sourcedir}/holotz-castle-editor-32x32.png -D %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}-editor.png
-install -m 644 %{_sourcedir}/holotz-castle-editor-16x16.png -D %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}-editor.png
+install -m 644 %{SOURCE20} -D %{buildroot}%{_datadir}/icons/hicolor/64x64/apps/%{name}-editor.png
+install -m 644 %{SOURCE21} -D %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}-editor.png
+install -m 644 %{SOURCE22} -D %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}-editor.png
 
 #editor, xdg
 mkdir -p %{buildroot}%{_datadir}/applications
@@ -96,9 +96,6 @@ Terminal=false
 Type=Application
 Categories=X-MandrivaLinux-MoreApplications-Games-Arcade;Game;ArcadeGame;
 EOF
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc LICENSE.txt doc/*.txt

@@ -37,11 +37,11 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -n SFML-%{version}
-%patch0 -p1 -b .gcc
-%patch1 -p1 -b .shared-libs
-%patch2 -p1 -b .cflags
-%patch3 -p1 -b .libpng15
-%patch4 -p1
+%patch 0 -p1 -b .gcc
+%patch 1 -p1 -b .shared-libs
+%patch 2 -p1 -b .cflags
+%patch 3 -p1 -b .libpng15
+%patch 4 -p1
 
 # clean up bundled libs and prebuilt binaries
 find . -depth \( -iname glew -o -iname glext -o -iname libjpeg -o -iname libpng -o -iname SOIL -o -iname zlib \) -exec rm -rf {} \;

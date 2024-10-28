@@ -33,9 +33,6 @@ install -Dm755 easyabc $RPM_BUILD_ROOT%{_bindir}/%{name}
 #ln -s /usr/bin/abc2midi $RPM_BUILD_ROOT%{_datadir}/%{name}/bin/abc2midi
 #ln -s /usr/bin/nwc2xml $RPM_BUILD_ROOT%{_datadir}/%{name}/bin/nwc2xml
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CHANGES LICENSE *.txt
 %{_datadir}/%{name}

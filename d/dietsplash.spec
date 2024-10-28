@@ -1,11 +1,11 @@
-Summary:	Simple bootsplash
-Name:		dietsplash
-Version:	0.3
-Release:	7.1
-License: 	GPLv3
-Group: 		Applications/System
-Source:		https://git.profusion.mobi/cgit.cgi/lucas/dietsplash/snapshot/%{name}-%{version}.tar.bz2
-URL:		https://git.profusion.mobi/cgit.cgi/lucas/dietsplash/
+Summary:        Simple bootsplash
+Name:           dietsplash
+Version:        0.3
+Release:        7.1
+License:        GPLv3
+Group:          Applications/System
+Source:         https://git.profusion.mobi/cgit.cgi/lucas/dietsplash/snapshot/%{name}-%{version}.tar.bz2
+URL:            https://git.profusion.mobi/cgit.cgi/lucas/dietsplash/
 
 %description
 Simple bootsplash that aims to adhere to the KISS philosophy. It's possible to
@@ -30,9 +30,6 @@ make
 %install
 rm -fr $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING README

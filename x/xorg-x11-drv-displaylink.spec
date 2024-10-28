@@ -21,7 +21,7 @@ Xorg X11 DisplayLink USB video driver.
 
 %prep
 %setup -q -n %{tarball}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure --disable-static --with-xorg-module-dir=%{moduledir}
@@ -31,9 +31,6 @@ Xorg X11 DisplayLink USB video driver.
 %{__rm} -rf %{buildroot}
 %{__make} install DESTDIR=%{buildroot}
 find %{buildroot} -regex ".*\.la$" | xargs rm -f --
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc ChangeLog COPYING README

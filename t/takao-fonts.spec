@@ -2,7 +2,7 @@ Name:           takao-fonts
 License:        Other uncritical OpenSource License
 Group:          System/X11/Fonts
 Summary:        "Proportional Gothic" Japanese TrueType font based on IPA fonts
-URL:		    https://launchpad.net/takao-fonts
+URL:                https://launchpad.net/takao-fonts
 Version:        00303.01
 Release:        4.1
 Source0:        https://launchpadlibrarian.net/199515720/TakaoFonts_%{version}.tar.xz
@@ -21,9 +21,6 @@ BuildArch:      noarch
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/fonts/takao
 install -m 644 *.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/takao
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt README* ChangeLog

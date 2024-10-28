@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/penman
+%define fontdir %{_datadir}/fonts/penman
 
 Summary: Free Manuscript Font
 Name: penmanship-print-fonts
@@ -27,9 +27,6 @@ Author: rchrdd@hotmail.com
 %install
 rm -rf %{buildroot}
 install -Dm644 PENMP___.TTF %{buildroot}%{fontdir}/penmanship-print.ttf
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /usr/bin/fc-cache 2> /dev/null

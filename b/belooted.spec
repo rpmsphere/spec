@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 
-Summary:	A game of Belote
-Name:		belooted
-Version:	0.1.4
-Release:	9.1
-License:	GPL v2
-Group:		Amusements/Games
-Source0:	https://boby.joe.free.fr/dev/belooted/files/%{name}-%{version}.tar.gz
-Source1:	belooted-background-default.png
-URL:		https://boby.joe.free.fr/dev/belooted/
-BuildRequires:	gawk
-BuildRequires:	perl-XML-Parser
-BuildRequires:	gtk2-devel >= 2.8.0
-BuildRequires:	desktop-file-utils
+Summary:        A game of Belote
+Name:           belooted
+Version:        0.1.4
+Release:        9.1
+License:        GPL v2
+Group:          Amusements/Games
+Source0:        https://boby.joe.free.fr/dev/belooted/files/%{name}-%{version}.tar.gz
+Source1:        belooted-background-default.png
+URL:            https://boby.joe.free.fr/dev/belooted/
+BuildRequires:  gawk
+BuildRequires:  perl-XML-Parser
+BuildRequires:  gtk2-devel >= 2.8.0
+BuildRequires:  desktop-file-utils
 
 %description
 Belote is a popular 32-card trick-taking game played in France.
@@ -40,11 +40,8 @@ export CFLAGS="-lm -fPIC"
 %{__rm} -rf %{buildroot}%{_datadir}/pixmaps/belooted/background-gnome.jpg
 
 desktop-file-install --vendor="" \
-	--dir %{buildroot}%{_datadir}/applications/ \
-	%{buildroot}%{_datadir}/applications/belooted.desktop
-
-%clean
-%{__rm} -rf %{buildroot}
+        --dir %{buildroot}%{_datadir}/applications/ \
+        %{buildroot}%{_datadir}/applications/belooted.desktop
 
 %post
 touch --no-create %{_datadir}/icons/hicolor

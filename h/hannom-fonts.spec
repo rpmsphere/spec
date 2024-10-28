@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/hannom
+%define fontdir %{_datadir}/fonts/hannom
 
 Summary: Chinese and Vietnamese TrueType fonts
 Name: hannom-fonts
@@ -31,9 +31,6 @@ cp %{SOURCE1} COPYING
 rm -rf %{buildroot}
 install -d %{buildroot}%{fontdir}
 install -m 0644 *.ttf %{buildroot}%{fontdir}
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /usr/bin/fc-cache 2> /dev/null

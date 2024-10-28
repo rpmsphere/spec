@@ -32,14 +32,14 @@ sed -i 's|-Wall|-Wall -Wl,--allow-multiple-definition|' Makefile */Makefile
 %install
 %make_install
 #make_install \
-#		DESTDIR=%buildroot \
+#               DESTDIR=%buildroot \
 #                PREFIX=%_usr \
 #        install-gtk3
 
 #make_install \
-#		DESTDIR=%buildroot \
+#               DESTDIR=%buildroot \
 #                PREFIX=%_usr \
-#	register-gsettings-schemas
+#       register-gsettings-schemas
 
 %find_lang gmtp
 

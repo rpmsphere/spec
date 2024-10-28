@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Name:		schat2
-Version:	2.3.3
-Release:	8.1
-Summary:	Simple Chat 2
-URL:		https://schat.me/
-License:	GPLv3+
-Group:		Networking/Chat
-Source0:	schat-%{version}.tar.gz
+Name:           schat2
+Version:        2.3.3
+Release:        8.1
+Summary:        Simple Chat 2
+URL:            https://schat.me/
+License:        GPLv3+
+Group:          Networking/Chat
+Source0:        schat-%{version}.tar.gz
 BuildRequires:  qtwebkit-devel
 BuildRequires:  GeoIP-devel
 

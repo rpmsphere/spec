@@ -32,7 +32,7 @@ Have you got what it takes to solve Chroma?
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 sed -i 's|inline void|void|' sdlshadowdisplay.c
 
 %build
@@ -47,9 +47,6 @@ install -m 644 -D %{S:1} %{buildroot}%{_datadir}/pixmaps/
 install -m 644 -D %{S:3} %{buildroot}%{_datadir}/pixmaps/
 install -m 644 -D %{S:2} %{buildroot}%{_datadir}/applications/
 install -m 644 -D %{S:4} %{buildroot}%{_datadir}/applications/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README COPYING CHANGELOG

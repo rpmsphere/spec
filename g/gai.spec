@@ -1,29 +1,29 @@
-Name:		gai
-Version:	0.5.10
-Release:	33.4
-Summary:	Generic Applet Interface
-Group:		User Interface/Desktops
-License:	LGPLv2+
-URL:		https://gai.sourceforge.net
-Source0:	https://download.sf.net/gai/gai-%{version}.tar.bz2
-Patch0:		gai-0.5.9-pkgconfig.patch
-Patch1:		gai-0.5.10-nls.patch
-Patch2:		gai-0.5.10-xorg.patch
-Patch3:		gai-0.5.10-build.patch
-Patch4:		gai-0.5.10-exit.patch
+Name:           gai
+Version:        0.5.10
+Release:        33.4
+Summary:        Generic Applet Interface
+Group:          User Interface/Desktops
+License:        LGPLv2+
+URL:            https://gai.sourceforge.net
+Source0:        https://download.sf.net/gai/gai-%{version}.tar.bz2
+Patch0:         gai-0.5.9-pkgconfig.patch
+Patch1:         gai-0.5.10-nls.patch
+Patch2:         gai-0.5.10-xorg.patch
+Patch3:         gai-0.5.10-build.patch
+Patch4:         gai-0.5.10-exit.patch
 # work around the dropped libgnomeui-2.0 dependency in libpanelapplet-2.0.pc
-Patch5:		gai-0.5.10-gnome-panel-2.25.patch
+Patch5:         gai-0.5.10-gnome-panel-2.25.patch
 BuildRequires:  libpng-devel
-BuildRequires:	libgnomeui-devel, mate-panel-devel, sane-backends-devel
-BuildRequires:	SDL-devel, gtkglext-devel, gettext, xorg-x11-proto-devel
-BuildRequires:	w3m, fedora-logos, udisks2
+BuildRequires:  libgnomeui-devel, mate-panel-devel, sane-backends-devel
+BuildRequires:  SDL-devel, gtkglext-devel, gettext, xorg-x11-proto-devel
+BuildRequires:  w3m, fedora-logos, udisks2
 
-%package	devel
-Summary:	Library and headers for Generic Applet Interface
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
-Requires:	pkgconfig, mate-panel-devel
-Requires:	libgnomeui-devel, gtkglext-devel, xorg-x11-proto-devel
+%package        devel
+Summary:        Library and headers for Generic Applet Interface
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
+Requires:       pkgconfig, mate-panel-devel
+Requires:       libgnomeui-devel, gtkglext-devel, xorg-x11-proto-devel
 
 %description
 This library provides a generic interface for developing applets for Gnome 2
@@ -40,12 +40,12 @@ GAI applets.
 
 %prep
 %setup -q
-%patch0 -p1 -b .pkgconfig
-%patch1 -p1 -b .nls
-%patch2 -p1 -b .xorg
-%patch3 -p1 -b .build
-%patch4 -p1 -b .exit
-%patch5 -p1 -b .gnome-panel-2.25
+%patch 0 -p1 -b .pkgconfig
+%patch 1 -p1 -b .nls
+%patch 2 -p1 -b .xorg
+%patch 3 -p1 -b .build
+%patch 4 -p1 -b .exit
+%patch 5 -p1 -b .gnome-panel-2.25
 
 %build
 export CFLAGS="-fPIC $RPM_OPT_FLAGS -Wno-format-security"
@@ -56,9 +56,6 @@ make %{?_smp_mflags}
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=${RPM_BUILD_ROOT} install
 %find_lang %name
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %doc AUTHORS BUGS COPYING.LIB ChangeLog README* THANKS TODO WINDOWMANAGERS

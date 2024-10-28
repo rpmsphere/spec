@@ -1,13 +1,13 @@
-Summary:	Gtk-based front-end for Esetroot
-Name:		gsetroot
-Version:	1.1
-Release:	18.1
-Source0:	https://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-License:	GPLv2
-Group:		Graphical desktop/GNOME
-URL:		https://gsetroot.sf.net
-BuildRequires:	gtk2-devel
-Requires:	eterm
+Summary:        Gtk-based front-end for Esetroot
+Name:           gsetroot
+Version:        1.1
+Release:        18.1
+Source0:        https://download.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+License:        GPLv2
+Group:          Graphical desktop/GNOME
+URL:            https://gsetroot.sf.net
+BuildRequires:  gtk2-devel
+Requires:       eterm
 
 %description
 Use it to configure root window under a Window Manager like FluxBox,
@@ -24,9 +24,6 @@ make CFLAGS+="-DHAVE_STPCPY -DHAVE_MEMPCPY"
 rm -rf %{buildroot}
 %makeinstall
 rm -rf %{buildroot}/usr/doc/* %{buildroot}%{_datadir}/locale/locale.alias
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS README ChangeLog

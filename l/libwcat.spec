@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Summary:	Library for the watchcat software watchdog
-Name:		libwcat
-Version:	1.1
-Release:	11.1
-License:	LGPL
-Group:		System/Libraries
-URL:		https://oss.digirati.com.br/watchcatd/
-Source0:	https://oss.digirati.com.br/watchcatd/%{name}-%{version}.tar.gz
-Patch0:		libwcat-ldflags.diff
-Patch1:		libwcat-socket_location_fix.diff
+Summary:        Library for the watchcat software watchdog
+Name:           libwcat
+Version:        1.1
+Release:        11.1
+License:        LGPL
+Group:          System/Libraries
+URL:            https://oss.digirati.com.br/watchcatd/
+Source0:        https://oss.digirati.com.br/watchcatd/%{name}-%{version}.tar.gz
+Patch0:         libwcat-ldflags.diff
+Patch1:         libwcat-socket_location_fix.diff
 Requires:   watchcatd
 
 %description
@@ -18,9 +18,9 @@ approach not as drastic as the usual watchdog solutions. It tries
 to kill the locked process only.
 
 %package devel
-Summary:	Static library and header files for the watchcat library
-Group:		Development/C
-Requires:	%{name} = %{version}-%{release}
+Summary:        Static library and header files for the watchcat library
+Group:          Development/C
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 libwcat is an API to watchcatd, a software watchdog that uses an
@@ -32,8 +32,8 @@ needed to compile applications that use libwcat.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p0
-%patch1 -p0
+%patch 0 -p0
+%patch 1 -p0
 
 %build
 make 
@@ -52,9 +52,6 @@ ln -s %{name}.so.1.%{version} %{buildroot}%{_libdir}/%{name}.so.1
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_libdir}/*.so.*

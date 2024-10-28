@@ -18,8 +18,8 @@ and don't need stuff like svgalib.
 
 %prep
 %setup -q
-%patch1
-%patch2
+%patch 1
+%patch 2
 
 %build
 make CFLAGS="$RPM_OPT_FLAGS" 
@@ -28,9 +28,6 @@ make CFLAGS="$RPM_OPT_FLAGS"
 install -d $RPM_BUILD_ROOT%{_bindir}
 install -m755 txt2psf $RPM_BUILD_ROOT%{_bindir}/nafe-txt2psf
 install -m755 psf2txt $RPM_BUILD_ROOT%{_bindir}/nafe-psf2txt
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING demo* readme.txt

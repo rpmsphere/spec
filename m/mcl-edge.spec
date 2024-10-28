@@ -30,9 +30,6 @@ sed -i 's|-Wall|-Wall -Wl,--allow-multiple-definition|' `find . -name Makefile`
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT docdir=%{_docdir}/mcl-edge exampledir=%{_docdir}/mcl-edge/examples
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/*
 %{_mandir}/man*/*

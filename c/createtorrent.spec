@@ -30,9 +30,6 @@ sed -i 's|-lssl|-lcrypto|' configure
 %{__rm} -rf $RPM_BUILD_ROOT
 %makeinstall
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/createtorrent
 %doc AUTHORS ChangeLog COPYING NEWS README

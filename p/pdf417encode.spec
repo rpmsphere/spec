@@ -31,9 +31,6 @@ rm -rf $RPM_BUILD_ROOT
 install -D -m 755 pdf417_enc $RPM_BUILD_ROOT%{_bindir}/pdf417_enc
 install -D -m 755 libpdf417enc.so $RPM_BUILD_ROOT%{_libdir}/libpdf417enc.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/pdf417_enc
 %{_libdir}/libpdf417enc.so

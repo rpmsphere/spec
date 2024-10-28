@@ -24,7 +24,7 @@ fancy graphical user interfaces to have a good time.
 
 %prep
 %setup -q -n ski-%{version}
-%patch0
+%patch 0
 
 %build
 make %{?_smp_mflags} CFLAGS="%{optflags}"

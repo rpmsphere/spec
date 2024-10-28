@@ -38,9 +38,6 @@ chmod +x %{buildroot}%{_bindir}/%{name}
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop

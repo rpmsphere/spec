@@ -1,14 +1,14 @@
 %global _name keyboard
 
-Summary:	Hook and simulate global keyboard events
-Name:		python3-%{_name}
-Version:	0.13.5
-Release:	1
-License: 	MIT
-Group: 		Development/Tools
-Source0:	https://github.com/boppreh/keyboard/archive/refs/tags/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
-URL:		https://github.com/boppreh/keyboard
-BuildArch:	noarch
+Summary:        Hook and simulate global keyboard events
+Name:           python3-%{_name}
+Version:        0.13.5
+Release:        1
+License:        MIT
+Group:          Development/Tools
+Source0:        https://github.com/boppreh/keyboard/archive/refs/tags/v%{version}.tar.gz#/%{_name}-%{version}.tar.gz
+URL:            https://github.com/boppreh/keyboard
+BuildArch:      noarch
 
 %description
 Take full control of your keyboard with this small Python library. Hook global
@@ -23,9 +23,6 @@ python3 setup.py build
 %install
 rm -fr $RPM_BUILD_ROOT
 python3 setup.py install --prefix=/usr --root=%{buildroot} --skip-build
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGES.md LICENSE.txt README.md

@@ -1,18 +1,18 @@
-Name:			afternoonstalker
-Version:		1.1.6
-Summary:		A Night Stalker(TM) clone
-License:		GPLv2
-URL:			https://sarrazip.com/dev/%{name}.html
-Group:			Amusements/Games
-Release:		1
-Source0:		%{name}-%{version}.tar.gz
-BuildRequires:		desktop-file-utils
-BuildRequires:		gcc-c++
-BuildRequires:		libtool
-BuildRequires:		SDL-devel
-BuildRequires:		SDL_image-devel
-BuildRequires:		SDL_mixer-devel
-BuildRequires:		flatzebra-devel
+Name:                   afternoonstalker
+Version:                1.1.6
+Summary:                A Night Stalker(TM) clone
+License:                GPLv2
+URL:                    https://sarrazip.com/dev/%{name}.html
+Group:                  Amusements/Games
+Release:                1
+Source0:                %{name}-%{version}.tar.gz
+BuildRequires:          desktop-file-utils
+BuildRequires:          gcc-c++
+BuildRequires:          libtool
+BuildRequires:          SDL-devel
+BuildRequires:          SDL_image-devel
+BuildRequires:          SDL_mixer-devel
+BuildRequires:          flatzebra-devel
 
 %description
 Clone of the Intellivision game Night Stalker.  You are in a
@@ -48,9 +48,6 @@ Terminal=false
 _EOF_
 
 install -D -m644 src/%{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/applications/%{name}.desktop
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README THANKS TODO

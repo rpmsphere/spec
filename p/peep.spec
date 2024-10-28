@@ -8,7 +8,7 @@ License:      GPL
 Version:      0.5.7
 Release:      6.1
 Source0:      https://www.cslab.ece.ntua.gr/~gtsouk/peep/peep-%{version}.tar.gz
-Patch:        peep.patch
+Patch0:        peep.patch
 
 %description
 PEEP is an ultra-flexible utility for general purpose
@@ -17,7 +17,7 @@ and the standard I/O.
 
 %prep
 %setup -q
-%patch -p0
+%patch 0 -p0
 
 %build
 %{__make} %{_smp_mflags} linux-gcc-dynamic
@@ -35,9 +35,6 @@ install -c -m 644 \
 %files
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.5.7

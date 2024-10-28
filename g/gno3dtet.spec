@@ -1,29 +1,29 @@
-Summary:	GNOME 3D Tetris game
-Name:		gno3dtet
-Version:	1.96.1
-Release:	1
-License:	GPL
-Vendor:		Sebastien Nicoud <snicoud@home.com>
-Group:		X11/Applications/Games
-Group(de):	X11/Aplikacje/Spiele
-Group(pl):	X11/Aplikacje/Gry
-Source0:	ftp://webdat.com/pub/seb/gno3dtet/%{name}-%{version}.tgz
-#Patch0:		%{name}-DESTDIR.patch
-#Patch1:		%{name}-desktop.patch
-URL:		https://gno3dtet.eseb.net/3dtetris.php
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libgnome-devel
-BuildRequires:	libstdc++-devel
-BuildRequires:	libtool
+Summary:        GNOME 3D Tetris game
+Name:           gno3dtet
+Version:        1.96.1
+Release:        1
+License:        GPL
+Vendor:         Sebastien Nicoud <snicoud@home.com>
+Group:          X11/Applications/Games
+Group(de):      X11/Aplikacje/Spiele
+Group(pl):      X11/Aplikacje/Gry
+Source0:        ftp://webdat.com/pub/seb/gno3dtet/%{name}-%{version}.tgz
+#Patch0:                %{name}-DESTDIR.patch
+#Patch1:                %{name}-desktop.patch
+URL:            https://gno3dtet.eseb.net/3dtetris.php
+BuildRequires:  autoconf
+BuildRequires:  automake
+BuildRequires:  libgnome-devel
+BuildRequires:  libstdc++-devel
+BuildRequires:  libtool
 
 %description
 gno3dtet is a 3D Tetris-like game for GNOME.
 
 %prep
 %setup -q
-#%patch0 -p1
-#%patch1 -p1
+#%patch 0 -p1
+#%patch 1 -p1
 sed -i 's/gnome-games/gno3dtet/' configure*
 sed -i '800s/index/transfo/' src/cgame.cc
 
@@ -44,11 +44,8 @@ sed -i '800s/index/transfo/' src/cgame.cc
 %__rm -rf $RPM_BUILD_ROOT
 
 make install \
-	DESTDIR=$RPM_BUILD_ROOT
-#	Gamesdir=%{_bindir}
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
+        DESTDIR=$RPM_BUILD_ROOT
+#       Gamesdir=%{_bindir}
 
 %post
 touch %{_localstatedir}/games/gno3dtet.hof

@@ -19,7 +19,7 @@ tar.xz archives.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 
 %build
 export CFLAGS="%{optflags}"
@@ -39,9 +39,6 @@ done
 %doc rpm2targz.README
 %{_bindir}/rpm*
 %doc %{_mandir}/man1/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Aug 05 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 9.0.0.4g

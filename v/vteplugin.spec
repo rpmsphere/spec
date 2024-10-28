@@ -5,7 +5,7 @@ Summary:       A plugin to run a terminal inside a webbrowser tab
 Group:         Applications/Web
 URL:           https://github.com/arenevier/vteplugin
 Source:        https://blog.renevier.net/public/vteplugin-%{version}.tar.bz2
-Patch:         vteplugin-0.1-html.patch
+Patch0:         vteplugin-0.1-html.patch
 License:       WTFPL
 BuildRequires: libpng-devel
 BuildRequires: atk-devel
@@ -23,7 +23,7 @@ That means you can use command line in a terminal inside a browser tab.
 
 %prep
 %setup -q
-%patch -p1
+%patch 0 -p1
 sed -i "s|\(install_path=\"\)|\1$RPM_BUILD_ROOT|;s|\['-O2'\, '-Wall'\]|'%optflags'.split()|" wscript
 
 %build
@@ -44,9 +44,6 @@ mv $RPM_BUILD_ROOT/usr/lib32 $RPM_BUILD_ROOT%{_libdir}
 
 # fixup strange shared library permissions
 chmod 755 $RPM_BUILD_ROOT%{_libdir}/mozilla/plugins/*.so
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_libdir}/mozilla/plugins/*.so

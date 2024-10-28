@@ -25,9 +25,6 @@ rm -rf $RPM_BUILD_ROOT
 install -Dm 0755 larswm $RPM_BUILD_ROOT%{_bindir}/larswm
 install -Dm 0644 larswm.man $RPM_BUILD_ROOT%{_mandir}/man1/larswm.1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc ChangeLog README sample.larswmrc README.9wm
 %{_bindir}/larswm

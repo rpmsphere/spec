@@ -20,7 +20,7 @@ BuildRequires: automake autoconf libtool
 Requires(pre): GConf2
 Requires(post): GConf2
 Requires(preun): GConf2
-Provides:	gnome-media-libs = %{version}-%{release}
+Provides:       gnome-media-libs = %{version}-%{release}
 Obsoletes:      gnome-media-libs <= 2.91.0-1.fc15
 
 %description
@@ -31,7 +31,7 @@ for applications aiming to support different sound formats.
 Summary:        Development files for %{name}
 Group:          Development/Libraries
 Requires:       %{name} = %{version}-%{release}
-Provides:	gnome-media-devel = %{version}-%{release}
+Provides:       gnome-media-devel = %{version}-%{release}
 Obsoletes:      gnome-media-devel <= 2.91.0-1.fc15
 
 %description    devel
@@ -40,7 +40,7 @@ for developing applications that use %{name}.
 
 %prep
 %setup -q
-%patch1 -p1 -b .format-security
+%patch 1 -p1 -b .format-security
 # autoreconf for now for aarch64
 autoreconf -fi
 

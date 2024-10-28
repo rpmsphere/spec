@@ -1,15 +1,15 @@
-Summary: 	Molecule viewer and editor
-Name: 		viewmol
-Version: 	2.4.1
-Release: 	20.1
-License: 	GPLv2
-Group: 		Sciences/Chemistry
-URL: 		https://viewmol.sourceforge.net
-Source0: 	%name-%version.src.tar.bz2
-Patch0:		viewmol-2.4.1-prevent-app-defaults-file-install.patch
-Patch1:		viewmol-2.4.1-mdv-fix-str-fmt.patch
-BuildRequires: 	libtiff-devel mesa-libGLU-devel
-BuildRequires: 	xorg-x11-proto-devel libXt-devel libXi-devel libXmu-devel
+Summary:        Molecule viewer and editor
+Name:           viewmol
+Version:        2.4.1
+Release:        20.1
+License:        GPLv2
+Group:          Sciences/Chemistry
+URL:            https://viewmol.sourceforge.net
+Source0:        %name-%version.src.tar.bz2
+Patch0:         viewmol-2.4.1-prevent-app-defaults-file-install.patch
+Patch1:         viewmol-2.4.1-mdv-fix-str-fmt.patch
+BuildRequires:  libtiff-devel mesa-libGLU-devel
+BuildRequires:  xorg-x11-proto-devel libXt-devel libXi-devel libXmu-devel
 BuildRequires:  motif-devel libpng-devel
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  python2-devel
@@ -23,8 +23,8 @@ Mopac, and Turbomole outputs as well as for PDB files.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1 -b .strfmt
+%patch 0 -p1
+%patch 1 -p1 -b .strfmt
 cd source
 perl -p -i -e 's!usr/local/lib!%_libdir!g' getrc.c
 perl -p -i -e 's!lib/viewmol!%_lib/viewmol!g' install

@@ -30,9 +30,6 @@ make install
 mkdir -p $RPM_BUILD_ROOT/usr/share
 mv $RPM_BUILD_ROOT/usr/man $RPM_BUILD_ROOT/usr/share/man
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc NEWS README
 %{_bindir}/xshostakovich

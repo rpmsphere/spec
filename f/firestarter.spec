@@ -1,31 +1,31 @@
-Name:		firestarter
-Version:	1.0.3
-Release:	25.4
-Summary:	Firewall tool for GNOME
-Group:		Applications/Internet
-License:	GPLv2+
-URL:		https://firestarter.sourceforge.net
-Source0:	https://download.sourceforge.net/firestarter/firestarter-1.0.3.tar.gz
-Patch0:		firestarter-1.0.3-pam.patch
-Patch1:		firestarter-1.0.3-services.patch
-Patch2:		firestarter-1.0.3-nobrowser.patch
-Patch3:		firestarter-1.0.3-nonroutable.patch
-Patch4:		firestarter-1.0.3-multicast.patch
+Name:           firestarter
+Version:        1.0.3
+Release:        25.4
+Summary:        Firewall tool for GNOME
+Group:          Applications/Internet
+License:        GPLv2+
+URL:            https://firestarter.sourceforge.net
+Source0:        https://download.sourceforge.net/firestarter/firestarter-1.0.3.tar.gz
+Patch0:         firestarter-1.0.3-pam.patch
+Patch1:         firestarter-1.0.3-services.patch
+Patch2:         firestarter-1.0.3-nobrowser.patch
+Patch3:         firestarter-1.0.3-nonroutable.patch
+Patch4:         firestarter-1.0.3-multicast.patch
 Patch5:         statusfix.patch
 # https://aur.archlinux.org/packages.php?ID=27159
 Patch12: 12_firestarter_transparent_icon.patch
 Patch18: 18_fix_memleak.patch
 Patch99: menu-toolbar-icons-fix.patch
-BuildRequires:	desktop-file-utils
-BuildRequires:	gettext
-BuildRequires:	libgnomeui-devel
-BuildRequires:	perl-XML-Parser
+BuildRequires:  desktop-file-utils
+BuildRequires:  gettext
+BuildRequires:  libgnomeui-devel
+BuildRequires:  perl-XML-Parser
 BuildRequires: gcc-c++, gcc
 BuildRequires: w3m udisks2
-Requires:	iptables
-Requires:	usermode-gtk
-Requires(post):		GConf2
-Requires(preun):	GConf2
+Requires:       iptables
+Requires:       usermode-gtk
+Requires(post):         GConf2
+Requires(preun):        GConf2
 
 %description
 Firestarter is an easy-to-use, yet powerful, Linux firewall tool for GNOME.
@@ -35,15 +35,15 @@ firewall scripts.
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p1 -b .services
-#%patch2 -p1 -b .nobrowser
-%patch3 -p1 -b .nonroutable
-%patch4 -p1 -b .multicast
-%patch5 -p1 -b .statusfix
-%patch12 -p1
-%patch18 -p1
-%patch99 -p1
+%patch 0 -p0
+%patch 1 -p1 -b .services
+#%patch 2 -p1 -b .nobrowser
+%patch 3 -p1 -b .nonroutable
+%patch 4 -p1 -b .multicast
+%patch 5 -p1 -b .statusfix
+%patch 12 -p1
+%patch 18 -p1
+%patch 99 -p1
 
 %build
 export CFLAGS="$RPM_OPT_FLAGS -Wno-format-security -lX11 -Wl,--allow-multiple-definition"
@@ -95,9 +95,6 @@ desktop-file-install --vendor fedora                   \
   --add-category X-Fedora                              \
   firestarter.desktop
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %post
 export GCONF_CONFIG_SOURCE="$(gconftool-2 --get-default-source)"
 gconftool-2 --makefile-install-rule %{_sysconfdir}/gconf/schemas/%{name}.schemas &>/dev/null
@@ -109,12 +106,12 @@ fi
 
 %preun
 if [ "$1" = "0" ]; then
-	export GCONF_CONFIG_SOURCE="$(gconftool-2 --get-default-source)"
-	gconftool-2 --makefile-uninstall-rule %{_sysconfdir}/gconf/schemas/%{name}.schemas &>/dev/null
+        export GCONF_CONFIG_SOURCE="$(gconftool-2 --get-default-source)"
+        gconftool-2 --makefile-uninstall-rule %{_sysconfdir}/gconf/schemas/%{name}.schemas &>/dev/null
 
-	/sbin/chkconfig iptables reset 2>/dev/null || :
-	/sbin/service firestarter stop >/dev/null 2>&1
-	/sbin/chkconfig --del firestarter
+        /sbin/chkconfig iptables reset 2>/dev/null || :
+        /sbin/service firestarter stop >/dev/null 2>&1
+        /sbin/chkconfig --del firestarter
 fi
 
 %postun

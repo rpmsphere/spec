@@ -5,8 +5,8 @@ License:        GPL
 BuildRequires:  cmake zlib-devel openssl-devel
 Group:          System/Utilities
 Summary:        Tool for converting the UIF files to ISO
-Source0:	uif2iso.c
-Source1:	%name.CMakeLists.txt
+Source0:        uif2iso.c
+Source1:        %name.CMakeLists.txt
 
 %description
 Tool for converting the UIF files (Universal Image Format, used by MagicISO) to ISO.
@@ -22,9 +22,6 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr .
 
 %install
 %make_install
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %{_bindir}/%{name}

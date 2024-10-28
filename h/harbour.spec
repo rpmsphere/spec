@@ -90,9 +90,6 @@ make install \
      HB_QTPOSTFIX=-qt4
 chmod +x %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post libs -p /sbin/ldconfig
 
 %postun libs -p /sbin/ldconfig

@@ -1,18 +1,18 @@
 %undefine _missing_build_ids_terminate_build
 %undefine _debugsource_packages
 
-Name:		ackit
-Version:	6.1pre1
-Release:	1
-Summary:	The Amsterdam Compiler Kit
-Group:		Development/Languages
-URL:		https://github.com/davidgiven/ack
-License:	BSD
-Source:		ack-default.zip
-BuildRequires:	flex-devel
-BuildRequires:	ed
-BuildRequires:	byacc
-BuildRequires:	ninja-build
+Name:           ackit
+Version:        6.1pre1
+Release:        1
+Summary:        The Amsterdam Compiler Kit
+Group:          Development/Languages
+URL:            https://github.com/davidgiven/ack
+License:        BSD
+Source:         ack-default.zip
+BuildRequires:  flex-devel
+BuildRequires:  ed
+BuildRequires:  byacc
+BuildRequires:  ninja-build
 
 %description
 The Amsterdam Compiler Kit is a complete compiler toolchain consisting of

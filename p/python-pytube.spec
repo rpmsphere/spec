@@ -27,9 +27,6 @@ python2 setup.py install --root=$RPM_BUILD_ROOT --prefix=/usr
 
 sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.rst LICENSE.txt CHANGES.rst
 %{_bindir}/*

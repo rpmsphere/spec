@@ -33,9 +33,6 @@ install -Dm644 %{name}.desktop $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.d
 install -Dm644 %{name}.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 install -Dm644 %{name}.6 $RPM_BUILD_ROOT%{_datadir}/man/man6/%{name}.6
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README.Win32 %{name}.html %{name}.py
 %{_bindir}/%{name}

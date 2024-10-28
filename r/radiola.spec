@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		radiola
-Version:	0.0.1
-Release:	6.1
-License:	GPL
-Vendor:		Socolov
-Source:		trunk-%{version}.tar.bz2
-Group:		Productivity/Graphics/Viewers
-Summary:	Lightweight Internet Radio
-BuildRequires:	gcc-c++, cmake, hicolor-icon-theme, pkgconfig(QtGui)
-Requires:	mplayer
+Name:           radiola
+Version:        0.0.1
+Release:        6.1
+License:        GPL
+Vendor:         Socolov
+Source:         trunk-%{version}.tar.bz2
+Group:          Productivity/Graphics/Viewers
+Summary:        Lightweight Internet Radio
+BuildRequires:  gcc-c++, cmake, hicolor-icon-theme, pkgconfig(QtGui)
+Requires:       mplayer
 
 %description
 Please download any *.pls (e.g. https://somafm.com/play/groovesalad130),
@@ -28,9 +28,6 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=release
 %{__rm} -rf $RPM_BUILD_ROOT
 cd build
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

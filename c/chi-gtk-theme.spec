@@ -8,7 +8,7 @@ License:        GPL
 Group:          User Interface/Desktops
 URL:            https://gnome-look.org/content/show.php/Chi+?content=143387
 Source0:        https://gnome-look.org/CONTENT/content-files/143387-Chi.tar.bz2
-BuildArch:	    noarch
+BuildArch:          noarch
 Requires:       feelofjapan-icon-theme
 Requires:       woodshed-metacity-theme
 
@@ -28,9 +28,6 @@ sed -i '$a BackgroundImage=/usr/share/icons/Feel-of-Japan/158335-Japanese_Room.j
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 cp -a * $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %{_datadir}/themes/%{theme_name}

@@ -23,7 +23,7 @@ tutorials, but also for sharing python-based calculations with colleagues.
 
 %prep
 %setup -q -n %{pyname}-%{version}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 # Build an egg file that we can then install from

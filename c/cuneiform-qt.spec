@@ -1,14 +1,14 @@
-Name:		cuneiform-qt
-Version: 	0.1.2
-Release: 	4.1
-Summary:	GUI frontend for Cuneiform OCR
-License:	GPLv3+
-Group:		Productivity/Graphics/Other
-URL:		https://www.altlinux.org/Cuneiform-Qt
-Vendor:		Andrey Cherepanov <cas@altlinux.org>
-Source:		%name-%version.tar.bz2
-BuildRequires:	gcc-c++, pkgconfig, pkgconfig(QtGui)
-Requires:	cuneiform
+Name:           cuneiform-qt
+Version:        0.1.2
+Release:        4.1
+Summary:        GUI frontend for Cuneiform OCR
+License:        GPLv3+
+Group:          Productivity/Graphics/Other
+URL:            https://www.altlinux.org/Cuneiform-Qt
+Vendor:         Andrey Cherepanov <cas@altlinux.org>
+Source:         %name-%version.tar.bz2
+BuildRequires:  gcc-c++, pkgconfig, pkgconfig(QtGui)
+Requires:       cuneiform
 
 %description
 This application is GUI frontend for Cuneiform (OCR system originally
@@ -44,5 +44,5 @@ popd
 - Rebuilt for Fedora
 * Mon Feb 07 2011 Petr Vanek <petr@scribus.info> 0.1.2
 - suse fixes
-* Fri May 09 2009 TI_Eugene <ti.eugene@gmail.com> 0.1.2
+* Sat May 09 2009 TI_Eugene <ti.eugene@gmail.com> 0.1.2
 - Initial build for OBS

@@ -24,9 +24,6 @@ make install ROOTDIR=%{buildroot}
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc docs/*
 %{_libdir}/libg11n.a

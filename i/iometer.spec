@@ -25,9 +25,6 @@ sed 's|IA64|AARCH64|' src/Makefile-Linux.ia64 > src/Makefile-Linux.aarch64
 %{__rm} -rf %{buildroot}
 %{__install} -Dp -m0755 src/dynamo %{buildroot}%{_bindir}/dynamo
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %doc *.txt src/scripts/ src/iomtr_kstat/ misc/
 %{_bindir}/dynamo

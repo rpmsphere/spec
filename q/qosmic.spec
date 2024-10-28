@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 
-Summary:	Graphical interface for creating flam3 fractal images
-Name:		qosmic
-Version:	1.5.0
-#Version:	1.6.0
-Release:	20.1
-Source0:	%{name}-%{version}.tar.bz2
-License:	GPLv2
-Group:		Graphics
-URL:		https://code.google.com/p/qosmic/
-BuildRequires:	flam3-devel, libxml2-devel
-BuildRequires:	gcc-c++, libjpeg-devel, qt4-devel
-BuildRequires:	lua-devel
-BuildRequires:	compat-lua-devel
+Summary:        Graphical interface for creating flam3 fractal images
+Name:           qosmic
+Version:        1.5.0
+#Version:       1.6.0
+Release:        20.1
+Source0:        %{name}-%{version}.tar.bz2
+License:        GPLv2
+Group:          Graphics
+URL:            https://code.google.com/p/qosmic/
+BuildRequires:  flam3-devel, libxml2-devel
+BuildRequires:  gcc-c++, libjpeg-devel, qt4-devel
+BuildRequires:  lua-devel
+BuildRequires:  compat-lua-devel
 
 %description
 Qosmic is graphical interface for creating, editing, and rendering
@@ -32,9 +32,6 @@ make
 %install
 %__rm -rf $RPM_BUILD_ROOT
 %__install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README* changes.txt COPYING

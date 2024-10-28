@@ -23,7 +23,7 @@ HTML, but the number of types of pages will increase in future.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 
 # Prepare *.py.
 find src/%{name} -name \*.py -exec \

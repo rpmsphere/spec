@@ -19,8 +19,8 @@ tions over encrypted secure channels.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 sed -i 's|mirrordir $(bindir)|mirrordir $(DESTDIR)$(bindir)|' src/Makefile.*
 cp %{SOURCE1} vfs/tcpd.h
 sed -i 's|stderr,m|stderr, "%s", m|' vfs/secure-mcserv.c

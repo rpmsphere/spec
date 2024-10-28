@@ -33,9 +33,6 @@ export CFLAGS="%{optflags} -DHAVE_MMAP"
 %{__install} -Dp -m0755 heme %{buildroot}%{_bindir}/heme
 %{__install} -Dp -m0644 heme.1 %{buildroot}%{_mandir}/man1/heme.1
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %doc COPYING INSTALL README THANKS
 %{_mandir}/man1/heme.1*

@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name: 		edelib
+Name:           edelib
 Version:        2.0
-#Version: 	2.1
-Release: 	52.1
-Source: 	https://sourceforge.net/projects/ede/files/%{name}/%{version}/%{name}-%{version}.tar.gz
-Summary:	A stable, small and fast cross-platform GUI ToolKit
-URL: 		https://ede.sourceforge.net
-License: 	LGPL
-Group: 		System/Libraries
+#Version:       2.1
+Release:        52.1
+Source:         https://sourceforge.net/projects/ede/files/%{name}/%{version}/%{name}-%{version}.tar.gz
+Summary:        A stable, small and fast cross-platform GUI ToolKit
+URL:            https://ede.sourceforge.net
+License:        LGPL
+Group:          System/Libraries
 #BuildRequires: fltk13-devel
 BuildRequires: fltk-devel
 BuildRequires: gcc-c++, jam, gettext, dbus-devel, doxygen, libpng-devel, libjpeg-devel
@@ -24,11 +24,11 @@ repository on SourceForge.
 
 %package devel
 Summary: Header files and libraries for developing apps which will edelib
-Version: 	%{version}
-Release: 	52.1
-Group: 		Development/C++
-Requires: 	%{name} = %{version}
-Provides:	edelib-devel
+Version:        %{version}
+Release:        52.1
+Group:          Development/C++
+Requires:       %{name} = %{version}
+Provides:       edelib-devel
 
 %description devel
 The edelib-devel package contains the header files and libraries needed

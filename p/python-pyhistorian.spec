@@ -33,9 +33,6 @@ python2 setup.py build
 %install
 python2 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{python2_sitelib}/*
 

@@ -38,9 +38,6 @@ make %{?_smp_mflags}
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc LICENSE AUTHORS ChangeLog COPYING NEWS README
 %doc *.yab *.htm tests/*.yab

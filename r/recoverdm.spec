@@ -29,8 +29,8 @@ combine them into one image with mergebad.
 
 %prep
 %setup -q
-%patch0
-%patch1
+%patch 0
+%patch 1
 
 %build
 export CFLAGS="%{optflags}"

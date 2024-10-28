@@ -24,11 +24,11 @@ https://www.radium.ncsc.mil/tpep/library/protection_profiles/CAPP-1.d.pdf
 
 %prep
 %setup -q
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
+%patch 5 -p1
 
 %build
 LDFLAGS=-Wl,--allow-multiple-definition
@@ -42,9 +42,6 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 make "DESTDIR=${RPM_BUILD_ROOT}" "bindir=%{_sbindir}" install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post
 /sbin/chkconfig --add amtu

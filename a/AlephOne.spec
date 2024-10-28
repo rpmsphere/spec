@@ -40,9 +40,6 @@ make
 rm -rf ${RPM_BUILD_ROOT}
 %makeinstall
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc AUTHORS COPYING INSTALL.Unix README docs/MML.html docs/Lua.html
 %{_bindir}/alephone

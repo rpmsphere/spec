@@ -7,7 +7,7 @@ Name: libplayer
 Version: 2.0.1
 Release: 1
 URL: https://libplayer.geexbox.org/
-Source:	https://libplayer.geexbox.org/releases/%{name}-%{version}.tar.bz2
+Source: https://libplayer.geexbox.org/releases/%{name}-%{version}.tar.bz2
 License: LGPLv2+
 Summary: A multimedia A/V abstraction layer API
 Group: System/Libraries
@@ -63,24 +63,21 @@ the libplayer library.
 %build
 export CFLAGS=-fPIC
 ./configure \
-	--prefix=%{_prefix} \
-	--bindir=%{_bindir} \
-	--libdir=%{_libdir} \
-	--includedir=%{_includedir} \
-	--disable-static \
-	--enable-shared \
-	--disable-gstreamer \
-	--enable-mplayer \
-	--disable-vlc \
-	--disable-xine
+        --prefix=%{_prefix} \
+        --bindir=%{_bindir} \
+        --libdir=%{_libdir} \
+        --includedir=%{_includedir} \
+        --disable-static \
+        --enable-shared \
+        --disable-gstreamer \
+        --enable-mplayer \
+        --disable-vlc \
+        --disable-xine
 make
 
 %install
 rm -rf %{buildroot}
 %makeinstall
-
-%clean
-rm -rf %{buildroot}
 
 %files test
 %{_bindir}/*

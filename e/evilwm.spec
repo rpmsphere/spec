@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 
-Name:		evilwm
-Version:	1.4.2
-Release:	1
-URL:		https://evilwm.sourceforge.net/
-Source0:	https://www.6809.org.uk/evilwm/%{name}-%{version}.tar.gz
-License:	Public Domain
-Group:		Graphical desktop/Other
-Summary:	A minimalist window manager for the X Window System
-BuildRequires:	nas-devel 
-BuildRequires:	motif-devel 
-BuildRequires:	libX11-devel
-BuildRequires:	libXext-devel
-BuildRequires:	libXrandr-devel
+Name:           evilwm
+Version:        1.4.2
+Release:        1
+URL:            https://evilwm.sourceforge.net/
+Source0:        https://www.6809.org.uk/evilwm/%{name}-%{version}.tar.gz
+License:        Public Domain
+Group:          Graphical desktop/Other
+Summary:        A minimalist window manager for the X Window System
+BuildRequires:  nas-devel 
+BuildRequires:  motif-devel 
+BuildRequires:  libX11-devel
+BuildRequires:  libXext-devel
+BuildRequires:  libXrandr-devel
 
 %description
 The name evil came from Stuart 'Stuii' Ford, who thinks that any software

@@ -11,7 +11,7 @@ Source:         %{name}-%{version}.tar.bz2
 Source1:        macfanctl.conf
 Source2:        macfanctld.1
 Source3:        macfanctld
-Patch:          %name.Makefile.patch
+Patch0:          %name.Makefile.patch
 
 %description -n macfanctld
 macfanctld is a daemon that reads temperature sensors and adjust the fan(s)
@@ -25,7 +25,7 @@ Important: macfanctld depends on applesmc.
 
 %prep
 %setup -q -n %{name}
-%patch -p0
+%patch 0 -p0
 %build
 make 
 
@@ -38,9 +38,6 @@ install -m 0644 %{S:1} $RPM_BUILD_ROOT/etc/
 install -m 0644 %{S:2} $RPM_BUILD_ROOT/usr/share/man/man1/
 install -m 0755 macfanctld $RPM_BUILD_ROOT/usr/sbin/
 install -m 0755 %{S:3} $RPM_BUILD_ROOT/etc/init.d/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %config %{_sysconfdir}/macfanctl.conf

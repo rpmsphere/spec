@@ -9,7 +9,7 @@ URL:            https://29a.ch/httpripper/
 Source0:        https://29a.ch/httpripper/%{name}-%{version}.tar.gz
 BuildRequires:  python2-devel desktop-file-utils
 BuildArch:      noarch
-Requires: 	pygtk2
+Requires:       pygtk2
 
 %description
 HTTP Ripper is a generic ripper for the web
@@ -46,9 +46,6 @@ desktop-file-install --vendor="" \
      --dir=%{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README COPYING 

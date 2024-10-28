@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/yozfontkm
+%define fontdir %{_datadir}/fonts/yozfontkm
 
 Summary: Hand-writing freeware unicode fonts
 Name: yozfontkm-fonts

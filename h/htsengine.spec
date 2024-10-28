@@ -38,9 +38,6 @@ make
 %{__install} -m0644 -D README %{docdir}/README
 %{__cp} %{SOURCE1} %{docdir}/
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %{_bindir}/hts_engine
 %{_includedir}/HTS_engine.h

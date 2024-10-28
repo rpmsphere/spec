@@ -41,9 +41,6 @@ perl install.pl /usr/bin /usr/share/makepp /usr/share/man /usr/share/makepp/html
 %{_mandir}/man1/*
 %{_datadir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Tue May 22 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
 - Rebuilt for Fedora

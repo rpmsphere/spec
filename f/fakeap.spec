@@ -31,9 +31,6 @@ install -Dp -m 0755 fakeap.pl $RPM_BUILD_ROOT%{_bindir}/%{name}.pl
 #add shebang to make rpmlint quite
 sed -i -e '1d;2i#!/usr/bin/perl' $RPM_BUILD_ROOT%{_bindir}/%{name}.pl
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING CREDITS INSTALL README lists/
 %{_bindir}/%{name}.pl

@@ -44,9 +44,6 @@ install -s -m 755 tabSpace $RPM_BUILD_ROOT%{_bindir}/tabSpace
 install -s -m 755 xmlParse $RPM_BUILD_ROOT%{_bindir}/xmlParse
 install -m 644 ldirrc $RPM_BUILD_ROOT%{_sysconfdir}/ldirrc
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/addComment
 %{_bindir}/casedir

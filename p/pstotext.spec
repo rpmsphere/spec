@@ -5,10 +5,10 @@ Release:        8.1
 License:        DEC
 URL:            https://pages.cs.wisc.edu/~ghost/doc/pstotext.htm
 Group:          Productivity/Other
-Source:         %{name}-%{version}.tar.bz2
+Source0:        %{name}-%{version}.tar.bz2
 Source1:        configure.ac
 Source2:        Makefile.am
-Patch:          pstotext-config_h.patch
+Patch0:         pstotext-config_h.patch
 Patch1:         pstotext-signed_unsigned_compare.patch
 
 %description
@@ -20,8 +20,8 @@ less reliably) on Acrobat PDF files.
 
 %prep
 %setup -q
-%patch
-%patch1
+%patch 0
+%patch 1
 cp %{SOURCE1} %{SOURCE2} .
 mv Makefile Makefile.original
 
@@ -35,9 +35,6 @@ make %{?jobs:-j%jobs}
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc pstotext.txt

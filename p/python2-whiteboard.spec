@@ -1,15 +1,15 @@
-Name:		python2-whiteboard
-Version:	1.0.3
-Release:	1
-Summary:	Linux whiteboard in python
-License: 	open source
-URL: 		https://github.com/pnegre/python-whiteboard
-Group: 		User Interface/X Hardware Support
-#Source0:	python-whiteboard-%{version}.tar.gz
-Source0:	python-whiteboard-master.zip
-BuildRequires:	qt4-devel
-Requires:	pybluez, PyQt4, numpy, cwiid-python2, python2-xlib
-BuildArch:	noarch
+Name:           python2-whiteboard
+Version:        1.0.3
+Release:        1
+Summary:        Linux whiteboard in python
+License:        open source
+URL:            https://github.com/pnegre/python-whiteboard
+Group:          User Interface/X Hardware Support
+#Source0:       python-whiteboard-%{version}.tar.gz
+Source0:        python-whiteboard-master.zip
+BuildRequires:  qt4-devel
+Requires:       pybluez, PyQt4, numpy, cwiid-python2, python2-xlib
+BuildArch:      noarch
 
 %description
 Python-whiteboard is a program that lets you build your own
@@ -29,9 +29,6 @@ echo -e 'Name[zh_TW]=Python-Whiteboard\nComment[zh_TW]=以 Wiimote 控制滑鼠�
 sed -i 's/Application;Education/HardwareSettings;Settings;/' $RPM_BUILD_ROOT%{_datadir}/applications/python-whiteboard.desktop
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc License.txt README debian/changelog

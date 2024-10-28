@@ -35,9 +35,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_datadir}/icons/%{theme_name}
 cp -a index.theme scalable %{buildroot}%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc *.txt
 %{_datadir}/icons/%{theme_name}

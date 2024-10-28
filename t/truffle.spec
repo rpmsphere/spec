@@ -15,7 +15,7 @@ on batch processing and speed.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 
 %build
 %configure --docdir=%{_docdir}
@@ -23,9 +23,6 @@ make V=1
 
 %install
 %{?make_install} %{!?make_install:make install DESTDIR=%{buildroot}}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/*

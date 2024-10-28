@@ -1,16 +1,16 @@
-Name:		mma
-Version:	21.09.2
-Release:	1
-Summary:	MIDI Accompaniment Generator
-License:	GPL
-URL:		https://www.mellowood.ca/mma/
-Source0:	mma-devl.%{version}.tar.gz
-Source1:	mma-bin-21.09.setup.py
-Source2:	mma-bin-20.12.mma.py
-Patch1:		mma-bin-21.09-pythonpath.patch
+Name:           mma
+Version:        21.09.2
+Release:        1
+Summary:        MIDI Accompaniment Generator
+License:        GPL
+URL:            https://www.mellowood.ca/mma/
+Source0:        mma-devl.%{version}.tar.gz
+Source1:        mma-bin-21.09.setup.py
+Source2:        mma-bin-20.12.mma.py
+Patch1:         mma-bin-21.09-pythonpath.patch
 BuildArch: noarch
-BuildRequires:	python3-devel
-BuildRequires:	python3-setuptools
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
 
 %description
 MMA is a accompaniment generator -- it creates midi tracks for a soloist to
@@ -19,8 +19,8 @@ and MMA directives.
 
 %prep
 %setup -q -n %{name}-bin-%{version}
-#%patch0 -p0
-%patch1 -p0
+#%patch 0 -p0
+%patch 1 -p0
 find * -name '#*#' -exec rm {} \;
 find * -type f -name '*.pyc' -exec rm {} \;
 find * -type d -name '__pycache__' -depth -exec rmdir {} \;

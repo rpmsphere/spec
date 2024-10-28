@@ -7,9 +7,9 @@ Summary:        A Clone of the Atari Game Kaboom!
 Version:        0.2.5
 Release:        1
 URL:            https://www.newbreedsoftware.com/madbomber/
-Source:         madbomber-%{version}.tar.bz2
+Source0:        madbomber-%{version}.tar.bz2
 Source1:        %name.desktop
-Patch:          madbomber-%{version}-makefile.diff
+Patch0:         madbomber-%{version}-makefile.diff
 Patch1:         %{name}-%{version}-permissions.diff
 Patch2:         %{name}-%{version}-invalid-operation.diff
 
@@ -24,9 +24,9 @@ Authors:
 
 %prep
 %setup -q
-%patch
-%patch1
-%patch2
+%patch 0
+%patch 1
+%patch 2
 
 %build
 make
@@ -38,9 +38,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 install -m 0644 data/images/icon.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt

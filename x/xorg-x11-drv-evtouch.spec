@@ -21,7 +21,7 @@ Patch7:     evtouch-purge-unused-close_proc.patch
 Patch8:     evtouch-add-mode-field-to-InitValuatorAxisStruct.patch
 Patch9:     evtouch-adjust-to-new-PreInit.patch
 # needed for ev_calibrate:
-Requires:	gnu-free-fonts-common
+Requires:       gnu-free-fonts-common
 BuildRequires:  libX11-devel
 BuildRequires:  xorg-x11-proto-devel
 BuildRequires:  xorg-x11-server-devel
@@ -32,16 +32,16 @@ Evtouch is a Touchscreen-Driver for X.
 
 %prep
 %setup -q -n xf86-input-evtouch-%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-%patch6 -p1
-%patch7 -p1
-%patch8 -p1
-%patch9 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
+%patch 5 -p1
+%patch 6 -p1
+%patch 7 -p1
+%patch 8 -p1
+%patch 9 -p1
 
 %build
 export CURSORDIR=%{_datadir}/xf86-input-evtouch
@@ -51,9 +51,6 @@ export CURSORDIR=%{_datadir}/xf86-input-evtouch
 %install
 rm -rf $RPM_BUILD_ROOT
 %__make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README README.calibration

@@ -24,9 +24,6 @@ cp *.png $RPM_BUILD_ROOT/%{_datadir}/backgrounds/ios4mac
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/gnome-background-properties/%{name}.xml
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/mate-background-properties/%{name}.xml
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/backgrounds/ios4mac
 %{_datadir}/*-background-properties/%{name}.xml

@@ -69,7 +69,7 @@ This package contains static libraries and header files need for development.
 
 %prep
 %setup -q 
-%patch0 -p1
+%patch 0 -p1
 sed -i 's|-number|-number-sections|' docs/Makefile*
 
 %build
@@ -84,9 +84,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %{_bindir}/*

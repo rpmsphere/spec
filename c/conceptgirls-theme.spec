@@ -33,9 +33,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/themes $RPM_BUILD_ROOT%{_datadir}/icons
 cp -a %{theme_name} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}
 cp -a %{theme_name}Icon $RPM_BUILD_ROOT%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}
 %{_datadir}/icons/%{theme_name}

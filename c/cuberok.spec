@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
 
-Summary:	Cuberok audio player
-Name:		cuberok
+Summary:        Cuberok audio player
+Name:           cuberok
 Version:    0.1.0.rev434
 Release:    29.4
-License:	GPL
-Group:		Productivity/Multimedia/Sound/Players
-Source:		trunk-%{version}.tar.bz2
-Vendor:		Vasiliy Makarov <drmoriarty.0@gmail.com>
+License:        GPL
+Group:          Productivity/Multimedia/Sound/Players
+Source:         trunk-%{version}.tar.bz2
+Vendor:         Vasiliy Makarov <drmoriarty.0@gmail.com>
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, pkgconfig, pkgconfig(QtGui), pkgconfig(QtWebKit), taglib-devel, phonon-devel, gstreamer1-plugins-base-devel
+BuildRequires:  gcc-c++, pkgconfig, pkgconfig(QtGui), pkgconfig(QtWebKit), taglib-devel, phonon-devel, gstreamer1-plugins-base-devel
 #BuildRequires:  yajl-devel <= 1.0.7
-Requires:	cuberok_engine >= %version 
+Requires:       cuberok_engine >= %version 
 
 %description
 Cuberok is yet another audio player based on Qt4.
@@ -31,9 +31,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 %{makeinstall} INSTALL_ROOT=$RPM_BUILD_ROOT/usr
 mkdir -p %{buildroot}%{_libdir}/%{name}
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc ChangeLog README license.txt

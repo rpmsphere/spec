@@ -7,7 +7,7 @@ License:        GPLv2
 URL:            https://launchpad.net/topshelf
 Source0:        https://launchpadlibrarian.net/11639150/%{name}-%{version}.tar.gz
 Requires:       libgnome, pygtk2
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 TopShelf is a simple GNOME applet which provides a place to store the files
@@ -38,9 +38,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp %{name}-24*.png %{name}-svg*.svg $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}/usr/lib/gnome-panel/topshelf.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README COPYING %{name}.docbook

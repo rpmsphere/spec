@@ -27,9 +27,6 @@ install -d -m 775 %{buildroot}/usr/share/man/man1
 install -m 755 xbattbar-acpi %{buildroot}/usr/bin
 install -m 644 xbattbar-acpi.1 %{buildroot}/usr/share/man/man1
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/xbattbar-acpi
 %{_mandir}/man1/xbattbar-acpi.1.*

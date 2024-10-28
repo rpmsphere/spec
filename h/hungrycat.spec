@@ -31,9 +31,6 @@ make %{?jobs:-j%{jobs}} \
 rm -rf "$RPM_BUILD_ROOT"
 install -D -m0755 hungrycat "$RPM_BUILD_ROOT%{_bindir}/hungrycat"
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc doc/README doc/changelog
 %{_bindir}/hungrycat

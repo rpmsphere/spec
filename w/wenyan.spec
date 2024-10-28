@@ -9,7 +9,7 @@ Group: Development/Languages
 #Source0: https://github.com/wenyan-lang/wenyan/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source0: %{name}.zip
 URL: https://github.com/wenyan-lang/wenyan/
-#BuildRequires: nodejs-devel
+BuildRequires: nodejs-devel
 BuildArch: noarch
 
 %description
@@ -33,9 +33,6 @@ ln -s ../../%{nodejs_sitelib}/%{name}/cli/index.min.js %{buildroot}%{_bindir}/%{
 %doc cli/*.md cli/LICENSE
 %{_bindir}/%{name}
 %{nodejs_sitelib}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Feb 05 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.4

@@ -38,9 +38,6 @@ instance of the same command is not already running.
 %__rm -rf "$RPM_BUILD_ROOT"
 %__install -D -m0755 lockrun "$RPM_BUILD_ROOT%{_bindir}/lockrun"
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %{_bindir}/lockrun
 

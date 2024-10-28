@@ -25,11 +25,8 @@ mkdir -p $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/fonts/kochi-substitute
 install -c -m 644 kochi-mincho-subst.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/kochi-substitute/kochi-mincho.ttf
 install -c -m 644 kochi-gothic-subst.ttf $RPM_BUILD_ROOT%{_datadir}/fonts/kochi-substitute/kochi-gothic.ttf
-install -c -m 644 $RPM_SOURCE_DIR/fonts.scale.kochi-substitute \
+install -c -m 644 %{SOURCE1} \
                   $RPM_BUILD_ROOT%{_datadir}/fonts/kochi-substitute/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %doc COPYING README* docs

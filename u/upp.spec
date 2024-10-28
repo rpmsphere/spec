@@ -115,9 +115,6 @@ sed "/INCLUDE/s#/lib/#/lib64/#g" -i $RPM_BUILD_ROOT/%{_datadir}/upp/GCC.bm
 # fix wrong file encoding
 sed -i 's/\r//' uppsrc/ide/Copying
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc uppsrc/ide/Copying
 %{_bindir}/umk

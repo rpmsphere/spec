@@ -41,9 +41,6 @@ install -Dm755 gtklife %{buildroot}%{_bindir}/%{name}
 install -Dp -m0644 icon_48x48.png %{buildroot}%{_datadir}/pixmaps/gtklife.png
 install -Dp -m0644 gtklife.desktop %{buildroot}%{_datadir}/applications/gtklife.desktop
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc COPYING NEWS README doc/*
 %{_bindir}/gtklife

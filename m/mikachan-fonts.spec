@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/mikachan
+%define fontdir %{_datadir}/fonts/mikachan
 
 Name:           mikachan-fonts
 Version:        9.1.2006.08.09

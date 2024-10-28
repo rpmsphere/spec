@@ -32,9 +32,6 @@ sed -i 's|Icon=sdl_instead.png|Icon=sdl_instead|' %{buildroot}%{_datadir}/applic
 sed -i 's|Version=0.6.1|Version=1.0|' %{buildroot}%{_datadir}/applications/%{name}.desktop
 sed -i 's|Categories=Game;|Categories=Game;AdventureGame;|' %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/*
 %{_datadir}/applications/*

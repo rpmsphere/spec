@@ -1,13 +1,13 @@
-Summary:	Qbasic to C conversion
-Summary(pl):	Konwerter z Qbasic na C
-Name:		qb2c
-Version:	3.43
-Release:	3.1
-License:	freely distributable
-Group:		Development/Languages
-Source0:	https://www.sourcefiles.org/Programming/Compilers/Procedural/%{name}-%{version}.tgz
-URL:		https://www.sourcefiles.org/Programming/Compilers/Procedural/qb2c-3.43.tgz.shtml
-BuildRequires:	libX11-devel
+Summary:        Qbasic to C conversion
+Summary(pl):    Konwerter z Qbasic na C
+Name:           qb2c
+Version:        3.43
+Release:        3.1
+License:        freely distributable
+Group:          Development/Languages
+Source0:        https://www.sourcefiles.org/Programming/Compilers/Procedural/%{name}-%{version}.tgz
+URL:            https://www.sourcefiles.org/Programming/Compilers/Procedural/qb2c-3.43.tgz.shtml
+BuildRequires:  libX11-devel
 
 %description
 This package attempts to convert Microsoft QBASIC programs into
@@ -37,7 +37,7 @@ cat <<'EOF' > qbcc
 #!/bin/sh
 qb2c -b -C $1 $2 $3 $4 $5 $6
 if test $? = 0 ; then
-	gcc -o $1 $1.c -L$(pwd) -lqbX11 -lX11 -lm
+        gcc -o $1 $1.c -L$(pwd) -lqbX11 -lX11 -lm
 fi
 EOF
 
@@ -47,10 +47,10 @@ TEMPNAM=`mktemp /tmp/qb.XXXXXX`
 rm -f $TEMPNAM
 qb2c -b -C $1 $2 $3 $4 $5
 if test $? = 0 ; then
-	gcc -o $TEMPNAM $1.c -L$(pwd) -lqbX11 -lX11 -lm
-	if test $? = 0 ; then
-		$TEMPNAM $2 $3 $4 $5
-	fi
+        gcc -o $TEMPNAM $1.c -L$(pwd) -lqbX11 -lX11 -lm
+        if test $? = 0 ; then
+                $TEMPNAM $2 $3 $4 $5
+        fi
 fi
 EOF
 
@@ -60,12 +60,9 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}}
 install qbcpp qb2c calib qbrun qbcc $RPM_BUILD_ROOT%{_bindir}
 install libqbX11.* $RPM_BUILD_ROOT%{_libdir}
 
-%post	-p /sbin/ldconfig
+%post   -p /sbin/ldconfig
 
-%postun	-p /sbin/ldconfig
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+%postun -p /sbin/ldconfig
 
 %files
 %doc ANNOUNCEMENT IAFA-PACKAGE README manual.txt

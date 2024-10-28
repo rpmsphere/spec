@@ -1,19 +1,19 @@
-Name:			qtstalker
-Summary:		A user friendly Technical Analysis package
-Version:		0.36
-Release:		48.1
-License:		GPL
-Group:			Productivity/Office/Finance
-URL:			https://qtstalker.sourceforge.net/
-Source:			%{name}-%{version}.tar.gz
-Source1:		%{name}.png
-#Source2:		%{name}.sh
-Patch0:			%{name}-gcc43.patch
-Patch1:			qtstalker-stringcompare.patch
+Name:                   qtstalker
+Summary:                A user friendly Technical Analysis package
+Version:                0.36
+Release:                48.1
+License:                GPL
+Group:                  Productivity/Office/Finance
+URL:                    https://qtstalker.sourceforge.net/
+Source:                 %{name}-%{version}.tar.gz
+Source1:                %{name}.png
+#Source2:               %{name}.sh
+Patch0:                 %{name}-gcc43.patch
+Patch1:                 qtstalker-stringcompare.patch
 BuildRequires: gcc-c++
 BuildRequires:  libdb-devel
-BuildRequires:	ta-lib-devel
-BuildRequires:	qt3-devel
+BuildRequires:  ta-lib-devel
+BuildRequires:  qt3-devel
 
 %description
 Qtstalker is a user friendly Technical Analysis package for GNU/Linux
@@ -29,8 +29,8 @@ GNU/Linux TA package.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 sed -i 1i\ '#include <unistd.h>' lib/ExScript.cpp
 sed -i -e 's|/usr/local/lib|%{_libdir}|g' lib/RcFile.cpp lib/Config.cpp lib/lib.pro
 sed -i -e 's|/usr/local|/usr|g' lib/RcFile.cpp lib/Config.cpp src/Qtstalker.cpp docs/docs.pro plugins/quote/*/*.pro src/src.pro lib/lib.pro
@@ -75,9 +75,6 @@ Terminal=false
 Categories=Office;Finance;
 Encoding=UTF-8
 EOF
-
-%clean
-%__rm -rf %{buildroot}
 
 %post -p /sbin/ldconfig
 

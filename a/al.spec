@@ -38,9 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libal.*
 %{_mandir}/man3/al.3.*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.3
 - Rebuilt for Fedora

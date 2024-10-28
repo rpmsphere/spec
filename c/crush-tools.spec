@@ -36,9 +36,6 @@ sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 %{_libdir}/lib*
 %{_mandir}/man1/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2013.04
 - Rebuilt for Fedora

@@ -8,7 +8,7 @@ Group:          Amusements/Games
 License:        GPLv2+
 URL:            https://mordred.dir.bg/biniax
 Source0:        https://mordred.dir.bg/biniax/biniax2-fullsrc.tar.gz
-Patch0:		exec_setting.patch
+Patch0:         exec_setting.patch
 
 %description
 Biniax is original and entertaining game.
@@ -16,7 +16,7 @@ Takes a minute to learn and gives you hours of gameplay.
 
 %prep
 %setup -q -c
-%patch0 -p0
+%patch 0 -p0
 convert icon.ico biniax2.png
 
 %build
@@ -43,9 +43,6 @@ EOF
 install -Dm 644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
 install -Dm 644 %{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 install -Dm 755 %{name} %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/pixmaps/%{name}.png

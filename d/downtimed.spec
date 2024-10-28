@@ -40,9 +40,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 %__install -D -m0644 "%{SOURCE2}" "$RPM_BUILD_ROOT/var/adm/fillup-templates/sysconfig.%{name}"
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc LICENSE NEWS README
 %{_bindir}/downtimes

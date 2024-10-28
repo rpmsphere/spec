@@ -1,12 +1,12 @@
-Summary:	Wake-on-LAN magic packet sender
-Name:		wakeonlan
-Version:	0.42
-Release:	1
-Source:		https://github.com/jpoliv/wakeonlan/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-License:	Artistic
-URL:		https://github.com/jpoliv/wakeonlan
-Group:		Networking/Remote access
-BuildArch:	noarch
+Summary:        Wake-on-LAN magic packet sender
+Name:           wakeonlan
+Version:        0.42
+Release:        1
+Source:         https://github.com/jpoliv/wakeonlan/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+License:        Artistic
+URL:            https://github.com/jpoliv/wakeonlan
+Group:          Networking/Remote access
+BuildArch:      noarch
 
 %description
 Wakeonlan is a Perl script that sends 'magic packets' to
@@ -24,9 +24,6 @@ make %{?_smp_mflags}
 rm -rf %{buildroot}
 install -Dm755 wakeonlan %{buildroot}%{_bindir}/%{name}
 install -Dm644 blib/man1/%{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc examples Changes README.md

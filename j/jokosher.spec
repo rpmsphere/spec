@@ -1,30 +1,30 @@
 %undefine _debugsource_packages
-Summary:		A simple yet powerful multi-track studio
-Name:			jokosher
-Version:		0.11.5
-Release:		12.1
-Group:			Productivity/Multimedia/Sound/Editors and Convertors
-License:		GPL
-URL:			https://www.jokosher.org/
-Source0:		https://launchpad.net/jokosher/trunk/0.11.5/+download/jokosher-0.11.5.tar.gz
-BuildRequires:	hicolor-icon-theme
-BuildRequires:	python2-devel
-BuildRequires:	shared-mime-info
-Requires:		dbus-python
-Requires:		gstreamer-plugins-bad-free
-Requires:		gstreamer-plugins-base
-Requires:		gstreamer-plugins-good
-Requires:		gstreamer-plugins-ugly
-Requires:		gstreamer-plugin-gnonlin
-Requires:		hicolor-icon-theme
-Requires:		pycairo
-Requires:		python-alsaaudio
-Requires:		gnome-python2
-Requires:		python2-gstreamer
-Requires:		pygtk2
-Requires:		pyxdg
-Requires:		python2-setuptools
-BuildArch:		noarch
+Summary:                A simple yet powerful multi-track studio
+Name:                   jokosher
+Version:                0.11.5
+Release:                12.1
+Group:                  Productivity/Multimedia/Sound/Editors and Convertors
+License:                GPL
+URL:                    https://www.jokosher.org/
+Source0:                https://launchpad.net/jokosher/trunk/0.11.5/+download/jokosher-0.11.5.tar.gz
+BuildRequires:  hicolor-icon-theme
+BuildRequires:  python2-devel
+BuildRequires:  shared-mime-info
+Requires:               dbus-python
+Requires:               gstreamer-plugins-bad-free
+Requires:               gstreamer-plugins-base
+Requires:               gstreamer-plugins-good
+Requires:               gstreamer-plugins-ugly
+Requires:               gstreamer-plugin-gnonlin
+Requires:               hicolor-icon-theme
+Requires:               pycairo
+Requires:               python-alsaaudio
+Requires:               gnome-python2
+Requires:               python2-gstreamer
+Requires:               pygtk2
+Requires:               pyxdg
+Requires:               python2-setuptools
+BuildArch:              noarch
 
 %description
 Jokosher is a simple and poweful multi-track studio. Jokosher
@@ -35,10 +35,10 @@ production at every level, and created something devilishly simple
 to use.
 
 %package help
-Summary:	Jokosher help files
-Group:		Documentation/Other
-Requires:	%{name} = %{version}
-Requires:	yelp
+Summary:        Jokosher help files
+Group:          Documentation/Other
+Requires:       %{name} = %{version}
+Requires:       yelp
 
 %description help
 Jokosher help files in yelp format.
@@ -51,9 +51,9 @@ Jokosher help files in yelp format.
 
 %install
 %__python2 setup.py install \
-	--skip-build \
-	--root=%{buildroot} \
-	--prefix=%{_prefix}
+        --skip-build \
+        --root=%{buildroot} \
+        --prefix=%{_prefix}
 
 #DESTDIR=%{buildroot} mime-info-to-mime
 %__rm -rf %{buildroot}%{_datadir}/mime-info
@@ -61,7 +61,7 @@ Jokosher help files in yelp format.
 # icon
 %__install -dm 755 %{buildroot}%{_datadir}/pixmaps
 %__install -m 644 Jokosher/jokosher-logo.png \
-	%{buildroot}%{_datadir}/pixmaps/%{name}.png
+        %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %__chmod 755 %{buildroot}%{python2_sitelib}/Jokosher/Profiler.py
 %__chmod 755 %{buildroot}%{python2_sitelib}/Jokosher/JokosherApp.py

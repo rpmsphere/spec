@@ -34,9 +34,6 @@ desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/xbrightness-rgbgam
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %doc COPYING ChangeLog
 %{_bindir}/*

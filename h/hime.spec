@@ -6,7 +6,7 @@ Group:          System Environment/Libraries
 License:        LGPLv2
 URL:            https://github.com/hime-ime/hime/
 #Source0:        https://hime.luna.com.tw/%{name}-%{version}.tar.gz
-Source0:	%{name}-master.zip
+Source0:        %{name}-master.zip
 Source1:        hime.conf
 BuildRequires:  qt3-devel
 BuildRequires:  qt4-devel
@@ -14,7 +14,10 @@ BuildRequires:  gtk2-devel
 BuildRequires:  gtk3-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  libXtst-devel
+BuildRequires:  libchewing-devel
 BuildRequires:  anthy-devel
+BuildRequires:  cairo-devel
+BuildRequires:  pango-devel
 Requires:       im-chooser, imsettings
 Requires(post): %{_sbindir}/alternatives
 Requires(preun): %{_sbindir}/alternatives
@@ -118,9 +121,6 @@ gtk-query-immodules-3.0-%{__isa_bits} --update-cache &> /dev/null || :
 if [ $1 -eq 0 ]; then
     %{_sbindir}/alternatives --remove xinputrc %{_sysconfdir}/X11/xinit/xinput.d/hime.conf >/dev/null 2>&1 || :
 fi
-
-%clean
-rm -rf $RPM_BUILD_ROOT 
 
 %files
 %doc AUTHORS gpl-2.0.txt lgpl-2.1.txt

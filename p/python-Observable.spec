@@ -25,9 +25,6 @@ python3 setup.py build
 rm -rf $RPM_BUILD_ROOT
 python3 setup.py install --root=$RPM_BUILD_ROOT --prefix=/usr
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README COPYING ChangeLog TODO
 %{python3_sitelib}/*

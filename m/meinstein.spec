@@ -33,9 +33,6 @@ cat > $RPM_BUILD_ROOT%{_bindir}/%{name} <<EOF
 java -jar %{_datadir}/%{name}/MeinSteinConnect6.jar
 EOF
 
-%clean
-rm -rf $RPM_BUILD_ROOT
- 
 %files 
 %doc README COPYING USAGE
 %attr(755,root,root) %{_bindir}/%{name}

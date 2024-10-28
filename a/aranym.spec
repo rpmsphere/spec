@@ -1,23 +1,23 @@
 %global __os_install_post %{nil}
 
-Name:			aranym
-Version:		1.0.2
-Release:		4.1
-License:		GPLv2
-Summary:		32-bit Atari personal computer (Falcon030/TT030) virtual machine
-URL:			https://aranym.org/
-Group:			Console/Emulators
-Source0:		https://prdownloads.sourceforge.net/aranym/%{name}_%{version}.orig.tar.gz
-Requires:		hicolor-icon-theme
-BuildRequires:		hicolor-icon-theme
-BuildRequires:		desktop-file-utils
-BuildRequires:		gcc-c++
-BuildRequires:		SDL-devel >= 1.2.10
-BuildRequires:		SDL_image-devel >= 1.2.5
-BuildRequires:		zlib-devel >= 1.2.3
-BuildRequires:		mpfr-devel >= 3.0.0
-BuildRequires:		libusb1-devel >= 1.0.0
-BuildConflicts:		SDL2-devel
+Name:                   aranym
+Version:                1.0.2
+Release:                4.1
+License:                GPLv2
+Summary:                32-bit Atari personal computer (Falcon030/TT030) virtual machine
+URL:                    https://aranym.org/
+Group:                  Console/Emulators
+Source0:                https://prdownloads.sourceforge.net/aranym/%{name}_%{version}.orig.tar.gz
+Requires:               hicolor-icon-theme
+BuildRequires:          hicolor-icon-theme
+BuildRequires:          desktop-file-utils
+BuildRequires:          gcc-c++
+BuildRequires:          SDL-devel >= 1.2.10
+BuildRequires:          SDL_image-devel >= 1.2.5
+BuildRequires:          zlib-devel >= 1.2.3
+BuildRequires:          mpfr-devel >= 3.0.0
+BuildRequires:          libusb1-devel >= 1.0.0
+BuildConflicts:         SDL2-devel
 
 %description
 ARAnyM is a software only TOS clone - a virtual machine that allows you
@@ -90,9 +90,6 @@ install -m 644 contrib/%{name}-jit.desktop $RPM_BUILD_ROOT/%{_datadir}/applicati
 %endif
 install -m 644 contrib/%{name}-mmu.desktop $RPM_BUILD_ROOT%{_datadir}/applications/%{name}-mmu.desktop
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %{_mandir}/man1/%{name}.1*
 %{_mandir}/man1/aratapif.1*
@@ -152,7 +149,7 @@ The right icon added. Desktop file updated. Build system root changed.
 New release. Version increased. Other changes in NEWS file.
 * Mon Jul 09 2007 Petr Stehlik <pstehlik@sophics.cz>
 New release. Version increased. Other changes in NEWS file.
-* Tue Oct 11 2006 David Bolt <davjam@davjam.org>	0.9.4beta
+* Tue Oct 11 2006 David Bolt <davjam@davjam.org>        0.9.4beta
 Added an aranym.desktop file for inclusion in desktop menus.
 Temporarily uses emulator.png as the menu icon.
 Added bits to spec file to try and build packages for (open)SUSE, Mandriva

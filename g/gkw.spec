@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
 
-Summary: 	Gyro-Kinetics at Warwick
-Name:		gkw
-Version: 	0.1b4
-Release: 	4.1
-License: 	GPLv3
-Group: 		Applications/Engineering
-URL: 		https://code.google.com/p/gkw/
-Source0: 	https://gkw.googlecode.com/files/gkw-0.1-b4.tar.gz
+Summary:        Gyro-Kinetics at Warwick
+Name:           gkw
+Version:        0.1b4
+Release:        4.1
+License:        GPLv3
+Group:          Applications/Engineering
+URL:            https://code.google.com/p/gkw/
+Source0:        https://gkw.googlecode.com/files/gkw-0.1-b4.tar.gz
 BuildRequires:  gcc-gfortran
 
 %description
@@ -25,9 +25,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 install -m755 gkw.x bin/* $RPM_BUILD_ROOT%{_bindir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README LICENSE REVISIONS samples

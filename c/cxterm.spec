@@ -67,9 +67,6 @@ ln -sf cxterm $RPM_BUILD_ROOT%{_bindir}/cxtermb5
 ln -sf cxterm $RPM_BUILD_ROOT%{_bindir}/cxtermjis
 ln -sf cxterm $RPM_BUILD_ROOT%{_bindir}/cxtermks
 
-%clean
-rm -fr $RPM_BUILD_ROOT
-
 %files
 %doc Doc README* INSTALL-5.2 ChangeLog cxterm.term* emacs
 %dir %{_datadir}/cxterm/dict

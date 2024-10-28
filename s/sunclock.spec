@@ -18,7 +18,7 @@ displays a large map and offers more advanced functions.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 sed -i 's|gzFile \* fd|gzFile fd|' readvmf.c
 
 %build
@@ -41,9 +41,6 @@ Comment=Sophisticated clock for the X Window system
 Exec=%{name}
 Icon=%{name}2
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc CHANGES coordinates.txt COPYING INSTALL README TODO VMF.txt

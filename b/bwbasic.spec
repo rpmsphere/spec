@@ -37,9 +37,6 @@ install -m755 renum $RPM_BUILD_ROOT%{_bindir}
 install -Dm644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
 install -Dm644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README* bwbasic.doc COPYING DOCS/*
 %{_bindir}/%{name}

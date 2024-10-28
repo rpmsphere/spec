@@ -42,9 +42,6 @@ install -m 644 src/dircmd.h $RPM_BUILD_ROOT%{_includedir}/dircmd.h
 ln -s libdircmd.so.%{version} $RPM_BUILD_ROOT%{_libdir}/libdircmd.so.5
 ln -s libdircmd.so.%{version} $RPM_BUILD_ROOT%{_libdir}/libdircmd.so
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_libdir}/libdircmd.so*
 

@@ -20,8 +20,8 @@ also easily be embedded into an application to make it scriptable.
 
 %prep
 %setup -q -n %{name}-1.7
-%patch0 -p1
-%patch1 -p1
+%patch 0 -p1
+%patch 1 -p1
 
 %build
 ./Make PREFIX=/usr REXXLIB=/usr/lib/rexx
@@ -31,9 +31,6 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr/{lib/rexx,bin,man/man1,include}
 ./Make PREFIX=$RPM_BUILD_ROOT/usr REXXLIB=$RPM_BUILD_ROOT/usr/lib/rexx RUNLIBS= install
 cp -p rexxsaa.h $RPM_BUILD_ROOT/usr/include
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README* rexx.info rexx.ref rexx.summary rexx.tech

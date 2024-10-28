@@ -60,7 +60,7 @@ WGT=gtk2
 cd dev
 lazbuild --lazarusdir=%{_libdir}/lazarus \
 %ifarch x86_64
-	--cpu=x86_64 \
+        --cpu=x86_64 \
 %endif
     --widgetset=${WGT} \
     -B project_pea.lpr project_peach.lpr

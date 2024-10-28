@@ -69,9 +69,6 @@ install -m 0644 doc/HOWTO   %{buildroot}/%{_docdir}/%{name}-%{version}
 
 mkdir -p %{buildroot}/%{_var}/log/sumu
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %config(noreplace) %{_sysconfdir}/logrotate.d/%{name}
 %config(noreplace) %{_sysconfdir}/%{name}

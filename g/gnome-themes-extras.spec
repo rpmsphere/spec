@@ -5,7 +5,7 @@ Release: 32.1
 License: GPLv2+ and CC-BY-SA
 Group: Graphical desktop/GNOME
 Source0: https://download.gnome.org/sources/gnome-themes-extras/%{name}-%{version}.tar.bz2
-Patch: gnome-themes-extras-2.22.0-darklooks.patch
+Patch0: gnome-themes-extras-2.22.0-darklooks.patch
 URL: https://librsvg.sourceforge.net/theme.php
 BuildArch: noarch
 BuildRequires: perl-XML-Parser

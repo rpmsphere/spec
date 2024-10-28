@@ -1,15 +1,15 @@
 %define _default_patch_fuzz 2
 
-Summary:	Parser and lexer generator
-Summary(pl.UTF-8):	Generator analizatorów leksykalnych i składniowych
-Name:		coco-c
-Version:	1.17
-Release:	13.1
-Group:		Development/Tools
-License:	Free
-Source0:	https://www.scifac.ru.ac.za/coco/cocorc17.tgz
-Patch0:		CocoR-compile.patch
-BuildRequires:	gcc-c++, sharutils
+Summary:        Parser and lexer generator
+Summary(pl.UTF-8):      Generator analizatorów leksykalnych i składniowych
+Name:           coco-c
+Version:        1.17
+Release:        13.1
+Group:          Development/Tools
+License:        Free
+Source0:        https://www.scifac.ru.ac.za/coco/cocorc17.tgz
+Patch0:         CocoR-compile.patch
+BuildRequires:  gcc-c++, sharutils
 
 %description
 Coco/R generator, C version.
@@ -19,7 +19,7 @@ Generator analizatorów leksykalnych i składniowych Coco/R.
 
 %prep
 %setup -q -c
-%patch0 -p1
+%patch 0 -p1
 
 %build
 export CRFRAMES=`pwd`/frames
@@ -27,13 +27,13 @@ uudecode dos2unix.uue
 chmod +x dos2unix.sh
 ./dos2unix.sh unix.mk
 %{__make} -f unix.mk dos2unix \
-	CC="gcc" \
-	CXX="g++" \
-	OPTFLAGS="%{optflags}"
+        CC="gcc" \
+        CXX="g++" \
+        OPTFLAGS="%{optflags}"
 %{__make} -f unix.mk linux \
-	CC="gcc" \
-	CXX="g++" \
-	OPTFLAGS="%{optflags}"
+        CC="gcc" \
+        CXX="g++" \
+        OPTFLAGS="%{optflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -44,9 +44,6 @@ cp -f frames/*.frm $RPM_BUILD_ROOT%{_datadir}/coco/frames
 cp -f frames/cplus2/*.frm $RPM_BUILD_ROOT%{_datadir}/coco/frames/cplus2
 install -d $RPM_BUILD_ROOT%{_mandir}/man1
 install docs/cocor.1 $RPM_BUILD_ROOT%{_mandir}/man1/cocor.1
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/cocor

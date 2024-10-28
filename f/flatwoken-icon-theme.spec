@@ -1,13 +1,13 @@
 %global theme_name FlatWoken
 
-Name:		flatwoken-icon-theme
-Version:	20160321
-Release:	1.1
-Summary:	%{theme_name} icon theme
-Group:		System/GUI/GNOME
-License:	CC by SA
-URL:		https://github.com/alecive/FlatWoken
-Source0:	%{theme_name}-master.zip
+Name:           flatwoken-icon-theme
+Version:        20160321
+Release:        1.1
+Summary:        %{theme_name} icon theme
+Group:          System/GUI/GNOME
+License:        CC by SA
+URL:            https://github.com/alecive/FlatWoken
+Source0:        %{theme_name}-master.zip
 BuildArch:  noarch
 
 %description

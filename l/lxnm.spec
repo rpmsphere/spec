@@ -21,9 +21,6 @@ LXNM is a fast, lightweight, stand-alone network manager.
 %__rm -rf %{buildroot}
 %__make install DESTDIR=%{buildroot}
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc README AUTHORS COPYING
 %{_sbindir}/%{name}

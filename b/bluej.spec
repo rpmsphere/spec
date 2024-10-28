@@ -114,9 +114,6 @@ EOF
 
 desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 %{_bindir}/update-mime-database %{_datadir}/mime >/dev/null
 

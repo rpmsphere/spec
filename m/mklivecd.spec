@@ -1,19 +1,19 @@
-Summary:	Builds a LiveCD from an existing installation
-Name:		mklivecd
-Version:	0.7.2
-Release:	6.1
-License:	GPL
-Group:		System/Configuration/Boot and Init
-URL:		https://livecd.berlios.de/
-Source0:	%{name}-%{version}.tar.bz2
-Requires:	busybox >= 1.7.0
-Requires:	mediacheck, genisoimage, squashfs-tools >= 3.3-3
-#Requires:	lzma-kmod, squashfs-lzma-kmod
-Requires:	syslinux >= 3.82
-Requires:	cpio >= 2.9-2
-Requires:	zlib >= 1.2.3-4
-Requires:	libmodprobe >= 3.3-pre11.4
-Requires:	module-init-tools >= 3.3-pre11.4
+Summary:        Builds a LiveCD from an existing installation
+Name:           mklivecd
+Version:        0.7.2
+Release:        6.1
+License:        GPL
+Group:          System/Configuration/Boot and Init
+URL:            https://livecd.berlios.de/
+Source0:        %{name}-%{version}.tar.bz2
+Requires:       busybox >= 1.7.0
+Requires:       mediacheck, genisoimage, squashfs-tools >= 3.3-3
+#Requires:      lzma-kmod, squashfs-lzma-kmod
+Requires:       syslinux >= 3.82
+Requires:       cpio >= 2.9-2
+Requires:       zlib >= 1.2.3-4
+Requires:       libmodprobe >= 3.3-pre11.4
+Requires:       module-init-tools >= 3.3-pre11.4
 BuildArch:  noarch
 
 %description
@@ -96,9 +96,6 @@ StartupNotify=false
 Categories=X-MandrivaLinux-System;
 OnlyShowIn=KDE
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING CHANGELOG FAQ README README.BOOTCODES README.USB TODO

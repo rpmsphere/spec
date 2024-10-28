@@ -1,17 +1,17 @@
 %undefine _debugsource_packages
 
-Name:		gtk-theme-config
-Version:	1.0
-Release:	5.1
-Summary:	Configure GTK theme colors
-Group:		System/GUI/GNOME
-License:	GPL-3.0+
-URL:		https://github.com/satya164/gtk-theme-config
+Name:           gtk-theme-config
+Version:        1.0
+Release:        5.1
+Summary:        Configure GTK theme colors
+Group:          System/GUI/GNOME
+License:        GPL-3.0+
+URL:            https://github.com/satya164/gtk-theme-config
 Source0:        gtk-theme-config-%{version}.tar.gz
-BuildRequires:	glib2-devel
-BuildRequires:	gtk3-devel
-BuildRequires:	vala
-Requires:	gsettings-desktop-schemas
+BuildRequires:  glib2-devel
+BuildRequires:  gtk3-devel
+BuildRequires:  vala
+Requires:       gsettings-desktop-schemas
 
 %description
 This little tool allows anyone to change some basic elements of a GTK theme

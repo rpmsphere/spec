@@ -25,8 +25,8 @@ moeclock is Moe Desktop Clock.
 
 %prep
 %setup -q -c
-%patch0
-%patch1
+%patch 0
+%patch 1
 
 # デバッグメッセージを出力しないようにする
 sed -i 's|^\(.*\)\(moeclock\.py\)\(.*\)$|\1\2\3 > /dev/null|' moeclock
@@ -41,9 +41,6 @@ tar xf %{SOURCE1} -C $RPM_BUILD_ROOT%{_datadir}/%{name}/
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/%{name}.py
 sed -i 's|^python |python2 |' %{buildroot}%{_bindir}/%{name}
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc README.txt

@@ -1,13 +1,13 @@
 %undefine _debugsource_packages
-Name:		sabacc
-Version:	1.0beta1
-Release:	1
-Summary:	Card game for two or more players that is similar to Blackjack
-Group:		Amusements/Games
-License:	GPL
-URL:		https://sabacc.sourceforge.net/
-Source0:	https://downloads.sourceforge.net/sabacc/sabacc-1.0-beta1.tar.gz
-BuildArch:	noarch
+Name:           sabacc
+Version:        1.0beta1
+Release:        1
+Summary:        Card game for two or more players that is similar to Blackjack
+Group:          Amusements/Games
+License:        GPL
+URL:            https://sabacc.sourceforge.net/
+Source0:        https://downloads.sourceforge.net/sabacc/sabacc-1.0-beta1.tar.gz
+BuildArch:      noarch
 
 %description
 Sabacc is a game originally found in the Star Wars universe. 
@@ -38,9 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 python2 setup.py install --root=$RPM_BUILD_ROOT
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}

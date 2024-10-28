@@ -18,7 +18,7 @@ BuildRequires:  lm_sensors-devel
 BuildRequires:  luajit-devel
 BuildRequires:  glew-devel
 Recommends:     %{name}-sensors-plugin
-Source2:	LuaJIT-2.1.0-beta3.tar.gz
+Source2:        LuaJIT-2.1.0-beta3.tar.gz
 
 %description
 GLXOSD is an extensible on-screen display (OSD) for OpenGL applications running on Linux
@@ -51,7 +51,7 @@ sed -i 's|__x86_64__|__aarch64__|' src/elfhacks/elfhacks.h
 %endif
 sed -i 's|lua_setfield(L, LUA_GLOBALSINDEX,|lua_setglobal(L,|' src/glinject/glinject.c
 cd src/freetype-gl-glxosd/freetype-gl
-%patch0 -p1
+%patch 0 -p1
 
 %build
 export CFLAGS=-Wl,--allow-multiple-definition

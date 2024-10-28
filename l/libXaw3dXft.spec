@@ -42,9 +42,6 @@ make
 rm -rf %{buildroot}
 %makeinstall
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README README.xaw3d COPYING 
 %{_libdir}/libXaw3dxft*.so.*

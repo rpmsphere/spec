@@ -4,11 +4,11 @@ Version:          004
 Release:          6.1
 URL:              https://sourceforge.net/projects/smoothlife/
 License:          GPLv2
-Group:		  Amusements/Games
+Group:            Amusements/Games
 Source:           https://sourceforge.net/projects/smoothlife/files/SmoothLifeAll%{version}.zip
-Source1:	  %{name}.desktop
-Source2:	  %{name}.png
-Source3:	  Courier.ttf
+Source1:          %{name}.desktop
+Source2:          %{name}.png
+Source3:          Courier.ttf
 BuildRequires:    gcc-c++, mesa-libGL-devel, mesa-libGLU-devel, GLee-devel, SDL-devel, SDL_ttf-devel
 
 %description
@@ -37,9 +37,6 @@ cat <<EOF > $RPM_BUILD_ROOT%{_bindir}/%{name}
 cd %{_libdir}/%{name}
 exec ./SmoothLife
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

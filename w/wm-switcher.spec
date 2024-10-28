@@ -1,13 +1,13 @@
-Name:		wm-switcher
-Version:	0.3
-Release:	2.1
-Summary:	Window manager switcher
-Group:		User Interface/Desktops
-License:	GPLv2
-URL:		https://launchpad.net/wm-switcher
-Source0:	https://launchpad.net/wm-switcher/trunk/%{version}/+download/%{name}.tar.gz
-Requires:	pygtk2
-BuildArch:	noarch
+Name:           wm-switcher
+Version:        0.3
+Release:        2.1
+Summary:        Window manager switcher
+Group:          User Interface/Desktops
+License:        GPLv2
+URL:            https://launchpad.net/wm-switcher
+Source0:        https://launchpad.net/wm-switcher/trunk/%{version}/+download/%{name}.tar.gz
+Requires:       pygtk2
+BuildArch:      noarch
 
 %description
 The functionality desired is to be able to switch window managers instantly
@@ -42,9 +42,6 @@ Exec=%{name}
 Icon=%{name}
 Categories=Settings;DesktopSettings;
 EOF
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

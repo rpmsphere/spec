@@ -2,15 +2,15 @@
 Name:           xmemory
 URL:            ftp://ftp.x.org/contrib/games/multiplayer/
 BuildRequires:  gcc-c++ 
-BuildRequires:	imake
+BuildRequires:  imake
 License:        Any permissive
 Group:          Amusements/Games/Board/Other
 AutoReqProv:    on
 Version:        3.7
 Release:        1
 Summary:        Memory Game
-Source:         xmemory-%{version}.tar.bz2
-Patch:          xmemory-%{version}.dif
+Source0:        xmemory-%{version}.tar.bz2
+Patch0:         xmemory-%{version}.dif
 Patch1:         %{name}-%{version}_default-font.patch
 %define _xorg7libs %_lib
 %define _xorg7libs32 lib
@@ -35,8 +35,8 @@ Authors:
 
 %prep
 %setup -q
-%patch
-%patch1
+%patch 0
+%patch 1
 sed -i 's|const char|char|g' gif_image.C gif_image.H mem_image.C mem_image.H
 
 %build
@@ -67,9 +67,6 @@ Icon=%{name}.png
 
 EOF
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README COPYRIGHT
 %{_bindir}/%{name}
@@ -82,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7
 - Rebuilt for Fedora
-* Wed Jun  5 2011 - chris.lin@ossii.com.tw
+* Sun Jun  5 2011 - chris.lin@ossii.com.tw
 - Fix types
 * Wed Oct 22 2008 - john@ossii.com.tw
 - Rebuild for M6(OSSII)

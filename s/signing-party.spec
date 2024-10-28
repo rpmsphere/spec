@@ -59,7 +59,7 @@ keyring.
 
 %prep
 %setup -qn signing-party-%{version}
-%patch1 -p1
+%patch 1 -p1
 
 %build
 cp -f /usr/share/automake-*/config.guess keyanalyze/pgpring/

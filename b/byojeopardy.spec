@@ -30,9 +30,6 @@ make
 make DESTDIR=$RPM_BUILD_ROOT install
 sed -i 's|Icon=|Icon=%{_datadir}/%{name}/pixmaps/|' $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop

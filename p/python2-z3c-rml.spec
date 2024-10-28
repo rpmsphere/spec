@@ -43,9 +43,6 @@ echo "%{_bindir}/rml2pdf" >> %{name}.filelist
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files -f %{name}.filelist
 %doc AUTHORS.txt CHANGES.txt README.txt TODOS.txt
 

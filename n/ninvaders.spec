@@ -16,7 +16,7 @@ line.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch 0 -p0
 iconv -f iso-8859-1 -t utf8 ChangeLog > ChangeLog.new && \
 touch -r ChangeLog ChangeLog.new && mv ChangeLog.new ChangeLog
 sed -i 's|-lncurses|-lncurses -Wl,--allow-multiple-definition|' Makefile

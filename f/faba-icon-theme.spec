@@ -1,13 +1,13 @@
-Name:		faba-icon-theme
-Version:	4.1.2
-Release:	5.1
-Summary:	Faba icon theme
-Group:		System/GUI/GNOME
-License:	GPL-3.0+
-URL:		https://github.com/moka-project/faba-icon-theme
-Source0:	https://raw.githubusercontent.com/moka-project/faba-icon-theme/master/%{name}-%{version}.tar.gz
+Name:           faba-icon-theme
+Version:        4.1.2
+Release:        5.1
+Summary:        Faba icon theme
+Group:          System/GUI/GNOME
+License:        GPL-3.0+
+URL:            https://github.com/moka-project/faba-icon-theme
+Source0:        https://raw.githubusercontent.com/moka-project/faba-icon-theme/master/%{name}-%{version}.tar.gz
 Source1:    faba-mono-icons.tar.gz
-Requires:	gtk3
+Requires:       gtk3
 BuildArch:  noarch
 
 %description

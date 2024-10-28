@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
 
-Name:		crosti
-Summary:	Tool to create cross stitch scheme from custom image
-Version:	1.14.0
-Release:	1
-License:	GPLv3+
-Group:		Applications/Editors
-URL:		https://sites.google.com/site/crostiapp/
-Source0:	https://downloads.sourceforge.net/project/crosti/%{name}-%{version}-source.zip
-BuildRequires:	pkgconfig(QtCore)
-BuildRequires:	pkgconfig(QtGui)
-BuildRequires:	dos2unix
-BuildRequires:	unzip
-BuildRequires:	gcc-c++
+Name:           crosti
+Summary:        Tool to create cross stitch scheme from custom image
+Version:        1.14.0
+Release:        1
+License:        GPLv3+
+Group:          Applications/Editors
+URL:            https://sites.google.com/site/crostiapp/
+Source0:        https://downloads.sourceforge.net/project/crosti/%{name}-%{version}-source.zip
+BuildRequires:  pkgconfig(QtCore)
+BuildRequires:  pkgconfig(QtGui)
+BuildRequires:  dos2unix
+BuildRequires:  unzip
+BuildRequires:  gcc-c++
 
 %description
 This tool allows you to make your own unique cross stitch scheme from custom
@@ -40,9 +40,6 @@ make %{?_smp_mflags}
 %install
 rm -rf %{buildroot}
 make install INSTALL_ROOT=%{buildroot}
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc *.txt

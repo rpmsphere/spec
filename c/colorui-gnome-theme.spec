@@ -11,7 +11,7 @@ Source0:        https://github.com/MasicoreLord/%{theme_name}-theme-project/arch
 Source1:        https://orig00.deviantart.net/8cef/f/2014/114/e/5/pen_tool_wallpaper_by_samuelfur-d7ftg5r.png
 BuildArch:      noarch
 Requires:       gtk-murrine-engine
-Requires:	numix-icon-theme-circle
+Requires:       numix-icon-theme-circle
 
 %description
 Color UI was made with maximum usability in mind, from the window borders to

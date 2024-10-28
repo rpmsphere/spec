@@ -23,9 +23,6 @@ For the conversion I used the wonderful script by coolwanglu cfx2xc (CursorFX co
 install -d %{buildroot}%{_datadir}/icons/%{theme_name}
 cp -a * %{buildroot}%{_datadir}/icons/%{theme_name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/icons/%{theme_name}
 

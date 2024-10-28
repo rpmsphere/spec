@@ -8,13 +8,13 @@ Release: 1
 License: GPL-2.0
 Group: Productivity/Networking/Web/Servers
 URL: https://www.fefe.de/gatling/
-Source: https://www.fefe.de/gatling/%{name}-%{version}.tar.xz
+Source0: https://www.fefe.de/gatling/%{name}-%{version}.tar.xz
 Source1: rc.gatling
 Source2: sysconf.gatling
 Source3: gatling.socket
 Source4: gatling.service
 # PATCH-FIX-UPSTREAM: conrad@quisquis.de
-Patch: gatling-bof.patch
+Patch0: gatling-bof.patch
 # PATCH-FIX-UPSTREAM: conrad@quisquis.de
 Patch1: gatling-sslseed.patch
 # PATCH-FEATURE-UPSTREAM: conrad@quisquis.de
@@ -82,11 +82,11 @@ distribution:
 
 %prep
 %setup -q
-%patch -p0
-%patch1 -p1
-#patch2 -p1
+%patch 0 -p0
+%patch 1 -p1
+#patch 2 -p1
 sed -i 's|mmap_readat(filename,\&filesize,dirfd)|mmap_read(filename,\&filesize)|' http.c
-sed -i -e 's|-static||' -e 's|-lz|-lz -Wl,--allow-multiple-definition|' GNUmakefile Makefile
+sed -i -e 's|-static||' -e 's|-lz|-lz -Wl,--allow-multiple-definition -Wno-implicit-function-declaration|' GNUmakefile Makefile
 
 %build
 MYCFLAGS="%{optflags} -I/usr/include/libowfat"
@@ -94,12 +94,12 @@ MYCFLAGS="%{optflags} -I/usr/include/libowfat"
 #MYCFLAGS="$MYCFLAGS -include unistd.h -include string.h"
 #make CFLAGS="$MYCFLAGS" ZLIB= DIET= DEBUG=0 %{?_smp_mflags} forksbench
 make CFLAGS="$MYCFLAGS" DIET= DEBUG=0 \
-	gatling httpbench bindbench dl ioerr bench tlsgatling_nofail \
-	pthreadbench cgi \
-	mktestdata mmapbench manymapbench forkbench forksbench \
-	acc hcat referrer hitprofile matchiprange getlinks \
-	rellink \
-	%{?_smp_mflags}
+        gatling httpbench bindbench dl ioerr bench tlsgatling_nofail \
+        pthreadbench cgi \
+        mktestdata mmapbench manymapbench forkbench forksbench \
+        acc hcat referrer hitprofile matchiprange getlinks \
+        rellink \
+        %{?_smp_mflags}
 lic="`md5sum LICENSE | cut -d' ' -f 1`"
 if [ -r "/usr/share/doc/licenses/md5/$lic" ]; then
     ln -sf /usr/share/doc/licenses/md5/"$lic" LICENSE
@@ -158,9 +158,6 @@ mkdir -p "%{buildroot}%{_localstatedir}/log/%{name}"
 %endif
 
 #%%__debug_install_post
-
-%clean
-[ "%{buildroot}" = "/" ] || rm -rf "%{buildroot}"
 
 %pre
 getent group www >/dev/null || groupadd -r www

@@ -1,13 +1,13 @@
-Summary:	Get monitor details
-Name:		read-edid
-Version:	3.0.2
-Release:	1
-URL:		https://www.polypux.org/projects/read-edid/
-Source0:	https://www.polypux.org/projects/read-edid/%{name}-%{version}.tar.gz
-License:	GPLv2
-Group:		System/Configuration/Other
-BuildRequires:	libx86-devel
-BuildRequires:	cmake
+Summary:        Get monitor details
+Name:           read-edid
+Version:        3.0.2
+Release:        1
+URL:            https://www.polypux.org/projects/read-edid/
+Source0:        https://www.polypux.org/projects/read-edid/%{name}-%{version}.tar.gz
+License:        GPLv2
+Group:          System/Configuration/Other
+BuildRequires:  libx86-devel
+BuildRequires:  cmake
 
 %description
 This package will try to read the monitor details directly from the

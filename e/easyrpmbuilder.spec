@@ -53,9 +53,6 @@ StartupNotify=true
 Categories=Development;Qt;IDE;
 EOF
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/easyrpmbuilder
 %dir %{_datadir}/easyrpmbuilder

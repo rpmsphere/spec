@@ -27,9 +27,6 @@ cp -R index.theme gtk-2.0 metacity-1 %{buildroot}%{_datadir}/themes/GlassyBleu
 mkdir -p %{buildroot}%{_datadir}/icons/GlassyBleu
 cp -R icons/* %{buildroot}%{_datadir}/icons/GlassyBleu
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/themes/GlassyBleu
 %{_datadir}/icons/GlassyBleu

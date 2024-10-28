@@ -8,8 +8,8 @@ Release:       13.1
 Summary:       A Linux framework for proxying device file callbacks into user-space
 Group:         System/Libraries
 URL:           https://www.circlemud.org/~jelson/software/fusd/
-Source:        https://fort.xdas.com/~kor/oss2jack/fusd-kor-%{majver}-%{minver}.tar.gz
-Patch:         libfusd-1.10-10-Makefile.patch
+Source0:       https://fort.xdas.com/~kor/oss2jack/fusd-kor-%{majver}-%{minver}.tar.gz
+Patch0:        libfusd-1.10-10-Makefile.patch
 Patch1:        libfusd-1.10.11-kernel2.6.26.patch
 Patch2:        libfusd-1.10.11-flag-for-more-data.patch
 License:       GPL
@@ -34,7 +34,7 @@ This package contains the static library libfusd.a to be used for development.
 
 %prep
 %setup -q -n fusd-kor-%{majver}-%{minver}
-%patch2 -p1
+%patch 2 -p1
 
 %build
 sed -i "s|/usr/local|$RPM_BUILD_ROOT%{_prefix}|" Makefile
@@ -62,9 +62,6 @@ cp obj.i686-linux/libfusd.a $RPM_BUILD_ROOT%{_libdir}
 %endif
 install -d -m0755 $RPM_BUILD_ROOT%{_includedir}
 cp include/*.h $RPM_BUILD_ROOT%{_includedir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %{_includedir}/*.h

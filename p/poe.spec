@@ -31,9 +31,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d %{buildroot}%{_bindir}
 %make_install -C linux
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc License.txt design.txt README.md
 %{_bindir}/%{name}

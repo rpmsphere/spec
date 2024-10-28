@@ -1,25 +1,25 @@
 %global __os_install_post %{nil}
 
 Summary:    Portable Forth Environment
-Name:	    pfe
+Name:       pfe
 Version:    0.33.71
 Release:    1
 License:    LGPL
-Group:	    Development/Languages
-URL:	    https://sourceforge.net/projects/pfe
+Group:      Development/Languages
+URL:        https://sourceforge.net/projects/pfe
 Source0:    https://prdownloads.sf.net/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires: gcc automake
 BuildRequires: ncurses-devel
 
 %package docs
-Summary:	PFE Documentation
-Group:		Development/Libraries
+Summary:        PFE Documentation
+Group:          Development/Libraries
 BuildRequires:  python2
 BuildRequires:  xmlto
 
 %package devel
-Summary:	PFE Development Headers
-Group:		Development/Libraries
+Summary:        PFE Development Headers
+Group:          Development/Libraries
 Requires:       pfe
 
 %description
@@ -95,9 +95,6 @@ rm %{buildroot}%{_bindir}/pfe
 echo ==========================
 cat %buildroot%_libdir/pkgconfig/*.pc
 echo ==========================
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc ChangeLog

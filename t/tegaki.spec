@@ -1,18 +1,18 @@
 %undefine _debugsource_packages
-Summary: 	Chinese and Japanese Handwriting Recognition
-Name: 		tegaki
-Version: 	0.3.1
-Release: 	1
-License: 	GPLv2+
-Group: 		System/Internationalization
-Source0: 	https://www.tegaki.org/releases/0.3.1/tegaki-python-0.3.1.tar.gz
-Source1: 	https://www.tegaki.org/releases/0.3.1/tegaki-pygtk-0.3.1.tar.gz
-##Source2: 	https://www.tegaki.org/releases/0.3.1/tegaki-recognize-0.3.1.tar.gz
-URL: 		https://www.tegaki.org/
-BuildArch:	noarch
-Requires:	%{name}-models
-Requires:	zinnia-python
-Obsoletes:	python-zinnia
+Summary:        Chinese and Japanese Handwriting Recognition
+Name:           tegaki
+Version:        0.3.1
+Release:        1
+License:        GPLv2+
+Group:          System/Internationalization
+Source0:        https://www.tegaki.org/releases/0.3.1/tegaki-python-0.3.1.tar.gz
+Source1:        https://www.tegaki.org/releases/0.3.1/tegaki-pygtk-0.3.1.tar.gz
+##Source2:      https://www.tegaki.org/releases/0.3.1/tegaki-recognize-0.3.1.tar.gz
+URL:            https://www.tegaki.org/
+BuildArch:      noarch
+Requires:       %{name}-models
+Requires:       zinnia-python
+Obsoletes:      python-zinnia
 
 %description
 Tegaki is an ongoing project which aims to develop a free and open-source
@@ -39,9 +39,6 @@ cd tegaki-pygtk-0.3.1 ; python2 setup.py build ; cd ..
 rm -rf %{buildroot}
 cd tegaki-python-0.3.1 ; python2 setup.py install --root=%{buildroot} ; cd ..
 cd tegaki-pygtk-0.3.1 ; python2 setup.py install --root=%{buildroot} ; cd ..
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{python2_sitelib}/tegaki

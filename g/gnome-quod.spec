@@ -40,9 +40,6 @@ export CXXFLAGS="-std=c++11 -fpermissive -fPIC"
 make DESTDIR=$RPM_BUILD_ROOT install
 %find_lang %{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %doc AUTHORS README NEWS THANKS
 %{_bindir}/*

@@ -1,12 +1,12 @@
-Summary:	Unarchiver for Amiga LZX archives
-Name:		unlzx
-Version:	1.1
-Release:	4.1
-License:	distributable
-Group:		Applications/Archiving
-Source0:	https://aminet.net/misc/unix/unlzx.c.gz
-Source1:	https://aminet.net/misc/unix/unlzx.c.gz.readme
-URL:		https://xavprods.free.fr/lzx/
+Summary:        Unarchiver for Amiga LZX archives
+Name:           unlzx
+Version:        1.1
+Release:        4.1
+License:        distributable
+Group:          Applications/Archiving
+Source0:        https://aminet.net/misc/unix/unlzx.c.gz
+Source1:        https://aminet.net/misc/unix/unlzx.c.gz.readme
+URL:            https://xavprods.free.fr/lzx/
 
 %description
 LZX uses a compact way of encoding large match offsets. The Amiga
@@ -23,9 +23,6 @@ gcc %{optflags} -o %{name} %{name}.c
 
 %install
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README

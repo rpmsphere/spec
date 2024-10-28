@@ -1,19 +1,19 @@
-Name:			bwwhois
-Version:		5.0
-Release:		10.1
-License:		Artistic License
-URL:			https://whois.bw.org/
-Summary:		Bill Weinman replacement Whois client
-Group:			Productivity/Networking/Diagnostic
-Source:			%{name}-%{version}.tar.gz
-Requires:		perl
-Requires:		perl(DBD::mysql)
-BuildRequires:		perl(DBD::mysql)
-Provides:		whois
+Name:                   bwwhois
+Version:                5.0
+Release:                10.1
+License:                Artistic License
+URL:                    https://whois.bw.org/
+Summary:                Bill Weinman replacement Whois client
+Group:                  Productivity/Networking/Diagnostic
+Source:                 %{name}-%{version}.tar.gz
+Requires:               perl
+Requires:               perl(DBD::mysql)
+BuildRequires:          perl(DBD::mysql)
+Provides:               whois
 
-%define _wwwdir 	/var/www/htdocs
-%define _cgibin		/var/www/cgi-bin
-%define _confdir	/etc
+%define _wwwdir         /var/www/htdocs
+%define _cgibin         /var/www/cgi-bin
+%define _confdir        /etc
 
 
 %description
@@ -71,9 +71,6 @@ install -m755 bwInclude.pm $RPM_BUILD_ROOT/%{perl_archlib}/bwInclude.pm
 %{_wwwdir}/whois.html
 %{_wwwdir}/whois-notfound.html
 %doc create_whois.sql COPYRIGHT DISCLAIMER HISTORY INSTALL README whois.txt
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Aug 01 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0

@@ -1,15 +1,15 @@
-Name:		ulipad
-Version:	4.1
-Release:	5.1
-Summary:	An editor written with wxPython
-Source:		https://ulipad.googlecode.com/files/%{name}.%{version}.zip
-URL:		https://code.google.com/p/ulipad/
-Group:		Applications/Editors
-License:	GNU General Public License v2 (GPL)
+Name:           ulipad
+Version:        4.1
+Release:        5.1
+Summary:        An editor written with wxPython
+Source:         https://ulipad.googlecode.com/files/%{name}.%{version}.zip
+URL:            https://code.google.com/p/ulipad/
+Group:          Applications/Editors
+License:        GNU General Public License v2 (GPL)
 BuildArch:      noarch
-Requires:	python2-wxpython
-BuildRequires:	ghostscript-core ImageMagick
-BuildRequires:	sane-backends-libs
+Requires:       python2-wxpython
+BuildRequires:  ghostscript-core ImageMagick
+BuildRequires:  sane-backends-libs
 
 %description
 UliPad uses Mixin and Plugin technique as its architecture.
@@ -48,9 +48,6 @@ Type=Application
 EOF
 
 %__install -D -m 644 %{name}-0.png $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt

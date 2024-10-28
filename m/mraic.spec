@@ -33,9 +33,6 @@ install -m 755 mraic.pl $RPM_BUILD_ROOT%{_bindir}
 install -m 755 dat $RPM_BUILD_ROOT%{_docdir}/%{_name}
 install -m 755 README.html $RPM_BUILD_ROOT%{_docdir}/%{_name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/mraic.pl
 %{_docdir}/%{_name}

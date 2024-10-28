@@ -1,12 +1,12 @@
-Summary:	Clone of the classic Kye puzzle game
-Name:		kye
-Version:	1.0
-Release:	1
-Source:		https://games.moria.org.uk/kye/download/%{name}-%{version}.tar.gz
-License:	GPLv2+
-Group:		Amusements/Games
-URL:		https://games.moria.org.uk/kye/pygtk
-BuildArch:	noarch
+Summary:        Clone of the classic Kye puzzle game
+Name:           kye
+Version:        1.0
+Release:        1
+Source:         https://games.moria.org.uk/kye/download/%{name}-%{version}.tar.gz
+License:        GPLv2+
+Group:          Amusements/Games
+URL:            https://games.moria.org.uk/kye/pygtk
+BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  pygtk2
@@ -54,17 +54,14 @@ EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 desktop-file-install --dir $RPM_BUILD_ROOT/%{_datadir}/applications/ \
-		     --vendor moria-org \
-		     %{name}.desktop
+                     --vendor moria-org \
+                     %{name}.desktop
 
 desktop-file-install --dir $RPM_BUILD_ROOT/%{_datadir}/applications/ \
-		     --vendor moria-org \
-		     %{name}-edit.desktop
+                     --vendor moria-org \
+                     %{name}-edit.desktop
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f INSTALLED_FILES
 %doc NEWS README COPYING

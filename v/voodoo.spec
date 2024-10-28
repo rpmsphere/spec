@@ -1,16 +1,16 @@
-Name:		voodoo
-Summary:	An implementation of the Voodoo programming language
-Version:	1.1.4
-Release:	1
-License:	GPLv2.1
-Group:		Development/Languages
-URL:		https://inglorion.net/software/voodoo/
-Source0:	https://inglorion.net/download/%{name}-%{version}.tar.bz2
-BuildArch:	noarch
-BuildRequires:	ruby nasm
+Name:           voodoo
+Summary:        An implementation of the Voodoo programming language
+Version:        1.1.4
+Release:        1
+License:        GPLv2.1
+Group:          Development/Languages
+URL:            https://inglorion.net/software/voodoo/
+Source0:        https://inglorion.net/download/%{name}-%{version}.tar.bz2
+BuildArch:      noarch
+BuildRequires:  ruby nasm
 BuildRequires:  rubygem-rdoc
 BuildRequires:  rubypick
-Requires:	ruby gcc
+Requires:       ruby gcc
 
 %description
 The Voodoo programming language is a low-level programming language, abstracting
@@ -24,15 +24,12 @@ in Ruby and generates code for i386-compatible, AMD64, ARM, and MIPS CPUs.
 %build
 ./configure --prefix /usr
 make %{?_smp_mflags}
-										
+                                                                                
 %install
 rm -rf %{buildroot}
 make DESTDIR=$RPM_BUILD_ROOT install
 mkdir -p %{buildroot}%{_datadir}
 mv %{buildroot}/usr/lib/site_ruby %{buildroot}%{_datadir}/ruby
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/%{name}*

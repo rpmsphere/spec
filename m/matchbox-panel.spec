@@ -1,18 +1,18 @@
-Summary: 	Panel for the Matchbox Desktop
-Name: 		matchbox-panel
-Version: 	2.11
-Release: 	20.1
-URL: 		https://matchbox-project.org/
-License: 	GPLv2+
-Group: 		Graphical desktop/Other
-Source0:	https://git.yoctoproject.org/cgit.cgi/matchbox-panel-2/snapshot/matchbox-panel-2-%{version}.tar.gz
+Summary:        Panel for the Matchbox Desktop
+Name:           matchbox-panel
+Version:        2.11
+Release:        20.1
+URL:            https://matchbox-project.org/
+License:        GPLv2+
+Group:          Graphical desktop/Other
+Source0:        https://git.yoctoproject.org/cgit.cgi/matchbox-panel-2/snapshot/matchbox-panel-2-%{version}.tar.gz
 Patch0:     0001-applets-systray-Allow-icons-to-be-smaller.patch
-BuildRequires:	libjpeg-devel desktop-file-utils
-BuildRequires:	startup-notification-devel
-BuildRequires:	glib2-devel
-BuildRequires:	gettext-devel
-BuildRequires:	gtk3-devel
-BuildRequires:	dbus-glib-devel
+BuildRequires:  libjpeg-devel desktop-file-utils
+BuildRequires:  startup-notification-devel
+BuildRequires:  glib2-devel
+BuildRequires:  gettext-devel
+BuildRequires:  gtk3-devel
+BuildRequires:  dbus-glib-devel
 
 %description
 Matchbox is a base environment for the X Window System running on non-desktop
@@ -30,7 +30,7 @@ Header files and libraries for the package %{name}.
 
 %prep
 %setup -q -n matchbox-panel-2-%{version}
-%patch0 -p 1
+%patch 0 -p 1
 
 %build
 autoreconf -ifv

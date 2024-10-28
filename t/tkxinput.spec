@@ -2,20 +2,20 @@
 %{!?tcl_sitearch: %define tcl_sitearch %{_libdir}/tcl%{tcl_version}}
 %undefine _debugsource_packages
 
-Summary:	A Tk extension to handle additional input devices in X11
-Name:		tkxinput
-Version:	1.0
-Release:	36.1
-Source0:	%{name}-%{version}.tar.bz2
-Patch0:		tkxinput-1.0.tk8.patch
-Patch1:		tkxinput-1.0.wacom.patch
-License:	LGPLv2+
-Group:		System/X11
-URL:		https://freshmeat.net/redir/tkxinput/22191/url_homepage/tkxinput/
-BuildRequires:	pkgconfig(x11)
-BuildRequires:	pkgconfig(xi)
-BuildRequires:	tk-devel
-BuildRequires:	tcl-devel
+Summary:        A Tk extension to handle additional input devices in X11
+Name:           tkxinput
+Version:        1.0
+Release:        36.1
+Source0:        %{name}-%{version}.tar.bz2
+Patch0:         tkxinput-1.0.tk8.patch
+Patch1:         tkxinput-1.0.wacom.patch
+License:        LGPLv2+
+Group:          System/X11
+URL:            https://freshmeat.net/redir/tkxinput/22191/url_homepage/tkxinput/
+BuildRequires:  pkgconfig(x11)
+BuildRequires:  pkgconfig(xi)
+BuildRequires:  tk-devel
+BuildRequires:  tcl-devel
 
 %description
 The package provides an extension to Tk that add input device
@@ -27,8 +27,8 @@ one application to an other one.
 
 %prep
 %setup -q
-%patch0 -p1 -b .tk8
-%patch1 -p1 -b .wacom
+%patch 0 -p1 -b .tk8
+%patch 1 -p1 -b .wacom
 # quick hack to fix install location...the makefile is way too simple
 # to make a proper fix easy without completely re-doing it - AdamW
 # 2008/12

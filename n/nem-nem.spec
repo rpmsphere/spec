@@ -8,7 +8,7 @@ URL:            https://code.google.com/p/nem-nem/
 Source0:        https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/nem-nem/%{name}-%{version}.tar.gz
 BuildRequires:  qt4-devel
 BuildRequires:  sox
-Requires:	sox
+Requires:       sox
 
 %description
 Nem-Nem is a graphical dice game with sounds, animations and a lot of
@@ -40,9 +40,6 @@ ln -s %_gamesdatadir/nem-nem/nem-nem %buildroot%_bindir
 %__cp desktop/nem-nem.desktop %buildroot%_datadir/applications/nem-nem.desktop
 %__mkdir -p %buildroot%_datadir/pixmaps
 %__cp desktop/nem-nem.png %buildroot%_datadir/pixmaps/nem-nem.png
-
-%clean
-rm -rf %{buildroot}
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 2011.05.1

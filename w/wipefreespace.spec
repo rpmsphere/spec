@@ -1,17 +1,17 @@
-Summary:	Program for secure cleaning of free space on file systems
-Name:		wipefreespace
-Version:	2.2.2
-Release:	3.1
-URL:		https://wipefreespace.sf.net
-License:	GPLv2
-Group:		Applications/System
-Source:		https://sourceforge.net/projects/wipefreespace/files/wipefreespace/%{version}/%{name}-%{version}.tar.gz
-Requires:	xfsprogs
-BuildRequires:	xfsprogs
-BuildRequires:	gcc, glibc, glibc-devel, glibc-headers, make
+Summary:        Program for secure cleaning of free space on file systems
+Name:           wipefreespace
+Version:        2.2.2
+Release:        3.1
+URL:            https://wipefreespace.sf.net
+License:        GPLv2
+Group:          Applications/System
+Source:         https://sourceforge.net/projects/wipefreespace/files/wipefreespace/%{version}/%{name}-%{version}.tar.gz
+Requires:       xfsprogs
+BuildRequires:  xfsprogs
+BuildRequires:  gcc, glibc, glibc-devel, glibc-headers, make
 BuildRequires:  gettext-devel
-Obsoletes:	e2wipefreespace <= 0.5
-Provides:	e2wipefreespace >= 0.6
+Obsoletes:      e2wipefreespace <= 0.5
+Provides:       e2wipefreespace >= 0.6
 
 %description
 The wipefreespace is a program which securely cleans free space on given
@@ -27,15 +27,12 @@ sed -i -e '126i #include <sys/sysmacros.h>' -e '811i struct stat s;' src/wfs_uti
 %build
 autoreconf -ifv
 ./configure --prefix=/usr --mandir=/usr/share/man \
-	--infodir=/usr/share/info --libdir=/usr/lib
+        --infodir=/usr/share/info --libdir=/usr/lib
 make
 
 %install
 %{__mkdir_p} $RPM_BUILD_ROOT/usr/share/info
 %{__make} DESTDIR="$RPM_BUILD_ROOT" install
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

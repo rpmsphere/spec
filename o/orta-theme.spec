@@ -34,9 +34,6 @@ sed -e 's|Name=Orta|Name=Orta Squared|' -e 's|MetacityTheme=Orta|MetacityTheme=O
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}*
 %{_datadir}/%{name}

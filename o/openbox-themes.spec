@@ -6,9 +6,9 @@ Group:          User Interface/Desktops
 License:        GPLv3
 Source0:        %{name}_%{version}.tar.gz
 BuildArch:      noarch
-Requires:	    gtk-murrine-engine
-Requires:	    openbox
-Requires:	    industrial-gnome-theme
+Requires:           gtk-murrine-engine
+Requires:           openbox
+Requires:           industrial-gnome-theme
 
 %description
 Various themes for openbox window manager.

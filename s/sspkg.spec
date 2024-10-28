@@ -7,7 +7,7 @@ Version:      2.1
 Release:      14.2
 Summary:      Slingshot extensions for XView
 Source: SlingShot2.1.tar.gz
-Patch: SlingShot2.1.dif
+Patch0: SlingShot2.1.dif
 BuildRequires: xorg-x11-proto-devel
 BuildRequires: libX11-devel
 BuildRequires: xview-devel libtirpc-devel
@@ -36,7 +36,7 @@ advantage of the Slingshot extension package.
 
 %prep
 %setup -q -n sspkg2.1
-%patch
+%patch 0
 sed -i -e '471s|static||' -e '830s|static||' src/canshell.c
 sed -i -e '806s|static||' src/rectobj.c
 sed -i -e '232s|static||' -e '265s|static||' src/drawimage.c
@@ -74,9 +74,6 @@ find $RPM_BUILD_ROOT/usr/openwin/share/src/sspkg/examples -type f -name \*.o -ex
 
 %postun
 /sbin/ldconfig
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc LEGAL_NOTICE README

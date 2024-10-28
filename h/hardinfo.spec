@@ -13,9 +13,9 @@ BuildRequires:  libsoup-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  pciutils
 BuildRequires:  libtasn1-devel
-BuildRequires:	libffi-devel
-BuildRequires:	libselinux-devel
-BuildRequires:	libmount-devel
+BuildRequires:  libffi-devel
+BuildRequires:  libselinux-devel
+BuildRequires:  libmount-devel
 Requires:  pciutils 
 Requires:  glx-utils
 Requires:  xorg-x11-utils
@@ -46,9 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 desktop-file-install --vendor="" --delete-original  \
   --dir=${RPM_BUILD_ROOT}%{_datadir}/applications         \
   ${RPM_BUILD_ROOT}%{_datadir}/applications/hardinfo.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc LICENSE

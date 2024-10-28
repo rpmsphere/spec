@@ -44,9 +44,6 @@ install -m644 doc/dist/man/* %{buildroot}%{_mandir}/man1
 %{_includedir}/ejs
 %{_mandir}/man1/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Mar 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.7
 - Rebuilt for Fedora

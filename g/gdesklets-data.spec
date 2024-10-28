@@ -5,11 +5,11 @@ Summary:        Applets for gDesklets
 Group:          User Interface/Desktops
 License:        GPLv2
 URL:            https://gdesklets.de/
-Source:		%{name}-%{version}.tar.gz
-Patch:		%{name}_0.35.6-2ubuntu1.diff.gz
+Source:         %{name}-%{version}.tar.gz
+Patch0:         %{name}_0.35.6-2ubuntu1.diff.gz
 BuildArch:      noarch
 Requires:       gdesklets
-Vendor:		Clément Stenac <zorglub@debian.org>
+Vendor:         Clément Stenac <zorglub@debian.org>
 
 %description
 This package provides desklets for the gDesklets application and contains:
@@ -39,7 +39,7 @@ This package provides desklets for the gDesklets application and contains:
 
 %prep
 %setup -q
-%patch -p1
+%patch 0 -p1
 sed -i -e 's/^include/#include/' -e '/dh_/d' debian/rules
 sed -i 's|/usr/bin/env python|/usr/bin/python2|' */*.bin */*/*.bin
 
@@ -57,9 +57,6 @@ sed -i 's/ callback="prefs_cb"//' %{buildroot}%{_datadir}/gdesklets/Displays/sti
 sed -i 's|/usr/bin/python|/usr/bin/python2|' %{buildroot}%{_datadir}/gdesklets/Sensors/Rss/rdfxml.py
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/gdesklets/Sensors/*/*.py
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/gdesklets/Sensors/*/*/*.py
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc debian/{changelog,copyright,README.Debian}

@@ -6,7 +6,7 @@ Group: Productivity/Security
 BuildRequires: openssl-devel
 URL: https://www.core-dump.com.hr/?q=node/28
 Source: https://www.core-dump.com.hr/software/secpwgen-1.3.tar.gz
-Patch: secpwgen-1.3_build_config.patch
+Patch0: secpwgen-1.3_build_config.patch
 Summary: Secure Password Generator
 
 %description
@@ -20,7 +20,7 @@ Authors:
 
 %prep
 %setup -q
-%patch
+%patch 0
 
 %build
 %{__make} -f Makefile.proto OPTFLAGS="%{optflags} -DDISABLE_MLOCKALL"
@@ -29,9 +29,6 @@ Authors:
 %{__rm} -rf $RPM_BUILD_ROOT
 %{__install} -D -m 0755 secpwgen   $RPM_BUILD_ROOT%{_bindir}/secpwgen
 %{__install} -D -m 0644 secpwgen.1 $RPM_BUILD_ROOT%{_mandir}/man1/secpwgen.1
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/secpwgen

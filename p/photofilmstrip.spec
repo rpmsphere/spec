@@ -1,19 +1,19 @@
-%define	oname	PhotoFilmStrip
+%define oname   PhotoFilmStrip
 
-Summary:	A program to make slide-show from pictures
-Name:		photofilmstrip
-Version:	3.7.3
-Release:	1
-License:	GPLv2+
-Group:		Video
-URL:		https://www.photofilmstrip.org/1-1-Home.html
-Source0:	https://sourceforge.net/projects/photostoryx/files/photofilmstrip/%{version}/photofilmstrip-%{version}.tar.gz
+Summary:        A program to make slide-show from pictures
+Name:           photofilmstrip
+Version:        3.7.3
+Release:        1
+License:        GPLv2+
+Group:          Video
+URL:            https://www.photofilmstrip.org/1-1-Home.html
+Source0:        https://sourceforge.net/projects/photostoryx/files/photofilmstrip/%{version}/photofilmstrip-%{version}.tar.gz
 BuildRequires:  python3-devel
 BuildRequires:  python3-wxpython4
 BuildRequires:  gettext
-Requires:	python3-pillow
-Requires:	mencoder
-BuildArch:	noarch
+Requires:       python3-pillow
+Requires:       mencoder
+BuildArch:      noarch
 
 %description
 PhotoFilmStrip is a software to make movies out of your pictures in just 3

@@ -7,7 +7,7 @@ Release:    1
 Summary:    Perl interface to the GMP library's rational (mpq) functions
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://metacpan.org/release/%{upstream_name}
+URL:        https://metacpan.org/release/%{upstream_name}
 Source0:    https://cpan.metacpan.org/modules/by-module/Math/%{upstream_name}-%{version}.tar.gz
 BuildRequires: perl-Exporter
 BuildRequires: perl(ExtUtils::MakeMaker)

@@ -31,9 +31,6 @@ make
 install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 install -Dm644 %{name}.lang %{buildroot}%{_datadir}/gtksourceview-2.0/language-specs/%{name}.lang
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc LICENSE README.md
 %{_bindir}/%{name}

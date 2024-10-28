@@ -14,6 +14,7 @@ BuildRequires: matio-devel
 BuildRequires: openmpi-devel
 BuildRequires: libsndfile-devel
 BuildRequires: libgit2-devel
+BuildRequires: portaudio-devel
 AutoReq: off
 Requires: openmpi
 Requires: qt5-qtbase-gui qt5-qtdeclarative alsa-lib boost libcurl libevent libffi flexiblas-netlib libgcc libgit2 libgomp
@@ -52,9 +53,6 @@ make
 #mkdir -p %{buildroot}%{_sysconfdir}/ld.so.conf.d
 #echo %{_libexecdir}/Nelson-%{version}/bin/linux > %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
 #echo %{_libdir}/openmpi/lib >> %{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
-
-%clean
-rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %doc LICENSE *.md

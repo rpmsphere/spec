@@ -1,15 +1,15 @@
-Name:		aumix
-Summary:	A GTK+/Ncurses audio mixer 
-Version:	2.9.1
-Release:	13.1
-License:	GPL
-Group:		Sound/Mixers
-BuildRequires:	ncurses-devel
-BuildRequires:	gtk2-devel
-BuildRequires:	autoconf
-BuildRequires:	automake
-Source0:	https://www.jpj.net/~trevor/aumix/%{name}-%{version}.tar.bz2
-URL: 		https://www.jpj.net/~trevor/aumix.html
+Name:           aumix
+Summary:        A GTK+/Ncurses audio mixer 
+Version:        2.9.1
+Release:        13.1
+License:        GPL
+Group:          Sound/Mixers
+BuildRequires:  ncurses-devel
+BuildRequires:  gtk2-devel
+BuildRequires:  autoconf
+BuildRequires:  automake
+Source0:        https://www.jpj.net/~trevor/aumix/%{name}-%{version}.tar.bz2
+URL:            https://www.jpj.net/~trevor/aumix.html
 
 %description
 This is a program for adjusting audio mixers from the command line or scripts,

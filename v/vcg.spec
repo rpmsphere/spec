@@ -25,8 +25,8 @@ regions of the graph.  It uses colors and runs on X11.
 
 %prep 
 %setup -q -n %{name}.%{version}
-%patch0 -p1 -z .pix
-%patch1 -p0 -b .link
+%patch 0 -p1 -z .pix
+%patch 1 -p0 -b .link
 
 %build
 make xvcg_gcc_noxmkmf xvcg CFLAGS="-c %{optflags -wall}"

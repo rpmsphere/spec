@@ -1,14 +1,14 @@
-Name:			torch
-Version:		3.1
-Release:		5.1
-Summary:		A simple machine-learning library	
-Group:			Engineering
-License:		BSD
-URL:			https://www.torch.ch/
-Source0:		https://www.torch.ch/archives/Torch3src.tgz
-Source1:		https://www.torch.ch/archives/Torch3doc.tgz
-#Source44:		import.info
-BuildRequires:		gcc-c++
+Name:                   torch
+Version:                3.1
+Release:                5.1
+Summary:                A simple machine-learning library       
+Group:                  Engineering
+License:                BSD
+URL:                    https://www.torch.ch/
+Source0:                https://www.torch.ch/archives/Torch3src.tgz
+Source1:                https://www.torch.ch/archives/Torch3doc.tgz
+#Source44:              import.info
+BuildRequires:          gcc-c++
 
 %description
 Among its features you can find:
@@ -28,9 +28,9 @@ Among its features you can find:
 * Speech recognition tools (Embedded training and large vocabulary decoding).
 
 %package devel
-Summary:	Development files for %{name}
-Group:		Development/C
-Requires:	%{name} = %{version}-%{release}
+Summary:        Development files for %{name}
+Group:          Development/C
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 This package contains development files for %{name}.
@@ -74,8 +74,8 @@ mkdir -p $RPM_BUILD_ROOT%{_includedir}/torch
 # install the library
 install -p -m 755 libtorch.so.1.0.0 $RPM_BUILD_ROOT%{_libdir}
 pushd $RPM_BUILD_ROOT%{_libdir}
-	ln -sf libtorch.so.1.0.0 libtorch.so.1
-	ln -sf libtorch.so.1.0.0 libtorch.so
+        ln -sf libtorch.so.1.0.0 libtorch.so.1
+        ln -sf libtorch.so.1.0.0 libtorch.so
 popd
 
 # install the headers

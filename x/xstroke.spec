@@ -28,7 +28,7 @@ Authors:
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 libtoolize --force
 autoreconf -f --install 
 
@@ -44,9 +44,6 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/pixmaps
 cp %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/pixmaps
 mkdir -p $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}
 cp -pr AUTHORS COPYING INSTALL ChangeLog NEWS README TODO $RPM_BUILD_ROOT%{_defaultdocdir}/%{name}/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/xstroke

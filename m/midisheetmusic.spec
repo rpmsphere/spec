@@ -38,9 +38,6 @@ install -Dm644 NotePair.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 
-%clean
-rm -rf %{buildroot}
-
 %changelog
 * Sun Mar 3 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
 - Rebuilt for Fedora

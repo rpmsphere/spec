@@ -28,9 +28,6 @@ install -d $RPM_BUILD_ROOT/%{_bindir}
 install %{name} $RPM_BUILD_ROOT/%{_bindir}
 $RPM_BUILD_ROOT/%{_bindir}/%{name} --build-symlinks
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc README ChangeLog
 %{_bindir}/*

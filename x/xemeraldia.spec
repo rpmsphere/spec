@@ -49,9 +49,6 @@ touch %{buildroot}%{_datadir}/games/%{name}/xemeraldia.scores
 
 %find_lang %{name}
 
-%clean
-rm -rf "%{buildroot}"
-
 %files -f %{name}.lang
 %attr(2755, root, games) %{_bindir}/xemeraldia
 %{_datadir}/applications/xemeraldia.desktop

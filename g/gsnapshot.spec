@@ -3,8 +3,8 @@ Version:        1.1
 Release:        1
 License:        GPL
 Source0:        %{name}-%{version}.tar.gz
-Source1:	%{name}-%{version}-language.c
-Source2:	%{name}.desktop
+Source1:        %{name}-%{version}-language.c
+Source2:        %{name}.desktop
 Source3:        %{name}.png
 Vendor:         Mauro DePalma
 URL:            https://www.softcraft.org/gsnapshot/
@@ -32,9 +32,6 @@ export CFLAGS=${CFLAGS/-Werror=format-security/}
 %{__make} DESTDIR=%{buildroot} install
 %{__install} -D -m 644 %{SOURCE3} %{buildroot}%{_datadir}/pixmaps/%{name}.png
 %{__install} -D -m 644 %{SOURCE2} %{buildroot}%{_datadir}/applications/%{name}.desktop
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %{_bindir}/%{name}

@@ -30,9 +30,6 @@ make
 rm -rf %{buildroot}
 %make_install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README ChangeLog COPYING NEWS
 %{_bindir}/%{name}

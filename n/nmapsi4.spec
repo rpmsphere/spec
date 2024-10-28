@@ -32,9 +32,6 @@ sed -i '42,43d' CMakeLists.txt
 rm -rf $RPM_BUILD_ROOT
 %cmake_install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/nmapsi4*
 %{_datadir}/applications/kde4/nmapsi4*.desktop

@@ -86,9 +86,9 @@ libraries or the X Window System.
 
 %prep
 %setup -q -n %{_name}-%{version}
-%patch0 -p1 -b .test
-%patch1 -p1 -b .abicheck
-%patch2 -p1 -b .char
+%patch 0 -p1 -b .test
+%patch 1 -p1 -b .abicheck
+%patch 2 -p1 -b .char
 
 sed -i -e 's|/usr/lib\b|%{_libdir}|' wx-config.in configure
 

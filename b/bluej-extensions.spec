@@ -129,14 +129,14 @@ it inside BlueJ rather than as an external Applet.
 
 #----------------------------------------------------------------------
 
-%package  	MainRunner
+%package        MainRunner
 Summary:        Main Program Runner 
 Group:          Development/Tools/IDE
 Requires:       %{name} = %{version}
 Requires:       bluej
 URL:            https://www.bluej.org/extensions/files/MainRunner.jar
 
-%description 	MainRunner
+%description    MainRunner
 An extension to allow direct invocation of a main method. If a class contains a
 properly declared main method, this extensions adds a menu item "Run Main
 Method" which directly invokes it. This makes the main method much more
@@ -145,7 +145,7 @@ right; if it's not public static void main(String [] args) you won't see the
 menu item. 
 
 
-%files 	MainRunner
+%files  MainRunner
 %{extension_dir}/MainRunner.jar
 
 #----------------------------------------------------------------------
@@ -285,12 +285,12 @@ configured via the preferences panel, or the BlueJ properties files.
 %prep
 %setup -q 
 for file in *.zip ; do
-	unzip $file
-	rm $file
+        unzip $file
+        rm $file
 done
 for file in *.tar.gz ; do
-	tar -xf $file
-	rm $file
+        tar -xf $file
+        rm $file
 done
 #
 mv patterncoder_0.5.3/* .
@@ -316,13 +316,10 @@ rm -rf $RPM_BUILD_ROOT/%{extension_dir}/__MACOSX*
 install -m644 %{SOURCE1} .
 install -m644 %{SOURCE2} .
 for file in  RoV_training_files.zip rolesOfVariables-README.txt *.pdf ; do
-	find $RPM_BUILD_ROOT/%{extension_dir}/ -name "$file" -exec mv -v {} . \;
+        find $RPM_BUILD_ROOT/%{extension_dir}/ -name "$file" -exec mv -v {} . \;
 done
 mv $RPM_BUILD_ROOT/%{extension_dir}/papers/*.pdf .
 rmdir $RPM_BUILD_ROOT/%{extension_dir}/papers
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %dir %{_datadir}/bluej

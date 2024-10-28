@@ -6,7 +6,7 @@ Version:        0.4
 Release:        281.1
 Summary:        Xterminal -- Use SuSE Linux as an X terminal
 Source:         Xterminal-0.4.tar.gz
-Patch:          Xterminal-0.4.dif
+Patch0:          Xterminal-0.4.dif
 BuildArch:      noarch
 
 %description
@@ -24,7 +24,7 @@ Authors:
 
 %prep
 %setup -n Xterminal-0.4
-%patch
+%patch 0
 
 %build
     make -f Makefile.Linux compile
@@ -32,9 +32,6 @@ Authors:
 %install
     rm -rf $RPM_BUILD_ROOT
     make -f Makefile.Linux DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-    rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README

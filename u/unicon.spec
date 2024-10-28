@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Summary:	The Unified Extended Dialect of Icon
-Name:		unicon
-Version:	13.2
-Release:	1
-License:	GPL
-Group:		Development/Languages
-Source0:	https://sourceforge.net/projects/unicon/files/%{name}_%{version}.tar.gz
-URL:		https://unicon.sourceforge.net/
-BuildRequires:	libX11-devel libXft-devel
+Summary:        The Unified Extended Dialect of Icon
+Name:           unicon
+Version:        13.2
+Release:        1
+License:        GPL
+Group:          Development/Languages
+Source0:        https://sourceforge.net/projects/unicon/files/%{name}_%{version}.tar.gz
+URL:            https://unicon.sourceforge.net/
+BuildRequires:  libX11-devel libXft-devel
 BuildRequires:  mesa-libGL-devel libjpeg-turbo-devel libvorbis-devel
 
 %description
@@ -36,9 +36,6 @@ make Unicon
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_docdir}/%{name}

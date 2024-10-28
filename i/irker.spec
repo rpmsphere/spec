@@ -1,11 +1,11 @@
-Name:		irker
-Version:	2.13
-Release:	2.1
-Summary:	IRC Message Relay
-License:	BSD
-Group:		Networking/IRC
-URL: 		https://www.catb.org/esr/irker/
-Source0:	https://www.catb.org/~esr/irker/%{name}-%{version}.tar.gz
+Name:           irker
+Version:        2.13
+Release:        2.1
+Summary:        IRC Message Relay
+License:        BSD
+Group:          Networking/IRC
+URL:            https://www.catb.org/esr/irker/
+Source0:        https://www.catb.org/~esr/irker/%{name}-%{version}.tar.gz
 Patch0: irker-1.9-systemd-unit-user.patch
 BuildArch: noarch
 Requires: python-irc

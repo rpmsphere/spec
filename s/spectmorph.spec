@@ -41,14 +41,11 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*.pc
 %{_libdir}/vst/*.so
 %{_libdir}/clap/SpectMorph.clap
-%{_libdir}/lv2/spectmorph.lv2
+#{_libdir}/lv2/spectmorph.lv2
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*.png
 %{_datadir}/%{name}
 %{_mandir}/man1/*.1*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.1

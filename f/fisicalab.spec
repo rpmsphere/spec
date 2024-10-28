@@ -40,10 +40,10 @@ FisicaLab can solve the fallowing problems:
 
 %configure
 make \
-	messages=yes \
-	debug=yes \
-	strip=no \
-	shared=yes
+        messages=yes \
+        debug=yes \
+        strip=no \
+        shared=yes
  
 %install
 . /etc/GNUstep/GNUstep.conf

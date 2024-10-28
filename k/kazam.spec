@@ -27,7 +27,7 @@ Requires:       python3-xlib
 Requires:       python3-dbus
 Requires:       python3-gobject
 Requires:       python3-pyxdg
-Requires:	python3-distro
+Requires:       python3-distro
 Requires:       libgudev
 Requires:       gstreamer1-plugins-base
 Requires:       libappindicator-gtk3

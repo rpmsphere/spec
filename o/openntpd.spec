@@ -45,9 +45,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{__ln_s} /etc/init.d/ntp      $RPM_BUILD_ROOT%{_sbindir}/rcntp
 %{__install} -m 0755 -d        $RPM_BUILD_ROOT%{ntp_home}
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %pre
 groupadd ntp
 useradd -g ntp -s /sbin/nologin -d /var/lib/ntp -c 'OpenNTP daemon' ntp 2> /dev/null || :

@@ -1,12 +1,12 @@
-Summary:	Parity Archive Volume Set
-Name:		parchive2
-Version:	0.4
-Release:	10.1
-Group:		Archiving/Backup
-License:	GPL
-URL:		https://parchive.sourceforge.net/
-Source:		https://sourceforge.net/projects/parchive/files/par2cmdline/0.4/par2cmdline-0.4.tar.gz
-Patch0:		par2cmdline-gcc4.patch.bz2
+Summary:        Parity Archive Volume Set
+Name:           parchive2
+Version:        0.4
+Release:        10.1
+Group:          Archiving/Backup
+License:        GPL
+URL:            https://parchive.sourceforge.net/
+Source:         https://sourceforge.net/projects/parchive/files/par2cmdline/0.4/par2cmdline-0.4.tar.gz
+Patch0:         par2cmdline-gcc4.patch.bz2
 
 %description
 The idea behind this project is to provide a tool to apply the data-
@@ -31,7 +31,7 @@ Tip of the day: alias par='par2 r *.((p|P)??|par2)'
 
 %prep
 %setup -q -n par2cmdline-0.4
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure
@@ -39,9 +39,6 @@ make
 
 %install
 %makeinstall
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS COPYING README ROADMAP

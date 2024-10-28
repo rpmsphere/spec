@@ -27,9 +27,6 @@ make
 rm -fr ${buildroot}
 %makeinstall
 
-%clean
-rm -fr ${buildroot}
-
 %files
 %{_bindir}/*
 %{_datadir}/*

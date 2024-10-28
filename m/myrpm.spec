@@ -1,12 +1,12 @@
-Summary: 		Tool suite for quick RPM build 
-Name:			myrpm
-Version: 		5.38
-Release:	   	2	
-License: 		GPL
-URL: 			https://www.jmrenouard.fr/
-Source0: 		%{name}-%{version}.tar.gz
-Group: 			System/Administration
-BuildArch:		noarch
+Summary:                Tool suite for quick RPM build 
+Name:                   myrpm
+Version:                5.38
+Release:                2       
+License:                GPL
+URL:                    https://www.jmrenouard.fr/
+Source0:                %{name}-%{version}.tar.gz
+Group:                  System/Administration
+BuildArch:              noarch
 Requires: perl
 Requires: perl-Text-Template
 Requires: perl-Archive-Tar
@@ -29,9 +29,6 @@ rm -Rf %{buildroot}
 %{__install} -m 0755 "usr/bin/myrpm" "%{buildroot}/usr/bin/myrpm"
 %{__install} -m 0755 "usr/bin/rpmMacrosConfig" "%{buildroot}/usr/bin/rpmMacrosConfig"
 %{__install} -m 0755 "usr/bin/rpmFactory" "%{buildroot}/usr/bin/rpmFactory"
-
-%clean
-rm -Rf %{buildroot}
 
 %files
 %doc usr/share/doc/myrpm-*/README

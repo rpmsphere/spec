@@ -30,9 +30,6 @@ make install/fast -C build DESTDIR=%{buildroot}
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/main.py
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/ibus/component/*
 %{_datadir}/ibus-googlepinyin

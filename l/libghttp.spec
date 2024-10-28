@@ -46,9 +46,6 @@ Header files and libraries for the package %{name}.
 %{_libdir}/lib*.so
 %{_libdir}/ghttpConf.sh
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.9
 - Rebuilt for Fedora

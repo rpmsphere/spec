@@ -5,7 +5,7 @@ Group:          Amusements/Games/Board/Puzzle
 Version:        2.5
 Release:        1599.1
 Source:         xquarto-2.5.tar.bz2
-Patch:          xquarto-2.5-imake_font.patch
+Patch0:          xquarto-2.5-imake_font.patch
 URL:            ftp://ftp.ac-grenoble.fr/ge/educational_games/xquarto-2.5.tgz
 Summary:        A board game designed for the X
 
@@ -25,7 +25,7 @@ more details).
 
 %prep
 %setup -q
-%patch
+%patch 0
 
 %build
 xmkmf -a
@@ -40,9 +40,6 @@ mv $RPM_BUILD_ROOT/usr/games/* $RPM_BUILD_ROOT%{_bindir}
 mkdir -p $RPM_BUILD_ROOT%{_mandir}/man1
 mv $RPM_BUILD_ROOT/usr/man/man1/* $RPM_BUILD_ROOT%{_mandir}/man1
 %endif
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/xquarto

@@ -1,13 +1,13 @@
-Summary:	Automated wireless auditor
-Name:		wifite
-Version:	2.2.5
-Release:	1
-Source0:	https://github.com/derv82/wifite2/archive/%{version}.tar.gz#/%{name}2-%{version}.tar.gz
-License:	GPLv2
-Group:		Internet
-BuildArch:	noarch
-URL:		https://github.com/derv82/wifite2
-Requires:	aircrack-ng, reaver, cowpatty, hashcat, wireshark-cli
+Summary:        Automated wireless auditor
+Name:           wifite
+Version:        2.2.5
+Release:        1
+Source0:        https://github.com/derv82/wifite2/archive/%{version}.tar.gz#/%{name}2-%{version}.tar.gz
+License:        GPLv2
+Group:          Internet
+BuildArch:      noarch
+URL:            https://github.com/derv82/wifite2
+Requires:       aircrack-ng, reaver, cowpatty, hashcat, wireshark-cli
 Requires:       hcxtools, hcxdumptool
 Suggests:       pyrit
 
@@ -25,9 +25,6 @@ python3 setup.py build
 %install
 rm -rf $RPM_BUILD_ROOT
 python3 setup.py install --root %{buildroot} --prefix %{_prefix}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.md

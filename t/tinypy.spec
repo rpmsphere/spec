@@ -36,9 +36,6 @@ python2 setup.py linux math
 %install
 install -D -m0755 build/tinypy %{buildroot}%{_bindir}/tinypy
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc *.txt examples
 %{_bindir}/tinypy

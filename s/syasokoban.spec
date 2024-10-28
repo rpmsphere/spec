@@ -21,15 +21,12 @@ getting stuck.
 
 %prep
 %setup -q
-%patch1 -p1 
-%patch2 -p1
+%patch 1 -p1 
+%patch 2 -p1
 sed -i '13i #include <unistd.h>' src/Main.cpp
 
 %build
 make DATADIR=%{_datadir}/%{name}/data/
-
-%clean 
-rm -rf $RPM_BUILD_ROOT
 
 %install
 rm -rf $RPM_BUILD_ROOT

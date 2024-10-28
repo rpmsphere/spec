@@ -19,7 +19,7 @@ SVG (Scalable Vector Graphics).
 %prep
 %define configfile svgmath.xml
 %setup -q -n SVGMath-%{version}
-%patch0
+%patch 0
 # Fix execution bit
 for i in LICENSE.txt PKG-INFO README*; do
  [ -e "$i" ] && %{__chmod} -x "$i"
@@ -60,9 +60,6 @@ python2 setup.py install \
 %{__install} -m 644 %{configfile} $RPM_BUILD_ROOT%{_sysconfdir}/%{name}/
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{python2_sitelib}/svgmath

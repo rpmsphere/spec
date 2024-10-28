@@ -36,9 +36,6 @@ install -D %SOURCE1 $RPM_BUILD_ROOT%_datadir/applications/%{name}.desktop
 install -D %SOURCE2 $RPM_BUILD_ROOT%_datadir/pixmaps/%{name}.png
 cp -r Examples $RPM_BUILD_ROOT%_datadir/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CONTRIBUTORS license.txt ChangeLog
 %{_bindir}/*

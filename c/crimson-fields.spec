@@ -1,11 +1,11 @@
-Name		: crimson-fields
-Version		: 0.5.3
-Release		: 1
-License		: GPLv2+
-Group		: Amusements/Games
-URL		: https://crimson.seul.org/
-Source		: https://crimson.seul.org/files/crimson-%{version}.tar.bz2
-Summary		: A hex-based tactical war game
+Name            : crimson-fields
+Version         : 0.5.3
+Release         : 1
+License         : GPLv2+
+Group           : Amusements/Games
+URL             : https://crimson.seul.org/
+Source          : https://crimson.seul.org/files/crimson-%{version}.tar.bz2
+Summary         : A hex-based tactical war game
 BuildRequires   : SDL-devel >= 1.1.5, SDL_ttf-devel
 BuildRequires   : gawk, zlib-devel
 
@@ -31,15 +31,12 @@ the original Battle Isle maps if you have a copy of the game.
 LDFLAGS="-Wl,--as-needed" \
 CFLAGS="$RPM_OPT_FLAGS" \
 CXXFLAGS="$RPM_OPT_FLAGS" %configure \
-	--enable-cfed --enable-bi2cf --enable-comet
+        --enable-cfed --enable-bi2cf --enable-comet
 %{__make} %{?_smp_flags}
 
 %install
 rm -rf "$RPM_BUILD_ROOT"
 make DESTDIR="$RPM_BUILD_ROOT" install
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files 
 %doc COPYING NEWS README* THANKS TODO music/COPYING.MUSIC

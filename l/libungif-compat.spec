@@ -1,13 +1,13 @@
-%define giflib_ver %(rpm -q --qf %{version} giflib-devel)
+#define giflib_ver %(rpm -q --qf %{version} giflib-devel)
 
-Summary:	Compatible package using giflib
-Name:		libungif-compat
-Version:	%{giflib_ver}
-Release:	1
-License:	MIT
-Group:		System Environment/Libraries
-URL:		https://www.sourceforge.net/projects/giflib/
-BuildRequires:	giflib-devel
+Summary:        Compatible package using giflib
+Name:           libungif-compat
+Version:        5.2.2
+Release:        1
+License:        MIT
+Group:          System Environment/Libraries
+URL:            https://www.sourceforge.net/projects/giflib/
+BuildRequires:  giflib-devel
 Provides:       libungif = %{version}-%{release}
 Obsoletes:      libungif <= %{version}-%{release}
 
@@ -16,10 +16,10 @@ libungif supported uncompressed GIFs while the Unisys LZW patent was in effect.
 It is the API and ABI compatible package using giflib.
 
 %package devel
-Summary:	Development tools for libungif library
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
-Requires:	giflib-devel
+Summary:        Development tools for libungif library
+Group:          Development/Libraries
+Requires:       %{name} = %{version}-%{release}
+Requires:       giflib-devel
 Provides:       libungif-devel = %{version}-%{release}
 Obsoletes:      libungif-devel <= %{version}-%{release}
 
@@ -48,5 +48,5 @@ ln -sf libungif.so.4 $RPM_BUILD_ROOT%{_libdir}/libungif.so
 %{_libdir}/lib*.so
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2.1
+* Sun May 26 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.2.2
 - Rebuilt for Fedora

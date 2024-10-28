@@ -6,9 +6,11 @@ License:        MIT
 URL:            https://github.com/Arkq/alock
 Source0:        %{name}-master.zip
 BuildRequires:  pam-devel
+BuildRequires:  libgcrypt-devel
 BuildRequires:  imlib2-devel
 BuildRequires:  libXcursor-devel
 BuildRequires:  libXpm-devel
+BuildRequires:  libXrender-devel
 BuildRequires:  xmlto
 BuildRequires:  xorg-x11-proto-devel
 BuildRequires:  xorg-x11-xbitmaps
@@ -37,9 +39,6 @@ autoreconf -ifv
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.gz
 #{_datadir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Mon Mar 25 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4.0git

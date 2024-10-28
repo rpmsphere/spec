@@ -10,10 +10,10 @@ Patch2:     fcConditions.xslt.patch
 Patch3:     conditionsInclude.xslt.patch   
 BuildArch:  noarch
 Requires:   conky
-Group:	    User Interface/X
+Group:      User Interface/X
 Requires:   xorg-x11-font-utils
 Requires:   libxslt
-%define fontdir	%{_datadir}/fonts/%{name}
+%define fontdir %{_datadir}/fonts/%{name}
 
 %description
 weather.sh is a simple bash script which is supposed to be called from conky.
@@ -22,13 +22,13 @@ The xml file is processed by different stylesheets.
 
 Authors:
 --------
-	Hardik Mehta <hard.mehta@gmail.com>
+        Hardik Mehta <hard.mehta@gmail.com>
 
 %prep
 %setup -q
-%patch1 -p0
-%patch2 -p0
-%patch3 -p0
+%patch 1 -p0
+%patch 2 -p0
+%patch 3 -p0
 echo %{fontdir}
 
 %build
@@ -50,9 +50,6 @@ install -m 0644 weather.ttf $RPM_BUILD_ROOT%{fontdir}
 /usr/bin/mkfontdir %{fontdir}
 /usr/bin/mkfontscale %{fontdir}
 /usr/bin/fc-cache -f %{fontdir} 
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README COPYING gpl.txt ChangeLog weatherInfo.xml

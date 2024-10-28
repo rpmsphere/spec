@@ -40,9 +40,6 @@ Agnelo de la Crotche (please_try_again) <agnelo@unixversal.com>
 %{__install} -m 644 conky.lua $RPM_BUILD_ROOT%{_sysconfdir}/conky
 %{__install} -m 644 conky.desktop $RPM_BUILD_ROOT%{_sysconfdir}/xdg/autostart
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING 
 %dir %{_sysconfdir}/conky
@@ -62,7 +59,7 @@ Agnelo de la Crotche (please_try_again) <agnelo@unixversal.com>
 - improved fs functions in conky.lua
 * Tue Sep 6 2011 Agnelo de la Crotche <agnelo@unixversal.com> 2.6
 - added function in conky.lua to modify update interval
-* Tue Sep 5 2011 Agnelo de la Crotche <agnelo@unixversal.com> 2.5.1
+* Mon Sep 5 2011 Agnelo de la Crotche <agnelo@unixversal.com> 2.5.1
 - changed default interval from 1 to 5s 
 - updated compositor
 * Mon Sep 5 2011 Agnelo de la Crotche <agnelo@unixversal.com> 2.5

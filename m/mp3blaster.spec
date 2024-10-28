@@ -20,9 +20,9 @@ streaming mp3 over HTTP.
 
 %prep
 %setup -q
-%patch1 -p1
+%patch 1 -p1
 #patch2 -p1
-%patch3 -p2
+%patch 3 -p2
 rm -fv -- src/getopt*
 sed -i 's|0-1, 0-1|128, 128|g' mpegsound/huffmantable.cc
 

@@ -1,13 +1,13 @@
-Name:		qbriscola
+Name:           qbriscola
 %define Uname QBriscola
-Summary:	Qt4 Italian card game Briscola
+Summary:        Qt4 Italian card game Briscola
 Version:        1.1svn.2
-Release:	8.1
-URL:		https://%{name}.sourceforge.net/
+Release:        8.1
+URL:            https://%{name}.sourceforge.net/
 Source:         %{name}-%{version}.tar.xz
-Patch0:		qbriscola_desktop.diff
-License:	GPL-3.0
-Group:		Amusements/Games/Board/Card
+Patch0:         qbriscola_desktop.diff
+License:        GPL-3.0
+Group:          Amusements/Games/Board/Card
 BuildRequires:  cmake
 BuildRequires:  pkgconfig(QtGui)
 BuildRequires:  pkgconfig(QtCore)
@@ -20,7 +20,7 @@ The game of the Briscola (Italian card-game) with Qt4 graphics.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 %__sed -i '\|DESTINATION \"share/icons\"|s|share/icons|share/pixmaps|' CMakeLists.txt
 
 %build

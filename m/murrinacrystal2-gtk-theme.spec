@@ -30,9 +30,6 @@ cp -a %{theme_name}* $RPM_BUILD_ROOT%{_datadir}/themes
 cp %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}Aqua/index.theme
 cp %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/themes/%{theme_name}Aqua
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/themes/%{theme_name}*
 

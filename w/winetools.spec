@@ -34,7 +34,7 @@ Authors:
 
 %prep
 %setup -q -n %{name}-%{version}-III
-%patch0 -p0
+%patch 0 -p0
 %{__cat} <<EOF >%{name}.desktop
 [Desktop Entry]
 Encoding=UTF-8
@@ -68,9 +68,6 @@ for i in $(ls *.po|cut -f1 -d.) ; do
   msgfmt $i.po -o %{buildroot}%{_datadir}/locale/$i/LC_MESSAGES/wt0.9.mo
 done
 cd ..
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc INSTALL.txt LICENSE.txt

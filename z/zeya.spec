@@ -1,13 +1,13 @@
 Name:           zeya
 Version:        0.5
 Release:        1
-Summary:	A web music server
+Summary:        A web music server
 Group:          Applications/Multimedia
-License:	GPLv3
+License:        GPLv3
 URL:            https://web.psung.name/zeya/
 Source0:        %{name}-%{version}.tar.gz
-BuildArch:	noarch
-Requires:	python-tag, mpg321, flac, vorbis-tools
+BuildArch:      noarch
+Requires:       python-tag, mpg321, flac, vorbis-tools
 
 %description
 Zeya is a streaming music server that brings your music to any computer
@@ -51,9 +51,6 @@ Categories=Application;AudioVideo;
 EOF
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(755,root,root) %{_bindir}/%{name}

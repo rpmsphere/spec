@@ -7,7 +7,7 @@ License:        GPLv3+
 URL:            https://programmer-art.org/projects/svg-utils
 Source0:        https://programmer-art.org/media/releases/svg-utils/%{name}-%{version}.tar.bz2
 BuildRequires:  python2
-BuildArch:	noarch
+BuildArch:      noarch
 
 %description
 This release of SVG-Utils includes scripts that can dump SVG information,
@@ -31,9 +31,6 @@ mkdir -p $RPM_BUILD_ROOT/usr
 ./install --prefix=$RPM_BUILD_ROOT/usr --lib-path=$RPM_BUILD_ROOT%{python2_sitelib} --no-symlinks
 
 #sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{python2_sitelib}/svg/*.py %{buildroot}/usr/lib/svg-utils/*.py
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/lib/%{name}

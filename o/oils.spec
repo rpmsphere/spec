@@ -25,9 +25,6 @@ install -Dm755 _bin/cxx-opt-sh/oils-for-unix %{buildroot}%{_bindir}/osh
 ln -s osh %{buildroot}%{_bindir}/ysh
 install -Dm644 doc/osh.1 %{buildroot}%{_mandir}/man1/osh.1
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc *.txt
 %{_bindir}/*

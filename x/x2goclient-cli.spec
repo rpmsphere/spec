@@ -31,9 +31,6 @@ rm -rf $RPM_BUILD_ROOT
 install -Dpm 0755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %doc AUTHORS COPYING LICENSE 

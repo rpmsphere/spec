@@ -9,10 +9,10 @@ Group: Games/Arcade
 License: GPL
 URL: https://ux.tank.googlepages.com/home
 Source: https://ux.tank.googlepages.com/uxtank%{version}.tar.xz
-BuildRequires:	gcc-c++
-BuildRequires:	ghostscript-core ImageMagick
-BuildRequires:	SDL-devel
-BuildRequires:	SDL_mixer-devel
+BuildRequires:  gcc-c++
+BuildRequires:  ghostscript-core ImageMagick
+BuildRequires:  SDL-devel
+BuildRequires:  SDL_mixer-devel
 BuildRequires: desktop-file-utils
 BuildRequires: libX11-devel
 BuildRequires: libXpm-devel
@@ -52,9 +52,6 @@ Exec=%{name}
 Icon=%{name}
 Categories=Game;ArcadeGame;
 EOF
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc COPYING.TXT 

@@ -7,7 +7,7 @@ Version:      1.3
 Release:      820.1
 Summary:      Motif file manager
 Source:       mfm1.3.tar.Z
-Patch:        mfm-1.3.dif
+Patch0:        mfm-1.3.dif
 BuildRequires: imake
 BuildRequires: libXpm-devel
 BuildRequires: motif-devel
@@ -21,7 +21,7 @@ Authors:
 
 %prep
 %setup -q -n mfm1.3
-%patch
+%patch 0
 touch mfm.man
 
 %build

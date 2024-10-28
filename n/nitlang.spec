@@ -43,9 +43,6 @@ echo "export NIT_DIR=%{_datadir}/%{_name}" > %{buildroot}/etc/profile.d/%{_name}
 %{_datadir}/%{_name}
 /etc/profile.d/%{_name}.sh
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Fri Nov 20 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8git
 - Rebuilt for Fedora

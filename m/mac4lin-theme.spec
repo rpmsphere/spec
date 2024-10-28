@@ -10,16 +10,16 @@
 %define soundsdir1 %{_datadir}/sounds/Mac4Lin
 %define emeralddir %{_datadir}/emerald/themes
 
-Summary: 	Look and feel of MacOS X on *nix systems
-Name:     	mac4lin-theme
-Version: 	1.0
-Release: 	10.1
-Source0: 	%{oname}-%{version}.tar.bz2
-Source1:	mcosx-wallpaper.xml
-License: 	LGPL
-Group: 		User Interface/Desktops
-URL:   	   	https://sourceforge.net/projects/mac4lin/
-BuildArch: 	noarch
+Summary:        Look and feel of MacOS X on *nix systems
+Name:           mac4lin-theme
+Version:        1.0
+Release:        10.1
+Source0:        %{oname}-%{version}.tar.bz2
+Source1:        mcosx-wallpaper.xml
+License:        LGPL
+Group:          User Interface/Desktops
+URL:            https://sourceforge.net/projects/mac4lin/
+BuildArch:      noarch
 
 %description
 Mac4Lin theme contains a full theme based in MC-OSX.
@@ -127,9 +127,6 @@ Directories=stereo
 [stereo]
 OutputProfile=stereo
 EOF
-
-%clean
-%__rm -rf %{buildroot}
 
 %post
 [ -x /usr/bin/gtk-update-icon-cache ] && gtk-update-icon-cache --quiet %{_datadir}/icons/Mac4Lin

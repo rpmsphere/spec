@@ -112,18 +112,18 @@ Also includes documents on the XView API (Application Programming Interface).
 # %{__perl} -pi -e 's@/usr/bin/X11/imake@/usr/bin/imake@g' $RPM_BUILD_DIR/%{name}-%{version}/imake
 mv $RPM_BUILD_DIR/olvwm-4.5 $RPM_BUILD_DIR/%{name}-%{version}/clients/olvwm-4.5
 mv $RPM_BUILD_DIR/xtoolplaces-1.7.1-1 $RPM_BUILD_DIR/%{name}-%{version}/clients/xtoolplaces-1.7.1-1
-%patch0 -p1 -b .orig
-#%patch1 -p1 -b .orig
-%patch2 -p1 -b .orig
-%patch3 -p1 -b .orig
-%patch4 -p1 -b .orig
-%patch5 -p1 -b .orig
-# %patch6 -p1 -b .orig
+%patch 0 -p1 -b .orig
+#%patch 1 -p1 -b .orig
+%patch 2 -p1 -b .orig
+%patch 3 -p1 -b .orig
+%patch 4 -p1 -b .orig
+%patch 5 -p1 -b .orig
+# %patch 6 -p1 -b .orig
 %ifarch x86_64
 #cp %{SOURCE53} config/host.def
 %endif
-%patch7 -p1
-%patch8 -p1
+%patch 7 -p1
+%patch 8 -p1
 sed -i 's|cfree|free|' lib/libxview/filter/filter.c lib/libxview/ttysw/cim_size.c
 mkdir -p build/include
 cp -a /usr/include/tirpc/* build/include/
@@ -131,8 +131,8 @@ sed -i 's|-shared|-shared -Wl,--allow-multiple-definition|' config/XView.rules
 sed -i -e 's|extern int|extern ssize_t|' -e 's|char *\*buf;|void *buf;|' -e 's|int *nbytes;|size_t nbytes;|' lib/libxview/notify/ndet_read.c
 
 %build
-rm -fr $RPM_BUILD_ROOT
-%{__mkdir} -p $RPM_BUILD_ROOT
+#rm -fr $RPM_BUILD_ROOT
+#%{__mkdir} -p $RPM_BUILD_ROOT
 OPENWINHOME=/usr/openwin LOCAL_LDFLAGS=-ltirpc SHLIBGLOBALSFLAGS=-Wl,--allow-multiple-definition bash Build-LinuxXView.bash libs clients olvwm contrib
 cd $RPM_BUILD_DIR/%{name}-%{version}/clients/xtoolplaces-1.7.1-1 && gmake -f Makefile.simple
 
@@ -235,47 +235,44 @@ find $RPM_BUILD_ROOT/usr/openwin/share/src/xview -name "*.o" -exec rm -fv {} \;
 
 %post
 if [ ! -f /etc/man.config ]; then
-	if [ -f /etc/man.conf ]; then
-		echo "MANPATH /usr/openwin/man" > /etc/man.conf
-		%{__chmod} 644 /etc/man.conf
-	fi
+        if [ -f /etc/man.conf ]; then
+                echo "MANPATH /usr/openwin/man" > /etc/man.conf
+                %{__chmod} 644 /etc/man.conf
+        fi
 else
-	if ! %{__grep} '^MANPATH /usr/openwin/man' /etc/man.config > /dev/null; then
-		echo "MANPATH /usr/openwin/man" >> /etc/man.config
-	fi
+        if ! %{__grep} '^MANPATH /usr/openwin/man' /etc/man.config > /dev/null; then
+                echo "MANPATH /usr/openwin/man" >> /etc/man.config
+        fi
 fi
 if [ ! -d /etc/ld.so.conf.d ]; then
-	if [ ! -f /etc/ld.so.conf ]; then
-		echo "/usr/openwin/lib" > /etc/ld.so.conf
-		%{__chmod} 644 /etc/ld.so.conf
-	else
-		if ! %{__grep} '^/usr/openwin/lib$' /etc/ld.so.conf > /dev/null; then
-			echo "/usr/openwin/lib" >> /etc/ld.so.conf
-		fi
-	fi
+        if [ ! -f /etc/ld.so.conf ]; then
+                echo "/usr/openwin/lib" > /etc/ld.so.conf
+                %{__chmod} 644 /etc/ld.so.conf
+        else
+                if ! %{__grep} '^/usr/openwin/lib$' /etc/ld.so.conf > /dev/null; then
+                        echo "/usr/openwin/lib" >> /etc/ld.so.conf
+                fi
+        fi
 fi
 
 
 %postun
 # Commented out for now
 if [ "1" = "0" ]; then
-	%{__grep} -v /usr/openwin/lib /etc/ld.so.conf > /etc/ld.so.conf.net
-	mv -f /etc/ld.so.conf.net /etc/ld.so.conf
-	%{__grep} -v /usr/openwin/man /etc/man.config > /etc/man.config.net
-	mv -f /etc/man.config.net /etc/man.config
+        %{__grep} -v /usr/openwin/lib /etc/ld.so.conf > /etc/ld.so.conf.net
+        mv -f /etc/ld.so.conf.net /etc/ld.so.conf
+        %{__grep} -v /usr/openwin/man /etc/man.config > /etc/man.config.net
+        mv -f /etc/man.config.net /etc/man.config
 fi
 
 
 %post clients
 # Install stub for OWacomp menu
 if [ ! -f /usr/openwin/lib/openwin-menu-OWacomp ]; then
-	if [ -f /usr/openwin/lib/openwin-menu-OWacomp-stub ]; then
-		%{__install} -m0644 /usr/openwin/lib/openwin-menu-OWacomp-stub /usr/openwin/lib/openwin-menu-OWacomp
-	fi
+        if [ -f /usr/openwin/lib/openwin-menu-OWacomp-stub ]; then
+                %{__install} -m0644 /usr/openwin/lib/openwin-menu-OWacomp-stub /usr/openwin/lib/openwin-menu-OWacomp
+        fi
 fi
-
-%clean 
-rm -fr $RPM_BUILD_ROOT
 
 %files
 %attr(0755,root,root) /etc/X11/gdm/Sessions/OpenWin

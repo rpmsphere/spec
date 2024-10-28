@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/wang
+%define fontdir %{_datadir}/fonts/wang
 
 Summary: H.T.Wang Free Fonts
 Name: wang-fonts
@@ -31,9 +31,6 @@ Free Chinese TrueType fonts 2004 donated by Prof. Hann-Tzong WANG. (Extra)
 rm -rf %{buildroot}
 install -d %{buildroot}%{fontdir}
 install -m644 *.ttf %{buildroot}%{fontdir}
-
-%clean
-rm -rf %{buildroot}
 
 %post
 /usr/bin/fc-cache 2> /dev/null

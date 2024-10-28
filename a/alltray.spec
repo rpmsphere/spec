@@ -5,7 +5,7 @@ Summary:        Dock any application in the tray
 License:        GPLv2+
 URL:            https://github.com/bill-auger/alltray
 #Source0:        https://launchpad.net/alltray/old-maintenance/%{version}/+download/%{name}-%{version}.tar.gz
-Source0:	%{name}-master.zip
+Source0:        %{name}-master.zip
 BuildRequires:  gcc
 BuildRequires:  desktop-file-utils
 BuildRequires:  gtk2-devel
@@ -13,6 +13,7 @@ BuildRequires:  GConf2-devel
 BuildRequires:  gdk-pixbuf2-xlib-devel
 BuildRequires:  libgtop2-devel
 BuildRequires:  libwnck-devel
+BuildRequires:  libXpm-devel
 
 %description
 With AllTray you can dock any application without a native tray icon into the

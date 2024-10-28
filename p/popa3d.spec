@@ -11,22 +11,22 @@ Group:          Networking/Mail
 Summary:        Tiny POP3 daemon
 URL:            https://www.openwall.com/popa3d/
 Source0:        %name-%version.tar.gz
-Source1:	popa3d-xinet
-Source2:	popa3d-pam
-Patch0:		popa3d-params.patch.bz2
-Patch1:		popa3d-0.6.4.patch.bz2
-Patch2:		popa3d-maildir.patch.bz2
-Patch3:		popa3d-vname.patch.bz2
+Source1:        popa3d-xinet
+Source2:        popa3d-pam
+Patch0:         popa3d-params.patch.bz2
+Patch1:         popa3d-0.6.4.patch.bz2
+Patch2:         popa3d-maildir.patch.bz2
+Patch3:         popa3d-vname.patch.bz2
 
 %description
 popa3d is a tiny POP3 daemon designed with security as the primary goal.
 
 %prep
 %setup -q
-%patch0 -p0 -b .popa3d-params
-%patch1 -p0 -b .popa3d-log_ip
-%patch2 -p0 -b .popa3d-maildir
-%patch3 -p0 -b .popa3d-vname
+%patch 0 -p0 -b .popa3d-params
+%patch 1 -p0 -b .popa3d-log_ip
+%patch 2 -p0 -b .popa3d-maildir
+%patch 3 -p0 -b .popa3d-vname
 
 %build
 %{__make} LIBS="-lpam -lcrypt -Wl,--allow-multiple-definition"
@@ -39,9 +39,6 @@ rm -rf "$RPM_BUILD_ROOT"
 %__install -d $RPM_BUILD_ROOT%_sysconfdir/pam.d && \
 %__install -m 644 %{SOURCE2} $RPM_BUILD_ROOT%_sysconfdir/pam.d/popa3d
 %makeinstall PREFIX=$RPM_BUILD_ROOT SBINDIR=$RPM_BUILD_ROOT%{_sbindir} MANDIR=$RPM_BUILD_ROOT%{_mandir}
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %pre
 /usr/sbin/groupadd -r -f popa3d

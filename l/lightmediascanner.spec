@@ -1,14 +1,14 @@
 %global __os_install_post %{nil}
 
-Summary:	Lightweight media scanner
-Name:		lightmediascanner
-Version:	0.4.1.0
-Release:	8.1
-License: 	LGPLv2
-Group: 		Applications/Multimedia
-Source:		https://garage.maemo.org/frs/download.php/8852/%{name}-%{version}.tar.bz2
-URL:		https://lms.garage.maemo.org/
-BuildRequires:	sqlite-devel, libogg-devel, libvorbis-devel, flac-devel, libmp4v2-devel
+Summary:        Lightweight media scanner
+Name:           lightmediascanner
+Version:        0.4.1.0
+Release:        8.1
+License:        LGPLv2
+Group:          Applications/Multimedia
+Source:         https://garage.maemo.org/frs/download.php/8852/%{name}-%{version}.tar.bz2
+URL:            https://lms.garage.maemo.org/
+BuildRequires:  sqlite-devel, libogg-devel, libvorbis-devel, flac-devel, libmp4v2-devel
 
 %description
 Lightweight library to scan media, parsing and storing into SQLite3 database.
@@ -36,9 +36,6 @@ make
 %install
 rm -fr $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING* README

@@ -1,27 +1,27 @@
-%define		upstream_name %{name}.x
-%define		mpdm_ver 2.1.7
-%define		mpsl_ver 2.2.2
+%define         upstream_name %{name}.x
+%define         mpdm_ver 2.1.7
+%define         mpsl_ver 2.2.2
 
-Name:		mp-5
-Version:	5.2.13
-Release:	5.1
-Summary:	Minimum-Profit Text Editor
-Group:		Editors
-License:	GPLv2
-URL:		https://triptico.com/software/mp.html
-Source0:	https://github.com/angelortega/mp-5.x/archive/%{version}/mp-%{version}.tar.gz
-Source1:	https://github.com/angelortega/mpdm/archive/%{mpdm_ver}/mpdm-%{mpdm_ver}.tar.gz
-Source2:	https://github.com/angelortega/mpsl/archive/%{mpsl_ver}/mpsl-%{mpsl_ver}.tar.gz
-Patch0:		config.sh-qt5.patch
-BuildRequires:	bison
-BuildRequires:	flex
-BuildRequires:	byacc
-#BuildRequires:	mp_doccer
-BuildRequires:	pcre-devel
-BuildRequires:	qt5-qtbase-devel
-BuildRequires:	ncurses-devel
-#BuildRequires:	grutatxt
-BuildRequires:	glibc-devel
+Name:           mp-5
+Version:        5.2.13
+Release:        5.1
+Summary:        Minimum-Profit Text Editor
+Group:          Editors
+License:        GPLv2
+URL:            https://triptico.com/software/mp.html
+Source0:        https://github.com/angelortega/mp-5.x/archive/%{version}/mp-%{version}.tar.gz
+Source1:        https://github.com/angelortega/mpdm/archive/%{mpdm_ver}/mpdm-%{mpdm_ver}.tar.gz
+Source2:        https://github.com/angelortega/mpsl/archive/%{mpsl_ver}/mpsl-%{mpsl_ver}.tar.gz
+Patch0:         config.sh-qt5.patch
+BuildRequires:  bison
+BuildRequires:  flex
+BuildRequires:  byacc
+#BuildRequires: mp_doccer
+BuildRequires:  pcre-devel
+BuildRequires:  qt5-qtbase-devel
+BuildRequires:  ncurses-devel
+#BuildRequires: grutatxt
+BuildRequires:  glibc-devel
 
 %description
 A text editor for programmers including the following features:
@@ -60,12 +60,12 @@ mv mpdm-%{mpdm_ver} mpdm
 %build
 export CPP="g++ -std=gnu++11"
 ./config.sh \
-	--prefix=%{_prefix} \
-	--with-moc=%{_qt5_bindir}/moc \
-	--withouot-qt4 \
-	--without-gtk \
-	--without-win32 \
-	--with-pcre
+        --prefix=%{_prefix} \
+        --with-moc=%{_qt5_bindir}/moc \
+        --withouot-qt4 \
+        --without-gtk \
+        --without-win32 \
+        --with-pcre
 %make_build
 
 %install

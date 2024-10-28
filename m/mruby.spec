@@ -47,9 +47,6 @@ done
 install -d "%{buildroot}%{_includedir}"
 cp -a include/* "%{buildroot}%{_includedir}/"
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
 %doc AUTHORS LEGAL NEWS *.md LICENSE doc/*
 %{_bindir}/mirb

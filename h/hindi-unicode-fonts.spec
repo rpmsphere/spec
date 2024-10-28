@@ -1,4 +1,4 @@
-%define	fontdir	%{_datadir}/fonts/hindi-unicode
+%define fontdir %{_datadir}/fonts/hindi-unicode
 
 Name:           hindi-unicode-fonts
 Version:        2.04

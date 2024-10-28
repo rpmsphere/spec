@@ -7,7 +7,7 @@ License: GPL
 URL: https://www.whycanticonnect.com/
 Source0: https://downloads.sourceforge.net/project/%{name}/%{name}-%{version}.tar.gz
 BuildRequires: desktop-file-utils
-BuildRequires: wxGTK3-devel
+BuildRequires: wxGTK-devel
 BuildRequires: openssl-devel
 
 %description

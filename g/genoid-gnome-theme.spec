@@ -37,9 +37,6 @@ cd %{buildroot}%{_datadir}/themes/%{theme_name}
 rm -f gtk-2.0/panel/*.png~ metacity-1/*.xml~
 cp %{SOURCE1} %{buildroot}%{_datadir}/themes/%{theme_name}/index.theme
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_datadir}/themes/%{theme_name}
 %{_datadir}/icons/%{theme_name}

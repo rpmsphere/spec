@@ -31,9 +31,6 @@ mkdir -p %{buildroot}%{_datadir}/applications
 mv %{buildroot}%{_datadir}/gnome/apps/Utilities/sanduhr.desktop %{buildroot}%{_datadir}/applications
 sed -i -e 's|Icon=|Icon=/usr/share/pixmaps/|' -e '8i Categories=Utility;' %{buildroot}%{_datadir}/applications/sanduhr.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc AUTHORS COPYING ChangeLog NEWS README TODO
 %{_bindir}/*

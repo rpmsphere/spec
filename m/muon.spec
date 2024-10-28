@@ -25,9 +25,6 @@ install -Dm755 bootstrap/mu %{buildroot}%{_bindir}/%{name}
 install -d %{buildroot}%{_datadir}/%{name}
 cp -a examples lib %{buildroot}%{_datadir}/%{name}
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc LICENSE *.md
 %{_bindir}/%{name}

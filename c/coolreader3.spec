@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
-%define		shortname	cr3
+%define         shortname       cr3
 
-Name:		coolreader3
-Version:	3.0.56
-Release:	19.1
-Summary:	Free e-book reader
-Group:		Books/Literature
-License:	GPL
-Source:		%{shortname}_%{version}.orig.tar.gz
-URL:		https://coolreader.org/e-index.htm
-BuildRequires:	libpng-devel
-BuildRequires:	gcc-c++, qt4-devel, cmake, libjpeg-devel, fontconfig-devel, zlib-devel
+Name:           coolreader3
+Version:        3.0.56
+Release:        19.1
+Summary:        Free e-book reader
+Group:          Books/Literature
+License:        GPL
+Source:         %{shortname}_%{version}.orig.tar.gz
+URL:            https://coolreader.org/e-index.htm
+BuildRequires:  libpng-devel
+BuildRequires:  gcc-c++, qt4-devel, cmake, libjpeg-devel, fontconfig-devel, zlib-devel
 
 %description
 CoolReader is fast and small cross-platform XML/CSS based E-Book reader for desktops
@@ -42,9 +42,6 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %{_datadir}/applications/%{shortname}.desktop
 %{_datadir}/doc/%{shortname}/*
 %{_mandir}/man1/%{shortname}.*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Jun 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.56

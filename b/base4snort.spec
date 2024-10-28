@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 %define real_name base
 
-BuildArch:	noarch
+BuildArch:      noarch
 Name:           base4snort
 Group:          Applications/Publishing
 BuildRequires:  httpd-devel, fedora-logos-httpd
@@ -10,9 +10,8 @@ Requires:       perl-IP-Country, perl-NetPacket
 Requires:       php-pecl-geoip
 Version:        1.4.5
 Release:        21.1
-%define apxs    /usr/bin/apxs
-%define	apache_libexecdir	%(%{apxs} -q LIBEXECDIR)
-%define	apache_sysconfdir	%(%{apxs} -q SYSCONFDIR)
+%define apache_libexecdir       %{_libdir}/httpd/modules
+%define apache_sysconfdir       /etc/httpd/confku
 %define base_dir /var/www/base
 %define real_name base
 URL:            https://base.secureideas.net/

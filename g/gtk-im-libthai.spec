@@ -25,9 +25,6 @@ make
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %post
 /sbin/ldconfig
 gtk-query-immodules-2.0 > /etc/gtk-2.0/gtk.immodules
@@ -44,7 +41,7 @@ gtk-query-immodules-2.0 > /etc/gtk-2.0/gtk.immodules
 %changelog
 * Mon Aug 13 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.1
 - Rebuilt for Fedora
-* Tue Jan 8 2004 Supphachoke Suntiwichaya <mrchoke@opentle.org> 0.1.1-2_02tle
+* Thu Jan 8 2004 Supphachoke Suntiwichaya <mrchoke@opentle.org> 0.1.1-2_02tle
 - Patch KeyPad from CVS
 * Wed Dec 24 2003 Supphachoke Suntiwichaya <mrchoke@opentle.org> 0.1.1-2_01tle
 - Build from CVS 24/12/03, Fixed bug numlock and caplock

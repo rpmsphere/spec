@@ -1,13 +1,13 @@
 Name:           google-appengine-python
-Version:	1.6.1
-Release:	36.1
-License:	Apache-2
-Summary:	Google App Engine SDK for Python
-URL:		https://code.google.com/intl/en/appengine
-Group:		Development/Tools/Other
-Source:		%{name}-%{version}.tar.bz2
-Source2:	setpath.sh
-BuildArch:	noarch
+Version:        1.6.1
+Release:        36.1
+License:        Apache-2
+Summary:        Google App Engine SDK for Python
+URL:            https://code.google.com/intl/en/appengine
+Group:          Development/Tools/Other
+Source:         %{name}-%{version}.tar.bz2
+Source2:        setpath.sh
+BuildArch:      noarch
 
 %description
 Google App Engine enables you to build and host web apps on the same systems
@@ -16,10 +16,10 @@ deployment; simple administration, with no need to worry about hardware,
 patches or backups; and effortless scalability.
 
 %package lang
-License:	Apache-2
-Summary:	Google App Engine SDK for Python
-Group:		Development/Tools/Other
-Requires:	%{name} = %{version}
+License:        Apache-2
+Summary:        Google App Engine SDK for Python
+Group:          Development/Tools/Other
+Requires:       %{name} = %{version}
 
 %description lang
 Google App Engine enables you to build and host web apps on the same systems
@@ -28,10 +28,10 @@ deployment; simple administration, with no need to worry about hardware,
 patches or backups; and effortless scalability.
 
 %package -n %{name}-yaml-devel
-License:	Apache-2
-Summary:	Google App Engine SDK for Python
-Group:		Development/Tools/Other
-Requires:	%{name} = %{version}
+License:        Apache-2
+Summary:        Google App Engine SDK for Python
+Group:          Development/Tools/Other
+Requires:       %{name} = %{version}
 
 %description -n %{name}-yaml-devel
 Google App Engine enables you to build and host web apps on the same systems
@@ -81,9 +81,6 @@ ln -sf /opt/%{name}/appcfg.py $RPM_BUILD_ROOT%{_bindir}
 %find_lang django %no_lang_C %{name}
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}/opt/google-appengine-python/*.py %{buildroot}/opt/google-appengine-python/tools/*.py
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_sysconfdir}/profile.d/%{name}.sh

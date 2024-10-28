@@ -5,7 +5,7 @@ Release:   8.1
 License:   GPL
 Group:     Development/Libraries
 Source:    %{name}-%{version}.tar.bz2
-Patch:     %{name}.patch
+Patch0:     %{name}.patch
 URL:       https://members.xoom.com/stropea/setedit.html
 BuildRequires: gcc-c++
 
@@ -23,7 +23,7 @@ readable" instead of "human readable".
 
 %prep
 %setup -q -n libmigdb
-%patch -p1
+%patch 0 -p1
 
 %build
 libtoolize
@@ -40,9 +40,6 @@ rmdir $RPM_BUILD_ROOT/usr/local
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_libdir}/%{name}.so.*

@@ -1,18 +1,18 @@
-Summary:	A 3D adventure and roleplaying game
-Name:		balazar
-Version:	0.3.4
-Release:	1
-License:	GPL
-Group:		Amusements/Games
-Source:		https://download.gna.org/balazar/Balazar-%version.tar.bz2
-Source10:	%{name}-16.png
-Source11:	%{name}-32.png
-Source12:	%{name}-48.png
-URL:		https://home.gna.org/oomadness/en/balazar/
+Summary:        A 3D adventure and roleplaying game
+Name:           balazar
+Version:        0.3.4
+Release:        1
+License:        GPL
+Group:          Amusements/Games
+Source:         https://download.gna.org/balazar/Balazar-%version.tar.bz2
+Source10:       %{name}-16.png
+Source11:       %{name}-32.png
+Source12:       %{name}-48.png
+URL:            https://home.gna.org/oomadness/en/balazar/
 # or https://balazar.nekeme.net/
-BuildRequires:	python2-devel, SDL-devel
-Requires:	soya, python-imaging, pyogg, pyvorbis, pyopenal
-Requires:	tofu, cerealizer
+BuildRequires:  python2-devel, SDL-devel
+Requires:       soya, python-imaging, pyogg, pyvorbis, pyopenal
+Requires:       tofu, cerealizer
 #pyrex=0.9.3, cal3d=0.9.1
 BuildArch: noarch
 
@@ -48,9 +48,6 @@ Type=Application
 StartupNotify=true
 Categories=Game;AdventureGame;
 EOF
-
-%clean
-rm -Rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS README LICENSE

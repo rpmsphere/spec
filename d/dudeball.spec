@@ -33,9 +33,6 @@ cp %{SOURCE1} Makefile
 %{__rm} -rf %{buildroot}
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}
@@ -45,5 +42,5 @@ cp %{SOURCE1} Makefile
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.4
 - Rebuilt for Fedora
-* Mon May 22 2012 Chris Lin <chris@ossii.com.tw> 2.3.4-1
+* Tue May 22 2012 Chris Lin <chris@ossii.com.tw> 2.3.4-1
 - first

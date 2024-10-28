@@ -58,9 +58,6 @@ Type=Application
 Categories=Education;Science;Math;
 EOF
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README
 %{_bindir}/*

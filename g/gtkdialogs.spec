@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		gtkdialogs
-Version:	2.2
-Release:	11.1
-Source:		%{name}-%{version}.tar.bz2
-Patch0:		gtkdialogs-2.2-fix-str-fmt.patch
-License:	GPL
-Summary:	Ready-to-use GTK+ dialog boxes
-Provides:	gchooser gmessage xtest
-Group:		System/Configuration/Packaging
-BuildRequires:	gtk2-devel
+Name:           gtkdialogs
+Version:        2.2
+Release:        11.1
+Source:         %{name}-%{version}.tar.bz2
+Patch0:         gtkdialogs-2.2-fix-str-fmt.patch
+License:        GPL
+Summary:        Ready-to-use GTK+ dialog boxes
+Provides:       gchooser gmessage xtest
+Group:          System/Configuration/Packaging
+BuildRequires:  gtk2-devel
 
 %description
 Ready-to-use GTK+ dialog boxes:
@@ -21,7 +21,7 @@ Ready-to-use GTK+ dialog boxes:
 
 %prep
 %setup -q -n %{name}
-%patch0 -p0
+%patch 0 -p0
 
 %build
 make
@@ -29,9 +29,6 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 make prefix=$RPM_BUILD_ROOT install
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_bindir}/*

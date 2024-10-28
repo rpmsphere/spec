@@ -5,7 +5,7 @@ Release: 1
 License: GPL
 Group: Graphics
 Source: https://electricsheep.org/%{name}-%{version}.tar.gz
-Patch: %{name}-%{version}.patch
+Patch0: %{name}-%{version}.patch
 URL: https://electricsheep.org
 Requires: xscreensaver curl flam3 mpeg2dec
 BuildRequires: expat libpng12-devel libjpeg-devel libX11-devel
@@ -16,7 +16,7 @@ sleeping computers from all over the internet.
 
 %prep
 %setup
-%patch -p1
+%patch 0 -p1
 
 %build
 %configure
@@ -38,9 +38,6 @@ make DESTDIR=$RPM_BUILD_ROOT SCREENSAVER_DATADIR=/etc/xscreensaver install
 %exclude %{_libdir}/*
 %{_datadir}/electricsheep/electricsheep*.png
 /etc/xscreensaver/electricsheep.xml
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.8

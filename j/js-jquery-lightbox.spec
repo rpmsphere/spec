@@ -24,9 +24,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/javascript/jquery-lightbox
 cp -a . $RPM_BUILD_ROOT%{_datadir}/javascript/jquery-lightbox
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_datadir}/javascript/jquery-lightbox
 

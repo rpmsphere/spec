@@ -1,28 +1,28 @@
 %global __os_install_post %{nil}
-%define		libname cxxx
+%define         libname cxxx
 
-Name:		xplorer
-Version:	0.10.0
-Release:	19.1
-Source:		https://sourceforge.net/projects/cxplorer/files/xplorer/0.10.0/%{name}-%{version}.tar.xz
-URL:		https://cxplorer.sourceforge.net
-Group:		File tools 
-License:	GPL
-Vendor:		Gerhard Kräuter <gkraeuter@users.sourceforge.net>
-Summary:	A filemanager for X-Windows with fast and accurate file type detection
-Requires:	lib%{libname} zlib bzip2-libs
-BuildRequires:	gcc-c++ autoconf automake glibc-devel zlib-devel bzip2-devel libstdc++-devel libX11-devel libXext-devel libXrender-devel expat-devel fontconfig-devel freetype-devel giflib-devel libjpeg-devel libpng-devel libtiff-devel
+Name:           xplorer
+Version:        0.10.0
+Release:        19.1
+Source:         https://sourceforge.net/projects/cxplorer/files/xplorer/0.10.0/%{name}-%{version}.tar.xz
+URL:            https://cxplorer.sourceforge.net
+Group:          File tools 
+License:        GPL
+Vendor:         Gerhard Kräuter <gkraeuter@users.sourceforge.net>
+Summary:        A filemanager for X-Windows with fast and accurate file type detection
+Requires:       lib%{libname} zlib bzip2-libs
+BuildRequires:  gcc-c++ autoconf automake glibc-devel zlib-devel bzip2-devel libstdc++-devel libX11-devel libXext-devel libXrender-devel expat-devel fontconfig-devel freetype-devel giflib-devel libjpeg-devel libpng-devel libtiff-devel
 
-%package	-n %{libname}
-Group:		Development/Application
-Summary:	C++X, a shared library written from scratch.
-Provides:	lib%{libname}
+%package        -n %{libname}
+Group:          Development/Application
+Summary:        C++X, a shared library written from scratch.
+Provides:       lib%{libname}
 
-%package	-n %{libname}-devel
-Group:		Development/Application
-Summary:	C++X development package.
-Requires:	lib%{libname}
-BuildRequires:	gcc-c++ xorg-x11-proto-devel zlib-devel autoconf automake
+%package        -n %{libname}-devel
+Group:          Development/Application
+Summary:        C++X development package.
+Requires:       lib%{libname}
+BuildRequires:  gcc-c++ xorg-x11-proto-devel zlib-devel autoconf automake
 
 %description
 Xplorer is a filemanager for POSIX conformant operating systems using the X-Window-System (X11).
@@ -35,13 +35,13 @@ applications using C++X. Until then, C++X is only available as part of the Xplor
 One goal of C++X is to minimize dependencies on other programs/libraries, Xplorer should run on
 every POSIX box with a working X-Window-System.
 
-%description	-n %{libname}
+%description    -n %{libname}
 C++X and Xplorer are developed in parallel at present, but in the future there will be other
 applications using C++X. Until then, C++X is only available as part of the Xplorer package.
 C++X has built-in support for internationalization. English, German and Spanish language is offered
 at the moment. The tool intlize needed to create translations is located at https://intlize.sourceforge.net.
 
-%description	-n %{libname}-devel
+%description    -n %{libname}-devel
 C++X development package.
 
 %prep
@@ -62,9 +62,6 @@ autoreconf -ifv
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING INSTALL README

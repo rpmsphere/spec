@@ -27,9 +27,6 @@ https://acx100.erley.org/acx_fw/acx1xx.htm
 %{__install} -p -m 0644 %{SOURCE1} %{buildroot}/lib/firmware/tiacx100usb
 
 
-%clean
-%{__rm} -rf %{buildroot}
-
 
 %files
 /lib/firmware/tiacx100

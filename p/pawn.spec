@@ -40,9 +40,6 @@ install -m644 include/* %{buildroot}%{_includedir}/%{name}
 %{_bindir}/*
 %{_includedir}/*
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.6131
 - Rebuilt for Fedora

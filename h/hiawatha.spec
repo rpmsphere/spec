@@ -1,21 +1,21 @@
 %global __os_install_post %{nil}
 
 
-Summary:	An advanced and secure webserver for Unix
-Name:		hiawatha
-Version:	10.12
-Release:	1
-Source0:	https://www.hiawatha-webserver.org/files/%{name}-%{version}.tar.gz
-Source1:	%{name}-sysvscript
-License:	GPLv2+
-Group:		System Environment/Daemons
-URL:		https://www.hiawatha-webserver.org/
-BuildRequires:	libxml2-devel
+Summary:        An advanced and secure webserver for Unix
+Name:           hiawatha
+Version:        10.12
+Release:        1
+Source0:        https://www.hiawatha-webserver.org/files/%{name}-%{version}.tar.gz
+Source1:        %{name}-sysvscript
+License:        GPLv2+
+Group:          System Environment/Daemons
+URL:            https://www.hiawatha-webserver.org/
+BuildRequires:  libxml2-devel
 BuildRequires:  libxslt-devel
 BuildRequires:  mbedtls-devel
-#BuildRequires:	polarssl-devel
-BuildRequires:	cmake
-BuildRequires:	pkcs11-helper-devel
+#BuildRequires: polarssl-devel
+BuildRequires:  cmake
+BuildRequires:  pkcs11-helper-devel
 
 %description
 Hiawatha is an advanced and secure webserver for Unix. It has been written
@@ -29,17 +29,17 @@ It has of course also thoroughly been checked and tested for buffer overflows.
 #sed -i '/^\tpolarssl/d' CMakeFiles.txt
 
 %build
-%cmake	-DENABLE_CHROOT:BOOL=ON \
-	-DENABLE_MONITOR:BOOL=ON \
-	-DUSE_PKCS11_HELPER_LIBRARY:BOOL=ON \
-	-DUSE_SYSTEM_MBEDTLS=ON \
-	-DCMAKE_SKIP_RPATH:BOOL=OFF \
-	-DCMAKE_INSTALL_LOCALSTATEDIR:PATH=/var \
-	-DCMAKE_INSTALL_PREFIX:PATH="/usr" \
-	-DCMAKE_INSTALL_BINDIR:PATH=%{_bindir} \
-	-DCMAKE_INSTALL_SBINDIR:PATH=%{_sbindir} \
-	-DCMAKE_INSTALL_SYSCONFDIR:PATH=%{_sysconfdir} \
-	-DCMAKE_INSTALL_MANDIR:PATH=%{_mandir}
+%cmake  -DENABLE_CHROOT:BOOL=ON \
+        -DENABLE_MONITOR:BOOL=ON \
+        -DUSE_PKCS11_HELPER_LIBRARY:BOOL=ON \
+        -DUSE_SYSTEM_MBEDTLS=ON \
+        -DCMAKE_SKIP_RPATH:BOOL=OFF \
+        -DCMAKE_INSTALL_LOCALSTATEDIR:PATH=/var \
+        -DCMAKE_INSTALL_PREFIX:PATH="/usr" \
+        -DCMAKE_INSTALL_BINDIR:PATH=%{_bindir} \
+        -DCMAKE_INSTALL_SBINDIR:PATH=%{_sbindir} \
+        -DCMAKE_INSTALL_SYSCONFDIR:PATH=%{_sysconfdir} \
+        -DCMAKE_INSTALL_MANDIR:PATH=%{_mandir}
 %cmake_build
 
 %install

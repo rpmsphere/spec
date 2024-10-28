@@ -15,7 +15,7 @@ This program is very simple, because it is part of another software.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch 0 -p1
 
 %build
 #%__autoreconf
@@ -42,9 +42,6 @@ Type=Application
 EOF
 
 install -D -m 644 %SOURCE1 %buildroot%_datadir/pixmaps/uvcview.png
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files -f %name.lang
 %_bindir/%name

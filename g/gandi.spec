@@ -27,9 +27,6 @@ rst2man --no-generator gandicli.man.rst > gandi.1
 install -d -m 0755 %{buildroot}/usr/share/man/man1
 install -m 0644 gandi.1 %{buildroot}/usr/share/man/man1
 
-%clean
-rm -r %{buildroot}
-
 %files
 %{_bindir}/gandi
 %{_mandir}/man1/gandi.1.*

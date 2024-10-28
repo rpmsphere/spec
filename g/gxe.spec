@@ -36,9 +36,6 @@ make
 cd %{buildroot}%{_bindir}
 rename x xe xbc xci xcv xdc xdd xfc xff xfg xpe xprint xts
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/*
 %{_datadir}/help/gxe

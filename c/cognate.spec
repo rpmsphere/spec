@@ -31,9 +31,6 @@ install -Dm755 cognac %{buildroot}%{_bindir}/cognac
 %doc LICENSE *.md
 %{_bindir}/cognac
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Oct 22 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.20230117
 - Rebuilt for Fedora

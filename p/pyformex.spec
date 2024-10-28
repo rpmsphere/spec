@@ -31,9 +31,6 @@ echo 'Categories=Development;' >> $RPM_BUILD_ROOT%{_datadir}/applications/%{name
 
 sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/*
 %{_datadir}/applications/*

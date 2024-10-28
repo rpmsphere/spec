@@ -11,7 +11,7 @@ URL:                https://code.google.com/p/delaboratory/
 Group:              Productivity/Graphics/Other
 License:            GPL-3.0
 BuildRequires:      libpng-devel
-BuildRequires:      wxGTK3-devel
+BuildRequires:      wxGTK-devel
 BuildRequires:      libxml2-devel
 BuildRequires:      libtiff-devel
 BuildRequires:      gcc-c++ make glibc-devel pkgconfig
@@ -41,9 +41,6 @@ rm -rf "$RPM_BUILD_ROOT"
 install -D -m0755 delaboratory $RPM_BUILD_ROOT%{_bindir}/delaboratory
 install -D -m0644 "%{SOURCE1}" $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
 install -D -m0644 "%{SOURCE2}" $RPM_BUILD_ROOT%{_datadir}/pixmaps/%{name}.png
-
-%clean
-rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc COPYING README

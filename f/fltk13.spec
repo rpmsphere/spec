@@ -1,24 +1,24 @@
-%global		snap r9671
+%global         snap r9671
 
-Summary:	C++ user interface toolkit
-Name:		fltk13
-Version:	1.3.0
-Release:	15.1
+Summary:        C++ user interface toolkit
+Name:           fltk13
+Version:        1.3.0
+Release:        15.1
 # see COPYING (or https://www.fltk.org/COPYING.php ) for exceptions details
-License:	LGPLv2+ with exceptions	
-Group:		System Environment/Libraries
-URL:		https://www.fltk.org/
+License:        LGPLv2+ with exceptions 
+Group:          System Environment/Libraries
+URL:            https://www.fltk.org/
 %if "%{?snap:1}" == "1"
 Source0:        https://ftp.easysw.com/pub/fltk/snapshots/fltk-1.3.x-%{snap}.tar.bz2
 %else
-Source0:	https://ftp.easysw.com/pub/fltk/%{version}%{?pre}/fltk-%{version}%{?pre}-source.tar.gz
+Source0:        https://ftp.easysw.com/pub/fltk/%{version}%{?pre}/fltk-%{version}%{?pre}-source.tar.gz
 %endif
 Source1: fltk-config.sh
 ## FIXME/TODO: upstream these asap -- Rex
-Patch1:        	fltk-1.1.9-fltk_config.patch 
+Patch1:         fltk-1.1.9-fltk_config.patch 
 # libfltk_gl.so had undefined symbols
-Patch3: 	fltk-1.1.x-r5750-undefined.patch
-Patch5: 	fltk-1.1.8-fluid_desktop.patch
+Patch3:         fltk-1.1.x-r5750-undefined.patch
+Patch5:         fltk-1.1.8-fluid_desktop.patch
 Patch8:         fltk-1.3.0-rh708185.patch
 # https://www.fltk.org/str.php?L2599
 Patch9:         fltk-1_v4.3.x-keyboard-x11.patch
@@ -94,22 +94,22 @@ Requires: %{name}-devel
 %setup -q  -n fltk-%{version}%{?pre}
 %endif
 
-%patch1 -p1 -b .fltk_config
-%patch3 -p1 -b .undefined
-%patch5 -p1 -b .fluid_desktop
-%patch8 -p1 -b .rh708185
-%patch9 -p1 -b .deadkeys
-%patch10 -p1 -b .clipboard1
-%patch11 -p1 -b .clipboard2
-%patch12 -p1 -b .clipboard3
-%patch13 -p1 -b .cursor
-%patch20 -p1 -b .cursor-abi
-%patch14 -p1 -b .resize-expose
-%patch15 -p0 -b .pixmap
-%patch16 -p1 -b .modal
-%patch17 -p1 -b .icons
-%patch18 -p1 -b .screen_num
-%patch19 -p1 -b .multihead
+%patch 1 -p1 -b .fltk_config
+%patch 3 -p1 -b .undefined
+%patch 5 -p1 -b .fluid_desktop
+%patch 8 -p1 -b .rh708185
+%patch 9 -p1 -b .deadkeys
+%patch 10 -p1 -b .clipboard1
+%patch 11 -p1 -b .clipboard2
+%patch 12 -p1 -b .clipboard3
+%patch 13 -p1 -b .cursor
+%patch 20 -p1 -b .cursor-abi
+%patch 14 -p1 -b .resize-expose
+%patch 15 -p0 -b .pixmap
+%patch 16 -p1 -b .modal
+%patch 17 -p1 -b .icons
+%patch 18 -p1 -b .screen_num
+%patch 19 -p1 -b .multihead
 
 # verbose build output
 sed -i.silent '\,^.SILENT:,d' makeinclude.in

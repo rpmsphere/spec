@@ -211,9 +211,6 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %doc mgse-xrandr/usr/share/gnome-shell/extensions/xrandr@linuxmint.com/credits
 %{_datadir}/gnome-shell/extensions/xrandr@linuxmint.com/
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %changelog
 * Sun Jan 08 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 20111218
 - Rebuilt for Fedora

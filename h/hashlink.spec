@@ -11,7 +11,7 @@ Group: Development/Other
 URL: https://hashlink.haxe.org/
 Source: %name-%version.tar.gz
 BuildRequires: cmake libGLU-devel SDL2-devel libdb-devel libpng-devel openssl-devel libjpeg-devel libuv-devel libvorbis-devel zlib-devel
-BuildRequires: mbedtls-devel openal-soft-devel libuv-devel
+BuildRequires: mbedtls-devel openal-soft-devel libuv-devel sqlite-devel
 
 %package devel
 Summary: %summary

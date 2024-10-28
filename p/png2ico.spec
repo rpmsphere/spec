@@ -34,9 +34,6 @@ make
 gzip doc/%{name}.1
 %__install -m 0644 doc/%{name}.1.gz $RPM_BUILD_ROOT%{_mandir}/man1/
 
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
-
 %files
 %doc LICENSE README VERSION README.unix
 %{_bindir}/*
@@ -45,5 +42,5 @@ gzip doc/%{name}.1
 %changelog
 * Tue Dec 13 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2002.12.08
 - Rebuilt for Fedora
-* Thu Oct 27 2009 Dirk Stöcker <opensuse@dstoecker.de> 2002.12.08
+* Tue Oct 27 2009 Dirk Stöcker <opensuse@dstoecker.de> 2002.12.08
 - created

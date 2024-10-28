@@ -21,8 +21,8 @@ applications are possible too.
 
 %build
 cmake -DCMAKE_BUILD_TYPE=release \
-	-DCMAKE_INSTALL_PREFIX=$RPM_BUILD_ROOT/usr -DHTML_INSTALL_DIR=$RPM_BUILD_ROOT/usr/share/doc/kde/HTML \
-	-DCONFIG_INSTALL_DIR=$RPM_BUILD_ROOT/usr/share/kde4/config -DCMAKE_SKIP_RPATH=ON
+        -DCMAKE_INSTALL_PREFIX=$RPM_BUILD_ROOT/usr -DHTML_INSTALL_DIR=$RPM_BUILD_ROOT/usr/share/doc/kde/HTML \
+        -DCONFIG_INSTALL_DIR=$RPM_BUILD_ROOT/usr/share/kde4/config -DCMAKE_SKIP_RPATH=ON
 make -j 2
 
 %install
@@ -40,9 +40,6 @@ find . -type l -fprint $RPM_BUILD_DIR/file.list.%{name}.libs
 sed '1,2d;s,^\.,\%attr(-\,root\,root) \%dir ,' $RPM_BUILD_DIR/file.list.%{name}.dirs > $RPM_BUILD_DIR/file.list.%{name}
 sed 's,^\.,\%attr(-\,root\,root) ,' $RPM_BUILD_DIR/file.list.%{name}.files >> $RPM_BUILD_DIR/file.list.%{name}
 sed 's,^\.,\%attr(-\,root\,root) ,' $RPM_BUILD_DIR/file.list.%{name}.libs >> $RPM_BUILD_DIR/file.list.%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 /usr/lib*/kde*/kcm_kchildlock.so

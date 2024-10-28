@@ -1,20 +1,20 @@
 %global __os_install_post %{nil}
 
-Name:			burgerspace
-Version:		1.9.5
-Summary:		A Burgertime(TM) clone
-License:		GPLv2
-URL:			https://sarrazip.com/dev/%{name}.html
-Group:			Amusements/Games
-Release:		1
-Source:			%{name}-%{version}.tar.gz
-BuildRequires:		desktop-file-utils
-BuildRequires:		gcc-c++
-BuildRequires:		libtool
-BuildRequires:		SDL-devel
-BuildRequires:		SDL_image-devel
-BuildRequires:		SDL_mixer-devel
-BuildRequires:		flatzebra-devel
+Name:                   burgerspace
+Version:                1.9.5
+Summary:                A Burgertime(TM) clone
+License:                GPLv2
+URL:                    https://sarrazip.com/dev/%{name}.html
+Group:                  Amusements/Games
+Release:                1
+Source:                 %{name}-%{version}.tar.gz
+BuildRequires:          desktop-file-utils
+BuildRequires:          gcc-c++
+BuildRequires:          libtool
+BuildRequires:          SDL-devel
+BuildRequires:          SDL_image-devel
+BuildRequires:          SDL_mixer-devel
+BuildRequires:          flatzebra-devel
 
 %description
 BurgerSpace is a game in which you are a chef, and must walk over
@@ -47,9 +47,6 @@ Terminal=false
 _EOF_
 
 install -D -m644 src/%{name}.desktop %{buildroot}/%{_datadir}/applications/%{name}.desktop
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README THANKS TODO

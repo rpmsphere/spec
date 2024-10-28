@@ -1,13 +1,13 @@
-Name:				jobqueue
-Version:			0.04
-Release:			3.1
-Summary:			Execute Jobs in Parallel
-Source:			https://zakalwe.fi/~shd/foss/jobqueue/jobqueue-%{version}.tar.bz2
-Patch1:			jobqueue-optflags.patch
-URL:				https://zakalwe.fi/~shd/foss/jobqueue/
-Group:			Productivity/Clustering/Computing
-License:			Public Domain
-BuildRequires:	gcc glibc-devel
+Name:                           jobqueue
+Version:                        0.04
+Release:                        3.1
+Summary:                        Execute Jobs in Parallel
+Source:                 https://zakalwe.fi/~shd/foss/jobqueue/jobqueue-%{version}.tar.bz2
+Patch1:                 jobqueue-optflags.patch
+URL:                            https://zakalwe.fi/~shd/foss/jobqueue/
+Group:                  Productivity/Clustering/Computing
+License:                        Public Domain
+BuildRequires:  gcc glibc-devel
 
 %description
 jobqueue is a program for executing jobs in parallel to complete all jobs as
@@ -21,7 +21,7 @@ Authors:
 
 %prep
 %setup -q
-%patch1
+%patch 1
 
 %build
 ./configure --prefix="%{_prefix}" --package-prefix="$RPM_BUILD_ROOT"
@@ -30,9 +30,6 @@ Authors:
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc AUTHORS ChangeLog COPYING README.txt TO_DO

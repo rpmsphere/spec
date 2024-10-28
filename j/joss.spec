@@ -27,9 +27,6 @@ install -D -m0755 joss.so $RPM_BUILD_ROOT%{_libdir}/joss.so
 sed -i 's|jossdir=/usr/local|jossdir=%{_prefix}|' joss
 install -D -m0755 joss $RPM_BUILD_ROOT%{_bindir}/joss
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %{_bindir}/joss
 %{_libdir}/joss.so

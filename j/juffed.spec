@@ -6,9 +6,9 @@ Name:           juffed
 Version:        0.10
 Release:        1167
 License:        GPL
-URL:		https://sourceforge.net/projects/juffed/
-#Source:		%{name}-%{version}-%{release}.tar.bz2
-Source:		%{name}-master.zip
+URL:            https://sourceforge.net/projects/juffed/
+#Source:                %{name}-%{version}-%{release}.tar.bz2
+Source:         %{name}-master.zip
 Group:          Utility
 Summary:        Simple tabbed text editor
 BuildRequires:  %{breq}
@@ -32,9 +32,6 @@ XML, TeX, Makefiles, ini-files and patch-files
 %{__rm} -rf %{buildroot}
 #{makeinstall} FAKE_ROOT=%{buildroot}
 %cmake_install
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %files
 %doc COPYING ChangeLog README

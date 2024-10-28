@@ -1,13 +1,13 @@
-Name:				tscat
-Version:			1.0
-Release:			2.1
-Summary:			Simple Filter that adds Timestamps to Stdin
-Source:			https://www.gerg.ca/software/tscat/tscat-%{version}.tar.gz
-URL:				https://www.gerg.ca/software/tscat/
-Group:			Productivity/Text/Utilities
-License:			MIT/X Consortium License
-BuildRequires:	gcc make glibc-devel
-BuildRequires:	autoconf automake libtool
+Name:                           tscat
+Version:                        1.0
+Release:                        2.1
+Summary:                        Simple Filter that adds Timestamps to Stdin
+Source:                 https://www.gerg.ca/software/tscat/tscat-%{version}.tar.gz
+URL:                            https://www.gerg.ca/software/tscat/
+Group:                  Productivity/Text/Utilities
+License:                        MIT/X Consortium License
+BuildRequires:  gcc make glibc-devel
+BuildRequires:  autoconf automake libtool
 
 %description
 tscat is a simple filter that reads a line from standard input, prepends
@@ -20,19 +20,16 @@ since the previous line (previous timestamp).
 
 %build
 %__make \
-	%{?jobs:-j%{jobs}} \
-	PREFIX="%{_prefix}" \
-	BIN_DIR="%{_bindir}" \
-	MAN_DIR="%{_mandir}/man1" \
-	CFLAGS="%{optflags}"
+        %{?jobs:-j%{jobs}} \
+        PREFIX="%{_prefix}" \
+        BIN_DIR="%{_bindir}" \
+        MAN_DIR="%{_mandir}/man1" \
+        CFLAGS="%{optflags}"
 
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
 %__install -D -m 0755 tscat "$RPM_BUILD_ROOT%{_bindir}/tscat"
 %__install -D -m 0644 tscat.1 "$RPM_BUILD_ROOT%{_mandir}/man1/tscat.1"
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %doc README

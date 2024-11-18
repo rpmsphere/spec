@@ -40,14 +40,14 @@ cd ../kiba-dock
 sed -i -e 's/AC_SUBST("$PKG_CONFIG_PATH")/AC_SUBST(PKG_CONFIG_PATH)/' -e 's/AC_SUBST("$KIBA_DOCK_REQUIRES")/AC_SUBST(KIBA_DOCK_REQUIRES)/' configure.ac
 ./autogen.sh -V
 %configure --enable-akamaru --enable-svg
-sed -i 's|-Werror=format-security|-lX11 -ldl|' */Makefile
+sed -i 's|-Werror=format-security|-Wno-error -Wno-return-mismatch -Wno-incompatible-pointer-types -Wno-implicit-function-declaration -lX11 -ldl|' */Makefile
 %__make
 
 cd ../kiba-plugins
 sed -i 's/AC_SUBST("$KIBA_PLUGINS_REQUIRES")/AC_SUBST(KIBA_PLUGINS_REQUIRES)/' configure.in
 ./autogen.sh -V
 %configure --with-pic
-sed -i 's|-Werror=format-security|-lX11 -ldl|' */Makefile
+sed -i 's|-Werror=format-security|-Wno-return-mismatch -Wno-implicit-function-declaration -lX11 -ldl|' */Makefile
 sed -i 's|librsvg-2 |librsvg-2.0 |' */Makefile
 %__make
 
@@ -70,12 +70,9 @@ rm -rf %{buildroot}/kiba-dock
 #rm -rf %{buildroot}/var
 
 sed -i -e '/Name=Kiba-Settings/a Name[zh_TW]=桌面停駐區' -e 's/Utility;//' \
-	%{buildroot}%{_datadir}/applications/kiba-settings.desktop
+        %{buildroot}%{_datadir}/applications/kiba-settings.desktop
 
 sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/dbus_scripts/*.py
-
-%clean
-rm -rf %{buildroot}
 
 %post -p /sbin/ldconfig
 
@@ -96,14 +93,12 @@ rm -rf %{buildroot}
 
 %{_libdir}/libakamaru.so*
 %exclude %{_libdir}/libakamaru.a
-%exclude %{_libdir}/libakamaru.la
 %{_includedir}/akamaru/*
 %{_libdir}/pkgconfig/akamaru.pc
 
 %{_datadir}/locale/*/LC_MESSAGES/kiba-plugins.mo
 %{_libdir}/kiba-dock/*.so
 %exclude %{_libdir}/kiba-dock/*.a
-%exclude %{_libdir}/kiba-dock/*.la
 
 %{_datadir}/locale/*/LC_MESSAGES/kiba-dbus-plugin.mo
 

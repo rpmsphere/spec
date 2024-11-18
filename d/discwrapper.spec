@@ -34,9 +34,6 @@ make
 export DESTDIR=%{buildroot}
 make install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS ChangeLog COPYING INSTALL NEWS README TODO
 %{_bindir}/*

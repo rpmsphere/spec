@@ -10,7 +10,7 @@ BuildRequires:  gcc-c++
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  intltool
 BuildRequires:  desktop-file-utils
-BuildRequires:  wxGTK3-devel
+BuildRequires:  wxGTK-devel
 Requires: xorg-x11-xkb-utils
 
 %description
@@ -28,9 +28,6 @@ make %{?_smp_mflags}
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog COPYING README* TRANSLATORS

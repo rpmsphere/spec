@@ -6,7 +6,7 @@ Version:        0.5.0
 Release:        1
 License:        GNU LGPLv2.1 ; GNU LGPLv3
 Summary:        Library to raise flags on dbus
-Url:            https://launchpad.net/libindicate
+URL:            https://launchpad.net/libindicate
 Group:          System/Libraries
 Source:         %{name}-%{version}.tar.bz2
 Source99:       libindicate-rpmlintrc
@@ -102,7 +102,7 @@ indicator.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 sed -i '/g_type_init();/d' examples/*
 sed -i -e 's|gmcs|mcs|' -e 's|pyglib-2.0-python|pyglib-2.0-python2|' configure.ac
 sed -i 's|GTimeVal |GDateTime *|' libindicate/*
@@ -116,21 +116,15 @@ autoreconf -fi
    --enable-gtk-doc=no \
    --enable-doxygen-man
 # Known problems with parallel builds. Let's try to stay away from them.
-sed -i -e 's|-Werror$|-Wno-error|' -e 's|-Werror=[a-z\-]*||g' Makefile */Makefile
-sed -i 's|-Wall|-Wall -Wno-error -Wl,--allow-multiple-definition|' Makefile */Makefile */*/Makefile
+sed -i -e 's|-Werror$|-Wno-error|' -e 's|-Werror=[a-z\-]*||g' `find . -name Makefile`
+sed -i 's|-Wall|-Wall -Wno-error -Wl,--allow-multiple-definition -Wno-incompatible-pointer-types -Wno-implicit-function-declaration|' `find . -name Makefile`
+sed -i 's|-lglib-2.0-lpython2.7|-lglib-2.0 -lpython2.7|' `find . -name Makefile`
 make
 
 %install
 %make_install
 # Remove libtool archives
 find %{buildroot}%{_libdir} -name '*.la' -type f -delete -print
-
-%clean
-rm -rf %{buildroot}
-
-
-
-
 
 %files -n %{name}%{soname}
 %doc COPYING
@@ -166,8 +160,7 @@ rm -rf %{buildroot}
 
 %files devel
 %dir %{_datadir}/doc/libindicate
-%dir %{_includedir}/libindicate-0.5
-%{_includedir}/libindicate-0.5/
+%{_includedir}/libindicate-0.5
 %{_libdir}/pkgconfig/*.pc
 %{_libdir}/*.so
 %{_datadir}/doc/libindicate/examples

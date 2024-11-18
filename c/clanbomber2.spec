@@ -15,7 +15,7 @@ ClanBomber is a free (GPL) Bomberman-like multiplayer game.
 
 %prep
 %setup -q
-%patch0
+%patch 0
 sed -i -e '706s/DFBResult/DirectResult/' -e '824d' clanbomber/Resources.cpp
 sed -i -e 's|__u8|u8|' -e 's|__u16|u16|' -e 's|__u32|u32|' clanbomber/*.h clanbomber/*.cpp
 sed -i 's|path+filename|(const char *)(path+filename)|' clanbomber/Config.cpp
@@ -41,9 +41,6 @@ update-desktop-database %{_datadir}/applications &> /dev/null
 %postun
 update-mime-database %{_datadir}/mime &> /dev/null
 update-desktop-database %{_datadir}/applications &> /dev/null
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS COPYING ChangeLog IDEAS README

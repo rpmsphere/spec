@@ -17,7 +17,8 @@ BuildRequires: gnutls-devel >= 1.0.18
 BuildRequires: libgsasl-devel >= 0.2.3
 BuildRequires: guile-devel >= 1.8
 BuildRequires: gdbm-devel
-BuildRequires: mysql-devel
+#BuildRequires: mysql-devel
+BuildRequires: mariadb-connector-c-devel
 BuildRequires: readline-devel
 BuildRequires: emacs
 BuildRequires: python
@@ -133,9 +134,9 @@ The GNU MH (Message Handling System).
 %build
 #CFLAGS="$RPM_OPT_FLAGS"
 %configure --prefix=%{_prefix} \
-			--with-guiledir=%{_datadir}/guile/site \
-			--with-pythondir=%{python2_sitelib} \
-			--with-gsasl --with-gdbm --with-mysql
+                        --with-guiledir=%{_datadir}/guile/site \
+                        --with-pythondir=%{python2_sitelib} \
+                        --with-gsasl --with-gdbm --with-mysql
 make
 
 %install
@@ -144,9 +145,6 @@ mkdir -p $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
 %find_lang %{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -n mailutils-libs -p /sbin/ldconfig
 /sbin/install-info %{_infodir}/mailutils.info.gz %{_infodir}/dir

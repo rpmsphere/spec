@@ -37,9 +37,6 @@ java \
         com.googlecode.aviator.Main "\$@"
 EOF
 
-%clean
-rm -rf $RPM_BUILD_ROOT
- 
 %files 
 %doc licenses.txt *.md
 %attr(755,root,root) %{_bindir}/%{name}

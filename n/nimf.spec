@@ -84,7 +84,7 @@ This package contains development files.
 %setup -q -n nimf-master
 
 %build
-CFLAGS="-g -O2 -fPIE -fPIC -Wno-array-bounds -Wno-deprecated-declarations -Wno-incompatible-pointer-types -Wno-use-after-free"
+CFLAGS="-g -O2 -fPIE -fPIC -Wno-array-bounds -Wno-deprecated-declarations -Wno-incompatible-pointer-types -Wno-use-after-free -Wno-discarded-qualifiers"
 ./autogen.sh --prefix=/usr --libdir=%{_libdir} --enable-gtk-doc \
   --with-imsettings-data --disable-nimf-m17n --disable-nimf-rime
 make %{?_smp_mflags}
@@ -93,9 +93,6 @@ make %{?_smp_mflags}
 rm -rf $RPM_BUILD_ROOT
 %make_install
 
-%clean
-
-%post
 /sbin/ldconfig
 /bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :
 %{_bindir}/update-gtk-immodules %{_host} || :

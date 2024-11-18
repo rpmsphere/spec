@@ -1,13 +1,13 @@
-Summary:	Library for retrieving statistics of the system`s activity
-Name:		libsysactivity
-Version:	0.6.5
-Release:	1
-Group:		System/Libraries
-License:	LGPLv2+
-URL:		https://sourceforge.net/projects/libsysactivity/
-Source0:	https://downloads.sourceforge.net/project/%{name}/0.6.x/%{name}-%{version}.tar.gz
-BuildRequires:	doxygen
-BuildRequires:	cmake
+Summary:        Library for retrieving statistics of the system`s activity
+Name:           libsysactivity
+Version:        0.6.5
+Release:        1
+Group:          System/Libraries
+License:        LGPLv2+
+URL:            https://sourceforge.net/projects/libsysactivity/
+Source0:        https://downloads.sourceforge.net/project/%{name}/0.6.x/%{name}-%{version}.tar.gz
+BuildRequires:  doxygen
+BuildRequires:  cmake
 
 %description
 A lightweight library that retrieves statistics of the system's activity in a
@@ -16,9 +16,9 @@ API for retrieving the activity of: hard disks, CPUs, memory, processes and
 network interfaces.
 
 %package devel
-Summary:	Development files for %{name}
-Group:		Development/C++
-Requires:	%{name} = %{version}-%{release}
+Summary:        Development files for %{name}
+Group:          Development/C++
+Requires:       %{name} = %{version}-%{release}
 
 %description devel
 The %{name}-devel package contains libraries and header files for
@@ -26,6 +26,7 @@ developing applications that use %{name}.
 
 %prep
 %setup -q
+sed -i 's|void strlcpy|size_t strlcpy|' src/Linux/utils.h src/Linux/utils.c
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition

@@ -38,7 +38,7 @@ Authors:
 
 %prep
 %setup -q -n net/%{name}-%{version}
-sed -i -e 's|-O2|%{optflags}|g' src/conf-cc
+sed -i -e 's|-O2|%{optflags} -Wno-incompatible-pointer-types -Wno-implicit-function-declaration|g' src/conf-cc
 
 %build
 sh package/compile
@@ -50,9 +50,6 @@ done
 for i in man/*8 ; do
     %{__install} -D -m 0755 $i $RPM_BUILD_ROOT%{_mandir}/man8/${i##man/}
 done
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc package/CHANGES package/COPYING package/README

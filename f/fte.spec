@@ -1,21 +1,21 @@
 %define __spec_install_post %{nil}
 %undefine _debugsource_packages
 
-Summary:	Programmer oriented text editor
-Name:		fte
-Epoch:		1
-Version:	20110708
-Release:	11.1
-Source0:	https://fte.sourceforge.net/fte/%{name}-%{version}-src.zip
-Source1:	https://fte.sourceforge.net/fte/%{name}-%{version}-common.zip
-License:	GPL
-Group:		Applications/Editors
-URL:		https://fte.sourceforge.net/
-BuildRequires:	gpm-devel
-BuildRequires:	pkgconfig(ncurses)
-BuildRequires:	pkgconfig(slang)
-BuildRequires:	pkgconfig(x11)
-BuildRequires:	libXpm-devel
+Summary:        Programmer oriented text editor
+Name:           fte
+Epoch:          1
+Version:        20110708
+Release:        11.1
+Source0:        https://fte.sourceforge.net/fte/%{name}-%{version}-src.zip
+Source1:        https://fte.sourceforge.net/fte/%{name}-%{version}-common.zip
+License:        GPL
+Group:          Applications/Editors
+URL:            https://fte.sourceforge.net/
+BuildRequires:  gpm-devel
+BuildRequires:  pkgconfig(ncurses)
+BuildRequires:  pkgconfig(slang)
+BuildRequires:  pkgconfig(x11)
+BuildRequires:  libXpm-devel
 
 %description
 FTE is a Text Mode text editor for xterm sessions.  Color syntax highlighting
@@ -29,6 +29,7 @@ compiler execution.
 %ifarch x86_64 aarch64
 sed -i 's|/lib|/lib64|' install Makefile
 %endif
+sed -i '8i #define HAVE_STRLCPY\n#define HAVE_STRLCAT' src/s_string.h
 
 %build
 make PREFIX=%{_prefix}

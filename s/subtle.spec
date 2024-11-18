@@ -28,6 +28,7 @@ Authors:
 %setup -q -n %{name}-%{version}-xi
 sed -i -e '260,263d' -e 's|-I\.|-I. -I/usr/include/freetype2 -Wno-incompatible-pointer-types -Wno-address -Wno-switch|' Rakefile
 sed -i '1i #include <ruby.h>' src/shared/shared.h
+sed -i 's|File.exists|File.exist|' Rakefile data/sur/server.rb
 
 %build
 rake destdir=$RPM_BUILD_ROOT sysconfdir=$RPM_BUILD_ROOT/etc bindir=$RPM_BUILD_ROOT/usr/bin datadir=$RPM_BUILD_ROOT/usr/share/subtle/ mandir=$RPM_BUILD_ROOT/%_mandir manprefix=$RPM_BUILD_ROOT/%_mandir build

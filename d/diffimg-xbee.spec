@@ -11,7 +11,7 @@ URL: https://sourceforge.net/projects/diffimg/
 Source0: https://codeload.github.com/lingo/diffimg-xbee/tar.gz/%{version}-lingo#/diffimg-xbee-%{version}-lingo.tar.gz
 BuildRequires: dos2unix
 BuildRequires: qt4-devel
-BuildRequires: qwt-devel
+BuildRequires: qwt5-qt4-devel
 BuildRequires: opencv-devel
 BuildRequires: cmake atlas
 
@@ -49,9 +49,6 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/%{_name}/*.txt
 sed -i -e 's|%{buildroot}||' -e 's|/usr/share/pixmaps/%{_name}-xbee.png|%{_name}|' %{buildroot}%{_datadir}/applications/%{_name}.desktop
 mv %{buildroot}%{_bindir}/%{_name} %{buildroot}%{_bindir}/%{name}
 mv %{buildroot}%{_mandir}/man1/%{_name}.1.gz %{buildroot}%{_mandir}/man1/%{name}.1.gz
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %doc *.txt

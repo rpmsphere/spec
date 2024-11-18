@@ -6,7 +6,7 @@ Group: Games/Boards
 URL: https://openyahtzee.sourceforge.net
 License: GPL
 Source: https://downloads.sourceforge.net/openyahtzee/%{name}-%{version}.tar.bz2
-BuildRequires: wxGTK3-devel
+BuildRequires: wxGTK-devel
 
 %description
 Open Yahtzee is an open-source (free) version
@@ -28,9 +28,6 @@ rm -rf %{buildroot}
 desktop-file-install --vendor="" \
   --remove-category="Application" \
   --dir $RPM_BUILD_ROOT%{_datadir}/applications $RPM_BUILD_ROOT%{_datadir}/applications/*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/openyahtzee

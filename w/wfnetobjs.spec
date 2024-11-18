@@ -11,7 +11,8 @@ Group:          Development/Libraries
 Summary:        A library handling network objects
 Source:         https://www.wallfire.org/download/%{name}-%{version}.tar.bz2
 Patch0:         wfnetobjs-autofoomess.patch
-Patch1:		wfnetobjs-0.2.4-gcc43.patch
+Patch1:         wfnetobjs-0.2.4-gcc43.patch
+#BuildRequires: compat-srpm-macros
 
 %description
 Wfnetobjs is essentially a library which handles network objects (hosts, ports, etc.).
@@ -26,10 +27,10 @@ Wfnetobjs is essentially a library which handles network objects (hosts, ports, 
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1
+%patch 0 -p1
+%patch 1
 sed -i "s|@MKINSTALLDIRS@|`pwd`/mkinstalldirs|" Makefile* */Makefile*
-sed -i 's|@INTL_LIBTOOL_SUFFIX_PREFIX@||' */Makefile*
+sed -i -e 's|@INTL_LIBTOOL_SUFFIX_PREFIX@||' -e 's|@USE_INCLUDED_LIBINTL@|yes|' */Makefile*
 
 %build
 export NOCONFIGURE=true
@@ -45,9 +46,6 @@ sed -i 's|-Wall|-fPIE -Wall|' tools/Makefile
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 %find_lang %{name}
 %{__rm} -f $RPM_BUILD_ROOT%{_libdir}/*.la
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -p /sbin/ldconfig
 

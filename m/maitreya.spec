@@ -1,12 +1,12 @@
-Summary:	Vedic and western astrology
-Name:		maitreya
-Version:	8.0.1
-Release:	1
-License:	GPLv2+
-Group:		Sciences/Astronomy
-URL:		https://www.saravali.de/
-Source0:	https://github.com/martin-pe/maitreya8/releases/download/v%{version}/maitreya8-%{version}.tar.bz2
-BuildRequires:	wxGTK3-devel
+Summary:        Vedic and western astrology
+Name:           maitreya
+Version:        8.0.1
+Release:        1
+License:        GPLv2+
+Group:          Sciences/Astronomy
+URL:            https://www.saravali.de/
+Source0:        https://github.com/martin-pe/maitreya8/releases/download/v%{version}/maitreya8-%{version}.tar.bz2
+BuildRequires:  wxGTK-devel
 
 %description
 Mature Open Source platform for Vedic and western astrology.

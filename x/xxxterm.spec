@@ -1,23 +1,23 @@
-Summary:	A minimalist web browser
-Name:		xxxterm
-Version:	1.11.3
-Release:	12.1
-License:	MIT
-Group:		Networking/WWW
-URL:		https://opensource.conformal.com/wiki/XXXTerm
-Source0:	https://opensource.conformal.com/snapshots/xxxterm/%{name}-%{version}.tgz
-Patch0:		xxxterm-1.8.0-mdv-desktop.patch
-Patch1:		xxxterm-1.11.3-link-javascriptcoregtk.patch
-Patch2:		0001-Change-default-homepage.patch
+Summary:        A minimalist web browser
+Name:           xxxterm
+Version:        1.11.3
+Release:        12.1
+License:        MIT
+Group:          Networking/WWW
+URL:            https://opensource.conformal.com/wiki/XXXTerm
+Source0:        https://opensource.conformal.com/snapshots/xxxterm/%{name}-%{version}.tgz
+Patch0:         xxxterm-1.8.0-mdv-desktop.patch
+Patch1:         xxxterm-1.11.3-link-javascriptcoregtk.patch
+Patch2:         0001-Change-default-homepage.patch
 # From Debian unchanged
-Patch10:	0002-Fix-resources-dir.patch
-Patch11:	0006-Add-missing-includes.patch
-BuildRequires:	pkgconfig(gnutls)
-BuildRequires:	pkgconfig(gtk+-2.0)
-BuildRequires:	pkgconfig(libbsd)
-BuildRequires:	pkgconfig(libsoup-2.4)
-BuildRequires:	pkgconfig(webkit-1.0)
-BuildRequires:	libgcrypt-devel
+Patch10:        0002-Fix-resources-dir.patch
+Patch11:        0006-Add-missing-includes.patch
+BuildRequires:  pkgconfig(gnutls)
+BuildRequires:  pkgconfig(gtk+-2.0)
+BuildRequires:  pkgconfig(libbsd)
+BuildRequires:  pkgconfig(libsoup-2.4)
+BuildRequires:  pkgconfig(webkit-1.0)
+BuildRequires:  libgcrypt-devel
 
 %description
 xxxterm is a minimalist web browser with sophisticated security features
@@ -45,26 +45,26 @@ scripts from those sites.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch10 -p1
-%patch11 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 10 -p1
+%patch 11 -p1
 
 %build
 export CFLAGS="%{optflags}"
 cd linux
 %make_build \
-	OPTIMIZE="%{optflags}" \
-	PREFIX=%{_prefix}
+        OPTIMIZE="%{optflags}" \
+        PREFIX=%{_prefix}
 
 %install
 pushd linux
 make install PREFIX=%{buildroot}%{_prefix}
 popd
 for s in 16 32 48 64 128; do
-	install -d -m 0755 %{buildroot}%{_datadir}/icons/hicolor/${s}x${s}/apps/
-	ln -s ../../../../xxxterm/xxxtermicon${s}.png %{buildroot}%{_datadir}/icons/hicolor/${s}x${s}/apps/xxxterm.png
+        install -d -m 0755 %{buildroot}%{_datadir}/icons/hicolor/${s}x${s}/apps/
+        ln -s ../../../../xxxterm/xxxtermicon${s}.png %{buildroot}%{_datadir}/icons/hicolor/${s}x${s}/apps/xxxterm.png
 done
 install -D -m 0644 xxxterm.desktop %{buildroot}%{_datadir}/applications/xxxterm.desktop
 install -D -m 0644 style.css %{buildroot}%{_datadir}/xxxterm/style.css

@@ -9,6 +9,7 @@ License: free
 URL: https://cclub-flying.dsl.gr.jp/products/xmascot/
 Source0: https://cclub-flying.dsl.gr.jp/products/%{name}/%{name}%{version}.tar.gz
 BuildRequires: libXaw-devel libXmu-devel libXt-devel libXext-devel
+#BuildRequires: compat-srpm-macros
 
 %description
 XMascot, moving mascot on your X-Window screen.

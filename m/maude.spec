@@ -7,9 +7,9 @@ License: Free Software
 URL: https://maude.cs.uiuc.edu
 Source0: https://maude.cs.illinois.edu/w/images/d/d8/Maude-%{version}.tar.gz
 BuildRequires: buddy-devel
-BuildRequires: tecla-devel
+#BuildRequires: tecla-devel
 BuildRequires: libsigsegv-devel
-BuildRequires: cvc4-devel
+BuildRequires: cvc5-devel
 BuildRequires: symfpu-devel
 BuildRequires: gmp-devel
 BuildRequires: yices-devel
@@ -28,7 +28,7 @@ programming, Maude also supports rewriting logic computation.
 cp /usr/include/yices/* src/Mixfix/
 
 %build
-%configure
+%configure --without-tecla
 make
 
 %install

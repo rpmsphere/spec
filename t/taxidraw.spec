@@ -1,15 +1,15 @@
-Summary:	Runway, taxiway and AI traffic routing editor
-Name:		taxidraw
-Version:	0.3.2
-Release:	6.1
-License:	GPL
-URL:		https://taxidraw.sourceforge.net/
-Group:		Amusements/Games/3D/Simulation
-Source0:	taxidraw-1317104301.tar.bz2
+Summary:        Runway, taxiway and AI traffic routing editor
+Name:           taxidraw
+Version:        0.3.2
+Release:        6.1
+License:        GPL
+URL:            https://taxidraw.sourceforge.net/
+Group:          Amusements/Games/3D/Simulation
+Source0:        taxidraw-1317104301.tar.bz2
 #Source0:        TaxiDraw-%{version}-src.tar.gz
-Source1:	TaxiDraw.desktop
-Source2:	TaxiDraw.png
-Patch0:		taxidraw_initvars.patch
+Source1:        TaxiDraw.desktop
+Source2:        TaxiDraw.png
+Patch0:         taxidraw_initvars.patch
 BuildRequires: desktop-file-utils
 BuildRequires: gcc, gcc-c++, automake
 BuildRequires: wxGTK2-devel
@@ -23,7 +23,7 @@ for the FlightGear flight simulator.
 %prep
 %setup -q -n taxidraw-1317104301 -T -b 0
 #setup -q -n TaxiDraw-%{version}
-%patch0 -p1
+%patch 0 -p1
 sed -i 's|HUGE|std::numeric_limits<double>::max()|' src/AI/AINetworkVerifier.cpp
 
 %build
@@ -45,9 +45,6 @@ cp %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/.
 %{_bindir}/*
 %{_datadir}/pixmaps/TaxiDraw.png
 %{_datadir}/applications/TaxiDraw.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue Aug 21 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.2git

@@ -31,11 +31,12 @@ Vintage Terminal has the following features:
 
 %prep
 %setup -q
-%patch1
-%patch2
-%patch3
-%patch4
+%patch 1
+%patch 2
+%patch 3
+%patch 4
 %__chmod 0644 data/vinterm.desktop
+sed -i '6i #include <cstdint>' terminal/pty.h
 
 %build
 %__make %{?_smp_mflags} \

@@ -1,21 +1,21 @@
-Summary:	High-level audio API
-Name:		audiere
-Version:	1.9.4
-Release:	1
-License:	LGPLv2+
-Group:		Sound
-URL:		https://audiere.sourceforge.net
-Source:		https://prdownloads.sourceforge.net/audiere/%{name}-%{version}-src.tar.bz2
-Patch0:		%{name}-1.9.4-speex.patch
-Patch1:		%{name}-1.9.4-gcc43.patch
-Patch2:		%{name}-1.9.4-flac.patch
-Patch3:		audiere-1.9.4-add-missing-header.patch
-BuildRequires:	audiofile-devel
-BuildRequires:	flac-devel
-BuildRequires:	libcdaudio-devel
-BuildRequires:	libogg-devel
-BuildRequires:	libvorbis-devel
-BuildRequires:	speex-devel
+Summary:        High-level audio API
+Name:           audiere
+Version:        1.9.4
+Release:        1
+License:        LGPLv2+
+Group:          Sound
+URL:            https://audiere.sourceforge.net
+Source:         https://prdownloads.sourceforge.net/audiere/%{name}-%{version}-src.tar.bz2
+Patch0:         %{name}-1.9.4-speex.patch
+Patch1:         %{name}-1.9.4-gcc43.patch
+Patch2:         %{name}-1.9.4-flac.patch
+Patch3:         audiere-1.9.4-add-missing-header.patch
+BuildRequires:  audiofile-devel
+BuildRequires:  flac-devel
+BuildRequires:  libcdaudio-devel
+BuildRequires:  libogg-devel
+BuildRequires:  libvorbis-devel
+BuildRequires:  speex-devel
 
 %description
 Audiere is a high-level audio API. It can play Ogg Vorbis, MP3,
@@ -24,27 +24,28 @@ audio output, Audiere supports DirectSound or WinMM in Windows,
 OSS on Linux and Cygwin, and SGI AL on IRIX.
 
 %package devel
-Summary:	Development headers and libraries for audiere
-Group:		Development/C++
-Requires:	%{name} = %{version}-%{release}
-Requires:	flac-devel
-Requires:	libcdaudio-devel
-Requires:	libogg-devel
-Requires:	libvorbis-devel
-Requires:	speex-devel
+Summary:        Development headers and libraries for audiere
+Group:          Development/C++
+Requires:       %{name} = %{version}-%{release}
+Requires:       flac-devel
+Requires:       libcdaudio-devel
+Requires:       libogg-devel
+Requires:       libvorbis-devel
+Requires:       speex-devel
 
 %description devel
 Development headers and libraries for audiere.
 
 %prep
 %setup -qn audiere
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
 sed -i 's|MIDIDeviceDialog::OnButton|OnButton|' examples/wxPlayer/MIDIDeviceDialog.h
 sed -i 's| wxString(| wxString::FromAscii(|' examples/wxPlayer/DeviceFrame.cpp
 sed -i 's|wxOPEN|wxFD_OPEN|' examples/wxPlayer/DeviceFrame.cpp examples/wxPlayer/MIDIDeviceFrame.cpp
+sed -i 's|wxADJUST_MINSIZE|0|' examples/wxPlayer/CDDeviceFrame.cpp
 
 %build
 sh ./bootstrap
@@ -54,9 +55,6 @@ make
 %install
 %makeinstall
 rm %{buildroot}%{_libdir}/lib*.la
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_libdir}/libaudiere-%{version}.so

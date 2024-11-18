@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Summary:	An UN*X init scheme with service supervision
-Name:		runit
-Version:	2.1.1
-Release:	6.1
-License:	BSD
-Group:		System/Base
-URL:		https://smarden.org/runit/
-Source0:	https://smarden.org/runit/%{name}-%{version}.tar.gz
-BuildRequires:	dietlibc-devel >= 0.32
+Summary:        An UN*X init scheme with service supervision
+Name:           runit
+Version:        2.1.1
+Release:        6.1
+License:        BSD
+Group:          System/Base
+URL:            https://smarden.org/runit/
+Source0:        https://smarden.org/runit/%{name}-%{version}.tar.gz
+BuildRequires:  dietlibc-devel >= 0.32
 
 %description
 runit is a daemontools alike replacement for SysV-init and other init schemes.
@@ -23,7 +23,7 @@ necessary to shutdown and halt or reboot.
 
 %build
 pushd %{name}-%{version}/src
-    echo "diet gcc -Os -pipe" > conf-cc
+    echo "diet gcc -Os -pipe -Wno-incompatible-pointer-types -Wno-implicit-function-declaration -DHASSIGPROCMASK" > conf-cc
     echo "diet gcc -Os -static -s" > conf-ld
     make
 popd
@@ -34,13 +34,10 @@ install -d $RPM_BUILD_ROOT/sbin/
 install -d $RPM_BUILD_ROOT%{_mandir}/man8
 pushd %{name}-%{version}
     for i in `cat package/commands`; do
-	install -m0755 src/$i $RPM_BUILD_ROOT/sbin/
+        install -m0755 src/$i $RPM_BUILD_ROOT/sbin/
     done
 popd
 install -m0644 %{name}-%{version}/man/*.8 $RPM_BUILD_ROOT%{_mandir}/man8/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc %{name}-%{version}/package/CHANGES

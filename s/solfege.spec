@@ -1,32 +1,33 @@
 %undefine _debugsource_packages
 
-Name:		solfege
-Summary:	An ear-training program
-Version:	3.23.4
-Release:	5
-License:	GPLv3+
-Group:		Sound/Utilities
-URL:		https://www.solfege.org/
-Source0:	https://alpha.gnu.org/gnu/solfege/%{name}-%{version}.tar.gz
-Source1:	%{name}48.png
-Source2:	%{name}32.png
-Source3:	%{name}16.png
-Patch1:		solfege-3.20.0-link.patch
-Patch2:		solfege-3.23.4-usrmove.patch
-Patch3:		solfege-3.23.4-py3-webbrowser.patch
-Patch4:		solfege-3.23.4-texinfo-non-utf8-input-fix.patch
-BuildRequires:	desktop-file-utils
-BuildRequires:	docbook-style-xsl
-BuildRequires:	gettext
-BuildRequires:	gnome-doc-utils
-BuildRequires:	python3-devel
-BuildRequires:	python3-gobject-base
-BuildRequires:	swig
-BuildRequires:	texinfo
-BuildRequires:	txt2man
-BuildRequires:	libxslt-devel
-Requires:	python3-gobject-base
-Requires:	TiMidity++
+Name:           solfege
+Summary:        An ear-training program
+Version:        3.23.4
+Release:        5
+License:        GPLv3+
+Group:          Sound/Utilities
+URL:            https://www.solfege.org/
+Source0:        https://alpha.gnu.org/gnu/solfege/%{name}-%{version}.tar.gz
+Source1:        %{name}48.png
+Source2:        %{name}32.png
+Source3:        %{name}16.png
+Patch1:         solfege-3.20.0-link.patch
+Patch2:         solfege-3.23.4-usrmove.patch
+Patch3:         solfege-3.23.4-py3-webbrowser.patch
+Patch4:         solfege-3.23.4-texinfo-non-utf8-input-fix.patch
+BuildRequires:  desktop-file-utils
+BuildRequires:  docbook-style-xsl
+BuildRequires:  gettext
+BuildRequires:  gnome-doc-utils
+BuildRequires:  python3-devel
+BuildRequires:  python3-gobject-base
+BuildRequires:  swig
+BuildRequires:  texinfo
+BuildRequires:  txt2man
+BuildRequires:  libxslt-devel
+BuildRequires:  python-rpm-macros
+Requires:       python3-gobject-base
+Requires:       TiMidity++
 
 %description
 GNU Solfege is an ear-training program. These are the exercises written so far:
@@ -65,7 +66,7 @@ install -Dpm644 %SOURCE2 $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/32x32/apps/%{n
 install -Dpm644 %SOURCE3 $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 
 # python shebangs
-pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{_bindir}/%{name}
+python3 /usr/lib/rpm/redhat/pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{buildroot}%{_bindir}/%{name}
 
 %find_lang %{name}
 

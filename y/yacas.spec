@@ -83,9 +83,6 @@ cp README.rst README
 %install
 %cmake_install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc AUTHORS COPYING ChangeLog README* TODO
 %{_bindir}/%{name}*

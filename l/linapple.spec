@@ -19,6 +19,7 @@ It derives from AppleWin, and almost as powerful as AppleWin is.
 %setup -q -n %{name}-master
 #sed -i '1i #include <unistd.h>' src/Timer.cpp src/Frame.cpp src/SerialComms.cpp
 sed -i 's|-Wall|-fpermissive|' Makefile
+sed -i '1i #include <cstdint>' inc/file_entry.h
 
 %build
 #cd src
@@ -34,9 +35,6 @@ install -Dm644 build/etc/linapple/linapple.conf %{buildroot}/etc/linapple/linapp
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_sysconfdir}/%{name}
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Nov 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.0

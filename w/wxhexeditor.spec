@@ -1,16 +1,16 @@
 %undefine _debugsource_packages
 %define _name wxHexEditor
 
-Name:		wxhexeditor
-Summary:	A hex editor for view/edit huge files and devices
-Version:	0.24
-Release:	1
-License:	GPL
-Group:		Editors
-URL:		https://wxhexeditor.sourceforge.net/
-Source0:	https://sourceforge.net/projects/wxhexeditor/files/wxHexEditor/v%{version}%20Beta/%{_name}-v%{version}-src.tar.xz
-BuildRequires:	gcc-c++
-BuildRequires:	pkgconfig automake
+Name:           wxhexeditor
+Summary:        A hex editor for view/edit huge files and devices
+Version:        0.24
+Release:        1
+License:        GPL
+Group:          Editors
+URL:            https://wxhexeditor.sourceforge.net/
+Source0:        https://sourceforge.net/projects/wxhexeditor/files/wxHexEditor/v%{version}%20Beta/%{_name}-v%{version}-src.tar.xz
+BuildRequires:  gcc-c++
+BuildRequires:  pkgconfig automake
 BuildRequires:  wxGTK-devel
 
 %description
@@ -35,9 +35,6 @@ PYTHON=/usr/bin/python3 CFLAGS=-fPIC make WXCONFIG=wx-config
 %__install -D -m 755 %{_name} %{buildroot}%{_bindir}/%{_name}
 %__install -D -m 644 resources/%{_name}.png %{buildroot}%{_datadir}/pixmaps/%{_name}.png
 %__install -D -m 644 resources/%{_name}.desktop %{buildroot}%{_datadir}/applications/%{_name}.desktop
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc docs/*

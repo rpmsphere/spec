@@ -6,35 +6,34 @@ Version: 0.0.43
 Release: 1
 Source: https://moblin.org/build-results/projects/hildon-desktop/lpia/%{name}_%{version}-15.tar.gz
 URL: https://www.moblin.org/projects/projects_ui.php
-BuildRequires: gtk2-devel, libhildon-devel, libXtst-devel
+BuildRequires: gtk2-devel, libhildon-devel, libXtst-devel, esound-devel
 Requires: gtk2, libhildon, libXtst, hildon-desktop-libs
 
 %description
 The Hildon Application Framework is the same set of GTK-based classes
 that Nokia used with Maemo.
 
-%package	libs
-Summary:	Libraries for %{name}
-Group:		System Environment/Libraries
-Requires:	pkgconfig
+%package        libs
+Summary:        Libraries for %{name}
+Group:          System Environment/Libraries
+Requires:       pkgconfig
 
-%description	libs
+%description    libs
 The %{name}-libs package contains shared libraries of %{name}.
 
-%package	devel
-Summary:	Development files for %{name}
-Group:		Development/Libraries
-Requires:	%{name}-libs = %{version}-%{release}
-Requires:	pkgconfig
+%package        devel
+Summary:        Development files for %{name}
+Group:          Development/Libraries
+Requires:       %{name}-libs = %{version}-%{release}
+Requires:       pkgconfig
 
-%description	devel
+%description    devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
-
 %prep
 %setup -q -n hildon-desktop
-sed -i 's/-Werror/-Wno-format-security -lXrender/' configure.ac
+sed -i 's/-Werror/-Wno-format-security -Wno-int-conversion -Wno-implicit-function-declaration -Wno-incompatible-pointer-types -lXrender -lesd/' configure.ac
 sed -i -e 's/dbus_g_proxy_begin_call_with_timeout/dbus_g_proxy_begin_call/' -e 's/g_free, 120000, /g_free, /' background-manager/Makefile.am
 sed -i '11d' libhildondesktop/Makefile.am
 sed -i 's|glib/gkeyfile.h|glib.h|' src/hd-plugin-loader-legacy.c
@@ -48,9 +47,6 @@ sed -i 's|glib/gtypes.h|glib.h|' src/hn-app-sound.c
 %install
 %__rm -rf %{buildroot}
 %__make DESTDIR=%{buildroot} install
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING desktop-safe-mode.txt

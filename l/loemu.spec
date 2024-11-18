@@ -1,27 +1,27 @@
-Name:		loemu
-Version:	0.3.1
-Release:	2.1
-Summary:	A simple python front-end for various emulators
-License:	GPLv2+
-Group:		Emulators
-URL:		http://loemu.pegueroles.com/
-Source0:	http://loemu.pegueroles.com/dists/%{name}-%{version}.tar.gz
-Source10:	loemu-32.png
-Source40:	loemu-0.3.0-fr.po.tar.bz2 
-Patch0:		loemu-0.3.0-default-config.patch
-BuildRequires:	python2-devel
-BuildRequires:	pygtk2-libglade
-BuildRequires:	python2-libxml2
+Name:           loemu
+Version:        0.3.1
+Release:        2.1
+Summary:        A simple python front-end for various emulators
+License:        GPLv2+
+Group:          Emulators
+URL:            https://loemu.pegueroles.com/
+Source0:        https://loemu.pegueroles.com/dists/%{name}-%{version}.tar.gz
+Source10:       loemu-32.png
+Source40:       loemu-0.3.0-fr.po.tar.bz2 
+Patch0:         loemu-0.3.0-default-config.patch
+BuildRequires:  python2-devel
+BuildRequires:  pygtk2-libglade
+BuildRequires:  python2-libxml2
 BuildRequires:  python2-libxslt
-BuildRequires:	unzip
-BuildRequires:	intltool
-#Requires:	libxslt-python
-#Requires:	pygtk2-libglade
-#Suggests:	sdlmame
-#Suggests:	snes9x
-#Suggests:	zsnes
-#Suggests:	xmame
-BuildArch:	noarch
+BuildRequires:  unzip
+BuildRequires:  intltool
+#Requires:      libxslt-python
+#Requires:      pygtk2-libglade
+#Suggests:      sdlmame
+#Suggests:      snes9x
+#Suggests:      zsnes
+#Suggests:      xmame
+BuildArch:      noarch
 
 %description
 Loemu provides a simple frontend for various emulators.
@@ -34,8 +34,8 @@ This package is in PLF because of Mandriva policy regarding emulators.
 
 %prep
 %setup -q
-%patch0 -p0
-tar -xvjf %{_sourcedir}/loemu-0.3.0-fr.po.tar.bz2
+%patch 0 -p0
+tar -xvjf %{SOURCE40}
 
 %build
 sed -i '7,24d' setup.py
@@ -48,7 +48,7 @@ DISPLAY=:0 python2 setup.py install --root=%{buildroot}
 #xdg menu
 #icon
 install -d -m 755 %{buildroot}/%{_datadir}/pixmaps
-install -m 644 %{_sourcedir}/loemu-32.png %{buildroot}/%{_datadir}/pixmaps/loemu.png
+install -m 644 %{SOURCE10} %{buildroot}/%{_datadir}/pixmaps/loemu.png
 #menu
 install -d -m 755 %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/loemu.desktop << EOF
@@ -75,9 +75,6 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 %{_datadir}/pixmaps/loemu.png
 %{_datadir}/applications/loemu.desktop
 %{python2_sitelib}/loemu*
-
-%clean
-rm -rf %{buildroot}
 
 %changelog
 * Mon Mar 12 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.1

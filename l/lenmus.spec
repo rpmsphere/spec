@@ -27,7 +27,7 @@ BuildRequires:  make
 BuildRequires:  portmidi-devel
 BuildRequires:  sqlite-devel
 BuildRequires:  unittest-cpp-devel
-BuildRequires:  wxGTK3-devel
+BuildRequires:  wxGTK-devel
 BuildRequires:  zlib-devel
 BuildRequires:  fluid-soundfont-gm
 Requires:       lomse
@@ -41,7 +41,7 @@ It includes an score editor.
 
 %prep
 %setup -q
-sed -i -e 's|-Wall|-Wall -fPIC -fpermissive|' -e '272s|^#set|set|' -e 's|wx-config|wx-config-3.0|' CMakeLists.txt
+sed -i -e 's|-Wall|-Wall -fPIC -fpermissive|' -e '272s|^#set|set|' -e 's|wx-config|wx-config-3.2|' CMakeLists.txt
 
 %build
 cmake -DCMAKE_INSTALL_PREFIX=%{_prefix} -DPortTime_LIBRARY=%{_libdir}/libportmidi.so .

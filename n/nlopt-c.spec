@@ -59,7 +59,7 @@ implementations of various other algorithms.
 
 %prep
 %setup -q -n %{_name}-%{version}
-%patch0 -p1
+%patch 0 -p1
 
 %build
 %configure --enable-shared --disable-static
@@ -74,9 +74,6 @@ test -d %{buildroot}%{_prefix}/lib && \
      mv %{buildroot}%{_prefix}/lib/python*/* %{buildroot}%{python_sitearch} && \
      rm -rf %{buildroot}%{_prefix}/lib
 %endif
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README TODO

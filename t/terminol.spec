@@ -22,6 +22,7 @@ and a small resource footprint.
 %setup -q -n %{name}-master
 sed -i '/Werror/d' common.mak
 sed -i '11i #include <limits>' terminol/common/deduper_interface.hxx
+sed -i '13i #include <cstdint>' terminol/support/conv.hxx terminol/support/cache.hxx
 
 %build
 ./configure build release gnu

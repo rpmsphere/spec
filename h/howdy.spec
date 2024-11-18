@@ -2,18 +2,19 @@
 
 Name:           howdy
 Version:        2.6.1
-Release:	1
+Release:        1
 Summary:        Windows Hello™ style authentication for Linux
 License:        MIT
 URL:            https://github.com/boltgolt/%{name}
-Source0:	https://github.com/boltgolt/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
-Source1:	com.github.boltgolt.howdy.policy
-#BuildRequires:	polkit-devel
-BuildRequires:	pkgconfig(python3)	
+Source0:        https://github.com/boltgolt/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
+Source1:        com.github.boltgolt.howdy.policy
+#BuildRequires: polkit-devel
+BuildRequires:  pkgconfig(python3)      
 BuildRequires:  python3-setuptools
-Requires:	python3-opencv
-Requires:	python3-pam
-BuildArch:	noarch
+BuildRequires:  python-rpm-macros
+Requires:       python3-opencv
+Requires:       python3-pam
+BuildArch:      noarch
 
 %description
 Windows Hello™ style authentication for Linux. Use your built-in IR emitters
@@ -21,7 +22,7 @@ and camera in combination with face recognition to prove who you are.
 
 %prep
 %autosetup
-pathfix.py -i %{__python3} .
+python3 /usr/lib/rpm/redhat/pathfix.py -i %{__python3} .
 
 %build
 ## nothing to build

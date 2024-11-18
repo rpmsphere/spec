@@ -45,9 +45,6 @@ install -p -m 755 po/zh_CN.gmo $RPM_BUILD_ROOT/%{_datadir}/locale/zh_CN/LC_MESSA
 install -p -m 644 %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps/
 install -p -m 644 %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc COPYING
 %{_bindir}/multiget

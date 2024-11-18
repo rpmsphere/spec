@@ -17,6 +17,7 @@ with various improvements.
 sed -i '426i chdir("/usr/share/xbomber");' xbomber.c
 
 %build
+sed -i 's|CFLAGS=|CFLAGS=-Wno-implicit-function-declaration |' makefile
 make
 
 %install
@@ -103,7 +104,7 @@ install -m 644 -o 0 -g 0 bitmaps/warp.xbm $INSTPATH/bitmaps/warp.xbm
 
 mkdir -p $INSTPATH/levels
 for loop in levels/*; do
-	install -m 644 -o 0 -g 0 $loop $INSTPATH/$loop
+        install -m 644 -o 0 -g 0 $loop $INSTPATH/$loop
 done
 
   # install the sounds
@@ -111,10 +112,10 @@ done
 mkdir -p $INSTPATH/sounds
 mkdir -p $INSTPATH/sounds/numbers
 for loop in sounds/*.au; do
-	install -m 644 -o 0 -g 0 $loop $INSTPATH/$loop
+        install -m 644 -o 0 -g 0 $loop $INSTPATH/$loop
 done
 for loop in sounds/numbers/*.au; do
-	install -m 644 -o 0 -g 0 $loop $INSTPATH/$loop
+        install -m 644 -o 0 -g 0 $loop $INSTPATH/$loop
 done
 
 %files

@@ -1,11 +1,11 @@
-Name:		cyberprobe
-Version:	2.5.2
-Release:	1
-Summary:	Distrbuted real-time monitoring of networks against attack.
-Group:		Applications/Internet
-License:	GPLv3
-URL:		https://cybermaggedon.github.io/cyberprobe-docs/
-Source:		%{name}-%{version}.tar.gz
+Name:           cyberprobe
+Version:        2.5.2
+Release:        1
+Summary:        Distrbuted real-time monitoring of networks against attack.
+Group:          Applications/Internet
+License:        GPLv3
+URL:            https://cybermaggedon.github.io/cyberprobe-docs/
+Source:         %{name}-%{version}.tar.gz
 BuildRequires:  libpcap-devel
 
 %description
@@ -24,6 +24,7 @@ Please see documentation in /usr/share/doc/cyberprobe.
 %prep
 %autosetup
 sed -i '6i #include <cstdint>' include/cyberprobe/util/hardware_addr_utils.h include/cyberprobe/protocol/tls_utils.h
+sed -i 's|TLS_method|DTLS_method|' src/network/socket.C
 
 %build
 %configure
@@ -43,9 +44,6 @@ ln -sf %{_docdir}/cyberprobe/architecture-small.png ${RPM_BUILD_ROOT}%{_infodir}
 
 %postun
 %systemd_postun_with_restart cyberprobe.service cybermon.service
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %exclude /usr/share/info/dir

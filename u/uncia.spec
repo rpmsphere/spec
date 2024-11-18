@@ -1,15 +1,15 @@
-Name:		uncia
-Version:	1.3
-Release:	1
-Summary:	Text File Manipulation Command Line Tool
-Source:		https://uncia.sourceforge.net/uncia-%{version}.tar.gz
-Patch1:		uncia-fix_headers.patch
-URL:		https://uncia.sourceforge.net/
-Group:		Productivity/Text/Utilities
-License:	GNU General Public License version 2 or later (GPL v2 or later)
-BuildRequires:	bison flex boost-devel zlib-devel curl-devel
-BuildRequires:	gcc-c++ libstdc++-devel
-BuildRequires:	glibc-devel automake libtool
+Name:           uncia
+Version:        1.3
+Release:        1
+Summary:        Text File Manipulation Command Line Tool
+Source:         https://uncia.sourceforge.net/uncia-%{version}.tar.gz
+Patch1:         uncia-fix_headers.patch
+URL:            https://uncia.sourceforge.net/
+Group:          Productivity/Text/Utilities
+License:        GNU General Public License version 2 or later (GPL v2 or later)
+BuildRequires:  bison flex boost-devel zlib-devel curl-devel
+BuildRequires:  gcc-c++ libstdc++-devel
+BuildRequires:  glibc-devel automake libtool
 BuildRequires:  libexplain-devel
 
 %description
@@ -44,9 +44,6 @@ sed -i 's|bison -y|byacc|' configure etc/yacc.cook
 %install
 %__rm -rf "$RPM_BUILD_ROOT"
 make DESTDIR=$RPM_BUILD_ROOT install
-
-%clean
-%__rm -rf "$RPM_BUILD_ROOT"
 
 %files
 %{_bindir}/uncia

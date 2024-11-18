@@ -18,7 +18,7 @@ BuildRequires: libstdc++-static
 BuildRequires: blas-devel
 BuildRequires: fox-devel
 Requires: lua
-Source1:	https://luajit.org/download/LuaJIT-2.1.0-beta3.tar.gz
+Source1:        https://luajit.org/download/LuaJIT-2.1.0-beta3.tar.gz
 
 %description
 GSL shell offers an interactive command-line interface that gives access
@@ -39,6 +39,7 @@ make -C luajit2
 mkdir .libs
 cp luajit2/src/libluajit.a .libs/
 sed -i 's|-Wall|-Wall -fPIE|' Makefile */Makefile */*/Makefile
+export PKG_CONFIG_PATH=%{_libdir}/pkgconfig
 make
 
 %install
@@ -52,9 +53,6 @@ mv $RPM_BUILD_ROOT%{_bindir}/examples $RPM_BUILD_ROOT%{_datadir}/%{name}
 %{_datadir}/%{name}
 %{_datadir}/applications/gsl-shell.desktop
 %{_datadir}/icons/hicolor/128x128/apps/gsl-shell.png
-
-%clean
-%__rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Thu Oct 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.2

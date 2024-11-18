@@ -10,7 +10,7 @@ Group:          Development/Libraries/Python
 Source:         https://pyamg.googlecode.com/files/%{modname}-%{version}.tar.gz
 Requires:       python3-scipy numpy
 BuildRequires:  python3-devel
-BuildRequires:	gcc-c++ numpy python3-scipy atlas-devel suitesparse-devel
+BuildRequires:  gcc-c++ numpy python3-scipy atlas-devel suitesparse-devel
 BuildRequires:  python-sphinx environment-modules
 BuildRequires:  python-pygments python3-setuptools
 
@@ -28,9 +28,6 @@ python3 setup.py build
 %install
 python3 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc INSTALL.txt LICENSE.txt
 %{python3_sitearch}/%{modname}*
@@ -38,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Wed Jul 31 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.0
 - Rebuilt for Fedora
-* Sun Oct 10 2011 scorot@gtt.fr - 2.0.0
+* Mon Oct 10 2011 scorot@gtt.fr - 2.0.0
 - fix python-Sphinx requirement
 * Fri Mar 18 2011 scorot@gtt.fr - 2.0.0
 - version 2.0.0

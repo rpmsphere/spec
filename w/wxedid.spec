@@ -4,7 +4,7 @@ Release:        2.1
 Summary:        Extended Display Identification Data editor
 License:        GPL-3.0
 Group:          Hardware/Other
-Url:            https://sourceforge.net/projects/wxedid/
+URL:            https://sourceforge.net/projects/wxedid/
 Source0:        https://sourceforge.net/projects/wxedid/files/wxedid-%{version}.tar.gz
 BuildRequires:  gcc-c++
 BuildRequires:  wxWidgets-devel

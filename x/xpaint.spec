@@ -21,7 +21,7 @@ BuildRequires: Xaw3d-devel
 BuildRequires: libXaw3dXft-devel
 BuildRequires: netpbm-devel
 BuildRequires: libpgf-devel
-BuildRequires: neXtaw-devel
+#BuildRequires: neXtaw-devel
 Requires: cups, gv, psutils
 
 # The only way of compiling and linking plugins on the fly.
@@ -101,9 +101,6 @@ rm -rf %{buildroot}%{_libdir}/app-defaults
 #mkdir -p %{buildroot}%{_includedir}
 #mv %{buildroot}%{_datadir}/%{name}/include %{buildroot}%{_includedir}/%{name}
 #ln -s ../../include/%{name} %{buildroot}%{_datadir}/%{name}/include
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %doc AUTHORS ChangeLog COPYING NEWS README README.old README.PNG TODO Doc/sample.Xdefaults Doc/Operator.doc Doc/TextFormat.doc

@@ -19,8 +19,10 @@ is closer to that of Python and Smalltalk.
 
 %prep
 %setup -q -n ZKL
+sed -i '43s|//||' VM/sfmt.c
 
 %build
+export CFLAGS="-std=c90"
 make -C VM %{name}
 
 %install
@@ -30,9 +32,6 @@ install -Dm755 Bin/%{name} %{buildroot}%{_bindir}/%{name}
 %files 
 %doc VM/*.txt
 %{_bindir}/%{name}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Sun Mar 21 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.14.7

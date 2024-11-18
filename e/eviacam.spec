@@ -1,15 +1,16 @@
-Name:		eviacam
-Version:	2.1.4git
-Release:	1
-Summary:	A mouse cursor emulator tracking the users eye movement through a webcam
-Group:	        Applications/System
-License:	GPLv3+
-URL:		https://github.com/cmauri/eviacam
-#Source0:	https://github.com/cmauri/eviacam/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-Source0:	%{name}-master.zip
+Name:           eviacam
+Version:        2.1.4git
+Release:        1
+Summary:        A mouse cursor emulator tracking the users eye movement through a webcam
+Group:          Applications/System
+License:        GPLv3+
+URL:            https://github.com/cmauri/eviacam
+#Source0:       https://github.com/cmauri/eviacam/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:        %{name}-master.zip
 BuildRequires:  libpng-devel
-BuildRequires:	gcc-c++, libv4l-devel, atlas-devel, opencv-devel, libXtst-devel, libXext-devel, gettext, desktop-file-utils
-BuildRequires:	wxGTK3-devel
+BuildRequires:  gcc-c++, libv4l-devel, atlas-devel, opencv-devel, libXtst-devel, libXext-devel, gettext, desktop-file-utils
+#BuildRequires:  wxGTK-devel
+BuildRequires:  wxBase-devel
 Patch0:         %{name}-2.1.1-fix.patch
 
 %description
@@ -18,21 +19,22 @@ accordingly. It provides a GTK user interface for configuration.
 It works with any common camera.
 
 %package help
-Summary:	Help files for %{name}
-BuildArch:	noarch
-Requires:	%{name}
+Summary:        Help files for %{name}
+BuildArch:      noarch
+Requires:       %{name}
 
 %description help
 This package contains the help files for %{name}.
 
 %prep
 %setup -q -n %{name}-master
-%patch0 -p1
+%patch 0 -p1
 #sed -i '1i #include <opencv2/imgproc.hpp>' wxcamwindow/visiblenormroi.cpp
+sed -i '601d' src/wviacam.cpp
 
 %build
 ./autogen.sh
-%configure --with-wx-config=wx-config-3.0
+%configure --with-wx-config=wx-config-3.2
 make
 
 %install
@@ -40,9 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 %find_lang %{name}
 desktop-file-validate $RPM_BUILD_ROOT/%{_datadir}/applications/%{name}.desktop
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc README COPYING AUTHORS ChangeLog INSTALL THANKS TODO

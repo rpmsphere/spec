@@ -15,10 +15,10 @@ the comfortable and elegant programming of complex state machines.
 
 %prep
 %setup -q
-sed -i -e '441i =back' -e '449i =back' -e 's|Copyright.*2002|Copyright (C) 2002|' src/ccide.pod.in
 
 %build
 %configure
+sed -i -e '441i =back' -e '449i =back' -e '/Copyright/d' src/ccide.pod
 %{__make} %{_smp_mflags -O}
 
 %install

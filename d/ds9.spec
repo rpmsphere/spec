@@ -24,10 +24,13 @@ extensible.
 
 %prep
 %setup -q -n sao%{name}
-sed -i -e 's|usr/X11R6|usr|' -e 's|44||' -e 's|-fPIC|-fPIC -fpermissive|' make.linux*
+sed -i -e 's|usr/X11R6|usr|' -e 's|44||' make.linux*
+sed -i 's|-Wall|-Wall -fpermissive -Wno-int-conversion -Wno-implicit-function-declaration|' make.linux*
+sed -i 's|-fno-inline|-fno-inline -fpermissive -Wno-int-conversion -Wno-implicit-function-declaration|' make.linux*
 sed -i -e 's|-lxml2|-lxml2 -lfontconfig -lfreetype|' ds9/Makefile
 sed -i "s|0x8b|'\x8b'|" saotk/fitsy++/outsocket.C
 sed -i 's|mapdata_>0|mapdata_ != NULL|' saotk/fitsy++/*.C
+sed -i 's|typedef int ptrdiff_t|typedef long int ptrdiff_t|' tcl8.5.9/generic/tclInt.h
 
 %build
 for i in */config.guess */*/config.guess */*/*/config.guess */*/*/*/config.guess
@@ -45,6 +48,7 @@ ln -s make.linux make.include
 cd ast-7.1.1
 ./configure --enable-shared=no --prefix=/root/rpmbuild/BUILD/saods9  CC='gcc'
 cd ..
+#sed -i 's|-fno-inline|-fno-inline -fpermissive -Wno-int-conversion -Wno-implicit-function-declaration|' `find . -name Makefile` `find . -name Makefile.in`
 make
 
 %install
@@ -57,9 +61,6 @@ cp bin/ds9 $RPM_BUILD_ROOT/usr/bin
 %{__cp} -a %{SOURCE1} $RPM_BUILD_ROOT/%{_datadir}/applications
 %{__mkdir_p} $RPM_BUILD_ROOT/etc/prelink.conf.d
 %{__cp} -a %{SOURCE3} $RPM_BUILD_ROOT/etc/prelink.conf.d
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README notes.txt copyright COPYING

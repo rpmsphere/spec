@@ -42,6 +42,7 @@ server, allowing others to access the desktop on your machine.
 %prep
 %setup -q -n vnc_unixsrc
 cp %{SOURCE1} include/tcpd.h
+sed -i '32i #include <time.h>' libvncauth/vncauth.c
 
 %{__perl} -pi -e 's|/usr/local/vnc/classes|%{_datadir}/vnc/classes|;' vncserver
 %{__perl} -pi -e 's|unix/:7100|unix/:-1|;' vncserver
@@ -175,11 +176,11 @@ sed -i 's|-Dlinux LinuxMachineDefines|-Dlinux -D__aarch64__|' Xvnc/config/cf/lin
 patch < vnc-xclients.patch
 
 xmkmf -a
-%{__make} World CDEBUGFLAGS="-O2 -g -pipe -Wall"
+%{__make} World CDEBUGFLAGS="-O2 -g -pipe -Wall -Wno-implicit-function-declaration"
 cd Xvnc
 %configure
 sed -i 's|ar clq|ar cq|' `find . -name Makefile`
-%{__make} CDEBUGFLAGS="-O2 -g -pipe -Wall" \
+%{__make} CDEBUGFLAGS="-O2 -g -pipe -Wall -Wno-implicit-function-declaration" \
     EXTRA_DEFINES="-DUSE_LIBWRAP=1" \
     EXTRA_LIBRARIES="-lwrap -lnss_nis -Wl,--allow-multiple-definition"
 
@@ -200,9 +201,6 @@ sed -i 's|ar clq|ar cq|' `find . -name Makefile`
 desktop-file-install --vendor ""    \
         --dir %{buildroot}%{_datadir}/applications \
         vncviewer.desktop
-
-%clean
-%{__rm} -rf %{buildroot}
 
 %post server
 /sbin/chkconfig --add vncserver

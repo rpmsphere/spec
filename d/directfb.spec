@@ -38,6 +38,7 @@ BuildRequires: mesa-libEGL-devel
 BuildRequires: mesa-libGLES-devel
 BuildRequires: mesa-libgbm-devel
 BuildRequires: tslib-devel
+BuildRequires: fluxcomp
 
 %description
 DirectFB is a thin library that provides hardware graphics acceleration,
@@ -68,9 +69,9 @@ Development files for DirectFB.
 
 %prep
 %setup -q -n DirectFB-DIRECTFB_1_7_7
-%patch2 -p1 -b .fix_v4l1
+%patch 2 -p1 -b .fix_v4l1
 #patch3 -p1 -b .lm
-%patch4 -p1 -b .arm-atomics
+%patch 4 -p1 -b .arm-atomics
 #patch5 -p1 -b .davinci
 #patch6 -p1 -b .vdpau
 #patch8 -p1 -b .stride
@@ -106,7 +107,7 @@ sed -i 's|region->context|region->context_id|' wm/unique/test_foo.c
 # Remove rpath for 64bit
 sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' libtool
 sed -i 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' libtool
-
+sed -i -e 's|-Wall|-Wall -Wno-int-conversion -Wno-incompatible-pointer-types|' -e 's|-fPIC|-fPIC -Wno-int-conversion -Wno-incompatible-pointer-types|' libtool `find . -name Makefile`
 make %{?_smp_mflags} V=1
 
 %install
@@ -342,17 +343,17 @@ install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 * Sat Jun 21 2008 kwizart < kwizart at gmail.com > - 1.1.1-1
 - Update to 1.1.1
 - Add --enable-multi 
-* Wed Aug 22 2007 Matthias Saou <http://freshrpms.net/> 1.0.0-3
+* Wed Aug 22 2007 Matthias Saou <https://freshrpms.net/> 1.0.0-3
 - Rebuild for new BuildID feature.
-* Mon Aug  6 2007 Matthias Saou <http://freshrpms.net/> 1.0.0-2
+* Mon Aug  6 2007 Matthias Saou <https://freshrpms.net/> 1.0.0-2
 - Update License field.
-* Mon Apr  9 2007 Matthias Saou <http://freshrpms.net/> 1.0.0-1
+* Mon Apr  9 2007 Matthias Saou <https://freshrpms.net/> 1.0.0-1
 - Update to 1.0.0 final.
 - No longer disable MMX on x86_64, it builds again.
 - Disable /usr/lib64 rpath on 64bit.
-* Fri Feb  2 2007 Matthias Saou <http://freshrpms.net/> 1.0.0-0.1.rc3
+* Fri Feb  2 2007 Matthias Saou <https://freshrpms.net/> 1.0.0-0.1.rc3
 - Update to 1.0.0-rc3.
-* Wed Jan 17 2007 Matthias Saou <http://freshrpms.net/> 1.0.0-0.1.rc2
+* Wed Jan 17 2007 Matthias Saou <https://freshrpms.net/> 1.0.0-0.1.rc2
 - Update to 1.0.0-rc2.
 - Include sysfs patch from Eric Moret (#204568).
 - Require sysfs devel package in the devel sub-package.
@@ -360,10 +361,10 @@ install -m644 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
 - Update asmtypes patch, required to get this rc2 to build.
 - Disable MMX on x86_64 since some asm code fails to build otherwise.
 - No longer pass an explicit list of drivers to configure since default is all.
-* Thu Oct 19 2006 Matthias Saou <http://freshrpms.net/> 1.0.0-0.1.rc1
+* Thu Oct 19 2006 Matthias Saou <https://freshrpms.net/> 1.0.0-0.1.rc1
 - Update to 1.0.0-rc1.
 - Include the new mkdfiff program (DirectFB Fast Image File Format).
-* Thu Sep 14 2006 Matthias Saou <http://freshrpms.net/> 0.9.25.1-3
+* Thu Sep 14 2006 Matthias Saou <https://freshrpms.net/> 0.9.25.1-3
 - FC6 rebuild.
 - Remove gcc-c++ build requirement, it's a default now.
 - End directory lines in %%files with slashes to identify them more easily.

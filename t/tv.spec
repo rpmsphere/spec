@@ -28,9 +28,6 @@ output by PAUP, ClustalX, TREE-PUZZLE, and other programs).
 %__rm -rf $RPM_BUILD_ROOT
 %__make DESTDIR=$RPM_BUILD_ROOT install
 
-%clean
-%__rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc INSTALL COPYING
 %{_bindir}/tv

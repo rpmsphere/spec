@@ -28,14 +28,12 @@ sed -i -e 's|cybergarage/cupnp\.h|cybergarage/upnp/cupnp.h|' -e 's/new=no/new=ye
 
 %build
 %configure --prefix=/usr LIBS='-lexpat -lpthread -luuid'
+sed -i 's|-Wall|-Wall -Wno-incompatible-pointer-types|' `find . -name Makefile`
 make
 
 %install
 %__rm -rf %{buildroot}
 %__make install DESTDIR=%{buildroot}
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %doc ChangeLog COPYING

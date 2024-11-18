@@ -17,6 +17,7 @@ the brainfuck programming language.
 %prep
 %setup -q -n %{name}
 sed -i -e 's|dylib|so|' -e 's|"i386"|*6*|' -e 's|$binary|%{buildroot}%{_bindir}|' -e 's|$manpage|%{buildroot}%{_datadir}/man|' -e 's|-02|-O2|' configure
+sed -i 's|uname -p|uname -m|' configure
 
 %build
 %configure

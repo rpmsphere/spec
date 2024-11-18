@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:		winusb
-License:	GPL v2
-Group:		Utilities/System
-Version:	1.0.11
-Release:	10.1
-Summary:	Create your own usb stick windows installer
-URL:		https://en.congelli.eu/prog_info_winusb.html
-BuildRequires:	gcc-c++ libstdc++-devel wxGTK2-devel gzip
-BuildRequires:	ghostscript-core ImageMagick
-Source0:	https://en.congelli.eu/download/winusb/%{name}-%{version}.tar.gz
+Name:           winusb
+License:        GPL v2
+Group:          Utilities/System
+Version:        1.0.11
+Release:        10.1
+Summary:        Create your own usb stick windows installer
+URL:            https://en.congelli.eu/prog_info_winusb.html
+BuildRequires:  gcc-c++ libstdc++-devel wxGTK2-devel gzip
+BuildRequires:  ghostscript-core ImageMagick
+Source0:        https://en.congelli.eu/download/winusb/%{name}-%{version}.tar.gz
 
 %description  
 WinUSB is a simple tool that enable you to create your own usb stick windows
@@ -37,9 +37,6 @@ for res in 16x16 22x22 24x24 32x32 36x36 48x48 64x64 72x72 96x96; do \
   convert %{buildroot}%{_datadir}/pixmaps/winusbgui-icon.png -resize ${res} %{buildroot}%{_datadir}/icons/hicolor/${res}/apps/winusbgui-icon.png
 done
 
-%clean
-rm -rf $RPM_BUILD_ROOT  
-  
 %files
 %{_bindir}/winusb*
 %{_datadir}/applications/winusbgui.desktop

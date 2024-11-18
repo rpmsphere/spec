@@ -26,6 +26,7 @@ make %{?_smp_mflags}
 make man
 
 %install
+sed -i '/chown/d' Makefile
 %make_install PREFIX=%_prefix
 mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
 

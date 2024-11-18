@@ -1,5 +1,5 @@
 %global __os_install_post %{nil}
-%define MTFolder "Modeltest3.6 folder"
+%undefine _debugsource_packages
 
 Summary: Helps choose the model of DNA substitution that best fits the data
 Name: modeltest
@@ -19,30 +19,23 @@ through an implementation of hierarchical likelihood ratio tests and the AIC
 criterion.
 
 %prep
-cd %{_builddir}
-rm -rf %{name}
-mkdir %{name}
-cd %{name}
-unzip -qq %{_sourcedir}/modeltest3.6.zip
+%setup -q -n Modeltest3.6\ folder
 
 %build
-cd %{_builddir}/%{name}/%{MTFolder}/source
-sed -i 's|-fast||' Makefile
+cd source
+sed -i -e 's|-fast|-Ofast|' -e 's|gcc -c|gcc -Wno-implicit-function-declaration -c|' Makefile
 make 
 
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 mkdir -p $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}/{doc,license,paupblock,sample}
-install -m 755 %{name}/%{MTFolder}/README.html $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
-install -m 755 %{name}/%{MTFolder}/source/modeltest%{version} $RPM_BUILD_ROOT%{_bindir}
-install -m 755 %{name}/%{MTFolder}/doc/Modeltest3.6.pdf $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}/doc
-install -m 755 %{name}/%{MTFolder}/license/gpl.html $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}/license
-install -m 755 %{name}/%{MTFolder}/paupblock/modelblockPAUPb10 $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}/paupblock
-install -m 755 %{name}/%{MTFolder}/sample/{sample.log,sample.unix.scores,sample.nex,sample.out} $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}/sample
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+install -m 755 README.html $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
+install -m 755 source/modeltest%{version} $RPM_BUILD_ROOT%{_bindir}
+install -m 755 doc/Modeltest3.6.pdf $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}/doc
+install -m 755 license/gpl.html $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}/license
+install -m 755 paupblock/modelblockPAUPb10 $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}/paupblock
+install -m 755 sample/{sample.log,sample.unix.scores,sample.nex,sample.out} $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}/sample
 
 %files
 %{_bindir}/modeltest%{version}

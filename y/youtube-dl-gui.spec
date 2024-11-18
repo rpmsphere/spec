@@ -1,20 +1,20 @@
-Summary:	GUI for youtube-dl
-Name:		youtube-dl-gui
-Version:	1.8.3
-Release:	1
-License:	Public Domain
-Group:		Video
-URL:		https://github.com/oleksis/youtube-dl-gui
-Source0:	%{name}-%{version}.tar.gz
-BuildRequires:	python2-setuptools
-BuildRequires:	python2-wxpython
-BuildRequires:	pkgconfig(libtiff-4)
+Summary:        GUI for youtube-dl
+Name:           youtube-dl-gui
+Version:        1.8.3
+Release:        1
+License:        Public Domain
+Group:          Video
+URL:            https://github.com/oleksis/youtube-dl-gui
+Source0:        %{name}-%{version}.tar.gz
+BuildRequires:  python2-setuptools
+BuildRequires:  python2-wxpython
+BuildRequires:  pkgconfig(libtiff-4)
 BuildRequires:  python3
 #BuildRequires:  python2-twodict
-Requires:	ffmpeg
-Requires:	python2-wxpython
-Requires:	youtube-dl
-BuildArch:	noarch
+Requires:       ffmpeg
+Requires:       python2-wxpython
+Requires:       youtube-dl
+BuildArch:      noarch
 
 %description
 Youtube-dlG is a multi-platform GUI for the popular command line video

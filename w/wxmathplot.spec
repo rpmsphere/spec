@@ -38,9 +38,6 @@ rm -rf %{buildroot}
 mv %{buildroot}/usr/lib %{buildroot}/usr/lib64
 %endif
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %doc README Changelog
 %{_libdir}/lib*.so

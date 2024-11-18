@@ -13,7 +13,7 @@ BuildRequires:  gtk3-devel
 BuildRequires:  libxml2-devel
 BuildRequires:  python3
 BuildRequires:  vala
-BuildRequires:  webkitgtk4-devel
+BuildRequires:  webkit2gtk4.1-devel
 BuildRequires:  libnotify-devel
 BuildRequires:  libgee-devel
 BuildRequires:  gdk-pixbuf2-devel

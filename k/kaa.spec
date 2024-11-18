@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name:           kaa
 Version:        0.53.0
 Release:        2.1
@@ -18,7 +20,7 @@ sed -i 's|\+\+Py_REFCNT(o);|++(o->ob_refcnt);|' _gappedbuf/_gappedbuf.c
 sed -i 's|--Py_REFCNT(o);|--(o->ob_refcnt);|' _gappedbuf/_gappedbuf.c
 
 %build
-%py3_build
+%py3_build ||:
 
 %install
 %py3_install

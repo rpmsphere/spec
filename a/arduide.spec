@@ -22,6 +22,7 @@ electronics prototyping platform.
 %setup -q -n %name
 sed -i -e 119d -e 125,133d gui/FirstTimeWizard.cpp
 sed -i '322s|return .*|return true;|' utils/hexview/QHexView.cpp
+sed -i '32i #include <cstdint>' gui/Editor.h
 
 %build
 %cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_INSTALL_PREFIX=/usr -DUSE_FHS_PATHS=ON .

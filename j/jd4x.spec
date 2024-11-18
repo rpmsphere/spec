@@ -6,9 +6,11 @@ Release:        2
 Summary:        Java Desktop for X Window
 Group:          User Interface/Desktops
 License:        GPL
-URL:		https://jdx.sourceforge.net/
-Source0: 	https://jaist.dl.sourceforge.net/project/jdx/Documentation%20%28JD4X%20Core%29/jd4x-stable-v%{version}/%{name}-src.tar.gz   
-BuildRequires: java-1.8.0-openjdk-devel lua
+URL:            https://jdx.sourceforge.net/
+Source0:        https://jaist.dl.sourceforge.net/project/jdx/Documentation%20%28JD4X%20Core%29/jd4x-stable-v%{version}/%{name}-src.tar.gz   
+#BuildRequires: java-1.8.0-openjdk-devel
+BuildRequires: java-devel
+BuildRequires: lua
 BuildRequires: libX11-devel
 BuildRequires: libXpm-devel
 BuildRequires: libXt-devel
@@ -23,7 +25,9 @@ website for more details.
 
 %prep
 %setup -q -n %{name}
-sed -i -e 's|JDK=.*|JDK=/usr/lib/jvm/java/include|' -e 's|CFLAGS=.*|CFLAGS=-O2 -fPIC|' -e 's|-static||' linux/makefile moth/makefile
+sed -i -e 's|JDK=.*|JDK=/usr/lib/jvm/java/include|' -e 's|CFLAGS=.*|CFLAGS=-O2 -fPIC -Wno-return-mismatch -Wno-implicit-function-declaration|' -e 's|-static||' linux/makefile moth/makefile
+sed -i 's|${JCH}.*|javac -classpath ${BUILD} -h ${INC} *.java|' linux/makefile moth/makefile
+sed -i '33i #include <string.h>' moth/window.c
 
 %build
 make all misc
@@ -32,9 +36,6 @@ make all misc
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_libdir}
 cp -a build/%{name} $RPM_BUILD_ROOT%{_libdir}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc SUPPORT COPYING

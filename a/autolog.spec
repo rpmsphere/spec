@@ -1,11 +1,11 @@
-Summary:	Auto logout daemon - chase sleeping users
-Name:		autolog
-Version:	0.40
-Release:	1
+Summary:        Auto logout daemon - chase sleeping users
+Name:           autolog
+Version:        0.40
+Release:        1
 License:        GPL
-URL:		https://www.cip-bau.uni-hannover.de/~juerges
-Group:		Daemons
-Source:		autolog-0.40.tar.gz
+URL:            https://www.cip-bau.uni-hannover.de/~juerges
+Group:          Daemons
+Source:         autolog-0.40.tar.gz
 
 %description
 This program wakes up from time to time and looks around for users
@@ -31,8 +31,10 @@ Authors:
 %prep
 %setup -q
 sed -i '518,527s|rpb\.|rpb.__|' autolog.c
+sed -i '65i #include <ctype.h>\n#include <stdlib.h>' autolog.c
 
 %build
+sed -i 's|^CFLAGS.*|CFLAGS = -g -Wno-implicit-int -Wno-implicit-function-declaration -Wno-return-mismatch -Wno-incompatible-pointer-types|' Makefile
 rm autolog
 make autolog
 

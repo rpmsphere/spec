@@ -7,10 +7,10 @@ Release:        1
 License:        GPLv2+
 Group:          Development/Tools
 Summary:        CodeLite is a powerful open-source, cross platform code editor for C/C++
-URL:            http://codelite.sourceforge.net
-Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:            https://github.com/eranif/codelite
+Source:         https://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Requires:       libssh clang clang-tools-extra SDL
-BuildRequires:	gcc gcc-c++ wxGTK-devel cmake clang-devel lldb-devel libssh-devel hunspell-devel sqlite-devel libXtst-devel
+BuildRequires:  gcc gcc-c++ wxGTK-devel cmake clang-devel lldb-devel libssh-devel hunspell-devel sqlite-devel libXtst-devel
 # Filter out these false-alarms from 'requires', as the package itself supplies them!
 %{?filter_setup:
 %filter_from_requires libcodeliteu.so; libpluginu.so; libwxscintillau.so; libwxsqlite3u.so;
@@ -26,6 +26,7 @@ users to easily create, build and debug complex projects.
 %ifarch aarch64
 sed -i 's|SIGSTKSZ|8192|' sdk/codelite_cppcheck/cli/cppcheckexecutor.cpp
 %endif
+sed -i '168s|const||' Plugin/dtl/Diff.hpp
 
 %build
 mkdir -p build_release
@@ -78,9 +79,6 @@ desktop-file-install  --delete-original       \
                 $RPM_BUILD_ROOT%{_datadir}/applications/codelite.desktop
 
 %find_lang %{name}
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %doc AUTHORS LICENSE COPYING 

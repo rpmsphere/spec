@@ -12,7 +12,7 @@ Source2: %{name}.desktop
 BuildRequires: libpng-devel
 BuildRequires: pkgconfig(QtGui) >= 4.6
 BuildRequires: pkgconfig(QtWebKit) >= 4.6
-BuildRequires: qscintilla-devel
+BuildRequires: qscintilla-qt5-devel
 BuildRequires: gcc-c++
 BuildRequires: desktop-file-utils
 
@@ -22,6 +22,7 @@ A text editor using QScintilla.
 %prep
 %setup -q
 sed -i 's|hiddenBox (false),|hiddenBox (0),|' src/permute.cpp
+sed -i '26i #include <cstdint>' src/perm-editbox.h src/lexer-chooser.h src/search-dialog.cpp src/perm-scinti.h
 
 %build
 ./configure
@@ -36,9 +37,6 @@ install -p -m 755 %{name}.png $RPM_BUILD_ROOT%{_datadir}/pixmaps
 desktop-file-install                                    \
 --dir=${RPM_BUILD_ROOT}%{_datadir}/applications         \
 %{SOURCE2}
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc README COPYRIGHT LICENSE.txt

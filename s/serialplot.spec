@@ -8,7 +8,8 @@ Group: devel
 License: Free Software
 Source0: %{name}-%{version}.tar.gz
 BuildRequires: desktop-file-utils
-BuildRequires: qwt-devel
+BuildRequires: qwt5-qt5-devel
+BuildRequires: qwt5-qt4-devel
 BuildRequires: qt5-qtserialport-devel
 BuildRequires: qt5-qtsvg-devel
 #Requires: libqt5widgets5

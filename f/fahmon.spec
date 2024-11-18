@@ -25,11 +25,11 @@ worth).
 
 %prep
 %setup -qn FahMon-%{version}
-%patch0
+%patch 0
 sed -i -e '52,54d' -e '80d' src/main.cpp
 
 %build
-alternatives --set wx-config /usr/bin/wx-config-2.0
+#alternatives --set wx-config /usr/bin/wx-config-2.0
 %configure --disable-static
 make %{?_smp_mflags}
 

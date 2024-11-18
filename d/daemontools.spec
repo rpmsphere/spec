@@ -8,7 +8,7 @@ License: Public Domain
 URL: https://cr.yp.to/daemontools/
 Source: https://cr.yp.to/daemontools/daemontools-0.76.tar.gz
 Source1: https://smarden.org/pape/djb/manpages/daemontools-0.76-man.tar.gz
-Patch: errno.patch
+Patch0: errno.patch
 Patch1: fileutils.patch
 Summary: A collection of tools for managing UNIX services
 
@@ -35,9 +35,9 @@ Authors:
 
 %prep
 %setup -q -n admin/daemontools-%{version}/ -a 1
-%patch
-%patch1
-sed -i -e 's|-O2|%{optflags}|g' src/conf-cc
+%patch 0
+%patch 1
+sed -i -e 's|-O2|%{optflags} -Wno-incompatible-pointer-types -Wno-implicit-function-declaration|g' src/conf-cc
 %{__cp} daemontools-man/README README.man-pages
 
 %build
@@ -51,9 +51,6 @@ done
 for i in daemontools-man/*8 ; do
     %{__install} -D -m 0755 $i $RPM_BUILD_ROOT%{_mandir}/man8/${i##man/}
 done
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %files
 %{_sbindir}/envdir

@@ -8,7 +8,7 @@ License:        BSD
 Requires:       runit
 URL:            https://smarden.org/socklog/
 Source:         https://smarden.org/socklog/socklog-%{version}.tar.gz
-Patch:          socklog-2.1.0_compile_warnings.patch
+Patch0:         socklog-2.1.0_compile_warnings.patch
 Patch1:         socklog_2.1.0-4.diff.gz
 Summary:        System and kernel logging services
 
@@ -60,9 +60,9 @@ Authors:
 
 %prep
 %setup -q -n admin/%{name}-%{version}
-%patch
-%patch1 -p1
-sed -i -e 's|-O2|%{optflags}|g' src/conf-cc
+%patch 0
+%patch 1 -p1
+sed -i -e 's|-O2|%{optflags} -Wno-incompatible-pointer-types -Wno-implicit-function-declaration|g' src/conf-cc
 
 %build
 sh package/compile
@@ -106,9 +106,6 @@ done
 ln -s /var/log/socklog $RPM_BUILD_ROOT/etc/sv/socklog-unix/log/main
 touch $RPM_BUILD_ROOT/var/service/socklog-unix
 touch $RPM_BUILD_ROOT/var/service/socklog-klog
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
 
 %pre
 /usr/sbin/groupadd -r log &>/dev/null || :

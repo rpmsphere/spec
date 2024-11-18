@@ -19,6 +19,7 @@ according to the weather.
 
 %prep
 %setup -q
+sed -i '1i msgid ""\nmsgstr "Content-Type: text/plain; charset=UTF-8"' lang/*.po
 
 %build
 make

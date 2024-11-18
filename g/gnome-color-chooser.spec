@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 
-Name:		gnome-color-chooser
-Summary:	Customize the appearance of the GNOME desktop
-Version: 	0.2.5
-Release:	12.5
-License: 	GPLv3+
-Group:		Graphical desktop/GNOME
-Source0:	%{name}/%{name}-%{version}.tar.bz2
-Patch:		gnome-color-chooser-0.2.5-desktop-entry.patch
-URL: 		https://sourceforge.net/projects/gnomecc
+Name:           gnome-color-chooser
+Summary:        Customize the appearance of the GNOME desktop
+Version:        0.2.5
+Release:        12.5
+License:        GPLv3+
+Group:          Graphical desktop/GNOME
+Source0:        %{name}/%{name}-%{version}.tar.bz2
+Patch0:         gnome-color-chooser-0.2.5-desktop-entry.patch
+URL:            https://sourceforge.net/projects/gnomecc
 BuildRequires:  libpng-devel
 #BuildRequires:  libgnomeuimm26-devel
 BuildRequires:  sane-backends-devel
@@ -24,10 +24,10 @@ drawn by whatever gtk engine you want, etc.
 
 %prep
 %setup -q
-%patch -p1
+%patch 0 -p1
 
 %build
-export CXXFLAGS="-std=c++11 -fPIC"
+export CXXFLAGS="-std=c++11 -fPIC -fpermissive"
 %configure
 %__make
 
@@ -35,9 +35,6 @@ export CXXFLAGS="-std=c++11 -fPIC"
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
 %find_lang %name
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %doc README THANKS NEWS AUTHORS

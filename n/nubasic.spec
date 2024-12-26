@@ -1,6 +1,6 @@
 Name: nubasic
 Summary: BASIC language interpreter written in C++11 for educational purposes
-Version: 1.52
+Version: 1.53
 Release: 1
 Group: Development/Language
 License: GPLv2+
@@ -42,7 +42,7 @@ sed -i 's|static volatile gsize|static gsize|' ide/scintilla/gtk/ScintillaGTKAcc
 #{_libdir}/lib%{name}.a
 
 %changelog
-* Sun Sep 04 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.52
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.53
 - Rebuilt for Fedora
 * Thu Sep 11 2014 Fedora 20 Release <acaldmail@gmail.com> - 1.19
 - Rebuild RPM for Fedora distros

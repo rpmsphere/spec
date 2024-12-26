@@ -1,6 +1,5 @@
 Name:           qgo
-Version:        2.0.0
-#Version:        2.1.0
+Version:        2.1.1
 Release:        1
 Summary:        A Go Board and SGF Editor
 License:        GPL-2.0+
@@ -8,7 +7,7 @@ Group:          Amusements/Games/Board/Other
 URL:            https://github.com/pzorin/qgo
 Source:         https://github.com/pzorin/qgo/archive/qt4-final.tar.gz
 #PATCH-FIX-UPSTREAM fix gcc6 narrowing conversion from int to char inside {}
-Patch0:          qgo-2.0.0-gcc6.patch
+Patch0:         qgo-2.0.0-gcc6.patch
 BuildRequires:  qt4-devel
 BuildRequires:  alsa-lib-devel
 
@@ -41,7 +40,7 @@ cp src/translations/*.qm %{buildroot}%{_datadir}/qgo/languages/
 %{_datadir}/qgo
 
 %changelog
-* Wed Jul 18 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.1
 - Rebuilt for Fedora
 * Tue Jun 21 2016 i@marguerite.su
 - add patch: qgo-2.0.0-gcc6.patch

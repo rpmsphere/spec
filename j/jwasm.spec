@@ -1,5 +1,5 @@
 Name: jwasm
-Version: 2.17
+Version: 2.18
 Release: 1
 License: Sybase Open Watcom Public License
 Summary: MASM-compatible assembler
@@ -47,7 +47,7 @@ install -D build/GccUnixD/jwasm %buildroot%_bindir/jwasm
 %_bindir/%name
 
 %changelog
-* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.17
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.18
 - Rebuilt for Fedora
 * Wed Nov 30 2016 Fr. Br. George <george@altlinux.ru> 2.12-alt1
 - Update to GH current version

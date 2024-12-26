@@ -2,7 +2,7 @@
 %{?perl_default_filter}
 
 Name:       perl-%{upstream_name}
-Version:    1.16
+Version:    1.32
 Release:    1
 Summary:    Perl interface to the MPC (multi precision complex) library
 License:    GPL+ or Artistic
@@ -46,5 +46,5 @@ provided by that library. Operator overloading is also available.
 %exclude %{_libdir}/perl5/perllocal.pod
 
 %changelog
-* Sun Oct 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 1.16
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.32
 - Rebuilt for Fedora

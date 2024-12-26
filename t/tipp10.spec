@@ -1,14 +1,15 @@
 %undefine _debugsource_packages
+
 Name:           tipp10
 Summary:        Educational typing tutor
 URL:            https://www.tipp10.de/
 License:        GPLv2+
 Group:          Amusements/Games
-Version:        2.0.3
+Version:        2.1.0
 Release:        1
 BuildRequires:  qt4-devel sqlite-devel libpng-devel unzip
 Requires:       qt4-sqlite
-Source:         tipp10_source_v2-0-3.zip
+Source:         tipp10_source_v2-1-0.zip
 Source1:        %name.png
 Source2:        tipp10.desktop
 
@@ -17,7 +18,7 @@ TIPP10 is an educational typing tutor which automatically adapts the
 lesson to the typing failures of of the student.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n %{name}_source_v2-1-0
 find -name Thumbs.db |xargs rm -fv
 
 %build
@@ -28,7 +29,7 @@ make
 %install
 rm -rf %{buildroot}
 mkdir -p %buildroot{%_bindir,%_datadir/%name}
-cp -a license.txt help tipp10 tipp10v2.template wrong.wav %buildroot%_datadir/%name
+cp -a license_*.txt release/help tipp10 release/tipp10v2.template *.wav %buildroot%_datadir/%name
 
 cat > %buildroot%_bindir/%name << EOF
 #!/bin/bash
@@ -46,7 +47,7 @@ install -D -m644 %{SOURCE2} %buildroot/%_datadir/applications/%name.desktop
 %_datadir/%name
 
 %changelog
-* Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.3
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
 - Rebuilt for Fedora
 * Thu Sep 25 2008 lars@linux-schulserver.de
 - moved to Education base repository

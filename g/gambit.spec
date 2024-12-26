@@ -1,8 +1,7 @@
 Summary:        Software tools for game theory
 Name:           gambit
-Version:        15.0.0
-#Version:       16.0.1
-Release:        8.1
+Version:        16.2.0
+Release:        1
 License:        GPLv2+
 Group:          Sciences/Mathematics
 URL:            https://www.gambit-project.org/
@@ -20,14 +19,14 @@ formats for storing and communicating games to external tools.
 
 %prep
 %setup -q
-sed -i -e 's|inline double abs|inline double myabs|' -e 's|pivVal = abs|pivVal = fabs|' src/liblinear/ludecomp.imp
+#sed -i -e 's|inline double abs|inline double myabs|' -e 's|pivVal = abs|pivVal = fabs|' src/liblinear/ludecomp.imp
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
 autoreconf -fi
 # enumpoly is not supported on 64 bit
 %configure --disable-enumpoly
-sed -i 's|-Wall|-Wall -std=gnu++14|' Makefile
+#sed -i 's|-Wall|-Wall -std=gnu++14|' Makefile
 make
 
 %install
@@ -45,7 +44,7 @@ install -m 0644 %{name}.desktop %{buildroot}%{_datadir}/applications/%{name}.des
 
 # install menu icons
 install -d %{buildroot}%{_datadir}/pixmaps
-convert src/gui/bitmaps/gambit.xpm %{buildroot}%{_datadir}/pixmaps/%{name}.png
+magick convert src/gui/bitmaps/gambit.xpm %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 %files
 %{_bindir}/%{name}*
@@ -54,7 +53,7 @@ convert src/gui/bitmaps/gambit.xpm %{buildroot}%{_datadir}/pixmaps/%{name}.png
 %{_datadir}/%{name}
 
 %changelog
-* Fri May 27 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 15.0.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 16.2.0
 - Rebuilt for Fedora
 * Wed Oct 22 2014 Rosa <rosa@abf.rosalinux.ru> 14.1.0-1
 + Revision: 92bb73f

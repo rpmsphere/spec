@@ -1,17 +1,16 @@
-Name: 		gtkdialog
-Version:	0.8.4
-Release:	2
-License:	GPL
-Group: 		Development/Tools
-#Source0: 	%{name}-%{version}.tar.xz
-Source0:       %{name}-master.zip
-Patch0:		vte_config.patch
-URL: 		https://github.com/woodenshoe-wi/gtkdialog
-Summary: 	GUI creation tool for shells and arbitrary interpreters. 
-Summary(de): 	GUI-Tool zur Erstellung von Shells als willkürliche Dolmetscher 
-BuildRequires: 	vte291-devel
+Name:           gtkdialog
+Version:        0.8.5e
+Release:        1
+License:        GPL
+Group:          Development/Tools
+Source0:       %{name}-%{version}.tar.gz
+Patch0:         vte_config.patch
+URL:            https://github.com/puppylinux-woof-CE/gtkdialog
+Summary:        GUI creation tool for shells and arbitrary interpreters. 
+Summary(de):    GUI-Tool zur Erstellung von Shells als willkürliche Dolmetscher 
+BuildRequires:  vte291-devel
 BuildRequires:  help2man
-BuildRequires:	texinfo
+BuildRequires:  texinfo
 
 %description
 The gtkdialog is uses an XML like simple language as a GUI description
@@ -25,8 +24,8 @@ Konsolen Befehle zu vereinfachen. Beispiel enthaltenen Programme für bash
 und awk. 
 
 %prep
-%setup -q -n %{name}-master
-%patch0 -p1
+%setup -q
+#patch 0 -p1
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
@@ -36,9 +35,6 @@ export LDFLAGS=-Wl,--allow-multiple-definition
 %install
 %make_install
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc README TODO examples
 %_bindir/*
@@ -46,6 +42,8 @@ rm -rf $RPM_BUILD_ROOT
 %_infodir/*
 
 %changelog
+* Sun Nov 17 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.5e
+- Rebuilt for Fedora
 * Sun Mar 08 2020 daniel <meisssw01 at gmail.com> 0.8.4-1pclos2020
 - update to gtk3
 - add missing BuildRequires

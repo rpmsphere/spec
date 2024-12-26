@@ -1,5 +1,5 @@
 Name:           flatzebra
-Version:        0.1.7
+Version:        0.2.0
 Release:        1
 Summary:        A Generic Game Engine library for 2D double-buffering animation
 Group:          System/Libraries
@@ -46,13 +46,13 @@ make
 %{_libdir}/lib*.so.*
 
 %files devel
-%dir %{_includedir}/%{name}-0.1
-%{_includedir}/%{name}-0.1/%{name}/*.h
+%{_includedir}/%{name}*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
+%{_datadir}/pixmaps/*
 
 %changelog
-* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.1.7
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.0
 - Rebuilt for Fedora
 * Mon Mar 12 2012 Andrey Bondrov <abondrov@mandriva.org> 0.1.5-3mdv2012.0
 + Revision: 784453

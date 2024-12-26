@@ -1,11 +1,11 @@
 Name: maude
 Summary: High-performance logical framework
-Version: 3.2.1
+Version: 3.4
 Release: 1
 Group: science
 License: Free Software
 URL: https://maude.cs.uiuc.edu
-Source0: https://maude.cs.illinois.edu/w/images/d/d8/Maude-%{version}.tar.gz
+Source0: https://maude.cs.illinois.edu/w/images/d/d8/Maude%{version}.tar.gz
 BuildRequires: buddy-devel
 #BuildRequires: tecla-devel
 BuildRequires: libsigsegv-devel
@@ -23,7 +23,7 @@ logic sublanguage. Besides supporting equational specification and
 programming, Maude also supports rewriting logic computation.
 
 %prep
-%setup -q -n Maude-%{version}
+%setup -q -n Maude-Maude%{version}
 #sed -i 's|kind::IFF|kind::ITE|' src/Mixfix/variableGenerator.cc
 cp /usr/include/yices/* src/Mixfix/
 
@@ -37,10 +37,10 @@ install -d %{buildroot}%{_datadir}/%{name}
 mv %{buildroot}%{_datadir}/*.%{name} %{buildroot}%{_datadir}/%{name}
 
 %files
-%doc AUTHORS README COPYING NEWS ChangeLog
+%doc AUTHORS README.md COPYING NEWS ChangeLog
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.2.1
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4
 - Rebuilt for Fedora

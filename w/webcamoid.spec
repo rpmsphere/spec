@@ -2,7 +2,7 @@
 %undefine _debugsource_packages
 
 Name: webcamoid
-Version: 9.0.0
+Version: 9.1.1
 Release: 1
 Summary: The full webcam and multimedia suite
 Group: Applications/Multimedia
@@ -47,11 +47,8 @@ make
 rm -rf %{buildroot}
 #make INSTALL_ROOT=%{buildroot} install
 %make_install
-mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_mandir}/webcamoid.1.gz %{buildroot}%{_mandir}/man1/webcamoid.1.gz
-
-%clean
-rm -rf %{buildroot}
+#mkdir -p %{buildroot}%{_mandir}/man1
+#mv %{buildroot}%{_mandir}/webcamoid.1.gz %{buildroot}%{_mandir}/man1/webcamoid.1.gz
 
 %files
 %{_bindir}/webcamoid
@@ -63,9 +60,11 @@ rm -rf %{buildroot}
 %{_libdir}/libavkys.so*
 #{_libdir}/qt5/qml/AkQml
 %{_datadir}/licenses/webcamoid/COPYING
+%{_datadir}/metainfo/io.github.webcamoid.Webcamoid.metainfo.xml
+%{_datadir}/webcamoid
 
 %changelog
-* Sun Sep 18 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 9.0.0
+* Sun Nov 17 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 9.1.1
 - Rebuilt for Fedora
 * Mon Feb 23 2015 Gonzalo Exequiel Pedone <hipersayan DOT x AT gmail DOT com> 6.2.0-1
 - Final Release.

@@ -1,7 +1,7 @@
 %define upstream_name    Sidef
 
 Name:       perl-%{upstream_name}
-Version:    24.01
+Version:    24.11
 Release:    1
 Summary:    The Sidef programming language
 License:    GPL+ or Artistic
@@ -65,7 +65,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_bindir}/sidef
 
 %changelog
-* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 24.01
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 24.11
 - Rebuilt for Fedora
 * Thu Mar 02 2017 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2.330.1-3
 - (afff86f) MassBuild#1273: Increase release tag

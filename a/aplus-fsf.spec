@@ -55,7 +55,7 @@ mv %{buildroot}/usr/fonts/TrueType/KAPL.TTF %{buildroot}%{_datadir}/fonts
 mv %{buildroot}/usr/fonts/X11/*/* %{buildroot}%{_datadir}/X11/fonts/misc
 mv %{buildroot}/usr/lib/lib* %{buildroot}%{_libdir}/%{name}
 mkdir -p %{buildroot}/etc/ld.so.conf.d
-echo %{_libdir}/%{name} > %{buildroot}/etc/ld.so.conf.d/%{name}-%{arch}.conf
+echo %{_libdir}/%{name} > %{buildroot}/etc/ld.so.conf.d/%{name}-%{_arch}.conf
 
 %files
 %exclude /usr/app-defaults/XTerm
@@ -66,7 +66,7 @@ echo %{_libdir}/%{name} > %{buildroot}/etc/ld.so.conf.d/%{name}-%{arch}.conf
 %{_datadir}/X11/fonts/misc/*
 %{_includedir}/a
 %{_libdir}/%{name}
-/etc/ld.so.conf.d/%{name}-%{arch}.conf
+/etc/ld.so.conf.d/%{name}-%{_arch}.conf
 
 %changelog
 * Sun Mar 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 4.22

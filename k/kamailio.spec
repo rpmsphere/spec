@@ -1,5 +1,5 @@
 %define name    kamailio
-%define ver 5.7.2
+%define ver 5.8.4
 %define rel 1
 
 %if 0%{?fedora}
@@ -244,8 +244,8 @@ Release:    %rel
 Packager:   Peter Dunkley <peter@dunkley.me.uk>
 License:    GPL-2.0
 Group:      %{PKGGROUP}
-Source:     http://kamailio.org/pub/kamailio/%{ver}/src/%{name}-%{ver}_src.tar.gz
-URL:        http://kamailio.org/
+Source:     https://kamailio.org/pub/kamailio/%{ver}/src/%{name}-%{ver}_src.tar.gz
+URL:        https://kamailio.org/
 Vendor:     kamailio.org
 Conflicts:  kamailio-acc_json < %ver
 Conflicts:  kamailio-auth-ephemeral < %ver, kamailio-bdb < %ver
@@ -519,6 +519,14 @@ BuildRequires:  libxml2-devel libmnl-devel
 %description    ims
 IMS modules and extensions module for Kamailio.
 %endif
+
+%package    influxdbc
+Summary:    InfluxDBC support for Kamailio
+Group:      %{PKGGROUP}
+Requires:   kamailio = %ver
+
+%description    influxdbc
+InfluxDBC support for Kamailio.
 
 %if %{with jansson}
 %package    jansson
@@ -907,14 +915,14 @@ Requires:   kamailio = %ver
 %description    statsd
 Send commands to statsd server.
 
-%package        sqlang
-Summary:        Squirrel Language (SQLang) for Kamailio
-Group:          %{PKGGROUP}
-Requires:       kamailio = %version
-BuildRequires:  gcc-c++
+#package        sqlang
+#Summary:        Squirrel Language (SQLang) for Kamailio
+#Group:          %{PKGGROUP}
+#Requires:       kamailio = %version
+#BuildRequires:  gcc-c++
 
-%description    sqlang
-app_sqlang module for Kamailio.
+#description    sqlang
+#app_sqlang module for Kamailio.
 
 %package    sqlite
 Summary:    SQLite database connectivity for Kamailio
@@ -1049,6 +1057,7 @@ UUID module for Kamailio.
 %setup -q
 
 %build
+export CC_EXTRA_OPTS=-Wno-implicit-function-declaration
 export LD_EXTRA_OPTS=-Wl,--allow-multiple-definition
 ln -s ../obs pkg/kamailio/%{dist_name}/%{dist_version}
 %if 0%{?fedora} || 0%{?suse_version} || 0%{?rhel} == 8
@@ -1279,9 +1288,6 @@ if ! /usr/bin/id kamailio &>/dev/null; then
                 %logmsg "Unexpected error adding user \"kamailio\". Aborting installation."
 fi
 
-%clean
-rm -rf %{buildroot}
-
 %post
 %if "%{?_unitdir}" == ""
 /sbin/chkconfig --add kamailio
@@ -1356,7 +1362,7 @@ fi
 %doc %{_docdir}/kamailio/modules/README.ipops
 %doc %{_docdir}/kamailio/modules/README.kemix
 %doc %{_docdir}/kamailio/modules/README.kex
-#doc %{_docdir}/kamailio/modules/README.malloc_test
+#doc #{_docdir}/kamailio/modules/README.malloc_test
 %doc %{_docdir}/kamailio/modules/README.mangler
 %doc %{_docdir}/kamailio/modules/README.matrix
 %doc %{_docdir}/kamailio/modules/README.maxfwd
@@ -1446,6 +1452,7 @@ fi
 %doc %{_docdir}/kamailio/modules/README.siprepo
 %doc %{_docdir}/kamailio/modules/README.slack
 %doc %{_docdir}/kamailio/modules/README.math
+%doc %{_docdir}/kamailio/modules/README.file_out
 
 %dir %attr(-,kamailio,kamailio) %{_sysconfdir}/kamailio
 %config(noreplace) %{_sysconfdir}/kamailio/dictionary.kamailio
@@ -1609,6 +1616,7 @@ fi
 %{_libdir}/kamailio/modules/siprepo.so
 %{_libdir}/kamailio/modules/slack.so
 %{_libdir}/kamailio/modules/math.so
+%{_libdir}/kamailio/modules/file_out.so
 
 %{_sbindir}/kamailio
 %{_sbindir}/kamctl
@@ -1756,6 +1764,10 @@ fi
 %{_libdir}/kamailio/modules/ims_usrloc_pcscf.so
 %{_libdir}/kamailio/modules/ims_usrloc_scscf.so
 %endif
+
+%files      influxdbc
+%doc %{_docdir}/kamailio/modules/README.influxdbc
+%{_libdir}/kamailio/modules/influxdbc.so
 
 %if %{with jansson}
 %files      jansson
@@ -2014,9 +2026,9 @@ fi
 %{_docdir}/kamailio/modules/README.statsd
 %{_libdir}/kamailio/modules/statsd.so
 
-%files          sqlang
-%doc %{_docdir}/kamailio/modules/README.app_sqlang
-%{_libdir}/kamailio/modules/app_sqlang.so
+#files          sqlang
+#doc %{_docdir}/kamailio/modules/README.app_sqlang
+#{_libdir}/kamailio/modules/app_sqlang.so
 
 %files      sqlite
 %doc %{_docdir}/kamailio/modules/README.db_sqlite
@@ -2027,12 +2039,12 @@ fi
 %{_datadir}/kamailio/db_sqlite/*
 
 %files      tls
-%doc %{_docdir}/kamailio/modules/README.auth_identity
+#doc %{_docdir}/kamailio/modules/README.auth_identity
 %doc %{_docdir}/kamailio/modules/README.tls
-%{_libdir}/kamailio/modules/auth_identity.so
+#{_libdir}/kamailio/modules/auth_identity.so
 %{_libdir}/kamailio/modules/tls.so
-%dir %{_libdir}/kamailio/openssl_mutex_shared
-%{_libdir}/kamailio/openssl_mutex_shared/openssl_mutex_shared.so
+#dir %{_libdir}/kamailio/openssl_mutex_shared
+#{_libdir}/kamailio/openssl_mutex_shared/openssl_mutex_shared.so
 
 %files      tcpops
 %doc %{_docdir}/kamailio/modules/README.tcpops
@@ -2077,7 +2089,7 @@ fi
 %{_libdir}/kamailio/modules/uuid.so
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 5.7.2
+* Sun Nov 17 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.8.4
 - Rebuilt for Fedora
 * Sat Aug 31 2019 Sergey Safarov <s.safarov@gmail.com> 5.3.0-dev7
   - Packaged kemix, lost and xhttp_prom modules

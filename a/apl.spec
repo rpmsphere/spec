@@ -1,6 +1,6 @@
 Summary:      An APL interpreter
 Name:         apl
-Version:      1.8
+Version:      1.9
 Release:      1
 Group:        Applications/Interpreters
 Source:       https://ftp.gnu.org/gnu/apl/apl-%{version}.tar.gz
@@ -33,5 +33,5 @@ make DESTDIR=%{buildroot} install
 %{_sysconfdir}/gnu-apl.d
 
 %changelog
-* Tue Sep 03 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.8
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9
 - Rebuilt for Fedora

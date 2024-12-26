@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           azpainter
-Version:        3.0.7
+Version:        3.0.9a
 Release:        1
 Summary:        Painting software
 License:        GPL3.0+
@@ -60,5 +60,5 @@ cp ../AUTHORS ../ChangeLog %{buildroot}%{_docdir}/%{name}
 #license GPL3
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.7
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.9a
 - Rebuilt for Fedora

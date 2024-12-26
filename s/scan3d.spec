@@ -21,7 +21,7 @@ sed -i "146s|0x80|'\x80'|" src/data.cpp
 
 %build
 %configure
-sed -i 's|-O2|-I/usr/include/ImageMagick-6 -O2|' src/Makefile
+sed -i 's|-O2|-I/usr/include/ImageMagick-6 -O2 -DMAGICKCORE_HDRI_ENABLE|' src/Makefile
 make %{?_smp_mflags}
 
 %install

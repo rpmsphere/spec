@@ -3,7 +3,7 @@
 
 Summary: A new Unix shell
 Name: oh
-Version: 0.8.1
+Version: 0.8.3
 Release: 1
 License: MIT
 Group: Development/Language
@@ -36,5 +36,5 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Sun Jun 19 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
 - Rebuilt for Fedora

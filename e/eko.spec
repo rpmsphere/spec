@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           eko
-Version:        7.0.1
+Version:        7.1.0
 Release:        1
 Summary:        Simple sound editor
 License:        GPL-3.0
@@ -68,7 +68,7 @@ EOF
 %{_datadir}/icons/hicolor/64x64/apps/eko.png
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 7.0.1  
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 7.1.0
 - Rebuilt for Fedora
 * Tue Jul 21 2015 avvissu@yandex.ru
 - Update o 2.1.0:

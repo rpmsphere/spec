@@ -1,27 +1,30 @@
 %undefine _debugsource_packages
 
 Name: gping
-Version: 1.2.0
+Version: 1.18.0
 Release: 1
 Summary: Ping, but with a graph
 License: MIT
 URL: https://github.com/orf/gping
-Source0: %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
-BuildRequires: cargo >= 1.42
-BuildRequires: rust >= 1.42
+Source0: https://github.com/orf/gping/archive/refs/tags/%{name}-v%{version}.tar.gz
+BuildRequires: cargo
+BuildRequires: rust
 
 %description
 %{summary}.
 
 %prep
-%autosetup -p1
+%setup -q -n %{name}-%{name}-v%{version}
+
+%build
+#export CARGO_PROFILE_RELEASE_BUILD_OVERRIDE_OPT_LEVEL=3
+#echo 'codegen-units = 1' >> Cargo.toml
+#cargo install --root=%{buildroot}%{_prefix} --path=.
+#rm -f %{buildroot}%{_prefix}/.crates.toml %{buildroot}%{_prefix}/.crates2.json
+cargo build --release
 
 %install
-export CARGO_PROFILE_RELEASE_BUILD_OVERRIDE_OPT_LEVEL=3
-echo 'codegen-units = 1' >> Cargo.toml
-cargo install --root=%{buildroot}%{_prefix} --path=.
-rm -f %{buildroot}%{_prefix}/.crates.toml \
-    %{buildroot}%{_prefix}/.crates2.json
+install -Dm755 target/release/%{name} %{buildroot}%{_bindir}/%{name}
 
 %files
 %license LICENSE
@@ -29,7 +32,7 @@ rm -f %{buildroot}%{_prefix}/.crates.toml \
 %{_bindir}/%{name}
 
 %changelog
-* Mon Jan 04 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
+* Sun Nov 17 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.18.0
 - Rebuilt for Fedora
 * Sun Dec  6 2020 Artem Polishchuk <ego.cordatus@gmail.com> - 1.2.0-1
 - build(update): 1.2.0

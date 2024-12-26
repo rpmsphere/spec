@@ -3,7 +3,7 @@
 %{!?tcl_version: %global tcl_version %(echo 'puts $tcl_version' | tclsh)}
 
 Name:           scidvspc
-Version:        4.24
+Version:        4.25
 Release:        1
 Summary:        A chess database application
 License:        GPLv2+
@@ -143,7 +143,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_bindir}/*
 %{_datadir}/applications/*
 %{_datadir}/icons/hicolor/128x128/apps/*
-#{_datadir}/fonts/truetype/Scid
+%{_datadir}/fonts/truetype/Scid
 
 %files sounds
 %{_datadir}/%{name}/sounds
@@ -153,7 +153,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %doc books/readme.txt
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 4.24
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 4.25
 - Rebuilt for Fedora
 * Mon Apr 25 2016 Alex Wood <awood@redhat.com> 4.16-3
 - Apply patch to address crashes with Stockfish. See BZ 1325013.

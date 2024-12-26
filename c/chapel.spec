@@ -1,7 +1,9 @@
-%global __os_install_post %{nil}
+#global __os_install_post %{nil}
+%global __spec_install_post %{nil}
+%undefine _debugsource_packages
 
 Name:           chapel
-Version:        1.24.1
+Version:        2.3.0
 Release:        1
 License:        BSD
 Summary:        An emerging parallel programming language
@@ -31,7 +33,6 @@ features for generic programming.
 %setup -q
 sed -i -e 's|/usr/bin/env python$|/usr/bin/python3|' -e 's|/usr/bin/python$|/usr/bin/python3|' `find util -type f -name *.py` `find third-party -type f -name *.py`
 sed -i -e 's|/usr/bin/env python$|/usr/bin/python3|' -e 's|/usr/bin/python$|/usr/bin/python3|' \
-  third-party/llvm/llvm-src/runtimes/llvm-strip-link.in \
   third-party/llvm/llvm-src/tools/clang/tools/clang-format/git-clang-format \
   third-party/llvm/llvm-src/tools/clang/tools/scan-build-py/bin/* \
   third-party/llvm/llvm-src/tools/clang/tools/scan-build/bin/set-xcode-analyzer \
@@ -40,38 +41,40 @@ sed -i -e 's|/usr/bin/env python$|/usr/bin/python3|' -e 's|/usr/bin/python$|/usr
   third-party/llvm/llvm-src/tools/clang/www/make_cxx_dr_status \
   third-party/llvm/llvm-src/utils/Misc/zkill \
   third-party/llvm/llvm-src/utils/lit/tests/Inputs/fake-externals/* \
-  third-party/llvm/llvm-src/utils/llvm-build/llvm-build \
   third-party/llvm/llvm-src/utils/llvm-lit/llvm-lit.in  
 sed -i -e 's|/usr/bin/env python$|/usr/bin/python3|' -e 's|/usr/bin/python$|/usr/bin/python3|' `find third-party/llvm/llvm-src/tools/clang/utils -type f` `find third-party/llvm/llvm-src/utils -type f`
 sed -i 's|@BOURNE_SHELL@|/usr/bin/sh|' third-party/gasnet/gasnet-src/other/contrib/gasnet_trace.in
 
 %build
-%make_build
+./configure --prefix=/usr
+make -j1
 
 %install
-#make_install
-mkdir -p %{buildroot}%{_libexecdir}/%{name}
-cp -a bin doc lib make modules runtime util third-party %{buildroot}%{_libexecdir}/%{name}
+%make_install
+#mkdir -p %{buildroot}%{_libexecdir}/%{name}
+#cp -a bin lib make modules runtime util third-party %{buildroot}%{_libexecdir}/%{name}
+strip %{buildroot}%{_bindir}/* `find %{buildroot}/usr/lib/%{name} -name '*.so'`
 install -Dm644 man/man1/chpl.1 %{buildroot}%{_mandir}/man1/chpl.1
 
-mkdir -p %{buildroot}%{_bindir}
-cat > %{buildroot}%{_bindir}/chpl <<EOF
+#mkdir -p %{buildroot}%{_bindir}
+#cat > %{buildroot}%{_bindir}/chpl <<EOF
 #!/usr/bin/bash
-CHPL_HOME=%{_libexecdir}/%{name}
-CHPL_HOST_PLATFORM=linux64
-export CHPL_HOME CHPL_HOST_PLATFORM
-\${CHPL_HOME}/bin/\${CHPL_HOST_PLATFORM}-%{_arch}/chpl "\$@"
-EOF
-chmod +x %{buildroot}%{_bindir}/chpl
+#CHPL_HOME=%{_libexecdir}/%{name}
+#CHPL_HOST_PLATFORM=linux64
+#export CHPL_HOME CHPL_HOST_PLATFORM
+#\${CHPL_HOME}/bin/\${CHPL_HOST_PLATFORM}-%{_arch}/chpl "\$@"
+#EOF
+#chmod +x %{buildroot}%{_bindir}/chpl
 
 %files
 %doc README* LICENSE* *.md
-%{_libexecdir}/%{name}
+/usr/lib/%{name}
+%{_datadir}/%{name}
 %{_mandir}/man1/chpl.1*
-%{_bindir}/chpl
+%{_bindir}/*
 
 %changelog
-* Sun Jul 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.24.1
+* Sun Dec 15 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.0
 - Rebuilt for Fedora
 * Wed Sep 25 2013 jlinford@paratools.com
 - Add module file.

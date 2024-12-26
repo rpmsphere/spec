@@ -2,17 +2,14 @@
 
 Summary: One-dot Font Project
 Name: onedot-fonts
-Version: 2022
+Version: 8.10
 Release: 1
 License: GPLv2, GPLv3, IPA Open Font License v1.0
 Group: User Interface/X
 BuildArch: noarch
-Source0: https://github.com/ichitenfont/I.Ming/raw/master/8.00/I.Ming-8.00.ttf
-Source1: https://github.com/ichitenfont/I.Ming/raw/master/8.00/I.MingCP-8.00.ttf
-Source2: https://input.foruto.com/ccc/1.font/font/I.Ngaan.zip
-Source3: https://input.foruto.com/ccc/1.font/font/I.PenCrane.zip
-Source4: https://github.com/ichitenfont/I.Ming/raw/master/8.00/IPA_Font_License_Agreement_v1.0.md
-Source5: https://github.com/ichitenfont/I.Ming/raw/master/8.00/readme.md
+Source0: I.Ming-8.10.zip
+Source1: https://input.foruto.com/ccc/1.font/font/I.Ngaan.zip
+Source2: https://input.foruto.com/ccc/1.font/font/I.PenCrane.zip
 URL: https://founder.acgvlyric.org/iu/doku.php
 Requires(post): fontconfig
 
@@ -21,18 +18,16 @@ Projects on Open Source Asian Fonts. Including:
 I.Ming 8.00, I.Ming-CP 8.00, I.Ngaan 1.004, I.PenCrane 1.004
 
 %prep
-%setup -q -T -c -a 2
-rm gpl-*.txt
-unzip -q %{SOURCE3}
-cp %{SOURCE4} %{SOURCE5} .
+%setup -q -n I.Ming-%{version} -a 1
+rm gpl-?.0.txt
+unzip -q %{SOURCE2}
 
 %build
 
 %install
 rm -rf %{buildroot}
-install -Dm644 %{SOURCE0} %{buildroot}%{fontdir}/I.Ming.ttf
-install -Dm644 %{SOURCE1} %{buildroot}%{fontdir}/I.MingCP.ttf
-install -m644 I.PenCrane-B.ttf I.Ngaan.ttf %{buildroot}%{fontdir}
+install -d  %{buildroot}%{fontdir}
+install -m644 *.ttf %{buildroot}%{fontdir}
 
 %post
 /usr/bin/fc-cache 2> /dev/null
@@ -45,5 +40,5 @@ install -m644 I.PenCrane-B.ttf I.Ngaan.ttf %{buildroot}%{fontdir}
 %{fontdir}/*
 
 %changelog
-* Sun Nov 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2022
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 8.10
 - Rebuilt for Fedora

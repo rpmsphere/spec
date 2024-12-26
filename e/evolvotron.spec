@@ -2,7 +2,7 @@
 
 Summary: Interactive "generative art" software
 Name: evolvotron
-Version: 0.7.1fixed
+Version: 0.8.1
 Release: 1
 #Source0: https://prdownloads.sourceforge.net/evolvotron/%{name}-%{version}.tar.gz
 Source0: %{name}-master.zip
@@ -60,7 +60,7 @@ EOF
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.1fixed
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
 - Rebuilt for Fedora
 * Sat Aug 06 2011 Götz Waschk <waschk@mandriva.org> 0.6.1-2mdv2012.0
 + Revision: 693428

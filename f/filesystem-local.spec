@@ -18,14 +18,14 @@ for a Linux operating system.
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/local/{bin,%{_lib},share}
 mkdir -p %{buildroot}%{_sysconfdir}/ld.so.conf.d
-echo /usr/local/%{_lib} > %{buildroot}%{_sysconfdir}/ld.so.conf.d/local-%{arch}.conf
+echo /usr/local/%{_lib} > %{buildroot}%{_sysconfdir}/ld.so.conf.d/local-%{_arch}.conf
 
 %files
 %dir /usr/local
 %dir /usr/local/bin
 %dir /usr/local/%{_lib}
 %dir /usr/local/share
-%{_sysconfdir}/ld.so.conf.d/local-%{arch}.conf
+%{_sysconfdir}/ld.so.conf.d/local-%{_arch}.conf
 
 %changelog
 * Fri Nov 04 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 1

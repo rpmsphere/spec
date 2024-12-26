@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:           bff
-Version:        1.0.6
-Release:        3.1
+Version:        1.0.7
+Release:        1
 License:        BSD-3-Clause
 Summary:        Moderately-optimizing brainfuck interpreter
 URL:            https://swapped.cc/bff/
@@ -26,7 +26,7 @@ install -D -m 755 bff %{buildroot}%{_bindir}/%{name}
 %doc README.md
 
 %changelog
-* Mon Jun 01 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.6
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.7
 - Rebuilt for Fedora
 * Sun Sep 18 2011 adam@mizerski.pl
 - update to 1.0.4

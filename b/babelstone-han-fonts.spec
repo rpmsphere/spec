@@ -1,13 +1,13 @@
 %global _ttfontsdir %{_datadir}/fonts/babelstone
 
 Name:           babelstone-han-fonts
-Version:        13.0.0
+Version:        15.1.4
 Release:        1
 Summary:        Font for Han Script
 License:        APL
 Group:          System/X11/Fonts
 URL:            https://www.babelstone.co.uk/Fonts/
-Source0:        https://babelstone.co.uk/Fonts/BabelStoneHan.zip
+Source0:        https://babelstone.co.uk/Fonts/BabelStoneHan-%{version}.zip
 Source1:        %name.LICENSE
 BuildArch:      noarch
 
@@ -30,7 +30,7 @@ install -m 0644 *.ttf %{buildroot}%{_ttfontsdir}
 %{_ttfontsdir}
 
 %changelog
-* Tue Nov 26 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 13.0.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 15.1.4
 - Rebuilt for Fedora
 * Sat Dec 12 2015 p.drouand@gmail.com
 - Update to version 8.0.2

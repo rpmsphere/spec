@@ -1,10 +1,10 @@
 %undefine _debugsource_packages
 %undefine _missing_build_ids_terminate_build
-%global weekly 2022.40
+#global weekly 2022.40
 
 Summary: The V Programming Language
 Name: vlang
-Version: 0.4.3
+Version: 0.4.8
 Release: 1
 License: MIT
 Group: Development/Language
@@ -33,14 +33,11 @@ mkdir -p %{buildroot}%{_bindir} %{buildroot}%{_libexecdir}/%{name}
 cp -a v v.mod cmd vlib thirdparty %{buildroot}%{_libexecdir}/%{name}
 ln -s ../libexec/vlang/v %{buildroot}%{_bindir}/v
 
-%clean
-rm -rf ${RPM_BUILD_ROOT}
-
 %files
 %doc doc/* LICENSE *.md examples
 %{_bindir}/v
 %{_libexecdir}/%{name}
 
 %changelog
-* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.3
+* Sun Nov 17 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.8
 - Rebuilt for Fedora

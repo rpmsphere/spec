@@ -2,7 +2,7 @@
 
 Summary: A free BASIC to C converter for Unix-based systems
 Name: bacon
-Version: 4.4
+Version: 5.0.1
 Release: 1
 License: MIT
 Group: Development
@@ -22,25 +22,25 @@ the Compaq C Compiler, TCC or the clang/LLVM compiler.
 
 %build
 ./configure --prefix=/usr
-make
+sed -i 's|ksh|bash|' Makefile
+make bacon bacongui-gtk3
 
 %install
 %make_install
 
 %files
-%doc README.1ST doc-pak/CHANGES doc-pak/copyright
-%{_bindir}/%{name}
-%{_bindir}/%{name}gui-gtk
-%{_bindir}/%{name}.sh
-%{_datadir}/applications/%{name}gui-gtk.desktop
+%doc README.1ST CHANGES LICENSE.txt
+%{_bindir}/%{name}*
+%{_datadir}/applications/%{name}*.desktop
 %{_datadir}/enscript/hl/%{name}.st
 %{_mandir}/man1/%{name}.1.gz
 %{_datadir}/pixmaps/BaCon*
 %{_datadir}/BaCon
 %{_datadir}/icons/hicolor/scalable/apps/bacon.png
+%{_datadir}/gtksourceview-4/language-specs/bacon.lang
 
 %changelog
-* Sun May 8 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 4.4
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.1
 - Rebuilt for Fedora
 * Fri Jun 01 2018 Peter van Eerten <peter@basic-converter.org>
 - Initial package

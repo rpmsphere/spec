@@ -1,5 +1,5 @@
 Name:               mruby
-Version:            3.0.0
+Version:            3.3.0
 Release:            1
 Summary:            Lightweight Ruby
 Source:             %{name}-%{version}.tar.gz
@@ -61,7 +61,7 @@ cp -a include/* "%{buildroot}%{_includedir}/"
 %{_libdir}/libmruby_core.a
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.3.0
 - Rebuilt for Fedora
 * Tue Jul  3 2012 pascal.bleser@opensuse.org
 - initial version (0.0+20120701)

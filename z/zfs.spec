@@ -1,7 +1,7 @@
 Summary:         OpenZFS for Linux
 Group:           Utilities/System
 Name:            zfs
-Version:         2.2.3
+Version:         2.2.6
 Release:         1
 License:         CDDL
 URL:             https://zfsonlinux.org/
@@ -87,6 +87,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 %{python3_sitelib}/*
 %{_libdir}/security/pam_zfs_key.so
 %{_datadir}/pam-configs/zfs_key
+%{_sysconfdir}/bash_completion.d/zpool
 
 %files devel
 %{_includedir}/*
@@ -116,5 +117,5 @@ exit 0
 exit 0
 
 %changelog
-* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.3
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.6
 - Rebuilt for Fedora

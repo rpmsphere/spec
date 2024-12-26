@@ -3,7 +3,7 @@
 
 Summary: Justfont OpenHuninn TrueType Fonts
 Name: jf-openhuninn-fonts
-Version: 2.0a
+Version: 2.1
 Release: 1
 License: OFL 1.1
 Group: User Interface/X
@@ -36,9 +36,9 @@ fc-cache 2> /dev/null
 fc-cache 2> /dev/null
 
 %files
-%doc license.txt README.md jf-logo-full-small.jpg jf-open-huninn-banner.png jf-open-huninn-2.0-glyphs-chart.pdf
+%doc LICENSE README.md jf-logo-full-small.jpg jf-open-huninn-banner.png
 %{fontdir}
 
 %changelog
-* Sun Apr 9 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0a
-- Initial package
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
+- Rebuilt for Fedora

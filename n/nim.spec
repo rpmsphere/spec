@@ -10,13 +10,12 @@
 %global bashcomproot    %(dirname %{bashcompdir} 2>/dev/null)
 
 Name:           nim
-Version:        1.6.16
+Version:        2.2.0
 Release:        1
 Summary:        Statically typed, imperative programming language
 # compiler is MIT, nimble package manager is BSD
 License:        MIT and BSD
 URL:            https://nim-lang.org
-#ExclusiveArch:  %{nim_arches}
 
 Source0:        https://nim-lang.org/download/%{name}-%{version}.tar.xz
 Source1:        nim.1
@@ -24,8 +23,8 @@ Source2:        nimgrep.1
 Source3:        nimble.1
 Source4:        nimsuggest.1
 
-Patch1:         nim-0001-allow-to-override-directories-in-install-script.patch
-Patch2:         nim-0002-use-_datadir-for-platform-independent-library-path.patch
+#Patch1:         nim-0001-allow-to-override-directories-in-install-script.patch
+#Patch2:         nim-0002-use-_datadir-for-platform-independent-library-path.patch
 #Patch3:         nim-0003-use-versioned-source-links-in-docs.patch
 #Patch4:         nim-0004-fix-compiler-binary-lookup-in-docgen.patch
 Patch6:         nim-0005-Fix-async-SSL-tests.patch
@@ -36,7 +35,7 @@ Requires:       redhat-rpm-config
 # Currently compiler uses C sources as intermediate representation
 Requires:       gcc
 
-BuildRequires:  nim-srpm-macros
+#BuildRequires:  nim-srpm-macros
 BuildRequires:  gcc openssl-devel
 BuildRequires:  pkgconfig(bash-completion)
 
@@ -103,11 +102,12 @@ rm -rf examples install.sh lib/pure/unidecode/gen.py
 
 %install
 sh install.sh \
-  %{buildroot}%{_bindir} \
-  %{buildroot}%{_sysconfdir} \
-  %{buildroot}%{_datadir} \
-  %{buildroot}%{_docdir} \
-  %{buildroot}%{_datadir}
+  %{buildroot}%{_bindir}
+
+#  %{buildroot}%{_sysconfdir} \
+#  %{buildroot}%{_datadir} \
+#  %{buildroot}%{_docdir} \
+#  %{buildroot}%{_datadir}
 
 install -Dp -m755 bin/nim{ble,grep,suggest,pretty} %{buildroot}%{_bindir}
 install -Dp -m644 tools/nim.bash-completion %{buildroot}%{bashcompdir}/nim
@@ -129,9 +129,9 @@ cp tools/dochack/dochack.js %{buildroot}%{_docdir}/%{name}/
 %files
 %license copying.txt dist/nimble/license.txt
 %doc doc/readme.txt
-%config(noreplace) %{_sysconfdir}/nim/*
-%{_datadir}/nim/
-%{_datadir}/nimble/
+#config(noreplace) %{_sysconfdir}/nim/*
+#{_datadir}/nim/
+#{_datadir}/nimble/
 %{_bindir}/nim{,ble}
 %{_mandir}/man1/nim{,ble}.1*
 %{bashcompdir}/nim*
@@ -145,7 +145,7 @@ cp tools/dochack/dochack.js %{buildroot}%{_docdir}/%{name}/
 %doc %{_docdir}/nim
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.6.16
+* Sun Nov 17 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.0
 - Rebuilt for Fedora
 * Tue Jul 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.4-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild

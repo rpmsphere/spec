@@ -1,10 +1,10 @@
 Name:           gnunet
-Version:        0.19.1
+Version:        0.23.0
 Release:        1
 License:        GPLv2+
 Summary:        Secure and anonymous peer-to-peer file sharing
 URL:            https://gnunet.org/
-Source0:        ftp://ftp.gnu.org/gnu/gnunet/%{name}-%{version}.tar.gz
+Source0:        http://ftpmirror.gnu.org/gnunet/%{name}-%{version}.tar.gz
 Source1:        gnunetd.conf
 Source2:        init_gnunetd
 Group:          Networking/File transfer
@@ -17,7 +17,7 @@ BuildRequires:  gawk
 BuildRequires:  gmp-devel
 BuildRequires:  gettext-devel
 BuildRequires:  sqlite-devel
-BuildRequires:  mysql-devel
+#BuildRequires:  mysql-devel
 BuildRequires:  zlib-devel
 BuildRequires:  openssl-devel
 BuildRequires:  libmicrohttpd-devel
@@ -110,7 +110,7 @@ userdel gnunetd ||:
 %{_datadir}/aclocal/%{name}.m4
 
 %changelog
-* Sun Jan 01 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.19.1
+* Sun Dec 15 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.23.0
 - Rebuilt for Fedora
 * Mon Jan 16 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.9.1-2mdv2012.0
 + Revision: 761718

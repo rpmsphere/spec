@@ -1,7 +1,7 @@
-%global _version 14-137
+%global _version 22-282
 
 Name:           mcl-edge
-Version:        14.137
+Version:        22.282
 Release:        1
 Summary:        Analysis of networks with millions of nodes
 License:        GPL
@@ -36,7 +36,7 @@ make install DESTDIR=$RPM_BUILD_ROOT docdir=%{_docdir}/mcl-edge exampledir=%{_do
 %doc %{_docdir}/*
 
 %changelog
-* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 14.137
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 22.282
 - Rebuilt for Fedora
 * Tue Jul 07 2015 Josko Plazonic <plazonic@princeton.edu>
 - upgrade to version 14-137

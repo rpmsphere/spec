@@ -1,7 +1,7 @@
 Name: safeeyes
 Summary: Protect your eyes from eye strain
-Version: 2.1.3
-Release: 2
+Version: 2.2.2
+Release: 1
 Group: Utility
 License: GPLv3
 URL: https://github.com/slgobinath/SafeEyes
@@ -48,9 +48,9 @@ gtk-update-icon-cache /usr/share/icons/hicolor
 %doc LICENSE README.md
 %{_bindir}/%{name}
 %{python3_sitelib}/*
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/icons/hicolor/*/*/%{name}*.png
+%{_datadir}/applications/*.desktop
+%{_datadir}/icons/hicolor/*/*/*.png
 
 %changelog
-* Sun May 22 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.3
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.2
 - Rebuilt for Fedora

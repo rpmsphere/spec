@@ -1,5 +1,5 @@
 Name:           python3-kivy
-Version:        2.1.0
+Version:        2.3.0
 Release:        1
 URL:            https://kivy.org/
 Summary:        Hardware-accelerated multitouch application library
@@ -38,7 +38,7 @@ This package contains the developer examples
 #rm -r examples/audio # Remove content with non-commercial only license (bnc#749340)
 
 %build
-CFLAGS="%{optflags} -fno-strict-aliasing" python3 setup.py build
+CFLAGS="%{optflags} -fno-strict-aliasing -Wno-incompatible-pointer-types" python3 setup.py build
 #cd doc && make html && rm -r build/html/.buildinfo # Build HTML documentation
 
 %install
@@ -52,7 +52,7 @@ python3 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 %{_datadir}/kivy-examples
 
 %changelog
-* Sun Oct 09 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1.0
+* Sun Nov 17 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.3.0
 - Rebuilt for Fedora
 * Mon Dec 17 2012 saschpe@suse.de
 - Update to version 1.5.1:

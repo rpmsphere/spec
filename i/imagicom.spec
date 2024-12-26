@@ -1,15 +1,15 @@
 %undefine _debugsource_packages
 
-Name:       	imagicom
-Version:    	1.3
-Release:    	18.1
-Summary:    	Beesoft Image Commander
-License:    	GPLv2+
-Group:      	File tools
-URL:        	https://www.beesoft.org/index.php?id=imagicom
-Source:     	https://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
-BuildRequires:	qt4-devel
-BuildRequires:	ImageMagick-c++-devel
+Name:           imagicom
+Version:        1.3
+Release:        18.1
+Summary:        Beesoft Image Commander
+License:        GPLv2+
+Group:          File tools
+URL:            https://www.beesoft.org/index.php?id=imagicom
+Source:         https://www.beesoft.org/download/%{name}_%{version}_src.tar.gz
+BuildRequires:  qt4-devel
+BuildRequires:  ImageMagick6-c++-devel
 
 %description
 Image Commander is a simple application for bulk picture processing.
@@ -27,7 +27,7 @@ sed -i 's|MaxRGB|65535|' Parsery.cpp QBtMagic.cpp
 %build
 qmake-qt4
 sed -i 's|-I/usr/include/ImageMagick|-I/usr/include/ImageMagick-6|' Makefile
-sed -i 's|-lMagick++ -lMagickWand -lMagickCore|-lMagick++-6.Q16|' Makefile
+sed -i 's|-lMagick++ -lMagickWand -lMagickCore|-lMagick++-6.Q16 -lMagickCore-6.Q16 -lMagickWand-6.Q16|' Makefile
 make CXXFLAGS+="-fPIC"
 
 %install

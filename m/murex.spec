@@ -3,7 +3,7 @@
 
 Summary: Bash-like shell and scripting environment
 Name: murex
-Version: 6.0.1000
+Version: 6.3.4225
 Release: 1
 License: GPL-2
 Group: Development/Language
@@ -34,5 +34,5 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 6.0.1000
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 6.3.4225
 - Rebuilt for Fedora

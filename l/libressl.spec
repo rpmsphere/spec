@@ -1,5 +1,5 @@
 Name:           libressl
-Version:        3.7.3
+Version:        4.0.0
 Release:        1
 Summary:        An SSL/TLS protocol implementation
 License:        OpenSSL
@@ -19,7 +19,7 @@ BuildRequires:  libtool
 BuildRequires:  pkg-config
 Obsoletes:      ssl
 Provides:       ssl
-Provides:       openssl(cli)
+#Provides:       openssl(cli)
 
 %description
 LibreSSL is an open-source implementation of the Secure Sockets Layer
@@ -91,8 +91,8 @@ This subpackage contains the manpages to the LibreSSL API.
 
 %prep
 %setup -q
-%patch 1 -p1
-#patch2 -p1
+#patch 1 -p1
+#patch 2 -p1
 
 %build
 autoreconf -fi
@@ -154,7 +154,7 @@ rm -f "%buildroot/%_libdir"/*.la
 %_mandir/man3/*.*
 
 %changelog
-* Sun May 28 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.7.3
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 4.0.0
 - Rebuilt for Fedora
 * Wed May 22 2019 Jan Engelhardt <jengelh@inai.de>
 - Update to new upstream release 2.9.2

@@ -2,8 +2,8 @@
 
 Summary: Commodore BASIC V2 as a scripting language
 Name: cbmbasic
-Version: 2.0
-Release: 5.1
+Version: 5.0
+Release: 1
 License: BSD
 Group: Development/Languages
 Source: %{name}-master.zip
@@ -30,5 +30,5 @@ install -Dm755 %{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Fri Mar 23 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0
 - Rebuilt for Fedora

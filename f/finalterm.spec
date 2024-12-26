@@ -1,15 +1,15 @@
-Name:		finalterm
-Summary:	Terminal emulator
-Version:	0.1
-Release:	8.1
-License:	GPLv3
-Group:		User Interface/Desktops
-URL:		https://finalterm.org/		
-Source0:	%{name}-master.zip
-BuildRequires:	cmake gcc-c++ libstdc++-devel libgee-devel gnome-common gtk-doc gtk3-devel libmx-devel
-BuildRequires:	clutter-gtk-devel keybinder-devel intltool
+Name:           finalterm
+Summary:        Terminal emulator
+Version:        0.1
+Release:        8.1
+License:        GPLv3
+Group:          User Interface/Desktops
+URL:            https://finalterm.org/          
+Source0:        %{name}-master.zip
+BuildRequires:  cmake gcc-c++ libstdc++-devel libgee-devel gnome-common gtk-doc gtk3-devel libmx-devel
+BuildRequires:  clutter-gtk-devel keybinder-devel intltool
 BuildRequires:  vala-compat-devel vala-compat vala-compat-tools
-BuildRequires:	keybinder3-devel w3m
+BuildRequires:  keybinder3-devel w3m
 
 %description
 Final Term is an terminal is a new breed of terminal emulator.
@@ -30,9 +30,6 @@ sed -i 's|menu, out x, out y|menu, ref x, ref y|' src/TerminalView.vala
 
 %install
 %cmake_install
-
-%clean
-rm -rf %{buildroot}
 
 %post
 touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :

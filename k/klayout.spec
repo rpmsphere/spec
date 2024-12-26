@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           klayout
-Version:        0.25.7
+Version:        0.29.8
 Release:        1
 Summary:        GDS2 chip layout Viewer
 License:        GPL-2.0+
@@ -71,11 +71,14 @@ install -Dm644 etc/logo.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 %doc LICENSE COPYRIGHT README.md Changelog*
 %{_bindir}/*
 %{_libdir}/lib%{name}*
+%{_libdir}/pymod
+%{_libdir}/db_plugins
+%{_libdir}/lay_plugins
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 
 %changelog
-* Mon Jan 14 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 0.25.7
+* Sun Nov 17 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.29.8
 - Rebuilt for Fedora
 * Mon Sep 23 2013 burnus@net-b.de
 - Update to 0.22.9

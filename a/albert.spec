@@ -1,7 +1,7 @@
 %global __python %{__python3}
 
 Name:           albert
-Version:        0.22.4
+Version:        0.23.0
 Release:        1
 Summary:        Desktop agnostic launcher
 License:        GPL-3.0+
@@ -52,12 +52,12 @@ unzip %{SOURCE1} -d lib/QHotkey
 %files
 %doc *.md
 %{_bindir}/%{name}
-%{_libdir}/lib%{name}.so
+%{_libdir}/lib%{name}.so*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.*
 
 %changelog
-* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.22.4
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.23.0
 - Rebuilt for Fedora
 * Tue May  9 2017 sor.alexei@meowr.ru
 - Update to version 0.11.1:

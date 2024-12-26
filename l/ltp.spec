@@ -3,12 +3,12 @@
 
 Summary:        Linux Test Project
 Name:           ltp
-Version:        20240129
+Version:        20240930
 Release:        1
 License:        GPLv2+
 Group:          Development/Kernel
 URL:            https://github.com/linux-test-project/ltp
-Source0:        http://downloads.sourceforge.net/project/%{name}/LTP%20Source/%{name}-%{version}/%{name}-full-%{version}.tar.bz2
+Source0:        http://downloads.sourceforge.net/project/%{name}/LTP%20Source/%{name}-%{version}/%{name}-full-%{version}.tar.xz
 BuildRequires:  flex
 BuildRequires:  rsync
 Requires:       dialog
@@ -55,8 +55,8 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_libdir}/ltp/testcas
 
 %files
 %{_libdir}/%{name}
-%{_mandir}/man1/*
-%{_mandir}/man3/*
+#{_mandir}/man1/*
+#{_mandir}/man3/*
 %{_bindir}/*
 /usr/kirk
 /usr/libkirk
@@ -65,7 +65,7 @@ sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_libdir}/ltp/testcas
 /usr/runltp-ng
 
 %changelog
-* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 20240129
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 20240930
 - Rebuilt for Fedora
 * Thu Aug 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.20120903-4
 + Revision: ef5e311

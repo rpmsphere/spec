@@ -1,5 +1,5 @@
 Name:           execline
-Version:        2.9.0.1
+Version:        2.9.6.1
 Release:        1
 Summary:        A light non-interactive scripting language
 License:        BSD
@@ -23,15 +23,16 @@ Header files and libraries for the package %{name}.
 
 %prep
 %setup -q
-sed -i -e 's|waitn_posix(pids, n|wait_pid(*pids|' -e 's|tain |tain_t |' src/execline/wait.c
-sed -i -e 's|subgetopt localopt =|subgetopt_t localopt =|' -e 's|subgetopt l =|subgetopt_t l =|' src/*/*.c
+#sed -i -e 's|waitn_posix(pids, n|wait_pid(*pids|' -e 's|tain |tain_t |' src/execline/wait.c
+#sed -i -e 's|subgetopt localopt =|subgetopt_t localopt =|' -e 's|subgetopt l =|subgetopt_t l =|' src/*/*.c
 
 %build
-%configure --with-sysdeps=%{_libdir}/skalibs/sysdeps --build=x86_64-redhat-linux-gnu --host=x86_64-redhat-linux-gnu
+%configure --with-sysdeps=%{_libdir}/skalibs/sysdeps --build=x86_64-redhat-linux --host=x86_64-redhat-linux
 make
 
 %install
 rm -rf %{buildroot}
+sed -i 's| -l | |' Makefile
 %make_install
 mkdir -p %{buildroot}%{_libexecdir}/%{name}
 mv %{buildroot}%{_bindir}/* %{buildroot}%{_libexecdir}/%{name}
@@ -47,7 +48,7 @@ mv %{buildroot}%{_libexecdir}/%{name}/%{name}b %{buildroot}%{_bindir}
 %{_libdir}/lib%{name}.a
 
 %changelog
-* Sun Oct 02 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.0.1
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.9.6.1
 - Rebuilt for Fedora
 * Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.08-4mdv2011.0
 + Revision: 618247

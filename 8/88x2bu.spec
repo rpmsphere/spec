@@ -2,7 +2,7 @@
 %global kversion %(uname -r)
 
 Name:    88x2bu
-Version: 5.8.7.1
+Version: 5.13.1.30
 Release: 1
 Group:   System Environment/Kernel
 License: GPLv2
@@ -28,6 +28,8 @@ This is the Realtek 802.11ac (rtl8812bu) driver.
 %prep
 #setup -q -n rtl88x2bu-5.6.1_30362.20181109_COEX20180928-6a6a   
 %setup -q -n RTL88x2BU-Linux-Driver-master
+sed -i 's|strlcpy|strncpy|' os_dep/linux/os_intfs.c
+sed -i 's|usbdrv.drvwrap.driver.shutdown|usbdrv.driver.shutdown|' os_dep/linux/usb_intf.c
 
 %build
 make
@@ -50,5 +52,5 @@ depmod -a > /dev/null 2> /dev/null
 /lib/modules/%{kversion}/kernel/drivers/net/wireless/%{name}.ko
 
 %changelog
-* Fri Aug 21 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 5.8.7.1
-- Rebuild for Fedora
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.13.1.30
+- Rebuilt for Fedora

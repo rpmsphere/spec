@@ -1,7 +1,7 @@
 Name:           gnunet-gtk
-Version:        0.19.0
+Version:        0.23.0
 Release:        1
-Source0:        http://gnunet.org/download/%{name}-%{version}.tar.gz
+Source0:        http://ftpmirror.gnu.org/gnunet/%{name}-%{version}.tar.gz
 License:        GPLv2+
 Summary:        GNUnet GTK user interface
 Group:          Networking/File transfer
@@ -66,7 +66,7 @@ sed -i 's|Icon=gnunet-setup|Icon=/usr/share/gnunet-gtk/gnunet_logo.png|' %{build
 %find_lang %{name}
 
 %changelog
-* Fri Dec 08 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.19.0
+* Sun Dec 15 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.23.0
 - Rebuilt for Fedora
 * Mon Jan 16 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 0.9.1-1
 + Revision: 761829

@@ -4,7 +4,7 @@
 %endif
 
 Name:           fricas
-Version:        1.3.9
+Version:        1.3.11
 Release:        1
 Summary:        An advanced computer algebra system
 License:        BSD-3-Clause
@@ -111,7 +111,7 @@ install -dm0755 %{buildroot}%{_defaultdocdir}/%{name}
 #install -m0644 src/doc/book.pdf %{buildroot}%{_defaultdocdir}/%{name}
 
 %files
-%license license/LICENSE.AXIOM src/etc/copyright
+%license license/LICENSE.AXIOM
 %doc ChangeLog README.rst
 %{_libdir}/%{name}
 %{_bindir}/*
@@ -121,7 +121,7 @@ install -dm0755 %{buildroot}%{_defaultdocdir}/%{name}
 #%{_defaultdocdir}/%{name}/*.pdf
 
 %changelog
-* Sun Nov 19 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.9
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.3.11
 - Rebuilt for Fedora
 * Mon Jul  5 2021 Anton Shvetz <shvetz.anton@gmail.com>
 - The xvfb-run program is required when building PDF documentation

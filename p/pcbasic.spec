@@ -1,6 +1,6 @@
 Name: pcbasic
 Summary: An emulator for GW-BASIC
-Version: 2.0.6
+Version: 2.0.7
 Release: 1
 Group: Development/Languages
 License: GPLv3
@@ -40,5 +40,5 @@ cp -a * %{buildroot}%{_datadir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.6
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.7
 - Rebuilt for Fedora

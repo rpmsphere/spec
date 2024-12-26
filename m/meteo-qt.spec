@@ -1,7 +1,7 @@
 %define aname meteo_qt
 
 Name:           meteo-qt
-Version:        1.0.0
+Version:        3.4
 Release:        1
 Group:          Graphical desktop/Other
 Summary:        Weather status system tray application
@@ -33,15 +33,15 @@ sed -i 's|lrelease|lrelease-qt5|' setup.py
 %install
 %py3_install
 %__mkdir -p %{buildroot}%{_datadir}/icons/hicolor/{16x16,32x32}/apps
-convert -scale 16x16 meteo_qt/images/meteo-qt.png %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/meteo-qt.png
-convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/meteo-qt.png
+magick convert -scale 16x16 meteo-qt.png %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/meteo-qt.png
+magick convert -scale 32x32 meteo-qt.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/meteo-qt.png
 
 %files
 %doc TODO CHANGELOG README.md
 %exclude %_defaultdocdir/%{name}/LICENSE
 #{_datadir}/%{aname}/images/
 %{_bindir}/%{name}
-%{_datadir}/icons/%{name}.png
+%{_datadir}/icons/*.png
 %{python3_sitelib}/%{aname}-%{version}-py%python3_version.egg-info
 %{python3_sitelib}/%{aname}/
 %{_datadir}/applications/%{name}.desktop
@@ -49,7 +49,7 @@ convert -scale 32x32 meteo_qt/images/meteo-qt.png %{buildroot}%{_datadir}/icons/
 %{_datadir}/meteo_qt/translations/
 
 %changelog
-* Thu Mar 07 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4
 - Rebuilt for Fedora
 * Thu Mar 09 2017 dglent <dglent> 0.9.5-1.mga6
 + Revision: 1090520

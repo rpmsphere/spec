@@ -2,13 +2,13 @@
 %global _default_patch_fuzz 2
 
 Name:           gitea
-Version:        1.21.11
+Version:        1.22.1
 Release:        1
 Summary:        Git with a cup of tea, painless self-hosted git service
 License:        MIT
 Group:          Development/Other
 URL:            https://gitea.io/
-Source0:        https://github.com/go-gitea/gitea/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:        https://github.com/go-gitea/gitea/archive/v%{version}.tar.gz#/%{name}-src-%{version}.tar.gz
 Source10:       gitea.service
 Source11:       gitea.service.d.conf
 Source12:       app-gitea.ini
@@ -25,7 +25,8 @@ of setting up a self-hosted Git service. It is similar to GitHub, Bitbucket,
 and Gitlab. Gitea is a fork of Gogs.
 
 %prep
-%autosetup -p1
+%setup -q -n %{name}-src-%{version}
+%patch 0 -p1
 
 %build
 export GOPATH="`pwd`/.godeps"
@@ -64,5 +65,5 @@ userdel gitea
 %doc *.md
 
 %changelog
-* Sun Apr 21 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.21.11
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.22.1
 - Rebuilt for Fedora

@@ -1,34 +1,34 @@
 %undefine _debugsource_packages
-%define srcname	2ManDVD
+%define srcname 2ManDVD
 
-Name:		2mandvd
-Version:	1.8.5
-Release:	1
-Summary:	Video DVD creation tool, successor to ManDVD
+Name:           2mandvd
+Version:        1.8.5
+Release:        1
+Summary:        Video DVD creation tool, successor to ManDVD
 # GPLv2 and LGPL for some icons
-License:	GPLv2 and LGPL
-Group:		Video/Editors and Converters
-URL:		https://2mandvd.tuxfamily.org/website/
-Source0:	https://download.tuxfamily.org/2mandvd/%{srcname}-%{version}.tar.gz
-Patch1:		2ManDVD-1.8.4-fix_install.patch
-Patch2:		2ManDVD-1.8.5-libavformat54.patch
-BuildRequires:	qt4-devel >= 4.6
-BuildRequires:	ffmpeg-devel
-BuildRequires:	pkgconfig(sdl)
+License:        GPLv2 and LGPL
+Group:          Video/Editors and Converters
+URL:            https://2mandvd.tuxfamily.org/website/
+Source0:        https://download.tuxfamily.org/2mandvd/%{srcname}-%{version}.tar.gz
+Patch1:         2ManDVD-1.8.4-fix_install.patch
+Patch2:         2ManDVD-1.8.5-libavformat54.patch
+BuildRequires:  qt4-devel >= 4.6
+BuildRequires:  ffmpeg-devel
+BuildRequires:  pkgconfig(sdl)
 
-Requires:	dvd+rw-tools
-Requires:	dvdauthor
-Requires:	ffmpeg
-Requires:	ffmpegthumbnailer
-Requires:	mencoder
-Requires:	mjpegtools
-Requires:	mkisofs
-Requires:	mplayer
-Requires:	netpbm
-Requires:	sox
-Requires:	exif
-Recommends:	transcode
-Obsoletes:	2ManDVD
+Requires:       dvd+rw-tools
+Requires:       dvdauthor
+Requires:       ffmpeg
+Requires:       ffmpegthumbnailer
+Requires:       mencoder
+Requires:       mjpegtools
+Requires:       mkisofs
+Requires:       mplayer
+Requires:       netpbm
+Requires:       sox
+Requires:       exif
+Recommends:     transcode
+Obsoletes:      2ManDVD < 1.8.5
 
 %description
 2ManDVD is a graphical tool for creating Video DVDs and slideshows, including

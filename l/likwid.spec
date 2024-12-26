@@ -1,9 +1,11 @@
+%undefine _debugsource_packages
+%global __spec_install_post %{nil}
+
 Name:               likwid
-Version:            2.1
-Release:            6.1
+Version:            5.3.0
+Release:            1
 Summary:            High Performance Multi-Threading Support Tools
-# https://likwid.googlecode.com/files/likwid-%{version}.tar.gz
-Source:             likwid-%{version}.tar.bz2
+Source0:            https://likwid.googlecode.com/files/likwid-%{version}.tar.gz
 Patch1:             likwid-lib.patch
 Patch2:             likwid-optflags.patch
 URL:                https://code.google.com/p/likwid/
@@ -43,8 +45,8 @@ Likwid is lightweight and adds no overhead during measurements.
 
 %prep
 %setup -q
-%patch 1
-%patch 2
+#patch 1
+#patch 2
 
 %build
 %__make \
@@ -65,37 +67,32 @@ Likwid is lightweight and adds no overhead during measurements.
     PREFIX="$RPM_BUILD_ROOT%{_prefix}" \
     MANPREFIX="$RPM_BUILD_ROOT%{_mandir}" \
     LIBLIKWIDPIN="%{_libdir}/%{name}/liblikwidpin.so" \
-    LIB="%{_lib}" \
+    LIB="%{_libdir}" \
     V=1 Q="" \
     install
 
-%__install -d "$RPM_BUILD_ROOT%{_libdir}/%{name}"
-%__mv "$RPM_BUILD_ROOT%{_libdir}/liblikwidpin.so" \
-    "$RPM_BUILD_ROOT%{_libdir}/%{name}/"
+#__install -d "$RPM_BUILD_ROOT%{_libdir}/%{name}"
+mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT%{_libdir}
 
 # for backwards compatibility with < 2.0:
-%__ln_s likwid-perfctr "$RPM_BUILD_ROOT%{_bindir}/likwid-perfCtr"
+#__ln_s likwid-perfctr "$RPM_BUILD_ROOT%{_bindir}/likwid-perfCtr"
 
 %files
-%doc COPYING README
-%{_bindir}/likwid-features
-%{_bindir}/likwid-mpirun
-%{_bindir}/likwid-perfctr
-%{_bindir}/likwid-perfCtr
-%{_bindir}/likwid-pin
-%{_bindir}/likwid-topology
-%dir %{_libdir}/%{name}
-%{_libdir}/%{name}/liblikwidpin.so
-%{_mandir}/man1/likwid-*.1.*
+%doc COPYING README.* CHANGELOG
+%{_bindir}/*
+%{_sbindir}/*
+%{_datadir}/%{name}
+%{_datadir}/lua/%{name}.lua
+%{_libdir}/lib*.so.* 
+%{_mandir}/man1/*
 
 %files devel
-%{_includedir}/likwid.h
-%{_libdir}/liblikwid.a
+%{_includedir}/*.h
+%{_libdir}/lib*.so
 
 %changelog
-* Wed Nov 30 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 2.1
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.0
 - Rebuilt for Fedora
-
 * Sat Jan 15 2011 pascal.bleser@opensuse.org
 - moved preload library liblikwidpin.so to %%{_libdir}/likwid/
 - update to 2.2:
@@ -110,7 +107,6 @@ Likwid is lightweight and adds no overhead during measurements.
   * pin functionality was integrated for likwid-perfctr
   * likwid-msrD was added, which is an msr daemon to enable secure access to msr registers in security sensitive environments
   * many bug fixes and small improvements were made
-
 * Tue Oct 12 2010 pascal.bleser@opensuse.org
 - update to 2.0:
   * full support for AMD Magny Cours was added
@@ -127,10 +123,8 @@ Likwid is lightweight and adds no overhead during measurements.
   * a flag for silent execution in likwid-pin was added
   * statistical output (Sum, Max, Min, Avg) is produced for threaded measurements in likwid-perfCtr
   * execution was made faster for likwid-topology and all print switches
-
 * Mon Jul 26 2010 pascal.bleser@opensuse.org
 - update to 1.1:
   * fixes a bug that occurred if you were using likwid-perfCtr with OpenMP using the marker API and pinning the threads with likwid-pin
-
 * Tue Jul 13 2010 pascal.bleser@opensuse.org
 - initial package (1.0)

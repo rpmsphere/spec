@@ -67,15 +67,13 @@ sed -i 's|libvala-0\.16|libvala-0.18|' configure.ac
 touch ChangeLog
 autoreconf -iv
 %configure
+sed -i 's|-Wall|-Wall -Wno-incompatible-pointer-types|' `find . -name Makefile`
 make %{?_smp_mflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
 rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc NEWS README

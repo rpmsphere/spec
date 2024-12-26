@@ -1,7 +1,7 @@
 Summary: A simple screenshot tool
 Name: gscreenshot
-Version: 2.8.0
-Release: 5.1
+Version: 3.5.0
+Release: 1
 Source0: https://github.com/thenaterhood/gscreenshot/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 License: GPLv2
 Group: Utilities
@@ -36,7 +36,10 @@ python3 setup.py install --single-version-externally-managed -O1 --root=$RPM_BUI
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 %exclude %{_datadir}/menu/%{name}
+%{_datadir}/bash-completion/completions/gscreenshot
+%{_mandir}/man1/gscreenshot.1.gz
+%{_datadir}/zsh/site-functions/_gscreenshot
 
 %changelog
-* Tue Sep 12 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.8.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.5.0
 - Rebuilt for Fedora

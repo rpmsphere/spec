@@ -2,7 +2,7 @@
 
 Summary: A language with roots in Forth
 Name: retro12
-Version: 2021.7
+Version: 2024.1
 Release: 1
 License: Freeware
 Group: Development/Language
@@ -33,5 +33,5 @@ mkdir -p %{buildroot}%{_mandir}/man1
 %{_datadir}/RETRO12
 
 %changelog
-* Sun Aug 1 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.7
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2024.1
 - Rebuilt for Fedora

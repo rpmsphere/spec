@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           dust
-Version:        0.8.3
+Version:        1.1.1
 Release:        1
 Summary:        A more intuitive version of du in rust
 Group:          Text tools
@@ -29,7 +29,7 @@ cp target/release/dust %{buildroot}%{_bindir}/
 %{_bindir}/dust
 
 %changelog
-* Sun Oct 23 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.3
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1
 - Rebuilt for Fedora
 * Tue May 12 2020 guillomovitch <guillomovitch> 0.5.1-1.mga8
 + Revision: 1583381

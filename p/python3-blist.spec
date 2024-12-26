@@ -33,6 +33,7 @@ identical performance.
 sed -i 's|Py_REFCNT(&saved)|((PyObject*)\&saved)->ob_refcnt|' blist/_blist.c
 
 %build
+export CFLAGS+="-Wno-implicit-function-declaration"
 %py3_build
 
 %install

@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           python3-jcc
-Version:        3.6
+Version:        3.15
 Release:        1
 Summary:        C++ code generator for calling Java from C++/Python
 Group:          Development/Languages
@@ -10,7 +10,7 @@ URL:            https://pypi.python.org/pypi/JCC/
 Source0:        https://pypi.python.org/packages/source/J/JCC/JCC-%{version}.tar.gz
 Requires:       java-openjdk
 BuildRequires:  gcc-c++
-BuildRequires:  python3-devel java-1.8.0-openjdk-devel lua
+BuildRequires:  python3-devel java-devel lua
 
 %description
 JCC is a C++ code generator for producing the glue code necessary to call
@@ -34,8 +34,10 @@ This package contains the source code which is needed by JCC to generate
 wrapper classes.
 
 %prep
-%setup -q -n JCC-%{version}
-sed -i "s|else 'm'|else ''|" setup.py
+%setup -q -n jcc-%{version}
+#sed -i "s|else 'm'|else ''|" setup.py
+#sed -i -e 's|PyUnicode_WCHAR_KIND|PyUnicode_4BYTE_KIND|' -e 's|PyUnicode_AsUnicodeAndSize|PyUnicode_AsUTF8AndSize|' jcc3/sources/JCCEnv.cpp
+sed -i 's|jre/lib/amd64|lib|' setup.py
 
 %build
 JCC_JDK=/usr/lib/jvm/java-openjdk python3 setup.py build
@@ -44,9 +46,6 @@ JCC_JDK=/usr/lib/jvm/java-openjdk python3 setup.py build
 rm -rf $RPM_BUILD_ROOT
 JCC_JDK=/usr/lib/jvm/java-openjdk python3 setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
  
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %doc CHANGES LICENSE README
 %{python3_sitearch}/*
@@ -55,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %{python3_sitearch}/jcc/sources
 
 %changelog
-* Wed Apr 29 2020 Wei-Lun Chao <bluebat@member.fsf.org> - 3.6
+* Sun Nov 17 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.15
 - Rebuilt for Fedora
 * Mon Aug 25 2008 Felix Schwarz <felix.schwarz@oss.schwarz.eu> - 1.9-5
 - use environment variables instead of patching setup.py

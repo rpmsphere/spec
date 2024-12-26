@@ -1,5 +1,5 @@
 Name:           iqpuzzle
-Version:        1.2.9
+Version:        1.4.1
 Release:        1
 Summary:        A diverting I.Q. challenging pentomino puzzle
 Group:          Games/Puzzles
@@ -29,14 +29,13 @@ are available, which have to be filled with them.
 %files -f %{name}.lang
 %{_bindir}/%{name}
 %{_datadir}/applications/com.github.elth0r0.iqpuzzle.desktop
-%{_datadir}/icons/hicolor/*/apps/iqpuzzle.png
-%{_datadir}/icons/hicolor/scalable/apps/iqpuzzle.svg
+%{_datadir}/icons/hicolor/*/*/*
 %{_datadir}/metainfo/com.github.elth0r0.iqpuzzle.metainfo.xml
 %{_datadir}/%{name}/
 %{_mandir}/man6/iqpuzzle.6.*
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.9
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.4.1
 - Rebuilt for Fedora
 * Sat Mar 06 2021 kekepower <kekepower> 1.2.2-1.mga9
 + Revision: 1700264

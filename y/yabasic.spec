@@ -1,5 +1,5 @@
 Name:           yabasic
-Version:        2.90.2
+Version:        2.90.5
 Release:        1
 Summary:        Small basic interpreter with simple graphics and printing
 Group:          Development/Languages
@@ -45,7 +45,7 @@ make install DESTDIR=$RPM_BUILD_ROOT INSTALL="install -p"
 %{_bindir}/%{name}
 
 %changelog
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.90.2
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.90.5
 - Rebuilt for Fedora
 * Mon Jan 12 2009 Fabian Affolter <fabian@bernewireless.net> - 2.763-1
 - Initial package for Fedora

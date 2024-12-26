@@ -1,5 +1,5 @@
 Name:           msgchi
-Version:        2.4
+Version:        2.5
 Release:        1
 Summary:        Translating messages from template files to chinese
 License:        GPL, PD
@@ -33,7 +33,7 @@ make DESTDIR=%{buildroot} install
 %{_mandir}/man1/*
 
 %changelog
-* Sun Mar 24 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
-- Update to 2.4
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
+- Rebuilt for Fedora
 * Wed Jun 07 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0
 - First release

@@ -1,9 +1,9 @@
 %undefine _debugsource_packages
-%global _version 2021-03-27
+%global _version 2024-01-13
 
 Name:           quickjs
 Version:        %(echo %{_version}|tr - .)
-Release:        2
+Release:        1
 Summary:        A small and embeddable Javascript engine
 License:        BSD
 URL:            https://bellard.org/quickjs/
@@ -43,7 +43,7 @@ sed -i 's|/usr/local|/usr|' Makefile
 %{_libdir}/%{name}
 
 %changelog
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2024.01.13
+- Rebuilt for Fedora
 * Tue Jan 17 2023 Zephyr Lykos <fedora@mochaa.ws> - 2021.03.27-2
 - Fix qjsc library path
-* Sun Mar 20 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2021.03.27-1
-- Rebuilt for Fedora

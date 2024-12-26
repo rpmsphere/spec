@@ -43,6 +43,7 @@ BuildRequires:  desktop-file-utils
 # autopoint requires cvs to work
 BuildRequires:  cvs
 #Requires:      dejavu-sans-fonts
+Requires:	gpsd
 URL:            https://www.navit-project.org/
 
 %description
@@ -95,6 +96,7 @@ sed -i 's/4808 N 1134 E/2503 N 12133 E/' navit/navit_shipped.xml
 sed -i 's|gps_read(priv->gps);|gps_read(priv->gps,NULL,0);|' navit/vehicle/gpsd/vehicle_gpsd.c
 
 %build
+export CFLAGS+=" -Wno-incompatible-pointer-types -Wno-implicit-function-declaration -Wno-int-conversion"
 export LDFLAGS=-Wl,--allow-multiple-definition
 #autoreconf -i
 %cmake .
@@ -137,11 +139,12 @@ out the section for the sample map set, also.
 EOF
 
 # validate the .desktop file
-desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
+desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %find_lang %{name}
-
-unzip %{SOURCE3} -d %{buildroot}/%{_datadir}/%{name}/maps
+mkdir -p %{buildroot}%{_sysconfdir}/ld.so.conf.d
+echo %{_libdir}/%{name} > %{buildroot}%{_sysconfdir}/ld.so.conf.d/navit-%{_arch}.conf
+unzip %{SOURCE3} -d %{buildroot}%{_datadir}/%{name}/maps
 
 %post
 touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :
@@ -165,6 +168,7 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_datadir}/%{name}
 %config(noreplace) %{_sysconfdir}/%{name}/%{name}.xml
 %{_datadir}/man/man1/*
+%{_sysconfdir}/ld.so.conf.d/navit-%{_arch}.conf
 
 #files graphics-qt
 #{_libdir}/%{name}/graphics/libgraphics_qt*

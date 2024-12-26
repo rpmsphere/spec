@@ -1,5 +1,5 @@
 Name:          mathmod
-Version:       11.1
+Version:       12.0
 Release:       1
 Summary:       A program which generate 3D and 4D surfaces
 Group:         Sciences/Mathematics
@@ -95,7 +95,7 @@ EOF
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Sun Oct 24 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 11.1
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 12.0
 - Rebuilt for Fedora
 * Tue Nov 10 2015 alexl <alexl> 3.1-1.mga6
 + Revision: 901433

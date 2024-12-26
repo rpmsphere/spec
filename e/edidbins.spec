@@ -1,35 +1,33 @@
-Summary:        Generic monitor edid files
-Name:           edidbins
-Version:        1
-Release:        3.1
-Group:          System/Kernel and hardware
-License:        LGPLv2+
-URL:            https://github.com/torvalds/linux/tree/master/Documentation/EDID
-BuildArch:      noarch 
-Source0:        kernel-edidbins-%{version}.1.tar.xz
-BuildRequires:  binutils
-BuildRequires:  dos2unix
-BuildRequires:  util-linux
+Summary:	Generic monitor edid files
+Name:		edidbins
+Version:	1.1
+Release:	7
+Group:		System/Kernel and hardware
+License:	LGPLv2+
+URL:		https://github.com/torvalds/linux/tree/master/Documentation/EDID
+BuildArch:	noarch
+#The tarball for these files was generated from the cloned sources from the above url. The files were copied to a directory edidbins and then compressed with "tar -Jcvf kernel-edidbins edidbins/*" It is unlikely that these sources will change. Proprietary edid's should have their own package.
+Source0:	kernel-edidbins-%{version}.tar.xz
+BuildRequires:	dos2unix
 
 %description
 Provides five binary edid files to give to support kernel edid loading feature.
 
 %prep
-%setup -q -n %{name}
+%autosetup -n %{name} -p1
+#force gcc
+sed -i 's/@cc/@gcc/' Makefile
 
 %build
-make 
+%make_build
 
 %install
-mkdir -p %{buildroot}/lib/firmware/edid
-cp -avf *.bin %{buildroot}/lib/firmware/edid
+mkdir -p %{buildroot}%{_prefix}/lib/firmware/edid
+cp -avf *.bin %{buildroot}%{_prefix}/lib/firmware/edid
 
 %files
-/lib/firmware/edid/*.bin
+/usr/lib/firmware/edid/*.bin
 
 %changelog
-* Tue Feb 17 2015 Wei-Lun Chao <bluebat@member.fsf.org> - 1
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1
 - Rebuilt for Fedora
-* Wed Apr 16 2014 Bernhard Rosenkraenzer <bero@lindev.ch> 1-1
-+ Revision: b7a84de
-- Clean up spec

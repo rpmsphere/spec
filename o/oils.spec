@@ -2,7 +2,7 @@
 
 Summary: A new Unix shell
 Name: oils
-Version: 0.18.0
+Version: 0.23.0
 Release: 1
 License: Apache
 Group: Development/Language
@@ -31,5 +31,5 @@ install -Dm644 doc/osh.1 %{buildroot}%{_mandir}/man1/osh.1
 %{_mandir}/man1/*
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.23.0
 - Rebuilt for Fedora

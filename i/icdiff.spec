@@ -1,7 +1,7 @@
 Summary:        Improved Colored Difference Tool
 Name:           icdiff
-Version:        1.9.0
-Release:        2.1
+Version:        2.0.7
+Release:        1
 URL:            https://www.jefftk.com/icdiff
 License:        PSF
 Group:          File tools
@@ -30,7 +30,7 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
 %_bindir/git-%name
 
 %changelog
-* Fri Jun 23 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.9.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.7
 - Rebuilt for Fedora
 * Tue Mar 01 2016 Valentin Rosavitskiy <valintinr@altlinux.org> 1.7.3-alt2
 - Moved from binaries from %%_sbindir to %%_bindir (ALT #31848)

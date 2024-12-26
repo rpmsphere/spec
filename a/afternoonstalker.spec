@@ -1,5 +1,5 @@
 Name:                   afternoonstalker
-Version:                1.1.6
+Version:                1.2.0
 Summary:                A Night Stalker(TM) clone
 License:                GPLv2
 URL:                    https://sarrazip.com/dev/%{name}.html
@@ -59,5 +59,5 @@ install -D -m644 src/%{name}.desktop $RPM_BUILD_ROOT/%{_datadir}/applications/%{
 %{_mandir}/man*/*
 
 %changelog
-* Sun Apr 25 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.6
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.2.0
 - Rebuilt for Fedora

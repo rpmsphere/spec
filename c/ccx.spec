@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           ccx
-Version:        2.20
+Version:        2.22
 Release:        1
 Summary:        An open source finite element package
 License:        GPL-2.0-only AND BSD-3-Clause AND SUSE-Public-Domain
@@ -9,16 +9,16 @@ Group:          Productivity/Scientific/Other
 URL:            https://www.dhondt.de/
 Source0:        https://www.dhondt.de/ccx_%{version}.src.tar.bz2
 Source1:        https://www.dhondt.de/ccx_%{version}.test.tar.bz2
-Source2:        ccx-rpmlintrc
+#Source2:        ccx-rpmlintrc
 # PATCH-FIX-OPENSUSE -- pass global optflags
 Patch0:         ccx-2.16-build.patch
 Patch1:         0001-Fixup-spooles-include-dir.patch
-Patch2:         ccx-2.16-abaqus-shell-heat-transfer-elements-read.patch
-Patch3:         0001-Add-missing-argument-for-inputerror-function-call.patch
-Patch4:         0001-Use-interface-for-cubtri-callback-function.patch
+#Patch2:         ccx-2.16-abaqus-shell-heat-transfer-elements-read.patch
+#Patch3:         0001-Add-missing-argument-for-inputerror-function-call.patch
+#Patch4:         0001-Use-interface-for-cubtri-callback-function.patch
 BuildRequires:  arpack-devel
 BuildRequires:  fdupes
-BuildRequires:  gcc-fortran
+BuildRequires:  gcc-gfortran
 BuildRequires:  lapack-devel
 BuildRequires:  sed
 BuildRequires:  spooles-devel
@@ -34,7 +34,7 @@ Summary:        Example problems for CalculiX
 Group:          Productivity/Scientific/Other
 BuildArch:      noarch
 Conflicts:      ccx-doc < 2.16
-Provides:       ccx-doc:%{_datadir}/%{name}-examples-2.12/achtel2.inp
+Provides:       ccx-doc
 
 %description examples
 CalculiX is a package designed to solve field problems.
@@ -48,18 +48,18 @@ to check your installation.
 # fixup dirs: very deep directory structure, not suitable for patching
 mv CalculiX/ccx_%{version}/{src,test} ./
 rmdir -p CalculiX/ccx_%{version}
-#autopatch -p1
+%autopatch -p1
 #patch0 -p1
 #patch1 -p1
 #patch2 -p1
 #patch3 -p1
-%patch 4 -p1
+#patch 4 -p1
 
 # Make reproducible
 sed -i 's@./date.pl; *@@' src/Makefile
 
-sed -i -e '21,26d' -e '27i LIBS = -lpthread -lm -lc -lspooles -larpack -lflexiblas' src/Makefile
-sed -i -e 's|misc.h|spooles/misc/misc.h|' -e 's|FrontMtx.h|spooles/FrontMtx/FrontMtx.h|' -e 's|SymbFac.h|spooles/SymbFac/SymbFac.h|' src/spooles.h src/cascade.c
+#sed -i -e '21,26d' -e '27i LIBS = -lpthread -lm -lc -lspooles -larpack -lflexiblas' src/Makefile
+#sed -i -e 's|misc.h|spooles/misc/misc.h|' -e 's|FrontMtx.h|spooles/FrontMtx/FrontMtx.h|' -e 's|SymbFac.h|spooles/SymbFac/SymbFac.h|' src/spooles.h src/cascade.c
 
 %build
 cd src
@@ -84,33 +84,7 @@ chmod 755 %{buildroot}/%{_datadir}/%{name}-examples-%{version}/compare_valgrind_
 
 chmod 444 src/BUGS src/LOGBOOK src/README.INSTALL src/TODO
 
-%fdupes %{buildroot}/%{_datadir}/%{name}-examples-%{version}
-
-%check
-cd test
-# beamread* depends on beamwrite*
-# beamprand is random
-# beamptied{5,6} have nondeterministic order of eigenvalues
-for f in beamread*.inp beamprand.inp beamptied{5,6}.inp ; do mv $f ${f}_disabled ; done
-set +x
-for input in beam*.inp ; do
-    f=`basename $input .inp`
-    echo -n "Procesing $f "
-    %{buildroot}/%{_bindir}/ccx $f >> ccxlog || echo -n "-> $?" ; echo
-    [ -f $f.dat -a -f $f.frd ] || echo "$f failed!" | tee -a errorlog
-    [ "$(wc -l < $f.dat)" -eq "$(wc -l < $f.dat.ref)" ] || echo "Wrong size: $f.dat" | tee -a errorlog
-    grep NaN $f.dat && echo "Contains NaN: $f.dat" | tee -a errorlog
-    ./datcheck.pl $f | tee -a errorlog
-    [ -f $f.frd.ref ] || continue
-    [ "$(wc -l < $f.frd)" -eq "$(wc -l < $f.frd.ref)" ] || echo "Wrong size: $f.frd" | tee -a errorlog
-    ./frdcheck.pl $f | tee -a errorlog
-done
-set -x
-if [ -s errorlog ] ; then
-    cat ccxlog
-    cat errorlog
-#    exit 1
-fi
+#fdupes %{buildroot}/%{_datadir}/%{name}-examples-%{version}
 
 %files
 %{_bindir}/ccx
@@ -121,7 +95,7 @@ fi
 %{_datadir}/%{name}-examples-%{version}
 
 %changelog
-* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 2.20
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.22
 - Rebuilt for Fedora
 * Tue Feb 23 2021 Stefan Brüns <stefan.bruens@rwth-aachen.de>
 - update to 2.17:

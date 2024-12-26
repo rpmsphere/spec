@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           di
-Version:        4.52
+Version:        4.54.0.1
 Release:        1
 Summary:        Disk Information Utility
 Source:         https://downloads.sourceforge.net/project/diskinfo-di/di-%{version}.tar.gz
@@ -39,7 +39,7 @@ ln -s di $RPM_BUILD_ROOT%{_bindir}/mi
 %{_mandir}/man1/di.1.*
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 4.52
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 4.54.0.1
 - Rebuilt for Fedora
 * Mon Jul  5 2010 pascal.bleser@opensuse.org
 - update to 4.25:

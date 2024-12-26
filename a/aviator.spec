@@ -1,6 +1,6 @@
 Summary: A high performance scripting language hosted on the JVM
 Name: aviator
-Version: 5.3.2
+Version: 5.4.3
 Release: 1
 License: LGPLv3
 Group: Development/Languages
@@ -43,5 +43,5 @@ EOF
 %{_datadir}/%{name}
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 5.3.2
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.4.3
 - Rebuilt for Fedora

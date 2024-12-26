@@ -13,14 +13,18 @@ BuildRequires:  xorg-x11-util-macros
 BuildRequires:  xorg-x11-server-devel
 BuildRequires:  libXfont-devel
 Requires:       xorg-x11-server-common
+Patch0:		xf86-video-gma500-hotfix.patch
 
 %description
 Xorg driver for gma500 forked from xf86-video-modesetting.
 
 %prep
 %setup -q -n xf86-video-gma500-master
-mkdir -p src/uapi/drm
-cp %{SOURCE1} src/uapi/drm
+%patch 0 -p 1
+#mkdir -p src/uapi/drm
+#cp %{SOURCE1} src/uapi/drm
+mkdir -p drm
+cp %{SOURCE1} drm
 %ifarch x86_64
 sed -i 's|(uint32_t)|(uint64_t)|' src/libgma.c
 %endif
@@ -28,7 +32,7 @@ sed -i '1i #include "xorg-server.h"' src/gma_cache.c src/libgma.c src/pvr_2d.c
 sed -i 's|arg, pTimeout, pReadmask|arg, pTimeout|' src/compat-api.h
 
 %build
-export CFLAGS=-Wno-implicit-function-declaration
+#export CFLAGS=-Wno-implicit-function-declaration
 ./autogen.sh --prefix=/usr
 make %{?_smp_mflags}
 
@@ -47,5 +51,5 @@ rm %{buildroot}%{_libdir}/xorg/modules/drivers/gma500_drv.la
 
 
 %changelog
-* Thu Jul 17 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
-- Initial package
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.8.1
+- Rebuilt for Fedora

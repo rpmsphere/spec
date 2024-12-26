@@ -8,7 +8,7 @@
 %define rspamd_wwwdir   %{_datadir}/rspamd/www
 
 Name:           rspamd
-Version:        3.8.4
+Version:        3.10.2
 Release: 1
 Summary:        Rapid spam filtering system
 Group:          System Environment/Daemons
@@ -194,7 +194,7 @@ fi
 %{_libdir}/rspamd
 
 %changelog
-* Sun Mar 24 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.8.4
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.10.2
 - Rebuilt for Fedora
 * Thu Sep 17 2015 Vsevolod Stakhov <vsevolod-at-highsecure.ru> 1.0.0-1
 - Update to 1.0.0

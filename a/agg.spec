@@ -1,12 +1,13 @@
 Summary: Anti-Grain Geometry graphical rendering engine
 Name:    agg
-Version: 2.5
-Release: 44.1
+Version: 2.6
+Release: 1
 Group:   System Environment/Libraries
 URL:     https://www.antigrain.com
 License: GPLv2+
 #Source0:  https://www.antigrain.com/%{name}-%{version}.tar.gz
-Source0: %{name}-free-%{version}.tar.gz
+#Source0: %{name}-free-%{version}.tar.gz
+Source0: %{name}-src-%{version}.tgz
 # agg contains gpc.c, 'free for non-commercial use', we cannot ship.
 # We use this script to remove the non-free code before shipping it.
 # Download the upstream tarball and invoke this script while in the
@@ -51,25 +52,25 @@ Libraries, headers, and support files necessary to compile applications
 using agg.
 
 %prep
-%setup -q
-%patch 0 -p1 -b .depends
+%setup -q -n agg-src
+#%patch 0 -p1 -b .depends
 %patch 1 -p1 -b .pkgconfig
-%patch 2 -p0 -b .autotools
-%patch 101 -p1
-%patch 102 -p1
-%patch 103 -p1
-%patch 104 -p1
-%patch 105 -p1
-%patch 106 -p1
-%patch 107 -p1
-%patch 108 -p1
-%patch 109 -p1
-%patch 110 -p1
-%patch 111 -p1
-%patch 112 -p1
-%patch 113 -p1
-%patch 114 -p1
-%patch 115 -p1
+#%patch 2 -p0 -b .autotools
+#%patch 101 -p1
+#%patch 102 -p1
+#%patch 103 -p1
+#%patch 104 -p1
+#%patch 105 -p1
+#%patch 106 -p1
+#%patch 107 -p1
+#%patch 108 -p1
+#%patch 109 -p1
+#%patch 110 -p1
+#%patch 111 -p1
+#%patch 112 -p1
+#%patch 113 -p1
+#%patch 114 -p1
+#%patch 115 -p1
 aclocal
 autoheader
 autoconf
@@ -98,7 +99,7 @@ mv __clean_examples __dist_examples/examples
 %postun -p /sbin/ldconfig
 
 %files
-%doc authors copying readme news
+%doc AUTHORS copying README NEWS ChangeLog
 %{_libdir}/lib*.so.*
 
 %files devel
@@ -109,7 +110,7 @@ mv __clean_examples __dist_examples/examples
 %{_datadir}/aclocal/libagg.m4
 
 %changelog
-* Tue Jan 10 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6
 - Rebuilt for Fedora
 * Wed Feb 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 2.5-24
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild

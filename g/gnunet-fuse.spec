@@ -1,9 +1,9 @@
 %undefine _debugsource_packages
 
 Name:           gnunet-fuse
-Version:        0.19.1
+Version:        0.23.0
 Release:        1
-Source0:        http://gnunet.org/download/%{name}-%{version}.tar.gz
+Source0:        http://ftpmirror.gnu.org/gnunet/%{name}-%{version}.tar.gz
 License:        GPLv2+
 Summary:        GNUnet FUSE interface
 Group:          Networking/File transfer
@@ -38,5 +38,5 @@ make
 %{_mandir}/man1/%{name}.1.*
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.19.1
+* Sun Dec 15 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.23.0
 - Rebuilt for Fedora

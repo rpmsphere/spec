@@ -3,11 +3,11 @@
 
 Summary: Pete's Self Hosted Hybrid Interpreter/Compiler
 Name: phix
-Version: 1.0.2
+Version: 1.0.5
 Release: 1
 License: OSL-3.0
 Group: Development/Languages
-Source0: %{name}-%{version}.zip
+Source0: %{name}.%{version}.zip
 Source1: http://phix.x10.mx/p64
 URL: http://phix.x10.mx/
 #BuildRequires: phix
@@ -21,7 +21,7 @@ It is very easy to use, and similar to Euphoria. Aims:
 * Terse may at first seem nice, but properly readable and easy to understand code is better.
     
 %prep
-%setup -q -n %{name}
+%setup -q -c
 
 %build
 install -m755 %{SOURCE1} phix
@@ -37,5 +37,5 @@ install -Dm755 p %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.2
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.5
 - Rebuilt for Fedora

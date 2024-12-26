@@ -1,5 +1,5 @@
 Name:           scrcpy
-Version:        2.4
+Version:        3.1
 Release:        1
 Summary:        Display and control your Android device
 License:        Apache-2.0
@@ -40,7 +40,7 @@ on USB. It does not require any root access.
 %{_datadir}/applications/*
 
 %changelog
-* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.4
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.1
 - Rebuilt for Fedora
 * Tue Nov 13 2018 pousaduarte@gmail.com
 - Update to version 1.5fixversion~git20181113:

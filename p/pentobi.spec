@@ -1,5 +1,5 @@
 Name:           pentobi
-Version:        24.0
+Version:        25.2
 Release:        1
 Summary:        Program to play the board game Blokus
 License:        GPLv3
@@ -60,7 +60,7 @@ export CXXFLAGS="%{optflags} -O3"
 #{_datadir}/thumbnailers/*
 
 %changelog
-* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 24.0
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 25.2
 - Rebuilt for Fedora
 * Mon Jan 04 2016 Juhani Numminen <juhaninumminen0@gmail.com> - 11.0-1
 - Created by borrowing from existing pentobi.spec files

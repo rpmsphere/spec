@@ -1,12 +1,13 @@
 %undefine _debugsource_packages
+%global _name SparForte
 
 Summary: An open source programming language in Ada
 Name: sparforte
-Version: 2.6.2
+Version: 2.6.3
 Release: 1
 License: GPL2 (GNAT Modified)
 Group: Development/Languages
-Source: https://www.sparforte.com/downloads/%{name}-%{version}-src.tar.gz
+Source: https://www.sparforte.com/downloads/%{_name}-%{version}.tar.gz
 URL: https://www.sparforte.com/
 BuildRequires: gcc-gnat
 BuildRequires: SDL-devel
@@ -23,7 +24,7 @@ SparForte is designed for fast development of large projects while, at the
 same time, providing easier maintenance and bug removal.
 
 %prep
-%setup -q -n %{name}-%{version}-src
+%setup -q -n %{_name}-%{version}
 sed -i 's|i486|aarch64|' configure
 sed -i -e 's|$(CPU_FLAG)=$(CPU)||' -e 's|-gnatfaoN|-gnatfaoN -gnatd.E -gnatwv|' src/GNUmakefile*
 
@@ -44,5 +45,5 @@ mv %{buildroot}%{_datadir}/man1 %{buildroot}%{_mandir}
 %{_mandir}/man1/*
 
 %changelog
-* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.2
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.6.3
 - Rebuilt for Fedora

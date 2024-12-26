@@ -120,13 +120,13 @@ This package contains development files for %{name}
 
 %prep
 %setup -q -n ffmpeg-%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p0
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p0
 
 %build
-export CFLAGS="-g -O2 -fPIC -fPIE"
+export CFLAGS="-g -O2 -fPIC -fPIE -Wno-int-conversion"
 mkdir generic
 pushd generic
 %{ff_configure}\
@@ -204,9 +204,6 @@ for s in $RPM_BUILD_ROOT/%{_libdir}/*.so ; do
 done
 rm -rf $RPM_BUILD_ROOT/%{_libdir}/*.so
 fi
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 
 %post -p /sbin/ldconfig

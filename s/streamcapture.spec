@@ -1,16 +1,16 @@
 Name:           streamcapture
 Summary:        A program to save streaming video to your computer
-Version:        0.2.8
-Release:        8.1
+Version:        0.3.3
+Release:        1
 URL:            https://ceicer.org/streamcapture/index_eng.php
-Source0:        streamcapture-%{version}-source.tar.gz
+Source0:        streamcapture-%{version}-source.zip
 Source1:        streamcapture.desktop
 Source2:        streamcapture.png
 Patch0:         streamcapture-installdirs.patch
 License:        GPL
 Group:          Productivity/Networking/Other
 Requires:       rtmpdump
-BuildRequires: gcc-c++ qt4-devel desktop-file-utils
+BuildRequires:  gcc-c++ qt4-devel desktop-file-utils
 
 %description
 Want to save video on your computer to view whenever you want?
@@ -64,7 +64,7 @@ done
 %{_datadir}/streamcapture/languages/streamcapture_*.qm
 
 %changelog
-* Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.8
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.3.3
 - Rebuilt for Fedora
 * Fri Jun 15 2012 - joerg.lorenzen@ki.tng.de
 - update to version 0.2.8

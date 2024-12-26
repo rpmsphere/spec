@@ -1,12 +1,12 @@
 Name: xbps
 Summary: The X Binary Package System
-Version: 0.51
-Release: 7.1
+Version: 0.59.2
+Release: 1
 Group: System/Libraries
 License: BSD
 URL: https://github.com/voidlinux/xbps
 Source0: %{name}-%{version}.tar.gz
-BuildRequires: compat-openssl10-devel
+BuildRequires: openssl-devel
 BuildRequires: libarchive-devel
 BuildRequires: libconfuse-devel
 
@@ -34,7 +34,7 @@ make %{?_smp_mflags} CFLAGS="%{optflags} -Wno-error -fPIC"
 %make_install
 
 %files
-%doc TODO README.md NEWS COPYING 3RDPARTY
+%doc TODO README.md NEWS LICENSE* 3RDPARTY
 %{_bindir}/*
 %{_libdir}/lib*.so.*
 %{_mandir}/man?/*
@@ -51,5 +51,5 @@ make %{?_smp_mflags} CFLAGS="%{optflags} -Wno-error -fPIC"
 %{_libdir}/lib*.so
 
 %changelog
-* Mon Oct 23 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 0.51
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 0.59.2
 - Rebuilt for Fedora

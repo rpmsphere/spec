@@ -6,7 +6,7 @@
 %global __requires_exclude %{extensions}
 
 Name:           pix
-Version:        3.0.1
+Version:        3.4.4
 Release:        1
 Summary:        Image viewer and browser utility
 License:        GPLv2+
@@ -109,7 +109,7 @@ find %{buildroot} -name "*.la" -delete
 %{_datadir}/help/*/%{name}
 
 %changelog
-* Sun Jul 02 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 3.0.1
+* Sun Dec 08 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 3.4.4
 - Rebuilt for Fedora
 * Wed Mar 10 2021 daviddavid <daviddavid> 2.6.3-1.mga9
 + Revision: 1701082

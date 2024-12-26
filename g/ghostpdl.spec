@@ -1,6 +1,6 @@
 Summary:        Ghostscript RIP for PCL-5, PCL-XL and XPS
 Name:           ghostpdl
-Version:        10.01.2
+Version:        10.04.0
 Release:        1
 URL:            https://github.com/ArtifexSoftware/ghostpdl
 License:        GPL
@@ -42,7 +42,7 @@ fi
 %{_docdir}/%{name}/%{name}.pdf
 
 %changelog
-* Sun Sep 17 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 10.01.2
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 10.04.0
 - Rebuilt for Fedora
 * Fri Oct  4 2019 Lawrence R. Rogers <lrr@cert.org> 9.27-1
 * Release 9.27-1

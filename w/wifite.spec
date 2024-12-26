@@ -1,6 +1,6 @@
 Summary:        Automated wireless auditor
 Name:           wifite
-Version:        2.2.5
+Version:        2.7.0
 Release:        1
 Source0:        https://github.com/derv82/wifite2/archive/%{version}.tar.gz#/%{name}2-%{version}.tar.gz
 License:        GPLv2
@@ -29,9 +29,9 @@ python3 setup.py install --root %{buildroot} --prefix %{_prefix}
 %files
 %doc *.md
 %{python3_sitelib}/wifite*
-%{_datadir}/dict/wordlist-top4800-probable.txt
+%{_datadir}/dict/wordlist-probable.txt
 %{_sbindir}/%{name}
 
 %changelog
-* Tue Dec 10 2019 Wei-Lun Chao <bluebat@member.fsf.org> - 2.2.5
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.7.0
 - Rebuilt for Fedora

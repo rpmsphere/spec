@@ -27,6 +27,9 @@ BuildRequires:  pkgconfig(libnewt)
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  gettext-devel
+BuildRequires:  gcc-c++
+BuildRequires:  libtool
+BuildRequires:  systemd-rpm-macros
 
 %description
 Partition Image is a Linux/UNIX partition imaging utility: it saves
@@ -90,9 +93,19 @@ EOF
 
 sed -i 's|gprintf|printf|' %{buildroot}%{_initrddir}/partimaged
 
-%pre
-groupadd -r partimag ||:
-useradd partimag -g partimag -d /var/lib/partimage -r -s /bin/false
+mkdir -p %{buildroot}%{_sysusersdir}
+cat >%{buildroot}%{_sysusersdir}/%{name}.conf <<EOF
+g partimag - -
+u partimag - "Partimag" /var/lib/partimage /sbin/nologin
+EOF
+
+#%%pre
+#groupadd -r partimag ||:
+#useradd partimag -g partimag -d /var/lib/partimage -r -s /bin/false
+#%%postun
+#%%userdel partimag
+#%%groupdel partimag ||:
+
 
 %post
 dir=/var/lib/partimage
@@ -104,7 +117,7 @@ if [ ! -d $dir ]; then
     grep partimag /etc/group > $dir/etc/group
     install -d -o partimag $dir/data
 fi
-#%_create_ssl_certificate partimage -g partimag
+#%%_create_ssl_certificate partimage -g partimag
 mkdir -p /etc/pki/tls/certs/ /etc/pki/tls/private/
 openssl req -newkey rsa:4096 \
             -x509 \
@@ -120,15 +133,12 @@ service partimaged start
 %preun
 service partimaged stop
 
-%postun
-userdel partimag
-groupdel partimag ||:
-
 %files -f %{name}.lang
 %doc BUGS AUTHORS ABOUT-NLS COPYING ChangeLog partimage.lsm
 %doc FORMAT README README.partimaged README.mga THANKS
 %{_sbindir}/*
 %{_sysconfdir}/sysconfig/partimaged
+%{_sysusersdir}/%{name}.conf
 %{_initrddir}/partimaged
 %attr(0600,partimag,partimag) %config(noreplace) %{_sysconfdir}/partimaged/partimagedusers
 %{_mandir}/man1/partimage.1*
@@ -136,6 +146,9 @@ groupdel partimag ||:
 %{_mandir}/man8/partimaged.8*
 
 %changelog
+* Sat Jan 11 2025 Sérgio Basto <sergio@serjux.com> - 0.6.9-16
+- From OpenMandrivaAssociation Create user/group the right way
+
 * Mon Mar 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.9
 - Rebuilt for Fedora
 

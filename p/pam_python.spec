@@ -8,7 +8,7 @@ URL:            https://pam-python.sourceforge.net
 License:        AGPLv3+
 Summary:        Support for writing PAM modules in Python
 Source:         https://sourceforge.net/projects/%{_name}/files/%{_name}-%{version}-1/%{_name}-%{version}.tar.gz
-BuildRequires:  python2-devel
+BuildRequires:  python3-devel
 BuildRequires:  pam-devel
 #BuildRequires: python2-sphinx
 
@@ -18,7 +18,9 @@ modules to be written in Python.
 
 %prep
 %setup -q -n %{_name}-%{version}
-sed -i 's|-Werror||' src/Makefile
+sed -i 's|-Werror|-Wno-implicit-function-declaration|' src/Makefile
+sed -i 's|python2|python3|' src/setup.py
+sed -i 's|cp build/lib.*/pam_python.so $(DESTDIR)$(LIBDIR)|cp build/lib.*/pam_python.*.so $(DESTDIR)$(LIBDIR)/pam_python.so|' src/Makefile
 
 %build
 make -C src
@@ -31,7 +33,7 @@ make -C src install LIBDIR=%{buildroot}/%{_lib}/security
 /%{_lib}/security/pam_python.so
 
 %changelog
-* Sun Apr 11 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
+* Fri Jan 17 2025 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0.8
 - Rebuilt for Fedora
 * Wed Sep 14 2016 mitya <mitya> 1.0.6-1.mga6
 + Revision: 1052577

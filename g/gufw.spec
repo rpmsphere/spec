@@ -1,11 +1,11 @@
 Name:           gufw 
-Version:        21.04.0
-Release:        2
+Version:        24.04
+Release:        1
 Summary:        Uncomplicated Firewall
 License:        GPL-3.0
 Group:          Productivity/Networking/Security
 URL:            https://gufw.org/
-Source0:        https://launchpadlibrarian.net/350352643/gufw-%{version}.tar.gz
+Source0:        https://github.com/costales/gufw/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  autoconf
 BuildRequires:  intltool
@@ -30,7 +30,7 @@ sed -i 's|share/gufw|lib/python%python3_version/site-packages|' bin/gufw-pkexec
 python3 setup.py install --prefix=%{_prefix} --root %{buildroot}
 
 %files
-%doc COPYING.GPL3 README
+%doc COPYING.GPL3 README.md
 /etc/gufw
 /usr/bin/gufw
 /usr/bin/gufw-pkexec
@@ -43,7 +43,7 @@ python3 setup.py install --prefix=%{_prefix} --root %{buildroot}
 /usr/share/locale/*/LC_MESSAGES/gufw.mo
 
 %changelog
-* Wed Dec 15 2021 Wei-Lun Chao <bluebat@member.fsf.org> - 21.04.0
+* Sun Feb 2 2025 Wei-Lun Chao <bluebat@member.fsf.org> - 24.04
 - Rebuilt for Fedora
 * Fri Jan 16 2015 p.drouand@gmail.com
 - Update to version 15.04.0

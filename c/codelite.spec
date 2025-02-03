@@ -2,7 +2,7 @@
 %global __prelink_undo_cmd %{nil}
 
 Name:           codelite
-Version:        16.0.0
+Version:        17.0.0
 Release:        1
 License:        GPLv2+
 Group:          Development/Tools
@@ -22,11 +22,12 @@ CodeLite uses a sophisticated, yet intuitive interface which allows
 users to easily create, build and debug complex projects.
 
 %prep
-%setup -q
+%setup -q -n %{name}-17.0
 %ifarch aarch64
 sed -i 's|SIGSTKSZ|8192|' sdk/codelite_cppcheck/cli/cppcheckexecutor.cpp
 %endif
 sed -i '168s|const||' Plugin/dtl/Diff.hpp
+sed -i '62,77d' LiteEditor/editorsettingsdockingwidows.cpp
 
 %build
 mkdir -p build_release
@@ -51,7 +52,7 @@ Name=%{name}
 GenericName=C/C++ IDE
 Comment=An IDE for creating C/C++ programs
 Exec=%{name} %f
-Icon=codelite.png
+Icon=%{name}
 Terminal=false
 Type=Application
 MimeType=application/x-codelite-workspace;application/x-codelite-project;
@@ -79,6 +80,9 @@ desktop-file-install  --delete-original       \
                 $RPM_BUILD_ROOT%{_datadir}/applications/codelite.desktop
 
 %find_lang %{name}
+mv %{buildroot}/usr/lib %{buildroot}%{_libdir}
+mkdir -p %{buildroot}%{_mandir}/man1
+cp Runtime/man1/*.1 %{buildroot}%{_mandir}/man1
 
 %files -f %{name}.lang
 %doc AUTHORS LICENSE COPYING 
@@ -91,7 +95,7 @@ desktop-file-install  --delete-original       \
 %{_mandir}/man1/*.1*
 
 %changelog
-* Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 16.0.0
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 17.0.0
 - Rebuilt for Fedora
 * Wed Mar 03 2021 DH
 - Added clang-tools-extra to Requires: to make LanguageServer code-completion work

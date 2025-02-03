@@ -4,7 +4,7 @@
 %define versionbase 2.5
 %define versiontag ME+ 
 %define version1 %{versiontag}.%{versionbase}
-%define minor alpha60
+%define minor alpha65
 %define ver_full0 %{version1}.%{minor}
 %define ver_full %{ver_full0}
 %define fix_prefix /usr
@@ -19,6 +19,7 @@ License: The Elm(tm) Mail System General Public License
 Group: Applications/Communications
 Docdir: %{fix_prefix}/doc
 Provides: elm
+BuildRequires: ncurses-static
 
 %description
 Elm ME+ - an interactive mail system, Millennium Edition.
@@ -59,6 +60,7 @@ This module uses encryption from OpenSSL library.
 %prep
 %setup -q -n %{_name}%{versiontag}.%{versionbase}.%{minor}
 sed -i 's| -g| -g -Wl,--allow-multiple-definition|' */Makefile
+sed -i '1372,1396d' lib/mailer/message-id.c
 
 %build
 # Configure seems disable -O2 on Fedore so also _FORTIFY_SOURCE does not work
@@ -70,14 +72,15 @@ d_shared_rev='.dummy.%{minor}'
 soname_include_path=n
 use_pmake=n
 EOM
+sed -i -e "8316s|dflt=y|dflt=n|" -e "8326s|termlib=.*|termlib=/usr/lib64/libtinfo.a|" Configure
 sh Configure -b -c config.rpm -P %{fix_prefix}
 sed -i 's|CC.*=.*cc$|CC=cc -Wl,--allow-multiple-definition|' */Makefile */*/Makefile
 make all
 
 %install
 if [ "$RPM_BUILD_ROOT" != "/" ] ; then
-	rm -rf $RPM_BUILD_ROOT
-	mkdir -p $RPM_BUILD_ROOT
+        rm -rf $RPM_BUILD_ROOT
+        mkdir -p $RPM_BUILD_ROOT
 fi
 
 make package ROOT=$RPM_BUILD_ROOT
@@ -145,23 +148,20 @@ $RPM_BUILD_ROOT%{fix_prefix}/lib/elmregister filter -R $RPM_BUILD_ROOT %{modargs
 $RPM_BUILD_ROOT%{fix_prefix}/lib/elmregister filter -R $RPM_BUILD_ROOT -M tls -w $RPM_BUILD_ROOT%{fix_prefix}/lib/elm.filelist-tls.%{minor}
 #
 rm $RPM_BUILD_ROOT%{fix_prefix}/lib/elm.filelist
-%clean
-if [ "$RPM_BUILD_ROOT" != "/" ] ; then
-	rm -rf $RPM_BUILD_ROOT
-fi
+#fi
 
 %post
 # Following files are created or rebuild on replay stage
 for F in `%{fix_prefix}/lib/elmconfwriter -l | sed "s/ \(.*\)$//"`
 do 
    if [ -f $F ] ; then
-	cp -p $F $F.rpmsave
+        cp -p $F $F.rpmsave
    fi
 done
 # record only old values before this installation to elm.rc.old-values
 F=%{fix_prefix}/lib/elm.rc.old-values
 if [ -f $F ] ; then
-	mv -f $F $F.rpmsave
+        mv -f $F $F.rpmsave
 fi
 err=0
 %{fix_prefix}/lib/elmregister replay -F %{fix_prefix}/lib/elm.filelist-main.%{minor} || err=$?
@@ -192,59 +192,59 @@ exit $err
 # Uninstall if this is is last install
 # This assumes that all other elm modules are already uninstalled
 if [ $1 = 0 ] ; then
-	%{fix_prefix}/lib/elmregister uninstall -M all
+        %{fix_prefix}/lib/elmregister uninstall -M all
 fi
 
 %preun mod
 # Uninstall if this is is last install
 if [ $1 = 0 ] ; then
-	%{fix_prefix}/lib/elmregister uninstall %{modargs} 
+        %{fix_prefix}/lib/elmregister uninstall %{modargs} 
 fi
 
 %preun tls
 # Uninstall if this is is last install
 if [ $1 = 0 ] ; then
-	%{fix_prefix}/lib/elmregister  uninstall -M tls
+        %{fix_prefix}/lib/elmregister  uninstall -M tls
 fi
 
 %postun
 if [ $1 = 0 ] ; then
-	# We return these files to original places, so that
-	# these are used when elm is re-installed
-	F=%{fix_prefix}/lib/elm.mimecharsets
-	if [ -f $F.rpmsave -a ! -f $F ] ; then
-		cp -p $F.rpmsave $F
-	fi
-	F=%{fix_prefix}/lib/elm.terminalinfo
-	if [ -f $F.rpmsave -a ! -f $F ] ; then
-		cp -p $F.rpmsave $F
-	fi
-	F=%{fix_prefix}/lib/elm.mimetypes
-	if [ -f $F.rpmsave -a ! -f $F ] ; then
-		cp -p $F.rpmsave $F
-	fi
+        # We return these files to original places, so that
+        # these are used when elm is re-installed
+        F=%{fix_prefix}/lib/elm.mimecharsets
+        if [ -f $F.rpmsave -a ! -f $F ] ; then
+                cp -p $F.rpmsave $F
+        fi
+        F=%{fix_prefix}/lib/elm.terminalinfo
+        if [ -f $F.rpmsave -a ! -f $F ] ; then
+                cp -p $F.rpmsave $F
+        fi
+        F=%{fix_prefix}/lib/elm.mimetypes
+        if [ -f $F.rpmsave -a ! -f $F ] ; then
+                cp -p $F.rpmsave $F
+        fi
         F=%{fix_prefix}/lib/elm.mailinglists
-	if [ -f $F.rpmsave -a ! -f $F ] ; then
-		cp -p $F.rpmsave $F
-	fi
-	F=%{fix_prefix}/lib/elm.iso2022sets
-	if [ -f $F.rpmsave -a ! -f $F ] ; then
-		cp -p $F.rpmsave $F
-	fi
+        if [ -f $F.rpmsave -a ! -f $F ] ; then
+                cp -p $F.rpmsave $F
+        fi
+        F=%{fix_prefix}/lib/elm.iso2022sets
+        if [ -f $F.rpmsave -a ! -f $F ] ; then
+                cp -p $F.rpmsave $F
+        fi
         F=%{fix_prefix}/lib/elm.aliases
-	if [ -f $F.rpmsave -a ! -f $F ] ; then
-		cp -p $F.rpmsave $F
-	fi
-	F=%{fix_prefix}/lib/elm.mailservices
-	if [ -f $F.rpmsave -a ! -f $F ] ; then
-		cp -p $F.rpmsave $F
-	fi
-	F=%{fix_prefix}/lib/elm.rc
-	if [ -f $F.rpmsave -a ! -f $F ] ; then
-		cp -p $F.rpmsave $F
-	fi
-	F=%{fix_prefix}/lib/elm.rc.old-values
-	rm $F
+        if [ -f $F.rpmsave -a ! -f $F ] ; then
+                cp -p $F.rpmsave $F
+        fi
+        F=%{fix_prefix}/lib/elm.mailservices
+        if [ -f $F.rpmsave -a ! -f $F ] ; then
+                cp -p $F.rpmsave $F
+        fi
+        F=%{fix_prefix}/lib/elm.rc
+        if [ -f $F.rpmsave -a ! -f $F ] ; then
+                cp -p $F.rpmsave $F
+        fi
+        F=%{fix_prefix}/lib/elm.rc.old-values
+        rm $F
 fi
 
 %postun mod
@@ -279,7 +279,8 @@ fi
 %doc %{_docdir}/%{_name}-%{ver_full}/doc/mail.services
 %dir %{_docdir}/%{_name}-%{ver_full}/shared_libs
 
-%files mod -f %{buildroot}%{fix_prefix}/lib/elm.filelist-mod.rpm
+#files mod -f %{buildroot}%{fix_prefix}/lib/elm.filelist-mod.rpm
+%files mod
 %ghost %{fix_prefix}/lib/elm.filelist-mod.rpm
 %{fix_prefix}/lib/elm.filelist-mod.%{minor}
 %dir %{_docdir}/%{_name}-%{ver_full}/shared_libs/iconv
@@ -289,14 +290,15 @@ fi
 %dir %{_docdir}/%{_name}-%{ver_full}/shared_libs/resolv
 %doc %{_docdir}/%{_name}-%{ver_full}/shared_libs/resolv/README.ME+
 
-%files tls -f %{buildroot}%{fix_prefix}/lib/elm.filelist-tls.rpm
+#files tls -f %{buildroot}%{fix_prefix}/lib/elm.filelist-tls.rpm
+%files tls
 %ghost %{fix_prefix}/lib/elm.filelist-tls.rpm
 %{fix_prefix}/lib/elm.filelist-tls.%{minor}
 %dir %{_docdir}/%{_name}-%{ver_full}/shared_libs/tls
 %doc %{_docdir}/%{_name}-%{ver_full}/shared_libs/tls/README.ME+
 
 %changelog
-* Sun Sep 25 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.alpha60
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2.5.alpha65
 - Rebuilt for Fedora
 * Sat Oct 26 2013 Kari Hurtta <deb@elmme-mailer.org>
 - Initial package

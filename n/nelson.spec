@@ -3,18 +3,18 @@
 
 Summary: The Nelson Programming Language
 Name: nelson
-Version: 0.7.10
+Version: 1.13.0
 Release: 1
 License: GPLv2
 Group: Development/Language
-URL: https://nelson-numerical-software.github.io/nelson-website/
-Source0: https://github.com/Nelson-numerical-software/nelson/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildRequires: eigen3-devel
-BuildRequires: matio-devel
-BuildRequires: openmpi-devel
-BuildRequires: libsndfile-devel
-BuildRequires: libgit2-devel
-BuildRequires: portaudio-devel
+URL: https://nelson-lang.github.io/nelson-website/
+Source0: https://github.com/nelson-lang/nelson/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+BuildRequires: cmake gcc-c++
+BuildRequires: giflib-devel libjpeg-devel libpng-devel libtiff-devel libcurl-devel
+BuildRequires: qt5-qtbase-devel qt5-qtdeclarative-devel qt5-qtsvg-devel qt5-qttools-devel
+BuildRequires: eigen3-devel matio-devel openmpi-devel libsndfile-devel libgit2-devel portaudio-devel zlib-devel
+BuildRequires: libicu-devel libffi-devel boost-devel alsa-lib-devel libevent-devel flexiblas-devel hdf5-devel hwloc-devel
+BuildRequires: lapack-devel libgit2-devel libstdc++-devel libxml2-devel pipewire-jack-audio-connection-kit-devel taglib-devel
 AutoReq: off
 Requires: openmpi
 Requires: qt5-qtbase-gui qt5-qtdeclarative alsa-lib boost libcurl libevent libffi flexiblas-netlib libgcc libgit2 libgomp
@@ -64,10 +64,9 @@ make
 %{_libdir}/cmake/Nelson
 %{_datadir}/applications/org.nelson.Nelson.desktop
 %{_datadir}/icons/hicolor/*/apps/nelson.png
-%{_datadir}/locale/*/LC_MESSAGES/nelson.mo
+#{_datadir}/locale/*/LC_MESSAGES/nelson.mo
 %{_datadir}/metainfo/org.nelson.Nelson.appdata.xml
-#{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf
 
 %changelog
-* Sun Nov 12 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.7.10
+* Sun Apr 06 2025 Wei-Lun Chao <bluebat@member.fsf.org> - 1.13.0
 - Rebuilt for Fedora

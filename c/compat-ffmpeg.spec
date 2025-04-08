@@ -52,6 +52,7 @@ BuildRequires:  zlib-devel
 BuildRequires:  yasm
 %endif
 BuildRequires:  gcc-c++ automake
+BuildRequires:  xpdf-libs
 
 %description
 FFmpeg is a complete and free Internet live audio and video
@@ -137,7 +138,7 @@ pushd generic
 %endif
 %ifarch %{ix86} x86_64
     --enable-runtime-cpudetect \
-    --enable-pic \
+#    --enable-pic \
 %endif
 %ifarch ppc
     --cpu=g3 \

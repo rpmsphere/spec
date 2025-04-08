@@ -3,7 +3,7 @@
 %define user_service /etc/systemd/user/
 
 Name:     asusctl
-Version:  5.0.7
+Version:  5.0.10
 Release:  1
 Summary:  A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops 
 License:  MPL-2.0
@@ -24,6 +24,7 @@ BuildRequires: pkgconfig(gdk-pixbuf-2.0)
 BuildRequires: pkgconfig(pango)
 BuildRequires: pkgconfig(gdk-3.0)
 BuildRequires: libusb1-devel
+BuildRequires: libseat-devel
 
 %description
 asusd is a utility for Linux to control many aspects of various ASUS laptops
@@ -44,10 +45,10 @@ a notification service, and ability to run in the background.
 
 %prep
 %setup -q
-#%%patch 1 -p1
+#patch 1 -p1
 
 %build
-export RUSTFLAGS="%rustflags"
+#export RUSTFLAGS="%rustflags"
 #RUST_BACKTRACE=1 
 cargo build --release
 
@@ -85,7 +86,7 @@ mv %buildroot/usr/lib/systemd/user/asusd-user.service %buildroot/%user_service/a
 %_datadir/rog-gui/*
 
 %changelog
-* Sat Feb 10 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.7
+* Sun Dec 15 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.10
 - Rebuilt for Fedora
 * Mon Sep 11 2023 Hihin Ruslan <ruslandh@altlinux.ru> 4.7.2-alt1.1
 - Update sisyphus

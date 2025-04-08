@@ -3,7 +3,7 @@
 %undefine _debugsource_packages
 
 Name:    peazip
-Version: 9.6.0
+Version: 10.3.0
 Release: 1
 Summary: File and archive manager
 License: LGPLv3
@@ -15,7 +15,7 @@ Source1: altconf.txt
 
 BuildRequires: fpc
 BuildRequires: fpc-src
-BuildRequires: lazarus >= 1.2.0
+BuildRequires: lazarus
 BuildRequires: desktop-file-utils
 
 %if %{with qt}
@@ -117,7 +117,7 @@ install -Dm644 ../res/share/batch/freedesktop_integration/%{name}.png %{buildroo
 %{_datadir}/peazip
 
 %changelog
-* Sun Apr 07 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 9.6.0
+* Sun Apr 06 2025 Wei-Lun Chao <bluebat@member.fsf.org> - 10.3.0
 - Rebuilt for Fedora
 * Tue Feb 20 2018 Sérgio Basto <sergio@serjux.com> - 6.5.1-1
 - Updated to 6.5.1

@@ -6,7 +6,7 @@ Version:        3.23.4
 Release:        5
 License:        GPLv3+
 Group:          Sound/Utilities
-URL:            https://www.solfege.org/
+URL:            https://www.gnu.org/software/solfege/solfege.html
 Source0:        https://alpha.gnu.org/gnu/solfege/%{name}-%{version}.tar.gz
 Source1:        %{name}48.png
 Source2:        %{name}32.png
@@ -27,7 +27,7 @@ BuildRequires:  txt2man
 BuildRequires:  libxslt-devel
 BuildRequires:  python-rpm-macros
 Requires:       python3-gobject-base
-Requires:       TiMidity++
+Requires:       timidity++
 
 %description
 GNU Solfege is an ear-training program. These are the exercises written so far:
@@ -76,14 +76,13 @@ python3 /usr/lib/rpm/redhat/pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{
 %{_bindir}/*
 %config(noreplace) %{_sysconfdir}/sol*
 %{_mandir}/man1/*
-#%{_libdir}/%{name}
 %{_datadir}/applications/*.desktop
 %{_datadir}/pixmaps/*.svg
 %{_datadir}/%{name}/
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 
 %changelog
-* Sun Jan 16 2022 Wei-Lun Chao <bluebat@member.fsf.org> - 3.23.4
+* Sun Feb 23 2025 Wei-Lun Chao <bluebat@member.fsf.org> - 3.23.4
 - Rebuilt for Fedora
 * Wed Mar 24 2021 daviddavid <daviddavid> 3.23.4-5.mga9
 + Revision: 1708558
@@ -244,7 +243,7 @@ python3 /usr/lib/rpm/redhat/pathfix.py -pni "%{__python3} %{py3_shbang_opts}" %{
 - rebuild early 2009.0 package (before pixel changes)
 - swig-devel doesn't exist
   + Austin Acton <austin@mandriva.org>
-    - requires TiMidity++ (Maxim Heijndijk)
+    - requires timidity++ (Maxim Heijndijk)
   + Pixel <pixel@mandriva.com>
     - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
 * Wed Jun 11 2008 Austin Acton <austin@mandriva.org> 3.10.4-1mdv2009.0

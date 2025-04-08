@@ -1,9 +1,10 @@
 %undefine _debugsource_packages
+%global __os_install_post %{nil}
 
 Name: ds9
-Version: 7.2
+Version: 8.6
 Summary: Astronomical Data Visualization Application
-Release: 12.1
+Release: 1
 License: GPLv2+
 Group: Applications/Engineering
 URL: https://hea-www.harvard.edu/RD/ds9/
@@ -23,16 +24,18 @@ communication with external analysis tasks and is highly configurable and
 extensible.
 
 %prep
-%setup -q -n sao%{name}
-sed -i -e 's|usr/X11R6|usr|' -e 's|44||' make.linux*
-sed -i 's|-Wall|-Wall -fpermissive -Wno-int-conversion -Wno-implicit-function-declaration|' make.linux*
-sed -i 's|-fno-inline|-fno-inline -fpermissive -Wno-int-conversion -Wno-implicit-function-declaration|' make.linux*
-sed -i -e 's|-lxml2|-lxml2 -lfontconfig -lfreetype|' ds9/Makefile
-sed -i "s|0x8b|'\x8b'|" saotk/fitsy++/outsocket.C
-sed -i 's|mapdata_>0|mapdata_ != NULL|' saotk/fitsy++/*.C
-sed -i 's|typedef int ptrdiff_t|typedef long int ptrdiff_t|' tcl8.5.9/generic/tclInt.h
+%setup -q -n SAOImageDS9
+#sed -i -e 's|usr/X11R6|usr|' -e 's|44||' make.linux*
+#sed -i 's|-Wall|-Wall -fpermissive -Wno-int-conversion -Wno-implicit-function-declaration|' make.linux*
+#sed -i 's|-fno-inline|-fno-inline -fpermissive -Wno-int-conversion -Wno-implicit-function-declaration|' make.linux*
+#sed -i -e 's|-lxml2|-lxml2 -lfontconfig -lfreetype|' ds9/Makefile
+#sed -i "s|0x8b|'\x8b'|" saotk/fitsy++/outsocket.C
+#sed -i 's|mapdata_>0|mapdata_ != NULL|' saotk/fitsy++/*.C
+#sed -i 's|typedef int ptrdiff_t|typedef long int ptrdiff_t|' tcl8.5.9/generic/tclInt.h
+sed -i 's|typedef unsigned long z_crc_t|typedef unsigned int z_crc_t|' tclzipfs/tclZipfs.c
 
 %build
+%if 0
 for i in */config.guess */*/config.guess */*/*/config.guess */*/*/*/config.guess
 do
 cp -f /usr/share/automake-*/config.guess $i
@@ -48,7 +51,10 @@ ln -s make.linux make.include
 cd ast-7.1.1
 ./configure --enable-shared=no --prefix=/root/rpmbuild/BUILD/saods9  CC='gcc'
 cd ..
+%endif
 #sed -i 's|-fno-inline|-fno-inline -fpermissive -Wno-int-conversion -Wno-implicit-function-declaration|' `find . -name Makefile` `find . -name Makefile.in`
+unix/configure
+sed -i 's| -o | -lm -o |' `find . -name 'Makefile*'`
 make
 
 %install
@@ -63,14 +69,14 @@ cp bin/ds9 $RPM_BUILD_ROOT/usr/bin
 %{__cp} -a %{SOURCE3} $RPM_BUILD_ROOT/etc/prelink.conf.d
 
 %files
-%doc README notes.txt copyright COPYING
+#doc README notes.txt copyright COPYING
 %{_bindir}/ds9
 %{_datadir}/applications/ds9.desktop
 %{_datadir}/pixmaps/ds9.png
 %{_sysconfdir}/prelink.conf.d/ds9.conf
 
 %changelog
-* Wed Jun 04 2014 Wei-Lun Chao <bluebat@member.fsf.org> - 7.2
+* Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 8.6
 - Rebuilt for Fedora
 * Tue Jan 24 2012 <tom@mmto.org>
 - version 6.2-3

@@ -1,6 +1,6 @@
 Name: language-pack-sinitic
 Summary: Translations for some sinitic languages
-Version: 2024.12
+Version: 2025.07
 Release: 1
 License: Open Source
 Group: Translations
@@ -94,7 +94,6 @@ make
 %{_datadir}/pebl/battery/SNARC/translations/cmn*.txt
 /lib/python3.*/site-packages/*/*/cmn*/LC_MESSAGES/*.mo
 /lib/python3.*/site-packages/*/*/*/cmn*/LC_MESSAGES/*.mo
-%{_libexecdir}/nelson/locale/cmn*/LC_MESSAGES/nelson.mo
 %{_libdir}/python2.*/site-packages/Editra/locale/cmn*/LC_MESSAGES/Editra.mo
 %{_libdir}/*/*/*_cmn*.qm
 %{_datadir}/PrusaSlicer/localization/cmn*/PrusaSlicer.mo
@@ -159,7 +158,6 @@ make
 %{_datadir}/pebl/battery/SNARC/translations/yue*.txt
 /lib/python3.*/site-packages/*/*/yue*/LC_MESSAGES/*.mo
 /lib/python3.*/site-packages/*/*/*/yue*/LC_MESSAGES/*.mo
-%{_libexecdir}/nelson/locale/yue*/LC_MESSAGES/nelson.mo
 %{_libdir}/python2.*/site-packages/Editra/locale/yue*/LC_MESSAGES/Editra.mo
 %{_libdir}/*/*/*_yue*.qm
 %{_datadir}/PrusaSlicer/localization/yue*/PrusaSlicer.mo
@@ -173,5 +171,5 @@ make
 rm -rf %{buildroot}
 
 %changelog
-* Sun Dec 15 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 2024.12
+* Thu Jul 10 2025 Wei-Lun Chao <bluebat@member.fsf.org> - 2025.07
 - Rebuilt for Fedora

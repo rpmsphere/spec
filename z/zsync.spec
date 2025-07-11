@@ -24,6 +24,7 @@ server, making it ideal for large scale file distribution.
 
 %build
 autoreconf -ifv
+export CFLAGS+=" -Wno-incompatible-pointer-types"
 #endian="-DLITTLE_ENDIAN=0 -DBIG_ENDIAN=1 -DBYTE_ORDER=0"
 CPPFLAGS="%{optflags} $endian" \
 LDFLAGS="%{optflags}" \

@@ -24,6 +24,7 @@ BuildRequires:  uchardet-devel
 BuildRequires:  spdlog-devel
 BuildRequires:  vte291-devel
 BuildRequires:  sqlite-devel
+BuildRequires:  texlive-latex
 Requires:       python(abi) = %{py_ver}
 Requires:       pygtk2
 Requires:       pygobject2
@@ -68,7 +69,6 @@ rm -rf %{buildroot}%{_datadir}/mime-info/
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}/
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
-#%{_datadir}/mime/packages/%{name}.xml
 %{_mandir}/man1/*.1*
 %{_datadir}/metainfo/*
 %{_includedir}/gmock

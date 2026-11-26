@@ -63,7 +63,7 @@ keyring.
 
 %build
 cp -f /usr/share/automake-*/config.guess keyanalyze/pgpring/
-make CFLAGS="%{optflags}"
+make CFLAGS="%{optflags} -std=gnu89"
 
 %install
 mkdir -p $RPM_BUILD_ROOT

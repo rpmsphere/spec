@@ -120,7 +120,7 @@ sed -i 's|GLOBAL inline int PrintChar|GLOBAL int PrintChar|' cilk2c/basics.h cil
 
 %build
 #export CFLAGS="-DHAVE_SYS_TIME_H -fgnu89-inline -fPIE -fPIC -Wno-error"
-export CFLAGS="-DHAVE_SYS_TIME_H -fPIE"
+export CFLAGS="-DHAVE_SYS_TIME_H -std=gnu89 -fPIE"
 autoreconf -ivf
 ./configure --prefix=/usr --with-perfctr=no
 sed -i 's|GLOBAL inline Bool AcceptWildcards|GLOBAL Bool AcceptWildcards|' cilk2c/ANSI-C.c

@@ -25,7 +25,7 @@ You can dynamically change various xims.
 #sed -i 's|-g utmp||g' configure*
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" \
+CFLAGS="$RPM_OPT_FLAGS -std=gnu89" \
 ./configure --prefix=%{_prefix} \
             --bindir=%{_bindir} \
             --libdir=%{_libdir} \

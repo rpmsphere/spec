@@ -8,7 +8,7 @@ Group: Desktop/User Interface
 Source: https://launchpad.net/%{name}/trunk/%{version}/+download/%{name}_%{version}.tar.gz
 URL: https://launchpad.net/xdg-launcher
 BuildArch: noarch
-BuildRequires: python2-devel
+BuildRequires: python3-devel
 Requires: pygtk2, python-argparse, python-gmenu
 
 %description
@@ -24,14 +24,15 @@ application defined by XDG menus.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -Dm755 %{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
-install -Dm644 xdglauncher.py $RPM_BUILD_ROOT%{python2_sitelib}/xdglauncher.py
+install -Dm644 xdglauncher.py $RPM_BUILD_ROOT%{python3_sitelib}/xdglauncher.py
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
 
 %files
 %doc GPL-2
 %{_bindir}/*
-%{python2_sitelib}/*.py*
+%{python3_sitelib}/*.py*
+%{python3_sitelib}/__pycache__/*
 
 %changelog
 * Tue Oct 25 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0.4

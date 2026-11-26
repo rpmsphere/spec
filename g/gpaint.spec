@@ -24,7 +24,7 @@ is like Photoshop as gpaint is like Windows Paint.
 sed -i "s#GTK_RESPONSE_DISCARD#GTK_RESPONSE_NO#" src/drawing.c
 
 %build
-export CFLAGS="-lm -fPIC"
+export CFLAGS="-std=gnu89 -lm -fPIC"
 %configure
 make %{?_smp_mflags}
 

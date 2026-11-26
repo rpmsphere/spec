@@ -7,7 +7,8 @@ URL:            https://matchbox-project.org/
 License:        GPLv2+
 Group:          Graphical desktop/Other
 Source:         https://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.bz2
-BuildRequires:  pango-devel libX11-devel libjpeg-devel libpng-devel libxsettings-client-devel libmatchbox-devel
+BuildRequires:  pango-devel libX11-devel libjpeg-devel libpng-devel libmatchbox-devel
+#BuildRequires:  libxsettings-client-devel
 
 %description
 Input manager for the Matchbox Desktop.

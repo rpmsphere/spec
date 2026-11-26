@@ -29,7 +29,7 @@ make sure you have package xfonts-100dpi installed.
 
 %build
 %configure
-sed -i -e 's|-O2|-O2 -I/usr/include/libpng12|' -e 's|-lpng|-lpng12|' -e 's|-Wl,-z,now|-Wl,-z,now -Wl,--allow-multiple-definition|' */Makefile
+sed -i -e 's|-O2|-O2 -I/usr/include/libpng12 -Wno-implicit-function-declaration -Wno-incompatible-pointer-types -Wno-return-mismatch|' -e 's|-lpng|-lpng12|' -e 's|-Wl,-z,now|-Wl,-z,now -Wl,--allow-multiple-definition|' */Makefile
 make %{?_smp_mflags}
 
 %install

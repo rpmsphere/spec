@@ -22,7 +22,7 @@ must have an ANSI C compiler present on your system for Awka to work.
 %patch 0 -p1
 
 %build
-export CFLAGS="-O2 -g -pipe -Wall -Wno-format-security -fPIE"
+export CFLAGS="-O2 -g -std=gnu89 -pipe -Wall -Wno-format-security -fPIE"
 ./configure --prefix=/usr
 make
 

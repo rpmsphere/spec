@@ -12,7 +12,7 @@ Source0:        https://github.com/wxFormBuilder/wxFormBuilder/releases/download
 BuildRequires:  gcc-c++
 BuildRequires:  ImageMagick
 BuildRequires:  wxGTK-devel
-BuildRequires:  ticpp-devel
+#BuildRequires:  ticpp-devel
 
 %description
 wxFormBuilder is an open-source, cross-platform RAD tool for wxWidgets. 

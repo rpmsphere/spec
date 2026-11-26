@@ -26,6 +26,7 @@ Morse-code beeps.
 %patch 0 -p1
 
 %build
+export CC='gcc -std=gnu89'
 rm -f morse.1
 make DEVICE=ALSA QSO morse.1
 rm -f morse.d/morse

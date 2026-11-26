@@ -1,5 +1,7 @@
+%define __spec_install_post %{nil}
 %undefine _missing_build_ids_terminate_build
 %global _name SimulIDE
+%undefine _debugsource_packages
 
 Name: simulide
 Summary: Simple real time electronic circuit simulator

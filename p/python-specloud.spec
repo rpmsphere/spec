@@ -7,8 +7,8 @@ Summary:        Install nosetests and Plugins to Ease BDD Unit Specs
 License:        MIT
 Group:          Development/Languages/Python
 Source:         specloud-%{version}.tar.gz
-BuildRequires:  python2-devel
-BuildRequires:  python2-setuptools
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
 BuildArch:      noarch
 
 %description
@@ -25,17 +25,17 @@ renamed the project to `specloud`.
 
 %build
 export CFLAGS="%{optflags}"
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install --prefix=%{_prefix} --root=%{buildroot}
+python3 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 #sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 
-sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
+sed -i 's|/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/*
 
 %files
 %{_bindir}/*
-%{python2_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.4.4

@@ -26,6 +26,7 @@ A large variety of widgets provides a comprehensive demonstration.
 %patch 2 -p1 -b .fix
 
 %build
+export CC='gcc -std=gnu89'
 make %{?_smp_mflags}
 
 %install

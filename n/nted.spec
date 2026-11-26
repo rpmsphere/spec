@@ -11,7 +11,7 @@ BuildRequires:  gtk2-devel alsa-lib-devel
 BuildRequires:  gettext yelp xmlto desktop-file-utils
 BuildRequires:  fontpackages-devel >= 1.18
 BuildRequires:  fontpackages-filesystem
-BuildRequires:  qca2 baloo
+#BuildRequires:  qca2 baloo
 
 %description
 NtEd is a GTK score editor. It intends to be really WYSIWYG: what you

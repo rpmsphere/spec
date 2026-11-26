@@ -12,7 +12,7 @@ BuildArch:      noarch
 %define         _appname        SlideShow
 %define         _ctrlname       ImageSlideShow
 
-BuildRequires:  python2
+#BuildRequires:  python2
 Requires:       gdesklets
 Requires:       python-imaging
 

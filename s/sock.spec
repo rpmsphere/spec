@@ -28,7 +28,7 @@ Authors:
 %setup -q
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" ./configure --prefix=$RPM_BUILD_ROOT/usr --mandir=$RPM_BUILD_ROOT/%{_mandir}
+CFLAGS="$RPM_OPT_FLAGS -std=gnu89" ./configure --prefix=$RPM_BUILD_ROOT/usr --mandir=$RPM_BUILD_ROOT/%{_mandir}
 make
 
 %install

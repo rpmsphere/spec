@@ -36,7 +36,7 @@ support for plugins.
 #mkdir -p %{buildroot}%{_datadir}/applications/
 #mv %{buildroot}%{_datadir}/sunflower/Sunflower.desktop %{buildroot}%{_datadir}/applications/Sunflower.desktop
 #ln -s %{_datadir}/sunflower/images/sunflower.png %{buildroot}%{_datadir}/pixmaps/sunflower.png
-#sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_datadir}/%{name}/*.py
+#sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{_datadir}/%{name}/*.py
 
 %files
 %{_bindir}/sunflower

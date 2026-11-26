@@ -40,7 +40,7 @@ DESTDIR=$RPM_BUILD_ROOT make install
 %{__sed} -i 's|/usr/lib|/usr/lib64|' $RPM_BUILD_ROOT%{_bindir}/oxim-setup
 %{__sed} -i 's|/usr/lib|/usr/lib64|' $RPM_BUILD_ROOT%{_libdir}/oxim-setup/oxim-setup-php/init.php
 %endif
-%{__sed} -i 's|/usr/bin/env python|/usr/bin/python2|' $RPM_BUILD_ROOT%{_libdir}/oxim-setup/oxim-setup-pygtk/oxim-pytgtk-gui.py $RPM_BUILD_ROOT%{_libdir}/oxim-setup/oxim-setup-pygtk/oxim-setup
+%{__sed} -i 's|/usr/bin/env python|/usr/bin/python3|' $RPM_BUILD_ROOT%{_libdir}/oxim-setup/oxim-setup-pygtk/oxim-pytgtk-gui.py $RPM_BUILD_ROOT%{_libdir}/oxim-setup/oxim-setup-pygtk/oxim-setup
 
 %post
 update-mime-database %{_datadir}/mime &> /dev/null

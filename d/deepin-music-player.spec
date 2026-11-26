@@ -9,7 +9,7 @@ URL:            https://packages.linuxdeepin.com/deepin/pool/main/d/deepin-music
 Source0:        %{name}-%{version}.tar.gz
 Source1:        deepin-music-player.desktop
 Source2:        deepin-music-player.png
-BuildRequires:  python2-devel
+#BuildRequires:  python2-devel
 BuildRequires:  desktop-file-utils
 Requires:       deepin-ui
 Requires:       python-chardet

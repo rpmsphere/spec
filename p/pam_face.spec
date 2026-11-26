@@ -7,8 +7,8 @@ License:        German Free Software License
 Group:          System
 URL:            https://github.com/philippmeisberger/pam-face
 Source0:        pam-face-master.zip
-BuildRequires:  python2-devel
-Requires:       python2-opencv
+BuildRequires:  python3-devel
+Requires:       python3-opencv
 Requires:       pam_python
 BuildArch:      noarch
 
@@ -23,17 +23,17 @@ possible. The module has to be configured by the pamface-conf program.
 sed -i 's|/usr/share/opencv|/usr/share/OpenCV|' src/pamface/facerecognizer.py
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install -O1 --root=%{buildroot} --prefix=/usr
+python3 setup.py install -O1 --root=%{buildroot} --prefix=/usr
 #install -Dm644 debian/pam-auth-update/face %{buildroot}%{_datadir}/pam-configs/face
 install -Dm644 src/pam_face.py %{buildroot}/lib/security/pam_face.py
 install -Dm755 src/pamface-conf %{buildroot}%{_bindir}/pamface-conf
 install -Dm644 src/pamface.conf %{buildroot}%{_sysconfdir}/pamface/pamface.conf
 install -Dm644 src/models.xml %{buildroot}%{_sysconfdir}/pamface/models.xml
 
-sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
+sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{_bindir}/*
 
 %post
 #authconfig --enableface --update
@@ -47,8 +47,8 @@ sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
 #{_datadir}/pam-configs
 /lib/security/pam_face.py*
 %{_sysconfdir}/pamface
-%{python2_sitelib}/pamface
-%{python2_sitelib}/libpam_face*
+%{python3_sitelib}/pamface
+%{python3_sitelib}/libpam_face*
 
 %changelog
 * Fri Mar 16 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 1.0

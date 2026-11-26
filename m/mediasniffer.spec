@@ -54,7 +54,7 @@ mv %{buildroot}%{_datadir}/pixmaps/%{name}/icon.png %{buildroot}%{_datadir}/pixm
 %{_sysconfdir}/pam.d/%{name}
 %{_sysconfdir}/security/console.apps/%{name}
 %{_bindir}/%{name}
-%{_sbindir}/%{name}
+/usr/sbin/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/doc/%{name}
 %{_datadir}/pixmaps/%{name}.png

@@ -6,7 +6,8 @@ Group:          library/System
 License:        GPL
 URL:            https://libymp.sourceforge.net                  
 Source0:        https://sourceforge.net/projects/libymp/files/%{name}-%{version}.tar.gz 
-BuildRequires:  gmp-devel, gtkmm24-devel, gtkhtml3-devel
+BuildRequires:  gmp-devel, gtkmm24-devel
+#BuildRequires:  gtkhtml3-devel
 
 %description
 A portable general purpose library, written in C++ consisting of:

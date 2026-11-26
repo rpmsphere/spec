@@ -10,7 +10,7 @@ Source0:        %{name}-%{version}.tar.gz
 Source1:        deepin-media-player.desktop
 Source2:        deepin-media-player.png
 BuildRequires:  desktop-file-utils
-BuildRequires:  python2-devel
+#BuildRequires:  python2-devel
 Requires:       deepin-ui
 Requires:       python-pyquery 
 Requires:       python-mutagen 

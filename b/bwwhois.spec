@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name:                   bwwhois
 Version:                5.0
 Release:                10.1

@@ -22,6 +22,7 @@ converters.
 %setup -q
 
 %build
+export CC='gcc -std=gnu89'
 %ifarch x86_64
 make XINCDIR=/usr/include XLIBDIR=/usr/lib64
 %else

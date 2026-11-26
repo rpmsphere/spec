@@ -20,6 +20,7 @@ is given, hexdump reads from standard input.
 %setup -q -n hexdump-%{version}
 
 %build
+export CC='gcc -std=gnu89'
 %{__make} %{_smp_mflags}
 
 %install

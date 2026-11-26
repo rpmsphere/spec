@@ -78,7 +78,7 @@ spooles-devel provides the header file for the SPOOLES library.
 
 %build
 cd ${RPM_BUILD_DIR}/%{name}-%{version}
-export CFLAGS="$RPM_OPT_FLAGS -O2 -pthread -Wno-format-security"
+export CFLAGS="$RPM_OPT_FLAGS -O2 -std=gnu89 -pthread -Wno-format-security"
 
 %if %{without mpi}
 make -f makeRPM all %{?_smp_mflags}

@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name: tnt
 Version: 126
 Release: 2.1

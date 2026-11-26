@@ -63,7 +63,7 @@ rm -rf %{buildroot}
 %_datadir/%name
 %_datadir/icons/hicolor/scalable/apps/%name.svg
 %perl_privlib/vendor_perl/*.pm
-%exclude %_libdir/perl5/vendor_perl/auto/MMCalc/.packlist
+%exclude /usr/lib64/perl5/vendor_perl/auto/MMCalc/.packlist
 %_datadir/applications/g%{name}*.desktop
 
 %changelog

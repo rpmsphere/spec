@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Summary:        1C 7.7 SQL handling utility
 Name:           unsql
 Version:        0.0.3

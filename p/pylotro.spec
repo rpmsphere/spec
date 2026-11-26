@@ -10,7 +10,7 @@ License:    GPLv3
 URL:        https://www.lotrolinux.com
 Source0:    %{_name}-%{version}.tar.bz2
 BuildArch:  noarch
-BuildRequires: python2-devel
+BuildRequires: python3-devel
 Requires: python-4Suite-XML
 Requires: python-qt4
 
@@ -22,16 +22,16 @@ to launch Dungeons & Dragons Online.
 %setup -q -n %{_name}-%{version}
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
+python3 setup.py install --prefix=%{_prefix} --root=$RPM_BUILD_ROOT
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
 
 %files
 %{_bindir}/*
-%{python2_sitelib}/*
+%{python3_sitelib}/*
 %{_datadir}/applications/*
 %{_datadir}/pixmaps/*
 

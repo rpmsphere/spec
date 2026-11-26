@@ -25,7 +25,7 @@ cp -a bin sbin %{buildroot}/usr
 %files
 %doc doc/html/*
 %{_bindir}/*
-%{_sbindir}/*
+/usr/sbin/*
 
 %changelog
 * Sun May 21 2023 Wei-Lun Chao <bluebat@member.fsf.org> - 0.0

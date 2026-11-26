@@ -9,7 +9,7 @@ Patch2:         lfm-remove_shebangs.patch
 URL:            https://www.terra.es/personal7/inigoserna/lfm/
 Group:          Productivity/File utilities
 License:        GNU General Public License version 3 (GPL v3)
-BuildRequires:  python2-devel
+#BuildRequires:  python2-devel
 BuildRequires:  perl
 Provides:       pyview = %{version}-%{release}
 BuildArch:      noarch

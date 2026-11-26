@@ -35,7 +35,6 @@ makes it possible to play at higher levels. (It does not make it
 possible to prevent the piece from ever locking by abusing lock delay
 resets.)
 
-
 %prep
 %setup -q
 %patch 5 -p1
@@ -63,7 +62,7 @@ sed -i 's|Exec=tetris|Exec=vitetris|' vitetris.desktop
     --with-blockstyles \
     --with-pctimer
 
-make CFLAGS='%{optflags} -Wno-return-type' %{?_smp_mflags}
+make CFLAGS='%{optflags} -std=gnu89 -Wno-return-type' %{?_smp_mflags}
 
 %install
 %make_install

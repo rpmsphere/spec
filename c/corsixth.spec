@@ -11,7 +11,7 @@ URL:            https://github.com/CorsixTH/CorsixTH
 Source0:        https://github.com/CorsixTH/CorsixTH/archive/v%{version}/%{oname}-%{version}.tar.gz
 Patch0:         CorsixTH-0.50-lua53.patch
 BuildRequires:  cmake
-BuildRequires:  ffmpeg-devel
+BuildRequires:  (ffmpeg-devel or ffmpeg-free-devel)
 BuildRequires:  lua-devel
 BuildRequires:  luajit-devel
 BuildRequires:  pkgconfig(freetype2)

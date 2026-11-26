@@ -18,6 +18,7 @@ Has some alternative options, and the source code too, of course.
 %setup -q
 
 %build
+export CC='gcc -std=gnu89'
 make -j1
 
 %install

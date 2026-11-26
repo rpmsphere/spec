@@ -21,10 +21,11 @@ BuildRequires:  mpfr-devel
 BuildRequires:  openmpi-devel
 BuildRequires:  paraview-openmpi-devel
 BuildRequires:  netcdf
-BuildRequires:  python2-devel
+#BuildRequires:  python2-devel
 BuildRequires:  qt4-devel
 BuildRequires:  qt4-assistant
-BuildRequires:  libmetis-edf-devel
+#BuildRequires:  libmetis-edf-devel
+BuildRequires:  metis-devel
 BuildRequires:  readline-devel
 BuildRequires:  scotch-devel
 BuildRequires:  tk-devel

@@ -42,7 +42,7 @@ Included screensavers:
 %setup -q
 
 %build
-CFLAGS="%{optflags} -DHAVE_SYS_WAIT_H"
+CFLAGS="%{optflags} -std=gnu89 -DHAVE_SYS_WAIT_H"
 %configure \
     --with-hackdir="%{_libdir}/xscreensaver" \
     --with-configdir="/etc/xscreensaver" \

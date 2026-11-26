@@ -12,7 +12,8 @@ Source1:          gmlive.desktop
 BuildRequires:    libpng-devel
 BuildRequires:    gcc-c++
 BuildRequires:    intltool
-BuildRequires:    gtkmm24-devel, cairomm-devel, glibmm24-devel, libglademm24-devel
+BuildRequires:    gtkmm24-devel, cairomm-devel, glibmm24-devel
+#BuildRequires:    libglademm24-devel
 Requires:       mplayer, sp-auth
 
 %description

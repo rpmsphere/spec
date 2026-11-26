@@ -43,7 +43,7 @@ sed -i 's|%{buildroot}||' %{buildroot}%{_datadir}/perl5/5.*/Intclock.pl
 %{_bindir}/*
 %{_datadir}/perl5/*
 %{_datadir}/applications/*.desktop
-%exclude %{_libdir}/perl5/*
+%exclude /usr/lib64/perl5/*
 %{_datadir}/%{name}
 
 %changelog

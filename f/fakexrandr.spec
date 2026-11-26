@@ -8,7 +8,7 @@ Summary:        Fake XRandR configurations for multi-head setups
 License:        GPLv3
 Group:          System Environment/Libraries
 Source:         https://codeload.github.com/phillipberndt/fakexrandr/zip/master#/%{name}-master.zip
-BuildRequires:  python2
+#BuildRequires:  python2
 BuildRequires:  libXrandr-devel
 BuildRequires:  libXinerama-devel
 BuildRequires:  xorg-x11-server-devel

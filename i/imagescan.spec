@@ -47,6 +47,7 @@ sed -i '40,42d' sane/version.hpp
     --disable-static \
     %{CXX}
 
+export CXX='g++ -std=c++11'
 make BACKEND_NAME=%{name}
 
 %install

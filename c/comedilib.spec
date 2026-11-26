@@ -6,7 +6,7 @@ License:        LGPLv2
 URL:            https://www.comedi.org/
 Source:         https://www.comedi.org/download/%{name}-%{version}.tar.gz
 BuildRequires:  gcc automake
-BuildRequires:  python2-devel
+BuildRequires:  python3-devel
 BuildRequires:  docbook-utils
 BuildRequires:  swig
 BuildRequires:  flex
@@ -32,7 +32,7 @@ acquisition hardware.
 
 %build
 # Ruby bindings don't build
-export PYTHON=/usr/bin/python2
+export PYTHON=/usr/bin/python3
 %configure --disable-dependency-tracking --disable-static --disable-ruby-binding
 #sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' libtool
 #sed -i 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' libtool
@@ -41,9 +41,9 @@ sed -i -e 's|-flto=auto||' -e 's|-ffat-lto-objects||' libtool `find . -name Make
 
 %install
 %make_install
-chmod -x ${RPM_BUILD_ROOT}%{python2_sitearch}/comedi.py
+chmod -x ${RPM_BUILD_ROOT}%{python3_sitearch}/comedi.py
 rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
-rm -rf $RPM_BUILD_ROOT%{python2_sitearch}/_comedi.la
+rm -rf $RPM_BUILD_ROOT%{python3_sitearch}/_comedi.la
 
 # adding to installed docs in order to avoid using %%doc magic
 for f in AUTHORS COPYING README ; do
@@ -56,7 +56,7 @@ done
 %{_sysconfdir}/pcmcia/comedi
 %config(noreplace)%{_sysconfdir}/pcmcia/comedi.*
 %{_libdir}/libcomedi.so.*
-%{python2_sitearch}/*
+%{python3_sitearch}/*
 %{_mandir}/man1/*
 %{_mandir}/man7/*
 %{_mandir}/man8/*

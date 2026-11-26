@@ -29,7 +29,7 @@ Authors:
 
 %build
 cp %{SOURCE1} README.SUSE
-export CFLAGS="$RPM_OPT_FLAGS"
+export CFLAGS="$RPM_OPT_FLAGS -std=gnu89"
 ./configure \
         --prefix=/usr \
         --with-x10port=/dev/firecracker

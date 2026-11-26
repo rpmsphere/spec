@@ -61,7 +61,7 @@ This package contains the metis-edf manual in ps fo%__rmat.
 
 %build
 export SUSE_ASNEEDED=0
-make CFLAGS="$RPM_OPT_FLAGS -Wno-format-security"
+make CFLAGS="$RPM_OPT_FLAGS -Wno-format-security -std=gnu89"
 
 %install
 %__install -d $RPM_BUILD_ROOT%{_bindir}

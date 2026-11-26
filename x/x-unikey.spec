@@ -33,7 +33,7 @@ sed -i '1i #include <cstdio>\n#include <cstring>' src/ukengine/usrkeymap.cpp
 
 %build
 cp /usr/share/automake-*/config.guess .
-export CFLAGS="$RPM_OPT_FLAGS -Wno-narrowing"
+export CFLAGS="$RPM_OPT_FLAGS -std=gnu89 -Wno-narrowing"
 export CXXFLAGS="$RPM_OPT_FLAGS -Wno-narrowing"
 ./configure --with-unikey-gtk
 make

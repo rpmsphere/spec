@@ -17,6 +17,7 @@ things are now working.
 %setup -q -n NASE-A60-%{version}
 
 %build
+export CC='gcc -std=gnu89'
 %configure
 %make_build
 

@@ -6,7 +6,7 @@ License:        GPLv2
 Group:          Sciences/Other
 URL:            https://www.scicraft.org/
 Source0:        https://www.scicraft.org/files/%{name}-ng_%{version}.tar.bz2
-BuildRequires:  python2-devel
+#BuildRequires:  python2-devel
 BuildRequires:  texlive-dvipdfmx
 BuildRequires:  latex2html
 BuildRequires:  perl

@@ -23,6 +23,7 @@ resize and raise/lower.
 %setup -q
 
 %build
+export CFLAGS+=-Wno-incompatible-pointer-types
 %make_build
 
 %install

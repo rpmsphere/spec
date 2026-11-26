@@ -7,7 +7,7 @@ Group: Applications/Education
 License: GPLv3
 URL: https://code.google.com/p/pynguin/
 Source0: https://pynguin.googlecode.com/files/%{name}-%{version}.tgz
-BuildRequires: python2-devel
+BuildRequires: python3-devel
 BuildArch: noarch
 Requires: PyQt4
 
@@ -20,19 +20,19 @@ environment for introducing programming concepts to beginning programmers.
 %setup -q
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
+python3 setup.py install --skip-build --root=%{buildroot} --prefix=%{_prefix}
 #sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 
-sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
+sed -i 's|/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
 
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_docdir}/%{name}
-%{python2_sitelib}/*
+%{python3_sitelib}/*
 %{_datadir}/icons/hicolor/*/*/*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png

@@ -14,7 +14,7 @@ Requires:       liquidfeedback-core
 Requires:       lua
 Requires:       webmcp
 #BuildRequires:  libpq-devel / postgresql-devel
-BuildRequires:  rocketwiki-lqfb
+#BuildRequires:  rocketwiki-lqfb
 URL:            https://liquidfeedback.org/
 
 %description

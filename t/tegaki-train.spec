@@ -7,7 +7,7 @@ License:        GPLv2+
 Group:          System/Internationalization
 Source:         https://www.tegaki.org/releases/%version/%name-%version.tar.gz
 URL:            https://www.tegaki.org
-BuildRequires:  python2-setuptools
+BuildRequires:  python3-setuptools
 Requires:       tegaki-pygtk
 BuildArch:      noarch
 
@@ -21,11 +21,11 @@ work well with Chinese and Japanese.
 %setup -q
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-python2 setup.py install --root=%{buildroot}
+python3 setup.py install --root=%{buildroot}
 
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/%{name}.desktop << EOF
@@ -40,11 +40,11 @@ Exec=%{name}
 Categories=Development;
 EOF
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
 
 %files
 %{_bindir}/*
-%{python2_sitelib}/tegaki*
+%{python3_sitelib}/tegaki*
 %{_datadir}/applications/%{name}.desktop
 
 %changelog

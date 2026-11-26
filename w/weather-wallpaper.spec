@@ -10,7 +10,7 @@ Source0:        https://launchpadlibrarian.net/17362202/weather-wallpaper_0.2.0-
 Patch0:         weather-wallpaper-update-for-gnome3.patch
 # PATCH-FIX-UPSTREAM weather-wallpaper-fix-desktop-file.patch lp#929642 malcolmlewis@opensuse.org -- Add trailing ; to desktop categories.
 Patch1:         weather-wallpaper-fix-desktop-file.patch
-BuildRequires:  python2-devel
+#BuildRequires:  python2-devel
 Requires:       ImageMagick
 Requires:       inkscape
 Requires:       pygtk2

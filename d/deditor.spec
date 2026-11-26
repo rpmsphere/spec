@@ -6,10 +6,9 @@ Group: python
 License: Free Software
 URL: https://launchpad.net/deditor/
 Source0: %{name}_%{version}_all.deb
-#Source0: %{name}.tar.gz
 BuildArch: noarch
 BuildRequires: desktop-file-utils
-BuildRequires: python2-devel
+#BuildRequires: python2-devel
 
 %description
 Deditor is a text-editor written in python using the wxpython toolkit.

@@ -33,7 +33,7 @@ combine them into one image with mergebad.
 %patch 1
 
 %build
-export CFLAGS="%{optflags}"
+export CFLAGS="%{optflags} -std=gnu89"
 make %{?_smp_mflags}
 
 %install

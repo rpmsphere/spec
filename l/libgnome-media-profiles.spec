@@ -12,7 +12,7 @@ BuildRequires: gtk3-devel >= 2.99.0
 BuildRequires: GConf2-devel glib2-devel
 Buildrequires: gstreamer-devel
 #Buildrequires: gstreamer-plugins-base-devel
-BuildRequires: intltool python2
+BuildRequires: intltool python3
 BuildRequires: gnome-doc-utils
 # https://bugzilla.redhat.com/show_bug.cgi?id=925748
 # autoreconf for now for aarch64

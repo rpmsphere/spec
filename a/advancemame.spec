@@ -20,7 +20,7 @@ for PC Monitors.
 %setup -q
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" CXXFLAGS="$RPM_OPT_FLAGS" \
+CFLAGS="$RPM_OPT_FLAGS -std=gnu89" CXXFLAGS="$RPM_OPT_FLAGS" \
 ./configure --prefix=/usr --bindir=%_bindir --mandir=%_mandir --docdir=%_docdir
 make %{?jobs:-j%jobs}
 

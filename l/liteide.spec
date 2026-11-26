@@ -6,7 +6,8 @@ Group:          Development/Languages/Other
 License:        MIT
 URL:            https://github.com/visualfc/liteide
 Source0:        https://github.com/visualfc/liteide/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
-BuildRequires:  qt4-devel, qtwebkit-devel
+BuildRequires:  qt4-devel
+#BuildRequires:  qtwebkit-devel
 Requires:       golang
 
 %description

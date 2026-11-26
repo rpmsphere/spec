@@ -55,7 +55,7 @@ install -m 644 info2pod.1 $RPM_BUILD_ROOT%{_mandir}/man1/info2pod.1
 %{_mandir}/man1/info2man.*
 %{_mandir}/man1/info2pod.*
 %doc LICENSE
-%exclude %{_libdir}/perl5/perllocal.pod
+%exclude /usr/lib64/perl5/perllocal.pod
 
 %changelog
 * Wed Jun 29 2011 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.1

@@ -22,6 +22,7 @@ perform channel hopping.
 %patch 0 -p1
 
 %build
+export CC='gcc -std=gnu89'
 make %{?_smp_mflags}
 
 %install

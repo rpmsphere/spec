@@ -13,8 +13,8 @@ Summary: A multimedia A/V abstraction layer API
 Group: System/Libraries
 #BuildRequires: pkgconfig(libxine)
 #BuildRequires: pkgconfig(libvlc)
-Buildrequires: mplayer
-BuildRequires: pkgconfig(gstreamer-0.10)
+#Buildrequires: mplayer
+#BuildRequires: pkgconfig(gstreamer-0.10)
 BuildRequires: pkgconfig(x11)
 #BuildRequires: pkgconfig(gstreamer-plugins-base-0.10)
 

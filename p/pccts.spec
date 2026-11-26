@@ -25,7 +25,7 @@ of translation problems.
 
 %build
 mkdir -p $RPM_BUILD_DIR/pccts/man/man1
-make COPT="$RPM_OPT_FLAGS -DPCCTS_USE_STDARG=1 -Wno-format-security" MANDIR=man %{?_smp_mflags} pccts manpages
+make COPT="-std=gnu89 $RPM_OPT_FLAGS -DPCCTS_USE_STDARG=1 -Wno-format-security" MANDIR=man %{?_smp_mflags} pccts manpages
 
 %install
 rm -rf $RPM_BUILD_ROOT

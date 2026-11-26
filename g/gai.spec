@@ -48,7 +48,7 @@ GAI applets.
 %patch 5 -p1 -b .gnome-panel-2.25
 
 %build
-export CFLAGS="-fPIC $RPM_OPT_FLAGS -Wno-format-security"
+export CFLAGS="-std=gnu89 -fPIC $RPM_OPT_FLAGS -Wno-format-security"
 %configure --disable-rox
 make %{?_smp_mflags}
 

@@ -20,6 +20,7 @@ interfaces for easy embedding and extending.
 %setup -q -n %{name}-master
 
 %build
+export CC='gcc -std=gnu89'
 make -f Makefile.daomake linux
 
 %install

@@ -24,7 +24,7 @@ Authors:
 
 %build
 %__rm -f config.cache
-CFLAGS="%{optflags}" %{configure}
+CFLAGS="%{optflags} -std=gnu89" %{configure}
 %__make
 
 %install

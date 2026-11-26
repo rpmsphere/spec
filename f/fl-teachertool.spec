@@ -13,7 +13,7 @@ Patch3:    fl_teachertool-more-fixes.patch
 License:   GPL
 Group:     User Interface/Desktops
 BuildRequires: fltk-devel gcc-c++ libXpm-devel xorg-x11-proto-devel libX11-devel libpng-devel libjpeg-devel freetype-devel
-BuildRequires: python2
+#BuildRequires: python2
 Requires:  tightvnc vncsnapshot vnc-reflector
 
 %description

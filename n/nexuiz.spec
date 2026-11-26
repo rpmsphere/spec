@@ -48,6 +48,7 @@ This is the nexuiz dedicated server required to host network games.
 %{__sed} -i 's,-Wall,-Wall -Wno-error,g' makefile.inc
 
 %build
+export CC='gcc -std=gnu89'
 export DP_FS_BASEDIR=%{_datadir}/nexuiz
 make cl-nexuiz sv-nexuiz sdl-nexuiz STRIP=:
 

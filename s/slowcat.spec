@@ -22,7 +22,7 @@ Authors:
 %setup -q
 
 %build
-CFLAGS="%{optflags}" make
+CFLAGS="%{optflags} -std=gnu89" make
 
 %install
 PREFIX=%{buildroot}/usr MANDIR=%{buildroot}/%{_mandir} make install

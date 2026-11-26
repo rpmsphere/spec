@@ -15,7 +15,7 @@ Real-time interface traffic viewer for curses.
 
 %build
 autoreconf -fis
-CFLAGS="%{optflags} -Wno-format-security"
+CFLAGS="-std=gnu89 %{optflags} -Wno-format-security"
 CXXFLAGS="%{optflags} -Wno-format-security"
 export CFLAGS
 export CXXFLAGS

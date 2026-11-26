@@ -22,7 +22,7 @@ MZ,NE,PE,ELF and other.
 %patch 0 -p0
 
 %build
-CFLAGS=$RPM_OPT_FLAGS" -mmmx -msse"
+CFLAGS=$RPM_OPT_FLAGS" -std=gnu89 -mmmx -msse"
 CXXFLAGS=$RPM_OPT_FLASG" -mmmx -msse"
 ./configure --enable-curses --libdir=%{_libdir} --prefix=%_prefix
 make TARGET_OS=linux USE_MOUSE=n PREFIX=%_prefix

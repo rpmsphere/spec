@@ -6,8 +6,8 @@ License:        Public Domain
 Group:          Video
 URL:            https://github.com/oleksis/youtube-dl-gui
 Source0:        %{name}-%{version}.tar.gz
-BuildRequires:  python2-setuptools
-BuildRequires:  python2-wxpython
+#BuildRequires:  python2-setuptools
+#BuildRequires:  python2-wxpython
 BuildRequires:  pkgconfig(libtiff-4)
 BuildRequires:  python3
 #BuildRequires:  python2-twodict

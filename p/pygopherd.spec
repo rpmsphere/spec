@@ -1,4 +1,4 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 
 Summary:        Gopher server
 Summary(pl):    Serwer gophera
@@ -21,7 +21,7 @@ Obsoletes:      gofish
 Obsoletes:      gopher-server
 BuildArch:      noarch
 %define         _rootdir        /home/services/gopher
-BuildRequires:  python2
+BuildRequires:  python3
 
 %description
 gopherd - a gopher server.
@@ -34,13 +34,13 @@ gopherd - serwer gophera.
 %patch 0 -p0
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}/{%{name},rc.d/init.d},%{python_sitelib},%{_rootdir}}
 
-python2 setup.py install \
+python3 setup.py install \
         --root=$RPM_BUILD_ROOT \
         --install-lib=%{python_sitelib} \
         --optimize=2
@@ -48,7 +48,7 @@ python2 setup.py install \
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/rc.d/init.d/pygopherd
 find $RPM_BUILD_ROOT -type f -name "*.py" -exec rm -rf {} \;
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
 
 %pre
 groupadd -g 30 gopher

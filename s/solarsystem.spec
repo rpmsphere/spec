@@ -12,7 +12,8 @@ BuildRequires: mesa-libGL-devel mesa-libGLU-devel
 BuildRequires: pkgconfig 
 BuildRequires: xscreensaver 
 BuildRequires: kdelibs 
-BuildRequires: qca2 udisks2
+BuildRequires: udisks2
+#BuildRequires: qca2
 
 %description
 A screensaver that displays the planets of the Solar System (inc Pluto).

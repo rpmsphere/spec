@@ -40,6 +40,7 @@ export CFLAGS="$RPM_OPT_FLAGS -Wall -Wno-format-security"
 %else
 export CFLAGS="$RPM_OPT_FLAGS -Wall -Wno-format-security -pedantic -malign-double -D_ISOC99_SOURCE -D_XOPEN_SOURCE"
 %endif
+export CC='gcc -std=gnu89'
 ./configure --prefix=/usr --enable-acegr-home=%{_datadir}/xmgr
 make
 cd src

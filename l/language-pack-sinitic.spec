@@ -1,6 +1,6 @@
 Name: language-pack-sinitic
 Summary: Translations for some sinitic languages
-Version: 2025.07
+Version: 2026.11
 Release: 1
 License: Open Source
 Group: Translations
@@ -41,9 +41,9 @@ make
 
 %files -n language-pack-cmn
 %{_datadir}/locale/cmn*/LC_MESSAGES/*.mo
-%{_libdir}/R/library/translations/cmn*/LC_MESSAGES/*.mo
-%{_libdir}/R/library/*/po/cmn*/LC_MESSAGES/*.mo
-%{_libdir}/textadept/core/locales/locale.cmn*.conf
+/usr/lib64/R/library/translations/cmn*/LC_MESSAGES/*.mo
+/usr/lib64/R/library/*/po/cmn*/LC_MESSAGES/*.mo
+/usr/lib64/textadept/core/locales/locale.cmn*.conf
 %{_datadir}/*/*/cmn*.po
 %{_datadir}/FBReader/resources/cmn*.xml
 %{_datadir}/Telegram/Desktop_cmn*.strings
@@ -62,9 +62,9 @@ make
 /etc/joe/joerc.cmn*
 %{python3_sitelib}/openshot_qt/language/OpenShot.cmn*.qm
 /usr/lib/mcm/i18n/locale/cmn*/LC_MESSAGES/mcm.mo
-%{_libdir}/doublecmd/language/doublecmd.cmn*.po
-%{_libdir}/libreoffice/program/resource/cmn*/LC_MESSAGES/*.mo
-%{_libdir}/viewmol/locale/cmn*/LC_MESSAGES/Viewmol.mo
+/usr/lib64/doublecmd/language/doublecmd.cmn*.po
+/usr/lib64/libreoffice/program/resource/cmn*/LC_MESSAGES/*.mo
+/usr/lib64/viewmol/locale/cmn*/LC_MESSAGES/Viewmol.mo
 %{_datadir}/cobras/cobras_cmn*.ts
 %{_datadir}/discwrapper/po/cmn*/discwrapper.mo
 %{_datadir}/easymp3gain/lang/easymp3gain.cmn*.po
@@ -87,15 +87,14 @@ make
 %{_datadir}/winff/languages/winff.cmn*.po
 %{_datadir}/lenmus/*/locale/cmn*/*_cmn*.mo
 %{_datadir}/*/*/*/*_cmn*.properties
-%{_libdir}/*/*/*/*_cmn*.properties
+/usr/lib64/*/*/*/*_cmn*.properties
 %{_datadir}/*/*/*_cmn*.properties
 %{_datadir}/*/chrome/locale/branding/cmn*/brand.properties
 %{_datadir}/azardi/chrome/locale/cmn*/azardi2.properties
 %{_datadir}/pebl/battery/SNARC/translations/cmn*.txt
 /lib/python3.*/site-packages/*/*/cmn*/LC_MESSAGES/*.mo
 /lib/python3.*/site-packages/*/*/*/cmn*/LC_MESSAGES/*.mo
-%{_libdir}/python2.*/site-packages/Editra/locale/cmn*/LC_MESSAGES/Editra.mo
-%{_libdir}/*/*/*_cmn*.qm
+/usr/lib64/*/*/*_cmn*.qm
 %{_datadir}/PrusaSlicer/localization/cmn*/PrusaSlicer.mo
 %{_datadir}/lucidor/chrome/locale/cmn*/*.properties
 %{_datadir}/skychart/data/language/skychart.cmn*.po
@@ -105,9 +104,9 @@ make
 
 %files -n language-pack-yue
 %{_datadir}/locale/yue*/LC_MESSAGES/*.mo
-%{_libdir}/R/library/translations/yue*/LC_MESSAGES/*.mo
-%{_libdir}/R/library/*/po/yue*/LC_MESSAGES/*.mo
-%{_libdir}/textadept/core/locales/locale.yue*.conf
+/usr/lib64/R/library/translations/yue*/LC_MESSAGES/*.mo
+/usr/lib64/R/library/*/po/yue*/LC_MESSAGES/*.mo
+/usr/lib64/textadept/core/locales/locale.yue*.conf
 %{_datadir}/*/*/yue*.po
 %{_datadir}/FBReader/resources/yue*.xml
 %{_datadir}/Telegram/Desktop_yue*.strings
@@ -126,9 +125,9 @@ make
 /etc/joe/joerc.yue*
 %{python3_sitelib}/openshot_qt/language/OpenShot.yue*.qm
 /usr/lib/mcm/i18n/locale/yue*/LC_MESSAGES/mcm.mo
-%{_libdir}/doublecmd/language/doublecmd.yue*.po
-%{_libdir}/libreoffice/program/resource/yue*/LC_MESSAGES/*.mo
-%{_libdir}/viewmol/locale/yue*/LC_MESSAGES/Viewmol.mo
+/usr/lib64/doublecmd/language/doublecmd.yue*.po
+/usr/lib64/libreoffice/program/resource/yue*/LC_MESSAGES/*.mo
+/usr/lib64/viewmol/locale/yue*/LC_MESSAGES/Viewmol.mo
 %{_datadir}/cobras/cobras_yue*.ts
 %{_datadir}/discwrapper/po/yue*/discwrapper.mo
 %{_datadir}/easymp3gain/lang/easymp3gain.yue*.po
@@ -151,15 +150,14 @@ make
 %{_datadir}/winff/languages/winff.yue*.po
 %{_datadir}/lenmus/*/locale/yue*/*_yue*.mo
 %{_datadir}/*/*/*/*_yue*.properties
-%{_libdir}/*/*/*/*_yue*.properties
+/usr/lib64/*/*/*/*_yue*.properties
 %{_datadir}/*/*/*_yue*.properties
 %{_datadir}/*/chrome/locale/branding/yue*/brand.properties
 %{_datadir}/azardi/chrome/locale/yue*/azardi2.properties
 %{_datadir}/pebl/battery/SNARC/translations/yue*.txt
 /lib/python3.*/site-packages/*/*/yue*/LC_MESSAGES/*.mo
 /lib/python3.*/site-packages/*/*/*/yue*/LC_MESSAGES/*.mo
-%{_libdir}/python2.*/site-packages/Editra/locale/yue*/LC_MESSAGES/Editra.mo
-%{_libdir}/*/*/*_yue*.qm
+/usr/lib64/*/*/*_yue*.qm
 %{_datadir}/PrusaSlicer/localization/yue*/PrusaSlicer.mo
 %{_datadir}/lucidor/chrome/locale/yue*/*.properties
 %{_datadir}/skychart/data/language/skychart.yue*.po
@@ -171,5 +169,5 @@ make
 rm -rf %{buildroot}
 
 %changelog
-* Thu Jul 10 2025 Wei-Lun Chao <bluebat@member.fsf.org> - 2025.07
+* Wed Nov 25 2026 Wei-Lun Chao <bluebat@member.fsf.org> - 2026.11
 - Rebuilt for Fedora

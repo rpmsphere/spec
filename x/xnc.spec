@@ -34,7 +34,7 @@ sed -i 's|<png\.h>|<libpng12/png.h>|' src/lib/image2/sdl_image/IMG_png.c
 
 %build
 cp /usr/share/automake-*/config.guess .
-export CFLAGS=-Wno-narrowing
+export CFLAGS='-std=gnu89 -Wno-narrowing'
 export LDFLAGS=-Wl,--allow-multiple-definition
 ./configure --prefix=/usr --mandir=/usr/share/man --libdir=%{_libdir} --with-gnu-ld --with-x
 make

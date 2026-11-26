@@ -1,6 +1,7 @@
 %undefine _debugsource_packages
 %define   _base Dudeball
 %define   _unstable unstable
+%undefine _missing_build_ids_terminate_build
 
 Name:           dudeball
 Version:        2.3.4

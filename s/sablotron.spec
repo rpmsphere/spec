@@ -41,6 +41,7 @@ This is the devel package.
 %setup -q -n Sablot-%{version}
 
 %build
+export CXX='g++ -std=c++11'
 %configure
 make
 

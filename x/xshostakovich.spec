@@ -20,7 +20,7 @@ sed -i 's| = "#497955"||' xshostakovich.hh
 sed -i '49i const char * const Shostakovich::BackgroundColor = "#497955";' xshostakovich.cc
 
 %build
-export CFLAGS="$RPM_OPT_FLAGS"
+export CFLAGS="$RPM_OPT_FLAGS -std=gnu89"
 ./configure --prefix=$RPM_BUILD_ROOT/usr
 sed -i 's|-Wall|-Wall -Wno-narrowing -std=c++98|' Makefile
 make

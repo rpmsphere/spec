@@ -6,7 +6,7 @@ Group:          Video
 License:        GPLv3+
 URL:            https://www.bashterritory.com/%{name}/
 Source:        https://www.bashterritory.com/%{name}/releases/%{name}-%{version}.tar.bz2
-BuildRequires:  python2
+#BuildRequires:  python2
 Requires: sox
 Requires: ffmpeg
 Requires: mplayer 

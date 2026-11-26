@@ -32,7 +32,7 @@ Authors:
 aclocal
 automake -a
 autoconf
-CFLAGS="$RPM_OPT_FLAGS" ./configure \
+CFLAGS="$RPM_OPT_FLAGS -std=gnu89" ./configure \
                         --prefix=/usr \
                         --mandir=%{_mandir}
 make

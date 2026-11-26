@@ -10,7 +10,7 @@ URL:            https://cstitch.sourceforge.net/
 Source0:        %{name}_%{version}_code.zip
 Source1:        https://sourceforge.net/projects/cstitch/files/Cstitch/Icons/icons.zip
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:  python2
+#BuildRequires:  python2
 
 %description
 Convert images to cross stitch patterns: choose the number of colors to use

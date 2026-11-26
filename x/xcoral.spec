@@ -36,7 +36,7 @@ Authors:
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
-CFLAGS="$RPM_OPT_FLAGS -Wno-format-security" \
+CFLAGS="$RPM_OPT_FLAGS -std=gnu89 -Wno-format-security" \
 ./configure --prefix=$RPM_BUILD_ROOT/usr --bindir=$RPM_BUILD_ROOT/usr/bin
 make
 

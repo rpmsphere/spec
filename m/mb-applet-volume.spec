@@ -7,7 +7,8 @@ URL:            https://matchbox-project.org
 License:        GPLv2+
 Group:          Graphical desktop/Other
 Source:         https://matchbox-project.org/sources/%name/%version/%{name}-%{version}.tar.bz2
-BuildRequires:  gtk2-devel libmatchbox-devel libxsettings-client-devel
+BuildRequires:  gtk2-devel libmatchbox-devel
+#BuildRequires:  libxsettings-client-devel
 
 %description
 Volume for the Matchbox Desktop.

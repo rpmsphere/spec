@@ -33,7 +33,7 @@ For more details, check
 
 %files
 %doc doc/*
-%{_sbindir}/*
+/usr/sbin/*
 %{_bindir}/*
 %{_datadir}/%{name}
 %{_sysconfdir}/%{name}

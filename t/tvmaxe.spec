@@ -8,7 +8,7 @@ Source2:        tv-maxe
 Source3:        tv-maxe.svg
 Source4:        channel-editor.tar.gz
 BuildRequires:  desktop-file-utils
-BuildRequires:  python2-devel
+#BuildRequires:  python2-devel
 URL:            https://code.google.com/p/tv-maxe
 Group:          Applications/Multimedia
 # Main project is GPL-3.0, vlc.py is GPL-2.0+, workerpool is MIT(compabile with GPL-3.0), so license is
@@ -56,7 +56,7 @@ cp -r * %{buildroot}%{_datadir}/%{name}/
 rm -rf %{buildroot}%{_datadir}/%{name}/CHANGELOG
 rm -rf %{buildroot}%{_datadir}/%{name}/%{name}.png
 # link channel editor
-ln -sf %{_datadir}/%{name}/channel-editor/channeleditor.py %{buildroot}%{_bindir}/%{name}-channeleditor
+ln -sf ../share/%{name}/channel-editor/channeleditor.py %{buildroot}%{_bindir}/%{name}-channeleditor
 
 # fix locale
 mkdir -pv %{buildroot}%{_datadir}/locale

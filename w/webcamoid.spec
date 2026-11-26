@@ -14,7 +14,7 @@ BuildRequires: qt5-qtquickcontrols2-devel
 BuildRequires: qt5-qtmultimedia-devel
 BuildRequires: qt5-qttools-devel
 BuildRequires: qt5-qtsvg-devel
-BuildRequires: ffmpeg-devel
+BuildRequires: ffmpeg-free-devel
 BuildRequires: libv4l-devel
 
 %description

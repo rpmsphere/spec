@@ -37,7 +37,8 @@ ANSI C, Pascal, Modula 2. K&R is supported via the ANSI C compiler.
 #sed -i 's|define file|define myfile|' first/core.mk
 #sed -i 's|call file|call myfile|' `find . -name build.mk`
 #sed -i 's|CC = gcc|CC = gcc -Wl,--allow-multiple-definition|' Makefile
-make -i
+#sed -i 's|CC = gcc|CC = gcc -Wno-incompatible-pointer-types|' Makefile
+make -i BUILDSYSTEM=make
 ##./pm configure
 ##./pm
 

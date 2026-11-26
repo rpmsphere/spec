@@ -39,7 +39,7 @@ escolha apenas uma, se tem o Tetris clássico.
 %setup -q
 
 %build
-CFLAGS="%{optflags} -I%{_includedir}/ncurses"
+CFLAGS="-std=gnu89 %{optflags} -I%{_includedir}/ncurses"
 %configure
 %{__make}
 

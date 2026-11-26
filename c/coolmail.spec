@@ -22,6 +22,7 @@ regular interval.
 %patch 0 -p1
 
 %build
+export CC='gcc -std=gnu89'
 make
 
 %install

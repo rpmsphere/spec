@@ -27,7 +27,7 @@ cp %{SOURCE1} pixmaps/
 sed -i -e 's!background-gnome.jpg!belooted-background-default.png!g' src/options.c
 
 %build
-export CFLAGS="-lm -fPIC"
+export CFLAGS="-std=gnu89 -lm -fPIC"
 %configure 
 %{__make} %{?_smp_mflags}
 

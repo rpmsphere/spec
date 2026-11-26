@@ -15,8 +15,11 @@ BuildRequires: glibc-static
 
 %prep
 %setup -q -n 9base-%version
+sed -i 's|true|true_label|' dd/dd.c
+sed -i 's|true|true_var|' troff/n5.c
 
 %build
+export CFLAGS+=-Wno-implicit-function-declaration
 export LDFLAGS=-Wl,--allow-multiple-definition
 make 
 

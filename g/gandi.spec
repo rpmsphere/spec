@@ -8,7 +8,7 @@ License: unknown
 URL: https://github.com/gandi/
 Source0: gandi.cli-%{version}.tar.gz
 Provides: gandicli
-BuildRequires: python-docutils, python2-devel, python-setuptools
+BuildRequires: python-docutils, python3-devel, python-setuptools
 Requires: python >= 2.7, python-click, python-yaml, python-requests
 BuildArch: noarch
 
@@ -19,10 +19,10 @@ Administrate and deploy your gandi resources.
 %setup -n gandi.cli-%{version}
 
 %build
-%{__python2} setup.py build
+%{__python3} setup.py build
 
 %install
-%{__python2} setup.py install --skip-build --root $RPM_BUILD_ROOT
+%{__python3} setup.py install --skip-build --root $RPM_BUILD_ROOT
 rst2man --no-generator gandicli.man.rst > gandi.1
 install -d -m 0755 %{buildroot}/usr/share/man/man1
 install -m 0644 gandi.1 %{buildroot}/usr/share/man/man1
@@ -30,9 +30,9 @@ install -m 0644 gandi.1 %{buildroot}/usr/share/man/man1
 %files
 %{_bindir}/gandi
 %{_mandir}/man1/gandi.1.*
-%{python2_sitelib}/*.egg-info
-%{python2_sitelib}/*-nspkg.pth
-%{python2_sitelib}/gandi
+%{python3_sitelib}/*.egg-info
+%{python3_sitelib}/*-nspkg.pth
+%{python3_sitelib}/gandi
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.18

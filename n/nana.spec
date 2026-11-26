@@ -26,6 +26,7 @@ cross-platform GUI applications with modern C++11 style.
 %setup -q -n %{name}
 
 %build
+export CXX='g++ -std=c++11'
 cmake -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_SHARED_LIBS:BOOL=ON .
 sed -i 's|$<1:-static-libgcc -static-libstdc++> $<0:-static-libgcc -static-libstdc++>|-static-libgcc -static-libstdc++ -static-libgcc -static-libstdc++|' CMakeFiles/nana.dir/link.txt
 %make_build

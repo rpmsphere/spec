@@ -42,7 +42,7 @@ make install DESTDIR=%{buildroot}
 %{_libdir}/%{name}/
 %{_mandir}/man1/%{name}.1.*
 %{_mandir}/man1/%{name}-asm-x86.1.*
-%{_datadir}/emacs/site-lisp/aasm.el*
+#{_datadir}/emacs/site-lisp/aasm.el*
 
 %changelog
 * Wed Oct 24 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 0.9.2

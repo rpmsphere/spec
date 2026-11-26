@@ -20,7 +20,7 @@ xvnkb 0.2.x support UTF-8 Encoding ;). Good news, eh?
 %setup -q
 
 %build
-export CFLAGS="$RPM_OPT_FLAGS"
+export CFLAGS="$RPM_OPT_FLAGS" CC='gcc -std=gnu89'
 ./configure --use-extstrocke --use-prostroke --use-abcstroke
 sed -i 's|X11R6/||g' tools/Makefile*
 make

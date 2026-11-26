@@ -36,8 +36,8 @@ make bacon bacongui-gtk3
 %{_mandir}/man1/%{name}.1.gz
 %{_datadir}/pixmaps/BaCon*
 %{_datadir}/BaCon
-%{_datadir}/icons/hicolor/scalable/apps/bacon.png
-%{_datadir}/gtksourceview-4/language-specs/bacon.lang
+#{_datadir}/icons/hicolor/scalable/apps/bacon.png
+#{_datadir}/gtksourceview-4/language-specs/bacon.lang
 
 %changelog
 * Sun Dec 8 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 5.0.1

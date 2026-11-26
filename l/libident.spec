@@ -54,7 +54,7 @@ for f in ident.3 README ChangeLog AUTHORS NEWS COPYING; do
 done
 
 %build
-CFLAGS="-fPIC %{optflags} -D_GNU_SOURCE" %configure \
+CFLAGS="-std=gnu89 -fPIC %{optflags} -D_GNU_SOURCE" %configure \
     --disable-static \
     --enable-testers
 make %{?_smp_mflags}

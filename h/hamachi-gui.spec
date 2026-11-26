@@ -30,7 +30,7 @@ Authors:
 %patch 1 -p1
 
 %build
-CFLAGS="%{optflags} -g -lX11" CXXFLAGS="%{optflags} -g -lX11" \
+CFLAGS="-std=gnu89 %{optflags} -g -lX11" CXXFLAGS="%{optflags} -g -lX11" \
 %configure
 %__make %{?jobs:-j%{jobs}}
 

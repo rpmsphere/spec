@@ -38,7 +38,7 @@ It also provides a new ncurses interface.
 %patch 0
 
 %build
-export CFLAGS="$RPM_OPT_FLAGS -Wno-format-security"
+export CFLAGS="-std=gnu89 $RPM_OPT_FLAGS -Wno-format-security"
 export LDFLAGS=-Wl,--allow-multiple-definition
 %configure
 make

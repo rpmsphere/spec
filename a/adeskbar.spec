@@ -6,7 +6,7 @@ Group:          Graphical desktop/Openbox
 License:        GPLv3
 URL:            https://adeskbar.tuxfamily.org/
 Source0:        https://download.tuxfamily.org/adeskbar/sources/%{name}-%{version}.tar.gz
-BuildRequires:  python2
+#BuildRequires:  python2
 Requires:       pygtk2
 Requires:       python2-cairo
 Requires:       pygobject2

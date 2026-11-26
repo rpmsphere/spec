@@ -7,7 +7,7 @@ License: Free Software
 Source0: easyshutdown_0.6_all.deb
 BuildArch: noarch
 BuildRequires: desktop-file-utils
-BuildRequires: python2-devel
+#BuildRequires: python2-devel
 
 %description
 You can specify hours and minutes after which your computer will turn off.

@@ -28,13 +28,13 @@ choose your preferred.
 
 %build
 export CFLAGS="%{optflags}"
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install --prefix=%{_prefix} --root=%{buildroot}
+python3 setup.py install --prefix=%{_prefix} --root=%{buildroot}
 
 %files
-%{python2_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Wed Sep 25 2013 Wei-Lun Chao <bluebat@member.fsf.org> - 0.6.8

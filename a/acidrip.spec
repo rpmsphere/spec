@@ -68,8 +68,8 @@ EOF
 %{perl_vendorlib}/AcidRip
 %{_mandir}/man1/*
 %{_datadir}/applications/%{name}.desktop
-%exclude %{_libdir}/perl5/perllocal.pod
-%exclude %{_libdir}/perl5/vendor_perl/auto/AcidRip/.packlist
+%exclude /usr/lib64/perl5/perllocal.pod
+%exclude /usr/lib64/perl5/vendor_perl/auto/AcidRip/.packlist
 
 %changelog
 * Tue Apr 19 2016 Wei-Lun Chao <bluebat@member.fsf.org> - 0.14

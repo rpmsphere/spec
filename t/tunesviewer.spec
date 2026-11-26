@@ -8,9 +8,9 @@ URL:            https://sourceforge.net/projects/tunesviewer
 Group:          Productivity/Networking/Web/Frontends
 Source:         %{name}-%{version}.tar.bz2
 BuildRequires:  libpng-devel
-BuildRequires:  pygtk2-devel
+#BuildRequires:  pygtk2-devel
 #BuildRequires: notify-python notification-daemon
-BuildRequires:  python2-devel
+#BuildRequires:  python2-devel
 #BuildRequires: pywebkitgtk
 BuildRequires:  python-lxml
 BuildRequires:  librsvg2-devel
@@ -41,7 +41,7 @@ rm -f -r $RPM_BUILD_ROOT
 %{__cp} -r src/* $RPM_BUILD_ROOT%{_datadir}/%{name}/
 %{__cp} -r resources/tunesview.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{__cp} -r resources/TunesViewer.desktop $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop
-ln -sf %{_datadir}/%{name}/TunesViewer.py $RPM_BUILD_ROOT%{_bindir}/%{name}
+ln -sf ../share/%{name}/TunesViewer.py $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 #fix icon
 pushd resources

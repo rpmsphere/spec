@@ -48,7 +48,8 @@ BuildRequires:  binutils-devel
 BuildRequires:  ncurses-devel
 BuildRequires:  zip
 # for DejaGNU test suite
-BuildRequires:  dejagnu tcl-devel python2-devel
+BuildRequires:  dejagnu tcl-devel
+#BuildRequires:  python2-devel
 # pod2man moved to perl-podlators in F19
 BuildRequires:  %{_bindir}/pod2man
 Requires:       %{name}-libs%{?_isa} = %{version}-%{release}

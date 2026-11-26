@@ -8,8 +8,8 @@ License: GNU GPL v3
 Group: Science
 BuildArch: noarch
 URL: https://pyparticles.wordpress.com/
-Requires: numpy, scipy, python-matplotlib, python2-pyopencl, python2-pyopengl
-BuildRequires: python2-devel
+Requires: numpy, scipy, python-matplotlib, python3-pyopencl, python3-pyopengl
+BuildRequires: python3-devel
 
 %description
 PyParticles supports the most popular integrations methods and the most
@@ -23,17 +23,17 @@ Midpoint, Runge Kutta, Störmer Verlet and Leap frog.
 %setup -q
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install -O1 --root=$RPM_BUILD_ROOT
+python3 setup.py install -O1 --root=$RPM_BUILD_ROOT
 #sed -i 's|#!/bin|#!/usr/bin|' %{buildroot}%{_bindir}/*
 
-sed -i 's|/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
+sed -i 's|/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}*
 
 %files
 %{_bindir}/*
-%{python2_sitelib}/*
+%{python3_sitelib}/*
 %{_mandir}/man1/*
 
 %changelog

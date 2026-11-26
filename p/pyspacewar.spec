@@ -8,8 +8,8 @@ Group:          Amusements/Games/Action/Arcade
 URL:            https://mg.pov.lt/pyspacewar/
 Source0:        https://github.com/mgedmin/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
-BuildRequires:  python2
-BuildRequires:  python2-setuptools
+BuildRequires:  python3
+BuildRequires:  python3-setuptools
 Requires:       pygame
 BuildArch:      noarch
 
@@ -27,25 +27,25 @@ specify the direction and velocity of their missiles.
 %setup -q
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install --single-version-externally-managed -O1 --root=%{buildroot}
+python3 setup.py install --single-version-externally-managed -O1 --root=%{buildroot}
 for i in 16 22 32 48 ; do
     install -Dm 0644 src/%{name}/icons/%{name}${i}.png %{buildroot}%{_datadir}/icons/hicolor/${i}x${i}/apps/%{name}.png
     install -Dm 0644 src/%{name}/icons/%{name}${i}.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/%{name}${i}.svg
 done
 install -Dm 0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
 
 %files
 %doc GPL.txt *.rst
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/*
-%{python2_sitelib}/%{name}
-%{python2_sitelib}/%{name}-*.egg-info
+%{python3_sitelib}/%{name}
+%{python3_sitelib}/%{name}-*.egg-info
 
 %changelog
 * Thu Jul 06 2017 Wei-Lun Chao <bluebat@member.fsf.org> - 1.1.0

@@ -54,7 +54,7 @@ sed -i '226,231d' ups/ao_elfcore.c
 %endif
 
 %build
-CFLAGS="$RPM_OPT_FLAGS -D_LARGEFILE64_SOURCE -Wno-format-security"
+CFLAGS="$RPM_OPT_FLAGS -std=gnu89 -D_LARGEFILE64_SOURCE -Wno-format-security"
 %configure --enable-math --enable-longlong
 make
 iconv -f iso-8859-1 -t utf-8 -oCHANGES.utf8 CHANGES

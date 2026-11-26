@@ -45,10 +45,12 @@ nethack.
 
 %build
 sh sys/unix/setup.sh links
+export CC="gcc -std=gnu89"
 export RPM_OPT_FLAGS="$RPM_OPT_FLAGS -Wno-format-security"
 make
 
 %install
+export CC="gcc -std=gnu89"
 make DESTDIR="$RPM_BUILD_ROOT" install
 mkdir -p $RPM_BUILD_ROOT%{_bindir}
 #mv $RPM_BUILD_ROOT%{_datadir}/games/falconseye \

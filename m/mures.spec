@@ -30,7 +30,7 @@ Authors:
 
 %build
 export LDFLAGS=-Wl,--allow-multiple-definition
-CFLAGS="$RPM_OPT_FLAGS -lm" ./configure --prefix=/usr
+CFLAGS="-std=gnu89 $RPM_OPT_FLAGS -lm" ./configure --prefix=/usr
 make 
 
 %install

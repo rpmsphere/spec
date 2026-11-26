@@ -22,7 +22,7 @@ sed -i 's|gtk-cdrom|%{name}|' app.desktop
 %build
 
 %install
-%__install -dm 755 %{buildroot}%{python2_sitelib}/%{name}
+%__install -dm 755 %{buildroot}%{python3_sitelib}/%{name}
 %__install -dm 755 %{buildroot}%{_bindir}
 %__install -dm 755 %{buildroot}%{_datadir}/applications
 %__install -dm 755 %{buildroot}%{_datadir}/pixmaps
@@ -31,7 +31,7 @@ sed -i 's|gtk-cdrom|%{name}|' app.desktop
 rm -fr .bzr .project .pydevproject .settings %{name}
 
 mv app.desktop %{buildroot}%{_datadir}/applications/%{name}.desktop
-cp -r * $RPM_BUILD_ROOT%{python2_sitelib}/%{name}
+cp -r * $RPM_BUILD_ROOT%{python3_sitelib}/%{name}
 cp pix/%{name}.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 desktop-file-install --remove-key='Comment' %{buildroot}%{_datadir}/applications/%{name}.desktop
 desktop-file-install --set-comment='Simple Gtk+ Interface to Mount ISO, IMG, BIN, MDF and NRG Image files without burning to disk.' %{buildroot}%{_datadir}/applications/%{name}.desktop
@@ -39,14 +39,14 @@ desktop-file-install --set-comment='Simple Gtk+ Interface to Mount ISO, IMG, BIN
 #Create a working launch script (the included one doesn't work when you move the files around)
 cat > %{buildroot}%{_bindir}/%{name} << EOF
 #!/bin/sh
-python2 "%{python2_sitelib}/%{name}/src/main.py" \$1
+python3 "%{python3_sitelib}/%{name}/src/main.py" \$1
 EOF
 
 chmod 755 %{buildroot}%{_bindir}/%{name}
 
 %files
 %{_bindir}/*
-%{python2_sitelib}/*
+%{python3_sitelib}/*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
 
@@ -61,7 +61,7 @@ chmod 755 %{buildroot}%{_bindir}/%{name}
 - update RPM group
 * Wed Apr 04 2012 juancho <juancho> 0.11.3.1-1.mga2
 + Revision: 228294
-- Install the python in correct location %%{python2_sitelib}
+- Install the python in correct location %%{python3_sitelib}
 - Fix launch script
 - Replace the use of the application name for %%{name} macro
 - Remove included VCS files.

@@ -10,7 +10,8 @@ BuildRequires: libX11-devel libICE-devel libSM-devel
 BuildRequires: SDL-devel SDL_image-devel SDL_ttf-devel
 BuildRequires: mesa-libGL-devel mesa-libGLU-devel
 #BuildRequires: gnome-screensaver
-BuildRequires: kdelibs qca2 udisks2
+#BuildRequires: qca2
+BuildRequires: kdelibs udisks2
 
 %description
 A screensaver for use with Linux and UNIX, that pays homage to the classic

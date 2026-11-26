@@ -80,7 +80,7 @@ mv $RPM_BUILD_ROOT/usr/lib $RPM_BUILD_ROOT%{_libdir}
 %files
 %doc COPYING README.* CHANGELOG
 %{_bindir}/*
-%{_sbindir}/*
+/usr/sbin/*
 %{_datadir}/%{name}
 %{_datadir}/lua/%{name}.lua
 %{_libdir}/lib*.so.* 

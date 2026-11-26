@@ -55,8 +55,8 @@ Libraries for linking statically to %name
 
 %prep
 %setup -q -n %name
-##%patch 1 -p1 -b .am15~
-##%patch 2 -p1 -b .ac253~
+#patch 1 -p1 -b .am15~
+#patch 2 -p1 -b .ac253~
 %patch 3 -p1 -b .gtv~
 %patch 4 -p1 -b .plaympeg~
 cp -f /usr/share/libtool/build-aux/config.* .

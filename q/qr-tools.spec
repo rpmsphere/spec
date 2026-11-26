@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name:           qr-tools
 Version:        2.1
 Release:        1

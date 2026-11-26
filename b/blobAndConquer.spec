@@ -37,7 +37,7 @@ sed -i 's/Exec=blobAndConquer/Exec=blobAndConquer-wrapper/' \
 sed -i 's|gzclose(pak)|fclose(pak)|' src/pak.cpp
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS" DOCDIR=%{_docdir}/%{name}-%{version}/ \
+make CFLAGS="$RPM_OPT_FLAGS -std=c++11" DOCDIR=%{_docdir}/%{name}-%{version}/ \
   DATADIR=%{_datadir}/%{name}/ all buildpak
 
 

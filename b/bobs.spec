@@ -11,7 +11,8 @@ BuildRequires: SDL-devel SDL_image-devel
 BuildRequires: mesa-libGL-devel mesa-libGLU-devel
 BuildRequires: pkgconfig
 #BuildRequires: gnome-screensaver
-BuildRequires: kdelibs qca2 udisks2
+#BuildRequires: qca2
+BuildRequires: kdelibs udisks2
 
 %description
 A simple screensaver for Linux and UNIX which displays animated 'Bobs'.

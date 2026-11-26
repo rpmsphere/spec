@@ -1,4 +1,4 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 Name:           photostory
 Version:        1.0
 Release:        1
@@ -8,7 +8,7 @@ License:        GPL v3
 URL:            https://launchpad.net/photostory
 Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
-Requires:       pygtk2, python2-gstreamer
+Requires:       pygtk2, python3-gstreamer
 
 %description
 Photostory lets you use your webcam to take a photo of yourself every day,
@@ -24,7 +24,7 @@ then compile the photos into a video.
 rm -rf $RPM_BUILD_ROOT
 %{__python} setup.py install --root $RPM_BUILD_ROOT
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}*
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}*
  
 %files
 %{_bindir}/photostory

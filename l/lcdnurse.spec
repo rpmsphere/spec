@@ -8,7 +8,7 @@ Group: Applications/Tools
 License: GPLv3
 URL: https://congelli.eu/prog_info_lcdnurse.html
 Source0: https://congelli.eu/download/lcdnurse/%{name}-%{version}.tar.gz
-BuildRequires: wxGTK2-devel
+BuildRequires: wxGTK-devel
 
 %description
 Repair dead pixels is now possible on Linux (GNU/Linux) ! LCD Nurse is a free

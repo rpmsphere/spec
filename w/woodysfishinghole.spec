@@ -7,7 +7,7 @@ URL:           https://sourceforge.net/projects/wfh/
 Source:        https://kent.dl.sourceforge.net/sourceforge/wfh/WoodysFishingHole-%{version}-src.tar.gz
 Source1:       fish.png
 License:       GPL
-BuildRequires: java-1.8.0-openjdk-devel, ant
+BuildRequires: java-devel-openjdk, ant
 BuildArch:     noarch
 Requires:      jre
 

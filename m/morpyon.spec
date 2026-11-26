@@ -1,4 +1,4 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 Name:          morpyon
 Version:       2.0.1
 Release:       1
@@ -9,7 +9,7 @@ Source0:       https://flibuste.net/libre/morpyon/Morpyon-%{version}.tar.gz
 Source1:       morpyon.desktop
 Patch0:         morpyon-2.0.1-path.patch
 License:       GPL
-BuildRequires: python2-devel
+BuildRequires: python3-devel
 BuildRequires: pygame-devel
 Requires:      pygame
 BuildArch:     noarch
@@ -23,11 +23,11 @@ on a board against a computer opponent.
 %patch 0 -p1
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-python2 setup.py install \
+python3 setup.py install \
    --root=%{buildroot} \
    --install-headers=%{_includedir}/python \
    --install-lib=%{python_sitearch} \
@@ -36,15 +36,15 @@ python2 setup.py install \
 install -D -m755 morpyon.py %{buildroot}%{_bindir}/morpyon.py
 install -D -m644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{name}.desktop
 
-sed -i 's|/usr/bin/env python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/*
+sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{_bindir}/*
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/*
 
 %files
 %{_bindir}/morpyon_pygame.py
 %{_bindir}/morpyon.py
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
-%{python2_sitearch}/Morpyon-%{version}-py*.egg-info
+%{python3_sitearch}/Morpyon-%{version}-py*.egg-info
 
 %changelog
 * Tue Mar 20 2018 Wei-Lun Chao <bluebat@member.fsf.org> - 2.0.1

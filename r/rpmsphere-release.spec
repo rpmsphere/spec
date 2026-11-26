@@ -1,6 +1,6 @@
 Summary:        RPM Sphere release file
 Name:           rpmsphere-release
-Version:        40
+Version:        44
 Release:        1
 License:        BSD
 Group:          System Environment/Base
@@ -27,5 +27,5 @@ install -Dm644 %{SOURCE0} $RPM_BUILD_ROOT/etc/yum.repos.d/rpmsphere.repo
 %{_sysconfdir}/yum.repos.d/*
 
 %changelog
-* Fri May 10 2024 Wei-Lun Chao <bluebat@member.fsf.org> - 40
+* Tue May 19 2026 Wei-Lun Chao <bluebat@member.fsf.org> - 44
 - Rebuilt for Fedora

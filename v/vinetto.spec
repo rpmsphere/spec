@@ -7,9 +7,9 @@ License:        GPLv2+
 URL:            https://vinetto.sourceforge.net/
 Source0:        https://downloads.sourceforge.net/%{name}/%{name}-beta-%{version}.tar.gz
 BuildArch:      noarch
-BuildRequires:  python2-devel
-BuildRequires:  python2-setuptools
-Requires:       python2-pillow
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
+Requires:       python3-pillow
 
 %description
 Vinetto is a forensics tool to examine Thumbs.db files.  It is
@@ -20,19 +20,20 @@ from those thumbs.db files generated under Microsoft Windows.
 %setup -q -n %{name}-beta-%{version}
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python2 setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
+python3 setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
 
-sed -i 's|/usr/bin/python$|/usr/bin/python2|' %{buildroot}%{_bindir}/%{name}
+sed -i 's|/usr/bin/python$|/usr/bin/python3|' %{buildroot}%{_bindir}/%{name}
 
 %files
 %doc COPYING README
 %{_bindir}/%{name}
 %{_datadir}/%{name}
-%{python2_sitelib}/vin*
+%{python3_sitelib}/vin*
+%{python3_sitelib}/__pycache__/*
 
 %changelog
 * Thu Feb 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.07

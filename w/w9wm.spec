@@ -18,6 +18,7 @@ virtual screens as well as for keyboard bindings.
 mv Makefile.no-imake Makefile
 
 %build
+export CC='gcc -std=gnu89'
 make %{?_smp_mflags}
 
 %install

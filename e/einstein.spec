@@ -48,7 +48,7 @@ fifth - geometric figures, sixs - mathematic symbols.
 %{_datadir}/pixmaps/%{name}.png
 
 %prep
-%setup
+%setup -q
 %setup -q -T -D -a 1
 
 %patch 1
@@ -68,7 +68,7 @@ cp /usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf res/
 
 %build
 #make depend
-make -C mkres OPTIMIZE="%{optflags}"
+make -C mkres OPTIMIZE="%{optflags} -std=c++11"
 pushd res
 ../mkres/mkres --source resources.descr --output ../einstein.res
 popd

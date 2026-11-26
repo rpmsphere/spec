@@ -22,7 +22,7 @@ requirements comparable to vi(1).
 %build
 # Keep all three make commands consistent, except for JOVEHOME and targets.
 # JOVEHOME must be the ultimate path since it will be compiled into JOVE.
-make JOVEHOME=/usr LIBDIR=%{_libdir}/jove SHAREDIR=%{_datadir}/jove MANDIR=%{_mandir}/man1 OPTFLAGS="%{optflags}" %{configflags} all doc/jove.man doc/jove.man.ps
+make JOVEHOME=/usr LIBDIR=%{_libdir}/jove SHAREDIR=%{_datadir}/jove MANDIR=%{_mandir}/man1 OPTFLAGS="%{optflags} -std=gnu89" %{configflags} all doc/jove.man doc/jove.man.ps
 mv doc/jove.man doc/jove.man.txt
 
 %install

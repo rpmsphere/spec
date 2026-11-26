@@ -1,4 +1,4 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 Summary:   A library for working with graphs in Python
 Name:      python-graph
 Version:   1.8.2

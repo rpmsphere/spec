@@ -10,7 +10,7 @@ BuildRequires:  meson
 BuildRequires:  ninja-build
 BuildRequires:  libgee-devel
 BuildRequires:  gnome-menus-devel
-BuildRequires:  cdbs
+#BuildRequires:  cdbs
 BuildRequires:  vala
 BuildRequires:  vala-devel
 BuildRequires:  glib-devel

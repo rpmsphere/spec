@@ -20,6 +20,7 @@ game tries to default to a reasonable value.
 rm %name.6
 
 %build
+export CC='gcc -std=gnu89'
 make %name %name.6
 
 %install

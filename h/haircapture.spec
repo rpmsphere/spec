@@ -6,7 +6,7 @@ BuildRequires: SDL-devel
 BuildRequires: SDL_ttf-devel
 BuildRequires: SDL_gfx-devel
 BuildRequires: SDL_image-devel
-BuildRequires: smpeg-devel
+#BuildRequires: smpeg-devel
 BuildRequires: libjpeg-devel
 BuildRequires: libv4l-devel
 BuildRequires: gcc-c++ pkgconfig

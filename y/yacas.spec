@@ -32,7 +32,7 @@ BuildRequires:  libXmu-devel
 BuildRequires:  libXt-devel
 BuildRequires:  cmake
 BuildRequires:  google-benchmark-devel
-BuildRequires:  zmqpp-devel
+BuildRequires:  cppzmq-devel
 BuildRequires:  jsoncpp-devel
 BuildRequires:  qt5-qtwebengine-devel
 Source0:        %{name}-%{version}.tar.gz

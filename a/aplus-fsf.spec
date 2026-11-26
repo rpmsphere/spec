@@ -37,7 +37,7 @@ sed -i 's|$(prefix)/|$(prefix)/share/aplus-fsf/|' src/{acore,autils,contrib}/Mak
 sed -i 's|/acore|/share/aplus-fsf/acore|' src/main/aplus_main.c src/IPC/IPCInterface.C
 
 %build
-export CXXFLAGS="-O2 -fpermissive -Wno-narrowing -fPIE -fPIC -lX11" CFLAGS="-O2 -Wno-narrowing -fpermissive -fPIE -fPIC -lX11"
+export CXXFLAGS="-O2 -fpermissive -Wno-narrowing -fPIE -fPIC -lX11" CFLAGS="-O2 -std=gnu89 -Wno-narrowing -fpermissive -fPIE -fPIC -lX11"
 %ifarch aarch64
 autoreconf -ifv
 %endif

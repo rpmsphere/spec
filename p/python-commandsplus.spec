@@ -19,14 +19,14 @@ in the standard commands module.
 %setup -q
 
 %build
-python2 setup.py build
+python3 setup.py build
 
 %install
-python2 setup.py install --root=$RPM_BUILD_ROOT --prefix=/usr
+python3 setup.py install --root=$RPM_BUILD_ROOT --prefix=/usr
 
 %files
 %doc README COPYING ChangeLog TODO testsuite
-%{python2_sitelib}/*
+%{python3_sitelib}/*
 
 %changelog
 * Sun Sep 09 2012 Wei-Lun Chao <bluebat@member.fsf.org> - 0.2.3

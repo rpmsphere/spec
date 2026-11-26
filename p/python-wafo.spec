@@ -1,4 +1,4 @@
-%define __python /usr/bin/python2
+%define __python /usr/bin/python3
 %undefine _debugsource_packages
 %define __spec_install_post %{nil}
 
